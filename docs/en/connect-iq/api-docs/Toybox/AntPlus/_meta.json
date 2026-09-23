@@ -1,0 +1,237 @@
+[
+  {
+    "type": "dir",
+    "name": "AntPlusNotAllowedException",
+    "label": "AntPlusNotAllowedException"
+  },
+  {
+    "type": "dir",
+    "name": "BatteryStatus",
+    "label": "BatteryStatus"
+  },
+  {
+    "type": "dir",
+    "name": "BikeCadence",
+    "label": "BikeCadence"
+  },
+  {
+    "type": "dir",
+    "name": "BikeCadenceInfo",
+    "label": "BikeCadenceInfo"
+  },
+  {
+    "type": "dir",
+    "name": "BikeCadenceListener",
+    "label": "BikeCadenceListener"
+  },
+  {
+    "type": "dir",
+    "name": "BikeLight",
+    "label": "BikeLight"
+  },
+  {
+    "type": "dir",
+    "name": "BikePower",
+    "label": "BikePower"
+  },
+  {
+    "type": "dir",
+    "name": "BikePowerListener",
+    "label": "BikePowerListener"
+  },
+  {
+    "type": "dir",
+    "name": "BikeRadar",
+    "label": "BikeRadar"
+  },
+  {
+    "type": "dir",
+    "name": "BikeRadarListener",
+    "label": "BikeRadarListener"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeed",
+    "label": "BikeSpeed"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeedCadence",
+    "label": "BikeSpeedCadence"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeedCadenceInfo",
+    "label": "BikeSpeedCadenceInfo"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeedCadenceListener",
+    "label": "BikeSpeedCadenceListener"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeedInfo",
+    "label": "BikeSpeedInfo"
+  },
+  {
+    "type": "dir",
+    "name": "BikeSpeedListener",
+    "label": "BikeSpeedListener"
+  },
+  {
+    "type": "dir",
+    "name": "CalculatedCadence",
+    "label": "CalculatedCadence"
+  },
+  {
+    "type": "dir",
+    "name": "CalculatedPower",
+    "label": "CalculatedPower"
+  },
+  {
+    "type": "dir",
+    "name": "CalculatedWheelDistance",
+    "label": "CalculatedWheelDistance"
+  },
+  {
+    "type": "dir",
+    "name": "CalculatedWheelSpeed",
+    "label": "CalculatedWheelSpeed"
+  },
+  {
+    "type": "dir",
+    "name": "CommonData",
+    "label": "CommonData"
+  },
+  {
+    "type": "dir",
+    "name": "DerailleurStatus",
+    "label": "DerailleurStatus"
+  },
+  {
+    "type": "dir",
+    "name": "Device",
+    "label": "Device"
+  },
+  {
+    "type": "dir",
+    "name": "DeviceListener",
+    "label": "DeviceListener"
+  },
+  {
+    "type": "dir",
+    "name": "DeviceState",
+    "label": "DeviceState"
+  },
+  {
+    "type": "dir",
+    "name": "FitnessEquipment",
+    "label": "FitnessEquipment"
+  },
+  {
+    "type": "dir",
+    "name": "FitnessEquipmentData",
+    "label": "FitnessEquipmentData"
+  },
+  {
+    "type": "dir",
+    "name": "FitnessEquipmentListener",
+    "label": "FitnessEquipmentListener"
+  },
+  {
+    "type": "dir",
+    "name": "FitnessEquipmentMode",
+    "label": "FitnessEquipmentMode"
+  },
+  {
+    "type": "dir",
+    "name": "LightNetwork",
+    "label": "LightNetwork"
+  },
+  {
+    "type": "dir",
+    "name": "LightNetworkListener",
+    "label": "LightNetworkListener"
+  },
+  {
+    "type": "dir",
+    "name": "ManufacturerInfo",
+    "label": "ManufacturerInfo"
+  },
+  {
+    "type": "dir",
+    "name": "PedalPowerBalance",
+    "label": "PedalPowerBalance"
+  },
+  {
+    "type": "dir",
+    "name": "ProductInfo",
+    "label": "ProductInfo"
+  },
+  {
+    "type": "dir",
+    "name": "RadarTarget",
+    "label": "RadarTarget"
+  },
+  {
+    "type": "dir",
+    "name": "ResistanceSettings",
+    "label": "ResistanceSettings"
+  },
+  {
+    "type": "dir",
+    "name": "RunningDynamics",
+    "label": "RunningDynamics"
+  },
+  {
+    "type": "dir",
+    "name": "RunningDynamicsData",
+    "label": "RunningDynamicsData"
+  },
+  {
+    "type": "dir",
+    "name": "RunningDynamicsListener",
+    "label": "RunningDynamicsListener"
+  },
+  {
+    "type": "dir",
+    "name": "SensorPosition",
+    "label": "SensorPosition"
+  },
+  {
+    "type": "dir",
+    "name": "Shifting",
+    "label": "Shifting"
+  },
+  {
+    "type": "dir",
+    "name": "ShiftingListener",
+    "label": "ShiftingListener"
+  },
+  {
+    "type": "dir",
+    "name": "ShiftingStatus",
+    "label": "ShiftingStatus"
+  },
+  {
+    "type": "dir",
+    "name": "SimulationSettings",
+    "label": "SimulationSettings"
+  },
+  {
+    "type": "dir",
+    "name": "TargetPowerSettings",
+    "label": "TargetPowerSettings"
+  },
+  {
+    "type": "dir",
+    "name": "TorqueEffectivenessPedalSmoothness",
+    "label": "TorqueEffectivenessPedalSmoothness"
+  },
+  {
+    "type": "dir",
+    "name": "UserSettings",
+    "label": "UserSettings"
+  }
+]

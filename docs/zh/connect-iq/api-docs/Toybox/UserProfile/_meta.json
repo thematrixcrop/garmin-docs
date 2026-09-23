@@ -1,0 +1,17 @@
+[
+  {
+    "type": "dir",
+    "name": "Profile",
+    "label": "Profile"
+  },
+  {
+    "type": "dir",
+    "name": "UserActivity",
+    "label": "UserActivity"
+  },
+  {
+    "type": "dir",
+    "name": "UserActivityHistoryIterator",
+    "label": "UserActivityHistoryIterator"
+  }
+]

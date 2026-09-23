@@ -1,0 +1,222 @@
+[
+  {
+    "type": "dir",
+    "name": "manifest-and-permissions",
+    "label": "Manifest and Permissions"
+  },
+  {
+    "type": "dir",
+    "name": "application-and-system-modules",
+    "label": "Application and System Modules"
+  },
+  {
+    "type": "dir",
+    "name": "persisting-data",
+    "label": "Persisting Data"
+  },
+  {
+    "type": "dir",
+    "name": "backgrounding",
+    "label": "Backgrounding"
+  },
+  {
+    "type": "dir",
+    "name": "glances",
+    "label": "Glances"
+  },
+  {
+    "type": "dir",
+    "name": "properties-and-app-settings",
+    "label": "Properties and App Settings"
+  },
+  {
+    "type": "dir",
+    "name": "intents",
+    "label": "Intents"
+  },
+  {
+    "type": "dir",
+    "name": "notifications",
+    "label": "Notifications"
+  },
+  {
+    "type": "dir",
+    "name": "build-configuration",
+    "label": "Build Configuration"
+  },
+  {
+    "type": "dir",
+    "name": "security",
+    "label": "Security"
+  },
+  {
+    "type": "dir",
+    "name": "user-interface",
+    "label": "User Interface"
+  },
+  {
+    "type": "dir",
+    "name": "layouts",
+    "label": "Layouts"
+  },
+  {
+    "type": "dir",
+    "name": "graphics",
+    "label": "Graphics"
+  },
+  {
+    "type": "dir",
+    "name": "input-handling",
+    "label": "Input Handling"
+  },
+  {
+    "type": "dir",
+    "name": "native-controls",
+    "label": "Native Controls"
+  },
+  {
+    "type": "dir",
+    "name": "resources",
+    "label": "Resources"
+  },
+  {
+    "type": "dir",
+    "name": "monkey-style",
+    "label": "Monkey Style"
+  },
+  {
+    "type": "dir",
+    "name": "getting-the-users-attention",
+    "label": "Getting the Users Attention"
+  },
+  {
+    "type": "dir",
+    "name": "editing-watch-faces-on-device",
+    "label": "Editing Watch Faces On Device"
+  },
+  {
+    "type": "dir",
+    "name": "https",
+    "label": "HTTPS"
+  },
+  {
+    "type": "dir",
+    "name": "authenticated-web-services",
+    "label": "Authenticated Web Services"
+  },
+  {
+    "type": "dir",
+    "name": "communicating-with-mobile-apps",
+    "label": "Communicating with Mobile Apps"
+  },
+  {
+    "type": "dir",
+    "name": "downloading-content",
+    "label": "Downloading Content"
+  },
+  {
+    "type": "dir",
+    "name": "mobile-sdk-for-android",
+    "label": "Mobile SDK for Android"
+  },
+  {
+    "type": "dir",
+    "name": "mobile-sdk-for-ios",
+    "label": "Mobile SDK for iOS"
+  },
+  {
+    "type": "dir",
+    "name": "ant-and-ant-plus",
+    "label": "Ant and Ant Plus"
+  },
+  {
+    "type": "dir",
+    "name": "bluetooth-low-energy",
+    "label": "Bluetooth Low Energy"
+  },
+  {
+    "type": "dir",
+    "name": "pairing-wireless-devices",
+    "label": "Pairing Wireless Devices"
+  },
+  {
+    "type": "dir",
+    "name": "sensors",
+    "label": "Sensors"
+  },
+  {
+    "type": "dir",
+    "name": "positioning",
+    "label": "Positioning"
+  },
+  {
+    "type": "dir",
+    "name": "activity-recording",
+    "label": "Activity Recording"
+  },
+  {
+    "type": "dir",
+    "name": "activity-control",
+    "label": "Activity Control"
+  },
+  {
+    "type": "dir",
+    "name": "activity-prompts",
+    "label": "Activity Prompts"
+  },
+  {
+    "type": "dir",
+    "name": "quantifying-the-user",
+    "label": "Quantifying the User"
+  },
+  {
+    "type": "dir",
+    "name": "complications",
+    "label": "Complications"
+  },
+  {
+    "type": "dir",
+    "name": "shareable-libraries",
+    "label": "Shareable Libraries"
+  },
+  {
+    "type": "dir",
+    "name": "debugging",
+    "label": "Debugging"
+  },
+  {
+    "type": "dir",
+    "name": "unit-testing",
+    "label": "Unit Testing"
+  },
+  {
+    "type": "dir",
+    "name": "exception-reporting-tool",
+    "label": "Exception Reporting Tool"
+  },
+  {
+    "type": "dir",
+    "name": "profiling",
+    "label": "Profiling"
+  },
+  {
+    "type": "dir",
+    "name": "publishing-to-the-store",
+    "label": "Publishing to the Store"
+  },
+  {
+    "type": "dir",
+    "name": "beta-apps",
+    "label": "Beta Apps"
+  },
+  {
+    "type": "dir",
+    "name": "trial-apps",
+    "label": "Trial Apps"
+  },
+  {
+    "type": "dir",
+    "name": "requesting-reviews",
+    "label": "Requesting Reviews"
+  }
+]

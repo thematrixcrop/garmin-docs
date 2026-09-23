@@ -1,0 +1,52 @@
+[
+  {
+    "type": "dir",
+    "name": "AccelerometerData",
+    "label": "AccelerometerData"
+  },
+  {
+    "type": "dir",
+    "name": "GyroscopeData",
+    "label": "GyroscopeData"
+  },
+  {
+    "type": "dir",
+    "name": "HeartRateData",
+    "label": "HeartRateData"
+  },
+  {
+    "type": "dir",
+    "name": "Info",
+    "label": "Info"
+  },
+  {
+    "type": "dir",
+    "name": "MagnetometerData",
+    "label": "MagnetometerData"
+  },
+  {
+    "type": "dir",
+    "name": "SensorData",
+    "label": "SensorData"
+  },
+  {
+    "type": "dir",
+    "name": "SensorDelegate",
+    "label": "SensorDelegate"
+  },
+  {
+    "type": "dir",
+    "name": "SensorInfo",
+    "label": "SensorInfo"
+  },
+  {
+    "type": "dir",
+    "name": "SensorInfoIterator",
+    "label": "SensorInfoIterator"
+  },
+  {
+    "type": "dir",
+    "name": "TooManySensorDataListenersException",
+    "label": "TooManySensorDataListenersException"
+  }
+]

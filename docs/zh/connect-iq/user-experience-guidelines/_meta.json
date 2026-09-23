@@ -1,0 +1,72 @@
+[
+  {
+    "type": "dir",
+    "name": "design-principles",
+    "label": "Design Principles"
+  },
+  {
+    "type": "dir",
+    "name": "understanding-what-you-are-building",
+    "label": "Understanding What You Are Building"
+  },
+  {
+    "type": "dir",
+    "name": "developing-the-concepts",
+    "label": "Developing the Concepts"
+  },
+  {
+    "type": "dir",
+    "name": "designing-workflows-and-interactions",
+    "label": "Designing Workflows and Interactions"
+  },
+  {
+    "type": "dir",
+    "name": "incorporating-the-visual-design-and-product-personalities",
+    "label": "Incorporating the Visual Design and Product Personalities"
+  },
+  {
+    "type": "dir",
+    "name": "entry-points",
+    "label": "Entry Points"
+  },
+  {
+    "type": "dir",
+    "name": "views",
+    "label": "Views"
+  },
+  {
+    "type": "dir",
+    "name": "watch-faces",
+    "label": "Watch Faces"
+  },
+  {
+    "type": "dir",
+    "name": "data-fields",
+    "label": "Data Fields"
+  },
+  {
+    "type": "dir",
+    "name": "menus",
+    "label": "Menus"
+  },
+  {
+    "type": "dir",
+    "name": "confirmations",
+    "label": "Confirmations"
+  },
+  {
+    "type": "dir",
+    "name": "progress-bars",
+    "label": "Progress Bars"
+  },
+  {
+    "type": "dir",
+    "name": "map-views",
+    "label": "Map Views"
+  },
+  {
+    "type": "dir",
+    "name": "localization",
+    "label": "Localization"
+  }
+]

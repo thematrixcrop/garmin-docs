@@ -1,0 +1,36 @@
+[
+  {
+    "type": "dir",
+    "name": "AppBase",
+    "label": "AppBase"
+  },
+  {
+    "type": "dir",
+    "name": "AudioContentProviderApp",
+    "label": "AudioContentProviderApp"
+  },
+  {
+    "type": "dir",
+    "name": "ObjectStoreAccessException",
+    "label": "ObjectStoreAccessException"
+  },
+  {
+    "type": "dir",
+    "name": "Properties",
+    "label": "Properties",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Storage",
+    "label": "Storage"
+  },
+  {
+    "type": "dir",
+    "name": "WatchFaceConfig",
+    "label": "WatchFaceConfig",
+    "collapsible": true,
+    "collapsed": true
+  }
+]

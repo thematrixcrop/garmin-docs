@@ -1,0 +1,107 @@
+---
+title: "Class: Toybox.WatchUi.ComplicationDrawableRef"
+---
+# Class: Toybox.WatchUi.ComplicationDrawableRef
+
+Inherits:
+
+Toybox.Lang.Object
+
+-   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+
+-   [Toybox.WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/)
+
+
+[show all](#)
+
+## Overview
+
+Complication drawable reference which defines the drawable and its bounds used to animating or highlighting the complication.
+
+Since:
+
+API Level 5.1.0
+
+App Types and Runtime Contexts:
+
+-   Audio Content Provider
+
+-   Data Field
+
+-   Glance
+
+-   Watch App
+
+-   Watch Face
+
+-   Widget
+
+
+:::details Supported Devices
+
+-   D2™ Mach 2 Pro
+-   D2™ Mach 2
+-   Enduro™ 3
+-   fēnix® 8 43mm
+-   fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
+-   fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
+-   fēnix® 8 Solar 47mm
+-   fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm
+-   fēnix® 9 43mm
+-   fēnix® 9 47mm / 51mm
+-   fēnix® 9 Pro 43mm
+-   fēnix® 9 Pro 47mm
+-   fēnix® 9 Pro 51mm
+-   fēnix® 9 Pro Solar 47mm
+-   fēnix® 9 Pro Solar 51mm
+-   fēnix® E
+-   Forerunner® 170 Music
+-   Forerunner® 170
+-   Forerunner® 570 42mm
+-   Forerunner® 570 47mm
+-   Forerunner® 70
+-   Forerunner® 970
+-   Venu® 4 41mm
+-   Venu® 4 45mm / D2™ Air X15
+-   Venu® X1
+-   vívoactive® 6
+
+:::
+
+## Instance Method Summary [collapse](#)
+
+-   [**initialize**](#initialize-instance_function)(options as { :drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :boundingBox as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) })
+
+    Constructor.
+
+
+## Instance Method Details
+
+### **initialize(options as { :drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :boundingBox as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) })**
+
+Constructor
+
+Parameters:
+
+-   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+
+    A Dictionary of options. Cannot be `null`.
+
+    -   :drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+        The drawable object.
+
+    -   :boundingBox — ([Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)) —
+
+        The bounding box of the drawable object, used to highlight the outline of drawable object and allocate buffer to render the drawable for animating purpose.
+
+
+Since:
+
+API Level 5.1.0
+
+Throws:
+
+-   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+
+    Thrown if invalid values were provided.

@@ -1,0 +1,82 @@
+[
+  {
+    "type": "dir",
+    "name": "ActiveContent",
+    "label": "ActiveContent"
+  },
+  {
+    "type": "dir",
+    "name": "AlbumArt",
+    "label": "AlbumArt"
+  },
+  {
+    "type": "dir",
+    "name": "AudioFormat",
+    "label": "AudioFormat"
+  },
+  {
+    "type": "dir",
+    "name": "CacheStatistics",
+    "label": "CacheStatistics"
+  },
+  {
+    "type": "dir",
+    "name": "Content",
+    "label": "Content"
+  },
+  {
+    "type": "dir",
+    "name": "ContentDelegate",
+    "label": "ContentDelegate"
+  },
+  {
+    "type": "dir",
+    "name": "ContentIterator",
+    "label": "ContentIterator"
+  },
+  {
+    "type": "dir",
+    "name": "ContentMetadata",
+    "label": "ContentMetadata"
+  },
+  {
+    "type": "dir",
+    "name": "ContentRef",
+    "label": "ContentRef"
+  },
+  {
+    "type": "dir",
+    "name": "ContentRefIterator",
+    "label": "ContentRefIterator"
+  },
+  {
+    "type": "dir",
+    "name": "CustomButton",
+    "label": "CustomButton"
+  },
+  {
+    "type": "dir",
+    "name": "PlaybackProfile",
+    "label": "PlaybackProfile"
+  },
+  {
+    "type": "dir",
+    "name": "PlayerColors",
+    "label": "PlayerColors"
+  },
+  {
+    "type": "dir",
+    "name": "ProviderIconInfo",
+    "label": "ProviderIconInfo"
+  },
+  {
+    "type": "dir",
+    "name": "SyncDelegate",
+    "label": "SyncDelegate"
+  },
+  {
+    "type": "dir",
+    "name": "SystemButton",
+    "label": "SystemButton"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir",
+    "name": "Message",
+    "label": "Message"
+  },
+  {
+    "type": "dir",
+    "name": "OAuthMessage",
+    "label": "OAuthMessage"
+  }
+]

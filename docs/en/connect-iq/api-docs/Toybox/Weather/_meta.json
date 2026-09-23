@@ -1,0 +1,17 @@
+[
+  {
+    "type": "dir",
+    "name": "CurrentConditions",
+    "label": "CurrentConditions"
+  },
+  {
+    "type": "dir",
+    "name": "DailyForecast",
+    "label": "DailyForecast"
+  },
+  {
+    "type": "dir",
+    "name": "HourlyForecast",
+    "label": "HourlyForecast"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "type": "dir",
+    "name": "ActiveMinutes",
+    "label": "ActiveMinutes"
+  },
+  {
+    "type": "dir",
+    "name": "HeartRateIterator",
+    "label": "HeartRateIterator"
+  },
+  {
+    "type": "dir",
+    "name": "HeartRateSample",
+    "label": "HeartRateSample"
+  },
+  {
+    "type": "dir",
+    "name": "History",
+    "label": "History"
+  },
+  {
+    "type": "dir",
+    "name": "Info",
+    "label": "Info"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir",
+    "name": "SensorLogger",
+    "label": "SensorLogger"
+  },
+  {
+    "type": "dir",
+    "name": "SensorLoggingStats",
+    "label": "SensorLoggingStats"
+  }
+]

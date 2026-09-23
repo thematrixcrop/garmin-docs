@@ -1,0 +1,52 @@
+[
+  {
+    "type": "dir",
+    "name": "colors",
+    "label": "Colors"
+  },
+  {
+    "type": "dir",
+    "name": "iconography",
+    "label": "Iconography"
+  },
+  {
+    "type": "dir",
+    "name": "typography",
+    "label": "Typography"
+  },
+  {
+    "type": "dir",
+    "name": "input-hints",
+    "label": "Input Hints"
+  },
+  {
+    "type": "dir",
+    "name": "prompts",
+    "label": "Prompts"
+  },
+  {
+    "type": "dir",
+    "name": "confirmations",
+    "label": "Confirmations"
+  },
+  {
+    "type": "dir",
+    "name": "toasts",
+    "label": "Toasts"
+  },
+  {
+    "type": "dir",
+    "name": "action-views",
+    "label": "Action Views"
+  },
+  {
+    "type": "dir",
+    "name": "page-loops",
+    "label": "Page Loops"
+  },
+  {
+    "type": "dir",
+    "name": "progress-bars",
+    "label": "Progress Bars"
+  }
+]

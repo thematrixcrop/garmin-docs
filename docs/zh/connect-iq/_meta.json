@@ -1,0 +1,102 @@
+[
+  {
+    "type": "dir",
+    "name": "overview",
+    "label": "overview"
+  },
+  {
+    "type": "dir",
+    "name": "compatible-devices",
+    "label": "compatibleDevices"
+  },
+  {
+    "type": "dir",
+    "name": "api-docs",
+    "label": "apiDocs",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "sdk",
+    "label": "getTheSdk"
+  },
+  {
+    "type": "dir",
+    "name": "submit-an-app",
+    "label": "submitAnApp"
+  },
+  {
+    "type": "dir",
+    "name": "stay-informed",
+    "label": "stayInformed"
+  },
+  {
+    "type": "dir",
+    "name": "connect-iq-basics",
+    "label": "connectIqBasics",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "monkey-c",
+    "label": "monkeyC",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "core-topics",
+    "label": "coreTopics",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "user-experience-guidelines",
+    "label": "userExperienceGuidelines",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "personality-library",
+    "label": "personalityLibrary",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "connect-iq-faq",
+    "label": "connectIqFaq",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "reference-guides",
+    "label": "referenceGuides",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "app-review-guidelines",
+    "label": "appReviewGuidelines"
+  },
+  {
+    "type": "dir",
+    "name": "monetization",
+    "label": "monetization",
+    "collapsible": true,
+    "collapsed": false
+  },
+  {
+    "type": "dir",
+    "name": "device-reference",
+    "label": "deviceReference",
+    "collapsible": true,
+    "collapsed": false
+  }
+]

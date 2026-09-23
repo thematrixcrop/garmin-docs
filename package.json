@@ -1,0 +1,37 @@
+{
+  "name": "garmin-connect-iq-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 rspress build",
+    "preview": "rspress preview",
+    "docs:discover": "tsx pipeline/1-discover.ts",
+    "docs:fetch": "tsx pipeline/2-fetch.ts",
+    "docs:extract": "tsx pipeline/3-extract.ts",
+    "docs:convert": "tsx pipeline/4-convert.ts",
+    "docs:scaffold": "tsx pipeline/5-scaffold.ts",
+    "docs:translate": "tsx pipeline/6-translate.ts",
+    "docs:verify": "tsx pipeline/verify.ts",
+    "docs:pipeline": "pnpm docs:discover && pnpm docs:fetch && pnpm docs:extract && pnpm docs:convert && pnpm docs:scaffold"
+  },
+  "devDependencies": {
+    "@rspress/core": "^2.0.22",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/turndown": "^5.0.5",
+    "cheerio": "^1.0.0",
+    "p-limit": "^6.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsx": "^4.19.0",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "typescript": "^5.7.0"
+  }
+}

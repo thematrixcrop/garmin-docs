@@ -1,0 +1,32 @@
+[
+  {
+    "type": "dir",
+    "name": "monkey-c-reference",
+    "label": "Monkey C Reference"
+  },
+  {
+    "type": "dir",
+    "name": "jungle-reference",
+    "label": "Jungle Reference"
+  },
+  {
+    "type": "dir",
+    "name": "monkey-motion-reference",
+    "label": "Monkey Motion Reference"
+  },
+  {
+    "type": "dir",
+    "name": "monkey-graph-reference",
+    "label": "Monkey Graph Reference"
+  },
+  {
+    "type": "dir",
+    "name": "visual-studio-code-extension",
+    "label": "Visual Studio Code Extension"
+  },
+  {
+    "type": "dir",
+    "name": "monkey-c-command-line-setup",
+    "label": "Monkey C Command Line Setup"
+  }
+]

@@ -1,0 +1,867 @@
+[
+  {
+    "type": "dir",
+    "name": "approachs50",
+    "label": "Approach® S50"
+  },
+  {
+    "type": "dir",
+    "name": "approachs60",
+    "label": "Approach® S60"
+  },
+  {
+    "type": "dir",
+    "name": "approachs62",
+    "label": "Approach® S62"
+  },
+  {
+    "type": "dir",
+    "name": "approachs7042mm",
+    "label": "Approach® S70 42mm"
+  },
+  {
+    "type": "dir",
+    "name": "approachs7047mm",
+    "label": "Approach® S70 47mm"
+  },
+  {
+    "type": "dir",
+    "name": "d2air",
+    "label": "D2™ Air"
+  },
+  {
+    "type": "dir",
+    "name": "d2airx10",
+    "label": "D2™ Air X10"
+  },
+  {
+    "type": "dir",
+    "name": "d2bravo",
+    "label": "D2™ Bravo"
+  },
+  {
+    "type": "dir",
+    "name": "d2bravo-titanium",
+    "label": "D2™ Bravo Titanium"
+  },
+  {
+    "type": "dir",
+    "name": "d2charlie",
+    "label": "D2™ Charlie"
+  },
+  {
+    "type": "dir",
+    "name": "d2delta",
+    "label": "D2™ Delta"
+  },
+  {
+    "type": "dir",
+    "name": "d2deltapx",
+    "label": "D2™ Delta PX"
+  },
+  {
+    "type": "dir",
+    "name": "d2deltas",
+    "label": "D2™ Delta S"
+  },
+  {
+    "type": "dir",
+    "name": "d2mach1",
+    "label": "D2™ Mach 1"
+  },
+  {
+    "type": "dir",
+    "name": "d2mach2",
+    "label": "D2™ Mach 2"
+  },
+  {
+    "type": "dir",
+    "name": "d2mach2pro",
+    "label": "D2™ Mach 2 Pro"
+  },
+  {
+    "type": "dir",
+    "name": "descentg1",
+    "label": "Descent™ G1 / G1 Solar"
+  },
+  {
+    "type": "dir",
+    "name": "descentg2",
+    "label": "Descent™ G2"
+  },
+  {
+    "type": "dir",
+    "name": "descentmk1",
+    "label": "Descent™ Mk1"
+  },
+  {
+    "type": "dir",
+    "name": "descentmk2",
+    "label": "Descent™ Mk2 / Mk2i"
+  },
+  {
+    "type": "dir",
+    "name": "descentmk2s",
+    "label": "Descent™ Mk2 S"
+  },
+  {
+    "type": "dir",
+    "name": "descentmk343mm",
+    "label": "Descent™ Mk3 43mm / Mk3i 43mm"
+  },
+  {
+    "type": "dir",
+    "name": "descentmk351mm",
+    "label": "Descent™ Mk3i 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "edge1030",
+    "label": "Edge® 1030"
+  },
+  {
+    "type": "dir",
+    "name": "edge1030bontrager",
+    "label": "Edge® 1030 / Bontrager"
+  },
+  {
+    "type": "dir",
+    "name": "edge1030plus",
+    "label": "Edge® 1030 Plus"
+  },
+  {
+    "type": "dir",
+    "name": "edge1040",
+    "label": "Edge® 1040 / 1040 Solar"
+  },
+  {
+    "type": "dir",
+    "name": "edge1050",
+    "label": "Edge® 1050"
+  },
+  {
+    "type": "dir",
+    "name": "edge130",
+    "label": "Edge® 130"
+  },
+  {
+    "type": "dir",
+    "name": "edge130plus",
+    "label": "Edge® 130 Plus"
+  },
+  {
+    "type": "dir",
+    "name": "edge520plus",
+    "label": "Edge® 520 Plus"
+  },
+  {
+    "type": "dir",
+    "name": "edge530",
+    "label": "Edge® 530"
+  },
+  {
+    "type": "dir",
+    "name": "edge540",
+    "label": "Edge® 540 / 540 Solar"
+  },
+  {
+    "type": "dir",
+    "name": "edge550",
+    "label": "Edge® 550"
+  },
+  {
+    "type": "dir",
+    "name": "edge820",
+    "label": "Edge® 820 / Explore"
+  },
+  {
+    "type": "dir",
+    "name": "edge830",
+    "label": "Edge® 830"
+  },
+  {
+    "type": "dir",
+    "name": "edge840",
+    "label": "Edge® 840 / 840 Solar"
+  },
+  {
+    "type": "dir",
+    "name": "edge850",
+    "label": "Edge® 850"
+  },
+  {
+    "type": "dir",
+    "name": "edge-1000",
+    "label": "Edge® 1000 / Explore"
+  },
+  {
+    "type": "dir",
+    "name": "edge-520",
+    "label": "Edge® 520"
+  },
+  {
+    "type": "dir",
+    "name": "edgeexplore",
+    "label": "Edge® Explore"
+  },
+  {
+    "type": "dir",
+    "name": "edgeexplore2",
+    "label": "Edge® Explore 2"
+  },
+  {
+    "type": "dir",
+    "name": "edgemtb",
+    "label": "Edge® MTB"
+  },
+  {
+    "type": "dir",
+    "name": "enduro",
+    "label": "Enduro™"
+  },
+  {
+    "type": "dir",
+    "name": "enduro3",
+    "label": "Enduro™ 3"
+  },
+  {
+    "type": "dir",
+    "name": "epix",
+    "label": "epix™"
+  },
+  {
+    "type": "dir",
+    "name": "epix2",
+    "label": "epix™ (Gen 2) / quatix® 7 Sapphire"
+  },
+  {
+    "type": "dir",
+    "name": "epix2pro42mm",
+    "label": "epix™ Pro (Gen 2) 42mm"
+  },
+  {
+    "type": "dir",
+    "name": "epix2pro47mm",
+    "label": "epix™ Pro (Gen 2) 47mm / quatix® 7 Pro"
+  },
+  {
+    "type": "dir",
+    "name": "epix2pro51mm",
+    "label": "epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition"
+  },
+  {
+    "type": "dir",
+    "name": "etrextouch",
+    "label": "eTrex® Touch"
+  },
+  {
+    "type": "dir",
+    "name": "fenix3",
+    "label": "fēnix® 3 / tactix® Bravo / quatix® 3"
+  },
+  {
+    "type": "dir",
+    "name": "fenix3-hr",
+    "label": "fēnix® 3 HR"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5",
+    "label": "fēnix® 5 / quatix® 5"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5plus",
+    "label": "fēnix® 5 Plus"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5s",
+    "label": "fēnix® 5S"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5splus",
+    "label": "fēnix® 5S Plus"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5x",
+    "label": "fēnix® 5X / tactix® Charlie"
+  },
+  {
+    "type": "dir",
+    "name": "fenix5xplus",
+    "label": "fēnix® 5X Plus"
+  },
+  {
+    "type": "dir",
+    "name": "fenix6",
+    "label": "fēnix® 6 / 6 Solar / 6 Dual Power"
+  },
+  {
+    "type": "dir",
+    "name": "fenix6pro",
+    "label": "fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6"
+  },
+  {
+    "type": "dir",
+    "name": "fenix6s",
+    "label": "fēnix® 6S / 6S Solar / 6S Dual Power"
+  },
+  {
+    "type": "dir",
+    "name": "fenix6spro",
+    "label": "fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power"
+  },
+  {
+    "type": "dir",
+    "name": "fenix6xpro",
+    "label": "fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7",
+    "label": "fēnix® 7 / quatix® 7"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7pro",
+    "label": "fēnix® 7 Pro"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7pronowifi",
+    "label": "fēnix® 7 Pro - Solar Edition (no Wi-Fi)"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7s",
+    "label": "fēnix® 7S"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7spro",
+    "label": "fēnix® 7S Pro"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7x",
+    "label": "fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7xpro",
+    "label": "fēnix® 7X Pro"
+  },
+  {
+    "type": "dir",
+    "name": "fenix7xpronowifi",
+    "label": "fēnix® 7X Pro - Solar Edition (no Wi-Fi)"
+  },
+  {
+    "type": "dir",
+    "name": "fenix843mm",
+    "label": "fēnix® 8 43mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix847mm",
+    "label": "fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix8pro47mm",
+    "label": "fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix8solar47mm",
+    "label": "fēnix® 8 Solar 47mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix8solar51mm",
+    "label": "fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix943mm",
+    "label": "fēnix® 9 43mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix947mm",
+    "label": "fēnix® 9 47mm / 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix9pro43mm",
+    "label": "fēnix® 9 Pro 43mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix9pro47mm",
+    "label": "fēnix® 9 Pro 47mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix9pro51mm",
+    "label": "fēnix® 9 Pro 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix9prosolar47mm",
+    "label": "fēnix® 9 Pro Solar 47mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenix9prosolar51mm",
+    "label": "fēnix® 9 Pro Solar 51mm"
+  },
+  {
+    "type": "dir",
+    "name": "fenixchronos",
+    "label": "fēnix® Chronos"
+  },
+  {
+    "type": "dir",
+    "name": "fenixe",
+    "label": "fēnix® E"
+  },
+  {
+    "type": "dir",
+    "name": "fr165",
+    "label": "Forerunner® 165"
+  },
+  {
+    "type": "dir",
+    "name": "fr165m",
+    "label": "Forerunner® 165 Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr170",
+    "label": "Forerunner® 170"
+  },
+  {
+    "type": "dir",
+    "name": "fr170m",
+    "label": "Forerunner® 170 Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr230",
+    "label": "Forerunner® 230"
+  },
+  {
+    "type": "dir",
+    "name": "fr235",
+    "label": "Forerunner® 235"
+  },
+  {
+    "type": "dir",
+    "name": "fr245",
+    "label": "Forerunner® 245"
+  },
+  {
+    "type": "dir",
+    "name": "fr245m",
+    "label": "Forerunner® 245 Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr255",
+    "label": "Forerunner® 255"
+  },
+  {
+    "type": "dir",
+    "name": "fr255m",
+    "label": "Forerunner® 255 Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr255s",
+    "label": "Forerunner® 255s"
+  },
+  {
+    "type": "dir",
+    "name": "fr255sm",
+    "label": "Forerunner® 255s Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr265",
+    "label": "Forerunner® 265"
+  },
+  {
+    "type": "dir",
+    "name": "fr265s",
+    "label": "Forerunner® 265s"
+  },
+  {
+    "type": "dir",
+    "name": "fr45",
+    "label": "Forerunner® 45"
+  },
+  {
+    "type": "dir",
+    "name": "fr55",
+    "label": "Forerunner® 55"
+  },
+  {
+    "type": "dir",
+    "name": "fr57042mm",
+    "label": "Forerunner® 570 42mm"
+  },
+  {
+    "type": "dir",
+    "name": "fr57047mm",
+    "label": "Forerunner® 570 47mm"
+  },
+  {
+    "type": "dir",
+    "name": "fr630",
+    "label": "Forerunner® 630"
+  },
+  {
+    "type": "dir",
+    "name": "fr645",
+    "label": "Forerunner® 645"
+  },
+  {
+    "type": "dir",
+    "name": "fr645m",
+    "label": "Forerunner® 645 Music"
+  },
+  {
+    "type": "dir",
+    "name": "fr70",
+    "label": "Forerunner® 70"
+  },
+  {
+    "type": "dir",
+    "name": "fr735xt",
+    "label": "Forerunner® 735xt"
+  },
+  {
+    "type": "dir",
+    "name": "fr745",
+    "label": "Forerunner® 745"
+  },
+  {
+    "type": "dir",
+    "name": "fr920xt",
+    "label": "Forerunner® 920XT"
+  },
+  {
+    "type": "dir",
+    "name": "fr935",
+    "label": "Forerunner® 935"
+  },
+  {
+    "type": "dir",
+    "name": "fr945",
+    "label": "Forerunner® 945"
+  },
+  {
+    "type": "dir",
+    "name": "fr945lte",
+    "label": "Forerunner® 945 LTE"
+  },
+  {
+    "type": "dir",
+    "name": "fr955",
+    "label": "Forerunner® 955 / Solar"
+  },
+  {
+    "type": "dir",
+    "name": "fr965",
+    "label": "Forerunner® 965"
+  },
+  {
+    "type": "dir",
+    "name": "fr970",
+    "label": "Forerunner® 970"
+  },
+  {
+    "type": "dir",
+    "name": "garminswim2",
+    "label": "Garmin Swim™ 2"
+  },
+  {
+    "type": "dir",
+    "name": "gpsmap66",
+    "label": "GPSMAP® 66s / 66i / 66sr / 66st"
+  },
+  {
+    "type": "dir",
+    "name": "gpsmap67",
+    "label": "GPSMAP® 67 / 67i"
+  },
+  {
+    "type": "dir",
+    "name": "gpsmap86",
+    "label": "GPSMAP® 86s / 86sc / 86i / 86sci"
+  },
+  {
+    "type": "dir",
+    "name": "gpsmaph1",
+    "label": "GPSMAP® H1 / H1i Plus"
+  },
+  {
+    "type": "dir",
+    "name": "instinct2",
+    "label": "Instinct® 2 / Solar / Dual Power / dēzl Edition"
+  },
+  {
+    "type": "dir",
+    "name": "instinct2s",
+    "label": "Instinct® 2S / Solar / Dual Power"
+  },
+  {
+    "type": "dir",
+    "name": "instinct2x",
+    "label": "Instinct® 2X Solar"
+  },
+  {
+    "type": "dir",
+    "name": "instinct3amoled45mm",
+    "label": "Instinct® 3 AMOLED 45mm"
+  },
+  {
+    "type": "dir",
+    "name": "instinct3amoled50mm",
+    "label": "Instinct® 3 AMOLED 50mm"
+  },
+  {
+    "type": "dir",
+    "name": "instinct3solar45mm",
+    "label": "Instinct® 3 Solar 45mm / 50mm"
+  },
+  {
+    "type": "dir",
+    "name": "instinctcrossover",
+    "label": "Instinct® Crossover"
+  },
+  {
+    "type": "dir",
+    "name": "instinctcrossoveramoled",
+    "label": "Instinct® Crossover AMOLED"
+  },
+  {
+    "type": "dir",
+    "name": "instincte40mm",
+    "label": "Instinct® E 40mm"
+  },
+  {
+    "type": "dir",
+    "name": "instincte45mm",
+    "label": "Instinct® E 45mm"
+  },
+  {
+    "type": "dir",
+    "name": "legacyherocaptainmarvel",
+    "label": "Captain Marvel"
+  },
+  {
+    "type": "dir",
+    "name": "legacyherofirstavenger",
+    "label": "First Avenger"
+  },
+  {
+    "type": "dir",
+    "name": "legacysagadarthvader",
+    "label": "Darth Vader™"
+  },
+  {
+    "type": "dir",
+    "name": "legacysagarey",
+    "label": "Rey™"
+  },
+  {
+    "type": "dir",
+    "name": "marq2",
+    "label": "MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition"
+  },
+  {
+    "type": "dir",
+    "name": "marq2aviator",
+    "label": "MARQ® (Gen 2) Aviator"
+  },
+  {
+    "type": "dir",
+    "name": "marqadventurer",
+    "label": "MARQ® Adventurer"
+  },
+  {
+    "type": "dir",
+    "name": "marqathlete",
+    "label": "MARQ® Athlete"
+  },
+  {
+    "type": "dir",
+    "name": "marqaviator",
+    "label": "MARQ® Aviator"
+  },
+  {
+    "type": "dir",
+    "name": "marqcaptain",
+    "label": "MARQ® Captain / MARQ® Captain: American Magic Edition"
+  },
+  {
+    "type": "dir",
+    "name": "marqcommander",
+    "label": "MARQ® Commander"
+  },
+  {
+    "type": "dir",
+    "name": "marqdriver",
+    "label": "MARQ® Driver"
+  },
+  {
+    "type": "dir",
+    "name": "marqexpedition",
+    "label": "MARQ® Expedition"
+  },
+  {
+    "type": "dir",
+    "name": "marqgolfer",
+    "label": "MARQ® Golfer"
+  },
+  {
+    "type": "dir",
+    "name": "montana7xx",
+    "label": "Montana® 7 Series"
+  },
+  {
+    "type": "dir",
+    "name": "oregon7xx",
+    "label": "Oregon® 7 Series"
+  },
+  {
+    "type": "dir",
+    "name": "rino7xx",
+    "label": "Rino® 7 Series"
+  },
+  {
+    "type": "dir",
+    "name": "venu",
+    "label": "Venu®"
+  },
+  {
+    "type": "dir",
+    "name": "venu2",
+    "label": "Venu® 2"
+  },
+  {
+    "type": "dir",
+    "name": "venu2plus",
+    "label": "Venu® 2 Plus"
+  },
+  {
+    "type": "dir",
+    "name": "venu2s",
+    "label": "Venu® 2S"
+  },
+  {
+    "type": "dir",
+    "name": "venu3",
+    "label": "Venu® 3"
+  },
+  {
+    "type": "dir",
+    "name": "venu3s",
+    "label": "Venu® 3S"
+  },
+  {
+    "type": "dir",
+    "name": "venu441mm",
+    "label": "Venu® 4 41mm"
+  },
+  {
+    "type": "dir",
+    "name": "venu445mm",
+    "label": "Venu® 4 45mm / D2™ Air X15"
+  },
+  {
+    "type": "dir",
+    "name": "venud",
+    "label": "Venu® Mercedes-Benz® Collection"
+  },
+  {
+    "type": "dir",
+    "name": "venusq",
+    "label": "Venu® Sq"
+  },
+  {
+    "type": "dir",
+    "name": "venusq2",
+    "label": "Venu® Sq 2"
+  },
+  {
+    "type": "dir",
+    "name": "venusq2m",
+    "label": "Venu® Sq 2 Music"
+  },
+  {
+    "type": "dir",
+    "name": "venusqm",
+    "label": "Venu® Sq. Music Edition"
+  },
+  {
+    "type": "dir",
+    "name": "venux1",
+    "label": "Venu® X1"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive",
+    "label": "vívoactive®"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive3",
+    "label": "vívoactive® 3"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive3d",
+    "label": "vívoactive® 3 Mercedes-Benz® Collection"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive3m",
+    "label": "vívoactive® 3 Music"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive3mlte",
+    "label": "vívoactive® 3 Music LTE"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive4",
+    "label": "vívoactive® 4"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive4s",
+    "label": "vívoactive® 4S"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive5",
+    "label": "vívoactive® 5"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive6",
+    "label": "vívoactive® 6"
+  },
+  {
+    "type": "dir",
+    "name": "vivoactive-hr",
+    "label": "vívoactive® HR"
+  }
+]

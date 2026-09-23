@@ -1,0 +1,32 @@
+[
+  {
+    "type": "dir",
+    "name": "Course",
+    "label": "Course"
+  },
+  {
+    "type": "dir",
+    "name": "Iterator",
+    "label": "Iterator"
+  },
+  {
+    "type": "dir",
+    "name": "Route",
+    "label": "Route"
+  },
+  {
+    "type": "dir",
+    "name": "Track",
+    "label": "Track"
+  },
+  {
+    "type": "dir",
+    "name": "Waypoint",
+    "label": "Waypoint"
+  },
+  {
+    "type": "dir",
+    "name": "Workout",
+    "label": "Workout"
+  }
+]

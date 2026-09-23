@@ -1,0 +1,22 @@
+[
+  {
+    "type": "dir",
+    "name": "merchant-onboarding",
+    "label": "Merchant Onboarding"
+  },
+  {
+    "type": "dir",
+    "name": "app-sales",
+    "label": "App Sales"
+  },
+  {
+    "type": "dir",
+    "name": "account-management",
+    "label": "Account Management"
+  },
+  {
+    "type": "dir",
+    "name": "price-points",
+    "label": "Price Points"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "connectIq": { "en": "Connect IQ", "zh": "Connect IQ" },
+  "guide": { "en": "Guide", "zh": "指南" },
+  "overview": { "en": "Overview", "zh": "概述" },
+  "compatibleDevices": { "en": "Compatible Devices", "zh": "兼容设备" },
+  "apiDocs": { "en": "API Docs", "zh": "API 文档" },
+  "getTheSdk": { "en": "Get the SDK", "zh": "获取 SDK" },
+  "submitAnApp": { "en": "Submit an App", "zh": "提交应用" },
+  "stayInformed": { "en": "Stay Informed", "zh": "保持关注" },
+  "connectIqBasics": { "en": "Connect IQ Basics", "zh": "Connect IQ 基础" },
+  "monkeyC": { "en": "Monkey C", "zh": "Monkey C" },
+  "coreTopics": { "en": "Core Topics", "zh": "核心主题" },
+  "userExperienceGuidelines": { "en": "User Experience Guidelines", "zh": "用户体验指南" },
+  "personalityLibrary": { "en": "Personality Library", "zh": "Personality 库" },
+  "connectIqFaq": { "en": "Connect IQ FAQ", "zh": "Connect IQ 常见问题" },
+  "referenceGuides": { "en": "Reference Guides", "zh": "参考指南" },
+  "appReviewGuidelines": { "en": "App Review Guidelines", "zh": "应用审核指南" },
+  "monetization": { "en": "Monetization", "zh": "变现" },
+  "deviceReference": { "en": "Device Reference", "zh": "设备参考" },
+  "sourceNotice": { "en": "Source", "zh": "来源" }
+}

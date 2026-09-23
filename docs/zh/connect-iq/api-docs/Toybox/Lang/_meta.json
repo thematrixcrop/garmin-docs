@@ -1,0 +1,122 @@
+[
+  {
+    "type": "dir",
+    "name": "Array",
+    "label": "Array"
+  },
+  {
+    "type": "dir",
+    "name": "Boolean",
+    "label": "Boolean"
+  },
+  {
+    "type": "dir",
+    "name": "ByteArray",
+    "label": "ByteArray"
+  },
+  {
+    "type": "dir",
+    "name": "Char",
+    "label": "Char"
+  },
+  {
+    "type": "dir",
+    "name": "Dictionary",
+    "label": "Dictionary"
+  },
+  {
+    "type": "dir",
+    "name": "Double",
+    "label": "Double"
+  },
+  {
+    "type": "dir",
+    "name": "Exception",
+    "label": "Exception"
+  },
+  {
+    "type": "dir",
+    "name": "Float",
+    "label": "Float"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidOptionsException",
+    "label": "InvalidOptionsException"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidValueException",
+    "label": "InvalidValueException"
+  },
+  {
+    "type": "dir",
+    "name": "Long",
+    "label": "Long"
+  },
+  {
+    "type": "dir",
+    "name": "Method",
+    "label": "Method"
+  },
+  {
+    "type": "dir",
+    "name": "Number",
+    "label": "Number"
+  },
+  {
+    "type": "dir",
+    "name": "Object",
+    "label": "Object"
+  },
+  {
+    "type": "dir",
+    "name": "OperationNotAllowedException",
+    "label": "OperationNotAllowedException"
+  },
+  {
+    "type": "dir",
+    "name": "ResourceId",
+    "label": "ResourceId"
+  },
+  {
+    "type": "dir",
+    "name": "SerializationException",
+    "label": "SerializationException"
+  },
+  {
+    "type": "dir",
+    "name": "StorageFullException",
+    "label": "StorageFullException"
+  },
+  {
+    "type": "dir",
+    "name": "String",
+    "label": "String"
+  },
+  {
+    "type": "dir",
+    "name": "Symbol",
+    "label": "Symbol"
+  },
+  {
+    "type": "dir",
+    "name": "SymbolNotAllowedException",
+    "label": "SymbolNotAllowedException"
+  },
+  {
+    "type": "dir",
+    "name": "UnexpectedTypeException",
+    "label": "UnexpectedTypeException"
+  },
+  {
+    "type": "dir",
+    "name": "ValueOutOfBoundsException",
+    "label": "ValueOutOfBoundsException"
+  },
+  {
+    "type": "dir",
+    "name": "WeakReference",
+    "label": "WeakReference"
+  }
+]

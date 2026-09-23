@@ -1,0 +1,116 @@
+---
+title: "Class: Toybox.Math.IirFilter"
+---
+# Class: Toybox.Math.IirFilter
+
+Inherits:
+
+Toybox.Math.Filter
+
+-   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+
+-   [Toybox.Math.Filter](/connect-iq/api-docs/Toybox/Math/Filter/)
+
+-   [Toybox.Math.IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/)
+
+
+[show all](#)
+
+## Overview
+
+Infinite Impulse Response (IIR) filter implementation.
+
+## See Also:
+
+-   [IirFilters](https://en.wikipedia.org/wiki/Infinite_impulse_response)
+
+
+Example:
+
+Shows the constructor and implementation for filter use with accelerometer data.
+
+```
+using Toybox.Math;
+var mX = [0];
+var mY = [0];
+var mZ = [0];
+var mFilter;
+
+// Constructor
+function initialize() {
+    // initialize IIR filter. Coefficients are for demonstration purposes only.
+    var options = {
+        :coefficients_a => [ -0.0278f, 0.9444f, -0.0278f ],
+        :coefficients_b => [ 0.0278f, -0.9444f, 0.0278],
+        :gain => 0.001f
+    };
+
+    try {
+        mFilter = new Math.IirFilter(options);
+    }
+    catch(e) {
+        System.println(e.getErrorMessage());
+    }
+}
+
+// Callback to receive accelerometer data
+function accel_callback(sensorData) {
+    mX = mFilter.apply(sensorData.accelerometerData.x);
+    mY = sensorData.accelerometerData.y;
+    mZ = sensorData.accelerometerData.z;
+    onAccelData();
+}
+```
+
+Since:
+
+API Level 2.3.0
+
+## Instance Method Summary [collapse](#)
+
+-   [**apply**](#apply-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+-   [**initialize**](#initialize-instance_function)(dictionary as { :coefficients\_a as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :coefficients\_b as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :gain as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) })
+
+    Constructor.
+
+
+## Instance Method Details
+
+### **apply(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+
+Since:
+
+API Level 2.3.0
+
+### **initialize(dictionary as { :coefficients\_a as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :coefficients\_b as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :gain as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) })**
+
+Constructor
+
+Parameters:
+
+-   dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+
+    A Dictionary containing filter settings.
+
+    -   :coefficients\_a — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+
+        An Array of Float values that specify the feedback filter coefficients. A ResourceId referencing a JSON Array resource can also be used here.
+
+    -   :coefficients\_b — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+
+        An Array of Float values that specify the feed forward filter coefficients. A ResourceId referencing a JSON Array resource can also be used here.
+
+    -   :gain — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+
+        A Float value that specifies a multiplier to be applied to the coefficients.
+
+
+Since:
+
+API Level 2.3.0
+
+Throws:
+
+-   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+
+    If the Dictionary does not have valid coefficients for filter or the :gain field is missing. Will also be thrown if an invalid JSON ResourceId is specified for :coefficients instead of an array

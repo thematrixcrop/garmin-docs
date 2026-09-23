@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir",
+    "name": "Info",
+    "label": "Info"
+  },
+  {
+    "type": "dir",
+    "name": "Location",
+    "label": "Location"
+  }
+]

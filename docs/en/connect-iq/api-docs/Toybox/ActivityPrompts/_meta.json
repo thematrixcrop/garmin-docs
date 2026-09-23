@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir",
+    "name": "ActivityPrompt",
+    "label": "ActivityPrompt"
+  },
+  {
+    "type": "dir",
+    "name": "ActivityPromptDelegate",
+    "label": "ActivityPromptDelegate"
+  }
+]

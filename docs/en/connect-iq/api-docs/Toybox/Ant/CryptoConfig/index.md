@@ -1,0 +1,333 @@
+---
+title: "Class: Toybox.Ant.CryptoConfig"
+---
+# Class: Toybox.Ant.CryptoConfig
+
+Inherits:
+
+Toybox.Lang.Object
+
+-   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+
+-   [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
+
+
+[show all](#)
+
+## Overview
+
+A class to handle encryption of ANT wireless data.
+
+## See Also:
+
+-   [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
+
+
+Example:
+
+```
+using Toybox.Ant;
+// Use a set of constants for configuration
+const ENCRYPTION_ID = 4294967295;             // Define ID
+const ENCRYPTION_KEY = [                      // Define Key
+    0x00, 0x01, 0x02, 0x03,
+    0x04, 0x05, 0x06, 0x07,
+    0x08, 0x09, 0x0a, 0x0b,
+    0x0c, 0x0d, 0x0e, 0x0f
+];
+const ENCRYPTION_USER_INFO_STRING = [         // String "hello world" in hex
+    0x68, 0x65, 0x6c, 0x6c, 0x6f, 0x20,
+    0x77, 0x6f, 0x72, 0x6c, 0x64, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00
+];
+const ENCRYPTION_DECIMATION_RATE = 1;         // Define Decimation Rate
+
+// Define the CryptoConfig
+cryptoConfig = new Ant.CryptoConfig({
+    :encryptionID => ENCRYPTION_ID,
+    :encryptionKey => ENCRYPTION_KEY,
+    :userInfoString => ENCRYPTION_USER_INFO_STRING,
+    :decimateRate => ENCRYPTION_DECIMATION_RATE
+});
+```
+
+Since:
+
+API Level 2.3.0
+
+:::details Supported Devices
+
+-   Approach® S50
+-   Approach® S60
+-   Approach® S62
+-   Approach® S70 42mm
+-   Approach® S70 47mm
+-   Captain Marvel
+-   D2™ Air X10
+-   D2™ Air
+-   D2™ Charlie
+-   D2™ Delta PX
+-   D2™ Delta S
+-   D2™ Delta
+-   D2™ Mach 1
+-   D2™ Mach 2 Pro
+-   D2™ Mach 2
+-   Darth Vader™
+-   Descent™ G1 / G1 Solar
+-   Descent™ G2
+-   Descent™ Mk1
+-   Descent™ Mk2 / Mk2i
+-   Descent™ Mk2 S
+-   Descent™ Mk3 43mm / Mk3i 43mm
+-   Descent™ Mk3i 51mm
+-   Enduro™ 3
+-   Enduro™
+-   epix™ (Gen 2) / quatix® 7 Sapphire
+-   epix™ Pro (Gen 2) 42mm
+-   epix™ Pro (Gen 2) 47mm / quatix® 7 Pro
+-   epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
+-   fēnix® 5 / quatix® 5
+-   fēnix® 5 Plus
+-   fēnix® 5S Plus
+-   fēnix® 5S
+-   fēnix® 5X / tactix® Charlie
+-   fēnix® 5X Plus
+-   fēnix® 6 / 6 Solar / 6 Dual Power
+-   fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6
+-   fēnix® 6S / 6S Solar / 6S Dual Power
+-   fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power
+-   fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power
+-   fēnix® 7 / quatix® 7
+-   fēnix® 7 Pro - Solar Edition (no Wi-Fi)
+-   fēnix® 7 Pro
+-   fēnix® 7S Pro
+-   fēnix® 7S
+-   fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2
+-   fēnix® 7X Pro - Solar Edition (no Wi-Fi)
+-   fēnix® 7X Pro
+-   fēnix® 8 43mm
+-   fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
+-   fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
+-   fēnix® 8 Solar 47mm
+-   fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm
+-   fēnix® 9 43mm
+-   fēnix® 9 47mm / 51mm
+-   fēnix® 9 Pro 43mm
+-   fēnix® 9 Pro 47mm
+-   fēnix® 9 Pro 51mm
+-   fēnix® 9 Pro Solar 47mm
+-   fēnix® 9 Pro Solar 51mm
+-   fēnix® Chronos
+-   fēnix® E
+-   First Avenger
+-   Forerunner® 165 Music
+-   Forerunner® 165
+-   Forerunner® 170 Music
+-   Forerunner® 170
+-   Forerunner® 245 Music
+-   Forerunner® 245
+-   Forerunner® 255 Music
+-   Forerunner® 255
+-   Forerunner® 255s Music
+-   Forerunner® 255s
+-   Forerunner® 265
+-   Forerunner® 265s
+-   Forerunner® 55
+-   Forerunner® 570 42mm
+-   Forerunner® 570 47mm
+-   Forerunner® 645 Music
+-   Forerunner® 645
+-   Forerunner® 70
+-   Forerunner® 735xt
+-   Forerunner® 745
+-   Forerunner® 935
+-   Forerunner® 945 LTE
+-   Forerunner® 945
+-   Forerunner® 955 / Solar
+-   Forerunner® 965
+-   Forerunner® 970
+-   Instinct® 2 / Solar / Dual Power / dēzl Edition
+-   Instinct® 2S / Solar / Dual Power
+-   Instinct® 2X Solar
+-   Instinct® 3 AMOLED 45mm
+-   Instinct® 3 AMOLED 50mm
+-   Instinct® 3 Solar 45mm / 50mm
+-   Instinct® Crossover AMOLED
+-   Instinct® Crossover
+-   Instinct® E 40mm
+-   Instinct® E 45mm
+-   MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition
+-   MARQ® (Gen 2) Aviator
+-   MARQ® Adventurer
+-   MARQ® Athlete
+-   MARQ® Aviator
+-   MARQ® Captain / MARQ® Captain: American Magic Edition
+-   MARQ® Commander
+-   MARQ® Driver
+-   MARQ® Expedition
+-   MARQ® Golfer
+-   Rey™
+-   Venu® 2 Plus
+-   Venu® 2
+-   Venu® 2S
+-   Venu® 3
+-   Venu® 3S
+-   Venu® 4 41mm
+-   Venu® 4 45mm / D2™ Air X15
+-   Venu® Mercedes-Benz® Collection
+-   Venu® Sq 2 Music
+-   Venu® Sq 2
+-   Venu® Sq
+-   Venu® Sq. Music Edition
+-   Venu® X1
+-   Venu®
+-   vívoactive® 3 Mercedes-Benz® Collection
+-   vívoactive® 3 Music LTE
+-   vívoactive® 3 Music
+-   vívoactive® 3
+-   vívoactive® 4
+-   vívoactive® 4S
+-   vívoactive® 5
+-   vívoactive® 6
+-   vívoactive® HR
+
+:::
+
+## Constant Summary
+
+### Constant Variables
+
+| Type | Name | Value | Since | Description |
+| --- | --- | --- | --- | --- |
+| Type | DEFAULT\_ENCRYPTION\_ID | 0 |
+API Level 2.3.0
+
+ |  |
+| Type | DEFAULT\_USER\_INFO\_STRING | 0 |
+
+API Level 2.3.0
+
+ |  |
+| Type | ENCRYPTION\_KEY\_LENGTH | 16 |
+
+API Level 2.3.0
+
+ |  |
+| Type | USER\_INFO\_STRING\_LENGTH | 19 |
+
+API Level 2.3.0
+
+ |  |
+
+## Typedef Summary [collapse](#)
+
+-   [**EncryptionKey**](#EncryptionKey-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+-   [**UserInfoString**](#UserInfoString-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+
+## Instance Member Summary [collapse](#)
+
+-   [**decimationRate**](#decimationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+    The division factor of the encryption counter.
+
+-   [**encryptionId**](#encryptionId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+    The unique 4 byte identifier of the encrypted master or the negotiating slave.
+
+-   [**encryptionKey**](#encryptionKey-var) as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
+
+    The 128-bit encryption key used to encrypt/decrypt ANT packets.
+
+-   [**userInfoString**](#userInfoString-var) as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
+
+    The (optional) user information String to be sent to the master channel on successful negotiation of encryption (Slave channels only).
+
+
+## Instance Method Summary [collapse](#)
+
+-   [**initialize**](#initialize-instance_function)(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })
+
+    Constructor.
+
+
+## Typedef Details
+
+### **EncryptionKey** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+
+Since:
+
+API Level 2.3.0
+
+### **UserInfoString** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+
+Since:
+
+API Level 2.3.0
+
+## Instance Attribute Details
+
+### var decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+The division factor of the encryption counter
+
+Since:
+
+API Level 2.3.0
+
+### var encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+The unique 4 byte identifier of the encrypted master or the negotiating slave.
+
+Since:
+
+API Level 2.3.0
+
+### var encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
+
+The 128-bit encryption key used to encrypt/decrypt ANT packets.
+
+Since:
+
+API Level 2.3.0
+
+### var userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
+
+The (optional) user information String to be sent to the master channel on successful negotiation of encryption (Slave channels only).
+
+Since:
+
+API Level 2.3.0
+
+## Instance Method Details
+
+### **initialize(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })**
+
+Constructor
+
+Parameters:
+
+-   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+
+    The Dictionary of options for the configuration
+
+    -   :encryptionId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+        a Number (uint32) to uniquely identify a device during encryption negotiation
+
+    -   :encryptionKey — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+
+        The key which will be used to encrypt/decrypt ANT packets as an Array of bytes
+
+    -   :userInfoString — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+
+        The string to send during negotiation to the master channel (only used when the channel is configured as a slave) as an Array of bytes
+
+    -   :decimationRate — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+        A [Number](/connect-iq/api-docs/Toybox/Lang/Number/) with range 1-255 used for division of the master channel rate by the slave's
+
+
+Since:
+
+API Level 2.3.0

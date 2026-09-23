@@ -1,0 +1,14 @@
+<svg width="448" height="486" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <mask id="venux1-5fields-8-mask">
+      <rect width="100%" height="100%" fill="black"/>
+      <rect width="100%" height="100%" style="fill:white"/>
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="448" height="121" mask="url(#venux1-5fields-8-mask)" style="stroke-width:2;stroke:rgb(0,0,0);fill:none"/>
+  <rect x="0" y="124" width="448" height="117" mask="url(#venux1-5fields-8-mask)" style="stroke-width:2;stroke:rgb(0,0,0);fill:none"/>
+  <rect x="0" y="244" width="222" height="120" mask="url(#venux1-5fields-8-mask)" style="stroke-width:2;stroke:rgb(0,0,0);fill:none"/>
+  <rect x="225" y="244" width="222" height="120" mask="url(#venux1-5fields-8-mask)" style="stroke-width:2;stroke:rgb(0,0,0);fill:none"/>
+  <rect x="0" y="367" width="448" height="119" mask="url(#venux1-5fields-8-mask)" style="stroke-width:2;stroke:rgb(0,0,0);fill:none"/>
+      <rect width="100%" height="100%" style="stroke-width:1;stroke:rgb(0,0,0);fill:none"/>
+</svg>

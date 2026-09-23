@@ -1,0 +1,17 @@
+[
+  {
+    "type": "dir",
+    "name": "ExitDataSizeLimitException",
+    "label": "ExitDataSizeLimitException"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidBackgroundTimeException",
+    "label": "InvalidBackgroundTimeException"
+  },
+  {
+    "type": "dir",
+    "name": "MessageSizeLimitException",
+    "label": "MessageSizeLimitException"
+  }
+]

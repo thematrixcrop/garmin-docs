@@ -1,0 +1,747 @@
+---
+title: "Class: Toybox.WatchUi.Menu2"
+---
+# Class: Toybox.WatchUi.Menu2
+
+Inherits:
+
+Toybox.WatchUi.View
+
+-   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+
+-   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+
+-   [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
+
+
+[show all](#)
+
+## Overview
+
+A representation of an on-screen menu. A Menu2 is a special View, similar to a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), that presents the user with a list of options. A Menu2 offers more capabilities than a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), like graphical titles, menu items that can be updated dynamically, and additional menu elements such as check boxes.
+
+After an option is selected, the registered [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) method will be called. While a Menu2 can be generated programmatically, they should generally be created as a resource.
+
+A Menu2 is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
+
+## See Also:
+
+-   [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
+
+-   [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
+
+-   [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
+
+-   [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
+
+
+Note:
+
+The look and feel of a Menu2 is device-specific.
+
+Example:
+
+Build a simple Menu2 programmatically
+
+```
+using Toybox.WatchUi;
+
+class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
+    function initialize() {
+        BehaviorDelegate.initialize();
+    }
+
+    function onMenu() {
+        var menu = new WatchUi.Menu2({:title=>"My Menu2"});
+        var delegate;
+        menu.addItem(
+            new MenuItem(
+                "Item 1 Label",
+                "Item 1 subLabel",
+                "itemOneId",
+                {}
+            )
+        );
+        menu.addItem(
+            new MenuItem(
+                "Item 2 Label",
+                "Item 2 subLabel",
+                "itemTwoId",
+                {}
+            )
+        );
+        delegate = new MyMenu2Delegate(); // a WatchUi.Menu2InputDelegate
+        WatchUi.pushView(menu, delegate, WatchUi.SLIDE_IMMEDIATE);
+        return true;
+    }
+}
+```
+
+Since:
+
+API Level 3.0.0
+
+App Types and Runtime Contexts:
+
+-   Audio Content Provider
+
+-   Data Field
+
+-   Glance
+
+-   Watch App
+
+-   Watch Face
+
+-   Widget
+
+
+:::details Supported Devices
+
+-   Approach® S50
+-   Approach® S62
+-   Approach® S70 42mm
+-   Approach® S70 47mm
+-   Captain Marvel
+-   D2™ Air X10
+-   D2™ Air
+-   D2™ Charlie
+-   D2™ Delta PX
+-   D2™ Delta S
+-   D2™ Delta
+-   D2™ Mach 1
+-   D2™ Mach 2 Pro
+-   D2™ Mach 2
+-   Darth Vader™
+-   Descent™ G1 / G1 Solar
+-   Descent™ G2
+-   Descent™ Mk1
+-   Descent™ Mk2 / Mk2i
+-   Descent™ Mk2 S
+-   Descent™ Mk3 43mm / Mk3i 43mm
+-   Descent™ Mk3i 51mm
+-   Edge® 1030 / Bontrager
+-   Edge® 1030 Plus
+-   Edge® 1030
+-   Edge® 1040 / 1040 Solar
+-   Edge® 1050
+-   Edge® 520 Plus
+-   Edge® 530
+-   Edge® 540 / 540 Solar
+-   Edge® 550
+-   Edge® 820 / Explore
+-   Edge® 830
+-   Edge® 840 / 840 Solar
+-   Edge® 850
+-   Edge® Explore 2
+-   Edge® Explore
+-   Edge® MTB
+-   Enduro™ 3
+-   Enduro™
+-   epix™ (Gen 2) / quatix® 7 Sapphire
+-   epix™ Pro (Gen 2) 42mm
+-   epix™ Pro (Gen 2) 47mm / quatix® 7 Pro
+-   epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
+-   eTrex® Touch
+-   fēnix® 5 / quatix® 5
+-   fēnix® 5 Plus
+-   fēnix® 5S Plus
+-   fēnix® 5S
+-   fēnix® 5X / tactix® Charlie
+-   fēnix® 5X Plus
+-   fēnix® 6 / 6 Solar / 6 Dual Power
+-   fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6
+-   fēnix® 6S / 6S Solar / 6S Dual Power
+-   fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power
+-   fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power
+-   fēnix® 7 / quatix® 7
+-   fēnix® 7 Pro - Solar Edition (no Wi-Fi)
+-   fēnix® 7 Pro
+-   fēnix® 7S Pro
+-   fēnix® 7S
+-   fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2
+-   fēnix® 7X Pro - Solar Edition (no Wi-Fi)
+-   fēnix® 7X Pro
+-   fēnix® 8 43mm
+-   fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
+-   fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
+-   fēnix® 8 Solar 47mm
+-   fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm
+-   fēnix® 9 43mm
+-   fēnix® 9 47mm / 51mm
+-   fēnix® 9 Pro 43mm
+-   fēnix® 9 Pro 47mm
+-   fēnix® 9 Pro 51mm
+-   fēnix® 9 Pro Solar 47mm
+-   fēnix® 9 Pro Solar 51mm
+-   fēnix® Chronos
+-   fēnix® E
+-   First Avenger
+-   Forerunner® 165 Music
+-   Forerunner® 165
+-   Forerunner® 170 Music
+-   Forerunner® 170
+-   Forerunner® 245 Music
+-   Forerunner® 245
+-   Forerunner® 255 Music
+-   Forerunner® 255
+-   Forerunner® 255s Music
+-   Forerunner® 255s
+-   Forerunner® 265
+-   Forerunner® 265s
+-   Forerunner® 55
+-   Forerunner® 570 42mm
+-   Forerunner® 570 47mm
+-   Forerunner® 645 Music
+-   Forerunner® 645
+-   Forerunner® 70
+-   Forerunner® 745
+-   Forerunner® 935
+-   Forerunner® 945 LTE
+-   Forerunner® 945
+-   Forerunner® 955 / Solar
+-   Forerunner® 965
+-   Forerunner® 970
+-   GPSMAP® 66s / 66i / 66sr / 66st
+-   GPSMAP® 67 / 67i
+-   GPSMAP® 86s / 86sc / 86i / 86sci
+-   GPSMAP® H1 / H1i Plus
+-   Instinct® 2 / Solar / Dual Power / dēzl Edition
+-   Instinct® 2S / Solar / Dual Power
+-   Instinct® 2X Solar
+-   Instinct® 3 AMOLED 45mm
+-   Instinct® 3 AMOLED 50mm
+-   Instinct® 3 Solar 45mm / 50mm
+-   Instinct® Crossover AMOLED
+-   Instinct® Crossover
+-   Instinct® E 40mm
+-   Instinct® E 45mm
+-   MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition
+-   MARQ® (Gen 2) Aviator
+-   MARQ® Adventurer
+-   MARQ® Athlete
+-   MARQ® Aviator
+-   MARQ® Captain / MARQ® Captain: American Magic Edition
+-   MARQ® Commander
+-   MARQ® Driver
+-   MARQ® Expedition
+-   MARQ® Golfer
+-   Montana® 7 Series
+-   Oregon® 7 Series
+-   Rey™
+-   Rino® 7 Series
+-   Venu® 2 Plus
+-   Venu® 2
+-   Venu® 2S
+-   Venu® 3
+-   Venu® 3S
+-   Venu® 4 41mm
+-   Venu® 4 45mm / D2™ Air X15
+-   Venu® Mercedes-Benz® Collection
+-   Venu® Sq 2 Music
+-   Venu® Sq 2
+-   Venu® Sq
+-   Venu® Sq. Music Edition
+-   Venu® X1
+-   Venu®
+-   vívoactive® 3 Mercedes-Benz® Collection
+-   vívoactive® 3 Music LTE
+-   vívoactive® 3 Music
+-   vívoactive® 3
+-   vívoactive® 4
+-   vívoactive® 4S
+-   vívoactive® 5
+-   vívoactive® 6
+
+:::
+
+## Direct Known Subclasses
+
+[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/), [WatchUi.CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/)
+
+## Constant Summary
+
+### DividerType
+
+Divider type for supported devices
+
+Since:
+
+API Level 5.0.1
+
+| Name | Value | Since | Description |
+| --- | --- | --- | --- |
+| DIVIDER\_TYPE\_DEFAULT | 0 |
+API Level 5.0.1
+
+ |
+
+Default divider type
+
+ |
+| DIVIDER\_TYPE\_ICON | 1 |
+
+API Level 5.0.1
+
+ |
+
+Icon divider type
+
+ |
+
+## Instance Method Summary [collapse](#)
+
+-   [**addItem**](#addItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
+
+    Add a MenuItem to a Menu2.
+
+-   [**deleteItem**](#deleteItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+
+    Delete a MenuItem from a Menu2.
+
+-   [**findItemById**](#findItemById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+    Find a MenuItem by ID in a Menu2.
+
+-   [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
+
+    Get the icon Retrieve the icon for this Menu2.
+
+-   [**getItem**](#getItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
+
+    Get a MenuItem from a Menu2.
+
+-   [**initialize**](#initialize-instance_function)(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
+
+    Constructor.
+
+-   [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
+
+    Set or change the desired divider type.
+
+-   [**setFocus**](#setFocus-instance_function)(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void**
+
+    Set the focus of a MenuItem in a Menu2.
+
+-   [**setFooter**](#setFooter-instance_function)(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+
+    Set a Menu2 footer.
+
+-   [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
+
+    Set the icon Set the icon to display in the subscreen area when the focused MenuItem does not have an icon.
+
+-   [**setTheme**](#setTheme-instance_function)(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**) as **Void**
+
+    Set the theme.
+
+-   [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+
+    Set a Menu2 title.
+
+-   [**updateItem**](#updateItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+
+    Update a MenuItem in a Menu2.
+
+
+## Instance Method Details
+
+### **addItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/))** as **Void**
+
+Add a MenuItem to a Menu2.
+
+Parameters:
+
+-   item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
+
+    The MenuItem to add to the Menu2
+
+    -   May not be a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
+
+
+
+Since:
+
+API Level 3.0.0
+
+Throws:
+
+-   ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
+
+    Thrown if item is a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
+
+-   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+
+    Thrown if item is not a valid type
+
+
+### **deleteItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+
+Delete a MenuItem from a Menu2.
+
+Parameters:
+
+-   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should be deleted from the Menu2.
+
+
+Returns:
+
+-   [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) `true` if the item exists, or `null` if the specified index it outside of the bounds of the menu items array.
+
+
+Since:
+
+API Level 3.0.0
+
+### **findItemById(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+
+Find a MenuItem by ID in a Menu2.
+
+Parameters:
+
+-   identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+
+    The identifier for which to search
+
+
+Returns:
+
+-   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+
+    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) assigned the supplied identifier
+
+    -   \-1 if not found
+
+
+
+Since:
+
+API Level 3.0.0
+
+### **getIcon()** as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
+
+Get the icon
+
+Retrieve the icon for this Menu2.
+
+:::details Supported Devices
+
+-   Descent™ G1 / G1 Solar
+-   Instinct® 2 / Solar / Dual Power / dēzl Edition
+-   Instinct® 2S / Solar / Dual Power
+-   Instinct® 2X Solar
+-   Instinct® 3 AMOLED 45mm
+-   Instinct® 3 AMOLED 50mm
+-   Instinct® 3 Solar 45mm / 50mm
+-   Instinct® E 40mm
+-   Instinct® E 45mm
+
+:::
+
+Returns:
+
+-   [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
+
+    The icon
+
+
+Since:
+
+API Level 3.4.0
+
+### **getItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
+
+Get a MenuItem from a Menu2.
+
+Parameters:
+
+-   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) to get
+
+
+Returns:
+
+-   [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
+
+Since:
+
+API Level 3.0.0
+
+### **initialize(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)**
+
+Constructor
+
+Note:
+
+The `:icon` option is only used on ConnectIQ 3.4.0 devices with subscreen support.
+
+Note:
+
+The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme support.
+
+Note:
+
+The `:dividerType` option is only used on ConnectIQ 5.0.1 devices with divider support.
+
+Note:
+
+The `:footer` option is only used on ConnectIQ 5.1.0 devices.
+
+Parameters:
+
+-   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+
+    A Dictionary of options
+
+    -   Can be `null`
+
+
+    -   :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+        The menu title
+
+    -   :footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+        The menu footer
+
+    -   :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+        The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have initial focus
+
+    -   :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+
+        The icon to display in the subscreen area when the focused MenuItem does not have an icon.
+
+    -   :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
+
+        The menu theme, or `null` for no theme. Defaults to MENU\_THEME\_DEFAULT.
+
+    -   :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
+
+        The divider type, Defaults to DIVIDER\_TYPE\_DEFAULT.
+
+
+See Also:
+
+-   [Toybox.WatchUi.Menu2.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#setDividerType-instance_function)
+
+
+Since:
+
+API Level 3.0.0
+
+### **setDividerType(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**)** as **Void**
+
+Set or change the desired divider type.
+
+If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module).
+
+For [IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) and [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/), icon and checkbox will be rendered on the left side of the divider if item is [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) or `default` aligned.
+
+For [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/), toggle icon will be rendered on the left side of the divider, if item is [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) aligned only.
+
+[Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) will be used if not set for devices that support divider, or `null` is passed.
+
+:::details Supported Devices
+
+-   D2™ Mach 2 Pro
+-   D2™ Mach 2
+-   Enduro™ 3
+-   fēnix® 8 43mm
+-   fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
+-   fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
+-   fēnix® 8 Solar 47mm
+-   fēnix® 8 Solar 51mm / tactix® 8 Solar 51mm
+-   fēnix® 9 43mm
+-   fēnix® 9 47mm / 51mm
+-   fēnix® 9 Pro 43mm
+-   fēnix® 9 Pro 47mm
+-   fēnix® 9 Pro 51mm
+-   fēnix® 9 Pro Solar 47mm
+-   fēnix® 9 Pro Solar 51mm
+-   fēnix® E
+
+:::
+
+Since:
+
+API Level 5.0.1
+
+Throws:
+
+-   (WatchUi.InvalidValueException) —
+
+    Thrown if divider is not an valid value.
+
+-   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+
+    Thrown if divider is not a valid type.
+
+
+### **setFocus(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as **Void**
+
+Set the focus of a MenuItem in a Menu2.
+
+Parameters:
+
+-   focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have focus
+
+
+Since:
+
+API Level 3.0.0
+
+Throws:
+
+-   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+
+    Thrown if focus is not a valid type
+
+
+### **setFooter(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
+
+Set a Menu2 footer.
+
+Parameters:
+
+-   footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+    The menu footer text, `null`, a string ResourceId, or a Drawable
+
+
+Since:
+
+API Level 5.1.0
+
+Throws:
+
+-   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+
+    Thrown if footer is not a valid type
+
+
+### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
+
+Set the icon
+
+Set the icon to display in the subscreen area when the focused MenuItem does not have an icon. If this menu does not have an icon, the app icon will be shown instead.
+
+Parameters:
+
+-   icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+    The icon
+
+
+:::details Supported Devices
+
+-   Descent™ G1 / G1 Solar
+-   Instinct® 2 / Solar / Dual Power / dēzl Edition
+-   Instinct® 2S / Solar / Dual Power
+-   Instinct® 2X Solar
+-   Instinct® 3 AMOLED 45mm
+-   Instinct® 3 AMOLED 50mm
+-   Instinct® 3 Solar 45mm / 50mm
+-   Instinct® E 40mm
+-   Instinct® E 45mm
+
+:::
+
+Since:
+
+API Level 3.4.0
+
+### **setTheme(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**)** as **Void**
+
+Set the theme
+
+Parameters:
+
+-   theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
+
+    The theme for this menu.
+
+
+:::details Supported Devices
+
+-   D2™ Mach 2 Pro
+-   D2™ Mach 2
+-   fēnix® 8 43mm
+-   fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
+-   fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
+-   fēnix® 9 43mm
+-   fēnix® 9 47mm / 51mm
+-   fēnix® 9 Pro 43mm
+-   fēnix® 9 Pro 47mm
+-   fēnix® 9 Pro 51mm
+-   fēnix® E
+-   Forerunner® 165 Music
+-   Forerunner® 165
+-   Forerunner® 170 Music
+-   Forerunner® 170
+-   Forerunner® 265
+-   Forerunner® 265s
+-   Forerunner® 570 42mm
+-   Forerunner® 570 47mm
+-   Forerunner® 70
+-   Forerunner® 965
+-   Forerunner® 970
+-   Instinct® 3 AMOLED 45mm
+-   Instinct® 3 AMOLED 50mm
+-   Instinct® Crossover AMOLED
+-   Venu® 4 41mm
+-   Venu® 4 45mm / D2™ Air X15
+-   Venu® X1
+-   vívoactive® 6
+
+:::
+
+Since:
+
+API Level 4.1.8
+
+### **setTitle(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
+
+Set a Menu2 title.
+
+Parameters:
+
+-   title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+
+    The menu title text, `null`, a string ResourceId, or a Drawable
+
+
+Since:
+
+API Level 3.0.0
+
+Throws:
+
+-   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+
+    Thrown if title is not a valid type
+
+
+### **updateItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
+
+Update a MenuItem in a Menu2.
+
+Parameters:
+
+-   item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
+
+    The MenuItem to update
+
+-   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+
+    The index of the MenuItem to update
+
+
+Since:
+
+API Level 3.0.0

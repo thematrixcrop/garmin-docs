@@ -1,0 +1,67 @@
+[
+  {
+    "type": "dir",
+    "name": "AffineTransform",
+    "label": "AffineTransform"
+  },
+  {
+    "type": "dir",
+    "name": "BitmapReference",
+    "label": "BitmapReference"
+  },
+  {
+    "type": "dir",
+    "name": "BitmapTexture",
+    "label": "BitmapTexture"
+  },
+  {
+    "type": "dir",
+    "name": "BoundingBox",
+    "label": "BoundingBox"
+  },
+  {
+    "type": "dir",
+    "name": "BufferedBitmap",
+    "label": "BufferedBitmap"
+  },
+  {
+    "type": "dir",
+    "name": "BufferedBitmapReference",
+    "label": "BufferedBitmapReference"
+  },
+  {
+    "type": "dir",
+    "name": "Dc",
+    "label": "Dc"
+  },
+  {
+    "type": "dir",
+    "name": "FontReference",
+    "label": "FontReference"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidBitmapResourceException",
+    "label": "InvalidBitmapResourceException"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidPaletteException",
+    "label": "InvalidPaletteException"
+  },
+  {
+    "type": "dir",
+    "name": "OutOfGraphicsMemoryException",
+    "label": "OutOfGraphicsMemoryException"
+  },
+  {
+    "type": "dir",
+    "name": "ResourceReference",
+    "label": "ResourceReference"
+  },
+  {
+    "type": "dir",
+    "name": "VectorFont",
+    "label": "VectorFont"
+  }
+]

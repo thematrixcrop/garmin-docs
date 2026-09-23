@@ -1,0 +1,141 @@
+---
+title: "Class: Toybox.Ant.BurstListener"
+---
+# Class: Toybox.Ant.BurstListener
+
+Inherits:
+
+Toybox.Lang.Object
+
+-   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+
+-   [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
+
+
+[show all](#)
+
+## Overview
+
+A class that provides a set of callback methods to handle the different burst transmission scenarios in the Ant SDK.
+
+Example:
+
+Shows extending BurstListener class
+
+```
+using Toybox.Ant;
+
+// An extension of BurstListener to handle burst events
+class MyBurstListener extends Ant.BurstListener {
+
+    // Callback when a burst transmission completes successfully
+    function onTransmitComplete() as Void {
+        System.println("onTransmitComplete");
+    }
+
+    // Callback when a burst transmission fails over the air.
+    // Takes an errorCode parameter which is the type of burst
+    // failure that occurred.
+    function onTransmitFail(errorCode as BurstError) as Void {
+        System.println("onTransmitFail-" + errorCode);
+    }
+
+    // Callback when a burst reception fails over the air.
+    // Takes an errorCode parameter which is the type of burst
+    // failure that occurred.
+    function onReceiveFail(errorCode as BurstError) as Void {
+        System.println("onReceiveFail-" + errorCode);
+    }
+
+    // Callback when a burst reception completes successfully.
+    // Takes a burstPayload parameter which is the burst data
+    // received across the channel.
+    function onReceiveComplete(burstPayload as BurstPayload) as Void {
+        System.println("onReceiveComplete");
+    }
+
+}
+```
+
+Since:
+
+API Level 2.2.0
+
+## Instance Method Summary [collapse](#)
+
+-   [**onReceiveComplete**](#onReceiveComplete-instance_function)(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
+
+    Callback when a burst reception completes successfully.
+
+-   [**onReceiveFail**](#onReceiveFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
+
+    Callback when a burst reception fails over the air.
+
+-   [**onTransmitComplete**](#onTransmitComplete-instance_function)() as **Void**
+
+    Callback when a burst transmission completes successfully.
+
+-   [**onTransmitFail**](#onTransmitFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
+
+    Callback when a burst transmission fails over the air.
+
+
+## Instance Method Details
+
+### **onReceiveComplete(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
+
+Callback when a burst reception completes successfully
+
+Parameters:
+
+-   burstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
+
+    The BurstPayload received
+
+
+See Also:
+
+-   [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
+
+
+Since:
+
+API Level 2.2.0
+
+### **onReceiveFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
+
+Callback when a burst reception fails over the air
+
+Parameters:
+
+-   errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
+
+    The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
+
+
+Since:
+
+API Level 2.2.0
+
+### **onTransmitComplete()** as **Void**
+
+Callback when a burst transmission completes successfully
+
+Since:
+
+API Level 2.2.0
+
+### **onTransmitFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
+
+Callback when a burst transmission fails over the air
+
+Parameters:
+
+-   errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
+
+    The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
+
+
+Since:
+
+API Level 2.2.0

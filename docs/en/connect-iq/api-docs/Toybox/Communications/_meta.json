@@ -1,0 +1,32 @@
+[
+  {
+    "type": "dir",
+    "name": "ConnectionListener",
+    "label": "ConnectionListener"
+  },
+  {
+    "type": "dir",
+    "name": "MailboxIterator",
+    "label": "MailboxIterator"
+  },
+  {
+    "type": "dir",
+    "name": "Message",
+    "label": "Message"
+  },
+  {
+    "type": "dir",
+    "name": "OAuthMessage",
+    "label": "OAuthMessage"
+  },
+  {
+    "type": "dir",
+    "name": "PhoneAppMessage",
+    "label": "PhoneAppMessage"
+  },
+  {
+    "type": "dir",
+    "name": "SyncDelegate",
+    "label": "SyncDelegate"
+  }
+]

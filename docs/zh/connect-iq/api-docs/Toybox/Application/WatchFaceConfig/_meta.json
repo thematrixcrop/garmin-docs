@@ -1,0 +1,22 @@
+[
+  {
+    "type": "dir",
+    "name": "Color",
+    "label": "Color"
+  },
+  {
+    "type": "dir",
+    "name": "ComplicationRef",
+    "label": "ComplicationRef"
+  },
+  {
+    "type": "dir",
+    "name": "Id",
+    "label": "Id"
+  },
+  {
+    "type": "dir",
+    "name": "Settings",
+    "label": "Settings"
+  }
+]

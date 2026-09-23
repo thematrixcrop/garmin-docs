@@ -1,0 +1,243 @@
+[
+  {
+    "type": "dir",
+    "name": "Activity",
+    "label": "Activity",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "ActivityMonitor",
+    "label": "ActivityMonitor",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "ActivityPrompts",
+    "label": "ActivityPrompts",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "ActivityRecording",
+    "label": "ActivityRecording",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Ant",
+    "label": "Ant",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "AntPlus",
+    "label": "AntPlus",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Application",
+    "label": "Application",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Attention",
+    "label": "Attention",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Authentication",
+    "label": "Authentication",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Background",
+    "label": "Background",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "BluetoothLowEnergy",
+    "label": "BluetoothLowEnergy",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Communications",
+    "label": "Communications",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Complications",
+    "label": "Complications",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Cryptography",
+    "label": "Cryptography",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "FitContributor",
+    "label": "FitContributor",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Graphics",
+    "label": "Graphics",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Lang",
+    "label": "Lang",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Math",
+    "label": "Math",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Media",
+    "label": "Media",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Notifications",
+    "label": "Notifications",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "PersistedContent",
+    "label": "PersistedContent",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "PersistedLocations",
+    "label": "PersistedLocations"
+  },
+  {
+    "type": "dir",
+    "name": "Position",
+    "label": "Position",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "ScanCode",
+    "label": "ScanCode"
+  },
+  {
+    "type": "dir",
+    "name": "Sensor",
+    "label": "Sensor",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "SensorHistory",
+    "label": "SensorHistory",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "SensorLogging",
+    "label": "SensorLogging",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "StringUtil",
+    "label": "StringUtil",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "System",
+    "label": "System",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Test",
+    "label": "Test",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Time",
+    "label": "Time",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Timer",
+    "label": "Timer",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "UserProfile",
+    "label": "UserProfile",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "WatchUi",
+    "label": "WatchUi",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "Weather",
+    "label": "Weather",
+    "collapsible": true,
+    "collapsed": true
+  }
+]

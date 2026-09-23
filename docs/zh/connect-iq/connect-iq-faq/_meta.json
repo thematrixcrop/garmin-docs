@@ -1,0 +1,52 @@
+[
+  {
+    "type": "dir",
+    "name": "how-do-i-get-my-watch-face-to-update-every-second",
+    "label": "How Do I Get My Watch Face to Update Every Second"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-use-rest-services",
+    "label": "How Do I Use REST Services"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-make-a-watch-face-for-amoled-products",
+    "label": "How Do I Make a Watch Face for AMOLED Products"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-create-a-connect-iq-background-service",
+    "label": "How Do I Create a Connect IQ Background Service"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-optimize-bitmaps",
+    "label": "How Do I Optimize Bitmaps"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-override-the-goal-animations",
+    "label": "How Do I Override the Goal Animations"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-use-custom-fonts",
+    "label": "How Do I Use Custom Fonts"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-use-a-mapview",
+    "label": "How Do I Use a Mapview"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-use-the-connect-iq-mobile-sdk",
+    "label": "How Do I Use the Connect IQ Mobile SDK"
+  },
+  {
+    "type": "dir",
+    "name": "how-do-i-create-an-audio-content-provider",
+    "label": "How Do I Create an Audio Content Provider"
+  }
+]

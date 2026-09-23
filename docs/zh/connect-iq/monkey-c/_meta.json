@@ -1,0 +1,42 @@
+[
+  {
+    "type": "dir",
+    "name": "functions",
+    "label": "Functions"
+  },
+  {
+    "type": "dir",
+    "name": "objects-and-memory",
+    "label": "Objects and Memory"
+  },
+  {
+    "type": "dir",
+    "name": "containers",
+    "label": "Containers"
+  },
+  {
+    "type": "dir",
+    "name": "monkey-types",
+    "label": "Monkey Types"
+  },
+  {
+    "type": "dir",
+    "name": "exceptions-and-errors",
+    "label": "Exceptions and Errors"
+  },
+  {
+    "type": "dir",
+    "name": "annotations",
+    "label": "Annotations"
+  },
+  {
+    "type": "dir",
+    "name": "coding-conventions",
+    "label": "Coding Conventions"
+  },
+  {
+    "type": "dir",
+    "name": "compiler-options",
+    "label": "Compiler Options"
+  }
+]

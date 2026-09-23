@@ -1,0 +1,12 @@
+[
+  {
+    "type": "dir",
+    "name": "SensorHistoryIterator",
+    "label": "SensorHistoryIterator"
+  },
+  {
+    "type": "dir",
+    "name": "SensorSample",
+    "label": "SensorSample"
+  }
+]

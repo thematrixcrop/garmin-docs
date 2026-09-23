@@ -1,0 +1,62 @@
+[
+  {
+    "type": "dir",
+    "name": "BleDelegate",
+    "label": "BleDelegate"
+  },
+  {
+    "type": "dir",
+    "name": "Characteristic",
+    "label": "Characteristic"
+  },
+  {
+    "type": "dir",
+    "name": "Descriptor",
+    "label": "Descriptor"
+  },
+  {
+    "type": "dir",
+    "name": "Device",
+    "label": "Device"
+  },
+  {
+    "type": "dir",
+    "name": "DevicePairException",
+    "label": "DevicePairException"
+  },
+  {
+    "type": "dir",
+    "name": "InvalidRequestException",
+    "label": "InvalidRequestException"
+  },
+  {
+    "type": "dir",
+    "name": "Iterator",
+    "label": "Iterator"
+  },
+  {
+    "type": "dir",
+    "name": "ProfileRegistrationException",
+    "label": "ProfileRegistrationException"
+  },
+  {
+    "type": "dir",
+    "name": "ScanResult",
+    "label": "ScanResult"
+  },
+  {
+    "type": "dir",
+    "name": "Service",
+    "label": "Service"
+  },
+  {
+    "type": "dir",
+    "name": "Uuid",
+    "label": "Uuid"
+  },
+  {
+    "type": "dir",
+    "name": "UuidFormatException",
+    "label": "UuidFormatException"
+  }
+]

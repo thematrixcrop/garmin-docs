@@ -1,0 +1,32 @@
+[
+  {
+    "type": "dir",
+    "name": "Info",
+    "label": "Info"
+  },
+  {
+    "type": "dir",
+    "name": "ProfileInfo",
+    "label": "ProfileInfo"
+  },
+  {
+    "type": "dir",
+    "name": "SplitInfo",
+    "label": "SplitInfo"
+  },
+  {
+    "type": "dir",
+    "name": "WorkoutIntervalStep",
+    "label": "WorkoutIntervalStep"
+  },
+  {
+    "type": "dir",
+    "name": "WorkoutStep",
+    "label": "WorkoutStep"
+  },
+  {
+    "type": "dir",
+    "name": "WorkoutStepInfo",
+    "label": "WorkoutStepInfo"
+  }
+]
