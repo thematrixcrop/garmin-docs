@@ -209,11 +209,11 @@ API 级别 1.0.0
 
 - [**onEnterSleep**](#onEnterSleep-instance_function)() as **Void**
 
-    The device is entering low power mode.
+    设备正在进入低功耗模式。
 
 - [**onExitSleep**](#onExitSleep-instance_function)() as **Void**
 
-    The device is exiting low power mode.
+    设备正在退出低功耗模式。
 
 - [**onPartialUpdate**](#onPartialUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
@@ -232,7 +232,7 @@ API 级别 1.0.0
 
 ### **onEnterSleep()** as **Void**
 
-The device is entering low power mode.
+设备正在进入低功耗模式。
 
 Terminate any active timers and prepare for once-per-minute updates.
 
@@ -247,7 +247,7 @@ API 级别 1.0.0
 
 ### **onExitSleep()** as **Void**
 
-The device is exiting low power mode.
+设备正在退出低功耗模式。
 
 Timers and animations may be started here in preparation for once-per-second updates.
 

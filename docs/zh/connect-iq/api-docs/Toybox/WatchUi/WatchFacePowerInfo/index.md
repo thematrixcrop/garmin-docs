@@ -52,7 +52,7 @@ API 级别 2.3.0
 
 - [**executionTimeLimit**](#executionTimeLimit-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    The maximum allowable partial update execution time [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) is allowed to take.
+    允许 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 执行部分更新所用的最长时间。
 
 
 ## 实例属性详情
@@ -74,7 +74,7 @@ Returns:
 
 ### var executionTimeLimit as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-The maximum allowable partial update execution time [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) is allowed to take.
+允许 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 执行部分更新所用的最长时间。
 
 Since:
 

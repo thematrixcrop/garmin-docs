@@ -99,7 +99,7 @@ Parameters:
 
     The name of the Field as a String
 
-- The maximum length may vary between products
+- 最大长度可能因产品而异。
 
 - At least 64 bytes are available
 
@@ -144,7 +144,7 @@ Parameters:
 
 - This should use the current device language
 
-- The maximum length may vary between products
+- 最大长度可能因产品而异。
 
 - At least 16 bytes are available
 

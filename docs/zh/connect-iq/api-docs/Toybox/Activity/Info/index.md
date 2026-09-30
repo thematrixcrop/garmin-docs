@@ -76,11 +76,11 @@ API 级别 1.0.0
 
 - [**currentHeartRate**](#currentHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current heart rate in beats per minute (bpm).
+    当前心率，单位为每分钟心跳次数 (bpm)。
 
 - [**currentLocation**](#currentLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-    The current location.
+    当前位置。
 
 - [**currentLocationAccuracy**](#currentLocationAccuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
 
@@ -88,27 +88,27 @@ API 级别 1.0.0
 
 - [**currentOxygenSaturation**](#currentOxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current oxygen saturation in percent (%).
+    当前血氧饱和度，以百分比 (%) 表示。
 
 - [**currentPower**](#currentPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current power in Watts (W).
+    当前功率，单位为瓦特 (W)。
 
 - [**currentSpeed**](#currentSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The current speed in meters per second (mps).
+    当前速度，单位为米每秒 (mps)。
 
 - [**distanceToDestination**](#distanceToDestination-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The distance to the destination in meters (m).
+    到目的地的距离，单位为米 (m)。
 
 - [**distanceToNextPoint**](#distanceToNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The distance to the next point in meters (m).
+    到下一个点的距离，单位为米 (m)。
 
 - [**elapsedDistance**](#elapsedDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The elapsed distance of the current activity in meters (m).
+    当前活动已经过的距离，单位为米 (m)。
 
 - [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -116,11 +116,11 @@ API 级别 1.0.0
 
 - [**elevationAtDestination**](#elevationAtDestination-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The elevation at the destination in meters (m).
+    目的地海拔，单位为米 (m)。
 
 - [**elevationAtNextPoint**](#elevationAtNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The elevation at the next point in meters (m).
+    下一个点的海拔，单位为米 (m)。
 
 - [**energyExpenditure**](#energyExpenditure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -132,43 +132,43 @@ API 级别 1.0.0
 
 - [**frontDerailleurMax**](#frontDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The front bicycle derailleur maximum index.
+    前自行车变速器的最大索引。
 
 - [**frontDerailleurSize**](#frontDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The front bicycle derailleur gear size in number of teeth.
+    前自行车变速器的齿轮尺寸，以齿数表示。
 
 - [**maxCadence**](#maxCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The maximum cadence recorded during the current activity in revolutions per minute (rpm).
+    当前活动期间记录的最大步频，单位为每分钟转数 (rpm)。
 
 - [**maxHeartRate**](#maxHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The maximum heart rate recorded during the current activity in beats per minute (bpm).
+    当前活动期间记录的最大心率，单位为每分钟心跳次数 (bpm)。
 
 - [**maxPower**](#maxPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The maximum power recorded during the current activity in Watts (W).
+    当前活动期间记录的最大功率，单位为瓦特 (W)。
 
 - [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The maximum speed recorded during the current activity in meters per second (mps).
+    当前活动期间记录的最大速度，单位为米每秒 (mps)。
 
 - [**meanSeaLevelPressure**](#meanSeaLevelPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The mean sea level barometric pressure in Pascals (Pa).
+    平均海平面气压，单位为帕斯卡 (Pa)。
 
 - [**nameOfDestination**](#nameOfDestination-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    The name of the destination.
+    目的地名称。
 
 - [**nameOfNextPoint**](#nameOfNextPoint-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    The name of the next point.
+    下一个点的名称。
 
 - [**offCourseDistance**](#offCourseDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The distance to the nearest point on the current course in meters (m).
+    到当前路线最近点的距离，单位为米 (m)。
 
 - [**rawAmbientPressure**](#rawAmbientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -176,7 +176,7 @@ API 级别 1.0.0
 
 - [**rearDerailleurIndex**](#rearDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current rear bicycle derailleur index.
+    当前后自行车变速器索引。
 
 - [**rearDerailleurMax**](#rearDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -208,7 +208,7 @@ API 级别 1.0.0
 
 - [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current Timer value in milliseconds (ms).
+    当前计时器值，单位为毫秒 (ms)。
 
 - [**totalAscent**](#totalAscent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -220,7 +220,7 @@ API 级别 1.0.0
 
 - [**track**](#track-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The current track in radians.
+    当前轨迹，单位为弧度。
 
 - [**trainingEffect**](#trainingEffect-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1004,7 +1004,7 @@ Returns:
 
 ### var currentHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current heart rate in beats per minute (bpm).
+当前心率，单位为每分钟心跳次数 (bpm)。
 
 Since:
 
@@ -1016,7 +1016,7 @@ Returns:
 
 ### var currentLocation as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-The current location.
+当前位置。
 
 This member will always provide a `null` value unless the Positioning Permission is enabled.
 
@@ -1052,7 +1052,7 @@ Returns:
 
 ### var currentOxygenSaturation as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current oxygen saturation in percent (%)
+当前血氧饱和度，以百分比 (%) 表示。
 
 Since:
 
@@ -1181,7 +1181,7 @@ Returns:
 
 ### var currentPower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current power in Watts (W).
+当前功率，单位为瓦特 (W)。
 
 Since:
 
@@ -1311,7 +1311,7 @@ Returns:
 
 ### var currentSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The current speed in meters per second (mps).
+当前速度，单位为米每秒 (mps)。
 
 Since:
 
@@ -1328,7 +1328,7 @@ Returns:
 
 ### var distanceToDestination as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The distance to the destination in meters (m).
+到目的地的距离，单位为米 (m)。
 
 Since:
 
@@ -1443,7 +1443,7 @@ Returns:
 
 ### var distanceToNextPoint as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The distance to the next point in meters (m).
+到下一个点的距离，单位为米 (m)。
 
 Since:
 
@@ -1558,7 +1558,7 @@ Returns:
 
 ### var elapsedDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The elapsed distance of the current activity in meters (m).
+当前活动已经过的距离，单位为米 (m)。
 
 Since:
 
@@ -1582,7 +1582,7 @@ Returns:
 
 ### var elevationAtDestination as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The elevation at the destination in meters (m).
+目的地海拔，单位为米 (m)。
 
 Since:
 
@@ -1697,7 +1697,7 @@ Returns:
 
 ### var elevationAtNextPoint as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The elevation at the next point in meters (m).
+下一个点的海拔，单位为米 (m)。
 
 Since:
 
@@ -2111,7 +2111,7 @@ Returns:
 
 ### var frontDerailleurMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The front bicycle derailleur maximum index.
+前自行车变速器的最大索引。
 
 Since:
 
@@ -2218,7 +2218,7 @@ Returns:
 
 ### var frontDerailleurSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The front bicycle derailleur gear size in number of teeth.
+前自行车变速器的齿轮尺寸，以齿数表示。
 
 Since:
 
@@ -2325,7 +2325,7 @@ Returns:
 
 ### var maxCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The maximum cadence recorded during the current activity in revolutions per minute (rpm).
+当前活动期间记录的最大步频，单位为每分钟转数 (rpm)。
 
 Since:
 
@@ -2337,7 +2337,7 @@ Returns:
 
 ### var maxHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The maximum heart rate recorded during the current activity in beats per minute (bpm).
+当前活动期间记录的最大心率，单位为每分钟心跳次数 (bpm)。
 
 Since:
 
@@ -2349,7 +2349,7 @@ Returns:
 
 ### var maxPower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The maximum power recorded during the current activity in Watts (W).
+当前活动期间记录的最大功率，单位为瓦特 (W)。
 
 Since:
 
@@ -2479,7 +2479,7 @@ Returns:
 
 ### var maxSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The maximum speed recorded during the current activity in meters per second (mps).
+当前活动期间记录的最大速度，单位为米每秒 (mps)。
 
 Since:
 
@@ -2494,7 +2494,7 @@ Returns:
 
 ### var meanSeaLevelPressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The mean sea level barometric pressure in Pascals (Pa).
+平均海平面气压，单位为帕斯卡 (Pa)。
 
 This returns barometric pressure calibrated to sea level. Since pressure varies dues to several factors, a GPS-based altitude must first be obtained, then the ambient (local) pressure is measured by the pressure sensor before conversion to a calibrated barometric pressure value.
 
@@ -2660,7 +2660,7 @@ Returns:
 
 ### var nameOfDestination as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-The name of the destination.
+目的地名称。
 
 Since:
 
@@ -2775,7 +2775,7 @@ Returns:
 
 ### var nameOfNextPoint as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-The name of the next point.
+下一个点的名称。
 
 Since:
 
@@ -2890,7 +2890,7 @@ Returns:
 
 ### var offCourseDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The distance to the nearest point on the current course in meters (m).
+到当前路线最近点的距离，单位为米 (m)。
 
 Since:
 
@@ -3171,7 +3171,7 @@ Returns:
 
 ### var rearDerailleurIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current rear bicycle derailleur index.
+当前后自行车变速器索引。
 
 Index values range from from 1 to the rearDerailleurMax.
 
@@ -3844,7 +3844,7 @@ Returns:
 
 ### var timerTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current Timer value in milliseconds (ms).
+当前计时器值，单位为毫秒 (ms)。
 
 Since:
 
@@ -3880,7 +3880,7 @@ Returns:
 
 ### var track as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The current track in radians.
+当前轨迹，单位为弧度。
 
 Track is the direction of travel in radians based on GPS movement. If supported by the device, this provides compass orientation when stopped.
 

@@ -169,11 +169,11 @@ API 级别 3.2.0
 
 - [**targetValueHigh**](#targetValueHigh-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The high value for the target range.
+    目标范围的高值。
 
 - [**targetValueLow**](#targetValueLow-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The low value for the target range.
+    目标范围的低值。
 
 
 ## 实例属性详情
@@ -225,7 +225,7 @@ Returns:
 
 ### var targetValueHigh as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The high value for the target range.
+目标范围的高值。
 
 Since:
 
@@ -240,7 +240,7 @@ Returns:
 
 ### var targetValueLow as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The low value for the target range.
+目标范围的低值。
 
 Since:
 

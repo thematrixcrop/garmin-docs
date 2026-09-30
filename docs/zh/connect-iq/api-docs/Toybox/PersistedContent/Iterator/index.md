@@ -44,7 +44,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The next item, or `null` if end of list
+    下一个项目；如果到达列表末尾，则为 `null`。
 
 
 Since:

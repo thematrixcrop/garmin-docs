@@ -181,14 +181,14 @@ API 级别 3.0.0
 
 - [**heartBeatIntervals**](#heartBeatIntervals-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    The most recent beat-to-beat interval data as an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects in milliseconds (ms).
+    最近的逐次心跳间隔数据，表示为由 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象组成的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为毫秒 (ms)。
 
 
 ## 实例属性详情
 
 ### var heartBeatIntervals as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-The most recent beat-to-beat interval data as an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects in milliseconds (ms).
+最近的逐次心跳间隔数据，表示为由 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象组成的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为毫秒 (ms)。
 
 Since:
 

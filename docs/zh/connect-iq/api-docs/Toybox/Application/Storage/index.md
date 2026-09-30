@@ -76,7 +76,7 @@ Parameters:
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
-    The key to delete
+    要删除的键。
 
 
 另见：
@@ -168,7 +168,7 @@ Parameters:
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
-    The key used to store and retrieve the value from the object store (cannot be a Symbol)
+    用于在对象存储中存储和检索值的键（不能是 Symbol）。
 
 - value — ([Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)) —
 

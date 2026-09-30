@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**day**](#day-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The date, indicating the day of the month.
+    日期，表示月份中的某一天。
 
 - [**day\_of\_week**](#day_of_week-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -40,7 +40,7 @@ API 级别 1.0.0
 
 - [**min**](#min-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The minutes within an hour.
+    一小时内的分钟数。
 
 - [**month**](#month-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -59,7 +59,7 @@ API 级别 1.0.0
 
 ### var day as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The date, indicating the day of the month.
+日期，表示月份中的某一天。
 
 Since:
 
@@ -109,7 +109,7 @@ Returns:
 
 ### var min as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The minutes within an hour.
+一小时内的分钟数。
 
 Since:
 

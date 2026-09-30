@@ -936,7 +936,7 @@ Parameters:
 
 - output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The item to print, typically a [String](/connect-iq/api-docs/Toybox/Lang/String/).
+    要打印的项目，通常是 [String](/connect-iq/api-docs/Toybox/Lang/String/)。
 
 
 Since:
@@ -951,7 +951,7 @@ Parameters:
 
 - output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The item to print, typically a [String](/connect-iq/api-docs/Toybox/Lang/String/).
+    要打印的项目，通常是 [String](/connect-iq/api-docs/Toybox/Lang/String/)。
 
 
 Example:

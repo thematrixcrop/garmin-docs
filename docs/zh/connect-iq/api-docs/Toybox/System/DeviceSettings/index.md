@@ -49,7 +49,7 @@ API 级别 1.0.0
 
 - [**alarmCount**](#alarmCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The number of alarms set on the device.
+    设备上设置的闹钟数量。
 
 - [**connectionAvailable**](#connectionAvailable-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -61,15 +61,15 @@ API 级别 1.0.0
 
 - [**distanceUnits**](#distanceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The distance unit setting mode.
+    距离单位设置模式。
 
 - [**doNotDisturb**](#doNotDisturb-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The Do Not Disturb setting mode.
+    勿扰设置模式。
 
 - [**elevationUnits**](#elevationUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The elevation unit setting mode.
+    海拔单位设置模式。
 
 - [**firmwareVersion**](#firmwareVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
@@ -77,7 +77,7 @@ API 级别 1.0.0
 
 - [**firstDayOfWeek**](#firstDayOfWeek-var) as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
 
-    The first day of the week.
+    一周的第一天。
 
 - [**fontScale**](#fontScale-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -85,7 +85,7 @@ API 级别 1.0.0
 
 - [**heightUnits**](#heightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The height unit setting mode.
+    高度单位设置模式。
 
 - [**inputButtons**](#inputButtons-var) as [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module)
 
@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 - [**notificationCount**](#notificationCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The number of active notifications.
+    活动通知数量。
 
 - [**paceUnits**](#paceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
@@ -141,7 +141,7 @@ API 级别 1.0.0
 
 - [**screenHeight**](#screenHeight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The height of the device screen in pixels.
+    设备屏幕高度，单位为像素。
 
 - [**screenShape**](#screenShape-var) as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
 
@@ -195,7 +195,7 @@ Returns:
 
 ### var alarmCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The number of alarms set on the device.
+设备上设置的闹钟数量。
 
 Since:
 
@@ -234,7 +234,7 @@ Returns:
 
 ### var distanceUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The distance unit setting mode.
+距离单位设置模式。
 
 Since:
 
@@ -254,7 +254,7 @@ Returns:
 
 ### var doNotDisturb as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The Do Not Disturb setting mode.
+勿扰设置模式。
 
 Not all devices support Do Not Disturb, so it's a good idea to perform a `has` check when attempting to use this value.
 
@@ -281,7 +281,7 @@ Returns:
 
 ### var elevationUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The elevation unit setting mode.
+海拔单位设置模式。
 
 Since:
 
@@ -331,7 +331,7 @@ Returns:
 
 ### var firstDayOfWeek as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
 
-The first day of the week.
+一周的第一天。
 
 Since:
 
@@ -392,7 +392,7 @@ Returns:
 
 ### var heightUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The height unit setting mode.
+高度单位设置模式。
 
 Since:
 
@@ -711,7 +711,7 @@ Returns:
 
 ### var notificationCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The number of active notifications.
+活动通知数量。
 
 Since:
 
@@ -873,7 +873,7 @@ Returns:
 
 ### var screenHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The height of the device screen in pixels.
+设备屏幕高度，单位为像素。
 
 In some cases, this can be useful to determine the device type at runtime. However, to get the height of the screen area currently available to an app, use [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function).
 

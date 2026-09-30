@@ -257,7 +257,7 @@ Parameters:
 
 - font — ([Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)) —
 
-    The font to use.
+    要使用的字体。
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -782,7 +782,7 @@ Parameters:
 
 - font — ([Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)) —
 
-    The font to use.
+    要使用的字体。
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1243,7 +1243,7 @@ Parameters:
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-    The font of the text to measure.
+    用于测量文本的字体。
 
 
 Returns:
@@ -1269,7 +1269,7 @@ Parameters:
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-    The font of the text to measure.
+    用于测量文本的字体。
 
 
 Returns:

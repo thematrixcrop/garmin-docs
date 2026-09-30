@@ -49,7 +49,7 @@ API 级别 1.0.0
 
 - [**dst**](#dst-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The daylight savings time offset.
+    夏令时偏移量。
 
 - [**hour**](#hour-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -57,7 +57,7 @@ API 级别 1.0.0
 
 - [**min**](#min-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The minute of the current hour.
+    当前小时中的分钟。
 
 - [**sec**](#sec-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -72,7 +72,7 @@ API 级别 1.0.0
 
 ### var dst as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The daylight savings time offset.
+夏令时偏移量。
 
 Since:
 
@@ -96,7 +96,7 @@ Returns:
 
 ### var min as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The minute of the current hour.
+当前小时中的分钟。
 
 Since:
 

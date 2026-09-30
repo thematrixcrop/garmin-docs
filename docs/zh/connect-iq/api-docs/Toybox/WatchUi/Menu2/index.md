@@ -501,15 +501,15 @@ Parameters:
 
 - :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The menu title
+        菜单标题。
 
 - :footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The menu footer
+        菜单页脚。
 
 - :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have initial focus
+        应具有初始焦点的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引。
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 

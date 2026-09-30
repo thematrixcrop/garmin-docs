@@ -399,7 +399,7 @@ Parameters:
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
-    The key event that occurred
+    发生的按键事件。
 
 
 Returns:
@@ -457,7 +457,7 @@ Parameters:
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
-    The key event that occurred
+    发生的按键事件。
 
 
 Returns:

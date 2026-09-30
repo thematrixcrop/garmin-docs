@@ -99,7 +99,7 @@ Parameters:
 
 - metadata — ([Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)) —
 
-    The metadata associated with referenced media content
+    与所引用媒体内容相关联的元数据。
 
 
 Since:

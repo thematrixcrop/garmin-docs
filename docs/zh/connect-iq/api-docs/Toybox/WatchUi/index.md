@@ -125,7 +125,7 @@ API 级别 1.0.0
 
 |
 
-The down key
+向下键。
 
 |
 | KEY\_DOWN\_LEFT | 9 |
@@ -143,7 +143,7 @@ API 级别 1.0.0
 
 |
 
-The down key
+向下键。
 
 |
 | KEY\_LEFT | 11 |
@@ -1568,7 +1568,7 @@ Parameters:
 
 - delegate — ([WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)) —
 
-    The input delegate to handle input for the View
+    用于处理 View 输入的输入委托。
 
 - transition — ([WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) —
 
@@ -1990,7 +1990,7 @@ Parameters:
 
 - delegate — ([WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)) —
 
-    The input delegate to handle input for the View
+    用于处理 View 输入的输入委托。
 
 - transition — ([WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) —
 

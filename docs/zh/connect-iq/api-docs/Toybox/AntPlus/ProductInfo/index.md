@@ -50,7 +50,7 @@ API 级别 2.2.0
 
 - [**swRevisionMain**](#swRevisionMain-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The main software revision.
+    主要软件版本。
 
 - [**swRevisionSupplemental**](#swRevisionSupplemental-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -83,7 +83,7 @@ Returns:
 
 ### var swRevisionMain as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The main software revision.
+主要软件版本。
 
 Since:
 

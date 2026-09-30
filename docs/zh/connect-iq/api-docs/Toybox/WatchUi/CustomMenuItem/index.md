@@ -389,7 +389,7 @@ Parameters:
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-    The Drawable or ResourceId used to render the icon for this item
+    用于呈现此项目图标的 Drawable 或 ResourceId。
 
 
 :::details 支持的设备

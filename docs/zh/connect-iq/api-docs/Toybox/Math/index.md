@@ -622,7 +622,7 @@ Parameters:
 
 - xbar — ([Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The mean, if known. Otherwise, pass `null` and the mean of data will be calculated.
+    平均值（如果已知）。否则，传递 `null`，系统将计算数据的平均值。
 
 
 Returns:
@@ -733,7 +733,7 @@ Parameters:
 
 - xbar — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The mean, if known. Otherwise, pass `null` and the mean of data will be calculated.
+    平均值（如果已知）。否则，传递 `null`，系统将计算数据的平均值。
 
 
 Returns:

@@ -247,7 +247,7 @@ Parameters:
 
 - item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The item index
+    项目索引。
 
 - isSelected — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -285,7 +285,7 @@ Parameters:
 
 - item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The item index
+    项目索引。
 
 
 Returns:

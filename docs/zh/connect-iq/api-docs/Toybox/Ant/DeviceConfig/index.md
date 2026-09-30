@@ -269,7 +269,7 @@ API 级别 1.0.0
 
 ### var transmissionType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The manufacturer-specific transport type and extended device number
+制造商特定的传输类型和扩展设备编号。
 
 Since:
 
@@ -297,7 +297,7 @@ Parameters:
 
 - :transmissionType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The manufacturer-specific transport type and extended device number
+        制造商特定的传输类型和扩展设备编号。
 
 - :messagePeriod — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

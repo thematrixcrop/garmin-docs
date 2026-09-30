@@ -489,7 +489,7 @@ API 级别 5.2.2
 
 - [**onNextMultisportLeg**](#onNextMultisportLeg-instance_function)() as **Void**
 
-    The device has transitioned to the next multisport leg.
+    设备已切换到下一个多项运动分段。
 
 - [**onTimerLap**](#onTimerLap-instance_function)() as **Void**
 
@@ -529,11 +529,11 @@ API 级别 5.2.2
 
 - [**onWorkoutStarted**](#onWorkoutStarted-instance_function)() as **Void**
 
-    The current workout is started.
+    当前锻炼已开始。
 
 - [**onWorkoutStepComplete**](#onWorkoutStepComplete-instance_function)() as **Void**
 
-    The current workout step is complete.
+    当前锻炼步骤已完成。
 
 - [**routeTo**](#routeTo-instance_function)(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -750,7 +750,7 @@ API 级别 1.0.0
 
 ### **onNextMultisportLeg()** as **Void**
 
-The device has transitioned to the next multisport leg.
+设备已切换到下一个多项运动分段。
 
 This method is called when the device transitions to the next multisport leg.
 
@@ -2150,7 +2150,7 @@ API 级别 1.3.0
 
 ### **onWorkoutStarted()** as **Void**
 
-The current workout is started.
+当前锻炼已开始。
 
 This method is called when the a workout is started.
 
@@ -2294,7 +2294,7 @@ API 级别 3.2.0
 
 ### **onWorkoutStepComplete()** as **Void**
 
-The current workout step is complete.
+当前锻炼步骤已完成。
 
 This method is called when the a workout step has been completed.
 

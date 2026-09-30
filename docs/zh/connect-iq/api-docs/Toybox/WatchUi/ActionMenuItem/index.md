@@ -176,7 +176,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The identifier for the MenuItem
+    MenuItem 的标识符。
 
 
 Since:

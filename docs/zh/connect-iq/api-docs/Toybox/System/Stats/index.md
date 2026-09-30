@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 - [**usedMemory**](#usedMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The memory used by the application in bytes.
+    应用使用的内存，单位为字节。
 
 
 ## 实例属性详情
@@ -252,7 +252,7 @@ Returns:
 
 ### var usedMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The memory used by the application in bytes.
+应用使用的内存，单位为字节。
 
 Since:
 

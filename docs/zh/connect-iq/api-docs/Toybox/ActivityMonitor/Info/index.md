@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The ActivityMonitor.Info contains information about the user's current activity status.
 
-The fields in this class may return `null`. It is recommended to `null` check a value before using it. If the value is not available, an error indicating that the symbol was not found will be thrown.
+此类中的字段可能返回 `null`。建议在使用值之前检查其是否为 `null`。如果值不可用，则会抛出指示未找到该符号的错误。
 
 注意：
 
@@ -32,11 +32,11 @@ API 级别 1.0.0
 
 - [**activeMinutesDay**](#activeMinutesDay-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-    The number of active minutes for the current day.
+    当天的活动分钟数。
 
 - [**activeMinutesWeek**](#activeMinutesWeek-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-    The number of active minutes for the current week.
+    本周的活动分钟数。
 
 - [**activeMinutesWeekGoal**](#activeMinutesWeekGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -115,7 +115,7 @@ API 级别 1.0.0
 
 ### var activeMinutesDay as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-The number of active minutes for the current day.
+当天的活动分钟数。
 
 Contains the moderate, vigorous, and total accumulated minutes for the day. Value may be `null`.
 
@@ -267,7 +267,7 @@ Returns:
 
 ### var activeMinutesWeek as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-The number of active minutes for the current week.
+本周的活动分钟数。
 
 Contains the moderate, vigorous, and total accumulated minutes for the week. Value may be `null`.
 

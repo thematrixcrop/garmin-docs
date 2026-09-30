@@ -92,7 +92,7 @@ Parameters:
 
 - resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The desired OAuth response values passed to the callback method. The keys map to the actual OAuth response keys, and the values map to the keys of the [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) data.
+    传递给回调方法的所需 OAuth 响应值。键映射到实际的 OAuth 响应键，值映射到 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 数据的键。
 
 
 Example:

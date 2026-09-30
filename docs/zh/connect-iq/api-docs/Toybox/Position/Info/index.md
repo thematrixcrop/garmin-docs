@@ -210,7 +210,7 @@ API 级别 1.0.0
 
 - [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The elevation above mean sea level in meters (m).
+    高于平均海平面的海拔，单位为米 (m)。
 
 - [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -218,15 +218,15 @@ API 级别 1.0.0
 
 - [**position**](#position-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-    The latitude and longitude of the position.
+    位置的纬度和经度。
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The horizontal speed in meters per second (mps).
+    水平速度，单位为米每秒 (mps)。
 
 - [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    The GPS time stamp of the obtained [Location](/connect-iq/api-docs/Toybox/Position/Location/) fix.
+    获取的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 定位的 GPS 时间戳。
 
 
 ## 实例属性详情
@@ -250,7 +250,7 @@ Returns:
 
 ### var altitude as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The elevation above mean sea level in meters (m).
+高于平均海平面的海拔，单位为米 (m)。
 
 Elevation is obtained from the GPS. If no GPS is present, then no valid elevation will be returned.
 
@@ -283,7 +283,7 @@ Returns:
 
 ### var position as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-The latitude and longitude of the position.
+位置的纬度和经度。
 
 If no GPS is available or is between GPS fix intervals (typically 1 second), the position is propagated (i.e. dead-reckoned) using the last known heading and last known speed. After a short period of time, the position will cease to be propagated to avoid excessive accumulation of position errors.
 
@@ -297,7 +297,7 @@ Returns:
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The horizontal speed in meters per second (mps).
+水平速度，单位为米每秒 (mps)。
 
 Speed is derived from the most accurate source in the following order:
 
@@ -318,7 +318,7 @@ Returns:
 
 ### var when as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-The GPS time stamp of the obtained [Location](/connect-iq/api-docs/Toybox/Position/Location/) fix.
+获取的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 定位的 GPS 时间戳。
 
 Since:
 

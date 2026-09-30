@@ -181,11 +181,11 @@ API 级别 3.1.0
 
 - [**duration**](#duration-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The duration of the tone in milliseconds (ms).
+    音调持续时间，单位为毫秒 (ms)。
 
 - [**frequency**](#frequency-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The frequency of the tone in hertz (hz).
+    音调频率，单位为赫兹 (hz)。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -199,7 +199,7 @@ API 级别 3.1.0
 
 ### var duration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The duration of the tone in milliseconds (ms).
+音调持续时间，单位为毫秒 (ms)。
 
 Since:
 
@@ -207,7 +207,7 @@ API 级别 3.1.0
 
 ### var frequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The frequency of the tone in hertz (hz).
+音调频率，单位为赫兹 (hz)。
 
 Since:
 

@@ -34,7 +34,7 @@ API 级别 3.2.0
 
 - [**dewPoint**](#dewPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The dew point in Celsius.
+    露点温度，单位为摄氏度。
 
 - [**forecastTime**](#forecastTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -50,7 +50,7 @@ API 级别 3.2.0
 
 - [**temperature**](#temperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-    The current temperature in Celsius.
+    当前温度，单位为摄氏度。
 
 - [**uvIndex**](#uvIndex-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -62,7 +62,7 @@ API 级别 3.2.0
 
 - [**windSpeed**](#windSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The current wind speed in meters per second.
+    当前风速，单位为米每秒。
 
 
 ## 实例属性详情
@@ -99,7 +99,7 @@ Returns:
 
 ### var dewPoint as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The dew point in Celsius
+露点温度，单位为摄氏度。
 
 Since:
 
@@ -156,7 +156,7 @@ Returns:
 
 ### var temperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-The current temperature in Celsius
+当前温度，单位为摄氏度。
 
 Since:
 
@@ -201,7 +201,7 @@ Returns:
 
 ### var windSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The current wind speed in meters per second
+当前风速，单位为米每秒。
 
 Since:
 

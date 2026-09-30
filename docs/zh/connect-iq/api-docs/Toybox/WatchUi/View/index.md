@@ -135,7 +135,7 @@ API 级别 1.0.0
 
 - [**onLayout**](#onLayout-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    The entry point for the View.
+    View 的入口点。
 
 - [**onShow**](#onShow-instance_function)() as **Void**
 
@@ -347,7 +347,7 @@ API 级别 1.0.0
 
 ### **onLayout(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-The entry point for the View.
+View 的入口点。
 
 onLayout() is called before the View is shown to load resources and set up the layout of the View.
 

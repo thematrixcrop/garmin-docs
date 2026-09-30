@@ -99,7 +99,7 @@ Parameters:
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The key to check against
+    要进行匹配检查的键。
 
 
 Returns:
@@ -121,7 +121,7 @@ Parameters:
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The key to check against
+    要进行匹配检查的键。
 
 
 Returns:

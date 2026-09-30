@@ -46,15 +46,15 @@ API 级别 2.2.0
 
 - [**hwRevision**](#hwRevision-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Hardware revision.
+    硬件版本。
 
 - [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Manufacturer ID.
+    制造商 ID。
 
 - [**modelNumber**](#modelNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Model number.
+    型号。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -68,7 +68,7 @@ API 级别 2.2.0
 
 ### var hwRevision as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Hardware revision.
+硬件版本。
 
 Since:
 
@@ -83,7 +83,7 @@ Returns:
 
 ### var manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Manufacturer ID.
+制造商 ID。
 
 Since:
 
@@ -98,7 +98,7 @@ Returns:
 
 ### var modelNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Model number.
+型号。
 
 Since:
 

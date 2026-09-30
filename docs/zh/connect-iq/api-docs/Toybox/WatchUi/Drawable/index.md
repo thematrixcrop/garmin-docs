@@ -74,7 +74,7 @@ API 级别 1.0.0
 
 - [**identifier**](#identifier-var) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    The ID used to identify the Drawable object.
+    用于标识 Drawable 对象的 ID。
 
 - [**isVisible**](#isVisible-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -132,7 +132,7 @@ Returns:
 
 ### var identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-The ID used to identify the Drawable object.
+用于标识 Drawable 对象的 ID。
 
 Since:
 

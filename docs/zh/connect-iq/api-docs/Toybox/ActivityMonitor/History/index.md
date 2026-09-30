@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 A class containing information about the user's activity history.
 
-The fields in this class may return `null`. It is recommended to `null` check a value before using it. If the value is not available, an error indicating that the symbol was not found will be thrown.
+此类中的字段可能返回 `null`。建议在使用值之前检查其是否为 `null`。如果值不可用，则会抛出指示未找到该符号的错误。
 
 Since:
 
@@ -36,11 +36,11 @@ API 级别 1.0.0
 
 - [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The distance for the day in centimeters (cm).
+    当天的距离，单位为厘米 (cm)。
 
 - [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of floors climbed for the day.
+    当天爬升的楼层数。
 
 - [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -48,7 +48,7 @@ API 级别 1.0.0
 
 - [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of floors descended for the day.
+    当天下降的楼层数。
 
 - [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -393,7 +393,7 @@ Returns:
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The distance for the day in centimeters (cm).
+当天的距离，单位为厘米 (cm)。
 
 Since:
 
@@ -405,7 +405,7 @@ Returns:
 
 ### var floorsClimbed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of floors climbed for the day.
+当天爬升的楼层数。
 
 Since:
 
@@ -677,7 +677,7 @@ Returns:
 
 ### var floorsDescended as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of floors descended for the day.
+当天下降的楼层数。
 
 Since:
 

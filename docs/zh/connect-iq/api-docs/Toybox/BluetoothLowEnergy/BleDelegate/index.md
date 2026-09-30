@@ -150,7 +150,7 @@ Parameters:
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
-    the device state that was changed
+    已更改的设备状态。
 
 - state — ([BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module)) —
 
@@ -211,7 +211,7 @@ Parameters:
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
-    the device state that was changed
+    已更改的设备状态。
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 

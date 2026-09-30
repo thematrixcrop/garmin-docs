@@ -228,7 +228,7 @@ API 级别 4.0.0
 
 - [**onDisplayModeChanged**](#onDisplayModeChanged-instance_function)() as **Void**
 
-    The display mode has changed, only available in AMOLED or LCD screen products.
+    显示模式已更改，仅适用于 AMOLED 或 LCD 屏幕产品。
 
 - [**onEnhancedReadabilityModeChanged**](#onEnhancedReadabilityModeChanged-instance_function)() as **Void**
 
@@ -524,7 +524,7 @@ Parameters:
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
-    The key to delete
+    要删除的键。
 
 
 :::details 支持的设备
@@ -2160,7 +2160,7 @@ API 级别 5.1.0
 
 ### **onDisplayModeChanged()** as **Void**
 
-The display mode has changed, only available in AMOLED or LCD screen products.
+显示模式已更改，仅适用于 AMOLED 或 LCD 屏幕产品。
 
 This method is called when the system changes the display mode. Use the [System.getDisplayMode()](/connect-iq/api-docs/Toybox/System/#getDisplayMode-instance_function) to get the current state.
 
@@ -2466,7 +2466,7 @@ Parameters:
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The key to validate
+    要验证的键。
 
 - value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
@@ -2700,7 +2700,7 @@ Parameters:
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
-    The key used to store and retrieve the value from the object store (cannot be a Symbol)
+    用于在对象存储中存储和检索值的键（不能是 Symbol）。
 
 - value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 
@@ -2938,7 +2938,7 @@ Parameters:
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
-    The key to validate
+    要验证的键。
 
 - value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 

@@ -44,15 +44,15 @@ API 级别 1.0.0
 
 - [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The heart rate in beats per minute (bpm).
+    心率，单位为每分钟心跳次数 (bpm)。
 
 - [**mag**](#mag-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    The magnetometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in milliGauss (mG).
+    磁力计对 x、y 和 z 轴的读数，表示为以毫高斯 (mG) 为单位的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值数组。
 
 - [**oxygenSaturation**](#oxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current oxygen saturation in percent (%).
+    当前血氧饱和度，以百分比 (%) 表示。
 
 - [**power**](#power-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -322,7 +322,7 @@ Returns:
 
 ### var heartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The heart rate in beats per minute (bpm).
+心率，单位为每分钟心跳次数 (bpm)。
 
 Since:
 
@@ -334,7 +334,7 @@ Returns:
 
 ### var mag as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-The magnetometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in milliGauss (mG).
+磁力计对 x、y 和 z 轴的读数，表示为以毫高斯 (mG) 为单位的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值数组。
 
 注意：
 
@@ -510,7 +510,7 @@ Returns:
 
 ### var oxygenSaturation as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current oxygen saturation in percent (%)
+当前血氧饱和度，以百分比 (%) 表示。
 
 Since:
 

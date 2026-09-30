@@ -265,7 +265,7 @@ API 级别 1.0.0
 
 - [**label**](#label-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The field label String.
+    字段标签 String。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -283,7 +283,7 @@ API 级别 1.0.0
 
 ### var label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The field label String.
+字段标签 String。
 
 Since:
 
