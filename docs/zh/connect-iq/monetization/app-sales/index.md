@@ -1,7 +1,7 @@
 ---
 title: "App Sales"
 ---
-# App Sales
+# 应用销售
 
 在申请获得批准后,您正式成为商家,可以开始列出出出售的应用程序.为了列出您的应用程序,请从开发者仪表板中选择上传应用程序. 当被问及您的应用程序是否获利时,请通过Garmin CIQ商家帐户选择是的.从下拉菜单中选择价格.
 
@@ -11,11 +11,11 @@ title: "App Sales"
 
 | Category | Products |
 | --- | --- |
-| API Level 6.0 |极端® 550,极端® 840 / 840 太阳能,极端® 850,极端® MTB,终端TM 3,先驱® 170,先驱® 170 音乐,先驱® 570 42mm,先驱® 570 47mm,先驱® 70,先驱® 970, fēnix® 8 43mm, fēnix® 8 47mm / 51mm, fēnix® 8 Pro 47mm / 51mm / 51mm / 微LED, fēnix® 8 Solar 47mm, fēnix® 8 Solar 51mm, fēnix® 9 43mm, fēnix® 9 47mm / 51mm, fēnix® 47mm / 47mm, fēnix® 47mm / 47mm / 47mm, fēnix® 43mm, fēnix® 47mm / 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix 45mm|
-| API Level 5.2 |D2TM Mach 1, D2TM Mach 1 Pro, D2TM Mach 2, EnduroTM 2, epixTM (Gen 2), epixTM Pro (Gen 2) 42mm, epixTM Pro (Gen 2) 47mm, epixTM Pro (Gen 2) 51mm, Forerunner® 165, Forerunner® 165音乐, Forerunner® 255, Forerunner® 255音乐, Forerunner® 255s, Forerunner® 255s音乐, Forerunner® 265, Forerunner® 265s, Forerunner® 955 / Solar, Forerunner® 965, fēnix® 7, fēnix® 7 Pro, fēnix® 7 Pro - Solar Edition (无 Wi-Fi), fēnix® 7S, fēnix® 7S, fēnix® 7 Pro, 7 Prox® 7X, fēnix® 7Q, fēnix / 7Q, fenix / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q /|
-| API Level 5.1 |接近® S50,接近® S70 42mm,接近® S70 47mm,下降TM G2,下降TM Mk3 43mm / Mk3i 43mm,下降TM Mk3i 51mm,边缘®探索 2, eTrex®触摸|
-| API Level 5.0 |视频: 视频: 视频: 视频: 视频: 视频:|
-| API Level 3.4 |降落TM Mk2 / Mk2i,降落TM Mk2 S,fēnix® 6 Pro / 6 萨菲尔 / 6 Pro 太阳能 / 6 Pro 双功率,fēnix® 6S Pro / 6S 萨菲尔 / 6S 太阳能 / 6S Pro 双功率,fēnix® 6X Pro / 6X 萨菲尔 / 6X 太阳能,MARQ®冒险家,MARQ®运动员,MARQ®飞行员,MARQ®船长,MARQ®船长:美国魔术版,MARQ®指挥官,MARQ®驾驶员,MARQ®远征,MARQ®高尔夫人,quatix® 6,quatix® 6X / 6X 太阳能版 /Delta Solar /Delta 太阳能版|
+| API 级别 6.0 |极端® 550,极端® 840 / 840 太阳能,极端® 850,极端® MTB,终端TM 3,先驱® 170,先驱® 170 音乐,先驱® 570 42mm,先驱® 570 47mm,先驱® 70,先驱® 970, fēnix® 8 43mm, fēnix® 8 47mm / 51mm, fēnix® 8 Pro 47mm / 51mm / 51mm / 微LED, fēnix® 8 Solar 47mm, fēnix® 8 Solar 51mm, fēnix® 9 43mm, fēnix® 9 47mm / 51mm, fēnix® 47mm / 47mm, fēnix® 47mm / 47mm / 47mm, fēnix® 43mm, fēnix® 47mm / 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix 45mm|
+| API 级别 5.2 |D2TM Mach 1, D2TM Mach 1 Pro, D2TM Mach 2, EnduroTM 2, epixTM (Gen 2), epixTM Pro (Gen 2) 42mm, epixTM Pro (Gen 2) 47mm, epixTM Pro (Gen 2) 51mm, Forerunner® 165, Forerunner® 165音乐, Forerunner® 255, Forerunner® 255音乐, Forerunner® 255s, Forerunner® 255s音乐, Forerunner® 265, Forerunner® 265s, Forerunner® 955 / Solar, Forerunner® 965, fēnix® 7, fēnix® 7 Pro, fēnix® 7 Pro - Solar Edition (无 Wi-Fi), fēnix® 7S, fēnix® 7S, fēnix® 7 Pro, 7 Prox® 7X, fēnix® 7Q, fēnix / 7Q, fenix / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q /|
+| API 级别 5.1 |接近® S50,接近® S70 42mm,接近® S70 47mm,下降TM G2,下降TM Mk3 43mm / Mk3i 43mm,下降TM Mk3i 51mm,边缘®探索 2, eTrex®触摸|
+| API 级别 5.0 |视频: 视频: 视频: 视频: 视频: 视频:|
+| API 级别 3.4 |降落TM Mk2 / Mk2i,降落TM Mk2 S,fēnix® 6 Pro / 6 萨菲尔 / 6 Pro 太阳能 / 6 Pro 双功率,fēnix® 6S Pro / 6S 萨菲尔 / 6S 太阳能 / 6S Pro 双功率,fēnix® 6X Pro / 6X 萨菲尔 / 6X 太阳能,MARQ®冒险家,MARQ®运动员,MARQ®飞行员,MARQ®船长,MARQ®船长:美国魔术版,MARQ®指挥官,MARQ®驾驶员,MARQ®远征,MARQ®高尔夫人,quatix® 6,quatix® 6X / 6X 太阳能版 /Delta Solar /Delta 太阳能版|
 
 **注意:**本列表可能会发生变化.
 
@@ -32,13 +32,13 @@ title: "App Sales"
 
 **注意:**本列表可能会发生变化.
 
-## Tax-Exclusive Price Points
+## 未含税价格点
 
 现金化应用程序有一系列价格点.这些价格是免税的,是Garmin®和开发商之间的收入分摊的基础.
 
 根据货币类型,纳税包容性,税率和其他因素,价格指数映射到世界各地的不同货币.
 
-## Purchase Breakdown
+## 购买明细
 
 - 格明收到15%的税收排斥价格.
 
@@ -51,13 +51,13 @@ title: "App Sales"
 - 转换到开发者支付货币的费用将从您的支付中被扣留.
 
 
-## App Reviews
+## 应用评价
 
 应用程序上传需要进行审查,以验证它符合Connect IQTM开发商许可协议中列出的条款和条件.如果您为已经批准的应用程序设定价格,则该应用程序暂时被从商店中删除,以便再次进行审查.应用程序被批准后,用户收到一个信息,说明他们必须购买该应用程序才能再次使用.
 
 如果您正在从不同的货币化系统转换到Connect IQ货币化系统,您可以使用[this marketing form](https://www.garmin.com/en-US/forms/ciq-dev-marketing-request/)请求促销代码来迁移已经购买应用程序的用户.这些一次性使用代码允许现有用户免费购买应用程序.您负责这些代码的分配.
 
-## Payouts
+## 分成
 
 每个月的第一天发送付款. 单独的付款来自美国和加拿大销售的Garmin国际,以及来自其他地区的应用购买的Garmin欧洲.
 

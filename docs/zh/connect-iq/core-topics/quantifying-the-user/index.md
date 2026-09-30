@@ -1,75 +1,75 @@
 ---
 title: "Quantifying User Information"
 ---
-# Quantifying User Information
+# 量化用户信息
 
 关键词: 关键词: 关键词: 关键词: 关键词: 关键词
 
 [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/)和[Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/)模块允许应用程序访问Garmin可穿戴设备的活动跟踪,健康功能和历史传感器信息.
 
-## User Profile
+## 用户配置文件
 
 The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 personal information about the user, including their gender, birth year, height, weight, and athletic metrics like VO2 Max and activity class. It requires the `UserProfile` permission to access.
 
 [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfile-instance_function)调用返回一个[UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)对象,提供
 
-| Metric | API |值| API Level |
+| Metric | API |值| API 级别 |
 | --- | --- | --- | --- |
 |活动类| [Profile.activityClass](/connect-iq/api-docs/Toybox/UserProfile/Profile/#activityClass-var) |从0到100的用户活动量化| 1.0.0 |
-| Average Resting Heart Rate | [Profile.averageRestingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#averageRestingHeartRate-var) |用户七天的平均休息心率 (bpm)| 3.2.0 |
-| Biological Sex | [Profile.gender](/connect-iq/api-docs/Toybox/UserProfile/Profile/#gender-var) |用户的生物性别| 1.0.0 |
-| Birth Year | [Profile.birthYear](/connect-iq/api-docs/Toybox/UserProfile/Profile/#birthYear-var) |用户出生年| 1.0.0 |
-| Cycling VO2 Max | [Profile.vo2maxCycling](/connect-iq/api-docs/Toybox/UserProfile/Profile/#vo2maxCycling-var) |用户为自行车活动的VO2 Max值| 3.3.0 |
+| 平均静息心率 | [Profile.averageRestingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#averageRestingHeartRate-var) |用户七天的平均休息心率 (bpm)| 3.2.0 |
+| 生理性别 | [Profile.gender](/connect-iq/api-docs/Toybox/UserProfile/Profile/#gender-var) |用户的生物性别| 1.0.0 |
+| 出生年份 | [Profile.birthYear](/connect-iq/api-docs/Toybox/UserProfile/Profile/#birthYear-var) |用户出生年| 1.0.0 |
+| 骑行 VO2 Max | [Profile.vo2maxCycling](/connect-iq/api-docs/Toybox/UserProfile/Profile/#vo2maxCycling-var) |用户为自行车活动的VO2 Max值| 3.3.0 |
 | Height | [Profile.height](/connect-iq/api-docs/Toybox/UserProfile/Profile/#height-var) |用户的高度在厘米 (cm)| 1.0.0 |
-| Resting Heart Rate | [Profile.restingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#restingHeartRate-var) |用户目前的休息心率以每分钟 (bpm)| 1.0.0 |
-| Running Step Length | [Profile.runningStepLength](/connect-iq/api-docs/Toybox/UserProfile/Profile/#runningStepLength-var) |用户在毫米 (mm) 中运行步骤长度| 1.0.0 |
-| Running VO2 Max | [Profile.vo2maxRunning](/connect-iq/api-docs/Toybox/UserProfile/Profile/#vo2maxRunning-var) |用户为运行活动的VO2 Max值| 3.3.0 |
-| Sleep Time | [Profile.sleepTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#sleepTime-var) |用户设置的典型睡眠时间| 1.0.0 |
-| Wake Time | [Profile.wakeTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#wakeTime-var) |用户配置的典型警觉时间| 1.0.0 |
+| 静息心率 | [Profile.restingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#restingHeartRate-var) |用户目前的休息心率以每分钟 (bpm)| 1.0.0 |
+| 跑步步幅 | [Profile.runningStepLength](/connect-iq/api-docs/Toybox/UserProfile/Profile/#runningStepLength-var) |用户在毫米 (mm) 中运行步骤长度| 1.0.0 |
+| 跑步 VO2 Max | [Profile.vo2maxRunning](/connect-iq/api-docs/Toybox/UserProfile/Profile/#vo2maxRunning-var) |用户为运行活动的VO2 Max值| 3.3.0 |
+| 睡眠时间 | [Profile.sleepTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#sleepTime-var) |用户设置的典型睡眠时间| 1.0.0 |
+| 唤醒时间 | [Profile.wakeTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#wakeTime-var) |用户配置的典型警觉时间| 1.0.0 |
 
 [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 the additional data:
 
-| Information | API |值| API Level |
+| Information | API |值| API 级别 |
 | --- | --- | --- | --- |
-| Activity History | [UserProfile.getUserActivityHistory()](/connect-iq/api-docs/Toybox/UserProfile/#getUserActivityHistory-instance_function) |用户所做的活动记录| 3.3.0 |
-| Heart Rate Zones | [UserProfile.getHeartRateZones()](/connect-iq/api-docs/Toybox/UserProfile/#getHeartRateZones-instance_function) |用户为跑步,骑自行车或游泳而定义的心率区| 1.2.6 |
+| 活动历史记录 | [UserProfile.getUserActivityHistory()](/connect-iq/api-docs/Toybox/UserProfile/#getUserActivityHistory-instance_function) |用户所做的活动记录| 3.3.0 |
+| 心率区间 | [UserProfile.getHeartRateZones()](/connect-iq/api-docs/Toybox/UserProfile/#getHeartRateZones-instance_function) |用户为跑步,骑自行车或游泳而定义的心率区| 1.2.6 |
 
-## Activity Monitoring
+## 活动监测
 
 [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) 提供访问 the current day's metrics via [ActivityMonitor.getInfo()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getInfo-instance_function) which returns a [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) object.
 
 您还可以使用[ActivityMonitor.getHistory()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getHistory-instance_function)获取一些这些指标的日常历史记录,该数据库返回了[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)对象的数组.这段历史的历史可以因设备而异,以及设备已被激活了多久,但7天的历史相当典型.
 
-| Metric | API |值| API Level |
+| Metric | API |值| API 级别 |
 | --- | --- | --- | --- |
-| Calories Burned | [Info.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#calories-var), [History.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#calories-var) |迄今为止,当前的卡路里热量为千卡路里 (kCal)| 1.0.0 |
-| Daily Active Minutes | [Info.activeMinutesDay](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesDay-var), [History.activeMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#activeMinutes-var) |当前活动日的活跃分钟数| 2.1.0 |
-| Distance Traveled | [Info.distance](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#distance-var), [History.distance](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#distance-var) |从当天中夜以后的距离在厘米 (厘米)| 1.0.0 |
-| Floors Climbed | [Info.floorsClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbed-var), [History.floorsClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsClimbed-var) |今天的楼层数量升| 2.1.0 |
-| Floors Climbed Goal | [Info.floorsClimbedGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbedGoal-var), [History.floorsClimbedGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsClimbedGoal-var) |用户设定的一天爬楼数的目标| 2.1.0 |
-| Floors Descended | [Info.floorsDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsDescended-var), [History.floorsDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsDescended-var) |现在的楼层数量下降了| 2.1.0 |
-| Meters Climbed | [Info.metersClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#metersClimbed-var) |楼层垂直距离以米 (m)| 2.1.0 |
-| Meters Descended | [Info.metersDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#metersDescended-var) |楼层垂直距离降低在米 (m)| 2.1.0 |
-| [Move Bar](https://support.garmin.com/en-US/?faq=JwIMwaMTTV0t7r0mvkdA08) Level | [Info.moveBarLevel](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#moveBarLevel-var) |在 MOVE\_BAR\_LEVEL\_MIN 和 MOVE\_BAR\_LEVEL\_MAX 之间移动的当前水平| 1.0.0 |
-| Respiration Rate | [Info.respirationRate](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#respirationRate-var) |用户目前的呼吸速度,每分钟的呼吸量| 3.3.0 |
-| Steps | [Info.steps](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#steps-var), [History.steps](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#steps-var) |从当前一天中午开始的步骤数量| 1.0.0 |
-| Step Goal | [Info.stepGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#stepGoal-var), [History.stepGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#stepGoal-var) |目前的步骤目标| 1.0.0 |
+| 消耗的卡路里 | [Info.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#calories-var)、[History.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#calories-var) |迄今为止,当前的卡路里热量为千卡路里 (kCal)| 1.0.0 |
+| 每日活动分钟数 | [Info.activeMinutesDay](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesDay-var)、[History.activeMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#activeMinutes-var) |当前活动日的活跃分钟数| 2.1.0 |
+| 行驶距离 | [Info.distance](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#distance-var)、[History.distance](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#distance-var) |从当天中夜以后的距离在厘米 (厘米)| 1.0.0 |
+| 爬升楼层数 | [Info.floorsClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbed-var)、[History.floorsClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsClimbed-var) |今天的楼层数量升| 2.1.0 |
+| 爬升楼层数目标 | [Info.floorsClimbedGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbedGoal-var)、[History.floorsClimbedGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsClimbedGoal-var) |用户设定的一天爬楼数的目标| 2.1.0 |
+| 下降楼层数 | [Info.floorsDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsDescended-var)、[History.floorsDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#floorsDescended-var) |现在的楼层数量下降了| 2.1.0 |
+| 爬升米数 | [Info.metersClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#metersClimbed-var) |楼层垂直距离以米 (m)| 2.1.0 |
+| 下降米数 | [Info.metersDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#metersDescended-var) |楼层垂直距离降低在米 (m)| 2.1.0 |
+| [移动条](https://support.garmin.com/en-US/?faq=JwIMwaMTTV0t7r0mvkdA08)级别 | [Info.moveBarLevel](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#moveBarLevel-var) |在 MOVE\_BAR\_LEVEL\_MIN 和 MOVE\_BAR\_LEVEL\_MAX 之间移动的当前水平| 1.0.0 |
+| 呼吸频率 | [Info.respirationRate](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#respirationRate-var) |用户目前的呼吸速度,每分钟的呼吸量| 3.3.0 |
+| Steps | [Info.steps](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#steps-var)、[History.steps](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#steps-var) |从当前一天中午开始的步骤数量| 1.0.0 |
+| 步数目标 | [Info.stepGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#stepGoal-var)、[History.stepGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#stepGoal-var) |目前的步骤目标| 1.0.0 |
 | Stress | [Info.stressScore](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#stressScore-var) |根据过去30秒的压力分数| 5.0.0 |
 |恢复的时间| [Info.timeToRecovery](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#timeToRecovery-var) |在几个小时内,从最后一次活动中恢复的时间| 3.3.0 |
-| Weekly Active Minutes | [Info.activeMinutesWeek](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesWeek-var) |目前周的活跃分钟数| 2.1.0 |
-| Weekly Active Minutes Goal | [Info.activeMinutesWeekGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesWeekGoal-var) |用户的每周活跃分钟目标数| 2.1.0 |
-| Wheelchair Pushes | [Info.pushes](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#pushes-var) |用户轮椅的数量推| 4.2.0 |
-| Wheelchair Pushes Goal |  |用户的轮椅目标号码| 4.2.0 |
+| 每周活动分钟数 | [Info.activeMinutesWeek](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesWeek-var) |目前周的活跃分钟数| 2.1.0 |
+| 每周活动分钟数目标 | [Info.activeMinutesWeekGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesWeekGoal-var) |用户的每周活跃分钟目标数| 2.1.0 |
+| 轮椅推动次数 | [Info.pushes](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#pushes-var) |用户轮椅的数量推| 4.2.0 |
+| 轮椅推动次数目标 |  |用户的轮椅目标号码| 4.2.0 |
 
 当轮椅模式启用时,[ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)将为[Info.steps](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#steps-var),[Info.stepGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#stepGoal-var),[Info.floorsClimbed](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbed-var),[Info.floorsDescended](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsDescended-var)和[Info.floorsClimbedGoal](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#floorsClimbedGoal-var)设置零,而其实将设置[Info.pushes](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#pushes-var)和 .中的值.
 
-## Sensor History
+## 传感器历史记录
 
-*Since API level 2.1.0*
+*自 API 级别 2.1.0*
 
 [Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/)模块允许应用程序访问设备上的保存传感器历史.通过获得代码器可以访问传感器的数据.
 
-| Function |目的| API Level |
+| Function |目的| API 级别 |
 | --- | --- | --- |
 | [SensorHistory.getBodyBatteryHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getBodyBatteryHistory-instance_function) |获取用户身体电池样本,记录在设备上过去几个小时.| 3.3.0 |
 | [SensorHistory.getHeartRateHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getHeartRateHistory-instance_function) |获取用户在设备上记录过前几个小时的心率样本.| 2.1.0 |

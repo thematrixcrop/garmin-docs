@@ -5,7 +5,7 @@ title: "Getting Started with Connect IQ BLE Development"
 
 ![](/connect-iq/resources/programmers-guide/sculptor-monkey.png)
 
-## Resources
+## 资源
 
 在阅读这本指南时,开发人员会想让一些事情随时掌握.
 
@@ -26,7 +26,7 @@ title: "Getting Started with Connect IQ BLE Development"
 
 [nRF Connect For Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop)应用程序允许开发人员将新的固件闪存到板上,监控连接等.
 
--   **An up-to-date Connect IQ SDK**
+-   **最新的 Connect IQ SDK**
 
 为了使用BLE API,开发人员应该使用Connect IQ SDK的当前版本.
 
@@ -34,19 +34,19 @@ title: "Getting Started with Connect IQ BLE Development"
 
 需要将 nRF52 DK 的内存布局转移到不同的固件,以便与Connect IQ SDK 使用.
 
-    -   [nRF52 DK firmware](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_1m_with_s132_6.1.1.zip)
+    -   [nRF52 DK 固件](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_1m_with_s132_6.1.1.zip)
 
-    -   [nRF52840 Dongle firmware](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_usb_with_s140_6.1.1.zip)
+    -   [nRF52840 Dongle 固件](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_usb_with_s140_6.1.1.zip)
 
 
 ** 注:** 9.2.0 之前的 SDK 使用:
 
-    -   [nRF52 DK firmware (old)](https://developer.garmin.com/connect-iq/connectivity_2.0.1_115k2_with_s132_5.0.zip)
+    -   [nRF52 DK 固件（旧版）](https://developer.garmin.com/connect-iq/connectivity_2.0.1_115k2_with_s132_5.0.zip)
 
-    -   [nRF52840 Dongle firmware (old)](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_usb_with_s132_5.1.0.zip)
+    -   [nRF52840 Dongle 固件（旧版）](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_usb_with_s132_5.1.0.zip)
 
 
-## Windows
+## 窗口
 
 在Windows平台的[nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop)安装中,需要与nRF52DK通信的驱动程序和应用程序都包含在内.一旦安装了该应用程序以及必要的驱动程序,nRF52DK应由nRF Connect 用于 Desktop应用程序找到.
 
@@ -64,16 +64,16 @@ title: "Getting Started with Connect IQ BLE Development"
 
 在使用Linux时,开发人员需要手动安装JLink/JTrace USB驱动程序,以便与nRF52 DK板通信.
 
--   32-bit: [JLink\_6.22g - 32](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_i386.deb)
+-   32 位：[JLink\_6.22g - 32](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_i386.deb)
 
--   64-bit: [JLink\_6.22g - 64](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_x86_64.deb)
+-   64 位：[JLink\_6.22g - 64](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_x86_64.deb)
 
 
 一旦完成,开发人员需要安装Linux的[nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop).
 
 ![](/connect-iq/resources/programmers-guide/intent-launched.png)
 
-## Using Nordic nRF Connect
+## 使用 Nordic nRF Connect
 
 需要安装 nRF 连接桌面应用程序.请参阅上述部分,查看适当的链接.
 
@@ -92,9 +92,9 @@ title: "Getting Started with Connect IQ BLE Development"
 
 现在,电脑已经与电脑进行了正确的通信, 现在是时候弄清楚它使用哪个端口.
 
-### Windows
+### 窗口
 
-Open up Device Manager and find your device under `Ports`.
+打开设备管理器，在 `Ports` 下找到您的设备。
 
 这将像这样:
 
@@ -135,7 +135,7 @@ ls /dev/ttyACM*
 
 ![](/connect-iq/resources/programmers-guide/nRFSetComPortSim.png)
 
-1.  Click *OK*.
+1.  点击 *确定*。
 
 
 开发人员可能会遇到错误.这可能是由于无法设置Connect IQ模拟器的COM端口.如果出现错误,开发人员可以检查一些事情.

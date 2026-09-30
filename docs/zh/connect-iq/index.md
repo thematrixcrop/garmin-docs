@@ -4,7 +4,7 @@ title: "connect-iq"
 # connect-iq
 
 :::info
-This page is rendered client-side on the source site and has no mirrored content.
+此页面在源网站上以客户端方式呈现，没有镜像内容。
 
-See [the source page](/connect-iq/).
+请参阅[源页面](/connect-iq/)。
 :::

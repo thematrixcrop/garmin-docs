@@ -16,7 +16,7 @@ title: "Welcome to Connect IQ"
 
 连接智商应用程序是在Monkey C中创建的,这是一个针对对象的语言,旨在简单开发应用程序.Monkey C的目标是简化应用程序构建过程,让开发人员更多地关注客户而不关注资源限制.它使用引用计数来自动清理内存,使您免于专注于内存管理.此外,资源编译器可以帮助您导入字体和图像,以便轻松地将它们在设备之间转换.如果你过去曾使用过JavaTM,PHP,Ruby或PythonTM等动态语言,Monkey C应该非常熟悉.
 
-## Devices and APIs
+## 设备和 API
 
 *API碎片化*问题对应用程序开发者来说是一个挑战.如果开发者利用新的API,则可能会针对较少客户透的新设备.如果只使用已建立的API,则应用程序可能不会利用新的功能.
 
@@ -26,7 +26,7 @@ title: "Welcome to Connect IQ"
 
 查看连接IQ兼容的设备及其功能,请访问[Device Reference](/connect-iq/device-reference/#device-reference)部分.
 
-## System versus API Level
+## 系统级别与 API 级别
 
 连接IQ使用两个版本: *API级别*和 *系统号码*.
 
@@ -44,11 +44,11 @@ title: "Welcome to Connect IQ"
 
 连接智商应用程序可以在多个设备上运行,但预期的设备取决于开发人员. 并非每个设备都将针对开发人员想要的市场或提供开发人员想要提供的体验.开发人员不应该被迫支持他们不想的设备.
 
-2.  **The developer tools should help developers support multiple devices**
+2.  **开发者工具应帮助开发者支持多种设备**
 
 开发人员工具减轻了支持多个设备的重量.资源编译器隐藏了设备特定的板和方向.它还允许每个设备覆盖资源,允许在资源XML中指定不同的图像,字体和页面布局.模拟器只需要暴露特定设备支持的API,以便开发人员可以测试设备支持.
 
-3.  **Similar devices should have similar APIs**
+3.  **相似设备应具有相似的 API**
 
 不是所有的设备都是一样的,但它们之间往往存在共同点.两个不同的手表可能具有不同的显示技术,但它们都支持位图,字体,用户事件,[ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/)和[BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy).编写体育应用程序的开发人员不应该完全重新编写他们的应用程序以支持多个设备.
 
@@ -57,12 +57,12 @@ title: "Welcome to Connect IQ"
 连接 IQ 应用程序是动态地与系统链接的.如果应用程序引用一个在特定系统上不存在的 API,应用程序将在运行时失败,当应用程序引用 API,而不是像C++这样的加载时间. 这允许应用程序通过利用"`has`"操作员避免打电话.
 
 
-## Overview
+## 概述
 
-| Section | Description |
+| Section | 说明 |
 | --- | --- |
-| [Getting Started](/connect-iq/connect-iq-basics/getting-started/#getting-started) |步骤指导安装 Connect IQ工具|
-| [Your First App](/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | Create your first watch face using Connect IQ |
-| [App Types](/connect-iq/connect-iq-basics/app-types/#app-types) |了解手表面部应用程序类型以及必须考虑的内容|
+| [入门](/connect-iq/connect-iq-basics/getting-started/#getting-started) |步骤指导安装 Connect IQ工具|
+| [你的第一个应用](/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | 使用 Connect IQ 创建您的第一个表盘 |
+| [应用类型](/connect-iq/connect-iq-basics/app-types/#app-types) |了解手表面部应用程序类型以及必须考虑的内容|
 
 经验丰富的Connect IQ开发人员阅读这篇文章,可能会想知道我们是否试图实现搜索,答案是肯定的.

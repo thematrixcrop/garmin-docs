@@ -3,7 +3,7 @@ title: "How do I Make My Watch Face Update Every Second?"
 ---
 # 如何让我的表盘每秒更新？
 
-*Since API level 2.3*
+*自 API 级别 2.3*
 
 一些设备支持每秒更新watchface. 这些设备会像其他设备一样在每分钟的顶部运行正常更新通过`onUpdate()`方法,但也会每秒调用`onPartialUpdate()`方法.`onPartialUpdate()`方法对执行时间设定了非常严格的限制,并且必须在这些限制范围内完成.如果执行限制超过,WatchFaceDelegate中将调用`onPowerBudgetExceeded()`方法,部分更新将停止执行应用程序生命周期的剩余时间.
 

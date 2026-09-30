@@ -5,20 +5,20 @@ title: "ANT and ANT+"
 
 Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传感器。 Connect IQ 还提供可用 ANT 通道的访问。 This allows developers to communicate with sensors not supported by Garmin. 通过 FIT 录制系统，这些数据可以记录到 Activity 文件中并上传到 Garmin Connect。
 
-Learn more about ANT and ANT+ at [thisisant.com](http://thisisant.com/)
+在 [thisisant.com](http://thisisant.com/) 了解有关 ANT 和 ANT+ 的更多信息
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/) |提供通用ANT道的访问.这些 app道允许您的应用程序和ANT设备之间进行直接通信| 1.0.0 |
 | [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) |允许与该设备相对的ANT设备访问.| 2.2.0 |
 
-## Generic ANT Channels
+## 通用 ANT 通道
 
 Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。 使用此接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
 
 使用ANT USB dongle,您可以在 Connect IQ模拟器中使用 Connect IQ ANT API.请注意,如果运行,Garmin Express将阻止访问ANT USB dongle,因此确保在使用 Connect IQ模拟器时关闭Garmin Express.
 
-### Using ANT stick in Linux
+### 在 Linux 中使用 ANT stick
 
 为了在 Linux 中使用 ANT 棒,USB 设备必须可访问模拟器.必须安装在系统中一个 udev 规则,以便 ANT 棒充满非根特权.
 
@@ -140,9 +140,9 @@ $ sudo usermod -a -G plugdev <userName>
 
 MO2Display样品提供了采样应用程序,实现了肌肉氧 ANT 配置文件.ANT通用界面无法用于观看面孔.低和高优先搜索时间为传感器与基本的ANT 无线电规范不同,以允许与设备上本土的ANT 行为进行互操作.这些限制在分别最大的30秒和5秒的时间.
 
-## Burst Data
+## 突发数据
 
-*Since API level 2.2.0*
+*自 API 级别 2.2.0*
 
 爆发数据传输提供了一个机制,可以通过ANT通用频道在设备之间传输大量数据. 开发人员通过一个听众通知爆发传输/接收事件的成功/失败.一次爆发数据传输限制在最高8Kb的数据.
 
@@ -150,9 +150,9 @@ MO2Display样品提供了采样应用程序,实现了肌肉氧 ANT 配置文件.
 
 采用`GenericChannelBurst`样本提供传输和接收爆发数据的示范.
 
-## ANT+ Profiles
+## ANT+ 配置文件
 
-*Since API level 2.2.0*
+*自 API 级别 2.2.0*
 
 [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/)模块允许访问与用户设备相对的ANT+传感器的信息,而不需要您自行设置和管理ANT频道.所有ANT+传感器的管理,如添加,删除,启用,禁用和校准,都由用户通过设备的常规传感器菜单来管理.
 

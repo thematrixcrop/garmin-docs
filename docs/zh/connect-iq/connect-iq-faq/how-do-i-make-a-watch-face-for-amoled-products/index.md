@@ -3,11 +3,11 @@ title: "How do I Make a Watch Face for AMOLED Products?"
 ---
 # 如何为 AMOLED 产品制作表盘？
 
-*Since API level 3.1.0*
+*自 API 级别 3.1.0*
 
 Venu是第一款拥有AMOLED屏幕的Garmin手表,AMOLED显示器提供了高像素密度的充满活力的颜色,但随着时间的推移,用于创建显示器的有机材料将腐烂.为了减轻腐烂并延长屏幕寿命,在AMOLED屏幕的手表中部署了一个保护机制,例如Venu.
 
-## What Qualifies as Burn-In
+## 什么情况属于烧屏
 
 在AMOLED显示屏中的像素只能在照明时吸取电源,因此在呈现任何颜色除黑色以外时,将像素视为开放,并且在呈现黑色像素时才会被视为关闭.
 
@@ -41,7 +41,7 @@ Burn-in protection is only activated when Connect IQ watch face is in foreground
 
 ** 注:** 只有在支持屏幕保护的设备上模拟`WatchFace`时才能启用菜单选项,例如Venu.
 
-## Example
+## 示例
 
 下面是一个代码片段, 支持在不同设备上使用AMOLED显示模式绘制表面:
 

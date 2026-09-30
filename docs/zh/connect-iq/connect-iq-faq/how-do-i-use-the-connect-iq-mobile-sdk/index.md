@@ -17,7 +17,7 @@ title: "How do I use the Connect IQ Mobile SDK"
 
 ![](/connect-iq/resources/faq/Included_versus_custom_install_dialogs.png)
 
-## Connect First
+## 首先连接
 
 您可能正在使用 Connect IQ 应用程序来增强您的合作伙伴应用程序/现有移动应用程序的功能.如果这样的话,您也可能不想迫使用户在使用其余的移动应用程序之前选择设备.我们将通过提供选择设备的菜单选项来处理这种情况;即使您需要设备连接,这也是一个很好的选项,以便用户能够更改应用程序中连接的设备.当用户选择该菜单选项时,我们将启动一个新页面,列出连接设备,保存用户选择的设备,然后关闭页面.
 

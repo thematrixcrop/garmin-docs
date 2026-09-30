@@ -1,7 +1,7 @@
 ---
 title: "Monkey Motion"
 ---
-# Monkey Motion
+# Monkey 动效
 
 The Monkey Motion UI tool or the command line 可用于 import your animations.
 
@@ -13,21 +13,21 @@ The Monkey Motion UI tool or the command line 可用于 import your animations.
 
 图1. 子运动工具
 
-![The Monkey Motion Tool](/connect-iq/resources/programmers-guide/monkey_motion.png)
+![Monkey Motion 工具](/connect-iq/resources/programmers-guide/monkey_motion.png)
 
 开发人员可以选择哪些设备要编码动画. 如果开发人员更喜欢,则可加载Connect IQ项目明示文件,这会导致该工具标记所有由项目支持的设备以及支持Connect IQ动画的设备. 如果开发人员希望调整文件编码以使用其他设置,先进的页面会提供更多选项:
 
 图 2.  Advanced子运动工具 高级设置
 
-![The Monkey Motion Tool Advanced Settings](/connect-iq/resources/programmers-guide/monkey_motion_advanced.png)
+![Monkey Motion 工具高级设置](/connect-iq/resources/programmers-guide/monkey_motion_advanced.png)
 
 tool子动作工具为每个处理的动画生成一个 file子动作宣言 (或 .mmm) 文件.该宣言将包含一个设备和一个 enc子动作 (或 .mm) 文件之间的映射,包含编码文件的二进制.单个动画可以产生多个 .mm 文件,因为根据视频的目标分辨率和设备的每像素位数创建不同的编码.
 
 除了生成输入代码外,该工具可用于清除编码的动画:
 
-Figure 3. Monkey Motion Scrubbing
+图 3。猴子动作擦除
 
-![Monkey Motion Scrubbing](/connect-iq/resources/programmers-guide/monkey_motion_scrubber.png)
+![Monkey Motion 擦除](/connect-iq/resources/programmers-guide/monkey_motion_scrubber.png)
 
 If the developer wishes to scrub a previously encoded animation, the *File* menu option 可用于 select *Load Animation*, which accepts Monkey Motion Manifest files as input.
 
@@ -38,42 +38,42 @@ If the developer wishes to scrub a previously encoded animation, the *File* menu
 |
 Argument
 
- | Definition | Valid Values |默认值| Notes |
+ | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `-a <arg>` |针对`YUV`编码的视频文件的目标阿尔法频道面膜| A valid, resolvable `YUV` encoded video file | NA | Optional |
-| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 |1至6之间的值| 6 | Optional |
-| `-d <arg>` | Target devices |通过一个直角 (:) 分开的设备资格;支持方向变化的设备应被"肖像图"或"景观图"接下来来来,以确定在编码全屏动画时适当的分辨率| NA | Required |
-| `-e <arg>` |应出口的动画资源的标识符与子动作编码的文件|任何以字母开始的值| NA | Optional |
-| `-f <arg>` |动画的目标率| A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 |对于YUV编码的视频,GIF文件可以在动画中编码延迟率,如果未指定,则会适用| Optional |
-| `-h` | Print help information | NA | NA | Optional |
-| `-m <arg>` |为了指定构建的设备的明示文件|一个项目公布文件的路径| Empty | Optional |
-| `-o <arg>` | The output file path | A valid, resolvable file path | The target animation file path | Optional |
-| `-p <arg>` |编码动画的目标压缩水平| A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | Optional |
-| `-q <arg>` |编码动画的目标图像质量| A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | Optional |
-| `-r <arg>` |动画的目标分辨率 (如果不是设备屏幕尺寸)|在`<width>x<height>`中,`width`和`height`是目标分辨率的数值 (例如: 40x40)| NA | Optional |
-| `-s <arg>` |动画的目标图像扩展质量|1至3之间的值| If applicable, 3 | Optional |
-| `-v <arg>` | The target animation file | A valid, resolvable `YUV` / `GIF` file | NA | Required |
-| `-w` | Print Monkey Motion warnings | NA | NA | Optional |
+| `-a <arg>` |针对`YUV`编码的视频文件的目标阿尔法频道面膜| 有效且可解析的 `YUV` 编码视频文件 | NA | 可选 |
+| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 |1至6之间的值| 6 | 可选 |
+| `-d <arg>` | 目标设备 |通过一个直角 (:) 分开的设备资格;支持方向变化的设备应被"肖像图"或"景观图"接下来来来,以确定在编码全屏动画时适当的分辨率| NA | 必需 |
+| `-e <arg>` |应出口的动画资源的标识符与子动作编码的文件|任何以字母开始的值| NA | 可选 |
+| `-f <arg>` |动画的目标率| A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 |对于YUV编码的视频,GIF文件可以在动画中编码延迟率,如果未指定,则会适用| 可选 |
+| `-h` | 输出帮助信息 | NA | NA | 可选 |
+| `-m <arg>` |为了指定构建的设备的明示文件|一个项目公布文件的路径| Empty | 可选 |
+| `-o <arg>` | 输出文件路径 | 有效且可解析的文件路径 | 目标动画文件路径 | 可选 |
+| `-p <arg>` |编码动画的目标压缩水平| A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | 可选 |
+| `-q <arg>` |编码动画的目标图像质量| A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | 可选 |
+| `-r <arg>` |动画的目标分辨率 (如果不是设备屏幕尺寸)|在`<width>x<height>`中,`width`和`height`是目标分辨率的数值 (例如: 40x40)| NA | 可选 |
+| `-s <arg>` |动画的目标图像扩展质量|1至3之间的值| 如适用，3 | 可选 |
+| `-v <arg>` | 目标动画文件 | 有效且可解析的 `YUV` / `GIF` 文件 | NA | 必需 |
+| `-w` | 输出 Monkey Motion 警告 | NA | NA | 可选 |
 
-## Considerations
+## 注意事项
 
 tool子动作工具提供了几种先进的设置选项,这些选项介绍了多个考虑领域.本部分为开发人员提供了一些提示,案例研究和一般更深入的信息,以帮助他们找到最有益的视频编码配置.
 
-### Image Quality Considerations
+### 图像质量注意事项
 
 指定3的图像质量值可提供无损压缩 (无损,即编码器始终使用每个像素的 available上可用的最接近的颜色),而指定2或1的值可能允许进一步的压缩,以牺牲更好的压缩 (损失) 的颜色替代.
 
-### Frame Rate Considerations
+### 帧速率注意事项
 
 动画的最大图像速度由加密时间,随着更高的压缩增加,以及输入视频中的运动量都受到限制.
 
-**Note:** Because Connect IQ devices do not support vertical synchronization, high frames rates could potentially result in screen tearing.
+**备注：** 由于 Connect IQ 设备不支持垂直同步，高帧率可能会导致屏幕撕裂。
 
-### Compression Level Impact
+### 压缩级别影响
 
 压缩级别效果,包括压缩和解码的上层费用.大部分框架不从框架到框架的视频可以受益于更高的压缩级别,例如9不考虑性能影响.对于屏幕上运动的视频,选择更高的压缩级别可能会导致更慢的播放 (由于解压缩所需的额外的上层费用).作为参考,这是一个表显示了在Fēnix 5 Plus上运行的`GIF`文件 (具有高度复杂程度) 的压缩级别和解码时间之间的相关性:
 
-| Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
+| 压缩级别 | Monkey Motion 文件大小（KB） | 帧解码时间（毫秒） |
 | --- | --- | --- |
 | 1 | 981 | 30 |
 | 2 | 883 | 36 |
@@ -85,7 +85,7 @@ tool子动作工具提供了几种先进的设置选项,这些选项介绍了多
 
 同时,在某些高运动,难以压缩的视频中,使用较低的压缩水平实际上可能导致文件大小更小.作为参考,这是另一个表,显示了在Venu上运行的不同`GIF`文件的压缩水平和解码时间之间的相关性 (再次具有高度复杂性):
 
-| Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
+| 压缩级别 | Monkey Motion 文件大小（KB） | 帧解码时间（毫秒） |
 | --- | --- | --- |
 | 1 | 602 | 58 |
 | 2 | 602 | 60 |
@@ -99,41 +99,41 @@ tool子动作工具提供了几种先进的设置选项,这些选项介绍了多
 
 ** 注:** 高颜色分辨率设备的解码时间可能会更严重地受到影响.
 
-### Complexity Level Impact
+### 复杂度级别影响
 
 与视频压缩水平一样,视频的复杂性也直接影响了动画文件大小,以及解码性能.复杂性是由同一框架内的变化和连续框架之间的变化决定的.
 
 作为参考,采样`GIF`文件用于Fēnix 5 Plus使用5的压缩级别进行编码,以测试复杂性影响.
 
-#### Low Complexity
+#### 低复杂度
 
--   Frame Count: 30
+-   帧数：30
 
--   Monkey Motion File Size: 107 KB
+-   Monkey Motion 文件大小：107 KB
 
--   Average Frame Decoding Time: 8 ms
+-   平均帧解码时间：8 毫秒
 
 
 ![](/connect-iq/resources/programmers-guide/giphy.gif)
 
-#### Medium Complexity
+#### 中等复杂度
 
--   Frame Count: 25
+-   帧数：25
 
--   Monkey Motion File Size: 412 KB
+-   Monkey Motion 文件大小：412 KB
 
--   Average Frame Decoding Time: 26 ms
+-   平均帧解码时间：26 毫秒
 
 
 ![](/connect-iq/resources/programmers-guide/clock.gif)
 
-#### High Complexity
+#### 高复杂度
 
--   Frame Count: 24
+-   帧数：24
 
--   Monkey Motion File Size: 758 KB
+-   Monkey Motion 文件大小：758 KB
 
--   Average Frame Decoding Time: 39 ms
+-   平均帧解码时间：39 毫秒
 
 
 ![](/connect-iq/resources/programmers-guide/swirl.gif)
@@ -142,34 +142,34 @@ tool子动作工具提供了几种先进的设置选项,这些选项介绍了多
 
 AMOLED设备采用RGB565颜色格式,即红色/蓝色永远不能超过每像素的5位.指定AMOLED设备的5的值,将绿色从每像素的6到5位减少,可能会导致动画的压缩提高,而考虑到256色调度限制,不会造成视觉明显的差异.
 
-### Memory Impact
+### 内存影响
 
 每个动画都被认为是染层.当一个动画被添加到`View`时,它将被分配到一个框架缓冲器 (以缓冲Bitmap的形式),值单个原始像素数据的框架.例如,如果颜色深度为8位,则240x240动画将从Connect IQ应用程序内存预算中大约耗费58 KB (240 x 240 x 1) 的内存.
 
-#### Overlay Frame Memory
+#### 覆盖层帧内存
 
 在带动机的`View`背景下,添加到`View`的本土抽取器被组合成一个层,称为"覆盖"层.覆盖框是为了确保流的播放体验而需要的,并且只会根据需求创建.目前,覆盖缓冲器从应用程序内存预算中取出一个全屏幕值的内存 (以缓冲Bitmap的形式,就像动画一样).
 
-#### Case Studies
+#### 案例研究
 
 作为参考,这些表表显示了在Fēnix 5 Plus上播放的动画的内存影响,其屏幕分辨率为240x240和颜色深度为8bpp.
 
 一个`View`,有两个动画,没有本土的引擎:
 
-| Layer | Resolution | Frame Buffer Size (KB) |
+| Layer | Resolution | 帧缓冲区大小（KB） |
 | --- | --- | --- |
-| Animation 1 | 240x240 | 58 |
-| Animation 2 | 40x40 | 1.6 |
+| 动画 1 | 240x240 | 58 |
+| 动画 2 | 40x40 | 1.6 |
 | Overlay | N / A | 0 |
 
-Total: 60 KB
+总计：60 KB
 
 具有两个动画和本土的抽象:
 
-| Layer | Resolution | Frame Buffer Size (KB) |
+| Layer | Resolution | 帧缓冲区大小（KB） |
 | --- | --- | --- |
-| Animation 1 | 240x240 | 58 |
-| Animation 2 | 40x40 | 1.6 |
-| Overlay | 240x240 (fixed) | 58 |
+| 动画 1 | 240x240 | 58 |
+| 动画 2 | 40x40 | 1.6 |
+| Overlay | 240x240（固定） | 58 |
 
-Total: 118 KB
+总计：118 KB

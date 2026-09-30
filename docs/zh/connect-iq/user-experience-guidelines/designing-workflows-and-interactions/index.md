@@ -1,17 +1,17 @@
 ---
 title: "Designing Workflows and Interactions"
 ---
-# Designing Workflows and Interactions
+# 设计工作流和交互
 
 一旦您建立了信息架构,您就可以开始将其转换为工作流程.
 
-## Hierarchical Navigation
+## 分层导航
 
 传统的Garmin用户界面是层次性的,视图根据用户的选择堆叠.每个设备都有导航选择和退出层次的标准行为,但这些标准行为可以因产品而异.
 
 试着限制导航层次的深度. 专注于快速选择,而不是迫使用户做出多种选择.
 
-## Behaviors
+## 行为
 
 下面的抽象行为适用于所有Garmin设备.
 
@@ -22,47 +22,47 @@ title: "Designing Workflows and Interactions"
 | Back |退出应用程序屏幕或视图,然后返回之前的屏幕或视图.|
 | Menu |显示应用程序设置菜单的操作.|
 
-## Common Patterns
+## 常见模式
 
 在从信息架构转换到工作流程时,利用 Garmin 设备上发现的以下模式:
 
-### Page Loops
+### 页面循环
 
 页面循环是视图的轮.当用户在页面循环中时,用户界面会呈现一组信息页面,为用户提供不同的数据和见解.往下一个和前一个页面的行为标准.过上最后一页通常会把用户返回第一页.
 
-![Page loops](/connect-iq/resources/ux-guide/page-loops.png)
+![页面循环](/connect-iq/resources/ux-guide/page-loops.png)
 
-### Dialogs
+### 对话框
 
 对话通常是一个模拟屏幕,用户必须确认阅读才能继续.这些可以用于错误消息,指令或其他形式的指导.
 
-![Dialogs](/connect-iq/resources/ux-guide/dialogs.png)
+![对话框](/connect-iq/resources/ux-guide/dialogs.png)
 
-### Progress Bars
+### 进度条
 
 进步告诉用户等待一个异步操作完成.进步有两种类型:一个从0%到100%的标准进步,一个无法量化完成时间的繁忙进步.
 
-![Progress bars](/connect-iq/resources/ux-guide/progress-bars.png)
+![进度条](/connect-iq/resources/ux-guide/progress-bars.png)
 
-### Confirmations
+### 确认
 
 Confirmations are pages that confirm a user action. They 可用于 confirm a decision by the user or add a point of friction if the user is exiting a flow.
 
-![Confirmations](/connect-iq/resources/ux-guide/confirmations.png)
+![确认](/connect-iq/resources/ux-guide/confirmations.png)
 
-### Selection Menus
+### 选择菜单
 
 选择菜单允许用户在两个或多个项目之间选择.这些项目被呈现在一个维度清单上.
 
-![Selection menu](/connect-iq/resources/ux-guide/selection-menu.png)
+![选择菜单](/connect-iq/resources/ux-guide/selection-menu.png)
 
-### Settings Menus
+### 设置菜单
 
 设置菜单通常通过菜单行为从应用程序的基本视图可用.设置菜单通常允许用户改变应用程序的全球设置.
 
-![Settings menu](/connect-iq/resources/ux-guide/settings-menu.png)
+![设置菜单](/connect-iq/resources/ux-guide/settings-menu.png)
 
-## Interactions
+## 交互
 
 在绘制你的工作流程时,你将会面临一些无法通过常见的UI模式解决的决定.此时,你需要考虑用户在设备上做出决定的最佳方式.
 
@@ -70,7 +70,7 @@ Garmin设计产品以这种使用情况为基础,一个关键考虑因素是,产
 
 连接智能确实允许触摸屏与按设备进行单独的定制体验,但它还提供了允许两者都实现单一的工具.最终,你决定是否想根据这些不同的输入模式定制应用程序的交互模式.
 
-### Input Patterns
+### 输入模式
 
 以下是Garmin设备的常见输入模式:
 
@@ -128,7 +128,7 @@ Garmin设计产品以这种使用情况为基础,一个关键考虑因素是,产
 - 在屏幕上点击汉堡菜单执行菜单操作.
 
 
-### Mobile App Settings
+### 移动应用设置
 
 ![](/connect-iq/resources/ux-guide/mobile-app-settings.png)
 
@@ -136,26 +136,26 @@ Garmin设计产品以这种使用情况为基础,一个关键考虑因素是,产
 
 这些设置可以有标签和提示.值可以是以下任何一个:
 
--   Boolean
+-   布尔值
 
--   Number
+-   数字
 
--   Text
+-   文本
 
--   Phone
+-   手机
 
--   Email
+-   电子邮件
 
 -   URL
 
--   Date
+-   日期
 
--   Password
+-   密码
 
 
 应用程序设置可以是让您的应用程序变得更可配置的方法,而不需要添加复杂的设备内UI. 当用户在移动中更改设置时,Connect IQ应用程序可以被通知,以提供即时反.
 
-## Mobile Authentication
+## 移动身份验证
 
 云服务要求用户自行验证,通常使用用户名和密码.在移动设备上,这些流程非常容易,但在具有有限输入能力的Garmin设备上,输入凭证可能是一个挑战.
 
@@ -167,7 +167,7 @@ Garmin设计产品以这种使用情况为基础,一个关键考虑因素是,产
 
 当凭证输入完成时,网页视图将关闭,并将凭证发送到Connect IQ应用程序.此时,您的Connect IQ应用程序应该继续其工作流程.
 
-## Best Practices
+## 最佳实践
 
 以下是定义应用程序中的互动的最佳实践:
 

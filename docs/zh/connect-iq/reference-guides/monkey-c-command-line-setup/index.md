@@ -5,7 +5,7 @@ title: "Using Monkey C from the Command Line"
 
 在开始在Mac或Windows上安装之前,您需要安装Oracle JavaTM运行环境版本11或更高的版本.
 
-## OS X Installation
+## OS X 安装
 
 1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
@@ -29,7 +29,7 @@ $ open ~/.bash_profile
 export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-## Windows Installation
+## Windows 安装
 
 1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
@@ -41,7 +41,7 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 > set PATH=%PATH%;%CIQ_HOME%\bin
 ```
 
-## Linux Installation
+## Linux 安装
 
 1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
@@ -65,7 +65,7 @@ $ nano ~/.bash_profile
 export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-## Basic Commands
+## 基本命令
 
 在安装后,有三个新的 shell 命令:`connectiq`,`monkeyc`和`monkeydo`.
 
@@ -80,8 +80,8 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 
 | Argument | Definition |
 | --- | --- |
-| `-d <arg>` | Target device |
-| `-f <arg>` | Jungle files |
+| `-d <arg>` | 目标设备 |
+| `-f <arg>` | Jungle 文件 |
 | `-o <arg>` |创建输出文件|
 | `-y <arg>` |[Private key](#generating-a-key-using-openssl)签字的构建|
 

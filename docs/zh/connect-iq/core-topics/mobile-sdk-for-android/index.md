@@ -13,7 +13,7 @@ title: "Mobile SDK for Android"
    implementation "com.garmin.connectiq:ciq-companion-app-sdk:<latest_version>@aar"
 ```
 
-## Additional Requirements
+## 其他要求
 
 In order for your companion application to communicate with a Connect IQ device the user must also install Garmin Connect Mobile onto their phone. All communication for companion applications running on Android goes through a Garmin Connect Mobile service to reach the device. When initializing the SDK with a wireless connection type this requirement is checked and initialization will fail if Garmin Connect Mobile is not installed. If true is passed to the auto UI parameter of initialize, a message is displayed to the user that they need to either install or upgrade Garmin Connect Mobile and provides them a way to go directly to the application in the Google Play Store. See `Displaying a UI message automatically when initialization fails` 更多信息.
 
@@ -25,7 +25,7 @@ In order for your companion application to communicate with a Connect IQ device 
   ConnectIQ connectIQ = ConnectIQ.getInstance(ConnectIQ.IQConnectType.<protocol>);
 ```
 
-`ConnectIQ.IQConnectType` provides two options:
+`ConnectIQ.IQConnectType` 提供两个选项：
 
 - 无线 - 通过BLE与Connect IQ模拟器或真实设备进行通信.
 
@@ -70,7 +70,7 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
 
 如果由于 Garmin Connect Mobile 不安装在用户的手机上,或者如果需要升级,则可以显示一个消息,促使用户采取行动.你可以告诉 SDK 通过通过通过 true 作为`initialize()`方法的第二个参数来自动显示这个消息.默认情况下,UI 将向用户显示一个对话消息,要求他们采取行动.构成对话符串的字符串是默认的英语字符串.这些字符串可以通过简单地添加一些预定义字符串到您的项目`strings.xml`文件来完全定制.
 
-### Customizable Strings
+### 可自定义字符串
 
 -`install_needed_title`--- 需要安装 Garmin Connect Mobile 的对话标题.
 
@@ -91,7 +91,7 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
 
 ##与设备合作
 
-### Finding Connect IQ-compatible Devices
+### 查找兼容 Connect IQ 的设备
 
 在您可以与Connect IQ设备进行交互之前,您必须获得代表其的`IQDevice`对象实例的引用.
 
@@ -144,7 +144,7 @@ IQDeviceStatus current = device.getStatus();
 connectIQ.unregisterForDeviceEvents(device);
 ```
 
-#### Possible Device statuses
+#### 可能的设备状态
 
 -`CONNECTED`--- 设备连接,可以与其通信.
 
@@ -182,7 +182,7 @@ connectIQ.getApplicationInfo(MY_APPLICATION_ID, device, new IQApplicationInfoLis
 });
 ```
 
-#### Possible Application Statuses
+#### 可能的应用状态
 
 应用程序安装在设备上,已填写版本信息.
 
@@ -206,11 +206,11 @@ connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
 });
 ```
 
-#### Possible Open Application Statuses
+#### 可能的打开应用状态
 
--   PROMPT\_SHOWN\_ON\_DEVICE
+-   设备上已显示 PROMPT\_SHOWN\_ON\_DEVICE
 
--   PROMPT\_NOT\_SHOWN\_ON\_DEVICE
+-   设备上未显示 PROMPT\_NOT\_SHOWN\_ON\_DEVICE
 
 -   APP\_IS\_NOT\_INSTALLED
 
@@ -227,7 +227,7 @@ connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
 connectIQ.openStore( MY_STORE_ID );
 ```
 
-## Sending Messages
+## 发送消息
 
 You can send messages to your Connect IQ application on a connected device using any of the Java equivalent Monkey C data types (see *支持ed Data Types* table below). Calling `sendMessage()` will deliver the message to your applications mailbox.
 
@@ -246,7 +246,7 @@ connectIQ.sendMessage(device, app, message, new IQSendMessageListener() {
 });
 ```
 
-## Receiving Messages
+## 接收消息
 
 为了从Connect IQ应用程序接收数据消息,您必须首先注册接收应用程序事件.一旦通过`registerForAppEvents()`注册,当从Connect IQ应用程序接收新的消息时,它将被传递到注册时通过的`onMessageReceived()`方式.当您不再希望接收接入的消息时,您应该打电话给`unregisterForAppEvents()`释放任何相关资源.
 
@@ -273,14 +273,14 @@ connectIQ.unregisterForAppEvents(device, app);
 
 ## 支持ed Data Types
 
-|Java数据类型|子C类型| Notes |
+|Java数据类型|子C类型| 备注 |
 | --- | --- | --- |
-| int, Integer | Integer |  |
-| long, Long | Integer, Long |如果长的值足够小以表示为整数,则将转换为节省空间.|
-| float, Float | Float |  |
-| double, Double | Float, Double |如果倍数的值在最近的浮动的5个相匹配的重要分数数字内,则将转换为浮动,以节省空间.|
-| boolean, Boolean | Boolean |  |
+| int、Integer | 整数 |  |
+| long、Long | 整数、长整数 |如果长的值足够小以表示为整数,则将转换为节省空间.|
+| float、Float | 浮点数 |  |
+| double、Double | 浮点数、双精度浮点数 |如果倍数的值在最近的浮动的5个相匹配的重要分数数字内,则将转换为浮动,以节省空间.|
+| 布尔值、Boolean | 布尔值 |  |
 | char | Char |  |
-| String | String |  |
-|列表| Array |如果列表中包含未支持的数据类型,则会提出例外.|
+| 字符串 | 字符串 |  |
+|列表| 数组 |如果列表中包含未支持的数据类型,则会提出例外.|
 | Map | Dictionary |如果地图包含未支持的数据类型,则会提出例外.|

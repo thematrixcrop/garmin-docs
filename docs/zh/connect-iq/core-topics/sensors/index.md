@@ -18,32 +18,32 @@ function onSensor(sensorInfo as Sensor.Info) as Void {
 
 传感器信息被包装在[Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)对象中:
 
-|传感器类型| API | Units | API Level |
+|传感器类型| API | Units | API 级别 |
 | --- | --- | --- | --- |
 | Accelerometer | [Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var) |在毫克单位中的x,y,z值的数组.| 1.2.0 |
-| Altitude | [Info.altitude](/connect-iq/api-docs/Toybox/Sensor/Info/#altitude-var) | Altitude above mean sea level in meters (m). | 1.0.0 |
-| Cadence | [Info.cadence](/connect-iq/api-docs/Toybox/Sensor/Info/#cadence-var) | Revolutions per minute (rpm). | 1.0.0 |
-| Heading | [Info.heading](/connect-iq/api-docs/Toybox/Sensor/Info/#heading-var) | True north in radians. | 1.0.0 |
-| Heart Rate | [Info.heartRate](/connect-iq/api-docs/Toybox/Sensor/Info/#heartRate-var) | Beats per minute (bpm). | 1.0.0 |
+| Altitude | [Info.altitude](/connect-iq/api-docs/Toybox/Sensor/Info/#altitude-var) | 高于平均海平面的高度，单位为米 (m)。 | 1.0.0 |
+| Cadence | [Info.cadence](/connect-iq/api-docs/Toybox/Sensor/Info/#cadence-var) | 每分钟转数（rpm）。 | 1.0.0 |
+| Heading | [Info.heading](/connect-iq/api-docs/Toybox/Sensor/Info/#heading-var) | 以弧度表示的真北方向。 | 1.0.0 |
+| 心率 | [Info.heartRate](/connect-iq/api-docs/Toybox/Sensor/Info/#heartRate-var) | 每分钟心跳次数 (bpm)。 | 1.0.0 |
 | Magnetometer | [Info.mag](/connect-iq/api-docs/Toybox/Sensor/Info/#mag-var) |在毫加斯中,x,y,z值的数组.| 1.2.0 |
-| Oxygen Saturation | [Info.oxygenSaturation](/connect-iq/api-docs/Toybox/Sensor/Info/#oxygenSaturation-var) |目前的氧气和率 (%).| 3.2.0 |
+| 血氧饱和度 | [Info.oxygenSaturation](/connect-iq/api-docs/Toybox/Sensor/Info/#oxygenSaturation-var) |目前的氧气和率 (%).| 3.2.0 |
 | Power | [Info.power](/connect-iq/api-docs/Toybox/Sensor/Info/#power-var) | Watts. | 1.0.0 |
-| Pressure | [Info.pressure](/connect-iq/api-docs/Toybox/Sensor/Info/#pressure-var) | The barometric pressure in Pascals. | 1.0.0 |
-| Temperature | [Info.temperature](/connect-iq/api-docs/Toybox/Sensor/Info/#temperature-var) | Degrees Celsius (C). | 1.0.0 |
+| Pressure | [Info.pressure](/connect-iq/api-docs/Toybox/Sensor/Info/#pressure-var) | 以帕斯卡为单位的气压。 | 1.0.0 |
+| Temperature | [Info.temperature](/connect-iq/api-docs/Toybox/Sensor/Info/#temperature-var) | 摄氏度（C）。 | 1.0.0 |
 
 模拟器可以通过 *模拟*菜单模拟传感器数据,通过选择 *Fit Data* > *Simulate Data*来模拟传感器数据.这生成可通过传感器界面读取的有效但随机值.为了更准确的模拟,模拟器可以播放FIT文件并将输入输入到[Toybox.Sensor](/connect-iq/api-docs/Toybox/Sensor/)模块中.此目的是选择 *Simulation* > *Fit Data* > *Playback File*并从对话框中选择FIT文件.
 
 查看与SDK共享的`AccelMag`和`Sensor`样本应用.
 
-## High Frequency Data
+## 高频数据
 
-*Since API level 2.3.0*
+*自 API 级别 2.3.0*
 
 [Toybox.Sensor](/connect-iq/api-docs/Toybox/Sensor/)模块包含在一定频率的时间内收集加速器数据样本的能力.该功能使开发人员能够在Connect IQ应用程序中实现自己的定制运动检测算法.
 
 通过注册传感器数据听器来获取加速器数据,该传感器提供采样参数以及用户定义的回调方法,当新数据可用时将执行.传感器数据请求通过以下[Toybox.Sensor](/connect-iq/api-docs/Toybox/Sensor/)模块方法和类别来管理:
 
-| Class or Function |目的| API Level |
+| 类或函数 |目的| API 级别 |
 | --- | --- | --- |
 | [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/) |高频传感器数据包装| 2.3.0 |
 | [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) |包装用于加速计信息| 2.3.0 |
@@ -120,25 +120,25 @@ class MyAccelHistoryClass
 
 查看与SDK共享的`PitchCounter`样本应用.
 
-### Filtering Accelerometer Data
+### 筛选加速度计数据
 
 在处理加速计数据时,您可能希望将过器应用于您的应用程序收到的原始传感器输入.IIR和FIR过器对象为开发人员提供帮助进行样品过.以下新对象已加入数学模块:
 
-|类|目的| API Level |
+|类|目的| API 级别 |
 | --- | --- | --- |
 | [Math.FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) |创建一个可以应用到样本阵列的FIR过器| 2.3.0 |
 | [Math.IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) |创建一个可以应用到样本阵列的IIR过器| 2.3.0 |
 
 每个过器类都需要提供系数,这通过词典参数进行.每个过器类支持的选项如下:
 
-**FIR Filter**
+**FIR 滤波器**
 
 | Option |描述|
 | --- | --- |
 | `:coefficients` |一组漂浮值,指定过系数. 这也可以是指嵌入式JSON资源的资源ID,定义了数值阵列.|
 | `:gain` |一个浮动值,指向对系数应应用的乘法.|
 
-**IIR Filter**
+**IIR 滤波器**
 
 | Option |描述|
 | --- | --- |
@@ -194,7 +194,7 @@ class MyAccelHistoryClass
 }
 ```
 
-### Logging Accelerometer Data
+### 记录加速度计数据
 
 加速度计数据也可以被设备记录下来,并且可以在模拟器中播放用于使用加速度计数据功能的测试应用程序. 加速度计数据的记录通过将[SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)对象传递到FIT录音会话中.
 
@@ -228,15 +228,15 @@ class LoggingController {
 }
 ```
 
-## Weather
+## 天气
 
-*Since API level 3.2.0*
+*自 API 级别 3.2.0*
 
 许多Garmin设备都可访问每15分钟更新的当前天气情况.此信息要求设备能够通过配对智能手机访问数据连接.
 
 连接 IQ提供了访问这些信息的以下方法:
 
-| Function |目的| API Level |
+| Function |目的| API 级别 |
 | --- | --- | --- |
 | [Weather.getCurrentConditions()](/connect-iq/api-docs/Toybox/Weather/#getCurrentConditions-instance_function) |获取最新缓存的天气条件| 3.2.0 |
 | [Weather.getDailyForecast()](/connect-iq/api-docs/Toybox/Weather/#getDailyForecast-instance_function) |获取每日预测| 3.2.0 |

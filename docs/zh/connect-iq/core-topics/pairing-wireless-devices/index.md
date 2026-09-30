@@ -1,9 +1,9 @@
 ---
 title: "Sensor Pairing"
 ---
-# Sensor Pairing
+# 传感器配对
 
-*Since API level 5.1.0*
+*自 API 级别 5.1.0*
 
 如果您的设备应用程序或数据领域使用ANT,ANT加或蓝牙低能 (BLE) 无线通信与传感器或外围设备,则您需要实现对接过程.Connect IQ允许您实现[Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/),允许您将设备对应作为设备的传感器对应UI流的一部分.
 
@@ -45,14 +45,14 @@ When the user has the device scan for sensors, 系统将 start your app without 
 > monkeydo path\to\projects\bin\MyApp.prg device_id /n
 ```
 
-For more information, see [Basic Commands](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands).
+如需更多信息，请参阅 [基本命令](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands)。
 
-| API |描述| API Level |
+| API |描述| API 级别 |
 | --- | --- | --- |
 | [AppBase.getSensorDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorDelegate-instance_function) |实现传感器代表. 实现这种方法来通信应用程序支持本土的配对流.| 5.1.0 |
 | [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function) |扫描您的应用程序支持的设备.| 5.1.0 |
 | [SensorDelegate.onPair()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onPair-instance_function) |完成特定设备的配对过程.| 5.1.0 |
 | [SensorDelegate.onUnpair()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onUnpair-instance_function) |从应用程序中删除特定设备.| 5.1.0 |
-|  | Tell the system your app has completed a scan. | 5.1.0 |
+|  | 通知系统您的应用已完成扫描。 | 5.1.0 |
 | [Sensor.notifyPairComplete()](/connect-iq/api-docs/Toybox/Sensor/#notifyPairComplete-instance_function) |告诉系统,你的应用程序已经完成了设备的配对| 5.1.0 |
 | [Sensor.notifyUnpairComplete()](/connect-iq/api-docs/Toybox/Sensor/#notifyUnpairComplete-instance_function) |告诉系统,你的应用程序已经完成了脱设备| 5.1.0 |

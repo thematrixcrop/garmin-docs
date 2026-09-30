@@ -9,23 +9,23 @@ title: "Understanding What You Are Building"
 
 任何设计的可用性与两个变量相比:用户和任务.在Garmin设备上的应用程序应该专注于允许用户快速地完成关键任务,并且具有最小的互动.为移动应用程序或网络保存深度潜水.
 
-## Common Use Cases
+## 常见使用场景
 
 卡尔明是运动员们所信任的品牌,拥有从野心到耐力的观众. 连接智商让你能够让你的品牌或解决方案出现在这个庞大的观众面前.
 
-### Customized Watch Faces
+### 自定义表盘
 
 腕表面孔不仅是Garmin可穿戴体验的首页屏幕,而且也是用户表达自己的机会.
 
-### Third-Party Sensors
+### 第三方传感器
 
 Connect IQ允许第三方传感器制造商与Garmin设备连接.传感器可以记录在Garmin Connect中可显示的额外活动信息.
 
-### Integrating Workout Content
+### 集成锻炼内容
 
 连接 IQ 允许开发人员将其内容纳入Garmin活动体验.
 
-### New Activities
+### 新活动
 
 Garmin支持各种活动,但Connect IQ开发人员可以让用户在设备上记录不支持本土的训练,如舞蹈,线上滑冰等.
 
@@ -33,7 +33,7 @@ Garmin支持各种活动,但Connect IQ开发人员可以让用户在设备上记
 
 连接智商应用程序允许我们的用户在手腕的点击下访问您的服务.
 
-### Music Services
+### 音乐服务
 
 连接 IQ 允许音乐内容提供商将他们的服务扩展到Garmin用户.内容可以通过Wi-Fi下载并安全存储在我们的设备上以后被用户播放.您可以在应用程序中执行播放跟踪和订阅管理.
 

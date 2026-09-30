@@ -1,13 +1,13 @@
 ---
 title: "Account Management"
 ---
-# Account Management
+# 账户管理
 
 如果您是经过批准的商人,开发者仪表板上的商人账户 tabb可让您更新您的银行信息,请求销售报告和税收表格,并取消您的账户.
 
 为了改变您的法人类型,您必须发电子邮件给[`ConnectIQAppAdmin@garmin.com`](mailto://ConnectIQAppAdmin@garmin.com)
 
-## Cancelling Your Account
+## 取消您的账户
 
 您可以随时退出货币化程序. 通过选择*帐户信息>禁用帐户*,您可以在开发者仪表板上的商户帐户选项选项中退出.
 

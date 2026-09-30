@@ -63,15 +63,15 @@ fēnix 8 及更新的可穿戴设备具有设备上的表盘编辑器。表盘�
 | 标签 | 属性 | 类型 | 描述 |
 | --- | --- | --- | --- |
 | `style` | `id` | Number | 样式的数字标识符。 |
-| `style` | `label` | String identifier | 样式的标签名称。 |
-| `style` | `default` | Boolean | 可选字段，指示哪个样式是用户默认值。 |
+| `style` | `label` | 字符串标识符 | 样式的标签名称。 |
+| `style` | `default` | 布尔值 | 可选字段，指示哪个样式是用户默认值。 |
 | `complication` | `id` | Number | 复杂功能的数字标识符。 |
-| `complication` | `allowAny` | Boolean | 可选。指定给定的复杂功能接受任何系统支持的复杂功能，包括 Connect IQ 复杂功能。 |
-| `type` | `default` | Boolean | 可选参数，用于标识支持的复杂功能类型。元素值应为 Complication 标识符。如果使用 allowAny，则不应提供此参数。 |
-| `dataColors` | `allowAny` | Boolean | 可选属性。指定数据颜色允许指定任何系统支持的颜色。如果未指定，则应提供颜色元素。 |
-| `color` | `label` | String identifier | 颜色的可翻译名称。 |
-| `color` | `default` | Boolean | 可选。将此颜色标记为用户的默认值。 |
-| `accentColors` | `allowAny` | Boolean | 可选属性。指定强调色允许指定任何系统支持的颜色。如果未指定，则应提供颜色元素。 |
+| `complication` | `allowAny` | 布尔值 | 可选。指定给定的复杂功能接受任何系统支持的复杂功能，包括 Connect IQ 复杂功能。 |
+| `type` | `default` | 布尔值 | 可选参数，用于标识支持的复杂功能类型。元素值应为 Complication 标识符。如果使用 allowAny，则不应提供此参数。 |
+| `dataColors` | `allowAny` | 布尔值 | 可选属性。指定数据颜色允许指定任何系统支持的颜色。如果未指定，则应提供颜色元素。 |
+| `color` | `label` | 字符串标识符 | 颜色的可翻译名称。 |
+| `color` | `default` | 布尔值 | 可选。将此颜色标记为用户的默认值。 |
+| `accentColors` | `allowAny` | 布尔值 | 可选属性。指定强调色允许指定任何系统支持的颜色。如果未指定，则应提供颜色元素。 |
 
 ## 读取表盘配置
 

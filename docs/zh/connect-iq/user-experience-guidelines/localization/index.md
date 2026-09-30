@@ -7,78 +7,78 @@ title: "本地化"
 
 基于语言,Connect IQ工具允许应用资源,包括文本和图形,被重置.以下语言支持:
 
--   Arabic
+-   阿拉伯语
 
--   Bulgarian
+-   保加利亚语
 
--   Czech
+-   捷克语
 
--   Danish
+-   丹麦语
 
--   German
+-   德语
 
--   Dutch
+-   荷兰语
 
--   English
+-   英语
 
--   Estonian
+-   爱沙尼亚语
 
--   Finnish
+-   芬兰语
 
--   French
+-   法语
 
--   Croatian
+-   克罗地亚语
 
--   Hungarian
+-   匈牙利语
 
--   Indonesian
+-   印度尼西亚语
 
--   Italian
+-   意大利语
 
--   Japanese
+-   日语
 
--   Korean
+-   韩语
 
--   Latvian
+-   拉脱维亚语
 
--   Lithuanian
+-   立陶宛语
 
--   Norsk Bokmål
+-   挪威语博克马尔文
 
--   Polish
+-   波兰语
 
--   Portuguese
+-   葡萄牙语
 
--   Slovak
+-   斯洛伐克语
 
--   Slovenian
+-   斯洛文尼亚语
 
--   Spanish
+-   西班牙语
 
--   Swedish
+-   瑞典语
 
--   Russian
+-   俄语
 
--   Romanian
+-   罗马尼亚语
 
--   Thai
+-   泰语
 
--   Turkish
+-   土耳其语
 
--   Ukrainian
+-   乌克兰语
 
--   Vietnamese
+-   越南语
 
--   Standard Malay
+-   标准马来语
 
--   Simplified Chinese
+-   简体中文
 
--   Traditional Chinese
+-   繁体中文
 
 
 在开发Connect IQ应用程序时,你应该考虑适应其他国家和语言的应用程序.
 
-## Best Practices
+## 最佳实践
 
 -   All Connect IQ devices support English, but not all devices support all languages. 支持ing only English is not a localization strategy.
 

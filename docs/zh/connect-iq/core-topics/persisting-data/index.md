@@ -1,7 +1,7 @@
 ---
 title: "Persisting Data"
 ---
-# Persisting Data
+# 持久化数据
 
 连接智能也可以在运行时间内存储应用程序内部的数据.例如,应用程序可能需要获取或计算数据并存储其以后使用.这通过使用存储,属性和设置实现.
 
@@ -12,7 +12,7 @@ title: "Persisting Data"
 - *设置*是通过 Garmin Connect Mobile和 Garmin Express 修改的用户可编辑的值.默认设置值由 Properties 定义.
 
 
-## Storage
+## 存储
 
 存储是用来在开发人员定义的运行时间内从设备的文件系统保存和检索数据.这些数据仅可用于应用程序,最终用户无法访问.例如,该功能可以用于存储应用程序最后使用时的位置.下一次应用程序启动时,存储可以为应用程序提供最后已知位置.
 
@@ -39,20 +39,20 @@ title: "Persisting Data"
 
 值得注意的是,[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)可能只包含上述数据类型.例如,无法在存储中存储[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)在[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/).
 
-## Accessing Properties and Settings: Object Store
+## 访问属性和设置：对象存储
 
 在 API 级别 2.4.0 之前,所有内容都存在于对象存储中.如果您的应用程序运行在 Connect IQ System 1 设备上,则需要使用[AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)和[AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)来保持数据.这些功能允许访问既设置,又保持数据.
 
 由于对象存储器的成本与运行时间内存相比,除非您在系统1设备上运行,否则不要使用这些方法.
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) |从物体存储器中按键获取信息| 1.0.0 |
 | [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) |存储信息按键在物体存储器中| 1.0.0 |
 
-## Accessing Storage: `Application.Storage`
+## 访问存储：`Application.Storage`
 
-*Since API level 2.4.0*
+*自 API 级别 2.4.0*
 
 [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块管理持续的键值对数据存储.当调用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function)时,信息自动存储在磁盘上.键和值每个限制在8 KB,总共可存储 128 KB.
 
@@ -71,14 +71,14 @@ dc.drawText(x, y, Graphics.FONT_SMALL, "Last location: " + myLastLocation, Graph
 
 API级 3.2.0 引入了从背景过程中访问[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块的能力.后台过程可以使用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function),[Storage.deleteValue()](/connect-iq/api-docs/Toybox/Application/Storage/#deleteValue-instance_function)和 .当存储从背景过程中编写时,如果背景和前景过程同时和相反而活跃,则将调用[AppBase.onStorageChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStorageChanged-instance_function)调用后台进程.应用程序将不得不重新加载存储数据以反映更新信息.
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [Storage.getValue()](/connect-iq/api-docs/Toybox/Application/Storage/#getValue-instance_function) |从持续存储中按键获取信息| 2.4.0 |
-| [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) | Store information by key in persisted storage | 2.4.0 |
+| [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) | 按键将信息存储在持久化存储中 | 2.4.0 |
 
-## Accessing Properties and Settings: `Application.Properties`
+## 访问属性和设置：`Application.Properties`
 
-*Since API level 2.4.0*
+*自 API 级别 2.4.0*
 
 The [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供 an interface for accessing the values and properties of settings. Information is automatically saved on disk when [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) is called. To get or set a property value use the [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) or methods, respectively:
 
@@ -90,7 +90,7 @@ Properties.setValue("mySetting", mySetting);
 var mySetting = Properties.getValue("mySetting");
 ```
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) |从属性中按键获取信息.属性值必须在`<properties>`元素中的资源xml文件中定义.如果一个不存在应用属性中的密钥被传递给[Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function),则会抛出一个例外| 2.4.0 |
 | [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) |存储信息按按键在持续存储中.资源xml文件中必须在`<properties>`元素中定义属性值.如果在应用属性中不存在的密钥被传递到[Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function),则会抛出一个例外| 2.4.0 |

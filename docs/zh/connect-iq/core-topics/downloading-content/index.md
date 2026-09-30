@@ -1,15 +1,15 @@
 ---
 title: "Downloading Content"
 ---
-# Downloading Content
+# 下载内容
 
-*Since API level 2.2.0*
+*自 API 级别 2.2.0*
 
 [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)模块允许访问用户在设备上存储的轨道,课程,路线,训练和路线.这些内容类型包含一个名称和独特的识别符,这些内容类型可以由[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)作为[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)来启动本地应用程序并以某种方式向用户展示内容.查看[Intents](/connect-iq/core-topics/intents/#intents)部分更多详情.
 
-|类型| Object | API Level |
+|类型| 对象 | API 级别 |
 | --- | --- | --- |
-| Track, Route, Course | [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/), [PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), [PersistedContent.Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) | 2.2.0 |
+| 轨迹、路线、课程 | [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)、[PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/)、[PersistedContent.Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) | 2.2.0 |
 | Waypoint | [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) | 2.2.0 |
 | Workout | [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/) | 2.2.0 |
 
@@ -60,7 +60,7 @@ function example() as Void {}
 
 ![](/connect-iq/resources/programmers-guide/intent-launched.png)
 
-*Since API level 3.1.0*
+*自 API 级别 3.1.0*
 
 在某些情况下,[Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)(BLE) 链接到Garmin Connect Mobile是太慢的下载某些内容.在这些情况下,WiFi Bulk Downloads功能可以证明有用.
 

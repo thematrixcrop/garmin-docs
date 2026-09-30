@@ -1,7 +1,7 @@
 ---
 title: "Jungle Reference Guide"
 ---
-# Jungle Reference Guide
+# Jungle 参考指南
 
 欢迎来到 Jungles，这是 Connect IQ 应用的构建语言。本指南将涵盖以下主题：
 
@@ -9,7 +9,7 @@ title: "Jungle Reference Guide"
 
 - 使用[build exclusions](/connect-iq/reference-guides/jungle-reference/#excluded-annotations)来定制您的应用程序在构建时
 
--   Managing [monkey barrels](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
+-   管理 [monkey barrels](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
 
 - 使用林[with Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code)或从[command line](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
 
@@ -24,7 +24,7 @@ title: "Jungle Reference Guide"
 
 项目资格指定在整个项目中适用的全球信息.项目资格有x属性,可以通过使用点 (`.`) 和属性的名称引用`project`:
 
-| Qualifier | Description |
+| Qualifier | 说明 |
 | --- | --- |
 | `manifest` |项目公开文件的路径|
 | `optimization` |指定项目优化水平.详细见[`--optimization` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options)|
@@ -34,7 +34,7 @@ title: "Jungle Reference Guide"
 
 设备资格有六个属性,可以通过一个点 (`.`) 和属性名称的资格进行引用:
 
-| Qualifier | Description |
+| Qualifier | 说明 |
 | --- | --- |
 | `annotations` |适用于本资格的子桶注释|
 | `barrelPath` |适用于本资格的 file子桶文件 (`.barrel`) 路径|
@@ -325,7 +325,7 @@ base.barrelPath = barrels/MathLibrary.barrel;[MyIconBarrel/roundIcons.jungle;MyI
 默认情况下,每个项目都设置在项目根部寻找一个`monkey.jungle`文件,如果它存在,则会使用它.然而,如果一个项目有不同的组织或更喜欢不同的Jungle文件名称,那么通过进入 *File > 首选 > 设置*和编辑 *Monkey C*设置可以轻松设置Jungle文件位置:
 
 
-![Jungle file specification in Visual Studio Code](/connect-iq/resources/programmers-guide/vscode-jungles.png)
+![Visual Studio Code 中的 Jungle 文件规范](/connect-iq/resources/programmers-guide/vscode-jungles.png)
 
 ## 从命令行使用 Jungles
 

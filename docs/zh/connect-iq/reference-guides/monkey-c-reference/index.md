@@ -1,7 +1,7 @@
 ---
 title: "Monkey C Language Reference"
 ---
-# Monkey C Language Reference
+# Monkey C 语言参考
 
 ![](/connect-iq/resources/programmers-guide/smart-monkey.png)
 
@@ -9,28 +9,28 @@ title: "Monkey C Language Reference"
 
 子C的目标是将应用程序开发的尖端边缘圆圆,允许开发人员更多地关注客户而不是减少资源限制.子C编译成字节代码,由虚拟机解释,类似于Java.
 
-## Language Essentials
+## 语言基础
 
-### Data Types
+### 数据类型
 
 子C是一个[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,并没有真正的原始类型.[Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/),[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/),[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/),[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/),[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)和[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)类型都是对象,这意味着原始类型可以像其他对象一样有方法.在Java或C++等语言中,必须对每个函数参数和返回值进行类型声明. however子C编译器会选择验证类型安全性,然而,当函数不处理对象时会出现运行时间错误.使用[`instanceof` and `has`](#instanceof-and-has)这样的操作员可以帮助避免潜在的键字问题.
 
 子C支持的基本数据类型是:
 
-| Type | Description | Example |
+| 类型 | 说明 | Example |
 | --- | --- | --- |
-| [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 32-bit signed integer | `var x = 5;` |
+| [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 32 位有符号整数 | `var x = 5;` |
 | [Float](/connect-iq/api-docs/Toybox/Lang/Float/) |32位浮点号码| `var y = 6.0;` |
-| [Long](/connect-iq/api-docs/Toybox/Lang/Long/)\* | 64-bit signed integer | `var l = 5l;` |
+| [Long](/connect-iq/api-docs/Toybox/Lang/Long/)\* | 64 位有符号整数 | `var l = 5l;` |
 | [Double](/connect-iq/api-docs/Toybox/Lang/Double/)\* |64位浮点号码| `var d = 4.0d;` |
 | [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) |`true`和`false`| `var bool = true;` |
-| [Char](/connect-iq/api-docs/Toybox/Lang/Char/) | UTF-32 character | `var c = 'x';` |
+| [Char](/connect-iq/api-docs/Toybox/Lang/Char/) | UTF-32 字符 | `var c = 'x';` |
 | [String](/connect-iq/api-docs/Toybox/Lang/String/)\* |一个字符的序列| `var str = "Hello";` |
 | [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) |一个轻量级的恒定识别器 (查看[Symbols](#symbols)更多信息)| `var sym = :mySymbol;` |
 
-Monkey C also supports two container types:
+Monkey C 还支持两种容器类型：
 
-| Type | Description | Example |
+| 类型 | 说明 | Example |
 | --- | --- | --- |
 | [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* |固定尺寸 (不是链接列表),数值索引,单维物体列表| `var arr = new [1, 2, 3];` |
 | [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* |交配阵列或哈希表,将键映射到值| `var dict = {one=>1, two=>2};` |
@@ -39,71 +39,71 @@ Monkey C also supports two container types:
 
 在 Monkey C 编程语言中,有几个关键字,操作符和保留的单词,不能作为程序中的变量或符号:
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
-| `and` |逻辑 AND,相当于`&&`| See [Logical Operators](#logical-operators) |
-| `as` |指定一个以`using`语句表示的模块的号| See [Using Statements](#using-statements) |
-| `break` |从循环或开关区块中脱| See [Loops](#loops) and [Switch-Case Statements](#switch-case-statements) |
-| `catch` |抓住一个抛出的[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)| See [Exception Handling](#exception-handling) |
-| `case` |指定`switch`区块中的一个案例| See [Switch-Case Statements](#switch-case-statements) |
-| `class` |宣布一个新的类型| See [Classes and Objects](#classes-and-objects) |
-| `const` |声明一个新的常数| See [Constants](#constants) |
-| `continue` |继续执行电流,主要在循环中使用| See [Loops](#loops) |
-| `default` |在`switch`区块中指定默认案例| See [Switch-Case Statements](#switch-case-statements) |
-| `do` |启动`do`循环| See [Loops](#loops) |
-| `else` |在`if`区块中指定一个替代案例| See [If Statements](#if-statements) |
-| `enum` |声明一个新的清单| See [Enumerations](#enumerations) |
-| `extends` |声明从另一个类中继承的类型| See [Classes and Objects](#classes-and-objects) |
-| `false` | Logical `false` | See [If Statements](#if-statements) |
-| `finally` |指定一个代码区块,在`try`区块中总是执行| See [Exception Handling](#exception-handling) |
-| `for` |启动`for`循环| See [Loops](#loops) |
-| `function` |声明一个新函数| See [Functions](#functions) |
-| `has` |检查对象是否具有特定的符号| See [Instanceof and Has](#instanceof-and-has) |
-| `hidden` |指定一个受保护对象成员,相当于`protected`| See [Data Hiding](#data-hiding) |
-| `if` |启动一个`if`区块| See [If Statements](#if-statements) |
-| `instanceof` |检查对象类型| See [Instanceof and Has](#instanceof-and-has) |
-| `me` |参照当前的对象实例| See [Classes and Objects](#classes-and-objects) |
-| `module` |声明一个新的模块| See [Modules](#modules) |
+| `and` |逻辑 AND,相当于`&&`| 请参阅 [Logical Operators](#logical-operators) |
+| `as` |指定一个以`using`语句表示的模块的号| 请参阅 [Using Statements](#using-statements) |
+| `break` |从循环或开关区块中脱| 请参阅 [Loops](#loops) 和 [Switch-Case Statements](#switch-case-statements) |
+| `catch` |抓住一个抛出的[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)| 请参阅 [Exception Handling](#exception-handling) |
+| `case` |指定`switch`区块中的一个案例| 请参阅 [Switch-Case Statements](#switch-case-statements) |
+| `class` |宣布一个新的类型| 请参阅 [Classes and Objects](#classes-and-objects) |
+| `const` |声明一个新的常数| 请参阅 [Constants](#constants) |
+| `continue` |继续执行电流,主要在循环中使用| 请参阅 [Loops](#loops) |
+| `default` |在`switch`区块中指定默认案例| 请参阅 [Switch-Case Statements](#switch-case-statements) |
+| `do` |启动`do`循环| 请参阅 [Loops](#loops) |
+| `else` |在`if`区块中指定一个替代案例| 请参阅 [If Statements](#if-statements) |
+| `enum` |声明一个新的清单| 请参阅 [Enumerations](#enumerations) |
+| `extends` |声明从另一个类中继承的类型| 请参阅 [Classes and Objects](#classes-and-objects) |
+| `false` | 逻辑 `false` | 请参阅 [If Statements](#if-statements) |
+| `finally` |指定一个代码区块,在`try`区块中总是执行| 请参阅 [Exception Handling](#exception-handling) |
+| `for` |启动`for`循环| 请参阅 [Loops](#loops) |
+| `function` |声明一个新函数| 请参阅 [Functions](#functions) |
+| `has` |检查对象是否具有特定的符号| 请参阅 [Instanceof and Has](#instanceof-and-has) |
+| `hidden` |指定一个受保护对象成员,相当于`protected`| 请参阅 [Data Hiding](#data-hiding) |
+| `if` |启动一个`if`区块| 请参阅 [If Statements](#if-statements) |
+| `instanceof` |检查对象类型| 请参阅 [Instanceof and Has](#instanceof-and-has) |
+| `me` |参照当前的对象实例| 请参阅 [Classes and Objects](#classes-and-objects) |
+| `module` |声明一个新的模块| 请参阅 [Modules](#modules) |
 | `NaN` |无效或未定义的值",不是数字"| NA |
 | `native` |用于内部使用| NA |
-| `new` |创建一个对象的新实例| See [Miscellaneous Operators](#miscellaneous-operators) |
-| `null` |一个零值| See [Declaring Variables](#declaring-variables) |
-| `or` |〇等于 `的逻辑 OR||` | See [Logical Operators](#logical-operators) |
-| `private` |指定一个私有对象成员| See [Data Hiding](#data-hiding) |
-| `protected` |指定受保护对象成员| See [Data Hiding](#data-hiding) |
-| `public` |指定一个公共对象成员| See [Data Hiding](#data-hiding) |
-| `return` |指定从函数返回值| See [Functions](#functions) |
-| `self` |参照当前的对象实例| See [Classes and Objects](#classes-and-objects) |
-| `static` |声明静态变量或函数| See [Static Members](#static-members) |
-| `switch` |启动一个`switch`区块| See [Switch-Case Statements](#switch-case-statements) |
-| `throw` |放一个例外| See [Exception Handling](#exception-handling) |
-| `true` | Logical `true` | See [If Statements](#if-statements) |
-| `try` |启动一个试捕区块来处理例外| See [Exception Handling](#exception-handling) |
-| `using` |进口用于应用程序的模块| See [Using Statements](#using-statements) |
-| `var` |声明一个新的变量| See [Declaring Variables](#declaring-variables) |
-| `while` |启动新的`while`循环或设置`do`循环的条件| See [Loops](#loops) |
+| `new` |创建一个对象的新实例| 请参阅 [Miscellaneous Operators](#miscellaneous-operators) |
+| `null` |一个零值| 请参阅 [Declaring Variables](#declaring-variables) |
+| `or` |〇等于 `的逻辑 OR||` | 请参阅 [Logical Operators](#logical-operators) |
+| `private` |指定一个私有对象成员| 请参阅 [Data Hiding](#data-hiding) |
+| `protected` |指定受保护对象成员| 请参阅 [Data Hiding](#data-hiding) |
+| `public` |指定一个公共对象成员| 请参阅 [Data Hiding](#data-hiding) |
+| `return` |指定从函数返回值| 请参阅 [Functions](#functions) |
+| `self` |参照当前的对象实例| 请参阅 [Classes and Objects](#classes-and-objects) |
+| `static` |声明静态变量或函数| 请参阅 [Static Members](#static-members) |
+| `switch` |启动一个`switch`区块| 请参阅 [Switch-Case Statements](#switch-case-statements) |
+| `throw` |放一个例外| 请参阅 [Exception Handling](#exception-handling) |
+| `true` | 逻辑 `true` | 请参阅 [If Statements](#if-statements) |
+| `try` |启动一个试捕区块来处理例外| 请参阅 [Exception Handling](#exception-handling) |
+| `using` |进口用于应用程序的模块| 请参阅 [Using Statements](#using-statements) |
+| `var` |声明一个新的变量| 请参阅 [Declaring Variables](#declaring-variables) |
+| `while` |启动新的`while`循环或设置`do`循环的条件| 请参阅 [Loops](#loops) |
 
-### Operators
+### 运算符
 
 在下面的例子中,假设`a = 10`,`b = 5`,`x = 1`,`y = 0`,`m = true`和`n = false`.
 
-#### Arithmetic Operators
+#### 算术运算符
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
-| `+` | Add two operands; unary positive |`a + b`结果为 15;`+a`是 10|
+| `+` | 加法：两个操作数；一元正号 |`a + b`结果为 15;`+a`是 10|
 | `-` |减去第二个操作数从第一个;单数负|`a - b`结果为 5;`-a`是 -10|
-| `*` | Multiply two operands | `a * b` results in 50 |
-| `/` |按分数分配股息| `a / b` results in 2 |
-| `%` |模块,在分开后提供剩余部分| `a % b` results in 0 |
-| `++` |增加一个数字值,可以是前置或后置| `a++` results in 11 |
-| `--` |一个数值的减值,可以是前或后| `a--` results in 9 |
+| `*` | 将两个操作数相乘 | `a * b` 的结果为 50 |
+| `/` |按分数分配股息| `a / b` 的结果为 2 |
+| `%` |模块,在分开后提供剩余部分| `a % b` 的结果为 0 |
+| `++` |增加一个数字值,可以是前置或后置| `a++` 的结果为 11 |
+| `--` |一个数值的减值,可以是前或后| `a--` 的结果为 9 |
 
 **注:**`+`运算符也用于连接[String](/connect-iq/api-docs/Toybox/Lang/String/)值.
 
-#### Relational Operators
+#### 关系运算符
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
 | `==` |检查两个操作数是否等等|`a == b`是`false`|
 | `!=` |检查两个操作数是否不等等|`a != b`是`true`|
@@ -112,9 +112,9 @@ Monkey C also supports two container types:
 | `>=` |检查左边操作数是否大于右边操作数或等于右边操作数|`a >= b`是`false`|
 | `<=` |检查左边操作数是否小于右边操作数|`a <= b`是`false`|
 
-#### Logical Operators
+#### 逻辑运算符
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
 |`&&`, '和'|逻辑 AND,如果两个值都是正确的`true`|`m && n`是`false`|
 | `||` |逻辑 OR,如果任何值都是正确的,则是`true`| `m |||
@@ -127,14 +127,14 @@ Monkey C also supports two container types:
 - 对`Number`或`Long`应用的`!`与`~`的应用相同.
 
 
-When comparing non-Boolean values in logical expressions:
+比较逻辑表达式中的非布尔值时：
 
 - 表达式`x && y`首先评估`x`. 如果`x`是`false`,则返回它的值;否则,`y`被评估,结果值被返回.
 
 - 表达式`x || y`首先评估`x`. 如果`x`是`true`,则返回它的值;否则,`y`被评估,结果值被返回.
 
 
-#### Bitwise Operators
+#### 位运算符
 
 位向运算者对二进制值进行操作,比分比分.这些运算遵循以下真相表所示的公约:
 
@@ -147,39 +147,39 @@ When comparing non-Boolean values in logical expressions:
 
 假设`p = 3`和`q = 1`.如果写为字节值,`p`是`0000 0011`和`q`是`0000 0001`.
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
-| `&` |如果它存在于两种操作中,则将结果复制为 bitwise AND| `p & q` results in 1 (0000 0001) |
+| `&` |如果它存在于两种操作中,则将结果复制为 bitwise AND| `p & q` 的结果为 1（0000 0001） |
 | `|` |如果它存在于任何一个操作中,它可以对结果进行复制| `p |` (0000 0011)|
-| `^` |如果它存在于任何一个操作数中,但不是两个| `p ^ q` results in 2 (0000 0010) |
-| `~` |两人的恭喜,这实际上"翻了"两部分| `~q` results in -2 (1111 1110) |
+| `^` |如果它存在于任何一个操作数中,但不是两个| `p ^ q` 的结果为 2（0000 0010） |
+| `~` |两人的恭喜,这实际上"翻了"两部分| `~q` 的结果为 -2（1111 1110） |
 
 ** 注:** 子C中的所有数字值都是签名值,由高序位表示
 
-#### Assignment Operators
+#### 赋值运算符
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
 | `=` |从右操作数到左操作数分配值|`b = a`将`b`赋予`a`(10) 的值|
 | `+=` |添加右操作和左操作,将结果分配到左操作|`a += b`相当于`a = a + b`(15)|
 | `-=` |减去右操作数从左操作数,将结果分配到左操作数|`a -= b`相当于`a = a - b`(5)|
 | `*=` |乘以左运行对右运行对左运行对结果分配|相当于`a *= b`和`a = a * b`(50)|
 | `/=` |分开左运算与右运算,将结果分配到左运算|`a /= b`相当于`a = a / b`(2)|
-| `%=` |分开左运行器与右运行器,将其余的分配到左运行器| `a %= b` results in 0 |
+| `%=` |分开左运行器与右运行器,将其余的分配到左运行器| `a %= b` 的结果为 0 |
 | `<<=` |移动左运行对右运行对左运行对右运行对结果分配|`x <<= y`相当于`x = x << y`(1)|
 | `>>=` |右移动左运行对右运行对右运行对左运行分配结果|`x >>= y`相当于`x = x >> y`(1)|
 | `&=` |位向和右运行对左运行,将结果分配给左运行|`x &= y`相当于`x = x & y`(0)|
 | `|=` |位向或右运行对左运行对应,并将结果分配给左运行对应| `x |= y` equivalent to `x = x | y` (1) |
 | `^=` |位向 XOR 右操作数与左操作数,并将结果分配到左操作数|`x ^= y`相当于`x = x ^ y`(1)|
 
-#### Miscellaneous Operators
+#### 其他运算符
 
-| Operator | Description | Example |
+| Operator | 说明 | Example |
 | --- | --- | --- |
 |`?`和`:`|三角形运算器,[if-else](#if-statements)的缩写形式| `var myBool = a > 5 ? true : false` |
 | `new` |创建一个对象的新实例| `var myTimer = new Toybox.Timer.Timer` |
 
-#### Operator Precedence
+#### 运算符优先级
 
 运算器优先级决定了表达式的哪些部分将首先进行评估.下列列表将运算器按优先级组分,表顶部出现的最高,下部出现的最低.
 
@@ -192,9 +192,9 @@ When comparing non-Boolean values in logical expressions:
 | 5 | `&& and` |
 | 6 | `|| or` |
 
-## Variables and Expressions
+## 变量和表达式
 
-### Comments
+### 注释
 
 编译器忽略了评论的声明.子C支持多行 (`/* */`) 和单行 (`//`) 的评论.以下是多行评论的一个例子:
 
@@ -215,7 +215,7 @@ using Toybox.System;
 System.println("Hello World!");  // This comment shares a line with code that will execute
 ```
 
-### Declaring Variables
+### 声明变量
 
 所有变量必须在使用`var`关键字之前被声明.由于子C是[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,因此不需要注意每个变量的类型.
 
@@ -233,7 +233,7 @@ var arr = new[10];     // Create a new array; since the values are unassigned, t
 var z = arr[0] + 5;    // Attempt to add a Number to a null array element. UnexpectedTypeException!
 ```
 
-### Constants
+### 常量
 
 常数以`const`关键字声明,它们是名字的,可支持所有基本数据类型的不可变值.这些值对于存储可重复使用的不变值来有用.常数必须在模块或类级别上声明,并且不能在函数内声明.重要的是,`const`以类似Java的`final`关键字的方式运行.例如,`const`数组可以防止数组被新实例取代,但数组的元素可以被修改.
 
@@ -243,7 +243,7 @@ const EAT_BANANAS = true;
 const BANANA_YELLOW = "#FFE135";
 ```
 
-### Symbols
+### 符号
 
 [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)对象是轻量级的常数识别器.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为常数使用,而不明确声明一个常数:
 
@@ -265,7 +265,7 @@ var person = {:title=>"George", :name=>"Taylor"};
 
 符号的另一个重要用途是引用[Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function)的调用方法实现或在[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)的调用后分配.在这种情况下,如果已实现`myMethod{...}`的方法,可以使用`:myMethod`的符号引用它作为调用后.查看[Callbacks](#callbacks)的部分,以了解更多详细的例子.
 
-### Enumerations
+### 枚举
 
 编号是从[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)到[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)值的恒定映射,使用`enum`关键词创建.除非明确设置,则编号中的第一个符号被赋予`0`的值,每一个后续符号都被自动赋予前一个未分配的符号加一个的值.编号符号可以像常数一样使用 (这基本上是它们的),并且像常数一样,编号必须在模块或类层面宣布.
 
@@ -294,7 +294,7 @@ enum {
 }
 ```
 
-### Arrays
+### 数组
 
 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象是固定尺寸的 (不是链接列表),数值索引的对象列表.一个阵列的所有成员不需要是相同类型的对象.就像变量一样,子C中的阵列是无类型的,因此不需要声明阵列的类型.创建一个新的阵列有两种方法:
 
@@ -330,7 +330,7 @@ for(var i = 0; i < first_dimension_size; i += 1) {
 
 ** 注:**使用这种技术时,很重要要注意数组尺寸.上面的例子只做了三次[Array](/connect-iq/api-docs/Toybox/Lang/Array/)分配,以提供200个插槽,但如果维度逆转,这将使得101个分配,使用更多的内存来提供相同的插槽数量.
 
-### Dictionaries
+### 字典
 
 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象,也称为关联阵列或哈希表,是类似于[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象的数据结构,它们映射键值对.键和值可以是任何类型的[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/),每个键值对不需要在给定的词典中是相同类型的组合.
 
@@ -383,7 +383,7 @@ var monkeyContinents = {
 }
 ```
 
-## Flow Control
+## 流程控制
 
 ###如果声明
 
@@ -454,7 +454,7 @@ var result = testExpression ? whenTrueExpression : whenFalseExpression
 var myValue = a ? 1 : 2;
 ```
 
-### Switch-Case Statements
+### Switch-Case 语句
 
 一个`switch`语句是另一种流量控制语句,它可能具有多个执行路径,而不是`if`语句提供的单一路径.一个`switch`语句首先评估一个条件,必须是对象分配不允许.任何数量的连续`case`语句都被允许在开关区块内,每个语句都被对象或`instanceof`表达式接下来.当`switch`评估是等于或是`case`语句的一个实例时,匹配案例区块将执行.例如,这两个例子运行类似:
 
@@ -537,7 +537,7 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 
 决定是否使用`switch`而不是`if`通常是个人偏好的问题.在某些情况下,交换区块可能更可读,特别是当有相对大量的案例需要考虑时.根据特定应用程序的需求,落后也可以是一个有用的工具.
 
-#### Scoping in Switch Blocks
+#### Switch 代码块中的作用域
 
 Variables declared within the switch block are scoped at the switch block level. Variables may also be enclosed by curly braces within a case block to limit scope to that case block. All variables defined at the switch block level must be initialized before being used in any subsequent `case` statements. For 示例：
 
@@ -567,7 +567,7 @@ switch (myValue) {
 }
 ```
 
-### Loops
+### 循环
 
 子C支持`for`,`while`和`do-while`循环.循环用于重复语句,直到一个表达式指定的条件达到.所有循环都需要关闭其语句块的支,而单线循环不支持.
 
@@ -616,7 +616,7 @@ for (var i = 0; i < 10; i += 1) {
 }
 ```
 
-### Exception Handling
+### 异常处理
 
 子C支持结构化[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理,以防止`try-catch`块的非致命错误:
 
@@ -679,7 +679,7 @@ function myFunction(myValue) {
 
 `return`语句是可选的,如果函数没有一个,它将从调用者的角度返回一个"垃圾"值.
 
-### Calling Functions
+### 调用函数
 
 要使用函数或方法,只需使用函数调用语法:
 
@@ -700,11 +700,11 @@ function myOtherFunction() {
 }
 ```
 
-## Classes and Objects
+## 类和对象
 
 类是将数据和操作捆绑在一起的蓝图,将其组建成一个类的实例,称为 *对象*.变量,函数和其他类 (通常称为 *members*) 可以在子C类内定义.对象被编译,不能在运行时进行修改,因此所有变量必须在使用之前在本地函数,类实例或母模块中声明.
 
-### Defining Classes
+### 定义类
 
 一个类是使用`class`关键词定义的.例如,这里有一个简单的类,定义了一个圆形,其中有一个`mRadius`成员,代表一个圆形的半径:
 
@@ -714,7 +714,7 @@ class Circle {
 }
 ```
 
-### Creating Objects
+### 创建对象
 
 为了创建一个类的实例,使用`new`关键字:
 
@@ -763,7 +763,7 @@ class Circle {
 
 ** 注:**子C中嵌入的类别无法访问附加类的成员.
 
-### Inheritance
+### 继承
 
 继承允许一个类基于另一个类,这有助于加快开发时间并促进代码重复使用.而不是为类似对象定义完全新的类,新的类可以继承现有类的成员.例如,可以通过使用`extends`关键字来定义一个新的球类,通过从圆类继承了许多相同的属性:
 
@@ -831,7 +831,7 @@ mySphere.describe();                          // "I'm a Sphere! My parent is a C
 
 注意从Sphere的`describe()`方法直接使用母类的符号来调用母类的`describe()`方法.`superclass.memberMethod()`在子C中有效,但`superclass.memberVariable`语法不支持.
 
-### Static Members
+### 静态成员
 
 在某些情况下,某些类成员需要在对象内访问,而不需要创建对象的实例.例如,想象一下只包含单元转换常数的单元转换类:
 
@@ -881,7 +881,7 @@ System.println(bunchOne.mNumberOfBananas); // 12
 System.println(bunchTwo.mNumberOfBananas); // 12 - notice this one also reflects the change!
 ```
 
-### Data Hiding
+### 数据隐藏
 
 类成员有三个访问级别*私*,*保护*,和*公共*.`private`修改器指定了成员只能在自己的类中访问.`protected`修改器指定了成员只能通过自己的类或其子类访问.`hidden`关键字是`protected`关键字的同义词.一个`public`访问修改器是默认的,但也可以明确指定.当`public`修改器用于列表,变量或函数时,这些成员可见于所有其他类.
 
@@ -908,7 +908,7 @@ var y = self.mMemberVariable;
 
 ** 注:** 隐藏数据仅可在类成员级别上使用. 子C中的[Modules](#modules)没有隐藏数据的概念,而[classes](#classes-and-objects)总是公开的.
 
-### Instanceof and Has
+### Instanceof 和 Has
 
 子C提供两个运营商进行运行时间类型检查,需要特别注意:`instanceof`和`has`.子C的对象导向设计模式与`has`和`instanceof`运营商结合,可以在一个代码库中实现许多设备的软件.
 
@@ -937,7 +937,7 @@ if (sensorInfo has :accel && sensorInfo.accel != null) {
 }
 ```
 
-### Callbacks
+### 回调
 
 子C中的函数不是一级,因此不能作为参数传递到其他函数以作为回调.由于函数与它们创建的对象绑定,因此必须使用[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象来创建回调.
 
@@ -978,7 +978,7 @@ function myFunction() {
 
 一个[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象将在它来自的对象的实例上调用一种方法,并保持对源对象的强烈引用.
 
-### Weak References
+### 弱引用
 
 run子C是*引用数*,这意味着运行时间系统将释放内存,当引用该内存的对象数量减少到零时.引用数允许内存非常快速获得,这在低内存环境中很重要.引用数的基普顿化是*圆形引用*.当引用链中形成循环时,循环引用发生.例如,想象对象C引用对象A,而对象A引用对象B *和*对象B引用对象A:
 
@@ -1010,7 +1010,7 @@ if (weakReference.stillAlive()) {
 
 记住只能在必要范围内保持强烈的参考!
 
-## Modules
+## 模块
 
 子C模块的目的类似于Java包,但可以包含变量,函数,类型和其他模块:
 
@@ -1030,7 +1030,7 @@ function myFunction() {
 
 常见的是,静态方法存在于模块层面,而不是属于特定类别.与类别不同,模块没有遗传或隐藏数据的概念 (模块不支持`extends`和`hidden`关键字).
 
-### Using Statements
+### Using 语句
 
 模块可以通过`using`关键字进口到另一个类或模块中,将模块扩展到它们定义的类或模块.
 
@@ -1054,7 +1054,7 @@ function myFunction() {
 
 一旦进口,一个模块内的所有类必须通过其母模块引用.
 
-## Scoping
+## 作用域
 
 子C是一个通过消息的语言.当调用函数时,虚拟机在运行时以以下顺序搜索一个等级来找到函数:
 
@@ -1073,7 +1073,7 @@ function myFunction() {
 7. 超级级级的母模块的公共静态成员到全球名称空间
 
 
-The code below illustrates:
+以下代码示例说明了：
 
 ```cpp
 using Toybox.System;

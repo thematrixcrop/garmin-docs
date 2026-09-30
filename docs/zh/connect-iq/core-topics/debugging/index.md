@@ -14,7 +14,7 @@ Connect IQ 有几种不同的方法来测试和调试您的应用：
 3. 使用命令行调试器 (`mdd`)
 
 
-## Basic Debugging
+## 基本调试
 
 测试Connect IQ应用程序的一种方法是将[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句包含在应用中的战略点上.在视觉工作室代码中,这些[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句将输出到控制台上.在设备上,[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句会写到设备文件系统中的`/GARMIN/APPS/LOGS`目录中的`<APPNAME>.TXT file`.
 
@@ -30,7 +30,7 @@ To begin debugging your application select *Run > Start Debugging*. 确保您已
 
 ![](/connect-iq/resources/programmers-guide/vscode-breakpoint.png)
 
-### Viewing Application Status
+### 查看应用状态
 
 当你的应用程序达到断点时,你可以在 * Run 和 Debug* 中检查运行时间状态. * 变量 * 视图允许你看到你的参数和本地,而 * 调用堆 * 允许你看到不同堆框架中的状态.
 
@@ -42,7 +42,7 @@ To begin debugging your application select *Run > Start Debugging*. 确保您已
 
 `mdd`是Monkey C命令行调试器.基于`gdb`的模型,`mdd`允许您加载执行式,设置断点,并检查堆框架,本地变量和全球环境.
 
-### Getting Started
+### 入门
 
 在开始之前,请启动模拟器:
 
@@ -95,7 +95,7 @@ Command name abbreviations are allowed if defined.
 Starting app: C:\Projects\ciq-apps\strava\bin\Strava.prg
 ```
 
-### Setting Breakpoints
+### 设置断点
 
 通过`break`命令,可以将分区分分配给文件/行对:
 
@@ -110,7 +110,7 @@ Hit breakpoint 1, initialize () at Thx.mc:1138
 (mdd)
 ```
 
-### Frame Information
+### 帧信息
 
 您可以使用`info frame`查询您目前的堆框架:
 
@@ -133,7 +133,7 @@ Stack level 0, frame at 0x10002120
 thx = null
 ```
 
-### Controlling Execution
+### 控制执行
 
 你可以使用`next`命令进入下一行:
 
@@ -153,11 +153,11 @@ thx = null
 (mdd) continue
 ```
 
-## Handling Crashes
+## 处理崩溃
 
 尽管最好的调试工作,但有时会发生崩.与Connect IQ相关的两种通用设备崩可能发生: *应用程序崩*和 *设备崩*.
 
-### App Crashes
+### 应用崩溃
 
 应用程序崩通常会导致应用程序意外放弃或显示"IQ!"图标,但不会导致整个设备崩或重新启动.这种崩通常是由于应用程序中的错误,尽管它也可能是由于Connect IQ本身的错误.每当应用程序崩发生时,设备上写出或更新一个`CIQ_LOG.YAML`文件,并包含应用程序开发人员可以用来解决该问题的崩相关的信息.
 
@@ -187,7 +187,7 @@ Stack:
 
 ** 注:** 在API级别3.0.0之前的设备中,将打印一个简单的错误日志为`CIQ_LOG.TXT`.
 
-### Device Crashes
+### 设备崩溃
 
 设备崩通常会导致设备重新启动或结.这些表明Connect IQ或设备固件错误,并且应该比应用程序崩少得多.当设备崩发生时,将`ERR_LOG.txt`文件写给`/GARMIN`在设备上,包含与崩相关的堆痕迹信息.请在我们的开发者论坛上报告崩时提供此文件.Garmin的设备团队可以查看设备崩日志来确定崩的原因,通常将在未来的固件发布中提供修复.
 

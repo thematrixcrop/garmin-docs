@@ -5,7 +5,7 @@ title: "Objects, Modules, and Memory"
 
 类允许数据和操作在对象上被绑定在一起.在子C中,变量,函数和其他类可以在类中定义.
 
-## Constructors
+## 构造函数
 
 当用`new`关键词实时化一个对象时,将内存分配到`initialize`方法:
 
@@ -39,7 +39,7 @@ class A
 
 要实现嵌套类的内部类,首先必须实现外部类.然而,与Java不同,子C中的嵌套类没有访问附加类的成员.
 
-## Inheritance
+## 继承
 
 子C使用`extends`关键字来支持类继承:
 
@@ -93,7 +93,7 @@ function usageSample() {
 }
 ```
 
-## Data Hiding
+## 数据隐藏
 
 班子成员有三级接入:`public`,`protected`和`private`.
 
@@ -140,7 +140,7 @@ function usageSample() {
 }
 ```
 
-## Polymorphism
+## 多态
 
 大多数对象导向语言都支持*多形函数*的概念,其中函数可以根据输入参数数量和类型具有多个定义.部分原因是由于它的型性质,子C不支持这种运行时间多形.
 
@@ -174,7 +174,7 @@ x = aPolymorphicFunction({
 
 这种模式是很好的,如果你想让一个API在未来扩展的空间.
 
-## Strong and Weak References
+## 强引用和弱引用
 
 run子C是引用数,这意味着运行时间系统将释放内存,当引用该内存的对象数量下降到零时.引用数允许内存非常快速可用,这在低内存环境中很重要.引用数的基普顿化是*圆形引用*.在引用链中形成一个周期时,循环引用发生.例如,想象对象C引用对象A,对象A引用对象B, *和*对象B引用对象A.
 
@@ -184,14 +184,14 @@ run子C是引用数,这意味着运行时间系统将释放内存,当引用该�
 现在C被邀请坐下一个酷孩子的桌子上,所以它放弃了A,所以它可以和真正的朋友一起.
 
 
-![Weak References](/connect-iq/resources/programmers-guide/weak-reference-2.png)
+![弱引用](/connect-iq/resources/programmers-guide/weak-reference-2.png)
 
 这形成了无处的循环通道.A和B的记忆应该在此点释放,但A和B都有一个参考数,因为它们相互引用.A和B所使用的记忆现在不适用于冷子表中的对象.
 
 有时B确实需要引用A.在这些情况下,你可以使用 *弱引用*.弱引用是保持引用对象的对象,但不会增加引用数量.这意味着对象引用可以被破坏,并且是一个应处理的情况.
 
 
-![Weak References](/connect-iq/resources/programmers-guide/weak-reference-3.png)
+![弱引用](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
 为了创建一个弱引用,你使用`weak()`方法. 弱是`Lang.Object`中的一种方法,可用于所有子C对象.
 
@@ -234,11 +234,11 @@ if( weakRef.stillAlive() ) {
 }
 ```
 
-### Handles and Heap Allocation
+### 句柄和堆分配
 
 从2.4.x版本开始,Connect IQ使用动态分配的堆积用于内存手柄.每个独特的对象都占据了一个内存手柄.对象引用没有独特的分配,只引用对象的内存手柄.Connect IQ的旧版本对设备定义的对象具有较小的静态限制.在任何版本中达到对象限制将导致运行时间错误.
 
-## Modules
+## 模块
 
 Monkey C 中的模块允许对类和函数进行作用域限定。 Unlike Java packages, Monkey C modules have many of the same properties as classes. You can have variables, functions, classes, and other modules at the module level:
 
@@ -259,7 +259,7 @@ function usageSample() {
 
 然而,与子C类不同,模块没有继承或隐藏数据的概念 (模块不支持`extends`,`private`和`protected`关键字).
 
-### Import and Using Statements
+### Import 和 Using 语句
 
 您可以使用`import`关键字将模块带入您的范围级别.使用`import`时,它将 *模块后音和模块中的所有类型带入类型命名空间.* 这使得模块中的类型可以访问而不用模块后音,从而更容易打字.函数调用仍然需要访问模块后音.
 
@@ -303,7 +303,7 @@ function foo() {
 
 `import`将模块名称和类名称带入命名空间,而`using`只将模块名称带入命名空间.如果你使用[Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types),你应该使用`import`独家,因为它将节省你很多冗余的模块引用.最后,`as`条款仅支持`using`语句.
 
-## Scoping
+## 作用域
 
 子C是一个通过消息的语言.当调用函数时,虚拟机在运行时进行搜索操作,以找到正在调用的函数.以下是它将搜索的等级:
 

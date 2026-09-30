@@ -5,7 +5,7 @@ title: "Unit 测试"
 
 连接智商SDK有 Run No Evil,这是测试模块中发现的自动化单元测试框架. Run No Evil仅在 Connect IQ模拟器内运行,并为您的应用程序提供添加断言和单元测试方法的能力.
 
-## Asserts
+## 断言
 
 断言是检查代码的关键点条件的有用方法,并且在模拟器中启动应用时将始终执行.例如,如果你的应用程序总是期望x和y的值不等:
 
@@ -38,7 +38,7 @@ ASSERTION FAILED: x and y are equal!
 | [Test.assertNotEqual()](/connect-iq/api-docs/Toybox/Test/#assertNotEqual-instance_function) |如果值1和值2不等等,则抛出例外|
 | [Test.assertNotEqualMessage()](/connect-iq/api-docs/Toybox/Test/#assertNotEqualMessage-instance_function) |如果值1和值2不等等,则会抛出一个例外并输出一个消息|
 
-## Unit Tests
+## 单元测试
 
 单元测试是检查您的应用程序的分别部分通过/失败标准的好方法.每个测试都是独立运行的,所以如果测试失败或导致崩,测试将被标记为失败的测试,下一次测试将自动执行.这允许使用单个命令自动运行整个测试组.
 

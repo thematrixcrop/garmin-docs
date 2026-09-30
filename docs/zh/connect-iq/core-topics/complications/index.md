@@ -11,18 +11,18 @@ Garmin 设备在用户佩戴时收集大量数据点。 Many of these data point
 
 最后，Face It 也将成为 Connect IQ 复杂功能的消费者。 This allows developers to create information that can be published on Face It watch faces.
 
-## Publishers and Subscribers
+## 发布者和订阅者
 
 
 ![](/connect-iq/resources/programmers-guide/complication_publishers_and_subscribers.png)
 
 复杂系统的核心是一个发布者/订阅者系统。 系统发布供订阅者消费的复杂数据。 Connect IQ device apps and audio content providers can publish complication data, but only watch faces can subscribe to complication information.
 
-### Complication Objects
+### Complication 对象
 
 数据作为[Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)对象发布.复杂性对象暴露以下信息:
 
-| Identifier |描述| API Level |
+| Identifier |描述| API 级别 |
 | --- | --- | --- |
 | [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) |发布的[Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)类型数据类型的唯一标识符| 4.2.0 |
 | [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) |长标签是用于配置菜单中显示的.| 4.2.0 |
@@ -33,12 +33,12 @@ Garmin 设备在用户佩戴时收集大量数据点。 Many of these data point
 
 您可以使用这些配件查询更多信息:
 
-| Method |描述| API Level |
+| Method |描述| API 级别 |
 | --- | --- | --- |
 | [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) |对于 Connect IQ 复杂性,请查询应用程序提供的图标| 4.2.0 |
 | [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) |对于本土的并发症,返回`COMPLICATION_TYPE`.将返回`COMPLICATION_TYPE_INVALID`连接智商并发症.| 4.2.0 |
 
-### Units
+### 单位
 
 复杂性允许在用户在系统设置中配置的单位中发布信息.在收到复杂性值时,用户的角色是将值转换为系统设置中指定的指标.
 
@@ -49,8 +49,8 @@ Garmin 设备在用户佩戴时收集大量数据点。 Many of these data point
 | [`Complications.UNIT_DISTANCE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters |
 | [`Complications.UNIT_ELEVATION`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters |
 | [`Complications.UNIT_HEIGHT`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters |
-| [`Complications.UNIT_SPEED`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters per second |
-| [`Complications.UNIT_TEMPERATURE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Degrees Celsius |
+| [`Complications.UNIT_SPEED`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 米/秒 |
+| [`Complications.UNIT_TEMPERATURE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 摄氏度 |
 | [`Complications.UNIT_WEIGHT`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Grams |
 
 ## 订阅复杂性
@@ -131,11 +131,11 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 如果您的复杂性发布器通过等待启动启动,则您的`state`字典参数将设置`:launchedFromComplication`选项为启动的复杂性 id.
 
-## Publishing Complications
+## 发布复杂功能
 
 如果您正在开发设备或音频内容提供者应用，可以向框架发布最多四个复杂功能。 To publish a complication 您需要 add the `ComplicationPublisher` permission to your manifest file.
 
-### Resources
+### 资源
 
 要发布复杂功能，您必须在资源中定义每个复杂功能：
 
@@ -161,7 +161,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 `complication`元素具有以下属性:
 
-| Attribute |描述| Required | API Level |
+| Attribute |描述| 必需 | API 级别 |
 | --- | --- | --- | --- |
 | `id` |在版本中保持这个值稳定.在版本之间更改这个值将会影响应用程序,当应用程序更新时消耗您的复杂性.| Yes | 4.2.0 |
 | `access` | `public`, `protected`, or `private` | Yes | 4.2.0 |
@@ -172,7 +172,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 通过使用`access`属性,您可以控制您的并发症是否只能通过开发者键,所有应用程序,以及面对它或以上所有应用程序看到:
 
-| Access | Your Apps | Face It | All Apps |
+| Access | 您的应用 | Face It | 所有应用 |
 | --- | --- | --- | --- |
 | `public` | X | X | X |
 | `protected` | X | X |  |
@@ -180,13 +180,13 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 要求的`faceIt`元素允许您提供面对它的信息:
 
-| Attribute |描述| Required | API Level |
+| Attribute |描述| 必需 | API 级别 |
 | --- | --- | --- | --- |
 | `defaultText` |这将在"面对它"中显示为复杂性的名称.| Yes | 4.2.0 |
 
 选择性`range`元素允许您提供一个顺序的数值集合,定义您的值的不同范围.
 
-## Publishing Values
+## 发布值
 
 一旦您的复杂性定义,您可以使用[Complications.updateComplication()](/connect-iq/api-docs/Toybox/Complications/#updateComplication-instance_function)函数发布数据:
 
@@ -211,17 +211,17 @@ var data = {
 Complications.updateComplication(0, data);
 ```
 
-## Face It Complications
+## Face It 复杂功能
 
 发布一个复杂性为`public`允许Face It整合您的复杂性.它将始终显示您的复杂性图标,并将使用以下规则显示您的复杂性值:
 
 |如果单位是...|...那么价值预计是...|...并将被显示为...|
 | --- | --- | --- |
-| `Complications.UNIT_*` type besides `Complications.UNIT_INVALID` |一个数值|从单位类型所定义的默认单元转换为适当单元缩写的系统单元的数值.|
-| String |一个数值|一个数字值,附带了字符串单位.|
+| 除 `Complications.UNIT_INVALID` 之外的 `Complications.UNIT_*` 类型 |一个数值|从单位类型所定义的默认单元转换为适当单元缩写的系统单元的数值.|
+| 字符串 |一个数值|一个数字值,附带了字符串单位.|
 |[`Complications.UNIT_INVALID`](/connect-iq/api-docs/Toybox/Complications/#Unit-module)或`null`|一个数值或字符串值|没有转换和没有任何单元附加的数值或字符串值将显示.|
 
-Some best practices:
+一些最佳实践：
 
 - 确保您的Face It图标具有高对比度,并且在移动中将在光和暗模式中显示得很好
 

@@ -1,19 +1,19 @@
 ---
 title: "Progress Bars"
 ---
-# Progress Bars
+# 进度条
 
 在您的应用程序需要做一些异步时,您应该提示用户需要等待的迹象.进步提供一个全页的体验,以传达进步.如果您没有已知的进步终点,您可以使用无限进步模式.
 
-Percent Progress:
+进度百分比：
 
 ![](/connect-iq/resources/ux-guide/progress-bars.png)
 
-Infinite Progress:
+无限进度：
 
 ![](/connect-iq/resources/ux-guide/infinite-progress.png)
 
-## Best Practices
+## 最佳实践
 
 - 如果用户想取消操作,提供后背行为.
 

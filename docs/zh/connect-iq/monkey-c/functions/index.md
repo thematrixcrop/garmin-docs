@@ -9,21 +9,21 @@ Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，�
 
 函数可以存在于类或模块中，也可以出现在全局模块中。
 
-## Variables, Expressions, and Operators
+## 变量、表达式和运算符
 
 子C支持的基本类型是:
 
--   **Integers** - 32-bit signed integers
+-   **整数** - 32 位有符号整数
 
--   **Floats** - 32-bit floating point numbers
+-   **浮点数** - 32 位浮点数
 
 - **长度**  64-64位签名整数
 
 - **双式**  64-64位浮点数字
 
--   **Booleans** - `true` and `false`
+-   **布尔值** - `true` 和 `false`
 
--   **Chars** - Unicode characters
+-   **字符** - Unicode 字符
 
 - **字符串**
 
@@ -34,13 +34,13 @@ Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，�
 - **词典** - 配套阵列,配合`{}`语法
 
 
-### Keywords
+### 关键字
 
 以下是子C编程语言的关键字列表.您不能在程序中使用以下任何变量或符号.关键字`native`和`alias`是保留的,尽管目前不使用.`true`,`false`,`null`,`NaN`,`new`,`and`和`or`可能看起来像关键字,但它们实际上是字体和运算符;您不能在程序中使用它们作为标识符.
 
 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签
 
-### Declaring Variables
+### 声明变量
 
 All local variables must be declared ahead of time using the `var` keyword. 在 Monkey C 语言中，所有值（包括数值）都是对象。
 
@@ -60,35 +60,35 @@ var z = arr[2] + x;         // Null pointer waiting to happen
 
 子C支持以下操作符:
 
-| Precedence | Operator | Description |
+| Precedence | Operator | 说明 |
 | --- | --- | --- |
 | 1 | `new` | creation |
-|  | `!` | logical NOT |
-|  | `~` | bitwise NOT |
-|  | `( )` | function invocation |
+|  | `!` | 逻辑 NOT |
+|  | `~` | 按位非 |
+|  | `( )` | 函数调用 |
 | 2 | `*` | multiplication |
 |  | `/` | division |
 |  | `%` | modulo |
-|  | `&` | bitwise AND |
-|  | `<<` | left shift |
-|  | `>>` | right shift |
+|  | `&` | 按位与 |
+|  | `<<` | 左移 |
+|  | `>>` | 右移 |
 | 3 | `+` | addition |
 |  | `-` | subtraction |
-|  | `|` | bitwise OR |
-|  | `^` | bitwise XOR |
-| 4 | `<` | less than |
-|  | `<=` | less than or equals |
-|  | `>` | greater than |
-|  | `>=` | greater than or equals |
+|  | `|` | 按位或 |
+|  | `^` | 按位异或 |
+| 4 | `<` | 小于 |
+|  | `<=` | 小于或等于 |
+|  | `>` | 大于 |
+|  | `>=` | 大于或等于 |
 |  | `==` | equals |
-|  | `!=` | not equals |
-| 5 | `&&` | logical AND |
+|  | `!=` | 不等于 |
+| 5 | `&&` | 逻辑 AND |
 |  | `and` |  |
-| 6 | `||` | logical OR |
+| 6 | `||` | 逻辑 OR |
 |  | `or` |  |
 | 7 | `?:` | conditional |
 
-### Symbols
+### 符号
 
 符号是轻量级的常数标识符.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为键或常数使用,而不明确声明一个 const或 enum:
 
@@ -106,7 +106,7 @@ Sys.println( a == c );  // Prints false
 var person = { :firstName=>"Bob", :lastName=>"Jones" };
 ```
 
-### Constants
+### 常量
 
 常量是以`const`关键字声明的不变值.这些值用于存储在代码中可重复使用的不变值.常量必须在模块或类级别上声明;它们不能在函数内声明.
 
@@ -118,7 +118,7 @@ const EAT_BANANAS = true;
 const BANANA_YELLOW = "#FFE135";
 ```
 
-### Enumerations
+### 枚举
 
 列表是从符号到整数的明确或自动增长常数映射.除非有明确的集合 (见第二例),否则每一个接下来的符号自动分配其前身加一个的值,从`0`开始.因此,在下面的例子中,星期一符号自动分配值`0`,星期二分配值`1`,等等.这些符号可以像常数变量一样使用 (这基本上是它们的).Enums必须在模块或类级级别上声明;它们不能在函数内声明.
 
@@ -142,7 +142,7 @@ enum {
 }
 ```
 
-### Calling Methods and Functions
+### 调用方法和函数
 
 要在自己的类或模块中调用方法,只需使用函数调用语法:
 
@@ -188,7 +188,7 @@ class B extends A
 
 ###如果声明
 
-`if` statements allow branch points in your code:
+`if` 语句允许在代码中设置分支点：
 
 ```java
 myInstance.methodToCall( parameter );
@@ -214,7 +214,7 @@ var result = a ? 1 : 2;
 - 非零的对象
 
 
-### Switch Statements
+### Switch 语句
 
 与`if`语句一样,`switch`语句也允许您的代码中的分支点.决定是否使用`if`语句或`switch`语句是基于可读性和语句正在测试的表达.
 
@@ -269,7 +269,7 @@ switch ( obj ) {
 
 一个`switch`语句也可以有一个单个可选的`default`语句,它不需要出现在`switch`语句末尾.`default`语句处理所有不是明确处理的物体.
 
-### Switch Block Variable Scoping
+### Switch 代码块变量作用域
 
 `switch`语句的体体被称为"开关区块".开关区块内声明的变量将在开关区块水平上进行范围检测.在一个案例区块的卷曲式支中定义的变量将在该代码区块水平检测范围检测.此外,由于发生的事件性质,在任何随后的`case`语句中使用之前,必须初始化开关区块水平上定义的所有变量.例如:
 
@@ -298,7 +298,7 @@ switch ( obj ) {
 }
 ```
 
-### Loops
+### 循环
 
 子C支持`for`循环,`while`循环和`do/while`循环.`while`和`do/while`循环具有熟悉的语法:
 
@@ -349,7 +349,7 @@ return expression;
 
 这个表达式是可选的.没有返回语句的函数自动返回最后操作的值.
 
-### Instanceof and Has
+### Instanceof 和 Has
 
 作为一个型语言,子C给程序员提供了很大的灵活性,但缺点是编译器无法执行C,C++或Java中的类型检查.子C提供了两个工具来执行运行时间类型检查`instanceof`和`has`.
 
@@ -381,7 +381,7 @@ else
 
 子C的对象导向设计模式与`has`和`instanceof`操作符结合,使得软件能够在一个代码库中实现许多设备的实现.
 
-## Callbacks
+## 回调
 
 子C中的函数不是第一类,这意味着您不能直接将它们作为对象用于其他函数.然而,使用从`Toybox.Lang.Object`继承的`method()`函数,一个类实例可以创建一个`Method`对象,这提供了一个方法来调用它作为回调方法.
 

@@ -1,17 +1,17 @@
 ---
 title: "Graphics"
 ---
-# Graphics
+# 图形
 
 图形模块处理将位地图,字体和形状绘制到设备屏幕上.
 
-## Drawing Context
+## 绘图上下文
 
 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象用于绘制图形表面.主要设备表面为查看对象方法[View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function),[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function),和 .可以使用[Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)和[Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)方法查询表面的大小.
 
-| Primitive or Operation | Draw | Fill | API Level | Notes |
+| 原语或操作 | Draw | Fill | API 级别 | 备注 |
 | --- | --- | --- | --- | --- |
-|设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
+|设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
 |设置笔宽度| [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
 |清除可拉的区域| N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
 |绘制一个位图| [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | NA | 1.0.0 |  |
@@ -31,25 +31,25 @@ title: "Graphics"
 
 采用[Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function)方法,可以为[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象设置剪辑区域.用于设置该区域,指定左上角坐标,宽度和高度.该区域以外的所有像素都不会受到任何绘图操作的影响.该区域内的像素将正常更新.[Dc.clearClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clearClip-instance_function)方法将删除剪辑区域.
 
-## Strings and Fonts
+## 字符串和字体
 
 文字可以使用[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)方法绘制.[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象还可用方法获取一个字体字符串的文字宽度和高度.请注意,在[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象之外的图形模块中也可使用文本尺寸方法.
 
-| Operation | Function | API Level |
+| Operation | Function | API 级别 |
 | --- | --- | --- |
 |绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
 |绘制一个角度的文本| [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
 |绘制一个弧线的文本| [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) | 4.2.2 |
 |获取一个字体字符串的宽度和高度| [Dc.getTextDimensions()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextDimensions-instance_function) | 1.0.0 |
 |获取一个字体字符串的宽度| [Dc.getTextWidthInPixels()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextWidthInPixels-instance_function) | 1.0.0 |
-|获取给定的字体的高度| [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function), [Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0, 1.2.0 |
+|获取给定的字体的高度| [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function)、[Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0, 1.2.0 |
 |获取给定的字体的升| [Graphics.getFontAscent()](/connect-iq/api-docs/Toybox/Graphics/#getFontAscent-instance_function) | 1.2.0 |
 |获取给定的字体的下降| [Graphics.getFontDescent()](/connect-iq/api-docs/Toybox/Graphics/#getFontDescent-instance_function) | 1.2.0 |
 |检索系统向量字体| [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) | 4.2.2 |
 
-### Scalable Fonts
+### 可缩放字体
 
-*Since API level 4.2.2*
+*自 API 级别 4.2.2*
 
 Garmin 设备的字体支持可以因设备而异.所有设备都支持单码位地图字体,但有些设备支持可扩展字体.如果设备支持可扩展字体,支持的字体将在[Device Reference](/connect-iq/device-reference/#device-reference)中发表为`Scalable Font`字体列表中.
 
@@ -57,9 +57,9 @@ Garmin 设备的字体支持可以因设备而异.所有设备都支持单码位
 
 可扩展字体与[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)工作,但也可以与[Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function)和[Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function)使用.这些API只支持可扩展字体,并且不支持作为资源加载的自定义字体.
 
-## Anti-Aliasing
+## 抗锯齿
 
-*Since API level 3.2.0*
+*自 API 级别 3.2.0*
 
 默认情况下,禁用对多边形和线程等原始的反位,但可以通过调用[Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function)启用.此方法在API级 3.2.0之前不存在,所以如果您的应用程序运行以3.2.0以下的API级设置,请确保使用`has`检查保护它.
 
@@ -72,16 +72,16 @@ function draw(dc) {
 }
 ```
 
-## Alpha Channels, Color, Fills, Stroke and Blend Modes
+## Alpha 通道、颜色、填充、描边和混合模式
 
-*Since API level 4.0.0*
+*自 API 级别 4.0.0*
 
 增添一些强大的新工具到[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/):
 
-| Function |目的| Accepts | API Level |
+| Function |目的| Accepts | API 级别 |
 | --- | --- | --- | --- |
-| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) |设置填充工具来绘制原始.| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
-| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) |设置笔工具来绘制原始| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) |设置填充工具来绘制原始.| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) |设置笔工具来绘制原始| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
 | [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) |设置绘图混合模式|  | 4.0.0 |
 
 之前,[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)API允许根据24位RRGGBB值设置前景或背景颜色.[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)和[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)都接受32位AARRGGBB值,允许您提供RGB值的阿尔法频道值.[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)API允许设置笔工具,而[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)设置填充工具.
@@ -90,33 +90,33 @@ You can also set the blend mode with [Dc.setBlendMode()](/connect-iq/api-docs/To
 
 除了颜色之外,现在还可以提供[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/). 这允许通过位图填写原始图,并开辟了许多新的绘图可能性.
 
-## Bitmaps
+## 位图
 
 通过[resource compiler](/connect-iq/core-topics/resources/#bitmaps)可以添加比特图资源到可执行的中文中.你可以使用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)在运行时加载比特图,并使用[Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function)或[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)将其转载到[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)调用屏幕上.
 
-### Transformation
+### 变换
 
-*Since API level 4.2.2*
+*自 API 级别 4.2.2*
 
 Connect IQ allows you to create two-dimensional affine transforms using the [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) class. [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 提供访问 the underlying transformation matrix and common operations like [rotation](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#rotate-instance_function), scaling and [shearing](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#shear-instance_function). To apply the transform, pass the [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) into [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) as the `:transform` argument in the options dictionary.
 
-### Tinting
+### 着色
 
-*Since API level 4.2.2*
+*自 API 级别 4.2.2*
 
 Sometimes you want the color of an asset, like an icon, to be user-definable. For example, you may want the complication icons on a watch face to match a user-defined theme color. One of the features of [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) is the ability to apply a tint color to an asset. The `:tintColor` option 可用于 specify a color to apply to a grayscale asset.
 
-### Graphics Pool
+### 图形池
 
-*Since API level 4.0.0*
+*自 API 级别 4.0.0*
 
 在 API 级别 4.0.0 之前,运行时加载的所有资源都进入了应用程序堆.该堆用于保留您的代码,数据,堆和运行时间对象,因此加载图像可以快速限制您的应用程序的运行时间功能. API 级别 4.0.0 引入了一个新的图形库,与应用程序堆分开.当您运行时加载一张位地图或字体时,资源将加载到图形库中,您将收回[Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/).图形库动态缓存,卸载和重新加载您的资源基于可用的内存.所有接受资源对象的原始图形也接受引用,因此您的应用程序不需要重新工作以利用新系统.
 
 在引用中调用[ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function)将返回资源对象.只要返回的对象在范围内,资源将被锁定在图形池中.
 
-### Buffered Bitmaps
+### 缓冲位图
 
-*Since API level 2.3.0*
+*自 API 级别 2.3.0*
 
 The [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) class 可用于 draw to surface other than the primary display surface. There are two options for creating a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object. The first is to generate one from a loaded bitmap resource. In this case, the provided bitmap is used as the drawing surface that is manipulated. The second option is to specify the width, and height of the surface, and optionally a color palette. If no color palette is specified, the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) will use the system colors, and will not have a palette. If a bitmap resource is provided to the initializer, the width, height, and palette parameters are ignored.
 
@@ -151,8 +151,8 @@ function bufferedBitmapFactory(options as {
 }
 ```
 
-Yes, really.
+没错，就是这样。
 
-Yes, really.
+没错，就是这样。
 
 我很高兴我不是那个[to come up with this](https://www.reddit.com/r/EngineeringStudents/comments/dl6hfz/to_all_my_fellow_civil_engineers_i_give_you_ed/)的人.

@@ -1,15 +1,15 @@
 ---
 title: "Prompts"
 ---
-# Prompts
+# 提示
 
 提示是用户的文本信息页面.提示可以是提供重要信息的有价值的工具.它可以包含有帮助的提示或信息,解释用户为什么无法执行特定行动.
 
-![Front views of devices displaying a prompt with no title](/connect-iq/resources/personality-library/personality_ui_prompts_no_titlehigh.jpg)
+![设备正面显示不带标题的提示](/connect-iq/resources/personality-library/personality_ui_prompts_no_titlehigh.jpg)
 
 提示通常是没有标题的页面,在短时间后自动消失.
 
-## Example
+## 示例
 
 ```xml
 <!-- layout.xml -->
@@ -31,11 +31,11 @@ title: "Prompts"
 
 ## 有文本标题的提示
 
-![Front views of devices displaying a prompt with a title](/connect-iq/resources/personality-library/personality_ui_prompts_with_titlehigh.jpg)
+![设备正面显示带标题的提示](/connect-iq/resources/personality-library/personality_ui_prompts_with_titlehigh.jpg)
 
 提示的文本标题提供了额外的文本.
 
-### Example
+### 示例
 
 ```xml
 <!-- layout.xml -->
@@ -64,11 +64,11 @@ title: "Prompts"
 
 ## 标签标题的提示
 
-![Front views of devices displaying a prompt with an icon](/connect-iq/resources/personality-library/personality_ui_prompts_with_iconhigh.jpg)
+![设备正面显示带图标的提示](/connect-iq/resources/personality-library/personality_ui_prompts_with_iconhigh.jpg)
 
 您可以使用图标代替文本标题,以更快地提供文本,或以更大的重点.
 
-### Example
+### 示例
 
 下面的示例将警告图标放在提示体文本上.
 

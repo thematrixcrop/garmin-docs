@@ -1,7 +1,7 @@
 ---
 title: "Data Fields"
 ---
-# Data Fields
+# 数据字段
 
 Garmin 活动通常向用户提供数据字段页面循环.在活动设置中,用户可以使用预定义的数据字段布局组分类页面.在每个分类中,用户可以分配一个与活动相关的指标的数据字段.
 
@@ -9,41 +9,41 @@ Garmin 活动通常向用户提供数据字段页面循环.在活动设置中,�
 
 处理直接的用户输入仅用于活动体验本身.您的数据场的输入应来自活动,传感器或配置.
 
-## Data Field Layouts
+## 数据字段布局
 
 在设计数据字段时,您不能假设用户会选择给您的数据字段一个全屏介绍.有些用户喜欢有一个或两个数据字段的多个页面,而其他人则会填充他们的数据页面满了信息.您的数据字段应该支持视觉填写一个完整的页面,同时在更小的介绍中提供总结视图.
 
-### Example
+### 示例
 
-One field layout:
+单字段布局：
 
-![One field layout](/connect-iq/resources/ux-guide/one-field-layout.png)
+![单字段布局](/connect-iq/resources/ux-guide/one-field-layout.png)
 
-Two field layout:
+双字段布局：
 
-![Two field layout](/connect-iq/resources/ux-guide/two-field-layout.png)
+![两字段布局](/connect-iq/resources/ux-guide/two-field-layout.png)
 
-Three field layout:
+三字段布局：
 
-![Three field layout](/connect-iq/resources/ux-guide/three-field-layout.png)
+![三字段布局](/connect-iq/resources/ux-guide/three-field-layout.png)
 
-Four field layout:
+四字段布局：
 
-![Four field layout](/connect-iq/resources/ux-guide/data-fields.png)
+![四字段布局](/connect-iq/resources/ux-guide/data-fields.png)
 
-### Obscurity
+### 隐蔽性
 
 根据用户在页面上放置数据场的位置,视觉区域的一部分可能会被屏幕的曲线掩盖.这可能会减少您的视觉区域,以减少标签或您的设计的其他元素.连接智商将通信,如果您的视觉区域的顶部,左侧,右侧或底部被曲线掩盖.基于此,您可以重新安排您的视觉布局以适应位置,例如将标签移动到底部,以给它们最多的视觉区域.
 
-![Obscurity example](/connect-iq/resources/ux-guide/obscurity-example.png)
+![遮挡示例](/connect-iq/resources/ux-guide/obscurity-example.png)
 
-## Settings
+## 设置
 
 数据字域不允许直接接收用户输入,但用户可以使用移动和设备设置来配置它们.移动设置允许用户修改一组应用程序属性.当应用程序发生变化时,您将被通知.
 
 在系统4及以上的设备上,Connect IQ数据字段可以在表面内内建一个可启动的配置流.数据字段设置可从活动设置菜单中的*Connect IQ设置*菜单项中获得.从设置中,可以推出流量并启用设置视图.
 
-## Alerts
+## 警报
 
 由于数据字段被放置在页面循环中,因此不保证在训练期间可见.如果您想向用户提醒事件,您可以将全页的警告推到屏幕上.该警告是不可接受的,或者会自动丢弃.
 
@@ -53,7 +53,7 @@ Four field layout:
 
 数据字段可以定义和记录一个活动文件中最多16个指标.这些指标可以作为活动的一部分,作为圈信息的一部分或作为总结信息的一部分记录到每秒一次.如果信息被记录为活动的一部分,则可以在Garmin Connect中显示为区域图.除了数据外,您还可以控制可翻译的标签,可翻译的指标名称和区域图的颜色.
 
-## Best Practices
+## 最佳实践
 
 - 如果您的数据字段显示出单个指标,则实现*SimpleDataField*将为您处理所有标签和布局逻辑.
 

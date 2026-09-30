@@ -1,15 +1,15 @@
 ---
 title: "Confirmations"
 ---
-# Confirmations
+# 确认
 
 确认要求用户对一个问题作出"是"或"不"的答案.确认通常仅仅是文本.确认是增加少量的摩擦到重要决策的有用方法,以确保用户理解它们的意义.
 
-![Front views of devices displaying a yes confirmation](/connect-iq/resources/personality-library/personality_ui_confirmationhigh.jpg)
+![设备正面显示“是”确认界面](/connect-iq/resources/personality-library/personality_ui_confirmationhigh.jpg)
 
 一个是/不是确认给用户提供了确认行动的机会.
 
-## Example
+## 示例
 
 下面的示例使用[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)来显示"是/否"确认.
 
@@ -27,13 +27,13 @@ WatchUi.pushView(
 );
 ```
 
-## Delete Confirmation
+## 删除确认
 
-![Front views of devices displaying a delete confirmation](/connect-iq/resources/personality-library/personality_ui_delete_confirmationhigh.jpg)
+![设备正面显示删除确认界面](/connect-iq/resources/personality-library/personality_ui_delete_confirmationhigh.jpg)
 
 删除确认要求用户确认是否想要删除一个项目.
 
-## Example
+## 示例
 
 [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)不支持删除确认,但您可以使用选择器构建自己的确认.
 

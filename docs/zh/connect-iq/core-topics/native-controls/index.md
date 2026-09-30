@@ -1,38 +1,38 @@
 ---
 title: "Native UI Controls"
 ---
-# Native UI Controls
+# 原生 UI 控件
 
 ![](/connect-iq/resources/programmers-guide/artsy-monkey.png)
 
 [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/)提供了一些本地插件来处理输入:
 
--   Menus
+-   菜单
 
--   Generic Picker
+-   通用选择器
 
--   Confirmation Dialog
+-   确认对话框
 
--   Progress Bar
+-   进度条
 
--   Page Loops
+-   页面循环
 
--   Toasts
+-   Toast 提示
 
--   Data Fields
+-   数据字段
 
--   Map Views
+-   地图视图
 
 
 Two additional handlers provided by [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 可用于 give feedback to the user: the confirmation dialog and progress dialog.
 
-## Menus
+## 菜单
 
 Menus are full screen lists of options for the user. Menus 可用于 present options or settings for the user to choose from.
 
 ### Menu2
 
-*Since API level 3.0.0*
+*自 API 级别 3.0.0*
 
 [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)系统允许复杂的菜单用户界面.[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)类包括新的功能,如图形标题,可动地更新的菜单项,以及检查框等额外的菜单元素. Menu2 系统包括多个新的类.让我们从新菜单元素中最简单的开始.
 
@@ -98,7 +98,7 @@ menuItem对象构造器采用了四个参数:`label`,`subLabel`,`identifier`和`
 
 图1. 标签和子标签的说明在 \`Menu2\`
 
-![Illustration of label and sub-labels in Menu2](/connect-iq/resources/programmers-guide/Menu2_labels.png)
+![Menu2 中标签和子标签的示例](/connect-iq/resources/programmers-guide/Menu2_labels.png)
 
 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)`identifier`是一个对象,通常是一个字符串,用于识别事件调用中`MenuItem`对象.有一个第四个参数是`Dictionary`的选项,可以是`null`.
 
@@ -115,7 +115,7 @@ WatchUi.Menu2InputDelegate
 
 查看与SDK共享的`Menu2Sample`样本应用.
 
-#### Menu2 XML Resources
+#### Menu2 XML 资源
 
 基本[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)可以在 XML 中定义为资源如下:
 
@@ -128,35 +128,35 @@ WatchUi.Menu2InputDelegate
 
 以下是定义为XML资源的[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)的属性和定义:
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
+| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
 | `title` |标签文本将作为标题显示|有效的[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)标识符,字符串资源或`String`| NA | optional |
-| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
+| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
 | `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | optional |
 | `theme` |菜单项的背景颜色|一个或"残疾人"| `WatchUi.MENU_THEME_DEFAULT` | optional |
-| `personality` |菜单的个性类|一个定义的人格类| NA | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `personality` |菜单的个性类|一个定义的人格类| NA | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 标签"通用1"的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)使用标签和子标签. "通用2"的项目仅使用标签.
 
 以下是定义为XML资源的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的属性和定义:
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
-| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
-| `subLabel` |显示的子标签文本| A valid string resource or `String` | NA |  |
-| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
+| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
+| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
+| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
 
 Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项目都可以以相同的方式创建和启动,但每个新的菜单项目都表现得独特.我们已经看到了基本的`MenuItem`类.我们谈谈使用其他时的具体细节.
 
-#### Icon Menu Item
+#### 图标菜单项
 
 [WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)类允许开发人员实现基于图标的菜单系统.[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)使用标签和子标签,但还包括一个标签和子标签文本的右或左边可显示的标签.
 
 图 2. 在 \`Menu2\`中 \`IconMenuItem\`的说明
 
-![Illustration of a \`IconMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/IconFigure.png)
+![Menu2 中的 \`IconMenuItem\` 示例](/connect-iq/resources/programmers-guide/IconFigure.png)
 
 以下是作为XML资源创建的`IconMenuItem`:
 
@@ -173,20 +173,20 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 
 以下是`<icon-menu-item>`可用的属性:
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<icon-menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
-| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
-| `subLabel` |显示的子标签文本| A valid string resource or `String` | NA |  |
-| `icon` |显示的图标| A valid drawable resource or custom drawable | NA | Required |
+| `id` |`<icon-menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
+| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
+| `icon` |显示的图标| 有效的可绘制资源或自定义可绘制对象 | NA | 必需 |
 
-#### Checkbox and Toggle Menu Items
+#### 复选框和切换菜单项
 
 [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)允许用户检查列表中的多个项目,并同时保存它们的状态 (即选择音乐内容的播放列表).[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)类是使用[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/)视图和[WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)扩展的类结合.
 
 图3. 在 \`Menu2\`中 \`CheckboxMenuItem\`的说明
 
-![Illustration of a \`CheckboxMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/CheckboxFigure.png)
+![Menu2 中的 \`CheckboxMenuItem\` 示例](/connect-iq/resources/programmers-guide/CheckboxFigure.png)
 
 开发人员使用XML定义[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)如下:
 
@@ -205,7 +205,7 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 
 图 4. 在 \`Menu2\`中 \`ToggleMenuItem\`的说明
 
-![Illustration of a \`ToggleMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/ToggleFigure.png)
+![Menu2 中的 \`ToggleMenuItem\` 示例](/connect-iq/resources/programmers-guide/ToggleFigure.png)
 
 您可以使用XML创建[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)作为资源:
 
@@ -222,29 +222,29 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 
 在名称和函数上,`<checkbox-menu-item>`和`<toggle-menu-item>`属性相同:
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的ID|任何以字符开始的字符串| NA | Required |
-| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
-| `subLabel` |当`checked`是`true`时显示的子标签文本| A valid string resource or `String` | NA |  |
-| `disabledSubLabel` |当`checked`是`false`时显示的子标签文本| A valid string resource or `String` | NA |  |
+| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的ID|任何以字符开始的字符串| NA | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
+| `subLabel` |当`checked`是`true`时显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
+| `disabledSubLabel` |当`checked`是`false`时显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
 | `checked` |`<toggle-menu-item>`或`<checkbox-menu-item>`的布尔状态|对于`:enabled`而言`true`,对于`disabled`而言`false`| `false` |值即使在 XML 中未定义,也会发生变化|
-| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
-| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | Optional |
+| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
+| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
 
 `checked`属性自动创建为 一个 或对象的一部分,并且不需要在 XML 中定义.如果它不是在 XML 中定义的,那么它将默认为`false`.
 
 对于使用图形元素如转换器和检查框的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/),开发人员可以选择将元素对齐到[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)标签的左或右边.如果未定义,则元素将被对齐到右边,如上面的`defaultAlign`转换菜单中所看到的.使用一个具有所需的 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*\`值的`<param>`标签来设置图标,检查和转换器的对齐.开发人员还可以明确使用 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_RIGHT\`值对齐到右边.
 
-### Action Menus
+### 操作菜单
 
-*Since API level 3.4.0*
+*自 API 级别 3.4.0*
 
 动作视图是提供信息和提供文本中的动作菜单的屏幕.这些动作可能是可在可见信息上执行的下一步或任务.
 
 查看[WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function)API和个性图书馆的行动视图章.
 
-### Original Menu API
+### 原始菜单 API
 
 [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)是为用户提供选项列表的旧API.选项显示在匹配应用程序运行的设备的列表中.在资源XML文件中可以定义菜单,使用以下格式:
 
@@ -275,13 +275,13 @@ class MyMenuDelegate extends WatchUi.MenuInputDelegate {
 }
 ```
 
-## Generic Picker
+## 通用选择器
 
 [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)类,以及[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)和[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)类,提供了应用程序在屏幕上创建用户可选择的对象列表的能力.选手包括一个或多个对象,标题,下一个和上一个箭头,以及确认按.下一个和上一个箭头和确认按是设备特定的,但可以在需要时重写.选手使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)推送,为输入代表提供[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/).一个[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)是要求指示每个可选的值显示的.
 
-### User Interface
+### 用户界面
 
-![Main components of a generic picker layout](/connect-iq/resources/programmers-guide/picker-layout.png)
+![通用选择器布局的主要组件](/connect-iq/resources/programmers-guide/picker-layout.png)
 
 上面的图像是对选号机在方形屏幕上应该看起来像什么的一般结构的表示.其他屏幕格式应该具有相同的布局,有一些尺寸差异,以考虑屏幕和按布局.
 
@@ -298,33 +298,33 @@ class MyMenuDelegate extends WatchUi.MenuInputDelegate {
 
 查看与SDK共享的`Picker`样本应用.
 
-## Confirmation Dialog
+## 确认对话框
 
 [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)和[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)提供了一个简单的是/否对话.
 
 查看SDK共享的`ConfirmationDialog`样本应用程序,以及个性图书馆的确认部分.
 
-## Progress Bar
+## 进度条
 
 进步对话框提供了标准的等待对话框.它有两个模式,一个显示了某个过程的完成,第二个显示了无限量的进步的等待计时器.进步的外观和感觉将是设备特定的.
 
 查看 SDK 配备的`ProgressBar`样本应用程序和个性图书馆的进步条节.
 
-# Page Loops
+# 页面循环
 
 页面循环是视图的轮.当用户在页面循环中时,用户界面会呈现一组信息页面,为用户提供不同的数据和见解.进入下一个和上一个页面的标准行为.从最后页面前进通常将用户返回第一页.
 
 查看[WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)API和个性库页面循环部分.
 
-## Toasts
+## Toast
 
-*Since API level 3.4.0*
+*自 API 级别 3.4.0*
 
 乾杯是部分屏幕横幅,有文本和可选的图标.用户无法与它们互动,并且它们在短时间后会被驳回.乾杯是为用户告知异步事件而不会破坏他们目前正在做的事情而有用的.
 
 查看[WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function)API和个性图书馆的吐司部分.
 
-## Data Field
+## 数据字段
 
 数据字段作为加密器活动体验的插件.用户在从商店安装数据字段后,可以在其活动页面内放置它们.
 
@@ -347,15 +347,15 @@ class DataFieldDelegate extends Ui.InputDelegate {
 }
 ```
 
-### Alerts
+### 警报
 
-*Since API level 3.2.0*
+*自 API 级别 3.2.0*
 
 当您希望您的数据字段通知用户特定事件时,您可以按一个扩展[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)的视图.[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)是[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)的一个特殊实例,可以用[DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function)呈现给用户.警报不会接受输入,并且将在标准警报期后停机.用户需要在训练警报设置中启用您的应用程序的警报.
 
-## Mapping
+## 映射
 
-*Since API level 3.0.0*
+*自 API 级别 3.0.0*
 
 连接智商使开发人员能够将内载地图图的产品嵌入地图视图应用程序中.地图绘制可以通过两种方式访问:[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)和[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/).
 
@@ -409,13 +409,13 @@ MapViews允许开发人员在顶部叠加UI项目.有时你希望整个屏幕具
 
 图5.地图区与屏幕区之间的关系的说明
 
-![Illustration of relationship between Map Area and the Screen Area](/connect-iq/resources/programmers-guide/MappingDiagram.png)
+![地图区域与屏幕区域之间关系的示例](/connect-iq/resources/programmers-guide/MappingDiagram.png)
 
 MapView.setMapMode()
 
 这个调用设置地图模式为`MAP_MODE_*`enum值之一.
 
-MapViews and MapTrackViews have two modes:
+MapView 和 MapTrackView 有两种模式：
 
 - **预览:** 用`MAP_MODE_PREVIEW`enum值选择. 这允许在屏幕上染一个不动地图.
 
@@ -428,7 +428,7 @@ MapTrackView在所有方面都与MapView相似,除了一个.MapTrackView将动�
 
 查看与SDK共享的`MapSample`样本应用.
 
-### Mapping Artifacts
+### 映射伪影
 
 图可以添加语境与你的内容,但只有如果你能把它们结合在一起.幸运的是,不仅可以访问原生地图,你也可以从它们中绘制!子C有两个新的对象与图表互动:[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)和[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/).
 
@@ -568,19 +568,19 @@ markers.add(defaultMarker);
 MapView.setMapMarker(markers);
 ```
 
-### Simulating Maps
+### 模拟地图
 
 在模拟器中的地图工作时,Connect IQ使用网络API来检索地图图图像,模拟设备上的行为.模拟器和设备上映射覆盖范围因设备上映射而异.以下是模拟器的详细覆盖地图:
 
--   **Green:** Low detail
+-   **绿色：低细节**
 
--   **Blue:** Medium detail
+-   **蓝色：中等细节**
 
--   **Red:** High detail
+-   **红色：高细节**
 
 
 图6. 在Connect IQ模拟器上可用的详细地图
 
-![Detail map coverage guide for the Connect IQ Simulator](/connect-iq/resources/programmers-guide/MapCoverage.png)
+![Connect IQ 模拟器的详细地图覆盖范围指南](/connect-iq/resources/programmers-guide/MapCoverage.png)
 
 目前,图形标题仅通过在`Menu2`中编程创建`MenuItem`元素来支持.将标题定义为可绘制资源将导致编译器错误.

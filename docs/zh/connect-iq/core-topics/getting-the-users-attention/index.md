@@ -5,14 +5,14 @@ title: "Getting the User's Attention"
 
 Your app may need to request the user's attention at certain times. Connect IQ offers ways to do this via the [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module. The [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块提供 access to the vibration motor, tone generator, screen backlight and flashlight.
 
-| API |描述| API Level |
+| API |描述| API 级别 |
 | --- | --- | --- |
 | [Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function) |控制显示屏后光| 1.0.0 |
 | [Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function) |控制显示屏后光| 1.0.0 |
 | [Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) |通过调子生成器播放音调| 1.0.0 |
 | [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) |使用振动机| 1.0.0 |
 
-## Backlight
+## 背光
 
 Garmin设备的后光行为取决于显示技术. *反射式*显示器如内存像素 (MIP) 通常保持后光 typ灭节能.用户有选择让后光启用按触摸和手势等不同的操作.这些操作将根据用户设置自动由系统处理.
 
@@ -22,15 +22,15 @@ Garmin设备的后光行为取决于显示技术. *反射式*显示器如内存�
 
 请注意,长期保持AMOLED显示器在全亮度上可能会损坏显示器.如果系统发现开发人员试图这样做,则会提出例外.后照明,特别是AMOLED设备,不应该作为手筒.在这些情况下,您可以使用[flashlight](#flashlight)API.
 
-## Flashlight
+## 手电筒
 
 fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
--   Off, on or blink patterns
+-   关闭、开启或闪烁模式
 
--   Different brightness levels
+-   不同的亮度级别
 
--   Different colors
+-   不同的颜色
 
 
 [Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function)API允许开发人员控制设备的手筒:
@@ -46,7 +46,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `mode`是以下可能性的数量:
 
-|值|描述| API Level |
+|值|描述| API 级别 |
 | --- | --- | --- |
 | \`FLASHLIGHT\_MODE\_OFF\`odule) |关掉手灯| 4.2.0 |
 | \`FLASHLIGHT\_MODE\_ON\`odule) |点灯| 4.2.0 |
@@ -56,7 +56,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 选择`:brightness`接受以下值:
 
-|值|描述| API Level |
+|值|描述| API 级别 |
 | --- | --- | --- |
 | 0 to 100 |设置亮度从0到100%| 4.2.0 |
 | \`FLASHLIGHT\_BRIGHTNESS\_LOW\`odule) |设置亮度为设备低设置| 4.2.0 |
@@ -65,7 +65,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `:strobeMode`可以设置为以下:
 
-|值|描述| API Level |
+|值|描述| API 级别 |
 | --- | --- | --- |
 | \`FLASHLIGHT\_STROBE\_MODE\_BLINK\`odule) |设置横幅为`-- -- -- --`模式| 4.2.0 |
 | \`FLASHLIGHT\_STROBE\_MODE\_PULSE\`odule) |设置横幅为`=-_ =-_ =-_ =-_`模式| 4.2.0 |
@@ -73,7 +73,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `:strobeSpeed`可以设置为以下:
 
-|值|描述| API Level |
+|值|描述| API 级别 |
 | --- | --- | --- |
 | \`FLASHLIGHT\_STROBE\_SPEED\_SLOW\`odule) |使用缓慢的静音模式| 4.2.0 |
 | \`FLASHLIGHT\_STROBE\_SPEED\_MEDIUM\`odule) |使用中度光谱模式| 4.2.0 |
@@ -81,16 +81,16 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 基于输入的[Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function)API返回以下内容:
 
-|值|描述| API Level |
+|值|描述| API 级别 |
 | --- | --- | --- |
-| \`FLASHLIGHT\_RESULT\_SUCCESS\`odule) | Flashlight mode was set successfully | 4.2.0 |
+| \`FLASHLIGHT\_RESULT\_SUCCESS\`odule) | 手电筒模式设置成功 | 4.2.0 |
 | \`FLASHLIGHT\_RESULT\_INVALID\_COLOR\`odule) |无法设置闪光灯模式,因为指定了无效的颜色| 4.2.0 |
 | \`FLASHLIGHT\_RESULT\_INVALID\_BRIGHTNESS\`odule) |闪电模式无法设置,因为亮度不支持| 4.2.0 |
 | \`FLASHLIGHT\_RESULT\_MODE\`odule) |无法设置闪光灯模式,因为该模式不支持| 4.2.0 |
 | \`FLASHLIGHT\_RESULT\_SPEED\`odule) |闪光灯模式无法设置,因为光谱速度不支持| 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_FAILURE\`odule) | Flashlight mode could not be set | 4.2.0 |
+| \`FLASHLIGHT\_RESULT\_FAILURE\`odule) | 无法设置手电筒模式 | 4.2.0 |
 
-## Tones
+## 音调
 
 Garmin devices often use audible tones for different events. The [Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) API 提供访问 the tone generator:
 
@@ -103,7 +103,7 @@ Garmin devices often use audible tones for different events. The [Attention.play
 
 如果您想播放一个自定义的音调,您可以将一组[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)对象传递到`:toneProfile`选项.[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)允许您设置每个音符的频率和持续时间.
 
-## Vibration
+## 振动
 
 The vibration motor 可用于 inform the user that an event that needs their attention is occurring. You can engage the vibration motor with the [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) API:
 
@@ -115,4 +115,4 @@ function vibrate(vibeProfiles as Array<VibeProfile>) as Void
 
 在未来更新中可能会出现`FLASHLIGHT_STROBE_MODE_FUNKADELIC`.
 
-Could also be defined as `☀🔆🌥 ☀🔆🌥 ☀🔆🌥` .
+也可以定义为 `☀🔆🌥 ☀🔆🌥 ☀🔆🌥` 。

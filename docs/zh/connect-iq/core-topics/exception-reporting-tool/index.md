@@ -1,15 +1,15 @@
 ---
 title: "Error Reporting Application (ERA)"
 ---
-# Error Reporting Application (ERA)
+# 错误报告应用程序（ERA）
 
 The ERA tool 可用于 view your app's crashes after it has been released on the store. If your app crashes on a device the error report will be collected and aggregated by the ERA server. These reports can be viewed for up to 30 days after a crash occurs. This tool is available in the bin folder of the SDK.
 
-## Getting Started
+## 入门
 
 要启动图形ERA工具,要么从视觉工作室代码的命令中运行*Monkey C:Start ERA Viewer*命令,要么使用[Command Line](#Command-Line).第一次运行工具时,会出现*登录提示*窗口,要求您登录开发者帐户.一旦您完成登录过程,应用程序列表将下载,应用程序选择列表将填满.
 
-### Command Line
+### 命令行
 
 您可以从命令行启动 Graphical ERA 工具,只需运行`java -jar era.jar`在当前SDK的**bin**文件中.
 
@@ -22,18 +22,18 @@ ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通�
 | Argument | Definition |
 | --- | --- |
 | `-a <arg>` |应用程序将 UUID 检索到  的故障|
-| `-h` | Prints help text |
+| `-h` | 输出帮助文本 |
 
-## Viewing App Settings
+## 查看应用设置
 
 ![](/connect-iq/resources/programmers-guide/era_manage_apps.png)
 
 管理应用程序窗口允许您查看与您的开发者帐户相关的应用程序.您可以在菜单中选择**设置>管理应用程序** 启动此窗口.应用程序列表是颜色编码的,以便轻松识别应用程序的状态.
 
-| Font Style | App Status | Crashes Viewable |
+| 字体样式 | 应用状态 | 可查看的崩溃 |
 | --- | --- | --- |
-| Normal | Released app | Yes |
-| Gold | Beta app | Yes |
+| Normal | 已发布的应用 | Yes |
+| Gold | Beta 应用 | Yes |
 | Strikethrough |应用程序隐藏| No |
 
 在此窗口中,您可以重新排列应用程序并改变应用程序的设置.为了重新排列应用程序,单击应用程序并单击****或****按.该窗口中的应用程序的排列反映在崩盘报告视图中的应用程序选择框中.为了更改应用程序的设置,请选择应用程序在列表中,单击**i**按.
@@ -42,14 +42,14 @@ ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通�
 
 在应用程序设置窗口中,您可以隐藏应用程序在崩报告视图中的下拉框中.如果选出**隐藏这个应用程序**框,则该应用程序将不会显示在崩报告视图应用程序列表中.
 
-## Viewing Crash Reports
+## 查看崩溃报告
 
 ![](/connect-iq/resources/programmers-guide/era_report_view.png)
 
 The crash report view allows you to view all uploaded crash reports for an app in the last 30 days. At the top of this window you can select which app's crash reports to view. After selecting an app the latest reports will be downloaded from the server. In the left pane of the window a list of crash reports will be shown. Each unique crash will be identified by file name, function, and line number where the crash occurred. Choosing a crash in the left pane causes the details for the crash to be shown in the right pane. At the top of the right pane the **Fixed** checkbox 可用于 indicate that this particular crash has been fixed. The fixed status will persist across application runs and SDK upgrades. You can change the sort order of the crash reports you are viewing by changing the value in the **Sort By** selector.
 
-| Font Style | Crash Status |
+| 字体样式 | 崩溃状态 |
 | --- | --- |
-| Normal | Crash has been viewed. |
-| Bold | Crash has not been viewed. |
-| Strikethrough | Crash has been marked as fixed. |
+| Normal | 崩溃已查看。 |
+| Bold | 崩溃尚未查看。 |
+| Strikethrough | 崩溃已标记为已修复。 |

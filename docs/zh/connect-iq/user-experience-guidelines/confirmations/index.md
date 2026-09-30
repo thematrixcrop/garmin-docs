@@ -1,13 +1,13 @@
 ---
 title: "Confirmations"
 ---
-# Confirmations
+# 确认
 
 确认提供了向用户提出问题并获得"是"或"否"的答案的能力.确认通常只用文字来回答积极或负面.这些都是试图在大决策周围添加微小摩擦时有用的.
 
 ![](/connect-iq/resources/ux-guide/confirmations.png)
 
-## Best Practices
+## 最佳实践
 
 - 确认给体验增加摩擦,所以只在摩擦必要时使用它们.如果不必要,不要打断用户.
 

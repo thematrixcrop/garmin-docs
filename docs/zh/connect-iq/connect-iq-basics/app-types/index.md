@@ -18,11 +18,11 @@ title: "App Types"
 -[Audio Content Providers](#audio-content-providers)- 音频内容提供商是音乐支持的可穿戴设备上的媒体播放器的插件,它们提供了媒体和第三方内容服务之间的桥梁.
 
 
-## APIs and App Types
+## API 和应用类型
 
 应用程序类型定义了应用程序的用户背景.例如,表格面具备许多限制,因为它们在低功率模式下运行.为了执行这些限制,Connect IQ虚拟机将根据应用程序类型限制您的可用API.
 
-| Module Name | Data Field | Watch Face | Widget | App | Audio Content Provider | API Level |
+| 模块名称 | 数据字段 | 表盘 | Widget | App | 音频内容提供程序 | API 级别 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Toybox.Activity](/connect-iq/api-docs/Toybox/Activity/) | ✓ |  |  | ✓ | ✓ | 1.0.0 |
 | [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/)\* | ✓ | ✓ | ✓ | ✓ | ✓ | 1.0.0 |
@@ -60,13 +60,13 @@ title: "App Types"
 | [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) | ✓ | ✓ | ✓ | ✓ | ✓ | 1.0.0 |
 | [Toybox.Weather](/connect-iq/api-docs/Toybox/Weather/) | ✓ | ✓ | ✓ | ✓ | ✓ | 3.2.0 |
 
-*\* Requires app permission*
+*\* 需要应用权限*
 
-*\*\* Communications support in data field introduced in API level 5.0.0*
+*\*\* API 级别 5.0.0 引入数据字段中的通信支持*
 
 对于您的应用程序类型而要求的玩具盒模块将导致 *Symbol Not Found* 错误.
 
-## Watch Faces
+## 表盘
 
 腕表面孔是一种特殊的应用类型,在Garmin的可穿戴设备的主屏幕上显示.这些应用类型是有限的,以允许它们对设备的电池寿命产生最小影响.
 
@@ -76,23 +76,23 @@ title: "App Types"
 
 如果您使用定制字体用于数字显示,请使用过选项仅将关键字体加载. 这将节省您可以用于额外的图形
 
-### Watch Face Sleep
+### 表盘休眠
 
 在此模式下,手表面部大部分时间都在"睡眠模式"中,执行时间仅限于每分钟一次更新,不能使用计时器或动画.当用户抬起手表看时,手表面部会退出睡眠模式.此时,调用[WatchFace.onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function)方法,更新将每秒增加到一次,直到调用[WatchFace.onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function)方法之前允许计时器和动画.
 
-### Watch Face Delegate
+### 表盘委托
 
-*Since API Level 2.3.0*
+*自 API 级别 2.3.0*
 
 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)提供系统的输入来观看面孔.该代表应作为从[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)返回的阵列的第二个元素,类似于其他应用类型的输入代表.目前仅用于报告每次更新支持的表表表面的电源预算违规.如果执行预算超过一分钟,则将调用[WatchFaceDelegate.onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function)回调,提供有关表表面的执行时间和超越的限制的信息.
 
-## Data Fields
+## 数据字段
 
 动态数据字段允许客户和第三方开发人员编写额外的指标和数据,这些数据将与Garmin的活动显示.目标是创建一个系统,不仅让用户根据我们的训练数据轻松地创建一个快速的数据字段,还让开发人员能够定制演示.
 
 数据字段可以在设备上已经支持的活动中显示.它们是通过对已记录的数据进行计算来向用户提供新指标的绝佳方法. 数据字段是已存在的活动中集成的,因此最好它们与设备上原生数据字段使用的字体和格式出现.因此,简单的布局是最好的,因为它将确保您的数据字段将具有相同的原生外观,并将适合所有数据屏幕布局进行扩展.如果你想定制数据字段,例如,通过插入位地图而不是数字值,你需要确保您的定制字段在一个字段,两个字段,三个字段和其他布局之间适当扩展.
 
-### Data Fields and Simple Data Fields
+### 数据字段和简单数据字段
 
 数据字段的基类是[WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/). 这个类扩展到[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/),并且在许多方面与其他查看对象类似.每次数据字段需要更新时都会进行[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)方法调用.
 
@@ -131,7 +131,7 @@ class BeersEarned extends Application.AppBase
 
 在模拟器中测试您的数据场,通过点击 *模拟*菜单,输送数据场模拟数据,然后选择 *FIT数据*然后 *模拟*. 这将生成随机但有效的数据.您还可以使用 *模拟* > *FIT数据* > *播放文件...*使用预记录的FIT文件模拟训练.
 
-## Widgets
+## 小组件
 
 工具是微软应用程序,允许开发人员提供可见的信息视图.信息可能来自云服务,内载传感器或其他Connect IQ API. 工具可从可穿戴设备主屏幕上可访问的旋转页面中启动,或从自行车计算机和户外手持式设备的侧视图中启动.与应用程序不同,工具在停机期间后会停机,并且不允许记录活动,但它们也可以随时启动.
 
@@ -143,9 +143,9 @@ class BeersEarned extends Application.AppBase
 
 预期在 widget 循环中的所有视图是系统菜单显示用户执行菜单行为时.对于 widget,系统菜单上的第一个项目将是查看 widget 的菜单选项.当用户进行选择时,将调用 widget 的[BehaviorDelegate.onMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onMenu-instance_function).
 
-### Glances
+### 快览
 
-*Since API Level 3.1.0*
+*自 API 级别 3.1.0*
 
 Fenix 6 将可查看的信息从页面轮介绍转移到列表介绍.每个项目提供了一个小区域的房地产显示信息.如果用户选择它,完整的小程序将启动.在这个背景下启动时,小程序基础视图没有定期应用输入限制.
 
@@ -159,7 +159,7 @@ See the [Glance](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
 如果用户执行一种行为 (按起按,触摸屏幕) 表示他们想要更多信息,则您的小工具应该推出一个视图,允许通过提供的信息导航.
 
-## Device Apps
+## 设备应用
 
 设备应用程序是迄今为止最强大的应用程序类型.这些应用程序允许应用程序设计师进行最多的灵活性和定制.它们还提供最多的访问可穿戴设备的功能,例如访问ANT+传感器,加速器和阅读/录制FIT文件.
 
@@ -171,13 +171,13 @@ See the [Glance](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
 当你的应用程序向用户展示大量文本时,试着把信息放在屏幕中心.在圆屏幕上,屏幕的顶部和底部提供有限的视觉区域.使用顶部进行文本标题,滚动箭头和其他小信息提示.
 
-## Audio Content Providers
+## 音频内容提供商
 
 Garmin 媒体支持的设备是为活跃的生活方式用户设计的,他们希望在骑行,跑步或其他活动中不携带手机来听音乐.
 
 音频内容提供商作为媒体播放器的插件.这些应用程序作为音乐服务和Garmin媒体播放器之间的桥梁.音频内容提供商允许用户从内容提供商中选择内容,通过Wi-Fi同步内容到设备,并听到它
 
-These apps have three contexts:
+这些应用有三个上下文：
 
 1.播放配置:允许用户从他们同步的内容中选择他们想听的内容
 
@@ -192,7 +192,7 @@ These apps have three contexts:
 | --- | --- |
 | [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) |获取[Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)用于系统使用,以通过设备上的媒体内容进行代.|
 | [AudioContentProviderApp.getPlaybackConfigurationView()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getPlaybackConfigurationView-instance_function) |获取配置播放的初始视图. 媒体播放器启动时,这是主要的视图.|
-| [AudioContentProviderApp.getProviderIconInfo()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getProviderIconInfo-instance_function) | Get audio provider icon information. |
+| [AudioContentProviderApp.getProviderIconInfo()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getProviderIconInfo-instance_function) | 获取音频提供商图标信息。 |
 | [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) |获取一个[Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)对象,将同步状态传达到系统中,以便将媒体内容同步到设备中.|
 
 同步配置已被废除. 我们建议用户提供一个机制来下载在播放配置内部的内容.

@@ -1,9 +1,9 @@
 ---
 title: "Intents"
 ---
-# Intents
+# 意图
 
-*Since API level 2.2.0*
+*自 API 级别 2.2.0*
 
 意图允许Connect IQ手表应用程序或小工具通过调用[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)来启动另一个Connect IQ手表应用程序,Connect IQ小程序或本地应用程序 (例如,在运行,自行车等活动中内置)
 
@@ -33,7 +33,7 @@ System.exitTo(intent);
 
 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) objects to launch native apps deal exclusively with [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) objects, such as [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/), [PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), and [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/). Connect IQ handles most of the [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) functionality for native apps behind the scenes, automatically embedding the appropriate native app identifier in the [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) object, which is accessible via the `toIntent()` method. See the [Persisted Content](/connect-iq/core-topics/downloading-content/#persisted-content-in-the-simulator) section 更多信息.
 
-## Intent Exceptions
+## Intent 异常
 
 连接智商包括三个与意图相关的例外类型:
 

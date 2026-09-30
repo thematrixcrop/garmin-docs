@@ -1,9 +1,9 @@
 ---
 title: "Your First Connect IQ App"
 ---
-# Your First Connect IQ App
+# 您的第一个 Connect IQ 应用
 
-## Creating Your First Project
+## 创建您的第一个项目
 
 First 您需要 create your new project:
 
@@ -78,7 +78,7 @@ manifest.xml
 
 1. 点击"文件"菜单
 
-2.  Select *Open Folder...*
+2.  选择 *Open Folder...*
 
 3. 浏览下载的SDK`samples`文件,然后选择输入样本的根目录
 
@@ -89,7 +89,7 @@ manifest.xml
 
 子C扩展提供了一个助手来帮助开发人员加载一个应用程序.助手将创建选定的项目的执行式 (PRG).以下是如何使用它:
 
-1.  Plug your device into your computer
+1.  将设备连接到计算机
 
 2. 使用 *Ctrl + Shift + P* (*Mac上命令 + Shift + P*) 调用命令
 

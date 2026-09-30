@@ -11,7 +11,7 @@ title: "Mobile SDK for iOS"
 
 移动SDK用于iOS作为iOS框架包分布,可在[Garmin GitHub repo for Connect IQ Mobile SDK](https://github.com/garmin/connectiq-companion-app-sdk-ios)上找到.
 
-![Adding a framework to the iOS project](/connect-iq/resources/programmers-guide/ios-image1.png)
+![将框架添加到 iOS 项目](/connect-iq/resources/programmers-guide/ios-image1.png)
 
 在搜索框中输入"https://github.com/garmin/connectiq-companion-app-sdk-ios"![](/connect-iq/resources/programmers-guide/ios-image2.png)
 
@@ -19,33 +19,33 @@ title: "Mobile SDK for iOS"
 
 为了允许一个项目使用移动 SDK 构建,将框架嵌入为每个项目的目标的二进制,通过对每个目标的框点击并点击`Add Package`.
 
-![Embedding the framework as a binary](/connect-iq/resources/programmers-guide/ios-image3.png)
+![将框架嵌入为二进制文件](/connect-iq/resources/programmers-guide/ios-image3.png)
 
-#### Add required linker flags
+#### 添加必需的链接器标志
 
 移动SDK用于iOS内部使用类别方法.在使用类别方法的库中,必须指定一个额外的旗,以允许库正确链接.为了这样做,将`–ObjC`旗添加到`Target > Build Settings > Linking > Other Linker Flags`设置中.
 
-![Setting the linker flags for the target](/connect-iq/resources/programmers-guide/ios-image4.png)
+![为目标设置链接器标志](/connect-iq/resources/programmers-guide/ios-image4.png)
 
 #####注册一个URL方案
 
 Unlike the Mobile SDK for Android, apps created with the Mobile SDK for iOS are standalone apps and do not directly rely on Garmin Connect Mobile (GCM) to communicate with a wearable device. They do, however, require GCM to initially discover Connect IQ-compatible devices that are available for communication, or to install Monkey C applications on the wearable device. The companion app and GCM exchange information by launching each other via the iOS URL scheme system. To facilitate this, a URL scheme that GCM can send data to must be registered by the app. To do this, add an entry to the `Target > Info > URL Types` panel. A string that is not likely to collide with any other apps on the iOS device should be chosen. See the Apple documentation 更多信息 on [custom URL schemes](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1).
 
-![Registering the URL scheme for the target](/connect-iq/resources/programmers-guide/ios-image5.png)
+![为目标注册 URL 方案](/connect-iq/resources/programmers-guide/ios-image5.png)
 
 如果您正在编译与iOS 9SDK或以上版本,则需要在您的app Infos Info.plist中添加`gcm-ciq`到[LSApplicationQueriesSchemes](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14)的输入.这是为了确保SDK能够验证是否安装了GCM.如果这个键不在您的 Info.plist中,则需要添加.
 
 如果您的项目尚未设置[CFBundleDisplayName](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)在您的app Infos Info.plist中,则需要添加一个定义.
 
-#### Set Bluetooth usage description
+#### 设置蓝牙使用说明
 
 从iOS 10开始,需要设置解释使用BLE外围访问的字符串.[NSBluetoothPeripheralUsageDescription](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW20)键必须设置在Info.plist中,以解释您的应用程序使用BLE,以便iTunes Connect接受.如果这个键不在您的Info.plist中,则需要添加.
 
-#### Set background execution mode (optional)
+#### 设置后台执行模式（可选）
 
 iOS系统允许与蓝牙设备通信的应用程序在连接设备有数据要发送时在背景中执行.这对于在可穿戴设备上处理各自的子C应用程序的伴侣应用程序来说是有用的.
 
-![Optionally setting the background execution mode for the target](/connect-iq/resources/programmers-guide/ios-image6.png)
+![可选地为目标设置后台执行模式](/connect-iq/resources/programmers-guide/ios-image6.png)
 
 #####启动SDK
 
@@ -75,7 +75,7 @@ URL方案应是#配置一个项目使用移动SDK的4步中选择的相同字符
 
 ###与设备合作
 
-#### Finding Connect IQ-compatible devices
+#### 查找兼容 Connect IQ 的设备
 
 移动SDK可以通过蓝牙直接与连接智商兼容的设备进行通信.然而,首先必须知道哪些设备可用.
 
@@ -193,7 +193,7 @@ IQApp *app = [IQApp appWithUUID:uuid device:device];
 }];
 ```
 
-#### Sending messages
+#### 发送消息
 
 一旦一个伴侣应用程序确定了一个应用程序安装在连接设备上,伴侣应用程序可以通过`sendMessage:toApp:progress:completion:`方法通过蓝牙发送信息到该应用程序的邮箱.该方法将一个对象作为消息,一个`IQApp`作为目的地,以及两个区块 - 一个随着数据传输的进展而定期调用,一个调用后传输完成.
 
@@ -216,7 +216,7 @@ NSArray *message = @[@”hello pi”, @(3.14159)];
 
 ** 注:** 请记住,可穿戴设备与iOS设备相比,具有有限的内存和处理能力. **消息应尽可能小.** 然而,频繁发送小消息可能会带来性能和电池寿命成本.因此,偶尔发送大消息比频繁发送许多小消息更理想. **伴侣应用程序应该通过只需要时只发送消息,并将消息大小降至最低. ***
 
-#### Receiving messages
+#### 接收消息
 
 随机应用程序可以通过调用`registerForAppMessages:delegate:`方法注册接收来自应用程序的消息.该方法需要一个`IQApp`来听取消息,以及一个符合`IQAppMessageDelegate`协议的对象的实例作为听众.在注册后,当从该应用程序发出的消息被成功接收时,听众将调用`receivedMessage:fromApp:`方法.为了停止听取应用程序消息,随机应用程序可以调用未注册ForAppMessages:delegate:或未注册ForAllAppMessages:方法.
 
@@ -236,5 +236,5 @@ NSArray *message = @[@”hello pi”, @(3.14159)];
 
 ** 注:** 一个伴侣应用程序可以在许多设备上注册接收来自多个应用程序的消息.然而, ** 多个伴侣应用程序永远不应该注册接收来自同一应用程序的消息**.iOS上的蓝牙通信的性质阻止移动SDK决定交送信息的伴侣应用程序.因此,由于多个伴侣应用程序注册接收来自同一应用程序的消息,不定义的行为将会产生.
 
-![Mulitple watch apps can comunicate with a single phone app](/connect-iq/resources/programmers-guide/ios-image8.png)
-![A single watch app cannot communicate with multiple phone apps](/connect-iq/resources/programmers-guide/ios-image9.png)
+![多个手表应用可以与单个手机应用通信](/connect-iq/resources/programmers-guide/ios-image8.png)
+![单个手表应用无法与多个手机应用通信](/connect-iq/resources/programmers-guide/ios-image9.png)

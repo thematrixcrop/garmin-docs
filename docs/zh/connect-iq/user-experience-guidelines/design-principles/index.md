@@ -1,7 +1,7 @@
 ---
 title: "Key Design Principles"
 ---
-# Key Design Principles
+# 关键设计原则
 
 设计应用程序可以分为四步:
 
@@ -9,6 +9,6 @@ title: "Key Design Principles"
 
 2. 发展概念
 
-3.  Designing workflows and interactions
+3.  设计工作流和交互
 
 4. 融合视觉设计和产品个性

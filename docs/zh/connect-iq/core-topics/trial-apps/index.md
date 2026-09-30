@@ -1,9 +1,9 @@
 ---
 title: "App Trials"
 ---
-# App Trials
+# 应用试用
 
-*Since API level 2.3.0*
+*自 API 级别 2.3.0*
 
 应用程序试验功能允许开发人员为他们的应用程序启用一个特殊的"试验"模式.通过在应用程序标签下添加一个新的标签来实现试验模式:
 
@@ -20,17 +20,17 @@ title: "App Trials"
 
 应用程序测试功能不支持手表面孔.
 
-## Trial Mode Functionality
+## 试用模式功能
 
 Developers can query the [AppBase.isTrial()](/connect-iq/api-docs/Toybox/Application/AppBase/#isTrial-instance_function) method to determine if trial mode is active for their app, which 可用于 trigger special trial-mode functionality. App trials can also be time-based. The method [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) should be overridden if you wish to support a time-based trial. [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) must return a [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) that represents how many days are remaining in the trial, or null if time-based trials are to be disabled. If `0` is returned, the app will be prevented from running as the trial will be considered "expired".
 
 By default, when an app is in trial mode, 系统将 push special trial notifications to the use either to inform them of how many days remain in their trial (if you've overridden [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) to return a non-null value), or more generally that trial mode is active. If you do not wish for these notifications to be displayed to the user, you can override to return `false`.
 
-## Trial App Server API
+## 试用应用服务器 API
 
 一旦应用程序在商店中可用,用户可以通过点击商店中的解锁按来解锁应用程序.此时,应用商店将重定向到提供的解锁URL,并将这些参数添加到URL:
 
-| Parameter Name |描述|
+| 参数名称 |描述|
 | --- | --- |
 | `callbackUrl` |在您的侧面成功完成解锁过程后,必须调回的URL.|
 | `appUnlockRequestId` |应用商店的内部解锁ID,可以由应用程序开发人员作为参考存储.|
@@ -70,15 +70,15 @@ System.out.println("Return code: " + org.springframework.http.HttpStatus.valueOf
 
 预计将有以下退货代码:
 
-| Status Code | Status Phrase |描述|
+| 状态代码 | 状态短语 |描述|
 | --- | --- | --- |
 | 200 | OK |应用程序被标记为"解锁".|
 | 202 | Accepted |在成功的测试请求时 (见下面).|
 | 401 | Unauthorized |如果授权 (OAuth) 是不正确的|
-| 404 | Not Found |当未找到所需解锁项时.|
+| 404 | 未找到 |当未找到所需解锁项时.|
 | 409 | Conflict |当应用程序已经被标记为未锁在应用商店.|
 | 410 | Gone |当应用程序成为孤儿时 (例如由于应用程序因GDPR而改变了所有权).|
-| 510 | Internal Server Error |当发生意外错误时.|
+| 510 | 内部服务器错误 |当发生意外错误时.|
 
 您可以测试您的OAuth实现,而无需实际解锁请求.
 

@@ -1,10 +1,10 @@
 ---
 title: "Getting Started"
 ---
-# Getting Started
+# 入门
 
 
-![What is step 3?](/connect-iq/resources/programmers-guide/learning-monkey.png)
+![第 3 步是什么？](/connect-iq/resources/programmers-guide/learning-monkey.png)
 
 ## 连接智能 SDK 管理器
 
@@ -12,7 +12,7 @@ title: "Getting Started"
 
 ###安装 Connect IQ SDK 管理器
 
-1.  Go to [developer.garmin.com/connect-iq/sdk](/connect-iq/sdk/)
+1.  前往 [developer.garmin.com/connect-iq/sdk](/connect-iq/sdk/)
 
 2. 在**安装SDK管理器**部分中选择*接受和下载*
 
@@ -25,24 +25,24 @@ title: "Getting Started"
 4.启动 SDK 管理器.你应该看到以下内容:
 
 
-    ![Launching the SDK Manager](/connect-iq/resources/programmers-guide/sdk-manager-start.png)
+    ![启动 SDK Manager](/connect-iq/resources/programmers-guide/sdk-manager-start.png)
 
 5. 按**登录**按,输入连接帐户的凭证:
 
 
-    ![Credential entry](/connect-iq/resources/programmers-guide/sdk-manager-login.png)
+    ![凭据输入](/connect-iq/resources/programmers-guide/sdk-manager-login.png)
 
 6. SDK 管理器可以记住您的凭证,或者您可以每次重新输入它们.选择您喜欢的选项,然后按 **Next**
 
 7. 您将会有自动更新Connect IQ SDK的选项,或者在新版本可用时会被通知. 选择您喜欢的选项,然后按**Next**
 
 
-    ![Update SDK](/connect-iq/resources/programmers-guide/sdk-manager-update-sdk.png)
+    ![更新 SDK](/connect-iq/resources/programmers-guide/sdk-manager-update-sdk.png)
 
 8. 您将获得Connect IQ设备更新的选项,或者在新设备可用时被通知.如果您想自动更新设备,您可以选择您想要更新的设备类型. 选择您喜欢的选项,然后按 ** 完成**
 
 
-    ![Update devices](/connect-iq/resources/programmers-guide/sdk-manager-update-devices.png)
+    ![更新设备](/connect-iq/resources/programmers-guide/sdk-manager-update-devices.png)
 
 
 SDK 管理器有两个标签: **SDK**和 **设备**. SDK 标签显示了 SDK 有哪些.使用![](/connect-iq/resources/programmers-guide/sdk-manager-download-button.png)
@@ -85,4 +85,4 @@ SDK 管理器有两个标签: **SDK**和 **设备**. SDK 标签显示了 SDK 有
 
 在"Connect IQ"编译器偏好中所指定的开发者密钥将在编译项目时自动传递给编译器.
 
-Connect IQ only supports Ubuntu Linux distributions
+Connect IQ 仅支持 Ubuntu Linux 发行版

@@ -1,7 +1,7 @@
 ---
 title: "Build Configuration"
 ---
-# Build Configuration
+# 构建配置
 
 连接IQ支持各种Garmin设备,如手表,自行车电脑和手持电脑.即使在这些更广泛的类别内,设备也可以具有不同的屏幕尺寸,形状和分辨率.应用程序开发人员可能希望为某些设备或设备家庭定义特定资源,如字体和位图图形,以获得更好的用户体验.例如,应用程序可能需要使用圆形设备的圆形背景图像和方形设备的方形背景图像.
 
@@ -19,11 +19,11 @@ The simplest way to override resources is with device, family, and localization 
 
 ** 注:** 单个文件上可以使用通过字符串分开的多个资格,但设备资格不允许与相同文件名称的家庭资格共存 (例如`resources-round-fenix3`)) ,如果遇到,资源编译器将会跳过.
 
-### Device Qualifiers
+### 设备限定符
 
 设备资格格格式允许资源针对特定设备 (如图1所示).包含设备资格格的文件中的资源将在构建相关设备时覆盖基础资源文件中定义的相同ID的资源.设备资格也优先于较少特定的资格,如家庭资格.
 
-### Family Qualifiers
+### 系列限定符
 
 家庭资格格格式允许资源针对特定设备家庭,这是由共享屏幕特性区分的设备组.有两个家庭资格:
 
@@ -56,7 +56,7 @@ The simplest way to override resources is with device, family, and localization 
 -`resources-fenix5s-fre`:仅为fēnix 5设备提供法语特定字符串资源
 
 
-## Build Configuration via Jungles
+## 通过 Jungles 进行构建配置
 
 连接智商运行在各种目的构建设备上.由于输入,屏幕形状和资源的多样性,通常需要包含针对特定条件的代码和资源.例如,在一个方形设备上,进步可能是矩形,但在一个圆的设备上,它可能看起来更好,像一个围绕屏幕的弧形.
 
@@ -69,7 +69,7 @@ The simplest way to override resources is with device, family, and localization 
 - 指定项目建设时应包含的[Monkey Barrels](/connect-iq/core-topics/shareable-libraries/#shareable-libraries).
 
 
-### Per Device Configuration
+### 按设备配置
 
 林允许对所有产品,屏幕形状或特定产品设置源路径,资源路径和排斥.
 
@@ -101,7 +101,7 @@ venu.resourcePath = $(base.resourcePath);resource-venu
 
 这些指令将所有设备的源路径设置为`source`. 它告诉构建系统分别使用圆,半圆和矩形的`resource-round`,`resource-semiround`和`resource-rectangle`路径.最后,Venu增加了额外的源和资源文件.
 
-### Feeling Excluded
+### 感到被排除在外
 
 现在,假设我们在应用程序中有一些代码只应该运行在圆形产品上,
 

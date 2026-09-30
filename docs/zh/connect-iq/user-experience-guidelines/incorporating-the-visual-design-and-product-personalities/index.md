@@ -1,15 +1,15 @@
 ---
 title: "Incorporating Visual Design and Product Personalities"
 ---
-# Incorporating Visual Design and Product Personalities
+# 融入视觉设计和产品个性
 
 现在我们已经建立了我们的工作流程和互动范式,我们可以专注于纳入视觉设计.你的视觉设计需要结合你的品牌和你设计的产品的个性.
 
-## Product Personality
+## 产品个性
 
 根据该产品的目标受众,产品的核心用途,产品的图形和工业设计以及产品中使用的硬件和技术,Garmin产品具有不同的个性.
 
-### Screen Technology
+### 屏幕技术
 
 许多Garmin产品采用一种称为Memory in Pixel (MIP) 的屏幕技术.MIP显示器的功率非常低.它们依赖于反射光,因此外面看起来最明亮.显示器技术具有有限的颜色调色:有些提供高达64种颜色,而有些仅提供8种甚至黑白.
 
@@ -27,7 +27,7 @@ title: "Incorporating Visual Design and Product Personalities"
 
 Garmin设备的另一种常见的屏幕技术是LCD或AMOLED显示器.这些显示器提供了更多的颜色,可以看起来充满活力,但在户外使用时也会使用更多的电力.
 
-### Visual Theme
+### 视觉主题
 
 不同的Garmin设备有不同的视觉主题.有些设备使用光背景的暗文字,而其他设备则使用暗背景的轻文字:
 
@@ -37,31 +37,31 @@ Garmin设备的另一种常见的屏幕技术是LCD或AMOLED显示器.这些显�
 
 采用AMOLED或LCD屏幕的设备使用黑色背景上的光文.通过具有黑暗的视觉主题,AMOLED屏幕的设备可以延长电池使用寿命,同时还可以将美丽的图像纳入用户界面.
 
-#### Example
+#### 示例
 
-Light on Dark
+深色背景上的浅色
 
 ![](/connect-iq/resources/ux-guide/data-fields.png)
 
-Dark on Light
+浅色背景上的深色
 
 ![](/connect-iq/resources/ux-guide/dark-on-light.png)
 
-### Typography
+### 排版
 
 在Garmin设备上有两种系统字体:文字字体和数字字体.文字字体应用于文本数据和标签,而数字字体应用于数值数据.设备的系统字体已经被测试为设备可读性,并且应尽可能使用.
 
 连接 IQ 允许开发人员将字体进口到应用程序中.这些字体只允许进口一点尺寸. 定制字体应用于给出视觉强调或添加品牌元素.
 
-### Headers and Footers
+### 页眉和页脚
 
 在应用程序中,通常在视图顶部有一个标题部分.标题可以包含一个小文字串或图标图,以给用户提供他们在应用程序中的位置的语境.在较少颜色的MIP产品上,标题通常是固体颜色.在LCD或AMOLED显示器上,标题应该是一个渐变的黑色.
 
-### Imagery
+### 图像
 
 在使用液晶或AMOLED屏幕的设备上,背景上的微妙图像可以增加视觉 accent.
 
-## Best Practices
+## 最佳实践
 
 - 在多个产品中设计时,无论显示尺寸如何都显示相同的内容. 依赖标准模式和系统字体,以便内容适合显示尺寸和分辨率.
 

@@ -1,9 +1,9 @@
 ---
 title: "Activity Control"
 ---
-# Activity Control
+# 活动控制
 
-*Since API 5.2.0*
+*自 API 5.2.0*
 
 Using [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 允许应用 transition the user to an activity with downloaded content. The [DataField.setWorkout()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#setWorkout-instance_function) and [DataField.routeTo()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#routeTo-instance_function) functions allow a data field to directly update the current workout or route of an activity.
 

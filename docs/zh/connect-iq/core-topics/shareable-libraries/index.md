@@ -1,7 +1,7 @@
 ---
 title: "Shareable Libraries"
 ---
-# Shareable Libraries
+# 可共享库
 
 开发人员可以创建自定义的子C库,称为 source子桶,包含源代码和资源信息,可以轻松共享在Connect IQ项目中.
 
@@ -85,9 +85,9 @@ Developers can use annotations to denote sub-modules within their Barrels. Sub-m
 
 2. 调用命令,然后运行*子C:编辑注释*命令
 
-3.  Select *Add Annotation*
+3.  选择 *添加注释*
 
-4.  Input your annotation name
+4.  输入注释名称
 
 
 这些注释将可用于桶项目.
@@ -114,7 +114,7 @@ IconLibrary {                       // Barrel Level
 
 这使得开发人员可以轻松地将这些资源带入他们的项目中,而不会发生任何变化.所有由Barrel使用的文件都必须存在于Barrel项目的根目录中,该目录由 manifest.xml文件的目录决定,因为对项目外部文件的进口不支持.
 
-## Barrels and Versions
+## 柱状图和版本
 
 每个桶都有一个独特的版本ID号码.这遵循与Connect IQ SDK (`Major.Minor.Micro.Quailifier`或`#.#.#.X`) 的相同的编号系统.版本合格符只能由字母,数字和突显组成.
 
@@ -141,7 +141,7 @@ Barr子桶由 comp子C编译器包装,以满足源代码的基本语法检查. *
 
 1. 使用*子C:配置 Bar子桶*命令
 
-2.  Select *Add Monkey Barrel*
+2.  选择 *Add Monkey Barrel*
 
 3. 选择是否要添加它作为预编译的`.barrel`文件或作为桶项目链接
 
@@ -161,7 +161,7 @@ base.FooBarrel.annotations = Bars;BarsToo
 
 完成后,选定的桶将被添加到您的项目中.
 
-## Using Monkey Barrels
+## 使用 Monkey Barrels
 
 一旦它们被添加到一个项目中,使用桶是直接的和简单的.开发人员不需要将桶进口到源文件中,但如果他们选择使用号的话,他们需要使用语句:
 
@@ -189,13 +189,13 @@ var globalBars = Bars.getCurrentBars();
 var icon = UserInterface.loadResource(IconLibrary.Rez.Drawables.myIcon)
 ```
 
-## Run No Evil and Monkey Barrels
+## 运行 Run No Evil 和 Monkey Barrels
 
 桶可以与 Run No Evil 测试框架结合使用,以测试单独的代码部分.对于 Run No Evil 测试框架的更多信息,开发人员可以参考[Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing)文档.
 
 1.右键点击Barrel项目根文件
 
-2.  Select *Run Tests*
+2.  选择 *Run Tests*
 
 
 配合正确测试注释的桶代码 (见[Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing)文档),将在 Run No Evil测试框架中进行测试.

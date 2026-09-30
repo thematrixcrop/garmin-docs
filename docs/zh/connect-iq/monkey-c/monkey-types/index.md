@@ -16,12 +16,12 @@ title: "Monkey Types"
 
 连接IQ类型检查器默认被禁用,并通过`-l`编译器选项启用.类型检查有四个级别:
 
-| Option | Level | Description |
+| Option | Level | 说明 |
 | --- | --- | --- |
 | `-l 0` | Silent |没有类型检查; 保持所有动态类型|
 | `-l 1` | Gradual |输入检查任何输入可以推断的语句,否则保持沉默|
-| `-l 2` | Informative | Type check only what has been typed, warn about ambiguity |
-| `-l 3` | Strict | Do not allow compiler ambiguity |
+| `-l 2` | Informative | 仅检查已输入的类型，对歧义发出警告 |
+| `-l 3` | Strict | 不允许编译器产生歧义 |
 
 让我们来介绍一种新的语法来将类型信息传达到类型系统.
 
@@ -85,7 +85,7 @@ function hasANumber() {
 
 注:`import`不支持使用`as`在源文件中的模块重新命名.
 
-## Named Versus Anonymous Types
+## 命名类型与匿名类型
 
 您可以从上述例子中看到,类型系统可以允许复杂的类型定义.有时候,类型模式重复,只需要用名字引用它.
 
@@ -103,13 +103,13 @@ function add(a as Numeric, b as Numeric) as Numeric {
 
 如果您不想命名您的类型声明,您总是可以使用`as`条款构建类型声明为匿名类型.
 
-## Types
+## 类型
 
 子类型允许您在子C代码中添加一层类型架构. 类型系统不仅仅允许将变量与类别联系在一起.
 
 本节将概述您可以使用的类型声明.
 
-### Any
+### 任意
 
 任何变量,函数参数或函数返回值,没有类型绑定到它是类型 Any. 任何类型可以是任何东西,包括什么都不存在. 类型 Any 的值遵循传统的子类型规则.
 
@@ -137,7 +137,7 @@ function doSomething() as String {
 }
 ```
 
-### Concrete
+### 具体
 
 具体类型是程序命名空间中声明的类型的单一引用.这是打字的最传统和最熟悉的使用方式.如果值与具体类型相结合,它只会接受该类或任何衍生类的值.
 
@@ -219,7 +219,7 @@ function doWork() {
 }
 ```
 
-### Interface
+### 接口
 
 界面类型需要一个类包含一组成员声明.成员可以是成员变量和函数.
 
@@ -249,7 +249,7 @@ function example(you as interface {
 })
 ```
 
-### Container
+### 容器
 
 子C语言有两个原生容器类型,`Array`和`Dictionary`.虽然子类型系统不支持通用,但它允许开发人员输入`Array`的值类型或`Dictionary`的关键和值类型.
 
@@ -275,7 +275,7 @@ class ContainerClass {
 }
 ```
 
-### Tuples
+### 元组
 
 在子C中,一个常见的模式是使用阵列作为结构化的组合.子类型通过将索引的项目绑定到类型来建模阵列.
 
@@ -321,7 +321,7 @@ function foo(x as [Number, Number, Number]) as [Number, Number, Number] {
 }
 ```
 
-### Dictionary
+### 字典
 
 在子C中,使用选项词典作为参数是一种常见模式.这允许扩展的API.子类型允许通过将关键字体绑定到类型来建模选项词典.
 
@@ -343,7 +343,7 @@ function doWork(options as {
 doWork({:option1=>"x", :option3=>true})
 ```
 
-### Enumerations
+### 枚举
 
 列表现在可以通过添加一个名称到声明中命名类型.列表值将与其列表类型以及其值类型结合.
 
@@ -364,7 +364,7 @@ function getDogName(dog as Dog) as String {
 }
 ```
 
-### Callback
+### 回调
 
 子C的基对象包含`method`方法来创建`Method`回调对象.回调类型允许您根据预期参数和返回值输入`Method`对象.
 
@@ -430,7 +430,7 @@ a = b; // Is this assigment allowed?
 
 编译一个含糊不清的代码基础可以发现明显的类型错误,而编译代码时在含糊上错误需要在整个代码中添加类型架.子类型是为了让您可以选择攻击性打字,而如果您不这样做,则仍然添加价值.
 
-## Typing Within Functions
+## 在函数中指定类型
 
 虽然这使得代码非常可读和明确,但它可以增加大量的炉板.
 
@@ -694,7 +694,7 @@ public function foo(x as Addable?) {
 
 如果分为成员变量时,如果调用函数,则将删除所有类型突变.
 
-## Typing Modules and Classes
+## 为模块和类指定类型
 
 与本地变量不同,成员变量不会根据分配推断类型.将类型架子添加到成员变量和名字添加到列表将允许更强的类型检查.常量按分配输入.
 
@@ -751,7 +751,7 @@ class Messenger {
 }
 ```
 
-### Types and Inheritance
+### 类型和继承
 
 在扩展类型时,类型系统将使用以下规则:
 

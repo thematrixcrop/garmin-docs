@@ -30,7 +30,7 @@ Garmin 音乐可穿戴设备通过将内容同步到设备上进行后续播放�
 
 通过音频内容提供商应用程序下载的内容以多种方式得到保护:
 
-1.  Music apps and audio files stored in hidden folders on device
+1.  存储在设备隐藏文件夹中的音乐应用和音频文件
 
 2. 应用程序和音频文件使用AES-128进行加密.
 
@@ -43,13 +43,13 @@ The system will initiate a sync after the configuration step. The user will be p
 
 ![](/connect-iq/resources/faq/sync_flow.png)
 
-## Playback
+## 播放
 
 一旦下载内容,Connect IQ应用程序可以将音频文件传输到本土媒体播放器中.用户可以使用媒体控制来控制播放,或者用户可以通过输入应用程序播放配置模式来选择他们想听的内容.
 
 ![](/connect-iq/resources/faq/playback_tree.png)
 
-### Playback Configuration
+### 播放配置
 
 当用户输入播放配置时,应用程序应该允许他们在应用程序内更改其音频内容 (播放列表,书籍或播客).播放配置的界面由音频内容提供商定义.
 
@@ -57,7 +57,7 @@ The system will initiate a sync after the configuration step. The user will be p
 
 该流程允许用户控制播放哪些歌曲.该应用程序可以让用户选择播放列表或单独的歌曲.该应用程序可以选择使用`Media.startPlayback()`从该流程开始播放,或者让用户从媒体播放器中选择播放.
 
-### Playback
+### 播放
 
 播放由媒体播放器驱动,但应用程序可以决定播放器控制的显示内容和播放内容.
 
@@ -65,7 +65,7 @@ The system will initiate a sync after the configuration step. The user will be p
 
 随着音频播放,媒体播放器将播放信息发送到`ContentDelegate`,可用于报告目的.Connect IQ应用程序可以存储歌曲的每个播放报告信息,并通过网络通话或同步后将其发送给提供商.
 
-## Hints and Tips
+## 提示和技巧
 
 `Toybox.Media`模块提供下载和与音频内容接口的工具,但为了保存报告信息,您应该利用`Toybox.Application.Storage`模块.Connect IQ存储系统为持久内容提供了一个简单的关键/值系统,但值仅限于8KB.
 
@@ -75,7 +75,7 @@ The system will initiate a sync after the configuration step. The user will be p
 
 存储播放列表ID (`Px`) 在顶级数组中使用已知键 ("播放列表").给每个播放列表和歌曲ID (`Sx`) 存储中的自己的字典入口.在播放列表中存储歌曲ID参考,而在歌曲ID中存储`ContentRef`id和播放数组.这允许每个歌曲使用大部分存储用于歌曲播放存储.
 
-## Conclusion
+## 结论
 
 通过 Connect IQ 音频内容提供应用程序,您可以:
 

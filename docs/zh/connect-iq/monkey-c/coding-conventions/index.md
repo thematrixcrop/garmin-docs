@@ -5,7 +5,7 @@ title: "Coding Conventions"
 
 以下是子C代码的指南:
 
-## Naming
+## 命名
 
 - 模块和课程以大字母上写的第一字母.
 
@@ -22,7 +22,7 @@ title: "Coding Conventions"
 - 在POMO (平坦的老子C对象) 中,所有公众成员都可以.
 
 
-## Source
+## 源
 
 - 每个 source子C源文件上放一个类.
 
@@ -31,7 +31,7 @@ title: "Coding Conventions"
 - 在定义模块,类别,函数和组时,将开放式放在与定义相同的线上,并将关闭式与定义的第一个字符一致.
 
 
-## Definitions
+## 定义
 
 - 尽可能避免纯粹的全球变量.
 
@@ -42,7 +42,7 @@ title: "Coding Conventions"
 - 在你的类初始函数的第一个行,总是叫超级类初始.
 
 
-## Sample
+## 示例
 
 这里有一个样本:
 

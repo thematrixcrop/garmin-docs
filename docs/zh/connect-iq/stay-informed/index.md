@@ -1,13 +1,13 @@
 ---
 title: "Stay Informed"
 ---
-# Stay Informed
+# 随时了解信息
 
-## Stay Informed
+## 随时了解最新信息
 
 加入 Garmin Connect IQ开发者程序,以获悉Connect IQ SDK的新版本和功能.
 
-[Stay Informed](https://www.garmin.com/en-US/forms/developerstayinformed/)
+[获取最新信息](https://www.garmin.com/en-US/forms/developerstayinformed/)
 
 
 

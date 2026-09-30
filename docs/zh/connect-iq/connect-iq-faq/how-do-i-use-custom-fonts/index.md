@@ -14,7 +14,7 @@ Have you ever seen an app in the Connect IQ app store that made you wonder, "Tha
 - **图形编辑器 / 工具** - - 为编辑字体png文件.我更喜欢使用[Photoshop](https://www.adobe.com/products/photoshop.html)来实现所需的效果,但也可以使用[GIMP](https://www.gimp.org/)
 
 
-## Font Reflection
+## 字体反射
 
 这种技术非常简单,可以通过两种方式实现:
 
@@ -45,7 +45,7 @@ dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
 这种方法是最简单的,在使用BMFont工具出口后,不需要进一步处理字体的图像.
 
-### Approach B
+### 方法 B
 
 **反射**表面稍微先进,涉及一些图像处理,但它提供了指定时间和反射的不同颜色的好处.
 
@@ -167,7 +167,7 @@ for( var i = 0; i < time.length(); i++ ) {
 }
 ```
 
-## Dynamic Color Filling
+## 动态颜色填充
 
 在我的标志性腕表面孔[*NoFrills*](https://apps.garmin.com/en-US/apps/03030574-3c6e-484a-9bd8-ce2ca0249651)中,我使用一个简单的技巧来创建一个特殊效应,使时间充满水.它有效地作为活动跟踪的进展指标,同时节省屏幕上的房地产.谈论双重用途的钟!
 

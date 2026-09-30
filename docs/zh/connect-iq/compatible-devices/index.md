@@ -3,7 +3,7 @@ title: "Compatible Devices"
 ---
 # 兼容设备 | Connect IQ | Garmin Developers
 
-| Watches/Wearables | Screen Resolution | Screen Shape | Screen Technology | API Level |
+| Watches/Wearables | 屏幕分辨率 | 屏幕形状 | 屏幕技术 | API 级别 |
 | --- | --- | --- | --- | --- |
 |
 ![](https://res.garmin.com/en/products/010-03010-00/v/cf-sm.jpg)
@@ -17,14 +17,14 @@ title: "Compatible Devices"
 
 方法® S60
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 2.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 2.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02200-00/v/cf-sm-bc8fd553-731f-4fc3-98dd-ef9eb4d7d597.jpg)
 
 方法® S62
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.0 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02746-01/v/cf-sm.jpg)
@@ -45,7 +45,7 @@ title: "Compatible Devices"
 
 Captain Marvel
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02173-41/g/cf-sm-11d59984-bc91-49ed-bfe9-d2ddc7c627a8.jpg)
@@ -66,42 +66,42 @@ D2TM空气 X10
 
 D2TM Bravo
 
- | 218 x 218 | round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 218 x 218 | round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01338-36/v/cf-sm.jpg)
 
 D2TM 布拉沃
 
- | 218 x 218 | round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 218 x 218 | round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01733-30/v/cf-sm.jpg)
 
 D2TM查理
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.0 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01988-30/g/cf-sm-87bb0674-cc55-4a52-ad94-32bf9b4e729c.jpg)
 
 D2TM三角洲
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01989-30/g/cf-sm-874810a3-a28b-4484-955d-6c4a24c4f7bf.jpg)
 
 D2TM 达尔塔PX
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01987-30/g/cf-sm-431a8fa0-3449-43e0-9702-5ff6ad991c84.jpg)
 
 D2TM 达尔塔S
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02582-54/v/cf-sm-4e5412c4-10ee-4008-9436-e9bc51f60a0f.jpg)
@@ -129,14 +129,14 @@ D2TM 马赫 2
 
 达特·韦德
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02604-02/v/cf-sm-69f99ebc-edc0-45c4-91ee-5a92cee5477f.jpg)
 
 下降TM G1 / G1 太阳能
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 3.4 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02986-00/v/cf-sm.jpg)
@@ -150,21 +150,21 @@ D2TM 马赫 2
 
 下降TM Mk1
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02132-00/v/cf-sm-e9552746-bff8-49ce-9a36-54f7f69c896a.jpg)
 
 下降TM Mk2 / Mk2i
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02403-03/v/cf-sm-9160c2ec-b9cc-49c3-abca-152044d14084.jpg)
 
 下降TM Mk2 S
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02753-03/v/cf-sm.jpg)
@@ -185,21 +185,21 @@ D2TM 马赫 2
 
 终端TM
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02751-00/v/cf-sm.jpg)
 
 耐药TM 3
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 6.0 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 6.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01247-00/g/cf-sm.jpg)
 
 
 
- | 205 x 148 | rectangle | Memory-In-Pixel (64 colors) | 1.2 |
+ | 205 x 148 | rectangle | Memory-In-Pixel（64 色） | 1.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02582-10/v/cf-sm-9426f26d-0453-491f-bad1-5578abef3d60.jpg)
@@ -234,147 +234,147 @@ epixTM Pro (Gen 2) 51mm / D2TM Mach 1 Pro / tactix® 7  AM AMOLED Edition
 
 fēnix® 3 / tactix® Bravo / quatix® 3
 
- | 218 x 218 | round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 218 x 218 | round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01338-70/g/cf-sm.jpg)
 
 fēnix® 3 HR
 
- | 218 x 218 | round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 218 x 218 | round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01688-00/v/cf-sm.jpg)
 
 fēnix® 5 / quatix® 5
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01988-10/v/cf-sm-c9091bfe-f1af-42b4-bd62-f3b45f46a15d.jpg)
 
 fēnix® 5 Plus
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01685-00/v/cf-md.jpg)
 
 fēnix® 5S
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01987-00/v/cf-sm-58f98bed-90e7-4199-b4bc-925aec9690a7.jpg)
 
 fēnix® 5S Plus
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01733-00/v/cf-md.jpg)
 
 fēnix® 5X / tactix® Charlie
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01989-04/v/cf-sm-6dd29412-ddad-4f53-b62d-84eaaa06f258.jpg)
 
 fēnix® 5X Plus
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02158-11/v/cf-sm-d9660dd6-f71d-4fe6-8682-2f6d80e12dff.jpg)
 
 fēnix® 6 / 6 太阳能 / 6 双功率
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02158-02/v/cf-sm-c561cac8-1a27-4bb1-8374-d99dc6afe57a.jpg)
 
 fēnix® 6 Pro / 6 萨菲尔 / 6 Pro 太阳能 / 6 Pro 双功率 / quatix® 6
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02159-00/v/cf-sm-880ca1fb-2302-4a53-bfda-962e357fd7f8.jpg)
 
 fēnix® 6S / 6S 太阳能 / 6S 双功率
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02159-14/v/cf-sm-6f0a6934-59f4-467c-8a6d-e74cb01d5ca6.jpg)
 
 fēnix® 6S Pro / 6S Sapphire / 6S Pro 太阳能 / 6S Pro 双功率
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02157-01/v/cf-sm-47dff6dd-beb7-42eb-9daa-3585c81c12ea.jpg)
 
 fēnix® 6X Pro / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 6X 萨菲尔 / 萨菲尔 / 萨菲尔 / 萨菲尔 / 萨菲尔 / 萨菲尔 / 萨菲尔
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02540-20/v/cf-sm-650273c3-5d6c-4615-b9b0-dc811c4755ac.jpg)
 
 fēnix® 7 / quatix® 7
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02777-10/v/cf-sm.jpg)
 
 fēnix® 7 Pro
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02777-02/g/cf-sm.jpg)
 
 fēnix® 7 Pro - 太阳能版 (无 Wi-Fi)
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02539-24/v/cf-sm-1a4617c4-fb5f-465d-984b-0855ebd713e0.jpg)
 
 fēnix® 7S
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02776-10/v/cf-sm.jpg)
 
 fēnix® 7S Pro
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02541-10/v/cf-sm-eb83ca4d-b5e7-4ba8-a36b-5633b4d901bd.jpg)
 
 fēnix® 7X / tactix® 7 / quatix® 7X 太阳能 / 终端TM 2
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02778-10/v/cf-sm.jpg)
 
 fēnix® 7X Pro
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02778-02/g/cf-sm.jpg)
 
 fēnix® 7X Pro - 太阳能版 (无 Wi-Fi)
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02903-00/v/cf-sm.jpg)
@@ -402,14 +402,14 @@ fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm
 
 fēnix® 8 太阳能 47mm
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 6.0 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02907-10/v/cf-sm.jpg)
 
 fēnix® 8 太阳能51mm/战术® 8 太阳能51mm
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 6.0 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-04761-00/v/cf-sm.jpg)
@@ -451,21 +451,21 @@ fēnix® 9 Pro 51mm
 
 fēnix® 9 Pro 太阳能 47mm
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 6.0 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-04339-00/v/cf-sm.jpg)
 
 fēnix® 9 Pro 太阳能 51mm
 
- | 280 x 280 | round | Memory-In-Pixel (64 colors) | 6.0 |
+ | 280 x 280 | round | Memory-In-Pixel（64 色） | 6.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01957-00/v/cf-sm.jpg)
 
 fēnix® Chronos
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://res.garmin.com/en/products/010-03025-02/v/cf-sm.jpg)
@@ -479,7 +479,7 @@ fēnix® E
 
 First Avenger
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02863-20/v/cf-sm.jpg)
@@ -514,56 +514,56 @@ First Avenger
 
 前® 230
 
- | 215 x 180 | semi-round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-03717-54/v/cf-sm.jpg)
 
 预告器® 235
 
- | 215 x 180 | semi-round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02120-00/v/cf-sm-13aa6bd1-4382-4520-ba05-be6a77decdbf.jpg)
 
 预告器® 245
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02120-20/v/cf-sm-3f7eab23-b754-4e70-aba1-518f230a57f7.jpg)
 
 预告器® 245 音乐
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02641-00/v/cf-sm-00cd5b03-2375-4894-9a15-b4ea32638146.jpg)
 
 预先者® 255
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02641-20/v/cf-sm-29ca4524-07b7-403d-8b88-1f30bbf194d1.jpg)
 
 预告者® 255音乐
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02641-02/v/cf-sm-ad4021ee-c827-4f09-8072-c91e0f02c877.jpg)
 
 预先者® 255s
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02641-22/v/cf-sm-e1909be7-5796-4672-a236-7c4570765e3e.jpg)
 
 预告器® 255s音乐
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02810-00/g/cf-sm.jpg)
@@ -584,14 +584,14 @@ First Avenger
 
 预告器® 45
 
- | 208 x 208 | round | Memory-In-Pixel (8 colors) | 1.4 |
+ | 208 x 208 | round | Memory-In-Pixel（8 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02562-00/v/cf-sm-f2980632-d084-4bc0-a08d-f958680e2042.jpg)
 
 预告者® 55
 
- | 208 x 208 | round | Memory-In-Pixel (8 colors) | 3.4 |
+ | 208 x 208 | round | Memory-In-Pixel（8 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02970-00/g/cf-sm.jpg)
@@ -612,21 +612,21 @@ First Avenger
 
 预告器® 630
 
- | 215 x 180 | semi-round | Memory-In-Pixel (16 colors) | 1.4 |
+ | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01863-10/v/cf-sm-3d860c6d-aec3-4fcd-8544-3ec55190a637.jpg)
 
 预告器® 645
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01863-30/v/cf-sm-cf7f4202-dce2-4c43-ab20-0d0ae12b35f3.jpg)
 
 音乐®
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.2 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-04307-00/v/cf-sm.jpg)
@@ -640,49 +640,49 @@ First Avenger
 
 前者® 735xt
 
- | 215 x 180 | semi-round | Memory-In-Pixel (16 colors) | 2.4 |
+ | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 2.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02445-00/v/cf-sm-533429da-6a03-47d1-a80c-5bc0194c8797.jpg)
 
 预告器® 745
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01174-00/g/lf-md.jpg)
 
 前者® 920XT
 
- | 205 x 148 | rectangle | Memory-In-Pixel (16 colors) | 1.4 |
+ | 205 x 148 | rectangle | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01746-00/v/cf-sm.jpg)
 
 前者® 935
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02063-00/v/cf-sm-538e211f-f991-4d7a-91f7-d25d4feb9a99.jpg)
 
 预告器® 945
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02383-00/v/cf-sm-85c53677-a902-49b1-af0b-1787c5c8cbfd.jpg)
 
 预告器® 945 LTE
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02638-00/v/cf-sm-3eae0cec-a5ab-453a-9cd8-37250ce4f768.jpg)
 
 前者® 955 / 太阳能
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 5.2 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 5.2 |
 |
 
 ![](https://res.garmin.com/en/products/010-02809-00/g/cf-sm.jpg)
@@ -703,28 +703,28 @@ First Avenger
 
 卡尔明游泳TM 2
 
- | 208 x 208 | round | Memory-In-Pixel (8 colors) | 1.4 |
+ | 208 x 208 | round | Memory-In-Pixel（8 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02626-10/v/cf-sm-fd19486f-e976-45df-bb9d-a3c6dea45eb9.jpg)
 
 实力2 / 太阳能 / 双功率 / dēzl Edition
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 3.4 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02563-10/v/cf-sm-c75ac564-a112-4c6b-9ba6-bc0e5fad16a4.jpg)
 
 实力® 2S /太阳能 /双功率
 
- | 163 x 156 | semi-octagon | Memory-In-Pixel (2 colors) | 3.4 |
+ | 163 x 156 | semi-octagon | Memory-In-Pixel（2 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02805-10/v/cf-sm.jpg)
 
 激情® 2X 太阳能
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 3.4 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-02936-00/v/cf-sm.jpg)
@@ -745,14 +745,14 @@ First Avenger
 
 激情® 3 太阳能 45mm / 50mm
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 6.0 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02730-11/v/cf-sm.jpg)
 
 激情® 交叉
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 3.4 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 3.4 |
 |
 
 ![](https://res.garmin.com/en/products/010-03398-00/v/cf-sm.jpg)
@@ -766,14 +766,14 @@ First Avenger
 
 激情® E 40mm
 
- | 166 x 166 | semi-octagon | Memory-In-Pixel (2 colors) | 6.0 |
+ | 166 x 166 | semi-octagon | Memory-In-Pixel（2 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02933-00/v/cf-sm.jpg)
 
 简直® E 45mm
 
- | 176 x 176 | semi-octagon | Memory-In-Pixel (2 colors) | 6.0 |
+ | 176 x 176 | semi-octagon | Memory-In-Pixel（2 色） | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02648-40/g/cf-sm.jpg)
@@ -794,63 +794,63 @@ MARQ® (Gen 2) 飞行员
 
 马克思®冒险家
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-15/g/cf-sm-0b73c33d-2df0-4d7e-b438-fd23d7c4390f.jpg)
 
 MARQ®运动员
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-03/g/cf-sm-614d7b98-9b70-4c8a-bec7-5ee303166767.jpg)
 
 MARQ®飞行器
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-06/g/cf-sm-04034f67-9380-4d27-b5aa-678600fb8b5f.jpg)
 
 美国魔术版 MAR
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-11/g/cf-sm-4a863ce3-3cca-4146-b654-bfd551156b5a.jpg)
 
 马克®指挥官
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-00/g/cf-sm-2f580581-696f-4e11-808b-c8acd963de46.jpg)
 
 MARQ®司机
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-12/g/cf-sm-4d82de5c-a266-4cb0-abd1-a167526e2669.jpg)
 
 马尔克®探险
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02006-15/g/cf-sm-0b73c33d-2df0-4d7e-b438-fd23d7c4390f.jpg)
 
 马克斯®高尔夫球员
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.4 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02172-51/g/cf-sm-d454beb1-ffd5-4d70-9f9e-7a2202cb536c.jpg)
 
 雷
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02173-12/v/cf-sm-9af674f3-640f-43f0-91df-117ed510ffcf.jpg)
@@ -920,7 +920,7 @@ Venu® 4 45mm / D2TM空气 X15
 
 Venu® Sq
 
- | 240 x 240 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 240 x 240 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02701-00/v/cf-sm.jpg)
@@ -941,7 +941,7 @@ Venu® Sq 2
 
 音乐版®
 
- | 240 x 240 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 240 x 240 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02980-00/v/cf-sm.jpg)
@@ -955,49 +955,49 @@ Venu® X1
 
 ví
 
- | 205 x 148 | rectangle | Memory-In-Pixel (64 colors) | 1.4 |
+ | 205 x 148 | rectangle | Memory-In-Pixel（64 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01769-00/v/cf-sm.jpg)
 
 vívoactive® 3
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01769-01/g/cf-sm-01b9b246-bee9-46f0-a42d-db98ddfea352.jpg)
 
 vívoactive® 3 奔®系列
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.0 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01985-03/v/cf-sm-cc4e0386-75e2-4c2f-8cc5-59cca47faed6.jpg)
 
 视频 音乐 音乐
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.2 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01985-03/v/cf-sm-cc4e0386-75e2-4c2f-8cc5-59cca47faed6.jpg)
 
 视频动态® 3 音乐 LTE
 
- | 240 x 240 | round | Memory-In-Pixel (64 colors) | 3.1 |
+ | 240 x 240 | round | Memory-In-Pixel（64 色） | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02174-12/v/cf-sm-ea8594d6-289b-4a61-b99c-0566e02a9b43.jpg)
 
 vívoactive® 4
 
- | 260 x 260 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02172-32/v/cf-sm-dd867152-525f-4622-a4f4-d7a09dcea813.jpg)
 
 vívoactive® 4S
 
- | 218 x 218 | round | Memory-In-Pixel (64 colors) | 3.3 |
+ | 218 x 218 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02862-10/v/cf-sm.jpg)
@@ -1018,204 +1018,204 @@ vívoactive® 6
 
 vívoactive® HR
 
- | 148 x 205 | rectangle | Memory-In-Pixel (64 colors) | 2.4 |
+ | 148 x 205 | rectangle | Memory-In-Pixel（64 色） | 2.4 |
 
-| Outdoor Handhelds | Screen Resolution | Screen Shape | Screen Technology | API Level |
+| 户外手持设备 | 屏幕分辨率 | 屏幕形状 | 屏幕技术 | API 级别 |
 | --- | --- | --- | --- | --- |
 |
 ![](https://res.garmin.com/en/products/010-02940-00/v/cf-sm.jpg)
 
 eTrex® 触摸
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 5.1 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 5.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01918-00/g/cf-sm-239388ff-962c-49e5-bd4d-9d0936be669d.jpg)
 
 GPSMAP® 66s / 66i / 66sr / 66st
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.1 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.1 |
 |
 
 ![](https://res.garmin.com/en/products/010-02812-00/g/cf-sm.jpg)
 
 GPSMAP® 67 / 67i
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.2 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02235-00/g/cf-sm-b5128964-2292-4542-86e2-6becc7a575ca.jpg)
 
 GPSMAP® 86s / 86sc / 86i / 86sci
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.0 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02920-00/g/cf-sm.jpg)
 
 GPSMAP® H1 / H1i Plus
 
- | 282 x 470 | rectangle | Transflective Liquid-Crystal (High Color) | 5.0 |
+ | 282 x 470 | rectangle | 高色彩透反射液晶显示屏 | 5.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02133-00/g/cf-sm-eed10c23-6410-4fb4-bbe7-d235d8c1de78.jpg)
 
 蒙大纳® 7 系列
 
- | 480 x 800 | rectangle | Transflective Liquid-Crystal (High Color) | 3.2 |
+ | 480 x 800 | rectangle | 高色彩透反射液晶显示屏 | 3.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01672-20/g/cf-sm.jpg)
 
 俄勒冈® 7 系列
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.0 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01958-01/g/cf-sm.jpg)
 
 Rino® 7 系列
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.0 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.0 |
 
-| Edge | Screen Resolution | Screen Shape | Screen Technology | API Level |
+| Edge | 屏幕分辨率 | 屏幕形状 | 屏幕技术 | API 级别 |
 | --- | --- | --- | --- | --- |
 |
 ![](https://static.garmincdn.com/de/products/010-01161-01/g/cf-sm.jpg)
 
 边缘® 1000 / 探索
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 2.4 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 2.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01758-00/v/pd-01-sm.jpg)
 
 边缘® 1030
 
- | 282 x 470 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 282 x 470 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01758-10/v/pd-01-sm.jpg)
 
 边缘® 1030 / Bontrager
 
- | 282 x 470 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 282 x 470 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02424-00/g/cf-sm-87bc593f-a77e-4708-8d5c-b45ce3c8f4a7.jpg)
 
 边缘® 1030 Plus
 
- | 282 x 470 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 282 x 470 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02503-00/v/cf-sm-ba7f3091-b241-4fd3-a4e7-4f25a5332278.jpg)
 
 边缘® 1040 / 1040 太阳能
 
- | 282 x 470 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 282 x 470 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-02890-00/g/cf-sm.jpg)
 
 边缘® 1050
 
- | 480 x 800 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 480 x 800 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01913-00/v/cf-sm-a859efd3-adee-4924-ad86-8883b05468fd.jpg)
 
 边缘® 130
 
- | 230 x 303 | rectangle | Transflective Liquid-Crystal (Single Color) | 3.1 |
+ | 230 x 303 | rectangle | 单色透反射液晶显示屏 | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02385-00/v/cf-sm-1d14a1d6-efd6-4550-b181-99753155540d.jpg)
 
 边缘® 130 Plus
 
- | 230 x 303 | rectangle | Transflective Liquid-Crystal (Single Color) | 3.2 |
+ | 230 x 303 | rectangle | 单色透反射液晶显示屏 | 3.2 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01368-00/v/cf-sm.jpg)
 
 边缘® 520
 
- | 200 x 265 | rectangle | Transflective Liquid-Crystal (High Color) | 2.4 |
+ | 200 x 265 | rectangle | 高色彩透反射液晶显示屏 | 2.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02083-00/v/cf-sm-222cacb8-6733-4d20-8ad9-6c69b4fc917b.jpg)
 
 边缘® 520 Plus
 
- | 200 x 265 | rectangle | Transflective Liquid-Crystal (High Color) | 3.1 |
+ | 200 x 265 | rectangle | 高色彩透反射液晶显示屏 | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02060-00/v/cf-sm-4eb7ba21-1912-4616-bdf2-87c56008c2b8.jpg)
 
 边缘® 530
 
- | 246 x 322 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 246 x 322 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02694-00/g/cf-sm.jpg)
 
 边缘® 540 / 540 太阳能
 
- | 246 x 322 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 246 x 322 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-03022-00/g/cf-sm.jpg)
 
 边缘® 550
 
- | 420 x 600 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 420 x 600 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01626-00/g/cf-sm.jpg)
 
 边缘® 820 / 探索
 
- | 200 x 265 | rectangle | Transflective Liquid-Crystal (High Color) | 3.1 |
+ | 200 x 265 | rectangle | 高色彩透反射液晶显示屏 | 3.1 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02060-00/v/cf-sm-4eb7ba21-1912-4616-bdf2-87c56008c2b8.jpg)
 
 边缘® 830
 
- | 246 x 322 | rectangle | Transflective Liquid-Crystal (High Color) | 3.3 |
+ | 246 x 322 | rectangle | 高色彩透反射液晶显示屏 | 3.3 |
 |
 
 ![](https://res.garmin.com/en/products/010-02695-00/g/cf-sm.jpg)
 
 极限® 840 / 840太阳能
 
- | 246 x 322 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 246 x 322 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://res.garmin.com/en/products/010-03023-00/g/cf-sm.jpg)
 
 边缘® 850
 
- | 420 x 600 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 420 x 600 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02029-00/g/cf-sm-989c05c5-db39-4699-9692-440101e52cce.jpg)
 
 边缘® 探索
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 3.1 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 3.1 |
 |
 
 ![](https://res.garmin.com/en/products/010-02703-00/g/cf-sm.jpg)
 
 边缘® 探索 2
 
- | 240 x 400 | rectangle | Transflective Liquid-Crystal (High Color) | 5.1 |
+ | 240 x 400 | rectangle | 高色彩透反射液晶显示屏 | 5.1 |
 |
 
 ![](https://res.garmin.com/en/products/010-02993-00/g/cf-sm.jpg)
 
 边缘® MTB
 
- | 240 x 320 | rectangle | Transflective Liquid-Crystal (High Color) | 6.0 |
+ | 240 x 320 | rectangle | 高色彩透反射液晶显示屏 | 6.0 |

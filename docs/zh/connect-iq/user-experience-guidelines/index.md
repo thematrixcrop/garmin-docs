@@ -1,11 +1,11 @@
 ---
 title: "User Experience Guidelines"
 ---
-# User Experience Guidelines
+# 用户体验指南
 
 连接智商系统允许第三方开发人员将他们的设计和经验带入Garmin产品.本文将介绍为Garmin观众设计应用程序的一些指南.
 
-## Customer Focused Devices
+## 面向客户的设备
 
 与其他平台不同,Garmin的产品针对其服务的客户:
 

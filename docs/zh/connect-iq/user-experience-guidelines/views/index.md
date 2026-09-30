@@ -1,19 +1,19 @@
 ---
 title: "Views"
 ---
-# Views
+# 视图
 
 视图是您的信息的全屏画布.它们可以显示文本,图形,动画和其他内容.
 
-## View Stack
+## 视图堆栈
 
 Garmin 设备具有有限的屏幕房地产,因此您通常不会同时在屏幕上多个视图.相反,视图被叠加在一起.用户使用后背的行为来删除视图.
 
-## View Transitions
+## 视图转换
 
 Garmin 用户界面工具包提供了几种转型,以动画屏幕内外的视图.
 
--   Immediately appear
+-   立即显示
 
 - 从左,右,上或下滑
 
@@ -30,16 +30,16 @@ Garmin 用户界面工具包提供了几种转型,以动画屏幕内外的视图
 
 在Garmin应用程序中,另一个常见模式是页面循环,主要屏幕提供了一个信息轮,用户可以通过.使用这种模式,上下按或上下滑鼠标允许页面之间的导航.您可以使用滑页过渡,给出页面的幻觉.
 
-## Interaction Hints
+## 交互提示
 
 有时没有足够的视觉空间来向用户提供信息和导航操作.在这些情况下,您可能需要给一个提示按哪个按或在屏幕上点击哪个位置来显示选项菜单:
 
-### Example
+### 示例
 
-Button Hint
+按钮提示
 
 ![](/connect-iq/resources/ux-guide/button-hint.png)
 
-Touch Hint
+触摸提示
 
 ![](/connect-iq/resources/ux-guide/touch-hint.png)

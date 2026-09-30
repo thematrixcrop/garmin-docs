@@ -3,7 +3,7 @@ title: "How do I Override The Goal Animation?"
 ---
 # 如何覆盖目标动画？
 
-*Since API level 1.3.0*
+*自 API 级别 1.3.0*
 
 当实现活动跟踪目标时显示的屏幕可以被激活的表表面覆盖.通过在应用程序的`AppBase`类中实现`getGoalView()`函数.
 

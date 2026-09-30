@@ -1,11 +1,11 @@
 ---
 title: "Monkey C Visual Studio Code Extension"
 ---
-# Monkey C Visual Studio Code Extension
+# Monkey C Visual Studio Code 扩展
 
 子C扩展增加了使用Connect IQ SDK的支持,包括语法突出编辑器,构建集成和集成的调试器.子C扩展需要[Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview),Oracle JavaTM运行环境版本11或更高,以及Connect IQ SDK版本4.0.6或更高.
 
-This Monkey C extension offers several features, including:
+此 Monkey C 扩展提供多项功能，包括：
 
 - 实时错误和警告  Jung 在编辑子C,林,设置,MSS和资源XML文件时会显示这些错误和警告.任何报告的错误或警告将显示在问题选项.
 
@@ -37,43 +37,43 @@ This Monkey C extension offers several features, including:
 6. 输入"验证安装"并选择*子C:验证安装*
 
 
-## Project Management
+## 项目管理
 
 The following commands 可用于 create a new project and export it:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: New Project* |创建新的Connect IQ应用程序或子桶|
-| *Monkey C: Build Current Project* |将当前的项目与指定设备进行编译|
+| *Monkey C：新建项目* |创建新的Connect IQ应用程序或子桶|
+| *Monkey C：构建当前项目* |将当前的项目与指定设备进行编译|
 |*子C: 构建为设备*|输出导师生成设备的侧载`PRG`|
-| *Monkey C: Clean Project* |删除构建系统生成的任何缓存文物|
-| *Monkey C: Export Project* |为该项目创建一个`IQ`或`barrel`文件|
+| *Monkey C：清理项目* |删除构建系统生成的任何缓存文物|
+| *Monkey C：导出项目* |为该项目创建一个`IQ`或`barrel`文件|
 
-## Manifest Editing
+## 编辑清单
 
 The following commands 可用于 edit and update the `manifest.xml` of your project:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: Edit Products* |在`manifest.xml`中编辑产品.只允许选择支持最小SDK版本的产品|
-| *Monkey C: Edit Permissions* |编辑`manifest.xml`中的权限|
-| *Monkey C: Edit Languages* |编辑`manifest.xml`中的语言|
-| *Monkey C: Edit Application* |编辑`manifest.xml`中的应用程序元数据 (名称,标签,识别符)|
-| *Monkey C: Configure Barrel* |Wizard 添加或删除您的项目中的子桶|
-| *Monkey C: Set Products by Connect IQ Version* |允许所有符合Connect IQ版本的产品进行大规模选择|
-| *Monkey C: Edit Annotations* |允许添加新的注释到子桶项目|
-| *Monkey C: Regenerate UUID* |为您的项目创建一个新的应用程序 UUID|
+| *Monkey C：编辑产品* |在`manifest.xml`中编辑产品.只允许选择支持最小SDK版本的产品|
+| *Monkey C：编辑权限* |编辑`manifest.xml`中的权限|
+| *Monkey C：编辑语言* |编辑`manifest.xml`中的语言|
+| *Monkey C：编辑应用* |编辑`manifest.xml`中的应用程序元数据 (名称,标签,识别符)|
+| *Monkey C：配置 Barrel* |Wizard 添加或删除您的项目中的子桶|
+| *Monkey C：根据 Connect IQ 版本设置产品* |允许所有符合Connect IQ版本的产品进行大规模选择|
+| *Monkey C：编辑注释* |允许添加新的注释到子桶项目|
+| *Monkey C：重新生成 UUID* |为您的项目创建一个新的应用程序 UUID|
 
 ##与连接智能 SDK 接口
 
 下列命令允许您从Visual Studio Code访问SDK工具和文档:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: Open ERA Viewer* |打开[Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application)工具|
-| *Monkey C: Open Monkey Graph* |打开[Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference)工具|
-| *Monkey C: Open Monkey Motion* |打开[Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion)工具|
-| *Monkey C: Open SDK Manager* |打开连接 IQ SDK 管理器|
+| *Monkey C：打开 ERA 查看器* |打开[Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application)工具|
+| *Monkey C：打开 Monkey Graph* |打开[Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference)工具|
+| *Monkey C：打开 Monkey Motion* |打开[Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion)工具|
+| *Monkey C：打开 SDK 管理器* |打开连接 IQ SDK 管理器|
 | *Monkey C: View 文档* |提供所有 Connect IQ SDK 文件的访问|
 
 ## 运行程序
@@ -89,31 +89,31 @@ The following commands 可用于 edit and update the `manifest.xml` of your proj
 
 ![](/connect-iq/resources/programmers-guide/first_app.png)
 
-## Running Run No Evil Tests
+## 运行 Run No Evil 测试
 
 您可以使用以下命令运行测试:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: Run Tests* |在您的应用程序中运行所有 Run No Evil 测试|
+| *Monkey C：运行测试* |在您的应用程序中运行所有 Run No Evil 测试|
 
-## Running Complication Publisher and Complication Subscriber Apps
+## 运行复杂功能发布者和复杂功能订阅者应用
 
 您可以使用以下命令运行并调试复杂性发布器和复杂性订阅器应用程序:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: Launch Complication* |在调试器中运行复杂应用程序|
+| *Monkey C：启动复杂功能* |在调试器中运行复杂应用程序|
 
 您还可以通过 launch.json 通过添加"Run Complication Apps"启动配置来运行复杂化应用程序.
 
-## Running App in Sensor Pairing Mode
+## 以传感器配对模式运行应用
 
 在传感器配对模式下使用以下命令启动和调试应用程序:
 
-| Command | Description |
+| Command | 说明 |
 | --- | --- |
-| *Monkey C: Launch Native Pairing* |运行应用程序在传感器本地配对模式在调试器中|
+| *Monkey C：启动原生配对* |运行应用程序在传感器本地配对模式在调试器中|
 
 您还可以通过 launch.json 通过添加"Run Native Pairing"启动配置来在传感器配对模式中运行应用程序,无论是通过调试还是没有.
 
@@ -121,15 +121,15 @@ The following commands 可用于 edit and update the `manifest.xml` of your proj
 
 扩展将为您的项目创建`launch.json`当您运行或调试产品.`launch.json`提供了许多定制选项,以添加启动功能
 
-| Property | Required | Type | Description |
+| Property | 必需 | 类型 | 说明 |
 | --- | --- | --- | --- |
 | `prg` | x | Path |绝对路径到项目文件|
 | `prgDebugXml` | x | Path |绝对路径到项目调试xml文件|
-| `stopAtLaunch` |  | Boolean |在调试时,当程序启动时立即打断.|
-| `runTests` |  | Boolean |在运行这个配置时运行NoEvil测试案例|
-| `device` |  | Product Identifier |运行设备或`${command:GetTargetDevice}`每次运行选择新设备|
+| `stopAtLaunch` |  | 布尔值 |在调试时,当程序启动时立即打断.|
+| `runTests` |  | 布尔值 |在运行这个配置时运行NoEvil测试案例|
+| `device` |  | 产品标识符 |运行设备或`${command:GetTargetDevice}`每次运行选择新设备|
 | `settingsJson` |  | Path |项目设置文件的绝对路径|
 | `tests` |  |串列|选项列列列列出要运行的测试名称|
-| `runNativePairing` |  | Boolean | Run app in sensor native pairing mode |
+| `runNativePairing` |  | 布尔值 | 在传感器原生配对模式下运行应用 |
 | `complicationPublisherFolder` |  | Path |一个复杂出版商的项目文件的绝对路径|
 | `complicationSubscriberFolder` |  | Path |一个复杂订户的项目文件的绝对路径|

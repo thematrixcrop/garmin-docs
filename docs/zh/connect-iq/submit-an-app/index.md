@@ -22,17 +22,17 @@ title: "Submit an App"
 
 
 
-[Submit an App](https://apps.garmin.com/en-US/developer/upload)
+[提交应用](https://apps.garmin.com/en-US/developer/upload)
 
 
 
 ![](/static/calendar-d9c3054da75fa33ed71c58c9b1570ce8.svg)
 
-#### Approval Process
+#### 审批流程
 
 在你成功上传你的应用程序后,我们会审查它.你将能够预览你的应用程序,然后自己下载它进行测试.在批准等待期间,你的应用程序不会出现在连接智商商店.一旦它被批准,我们会通知你.然后它会出现在连接智商商店,让所有用户发送到他们的设备.
 
-#### General Guidelines
+#### 通用指南
 
 我们很高兴您想开发Connect IQ应用程序,我们希望您取得成功.在开发应用程序时,您应该记住的[some guidelines](/connect-iq/app-review-guidelines/).这些指南将帮助您加快审批过程.
 

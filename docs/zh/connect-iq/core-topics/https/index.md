@@ -1,19 +1,19 @@
 ---
 title: "JSON REST Requests"
 ---
-# JSON REST Requests
+# JSON REST 请求
 
 插件和应用程序可以通过[Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)(BLE) 与手机通信.手机可能与设备共享数据,或者它可以作为应用程序和互联网之间的桥梁. 这使手机成为可穿戴网络的一部分.
 
 此外,还提供了高层次的接口,可进行JSON和图像请求. 这使开发人员可以开发可穿戴的网页应用程序,而无需编写自己的伴手机应用程序.
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) |将一个web服务进行异步JSON REST请求| 1.3.0 |
 | [Communications.makeImageRequest()](/connect-iq/api-docs/Toybox/Communications/#makeImageRequest-instance_function) |从网上下载图像| 1.2.0 |
 | [Communications.openWebPage()](/connect-iq/api-docs/Toybox/Communications/#openWebPage-instance_function) |命令连接手机要求用户查看网页链接| 1.3.0 |
 
-## JSON REST Requests via Mobile Proxy
+## 通过移动代理发送 JSON REST 请求
 
 子C将一个高水平的API暴露,通过[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function)和API允许通过Garmin Connect Mobile对基本网络服务进行调用.这些API将JSON请求和图像请求暴露为REST API调用的非常简单的API.JSON调用将转换为序列化子C数据并通过BLE管道发送.您必须设置`Communications`权限使用这个API.
 

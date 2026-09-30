@@ -24,11 +24,11 @@ class BgbgServiceDelegate extends Toybox.System.ServiceDelegate {
 
 使用它并不意味着它只在背景服务中;类,模块和变量将在主进程和背景进程中都可用.
 
-## Service Delegate
+## 服务委托
 
 后台服务可以由不同类型的系统事件触发:步骤目标实现,睡眠/觉醒时间和时间事件,以下讨论.[System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)允许您定义当这些事件发生时您的应用程序应该执行什么.[AppBase.getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function)是您的代码中的服务代表如何找到.使用[Toybox.Background](/connect-iq/api-docs/Toybox/Background/)模块中的方法来注册您的服务,以启动给定的触发器.
 
-## Temporal Events
+## 时间事件
 
 在示例代码中,我在检查后,以确保应用程序在支持背景事件的设备上运行后,作为[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)的一部分.
 
@@ -56,7 +56,7 @@ function onBackgroundData(data) {
 }
 ```
 
-## Interprocess Communication
+## 进程间通信
 
 通过[Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)在[ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)中将数据从背景服务传输到主过程中
 
@@ -88,7 +88,7 @@ function onBackgroundData(data) {
 
 后台可以在主进程在[AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)中看到之前运行一次以上. 主进程只能看到最后一个,而不是全部,但在后台过程中,你可以使用[Background.getBackgroundData()](/connect-iq/api-docs/Toybox/Background/#getBackgroundData-instance_function)来获取目前为主进程排队的内容,但尚未交付.你可以将其与后台进程的内容结合起来,然后返回所有内容.
 
-## Other Points
+## 其他要点
 
 - **WatchFaces** - 时钟面对比其他应用程序的时间有点不同,如果/当背景服务运行时,这是设计的.时钟面对的背景服务只会运行,如果该时钟面对是"活跃"时钟面 (目前选择使用的).想象一下你安装了两个时钟面对的情况,两者都从同一来源中获取天气数据,每天的请求限制.不活跃的时钟面对的背景服务运行没有理由,因为它只会消耗每天的请求量.
 

@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 ---
-# Resources
+# 资源
 
 ![](/connect-iq/resources/programmers-guide/sculptor-monkey.png)
 
@@ -22,7 +22,7 @@ title: "Resources"
 
 代码可以使用`Rez`类来引用运行时间的资源.
 
-| API |目的| API Level |
+| API |目的| API 级别 |
 | --- | --- | --- |
 | [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) |输入一个资源从PRG到内存中| 1.0.0 |
 | [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) |输入一个资源从PRG到内存中| 3.1.0 |
@@ -41,7 +41,7 @@ dc.drawBitmap( 50, 50, image );
 
 资源是参考数量的,就像其他 C子C对象一样.加载资源可能是一项昂贵的操作,因此在处理屏幕更新时不要加载资源.
 
-### Referencing Resources Within Resource Files
+### 在资源文件中引用资源
 
 资源也可以从其他资源文件中引用. 为此,使用语法`@<module>.<id>`. 例如,您可以使用以下代码引用菜单定义中的字符串资源.
 
@@ -55,9 +55,9 @@ dc.drawBitmap( 50, 50, image );
 
 这代码将使用用`menu_item_1_label`的ID定义的字符串作为菜单项的标签.
 
-## Resource Scopes
+## 资源作用域
 
-*Since API level 3.1.0*
+*自 API 级别 3.1.0*
 
 添加资源到应用程序中带来较小的运行时间内存成本.虽然成本很小,但它可以严重削减可用的后台服务和视图内存.为了减轻这些成本,Connect IQ 具有额外的`scope`属性,用于以下资源标签:`<layout>`,`<drawable-list>`,`<bitmap>`,`<string>`,`<font>`,`<jsonData>`.`scope`属性告诉资源编译器该资源应提供的应用类型.`scope`属性的有效值为`background`,`<layout>`0和`<layout>`1 .如果属性不指定给某个资源,则默认将被认为是`<layout>`2范围的一部分.使用`<layout>`3属性配备资源的例子:
 
@@ -72,9 +72,9 @@ dc.drawBitmap( 50, 50, image );
 
 使用`scope`属性来存储您的视角或背景服务中的内存.所有背景范围资源将可用于视角和前景应用.所有视角范围资源将可用于前景应用,但不是背景服务.前景范围资源将只可用于前景应用.
 
-| Application Mode | MyBackgroundString | MyGlanceString | MyForegroundString |
+| 应用模式 | MyBackgroundString | MyGlanceString | MyForegroundString |
 | --- | --- | --- | --- |
-| Background Service | X |  |  |
+| 后台服务 | X |  |  |
 | Glance | X | X |  |
 | Foreground | X | X | X |
 
@@ -82,7 +82,7 @@ dc.drawBitmap( 50, 50, image );
 
 See [Background Services](/connect-iq/core-topics/backgrounding/#background-services) or [Glances](/connect-iq/core-topics/glances/#glances) 更多信息.
 
-## Strings
+## 字符串
 
 连接智商产品在世界各地使用,这些用户希望应用程序在他们的语言中工作.连接智商支持使用字符串资源文件添加字符串:
 
@@ -94,7 +94,7 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 
 在运行时,您可以使用[WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)加载这个字符串.字符串定义采用以下属性:
 
-| Attribute | Required |描述|
+| Attribute | 必需 |描述|
 | --- | --- | --- |
 | `id` | Yes |字符串的标识符|
 | `scope` | No |参见[resource scopes](#resource-scopes). 字符串可以具有额外的`settings`范围,从而将其从运行时间中删除.当字符串仅在设置定义中使用时,这很有用.|
@@ -102,9 +102,9 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 
 使用您的资源文件的[localization qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers),您可以为不同的语言提供不同的字符串.将下列后音符添加到您的资源文件中,将允许您添加各种语言的字符串文件
 
-| Qualifier | Language | Notes |
+| Qualifier | Language | 备注 |
 | --- | --- | --- |
-| No qualifier | Base language | These strings will be used if no language is provided. If a translation is not provided for a string in a specific language, 系统将 use the base language version as a substitution. |
+| 无限定符 | 基础语言 | These strings will be used if no language is provided. If a translation is not provided for a string in a specific language, 系统将 use the base language version as a substitution. |
 | `ara` | Arabic |  |
 | `bul` | Bulgarian |  |
 | `ces` | Czech |  |
@@ -123,7 +123,7 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 | `kor` | Korean |  |
 | `lav` | Latvian |  |
 | `lit` | Lithuanian |  |
-| `nob` | Norsk Bokmål |  |
+| `nob` | 挪威语博克马尔文 |  |
 | `pol` | Polish |  |
 | `por` | Portuguese |  |
 | `slo` | Slovak |  |
@@ -136,17 +136,17 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 | `tur` | Turkish |  |
 | `ukr` | Ukrainian |  |
 | `vie` | Vietnamese |  |
-| `zsm` | Standard Malay |  |
-| `zhs` | Simplified Chinese |  |
-| `zht` | Traditional Chinese |  |
+| `zsm` | 标准马来语 |  |
+| `zhs` | 简体中文 |  |
+| `zht` | 繁体中文 |  |
 
 您可以将这些资格与设备,家庭和屏幕资格结合起来,以设置适应每个设备的字符串.
 
-![Resource folders with qualifiers](/connect-iq/resources/programmers-guide/resources-strings.png)
+![带限定符的资源文件夹](/connect-iq/resources/programmers-guide/resources-strings.png)
 
 查看`Strings`样本为使用字符串资源系统的一个例子.
 
-## Bitmaps
+## 位图
 
 Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每台设备都需要明确转换位图.资源编译器将为每个预期的产品生成资源,这允许开发人员拥有一组黑白产品资源,一组彩色产品资源,一组更大的屏幕尺寸等.资源编译器支持`JPG/JPEG`,`BMP/WBMP`,`GIF`,`SVG`和`PNG`文件格式.
 
@@ -167,48 +167,48 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 下面的表显示了`<bitmap>`定义的有效属性.
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | Required |
-| `filename` |图像文件的相对路径|一个有效,可解决的图像文件的路径| NA | Required |
+| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | 必需 |
+| `filename` |图像文件的相对路径|一个有效,可解决的图像文件的路径| NA | 必需 |
 | `dithering` |在编译图像时使用的旋的类型|`floyd_steinberg`或`none`| `floyd_steinberg` |  |
 | `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
-| `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| `true` for 16-bit color devices |  |
-| `packingFormat` |将图像编码到PRG的格式| `default`, `png`, `jpg`, `yuv`. | `default` | Options besides `default` only available on certain devices. See [Bitmap Packing Formats](#bitmap-packing-formats) |
-| `scaleX` |在x维度上,该图像应该如何扩展?| Pixel size or percentage |如果设置`scaleY`,则将默认地设置为`scaleY`s值.否则将默认地设置为100%的图像宽度| See `scaleRelativeTo` |
-| `scaleY` |在x维度上,该图像应该如何扩展?| Pixel size or percentage |如果设置`scaleX`,则将默认设置为`scaleX`s值.否则将默认设置为100%的图像高度.| See `scaleRelativeTo` |
+| `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| 对于 16 位颜色设备为 `true` |  |
+| `packingFormat` |将图像编码到PRG的格式| `default`, `png`, `jpg`, `yuv`. | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [Bitmap Packing Formats](#bitmap-packing-formats) |
+| `scaleX` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleY`,则将默认地设置为`scaleY`s值.否则将默认地设置为100%的图像宽度| 请参阅 `scaleRelativeTo` |
+| `scaleY` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleX`,则将默认设置为`scaleX`s值.否则将默认设置为100%的图像高度.| 请参阅 `scaleRelativeTo` |
 | `scaleRelativeTo` |规模因素应该基于什么?|`screen`或`image`| `screen` |设置对相对扩展的基础. 如果设置为屏幕,图像将根据编译时正在构建的产品重新扩展|
-| `personality` |元素的个性类|个性类| None | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `personality` |元素的个性类|个性类| None | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 对于`<palette>`定义的有效属性如下表.
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
 | `disableTransparency` |编译器应该允许图像中透明的像素吗?|`true`或`false`| `false` |  |
 
-### Bitmap Packing Formats
+### 位图打包格式
 
-*Since API level 4.0.0*
+*自 API 级别 4.0.0*
 
 图像可以增加您的执行式尺寸,这可以增加用户安装或更新您的应用程序时的额外等待. 为了减少可执行式膨胀,使用这些位图属性将图像包装到您的执行式中.
 
 每种格式都有其优点和缺点:
 
-| Format | Advantage | Disadvantage | Use Case |
+| Format | Advantage | Disadvantage | 使用场景 |
 | --- | --- | --- | --- |
-| `default` |可在所有产品上使用,最快加载,支持阿尔法频道| No compression |应用程序在API前4.0.0级设备上运行.低调图像可能具有非常小的运行时间成本|
-| `png` | Lossless, compressed and supports alpha channel |最慢的加载,如果经常从图形库中清除和重新加载,这可以增加运行时间成本|进口带或无带阿尔法频道的非照片图像|
-| `jpg` |压缩非常好,快速加载| Lossy format and does not support alpha channel | Importing photo imagery without alpha channel |
-| `yuv` |压缩良好,支持阿尔法通道,快速加载| Lossy format |通过阿尔法频道进口照片图像|
+| `default` |可在所有产品上使用,最快加载,支持阿尔法频道| 不压缩 |应用程序在API前4.0.0级设备上运行.低调图像可能具有非常小的运行时间成本|
+| `png` | 无损、已压缩并支持 Alpha 通道 |最慢的加载,如果经常从图形库中清除和重新加载,这可以增加运行时间成本|进口带或无带阿尔法频道的非照片图像|
+| `jpg` |压缩非常好,快速加载| 有损格式，不支持 alpha 通道 | 导入不带 alpha 通道的照片图像 |
+| `yuv` |压缩良好,支持阿尔法通道,快速加载| 有损格式 |通过阿尔法频道进口照片图像|
 |  |  |  |  |
 
-## Fonts
+## 字体
 
 资源编译器可以读取`TXT`或`PNG`格式的字体.您可以使用BMFont工具 (可在[http://www.angelcode.com/products/bmfont/](http://www.angelcode.com/products/bmfont/)上使用) 来将字体从许多不同的格式转换为兼容格式. 在出口之前,请确保BMFont的 *字体设置*指定Unicode字符集.下面的图片中显示出所建议的出口选项:
 
 图1.BMFont出口选择
 
-![The BMFont Export Options](/connect-iq/resources/programmers-guide/bmfont_options.png)
+![BMFont 导出选项](/connect-iq/resources/programmers-guide/bmfont_options.png)
 
 颜色可以使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)设置.由于位图字体可以耗费大量的运行时间内存,字体转换器默认设置为非-反-aliased 1-bit字体来存储内存.如果你知道你将有运行时间内存,你可以使用`antialias`选项启动字体反-aliasing.
 
@@ -226,92 +226,92 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 字体元素接受以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None |字体的唯一标识符|
-| `filename` | String | Yes | None |在BMFont生成的`.fnt`文件中|
-| `filter` | String | No | None |选项字符串概述所有字符从字体中输入|
-| `antialias` | Boolean | No | `false` |布尔字体识别是否应进口与反化信息|
-| `scope` | String | No | `foreground` | See [resource scopes](#resource-scopes) |
+| `id` | 字符串 | Yes | None |字体的唯一标识符|
+| `filename` | 字符串 | Yes | None |在BMFont生成的`.fnt`文件中|
+| `filter` | 字符串 | No | None |选项字符串概述所有字符从字体中输入|
+| `antialias` | 布尔值 | No | `false` |布尔字体识别是否应进口与反化信息|
+| `scope` | 字符串 | No | `foreground` | 请参阅 [resource scopes](#resource-scopes) |
 | `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
-## Menus
+## 菜单
 
 菜单是Connect IQ产品中常见的UI元素.菜单资源允许您在资源定义中定义菜单.
 
-### Standard Menus
+### 标准菜单
 
 菜单使用以下属性的`<menu2>`元素定义:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None |菜单的唯一标识符|
-| `title` | String | No | None | String, string resource identifier, or drawable resource identifier |
-| `icon` | Drawable reference | No | None |用于 Instinct 2 子屏幕图标.|
+| `id` | 字符串 | Yes | None |菜单的唯一标识符|
+| `title` | 字符串 | No | None | 字符串、字符串资源标识符或可绘制资源标识符 |
+| `icon` | 可绘制对象引用 | No | None |用于 Instinct 2 子屏幕图标.|
 | `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 在`<menu2>`元素内可以有`<menu-item>`,`<toggle-menu-item>`或`<icon-menu-item>`类型的数组.
 
-#### Standard Menu Items
+#### 标准菜单项
 
 标准菜单项目包含在`<menu-item>`元素中,具有以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None |菜单项的唯一标识符|
-| `label` | String | Yes | None |菜单项的字符串标题|
-| `subLabel` | String | No | None |菜单项的字符串字幕|
-| `icon` | Drawable reference | No | None |在 Instinct 2 子屏幕中显示的可画图标|
+| `id` | 字符串 | Yes | None |菜单项的唯一标识符|
+| `label` | 字符串 | Yes | None |菜单项的字符串标题|
+| `subLabel` | 字符串 | No | None |菜单项的字符串字幕|
+| `icon` | 可绘制对象引用 | No | None |在 Instinct 2 子屏幕中显示的可画图标|
 | `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
-#### Toggle Menu Items
+#### 切换菜单项
 
 调节菜单项包含在`<toggle-menu-item>`元素中.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `disabledSubLabel` | String | No | None |独立的子标签,用于在禁用状态下切换ID时|
-| `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
+| `disabledSubLabel` | 字符串 | No | None |独立的子标签,用于在禁用状态下切换ID时|
+| `checked` | 布尔值 | No | `false` |`true`如果必须启用转换,`false`不然|
 
-#### Icon Menu Items
+#### 图标菜单项
 
 标签菜单项由`<icon-menu-item>`元素定义. 标签菜单图标,`icon`属性显示在菜单项中.
 
-### Checkbox Menus
+### 复选框菜单
 
 查询框菜单是用`<checkbox-menu>`元素定义的,它具有与[standard menus](#standard-menus)相同的属性.查询框菜单内可以包含`<checkbox-menu-item>`元素的序列.
 
-#### Checkbox Menu Items
+#### 复选框菜单项
 
 查询框菜单项是用`<checkbox-menu-item>`元素定义的.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
+| `checked` | 布尔值 | No | `false` |`true`如果必须启用转换,`false`不然|
 
-### Action Menus
+### 操作菜单
 
 动作菜单是与页面相关的文本菜单. 动作菜单是用`<action-menu>`元素定义的,它可以具有以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None |菜单的唯一标识符|
+| `id` | 字符串 | Yes | None |菜单的唯一标识符|
 | `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |允许设置如果动作菜单是光在暗或暗在光明. 不能在所有产品上设置.|
 | `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
-#### Action Menu Items
+#### 操作菜单项
 
 动作菜单项目包含在`<action-menu-item>`元素中,具有以下属性:
 
-| Attribute |类型| Required | Default |描述|
+| Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None |菜单项的唯一标识符|
-| `label` | String | Yes | None |菜单项的字符串标题|
+| `id` | 字符串 | Yes | None |菜单项的唯一标识符|
+| `label` | 字符串 | Yes | None |菜单项的字符串标题|
 | `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
-## Animations
+## 动画
 
-*Since API level 3.1.0*
+*自 API 级别 3.1.0*
 
 The Monkey Motion tool included in the Connect IQ SDK that 可用于 generate animation resources for compatible Connect IQ products.
 
@@ -335,13 +335,13 @@ Additionally, to overcome the fact that the `YUV` format does not support transp
 
 为了将动画资源纳入子C项目的,定义动画资源.这可以手动或使用子运动工具.下表显示了`<animation>`资源的所有有效属性:
 
-| Attribute | Definition | Valid Values |默认值| Notes |
+| Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | Required |
-| `filename` |子运动宣言文件的相对路径|一个有效的,可解决的路径到一个子运动表现文件| NA | Required |
-| `personality` |元素的个性类|一个定义的人格类| NA | Optional |
+| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | 必需 |
+| `filename` |子运动宣言文件的相对路径|一个有效的,可解决的路径到一个子运动表现文件| NA | 必需 |
+| `personality` |元素的个性类|一个定义的人格类| NA | 可选 |
 
-An example Animation XML resource:
+动画 XML 资源示例：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -382,13 +382,13 @@ class MyAnimationView extends WatchUi.View {
 
 阅读更多关于[Monkey Motion reference](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion),[API documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/),[AnimationLayer documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)和`AnimationWatchFace`样本中的动画
 
-## JSON Data
+## JSON 数据
 
 JSON 数据资源可以在应用程序中存储相对大量的数据,而无需随时存储其在内存中.这可以用于存储类似在运行时需要引用的信息表的东西,但不会被修改.
 
 这些资源是用`jsonData`标签声明在资源文件中,由资源编译器读取,并在运行时按需加载.`jsonData`标签支持以下属性:
 
-| Attribute | Definition | Valid Values |
+| Attribute | Definition | 有效值 |
 | --- | --- | --- |
 | `id` |JSON 资源的标识符|任何以字母开始的字符串|
 | `filename` |包含JSON数据的文件名称|一个有效的,可解决的数据文件路径|

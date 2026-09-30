@@ -1,7 +1,7 @@
 ---
 title: "Price Points"
 ---
-# Price Points
+# 价格档位
 
 -   [ARS](#ars)
 
@@ -38,7 +38,7 @@ title: "Price Points"
 
 ## ARS
 
-| Price Point | Argentina |
+| 价格档位 | Argentina |
 | --- | --- |
 |美元 $2.00| 2099 ARS |
 |美元 2.25 美元| 2299 ARS |
@@ -121,7 +121,7 @@ title: "Price Points"
 
 ## AUD
 
-| Price Point | Australia |
+| 价格档位 | Australia |
 | --- | --- |
 |美元 $2.00| 3.25 AUD |
 |美元 2.25 美元| 3.75 AUD |
@@ -204,7 +204,7 @@ title: "Price Points"
 
 ## CAD
 
-| Price Point | Canada |
+| 价格档位 | Canada |
 | --- | --- |
 |美元 $2.00| 3.49 CAD |
 |美元 2.25 美元| 3.75 CAD |
@@ -287,7 +287,7 @@ title: "Price Points"
 
 ## CHF
 
-| Price Point | Switzerland |
+| 价格档位 | Switzerland |
 | --- | --- |
 |美元 $2.00| 2.00 CHF |
 |美元 2.25 美元| 2.30 CHF |
@@ -370,7 +370,7 @@ title: "Price Points"
 
 ## CZK
 
-| Price Point | Czech Republic |
+| 价格档位 | 捷克共和国 |
 | --- | --- |
 |美元 $2.00| 69.00 CZK |
 |美元 2.25 美元| 69.00 CZK |
@@ -453,7 +453,7 @@ title: "Price Points"
 
 ## DKK
 
-| Price Point | Greenland | Denmark |
+| 价格档位 | Greenland | Denmark |
 | --- | --- | --- |
 |美元 $2.00| 15.00 DKK | 18.50 DKK |
 |美元 2.25 美元| 16.50 DKK | 20.50 DKK |
@@ -536,7 +536,7 @@ title: "Price Points"
 
 ## EUR
 
-| Price Point | France, Germany, Italy, Portugal, Spain |
+| 价格档位 | 法国、德国、意大利、葡萄牙、西班牙 |
 | --- | --- |
 |美元 $2.00| 2.49 EUR |
 |美元 2.25 美元| 2.69 EUR |
@@ -619,7 +619,7 @@ title: "Price Points"
 
 ## GBP
 
-| Price Point | Gibraltar | United Kingdom |
+| 价格档位 | Gibraltar | 英国 |
 | --- | --- | --- |
 |美元 $2.00| 1.69 GBP | 1.99 GBP |
 |美元 2.25 美元| 1.99 GBP | 2.29 GBP |
@@ -702,7 +702,7 @@ title: "Price Points"
 
 ## MXN
 
-| Price Point | Mexico |
+| 价格档位 | Mexico |
 | --- | --- |
 |美元 $2.00| 39.25 MXN |
 |美元 2.25 美元| 44.25 MXN |
@@ -785,7 +785,7 @@ title: "Price Points"
 
 ## NOK
 
-| Price Point | Svalbard and Jan Mayen | Norway |
+| 价格档位 | 斯瓦尔巴群岛和扬马延岛 | Norway |
 | --- | --- | --- |
 |美元 $2.00| 22.50 NOK | 28.00 NOK |
 |美元 2.25 美元| 25.50 NOK | 31.50 NOK |
@@ -868,7 +868,7 @@ title: "Price Points"
 
 ## NZD
 
-| Price Point | New Zealand |
+| 价格档位 | 新西兰 |
 | --- | --- |
 |美元 $2.00| 3.49 NZD |
 |美元 2.25 美元| 3.99 NZD |
@@ -951,7 +951,7 @@ title: "Price Points"
 
 ## RON
 
-| Price Point | Romania |
+| 价格档位 | Romania |
 | --- | --- |
 |美元 $2.00| 19 RON |
 |美元 2.25 美元| 19 RON |
@@ -1034,7 +1034,7 @@ title: "Price Points"
 
 ## SEK
 
-| Price Point | Sweden |
+| 价格档位 | Sweden |
 | --- | --- |
 |美元 $2.00| 28.00 SEK |
 |美元 2.25 美元| 31.50 SEK |
@@ -1117,7 +1117,7 @@ title: "Price Points"
 
 ## THB
 
-| Price Point | Thailand |
+| 价格档位 | Thailand |
 | --- | --- |
 |美元 $2.00| 79 THB |
 |美元 2.25 美元| 89 THB |
@@ -1200,7 +1200,7 @@ title: "Price Points"
 
 ## USD
 
-| Price Point | United States | Taiwan | Indonesia, Japan, Puerto Rico, Singapore | Saudi Arabia | India | Iceland |
+| 价格档位 | 美国 | Taiwan | 印度尼西亚、日本、波多黎各、新加坡 | 沙特阿拉伯 | India | Iceland |
 | --- | --- | --- | --- | --- | --- | --- |
 |美元 $2.00| 1.99 USD | 2.25 USD | 2.25 USD | 2.49 USD | 2.49 USD | 2.49 USD |
 |美元 2.25 美元| 2.25 USD | 2.49 USD | 2.49 USD | 2.75 USD | 2.75 USD | 2.99 USD |
@@ -1283,7 +1283,7 @@ title: "Price Points"
 
 ## VND
 
-| Price Point | Vietnam |
+| 价格档位 | Vietnam |
 | --- | --- |
 |美元 $2.00| 55699 VND |
 |美元 2.25 美元| 62599 VND |

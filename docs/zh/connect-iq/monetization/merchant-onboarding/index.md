@@ -1,7 +1,7 @@
 ---
 title: "Merchant Onboarding"
 ---
-# Merchant Onboarding
+# 商户入驻
 
 开发者仪表板现在包含一个商家帐户选项. 为了开始商家登录过程,请选择此选项,选择设置商家帐户,并遵循屏幕上的说明.
 
@@ -13,17 +13,17 @@ title: "Merchant Onboarding"
 
 | Region | Countries |
 | --- | --- |
-| North America | United States and Canada |
-| Europe | Austria, Belgium, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Gibraltar, Greece, Guernsey, Hungary, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, Switzerland, and United Kingdom |
-| APAC | Australia and Singapore |
+| 北美洲 | 美国和加拿大 |
+| Europe | 奥地利、比利时、克罗地亚、塞浦路斯、捷克共和国、丹麦、爱沙尼亚、芬兰、法国、德国、直布罗陀、希腊、根西岛、匈牙利、爱尔兰、意大利、拉脱维亚、列支敦士登、立陶宛、卢森堡、马耳他、摩纳哥、荷兰、挪威、波兰、葡萄牙、罗马尼亚、斯洛伐克、斯洛文尼亚、西班牙、瑞典、瑞士和英国 |
+| APAC | 澳大利亚和新加坡 |
 
 **注意:**本列表可能会发生变化.
 
-## Program Fee
+## 程序费用
 
 在登录过程中,您被要求支付计划费用.这是每年100美元的非退款费用.
 
-## Business Entities
+## 业务实体
 
 连接智商货币化系统识别了个人和组织.当被要求选择您的业务实体类型时,请选择个人/单独所有者,如果您是个体,而不是注册公司的一部分.如果您是合伙人或公司,请选择组织.
 
@@ -35,14 +35,14 @@ title: "Merchant Onboarding"
 
 |企业类型| Identification |
 | --- | --- |
-| Individuals and Sole Proprietors |照片身份证,国家身份证号证,居住地址证,个人税务身份证和工业证明证|
-| Sole Proprietorship |宪法文件,地址证明和工业证明|
+| 个人和独资经营者 |照片身份证,国家身份证号证,居住地址证,个人税务身份证和工业证明证|
+| 独资企业 |宪法文件,地址证明和工业证明|
 | Organization |注册文件,地址证明,产业证明,所有权证明,税务信息证明和增值税文件|
 
 ## Tax 文档
 
 申请人必须提供税务文件. 税务文件的要求因公司所在国而异. 系统需要根据您的住所或业务地址提供不同的文件形式.
 
-Including Puerto Rico
+包括波多黎各
 
 包括曼岛和泽西
