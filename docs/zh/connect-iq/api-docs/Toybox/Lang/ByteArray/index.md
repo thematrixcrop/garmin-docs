@@ -301,7 +301,7 @@ Throws:
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if a [Number](/connect-iq/api-docs/Toybox/Lang/Number/) greater than 255 or less than -128 is provided, or if a [Char](/connect-iq/api-docs/Toybox/Lang/Char/) with a code point greater than 127 is provided. Negative numbers provided are interpreted as the positive 8-bit unsigned equivalent when searching the ByteArray.
+    如果提供的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 大于 255 或小于 -128，或者提供的 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 的代码点大于 127，则抛出。如果在 ByteArray 中搜索时提供负数，则会将其解释为对应的正 8 位无符号值。
 
 
 ### **remove(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -338,7 +338,7 @@ Throws:
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if a [Number](/connect-iq/api-docs/Toybox/Lang/Number/) greater than 255 or less than -128 is provided, or if a [Char](/connect-iq/api-docs/Toybox/Lang/Char/) with a code point greater than 127 is provided. Negative numbers provided are interpreted as the positive 8-bit unsigned equivalent when searching the ByteArray.
+    如果提供的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 大于 255 或小于 -128，或者提供的 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 的代码点大于 127，则抛出。如果在 ByteArray 中搜索时提供负数，则会将其解释为对应的正 8 位无符号值。
 
 
 ### **removeAll(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -375,7 +375,7 @@ Throws:
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if a [Number](/connect-iq/api-docs/Toybox/Lang/Number/) greater than 255 or less than -128 is provided, or if a [Char](/connect-iq/api-docs/Toybox/Lang/Char/) with a code point greater than 127 is provided. Negative numbers provided are interpreted as the positive 8-bit unsigned equivalent when searching the ByteArray.
+    如果提供的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 大于 255 或小于 -128，或者提供的 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 的代码点大于 127，则抛出。如果在 ByteArray 中搜索时提供负数，则会将其解释为对应的正 8 位无符号值。
 
 
 ### **reverse()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)

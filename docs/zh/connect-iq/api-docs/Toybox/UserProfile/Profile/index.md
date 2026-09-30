@@ -108,7 +108,7 @@ Returns:
 
 Average resting heart rate
 
-This value is calculated based on historical data. It may be `null` if there is insufficient data to produce a result.
+此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
 Since:
 
@@ -362,7 +362,7 @@ Returns:
 
 Cycling VO2 Max
 
-This value is calculated based on historical data. It may be `null` if there is insufficient data to produce a result.
+此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
 Since:
 
@@ -508,7 +508,7 @@ Returns:
 
 Running VO2 Max
 
-This value is calculated based on historical data. It may be `null` if there is insufficient data to produce a result.
+此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
 Since:
 

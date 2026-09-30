@@ -135,7 +135,7 @@ Parameters:
 
 - sensor —
 
-    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) object
+    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 对象
 
 
 Returns:
@@ -176,7 +176,7 @@ Parameters:
 
 - sensor —
 
-    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) object
+    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 对象
 
 
 Returns:

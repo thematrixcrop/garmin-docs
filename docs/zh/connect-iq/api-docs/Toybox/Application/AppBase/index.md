@@ -16,11 +16,11 @@ Toybox.Lang.Object
 
 ## 概述
 
-AppBase 是应用的基类。
+AppBase is the base class for an app.
 
-所有应用都继承此类并使用其方法来管理应用的生命周期。
+All apps inherit from this class and use it's methods to manage the life cycle of an app.
 
-- 您的应用重写此类以提供以下入口点方法：
+- Your app overrides the class to provide entry points with the following methods:
 
 
 - [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
@@ -36,7 +36,7 @@ AppBase 是应用的基类。
 - [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
-- 这些函数按以下顺序调用：
+- These functions are called in the following order:
 
 
 1. [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
@@ -46,11 +46,11 @@ AppBase 是应用的基类。
 3. [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
-每个 AppBase 对象都可以访问对象存储以持久化数据。
+Every AppBase object has access to an object store to persist data.
 
 Example:
 
-显示基本应用生命周期
+Shows basic app life cycle
 
 ```
 using Toybox.Application;
@@ -84,7 +84,7 @@ API 级别 1.0.0
 
 ### GlanceTheme
 
-支持设备的速览颜色主题
+Glance color themes for supported devices
 
 Since:
 
@@ -308,7 +308,7 @@ API 级别 2.3.0
 
 注意：
 
-后台进程不能清除属性。
+Background processes cannot clear properties.
 
 :::details 支持的设备
 
@@ -505,7 +505,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果从后台进程调用则抛出
+    Thrown if called from a background process
 
 
 ### **deleteProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type))** as **Void**
@@ -518,7 +518,7 @@ Throws:
 
 注意：
 
-后台进程不能删除属性。
+Background processes cannot delete properties.
 
 Parameters:
 
@@ -722,7 +722,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果从后台进程调用则抛出
+    Thrown if called from a background process
 
 
 ### **getGlanceTheme()** as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
@@ -2923,7 +2923,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果从后台进程调用则抛出 on device that does not have ConnectIQ 3.2.0 support. Data can always be passed to the foreground process from a background process with [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function).
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则抛出。使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，始终可以将数据从后台进程传递到前台进程。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

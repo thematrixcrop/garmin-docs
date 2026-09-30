@@ -42,11 +42,11 @@ API 级别 3.1.0
 
 - [**requestRead**](#requestRead-instance_function)() as **Void**
 
-    Requests a read operation on the characteristic Once the operation is completed, [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation 支持 for long reads is not implemented.
+    Requests a read operation on the characteristic Once the operation is completed, [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation Support for long reads is not implemented.
 
 - [**requestWrite**](#requestWrite-instance_function)(value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :writeType as [BluetoothLowEnergy.WriteType](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WriteType-module) }) as **Void**
 
-    Requests a write operation Once the operation is completed, [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation 支持 for long writes is not implemented.
+    Requests a write operation Once the operation is completed, [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation Support for long writes is not implemented.
 
 
 ## 实例方法详情
@@ -128,7 +128,7 @@ Requests a read operation on the characteristic
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function)
 
-支持 for long reads is not implemented.
+Support for long reads is not implemented.
 
 Since:
 
@@ -140,7 +140,7 @@ Requests a write operation
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function)
 
-支持 for long writes is not implemented. Requesting a write on a characteristic longer than 20 bytes will cause an [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
+Support for long writes is not implemented. Requesting a write on a characteristic longer than 20 bytes will cause an [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
 Parameters:
 

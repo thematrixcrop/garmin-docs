@@ -110,7 +110,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A negative value if self is less than other, zero if the objects are equivalent, and a positive value if self is greater than other.
+    如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
 Since:

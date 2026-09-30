@@ -211,4 +211,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    [Toybox::AntPlus::INVALID\_SPEED](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_SPEED-const) if invalid
+    如果无效

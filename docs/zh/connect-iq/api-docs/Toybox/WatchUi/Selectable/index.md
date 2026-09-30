@@ -154,7 +154,7 @@ Returns:
 
 Draw the Selectable to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
 
-This method assumes that the device context has already been configured to the proper options.
+此方法假定设备上下文已经配置为正确的选项。
 
 Parameters:
 

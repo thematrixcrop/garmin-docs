@@ -101,7 +101,7 @@ Throws:
 
 - ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
-    Thrown if the given complication is not found.
+    如果找不到给定的 complication，则抛出。
 
 
 ### **getType()** as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) or **Null**

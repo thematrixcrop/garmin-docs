@@ -215,7 +215,7 @@ Returns:
 
 - [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/) —
 
-    with current information.
+    使用当前信息。
 
 
 Since:

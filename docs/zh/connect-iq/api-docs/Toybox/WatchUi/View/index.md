@@ -433,7 +433,7 @@ API 级别 3.1.0
 
 ### **setActionMenuIndicator(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**)** as **Void**
 
-Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) will be called when the action menu is pushed. 支持ed view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
+Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) will be called when the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
 
 Parameters:
 

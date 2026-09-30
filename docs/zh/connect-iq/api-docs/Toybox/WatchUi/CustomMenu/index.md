@@ -559,7 +559,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.
+    如果 drawable 不是 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或 `null`，则抛出。
 
 
 ### **setForeground(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
@@ -581,7 +581,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.
+    如果 drawable 不是 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或 `null`，则抛出。
 
 
 ### **setTitle(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
@@ -603,4 +603,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.
+    如果 drawable 不是 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或 `null`，则抛出。

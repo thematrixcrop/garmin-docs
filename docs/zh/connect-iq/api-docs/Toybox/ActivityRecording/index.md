@@ -250,7 +250,7 @@ API 级别 1.0.0
 
 **此项已弃用**
 
-This enum may be removed after System 8.
+此枚举可能会在 System 8 之后移除。
 
 Since:
 
@@ -443,7 +443,7 @@ Sport used for paddling
 
 **此项已弃用**
 
-This enum may be removed after System 8.
+此枚举可能会在 System 8 之后移除。
 
 Since:
 
@@ -766,7 +766,7 @@ Sport used for auto racing
 
 **此项已弃用**
 
-This enum may be removed after System 8.
+此枚举可能会在 System 8 之后移除。
 
 Since:
 

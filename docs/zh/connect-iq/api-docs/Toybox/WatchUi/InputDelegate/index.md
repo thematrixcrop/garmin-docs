@@ -393,7 +393,7 @@ API 级别 1.0.0
 
 A physical button has been pressed and released.
 
-To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) enum value.
+要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
 Parameters:
 
@@ -422,7 +422,7 @@ API 级别 1.0.0
 
 A physical button has been pressed down.
 
-To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) enum value.
+要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
 Parameters:
 
@@ -451,7 +451,7 @@ API 级别 1.1.2
 
 A physical button has been released.
 
-To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) enum value.
+要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
 Parameters:
 

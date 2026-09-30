@@ -57,7 +57,7 @@ API 级别 5.1.0
 
 - [**complicationId**](#complicationId-var) as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or **Null**
 
-    [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) selected by the user, `null` if not available.
+    用户选择的 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)，如果不可用则为 `null`。
 
 - [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -68,7 +68,7 @@ API 级别 5.1.0
 
 ### var complicationId as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or **Null**
 
-[Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) selected by the user, `null` if not available.
+用户选择的 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)，如果不可用则为 `null`。
 
 Since:
 

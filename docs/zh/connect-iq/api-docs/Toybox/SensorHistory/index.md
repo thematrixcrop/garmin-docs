@@ -224,7 +224,7 @@ Request iterator with oldest data first
 
 Get the body battery history for the given period.
 
-This function always returns the most recent sensor history samples. The time between each \`SensorSample\` in the iterator may be device dependent.
+此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
 Parameters:
 
@@ -709,7 +709,7 @@ API 级别 2.1.0
 
 Get the oxygen saturation history for the given period
 
-This function always returns the most recent sensor history samples. The time between each \`SensorSample\` in the iterator may be device dependent.
+此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
 Parameters:
 
@@ -1116,7 +1116,7 @@ API 级别 2.1.0
 
 Get stress history data for the given period
 
-This function always returns the most recent sensor history samples. The time between each \`SensorSample\` in the iterator may be device dependent.
+此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
 Parameters:
 

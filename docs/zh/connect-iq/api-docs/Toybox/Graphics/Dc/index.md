@@ -415,7 +415,7 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the source color palette is not a subset of the destination palette
+    如果源颜色调色板不是目标调色板的子集，则抛出
 
 
 ### **drawBitmap2(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), options as { :bitmapX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :tintColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :filterMode as [Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module), :transform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) } or **Null**)** as **Void**
@@ -742,7 +742,7 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the source color palette is not a subset of the destination palette
+    如果源颜色调色板不是目标调色板的子集，则抛出
 
 
 ### **drawPoint(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
@@ -1022,7 +1022,7 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the source color palette is not a subset of the destination palette
+    如果源颜色调色板不是目标调色板的子集，则抛出
 
 
 ### **drawText(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), text as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -1563,11 +1563,11 @@ Parameters:
 
 - foreground — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module) constant or 24-bit integer of the form 0xRRGGBB.
+    [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module) 常量或形式为 0xRRGGBB 的 24 位整数。
 
 - background — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module) constant or 24-bit integer of the form 0xRRGGBB.
+    [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module) 常量或形式为 0xRRGGBB 的 24 位整数。
 
 
 Since:
