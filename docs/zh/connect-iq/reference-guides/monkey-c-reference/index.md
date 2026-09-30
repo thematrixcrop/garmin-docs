@@ -204,9 +204,8 @@ Monkey C 中有一些关键字、运算符和保留字，不能用作程序中�
 
 ```cpp
 /*
-This is a multi-line comment. Notice that the information
-continues to appear as a comment as long as it remains
-inside the comment delimiters.
+这是一个多行注释。请注意，只要内容仍处于注释分隔符
+之间，就会继续被视为注释。
 */
 ```
 
@@ -215,8 +214,8 @@ inside the comment delimiters.
 ```cpp
 using Toybox.System;
 
-// This is a single-line comment on its own line
-System.println("Hello World!");  // This comment shares a line with code that will execute
+// 这是单独占一行的单行注释
+System.println("Hello World!");  // 此注释与将要执行的代码位于同一行
 ```
 
 <a id="declaring-variables"></a>
@@ -226,17 +225,17 @@ System.println("Hello World!");  // This comment shares a line with code that wi
 所有变量都必须在使用前通过 `var` 关键字声明。由于 Monkey C 是[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，无需为每个变量声明类型。
 
 ```cpp
-var x = 5;            // A 32-bit integer value
-var myString = "";    // An empty string
-var n = null;         // Null value
-var f = 4.0d;         // A 64-bit floating point value
+var x = 5;            // 32 位整数值
+var myString = "";    // 空字符串
+var n = null;         // Null 值
+var f = 4.0d;         // 64 位浮点值
 ```
 
 数组元素未赋值时会初始化为 `null`。
 
 ```cpp
-var arr = new[10];     // Create a new array; since the values are unassigned, they are initialized as 'null'
-var z = arr[0] + 5;    // Attempt to add a Number to a null array element. UnexpectedTypeException!
+var arr = new[10];     // 创建新数组；由于未为元素赋值，它们会初始化为 'null'
+var z = arr[0] + 5;    // 尝试将 Number 与 null 数组元素相加。UnexpectedTypeException！
 ```
 
 <a id="constants"></a>
@@ -263,8 +262,8 @@ using Toybox.System;
 var a = :symbol_1;
 var b = :symbol_1;
 var c = :symbol_2;
-System.println(a == b);  // Prints true
-System.println(a == c);  // Prints false
+System.println(a == b);  // 打印 true
+System.println(a == c);  // 打印 false
 ```
 
 符号也可以作为数据结构（例如字典）中的键：
@@ -282,7 +281,7 @@ var person = {:title=>"George", :name=>"Taylor"};
 枚举是从 [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) 到 [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值的常量映射，使用 `enum` 关键字创建。除非显式指定，否则枚举中的第一个符号值为 `0`，之后每个符号都会自动获得前一个符号值加一。枚举符号可以像常量一样使用，并且必须在模块或类级别声明。
 
 ```cpp
-// Automatically incremented enumeration
+// 自动递增的枚举
 enum {
     Sunday,     // 0
     Monday,     // 1
@@ -295,7 +294,7 @@ enum {
 ```
 
 ```cpp
-// Enumeration initialized with an explicit starting value
+// 使用显式起始值初始化的枚举
 enum {
     x = 1337,   // x = 1337
     y,          // y = 1338
@@ -311,10 +310,10 @@ enum {
 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 对象是固定大小、数值索引的对象列表（不是链表）。数组中的成员不必是相同类型。和变量一样，Monkey C 中的数组没有类型标注要求。创建数组有两种方式：
 
 ```cpp
-// A new array with ten empty slots, initialized to 'null'
+// 包含十个空槽并初始化为 'null' 的新数组
 var myArray = new[10];
 
-// A new five-slot array with assigned values
+// 包含五个槽且已赋值的新数组
 var myArray = [1, 2, 3, 4, 5];
 ```
 
@@ -327,14 +326,14 @@ var myArray = [[1, 2], ["one", "two"]];
 Monkey C 没有直接创建空二维数组的语法，但可以这样实现：
 
 ```cpp
-// Specify the array sizes
+// 指定数组大小
 var first_dimension_size = 2;
 var second_simension_size = 100;
 
-// Create an empty one-dimensional array
+// 创建空的一维数组
 var myArray = new [first_dimension_size];
 
-// Initialize the sub-arrays to complete the two-dimensional array
+// 初始化子数组以完成二维数组
 for(var i = 0; i < first_dimension_size; i += 1) {
     myArray[i] = new [second_dimension_size];
 }
@@ -349,12 +348,12 @@ for(var i = 0; i < first_dimension_size; i += 1) {
 ```cpp
 using Toybox.System;
 
-var x = {};                                 // Declare a new, empty Dictionary
-var myDictionary = { "a" => 1, "b" => 2 };  // Declare a new Dictionary with initialized values
-myDictionary.put("c", "three");             // Add a new key-value pair with a String value
-System.println(myDictionary["a"]);          // Prints "1"
-System.println(myDictionary["c"]);          // Prints "three"
-System.println(myDictionary["d"]);          // Prints "null" (there is no key "d")
+var x = {};                                 // 声明新的空 Dictionary
+var myDictionary = { "a" => 1, "b" => 2 };  // 声明带有初始值的新 Dictionary
+myDictionary.put("c", "three");             // 添加带有 String 值的新键值对
+System.println(myDictionary["a"]);          // 打印 "1"
+System.println(myDictionary["c"]);          // 打印 "three"
+System.println(myDictionary["d"]);          // 打印 "null"（不存在键 "d"）
 ```
 
 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 类提供内置的 [Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) 方法，会自动对加入字典的键（索引）进行哈希处理，从而高效查找字典值。字典会随着项目的添加或删除自动扩容和调整大小，这很灵活，但也有代价：
@@ -377,8 +376,8 @@ class Monkey
         mWeightInKilograms = weight;
     }
 
-    // Return a unique Number as the hash code for Monkey objects used as keys in Dictionaries.
-    // For the record, this is a pretty terrible hashing function.
+    // 返回一个唯一 Number，作为用作 Dictionary 键的 Monkey 对象的哈希码。
+    // 需要说明的是，这是一个相当糟糕的哈希函数。
     function hashCode() {
         return (Math.pow(self.mLengthInCentimeters, self.mWeightInKilograms)).toNumber();;
     }
@@ -430,13 +429,13 @@ var a = false;
 var b = true;
 
 if (a == true) {
-    // 'a' is false, so this will not execute
+    // 'a' 为 false，因此不会执行
     System.println("The variable 'a' is true!");
 } else if (b == true) {
-    // 'b' is true, so this block will execute
+    // 'b' 为 true，因此会执行此代码块
     System.println("The variable 'b' is true!");
 } else {
-    // Since the previous block has executed, this is skipped
+    // 由于前一个代码块已执行，因此跳过此处
     System.println("Neither is true!");
 }
 ```
@@ -464,7 +463,7 @@ var result = testExpression ? whenTrueExpression : whenFalseExpression
 计算 `testExpression` 以确定其是否为 `true`；为 `true` 时使用 `whenTrueExpression`，为 `false` 时使用 `whenFalseExpression`。结果表达式的值会赋给 `result`。如果结果表达式没有返回值（例如调用 [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)），`result` 会被赋值为 `null`。
 
 ```cpp
-// If 'a' is true, 'myValue' is assigned a value of 1; otherwise, it is assigned a value of 2.
+// 如果 'a' 为 true，则为 'myValue' 赋值 1；否则赋值 2。
 var myValue = a ? 1 : 2;
 ```
 
@@ -477,7 +476,7 @@ var myValue = a ? 1 : 2;
 ```cpp
 using Toybox.System;
 
-// An if-else block checking the myValue variable
+// 检查 myValue 变量的 if-else 代码块
 if (myValue == 1) {
     System.println("The value is 1!");
 } else if (myValue == 2) {
@@ -486,7 +485,7 @@ if (myValue == 1) {
     System.println("The value is not 1 or 2!");
 }
 
-// A switch-case block checking the myValue variable
+// 检查 myValue 变量的 switch-case 代码块
 switch (myValue) {
     case 1:
         System.println("The value is 1!");
@@ -507,8 +506,8 @@ using Toybox.System;
 switch (myValue) {
     case 1:
         System.println("The value is 1!");
-        // Since there is no 'break', this will "fall through" and execute
-        // the code in the next case block until its break statement is reached
+        // 由于没有 'break'，执行会“贯穿”到下一个 case 代码块，
+        // 直到遇到该代码块的 break 语句
     case 2:
         System.println("The value is 2!");
         break;
@@ -528,23 +527,23 @@ switch (payload[MESSAGE_CODE_INDEX]) {
     case instanceof Number:
         System.println("Valid code!");
     case Toybox.Ant.MSG_CODE_EVENT_CHANNEL_CLOSED:
-        // Open the channel
+        // 打开通道
         ...
         break;
     case Toybox.Ant.MSG_CODE_EVENT_RX_FAIL_GO_TO_SEARCH:
-        // Search for device
+        // 搜索设备
         ...
         break;
     case Toybox.Ant.MSG_CODE_EVENT_CRYPTO_NEGOTIATION_FAIL:
-        // Data not encrypted, so handle appropriately
+        // 数据未加密，因此进行相应处理
         ...
         break;
      case Toybox.Ant.MSG_CODE_EVENT_CRYPTO_NEGOTIATION_SUCCESS:
-        // Data  encrypted, so handle appropriately
+        // 数据已加密，因此进行相应处理
         ...
         break;
     case Toybox.Ant.MSG_CODE_EVENT_TX:
-        // Update data and send out the next part of the message
+        // 更新数据并发送消息的下一部分
         ...
     default:
         System.println("Invalid response!");
@@ -562,24 +561,23 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 ```cpp
 switch (myValue) {
     case true:
-        // Variable 'a' is scoped at the switch block level
+        // 变量 'a' 的作用域为 switch 代码块级别
         var a = 1;
     case 1:
-        // Results in a compiler error because 'a' was not initialized in this case block
+        // 由于 'a' 未在此 case 代码块中初始化，因此会导致编译器错误
         var z = a;
         break;
     case "B": {
-        // Variable 'a' is scoped at the code block level within the curly braces, so no scoping
-        // conflict with 'a' at the switch block level
+        // 变量 'a' 的作用域为花括号内的代码块级别，因此不会与 switch 代码块级别的
+        // 'a' 发生作用域冲突
         var a = true;
         break;
     }
     case instanceof MyClass:
-        // Results in a compiler error because 'a' has already been defined in the switch block
+        // 由于 'a' 已在 switch 代码块中定义，因此会导致编译器错误
         var a = "Hello!"
     default:
-        // No errors because 'a' was defined in the first case and initialized at the beginning of
-        // the default case
+        // 不会出错，因为 'a' 已在第一个 case 中定义，并在 default case 开始处初始化
         a = 0;
         var b = a;
 }
@@ -594,18 +592,18 @@ Monkey C 支持 `for`、`while` 和 `do-while` 循环。循环会重复执行语
 `while` 和 `do-while` 循环的语法与常见语言类似：
 
 ```cpp
-// A do-while loop
+// do-while 循环
 var myCounter = 0;
 do {
-    // Do something
+    // 执行某些操作
     myCounter++;
 }
 while (myCounter < 10);
 
-// A while loop
+// while 循环
 myCounter = 0;
 while (myCounter < 10) {
-    // Do something
+    // 执行某些操作
     myCounter++;
 }
 ```
@@ -615,7 +613,7 @@ Monkey C 允许在 `for` 循环中声明变量，其语法也与常见语言类�
 ```cpp
 var myArray = [1, 2, 3, 4, 5];
 for (var i = 0; i < myArray.size(); i++) {
-    // Do something until 'i' is greater than or equal to the array size
+    // 持续执行操作，直到 'i' 大于或等于数组大小
 }
 ```
 
@@ -624,7 +622,7 @@ for (var i = 0; i < myArray.size(); i++) {
 ```cpp
 using Toybox.System;
 
-// This for loop should only print the values 5, 6, and 7.
+// 此 for 循环应只打印值 5、6 和 7。
 for (var i = 0; i < 10; i += 1) {
     if (i < 5) {
         continue;
@@ -644,9 +642,9 @@ Monkey C 支持结构化处理 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang
 
 ```cpp
 try {
-    // Attempt to execute this code
+    // 尝试执行此代码
 } catch (e) {
-    // Catch and handle any exceptions thrown
+    // 捕获并处理抛出的异常
 }
 ```
 
@@ -654,13 +652,13 @@ try {
 
 ```cpp
 try {
-    // Attempt to execute this code
+    // 尝试执行此代码
 } catch (e instanceof MyExceptionClass) {
-    // Catch and handle the MyExceptionClass exception
+    // 捕获并处理 MyExceptionClass 异常
 } catch (e) {
-    // Catch all other exception types
+    // 捕获所有其他异常类型
 } finally {
-    // Execute this after the preceding try and catch statements are completed
+    // 前面的 try 和 catch 语句完成后执行此处
 }
 ```
 
@@ -708,10 +706,10 @@ function myFunction(myValue) {
 要使用函数或方法，只需使用函数调用语法：
 
 ```cpp
-// Call myFunction() and pass it an argument of '2', but do nothing with the result
+// 调用 myFunction() 并传入参数 '2'，但不处理结果
 myFunction(2);
 
-// Call myFunction(), pass it an argument of '2', and assign the result to the 'myResult' variable
+// 调用 myFunction()，传入参数 '2'，并将结果赋给 'myResult' 变量
 var myResult = myFunction(2);
 ```
 
@@ -720,7 +718,7 @@ var myResult = myFunction(2);
 ```cpp
 function myOtherFunction() {
     var result = myFunction(2);
-    // Do some other stuff with the result here
+    // 在此处对结果执行其他操作
 }
 ```
 
@@ -758,7 +756,7 @@ class Circle {
     }
 }
 
-// Create a new circle with a radius of 2
+// 创建半径为 2 的新圆
 var myCircle = new Circle(2);
 ```
 
@@ -821,8 +819,8 @@ class Sphere extends Circle {
         Circle.initialize(aRadius);
     }
 
-    // Notice Sphere has no getCircumference() method implemented here. Instead, it inherits the
-    // getCircumference() method from the Circle class and may use it as if it were its own method.
+    // 请注意，Sphere 未在此处实现 getCircumference() 方法，而是继承了 Circle 类的
+    // getCircumference() 方法，并可以像使用自身方法一样使用它。
 
     function getArea() {
         return 4 * Math.PI * Math.pow(self.mRadius, 2);  // 4*PI*r^2
@@ -842,7 +840,7 @@ class Sphere extends Circle {
 Circle 类的 `getArea()` 不适用于 Sphere，因此 Sphere 实现了新的 `getArea()`，以*覆盖* Circle 的方法。最后，为两个类添加 `describe()` 方法，让每种对象类型描述自己。现在运行这些类：
 
 ```cpp
-// Create new objects
+// 创建新对象
 var myCircle = new Circle(5);
 var mySphere = new Sphere(5);
 
@@ -850,7 +848,7 @@ System.println(myCircle.getCircumference());  // 31.415928
 System.println(myCircle.getArea());           // 78.539818
 myCircle.describe();                          // "Circle!"
 
-System.println(mySphere.getCircumference());  // 31.415928 (same as a circle of the same radius)
+System.println(mySphere.getCircumference());  // 31.415928（与相同半径的圆相同）
 System.println(mySphere.getArea());           // 314.159271
 mySphere.describe();                          // "I'm a Sphere! My parent is a Circle!"
 ```
@@ -872,8 +870,8 @@ class Conversion {
 }
 
 var meters = 32;
-var myConverter = new Conversion(); // Create an instance of the Conversion class
-System.println(meters * myConverter.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
+var myConverter = new Conversion(); // 创建 Conversion 类的实例
+System.println(meters * myConverter.FEET_PER_METER + " feet"); // 打印 "104.986877 feet"
 ```
 
 通常，使用类中的变量、常量、枚举或函数前必须先实例化该类。如果给常量添加 `static` 关键字，就可以在不实例化 Conversion 的情况下使用它们：
@@ -887,7 +885,7 @@ class Conversion {
 }
 
 var meters = 32;
-System.println(meters * Conversion.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
+System.println(meters * Conversion.FEET_PER_METER + " feet"); // 打印 "104.986877 feet"
 ```
 
 静态成员的另一个优势是属于类本身，而不是某个实例。因此，静态变量可以在类的多个实例之间共享；在一个实例中修改它的值后，所有实例都会立即看到新值：
@@ -903,10 +901,10 @@ var bunchTwo = new BananaBunch();
 System.println(bunchOne.mNumberOfBananas); // 10
 System.println(bunchTwo.mNumberOfBananas); // 10
 
-bunchOne.mNumberOfBananas = 12; // Change the value of the static variable
+bunchOne.mNumberOfBananas = 12; // 更改静态变量的值
 
 System.println(bunchOne.mNumberOfBananas); // 12
-System.println(bunchTwo.mNumberOfBananas); // 12 - notice this one also reflects the change!
+System.println(bunchTwo.mNumberOfBananas); // 12 - 请注意，此处也反映了更改！
 ```
 
 <a id="data-hiding"></a>
@@ -922,7 +920,7 @@ class MyClass {
     protected var mVariable;
 }
 
-// This will produce a runtime error since it's trying to access a protected variable from myClass
+// 这会产生运行时错误，因为它尝试访问 myClass 中的受保护变量
 function myFunction() {
     var myObject = new MyClass();
     System.println(myObject.mVariable);
@@ -978,14 +976,14 @@ Monkey C 中的函数不是一等对象，因此不能直接作为参数传递�
 ```cpp
 class MyClass {
     function operation(a, b) {
-        // The code here is really amazing. Like mind blowing amazing.
+        // 此处的代码非常出色，出色到令人震撼。
     }
 }
 
 function myFunction() {
-    var myObject = new MyClass();                // Create a new instance of MyClass
-    var myMethod = myObject.method(:operation);  // Get a callback for the "operation" method from myObject
-    myMethod.invoke(1, 2);                       // Invoke myObjects's "operation" method
+    var myObject = new MyClass();                // 创建 MyClass 的新实例
+    var myMethod = myObject.method(:operation);  // 获取 myObject 的 "operation" 方法回调
+    myMethod.invoke(1, 2);                       // 调用 myObject 的 "operation" 方法
 }
 ```
 
@@ -997,8 +995,8 @@ using Toybox.Lang as Lang;
 module MyModule
 {
     function operation() {
-        // Some more amazing code. Only an infinite number of monkeys typing randomly over an
-        // infinite period of time could write something this good.
+        // 更多出色的代码。只有无数只猴子在无限长的时间内随机打字，
+        // 才能写出如此出色的内容。
     }
 }
 
@@ -1027,7 +1025,7 @@ Monkey C 使用*引用计数*，这意味着当引用某块内存的对象数量
 要创建弱引用，请使用 `weak()` 方法。这是所有 Monkey C 对象都可用的 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 方法。
 
 ```cpp
-// We would make a "Hans and Franz" reference here but certain advertising has probably made them uncool.
+// 我们本可以在此引用 "Hans and Franz"，但某些广告可能已经让他们过时了。
 var weakReference = myObject.weak()
 ```
 
@@ -1114,7 +1112,7 @@ Monkey C 是一种基于消息的语言。调用函数时，虚拟机会在运�
 ```cpp
 using Toybox.System;
 
-// A globally visible function
+// 全局可见的函数
 function globalFunction() {
     System.println("This is the global function!");
 }
@@ -1123,23 +1121,23 @@ module Parent
 {
     function parentFunction() {
         System.println("This is the parent's function!");
-        globalFunction();  // May call a globally visible function
+        globalFunction();  // 可以调用全局可见的函数
     }
 
     class Child {
         function childFunction() {
             System.println("This is the child's function!");
-            globalFunction();       // May call a globally visible function
-            parentFunction();       // May call a function in our parent module
-            staticChildFunction();  // May call a static function within the class
+            globalFunction();       // 可以调用全局可见的函数
+            parentFunction();       // 可以调用父模块中的函数
+            staticChildFunction();  // 可以调用类中的静态函数
 
         }
 
         static function staticChildFunction() {
             System.println("This is the child's static function!");
-            globalFunction();  // May call a globally visible function
-            parentFunction();  // May call a function in our parent module
-            // Static methods can't call instance methods (childFunction) but still have access to parent modules!
+            globalFunction();  // 可以调用全局可见的函数
+            parentFunction();  // 可以调用父模块中的函数
+            // 静态方法不能调用实例方法（childFunction），但仍可访问父模块！
         }
     }
 }
@@ -1159,8 +1157,8 @@ class MyClass {
     }
 
     function() {
-        $.myFunction();  // Call the global myFunction()
-        myFunction();    // Call the instance myFunction()
+        $.myFunction();  // 调用全局 myFunction()
+        myFunction();    // 调用实例 myFunction()
     }
 }
 ```
@@ -1176,15 +1174,15 @@ module BluthCompany
 {
     class BananaStand {
         function getMoney() {
-            // At runtime, the VM will search:
-            //   1. The BananaStand
-            //   2. The BananaStand's superclass, Toybox.Lang.Object
-            //   3. The BluthCompany module
-            //   4. The BluthCompany module's parent globals
-            // ...and finally finds the family fortune!
+            // 运行时，VM 将搜索：
+            //   1. BananaStand
+            //   2. BananaStand 的超类 Toybox.Lang.Object
+            //   3. BluthCompany 模块
+            //   4. BluthCompany 模块的父级全局内容
+            // ……最终找到家族财富！
             System.println(familyFortune);
 
-            // This will search only the global namespace for the family fortune. Thanks bling!
+            // 这只会在全局命名空间中搜索家族财富。感谢闪耀装饰！
             System.println($.familyFortune);
         }
     }
@@ -1200,7 +1198,7 @@ Monkey C 通常会在整个对象层级中搜索对象；使用 bling 符号时�
 Monkey C 允许将符号关联到类或模块的方法和变量。注解用于向编译器传达额外意图，有时也用于在不改变 Monkey C 语法的情况下增加功能。例如，Run No Evil 测试使用注解标识仅用于测试的代码：
 
 ```cpp
-// A test class containing a Run No Evil test method denoted by (:test)
+// 包含由 (:test) 标记的 Run No Evil 测试方法的测试类
 class TestMethods {
     (:test)
     static function testThisClass(x)
