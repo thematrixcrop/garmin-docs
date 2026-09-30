@@ -51,19 +51,19 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
         var menu = new WatchUi.Menu2({:title=>"My Menu2"});
         var delegate;
 
-        // Add a new MenuItem to the Menu2 object
+        // 向 Menu2 对象添加新的 MenuItem
         menu.addItem(
             new MenuItem(
 
-                // Set the 'Label' parameter
+                // 设置“Label”参数
                 "Item 1 Label",
 
-                // Set the `subLabel` parameter
+                // 设置 `subLabel` 参数
                 "Item 1 subLabel",
 
-                // Set the `identifier` parameter
+                // 设置 `identifier` 参数
                 "itemOneId",
-                // Set the options, in this case `null`
+                // 设置选项，此处为 `null`
                 {}
             )
         );
@@ -77,10 +77,10 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
             )
         );
 
-        // Create a new Menu2InputDelegate
-        delegate = new MyMenu2Delegate(); // a WatchUi.Menu2InputDelegate
+        // 创建新的 Menu2InputDelegate
+        delegate = new MyMenu2Delegate(); // 一个 WatchUi.Menu2InputDelegate
 
-        // Push the Menu2 View set up in the initializer
+        // 推送在初始化程序中设置的 Menu2 视图
         WatchUi.pushView(menu, delegate, WatchUi.SLIDE_IMMEDIATE);
         return true;
     }
@@ -268,9 +268,9 @@ class MyView extends WatchUi.View {
 class MyMenuDelegate extends WatchUi.MenuInputDelegate {
     function onMenuItem(item) {
         if ( item == :item_1 ) {
-            // Do something here
+            // 在此处执行某些操作
         } else if ( item == :item_2 ) {
-            // Do something else here
+            // 在此处执行其他操作
         }
     }
 }
@@ -332,18 +332,18 @@ Toast 是带有文本和可选图标的局部屏幕横幅。用户无法与其�
 在支持触摸屏的设备上，输入委托可用于接收输入。这里只支持 [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) 行为；当数据字段在屏幕上处于活动状态且用户触摸字段内部的某个点时，会触发该行为。与其他应用类型一样，行为委托应作为 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) 返回数组的第二个元素。
 
 ```java
-// This data field accepts touch input
+// 此数据字段接受触摸输入
 class DataFieldApp extends App.AppBase {
-    // Data field view with associated behavior delegate
+    // 带有关联行为委托的数据字段视图
     function getInitialView() {
         return [ new DataFieldView(), new DataFieldDelegate() ];
     }
 }
 
 class DataFieldDelegate extends Ui.InputDelegate {
-    // Handle touch events
+    // 处理触摸事件
     function onTap(evt) {
-        // Process the touch event
+        // 处理触摸事件
     }
 }
 ```
@@ -372,23 +372,23 @@ import Toybox.Position;
 
 class MyMapView extends MapView {
 
-    // Initialize the MapView
+    // 初始化 MapView
     function initialize() {
         MapView.initialize();
 
-        // Set the top left Location object for the Map Visible Area
+        // 设置地图可见区域的左上角 Location 对象
         var topLeft = new Position.Location({:latitude => 38.85695, :longitude =>-94.80051, :format => :degrees});
 
-        // Set the bottom right Location object for the Map Visible Area
+        // 设置地图可见区域的右下角 Location 对象
         var bottomRight = new Position.Location({:latitude => 38.85391, :longitude =>-94.7963, :format => :degrees});
 
-        // Set the area of the map to be displayed
+        // 设置要显示的地图区域
         MapView.setMapVisibleArea(topLeft, bottomRight);
 
-        // Set the area in which to display the selected map area
+        // 设置显示所选地图区域的屏幕区域
         MapView.setScreenVisibleArea(0, 0, 240, 240/2);
 
-        // Set the map mode
+        // 设置地图模式
         MapView.setMapMode(WatchUi.MAP_MODE_PREVIEW);
     }
 }
@@ -440,16 +440,16 @@ MapTrackView 与 MapView 基本相同，但会在屏幕上动态渲染设备的�
 下面是一个包含四个点的 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 示例：
 
 ```cpp
-    // Initialize a new MapPolyline object
+    // 初始化新的 MapPolyline 对象
     var polyline = new WatchUi.MapPolyline();
 
-    //Set the color of the MapPolyline
+    // 设置 MapPolyline 的颜色
     polyline.setColor(Toybox.Graphics.COLOR_RED);
 
-    // Set the pen width to draw the MapPolyline
+    // 设置绘制 MapPolyline 的画笔宽度
     polyline.setWidth(2);
 
-    // Set the Locations on the MapPolyline
+    // 设置 MapPolyline 上的 Location
     polyline.addLocation(
         new Position.Location({
             :latitude => 38.85391,
@@ -479,7 +479,7 @@ MapTrackView 与 MapView 基本相同，但会在屏幕上动态渲染设备的�
         })
     );
 
-    // Set the MapPolyline object to draw on the map
+    // 设置要在地图上绘制的 MapPolyline 对象
     MapView.setPolyline(polyline);
 ```
 
@@ -510,7 +510,7 @@ MapView.setPolyline()
 下面是一个简单的 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 实现：
 
 ```cpp
-    // Initialize a map marker with a Location object
+    // 使用 Location 对象初始化地图标记
     var bitmapMarker = new WatchUi.MapMarker(
         new Position.Location({
             :latitude => 38.85391,
@@ -531,7 +531,7 @@ MapView.setPolyline()
             defaultMarker.setIcon(WatchUi.MAP_MARKER_ICON_PIN, 0, 0);
             defaultMarker.setLabel("Predefined Icon");
 
-    // Set the Map Marker for the view
+    // 为视图设置地图标记
     MapView.setMapMarker(defaultMarker);
 ```
 
@@ -558,14 +558,14 @@ setMapMarker()
 此方法接收一个 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象，并将其设置为地图上的标记。本例只绘制 `defaultMarker`，但也可以将多个 MapMarker 对象放入 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 后一次设置。例如：
 
 ```cpp
-// Create an Array to hold the MapMarker objects
+// 创建用于存放 MapMarker 对象的 Array
 var markers = [];
 
-// Add the MapMarkers to the Array
+// 将 MapMarker 添加到 Array
 markers.add(bitmapMarker);
 markers.add(defaultMarker);
 
-// Set multiple markers in an Array
+// 在 Array 中设置多个标记
 MapView.setMapMarker(markers);
 ```
 
