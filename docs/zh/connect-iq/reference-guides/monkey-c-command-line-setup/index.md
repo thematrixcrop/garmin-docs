@@ -69,7 +69,7 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 
 在安装后,有三个新的 shell 命令:`connectiq`,`monkeyc`和`monkeydo`.
 
--   `connectiq` launches the Connect IQ simulator, which 可用于 run and test apps on your computer before running them on your device. In the simulator, your app will only have access to those APIs that are available on the currently simulated device. For example, an API only available in Connect IQ v2.2.x or higher, such as `PersistedContent`, will not be available on devices that run earlier versions of Connect IQ.
+-   `connectiq` 启动 Connect IQ 模拟器，您可以在应用程序运行到设备前，在计算机上运行和测试应用程序。在模拟器中，应用程序只能访问当前模拟设备提供的 API。例如，仅 Connect IQ v2.2.x 或更高版本提供的 API（如 `PersistedContent`）在运行早期版本 Connect IQ 的设备上不可用。
 
 编译器可以从多个文件中取代代码并将它们连接到单个Connect IQ执行器 (一个PRG文件) 中. 使用方式是:
 

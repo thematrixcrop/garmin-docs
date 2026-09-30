@@ -16,7 +16,7 @@ Your app may need to request the user's attention at certain times. Connect IQ o
 
 Garmin设备的后光行为取决于显示技术. *反射式*显示器如内存像素 (MIP) 通常保持后光 typ灭节能.用户有选择让后光启用按触摸和手势等不同的操作.这些操作将根据用户设置自动由系统处理.
 
-*Emissive* displays like AMOLED are not backlit, but instead typically draw power to light every pixel. The brightness of the display can vary from a low brightness of an "always on" mode to full brightness when the user has gestured. The user can choose their brightness settings for the device, and 系统将 obey them automatically.
+AMOLED 等*自发光*显示屏没有背光，而是通常通过为每个像素供电来发光。显示屏亮度可以从“始终开启”模式下的低亮度变化到用户做出手势后的全亮度。用户可以选择设备的亮度设置，系统会自动遵循这些设置。
 
 采用[Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function)API,开发人员可以启用屏幕后光.在API 3.2.0及以上,后光亮度可以提供为0.0至1.0之间的值,而在API 3.2以下,可以设置为`true`或`false`.
 
@@ -105,7 +105,7 @@ Garmin devices often use audible tones for different events. The [Attention.play
 
 ## 振动
 
-The vibration motor 可用于 inform the user that an event that needs their attention is occurring. You can engage the vibration motor with the [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) API:
+振动马达可用于提醒用户发生了需要注意的事件。您可以使用 [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) API 启动振动马达：
 
 ```typescript
 function vibrate(vibeProfiles as Array<VibeProfile>) as Void

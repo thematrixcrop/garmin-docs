@@ -328,7 +328,7 @@ class MyMenuDelegate extends WatchUi.MenuInputDelegate {
 
 数据字段作为加密器活动体验的插件.用户在从商店安装数据字段后,可以在其活动页面内放置它们.
 
-On devices with touch screen support, an input delegate 可用于 accept input. Only the [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) behavior is supported and will be triggered when the user touches a point inside the data field when it is active on the screen. The behavior delegate should be the second element of the array that is returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) as with other app types.
+在支持触摸屏的设备上，输入委托可用于接收输入。这里只支持 [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) 行为；当数据字段在屏幕上处于活动状态且用户触摸字段内部的某个点时，会触发该行为。与其他应用类型一样，行为委托应作为 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) 返回数组的第二个元素。
 
 ```java
 // This data field accepts touch input
@@ -554,7 +554,7 @@ defaultMarker.setIcon(WatchUi.MAP\_MARKER\_ICON\_PIN, 0, 0)
 
 setMapMarker()
 
-The method takes a [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object and sets it on the map. In this example only the `defaultMarker` is set to be drawn on the map. However, it is acceptable to set multiple MapMarker objects by setting them in an [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/). For 示例：
+该方法接收一个 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象并将其设置到地图上。在此示例中，只有 `defaultMarker` 会绘制到地图上。不过，也可以将多个 MapMarker 对象放入 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 中进行设置。例如：
 
 ```cpp
 // Create an Array to hold the MapMarker objects

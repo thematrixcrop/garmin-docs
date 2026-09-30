@@ -116,4 +116,4 @@ class ImageTransaction {
 
 ## 引导用户进入网页内容
 
-The call 可用于 direct the user to a specific web page on the paired mobile device. When called, the specified web page should be fetched and displayed in the phones default browser. There is no callback for this function and the watch app has no method for checking if the call was completed on the phone successfully.
+此调用可将用户引导到已配对移动设备上的特定网页。调用后，系统会获取指定网页并在手机默认浏览器中显示。此函数没有回调，手表应用也无法检查手机是否成功完成调用。

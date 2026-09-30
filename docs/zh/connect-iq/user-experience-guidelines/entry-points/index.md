@@ -13,7 +13,7 @@ title: "Entry Points"
 
 当用户从活动列表中启动应用程序时,应用程序将运行直到用户明确退出第一页.
 
-**Glance List** (*Device apps, Widgets*) – Glances are an evolution of the widget concept. The information of a widget is condensed into a glanceable item, and the collection is presented to the user as a list. Selecting an item from the list launches into the experience. The user can exit by backing out of the base page, but after a period of inactivity, 系统将 terminate the launched app, as well.
+**速览列表**（*设备应用、小组件*）– 速览是小组件概念的演进形式。小组件的信息被精简为可快速浏览的条目，并以列表形式呈现给用户。选择列表中的条目即可进入相应体验。用户可以返回基础页面退出；经过一段时间无操作后，系统也会终止已启动的应用程序。
 
 在API级3.1产品上,小程序是唯一支持眼光的应用程序类型.在API级4.0中,设备应用程序也获得了支持眼光的能力.
 

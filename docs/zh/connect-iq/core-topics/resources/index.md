@@ -104,38 +104,38 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 
 | Qualifier | Language | 备注 |
 | --- | --- | --- |
-| 无限定符 | 基础语言 | These strings will be used if no language is provided. If a translation is not provided for a string in a specific language, 系统将 use the base language version as a substitution. |
-| `ara` | Arabic |  |
-| `bul` | Bulgarian |  |
-| `ces` | Czech |  |
-| `dan` | Danish |  |
-| `deu` | German |  |
-| `dut` | Dutch |  |
-| `eng` | English |  |
-| `est` | Estonian |  |
-| `fin` | Finnish |  |
-| `fre` | French |  |
-| `hrv` | Croatian |  |
-| `hun` | Hungarian |  |
-| `ind` | Indonesian |  |
-| `ita` | Italian |  |
-| `jpn` | Japanese |  |
-| `kor` | Korean |  |
-| `lav` | Latvian |  |
-| `lit` | Lithuanian |  |
+| 无限定符 | 基础语言 | 未提供语言时使用这些字符串。如果特定语言没有提供某个字符串的翻译，系统会使用基础语言版本作为替代。 |
+| `ara` | 阿拉伯语 |  |
+| `bul` | 保加利亚语 |  |
+| `ces` | 捷克语 |  |
+| `dan` | 丹麦语 |  |
+| `deu` | 德语 |  |
+| `dut` | 荷兰语 |  |
+| `eng` | 英语 |  |
+| `est` | 爱沙尼亚语 |  |
+| `fin` | 芬兰语 |  |
+| `fre` | 法语 |  |
+| `hrv` | 克罗地亚语 |  |
+| `hun` | 匈牙利语 |  |
+| `ind` | 印度尼西亚语 |  |
+| `ita` | 意大利语 |  |
+| `jpn` | 日语 |  |
+| `kor` | 韩语 |  |
+| `lav` | 拉脱维亚语 |  |
+| `lit` | 立陶宛语 |  |
 | `nob` | 挪威语博克马尔文 |  |
-| `pol` | Polish |  |
-| `por` | Portuguese |  |
-| `slo` | Slovak |  |
-| `slv` | Slovenian |  |
-| `spa` | Spanish |  |
-| `swe` | Swedish |  |
-| `rus` | Russian |  |
-| `ron` | Romanian |  |
-| `tha` | Thai |  |
-| `tur` | Turkish |  |
-| `ukr` | Ukrainian |  |
-| `vie` | Vietnamese |  |
+| `pol` | 波兰语 |  |
+| `por` | 葡萄牙语 |  |
+| `slo` | 斯洛伐克语 |  |
+| `slv` | 斯洛文尼亚语 |  |
+| `spa` | 西班牙语 |  |
+| `swe` | 瑞典语 |  |
+| `rus` | 俄语 |  |
+| `ron` | 罗马尼亚语 |  |
+| `tha` | 泰语 |  |
+| `tur` | 土耳其语 |  |
+| `ukr` | 乌克兰语 |  |
+| `vie` | 越南语 |  |
 | `zsm` | 标准马来语 |  |
 | `zhs` | 简体中文 |  |
 | `zht` | 繁体中文 |  |
@@ -313,7 +313,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 *自 API 级别 3.1.0*
 
-The Monkey Motion tool included in the Connect IQ SDK that 可用于 generate animation resources for compatible Connect IQ products.
+Connect IQ SDK 中包含的 Monkey Motion 工具可用于为兼容的 Connect IQ 产品生成动画资源。
 
 tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc)和`GIF`文件格式导入.由于`YUV`是真正的颜色,接近原始的文件格式,它是将高质量的动画输入子动作编码工具时建议的格式.如果需要,[FFmpeg](https://ffmpeg.org/)是转换视频文件格式的方便工具.例如,如果您的创意团队已经提供了其他流行的格式的视频,则将文件转换为`YUV`格式:
 
@@ -321,7 +321,7 @@ tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/
 > ffmpeg -i input.mp4 -vf format=yuv420p output.y4m
 ```
 
-Additionally, to overcome the fact that the `YUV` format does not support transparency (unlike the `GIF` file format), the Monkey Motion tool accepts an additional `YUV` file as input. This video file should represent an alpha channel mask of the original animation that contained transparency. Again, FFmpeg is a convenient tool for creating such a video. The `alphaextract` option 可用于 take an input stream with an alpha channel and return a video containing just the alpha component as a greyscale value:
+此外，由于 `YUV` 格式不支持透明度（不同于 `GIF` 文件格式），Monkey Motion 工具接受额外的 `YUV` 文件作为输入。该视频文件应表示原始透明动画的 alpha 通道掩码。同样，FFmpeg 是创建此类视频的便捷工具。`alphaextract` 选项可用于接收带 alpha 通道的输入流，并返回只包含 alpha 分量灰度值的视频：
 
 ```
 > ffmpeg -i input.gif -vf alphaextract,format=yuv420p output.y4m

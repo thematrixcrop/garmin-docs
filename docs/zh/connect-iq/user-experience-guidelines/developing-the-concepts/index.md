@@ -34,7 +34,7 @@ title: "Developing the Concepts"
 
 ### 小组件和概览
 
-Widgets are a carousel of apps that the user can quickly navigate through. The base page has limited input but can push pages to let the user go deeper 更多信息. In 2019 Garmin introduced Glances. Glances are a scrollable list of key data, and each list item has a displayable metric. The user can select any glance to dig in further. Both widgets and glances will time out after a period of inactivity.
+小组件是用户可以快速浏览的应用轮播列表。基础页面可接收的输入有限，但可以推入其他页面，让用户深入查看信息。Garmin 于 2019 年推出了速览。速览是可滚动的关键数据列表，每个列表项都显示一个指标。用户可以选择任意速览查看详细信息。小组件和速览在一段时间无操作后都会超时。
 
 Widgets
 

@@ -36,7 +36,7 @@ The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 
 
 ## 活动监测
 
-[Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) 提供访问 the current day's metrics via [ActivityMonitor.getInfo()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getInfo-instance_function) which returns a [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) object.
+[Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) 通过 [ActivityMonitor.getInfo()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getInfo-instance_function) 提供当天指标，该方法返回一个 [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) 对象。
 
 您还可以使用[ActivityMonitor.getHistory()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getHistory-instance_function)获取一些这些指标的日常历史记录,该数据库返回了[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)对象的数组.这段历史的历史可以因设备而异,以及设备已被激活了多久,但7天的历史相当典型.
 

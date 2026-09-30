@@ -18,7 +18,7 @@ title: "Layouts"
 </resources>
 ```
 
-To use this layout in your code simply call [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) inside the [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) function. Call the parent [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) if you plan on using the [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) function to update dynamic values on the screen. For 示例：
+要在代码中使用此布局，只需在 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 函数中调用 [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function)。如果计划使用 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 更新屏幕上的动态值，请调用父类的 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)。例如：
 
 ```java
 class MainView extends WatchUi.View {
@@ -99,7 +99,7 @@ class MainView extends WatchUi.View {
 | --- | --- | --- |
 | 系统字体引用 |在[Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)模块中引用标准FONT编号.| `Graphics.FONT_SMALL` |
 | 自定义字体引用 |在[application resources](/connect-iq/core-topics/resources/#fonts)中引用字体.| `@Rez.Fonts.MySmallFont` |
-| 可缩放字体引用 | Reference a system scalable font. This is the font name or names optionally separated by a comma and the pixel size separated by a colon. See [Scalable Fonts](/connect-iq/core-topics/graphics/#scalable-fonts) 更多信息. | `"#BionicBold,Roboto:12"` |
+| 可缩放字体引用 | 引用系统可缩放字体。这里是字体名称，可用逗号分隔多个名称，并使用冒号分隔像素大小。更多信息请参阅[可缩放字体](/connect-iq/core-topics/graphics/#scalable-fonts)。 | `"#BionicBold,Roboto:12"` |
 
 ## 可绘制对象
 

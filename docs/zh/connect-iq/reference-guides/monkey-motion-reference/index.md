@@ -3,7 +3,7 @@ title: "Monkey Motion"
 ---
 # Monkey 动效
 
-The Monkey Motion UI tool or the command line 可用于 import your animations.
+您可以使用 Monkey Motion UI 工具或命令行导入动画。
 
 ##使用子运动UI
 
@@ -29,7 +29,7 @@ tool子动作工具为每个处理的动画生成一个 file子动作宣言 (或
 
 ![Monkey Motion 擦除](/connect-iq/resources/programmers-guide/monkey_motion_scrubber.png)
 
-If the developer wishes to scrub a previously encoded animation, the *File* menu option 可用于 select *Load Animation*, which accepts Monkey Motion Manifest files as input.
+如果开发者希望拖动查看已编码的动画，可以在 *File* 菜单中选择 *Load Animation*。该选项接受 Monkey Motion Manifest 文件作为输入。
 
 ##使用命令行
 
@@ -41,10 +41,10 @@ Argument
  | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
 | `-a <arg>` |针对`YUV`编码的视频文件的目标阿尔法频道面膜| 有效且可解析的 `YUV` 编码视频文件 | NA | 可选 |
-| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 |1至6之间的值| 6 | 可选 |
+| `-c <arg>` | 动画首选的颜色深度（每个颜色通道的位数）。更多信息请参阅[AMOLED 设备的颜色深度](#color-depth-for-amoled-devices) | 1 至 6 之间的值 | 6 | 可选 |
 | `-d <arg>` | 目标设备 |通过一个直角 (:) 分开的设备资格;支持方向变化的设备应被"肖像图"或"景观图"接下来来来,以确定在编码全屏动画时适当的分辨率| NA | 必需 |
 | `-e <arg>` |应出口的动画资源的标识符与子动作编码的文件|任何以字母开始的值| NA | 可选 |
-| `-f <arg>` |动画的目标率| A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 |对于YUV编码的视频,GIF文件可以在动画中编码延迟率,如果未指定,则会适用| 可选 |
+| `-f <arg>` | 动画的目标帧率 | 建议使用 1 到 10 之间的值；更高的帧率取决于动画的解码速度。更多信息请参阅[帧率注意事项](#frame-rate-considerations) | 对于 YUV 编码的视频，GIF 文件可以在动画中编码延迟率；如果未指定，则会使用默认值 | 可选 |
 | `-h` | 输出帮助信息 | NA | NA | 可选 |
 | `-m <arg>` |为了指定构建的设备的明示文件|一个项目公布文件的路径| Empty | 可选 |
 | `-o <arg>` | 输出文件路径 | 有效且可解析的文件路径 | 目标动画文件路径 | 可选 |

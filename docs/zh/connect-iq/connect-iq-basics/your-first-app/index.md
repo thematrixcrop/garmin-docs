@@ -5,7 +5,7 @@ title: "Your First Connect IQ App"
 
 ## 创建您的第一个项目
 
-First 您需要 create your new project:
+首先，您需要创建新项目：
 
 1. 使用*Ctrl + Shift + P* (*在Mac上命令 + Shift + P*) 调用命令
 

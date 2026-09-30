@@ -13,9 +13,9 @@ title: "Manifest File and Permissions"
 
 `entry`属性必须指定您的应用程序的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)对象.
 
-The `name` and `launcherIcon` attributes must specify a resource ID that is defined in the app resources. The `name` must reference a `string` entry in your strings resources, and the `launcherIcon` must reference a bitmap resource. See the [Resources](/connect-iq/core-topics/resources/#resources) 更多信息. Note that the icon resource should not be re-used within your application; use a duplicate resource if you want to use the icon within the app.
+`name` 和 `launcherIcon` 属性必须指定应用资源中定义的资源 ID。`name` 必须引用字符串资源中的 `string` 条目，`launcherIcon` 必须引用位图资源。更多信息请参阅[资源](/connect-iq/core-topics/resources/#resources)。请注意，图标资源不应在应用程序中重复使用；如果要在应用程序内部使用该图标，请创建一个副本资源。
 
-If you specify a `launcherIcon`, 系统将 resource compiler will auto size the resource to match the product icon size. If a `launcherIcon` isn't specified, a default icon will be compiled into the application.
+如果指定了 `launcherIcon`，资源编译器会自动调整资源大小以匹配产品图标尺寸。如果未指定 `launcherIcon`，系统会将默认图标编译到应用程序中。
 
 在`type`字段中指定您正在开发的应用程序.目前,Connect IQ支持五种类型的应用程序:
 
@@ -123,7 +123,7 @@ Garmin为许多应用程序制作了各种各样的产品,而 Monkey C 简单地
 
 ## 语言
 
-Connect IQ apps can be localized across over 30 languages, and the languages your app support can impact what regions of the world your app is available in. In the manifest you can declare the languages your app supports, which will be used when exporting your application to the store. See [Resources](/connect-iq/core-topics/resources/#strings) 更多信息.
+Connect IQ 应用程序可以本地化为 30 多种语言，应用程序支持的语言会影响应用程序在全球哪些地区可用。您可以在清单中声明应用程序支持的语言，导出应用程序到商店时会使用这些设置。更多信息请参阅[资源](/connect-iq/core-topics/resources/#strings)。
 
 ## 依赖项
 

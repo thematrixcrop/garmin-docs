@@ -39,7 +39,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 ## 项目管理
 
-The following commands 可用于 create a new project and export it:
+以下命令可用于创建新项目并导出项目：
 
 | Command | 说明 |
 | --- | --- |
@@ -51,7 +51,7 @@ The following commands 可用于 create a new project and export it:
 
 ## 编辑清单
 
-The following commands 可用于 edit and update the `manifest.xml` of your project:
+以下命令可用于编辑和更新项目的 `manifest.xml`：
 
 | Command | 说明 |
 | --- | --- |

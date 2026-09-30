@@ -86,7 +86,7 @@ function draw(dc) {
 
 之前,[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)API允许根据24位RRGGBB值设置前景或背景颜色.[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)和[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)都接受32位AARRGGBB值,允许您提供RGB值的阿尔法频道值.[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)API允许设置笔工具,而[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)设置填充工具.
 
-You can also set the blend mode with [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function). By default, 系统将 blend your color with whatever is being drawn over. However, you can use \`BLEND\_MODE\_NO\_BLEND\` to set the color and alpha of a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) directly. You can also use \`BLEND\_MODE\_ADDITION\` to have your blend added to the channels being drawn to.
+您还可以使用 [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) 设置混合模式。默认情况下，系统会将您的颜色与当前正在绘制的内容混合。不过，您可以使用 `BLEND_MODE_NO_BLEND` 直接设置 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的颜色和 alpha。也可以使用 `BLEND_MODE_ADDITION` 将混合结果添加到正在绘制的通道。
 
 除了颜色之外,现在还可以提供[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/). 这允许通过位图填写原始图,并开辟了许多新的绘图可能性.
 
@@ -98,7 +98,7 @@ You can also set the blend mode with [Dc.setBlendMode()](/connect-iq/api-docs/To
 
 *自 API 级别 4.2.2*
 
-Connect IQ allows you to create two-dimensional affine transforms using the [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) class. [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 提供访问 the underlying transformation matrix and common operations like [rotation](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#rotate-instance_function), scaling and [shearing](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#shear-instance_function). To apply the transform, pass the [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) into [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) as the `:transform` argument in the options dictionary.
+Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 类创建二维仿射变换。[Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 提供对变换矩阵的访问，以及[旋转](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#rotate-instance_function)、缩放和[倾斜](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#shear-instance_function)等常用操作。要应用变换，请将 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 作为选项字典中的 `:transform` 参数传递给 [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)。
 
 ### 着色
 
@@ -118,17 +118,17 @@ Sometimes you want the color of an asset, like an icon, to be user-definable. Fo
 
 *自 API 级别 2.3.0*
 
-The [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) class 可用于 draw to surface other than the primary display surface. There are two options for creating a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object. The first is to generate one from a loaded bitmap resource. In this case, the provided bitmap is used as the drawing surface that is manipulated. The second option is to specify the width, and height of the surface, and optionally a color palette. If no color palette is specified, the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) will use the system colors, and will not have a palette. If a bitmap resource is provided to the initializer, the width, height, and palette parameters are ignored.
+The [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：第一种是从已加载的位图资源生成对象，此时提供的位图会作为可操作的绘图表面；第二种是指定表面的宽度和高度，并可选地指定颜色调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且没有调色板。如果向初始化器提供了位图资源，则会忽略宽度、高度和调色板参数。
 
 如果一个[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)确实有一个色调,则可以使用[BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function)方法读取.该色调也可以使用[BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function)方法修改.所提供的色调必须与该位图的现有色调相同.图像中的所有像素将将颜色更改为每个色调指标的新颜色.请注意,资源编译器生成的位图带有色调,除非已指定了`disableTransparency`旗,否则在指定的色调末端将有一个额外的透明索引.
 
-A Drawing Context can be obtained from the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) using the [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) method. This returns a [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) class that has the same capabilities as the primary device [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) that is provided to the methods [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function), [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and . This object 可用于 modify the contents of the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) by drawing shapes, text, and bitmaps to it.
+可以使用 [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) 方法从 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 获取绘图上下文。该方法返回一个 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 类，其能力与主设备提供给 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 等方法的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 相同。您可以通过在其中绘制形状、文本和位图来修改 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的内容。
 
 ##### 缓冲的比特图和图形池
 
 像其他图形资源一样,[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)对象现在也利用了图形库.这个场景的优势是,现在可以自由地使用临时图形缓冲器,而没有耗尽应用程序堆.
 
-As noted earlier, the graphics pool will intelligently purge and restore resources from the pool if the loaded resources exceed the available pool space. Unlike static resources that are reloaded from your executable, [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) are not restored if they have been purged. This works fine if you are using a short-lived, temporary buffer, but if your bitmap is purged after allocation, 您需要 re-render its contents. Alternatively, you can call the get() method on the reference to get a locked version of the bitmap. This will prevent the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object from being purged from the pool, but it can also lead to the graphics pool running out of available space if more resources are loaded.
+如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用的是生命周期短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，您需要重新渲染其内容。或者，您可以调用引用上的 `get()` 方法获取位图的锁定版本。这会防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象被图形池清除，但如果加载更多资源，也可能导致图形池耗尽可用空间。
 
 如果您的应用程序运行在API前的4.0级设备上,请使用分发[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)的 has检查:
 

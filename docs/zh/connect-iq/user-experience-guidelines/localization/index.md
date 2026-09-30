@@ -84,7 +84,7 @@ title: "本地化"
 
 - Garmin 设备允许用户根据距离,高度,高度,速度,温度和重量定制自己喜欢的单位.
 
--   Leave enough space for translated text. The height and width of the text may expand or contract based on which language is displayed. The Connect IQ simulator 可用于 test your text in multiple languages.
+-   为译文留出足够空间。文字的高度和宽度可能会随着显示语言而增减。您可以使用 Connect IQ 模拟器测试多种语言的文本。
 
 - 尽可能使用图标画,但要小心不同文化中的图像和颜色的文化意义.
 

@@ -7,7 +7,7 @@ title: "Toasts"
 
 ## 标准 Toast
 
-The System 6 [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API 提供访问 the system toast. The toast can display a short text string and an icon.
+System 6 的 [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API 提供系统 Toast。Toast 可以显示简短文本和图标。
 
 ## 示例
 

@@ -22,9 +22,9 @@ title: "App Trials"
 
 ## 试用模式功能
 
-Developers can query the [AppBase.isTrial()](/connect-iq/api-docs/Toybox/Application/AppBase/#isTrial-instance_function) method to determine if trial mode is active for their app, which 可用于 trigger special trial-mode functionality. App trials can also be time-based. The method [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) should be overridden if you wish to support a time-based trial. [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) must return a [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) that represents how many days are remaining in the trial, or null if time-based trials are to be disabled. If `0` is returned, the app will be prevented from running as the trial will be considered "expired".
+开发者可以调用 [AppBase.isTrial()](/connect-iq/api-docs/Toybox/Application/AppBase/#isTrial-instance_function) 方法，确定应用程序是否处于试用模式，并据此触发特殊的试用功能。应用程序试用也可以按时间限制。若要支持按时间限制的试用，应重写 [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) 方法。该方法必须返回一个 [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)，表示试用剩余天数；如果要禁用按时间限制的试用，则返回 null。如果返回 `0`，试用将被视为“已过期”，应用程序将无法运行。
 
-By default, when an app is in trial mode, 系统将 push special trial notifications to the use either to inform them of how many days remain in their trial (if you've overridden [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) to return a non-null value), or more generally that trial mode is active. If you do not wish for these notifications to be displayed to the user, you can override to return `false`.
+默认情况下，应用程序处于试用模式时，系统会向用户推送特殊的试用通知：如果您重写 [AppBase.getTrialDaysRemaining()](/connect-iq/api-docs/Toybox/Application/AppBase/#getTrialDaysRemaining-instance_function) 并返回非 null 值，通知会告知用户剩余试用天数；否则会告知用户试用模式已启用。如果不希望向用户显示这些通知，可以重写相应方法并返回 `false`。
 
 ## 试用应用服务器 API
 

@@ -7,7 +7,7 @@ title: "Progress Indicators"
 
 ## 百分比进度指示器
 
-If you quantify the percentage or time 您需要 complete a process, you can use a percent progress indicator to present that progress to the user.
+如果您要量化完成流程所需的进度百分比或时间，可以使用百分比进度指示器向用户展示进度。
 
 ### 示例
 

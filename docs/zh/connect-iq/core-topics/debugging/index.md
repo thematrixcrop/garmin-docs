@@ -22,7 +22,7 @@ Connect IQ 有几种不同的方法来测试和调试您的应用：
 
 ## 修改视觉工作室代码
 
-To begin debugging your application select *Run > Start Debugging*. 确保您已在编辑器中打开了要调试的项目源文件。 After selecting the product you want to debug, the app will launch in debug mode in the simulator. 仅在连接 IQ 模拟器上运行时支持调试。
+要开始调试应用程序，请选择 *Run > Start Debugging*。确保您已在编辑器中打开要调试的项目源文件。选择要调试的产品后，应用程序会在模拟器中以调试模式启动。调试仅在 Connect IQ 模拟器中运行时受支持。
 
 ###设定一个断点
 
@@ -72,8 +72,7 @@ stack -- Examining the stack.
 status -- Status inquiries.
 support -- 支持 facilities.
 
-Type "help" followed by a class name for a list of commands in that class.
-Type "help all" for the list of all commands.
+输入 `help` 后跟类名，可列出该类中的命令。输入 `help all` 可列出所有命令。
 Type "help" followed by a command name for full documentation.
 Command name abbreviations are allowed if defined.
 ```

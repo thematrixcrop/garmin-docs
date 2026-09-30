@@ -46,7 +46,7 @@ title: "Designing Workflows and Interactions"
 
 ### 确认
 
-Confirmations are pages that confirm a user action. They 可用于 confirm a decision by the user or add a point of friction if the user is exiting a flow.
+确认页面用于确认用户操作。它们可以确认用户的决定，也可以在用户退出流程时增加一道确认步骤。
 
 ![确认](/connect-iq/resources/ux-guide/confirmations.png)
 

@@ -3,9 +3,9 @@ title: "Application and System Modules"
 ---
 # 应用和系统模块
 
-Every application has to have a class that extends [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/). 这个对象称为应用对象，是处理应用生命周期事件的处理器。
+每个应用程序都必须包含一个继承自 [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 的类。这个对象称为应用对象，负责处理应用程序生命周期事件。
 
-The Application object must be specified in the application `manifest.xml`. 构建工具使用此来指示在启动时加载哪个类。 See the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section 更多信息.
+必须在应用程序的 `manifest.xml` 中指定 Application 对象，以告知构建工具启动时要加载哪个类。更多信息请参阅[清单和权限](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions)一节。
 
 ## 安装和卸载
 
@@ -24,32 +24,32 @@ The Application object must be specified in the application `manifest.xml`. 构�
 
 ## 应用生命周期
 
-*Since API level 4.2.0* 有四个主要的生命周期状态：已启动、活跃、不活跃和已暂停。
+*自 API 级别 4.2.0 起*，应用程序有四种主要生命周期状态：已启动、活跃、不活跃和已暂停。
 
 ![](/connect-iq/resources/programmers-guide/app-lifecycle.png)
 
 ### 启动
 
-应用加载后，应用对象将被实例化。 From that point forward it will be available throughout the application by calling [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function).
+应用加载后，系统会实例化应用对象。此后，您可以在应用程序中的任何位置调用 [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function) 获取该对象。
 
 在您的应用对象即时化后,将调用[AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)函数.这是您的机会启动应用程序并恢复状态.
 
-If your application is launched via an [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/), the state parameter will contain arguments passed via the intent. Do not attempt to push a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance at this time. See the [Intents](/connect-iq/core-topics/intents/#intents) section 更多信息.
+如果应用程序通过 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 启动，state 参数将包含 intent 传入的参数。此时不要尝试推入 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 实例。更多信息请参阅 [Intents](/connect-iq/core-topics/intents/#intents) 一节。
 
-应用加载后，系统将请求应用的初始视图。 Depending on what functionality your application implements, you may have to implement several of the following handlers:
+应用加载后，系统会请求应用程序的初始视图。根据应用程序实现的功能，您可能需要实现以下若干处理器：
 
 -[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function): 应用程序启动的主要方法. 返回您的手表面,数据场,小工具或设备应用程序的基本视图.
 
--   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function): If your are implementing a widget that has a glance, this 将在...时调用 the user goes to browse your glance in the glance list. See the [Glances](/connect-iq/core-topics/glances/#glances) section 更多信息.
+-   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function)：如果您正在实现带有速览界面的小组件，当用户在速览列表中查看该速览时，系统会调用此方法。更多信息请参阅[速览](/connect-iq/core-topics/glances/#glances)一节。
 
--   [AppBase.getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function): If your watch face is overriding the goal views, 这为您提供了 an opportunity to present your goal view.
+-   [AppBase.getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function)：如果您的表盘要覆盖目标视图，此方法可用于呈现目标视图。
 
--   : If you are implementing an audio content provider, this method is called when 您需要 present playback options to the user.
+-   如果您正在实现音频内容提供者，当需要向用户显示播放选项时，系统会调用相应方法。
 
 
 所有这些函数都返回一个阵列:第一个项目是[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)实例,第二个是[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)实例,处理视图的输入.
 
-从速览列表和活动菜单启动的应用行为不同。 If an app is launched from the glance list, a timeout will be applied to the app. If the user does not exit the app within a given time frame, 系统将 terminate the app and return to the home screen. If an app is launched from the activity menu, however, it will not time out, and the user must explicitly exit your application.
+从速览列表和活动菜单启动的应用程序行为不同。从速览列表启动时，应用程序会受到超时限制。如果用户未在规定时间内退出，系统会终止应用程序并返回主屏幕。不过，从活动菜单启动的应用程序不会超时，用户必须主动退出应用程序。
 
 您可以使用以下方法检测用户进入应用的方式：
 
@@ -72,16 +72,16 @@ class MySuperApp extends Application.AppBase {
 
 *自 API 级别 4.2.0*
 
-某些设备具有任务切换器，可以方便地在活动和设备上的应用之间切换。 This can switch your app from *active* to *inactive*. To take full advantage of the task switcher, 您需要 utilize the full app lifecycle.
+某些设备具有任务切换器，便于在设备上的活动和应用程序之间切换。这可能会使您的应用程序从*活跃*状态切换到*不活跃*状态。若要充分利用任务切换器，您需要使用完整的应用程序生命周期。
 
-| State |描述|
+| 状态 | 描述 |
 | --- | --- |
 | Active |当您的应用程序从不活跃状态转向活跃状态时,[AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function)被调用.活跃应用程序的访问由应用程序类型定义.从不活跃到活跃时,将恢复访问传感器,ANT/BLE.|
 | Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) 在从...转换时调用 the active to inactive state. |
 
 根据应用运行的状态，您将拥有不同级别的系统资源访问权限：
 
-| State | Active | Inactive |
+| 状态 | 活跃 | 不活跃 |
 | --- | --- | --- |
 | Activity |您可以在获取许可的情况下启动和停止活动记录.|如果应用程序正在记录活动,则将继续记录.如果应用程序没有记录,则不允许启动或停止活动记录.|
 | GPS |如果另一个应用程序记录活动,则可能会拒绝GPS访问.|如果应用程序正在记录活动和接收位置事件,它将继续接收不活跃状态的事件.如果应用程序没有记录活动,它将被阻止修改GPS状态.|
@@ -90,7 +90,7 @@ class MySuperApp extends Application.AppBase {
 | Sensors |如果应用程序正在记录活动,则允许访问.如果应用程序没有记录活动,则访问可能会以非致命的方式失败.|如果应用程序正在记录活动,则允许访问.否则,传感器访问将会受到限制.|
 | Attention |允许访问.|访问被拒绝.|
 
-可能存在用户启动的应用超过系统资源支持的情况。 If your app is not active but is still running, the system may terminate your app to free up resources.
+用户可能会启动超出系统资源承载能力的应用程序。如果您的应用程序仍在运行但处于非活跃状态，系统可能会终止它以释放资源。
 
 当这种情况发生时,您的[AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)将被调用一个:暂停选项,以通知您即将终止.您可以使用此调用来维持您的状态,直到您恢复.当用户返回您的应用程序时,您将被调用一个`:resume`选项在[AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)上.
 
@@ -124,13 +124,13 @@ class MyApp  extends Application.AppBase {
 
 *自 API 级别 4.0.0*
 
-在 API 级别 4.0 及以下的设备上，存在小组件应用类型。 小部件是从表盘可访问的轮播中运行的应用。 On devices after API 4.0.0, widgets are now from the app launcher, and apps can have glances. The glance list is accessible to the user while they are in an activity, and your apps can be launched from the glance list while the user is recording an activity.
+在 API 级别 4.0 及以下的设备上，存在小组件应用类型。小组件是在表盘可访问的轮播界面中运行的应用程序。在 API 级别高于 4.0.0 的设备上，小组件改为从应用启动器启动，应用程序还可以提供速览。用户进行活动时也可以访问速览列表，并在记录活动期间从列表启动应用程序。
 
 如果您正在构建应用程序,为您的应用程序创建一个视角,则用户可以启动您的应用程序的两种独特方式.
 
 ## 系统
 
-The [Toybox.System](/connect-iq/api-docs/Toybox/System/) 模块提供 access to the device state, settings, and metadata. Here you can get runtime information about the device that is running your app, and exercise some execution control.
+[Toybox.System](/connect-iq/api-docs/Toybox/System/) 模块提供对设备状态、设置和元数据的访问。您可以在此获取运行应用程序的设备的运行时信息，并控制部分执行行为。
 
 | API |描述| API 级别 |
 | --- | --- | --- |
