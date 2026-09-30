@@ -38,16 +38,16 @@ PersistedContent 模块允许访问存储的路线、航点和其他存储的用
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 using Toybox.System;
 
-var iterator = PersistedContent.getCourses; // Get the Iterator
-var content = iterator.next();              // Get the next object in the iterator
+var iterator = PersistedContent.getCourses; // 获取迭代器
+var content = iterator.next();              // 获取迭代器中的下一个对象
 
-var name = content.getName();               // Get the content name
-var id = content.getId();                   // Get the content id
-System.ExitTo(content.toIntent());          // Use the content for a System.Intent
+var name = content.getName();               // 获取内容名称
+var id = content.getId();                   // 获取内容 ID
+System.ExitTo(content.toIntent());          // 将内容用于 System.Intent
 ```
 
 Since:
@@ -311,10 +311,10 @@ API 级别 2.2.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-// Get an iterator for all courses owned by this application
+// 获取此应用拥有的所有课程的迭代器
 var iterator = PersistedContent.getAppCourses();
 ```
 
@@ -464,10 +464,10 @@ API 级别 3.0.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-// Get an iterator for all routes owned by this application
+// 获取此应用拥有的所有路线的迭代器
 var iterator = PersistedContent.getAppRoutes();
 ```
 
@@ -546,10 +546,10 @@ API 级别 3.0.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-// Get an iterator for all tracks owned by this application
+// 获取此应用拥有的所有轨迹的迭代器
 var iterator = PersistedContent.getAppTracks();
 ```
 
@@ -582,10 +582,10 @@ API 级别 3.0.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-// Get an iterator for all waypoints owned by this application
+// 获取此应用拥有的所有航点的迭代器
 var iterator = PersistedContent.getAppWaypoints();
 ```
 
@@ -757,10 +757,10 @@ API 级别 3.0.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-// Get an iterator for all workouts owned by this application
+// 获取此应用拥有的所有训练的迭代器
 var iterator = PersistedContent.getAppWorkouts();
 ```
 
@@ -925,10 +925,10 @@ API 级别 3.0.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-var iterator = PersistedContent.getCourses(); // Get the Iterator
+var iterator = PersistedContent.getCourses(); // 获取迭代器
 ```
 
 :::details 支持的设备
@@ -1080,10 +1080,10 @@ API 级别 2.2.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-var iterator = PersistedContent.getRoutes(); // Get the Iterator
+var iterator = PersistedContent.getRoutes(); // 获取迭代器
 ```
 
 :::details 支持的设备
@@ -1161,10 +1161,10 @@ API 级别 2.2.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-var iterator = PersistedContent.getTracks(); // Get the Iterator
+var iterator = PersistedContent.getTracks(); // 获取迭代器
 ```
 
 :::details 支持的设备
@@ -1196,10 +1196,10 @@ API 级别 2.2.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-var iterator = PersistedContent.getWaypoints(); // Get the Iterator
+var iterator = PersistedContent.getWaypoints(); // 获取迭代器
 ```
 
 :::details 支持的设备
@@ -1373,10 +1373,10 @@ API 级别 2.2.0
 Example:
 
 ```
-// Assumes content already saved on device
+// 假设内容已保存到设备
 using Toybox.PersistedContent;
 
-var iterator = PersistedContent.getWorkouts(); // Get the Iterator
+var iterator = PersistedContent.getWorkouts(); // 获取迭代器
 ```
 
 :::details 支持的设备
