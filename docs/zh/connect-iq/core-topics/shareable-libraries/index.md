@@ -32,47 +32,47 @@ Monkey Barrel 可以方便地存储和复用有用的通用代码和资源。例
 ```cpp
 module FooBarrel {
 
-    (:Bars)           // Notice the annotations above the submodule names
+    (:Bars)           // 注意子模块名称上方的注解
     module Bars {
-        // Create a counter var for the "Current Bars"
+        // 创建“当前 Bars”的计数变量
         var currentBars = 0;
 
-        // Draw a "Bar"
+        // 绘制一个“Bar”
         function drawBar() {
-           // . . . draw a super awesome "Bar"
+           // ……绘制一个非常棒的“Bar”
            return Bar;
         }
 
-        // Increment the Bar counter
+        // 增加 Bar 计数器
         function addBar(currentBars) {
            bars = currentBars;
            bars ++;
            return bars;
         }
 
-        // Get the current Bars
+        // 获取当前 Bars
         function getCurrentBars() {
             return currentBars;
         }
     }
 
-    (:BarsToo)        // Notice this here too
+    (:BarsToo)        // 此处也有同样的注解
     module BarsToo {
         function fancyBars() {
-            // . . . Do a fancy thing
+            // ……执行一个花哨操作
             return somethingFancy;
         }
     }
 
-    (:Empty)          // An empty annotation
+    (:Empty)          // 空注解
     module Empty {
 
-        // A sub-module without an annotation
+        // 无注解的子模块
         module AlsoEmpty {
         }
     }
 
-    // This module throws an error
+    // 此模块会抛出错误
     module throwsError {
     }
 }
@@ -98,10 +98,10 @@ Barrel 也可以包含资源。资源在 Barrel 中以与普通应用相同的�
 编译器会将资源模块构建为 Barrel 模块的子模块。例如，名为 `IconLibrary` 的 Barrel 会生成如下模块：
 
 ```cpp
-IconLibrary {                       // Barrel Level
-    Rez {                           // Rez Level
-        Drawables {                 // Drawables Level
-            var myIcon = 123;       // Resource
+IconLibrary {                       // 桶级别
+    Rez {                           // Rez 级别
+        Drawables {                 // Drawables 级别
+            var myIcon = 123;       // 资源
         }
     }
 }
@@ -152,9 +152,9 @@ Monkey C 编译器会打包 Monkey Barrel，以对源代码执行基本的语法
 Barrel 会自动添加到默认的 Barrel Jungle 文件中，Manifest 文件也会更新这些 Barrel 依赖项。如果 Barrel 支持注解，必须针对各个 Barrel 手动配置注解，以便将带注解的部分导入项目：
 
 ```bash
-# All products include the code
-# annotated with 'Bars' and 'BarsToo'
-# of the 'FooBarrel' barrel
+# 所有产品都包含代码
+# 使用 'Bars' 和 'BarsToo' 注解
+# 的 'FooBarrel' 桶中的代码
 base.FooBarrel.annotations = Bars;BarsToo
 ```
 
@@ -167,26 +167,26 @@ base.FooBarrel.annotations = Bars;BarsToo
 将 Barrel 添加到项目后，使用它们非常直接。无需在源文件中使用 `using` 语句导入 Barrel；但如果要为 Barrel 使用别名，则需要使用 `using` 语句：
 
 ```cpp
-// This is a normal Toybox "using" statment
+// 这是普通的 Toybox “using” 语句
 using Toybox.System;
 
-// This sets up an alias for a "submodule" within a barrel
+// 这会为桶中的“子模块”设置别名
 using FooBarrel.Bars as Bars;
 ```
 
 此时别名已经建立，Barrel 代码也已在项目中可用。
 
 ```cpp
-// This is a normal Connect IQ call
+// 这是普通的 Connect IQ 调用
 System.println("Cool Bars");
 
-// This is a general Barrels call (No using statment needed)
+// 这是常规的 Barrels 调用（无需 using 语句）
 FooBarrel.BarsToo.fancyBars();
 
-// This is a specific Barrels call (Alias)
+// 这是特定的 Barrels 调用（别名）
 var globalBars = Bars.getCurrentBars();
 
-// This is a call to use a resource held in a Barrel
+// 这是使用桶中资源的调用
 var icon = UserInterface.loadResource(IconLibrary.Rez.Drawables.myIcon)
 ```
 
