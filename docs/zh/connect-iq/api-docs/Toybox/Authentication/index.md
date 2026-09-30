@@ -105,25 +105,25 @@ const CLIENT_ID = "myClientID";
 const OAUTH_CODE = "myOAuthCode";
 const OAUTH_ERROR = "myOAuthError";
 
-// register a callback to capture results from OAuth requests
+// 注册回调以捕获 OAuth 请求结果
 Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 
-// wrap the OAuth request in a function
+// 将 OAuth 请求封装到函数中
 function getOAuthToken() {
    status = "Look at OAuth screen\n";
    Ui.requestUpdate();
 
-   // set the makeOAuthRequest parameters
+   // 设置 makeOAuthRequest 参数
    var params = {
        "redirect_uri" => "connectiq://oauth",
        "response_type" => "code",
        "client_id" => $.CLIENT_ID
    };
 
-   // makeOAuthRequest triggers login prompt on mobile device.
-   // "responseCode" and "responseError" are the parameters passed
-   // to the resultUrl. Check the oauth provider's documentation
-   // to determine the correct strings to use.
+   // makeOAuthRequest 会在移动设备上触发登录提示。
+   // "responseCode" 和 "responseError" 是传递给 resultUrl 的参数。
+   // 请查看 OAuth 提供商的文档
+   // 以确定要使用的正确字符串。
    Auth.makeOAuthRequest(
        "https://requesturl.com",
        params,
@@ -133,16 +133,16 @@ function getOAuthToken() {
    );
 }
 
-// implement the OAuth callback method
+// 实现 OAuth 回调方法
 function onOAuthMessage(message) {
     if (message.data != null) {
         var code = message.data[$.OAUTH_CODE];
         var error = message.data[$.OAUTH_ERROR];
     } else {
-        // return an error
+        // 返回错误
     }
 }
-// the OAuth service can now be used with a makeWebRequest() call
+// 现在可以通过 makeWebRequest() 调用使用 OAuth 服务
 ```
 
 起始版本：
@@ -172,7 +172,7 @@ function onOAuthMessage(message) {
         var code = message.data[OAUTH_CODE];
         var error = message.data[OAUTH_ERROR];
     } else {
-        // return an error
+        // 返回错误
     }
 }
 Authentication.registerForOAuthMessages(method(:onOAuthMessage));
