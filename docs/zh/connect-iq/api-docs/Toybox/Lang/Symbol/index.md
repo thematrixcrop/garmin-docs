@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Symbol 是一种轻量级常量标识符。
 
-The Monkey C compiler will assign a new value when it encounters a new Symbol. This allows a developer to use Symbol objects as keys or constant values without explicitly declaring a `constant` or `enum`. While Symbol values are constant for a build, their values may change across builds.
+Monkey C 编译器遇到新 Symbol 时会分配一个新值。这使开发者可以使用 Symbol 对象作为键或常量值，而无需显式声明 `constant` 或 `enum`。Symbol 值在一次构建中保持不变，但其值可能在不同构建之间发生变化。
 
 因此，不应将 Symbol 对象用于持久化数据。
 
@@ -49,13 +49,13 @@ API 级别 1.0.0
 
 将 Symbol 转换为 Number
 
-This will return a number containing the integer value of the symbol.
+此项将返回一个包含该 symbol 整数值的数字。
 
 Returns:
 
 - 数字 —
 
-    The number representation of the Symbol
+    Symbol 的数字表示
 
 
 Since:
@@ -66,13 +66,13 @@ API 级别 2.3.0
 
 将 Symbol 转换为 String
 
-This will return the string for the name of the symbol in development builds. Because Monkey C does not contain runtime reflection information in release builds, the returned string will be different and will follow the format "symbol (num)". In this format, "num" is the integer value of the symbol.
+在开发版本中，此项将返回 symbol 名称的字符串。由于 Monkey C 在发布版本中不包含运行时反射信息，返回的字符串将有所不同，并采用 "symbol (num)" 格式。在此格式中，"num" 是 symbol 的整数值。
 
 Returns:
 
 - 字符串 —
 
-    The String representation of the Symbol
+    Symbol 的 String 表示形式
 
 
 Since:

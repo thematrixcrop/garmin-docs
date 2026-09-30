@@ -121,7 +121,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if other is not of type [String](/connect-iq/api-docs/Toybox/Lang/String/).
+    如果 other 不是 [String](/connect-iq/api-docs/Toybox/Lang/String/) 类型，则抛出。
 
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -168,7 +168,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The index of the start of the specified String, or `null` if not found
+    指定 String 的起始索引；如果未找到，则为 `null`
 
 
 Since:
@@ -183,7 +183,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The hash code for the String
+    String 的哈希代码
 
 
 Since:
@@ -198,7 +198,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The length of the String
+    String 的长度
 
 
 Since:
@@ -217,7 +217,7 @@ Parameters:
 
 - startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Zero-based start index of the substring
+    子字符串的从零开始的起始索引
 
 - endIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -235,7 +235,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The substring of the String or `null` on error
+    String 的子字符串；出错时为 `null`
 
 
 Since:
@@ -373,7 +373,7 @@ Parameters:
 
 - base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The base of the input string. If the value of `base` is zero, the string content is expected to have syntax similar to that of integer constants, which includes:
+    输入字符串的基数。如果 `base` 的值为零，则字符串内容应具有类似整数常量的语法，其中包括：
 
 - 可选的符号字符（'+' 或 '-'）
 
@@ -467,7 +467,7 @@ Parameters:
 
 - base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The base of the input string. If the value of `base` is zero, the string content expected to have syntax similar to that of integer constants, which includes:
+    输入字符串的基数。如果 `base` 的值为零，则字符串内容应具有类似整数常量的语法，其中包括：
 
 - 可选的符号字符（'+' 或 '-'）
 

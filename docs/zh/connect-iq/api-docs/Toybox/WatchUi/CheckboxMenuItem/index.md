@@ -238,19 +238,19 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The string label for the CheckboxMenuItem
+    CheckboxMenuItem 的字符串标签
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The substring label for the CheckboxMenuItem, which can be `null`
+    CheckboxMenuItem 的子字符串标签，可以为 `null`
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this CheckboxMenuItem, which is typically a [String](/connect-iq/api-docs/Toybox/Lang/String/)
+    此 CheckboxMenuItem 的标识符，通常为 [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 - checked — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The initial state of the CheckboxMenuItem; checked if `true`, unchecked if `false`
+    CheckboxMenuItem 的初始状态；`true` 表示选中，`false` 表示未选中
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -277,7 +277,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    The current state of the CheckboxMenuItem
+    CheckboxMenuItem 的当前状态
 
 
 Since:
@@ -292,7 +292,7 @@ Parameters:
 
 - checked — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The intended state of the CheckboxMenuItem; checked if `true`, unchecked if `false`
+    CheckboxMenuItem 的预期状态；`true` 表示选中，`false` 表示未选中
 
 
 Since:
@@ -303,4 +303,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if checked is not a valid type
+    如果 `checked` 不是有效类型，则会抛出此异常

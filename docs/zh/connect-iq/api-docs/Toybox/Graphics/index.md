@@ -5,9 +5,9 @@ title: "Module: Toybox.Graphics"
 
 ## 概述
 
-The Graphics module provides a set of tools that allow developers to use basic drawing functionality.
+Graphics 模块提供一组工具，使开发者能够使用基本绘图功能。
 
-This provides the ability to draw shapes, lines, fill shapes, and use dynamic layouts for graphic elements based on specific device contexts. The Device Context (Dc) is useful for developers who are interested in creating content for multiple device platforms with differing screen shapes, sizes, and color palettes.
+此项支持绘制形状和线条、填充形状，以及根据特定设备上下文对图形元素使用动态布局。设备上下文（Dc）对于希望为具有不同屏幕形状、尺寸和调色板的多个设备平台创建内容的开发者很有用。
 
 Since:
 
@@ -58,7 +58,7 @@ API 级别 1.0.0
 
 |
 
-Tiny Connect IQ font
+Connect IQ 超小字体
 
 |
 | FONT\_SMALL | 2 |
@@ -139,7 +139,7 @@ API 级别 1.3.0
 
 |
 
-Tiny system font
+系统超小字体
 
 |
 | FONT\_SYSTEM\_SMALL | 11 |
@@ -617,7 +617,7 @@ API 级别 4.2.1
 
 |
 
-Top of text is further from center. Typically used for upright text along the top of a circle.
+文本顶部距离中心更远。通常用于沿圆形顶部显示的正向文本。
 
 |
 | RADIAL\_TEXT\_DIRECTION\_COUNTER\_CLOCKWISE | 1 |
@@ -693,7 +693,7 @@ API 级别 1.2.0
 - [**FontType**](#FontType-named_type) as [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) or [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) or [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)
 - [**Point2D**](#Point2D-named_type) as \[ [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) \]
 
-    Type alias for an Array of length 2.
+    长度为 2 的数组的类型别名。
 
 - [**VectorFontOptions**](#VectorFontOptions-named_type) as { :face as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, :size as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :font as [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module) or [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), :scale as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) }
 
@@ -750,7 +750,7 @@ API 级别 1.0.0
 
 ### **Point2D** as \[ [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) \]
 
-Type alias for an Array of length 2
+长度为 2 的数组的类型别名
 
 Since:
 
@@ -770,7 +770,7 @@ API 级别 1.0.0
 
 注意：
 
-The result of a draw/fill operation to a [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) created with [ALPHA\_BLENDING\_PARTIAL](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) may produce inconsistent results between devices and the ConnectIQ simulator if the drawn pixels are not fully opaque or fully transparent.
+如果绘制的像素不是完全不透明或完全透明，则使用 [ALPHA\_BLENDING\_PARTIAL](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) 创建的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的绘制/填充操作结果可能会因设备和 ConnectIQ 模拟器而不一致。
 
 Parameters:
 
@@ -780,11 +780,11 @@ Parameters:
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The width of the surface in pixels. Must be a positive integer value.
+        表面的宽度，单位为像素。必须为正整数值。
 
 - :height — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The height of the surface in pixels. Must be a positive integer value.
+        表面高度，单位为像素。必须为正整数值。
 
 - :palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -871,19 +871,19 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The text to fit into the given area, which may include newlines
+    要放入给定区域的文本，其中可能包含换行符
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-    The font to use when determining line break placement
+    确定换行位置时使用的字体
 
 - width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The width of the area to fit within
+    要适配的区域宽度
 
 - height — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The height of the area to fit within
+    要适配到的区域高度
 
 - truncate — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -920,7 +920,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The ascent of the font
+    字体的上升部
 
 
 Since:
@@ -948,7 +948,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The descent of the font
+    字体的下降部
 
 
 Since:
@@ -974,7 +974,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The height of the font
+    字体高度
 
 
 Since:
@@ -1001,11 +1001,11 @@ Parameters:
 
 - :size — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-        The height of the font requested in pixels as a positive number.
+        请求字体的高度，单位为像素，必须为正数。
 
 - :font — ([Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module), [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)) —
 
-        The font to apply a scale to.
+        要应用缩放的字体。
 
 - :scale — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
@@ -1092,20 +1092,20 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `options` is not a supported type.
+    如果 `options` 不是受支持的类型，则会抛出此异常。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the provided `:size` or `:scale` are not a supported type.
+    如果提供的 `:size` 或 `:scale` 不是受支持的类型，则抛出。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the provided `:face` is not a supported type.
+    如果提供的 `:face` 不是受支持的类型，则抛出。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the provided `:face` value is out of range.
+    如果提供的 `:face` 值超出范围，则抛出。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the provided `:size` or `:scale` value is not positive.
+    如果提供的 `:size` 或 `:scale` 值不是正数，则抛出。

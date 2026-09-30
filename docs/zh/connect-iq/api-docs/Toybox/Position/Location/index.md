@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Location object represents a specific position.
+Location 对象表示一个特定位置。
 
 Location 对象提供了以各种格式获取位置坐标的方法。
 
@@ -61,14 +61,14 @@ Parameters:
 
 - distance — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The distance from the current position in meters (m).
+    与当前位置之间的距离，单位为米 (m)。
 
 
 Returns:
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
-    The projected location.
+    投影位置。
 
 
 Since:
@@ -87,15 +87,15 @@ Parameters:
 
 - :latitude — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The latitude
+        纬度
 
 - :longitude — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The longitude
+        经度
 
 - :format — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-        The format of the provided latitude and longitude as one of three possible values:
+        纬度和经度的格式，取以下三个可能值之一：
 
 - :degrees
 

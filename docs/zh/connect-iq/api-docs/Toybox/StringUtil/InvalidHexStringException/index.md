@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Thrown if an invalid hex string is provided.
+如果提供了无效的十六进制字符串，则会抛出此异常。
 
 ## 另见：
 

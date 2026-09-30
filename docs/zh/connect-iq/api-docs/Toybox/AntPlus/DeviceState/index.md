@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The DeviceState object represents the state of the device.
+表示设备状态的 DeviceState 对象。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
@@ -62,7 +62,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The device ID number or `null` if device state is [DEVICE\_STATE\_DEAD](/connect-iq/api-docs/Toybox/AntPlus/#DEVICE_STATE_CLOSED-const)
+    设备 ID 号；如果设备状态为 [DEVICE\_STATE\_DEAD](/connect-iq/api-docs/Toybox/AntPlus/#DEVICE_STATE_CLOSED-const)，则为 `null`
 
 
 ### var state as [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) or **Null**

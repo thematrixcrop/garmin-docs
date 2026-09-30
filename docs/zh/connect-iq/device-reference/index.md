@@ -3,7 +3,7 @@ title: "Device Reference"
 ---
 # 设备引用
 
-| Device | 屏幕形状 | 屏幕尺寸 | Touch Screen | Colors | 图标大小 | 按键 |
+| Device | 屏幕形状 | 屏幕尺寸 | 触摸屏 | Colors | 图标大小 | 按键 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Approach® S50](/connect-iq/device-reference/approachs50/) | round | 390 x 390 | Yes | 65536 | 56 x 56 | enter, esc, menu |
 | [Approach® S60](/connect-iq/device-reference/approachs60/) | round | 240 x 240 | Yes | 64 | 40 x 33 | enter, esc, menu |

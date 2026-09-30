@@ -90,7 +90,7 @@ API 级别 1.0.0
 
 以 String 形式获取位图资源信息。
 
-The info String is formatted as "Bitmap X x Y" where "X" is the width of the bitmap and "Y" is the height.
+info String 的格式为 "Bitmap X x Y"，其中 "X" 是位图宽度，"Y" 是位图高度。
 
 Returns:
 

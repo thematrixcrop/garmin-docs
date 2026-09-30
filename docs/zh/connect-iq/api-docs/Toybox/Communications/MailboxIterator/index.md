@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 **此项已弃用**
 
-This class may be removed after System 4.
+此类可能会在 System 4 之后移除。
 
 ## 另见：
 

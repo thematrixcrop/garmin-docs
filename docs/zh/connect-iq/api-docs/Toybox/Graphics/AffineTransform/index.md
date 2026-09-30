@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 一个二维仿射变换矩阵
 
-This is a 2D transform, typically used for converting coordinates from one 2D coordinate system to another. These transformations can represent a sequence of rotations, scales, shears, and translations.
+这是一个二维变换，通常用于将坐标从一个二维坐标系转换到另一个二维坐标系。这些变换可以表示旋转、缩放、错切和平移的序列。
 
 ```
    | m00  m01  m02 |
@@ -171,7 +171,7 @@ API 级别 4.2.0
 
 Throws:
 
-- ValueOutOfBoundsException if self cannot be inverted.
+- 如果 self 无法求逆，则为 ValueOutOfBoundsException。
 
 
 ### **preConcatenate(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/))** as **Void**
@@ -274,7 +274,7 @@ API 级别 4.2.0
 
 Throws:
 
-- UnexpectedTypeException if parameter is not an Array
+- 如果参数不是数组，则为 UnexpectedTypeException
 
 - 如果参数不恰好包含 6 个元素，则抛出 InvalidValueException
 
@@ -387,7 +387,7 @@ API 级别 4.2.0
 
 将变换应用于二维坐标
 
-Transform a single point as if by generating the following matrix-vector product:
+变换单个点，就像生成以下矩阵-向量乘积一样：
 
 ```
    | m00  m01  m02 |   | ptx |
@@ -411,7 +411,7 @@ API 级别 4.2.0
 
 将变换应用于二维坐标数组
 
-Transform an array of coordinates
+变换坐标数组
 
 Parameters:
 

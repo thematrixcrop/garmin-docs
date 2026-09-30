@@ -5,7 +5,7 @@ title: "Module: Toybox.Lang"
 
 ## 概述
 
-The Lang module contains Monkey C language basic types, and provides a method for formatting Strings.
+Lang 模块包含 Monkey C 语言的基本类型，并提供用于格式化字符串的方法。
 
 Since:
 
@@ -66,7 +66,7 @@ API 级别 3.1.0
 
 |
 
-Unsigned 16-bit Integer Value
+无符号 16 位整数值
 
 |
 | NUMBER\_FORMAT\_UINT32 | 5 |
@@ -75,7 +75,7 @@ API 级别 3.1.0
 
 |
 
-Unsigned 32-bit Integer Value
+无符号 32 位整数值
 
 |
 | NUMBER\_FORMAT\_UINT8 | 6 |
@@ -84,7 +84,7 @@ API 级别 3.1.0
 
 |
 
-Unsigned 8-bit Integer Value
+无符号 8 位整数值
 
 |
 

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于控制 ANT 无线通道的类。
 
-The GenericChannel provides the methods necessary for initialization, life cycle, and encryption of ANT channels.
+GenericChannel 提供 ANT 通道的初始化、生命周期管理和加密所需的方法。
 
 Since:
 
@@ -271,7 +271,7 @@ Parameters:
 
 - configuration — ([Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) —
 
-    The CryptoConfig object to set for the current channel
+    要为当前通道设置的 CryptoConfig 对象
 
 
 Example:
@@ -442,11 +442,11 @@ Throws:
 
 - ([Ant.EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/)) —
 
-    Thrown if invalid encryption settings are used
+    如果使用了无效的加密设置，则会抛出此异常
 
 - ([Ant.UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)) —
 
-    Thrown if an ecrypted channel cannot be acquired because all channels are in use
+    如果由于所有通道都在使用中而无法获取加密通道，则会抛出此异常
 
 
 ### **getDeviceConfig()** as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
@@ -465,7 +465,7 @@ Returns:
 
 - [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/) —
 
-    The DeviceConfig object with current channel device configuration.
+    包含当前通道设备配置的 DeviceConfig 对象。
 
 
 另见：
@@ -485,11 +485,11 @@ Parameters:
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    The Method object to call with channel messages
+    用于调用通道消息的 Method 对象
 
 - channelAssignment — ([Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/)) —
 
-    The ChannelAssignment object for the channel
+    通道的 ChannelAssignment 对象
 
 
 Example:
@@ -510,7 +510,7 @@ Throws:
 
 - ([Ant.UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/)) —
 
-    Thrown if the the system does not have a channel available.
+    如果系统没有可用通道，则抛出。
 
 
 ### **open()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -571,7 +571,7 @@ API 级别 1.0.0
 
 发送确认消息。
 
-You can expect to receive either [MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_COMPLETED-const) or [MSG\_CODE\_EVENT\_TRANSFER\_TX\_FAILED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_FAILED-const) if the message succeeded/failed going to the recipient.
+如果消息成功/失败发送给接收方，您可以预期收到 [MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_COMPLETED-const) 或 [MSG\_CODE\_EVENT\_TRANSFER\_TX\_FAILED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_FAILED-const)。
 
 Parameters:
 
@@ -665,7 +665,7 @@ Parameters:
 
 - burstData — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
-    The data to burst across the channel
+    要通过通道突发传输的数据
 
 
 Example:
@@ -744,7 +744,7 @@ Parameters:
 
 - configuration — ([Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) —
 
-    The DeviceConfig object to set for the current ANT channel
+    要为当前 ANT 通道设置的 DeviceConfig 对象
 
 
 Example:
@@ -777,4 +777,4 @@ Throws:
 
 - (Lang.UnexpectedTypeError) —
 
-    Thrown if configuration values in configuration are not of the correct type.
+    如果 configuration 中的配置值类型不正确，则会抛出此异常。

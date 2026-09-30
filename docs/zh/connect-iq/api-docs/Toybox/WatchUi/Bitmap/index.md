@@ -125,11 +125,11 @@ Parameters:
 
 - :rezId — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The resource identifier for the Bitmap object
+        Bitmap 对象的资源标识符
 
 - :bitmap — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type)) —
 
-        The BitmapResource, BufferedBitmap, BitmapReference, or BufferedBitmapReference object to use
+        要使用的 BitmapResource、BufferedBitmap、BitmapReference 或 BufferedBitmapReference 对象
 
 
 另见：
@@ -153,7 +153,7 @@ Parameters:
 
 - bitmap — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The ResourceId or the Bitmap object.
+    ResourceId 或 Bitmap 对象。
 
 
 Since:
@@ -164,4 +164,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if bitmap is not a valid type
+    如果 bitmap 不是有效类型，则会抛出此异常

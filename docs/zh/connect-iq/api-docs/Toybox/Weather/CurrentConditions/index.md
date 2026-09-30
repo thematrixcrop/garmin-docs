@@ -30,7 +30,7 @@ API 级别 3.2.0
 
 - [**condition**](#condition-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current weather condition.
+    当前天气状况。
 
 - [**dewPoint**](#dewPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -38,15 +38,15 @@ API 级别 3.2.0
 
 - [**feelsLikeTemperature**](#feelsLikeTemperature-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The wind chill or heat index, in Celsius.
+    风寒指数或体感温度，单位为摄氏度。
 
 - [**highTemperature**](#highTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-    The forecasted high temperature for the day in Celsius.
+    当天预报的最高温度，单位为摄氏度。
 
 - [**lowTemperature**](#lowTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-    The forecasted low temperature for the day in Celsius.
+    当天预报的最低温度，单位为摄氏度。
 
 - [**observationLocationName**](#observationLocationName-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** deprecated
 
@@ -58,7 +58,7 @@ API 级别 3.2.0
 
 - [**observationTime**](#observationTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    UTC time the conditions were observed.
+    观测到状况时的 UTC 时间。
 
 - [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -82,7 +82,7 @@ API 级别 3.2.0
 
 - [**visibility**](#visibility-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The visibility distance in meters.
+    可见距离，单位为米。
 
 - [**windBearing**](#windBearing-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -112,7 +112,7 @@ Returns:
 
 ### var condition as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current weather condition
+当前天气状况
 
 Since:
 
@@ -142,7 +142,7 @@ Returns:
 
 ### var feelsLikeTemperature as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The wind chill or heat index, in Celsius
+风寒指数或体感温度，单位为摄氏度
 
 Since:
 
@@ -157,7 +157,7 @@ Returns:
 
 ### var highTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-The forecasted high temperature for the day in Celsius
+当天预报的最高温度，单位为摄氏度
 
 Since:
 
@@ -172,7 +172,7 @@ Returns:
 
 ### var lowTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-The forecasted low temperature for the day in Celsius
+当天预报的最低温度，单位为摄氏度
 
 Since:
 
@@ -189,7 +189,7 @@ Returns:
 
 **此项已弃用**
 
-This value may be removed after System 11.
+此值可能会在 System 11 之后移除。
 
 观测位置的文本描述。
 
@@ -225,7 +225,7 @@ Returns:
 
 ### var observationTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-UTC time the conditions were observed
+观测到状况时的 UTC 时间
 
 Since:
 
@@ -312,7 +312,7 @@ Returns:
 
 ### var visibility as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The visibility distance in meters
+可见距离，单位为米
 
 Since:
 

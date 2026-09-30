@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The CalculatedWheelDistance object represents the accumulated distance.
+CalculatedWheelDistance 对象表示累计距离。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

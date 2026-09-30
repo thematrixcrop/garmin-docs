@@ -13,7 +13,7 @@ Activity Info 会由 Data Fields 中的 [compute()](/connect-iq/api-docs/Toybox/
 
 - SWIM\_STROKE：表示 [swimStrokeType()](/connect-iq/api-docs/Toybox/Activity/Info/#swimStrokeType-var)，例如自由泳、仰泳或蝶泳。
 
-- **TIMER\_STATE:** Indicates the activity recording [timerState()](/connect-iq/api-docs/Toybox/Activity/Info/#timerState-var), such as stopped, started, paused, etc.
+- TIMER\_STATE：表示活动记录的 [timerState()](/connect-iq/api-docs/Toybox/Activity/Info/#timerState-var)，例如已停止、已开始、已暂停等。
 
 
 Since:
@@ -110,7 +110,7 @@ API 级别 2.1.0
 
 |
 
-The timer is off. There is not an active recording
+计时器已关闭。当前没有活动的记录
 
 |
 | TIMER\_STATE\_STOPPED | 1 |
@@ -119,7 +119,7 @@ API 级别 2.1.0
 
 |
 
-The timer is stopped. The recording is active, with the timer stopped.
+计时器已停止。记录处于活动状态，计时器已停止。
 
 |
 | TIMER\_STATE\_PAUSED | 2 |
@@ -128,7 +128,7 @@ API 级别 2.1.0
 
 |
 
-The timer is paused. The recording is active with the timer paused. This state occurs when the timer is active, but has been stopped with the Auto-Pause feature.
+计时器已暂停。记录处于活动状态，计时器已暂停。当计时器处于活动状态但因自动暂停功能而停止时，会出现此状态。
 
 |
 | TIMER\_STATE\_ON | 3 |
@@ -137,7 +137,7 @@ API 级别 2.1.0
 
 |
 
-The timer is on. The recording is active and the timer is running.
+计时器已开启。记录处于活动状态，计时器正在运行。
 
 |
 
@@ -1691,7 +1691,7 @@ Returns:
 
 - [Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/) —
 
-    the current profile
+    当前配置
 
 
 Since:

@@ -111,7 +111,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    the identifier of the layer, can be `null`
+    图层的标识符，可以为 `null`
 
 
 Since:
@@ -126,7 +126,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    X-axis absolute draw offset relative to the screen origin
+    相对于屏幕原点的 X 轴绝对绘制偏移量
 
 
 Since:
@@ -141,7 +141,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Y-axis absolute draw offset relative to the screen origin
+    相对于屏幕原点的 Y 轴绝对绘制偏移量
 
 
 Since:
@@ -160,19 +160,19 @@ Parameters:
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The x coordinate of the top left corner of the layer (optional defaults to 0)
+        图层左上角的 x 坐标（可选，默认为 0）
 
 - :locY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The y coordinate of the top left corner of the layer (optional defaults to 0)
+        图层左上角的 y 坐标（可选，默认为 0）
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The width of the layers in pixels,
+        图层的宽度，单位为像素，
 
 - :height — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The height of the layers in pixels,
+        图层高度，单位为像素，
 
 - :colorDepth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

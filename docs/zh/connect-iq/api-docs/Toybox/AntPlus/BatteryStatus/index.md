@@ -39,7 +39,7 @@ API 级别 2.2.0
 
 - [**batteryVoltage**](#batteryVoltage-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The voltage, -1 is invalid.
+    电压，-1 表示无效。
 
 - [**operatingTime**](#operatingTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -67,12 +67,12 @@ Returns:
 
 - [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) —
 
-    The battery status of the ANT+ device as a number
+    ANT+ 设备的电池状态数值
 
 
 ### var batteryVoltage as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The voltage, -1 is invalid
+电压，-1 表示无效
 
 Since:
 
@@ -82,7 +82,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    The voltage of the ANT+ device
+    ANT+ 设备的电压
 
 
 ### var operatingTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -97,7 +97,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The operating time of the ANT+ device
+    ANT+ 设备的运行时间
 
 
 ## 实例方法详情

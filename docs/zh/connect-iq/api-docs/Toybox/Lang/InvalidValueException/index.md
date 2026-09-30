@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates an invalid value was provided to an API.
+此异常表示向 API 提供了无效值。
 
 ## 另见：
 

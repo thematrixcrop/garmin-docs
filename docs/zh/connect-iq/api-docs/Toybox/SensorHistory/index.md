@@ -5,7 +5,7 @@ title: "Module: Toybox.SensorHistory"
 
 ## 概述
 
-The SensorHistory module contains the interface for SensorHistory.
+SensorHistory 模块包含 SensorHistory 的接口。
 
 SensorHistory 提供对设备硬件板载传感器记录的历史信息的访问。可用信息量取决于设备。这意味着一台设备提供的信息可能多于另一台设备。此类提供了一个 ORDER\_\* 枚举，用于选择样本迭代器的数据顺序。
 
@@ -627,7 +627,7 @@ API 级别 2.1.0
 
 获取指定时间段内的心率历史记录（截至上次断电）。
 
-This function always returns the most recent heart rate samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
+此函数始终返回最新的心率样本。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间间隔可能取决于设备。
 
 Parameters:
 
@@ -919,7 +919,7 @@ Parameters:
 
 - :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples.
+        用于检索样本的时间段。
 
 - 如果 period 为 `null`，则检索所有可用历史记录
 
@@ -934,7 +934,7 @@ Parameters:
 
 - 如果 order 为 `null`，则样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-- Use the ORDER enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -1314,7 +1314,7 @@ API 级别 3.3.0
 
 获取给定时间段内的温度历史记录，最远追溯至上次断电。
 
-This function always returns the most recent temperature samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
+此函数始终返回最新的温度样本。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间间隔可能取决于设备。
 
 Parameters:
 

@@ -22,7 +22,7 @@ ProgressBar 是一种特殊的 View，用于向用户显示进度指示器。它
 
 注意：
 
-The look and feel of a progress bar is device-specific.
+进度条的外观和交互方式因设备而异。
 
 Example:
 
@@ -285,7 +285,7 @@ Parameters:
 
 - startValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The initial value for the ProgressBar:
+    ProgressBar 的初始值：
 
 - 从 0 到 100 的增量
 
@@ -320,7 +320,7 @@ Parameters:
 
 - progressValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The current value of the ProgressBar:
+    ProgressBar 的当前值：
 
 - 从 0 到 100 的增量
 

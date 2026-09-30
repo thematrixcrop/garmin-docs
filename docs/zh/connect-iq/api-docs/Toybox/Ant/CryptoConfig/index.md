@@ -229,7 +229,7 @@ API 级别 2.3.0
 
 - [**decimationRate**](#decimationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The division factor of the encryption counter.
+    加密计数器的除法因子。
 
 - [**encryptionId**](#encryptionId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -269,7 +269,7 @@ API 级别 2.3.0
 
 ### var decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The division factor of the encryption counter
+加密计数器的除法因子
 
 Since:
 
@@ -309,7 +309,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The Dictionary of options for the configuration
+    配置选项的 Dictionary
 
 - :encryptionId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -317,11 +317,11 @@ Parameters:
 
 - :encryptionKey — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        The key which will be used to encrypt/decrypt ANT packets as an Array of bytes
+        用于以字节数组形式加密/解密 ANT 数据包的键
 
 - :userInfoString — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        The string to send during negotiation to the master channel (only used when the channel is configured as a slave) as an Array of bytes
+        协商期间发送到主通道的 String，形式为字节数组（仅当通道配置为从通道时使用）
 
 - :decimationRate — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

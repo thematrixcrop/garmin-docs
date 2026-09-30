@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-This class represents an off-screen bitmap. It provides methods to modify the bitmap palette, and get a drawable context.
+此类表示屏幕外位图。它提供修改位图调色板和获取可绘制上下文的方法。
 
 ## 另见：
 
@@ -98,7 +98,7 @@ Returns:
 
 - [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) —
 
-    The draw context
+    绘制上下文
 
 
 Since:
@@ -128,7 +128,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    The current palette for this bitmap.
+    此位图的当前调色板。
 
 
 Since:
@@ -154,7 +154,7 @@ API 级别 4.0.0
 
 **此项已弃用**
 
-Use [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function) after ConnectIQ version 4.0.0.
+在 ConnectIQ 4.0.0 之后使用 [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function)。
 
 Constructor
 
@@ -166,11 +166,11 @@ Parameters:
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The width of the surface in pixels
+        表面的宽度，单位为像素
 
 - :height — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The height of the surface in pixels
+        表面高度，单位为像素
 
 - :palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -209,7 +209,7 @@ Throws:
 
 - ([Graphics.OutOfGraphicsMemoryException](/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException/)) —
 
-    Thrown if there isn't enough free memory available to load the resource.
+    如果没有足够的可用内存来加载资源，则抛出。
 
 
 ### **isCached()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -244,4 +244,4 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the palette size does not match the current palette.
+    如果调色板大小与当前调色板不匹配，则抛出。

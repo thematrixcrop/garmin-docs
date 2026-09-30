@@ -234,7 +234,7 @@ Returns:
 
 - [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
-    The IconMenuItem icon
+    IconMenuItem 图标
 
 
 Since:
@@ -249,19 +249,19 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The string label for the IconMenuItem
+    IconMenuItem 的字符串标签
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The substring label for the IconMenuItem, which can be `null`
+    IconMenuItem 的子字符串标签，可以为 `null`
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this IconMenuItem, which is typically a [String](/connect-iq/api-docs/Toybox/Lang/String/)
+    此 IconMenuItem 的标识符，通常为 [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 - icon — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)) —
 
-    The Drawable used to render the icon for this item or the [Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) object.
+    用于渲染此项目图标的 Drawable，或 [Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 对象。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -295,4 +295,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if icon is not a valid type
+    如果 `icon` 不是有效类型，则会抛出此异常

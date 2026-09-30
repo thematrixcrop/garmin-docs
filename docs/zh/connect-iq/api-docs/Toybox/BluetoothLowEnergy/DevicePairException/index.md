@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that attempting to pair a device has failed
+此异常表示尝试配对设备失败。
 
 ## 另见：
 

@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Thrown if the Encryption Manager's enableEncryption is unable to acquire an encryption channel either because there are too many encrypted channels or an error occurred while acquiring an encrypted channel.
+如果 Encryption Manager 的 enableEncryption 无法获取加密通道，原因可能是加密通道过多，或获取加密通道时发生错误，则抛出。
 
 ## 另见：
 

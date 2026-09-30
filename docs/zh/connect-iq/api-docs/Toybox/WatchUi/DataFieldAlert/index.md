@@ -20,7 +20,7 @@ Toybox.WatchUi.View
 
 DataFields 的警报 View
 
-Use this view for pushing alerts from a DataField
+使用此视图从数据字段推送警报
 
 Since:
 

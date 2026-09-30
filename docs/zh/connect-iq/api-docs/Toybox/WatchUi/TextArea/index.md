@@ -219,7 +219,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if font is not a valid type
+    如果 `font` 不是有效类型，则会抛出此异常
 
 
 ### **setJustification(justification as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -241,7 +241,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if justification is not a valid type
+    如果 `justification` 不是有效类型，则会抛出此异常
 
 
 ### **setText(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
@@ -263,4 +263,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if text is not a valid type
+    如果 text 不是有效类型，则抛出

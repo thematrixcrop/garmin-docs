@@ -251,7 +251,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Width of the animation in pixels
+    动画的宽度，单位为像素
 
 
 Since:
@@ -262,7 +262,7 @@ API 级别 3.1.0
 
 以 String 形式获取动画资源信息。
 
-The info String is formatted as "Animation X x Y" where "X" is the width of the animation and "Y" is the height.
+info String 的格式为 "Animation X x Y"，其中 "X" 是动画宽度，"Y" 是动画高度。
 
 Returns:
 

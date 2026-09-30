@@ -257,7 +257,7 @@ API 级别 2.2.0
 
 使此灯进入新模式。
 
-You should check the capable modes before sending light modes as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
+发送灯光模式之前，应检查支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
 Parameters:
 

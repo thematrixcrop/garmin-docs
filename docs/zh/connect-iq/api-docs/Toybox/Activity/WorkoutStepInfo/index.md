@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-The WorkoutStepInfo class contains information about the current workout.
+WorkoutStepInfo 类包含当前 workout 的信息。
 
-This information can be retrieved with the [getCurrentWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getCurrentWorkoutStep-instance_function) or [getNextWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getNextWorkoutStep-instance_function) methods.
+可以通过 [getCurrentWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getCurrentWorkoutStep-instance_function) 或 [getNextWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getNextWorkoutStep-instance_function) 方法检索此信息。
 
 Since:
 
@@ -159,19 +159,19 @@ API 级别 3.2.0
 
 - [**intensity**](#intensity-var) as [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module)
 
-    The intensity of the step.
+    步骤的强度。
 
 - [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The name of the current step.
+    当前步骤的名称。
 
 - [**notes**](#notes-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The notes for the current step.
+    当前步骤的备注。
 
 - [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
-    The sport for the workout step.
+    训练步骤的运动项目。
 
 - [**step**](#step-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
@@ -179,14 +179,14 @@ API 级别 3.2.0
 
 - [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
-    The subsport for the workout step.
+    训练步骤的子运动项目。
 
 
 ## 实例属性详情
 
 ### var intensity as [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module)
 
-The intensity of the step
+步骤的强度
 
 Since:
 
@@ -201,7 +201,7 @@ Returns:
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The name of the current step
+当前步骤的名称
 
 Since:
 
@@ -213,7 +213,7 @@ Returns:
 
 ### var notes as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The notes for the current step
+当前步骤的备注
 
 Since:
 
@@ -225,7 +225,7 @@ Returns:
 
 ### var sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
-The sport for the workout step
+训练步骤的运动项目
 
 Since:
 
@@ -252,7 +252,7 @@ Returns:
 
 ### var subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
-The subsport for the workout step. Currently only valid for breathing and swim workouts
+训练步骤的子运动项目。目前仅适用于呼吸和游泳训练
 
 Since:
 

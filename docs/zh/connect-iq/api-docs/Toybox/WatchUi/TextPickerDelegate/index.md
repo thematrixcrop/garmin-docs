@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 TextPickerDelegate 响应 TextPicker 选择。
 
-This class should be extended to handle the specified text.
+应扩展此类以处理指定的文本。
 
 ## 另见：
 
@@ -251,17 +251,17 @@ API 级别 1.1.0
 
 已在 TextPicker 中输入文本字符串。
 
-This method is called when text has been specified by a TextPicker, and receives the text String as an argument.
+通过 TextPicker 指定文本时会调用此方法，并将文本 String 作为参数接收。
 
 Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The entered text
+    输入的文本
 
 - changed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The entered text differs from the initially specified text of the TextPicker
+    输入的文本不同于 TextPicker 最初指定的文本
 
 
 Since:

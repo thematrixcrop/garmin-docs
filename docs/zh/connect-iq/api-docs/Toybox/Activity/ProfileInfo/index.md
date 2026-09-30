@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The ProfileInfo class contains information about the active profile.
+ProfileInfo 类包含有关活动配置文件的信息。
 
 可通过 [getProfileInfo()](/connect-iq/api-docs/Toybox/Activity/#getProfileInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
@@ -28,7 +28,7 @@ API 级别 3.2.0
 
 - [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The profile name.
+    配置文件名称。
 
 - [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
@@ -47,7 +47,7 @@ API 级别 3.2.0
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The profile name
+配置文件名称
 
 Since:
 
@@ -57,7 +57,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    the profile name
+    配置文件名称
 
 
 ### var sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
@@ -102,4 +102,4 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    the profile identifier
+    配置文件标识符

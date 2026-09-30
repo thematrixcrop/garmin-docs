@@ -240,7 +240,7 @@ Parameters:
 
 - data — ([AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) —
 
-    The updated light information
+    更新后的灯光信息
 
 
 Since:

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示地图上折线的对象。
 
-This object holds an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects to draw a polyline on the map.
+此对象包含一个由 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象组成的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，用于在地图上绘制折线。
 
 ## 另见：
 
@@ -194,14 +194,14 @@ Parameters:
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The index of the requested Location
+    请求的 Location 的索引
 
 
 Returns:
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
-    The Location at the provided index
+    指定索引处的 Location
 
 
 Since:
@@ -216,7 +216,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of Location objects in this MapPolyline object.
+    此 MapPolyline 对象中的 Location 对象数。
 
 
 Since:
@@ -231,7 +231,7 @@ Parameters:
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    The color to draw the line on the map as a [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) enum value.
+    以 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 枚举值在地图上绘制线条的颜色。
 
 
 Since:
@@ -246,7 +246,7 @@ Parameters:
 
 - width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The width of the line in pixels (px)
+    线宽，单位为像素（px）
 
 
 Since:

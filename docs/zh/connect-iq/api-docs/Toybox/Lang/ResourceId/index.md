@@ -48,7 +48,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The String representation of the ResourceId
+    ResourceId 的 String 表示形式
 
 
 Since:

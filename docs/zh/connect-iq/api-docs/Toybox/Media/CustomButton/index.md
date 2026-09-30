@@ -99,7 +99,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    the name of the button
+    按钮的名称
 
 
 Since:

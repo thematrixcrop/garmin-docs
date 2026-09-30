@@ -26,22 +26,22 @@ API 级别 3.0.0
 
 - [**bitRate**](#bitRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The bit rate of the audio.
+    音频的比特率。
 
 - [**numChannels**](#numChannels-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The number of channels.
+    通道数。
 
 - [**sampleRate**](#sampleRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The sample rate of the audio in Hz.
+    音频采样率，单位为 Hz。
 
 
 ## 实例属性详情
 
 ### var bitRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The bit rate of the audio
+音频的比特率
 
 Since:
 
@@ -53,7 +53,7 @@ Returns:
 
 ### var numChannels as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The number of channels
+通道数
 
 Since:
 
@@ -65,7 +65,7 @@ Returns:
 
 ### var sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The sample rate of the audio in Hz
+音频采样率，单位为 Hz
 
 Since:
 

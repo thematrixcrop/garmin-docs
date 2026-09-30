@@ -20,11 +20,11 @@ View 是表示应用内页面的对象。
 
 An app may have multiple View objects representing things like menus and other app states. Each View contains a Layout, which in turn contain [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) objects, such as [Bitmaps](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) and [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/). View objects also handle the life cycle of each app, which varies depending on the app type:
 
-Widgets and Watch Apps
+小组件和手表应用
 
 [onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) → [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) → [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) → [onHide()](/connect-iq/api-docs/Toybox/WatchUi/View/#onHide-instance_function)
 
-Watch Faces
+表盘
 
 [onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) → [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) → [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
@@ -207,7 +207,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `layer` is not a WatchUi.Layer
+    如果 `layer` 不是 WatchUi.Layer，则抛出
 
 
 ### **clearLayers()** as **Void**
@@ -228,7 +228,7 @@ Parameters:
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier of the Drawable to find
+    要查找的 Drawable 的标识符
 
 
 Example:
@@ -339,7 +339,7 @@ API 级别 3.1.0
 
 隐藏 View。
 
-This is called before the View is removed from the foreground. This occurs when a new View object is pushed on top of the current one, when the current View is popped, or when the app is closed. Resources should be freed from memory at this point if the current View will be left on the page stack.
+从前景移除 View 之前会调用此函数。当新的 View 对象被推送到当前 View 顶部、当前 View 被弹出或应用关闭时，就会发生这种情况。如果当前 View 将从页面堆栈中移除，此时应释放内存中的资源。
 
 Since:
 
@@ -366,7 +366,7 @@ API 级别 1.0.0
 
 显示 View。
 
-This is called when the View is brought into the foreground. Resources should be loaded into system memory for use in the View at this point.
+View 被置于前景时会调用此函数。此时应将资源加载到系统内存中，以供 View 使用。
 
 Since:
 
@@ -376,7 +376,7 @@ API 级别 1.0.0
 
 更新 View。
 
-This is called when a View is brought to the foreground, after the call to [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function). While a View is active, this method is generally used to update dynamic content in the View. There are also some special cases when it will be invoked:
+在调用 [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) 后，View 被置于前景时会调用此函数。当 View 处于活动状态时，此方法通常用于更新 View 中的动态内容。在以下特殊情况下也会调用此方法：
 
 - 在 Widgets 和 Watch Apps 中调用 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) 时
 
@@ -443,7 +443,7 @@ Parameters:
 
 - :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The flag to enable or disable action menu indicator.
+        用于启用或禁用操作菜单指示器的标志
 
 
 :::details 支持的设备
@@ -511,22 +511,22 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if invalid or no value is passed in for :clockState.
+    如果为 :clockState 传递了无效值或未传递值，则会抛出此异常。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if no :hour and :minute values are specified for the :clockState value of ANALOG\_CLOCK\_STATE\_HOLDING.
+    如果未为 ANALOG\_CLOCK\_STATE\_HOLDING 的 :clockState 值指定 :hour 和 :minute 值，则抛出。
 
 
 ### **setControlBar(options as [View.ControlBarOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ControlBarOptions-named_type) or **Null**)** as **Void**
 
 设置此视图的控制栏选项。
 
-Use of this method has many restrictions.
+使用此方法有许多限制。
 
-With [View](/connect-iq/api-docs/Toybox/WatchUi/View/), the control bar can be hidden by passing `null`. If options is non-null, the `:leftButton` option must be provided. All values for [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module) and [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) are allowed.
+使用 [View](/connect-iq/api-docs/Toybox/WatchUi/View/) 时，可以通过传递 `null` 隐藏控制栏。如果 options 非 null，则必须提供 `:leftButton` 选项。[CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module) 和 [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) 的所有值均允许。
 
-With [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) and [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/), the `options` parameter cannot be `null`; the control bar is always shown. The `:leftButton` option must be set to [CONTROL\_BAR\_LEFT\_BUTTON\_BACK](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module). The `:rightButton` option may be `null`, for no button, or [CONTROL\_BAR\_RIGHT\_BUTTON\_ACCEPT](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module).
+使用 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 和 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) 时，`options` 参数不能为 `null`；控制栏始终显示。`:leftButton` 选项必须设置为 [CONTROL\_BAR\_LEFT\_BUTTON\_BACK](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module)。`:rightButton` 选项可以为 `null`（表示无按钮）或 [CONTROL\_BAR\_RIGHT\_BUTTON\_ACCEPT](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module)。
 
 尝试在任何其他派生自 View 的类上调用此方法，或为给定视图类型使用不受支持的选项，将导致异常。
 
@@ -542,15 +542,15 @@ Parameters:
 
 - :leftButton — ([WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module)) —
 
-        The icon to use for the left button. Must be a [CONTROL\_BAR\_LEFT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module) value.
+        左按钮要使用的图标。必须为 [CONTROL\_BAR\_LEFT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module) 值。
 
 - :rightButton — ([WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module)) —
 
-        The icon to use for the right button. Must be a [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) value. If the value is `null` or not provided, no button will be shown.
+        右按钮要使用的图标。必须为 [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) 值。如果值为 `null` 或未提供，则不会显示按钮。
 
 - :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        The title to display in the control bar. If the view is of type Menu2, the Menu2 title will be given priority and will be displayed in the control bar. If no title is specified, the application name will be used.
+        要显示在控制栏中的标题。如果视图类型为 Menu2，则优先使用 Menu2 标题，并将其显示在控制栏中。如果未指定标题，则使用应用名称。
 
 
 :::details 支持的设备
@@ -574,7 +574,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if called on a view type that does not support control bar changes, or if called from [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) or [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function).
+    如果在不支持控制栏更改的视图类型上调用，或者从 [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 或 [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 调用，则会抛出此异常。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -585,7 +585,7 @@ Throws:
 
 进入 Selectable 交互模式。
 
-When enabled, physical buttons may be used to cycle through on-screen [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) objects. The first registered Selectable in the current layout will be highlighted initially.
+启用后，可使用实体按钮循环浏览屏幕上的 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 对象。当前布局中注册的第一个 Selectable 最初会被高亮显示。
 
 Parameters:
 
@@ -596,7 +596,7 @@ Parameters:
 
 Example:
 
-Toggle the Selectable interaction mode with the Menu button
+使用菜单按钮切换可选择交互模式
 
 ```
 var selectableMode = false;

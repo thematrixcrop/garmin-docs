@@ -5,7 +5,7 @@ title: "Module: Toybox.ScanCode"
 
 ## 概述
 
-The ScanCode module provides functionality to for generating machine readable code images.
+ScanCode 模块提供生成机器可读代码图像的功能。
 
 Since:
 
@@ -26,7 +26,7 @@ API 级别 6.0.0
 
 |
 
-Tolerate up to 7% error
+允许最多 7% 的误差
 
 |
 | QR\_CODE\_ECC\_MEDIUM | 1 |
@@ -35,7 +35,7 @@ API 级别 6.0.0
 
 |
 
-Tolerate up to 15% error
+允许最多 15% 的误差
 
 |
 | QR\_CODE\_ECC\_QUARTILE | 2 |
@@ -44,7 +44,7 @@ API 级别 6.0.0
 
 |
 
-Tolerate up to 25% error
+允许最多 25% 的误差
 
 |
 | QR\_CODE\_ECC\_HIGH | 3 |
@@ -53,7 +53,7 @@ API 级别 6.0.0
 
 |
 
-Tolerate up to 30% error
+允许最多 30% 的误差
 
 |
 
@@ -146,15 +146,15 @@ Parameters:
 
 - value — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The value(s) to encode in the QR code image
+    要在 QR code 图像中编码的值
 
 - ecc — ([ScanCode.QrCodeEcc](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeEcc-module)) —
 
-    The error correction level
+    纠错级别
 
 - imageSize — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The width and height of the resulting QR code image in pixels.
+    生成的 QR code 图像的宽度和高度，单位为像素。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -162,23 +162,23 @@ Parameters:
 
 - :minVersion — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The minimum QR code version. Default is 1.
+        最小 QR 码版本。默认值为 1。
 
 - :maxVersion — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The maximum QR code version. Default is 40.
+        最大 QR 码版本。默认值为 40。
 
 - :maskValue — ([ScanCode.QrCodeMask](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeMask-module)) —
 
-        The mask value. Default is QR\_CODE\_MASK\_AUTO.
+        掩码值。默认值为 QR\_CODE\_MASK\_AUTO。
 
 - :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        The foreground color. Default is COLOR\_BLACK.
+        前景色。默认为 COLOR\_BLACK。
 
 - :backgroundColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        The background color. Default is COLOR\_WHITE.
+        背景颜色。默认值为 COLOR\_WHITE。
 
 
 :::details 支持的设备
@@ -239,16 +239,16 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if an option or parameter is invalid.
+    如果选项或参数无效，则会抛出此异常。
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if an option or parameter value is out of bounds.
+    如果选项或参数值超出范围，则会抛出此异常。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if an option or parameter is an unexpected type.
+    如果选项或参数的类型出乎意料，则会抛出此异常。
 
 - ([Graphics.OutOfGraphicsMemoryException](/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException/)) —
 
-    Thrown if insufficient graphics memory is available for the resulting image.
+    如果生成的图像没有足够的图形内存可用，则会抛出此异常。

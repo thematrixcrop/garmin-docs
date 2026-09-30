@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包含指定时间段传感器数据的类。
 
-The SensorHistoryIterator describes a sequence of [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) objects. The iterator is retrieved using the appropriate "get" methods found in [SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/) at the module level. This class provides the methods needed to retrieve information from each of the SensorSample objects included in the iterator.
+SensorHistoryIterator 描述一系列 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 对象。迭代器通过 [SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/) 模块级别中相应的“get”方法获取。此类提供从迭代器中包含的每个 SensorSample 对象检索信息所需的方法。
 
 ## 另见：
 
@@ -102,7 +102,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The maximum SensorSample data value in this iterator
+    此迭代器中的最大 SensorSample 数据值
 
 
 另见：
@@ -136,7 +136,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The minimum SensorSample data value in this iterator
+    此迭代器中的最小 SensorSample 数据值
 
 
 另见：
@@ -170,7 +170,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The Moment of the newest SensorSample in this iterator
+    此迭代器中最新 SensorSample 的 Moment
 
 
 另见：
@@ -208,7 +208,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The Moment of the oldest SensorSample in this iterator
+    此迭代器中最早 SensorSample 的 Moment
 
 
 另见：
@@ -248,7 +248,7 @@ Returns:
 
 - [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) —
 
-    The next SensorHistorySample, or `null` if there are no more samples
+    下一个 SensorHistorySample；如果没有更多样本，则为 `null`
 
 
 另见：

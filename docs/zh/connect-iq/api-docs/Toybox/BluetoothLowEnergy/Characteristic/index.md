@@ -66,7 +66,7 @@ Returns:
 
 - [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) —
 
-    The Descriptor represented by the UUID provided or, `null` if the descriptor does not exist or the UUID has not be registered.
+    由提供的 UUID 表示的 Descriptor；如果描述符不存在或 UUID 尚未注册，则为 `null`。
 
 
 Since:
@@ -77,7 +77,7 @@ API 级别 3.1.0
 
 获取特征中发现的 [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器
 
-This will only provide descriptors that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
+此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 descriptors
 
 Returns:
 
@@ -115,7 +115,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    The UUID of the Characteristic
+    Characteristic 的 UUID
 
 
 Since:

@@ -5,9 +5,9 @@ title: "Module: Toybox.Timer"
 
 ## 概述
 
-The Timer module allows access to a Timer object.
+Timer 模块允许访问 Timer 对象。
 
-This Timer can be used to run code at some point in the future or at a regular interval.
+此 Timer 可用于在未来某个时间点运行代码，或按固定间隔运行代码。
 
 Since:
 

@@ -201,7 +201,7 @@ Returns:
 
 - [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
-    The private key as a Key object
+    作为 Key 对象的私钥
 
 
 Since:
@@ -216,7 +216,7 @@ Returns:
 
 - [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
-    The public key as a Key object
+    作为 Key 对象的公钥
 
 
 Since:
@@ -245,7 +245,7 @@ Parameters:
 
 - :privateKey — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-        The private key to be used to generate the KeyPair (optional)
+        用于生成 KeyPair 的私钥（可选）
 
 
 Since:
@@ -256,8 +256,8 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if the specified `:algorithm` is not supported, or if a required option is not provided
+    如果指定的 `:algorithm` 不受支持，或未提供必需选项，则抛出
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the specified `:privateKey` is not the correct size for the selected algorithm
+    如果指定的 `:privateKey` 对于所选算法大小不正确，则抛出

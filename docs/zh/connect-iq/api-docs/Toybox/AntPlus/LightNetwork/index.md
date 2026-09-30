@@ -313,7 +313,7 @@ Parameters:
 
 - listener — ([AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)) —
 
-    The light network instance optionally takes an extension of the [LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
+    灯光网络实例可选地将 [LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) 类的扩展作为参数。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
 Since:
@@ -340,7 +340,7 @@ API 级别 2.2.0
 
 使所有前灯进入相同模式。
 
-You should check the capable modes of each headlight in the network before sending light modes, as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
+发送灯光模式之前，应检查网络中每个前灯支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
 Parameters:
 
@@ -357,7 +357,7 @@ API 级别 2.2.0
 
 使所有尾灯进入相同模式。
 
-You should check the capable modes of each taillight in the network before sending light modes, as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
+发送灯光模式之前，应检查网络中每个尾灯支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
 Parameters:
 

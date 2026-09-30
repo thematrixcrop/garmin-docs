@@ -77,7 +77,7 @@ API 级别 3.2.7
 
 - [**normalize**](#normalize-instance_function)() as **Void**
 
-    Update self to ensure non-negative width and height values Repair `self` to so that `width` and `height` are non-negative, updating the `x` and `y` coordinates as appropriate.
+    更新 `self` 以确保宽度和高度值为非负数。修复 `self`，使 `width` 和 `height` 为非负数，并根据需要更新 `x` 和 `y` 坐标。
 
 - [**reset**](#reset-instance_function)() as **Void**
 
@@ -128,13 +128,13 @@ API 级别 3.2.7
 
 扩展 self 以包含边界框
 
-Update `self` to include the full bounding box specified. If `self` is not valid, sets `self` to `box`.
+更新 `self` 以包含指定的完整边界框。如果 `self` 无效，则将 `self` 设置为 `box`。
 
 Parameters:
 
 - box — ([Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)) —
 
-    The bounding box to add.
+    要添加的边界框。
 
 
 Since:
@@ -145,21 +145,21 @@ API 级别 5.1.0
 
 扩展 self 以包含圆形
 
-Update `self` to include the circle specified. If `self` is not valid, sets `self` to the bounding box that contains the given circle.
+更新 `self` 以包含指定的圆。如果 `self` 无效，则将 `self` 设置为包含给定圆的边界框。
 
 Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x coordinate of the circle to add.
+    要添加的圆的 x 坐标。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y coordinate of the circle to add.
+    要添加的圆的 y 坐标。
 
 - radius — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the circle to add.
+    要添加的圆的半径。
 
 
 Since:
@@ -178,32 +178,32 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `radius` is not a Number.
+    如果 `radius` 不是 Number，则会抛出此异常。
 
 
 ### **addEllipse(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), a as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), b as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
 扩展 self 以包含椭圆
 
-Update `self` to include the ellipse specified. If `self` is not valid, sets `self` to the bounding box that contains the given ellipse.
+更新 `self` 以包含指定的椭圆。如果 `self` 无效，则将 `self` 设置为包含给定椭圆的边界框。
 
 Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x coordinate of the ellipse to add.
+    要添加的椭圆的 x 坐标。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y coordinate of the ellipse to add.
+    要添加的椭圆的 y 坐标。
 
 - a — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the ellipse to add along the x axis
+    沿 x 轴添加的椭圆半径
 
 - b — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the ellipse to add along the y axis
+    沿 y 轴添加的椭圆半径
 
 
 Since:
@@ -222,28 +222,28 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `a` is not a Number.
+    如果 `a` 不是 Number，则会抛出此异常。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `b` is not a Number.
+    如果 `b` 不是 Number，则会抛出此异常。
 
 
 ### **addPoint(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
 向边界框添加一个点
 
-Update `self` to include the point specified. If `self` is not valid, sets `self` to the bounding box that contains the given point.
+更新 `self` 以包含指定的点。如果 `self` 无效，则将 `self` 设置为包含给定点的边界框。
 
 Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x coordinate of the point to add.
+    要添加的点的 x 坐标。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y coordinate of the point to add.
+    要添加的点的 y 坐标。
 
 
 Since:
@@ -265,13 +265,13 @@ Throws:
 
 向边界框添加一个或多个点
 
-Update `self` to include all of the points specified. If `self` is not valid, sets `self` to the bounding box that contains all of the given points.
+更新 `self` 以包含指定的所有点。如果 `self` 无效，则将 `self` 设置为包含所有给定点的边界框。
 
 Parameters:
 
 - points — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The array of points to add.
+    要添加的点数组。
 
 
 Since:
@@ -282,32 +282,32 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `points` is not an Array of points.
+    如果 `points` 不是点的 Array，则会抛出此异常。
 
 
 ### **addRectangle(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
 扩展 self 以包含矩形
 
-Update `self` to include the rectangle specified. If `self` is not valid, sets `self` to the bounding box that contains the given rectangle.
+更新 `self` 以包含指定的矩形。如果 `self` 无效，则将 `self` 设置为包含给定矩形的边界框。
 
 Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x coordinate of the rectangle to add.
+    要添加的矩形的 x 坐标。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y coordinate of the rectangle to add.
+    要添加的矩形的 y 坐标。
 
 - width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The width of the box to rectangle.
+    要转换为矩形的框宽度。
 
 - height — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The height of the box to rectangle.
+    矩形框的高度。
 
 
 Since:
@@ -326,11 +326,11 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `width` is not a Number.
+    如果 `width` 不是 Number，则会抛出此异常。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `height` is not a Number.
+    如果 `height` 不是 Number，则会抛出此异常。
 
 
 ### **expand(dx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), dy as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -358,11 +358,11 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `dx` is not a Number.
+    如果 `dx` 不是 Number，则会抛出此异常。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `dy` is not a Number.
+    如果 `dy` 不是 Number，则会抛出此异常。
 
 
 ### **includesPoint(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -375,11 +375,11 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x coordinate of the point to check.
+    要检查的点的 x 坐标。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y coordinate of the point to check.
+    要检查的点的 y 坐标。
 
 
 Returns:
@@ -406,7 +406,7 @@ Throws:
 
 ### **normalize()** as **Void**
 
-Update self to ensure non-negative width and height values
+更新 `self` 以确保宽度和高度值为非负数
 
 修复 `self`，使 `width` 和 `height` 为非负数，并在必要时更新 `x` 和 `y` 坐标。如果 `self` 无效或已经规范化，则不执行任何操作。
 

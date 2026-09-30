@@ -106,7 +106,7 @@ API 级别 5.1.0
 
 |
 
-The notification was dismissed by the user
+用户关闭了通知
 
 |
 | NOTIFICATION\_MESSAGE\_TYPE\_SELECTED | 2 |
@@ -115,7 +115,7 @@ API 级别 5.1.0
 
 |
 
-The notification action was selected by the user
+用户选择了通知操作
 
 |
 
@@ -186,7 +186,7 @@ API 级别 5.1.0
 
 注册用于接收通知消息的回调。
 
-The callback will be called once for each notification message. If there are messages queued for the app when this function is called, the callback will immediately be called once for each pending message.
+每收到一条通知消息，都会调用一次回调。如果调用此函数时应用有排队等待处理的消息，回调将立即针对每条待处理消息调用一次。
 
 Parameters:
 
@@ -223,11 +223,11 @@ Parameters:
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The title of the notification.
+    通知的标题。
 
 - subTitle — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The subTitle of the notification.
+    通知的副标题。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -235,15 +235,15 @@ Parameters:
 
 - :body — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The body of the notification.
+        通知正文。
 
 - :data — ([Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)) —
 
-        The data associated with the notification. Will be passed back to the application for context when a notification action is selected.
+        与通知关联的数据。选择通知操作时，该数据将传回应用以提供上下文。
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The icon to display with this notification. If no icon is provided and the system requires an icon, the app icon will be used.
+        要随此通知显示的图标。如果未提供图标且系统要求图标，则将使用应用程序图标。
 
 - :actions — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

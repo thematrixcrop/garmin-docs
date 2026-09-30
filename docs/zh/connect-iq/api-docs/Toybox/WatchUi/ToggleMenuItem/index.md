@@ -242,7 +242,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
-    The substring text label for the ToggleMenuItem
+    ToggleMenuItem 的子字符串文本标签
 
 
 Since:
@@ -261,7 +261,7 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The string label for the ToggleMenuItem
+    ToggleMenuItem 的字符串标签
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -277,11 +277,11 @@ Parameters:
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this ToggleMenuItem, which is typically a [String](/connect-iq/api-docs/Toybox/Lang/String/)
+    此 ToggleMenuItem 的标识符，通常为 [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 - enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The initial state of the ToggleMenuItem; enabled if `true`, disabled if `false`
+    ToggleMenuItem 的初始状态；`true` 表示启用，`false` 表示禁用
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -308,7 +308,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    The current state of the ToggleMenuItem
+    ToggleMenuItem 的当前状态
 
 
 Since:
@@ -323,7 +323,7 @@ Parameters:
 
 - enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The intended state of the ToggleMenuItem; enabled if `true`, disabled if `false`
+    ToggleMenuItem 的预期状态；`true` 表示启用，`false` 表示禁用
 
 
 Since:
@@ -334,7 +334,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if enabled is not a valid type
+    如果 `enabled` 不是有效类型，则会抛出此异常
 
 
 ### **setSubLabel(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or { :enabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, :disabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null** } or **Null**)** as **Void**

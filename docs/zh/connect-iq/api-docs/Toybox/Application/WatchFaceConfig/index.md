@@ -5,7 +5,7 @@ title: "Module: Toybox.Application.WatchFaceConfig"
 
 ## 概述
 
-The WatchFaceConfig module facilitates access to persisted watchface configurations. Watchface could have more than one configuration settings, and each setting is represented by a unique identifier.
+WatchFaceConfig 模块便于访问持久化的表盘配置。表盘可以有多个配置设置，每个设置都由唯一标识符表示。
 
 Since:
 
@@ -117,7 +117,7 @@ Parameters:
 
 - configId — (Id) —
 
-    unique identifier of the watchface config settings to fetch, if null default or active settings will be returned.
+    要获取的表盘配置设置的唯一标识符；如果为 null，则返回默认设置或活动设置。
 
 
 :::details 支持的设备
@@ -170,11 +170,11 @@ Parameters:
 
 - configId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    unique identifier of the watchface config settings to save or update, if `null` default settings will be updated.
+    要保存或更新的表盘配置设置的唯一标识符；如果为 `null`，则更新默认设置。
 
 - settings — ([WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) —
 
-    watchface config settings to apply.
+    要应用的表盘配置设置。
 
 
 :::details 支持的设备
@@ -216,8 +216,8 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `settings` is a disallowed data type.
+    如果 `settings` 是不允许的数据类型，则会抛出此异常。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if settings contain invalid values.
+    如果设置包含无效值，则抛出。

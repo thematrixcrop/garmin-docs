@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于处理原生传感器配对过程的委托。
 
-The members of this object get called by the system to delegate scanning and pairing of different sensors.
+系统会调用此对象的成员，以委托扫描和配对不同的传感器。
 
 Since:
 
@@ -159,7 +159,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if the scan was started successfully, false otherwise
+    如果扫描成功启动，则为 true，否则为 false
 
 
 Since:
@@ -200,7 +200,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if sensor pairing is required, false otherwise
+    如果需要传感器配对，则为 true，否则为 false
 
 
 Since:

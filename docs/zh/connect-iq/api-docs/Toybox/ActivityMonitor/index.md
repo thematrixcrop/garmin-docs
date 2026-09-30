@@ -221,7 +221,7 @@ API 级别 1.0.0
 
 |
 
-The maximum level of the move bar
+移动条的最大级别
 
 |
 | 类型 | MOVE\_BAR\_LEVEL\_MIN | 0 |
@@ -230,7 +230,7 @@ API 级别 1.0.0
 
 |
 
-The minimum level of the move bar
+移动条的最小级别
 
 |
 
@@ -255,13 +255,13 @@ The minimum level of the move bar
 
 获取指定时间段内的心率历史记录（截至上次断电）。
 
-This function always returns the most recent heart rate samples. The time between each HeartRateSample in the iterator may be device dependent.
+此函数始终返回最新的心率样本。迭代器中每个 HeartRateSample 之间的时间间隔可能取决于设备。
 
 Parameters:
 
 - period — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The period of time from which to retrieve heart rate samples
+    用于检索心率样本的时间段
 
 - 如果 period 为 `null`，则检索所有可用历史记录
 
@@ -272,7 +272,7 @@ Parameters:
 
 - newestFirst — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The order in which to retrieve heart rate samples
+    检索心率样本的顺序
 
 - 设为 `true` 以按最新顺序获取样本
 
@@ -443,9 +443,9 @@ Returns:
 
     包含 [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) 对象的 Array。
 
-- The Array will be a maximum of 7 objects
+- 该数组最多包含 7 个对象
 
-- The objects will be inserted most recent first
+- 对象将按最新的优先顺序插入
 
 
 

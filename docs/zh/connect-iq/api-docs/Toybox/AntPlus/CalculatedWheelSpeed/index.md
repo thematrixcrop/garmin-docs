@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The CalculatedWheelSpeed object represents the average calculated speed.
+CalculatedWheelSpeed 对象表示计算得出的平均速度。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

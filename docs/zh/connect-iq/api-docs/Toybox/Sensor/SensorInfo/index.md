@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 描述传感器的类
 
-The SensorInfo provides access to the attributes of a Sensor.
+SensorInfo 提供对 Sensor 属性的访问。
 
 Since:
 
@@ -28,7 +28,7 @@ API 级别 3.2.0
 
 - [**data**](#data-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
-    The Sensor-specific data A dictionary of sensor-specific attributes.
+    传感器特定数据。传感器特定属性的字典。
 
 - [**enabled**](#enabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -52,7 +52,7 @@ API 级别 3.2.0
 
 - [**technology**](#technology-var) as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
 
-    The Sensor technology The technology used to communicate with this sensor.
+    传感器技术。用于与此传感器通信的技术。
 
 - [**type**](#type-var) as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
 
@@ -63,7 +63,7 @@ API 级别 3.2.0
 
 ### var data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
-The Sensor-specific data
+传感器特定数据
 
 传感器特定属性的字典。目前支持的属性包括：
 
@@ -106,7 +106,7 @@ Returns:
 
 Sensor 制造商。
 
-The manufacturer id of the sensor. May be `null`.
+传感器的制造商 id。可能为 `null`。
 
 Since:
 
@@ -120,7 +120,7 @@ Returns:
 
 Sensor 名称。
 
-The name of the sensor.
+传感器的名称。
 
 Since:
 
@@ -134,7 +134,7 @@ Returns:
 
 Sensor 部件号。
 
-The part number the sensor. May be `null`.
+传感器的部件号。可能为 `null`。
 
 Since:
 
@@ -148,7 +148,7 @@ Returns:
 
 Sensor 软件版本。
 
-The software version of the sensor. May be `null`.
+传感器的软件版本。可能为 `null`。
 
 Since:
 
@@ -160,9 +160,9 @@ Returns:
 
 ### var technology as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
 
-The Sensor technology
+传感器技术
 
-The technology used to communicate with this sensor.
+用于与此传感器通信的技术。
 
 Since:
 
@@ -172,14 +172,14 @@ Returns:
 
 - [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module) —
 
-    The sensor type as a Sensor.SENSOR\_TECHNOLOGY\_\*
+    传感器类型，形式为 Sensor.SENSOR\_TECHNOLOGY\_\*
 
 
 ### var type as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
 
 Sensor 类型。
 
-The type of the sensor.
+传感器类型。
 
 Since:
 
@@ -189,4 +189,4 @@ Returns:
 
 - [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) —
 
-    The sensor type as a Sensor.SENSOR\_\*
+    传感器类型，形式为 Sensor.SENSOR\_\*

@@ -5,9 +5,9 @@ title: "Module: Toybox.FitContributor"
 
 ## 概述
 
-The FitContributor module allows Applications and Data Fields to record [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) data into FIT files on the device's file system during an activity. This is useful for recording data that is not already calculated by the device, which can be synced to a service like Garmin Connect.
+FitContributor 模块允许应用程序和数据字段在活动期间将 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) 数据记录到设备文件系统上的 FIT 文件中。这对于记录设备尚未计算的数据非常有用，这些数据可以同步到 Garmin Connect 等服务。
 
-There are three FitContributor message types available:
+FitContributor 有三种可用的消息类型：
 
 MESG\_TYPE\_SESSION
 
@@ -32,7 +32,7 @@ MESG\_TYPE\_RECORD
 
 Example:
 
-Using a FitContributor Field in a SimpleDataField app
+在 SimpleDataField 应用中使用 FitContributor Field
 
 ```
 using Toybox.FitContributor;
@@ -283,7 +283,7 @@ API 级别 1.3.0
 
 |
 
-The message type for session messages.
+会话消息的消息类型。
 
 |
 | MESG\_TYPE\_LAP | 19 |
@@ -292,7 +292,7 @@ API 级别 1.3.0
 
 |
 
-The message type for lap messages.
+圈消息的消息类型。
 
 |
 | MESG\_TYPE\_RECORD | 20 |
@@ -301,7 +301,7 @@ API 级别 1.3.0
 
 |
 
-The message type for record messages.
+记录消息的消息类型。
 
 |
 

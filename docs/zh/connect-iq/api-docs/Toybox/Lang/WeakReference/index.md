@@ -50,7 +50,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The Object referenced, or `null` if the Object no longer exists
+    所引用的 Object；如果 Object 不再存在，则为 `null`
 
 
 Since:

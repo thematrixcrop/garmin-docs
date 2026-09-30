@@ -106,7 +106,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The value for the specified key, or `null` if the key does not exist
+    指定键的值；如果键不存在，则为 `null`
 
 
 Since:
@@ -173,11 +173,11 @@ Parameters:
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The key for the value being inserted into the Dictionary
+    要插入 Dictionary 的值所对应的键
 
 - value — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to insert into the Dictionary
+    要插入 Dictionary 的值
 
 
 Since:
@@ -192,7 +192,7 @@ Parameters:
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The key of the value to be removed
+    要移除的值所对应的键
 
 
 Since:
@@ -207,7 +207,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of elements in the Dictionary
+    Dictionary 中的元素数
 
 
 Since:

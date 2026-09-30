@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that the app targeted by an Intent when exiting to the app is not an allowed app type.
+此异常表示退出到应用时，Intent 所针对的应用不是允许的应用类型。
 
 当前允许的应用类型包括 watch-apps（原生活动和 Connect IQ 应用）以及小组件。不能定位表盘和数据字段。如果定位的原生活动配置了 Connect IQ 数据字段，则接收 Intent 的是原生应用，而不是数据字段。
 

@@ -253,7 +253,7 @@ Parameters:
 
 - values — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The values chosen in the Picker.
+    Picker 中选择的值。
 
 
 Since:

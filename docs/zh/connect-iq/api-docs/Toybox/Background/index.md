@@ -550,13 +550,13 @@ API 级别 2.3.0
 
 Array 和 Dictionary 可以包含 `null` 值或上述列出的任何类型。如果不应向主进程传递数据，可以指定 `null`。
 
-This method will exit if called by a background process, but will do nothing if called by the main application process.
+如果由后台进程调用，此方法将退出；如果由主应用进程调用，则不会执行任何操作。
 
 Parameters:
 
 - backgroundData — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The object to pass to the main process's [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) method. Passing `null` will not override previous data values not yet consumed by the parent application's AppBase.onBackgroundData() method.
+    要传递给主进程 [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 方法的对象。传递 `null` 不会覆盖尚未被父应用程序的 AppBase.onBackgroundData() 方法使用的先前数据值。
 
 
 Since:
@@ -626,7 +626,7 @@ API 级别 3.0.0
 
 获取上一次时间型后台事件触发的时间。
 
-This is useful for ensuring new events are not scheduled within the five minute minimum time allowed between temporal events.
+这有助于确保不会在时间事件之间允许的五分钟最短间隔内调度新事件。
 
 Example:
 
@@ -650,7 +650,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The time the last background event was triggered, but may be `null` if no previous temporal background event has occurred or if the device app or widget has been started since the event was last triggered
+    上次触发后台事件的时间；如果之前没有发生过时间型后台事件，或者设备应用程序或小组件是在事件上次触发后启动的，则可能为 `null`
 
 
 另见：
@@ -868,7 +868,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    The specific Moment in time at which a background event is registered to trigger, or the interval Duration at which to repeat a background event. May be `null` if no temporal background event is registered.
+    注册后台事件以触发的特定 Moment，或重复后台事件的间隔 Duration。如果未注册时间型后台事件，则可能为 `null`。
 
 
 另见：
@@ -928,7 +928,7 @@ API 级别 2.3.0
 
 注册一个每当 OAuth 登录请求完成且令牌在系统上可供使用时触发的后台事件。
 
-This event is triggered when a OAuth response is received by the system.
+系统收到 OAuth 响应时会触发此事件。
 
 Since:
 
@@ -1090,7 +1090,7 @@ API 级别 2.3.0
 
 注册一个每达到 1000 步的倍数时触发的后台事件。
 
-This event is triggered only by device-recorded steps, and will not trigger based on synced steps.
+此事件仅由设备记录的步数触发，不会根据同步的步数触发。
 
 Since:
 
@@ -1110,7 +1110,7 @@ Parameters:
 
 - time — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The specific Moment in time at which to run a background event, or the interval Duration at which to repeat a background event
+    运行后台事件的特定 Moment，或重复后台事件的间隔 Duration
 
 
 Example:
@@ -1159,7 +1159,7 @@ Parameters:
 
 - message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The message to display in the dialog when requesting to launch the app
+    请求启动应用时要在对话框中显示的消息
 
 
 Example:

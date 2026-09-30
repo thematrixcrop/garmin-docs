@@ -5,7 +5,7 @@ title: "Module: Toybox.Attention"
 
 ## 概述
 
-The Attention module provides the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
+Attention 模块提供播放预定义声音、管理振动以及控制背光的功能。
 
 并非所有设备都完全支持此模块，因此建议使用 `has` 检查。例如，vivoactive 没有音调生成器，如果应用尝试播放声音，就会触发错误。
 
@@ -189,7 +189,7 @@ API 级别 1.0.0
 
 |
 
-The power on tone
+开机提示音
 
 |
 | TONE\_LOW\_BATTERY | 17 |
@@ -409,7 +409,7 @@ API 级别 3.4.3
 
 控制显示背光。
 
-The backlight will always respect the backlight timeout settings on the device. Behavior of this feature may also change depending on device settings. For example, if a device is set to activate the back light with key presses, the backlight will toggle on with key presses even if the app is written to turn off the back light with a key press.
+背光始终遵循设备上的背光超时设置。此功能的行为也可能因设备设置而异。例如，如果设备设置为通过按键激活背光，即使应用通过按键编写为关闭背光，按键操作仍会切换打开背光。
 
 对于使用支持手势的显示屏的产品，调用此 API 会在背光开启期间禁止手势检测。反复调用此 API 可以保持显示屏开启，但如果产品具有防烧屏保护功能，尝试让显示屏长时间保持启用状态时将引发异常（例如超过 1 分钟）。
 
@@ -889,7 +889,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if passing an options hash with invalid values when using new ToneProfile objects
+    使用新的 ToneProfile 对象时，如果传入的选项哈希包含无效值，则抛出
 
 
 ### **setFlashlightMode(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**)** as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
@@ -980,7 +980,7 @@ Throws:
 
 启动振动马达。
 
-The vibrate method takes an Array containing at least one [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) object, up to a maximum of 8, and runs them in sequence.
+vibrate 方法接受一个包含至少一个 [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) 对象、最多 8 个对象的 Array，并按顺序运行这些对象。
 
 注意：
 
@@ -995,7 +995,7 @@ Parameters:
 
 Example:
 
-Vibrate in an on/off pattern
+以开启/关闭模式振动
 
 ```
 if (Attention has :vibrate) {

@@ -62,7 +62,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The ID parameter value for the current ContentRef object
+    当前 ContentRef 对象的 ID 参数值
 
 
 Since:

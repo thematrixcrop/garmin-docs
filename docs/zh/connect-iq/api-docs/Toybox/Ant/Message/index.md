@@ -71,7 +71,7 @@ API 级别 1.0.0
 
 - [**messageId**](#messageId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Data Type Identifier.
+    数据类型标识符。
 
 - [**rssi**](#rssi-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -130,7 +130,7 @@ API 级别 1.0.0
 
 ### var messageId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Data Type Identifier
+数据类型标识符
 
 Since:
 

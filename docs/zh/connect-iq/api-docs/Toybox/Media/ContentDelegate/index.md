@@ -98,7 +98,7 @@ Parameters:
 
 - button — ([Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/)) —
 
-    The CustomButton that was pressed.
+    被按下的 CustomButton。
 
 
 Since:
@@ -129,7 +129,7 @@ Parameters:
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The ID referencing a [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) object
+    引用 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID
 
 - songEvent — ([Media.SongEvent](/connect-iq/api-docs/Toybox/Media/#SongEvent-module)) —
 
@@ -137,7 +137,7 @@ Parameters:
 
 - playbackPosition — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module)) —
 
-    The time the song has been playing in seconds, or a [PLAYBACK\_POSITION\_\*](/connect-iq/api-docs/Toybox/Media/#PLAYBACK_POSITION_START-const) value
+    歌曲已播放的时间（以秒为单位），或 [PLAYBACK\_POSITION\_\*](/connect-iq/api-docs/Toybox/Media/#PLAYBACK_POSITION_START-const) 值
 
 
 Since:
@@ -148,7 +148,7 @@ API 级别 3.0.0
 
 响应点踩操作。
 
-The thumbs-down option is native to the device media player. When a user selects the thumbs-down function on the device, a corresponding onThumbsDown() event is sent to application.
+向下点赞选项是设备媒体播放器的原生功能。当用户在设备上选择向下点赞功能时，会向应用程序发送相应的 onThumbsDown() 事件。
 
 Parameters:
 
@@ -165,7 +165,7 @@ API 级别 3.0.0
 
 响应点赞操作。
 
-The thumbs-up option is native to the device media player. When a user selects the thumbs-up function on the device, a corresponding onThumbsUp() event is sent to the application.
+向上点赞选项是设备媒体播放器的原生功能。当用户在设备上选择向上点赞功能时，会向应用程序发送相应的 onThumbsUp() 事件。
 
 Parameters:
 

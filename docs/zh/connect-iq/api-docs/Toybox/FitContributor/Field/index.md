@@ -52,7 +52,7 @@ Parameters:
 
 - input — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The data to be written to the Field
+    要写入 Field 的数据
 
 
 Since:
@@ -63,4 +63,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `input` type does not match the type specified in [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) at definition
+    如果 `input` 类型与定义时 [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) 中指定的类型不匹配，则抛出

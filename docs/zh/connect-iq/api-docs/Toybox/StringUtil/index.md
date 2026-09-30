@@ -5,7 +5,7 @@ title: "Module: Toybox.StringUtil"
 
 ## 概述
 
-The StringUtil module contains String utility functions
+StringUtil 模块包含 String 工具函数
 
 Since:
 
@@ -129,7 +129,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    The converted String or ByteArray based on the provided options
+    根据提供的选项转换后的 String 或 ByteArray
 
 
 Since:
@@ -140,7 +140,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if a required option is not set with a valid enumeration value.
+    如果所需选项未设置为有效的枚举值，则会抛出此异常。
 
 
 ### **encodeBase64(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
@@ -151,7 +151,7 @@ Parameters:
 
 - string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The string to encode
+    要编码的字符串
 
 
 Returns:
@@ -191,4 +191,4 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if a the provided bytes contain an invalid UTF-8 sequence.
+    如果提供的字节包含无效的 UTF-8 序列，则会抛出此异常。

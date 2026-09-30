@@ -304,7 +304,7 @@ Parameters:
 
 - item — ([WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) —
 
-    The CustomMenuItem to add to the CustomMenu. Other MenuItem variants cannot be added to a Custom Menu.
+    要添加到 CustomMenu 的 CustomMenuItem。不能将其他 MenuItem 变体添加到 Custom Menu。
 
 
 Since:
@@ -326,7 +326,7 @@ Throws:
 
 绘制 CustomMenu 页脚。
 
-This is called to render the menu footer region.
+调用此函数以渲染菜单页脚区域。
 
 Parameters:
 
@@ -343,7 +343,7 @@ API 级别 3.0.0
 
 绘制 CustomMenu 前景。
 
-This is called after a menu's items and title have been rendered. It can be used to draw overlay content for the menu.
+菜单的项目和标题渲染完成后会调用此函数。它可用于为菜单绘制叠加内容。
 
 Parameters:
 
@@ -360,7 +360,7 @@ API 级别 3.0.0
 
 绘制 CustomMenu 标题。
 
-This is called to render the menu title region.
+调用此函数以渲染菜单标题区域。
 
 Parameters:
 
@@ -379,7 +379,7 @@ Constructor
 
 注意：
 
-The options `:titleItemHeight` and `:footerItemHeight` are only supported with ConnectIQ 4.0.0 and later.
+选项 `:titleItemHeight` 和 `:footerItemHeight` 仅支持 ConnectIQ 4.0.0 及更高版本。
 
 注意：
 
@@ -397,11 +397,11 @@ Parameters:
 
 - itemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The pixel height of menu items rendered by this menu.
+    此菜单渲染的菜单项的像素高度。
 
 - backgroundColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    The color that will be used to fill the background of the menu.
+    用于填充菜单背景的颜色。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -409,11 +409,11 @@ Parameters:
 
 - :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The index of the [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) that should have initial focus. (optional)
+        应获得初始焦点的 [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) 的索引。（可选）
 
 - :focusItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The pixel height of the center menu item of this menu. This option is ignored on products with touch screens. (optional)
+        此菜单中心菜单项的像素高度。触摸屏产品会忽略此选项。（可选）
 
 - :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
@@ -429,15 +429,15 @@ Parameters:
 
 - :titleItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The pixel height of the header menu item of this menu (optional)
+        此菜单页眉菜单项的像素高度（可选）
 
 - :footerItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The pixel height of the footer menu item of this menu. (optional)
+        此菜单页脚菜单项的像素高度。（可选）
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        the default icon for the menu incase menuitem do not have it populated
+        菜单项未填充图标时菜单的默认图标
 
 - :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
@@ -445,7 +445,7 @@ Parameters:
 
 - :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
 
-        The divider type, if `null` is passed as value, divider will be disabled (non-visible). Defaults to DIVIDER\_TYPE\_DEFAULT.
+        分隔线类型；如果传入的值为 `null`，则禁用分隔线（不可见）。默认为 DIVIDER\_TYPE\_DEFAULT。
 
 
 另见：
@@ -461,15 +461,15 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if either `itemHeight` or `backgroundColor` are not of the expected type
+    如果 `itemHeight` 或 `backgroundColor` 不是预期类型，则会抛出此异常
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `:focusItemHeight`, `:titleItemHeight`, `:footerItemHeight`, or `:focus` options are provided and are not Number objects
+    如果提供了 `:focusItemHeight`、`:titleItemHeight`、`:footerItemHeight` 或 `:focus` 选项，且它们不是 Number 对象，则抛出
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `:title`, `:footer`, or `:foreground` options are provided and are not Drawable objects.
+    如果提供了 `:title`、`:footer` 或 `:foreground` 选项，且它们不是 Drawable 对象，则抛出。
 
 
 ### **setBackgroundColor(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
@@ -480,7 +480,7 @@ Parameters:
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    The color to fill the background of the menu with.
+    用于填充菜单背景的颜色。
 
 
 Since:
@@ -491,7 +491,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if color is not a [Number](/connect-iq/api-docs/Toybox/Lang/Number/).
+    如果 `color` 不是 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则会抛出此异常。
 
 
 ### **setDividerType(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**)** as **Void**

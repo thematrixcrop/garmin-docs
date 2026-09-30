@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示一个已与系统配对的 Bluetooth Low Energy 设备。
 
-This class cannot be instantiated, access to paired system devices is done through the use of [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function) or by calling [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) after receiving a [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) for a device
+此类无法实例化；必须通过使用 [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function)，或在收到设备的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 后调用 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function)，来访问已配对的系统设备
 
 Since:
 
@@ -61,7 +61,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    the name of the device. `null` if the device is not connected or name has not been received yet.
+    设备的名称。设备未连接或尚未接收到名称时为 `null`。
 
 
 Since:
@@ -78,14 +78,14 @@ Parameters:
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
-    The UUID of the service to search for
+    要搜索的 service UUID
 
 
 Returns:
 
 - [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) —
 
-    The service represented by the UUID if the service exists or, `null` if the service does not exist or the UUID has not been registered
+    如果服务存在，则为 UUID 表示的服务；如果服务不存在或 UUID 尚未注册，则为 `null`
 
 
 Since:
@@ -96,7 +96,7 @@ API 级别 3.1.0
 
 获取一个 Iterator，用于遍历设备提供的服务。
 
-This will only provide Services that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
+此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 Services
 
 Returns:
 

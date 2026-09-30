@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Logger class provides output capabilities to tests.
+Logger 类为测试提供输出功能。
 
 无需实例化 Logger 类。此操作会在后台自动完成。
 
@@ -45,7 +45,7 @@ API 级别 2.1.0
 
 将调试 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
-The String is prefixed with DEBUG and a time stamp.
+String 以 DEBUG 和时间戳作为前缀。
 
 Parameters:
 
@@ -75,7 +75,7 @@ API 级别 2.1.0
 
 将错误 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
-The String is prefixed with ERROR and time stamp.
+String 以 ERROR 和时间戳作为前缀。
 
 Parameters:
 
@@ -105,7 +105,7 @@ API 级别 2.1.0
 
 将警告 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
-The String is prefixed with WARNING and a time stamp.
+String 以 WARNING 和时间戳作为前缀。
 
 Parameters:
 

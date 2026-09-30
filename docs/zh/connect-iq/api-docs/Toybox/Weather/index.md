@@ -5,7 +5,7 @@ title: "Module: Toybox.Weather"
 
 ## 概述
 
-The Weather module provides functionality for accessing information related to the current weather.
+Weather 模块提供访问当前天气相关信息的功能。
 
 Since:
 
@@ -226,7 +226,7 @@ API 级别 3.2.0
 
 |
 
-Wintry mix
+雨雪混合物
 
 |
 | CONDITION\_FOG | 8 |
@@ -280,7 +280,7 @@ API 级别 3.2.0
 
 |
 
-Unknown precipitation
+未知降水
 
 |
 | CONDITION\_LIGHT\_RAIN | 14 |
@@ -505,7 +505,7 @@ API 级别 3.2.0
 
 |
 
-Volcanic ash
+火山灰
 
 |
 | CONDITION\_HAZE | 39 |
@@ -541,7 +541,7 @@ API 级别 3.2.0
 
 |
 
-Tropical storm
+热带风暴
 
 |
 | CONDITION\_CHANCE\_OF\_SNOW | 43 |
@@ -631,7 +631,7 @@ API 级别 3.2.0
 
 |
 
-Thin clouds
+薄云
 
 |
 | CONDITION\_UNKNOWN | 53 |

@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that a Bluetooth Request is not valid
+此异常表示 Bluetooth Request 无效
 
 ## 另见：
 

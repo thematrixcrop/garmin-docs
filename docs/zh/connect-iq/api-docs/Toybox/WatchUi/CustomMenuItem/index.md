@@ -246,13 +246,13 @@ API 级别 3.0.0
 
 CustomMenuItem 的绘制方法。
 
-This is called when a menu item is rendering.
+渲染菜单项时会调用此函数。
 
 Parameters:
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The item's drawing context
+    项目的绘图上下文
 
 
 Since:
@@ -312,7 +312,7 @@ Parameters:
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this item which is typically a [String](/connect-iq/api-docs/Toybox/Lang/String/)
+    此项目的标识符，通常为 [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -346,7 +346,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `:drawable` option is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or is `null`.
+    如果 `:drawable` 选项不是 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或为 `null`，则抛出。
 
 
 ### **isFocused()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -357,7 +357,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    The current focus state of the CustomMenuItem
+    CustomMenuItem 的当前焦点状态
 
 
 Since:
@@ -372,7 +372,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    The current selected state of the CustomMenuItem
+    CustomMenuItem 的当前选中状态
 
 
 Since:
@@ -421,7 +421,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if icon is not a valid type.
+    如果 `icon` 不是有效类型，则会抛出此异常。
 
 
 ### **setDrawable(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
@@ -443,4 +443,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `drawable` is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or is `null`.
+    如果 `drawable` 不是 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或为 `null`，则会抛出此异常。

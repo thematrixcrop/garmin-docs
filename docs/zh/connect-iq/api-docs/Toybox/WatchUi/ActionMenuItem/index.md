@@ -214,7 +214,7 @@ Parameters:
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this MenuItem
+    此 MenuItem 的标识符
 
 
 Since:

@@ -153,7 +153,7 @@ API 级别 2.4.0
 
 - [**verticalRatio**](#verticalRatio-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Vertical ratio (0 - 100%, 0.03125% precision).
+    垂直比率（0 - 100%，精度为 0.03125%）。
 
 - [**walkingFlag**](#walkingFlag-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -248,7 +248,7 @@ Returns:
 
 ### var verticalRatio as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Vertical ratio (0 - 100%, 0.03125% precision)
+垂直比率（0 - 100%，精度为 0.03125%）
 
 Since:
 

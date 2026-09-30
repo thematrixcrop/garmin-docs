@@ -5,7 +5,7 @@ title: "Module: Toybox.Ant"
 
 ## 概述
 
-This module provide the interface for the ANT wireless protocol.
+此模块提供 ANT 无线协议的接口。
 
 ANT 无线协议是一种低级通信协议，通过直接控制设备上的无线电来实现非常高效的数据传输。ANT 模块提供了一系列常量，用于模块中提供的不同类对象和方法。这些包括：
 
@@ -530,7 +530,7 @@ API 级别 2.2.0
 
 |
 
-There was not enough memory available to send/receive a burst message
+没有足够的可用内存来发送/接收突发消息
 
 |
 | BURST\_ERROR\_SEQUENCE\_NUMBER\_FAIL | 1 |

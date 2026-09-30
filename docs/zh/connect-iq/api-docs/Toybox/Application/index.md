@@ -112,7 +112,7 @@ Returns:
 
 - [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) —
 
-    The currently running AppBase object
+    当前正在运行的 AppBase 对象
 
 
 Since:

@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Gregorian.Info class contains all of the necessary information to represent a Gregorian date.
+Gregorian.Info 类包含表示公历日期所需的全部信息。
 
-The types of some returned values depend on the Time.FORMAT\_\* value specified when calling [info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function) or [utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function).
+某些返回值的类型取决于调用 [info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function) 或 [utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function) 时指定的 Time.FORMAT\_\* 值。
 
 Since:
 
@@ -32,7 +32,7 @@ API 级别 1.0.0
 
 - [**day\_of\_week**](#day_of_week-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The day of the week (e.g.
+    星期几（例如
 
 - [**hour**](#hour-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -44,7 +44,7 @@ API 级别 1.0.0
 
 - [**month**](#month-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The month of the year (e.g.
+    年份中的月份（例如
 
 - [**sec**](#sec-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -71,7 +71,7 @@ Returns:
 
 ### var day\_of\_week as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The day of the week (e.g. Monday, Tuesday, Wednesday, etc,).
+星期几（例如星期一、星期二、星期三等）。
 
 注意：
 
@@ -85,7 +85,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The day of the week in the specified format:
+    指定格式的星期几：
 
 - FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/))：范围为 1 到 7 的数字。1 = 星期日，2 = 星期一，…，7 = 星期六
 
@@ -121,7 +121,7 @@ Returns:
 
 ### var month as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The month of the year (e.g. January, February, March, etc.).
+年份中的月份（例如 January、February、March 等）。
 
 注意：
 
@@ -135,7 +135,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The month of the year in the specified format:
+    指定格式的年份中的月份：
 
 - FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/))：范围为 1 到 12 的数字。1 = 一月，2 = 二月，…，12 = 十二月
 

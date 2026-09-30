@@ -22,7 +22,7 @@ Toybox.WatchUi.MapView
 
 用于在跟踪设备当前位置时在屏幕上渲染地图的 View。
 
-This is a dynamic view where the map is centered on the current location of the device. This map will display the default navigation icons for the device (i.e. the navigation arrow).
+这是一个动态视图，地图以设备的当前位置为中心。此地图将显示设备的默认导航图标（即导航箭头）。
 
 Since:
 

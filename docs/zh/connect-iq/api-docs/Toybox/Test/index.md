@@ -5,9 +5,9 @@ title: "Module: Toybox.Test"
 
 ## 概述
 
-The Test module provides a testing framework for Monkey C.
+Test 模块为 Monkey C 提供测试框架。
 
-The test module provides the tools to implement your own unit test and asserts in your source code. Unit tests take a [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object and allow for different levels of output. Unit tests are annotated with `:test` and ignored if testing is not run. Asserts do not require the `:test` annotation and will be compiled out in release versions or you Connect IQ Content. A test RESULTS section is printed to the console with the tests run, test status, and failure rates.
+test 模块提供在源代码中实现自定义单元测试和断言的工具。单元测试接受一个 [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) 对象，并允许使用不同级别的输出。单元测试使用 `:test` 注释，并在未运行测试时被忽略。断言不需要 `:test` 注释，在发布版本或 Connect IQ Content 中将被编译移除。控制台会打印测试 RESULTS 部分，其中包含已运行的测试、测试状态和失败率。
 
 ## 另见：
 
@@ -120,7 +120,7 @@ Parameters:
 
 - test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The expression to test for `true`
+    要测试是否为 `true` 的表达式
 
 
 Example:
@@ -156,11 +156,11 @@ Parameters:
 
 - value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The first value to test for equality
+    要测试是否相等的第一个值
 
 - value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The second value to test for equality
+    用于测试相等性的秒值
 
 
 Example:

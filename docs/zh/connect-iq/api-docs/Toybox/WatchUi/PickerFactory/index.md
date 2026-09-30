@@ -258,7 +258,7 @@ Returns:
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
-    The Drawable object to render
+    要渲染的 Drawable 对象
 
 
 Since:
@@ -292,7 +292,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The item's value
+    项目的值
 
 
 Since:

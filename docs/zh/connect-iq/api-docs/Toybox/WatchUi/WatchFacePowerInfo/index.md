@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 调用 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 期间超出功耗预算时提供的功耗信息。
 
-This is automatically passed to the [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) method when it is invoked.
+调用 [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) 方法时，此项会自动传递给该方法。
 
 ## 另见：
 

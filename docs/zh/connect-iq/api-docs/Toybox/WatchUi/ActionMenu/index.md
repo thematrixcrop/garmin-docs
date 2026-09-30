@@ -183,7 +183,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if item is not an [ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)
+    如果 `item` 不是 [ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)，则会抛出此异常
 
 
 ### **initialize(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)**
@@ -198,7 +198,7 @@ Parameters:
 
 - :theme — ([WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)) —
 
-        theme for the action menu UI.
+        操作菜单 UI 的主题。
 
 
 Since:

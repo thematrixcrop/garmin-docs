@@ -7,7 +7,7 @@ title: "Module: Toybox.ActivityPrompts"
 
 ActivityPrompts 模块允许数据字段在活动期间处理音频输出。
 
-Using this module will cause to all activity prompts during an activity to no longer play through the device or any connected devices such as headphones. The user must select the data field as the activity prompt handler in the device menus.
+使用此模块会导致活动期间的所有活动提示不再通过设备或任何已连接的设备（例如耳机）播放。用户必须在设备菜单中选择该数据字段作为活动提示处理程序。
 
 提示将在需要播放时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。如果向 `ActivityPromptDelegate::onPrompt()` 传递多个提示，则这些提示应连续播放且不中断。
 
@@ -110,7 +110,7 @@ API 级别 5.2.0
 
 - [**unregisterActivityPromptsListener**](#unregisterActivityPromptsListener-instance_function)() as **Void**
 
-    Unregister as the activity prompt output handler.
+    取消注册为活动提示输出处理程序。
 
 
 ## 类型定义详情
@@ -131,7 +131,7 @@ Parameters:
 
 - delegate — ([ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)) —
 
-    The delegate to handle audio prompts from the system
+    用于处理系统音频提示的委托
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -157,7 +157,7 @@ Parameters:
 
 - languages — ([System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) —
 
-    The language to receive prompt text
+    用于接收提示文本的语言
 
 
 Returns:
@@ -173,7 +173,7 @@ API 级别 5.2.0
 
 ### **unregisterActivityPromptsListener()** as **Void**
 
-Unregister as the activity prompt output handler. Activity prompt output will return to the default provider if the data field is the current provider.
+取消注册为活动提示输出处理程序。如果数据字段是当前提供程序，活动提示输出将恢复为默认提供程序。
 
 Since:
 

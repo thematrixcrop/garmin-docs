@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The calculated crank cadence.
+计算得出的曲柄踏频。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

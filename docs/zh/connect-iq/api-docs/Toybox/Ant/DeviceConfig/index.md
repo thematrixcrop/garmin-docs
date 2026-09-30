@@ -56,7 +56,7 @@ API 级别 1.0.0
 
 |
 
-The default values for a device configuration
+设备配置的默认值
 
 |
 | 类型 | DEFAULT\_DEVICE\_TYPE | 1 |
@@ -123,7 +123,7 @@ API 级别 1.2.0
 
 - [**deviceNumber**](#deviceNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The unique device number (ANT-id).
+    唯一设备编号（ANT-id）。
 
 - [**deviceType**](#deviceType-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -131,7 +131,7 @@ API 级别 1.2.0
 
 - [**messagePeriod**](#messagePeriod-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The Message period that the sensor uses.
+    传感器使用的消息周期。
 
 - [**networkKey128Bit**](#networkKey128Bit-var) as [DeviceConfig.NetworkKey128Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey128Bit-named_type) or **Null**
 
@@ -143,11 +143,11 @@ API 级别 1.2.0
 
 - [**radioFrequency**](#radioFrequency-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The radio frequency that the sensor operates on.
+    传感器运行所使用的射频。
 
 - [**searchThreshold**](#searchThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The proximity threshold bin.
+    接近阈值区间。
 
 - [**searchTimeoutHighPriority**](#searchTimeoutHighPriority-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -155,7 +155,7 @@ API 级别 1.2.0
 
 - [**searchTimeoutLowPriority**](#searchTimeoutLowPriority-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The low Priority search timeout that a receiving channel will wait for in order to start tracking a master \* Measured in 2.5s increments \* Limited to a maximum of 30 seconds (Range of 0 to 12).
+    接收通道等待开始跟踪主设备的低优先级搜索超时时间 \* 以 2.5s 为增量测量 \* 最大限制为 30 秒（范围为 0 到 12）。
 
 - [**transmissionType**](#transmissionType-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -187,7 +187,7 @@ API 级别 1.0.0
 
 ### var deviceNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The unique device number (ANT-id)
+唯一设备编号（ANT-id）
 
 Since:
 
@@ -203,7 +203,7 @@ API 级别 1.0.0
 
 ### var messagePeriod as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The Message period that the sensor uses
+传感器使用的消息周期
 
 Since:
 
@@ -227,7 +227,7 @@ API 级别 1.2.0
 
 ### var radioFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The radio frequency that the sensor operates on
+传感器运行所使用的射频
 
 Since:
 
@@ -235,7 +235,7 @@ API 级别 1.0.0
 
 ### var searchThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The proximity threshold bin
+接近阈值区间
 
 Since:
 
@@ -256,7 +256,7 @@ API 级别 1.0.0
 
 ### var searchTimeoutLowPriority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The low Priority search timeout that a receiving channel will wait for in order to start tracking a master
+接收通道等待开始跟踪主设备的低优先级搜索超时时间
 
 - 以 2.5 秒为增量进行测量
 
@@ -285,7 +285,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The initialization options
+    初始化选项
 
 - :deviceNumber — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -301,15 +301,15 @@ Parameters:
 
 - :messagePeriod — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The message period that the sensor uses
+        传感器使用的消息周期
 
 - :radioFrequency — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The radio frequency that the sensor operates on. Range of 2 to 80.
+        传感器运行所使用的射频。范围为 2 至 80。
 
 - :searchTimeoutLowPriority — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The Low Priority search timeout that a receiving channel will wait for in order to start tracking a master
+        接收通道等待开始跟踪主设备的低优先级搜索超时时间
 
 - 低优先级搜索能够在不干扰设备上其他通道的情况下搜索主设备
 
@@ -320,13 +320,13 @@ Parameters:
 
 - :searchTimeoutHighPriority — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The High Priority search timeout that a receiving channel will wait for in order to start tracking a master
+        接收通道为开始跟踪主设备而等待的高优先级搜索超时时间
 
 - 低优先级搜索模式超时后触发
 
-- Will interrupt other channels
+- 将中断其他通道
 
-- Will take priority over any other open channels on that device
+- 在该设备上优先于任何其他打开的通道
 
 - 如果它与另一个通道重叠，则高优先级搜索具有优先权，另一个通道将被阻塞
 
@@ -345,7 +345,7 @@ Parameters:
 
 - 配置从设备将搜索的 RSSI 阈值，该阈值实际上表示从设备愿意与主设备保持的距离
 
-- Values are 0 (disabled), 1 (closest), 10 (farthest)
+- 值对应于 0（禁用）、1（最近）和 10（最远）
 
 
 - :networkKey64Bit — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —

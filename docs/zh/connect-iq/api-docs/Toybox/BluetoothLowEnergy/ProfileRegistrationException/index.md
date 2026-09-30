@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that the profile registration failed due to developer error
+此异常表示由于开发者错误，配置文件注册失败。
 
 ## 另见：
 

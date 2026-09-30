@@ -153,7 +153,7 @@ API 级别 1.0.0
 
 - [**systemLanguage**](#systemLanguage-var) as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
 
-    The language being used by the system.
+    系统正在使用的语言。
 
 - [**temperatureUnits**](#temperatureUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
@@ -246,9 +246,9 @@ Returns:
 
     两个 System.UNIT_* 常量值之一：
 
-- UNIT\_METRIC if distance is set to display in kilometers (km)
+- 如果将距离设置为以千米（km）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if distance is set to display in miles (mi)
+- 如果将距离设置为以英里（mi）显示，则为 UNIT\_STATUTE
 
 
 
@@ -293,9 +293,9 @@ Returns:
 
     两个 System.UNIT_* 常量值之一：
 
-- UNIT\_METRIC if elevation is set to display in meters (m)
+- 如果将海拔设置为以米（m）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if elevation is set to display in feet (ft)
+- 如果将海拔设置为以英尺（ft）显示，则为 UNIT\_STATUTE
 
 
 
@@ -404,9 +404,9 @@ Returns:
 
     两个 UNIT\_\* 常量值之一：
 
-- UNIT\_METRIC if height is set to display in meters (m)
+- 如果将身高设置为以米（m）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if height is set to display inSystem. feet (ft)
+- 如果将身高设置为以System. 英尺（ft）显示，则为 UNIT\_STATUTE
 
 
 
@@ -414,7 +414,7 @@ Returns:
 
 设备支持的物理按钮。
 
-This returns a bitwise binary of the enumerated values defined by the [System.BUTTON\_INPUT\_\*](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) constants that match the available buttons on a particular device. For example, a vivoactive HR returns a value of 9, which indicates Select (1) and Menu (8) button support. A fenix 5, however, returns 11, indicating support for all available button types.
+此项返回由 [System.BUTTON\_INPUT\_\*](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) 常量定义的枚举值的按位二进制值，这些值与特定设备上可用的按钮相匹配。例如，vivoactive HR 返回值 9，表示支持 Select（1）和 Menu（8）按钮。而 fenix 5 返回值 11，表示支持所有可用的按钮类型。
 
 Example:
 
@@ -502,7 +502,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if Enhanced Readability Mode is enabled, otherwise false.
+    如果启用增强可读性模式，则为 true，否则为 false。
 
 
 ### var isGlanceModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -661,7 +661,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if night colors are currently in use, otherwise false.
+    如果当前正在使用夜间颜色，则为 true，否则为 false。
 
 
 ### var isTouchScreen as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -735,9 +735,9 @@ Returns:
 
     两个 System.UNIT_* 常量值之一：
 
-- UNIT\_METRIC if pace is set to display in kilometers per hour (km/hr)
+- 如果将配速设置为以千米/小时（km/hr）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if pace is set to display in miles per hour (mph)
+- 如果将配速设置为以英里/小时（mph）显示，则为 UNIT\_STATUTE
 
 
 
@@ -851,7 +851,7 @@ Returns:
 
 - [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) —
 
-    The operating system, if available, or `null`.
+    操作系统（如果可用），否则为 `null`。
 
 
 ### var requiresBurnInProtection as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -926,7 +926,7 @@ Returns:
 
 ### var systemLanguage as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
 
-The language being used by the system
+系统正在使用的语言
 
 Since:
 
@@ -953,9 +953,9 @@ Returns:
 
     两个 System.UNIT_* 常量值之一：
 
-- UNIT\_METRIC if temperature is set to display in degrees Celsius (C)
+- 如果将温度设置为以摄氏度（C）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if temperature is set to display in degrees Fahrenheit (F)
+- 如果将温度设置为以华氏度（F）显示，则为 UNIT\_STATUTE
 
 
 
@@ -978,7 +978,7 @@ Returns:
 
 唯一的字母数字设备标识符。
 
-The value is unique for every app, but is stable on a device across uninstall and reinstall. Any use of this value for tracking user information must be in compliance with international privacy law.
+该值对每个应用都是唯一的，但在设备上卸载并重新安装应用后仍保持不变。使用此值跟踪用户信息时，必须遵守国际隐私法律。
 
 Example:
 
@@ -1031,6 +1031,6 @@ Returns:
 
     两个 System.UNIT_* 常量值之一：
 
-- UNIT\_METRIC if weight is set to display in kilograms (kg)
+- 如果将体重设置为以千克（kg）显示，则为 UNIT\_METRIC
 
-- UNIT\_STATUTE if weight is set to display in pounds (lbs)
+- 如果将体重设置为以磅（lbs）显示，则为 UNIT\_STATUTE

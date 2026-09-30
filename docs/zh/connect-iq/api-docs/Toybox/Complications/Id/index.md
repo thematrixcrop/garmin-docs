@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Unique identifier for complications
+Complication 的唯一标识符
 
 Since:
 

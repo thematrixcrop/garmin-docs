@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This Exception indicates an incompatible palette was used.
+此异常表示使用了不兼容的调色板。
 
 ## 另见：
 

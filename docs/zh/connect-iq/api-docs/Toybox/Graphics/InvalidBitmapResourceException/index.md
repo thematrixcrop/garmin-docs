@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This Exception indicates an invalid bitmap resource was provided.
+此异常表示提供了无效的位图资源。
 
 ## 另见：
 

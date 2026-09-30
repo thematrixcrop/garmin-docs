@@ -58,7 +58,7 @@ Returns:
 
 - [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) —
 
-    The Characteristic represented by the UUID provided or, `null` if the characteristic does not exist or the UUID has not be registered.
+    由提供的 UUID 表示的 Characteristic；如果特征不存在或 UUID 尚未注册，则为 `null`。
 
 
 Since:
@@ -69,7 +69,7 @@ API 级别 3.1.0
 
 获取服务中各特征的迭代器
 
-This will only provide Characteristics that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
+此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 Characteristics
 
 Returns:
 
@@ -107,7 +107,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    the UUID of the service
+    service 的 UUID
 
 
 Since:

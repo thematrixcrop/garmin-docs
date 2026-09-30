@@ -209,13 +209,13 @@ API 级别 3.0.0
 
 注意：
 
-This method resets the state of the Hash object, which can be used to compute a new hash
+此方法会重置 Hash 对象的状态，可用于计算新的哈希值
 
 Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    The digest of the message
+    消息的摘要
 
 
 Since:
@@ -234,7 +234,7 @@ Parameters:
 
 - :algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
-        The type of Hash this object will compute from the [HASH\_\*](/connect-iq/api-docs/Toybox/Cryptography/) enumeration (required)
+        此对象将根据 [HASH\_\*](/connect-iq/api-docs/Toybox/Cryptography/) 枚举计算的 Hash 类型（必需）
 
 
 另见：
@@ -250,7 +250,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if the algorithm selected is not supported, or if a required option is not provided
+    如果所选算法不受支持，或未提供必需选项，则抛出
 
 
 ### **update(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**

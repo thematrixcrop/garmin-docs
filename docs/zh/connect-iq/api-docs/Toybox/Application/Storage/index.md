@@ -5,7 +5,7 @@ title: "Module: Toybox.Application.Storage"
 
 ## 概述
 
-The Storage module provides persistent storage to applications.
+Storage 模块为应用程序提供持久化存储。
 
 Storage 提供对持久磁盘存储的访问。
 
@@ -65,7 +65,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    Thrown if called from a background process on device that does not have ConnectIQ 3.2.0 support.
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则会抛出此异常。
 
 
 ### **deleteValue(key as [Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type))** as **Void**
@@ -96,14 +96,14 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    Thrown if called from a background process on device that does not have ConnectIQ 3.2.0 support
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则会抛出此异常
 
 
 ### **getValue(key as [Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type))** as [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)
 
 从对象存储中获取与指定键关联的数据。
 
-Values must first be set with [setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) before they are can be obtained with `getValue`.
+必须先使用 [setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) 设置值，然后才能通过 `getValue` 获取这些值。
 
 注意：
 
@@ -113,7 +113,7 @@ Parameters:
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
-    The key of the value to retrieve from the object store
+    要从对象存储中获取的值所对应的键
 
 
 Returns:
@@ -158,7 +158,7 @@ Throws:
 - [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)（自 5.1.0）
 
 
-There is a limit on the size of the Object Store that can vary between devices. If you reach this limit, the value will not be saved and an exception will be thrown. Also, values are limited to 32 KB in size.
+Object Store 的大小存在限制，该限制可能因设备而异。如果达到此限制，值将不会保存，并且会抛出异常。此外，值的大小限制为 32 KB。
 
 注意：
 
@@ -212,7 +212,7 @@ Throws:
 
 - ([Lang.StorageFullException](/connect-iq/api-docs/Toybox/Lang/StorageFullException/)) —
 
-    Thrown if there is not enough remaining space in the Object Store for the given key and value
+    如果对象存储中没有足够的剩余空间存储给定的键和值，则抛出
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 

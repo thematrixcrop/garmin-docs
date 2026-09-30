@@ -55,7 +55,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The resource object referenced, or `null` if failed.
+    引用的资源对象；如果失败则为 `null`。
 
 
 Since:

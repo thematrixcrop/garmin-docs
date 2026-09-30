@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that the app targeted for opening is not installed.
+此异常表示要打开的应用未安装。
 
 ## 另见：
 

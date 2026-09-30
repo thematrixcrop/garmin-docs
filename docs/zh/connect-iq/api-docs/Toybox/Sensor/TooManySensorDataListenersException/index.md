@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates more than one listener is tried to register for sensor data.
+此异常表示尝试注册多个传感器数据侦听器。
 
 Since:
 

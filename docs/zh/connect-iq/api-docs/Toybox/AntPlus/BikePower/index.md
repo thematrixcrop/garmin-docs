@@ -205,7 +205,7 @@ Returns:
 
 - [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/) —
 
-    The current calculated crank cadence
+    当前计算得出的曲柄踏频
 
 
 Since:
@@ -220,7 +220,7 @@ Returns:
 
 - [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/) —
 
-    The current calculated power
+    当前计算得出的功率
 
 
 Since:
@@ -235,7 +235,7 @@ Returns:
 
 - [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/) —
 
-    The current calculated wheel distance
+    当前计算得出的车轮距离
 
 
 Since:
@@ -250,7 +250,7 @@ Returns:
 
 - [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/) —
 
-    The current calculated wheel speed
+    当前计算得出的车轮速度
 
 
 Since:
@@ -265,7 +265,7 @@ Returns:
 
 - [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/) —
 
-    The pedal power balance
+    踏板功率平衡
 
 
 Since:
@@ -280,7 +280,7 @@ Returns:
 
 - [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/) —
 
-    The current torque effectiveness & pedal smoothness
+    当前扭矩效果和踩踏平顺度
 
 
 Since:
@@ -295,7 +295,7 @@ Parameters:
 
 - listener — ([AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)) —
 
-    The bike power instance optionally takes an extension of the [BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the getCalculated\* methods.
+    自行车功率实例的参数可选用 [BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) 类的扩展类。如果用户计划仅使用 getCalculated\* 方法轮询数据，也可以传入 `null`。
 
 
 Since:

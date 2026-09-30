@@ -9,7 +9,7 @@ title: "Module: Toybox.PersistedLocations"
 
 **此项已弃用**
 
-This module may be removed after System 4.
+此模块可能会在 System 4 之后移除。
 
 ## 另见：
 

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Double 表示 64 位浮点数。
 
-To use a double in Monkey C add 'd' to the end of the number.
+要在 Monkey C 中使用 double，请在数字末尾添加 'd'。
 
 Example:
 
@@ -245,7 +245,7 @@ API 级别 1.0.0
 
 将 Double 转换为 Number。
 
-The Double value will be rounded toward 0 upon conversion. For example, 6.8 becomes 6 and -5.7 becomes -5.
+转换时，Double 值将向 0 舍入。例如，6.8 变为 6，-5.7 变为 -5。
 
 Returns:
 
@@ -266,7 +266,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The String representation of the Double
+    Double 的 String 表示形式
 
 
 Since:

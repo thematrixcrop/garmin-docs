@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-The base class for the MapMarker object.
+MapMarker 对象的基类。
 
-The MapMarker is used to hold a [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), or a [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) enum value, and the corresponding `x, y` value to note the "hotspot" for the image to be used as an icon for a marker within a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/). This class also contains the [Location](/connect-iq/api-docs/Toybox/Position/Location/) at which the MapMarker should be displayed on the map.
+MapMarker 用于保存一个 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 或 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值，以及用于标记图像在 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 中作为标记图标时“热点”的相应 `x, y` 值。此类还包含 MapMarker 应在地图上显示的位置 [Location](/connect-iq/api-docs/Toybox/Position/Location/)。
 
 Since:
 
@@ -155,7 +155,7 @@ Returns:
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
-    The location for this MapMarker as a Location object
+    此 MapMarker 的位置，类型为 Location 对象
 
 
 Since:
@@ -170,7 +170,7 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    The Location at which the MapMarker object will be rendered on the map
+    MapMarker 对象将在地图上渲染的位置
 
 
 Since:
@@ -181,7 +181,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if location is not a [Location](/connect-iq/api-docs/Toybox/Position/Location/) type
+    如果 location 不是 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 类型，则抛出
 
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -211,15 +211,15 @@ Throws:
 
 - ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 
-    Thrown if the `x, y` values for the hotspot fall outside the bounds of the icon image
+    如果热点的 `x, y` 值超出图标图像的边界，则抛出
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if icon is not a supported type
+    如果 `icon` 不是受支持的类型，则会抛出此异常
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if icon is not a supported value
+    如果 `icon` 不是受支持的值，则会抛出此异常
 
 
 ### **setLabel(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
@@ -228,7 +228,7 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The label for the marker object as a String or string ResourceId
+    标记对象的标签，类型为 String 或字符串 ResourceId
 
 
 另见：

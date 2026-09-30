@@ -295,7 +295,7 @@ API 级别 1.0.0
 
 在 SimpleDataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
-This method is called once per second and automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) to the SimpleDataField object for display or additional computation. It is necessary to override `compute()` when implementing a SimpleDataField. The value to be displayed in the field must be returned by this method.
+此方法每秒调用一次，并自动向 SimpleDataField 对象提供 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)，以供显示或进一步计算。实现 SimpleDataField 时必须重写 `compute()`。此方法必须返回要在字段中显示的值。
 
 Parameters:
 
@@ -316,7 +316,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)、[Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)、[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)、null —
 
-    The value to be displayed in the field or `null`
+    要在字段中显示的值或 `null`
 
 
 另见：

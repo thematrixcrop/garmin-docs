@@ -265,7 +265,7 @@ Parameters:
 
 - addend — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The Duration to add to this LocalMoment.
+    要添加到此 LocalMoment 的 Duration。
 
 
 Returns:
@@ -283,7 +283,7 @@ API 级别 3.3.0
 
 确定一个 LocalMoment 位于另一个 LocalMoment 之前还是之后
 
-This computes a Number representing the difference between the two LocalMoment objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function) method can also be used to get the absolute Duration between two LocalMoment objects.
+此方法计算一个 Number，表示两个 LocalMoment 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function) 方法获取两个 LocalMoment 对象之间的绝对 Duration。
 
 Parameters:
 
@@ -317,7 +317,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The Number of seconds difference between the two LocalMoment objects, without considering time zone rules. If the LocalMoment supplied for comparison is after this LocalMoment, the value will be negative.
+    两个 LocalMoment 对象之间相差的秒数，不考虑时区规则。如果用于比较的 LocalMoment 晚于此 LocalMoment，则该值为负数。
 
 
 另见：
@@ -339,7 +339,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The daylight saving time offset in seconds.
+    夏令时偏移量，单位为秒。
 
 
 Since:
@@ -354,7 +354,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The total offset from UTC time in seconds.
+    相对于 UTC 时间的总偏移量（秒）。
 
 
 Since:
@@ -365,13 +365,13 @@ API 级别 3.3.0
 
 获取 UTC 时间的时区偏移量（以秒为单位）。
 
-This is the time zone offset without the daylight saving time offset.
+这是不包含夏令时偏移的时区偏移。
 
 Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The time zone offset from UTC in seconds. Positive values are East of UTC.
+    相对于 UTC 的时区偏移量（以秒为单位）。正值表示位于 UTC 以东。
 
 
 Since:
@@ -408,7 +408,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if daylight saving time is in effect for this time.
+    如果此时正在实行夏令时，则为 true。
 
 
 Since:
@@ -445,14 +445,14 @@ Parameters:
 
 - subtrahend — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The LocalMoment or Duration to subtract from this LocalMoment
+    要从此 LocalMoment 中减去的 LocalMoment 或 Duration
 
 
 Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
-    The Duration between the two LocalMoment objects or the LocalMoment offset by a Duration. When subtracting LocalMoments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) method can be used to determine whether one LocalMoment is before or after another LocalMoment.
+    两个 LocalMoment 对象之间的 Duration，或由 Duration 偏移后的 LocalMoment。对 LocalMoment 执行减法时，计算得到的 Duration 始终为正值。可以使用 [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) 方法确定一个 LocalMoment 位于另一个 LocalMoment 之前还是之后。
 
 
 Since:
@@ -467,7 +467,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The UTC time of the LocalMoment as a Moment
+    LocalMoment 的 UTC 时间，表示为 Moment
 
 
 Since:
@@ -482,7 +482,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The UTC time of the LocalMoment in seconds since the UNIX epoch
+    LocalMoment 的 UTC 时间，即自 UNIX 纪元以来的秒数
 
 
 另见：

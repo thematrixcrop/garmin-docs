@@ -20,7 +20,7 @@ AppBase 是应用的基类。
 
 所有应用都继承自此类，并使用其方法管理应用生命周期。
 
-- Your app overrides the class to provide entry points with the following methods:
+- 您的应用会覆盖该类，以通过以下方法提供入口点：
 
 
 - [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
@@ -36,7 +36,7 @@ AppBase 是应用的基类。
 - [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
-- These functions are called in the following order:
+- 这些函数按以下顺序调用：
 
 
 1. [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
@@ -208,7 +208,7 @@ API 级别 4.0.0
 
 - [**onAppInstall**](#onAppInstall-instance_function)() as **Void**
 
-    The callback method that is triggered in the background when the app is installed.
+    应用安装后在后台触发的回调方法。
 
 - [**onAppUpdate**](#onAppUpdate-instance_function)() as **Void**
 
@@ -232,7 +232,7 @@ API 级别 4.0.0
 
 - [**onEnhancedReadabilityModeChanged**](#onEnhancedReadabilityModeChanged-instance_function)() as **Void**
 
-    The font mode has changed This method is called when the system changes to or from Enhanced Readability Mode.
+    字体模式已更改。当系统切换到增强可读性模式或从增强可读性模式切换出来时，将调用此方法。
 
 - [**onInactive**](#onInactive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
@@ -240,7 +240,7 @@ API 级别 4.0.0
 
 - [**onNightModeChanged**](#onNightModeChanged-instance_function)() as **Void**
 
-    The display mode has changed This method is called when the system changes to or from night mode.
+    显示模式已更改。当系统切换到夜间模式或从夜间模式切换出来时，将调用此方法。
 
 - [**onSettingsChanged**](#onSettingsChanged-instance_function)() as **Void**
 
@@ -918,7 +918,7 @@ API 级别 3.1.0
 
 - 如果表盘运行时达到目标，则会触发此函数。
 
-- The type of goal that was met will be provided, and the AppBase should return a View that displays a goal reached message and/or animations for that goal.
+- 将提供已达成目标的类型，AppBase 应返回一个显示该目标已达成消息和/或动画的 View。
 
 - 如果此函数返回 View，则主表盘视图将关闭，然后推送新的 View。
 
@@ -929,7 +929,7 @@ Parameters:
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
-    The goal type that has triggered. The goalType will be from the GOAL\_TYPE\_\* enumeration.
+    已触发的目标类型。goalType 将来自 GOAL\_TYPE\_\* 枚举。
 
 
 Returns:
@@ -980,7 +980,7 @@ Parameters:
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
-    The key of the value to retrieve from the object store (cannot be a Symbol)
+    要从对象存储中获取的值所对应的键（不能是 Symbol）
 
 
 :::details 支持的设备
@@ -1289,7 +1289,7 @@ API 级别 5.1.0
 
 重写此方法，以提供 Sensor Delegate 对象。
 
-The sensor delegate object will be used to get information about the sensors during the native pairing process.
+在原生配对过程中，将使用传感器委托对象获取有关传感器的信息。
 
 :::details 支持的设备
 
@@ -1375,7 +1375,7 @@ Returns:
 
 - [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) —
 
-    The Sensor Delegate object
+    Sensor Delegate 对象
 
 
 Since:
@@ -1386,13 +1386,13 @@ API 级别 5.1.0
 
 获取用于运行此应用后台任务的 [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)。
 
-When a ServiceDelegate is retrieved, the following will occur:
+获取 ServiceDelegate 时，将发生以下情况：
 
-- The method triggered within the ServiceDelegate will be run
+- ServiceDelegate 中触发的方法将会运行
 
-- The background task will exit using [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) or [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function)
+- 后台任务将使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) 或 [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function) 退出
 
-- The background task will be automatically terminated after 30 seconds if it is not exited by these methods
+- 如果未通过这些方法退出，后台任务将在 30 秒后自动终止
 
 
 Returns:
@@ -1415,7 +1415,7 @@ API 级别 2.3.0
 
 重写此方法，以提供应用的设置 View 和 Input Delegate。
 
-- This function is only applicable to watch faces and data fields.
+- 此函数仅适用于表盘和数据字段。
 
 
 :::details 支持的设备
@@ -1751,7 +1751,7 @@ API 级别 4.2.3
 
 检查应用程序是否处于试用模式。
 
-This will always return `true` for development build apps. If the app has been signed by the store it will return the current unlock state of the app. This method should not be overridden or your trial mode functionality could cease to function correctly.
+对于开发版本应用，此项始终返回 `true`。如果应用已由商店签名，则返回应用当前的解锁状态。不应重写此方法，否则试用模式功能可能无法正常运行。
 
 Returns:
 
@@ -2000,7 +2000,7 @@ API 级别 4.2.3
 
 ### **onAppInstall()** as **Void**
 
-The callback method that is triggered in the background when the app is installed. Requires the Background permission to be enabled and your application class to carry the :background annotation.
+应用安装后在后台触发的回调方法。要求启用 Background 权限，并在应用类中添加 :background 注释。
 
 Since:
 
@@ -2026,13 +2026,13 @@ API 级别 3.3.0
 
 处理从 ServiceDelegate 传递给应用程序的数据。
 
-When the [Background](/connect-iq/api-docs/Toybox/Background/) process terminates, a data payload may be available. If the main application is active when this occurs, the data will be passed directly to the application's `onBackgroundData()` method. If the main application is not active, the data will be saved until the next time the application is launched and will be passed to the application after the [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) method completes.
+[Background](/connect-iq/api-docs/Toybox/Background/) 进程终止时，可能会有数据负载可用。如果主应用处于活动状态，数据将直接传递给应用的 `onBackgroundData()` 方法。如果主应用未处于活动状态，数据将保存起来，直到应用下次启动，并在 [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) 方法完成后传递给应用。
 
 Parameters:
 
 - data — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The data passed from the background process.
+    从后台进程传递的数据。
 
 
 另见：
@@ -2048,17 +2048,17 @@ API 级别 2.3.0
 
 设备设置已更改
 
-This method is called when a device setting value is changed.
+设备设置值发生更改时会调用此方法。
 
 Parameters:
 
 - aSymbol — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    The symbol for the field in [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) that has changed.
+    [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) 中已更改字段的符号。
 
 - aValue — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The new value for the field. The type of the value will match the type of the field within the [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) class.
+    字段的新值。该值的类型将与 [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) 类中字段的类型匹配。
 
 
 Example:
@@ -2162,7 +2162,7 @@ API 级别 5.1.0
 
 显示模式已更改，仅适用于 AMOLED 或 LCD 屏幕产品。
 
-This method is called when the system changes the display mode. Use the [System.getDisplayMode()](/connect-iq/api-docs/Toybox/System/#getDisplayMode-instance_function) to get the current state.
+系统更改显示模式时会调用此方法。使用 [System.getDisplayMode()](/connect-iq/api-docs/Toybox/System/#getDisplayMode-instance_function) 获取当前状态。
 
 :::details 支持的设备
 
@@ -2226,9 +2226,9 @@ API 级别 5.0.0
 
 ### **onEnhancedReadabilityModeChanged()** as **Void**
 
-The font mode has changed
+字体模式已更改
 
-This method is called when the system changes to or from Enhanced Readability Mode. Use the [Toybox::System::DeviceSettings#isEnhancedReadabilityModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isEnhancedReadabilityModeEnabled-var) field to get the current state.
+系统切换到增强可读性模式或从该模式切换出来时会调用此方法。使用 [Toybox::System::DeviceSettings#isEnhancedReadabilityModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isEnhancedReadabilityModeEnabled-var) 字段获取当前状态。
 
 :::details 支持的设备
 
@@ -2313,9 +2313,9 @@ API 级别 4.2.3
 
 ### **onNightModeChanged()** as **Void**
 
-The display mode has changed
+显示模式已更改
 
-This method is called when the system changes to or from night mode. Use the [Toybox::System::DeviceSettings#isNightModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isNightModeEnabled-var) field to get the current state.
+系统切换到夜间模式或从该模式切换出来时会调用此方法。使用 [Toybox::System::DeviceSettings#isNightModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isNightModeEnabled-var) 字段获取当前状态。
 
 :::details 支持的设备
 
@@ -2475,7 +2475,7 @@ Parameters:
 
 Returns:
 
-- true if the property is valid, return an error message otherwise. Returning false causes a generic error to be displayed on settings configuration app
+- 如果属性有效，则为 true；否则返回错误消息。返回 false 会导致设置配置应用显示通用错误
 
 
 Since:
@@ -2927,7 +2927,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if called with a key or value of a disallowed type
+    如果使用了不允许的类型作为键或值，则会抛出此异常
 
 
 ### **validateProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type))** as **Void**

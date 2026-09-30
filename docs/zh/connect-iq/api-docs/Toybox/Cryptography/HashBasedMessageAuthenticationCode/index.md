@@ -236,7 +236,7 @@ Parameters:
 
 - :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-        The secret key used to compute the message authentication code, which can be of any length in bytes (required)
+        用于计算消息认证码的密钥，字节长度可以是任意值（必需）
 
 
 Since:

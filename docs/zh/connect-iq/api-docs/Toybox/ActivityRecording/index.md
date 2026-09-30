@@ -1035,7 +1035,7 @@ API 级别 3.0.10
 
 |
 
-Timer start event
+计时器开始事件
 
 |
 | TIMER\_EVENT\_STOP | 1 |
@@ -1044,7 +1044,7 @@ API 级别 3.0.10
 
 |
 
-Timer stop event
+计时器停止事件
 
 |
 | TIMER\_EVENT\_PAUSE | 2 |
@@ -1053,7 +1053,7 @@ API 级别 3.0.10
 
 |
 
-Timer pause event
+计时器暂停事件
 
 |
 | TIMER\_EVENT\_RESUME | 3 |
@@ -1062,7 +1062,7 @@ API 级别 3.0.10
 
 |
 
-Timer resume event
+计时器恢复事件
 
 |
 | TIMER\_EVENT\_LAP | 4 |
@@ -1071,7 +1071,7 @@ API 级别 3.0.10
 
 |
 
-Timer lap event
+计时器分段事件
 
 |
 | TIMER\_EVENT\_RESET | 5 |
@@ -1080,7 +1080,7 @@ API 级别 3.0.10
 
 |
 
-Timer reset
+计时器重置
 
 |
 | TIMER\_EVENT\_WORKOUT\_STEP\_COMPLETE | 6 |
@@ -1089,7 +1089,7 @@ API 级别 3.0.10
 
 |
 
-Workout step complete
+训练步骤完成
 
 |
 | TIMER\_EVENT\_NEXT\_MULTISPORT\_LEG | 7 |
@@ -1137,11 +1137,11 @@ Parameters:
 
 - :sport — ([ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type), [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
-        The primary sport being recorded (SPORT\_GENERIC by default).
+        正在记录的主要运动项目（默认为 SPORT\_GENERIC）。
 
 - :subSport — ([ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
 
-        The sport subcategory being recorded (SUB\_SPORT\_GENERIC by default).
+        正在记录的运动项目子类别（默认为 SUB\_SPORT\_GENERIC）。
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1149,7 +1149,7 @@ Parameters:
 
 - :poolLength — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-        This is the length of the pool in meters for this activity. If this session object is configured with `:sport=>SPORT_SWIMMING` and `:subSport=>SUB_SPORT_LAP_SWIMMING`, this option is required to configure the system in this mode. If it is not provided, activity data may have undefined behavior. For all other sport modes, this option is ignored.
+        这是此活动的泳池长度，单位为米。如果此会话对象配置为 `:sport=>SPORT_SWIMMING` 且 `:subSport=>SUB_SPORT_LAP_SWIMMING`，则必须设置此选项才能以此模式配置系统。如果未提供此选项，活动数据的行为可能未定义。对于所有其他运动模式，将忽略此选项。
 
 - :autoLap — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1157,7 +1157,7 @@ Parameters:
 
 - :sensorLogger — ([SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)) —
 
-        The SensorLogger to use to record this session.
+        用于记录此会话的 SensorLogger。
 
 
 Example:
@@ -1197,4 +1197,4 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if required options are missing or provided options are invalid in `:autoLap` options dictionary
+    如果 `:autoLap` 选项字典中缺少必需选项或提供的选项无效，则抛出

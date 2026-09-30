@@ -71,13 +71,13 @@ API 级别 1.0.0
 
 将一个 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 或另一个 Duration 添加到 Duration。
 
-When adding a Moment to a Duration, this method functions the same as the [Moment.add()](/connect-iq/api-docs/Toybox/Time/Moment/#add-instance_function) method.
+将 Moment 添加到 Duration 时，此方法的功能与 [Moment.add()](/connect-iq/api-docs/Toybox/Time/Moment/#add-instance_function) 方法相同。
 
 Parameters:
 
 - time — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    The Duration or Moment to add to Duration
+    要添加到 Duration 的 Duration 或 Moment
 
 
 Example:
@@ -116,7 +116,7 @@ API 级别 1.0.0
 
 确定一个 Duration 比另一个 Duration 更短还是更长。
 
-This computes a Number representing the difference between the two Duration objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/Duration/#subtract-instance_function) method can also be used to get the absolute difference between two Duration objects.
+此方法计算一个 Number，表示两个 Duration 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/Duration/#subtract-instance_function) 方法获取两个 Duration 对象之间的绝对差值。
 
 Parameters:
 
@@ -141,7 +141,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The Number of seconds difference between the two Duration objects. If the Duration supplied for comparison is longer than this Duration, the value will be negative.
+    两个 Duration 对象之间相差的秒数。如果用于比较的 Duration 长于此 Duration，则该值为负数。
 
 
 Since:
@@ -156,7 +156,7 @@ Parameters:
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The value by which to divide the Duration
+    用于除以 Duration 的值
 
 
 Example:
@@ -171,7 +171,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    The quotient of the Duration and the supplied value
+    Duration 与所提供值的商
 
 
 Since:
@@ -220,7 +220,7 @@ Parameters:
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The Number of seconds with which to initialize the Duration
+    用于初始化 Duration 的秒数
 
 
 Example:
@@ -290,7 +290,7 @@ Parameters:
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The value by which to multiply the Duration
+    用于乘以 Duration 的值
 
 
 Example:
@@ -305,7 +305,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    The product of the Duration and the supplied value
+    Duration 与所提供值的乘积
 
 
 Since:
@@ -316,13 +316,13 @@ API 级别 1.0.0
 
 获取两个 Duration 对象之间的绝对差值。
 
-The computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Duration/#compare-instance_function) method can also be used to get the difference between two Duration objects.
+计算得出的 Duration 始终为正值。还可以使用 [compare()](/connect-iq/api-docs/Toybox/Time/Duration/#compare-instance_function) 方法获取两个 Duration 对象之间的差值。
 
 Parameters:
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The Duration to subtract from this Duration
+    要从此 Duration 中减去的 Duration
 
 
 Example:
@@ -338,7 +338,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    The difference between the two Duration objects
+    两个 Duration 对象之间的差值
 
 
 Since:
@@ -353,7 +353,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The value of the Duration in seconds
+    Duration 的值（秒）
 
 
 Since:

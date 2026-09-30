@@ -84,7 +84,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The Exception's error message, or `null` if no message is given
+    Exception 的错误消息；如果未提供消息，则为 `null`
 
 
 Since:

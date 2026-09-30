@@ -48,14 +48,14 @@ API 级别 2.4.0
 
 - [**targetPower**](#targetPower-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The target power set for the Fitness Equipment.
+    为 Fitness Equipment 设置的目标功率。
 
 
 ## 实例属性详情
 
 ### var targetPower as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The target power set for the Fitness Equipment
+为 Fitness Equipment 设置的目标功率
 
 Since:
 

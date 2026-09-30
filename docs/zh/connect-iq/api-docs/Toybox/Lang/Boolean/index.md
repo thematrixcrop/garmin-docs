@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Boolean 对象表示 true 或 false 值。
 
-You can use the `true` or `false` keyword to create a Boolean.
+可以使用 `true` 或 `false` 关键字创建 Boolean。
 
 Example:
 

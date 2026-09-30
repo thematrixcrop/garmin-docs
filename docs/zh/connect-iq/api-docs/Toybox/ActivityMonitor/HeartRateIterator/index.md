@@ -189,7 +189,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The maximum heart rate in beats per minute (bpm)
+    最大心率，单位为每分钟跳数 (bpm)
 
 
 Since:
@@ -204,7 +204,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The minimum heart rate (bpm)
+    最小心率 (bpm)
 
 
 Since:
@@ -221,7 +221,7 @@ Returns:
 
 - [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) —
 
-    The next [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/), or `null` if there are no more samples
+    下一个 [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/)；如果没有更多样本，则为 `null`
 
 
 Since:

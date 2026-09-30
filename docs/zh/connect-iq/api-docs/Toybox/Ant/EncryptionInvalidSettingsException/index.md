@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Thrown if encryption settings are invalid and cannot be used to complete the request for an encrypted channel.
+如果加密设置无效，无法用于完成加密通道请求，则会抛出此异常。
 
 ## 另见：
 

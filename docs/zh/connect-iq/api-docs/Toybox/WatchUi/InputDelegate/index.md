@@ -18,18 +18,18 @@ Toybox.Lang.Object
 
 InputDelegate 处理基本输入事件。
 
-There are four types of basic inputs InputDelegate can handle:
+InputDelegate 可以处理四种基本输入类型：
 
 - 由 [KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/) 表示的键
 
-- Touch, represented by [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- 触摸，由 [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/) 表示
 
 - 由 [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 表示的滑动
 
 - 由 [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/) 表示的可选择项
 
 
-This class is the base class for [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), which goes beyond simple key and screen-based input.
+此类是 [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) 的基类，提供了超越简单按键和基于屏幕输入的功能。
 
 ## 另见：
 
@@ -132,13 +132,13 @@ API 级别 1.0.0
 
 已发生触摸屏拖动事件。
 
-This is sent when the touch screen is dragged.
+触摸屏被拖动时会发送此事件。
 
 Parameters:
 
 - dragEvent — ([WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) —
 
-    The drag event that has occurred
+    已发生的拖动事件
 
 
 :::details 支持的设备
@@ -249,13 +249,13 @@ API 级别 3.3.0
 
 已发生触摸屏快速滑动事件。
 
-This is sent when the touch screen is flicked.
+触摸屏被快速滑动时会发送此事件。
 
 Parameters:
 
 - flickEvent — ([WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) —
 
-    The flick event that has occurred
+    已发生的轻扫事件
 
 
 :::details 支持的设备
@@ -364,7 +364,7 @@ API 级别 3.3.0
 
 已发生触摸屏按住事件。
 
-This is sent when the touch screen is touched and not released.
+触摸屏被触摸但未释放时会发送此事件。
 
 Parameters:
 
@@ -428,7 +428,7 @@ Parameters:
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
-    The key event that occurred.
+    已发生的按键事件。
 
 
 Returns:
@@ -480,7 +480,7 @@ API 级别 1.1.2
 
 已发生触摸屏释放事件。
 
-This is only sent after an [onHold()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onHold-instance_function) event, once the hold on the touch screen is released.
+只有在 [onHold()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onHold-instance_function) 事件之后、触摸屏上的按压被释放后，才会发送此事件。
 
 Parameters:
 
@@ -513,7 +513,7 @@ Parameters:
 
 - selectableEvent — ([WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) —
 
-    The selectable event containing the information about the Selectable whose state has changed
+    包含状态已更改的 Selectable 信息的可选择事件
 
 
 Returns:
@@ -538,13 +538,13 @@ API 级别 2.1.0
 
 已发生触摸屏滑动事件。
 
-This is sent when the touch screen is swiped.
+触摸屏被滑动时会发送此事件。
 
 Parameters:
 
 - swipeEvent — ([WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) —
 
-    The swipe event that has occurred
+    已发生的滑动事件
 
 
 Returns:
@@ -567,7 +567,7 @@ API 级别 1.0.0
 
 发生了一次屏幕点击事件。
 
-This is sent when the touch screen is tapped (a quick touch and release).
+触摸屏被点击时会发送此事件（快速触摸并释放）。
 
 Parameters:
 

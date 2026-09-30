@@ -175,7 +175,7 @@ Returns:
 
 - [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) —
 
-    The current state:
+    当前状态：
 
 - :stateDefault
 
@@ -211,27 +211,27 @@ Parameters:
 
 - :width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-        The clip width of the Selectable object (required)
+        Selectable 对象的裁剪宽度（必需）
 
 - :height — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-        The clip height of the Selectable object (required)
+        Selectable 对象的裁剪高度（必需）
 
 - :stateDefault — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The Drawable or color to display in default state (optional)
+        默认状态下显示的 Drawable 或颜色（可选）
 
 - :stateHighlighted — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The Drawable or color to display in highlighted state (optional)
+        高亮状态下显示的 Drawable 或颜色（可选）
 
 - :stateSelected — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The Drawable or color to display in selected state (optional)
+        选中状态下显示的 Drawable 或颜色（可选）
 
 - :stateDisabled — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The Drawable or color to display in disabled state (optional)
+        禁用状态下显示的 Drawable 或颜色（可选）
 
 
 另见：
@@ -251,7 +251,7 @@ Parameters:
 
 - state — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    The desired state:
+    所需状态：
 
 - :stateDefault
 

@@ -30,11 +30,11 @@ API 级别 5.1.0
 
 - [**data**](#data-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
-    The data payload associated with the notification The value of the `:data` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function).
+    与通知关联的数据负载。[showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 提供的 `:data` 选项的值。
 
 - [**type**](#type-var) as [Notifications.NotificationMessageType](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageType-module)
 
-    The notification message type.
+    通知消息类型。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -50,7 +50,7 @@ API 级别 5.1.0
 
 与所选操作关联的操作负载
 
-The value of the selected action from the `:actions` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function). This will be `null` if the selected action had a `null` value, or if the notification was dismissed.
+从提供给 [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 的 `:actions` 选项中选定的操作值。如果选定操作的值为 `null`，或通知已被忽略，则为 `null`。
 
 Since:
 
@@ -58,9 +58,9 @@ API 级别 5.1.0
 
 ### var data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
-The data payload associated with the notification
+与通知关联的数据负载
 
-The value of the `:data` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function). This will be `null` if no value was provided or it was `null`.
+提供给 [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 的 `:data` 选项的值。如果未提供值或值为 `null`，则为 `null`。
 
 Since:
 
@@ -68,7 +68,7 @@ API 级别 5.1.0
 
 ### var type as [Notifications.NotificationMessageType](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageType-module)
 
-The notification message type
+通知消息类型
 
 Since:
 

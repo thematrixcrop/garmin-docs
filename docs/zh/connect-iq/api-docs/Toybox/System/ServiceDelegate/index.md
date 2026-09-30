@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 ServiceDelegate 是一个用于处理 [Background](/connect-iq/api-docs/Toybox/Background/) 事件的类。
 
-This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
+此类用作后台进程的主要入口点。委托中的回调函数可用于启动其他系统事件（例如 [Communications](/connect-iq/api-docs/Toybox/Communications/)），但只有委托函数能够保证完成。后台进程可能会随时关闭，以处理优先级更高的进程。
 
 ## 另见：
 
@@ -63,7 +63,7 @@ API 级别 2.3.0
 
 - [**onActivityCompleted**](#onActivityCompleted-instance_function)(activity as { :sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) }) as **Void**
 
-    The callback method that is triggered when an activity is completed.
+    活动完成时触发的回调方法。
 
 - [**onGoalReached**](#onGoalReached-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
@@ -71,11 +71,11 @@ API 级别 2.3.0
 
 - [**onOAuthResponse**](#onOAuthResponse-instance_function)() as **Void**
 
-    The callback method that is triggered in the background when an OAuth response is received from the system.
+    系统收到 OAuth 响应后在后台触发的回调方法。
 
 - [**onPhoneAppMessage**](#onPhoneAppMessage-instance_function)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as **Void**
 
-    The callback method that is triggered when a phone app message arrives for this app.
+    此应用收到手机应用消息时触发的回调方法。
 
 - [**onSleepTime**](#onSleepTime-instance_function)() as **Void**
 
@@ -98,7 +98,7 @@ API 级别 2.3.0
 
 ### **onActivityCompleted(activity as { :sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) })** as **Void**
 
-The callback method that is triggered when an activity is completed
+活动完成时触发的回调方法
 
 Parameters:
 
@@ -108,11 +108,11 @@ Parameters:
 
 - :sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
-        The primary sport of the completed activity.
+        已完成活动的主要运动项目。
 
 - :subSport — ([Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
 
-        The sport subcategory of the completed activity.
+        已完成活动的运动项目子类别。
 
 
 Since:
@@ -136,7 +136,7 @@ API 级别 2.3.0
 
 ### **onOAuthResponse()** as **Void**
 
-The callback method that is triggered in the background when an OAuth response is received from the system
+系统收到 OAuth 响应后在后台触发的回调方法
 
 Since:
 
@@ -144,13 +144,13 @@ API 级别 2.3.0
 
 ### **onPhoneAppMessage(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/))** as **Void**
 
-The callback method that is triggered when a phone app message arrives for this app
+此应用收到手机应用消息时触发的回调方法
 
 Parameters:
 
 - msg — ([Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) —
 
-    The message received.
+    已接收的消息。
 
 
 :::details 支持的设备

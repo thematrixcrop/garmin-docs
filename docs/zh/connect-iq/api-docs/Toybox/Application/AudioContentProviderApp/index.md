@@ -18,9 +18,9 @@ Toybox.Application.AppBase
 
 ## 概述
 
-The base class for audio content provider apps.
+音频内容提供程序应用的基类。
 
-This object extends [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and adds new methods for getting different initial view types based on what mode the app needs to be started in.
+此对象扩展 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并添加了用于根据应用需要启动的模式获取不同初始视图类型的新方法。
 
 Since:
 

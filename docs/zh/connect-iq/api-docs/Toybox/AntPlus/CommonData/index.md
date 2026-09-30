@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The CommonData object represents the information shared across all common data types.
+CommonData 对象表示所有通用数据类型之间共享的信息。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
@@ -55,7 +55,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The identifier as a Number
+    以 Number 表示的标识符
 
 - 单分量时返回 `null`
 
@@ -75,4 +75,4 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of components
+    组件数

@@ -68,7 +68,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    the UUID of the Descriptor
+    Descriptor 的 UUID
 
 
 Since:
@@ -89,7 +89,7 @@ API 级别 3.1.0
 
 请求执行写入操作
 
-Writes the locally stored value to the remote descriptor.
+将本地存储的值写入远程描述符。
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorWrite-instance_function)
 

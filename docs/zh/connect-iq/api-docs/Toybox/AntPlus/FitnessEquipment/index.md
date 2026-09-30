@@ -117,7 +117,7 @@ Parameters:
 
 - data — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The value of the setting to be sent or [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) enum value if setting mode.
+    要发送的设置值；如果处于设置模式，则为 [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) 枚举值。
 
 
 Since:
@@ -222,7 +222,7 @@ Parameters:
 
 - listener — ([AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)) —
 
-    The fitness equipment instance optionally takes an extension of the [FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
+    健身设备实例可以选择将 [FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
 Since:

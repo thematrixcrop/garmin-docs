@@ -64,7 +64,7 @@ API 级别 2.4.0
 
 - [**mode**](#mode-var) as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module) or **Null**
 
-    The current training mode of the fitness equipment.
+    健身设备的当前训练模式。
 
 - [**simulationSupported**](#simulationSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -94,7 +94,7 @@ Returns:
 
 ### var mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module) or **Null**
 
-The current training mode of the fitness equipment
+健身设备的当前训练模式
 
 Since:
 

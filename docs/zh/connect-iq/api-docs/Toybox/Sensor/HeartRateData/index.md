@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储细粒度心率数据的类。
 
-This class provides granular heart rate data like beat-to-beat intervals. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
+此类提供精细的心率数据，例如逐搏间隔。通常在 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 使用的回调方法中使用。
 
 ## 另见：
 

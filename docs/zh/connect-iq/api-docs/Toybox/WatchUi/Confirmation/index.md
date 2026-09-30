@@ -29,7 +29,7 @@ Confirmation 是一种特殊的 View，用于向用户显示“是/否”问题�
 
 注意：
 
-The look and feel of a confirmation dialog is device-specific.
+确认对话框的外观和交互方式因设备而异。
 
 Example:
 
@@ -81,7 +81,7 @@ Parameters:
 
 - message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The confirmation message to display in the confirmation dialog
+    要在确认对话框中显示的确认消息
 
 
 Since:

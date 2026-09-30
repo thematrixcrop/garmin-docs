@@ -26,11 +26,11 @@ API 级别 2.3.0
 
 - [**sampleCount**](#sampleCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total number of logged samples.
+    记录的样本总数。
 
 - [**samplePeriod**](#samplePeriod-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total number of seconds of logged data.
+    记录数据的总秒数。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -44,7 +44,7 @@ API 级别 2.3.0
 
 ### var sampleCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total number of logged samples
+记录的样本总数
 
 Since:
 
@@ -56,7 +56,7 @@ Returns:
 
 ### var samplePeriod as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total number of seconds of logged data
+记录数据的总秒数
 
 Since:
 

@@ -78,7 +78,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The manufacturer hardware revision
+    制造商硬件修订版本
 
 
 ### var manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -93,7 +93,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The manufacturer ID
+    制造商 ID
 
 
 ### var modelNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -108,7 +108,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The manufacturer model number
+    制造商型号
 
 
 ## 实例方法详情

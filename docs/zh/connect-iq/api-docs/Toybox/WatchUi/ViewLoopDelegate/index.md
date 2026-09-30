@@ -200,7 +200,7 @@ API 级别 3.4.0
 
 表示上一页行为。
 
-This is typically triggered by the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)) or by a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
+通常由向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或触摸屏上的 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
 Returns:
 

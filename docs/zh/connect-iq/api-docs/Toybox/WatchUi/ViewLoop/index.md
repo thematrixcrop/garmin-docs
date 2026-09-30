@@ -198,14 +198,14 @@ Parameters:
 
 - direction — ([ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) —
 
-    The direction in which to change page to
+    要将页面更改到的方向
 
 
 Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if view is changed, otherwise false, e.g. reached the start/end of of non-wrapping loop.
+    如果视图已更改，则为 true，否则为 false，例如到达不可循环的循环起点或终点。
 
 
 Since:
@@ -216,7 +216,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown when the view loop is not an active page for the app.
+    如果视图循环不是应用的活动页面，则抛出。
 
 
 ### **initialize(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)**
@@ -254,8 +254,8 @@ Throws:
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) returns a size less than or equal to 0.
+    如果 [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) 返回的大小小于或等于 0，则会抛出此异常。
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if [Number](/connect-iq/api-docs/Toybox/Lang/Number/) :page option value is negative or greater than the value returned by the [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)
+    如果 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) :page 选项值小于 0 或大于 [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) 返回的值，则会抛出此异常

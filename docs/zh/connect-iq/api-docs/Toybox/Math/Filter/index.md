@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-This is the base class for filters.
+这是筛选器的基类。
 
 过滤器是用于移除信号或数据集中的某些不需要的成分或特征的设备或过程。有关过滤器的更多详细示例，请参阅 [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) 和 [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) 定义。
 
@@ -31,7 +31,7 @@ This is the base class for filters.
 
 Example:
 
-This shows how a filter's method can be used on a set of data
+此项展示了如何对一组数据使用筛选器的方法
 
 ```
 using Toybox.Math;
@@ -125,7 +125,7 @@ Parameters:
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Unused. Preserves argument count for compatibility
+    未使用。为保持兼容性而保留参数计数
 
 
 Since:

@@ -5,9 +5,9 @@ title: "Module: Toybox.PersistedContent"
 
 ## 概述
 
-The PersistedContent module allows access to stored routes, waypoints, and other stored user data.
+PersistedContent 模块允许访问存储的路线、航点和其他存储的用户数据。
 
-This module provides an Iterator class that gives access to content stored on the device. Included content types are as follows:
+此模块提供一个 Iterator 类，用于访问设备上存储的内容。包含的内容类型如下：
 
 - [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/)
 
@@ -1359,7 +1359,7 @@ Returns:
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    The Iterator of [Waypoints](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) from the routes list
+    路线列表中 [Waypoints](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 的 Iterator
 
 
 Since:
@@ -1544,15 +1544,15 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    The Location object to persist
+    要持久化的 Location 对象
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The Dictionary of options, or `null` to accept defaults
+    选项的 Dictionary；或传入 `null` 以接受默认值
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        The name to assign to the waypoint. If not specified the waypoint will be named automatically.
+        要分配给航点的名称。如果未指定，系统将自动为航点命名。
 
 
 Example:

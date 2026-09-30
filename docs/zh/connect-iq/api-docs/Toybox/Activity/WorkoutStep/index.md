@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The WorkoutStep class contains information about the current workout step.
+WorkoutStep 类包含当前 workout 步骤的信息。
 
 Since:
 
@@ -157,7 +157,7 @@ API 级别 3.2.0
 
 - [**durationType**](#durationType-var) as [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module)
 
-    The duration of the workout step.
+    训练步骤的持续时间。
 
 - [**durationValue**](#durationValue-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -165,7 +165,7 @@ API 级别 3.2.0
 
 - [**targetType**](#targetType-var) as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
 
-    The target of the workout step.
+    训练步骤的目标。
 
 - [**targetValueHigh**](#targetValueHigh-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -180,7 +180,7 @@ API 级别 3.2.0
 
 ### var durationType as [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module)
 
-The duration of the workout step
+训练步骤的持续时间
 
 Since:
 
@@ -210,7 +210,7 @@ Returns:
 
 ### var targetType as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
 
-The target of the workout step
+训练步骤的目标
 
 Since:
 

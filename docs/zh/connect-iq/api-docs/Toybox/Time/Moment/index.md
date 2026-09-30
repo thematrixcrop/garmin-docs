@@ -111,13 +111,13 @@ API 级别 1.0.0
 
 将一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 添加到 Moment。
 
-This method functions the same as the [Duration.add()](/connect-iq/api-docs/Toybox/Time/Duration/#add-instance_function) method when adding a Duration to a Moment.
+向 Moment 添加 Duration 时，此方法的功能与 [Duration.add()](/connect-iq/api-docs/Toybox/Time/Duration/#add-instance_function) 方法相同。
 
 Parameters:
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The Duration to add to this Moment
+    要添加到此 Moment 的 Duration
 
 
 Example:
@@ -154,7 +154,7 @@ API 级别 1.0.0
 
 确定一个 Moment 早于还是晚于另一个 Moment。
 
-This computes a Number representing the difference between the two Moment objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function) method can also be used to get the absolute Duration between two Moment objects.
+此方法计算一个 Number，表示两个 Moment 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function) 方法获取两个 Moment 对象之间的绝对 Duration。
 
 Parameters:
 
@@ -181,7 +181,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The Number of seconds difference between the two Moment objects. If the Moment supplied for comparison is after this Moment, the value will be negative.
+    两个 Moment 对象之间相差的秒数。如果用于比较的 Moment 晚于此 Moment，则该值为负数。
 
 
 另见：
@@ -244,7 +244,7 @@ Parameters:
 
 - seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The Number of seconds with which to initialize the Moment
+    用于初始化 Moment 的秒数
 
 
 Example:
@@ -336,7 +336,7 @@ Parameters:
 
 - subtrahend — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The Moment or Duration to subtract from this Moment
+    要从此 Moment 中减去的 Moment 或 Duration
 
 
 Example:
@@ -360,7 +360,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The Duration between the two Moment objects or the Moment offset by a Duration. When subtracting Moments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) method can be used to determine whether one Moment is before or after another Moment.
+    两个 Moment 对象之间的 Duration，或由 Duration 偏移后的 Moment。对 Moment 执行减法时，计算得到的 Duration 始终为正值。可以使用 [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) 方法确定一个 Moment 位于另一个 Moment 之前还是之后。
 
 
 另见：
@@ -382,7 +382,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The UTC date of the Moment in seconds since the UNIX epoch
+    Moment 的 UTC 日期，即自 UNIX 纪元以来的秒数
 
 
 另见：

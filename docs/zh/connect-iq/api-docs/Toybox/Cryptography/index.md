@@ -5,7 +5,7 @@ title: "Module: Toybox.Cryptography"
 
 ## 概述
 
-The Cryptography Module will allow the application to create a [Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/) object that can encrypt and decrypt [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) objects.
+Cryptography 模块允许应用创建可加密和解密 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 对象的 [Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/) 对象。
 
 Since:
 
@@ -194,7 +194,7 @@ Hash 对象的 SHA-1 实现
 | -   [https://en.wikipedia.org/wiki/SHA-1](https://en.wikipedia.org/wiki/SHA-1)
 |
 
-The SHA-1 algorithm has known vulnerabilities and should not be used for security purposes.
+SHA-1 算法存在已知漏洞，不应将其用于安全目的。
 
 |
 | HASH\_SHA256 | 1 |
@@ -218,7 +218,7 @@ Hash 对象的 MD5 实现
 | -   [https://en.wikipedia.org/wiki/MD5](https://en.wikipedia.org/wiki/MD5)
 |
 
-The MD5 algorithm has known vulnerabilities and should not be used for security purposes.
+MD5 算法存在已知漏洞，不应将其用于安全目的。
 
 |
 
@@ -265,7 +265,7 @@ API 级别 3.0.0
 
 电子密码本（ECB）
 
-This is the simplest encryption mode. Each plaintext block is directly encrypted into a ciphertext block, independent of any other block. This mode exposes frequency of symbols in your plaintext. Other modes (e.g. CBC) are recommended.
+这是最简单的加密模式。每个明文块都会直接加密为一个密文块，与其他块无关。此模式会暴露明文中符号的频率。建议使用其他模式（例如 CBC）。
 
 | -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Electronic\_Codebook\_(ECB)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
 |
@@ -359,11 +359,11 @@ Parameters:
 
 - algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
-    The hash algorithm to use as a [KEY\_PAIR\_ELLIPTIC\_CURVE\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) constant
+    要使用的哈希算法，作为 [KEY\_PAIR\_ELLIPTIC\_CURVE\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) 常量
 
 - bytes — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    The public key bytes to be used to generate the [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+    用于生成 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 的公钥字节
 
 
 :::details 支持的设备
@@ -536,7 +536,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the ByteArray provided is not the correct size for the selected algorithm, or the algorithm selected is not supported.
+    如果提供的 ByteArray 对于所选算法大小不正确，或所选算法不受支持，则抛出。
 
 
 ### **randomBytes(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
@@ -547,7 +547,7 @@ Parameters:
 
 - size — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The number of requested random bytes
+    请求的随机字节数
 
 
 Returns:

@@ -288,7 +288,7 @@ Parameters:
 
 - key — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
 
-    The public key to add to the agreement
+    要添加到协议中的公钥
 
 
 Since:
@@ -299,7 +299,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the specified key is not valid for the selected algorithm
+    如果指定的密钥对于所选算法无效，则抛出
 
 
 ### **generateSecret()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
@@ -310,7 +310,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    The secret for the KeyAgreement
+    KeyAgreement 的机密
 
 
 Since:
@@ -329,11 +329,11 @@ Parameters:
 
 - :protocol — ([Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module)) —
 
-        The protocol to use as a [KEY\_AGREEMENT\_\*](/connect-iq/api-docs/Toybox/Cryptography/) value
+        用作 [KEY\_AGREEMENT\_\*](/connect-iq/api-docs/Toybox/Cryptography/) 值的协议
 
 - :privateKey — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
 
-        The private key in the KeyAgreement
+        KeyAgreement 中的私钥
 
 
 Since:
@@ -348,4 +348,4 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the specified private key is not the correct size for the selected algorithm, or if the selected protocol is not supported
+    如果指定的私钥对于所选算法大小不正确，或所选协议不受支持，则抛出

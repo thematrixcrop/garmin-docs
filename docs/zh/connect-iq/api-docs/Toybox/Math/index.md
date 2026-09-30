@@ -5,7 +5,7 @@ title: "Module: Toybox.Math"
 
 ## 概述
 
-The Math Module provides various math methods available for use by Apps.
+Math 模块提供 Apps 可使用的各种数学方法。
 
 Example:
 
@@ -178,7 +178,7 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The cosine value
+    余弦值
 
 
 Returns:
@@ -205,7 +205,7 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The sine value
+    正弦值
 
 
 Returns:
@@ -232,7 +232,7 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The tangent value
+    正切值
 
 
 Returns:
@@ -259,11 +259,11 @@ Parameters:
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The proportion of the y coordinate
+    y 坐标的比例
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The proportion of the x coordinate
+    x 坐标的比例
 
 
 Returns:
@@ -297,7 +297,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The smallest integer greater than or equal to x Return type matches the input parameter type
+    大于或等于 x 的最小整数。返回类型与输入参数类型匹配
 
 
 Since:
@@ -319,7 +319,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The cosine value of x in radians
+    x（弧度）的余弦值
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -346,7 +346,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The largest integer less than or equal to x Return type matches the input parameter type
+    小于或等于 x 的最大整数。返回类型与输入参数类型匹配
 
 
 Since:
@@ -392,7 +392,7 @@ Parameters:
 
 - base — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The base value.
+    基数值。
 
 
 Returns:
@@ -437,7 +437,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the provided data array is empty.
+    如果提供的数据数组为空，则抛出。
 
 
 ### **mode(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>)** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
@@ -455,7 +455,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The most frequently occurring value in data.
+    数据中出现频率最高的值。
 
 
 Since:
@@ -466,7 +466,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if there is no most frequently occurring value or the passed in value array is empty
+    如果不存在出现频率最高的值，或传入的值数组为空，则抛出
 
 
 ### **pow(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
@@ -488,7 +488,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    x to the power of y
+    x 的 y 次方
 
 - 两个输入均为 Number 或 Float 时返回 Float
 
@@ -530,7 +530,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The closest integer to x. Decimal values >= .5 will be rounded up Return type matches the input parameter type
+    最接近 x 的整数。大于或等于 .5 的小数值将向上舍入。返回类型与输入参数类型一致
 
 
 Since:
@@ -552,7 +552,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The sine value of x in radians
+    x 的正弦值，x 以弧度表示
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -572,14 +572,14 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The value for which to get the square root
+    要求平方根的值
 
 
 Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The square root of x, or `NaN` if invalid
+    x 的平方根；如果无效则为 `NaN`
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -603,7 +603,7 @@ Parameters:
 
 - seed — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The value used for seeding rand()
+    用于为 rand() 播种的值
 
 
 Since:
@@ -629,7 +629,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The standard deviation of the samples
+    样本的标准差
 
 
 Since:
@@ -658,7 +658,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The tangent value of x in radians Toybox::Lang::Float if input is Toybox::Lang::Number or Toybox::Lang::Float Toybox::Lang::Double if input is Toybox::Lang::Long or Toybox::Lang::Double
+    x 的正切值，x 以弧度表示。如果输入为 Toybox::Lang::Number 或 Toybox::Lang::Float，则为 Toybox::Lang::Float；如果输入为 Toybox::Lang::Long 或 Toybox::Lang::Double，则为 Toybox::Lang::Double
 
 
 Since:
@@ -740,7 +740,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The variance of the samples
+    样本的方差
 
 
 Since:

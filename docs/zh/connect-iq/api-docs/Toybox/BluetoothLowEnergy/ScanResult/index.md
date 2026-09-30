@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 封装扫描期间发现的广播。无法实例化。
 
-Used as an argument to [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) to add a new device to the System's Paired Devices list
+用作 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) 的参数，将新设备添加到系统的已配对设备列表中
 
 Since:
 
@@ -120,7 +120,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The device name if present or `null` otherwise
+    设备名称（如果存在），否则为 `null`
 
 
 Since:
@@ -137,7 +137,7 @@ Parameters:
 
 - manufacturerId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The manufacturer id to retrieve the manufacturer specific data for.
+    用于检索制造商特定数据的制造商 id。
 
 
 Returns:
@@ -191,7 +191,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    the RSSI Value of the advertisement associated with the scan result. In dBM
+    与扫描结果关联的广播的 RSSI 值。单位为 dBM
 
 
 Since:
@@ -269,7 +269,7 @@ Parameters:
 
 - other — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
 
-    The other scan result to compare
+    要进行比较的另一个扫描结果
 
 
 Returns:

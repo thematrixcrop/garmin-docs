@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Info class contains information about the current activity.
+Info 类包含有关当前活动的信息。
 
 可通过 [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
@@ -247,7 +247,7 @@ Returns:
 
 环境压力，单位为帕斯卡（Pa）。
 
-This returns ambient (local) barometric pressure as measured by the pressure sensor. The data is smoothed by a two-stage filter to reduce noise and instantaneous variation.
+此项返回由压力传感器测量的环境（本地）气压。数据经过两级滤波器平滑处理，以减少噪声和瞬时变化。
 
 Since:
 
@@ -717,7 +717,7 @@ Returns:
 
 当前活动期间的平均速度，单位为米每秒（mps）。
 
-The average is computed as the elapsed 3-D accumulated distance divided by the elapsed time.
+平均值通过已用时段内累积的三维距离除以已用时间计算得出。
 
 Since:
 
@@ -3007,7 +3007,7 @@ Returns:
 
 以帕斯卡 (Pa) 为单位的原始环境气压。
 
-This returns ambient (local) barometric pressure as measured by the internal pressure sensor. The data is the temperature compensated information read directly from the internal sensor.
+此项返回由内部压力传感器测量的环境（本地）气压。数据是直接从内部传感器读取并经过温度补偿的信息。
 
 Since:
 
@@ -3829,7 +3829,7 @@ Returns:
 
 记录计时器状态。
 
-The timer state ranges from 0-3. A value of 0 indicates that the timer is off and there is no active recording, while a value of 3 indicates timer is on and there is an active recording.
+计时器状态范围为 0-3。值为 0 表示计时器已关闭且没有活动记录，值为 3 表示计时器已开启且存在活动记录。
 
 Since:
 
@@ -3882,7 +3882,7 @@ Returns:
 
 当前轨迹，单位为弧度。
 
-Track is the direction of travel in radians based on GPS movement. If supported by the device, this provides compass orientation when stopped.
+Track 是根据 GPS 移动确定的行进方向，单位为弧度。如果设备支持，则在停止时提供罗盘方向。
 
 Since:
 
@@ -3999,7 +3999,7 @@ Returns:
 
 当前活动的 Training Effect 分数。
 
-Training Effect is a score developed by FirstBeat, which indicates an activity's level of effect on aerobic fitness. Scores range from 1.0 (easy) to 5.0 (overreaching).
+训练效果是由 FirstBeat 开发的评分，用于表示活动对有氧健身的影响程度。评分范围为 1.0（轻松）到 5.0（过度训练）。
 
 Since:
 

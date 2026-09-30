@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Sensor.Info class contains all of the information provided by enabled sensors.
+Sensor.Info 类包含启用的传感器提供的所有信息。
 
 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/) 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时检索，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
@@ -295,7 +295,7 @@ Returns:
 
 3. 脚踏传感器
 
-4. Watch-based cadence calculations
+4. 基于手表的步频计算
 
 
 Since:

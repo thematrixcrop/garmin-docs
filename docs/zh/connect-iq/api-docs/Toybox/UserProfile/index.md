@@ -5,9 +5,9 @@ title: "Module: Toybox.UserProfile"
 
 ## 概述
 
-The UserProfile module will allow apps to access user information.
+UserProfile 模块允许应用访问用户信息。
 
-The module contains the GENDER\_\* enum to retrieve gender information from the user profile. The HR\_ZONE\_SPORT\_\* enum also provides constants for defining different sport type. This is used to retrieve Heart Rate Zones specific to that sport.
+该模块包含用于从用户配置文件中检索性别信息的 GENDER\_\* 枚举。HR\_ZONE\_SPORT\_\* 枚举还提供用于定义不同运动类型的常量。该枚举用于检索特定运动的心率区间。
 
 Example:
 
@@ -140,7 +140,7 @@ Returns:
 
 - [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module) —
 
-    The current HR zone sport from the [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) enum.
+    来自 [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) 枚举的当前 HR 区间运动类型。
 
 
 Since:
@@ -155,7 +155,7 @@ Returns:
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
-    The current sport from the [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) enum.
+    来自 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 枚举的当前运动类型。
 
 
 Since:
@@ -170,7 +170,7 @@ Parameters:
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
-    The sport that FTP is being requested from. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
+    请求 FTP 所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
 Example:
@@ -224,7 +224,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The FTP value for the requested sport. If the given sport does not have an FTP value configured, the value from a default sport will be given, or `null` will be returned on error.
+    请求运动项目的 FTP 值。如果指定运动项目未配置 FTP 值，则返回默认运动项目的值；如果发生错误，则返回 `null`。
 
 
 Since:
@@ -300,7 +300,7 @@ Parameters:
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
-    The sport that zones are being requested for. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
+    请求区域所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
 Example:
@@ -407,7 +407,7 @@ Returns:
 
 - [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) —
 
-    The Profile object for the current user
+    当前用户的 Profile 对象
 
 
 Since:

@@ -29,7 +29,7 @@ Method 是表示回调的类，也可以是作为参数传递给另一个函数�
 
 Example:
 
-Using a callback function with a Timer
+将回调函数与计时器配合使用
 
 ```
 using Toybox.Timer;
@@ -148,14 +148,14 @@ Parameters:
 
 - parameters... — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The parameters required by the invoked Method
+    调用的 Method 所需的参数
 
 
 Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    The return value from the invoked Method
+    调用的 Method 的返回值
 
 
 Since:

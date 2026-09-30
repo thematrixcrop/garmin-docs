@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Thrown if the [GenericChannel.initialize()](/connect-iq/api-docs/Toybox/Ant/GenericChannel/#initialize-instance_function) is unable to acquire an ANT channel from the system. This indicates that all available ANT channels are in use.
+如果 [GenericChannel.initialize()](/connect-iq/api-docs/Toybox/Ant/GenericChannel/#initialize-instance_function) 无法从系统获取 ANT 通道，则抛出。这表示所有可用的 ANT 通道都已在使用中。
 
 ## 另见：
 

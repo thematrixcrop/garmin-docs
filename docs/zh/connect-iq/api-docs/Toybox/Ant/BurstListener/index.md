@@ -90,7 +90,7 @@ Parameters:
 
 - burstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
-    The BurstPayload received
+    收到的 BurstPayload
 
 
 另见：

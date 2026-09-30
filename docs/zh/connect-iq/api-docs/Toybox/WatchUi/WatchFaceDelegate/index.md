@@ -81,7 +81,7 @@ Parameters:
 
 - complication — (Complication) —
 
-    The complication field to get the highlight drawable for.
+    要获取高亮可绘制对象的复杂功能字段。
 
 
 :::details 支持的设备
@@ -119,7 +119,7 @@ Returns:
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) —
 
-    The drawable that can be animated for highlighting purposes or `null`. In case of Drawable type, the bounding box is marked by the locX and locY as the top left corner, and the width and height as the size. In case of ComplicationDrawableRef, bounding box or other boundary type must be specified explicitly.
+    可用于高亮显示的 Drawable，或 `null`。对于 Drawable 类型，其边界框的左上角由 locX 和 locY 标记，宽度和高度表示其尺寸。对于 ComplicationDrawableRef，必须显式指定边界框或其他边界类型。
 
 
 另见：
@@ -238,7 +238,7 @@ Parameters:
 
 Returns:
 
-- true if the click event is handled, otherwise false.
+- 如果点击事件已处理，则为 true，否则为 false。
 
 
 Since:
@@ -319,11 +319,11 @@ Parameters:
 
 - :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
 
-        The config id that has changed. This can be passed to [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to retrieve the current settings.
+        已更改的配置 ID。可以将其传递给 [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) 以获取当前设置。
 
 - :type — (Type) —
 
-        The type of config that has changed. if missing or `null`, indicates the end of previous editing.
+        已更改的配置类型。如果缺失或为 `null`，表示之前的编辑已结束。
 
 - :committed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -380,7 +380,7 @@ Parameters:
 
 - complicationIdentifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The unique identifier of complication to set as selected.
+    要设置为选中状态的 complication 唯一标识符。
 
 
 :::details 支持的设备
@@ -427,12 +427,12 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `complicationIdentifier` is a disallowed data type.
+    如果 `complicationIdentifier` 是不允许的数据类型，则会抛出此异常。
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if watch face not in config mode.
+    如果表盘不处于配置模式，则抛出。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if `complicationIdentifier` is not found among valid complication fields.
+    如果在有效 complication 字段中找不到 `complicationIdentifier`，则会抛出此异常。

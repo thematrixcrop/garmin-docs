@@ -34,11 +34,11 @@ API 级别 3.2.0
 
 - [**highTemperature**](#highTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-    The high temperature in Celsius.
+    最高温度，单位为摄氏度。
 
 - [**lowTemperature**](#lowTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-    The low temperature in Celsius.
+    摄氏低温。
 
 - [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -76,7 +76,7 @@ Returns:
 
 ### var highTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-The high temperature in Celsius
+最高温度，单位为摄氏度
 
 Since:
 
@@ -91,7 +91,7 @@ Returns:
 
 ### var lowTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
-The low temperature in Celsius
+摄氏低温
 
 Since:
 

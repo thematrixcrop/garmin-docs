@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 的迭代器。
 
-The BurstPayloadIterator is used to iterate over the BurstPayload and and access each data packet.
+BurstPayloadIterator 用于遍历 BurstPayload 并访问每个数据包。
 
 Example:
 
@@ -74,7 +74,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    The Array of integers representing the bytes of the [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/), or `null` if one does not exist.
+    表示 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 字节的整数数组；如果不存在，则为 `null`。
 
 
 Since:

@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 NumberPicker 是一种特殊的 View，用于在应用中指定数值。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 NumberPicker，并将 [NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/) 作为输入委托。
 
-The NumberPicker class is limited to the eight specific modes described by the [WatchUi.NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) types enum. There are set minimum and maximum values enforced by the product for each mode, and the initial value of the NumberPicker will be adjusted to fall within these bounds.
+NumberPicker 类仅限于 [WatchUi.NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) types 枚举所描述的八种特定模式。产品会为每种模式强制设置最小值和最大值，并调整 NumberPicker 的初始值，使其处于这些边界范围内。
 
 **此项已弃用**
 
@@ -33,7 +33,7 @@ The NumberPicker class is limited to the eight specific modes described by the [
 
 注意：
 
-The look and feel of a number picker is device-specific.
+数字选择器的外观和交互方式因设备而异。
 
 Example:
 
@@ -154,7 +154,7 @@ Parameters:
 
 - initialValue — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The initial value for the NumberPicker, dependent on the specified mode
+    NumberPicker 的初始值，取决于指定的模式
 
 
 Since:

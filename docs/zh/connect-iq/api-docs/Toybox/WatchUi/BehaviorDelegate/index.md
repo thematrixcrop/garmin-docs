@@ -147,7 +147,7 @@ API 级别 5.1.1
 
 表示 *Back* 行为。
 
-This is typically triggered by the back button ([KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const)).
+通常由返回按钮（[KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const)）触发。
 
 注意：
 
@@ -168,7 +168,7 @@ API 级别 1.0.0
 
 表示 *Menu* 行为。
 
-This is typically triggered by the menu button ([KEY\_MENU](/connect-iq/api-docs/Toybox/WatchUi/#KEY_MENU-const)).
+通常由菜单按钮（[KEY\_MENU](/connect-iq/api-docs/Toybox/WatchUi/#KEY_MENU-const)）触发。
 
 Returns:
 
@@ -232,7 +232,7 @@ API 级别 1.0.0
 
 表示 *Previous* *Page* 行为。
 
-This is typically triggered by the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const))) or by a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
+通常由向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或触摸屏上的 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
 Returns:
 
@@ -249,7 +249,7 @@ API 级别 1.0.0
 
 表示 *Selection* 行为。
 
-This is typically triggered by the Start/Enter button ([KEY\_ENTER](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ENTER-const)) or by a [CLICK\_TYPE\_TAP](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/) on a touch screen.
+通常由开始/确认按钮（[KEY\_ENTER](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ENTER-const)）或触摸屏上的 [CLICK\_TYPE\_TAP](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/) 触发。
 
 Returns:
 

@@ -172,7 +172,7 @@ API 级别 1.2.2
 
 - [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    The time of the heart rate sample.
+    心率样本的时间。
 
 
 ## 实例属性详情
@@ -193,7 +193,7 @@ Returns:
 
 ### var when as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-The time of the heart rate sample
+心率样本的时间
 
 Since:
 

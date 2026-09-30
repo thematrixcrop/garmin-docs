@@ -18,7 +18,7 @@ Toybox.WatchUi.Layer
 
 ## 概述
 
-The class that represents an Animation layer
+表示 Animation 图层的类
 
 Since:
 
@@ -233,11 +233,11 @@ Parameters:
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The initial absolute, on-screen x-coordinate for the Animation object (optional defaults to 0)
+        Animation 对象在屏幕上的初始绝对 x 坐标（可选，默认为 0）
 
 - :locY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The initial absolute, on-screen y-coordinate for the Animation object (optional defaults to 0)
+        Animation 对象在屏幕上的初始绝对 y 坐标（可选，默认为 0）
 
 - :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -256,14 +256,14 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `rez` is not an animation resource or ResourceId
+    如果 `rez` 不是动画资源或 ResourceId，则抛出
 
 
 ### **play(options as { :delegate as [WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/) } or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 播放动画；动画必须先添加到 View 中且不能从 View 中移除，然后才能播放。
 
-This will stop the existing playback first.
+此项将先停止现有播放。
 
 Parameters:
 

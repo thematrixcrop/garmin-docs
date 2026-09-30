@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 定义音调模式。
 
-Tones have two characteristics: frequency and duration. These characteristics are used to define a single ToneProfile object, which can then be passed with a collection of other ToneProfile objects in an Array to the playTone() method. The playTone() method will play through each of the ToneProfile objects within the Array in order.
+音调具有两个特征：频率和持续时间。这些特征用于定义单个 ToneProfile 对象，然后可将其与其他 ToneProfile 对象集合放入数组，并传递给 playTone() 方法。playTone() 方法将按顺序播放数组中的每个 ToneProfile 对象。
 
 Example:
 
@@ -223,11 +223,11 @@ Parameters:
 
 - aFrequency — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The frequency of the tone in hertz (hz)
+    音调频率，单位为赫兹 (hz)
 
 - aDuration — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The duration of the tone in milliseconds (ms)
+    音调持续时间，单位为毫秒 (ms)
 
 
 Since:

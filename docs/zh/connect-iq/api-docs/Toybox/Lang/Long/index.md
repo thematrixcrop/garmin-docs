@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Long 表示有符号的 64 位整数。
 
-To use a Long value in Monkey C add 'l' to the end of the number.
+要在 Monkey C 中使用 Long 值，请在数字末尾添加 'l'。
 
 Example:
 

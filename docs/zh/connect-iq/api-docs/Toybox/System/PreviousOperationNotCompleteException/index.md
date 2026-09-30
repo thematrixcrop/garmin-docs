@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that a call cannot be executed because a prior operation has not completed.
+此异常表示无法执行调用，因为之前的操作尚未完成。
 
 ## 另见：
 

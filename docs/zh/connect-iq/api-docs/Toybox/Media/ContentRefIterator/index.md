@@ -39,7 +39,7 @@ Returns:
 
 - [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) —
 
-    The next ContentRef object, or `null` if no more exist
+    下一个 ContentRef 对象；如果不存在更多对象，则为 `null`
 
 
 Since:

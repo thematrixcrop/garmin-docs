@@ -5,9 +5,9 @@ title: "Module: Toybox.Media"
 
 ## 概述
 
-The Media module provides objects and methods for implementing audio content provider apps.
+Media 模块提供用于实现音频内容提供商应用的对象和方法。
 
-This includes interfaces and methods for managing downloaded media content as well as interfaces used to provide required information to the system for playback.
+其中包括用于管理已下载媒体内容的接口，以及用于向系统提供播放所需信息的接口。
 
 Since:
 
@@ -139,7 +139,7 @@ API 级别 3.0.0
 
 |
 
-The playback position when the song has begun to play
+歌曲开始播放时的播放位置
 
 |
 
@@ -218,7 +218,7 @@ API 级别 3.0.0
 
 |
 
-WAV audio encoding type
+WAV 音频编码类型
 
 |
 
@@ -324,7 +324,7 @@ API 级别 3.0.3
 
 |
 
-The track "rating" operation is allowed
+允许执行轨迹“评分”操作
 
 |
 | PLAYBACK\_CONTROL\_PLAYBACK | 10 |
@@ -520,7 +520,7 @@ API 级别 3.0.3
 
 |
 
-The default state for a button. This is a valid state for all buttons.
+按钮的默认状态。这是所有按钮的有效状态。
 
 |
 | BUTTON\_STATE\_DISABLED | 1 |
@@ -529,7 +529,7 @@ API 级别 3.0.3
 
 |
 
-The button is shown but not selectable. This is a valid state for all buttons.
+按钮会显示，但不可选择。这是所有按钮的有效状态。
 
 |
 | BUTTON\_STATE\_ON | 2 |
@@ -538,7 +538,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered "on". This is a valid state for the PLAYBACK\_CONTROL\_PLAYBACK, PLAYBACK\_CONTROL\_SHUFFLE, and PLAYBACK\_CONTROL\_REPEAT buttons.
+按钮被视为“开启”状态。这是 PLAYBACK\_CONTROL\_PLAYBACK、PLAYBACK\_CONTROL\_SHUFFLE 和 PLAYBACK\_CONTROL\_REPEAT 按钮的有效状态。
 
 |
 | BUTTON\_STATE\_OFF | 3 |
@@ -547,7 +547,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered "off". This is a valid state for the PLAYBACK\_CONTROL\_PLAYBACK, PLAYBACK\_CONTROL\_SHUFFLE, and PLAYBACK\_CONTROL\_REPEAT buttons.
+按钮被视为“关闭”状态。这是 PLAYBACK\_CONTROL\_PLAYBACK、PLAYBACK\_CONTROL\_SHUFFLE 和 PLAYBACK\_CONTROL\_REPEAT 按钮的有效状态。
 
 |
 | BUTTON\_STATE\_ALL | 4 |
@@ -556,7 +556,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered in the "on" and "all" states. This is a valid state the for the PLAYBACK\_CONTROL\_SHUFFLE (shuffle all) and PLAYBACK\_CONTROL\_REPEAT (repeat all) buttons.
+按钮被视为“开启”和“全部”状态。这是 PLAYBACK\_CONTROL\_SHUFFLE（全部随机播放）和 PLAYBACK\_CONTROL\_REPEAT（全部重复播放）按钮的有效状态。
 
 |
 | BUTTON\_STATE\_POSITIVE | 5 |
@@ -565,7 +565,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered in the "positive" state. This is a valid state the for the PLAYBACK\_CONTROL\_RATING button.
+按钮被视为“正面”状态。这是 PLAYBACK\_CONTROL\_RATING 按钮的有效状态。
 
 |
 | BUTTON\_STATE\_NEGATIVE | 6 |
@@ -574,7 +574,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered in the "negative" state. This is a valid state the for the PLAYBACK\_CONTROL\_RATING button.
+按钮被视为“负面”状态。这是 PLAYBACK\_CONTROL\_RATING 按钮的有效状态。
 
 |
 | BUTTON\_STATE\_NEUTRAL | 7 |
@@ -583,7 +583,7 @@ API 级别 3.0.3
 
 |
 
-The button is considered in the "neutral" state. This is a valid state the for the PLAYBACK\_CONTROL\_RATING button.
+按钮被视为“中性”状态。这是 PLAYBACK\_CONTROL\_RATING 按钮的有效状态。
 
 |
 
@@ -600,7 +600,7 @@ API 级别 3.0.3
 
 |
 
-The normal sized button image
+正常尺寸的按钮图像
 
 |
 | BUTTON\_IMAGE\_DETAIL | 1 |
@@ -609,7 +609,7 @@ API 级别 3.0.3
 
 |
 
-The larger image for when the icon is highlighted
+图标高亮时使用的较大图像
 
 |
 
@@ -674,7 +674,7 @@ Parameters:
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
-    The ContentRef for the [Content](/connect-iq/api-docs/Toybox/Media/Content/) object to be deleted
+    要删除的 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象的 ContentRef
 
 
 Since:
@@ -689,7 +689,7 @@ Returns:
 
 - [Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/) —
 
-    The current CacheStatistics object
+    当前 CacheStatistics 对象
 
 
 Since:
@@ -704,14 +704,14 @@ Parameters:
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
-    The ContentRef object for the desired media [Content](/connect-iq/api-docs/Toybox/Media/Content/)
+    所需媒体 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 的 ContentRef 对象
 
 
 Returns:
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
-    The desired Content object
+    所需的 Content 对象
 
 
 Since:
@@ -722,18 +722,18 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if contentRef parameter is not a valid [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) object Thrown if ID field of provided [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) object is not a string but content type is set to CONTENT\_TYPE\_AUDIO
+    如果 contentRef 参数不是有效的 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象，则会抛出此异常；如果内容类型设置为 CONTENT\_TYPE\_AUDIO，且所提供 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID 字段不是字符串，则会抛出此异常
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if provided [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) has an invalid content type
+    如果提供的 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 具有无效的内容类型，则抛出
 
 
 ### **getContentRefIter(options as { :contentType as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module), :shuffle as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/)
 
 获取 [ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) 对象。
 
-The ContentRefIterator is used to iterate over all cached media on the system for the calling app.
+ContentRefIterator 用于遍历调用应用在系统上缓存的所有媒体。
 
 Parameters:
 
@@ -747,9 +747,9 @@ Parameters:
 
 - :shuffle — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-- When `true`, the [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) objects will be returned in a random order
+- 当为 `true` 时，将以随机顺序返回 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象
 
-- When `false`, the [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) objects will be returned in a consistent order that is system dependent
+- 当为 `false` 时，将以系统决定的一致顺序返回 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象
 
 
 
@@ -765,7 +765,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if :contentType value is invalid
+    如果 :contentType 值无效，则会抛出此异常
 
 
 ### **notifySyncComplete(errorMessage as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)** as **Void**
@@ -870,7 +870,7 @@ Throws:
 
 - ([Lang.SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/)) —
 
-    Thrown when the given argument cannot be serialized or is too large for serialization.
+    如果给定参数无法序列化，或对于序列化来说过大，则抛出。
 
 
 ### **startSync()** as **Void**

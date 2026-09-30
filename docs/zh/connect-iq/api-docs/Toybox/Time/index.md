@@ -5,9 +5,9 @@ title: "Module: Toybox.Time"
 
 ## 概述
 
-The Time module provides functionality for dealing with times and dates.
+Time 模块提供处理时间和日期的功能。
 
-There are two main concepts used by Monkey C when working with time: the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations can be used together for time calculations in the following ways:
+Monkey C 处理时间时使用两个主要概念：[Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 和 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)。Moment 是时间中的单个点，而 Duration 是一段时间。Moment 和 Duration 可以通过以下方式结合使用进行时间计算：
 
 ```
   Expression           Method               Result    Notes
@@ -145,7 +145,7 @@ API 级别 3.0.10
 
 |
 
-The default system clock, which may be user-modified.
+默认系统时钟，用户可能已对其进行修改。
 
 |
 | CURRENT\_TIME\_GPS | 1 |
@@ -154,7 +154,7 @@ API 级别 3.0.10
 
 |
 
-The clock time based on your current GPS location if a GPS signal is available.
+如果 GPS 信号可用，则根据您当前 GPS 位置确定的时钟时间。
 
 |
 | CURRENT\_TIME\_RTC | 2 |
@@ -223,7 +223,7 @@ Throws:
 
 Example:
 
-Using now() on December 31, 1989 at 5:00 pm CST
+在 1989 年 12 月 31 日下午 5:00 CST 使用 now()
 
 ```
 using Toybox.Time;
@@ -254,7 +254,7 @@ API 级别 1.0.0
 
 Example:
 
-Using today() on December 31, 1989 at 5:00 pm CST
+在 1989 年 12 月 31 日下午 5:00 CST 使用 today()
 
 ```
 using Toybox.Time;

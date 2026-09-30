@@ -5,13 +5,13 @@ title: "Module: Toybox.Sensor"
 
 ## 概述
 
-The Sensor module provides access to sensor data.
+Sensor 模块提供对传感器数据的访问。
 
 Sensor 允许应用注册以接收当前传感器数据的更新。它还允许应用控制设备原生支持的 ANT+ 传感器，这些传感器由提供的 SENSOR\_\* 常量描述。
 
 Example:
 
-Using heart rate sensors to display current heart rate
+使用心率传感器显示当前心率
 
 ```
 using Toybox.Sensor;
@@ -301,7 +301,7 @@ API 级别 3.2.0
 
 ### SensorTechnology
 
-The sensor technology
+传感器技术
 
 描述用于与传感器通信的技术。
 
@@ -456,7 +456,7 @@ Parameters:
 
 - 接收一个 Sensor.info 对象
 
-- Use `null` to specify no listener
+- 使用 `null` 指定无监听器
 
 
 
@@ -501,7 +501,7 @@ API 级别 3.2.0
 
 获取当前传感器 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)。
 
-This is useful for retrieving the current sensor info either on demand or periodically within a [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/).
+这对于在 [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/) 中按需或定期检索当前传感器信息很有用。
 
 注意：
 
@@ -726,7 +726,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The max sample rate as a number
+    最大采样率，类型为数字
 
 
 Since:
@@ -866,7 +866,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The max sample rate as a Number
+    最大采样率，类型为 Number
 
 
 Since:
@@ -877,7 +877,7 @@ API 级别 3.4.5
 
 获取当前已注册的传感器。
 
-This function returns an iterator for the sensors that are considered to be \`registered\` if pairing information has been provided for it in Sensor settings.
+如果已在传感器设置中为传感器提供配对信息，此函数将返回被视为 \`registered\` 的传感器的迭代器。
 
 Parameters:
 
@@ -1366,7 +1366,7 @@ API 级别 5.1.0
 
 注册一个回调，用于从各种传感器获取高频数据。
 
-The callback will get invoked each time a new set of sensor data over the length of time specified in the period option is available.
+每当经过 period 选项指定的时长后有一组新的传感器数据可用时，都会调用回调。
 
 注意：
 
@@ -1648,7 +1648,7 @@ Throws:
 
 启用传感器以供使用。
 
-This will enable both connected ANT+ sensors and system sensors if possible.
+如果可能，此项将启用已连接的 ANT+ 传感器和系统传感器。
 
 注意：
 
@@ -1662,7 +1662,7 @@ Parameters:
 
 - sensors — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The sensors to enable:
+    要启用的传感器：
 
 - 要启用的 SENSOR\_\* 类型数组
 

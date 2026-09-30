@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-The SplitInfo class contains information about the current split
+SplitInfo 类包含有关当前分段的信息
 
-This information is provided via the data field onTimerSplit API.
+此信息通过 onTimerSplit API 的数据字段提供。
 
 Since:
 
@@ -284,11 +284,11 @@ API 级别 5.2.2
 
 - [**splitType**](#splitType-var) as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
 
-    Type of split.
+    分段类型。
 
 - [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Timer time for split in milliseconds.
+    计时器分段时间，单位为毫秒。
 
 - [**totalAscent**](#totalAscent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -355,7 +355,7 @@ Returns:
 
 ### var splitType as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
 
-Type of split
+分段类型
 
 Since:
 
@@ -368,7 +368,7 @@ Returns:
 
 ### var timerTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Timer time for split in milliseconds
+计时器分段时间，单位为毫秒
 
 Since:
 
@@ -376,7 +376,7 @@ API 级别 5.2.2
 
 Returns:
 
-- Timer time in milliseconds
+- 计时器时间，单位为毫秒
 
 
 ### var totalAscent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**

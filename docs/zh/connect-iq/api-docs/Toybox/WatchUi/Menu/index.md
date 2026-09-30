@@ -31,7 +31,7 @@ Menu 是一种特殊的 View，用于向用户显示选项列表。选择选项�
 
 注意：
 
-The look and feel of a menu is device-specific.
+菜单的外观和交互方式因设备而异。
 
 Example:
 
@@ -88,7 +88,7 @@ API 级别 1.0.0
 
 |
 
-The maximum number of allowed entries in a Menu.
+Menu 中允许的最大条目数。
 
 |
 
@@ -113,7 +113,7 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The item text as a String or string ResourceId
+    项目文本，可以是 String 或字符串 ResourceId
 
 - identifier — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
@@ -132,7 +132,7 @@ Parameters:
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The title text or a string ResourceId
+    标题文本或字符串 ResourceId
 
 
 Since:

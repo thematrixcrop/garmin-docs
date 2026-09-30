@@ -236,7 +236,7 @@ Parameters:
 
 - :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-        The secret key used by selected cipher algorithm, which must be the appropriate length for chosen encryption type (required)
+        所选密码算法使用的密钥，其长度必须适合所选的加密类型（必需）
 
 
 Since:

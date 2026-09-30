@@ -76,7 +76,7 @@ API 级别 1.0.0
 
 已进行确认选择。
 
-This method is called when a [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) response is selected, and receives the response as an argument. The response is either a [CONFIRM\_NO](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) or [CONFIRM\_YES](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_YES-const) value.
+选择 [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 响应时会调用此方法，并将该响应作为参数接收。响应为 [CONFIRM\_NO](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) 或 [CONFIRM\_YES](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_YES-const) 值。
 
 Parameters:
 

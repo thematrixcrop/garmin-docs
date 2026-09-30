@@ -40,7 +40,7 @@ System.exitTo(targetApp);
 
 Example:
 
-Valid Intent URI formats
+有效的 Intent URI 格式
 
 ```
 manifest-id://[manifest ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
@@ -101,7 +101,7 @@ Parameters:
 
 - aURI — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URI that specifies receiver of the Intent
+    指定 Intent 接收方的 URI
 
 - aArgs — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

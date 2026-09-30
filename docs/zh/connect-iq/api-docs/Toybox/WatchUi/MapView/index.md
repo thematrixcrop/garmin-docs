@@ -20,7 +20,7 @@ Toybox.WatchUi.View
 
 一个用于在屏幕上渲染地图的 [View](/connect-iq/api-docs/Toybox/WatchUi/View/)。
 
-The map is rendered statically and focused on the bounding box and/or a MapMarker point or MapPolyline drawn on the map. The map can be rendered in [MAP\_MODE\_BROWSE](/connect-iq/api-docs/Toybox/WatchUi/) or [MAP\_MODE\_PREVIEW](/connect-iq/api-docs/Toybox/WatchUi/) mode.
+地图以静态方式渲染，并聚焦于边界框和/或地图上绘制的 MapMarker 点或 MapPolyline。地图可以在 [MAP\_MODE\_BROWSE](/connect-iq/api-docs/Toybox/WatchUi/) 或 [MAP\_MODE\_PREVIEW](/connect-iq/api-docs/Toybox/WatchUi/) 模式下渲染。
 
 Since:
 
@@ -190,7 +190,7 @@ Returns:
 
 - [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module) —
 
-    The mode in which the map is rendered on the screen as a [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) enum value
+    地图在屏幕上渲染时所使用的模式，类型为 [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值
 
 
 Since:
@@ -224,7 +224,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the `markers` param is not a valid MapMarker object or an Array of MapMarker objects
+    如果 `markers` 参数不是有效的 MapMarker 对象或 MapMarker 对象数组，则抛出
 
 
 ### **setMapMode(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module))** as **Void**
@@ -235,7 +235,7 @@ Parameters:
 
 - mode — ([WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) —
 
-    The mode in which the map will be rendered on the screen as a [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) enum value
+    地图将在屏幕上渲染时所使用的模式，类型为 [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值
 
 
 Since:
@@ -250,11 +250,11 @@ Parameters:
 
 - topLeft — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    The top left point of the visible area of the map
+    地图可见区域的左上角点
 
 - bottomRight — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    The bottom right point of the visible area of the map
+    地图可见区域的右下角点
 
 
 另见：
@@ -270,7 +270,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `topLeft` or `bottomRight` are not a Location objects
+    如果 `topLeft` 或 `bottomRight` 不是 Location 对象，则会抛出此异常
 
 
 ### **setPolyline(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/))** as **Void**
@@ -281,7 +281,7 @@ Parameters:
 
 - polyline — ([WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) —
 
-    The polyline to be rendered on the map
+    要在地图上渲染的折线
 
 
 Since:
@@ -292,7 +292,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if `polyline` is is not a valid MapPolyline object
+    如果 `polyline` 不是有效的 MapPolyline 对象，则会抛出此异常
 
 
 ### **setScreenVisibleArea(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -331,4 +331,4 @@ Throws:
 
 - ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 
-    Thrown if `topLeftX`, `topLeftY`, `bottomRightX`, or `bottomRightY` are outside the bounds of the device screen
+    如果 `topLeftX`、`topLeftY`、`bottomRightX` 或 `bottomRightY` 超出设备屏幕范围，则会抛出此异常

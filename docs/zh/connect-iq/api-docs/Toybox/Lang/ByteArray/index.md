@@ -83,13 +83,13 @@ API 级别 3.0.0
 
 将一个字节添加到 ByteArray 的末尾。
 
-When adding a byte, the ByteArray size is increased and new bytes are inserted at the end.
+添加字节时，ByteArray 大小会增加，新字节会插入到末尾。
 
 Parameters:
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
-    The Number or Char byte to be added
+    要添加的 Number 或 Char 字节
 
 
 Returns:
@@ -111,20 +111,20 @@ Throws:
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
-    Thrown if a [Number](/connect-iq/api-docs/Toybox/Lang/Number/) greater than 255 or less than -128 is provided, or if a [Char](/connect-iq/api-docs/Toybox/Lang/Char/) with a code point greater than 127 is provided. Negative numbers added are interpreted as the positive 8-bit unsigned equivalent once added to the ByteArray.
+    如果提供的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 大于 255 或小于 -128，或者提供的 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 的代码点大于 127，则会抛出此异常。添加到 ByteArray 的负数在添加后会被解释为正的 8 位无符号等效值。
 
 
 ### **addAll(array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
 将一个 ByteArray 或字节的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到 ByteArray 的末尾。
 
-When adding an array of bytes, the ByteArray is expanded by the size of the provided ByteArray or Array, and all of the new elements are inserted starting at the new index.
+添加字节数组时，ByteArray 会按所提供的 ByteArray 或 Array 的大小扩展，所有新元素都会从新索引开始插入。
 
 Parameters:
 
 - array — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The ByteArray or Array of bytes to be added to the ByteArray
+    要添加到 ByteArray 的 ByteArray 或字节数组
 
 
 Returns:
@@ -142,7 +142,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if a type other than ByteArray or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of bytes is provided
+    如果提供的类型既不是 ByteArray，也不是字节的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，则会抛出此异常
 
 
 ### **decodeNumber(format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) })** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
@@ -194,7 +194,7 @@ Parameters:
 
 - value — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to encode
+    要编码的值
 
 - format — ([Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module)) —
 
@@ -264,7 +264,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The hash code for the ByteArray
+    ByteArray 的哈希代码
 
 
 Since:
@@ -279,14 +279,14 @@ Parameters:
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
-    The byte whose index is to be found
+    要查找索引的字节
 
 
 Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The index of the first instance of the provided byte in the ByteArray. If the byte is not found, -1 is returned.
+    ByteArray 中所提供字节第一次出现的索引。如果未找到该字节，则返回 -1。
 
 
 Since:
@@ -401,7 +401,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of elements in the ByteArray.
+    ByteArray 中的元素数。
 
 
 Since:
@@ -438,7 +438,7 @@ API 级别 3.0.0
 
 将 ByteArray 转换为 String。
 
-This does not convert the elements of the ByteArray into Strings, but transforms the entire ByteArray into a String.
+此方法不会将 ByteArray 的元素转换为 Strings，而是将整个 ByteArray 转换为 String。
 
 Returns:
 

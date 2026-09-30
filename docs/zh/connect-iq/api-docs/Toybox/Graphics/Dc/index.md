@@ -16,13 +16,13 @@ Toybox.Lang.Object
 
 ## 概述
 
-This class represents a device context.
+此类表示设备上下文。
 
 它提供了在设备上执行绘图操作的方法。
 
 注意：
 
-You should never directly instantiate a Dc object, or attempt to render to the screen outside of an onUpdate call.
+不应直接实例化 Dc 对象，也不应在 onUpdate 调用之外尝试向屏幕进行渲染。
 
 Example:
 
@@ -357,15 +357,15 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the arc center
+    弧中心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the arc center
+    弧中心的 y 位置
 
 - r — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the arc
+    弧的半径
 
 - attr — ([Graphics.ArcDirection](/connect-iq/api-docs/Toybox/Graphics/#ArcDirection-module)) —
 
@@ -373,11 +373,11 @@ Parameters:
 
 - degreeStart — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The start angle of the arc by degrees.
+    弧的起始角度，单位为度。
 
 - degreeEnd — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The end angle of the arc by degrees.
+    弧线的结束角度，单位为度。
 
 
 Since:
@@ -404,7 +404,7 @@ Parameters:
 
 - bitmap — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)) —
 
-    The object to draw. The source color palette must be a subset of the destination color palette.
+    要绘制的对象。源颜色调色板必须是目标颜色调色板的子集。
 
 
 Since:
@@ -442,23 +442,23 @@ Parameters:
 
 - :bitmapX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The x coordinate of the top left corner of the source bitmap area. Default is 0
+        源位图区域左上角的 x 坐标。默认为 0
 
 - :bitmapY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The y coordinate of the top left corner of the source bitmap area. Default is 0
+        源位图区域左上角的 y 坐标。默认为 0
 
 - :bitmapWidth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The width of the source bitmap area. Default is `bitmap.getWidth()`
+        源位图区域的宽度。默认为 `bitmap.getWidth()`
 
 - :bitmapHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The height of the source bitmap area. Default is `bitmap.getHeight()`
+        源位图区域的高度。默认为 `bitmap.getHeight()`
 
 - :tintColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        Tint color to apply to the output If not provided, no tint is applied.
+        应用于输出的色调颜色。如果未提供，则不应用色调。
 
 - :filterMode — ([Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module)) —
 
@@ -466,7 +466,7 @@ Parameters:
 
 - :transform — ([Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)) —
 
-        Transformation to apply to the source image when drawing it to the output. If not provided, no transform is applied.
+        将源图像绘制到输出时应用的变换。如果未提供，则不应用变换。
 
 
 :::details 支持的设备
@@ -620,19 +620,19 @@ Parameters:
 
 - x1 — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The first x coordinate
+    第一个 x 坐标
 
 - y1 — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The first y coordinate
+    第一个 y 坐标
 
 - x2 — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The second x coordinate
+    第二个 x 坐标
 
 - y2 — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The second y coordinate
+    第二个 y 坐标
 
 
 Since:
@@ -655,19 +655,19 @@ Parameters:
 
 - bitmapX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The x offset of the upper left corner of pixels to copy from the bitmap.
+    要从位图复制的像素左上角的 x 偏移量。
 
 - bitmapY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The y offset of the upper left corner of pixels to copy from the bitmap.
+    要从位图复制的像素左上角的 y 偏移量。
 
 - bitmapWidth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The width of the area to copy pixels from the bitmap.
+    要从位图复制像素的区域宽度。
 
 - bitmapHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The height of the area to copy pixels from the bitmap
+    从位图复制像素的区域高度
 
 - bitmap — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -753,11 +753,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the point
+    点的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the point
+    点的 y 位置
 
 
 Since:
@@ -774,11 +774,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the center of circle for radial text
+    径向文本圆心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the center of circle for radial text
+    径向文本圆心的 y 位置
 
 - font — ([Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)) —
 
@@ -920,7 +920,7 @@ Parameters:
 
 - radius — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the rounding.
+    圆角半径。
 
 
 Since:
@@ -943,11 +943,11 @@ Parameters:
 
 - width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The width of the bitmap drawn on the destination surface
+    在目标表面上绘制的位图宽度
 
 - height — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The height of the bitmap drawn on the destination surface
+    在目标表面上绘制的位图高度
 
 - bitmap — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -1029,7 +1029,7 @@ Throws:
 
 在给定位置绘制文本。
 
-This method is not supported for anti-aliased fonts (including most built in fonts) for a [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) that has a palette.
+对于具有调色板的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)，此方法不支持抗锯齿字体（包括大多数内置字体）。
 
 注意：
 
@@ -1047,11 +1047,11 @@ Parameters:
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-    The font to use. This can be a custom font loaded from resources or a Graphics.FONT\_\* value.
+    要使用的字体。可以是从资源加载的自定义字体，也可以是 Graphics.FONT\_\* 值。
 
 - text — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to render.
+    要渲染的 Object。
 
 - justification —
 
@@ -1066,7 +1066,7 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if an anti-aliased font is used on a paletted bitmap
+    如果在调色板位图上使用抗锯齿字体，则会抛出此异常
 
 
 ### **fillCircle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
@@ -1185,7 +1185,7 @@ Parameters:
 
 - radius — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the rounding
+    圆角半径
 
 
 Since:
@@ -1200,14 +1200,14 @@ Parameters:
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-    The font to measure
+    要测量的字体
 
 
 Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The height of the font in pixels
+    字体高度，单位为像素
 
 
 Since:
@@ -1222,7 +1222,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The height of display in pixels
+    显示屏高度，单位为像素
 
 
 Since:
@@ -1233,13 +1233,13 @@ API 级别 1.0.0
 
 获取 String 的宽度和高度。
 
-This takes new lines into account when determining the height. The width is the maximum width for a given line of the String. If a String has two newline characters (\\\\n) in it, the height would be for three lines and the width would be the width of the longest String.
+确定高度时会考虑换行符。宽度是 String 中某一行的最大宽度。如果 String 中包含两个换行符（\\\\n），高度将按三行计算，宽度将取最长 String 的宽度。
 
 Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The text to get the width for
+    要获取宽度的文本
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
@@ -1265,7 +1265,7 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The text to get width for
+    要获取宽度的文本
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
@@ -1276,7 +1276,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The width of String in pixels
+    String 的宽度，单位为像素
 
 
 Since:
@@ -1291,7 +1291,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The width of display in pixels
+    显示屏宽度，单位为像素
 
 
 Since:
@@ -1444,7 +1444,7 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if antialiasing is enabled for a paletted bitmap.
+    如果为调色板位图启用了抗锯齿，则会抛出此异常。
 
 
 ### **setBlendMode(mode as [Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module))** as **Void**
@@ -1536,19 +1536,19 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x coordinate of the top left corner of the clipping region
+    裁剪区域左上角的 x 坐标
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y coordinate of the top left corner of the clipping region
+    裁剪区域左上角的 y 坐标
 
 - width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The width of the clipping region in pixels.
+    裁剪区域的宽度，单位为像素。
 
 - height — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The height of the clipping region in pixels.
+    裁剪区域的高度，单位为像素。
 
 
 Since:
@@ -1580,7 +1580,7 @@ API 级别 1.0.0
 
 注意：
 
-this function takes precedence over setColor(). If fill tool is not set, the foreground color will be used.
+此函数的优先级高于 setColor()。如果未设置填充工具，将使用前景色。
 
 Parameters:
 
@@ -1661,7 +1661,7 @@ Parameters:
 
 - width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The pen width in pixels
+    画笔宽度，单位为像素
 
 
 Since:
@@ -1674,7 +1674,7 @@ API 级别 1.0.0
 
 注意：
 
-this function takes precedence over setColor(). If draw tool is not set, the foreground color will be used.
+此函数的优先级高于 setColor()。如果未设置绘制工具，将使用前景色。
 
 Parameters:
 

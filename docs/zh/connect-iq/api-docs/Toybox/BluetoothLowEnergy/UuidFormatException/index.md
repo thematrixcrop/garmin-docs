@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that the provided initializer for the Uuid was not valid
+此异常表示为 Uuid 提供的初始化器无效。
 
 ## 另见：
 

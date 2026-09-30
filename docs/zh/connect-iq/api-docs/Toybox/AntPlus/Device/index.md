@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Device object represents an ANT+ Device instance.
+Device 对象表示一个 ANT+ Device 实例。
 
 Since:
 
@@ -67,7 +67,7 @@ Parameters:
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The component identifier to retrieve battery status for
+    要获取电池状态的组件标识符
 
 - 单分量时返回 `null`
 
@@ -96,7 +96,7 @@ Returns:
 
 - [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/) —
 
-    The current battery status for this identifier, or `null` if unknown identifier
+    此标识符对应的当前电池状态；如果标识符未知，则为 `null`
 
 
 Since:
@@ -149,7 +149,7 @@ Returns:
 
 - [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/) —
 
-    The current device state
+    当前设备状态
 
 
 Since:
@@ -164,7 +164,7 @@ Parameters:
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The component identifier to retrieve manufacturer information for
+    要获取制造商信息的组件标识符
 
 - 单分量时返回 `null`
 
@@ -185,7 +185,7 @@ Returns:
 
 - [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/) —
 
-    The current manufacturer information for this identifier
+    此标识符对应的当前制造商信息
 
 - 如果标识符未知，则为 `null`
 
@@ -203,7 +203,7 @@ Parameters:
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The component identifier to retrieve product information for
+    要获取产品信息的组件标识符
 
 - 单分量时返回 `null`
 
@@ -224,7 +224,7 @@ Returns:
 
 - [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/) —
 
-    The current product information for this identifier
+    此标识符对应的当前产品信息
 
 - 如果标识符未知，则为 `null`
 
@@ -258,7 +258,7 @@ Throws:
 
 - ([AntPlus.AntPlusNotAllowedException](/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException/)) —
 
-    Thrown if the page number (byte 0) is outside the exploration and manufacturer page range.
+    如果页码（字节 0）超出探索页面和制造商页面范围，则抛出。
 
 
 ### **sendPageRequest(pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -269,7 +269,7 @@ Parameters:
 
 - pageNumber — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The requested page number. Requesting the ANTFS page (0x43) isn't allowed. Page request can change the page rotation of the sensor so they will not be allowed to be sent too frequently. Sending page requests is limited to once every 2 seconds.
+    请求的页面编号。不允许请求 ANTFS 页面（0x43）。页面请求可能会更改传感器的页面轮换，因此不允许过于频繁地发送页面请求。页面请求最多每 2 秒发送一次。
 
 
 Since:
@@ -280,4 +280,4 @@ Throws:
 
 - ([AntPlus.AntPlusNotAllowedException](/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException/)) —
 
-    Thrown if the ANTFS page is requested, if pageNumber is outside the range 0-255, or if page requests are sent to frequently.
+    如果请求 ANTFS 页面、pageNumber 超出 0-255 范围，或过于频繁地发送页面请求，则抛出。

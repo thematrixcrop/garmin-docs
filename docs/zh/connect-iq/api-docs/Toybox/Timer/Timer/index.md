@@ -18,9 +18,9 @@ Toybox.Lang.Object
 
 Timer 对象会在指定的毫秒数后调用回调函数。
 
-There are two types of timers: one-shot or repeating. A one-shot Timer will only run once after the Timer expires, while a repeating Timer will invoke the callback function every n milliseconds until stop() is called. If a repeating Timer fails to run before its next execution time, then any missed executions will be skipped.
+计时器有两种类型：单次计时器和重复计时器。单次 Timer 只会在计时器到期后运行一次，而重复 Timer 会每 n 毫秒调用一次回调函数，直到调用 stop()。如果重复 Timer 未能在下一次执行时间之前运行，则会跳过所有错过的执行。
 
-The number of available timers (default 3) and the minimum time value (default 50 ms) depends on the host system. An error will occur if too many timers are set.
+可用计时器数量（默认值为 3）和最小时间值（默认值为 50 ms）取决于主机系统。设置过多计时器时将发生错误。
 
 Example:
 
@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 注意：
 
-Will cause an app crash if called from a watch face app while in low power mode
+如果在低功耗模式下从表盘应用调用，将导致应用崩溃
 
 Parameters:
 
@@ -74,7 +74,7 @@ Parameters:
 
 - time — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The number of milliseconds to wait before invoking callback
+    调用回调前等待的毫秒数
 
 - repeat — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -89,7 +89,7 @@ API 级别 1.0.0
 
 停止 Timer 运行。
 
-This only needs to be called for repeating timers. A Timer can be started again by calling start().
+只需对重复计时器调用此方法。可以通过调用 start() 再次启动 Timer。
 
 Since:
 

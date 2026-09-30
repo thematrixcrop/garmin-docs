@@ -5,7 +5,7 @@ title: "Module: Toybox.Complications"
 
 ## 概述
 
-The Complications module allows apps to both subscribe to and publish complications. Complications are exposed via an iterator, or can be queried by identifier. Watch faces can register a callback and subscribe to multiple complications. Device apps and audio content providers can publish complication information.
+Complications 模块允许应用订阅和发布复杂功能。复杂功能通过迭代器公开，也可以按标识符查询。表盘可以注册回调并订阅多个复杂功能。设备应用和音频内容提供程序可以发布复杂功能信息。
 
 Since:
 
@@ -96,7 +96,7 @@ API 级别 4.2.0
 
 ### Unit
 
-Units reported by a complication
+Complication 报告的单位
 
 Since:
 
@@ -187,7 +187,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number percent 0 to 100 representing battery charge or `null`
+值是表示电池电量百分比（0 到 100）的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_STEPS | 2 |
@@ -196,7 +196,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number of steps for the current day, not available in wheelchair mode
+值是当天步数的非负 Number，在轮椅模式下不可用
 
 |
 | COMPLICATION\_TYPE\_CALORIES | 3 |
@@ -205,7 +205,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number of calories burned for the current day
+当天消耗卡路里数量的值为非负 Number
 
 |
 | COMPLICATION\_TYPE\_FLOORS\_CLIMBED | 4 |
@@ -214,7 +214,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number of floors climbed, not available in wheelchair mode
+已爬楼层数的值为非负 Number，在轮椅模式下不可用
 
 |
 | COMPLICATION\_TYPE\_INTENSITY\_MINUTES | 5 |
@@ -223,7 +223,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number of intensity minutes that resets weekly
+每周重置的高强度分钟数的值为非负 Number
 
 |
 | COMPLICATION\_TYPE\_DATE | 6 |
@@ -232,7 +232,7 @@ API 级别 4.2.0
 
 |
 
-Value is a String with the day of the month and the month e.g., 28 Mar
+值是包含日期和月份的 String，例如 28 Mar
 
 |
 | COMPLICATION\_TYPE\_WEEKDAY\_MONTHDAY | 7 |
@@ -241,7 +241,7 @@ API 级别 4.2.0
 
 |
 
-Value is a String with the day of the week and the day of the month e.g., Mon 28
+值是包含星期几和日期的 String，例如 Mon 28
 
 |
 | COMPLICATION\_TYPE\_CURRENT\_WEATHER | 8 |
@@ -250,7 +250,7 @@ API 级别 4.2.0
 
 |
 
-Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the current weather
+当前天气的值为 [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const)
 
 |
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_1DAY | 9 |
@@ -259,7 +259,7 @@ API 级别 4.2.0
 
 |
 
-Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather one day in the future
+未来一天的预报天气值为 [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const)
 
 |
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_2DAY | 10 |
@@ -268,7 +268,7 @@ API 级别 4.2.0
 
 |
 
-Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather two days in the future
+未来两天的预报天气值为 [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const)
 
 |
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_3DAY | 11 |
@@ -277,7 +277,7 @@ API 级别 4.2.0
 
 |
 
-Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather three days in the future
+未来三天的预报天气值为 [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const)
 
 |
 | COMPLICATION\_TYPE\_CALENDAR\_EVENTS | 12 |
@@ -286,7 +286,7 @@ API 级别 4.2.0
 
 |
 
-Value is a String with the time of your next calendar event or `null`
+值是表示您下一个日历事件时间的 String，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_SUNRISE | 13 |
@@ -295,7 +295,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number representing seconds since midnight local time of the sunrise or `null`
+值是表示日出当地时间午夜以来秒数的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_SUNSET | 14 |
@@ -304,7 +304,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number representing seconds since midnight local time of the sunset or `null`
+值是表示日落当地时间午夜以来秒数的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_ALTITUDE | 15 |
@@ -313,7 +313,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float of the current altitude in meters or `null`. Prior to ConnectIQ API version 5.1.0, the value was a Number.
+当前海拔的值为以米表示的 Float，或为 `null`。在 ConnectIQ API 5.1.0 之前，该值为 Number。
 
 |
 | COMPLICATION\_TYPE\_SEA\_LEVEL\_PRESSURE | 16 |
@@ -322,7 +322,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float in pascals of the current pressure or `null`
+当前气压的值为以帕斯卡表示的 Float，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_NOTIFICATION\_COUNT | 17 |
@@ -331,7 +331,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number of notifications or `null`
+通知数量的值为非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_HEART\_RATE | 18 |
@@ -340,7 +340,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number in beats per minute or `null`
+心率的值为以每分钟心跳次数表示的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_WEEKLY\_RUN\_DISTANCE | 19 |
@@ -349,7 +349,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float of your weekly run distance in meters
+每周跑步距离的值为以米表示的 Float
 
 |
 | COMPLICATION\_TYPE\_WEEKLY\_BIKE\_DISTANCE | 20 |
@@ -358,7 +358,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float of your weekly bike distance in meters
+每周骑行距离的值为以米表示的 Float
 
 |
 | COMPLICATION\_TYPE\_RECOVERY\_TIME | 21 |
@@ -367,7 +367,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number of minutes remaining in your recovery time
+值是恢复时间剩余分钟数的 Number
 
 |
 | COMPLICATION\_TYPE\_STRESS | 22 |
@@ -376,7 +376,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your current stress level or `null`
+值是表示您当前压力水平的 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_BODY\_BATTERY | 23 |
@@ -385,7 +385,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your current body battery or `null`
+值是表示您当前身体电量的 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_VO2MAX\_RUN | 24 |
@@ -394,7 +394,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your running VO2 max or `null`
+值是表示您跑步 VO2 max 的 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_VO2MAX\_BIKE | 25 |
@@ -403,7 +403,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your cycling VO2 max or `null`
+值是表示您骑行 VO2 max 的 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_TRAINING\_STATUS | 26 |
@@ -412,7 +412,7 @@ API 级别 4.2.0
 
 |
 
-Value is a String representing your training status
+值是表示您训练状态的 String
 
 |
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_5K | 27 |
@@ -421,7 +421,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your predicted 5K time in seconds
+值是表示您预测的 5K 用时（秒）的 Number
 
 |
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_10K | 28 |
@@ -430,7 +430,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your predicted 10k time in seconds
+值是表示您预测的 10K 用时（秒）的 Number
 
 |
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_HALF\_MARATHON | 29 |
@@ -439,7 +439,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your predicted half marathon time in seconds
+值是表示您预测的半程马拉松用时（秒）的 Number
 
 |
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_MARATHON | 30 |
@@ -448,7 +448,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Number representing your predicted your marathon time in seconds
+值是表示您预测的马拉松用时（秒）的 Number
 
 |
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_5K | 31 |
@@ -457,7 +457,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float representing your 5k pace in meters/second
+5 公里配速的值为以米/秒表示的 Float
 
 |
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_10K | 32 |
@@ -466,7 +466,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float representing your 10k pace in meters/second
+10 公里配速的值为以米/秒表示的 Float
 
 |
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_HALF\_MARATHON | 33 |
@@ -475,7 +475,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float representing your half marathon pace in meters/second
+半程马拉松配速的值为以米/秒表示的 Float
 
 |
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_MARATHON | 34 |
@@ -484,7 +484,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float representing your marathon pace in meters/second
+马拉松配速的值为以米/秒表示的 Float
 
 |
 | COMPLICATION\_TYPE\_PULSE\_OX | 35 |
@@ -493,7 +493,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number as a percent from 0 to 100 representing your blood oxygen or `null`
+血氧的值为介于 0 到 100 之间的非负 Number（百分比），或为 `null`
 
 |
 | COMPLICATION\_TYPE\_RESPIRATION\_RATE | 36 |
@@ -502,7 +502,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number representing your breaths per minute or `null`
+值是表示您每分钟呼吸次数的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_SOLAR\_INPUT | 37 |
@@ -511,7 +511,7 @@ API 级别 4.2.0
 
 |
 
-Value is a non-negative Number representing percent between 0 to 100 of solar charge or `null`
+值是表示太阳能充电百分比（0 到 100）的非负 Number，或为 `null`
 
 |
 | COMPLICATION\_TYPE\_CURRENT\_TEMPERATURE | 38 |
@@ -520,7 +520,7 @@ API 级别 4.2.0
 
 |
 
-Value is a Float representing temperature in degrees Celsius or `null`. Prior to ConnectIQ API version 5.0.0, the value was a Number.
+温度的值为以摄氏度表示的 Float，或为 `null`。在 ConnectIQ API 5.0.0 之前，该值为 Number。
 
 |
 | COMPLICATION\_TYPE\_HIGH\_LOW\_TEMPERATURE | 39 |
@@ -538,7 +538,7 @@ API 级别 4.2.3
 
 |
 
-Value is a non-negative Number of pushes for the current day, only available in wheelchair mode
+值是当天推送次数的非负 Number，仅在轮椅模式下可用
 
 |
 | COMPLICATION\_TYPE\_LAST\_GOLF\_ROUND\_SCORE | 41 |
@@ -556,7 +556,7 @@ API 级别 6.0.2
 
 |
 
-Value is a non-negative number from 0 to 100 representing sleep score or `null`
+睡眠评分的值为介于 0 到 100 之间的非负 number，或为 `null`
 
 |
 
@@ -597,11 +597,11 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 - [**unsubscribeFromAllUpdates**](#unsubscribeFromAllUpdates-instance_function)() as **Void**
 
-    Unsubscribes from all subscribed complications.
+    取消订阅所有已订阅的 Complication。
 
 - [**unsubscribeFromUpdates**](#unsubscribeFromUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
-    Unsubscribes from complication.
+    取消订阅 Complication。
 
 - [**updateComplication**](#updateComplication-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) as **Void**
 
@@ -664,7 +664,7 @@ Parameters:
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
-    The complication Id to launch
+    要启动的复杂功能 ID
 
 
 :::details 支持的设备
@@ -753,7 +753,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if complication id is not a from a valid app
+    如果 complication id 不是来自有效应用，则会抛出此异常
 
 
 ### **getComplication(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
@@ -839,7 +839,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if too many active subscriptions
+    如果活动订阅过多，则抛出
 
 - ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
@@ -848,7 +848,7 @@ Throws:
 
 ### **unsubscribeFromAllUpdates()** as **Void**
 
-Unsubscribes from all subscribed complications
+取消订阅所有已订阅的 Complication
 
 Since:
 
@@ -856,7 +856,7 @@ API 级别 4.2.0
 
 ### **unsubscribeFromUpdates(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as **Void**
 
-Unsubscribes from complication
+取消订阅 Complication
 
 Parameters:
 
@@ -881,7 +881,7 @@ Parameters:
 
 - data — ([Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) —
 
-    Updated values for the complication
+    Complication 的更新值
 
 
 Since:
@@ -892,4 +892,4 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if the id of the complication is not associated with this application
+    如果 complication 的 id 未与此应用关联，则抛出

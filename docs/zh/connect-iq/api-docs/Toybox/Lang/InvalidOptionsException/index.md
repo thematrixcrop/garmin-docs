@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates invalid options during initialization.
+此异常表示初始化期间选项无效。
 
 ## 另见：
 

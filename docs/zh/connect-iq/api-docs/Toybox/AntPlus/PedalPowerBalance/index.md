@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The PedalPowerBalance object represents the user's power contribution between the left and right pedals.
+PedalPowerBalance 对象表示用户在左右踏板之间的功率贡献。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

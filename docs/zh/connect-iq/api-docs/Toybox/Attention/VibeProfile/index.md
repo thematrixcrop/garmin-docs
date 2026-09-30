@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 定义振动模式。
 
-Vibrations have two characteristics: duty cycle and length. These characteristics are used to define a single VibeProfile object, which can then be passed with a collection of other VibeProfile objects in an Array to the vibrate() method. The vibrate() method will play through each of the VibeProfile objects within the Array in order.
+振动有两个特征：占空比和长度。这些特征用于定义单个 VibeProfile 对象，然后可以将其与其他 VibeProfile 对象组成 Array，并传递给 vibrate() 方法。vibrate() 方法将按顺序播放 Array 中的每个 VibeProfile 对象。
 
 Example:
 
@@ -243,11 +243,11 @@ Parameters:
 
 - dutyCycleVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The strength of the vibration
+    振动强度
 
 - lengthVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The length of the vibration in milliseconds (ms)
+    振动的时长，单位为毫秒 (ms)
 
 
 Since:

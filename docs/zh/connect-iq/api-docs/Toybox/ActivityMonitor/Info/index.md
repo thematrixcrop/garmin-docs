@@ -22,7 +22,7 @@ ActivityMonitor.Info 包含用户当前活动状态的信息。
 
 注意：
 
-Unless otherwise indicated, Info data is calculated for the current day starting at midnight as provided by the device.
+除非另有说明，否则 Info 数据按设备提供的当天午夜开始计算。
 
 Since:
 
@@ -40,27 +40,27 @@ API 级别 1.0.0
 
 - [**activeMinutesWeekGoal**](#activeMinutesWeekGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The value of the active minutes goal for the current week.
+    当前周活动分钟目标的值。
 
 - [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The calories burned so far for the current day in kilocalories (kCal).
+    当前日期截至目前消耗的卡路里，单位为千卡（kCal）。
 
 - [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The distance since midnight for the current day in centimeters (cm).
+    当天自午夜以来的距离，单位为厘米 (cm)。
 
 - [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of floors climbed for the current day.
+    当天已爬升的楼层数。
 
 - [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current floor climb goal.
+    当前爬楼层数目标。
 
 - [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of floors descended for the current day.
+    当天已下降的楼层数。
 
 - [**isSleepMode**](#isSleepMode-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null** deprecated
 
@@ -76,7 +76,7 @@ API 级别 1.0.0
 
 - [**moveBarLevel**](#moveBarLevel-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current level of the move bar between [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) and [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const).
+    [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) 和 [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const) 之间移动条的当前级别。
 
 - [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -96,15 +96,15 @@ API 级别 1.0.0
 
 - [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The step goal for the current day in number of steps.
+    当天的步数目标。
 
 - [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The step count since midnight for the current day in number of steps.
+    当天午夜以来的步数。
 
 - [**stressScore**](#stressScore-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current stress score The stress score calculated using a rolling average of the last 30 seconds of stress level readings.
+    当前压力评分。压力评分根据最近 30 秒压力水平读数的滚动平均值计算得出。
 
 - [**timeToRecovery**](#timeToRecovery-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -419,7 +419,7 @@ Returns:
 
 ### var activeMinutesWeekGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The value of the active minutes goal for the current week. Value may be `null`.
+当前周活动分钟目标的值。值可能为 `null`。
 
 Since:
 
@@ -569,7 +569,7 @@ Returns:
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The calories burned so far for the current day in kilocalories (kCal). Value may be `null`.
+当前日期截至目前消耗的卡路里，单位为千卡（kCal）。值可能为 `null`。
 
 Since:
 
@@ -731,7 +731,7 @@ Returns:
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The distance since midnight for the current day in centimeters (cm). Value may be `null`.
+当天自午夜以来的距离，单位为厘米 (cm)。值可能为 `null`。
 
 Since:
 
@@ -743,7 +743,7 @@ Returns:
 
 ### var floorsClimbed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of floors climbed for the current day. Value may be `null`.
+当天已爬升的楼层数。值可能为 `null`。
 
 Since:
 
@@ -879,7 +879,7 @@ Returns:
 
 ### var floorsClimbedGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current floor climb goal. Value may be `null`.
+当前爬楼层数目标。值可能为 `null`。
 
 Since:
 
@@ -1015,7 +1015,7 @@ Returns:
 
 ### var floorsDescended as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of floors descended for the current day. Value may be `null`.
+当天已下降的楼层数。值可能为 `null`。
 
 Since:
 
@@ -1153,7 +1153,7 @@ Returns:
 
 **此项已弃用**
 
-This value may be removed after System 4.
+此值可能会在 System 4 之后移除。
 
 确定设备是否处于睡眠模式。值可能为 `null`。
 
@@ -1317,7 +1317,7 @@ Returns:
 
 以米 (m) 为单位的爬楼层垂直距离。
 
-This only counts the vertical distance associated with the floors climbed metric recorded by the device. Value may be `null`.
+这只计算设备记录的已爬楼层指标所对应的垂直距离。值可能为 `null`。
 
 Since:
 
@@ -1455,7 +1455,7 @@ Returns:
 
 以米 (m) 为单位的下楼层垂直距离。
 
-This only counts the vertical distance associated with the floors descended metric recorded by the device. Value may be `null`.
+这只计算设备记录的已下楼层指标所对应的垂直距离。值可能为 `null`。
 
 Since:
 
@@ -1591,7 +1591,7 @@ Returns:
 
 ### var moveBarLevel as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current level of the move bar between [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) and [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const). Value may be `null`.
+[MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) 和 [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const) 之间移动条的当前级别。值可能为 `null`。
 
 Since:
 
@@ -1798,7 +1798,7 @@ Returns:
 
 ### var stepGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The step goal for the current day in number of steps. Value may be `null`.
+当天的步数目标。值可能为 `null`。
 
 Since:
 
@@ -1810,7 +1810,7 @@ Returns:
 
 ### var steps as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The step count since midnight for the current day in number of steps. Value may be `null`.
+当天午夜以来的步数。值可能为 `null`。
 
 Since:
 
@@ -1822,9 +1822,9 @@ Returns:
 
 ### var stressScore as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current stress score
+当前压力评分
 
-The stress score calculated using a rolling average of the last 30 seconds of stress level readings. Value may be `null`.
+使用最近 30 秒压力等级读数的滚动平均值计算出的压力分数。值可能为 `null`。
 
 Since:
 
@@ -1911,7 +1911,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Values correspond to the following scale
+    值对应于以下刻度
 
 - 0–25：休息状态
 

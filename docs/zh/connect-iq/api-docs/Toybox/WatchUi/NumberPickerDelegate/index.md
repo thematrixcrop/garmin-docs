@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 NumberPickerDelegate 响应 NumberPicker 选择。
 
-This class should be extended to handle the specified number.
+应扩展此类以处理指定的数字。
 
 **此项已弃用**
 
@@ -115,13 +115,13 @@ API 级别 1.0.0
 
 在 NumberPicker 中输入了一个数字。
 
-This method is called when a number has been specified by a NumberPicker, and receives the numeric value as an argument.
+通过 NumberPicker 指定数字时会调用此方法，并将数值作为参数接收。
 
 Parameters:
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-    The entered number (type dependent upon the NumberPicker mode)
+    输入的数字（类型取决于 NumberPicker 模式）
 
 
 Since:

@@ -229,7 +229,7 @@ Parameters:
 
 - listener — ([AntPlus.BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/)) —
 
-    The bike cadence instance optionally takes an extension of the [BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the [getCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadence/) method.
+    自行车踏频实例的参数可选用 [BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/) 类的扩展类。如果用户计划仅使用 [getCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadence/) 方法轮询数据，也可以传入 `null`。
 
 
 Since:

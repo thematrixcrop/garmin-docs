@@ -112,7 +112,7 @@ Returns:
 
 - [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) —
 
-    The complication type of a system complication, or COMPLICATION\_TYPE\_INVALID for user complications.
+    系统复杂功能的复杂功能类型；对于用户复杂功能，则为 COMPLICATION\_TYPE\_INVALID。
 
 
 Since:

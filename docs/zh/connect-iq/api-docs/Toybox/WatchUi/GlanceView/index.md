@@ -18,13 +18,13 @@ Toybox.WatchUi.View
 
 ## 概述
 
-The class that represents a glance view which can be used to display the widget preview content in a restricted drawing context (dc) among other widgets.
+表示速览视图的类，可用于在受限的绘图上下文（dc）中显示小组件预览内容，并与其他小组件一起显示。
 
 速览视图的行为大体类似于常规的 WatchUi.View，例如，用户可以加载布局，并使用 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 更新视图；但是，这些调用中传入的 `dc` 对象将受速览区域限制，而不是完整屏幕的 `dc`。
 
 GlanceView doesn't support [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) or other View APIs that are associated with layering system, such as [View.addLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#addLayer-instance_function) [View.removeLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#removeLayer-instance_function), [View.insertLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#insertLayer-instance_function), [View.clearLayers()](/connect-iq/api-docs/Toybox/WatchUi/View/#clearLayers-instance_function)
 
-The widget that's running in the glance mode are prohibited from using page control functionality, as there is only one view allowed during said mode.
+在速览模式下运行的小组件禁止使用页面控制功能，因为该模式下只允许有一个视图。
 
 Since:
 

@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates an invalid menu item type was passed to [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) for a menu.
+此异常表示传递给菜单的 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) 的菜单项类型无效。
 
 ## 另见：
 

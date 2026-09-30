@@ -5,7 +5,7 @@ title: "Module: Toybox.Application.Properties"
 
 ## 概述
 
-The Properties module provides access to application properties.
+Properties 模块提供对应用程序属性的访问。
 
 Storage 提供对应用属性中定义的属性的访问。
 
@@ -52,14 +52,14 @@ Parameters:
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The key of the value to retrieve from Application Properties
+    要从应用程序属性中获取的值所对应的键
 
 
 Returns:
 
 - [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type) —
 
-    The content associated with the key
+    与键关联的内容
 
 
 另见：
@@ -79,7 +79,7 @@ Throws:
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
-    Thrown if key does not exist in Application Settings
+    如果 Application Settings 中不存在 `key`，则会抛出此异常
 
 
 ### **setValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as **Void**
@@ -94,11 +94,11 @@ Parameters:
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The key used to store and retrieve the value from Application Properties
+    用于在应用程序属性中存储和获取值的键
 
 - value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
-    The value to put into Application Properties
+    要放入 Application Properties 的值
 
 
 Since:
@@ -117,4 +117,4 @@ Throws:
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
-    Thrown if key does not exist in Application Properties
+    如果 Application Properties 中不存在 `key`，则会抛出此异常

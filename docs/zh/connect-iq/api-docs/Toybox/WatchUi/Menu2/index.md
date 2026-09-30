@@ -37,7 +37,7 @@ Toybox.WatchUi.View
 
 注意：
 
-The look and feel of a Menu2 is device-specific.
+Menu2 的外观和交互方式因设备而异。
 
 Example:
 
@@ -354,7 +354,7 @@ Parameters:
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
-    The MenuItem to add to the Menu2
+    要添加到 Menu2 的 MenuItem
 
 - 不能是 [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
 
@@ -368,7 +368,7 @@ Throws:
 
 - ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
-    Thrown if item is a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
+    如果 `item` 是 [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)，则会抛出此异常
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -383,7 +383,7 @@ Parameters:
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should be deleted from the Menu2.
+    应从 Menu2 中删除的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引。
 
 
 Returns:
@@ -403,14 +403,14 @@ Parameters:
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for which to search
+    要搜索的标识符
 
 
 Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) assigned the supplied identifier
+    为所提供标识符分配的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引
 
 - 未找到时为 \-1
 
@@ -459,7 +459,7 @@ Parameters:
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) to get
+    要获取的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引
 
 
 Returns:
@@ -513,7 +513,7 @@ Parameters:
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The icon to display in the subscreen area when the focused MenuItem does not have an icon.
+        聚焦的 MenuItem 没有图标时，要显示在子屏幕区域中的图标。
 
 - :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
@@ -521,7 +521,7 @@ Parameters:
 
 - :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
 
-        The divider type, Defaults to DIVIDER\_TYPE\_DEFAULT.
+        分隔线类型。默认为 DIVIDER\_TYPE\_DEFAULT。
 
 
 另见：
@@ -589,7 +589,7 @@ Parameters:
 
 - focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have focus
+    应获得焦点的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引
 
 
 Since:
@@ -600,7 +600,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if focus is not a valid type
+    如果 `focus` 不是有效类型，则会抛出此异常
 
 
 ### **setFooter(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
@@ -611,7 +611,7 @@ Parameters:
 
 - footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-    The menu footer text, `null`, a string ResourceId, or a Drawable
+    菜单页脚文本、`null`、字符串 ResourceId 或 Drawable
 
 
 Since:
@@ -622,7 +622,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if footer is not a valid type
+    如果 `footer` 不是有效类型，则会抛出此异常
 
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
@@ -664,7 +664,7 @@ Parameters:
 
 - theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
-    The theme for this menu.
+    此菜单的主题。
 
 
 :::details 支持的设备
@@ -713,7 +713,7 @@ Parameters:
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-    The menu title text, `null`, a string ResourceId, or a Drawable
+    菜单标题文本、`null`、字符串 ResourceId 或 Drawable
 
 
 Since:
@@ -724,7 +724,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if title is not a valid type
+    如果 title 不是有效类型，则抛出
 
 
 ### **updateItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
@@ -735,11 +735,11 @@ Parameters:
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
-    The MenuItem to update
+    要更新的 MenuItem
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The index of the MenuItem to update
+    要更新的 MenuItem 的索引
 
 
 Since:

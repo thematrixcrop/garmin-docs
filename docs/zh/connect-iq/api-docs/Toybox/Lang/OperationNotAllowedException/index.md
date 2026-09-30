@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that an app attempted an operation that is not allowed.
+此异常表示应用尝试执行不允许的操作。
 
 ## 另见：
 

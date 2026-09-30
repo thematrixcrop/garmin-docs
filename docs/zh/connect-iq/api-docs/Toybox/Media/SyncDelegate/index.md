@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 **此项已弃用**
 
-This class may be removed after System 9.
+此类可能会在 System 9 之后移除。
 
 ## 另见：
 
@@ -70,7 +70,7 @@ API 级别 3.0.0
 
 系统启动同步时调用。
 
-This method should be used to kick-off the application sync process. This includes any setup required to fetch the data needed to prepare the sync, as well as the initial call to [makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) to download the first piece of audio content. Note that, when using this method, you must chain your makeWebRequest() calls together manually. Additionally, you must call [notifySyncProgress()](/connect-iq/api-docs/Toybox/Media/#notifySyncProgress-instance_function) intermittently to enable sync progress updates to be displayed in the native user interface for the device. Finally, [notifySyncComplete()](/connect-iq/api-docs/Toybox/Media/#notifySyncComplete-instance_function) must be called either when the sync has successfully completed, or if an error occurs, so that the device can be properly notified that the sync process is finished.
+应使用此方法启动应用同步过程。这包括获取准备同步所需数据的任何设置工作，以及首次调用 [makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 以下载第一段音频内容。请注意，使用此方法时，必须手动将 makeWebRequest() 调用串联起来。此外，必须间歇性调用 [notifySyncProgress()](/connect-iq/api-docs/Toybox/Media/#notifySyncProgress-instance_function)，以便在设备的原生用户界面中显示同步进度更新。最后，必须在同步成功完成或发生错误时调用 [notifySyncComplete()](/connect-iq/api-docs/Toybox/Media/#notifySyncComplete-instance_function)，以便正确通知设备同步过程已结束。
 
 Since:
 

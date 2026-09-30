@@ -60,11 +60,11 @@ Parameters:
 
 - prompts — (ActivityPrompt>) —
 
-    The prompts to play
+    要播放的提示音
 
 - priority — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The priority of the prompt. Lower values should take precendence over higher values.
+    提示的优先级。较低的值应优先于较高的值。
 
 
 Since:

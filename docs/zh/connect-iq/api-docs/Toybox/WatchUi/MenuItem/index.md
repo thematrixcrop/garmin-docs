@@ -341,7 +341,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The substring text label for the MenuItem
+    MenuItem 的子字符串文本标签
 
 
 Since:
@@ -360,15 +360,15 @@ Parameters:
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The string label for the MenuItem
+    MenuItem 的字符串标签
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The substring label for the MenuItem, which can be `null`
+    MenuItem 的子字符串标签，可以为 `null`
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The identifier for this MenuItem, which is typically a [String](/connect-iq/api-docs/Toybox/Lang/String/)
+    此 MenuItem 的标识符，通常为 [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -380,7 +380,7 @@ Parameters:
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The icon displayed in the subscreen area when this MenuItem has the focus.
+        此 MenuItem 获得焦点时显示在子屏幕区域中的图标。
 
 
 Since:
@@ -437,7 +437,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if label is an invalid type, or if a ResourceId does not reference to a valid string resource
+    如果 label 是无效类型，或 ResourceId 未引用有效的字符串资源，则抛出
 
 
 ### **setSubLabel(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
@@ -448,7 +448,7 @@ Parameters:
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The substring text label for the MenuItem, which can be `null`
+    MenuItem 的子字符串文本标签，可以为 `null`
 
 
 Since:
@@ -459,4 +459,4 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if label is an invalid type, or if a resource ID does not point to a valid string resource
+    如果 label 是无效类型，或资源 ID 不指向有效的字符串资源，则抛出

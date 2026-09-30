@@ -558,7 +558,7 @@ API 级别 2.2.0
 
 |
 
-Turn signal left self-cancelling
+左转信号，自动取消
 
 |
 | LIGHT\_MODE\_SIGNAL\_LEFT | 11 |
@@ -567,7 +567,7 @@ API 级别 2.2.0
 
 |
 
-Turn signal left
+左转信号
 
 |
 | LIGHT\_MODE\_SIGNAL\_RIGHT\_SC | 12 |
@@ -576,7 +576,7 @@ API 级别 2.2.0
 
 |
 
-Turn signal right self-cancelling
+右转信号，自动取消
 
 |
 | LIGHT\_MODE\_SIGNAL\_RIGHT | 13 |
@@ -585,7 +585,7 @@ API 级别 2.2.0
 
 |
 
-Turn signal right
+右转信号
 
 |
 | LIGHT\_MODE\_HAZARD | 14 |
@@ -701,7 +701,7 @@ API 级别 2.2.0
 
 |
 
-Undefined light type
+未定义的灯光类型
 
 |
 
@@ -785,7 +785,7 @@ API 级别 3.0.0
 
 |
 
-Vehicle is approaching
+车辆正在接近
 
 |
 | THREAT\_LEVEL\_VEHICLE\_FAST\_APPROACHING | 2 |
@@ -794,7 +794,7 @@ API 级别 3.0.0
 
 |
 
-Vehicle is approaching fast
+车辆正在快速接近
 
 |
 
@@ -811,7 +811,7 @@ API 级别 3.0.0
 
 |
 
-Threat not on right or left
+右侧或左侧均无威胁
 
 |
 | THREAT\_SIDE\_RIGHT | 1 |
@@ -820,7 +820,7 @@ API 级别 3.0.0
 
 |
 
-Threat is on the right side
+威胁位于右侧
 
 |
 | THREAT\_SIDE\_LEFT | 2 |
@@ -829,7 +829,7 @@ API 级别 3.0.0
 
 |
 
-Threat is on the left side
+威胁位于左侧
 
 |
 
@@ -881,7 +881,7 @@ API 级别 2.4.0
 
 |
 
-The training mode the fitness equipment is currently in. See TRAINER\_MODE\_\* enum for values
+健身设备当前所处的训练模式。有关取值，请参阅 TRAINER\_MODE\_\* 枚举
 
 |
 | TRAINER\_RESISTANCE | 8 |
@@ -908,7 +908,7 @@ API 级别 2.4.0
 
 |
 
-The simulated Slope/Grade setting of simulation training mode. -200% - 200% input range, unit 0.01%.
+模拟训练模式的模拟坡度/等级设置。输入范围为 -200% 至 200%，单位为 0.01%。
 
 |
 | TRAINER\_SURFACE | 11 |
@@ -917,7 +917,7 @@ API 级别 2.4.0
 
 |
 
-The simulated surface resistance coefficient setting of simulation training mode. 0 - 0.0127 input range, 5x10^-5 scale. Default value is set to 0xFF.
+模拟训练模式的模拟表面阻力系数设置。输入范围为 0 至 0.0127，缩放比例为 5x10^-5。默认值设置为 0xFF。
 
 |
 | TRAINER\_WIND\_COEFF | 12 |
@@ -935,7 +935,7 @@ API 级别 2.4.0
 
 |
 
-The simulated wind speed setting of simulation training mode. -127 - +127 km/hr input range, (+)Head wind (-)Tail wind. 1 km/hr units. Simulated Wind Speed (km/h) = Raw Wind Speed Value – 127 km/h Default value is set to 0xFF.
+模拟训练模式的模拟风速设置。输入范围为 -127 至 +127 km/hr，（+）迎风（-）顺风。单位为 1 km/hr。模拟风速（km/h）= 原始风速值 – 127 km/h。默认值设置为 0xFF。
 
 |
 | TRAINER\_WIND\_DRAFT\_FACTOR | 14 |
@@ -944,7 +944,7 @@ API 级别 2.4.0
 
 |
 
-The simulated wind drafting scale factor setting of simulation training mode. 0 - 1.0 input range, 0.01 scale. A draft factor of 0 removes all wind resistance, and 1.0 indicates no drafting effects.
+模拟训练模式的模拟风阻跟随比例系数设置。输入范围为 0 至 1.0，缩放比例为 0.01。阻风系数为 0 表示移除所有风阻，1.0 表示没有跟随效果。
 
 |
 | TRAINER\_USER\_WEIGHT | 15 |
@@ -953,7 +953,7 @@ API 级别 2.4.0
 
 |
 
-The user weight setting of simulation training mode. 0 - 655.34 kg input range, unit 0.01kg.
+模拟训练模式的用户体重设置。输入范围为 0 - 655.34 kg，单位为 0.01 kg。
 
 |
 | TRAINER\_BIKE\_WEIGHT | 16 |
@@ -962,7 +962,7 @@ API 级别 2.4.0
 
 |
 
-The bike weight setting of simulation training mode. 0 - 50kg input range, unit 0.05kg
+模拟训练模式下的自行车重量设置。输入范围为 0 至 50 kg，单位为 0.05 kg
 
 |
 | TRAINER\_WHEEL\_DIAMETER | 17 |
@@ -971,7 +971,7 @@ API 级别 2.4.0
 
 |
 
-The wheel diameter setting of the fitness equipment. 0 - 2.54m input range, unit 0.01m
+健身设备的车轮直径设置。输入范围为 0 - 2.54 m，单位为 0.01 m
 
 |
 | TRAINER\_GEAR\_RATIO | 18 |
@@ -980,7 +980,7 @@ API 级别 2.4.0
 
 |
 
-The gear ratio setting of the fitness equipment. 0.03 - 7.65 input range, unit 0.03. gear ratio = value \* 0.03
+健身设备的齿轮比设置。输入范围为 0.03 - 7.65，单位为 0.03。齿轮比 = 值 \* 0.03
 
 |
 
@@ -1024,7 +1024,7 @@ API 级别 2.4.0
 
 |
 
-Waist, mid back body location
+腰部，身体后侧中间位置
 
 |
 | BODY\_LOCATION\_WAIST\_FRONT | 37 |
@@ -1033,7 +1033,7 @@ API 级别 2.4.0
 
 |
 
-Waist, front body location
+腰部，身体前侧位置
 
 |
 | BODY\_LOCATION\_WAIST\_LEFT | 38 |
@@ -1042,7 +1042,7 @@ API 级别 2.4.0
 
 |
 
-Waist, left body location
+腰部，身体左侧位置
 
 |
 | BODY\_LOCATION\_WAIST\_RIGHT | 39 |
@@ -1051,7 +1051,7 @@ API 级别 2.4.0
 
 |
 
-Waist, right body location
+腰部，身体右侧位置
 
 |
 
@@ -1077,6 +1077,6 @@ API 级别 2.4.0
 
 |
 
-Upside down sensor orientation
+传感器倒置方向
 
 |

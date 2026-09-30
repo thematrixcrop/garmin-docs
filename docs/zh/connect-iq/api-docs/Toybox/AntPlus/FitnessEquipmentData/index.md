@@ -48,22 +48,22 @@ API 级别 2.4.0
 
 - [**feDistance**](#feDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The elapsed distance calculated by the trainer since reset Range is always greater than or equal to 0m.
+    训练器自重置以来计算的已经过距离。范围始终大于或等于 0m。
 
 - [**feHeartRate**](#feHeartRate-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The heart rate calculated by the trainer.
+    训练器计算的心率。
 
 - [**feSpeed**](#feSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The speed calculated by the trainer.
+    训练器计算出的速度。
 
 
 ## 实例属性详情
 
 ### var feDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The elapsed distance calculated by the trainer since reset Range is always greater than or equal to 0m
+训练器自重置以来计算的已经过距离。范围始终大于或等于 0m
 
 Since:
 
@@ -78,7 +78,7 @@ Returns:
 
 ### var feHeartRate as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The heart rate calculated by the trainer. This may come from hand sensors, or an HRM if connected to the equipment
+训练器计算的心率。该值可能来自手部传感器，或来自连接到设备的 HRM
 
 Since:
 
@@ -93,7 +93,7 @@ Returns:
 
 ### var feSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The speed calculated by the trainer
+训练器计算出的速度
 
 Since:
 

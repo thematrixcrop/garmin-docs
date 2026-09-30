@@ -155,7 +155,7 @@ API 级别 3.4.0
 
 - [**Views**](#Views-named_type) as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
-    View types that can be provided by a ViewLoopFactory.
+    ViewLoopFactory 可提供的视图类型。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -166,7 +166,7 @@ API 级别 3.4.0
 
 - [**getView**](#getView-instance_function)(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
 
-    This function will be called by the system to retrieve a view/delegate pair for the page at the given index.
+    系统将调用此函数，以获取给定索引处页面的视图/委托对。
 
 
 ## 类型定义详情
@@ -181,7 +181,7 @@ API 级别 3.4.0
 
 ### **Views** as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
-View types that can be provided by a ViewLoopFactory
+ViewLoopFactory 可提供的视图类型
 
 Since:
 
@@ -197,7 +197,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    total number of views for this factory
+    此工厂的视图总数
 
 
 Since:
@@ -206,7 +206,7 @@ API 级别 3.4.0
 
 ### **getView(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
 
-This function will be called by the system to retrieve a view/delegate pair for the page at the given index
+系统将调用此函数，以获取给定索引处页面的视图/委托对
 
 注意：
 

@@ -5,9 +5,9 @@ title: "Module: Toybox.WatchUi"
 
 ## 概述
 
-The WatchUi module contains user interface elements available within apps.
+WatchUi 模块包含应用中可用的用户界面元素。
 
-WatchUi provides several classes that represent Views, or what is displayed on the screen of a device. Also available are UI elements like on-screen menus, progress bars, buttons, and various pickers. More abstract classes represent all drawable objects, such as bitmaps and text.
+WatchUi 提供了几个表示视图（即设备屏幕上显示内容）的类。此外，还提供了屏幕菜单、进度条、按钮和各种选择器等 UI 元素。更抽象的类表示所有可绘制对象，例如位图和文本。
 
 注意：
 
@@ -53,7 +53,7 @@ API 级别 1.0.0
 
 |
 
-The power key
+电源键
 
 |
 | KEY\_LIGHT | 1 |
@@ -62,7 +62,7 @@ API 级别 1.0.0
 
 |
 
-The light key
+灯光键
 
 |
 | KEY\_ZIN | 2 |
@@ -71,7 +71,7 @@ API 级别 1.0.0
 
 |
 
-The zoom in key
+放大键
 
 |
 | KEY\_ZOUT | 3 |
@@ -80,7 +80,7 @@ API 级别 1.0.0
 
 |
 
-The zoom out key
+缩小键
 
 |
 | KEY\_ENTER | 4 |
@@ -89,7 +89,7 @@ API 级别 1.0.0
 
 |
 
-The enter key
+回车键
 
 |
 | KEY\_ESC | 5 |
@@ -98,7 +98,7 @@ API 级别 1.0.0
 
 |
 
-The escape key
+转义键
 
 |
 | KEY\_FIND | 6 |
@@ -107,7 +107,7 @@ API 级别 1.0.0
 
 |
 
-The find key
+查找键
 
 |
 | KEY\_MENU | 7 |
@@ -116,7 +116,7 @@ API 级别 1.0.0
 
 |
 
-The menu key
+菜单键
 
 |
 | KEY\_DOWN | 8 |
@@ -134,7 +134,7 @@ API 级别 1.0.0
 
 |
 
-The down left key
+向左下键
 
 |
 | KEY\_DOWN\_RIGHT | 10 |
@@ -152,7 +152,7 @@ API 级别 1.0.0
 
 |
 
-The left key
+左键
 
 |
 | KEY\_RIGHT | 12 |
@@ -161,7 +161,7 @@ API 级别 1.0.0
 
 |
 
-The right key
+右键
 
 |
 | KEY\_UP | 13 |
@@ -170,7 +170,7 @@ API 级别 1.0.0
 
 |
 
-The up key
+向上键
 
 |
 | KEY\_UP\_LEFT | 14 |
@@ -179,7 +179,7 @@ API 级别 1.0.0
 
 |
 
-The up-left
+左上
 
 |
 | KEY\_UP\_RIGHT | 15 |
@@ -188,7 +188,7 @@ API 级别 1.0.0
 
 |
 
-The up-right key
+向右上键
 
 |
 | EXTENDED\_KEYS | 16 |
@@ -206,7 +206,7 @@ API 级别 1.1.2
 
 |
 
-The page key
+页面键
 
 |
 | KEY\_START | 18 |
@@ -215,7 +215,7 @@ API 级别 1.1.2
 
 |
 
-The start key
+开始键
 
 |
 | KEY\_LAP | 19 |
@@ -224,7 +224,7 @@ API 级别 1.1.2
 
 |
 
-The lap key
+圈键
 
 |
 | KEY\_RESET | 20 |
@@ -233,7 +233,7 @@ API 级别 1.1.2
 
 |
 
-The reset key
+重置键
 
 |
 | KEY\_SPORT | 21 |
@@ -242,7 +242,7 @@ API 级别 1.1.2
 
 |
 
-The sport key
+运动项目键
 
 |
 | KEY\_CLOCK | 22 |
@@ -251,7 +251,7 @@ API 级别 1.1.2
 
 |
 
-The clock key
+时钟键
 
 |
 | KEY\_MODE | 23 |
@@ -260,7 +260,7 @@ API 级别 1.1.2
 
 |
 
-The mode key
+模式键
 
 |
 | KEY\_ACTION\_MENU | 24 |
@@ -330,7 +330,7 @@ API 级别 1.1.2
 
 |
 
-The key is pressed down
+按键按下
 
 |
 | PRESS\_TYPE\_UP | 1 |
@@ -339,7 +339,7 @@ API 级别 1.1.2
 
 |
 
-The key is released
+按键释放
 
 |
 | PRESS\_TYPE\_ACTION | 2 |
@@ -348,7 +348,7 @@ API 级别 1.1.2
 
 |
 
-The key's action is performed
+执行键的操作
 
 |
 
@@ -400,7 +400,7 @@ API 级别 3.0.0
 
 |
 
-The default Garmin map marker pin icon
+默认的 Garmin 地图标记图钉图标
 
 |
 
@@ -417,7 +417,7 @@ API 级别 3.0.0
 
 |
 
-The preview mode for a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
+[MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 的预览模式
 
 |
 | MAP\_MODE\_BROWSE | 1 |
@@ -426,7 +426,7 @@ API 级别 3.0.0
 
 |
 
-The browse mode for a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
+[MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 的浏览模式
 
 |
 
@@ -584,7 +584,7 @@ API 级别 3.3.0
 
 ### WatchFaceConfigType
 
-WatchFace config types.
+WatchFace 配置类型。
 
 Since:
 
@@ -627,7 +627,7 @@ API 级别 4.1.8
 
 |
 
-The default theme color as specified by the device.
+设备指定的默认主题颜色。
 
 |
 | MENU\_THEME\_BLUE | 1 |
@@ -698,7 +698,7 @@ API 级别 1.0.0
 
 **此项已弃用**
 
-This enum may be removed after System 3.
+此枚举可能会在 System 3 之后移除。
 
 Since:
 
@@ -800,7 +800,7 @@ API 级别 1.0.0
 
 |
 
-The View slides to the left.
+View 向左滑动。
 
 |
 | SLIDE\_RIGHT | 2 |
@@ -809,7 +809,7 @@ API 级别 1.0.0
 
 |
 
-The View slides to the right.
+View 向右滑动。
 
 |
 | SLIDE\_DOWN | 3 |
@@ -818,7 +818,7 @@ API 级别 1.0.0
 
 |
 
-The View slides down.
+View 向下滑动。
 
 |
 | SLIDE\_UP | 4 |
@@ -827,7 +827,7 @@ API 级别 1.0.0
 
 |
 
-The View slides up.
+View 向上滑动。
 
 |
 | SLIDE\_BLINK | 5 |
@@ -836,7 +836,7 @@ API 级别 3.1.0
 
 |
 
-The View fades in.
+View 淡入。
 
 |
 
@@ -956,7 +956,7 @@ API 级别 3.1.0
 
 ### ActionMenuTheme
 
-The theme for the ActionMenu
+ActionMenu 的主题
 
 Since:
 
@@ -1113,17 +1113,17 @@ Animate 通过随时间改变对象属性来工作，例如 Drawable 的 x 位�
 
 注意：
 
-Will cause an app crash if called from background or data field app, or from watch face while in low power mode
+如果从后台应用或数据字段应用调用，或在低功耗模式下从表盘调用，将导致应用崩溃
 
 Parameters:
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The object to animate
+    要设置动画的对象
 
 - property — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    The Symbol of the object's property to animate (e.g. :locX, :locY, etc.)
+    要设置动画的对象属性的 Symbol（例如：:locX、:locY 等）
 
 - type — ([WatchUi.AnimationType](/connect-iq/api-docs/Toybox/WatchUi/#AnimationType-module)) —
 
@@ -1131,15 +1131,15 @@ Parameters:
 
 - start — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The starting value of the property
+    属性的起始值
 
 - stop — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The ending value of the property
+    属性的结束值
 
 - period — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The duration of the animation in seconds
+    动画持续时间，单位为秒
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1261,7 +1261,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    True if the operation was successful, false otherwise.
+    如果操作成功，则为 true，否则为 false。
 
 
 Since:
@@ -1553,7 +1553,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if called from background, data field, glance, or watch face app; or of called from the base page of a widget
+    如果从后台、数据字段、速览或表盘应用调用，或者从小组件的基础页面调用，则会抛出此异常
 
 
 ### **pushView(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module))** as **Void**
@@ -1583,11 +1583,11 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown when view is type [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) and the visible map area parameters are invalid
+    如果 view 是 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 类型且可见地图区域参数无效，则抛出
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if called from background, data field, glance, or watch face app; or if the new view is a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a [GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), or a [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+    如果从后台、数据字段、速览或表盘应用调用，或者新视图是 [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)、[GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 或 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)，则会抛出此异常
 
 
 ### **requestUpdate()** as **Void**
@@ -1736,7 +1736,7 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The text to display in the notification toast.
+    要在通知提示中显示的文本。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1744,7 +1744,7 @@ Parameters:
 
 - :icon — ([Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The icon to display with this notification. If no icon is provided and the system requires an icon for a toast, the app icon will be used.
+        要随此通知显示的图标。如果未提供图标且系统要求 Toast 使用图标，则将使用应用程序图标。
 
 
 :::details 支持的设备
@@ -1869,7 +1869,7 @@ Parameters:
 
 - token — ([WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/)) —
 
-    The token that was passed as a parameter to a successful call to the callback parameter in [makeReviewTokenRequest](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function).
+    在 [makeReviewTokenRequest](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function) 中成功调用 callback 参数时作为参数传递的令牌。
 
 
 :::details 支持的设备
@@ -1986,7 +1986,7 @@ Parameters:
 
 - view — ([WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)) —
 
-    The View object to push
+    要推送的 View 对象
 
 - delegate — ([WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)) —
 
@@ -2005,4 +2005,4 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if called from background, data field, glance, or watch face app; or of called from the base page of a widget and the new view is native; or if the new view is a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a [GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), or a [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+    如果从后台、数据字段、速览或表盘应用调用，或者从小组件的基础页面调用且新视图为原生视图，或者新视图是 [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)、[GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 或 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)，则会抛出此异常

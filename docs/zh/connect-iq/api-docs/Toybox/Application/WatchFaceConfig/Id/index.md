@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Unique identifier for watchface config settings.
+表盘配置设置的唯一标识符。
 
 Since:
 

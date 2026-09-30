@@ -27,7 +27,7 @@ TextPicker 是一种特殊的 View，用于在应用中指定文本输入。使�
 
 注意：
 
-The look and feel of a text picker is device-specific.
+文本选择器的外观和交互方式因设备而异。
 
 Example:
 
@@ -266,7 +266,7 @@ Parameters:
 
 - initialText — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The initial text for the TextPicker
+    TextPicker 的初始文本
 
 
 Since:

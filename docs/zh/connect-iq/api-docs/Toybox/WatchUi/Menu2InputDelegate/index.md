@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Menu2InputDelegate 响应 Menu2 选择。
 
-This class should be extended to handle selected Menu2 items.
+应扩展此类以处理选中的 Menu2 项。
 
 ## 另见：
 
@@ -279,7 +279,7 @@ API 级别 3.0.0
 
 已选择 CustomMenu 页脚。
 
-This method is triggered on products with touch input when the user selects the footer area of a CustomMenu.
+在支持触摸输入的产品上，用户选择 CustomMenu 的页脚区域时会触发此方法。
 
 注意：
 
@@ -293,7 +293,7 @@ API 级别 3.0.0
 
 表示 *Next* *Page* 行为。
 
-This is typically triggered when at the bottom of a Menu and the down button ([KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)) or a [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) input is received.
+通常在菜单底部收到向下按钮（[KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)）或 [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 输入时触发。
 
 Returns:
 
@@ -310,7 +310,7 @@ API 级别 5.1.0
 
 表示 *Previous* *Page* 行为。
 
-This is typically triggered when at the top of a Menu and the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)) or a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) input is received.
+通常在菜单顶部收到向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 输入时触发。
 
 Returns:
 
@@ -331,7 +331,7 @@ Parameters:
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
-    The selected MenuItem.
+    选定的 MenuItem。
 
 
 Since:
@@ -342,7 +342,7 @@ API 级别 3.0.0
 
 已选择 CustomMenu 标题。
 
-This method is triggered on products with touch input when the user selects the title area of a CustomMenu.
+在支持触摸输入的产品上，用户选择 CustomMenu 的标题区域时会触发此方法。
 
 注意：
 
@@ -356,13 +356,13 @@ API 级别 3.0.0
 
 Menu2 正在准备换行。
 
-This method is triggered on button-based products when the user attempts to navigate off the end of a menu. If this method returns `false` the list will not wrap to the opposite end. If this method is not overridden, it will return `true` and allow the menu to wrap.
+当用户尝试在菜单末端继续导航时，基于按钮的产品会触发此方法。如果此方法返回 `false`，列表将不会循环到另一端。如果不重写此方法，它将返回 `true`，允许菜单循环。
 
 Parameters:
 
 - key — ([WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) —
 
-    The key from the [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) enumeration that is triggering the menu wrap.
+    触发菜单循环的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举中的键。
 
 
 Returns:

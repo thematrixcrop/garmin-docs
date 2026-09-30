@@ -26,18 +26,18 @@ API 级别 3.0.0
 
 - [**capacity**](#capacity-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    The capacity of the media cache.
+    媒体缓存的容量。
 
 - [**size**](#size-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    The current size of the media cache.
+    媒体缓存的当前大小。
 
 
 ## 实例属性详情
 
 ### var capacity as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-The capacity of the media cache
+媒体缓存的容量
 
 Since:
 
@@ -47,12 +47,12 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    The capacity in bytes
+    以字节为单位的容量
 
 
 ### var size as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-The current size of the media cache
+媒体缓存的当前大小
 
 Since:
 
@@ -62,4 +62,4 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    The size in bytes
+    大小，单位为字节

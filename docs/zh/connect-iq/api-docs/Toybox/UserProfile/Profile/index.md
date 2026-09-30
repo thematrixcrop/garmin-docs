@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-The profile object contains user information.
+Profile 对象包含用户信息。
 
-Values may be `null` if the value has not been configured or cannot be calculated.
+如果尚未配置值或无法计算值，则值可能为 `null`。
 
 Since:
 
@@ -56,15 +56,15 @@ API 级别 1.0.0
 
 - [**sleepTime**](#sleepTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-    Typical sleep time as configured by the user.
+    用户配置的典型睡眠时间。
 
 - [**upcomingSleepTime**](#upcomingSleepTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Upcoming sleep time if set, with current day-of-week and time-of-day taking into consideration.
+    如果已设置，则为即将到来的睡眠时间，同时考虑当前星期几和当天时间。
 
 - [**upcomingWakeTime**](#upcomingWakeTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Upcoming wake time if set, with current day-of-week and time-of-day taking into consideration.
+    如果已设置，则为即将到来的起床时间，同时考虑当前星期几和当天时间。
 
 - [**vo2maxCycling**](#vo2maxCycling-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -76,15 +76,15 @@ API 级别 1.0.0
 
 - [**wakeTime**](#wakeTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-    Typical wake time as configured by the user.
+    用户配置的典型起床时间。
 
 - [**walkingStepLength**](#walkingStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Walking step length as configured by the user.
+    由用户配置的步行步长。
 
 - [**weight**](#weight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Weight as configured by the user.
+    由用户配置的体重。
 
 
 ## 实例属性详情
@@ -238,7 +238,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The seven day average resting heart rate. Units are beats/min (bpm).
+    七天平均静息心率。单位为每分钟心跳次数（bpm）。
 
 
 ### var birthYear as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -253,7 +253,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The birth year as a four digit Number.
+    四位数的出生年份。
 
 
 ### var gender as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
@@ -295,7 +295,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The user's configured resting heart rate in beats per minute (bpm)
+    用户配置的静息心率，单位为每分钟心跳次数（bpm）
 
 
 ### var runningStepLength as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -315,7 +315,7 @@ Returns:
 
 ### var sleepTime as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-Typical sleep time as configured by the user
+用户配置的典型睡眠时间
 
 Since:
 
@@ -330,7 +330,7 @@ Returns:
 
 ### var upcomingSleepTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Upcoming sleep time if set, with current day-of-week and time-of-day taking into consideration. If current time-of-day has passed today's sleep time, the next day's sleep time will be returned.
+如果已设置，则为即将到来的睡眠时间，同时考虑当前星期几和当天时间。如果当前当天时间已过今日的睡眠时间，则返回次日的睡眠时间。
 
 Since:
 
@@ -345,7 +345,7 @@ Returns:
 
 ### var upcomingWakeTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Upcoming wake time if set, with current day-of-week and time-of-day taking into consideration. If current time-of-day has passed today's wake time, the next day's wake time will be returned.
+如果已设置，则为即将到来的起床时间，同时考虑当前星期几和当天时间。如果当前当天时间已过今日的起床时间，则返回次日的起床时间。
 
 Since:
 
@@ -501,7 +501,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The VO2 Max value for cycling activity. Units are mL/kg/min.
+    骑行活动的 VO2 Max 值。单位为 mL/kg/min。
 
 
 ### var vo2maxRunning as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -647,12 +647,12 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The VO2 Max value for running activity. Units are mL/kg/min.
+    跑步活动的 VO2 Max 值。单位为 mL/kg/min。
 
 
 ### var wakeTime as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-Typical wake time as configured by the user
+用户配置的典型起床时间
 
 Since:
 
@@ -667,7 +667,7 @@ Returns:
 
 ### var walkingStepLength as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Walking step length as configured by the user
+由用户配置的步行步长
 
 Since:
 
@@ -677,12 +677,12 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Walking step length in millimeters (mm)
+    步行步长，单位为毫米（mm）
 
 
 ### var weight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Weight as configured by the user
+由用户配置的体重
 
 Since:
 
@@ -692,4 +692,4 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Weight in grams (g)
+    体重，单位为克（g）

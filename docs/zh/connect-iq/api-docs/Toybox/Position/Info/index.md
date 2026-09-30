@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The Position.Info class contains all of the information provided by the positioning system.
+Position.Info 类包含定位系统提供的所有信息。
 
 Position Info 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时获取，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
@@ -235,7 +235,7 @@ API 级别 1.0.0
 
 位置精度。
 
-This is given as one of the following values: good, usable, poor, or not available, which corresponds with the Position.QUALITY\_\* constants. This cannot be `null`.
+此值为以下值之一：good、usable、poor 或 not available，对应于 Position.QUALITY\_\* 常量。此值不能为 `null`。
 
 Since:
 
@@ -271,7 +271,7 @@ Returns:
 
 以弧度为单位的真北参考航向。
 
-This provides the direction of travel when moving. If supported by the device, it provides compass orientation when stopped.
+此项提供移动时的行进方向。如果设备支持，则在静止时提供罗盘方向。
 
 Since:
 

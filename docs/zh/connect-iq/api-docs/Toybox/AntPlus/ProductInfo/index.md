@@ -78,7 +78,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The product serial number
+    产品序列号
 
 
 ### var swRevisionMain as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -93,7 +93,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The main software revision of the product
+    产品的主软件修订版本
 
 
 ### var swRevisionSupplemental as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -108,7 +108,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The supplemental software revision of the product
+    产品的补充软件修订版本
 
 
 ## 实例方法详情

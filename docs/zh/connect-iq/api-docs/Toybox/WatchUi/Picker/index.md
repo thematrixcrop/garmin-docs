@@ -30,7 +30,7 @@ Picker 由一个或多个可选择对象、标题、下一个和上一个箭头�
      new NumberFactory();
 ```
 
-This Picker will have three entries: a choosable number, a non-choosable "-", and another choosable number.
+此 Picker 将包含三项：一个可选择的数字、一个不可选择的 "-"，以及另一个可选择的数字。
 
 ## 另见：
 
@@ -45,7 +45,7 @@ This Picker will have three entries: a choosable number, a non-choosable "-", an
 
 注意：
 
-The look and feel of a Picker is device-specific, though every device will have the same general layout.
+Picker 的外观和交互方式因设备而异，但每台设备都具有相同的总体布局。
 
 Since:
 
@@ -297,7 +297,7 @@ Parameters:
 
 - :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The title for the Picker (required)
+        Picker 的标题（必需）
 
 - :pattern — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

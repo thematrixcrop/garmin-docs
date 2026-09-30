@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 MenuInputDelegate 响应 Menu 选择。
 
-This class should be extended to handle selected Menu items.
+应扩展此类以处理选中的 Menu 项。
 
 ## 另见：
 
@@ -78,13 +78,13 @@ API 级别 1.0.0
 
 已选择一个菜单项。
 
-This method is called when a Menu item has been selected, and receives the Menu item as an argument.
+选择 Menu 项时会调用此方法，并将该 Menu 项作为参数接收。
 
 Parameters:
 
 - item — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    The identifier of the chosen Menu item
+    所选菜单项的标识符
 
 
 Since:

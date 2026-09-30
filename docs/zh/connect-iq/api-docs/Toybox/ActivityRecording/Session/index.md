@@ -97,7 +97,7 @@ Parameters:
 
 - name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The name of the Field as a String
+    Field 的名称，类型为 String
 
 - 最大长度可能因产品而异。
 
@@ -106,11 +106,11 @@ Parameters:
 
 - fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The unique Field Identifier for the Field
+    Field 的唯一 Field Identifier
 
 - type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
-    The type definition for the Field from the DATA\_TYPE\_\* enumerator in the [FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) module
+    [FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) 模块中 DATA\_TYPE\_\* 枚举器的 Field 类型定义
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -118,9 +118,9 @@ Parameters:
 
 - :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of elements to add to the Field if it is an Array
+        如果 Field 是 Array，要添加到 Field 的元素数
 
-- This is also the maximum combined size of strings plus `null` terminators if the type is DATA\_TYPE\_STRING (Default 1)
+- 如果类型为 DATA\_TYPE\_STRING，这也是字符串加上 `null` 终止符的最大组合大小（默认为 1）
 
 - 每条消息中应用的总字节数限制为 256。
 
@@ -131,7 +131,7 @@ Parameters:
 
 - :mesgType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The message type that this Field should be added to
+        应将此 Field 添加到的消息类型
 
 - 如果未提供，则默认为 [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)
 
@@ -140,9 +140,9 @@ Parameters:
 
 - :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        The display units as a String
+        以 String 表示的显示单位
 
-- This should use the current device language
+- 此项应使用当前设备语言
 
 - 最大长度可能因产品而异。
 
@@ -158,7 +158,7 @@ Returns:
 
 - [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) —
 
-    The resulting Field object
+    生成的 Field 对象
 
 
 另见：
@@ -223,9 +223,9 @@ API 级别 1.0.0
 
 设置 Session 计时器事件的监听器
 
-The listener method is called whenever a new timer event occurs.
+每当发生新的计时器事件时，都会调用侦听器方法。
 
-The keys in the Dictionary passed to the listener callback depend on the the value of the eventType parameter.
+传递给监听器回调的 Dictionary 中的键取决于 eventType 参数的值。
 
 Parameters:
 

@@ -5,9 +5,9 @@ title: "Module: Toybox.BluetoothLowEnergy"
 
 ## 概述
 
-The BluetoothLowEnergy module provides access to Generic BLE communication functionality in the central role. Including the ability to scan for peripheral devices, pair with sensors, and performing GATTC operations on a peripheral
+BluetoothLowEnergy 模块提供中心角色下的通用 BLE 通信功能，包括扫描外围设备、与传感器配对以及对外围设备执行 GATTC 操作的功能
 
-This module also provides several sets of constants:
+此模块还提供以下几组常量：
 
 Since:
 
@@ -216,7 +216,7 @@ API 级别 3.1.0
 
 |
 
-Write Request Failed
+写入请求失败
 
 |
 | STATUS\_GATT\_INSUFFICIENT\_AUTHENTICATION\_FAIL | 18 |
@@ -339,7 +339,7 @@ API 级别 3.1.0
 
 |
 
-Write with response
+带响应写入
 
 |
 | WRITE\_TYPE\_DEFAULT | 1 |
@@ -348,7 +348,7 @@ API 级别 3.1.0
 
 |
 
-Write without response (Default write type)
+不带响应写入（默认写入类型）
 
 |
 
@@ -426,7 +426,7 @@ API 级别 5.1.0
 
 - [**unpairDevice**](#unpairDevice-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) as **Void**
 
-    Unpairs a peripheral device from the system If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect.
+    取消外围设备与系统的配对。如果设备已连接，BLE 子系统将断开与该设备的连接，并且不会尝试重新连接。
 
 
 ## 实例方法详情
@@ -439,7 +439,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    Uuid Object for the Client Characteristic Configuration Descriptor
+    客户端特性配置描述符的 Uuid 对象
 
 
 另见：
@@ -459,7 +459,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of available connections
+    可用连接数
 
 
 Since:
@@ -604,9 +604,9 @@ API 级别 3.1.0
 
 将扫描中发现的外围设备与系统配对。
 
-The BLE Subsystem will begin to search for the device specified by the scanResult parameter. Once the device is found and connected, [onConnectedStateChanged()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onConnectedStateChanged-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the associated [Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) object
+BLE 子系统将开始搜索 scanResult 参数指定的设备。找到并连接设备后，将在已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上调用 [onConnectedStateChanged()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onConnectedStateChanged-instance_function)，并传入关联的 [Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) 对象
 
-This pairing does not persist across application instances.
+此配对不会跨应用实例持久化。
 
 Parameters:
 
@@ -619,7 +619,7 @@ Returns:
 
 - [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
 
-    the device that was added to the paired list or `null` if the device could not be paired.
+    添加到已配对列表中的设备；如果设备无法配对，则为 `null`。
 
 
 Since:
@@ -630,7 +630,7 @@ Throws:
 
 - ([BluetoothLowEnergy.DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/)) —
 
-    Thrown if the maximum number of paired devices has already been reached, or if pairing failed for unkown reason
+    如果已达到配对设备的最大数量，或因未知原因导致配对失败，则抛出
 
 
 ### **registerProfile(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> })** as **Void**
@@ -639,7 +639,7 @@ Throws:
 
 调用此函数定义应用中将使用的所有 Profile。执行 GATT 操作时，只有已注册的特征和描述符可用
 
-When the operation is completed, [onProfileRegister()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onProfileRegister-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the UUID and a Status.
+操作完成后，将在已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上调用 [onProfileRegister()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onProfileRegister-instance_function)，并传入 UUID 和 Status。
 
 如果注册的 Profile 太多，注册可能会失败；当前限制为 3 个。
 
@@ -688,13 +688,13 @@ Throws:
 
 注意：
 
-The default value is CONNECTION\_TYPE\_DEFAULT. Using the value of CONNECTION\_TYPE\_SECURE\_PAIR\_BOND will pair and bond the device as part of the pairing process.
+默认值为 CONNECTION\_TYPE\_DEFAULT。使用 CONNECTION\_TYPE\_SECURE\_PAIR\_BOND 的值将在配对过程中对设备进行配对和绑定。
 
 Parameters:
 
 - connectionStrategy — ([BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) —
 
-    The desired connection type to use for connecting to all the BLE devices.
+    用于连接所有 BLE 设备的所需连接类型。
 
 
 Since:
@@ -778,7 +778,7 @@ Throws:
 
 ### **unpairDevice(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/))** as **Void**
 
-Unpairs a peripheral device from the system
+取消外围设备与系统的配对
 
 如果设备已连接，BLE 子系统将断开与设备的连接，且不会尝试重新连接。如果设备未连接，系统将停止搜索设备。
 
@@ -786,7 +786,7 @@ Parameters:
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
-    the device to remove from the paired device store. Cannot be `null`
+    要从已配对设备存储中移除的设备。不能为 `null`
 
 
 Since:

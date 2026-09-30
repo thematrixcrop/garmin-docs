@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that an app attempted to access a Symbol that is not accessible to its app type.
+此异常表示应用尝试访问一个对其应用类型不可访问的 Symbol。
 
 ## 另见：
 

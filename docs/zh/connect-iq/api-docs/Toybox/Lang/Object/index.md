@@ -83,7 +83,7 @@ API 级别 1.0.0
 
 获取 Object 的哈希代码值。
 
-This computes a 32-bit Number that is typically used as an index when placing Objects into a Dictionary. Hash code values have the following characteristics:
+此方法计算一个通常用作将 Object 放入 Dictionary 时索引的 32 位 Number。Hash code 值具有以下特征：
 
 - 计算得到的哈希码在 Object 的整个生命周期内保持不变
 
@@ -112,13 +112,13 @@ API 级别 1.0.0
 
 获取指向 Method 的回调。
 
-This is typically used when supplying a callback function to another method.
+通常在向另一个方法提供回调函数时使用。
 
 Parameters:
 
 - methodName — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    The Symbol of the specified Method
+    指定 Method 的 Symbol
 
 
 Returns:

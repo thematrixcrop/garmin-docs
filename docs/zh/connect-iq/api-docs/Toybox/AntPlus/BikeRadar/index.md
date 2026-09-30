@@ -200,7 +200,7 @@ Parameters:
 
 - listener — ([AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)) —
 
-    The bike radar instance optionally takes an extension of the [BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the [getRadarInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/) method.
+    自行车雷达实例的参数可选用 [BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) 类的扩展类。如果用户计划仅使用 [getRadarInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/) 方法轮询数据，也可以传入 `null`。
 
 
 Since:

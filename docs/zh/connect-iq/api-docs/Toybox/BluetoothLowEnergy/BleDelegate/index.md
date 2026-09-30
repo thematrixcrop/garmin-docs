@@ -89,11 +89,11 @@ Parameters:
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
-    The characteristic that changed
+    已更改的特征
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    The updated value of the characteristic
+    特征的更新值
 
 
 Since:
@@ -108,7 +108,7 @@ Parameters:
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
-    The characteristic that was read.
+    已读取的特征。
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 
@@ -131,7 +131,7 @@ Parameters:
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
-    The characteristic that was written.
+    已写入的特征。
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 
@@ -169,7 +169,7 @@ Parameters:
 
 - descriptor — ([BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/)) —
 
-    The descriptor that was read
+    已读取的描述符
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 
@@ -192,7 +192,7 @@ Parameters:
 
 - descriptor — ([BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/)) —
 
-    The descriptor that was written
+    已写入的描述符
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 

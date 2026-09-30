@@ -30,19 +30,19 @@ API 级别 3.0.0
 
 - [**artist**](#artist-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The name of the artist.
+    艺术家的姓名。
 
 - [**genre**](#genre-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The genre.
+    流派。
 
 - [**title**](#title-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The track title.
+    轨迹标题。
 
 - [**trackNumber**](#trackNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The track number.
+    轨迹编号。
 
 
 ## 实例属性详情
@@ -61,7 +61,7 @@ Returns:
 
 ### var artist as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The name of the artist
+艺术家的姓名
 
 Since:
 
@@ -73,7 +73,7 @@ Returns:
 
 ### var genre as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The genre
+流派
 
 Since:
 
@@ -85,7 +85,7 @@ Returns:
 
 ### var title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The track title
+轨迹标题
 
 Since:
 
@@ -97,7 +97,7 @@ Returns:
 
 ### var trackNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The track number
+轨迹编号
 
 Since:
 

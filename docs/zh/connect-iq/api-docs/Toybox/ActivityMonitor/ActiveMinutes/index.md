@@ -193,7 +193,7 @@ Returns:
 
 设备记录的活动分钟总数。
 
-This value is equal to the total number of moderate minutes plus twice the total number of vigorous minutes.
+此值等于中等强度分钟总数加上高强度分钟总数的两倍。
 
 Since:
 

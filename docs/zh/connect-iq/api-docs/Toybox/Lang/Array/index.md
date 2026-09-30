@@ -71,13 +71,13 @@ API 级别 1.0.0
 
 将一个对象添加到 Array 的末尾。
 
-When adding an Object, the Array size is increased by one and the new Object is inserted at the new index.
+添加 Object 时，Array 大小会增加 1，新 Object 会插入到新索引处。
 
 Parameters:
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to be added to the Array
+    要添加到 Array 的 Object
 
 
 Returns:
@@ -95,13 +95,13 @@ API 级别 1.3.0
 
 将一个对象数组添加到 Array 的末尾。
 
-When adding an Array of Objects, the Array is expanded by the size of the provided Array, and all of the new elements are inserted starting at the new index.
+添加 Object 的 Array 时，Array 会按所提供 Array 的大小扩展，所有新元素都会从新索引开始插入。
 
 Parameters:
 
 - array — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The Array of Objects to be added to the Array
+    要添加到数组中的对象数组
 
 
 Returns:
@@ -123,14 +123,14 @@ Parameters:
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object whose index is to be found
+    要查找其索引的 Object
 
 
 Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The index of the first instance of the provided Object in the Array. If the Object is not found, -1 is returned.
+    Array 中所提供 Object 第一次出现的索引。如果未找到该 Object，则返回 -1。
 
 
 Since:
@@ -147,7 +147,7 @@ Parameters:
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The object to be removed from the Array
+    要从 Array 中移除的对象
 
 
 Returns:
@@ -171,7 +171,7 @@ Parameters:
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to be removed from the Array
+    要从 Array 中移除的 Object
 
 
 Returns:
@@ -208,7 +208,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The number of elements in the Array
+    Array 中的元素数
 
 
 Since:
@@ -288,14 +288,14 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the default comparator is used to compare values that are not directly comparable.
+    如果使用默认比较器比较无法直接比较的值，则抛出。
 
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 将 Array 转换为 String。
 
-This does not convert the elements of the Array into Strings, but transforms the entire Array into a String.
+此方法不会将 Array 的元素转换为 Strings，而是将整个 Array 转换为 String。
 
 Example:
 

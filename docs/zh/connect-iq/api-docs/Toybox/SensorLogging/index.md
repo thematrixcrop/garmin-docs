@@ -5,7 +5,7 @@ title: "Module: Toybox.SensorLogging"
 
 ## 概述
 
-The SensorLogging module contains the interface for logging sensor data.
+SensorLogging 模块包含记录传感器数据的接口。
 
 Since:
 

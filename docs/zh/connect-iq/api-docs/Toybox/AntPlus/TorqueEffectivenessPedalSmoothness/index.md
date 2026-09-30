@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The TorqueEffectivenessPedalSmoothness object represents the instantaneous torque effectiveness and pedal smoothness.
+TorqueEffectivenessPedalSmoothness 对象表示即时扭矩效率和踏板平顺性。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

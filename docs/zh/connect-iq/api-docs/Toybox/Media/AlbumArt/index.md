@@ -26,7 +26,7 @@ API 级别 3.0.0
 
 - [**image\_format**](#image_format-var) as [Media.ImageFormat](/connect-iq/api-docs/Toybox/Media/#ImageFormat-module)
 
-    The image format of the album art.
+    专辑封面的图像格式。
 
 - [**image\_offset**](#image_offset-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -37,7 +37,7 @@ API 级别 3.0.0
 
 ### var image\_format as [Media.ImageFormat](/connect-iq/api-docs/Toybox/Media/#ImageFormat-module)
 
-The image format of the album art
+专辑封面的图像格式
 
 Since:
 

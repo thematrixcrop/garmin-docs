@@ -131,7 +131,7 @@ API 级别 2.4.0
 
 - [**getSensorPosition**](#getSensorPosition-instance_function)() as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
-    Use getSensorPosition() to retrieve the position of the sensor on the body.
+    使用 getSensorPosition() 获取传感器在身体上的位置。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)
 
@@ -157,7 +157,7 @@ API 级别 2.4.0
 
 ### **getSensorPosition()** as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
-Use getSensorPosition() to retrieve the position of the sensor on the body
+使用 getSensorPosition() 获取传感器在身体上的位置
 
 Returns:
 
@@ -178,7 +178,7 @@ Parameters:
 
 - listener — ([AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)) —
 
-    The running dynamics instance optionally takes an extension of the [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
+    运行 dynamics 实例时，可以选择将 [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
 Since:

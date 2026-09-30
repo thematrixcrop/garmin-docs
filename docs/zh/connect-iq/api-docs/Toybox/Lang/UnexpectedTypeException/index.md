@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates an incorrect type was passed for a parameter.
+此异常表示为参数传递了错误的类型。
 
 ## 另见：
 

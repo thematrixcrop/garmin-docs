@@ -5,7 +5,7 @@ title: "Module: Toybox.Time.Gregorian"
 
 ## 概述
 
-The Gregorian module provides an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
+Gregorian 模块提供一个接口，用于根据公历获取 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象和 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 对象。
 
 为方便使用，定义了几个时间常量，分别表示每年、每天、每小时和每分钟的秒数。
 
@@ -33,7 +33,7 @@ API 级别 1.0.0
 
 |
 
-The number of seconds in one day
+一天中的秒数
 
 |
 | 类型 | SECONDS\_PER\_HOUR | 3600 |
@@ -42,7 +42,7 @@ API 级别 1.0.0
 
 |
 
-The number of seconds in one hour
+一小时中的秒数
 
 |
 | 类型 | SECONDS\_PER\_MINUTE | 60 |
@@ -51,7 +51,7 @@ API 级别 1.0.0
 
 |
 
-The number of seconds in one minute
+一分钟中的秒数
 
 |
 | 类型 | SECONDS\_PER\_YEAR | 31557600 |
@@ -60,7 +60,7 @@ API 级别 1.0.0
 
 |
 
-The number of seconds in one year
+一年中的秒数
 
 |
 
@@ -280,7 +280,7 @@ December
 
 从选项字典创建 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)。
 
-This is an alternative to [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function) that allows the Duration to be made more easily, using familiar units, which can be handy when building a Duration manually.
+这是 [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function) 的替代方案，可以使用熟悉的单位更轻松地创建 Duration，在手动构建 Duration 时非常方便。
 
 选项值表示为 32 位有符号整数。
 
@@ -292,23 +292,23 @@ Parameters:
 
 - :years — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of years (max 69)
+        年数（最大值为 69）
 
 - :days — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of days (max 24855)
+        天数（最大值为 24855）
 
 - :hours — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of hours (max 596523)
+        小时数（最大值为 596523）
 
 - :minutes — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of minutes (max 35791394)
+        分钟数（最大值为 35791394）
 
 - :seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of seconds (max 2147483647)
+        秒数（最大值为 2147483647）
 
 
 Example:
@@ -324,7 +324,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    The Duration representing the specified span of time
+    表示指定时间跨度的 Duration
 
 
 另见：
@@ -392,11 +392,11 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    The location to use to determine the time zone offset and daylight saving time rules.
+    用于确定时区偏移和夏令时规则的位置。
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    The UTC time to find the local time for.
+    要查找其本地时间的 UTC 时间。
 
 
 :::details 支持的设备
@@ -549,7 +549,7 @@ API 级别 3.3.0
   Each option value is assumed to be in the UTC time zone.
 ```
 
-Unlike [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function), which is based on the UNIX epoch, a Moment created with Gregorian.moment() is based on [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function). The result is determined by taking the result of [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function) and overlaying the options provided.
+与基于 UNIX 纪元的 [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function) 不同，使用 Gregorian.moment() 创建的 Moment 基于 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function)。结果通过获取 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function) 的结果并叠加所提供的选项来确定。
 
 Parameters:
 
@@ -559,27 +559,27 @@ Parameters:
 
 - :year — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The year (1970-2106)
+        年份（1970-2106）
 
 - :month — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-        The month (1-12) or a Symbol (:january, :february, ...)
+        月份（1-12）或 Symbol（:january、:february、...）
 
 - :day — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The day of month (1-31)
+        月份中的日期（1-31）
 
 - :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The hour (0-23)
+        小时（0-23）
 
 - :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The minute (0-59)
+        分钟（0-59）
 
 - :second — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The second (0-59)
+        秒（0-59）
 
 
 Example:

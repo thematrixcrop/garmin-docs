@@ -99,7 +99,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The UTF-32 representation of the Char interpreted as a Number
+    解释为 Number 的 Char 的 UTF-32 表示形式
 
 
 Since:
@@ -114,7 +114,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The String representation of the Char
+    Char 的 String 表示形式
 
 
 Since:

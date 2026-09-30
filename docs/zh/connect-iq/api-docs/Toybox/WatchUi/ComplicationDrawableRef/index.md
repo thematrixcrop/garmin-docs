@@ -89,11 +89,11 @@ Parameters:
 
 - :drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        The drawable object.
+        Drawable 对象。
 
 - :boundingBox — ([Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)) —
 
-        The bounding box of the drawable object, used to highlight the outline of drawable object and allocate buffer to render the drawable for animating purpose.
+        可绘制对象的边界框，用于突出显示可绘制对象的轮廓，并为动画渲染可绘制对象分配缓冲区。
 
 
 Since:
@@ -104,4 +104,4 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if invalid values were provided.
+    如果提供了无效值，则会抛出此异常。

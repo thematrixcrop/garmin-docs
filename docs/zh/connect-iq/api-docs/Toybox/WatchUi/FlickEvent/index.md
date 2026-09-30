@@ -186,7 +186,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The direction of the flick in degrees
+    以度为单位的轻扫方向
 
 
 Since:
@@ -201,7 +201,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The length of the flick in pixels.
+    轻拂操作的长度，单位为像素。
 
 
 Since:
@@ -216,7 +216,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    The velocity of the flick in pixels per second
+    轻扫速度，单位为每秒像素数
 
 
 Since:

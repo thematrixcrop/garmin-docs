@@ -22,7 +22,7 @@ Drawable 是可绘制对象的基类。
 
 Example:
 
-Using a Drawable defined as a resource
+使用定义为资源的 Drawable
 
 ```
 // The drawable.xml file contents:
@@ -217,7 +217,7 @@ Constructor
 
 注意：
 
-The option `:visible` is only supported with ConnectIQ 3.3.0 and later.
+选项 `:visible` 仅支持 ConnectIQ 3.3.0 及更高版本。
 
 Parameters:
 
@@ -227,7 +227,7 @@ Parameters:
 
 - :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-        The identifier for the Drawable object
+        Drawable 对象的标识符
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -239,11 +239,11 @@ Parameters:
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The clip width of the Drawable object
+        Drawable 对象的裁剪宽度
 
 - :height — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The clip height of the Drawable object
+        Drawable 对象的裁剪高度
 
 - :visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -262,11 +262,11 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The horizontal position on the screen
+    屏幕上的水平位置
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The vertical position on the screen
+    屏幕上的垂直位置
 
 
 Since:
@@ -281,11 +281,11 @@ Parameters:
 
 - w — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The width of the Drawable object
+    Drawable 对象的宽度
 
 - h — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The height of the Drawable object
+    Drawable 对象的高度
 
 
 Since:

@@ -48,26 +48,26 @@ API 级别 2.4.0
 
 - [**bikeWeight**](#bikeWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The bike weight set for simulation training mode.
+    模拟训练模式下设置的自行车重量。
 
 - [**gearRatio**](#gearRatio-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The gear ratio set for simulation training mode.
+    模拟训练模式下设置的齿轮比。
 
 - [**userWeight**](#userWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The user weight set for simulation training mode.
+    为模拟训练模式设置的用户体重。
 
 - [**wheelDiameter**](#wheelDiameter-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The wheel diameter set for simulation training mode.
+    为模拟训练模式设置的车轮直径。
 
 
 ## 实例属性详情
 
 ### var bikeWeight as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The bike weight set for simulation training mode
+模拟训练模式下设置的自行车重量
 
 Since:
 
@@ -82,7 +82,7 @@ Returns:
 
 ### var gearRatio as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The gear ratio set for simulation training mode
+模拟训练模式下设置的齿轮比
 
 Since:
 
@@ -97,7 +97,7 @@ Returns:
 
 ### var userWeight as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The user weight set for simulation training mode
+为模拟训练模式设置的用户体重
 
 Since:
 
@@ -112,7 +112,7 @@ Returns:
 
 ### var wheelDiameter as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The wheel diameter set for simulation training mode
+为模拟训练模式设置的车轮直径
 
 Since:
 

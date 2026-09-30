@@ -5,7 +5,7 @@ title: "Module: Toybox.Position"
 
 ## 概述
 
-The Position module provides an interface for location information and positioning sensors.
+Position 模块为位置信息和定位传感器提供接口。
 
 此模块还提供两组常量：
 
@@ -41,7 +41,7 @@ API 级别 1.0.0
 
 **此项已弃用**
 
-This enum may be removed after System 10.
+此枚举可能会在 System 10 之后移除。
 
 Since:
 
@@ -54,7 +54,7 @@ API 级别 3.2.0
 
 |
 
-Use the GPS satellite constellation
+使用 GPS 卫星星座
 
 |
 | CONSTELLATION\_GLONASS | 1 |
@@ -63,7 +63,7 @@ API 级别 3.2.0
 
 |
 
-Use the GLONASS satellite constellation
+使用 GLONASS 卫星星座
 
 |
 | CONSTELLATION\_GALILEO | 2 |
@@ -72,7 +72,7 @@ API 级别 3.2.0
 
 |
 
-Use the GALILEO satellite constellation
+使用 GALILEO 卫星星座
 
 |
 
@@ -168,7 +168,7 @@ API 级别 1.0.0
 
 |
 
-The decimal degree format: ddd.dddddd (e.g. 38.278652)
+十进制度格式：ddd.dddddd（例如 38.278652）
 
 | -   [Decimal Degrees](https://en.wikipedia.org/wiki/Decimal_degrees)
 |
@@ -178,7 +178,7 @@ API 级别 1.0.0
 
 |
 
-The degrees/decimal minutes format: dddmm.mmm (e.g 38 27.865')
+度/十进制度分格式：dddmm.mmm（例如 38 27.865'）
 
  |  |
 | GEO\_DMS | 2 |
@@ -223,7 +223,7 @@ API 级别 1.0.0
 
 |
 
-The Location is based on the last known GPS fix.
+该 Location 基于最近一次已知的 GPS 定位结果。
 
  |  |
 | QUALITY\_POOR | 2 |
@@ -232,7 +232,7 @@ API 级别 1.0.0
 
 |
 
-The Location was calculated with a poor GPS fix. Only a 2-D GPS fix is available, likely due to a limited number of tracked satellites.
+该 Location 使用较差的 GPS 定位结果计算得出。仅可用 2-D GPS 定位结果，可能是由于跟踪到的卫星数量有限。
 
  |  |
 | QUALITY\_USABLE | 3 |
@@ -241,7 +241,7 @@ API 级别 1.0.0
 
 |
 
-The Location was calculated with a usable GPS fix. A 3-D GPS fix is available, with marginal HDOP (horizontal dilution of precision)
+该 Location 使用可用的 GPS 定位结果计算得出。可用 3-D GPS 定位结果，但 HDOP（水平精度因子）处于临界水平
 
 | -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
 |
@@ -251,7 +251,7 @@ API 级别 1.0.0
 
 |
 
-The Location was calculated with a good GPS fix. A 3-D GPS fix is available, with good-to-excellent HDOP (horizontal dilution of precision).
+该 Location 使用良好的 GPS 定位结果计算得出。可用 3-D GPS 定位结果，并且 HDOP（水平精度因子）为良好至优秀。
 
 | -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
 |
@@ -368,7 +368,7 @@ API 级别 3.0.3
 
 请求 Location 事件。
 
-Using this API requires enabling the Positioning Permission. Only Device Apps and Widgets may use this API.
+使用此 API 需要启用定位权限。只有设备应用和小组件可以使用此 API。
 
 注意：
 
@@ -639,14 +639,14 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if :acquisitionType is invalid, if a specific CONSTELLATION\_\* value is not supported by a device, or if an invalid combination of constellation values are specified.
+    如果 :acquisitionType 无效、设备不支持特定的 CONSTELLATION\_\* 值，或指定了无效的星座值组合，则会抛出此异常。
 
 
 ### **getInfo()** as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
 获取当前 [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)。
 
-Using this API requires enabling the Positioning Permission. This is useful for retrieving the current position info either on demand or periodically within a [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/).
+使用此 API 需要启用定位权限。这对于在 [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/) 中按需或定期获取当前位置信息很有用。
 
 Example:
 
@@ -999,13 +999,13 @@ API 级别 3.3.6
 
 将 String 转换为 Location 对象。
 
-The input String must be in one of the four formats described by the [Position.GEO\_\*](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module) constants.
+输入 String 必须采用 [Position.GEO\_\*](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module) 常量描述的四种格式之一。
 
 Parameters:
 
 - string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The String to parse
+    要解析的 String
 
 - format — ([Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) —
 

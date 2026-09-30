@@ -52,11 +52,11 @@ API 级别 2.4.0
 
 - [**slope**](#slope-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The slope (grade) setting of the simulated track.
+    模拟路线的坡度（等级）设置。
 
 - [**surfaceResistance**](#surfaceResistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The simulated surface resistance coefficient for simulation mode.
+    模拟模式的模拟表面阻力系数。
 
 - [**windResistance**](#windResistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -64,7 +64,7 @@ API 级别 2.4.0
 
 - [**windSpeed**](#windSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The simulated wind speed setting for simulation mode.
+    模拟模式的模拟风速设置。
 
 
 ## 实例属性详情
@@ -86,7 +86,7 @@ Returns:
 
 ### var slope as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The slope (grade) setting of the simulated track
+模拟路线的坡度（等级）设置
 
 Since:
 
@@ -131,7 +131,7 @@ Returns:
 
 ### var windSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The simulated wind speed setting for simulation mode
+模拟模式的模拟风速设置
 
 Since:
 

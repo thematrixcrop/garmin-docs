@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that an invalid operation was attempted.
+此异常表示尝试执行了无效操作。
 
 Since:
 

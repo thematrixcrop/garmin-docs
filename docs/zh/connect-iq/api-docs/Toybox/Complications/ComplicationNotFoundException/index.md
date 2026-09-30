@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates that the requested complication was not found.
+此异常表示未找到请求的 complication。
 
 ## 另见：
 

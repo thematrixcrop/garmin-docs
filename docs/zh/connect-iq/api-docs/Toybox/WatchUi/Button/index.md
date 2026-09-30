@@ -54,7 +54,7 @@ API 级别 2.1.0
 
 - [**background**](#background-var) as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    The Button background A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value, or 24-bit integer of the form 0xRRGGBB to be drawn before the current Selectable state is drawn.
+    按钮背景。在绘制当前 Selectable 状态之前，要绘制的 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值或格式为 0xRRGGBB 的 24 位整数。
 
 - [**behavior**](#behavior-var) as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) or **Null**
 
@@ -76,7 +76,7 @@ API 级别 2.1.0
 
 ### var background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-The Button background
+按钮背景
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值或格式为 0xRRGGBB 的 24 位整数，在绘制当前 Selectable 状态之前进行绘制。
 
@@ -92,7 +92,7 @@ Returns:
 
 描述按钮被选中时执行的行为方法的 Symbol。
 
-This Symbol must be a member of the active View object's registered BehaviorDelegate, such as :onBack, but may also be a Symbol from an extended class. If the value is `null`, then a [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/) will be issued.
+此 Symbol 必须是活动 View 对象的已注册 BehaviorDelegate 的成员，例如 :onBack，但也可以是扩展类中的 Symbol。如果值为 `null`，则会发出 [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)。
 
 Since:
 

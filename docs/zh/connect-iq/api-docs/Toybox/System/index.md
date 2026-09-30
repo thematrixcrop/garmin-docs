@@ -5,7 +5,7 @@ title: "Module: Toybox.System"
 
 ## 概述
 
-The System module provides basic system information, including access to the clock time, device settings, battery level, and memory use.
+System 模块提供基本系统信息，包括访问时钟时间、设备设置、电池电量和内存使用情况。
 
 Since:
 
@@ -600,7 +600,7 @@ API 级别 5.0.0
 
 ### PhoneOperatingSystem
 
-The platform associated with a connected phone.
+与已连接手机关联的平台。
 
 Since:
 
@@ -678,13 +678,13 @@ API 级别 5.1.0
 
 注意：
 
-There are never really too many bananas.
+香蕉永远不会嫌多。
 
 Parameters:
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The error message to output
+    要输出的错误消息
 
 
 Example:
@@ -706,7 +706,7 @@ API 级别 1.0.0
 
 结束当前应用的执行。
 
-This will exit the system cleanly from any point within an app.
+此项将从应用内的任意位置正常退出系统。
 
 Since:
 
@@ -716,13 +716,13 @@ API 级别 1.0.0
 
 退出当前应用并启动新应用。
 
-This may only be called by watch-apps and widgets, and may only target watch-apps (both native activities and Connect IQ apps) and widgets. This is an asynchronous request that presents a confirmation dialog to launch the Intent. If confirmed, the current app will exit. Otherwise, the app will continue to run without exiting.
+此函数只能由 watch-app 和小组件调用，并且只能针对 watch-app（包括原生活动和 Connect IQ 应用）及小组件。这是一个异步请求，用于显示确认对话框以启动 Intent。如果确认，当前应用将退出。否则，应用将继续运行而不退出。
 
 Parameters:
 
 - intent — ([System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) —
 
-    The Intent to trigger
+    要触发的 Intent
 
 
 Example:
@@ -880,7 +880,7 @@ API 级别 1.0.0
 
 注意：
 
-The returned value typically starts at zero on device boot and will roll over periodically. Assuming the timer starts at zero, this will happen ~25 days after a reboot, and every ~50 days thereafter.
+返回值通常在设备启动时从零开始，并会定期回绕。假设计时器从零开始，这将在重启后约 25 天发生，此后每约 50 天发生一次。
 
 Returns:
 
@@ -898,12 +898,12 @@ Parameters:
 
 - uri — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URI that specifies an app
+    指定应用的 URI
 
 
 Example:
 
-Valid URI formats
+有效的 URI 格式
 
 ```
 manifest-id://[manifest ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
@@ -925,7 +925,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if an invalid URI format is provided
+    如果提供了无效的 URI 格式，则会抛出此异常
 
 
 ### **print(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**

@@ -71,11 +71,11 @@ API 级别 3.0.0
 
 - [**playbackNotificationThreshold**](#playbackNotificationThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of seconds a song must play to trigger a "played" notification.
+    歌曲必须播放的秒数，达到该时长后才会触发“已播放”通知。
 
 - [**playerColors**](#playerColors-var) as [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/) or **Null**
 
-    The colors for the media player.
+    媒体播放器的颜色。
 
 - [**requirePlaybackNotification**](#requirePlaybackNotification-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -83,11 +83,11 @@ API 级别 3.0.0
 
 - [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of seconds to move backward in a track during a skip backward event.
+    发生向后跳过事件时，曲目向后移动的秒数。
 
 - [**skipForwardTimeDelta**](#skipForwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The number of seconds to move forward in a track during a skip forward event.
+    发生向前跳过事件时，曲目向前移动的秒数。
 
 - [**skipPreviousThreshold**](#skipPreviousThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -112,7 +112,7 @@ Returns:
 
 应在播放器中渲染的播放控件。
 
-This is an Array that holds a combination of [PLAYBACK\_CONTROL\_\*](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), [CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/), and [SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/) values defined by the developer. The values in this Array determine which native media player control options are rendered and available to the end user of the current device. The first entry in the array may be used as a hotkey in the media player. This is device dependent.
+这是一个 Array，其中包含开发者定义的 [PLAYBACK\_CONTROL\_\*](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)、[CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) 和 [SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/) 值的组合。此 Array 中的值决定当前设备为最终用户呈现并提供哪些原生媒体播放器控制选项。数组中的第一项可用作媒体播放器中的快捷键。这取决于设备。
 
 Since:
 
@@ -124,7 +124,7 @@ Returns:
 
 ### var playbackNotificationThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of seconds a song must play to trigger a "played" notification. A value of 0 means notify as soon as the song begins playing.
+歌曲必须播放的秒数，达到该时长后才会触发“已播放”通知。值为 0 表示歌曲开始播放后立即通知。
 
 Since:
 
@@ -136,7 +136,7 @@ Returns:
 
 ### var playerColors as [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/) or **Null**
 
-The colors for the media player. If set to `null` the default colors that are device-dependent will be used.
+媒体播放器的颜色。如果设置为 `null`，将使用依赖设备的默认颜色。
 
 Since:
 
@@ -160,11 +160,11 @@ Returns:
 
 ### var skipBackwardTimeDelta as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of seconds to move backward in a track during a skip backward event. If set to `null` the default value of 30 seconds will be used.
+发生向后跳过事件时，曲目向后移动的秒数。如果设置为 `null`，则使用默认值 30 秒。
 
 注意：
 
-When overriding the default value, it will be necessary to provide a custom icon for the skip backward button, as the default indicates 30 seconds. This can be done by returning a [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) with custom [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) from [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function).
+覆盖默认值时，需要为向后跳过按钮提供自定义图标，因为默认图标表示 30 秒。可以通过从 [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function) 返回带有自定义 [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) 的 [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) 来实现。
 
 Since:
 
@@ -176,11 +176,11 @@ Returns:
 
 ### var skipForwardTimeDelta as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The number of seconds to move forward in a track during a skip forward event. If set to `null` the default value of 30 seconds will be used.
+发生向前跳过事件时，曲目向前移动的秒数。如果设置为 `null`，则使用默认值 30 秒。
 
 注意：
 
-When overriding the default value, it will be necessary to provide a custom icon for the skip forward button, as the default indicates 30 seconds. This can be done by returning a [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) with custom [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) from [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function).
+覆盖默认值时，需要为向前跳过按钮提供自定义图标，因为默认图标表示 30 秒。可以通过从 [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function) 返回带有自定义 [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) 的 [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) 来实现。
 
 Since:
 

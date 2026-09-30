@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This exception indicates a value out-of-bounds was passed as a parameter.
+此异常表示传递的参数值超出范围。
 
 ## 另见：
 

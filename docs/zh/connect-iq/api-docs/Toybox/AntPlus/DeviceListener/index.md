@@ -63,7 +63,7 @@ Parameters:
 
 - data — ([AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/)) —
 
-    The data with battery status information
+    包含电池状态信息的数据
 
 
 Since:
@@ -78,7 +78,7 @@ Parameters:
 
 - data — ([AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)) —
 
-    The data with updated device state information.
+    包含更新后的设备状态信息的数据。
 
 
 Since:
@@ -93,7 +93,7 @@ Parameters:
 
 - data — ([AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/)) —
 
-    The data with manufacturer's information
+    包含制造商信息的数据
 
 
 Since:
@@ -123,7 +123,7 @@ Parameters:
 
 - data — ([AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/)) —
 
-    The data with product information
+    包含产品信息的数据
 
 
 Since:
@@ -138,11 +138,11 @@ Parameters:
 
 - status — ([AntPlus.MessageSendStatus](/connect-iq/api-docs/Toybox/AntPlus/#MessageSendStatus-module)) —
 
-    The status of the sent message as a [SENT\_MESSAGE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#MESSAGE_SENT_SUCCESS-const) enum value
+    已发送消息的状态，形式为 [SENT\_MESSAGE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#MESSAGE_SENT_SUCCESS-const) 枚举值
 
 - sentMesgData — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The dictionary will have keys for message type and page number. The message type is a [AntPlus.MESSAGE\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#MESSAGE_TYPE_MANUFACTURER-const). The page number is byte 0 of the manufacturer specific message or the requested page number.
+    该 Dictionary 将包含消息类型和页码的键。消息类型是一个 [AntPlus.MESSAGE\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#MESSAGE_TYPE_MANUFACTURER-const)。页码是制造商特定消息的字节 0，或请求的页码。
 
 
 Since:

@@ -180,7 +180,7 @@ Parameters:
 
 - item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
-    The selected ActionMenuItem.
+    选定的 ActionMenuItem。
 
 
 Since:

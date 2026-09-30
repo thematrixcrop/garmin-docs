@@ -41,7 +41,7 @@ CheckboxMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu
 
 注意：
 
-The look and feel of a CheckboxMenu is device-specific.
+CheckboxMenu 的外观和交互方式因设备而异。
 
 Example:
 
@@ -282,7 +282,7 @@ Parameters:
 
 - item — ([WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)) —
 
-    The CheckboxMenuItem to add to the CheckboxMenu
+    要添加到 CheckboxMenu 的 CheckboxMenuItem
 
 
 Since:
@@ -343,7 +343,7 @@ Parameters:
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        the default icon for menu items
+        菜单项的默认图标
 
 - :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
@@ -351,7 +351,7 @@ Parameters:
 
 - :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
 
-        The divider type, Defaults to DIVIDER\_TYPE\_DEFAULT or when `null` is passed as value.
+        分隔线类型。如果传入的值为 `null`，则默认为 DIVIDER\_TYPE\_DEFAULT。
 
 
 另见：

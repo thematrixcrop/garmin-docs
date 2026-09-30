@@ -617,7 +617,7 @@ API 级别 1.0.0
 
 在 DataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
-This method is called once per second and automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) to the DataField object for display or additional computation. It is necessary to override `compute()` when implementing a DataField.
+此方法每秒调用一次，并自动向 DataField 对象提供 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)，以供显示或进一步计算。实现 DataField 时必须重写 `compute()`。
 
 Parameters:
 
@@ -653,17 +653,17 @@ API 级别 1.0.0
 
 创建新的自定义 FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
-To record custom activity data to a FIT file, a new [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) must first be created to allow Data Fields access to FIT recording without allowing access to the session. Once created, a Field is updated in the FIT file by changing the **value** of the data within the Field.
+要将自定义活动数据记录到 FIT 文件，必须先创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)，以允许数据字段访问 FIT 记录，同时不允许访问会话。创建后，通过更改字段中的数据值来更新 FIT 文件中的字段。
 
 Parameters:
 
 - name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The name of the Field
+    Field 的名称
 
 - fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The unique Field identifier of the Field
+    Field 的唯一 Field 标识符
 
 - type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
@@ -675,7 +675,7 @@ Parameters:
 
 - :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The number of elements to add to the field if it is an Array. This is also the maximum combined size of the Strings plus their `null` terminators if the Field type is FitContributor.DATA\_TYPE\_STRING (Default 1).
+        如果字段是 Array，要添加到字段的元素数。如果 Field 类型为 FitContributor.DATA\_TYPE\_STRING，这也是字符串及其 `null` 终止符的最大组合大小（默认值为 1）。
 
 - :mesgType — ([FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module)) —
 
@@ -752,7 +752,7 @@ API 级别 1.0.0
 
 设备已切换到下一个多项运动分段。
 
-This method is called when the device transitions to the next multisport leg.
+设备切换到下一个多项运动分段时会调用此方法。
 
 :::details 支持的设备
 
@@ -1150,7 +1150,7 @@ Parameters:
 
 Returns:
 
-- true if handled, false otherwise. If false is returned then DataField.onTimerLap() will be called.
+- 如果已处理，则为 true，否则为 false。如果返回 false，则会调用 DataField.onTimerLap()。
 
 
 Since:
@@ -1161,7 +1161,7 @@ API 级别 5.2.2
 
 活动计时器已暂停。
 
-This method is called when the activity timer goes from a running state to a paused state. The paused state occurs when the auto-pause feature pauses the timer. If the activity timer is paused when the app is loaded, this event will run immediately after startup.
+活动计时器从运行状态变为暂停状态时会调用此方法。当自动暂停功能暂停计时器时，就会进入暂停状态。如果加载应用时活动计时器处于暂停状态，此事件将在启动后立即运行。
 
 :::details 支持的设备
 
@@ -1338,7 +1338,7 @@ API 级别 1.3.0
 
 当前活动已结束。
 
-This method is called when the time has stopped and current activity is ended.
+计时停止且当前活动结束时会调用此方法。
 
 :::details 支持的设备
 
@@ -1515,7 +1515,7 @@ API 级别 1.3.0
 
 活动时间已恢复。
 
-This method is called when the activity timer goes from a paused state to a running state.
+活动计时器从暂停状态变为运行状态时会调用此方法。
 
 :::details 支持的设备
 
@@ -1692,7 +1692,7 @@ API 级别 1.3.0
 
 分段已结束
 
-This method is called when a split is ended in the current activity. A notification is triggered after the split record has been written to the FIT file.
+当前活动中的分段结束时会调用此方法。分段记录写入 FIT 文件后会触发通知。
 
 :::details 支持的设备
 
@@ -1745,7 +1745,7 @@ API 级别 5.2.2
 
 分段已开始
 
-This method is called when a split is added to the current activity. A notification is triggered after the split record has been written to the FIT file.
+向当前活动添加分段时会调用此方法。分段记录写入 FIT 文件后会触发通知。
 
 :::details 支持的设备
 
@@ -1798,7 +1798,7 @@ API 级别 5.2.2
 
 活动计时器已启动。
 
-This method is called when the activity timer goes from a stopped state to a started state. If the activity timer is running when the app is loaded, this event will run immediately after startup.
+活动计时器从停止状态变为启动状态时会调用此方法。如果加载应用时活动计时器正在运行，此事件将在启动后立即运行。
 
 :::details 支持的设备
 
@@ -1975,7 +1975,7 @@ API 级别 1.3.0
 
 活动计时器已停止。
 
-This method is called when the activity timer goes from a running state to a stopped state.
+活动计时器从运行状态变为停止状态时会调用此方法。
 
 :::details 支持的设备
 
@@ -2152,7 +2152,7 @@ API 级别 1.3.0
 
 当前锻炼已开始。
 
-This method is called when the a workout is started.
+启动锻炼时会调用此方法。
 
 :::details 支持的设备
 
@@ -2296,7 +2296,7 @@ API 级别 3.2.0
 
 当前锻炼步骤已完成。
 
-This method is called when the a workout step has been completed.
+完成锻炼步骤时会调用此方法。
 
 :::details 支持的设备
 
@@ -2465,7 +2465,7 @@ Parameters:
 
 - target — ([DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type)) —
 
-    the location to route to
+    要规划路线到达的位置
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2549,7 +2549,7 @@ API 级别 5.2.0
 
 - 对于 `Activity.WORKOUT_STEP_DURATION_DISTANCE`，`WorkoutStep.durationValue` 的单位为米。
 
-- The values of `WorkoutStep.targetValueLow` and `WorkoutStep.targetValueHigh` depends on the value of `WorkoutStep.targetType`. See the FIT SDK for more details. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutIntervalStep:
+- `WorkoutStep.targetValueLow` 和 `WorkoutStep.targetValueHigh` 的值取决于 `WorkoutStep.targetType` 的值。有关更多详细信息，请参阅 FIT SDK。如果将 `.WorkoutStepInfo.step` 设置为 Toybox::Activity.WorkoutIntervalStep：
 
 - `WorkoutIntervalStep.repetitionNumber` 是重复间隔的次数。
 
@@ -2557,16 +2557,16 @@ API 级别 5.2.0
 
 - 如果紧跟在 `WorkoutIntervalStep` 之后的步骤强度为 `Activity.WORKOUT_INTENSITY_COOLDOWN`，则会跳过最后的休息步骤。如果使用 Toybox::PersistedContent::Workout，请注意：
 
-- The workout's sport must match the current activity.
+- workout 的 sport 必须与当前活动匹配。
 
-- The workout's subsport must either match the current activity or set to generic, all or invalid.
+- workout 的 subsport 必须与当前活动匹配，或设置为 generic、all 或 invalid。
 
 
 Parameters:
 
 - workout — ([DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type)) —
 
-    the workout to start
+    要开始的 workout
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2574,7 +2574,7 @@ Parameters:
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        the name of the workout (optional)
+        训练的名称（可选）
 
 
 :::details 支持的设备
@@ -2814,8 +2814,8 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Thrown if called from an app type other than data field
+    如果从数据字段以外的应用类型调用，则会抛出此异常
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if the view type is not [DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)
+    如果视图类型不是 [DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)，则抛出

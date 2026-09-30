@@ -209,7 +209,7 @@ API 级别 1.0.0
 
 将 Float 转换为 Number。
 
-The Float value will be rounded toward 0 upon conversion. For example, 6.8 becomes 6 and -5.7 becomes -5.
+转换时，Float 值将向 0 舍入。例如，6.8 变为 6，-5.7 变为 -5。
 
 Returns:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The WorkoutIntervalStep class contains information about the current workout interval step.
+WorkoutIntervalStep 类包含当前 workout 间歇步骤的信息。
 
 Since:
 
@@ -157,22 +157,22 @@ API 级别 3.2.0
 
 - [**activeStep**](#activeStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
-    The step data for the active portion of the interval.
+    间隔活动部分的步数数据。
 
 - [**repetitionNumber**](#repetitionNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The repetition number in the interval.
+    间隔中的重复次数。
 
 - [**restStep**](#restStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
-    The step data for the rest portion of the interval.
+    间隔休息部分的步数数据。
 
 
 ## 实例属性详情
 
 ### var activeStep as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
-The step data for the active portion of the interval
+间隔活动部分的步数数据
 
 Since:
 
@@ -184,7 +184,7 @@ Returns:
 
 ### var repetitionNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The repetition number in the interval
+间隔中的重复次数
 
 Since:
 
@@ -196,7 +196,7 @@ Returns:
 
 ### var restStep as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
-The step data for the rest portion of the interval
+间隔休息部分的步数数据
 
 Since:
 

@@ -28,9 +28,9 @@ Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回
 
 在低功耗模式下，系统会在每分钟开始时调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)。如果支持部分更新，则会在每分钟的前 59 秒调用 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 方法。处于低功耗模式时，应用无法使用计时器或动画。
 
-When a gesture occurs while running in low power mode the system will call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
+在低功耗模式下运行时发生手势，系统将调用 [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function)，通知应用已转换到高功耗模式。
 
-The initial view of a watch face application `must` extend [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/).
+表盘应用程序的初始视图 `must` 扩展 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)。
 
 Since:
 
@@ -249,7 +249,7 @@ API 级别 1.0.0
 
 设备正在退出低功耗模式。
 
-Timers and animations may be started here in preparation for once-per-second updates.
+可在此处启动计时器和动画，为每秒更新做好准备。
 
 另见：
 
@@ -266,7 +266,7 @@ API 级别 1.0.0
 
 部分更新可用于更新屏幕的一小部分，从而支持常亮表盘。
 
-This method is called each second as long as the device power budget is not exceeded. It is important to update as small of a portion of the display as possible in this method to avoid exceeding the allowed power budget. To do this, the application must set the clipping region for the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. Calls to [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) and [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) will not execute on devices when this function is being invoked, but can be used in the device simulator.
+只要不超过设备的功耗预算，就会每秒调用一次此方法。在此方法中尽可能只更新显示区域的一小部分非常重要，以避免超过允许的功耗预算。为此，应用必须使用 [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) 方法为 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象设置裁剪区域。调用 [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) 和 [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) 的操作不会在调用此函数时于设备上执行，但可以在设备模拟器中使用。
 
 如果调用此方法超出设备的功耗预算，则不会绘制部分更新，并会调用 [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) 报告超出的限制。
 

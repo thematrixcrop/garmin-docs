@@ -57,14 +57,14 @@ API 级别 5.1.0
 
 - [**color**](#color-var) as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
-    The oqaque color [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) selected by user from system or custom color palette.
+    用户从系统或自定义颜色调色板中选择的不透明颜色 [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)。
 
 
 ## 实例属性详情
 
 ### var color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
-The oqaque color [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) selected by user from system or custom color palette. gradient color.
+用户从系统或自定义颜色调色板中选择的不透明颜色 [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)。渐变颜色。
 
 Since:
 

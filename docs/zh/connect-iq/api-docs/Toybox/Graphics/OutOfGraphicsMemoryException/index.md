@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-This Exception indicates the graphics memory pool does not contain enough free memory for the resource.
+此异常表示图形内存池没有足够的可用内存来容纳该资源。
 
 ## 另见：
 

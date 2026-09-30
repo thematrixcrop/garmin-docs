@@ -5,9 +5,9 @@ title: "Module: Toybox.Authentication"
 
 ## 概述
 
-The Authentication Module provides tools for authentication.
+Authentication 模块提供身份验证工具。
 
-With the Authentication module, Connect IQ apps will be able to make OAuth requests redirected through Connect IQ mobile app.
+借助 Authentication 模块，Connect IQ 应用可以发起通过 Connect IQ 移动应用重定向的 OAuth 请求。
 
 Since:
 
