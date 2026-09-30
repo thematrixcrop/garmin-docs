@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
+- [Toybox.AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents received bike speed information.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -174,18 +174,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Distance (m).
 
--   [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Speed (m/s).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var distance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -193,11 +193,11 @@ Distance (m)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -205,10 +205,10 @@ Speed (m/s)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     [Toybox::AntPlus::INVALID\_SPEED](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_SPEED-const) if invalid

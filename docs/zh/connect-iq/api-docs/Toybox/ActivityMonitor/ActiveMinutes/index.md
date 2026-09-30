@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
+- [Toybox.ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class representing the active minutes recorded by the device.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -160,22 +160,22 @@ API Level 2.1.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**moderate**](#moderate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**moderate**](#moderate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total number of moderate activity minutes recorded by the device.
 
--   [**total**](#total-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**total**](#total-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total number of active minutes recorded by the device.
 
--   [**vigorous**](#vigorous-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**vigorous**](#vigorous-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total number of vigorous activity minutes recorded by the device.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var moderate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -183,11 +183,11 @@ The total number of moderate activity minutes recorded by the device.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var total as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -197,11 +197,11 @@ This value is equal to the total number of moderate minutes plus twice the total
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var vigorous as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -209,8 +209,8 @@ The total number of vigorous activity minutes recorded by the device.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

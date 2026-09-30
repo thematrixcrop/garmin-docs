@@ -3,152 +3,152 @@ title: "fēnix® 7S Pro"
 ---
 # fēnix® 7S Pro
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fenix7spro |
-| Screen Shape | round |
-| Screen Size | 240 x 240 |
-| Display Colors | 64 |
-| Touch | True |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | fenix7spro |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 240 x 240 |
+| 显示颜色 | 64 |
+| 触摸 | True |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fenix7spro/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 240 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 240 | 240 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fenix7spro/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
-| Field 2 | 0 | 122 | 240 | 119 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
+| 字段 2 | 0 | 122 | 240 | 119 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fenix7spro/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 76 | 7 | True | True | True | False |
-| Field 2 | 0 | 78 | 240 | 84 | 5 | True | True | False | False |
-| Field 3 | 0 | 164 | 240 | 76 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 76 | 7 | True | True | True | False |
+| 字段 2 | 0 | 78 | 240 | 84 | 5 | True | True | False | False |
+| 字段 3 | 0 | 164 | 240 | 76 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fenix7spro/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 81 | 7 | True | True | True | False |
-| Field 2 | 0 | 83 | 240 | 74 | 5 | True | True | False | False |
-| Field 3 | 0 | 159 | 240 | 81 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 81 | 7 | True | True | True | False |
+| 字段 2 | 0 | 83 | 240 | 74 | 5 | True | True | False | False |
+| 字段 3 | 0 | 159 | 240 | 81 | 13 | True | True | False | True |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/fenix7spro/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
-| Field 2 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
-| Field 3 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
+| 字段 2 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
+| 字段 3 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fenix7spro/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 60 | 7 | True | True | True | False |
-| Field 2 | 0 | 61 | 240 | 59 | 5 | True | True | False | False |
-| Field 3 | 0 | 121 | 240 | 59 | 5 | True | True | False | False |
-| Field 4 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 60 | 7 | True | True | True | False |
+| 字段 2 | 0 | 61 | 240 | 59 | 5 | True | True | False | False |
+| 字段 3 | 0 | 121 | 240 | 59 | 5 | True | True | False | False |
+| 字段 4 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/fenix7spro/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 85 | 7 | True | True | True | False |
-| Field 2 | 0 | 87 | 119 | 66 | 1 | True | False | False | False |
-| Field 3 | 121 | 87 | 119 | 66 | 4 | False | True | False | False |
-| Field 4 | 0 | 156 | 240 | 85 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 85 | 7 | True | True | True | False |
+| 字段 2 | 0 | 87 | 119 | 66 | 1 | True | False | False | False |
+| 字段 3 | 121 | 87 | 119 | 66 | 4 | False | True | False | False |
+| 字段 4 | 0 | 156 | 240 | 85 | 13 | True | True | False | True |
 
-**4 Fields C Layout**
+**4 字段 C 布局**
 
 
 ![4 Fields C](/connect-iq/resources/device-reference/fenix7spro/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 119 | 119 | 3 | True | False | True | False |
-| Field 2 | 121 | 0 | 119 | 119 | 6 | False | True | True | False |
-| Field 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
-| Field 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 119 | 119 | 3 | True | False | True | False |
+| 字段 2 | 121 | 0 | 119 | 119 | 6 | False | True | True | False |
+| 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
+| 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**5 Fields Layout**
+**5 字段布局**
 
 
 ![5 Fields](/connect-iq/resources/device-reference/fenix7spro/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 59 | 7 | True | True | True | False |
-| Field 2 | 0 | 61 | 240 | 59 | 5 | True | True | False | False |
-| Field 3 | 0 | 121 | 119 | 59 | 1 | True | False | False | False |
-| Field 4 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
-| Field 5 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 59 | 7 | True | True | True | False |
+| 字段 2 | 0 | 61 | 240 | 59 | 5 | True | True | False | False |
+| 字段 3 | 0 | 121 | 119 | 59 | 1 | True | False | False | False |
+| 字段 4 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
+| 字段 5 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/fenix7spro/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 59 | 7 | True | True | True | False |
-| Field 2 | 0 | 61 | 119 | 59 | 1 | True | False | False | False |
-| Field 3 | 121 | 61 | 119 | 59 | 4 | False | True | False | False |
-| Field 4 | 0 | 121 | 119 | 59 | 1 | True | False | False | False |
-| Field 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
-| Field 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 59 | 7 | True | True | True | False |
+| 字段 2 | 0 | 61 | 119 | 59 | 1 | True | False | False | False |
+| 字段 3 | 121 | 61 | 119 | 59 | 4 | False | True | False | False |
+| 字段 4 | 0 | 121 | 119 | 59 | 1 | True | False | False | False |
+| 字段 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
+| 字段 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
 **Part Number 006-B4374-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | FENIX6S\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 26 | FENIX6S\_CDPG\_ROBOTO\_17B |
@@ -182,13 +182,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 16 | 006B437400\_NOTO\_SANS\_SC\_BOLD\_94\_16 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 22 | 006B437400\_NOTO\_SANS\_SC\_BOLD\_94\_22 |
@@ -222,13 +222,13 @@ zhs
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans TC Bold-94 | 16 | 006B437400\_NOTO\_SANS\_TC\_BOLD\_94\_16 |
 | FONT\_TINY | Noto Sans TC Bold-94 | 22 | 006B437400\_NOTO\_SANS\_TC\_BOLD\_94\_22 |
@@ -262,13 +262,13 @@ zht
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 16 | 006B437400\_KOSUGI\_REGULAR\_94\_16B |
 | FONT\_TINY | MotoyaLCedar-94 | 22 | 006B437400\_KOSUGI\_REGULAR\_94\_22B |
@@ -302,13 +302,13 @@ jpn
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicExtraBold-94 | 16 | 006B437400\_NANUM\_GOTHIC\_EXTRA\_BOLD\_94\_16 |
 | FONT\_TINY | NanumGothicExtraBold-94 | 22 | 006B437400\_NANUM\_GOTHIC\_EXTRA\_BOLD\_94\_22 |
@@ -342,13 +342,13 @@ kor
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

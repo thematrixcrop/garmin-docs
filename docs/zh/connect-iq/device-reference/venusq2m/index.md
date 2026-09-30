@@ -3,79 +3,79 @@ title: "Venu® Sq 2 Music"
 ---
 # Venu® Sq 2 Music
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | venusq2m |
-| Screen Shape | rectangle |
-| Screen Size | 320 x 360 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | venusq2m |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 320 x 360 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/venusq2m/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 320 | 360 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 320 | 360 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/venusq2m/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 320 | 179 | 0 | False | False | False | False |
-| Field 2 | 0 | 181 | 320 | 179 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 320 | 179 | 0 | False | False | False | False |
+| 字段 2 | 0 | 181 | 320 | 179 | 0 | False | False | False | False |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/venusq2m/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 320 | 113 | 0 | False | False | False | False |
-| Field 2 | 0 | 115 | 320 | 118 | 0 | False | False | False | False |
-| Field 3 | 0 | 231 | 320 | 129 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 320 | 113 | 0 | False | False | False | False |
+| 字段 2 | 0 | 115 | 320 | 118 | 0 | False | False | False | False |
+| 字段 3 | 0 | 231 | 320 | 129 | 0 | False | False | False | False |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/venusq2m/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 320 | 120 | 0 | False | False | False | False |
-| Field 2 | 0 | 122 | 159 | 118 | 0 | False | False | False | False |
-| Field 3 | 161 | 122 | 159 | 118 | 0 | False | False | False | False |
-| Field 4 | 0 | 239 | 320 | 121 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 320 | 120 | 0 | False | False | False | False |
+| 字段 2 | 0 | 122 | 159 | 118 | 0 | False | False | False | False |
+| 字段 3 | 161 | 122 | 159 | 118 | 0 | False | False | False | False |
+| 字段 4 | 0 | 239 | 320 | 121 | 0 | False | False | False | False |
 
 **Part Number 006-B4116-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 32 | 006B411500\_ROBOTO\_CONDENSED\_XSMALL |
 | FONT\_TINY | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
@@ -98,13 +98,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Medium-94 | 34 | 006B411500\_NOTO\_SANS\_SC\_MEDIUM-94\_34 |
 | FONT\_TINY | Noto Sans SC Medium-94 | 37 | 006B411500\_NOTO\_SANS\_SC\_MEDIUM-94\_37 |
@@ -127,13 +127,13 @@ zhs, zht
 | FONT\_GLANCE | Noto Sans SC Medium-94 | 37 | 006B411500\_NOTO\_SANS\_SC\_MEDIUM-94\_37 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 34 | 006B411500\_KOSUGI\_REGULAR-94\_34 |
 | FONT\_TINY | MotoyaLCedar-94 | 37 | 006B411500\_KOSUGI\_REGULAR-94\_37 |
@@ -156,13 +156,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar-94 | 37 | 006B411500\_KOSUGI\_REGULAR-94\_37 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic-Bold-94 | 34 | 006B411500\_NANUM\_GOTHIC\_BOLD-94\_34 |
 | FONT\_TINY | NanumGothic-Bold-94 | 37 | 006B411500\_NANUM\_GOTHIC\_BOLD-94\_37 |
@@ -185,13 +185,13 @@ kor
 | FONT\_GLANCE | NanumGothic-Bold-94 | 37 | 006B411500\_NANUM\_GOTHIC\_BOLD-94\_37 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 36 | 006B411500\_ROBOTO\_CONDENSED\_SMALL |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

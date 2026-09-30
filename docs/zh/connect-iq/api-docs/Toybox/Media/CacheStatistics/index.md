@@ -7,33 +7,33 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
+- [Toybox.Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Stores media cache size statistics
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**capacity**](#capacity-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**capacity**](#capacity-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
     The capacity of the media cache.
 
--   [**size**](#size-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**size**](#size-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
     The current size of the media cache.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var capacity as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
@@ -41,11 +41,11 @@ The capacity of the media cache
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     The capacity in bytes
 
@@ -56,10 +56,10 @@ The current size of the media cache
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     The size in bytes

@@ -3,190 +3,190 @@ title: "Montana® 7 Series"
 ---
 # Montana® 7 Series
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | montana7xx |
-| Screen Shape | rectangle |
-| Screen Size | 480 x 800 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | menu, esc, menu, esc |
-| Launcher Icon Size | 60 x 60 |
+| 标识 | montana7xx |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 480 x 800 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | menu, esc, menu, esc |
+| 启动图标尺寸 | 60 x 60 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 131072 |  |
-| Watch App | 2359296 |  |
-| Widget | 1048576 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 手表应用 | 2359296 |  |
+| 微件 | 1048576 |  |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/montana7xx/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 35 | 478 | 220 | 0 | False | False | False | False |
+| 字段 1 | 1 | 35 | 478 | 220 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/montana7xx/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 5 | 1 | 263 | 478 | 229 | 0 | False | False | False | False |
-| Field 6 | 1 | 493 | 478 | 229 | 0 | False | False | False | False |
+| 字段 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 5 | 1 | 263 | 478 | 229 | 0 | False | False | False | False |
+| 字段 6 | 1 | 493 | 478 | 229 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/montana7xx/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 5 | 1 | 263 | 478 | 229 | 0 | False | False | False | False |
-| Field 6 | 1 | 493 | 238 | 113 | 0 | False | False | False | False |
-| Field 7 | 241 | 493 | 238 | 113 | 0 | False | False | False | False |
-| Field 8 | 1 | 608 | 238 | 113 | 0 | False | False | False | False |
-| Field 9 | 241 | 608 | 238 | 113 | 0 | False | False | False | False |
+| 字段 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 5 | 1 | 263 | 478 | 229 | 0 | False | False | False | False |
+| 字段 6 | 1 | 493 | 238 | 113 | 0 | False | False | False | False |
+| 字段 7 | 241 | 493 | 238 | 113 | 0 | False | False | False | False |
+| 字段 8 | 1 | 608 | 238 | 113 | 0 | False | False | False | False |
+| 字段 9 | 241 | 608 | 238 | 113 | 0 | False | False | False | False |
 
-**10 Fields Layout**
+**10 字段布局**
 
 
 ![10 Fields](/connect-iq/resources/device-reference/montana7xx/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 5 | 1 | 263 | 238 | 152 | 0 | False | False | False | False |
-| Field 6 | 241 | 263 | 238 | 152 | 0 | False | False | False | False |
-| Field 7 | 1 | 417 | 238 | 152 | 0 | False | False | False | False |
-| Field 8 | 241 | 417 | 238 | 152 | 0 | False | False | False | False |
-| Field 9 | 1 | 571 | 238 | 152 | 0 | False | False | False | False |
-| Field 10 | 241 | 571 | 238 | 152 | 0 | False | False | False | False |
+| 字段 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 5 | 1 | 263 | 238 | 152 | 0 | False | False | False | False |
+| 字段 6 | 241 | 263 | 238 | 152 | 0 | False | False | False | False |
+| 字段 7 | 1 | 417 | 238 | 152 | 0 | False | False | False | False |
+| 字段 8 | 241 | 417 | 238 | 152 | 0 | False | False | False | False |
+| 字段 9 | 1 | 571 | 238 | 152 | 0 | False | False | False | False |
+| 字段 10 | 241 | 571 | 238 | 152 | 0 | False | False | False | False |
 
-**12 Fields Layout**
+**12 字段布局**
 
 
 ![12 Fields](/connect-iq/resources/device-reference/montana7xx/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
-| Field 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
-| Field 5 | 1 | 263 | 238 | 113 | 0 | False | False | False | False |
-| Field 6 | 241 | 263 | 238 | 113 | 0 | False | False | False | False |
-| Field 7 | 1 | 378 | 238 | 113 | 0 | False | False | False | False |
-| Field 8 | 241 | 378 | 238 | 113 | 0 | False | False | False | False |
-| Field 9 | 1 | 493 | 238 | 113 | 0 | False | False | False | False |
-| Field 10 | 241 | 493 | 238 | 113 | 0 | False | False | False | False |
-| Field 11 | 1 | 608 | 238 | 113 | 0 | False | False | False | False |
-| Field 12 | 241 | 608 | 238 | 113 | 0 | False | False | False | False |
+| 字段 1 | 1 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 2 | 241 | 35 | 238 | 110 | 0 | False | False | False | False |
+| 字段 3 | 1 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 4 | 241 | 148 | 238 | 110 | 0 | False | False | False | False |
+| 字段 5 | 1 | 263 | 238 | 113 | 0 | False | False | False | False |
+| 字段 6 | 241 | 263 | 238 | 113 | 0 | False | False | False | False |
+| 字段 7 | 1 | 378 | 238 | 113 | 0 | False | False | False | False |
+| 字段 8 | 241 | 378 | 238 | 113 | 0 | False | False | False | False |
+| 字段 9 | 1 | 493 | 238 | 113 | 0 | False | False | False | False |
+| 字段 10 | 241 | 493 | 238 | 113 | 0 | False | False | False | False |
+| 字段 11 | 1 | 608 | 238 | 113 | 0 | False | False | False | False |
+| 字段 12 | 241 | 608 | 238 | 113 | 0 | False | False | False | False |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/montana7xx/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 577 | 153 | 222 | 232 | 0 | False | False | False | False |
+| 字段 1 | 577 | 153 | 222 | 232 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/montana7xx/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 76 | 33 | 493 | 222 | 0 | False | False | False | False |
-| Field 2 | 76 | 257 | 493 | 222 | 0 | False | False | False | False |
-| Field 3 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
-| Field 4 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
-| Field 5 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
-| Field 6 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
+| 字段 1 | 76 | 33 | 493 | 222 | 0 | False | False | False | False |
+| 字段 2 | 76 | 257 | 493 | 222 | 0 | False | False | False | False |
+| 字段 3 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
+| 字段 4 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
+| 字段 5 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
+| 字段 6 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/montana7xx/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 76 | 33 | 493 | 222 | 0 | False | False | False | False |
-| Field 2 | 76 | 257 | 245 | 110 | 0 | False | False | False | False |
-| Field 3 | 76 | 369 | 245 | 110 | 0 | False | False | False | False |
-| Field 4 | 323 | 257 | 245 | 110 | 0 | False | False | False | False |
-| Field 5 | 323 | 369 | 245 | 110 | 0 | False | False | False | False |
-| Field 6 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
-| Field 7 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
-| Field 8 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
-| Field 9 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
+| 字段 1 | 76 | 33 | 493 | 222 | 0 | False | False | False | False |
+| 字段 2 | 76 | 257 | 245 | 110 | 0 | False | False | False | False |
+| 字段 3 | 76 | 369 | 245 | 110 | 0 | False | False | False | False |
+| 字段 4 | 323 | 257 | 245 | 110 | 0 | False | False | False | False |
+| 字段 5 | 323 | 369 | 245 | 110 | 0 | False | False | False | False |
+| 字段 6 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
+| 字段 7 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
+| 字段 8 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
+| 字段 9 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
 
-**10 Fields Layout**
+**10 字段布局**
 
 
 ![10 Fields](/connect-iq/resources/device-reference/montana7xx/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 76 | 33 | 245 | 145 | 0 | False | False | False | False |
-| Field 2 | 76 | 180 | 245 | 145 | 0 | False | False | False | False |
-| Field 3 | 76 | 327 | 245 | 145 | 0 | False | False | False | False |
-| Field 4 | 323 | 33 | 245 | 145 | 0 | False | False | False | False |
-| Field 5 | 323 | 180 | 245 | 145 | 0 | False | False | False | False |
-| Field 6 | 323 | 327 | 245 | 145 | 0 | False | False | False | False |
-| Field 7 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
-| Field 8 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
-| Field 9 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
-| Field 10 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
+| 字段 1 | 76 | 33 | 245 | 145 | 0 | False | False | False | False |
+| 字段 2 | 76 | 180 | 245 | 145 | 0 | False | False | False | False |
+| 字段 3 | 76 | 327 | 245 | 145 | 0 | False | False | False | False |
+| 字段 4 | 323 | 33 | 245 | 145 | 0 | False | False | False | False |
+| 字段 5 | 323 | 180 | 245 | 145 | 0 | False | False | False | False |
+| 字段 6 | 323 | 327 | 245 | 145 | 0 | False | False | False | False |
+| 字段 7 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
+| 字段 8 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
+| 字段 9 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
+| 字段 10 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
 
-**12 Fields Layout**
+**12 字段布局**
 
 
 ![12 Fields](/connect-iq/resources/device-reference/montana7xx/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 76 | 33 | 245 | 110 | 0 | False | False | False | False |
-| Field 2 | 76 | 145 | 245 | 110 | 0 | False | False | False | False |
-| Field 3 | 76 | 257 | 245 | 110 | 0 | False | False | False | False |
-| Field 4 | 76 | 369 | 245 | 110 | 0 | False | False | False | False |
-| Field 5 | 323 | 33 | 245 | 110 | 0 | False | False | False | False |
-| Field 6 | 323 | 145 | 245 | 110 | 0 | False | False | False | False |
-| Field 7 | 323 | 257 | 245 | 110 | 0 | False | False | False | False |
-| Field 8 | 323 | 369 | 245 | 110 | 0 | False | False | False | False |
-| Field 9 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
-| Field 10 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
-| Field 11 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
-| Field 12 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
+| 字段 1 | 76 | 33 | 245 | 110 | 0 | False | False | False | False |
+| 字段 2 | 76 | 145 | 245 | 110 | 0 | False | False | False | False |
+| 字段 3 | 76 | 257 | 245 | 110 | 0 | False | False | False | False |
+| 字段 4 | 76 | 369 | 245 | 110 | 0 | False | False | False | False |
+| 字段 5 | 323 | 33 | 245 | 110 | 0 | False | False | False | False |
+| 字段 6 | 323 | 145 | 245 | 110 | 0 | False | False | False | False |
+| 字段 7 | 323 | 257 | 245 | 110 | 0 | False | False | False | False |
+| 字段 8 | 323 | 369 | 245 | 110 | 0 | False | False | False | False |
+| 字段 9 | 577 | 33 | 222 | 110 | 0 | False | False | False | False |
+| 字段 10 | 577 | 145 | 222 | 110 | 0 | False | False | False | False |
+| 字段 11 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
+| 字段 12 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
 
 **Part Number 006-B3459-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_TINY | Roboto Condensed | 19 | 006B345900\_FNT\_1252\_PRO\_12 |
@@ -202,13 +202,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B4415-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_TINY | Roboto Condensed | 19 | 006B345900\_FNT\_1252\_PRO\_12 |
@@ -224,13 +224,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B5015-00**
 
-*Languages*
+*语言*
 
 eng, ind, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_TINY | Roboto Condensed | 19 | 006B345900\_FNT\_1252\_PRO\_12 |
@@ -244,13 +244,13 @@ eng, ind, vie, zsm
 | FONT\_GLANCE | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 15 | 006B501500\_NANUM\_GOTHIC\_BOLD\_15 |
 | FONT\_TINY | NanumGothic | 19 | 006B501500\_NANUM\_GOTHIC\_BOLD\_19 |

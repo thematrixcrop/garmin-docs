@@ -7,31 +7,31 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Lang.SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/)
+- [Toybox.Lang.SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Indicates that the function could not serialize an object
 
 Since:
 
-API Level 2.4.2
+API 级别 2.4.2
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
     SerializationException constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
@@ -39,11 +39,11 @@ SerializationException constructor.
 
 Parameters:
 
--   msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The exception message
+    异常消息
 
 
 Since:
 
-API Level 2.4.2
+API 级别 2.4.2

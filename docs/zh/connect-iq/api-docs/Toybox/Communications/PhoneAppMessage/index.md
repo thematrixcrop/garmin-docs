@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.Communications.Message
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Communications.Message](/connect-iq/api-docs/Toybox/Communications/Message/)
+- [Toybox.Communications.Message](/connect-iq/api-docs/Toybox/Communications/Message/)
 
--   [Toybox.Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)
+- [Toybox.Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A PhoneAppMessage received by the callback registered in [registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 Since:
 
-API Level 1.4.0
+API 级别 1.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -190,14 +190,14 @@ API Level 1.4.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -205,4 +205,4 @@ Constructor
 
 Since:
 
-API Level 1.4.0
+API 级别 1.4.0

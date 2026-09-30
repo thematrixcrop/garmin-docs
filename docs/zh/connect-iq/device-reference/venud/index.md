@@ -3,78 +3,78 @@ title: "Venu® Mercedes-Benz® Collection"
 ---
 # Venu® Mercedes-Benz® Collection
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | venud |
-| Screen Shape | round |
-| Screen Size | 390 x 390 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 60 x 60 |
+| 标识 | venud |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 390 x 390 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 60 x 60 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 32768 |  |
-| Watch App | 1048576 |  |
-| Watch Face | 524288 |  |
-| Widget | 524288 |  |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 手表应用 | 1048576 |  |
+| 表盘 | 524288 |  |
+| 微件 | 524288 |  |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/venud/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/venud/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 194 | 7 | True | True | True | False |
-| Field 2 | 0 | 195 | 390 | 194 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 194 | 7 | True | True | True | False |
+| 字段 2 | 0 | 195 | 390 | 194 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/venud/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 129 | 7 | True | True | True | False |
-| Field 2 | 0 | 131 | 390 | 128 | 5 | True | True | False | False |
-| Field 3 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 129 | 7 | True | True | True | False |
+| 字段 2 | 0 | 131 | 390 | 128 | 5 | True | True | False | False |
+| 字段 3 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/venud/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 129 | 7 | True | True | True | False |
-| Field 2 | 0 | 131 | 194 | 128 | 1 | True | False | False | False |
-| Field 3 | 196 | 131 | 194 | 128 | 4 | False | True | False | False |
-| Field 4 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 129 | 7 | True | True | True | False |
+| 字段 2 | 0 | 131 | 194 | 128 | 1 | True | False | False | False |
+| 字段 3 | 196 | 131 | 194 | 128 | 4 | False | True | False | False |
+| 字段 4 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
 
 **Part Number 006-B3740-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 41 | VENU\_ROBOTO\_SMALL\_BOLD |
@@ -99,13 +99,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 
 **Part Number 006-B3737-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 41 | VENU\_ROBOTO\_SMALL\_BOLD |
@@ -128,13 +128,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_33 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 41 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_41 |
@@ -157,13 +157,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_33 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_33 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_33 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 41 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_41 |
@@ -186,13 +186,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_33 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 33 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_33 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 33 | NOTO\_SANS\_CJK\_JP\_BOLD\_33 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 41 | NOTO\_SANS\_CJK\_JP\_BOLD\_41 |
@@ -215,13 +215,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 33 | NOTO\_SANS\_CJK\_JP\_BOLD\_33 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 33 | NOTO\_SANS\_CJK\_JP\_BOLD\_33 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Regular | 33 | NOTO\_SANS\_CJK\_KR\_REGULAR\_33 |
 | FONT\_TINY | Noto Sans CJK KR Regular | 41 | NOTO\_SANS\_CJK\_KR\_REGULAR\_41 |
@@ -244,13 +244,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Regular | 33 | NOTO\_SANS\_CJK\_KR\_REGULAR\_33 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Regular | 33 | NOTO\_SANS\_CJK\_KR\_REGULAR\_33 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -273,13 +273,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans | 33 | NOTO\_SANS\_BOLD\_VIET\_33 |
 | FONT\_TINY | Noto Sans | 41 | NOTO\_SANS\_BOLD\_VIET\_41 |

@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)
+- [Toybox.AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The DeviceState object represents the state of the device.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Example:
 
@@ -35,20 +35,20 @@ System.println("Current device number is: " + deviceNumber);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**deviceNumber**](#deviceNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**deviceNumber**](#deviceNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current Device ID being tracked/searched for.
 
--   [**state**](#state-var) as [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) or **Null**
+- [**state**](#state-var) as [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) or **Null**
 
     The state of the device as an [DEVICE\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#DEVICE_STATE_CLOSED-const) value.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var deviceNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -56,11 +56,11 @@ The current Device ID being tracked/searched for.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The device ID number or `null` if device state is [DEVICE\_STATE\_DEAD](/connect-iq/api-docs/Toybox/AntPlus/#DEVICE_STATE_CLOSED-const)
 
@@ -71,10 +71,10 @@ The state of the device as an [DEVICE\_STATE\_\*](/connect-iq/api-docs/Toybox/An
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) —
+- [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) —
 
     The device state as DEVICE\_STATE\_\* enum value

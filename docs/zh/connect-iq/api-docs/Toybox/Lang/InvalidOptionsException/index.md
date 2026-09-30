@@ -7,36 +7,36 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)
+- [Toybox.Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 This exception indicates invalid options during initialization.
 
-## See Also:
+## 另见：
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
     InvalidOptionsException constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
@@ -44,11 +44,11 @@ InvalidOptionsException constructor.
 
 Parameters:
 
--   msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The exception message
+    异常消息
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

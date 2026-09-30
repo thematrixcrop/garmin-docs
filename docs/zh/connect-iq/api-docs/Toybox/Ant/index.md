@@ -3,54 +3,54 @@ title: "Module: Toybox.Ant"
 ---
 # Module: Toybox.Ant
 
-## Overview
+## 概述
 
 This module provide the interface for the ANT wireless protocol.
 
-The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT 模块提供 a list of constants to be used with different Class objects and Methods provided within the module. These include:
+The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT module provides a list of constants to be used with different Class objects and Methods provided within the module. These include:
 
--   [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) Constants - Message IDs
+- [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) Constants - Message IDs
 
--   [MSG\_CODE\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_RESPONSE_NO_ERROR-const) Constants - Message Codes for the response event
+- [MSG\_CODE\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_RESPONSE_NO_ERROR-const) Constants - Message Codes for the response event
 
--   [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) Constants - Network Types
+- [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) Constants - Network Types
 
--   [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) Constants - Channel Types
+- [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) Constants - Channel Types
 
--   [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) Constants - Burst Error types
+- [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) Constants - Burst Error types
 
 
 ANT resources and documentation can be found at the links below.
 
-## See Also:
+## 另见：
 
--   [Core Topics - ANT and ANT Plus](/connect-iq/core-topics/ant-and-ant-plus/)
+- [Core Topics - ANT and ANT Plus](/connect-iq/core-topics/ant-and-ant-plus/)
 
--   [ANT Basics](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
+- [ANT Basics](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
 
--   [ANT Downloads & Resources](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT Downloads & Resources](https://www.thisisant.com/developer/resources/downloads/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Background
+- 后台
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -228,117 +228,117 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   Ant
+- Ant
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/), [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/), [BurstPayloadIterator](/connect-iq/api-docs/Toybox/Ant/BurstPayloadIterator/), [ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/), [CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/), [DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/), [EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/), [GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/), [Message](/connect-iq/api-docs/Toybox/Ant/Message/), [UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/), [UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)
+类：[BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/), [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/), [BurstPayloadIterator](/connect-iq/api-docs/Toybox/Ant/BurstPayloadIterator/), [ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/), [CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/), [DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/), [EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/), [GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/), [Message](/connect-iq/api-docs/Toybox/Ant/Message/), [UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/), [UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)
 
-## Constant Summary
+## 常量摘要
 
 ### MessageId
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | MSG\_ID\_RF\_EVENT | 0x01 |
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_UNASSIGN\_CHANNEL | 0x41 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_ASSIGN\_CHANNEL | 0x42 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CHANNEL\_ID | 0x51 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CHANNEL\_PERIOD | 0x43 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_SEARCH\_TIMEOUT | 0x44 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CHANNEL\_RF\_FREQUENCY | 0x45 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_NETWORK\_KEY | 0x46 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_TRANSMIT\_POWER | 0x47 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CHANNEL\_TRANSMIT\_POWER | 0x60 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_LOW\_PRIORITY\_SEARCH\_TIMEOUT | 0x63 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_LIB\_CONFIG | 0x6E |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_PROXIMITY\_SEARCH | 0x71 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_RESET\_SYSTEM | 0x4A |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_OPEN\_CHANNEL | 0x4B |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CLOSE\_CHANNEL | 0x4C |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_BROADCAST\_DATA | 0x4E |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_ACKNOWLEDGED\_DATA | 0x4F |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_ID\_CHANNEL\_RESPONSE\_EVENT | 0x40 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 
@@ -346,119 +346,119 @@ API Level 1.0.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | MSG\_CODE\_RESPONSE\_NO\_ERROR | 0x00 |
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_RX\_SEARCH\_TIMEOUT | 0x01 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_RX\_FAIL | 0x02 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_TX | 0x03 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_TRANSFER\_RX\_FAILED | 0x04 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED | 0x05 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_TRANSFER\_TX\_FAILED | 0x06 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_CHANNEL\_CLOSED | 0x07 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_RX\_FAIL\_GO\_TO\_SEARCH | 0x08 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_CHANNEL\_IN\_WRONG\_STATE | 0x15 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_CHANNEL\_ID\_NOT\_SET | 0x18 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_TRANSFER\_IN\_PROGRESS | 0x1F |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_INVALID\_MESSAGE | 0x28 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_QUE\_OVERFLOW | 0x35 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | MSG\_CODE\_EVENT\_CRYPTO\_NEGOTIATION\_SUCCESS | 0x38 |
 
-API Level 2.3.0
+API 级别 2.3.0
 
  |  |
 | MSG\_CODE\_EVENT\_CRYPTO\_NEGOTIATION\_FAIL | 0x39 |
 
-API Level 2.3.0
+API 级别 2.3.0
 
  |  |
 | MSG\_CODE\_EVENT\_CONNECTION\_REJECTED | 0xFF |
 
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 Ant connection is rejected by the user.
 
- |
+|
 
 ### NetworkType
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | NETWORK\_PUBLIC | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | NETWORK\_PLUS | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | NETWORK\_PRIVATE | 2 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 
@@ -466,54 +466,54 @@ API Level 1.2.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CHANNEL\_TYPE\_TX\_NOT\_RX | 0x10 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Bidirectional Transmit (Master)
 
- |
+|
 | CHANNEL\_TYPE\_RX\_NOT\_TX | 0x00 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Bidirectional Receive (Slave)
 
- |
+|
 | CHANNEL\_TYPE\_RX\_ONLY | 0x40 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
- |
+|
 
 Receive Only (Slave)
 
- |
+|
 | CHANNEL\_TYPE\_SHARED\_BIDIRECTIONAL\_RECEIVE | 0x20 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Shared Bidirectional Receive (Slave)
 
- |
+|
 | CHANNEL\_TYPE\_SHARED\_BIDIRECTIONAL\_TRANSMIT | 0x30 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Shared Bidirectional Transmit (Master)
 
- |
+|
 
 ### BurstError
 
@@ -521,42 +521,42 @@ Error codes passed to the failure functions in the BurstListener
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | BURST\_ERROR\_OUT\_OF\_MEMORY | 0 |
-API Level 2.2.0
+API 级别 2.2.0
 
- |
+|
 
 There was not enough memory available to send/receive a burst message
 
- |
+|
 | BURST\_ERROR\_SEQUENCE\_NUMBER\_FAIL | 1 |
 
-API Level 2.2.0
+API 级别 2.2.0
 
- |
+|
 
 A burst packet was received out of order and the entire message was dropped
 
- |
+|
 | BURST\_ERROR\_RF\_FAIL | 2 |
 
-API Level 2.2.0
+API 级别 2.2.0
 
- |
+|
 
 A burst failed over the air
 
- |
+|
 | BURST\_ERROR\_TRANSFER\_IN\_PROGRESS | 3 |
 
-API Level 2.2.0
+API 级别 2.2.0
 
- |
+|
 
 Burst was blocked by another burst from the native system code
 
- |
+|

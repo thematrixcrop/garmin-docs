@@ -7,39 +7,39 @@ Inherits:
 
 Toybox.WatchUi.Layer
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)
+- [Toybox.WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)
 
--   [Toybox.WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
+- [Toybox.WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The class that represents an Animation layer
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -169,30 +169,30 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getDc**](#getDc-instance_function)() as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
+- [**getDc**](#getDc-instance_function)() as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
     getDc will always return `null`, as the dc buffer of animations can not be updated by user.
 
--   [**getResource**](#getResource-instance_function)() as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
+- [**getResource**](#getResource-instance_function)() as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
     Get the animation resource.
 
--   [**initialize**](#initialize-instance_function)(rez as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), options as { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
+- [**initialize**](#initialize-instance_function)(rez as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), options as { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
 
     Constructor.
 
--   [**play**](#play-instance_function)(options as { :delegate as [WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/) } or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**play**](#play-instance_function)(options as { :delegate as [WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/) } or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Play animation, animation must be added to and not abandoned by the view before it can be played.
 
--   [**stop**](#stop-instance_function)() as **Void**
+- [**stop**](#stop-instance_function)() as **Void**
 
     Stop a playing animation.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getDc()** as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
@@ -200,7 +200,7 @@ getDc will always return `null`, as the dc buffer of animations can not be updat
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getResource()** as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
@@ -208,14 +208,14 @@ Get the animation resource
 
 Returns:
 
--   [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) —
+- [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) —
 
     the [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **initialize(rez as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), options as { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)**
 
@@ -223,38 +223,38 @@ Constructor
 
 Parameters:
 
--   rez — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)) —
+- rez — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)) —
 
     either an animation ResourceId or a [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary of options, can be `null`
 
-    -   :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The initial absolute, on-screen x-coordinate for the Animation object (optional defaults to 0)
 
-    -   :locY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :locY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The initial absolute, on-screen y-coordinate for the Animation object (optional defaults to 0)
 
-    -   :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
         unique object for identification (optional)
 
-    -   :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         `true` if the layer is visible, otherwise `false` (optional, default to +true+)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `rez` is not an animation resource or ResourceId
 
@@ -267,25 +267,25 @@ This will stop the existing playback first.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary of options, can be `null`
 
-    -   :delegate — ([WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)) —
+- :delegate — ([WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)) —
 
         An [AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if playback started, otherwise `false`
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **stop()** as **Void**
 
@@ -297,4 +297,4 @@ Stop a playing animation.
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

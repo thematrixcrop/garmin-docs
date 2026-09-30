@@ -7,44 +7,44 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)
+- [Toybox.WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 This exception indicates an invalid menu item type was passed to [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) for a menu.
 
-## See Also:
+## 另见：
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -203,14 +203,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
@@ -218,11 +218,11 @@ Constructor
 
 Parameters:
 
--   msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The exception message
+    异常消息
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

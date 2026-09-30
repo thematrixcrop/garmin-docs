@@ -3,82 +3,82 @@ title: "Instinct® Crossover"
 ---
 # Instinct® Crossover
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | instinctcrossover |
-| Screen Shape | semi-octagon |
-| Screen Size | 176 x 176 |
-| Display Colors | 2 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 26 x 26 |
+| 标识 | instinctcrossover |
+| 屏幕形状 | semi-octagon |
+| 屏幕尺寸 | 176 x 176 |
+| 显示颜色 | 2 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 26 x 26 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
-| Glance | 32768 | Build as Widget |
-| Watch App | 98304 |  |
-| Watch Face | 65536 |  |
-| Widget | 65536 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 速览 | 32768 | Build as Widget |
+| 手表应用 | 98304 |  |
+| 表盘 | 65536 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/instinctcrossover/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 176 | 176 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 176 | 176 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/instinctcrossover/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 176 | 87 | 7 | True | True | True | False |
-| Field 2 | 0 | 89 | 176 | 87 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 176 | 87 | 7 | True | True | True | False |
+| 字段 2 | 0 | 89 | 176 | 87 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/instinctcrossover/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 176 | 87 | 7 | True | True | True | False |
-| Field 2 | 0 | 89 | 87 | 87 | 9 | True | False | False | True |
-| Field 3 | 89 | 89 | 87 | 87 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 176 | 87 | 7 | True | True | True | False |
+| 字段 2 | 0 | 89 | 87 | 87 | 9 | True | False | False | True |
+| 字段 3 | 89 | 89 | 87 | 87 | 12 | False | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/instinctcrossover/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 87 | 87 | 3 | True | False | True | False |
-| Field 2 | 89 | 0 | 87 | 87 | 6 | False | True | True | False |
-| Field 3 | 0 | 89 | 87 | 87 | 9 | True | False | False | True |
-| Field 4 | 89 | 89 | 87 | 87 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 87 | 87 | 3 | True | False | True | False |
+| 字段 2 | 89 | 0 | 87 | 87 | 6 | False | True | True | False |
+| 字段 3 | 0 | 89 | 87 | 87 | 9 | True | False | False | True |
+| 字段 4 | 89 | 89 | 87 | 87 | 12 | False | True | False | True |
 
 **Part Number 006-B4155-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 18 | 006B415500\_CDPG\_ROBOTO\_10M |
 | FONT\_TINY | Roboto Condensed | 21 | 006B415500\_CDPG\_ROBOTO\_15M |
@@ -92,13 +92,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE | Roboto Condensed | 24 | 006B415500\_CDPG\_ROBOTO\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 34 | 006B415500\_0000\_GARMIN\_34 |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Medium-94 | 14 | 006B388800\_NOTO\_SANS\_SC\_MEDIUM-94\_10M |
 | FONT\_TINY | Noto Sans SC Medium-94 | 19 | 006B388800\_NOTO\_SANS\_SC\_MEDIUM-94\_15M |
@@ -121,13 +121,13 @@ zhs, zht
 | FONT\_GLANCE | Noto Sans SC Medium-94 | 20 | 006B388800\_NOTO\_SANS\_SC\_MEDIUM-94\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 14 | 006B388800\_KOSUGI\_REGULAR-94\_JPN\_10M |
 | FONT\_TINY | MotoyaLCedar-94 | 19 | 006B388800\_KOSUGI\_REGULAR-94\_JPN\_15M |
@@ -150,13 +150,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar-94 | 20 | 006B388800\_KOSUGI\_REGULAR-94\_JPN\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic-Bold-94 | 14 | 006B388800\_NANUM\_GOTHIC\_BOLD-94\_KOR\_10M |
 | FONT\_TINY | NanumGothic-Bold-94 | 19 | 006B388800\_NANUM\_GOTHIC\_BOLD-94\_KOR\_15M |
@@ -179,13 +179,13 @@ kor
 | FONT\_GLANCE | NanumGothic-Bold-94 | 20 | 006B388800\_NANUM\_GOTHIC\_BOLD-94\_KOR\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -208,13 +208,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 14 | 006B388800\_ROBOTO\_CONDENSED\_BOLD\_VIET\_10M |
 | FONT\_TINY | Roboto Condensed | 17 | 006B388800\_ROBOTO\_CONDENSED\_BOLD\_VIET\_15M |

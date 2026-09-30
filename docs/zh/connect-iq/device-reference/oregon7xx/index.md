@@ -3,140 +3,140 @@ title: "Oregon® 7 Series"
 ---
 # Oregon® 7 Series
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | oregon7xx |
-| Screen Shape | rectangle |
-| Screen Size | 240 x 400 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | menu, esc |
-| Launcher Icon Size | 54 x 54 |
+| 标识 | oregon7xx |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 240 x 400 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | menu, esc |
+| 启动图标尺寸 | 54 x 54 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 131072 |  |
-| Watch App | 2359296 |  |
-| Widget | 1048576 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 手表应用 | 2359296 |  |
+| 微件 | 1048576 |  |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/oregon7xx/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 126 | 240 | 131 | 0 | False | False | False | False |
-| Field 2 | 0 | 259 | 240 | 131 | 0 | False | False | False | False |
+| 字段 1 | 0 | 126 | 240 | 131 | 0 | False | False | False | False |
+| 字段 2 | 0 | 259 | 240 | 131 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/oregon7xx/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 125 | 240 | 131 | 0 | False | False | False | False |
-| Field 2 | 0 | 257 | 119 | 64 | 0 | False | False | False | False |
-| Field 3 | 121 | 257 | 119 | 64 | 0 | False | False | False | False |
-| Field 4 | 0 | 323 | 119 | 65 | 0 | False | False | False | False |
-| Field 5 | 121 | 323 | 119 | 65 | 0 | False | False | False | False |
+| 字段 1 | 0 | 125 | 240 | 131 | 0 | False | False | False | False |
+| 字段 2 | 0 | 257 | 119 | 64 | 0 | False | False | False | False |
+| 字段 3 | 121 | 257 | 119 | 64 | 0 | False | False | False | False |
+| 字段 4 | 0 | 323 | 119 | 65 | 0 | False | False | False | False |
+| 字段 5 | 121 | 323 | 119 | 65 | 0 | False | False | False | False |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/oregon7xx/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 119 | 119 | 93 | 0 | False | False | False | False |
-| Field 2 | 121 | 119 | 119 | 93 | 0 | False | False | False | False |
-| Field 3 | 0 | 214 | 119 | 87 | 0 | False | False | False | False |
-| Field 4 | 121 | 214 | 119 | 87 | 0 | False | False | False | False |
-| Field 5 | 0 | 303 | 119 | 87 | 0 | False | False | False | False |
-| Field 6 | 121 | 303 | 119 | 87 | 0 | False | False | False | False |
+| 字段 1 | 0 | 119 | 119 | 93 | 0 | False | False | False | False |
+| 字段 2 | 121 | 119 | 119 | 93 | 0 | False | False | False | False |
+| 字段 3 | 0 | 214 | 119 | 87 | 0 | False | False | False | False |
+| 字段 4 | 121 | 214 | 119 | 87 | 0 | False | False | False | False |
+| 字段 5 | 0 | 303 | 119 | 87 | 0 | False | False | False | False |
+| 字段 6 | 121 | 303 | 119 | 87 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/oregon7xx/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 119 | 119 | 70 | 0 | False | False | False | False |
-| Field 2 | 121 | 119 | 119 | 70 | 0 | False | False | False | False |
-| Field 3 | 0 | 191 | 119 | 64 | 0 | False | False | False | False |
-| Field 4 | 121 | 191 | 119 | 64 | 0 | False | False | False | False |
-| Field 5 | 0 | 257 | 119 | 64 | 0 | False | False | False | False |
-| Field 6 | 121 | 257 | 119 | 64 | 0 | False | False | False | False |
-| Field 7 | 0 | 323 | 119 | 65 | 0 | False | False | False | False |
-| Field 8 | 121 | 323 | 119 | 65 | 0 | False | False | False | False |
+| 字段 1 | 0 | 119 | 119 | 70 | 0 | False | False | False | False |
+| 字段 2 | 121 | 119 | 119 | 70 | 0 | False | False | False | False |
+| 字段 3 | 0 | 191 | 119 | 64 | 0 | False | False | False | False |
+| 字段 4 | 121 | 191 | 119 | 64 | 0 | False | False | False | False |
+| 字段 5 | 0 | 257 | 119 | 64 | 0 | False | False | False | False |
+| 字段 6 | 121 | 257 | 119 | 64 | 0 | False | False | False | False |
+| 字段 7 | 0 | 323 | 119 | 65 | 0 | False | False | False | False |
+| 字段 8 | 121 | 323 | 119 | 65 | 0 | False | False | False | False |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/oregon7xx/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 267 | 114 | 0 | False | False | False | False |
-| Field 2 | 0 | 116 | 267 | 114 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 267 | 114 | 0 | False | False | False | False |
+| 字段 2 | 0 | 116 | 267 | 114 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/oregon7xx/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 267 | 114 | 0 | False | False | False | False |
-| Field 2 | 0 | 117 | 137 | 56 | 0 | False | False | False | False |
-| Field 3 | 139 | 117 | 128 | 56 | 0 | False | False | False | False |
-| Field 4 | 0 | 175 | 137 | 55 | 0 | False | False | False | False |
-| Field 5 | 139 | 175 | 128 | 55 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 267 | 114 | 0 | False | False | False | False |
+| 字段 2 | 0 | 117 | 137 | 56 | 0 | False | False | False | False |
+| 字段 3 | 139 | 117 | 128 | 56 | 0 | False | False | False | False |
+| 字段 4 | 0 | 175 | 137 | 55 | 0 | False | False | False | False |
+| 字段 5 | 139 | 175 | 128 | 55 | 0 | False | False | False | False |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/oregon7xx/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 137 | 76 | 0 | False | False | False | False |
-| Field 2 | 139 | 0 | 128 | 76 | 0 | False | False | False | False |
-| Field 3 | 0 | 78 | 137 | 75 | 0 | False | False | False | False |
-| Field 4 | 139 | 78 | 128 | 75 | 0 | False | False | False | False |
-| Field 5 | 0 | 155 | 137 | 75 | 0 | False | False | False | False |
-| Field 6 | 139 | 155 | 128 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 137 | 76 | 0 | False | False | False | False |
+| 字段 2 | 139 | 0 | 128 | 76 | 0 | False | False | False | False |
+| 字段 3 | 0 | 78 | 137 | 75 | 0 | False | False | False | False |
+| 字段 4 | 139 | 78 | 128 | 75 | 0 | False | False | False | False |
+| 字段 5 | 0 | 155 | 137 | 75 | 0 | False | False | False | False |
+| 字段 6 | 139 | 155 | 128 | 75 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/oregon7xx/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 137 | 57 | 0 | False | False | False | False |
-| Field 2 | 139 | 0 | 128 | 57 | 0 | False | False | False | False |
-| Field 3 | 0 | 59 | 137 | 56 | 0 | False | False | False | False |
-| Field 4 | 139 | 59 | 128 | 56 | 0 | False | False | False | False |
-| Field 5 | 0 | 117 | 137 | 56 | 0 | False | False | False | False |
-| Field 6 | 139 | 117 | 128 | 56 | 0 | False | False | False | False |
-| Field 7 | 0 | 175 | 137 | 55 | 0 | False | False | False | False |
-| Field 8 | 139 | 175 | 128 | 55 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 137 | 57 | 0 | False | False | False | False |
+| 字段 2 | 139 | 0 | 128 | 57 | 0 | False | False | False | False |
+| 字段 3 | 0 | 59 | 137 | 56 | 0 | False | False | False | False |
+| 字段 4 | 139 | 59 | 128 | 56 | 0 | False | False | False | False |
+| 字段 5 | 0 | 117 | 137 | 56 | 0 | False | False | False | False |
+| 字段 6 | 139 | 117 | 128 | 56 | 0 | False | False | False | False |
+| 字段 7 | 0 | 175 | 137 | 55 | 0 | False | False | False | False |
+| 字段 8 | 139 | 175 | 128 | 55 | 0 | False | False | False | False |
 
 **Part Number 006-B2512-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | DEJAVU\_SANS\_12 |
@@ -150,13 +150,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B2681-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | DEJAVU\_SANS\_12 |
@@ -168,13 +168,13 @@ eng, ind, zsm
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_TINY | DFHeiW5-A | 17 | DFHEI\_17 |
@@ -186,13 +186,13 @@ zhs, zht
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFPHSGothic-W3 | 12 | DFPHSGOTHIC\_12 |
 | FONT\_TINY | DFPHSGothic-W3 | 17 | DFPHSGOTHIC\_17 |
@@ -204,13 +204,13 @@ jpn
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFKGothic-Md | 12 | DFKGOTHIC\_12 |
 | FONT\_TINY | DFKGothic-Md | 17 | DFKGOTHIC\_17 |
@@ -222,13 +222,13 @@ kor
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -242,13 +242,13 @@ tha
 
 **Part Number 006-B2692-00**
 
-*Languages*
+*语言*
 
 eng
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | DEJAVU\_SANS\_12 |
@@ -260,13 +260,13 @@ eng
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_TINY | DFHeiW5-A | 17 | DFHEI\_17 |

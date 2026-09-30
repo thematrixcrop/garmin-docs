@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [Toybox.Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Long represents a 64-bit signed integer.
 
@@ -28,48 +28,48 @@ var myLong = 9000l;
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**abs**](#abs-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**abs**](#abs-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
     Get the absolute value of a Long.
 
--   [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Compare the numeric value of self to some other numeric value.
+    将 self 的数值与其他数值进行比较。
 
--   [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Test if an Object instance is equal to another instance of an Object.
+    测试一个 Object 实例是否等于另一个 Object 实例。
 
--   [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Format a Long using a formatting String.
 
--   [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
+- [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
     Convert a Long to a Double.
 
--   [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Convert a Long to a Float.
 
--   [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
     Convert a Long to a Long.
 
--   [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Convert a Long to a Number.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a Long to a String.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **abs()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
@@ -77,65 +77,65 @@ Get the absolute value of a Long.
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     The absolute value of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Compare the numeric value of self to some other numeric value.
+将 self 的数值与其他数值进行比较。
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The right hand side of a comparison.
+    比较的右侧操作数。
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A negative value if self is less than other, zero if the objects are equivalent, and a positive value if self is greater than other.
 
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if other is not of type [Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), or [Char](/connect-iq/api-docs/Toybox/Lang/Char/).
+    若 other 不是 [Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)、[Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) 或 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 类型则抛出。
 
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Test if an Object instance is equal to another instance of an Object.
+测试一个 Object 实例是否等于另一个 Object 实例。
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to test against
+    用于比较的对象
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the Objects are equal, otherwise `false`
+    对象相等时返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **format(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -149,48 +149,48 @@ The formatting string is similar to that available in `printf` from the C stdio 
 
 specifiers
 
--   **d** or **i** - signed decimal integer
+- d 或 i - 有符号十进制整数
 
--   **e** - scientific notation (mantissa/exponent) using 'e' character
+- e - 使用 'e' 字符的科学计数法（尾数/指数）
 
--   **E** - scientific notation (mantissa/exponent) using 'E' character
+- E - 使用 'E' 字符的科学计数法（尾数/指数）
 
--   **f** - decimal floating point
+- f - 十进制浮点数
 
--   **o** - signed octal
+- o - 有符号八进制
 
--   **u** - unsigned decimal integer
+- u - 无符号十进制整数
 
--   **x** - unsigned hexadecimal integer
+- x - 无符号十六进制整数
 
--   **X** - unsigned hexadecimal integer (capital letters)
+- X - 无符号十六进制整数（大写字母）
 
 
 flags
 
--   \+ - Prepends the result with a plus or minus sign ('+' or '-'), including positive numbers. By default, only negative numbers are preceded with a '-' sign.
+- \+ - Prepends the result with a plus or minus sign ('+' or '-'), including positive numbers. By default, only negative numbers are preceded with a '-' sign.
 
--   **0** - Left-pads the number with zeros (0) instead of spaces, where padding is specified (see width sub-specifier).
+- 0 - 在指定了填充宽度时，用零（0）而不是空格左填充数字（参见 width 子说明符）。
 
 
 width
 
-supports only numbers (\* is not supported)
+仅支持数字（不支持 \*）
 
 .precision
 
-supports only numbers (\* is not supported)
+仅支持数字（不支持 \*）
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A formatted String
+    格式化后的字符串
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
@@ -198,14 +198,14 @@ Convert a Long to a Double.
 
 Returns:
 
--   [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
+- [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     A Double representation of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -213,14 +213,14 @@ Convert a Long to a Float.
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     A Float representation of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
@@ -228,14 +228,14 @@ Convert a Long to a Long.
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     A Long representation of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -243,14 +243,14 @@ Convert a Long to a Number.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A Number representation of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -258,11 +258,11 @@ Convert a Long to a String.
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A String representation of the Long
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

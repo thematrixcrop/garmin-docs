@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
+- [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 ServiceDelegate is a class used to service [Background](/connect-iq/api-docs/Toybox/Background/) events.
 
-This class is used as the main entry point for background processes. A callback function within the delegate 可用于 initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
+This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
 
-## See Also:
+## 另见：
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
 Example:
@@ -57,44 +57,44 @@ class MyServiceDelegate extends System.ServiceDelegate {
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onActivityCompleted**](#onActivityCompleted-instance_function)(activity as { :sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) }) as **Void**
+- [**onActivityCompleted**](#onActivityCompleted-instance_function)(activity as { :sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) }) as **Void**
 
     The callback method that is triggered when an activity is completed.
 
--   [**onGoalReached**](#onGoalReached-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
+- [**onGoalReached**](#onGoalReached-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
     A callback method that is triggered in the background when a fitness goal is reached.
 
--   [**onOAuthResponse**](#onOAuthResponse-instance_function)() as **Void**
+- [**onOAuthResponse**](#onOAuthResponse-instance_function)() as **Void**
 
     The callback method that is triggered in the background when an OAuth response is received from the system.
 
--   [**onPhoneAppMessage**](#onPhoneAppMessage-instance_function)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as **Void**
+- [**onPhoneAppMessage**](#onPhoneAppMessage-instance_function)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as **Void**
 
     The callback method that is triggered when a phone app message arrives for this app.
 
--   [**onSleepTime**](#onSleepTime-instance_function)() as **Void**
+- [**onSleepTime**](#onSleepTime-instance_function)() as **Void**
 
     The callback method that is triggered in the background at the configured sleep time.
 
--   [**onSteps**](#onSteps-instance_function)() as **Void**
+- [**onSteps**](#onSteps-instance_function)() as **Void**
 
     The callback method that is triggered in the background when a step goal is reached.
 
--   [**onTemporalEvent**](#onTemporalEvent-instance_function)() as **Void**
+- [**onTemporalEvent**](#onTemporalEvent-instance_function)() as **Void**
 
     A callback method that is triggered in the background when time-based events occur.
 
--   [**onWakeTime**](#onWakeTime-instance_function)() as **Void**
+- [**onWakeTime**](#onWakeTime-instance_function)() as **Void**
 
     A callback method that is triggered in the background at the configured wake time.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onActivityCompleted(activity as { :sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) })** as **Void**
 
@@ -102,22 +102,22 @@ The callback method that is triggered when an activity is completed
 
 Parameters:
 
--   activity — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- activity — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A dictionary containing information about the completed activity.
 
-    -   :sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
+- :sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
         The primary sport of the completed activity.
 
-    -   :subSport — ([Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
+- :subSport — ([Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
 
         The sport subcategory of the completed activity.
 
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 ### **onGoalReached(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
@@ -125,14 +125,14 @@ A callback method that is triggered in the background when a fitness goal is rea
 
 Parameters:
 
--   goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
+- goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     An Application.GOAL\_TYPE\_\* value, representing the goal type that is being registered.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onOAuthResponse()** as **Void**
 
@@ -140,7 +140,7 @@ The callback method that is triggered in the background when an OAuth response i
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onPhoneAppMessage(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/))** as **Void**
 
@@ -148,12 +148,12 @@ The callback method that is triggered when a phone app message arrives for this 
 
 Parameters:
 
--   msg — ([Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) —
+- msg — ([Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) —
 
     The message received.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -291,7 +291,7 @@ Parameters:
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **onSleepTime()** as **Void**
 
@@ -299,7 +299,7 @@ The callback method that is triggered in the background at the configured sleep 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onSteps()** as **Void**
 
@@ -309,7 +309,7 @@ Step goals occur at 1000 step increments.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onTemporalEvent()** as **Void**
 
@@ -317,7 +317,7 @@ A callback method that is triggered in the background when time-based events occ
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onWakeTime()** as **Void**
 
@@ -325,4 +325,4 @@ A callback method that is triggered in the background at the configured wake tim
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

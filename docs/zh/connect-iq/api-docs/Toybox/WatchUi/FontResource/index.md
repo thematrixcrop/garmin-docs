@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
+- [Toybox.WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of a font resource.
 
@@ -22,18 +22,18 @@ FontResource objects are returned by the [loadResource()](/connect-iq/api-docs/T
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件

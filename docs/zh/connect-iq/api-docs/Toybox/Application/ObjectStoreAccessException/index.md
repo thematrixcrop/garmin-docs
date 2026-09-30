@@ -7,36 +7,36 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)
+- [Toybox.Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Indicates a [Background](/connect-iq/api-docs/Toybox/Background/) process has attempted to access or modify the object store.
 
-## See Also:
+## 另见：
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -44,4 +44,4 @@ Constructor
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

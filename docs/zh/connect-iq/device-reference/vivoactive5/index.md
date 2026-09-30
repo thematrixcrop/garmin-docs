@@ -3,79 +3,79 @@ title: "vívoactive® 5"
 ---
 # vívoactive® 5
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | vivoactive5 |
-| Screen Shape | round |
-| Screen Size | 390 x 390 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 56 x 56 |
+| 标识 | vivoactive5 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 390 x 390 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 56 x 56 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/vivoactive5/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/vivoactive5/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 6 | 6 | 390 | 194 | 7 | True | True | True | False |
-| Field 2 | 6 | 202 | 390 | 194 | 13 | True | True | False | True |
+| 字段 1 | 6 | 6 | 390 | 194 | 7 | True | True | True | False |
+| 字段 2 | 6 | 202 | 390 | 194 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/vivoactive5/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 6 | 6 | 390 | 132 | 7 | True | True | True | False |
-| Field 2 | 6 | 140 | 390 | 113 | 5 | True | True | False | False |
-| Field 3 | 91 | 255 | 220 | 141 | 13 | True | True | False | True |
+| 字段 1 | 6 | 6 | 390 | 132 | 7 | True | True | True | False |
+| 字段 2 | 6 | 140 | 390 | 113 | 5 | True | True | False | False |
+| 字段 3 | 91 | 255 | 220 | 141 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/vivoactive5/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 2 | 6 | 390 | 134 | 7 | True | True | True | False |
-| Field 2 | 2 | 142 | 187 | 109 | 1 | True | False | False | False |
-| Field 3 | 205 | 142 | 187 | 109 | 4 | False | True | False | False |
-| Field 4 | 84 | 253 | 226 | 143 | 13 | True | True | False | True |
+| 字段 1 | 2 | 6 | 390 | 134 | 7 | True | True | True | False |
+| 字段 2 | 2 | 142 | 187 | 109 | 1 | True | False | False | False |
+| 字段 3 | 205 | 142 | 187 | 109 | 4 | False | True | False | False |
+| 字段 4 | 84 | 253 | 226 | 143 | 13 | True | True | False | True |
 
 **Part Number 006-B4426-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto | 32 | 006B442500\_TINY |
 | FONT\_TINY | Roboto | 41 | 006B442500\_SMALL |
@@ -89,13 +89,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE | Roboto | 41 | 006B442500\_SMALL |
 | FONT\_GLANCE\_NUMBER | Roboto | 41 | 006B442500\_SMALL |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Medium-94 | 25 | NOTO\_SANS\_SC\_MEDIUM-94\_25 |
 | FONT\_TINY | Noto Sans SC Medium-94 | 35 | NOTO\_SANS\_SC\_MEDIUM-94\_35 |
@@ -109,13 +109,13 @@ zhs, zht
 | FONT\_GLANCE | Noto Sans SC Medium-94 | 35 | NOTO\_SANS\_SC\_MEDIUM-94\_35 |
 | FONT\_GLANCE\_NUMBER | Noto Sans SC Medium-94 | 35 | NOTO\_SANS\_SC\_MEDIUM-94\_35 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 25 | KOSUGI\_REGULAR-94\_JPN\_25 |
 | FONT\_TINY | MotoyaLCedar-94 | 35 | KOSUGI\_REGULAR-94\_JPN\_35 |
@@ -129,13 +129,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar-94 | 35 | KOSUGI\_REGULAR-94\_JPN\_35 |
 | FONT\_GLANCE\_NUMBER | MotoyaLCedar-94 | 35 | KOSUGI\_REGULAR-94\_JPN\_35 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic-Bold-94 | 25 | NANUM\_GOTHIC\_BOLD-94\_KOR\_25 |
 | FONT\_TINY | NanumGothic-Bold-94 | 35 | NANUM\_GOTHIC\_BOLD-94\_KOR\_35 |
@@ -149,13 +149,13 @@ kor
 | FONT\_GLANCE | NanumGothic-Bold-94 | 35 | NANUM\_GOTHIC\_BOLD-94\_KOR\_35 |
 | FONT\_GLANCE\_NUMBER | NanumGothic-Bold-94 | 35 | NANUM\_GOTHIC\_BOLD-94\_KOR\_35 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

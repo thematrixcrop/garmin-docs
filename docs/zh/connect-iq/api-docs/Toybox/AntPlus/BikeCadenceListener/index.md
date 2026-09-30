@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/)
+- [Toybox.AntPlus.BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Bike Cadence
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -175,18 +175,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onBikeCadenceUpdate**](#onBikeCadenceUpdate-instance_function)(data as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) as **Void**
+- [**onBikeCadenceUpdate**](#onBikeCadenceUpdate-instance_function)(data as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) as **Void**
 
     Callback when cadence data is updated.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -194,7 +194,7 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onBikeCadenceUpdate(data as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/))** as **Void**
 
@@ -202,11 +202,11 @@ Callback when cadence data is updated
 
 Parameters:
 
--   data — ([AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) —
+- data — ([AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) —
 
     data Data with updated cadence information.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

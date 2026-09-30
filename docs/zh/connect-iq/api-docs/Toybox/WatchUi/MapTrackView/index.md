@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.WatchUi.MapView
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
+- [Toybox.WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
 
--   [Toybox.WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)
+- [Toybox.WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A View for rendering a map on the screen while tracking the current location of the device.
 
@@ -26,24 +26,24 @@ This is a dynamic view where the map is centered on the current location of the 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -133,14 +133,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -148,4 +148,4 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

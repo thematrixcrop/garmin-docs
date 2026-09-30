@@ -3,7 +3,7 @@ title: "Module: Toybox.Authentication"
 ---
 # Module: Toybox.Authentication
 
-## Overview
+## 概述
 
 The Authentication Module provides tools for authentication.
 
@@ -11,60 +11,60 @@ With the Authentication module, Connect IQ apps will be able to make OAuth reque
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Message](/connect-iq/api-docs/Toybox/Authentication/Message/), [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)
+类：[Message](/connect-iq/api-docs/Toybox/Authentication/Message/), [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)
 
-## Constant Summary
+## 常量摘要
 
 ### OAuthResultType
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | OAUTH\_RESULT\_TYPE\_URL | 0 |
-API Level 3.3.0
+API 级别 3.3.0
 
- |
+|
 
 How the OAuth token will be returned in the final step.
 
- |
+|
 
 ### OAuthSigningMethod
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | OAUTH\_SIGNING\_METHOD\_HMAC\_SHA1 | 0 |
-API Level 3.3.0
+API 级别 3.3.0
 
- |
+|
 
 How the OAuth request will be signed
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**makeOAuthRequest**](#makeOAuthRequest-instance_function)(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>) as **Void**
+- [**makeOAuthRequest**](#makeOAuthRequest-instance_function)(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>) as **Void**
 
     Request an OAuth sign-in through Garmin Connect IQ Mobile App A notification will trigger on the phone, that when clicked, provides a web view that shows `requestUrl`.
 
--   [**registerForOAuthMessages**](#registerForOAuthMessages-instance_function)(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)) as **Void**) as **Void**
+- [**registerForOAuthMessages**](#registerForOAuthMessages-instance_function)(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)) as **Void**) as **Void**
 
-    Register a callback for receiving OAuth messages.
+    注册用于接收 OAuth 消息的回调。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **makeOAuthRequest(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>)** as **Void**
 
@@ -74,23 +74,23 @@ A notification will trigger on the phone, that when clicked, provides a web view
 
 Parameters:
 
--   requestUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- requestUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The URL to load in the web view to begin authentication
 
--   requestParams — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- requestParams — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Non-URL encoded parameters for the `requestUrl`
 
--   resultUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- resultUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The URL of the final page of authentication that contains the `resultKeys`
 
--   resultType — ([Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module)) —
+- resultType — ([Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module)) —
 
     An OAUTH\_RESULT\_TYPE\_\* value that specifies the format of the result
 
--   resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     The desired OAuth response values passed to the callback method. The keys map to the actual OAuth response keys, and the values map to the keys of the [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) data.
 
@@ -147,19 +147,19 @@ function onOAuthMessage(message) {
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **registerForOAuthMessages(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)) as **Void**)** as **Void**
 
-Register a callback for receiving OAuth messages.
+注册用于接收 OAuth 消息的回调。
 
 The callback will be called once for each received OAuth message. If there are messages waiting for the app when this function is called, the callback will immediately be called once for each waiting message.
 
 Parameters:
 
--   method — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- method — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a callback, which must receive a `data` argument of the type [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/).
+    对回调的引用，该回调必须接收类型为 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 的 `data` 参数。
 
 
 Example:
@@ -180,4 +180,4 @@ Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0

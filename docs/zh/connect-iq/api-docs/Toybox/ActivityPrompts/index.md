@@ -3,7 +3,7 @@ title: "Module: Toybox.ActivityPrompts"
 ---
 # Module: Toybox.ActivityPrompts
 
-## Overview
+## 概述
 
 The ActivityPrompts module allows a data field to handle audio output during an activity.
 
@@ -13,16 +13,16 @@ Prompts will be passed to [ActivityPromptDelegate.onPrompt()](/connect-iq/api-do
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -85,43 +85,43 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   ActivityPrompts
+- ActivityPrompts
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/), [ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)
+类：[ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/), [ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**ActivityPromptContextValue**](#ActivityPromptContextValue-named_type) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or **Null**
+- [**ActivityPromptContextValue**](#ActivityPromptContextValue-named_type) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or **Null**
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**registerActivityPromptsListener**](#registerActivityPromptsListener-instance_function)(delegate as [ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**registerActivityPromptsListener**](#registerActivityPromptsListener-instance_function)(delegate as [ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Register as the activity prompt output provider.
 
--   [**setActivityPromptTextLanguage**](#setActivityPromptTextLanguage-instance_function)(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**setActivityPromptTextLanguage**](#setActivityPromptTextLanguage-instance_function)(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the language for [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var).
 
--   [**unregisterActivityPromptsListener**](#unregisterActivityPromptsListener-instance_function)() as **Void**
+- [**unregisterActivityPromptsListener**](#unregisterActivityPromptsListener-instance_function)() as **Void**
 
     Unregister as the activity prompt output handler.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **ActivityPromptContextValue** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or **Null**
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **registerActivityPromptsListener(delegate as [ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -129,25 +129,25 @@ Register as the activity prompt output provider. `true` will only be returned on
 
 Parameters:
 
--   delegate — ([ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)) —
+- delegate — ([ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)) —
 
     The delegate to handle audio prompts from the system
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Reserved for future use
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the app was registered succesfully, `false` otherwise
 
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
 ### **setActivityPromptTextLanguage(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -155,21 +155,21 @@ Set the language for [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityP
 
 Parameters:
 
--   languages — ([System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) —
+- languages — ([System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) —
 
     The language to receive prompt text
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the language is available and the data field is the current activity prompt output provider, `false` otherwise.
 
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
 ### **unregisterActivityPromptsListener()** as **Void**
 
@@ -177,4 +177,4 @@ Unregister as the activity prompt output handler. Activity prompt output will re
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0

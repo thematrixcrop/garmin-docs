@@ -7,44 +7,44 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)
+- [Toybox.Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A NotificationMessage is received by the callback registered in [registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function).
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**action**](#action-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
+- [**action**](#action-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
     The action payload associated with the selected action The value of the selected action from the `:actions` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function).
 
--   [**data**](#data-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
+- [**data**](#data-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
     The data payload associated with the notification The value of the `:data` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function).
 
--   [**type**](#type-var) as [Notifications.NotificationMessageType](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageType-module)
+- [**type**](#type-var) as [Notifications.NotificationMessageType](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageType-module)
 
     The notification message type.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var action as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
@@ -54,7 +54,7 @@ The value of the selected action from the `:actions` option provided to [showNot
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### var data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
@@ -64,7 +64,7 @@ The value of the `:data` option provided to [showNotification()](/connect-iq/api
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### var type as [Notifications.NotificationMessageType](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageType-module)
 
@@ -72,9 +72,9 @@ The notification message type
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -82,4 +82,4 @@ Constructor
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0

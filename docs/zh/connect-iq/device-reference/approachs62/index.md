@@ -3,88 +3,88 @@ title: "Approach® S62"
 ---
 # Approach® S62
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | approachs62 |
-| Screen Shape | round |
-| Screen Size | 260 x 260 |
-| Display Colors | 64 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 35 x 35 |
+| 标识 | approachs62 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 260 x 260 |
+| 显示颜色 | 64 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 35 x 35 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 65536 | Requires Permission |
-| Data Field | 131072 |  |
-| Watch App | 1048576 |  |
-| Watch Face | 135168 |  |
-| Widget | 65536 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 手表应用 | 1048576 |  |
+| 表盘 | 135168 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x000055&lt;/td>&lt;td class="entry">0x0000aa&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x005500&lt;/td>&lt;td class="entry">0x005555&lt;/td>&lt;td class="entry">0x0055aa&lt;/td>&lt;td class="entry">0x0055ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aa55&lt;/td>&lt;td class="entry">0x00aaaa&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ff55&lt;/td>&lt;td class="entry">0x00ffaa&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x550000&lt;/td>&lt;td class="entry">0x550055&lt;/td>&lt;td class="entry">0x5500aa&lt;/td>&lt;td class="entry">0x5500ff&lt;/td>&lt;td class="entry">0x555500&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0x5555aa&lt;/td>&lt;td class="entry">0x5555ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x55aa00&lt;/td>&lt;td class="entry">0x55aa55&lt;/td>&lt;td class="entry">0x55aaaa&lt;/td>&lt;td class="entry">0x55aaff&lt;/td>&lt;td class="entry">0x55ff00&lt;/td>&lt;td class="entry">0x55ff55&lt;/td>&lt;td class="entry">0x55ffaa&lt;/td>&lt;td class="entry">0x55ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaa0000&lt;/td>&lt;td class="entry">0xaa0055&lt;/td>&lt;td class="entry">0xaa00aa&lt;/td>&lt;td class="entry">0xaa00ff&lt;/td>&lt;td class="entry">0xaa5500&lt;/td>&lt;td class="entry">0xaa5555&lt;/td>&lt;td class="entry">0xaa55aa&lt;/td>&lt;td class="entry">0xaa55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaa00&lt;/td>&lt;td class="entry">0xaaaa55&lt;/td>&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xaaaaff&lt;/td>&lt;td class="entry">0xaaff00&lt;/td>&lt;td class="entry">0xaaff55&lt;/td>&lt;td class="entry">0xaaffaa&lt;/td>&lt;td class="entry">0xaaffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff0055&lt;/td>&lt;td class="entry">0xff00aa&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xff5555&lt;/td>&lt;td class="entry">0xff55aa&lt;/td>&lt;td class="entry">0xff55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffaa55&lt;/td>&lt;td class="entry">0xffaaaa&lt;/td>&lt;td class="entry">0xffaaff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffff55&lt;/td>&lt;td class="entry">0xffffaa&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/approachs62/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 260 | 260 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 260 | 260 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/approachs62/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 260 | 129 | 7 | True | True | True | False |
-| Field 2 | 0 | 131 | 260 | 129 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 260 | 129 | 7 | True | True | True | False |
+| 字段 2 | 0 | 131 | 260 | 129 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/approachs62/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 260 | 85 | 7 | True | True | True | False |
-| Field 2 | 0 | 87 | 260 | 86 | 5 | True | True | False | False |
-| Field 3 | 0 | 175 | 260 | 85 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 260 | 85 | 7 | True | True | True | False |
+| 字段 2 | 0 | 87 | 260 | 86 | 5 | True | True | False | False |
+| 字段 3 | 0 | 175 | 260 | 85 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/approachs62/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 50 | 260 | 160 | 5 | True | True | False | False |
+| 字段 1 | 0 | 50 | 260 | 160 | 5 | True | True | False | False |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/approachs62/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 50 | 260 | 79 | 5 | True | True | False | False |
-| Field 2 | 0 | 131 | 260 | 79 | 5 | True | True | False | False |
+| 字段 1 | 0 | 50 | 260 | 79 | 5 | True | True | False | False |
+| 字段 2 | 0 | 131 | 260 | 79 | 5 | True | True | False | False |
 
 **Part Number 006-B3393-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | VIVOACTIVE4\_ROBOTO\_XTINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 27 | VIVOACTIVE4\_ROBOTO\_TINY\_PLUS\_BOLD |
@@ -107,13 +107,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 
 **Part Number 006-B3700-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | VIVOACTIVE4\_ROBOTO\_XTINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 27 | VIVOACTIVE4\_ROBOTO\_TINY\_PLUS\_BOLD |
@@ -134,13 +134,13 @@ eng, ind, zsm
 | FONT\_SYSTEM\_NUMBER\_HOT | Roboto Black | 83 | VIVOACTIVE4\_BOLD\_NUMBER\_FONT\_5 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Roboto Black | 97 | VIVOACTIVE4\_BOLD\_NUMBER\_FONT\_6 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 17 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_17PX |
 | FONT\_TINY | Noto Sans CJK SC Bold | 24 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_24PX |
@@ -161,13 +161,13 @@ zhs
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 82 | NOTO\_SANS\_BOLD\_82 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 102 | NOTO\_SANS\_BOLD\_102 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 17 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_17PX |
 | FONT\_TINY | Noto Sans CJK SC Bold | 24 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_24PX |
@@ -188,13 +188,13 @@ zht
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 82 | NOTO\_SANS\_BOLD\_82 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 102 | NOTO\_SANS\_BOLD\_102 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 17 | NOTO\_SANS\_CJK\_JP\_BOLD\_17PX |
 | FONT\_TINY | Noto Sans CJK JP Bold | 24 | NOTO\_SANS\_CJK\_JP\_BOLD\_24PX |
@@ -215,13 +215,13 @@ jpn
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 82 | NOTO\_SANS\_BOLD\_82 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 102 | NOTO\_SANS\_BOLD\_102 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Bold | 17 | NOTO\_SANS\_CJK\_KR\_BOLD\_17PX |
 | FONT\_TINY | Noto Sans CJK KR Bold | 24 | NOTO\_SANS\_CJK\_KR\_BOLD\_24PX |
@@ -242,13 +242,13 @@ kor
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 82 | NOTO\_SANS\_BOLD\_82 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 102 | NOTO\_SANS\_BOLD\_102 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -269,13 +269,13 @@ tha
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 82 | NOTO\_SANS\_BOLD\_82 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 102 | NOTO\_SANS\_BOLD\_102 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans | 17 | NOTO\_SANS\_BOLD\_VIET\_ADJUST\_17BPX |
 | FONT\_TINY | Noto Sans | 24 | NOTO\_SANS\_BOLD\_VIET\_ADJUST\_24BPX |

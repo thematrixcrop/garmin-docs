@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)
+- [Toybox.AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents received bike speed and cadence information.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -174,22 +174,22 @@ API Level 3.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Cadence (rpm).
 
--   [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Distance (m).
 
--   [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Speed (m/s).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -197,11 +197,11 @@ Cadence (rpm)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     0 - 254 range, [Toybox::AntPlus::INVALID\_CADENCE](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_CADENCE-const) if invalid
 
@@ -212,11 +212,11 @@ Distance (m)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -224,10 +224,10 @@ Speed (m/s)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     [Toybox::AntPlus::INVALID\_SPEED](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_SPEED-const) if invalid

@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 ClickEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) there is tap interaction with a device's touch screen.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -40,62 +40,62 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
-
-
-## Instance Method Summary [collapse](#)
-
--   [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
-
-    Get the coordinates of a click event.
-
--   [**getType**](#getType-instance_function)() as [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module)
-
-    Get the type of click event.
+- 微件
 
 
-## Instance Method Details
+## 实例方法摘要 [collapse](#)
+
+- [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+
+    获取点击事件的坐标。
+
+- [**getType**](#getType-instance_function)() as [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module)
+
+    获取点击事件的类型。
+
+
+## 实例方法详情
 
 ### **getCoordinates()** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Get the coordinates of a click event.
+获取点击事件的坐标。
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An array containing the x and y coordinates of the click event as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getType()** as [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module)
 
-Get the type of click event.
+获取点击事件的类型。
 
 Returns:
 
--   [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module) —
+- [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module) —
 
-    A [WatchUi.CLICK\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) value
+    一个 [WatchUi.CLICK\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) 值
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

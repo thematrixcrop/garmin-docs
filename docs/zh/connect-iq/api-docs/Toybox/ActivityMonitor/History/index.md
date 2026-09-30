@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)
+- [Toybox.ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing information about the user's activity history.
 
@@ -22,60 +22,60 @@ The fields in this class may return `null`. It is recommended to `null` check a 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**activeMinutes**](#activeMinutes-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
+- [**activeMinutes**](#activeMinutes-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
     Number of active minutes.
 
--   [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The calories for the day in kilocalories (kCal).
 
--   [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The distance for the day in centimeters (cm).
 
--   [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of floors climbed for the day.
 
--   [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Floors climbed goal for the day.
 
--   [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of floors descended for the day.
 
--   [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wheelchair push distance for the day in centimeters (cm).
+    当日的轮椅推行距离（厘米）。
 
--   [**pushGoal**](#pushGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushGoal**](#pushGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wheelchair push goal for the day in number of pushes.
+    当日的轮椅推行目标次数。
 
--   [**pushes**](#pushes-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushes**](#pushes-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Wheelchair push count for the day in number of pushes.
+    当日的轮椅推行次数。
 
--   [**startOfDay**](#startOfDay-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**startOfDay**](#startOfDay-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) object representing the start time of the day recorded by this History object.
 
--   [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The step goal for the day in number of steps.
 
--   [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The step count for the day in number of steps.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var activeMinutes as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
@@ -85,9 +85,9 @@ Contains the moderate, vigorous, and total accumulated minutes for the day.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -227,7 +227,7 @@ API Level 2.1.0
 
 Returns:
 
--   [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
+- [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -235,9 +235,9 @@ The calories for the day in kilocalories (kCal).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -389,7 +389,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -397,11 +397,11 @@ The distance for the day in centimeters (cm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsClimbed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -409,9 +409,9 @@ The number of floors climbed for the day.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -537,7 +537,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsClimbedGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -545,9 +545,9 @@ Floors climbed goal for the day.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -673,7 +673,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsDescended as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -681,9 +681,9 @@ The number of floors descended for the day.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -809,17 +809,17 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushDistance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wheelchair push distance for the day in centimeters (cm).
+当日的轮椅推行距离（厘米）。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -832,17 +832,17 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wheelchair push goal for the day in number of pushes.
+当日的轮椅推行目标次数。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -855,17 +855,17 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushes as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Wheelchair push count for the day in number of pushes.
+当日的轮椅推行次数。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -878,7 +878,7 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var startOfDay as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -886,11 +886,11 @@ A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) object representing the sta
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 ### var stepGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -898,11 +898,11 @@ The step goal for the day in number of steps.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var steps as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -910,8 +910,8 @@ The step count for the day in number of steps.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

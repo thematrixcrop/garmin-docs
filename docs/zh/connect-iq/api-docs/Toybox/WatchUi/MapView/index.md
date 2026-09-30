@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
+- [Toybox.WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A [View](/connect-iq/api-docs/Toybox/WatchUi/View/) for rendering a map on the screen.
 
@@ -24,24 +24,24 @@ The map is rendered statically and focused on the bounding box and/or a MapMarke
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -131,46 +131,46 @@ App Types and Runtime Contexts:
 
 :::
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**clear**](#clear-instance_function)() as **Void**
+- [**clear**](#clear-instance_function)() as **Void**
 
     Clear all the objects from the map.
 
--   [**getMapMode**](#getMapMode-instance_function)() as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
+- [**getMapMode**](#getMapMode-instance_function)() as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
 
     Get the current mode for the map in this MapView.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**setMapMarker**](#setMapMarker-instance_function)(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>) as **Void**
+- [**setMapMarker**](#setMapMarker-instance_function)(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>) as **Void**
 
     Add a [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of MapMarker objects to be rendered on the map.
 
--   [**setMapMode**](#setMapMode-instance_function)(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) as **Void**
+- [**setMapMode**](#setMapMode-instance_function)(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) as **Void**
 
     Set the mode for the map in this MapView.
 
--   [**setMapVisibleArea**](#setMapVisibleArea-instance_function)(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) as **Void**
+- [**setMapVisibleArea**](#setMapVisibleArea-instance_function)(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) as **Void**
 
     Select the area of the map to render on the screen with a bounding box.
 
--   [**setPolyline**](#setPolyline-instance_function)(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) as **Void**
+- [**setPolyline**](#setPolyline-instance_function)(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) as **Void**
 
     Add [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object to be rendered on the map.
 
--   [**setScreenVisibleArea**](#setScreenVisibleArea-instance_function)(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**setScreenVisibleArea**](#setScreenVisibleArea-instance_function)(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Set the area on the screen to focus the map.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **clear()** as **Void**
 
@@ -180,7 +180,7 @@ Removes all [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) and 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getMapMode()** as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
 
@@ -188,14 +188,14 @@ Get the current mode for the map in this MapView.
 
 Returns:
 
--   [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module) —
+- [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module) —
 
     The mode in which the map is rendered on the screen as a [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) enum value
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize()**
 
@@ -203,7 +203,7 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **setMapMarker(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>)** as **Void**
 
@@ -211,18 +211,18 @@ Add a [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object or an [
 
 Parameters:
 
--   markers — ([WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- markers — ([WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     A MapMarker object or an Array of Marker objects to be rendered on the map
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `markers` param is not a valid MapMarker object or an Array of MapMarker objects
 
@@ -233,14 +233,14 @@ Set the mode for the map in this MapView.
 
 Parameters:
 
--   mode — ([WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) —
+- mode — ([WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) —
 
     The mode in which the map will be rendered on the screen as a [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) enum value
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **setMapVisibleArea(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))** as **Void**
 
@@ -248,27 +248,27 @@ Select the area of the map to render on the screen with a bounding box. A redraw
 
 Parameters:
 
--   topLeft — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- topLeft — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     The top left point of the visible area of the map
 
--   bottomRight — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- bottomRight — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     The bottom right point of the visible area of the map
 
 
-See Also:
+另见：
 
--   [MapView.setScreenVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setScreenVisibleArea-instance_function)
+- [MapView.setScreenVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setScreenVisibleArea-instance_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if `topLeft` or `bottomRight` are not a Location objects
 
@@ -279,18 +279,18 @@ Add [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object to be
 
 Parameters:
 
--   polyline — ([WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) —
+- polyline — ([WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) —
 
     The polyline to be rendered on the map
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if `polyline` is is not a valid MapPolyline object
 
@@ -301,34 +301,34 @@ Set the area on the screen to focus the map.
 
 Parameters:
 
--   topLeftX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- topLeftX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `x` location of the top-left visible pixel on the screen
 
--   topLeftY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- topLeftY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `y` location of the top-left visible pixel on the screen
 
--   bottomRightX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- bottomRightX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `x` location of the bottom-right visible pixel on the screen
 
--   bottomRightY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- bottomRightY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `y` location of the bottom-right visible pixel on the screen
 
 
-See Also:
+另见：
 
--   [MapView.setMapVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setMapVisibleArea-instance_function)
+- [MapView.setMapVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setMapVisibleArea-instance_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
+- ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 
     Thrown if `topLeftX`, `topLeftY`, `bottomRightX`, or `bottomRightY` are outside the bounds of the device screen

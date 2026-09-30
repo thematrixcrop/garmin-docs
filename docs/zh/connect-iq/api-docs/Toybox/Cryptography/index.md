@@ -3,15 +3,15 @@ title: "Module: Toybox.Cryptography"
 ---
 # Module: Toybox.Cryptography
 
-## Overview
+## 概述
 
 The Cryptography Module will allow the application to create a [Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/) object that can encrypt and decrypt [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) objects.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -170,180 +170,180 @@ API Level 3.0.0
 
 :::
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/), [CipherBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode/), [Hash](/connect-iq/api-docs/Toybox/Cryptography/Hash/), [HashBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/HashBasedMessageAuthenticationCode/), [InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/), [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/), [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/), [KeyPair](/connect-iq/api-docs/Toybox/Cryptography/KeyPair/)
+类：[Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/), [CipherBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode/), [Hash](/connect-iq/api-docs/Toybox/Cryptography/Hash/), [HashBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/HashBasedMessageAuthenticationCode/), [InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/), [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/), [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/), [KeyPair](/connect-iq/api-docs/Toybox/Cryptography/KeyPair/)
 
-## Constant Summary
+## 常量摘要
 
 ### HashAlgorithm
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-| Name | Value | Since | Description | See Also | Note |
+| 名称 | 值 | 自 | 说明 | 另见 | 注意 |
 | --- | --- | --- | --- | --- | --- |
 | HASH\_SHA1 | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 SHA-1 implementation for Hash objects
 
- | -   [https://en.wikipedia.org/wiki/SHA-1](https://en.wikipedia.org/wiki/SHA-1)
-     |
+| -   [https://en.wikipedia.org/wiki/SHA-1](https://en.wikipedia.org/wiki/SHA-1)
+|
 
 The SHA-1 algorithm has known vulnerabilities and should not be used for security purposes.
 
- |
+|
 | HASH\_SHA256 | 1 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 SHA-256 implementation for Hash objects
 
- | -   [https://en.wikipedia.org/wiki/SHA-2](https://en.wikipedia.org/wiki/SHA-2)
+| -   [https://en.wikipedia.org/wiki/SHA-2](https://en.wikipedia.org/wiki/SHA-2)
      |  |
 | HASH\_MD5 | 2 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 MD5 implementation for Hash objects
 
- | -   [https://en.wikipedia.org/wiki/MD5](https://en.wikipedia.org/wiki/MD5)
-     |
+| -   [https://en.wikipedia.org/wiki/MD5](https://en.wikipedia.org/wiki/MD5)
+|
 
 The MD5 algorithm has known vulnerabilities and should not be used for security purposes.
 
- |
+|
 
 ### CipherAlgorithm
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | CIPHER\_AES128 | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 AES128 implementation for Cipher objects
 
- | -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-     |
+| -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+|
 | CIPHER\_AES256 | 1 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 AES256 implementation for Cipher objects
 
- | -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-     |
+| -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+|
 
 ### EncryptionMode
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | MODE\_ECB | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Electronic Code Book (ECB)
 
 This is the simplest encryption mode. Each plaintext block is directly encrypted into a ciphertext block, independent of any other block. This mode exposes frequency of symbols in your plaintext. Other modes (e.g. CBC) are recommended.
 
- | -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Electronic\_Codebook\_(ECB)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
-     |
+| -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Electronic\_Codebook\_(ECB)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB))
+|
 | MODE\_CBC | 1 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Cipher-Block Chaining
 
 Each ciphertext block depends on the current and all previous plaintext blocks. An Initialization Vector (IV) is required. The IV is a data block to be transmitted to the receiver. The IV can be made public, but it must be authenticated by the receiver and it should be picked randomly.
 
- | -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Cipher\_Block\_Chaining\_(CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC))
-     |
+| -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Cipher\_Block\_Chaining\_(CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC))
+|
 
 ### KeyPairAlgorithm
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | KEY\_PAIR\_ELLIPTIC\_CURVE\_SECP224R1 | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 224-bit secp224r1 Elliptic Curve
 
 Based on the algebraic structure of elliptic curves over finite fields. ECC requires smaller keys compared to non-ECC cryptography to provide equivalent security.
 
- | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
-     |
+| -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
+|
 | KEY\_PAIR\_ELLIPTIC\_CURVE\_SECP256R1 | 1 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 256-bit secp256r1 Elliptic Curve
 
 Based on the algebraic structure of elliptic curves over finite fields. ECC requires smaller keys compared to non-ECC cryptography to provide equivalent security.
 
- | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
-     |
+| -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
+|
 
 ### KeyAgreementProtocol
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | KEY\_AGREEMENT\_ECDH | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Elliptic Curve Diffie-Hellman (ECDH)
 
- | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_Diffie%E2%80%93Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)
-     |
+| -   [https://en.wikipedia.org/wiki/Elliptic-curve\_Diffie%E2%80%93Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**createPublicKey**](#createPublicKey-instance_function)(algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), bytes as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+- [**createPublicKey**](#createPublicKey-instance_function)(algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), bytes as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
     Create a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object from bytes to be added to a [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/).
 
--   [**randomBytes**](#randomBytes-instance_function)(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**randomBytes**](#randomBytes-instance_function)(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
     Generates cryptographically random bytes.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **createPublicKey(algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), bytes as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
@@ -351,22 +351,22 @@ Create a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object from
 
 If a public key is received from another party, it can be converted to a [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object using this method.
 
-Note:
+注意：
 
 bytes is expected to be in little-endian byte order.
 
 Parameters:
 
--   algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
+- algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
     The hash algorithm to use as a [KEY\_PAIR\_ELLIPTIC\_CURVE\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) constant
 
--   bytes — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- bytes — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     The public key bytes to be used to generate the [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -517,24 +517,24 @@ Parameters:
 
 Returns:
 
--   [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+- [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-See Also:
+另见：
 
--   [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
+- [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if an argument is not the correct type
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if the ByteArray provided is not the correct size for the selected algorithm, or the algorithm selected is not supported.
 
@@ -545,18 +545,18 @@ Generates cryptographically random bytes.
 
 Parameters:
 
--   size — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- size — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The number of requested random bytes
 
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     A ByteArray of the requested size filled with cryptographically random bytes
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

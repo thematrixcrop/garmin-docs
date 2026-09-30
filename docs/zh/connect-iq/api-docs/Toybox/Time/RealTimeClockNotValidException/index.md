@@ -7,31 +7,31 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)
+- [Toybox.Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Indicates that the Real-Time Clock (RTC) value is not secure, i.e. not synced with trusted sources, such as GPS.
 
 Since:
 
-API Level 3.0.11
+API 级别 3.0.11
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
 Since:
 
-API Level 3.0.11
+API 级别 3.0.11

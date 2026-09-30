@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+- [Toybox.Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A public key or a private key.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -171,14 +171,14 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getBytes**](#getBytes-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or **Null**
+- [**getBytes**](#getBytes-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or **Null**
 
     Get the bytes of a Key object.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getBytes()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or **Null**
 
@@ -186,8 +186,8 @@ Get the bytes of a Key object.
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

@@ -3,35 +3,35 @@ title: "Garmin Swim™ 2"
 ---
 # Garmin Swim™ 2
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | garminswim2 |
-| Screen Shape | round |
-| Screen Size | 208 x 208 |
-| Display Colors | 8 |
-| Touch | False |
-| Buttons |  |
-| Launcher Icon Size | 65 x 65 |
+| 标识 | garminswim2 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 208 x 208 |
+| 显示颜色 | 8 |
+| 触摸 | False |
+| 按键 |  |
+| 启动图标尺寸 | 65 x 65 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Watch Face | 49152 |  |
+| 表盘 | 49152 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
 **Part Number 006-B3405-00**
 
-*Languages*
+*语言*
 
 ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | FR45\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 22 | FR45\_CDPG\_ROBOTO\_13B |
@@ -45,13 +45,13 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 
 **Part Number 006-B3639-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | FR45\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 22 | FR45\_CDPG\_ROBOTO\_13B |
@@ -63,13 +63,13 @@ eng, ind, zsm
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | FR45\_ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | FR45\_ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_19 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_19 |
@@ -81,13 +81,13 @@ zhs
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_19 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_19 |
@@ -99,13 +99,13 @@ zht
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19 |
@@ -117,13 +117,13 @@ jpn
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_19 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 19 | NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_19 |
@@ -135,13 +135,13 @@ kor
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -153,13 +153,13 @@ tha
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19 |
 | FONT\_TINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19 |

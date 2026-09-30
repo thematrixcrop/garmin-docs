@@ -3,170 +3,170 @@ title: "GPSMAP® 66s / 66i / 66sr / 66st"
 ---
 # GPSMAP® 66s / 66i / 66sr / 66st
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | gpsmap66 |
-| Screen Shape | rectangle |
-| Screen Size | 240 x 400 |
-| Display Colors | 65536 |
-| Touch | False |
-| Buttons | upLeft, up, upRight, left, right, downLeft, down, downRight, zin, zout, find, page, menu, esc, enter |
-| Launcher Icon Size | 38 x 33 |
+| 标识 | gpsmap66 |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 240 x 400 |
+| 显示颜色 | 65536 |
+| 触摸 | False |
+| 按键 | upLeft, up, upRight, left, right, downLeft, down, downRight, zin, zout, find, page, menu, esc, enter |
+| 启动图标尺寸 | 38 x 33 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 131072 |  |
-| Watch App | 2359296 |  |
-| Widget | 1048576 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 手表应用 | 2359296 |  |
+| 微件 | 1048576 |  |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/gpsmap66/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 118 | 52 | 0 | False | False | False | False |
-| Field 2 | 121 | 29 | 118 | 52 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 118 | 52 | 0 | False | False | False | False |
+| 字段 2 | 121 | 29 | 118 | 52 | 0 | False | False | False | False |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/gpsmap66/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
-| Field 2 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
-| Field 3 | 1 | 277 | 238 | 122 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
+| 字段 2 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
+| 字段 3 | 1 | 277 | 238 | 122 | 0 | False | False | False | False |
 
-**6 Fields A Layout**
+**6 字段 A 布局**
 
 
 ![6 Fields A](/connect-iq/resources/device-reference/gpsmap66/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
-| Field 2 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
-| Field 3 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
-| Field 6 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
+| 字段 2 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
+| 字段 3 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 6 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**6 Fields B Layout**
+**6 字段 B 布局**
 
 
 ![6 Fields B](/connect-iq/resources/device-reference/gpsmap66/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
-| Field 6 | 1 | 277 | 238 | 122 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
+| 字段 6 | 1 | 277 | 238 | 122 | 0 | False | False | False | False |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/gpsmap66/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
-| Field 2 | 1 | 153 | 118 | 80 | 0 | False | False | False | False |
-| Field 3 | 121 | 153 | 118 | 80 | 0 | False | False | False | False |
-| Field 4 | 1 | 235 | 118 | 80 | 0 | False | False | False | False |
-| Field 5 | 121 | 235 | 118 | 80 | 0 | False | False | False | False |
-| Field 6 | 1 | 317 | 118 | 80 | 0 | False | False | False | False |
-| Field 7 | 121 | 317 | 118 | 80 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
+| 字段 2 | 1 | 153 | 118 | 80 | 0 | False | False | False | False |
+| 字段 3 | 121 | 153 | 118 | 80 | 0 | False | False | False | False |
+| 字段 4 | 1 | 235 | 118 | 80 | 0 | False | False | False | False |
+| 字段 5 | 121 | 235 | 118 | 80 | 0 | False | False | False | False |
+| 字段 6 | 1 | 317 | 118 | 80 | 0 | False | False | False | False |
+| 字段 7 | 121 | 317 | 118 | 80 | 0 | False | False | False | False |
 
-**9 Fields A Layout**
+**9 字段 A 布局**
 
 
 ![9 Fields A](/connect-iq/resources/device-reference/gpsmap66/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
-| Field 2 | 1 | 153 | 118 | 60 | 0 | False | False | False | False |
-| Field 3 | 121 | 153 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 1 | 215 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 121 | 215 | 118 | 60 | 0 | False | False | False | False |
-| Field 6 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 7 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 8 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
-| Field 9 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 238 | 122 | 0 | False | False | False | False |
+| 字段 2 | 1 | 153 | 118 | 60 | 0 | False | False | False | False |
+| 字段 3 | 121 | 153 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 1 | 215 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 121 | 215 | 118 | 60 | 0 | False | False | False | False |
+| 字段 6 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 7 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 8 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 9 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**9 Fields B Layout**
+**9 字段 B 布局**
 
 
 ![9 Fields B](/connect-iq/resources/device-reference/gpsmap66/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
-| Field 6 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 7 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 8 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
-| Field 9 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 1 | 153 | 238 | 122 | 0 | False | False | False | False |
+| 字段 6 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 7 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 8 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 9 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**10 Fields Layout**
+**10 字段布局**
 
 
 ![10 Fields](/connect-iq/resources/device-reference/gpsmap66/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 1 | 153 | 118 | 80 | 0 | False | False | False | False |
-| Field 6 | 121 | 153 | 118 | 80 | 0 | False | False | False | False |
-| Field 7 | 1 | 235 | 118 | 80 | 0 | False | False | False | False |
-| Field 8 | 121 | 235 | 118 | 80 | 0 | False | False | False | False |
-| Field 9 | 1 | 317 | 118 | 80 | 0 | False | False | False | False |
-| Field 10 | 121 | 317 | 118 | 80 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 1 | 153 | 118 | 80 | 0 | False | False | False | False |
+| 字段 6 | 121 | 153 | 118 | 80 | 0 | False | False | False | False |
+| 字段 7 | 1 | 235 | 118 | 80 | 0 | False | False | False | False |
+| 字段 8 | 121 | 235 | 118 | 80 | 0 | False | False | False | False |
+| 字段 9 | 1 | 317 | 118 | 80 | 0 | False | False | False | False |
+| 字段 10 | 121 | 317 | 118 | 80 | 0 | False | False | False | False |
 
-**12 Fields Layout**
+**12 字段布局**
 
 
 ![12 Fields](/connect-iq/resources/device-reference/gpsmap66/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
-| Field 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
-| Field 5 | 1 | 153 | 118 | 60 | 0 | False | False | False | False |
-| Field 6 | 121 | 153 | 118 | 60 | 0 | False | False | False | False |
-| Field 7 | 1 | 215 | 118 | 60 | 0 | False | False | False | False |
-| Field 8 | 121 | 215 | 118 | 60 | 0 | False | False | False | False |
-| Field 9 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 10 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
-| Field 11 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
-| Field 12 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 1 | 1 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 2 | 121 | 29 | 118 | 60 | 0 | False | False | False | False |
+| 字段 3 | 1 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 4 | 121 | 91 | 118 | 60 | 0 | False | False | False | False |
+| 字段 5 | 1 | 153 | 118 | 60 | 0 | False | False | False | False |
+| 字段 6 | 121 | 153 | 118 | 60 | 0 | False | False | False | False |
+| 字段 7 | 1 | 215 | 118 | 60 | 0 | False | False | False | False |
+| 字段 8 | 121 | 215 | 118 | 60 | 0 | False | False | False | False |
+| 字段 9 | 1 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 10 | 121 | 277 | 118 | 60 | 0 | False | False | False | False |
+| 字段 11 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
+| 字段 12 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
 **Part Number 006-B3028-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | GPSMAP66\_DEJAVU\_SANS\_12 |
@@ -182,13 +182,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B3284-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | GPSMAP66\_DEJAVU\_SANS\_12 |
@@ -204,13 +204,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B3694-00**
 
-*Languages*
+*语言*
 
 ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | GPSMAP66\_DEJAVU\_SANS\_12 |
@@ -226,13 +226,13 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B3657-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | GPSMAP66\_DEJAVU\_SANS\_12 |
@@ -246,13 +246,13 @@ eng, ind, zsm
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_TINY | DFHeiW5-A | 17 | DFHEI\_17 |
@@ -266,13 +266,13 @@ zhs
 | FONT\_GLANCE | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_GLANCE\_NUMBER | DFHeiW5-A | 12 | DFHEI\_12 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -286,13 +286,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 12 | ROBOTO\_CONDENSED\_VIET\_12 |
 | FONT\_TINY | Roboto Condensed | 17 | ROBOTO\_CONDENSED\_VIET\_17 |
@@ -308,13 +308,13 @@ vie
 
 **Part Number 006-B3658-00**
 
-*Languages*
+*语言*
 
 eng
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 17 | GPSMAP66\_DEJAVU\_SANS\_12 |
@@ -328,13 +328,13 @@ eng
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_TINY | DFHeiW5-A | 17 | DFHEI\_17 |
@@ -348,13 +348,13 @@ zhs, zht
 | FONT\_GLANCE | DFHeiW5-A | 12 | DFHEI\_12 |
 | FONT\_GLANCE\_NUMBER | DFHeiW5-A | 12 | DFHEI\_12 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFPHSGothic-W3 | 12 | DFPHSGOTHIC\_12 |
 | FONT\_TINY | DFPHSGothic-W3 | 17 | DFPHSGOTHIC\_17 |

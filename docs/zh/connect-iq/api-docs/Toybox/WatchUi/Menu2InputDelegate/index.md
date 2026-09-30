@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
+- [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Menu2InputDelegate responds to a Menu2 selection.
 
 This class should be extended to handle selected Menu2 items.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
+- [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
 
--   [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
+- [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
 Example:
@@ -46,24 +46,24 @@ class MyMenu2InputDelegate extends WatchUi.Menu2InputDelegate {
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -222,42 +222,42 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onBack**](#onBack-instance_function)() as **Void**
+- [**onBack**](#onBack-instance_function)() as **Void**
 
     A Menu2 Back key was pressed.
 
--   [**onDone**](#onDone-instance_function)() as **Void**
+- [**onDone**](#onDone-instance_function)() as **Void**
 
     A Menu2 Done item was selected.
 
--   [**onFooter**](#onFooter-instance_function)() as **Void**
+- [**onFooter**](#onFooter-instance_function)() as **Void**
 
     A CustomMenu footer was selected.
 
--   [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Next* *Page* behavior.
+    表示 *Next* *Page* 行为。
 
--   [**onPreviousPage**](#onPreviousPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onPreviousPage**](#onPreviousPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Previous* *Page* behavior.
+    表示 *Previous* *Page* 行为。
 
--   [**onSelect**](#onSelect-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
+- [**onSelect**](#onSelect-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
 
     A Menu2 MenuItem was selected.
 
--   [**onTitle**](#onTitle-instance_function)() as **Void**
+- [**onTitle**](#onTitle-instance_function)() as **Void**
 
     A CustomMenu title was selected.
 
--   [**onWrap**](#onWrap-instance_function)(key as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onWrap**](#onWrap-instance_function)(key as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A Menu2 is preparing to wrap.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onBack()** as **Void**
 
@@ -265,7 +265,7 @@ A Menu2 Back key was pressed. If this method is not overridden, it will pop the 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onDone()** as **Void**
 
@@ -273,7 +273,7 @@ A Menu2 Done item was selected. This method is only triggered by a [CheckboxMenu
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onFooter()** as **Void**
 
@@ -281,47 +281,47 @@ A CustomMenu footer was selected.
 
 This method is triggered on products with touch input when the user selects the footer area of a CustomMenu.
 
-Note:
+注意：
 
 Prior to ConnectIQ API version 5.1.0, this function was only called on [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/). It is now used for all [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) types.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onNextPage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Next* *Page* behavior.
+表示 *Next* *Page* 行为。
 
 This is typically triggered when at the bottom of a Menu and the down button ([KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)) or a [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) input is received.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onPreviousPage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Previous* *Page* behavior.
+表示 *Previous* *Page* 行为。
 
 This is typically triggered when at the top of a Menu and the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)) or a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) input is received.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onSelect(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/))** as **Void**
 
@@ -329,14 +329,14 @@ A Menu2 MenuItem was selected.
 
 Parameters:
 
--   item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
+- item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
     The selected MenuItem.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onTitle()** as **Void**
 
@@ -344,13 +344,13 @@ A CustomMenu title was selected.
 
 This method is triggered on products with touch input when the user selects the title area of a CustomMenu.
 
-Note:
+注意：
 
 Prior to ConnectIQ API version 5.1.0, this function was only called on [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/). It is now used for all [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) types.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onWrap(key as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -360,18 +360,18 @@ This method is triggered on button-based products when the user attempts to navi
 
 Parameters:
 
--   key — ([WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) —
+- key — ([WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) —
 
     The key from the [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) enumeration that is triggering the menu wrap.
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if wrap is allowed, `false` otherwise
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

@@ -7,45 +7,45 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/)
+- [Toybox.Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents the forecast for a given day.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**condition**](#condition-var) as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
+- [**condition**](#condition-var) as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
 
     The weather condition.
 
--   [**forecastTime**](#forecastTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**forecastTime**](#forecastTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     The time the forecast is valid in UTC time.
 
--   [**highTemperature**](#highTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
+- [**highTemperature**](#highTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
     The high temperature in Celsius.
 
--   [**lowTemperature**](#lowTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
+- [**lowTemperature**](#lowTemperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
     The low temperature in Celsius.
 
--   [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The chance of precipitation \[0-100%\].
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var condition as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
 
@@ -53,13 +53,13 @@ The weather condition
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) —
+- [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) —
 
-    a Weather.CONDITION\_\* value
+    一个 Weather.CONDITION_* 值
 
 
 ### var forecastTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
@@ -68,11 +68,11 @@ The time the forecast is valid in UTC time
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 ### var highTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
@@ -80,13 +80,13 @@ The high temperature in Celsius
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
+- [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
 
-    or `null`
+    或 `null`
 
 
 ### var lowTemperature as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
@@ -95,13 +95,13 @@ The low temperature in Celsius
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
+- [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
 
-    or `null`
+    或 `null`
 
 
 ### var precipitationChance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -110,10 +110,10 @@ The chance of precipitation \[0-100%\]
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    or `null`
+    或 `null`

@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
+- [Toybox.AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents user configurations of fitness equipment for equipment that supports simulation training mode. Fields may return `null` so you should `null` check values before using them.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1000 / Explore
 -   Edge® 1030 / Bontrager
@@ -44,26 +44,26 @@ API Level 2.4.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**bikeWeight**](#bikeWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**bikeWeight**](#bikeWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The bike weight set for simulation training mode.
 
--   [**gearRatio**](#gearRatio-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**gearRatio**](#gearRatio-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The gear ratio set for simulation training mode.
 
--   [**userWeight**](#userWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**userWeight**](#userWeight-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The user weight set for simulation training mode.
 
--   [**wheelDiameter**](#wheelDiameter-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**wheelDiameter**](#wheelDiameter-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The wheel diameter set for simulation training mode.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var bikeWeight as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -71,11 +71,11 @@ The bike weight set for simulation training mode
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-50kg range
 
@@ -86,11 +86,11 @@ The gear ratio set for simulation training mode
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0.03-7.65 range
 
@@ -101,11 +101,11 @@ The user weight set for simulation training mode
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-655.34 kg range
 
@@ -116,10 +116,10 @@ The wheel diameter set for simulation training mode
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-2.54m range

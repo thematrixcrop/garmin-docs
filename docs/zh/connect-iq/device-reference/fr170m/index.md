@@ -3,90 +3,90 @@ title: "Forerunner® 170 Music"
 ---
 # Forerunner® 170 Music
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fr170m |
-| Screen Shape | round |
-| Screen Size | 390 x 390 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 54 x 54 |
+| 标识 | fr170m |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 390 x 390 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 54 x 54 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fr170m/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fr170m/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 193 | 7 | True | True | True | False |
-| Field 2 | 0 | 196 | 390 | 194 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 193 | 7 | True | True | True | False |
+| 字段 2 | 0 | 196 | 390 | 194 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fr170m/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 136 | 7 | True | True | True | False |
-| Field 2 | 0 | 136 | 390 | 110 | 5 | True | True | False | False |
-| Field 3 | 0 | 250 | 390 | 140 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 136 | 7 | True | True | True | False |
+| 字段 2 | 0 | 136 | 390 | 110 | 5 | True | True | False | False |
+| 字段 3 | 0 | 250 | 390 | 140 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fr170m/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 125 | 7 | True | True | True | False |
-| Field 2 | 0 | 128 | 390 | 135 | 5 | True | True | False | False |
-| Field 3 | 0 | 266 | 390 | 124 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 125 | 7 | True | True | True | False |
+| 字段 2 | 0 | 128 | 390 | 135 | 5 | True | True | False | False |
+| 字段 3 | 0 | 266 | 390 | 124 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/fr170m/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 138 | 7 | True | True | True | False |
-| Field 2 | 0 | 141 | 193 | 116 | 1 | True | False | False | False |
-| Field 3 | 196 | 141 | 193 | 116 | 4 | False | True | False | False |
-| Field 4 | 0 | 260 | 390 | 130 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 138 | 7 | True | True | True | False |
+| 字段 2 | 0 | 141 | 193 | 116 | 1 | True | False | False | False |
+| 字段 3 | 196 | 141 | 193 | 116 | 4 | False | True | False | False |
+| 字段 4 | 0 | 260 | 390 | 130 | 13 | True | True | False | True |
 
 **Part Number 006-B4814-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto | 30 | Roboto-Regular |
 | FONT\_TINY | Roboto | 35 | Roboto-Regular |
@@ -116,13 +116,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | RobotoItalic | Roboto Wide | Scalable | Roboto-Italic |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC | 38 | NotoSansSC-Medium |
 | FONT\_TINY | Noto Sans SC | 45 | NotoSansSC-Medium |
@@ -152,13 +152,13 @@ zhs, zht
 | RobotoItalic | Roboto Wide | Scalable | Roboto-Italic |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar | 26 | Kosugi-Regular |
 | FONT\_TINY | MotoyaLCedar | 30 | Kosugi-Regular |
@@ -188,13 +188,13 @@ jpn
 | RobotoItalic | Roboto Wide | Scalable | Roboto-Italic |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 30 | NanumGothic-Bold |
 | FONT\_TINY | NanumGothic | 35 | NanumGothic-Bold |
@@ -224,13 +224,13 @@ kor
 | RobotoItalic | Roboto Wide | Scalable | Roboto-Italic |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Pridi | 40 | Pridi-Regular |
 | FONT\_TINY | Pridi | 47 | Pridi-Regular |

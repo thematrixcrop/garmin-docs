@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
+- [Toybox.AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Includes the shifting system status. Fields may return `null` if there is no valid information so you should `null` check before using them.
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -124,18 +124,18 @@ API Level 3.1.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**frontDerailleur**](#frontDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
+- [**frontDerailleur**](#frontDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
     Front derailleur status.
 
--   [**rearDerailleur**](#rearDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
+- [**rearDerailleur**](#rearDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
     Rear derailleur status.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var frontDerailleur as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
@@ -143,11 +143,11 @@ Front derailleur status
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
+- [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
 
 ### var rearDerailleur as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
@@ -155,8 +155,8 @@ Rear derailleur status
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
+- [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)

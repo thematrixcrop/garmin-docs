@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/)
+- [Toybox.Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class for controlling an ANT wireless channel.
 
@@ -22,60 +22,60 @@ The GenericChannel provides the methods necessary for initialization, life cycle
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**close**](#close-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**close**](#close-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Close a generic ANT Channel.
 
--   [**disableEncryption**](#disableEncryption-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**disableEncryption**](#disableEncryption-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Disable encryption on this channel.
 
--   [**enableEncryption**](#enableEncryption-instance_function)(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**enableEncryption**](#enableEncryption-instance_function)(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the encryption configuration and enable encryption on this channel.
 
--   [**getDeviceConfig**](#getDeviceConfig-instance_function)() as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
+- [**getDeviceConfig**](#getDeviceConfig-instance_function)() as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
     Get the current ANT channel configuration.
 
--   [**initialize**](#initialize-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))
+- [**initialize**](#initialize-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))
 
     Constructor.
 
--   [**open**](#open-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**open**](#open-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Open a generic ANT Channel.
 
--   [**release**](#release-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**release**](#release-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Release the generic ANT Channel back to the system.
 
--   [**sendAcknowledge**](#sendAcknowledge-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**sendAcknowledge**](#sendAcknowledge-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Send an acknowledge message.
 
--   [**sendBroadcast**](#sendBroadcast-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**sendBroadcast**](#sendBroadcast-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Send a broadcast message.
 
--   [**sendBurst**](#sendBurst-instance_function)(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
+- [**sendBurst**](#sendBurst-instance_function)(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
 
     Send an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) as a burst across the ANT channel.
 
--   [**setBurstListener**](#setBurstListener-instance_function)(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) as **Void**
+- [**setBurstListener**](#setBurstListener-instance_function)(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) as **Void**
 
     Set the [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) for burst events.
 
--   [**setDeviceConfig**](#setDeviceConfig-instance_function)(configuration as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**setDeviceConfig**](#setDeviceConfig-instance_function)(configuration as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the current ANT channel configuration.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **close()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -92,14 +92,14 @@ genericChannel.close();
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **disableEncryption()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -114,7 +114,7 @@ using Toybox.Ant;
 genericChannel.disableEncryption();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -254,14 +254,14 @@ genericChannel.disableEncryption();
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **enableEncryption(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -269,7 +269,7 @@ Set the encryption configuration and enable encryption on this channel.
 
 Parameters:
 
--   configuration — ([Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) —
+- configuration — ([Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) —
 
     The CryptoConfig object to set for the current channel
 
@@ -284,7 +284,7 @@ var cryptoConfig = new Ant.CryptoConfig({});
 genericChannel.enableEncryption(cryptoConfig);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -424,27 +424,27 @@ genericChannel.enableEncryption(cryptoConfig);
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
+- [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   ([Ant.EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/)) —
+- ([Ant.EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/)) —
 
     Thrown if invalid encryption settings are used
 
--   ([Ant.UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)) —
+- ([Ant.UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)) —
 
     Thrown if an ecrypted channel cannot be acquired because all channels are in use
 
@@ -463,19 +463,19 @@ var devConfig = genericChannel.getDeviceConfig();
 
 Returns:
 
--   [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/) —
+- [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/) —
 
     The DeviceConfig object with current channel device configuration.
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
+- [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **initialize(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))**
 
@@ -483,11 +483,11 @@ Constructor
 
 Parameters:
 
--   listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     The Method object to call with channel messages
 
--   channelAssignment — ([Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/)) —
+- channelAssignment — ([Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/)) —
 
     The ChannelAssignment object for the channel
 
@@ -504,11 +504,11 @@ GenericChannel.initialize(method(:listenerCallback), channelAssign);
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Ant.UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/)) —
+- ([Ant.UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/)) —
 
     Thrown if the the system does not have a channel available.
 
@@ -517,7 +517,7 @@ Throws:
 
 Open a generic ANT Channel.
 
-Note:
+注意：
 
 Multitasking: Ant channel connection can not be changed while in inacitve mode and ant channels opened during active mode will be closed when app becomes inactive, and re-opened automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
@@ -532,14 +532,14 @@ genericChannel.open();
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **release()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -558,14 +558,14 @@ genericChannel.release();
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **sendAcknowledge(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -575,7 +575,7 @@ You can expect to receive either [MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED](/co
 
 Parameters:
 
--   data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
+- data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
     A message whose payload is an 8-byte [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of numbers
 
@@ -598,19 +598,19 @@ genericChannel.sendAcknowledge(message);
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
+- [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **sendBroadcast(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -618,7 +618,7 @@ Send a broadcast message.
 
 Parameters:
 
--   data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
+- data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
     A message whose payload is an 8-byte [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of numbers
 
@@ -641,19 +641,19 @@ genericChannel.sendBroadcast(message);
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
+- [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **sendBurst(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
 
@@ -663,7 +663,7 @@ Success or Fail is received by the [BurstListener](/connect-iq/api-docs/Toybox/A
 
 Parameters:
 
--   burstData — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
+- burstData — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
     The data to burst across the channel
 
@@ -681,20 +681,20 @@ burstData.add(message);                 // Add Message object to payload
 genericChannel.sendBurst(burstData);    // Send Message
 ```
 
-See Also:
+另见：
 
--   [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
+- [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Throws:
 
--   ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
+- ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
-    Thrown if called from a data field app
+    在数据字段应用中调用时抛出
 
 
 ### **setBurstListener(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/))** as **Void**
@@ -705,7 +705,7 @@ Failed bursts or those larger than the specified threshold will be discarded.
 
 Parameters:
 
--   listener — ([Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) —
+- listener — ([Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) —
 
     An extension of the BurstListener class
 
@@ -720,20 +720,20 @@ using Toybox.Ant;
 genericChannel.setBurstListener(listener);
 ```
 
-See Also:
+另见：
 
--   [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
+- [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Throws:
 
--   ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
+- ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
-    Thrown if called from a data field app
+    在数据字段应用中调用时抛出
 
 
 ### **setDeviceConfig(configuration as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -742,7 +742,7 @@ Set the current ANT channel configuration.
 
 Parameters:
 
--   configuration — ([Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) —
+- configuration — ([Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) —
 
     The DeviceConfig object to set for the current ANT channel
 
@@ -759,22 +759,22 @@ genericChannel.setDeviceConfig(configuration);
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
+- [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   (Lang.UnexpectedTypeError) —
+- (Lang.UnexpectedTypeError) —
 
     Thrown if configuration values in configuration are not of the correct type.

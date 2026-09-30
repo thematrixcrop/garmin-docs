@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
+- [Toybox.BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Bluetooth Low Energy Device that has been paired with the system.
 
@@ -22,36 +22,36 @@ This class cannot be instantiated, access to paired system devices is done throu
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getName**](#getName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**getName**](#getName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     Retrieves the Name of the sensor according to the device name that is available in the GAP Service.
 
--   [**getService**](#getService-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) or **Null**
+- [**getService**](#getService-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) or **Null**
 
     Retrieves the service with a specified UUID If access to a specific service is required, use this function to directly access the service based on a UUID.
 
--   [**getServices**](#getServices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
+- [**getServices**](#getServices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
     Retrieves an Iterator over the services provided by the device.
 
--   [**isBonded**](#isBonded-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isBonded**](#isBonded-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Gets the Bonded State of the Device.
 
--   [**isConnected**](#isConnected-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isConnected**](#isConnected-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Gets the connected status of the device.
 
--   [**requestBond**](#requestBond-instance_function)() as **Void**
+- [**requestBond**](#requestBond-instance_function)() as **Void**
 
     Requests that a bond is formed with the Device If the device is not currently bonded this will initiate the bonding procedure.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getName()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -59,14 +59,14 @@ Retrieves the Name of the sensor according to the device name that is available 
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     the name of the device. `null` if the device is not connected or name has not been received yet.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getService(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/))** as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) or **Null**
 
@@ -76,21 +76,21 @@ If access to a specific service is required, use this function to directly acces
 
 Parameters:
 
--   uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
+- uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
     The UUID of the service to search for
 
 
 Returns:
 
--   [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) —
+- [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) —
 
     The service represented by the UUID if the service exists or, `null` if the service does not exist or the UUID has not been registered
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getServices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
@@ -100,20 +100,20 @@ This will only provide Services that have been registered using [registerProfile
 
 Returns:
 
--   [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
+- [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     Iterator of [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) objects provided by a device.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **isBonded()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 Gets the Bonded State of the Device
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -188,14 +188,14 @@ Gets the Bonded State of the Device
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the device is bonded `false` if the device is not bonded
 
 
 Since:
 
-API Level 4.2.5
+API 级别 4.2.5
 
 ### **isConnected()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -203,14 +203,14 @@ Gets the connected status of the device
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the sensor is connected `false` if sensor is disconnected
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **requestBond()** as **Void**
 
@@ -218,9 +218,9 @@ Requests that a bond is formed with the Device
 
 If the device is not currently bonded this will initiate the bonding procedure.
 
-Once the operation is completed, [onEncryptionStatus()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onEncryptionStatus-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation
+操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onEncryptionStatus()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onEncryptionStatus-instance_function)
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -295,10 +295,10 @@ Once the operation is completed, [onEncryptionStatus()](/connect-iq/api-docs/Toy
 
 Since:
 
-API Level 4.2.5
+API 级别 4.2.5
 
 Throws:
 
--   ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
+- ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 
     if the device is not connected or is already bonded.

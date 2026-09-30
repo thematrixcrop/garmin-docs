@@ -7,41 +7,41 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.UserProfile.UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/)
+- [Toybox.UserProfile.UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class for storing user activity information.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Distance covered by the activity in meters.
 
--   [**duration**](#duration-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
+- [**duration**](#duration-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
     Duration of the activity.
 
--   [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Start time of the activity.
 
--   [**type**](#type-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
+- [**type**](#type-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
 
     Sport type of the activity.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -49,13 +49,13 @@ Distance covered by the activity in meters
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    or `null`
+    或 `null`
 
 
 ### var duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
@@ -64,13 +64,13 @@ Duration of the activity
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    or `null`
+    或 `null`
 
 
 ### var startTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
@@ -79,13 +79,13 @@ Start time of the activity
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    or `null`
+    或 `null`
 
 
 ### var type as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
@@ -94,10 +94,10 @@ Sport type of the activity.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
+- [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
     SPORT\_\* enum value or `null`

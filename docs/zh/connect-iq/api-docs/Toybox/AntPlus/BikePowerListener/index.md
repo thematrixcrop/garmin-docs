@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
+- [Toybox.AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Bike Power.
 
@@ -78,9 +78,9 @@ class MyBikePowerListener extends AntPlus.BikePowerListener {
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -194,38 +194,38 @@ API Level 2.2.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onCalculatedCadenceUpdate**](#onCalculatedCadenceUpdate-instance_function)(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) as **Void**
+- [**onCalculatedCadenceUpdate**](#onCalculatedCadenceUpdate-instance_function)(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) as **Void**
 
     Callback when calculated cadence is updated (max freq 1Hz).
 
--   [**onCalculatedPowerUpdate**](#onCalculatedPowerUpdate-instance_function)(data as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) as **Void**
+- [**onCalculatedPowerUpdate**](#onCalculatedPowerUpdate-instance_function)(data as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) as **Void**
 
     Callback when calculated power is updated (max freq 1Hz).
 
--   [**onCalculatedWheelDistanceUpdate**](#onCalculatedWheelDistanceUpdate-instance_function)(data as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) as **Void**
+- [**onCalculatedWheelDistanceUpdate**](#onCalculatedWheelDistanceUpdate-instance_function)(data as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) as **Void**
 
     Callback when calculated wheel distance is updated (max freq 1Hz).
 
--   [**onCalculatedWheelSpeedUpdate**](#onCalculatedWheelSpeedUpdate-instance_function)(data as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) as **Void**
+- [**onCalculatedWheelSpeedUpdate**](#onCalculatedWheelSpeedUpdate-instance_function)(data as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) as **Void**
 
     Callback when calculated wheel speed is updated (max freq 1Hz).
 
--   [**onPedalPowerBalanceUpdate**](#onPedalPowerBalanceUpdate-instance_function)(data as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) as **Void**
+- [**onPedalPowerBalanceUpdate**](#onPedalPowerBalanceUpdate-instance_function)(data as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) as **Void**
 
     Callback when power balance is updated (max freq 1Hz).
 
--   [**onTorqueEffectivenessPedalSmoothnessUpdate**](#onTorqueEffectivenessPedalSmoothnessUpdate-instance_function)(data as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) as **Void**
+- [**onTorqueEffectivenessPedalSmoothnessUpdate**](#onTorqueEffectivenessPedalSmoothnessUpdate-instance_function)(data as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) as **Void**
 
     Callback when torque effectiveness & pedal smoothness are updated (max freq 1Hz).
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -233,7 +233,7 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onCalculatedCadenceUpdate(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/))** as **Void**
 
@@ -241,14 +241,14 @@ Callback when calculated cadence is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) —
+- data — ([AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) —
 
     Data with updated cadence information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onCalculatedPowerUpdate(data as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/))** as **Void**
 
@@ -256,14 +256,14 @@ Callback when calculated power is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) —
+- data — ([AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) —
 
     Data with updated power information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onCalculatedWheelDistanceUpdate(data as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/))** as **Void**
 
@@ -271,14 +271,14 @@ Callback when calculated wheel distance is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) —
+- data — ([AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) —
 
     Data with updated distance information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onCalculatedWheelSpeedUpdate(data as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/))** as **Void**
 
@@ -286,14 +286,14 @@ Callback when calculated wheel speed is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) —
+- data — ([AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) —
 
     Data with updated speed information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onPedalPowerBalanceUpdate(data as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/))** as **Void**
 
@@ -301,14 +301,14 @@ Callback when power balance is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) —
+- data — ([AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) —
 
     Data with updated balance information.
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onTorqueEffectivenessPedalSmoothnessUpdate(data as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/))** as **Void**
 
@@ -316,11 +316,11 @@ Callback when torque effectiveness & pedal smoothness are updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) —
+- data — ([AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) —
 
     Data with updated torque effectiveness & pedal smoothness information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

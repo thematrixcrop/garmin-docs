@@ -7,42 +7,42 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
+- [Toybox.WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 AnimationDelegate responds to an Animation event.
 
-## See Also:
+## 另见：
 
--   [AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
+- [AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -172,14 +172,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onAnimationEvent**](#onAnimationEvent-instance_function)(event as [WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**
+- [**onAnimationEvent**](#onAnimationEvent-instance_function)(event as [WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**
 
     Handle an Animation event.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onAnimationEvent(event as [WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))** as **Void**
 
@@ -187,15 +187,15 @@ Handle an Animation event.
 
 Parameters:
 
--   event — ([WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module)) —
+- event — ([WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module)) —
 
     The animation event, a [WatchUi.ANIMATION\_EVENT\*](/connect-iq/api-docs/Toybox/WatchUi/#ANIMATION_EVENT_COMPLETE-const) value
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

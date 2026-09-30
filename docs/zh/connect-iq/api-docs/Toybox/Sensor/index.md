@@ -3,9 +3,9 @@ title: "Module: Toybox.Sensor"
 ---
 # Module: Toybox.Sensor
 
-## Overview
+## 概述
 
-The Sensor 模块提供 access to sensor data.
+The Sensor module provides access to sensor data.
 
 Sensor allows Apps to register for updates to the current sensor data. It also enables apps to control the ANT+ sensors supported natively by the device, which are described by the provided SENSOR\_\* constants.
 
@@ -27,24 +27,24 @@ function onSensor(sensorInfo) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Background
+- 后台
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -222,57 +222,57 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   Sensor
+- Sensor
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/), [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/), [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/), [Info](/connect-iq/api-docs/Toybox/Sensor/Info/), [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/), [SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/), [SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/), [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), [SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/), [TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/)
+类：[AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/), [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/), [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/), [Info](/connect-iq/api-docs/Toybox/Sensor/Info/), [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/), [SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/), [SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/), [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), [SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/), [TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/)
 
-## Constant Summary
+## 常量摘要
 
 ### RemoteSensorType
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SENSOR\_BIKESPEED | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_BIKECADENCE | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_BIKEPOWER | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_FOOTPOD | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_HEARTRATE | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_TEMPERATURE | 5 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SENSOR\_GENERIC | 9 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
  |  |
 
@@ -280,22 +280,22 @@ API Level 5.1.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SENSOR\_PULSE\_OXIMETRY | 6 |
-API Level 3.2.0
+API 级别 3.2.0
 
  |  |
 | SENSOR\_ONBOARD\_PULSE\_OXIMETRY | 7 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
  |  |
 | SENSOR\_ONBOARD\_HEARTRATE | 8 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
  |  |
 
@@ -307,113 +307,113 @@ Describes the technology used to communicate with the sensor.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SENSOR\_TECHNOLOGY\_ANT | 0 |
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 ANT Sensor
 
- |
+|
 | SENSOR\_TECHNOLOGY\_BLE | 1 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Bluetooth Low Energy Sensor
 
- |
+|
 | SENSOR\_TECHNOLOGY\_ONBOARD | 2 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Onboard Sensor
 
- |
+|
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**SensorType**](#SensorType-named_type) as [Sensor.RemoteSensorType](/connect-iq/api-docs/Toybox/Sensor/#RemoteSensorType-module) or [Sensor.OnboardSensorType](/connect-iq/api-docs/Toybox/Sensor/#OnboardSensorType-module)
+- [**SensorType**](#SensorType-named_type) as [Sensor.RemoteSensorType](/connect-iq/api-docs/Toybox/Sensor/#RemoteSensorType-module) or [Sensor.OnboardSensorType](/connect-iq/api-docs/Toybox/Sensor/#OnboardSensorType-module)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**disableSensorType**](#disableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**disableSensorType**](#disableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Disable the given sensor type for use.
 
--   [**enableSensorEvents**](#enableSensorEvents-instance_function)(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**) as **Void**
+- [**enableSensorEvents**](#enableSensorEvents-instance_function)(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**) as **Void**
 
     Request sensor events from enabled sensors.
 
--   [**enableSensorType**](#enableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**enableSensorType**](#enableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Enable the given sensor type for use.
 
--   [**getInfo**](#getInfo-instance_function)() as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
+- [**getInfo**](#getInfo-instance_function)() as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
     Get the current Sensor [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/).
 
--   [**getMaxSampleRate**](#getMaxSampleRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getMaxSampleRate**](#getMaxSampleRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the maximum sample rate supported by the system.
 
--   [**getMaxSampleRateForSensorType**](#getMaxSampleRateForSensorType-instance_function)(sensorDataType as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getMaxSampleRateForSensorType**](#getMaxSampleRateForSensorType-instance_function)(sensorDataType as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the maximum sample rate supported for given sensor data type.
 
--   [**getRegisteredSensors**](#getRegisteredSensors-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**) as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
+- [**getRegisteredSensors**](#getRegisteredSensors-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**) as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
     Retrieve the sensors that are currently registered.
 
--   [**notifyError**](#notifyError-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**) as **Void**
+- [**notifyError**](#notifyError-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**) as **Void**
 
     Let the system know the app has encountered an error.
 
--   [**notifyNewSensor**](#notifyNewSensor-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), configurationRequired as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
+- [**notifyNewSensor**](#notifyNewSensor-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), configurationRequired as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
     Let the system know the app has discovered a new sensor.
 
--   [**notifyPairComplete**](#notifyPairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
+- [**notifyPairComplete**](#notifyPairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
 
     Let the system know the app has finished pairing a sensor.
 
--   [**notifyScanComplete**](#notifyScanComplete-instance_function)() as **Void**
+- [**notifyScanComplete**](#notifyScanComplete-instance_function)() as **Void**
 
     Let the system know the app has finished scanning for sensors.
 
--   [**notifyUnpairComplete**](#notifyUnpairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
+- [**notifyUnpairComplete**](#notifyUnpairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
 
     Let the system know the app has finished unpairing a sensor.
 
--   [**registerSensorDataListener**](#registerSensorDataListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
+- [**registerSensorDataListener**](#registerSensorDataListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
 
     Register a callback to fetch high-frequency data from various sensors.
 
--   [**setEnabledSensors**](#setEnabledSensors-instance_function)(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
+- [**setEnabledSensors**](#setEnabledSensors-instance_function)(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
 
     Enable sensors for use.
 
--   [**unregisterSensorDataListener**](#unregisterSensorDataListener-instance_function)() as **Void**
+- [**unregisterSensorDataListener**](#unregisterSensorDataListener-instance_function)() as **Void**
 
     Unregister a previously registered data listener.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **SensorType** as [Sensor.RemoteSensorType](/connect-iq/api-docs/Toybox/Sensor/#RemoteSensorType-module) or [Sensor.OnboardSensorType](/connect-iq/api-docs/Toybox/Sensor/#OnboardSensorType-module)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **disableSensorType(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -421,20 +421,20 @@ Disable the given sensor type for use.
 
 Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **enableSensorEvents(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**)** as **Void**
 
@@ -442,21 +442,21 @@ Request sensor events from enabled sensors.
 
 Sensor events are retrieved from any enabled sensors at a rate of 1 Hz. The data retrieved from enabled sensors is passed to the listener [Method](/connect-iq/api-docs/Toybox/Lang/Method/) provided as a parameter to this method.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
 Parameters:
 
--   listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     A reference to a listener Method:
 
-    -   Called when sensor updates are received
+- Called when sensor updates are received
 
-    -   Receives a Sensor.info object
+- Receives a Sensor.info object
 
-    -   Use `null` to specify no listener
+- Use `null` to specify no listener
 
 
 
@@ -470,7 +470,7 @@ Sensor.enableSensorEvents(method(:onSensor));
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **enableSensorType(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -478,24 +478,24 @@ Enable the given sensor type for use.
 
 Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
-Note:
+注意：
 
 Multitasking: Sensor states can not be changed while in inacitve mode and sensor enabled during active mode will be disabled when app becomes inactive, and re-enabled automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` on success, otherwise `false`.
+    成功时返回 `true`，否则返回 `false`。
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **getInfo()** as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
@@ -503,9 +503,9 @@ Get the current Sensor [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/).
 
 This is useful for retrieving the current sensor info either on demand or periodically within a [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/).
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
 Example:
 
@@ -530,26 +530,26 @@ function timerCallback() {
 
 Returns:
 
--   [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
+- [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
-See Also:
+另见：
 
--   [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
+- [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getMaxSampleRate()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Get the maximum sample rate supported by the system.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
-Note:
+注意：
 
 This function can produce different results after the app transitions to the active state after being inactive. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
@@ -560,7 +560,7 @@ using Toybox.Sensor;
 var maxSample = Sensor.getMaxSampleRate();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -724,30 +724,30 @@ var maxSample = Sensor.getMaxSampleRate();
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The max sample rate as a number
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **getMaxSampleRateForSensorType(sensorDataType as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Get the maximum sample rate supported for given sensor data type.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
-Note:
+注意：
 
 This function can produce different results after the app transitions to the active state after being inactive. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
 Parameters:
 
--   sensorDataType — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- sensorDataType — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     Symbol of the sensor data type to get the max rate for, allowed symbols are `accelerometer`, `gyroscope`, and `magnetometer`.
 
@@ -759,7 +759,7 @@ using Toybox.Sensor;
 var maxSample = Sensor.getMaxSampleRateForSensorType(:accelerometer);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -864,14 +864,14 @@ var maxSample = Sensor.getMaxSampleRateForSensorType(:accelerometer);
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The max sample rate as a Number
 
 
 Since:
 
-API Level 3.4.5
+API 级别 3.4.5
 
 ### **getRegisteredSensors(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**)** as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
@@ -881,27 +881,27 @@ This function returns an iterator for the sensors that are considered to be \`re
 
 Parameters:
 
--   sensorType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
+- sensorType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
     A SENSOR\_\* value that describes the sensor type to enumerate, or `null` to get all sensors.
 
 
 Returns:
 
--   [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/) —
+- [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/) —
 
     An iterator of the sensors that are currently registered.
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **notifyError(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)** as **Void**
 
 Let the system know the app has encountered an error
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -983,7 +983,7 @@ Let the system know the app has encountered an error
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **notifyNewSensor(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), configurationRequired as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
@@ -991,16 +991,16 @@ Let the system know the app has discovered a new sensor
 
 Parameters:
 
--   sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
+- sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
-    A sensorinfo object containing the information about the sensor.
+    包含传感器信息的 sensorinfo 对象。
 
--   configurationRequired — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- configurationRequired — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     flag indicating whether or not the sensor require custom configuration. A value of True will prompt the app for a custom configuration view through [AppBase.getSensorConfigurationView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorConfigurationView-instance_function) during the pairing process.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1082,7 +1082,7 @@ Parameters:
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **notifyPairComplete(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as **Void**
 
@@ -1090,12 +1090,12 @@ Let the system know the app has finished pairing a sensor
 
 Parameters:
 
--   sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
+- sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
-    A sensorinfo object containing the information about the sensor.
+    包含传感器信息的 sensorinfo 对象。
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1177,13 +1177,13 @@ Parameters:
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **notifyScanComplete()** as **Void**
 
 Let the system know the app has finished scanning for sensors
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1265,7 +1265,7 @@ Let the system know the app has finished scanning for sensors
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **notifyUnpairComplete(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as **Void**
 
@@ -1273,12 +1273,12 @@ Let the system know the app has finished unpairing a sensor
 
 Parameters:
 
--   sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
+- sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
-    A sensorinfo object containing the information about the sensor.
+    包含传感器信息的 sensorinfo 对象。
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1360,7 +1360,7 @@ Parameters:
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **registerSensorDataListener(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as **Void**
 
@@ -1368,80 +1368,80 @@ Register a callback to fetch high-frequency data from various sensors.
 
 The callback will get invoked each time a new set of sensor data over the length of time specified in the period option is available.
 
-Note:
+注意：
 
 Only one data request is allowed to be registered at a time. Subsequent calls to this function for the same sensor type will override previously registered requests.
 
-Note:
+注意：
 
 Magnetometer data is not supported in synchronous data request.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
 Parameters:
 
--   listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     A method that takes a single [SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/) object as a parameter that will contain the requested data.
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary of options. The allowed values depend on sensor type.
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         Period of time to request samples in seconds. Maximum is 4 seconds.
 
-    -   :synchronous — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :synchronous — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         Set to `true` to request synchronized sensor data.
 
-    -   :accelerometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- :accelerometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         Options for accelerometer data.
 
-        -   :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
 
-        -   :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
 
-        -   :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [power Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var) be computed.
+- :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [power Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var) be computed.
 
-        -   :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [pitch Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var) be computed.
+- :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [pitch Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var) be computed.
 
-        -   :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [roll Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var) be computed.
+- :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [roll Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var) be computed.
 
-        -   :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
 
 
-    -   :heartBeatIntervals — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- :heartBeatIntervals — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         Options for Heart Beat Interval data.
 
-        -   :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch heart beat interval data.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch heart beat interval data.
 
 
-    -   :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         Options for gyroscope data.
 
-        -   :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
 
-        -   :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
 
-        -   :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:gyroscope=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:gyroscope=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
 
 
-    -   :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         Options for magnetometer data.
 
-        -   :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
 
-        -   :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
 
-        -   :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:magnetometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:magnetometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
 
 
 
@@ -1464,7 +1464,7 @@ var options = {
 Sensor.registerSensorDataListener(method(:accelCallback), options);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -1626,22 +1626,22 @@ Sensor.registerSensorDataListener(method(:accelCallback), options);
 
 :::
 
-See Also:
+另见：
 
--   [ActivityRecording.createSession()](/connect-iq/api-docs/Toybox/ActivityRecording/#createSession-instance_function)
+- [ActivityRecording.createSession()](/connect-iq/api-docs/Toybox/ActivityRecording/#createSession-instance_function)
 
--   [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
+- [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   [Toybox::Sensor::TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/) Thrown if more than one listener is tried to register for sensor data.
+- [Toybox::Sensor::TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/) Thrown if more than one listener is tried to register for sensor data.
 
--   [Toybox::Lang::InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/) Thrown if any required options are excluded, if provided options are out of range, or are of the wrong type.
+- [Toybox::Lang::InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/) Thrown if any required options are excluded, if provided options are out of range, or are of the wrong type.
 
 
 ### **setEnabledSensors(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
@@ -1650,23 +1650,23 @@ Enable sensors for use.
 
 This will enable both connected ANT+ sensors and system sensors if possible.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
-Note:
+注意：
 
 Multitasking: Sensor states can not be changed while in inacitve mode and sensor enabled during active mode will be disabled when app becomes inactive, and re-enabled automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
 Parameters:
 
--   sensors — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- sensors — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     The sensors to enable:
 
-    -   An Array of SENSOR\_\* types to enable
+- An Array of SENSOR\_\* types to enable
 
-    -   An empty array (\[\]) to disable all sensors
+- An empty array (\[\]) to disable all sensors
 
 
 
@@ -1681,22 +1681,22 @@ Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of requested sensors that are available
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **unregisterSensorDataListener()** as **Void**
 
 Unregister a previously registered data listener.
 
-Note:
+注意：
 
-Will cause an app crash if called from a data field app
+在数据字段应用中调用会导致应用崩溃
 
 Example:
 
@@ -1708,7 +1708,7 @@ Sensor.unregisterSensorDataListener(); // Unregister Listener
 mSession.stop();                       // Stop Activity Recording
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -1870,11 +1870,11 @@ mSession.stop();                       // Stop Activity Recording
 
 :::
 
-See Also:
+另见：
 
--   [Sensor.registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
+- [Sensor.registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

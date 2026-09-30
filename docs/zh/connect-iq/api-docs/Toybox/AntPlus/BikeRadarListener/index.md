@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)
+- [Toybox.AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Bike Radar
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -169,18 +169,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onBikeRadarUpdate**](#onBikeRadarUpdate-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>) as **Void**
+- [**onBikeRadarUpdate**](#onBikeRadarUpdate-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>) as **Void**
 
     Callback when radar data is updated.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -188,7 +188,7 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onBikeRadarUpdate(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>)** as **Void**
 
@@ -196,11 +196,11 @@ Callback when radar data is updated
 
 Parameters:
 
--   data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     List of information for tracked targets (maximum of 8).
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

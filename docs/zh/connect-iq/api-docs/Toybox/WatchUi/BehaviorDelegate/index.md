@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.WatchUi.InputDelegate
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
--   [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
+- [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 BehaviorDelegate handles behavior input events.
 
@@ -24,9 +24,9 @@ A BehaviorDelegate differs from an [InputDelegate](/connect-iq/api-docs/Toybox/W
 
 Since BehaviorDelegate extends InputDelegate, so it can also act on basic inputs as well. If a BehaviorDelegate returns `true` for a function (indicating the input was used) then the InputDelegate function that corresponds to the behavior will not be called.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -51,63 +51,63 @@ class MyBehaviorDelegate extends BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onActionMenu**](#onActionMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onActionMenu**](#onActionMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Action* *Menu* behavior.
+    表示 *Action* *Menu* 行为。
 
--   [**onBack**](#onBack-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onBack**](#onBack-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Represents the *Back* behavior.
 
--   [**onMenu**](#onMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onMenu**](#onMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Represents the *Menu* behavior.
 
--   [**onNextMode**](#onNextMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onNextMode**](#onNextMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Represents the *Next* behavior.
 
--   [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Next* *Page* behavior.
+    表示 *Next* *Page* 行为。
 
--   [**onPreviousMode**](#onPreviousMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onPreviousMode**](#onPreviousMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Represents the *Previous* *Mode* behavior.
 
--   [**onPreviousPage**](#onPreviousPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onPreviousPage**](#onPreviousPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Previous* *Page* behavior.
+    表示 *Previous* *Page* 行为。
 
--   [**onSelect**](#onSelect-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onSelect**](#onSelect-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Represents the *Selection* behavior.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -115,15 +115,15 @@ Constructor
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onActionMenu()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Action* *Menu* behavior.
+表示 *Action* *Menu* 行为。
 
 This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) to push an action menu.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 4 41mm
 -   Venu® 4 45mm / D2™ Air X15
@@ -134,14 +134,14 @@ This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMen
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 5.1.1
+API 级别 5.1.1
 
 ### **onBack()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -149,20 +149,20 @@ Represents the *Back* behavior.
 
 This is typically triggered by the back button ([KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const)).
 
-Note:
+注意：
 
 Some devices interpret [SWIPE\_RIGHT](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_RIGHT-const) [SwipeEvents](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) as [KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const) events. On these devices, returning `false` will cause [onKey()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onKey-instance_function) to be called rather than [onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function).
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onMenu()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -172,14 +172,14 @@ This is typically triggered by the menu button ([KEY\_MENU](/connect-iq/api-docs
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onNextMode()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -187,31 +187,31 @@ Represents the *Next* behavior.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onNextPage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Next* *Page* behavior.
+表示 *Next* *Page* 行为。
 
 This is typically triggered by the down button ([KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)) or by a [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onPreviousMode()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -219,31 +219,31 @@ Represents the *Previous* *Mode* behavior.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onPreviousPage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Previous* *Page* behavior.
+表示 *Previous* *Page* 行为。
 
 This is typically triggered by the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const))) or by a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onSelect()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -253,11 +253,11 @@ This is typically triggered by the Start/Enter button ([KEY\_ENTER](/connect-iq/
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0

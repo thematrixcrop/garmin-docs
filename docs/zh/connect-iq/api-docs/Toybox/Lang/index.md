@@ -3,135 +3,135 @@ title: "Module: Toybox.Lang"
 ---
 # Module: Toybox.Lang
 
-## Overview
+## 概述
 
 The Lang module contains Monkey C language basic types, and provides a method for formatting Strings.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Char](/connect-iq/api-docs/Toybox/Lang/Char/), [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Exception](/connect-iq/api-docs/Toybox/Lang/Exception/), [Float](/connect-iq/api-docs/Toybox/Lang/Float/), [InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/), [InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/), [Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Method](/connect-iq/api-docs/Toybox/Lang/Method/), [Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Object](/connect-iq/api-docs/Toybox/Lang/Object/), [OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/), [ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/), [StorageFullException](/connect-iq/api-docs/Toybox/Lang/StorageFullException/), [String](/connect-iq/api-docs/Toybox/Lang/String/), [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/), [UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/), [ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/), [WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
+类：[Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Char](/connect-iq/api-docs/Toybox/Lang/Char/), [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Exception](/connect-iq/api-docs/Toybox/Lang/Exception/), [Float](/connect-iq/api-docs/Toybox/Lang/Float/), [InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/), [InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/), [Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Method](/connect-iq/api-docs/Toybox/Lang/Method/), [Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Object](/connect-iq/api-docs/Toybox/Lang/Object/), [OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/), [ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/), [StorageFullException](/connect-iq/api-docs/Toybox/Lang/StorageFullException/), [String](/connect-iq/api-docs/Toybox/Lang/String/), [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/), [UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/), [ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/), [WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
-## Constant Summary
+## 常量摘要
 
 ### NumberFormat
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | NUMBER\_FORMAT\_FLOAT | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 IEEE 754 Single Precision Float Value (32-bits)
 
- |
+|
 | NUMBER\_FORMAT\_SINT16 | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Signed 16-bit Integer Value
 
- |
+|
 | NUMBER\_FORMAT\_SINT32 | 2 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Signed 32-bit Integer Value
 
- |
+|
 | NUMBER\_FORMAT\_SINT8 | 3 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Signed 8-bit Integer Value
 
- |
+|
 | NUMBER\_FORMAT\_UINT16 | 4 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Unsigned 16-bit Integer Value
 
- |
+|
 | NUMBER\_FORMAT\_UINT32 | 5 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Unsigned 32-bit Integer Value
 
- |
+|
 | NUMBER\_FORMAT\_UINT8 | 6 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Unsigned 8-bit Integer Value
 
- |
+|
 
 ### Endian
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | ENDIAN\_LITTLE | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | ENDIAN\_BIG | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Comparable**](#Comparable-named_type) as interface {
+- [**Comparable**](#Comparable-named_type) as interface {
     function compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
     }
 
     Comparable defines an ordering between an object and others.
 
--   [**Comparator**](#Comparator-named_type) as interface {
+- [**Comparator**](#Comparator-named_type) as interface {
     function compare(a as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), b as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
     }
 
     Comparator defines an ordering between objects.
 
--   [**Decimal**](#Decimal-named_type) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
--   [**Integer**](#Integer-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
--   [**Numeric**](#Numeric-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
+- [**Decimal**](#Decimal-named_type) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
+- [**Integer**](#Integer-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**Numeric**](#Numeric-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Create a formatted String by substituting the given parameters into the given format at the corresponding locations.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Comparable** as interface {
 function compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
@@ -143,7 +143,7 @@ Comparator can be use to specify an ordering between an object and others.
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 ### **Comparator** as interface {
 function compare(a as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), b as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
@@ -155,27 +155,27 @@ Comparator can be use to specify an ordering between objects.
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 ### **Decimal** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **Integer** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **Numeric** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **format(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -183,11 +183,11 @@ Create a formatted String by substituting the given parameters into the given fo
 
 Parameters:
 
--   format — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- format — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     A string using $1$, $2$, $3$... as substitution identifiers
 
--   parameters — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- parameters — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     The Array of content to substitute into the formatted String
 
@@ -204,11 +204,11 @@ var myString = Lang.format(myFormat, myParams);
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A new String with the substituted content
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

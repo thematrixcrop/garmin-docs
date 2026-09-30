@@ -3,235 +3,235 @@ title: "Edge® Explore 2"
 ---
 # Edge® Explore 2
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | edgeexplore2 |
-| Screen Shape | rectangle |
-| Screen Size | 240 x 400 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | start, lap |
-| Launcher Icon Size | 36 x 36 |
+| 标识 | edgeexplore2 |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 240 x 400 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | start, lap |
+| 启动图标尺寸 | 36 x 36 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 131072 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 1048576 |  |
-| Widget | 1048576 | Requires 4.x SDK |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 1048576 |  |
+| 微件 | 1048576 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/edgeexplore2/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 400 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 400 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/edgeexplore2/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 199 | 0 | False | False | False | False |
-| Field 2 | 0 | 201 | 240 | 199 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 199 | 0 | False | False | False | False |
+| 字段 2 | 0 | 201 | 240 | 199 | 0 | False | False | False | False |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/edgeexplore2/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 132 | 0 | False | False | False | False |
-| Field 2 | 0 | 134 | 240 | 132 | 0 | False | False | False | False |
-| Field 3 | 0 | 268 | 240 | 132 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 132 | 0 | False | False | False | False |
+| 字段 2 | 0 | 134 | 240 | 132 | 0 | False | False | False | False |
+| 字段 3 | 0 | 268 | 240 | 132 | 0 | False | False | False | False |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/edgeexplore2/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 79 | 0 | False | False | False | False |
-| Field 2 | 0 | 81 | 240 | 158 | 0 | False | False | False | False |
-| Field 3 | 0 | 241 | 240 | 159 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 79 | 0 | False | False | False | False |
+| 字段 2 | 0 | 81 | 240 | 158 | 0 | False | False | False | False |
+| 字段 3 | 0 | 241 | 240 | 159 | 0 | False | False | False | False |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/edgeexplore2/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 98 | 0 | False | False | False | False |
-| Field 2 | 0 | 100 | 240 | 98 | 0 | False | False | False | False |
-| Field 3 | 0 | 200 | 240 | 98 | 0 | False | False | False | False |
-| Field 4 | 0 | 300 | 240 | 100 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 98 | 0 | False | False | False | False |
+| 字段 2 | 0 | 100 | 240 | 98 | 0 | False | False | False | False |
+| 字段 3 | 0 | 200 | 240 | 98 | 0 | False | False | False | False |
+| 字段 4 | 0 | 300 | 240 | 100 | 0 | False | False | False | False |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/edgeexplore2/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 119 | 79 | 0 | False | False | False | False |
-| Field 2 | 121 | 0 | 119 | 79 | 0 | False | False | False | False |
-| Field 3 | 0 | 81 | 240 | 158 | 0 | False | False | False | False |
-| Field 4 | 0 | 241 | 240 | 159 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 119 | 79 | 0 | False | False | False | False |
+| 字段 2 | 121 | 0 | 119 | 79 | 0 | False | False | False | False |
+| 字段 3 | 0 | 81 | 240 | 158 | 0 | False | False | False | False |
+| 字段 4 | 0 | 241 | 240 | 159 | 0 | False | False | False | False |
 
-**5 Fields A Layout**
+**5 字段 A 布局**
 
 
 ![5 Fields A](/connect-iq/resources/device-reference/edgeexplore2/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
-| Field 4 | 0 | 240 | 240 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 320 | 240 | 80 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
+| 字段 4 | 0 | 240 | 240 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 320 | 240 | 80 | 0 | False | False | False | False |
 
-**5 Fields B Layout**
+**5 字段 B 布局**
 
 
 ![5 Fields B](/connect-iq/resources/device-reference/edgeexplore2/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
-| Field 3 | 0 | 238 | 119 | 78 | 0 | False | False | False | False |
-| Field 4 | 121 | 238 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 318 | 240 | 82 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
+| 字段 3 | 0 | 238 | 119 | 78 | 0 | False | False | False | False |
+| 字段 4 | 121 | 238 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 318 | 240 | 82 | 0 | False | False | False | False |
 
-**6 Fields A Layout**
+**6 字段 A 布局**
 
 
 ![6 Fields A](/connect-iq/resources/device-reference/edgeexplore2/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
-| Field 4 | 0 | 240 | 240 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
+| 字段 4 | 0 | 240 | 240 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
 
-**6 Fields B Layout**
+**6 字段 B 布局**
 
 
 ![6 Fields B](/connect-iq/resources/device-reference/edgeexplore2/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
-| Field 4 | 0 | 238 | 240 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 318 | 119 | 82 | 0 | False | False | False | False |
-| Field 6 | 121 | 318 | 119 | 82 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
+| 字段 4 | 0 | 238 | 240 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 318 | 119 | 82 | 0 | False | False | False | False |
+| 字段 6 | 121 | 318 | 119 | 82 | 0 | False | False | False | False |
 
-**7 Fields A Layout**
+**7 字段 A 布局**
 
 
 ![7 Fields A](/connect-iq/resources/device-reference/edgeexplore2/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
-| Field 4 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 160 | 240 | 78 | 0 | False | False | False | False |
+| 字段 4 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
 
-**7 Fields B Layout**
+**7 字段 B 布局**
 
 
 ![7 Fields B](/connect-iq/resources/device-reference/edgeexplore2/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
-| Field 4 | 0 | 238 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 121 | 238 | 119 | 78 | 0 | False | False | False | False |
-| Field 6 | 0 | 318 | 119 | 82 | 0 | False | False | False | False |
-| Field 7 | 121 | 318 | 119 | 82 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 80 | 240 | 156 | 0 | False | False | False | False |
+| 字段 4 | 0 | 238 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 121 | 238 | 119 | 78 | 0 | False | False | False | False |
+| 字段 6 | 0 | 318 | 119 | 82 | 0 | False | False | False | False |
+| 字段 7 | 121 | 318 | 119 | 82 | 0 | False | False | False | False |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/edgeexplore2/layout12.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
-| Field 4 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 8 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 240 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 4 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 6 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 8 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/edgeexplore2/layout13.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
-| Field 2 | 0 | 80 | 119 | 78 | 0 | False | False | False | False |
-| Field 3 | 121 | 80 | 119 | 78 | 0 | False | False | False | False |
-| Field 4 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
-| Field 6 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 8 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 9 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 240 | 78 | 0 | False | False | False | False |
+| 字段 2 | 0 | 80 | 119 | 78 | 0 | False | False | False | False |
+| 字段 3 | 121 | 80 | 119 | 78 | 0 | False | False | False | False |
+| 字段 4 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 6 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 7 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 8 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 9 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
 
-**10 Fields Layout**
+**10 字段布局**
 
 
 ![10 Fields](/connect-iq/resources/device-reference/edgeexplore2/layout14.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
-| Field 3 | 0 | 80 | 119 | 78 | 0 | False | False | False | False |
-| Field 4 | 121 | 80 | 119 | 78 | 0 | False | False | False | False |
-| Field 5 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
-| Field 6 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
-| Field 7 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 8 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
-| Field 9 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
-| Field 10 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 2 | 121 | 0 | 119 | 78 | 0 | False | False | False | False |
+| 字段 3 | 0 | 80 | 119 | 78 | 0 | False | False | False | False |
+| 字段 4 | 121 | 80 | 119 | 78 | 0 | False | False | False | False |
+| 字段 5 | 0 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 6 | 121 | 160 | 119 | 78 | 0 | False | False | False | False |
+| 字段 7 | 0 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 8 | 121 | 240 | 119 | 78 | 0 | False | False | False | False |
+| 字段 9 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
+| 字段 10 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
 
 **Part Number 006-B4169-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DejaVu Sans Medium Condensed B | 12 | 006B416900\_DEJA\_VU\_SANS\_09 |
 | FONT\_TINY | DejaVu Sans Medium Condensed B | 16 | 006B416900\_DEJA\_VU\_SANS\_12 |
@@ -245,13 +245,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Medium | 19 | 006B416900\_ROBOTO\_MEDIUM\_10 |
 | FONT\_GLANCE\_NUMBER | Roboto Medium | 21 | 006B416900\_ROBOTO\_MEDIUM\_12 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Medium | 18 | 006B416900\_NOTO\_SANS\_SC\_MEDIUM\_18 |
 | FONT\_TINY | Noto Sans SC Medium | 20 | 006B416900\_NOTO\_SANS\_SC\_MEDIUM\_20 |
@@ -265,13 +265,13 @@ zhs
 | FONT\_GLANCE | Noto Sans SC Medium | 23 | 006B416900\_NOTO\_SANS\_SC\_MEDIUM\_23 |
 | FONT\_GLANCE\_NUMBER | Roboto Medium | 21 | 006B416900\_ROBOTO\_MEDIUM\_12 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans TC Medium | 18 | 006B416900\_NOTO\_SANS\_TC\_MEDIUM\_18 |
 | FONT\_TINY | Noto Sans TC Medium | 20 | 006B416900\_NOTO\_SANS\_TC\_MEDIUM\_20 |
@@ -285,13 +285,13 @@ zht
 | FONT\_GLANCE | Noto Sans TC Medium | 23 | 006B416900\_NOTO\_SANS\_TC\_MEDIUM\_23 |
 | FONT\_GLANCE\_NUMBER | Roboto Medium | 21 | 006B416900\_ROBOTO\_MEDIUM\_12 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar | 12 | 006B416900\_KOSUGI\_REGULAR\_12 |
 | FONT\_TINY | MotoyaLCedar | 14 | 006B416900\_KOSUGI\_REGULAR\_14 |
@@ -305,13 +305,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar | 16 | 006B416900\_KOSUGI\_REGULAR\_16 |
 | FONT\_GLANCE\_NUMBER | Roboto Medium | 21 | 006B416900\_ROBOTO\_MEDIUM\_12 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 14 | 006B416900\_NANUM\_GOTHIC\_REGULAR\_14 |
 | FONT\_TINY | NanumGothic | 16 | 006B416900\_NANUM\_GOTHIC\_REGULAR\_16 |
@@ -325,13 +325,13 @@ kor
 | FONT\_GLANCE | NanumGothic | 19 | 006B416900\_NANUM\_GOTHIC\_REGULAR\_19 |
 | FONT\_GLANCE\_NUMBER | Roboto Medium | 21 | 006B416900\_ROBOTO\_MEDIUM\_12 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

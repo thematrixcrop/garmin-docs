@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
+- [Toybox.System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents various statistics available on a device, such as the battery charge and memory use.
 
-## See Also:
+## 另见：
 
--   [System.getSystemStats()](/connect-iq/api-docs/Toybox/System/#getSystemStats-instance_function)
+- [System.getSystemStats()](/connect-iq/api-docs/Toybox/System/#getSystemStats-instance_function)
 
 
 Example:
@@ -34,56 +34,56 @@ System.println(myStats.totalMemory);
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**battery**](#battery-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**battery**](#battery-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     The remaining battery life as a percentage.
 
--   [**batteryInDays**](#batteryInDays-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**batteryInDays**](#batteryInDays-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     The remaining battery life in days.
 
--   [**charging**](#charging-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**charging**](#charging-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Battery charging indicator.
 
--   [**freeMemory**](#freeMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**freeMemory**](#freeMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The current free memory in bytes.
 
--   [**solarIntensity**](#solarIntensity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**solarIntensity**](#solarIntensity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     A [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) value from 0-100 that describes the solar sensor's charge efficiency, if available.
 
--   [**totalMemory**](#totalMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**totalMemory**](#totalMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total available memory in bytes.
 
--   [**usedMemory**](#usedMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**usedMemory**](#usedMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The memory used by the application in bytes.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var battery as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 The remaining battery life as a percentage.
 
-Note:
+注意：
 
 Some devices may report slightly less than 100% charge immediately after being removed from the charging cradle or cable. While the device is on the charger, the charger will disable itself after the battery charges to 100%. The battery will then very slowly discharge until it hits a hysteresis threshold, at which point the charger will reactivate. This is intentionally done to extend the life of the battery if the device is left on the charger for a long time. Garmin artificially locks the charge indicator on the charge page to 100% once the unit reaches full charge to mask this minor charge cycle fluctuation.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var batteryInDays as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -91,9 +91,9 @@ The remaining battery life in days.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -195,7 +195,7 @@ API Level 3.3.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var charging as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -203,16 +203,16 @@ Battery charging indicator. This will be set to `true` if the device is connecte
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-See Also:
+另见：
 
--   [Stats.battery](/connect-iq/api-docs/Toybox/System/Stats/#battery-var)
+- [Stats.battery](/connect-iq/api-docs/Toybox/System/Stats/#battery-var)
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var freeMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -220,11 +220,11 @@ The current free memory in bytes.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var solarIntensity as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -232,11 +232,11 @@ A [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) value from 0-
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var totalMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -244,11 +244,11 @@ The total available memory in bytes.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var usedMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -256,8 +256,8 @@ The memory used by the application in bytes.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

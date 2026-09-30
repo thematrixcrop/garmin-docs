@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ProgressBar](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/)
+- [Toybox.WatchUi.ProgressBar](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen progress bar.
 
 A ProgressBar is a special View that presents the user with a progress indicator. These can display a string and either an incremental progress bar from 0-100% or a "busy" indicator. A ProgressBar is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides either `null` or a [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/). If a BehaviorDelegate is provided, the [onBack()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onBack-instance_function) method will be called if Back button is pressed while the ProgressBar is displayed.
 
-Note:
+注意：
 
 The look and feel of a progress bar is device-specific.
 
@@ -65,24 +65,24 @@ class MyBehaviorDelegate extends Ui.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -256,22 +256,22 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), startValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)
+- [**initialize**](#initialize-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), startValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)
 
     Constructor.
 
--   [**setDisplayString**](#setDisplayString-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**setDisplayString**](#setDisplayString-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Set the string to display on the ProgressBar.
 
--   [**setProgress**](#setProgress-instance_function)(progressValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**) as **Void**
+- [**setProgress**](#setProgress-instance_function)(progressValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**) as **Void**
 
     Set the value of the ProgressBar.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), startValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)**
 
@@ -279,23 +279,23 @@ Constructor
 
 Parameters:
 
--   displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The string to display on the ProgressBar
 
--   startValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+- startValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
     The initial value for the ProgressBar:
 
-    -   An increment from 0 to 100
+- An increment from 0 to 100
 
-    -   `null` for "busy"
+- `null` for "busy"
 
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **setDisplayString(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
@@ -303,14 +303,14 @@ Set the string to display on the ProgressBar.
 
 Parameters:
 
--   displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The string to display on the ProgressBar
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **setProgress(progressValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)** as **Void**
 
@@ -318,16 +318,16 @@ Set the value of the ProgressBar.
 
 Parameters:
 
--   progressValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+- progressValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
     The current value of the ProgressBar:
 
-    -   An increment from 0 to 100
+- An increment from 0 to 100
 
-    -   `null` for "busy"
+- `null` for "busy"
 
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
+- [Toybox.ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing heart rate data for a given period of time.
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -164,22 +164,22 @@ API Level 1.2.2
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Get the maximum heart rate contained in this iterator.
 
--   [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Get the minimum heart rate contained in this iterator.
 
--   [**next**](#next-instance_function)() as [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) or **Null**
+- [**next**](#next-instance_function)() as [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) or **Null**
 
     Get the next entry in the iterator.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getMax()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -187,14 +187,14 @@ Get the maximum heart rate contained in this iterator.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The maximum heart rate in beats per minute (bpm)
 
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
 ### **getMin()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -202,14 +202,14 @@ Get the minimum heart rate contained in this iterator.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The minimum heart rate (bpm)
 
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
 ### **next()** as [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) or **Null**
 
@@ -219,11 +219,11 @@ This must be called to get the initial data from the iterator.
 
 Returns:
 
--   [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) —
+- [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) —
 
     The next [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/), or `null` if there are no more samples
 
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2

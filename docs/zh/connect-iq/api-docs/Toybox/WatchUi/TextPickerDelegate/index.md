@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/)
+- [Toybox.WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 TextPickerDelegate responds to a TextPicker selection.
 
 This class should be extended to handle the specified text.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
+- [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
 
 
 Example:
@@ -53,24 +53,24 @@ class MyTextPickerDelegate extends WatchUi.TextPickerDelegate {
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -226,18 +226,18 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Text entry has been canceled.
 
--   [**onTextEntered**](#onTextEntered-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onTextEntered**](#onTextEntered-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A text string was entered into a TextPicker.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onCancel()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -245,7 +245,7 @@ Text entry has been canceled.
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0
 
 ### **onTextEntered(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -255,15 +255,15 @@ This method is called when text has been specified by a TextPicker, and receives
 
 Parameters:
 
--   text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The entered text
 
--   changed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- changed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     The entered text differs from the initially specified text of the TextPicker
 
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0

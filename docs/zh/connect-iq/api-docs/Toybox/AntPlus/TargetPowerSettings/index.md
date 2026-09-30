@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
+- [Toybox.AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents the target power set on fitness equipment when the equipment is in target power training mode. Fields may return `null` so you should `null` check values before using them.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1000 / Explore
 -   Edge® 1030 / Bontrager
@@ -44,14 +44,14 @@ API Level 2.4.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**targetPower**](#targetPower-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**targetPower**](#targetPower-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The target power set for the Fitness Equipment.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var targetPower as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -59,10 +59,10 @@ The target power set for the Fitness Equipment
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-4000W

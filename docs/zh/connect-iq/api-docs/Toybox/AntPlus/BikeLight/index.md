@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.CommonData
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
+- [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
 
--   [Toybox.AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)
+- [Toybox.AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class representing a bike light sensor.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -176,33 +176,33 @@ API Level 2.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**mode**](#mode-var) as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
+- [**mode**](#mode-var) as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
     The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) mode of the light.
 
--   [**type**](#type-var) as [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
+- [**type**](#type-var) as [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
     The [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) type of the light.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCapableModes**](#getCapableModes-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)\> or **Null**
+- [**getCapableModes**](#getCapableModes-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)\> or **Null**
 
     Get a list of the standard and custom light modes that a bike light supports.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**setMode**](#setMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
+- [**setMode**](#setMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
     Tell this light to enter a new mode.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
@@ -210,11 +210,11 @@ The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
+- [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
 ### var type as [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
@@ -222,13 +222,13 @@ The [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
+- [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCapableModes()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)\> or **Null**
 
@@ -236,14 +236,14 @@ Get a list of the standard and custom light modes that a bike light supports.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     list of supported [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) values, `null` if unknown
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **initialize()**
 
@@ -251,7 +251,7 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **setMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
@@ -261,11 +261,11 @@ You should check the capable modes before sending light modes as lights will ign
 
 Parameters:
 
--   mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
+- mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
     The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) enum number value
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

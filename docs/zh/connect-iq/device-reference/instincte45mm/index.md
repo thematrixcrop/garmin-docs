@@ -3,93 +3,93 @@ title: "Instinct® E 45mm"
 ---
 # Instinct® E 45mm
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | instincte45mm |
-| Screen Shape | semi-octagon |
-| Screen Size | 176 x 176 |
-| Display Colors | 2 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 62 x 62 |
+| 标识 | instincte45mm |
+| 屏幕形状 | semi-octagon |
+| 屏幕尺寸 | 176 x 176 |
+| 显示颜色 | 2 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 62 x 62 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
-| Glance | 32768 | Build as Watch App or Widget |
-| Watch App | 131072 |  |
-| Watch Face | 65536 |  |
-| Widget | 131072 | Requires 4.x SDK |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 速览 | 32768 | 构建为手表应用或微件 |
+| 手表应用 | 131072 |  |
+| 表盘 | 65536 |  |
+| 微件 | 131072 | 需要 4.x SDK |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/instincte45mm/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 176 | 176 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 176 | 176 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/instincte45mm/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
-| Field 2 | 0 | 72 | 176 | 104 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
+| 字段 2 | 0 | 72 | 176 | 104 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/instincte45mm/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 99 | 55 | 3 | True | False | True | False |
-| Field 2 | 0 | 56 | 176 | 65 | 0 | False | False | False | False |
-| Field 3 | 0 | 122 | 176 | 54 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 99 | 55 | 3 | True | False | True | False |
+| 字段 2 | 0 | 56 | 176 | 65 | 0 | False | False | False | False |
+| 字段 3 | 0 | 122 | 176 | 54 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/instincte45mm/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
-| Field 2 | 0 | 72 | 88 | 104 | 9 | True | False | False | True |
-| Field 3 | 88 | 72 | 88 | 104 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
+| 字段 2 | 0 | 72 | 88 | 104 | 9 | True | False | False | True |
+| 字段 3 | 88 | 72 | 88 | 104 | 12 | False | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/instincte45mm/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
-| Field 2 | 0 | 72 | 88 | 75 | 9 | True | False | False | True |
-| Field 3 | 88 | 72 | 88 | 75 | 12 | False | True | False | True |
-| Field 4 | 33 | 149 | 110 | 27 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 99 | 72 | 3 | True | False | True | False |
+| 字段 2 | 0 | 72 | 88 | 75 | 9 | True | False | False | True |
+| 字段 3 | 88 | 72 | 88 | 75 | 12 | False | True | False | True |
+| 字段 4 | 33 | 149 | 110 | 27 | 0 | False | False | False | False |
 
 **Part Number 006-B4584-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 21 | 006B388800\_CDPG\_ROBOTO\_15M |
 | FONT\_TINY | Roboto Condensed | 21 | 006B388800\_CDPG\_ROBOTO\_15M |
@@ -103,13 +103,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE | Roboto Condensed | 24 | 006B388800\_CDPG\_ROBOTO\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 17 | 006B458400\_ROBOTO\_CONDENSED\_VIET\_15M |
 | FONT\_TINY | Roboto Condensed | 17 | 006B458400\_ROBOTO\_CONDENSED\_VIET\_15M |
@@ -123,13 +123,13 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 20 | 006B458400\_ROBOTO\_CONDENSED\_VIET\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Medium | 19 | 006B458400\_NOTO\_SANS\_CJK\_SC\_MED\_CHN\_15M |
 | FONT\_TINY | Noto Sans CJK SC Medium | 19 | 006B458400\_NOTO\_SANS\_CJK\_SC\_MED\_CHN\_15M |
@@ -143,13 +143,13 @@ zhs, zht
 | FONT\_GLANCE | Noto Sans CJK SC Medium | 20 | 006B458400\_NOTO\_SANS\_CJK\_SC\_MED\_CHN\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Medium | 19 | 006B458400\_NOTO\_SANS\_CJK\_MED\_JPN\_15M |
 | FONT\_TINY | Noto Sans CJK JP Medium | 19 | 006B458400\_NOTO\_SANS\_CJK\_MED\_JPN\_15M |
@@ -163,13 +163,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Medium | 20 | 006B458400\_NOTO\_SANS\_CJK\_MED\_JPN\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic-Bold-94 | 19 | NANUM\_GOTHIC\_BOLD-94\_KOR\_19 |
 | FONT\_TINY | NanumGothic-Bold-94 | 19 | NANUM\_GOTHIC\_BOLD-94\_KOR\_19 |
@@ -183,13 +183,13 @@ kor
 | FONT\_GLANCE | NanumGothic-Bold-94 | 20 | NANUM\_GOTHIC\_BOLD-94\_KOR\_20 |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

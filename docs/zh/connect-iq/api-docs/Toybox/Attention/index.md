@@ -3,213 +3,213 @@ title: "Module: Toybox.Attention"
 ---
 # Module: Toybox.Attention
 
-## Overview
+## 概述
 
-The Attention 模块提供 the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
+The Attention module provides the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
 
 Not all devices fully support this module, so `has` checks are recommended. For example, the vivoactive does not have a tone generator and will trigger an error if an app attempts to play sounds.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [BacklightOnTooLongException](/connect-iq/api-docs/Toybox/Attention/BacklightOnTooLongException/), [ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/), [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
+类：[BacklightOnTooLongException](/connect-iq/api-docs/Toybox/Attention/BacklightOnTooLongException/), [ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/), [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
 
-## Constant Summary
+## 常量摘要
 
 ### Tone
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | TONE\_KEY | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that a key was pressed
 
- |
+|
 | TONE\_START | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that an activity has started
 
- |
+|
 | TONE\_STOP | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that an activity has stopped
 
- |
+|
 | TONE\_MSG | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that a message is available
 
- |
+|
 | TONE\_ALERT\_HI | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 An alert ending with a high note
 
- |
+|
 | TONE\_ALERT\_LO | 5 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 An alert ending with a low note
 
- |
+|
 | TONE\_LOUD\_BEEP | 6 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 A loud beep
 
- |
+|
 | TONE\_INTERVAL\_ALERT | 7 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates a change in interval
 
- |
+|
 | TONE\_ALARM | 8 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates an alarm has triggered
 
- |
+|
 | TONE\_RESET | 9 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that the activity was reset
 
- |
+|
 | TONE\_LAP | 10 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that the user has completed a lap
 
- |
+|
 | TONE\_CANARY | 11 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 An annoying sound to get the users attention
 
- |
+|
 | TONE\_TIME\_ALERT | 12 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 An alert that a time threshold has been met
 
- |
+|
 | TONE\_DISTANCE\_ALERT | 13 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 An alert that a distance threshold has been met
 
- |
+|
 | TONE\_FAILURE | 14 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that the activity was a failure
 
- |
+|
 | TONE\_SUCCESS | 15 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that the activity was a success
 
- |
+|
 | TONE\_POWER | 16 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The power on tone
 
- |
+|
 | TONE\_LOW\_BATTERY | 17 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates that the device has low battery power
 
- |
+|
 | TONE\_ERROR | 18 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Indicates an error occurred
 
- |
+|
 
 ### FlashlightMode
 
@@ -217,22 +217,22 @@ Flashlight modes
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_MODE\_OFF | 0 |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_MODE\_ON | 1 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_MODE\_STROBE | 2 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
@@ -242,22 +242,22 @@ Flashlight colors
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_COLOR\_WHITE | 0xFFFFFF |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_COLOR\_GREEN | 0x00FF00 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_COLOR\_RED | 0xFF0000 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
@@ -269,22 +269,22 @@ Constants map to device-specific brightness levels
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_BRIGHTNESS\_LOW | 255 |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_BRIGHTNESS\_MEDIUM | 254 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_BRIGHTNESS\_HIGH | 253 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
@@ -294,27 +294,27 @@ Flashlight strobe modes
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_STROBE\_MODE\_BLINK | 0 |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_STROBE\_MODE\_PULSE | 1 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_STROBE\_MODE\_BEACON | 2 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_STROBE\_MODE\_BLITZ | 3 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
@@ -324,22 +324,22 @@ Flashlight strobe speeds
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_STROBE\_SPEED\_SLOW | 0 |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_STROBE\_SPEED\_MEDIUM | 1 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_STROBE\_SPEED\_FAST | 2 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
@@ -349,61 +349,61 @@ Flashlight result codes
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FLASHLIGHT\_RESULT\_SUCCESS | 0 |
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_RESULT\_INVALID\_COLOR | 1 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_RESULT\_INVALID\_BRIGHTNESS | 2 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_RESULT\_INVALID\_MODE | 3 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_RESULT\_INVALID\_SPEED | 4 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 | FLASHLIGHT\_RESULT\_FAILURE | 5 |
 
-API Level 3.4.3
+API 级别 3.4.3
 
  |  |
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**backlight**](#backlight-instance_function)(setting as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
+- [**backlight**](#backlight-instance_function)(setting as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
     Control the display backlight.
 
--   [**hasFlashlightColor**](#hasFlashlightColor-instance_function)(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**hasFlashlightColor**](#hasFlashlightColor-instance_function)(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine if a given flashlight color is supported by this device.
 
--   [**playTone**](#playTone-instance_function)(options as [Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module) or { :toneProfile as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)\>, :repeatCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as **Void**
+- [**playTone**](#playTone-instance_function)(options as [Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module) or { :toneProfile as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)\>, :repeatCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as **Void**
 
     Play a tone.
 
--   [**setFlashlightMode**](#setFlashlightMode-instance_function)(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
--   [**vibrate**](#vibrate-instance_function)(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>) as **Void**
+- [**setFlashlightMode**](#setFlashlightMode-instance_function)(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
+- [**vibrate**](#vibrate-instance_function)(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>) as **Void**
 
     Engage the vibration motor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **backlight(setting as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
@@ -413,21 +413,21 @@ The backlight will always respect the backlight timeout settings on the device. 
 
 On products that use a gesture enabled display, calling this API will suppress the gesture detection for the period that the backlight is on. Calling this repeatedly can hold the display on, but if the product has burn in protection an exception will be thrown if you attempt to keep the display enabled for too long (e.g. over 1 minute).
 
-Note:
+注意：
 
 Passing a [Float](/connect-iq/api-docs/Toybox/Lang/Float/) is only supported with ConnectIQ 3.2.1 and later.
 
 Parameters:
 
--   setting — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+- setting — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    -   If `setting` is a [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), `false` will disable the backlight and `true` will enable the backlight at the system backlight level.
+- If `setting` is a [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), `false` will disable the backlight and `true` will enable the backlight at the system backlight level.
 
-    -   If `setting` is a [Float](/connect-iq/api-docs/Toybox/Lang/Float/), the value 0.0 will disable the backlight and values greater than 0.0 and less than or equal to 1.0 will enable the backlight at the specified brightness.
+- If `setting` is a [Float](/connect-iq/api-docs/Toybox/Lang/Float/), the value 0.0 will disable the backlight and values greater than 0.0 and less than or equal to 1.0 will enable the backlight at the specified brightness.
 
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -605,13 +605,13 @@ Parameters:
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   BacklightOnTooLongException On products with burn in protection, this exception is thrown if the backlight is held on for too long continuously
+- BacklightOnTooLongException On products with burn in protection, this exception is thrown if the backlight is held on for too long continuously
 
--   InvalidOptionsException If the Float value is outside the valid range.
+- InvalidOptionsException If the Float value is outside the valid range.
 
 
 ### **hasFlashlightColor(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -620,12 +620,12 @@ Determine if a given flashlight color is supported by this device
 
 Parameters:
 
--   color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
+- color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
     Color to check
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -667,16 +667,16 @@ Parameters:
 
 Returns:
 
--   Returns true if the given color is supported, otherwise false.
+- Returns true if the given color is supported, otherwise false.
 
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Raised if called from an app type other than watch-app.
 
@@ -685,21 +685,21 @@ Throws:
 
 Play a tone.
 
-Note:
+注意：
 
 Passing an options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) is only supported with ConnectIQ 3.1.0 and later.
 
 Parameters:
 
--   options — ([Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A TONE\_\* value or [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) of options.
 
-    -   :toneProfile — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :toneProfile — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         Array containing at least one [ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/) object to be played in sequence.
 
-    -   :repeatCount — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :repeatCount — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         Number of times to repeat the given tone sequence.
 
@@ -728,7 +728,7 @@ if (Attention has :ToneProfile) {
    }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -883,11 +883,11 @@ if (Attention has :ToneProfile) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if passing an options hash with invalid values when using new ToneProfile objects
 
@@ -896,29 +896,29 @@ Throws:
 
 Parameters:
 
--   mode — ([Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module))
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- mode — ([Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module))
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Flashlight mode options
 
-    -   :color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
+- :color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
         Color of flashlight. Default is FLASHLIGHT\_COLOR\_WHITE.
 
-    -   :strobeMode — ([Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module)) —
+- :strobeMode — ([Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module)) —
 
         Mode of strobe. Default is FLASHLIGHT\_STROBE\_MODE\_BLINK.
 
-    -   :strobeSpeed — ([Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module)) —
+- :strobeSpeed — ([Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module)) —
 
         Speed of strobe. Default is FLASHLIGHT\_STROBE\_SPEED\_MEDIUM.
 
-    -   :brightness — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module)) —
+- :brightness — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module)) —
 
         Intensity of the flashlight. Default is FLASHLIGHT\_BRIGHTNESS\_MEDIUM.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -960,18 +960,18 @@ Parameters:
 
 Returns:
 
--   [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) —
+- [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) —
 
     A [FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) value indicating the operation status.
 
 
 Since:
 
-API Level 3.4.3
+API 级别 3.4.3
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Raised if called from an app type other than watch-app.
 
@@ -982,13 +982,13 @@ Engage the vibration motor.
 
 The vibrate method takes an Array containing at least one [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) object, up to a maximum of 8, and runs them in sequence.
 
-Note:
+注意：
 
 Forerunner devices do not support vibration patterns. Vibration may still be used, but the vibration will always run at the same duty cycle.
 
 Parameters:
 
--   vibeProfiles — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- vibeProfiles — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     An Array of [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) objects
 
@@ -1011,7 +1011,7 @@ if (Attention has :vibrate) {
 Attention.vibrate(vibeData);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1162,11 +1162,11 @@ Attention.vibrate(vibeData);
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
+- [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

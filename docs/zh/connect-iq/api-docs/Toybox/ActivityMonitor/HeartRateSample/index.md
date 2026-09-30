@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/)
+- [Toybox.ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing heart rate data at a given time.
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -164,18 +164,18 @@ API Level 1.2.2
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Heart rate in beats per minute (bpm).
 
--   [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     The time of the heart rate sample.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var heartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -185,11 +185,11 @@ Before using heart rate information, check for [INVALID\_HR\_SAMPLE](/connect-iq
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var when as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -197,8 +197,8 @@ The time of the heart rate sample
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

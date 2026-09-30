@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/)
+- [Toybox.Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Provides the media player with specific rules about what playback options are supported.
 
@@ -57,44 +57,44 @@ function getPlaybackProfile() {
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**attemptSkipAfterThumbsDown**](#attemptSkipAfterThumbsDown-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**attemptSkipAfterThumbsDown**](#attemptSkipAfterThumbsDown-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Defines if the current song is skipped if a thumbs-down operation is given.
 
--   [**playbackControls**](#playbackControls-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
+- [**playbackControls**](#playbackControls-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
 
     Playback controls that should be rendered in the player.
 
--   [**playbackNotificationThreshold**](#playbackNotificationThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**playbackNotificationThreshold**](#playbackNotificationThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of seconds a song must play to trigger a "played" notification.
 
--   [**playerColors**](#playerColors-var) as [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/) or **Null**
+- [**playerColors**](#playerColors-var) as [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/) or **Null**
 
     The colors for the media player.
 
--   [**requirePlaybackNotification**](#requirePlaybackNotification-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**requirePlaybackNotification**](#requirePlaybackNotification-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Defines if the system notifies the app when each song is played.
 
--   [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of seconds to move backward in a track during a skip backward event.
 
--   [**skipForwardTimeDelta**](#skipForwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**skipForwardTimeDelta**](#skipForwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of seconds to move forward in a track during a skip forward event.
 
--   [**skipPreviousThreshold**](#skipPreviousThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**skipPreviousThreshold**](#skipPreviousThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The amount of time a song must be played so that pressing back restarts the track and requires a second back press to skip to the previous track in seconds.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var attemptSkipAfterThumbsDown as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -102,11 +102,11 @@ Defines if the current song is skipped if a thumbs-down operation is given
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var playbackControls as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
 
@@ -116,11 +116,11 @@ This is an Array that holds a combination of [PLAYBACK\_CONTROL\_\*](/connect-iq
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var playbackNotificationThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -128,11 +128,11 @@ The number of seconds a song must play to trigger a "played" notification. A val
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var playerColors as [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/) or **Null**
 
@@ -140,11 +140,11 @@ The colors for the media player. If set to `null` the default colors that are de
 
 Since:
 
-API Level 3.0.3
+API 级别 3.0.3
 
 Returns:
 
--   [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/)
+- [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/)
 
 ### var requirePlaybackNotification as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -152,43 +152,43 @@ Defines if the system notifies the app when each song is played
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var skipBackwardTimeDelta as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
 The number of seconds to move backward in a track during a skip backward event. If set to `null` the default value of 30 seconds will be used.
 
-Note:
+注意：
 
 When overriding the default value, it will be necessary to provide a custom icon for the skip backward button, as the default indicates 30 seconds. This can be done by returning a [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) with custom [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) from [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function).
 
 Since:
 
-API Level 4.2.4
+API 级别 4.2.4
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var skipForwardTimeDelta as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
 The number of seconds to move forward in a track during a skip forward event. If set to `null` the default value of 30 seconds will be used.
 
-Note:
+注意：
 
 When overriding the default value, it will be necessary to provide a custom icon for the skip forward button, as the default indicates 30 seconds. This can be done by returning a [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) with custom [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) from [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function).
 
 Since:
 
-API Level 4.2.4
+API 级别 4.2.4
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var skipPreviousThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -196,8 +196,8 @@ The amount of time a song must be played so that pressing back restarts the trac
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)
+- [Toybox.AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents received bike cadence information.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -173,14 +173,14 @@ API Level 3.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Cadence (rpm).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -188,10 +188,10 @@ Cadence (rpm)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     0 - 254 range, [Toybox::AntPlus::INVALID\_CADENCE](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_CADENCE-const) if invalid

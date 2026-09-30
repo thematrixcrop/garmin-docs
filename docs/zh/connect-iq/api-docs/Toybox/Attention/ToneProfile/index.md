@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)
+- [Toybox.Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Define a tone pattern.
 
@@ -40,9 +40,9 @@ if (Attention has :ToneProfile) {
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -177,25 +177,25 @@ API Level 3.1.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**duration**](#duration-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**duration**](#duration-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The duration of the tone in milliseconds (ms).
 
--   [**frequency**](#frequency-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**frequency**](#frequency-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The frequency of the tone in hertz (hz).
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(aFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), aDuration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))
+- [**initialize**](#initialize-instance_function)(aFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), aDuration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var duration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -203,7 +203,7 @@ The duration of the tone in milliseconds (ms).
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### var frequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -211,9 +211,9 @@ The frequency of the tone in hertz (hz).
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(aFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), aDuration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))**
 
@@ -221,15 +221,15 @@ Constructor
 
 Parameters:
 
--   aFrequency — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- aFrequency — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The frequency of the tone in hertz (hz)
 
--   aDuration — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- aDuration — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The duration of the tone in milliseconds (ms)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

@@ -7,71 +7,71 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)
+- [Toybox.Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A SystemButton allows an app to override a default media player button. The button can be overridden by providing a new [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or a [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) representing a 24-bit RRGGBB color value. If a color value is provided then the system default button will be used but will drawn using the given color.
 
-Note:
+注意：
 
-[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) is only supported in CIQ 4.0.0 and later
+[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
 Since:
 
-API Level 3.0.3
+API 级别 3.0.3
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getImage**](#getImage-instance_function)(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
+- [**getImage**](#getImage-instance_function)(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
     Called by the system to draw the button in the Media Player.
 
--   [**initialize**](#initialize-instance_function)(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
+- [**initialize**](#initialize-instance_function)(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getImage(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
 Called by the system to draw the button in the Media Player
 
-Note:
+注意：
 
-[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) is only supported in CIQ 4.0.0 and later
+[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
 Parameters:
 
--   image — ([Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module)) —
+- image — ([Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module)) —
 
     A BUTTON\_IMAGE\_\* value
 
--   state — ([Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)) —
+- state — ([Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)) —
 
     A BUTTON\_STATE\_\* value indicating the current state of the button
 
--   highlighted — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- highlighted — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     Set to `true` if the button is highlighted, otherwise `false`
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
 
     A bitmap representation of the button or a 24-bit RRGGBB color
 
 
 Since:
 
-API Level 3.0.3
+API 级别 3.0.3
 
 ### **initialize(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)**
 
@@ -79,19 +79,19 @@ Constructor
 
 Parameters:
 
--   type — ([Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)) —
+- type — ([Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)) —
 
     A PLAYBACK\_CONTROL\_\* value for the button.
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
-    -   :disabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :disabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         Set to `true` if the button is disabled, otherwise `false`
 
 
 Since:
 
-API Level 3.0.3
+API 级别 3.0.3

@@ -7,27 +7,27 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.KeyPair](/connect-iq/api-docs/Toybox/Cryptography/KeyPair/)
+- [Toybox.Cryptography.KeyPair](/connect-iq/api-docs/Toybox/Cryptography/KeyPair/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A public and private key pair.
 
-## See Also:
+## 另见：
 
--   [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
+- [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -176,22 +176,22 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getPrivateKey**](#getPrivateKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+- [**getPrivateKey**](#getPrivateKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
     Get the private key.
 
--   [**getPublicKey**](#getPublicKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
+- [**getPublicKey**](#getPublicKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
     Get the public key.
 
--   [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
+- [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
     Constructor A KeyPair can be initialized from a private key by passing a private key [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) from an initialized [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object into the `:privateKey` option of the initialize method for this class.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getPrivateKey()** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
@@ -199,14 +199,14 @@ Get the private key.
 
 Returns:
 
--   [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
+- [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
     The private key as a Key object
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getPublicKey()** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
@@ -214,14 +214,14 @@ Get the public key.
 
 Returns:
 
--   [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
+- [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
     The public key as a Key object
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })**
 
@@ -229,35 +229,35 @@ Constructor
 
 A KeyPair can be initialized from a private key by passing a private key [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) from an initialized [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object into the `:privateKey` option of the initialize method for this class. If no private key is provided, then both a private and public key will be generated using the required `:algorithm` option.
 
-Note:
+注意：
 
 privateKey is expected to be in little-endian byte order.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary of options
+    选项字典
 
-    -   :algorithm — ([Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module)) —
+- :algorithm — ([Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module)) —
 
         The algorithm to use as a [KEY\_PAIR\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) constant (required)
 
-    -   :privateKey — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- :privateKey — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
         The private key to be used to generate the KeyPair (optional)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if the specified `:algorithm` is not supported, or if a required option is not provided
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if the specified `:privateKey` is not the correct size for the selected algorithm

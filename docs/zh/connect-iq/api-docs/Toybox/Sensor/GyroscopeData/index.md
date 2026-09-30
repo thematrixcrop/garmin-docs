@@ -7,29 +7,29 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
+- [Toybox.Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class to store gyroscope sample data.
 
 Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Float](/connect-iq/api-docs/Toybox/Lang/Float/) values. The values for the x, y, and z axes are in deg/sec units. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 
-## See Also:
+## 另见：
 
--   [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
+- [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -160,26 +160,26 @@ API Level 3.3.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**timestamp**](#timestamp-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
+- [**timestamp**](#timestamp-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
     The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of timestamp values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliseconds.
 
--   [**x**](#x-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+- [**x**](#x-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
     The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of x axis values as [Float](/connect-iq/api-docs/Toybox/Lang/Float/) in deg/sec.
 
--   [**y**](#y-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+- [**y**](#y-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
     The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of y axis values as [Float](/connect-iq/api-docs/Toybox/Lang/Float/) in deg/sec.
 
--   [**z**](#z-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+- [**z**](#z-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
     The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of z axis values as [Float](/connect-iq/api-docs/Toybox/Lang/Float/) in deg/sec.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var timestamp as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
@@ -187,11 +187,11 @@ The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of timestamp values as [Num
 
 Since:
 
-API Level 5.1.1
+API 级别 5.1.1
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var x as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
@@ -199,11 +199,11 @@ The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of x axis values as [Float]
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var y as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
@@ -211,11 +211,11 @@ The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of y axis values as [Float]
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var z as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
@@ -223,8 +223,8 @@ The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of z axis values as [Float]
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)

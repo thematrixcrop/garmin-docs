@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
+- [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 FlickEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is a flick interaction with the device's touch screen.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -39,24 +39,24 @@ class InputDelegate extends WatchUi.InputDelegate {
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -142,41 +142,41 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-    Get the coordinates of a click event.
+    获取点击事件的坐标。
 
--   [**getDirection**](#getDirection-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getDirection**](#getDirection-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the direction of the flick.
 
--   [**getDistance**](#getDistance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getDistance**](#getDistance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the distance of the flick.
 
--   [**getVelocity**](#getVelocity-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**getVelocity**](#getVelocity-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Get the velocity of the flick.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCoordinates()** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Get the coordinates of a click event.
+获取点击事件的坐标。
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An array containing the x and y coordinates at the end of the flick event as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getDirection()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -184,14 +184,14 @@ Get the direction of the flick.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The direction of the flick in degrees
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getDistance()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -199,14 +199,14 @@ Get the distance of the flick.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The length of the flick in pixels.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getVelocity()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -214,11 +214,11 @@ Get the velocity of the flick.
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     The velocity of the flick in pixels per second
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0

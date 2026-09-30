@@ -3,79 +3,79 @@ title: "Approach® S50"
 ---
 # Approach® S50
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | approachs50 |
-| Screen Shape | round |
-| Screen Size | 390 x 390 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 56 x 56 |
+| 标识 | approachs50 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 390 x 390 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 56 x 56 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/approachs50/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 390 | 390 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/approachs50/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 194 | 7 | True | True | True | False |
-| Field 2 | 0 | 196 | 390 | 194 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 194 | 7 | True | True | True | False |
+| 字段 2 | 0 | 196 | 390 | 194 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/approachs50/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 132 | 7 | True | True | True | False |
-| Field 2 | 0 | 134 | 390 | 113 | 5 | True | True | False | False |
-| Field 3 | 80 | 249 | 229 | 141 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 132 | 7 | True | True | True | False |
+| 字段 2 | 0 | 134 | 390 | 113 | 5 | True | True | False | False |
+| 字段 3 | 80 | 249 | 229 | 141 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/approachs50/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 390 | 134 | 7 | True | True | True | False |
-| Field 2 | 0 | 136 | 187 | 109 | 1 | True | False | False | False |
-| Field 3 | 203 | 136 | 187 | 109 | 4 | False | True | False | False |
-| Field 4 | 78 | 247 | 234 | 143 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 390 | 134 | 7 | True | True | True | False |
+| 字段 2 | 0 | 136 | 187 | 109 | 1 | True | False | False | False |
+| 字段 3 | 203 | 136 | 187 | 109 | 4 | False | True | False | False |
+| 字段 4 | 78 | 247 | 234 | 143 | 13 | True | True | False | True |
 
 **Part Number 006-B4656-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 29 | 006B465600\_TINY |
 | FONT\_TINY | Roboto Condensed | 39 | 006B465600\_SMALL |
@@ -90,13 +90,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 39 | 006B465600\_SMALL |
 | FONT\_AUX1 | Roboto Condensed | 32 | 006B465600\_XSMALL |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 23 | 006B465600\_NOTO\_SANS\_SC\_BOLD\_94\_23 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 31 | 006B465600\_NOTO\_SANS\_SC\_BOLD\_94\_31 |
@@ -111,13 +111,13 @@ zhs, zht
 | FONT\_GLANCE\_NUMBER | Noto Sans SC Bold-94 | 31 | 006B465600\_NOTO\_SANS\_SC\_BOLD\_94\_31 |
 | FONT\_AUX1 | Noto Sans SC Bold-94 | 25 | 006B465600\_NOTO\_SANS\_SC\_BOLD\_94\_25 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 23 | 006B465600\_KOSUGI\_REGULAR-94\_23 |
 | FONT\_TINY | MotoyaLCedar-94 | 31 | 006B465600\_KOSUGI\_REGULAR-94\_31 |
@@ -132,13 +132,13 @@ jpn
 | FONT\_GLANCE\_NUMBER | MotoyaLCedar-94 | 31 | 006B465600\_KOSUGI\_REGULAR-94\_31 |
 | FONT\_AUX1 | MotoyaLCedar-94 | 25 | 006B465600\_KOSUGI\_REGULAR-94\_25 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicExtraBold-94 | 23 | 006B465600\_NANUM\_GOTHIC\_BOLD\_23 |
 | FONT\_TINY | NanumGothicExtraBold-94 | 31 | 006B465600\_NANUM\_GOTHIC\_BOLD\_31 |
@@ -153,13 +153,13 @@ kor
 | FONT\_GLANCE\_NUMBER | NanumGothicExtraBold-94 | 31 | 006B465600\_NANUM\_GOTHIC\_BOLD\_31 |
 | FONT\_AUX1 | NanumGothicExtraBold-94 | 25 | 006B465600\_NANUM\_GOTHIC\_BOLD\_25 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

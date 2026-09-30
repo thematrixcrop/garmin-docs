@@ -3,35 +3,35 @@ title: "Module: Toybox.PersistedContent"
 ---
 # Module: Toybox.PersistedContent
 
-## Overview
+## 概述
 
 The PersistedContent module allows access to stored routes, waypoints, and other stored user data.
 
-This 模块提供 an Iterator class that gives access to content stored on the device. Included content types are as follows:
+This module provides an Iterator class that gives access to content stored on the device. Included content types are as follows:
 
--   [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/)
+- [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/)
 
--   [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/)
+- [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/)
 
--   [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)
+- [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)
 
--   [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
+- [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
 
--   [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
+- [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
 
 Each of these objects can utilize [System.Intents](/connect-iq/api-docs/Toybox/System/Intent/) to to launch the appropriate application type for the content type (e.g. The workout might launch the workout player). This is typically used in conjunction with the [Communications](/connect-iq/api-docs/Toybox/Communications/) module to retrieve content of type .FIT and .GPX and later access it using the get methods provided within this module.
 
-## See Also:
+## 另见：
 
--   [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
--   [Toybox.Communications](/connect-iq/api-docs/Toybox/Communications/)
+- [Toybox.Communications](/connect-iq/api-docs/Toybox/Communications/)
 
--   [Core Topics - Downloading Content](/connect-iq/core-topics/downloading-content/)
+- [Core Topics - Downloading Content](/connect-iq/core-topics/downloading-content/)
 
 
-Note:
+注意：
 
 As a general rule, Fitness and Edge devices will support .FIT format. Outdoor devices will support .GPX format.
 
@@ -52,22 +52,22 @@ System.ExitTo(content.toIntent());          // Use the content for a System.Inte
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -224,72 +224,72 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   PersistedContent
+- PersistedContent
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/), [Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/), [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/), [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/), [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
+类：[Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/), [Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/), [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/), [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/), [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Content**](#Content-named_type) as interface {
+- [**Content**](#Content-named_type) as interface {
     function getName() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/);
     function getId() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
     function toIntent() as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/);
     function remove() as **Void**;
     }
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getAppCourses**](#getAppCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getAppCourses**](#getAppCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the subset of courses installed on the system that are owned by the application.
 
--   [**getAppRoutes**](#getAppRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getAppRoutes**](#getAppRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the subset of routes installed on the system that are owned by the application.
 
--   [**getAppTracks**](#getAppTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getAppTracks**](#getAppTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the subset of tracks installed on the system that are owned by the application.
 
--   [**getAppWaypoints**](#getAppWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getAppWaypoints**](#getAppWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the subset of waypoints installed on the system that are owned by the application.
 
--   [**getAppWorkouts**](#getAppWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getAppWorkouts**](#getAppWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the subset of workouts installed on the system that are owned by the application.
 
--   [**getCourses**](#getCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getCourses**](#getCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the courses installed on the system.
 
--   [**getRoutes**](#getRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getRoutes**](#getRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the routes installed on the system.
 
--   [**getTracks**](#getTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getTracks**](#getTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the tracks installed on the system.
 
--   [**getWaypoints**](#getWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getWaypoints**](#getWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the waypoints installed on the system.
 
--   [**getWorkouts**](#getWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
+- [**getWorkouts**](#getWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
     Get the workouts installed on the system.
 
--   [**saveWaypoint**](#saveWaypoint-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
+- [**saveWaypoint**](#saveWaypoint-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
 
     Save a [Location](/connect-iq/api-docs/Toybox/Position/Location/) as a [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) to the device's location list.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Content** as interface {
 function getName() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/);
@@ -300,9 +300,9 @@ function remove() as **Void**;
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getAppCourses()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -318,7 +318,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getAppCourses();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -448,14 +448,14 @@ var iterator = PersistedContent.getAppCourses();
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    An Iterator over the persisted content objects requested
+    所请求持久化内容对象的迭代器
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getAppRoutes()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -471,7 +471,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getAppRoutes();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -530,14 +530,14 @@ var iterator = PersistedContent.getAppRoutes();
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    An Iterator over the persisted content objects requested
+    所请求持久化内容对象的迭代器
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getAppTracks()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -553,7 +553,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getAppTracks();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   GPSMAP® 66s / 66i / 66sr / 66st
 -   GPSMAP® 67 / 67i
@@ -566,14 +566,14 @@ var iterator = PersistedContent.getAppTracks();
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    An Iterator over the persisted content objects requested
+    所请求持久化内容对象的迭代器
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getAppWaypoints()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -589,7 +589,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getAppWaypoints();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -741,14 +741,14 @@ var iterator = PersistedContent.getAppWaypoints();
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    An Iterator over the persisted content objects requested
+    所请求持久化内容对象的迭代器
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getAppWorkouts()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -764,7 +764,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getAppWorkouts();
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -909,14 +909,14 @@ var iterator = PersistedContent.getAppWorkouts();
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    An Iterator over the persisted content objects requested
+    所请求持久化内容对象的迭代器
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getCourses()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -931,7 +931,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getCourses(); // Get the Iterator
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -1064,14 +1064,14 @@ var iterator = PersistedContent.getCourses(); // Get the Iterator
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    The Iterator of [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) objects
+    [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) 对象的迭代器
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getRoutes()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -1086,7 +1086,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getRoutes(); // Get the Iterator
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -1145,14 +1145,14 @@ var iterator = PersistedContent.getRoutes(); // Get the Iterator
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    The Iterator of [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/) objects
+    [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/) 对象的迭代器
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getTracks()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -1167,7 +1167,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getTracks(); // Get the Iterator
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   GPSMAP® 66s / 66i / 66sr / 66st
 -   GPSMAP® 67 / 67i
@@ -1180,14 +1180,14 @@ var iterator = PersistedContent.getTracks(); // Get the Iterator
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    The Iterator of [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/) objects
+    [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/) 对象的迭代器
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getWaypoints()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -1202,7 +1202,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getWaypoints(); // Get the Iterator
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -1357,14 +1357,14 @@ var iterator = PersistedContent.getWaypoints(); // Get the Iterator
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     The Iterator of [Waypoints](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) from the routes list
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getWorkouts()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
@@ -1379,7 +1379,7 @@ using Toybox.PersistedContent;
 var iterator = PersistedContent.getWorkouts(); // Get the Iterator
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1527,14 +1527,14 @@ var iterator = PersistedContent.getWorkouts(); // Get the Iterator
 
 Returns:
 
--   [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
+- [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    The Iterator of [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/) objects
+    [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/) 对象的迭代器
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **saveWaypoint(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**)** as **Void**
 
@@ -1542,15 +1542,15 @@ Save a [Location](/connect-iq/api-docs/Toybox/Position/Location/) as a [Waypoint
 
 Parameters:
 
--   location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     The Location object to persist
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     The Dictionary of options, or `null` to accept defaults
 
-    -   :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         The name to assign to the waypoint. If not specified the waypoint will be named automatically.
 
@@ -1571,7 +1571,7 @@ var location = new Position.Location(
 PersistedContent.saveWaypoint(location, {:name => "Cool Waypoint Name"});
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -1724,11 +1724,11 @@ PersistedContent.saveWaypoint(location, {:name => "Cool Waypoint Name"});
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [Toybox.Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

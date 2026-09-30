@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 KeyEvent is an object sent to an [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when a physical button on the device is pressed.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -40,35 +40,35 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getKey**](#getKey-instance_function)() as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)
+- [**getKey**](#getKey-instance_function)() as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)
 
     Get the key value of this event.
 
--   [**getType**](#getType-instance_function)() as [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module)
+- [**getType**](#getType-instance_function)() as [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module)
 
-    Get the type of click event.
+    获取点击事件的类型。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getKey()** as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)
 
@@ -76,26 +76,26 @@ Get the key value of this event.
 
 Returns:
 
--   [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module) —
+- [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module) —
 
-    A [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) value
+    一个 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 值
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getType()** as [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module)
 
-Get the type of click event.
+获取点击事件的类型。
 
 Returns:
 
--   [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module) —
+- [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module) —
 
-    A [WatchUi.PRESS\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#PRESS_TYPE_DOWN-const) value
+    一个 [WatchUi.PRESS\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#PRESS_TYPE_DOWN-const) 值
 
 
 Since:
 
-API Level 1.1.2
+API 级别 1.1.2

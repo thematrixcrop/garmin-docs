@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Toybox.Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Boolean objects represent a true or false value.
 
@@ -28,16 +28,16 @@ var myBoolean = true;
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Compare the numeric value of self to some other numeric value.
+    将 self 的数值与其他数值进行比较。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -49,24 +49,24 @@ Compare the numeric value of self to some other numeric value. false is
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The right hand side of a comparison.
+    比较的右侧操作数。
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A negative value if self is less than other, zero if the objects are equivalent, and a positive value if self is greater than other.
 
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if other is not of type [Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), or [Char](/connect-iq/api-docs/Toybox/Lang/Char/).
+    若 other 不是 [Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)、[Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) 或 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 类型则抛出。

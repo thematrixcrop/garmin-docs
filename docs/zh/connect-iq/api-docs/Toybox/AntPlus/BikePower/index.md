@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.BikePower](/connect-iq/api-docs/Toybox/AntPlus/BikePower/)
+- [Toybox.AntPlus.BikePower](/connect-iq/api-docs/Toybox/AntPlus/BikePower/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Bike Power Device instance.
 
-## See Also:
+## 另见：
 
--   [BikePowerListener example for full MyBikePowerListener implementation](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
+- [BikePowerListener example for full MyBikePowerListener implementation](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
--   [BikePowerListener example for examples of onCalculated\* methods available in {Toybox::AntPlus::BikePowerListener BikePowerListener}](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
+- [BikePowerListener example for examples of onCalculated\* methods available in {Toybox::AntPlus::BikePowerListener BikePowerListener}](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
 
 Example:
@@ -48,9 +48,9 @@ var calculatedPower = bikePower.getCalculatedPower();
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -164,38 +164,38 @@ API Level 2.2.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCalculatedCadence**](#getCalculatedCadence-instance_function)() as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
+- [**getCalculatedCadence**](#getCalculatedCadence-instance_function)() as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
 
     Get the current calculated crank cadence.
 
--   [**getCalculatedPower**](#getCalculatedPower-instance_function)() as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
+- [**getCalculatedPower**](#getCalculatedPower-instance_function)() as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
     Retrieve the current calculated power.
 
--   [**getCalculatedWheelDistance**](#getCalculatedWheelDistance-instance_function)() as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
+- [**getCalculatedWheelDistance**](#getCalculatedWheelDistance-instance_function)() as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
 
     Retrieve the current calculated wheel distance.
 
--   [**getCalculatedWheelSpeed**](#getCalculatedWheelSpeed-instance_function)() as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
+- [**getCalculatedWheelSpeed**](#getCalculatedWheelSpeed-instance_function)() as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
 
     Retrieve the current calculated wheel speed.
 
--   [**getPedalPowerBalance**](#getPedalPowerBalance-instance_function)() as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
+- [**getPedalPowerBalance**](#getPedalPowerBalance-instance_function)() as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
     Retrieve the current pedal power balance.
 
--   [**getTorqueEffectivenessPedalSmoothness**](#getTorqueEffectivenessPedalSmoothness-instance_function)() as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
+- [**getTorqueEffectivenessPedalSmoothness**](#getTorqueEffectivenessPedalSmoothness-instance_function)() as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
     Retrieve the current torque effectiveness and pedal smoothness.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCalculatedCadence()** as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
 
@@ -203,14 +203,14 @@ Get the current calculated crank cadence.
 
 Returns:
 
--   [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/) —
+- [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/) —
 
     The current calculated crank cadence
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getCalculatedPower()** as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
@@ -218,14 +218,14 @@ Retrieve the current calculated power.
 
 Returns:
 
--   [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/) —
+- [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/) —
 
     The current calculated power
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getCalculatedWheelDistance()** as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
 
@@ -233,14 +233,14 @@ Retrieve the current calculated wheel distance.
 
 Returns:
 
--   [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/) —
+- [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/) —
 
     The current calculated wheel distance
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getCalculatedWheelSpeed()** as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
 
@@ -248,14 +248,14 @@ Retrieve the current calculated wheel speed.
 
 Returns:
 
--   [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/) —
+- [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/) —
 
     The current calculated wheel speed
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getPedalPowerBalance()** as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
@@ -263,14 +263,14 @@ Retrieve the current pedal power balance.
 
 Returns:
 
--   [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/) —
+- [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/) —
 
     The pedal power balance
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getTorqueEffectivenessPedalSmoothness()** as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
@@ -278,14 +278,14 @@ Retrieve the current torque effectiveness and pedal smoothness.
 
 Returns:
 
--   [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/) —
+- [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/) —
 
     The current torque effectiveness & pedal smoothness
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **initialize(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)**
 
@@ -293,11 +293,11 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)) —
+- listener — ([AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)) —
 
     The bike power instance optionally takes an extension of the [BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the getCalculated\* methods.
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

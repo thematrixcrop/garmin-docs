@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
+- [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 SwipeEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is swipe interaction with the device's touch screen.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -39,31 +39,31 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getDirection**](#getDirection-instance_function)() as [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module)
+- [**getDirection**](#getDirection-instance_function)() as [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module)
 
     Get the direction of the swipe.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getDirection()** as [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module)
 
@@ -71,11 +71,11 @@ Get the direction of the swipe.
 
 Returns:
 
--   [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module) —
+- [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module) —
 
-    A [WatchUi.SWIPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) value
+    一个 [WatchUi.SWIPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) 值
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

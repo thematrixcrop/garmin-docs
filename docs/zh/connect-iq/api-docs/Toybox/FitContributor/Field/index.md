@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+- [Toybox.FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Field records custom FIT data from an Application or Data Field to a FIT file on the device's file system.
 
@@ -22,27 +22,27 @@ Once a Field is created with the [createField()](/connect-iq/api-docs/Toybox/Act
 
 If [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function) is called before the previous data is written out, the previous value will be lost and replaced by the current data. For this reason, we do not recommend using this feature for time-sensitive data requiring sub-second granularity.
 
-## See Also:
+## 另见：
 
--   [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
+- [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
 
--   [Smart Recording vs. Every Second Recording](https://support.garmin.com/?faq=s4w6kZmbmK0P6l20SgpW28)
+- [Smart Recording vs. Every Second Recording](https://support.garmin.com/?faq=s4w6kZmbmK0P6l20SgpW28)
 
--   [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
+- [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**setData**](#setData-instance_function)(input as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
+- [**setData**](#setData-instance_function)(input as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
     Set the value to write to this Field.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **setData(input as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
@@ -50,17 +50,17 @@ Set the value to write to this Field.
 
 Parameters:
 
--   input — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- input — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The data to be written to the Field
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `input` type does not match the type specified in [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) at definition

@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Application.WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)
+- [Toybox.Application.WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Unique identifier for watchface config settings.
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -53,14 +53,14 @@ API Level 5.1.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Equals implementation.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -68,18 +68,18 @@ Equals implementation
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to test against
+    用于比较的对象
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the `other` parameter is a WatchFaceConfig.Id that is equal, otherwise `false`
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0

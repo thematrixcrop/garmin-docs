@@ -3,93 +3,93 @@ title: "Forerunner® 55"
 ---
 # Forerunner® 55
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fr55 |
-| Screen Shape | round |
-| Screen Size | 208 x 208 |
-| Display Colors | 8 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 35 x 35 |
+| 标识 | fr55 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 208 x 208 |
+| 显示颜色 | 8 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 35 x 35 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
-| Glance | 32768 | Build as Widget |
-| Watch App | 131072 |  |
-| Watch Face | 98304 |  |
-| Widget | 65536 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 速览 | 32768 | Build as Widget |
+| 手表应用 | 131072 |  |
+| 表盘 | 98304 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fr55/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 208 | 208 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 208 | 208 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fr55/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 208 | 103 | 7 | True | True | True | False |
-| Field 2 | 0 | 105 | 208 | 103 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 208 | 103 | 7 | True | True | True | False |
+| 字段 2 | 0 | 105 | 208 | 103 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fr55/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 208 | 69 | 7 | True | True | True | False |
-| Field 2 | 0 | 67 | 208 | 70 | 5 | True | True | False | False |
-| Field 3 | 0 | 139 | 208 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 208 | 69 | 7 | True | True | True | False |
+| 字段 2 | 0 | 67 | 208 | 70 | 5 | True | True | False | False |
+| 字段 3 | 0 | 139 | 208 | 69 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fr55/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 208 | 67 | 7 | True | True | True | False |
-| Field 2 | 0 | 69 | 208 | 71 | 5 | True | True | False | False |
-| Field 3 | 0 | 142 | 208 | 66 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 208 | 67 | 7 | True | True | True | False |
+| 字段 2 | 0 | 69 | 208 | 71 | 5 | True | True | False | False |
+| 字段 3 | 0 | 142 | 208 | 66 | 13 | True | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fr55/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 208 | 74 | 7 | True | True | True | False |
-| Field 2 | 0 | 76 | 103 | 61 | 1 | True | False | False | False |
-| Field 3 | 105 | 76 | 103 | 61 | 4 | False | True | False | False |
-| Field 4 | 0 | 139 | 208 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 208 | 74 | 7 | True | True | True | False |
+| 字段 2 | 0 | 76 | 103 | 61 | 1 | True | False | False | False |
+| 字段 3 | 105 | 76 | 103 | 61 | 4 | False | True | False | False |
+| 字段 4 | 0 | 139 | 208 | 69 | 13 | True | True | False | True |
 
 **Part Number 006-B3869-00**
 
-*Languages*
+*语言*
 
 ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, ron, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 25 | 006B386900\_CDPG\_ROBOTO\_15B |
@@ -105,13 +105,13 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 
 **Part Number 006-B4033-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 25 | 006B386900\_CDPG\_ROBOTO\_15B |
@@ -125,13 +125,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19B |
 | FONT\_TINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19B |
@@ -145,13 +145,13 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19B |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 18 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_18 |
@@ -165,13 +165,13 @@ zhs
 | FONT\_GLANCE | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 | FONT\_GLANCE\_NUMBER | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 18 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_18 |
@@ -185,13 +185,13 @@ zht
 | FONT\_GLANCE | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 | FONT\_GLANCE\_NUMBER | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 16 | KOSUGI\_REGULAR-94\_JPN\_16B |
 | FONT\_TINY | MotoyaLCedar-94 | 18 | KOSUGI\_REGULAR-94\_JPN\_18B |
@@ -205,13 +205,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar-94 | 16 | KOSUGI\_REGULAR-94\_JPN\_16B |
 | FONT\_GLANCE\_NUMBER | MotoyaLCedar-94 | 16 | KOSUGI\_REGULAR-94\_JPN\_16B |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicExtraBold-94 | 16 | NANUM\_GOTHIC\_BOLD\_KOR\_16B |
 | FONT\_TINY | NanumGothicExtraBold-94 | 18 | NANUM\_GOTHIC\_BOLD\_KOR\_18B |
@@ -225,13 +225,13 @@ kor
 | FONT\_GLANCE | NanumGothicExtraBold-94 | 16 | NANUM\_GOTHIC\_BOLD\_KOR\_16B |
 | FONT\_GLANCE\_NUMBER | NanumGothicExtraBold-94 | 16 | NANUM\_GOTHIC\_BOLD\_KOR\_16B |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 25 | 006B386900\_CDPG\_ROBOTO\_15B |
@@ -247,13 +247,13 @@ tha
 
 **Part Number 006-B4838-00**
 
-*Languages*
+*语言*
 
 ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, ron, rus, slo, slv, spa, swe, tur
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 25 | 006B386900\_CDPG\_ROBOTO\_15B |

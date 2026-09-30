@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/)
+- [Toybox.WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
-The class that represents a glance view delegate, which 可用于 relay events happened during widget glance (preview) mode.
+The class that represents a glance view delegate, which can be used to relay events happened during widget glance (preview) mode.
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -149,18 +149,18 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onGlanceEvent**](#onGlanceEvent-instance_function)(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onGlanceEvent**](#onGlanceEvent-instance_function)(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Invoked when certain glance event occurs, none for now.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -168,7 +168,7 @@ Constructor
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **onGlanceEvent(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -176,4 +176,4 @@ Invoked when certain glance event occurs, none for now
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

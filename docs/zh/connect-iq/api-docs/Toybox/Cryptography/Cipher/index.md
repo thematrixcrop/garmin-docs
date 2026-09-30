@@ -7,27 +7,27 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/)
+- [Toybox.Cryptography.Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Cipher object.
 
-## See Also:
+## 另见：
 
--   [https://en.wikipedia.org/wiki/Cipher](https://en.wikipedia.org/wiki/Cipher)
+- [https://en.wikipedia.org/wiki/Cipher](https://en.wikipedia.org/wiki/Cipher)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -184,22 +184,22 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**decrypt**](#decrypt-instance_function)(ciphertext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**decrypt**](#decrypt-instance_function)(ciphertext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
     Decrypt data with the key, depending on how the cipher was initialized.
 
--   [**encrypt**](#encrypt-instance_function)(plaintext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**encrypt**](#encrypt-instance_function)(plaintext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
     Encrypt data with the key, depending on how the cipher was initialized.
 
--   [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :mode as [Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), :iv as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
+- [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :mode as [Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), :iv as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **decrypt(ciphertext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -209,29 +209,29 @@ Decryption can be broken up into two or more calls to decrypt(). For MODE\_CBC, 
 
 Parameters:
 
--   ciphertext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- ciphertext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     The piece of data to decrypt
 
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     The decrypted data
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided
+    若提供 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 以外的类型则抛出
 
--   ([Cryptography.InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/)) —
+- ([Cryptography.InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/)) —
 
     Thrown if `ciphertext` is not a valid size for the selected encryption type
 
@@ -244,29 +244,29 @@ Encryption can be broken up into two or more calls to encrypt. For MODE\_CBC, th
 
 Parameters:
 
--   plaintext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- plaintext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     The piece of data to encrypt
 
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     The encrypted data
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided
+    若提供 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 以外的类型则抛出
 
--   ([Cryptography.InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/)) —
+- ([Cryptography.InvalidBlockSizeException](/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException/)) —
 
     Thrown if `plaintext` is not a valid size for the selected encryption type
 
@@ -277,37 +277,37 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
-    -   :algorithm — ([Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module)) —
+- :algorithm — ([Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module)) —
 
         The encryption type this cipher object will use from the [CIPHER\_\*](/connect-iq/api-docs/Toybox/Cryptography/) enumeration (required)
 
-    -   :mode — ([Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module)) —
+- :mode — ([Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module)) —
 
         The encryption mode this cipher object will use from the [MODE\_\*](/connect-iq/api-docs/Toybox/Cryptography/) enumeration (required)
 
-    -   :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
         The secret key to use in the cipher. The key must be of the appropriate length for the encryption type selected (required)
 
-    -   :iv — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- :iv — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
         The initialization vector to use for encryption or decryption. This will be generated by the system using secure random bytes for algorithms that require it if it is not provided (optional)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided for the `:key` and `:iv` options
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if a required option is not provided, the `:algorithm` and `:mode` options are not initialized with a valid enumeration, an invalid key size is provided for the selected algorithm, or an invalid initialization vector size is provided for the selected algorithm

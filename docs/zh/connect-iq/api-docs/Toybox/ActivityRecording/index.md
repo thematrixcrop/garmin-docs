@@ -3,7 +3,7 @@ title: "Module: Toybox.ActivityRecording"
 ---
 # Module: Toybox.ActivityRecording
 
-## Overview
+## 概述
 
 The Activity Recording module will allow Apps to access the FIT file recording capabilities of the device.
 
@@ -13,9 +13,9 @@ The SPORT\_\* defines the type of activity, but is not guaranteed to change devi
 
 SUB\_SPORT\_\* allows for clarification of sport when recording.
 
-## See Also:
+## 另见：
 
--   [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
+- [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
 
 
 Example:
@@ -48,18 +48,18 @@ function onSelect() {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Background
+- 后台
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -235,893 +235,893 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   Fit
+- Fit
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
+类：[Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
-## Constant Summary
+## 常量摘要
 
 ### Sport1
 
-**This has been deprecated**
+**此项已弃用**
 
 This enum may be removed after System 8.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Activity::SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
+- [Activity::SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SPORT\_GENERIC | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for sports not on the list
 
- |
+|
 | SPORT\_RUNNING | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for running
 
- |
+|
 | SPORT\_CYCLING | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for multi-sport transitions
 
- |
+|
 | SPORT\_TRANSITION | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | SPORT\_FITNESS\_EQUIPMENT | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for ANT enabled exercise equipment
 
- |
+|
 | SPORT\_SWIMMING | 5 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for swimming
 
- |
+|
 | SPORT\_BASKETBALL | 6 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for basketball
 
- |
+|
 | SPORT\_SOCCER | 7 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for soccer
 
- |
+|
 | SPORT\_TENNIS | 8 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for Tennis
 
- |
+|
 | SPORT\_AMERICAN\_FOOTBALL | 9 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for American football
 
- |
+|
 | SPORT\_TRAINING | 10 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for activities such as strength training, cardio, etc
 
- |
+|
 | SPORT\_WALKING | 11 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for walking
 
- |
+|
 | SPORT\_CROSS\_COUNTRY\_SKIING | 12 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for cross-country skiing
 
- |
+|
 | SPORT\_ALPINE\_SKIING | 13 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for alpine skiing
 
- |
+|
 | SPORT\_SNOWBOARDING | 14 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for snowboarding
 
- |
+|
 | SPORT\_ROWING | 15 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for rowing
 
- |
+|
 | SPORT\_MOUNTAINEERING | 16 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for mountaineering
 
- |
+|
 | SPORT\_HIKING | 17 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for hiking
 
- |
+|
 | SPORT\_MULTISPORT | 18 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for multi-sport events
 
- |
+|
 | SPORT\_PADDLING | 19 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sport used for paddling
 
- |
+|
 
 ### Sport2
 
-**This has been deprecated**
+**此项已弃用**
 
 This enum may be removed after System 8.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Activity::SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
+- [Activity::SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SPORT\_FLYING | 20 |
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for flying
 
- |
+|
 | SPORT\_E\_BIKING | 21 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for riding an e-bike
 
- |
+|
 | SPORT\_MOTORCYCLING | 22 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for motorcycling
 
- |
+|
 | SPORT\_BOATING | 23 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for boating
 
- |
+|
 | SPORT\_DRIVING | 24 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for driving
 
- |
+|
 | SPORT\_GOLF | 25 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for golfing
 
- |
+|
 | SPORT\_HANG\_GLIDING | 26 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for hang gliding
 
- |
+|
 | SPORT\_HORSEBACK\_RIDING | 27 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for horseback riding
 
- |
+|
 | SPORT\_HUNTING | 28 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for hunting
 
- |
+|
 | SPORT\_FISHING | 29 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for fishing
 
- |
+|
 | SPORT\_INLINE\_SKATING | 30 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for inline skating
 
- |
+|
 | SPORT\_ROCK\_CLIMBING | 31 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for rock climbing
 
- |
+|
 | SPORT\_SAILING | 32 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for sailing
 
- |
+|
 | SPORT\_ICE\_SKATING | 33 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for ice skating
 
- |
+|
 | SPORT\_SKY\_DIVING | 34 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for sky diving
 
- |
+|
 | SPORT\_SNOWSHOEING | 35 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for showshoeing
 
- |
+|
 | SPORT\_SNOWMOBILING | 36 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for snowmobiling
 
- |
+|
 | SPORT\_STAND\_UP\_PADDLEBOARDING | 37 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for paddle boarding
 
- |
+|
 | SPORT\_SURFING | 38 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for surfing
 
- |
+|
 | SPORT\_WAKEBOARDING | 39 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for wakeboarding
 
- |
+|
 | SPORT\_WATER\_SKIING | 40 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for water skiing
 
- |
+|
 | SPORT\_KAYAKING | 41 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for kayaking
 
- |
+|
 | SPORT\_RAFTING | 42 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for rafting
 
- |
+|
 | SPORT\_WINDSURFING | 43 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for windsurfing
 
- |
+|
 | SPORT\_KITESURFING | 44 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for kite surfing
 
- |
+|
 | SPORT\_TACTICAL | 45 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for tactical
 
- |
+|
 | SPORT\_JUMPMASTER | 46 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for jumpmaster
 
- |
+|
 | SPORT\_BOXING | 47 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for boxing
 
- |
+|
 | SPORT\_FLOOR\_CLIMBING | 48 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for climbing
 
- |
+|
 | SPORT\_BASEBALL | 49 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for baseball
 
- |
+|
 | SPORT\_SOFTBALL\_FAST\_PITCH | 50 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for fast pitch softball
 
- |
+|
 | SPORT\_SOFTBALL\_SLOW\_PITCH | 51 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for slow pitch softball
 
- |
+|
 | SPORT\_SHOOTING | 56 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for shooting
 
- |
+|
 | SPORT\_AUTO\_RACING | 57 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Sport used for auto racing
 
- |
+|
 
 ### SubSport
 
-**This has been deprecated**
+**此项已弃用**
 
 This enum may be removed after System 8.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Activity::SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)
+- [Activity::SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)
 
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SUB\_SPORT\_GENERIC | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport used if no other sub-sport is applicable
 
- |
+|
 | SUB\_SPORT\_TREADMILL | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Running and Fitness Equipment
 
- |
+|
 | SUB\_SPORT\_STREET | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Running
+跑步的子运动类型
 
- |
+|
 | SUB\_SPORT\_TRAIL | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Running
+跑步的子运动类型
 
- |
+|
 | SUB\_SPORT\_TRACK | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Running
+跑步的子运动类型
 
- |
+|
 | SUB\_SPORT\_SPIN | 5 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_INDOOR\_CYCLING | 6 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Cycling and Fitness Equipment
 
- |
+|
 | SUB\_SPORT\_ROAD | 7 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_MOUNTAIN | 8 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_DOWNHILL | 9 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_RECUMBENT | 10 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_CYCLOCROSS | 11 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_HAND\_CYCLING | 12 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_TRACK\_CYCLING | 13 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Cycling
+骑行的子运动类型
 
- |
+|
 | SUB\_SPORT\_INDOOR\_ROWING | 14 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Rowing and Fitness Equipment
 
- |
+|
 | SUB\_SPORT\_ELLIPTICAL | 15 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Fitness Equipment
+健身器材的子运动类型
 
- |
+|
 | SUB\_SPORT\_STAIR\_CLIMBING | 16 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Fitness Equipment
+健身器材的子运动类型
 
- |
+|
 | SUB\_SPORT\_LAP\_SWIMMING | 17 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Swimming
 
- |
+|
 | SUB\_SPORT\_OPEN\_WATER | 18 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Swimming
 
- |
+|
 | SUB\_SPORT\_FLEXIBILITY\_TRAINING | 19 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Training
+训练的子运动类型
 
- |
+|
 | SUB\_SPORT\_STRENGTH\_TRAINING | 20 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Training
+训练的子运动类型
 
- |
+|
 | SUB\_SPORT\_WARM\_UP | 21 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Activity Warm-up
 
- |
+|
 | SUB\_SPORT\_MATCH | 22 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Sports with Matches (e.g. Tennis)
 
- |
+|
 | SUB\_SPORT\_EXERCISE | 23 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for Exercise
 
- |
+|
 | SUB\_SPORT\_CHALLENGE | 24 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Sub-sport for a Sport Challenge
 
- |
+|
 | SUB\_SPORT\_INDOOR\_SKIING | 25 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Fitness Equipment
+健身器材的子运动类型
 
- |
+|
 | SUB\_SPORT\_CARDIO\_TRAINING | 26 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
-Sub-sport for Training
+训练的子运动类型
 
- |
+|
 
 ### TimerEventType
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | TIMER\_EVENT\_START | 0 |
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer start event
 
- |
+|
 | TIMER\_EVENT\_STOP | 1 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer stop event
 
- |
+|
 | TIMER\_EVENT\_PAUSE | 2 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer pause event
 
- |
+|
 | TIMER\_EVENT\_RESUME | 3 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer resume event
 
- |
+|
 | TIMER\_EVENT\_LAP | 4 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer lap event
 
- |
+|
 | TIMER\_EVENT\_RESET | 5 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Timer reset
 
- |
+|
 | TIMER\_EVENT\_WORKOUT\_STEP\_COMPLETE | 6 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Workout step complete
 
- |
+|
 | TIMER\_EVENT\_NEXT\_MULTISPORT\_LEG | 7 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 Multisport leg started
 
- |
+|
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Sport**](#Sport-named_type) as [ActivityRecording.Sport1](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport1-module) or [ActivityRecording.Sport2](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport2-module)
+- [**Sport**](#Sport-named_type) as [ActivityRecording.Sport1](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport1-module) or [ActivityRecording.Sport2](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport2-module)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**createSession**](#createSession-instance_function)(options as { :sport as [ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type) or [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module) or [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module), :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :poolLength as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), :sensorLogger as [SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), :autoLap as { :type as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :entry as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \], :exit as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] } }) as [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
+- [**createSession**](#createSession-instance_function)(options as { :sport as [ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type) or [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module) or [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module), :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :poolLength as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), :sensorLogger as [SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), :autoLap as { :type as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :entry as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \], :exit as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] } }) as [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
     Create a [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) object with options determined by the caller.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Sport** as [ActivityRecording.Sport1](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport1-module) or [ActivityRecording.Sport2](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport2-module)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **createSession(options as { :sport as [ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type) or [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module) or [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module), :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :poolLength as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), :sensorLogger as [SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), :autoLap as { :type as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :entry as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \], :exit as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] } })** as [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
@@ -1131,31 +1131,31 @@ Only one Session object is allowed to exist at a time. If there is an existing o
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary containing session creation options.
 
-    -   :sport — ([ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type), [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
+- :sport — ([ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type), [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
         The primary sport being recorded (SPORT\_GENERIC by default).
 
-    -   :subSport — ([ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
+- :subSport — ([ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module)) —
 
         The sport subcategory being recorded (SUB\_SPORT\_GENERIC by default).
 
-    -   :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         Required. This is the name that will be associated with the sport being recorded. The suggested maximum length of the name is 15 characters (some devices support longer names).
 
-    -   :poolLength — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+- :poolLength — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
         This is the length of the pool in meters for this activity. If this session object is configured with `:sport=>SPORT_SWIMMING` and `:subSport=>SUB_SPORT_LAP_SWIMMING`, this option is required to configure the system in this mode. If it is not provided, activity data may have undefined behavior. For all other sport modes, this option is ignored.
 
-    -   :autoLap — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- :autoLap — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         A dictionary containing auto-lap detection options. If present, this dictionary must have a `:type` key; If the value of `:type` is `:lines`, the `:entry` and `:exit` keys are required. The values associated with `:entry` and `:exit` describe the endpoints of the auto lap entry and exit line segments, each being defined as an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of two [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects. (added in 3.0.10)
 
-    -   :sensorLogger — ([SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)) —
+- :sensorLogger — ([SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)) —
 
         The SensorLogger to use to record this session.
 
@@ -1184,17 +1184,17 @@ function createSession() {
 
 Returns:
 
--   [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) —
+- [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) —
 
     A new Session object, or the existing Session object if a Session is active and has not been saved or discarded.
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if required options are missing or provided options are invalid in `:autoLap` options dictionary

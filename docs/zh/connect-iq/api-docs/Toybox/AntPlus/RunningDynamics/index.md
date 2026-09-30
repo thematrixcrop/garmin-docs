@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.RunningDynamics](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamics/)
+- [Toybox.AntPlus.RunningDynamics](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamics/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Running Dynamics Device instance.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -123,22 +123,22 @@ API Level 2.4.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getRunningDynamics**](#getRunningDynamics-instance_function)() as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)
+- [**getRunningDynamics**](#getRunningDynamics-instance_function)() as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)
 
     Use getRunningDynamics() to get the most current running dynamics.
 
--   [**getSensorPosition**](#getSensorPosition-instance_function)() as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
+- [**getSensorPosition**](#getSensorPosition-instance_function)() as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
     Use getSensorPosition() to retrieve the position of the sensor on the body.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getRunningDynamics()** as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)
 
@@ -146,14 +146,14 @@ Use getRunningDynamics() to get the most current running dynamics.
 
 Returns:
 
--   [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/) —
+- [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/) —
 
     Current running dynamics data
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getSensorPosition()** as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
@@ -161,14 +161,14 @@ Use getSensorPosition() to retrieve the position of the sensor on the body
 
 Returns:
 
--   [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/) —
+- [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/) —
 
     Current sensor position
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **initialize(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)**
 
@@ -176,11 +176,11 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)) —
+- listener — ([AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)) —
 
     The running dynamics instance optionally takes an extension of the [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0

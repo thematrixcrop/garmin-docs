@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)
+- [Toybox.AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Running Dynamics.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -123,22 +123,22 @@ API Level 2.4.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function)(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) as **Void**
+- [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function)(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) as **Void**
 
     Callback when running dynamics are updated (max freq 1Hz).
 
--   [**onSensorPositionUpdate**](#onSensorPositionUpdate-instance_function)(data as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) as **Void**
+- [**onSensorPositionUpdate**](#onSensorPositionUpdate-instance_function)(data as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) as **Void**
 
     Callback when sensor position is updated (max freq 1Hz).
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -146,7 +146,7 @@ Constructor
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **onRunningDynamicsUpdate(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/))** as **Void**
 
@@ -154,14 +154,14 @@ Callback when running dynamics are updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) —
+- data — ([AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) —
 
     Data with updated running dynamics information.
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **onSensorPositionUpdate(data as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/))** as **Void**
 
@@ -169,11 +169,11 @@ Callback when sensor position is updated (max freq 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) —
+- data — ([AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) —
 
     Data with updated sensor position information.
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0

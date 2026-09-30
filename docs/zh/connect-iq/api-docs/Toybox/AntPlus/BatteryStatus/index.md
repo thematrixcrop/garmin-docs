@@ -7,53 +7,53 @@ Inherits:
 
 Toybox.AntPlus.CommonData
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
+- [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
 
--   [Toybox.AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/)
+- [Toybox.AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing information from the Battery Status ANT+ common page.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-## See Also:
+## 另见：
 
--   [ANT Downloads & Resources (ANT+ Common Pages)](https://www.thisisant.com/resources/common-data-pages/)
+- [ANT Downloads & Resources (ANT+ Common Pages)](https://www.thisisant.com/resources/common-data-pages/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**batteryStatus**](#batteryStatus-var) as [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) or **Null**
+- [**batteryStatus**](#batteryStatus-var) as [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) or **Null**
 
     The [BATT\_STATUS\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BATT_STATUS_CNT-const) value of the battery.
 
--   [**batteryVoltage**](#batteryVoltage-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**batteryVoltage**](#batteryVoltage-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The voltage, -1 is invalid.
 
--   [**operatingTime**](#operatingTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**operatingTime**](#operatingTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The operating time in seconds.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var batteryStatus as [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) or **Null**
 
@@ -61,11 +61,11 @@ The [BATT\_STATUS\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BATT_STATUS_CNT-cons
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) —
+- [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) —
 
     The battery status of the ANT+ device as a number
 
@@ -76,11 +76,11 @@ The voltage, -1 is invalid
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     The voltage of the ANT+ device
 
@@ -91,16 +91,16 @@ The operating time in seconds.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The operating time of the ANT+ device
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -108,4 +108,4 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

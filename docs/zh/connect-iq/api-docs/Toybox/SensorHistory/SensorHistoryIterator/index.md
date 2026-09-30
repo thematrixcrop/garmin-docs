@@ -7,26 +7,26 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing sensor data for a given period of time.
 
 The SensorHistoryIterator describes a sequence of [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) objects. The iterator is retrieved using the appropriate "get" methods found in [SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/) at the module level. This class provides the methods needed to retrieve information from each of the SensorSample objects included in the iterator.
 
-## See Also:
+## 另见：
 
--   [SensorHistory.getHeartRateHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getHeartRateHistory-instance_function)
+- [SensorHistory.getHeartRateHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getHeartRateHistory-instance_function)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Example:
@@ -55,32 +55,32 @@ var sensorIter = getIterator();
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Get the maximum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
 
--   [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Get the minimum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
 
--   [**getNewestSampleTime**](#getNewestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**getNewestSampleTime**](#getNewestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the newest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
 
--   [**getOldestSampleTime**](#getOldestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**getOldestSampleTime**](#getOldestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the oldest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
 
--   [**next**](#next-instance_function)() as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
+- [**next**](#next-instance_function)() as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
 
     Get the next [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) entry in the iterator.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getMax()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -100,21 +100,21 @@ System.println(sensorIter.getMax().data);
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The maximum SensorSample data value in this iterator
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getMin()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -134,21 +134,21 @@ System.println(sensorIter.getMin().data);
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The minimum SensorSample data value in this iterator
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getNewestSampleTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -168,25 +168,25 @@ System.println(sensorIter.getNewestSampleTime());
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     The Moment of the newest SensorSample in this iterator
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
--   [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getOldestSampleTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -206,25 +206,25 @@ System.println(sensorIter.getOldestSampleTime());
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     The Moment of the oldest SensorSample in this iterator
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
--   [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **next()** as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
 
@@ -246,18 +246,18 @@ System.println(sensorIter.next().data);
 
 Returns:
 
--   [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) —
+- [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) —
 
     The next SensorHistorySample, or `null` if there are no more samples
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0

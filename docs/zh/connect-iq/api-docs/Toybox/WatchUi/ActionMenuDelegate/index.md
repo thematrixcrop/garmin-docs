@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)
+- [Toybox.WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
-Class that represents an action menu delegate, which 可用于 relay events regarding the action menu.
+Class that represents an action menu delegate, which can be used to relay events regarding the action menu.
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -139,22 +139,22 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor for the ActionMenuDelegate.
 
--   [**onBack**](#onBack-instance_function)() as **Void**
+- [**onBack**](#onBack-instance_function)() as **Void**
 
     An ActionMenu back key was pressed.
 
--   [**onSelect**](#onSelect-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
+- [**onSelect**](#onSelect-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
 
     An ActionMenuItem was selected.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -162,7 +162,7 @@ Constructor for the ActionMenuDelegate
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **onBack()** as **Void**
 
@@ -170,7 +170,7 @@ An ActionMenu back key was pressed.
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **onSelect(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/))** as **Void**
 
@@ -178,11 +178,11 @@ An ActionMenuItem was selected.
 
 Parameters:
 
--   item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
+- item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
     The selected ActionMenuItem.
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0

@@ -3,28 +3,28 @@ title: "Module: Toybox.SensorLogging"
 ---
 # Module: Toybox.SensorLogging
 
-## Overview
+## 概述
 
 The SensorLogging module contains the interface for logging sensor data.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Background
+- 后台
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -186,11 +186,11 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   SensorLogging
+- SensorLogging
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), [SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)
+类：[SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), [SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)

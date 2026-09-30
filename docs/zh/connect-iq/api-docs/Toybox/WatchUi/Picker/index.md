@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
+- [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen generic picker.
 
@@ -32,41 +32,41 @@ A [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) is require
 
 This Picker will have three entries: a choosable number, a non-choosable "-", and another choosable number.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)
+- [Toybox.WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)
 
--   [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
+- [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
 
 
-Note:
+注意：
 
 See the Picker sample distributed with the SDK for an example of the use of the Picker class
 
-Note:
+注意：
 
 The look and feel of a Picker is device-specific, though every device will have the same general layout.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -240,30 +240,30 @@ App Types and Runtime Contexts:
 
 :::
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Options**](#Options-named_type) as { :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :pattern as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)\>, :defaults as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :nextArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :previousArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :confirm as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) }
+- [**Options**](#Options-named_type) as { :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :pattern as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)\>, :defaults as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :nextArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :previousArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :confirm as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) }
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))
+- [**initialize**](#initialize-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))
 
     Constructor.
 
--   [**setOptions**](#setOptions-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type)) as **Void**
+- [**setOptions**](#setOptions-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type)) as **Void**
 
     Set the options for the Picker.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Options** as { :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :pattern as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)\>, :defaults as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :nextArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :previousArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :confirm as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) }
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))**
 
@@ -271,19 +271,19 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary containing the options for the Picker object
 
 
-See Also:
+另见：
 
--   [Picker.setOptions()](/connect-iq/api-docs/Toybox/WatchUi/Picker/#setOptions-instance_function)
+- [Picker.setOptions()](/connect-iq/api-docs/Toybox/WatchUi/Picker/#setOptions-instance_function)
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **setOptions(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))** as **Void**
 
@@ -291,42 +291,42 @@ Set the options for the Picker.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary containing the options for the Picker object
 
-    -   :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         The title for the Picker (required)
 
-    -   :pattern — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :pattern — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         An Array of either [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) objects for the Picker to display. A PickerFactory presents a choice of Pickers, while a Drawable immediately displays the Picker (required)
 
-    -   :defaults — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :defaults — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         An Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects indicating the starting index for each entry in the supplied pattern (optional)
 
-    -   :nextArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :nextArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A custom next icon for the Picker (optional)
 
-    -   :previousArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :previousArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A custom previous icon for the Picker (optional)
 
-    -   :confirm — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :confirm — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A custom confirmation icon for the Picker (optional)
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
+- [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
 
--   [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
+- [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0

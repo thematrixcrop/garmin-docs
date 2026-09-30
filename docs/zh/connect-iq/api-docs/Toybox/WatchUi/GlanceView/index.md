@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/)
+- [Toybox.WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
-The class that represents a glance view which 可用于 display the widget preview content in a restricted drawing context (dc) among other widgets.
+The class that represents a glance view which can be used to display the widget preview content in a restricted drawing context (dc) among other widgets.
 
 Glance view behaves mostly like a regular WatchUi.View, e.g. user can load layout and update view using [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) and [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), however, the `dc` object passed in those calls will be bounded by glance area rather than a full screen `dc`.
 
@@ -28,24 +28,24 @@ The widget that's running in the glance mode are prohibited from using page cont
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -157,14 +157,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -172,4 +172,4 @@ Constructor
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

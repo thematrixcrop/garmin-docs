@@ -7,29 +7,29 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
+- [Toybox.BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Content iterator for Bluetooth Low Energy Data
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**next**](#next-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
+- [**next**](#next-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
     Get the next item in the list.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **next()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -37,11 +37,11 @@ Get the next item in the list
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     The next item, or `null` if end of list
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

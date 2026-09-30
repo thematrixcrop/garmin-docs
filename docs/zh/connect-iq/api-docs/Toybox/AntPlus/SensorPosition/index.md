@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
+- [Toybox.AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Information about the position of the sensor on the body. Fields may return `null` so you should `null` check values before using them.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -121,18 +121,18 @@ API Level 2.4.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**bodyLocation**](#bodyLocation-var) as [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module) or **Null**
+- [**bodyLocation**](#bodyLocation-var) as [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module) or **Null**
 
     [AntPlus.BODY\_LOCATION\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module).
 
--   [**orientation**](#orientation-var) as [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module) or **Null**
+- [**orientation**](#orientation-var) as [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module) or **Null**
 
     [AntPlus.SENSOR\_ORIENTATION\_\*](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var bodyLocation as [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module) or **Null**
 
@@ -140,11 +140,11 @@ API Level 2.4.0
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module)
+- [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module)
 
 ### var orientation as [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module) or **Null**
 
@@ -152,8 +152,8 @@ Returns:
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module)
+- [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module)

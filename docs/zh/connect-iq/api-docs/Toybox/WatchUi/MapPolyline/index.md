@@ -7,44 +7,44 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)
+- [Toybox.WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 An object representing a polyline (polygonal chain) on the map.
 
 This object holds an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects to draw a polyline on the map.
 
-## See Also:
+## 另见：
 
--   [https://en.wikipedia.org/wiki/Polygonal\_chain](https://en.wikipedia.org/wiki/Polygonal_chain)
+- [https://en.wikipedia.org/wiki/Polygonal\_chain](https://en.wikipedia.org/wiki/Polygonal_chain)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -134,34 +134,34 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addLocation**](#addLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as **Void**
+- [**addLocation**](#addLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as **Void**
 
     Add a Location or Locations to the MapPolyline object location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
 
--   [**clear**](#clear-instance_function)() as **Void**
+- [**clear**](#clear-instance_function)() as **Void**
 
     Clear all the [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects from the MapPolyline object's location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
 
--   [**getLocation**](#getLocation-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
+- [**getLocation**](#getLocation-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
     Get the [Location](/connect-iq/api-docs/Toybox/Position/Location/) object at a provided index in this MapPolyline object.
 
--   [**numLocations**](#numLocations-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**numLocations**](#numLocations-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the number of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects in this MapPolyline object.
 
--   [**setColor**](#setColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
+- [**setColor**](#setColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
     Set the color of the MapPolyline to draw on the map.
 
--   [**setWidth**](#setWidth-instance_function)(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**setWidth**](#setWidth-instance_function)(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Set the width of the MapPolyline to draw on the map.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addLocation(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>)** as **Void**
 
@@ -169,14 +169,14 @@ Add a Location or Locations to the MapPolyline object location [Array](/connect-
 
 Parameters:
 
--   location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     A Location object or an Array of Location objects
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **clear()** as **Void**
 
@@ -184,7 +184,7 @@ Clear all the [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getLocation(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -192,21 +192,21 @@ Get the [Location](/connect-iq/api-docs/Toybox/Position/Location/) object at a p
 
 Parameters:
 
--   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The index of the requested Location
 
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     The Location at the provided index
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **numLocations()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -214,14 +214,14 @@ Get the number of [Location](/connect-iq/api-docs/Toybox/Position/Location/) obj
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The number of Location objects in this MapPolyline object.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **setColor(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
 
@@ -229,14 +229,14 @@ Set the color of the MapPolyline to draw on the map.
 
 Parameters:
 
--   color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
+- color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     The color to draw the line on the map as a [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) enum value.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **setWidth(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
@@ -244,11 +244,11 @@ Set the width of the MapPolyline to draw on the map.
 
 Parameters:
 
--   width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The width of the line in pixels (px)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

@@ -3,183 +3,183 @@ title: "Enduro™ 3"
 ---
 # Enduro™ 3
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | enduro3 |
-| Screen Shape | round |
-| Screen Size | 280 x 280 |
-| Display Colors | 64 |
-| Touch | True |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | enduro3 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 280 x 280 |
+| 显示颜色 | 64 |
+| 触摸 | True |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 131072 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/enduro3/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 280 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 280 | 280 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/enduro3/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 139 | 7 | True | True | True | False |
-| Field 2 | 0 | 141 | 280 | 139 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 139 | 7 | True | True | True | False |
+| 字段 2 | 0 | 141 | 280 | 139 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/enduro3/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 97 | 7 | True | True | True | False |
-| Field 2 | 0 | 97 | 280 | 79 | 5 | True | True | False | False |
-| Field 3 | 0 | 179 | 280 | 101 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 97 | 7 | True | True | True | False |
+| 字段 2 | 0 | 97 | 280 | 79 | 5 | True | True | False | False |
+| 字段 3 | 0 | 179 | 280 | 101 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/enduro3/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 90 | 7 | True | True | True | False |
-| Field 2 | 0 | 92 | 280 | 97 | 5 | True | True | False | False |
-| Field 3 | 0 | 191 | 280 | 89 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 90 | 7 | True | True | True | False |
+| 字段 2 | 0 | 92 | 280 | 97 | 5 | True | True | False | False |
+| 字段 3 | 0 | 191 | 280 | 89 | 13 | True | True | False | True |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/enduro3/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 139 | 7 | True | True | True | False |
-| Field 2 | 0 | 141 | 139 | 139 | 9 | True | False | False | True |
-| Field 3 | 141 | 141 | 139 | 139 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 139 | 7 | True | True | True | False |
+| 字段 2 | 0 | 141 | 139 | 139 | 9 | True | False | False | True |
+| 字段 3 | 141 | 141 | 139 | 139 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/enduro3/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 99 | 7 | True | True | True | False |
-| Field 2 | 0 | 101 | 139 | 84 | 1 | True | False | False | False |
-| Field 3 | 141 | 101 | 139 | 84 | 4 | False | True | False | False |
-| Field 4 | 0 | 187 | 280 | 93 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 99 | 7 | True | True | True | False |
+| 字段 2 | 0 | 101 | 139 | 84 | 1 | True | False | False | False |
+| 字段 3 | 141 | 101 | 139 | 84 | 4 | False | True | False | False |
+| 字段 4 | 0 | 187 | 280 | 93 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/enduro3/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 139 | 139 | 3 | True | False | True | False |
-| Field 2 | 141 | 0 | 139 | 139 | 6 | False | True | True | False |
-| Field 3 | 0 | 141 | 139 | 139 | 9 | True | False | False | True |
-| Field 4 | 141 | 141 | 139 | 139 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 139 | 139 | 3 | True | False | True | False |
+| 字段 2 | 141 | 0 | 139 | 139 | 6 | False | True | True | False |
+| 字段 3 | 0 | 141 | 139 | 139 | 9 | True | False | False | True |
+| 字段 4 | 141 | 141 | 139 | 139 | 12 | False | True | False | True |
 
-**4 Fields C Layout**
+**4 字段 C 布局**
 
 
 ![4 Fields C](/connect-iq/resources/device-reference/enduro3/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
-| Field 2 | 0 | 71 | 280 | 68 | 5 | True | True | False | False |
-| Field 3 | 0 | 141 | 280 | 68 | 5 | True | True | False | False |
-| Field 4 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
+| 字段 2 | 0 | 71 | 280 | 68 | 5 | True | True | False | False |
+| 字段 3 | 0 | 141 | 280 | 68 | 5 | True | True | False | False |
+| 字段 4 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
 
-**5 Fields Layout**
+**5 字段布局**
 
 
 ![5 Fields](/connect-iq/resources/device-reference/enduro3/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
-| Field 2 | 0 | 71 | 280 | 68 | 5 | True | True | False | False |
-| Field 3 | 0 | 141 | 139 | 68 | 1 | True | False | False | False |
-| Field 4 | 141 | 141 | 139 | 68 | 4 | False | True | False | False |
-| Field 5 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
+| 字段 2 | 0 | 71 | 280 | 68 | 5 | True | True | False | False |
+| 字段 3 | 0 | 141 | 139 | 68 | 1 | True | False | False | False |
+| 字段 4 | 141 | 141 | 139 | 68 | 4 | False | True | False | False |
+| 字段 5 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/enduro3/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
-| Field 2 | 0 | 71 | 139 | 68 | 1 | True | False | False | False |
-| Field 3 | 141 | 71 | 139 | 68 | 4 | False | True | False | False |
-| Field 4 | 0 | 141 | 139 | 68 | 1 | True | False | False | False |
-| Field 5 | 141 | 141 | 139 | 68 | 4 | False | True | False | False |
-| Field 6 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 69 | 7 | True | True | True | False |
+| 字段 2 | 0 | 71 | 139 | 68 | 1 | True | False | False | False |
+| 字段 3 | 141 | 71 | 139 | 68 | 4 | False | True | False | False |
+| 字段 4 | 0 | 141 | 139 | 68 | 1 | True | False | False | False |
+| 字段 5 | 141 | 141 | 139 | 68 | 4 | False | True | False | False |
+| 字段 6 | 0 | 211 | 280 | 69 | 13 | True | True | False | True |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/enduro3/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 48 | 7 | True | True | True | False |
-| Field 2 | 0 | 51 | 139 | 58 | 1 | True | False | False | False |
-| Field 3 | 141 | 51 | 139 | 58 | 4 | False | True | False | False |
-| Field 4 | 0 | 114 | 280 | 51 | 5 | True | True | False | False |
-| Field 5 | 0 | 171 | 139 | 58 | 1 | True | False | False | False |
-| Field 6 | 141 | 171 | 139 | 58 | 4 | False | True | False | False |
-| Field 7 | 0 | 232 | 280 | 48 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 48 | 7 | True | True | True | False |
+| 字段 2 | 0 | 51 | 139 | 58 | 1 | True | False | False | False |
+| 字段 3 | 141 | 51 | 139 | 58 | 4 | False | True | False | False |
+| 字段 4 | 0 | 114 | 280 | 51 | 5 | True | True | False | False |
+| 字段 5 | 0 | 171 | 139 | 58 | 1 | True | False | False | False |
+| 字段 6 | 141 | 171 | 139 | 58 | 4 | False | True | False | False |
+| 字段 7 | 0 | 232 | 280 | 48 | 13 | True | True | False | True |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/enduro3/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 280 | 48 | 7 | True | True | True | False |
-| Field 2 | 0 | 51 | 139 | 58 | 1 | True | False | False | False |
-| Field 3 | 141 | 51 | 139 | 58 | 4 | False | True | False | False |
-| Field 4 | 0 | 111 | 139 | 58 | 1 | True | False | False | False |
-| Field 5 | 141 | 111 | 139 | 58 | 4 | False | True | False | False |
-| Field 6 | 0 | 171 | 139 | 58 | 1 | True | False | False | False |
-| Field 7 | 141 | 171 | 139 | 58 | 4 | False | True | False | False |
-| Field 8 | 0 | 232 | 280 | 48 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 280 | 48 | 7 | True | True | True | False |
+| 字段 2 | 0 | 51 | 139 | 58 | 1 | True | False | False | False |
+| 字段 3 | 141 | 51 | 139 | 58 | 4 | False | True | False | False |
+| 字段 4 | 0 | 111 | 139 | 58 | 1 | True | False | False | False |
+| 字段 5 | 141 | 111 | 139 | 58 | 4 | False | True | False | False |
+| 字段 6 | 0 | 171 | 139 | 58 | 1 | True | False | False | False |
+| 字段 7 | 141 | 171 | 139 | 58 | 4 | False | True | False | False |
+| 字段 8 | 0 | 232 | 280 | 48 | 13 | True | True | False | True |
 
 **Part Number 006-B4575-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 22 | RobotoCondensed-Bold |
 | FONT\_TINY | Roboto Condensed | 30 | RobotoCondensed-Bold |
@@ -208,13 +208,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | RobotoCondensedRegular | Roboto Condensed | Scalable | RobotoCondensed-Regular |
 | RobotoCondensedRegularItalic | Roboto Condensed | Scalable | RobotoCondensed-RegularItalic |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto | 22 | Roboto-Condensed\_0 |
 | FONT\_TINY | Roboto | 30 | Roboto-Condensed\_0 |
@@ -242,13 +242,13 @@ vie
 | RobotoCondensedRegular | Roboto Condensed | Scalable | RobotoCondensed-Regular |
 | RobotoCondensedRegularItalic | Roboto Condensed | Scalable | RobotoCondensed-RegularItalic |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC | 28 | NotoSansSC-Medium |
 | FONT\_TINY | Noto Sans SC | 38 | NotoSansSC-Medium |
@@ -276,13 +276,13 @@ zhs, zht
 | RobotoCondensedRegular | Roboto Condensed | Scalable | RobotoCondensed-Regular |
 | RobotoCondensedRegularItalic | Roboto Condensed | Scalable | RobotoCondensed-RegularItalic |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar | 19 | Kosugi-Regular |
 | FONT\_TINY | MotoyaLCedar | 26 | Kosugi-Regular |
@@ -310,13 +310,13 @@ jpn
 | RobotoCondensedRegular | Roboto Condensed | Scalable | RobotoCondensed-Regular |
 | RobotoCondensedRegularItalic | Roboto Condensed | Scalable | RobotoCondensed-RegularItalic |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 22 | NanumGothic-Bold |
 | FONT\_TINY | NanumGothic | 30 | NanumGothic-Bold |
@@ -344,13 +344,13 @@ kor
 | RobotoCondensedRegular | Roboto Condensed | Scalable | RobotoCondensed-Regular |
 | RobotoCondensedRegularItalic | Roboto Condensed | Scalable | RobotoCondensed-RegularItalic |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Pridi | 30 | Pridi-Regular |
 | FONT\_TINY | Pridi | 40 | Pridi-Regular |

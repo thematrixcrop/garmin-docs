@@ -3,79 +3,79 @@ title: "Venu® 3"
 ---
 # Venu® 3
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | venu3 |
-| Screen Shape | round |
-| Screen Size | 454 x 454 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 70 x 70 |
+| 标识 | venu3 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 454 x 454 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 70 x 70 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/venu3/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | \-6 | 5 | 454 | 454 | 15 | True | True | True | True |
+| 字段 1 | \-6 | 5 | 454 | 454 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/venu3/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | \-2 | 5 | 454 | 226 | 7 | True | True | True | False |
-| Field 2 | \-2 | 233 | 454 | 226 | 13 | True | True | False | True |
+| 字段 1 | \-2 | 5 | 454 | 226 | 7 | True | True | True | False |
+| 字段 2 | \-2 | 233 | 454 | 226 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/venu3/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 5 | 454 | 154 | 7 | True | True | True | False |
-| Field 2 | 0 | 161 | 454 | 132 | 5 | True | True | False | False |
-| Field 3 | 97 | 295 | 260 | 164 | 13 | True | True | False | True |
+| 字段 1 | 0 | 5 | 454 | 154 | 7 | True | True | True | False |
+| 字段 2 | 0 | 161 | 454 | 132 | 5 | True | True | False | False |
+| 字段 3 | 97 | 295 | 260 | 164 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/venu3/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 8 | 3 | 454 | 156 | 7 | True | True | True | False |
-| Field 2 | 8 | 161 | 218 | 127 | 1 | True | False | False | False |
-| Field 3 | 244 | 161 | 218 | 127 | 4 | False | True | False | False |
-| Field 4 | 100 | 290 | 269 | 167 | 13 | True | True | False | True |
+| 字段 1 | 8 | 3 | 454 | 156 | 7 | True | True | True | False |
+| 字段 2 | 8 | 161 | 218 | 127 | 1 | True | False | False | False |
+| 字段 3 | 244 | 161 | 218 | 127 | 4 | False | True | False | False |
+| 字段 4 | 100 | 290 | 269 | 167 | 13 | True | True | False | True |
 
 **Part Number 006-B4260-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto | 35 | Roboto-Regular |
 | FONT\_TINY | Roboto | 45 | Roboto-Regular |
@@ -97,13 +97,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC | 47 | NotoSansSC-Medium |
 | FONT\_TINY | Noto Sans SC | 61 | NotoSansSC-Medium |
@@ -125,13 +125,13 @@ zhs, zht
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar | 31 | Kosugi-Regular |
 | FONT\_TINY | MotoyaLCedar | 41 | Kosugi-Regular |
@@ -153,13 +153,13 @@ jpn
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 36 | NanumGothic-Bold |
 | FONT\_TINY | NanumGothic | 47 | NanumGothic-Bold |
@@ -181,13 +181,13 @@ kor
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Pridi | 49 | Pridi-Regular |
 | FONT\_TINY | Pridi | 64 | Pridi-Regular |

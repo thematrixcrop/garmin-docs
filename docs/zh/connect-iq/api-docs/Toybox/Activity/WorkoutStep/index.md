@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
+- [Toybox.Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The WorkoutStep class contains information about the current workout step.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -153,30 +153,30 @@ API Level 3.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**durationType**](#durationType-var) as [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module)
+- [**durationType**](#durationType-var) as [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module)
 
     The duration of the workout step.
 
--   [**durationValue**](#durationValue-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**durationValue**](#durationValue-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     How long the step should last.
 
--   [**targetType**](#targetType-var) as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
+- [**targetType**](#targetType-var) as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
 
     The target of the workout step.
 
--   [**targetValueHigh**](#targetValueHigh-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**targetValueHigh**](#targetValueHigh-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The high value for the target range.
 
--   [**targetValueLow**](#targetValueLow-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**targetValueLow**](#targetValueLow-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The low value for the target range.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var durationType as [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module)
 
@@ -184,11 +184,11 @@ The duration of the workout step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module) —
+- [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module) —
 
     a WORKOUT\_STEP\_DURATION\_\* value
 
@@ -199,11 +199,11 @@ How long the step should last
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A value whose meaning is dependent on the value of durationType
 
@@ -214,11 +214,11 @@ The target of the workout step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module) —
+- [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module) —
 
     A WORKOUT\_STEP\_TARGET\_\* value
 
@@ -229,11 +229,11 @@ The high value for the target range.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A value whose meaning is dependent on the value of targetType
 
@@ -244,10 +244,10 @@ The low value for the target range.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A value whose meaning is dependent on the value of targetType

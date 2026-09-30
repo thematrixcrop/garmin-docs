@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
+- [Toybox.AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents the calculated power.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -138,18 +138,18 @@ API Level 2.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**power**](#power-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**power**](#power-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The average power calculated from the sensor data in watts (W).
 
--   [**powerSensorType**](#powerSensorType-var) as [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module) or **Null**
+- [**powerSensorType**](#powerSensorType-var) as [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module) or **Null**
 
-    The [BIKE\_POWER\_SENSOR\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.
+    自行车功率传感器的 [BIKE\_POWER\_SENSOR\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BIKE_POWER_SENSOR_TYPE_CNT-const) 值。
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var power as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -157,20 +157,20 @@ The average power calculated from the sensor data in watts (W).
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var powerSensorType as [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module) or **Null**
 
-The [BIKE\_POWER\_SENSOR\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.
+自行车功率传感器的 [BIKE\_POWER\_SENSOR\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BIKE_POWER_SENSOR_TYPE_CNT-const) 值。
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module)
+- [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module)

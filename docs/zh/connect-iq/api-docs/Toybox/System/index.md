@@ -3,71 +3,71 @@ title: "Module: Toybox.System"
 ---
 # Module: Toybox.System
 
-## Overview
+## 概述
 
-The System 模块提供 basic system information, including access to the clock time, device settings, battery level, and memory use.
+The System module provides basic system information, including access to the clock time, device settings, battery level, and memory use.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/), [ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/), [ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/), [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/), [Intent](/connect-iq/api-docs/Toybox/System/Intent/), [PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/), [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/), [Stats](/connect-iq/api-docs/Toybox/System/Stats/), [UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)
+类：[AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/), [ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/), [ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/), [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/), [Intent](/connect-iq/api-docs/Toybox/System/Intent/), [PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/), [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/), [Stats](/connect-iq/api-docs/Toybox/System/Stats/), [UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)
 
-## Constant Summary
+## 常量摘要
 
 ### UnitsSystem
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | UNIT\_METRIC | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Display units in metric units
 
- |
+|
 | UNIT\_STATUTE | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Display units in statute units
 
- |
+|
 
 ### ScreenShape
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SCREEN\_SHAPE\_ROUND | 1 |
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | SCREEN\_SHAPE\_SEMI\_ROUND | 2 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | SCREEN\_SHAPE\_RECTANGLE | 3 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | SCREEN\_SHAPE\_SEMI\_OCTAGON | 4 |
 
-API Level 3.3.0
+API 级别 3.3.0
 
  |  |
 
@@ -75,122 +75,122 @@ API Level 3.3.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | BUTTON\_INPUT\_SELECT | 0x00000001 |
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | BUTTON\_INPUT\_UP | 0x00000002 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | BUTTON\_INPUT\_DOWN | 0x00000004 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | BUTTON\_INPUT\_MENU | 0x00000008 |
 
-API Level 1.2.0
+API 级别 1.2.0
 
  |  |
 | BUTTON\_INPUT\_CLOCK | 0x00000010 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_DOWN\_LEFT | 0x00000020 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_DOWN\_RIGHT | 0x00000040 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_ESC | 0x00000080 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_FIND | 0x00000100 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_LAP | 0x00000200 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_LEFT | 0x00000400 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_LIGHT | 0x00000800 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_MODE | 0x00001000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_PAGE | 0x00002000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_POWER | 0x00004000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_RESET | 0x00008000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_RIGHT | 0x00010000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_SPORT | 0x00020000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_START | 0x00040000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_UP\_LEFT | 0x00080000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_UP\_RIGHT | 0x00100000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_ZIN | 0x00200000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 | BUTTON\_INPUT\_ZOUT | 0x00400000 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
  |  |
 
@@ -198,368 +198,368 @@ API Level 3.1.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CONNECTION\_STATE\_NOT\_INITIALIZED | 0 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Indicates that the connection is not setup or is inactive.
 
- |
+|
 | CONNECTION\_STATE\_NOT\_CONNECTED | 1 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Indicates that the connection has been setup but is not in range.
 
- |
+|
 | CONNECTION\_STATE\_CONNECTED | 2 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Indicates that the connection is available for use.
 
- |
+|
 
 ### Language
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | LANGUAGE\_ARA | 8389920 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Arabic
 
- |
+|
 | LANGUAGE\_BUL | 8389921 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Bulgarian
 
- |
+|
 | LANGUAGE\_CES | 8389352 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Czech
 
- |
+|
 | LANGUAGE\_CHS | 8389372 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Chinese (Simplified)
 
- |
+|
 | LANGUAGE\_CHT | 8389371 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Chinese (Traditional)
 
- |
+|
 | LANGUAGE\_DAN | 8389353 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Danish
 
- |
+|
 | LANGUAGE\_DEU | 8389358 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 German
 
- |
+|
 | LANGUAGE\_DUT | 8389354 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Dutch
 
- |
+|
 | LANGUAGE\_ENG | 8389355 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 English
 
- |
+|
 | LANGUAGE\_EST | 8390796 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Estonian
 
- |
+|
 | LANGUAGE\_FIN | 8389356 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Finnish
 
- |
+|
 | LANGUAGE\_FRE | 8389357 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 French
 
- |
+|
 | LANGUAGE\_GRE | 8389359 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Greek
 
- |
+|
 | LANGUAGE\_HEB | 8389919 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Hebrew
 
- |
+|
 | LANGUAGE\_HRV | 8389361 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Croatian
 
- |
+|
 | LANGUAGE\_HUN | 8389360 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Hungarian
 
- |
+|
 | LANGUAGE\_IND | 8389578 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Bahasa Indonesia
 
- |
+|
 | LANGUAGE\_ITA | 8389362 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Italian
 
- |
+|
 | LANGUAGE\_JPN | 8389373 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Japanese
 
- |
+|
 | LANGUAGE\_KOR | 8389696 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Korean
 
- |
+|
 | LANGUAGE\_LAV | 8390797 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Latvian
 
- |
+|
 | LANGUAGE\_LIT | 8390798 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Lithuanian
 
- |
+|
 | LANGUAGE\_NOB | 8389363 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Norwegian
 
- |
+|
 | LANGUAGE\_POL | 8389364 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Polish
 
- |
+|
 | LANGUAGE\_POR | 8389365 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Portuguese
 
- |
+|
 | LANGUAGE\_RON | 8390799 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Romanian
 
- |
+|
 | LANGUAGE\_RUS | 8389366 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Russian
 
- |
+|
 | LANGUAGE\_SLO | 8389367 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Slovak
 
- |
+|
 | LANGUAGE\_SLV | 8389368 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Slovenian
 
- |
+|
 | LANGUAGE\_SPA | 8389369 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Spanish
 
- |
+|
 | LANGUAGE\_SWE | 8389370 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Swedish
 
- |
+|
 | LANGUAGE\_THA | 8389548 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Thai
 
- |
+|
 | LANGUAGE\_TUR | 8389774 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Turkish
 
- |
+|
 | LANGUAGE\_UKR | 8390800 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Ukrainian
 
- |
+|
 | LANGUAGE\_VIE | 8390206 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Vietnamese
 
- |
+|
 | LANGUAGE\_ZSM | 8389579 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Standard (Bahasa) Malay
 
- |
+|
 
 ### DisplayMode
 
@@ -567,36 +567,36 @@ Enum class for display mode
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | DISPLAY\_MODE\_HIGH\_POWER | 0 |
-API Level 5.0.0
+API 级别 5.0.0
 
- |
+|
 
 Display in high power mode. [View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) are not subject to burn-in protection.
 
- |
+|
 | DISPLAY\_MODE\_LOW\_POWER | 1 |
 
-API Level 5.0.0
+API 级别 5.0.0
 
- |
+|
 
 Display in low power mode, including watch face always-on mode. [View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) subject to burn-in protection.
 
- |
+|
 | DISPLAY\_MODE\_OFF | 2 |
 
-API Level 5.0.0
+API 级别 5.0.0
 
- |
+|
 
 Display is off.
 
- |
+|
 
 ### PhoneOperatingSystem
 
@@ -604,85 +604,85 @@ The platform associated with a connected phone.
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | PHONE\_OS\_NOT\_KNOWN | 0 |
-API Level 5.1.0
+API 级别 5.1.0
 
  |  |
 | PHONE\_OS\_ANDROID | 1 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
  |  |
 | PHONE\_OS\_IOS | 2 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
  |  |
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**error**](#error-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**error**](#error-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Write an error to the console and exit the system.
 
--   [**exit**](#exit-instance_function)() as **Void**
+- [**exit**](#exit-instance_function)() as **Void**
 
     End execution of the current app.
 
--   [**exitTo**](#exitTo-instance_function)(intent as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) as **Void**
+- [**exitTo**](#exitTo-instance_function)(intent as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) as **Void**
 
     Exit the current app and launch a new app.
 
--   [**getClockTime**](#getClockTime-instance_function)() as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
+- [**getClockTime**](#getClockTime-instance_function)() as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
     Get the current clock time.
 
--   [**getDeviceSettings**](#getDeviceSettings-instance_function)() as [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
+- [**getDeviceSettings**](#getDeviceSettings-instance_function)() as [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
     Get the current device settings.
 
--   [**getDisplayMode**](#getDisplayMode-instance_function)() as [System.DisplayMode](/connect-iq/api-docs/Toybox/System/#DisplayMode-module)
+- [**getDisplayMode**](#getDisplayMode-instance_function)() as [System.DisplayMode](/connect-iq/api-docs/Toybox/System/#DisplayMode-module)
 
     Get the current display mode, only available in devices with AMOLED or LCD screens.
 
--   [**getSystemStats**](#getSystemStats-instance_function)() as [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
+- [**getSystemStats**](#getSystemStats-instance_function)() as [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
     Get the current system stats.
 
--   [**getTimer**](#getTimer-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getTimer**](#getTimer-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the current millisecond timer value.
 
--   [**isAppInstalled**](#isAppInstalled-instance_function)(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isAppInstalled**](#isAppInstalled-instance_function)(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Check the installation status of an app.
 
--   [**print**](#print-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
+- [**print**](#print-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
     Print to the console.
 
--   [**println**](#println-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
+- [**println**](#println-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
     Print to the console with a line terminator.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **error(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
 Write an error to the console and exit the system.
 
-Note:
+注意：
 
 There are never really too many bananas.
 
 Parameters:
 
--   msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The error message to output
 
@@ -700,7 +700,7 @@ if (bananasInBunch > MAX_BANANAS) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **exit()** as **Void**
 
@@ -710,7 +710,7 @@ This will exit the system cleanly from any point within an app.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **exitTo(intent as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/))** as **Void**
 
@@ -720,7 +720,7 @@ This may only be called by watch-apps and widgets, and may only target watch-app
 
 Parameters:
 
--   intent — ([System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) —
+- intent — ([System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) —
 
     The Intent to trigger
 
@@ -736,26 +736,26 @@ var targetApp = new System.Intent(
 System.exitTo(targetApp);
 ```
 
-See Also:
+另见：
 
--   [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Throws:
 
--   ([System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)) —
+- ([System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)) —
 
     Indicates the intended application is not a device app or widget
 
--   ([System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)) —
+- ([System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)) —
 
     Indicates the intended application is not installed
 
--   ([System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/)) —
+- ([System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/)) —
 
     Indicates exitTo() is called a second time before the initial call completes
 
@@ -766,11 +766,11 @@ Get the current clock time.
 
 Returns:
 
--   [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
+- [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getDeviceSettings()** as [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
@@ -785,17 +785,17 @@ var mySettings = System.getDeviceSettings();
 
 Returns:
 
--   [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
+- [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getDisplayMode()** as [System.DisplayMode](/connect-iq/api-docs/Toybox/System/#DisplayMode-module)
 
 Get the current display mode, only available in devices with AMOLED or LCD screens.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -853,7 +853,7 @@ Get the current display mode, only available in devices with AMOLED or LCD scree
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 ### **getSystemStats()** as [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
@@ -868,27 +868,27 @@ var myStats = System.getSystemStats();
 
 Returns:
 
--   [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
+- [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getTimer()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Get the current millisecond timer value.
 
-Note:
+注意：
 
 The returned value typically starts at zero on device boot and will roll over periodically. Assuming the timer starts at zero, this will happen ~25 days after a reboot, and every ~50 days thereafter.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **isAppInstalled(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -896,7 +896,7 @@ Check the installation status of an app.
 
 Parameters:
 
--   uri — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- uri — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The URI that specifies an app
 
@@ -912,18 +912,18 @@ store-id://[app store ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the app is installed, otherwise `false`
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if an invalid URI format is provided
 
@@ -934,14 +934,14 @@ Print to the console.
 
 Parameters:
 
--   output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The item to print, typically a [String](/connect-iq/api-docs/Toybox/Lang/String/).
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **println(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
@@ -949,7 +949,7 @@ Print to the console with a line terminator.
 
 Parameters:
 
--   output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The item to print, typically a [String](/connect-iq/api-docs/Toybox/Lang/String/).
 
@@ -963,4 +963,4 @@ System.println("Hello Monkey C!");
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

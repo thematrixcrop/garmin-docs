@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)
+- [Toybox.WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 An object representing the view loop with a collection of scrollable views.
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -147,7 +147,7 @@ App Types and Runtime Contexts:
 
 :::
 
-## Constant Summary
+## 常量摘要
 
 ### Direction
 
@@ -155,40 +155,40 @@ Specifies the direction to transition views
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | DIRECTION\_NEXT | 0 |
-API Level 3.4.0
+API 级别 3.4.0
 
- |
+|
 
 Loop in the forward direction
 
- |
+|
 | DIRECTION\_PREVIOUS | 1 |
 
-API Level 3.4.0
+API 级别 3.4.0
 
- |
+|
 
 Loop in the backward direction
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**changeView**](#changeView-instance_function)(direction as [ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**changeView**](#changeView-instance_function)(direction as [ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Change the view to the next/previous one in the view loop based on the direction and display the page indicator after transitioning.
 
--   [**initialize**](#initialize-instance_function)(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)
+- [**initialize**](#initialize-instance_function)(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)
 
     Constructor for the ViewLoop.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **changeView(direction as [ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -196,25 +196,25 @@ Change the view to the next/previous one in the view loop based on the direction
 
 Parameters:
 
--   direction — ([ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) —
+- direction — ([ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) —
 
     The direction in which to change page to
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if view is changed, otherwise false, e.g. reached the start/end of of non-wrapping loop.
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown when the view loop is not an active page for the app.
 
@@ -225,37 +225,37 @@ Constructor for the ViewLoop
 
 Parameters:
 
--   factory — ([WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)) —
+- factory — ([WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)) —
 
     A factory object for the view loop to retrieve view and delegates managed with in this view loop
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Options for this view loop object
 
-    -   :page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         initial page index for the view loop. The default value is 0.
 
-    -   :wrap — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :wrap — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         if wrapping through the pages is allowed The default value is true.
 
-    -   :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
+- :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
         accent color for the page indicator. The :color option may be ignored if the device does not support accent colors.
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 Throws:
 
--   ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
+- ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
     Thrown if [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) returns a size less than or equal to 0.
 
--   ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
+- ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 
     Thrown if [Number](/connect-iq/api-docs/Toybox/Lang/Number/) :page option value is negative or greater than the value returned by the [ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)

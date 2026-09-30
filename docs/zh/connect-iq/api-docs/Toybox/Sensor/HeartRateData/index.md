@@ -7,33 +7,33 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/)
+- [Toybox.Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class to store granular heart rate data.
 
 This class provides granular heart rate data like beat-to-beat intervals. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
 
-## See Also:
+## 另见：
 
--   [Toybox.Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
+- [Toybox.Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
--   [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
+- [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
--   [Beat-to-beat interval or "Interbeat interval"](https://en.wikipedia.org/wiki/Interbeat_interval)
+- [Beat-to-beat interval or "Interbeat interval"](https://en.wikipedia.org/wiki/Interbeat_interval)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -177,14 +177,14 @@ API Level 3.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**heartBeatIntervals**](#heartBeatIntervals-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
+- [**heartBeatIntervals**](#heartBeatIntervals-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
     The most recent beat-to-beat interval data as an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects in milliseconds (ms).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var heartBeatIntervals as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
@@ -192,8 +192,8 @@ The most recent beat-to-beat interval data as an [Array](/connect-iq/api-docs/To
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)

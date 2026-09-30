@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+- [Toybox.Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The Info class contains information about the current activity.
 
@@ -22,226 +22,226 @@ This information can be retrieved with the [getActivityInfo()](/connect-iq/api-d
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The altitude above mean sea level in meters (m).
+    平均海平面以上的海拔（米）。
 
--   [**ambientPressure**](#ambientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**ambientPressure**](#ambientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The ambient pressure in Pascals (Pa).
 
--   [**averageCadence**](#averageCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**averageCadence**](#averageCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The average cadence during the current activity in revolutions per minute (rpm).
 
--   [**averageDistance**](#averageDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**averageDistance**](#averageDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The average swim stroke distance from the previous interval in meters (m).
 
--   [**averageHeartRate**](#averageHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**averageHeartRate**](#averageHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The average heart rate during the current activity in beats per minute (bpm).
 
--   [**averagePower**](#averagePower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**averagePower**](#averagePower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The average power during the current activity in Watts (W).
 
--   [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The average speed during the current activity in meters per second (mps).
 
--   [**bearing**](#bearing-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**bearing**](#bearing-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The current bearing in radians.
 
--   [**bearingFromStart**](#bearingFromStart-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**bearingFromStart**](#bearingFromStart-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The bearing from the starting location to the destination in radians.
 
--   [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The calories burned throughout the current activity in kilocalories (kcal).
 
--   [**currentCadence**](#currentCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**currentCadence**](#currentCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current cadence in revolutions per minute (rpm).
 
--   [**currentHeading**](#currentHeading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**currentHeading**](#currentHeading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The true north referenced heading in radians.
+    以弧度为单位的真北参考航向。
 
--   [**currentHeartRate**](#currentHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**currentHeartRate**](#currentHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current heart rate in beats per minute (bpm).
 
--   [**currentLocation**](#currentLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
+- [**currentLocation**](#currentLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
     The current location.
 
--   [**currentLocationAccuracy**](#currentLocationAccuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
+- [**currentLocationAccuracy**](#currentLocationAccuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
 
     The current GPS accuracy.
 
--   [**currentOxygenSaturation**](#currentOxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**currentOxygenSaturation**](#currentOxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current oxygen saturation in percent (%).
 
--   [**currentPower**](#currentPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**currentPower**](#currentPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current power in Watts (W).
 
--   [**currentSpeed**](#currentSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**currentSpeed**](#currentSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The current speed in meters per second (mps).
 
--   [**distanceToDestination**](#distanceToDestination-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**distanceToDestination**](#distanceToDestination-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The distance to the destination in meters (m).
 
--   [**distanceToNextPoint**](#distanceToNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**distanceToNextPoint**](#distanceToNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The distance to the next point in meters (m).
 
--   [**elapsedDistance**](#elapsedDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**elapsedDistance**](#elapsedDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The elapsed distance of the current activity in meters (m).
 
--   [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Elapsed time of the current activity in milliseconds (ms).
 
--   [**elevationAtDestination**](#elevationAtDestination-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**elevationAtDestination**](#elevationAtDestination-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The elevation at the destination in meters (m).
 
--   [**elevationAtNextPoint**](#elevationAtNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**elevationAtNextPoint**](#elevationAtNextPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The elevation at the next point in meters (m).
 
--   [**energyExpenditure**](#energyExpenditure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**energyExpenditure**](#energyExpenditure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The current energy expenditure in kilocalories per minute (kcals/min).
 
--   [**frontDerailleurIndex**](#frontDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**frontDerailleurIndex**](#frontDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current front bicycle derailleur index.
 
--   [**frontDerailleurMax**](#frontDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**frontDerailleurMax**](#frontDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The front bicycle derailleur maximum index.
 
--   [**frontDerailleurSize**](#frontDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**frontDerailleurSize**](#frontDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The front bicycle derailleur gear size in number of teeth.
 
--   [**maxCadence**](#maxCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**maxCadence**](#maxCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The maximum cadence recorded during the current activity in revolutions per minute (rpm).
 
--   [**maxHeartRate**](#maxHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**maxHeartRate**](#maxHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The maximum heart rate recorded during the current activity in beats per minute (bpm).
 
--   [**maxPower**](#maxPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**maxPower**](#maxPower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The maximum power recorded during the current activity in Watts (W).
 
--   [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The maximum speed recorded during the current activity in meters per second (mps).
 
--   [**meanSeaLevelPressure**](#meanSeaLevelPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**meanSeaLevelPressure**](#meanSeaLevelPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The mean sea level barometric pressure in Pascals (Pa).
 
--   [**nameOfDestination**](#nameOfDestination-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**nameOfDestination**](#nameOfDestination-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     The name of the destination.
 
--   [**nameOfNextPoint**](#nameOfNextPoint-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**nameOfNextPoint**](#nameOfNextPoint-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     The name of the next point.
 
--   [**offCourseDistance**](#offCourseDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**offCourseDistance**](#offCourseDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The distance to the nearest point on the current course in meters (m).
 
--   [**rawAmbientPressure**](#rawAmbientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**rawAmbientPressure**](#rawAmbientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The raw ambient pressure in Pascals (Pa).
 
--   [**rearDerailleurIndex**](#rearDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**rearDerailleurIndex**](#rearDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current rear bicycle derailleur index.
 
--   [**rearDerailleurMax**](#rearDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**rearDerailleurMax**](#rearDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The rear bicycle derailleur maximum index.
 
--   [**rearDerailleurSize**](#rearDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**rearDerailleurSize**](#rearDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The rear bicycle derailleur gear size in number of teeth.
 
--   [**startLocation**](#startLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
+- [**startLocation**](#startLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
     The starting location of the current activity.
 
--   [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     The starting time of the current activity.
 
--   [**swimStrokeType**](#swimStrokeType-var) as [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) or **Null**
+- [**swimStrokeType**](#swimStrokeType-var) as [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) or **Null**
 
     The swim stroke type from the previous length.
 
--   [**swimSwolf**](#swimSwolf-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**swimSwolf**](#swimSwolf-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The SWOLF score from the previous length.
 
--   [**timerState**](#timerState-var) as [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) or **Null**
+- [**timerState**](#timerState-var) as [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) or **Null**
 
     The recording timer state.
 
--   [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current Timer value in milliseconds (ms).
 
--   [**totalAscent**](#totalAscent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**totalAscent**](#totalAscent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The total ascent during the current activity in meters (m).
 
--   [**totalDescent**](#totalDescent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**totalDescent**](#totalDescent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The total descent during the current activity in meters (m).
 
--   [**track**](#track-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**track**](#track-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The current track in radians.
 
--   [**trainingEffect**](#trainingEffect-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**trainingEffect**](#trainingEffect-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The Training Effect score of the current activity.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var altitude as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The altitude above mean sea level in meters (m).
+平均海平面以上的海拔（米）。
 
 Elevation is derived from the most accurate source: Barometer or GPS
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var ambientPressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -251,9 +251,9 @@ This returns ambient (local) barometric pressure as measured by the pressure sen
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -407,7 +407,7 @@ API Level 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var averageCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -415,11 +415,11 @@ The average cadence during the current activity in revolutions per minute (rpm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var averageDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -427,9 +427,9 @@ The average swim stroke distance from the previous interval in meters (m).
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -569,7 +569,7 @@ API Level 1.2.2
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var averageHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -577,11 +577,11 @@ The average heart rate during the current activity in beats per minute (bpm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var averagePower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -589,9 +589,9 @@ The average power during the current activity in Watts (W).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Bravo Titanium
 -   D2™ Bravo
@@ -711,7 +711,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var averageSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -721,11 +721,11 @@ The average is computed as the elapsed 3-D accumulated distance divided by the e
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var bearing as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -735,9 +735,9 @@ Bearing is the direction from your current location or position to the destinati
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -842,7 +842,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var bearingFromStart as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -852,9 +852,9 @@ Bearing from start is the direction of desired track from the start of navigatio
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -959,7 +959,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -967,11 +967,11 @@ The calories burned throughout the current activity in kilocalories (kcal).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var currentCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -979,28 +979,28 @@ The current cadence in revolutions per minute (rpm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     (rpm)
 
 
 ### var currentHeading as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The true north referenced heading in radians.
+以弧度为单位的真北参考航向。
 
 This provides compass orientation if it is supported by the device.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var currentHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1008,11 +1008,11 @@ The current heart rate in beats per minute (bpm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var currentLocation as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -1022,11 +1022,11 @@ This member will always provide a `null` value unless the Positioning Permission
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
 ### var currentLocationAccuracy as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
 
@@ -1036,16 +1036,16 @@ GPS accuracy values range from 0-4. A value of 0 indicates an accuracy value is 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Positional Accuracy](/connect-iq/api-docs/Toybox/Position/Info/#accuracy-var)
+- [Positional Accuracy](/connect-iq/api-docs/Toybox/Position/Info/#accuracy-var)
 
 
 Returns:
 
--   [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
+- [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
     A Position.QUALITY\_\* value
 
@@ -1056,9 +1056,9 @@ The current oxygen saturation in percent (%)
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1177,7 +1177,7 @@ API Level 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var currentPower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1185,9 +1185,9 @@ The current power in Watts (W).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Bravo Titanium
 -   D2™ Bravo
@@ -1307,7 +1307,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var currentSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1315,16 +1315,16 @@ The current speed in meters per second (mps).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
+- [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var distanceToDestination as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1332,9 +1332,9 @@ The distance to the destination in meters (m).
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -1439,7 +1439,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var distanceToNextPoint as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1447,9 +1447,9 @@ The distance to the next point in meters (m).
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -1554,7 +1554,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var elapsedDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1562,11 +1562,11 @@ The elapsed distance of the current activity in meters (m).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var elapsedTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1574,11 +1574,11 @@ Elapsed time of the current activity in milliseconds (ms).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var elevationAtDestination as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1586,9 +1586,9 @@ The elevation at the destination in meters (m).
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -1693,7 +1693,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var elevationAtNextPoint as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1701,9 +1701,9 @@ The elevation at the next point in meters (m).
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -1808,7 +1808,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var energyExpenditure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1818,14 +1818,14 @@ Energy expenditure is a metric developed by FirstBeat that provides an estimatio
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Energy Expenditure](https://www.firstbeat.com/en/consumer-products/features/#energy-expenditure)
+- [Energy Expenditure](https://www.firstbeat.com/en/consumer-products/features/#energy-expenditure)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -1998,7 +1998,7 @@ See Also:
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var frontDerailleurIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2008,9 +2008,9 @@ Index values range from from 1 to the frontDerailleurMax.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -2107,7 +2107,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var frontDerailleurMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2115,9 +2115,9 @@ The front bicycle derailleur maximum index.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -2214,7 +2214,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var frontDerailleurSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2222,9 +2222,9 @@ The front bicycle derailleur gear size in number of teeth.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -2321,7 +2321,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var maxCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2329,11 +2329,11 @@ The maximum cadence recorded during the current activity in revolutions per minu
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var maxHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2341,11 +2341,11 @@ The maximum heart rate recorded during the current activity in beats per minute 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var maxPower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -2353,9 +2353,9 @@ The maximum power recorded during the current activity in Watts (W).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Bravo Titanium
 -   D2™ Bravo
@@ -2475,7 +2475,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var maxSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -2483,11 +2483,11 @@ The maximum speed recorded during the current activity in meters per second (mps
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     (mps)
 
@@ -2500,9 +2500,9 @@ This returns barometric pressure calibrated to sea level. Since pressure varies 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -2656,7 +2656,7 @@ API Level 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var nameOfDestination as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -2664,9 +2664,9 @@ The name of the destination.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -2771,7 +2771,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var nameOfNextPoint as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -2779,9 +2779,9 @@ The name of the next point.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -2886,7 +2886,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var offCourseDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -2894,9 +2894,9 @@ The distance to the nearest point on the current course in meters (m).
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -3001,7 +3001,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var rawAmbientPressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -3011,9 +3011,9 @@ This returns ambient (local) barometric pressure as measured by the internal pre
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -3167,7 +3167,7 @@ API Level 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var rearDerailleurIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -3177,9 +3177,9 @@ Index values range from from 1 to the rearDerailleurMax.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -3276,7 +3276,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var rearDerailleurMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -3284,9 +3284,9 @@ The rear bicycle derailleur maximum index.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -3383,7 +3383,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var rearDerailleurSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -3391,9 +3391,9 @@ The rear bicycle derailleur gear size in number of teeth.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -3490,7 +3490,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var startLocation as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -3500,11 +3500,11 @@ This member will always provide a `null` value unless the Positioning Permission
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
 ### var startTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -3512,11 +3512,11 @@ The starting time of the current activity.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 ### var swimStrokeType as [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) or **Null**
 
@@ -3526,9 +3526,9 @@ Swim stroke type values range from 0-6. Each Number value represents a different
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -3668,7 +3668,7 @@ API Level 1.2.2
 
 Returns:
 
--   [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) —
+- [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) —
 
     A SWIM\_STROKE\_\* value
 
@@ -3681,9 +3681,9 @@ SWOLF is an abbreviation for Swim-Golf, a measure of swimming efficiency. The sc
 
 Since:
 
-API Level 1.2.2
+API 级别 1.2.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -3823,7 +3823,7 @@ API Level 1.2.2
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var timerState as [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) or **Null**
 
@@ -3833,11 +3833,11 @@ The timer state ranges from 0-3. A value of 0 indicates that the timer is off an
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Returns:
 
--   [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) —
+- [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) —
 
     A TIMER\_STATE\_\* value
 
@@ -3848,11 +3848,11 @@ The current Timer value in milliseconds (ms).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var totalAscent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -3860,11 +3860,11 @@ The total ascent during the current activity in meters (m).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var totalDescent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -3872,11 +3872,11 @@ The total descent during the current activity in meters (m).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var track as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -3886,9 +3886,9 @@ Track is the direction of travel in radians based on GPS movement. If supported 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -3993,7 +3993,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var trainingEffect as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -4003,14 +4003,14 @@ Training Effect is a score developed by FirstBeat, which indicates an activity's
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Training Effect](https://www.firstbeat.com/en/consumer-products/features/#training-effect)
+- [Training Effect](https://www.firstbeat.com/en/consumer-products/features/#training-effect)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -4183,4 +4183,4 @@ See Also:
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

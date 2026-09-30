@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
+- [Toybox.AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents general fitness equipment transmitted data. Fields may return `null` so you should `null` check values before using them.
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1000 / Explore
 -   Edge® 1030 / Bontrager
@@ -44,22 +44,22 @@ API Level 2.4.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**feDistance**](#feDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**feDistance**](#feDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The elapsed distance calculated by the trainer since reset Range is always greater than or equal to 0m.
 
--   [**feHeartRate**](#feHeartRate-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**feHeartRate**](#feHeartRate-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The heart rate calculated by the trainer.
 
--   [**feSpeed**](#feSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**feSpeed**](#feSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The speed calculated by the trainer.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var feDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -67,11 +67,11 @@ The elapsed distance calculated by the trainer since reset Range is always great
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-0xFFFFFFFF, units in meters
 
@@ -82,11 +82,11 @@ The heart rate calculated by the trainer. This may come from hand sensors, or an
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     0-254 bpm, invalid 0xFF
 
@@ -97,10 +97,10 @@ The speed calculated by the trainer
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     0-65.534m/s range, invalid 0xFFFF

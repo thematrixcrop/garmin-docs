@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)
+- [Toybox.AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Fitness Equipment
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1000 / Explore
 -   Edge® 1030 / Bontrager
@@ -46,18 +46,18 @@ API Level 2.4.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onFitnessEquipmentUpdate**](#onFitnessEquipmentUpdate-instance_function)(data as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) as **Void**
+- [**onFitnessEquipmentUpdate**](#onFitnessEquipmentUpdate-instance_function)(data as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) as **Void**
 
     Callback when fitness equipment data is updated.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -65,7 +65,7 @@ Constructor
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **onFitnessEquipmentUpdate(data as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/))** as **Void**
 
@@ -73,11 +73,11 @@ Callback when fitness equipment data is updated
 
 Parameters:
 
--   data — ([AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) —
+- data — ([AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) —
 
     Data with updated information
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0

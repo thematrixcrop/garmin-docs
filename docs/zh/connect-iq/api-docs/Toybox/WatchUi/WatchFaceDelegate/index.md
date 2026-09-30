@@ -7,69 +7,69 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+- [Toybox.WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Receive events on a Watch Face.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+- [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getComplicationDrawable**](#getComplicationDrawable-instance_function)(complication as [WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) or **Null**
+- [**getComplicationDrawable**](#getComplicationDrawable-instance_function)(complication as [WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) or **Null**
 
     Get a Drawable for highlighting purposes.
 
--   [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function)(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/)) as **Void**
+- [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function)(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/)) as **Void**
 
     Handle a partial update exceeding the power budget.
 
--   [**onPress**](#onPress-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onPress**](#onPress-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Called when user does a touch and hold.
 
--   [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A screen tap event has occurred.
+    发生了一次屏幕点击事件。
 
--   [**onWatchFaceConfigEdited**](#onWatchFaceConfigEdited-instance_function)(options as { :configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), :type as [WatchUi.WatchFaceConfigType](/connect-iq/api-docs/Toybox/WatchUi/#WatchFaceConfigType-module) or **Null**, :committed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
+- [**onWatchFaceConfigEdited**](#onWatchFaceConfigEdited-instance_function)(options as { :configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), :type as [WatchUi.WatchFaceConfigType](/connect-iq/api-docs/Toybox/WatchUi/#WatchFaceConfigType-module) or **Null**, :committed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
 
     A watchface config change has occurred.
 
--   [**setSelectedComplication**](#setSelectedComplication-instance_function)(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**setSelectedComplication**](#setSelectedComplication-instance_function)(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Set the selected complication field.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getComplicationDrawable(complication as [WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) or **Null**
 
@@ -79,12 +79,12 @@ Called by system to get a Drawable for the given complication field for highligh
 
 Parameters:
 
--   complication — (Complication) —
+- complication — (Complication) —
 
     The complication field to get the highlight drawable for.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -117,19 +117,19 @@ Parameters:
 
 Returns:
 
--   [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) —
+- [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) —
 
     The drawable that can be animated for highlighting purposes or `null`. In case of Drawable type, the bounding box is marked by the locX and locY as the top left corner, and the width and height as the size. In case of ComplicationDrawableRef, bounding box or other boundary type must be specified explicitly.
 
 
-See Also:
+另见：
 
--   [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onPowerBudgetExceeded(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/))** as **Void**
 
@@ -139,18 +139,18 @@ If the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPart
 
 Parameters:
 
--   powerInfo — ([WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/))
+- powerInfo — ([WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/))
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+- [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
--   [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
+- [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onPress(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -158,12 +158,12 @@ Called when user does a touch and hold
 
 Parameters:
 
--   clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
+- clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     Click event
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -238,27 +238,27 @@ Parameters:
 
 Returns:
 
--   true if the click event is handled, otherwise false.
+- true if the click event is handled, otherwise false.
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **onTap(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A screen tap event has occurred.
+发生了一次屏幕点击事件。
 
 Only available in WatchFace config mode. Can be overridden by application to change the selected `complication`, using [WatchFaceDelegate.setSelectedComplication()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#setSelectedComplication-instance_function)
 
 Parameters:
 
--   clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
+- clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     The click event that occurred
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -291,19 +291,19 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the event was handled, `false` otherwise.
 
 
-See Also:
+另见：
 
--   [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onWatchFaceConfigEdited(options as { :configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), :type as [WatchUi.WatchFaceConfigType](/connect-iq/api-docs/Toybox/WatchUi/#WatchFaceConfigType-module) or **Null**, :committed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as **Void**
 
@@ -313,24 +313,24 @@ Only available in WatchFace config mode, application can call [WatchFaceConfig.g
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options.
+    选项字典。
 
-    -   :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
+- :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
 
         The config id that has changed. This can be passed to [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to retrieve the current settings.
 
-    -   :type — (Type) —
+- :type — (Type) —
 
         The type of config that has changed. if missing or `null`, indicates the end of previous editing.
 
-    -   :committed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :committed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         `true` if user has committed the change, `false` otherwise.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -361,14 +361,14 @@ Parameters:
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **setSelectedComplication(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
@@ -378,12 +378,12 @@ Can be called by application when handling `onTap` event, to change the selected
 
 Parameters:
 
--   complicationIdentifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- complicationIdentifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The unique identifier of complication to set as selected.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -414,25 +414,25 @@ Parameters:
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if `complicationIdentifier` is a disallowed data type.
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown if watch face not in config mode.
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if `complicationIdentifier` is not found among valid complication fields.

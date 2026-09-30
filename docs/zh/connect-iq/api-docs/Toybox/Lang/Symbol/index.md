@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
+- [Toybox.Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Symbol is a lightweight constant identifier.
 
@@ -30,20 +30,20 @@ var person = {:first_name=>"Bob", :last_name=>"Jones"};
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Convert a Symbol to a Number This will return a number containing the integer value of the symbol.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a Symbol to a String This will return the string for the name of the symbol in development builds.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -53,14 +53,14 @@ This will return a number containing the integer value of the symbol.
 
 Returns:
 
--   Number —
+- Number —
 
     The number representation of the Symbol
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -70,11 +70,11 @@ This will return the string for the name of the symbol in development builds. Be
 
 Returns:
 
--   String —
+- String —
 
     The String representation of the Symbol
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

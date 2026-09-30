@@ -7,42 +7,42 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Authentication.Message](/connect-iq/api-docs/Toybox/Authentication/Message/)
+- [Toybox.Authentication.Message](/connect-iq/api-docs/Toybox/Authentication/Message/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The base class for messages.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**data**](#data-var) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
+- [**data**](#data-var) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    The data delivered by the message.
+    消息携带的数据。
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var data as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-The data delivered by the message.
+消息携带的数据。
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)

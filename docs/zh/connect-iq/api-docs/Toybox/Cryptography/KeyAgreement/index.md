@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
+- [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A local private key in combination with a public key to generate a shared secret.
 
@@ -104,7 +104,7 @@ keyAgreementBob.addKey(keyPairAlice.getPublicKey());
 var secretKeyBobAndAlice = keyAgreementBob.generateSecret();
 
 // Bob and Alice now have a shared secret without exposing either of
-// their private keys. This secret 可用于 sign or encrypt
+// their private keys. This secret can be used to sign or encrypt
 // messages between Alice and Bob. Sanity check shared secret is same
 // for both Alice and Bob.
 System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // prints 'true'
@@ -112,9 +112,9 @@ System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // prints 'tr
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -263,22 +263,22 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addKey**](#addKey-instance_function)(key as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) as **Void**
+- [**addKey**](#addKey-instance_function)(key as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) as **Void**
 
     Add a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) to KeyAgreement.
 
--   [**generateSecret**](#generateSecret-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**generateSecret**](#generateSecret-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
     Generate a shared secret for the KeyAgreement.
 
--   [**initialize**](#initialize-instance_function)(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })
+- [**initialize**](#initialize-instance_function)(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addKey(key as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/))** as **Void**
 
@@ -286,18 +286,18 @@ Add a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) to KeyAgreemen
 
 Parameters:
 
--   key — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
+- key — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
 
     The public key to add to the agreement
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if the specified key is not valid for the selected algorithm
 
@@ -308,14 +308,14 @@ Generate a shared secret for the KeyAgreement.
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     The secret for the KeyAgreement
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })**
 
@@ -323,29 +323,29 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A dictionary of options for the KeyAgreement
 
-    -   :protocol — ([Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module)) —
+- :protocol — ([Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module)) —
 
         The protocol to use as a [KEY\_AGREEMENT\_\*](/connect-iq/api-docs/Toybox/Cryptography/) value
 
-    -   :privateKey — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
+- :privateKey — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
 
         The private key in the KeyAgreement
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if an argument is not the correct type
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if the specified private key is not the correct size for the selected algorithm, or if the selected protocol is not supported

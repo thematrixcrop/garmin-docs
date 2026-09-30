@@ -3,234 +3,234 @@ title: "Edge® 1030 Plus"
 ---
 # Edge® 1030 Plus
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | edge1030plus |
-| Screen Shape | rectangle |
-| Screen Size | 282 x 470 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | start, lap, menu, esc |
-| Launcher Icon Size | 36 x 36 |
+| 标识 | edge1030plus |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 282 x 470 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | start, lap, menu, esc |
+| 启动图标尺寸 | 36 x 36 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 131072 |  |
-| Watch App | 1048576 |  |
-| Widget | 1048576 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 手表应用 | 1048576 |  |
+| 微件 | 1048576 |  |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/edge1030plus/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 470 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 470 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/edge1030plus/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 234 | 0 | False | False | False | False |
-| Field 2 | 0 | 236 | 282 | 234 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 234 | 0 | False | False | False | False |
+| 字段 2 | 0 | 236 | 282 | 234 | 0 | False | False | False | False |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/edge1030plus/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 155 | 0 | False | False | False | False |
-| Field 2 | 0 | 158 | 282 | 154 | 0 | False | False | False | False |
-| Field 3 | 0 | 315 | 282 | 155 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 155 | 0 | False | False | False | False |
+| 字段 2 | 0 | 158 | 282 | 154 | 0 | False | False | False | False |
+| 字段 3 | 0 | 315 | 282 | 155 | 0 | False | False | False | False |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/edge1030plus/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
-| Field 3 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| 字段 3 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/edge1030plus/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 116 | 0 | False | False | False | False |
-| Field 2 | 0 | 119 | 282 | 115 | 0 | False | False | False | False |
-| Field 3 | 0 | 237 | 282 | 115 | 0 | False | False | False | False |
-| Field 4 | 0 | 354 | 282 | 116 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 116 | 0 | False | False | False | False |
+| 字段 2 | 0 | 119 | 282 | 115 | 0 | False | False | False | False |
+| 字段 3 | 0 | 237 | 282 | 115 | 0 | False | False | False | False |
+| 字段 4 | 0 | 354 | 282 | 116 | 0 | False | False | False | False |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/edge1030plus/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 282 | 187 | 0 | False | False | False | False |
 
-**5 Fields A Layout**
+**5 字段 A 布局**
 
 
 ![5 Fields A](/connect-iq/resources/device-reference/edge1030plus/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
-| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| 字段 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
 
-**5 Fields B Layout**
+**5 字段 B 布局**
 
 
 ![5 Fields B](/connect-iq/resources/device-reference/edge1030plus/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
-| Field 3 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 4 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| 字段 3 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 4 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 377 | 282 | 93 | 0 | False | False | False | False |
 
-**6 Fields A Layout**
+**6 字段 A 布局**
 
 
 ![6 Fields A](/connect-iq/resources/device-reference/edge1030plus/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
-| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| 字段 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**6 Fields B Layout**
+**6 字段 B 布局**
 
 
 ![6 Fields B](/connect-iq/resources/device-reference/edge1030plus/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 282 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 6 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**7 Fields A Layout**
+**7 字段 A 布局**
 
 
 ![7 Fields A](/connect-iq/resources/device-reference/edge1030plus/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
-| Field 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| 字段 3 | 0 | 189 | 282 | 92 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**7 Fields B Layout**
+**7 字段 B 布局**
 
 
 ![7 Fields B](/connect-iq/resources/device-reference/edge1030plus/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
-| Field 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 3 | 0 | 95 | 282 | 186 | 0 | False | False | False | False |
+| 字段 4 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 6 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 7 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/edge1030plus/layout12.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
-| Field 3 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 4 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 6 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 7 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 8 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 282 | 92 | 0 | False | False | False | False |
+| 字段 3 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 4 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 6 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 7 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 8 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**9 Fields Layout**
+**9 字段布局**
 
 
 ![9 Fields](/connect-iq/resources/device-reference/edge1030plus/layout13.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
-| Field 2 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
-| Field 3 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
-| Field 4 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 6 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 7 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 8 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 9 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 282 | 93 | 0 | False | False | False | False |
+| 字段 2 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
+| 字段 3 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
+| 字段 4 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 6 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 7 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 8 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 9 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**10 Fields Layout**
+**10 字段布局**
 
 
 ![10 Fields](/connect-iq/resources/device-reference/edge1030plus/layout14.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
-| Field 3 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
-| Field 4 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
-| Field 5 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 6 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
-| Field 7 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 8 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
-| Field 9 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
-| Field 10 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 2 | 142 | 0 | 140 | 93 | 0 | False | False | False | False |
+| 字段 3 | 0 | 95 | 140 | 92 | 0 | False | False | False | False |
+| 字段 4 | 142 | 95 | 140 | 92 | 0 | False | False | False | False |
+| 字段 5 | 0 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 6 | 142 | 189 | 140 | 92 | 0 | False | False | False | False |
+| 字段 7 | 0 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 8 | 142 | 283 | 140 | 92 | 0 | False | False | False | False |
+| 字段 9 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
+| 字段 10 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
 **Part Number 006-B3570-00**
 
-*Languages*
+*语言*
 
 ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 | FONT\_TINY | Roboto Condensed | 22 | ROBOTO\_CONDENSED\_22 |
@@ -246,13 +246,13 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 
 **Part Number 006-B3812-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 | FONT\_TINY | Roboto Condensed | 22 | ROBOTO\_CONDENSED\_22 |
@@ -266,13 +266,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFHeiW5-A | 15 | DFHEI\_15 |
 | FONT\_TINY | DFHeiW5-A | 22 | DFHEI\_22 |
@@ -286,13 +286,13 @@ zhs, zht
 | FONT\_GLANCE | DFHeiW5-A | 15 | DFHEI\_15 |
 | FONT\_GLANCE\_NUMBER | DFHeiW5-A | 15 | DFHEI\_15 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | DFPHSGothic-W3 | 15 | DFPHSGOTHIC\_15 |
 | FONT\_TINY | DFPHSGothic-W3 | 22 | DFPHSGOTHIC\_22 |
@@ -306,13 +306,13 @@ jpn
 | FONT\_GLANCE | DFPHSGothic-W3 | 15 | DFPHSGOTHIC\_15 |
 | FONT\_GLANCE\_NUMBER | DFPHSGothic-W3 | 15 | DFPHSGOTHIC\_15 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING\_BOLD\_15 |
 | FONT\_TINY | NanumGothicCoding-Bold | 22 | NANUMGOTHICCODING\_BOLD\_22 |
@@ -326,13 +326,13 @@ kor
 | FONT\_GLANCE | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING\_BOLD\_15 |
 | FONT\_GLANCE\_NUMBER | NanumGothicCoding-Bold | 15 | NANUMGOTHICCODING\_BOLD\_15 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

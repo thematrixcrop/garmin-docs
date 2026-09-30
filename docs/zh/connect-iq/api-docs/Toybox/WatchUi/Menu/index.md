@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)
+- [Toybox.WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen menu.
 
@@ -22,14 +22,14 @@ A Menu is a special View that presents the user with a list of options. After an
 
 A Menu is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/) as the input delegate.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)
+- [Toybox.WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)
 
--   [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
+- [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
 
 
-Note:
+注意：
 
 The look and feel of a menu is device-specific.
 
@@ -60,50 +60,50 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Constant Summary
+## 常量摘要
 
-### Constant Variables
+### 常量变量
 
-| Type | Name | Value | Since | Description |
+| 类型 | 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- | --- |
-| Type | MAX\_SIZE | 16 |
-API Level 1.0.0
+| 类型 | MAX\_SIZE | 16 |
+API 级别 1.0.0
 
- |
+|
 
 The maximum number of allowed entries in a Menu.
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addItem**](#addItem-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), identifier as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
+- [**addItem**](#addItem-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), identifier as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
 
     Add an entry to a Menu.
 
--   [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
+- [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
     Set a Menu title.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addItem(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), identifier as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as **Void**
 
@@ -111,18 +111,18 @@ Add an entry to a Menu.
 
 Parameters:
 
--   label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     The item text as a String or string ResourceId
 
--   identifier — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- identifier — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     A Symbol representing the Menu item value
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **setTitle(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
 
@@ -130,11 +130,11 @@ Set a Menu title.
 
 Parameters:
 
--   title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     The title text or a string ResourceId
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

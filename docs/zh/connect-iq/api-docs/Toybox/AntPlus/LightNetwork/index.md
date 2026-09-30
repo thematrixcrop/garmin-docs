@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/)
+- [Toybox.AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class representing a network of bike lights
 
@@ -65,9 +65,9 @@ class MyLightNetworkListener extends AntPlus.LightNetworkListener {
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -219,46 +219,46 @@ API Level 2.2.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getBikeLights**](#getBikeLights-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)\> or **Null**
+- [**getBikeLights**](#getBikeLights-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)\> or **Null**
 
     Get a list of lights in the network.
 
--   [**getNetworkMode**](#getNetworkMode-instance_function)() as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
+- [**getNetworkMode**](#getNetworkMode-instance_function)() as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
 
     Get the light network mode.
 
--   [**getNetworkState**](#getNetworkState-instance_function)() as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)
+- [**getNetworkState**](#getNetworkState-instance_function)() as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)
 
     Get the light network state.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) or **Null**)
 
     Constructor.
 
--   [**restoreHeadlightsNetworkModeControl**](#restoreHeadlightsNetworkModeControl-instance_function)() as **Void**
+- [**restoreHeadlightsNetworkModeControl**](#restoreHeadlightsNetworkModeControl-instance_function)() as **Void**
 
     Bring all headlights under the control of whichever light network mode has been chosen by the user.
 
--   [**restoreTaillightsNetworkModeControl**](#restoreTaillightsNetworkModeControl-instance_function)() as **Void**
+- [**restoreTaillightsNetworkModeControl**](#restoreTaillightsNetworkModeControl-instance_function)() as **Void**
 
     Bring all taillights under the control of whichever light network mode has been chosen by the user.
 
--   [**setHeadlightsMode**](#setHeadlightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
+- [**setHeadlightsMode**](#setHeadlightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
     Tell all headlights to enter the same mode.
 
--   [**setTaillightsMode**](#setTaillightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
+- [**setTaillightsMode**](#setTaillightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
     Tell all taillights to enter the same mode.
 
--   [**toggleSignalLight**](#toggleSignalLight-instance_function)(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
+- [**toggleSignalLight**](#toggleSignalLight-instance_function)(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
     A signal switch for right and left signals.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getBikeLights()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)\> or **Null**
 
@@ -266,14 +266,14 @@ Get a list of lights in the network.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     List of lights that are part of the network, `null` if light network state is not [LIGHT\_NETWORK\_STATE\_FORMED](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getNetworkMode()** as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
 
@@ -281,14 +281,14 @@ Get the light network mode.
 
 Returns:
 
--   [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module) —
+- [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module) —
 
-    The [LIGHT\_NETWORK\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_MODE_AUTO-const) enum value
+    [LIGHT\_NETWORK\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_MODE_AUTO-const) 枚举值
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getNetworkState()** as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)
 
@@ -296,14 +296,14 @@ Get the light network state.
 
 Returns:
 
--   [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module) —
+- [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module) —
 
-    The [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) enum value
+    [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) 枚举值
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **initialize(listener as [AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) or **Null**)**
 
@@ -311,14 +311,14 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)) —
+- listener — ([AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)) —
 
     The light network instance optionally takes an extension of the [LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **restoreHeadlightsNetworkModeControl()** as **Void**
 
@@ -326,7 +326,7 @@ Bring all headlights under the control of whichever light network mode has been 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **restoreTaillightsNetworkModeControl()** as **Void**
 
@@ -334,7 +334,7 @@ Bring all taillights under the control of whichever light network mode has been 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **setHeadlightsMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
@@ -344,14 +344,14 @@ You should check the capable modes of each headlight in the network before sendi
 
 Parameters:
 
--   mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
+- mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
-    The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) enum value
+    [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举值
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **setTaillightsMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
@@ -361,36 +361,36 @@ You should check the capable modes of each taillight in the network before sendi
 
 Parameters:
 
--   mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
+- mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
-    The [LIGHT\_MODE\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) enum value
+    [LIGHT\_MODE\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举值
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **toggleSignalLight(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
 A signal switch for right and left signals.
 
--   If signal light is engaged, disengage it.
+- If signal light is engaged, disengage it.
 
--   If signal light is disengaged, engage it.
+- If signal light is disengaged, engage it.
 
 
 \*This will automatically disengage the opposite signal if it is currently engaged.
 
 Parameters:
 
--   left — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- left — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    -   `true` to control left signal
+- `true` to control left signal
 
-    -   `false` to control right signal
+- `false` to control right signal
 
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

@@ -3,183 +3,183 @@ title: "Venu® X1"
 ---
 # Venu® X1
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | venux1 |
-| Screen Shape | rectangle |
-| Screen Size | 448 x 486 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, esc |
-| Launcher Icon Size | 65 x 65 |
+| 标识 | venux1 |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 448 x 486 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, esc |
+| 启动图标尺寸 | 65 x 65 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/venux1/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 486 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 486 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/venux1/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 241 | 0 | False | False | False | False |
-| Field 2 | 0 | 244 | 448 | 242 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 241 | 0 | False | False | False | False |
+| 字段 2 | 0 | 244 | 448 | 242 | 0 | False | False | False | False |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/venux1/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 169 | 0 | False | False | False | False |
-| Field 2 | 0 | 169 | 448 | 138 | 0 | False | False | False | False |
-| Field 3 | 0 | 312 | 448 | 174 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 169 | 0 | False | False | False | False |
+| 字段 2 | 0 | 169 | 448 | 138 | 0 | False | False | False | False |
+| 字段 3 | 0 | 312 | 448 | 174 | 0 | False | False | False | False |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/venux1/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 156 | 0 | False | False | False | False |
-| Field 2 | 0 | 159 | 448 | 169 | 0 | False | False | False | False |
-| Field 3 | 0 | 331 | 448 | 155 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 156 | 0 | False | False | False | False |
+| 字段 2 | 0 | 159 | 448 | 169 | 0 | False | False | False | False |
+| 字段 3 | 0 | 331 | 448 | 155 | 0 | False | False | False | False |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/venux1/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 241 | 0 | False | False | False | False |
-| Field 2 | 0 | 244 | 222 | 242 | 0 | False | False | False | False |
-| Field 3 | 225 | 244 | 222 | 242 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 241 | 0 | False | False | False | False |
+| 字段 2 | 0 | 244 | 222 | 242 | 0 | False | False | False | False |
+| 字段 3 | 225 | 244 | 222 | 242 | 0 | False | False | False | False |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/venux1/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 173 | 0 | False | False | False | False |
-| Field 2 | 0 | 176 | 222 | 144 | 0 | False | False | False | False |
-| Field 3 | 225 | 176 | 222 | 144 | 0 | False | False | False | False |
-| Field 4 | 0 | 323 | 448 | 163 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 173 | 0 | False | False | False | False |
+| 字段 2 | 0 | 176 | 222 | 144 | 0 | False | False | False | False |
+| 字段 3 | 225 | 176 | 222 | 144 | 0 | False | False | False | False |
+| 字段 4 | 0 | 323 | 448 | 163 | 0 | False | False | False | False |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/venux1/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 222 | 241 | 0 | False | False | False | False |
-| Field 2 | 225 | 0 | 222 | 241 | 0 | False | False | False | False |
-| Field 3 | 0 | 244 | 222 | 242 | 0 | False | False | False | False |
-| Field 4 | 225 | 244 | 222 | 242 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 222 | 241 | 0 | False | False | False | False |
+| 字段 2 | 225 | 0 | 222 | 241 | 0 | False | False | False | False |
+| 字段 3 | 0 | 244 | 222 | 242 | 0 | False | False | False | False |
+| 字段 4 | 225 | 244 | 222 | 242 | 0 | False | False | False | False |
 
-**4 Fields C Layout**
+**4 字段 C 布局**
 
 
 ![4 Fields C](/connect-iq/resources/device-reference/venux1/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
-| Field 2 | 0 | 124 | 448 | 117 | 0 | False | False | False | False |
-| Field 3 | 0 | 244 | 448 | 120 | 0 | False | False | False | False |
-| Field 4 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
+| 字段 2 | 0 | 124 | 448 | 117 | 0 | False | False | False | False |
+| 字段 3 | 0 | 244 | 448 | 120 | 0 | False | False | False | False |
+| 字段 4 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
 
-**5 Fields Layout**
+**5 字段布局**
 
 
 ![5 Fields](/connect-iq/resources/device-reference/venux1/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
-| Field 2 | 0 | 124 | 448 | 117 | 0 | False | False | False | False |
-| Field 3 | 0 | 244 | 222 | 120 | 0 | False | False | False | False |
-| Field 4 | 225 | 244 | 222 | 120 | 0 | False | False | False | False |
-| Field 5 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
+| 字段 2 | 0 | 124 | 448 | 117 | 0 | False | False | False | False |
+| 字段 3 | 0 | 244 | 222 | 120 | 0 | False | False | False | False |
+| 字段 4 | 225 | 244 | 222 | 120 | 0 | False | False | False | False |
+| 字段 5 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/venux1/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
-| Field 2 | 0 | 124 | 222 | 117 | 0 | False | False | False | False |
-| Field 3 | 0 | 244 | 222 | 120 | 0 | False | False | False | False |
-| Field 4 | 225 | 244 | 222 | 120 | 0 | False | False | False | False |
-| Field 5 | 226 | 124 | 222 | 117 | 0 | False | False | False | False |
-| Field 6 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 121 | 0 | False | False | False | False |
+| 字段 2 | 0 | 124 | 222 | 117 | 0 | False | False | False | False |
+| 字段 3 | 0 | 244 | 222 | 120 | 0 | False | False | False | False |
+| 字段 4 | 225 | 244 | 222 | 120 | 0 | False | False | False | False |
+| 字段 5 | 226 | 124 | 222 | 117 | 0 | False | False | False | False |
+| 字段 6 | 0 | 367 | 448 | 119 | 0 | False | False | False | False |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/venux1/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 85 | 0 | False | False | False | False |
-| Field 2 | 0 | 90 | 222 | 100 | 0 | False | False | False | False |
-| Field 3 | 225 | 90 | 222 | 100 | 0 | False | False | False | False |
-| Field 4 | 0 | 198 | 448 | 88 | 0 | False | False | False | False |
-| Field 5 | 0 | 296 | 222 | 100 | 0 | False | False | False | False |
-| Field 6 | 225 | 296 | 222 | 100 | 0 | False | False | False | False |
-| Field 7 | 0 | 401 | 448 | 85 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 85 | 0 | False | False | False | False |
+| 字段 2 | 0 | 90 | 222 | 100 | 0 | False | False | False | False |
+| 字段 3 | 225 | 90 | 222 | 100 | 0 | False | False | False | False |
+| 字段 4 | 0 | 198 | 448 | 88 | 0 | False | False | False | False |
+| 字段 5 | 0 | 296 | 222 | 100 | 0 | False | False | False | False |
+| 字段 6 | 225 | 296 | 222 | 100 | 0 | False | False | False | False |
+| 字段 7 | 0 | 401 | 448 | 85 | 0 | False | False | False | False |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/venux1/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 448 | 85 | 0 | False | False | False | False |
-| Field 2 | 0 | 90 | 222 | 100 | 0 | False | False | False | False |
-| Field 3 | 225 | 90 | 222 | 100 | 0 | False | False | False | False |
-| Field 4 | 0 | 193 | 222 | 100 | 0 | False | False | False | False |
-| Field 5 | 0 | 296 | 222 | 100 | 0 | False | False | False | False |
-| Field 6 | 225 | 296 | 222 | 100 | 0 | False | False | False | False |
-| Field 7 | 225 | 193 | 222 | 100 | 0 | False | False | False | False |
-| Field 8 | 0 | 401 | 448 | 85 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 448 | 85 | 0 | False | False | False | False |
+| 字段 2 | 0 | 90 | 222 | 100 | 0 | False | False | False | False |
+| 字段 3 | 225 | 90 | 222 | 100 | 0 | False | False | False | False |
+| 字段 4 | 0 | 193 | 222 | 100 | 0 | False | False | False | False |
+| 字段 5 | 0 | 296 | 222 | 100 | 0 | False | False | False | False |
+| 字段 6 | 225 | 296 | 222 | 100 | 0 | False | False | False | False |
+| 字段 7 | 225 | 193 | 222 | 100 | 0 | False | False | False | False |
+| 字段 8 | 0 | 401 | 448 | 85 | 0 | False | False | False | False |
 
 **Part Number 006-B4603-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto | 37 | Roboto-Regular |
 | FONT\_TINY | Roboto | 47 | Roboto-Regular |
@@ -208,13 +208,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC | 47 | NotoSansSC-Medium |
 | FONT\_TINY | Noto Sans SC | 61 | NotoSansSC-Medium |
@@ -243,13 +243,13 @@ zhs, zht
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar | 31 | Kosugi-Regular |
 | FONT\_TINY | MotoyaLCedar | 41 | Kosugi-Regular |
@@ -278,13 +278,13 @@ jpn
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothic | 36 | NanumGothic-Bold |
 | FONT\_TINY | NanumGothic | 47 | NanumGothic-Bold |
@@ -313,13 +313,13 @@ kor
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Pridi | 49 | Pridi-Regular |
 | FONT\_TINY | Pridi | 64 | Pridi-Regular |

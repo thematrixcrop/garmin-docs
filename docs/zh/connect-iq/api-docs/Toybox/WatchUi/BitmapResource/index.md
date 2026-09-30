@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)
+- [Toybox.WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of a bitmap resource.
 
@@ -22,39 +22,39 @@ BitmapResource objects are returned by the [loadResource()](/connect-iq/api-docs
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the height of a bitmap resource.
 
--   [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the width of a bitmap resource.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Get info about a bitmap resource as a String.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -62,14 +62,14 @@ Get the height of a bitmap resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Height of the bitmap in pixels
+    位图高度（像素）
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -77,14 +77,14 @@ Get the width of a bitmap resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Width of the bitmap in pixels
+    位图宽度（像素）
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -94,11 +94,11 @@ The info String is formatted as "Bitmap X x Y" where "X" is the width of the bit
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A String representation of the BitmapResource object
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

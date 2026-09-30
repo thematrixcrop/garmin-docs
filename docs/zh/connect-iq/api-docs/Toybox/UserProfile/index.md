@@ -3,7 +3,7 @@ title: "Module: Toybox.UserProfile"
 ---
 # Module: Toybox.UserProfile
 
-## Overview
+## 概述
 
 The UserProfile module will allow apps to access user information.
 
@@ -22,39 +22,39 @@ System.out.println("The user was born in " + profile.birthYear);
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-Requires Permission:
+需要权限：
 
--   UserProfile
+- UserProfile
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/), [UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/), [UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
+类：[Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/), [UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/), [UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
-## Constant Summary
+## 常量摘要
 
 ### Gender
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | GENDER\_FEMALE | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | GENDER\_MALE | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
  |  |
 | GENDER\_UNSPECIFIED | 2 |
 
-API Level 4.2.3
+API 级别 4.2.3
 
  |  |
 
@@ -62,66 +62,66 @@ API Level 4.2.3
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | HR\_ZONE\_SPORT\_GENERIC | 0 |
-API Level 1.2.6
+API 级别 1.2.6
 
  |  |
 | HR\_ZONE\_SPORT\_RUNNING | 1 |
 
-API Level 1.2.6
+API 级别 1.2.6
 
  |  |
 | HR\_ZONE\_SPORT\_BIKING | 2 |
 
-API Level 1.2.6
+API 级别 1.2.6
 
  |  |
 | HR\_ZONE\_SPORT\_SWIMMING | 3 |
 
-API Level 1.2.6
+API 级别 1.2.6
 
  |  |
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCurrentSport**](#getCurrentSport-instance_function)() as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)
+- [**getCurrentSport**](#getCurrentSport-instance_function)() as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)
 
     Return the sport for which the current activity retrieves heart rate zone thresholds.
 
--   [**getCurrentSport2**](#getCurrentSport2-instance_function)() as \[ [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) \]
+- [**getCurrentSport2**](#getCurrentSport2-instance_function)() as \[ [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) \]
 
     Return the sport for the current activity.
 
--   [**getFunctionalThresholdPower**](#getFunctionalThresholdPower-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**getFunctionalThresholdPower**](#getFunctionalThresholdPower-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Return the user's functional threshold power (FTP).
 
--   [**getHeartRateZones**](#getHeartRateZones-instance_function)(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
+- [**getHeartRateZones**](#getHeartRateZones-instance_function)(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
     Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm) The returned Array contains zone values as follows: \* min zone 1 - The minimum heart rate threshold for zone 1 \* max zone 1 - The maximum heart rate threshold for zone 1 \* max zone 2 - The maximum heart rate threshold for zone 2 \* max zone 3 - The maximum heart rate threshold for zone 3 \* max zone 4 - The maximum heart rate threshold for zone 4 \* max zone 5 - The maximum heart rate threshold for zone 5.
 
--   [**getHeartRateZones2**](#getHeartRateZones2-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
+- [**getHeartRateZones2**](#getHeartRateZones2-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
     Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm) The returned Array contains zone values as follows: \* min zone 1 - The minimum heart rate threshold for zone 1 \* max zone 1 - The maximum heart rate threshold for zone 1 \* max zone 2 - The maximum heart rate threshold for zone 2 \* max zone 3 - The maximum heart rate threshold for zone 3 \* max zone 4 - The maximum heart rate threshold for zone 4 \* max zone 5 - The maximum heart rate threshold for zone 5.
 
--   [**getPowerZones**](#getPowerZones-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
+- [**getPowerZones**](#getPowerZones-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
     Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current power zone threshold values in watts (W).
 
--   [**getProfile**](#getProfile-instance_function)() as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
+- [**getProfile**](#getProfile-instance_function)() as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
     Retrieve the current [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) object.
 
--   [**getUserActivityHistory**](#getUserActivityHistory-instance_function)() as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
+- [**getUserActivityHistory**](#getUserActivityHistory-instance_function)() as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
     Get an iterator for Activity history for the user.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCurrentSport()** as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)
 
@@ -138,14 +138,14 @@ var profile = UserProfile.getCurrentSport();
 
 Returns:
 
--   [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module) —
+- [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module) —
 
     The current HR zone sport from the [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) enum.
 
 
 Since:
 
-API Level 1.2.6
+API 级别 1.2.6
 
 ### **getCurrentSport2()** as \[ [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) \]
 
@@ -153,14 +153,14 @@ Return the sport for the current activity.
 
 Returns:
 
--   [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
+- [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
     The current sport from the [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) enum.
 
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **getFunctionalThresholdPower(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -168,7 +168,7 @@ Return the user's functional threshold power (FTP).
 
 Parameters:
 
--   sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
+- sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     The sport that FTP is being requested from. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
 
@@ -182,7 +182,7 @@ using Toybox.UserProfile;
 var thresholdPower = UserProfile.getFunctionalThresholdPower(Activity.SPORT_CYCLING);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -222,14 +222,14 @@ var thresholdPower = UserProfile.getFunctionalThresholdPower(Activity.SPORT_CYCL
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The FTP value for the requested sport. If the given sport does not have an FTP value configured, the value from a default sport will be given, or `null` will be returned on error.
 
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **getHeartRateZones(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
@@ -237,22 +237,22 @@ Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current hear
 
 The returned Array contains zone values as follows:
 
--   min zone 1 - The minimum heart rate threshold for zone 1
+- min zone 1 - The minimum heart rate threshold for zone 1
 
--   max zone 1 - The maximum heart rate threshold for zone 1
+- max zone 1 - The maximum heart rate threshold for zone 1
 
--   max zone 2 - The maximum heart rate threshold for zone 2
+- max zone 2 - The maximum heart rate threshold for zone 2
 
--   max zone 3 - The maximum heart rate threshold for zone 3
+- max zone 3 - The maximum heart rate threshold for zone 3
 
--   max zone 4 - The maximum heart rate threshold for zone 4
+- max zone 4 - The maximum heart rate threshold for zone 4
 
--   max zone 5 - The maximum heart rate threshold for zone 5
+- max zone 5 - The maximum heart rate threshold for zone 5
 
 
 Parameters:
 
--   sport — ([UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) —
+- sport — ([UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) —
 
     The sport that zones are being requested from. Should be a [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) value.
 
@@ -268,14 +268,14 @@ var genericZoneInfo = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GE
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of zone thresholds for the requested sport.
 
 
 Since:
 
-API Level 1.2.6
+API 级别 1.2.6
 
 ### **getHeartRateZones2(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
@@ -283,22 +283,22 @@ Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current hear
 
 The returned Array contains zone values as follows:
 
--   min zone 1 - The minimum heart rate threshold for zone 1
+- min zone 1 - The minimum heart rate threshold for zone 1
 
--   max zone 1 - The maximum heart rate threshold for zone 1
+- max zone 1 - The maximum heart rate threshold for zone 1
 
--   max zone 2 - The maximum heart rate threshold for zone 2
+- max zone 2 - The maximum heart rate threshold for zone 2
 
--   max zone 3 - The maximum heart rate threshold for zone 3
+- max zone 3 - The maximum heart rate threshold for zone 3
 
--   max zone 4 - The maximum heart rate threshold for zone 4
+- max zone 4 - The maximum heart rate threshold for zone 4
 
--   max zone 5 - The maximum heart rate threshold for zone 5
+- max zone 5 - The maximum heart rate threshold for zone 5
 
 
 Parameters:
 
--   sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
+- sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     The sport that zones are being requested for. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
 
@@ -314,14 +314,14 @@ var zoneInfo = UserProfile.getHeartRateZones2(Activity.SPORT_GENERIC);
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of zone thresholds for the requested sport. If the given sport does not have heart rate zones configured, zones for a default sport will be returned, or `null` will be returned on error.
 
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **getPowerZones(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
@@ -329,7 +329,7 @@ Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current powe
 
 Parameters:
 
--   sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
+- sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     The sport that zones are being requested from. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
 
@@ -343,7 +343,7 @@ using Toybox.UserProfile;
 var zoneInfo = UserProfile.getPowerZones(Activity.SPORT_RUNNING);
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -383,14 +383,14 @@ var zoneInfo = UserProfile.getPowerZones(Activity.SPORT_RUNNING);
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of zone thresholds for the requested sport. If the given sport does not have power zones configured, zones for a default sport will be returned, or `null` will be returned on error.
 
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **getProfile()** as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
@@ -405,14 +405,14 @@ var profile = UserProfile.getProfile();
 
 Returns:
 
--   [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) —
+- [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) —
 
     The Profile object for the current user
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getUserActivityHistory()** as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
@@ -438,11 +438,11 @@ while (sample != null) {
 
 Returns:
 
--   [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/) —
+- [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/) —
 
     Iterator object
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0

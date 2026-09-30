@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)
+- [Toybox.AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for use with LightNetwork.
 
@@ -53,9 +53,9 @@ function onBikeLightUpdate(data) {
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -207,22 +207,22 @@ API Level 2.2.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onBikeLightUpdate**](#onBikeLightUpdate-instance_function)(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) as **Void**
+- [**onBikeLightUpdate**](#onBikeLightUpdate-instance_function)(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) as **Void**
 
     Callback when a bike light's data is updated (max freq.
 
--   [**onLightNetworkStateUpdate**](#onLightNetworkStateUpdate-instance_function)(data as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)) as **Void**
+- [**onLightNetworkStateUpdate**](#onLightNetworkStateUpdate-instance_function)(data as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)) as **Void**
 
     Callback when the light network state changes.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -230,7 +230,7 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onBikeLightUpdate(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/))** as **Void**
 
@@ -238,14 +238,14 @@ Callback when a bike light's data is updated (max freq. 1Hz)
 
 Parameters:
 
--   data — ([AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) —
+- data — ([AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) —
 
     The updated light information
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onLightNetworkStateUpdate(data as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module))** as **Void**
 
@@ -253,11 +253,11 @@ Callback when the light network state changes
 
 Parameters:
 
--   data — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- data — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) enum value
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

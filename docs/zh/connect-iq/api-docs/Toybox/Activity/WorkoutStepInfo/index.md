@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)
+- [Toybox.Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The WorkoutStepInfo class contains information about the current workout.
 
@@ -22,9 +22,9 @@ This information can be retrieved with the [getCurrentWorkoutStep()](/connect-iq
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -155,34 +155,34 @@ API Level 3.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**intensity**](#intensity-var) as [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module)
+- [**intensity**](#intensity-var) as [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module)
 
     The intensity of the step.
 
--   [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The name of the current step.
 
--   [**notes**](#notes-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**notes**](#notes-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The notes for the current step.
 
--   [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
+- [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
     The sport for the workout step.
 
--   [**step**](#step-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
+- [**step**](#step-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
     Duration and target information about the step.
 
--   [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
+- [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
     The subsport for the workout step.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var intensity as [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module)
 
@@ -190,11 +190,11 @@ The intensity of the step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module) —
+- [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module) —
 
     a WORKOUT\_INTENSITY\_\* value
 
@@ -205,11 +205,11 @@ The name of the current step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var notes as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -217,11 +217,11 @@ The notes for the current step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
@@ -229,11 +229,11 @@ The sport for the workout step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
+- [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
     A SPORT\_\* value
 
@@ -244,11 +244,11 @@ Duration and target information about the step
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/), [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
+- [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/), [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
 ### var subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
@@ -256,10 +256,10 @@ The subsport for the workout step. Currently only valid for breathing and swim w
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
+- [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 
     A SUB\_SPORT\_\* value, or `null`

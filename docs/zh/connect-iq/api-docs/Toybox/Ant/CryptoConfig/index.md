@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
+- [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class to handle encryption of ANT wireless data.
 
-## See Also:
+## 另见：
 
--   [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
 
 
 Example:
@@ -54,9 +54,9 @@ cryptoConfig = new Ant.CryptoConfig({
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -194,78 +194,78 @@ API Level 2.3.0
 
 :::
 
-## Constant Summary
+## 常量摘要
 
-### Constant Variables
+### 常量变量
 
-| Type | Name | Value | Since | Description |
+| 类型 | 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- | --- |
-| Type | DEFAULT\_ENCRYPTION\_ID | 0 |
-API Level 2.3.0
+| 类型 | DEFAULT\_ENCRYPTION\_ID | 0 |
+API 级别 2.3.0
 
  |  |
-| Type | DEFAULT\_USER\_INFO\_STRING | 0 |
+| 类型 | DEFAULT\_USER\_INFO\_STRING | 0 |
 
-API Level 2.3.0
-
- |  |
-| Type | ENCRYPTION\_KEY\_LENGTH | 16 |
-
-API Level 2.3.0
+API 级别 2.3.0
 
  |  |
-| Type | USER\_INFO\_STRING\_LENGTH | 19 |
+| 类型 | ENCRYPTION\_KEY\_LENGTH | 16 |
 
-API Level 2.3.0
+API 级别 2.3.0
+
+ |  |
+| 类型 | USER\_INFO\_STRING\_LENGTH | 19 |
+
+API 级别 2.3.0
 
  |  |
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**EncryptionKey**](#EncryptionKey-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
--   [**UserInfoString**](#UserInfoString-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**EncryptionKey**](#EncryptionKey-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**UserInfoString**](#UserInfoString-named_type) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**decimationRate**](#decimationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**decimationRate**](#decimationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The division factor of the encryption counter.
 
--   [**encryptionId**](#encryptionId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**encryptionId**](#encryptionId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The unique 4 byte identifier of the encrypted master or the negotiating slave.
 
--   [**encryptionKey**](#encryptionKey-var) as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
+- [**encryptionKey**](#encryptionKey-var) as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
 
     The 128-bit encryption key used to encrypt/decrypt ANT packets.
 
--   [**userInfoString**](#userInfoString-var) as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
+- [**userInfoString**](#userInfoString-var) as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
 
     The (optional) user information String to be sent to the master channel on successful negotiation of encryption (Slave channels only).
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })
+- [**initialize**](#initialize-instance_function)(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })
 
     Constructor.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **EncryptionKey** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **UserInfoString** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -273,7 +273,7 @@ The division factor of the encryption counter
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### var encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -281,7 +281,7 @@ The unique 4 byte identifier of the encrypted master or the negotiating slave.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### var encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
 
@@ -289,7 +289,7 @@ The 128-bit encryption key used to encrypt/decrypt ANT packets.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### var userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
 
@@ -297,9 +297,9 @@ The (optional) user information String to be sent to the master channel on succe
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })**
 
@@ -307,27 +307,27 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     The Dictionary of options for the configuration
 
-    -   :encryptionId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :encryptionId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         a Number (uint32) to uniquely identify a device during encryption negotiation
 
-    -   :encryptionKey — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :encryptionKey — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         The key which will be used to encrypt/decrypt ANT packets as an Array of bytes
 
-    -   :userInfoString — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :userInfoString — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         The string to send during negotiation to the master channel (only used when the channel is configured as a slave) as an Array of bytes
 
-    -   :decimationRate — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :decimationRate — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         A [Number](/connect-iq/api-docs/Toybox/Lang/Number/) with range 1-255 used for division of the master channel rate by the slave's
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

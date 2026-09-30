@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)
+- [Toybox.Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of a vector font.
 
@@ -22,9 +22,9 @@ VectorFont objects are returned by the [getVectorFont()](/connect-iq/api-docs/To
 
 Since:
 
-API Level 4.2.1
+API 级别 4.2.1
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm

@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.WatchUi.DataField
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
+- [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
 
--   [Toybox.WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)
+- [Toybox.WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Create a SimpleDataField.
 
@@ -28,19 +28,19 @@ Just like in a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a Si
 
 A SimpleDataField requires two items:
 
--   A [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method should return the value to be displayed by the SimpleDataField. Allowed types are Number, Float, Long, Double, Duration, and String.
+- A [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method should return the value to be displayed by the SimpleDataField. Allowed types are Number, Float, Long, Double, Duration, and String.
 
--   A "label" variable, which should be assigned a String label for the field.
-
-
-## See Also:
-
--   [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
-
--   [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+- A "label" variable, which should be assigned a String label for the field.
 
 
-Note:
+## 另见：
+
+- [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
+
+- [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+
+
+注意：
 
 The system will call the onUpdate() method inherited from View when a Data Field is displayed by the system. Because compute() and onUpdate() are asynchronous, there is no guarantee that compute() will be called before onUpdate(). For this reason, variables should never be initialized in compute().
 
@@ -68,24 +68,24 @@ class MySimpleHRField extends WatchUi.SimpleDataField {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -261,25 +261,25 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**label**](#label-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**label**](#label-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The field label String.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a SimpleDataField.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -287,9 +287,9 @@ The field label String.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **compute(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -299,7 +299,7 @@ This method is called once per second and automatically provides [Activity.Info]
 
 Parameters:
 
--   info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
+- info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
 
     The updated Activity.Info object
 
@@ -314,19 +314,19 @@ function compute(info) {
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), null —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), null —
 
     The value to be displayed in the field or `null`
 
 
-See Also:
+另见：
 
--   [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+- [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **initialize()**
 
@@ -334,4 +334,4 @@ Constructor
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

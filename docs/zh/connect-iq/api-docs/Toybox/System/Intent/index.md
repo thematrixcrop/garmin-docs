@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 An Intent sends content from one app to another app.
 
@@ -22,9 +22,9 @@ Strictly speaking, content is sent to a **URI** by an Intent, which can either b
 
 For example, a widget might collect data from a service via a [Communications](/connect-iq/api-docs/Toybox/Communications/) call and pass that data to a device app via Intent for use during an activity.
 
-## See Also:
+## 另见：
 
--   [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
+- [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
 
 
 Example:
@@ -52,46 +52,46 @@ system://pairing
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**arguments**](#arguments-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
--   [**uri**](#uri-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**arguments**](#arguments-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
+- [**uri**](#uri-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(aURI as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), aArgs as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)
+- [**initialize**](#initialize-instance_function)(aURI as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), aArgs as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var arguments as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### var uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(aURI as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), aArgs as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)**
 
@@ -99,15 +99,15 @@ Constructor
 
 Parameters:
 
--   aURI — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- aURI — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The URI that specifies receiver of the Intent
 
--   aArgs — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- aArgs — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Parameters to pass to the target URI
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
+- [Toybox.Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Dictionary is a hash table or associative array used to map keys to values.
 
 Both the keys and values can be any Object type, though they do not all need to be of the same type. Objects used as a keys should override the [hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) method. Due to the nature of hash tables, the order of Dictionary elements are not guaranteed to match the insertion order.
 
-## See Also:
+## 另见：
 
--   [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
+- [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
 
 
 Example:
@@ -48,48 +48,48 @@ System.println(myDict.isEmpty()); // true
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**get**](#get-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
+- [**get**](#get-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
     Retrieve a value from a Dictionary for a given key.
 
--   [**hasKey**](#hasKey-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**hasKey**](#hasKey-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine whether a key exists within a Dictionary.
 
--   [**isEmpty**](#isEmpty-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isEmpty**](#isEmpty-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine whether a Dictionary is empty.
 
--   [**keys**](#keys-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
+- [**keys**](#keys-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
 
     Retrieve the keys in the Dictionary.
 
--   [**put**](#put-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
+- [**put**](#put-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
     Place a value in the Dictionary with a given key.
 
--   [**remove**](#remove-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
+- [**remove**](#remove-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
     Delete an item from a Dictionary.
 
--   [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Retrieve the number of elements in a Dictionary.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a Dictionary to a String.
 
--   [**values**](#values-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
+- [**values**](#values-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
     Retrieve the values in the Dictionary.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **get(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -97,21 +97,21 @@ Retrieve a value from a Dictionary for a given key.
 
 Parameters:
 
--   key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The key to check against
 
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     The value for the specified key, or `null` if the key does not exist
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **hasKey(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -119,21 +119,21 @@ Determine whether a key exists within a Dictionary.
 
 Parameters:
 
--   key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The key to check against
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the key is in the Dictionary, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **isEmpty()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -141,14 +141,14 @@ Determine whether a Dictionary is empty.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the Dictionary is empty, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **keys()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
 
@@ -156,14 +156,14 @@ Retrieve the keys in the Dictionary.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of keys in the Dictionary
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **put(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
@@ -171,18 +171,18 @@ Place a value in the Dictionary with a given key.
 
 Parameters:
 
--   key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The key for the value being inserted into the Dictionary
 
--   value — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The value to insert into the Dictionary
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **remove(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
@@ -190,14 +190,14 @@ Delete an item from a Dictionary.
 
 Parameters:
 
--   key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The key of the value to be removed
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **size()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -205,14 +205,14 @@ Retrieve the number of elements in a Dictionary.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The number of elements in the Dictionary
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -239,19 +239,19 @@ System.println(myString.substring(0, 5)); // "{Two="
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A String representation of the Dictionary
 
 
-See Also:
+另见：
 
--   [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+- [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 
 Since:
 
-API Level 1.0.1
+API 级别 1.0.1
 
 ### **values()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
@@ -259,11 +259,11 @@ Retrieve the values in the Dictionary.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of values in the Dictionary
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

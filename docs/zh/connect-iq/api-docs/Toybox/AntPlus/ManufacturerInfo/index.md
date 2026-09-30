@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.AntPlus.CommonData
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
+- [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
 
--   [Toybox.AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/)
+- [Toybox.AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class containing information from the Manufacturer's Information ANT+ common page.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Example:
 
@@ -40,31 +40,31 @@ System.println("Current modelNumber is: " + modelNumber);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**hwRevision**](#hwRevision-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**hwRevision**](#hwRevision-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The Hardware revision.
 
--   [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The Manufacturer ID.
 
--   [**modelNumber**](#modelNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**modelNumber**](#modelNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The Model number.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var hwRevision as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -72,11 +72,11 @@ The Hardware revision.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The manufacturer hardware revision
 
@@ -87,11 +87,11 @@ The Manufacturer ID.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The manufacturer ID
 
@@ -102,16 +102,16 @@ The Model number.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The manufacturer model number
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -119,4 +119,4 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

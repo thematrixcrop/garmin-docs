@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)
+- [Toybox.Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A ResourceId is a resource identifier.
 
@@ -29,16 +29,16 @@ var appName = System.loadResource(resourceId);
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a ResourceId to a String.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -46,11 +46,11 @@ Convert a ResourceId to a String
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     The String representation of the ResourceId
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

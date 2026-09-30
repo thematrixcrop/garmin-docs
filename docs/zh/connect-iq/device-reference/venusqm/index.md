@@ -3,66 +3,66 @@ title: "Venu® Sq. Music Edition"
 ---
 # Venu® Sq. Music Edition
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | venusqm |
-| Screen Shape | rectangle |
-| Screen Size | 240 x 240 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 36 x 36 |
+| 标识 | venusqm |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 240 x 240 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 36 x 36 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 32768 |  |
-| Watch App | 1048576 |  |
-| Watch Face | 524288 |  |
-| Widget | 524288 |  |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 手表应用 | 1048576 |  |
+| 表盘 | 524288 |  |
+| 微件 | 524288 |  |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/venusqm/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 12 | 0 | 220 | 240 | 0 | False | False | False | False |
+| 字段 1 | 12 | 0 | 220 | 240 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/venusqm/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 12 | 0 | 220 | 120 | 0 | False | False | False | False |
-| Field 2 | 12 | 120 | 220 | 120 | 0 | False | False | False | False |
+| 字段 1 | 12 | 0 | 220 | 120 | 0 | False | False | False | False |
+| 字段 2 | 12 | 120 | 220 | 120 | 0 | False | False | False | False |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/venusqm/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 12 | 0 | 220 | 77 | 0 | False | False | False | False |
-| Field 2 | 12 | 77 | 220 | 86 | 0 | False | False | False | False |
-| Field 3 | 12 | 163 | 220 | 77 | 0 | False | False | False | False |
+| 字段 1 | 12 | 0 | 220 | 77 | 0 | False | False | False | False |
+| 字段 2 | 12 | 77 | 220 | 86 | 0 | False | False | False | False |
+| 字段 3 | 12 | 163 | 220 | 77 | 0 | False | False | False | False |
 
 **Part Number 006-B3596-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_TINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
@@ -87,13 +87,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 
 **Part Number 006-B3599-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_TINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
@@ -118,13 +118,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 
 **Part Number 006-B3838-00**
 
-*Languages*
+*语言*
 
 eng, ind, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_TINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
@@ -147,13 +147,13 @@ eng, ind, vie, zsm
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
@@ -176,13 +176,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
@@ -205,13 +205,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
@@ -234,13 +234,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 | FONT\_TINY | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
@@ -263,13 +263,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -294,13 +294,13 @@ tha
 
 **Part Number 006-B4119-00**
 
-*Languages*
+*语言*
 
 eng, ind, vie, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_TINY | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
@@ -323,13 +323,13 @@ eng, ind, vie, zsm
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
@@ -352,13 +352,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_28 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
@@ -381,13 +381,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 28 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_28 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
@@ -410,13 +410,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 28 | NOTO\_SANS\_CJK\_JP\_BOLD\_28 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 | FONT\_TINY | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
@@ -439,13 +439,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Regular | 28 | NOTO\_SANS\_CJK\_KR\_REGULAR\_28 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

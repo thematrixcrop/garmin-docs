@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
+- [Toybox.Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The Position.Info class contains all of the information provided by the positioning system.
 
@@ -22,9 +22,9 @@ Position Info can be retrieved on every call of [onUpdate()](/connect-iq/api-doc
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -202,34 +202,34 @@ API Level 1.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**accuracy**](#accuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module)
+- [**accuracy**](#accuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module)
 
     The positional accuracy.
 
--   [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The elevation above mean sea level in meters (m).
 
--   [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The true north referenced heading in radians.
+    以弧度为单位的真北参考航向。
 
--   [**position**](#position-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
+- [**position**](#position-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
     The latitude and longitude of the position.
 
--   [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The horizontal speed in meters per second (mps).
 
--   [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     The GPS time stamp of the obtained [Location](/connect-iq/api-docs/Toybox/Position/Location/) fix.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var accuracy as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module)
 
@@ -239,11 +239,11 @@ This is given as one of the following values: good, usable, poor, or not availab
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
+- [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
     A Position.QUALITY\_\* value
 
@@ -256,30 +256,30 @@ Elevation is obtained from the GPS. If no GPS is present, then no valid elevatio
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
+- [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
 
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var heading as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The true north referenced heading in radians.
+以弧度为单位的真北参考航向。
 
 This provides the direction of travel when moving. If supported by the device, it provides compass orientation when stopped.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var position as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -289,11 +289,11 @@ If no GPS is available or is between GPS fix intervals (typically 1 second), the
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -301,20 +301,20 @@ The horizontal speed in meters per second (mps).
 
 Speed is derived from the most accurate source in the following order:
 
-1.  GPS
+1. GPS
 
-2.  Foot pod
+2. Foot pod
 
-3.  Accelerometer
+3. Accelerometer
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var when as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -322,8 +322,8 @@ The GPS time stamp of the obtained [Location](/connect-iq/api-docs/Toybox/Positi
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

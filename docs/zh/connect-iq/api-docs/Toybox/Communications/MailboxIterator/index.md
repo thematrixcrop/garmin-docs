@@ -7,31 +7,31 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)
+- [Toybox.Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Get the messages out of the Mailbox.
 
-**This has been deprecated**
+**此项已弃用**
 
 This class may be removed after System 4.
 
-## See Also:
+## 另见：
 
--   [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
+- [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -185,33 +185,33 @@ API Level 1.0.0
 
 :::
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**MailboxKeyType**](#MailboxKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
--   [**MailboxValueType**](#MailboxValueType-named_type) as [MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type), [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\>
+- [**MailboxKeyType**](#MailboxKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
+- [**MailboxValueType**](#MailboxValueType-named_type) as [MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type), [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\>
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**next**](#next-instance_function)() as [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type) or **Null**
+- [**next**](#next-instance_function)() as [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type) or **Null**
 
     Get the next message from the mailbox.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **MailboxKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **MailboxValueType** as [MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type), [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\>
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **next()** as [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type) or **Null**
 
@@ -219,9 +219,9 @@ Get the next message from the mailbox.
 
 Returns:
 
--   Message content, or `null` if no messages
+- Message content, or `null` if no messages
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

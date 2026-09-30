@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.BikeRadar](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/)
+- [Toybox.AntPlus.BikeRadar](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Bike Radar Device instance.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -169,15 +169,15 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getRadarInfo**](#getRadarInfo-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>
+- [**getRadarInfo**](#getRadarInfo-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>
 
     Retrieves information on the current list of tracked targets.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) or **Null**)
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getRadarInfo()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>
 
@@ -185,24 +185,24 @@ Retrieves information on the current list of tracked targets.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of [RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/) objects
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(listener as [AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) or **Null**)**
 
 Parameters:
 
--   listener — ([AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)) —
+- listener — ([AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)) —
 
     The bike radar instance optionally takes an extension of the [BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the [getRadarInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/) method.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

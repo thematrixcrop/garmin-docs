@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.BikeSpeedCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener/)
+- [Toybox.AntPlus.BikeSpeedCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Bike Speed Cadence
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -176,18 +176,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onBikeSpeedCadenceUpdate**](#onBikeSpeedCadenceUpdate-instance_function)(data as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) as **Void**
+- [**onBikeSpeedCadenceUpdate**](#onBikeSpeedCadenceUpdate-instance_function)(data as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) as **Void**
 
     Callback when speed / cadence data is updated.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -195,7 +195,7 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onBikeSpeedCadenceUpdate(data as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/))** as **Void**
 
@@ -203,11 +203,11 @@ Callback when speed / cadence data is updated
 
 Parameters:
 
--   data — ([AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) —
+- data — ([AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) —
 
     data Data with updated speed / cadence information.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

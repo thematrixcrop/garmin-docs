@@ -3,7 +3,7 @@ title: "Module: Toybox.ActivityMonitor"
 ---
 # Module: Toybox.ActivityMonitor
 
-## Overview
+## 概述
 
 The ActivityMonitor module contains the interface for Activity Monitoring data.
 
@@ -45,9 +45,9 @@ System.println("You have taken: " + steps +
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -197,90 +197,90 @@ API Level 1.0.0
 
 :::
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/), [HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/), [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/), [History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/), [Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
+类：[ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/), [HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/), [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/), [History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/), [Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
-## Constant Summary
+## 常量摘要
 
-### Constant Variables
+### 常量变量
 
-| Type | Name | Value | Since | Description |
+| 类型 | 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- | --- |
-| Type | INVALID\_HR\_SAMPLE | 255 |
-API Level 1.2.2
+| 类型 | INVALID\_HR\_SAMPLE | 255 |
+API 级别 1.2.2
 
- |
+|
 
 Indicates that the given heart rate sample is invalid.
 
- |
-| Type | MOVE\_BAR\_LEVEL\_MAX | 5 |
+|
+| 类型 | MOVE\_BAR\_LEVEL\_MAX | 5 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The maximum level of the move bar
 
- |
-| Type | MOVE\_BAR\_LEVEL\_MIN | 0 |
+|
+| 类型 | MOVE\_BAR\_LEVEL\_MIN | 0 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The minimum level of the move bar
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getHeartRateHistory**](#getHeartRateHistory-instance_function)(period as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, newestFirst as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
+- [**getHeartRateHistory**](#getHeartRateHistory-instance_function)(period as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, newestFirst as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
 
-    Get the heart rate history for the given period, up to the last power cycle.
+    获取指定时间段内的心率历史记录（截至上次断电）。
 
--   [**getHistory**](#getHistory-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)\>
+- [**getHistory**](#getHistory-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)\>
 
     Get an Array of ActivityMonitor.History objects.
 
--   [**getInfo**](#getInfo-instance_function)() as [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
+- [**getInfo**](#getInfo-instance_function)() as [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
-    Get the current [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/).
+    获取当前 [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getHeartRateHistory(period as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, newestFirst as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
 
-Get the heart rate history for the given period, up to the last power cycle.
+获取指定时间段内的心率历史记录（截至上次断电）。
 
 This function always returns the most recent heart rate samples. The time between each HeartRateSample in the iterator may be device dependent.
 
 Parameters:
 
--   period — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- period — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The period of time from which to retrieve heart rate samples
 
-    -   If period is `null`, the entire available history is retrieved
+- If period is `null`, the entire available history is retrieved
 
-    -   If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
 
-    -   If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last Number entries are retrieved
+- If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last Number entries are retrieved
 
 
--   newestFirst — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- newestFirst — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     The order in which to retrieve heart rate samples
 
-    -   `true` to get the samples newest first
+- `true` to get the samples newest first
 
-    -   `false` to get the samples oldest first
+- `false` to get the samples oldest first
 
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -424,14 +424,14 @@ Parameters:
 
 Returns:
 
--   [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/) —
+- [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/) —
 
     An iterator for the heart rate history for the given period
 
 
 Since:
 
-API Level 1.2.1
+API 级别 1.2.1
 
 ### **getHistory()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)\>
 
@@ -439,19 +439,19 @@ Get an Array of ActivityMonitor.History objects
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array of [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) objects.
 
-    -   The Array will be a maximum of 7 objects
+- The Array will be a maximum of 7 objects
 
-    -   The objects will be inserted most recent first
+- The objects will be inserted most recent first
 
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getInfo()** as [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
@@ -459,11 +459,11 @@ Get the current [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonit
 
 Returns:
 
--   [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) —
+- [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) —
 
     An Info object with the current information.
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

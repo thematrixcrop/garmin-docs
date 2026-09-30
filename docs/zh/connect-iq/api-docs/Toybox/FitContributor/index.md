@@ -3,7 +3,7 @@ title: "Module: Toybox.FitContributor"
 ---
 # Module: Toybox.FitContributor
 
-## Overview
+## 概述
 
 The FitContributor module allows Applications and Data Fields to record [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) data into FIT files on the device's file system during an activity. This is useful for recording data that is not already calculated by the device, which can be synced to a service like Garmin Connect.
 
@@ -23,11 +23,11 @@ Depending on the device, record data is written once per second or when new data
 
 Data type constants are also available for use with the [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) method.
 
-## See Also:
+## 另见：
 
--   [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
+- [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
 
--   [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
+- [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
 
 
 Example:
@@ -73,18 +73,18 @@ class BananasEarnedView extends WatchUi.SimpleDataField
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -259,101 +259,101 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   FitContributor
+- FitContributor
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+类：[Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-## Constant Summary
+## 常量摘要
 
 ### MessageType
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | MESG\_TYPE\_SESSION | 18 |
-API Level 1.3.0
+API 级别 1.3.0
 
- |
+|
 
 The message type for session messages.
 
- |
+|
 | MESG\_TYPE\_LAP | 19 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
- |
+|
 
 The message type for lap messages.
 
- |
+|
 | MESG\_TYPE\_RECORD | 20 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
- |
+|
 
 The message type for record messages.
 
- |
+|
 
 ### DataType
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | DATA\_TYPE\_SINT8 | 1 |
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_UINT8 | 2 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_SINT16 | 3 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_UINT16 | 4 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_SINT32 | 5 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_UINT32 | 6 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_STRING | 7 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_FLOAT | 8 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | DATA\_TYPE\_DOUBLE | 9 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |

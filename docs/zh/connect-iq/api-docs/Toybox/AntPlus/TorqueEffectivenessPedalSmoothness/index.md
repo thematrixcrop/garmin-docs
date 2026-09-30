@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
+- [Toybox.AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The TorqueEffectivenessPedalSmoothness object represents the instantaneous torque effectiveness and pedal smoothness.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -138,30 +138,30 @@ API Level 2.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**leftOrCombinedPedalSmoothness**](#leftOrCombinedPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**leftOrCombinedPedalSmoothness**](#leftOrCombinedPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Left pedal smoothness if separate is supported, else it is the combined smoothness (%).
 
--   [**leftTorqueEffectiveness**](#leftTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**leftTorqueEffectiveness**](#leftTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Left torque effectiveness.
 
--   [**rightPedalSmoothness**](#rightPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**rightPedalSmoothness**](#rightPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Right pedal smoothness (%).
 
--   [**rightTorqueEffectiveness**](#rightTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**rightTorqueEffectiveness**](#rightTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Right torque effectiveness.
 
--   [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Define if pedal smoothness is separate.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var leftOrCombinedPedalSmoothness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -181,11 +181,11 @@ System.println("leftOrCombinedPedalSmoothness is set to: " + leftOrCombinedPedal
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var leftTorqueEffectiveness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -207,11 +207,11 @@ System.println("leftTorqueEffectiveness is: " + leftTorqueEffectiveness);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var rightPedalSmoothness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -231,11 +231,11 @@ System.println("rightPedalSmoothness is: " + rightPedalSmoothness);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var rightTorqueEffectiveness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -257,11 +257,11 @@ System.println("rightTorqueEffectiveness is set to: " + rightTorqueEffectiveness
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var separatePedalSmoothnessSupport as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -281,12 +281,12 @@ System.println("separatePedalSmoothnessSupport is: " + separatePedalSmoothnessSu
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    -   `true` if pedal smoothness is separate
+- `true` if pedal smoothness is separate
 
-    -   `false` if combined
+- `false` if combined

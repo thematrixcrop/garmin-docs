@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
+- [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Define a vibration pattern.
 
@@ -37,9 +37,9 @@ if (Attention has :vibrate) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -190,25 +190,25 @@ API Level 1.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**dutyCycle**](#dutyCycle-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**dutyCycle**](#dutyCycle-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The strength of the vibration.
 
--   [**length**](#length-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**length**](#length-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Length of the vibration in milliseconds (ms).
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(dutyCycleVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), lengthVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))
+- [**initialize**](#initialize-instance_function)(dutyCycleVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), lengthVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var dutyCycle as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -218,11 +218,11 @@ Duty cycle is the felt strength of the vibration, and is analogous in practice t
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Duty Cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+- [Duty Cycle](https://en.wikipedia.org/wiki/Duty_cycle)
 
 
 ### var length as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -231,9 +231,9 @@ Length of the vibration in milliseconds (ms).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(dutyCycleVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), lengthVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))**
 
@@ -241,15 +241,15 @@ Constructor
 
 Parameters:
 
--   dutyCycleVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- dutyCycleVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The strength of the vibration
 
--   lengthVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- lengthVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The length of the vibration in milliseconds (ms)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

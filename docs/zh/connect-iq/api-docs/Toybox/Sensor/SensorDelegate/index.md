@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)
+- [Toybox.Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Delegate for handling native sensor pairing process.
 
@@ -22,9 +22,9 @@ The members of this object get called by the system to delegate scanning and pai
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -104,26 +104,26 @@ API Level 5.1.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onPair**](#onPair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onPair**](#onPair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Pair the sensor.
 
--   [**onScan**](#onScan-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onScan**](#onScan-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Start the sensor scan process.
 
--   [**onUnpair**](#onUnpair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onUnpair**](#onUnpair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Unpair the sensor.
 
--   [**pairingRequired**](#pairingRequired-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**pairingRequired**](#pairingRequired-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Is sensor pairing required? Is called by the system to check if sensor pairing is required.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onPair(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -133,21 +133,21 @@ Is called by the system to pair the sensor, during the native sensor pairing pro
 
 Parameters:
 
--   sensor —
+- sensor —
 
     [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) object
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if the sensor was paired successfully, false otherwise
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onScan()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -157,14 +157,14 @@ Is called by the system to start the sensor scan process, during the native sens
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if the scan was started successfully, false otherwise
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onUnpair(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -174,21 +174,21 @@ Is called by the system to unpair the sensor, during the native sensor removing 
 
 Parameters:
 
--   sensor —
+- sensor —
 
     [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) object
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if the sensor was paired successfully, false otherwise
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **pairingRequired()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -198,11 +198,11 @@ Is called by the system to check if sensor pairing is required.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if sensor pairing is required, false otherwise
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0

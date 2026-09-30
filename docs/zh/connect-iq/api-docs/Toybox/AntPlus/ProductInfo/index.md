@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.AntPlus.CommonData
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
+- [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
 
--   [Toybox.AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/)
+- [Toybox.AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Class containing information from the Product Information ANT+ common page.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Example:
 
@@ -40,31 +40,31 @@ System.println("Current swRevisionSupplemental is: " + swRevisionSupplemental);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**serial**](#serial-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**serial**](#serial-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The serial number.
 
--   [**swRevisionMain**](#swRevisionMain-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**swRevisionMain**](#swRevisionMain-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The main software revision.
 
--   [**swRevisionSupplemental**](#swRevisionSupplemental-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**swRevisionSupplemental**](#swRevisionSupplemental-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The supplemental software revision.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var serial as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -72,11 +72,11 @@ The serial number.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The product serial number
 
@@ -87,11 +87,11 @@ The main software revision.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The main software revision of the product
 
@@ -102,16 +102,16 @@ The supplemental software revision.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The supplemental software revision of the product
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -119,4 +119,4 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

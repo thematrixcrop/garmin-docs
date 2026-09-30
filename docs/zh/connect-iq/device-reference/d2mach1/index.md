@@ -3,183 +3,183 @@ title: "D2™ Mach 1"
 ---
 # D2™ Mach 1
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | d2mach1 |
-| Screen Shape | round |
-| Screen Size | 416 x 416 |
-| Display Colors | 65536 |
-| Touch | True |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 60 x 60 |
+| 标识 | d2mach1 |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 416 x 416 |
+| 显示颜色 | 65536 |
+| 触摸 | True |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 60 x 60 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/d2mach1/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 416 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 416 | 416 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/d2mach1/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 207 | 7 | True | True | True | False |
-| Field 2 | 0 | 209 | 416 | 207 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 207 | 7 | True | True | True | False |
+| 字段 2 | 0 | 209 | 416 | 207 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/d2mach1/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 132 | 7 | True | True | True | False |
-| Field 2 | 0 | 135 | 416 | 146 | 5 | True | True | False | False |
-| Field 3 | 0 | 283 | 416 | 132 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 132 | 7 | True | True | True | False |
+| 字段 2 | 0 | 135 | 416 | 146 | 5 | True | True | False | False |
+| 字段 3 | 0 | 283 | 416 | 132 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/d2mach1/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 142 | 7 | True | True | True | False |
-| Field 2 | 0 | 142 | 416 | 132 | 5 | True | True | False | False |
-| Field 3 | 0 | 274 | 416 | 142 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 142 | 7 | True | True | True | False |
+| 字段 2 | 0 | 142 | 416 | 132 | 5 | True | True | False | False |
+| 字段 3 | 0 | 274 | 416 | 142 | 13 | True | True | False | True |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/d2mach1/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 208 | 7 | True | True | True | False |
-| Field 2 | 0 | 210 | 207 | 206 | 9 | True | False | False | True |
-| Field 3 | 209 | 210 | 207 | 206 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 208 | 7 | True | True | True | False |
+| 字段 2 | 0 | 210 | 207 | 206 | 9 | True | False | False | True |
+| 字段 3 | 209 | 210 | 207 | 206 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/d2mach1/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
-| Field 2 | 0 | 105 | 416 | 103 | 5 | True | True | False | False |
-| Field 3 | 0 | 210 | 416 | 103 | 5 | True | True | False | False |
-| Field 4 | 0 | 315 | 416 | 103 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
+| 字段 2 | 0 | 105 | 416 | 103 | 5 | True | True | False | False |
+| 字段 3 | 0 | 210 | 416 | 103 | 5 | True | True | False | False |
+| 字段 4 | 0 | 315 | 416 | 103 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/d2mach1/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 147 | 7 | True | True | True | False |
-| Field 2 | 0 | 149 | 207 | 116 | 1 | True | False | False | False |
-| Field 3 | 209 | 149 | 207 | 116 | 4 | False | True | False | False |
-| Field 4 | 0 | 267 | 416 | 147 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 147 | 7 | True | True | True | False |
+| 字段 2 | 0 | 149 | 207 | 116 | 1 | True | False | False | False |
+| 字段 3 | 209 | 149 | 207 | 116 | 4 | False | True | False | False |
+| 字段 4 | 0 | 267 | 416 | 147 | 13 | True | True | False | True |
 
-**4 Fields C Layout**
+**4 字段 C 布局**
 
 
 ![4 Fields C](/connect-iq/resources/device-reference/d2mach1/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 207 | 207 | 3 | True | False | True | False |
-| Field 2 | 209 | 0 | 207 | 207 | 6 | False | True | True | False |
-| Field 3 | 0 | 209 | 207 | 207 | 9 | True | False | False | True |
-| Field 4 | 209 | 209 | 207 | 207 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 207 | 207 | 3 | True | False | True | False |
+| 字段 2 | 209 | 0 | 207 | 207 | 6 | False | True | True | False |
+| 字段 3 | 0 | 209 | 207 | 207 | 9 | True | False | False | True |
+| 字段 4 | 209 | 209 | 207 | 207 | 12 | False | True | False | True |
 
-**5 Fields Layout**
+**5 字段布局**
 
 
 ![5 Fields](/connect-iq/resources/device-reference/d2mach1/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
-| Field 2 | 0 | 105 | 416 | 102 | 5 | True | True | False | False |
-| Field 3 | 0 | 209 | 207 | 102 | 1 | True | False | False | False |
-| Field 4 | 209 | 209 | 207 | 102 | 4 | False | True | False | False |
-| Field 5 | 0 | 313 | 416 | 103 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
+| 字段 2 | 0 | 105 | 416 | 102 | 5 | True | True | False | False |
+| 字段 3 | 0 | 209 | 207 | 102 | 1 | True | False | False | False |
+| 字段 4 | 209 | 209 | 207 | 102 | 4 | False | True | False | False |
+| 字段 5 | 0 | 313 | 416 | 103 | 13 | True | True | False | True |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/d2mach1/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
-| Field 2 | 0 | 105 | 207 | 102 | 1 | True | False | False | False |
-| Field 3 | 209 | 105 | 207 | 102 | 4 | False | True | False | False |
-| Field 4 | 0 | 209 | 207 | 102 | 1 | True | False | False | False |
-| Field 5 | 209 | 209 | 207 | 102 | 4 | False | True | False | False |
-| Field 6 | 0 | 313 | 416 | 103 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 103 | 7 | True | True | True | False |
+| 字段 2 | 0 | 105 | 207 | 102 | 1 | True | False | False | False |
+| 字段 3 | 209 | 105 | 207 | 102 | 4 | False | True | False | False |
+| 字段 4 | 0 | 209 | 207 | 102 | 1 | True | False | False | False |
+| 字段 5 | 209 | 209 | 207 | 102 | 4 | False | True | False | False |
+| 字段 6 | 0 | 313 | 416 | 103 | 13 | True | True | False | True |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/d2mach1/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 73 | 7 | True | True | True | False |
-| Field 2 | 0 | 75 | 207 | 87 | 1 | True | False | False | False |
-| Field 3 | 209 | 75 | 207 | 87 | 4 | False | True | False | False |
-| Field 4 | 0 | 164 | 416 | 87 | 5 | True | True | False | False |
-| Field 5 | 0 | 253 | 207 | 87 | 1 | True | False | False | False |
-| Field 6 | 209 | 253 | 207 | 87 | 4 | False | True | False | False |
-| Field 7 | 0 | 342 | 416 | 74 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 73 | 7 | True | True | True | False |
+| 字段 2 | 0 | 75 | 207 | 87 | 1 | True | False | False | False |
+| 字段 3 | 209 | 75 | 207 | 87 | 4 | False | True | False | False |
+| 字段 4 | 0 | 164 | 416 | 87 | 5 | True | True | False | False |
+| 字段 5 | 0 | 253 | 207 | 87 | 1 | True | False | False | False |
+| 字段 6 | 209 | 253 | 207 | 87 | 4 | False | True | False | False |
+| 字段 7 | 0 | 342 | 416 | 74 | 13 | True | True | False | True |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/d2mach1/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 416 | 73 | 7 | True | True | True | False |
-| Field 2 | 0 | 75 | 207 | 87 | 1 | True | False | False | False |
-| Field 3 | 209 | 75 | 207 | 87 | 4 | False | True | False | False |
-| Field 4 | 0 | 164 | 207 | 87 | 1 | True | False | False | False |
-| Field 5 | 209 | 164 | 207 | 87 | 4 | False | True | False | False |
-| Field 6 | 0 | 253 | 207 | 87 | 1 | True | False | False | False |
-| Field 7 | 209 | 253 | 207 | 87 | 4 | False | True | False | False |
-| Field 8 | 0 | 342 | 416 | 74 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 416 | 73 | 7 | True | True | True | False |
+| 字段 2 | 0 | 75 | 207 | 87 | 1 | True | False | False | False |
+| 字段 3 | 209 | 75 | 207 | 87 | 4 | False | True | False | False |
+| 字段 4 | 0 | 164 | 207 | 87 | 1 | True | False | False | False |
+| 字段 5 | 209 | 164 | 207 | 87 | 4 | False | True | False | False |
+| 字段 6 | 0 | 253 | 207 | 87 | 1 | True | False | False | False |
+| 字段 7 | 209 | 253 | 207 | 87 | 4 | False | True | False | False |
+| 字段 8 | 0 | 342 | 416 | 74 | 13 | True | True | False | True |
 
 **Part Number 006-B4079-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 30 | 006B394300\_ROBOTO\_19B |
 | FONT\_TINY | Roboto Condensed | 41 | 006B394300\_ROBOTO\_26B |
@@ -214,13 +214,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 24 | 006B394300\_NOTO\_SANS\_SC\_BOLD\_94\_CHN\_24 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 35 | 006B394300\_NOTO\_SANS\_SC\_BOLD\_94\_CHN\_35 |
@@ -255,13 +255,13 @@ zhs
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 24 | 006B394300\_NOTO\_SANS\_SC\_BOLD\_94\_CHN\_24 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 35 | 006B394300\_NOTO\_SANS\_SC\_BOLD\_94\_CHN\_35 |
@@ -296,13 +296,13 @@ zht
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 24 | 006B394300\_KOSUGI\_REGULAR-94\_JPN\_24B |
 | FONT\_TINY | MotoyaLCedar-94 | 35 | 006B394300\_KOSUGI\_REGULAR-94\_JPN\_35B |
@@ -337,13 +337,13 @@ jpn
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicExtraBold-94 | 24 | 006B394300\_NANUM\_GOTHIC\_BOLD\_KOR\_24B |
 | FONT\_TINY | NanumGothicExtraBold-94 | 35 | 006B394300\_NANUM\_GOTHIC\_BOLD\_KOR\_35B |
@@ -378,13 +378,13 @@ kor
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -419,13 +419,13 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 31 | 006B394300\_ROBOTO\_CONDENSED\_BOLD\_31B |
 | FONT\_TINY | Roboto Condensed | 42 | 006B394300\_ROBOTO\_CONDENSED\_BOLD\_42B |

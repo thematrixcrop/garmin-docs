@@ -3,106 +3,106 @@ title: "Module: Toybox.Application"
 ---
 # Module: Toybox.Application
 
-## Overview
+## 概述
 
 The Application module contains the base class for every Connect IQ app.
 
 The Application Module includes the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) class which is responsible for controlling the app life cycle. This module also includes set and get methods to control the settings and properties values held in the Object Store and a GOAL\_TYPE enum that defines the different goal types that can be triggered.
 
-## See Also:
+## 另见：
 
--   [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
+- [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Modules Under Namespace
+## 命名空间下的模块
 
 **Modules:** [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/), [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/), [Application.WatchFaceConfig](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/)
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/), [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/), [ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)
+类：[AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/), [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/), [ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)
 
-## Constant Summary
+## 常量摘要
 
 ### GoalType
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | GOAL\_TYPE\_STEPS | 0 |
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | GOAL\_TYPE\_FLOORS\_CLIMBED | 1 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 | GOAL\_TYPE\_ACTIVE\_MINUTES | 2 |
 
-API Level 1.3.0
+API 级别 1.3.0
 
  |  |
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**PersistableType**](#PersistableType-named_type) as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
--   [**PropertyKeyType**](#PropertyKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
--   [**PropertyValueType**](#PropertyValueType-named_type) as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) or [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**
--   [**ResourceReferenceType**](#ResourceReferenceType-named_type) as [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
--   [**ResourceType**](#ResourceType-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
+- [**PersistableType**](#PersistableType-named_type) as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
+- [**PropertyKeyType**](#PropertyKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
+- [**PropertyValueType**](#PropertyValueType-named_type) as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) or [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**
+- [**ResourceReferenceType**](#ResourceReferenceType-named_type) as [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
+- [**ResourceType**](#ResourceType-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getApp**](#getApp-instance_function)() as [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
+- [**getApp**](#getApp-instance_function)() as [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
     Retrieve the AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/) that is currently running.
 
--   [**loadResource**](#loadResource-instance_function)(resource as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as [Application.ResourceType](/connect-iq/api-docs/Toybox/Application/#ResourceType-named_type) or [Application.ResourceReferenceType](/connect-iq/api-docs/Toybox/Application/#ResourceReferenceType-named_type)
+- [**loadResource**](#loadResource-instance_function)(resource as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as [Application.ResourceType](/connect-iq/api-docs/Toybox/Application/#ResourceType-named_type) or [Application.ResourceReferenceType](/connect-iq/api-docs/Toybox/Application/#ResourceReferenceType-named_type)
 
-    Load a resource from the executable.
+    从可执行文件加载资源。
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **PersistableType** as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **PropertyKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **PropertyValueType** as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) or [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **ResourceReferenceType** as [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **ResourceType** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getApp()** as [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
@@ -110,26 +110,26 @@ Retrieve the AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/) that is 
 
 Returns:
 
--   [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) —
+- [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) —
 
     The currently running AppBase object
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **loadResource(resource as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as [Application.ResourceType](/connect-iq/api-docs/Toybox/Application/#ResourceType-named_type) or [Application.ResourceReferenceType](/connect-iq/api-docs/Toybox/Application/#ResourceReferenceType-named_type)
 
-Load a resource from the executable.
+从可执行文件加载资源。
 
-Note:
+注意：
 
 [Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) and [Toybox::Graphics::FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) are returned for [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) and [Toybox::WatchUi::FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) in CIQ 4.0.0 and later.
 
 Parameters:
 
--   resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     An identifier for a resource defined in the project's `resources.xml` file
 
@@ -150,8 +150,8 @@ var banana = Application.loadResource(Rez.Strings.AppName);
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

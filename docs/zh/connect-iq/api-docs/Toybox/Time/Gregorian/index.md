@@ -3,282 +3,282 @@ title: "Module: Toybox.Time.Gregorian"
 ---
 # Module: Toybox.Time.Gregorian
 
-## Overview
+## 概述
 
-The Gregorian 模块提供 an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
+The Gregorian module provides an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
 
 For convenience, several time constants are defined that represent the number of seconds per year, per day, per hour, and per minute.
 
-## See Also:
+## 另见：
 
--   [The Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar)
+- [The Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
+类：[Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
-## Constant Summary
+## 常量摘要
 
-### Constant Variables
+### 常量变量
 
-| Type | Name | Value | Since | Description |
+| 类型 | 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- | --- |
-| Type | SECONDS\_PER\_DAY | 86400 |
-API Level 1.0.0
+| 类型 | SECONDS\_PER\_DAY | 86400 |
+API 级别 1.0.0
 
- |
+|
 
 The number of seconds in one day
 
- |
-| Type | SECONDS\_PER\_HOUR | 3600 |
+|
+| 类型 | SECONDS\_PER\_HOUR | 3600 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The number of seconds in one hour
 
- |
-| Type | SECONDS\_PER\_MINUTE | 60 |
+|
+| 类型 | SECONDS\_PER\_MINUTE | 60 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The number of seconds in one minute
 
- |
-| Type | SECONDS\_PER\_YEAR | 31557600 |
+|
+| 类型 | SECONDS\_PER\_YEAR | 31557600 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The number of seconds in one year
 
- |
+|
 
 ### DayOfWeek
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | DAY\_SUNDAY | 1 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Sunday
 
- |
+|
 | DAY\_MONDAY | 2 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Monday
 
- |
+|
 | DAY\_TUESDAY | 3 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Tuesday
 
- |
+|
 | DAY\_WEDNESDAY | 4 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Wednesday
 
- |
+|
 | DAY\_THURSDAY | 5 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Thursday
 
- |
+|
 | DAY\_FRIDAY | 6 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Friday
 
- |
+|
 | DAY\_SATURDAY | 7 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 Saturday
 
- |
+|
 
 ### Month
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | MONTH\_JANUARY | 1 |
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 January
 
- |
+|
 | MONTH\_FEBRUARY | 2 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 February
 
- |
+|
 | MONTH\_MARCH | 3 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 March
 
- |
+|
 | MONTH\_APRIL | 4 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 April
 
- |
+|
 | MONTH\_MAY | 5 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 May
 
- |
+|
 | MONTH\_JUNE | 6 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 June
 
- |
+|
 | MONTH\_JULY | 7 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 July
 
- |
+|
 | MONTH\_AUGUST | 8 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 August
 
- |
+|
 | MONTH\_SEPTEMBER | 9 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 September
 
- |
+|
 | MONTH\_OCTOBER | 10 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 October
 
- |
+|
 | MONTH\_NOVEMBER | 11 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 November
 
- |
+|
 | MONTH\_DECEMBER | 12 |
 
-API Level 3.0.0
+API 级别 3.0.0
 
- |
+|
 
 December
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**duration**](#duration-instance_function)(options as { :years as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :days as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hours as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minutes as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
+- [**duration**](#duration-instance_function)(options as { :years as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :days as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hours as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minutes as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Create a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) from a Dictionary of options.
+    从选项字典创建 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)。
 
--   [**info**](#info-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
+- [**info**](#info-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
     Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in local time.
 
--   [**localMoment**](#localMoment-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
+- [**localMoment**](#localMoment-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
 
     Create a LocalMoment from a Moment and a Location.
 
--   [**moment**](#moment-instance_function)(options as { :year as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :month as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :day as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :second as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**moment**](#moment-instance_function)(options as { :year as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :month as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :day as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :second as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Create a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Dictionary of options.
+    从选项字典创建 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
--   [**utcInfo**](#utcInfo-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
+- [**utcInfo**](#utcInfo-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
     Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in UTC time.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **duration(options as { :years as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :days as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hours as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minutes as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Create a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) from a Dictionary of options.
+从选项字典创建 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)。
 
 This is an alternative to [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function) that allows the Duration to be made more easily, using familiar units, which can be handy when building a Duration manually.
 
@@ -286,27 +286,27 @@ Option values are represented as signed 32-bit integers.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary of options
+    选项字典
 
-    -   :years — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :years — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of years (max 69)
 
-    -   :days — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :days — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of days (max 24855)
 
-    -   :hours — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :hours — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of hours (max 596523)
 
-    -   :minutes — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :minutes — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of minutes (max 35791394)
 
-    -   :seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of seconds (max 2147483647)
 
@@ -322,19 +322,19 @@ var oneDay = Gregorian.duration({:days => 1});
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     The Duration representing the specified span of time
 
 
-See Also:
+另见：
 
--   [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function)
+- [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **info(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module))** as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
@@ -342,11 +342,11 @@ Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/con
 
 Parameters:
 
--   moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
+- moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
     A Moment or LocalMoment object for which to get Info
 
--   format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
+- format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
     A Time.FORMAT\_\* type
 
@@ -375,14 +375,14 @@ System.println(birthday.hour);  // 19
 
 Returns:
 
--   [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
+- [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
     Info for the supplied Moment formatted according to the specified format type in local time.
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **localMoment(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
 
@@ -390,16 +390,16 @@ Create a LocalMoment from a Moment and a Location
 
 Parameters:
 
--   location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     The location to use to determine the time zone offset and daylight saving time rules.
 
--   moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
+- moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
     The UTC time to find the local time for.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -532,18 +532,18 @@ Parameters:
 
 Returns:
 
--   [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
+- [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
     A LocalMoment object for the local time at the given location, or `null` if an error occurred.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **moment(options as { :year as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :month as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :day as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :second as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Create a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Dictionary of options.
+从选项字典创建 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 ```
   Each option value is assumed to be in the UTC time zone.
@@ -553,31 +553,31 @@ Unlike [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A dictionary of options; values that would not result in a valid date are not allowed
 
-    -   :year — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :year — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The year (1970-2106)
 
-    -   :month — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- :month — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
         The month (1-12) or a Symbol (:january, :february, ...)
 
-    -   :day — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :day — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The day of month (1-31)
 
-    -   :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The hour (0-23)
 
-    -   :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The minute (0-59)
 
-    -   :second — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :second — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The second (0-59)
 
@@ -593,21 +593,21 @@ var oneDay = Gregorian.moment({:day => 1});
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A Moment representing the specified moment in time
 
 
-See Also:
+另见：
 
--   [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function)
+- [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function)
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **utcInfo(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module))** as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
@@ -619,7 +619,7 @@ Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/con
 
 Parameters:
 
--   format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
+- format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
     A Time.FORMAT\_\* type
 
@@ -648,16 +648,16 @@ System.println(birthday.hour);  // 0
 
 Returns:
 
--   [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
+- [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
     Info for the supplied Moment formatted according to the specified format type in UTC time.
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0

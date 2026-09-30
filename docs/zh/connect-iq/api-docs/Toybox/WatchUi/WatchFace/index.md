@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+- [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Create a Watch Face that supports exiting/entering low power mode.
 
@@ -24,34 +24,34 @@ A WatchFace is a special View that provides notifications when the device change
 
 A WatchFace will run in a high power mode for a short period when responding to a gesture (i.e., raising the watch to check the time) or when returning to the watch face from another application. While in high power mode, the watch face will perform full screen updates every second via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and the application will have access to timers and animations.
 
-After this period in high power mode (typically about ten seconds), 系统将 call [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) to notify the application that it is preparing to enter low power mode.
+After this period in high power mode (typically about ten seconds), the system will call [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) to notify the application that it is preparing to enter low power mode.
 
-During low power mode 系统将 call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
+During low power mode the system will call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
 
-When a gesture occurs while running in low power mode 系统将 call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
+When a gesture occurs while running in low power mode the system will call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
 
 The initial view of a watch face application `must` extend [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -201,26 +201,26 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onEnterSleep**](#onEnterSleep-instance_function)() as **Void**
+- [**onEnterSleep**](#onEnterSleep-instance_function)() as **Void**
 
     The device is entering low power mode.
 
--   [**onExitSleep**](#onExitSleep-instance_function)() as **Void**
+- [**onExitSleep**](#onExitSleep-instance_function)() as **Void**
 
     The device is exiting low power mode.
 
--   [**onPartialUpdate**](#onPartialUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**onPartialUpdate**](#onPartialUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     Update a portion of the screen.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -228,7 +228,7 @@ Constructor
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onEnterSleep()** as **Void**
 
@@ -236,14 +236,14 @@ The device is entering low power mode.
 
 Terminate any active timers and prepare for once-per-minute updates.
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+- [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onExitSleep()** as **Void**
 
@@ -251,37 +251,37 @@ The device is exiting low power mode.
 
 Timers and animations may be started here in preparation for once-per-second updates.
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
+- [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onPartialUpdate(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
 Update a portion of the screen.
 
-Partial updates 可用于 update a small part of the screen to allow for Always On Watch Faces.
+Partial updates can be used to update a small part of the screen to allow for Always On Watch Faces.
 
 This method is called each second as long as the device power budget is not exceeded. It is important to update as small of a portion of the display as possible in this method to avoid exceeding the allowed power budget. To do this, the application must set the clipping region for the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. Calls to [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) and [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) will not execute on devices when this function is being invoked, but can be used in the device simulator.
 
 If the call to this method exceeds the power budget of the device, the partial update will not draw and a call to [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) is made to report the limits that were exceeded.
 
-Note:
+注意：
 
 See the Analog sample distributed with the SDK for an example of onPartialUpdate() using clipping regions
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The device context
+    设备上下文
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S60
 -   Approach® S62
@@ -360,15 +360,15 @@ Parameters:
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+- [Toybox.WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
 
--   [WatchFaceDelegate.onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function)
+- [WatchFaceDelegate.onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function)
 
--   [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
+- [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

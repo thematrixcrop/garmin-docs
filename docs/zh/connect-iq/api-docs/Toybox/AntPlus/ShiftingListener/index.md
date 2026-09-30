@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)
+- [Toybox.AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for shifting
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -126,18 +126,18 @@ API Level 3.1.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onShiftingUpdate**](#onShiftingUpdate-instance_function)(data as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)) as **Void**
+- [**onShiftingUpdate**](#onShiftingUpdate-instance_function)(data as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)) as **Void**
 
     Callback when shifting system status is changed.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -145,7 +145,7 @@ Constructor
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **onShiftingUpdate(data as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/))** as **Void**
 
@@ -153,8 +153,8 @@ Callback when shifting system status is changed
 
 Parameters:
 
--   data — ([AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/))
+- data — ([AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/))
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

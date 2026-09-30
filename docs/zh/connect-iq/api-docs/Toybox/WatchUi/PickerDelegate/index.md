@@ -7,50 +7,50 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)
+- [Toybox.WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 PickerDelegate responds to a Picker confirm or cancel.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
+- [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 
-Note:
+注意：
 
 [popView()](/connect-iq/api-docs/Toybox/WatchUi/#popView-instance_function) is not automatically called once a Picker selection is made
 
-Note:
+注意：
 
 See the Picker sample distributed with the SDK for an example of the use of the PickerDelegate class
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -224,49 +224,49 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onAccept**](#onAccept-instance_function)(values as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onAccept**](#onAccept-instance_function)(values as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Handle a confirm event from a Picker.
 
--   [**onActionMenu**](#onActionMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onActionMenu**](#onActionMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Action* *Menu* behavior.
+    表示 *Action* *Menu* 行为。
 
--   [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Handle a cancel event from a Picker.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onAccept(values as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 Handle a confirm event from a Picker
 
-Note:
+注意：
 
 A `null` value will be returned for any [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) entries
 
 Parameters:
 
--   values — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- values — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     The values chosen in the Picker.
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **onActionMenu()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Action* *Menu* behavior.
+表示 *Action* *Menu* 行为。
 
 This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) to push an action menu.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 4 41mm
 -   Venu® 4 45mm / D2™ Air X15
@@ -277,14 +277,14 @@ This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMen
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 5.1.1
+API 级别 5.1.1
 
 ### **onCancel()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -292,4 +292,4 @@ Handle a cancel event from a Picker
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0

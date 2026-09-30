@@ -7,40 +7,40 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)
+- [Toybox.SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Class for the sensor logging status.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**sampleCount**](#sampleCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**sampleCount**](#sampleCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total number of logged samples.
 
--   [**samplePeriod**](#samplePeriod-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**samplePeriod**](#samplePeriod-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The total number of seconds of logged data.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var sampleCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -48,11 +48,11 @@ The total number of logged samples
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var samplePeriod as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -60,13 +60,13 @@ The total number of seconds of logged data
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -74,4 +74,4 @@ Constructor
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

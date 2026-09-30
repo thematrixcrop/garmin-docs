@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
+- [Toybox.Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The Sensor.Info class contains all of the information provided by enabled sensors.
 
@@ -22,70 +22,70 @@ The Sensor.Info class contains all of the information provided by enabled sensor
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**accel**](#accel-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
+- [**accel**](#accel-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
     The accelerometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in millig-units.
 
--   [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The altitude above mean sea level in meters (m).
+    平均海平面以上的海拔（米）。
 
--   [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The cadence in revolutions per minute (rpm).
 
--   [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The true north referenced heading in radians.
+    以弧度为单位的真北参考航向。
 
--   [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The heart rate in beats per minute (bpm).
 
--   [**mag**](#mag-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
+- [**mag**](#mag-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
     The magnetometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in milliGauss (mG).
 
--   [**oxygenSaturation**](#oxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**oxygenSaturation**](#oxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current oxygen saturation in percent (%).
 
--   [**power**](#power-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**power**](#power-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The power in Watts (W).
 
--   [**pressure**](#pressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**pressure**](#pressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The barometric pressure in Pascals (Pa).
 
--   [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The speed in meters per second (m/s).
 
--   [**temperature**](#temperature-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**temperature**](#temperature-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The temperature in degrees Celsius (C).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var accel as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
 The accelerometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in millig-units.
 
-Note:
+注意：
 
 Some devices do not enable the accelerometer at startup. To get valid data from this field on such devices, applications must enable the sensor with a call to [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -260,28 +260,28 @@ API Level 1.2.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var altitude as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The altitude above mean sea level in meters (m).
+平均海平面以上的海拔（米）。
 
 Elevation is derived from the most accurate source: Barometer or GPS in order of descending accuracy. If no GPS is present, then barometer readings will be used.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
+- [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
 
--   [Positional Altitude](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
+- [Positional Altitude](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
 
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -289,36 +289,36 @@ The cadence in revolutions per minute (rpm).
 
 Cadence is derived from (in order of priority):
 
-1.  Bike sensors (cadence or speed must be enabled)
+1. Bike sensors (cadence or speed must be enabled)
 
-2.  Advanced running dynamics sensors (e.g. heart strap with running dynamics enabled)
+2. Advanced running dynamics sensors (e.g. heart strap with running dynamics enabled)
 
-3.  Foot pod
+3. Foot pod
 
-4.  Watch-based cadence calculations
+4. Watch-based cadence calculations
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var heading as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The true north referenced heading in radians.
+以弧度为单位的真北参考航向。
 
 This provides compass orientation if it is supported by the device.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var heartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -326,25 +326,25 @@ The heart rate in beats per minute (bpm).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var mag as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
 The magnetometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in milliGauss (mG).
 
-Note:
+注意：
 
 Some devices do not enable the magnetometer at startup. To get valid data from this field on such devices, applications must enable the sensor with a call to [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -506,7 +506,7 @@ API Level 1.2.0
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 ### var oxygenSaturation as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -514,9 +514,9 @@ The current oxygen saturation in percent (%)
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -635,7 +635,7 @@ API Level 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var power as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -643,11 +643,11 @@ The power in Watts (W).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -657,11 +657,11 @@ This returns barometric pressure calibrated to sea level. Since pressure varies 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -669,16 +669,16 @@ The speed in meters per second (m/s).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-See Also:
+另见：
 
--   [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
+- [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var temperature as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -686,8 +686,8 @@ The temperature in degrees Celsius (C).
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

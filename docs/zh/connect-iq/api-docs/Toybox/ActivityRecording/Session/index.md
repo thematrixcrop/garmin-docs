@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
+- [Toybox.ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Session objects control the FIT recording state machine.
 
@@ -33,44 +33,44 @@ var session = ActivityRecording.createSession({  // set up recording session
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addLap**](#addLap-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**addLap**](#addLap-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Add a lap to the current recording.
 
--   [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+- [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
     Create a new [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
 
--   [**discard**](#discard-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**discard**](#discard-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Complete the Session by discarding the recorded data.
 
--   [**isRecording**](#isRecording-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isRecording**](#isRecording-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Check if recording is active for this Session.
 
--   [**save**](#save-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**save**](#save-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Complete the session by storing the FIT file on the file system.
 
--   [**setTimerEventListener**](#setTimerEventListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**) as **Void**
+- [**setTimerEventListener**](#setTimerEventListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**) as **Void**
 
     Set the listener for Session timer events The listener method is called whenever a new timer event occurs.
 
--   [**start**](#start-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**start**](#start-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Begin recording a FIT file on the system.
 
--   [**stop**](#stop-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**stop**](#stop-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Stop recording a FIT file on the system.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addLap()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -78,14 +78,14 @@ Add a lap to the current recording.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a lap was successfully created, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **createField(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
@@ -95,84 +95,84 @@ Field objects allow developers to store information in FIT developer fields. Thi
 
 Parameters:
 
--   name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The name of the Field as a String
 
-    -   The maximum length may vary between products
+- The maximum length may vary between products
 
-    -   At least 64 bytes are available
+- At least 64 bytes are available
 
 
--   fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The unique Field Identifier for the Field
 
--   type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
+- type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
     The type definition for the Field from the DATA\_TYPE\_\* enumerator in the [FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) module
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Optional parameters that can be specified for Field creation
 
-    -   :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of elements to add to the Field if it is an Array
 
-        -   This is also the maximum combined size of strings plus `null` terminators if the type is DATA\_TYPE\_STRING (Default 1)
+- This is also the maximum combined size of strings plus `null` terminators if the type is DATA\_TYPE\_STRING (Default 1)
 
-        -   Apps are limited to 256 total bytes per message
+- Apps are limited to 256 total bytes per message
 
-        -   Data fields are limited to 32 bytes per message
+- Data fields are limited to 32 bytes per message
 
-        -   Messages larger than the limit will result in a "New Field out of memory for FIT data" error.
+- Messages larger than the limit will result in a "New Field out of memory for FIT data" error.
 
 
-    -   :mesgType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :mesgType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The message type that this Field should be added to
 
-        -   Defaults to [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const) if not provided
+- Defaults to [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const) if not provided
 
-        -   If mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const), [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) cannot be used as the Field type.
+- If mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const), [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) cannot be used as the Field type.
 
 
-    -   :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         The display units as a String
 
-        -   This should use the current device language
+- This should use the current device language
 
-        -   The maximum length may vary between products
+- The maximum length may vary between products
 
-        -   At least 16 bytes are available
+- At least 16 bytes are available
 
 
-    -   :nativeNum — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :nativeNum — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         If this Field can be treated equivalently to a Field that is included in the FIT SDK use this to indicate the Field Number that is specified by the FIT Profile.
 
 
 Returns:
 
--   [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) —
+- [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) —
 
     The resulting Field object
 
 
-See Also:
+另见：
 
--   [The Message type descriptions can be found in Profile.xlsx included in the FIT SDK](https://www.thisisant.com/resources/fit)
+- [The Message type descriptions can be found in Profile.xlsx included in the FIT SDK](https://www.thisisant.com/resources/fit)
 
--   [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+- [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
--   [Core Topics - Activity Recording](/connect-iq/core-topics/activity-recording/)
+- [Core Topics - Activity Recording](/connect-iq/core-topics/activity-recording/)
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **discard()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -180,14 +180,14 @@ Complete the Session by discarding the recorded data.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the Session was successfully discarded, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **isRecording()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -195,14 +195,14 @@ Check if recording is active for this Session.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if recording is active, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **save()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -210,14 +210,14 @@ Complete the session by storing the FIT file on the file system.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the session was successfully saved, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **setTimerEventListener(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**)** as **Void**
 
@@ -229,30 +229,30 @@ The keys in the Dictionary passed to the listener callback depend on the the val
 
 Parameters:
 
--   listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     A reference to a callback which must accept two arguments.
 
-    -   eventType: A TIMER\_EVENT\_\* enum that describes the event that occurred.
+- eventType: A TIMER\_EVENT\_\* enum that describes the event that occurred.
 
-    -   eventData: A [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) containing data relevant to the timer event or `null`. If eventType is TIMER\_EVENT\_LAP, the following are provided if available:
-
-
-    -   `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters)
-
-    -   `:averageSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
-
-    -   `:maxSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
-
-    -   `:startTime` [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) (Moment)
-
-    -   `:elapsedTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
-
-    -   `:timerTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
+- eventData: A [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) containing data relevant to the timer event or `null`. If eventType is TIMER\_EVENT\_LAP, the following are provided if available:
 
 
+- `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters)
 
-:::details Supported Devices
+- `:averageSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
+
+- `:maxSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
+
+- `:startTime` [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) (Moment)
+
+- `:elapsedTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
+
+- `:timerTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
+
+
+
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -386,7 +386,7 @@ Parameters:
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 ### **start()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -394,14 +394,14 @@ Begin recording a FIT file on the system.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if recording was successfully started, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **stop()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -409,11 +409,11 @@ Stop recording a FIT file on the system.
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if recording was successfully stopped, otherwise `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/)
+- [Toybox.Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The ProfileInfo class contains information about the active profile.
 
@@ -22,28 +22,28 @@ This information can be retrieved with the [getProfileInfo()](/connect-iq/api-do
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The profile name.
 
--   [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
+- [**sport**](#sport-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
     A [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) enum value.
 
--   [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
+- [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
     A [SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SUB_SPORT_GENERIC-const) enum value.
 
--   [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
     An unique identifer of the profile.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -51,11 +51,11 @@ The profile name
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     the profile name
 
@@ -66,11 +66,11 @@ A [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) enum va
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
+- [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
     A SPORT\_\* enum value
 
@@ -81,11 +81,11 @@ A [SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SUB_SPORT_GENERIC-const
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
+- [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 
     A SUB\_SPORT\_\* enum value
 
@@ -96,10 +96,10 @@ An unique identifer of the profile
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     the profile identifier

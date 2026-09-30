@@ -3,81 +3,81 @@ title: "Forerunner® 735xt"
 ---
 # Forerunner® 735xt
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fr735xt |
-| Screen Shape | semi-round |
-| Screen Size | 215 x 180 |
-| Display Colors | 14 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | fr735xt |
+| 屏幕形状 | semi-round |
+| 屏幕尺寸 | 215 x 180 |
+| 显示颜色 | 14 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
-| Watch App | 131072 |  |
-| Watch Face | 65536 |  |
-| Widget | 65536 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 手表应用 | 131072 |  |
+| 表盘 | 65536 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0xaa0000&lt;/td>&lt;td class="entry">0xaa00ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fr735xt/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 215 | 180 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 215 | 180 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fr735xt/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 215 | 89 | 7 | True | True | True | False |
-| Field 2 | 0 | 91 | 215 | 89 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 215 | 89 | 7 | True | True | True | False |
+| 字段 2 | 0 | 91 | 215 | 89 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/fr735xt/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 215 | 55 | 7 | True | True | True | False |
-| Field 2 | 0 | 57 | 215 | 66 | 5 | True | True | False | False |
-| Field 3 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 215 | 55 | 7 | True | True | True | False |
+| 字段 2 | 0 | 57 | 215 | 66 | 5 | True | True | False | False |
+| 字段 3 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/fr735xt/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 215 | 55 | 7 | True | True | True | False |
-| Field 2 | 0 | 57 | 107 | 66 | 1 | True | False | False | False |
-| Field 3 | 109 | 57 | 107 | 66 | 4 | False | True | False | False |
-| Field 4 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 215 | 55 | 7 | True | True | True | False |
+| 字段 2 | 0 | 57 | 107 | 66 | 1 | True | False | False | False |
+| 字段 3 | 109 | 57 | 107 | 66 | 4 | False | True | False | False |
+| 字段 4 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
 
 **Part Number 006-B2158-00**
 
-*Languages*
+*语言*
 
 ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_12B |
 | FONT\_TINY | Roboto Condensed | 19 | ROBOTO\_12B |
@@ -91,13 +91,13 @@ ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, 
 
 **Part Number 006-B2533-00**
 
-*Languages*
+*语言*
 
 eng, ind
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_12B |
 | FONT\_TINY | Roboto Condensed | 19 | ROBOTO\_12B |
@@ -109,13 +109,13 @@ eng, ind
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Source Han Sans CN Bold | 15 | SOURCE\_HAN\_SANS\_CN\_BOLD\_15 |
 | FONT\_TINY | Source Han Sans CN Bold | 15 | SOURCE\_HAN\_SANS\_CN\_BOLD\_15 |
@@ -127,13 +127,13 @@ zhs
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Source Han Sans TWHK Bold | 15 | SOURCE\_HAN\_SANS\_TWHK\_BOLD\_15 |
 | FONT\_TINY | Source Han Sans TWHK Bold | 15 | SOURCE\_HAN\_SANS\_TWHK\_BOLD\_15 |
@@ -145,13 +145,13 @@ zht
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Medium | 18 | NOTO\_SANS\_CJK\_KR\_MEDIUM\_18 |
 | FONT\_TINY | Noto Sans CJK KR Medium | 18 | NOTO\_SANS\_CJK\_KR\_MEDIUM\_18 |
@@ -163,13 +163,13 @@ kor
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -183,13 +183,13 @@ tha
 
 **Part Number 006-B2534-00**
 
-*Languages*
+*语言*
 
 eng
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_12B |
 | FONT\_TINY | Roboto Condensed | 19 | ROBOTO\_12B |
@@ -201,13 +201,13 @@ eng
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Source Han Sans JP Bold | 15 | SOURCE\_HAN\_SANS\_JP\_BOLD\_15 |
 | FONT\_TINY | Source Han Sans JP Bold | 15 | SOURCE\_HAN\_SANS\_JP\_BOLD\_15 |

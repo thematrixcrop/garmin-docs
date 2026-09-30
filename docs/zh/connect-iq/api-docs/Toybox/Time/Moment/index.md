@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Moment is an immutable moment in time.
 
@@ -22,11 +22,11 @@ Moment objects are closely related to [Duration](/connect-iq/api-docs/Toybox/Tim
 
 Internally, Moment objects are stored as 32-bit integers representing the number of seconds since the UNIX epoch (January 1, 1970 at 00:00:00 UTC).
 
-## See Also:
+## 另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Example:
@@ -72,40 +72,40 @@ System.println(Lang.format("day_of_week=$1$ month=$2$", [
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**add**](#add-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**add**](#add-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Add a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) to a Moment.
 
--   [**compare**](#compare-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**compare**](#compare-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Determine if a Moment is before or after another Moment.
 
--   [**greaterThan**](#greaterThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**greaterThan**](#greaterThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine if a Moment is greater than another Moment.
 
--   [**initialize**](#initialize-instance_function)(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**initialize**](#initialize-instance_function)(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Constructor.
 
--   [**lessThan**](#lessThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**lessThan**](#lessThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine if a Moment is less than another Moment.
 
--   [**subtract**](#subtract-instance_function)(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
+- [**subtract**](#subtract-instance_function)(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
     Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Moment.
 
--   [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the UTC value of a Moment.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **add(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -115,7 +115,7 @@ This method functions the same as the [Duration.add()](/connect-iq/api-docs/Toyb
 
 Parameters:
 
--   duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The Duration to add to this Moment
 
@@ -134,21 +134,21 @@ var tomorrow = today.add(oneDay);
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A Moment object that is the sum of self and the provided Duration object
 
 
-See Also:
+另见：
 
--   [Duration.add()](/connect-iq/api-docs/Toybox/Time/Duration/#add-instance_function)
+- [Duration.add()](/connect-iq/api-docs/Toybox/Time/Duration/#add-instance_function)
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **compare(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -158,9 +158,9 @@ This computes a Number representing the difference between the two Moment object
 
 Parameters:
 
--   moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
+- moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    The Moment to compare to this Moment
+    用于与此 Moment 比较的 Moment
 
 
 Example:
@@ -179,21 +179,21 @@ System.println(tomorrow.compare(today)); //  86400, or one day in the future
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The Number of seconds difference between the two Moment objects. If the Moment supplied for comparison is after this Moment, the value will be negative.
 
 
-See Also:
+另见：
 
--   [Moment.subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function)
+- [Moment.subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function)
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **greaterThan(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -201,9 +201,9 @@ Determine if a Moment is greater than another Moment.
 
 Parameters:
 
--   moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
+- moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    The Moment to compare to this Moment
+    用于与此 Moment 比较的 Moment
 
 
 Example:
@@ -222,19 +222,19 @@ System.println(tomorrow.greaterThan(today)); // true
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if this Moment is greater than the Moment supplied for comparison, otherwise `false`
 
 
-See Also:
+另见：
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **initialize(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -242,7 +242,7 @@ Constructor
 
 Parameters:
 
--   seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The Number of seconds with which to initialize the Moment
 
@@ -267,21 +267,21 @@ var today = new Time.Moment(Time.today().value());
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A Moment representing the specified moment in time
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Since:
 
-API Level 1.1.2
+API 级别 1.1.2
 
 ### **lessThan(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -289,9 +289,9 @@ Determine if a Moment is less than another Moment.
 
 Parameters:
 
--   moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
+- moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    The Moment to compare to this Moment
+    用于与此 Moment 比较的 Moment
 
 
 Example:
@@ -310,31 +310,31 @@ System.println(tomorrow.lessThan(today)); // false
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if this Moment is less than the Moment supplied for comparison, otherwise `false`
 
 
-See Also:
+另见：
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **subtract(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
 Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Moment.
 
-Note:
+注意：
 
 Subtracting a Duration from a Moment was not supported until ConnectIQ 3.0.0. If backward compatibility is a concern, it may be best to add a negative Duration instead.
 
 Parameters:
 
--   subtrahend — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- subtrahend — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The Moment or Duration to subtract from this Moment
 
@@ -358,21 +358,21 @@ System.println(duration2.value()); // 86400, or one day
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The Duration between the two Moment objects or the Moment offset by a Duration. When subtracting Moments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) method 可用于 determine whether one Moment is before or after another Moment.
+    The Duration between the two Moment objects or the Moment offset by a Duration. When subtracting Moments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) method can be used to determine whether one Moment is before or after another Moment.
 
 
-See Also:
+另见：
 
--   [Moment.compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function)
+- [Moment.compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function)
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **value()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -380,18 +380,18 @@ Get the UTC value of a Moment.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The UTC date of the Moment in seconds since the UNIX epoch
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.WatchUi.Menu2
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
+- [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
 
--   [Toybox.WatchUi.CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/)
+- [Toybox.WatchUi.CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of a custom menu.
 
@@ -26,17 +26,17 @@ A CustomMenu is a specialized [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/
 
 A CustomMenu is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
+- [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
 
--   [Toybox.WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)
+- [Toybox.WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)
 
--   [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
+- [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
--   [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
+- [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
--   [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
+- [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
 
 
 Example:
@@ -75,24 +75,24 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -251,50 +251,50 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addItem**](#addItem-instance_function)(item as [WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) as **Void**
+- [**addItem**](#addItem-instance_function)(item as [WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) as **Void**
 
     Add a CustomMenuItem to a CustomMenu.
 
--   [**drawFooter**](#drawFooter-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**drawFooter**](#drawFooter-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     Draw the CustomMenu footer.
 
--   [**drawForeground**](#drawForeground-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**drawForeground**](#drawForeground-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     Draw the CustomMenu foreground.
 
--   [**drawTitle**](#drawTitle-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**drawTitle**](#drawTitle-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     Draw the CustomMenu title.
 
--   [**initialize**](#initialize-instance_function)(itemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), options as { :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :focusItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :foreground as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :titleItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :footerItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
+- [**initialize**](#initialize-instance_function)(itemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), options as { :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :focusItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :foreground as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :titleItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :footerItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
 
     Constructor.
 
--   [**setBackgroundColor**](#setBackgroundColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
+- [**setBackgroundColor**](#setBackgroundColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
     Set the background color.
 
--   [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
+- [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
 
-    Set or change the desired divider type.
+    设置或更改所需的分隔线类型。
 
--   [**setFooter**](#setFooter-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+- [**setFooter**](#setFooter-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
     Set the footer drawable.
 
--   [**setForeground**](#setForeground-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+- [**setForeground**](#setForeground-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
     Set the foreground drawable.
 
--   [**setTitle**](#setTitle-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+- [**setTitle**](#setTitle-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
     Set the title drawable.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addItem(item as [WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/))** as **Void**
 
@@ -302,22 +302,22 @@ Add a CustomMenuItem to a CustomMenu.
 
 Parameters:
 
--   item — ([WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) —
+- item — ([WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) —
 
     The CustomMenuItem to add to the CustomMenu. Other MenuItem variants cannot be added to a Custom Menu.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if item is not a [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/).
 
--   ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
+- ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
     Thrown if item is not a [CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/).
 
@@ -330,31 +330,31 @@ This is called to render the menu footer region.
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The menu's drawing context
+    菜单的绘制上下文
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **drawForeground(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
 Draw the CustomMenu foreground.
 
-This is called after a menu's items and title have been rendered. It 可用于 draw overlay content for the menu.
+This is called after a menu's items and title have been rendered. It can be used to draw overlay content for the menu.
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The menu's drawing context
+    菜单的绘制上下文
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **drawTitle(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
@@ -364,110 +364,110 @@ This is called to render the menu title region.
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The menu's drawing context
+    菜单的绘制上下文
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(itemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), options as { :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :focusItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :foreground as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :titleItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :footerItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)**
 
 Constructor
 
-Note:
+注意：
 
 The options `:titleItemHeight` and `:footerItemHeight` are only supported with ConnectIQ 4.0.0 and later.
 
-Note:
+注意：
 
-The `:icon` option is only used on ConnectIQ 3.4.0 devices with subscreen support.
+`:icon` 选项仅在支持子屏幕的 ConnectIQ 3.4.0 设备上使用。
 
-Note:
+注意：
 
 The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme support. The background color will not be used if themes are supported and the theme is non-null.
 
-Note:
+注意：
 
-The `:dividerType` option is only used on ConnectIQ 5.0.1 devices with divider support.
+`:dividerType` 选项仅在支持分隔线的 ConnectIQ 5.0.1 设备上使用。
 
 Parameters:
 
--   itemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- itemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The pixel height of menu items rendered by this menu.
 
--   backgroundColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
+- backgroundColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     The color that will be used to fill the background of the menu.
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary of options. Can be `null`
 
-    -   :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The index of the [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) that should have initial focus. (optional)
 
-    -   :focusItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :focusItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The pixel height of the center menu item of this menu. This option is ignored on products with touch screens. (optional)
 
-    -   :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A Drawable that will render the title area. (optional)
 
-    -   :footer — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :footer — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A Drawable that will render the area after the final item in the menu.(optional)
 
-    -   :foreground — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :foreground — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         A Drawable to render on top of menu items. (optional)
 
-    -   :titleItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :titleItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The pixel height of the header menu item of this menu (optional)
 
-    -   :footerItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :footerItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The pixel height of the footer menu item of this menu. (optional)
 
-    -   :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
         the default icon for the menu incase menuitem do not have it populated
 
-    -   :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
+- :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
-        The menu theme, or `null` for no theme. Defaults to MENU\_THEME\_DEFAULT.
+        菜单主题；传入 `null` 表示不使用主题。默认为 MENU_THEME_DEFAULT。
 
-    -   :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
+- :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
 
         The divider type, if `null` is passed as value, divider will be disabled (non-visible). Defaults to DIVIDER\_TYPE\_DEFAULT.
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.CustomMenu.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#setDividerType-instance_function)
+- [Toybox.WatchUi.CustomMenu.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#setDividerType-instance_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if either `itemHeight` or `backgroundColor` are not of the expected type
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `:focusItemHeight`, `:titleItemHeight`, `:footerItemHeight`, or `:focus` options are provided and are not Number objects
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `:title`, `:footer`, or `:foreground` options are provided and are not Drawable objects.
 
@@ -478,25 +478,25 @@ Set the background color.
 
 Parameters:
 
--   color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
+- color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     The color to fill the background of the menu with.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if color is not a [Number](/connect-iq/api-docs/Toybox/Lang/Number/).
 
 
 ### **setDividerType(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**)** as **Void**
 
-Set or change the desired divider type.
+设置或更改所需的分隔线类型。
 
 If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module). Icon from [CustomMenuItem.setDividerIcon](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function) will be rendered on the left side of the divider.
 
@@ -504,7 +504,7 @@ Set to `null` to disable divider which may also disable [MenuTheme](/connect-iq/
 
 [Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) will be used if not set for devices that support divider.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -527,15 +527,15 @@ Set to `null` to disable divider which may also disable [MenuTheme](/connect-iq/
 
 Since:
 
-API Level 5.0.1
+API 级别 5.0.1
 
 Throws:
 
--   (WatchUi.InvalidValueException) —
+- (WatchUi.InvalidValueException) —
 
     Thrown if divider is not an valid value.
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if divider is not a valid type.
 
@@ -546,18 +546,18 @@ Set the footer drawable.
 
 Parameters:
 
--   drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
+- drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     A drawable that will render the footer area or `null`.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.
 
@@ -568,18 +568,18 @@ Set the foreground drawable.
 
 Parameters:
 
--   drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
+- drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     A Drawable to render on top of the menu items or `null`.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.
 
@@ -590,17 +590,17 @@ Set the title drawable.
 
 Parameters:
 
--   drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
+- drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     A drawable that will render the title area or `null`.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if drawable is not a [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or `null`.

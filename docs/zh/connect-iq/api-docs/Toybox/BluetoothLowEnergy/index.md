@@ -3,32 +3,32 @@ title: "Module: Toybox.BluetoothLowEnergy"
 ---
 # Module: Toybox.BluetoothLowEnergy
 
-## Overview
+## 概述
 
-The BluetoothLowEnergy 模块提供 access to Generic BLE communication functionality in the central role. Including the ability to scan for peripheral devices, pair with sensors, and performing GATTC operations on a peripheral
+The BluetoothLowEnergy module provides access to Generic BLE communication functionality in the central role. Including the ability to scan for peripheral devices, pair with sensors, and performing GATTC operations on a peripheral
 
 This module also provides several sets of constants:
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Background
+- 后台
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -165,271 +165,271 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   BluetoothLowEnergy
+- BluetoothLowEnergy
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/), [Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), [Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), [DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/), [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/), [Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/), [ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/), [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/), [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/), [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), [UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)
+类：[BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/), [Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), [Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), [DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/), [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/), [Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/), [ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/), [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/), [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/), [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), [UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)
 
-## Constant Summary
+## 常量摘要
 
 ### Status
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | STATUS\_SUCCESS | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Operation Successful
 
- |
+|
 | STATUS\_NOT\_ENOUGH\_RESOURCES | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Operation failed due to lack of resources
 
- |
+|
 | STATUS\_READ\_FAIL | 12 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Read Request Failed
 
- |
+|
 | STATUS\_WRITE\_FAIL | 14 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Write Request Failed
 
- |
+|
 | STATUS\_GATT\_INSUFFICIENT\_AUTHENTICATION\_FAIL | 18 |
 
-API Level 4.2.5
+API 级别 4.2.5
 
- |
+|
 
 GATT operation failed due to insufficent authentication
 
- |
+|
 | STATUS\_GATT\_INSUFFICIENT\_ENCRYPTION\_FAIL | 19 |
 
-API Level 4.2.5
+API 级别 4.2.5
 
- |
+|
 
 GATT operation failed due to insufficent encryption
 
- |
+|
 | STATUS\_ENCRYPTION\_BOND\_FAIL | 100 |
 
-API Level 4.2.5
+API 级别 4.2.5
 
- |
+|
 
 Initial Bond Procedure Failed
 
- |
+|
 | STATUS\_ENCRYPTION\_PEER\_KEYS\_LOST | 101 |
 
-API Level 4.2.5
+API 级别 4.2.5
 
- |
+|
 
 Peer reports that its keys have been lost.
 
- |
+|
 | STATUS\_ENCRYPTION\_SECURITY\_INSUFFICIENT | 102 |
 
-API Level 4.2.5
+API 级别 4.2.5
 
- |
+|
 
 Peer Attempted to Reduce Key Security Level from a previous bond
 
- |
+|
 
 ### ScanState
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SCAN\_STATE\_OFF | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 BLE scanning disabled
 
- |
+|
 | SCAN\_STATE\_SCANNING | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 BLE scanning active
 
- |
+|
 
 ### ConnectionState
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CONNECTION\_STATE\_DISCONNECTED | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Device is Disconnected
 
- |
+|
 | CONNECTION\_STATE\_CONNECTED | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Device is Connected
 
- |
+|
 | CONNECTION\_STATE\_REJECTED | 2 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 Device connection is rejected by the user because of insufficient security
 
- |
+|
 
 ### WriteType
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | WRITE\_TYPE\_WITH\_RESPONSE | 0 |
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Write with response
 
- |
+|
 | WRITE\_TYPE\_DEFAULT | 1 |
 
-API Level 3.1.0
+API 级别 3.1.0
 
- |
+|
 
 Write without response (Default write type)
 
- |
+|
 
 ### ConnectionStrategy
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CONNECTION\_STRATEGY\_DEFAULT | 0 |
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 Pair the device, bonding may be requested later.
 
- |
+|
 | CONNECTION\_STRATEGY\_SECURE\_PAIR\_BOND | 1 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 Pair the device and establish secure bonding. Device may be bonded as part of the pairing process.
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**cccdUuid**](#cccdUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [**cccdUuid**](#cccdUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
     Retrieves the CCCD Uuid.
 
--   [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Accessor for determining the number of available connections.
 
--   [**getBondedDevices**](#getBondedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
+- [**getBondedDevices**](#getBondedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
     Retrieve an Iterator of devices that the Application has bonded with that the system has saved bond information for.
 
--   [**getPairedDevices**](#getPairedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
+- [**getPairedDevices**](#getPairedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
     Retrieve an Iterator of all currently paired devices accessible to the Application.
 
--   [**longToUuid**](#longToUuid-instance_function)(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [**longToUuid**](#longToUuid-instance_function)(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
     Converts long representation of a UUID to a Uuid object.
 
--   [**pairDevice**](#pairDevice-instance_function)(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
+- [**pairDevice**](#pairDevice-instance_function)(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
 
     Pairs a peripheral device seen in scanning with the system.
 
--   [**registerProfile**](#registerProfile-instance_function)(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> }) as **Void**
+- [**registerProfile**](#registerProfile-instance_function)(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> }) as **Void**
 
     Registers a Bluetooth Profile Definition Call this function to define all of the Profiles that will be used in the application.
 
--   [**setConnectionStrategy**](#setConnectionStrategy-instance_function)(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) as **Void**
+- [**setConnectionStrategy**](#setConnectionStrategy-instance_function)(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) as **Void**
 
     Set the connection type used to connect to the BLE device.
 
--   [**setDelegate**](#setDelegate-instance_function)(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) as **Void**
+- [**setDelegate**](#setDelegate-instance_function)(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) as **Void**
 
     Sets the Delegate Handler for Bluetooth Asynchronous Callbacks An application can only have 1 registered delegate.
 
--   [**setScanState**](#setScanState-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) as **Void**
+- [**setScanState**](#setScanState-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) as **Void**
 
     Starts the BLE Scanning Operations Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
 
--   [**stringToUuid**](#stringToUuid-instance_function)(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [**stringToUuid**](#stringToUuid-instance_function)(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
     Converts the String Representation of a UUID into a Uuid Object.
 
--   [**unpairDevice**](#unpairDevice-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) as **Void**
+- [**unpairDevice**](#unpairDevice-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) as **Void**
 
     Unpairs a peripheral device from the system If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **cccdUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -437,19 +437,19 @@ Retrieves the CCCD Uuid
 
 Returns:
 
--   [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
+- [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     Uuid Object for the Client Characteristic Configuration Descriptor
 
 
-See Also:
+另见：
 
--   [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getAvailableConnectionCount()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -457,20 +457,20 @@ Accessor for determining the number of available connections
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The number of available connections
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getBondedDevices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
 Retrieve an Iterator of devices that the Application has bonded with that the system has saved bond information for.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -545,14 +545,14 @@ Retrieve an Iterator of devices that the Application has bonded with that the sy
 
 Returns:
 
--   [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
+- [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     Bonded devices available to the App as [ScanResults](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)
 
 
 Since:
 
-API Level 4.2.5
+API 级别 4.2.5
 
 ### **getPairedDevices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
@@ -560,14 +560,14 @@ Retrieve an Iterator of all currently paired devices accessible to the Applicati
 
 Returns:
 
--   [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
+- [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     All paired devices available to the App
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **longToUuid(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/))** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -575,30 +575,30 @@ Converts long representation of a UUID to a Uuid object
 
 Parameters:
 
--   mostSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
+- mostSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
 
     Most Significant 64-bits of the UUID
 
--   leastSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
+- leastSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
 
     Least Significant 64-bits of the UUID
 
 
 Returns:
 
--   [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
+- [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     Uuid Object
 
 
-See Also:
+另见：
 
--   [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **pairDevice(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/))** as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
 
@@ -610,25 +610,25 @@ This pairing does not persist across application instances.
 
 Parameters:
 
--   scanResult — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
+- scanResult — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
 
     A scan result for the device that should be paired. Cannot be `null`.
 
 
 Returns:
 
--   [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
+- [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
 
     the device that was added to the paired list or `null` if the device could not be paired.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Throws:
 
--   ([BluetoothLowEnergy.DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/)) —
+- ([BluetoothLowEnergy.DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/)) —
 
     Thrown if the maximum number of paired devices has already been reached, or if pairing failed for unkown reason
 
@@ -645,7 +645,7 @@ Registration can fail if too many profiles are registered, the current limit is 
 
 Parameters:
 
--   profile — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- profile — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Profile Definition. Defines the expected Profile UUID, Profile Characteristics and Characteristic Descriptors. Cannot be `null`.
 
@@ -673,11 +673,11 @@ using Toybox.BluetoothLowEnergy;
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Throws:
 
--   ([BluetoothLowEnergy.ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/)) —
+- ([BluetoothLowEnergy.ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/)) —
 
     If registration could not be completed
 
@@ -686,20 +686,20 @@ Throws:
 
 Set the connection type used to connect to the BLE device.
 
-Note:
+注意：
 
 The default value is CONNECTION\_TYPE\_DEFAULT. Using the value of CONNECTION\_TYPE\_SECURE\_PAIR\_BOND will pair and bond the device as part of the pairing process.
 
 Parameters:
 
--   connectionStrategy — ([BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) —
+- connectionStrategy — ([BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) —
 
     The desired connection type to use for connecting to all the BLE devices.
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **setDelegate(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/))** as **Void**
 
@@ -709,7 +709,7 @@ An application can only have 1 registered delegate. Subsequent calls to this fun
 
 Parameters:
 
--   delegate — ([BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) —
+- delegate — ([BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) —
 
     An implementation of the [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) class to register as the handler for callbacks, or `null` to deregister the current handler.
 
@@ -730,7 +730,7 @@ Ble.setDelegate(handler);
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **setScanState(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module))** as **Void**
 
@@ -740,7 +740,7 @@ Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/Bluetooth
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **stringToUuid(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -748,30 +748,30 @@ Converts the String Representation of a UUID into a Uuid Object
 
 Parameters:
 
--   str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     String Representation of the Uuid formatted as "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 
 Returns:
 
--   [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
+- [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     Uuid Object
 
 
-See Also:
+另见：
 
--   [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
+- [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Throws:
 
--   ([BluetoothLowEnergy.UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)) —
+- ([BluetoothLowEnergy.UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)) —
 
     If string is not in valid format
 
@@ -780,15 +780,15 @@ Throws:
 
 Unpairs a peripheral device from the system
 
-If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect. If the device is not connected 系统将 stop searching for the device.
+If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect. If the device is not connected the system will stop searching for the device.
 
 Parameters:
 
--   device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
+- device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
     the device to remove from the paired device store. Cannot be `null`
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

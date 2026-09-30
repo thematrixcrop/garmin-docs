@@ -3,15 +3,15 @@ title: "Module: Toybox.Application.WatchFaceConfig"
 ---
 # Module: Toybox.Application.WatchFaceConfig
 
-## Overview
+## 概述
 
 The WatchFaceConfig module facilitates access to persisted watchface configurations. Watchface could have more than one configuration settings, and each setting is represented by a unique identifier.
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -42,32 +42,32 @@ API Level 5.1.0
 
 :::
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/), [ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/), [Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), [Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)
+类：[Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/), [ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/), [Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), [Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getIds**](#getIds-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)\> or **Null**
+- [**getIds**](#getIds-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)\> or **Null**
 
     Returns ids of all saved watchface config settings.
 
--   [**getSettings**](#getSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**) as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) or **Null**
+- [**getSettings**](#getSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**) as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) or **Null**
 
     Returns the watchface config settings for the given unique identifier.
 
--   [**setSettings**](#setSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**, settings as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) as **Void**
+- [**setSettings**](#setSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**, settings as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) as **Void**
 
     Set or update watchface config settings with the given unique identifier, `configId`.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getIds()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)\> or **Null**
 
 Returns ids of all saved watchface config settings.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -100,14 +100,14 @@ Returns ids of all saved watchface config settings.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     or `null` if the watchface does not support watchface config.
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **getSettings(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**)** as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) or **Null**
 
@@ -115,12 +115,12 @@ Returns the watchface config settings for the given unique identifier.
 
 Parameters:
 
--   configId — (Id) —
+- configId — (Id) —
 
     unique identifier of the watchface config settings to fetch, if null default or active settings will be returned.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -153,14 +153,14 @@ Parameters:
 
 Returns:
 
--   [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) —
+- [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) —
 
     or `null` if the watchface does not support watchface config.
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **setSettings(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**, settings as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/))** as **Void**
 
@@ -168,16 +168,16 @@ Set or update watchface config settings with the given unique identifier, `confi
 
 Parameters:
 
--   configId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- configId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     unique identifier of the watchface config settings to save or update, if `null` default settings will be updated.
 
--   settings — ([WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) —
+- settings — ([WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) —
 
     watchface config settings to apply.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -210,14 +210,14 @@ Parameters:
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if `settings` is a disallowed data type.
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if settings contain invalid values.

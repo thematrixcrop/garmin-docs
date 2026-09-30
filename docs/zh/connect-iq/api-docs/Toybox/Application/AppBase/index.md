@@ -7,43 +7,43 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
+- [Toybox.Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 AppBase is the base class for an app.
 
 All apps inherit from this class and use it's methods to manage the life cycle of an app.
 
--   Your app overrides the class to provide entry points with the following methods:
+- Your app overrides the class to provide entry points with the following methods:
 
 
--   [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
--   [getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)
+- [getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)
 
--   [getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function)
+- [getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function)
 
--   [getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function)
+- [getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function)
 
--   [onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)
+- [onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)
 
--   [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
-
-
--   These functions are called in the following order:
+- [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
-1.  [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+- These functions are called in the following order:
 
-2.  [getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)
 
-3.  [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
+1. [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
+
+2. [getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)
+
+3. [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
 Every AppBase object has access to an object store to persist data.
@@ -74,13 +74,13 @@ class AppLifeCycle extends Application.AppBase {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)
 
-## Constant Summary
+## 常量摘要
 
 ### GlanceTheme
 
@@ -88,198 +88,198 @@ Glance color themes for supported devices
 
 Since:
 
-API Level 4.0.0
+API 级别 4.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | GLANCE\_THEME\_DEFAULT | 0 |
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_BLUE | 1 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_GOLD | 2 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_GREEN | 3 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_LIGHT\_BLUE | 4 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_RED | 5 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_WHITE | 6 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 | GLANCE\_THEME\_PURPLE | 7 |
 
-API Level 4.0.0
+API 级别 4.0.0
 
  |  |
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**allowTrialMessage**](#allowTrialMessage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**allowTrialMessage**](#allowTrialMessage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Check if application trial messages are allowed.
 
--   [**clearProperties**](#clearProperties-instance_function)() as **Void** deprecated
+- [**clearProperties**](#clearProperties-instance_function)() as **Void** deprecated
 
-    Clear the object store for the application.
+    清空该应用的对象存储。
 
--   [**deleteProperty**](#deleteProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) as **Void** deprecated
+- [**deleteProperty**](#deleteProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) as **Void** deprecated
 
-    Delete the given key from the object store.
+    从对象存储中删除指定的键。
 
--   [**getGlanceTheme**](#getGlanceTheme-instance_function)() as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
+- [**getGlanceTheme**](#getGlanceTheme-instance_function)() as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
 
     Method to get the glance theme.
 
--   [**getGlanceView**](#getGlanceView-instance_function)() as \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) \] or \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) \] or **Null**
+- [**getGlanceView**](#getGlanceView-instance_function)() as \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) \] or \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) \] or **Null**
 
     Override to provide the [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) for the glance preview.
 
--   [**getGoalView**](#getGoalView-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) \] or **Null**
+- [**getGoalView**](#getGoalView-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) \] or **Null**
 
     Override to provide a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) for a goal that has triggered within a watch face.
 
--   [**getInitialView**](#getInitialView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
+- [**getInitialView**](#getInitialView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
     Override to provide the initial View and Input Delegate of the application.
 
--   [**getProperty**](#getProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) deprecated
+- [**getProperty**](#getProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) deprecated
 
-    Get the data associated with a given key from the object store.
+    从对象存储中获取与指定键关联的数据。
 
--   [**getSensorConfigurationView**](#getSensorConfigurationView-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
+- [**getSensorConfigurationView**](#getSensorConfigurationView-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
     Override to provide the pairing config View and Input Delegate of the application.
 
--   [**getSensorDelegate**](#getSensorDelegate-instance_function)() as [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) or **Null**
+- [**getSensorDelegate**](#getSensorDelegate-instance_function)() as [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) or **Null**
 
     Override to provide the Sensor Delegate object.
 
--   [**getServiceDelegate**](#getServiceDelegate-instance_function)() as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
+- [**getServiceDelegate**](#getServiceDelegate-instance_function)() as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
 
     Get a [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) to run background tasks for this app.
 
--   [**getSettingsView**](#getSettingsView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
+- [**getSettingsView**](#getSettingsView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
 
     Override to provide the settings View and Input Delegate of the application.
 
--   [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
+- [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
     Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing content to the device.
 
--   [**getTrialDaysRemaining**](#getTrialDaysRemaining-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**getTrialDaysRemaining**](#getTrialDaysRemaining-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Override to return the number of days remaining in the trial If a developer wishes to implement time-based app trials, they will need to override this function to return the number of days remaining in the trial.
 
--   [**isActive**](#isActive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isActive**](#isActive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     return true if app is currently in active state, otherwise false.
 
--   [**isTrial**](#isTrial-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isTrial**](#isTrial-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Check if the application is in trial mode.
 
--   [**loadProperties**](#loadProperties-instance_function)() as **Void** deprecated
+- [**loadProperties**](#loadProperties-instance_function)() as **Void** deprecated
 
     Load the properties for the application.
 
--   [**onActive**](#onActive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
+- [**onActive**](#onActive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
     Invoked when app enters active mode, i.e.
 
--   [**onAppInstall**](#onAppInstall-instance_function)() as **Void**
+- [**onAppInstall**](#onAppInstall-instance_function)() as **Void**
 
     The callback method that is triggered in the background when the app is installed.
 
--   [**onAppUpdate**](#onAppUpdate-instance_function)() as **Void**
+- [**onAppUpdate**](#onAppUpdate-instance_function)() as **Void**
 
     The callback method that is triggered in the background when the app is updated Requires the Background permission to be enabled and your application class to carry the :background annotation.
 
--   [**onAuthenticationRequest**](#onAuthenticationRequest-instance_function)() as **Void**
+- [**onAuthenticationRequest**](#onAuthenticationRequest-instance_function)() as **Void**
 
     Called when an Application requests to run code on demand, during an authentication process.
 
--   [**onBackgroundData**](#onBackgroundData-instance_function)(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
+- [**onBackgroundData**](#onBackgroundData-instance_function)(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
 
     Handle data passed from a ServiceDelegate to the application.
 
--   [**onDeviceSettingChanged**](#onDeviceSettingChanged-instance_function)(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
+- [**onDeviceSettingChanged**](#onDeviceSettingChanged-instance_function)(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
     A device setting has changed This method is called when a device setting value is changed.
 
--   [**onDisplayModeChanged**](#onDisplayModeChanged-instance_function)() as **Void**
+- [**onDisplayModeChanged**](#onDisplayModeChanged-instance_function)() as **Void**
 
     The display mode has changed, only available in AMOLED or LCD screen products.
 
--   [**onEnhancedReadabilityModeChanged**](#onEnhancedReadabilityModeChanged-instance_function)() as **Void**
+- [**onEnhancedReadabilityModeChanged**](#onEnhancedReadabilityModeChanged-instance_function)() as **Void**
 
     The font mode has changed This method is called when the system changes to or from Enhanced Readability Mode.
 
--   [**onInactive**](#onInactive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
+- [**onInactive**](#onInactive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
     Invoked when app enters inactive mode, i.e.
 
--   [**onNightModeChanged**](#onNightModeChanged-instance_function)() as **Void**
+- [**onNightModeChanged**](#onNightModeChanged-instance_function)() as **Void**
 
     The display mode has changed This method is called when the system changes to or from night mode.
 
--   [**onSettingsChanged**](#onSettingsChanged-instance_function)() as **Void**
+- [**onSettingsChanged**](#onSettingsChanged-instance_function)() as **Void**
 
     Called when the application settings have been changed by Garmin Connect Mobile (GCM) while while the app is running.
 
--   [**onStart**](#onStart-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
+- [**onStart**](#onStart-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
     Method called at startup to allow handling of app initialization.
 
--   [**onStop**](#onStop-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
+- [**onStop**](#onStop-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
     Override to handle application cleanup upon termination.
 
--   [**onStorageChanged**](#onStorageChanged-instance_function)() as **Void**
+- [**onStorageChanged**](#onStorageChanged-instance_function)() as **Void**
 
     Called when Application storage is changed by the other running instance, of the app i.e Background Process while the CIQ app is running or vice-versa.
 
--   [**onValidateProperty**](#onValidateProperty-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**onValidateProperty**](#onValidateProperty-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Called when a property needs to be validated by the application.
 
--   [**openAppSettingsEditor**](#openAppSettingsEditor-instance_function)() as **Void**
+- [**openAppSettingsEditor**](#openAppSettingsEditor-instance_function)() as **Void**
 
     Function to open application settings editor.
 
--   [**saveProperties**](#saveProperties-instance_function)() as **Void** deprecated
+- [**saveProperties**](#saveProperties-instance_function)() as **Void** deprecated
 
     Save the properties for the application.
 
--   [**setProperty**](#setProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void** deprecated
+- [**setProperty**](#setProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void** deprecated
 
-    Store the given data in the object.
+    把给定数据存入该对象。
 
--   [**validateProperty**](#validateProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
+- [**validateProperty**](#validateProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
     Validate a property being stored.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **allowTrialMessage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -289,28 +289,28 @@ Returns `true` if the application should allow the product to push unlock instru
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     Returns `true` if trial messages should be shown, otherwise `false`.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **clearProperties()** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
-Clear the object store for the application.
+清空该应用的对象存储。
 
-Note:
+注意：
 
 Background processes cannot clear properties.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -488,46 +488,46 @@ Background processes cannot clear properties.
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
--   [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
+- [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
+- ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
     Thrown if called from a background process
 
 
 ### **deleteProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type))** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
-Delete the given key from the object store.
+从对象存储中删除指定的键。
 
-Note:
+注意：
 
 Background processes cannot delete properties.
 
 Parameters:
 
--   key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
+- key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
     The key to delete
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -705,22 +705,22 @@ Parameters:
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
--   [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
+- [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
+- ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
     Thrown if called from a background process
 
@@ -729,7 +729,7 @@ Throws:
 
 Method to get the glance theme.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   D2™ Air X10
@@ -783,13 +783,13 @@ Method to get the glance theme.
 
 Since:
 
-API Level 4.0.0
+API 级别 4.0.0
 
 ### **getGlanceView()** as \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) \] or \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) \] or **Null**
 
 Override to provide the [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) for the glance preview.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -903,87 +903,87 @@ Override to provide the [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array containing a [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and an optional [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/). If this function returns `null` the app name will be used as preview content.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getGoalView(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) \] or **Null**
 
 Override to provide a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) for a goal that has triggered within a watch face.
 
--   If a goal is reached when a watch face is running, this function will be triggered.
+- If a goal is reached when a watch face is running, this function will be triggered.
 
--   The type of goal that was met will be provided, and the AppBase should return a View that displays a goal reached message and/or animations for that goal.
+- The type of goal that was met will be provided, and the AppBase should return a View that displays a goal reached message and/or animations for that goal.
 
--   If a View is returned from this function, the main watch face view will be shutdown, and then new View will pushed.
+- If a View is returned from this function, the main watch face view will be shutdown, and then new View will pushed.
 
--   If this method is not overridden in the AppBase, or if it returns `null`, the native goal screens will be shown.
+- If this method is not overridden in the AppBase, or if it returns `null`, the native goal screens will be shown.
 
 
 Parameters:
 
--   goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
+- goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     The goal type that has triggered. The goalType will be from the GOAL\_TYPE\_\* enumeration.
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **getInitialView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
 Override to provide the initial View and Input Delegate of the application.
 
-Note:
+注意：
 
-This method must be overridden in derived classes. If called, this function will cause the application to crash.
+此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and an optional [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+    包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type))** as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
-Get the data associated with a given key from the object store.
+从对象存储中获取与指定键关联的数据。
 
 Properties must first be set with [setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) before they are can be obtained with `getProperty`.
 
-Note:
+注意：
 
 Symbols can change from build to build and are not to be used for for Keys or Values.
 
 Parameters:
 
--   key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
+- key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
     The key of the value to retrieve from the object store (cannot be a Symbol)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1163,25 +1163,25 @@ Parameters:
 
 Returns:
 
--   [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) —
+- [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) —
 
     The content associated with the key, or `null` if the key is not in the object store
 
 
-See Also:
+另见：
 
--   [setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)
+- [setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
--   [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
+- [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getSensorConfigurationView(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
@@ -1189,12 +1189,12 @@ Override to provide the pairing config View and Input Delegate of the applicatio
 
 Parameters:
 
--   sensor —
+- sensor —
 
     [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) The sensor object that needs additional configuration
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1276,14 +1276,14 @@ Parameters:
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and an optional [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+    包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **getSensorDelegate()** as [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) or **Null**
 
@@ -1291,7 +1291,7 @@ Override to provide the Sensor Delegate object.
 
 The sensor delegate object will be used to get information about the sensors during the native pairing process.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1373,14 +1373,14 @@ The sensor delegate object will be used to get information about the sensors dur
 
 Returns:
 
--   [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) —
+- [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) —
 
     The Sensor Delegate object
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **getServiceDelegate()** as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
 
@@ -1388,37 +1388,37 @@ Get a [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) to 
 
 When a ServiceDelegate is retrieved, the following will occur:
 
--   The method triggered within the ServiceDelegate will be run
+- The method triggered within the ServiceDelegate will be run
 
--   The background task will exit using [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) or [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function)
+- The background task will exit using [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) or [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function)
 
--   The background task will be automatically terminated after 30 seconds if it is not exited by these methods
+- The background task will be automatically terminated after 30 seconds if it is not exited by these methods
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array containing a [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
 
 
-See Also:
+另见：
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **getSettingsView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
 
 Override to provide the settings View and Input Delegate of the application.
 
--   This function is only applicable to watch faces and data fields.
+- This function is only applicable to watch faces and data fields.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1555,20 +1555,20 @@ Override to provide the settings View and Input Delegate of the application.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and an optional [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+    包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **getSyncDelegate()** as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
 Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing content to the device.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1687,11 +1687,11 @@ Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) o
 
 Returns:
 
--   [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
+- [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getTrialDaysRemaining()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1701,20 +1701,20 @@ If a developer wishes to implement time-based app trials, they will need to over
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A Number object indicating the number of days remaining in the trial, or `null` if no timed trial is active.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **isActive()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 return true if app is currently in active state, otherwise false.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   D2™ Mach 2 Pro
@@ -1745,7 +1745,7 @@ return true if app is currently in active state, otherwise false.
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
 ### **isTrial()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -1755,24 +1755,24 @@ This will always return `true` for development build apps. If the app has been s
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     Return `true` if the app is "locked" and considered to be in trial mode, otherwise `false` if the app has been unlocked.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **loadProperties()** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
 Load the properties for the application
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1952,7 +1952,7 @@ Load the properties for the application
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onActive(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
@@ -1960,12 +1960,12 @@ Invoked when app enters active mode, i.e. occupying screen in the foreground.
 
 Parameters:
 
--   state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     for future expansion, null for now.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   D2™ Mach 2 Pro
@@ -1996,7 +1996,7 @@ Parameters:
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
 ### **onAppInstall()** as **Void**
 
@@ -2004,7 +2004,7 @@ The callback method that is triggered in the background when the app is installe
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onAppUpdate()** as **Void**
 
@@ -2012,7 +2012,7 @@ The callback method that is triggered in the background when the app is updated 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onAuthenticationRequest()** as **Void**
 
@@ -2020,7 +2020,7 @@ Called when an Application requests to run code on demand, during an authenticat
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **onBackgroundData(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type))** as **Void**
 
@@ -2030,19 +2030,19 @@ When the [Background](/connect-iq/api-docs/Toybox/Background/) process terminate
 
 Parameters:
 
--   data — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- data — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The data passed from the background process.
 
 
-See Also:
+另见：
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **onDeviceSettingChanged(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
@@ -2052,11 +2052,11 @@ This method is called when a device setting value is changed.
 
 Parameters:
 
--   aSymbol — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- aSymbol — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     The symbol for the field in [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) that has changed.
 
--   aValue — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- aValue — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The new value for the field. The type of the value will match the type of the field within the [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) class.
 
@@ -2074,7 +2074,7 @@ function onDeviceSettingChanged(aSymbol as Symbol, aValue as Object) as Void {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -2156,7 +2156,7 @@ function onDeviceSettingChanged(aSymbol as Symbol, aValue as Object) as Void {
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **onDisplayModeChanged()** as **Void**
 
@@ -2164,7 +2164,7 @@ The display mode has changed, only available in AMOLED or LCD screen products.
 
 This method is called when the system changes the display mode. Use the [System.getDisplayMode()](/connect-iq/api-docs/Toybox/System/#getDisplayMode-instance_function) to get the current state.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -2222,7 +2222,7 @@ This method is called when the system changes the display mode. Use the [System.
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 ### **onEnhancedReadabilityModeChanged()** as **Void**
 
@@ -2230,7 +2230,7 @@ The font mode has changed
 
 This method is called when the system changes to or from Enhanced Readability Mode. Use the [Toybox::System::DeviceSettings#isEnhancedReadabilityModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isEnhancedReadabilityModeEnabled-var) field to get the current state.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   Descent™ Mk3 43mm / Mk3i 43mm
@@ -2265,7 +2265,7 @@ This method is called when the system changes to or from Enhanced Readability Mo
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
 ### **onInactive(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
@@ -2273,12 +2273,12 @@ Invoked when app enters inactive mode, i.e. hidden by system and not occupying s
 
 Parameters:
 
--   state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     for future expansion, null for now.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   D2™ Mach 2 Pro
@@ -2309,7 +2309,7 @@ Parameters:
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
 ### **onNightModeChanged()** as **Void**
 
@@ -2317,7 +2317,7 @@ The display mode has changed
 
 This method is called when the system changes to or from night mode. Use the [Toybox::System::DeviceSettings#isNightModeEnabled](/connect-iq/api-docs/Toybox/System/DeviceSettings/#isNightModeEnabled-var) field to get the current state.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1040 / 1040 Solar
 -   Edge® 1050
@@ -2334,7 +2334,7 @@ This method is called when the system changes to or from night mode. Use the [To
 
 Since:
 
-API Level 4.1.2
+API 级别 4.1.2
 
 ### **onSettingsChanged()** as **Void**
 
@@ -2349,14 +2349,14 @@ function onSettingsChanged() { // triggered by settings change in GCM
 }
 ```
 
-See Also:
+另见：
 
--   [WatchUi.requestUpdate() details](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
+- [WatchUi.requestUpdate() details](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **onStart(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
@@ -2364,37 +2364,37 @@ Method called at startup to allow handling of app initialization.
 
 Before the initial [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) is retrieved, onStart() is called. Application level settings can be initialized or retrieved from the object store before the initial View is created. This method must be overridden to handle your own app initialization.
 
-Note:
+注意：
 
 the suspension state can be cleared in the event of reboot or app update.
 
 Parameters:
 
--   state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Required. If an [Intent](/connect-iq/api-docs/Toybox/System/Intent/) is not used to launch the application, then an empty "state" Dictionary is used. If an Intent is used to start the application the Dictionary contains the arguments from the Intent.
 
-    -   :resume — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :resume — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         If true, indicates app has been resumed from suspension, restore the previously saved app state if needed.
 
-    -   :launchedFromGlance — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :launchedFromGlance — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         If true, indicates the app is started from glance list as opposed to the the app list.
 
-    -   :launchedFromComplication — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :launchedFromComplication — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         If present, indicates the complication index the app was launched from.
 
-    -   :launchedFromPostInstall — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :launchedFromPostInstall — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         If present, indicates the app was launched from a post-install page.
 
-    -   :launchedFromWatchFaceSettingsEditor — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :launchedFromWatchFaceSettingsEditor — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         If `true` indicates the watchface is started in watchface config mode.
 
-    -   :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
+- :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
 
         If present, represents the desired watch face settings to launch watch face with. use [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to fetch given settings.
 
@@ -2411,14 +2411,14 @@ function onStart(state) {
 }
 ```
 
-See Also:
+另见：
 
--   [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onStop(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
@@ -2426,29 +2426,29 @@ Override to handle application cleanup upon termination.
 
 If the application needs to save data to the object store it should be done in this function. Once the function is complete, the application will terminate.
 
-Note:
+注意：
 
 the suspension state can be cleared in the event of reboot or app update.
 
 Parameters:
 
--   state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Required. If an [Intent](/connect-iq/api-docs/Toybox/System/Intent/) is not used to launch an application on stop of the current application an empty "state" Dictionary is used. If an Intent is used to start another application, then the Dictionary contains the arguments from the Intent.
 
-    -   :suspend — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :suspend — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         If true, the app has been suspended and the current state can be resumed at a later time.
 
 
-See Also:
+另见：
 
--   [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onStorageChanged()** as **Void**
 
@@ -2456,7 +2456,7 @@ Called when Application storage is changed by the other running instance, of the
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **onValidateProperty(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -2464,23 +2464,23 @@ Called when a property needs to be validated by the application.
 
 Parameters:
 
--   key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The key to validate
 
--   value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
+- value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
     The value to validate
 
 
 Returns:
 
--   true if the property is valid, return an error message otherwise. Returning false causes a generic error to be displayed on settings configuration app
+- true if the property is valid, return an error message otherwise. Returning false causes a generic error to be displayed on settings configuration app
 
 
 Since:
 
-API Level 4.1.0
+API 级别 4.1.0
 
 ### **openAppSettingsEditor()** as **Void**
 
@@ -2488,17 +2488,17 @@ Function to open application settings editor
 
 Since:
 
-API Level 4.1.0
+API 级别 4.1.0
 
 ### **saveProperties()** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
 Save the properties for the application
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -2678,31 +2678,31 @@ Save the properties for the application
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **setProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type))** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
-Store the given data in the object.
+把给定数据存入该对象。
 
-Note:
+注意：
 
 Background processes cannot save properties.
 
-Note:
+注意：
 
 Symbols can change from build to build and are not to be used for for Keys or Values.
 
 Parameters:
 
--   key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
+- key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
     The key used to store and retrieve the value from the object store (cannot be a Symbol)
 
--   value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
+- value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 
     The value to put into the object store
 
@@ -2724,7 +2724,7 @@ var string = app.getProperty("string");       // get value for "string" key
 var boolean = app.getProperty("boolean");     // get value for "boolean" key
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -2902,30 +2902,30 @@ var boolean = app.getProperty("boolean");     // get value for "boolean" key
 
 :::
 
-See Also:
+另见：
 
--   [getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)
+- [getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)
 
--   [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
+- [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
--   [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
+- [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
 
--   [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
+- [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
 
--   [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
+- [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
+- ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
     Thrown if called from a background process on device that does not have ConnectIQ 3.2.0 support. Data can always be passed to the foreground process from a background process with [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function).
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if called with a key or value of a disallowed type
 
@@ -2936,15 +2936,15 @@ Validate a property being stored.
 
 Parameters:
 
--   key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
+- key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
     The key to validate
 
--   value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
+- value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 
     The value to validate
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

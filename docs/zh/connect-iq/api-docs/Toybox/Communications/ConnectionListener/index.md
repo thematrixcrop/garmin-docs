@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)
+- [Toybox.Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Provide a callback function for communications operations.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -189,18 +189,18 @@ API Level 1.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onComplete**](#onComplete-instance_function)() as **Void**
+- [**onComplete**](#onComplete-instance_function)() as **Void**
 
     Callback when a communications operation completes.
 
--   [**onError**](#onError-instance_function)() as **Void**
+- [**onError**](#onError-instance_function)() as **Void**
 
     Callback when a communications operation error occurs.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onComplete()** as **Void**
 
@@ -208,7 +208,7 @@ Callback when a communications operation completes.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onError()** as **Void**
 
@@ -216,4 +216,4 @@ Callback when a communications operation error occurs.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

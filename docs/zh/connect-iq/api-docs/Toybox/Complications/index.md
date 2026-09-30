@@ -3,15 +3,15 @@ title: "Module: Toybox.Complications"
 ---
 # Module: Toybox.Complications
 
-## Overview
+## 概述
 
-The Complications module 允许应用 both subscribe to and publish complications. Complications are exposed via an iterator, or can be queried by identifier. Watch faces can register a callback and subscribe to multiple complications. Device apps and audio content providers can publish complication information.
+The Complications module allows apps to both subscribe to and publish complications. Complications are exposed via an iterator, or can be queried by identifier. Watch faces can register a callback and subscribe to multiple complications. Device apps and audio content providers can publish complication information.
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -88,11 +88,11 @@ API Level 4.2.0
 
 :::
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Complication](/connect-iq/api-docs/Toybox/Complications/Complication/), [ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/), [Id](/connect-iq/api-docs/Toybox/Complications/Id/), [Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
+类：[Complication](/connect-iq/api-docs/Toybox/Complications/Complication/), [ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/), [Id](/connect-iq/api-docs/Toybox/Complications/Id/), [Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
 
-## Constant Summary
+## 常量摘要
 
 ### Unit
 
@@ -100,515 +100,515 @@ Units reported by a complication
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | UNIT\_INVALID | 0 |
-API Level 4.2.0
+API 级别 4.2.0
 
  |  |
 | UNIT\_DISTANCE | 1 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a distance; value is in meters
 
- |
+|
 | UNIT\_ELEVATION | 2 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a elevation; value is in meters
 
- |
+|
 | UNIT\_HEIGHT | 3 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a height; value is in meters
 
- |
+|
 | UNIT\_SPEED | 4 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a speed; value is in meters/second
 
- |
+|
 | UNIT\_TEMPERATURE | 5 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a temperature; value is in degrees Celsius
 
- |
+|
 | UNIT\_WEIGHT | 6 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Complication is a weight; value is in grams
 
- |
+|
 
-### Type
+### 类型
 
 System build-in complication type
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | COMPLICATION\_TYPE\_INVALID | 0 |
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Invalid build-in complication type
 
- |
+|
 | COMPLICATION\_TYPE\_BATTERY | 1 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number percent 0 to 100 representing battery charge or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_STEPS | 2 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number of steps for the current day, not available in wheelchair mode
 
- |
+|
 | COMPLICATION\_TYPE\_CALORIES | 3 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number of calories burned for the current day
 
- |
+|
 | COMPLICATION\_TYPE\_FLOORS\_CLIMBED | 4 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number of floors climbed, not available in wheelchair mode
 
- |
+|
 | COMPLICATION\_TYPE\_INTENSITY\_MINUTES | 5 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number of intensity minutes that resets weekly
 
- |
+|
 | COMPLICATION\_TYPE\_DATE | 6 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a String with the day of the month and the month e.g., 28 Mar
 
- |
+|
 | COMPLICATION\_TYPE\_WEEKDAY\_MONTHDAY | 7 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a String with the day of the week and the day of the month e.g., Mon 28
 
- |
+|
 | COMPLICATION\_TYPE\_CURRENT\_WEATHER | 8 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the current weather
 
- |
+|
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_1DAY | 9 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather one day in the future
 
- |
+|
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_2DAY | 10 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather two days in the future
 
- |
+|
 | COMPLICATION\_TYPE\_FORECAST\_WEATHER\_3DAY | 11 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a [Weather.CONDITION\_\*](/connect-iq/api-docs/Toybox/Weather/#CONDITION_CLEAR-const) for the forecast weather three days in the future
 
- |
+|
 | COMPLICATION\_TYPE\_CALENDAR\_EVENTS | 12 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a String with the time of your next calendar event or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_SUNRISE | 13 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number representing seconds since midnight local time of the sunrise or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_SUNSET | 14 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number representing seconds since midnight local time of the sunset or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_ALTITUDE | 15 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float of the current altitude in meters or `null`. Prior to ConnectIQ API version 5.1.0, the value was a Number.
 
- |
+|
 | COMPLICATION\_TYPE\_SEA\_LEVEL\_PRESSURE | 16 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float in pascals of the current pressure or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_NOTIFICATION\_COUNT | 17 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number of notifications or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_HEART\_RATE | 18 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number in beats per minute or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_WEEKLY\_RUN\_DISTANCE | 19 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float of your weekly run distance in meters
 
- |
+|
 | COMPLICATION\_TYPE\_WEEKLY\_BIKE\_DISTANCE | 20 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float of your weekly bike distance in meters
 
- |
+|
 | COMPLICATION\_TYPE\_RECOVERY\_TIME | 21 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number of minutes remaining in your recovery time
 
- |
+|
 | COMPLICATION\_TYPE\_STRESS | 22 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your current stress level or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_BODY\_BATTERY | 23 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your current body battery or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_VO2MAX\_RUN | 24 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your running VO2 max or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_VO2MAX\_BIKE | 25 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your cycling VO2 max or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_TRAINING\_STATUS | 26 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a String representing your training status
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_5K | 27 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your predicted 5K time in seconds
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_10K | 28 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your predicted 10k time in seconds
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_HALF\_MARATHON | 29 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your predicted half marathon time in seconds
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PREDICTOR\_MARATHON | 30 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Number representing your predicted your marathon time in seconds
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_5K | 31 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float representing your 5k pace in meters/second
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_10K | 32 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float representing your 10k pace in meters/second
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_HALF\_MARATHON | 33 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float representing your half marathon pace in meters/second
 
- |
+|
 | COMPLICATION\_TYPE\_RACE\_PACE\_PREDICTOR\_MARATHON | 34 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float representing your marathon pace in meters/second
 
- |
+|
 | COMPLICATION\_TYPE\_PULSE\_OX | 35 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number as a percent from 0 to 100 representing your blood oxygen or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_RESPIRATION\_RATE | 36 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number representing your breaths per minute or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_SOLAR\_INPUT | 37 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a non-negative Number representing percent between 0 to 100 of solar charge or `null`
 
- |
+|
 | COMPLICATION\_TYPE\_CURRENT\_TEMPERATURE | 38 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a Float representing temperature in degrees Celsius or `null`. Prior to ConnectIQ API version 5.0.0, the value was a Number.
 
- |
+|
 | COMPLICATION\_TYPE\_HIGH\_LOW\_TEMPERATURE | 39 |
 
-API Level 4.2.0
+API 级别 4.2.0
 
- |
+|
 
 Value is a String providing the high and low temperature values in a format similar to "H &lt;high> / L &lt;low>"
 
- |
+|
 | COMPLICATION\_TYPE\_WHEELCHAIR\_PUSHES | 40 |
 
-API Level 4.2.3
+API 级别 4.2.3
 
- |
+|
 
 Value is a non-negative Number of pushes for the current day, only available in wheelchair mode
 
- |
+|
 | COMPLICATION\_TYPE\_LAST\_GOLF\_ROUND\_SCORE | 41 |
 
-API Level 5.0.0
+API 级别 5.0.0
 
- |
+|
 
 Value is a String in the format "&lt;LastRoundTotalScore>(&lt;Offset>)" where Offset is "E" for even-par, a negative value for under par, or a positive value for over par
 
- |
+|
 | COMPLICATION\_TYPE\_SLEEP\_SCORE | 42 |
 
-API Level 6.0.2
+API 级别 6.0.2
 
- |
+|
 
 Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
- |
+|
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**ComplicationChangedCallback**](#ComplicationChangedCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
+- [**ComplicationChangedCallback**](#ComplicationChangedCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
     Callback for subscribers to be notified of complication updates.
 
--   [**Data**](#Data-named_type) as { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
--   [**Icon**](#Icon-named_type) as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
--   [**Label**](#Label-named_type) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
--   [**RangeValue**](#RangeValue-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
--   [**Ranges**](#Ranges-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)\>
--   [**Value**](#Value-named_type) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)
+- [**Data**](#Data-named_type) as { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
+- [**Icon**](#Icon-named_type) as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
+- [**Label**](#Label-named_type) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**RangeValue**](#RangeValue-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
+- [**Ranges**](#Ranges-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)\>
+- [**Value**](#Value-named_type) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**exitTo**](#exitTo-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
+- [**exitTo**](#exitTo-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
     Launches the app associated with the complication.
 
--   [**getComplication**](#getComplication-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
+- [**getComplication**](#getComplication-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
 
     Given a complication Id, get the complication.
 
--   [**getComplications**](#getComplications-instance_function)() as [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
+- [**getComplications**](#getComplications-instance_function)() as [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
 
     Provide an iterator over complication id that we have access to.
 
--   [**registerComplicationChangeCallback**](#registerComplicationChangeCallback-instance_function)(callback as [Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type) or **Null**) as **Void**
+- [**registerComplicationChangeCallback**](#registerComplicationChangeCallback-instance_function)(callback as [Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type) or **Null**) as **Void**
 
     Register callback for notifications of complication updates.
 
--   [**subscribeToUpdates**](#subscribeToUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**subscribeToUpdates**](#subscribeToUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Subscribes to complication.
 
--   [**unsubscribeFromAllUpdates**](#unsubscribeFromAllUpdates-instance_function)() as **Void**
+- [**unsubscribeFromAllUpdates**](#unsubscribeFromAllUpdates-instance_function)() as **Void**
 
     Unsubscribes from all subscribed complications.
 
--   [**unsubscribeFromUpdates**](#unsubscribeFromUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
+- [**unsubscribeFromUpdates**](#unsubscribeFromUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
     Unsubscribes from complication.
 
--   [**updateComplication**](#updateComplication-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) as **Void**
+- [**updateComplication**](#updateComplication-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) as **Void**
 
     Update the complication data Values not specified in \`data\` will not be updated from the last update or what is specified in the resource definition.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **ComplicationChangedCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
@@ -616,45 +616,45 @@ Callback for subscribers to be notified of complication updates
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **Data** as { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **Icon** as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **Label** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **RangeValue** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **Ranges** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)\>
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **Value** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **exitTo(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as **Void**
 
@@ -662,12 +662,12 @@ Launches the app associated with the complication
 
 Parameters:
 
--   id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
+- id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
     The complication Id to launch
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -740,18 +740,18 @@ Parameters:
 
 :::
 
-See Also:
+另见：
 
--   [Toybox.System.exitTo](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
+- [Toybox.System.exitTo](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if complication id is not a from a valid app
 
@@ -762,25 +762,25 @@ Given a complication Id, get the complication
 
 Parameters:
 
--   id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
+- id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
     Complication Id to fetch
 
 
 Returns:
 
--   [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) —
+- [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) —
 
     Complication
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 Throws:
 
--   ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
+- ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
     Thrown if the given complication is not found.
 
@@ -791,14 +791,14 @@ Provide an iterator over complication id that we have access to
 
 Returns:
 
--   [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/) —
+- [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/) —
 
     Iterator instance
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **registerComplicationChangeCallback(callback as [Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type) or **Null**)** as **Void**
 
@@ -806,14 +806,14 @@ Register callback for notifications of complication updates
 
 Parameters:
 
--   callback — ([Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type)) —
+- callback — ([Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type)) —
 
     Callback to be invoked when complication is changed or becomes unavailable.
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **subscribeToUpdates(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -821,27 +821,27 @@ Subscribes to complication. Information is sent to registered ComplicationChange
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if subscribed successfully, `false` if given complication could not be subscribed to
 
 
-See Also:
+另见：
 
--   [Toybox.Complications.registerComplicationChangeCallback](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function)
+- [Toybox.Complications.registerComplicationChangeCallback](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function)
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown if too many active subscriptions
 
--   ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
+- ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
     Thrown if the given complication is not found.
 
@@ -852,7 +852,7 @@ Unsubscribes from all subscribed complications
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **unsubscribeFromUpdates(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as **Void**
 
@@ -860,14 +860,14 @@ Unsubscribes from complication
 
 Parameters:
 
--   id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
+- id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
     Complication Td to unsubscribe from
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 ### **updateComplication(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type))** as **Void**
 
@@ -875,21 +875,21 @@ Update the complication data Values not specified in \`data\` will not be update
 
 Parameters:
 
--   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     Application complication to be updated
 
--   data — ([Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) —
+- data — ([Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) —
 
     Updated values for the complication
 
 
 Since:
 
-API Level 4.2.0
+API 级别 4.2.0
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown if the id of the complication is not associated with this application

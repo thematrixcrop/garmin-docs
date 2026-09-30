@@ -3,22 +3,22 @@ title: "Module: Toybox.Background"
 ---
 # Module: Toybox.Background
 
-## Overview
+## 概述
 
 Background events are special events that trigger in the background when either certain system events occur, such as when an activity goal has been met, or at certain times (called temporal events). This allows an application to update its data even when the application is not active.
 
-## See Also:
+## 另见：
 
--   [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
+- [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
 
--   [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
+- [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -184,131 +184,131 @@ API Level 2.3.0
 
 :::
 
-Requires Permission:
+需要权限：
 
--   Background
+- 后台
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/), [InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/), [MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)
+类：[ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/), [InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/), [MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**deleteActivityCompletedEvent**](#deleteActivityCompletedEvent-instance_function)() as **Void**
+- [**deleteActivityCompletedEvent**](#deleteActivityCompletedEvent-instance_function)() as **Void**
 
     Stops the application from receiving activity completed events.
 
--   [**deleteGoalEvent**](#deleteGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
+- [**deleteGoalEvent**](#deleteGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
     Remove the active goal background event of specified type for the application.
 
--   [**deleteOAuthResponseEvent**](#deleteOAuthResponseEvent-instance_function)() as **Void**
+- [**deleteOAuthResponseEvent**](#deleteOAuthResponseEvent-instance_function)() as **Void**
 
     Remove the OAuth response background event.
 
--   [**deletePhoneAppMessageEvent**](#deletePhoneAppMessageEvent-instance_function)() as **Void**
+- [**deletePhoneAppMessageEvent**](#deletePhoneAppMessageEvent-instance_function)() as **Void**
 
     Stops the application from receiving background phone app messages.
 
--   [**deleteSleepEvent**](#deleteSleepEvent-instance_function)() as **Void**
+- [**deleteSleepEvent**](#deleteSleepEvent-instance_function)() as **Void**
 
     Remove the active sleep background event for the application.
 
--   [**deleteStepsEvent**](#deleteStepsEvent-instance_function)() as **Void**
+- [**deleteStepsEvent**](#deleteStepsEvent-instance_function)() as **Void**
 
     Remove the active steps background event for the application.
 
--   [**deleteTemporalEvent**](#deleteTemporalEvent-instance_function)() as **Void**
+- [**deleteTemporalEvent**](#deleteTemporalEvent-instance_function)() as **Void**
 
     Remove the active temporal background event for the application.
 
--   [**deleteWakeEvent**](#deleteWakeEvent-instance_function)() as **Void**
+- [**deleteWakeEvent**](#deleteWakeEvent-instance_function)() as **Void**
 
     Remove the active wake background event for the application.
 
--   [**exit**](#exit-instance_function)(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
+- [**exit**](#exit-instance_function)(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
     Terminates the current background process.
 
--   [**getActivityCompletedEventRegistered**](#getActivityCompletedEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getActivityCompletedEventRegistered**](#getActivityCompletedEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function).
+    获取是否已向 [registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) 注册后台事件。
 
--   [**getBackgroundData**](#getBackgroundData-instance_function)() as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
+- [**getBackgroundData**](#getBackgroundData-instance_function)() as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
     Get data previously saved by a background process.
 
--   [**getGoalEventRegistered**](#getGoalEventRegistered-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getGoalEventRegistered**](#getGoalEventRegistered-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function).
+    获取是否已向 [registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) 注册后台事件。
 
--   [**getLastTemporalEventTime**](#getLastTemporalEventTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**getLastTemporalEventTime**](#getLastTemporalEventTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Get the time the last temporal background event was triggered.
 
--   [**getOAuthResponseEventRegistered**](#getOAuthResponseEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getOAuthResponseEventRegistered**](#getOAuthResponseEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function).
+    获取是否已向 [registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function) 注册后台事件。
 
--   [**getPhoneAppMessageEventRegistered**](#getPhoneAppMessageEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getPhoneAppMessageEventRegistered**](#getPhoneAppMessageEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function).
+    获取是否已向 [registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function) 注册后台事件。
 
--   [**getSleepEventRegistered**](#getSleepEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getSleepEventRegistered**](#getSleepEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function).
+    获取是否已向 [registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function) 注册后台事件。
 
--   [**getStepsEventRegistered**](#getStepsEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getStepsEventRegistered**](#getStepsEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function).
+    获取是否已向 [registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function) 注册后台事件。
 
--   [**getTemporalEventRegisteredTime**](#getTemporalEventRegisteredTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
+- [**getTemporalEventRegisteredTime**](#getTemporalEventRegisteredTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
     Get the Moment or Duration with which a background event is registered by [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function).
 
--   [**getWakeEventRegistered**](#getWakeEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**getWakeEventRegistered**](#getWakeEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether a background event is registered with [registerForWakeEvent()](/connect-iq/api-docs/Toybox/Background/#registerForWakeEvent-instance_function).
+    获取是否已向 [registerForWakeEvent()](/connect-iq/api-docs/Toybox/Background/#registerForWakeEvent-instance_function) 注册后台事件。
 
--   [**registerForActivityCompletedEvent**](#registerForActivityCompletedEvent-instance_function)() as **Void**
+- [**registerForActivityCompletedEvent**](#registerForActivityCompletedEvent-instance_function)() as **Void**
 
     Registers the application to receive an event whenever an activity is completed.
 
--   [**registerForGoalEvent**](#registerForGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
+- [**registerForGoalEvent**](#registerForGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
     Register a background event that triggers when the user reaches a specified goal.
 
--   [**registerForOAuthResponseEvent**](#registerForOAuthResponseEvent-instance_function)() as **Void**
+- [**registerForOAuthResponseEvent**](#registerForOAuthResponseEvent-instance_function)() as **Void**
 
     Registers a background event that triggers each time an OAuth login request completes and the token becomes available on the system for use.
 
--   [**registerForPhoneAppMessageEvent**](#registerForPhoneAppMessageEvent-instance_function)() as **Void**
+- [**registerForPhoneAppMessageEvent**](#registerForPhoneAppMessageEvent-instance_function)() as **Void**
 
     Registers the application to receive an event whenever a phone app message is received.
 
--   [**registerForSleepEvent**](#registerForSleepEvent-instance_function)() as **Void**
+- [**registerForSleepEvent**](#registerForSleepEvent-instance_function)() as **Void**
 
     Register a background event that triggers at the sleep time configured on the device.
 
--   [**registerForStepsEvent**](#registerForStepsEvent-instance_function)() as **Void**
+- [**registerForStepsEvent**](#registerForStepsEvent-instance_function)() as **Void**
 
     Registers a background event that triggers each time a multiple of 1000 steps is reached.
 
--   [**registerForTemporalEvent**](#registerForTemporalEvent-instance_function)(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as **Void**
+- [**registerForTemporalEvent**](#registerForTemporalEvent-instance_function)(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as **Void**
 
     Register a background event that triggers at a specific time or at a regular interval.
 
--   [**registerForWakeEvent**](#registerForWakeEvent-instance_function)() as **Void**
+- [**registerForWakeEvent**](#registerForWakeEvent-instance_function)() as **Void**
 
     Register a background event that triggers at the wake time configured on the device.
 
--   [**requestApplicationWake**](#requestApplicationWake-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**requestApplicationWake**](#requestApplicationWake-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Display a confirmation dialog requesting to launch the application to which the background task belongs.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **deleteActivityCompletedEvent()** as **Void**
 
@@ -316,7 +316,7 @@ Stops the application from receiving activity completed events.
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 ### **deleteGoalEvent(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
@@ -324,7 +324,7 @@ Remove the active goal background event of specified type for the application.
 
 Parameters:
 
--   goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
+- goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type of the event to remove
 
@@ -337,7 +337,7 @@ Background.deleteGoalEvent(GOAL_TYPE_STEPS);
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **deleteOAuthResponseEvent()** as **Void**
 
@@ -345,13 +345,13 @@ Remove the OAuth response background event.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **deletePhoneAppMessageEvent()** as **Void**
 
 Stops the application from receiving background phone app messages.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -489,7 +489,7 @@ Stops the application from receiving background phone app messages.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **deleteSleepEvent()** as **Void**
 
@@ -497,7 +497,7 @@ Remove the active sleep background event for the application.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **deleteStepsEvent()** as **Void**
 
@@ -505,7 +505,7 @@ Remove the active steps background event for the application.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **deleteTemporalEvent()** as **Void**
 
@@ -513,7 +513,7 @@ Remove the active temporal background event for the application.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **deleteWakeEvent()** as **Void**
 
@@ -521,7 +521,7 @@ Remove the active wake background event for the application.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **exit(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type))** as **Void**
 
@@ -529,23 +529,23 @@ Terminates the current background process.
 
 All background processes should call this method when they have completed the desired tasks. Data passed to this method will either be passed immediately to the active application if it is running, or will be saved and passed to the application the next time it runs. Data must be one of the following types:
 
--   [String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
--   [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
--   [Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
--   [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
--   [Char](/connect-iq/api-docs/Toybox/Lang/Char/)
+- [Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
--   [Long](/connect-iq/api-docs/Toybox/Lang/Long/)
+- [Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
--   [Double](/connect-iq/api-docs/Toybox/Lang/Double/)
+- [Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
--   [Array](/connect-iq/api-docs/Toybox/Lang/Array/)
+- [Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
--   [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
+- [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 
 Arrays and Dictionaries may contain `null` values or any of the above listed types. If no data should be passed to the main process, `null` may be specified.
@@ -554,36 +554,36 @@ This method will exit if called by a background process, but will do nothing if 
 
 Parameters:
 
--   backgroundData — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- backgroundData — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The object to pass to the main process's [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) method. Passing `null` will not override previous data values not yet consumed by the parent application's AppBase.onBackgroundData() method.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   ([Background.ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/)) —
+- ([Background.ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/)) —
 
     Indicates the data provided exceeds the data size limit (approximately 8 KB). If this exception is caught, the process will not exit and should attempt to call `Background.exit()` again with less data.
 
 
 ### **getActivityCompletedEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function)
+获取是否已向 [registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) 注册后台事件
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForActivityCompletedEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 ### **getBackgroundData()** as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
@@ -591,36 +591,36 @@ Get data previously saved by a background process.
 
 Data is delivered via [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function), and is reset to `null` once data has been delivered to the main process. This method always returns `null` in the main application's process.
 
-See Also:
+另见：
 
--   [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
+- [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **getGoalEventRegistered(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function).
+获取是否已向 [registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) 注册后台事件。
 
 Parameters:
 
--   goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
+- goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type to check for registered background events
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForGoalEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getLastTemporalEventTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -648,42 +648,42 @@ if (lastTime != null) {
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     The time the last background event was triggered, but may be `null` if no previous temporal background event has occurred or if the device app or widget has been started since the event was last triggered
 
 
-See Also:
+另见：
 
--   [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function)
+- [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function)
 
--   [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
+- [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **getOAuthResponseEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function)
+获取是否已向 [registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function) 注册后台事件
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForOAuthResponseEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getPhoneAppMessageEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function)
+获取是否已向 [registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function) 注册后台事件
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -821,44 +821,44 @@ Get whether a background event is registered with [registerForPhoneAppMessageEve
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForPhoneAppMessageEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **getSleepEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function).
+获取是否已向 [registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function) 注册后台事件。
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForSleepEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getStepsEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function).
+获取是否已向 [registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function) 注册后台事件。
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForStepsEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getTemporalEventRegisteredTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
@@ -866,34 +866,34 @@ Get the Moment or Duration with which a background event is registered by [regis
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     The specific Moment in time at which a background event is registered to trigger, or the interval Duration at which to repeat a background event. May be `null` if no temporal background event is registered.
 
 
-See Also:
+另见：
 
--   [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
+- [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getWakeEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether a background event is registered with [registerForWakeEvent()](/connect-iq/api-docs/Toybox/Background/#registerForWakeEvent-instance_function).
+获取是否已向 [registerForWakeEvent()](/connect-iq/api-docs/Toybox/Background/#registerForWakeEvent-instance_function) 注册后台事件。
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a background event is registered with registerForWakeEvent(), otherwise `false`
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **registerForActivityCompletedEvent()** as **Void**
 
@@ -901,7 +901,7 @@ Registers the application to receive an event whenever an activity is completed.
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 ### **registerForGoalEvent(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
@@ -909,7 +909,7 @@ Register a background event that triggers when the user reaches a specified goal
 
 Parameters:
 
--   goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
+- goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type on which to trigger the background event
 
@@ -922,7 +922,7 @@ Background.registerForGoalEvent(GOAL_TYPE_STEPS);
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **registerForOAuthResponseEvent()** as **Void**
 
@@ -932,13 +932,13 @@ This event is triggered when a OAuth response is received by the system.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **registerForPhoneAppMessageEvent()** as **Void**
 
 Registers the application to receive an event whenever a phone app message is received.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1076,7 +1076,7 @@ Registers the application to receive an event whenever a phone app message is re
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **registerForSleepEvent()** as **Void**
 
@@ -1084,7 +1084,7 @@ Register a background event that triggers at the sleep time configured on the de
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **registerForStepsEvent()** as **Void**
 
@@ -1094,7 +1094,7 @@ This event is triggered only by device-recorded steps, and will not trigger base
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **registerForTemporalEvent(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as **Void**
 
@@ -1108,7 +1108,7 @@ Only one temporal event may be registered at a time. Calling `registerForTempora
 
 Parameters:
 
--   time — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- time — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The specific Moment in time at which to run a background event, or the interval Duration at which to repeat a background event
 
@@ -1125,18 +1125,18 @@ var eventTime = Time.now().add(FIVE_MINUTES);
 Background.registerForTemporalEvent(eventTime);
 ```
 
-See Also:
+另见：
 
--   [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
+- [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   ([Background.InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/)) —
+- ([Background.InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/)) —
 
     Indicates an application has attempted to schedule a background event which either: \* Occurs less than five minutes after the last background event occurred \* Has a duration of less than five minutes
 
@@ -1147,7 +1147,7 @@ Register a background event that triggers at the wake time configured on the dev
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 ### **requestApplicationWake(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
@@ -1157,7 +1157,7 @@ If the dialog is confirmed, the application will open. If the dialog is declined
 
 Parameters:
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The message to display in the dialog when requesting to launch the app
 
@@ -1179,19 +1179,19 @@ class BackgroundServiceDelegate extends System.ServiceDelegate {
 }
 ```
 
-See Also:
+另见：
 
--   [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
+- [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
 
--   [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)
+- [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   ([Background.MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)) —
+- ([Background.MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)) —
 
     Indicates the provided message exceeds the size limit (255 Bytes). Note that some characters may be larger than 1 Byte

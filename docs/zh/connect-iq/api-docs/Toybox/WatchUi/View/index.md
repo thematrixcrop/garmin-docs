@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A View is an object that represents a page within an app.
 
@@ -34,9 +34,9 @@ Data Fields
 
 If the size of the data field has changed since the last onUpdate(), onLayout() will be called prior to onUpdate(). However, onLayout(), onShow(), and onUpdate() are not called for [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/) objects.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
+- [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
 Example:
@@ -73,139 +73,139 @@ class MyWidgetView extends WatchUi.View {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/), [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/), [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/), [WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**ActionMenuIndicatorOptions**](#ActionMenuIndicatorOptions-named_type) as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
--   [**ControlBarOptions**](#ControlBarOptions-named_type) as { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
+- [**ActionMenuIndicatorOptions**](#ActionMenuIndicatorOptions-named_type) as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
+- [**ControlBarOptions**](#ControlBarOptions-named_type) as { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addLayer**](#addLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as **Void**
+- [**addLayer**](#addLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as **Void**
 
     Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack.
 
--   [**clearLayers**](#clearLayers-instance_function)() as **Void**
+- [**clearLayers**](#clearLayers-instance_function)() as **Void**
 
     Clear all layers that are added to the view.
 
--   [**findDrawableById**](#findDrawableById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
+- [**findDrawableById**](#findDrawableById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
     Find a Drawable by its ID.
 
--   [**getLayerIndex**](#getLayerIndex-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getLayerIndex**](#getLayerIndex-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Return the index of the layer from the bottom of the view layer stack.
 
--   [**getLayers**](#getLayers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
+- [**getLayers**](#getLayers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
 
     Get a copy of the layer stack currently added to the view, sorted by the drawing order, i.e.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**insertLayer**](#insertLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**insertLayer**](#insertLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Insert the layer at the given index in the layer stack, this will stop animation playback.
 
--   [**onHide**](#onHide-instance_function)() as **Void**
+- [**onHide**](#onHide-instance_function)() as **Void**
 
     Hide the View.
 
--   [**onLayout**](#onLayout-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**onLayout**](#onLayout-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     The entry point for the View.
 
--   [**onShow**](#onShow-instance_function)() as **Void**
+- [**onShow**](#onShow-instance_function)() as **Void**
 
     Show the View.
 
--   [**onUpdate**](#onUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
+- [**onUpdate**](#onUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
     Update the View.
 
--   [**removeLayer**](#removeLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**removeLayer**](#removeLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Remove a layer from the view layer stack, this will stop animation playback.
 
--   [**setActionMenuIndicator**](#setActionMenuIndicator-instance_function)(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**) as **Void**
+- [**setActionMenuIndicator**](#setActionMenuIndicator-instance_function)(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**) as **Void**
 
     Set action menu indicator options for this view.
 
--   [**setClockHandPosition**](#setClockHandPosition-instance_function)(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** }) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**setClockHandPosition**](#setClockHandPosition-instance_function)(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** }) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the clock hands position.
 
--   [**setControlBar**](#setControlBar-instance_function)(options as [View.ControlBarOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ControlBarOptions-named_type) or **Null**) as **Void**
+- [**setControlBar**](#setControlBar-instance_function)(options as [View.ControlBarOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ControlBarOptions-named_type) or **Null**) as **Void**
 
     Set control bar options for this view.
 
--   [**setKeyToSelectableInteraction**](#setKeyToSelectableInteraction-instance_function)(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
+- [**setKeyToSelectableInteraction**](#setKeyToSelectableInteraction-instance_function)(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
     Enter Selectable interaction mode.
 
--   [**setLayout**](#setLayout-instance_function)(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**) as **Void**
+- [**setLayout**](#setLayout-instance_function)(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**) as **Void**
 
     Set the layout for the View.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **ActionMenuIndicatorOptions** as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **ControlBarOptions** as { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as **Void**
 
-Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack. Users do not need to draw the layer on the screen manually, instead, once a layer is added to the view, 系统将 draw all layers during screen updates which include View update (e.g. onUpdate/onPartialUpdate) and animation playback.
+Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack. Users do not need to draw the layer on the screen manually, instead, once a layer is added to the view, the system will draw all layers during screen updates which include View update (e.g. onUpdate/onPartialUpdate) and animation playback.
 
 Disabled for DataFiled and Background Apps
 
 Parameters:
 
--   layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
+- layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
     a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) object to add
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the `layer` is not a WatchUi.Layer
 
@@ -216,7 +216,7 @@ Clear all layers that are added to the view
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **findDrawableById(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -226,7 +226,7 @@ A common use for this method is to get layout information to format dynamic cont
 
 Parameters:
 
--   identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The identifier of the Drawable to find
 
@@ -257,19 +257,19 @@ view.setText(timeString);
 
 Returns:
 
--   [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
+- [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
     A Drawable if found, otherwise `null`
 
 
-See Also:
+另见：
 
--   [System.getClockTime()](/connect-iq/api-docs/Toybox/System/#getClockTime-instance_function)
+- [System.getClockTime()](/connect-iq/api-docs/Toybox/System/#getClockTime-instance_function)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **getLayerIndex(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -277,21 +277,21 @@ Return the index of the layer from the bottom of the view layer stack
 
 Parameters:
 
--   layer —
+- layer —
 
     a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) a layer object
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     index of the layer from the bottom of the layer stack
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getLayers()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
 
@@ -299,14 +299,14 @@ Get a copy of the layer stack currently added to the view, sorted by the drawing
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     an array of [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) or `null`
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **initialize()**
 
@@ -314,7 +314,7 @@ Constructor
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **insertLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
@@ -322,18 +322,18 @@ Insert the layer at the given index in the layer stack, this will stop animation
 
 Parameters:
 
--   layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
+- layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
     a layer to insert.
 
--   idx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- idx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     position in the layer stack to insert layer.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **onHide()** as **Void**
 
@@ -343,7 +343,7 @@ This is called before the View is removed from the foreground. This occurs when 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onLayout(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
@@ -353,14 +353,14 @@ onLayout() is called before the View is shown to load resources and set up the l
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The device context
+    设备上下文
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onShow()** as **Void**
 
@@ -370,7 +370,7 @@ This is called when the View is brought into the foreground. Resources should be
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onUpdate(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
@@ -378,36 +378,36 @@ Update the View.
 
 This is called when a View is brought to the foreground, after the call to [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function). While a View is active, this method is generally used to update dynamic content in the View. There are also some special cases when it will be invoked:
 
--   On [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) calls within Widgets and Watch Apps
+- On [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) calls within Widgets and Watch Apps
 
--   Once per minute in Watch Faces when in low power mode
+- Once per minute in Watch Faces when in low power mode
 
--   Once per second in Watch Faces when in high power mode
+- Once per second in Watch Faces when in high power mode
 
--   Once per second in Data Fields
+- Once per second in Data Fields
 
--   At an increased rate while an [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) is active
+- At an increased rate while an [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) is active
 
--   More than one call to onUpdate() may occur during View transitions
+- More than one call to onUpdate() may occur during View transitions
 
 
 If a class that extends View does not implement this function then any Drawable objects contained in the View will automatically be drawn.
 
 Parameters:
 
--   dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
+- dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
-    The device context
+    设备上下文
 
 
-See Also:
+另见：
 
--   [WatchFace.onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
+- [WatchFace.onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **removeLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -415,38 +415,38 @@ Remove a layer from the view layer stack, this will stop animation playback.
 
 Parameters:
 
--   layer —
+- layer —
 
     a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) to remove from the layer stack.
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true`, if layer is removed successfully, otherwise `false`
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **setActionMenuIndicator(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**)** as **Void**
 
-Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) 将在...时调用 the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
+Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) will be called when the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Optional parameters for action menu indicator settings. If null, the action menu indicator will be disabled.
 
-    -   :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         The flag to enable or disable action menu indicator.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 4 41mm
 -   Venu® 4 45mm / D2™ Air X15
@@ -457,11 +457,11 @@ Parameters:
 
 Since:
 
-API Level 5.1.1
+API 级别 5.1.1
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if one or more of the specified options is not valid for the view type.
 
@@ -472,24 +472,24 @@ Set the clock hands position.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Options for setting the analog clock state.
 
-    -   :clockState — ([WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module)) —
+- :clockState — ([WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module)) —
 
         An ANALOG\_CLOCK\_STATE\_\* value for the clock state
 
-    -   :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         Position for the hour hand in degrees clockwise from the 12 o'clock position
 
-    -   :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         Position for the minute hand in degrees clockwise from the 12 o'clock position
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Instinct® Crossover AMOLED
 -   Instinct® Crossover
@@ -498,22 +498,22 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the request to change the analog hands was successful, `false` otherwise.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if invalid or no value is passed in for :clockState.
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if no :hour and :minute values are specified for the :clockState value of ANALOG\_CLOCK\_STATE\_HOLDING.
 
@@ -530,30 +530,30 @@ With [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) and [CustomMenu](/conne
 
 Attempting to call this method on any other class derived from View, or with an unsupported option for the given view type, will result in an exception.
 
-Note:
+注意：
 
 Control bar visibility changes made from [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) or [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) will result in an exception.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Optional parameters for control bar. If null, the control bar will be hidden.
 
-    -   :leftButton — ([WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module)) —
+- :leftButton — ([WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module)) —
 
         The icon to use for the left button. Must be a [CONTROL\_BAR\_LEFT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module) value.
 
-    -   :rightButton — ([WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module)) —
+- :rightButton — ([WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module)) —
 
         The icon to use for the right button. Must be a [CONTROL\_BAR\_RIGHT\_BUTTON\_\*](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) value. If the value is `null` or not provided, no button will be shown.
 
-    -   :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         The title to display in the control bar. If the view is of type Menu2, the Menu2 title will be given priority and will be displayed in the control bar. If no title is specified, the application name will be used.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1040 / 1040 Solar
 -   Edge® 1050
@@ -568,15 +568,15 @@ Parameters:
 
 Since:
 
-API Level 4.1.2
+API 级别 4.1.2
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown if called on a view type that does not support control bar changes, or if called from [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) or [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function).
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if one or more of the specified options is not valid for the view type.
 
@@ -589,7 +589,7 @@ When enabled, physical buttons may be used to cycle through on-screen [Selectabl
 
 Parameters:
 
--   enable — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- enable — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     Set to `true` if the mode should be enabled, otherwise `false`
 
@@ -610,13 +610,13 @@ function onMenu() {
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
+- ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
-    Thrown if called from a data field app
+    在数据字段应用中调用时抛出
 
 
 ### **setLayout(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**)** as **Void**
@@ -625,18 +625,18 @@ Set the layout for the View.
 
 Set the array of Drawable objects to be managed by this View. The specified Drawables will be:
 
--   Drawn automatically via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
+- Drawn automatically via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
--   Searched via calls to [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function)
+- Searched via calls to [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function)
 
 
 Parameters:
 
--   layout — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- layout — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     An array of Drawables or `null`.
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

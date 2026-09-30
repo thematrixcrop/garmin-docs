@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)
+- [Toybox.Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The SplitInfo class contains information about the current split
 
@@ -22,296 +22,296 @@ This information is provided via the data field onTimerSplit API.
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
-## Constant Summary
+## 常量摘要
 
 ### SplitType
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | SPLIT\_TYPE\_PACE\_PRO\_SPLIT | 0 |
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_ASCENT\_SPLIT | 1 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_DESCENT\_SPLIT | 2 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_ACTIVE | 3 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_REST | 4 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_WARMUP | 5 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_COOLDOWN | 6 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_RECOVERY | 7 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INTERVAL\_OTHER | 8 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_CLIMB\_ACTIVE | 9 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_CLIMB\_REST | 10 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SURF\_ACTIVE | 11 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_RUN\_ACTIVE | 12 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_RUN\_REST | 13 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_WORKOUT\_ROUND | 14 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_LIVE\_EVENT\_SPLIT | 15 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_POWER\_GUIDANCE\_SPLIT | 16 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_RWD\_RUN | 17 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_RWD\_WALK | 18 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_CLIMB\_PRO\_CYCLING\_CLIMB | 19 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_CLIMB\_PRO\_CYCLING\_CLIMB\_SECTION | 20 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_WINDSURF\_ACTIVE | 21 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_RWD\_STAND | 22 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_TRANSITION | 23 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SWIM\_STRAIGHTNESS | 25 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_ROUND\_ACTIVE | 26 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_ROUND\_REST | 27 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SKI\_LIFT\_SPLIT | 28 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SKI\_RUN\_SPLIT | 29 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_OBSTACLE | 30 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_CYCLING\_GROUP\_RIDE | 31 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_DIVE | 32 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_DIVE\_SECTION | 33 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SURFACE\_TYPE\_UNPAVED | 34 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_MARKER\_MILE | 38 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_MARKER\_KILOMETER | 39 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_MARKER\_HALF\_MARATHON | 40 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_MARKER\_MANUAL | 41 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SURFACE\_TYPE\_PAVED | 42 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_TIMING\_GATE | 43 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_TIMING\_RUN | 44 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_TACX\_COURSE | 45 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_DOWNHILL\_RUN | 46 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_DOWNHILL\_LIFT | 47 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_SKI\_RUN\_SPLIT\_SECTION | 48 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | SPLIT\_TYPE\_INVALID | \-1 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Average speed for split in meters per second.
 
--   [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Elapsed time for split in milliseconds.
 
--   [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Max speed for split in meters per second.
 
--   [**splitDistance**](#splitDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**splitDistance**](#splitDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Split distance in meters.
 
--   [**splitType**](#splitType-var) as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
+- [**splitType**](#splitType-var) as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
 
     Type of split.
 
--   [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Timer time for split in milliseconds.
 
--   [**totalAscent**](#totalAscent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**totalAscent**](#totalAscent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Split ascent in meters.
 
--   [**totalDescent**](#totalDescent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**totalDescent**](#totalDescent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Split descent in meters.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var averageSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Average speed for split in meters per second
+该分段的平均速度（米/秒）
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Average speed for split in meters per second
+- 该分段的平均速度（米/秒）
 
 
 ### var elapsedTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -320,11 +320,11 @@ Elapsed time for split in milliseconds
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Elapsed time in milliseconds
+- Elapsed time in milliseconds
 
 
 ### var maxSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -333,11 +333,11 @@ Max speed for split in meters per second
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Average speed for split in meters per second
+- 该分段的平均速度（米/秒）
 
 
 ### var splitDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -346,11 +346,11 @@ Split distance in meters
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Split distance in meters
+- Split distance in meters
 
 
 ### var splitType as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
@@ -359,11 +359,11 @@ Type of split
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Split type identifier
+- Split type identifier
 
 
 ### var timerTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -372,11 +372,11 @@ Timer time for split in milliseconds
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Timer time in milliseconds
+- Timer time in milliseconds
 
 
 ### var totalAscent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -385,11 +385,11 @@ Split ascent in meters
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Ascent for split in meters
+- Ascent for split in meters
 
 
 ### var totalDescent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -398,8 +398,8 @@ Split descent in meters
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 Returns:
 
--   Descent for split in meters
+- Descent for split in meters

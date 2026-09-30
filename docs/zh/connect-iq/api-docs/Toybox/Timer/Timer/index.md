@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
+- [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A Timer object will invoke a callback function after a specified number of milliseconds.
 
@@ -43,47 +43,47 @@ function onLayout(dc) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**start**](#start-instance_function)(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**, time as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), repeat as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
+- [**start**](#start-instance_function)(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**, time as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), repeat as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
     Start the Timer.
 
--   [**stop**](#stop-instance_function)() as **Void**
+- [**stop**](#stop-instance_function)() as **Void**
 
     Stops the Timer from running.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **start(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**, time as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), repeat as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
 Start the Timer.
 
-Note:
+注意：
 
 Will cause an app crash if called from a watch face app while in low power mode
 
 Parameters:
 
--   callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     A function to call after the Timer completes
 
--   time — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- time — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The number of milliseconds to wait before invoking callback
 
--   repeat — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- repeat — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     Set to `true` to have the Timer repeat until stop() is called
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **stop()** as **Void**
 
@@ -93,4 +93,4 @@ This only needs to be called for repeating timers. A Timer can be started again 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

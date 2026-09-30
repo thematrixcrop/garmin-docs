@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.Application.AppBase
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
+- [Toybox.Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
--   [Toybox.Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)
+- [Toybox.Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The base class for audio content provider apps.
 
@@ -24,55 +24,55 @@ This object extends [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Background
+- 后台
 
--   Glance
+- 速览
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getContentDelegate**](#getContentDelegate-instance_function)(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
+- [**getContentDelegate**](#getContentDelegate-instance_function)(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
     Get a [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/) for use by the system to get and iterate through media content on the device.
 
--   [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
+- [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
     Override to provide the initial View and Input Delegate for configuring playback.
 
--   [**getProviderIconInfo**](#getProviderIconInfo-instance_function)() as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
+- [**getProviderIconInfo**](#getProviderIconInfo-instance_function)() as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
 
     Get audio provider icon information.
 
--   [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
+- [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
     Override to provide the initial View and Input Delegate for configuring sync.
 
--   [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null** deprecated
+- [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null** deprecated
 
     Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing media content to the device.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getContentDelegate(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type))** as [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
 Get a [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/) for use by the system to get and iterate through media content on the device.
 
-Note:
+注意：
 
-This method must be overridden in derived classes. If called, this function will cause the application to crash.
+此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -172,36 +172,36 @@ This method must be overridden in derived classes. If called, this function will
 
 Returns:
 
--   [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
+- [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getPlaybackConfigurationView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
 Override to provide the initial View and Input Delegate for configuring playback.
 
-Note:
+注意：
 
-This method must be overridden in derived classes. If called, this function will cause the application to crash.
+此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and an optional [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+    包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getProviderIconInfo()** as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
 
 Get audio provider icon information.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -301,52 +301,52 @@ Get audio provider icon information.
 
 Returns:
 
--   [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) The icon for the audio content provider
+- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) The icon for the audio content provider
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getSyncConfigurationView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
 Override to provide the initial View and Input Delegate for configuring sync.
 
-Note:
+注意：
 
-This method must be overridden in derived classes. If called, this function will cause the application to crash.
+此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and an optional [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
+    包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getSyncDelegate()** as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 9.
+此方法可能在 System 9 之后移除。
 
 Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing media content to the device.
 
 Returns:
 
--   [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
+- [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
 
-See Also:
+另见：
 
--   [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function)
+- [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize()**
 
@@ -354,4 +354,4 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

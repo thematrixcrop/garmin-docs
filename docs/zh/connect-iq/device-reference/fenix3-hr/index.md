@@ -3,103 +3,103 @@ title: "fēnix® 3 HR"
 ---
 # fēnix® 3 HR
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fenix3\_hr |
-| Screen Shape | round |
-| Screen Size | 218 x 218 |
-| Display Colors | 14 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | fenix3\_hr |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 218 x 218 |
+| 显示颜色 | 14 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Data Field | 16384 |  |
-| Watch App | 65536 |  |
-| Watch Face | 65536 |  |
-| Widget | 65536 |  |
+| 数据字段 | 16384 |  |
+| 手表应用 | 65536 |  |
+| 表盘 | 65536 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x5500aa&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0xaa0000&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fenix3_hr/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fenix3_hr/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fenix3_hr/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
-| Field 2 | 0 | 72 | 218 | 74 | 5 | True | True | False | False |
-| Field 3 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| 字段 2 | 0 | 72 | 218 | 74 | 5 | True | True | False | False |
+| 字段 3 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fenix3_hr/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fenix3_hr/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
-| Field 2 | 0 | 72 | 108 | 74 | 1 | True | False | False | False |
-| Field 3 | 110 | 72 | 108 | 74 | 4 | False | True | False | False |
-| Field 4 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| 字段 2 | 0 | 72 | 108 | 74 | 1 | True | False | False | False |
+| 字段 3 | 110 | 72 | 108 | 74 | 4 | False | True | False | False |
+| 字段 4 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/fenix3_hr/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
-| Field 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
-| Field 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
+| 字段 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
+| 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
 **Part Number 006-B2413-00**
 
-*Languages*
+*语言*
 
 ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 18 | ROBOTO\_11B |
 | FONT\_TINY | Roboto Condensed | 22 | ROBOTO\_14B |
@@ -113,13 +113,13 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 
 **Part Number 006-B2473-00**
 
-*Languages*
+*语言*
 
 eng, ind
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 18 | ROBOTO\_11B |
 | FONT\_TINY | Roboto Condensed | 22 | ROBOTO\_14B |
@@ -131,13 +131,13 @@ eng, ind
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Medium | 18 | NOTO\_SANS\_CJK\_SC\_MEDIUM\_CHN\_18 |
 | FONT\_TINY | Noto Sans CJK SC Medium | 21 | NOTO\_SANS\_CJK\_SC\_MEDIUM\_CHN\_21 |
@@ -149,13 +149,13 @@ zhs
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC DemiLight | 18 | NOTO\_SANS\_CJK\_SC\_DEMILIGHT\_TWN\_18 |
 | FONT\_TINY | Noto Sans CJK SC DemiLight | 21 | NOTO\_SANS\_CJK\_SC\_DEMILIGHT\_TWN\_21 |
@@ -167,13 +167,13 @@ zht
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Regular | 18 | NOTO\_SANS\_CJK\_JP\_REGULAR\_18 |
 | FONT\_TINY | Noto Sans CJK JP Regular | 21 | NOTO\_SANS\_CJK\_JP\_REGULAR\_21 |
@@ -185,13 +185,13 @@ jpn
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Medium | 18 | NOTO\_SANS\_CJK\_KR\_MEDIUM\_18 |
 | FONT\_TINY | Noto Sans CJK KR Medium | 21 | NOTO\_SANS\_CJK\_KR\_MEDIUM\_21 |
@@ -203,13 +203,13 @@ kor
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
+- [Toybox.UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The profile object contains user information.
 
@@ -22,72 +22,72 @@ Values may be `null` if the value has not been configured or cannot be calculate
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**activityClass**](#activityClass-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**activityClass**](#activityClass-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Activity level as configured by the user.
 
--   [**averageRestingHeartRate**](#averageRestingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**averageRestingHeartRate**](#averageRestingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Average resting heart rate This value is calculated based on historical data.
 
--   [**birthYear**](#birthYear-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**birthYear**](#birthYear-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Birth year as configured by the user.
 
--   [**gender**](#gender-var) as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
+- [**gender**](#gender-var) as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
 
     Gender as configured by the user.
 
--   [**height**](#height-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**height**](#height-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Height as configured by the user.
 
--   [**restingHeartRate**](#restingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**restingHeartRate**](#restingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Resting heart rate as configured by the user.
 
--   [**runningStepLength**](#runningStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**runningStepLength**](#runningStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Running step length as configured by the user.
 
--   [**sleepTime**](#sleepTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
+- [**sleepTime**](#sleepTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
     Typical sleep time as configured by the user.
 
--   [**upcomingSleepTime**](#upcomingSleepTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**upcomingSleepTime**](#upcomingSleepTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Upcoming sleep time if set, with current day-of-week and time-of-day taking into consideration.
 
--   [**upcomingWakeTime**](#upcomingWakeTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
+- [**upcomingWakeTime**](#upcomingWakeTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
     Upcoming wake time if set, with current day-of-week and time-of-day taking into consideration.
 
--   [**vo2maxCycling**](#vo2maxCycling-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**vo2maxCycling**](#vo2maxCycling-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Cycling VO2 Max This value is calculated based on historical data.
 
--   [**vo2maxRunning**](#vo2maxRunning-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**vo2maxRunning**](#vo2maxRunning-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Running VO2 Max This value is calculated based on historical data.
 
--   [**wakeTime**](#wakeTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
+- [**wakeTime**](#wakeTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
     Typical wake time as configured by the user.
 
--   [**walkingStepLength**](#walkingStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**walkingStepLength**](#walkingStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Walking step length as configured by the user.
 
--   [**weight**](#weight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**weight**](#weight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Weight as configured by the user.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var activityClass as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -95,11 +95,11 @@ Activity level as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The activity level as a value from 0-100.
 
@@ -112,9 +112,9 @@ This value is calculated based on historical data. It may be `null` if there is 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -236,7 +236,7 @@ API Level 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The seven day average resting heart rate. Units are beats/min (bpm).
 
@@ -247,11 +247,11 @@ Birth year as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The birth year as a four digit Number.
 
@@ -262,11 +262,11 @@ Gender as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module)
+- [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module)
 
 ### var height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -274,11 +274,11 @@ Height as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Height of the user in centimeters (cm)
 
@@ -289,11 +289,11 @@ Resting heart rate as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The user's configured resting heart rate in beats per minute (bpm)
 
@@ -304,11 +304,11 @@ Running step length as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Running step length in millimeters (mm)
 
@@ -319,11 +319,11 @@ Typical sleep time as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     A [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) since local midnight
 
@@ -334,11 +334,11 @@ Upcoming sleep time if set, with current day-of-week and time-of-day taking into
 
 Since:
 
-API Level 6.0.0
+API 级别 6.0.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) representing the upcoming sleep time.
 
@@ -349,11 +349,11 @@ Upcoming wake time if set, with current day-of-week and time-of-day taking into 
 
 Since:
 
-API Level 6.0.0
+API 级别 6.0.0
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) representing the upcoming wake time.
 
@@ -366,9 +366,9 @@ This value is calculated based on historical data. It may be `null` if there is 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -499,7 +499,7 @@ API Level 3.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The VO2 Max value for cycling activity. Units are mL/kg/min.
 
@@ -512,9 +512,9 @@ This value is calculated based on historical data. It may be `null` if there is 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -645,7 +645,7 @@ API Level 3.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The VO2 Max value for running activity. Units are mL/kg/min.
 
@@ -656,11 +656,11 @@ Typical wake time as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     A [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) since local midnight
 
@@ -671,11 +671,11 @@ Walking step length as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Walking step length in millimeters (mm)
 
@@ -686,10 +686,10 @@ Weight as configured by the user
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Weight in grams (g)

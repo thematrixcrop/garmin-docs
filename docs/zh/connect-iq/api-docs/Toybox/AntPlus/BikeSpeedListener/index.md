@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.DeviceListener
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
+- [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
--   [Toybox.AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/)
+- [Toybox.AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Listener class for Bike Speed
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -176,18 +176,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onBikeSpeedUpdate**](#onBikeSpeedUpdate-instance_function)(data as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)) as **Void**
+- [**onBikeSpeedUpdate**](#onBikeSpeedUpdate-instance_function)(data as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)) as **Void**
 
     Callback when speed data is updated.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -195,7 +195,7 @@ Constructor
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onBikeSpeedUpdate(data as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/))** as **Void**
 
@@ -203,11 +203,11 @@ Callback when speed data is updated
 
 Parameters:
 
--   data — ([AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)) —
+- data — ([AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)) —
 
     data Data with updated speed and distance information.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

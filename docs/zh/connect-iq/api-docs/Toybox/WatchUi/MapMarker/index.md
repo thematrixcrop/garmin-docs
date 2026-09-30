@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)
+- [Toybox.WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The base class for the MapMarker object.
 
@@ -22,24 +22,24 @@ The MapMarker is used to hold a [BitmapResource](/connect-iq/api-docs/Toybox/Wat
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -129,23 +129,23 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getLocation**](#getLocation-instance_function)() as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [**getLocation**](#getLocation-instance_function)() as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
     Get the location for the MapMarker.
 
--   [**initialize**](#initialize-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))
+- [**initialize**](#initialize-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))
 
     Constructor.
 
--   [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Set a bitmap icon to use for the MapMarker object on a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/).
 
--   [**setLabel**](#setLabel-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
+- [**setLabel**](#setLabel-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getLocation()** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -153,14 +153,14 @@ Get the location for the MapMarker.
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     The location for this MapMarker as a Location object
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))**
 
@@ -168,18 +168,18 @@ Constructor
 
 Parameters:
 
--   location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     The Location at which the MapMarker object will be rendered on the map
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if location is not a [Location](/connect-iq/api-docs/Toybox/Position/Location/) type
 
@@ -190,34 +190,34 @@ Set a bitmap icon to use for the MapMarker object on a [MapView](/connect-iq/api
 
 Parameters:
 
--   icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     A BitmapType or [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) value
 
--   x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `x` location of the hotspot on the bitmap in pixels (px). Used to align the hotspot with the longitude of the MapMarker. This value is required, but will be disregarded when used with [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) type.
 
--   y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The `y` location of the hotspot on the bitmap in pixels (px). Used to align the hotspot with the latitude value of the MapMarker. This value is required, but will be disregarded when used with [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) type.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
+- ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 
     Thrown if the `x, y` values for the hotspot fall outside the bounds of the icon image
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if icon is not a supported type
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if icon is not a supported value
 
@@ -226,16 +226,16 @@ Throws:
 
 Parameters:
 
--   label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     The label for the marker object as a String or string ResourceId
 
 
-See Also:
+另见：
 
--   [Core Topics - String Resources](/connect-iq/core-topics/resources/)
+- [Core Topics - String Resources](/connect-iq/core-topics/resources/)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

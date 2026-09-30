@@ -7,18 +7,18 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
+- [Toybox.AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The PedalPowerBalance object represents the user's power contribution between the left and right pedals.
 
-Fields may return `null` so you should `null` check values before using them.
+字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
 Example:
 
@@ -36,9 +36,9 @@ System.println("rightPedalIndicator is set to: " + rightPedalIndicator);
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Charlie
 -   D2™ Delta PX
@@ -152,18 +152,18 @@ API Level 2.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**pedalPowerPercent**](#pedalPowerPercent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pedalPowerPercent**](#pedalPowerPercent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Pedal power percent (%).
 
--   [**rightPedalIndicator**](#rightPedalIndicator-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**rightPedalIndicator**](#rightPedalIndicator-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Indicates the pedal contribution.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var pedalPowerPercent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -171,11 +171,11 @@ Pedal power percent (%)
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var rightPedalIndicator as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -183,12 +183,12 @@ Indicates the pedal contribution.
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    -   `true` if right pedal contribution
+- `true` if right pedal contribution
 
-    -   `false` if unknown pedal contribution
+- `false` if unknown pedal contribution

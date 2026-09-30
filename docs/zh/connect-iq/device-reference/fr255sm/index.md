@@ -3,152 +3,152 @@ title: "Forerunner® 255s Music"
 ---
 # Forerunner® 255s Music
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fr255sm |
-| Screen Shape | round |
-| Screen Size | 218 x 218 |
-| Display Colors | 64 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | fr255sm |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 218 x 218 |
+| 显示颜色 | 64 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 262144 |  |
-| Glance | 65536 | Build as Watch App or Widget |
-| Watch App | 786432 |  |
-| Watch Face | 131072 |  |
-| Widget | 786432 | Requires 4.x SDK |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 262144 |  |
+| 速览 | 65536 | 构建为手表应用或微件 |
+| 手表应用 | 786432 |  |
+| 表盘 | 131072 |  |
+| 微件 | 786432 | 需要 4.x SDK |
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fr255sm/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fr255sm/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fr255sm/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 76 | 7 | True | True | True | False |
-| Field 2 | 0 | 76 | 218 | 62 | 5 | True | True | False | False |
-| Field 3 | 0 | 138 | 218 | 80 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 76 | 7 | True | True | True | False |
+| 字段 2 | 0 | 76 | 218 | 62 | 5 | True | True | False | False |
+| 字段 3 | 0 | 138 | 218 | 80 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fr255sm/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
-| Field 2 | 0 | 72 | 218 | 75 | 5 | True | True | False | False |
-| Field 3 | 0 | 149 | 218 | 69 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| 字段 2 | 0 | 72 | 218 | 75 | 5 | True | True | False | False |
+| 字段 3 | 0 | 149 | 218 | 69 | 13 | True | True | False | True |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/fr255sm/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fr255sm/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 77 | 7 | True | True | True | False |
-| Field 2 | 0 | 79 | 108 | 65 | 1 | True | False | False | False |
-| Field 3 | 110 | 79 | 108 | 65 | 4 | False | True | False | False |
-| Field 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 77 | 7 | True | True | True | False |
+| 字段 2 | 0 | 79 | 108 | 65 | 1 | True | False | False | False |
+| 字段 3 | 110 | 79 | 108 | 65 | 4 | False | True | False | False |
+| 字段 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/fr255sm/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
-| Field 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
-| Field 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
+| 字段 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
+| 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**4 Fields C Layout**
+**4 字段 C 布局**
 
 
 ![4 Fields C](/connect-iq/resources/device-reference/fr255sm/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
-| Field 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
-| Field 3 | 0 | 110 | 218 | 53 | 5 | True | True | False | False |
-| Field 4 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| 字段 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
+| 字段 3 | 0 | 110 | 218 | 53 | 5 | True | True | False | False |
+| 字段 4 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
 
-**5 Fields Layout**
+**5 字段布局**
 
 
 ![5 Fields](/connect-iq/resources/device-reference/fr255sm/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
-| Field 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
-| Field 3 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
-| Field 4 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
-| Field 5 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| 字段 2 | 0 | 56 | 218 | 52 | 5 | True | True | False | False |
+| 字段 3 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
+| 字段 4 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
+| 字段 5 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/fr255sm/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
-| Field 2 | 0 | 56 | 108 | 52 | 1 | True | False | False | False |
-| Field 3 | 110 | 56 | 108 | 52 | 4 | False | True | False | False |
-| Field 4 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
-| Field 5 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
-| Field 6 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 54 | 7 | True | True | True | False |
+| 字段 2 | 0 | 56 | 108 | 52 | 1 | True | False | False | False |
+| 字段 3 | 110 | 56 | 108 | 52 | 4 | False | True | False | False |
+| 字段 4 | 0 | 110 | 108 | 53 | 1 | True | False | False | False |
+| 字段 5 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
+| 字段 6 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
 
 **Part Number 006-B3991-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | 006B399100\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
@@ -162,13 +162,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ind, ita, 
 | FONT\_GLANCE | Roboto Condensed | 19 | 006B399100\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
 
-*Languages*
+*语言*
 
 zhs, zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans SC Bold-94 | 16 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_16 |
 | FONT\_TINY | Noto Sans SC Bold-94 | 18 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_18 |
@@ -182,13 +182,13 @@ zhs, zht
 | FONT\_GLANCE | Noto Sans SC Bold-94 | 18 | NOTO\_SANS\_SC\_BOLD\_94\_CHN\_18 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | MotoyaLCedar-94 | 16 | KOSUGI\_REGULAR-94\_JPN\_16B |
 | FONT\_TINY | MotoyaLCedar-94 | 18 | KOSUGI\_REGULAR-94\_JPN\_18B |
@@ -202,13 +202,13 @@ jpn
 | FONT\_GLANCE | MotoyaLCedar-94 | 18 | KOSUGI\_REGULAR-94\_JPN\_18B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | NanumGothicExtraBold-94 | 16 | NANUM\_GOTHIC\_BOLD\_KOR\_16B |
 | FONT\_TINY | NanumGothicExtraBold-94 | 18 | NANUM\_GOTHIC\_BOLD\_KOR\_18B |
@@ -222,13 +222,13 @@ kor
 | FONT\_GLANCE | NanumGothicExtraBold-94 | 18 | NANUM\_GOTHIC\_BOLD\_KOR\_18B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -242,13 +242,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 23 | 006B399100\_CDPG\_ROBOTO\_15B |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_19B |
 | FONT\_TINY | Roboto Condensed | 22 | ROBOTO\_CONDENSED\_BOLD\_22B |

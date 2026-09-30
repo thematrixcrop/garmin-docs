@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
+- [Toybox.System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents various settings available on a device.
 
-## See Also:
+## 另见：
 
--   [getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function)
+- [getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function)
 
--   [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
+- [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
 Example:
@@ -39,144 +39,144 @@ System.println(versionString); //e.g. 2.2.5
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**activityTrackingOn**](#activityTrackingOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**activityTrackingOn**](#activityTrackingOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The activity tracking setting mode.
 
--   [**alarmCount**](#alarmCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**alarmCount**](#alarmCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The number of alarms set on the device.
 
--   [**connectionAvailable**](#connectionAvailable-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**connectionAvailable**](#connectionAvailable-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Indicates if any communication channel is connected and available for use.
 
--   [**connectionInfo**](#connectionInfo-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
+- [**connectionInfo**](#connectionInfo-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
 
     The state of connections available to the device.
 
--   [**distanceUnits**](#distanceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**distanceUnits**](#distanceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The distance unit setting mode.
 
--   [**doNotDisturb**](#doNotDisturb-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**doNotDisturb**](#doNotDisturb-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The Do Not Disturb setting mode.
 
--   [**elevationUnits**](#elevationUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**elevationUnits**](#elevationUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The elevation unit setting mode.
 
--   [**firmwareVersion**](#firmwareVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**firmwareVersion**](#firmwareVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
     The current firmware version of the device.
 
--   [**firstDayOfWeek**](#firstDayOfWeek-var) as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
+- [**firstDayOfWeek**](#firstDayOfWeek-var) as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
 
     The first day of the week.
 
--   [**fontScale**](#fontScale-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**fontScale**](#fontScale-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Scale factor to be used for displayed text.
 
--   [**heightUnits**](#heightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**heightUnits**](#heightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The height unit setting mode.
 
--   [**inputButtons**](#inputButtons-var) as [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module)
+- [**inputButtons**](#inputButtons-var) as [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module)
 
     The physical buttons supported by the device.
 
--   [**is24Hour**](#is24Hour-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**is24Hour**](#is24Hour-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The clock mode mode.
 
--   [**isEnhancedReadabilityModeEnabled**](#isEnhancedReadabilityModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isEnhancedReadabilityModeEnabled**](#isEnhancedReadabilityModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Indicates the device is currently using Enhanced Readability Mode.
 
--   [**isGlanceModeEnabled**](#isGlanceModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isGlanceModeEnabled**](#isGlanceModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Indicates if widget glances are enabled on the device.
 
--   [**isNightModeEnabled**](#isNightModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isNightModeEnabled**](#isNightModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Indicates the device is currently using night mode colors.
 
--   [**isTouchScreen**](#isTouchScreen-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isTouchScreen**](#isTouchScreen-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The availability of a touch screen on the device.
 
--   [**monkeyVersion**](#monkeyVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**monkeyVersion**](#monkeyVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
     The Connect IQ version supported by the device.
 
--   [**notificationCount**](#notificationCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**notificationCount**](#notificationCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The number of active notifications.
 
--   [**paceUnits**](#paceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**paceUnits**](#paceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The pace unit setting mode.
 
--   [**partNumber**](#partNumber-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**partNumber**](#partNumber-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The part number of the device.
 
--   [**phoneConnected**](#phoneConnected-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**phoneConnected**](#phoneConnected-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The phone connection status mode.
 
--   [**phoneOperatingSystem**](#phoneOperatingSystem-var) as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
+- [**phoneOperatingSystem**](#phoneOperatingSystem-var) as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
 
     Operating System of the BLE-connected mobile device.
 
--   [**requiresBurnInProtection**](#requiresBurnInProtection-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**requiresBurnInProtection**](#requiresBurnInProtection-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     This flag indicates whether the device screen requires burn-in protection.
 
--   [**screenHeight**](#screenHeight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**screenHeight**](#screenHeight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The height of the device screen in pixels.
 
--   [**screenShape**](#screenShape-var) as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
+- [**screenShape**](#screenShape-var) as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
 
     The screen shape of the device.
 
--   [**screenWidth**](#screenWidth-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**screenWidth**](#screenWidth-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The width of the device screen in pixels.
 
--   [**systemLanguage**](#systemLanguage-var) as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
+- [**systemLanguage**](#systemLanguage-var) as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
 
     The language being used by the system.
 
--   [**temperatureUnits**](#temperatureUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**temperatureUnits**](#temperatureUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The temperature unit setting mode.
 
--   [**tonesOn**](#tonesOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**tonesOn**](#tonesOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The tone setting mode.
 
--   [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     A unique alphanumeric device identifier.
 
--   [**vibrateOn**](#vibrateOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**vibrateOn**](#vibrateOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The vibration setting mode.
 
--   [**weightUnits**](#weightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
+- [**weightUnits**](#weightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
     The weight unit setting mode.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var activityTrackingOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -184,11 +184,11 @@ The activity tracking setting mode.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if activity tracking is enabled on the device, otherwise `false`
 
@@ -199,11 +199,11 @@ The number of alarms set on the device.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var connectionAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -211,11 +211,11 @@ Indicates if any communication channel is connected and available for use.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var connectionInfo as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
 
@@ -223,11 +223,11 @@ The state of connections available to the device.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
+- [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
     A Dictionary that contains the state of each available connection. The keys, `:bluetooth`, `:wifi`, and `:lte` indicate the connection type. If a key is not present then it means that connection type is not available to the device. The values are a [ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/) object, which contain the state of the connection type.
 
@@ -238,17 +238,17 @@ The distance unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two System.UNIT\_\* constant values:
+    两个 System.UNIT_* 常量值之一：
 
-    -   UNIT\_METRIC if distance is set to display in kilometers (km)
+- UNIT\_METRIC if distance is set to display in kilometers (km)
 
-    -   UNIT\_STATUTE if distance is set to display in miles (mi)
+- UNIT\_STATUTE if distance is set to display in miles (mi)
 
 
 
@@ -270,11 +270,11 @@ if (deviceSettings has :doNotDisturb) {
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if enabled on the device, otherwise `false`
 
@@ -285,17 +285,17 @@ The elevation unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two System.UNIT\_\* constant values:
+    两个 System.UNIT_* 常量值之一：
 
-    -   UNIT\_METRIC if elevation is set to display in meters (m)
+- UNIT\_METRIC if elevation is set to display in meters (m)
 
-    -   UNIT\_STATUTE if elevation is set to display in feet (ft)
+- UNIT\_STATUTE if elevation is set to display in feet (ft)
 
 
 
@@ -315,16 +315,16 @@ System.println(versionString minor); // e.g. 2.50
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
+- [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     A two element Array containing the major and minor version numbers as [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects
 
@@ -335,13 +335,13 @@ The first day of the week.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module) —
+- [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module) —
 
-    A [Gregorian::DAY\_\*](/connect-iq/api-docs/Toybox/Time/Gregorian/) value
+    一个 [Gregorian::DAY\_\*](/connect-iq/api-docs/Toybox/Time/Gregorian/) 值
 
 
 ### var fontScale as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
@@ -350,9 +350,9 @@ Scale factor to be used for displayed text.
 
 Since:
 
-API Level 5.0.1
+API 级别 5.0.1
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -385,7 +385,7 @@ API Level 5.0.1
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Scaling factor configured by user. Values will always be positive, and are typically in the range of 0.8 to 1.2.
 
@@ -396,17 +396,17 @@ The height unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
     One of two UNIT\_\* constant values:
 
-    -   UNIT\_METRIC if height is set to display in meters (m)
+- UNIT\_METRIC if height is set to display in meters (m)
 
-    -   UNIT\_STATUTE if height is set to display inSystem. feet (ft)
+- UNIT\_STATUTE if height is set to display inSystem. feet (ft)
 
 
 
@@ -428,16 +428,16 @@ if ((mySettings.inputButtons & System.BUTTON_INPUT_MENU) != 0) {
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Toybox.System](/connect-iq/api-docs/Toybox/System/)
+- [Toybox.System](/connect-iq/api-docs/Toybox/System/)
 
 
 Returns:
 
--   [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) —
+- [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) —
 
     A System.BUTTON\_INPUT\_\* value
 
@@ -448,11 +448,11 @@ The clock mode mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the device is set to 24 hour mode, `false` if it is set to 12 hour mode
 
@@ -463,9 +463,9 @@ Indicates the device is currently using Enhanced Readability Mode.
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   Descent™ Mk3 43mm / Mk3i 43mm
@@ -500,7 +500,7 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if Enhanced Readability Mode is enabled, otherwise false.
 
@@ -509,13 +509,13 @@ Returns:
 
 Indicates if widget glances are enabled on the device.
 
-If glance mode is enabled, 系统将 pass up / down key events to a widget base page. Otherwise, 系统将 mask them out.
+If glance mode is enabled, the system will pass up / down key events to a widget base page. Otherwise, the system will mask them out.
 
 Since:
 
-API Level 3.1.4
+API 级别 3.1.4
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -629,7 +629,7 @@ API Level 3.1.4
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if glance mode is enabled, otherwise `false`
 
@@ -640,9 +640,9 @@ Indicates the device is currently using night mode colors
 
 Since:
 
-API Level 4.1.2
+API 级别 4.1.2
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1040 / 1040 Solar
 -   Edge® 1050
@@ -659,7 +659,7 @@ API Level 4.1.2
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if night colors are currently in use, otherwise false.
 
@@ -670,11 +670,11 @@ The availability of a touch screen on the device.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the device has a touch screen and it is enabled in settings, otherwise `false`
 
@@ -695,16 +695,16 @@ System.println(versionString); //e.g. 2.2.5
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
+- [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     A three element Array containing the major, minor, and micro version numbers as [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects
 
@@ -715,11 +715,11 @@ The number of active notifications.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var paceUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
@@ -727,17 +727,17 @@ The pace unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two System.UNIT\_\* constant values:
+    两个 System.UNIT_* 常量值之一：
 
-    -   UNIT\_METRIC if pace is set to display in kilometers per hour (km/hr)
+- UNIT\_METRIC if pace is set to display in kilometers per hour (km/hr)
 
-    -   UNIT\_STATUTE if pace is set to display in miles per hour (mph)
+- UNIT\_STATUTE if pace is set to display in miles per hour (mph)
 
 
 
@@ -747,11 +747,11 @@ The part number of the device.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var phoneConnected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -759,11 +759,11 @@ The phone connection status mode.
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if a mobile phone is connected to the device, otherwise `false`
 
@@ -774,9 +774,9 @@ Operating System of the BLE-connected mobile device.
 
 Since:
 
-API Level 5.0.1
+API 级别 5.0.1
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -849,7 +849,7 @@ API Level 5.0.1
 
 Returns:
 
--   [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) —
+- [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) —
 
     The operating system, if available, or `null`.
 
@@ -862,11 +862,11 @@ Some screens require special drawing behavior when rendering content in always-o
 
 Since:
 
-API Level 3.0.12
+API 级别 3.0.12
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if the screen type needs burn-in protection, `false` otherwise.
 
@@ -879,16 +879,16 @@ In some cases, this can be useful to determine the device type at runtime. Howev
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)
+- [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var screenShape as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
 
@@ -896,11 +896,11 @@ The screen shape of the device.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 Returns:
 
--   [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module) —
+- [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module) —
 
     A System.SCREEN\_SHAPE\_\* value
 
@@ -913,16 +913,16 @@ In some cases, this can be useful to determine the device type at runtime. Howev
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-See Also:
+另见：
 
--   [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)
+- [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var systemLanguage as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
 
@@ -930,11 +930,11 @@ The language being used by the system
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module) —
+- [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module) —
 
     LANGUAGE\_\* enum
 
@@ -945,17 +945,17 @@ The temperature unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two System.UNIT\_\* constant values:
+    两个 System.UNIT_* 常量值之一：
 
-    -   UNIT\_METRIC if temperature is set to display in degrees Celsius (C)
+- UNIT\_METRIC if temperature is set to display in degrees Celsius (C)
 
-    -   UNIT\_STATUTE if temperature is set to display in degrees Fahrenheit (F)
+- UNIT\_STATUTE if temperature is set to display in degrees Fahrenheit (F)
 
 
 
@@ -965,11 +965,11 @@ The tone setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if tones are enabled on the device, otherwise `false`
 
@@ -993,13 +993,13 @@ if (id != null) {
 
 Since:
 
-API Level 2.4.1
+API 级别 2.4.1
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    An identifier that 可用于 identify the host device or `null` on error.
+    An identifier that can be used to identify the host device or `null` on error.
 
 
 ### var vibrateOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -1008,11 +1008,11 @@ The vibration setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if vibration is enabled on the device, otherwise `false`
 
@@ -1023,14 +1023,14 @@ The weight unit setting mode.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
+- [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two System.UNIT\_\* constant values:
+    两个 System.UNIT_* 常量值之一：
 
-    -   UNIT\_METRIC if weight is set to display in kilograms (kg)
+- UNIT\_METRIC if weight is set to display in kilograms (kg)
 
-    -   UNIT\_STATUTE if weight is set to display in pounds (lbs)
+- UNIT\_STATUTE if weight is set to display in pounds (lbs)

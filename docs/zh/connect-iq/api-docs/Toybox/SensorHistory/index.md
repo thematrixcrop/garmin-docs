@@ -3,17 +3,17 @@ title: "Module: Toybox.SensorHistory"
 ---
 # Module: Toybox.SensorHistory
 
-## Overview
+## 概述
 
 The SensorHistory module contains the interface for SensorHistory.
 
-SensorHistory 提供访问 historical information recorded by the on-board sensors of device hardware. The amount of information that is available is device dependent. This means that one device may provide more information than another. This class provides an ORDER\_\* enum which is used to select the data order of the sample iterator.
+SensorHistory provides access to historical information recorded by the on-board sensors of device hardware. The amount of information that is available is device dependent. This means that one device may provide more information than another. This class provides an ORDER\_\* enum which is used to select the data order of the sample iterator.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -150,75 +150,75 @@ API Level 2.1.0
 
 :::
 
-Requires Permission:
+需要权限：
 
--   SensorHistory
+- SensorHistory
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/), [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+类：[SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/), [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
-## Constant Summary
+## 常量摘要
 
 ### Order
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | ORDER\_NEWEST\_FIRST | 0 |
-API Level 2.1.0
+API 级别 2.1.0
 
- |
+|
 
 Request iterator with newest data first
 
- |
+|
 | ORDER\_OLDEST\_FIRST | 1 |
 
-API Level 2.1.0
+API 级别 2.1.0
 
- |
+|
 
 Request iterator with oldest data first
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getBodyBatteryHistory**](#getBodyBatteryHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getBodyBatteryHistory**](#getBodyBatteryHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get the body battery history for the given period.
 
--   [**getElevationHistory**](#getElevationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getElevationHistory**](#getElevationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get the elevation history for the given period, up to the last power cycle.
 
--   [**getHeartRateHistory**](#getHeartRateHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) or **Null** } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getHeartRateHistory**](#getHeartRateHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) or **Null** } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the heart rate history for the given period, up to the last power cycle.
+    获取指定时间段内的心率历史记录（截至上次断电）。
 
--   [**getOxygenSaturationHistory**](#getOxygenSaturationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getOxygenSaturationHistory**](#getOxygenSaturationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get the oxygen saturation history for the given period This function always returns the most recent sensor history samples.
 
--   [**getPressureHistory**](#getPressureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getPressureHistory**](#getPressureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get the pressure history for the given period, up to the last power cycle.
 
--   [**getStressHistory**](#getStressHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getStressHistory**](#getStressHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get stress history data for the given period This function always returns the most recent sensor history samples.
 
--   [**getTemperatureHistory**](#getTemperatureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [**getTemperatureHistory**](#getTemperatureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
     Get the temperature history for the given period, up to the last power cycle.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getBodyBatteryHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -228,28 +228,28 @@ This function always returns the most recent sensor history samples. The time be
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples:
+        获取样本的顺序：
 
-        -   If `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 若为 `null`，样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -280,7 +280,7 @@ using Toybox.System;
   }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -396,23 +396,23 @@ using Toybox.System;
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the body battery history for the given period. Samples returned by this iterator are ranges from 0-100. A 0 indicates that the body is drained and a 100 indicates the body is rested and charged.
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getElevationHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -422,28 +422,28 @@ This function always returns the most recent pressure samples. The time between 
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples:
+        获取样本的顺序：
 
-        -   If `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 若为 `null`，样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -476,7 +476,7 @@ if (sensorIter != null) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -605,54 +605,54 @@ if (sensorIter != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the elevation history for the given period. Samples returned by this iterator are in meters (m).
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getHeartRateHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) or **Null** } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the heart rate history for the given period, up to the last power cycle.
+获取指定时间段内的心率历史记录（截至上次断电）。
 
 This function always returns the most recent heart rate samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples:
+        获取样本的顺序：
 
-        -   If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -687,23 +687,23 @@ if (sensorIter != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the heart rate history for the given period. Samples returned by this iterator are in beats per minute (bpm).
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getOxygenSaturationHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -713,28 +713,28 @@ This function always returns the most recent sensor history samples. The time be
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples:
+        获取样本的顺序：
 
-        -   If `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 若为 `null`，样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -768,7 +768,7 @@ if (sensorIter != null) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -887,23 +887,23 @@ if (sensorIter != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the oxygen saturation history for the given period. Samples returned by this iterator are in percent (%).
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **getPressureHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -913,28 +913,28 @@ This function always returns the most recent pressure samples. The time between 
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
         The period of time from which to retrieve the samples.
 
-        -   If period is `null`, the entire available history is retrieved
+- If period is `null`, the entire available history is retrieved
 
-        -   If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
 
-        -   If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         The order in which to retrieve the samples.
 
-        -   If order is `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- If order is `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- Use the ORDER enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -967,7 +967,7 @@ if (sensorIter != null) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1094,23 +1094,23 @@ if (sensorIter != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the pressure history for the given period. Samples returned by this iterator are in Pascals (Pa).
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **getStressHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -1120,28 +1120,28 @@ This function always returns the most recent sensor history samples. The time be
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples:
+        获取样本的顺序：
 
-        -   If `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 若为 `null`，样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -1173,7 +1173,7 @@ while (sample != null) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1292,23 +1292,23 @@ while (sample != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the stress history for the given period. Samples returned by this iterator are ranges from 0-100. Higher value indicate higher stress and lower value indicate lower stress. and a 100 indicates the body is rested and charged.
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getTemperatureHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -1318,28 +1318,28 @@ This function always returns the most recent temperature samples. The time betwe
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Can be `null`.
+    选项字典。可以为 `null`。
 
-    -   :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
-        The period of time from which to retrieve the samples:
+        获取样本的时间区间：
 
-        -   If `null`, the entire available history is retrieved
+- 若为 `null`，则获取全部可用的历史记录
 
-        -   If a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 若为 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则获取指定 Duration 对应的历史记录
 
-        -   If a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 若为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则获取最近指定 Number 条记录
 
 
-    -   :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         The order in which to retrieve the samples.
 
-        -   If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
-        -   Use the ORDER\_\* enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
+- 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
 
 
@@ -1373,7 +1373,7 @@ if (sensorIter != null) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1502,20 +1502,20 @@ if (sensorIter != null) {
 
 Returns:
 
--   [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
+- [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
     An iterator for the temperature history for the given period. Samples returned by this iterator are in degrees Celsius (C).
 
 
-See Also:
+另见：
 
--   [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
+- [Toybox.SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
--   [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
+- [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0

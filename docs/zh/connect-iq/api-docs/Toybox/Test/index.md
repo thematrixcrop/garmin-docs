@@ -3,15 +3,15 @@ title: "Module: Toybox.Test"
 ---
 # Module: Toybox.Test
 
-## Overview
+## 概述
 
-The Test 模块提供 a testing framework for Monkey C.
+The Test module provides a testing framework for Monkey C.
 
-The test 模块提供 the tools to implement your own unit test and asserts in your source code. Unit tests take a [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object and allow for different levels of output. Unit tests are annotated with `:test` and ignored if testing is not run. Asserts do not require the `:test` annotation and will be compiled out in release versions or you Connect IQ Content. A test RESULTS section is printed to the console with the tests run, test status, and failure rates.
+The test module provides the tools to implement your own unit test and asserts in your source code. Unit tests take a [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object and allow for different levels of output. Unit tests are annotated with `:test` and ignored if testing is not run. Asserts do not require the `:test` annotation and will be compiled out in release versions or you Connect IQ Content. A test RESULTS section is printed to the console with the tests run, test status, and failure rates.
 
-## See Also:
+## 另见：
 
--   [Core Topics - Unit Testing](/connect-iq/core-topics/unit-testing/)
+- [Core Topics - Unit Testing](/connect-iq/core-topics/unit-testing/)
 
 
 Example:
@@ -77,40 +77,40 @@ FAILED (passed=1, failed=0, errors=1)
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/), [Logger](/connect-iq/api-docs/Toybox/Test/Logger/)
+类：[AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/), [Logger](/connect-iq/api-docs/Toybox/Test/Logger/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**assert**](#assert-instance_function)(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
+- [**assert**](#assert-instance_function)(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
     Throws an exception if the test is `false`.
 
--   [**assertEqual**](#assertEqual-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
+- [**assertEqual**](#assertEqual-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
     Throws an exception if value1 and value2 are not equal.
 
--   [**assertEqualMessage**](#assertEqualMessage-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**assertEqualMessage**](#assertEqualMessage-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Throws an exception if value1 and value2 are not equal followed by a [String](/connect-iq/api-docs/Toybox/Lang/String/) defined by the developer.
 
--   [**assertMessage**](#assertMessage-instance_function)(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**assertMessage**](#assertMessage-instance_function)(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Throws an exception if the test is `false` followed by a [String](/connect-iq/api-docs/Toybox/Lang/String/) defined by the developer.
 
--   [**assertNotEqual**](#assertNotEqual-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
+- [**assertNotEqual**](#assertNotEqual-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
     Throws an exception if value1 and value2 are equal.
 
--   [**assertNotEqualMessage**](#assertNotEqualMessage-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
+- [**assertNotEqualMessage**](#assertNotEqualMessage-instance_function)(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
     Throws an exception if value1 and value2 are equal followed by a [String](/connect-iq/api-docs/Toybox/Lang/String/) defined by the developer.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **assert(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
@@ -118,7 +118,7 @@ Throws an exception if the test is `false`.
 
 Parameters:
 
--   test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     The expression to test for `true`
 
@@ -140,25 +140,25 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
 ### **assertEqual(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
 Throws an exception if value1 and value2 are not equal.
 
-The objects passed to this function must implement the [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) method which compares both type and value.
+传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
 Parameters:
 
--   value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The first value to test for equality
 
--   value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The second value to test for equality
 
@@ -181,31 +181,31 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
 ### **assertEqualMessage(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
 Throws an exception if value1 and value2 are not equal followed by a [String](/connect-iq/api-docs/Toybox/Lang/String/) defined by the developer.
 
-The objects passed to this function must implement the [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) method which compares both type and value.
+传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
 Parameters:
 
--   value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
--   value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The identifying message for the assert
+    用于标识断言的消息
 
 
 Example:
@@ -226,11 +226,11 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
 ### **assertMessage(test as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
@@ -238,13 +238,13 @@ Throws an exception if the test is `false` followed by a [String](/connect-iq/ap
 
 Parameters:
 
--   test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     Expression to test for `true`
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The identifying message for the assert
+    用于标识断言的消息
 
 
 Example:
@@ -264,27 +264,27 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
 ### **assertNotEqual(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
 Throws an exception if value1 and value2 are equal.
 
-The objects passed to this function must implement the [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) method which compares both type and value.
+传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
 Parameters:
 
--   value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
--   value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
 
 Example:
@@ -305,31 +305,31 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
 ### **assertNotEqualMessage(value1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
 Throws an exception if value1 and value2 are equal followed by a [String](/connect-iq/api-docs/Toybox/Lang/String/) defined by the developer.
 
-The objects passed to this function must implement the [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) method which compares both type and value.
+传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
 Parameters:
 
--   value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
--   value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The value to test for equality
+    用于比较是否相等的值
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The identifying message for the assert
+    用于标识断言的消息
 
 
 Example:
@@ -350,8 +350,8 @@ Unhandled Exception
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 Throws:
 
--   ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
+- ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))

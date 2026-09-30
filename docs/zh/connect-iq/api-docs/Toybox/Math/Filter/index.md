@@ -7,25 +7,25 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Math.Filter](/connect-iq/api-docs/Toybox/Math/Filter/)
+- [Toybox.Math.Filter](/connect-iq/api-docs/Toybox/Math/Filter/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 This is the base class for filters.
 
 Filters are devices or processes that remove some unwanted components or features from a signal or set of data. More detailed examples of filters can be found in the [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) and [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) definitions.
 
-## See Also:
+## 另见：
 
--   [Filters](https://en.wikipedia.org/wiki/Filter_(signal_processing)#Filters_for_removing_noise_from_data)
+- [Filters](https://en.wikipedia.org/wiki/Filter_(signal_processing)#Filters_for_removing_noise_from_data)
 
 
-Note:
+注意：
 
 An exception will be thrown if the base Filter class version of this method is called.
 
@@ -67,52 +67,52 @@ using Toybox.Math;
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [Math.FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/), [Math.IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**apply**](#apply-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
+- [**apply**](#apply-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
     Apply the Filter to an Array of samples.
 
--   [**initialize**](#initialize-instance_function)(dictionary as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))
+- [**initialize**](#initialize-instance_function)(dictionary as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **apply(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
 Apply the Filter to an Array of samples.
 
-Note:
+注意：
 
 An Exception will be thrown if the base Filter class version of this method is called.
 
 Parameters:
 
--   data —
+- data —
 
     Array of samples to apply filter
 
 
 Returns:
 
--   Array of samples with filter applied.
+- Array of samples with filter applied.
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
 Throws:
 
--   ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
+- ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
     If called on base class Filter object
 
@@ -123,11 +123,11 @@ Constructor
 
 Parameters:
 
--   dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Unused. Preserves argument count for compatibility
 
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0

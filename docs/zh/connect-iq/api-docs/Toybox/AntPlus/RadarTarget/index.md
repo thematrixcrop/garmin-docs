@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)
+- [Toybox.AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents the radar data for a tracked radar target.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Captain Marvel
 -   D2™ Air X10
@@ -167,26 +167,26 @@ API Level 3.0.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**range**](#range-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**range**](#range-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Indicates the distance to the target in metres (m).
 
--   [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
     Indicates the speed of the target relative to the user in metres per second (m/s).
 
--   [**threat**](#threat-var) as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
+- [**threat**](#threat-var) as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
     The [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) threat value.
 
--   [**threatSide**](#threatSide-var) as [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
+- [**threatSide**](#threatSide-var) as [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
 
     The [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) threat position.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var range as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -194,11 +194,11 @@ Indicates the distance to the target in metres (m).
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -206,11 +206,11 @@ Indicates the speed of the target relative to the user in metres per second (m/s
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var threat as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
@@ -218,11 +218,11 @@ The [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICL
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
+- [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
 ### var threatSide as [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
 
@@ -230,8 +230,8 @@ The [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-con
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
+- [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)

@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
+- [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class to encapsulate all high-frequency sensor data that can be retrieved.
 
@@ -42,9 +42,9 @@ function accel_callback(sensorData) {
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -206,38 +206,38 @@ API Level 2.3.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**accelerometerData**](#accelerometerData-var) as [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) or **Null**
+- [**accelerometerData**](#accelerometerData-var) as [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) or **Null**
 
-    An [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) object.
+    一个 [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) 对象。
 
--   [**gyroscopeData**](#gyroscopeData-var) as [Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) or **Null**
+- [**gyroscopeData**](#gyroscopeData-var) as [Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) or **Null**
 
-    An [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) object.
+    一个 [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) 对象。
 
--   [**heartRateData**](#heartRateData-var) as [Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) or **Null**
+- [**heartRateData**](#heartRateData-var) as [Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) or **Null**
 
     A [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) object.
 
--   [**magnetometerData**](#magnetometerData-var) as [Sensor.MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) or **Null**
+- [**magnetometerData**](#magnetometerData-var) as [Sensor.MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) or **Null**
 
-    An [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) object.
+    一个 [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) 对象。
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var accelerometerData as [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) or **Null**
 
-An [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) object.
+一个 [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) 对象。
 
 Can be `null` if accelerometer data was not requested.
 
 Since:
 
-API Level 2.3.0
+API 级别 2.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -401,15 +401,15 @@ API Level 2.3.0
 
 ### var gyroscopeData as [Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) or **Null**
 
-An [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) object.
+一个 [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) 对象。
 
 Can be `null` if gyroscope data was not requested.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -542,7 +542,7 @@ API Level 3.3.0
 
 Returns:
 
--   [Toybox::Sensor::GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
+- [Toybox::Sensor::GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
 
 
 ### var heartRateData as [Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) or **Null**
@@ -567,14 +567,14 @@ function heartBeatIntervalsCallback(sensorData) {
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-See Also:
+另见：
 
--   [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
+- [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -720,15 +720,15 @@ See Also:
 
 ### var magnetometerData as [Sensor.MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) or **Null**
 
-An [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) object.
+一个 [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) 对象。
 
 Can be `null` if MagnetometerData data was not requested.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -861,4 +861,4 @@ API Level 3.3.0
 
 Returns:
 
--   [Toybox::Sensor::MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/)
+- [Toybox::Sensor::MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/)

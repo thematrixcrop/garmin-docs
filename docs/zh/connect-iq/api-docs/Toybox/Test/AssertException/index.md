@@ -7,29 +7,29 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/)
+- [Toybox.Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)
+- [**initialize**](#initialize-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)**
 
@@ -37,11 +37,11 @@ Constructor
 
 Parameters:
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The exception message
+    异常消息
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0

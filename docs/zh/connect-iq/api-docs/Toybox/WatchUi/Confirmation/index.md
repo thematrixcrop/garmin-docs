@@ -7,27 +7,27 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)
+- [Toybox.WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of a confirmation dialog.
 
 A Confirmation is a special View that presents the user with a yes/no question. After an option is selected, the registered [onResponse()](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/#onResponse-instance_function) method will be called. A Confirmation is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/) as the input delegate.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)
+- [Toybox.WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)
 
--   [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
+- [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
 
 
-Note:
+注意：
 
 The look and feel of a confirmation dialog is device-specific.
 
@@ -47,31 +47,31 @@ WatchUi.pushView(
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
@@ -79,11 +79,11 @@ Constructor
 
 Parameters:
 
--   message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The confirmation message to display in the confirmation dialog
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

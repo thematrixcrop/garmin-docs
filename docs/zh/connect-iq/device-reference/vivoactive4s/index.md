@@ -3,82 +3,82 @@ title: "vívoactive® 4S"
 ---
 # vívoactive® 4S
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | vivoactive4s |
-| Screen Shape | round |
-| Screen Size | 218 x 218 |
-| Display Colors | 64 |
-| Touch | True |
-| Buttons | enter, menu, esc |
-| Launcher Icon Size | 30 x 30 |
+| 标识 | vivoactive4s |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 218 x 218 |
+| 显示颜色 | 64 |
+| 触摸 | True |
+| 按键 | enter, menu, esc |
+| 启动图标尺寸 | 30 x 30 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 32768 |  |
-| Watch App | 1048576 |  |
-| Watch Face | 524288 |  |
-| Widget | 524288 |  |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 手表应用 | 1048576 |  |
+| 表盘 | 524288 |  |
+| 微件 | 524288 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x000055&lt;/td>&lt;td class="entry">0x0000aa&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x005500&lt;/td>&lt;td class="entry">0x005555&lt;/td>&lt;td class="entry">0x0055aa&lt;/td>&lt;td class="entry">0x0055ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aa55&lt;/td>&lt;td class="entry">0x00aaaa&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ff55&lt;/td>&lt;td class="entry">0x00ffaa&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x550000&lt;/td>&lt;td class="entry">0x550055&lt;/td>&lt;td class="entry">0x5500aa&lt;/td>&lt;td class="entry">0x5500ff&lt;/td>&lt;td class="entry">0x555500&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0x5555aa&lt;/td>&lt;td class="entry">0x5555ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x55aa00&lt;/td>&lt;td class="entry">0x55aa55&lt;/td>&lt;td class="entry">0x55aaaa&lt;/td>&lt;td class="entry">0x55aaff&lt;/td>&lt;td class="entry">0x55ff00&lt;/td>&lt;td class="entry">0x55ff55&lt;/td>&lt;td class="entry">0x55ffaa&lt;/td>&lt;td class="entry">0x55ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaa0000&lt;/td>&lt;td class="entry">0xaa0055&lt;/td>&lt;td class="entry">0xaa00aa&lt;/td>&lt;td class="entry">0xaa00ff&lt;/td>&lt;td class="entry">0xaa5500&lt;/td>&lt;td class="entry">0xaa5555&lt;/td>&lt;td class="entry">0xaa55aa&lt;/td>&lt;td class="entry">0xaa55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaa00&lt;/td>&lt;td class="entry">0xaaaa55&lt;/td>&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xaaaaff&lt;/td>&lt;td class="entry">0xaaff00&lt;/td>&lt;td class="entry">0xaaff55&lt;/td>&lt;td class="entry">0xaaffaa&lt;/td>&lt;td class="entry">0xaaffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff0055&lt;/td>&lt;td class="entry">0xff00aa&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xff5555&lt;/td>&lt;td class="entry">0xff55aa&lt;/td>&lt;td class="entry">0xff55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffaa55&lt;/td>&lt;td class="entry">0xffaaaa&lt;/td>&lt;td class="entry">0xffaaff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffff55&lt;/td>&lt;td class="entry">0xffffaa&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/vivoactive4s/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/vivoactive4s/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
 
-**3 Fields Layout**
+**3 字段布局**
 
 
 ![3 Fields](/connect-iq/resources/device-reference/vivoactive4s/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 71 | 7 | True | True | True | False |
-| Field 2 | 0 | 73 | 218 | 71 | 5 | True | True | False | False |
-| Field 3 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 71 | 7 | True | True | True | False |
+| 字段 2 | 0 | 73 | 218 | 71 | 5 | True | True | False | False |
+| 字段 3 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
 
-**4 Fields Layout**
+**4 字段布局**
 
 
 ![4 Fields](/connect-iq/resources/device-reference/vivoactive4s/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 71 | 7 | True | True | True | False |
-| Field 2 | 0 | 73 | 108 | 71 | 1 | True | False | False | False |
-| Field 3 | 110 | 73 | 108 | 71 | 4 | False | True | False | False |
-| Field 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 71 | 7 | True | True | True | False |
+| 字段 2 | 0 | 73 | 108 | 71 | 1 | True | False | False | False |
+| 字段 3 | 110 | 73 | 108 | 71 | 4 | False | True | False | False |
+| 字段 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
 
 **Part Number 006-B3224-00**
 
-*Languages*
+*语言*
 
 ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, por, ron, rus, slo, slv, spa, swe, tur, ukr
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 23 | VIVOACTIVE4S\_ROBOTO\_TINY\_PLUS\_BOLD |
@@ -103,13 +103,13 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 
 **Part Number 006-B3387-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 | FONT\_TINY | Roboto Condensed | 23 | VIVOACTIVE4S\_ROBOTO\_TINY\_PLUS\_BOLD |
@@ -132,13 +132,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_17 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 23 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_23 |
@@ -161,13 +161,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_17 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_17 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_17 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 23 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_23 |
@@ -190,13 +190,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_17 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 17 | NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_17 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 17 | NOTO\_SANS\_CJK\_JP\_BOLD\_17 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 23 | NOTO\_SANS\_CJK\_JP\_BOLD\_23 |
@@ -219,13 +219,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 17 | NOTO\_SANS\_CJK\_JP\_BOLD\_17 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 17 | NOTO\_SANS\_CJK\_JP\_BOLD\_17 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Regular | 17 | NOTO\_SANS\_CJK\_KR\_REGULAR\_17 |
 | FONT\_TINY | Noto Sans CJK KR Regular | 23 | NOTO\_SANS\_CJK\_KR\_REGULAR\_23 |
@@ -248,13 +248,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Regular | 17 | NOTO\_SANS\_CJK\_KR\_REGULAR\_17 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Regular | 17 | NOTO\_SANS\_CJK\_KR\_REGULAR\_17 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -277,13 +277,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans | 17 | NOTO\_SANS\_BOLD\_VIET\_17 |
 | FONT\_TINY | Noto Sans | 23 | NOTO\_SANS\_BOLD\_VIET\_23 |

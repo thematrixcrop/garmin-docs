@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
+- [Toybox.WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen menu. A Menu2 is a special View, similar to a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), that presents the user with a list of options. A Menu2 offers more capabilities than a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), like graphical titles, menu items that can be updated dynamically, and additional menu elements such as check boxes.
 
@@ -24,18 +24,18 @@ After an option is selected, the registered [onSelect()](/connect-iq/api-docs/To
 
 A Menu2 is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
+- [Toybox.WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
--   [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
+- [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
--   [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
+- [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
--   [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
+- [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
 
 
-Note:
+注意：
 
 The look and feel of a Menu2 is device-specific.
 
@@ -79,24 +79,24 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -255,11 +255,11 @@ App Types and Runtime Contexts:
 
 :::
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/), [WatchUi.CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/)
 
-## Constant Summary
+## 常量摘要
 
 ### DividerType
 
@@ -267,84 +267,84 @@ Divider type for supported devices
 
 Since:
 
-API Level 5.0.1
+API 级别 5.0.1
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | DIVIDER\_TYPE\_DEFAULT | 0 |
-API Level 5.0.1
+API 级别 5.0.1
 
- |
+|
 
 Default divider type
 
- |
+|
 | DIVIDER\_TYPE\_ICON | 1 |
 
-API Level 5.0.1
+API 级别 5.0.1
 
- |
+|
 
 Icon divider type
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addItem**](#addItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
+- [**addItem**](#addItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
 
     Add a MenuItem to a Menu2.
 
--   [**deleteItem**](#deleteItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**deleteItem**](#deleteItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Delete a MenuItem from a Menu2.
 
--   [**findItemById**](#findItemById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**findItemById**](#findItemById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Find a MenuItem by ID in a Menu2.
 
--   [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
+- [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
     Get the icon Retrieve the icon for this Menu2.
 
--   [**getItem**](#getItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
+- [**getItem**](#getItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
 
     Get a MenuItem from a Menu2.
 
--   [**initialize**](#initialize-instance_function)(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
+- [**initialize**](#initialize-instance_function)(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
 
     Constructor.
 
--   [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
+- [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
 
-    Set or change the desired divider type.
+    设置或更改所需的分隔线类型。
 
--   [**setFocus**](#setFocus-instance_function)(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void**
+- [**setFocus**](#setFocus-instance_function)(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void**
 
     Set the focus of a MenuItem in a Menu2.
 
--   [**setFooter**](#setFooter-instance_function)(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+- [**setFooter**](#setFooter-instance_function)(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
     Set a Menu2 footer.
 
--   [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
+- [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
     Set the icon Set the icon to display in the subscreen area when the focused MenuItem does not have an icon.
 
--   [**setTheme**](#setTheme-instance_function)(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**) as **Void**
+- [**setTheme**](#setTheme-instance_function)(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**) as **Void**
 
     Set the theme.
 
--   [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
+- [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
     Set a Menu2 title.
 
--   [**updateItem**](#updateItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
+- [**updateItem**](#updateItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
     Update a MenuItem in a Menu2.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/))** as **Void**
 
@@ -352,25 +352,25 @@ Add a MenuItem to a Menu2.
 
 Parameters:
 
--   item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
+- item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
     The MenuItem to add to the Menu2
 
-    -   May not be a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
+- May not be a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
 
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
+- ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
     Thrown if item is a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if item is not a valid type
 
@@ -381,19 +381,19 @@ Delete a MenuItem from a Menu2.
 
 Parameters:
 
--   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should be deleted from the Menu2.
 
 
 Returns:
 
--   [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) `true` if the item exists, or `null` if the specified index it outside of the bounds of the menu items array.
+- [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) `true` if the item exists, or `null` if the specified index it outside of the bounds of the menu items array.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **findItemById(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -401,24 +401,24 @@ Find a MenuItem by ID in a Menu2.
 
 Parameters:
 
--   identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The identifier for which to search
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) assigned the supplied identifier
 
-    -   \-1 if not found
+- \-1 if not found
 
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **getIcon()** as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -426,7 +426,7 @@ Get the icon
 
 Retrieve the icon for this Menu2.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Descent™ G1 / G1 Solar
 -   Instinct® 2 / Solar / Dual Power / dēzl Edition
@@ -442,14 +442,14 @@ Retrieve the icon for this Menu2.
 
 Returns:
 
--   [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
+- [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
-    The icon
+    图标
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **getItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
 
@@ -457,85 +457,85 @@ Get a MenuItem from a Menu2.
 
 Parameters:
 
--   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) to get
 
 
 Returns:
 
--   [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
+- [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)**
 
 Constructor
 
-Note:
+注意：
 
-The `:icon` option is only used on ConnectIQ 3.4.0 devices with subscreen support.
+`:icon` 选项仅在支持子屏幕的 ConnectIQ 3.4.0 设备上使用。
 
-Note:
+注意：
 
 The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme support.
 
-Note:
+注意：
 
-The `:dividerType` option is only used on ConnectIQ 5.0.1 devices with divider support.
+`:dividerType` 选项仅在支持分隔线的 ConnectIQ 5.0.1 设备上使用。
 
-Note:
+注意：
 
 The `:footer` option is only used on ConnectIQ 5.1.0 devices.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
-    -   Can be `null`
+- 可以为 `null`
 
 
-    -   :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         The menu title
 
-    -   :footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- :footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
         The menu footer
 
-    -   :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have initial focus
 
-    -   :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
         The icon to display in the subscreen area when the focused MenuItem does not have an icon.
 
-    -   :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
+- :theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
-        The menu theme, or `null` for no theme. Defaults to MENU\_THEME\_DEFAULT.
+        菜单主题；传入 `null` 表示不使用主题。默认为 MENU_THEME_DEFAULT。
 
-    -   :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
+- :dividerType — ([Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)) —
 
         The divider type, Defaults to DIVIDER\_TYPE\_DEFAULT.
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.Menu2.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#setDividerType-instance_function)
+- [Toybox.WatchUi.Menu2.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#setDividerType-instance_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **setDividerType(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**)** as **Void**
 
-Set or change the desired divider type.
+设置或更改所需的分隔线类型。
 
 If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module).
 
@@ -545,7 +545,7 @@ For [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/), toggl
 
 [Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) will be used if not set for devices that support divider, or `null` is passed.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -568,15 +568,15 @@ For [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/), toggl
 
 Since:
 
-API Level 5.0.1
+API 级别 5.0.1
 
 Throws:
 
--   (WatchUi.InvalidValueException) —
+- (WatchUi.InvalidValueException) —
 
     Thrown if divider is not an valid value.
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if divider is not a valid type.
 
@@ -587,18 +587,18 @@ Set the focus of a MenuItem in a Menu2.
 
 Parameters:
 
--   focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) that should have focus
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if focus is not a valid type
 
@@ -609,18 +609,18 @@ Set a Menu2 footer.
 
 Parameters:
 
--   footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     The menu footer text, `null`, a string ResourceId, or a Drawable
 
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if footer is not a valid type
 
@@ -633,12 +633,12 @@ Set the icon to display in the subscreen area when the focused MenuItem does not
 
 Parameters:
 
--   icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-    The icon
+    图标
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Descent™ G1 / G1 Solar
 -   Instinct® 2 / Solar / Dual Power / dēzl Edition
@@ -654,7 +654,7 @@ Parameters:
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **setTheme(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**)** as **Void**
 
@@ -662,12 +662,12 @@ Set the theme
 
 Parameters:
 
--   theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
+- theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
     The theme for this menu.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -703,7 +703,7 @@ Parameters:
 
 Since:
 
-API Level 4.1.8
+API 级别 4.1.8
 
 ### **setTitle(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
@@ -711,18 +711,18 @@ Set a Menu2 title.
 
 Parameters:
 
--   title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
+- title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     The menu title text, `null`, a string ResourceId, or a Drawable
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if title is not a valid type
 
@@ -733,15 +733,15 @@ Update a MenuItem in a Menu2.
 
 Parameters:
 
--   item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
+- item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
     The MenuItem to update
 
--   index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The index of the MenuItem to update
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

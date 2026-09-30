@@ -7,29 +7,29 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)
+- [Toybox.System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents the state of a communications channel connection.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**state**](#state-var) as [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module)
+- [**state**](#state-var) as [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module)
 
     The state of the connection.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var state as [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module)
 
@@ -37,10 +37,10 @@ The state of the connection.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Returns:
 
--   [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module) —
+- [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module) —
 
-    A [CONNECTION\_STATE\_\*](/connect-iq/api-docs/Toybox/System/) value
+    一个 [CONNECTION\_STATE\_\*](/connect-iq/api-docs/Toybox/System/) 值

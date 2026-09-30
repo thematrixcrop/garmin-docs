@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.FitnessEquipment](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipment/)
+- [Toybox.AntPlus.FitnessEquipment](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipment/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Fitness Equipment Device instance.
 
@@ -40,9 +40,9 @@ fitnessEquipment.controlEquipment(TRAINER_RESISTANCE, 30); //sets basic resistan
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Edge® 1000 / Explore
 -   Edge® 1030 / Bontrager
@@ -64,46 +64,46 @@ API Level 2.4.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**controlEquipment**](#controlEquipment-instance_function)(setting as [AntPlus.TrainerValue](/connect-iq/api-docs/Toybox/AntPlus/#TrainerValue-module), data as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
+- [**controlEquipment**](#controlEquipment-instance_function)(setting as [AntPlus.TrainerValue](/connect-iq/api-docs/Toybox/AntPlus/#TrainerValue-module), data as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
 
     Control the fitness Equipment Note: Setting a value related to a specific training mode will cause the fitness equipment to change to that mode.
 
--   [**getEquipmentData**](#getEquipmentData-instance_function)() as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
+- [**getEquipmentData**](#getEquipmentData-instance_function)() as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
     Get the current training data from the FE.
 
--   [**getResistanceSettings**](#getResistanceSettings-instance_function)() as [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
+- [**getResistanceSettings**](#getResistanceSettings-instance_function)() as [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
 
     Get the resistance percentage setting of the fitness equipment for basic resistance training mode.
 
--   [**getSimulationSettings**](#getSimulationSettings-instance_function)() as [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
+- [**getSimulationSettings**](#getSimulationSettings-instance_function)() as [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
 
     Get the wind and track resistance simulation settings.
 
--   [**getTargetPowerSettings**](#getTargetPowerSettings-instance_function)() as [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
+- [**getTargetPowerSettings**](#getTargetPowerSettings-instance_function)() as [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
     Get the target power setting of the fitness equipment for target power training mode.
 
--   [**getTrainerMode**](#getTrainerMode-instance_function)() as [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/)
+- [**getTrainerMode**](#getTrainerMode-instance_function)() as [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/)
 
     Get the current training mode and supported modes of the fitness equipment.
 
--   [**getUserSettings**](#getUserSettings-instance_function)() as [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
+- [**getUserSettings**](#getUserSettings-instance_function)() as [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
 
     Get the user configuration settings of the fitness equipment for simulation training mode.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)
 
     Constructor.
 
--   [**setTrainerMode**](#setTrainerMode-instance_function)(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
+- [**setTrainerMode**](#setTrainerMode-instance_function)(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
 
     Set the trainer mode.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **controlEquipment(setting as [AntPlus.TrainerValue](/connect-iq/api-docs/Toybox/AntPlus/#TrainerValue-module), data as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module))** as **Void**
 
@@ -111,18 +111,18 @@ Control the fitness Equipment Note: Setting a value related to a specific traini
 
 Parameters:
 
--   setting — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- setting — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     A [TRAINER\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE-const) value.
 
--   data — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
+- data — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
     The value of the setting to be sent or [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) enum value if setting mode.
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getEquipmentData()** as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
@@ -130,14 +130,14 @@ Get the current training data from the FE
 
 Returns:
 
--   [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/) —
+- [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/) —
 
     Fitness Equipment training data
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getResistanceSettings()** as [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
 
@@ -145,14 +145,14 @@ Get the resistance percentage setting of the fitness equipment for basic resista
 
 Returns:
 
--   [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/) —
+- [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/) —
 
     Fitness Equipment resistance Setting
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getSimulationSettings()** as [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
 
@@ -160,14 +160,14 @@ Get the wind and track resistance simulation settings. You should set wind and t
 
 Returns:
 
--   [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/) —
+- [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/) —
 
     Fitness Equipment simulation settings
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getTargetPowerSettings()** as [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
@@ -175,14 +175,14 @@ Get the target power setting of the fitness equipment for target power training 
 
 Returns:
 
--   [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/) —
+- [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/) —
 
     Fitness Equipment target power Setting
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getTrainerMode()** as [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/)
 
@@ -190,14 +190,14 @@ Get the current training mode and supported modes of the fitness equipment
 
 Returns:
 
--   [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/) —
+- [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/) —
 
     Fitness Equipment training mode
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **getUserSettings()** as [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
 
@@ -205,14 +205,14 @@ Get the user configuration settings of the fitness equipment for simulation trai
 
 Returns:
 
--   [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/) —
+- [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/) —
 
     Fitness Equipment user profile settings
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **initialize(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)**
 
@@ -220,14 +220,14 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)) —
+- listener — ([AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)) —
 
     The fitness equipment instance optionally takes an extension of the [FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the get\* methods.
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0
 
 ### **setTrainerMode(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module))** as **Void**
 
@@ -235,11 +235,11 @@ Set the trainer mode. You should check the capable modes of the fitness equipmen
 
 Parameters:
 
--   mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) enum value
+    [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) 枚举值
 
 
 Since:
 
-API Level 2.4.0
+API 级别 2.4.0

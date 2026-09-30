@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)
+- [Toybox.WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 MenuInputDelegate responds to a Menu selection.
 
 This class should be extended to handle selected Menu items.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)
+- [Toybox.WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)
 
 
 Example:
@@ -48,31 +48,31 @@ class MyMenuInputDelegate extends WatchUi.MenuInputDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onMenuItem**](#onMenuItem-instance_function)(item as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
+- [**onMenuItem**](#onMenuItem-instance_function)(item as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
 
     A Menu item was chosen.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onMenuItem(item as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as **Void**
 
@@ -82,11 +82,11 @@ This method is called when a Menu item has been selected, and receives the Menu 
 
 Parameters:
 
--   item — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- item — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     The identifier of the chosen Menu item
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

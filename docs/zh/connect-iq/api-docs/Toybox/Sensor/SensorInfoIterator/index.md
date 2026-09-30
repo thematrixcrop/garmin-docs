@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
+- [Toybox.Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class encapsulating a collection of Sensors
 
@@ -37,16 +37,16 @@ function getHeartRateSensorIterator() {
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**next**](#next-instance_function)() as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) or **Null**
+- [**next**](#next-instance_function)() as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) or **Null**
 
     Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and advance.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **next()** as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) or **Null**
 
@@ -56,9 +56,9 @@ Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and
 
 Returns:
 
--   [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)
+- [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0

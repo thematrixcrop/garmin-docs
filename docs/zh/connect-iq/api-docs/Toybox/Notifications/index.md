@@ -3,13 +3,13 @@ title: "Module: Toybox.Notifications"
 ---
 # Module: Toybox.Notifications
 
-## Overview
+## 概述
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -80,16 +80,16 @@ API Level 5.1.0
 
 :::
 
-Requires Permission:
+需要权限：
 
--   Notifications
+- Notifications
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)
+类：[NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)
 
-## Constant Summary
+## 常量摘要
 
 ### NotificationMessageType
 
@@ -97,54 +97,54 @@ Notification message types
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | NOTIFICATION\_MESSAGE\_TYPE\_DISMISSED | 1 |
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 The notification was dismissed by the user
 
- |
+|
 | NOTIFICATION\_MESSAGE\_TYPE\_SELECTED | 2 |
 
-API Level 5.1.0
+API 级别 5.1.0
 
- |
+|
 
 The notification action was selected by the user
 
- |
+|
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Action**](#Action-named_type) as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
+- [**Action**](#Action-named_type) as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
 
     A notification action.
 
--   [**NotificationDataKeyType**](#NotificationDataKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
--   [**NotificationDataType**](#NotificationDataType-named_type) as [Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type), [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or **Null**
--   [**NotificationMessageCallback**](#NotificationMessageCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as **Void**
--   [**ShowNotificationOptions**](#ShowNotificationOptions-named_type) as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :body as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type), :actions as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.Action](/connect-iq/api-docs/Toybox/Notifications/#Action-named_type)\>, :dismissPrevious as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
+- [**NotificationDataKeyType**](#NotificationDataKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
+- [**NotificationDataType**](#NotificationDataType-named_type) as [Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type), [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or **Null**
+- [**NotificationMessageCallback**](#NotificationMessageCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as **Void**
+- [**ShowNotificationOptions**](#ShowNotificationOptions-named_type) as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :body as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type), :actions as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.Action](/connect-iq/api-docs/Toybox/Notifications/#Action-named_type)\>, :dismissPrevious as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
     Notification options.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**registerForNotificationMessages**](#registerForNotificationMessages-instance_function)(callback as [Notifications.NotificationMessageCallback](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageCallback-named_type) or **Null**) as **Void**
+- [**registerForNotificationMessages**](#registerForNotificationMessages-instance_function)(callback as [Notifications.NotificationMessageCallback](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageCallback-named_type) or **Null**) as **Void**
 
     Register a callback for receiving notification messages.
 
--   [**showNotification**](#showNotification-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**) as **Void**
+- [**showNotification**](#showNotification-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**) as **Void**
 
     Push a notification to the display.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Action** as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
 
@@ -152,25 +152,25 @@ A notification action
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **NotificationDataKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **NotificationDataType** as [Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type), [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or **Null**
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **NotificationMessageCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as **Void**
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **ShowNotificationOptions** as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :body as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type), :actions as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.Action](/connect-iq/api-docs/Toybox/Notifications/#Action-named_type)\>, :dismissPrevious as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
@@ -178,9 +178,9 @@ Notification options
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **registerForNotificationMessages(callback as [Notifications.NotificationMessageCallback](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageCallback-named_type) or **Null**)** as **Void**
 
@@ -190,9 +190,9 @@ The callback will be called once for each notification message. If there are mes
 
 Parameters:
 
--   callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a callback, which must receive a `data` argument of the type [NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/).
+    对回调的引用，该回调必须接收类型为 [NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/) 的 `data` 参数。
 
 
 Example:
@@ -213,7 +213,7 @@ Notifications.registerForNotificationMessages(self.method(:notificationMessageCa
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
 ### **showNotification(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**)** as **Void**
 
@@ -221,35 +221,35 @@ Push a notification to the display
 
 Parameters:
 
--   title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     The title of the notification.
 
--   subTitle — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- subTitle — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     The subTitle of the notification.
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options.
+    选项字典。
 
-    -   :body — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- :body — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
         The body of the notification.
 
-    -   :data — ([Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)) —
+- :data — ([Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)) —
 
         The data associated with the notification. Will be passed back to the application for context when a notification action is selected.
 
-    -   :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
         The icon to display with this notification. If no icon is provided and the system requires an icon, the app icon will be used.
 
-    -   :actions — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :actions — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         An array of action strings to display, and the data for those strings when the action is selected. The selected action will be passed to the application for context when the notification action is selected. An empty :action array with no :data will appear as an actionless notification. These notifications will not trigger a notification when dismissed.
 
-    -   :dismissPrevious — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- :dismissPrevious — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         If true, dismiss all prior notifications that the app has posted. Note that this defaults to true if not provided.
 
@@ -269,4 +269,4 @@ Example:
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0

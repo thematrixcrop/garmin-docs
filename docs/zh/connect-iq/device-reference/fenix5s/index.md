@@ -3,104 +3,104 @@ title: "fēnix® 5S"
 ---
 # fēnix® 5S
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fenix5s |
-| Screen Shape | round |
-| Screen Size | 218 x 218 |
-| Display Colors | 64 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 36 x 36 |
+| 标识 | fenix5s |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 218 x 218 |
+| 显示颜色 | 64 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 36 x 36 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
-| Watch App | 131072 |  |
-| Watch Face | 98304 |  |
-| Widget | 65536 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
+| 手表应用 | 131072 |  |
+| 表盘 | 98304 |  |
+| 微件 | 65536 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x000055&lt;/td>&lt;td class="entry">0x0000aa&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x005500&lt;/td>&lt;td class="entry">0x005555&lt;/td>&lt;td class="entry">0x0055aa&lt;/td>&lt;td class="entry">0x0055ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aa55&lt;/td>&lt;td class="entry">0x00aaaa&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ff55&lt;/td>&lt;td class="entry">0x00ffaa&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x550000&lt;/td>&lt;td class="entry">0x550055&lt;/td>&lt;td class="entry">0x5500aa&lt;/td>&lt;td class="entry">0x5500ff&lt;/td>&lt;td class="entry">0x555500&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0x5555aa&lt;/td>&lt;td class="entry">0x5555ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x55aa00&lt;/td>&lt;td class="entry">0x55aa55&lt;/td>&lt;td class="entry">0x55aaaa&lt;/td>&lt;td class="entry">0x55aaff&lt;/td>&lt;td class="entry">0x55ff00&lt;/td>&lt;td class="entry">0x55ff55&lt;/td>&lt;td class="entry">0x55ffaa&lt;/td>&lt;td class="entry">0x55ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaa0000&lt;/td>&lt;td class="entry">0xaa0055&lt;/td>&lt;td class="entry">0xaa00aa&lt;/td>&lt;td class="entry">0xaa00ff&lt;/td>&lt;td class="entry">0xaa5500&lt;/td>&lt;td class="entry">0xaa5555&lt;/td>&lt;td class="entry">0xaa55aa&lt;/td>&lt;td class="entry">0xaa55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaa00&lt;/td>&lt;td class="entry">0xaaaa55&lt;/td>&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xaaaaff&lt;/td>&lt;td class="entry">0xaaff00&lt;/td>&lt;td class="entry">0xaaff55&lt;/td>&lt;td class="entry">0xaaffaa&lt;/td>&lt;td class="entry">0xaaffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff0055&lt;/td>&lt;td class="entry">0xff00aa&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xff5555&lt;/td>&lt;td class="entry">0xff55aa&lt;/td>&lt;td class="entry">0xff55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffaa55&lt;/td>&lt;td class="entry">0xffaaaa&lt;/td>&lt;td class="entry">0xffaaff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffff55&lt;/td>&lt;td class="entry">0xffffaa&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fenix5s/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 218 | 218 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fenix5s/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 218 | 108 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fenix5s/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
-| Field 2 | 0 | 72 | 218 | 74 | 5 | True | True | False | False |
-| Field 3 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| 字段 2 | 0 | 72 | 218 | 74 | 5 | True | True | False | False |
+| 字段 3 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fenix5s/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
-| Field 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 108 | 7 | True | True | True | False |
+| 字段 2 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 3 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fenix5s/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
-| Field 2 | 0 | 72 | 108 | 74 | 1 | True | False | False | False |
-| Field 3 | 110 | 72 | 108 | 74 | 4 | False | True | False | False |
-| Field 4 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 218 | 70 | 7 | True | True | True | False |
+| 字段 2 | 0 | 72 | 108 | 74 | 1 | True | False | False | False |
+| 字段 3 | 110 | 72 | 108 | 74 | 4 | False | True | False | False |
+| 字段 4 | 0 | 148 | 218 | 70 | 13 | True | True | False | True |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/fenix5s/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
-| Field 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
-| Field 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
-| Field 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
+| 字段 1 | 0 | 0 | 108 | 108 | 3 | True | False | True | False |
+| 字段 2 | 110 | 0 | 108 | 108 | 6 | False | True | True | False |
+| 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
+| 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
 **Part Number 006-B2544-00**
 
-*Languages*
+*语言*
 
 ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 23 | FENIX5\_ROBOTOCONDENSEDREGULAR\_23PX |
 | FONT\_TINY | Roboto Condensed | 23 | FENIX5\_ROBOTOCONDENSEDBOLD\_23PX |
@@ -123,13 +123,13 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 
 **Part Number 006-B2797-00**
 
-*Languages*
+*语言*
 
 eng, ind
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 23 | FENIX5\_ROBOTOCONDENSEDREGULAR\_23PX |
 | FONT\_TINY | Roboto Condensed | 23 | FENIX5\_ROBOTOCONDENSEDBOLD\_23PX |
@@ -150,13 +150,13 @@ eng, ind
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 46 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_46PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 53 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_53PX |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 23 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_23 |
 | FONT\_TINY | Noto Sans CJK SC Bold | 23 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_23B |
@@ -177,13 +177,13 @@ zhs
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 52 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_52PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 58 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_58PX |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 23 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_23 |
 | FONT\_TINY | Noto Sans CJK SC Bold | 23 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_23B |
@@ -204,13 +204,13 @@ zht
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 52 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_52PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 58 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_58PX |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 23 | NOTO\_SANS\_CJK\_JP\_BOLD\_23 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 23 | NOTO\_SANS\_CJK\_JP\_BOLD\_23B |
@@ -231,13 +231,13 @@ jpn
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 52 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_52PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 58 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_58PX |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Bold | 23 | NOTO\_SANS\_CJK\_KR\_BOLD\_23 |
 | FONT\_TINY | Noto Sans CJK KR Bold | 23 | NOTO\_SANS\_CJK\_KR\_BOLD\_23B |
@@ -258,13 +258,13 @@ kor
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 52 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_52PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 58 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_58PX |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |

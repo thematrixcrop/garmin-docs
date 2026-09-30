@@ -7,93 +7,93 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Toybox.Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 String objects represent a sequence of characters, and provide methods for string operations.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Lexicographically compare self to some other string.
 
--   [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Test if an Object instance is equal to another instance of an Object.
+    测试一个 Object 实例是否等于另一个 Object 实例。
 
--   [**find**](#find-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**find**](#find-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Determine if the specified String exists in a String.
 
--   [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get a hash code value for a String.
 
--   [**length**](#length-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**length**](#length-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the number of characters in a String.
 
--   [**substring**](#substring-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
+- [**substring**](#substring-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
     Create a new String that contains the contents of the current String from a start position to an end position.
 
--   [**toCharArray**](#toCharArray-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>
+- [**toCharArray**](#toCharArray-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>
 
     Convert a String to an Array of Char objects.
 
--   [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**
+- [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**
 
     Convert a String to a Double.
 
--   [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     Convert a String to a Float.
 
--   [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
+- [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
     Convert a String to a Long.
 
--   [**toLongWithBase**](#toLongWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
+- [**toLongWithBase**](#toLongWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
     Convert a String to a Long using a specified base.
 
--   [**toLower**](#toLower-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toLower**](#toLower-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a String to lowercase.
 
--   [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Convert a String to a Number.
 
--   [**toNumberWithBase**](#toNumberWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**toNumberWithBase**](#toNumberWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Convert a String to a Number using a specified base.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a String to a String.
 
--   [**toUpper**](#toUpper-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toUpper**](#toUpper-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Convert a String to uppercase.
 
--   [**toUtf8Array**](#toUtf8Array-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
+- [**toUtf8Array**](#toUtf8Array-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
     Convert a String to an Array of Number objects.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -101,50 +101,50 @@ Lexicographically compare self to some other string.
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The right hand side of a comparison.
+    比较的右侧操作数。
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A negative value if self is less than other, zero if the objects are equivalent, and a positive value if self is greater than other.
 
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if other is not of type [String](/connect-iq/api-docs/Toybox/Lang/String/).
 
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Test if an Object instance is equal to another instance of an Object.
+测试一个 Object 实例是否等于另一个 Object 实例。
 
 Parameters:
 
--   other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The Object to test against
+    用于比较的对象
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the Objects are equal, otherwise `false`
+    对象相等时返回 `true`，否则返回 `false`
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **find(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -152,7 +152,7 @@ Determine if the specified String exists in a String.
 
 Parameters:
 
--   string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     String to find
 
@@ -166,14 +166,14 @@ var index = myString.find("bananas"); // index is 3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The index of the start of the specified String, or `null` if not found
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -181,14 +181,14 @@ Get a hash code value for a String.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The hash code for the String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **length()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -196,30 +196,30 @@ Get the number of characters in a String.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The length of the String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **substring(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
 Create a new String that contains the contents of the current String from a start position to an end position.
 
-Note:
+注意：
 
 Starting with 3.3.2, passing null for `startIndex` sets it to the start of the string and passing null for `endIndex` sets it to the end of the string. Passing in a negative number for either `startIndex` or `endIndex` offsets it from the end of the string.
 
 Parameters:
 
--   startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     Zero-based start index of the substring
 
--   endIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- endIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     End position of the substring, exclusive
 
@@ -233,14 +233,14 @@ var mySubString = myString.substring(3, 10); // mySubString is "bananas"
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     The substring of the String or `null` on error
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toCharArray()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>
 
@@ -248,14 +248,14 @@ Convert a String to an Array of Char objects.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     A Char Array representation of the String, where each character in the String is an element in the Array
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**
 
@@ -284,14 +284,14 @@ myNum = myString.toDouble(); // null
 
 Returns:
 
--   [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
+- [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     A Double representation of the String
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -320,14 +320,14 @@ myNum = myString.toFloat(); // null
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     A Float representation of the String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
@@ -356,14 +356,14 @@ myNum = myString.toLong(); // null
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     A Long representation of the String
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **toLongWithBase(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
@@ -371,15 +371,15 @@ Convert a String to a Long using a specified base.
 
 Parameters:
 
--   base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The base of the input string. If the value of `base` is zero, the string content is expected to have syntax similar to that of integer constants, which includes:
 
-    -   An optional sign character ('+' or '-')
+- An optional sign character ('+' or '-')
 
-    -   An optional prefix for octal or hexadecimal ('0' or '0x')
+- An optional prefix for octal or hexadecimal ('0' or '0x')
 
-    -   A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
+- A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
 
 
 
@@ -399,14 +399,14 @@ myNum = myString.toLongWithBase(0x10); // myNum is 255
 
 Returns:
 
--   [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
+- [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     A Long representation of the String
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **toLower()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -414,14 +414,14 @@ Convert a String to lowercase.
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A new lowercase String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -450,14 +450,14 @@ myNum = myString.toNumber(); // null
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A Number representation of the String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toNumberWithBase(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -465,15 +465,15 @@ Convert a String to a Number using a specified base.
 
 Parameters:
 
--   base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- base — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The base of the input string. If the value of `base` is zero, the string content expected to have syntax similar to that of integer constants, which includes:
 
-    -   An optional sign character ('+' or '-')
+- An optional sign character ('+' or '-')
 
-    -   An optional prefix for octal or hexadecimal ('0' or '0x')
+- An optional prefix for octal or hexadecimal ('0' or '0x')
 
-    -   A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
+- A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
 
 
 
@@ -493,14 +493,14 @@ myNum = myString.toNumberWithBase(0x10); // myNum is 255
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A Number representation of the String
 
 
 Since:
 
-API Level 1.4.1
+API 级别 1.4.1
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -508,14 +508,14 @@ Convert a String to a String.
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A String representation of String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toUpper()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -523,14 +523,14 @@ Convert a String to uppercase.
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A new uppercase String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **toUtf8Array()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
@@ -540,11 +540,11 @@ Each Number represents one byte of the UTF-8 representation of the String.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array representation of the String, where each byte in the string is an element in the Array
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0

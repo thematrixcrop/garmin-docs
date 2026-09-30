@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
+- [Toybox.Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A LocalMoment is an immutable moment in time.
 
@@ -75,9 +75,9 @@ Sys.println(Lang.format("day_of_week=$1$ month=$2$", [
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -208,54 +208,54 @@ API Level 3.3.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**add**](#add-instance_function)(addend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
+- [**add**](#add-instance_function)(addend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
     Add a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) to a LocalMoment.
 
--   [**compare**](#compare-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**compare**](#compare-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Determine if a LocalMoment is before or after another LocalMoment This computes a Number representing the difference between the two LocalMoment objects in seconds.
 
--   [**getDaylightSavingsTimeOffset**](#getDaylightSavingsTimeOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getDaylightSavingsTimeOffset**](#getDaylightSavingsTimeOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the daylight saving time offset from UTC time in seconds.
 
--   [**getOffset**](#getOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getOffset**](#getOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the total time offset from UTC time in seconds.
 
--   [**getTimeZoneOffset**](#getTimeZoneOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getTimeZoneOffset**](#getTimeZoneOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the time zone offset from UTC time in seconds.
 
--   [**greaterThan**](#greaterThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**greaterThan**](#greaterThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine if a LocalMoment is greater than another LocalMoment.
 
--   [**isDaylightSavingsTime**](#isDaylightSavingsTime-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**isDaylightSavingsTime**](#isDaylightSavingsTime-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Get whether the daylight saving time offset is in effect.
 
--   [**lessThan**](#lessThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**lessThan**](#lessThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determine if a LocalMoment is less than another LocalMoment.
 
--   [**subtract**](#subtract-instance_function)(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
+- [**subtract**](#subtract-instance_function)(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
     Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) from a LocalMoment.
 
--   [**toMoment**](#toMoment-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**toMoment**](#toMoment-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Get a Moment for this.
 
--   [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the UTC value of a LocalMoment.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **add(addend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
@@ -263,21 +263,21 @@ Add a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) to a LocalMoment.
 
 Parameters:
 
--   addend — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- addend — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The Duration to add to this LocalMoment.
 
 
 Returns:
 
--   [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
+- [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
     A LocalMoment object that is the sum of self and the provided Duration object.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **compare(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -287,9 +287,9 @@ This computes a Number representing the difference between the two LocalMoment o
 
 Parameters:
 
--   moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
+- moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
-    The LocalMoment to compare to this LocalMoment
+    用于与此 LocalMoment 比较的 LocalMoment
 
 
 Example:
@@ -315,21 +315,21 @@ System.println(tomorrow.compare(today)); //  86400, or one day in the future
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The Number of seconds difference between the two LocalMoment objects, without considering time zone rules. If the LocalMoment supplied for comparison is after this LocalMoment, the value will be negative.
 
 
-See Also:
+另见：
 
--   [LocalMoment.subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function)
+- [LocalMoment.subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function)
 
--   [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
+- [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getDaylightSavingsTimeOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -337,14 +337,14 @@ Get the daylight saving time offset from UTC time in seconds.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The daylight saving time offset in seconds.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -352,14 +352,14 @@ Get the total time offset from UTC time in seconds
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The total offset from UTC time in seconds.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getTimeZoneOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -369,14 +369,14 @@ This is the time zone offset without the daylight saving time offset.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The time zone offset from UTC in seconds. Positive values are East of UTC.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **greaterThan(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -384,21 +384,21 @@ Determine if a LocalMoment is greater than another LocalMoment.
 
 Parameters:
 
--   moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
+- moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
-    The LocalMoment to compare to this LocalMoment
+    用于与此 LocalMoment 比较的 LocalMoment
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if this LocalMoment is greater than the LocalMoment supplied for comparison, otherwise `false`
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **isDaylightSavingsTime()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -406,14 +406,14 @@ Get whether the daylight saving time offset is in effect
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     true if daylight saving time is in effect for this time.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **lessThan(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -421,21 +421,21 @@ Determine if a LocalMoment is less than another LocalMoment.
 
 Parameters:
 
--   moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
+- moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
-    The LocalMoment to compare to this LocalMoment
+    用于与此 LocalMoment 比较的 LocalMoment
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` if this LocalMoment is less than the LocalMoment supplied for comparison, otherwise `false`
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **subtract(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
@@ -443,21 +443,21 @@ Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [LocalMomen
 
 Parameters:
 
--   subtrahend — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- subtrahend — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The LocalMoment or Duration to subtract from this LocalMoment
 
 
 Returns:
 
--   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
+- [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
-    The Duration between the two LocalMoment objects or the LocalMoment offset by a Duration. When subtracting LocalMoments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) method 可用于 determine whether one LocalMoment is before or after another LocalMoment.
+    The Duration between the two LocalMoment objects or the LocalMoment offset by a Duration. When subtracting LocalMoments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) method can be used to determine whether one LocalMoment is before or after another LocalMoment.
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **toMoment()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -465,14 +465,14 @@ Get a Moment for this.
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     The UTC time of the LocalMoment as a Moment
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **value()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -480,18 +480,18 @@ Get the UTC value of a LocalMoment.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     The UTC time of the LocalMoment in seconds since the UNIX epoch
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0

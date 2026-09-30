@@ -7,33 +7,33 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 InputDelegate handles basic input events.
 
 There are four types of basic inputs InputDelegate can handle:
 
--   Key, represented by [KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- Key, represented by [KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
--   Touch, represented by [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- Touch, represented by [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
--   Swipe, represented by [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
+- Swipe, represented by [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
 
--   Selectable, represented by [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
+- Selectable, represented by [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
 
 
 This class is the base class for [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), which goes beyond simple key and screen-based input.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
+- [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
 
 Example:
@@ -62,71 +62,71 @@ class MyInputDelegate extends WatchUi.InputDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onDrag**](#onDrag-instance_function)(dragEvent as [WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onDrag**](#onDrag-instance_function)(dragEvent as [WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A touch screen drag event has occurred.
 
--   [**onFlick**](#onFlick-instance_function)(flickEvent as [WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onFlick**](#onFlick-instance_function)(flickEvent as [WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A touch screen flick event has occurred.
 
--   [**onHold**](#onHold-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onHold**](#onHold-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A touch screen hold event has occurred.
 
--   [**onKey**](#onKey-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onKey**](#onKey-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A physical button has been pressed and released.
 
--   [**onKeyPressed**](#onKeyPressed-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onKeyPressed**](#onKeyPressed-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A physical button has been pressed down.
 
--   [**onKeyReleased**](#onKeyReleased-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onKeyReleased**](#onKeyReleased-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A physical button has been released.
 
--   [**onRelease**](#onRelease-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onRelease**](#onRelease-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A touch screen release event has occurred.
 
--   [**onSelectable**](#onSelectable-instance_function)(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onSelectable**](#onSelectable-instance_function)(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The state of a [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) has changed.
 
--   [**onSwipe**](#onSwipe-instance_function)(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onSwipe**](#onSwipe-instance_function)(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     A touch screen swipe event has occurred.
 
--   [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A screen tap event has occurred.
+    发生了一次屏幕点击事件。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onDrag(dragEvent as [WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -136,12 +136,12 @@ This is sent when the touch screen is dragged.
 
 Parameters:
 
--   dragEvent — ([WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) —
+- dragEvent — ([WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) —
 
     The drag event that has occurred
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -231,19 +231,19 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
+- [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **onFlick(flickEvent as [WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -253,12 +253,12 @@ This is sent when the touch screen is flicked.
 
 Parameters:
 
--   flickEvent — ([WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) —
+- flickEvent — ([WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) —
 
     The flick event that has occurred
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -346,19 +346,19 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
+- [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **onHold(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -368,26 +368,26 @@ This is sent when the touch screen is touched and not released.
 
 Parameters:
 
--   clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
+- clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     The click event that has occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onKey(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -397,26 +397,26 @@ To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/
 
 Parameters:
 
--   keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
+- keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     The key event that occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onKeyPressed(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -426,26 +426,26 @@ To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/
 
 Parameters:
 
--   keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
+- keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     The key event that occurred.
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
 Since:
 
-API Level 1.1.2
+API 级别 1.1.2
 
 ### **onKeyReleased(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -455,26 +455,26 @@ To find out which key was pressed, use [KeyEvent.getKey()](/connect-iq/api-docs/
 
 Parameters:
 
--   keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
+- keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     The key event that occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
 Since:
 
-API Level 1.1.2
+API 级别 1.1.2
 
 ### **onRelease(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -484,26 +484,26 @@ This is only sent after an [onHold()](/connect-iq/api-docs/Toybox/WatchUi/InputD
 
 Parameters:
 
--   clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
+- clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     The click event that has occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onSelectable(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -511,28 +511,28 @@ The state of a [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) has
 
 Parameters:
 
--   selectableEvent — ([WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) —
+- selectableEvent — ([WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) —
 
     The selectable event containing the information about the Selectable whose state has changed
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
+- [Toybox.WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
 
--   [Toybox.WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
+- [Toybox.WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
 
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
 ### **onSwipe(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -542,52 +542,52 @@ This is sent when the touch screen is swiped.
 
 Parameters:
 
--   swipeEvent — ([WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) —
+- swipeEvent — ([WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) —
 
     The swipe event that has occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
+- [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onTap(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A screen tap event has occurred.
+发生了一次屏幕点击事件。
 
 This is sent when the touch screen is tapped (a quick touch and release).
 
 Parameters:
 
--   clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
+- clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     The click event that occurred
 
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if handled, otherwise `false`
+    若已处理则返回 `true`，否则返回 `false`
 
 
-See Also:
+另见：
 
--   [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
+- [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

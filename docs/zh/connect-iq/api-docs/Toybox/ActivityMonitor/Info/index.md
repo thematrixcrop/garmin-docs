@@ -7,111 +7,111 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
+- [Toybox.ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The ActivityMonitor.Info contains information about the user's current activity status.
 
 The fields in this class may return `null`. It is recommended to `null` check a value before using it. If the value is not available, an error indicating that the symbol was not found will be thrown.
 
-Note:
+注意：
 
 Unless otherwise indicated, Info data is calculated for the current day starting at midnight as provided by the device.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**activeMinutesDay**](#activeMinutesDay-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
+- [**activeMinutesDay**](#activeMinutesDay-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
     The number of active minutes for the current day.
 
--   [**activeMinutesWeek**](#activeMinutesWeek-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
+- [**activeMinutesWeek**](#activeMinutesWeek-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
     The number of active minutes for the current week.
 
--   [**activeMinutesWeekGoal**](#activeMinutesWeekGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**activeMinutesWeekGoal**](#activeMinutesWeekGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The value of the active minutes goal for the current week.
 
--   [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The calories burned so far for the current day in kilocalories (kCal).
 
--   [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The distance since midnight for the current day in centimeters (cm).
 
--   [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsClimbed**](#floorsClimbed-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of floors climbed for the current day.
 
--   [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current floor climb goal.
 
--   [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The number of floors descended for the current day.
 
--   [**isSleepMode**](#isSleepMode-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null** deprecated
+- [**isSleepMode**](#isSleepMode-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null** deprecated
 
     Determine whether the device is in sleep mode.
 
--   [**metersClimbed**](#metersClimbed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**metersClimbed**](#metersClimbed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The vertical distance of floors climbed in meters (m).
 
--   [**metersDescended**](#metersDescended-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
+- [**metersDescended**](#metersDescended-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
     The vertical distance of floors descended in meters (m).
 
--   [**moveBarLevel**](#moveBarLevel-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**moveBarLevel**](#moveBarLevel-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current level of the move bar between [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) and [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const).
 
--   [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushDistance**](#pushDistance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wheelchair push distance for the day in centimeters (cm).
+    当日的轮椅推行距离（厘米）。
 
--   [**pushGoal**](#pushGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushGoal**](#pushGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wheelchair push goal for the day in number of pushes.
+    当日的轮椅推行目标次数。
 
--   [**pushes**](#pushes-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**pushes**](#pushes-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Wheelchair push count for the day in number of pushes.
+    当日的轮椅推行次数。
 
--   [**respirationRate**](#respirationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**respirationRate**](#respirationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Current respiration rate for the user, in breaths per minute Value may be `null`.
 
--   [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The step goal for the current day in number of steps.
 
--   [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The step count since midnight for the current day in number of steps.
 
--   [**stressScore**](#stressScore-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**stressScore**](#stressScore-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     The current stress score The stress score calculated using a rolling average of the last 30 seconds of stress level readings.
 
--   [**timeToRecovery**](#timeToRecovery-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
+- [**timeToRecovery**](#timeToRecovery-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
     Time to recovery from the last activity, in hours Value may be `null`.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var activeMinutesDay as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
@@ -121,9 +121,9 @@ Contains the moderate, vigorous, and total accumulated minutes for the day. Valu
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -263,7 +263,7 @@ API Level 2.1.0
 
 Returns:
 
--   [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
+- [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
 ### var activeMinutesWeek as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
@@ -273,9 +273,9 @@ Contains the moderate, vigorous, and total accumulated minutes for the week. Val
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -415,7 +415,7 @@ API Level 2.1.0
 
 Returns:
 
--   [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
+- [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
 ### var activeMinutesWeekGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -423,9 +423,9 @@ The value of the active minutes goal for the current week. Value may be `null`.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -565,7 +565,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -573,9 +573,9 @@ The calories burned so far for the current day in kilocalories (kCal). Value may
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -727,7 +727,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -735,11 +735,11 @@ The distance since midnight for the current day in centimeters (cm). Value may b
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsClimbed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -747,9 +747,9 @@ The number of floors climbed for the current day. Value may be `null`.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -875,7 +875,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsClimbedGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -883,9 +883,9 @@ The current floor climb goal. Value may be `null`.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1011,7 +1011,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var floorsDescended as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1019,9 +1019,9 @@ The number of floors descended for the current day. Value may be `null`.
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1147,11 +1147,11 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var isSleepMode as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-**This has been deprecated**
+**此项已弃用**
 
 This value may be removed after System 4.
 
@@ -1159,9 +1159,9 @@ Determine whether the device is in sleep mode. Value may be `null`.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1311,7 +1311,7 @@ API Level 1.0.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var metersClimbed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1321,9 +1321,9 @@ This only counts the vertical distance associated with the floors climbed metric
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1449,7 +1449,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var metersDescended as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -1459,9 +1459,9 @@ This only counts the vertical distance associated with the floors descended metr
 
 Since:
 
-API Level 2.1.0
+API 级别 2.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -1587,7 +1587,7 @@ API Level 2.1.0
 
 Returns:
 
--   [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
+- [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
 ### var moveBarLevel as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1595,21 +1595,21 @@ The current level of the move bar between [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/ap
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushDistance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wheelchair push distance for the day in centimeters (cm).
+当日的轮椅推行距离（厘米）。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -1622,17 +1622,17 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wheelchair push goal for the day in number of pushes.
+当日的轮椅推行目标次数。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -1645,17 +1645,17 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var pushes as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Wheelchair push count for the day in number of pushes.
+当日的轮椅推行次数。
 
 Since:
 
-API Level 4.2.3
+API 级别 4.2.3
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Venu® 3
 -   Venu® 3S
@@ -1668,7 +1668,7 @@ API Level 4.2.3
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var respirationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1676,9 +1676,9 @@ Current respiration rate for the user, in breaths per minute Value may be `null`
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1794,7 +1794,7 @@ API Level 3.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var stepGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1802,11 +1802,11 @@ The step goal for the current day in number of steps. Value may be `null`.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var steps as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1814,11 +1814,11 @@ The step count since midnight for the current day in number of steps. Value may 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var stressScore as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1828,9 +1828,9 @@ The stress score calculated using a rolling average of the last 30 seconds of st
 
 Since:
 
-API Level 5.0.0
+API 级别 5.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -1909,17 +1909,17 @@ API Level 5.0.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Values correspond to the following scale
 
-    -   0–25: Resting state
+- 0–25: Resting state
 
-    -   26–50: Low stress
+- 26–50: Low stress
 
-    -   51–75: Medium stress
+- 51–75: Medium stress
 
-    -   76–100: High stress
+- 76–100: High stress
 
 
 
@@ -1929,9 +1929,9 @@ Time to recovery from the last activity, in hours Value may be `null`.
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S70 42mm
 -   Approach® S70 47mm
@@ -2040,4 +2040,4 @@ API Level 3.3.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

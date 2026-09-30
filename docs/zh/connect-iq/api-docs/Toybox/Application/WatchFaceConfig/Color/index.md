@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Application.WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/)
+- [Toybox.Application.WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Color configuration for a watchface.
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   D2™ Mach 2
@@ -53,14 +53,14 @@ API Level 5.1.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**color**](#color-var) as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
+- [**color**](#color-var) as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
     The oqaque color [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) selected by user from system or custom color palette.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
@@ -68,4 +68,4 @@ The oqaque color [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#Colo
 
 Since:
 
-API Level 5.1.0
+API 级别 5.1.0

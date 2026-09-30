@@ -7,36 +7,36 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)
+- [Toybox.Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 This exception indicates an incorrect type was passed for a parameter.
 
-## See Also:
+## 另见：
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), unused1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, unused2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
+- [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), unused1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, unused2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
 
     UnexpectedTypeException constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), unused1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, unused2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)**
 
@@ -50,4 +50,4 @@ UnexpectedTypeException constructor.
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0

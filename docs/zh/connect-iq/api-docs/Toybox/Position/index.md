@@ -3,15 +3,15 @@ title: "Module: Toybox.Position"
 ---
 # Module: Toybox.Position
 
-## Overview
+## 概述
 
-The Position 模块提供 an interface for location information and positioning sensors.
+The Position module provides an interface for location information and positioning sensors.
 
 This module also provides two sets of constants:
 
--   **GEO:** Used to specify the [Location](/connect-iq/api-docs/Toybox/Position/Location/) formatting.
+- **GEO:** Used to specify the [Location](/connect-iq/api-docs/Toybox/Position/Location/) formatting.
 
--   **QUALITY:** Represents the GPS fix quality when the [Location](/connect-iq/api-docs/Toybox/Position/Location/) information was calculated
+- **QUALITY:** Represents the GPS fix quality when the [Location](/connect-iq/api-docs/Toybox/Position/Location/) information was calculated
 
 
 Example:
@@ -29,52 +29,52 @@ function onPosition(info) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Info](/connect-iq/api-docs/Toybox/Position/Info/), [Location](/connect-iq/api-docs/Toybox/Position/Location/)
+类：[Info](/connect-iq/api-docs/Toybox/Position/Info/), [Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-## Constant Summary
+## 常量摘要
 
 ### Constellation
 
-**This has been deprecated**
+**此项已弃用**
 
 This enum may be removed after System 10.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CONSTELLATION\_GPS | 0 |
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Use the GPS satellite constellation
 
- |
+|
 | CONSTELLATION\_GLONASS | 1 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Use the GLONASS satellite constellation
 
- |
+|
 | CONSTELLATION\_GALILEO | 2 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Use the GALILEO satellite constellation
 
- |
+|
 
 ### Configuration
 
@@ -82,61 +82,61 @@ Configuration values for known GNSS configurations
 
 Since:
 
-API Level 3.3.6
+API 级别 3.3.6
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CONFIGURATION\_GPS | 1 |
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1
 
- |
+|
 | CONFIGURATION\_GPS\_GLONASS | 2 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1 and GLONASS
 
- |
+|
 | CONFIGURATION\_GPS\_GALILEO | 3 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1 and GALILEO L1
 
- |
+|
 | CONFIGURATION\_GPS\_BEIDOU | 4 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1 and BEIDOU L1
 
- |
+|
 | CONFIGURATION\_GPS\_GLONASS\_GALILEO\_BEIDOU\_L1 | 5 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1, GLONASS, GALILEO L1, BEIDOU L1
 
 This option is supported by System 6 devices like fenix7 and edge1040
 
- |
+|
 | CONFIGURATION\_GPS\_GLONASS\_GALILEO\_BEIDOU\_L1\_L5 | 6 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 GPS L1, GPS L5, GLONASS, GALILEO L1A, GALILEO L5, BEIDOU L1, BEIDOU L5
 
@@ -144,203 +144,203 @@ Referred to as Multi-GNSS Multi-band on Edge 1040.
 
 This option is supported by System 6 devices like fenix7 and edge1040
 
- |
+|
 | CONFIGURATION\_SAT\_IQ | 255 |
 
-API Level 3.3.6
+API 级别 3.3.6
 
- |
+|
 
 AutoGNSS (SatIQ™)
 
- |
+|
 
 ### CoordinateFormat
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | GEO\_DEG | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The decimal degree format: ddd.dddddd (e.g. 38.278652)
 
- | -   [Decimal Degrees](https://en.wikipedia.org/wiki/Decimal_degrees)
-     |
+| -   [Decimal Degrees](https://en.wikipedia.org/wiki/Decimal_degrees)
+|
 | GEO\_DM | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The degrees/decimal minutes format: dddmm.mmm (e.g 38 27.865')
 
  |  |
 | GEO\_DMS | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 degrees/minutes/seconds (DMS) format: ddd mm ss (e.g. 38 27' 8")
 
  |  |
 | GEO\_MGRS | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Military Grid Reference System, or MGRS (e.g. 4QFJ12345678)
 
- | -   [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
-     |
+| -   [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
+|
 
 ### Quality
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description | See Also |
+| 名称 | 值 | 自 | 说明 | 另见 |
 | --- | --- | --- | --- | --- |
 | QUALITY\_NOT\_AVAILABLE | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 GPS is not available
 
  |  |
 | QUALITY\_LAST\_KNOWN | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The Location is based on the last known GPS fix.
 
  |  |
 | QUALITY\_POOR | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The Location was calculated with a poor GPS fix. Only a 2-D GPS fix is available, likely due to a limited number of tracked satellites.
 
  |  |
 | QUALITY\_USABLE | 3 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The Location was calculated with a usable GPS fix. A 3-D GPS fix is available, with marginal HDOP (horizontal dilution of precision)
 
- | -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
-     |
+| -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
+|
 | QUALITY\_GOOD | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 The Location was calculated with a good GPS fix. A 3-D GPS fix is available, with good-to-excellent HDOP (horizontal dilution of precision).
 
- | -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
-     |
+| -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
+|
 
 ### LocationAcquisitionType
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | LOCATION\_ONE\_SHOT | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Enables a one-time Location acquisition
 
- |
+|
 | LOCATION\_CONTINUOUS | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Enables continuous Location tracking
 
- |
+|
 | LOCATION\_DISABLE | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Disables Location tracking
 
- |
+|
 
 ### PositioningMode
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | POSITIONING\_MODE\_NORMAL | 0 |
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Standard positioning mode used by default for fitness activities
 
- |
+|
 | POSITIONING\_MODE\_AVIATION | 1 |
 
-API Level 3.2.0
+API 级别 3.2.0
 
- |
+|
 
 Enable special mode for aviation use-cases that require support for higher altitudes.
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**createBoundingBox**](#createBoundingBox-instance_function)(locations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] or **Null**
+- [**createBoundingBox**](#createBoundingBox-instance_function)(locations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] or **Null**
 
     Create a bounding box from an array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects.
 
--   [**enableLocationEvents**](#enableLocationEvents-instance_function)(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**) as **Void**
+- [**enableLocationEvents**](#enableLocationEvents-instance_function)(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**) as **Void**
 
     Request a Location event.
 
--   [**getInfo**](#getInfo-instance_function)() as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
+- [**getInfo**](#getInfo-instance_function)() as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
-    Get the current [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/).
+    获取当前 [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)。
 
--   [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function)(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function)(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determines if the device supports a requested GPS configuration.
 
--   [**parse**](#parse-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
+- [**parse**](#parse-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
     Convert a String to a Location object.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **createBoundingBox(locations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>)** as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] or **Null**
 
@@ -348,21 +348,21 @@ Create a bounding box from an array of [Location](/connect-iq/api-docs/Toybox/Po
 
 Parameters:
 
--   locations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- locations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     Array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects.
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     Array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects that specify the bounds of the input array or `null` if the the input array is empty. The first element describes the top left corner, the second describes the bottom right.
 
 
 Since:
 
-API Level 3.0.3
+API 级别 3.0.3
 
 ### **enableLocationEvents(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**)** as **Void**
 
@@ -370,47 +370,47 @@ Request a Location event.
 
 Using this API requires enabling the Positioning Permission. Only Device Apps and Widgets may use this API.
 
-Note:
+注意：
 
 Passing an options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) is only supported with ConnectIQ 3.2.0 and later.
 
-Note:
+注意：
 
 Passing the `:configuration` option is only supported with ConnectIQ 3.3.6 or later.
 
-Note:
+注意：
 
 Multitasking: Location events will be disabled when app enters inacitve state, and re-enabled when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
 
 Parameters:
 
--   options — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A LOCATION\_\* value or [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) of options.
 
-    -   :acquisitionType — ([Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module)) —
+- :acquisitionType — ([Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module)) —
 
         A LOCATION\_\* enum value indicating the position acquisition type to use.
 
-    -   :constellations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
+- :constellations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
         An array of CONSTELLATION\_\* enum values specifying what constellations to enable. If not provided, CONSTELLATION\_GPS will be used by default.
 
-    -   :configuration — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
+- :configuration — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 
         A CONFIGURATION\_\* value specifying what configuration to enable. Only available with ConnectIQ 3.3.6 and later.
 
-    -   :mode — ([Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module)) —
+- :mode — ([Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module)) —
 
         a POSITIONING\_MODE\_\* value specifying the mode to use. If `null` POSITIONING\_MODE\_NORMAL will be used by default.
 
--   listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
+- listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     A reference to a listener method:
 
-    -   Called when location updates are received
+- Called when location updates are received
 
-    -   Receives a Position.Info object
+- Receives a Position.Info object
 
 
 
@@ -453,7 +453,7 @@ function onPosition(info) {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -633,18 +633,18 @@ function onPosition(info) {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     Thrown if :acquisitionType is invalid, if a specific CONSTELLATION\_\* value is not supported by a device, or if an invalid combination of constellation values are specified.
 
 
 ### **getInfo()** as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
-Get the current [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/).
+获取当前 [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)。
 
 Using this API requires enabling the Positioning Permission. This is useful for retrieving the current position info either on demand or periodically within a [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/).
 
@@ -667,7 +667,7 @@ function timerCallback() {
 }
 ```
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -847,11 +847,11 @@ function timerCallback() {
 
 Returns:
 
--   [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
+- [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **hasConfigurationSupport(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -859,12 +859,12 @@ Determines if the device supports a requested GPS configuration
 
 Parameters:
 
--   config — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
+- config — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 
     A CONFIGURATION\_\* enum value specifying what configuration to enable. Only available with ConnectIQ 3.3.6 and later.
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -993,7 +993,7 @@ Parameters:
 
 Since:
 
-API Level 3.3.6
+API 级别 3.3.6
 
 ### **parse(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module))** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -1003,11 +1003,11 @@ The input String must be in one of the four formats described by the [Position.G
 
 Parameters:
 
--   string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The String to parse
 
--   format — ([Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) —
+- format — ([Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) —
 
     A Position.GEO\_\* value
 
@@ -1024,11 +1024,11 @@ System.println(myLocation.toRadians()); // [0.678168, -1.654589]
 
 Returns:
 
--   [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
+- [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     A Location object representing the position described by the input String
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

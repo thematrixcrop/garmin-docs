@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
+- [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class that provides a set of callback methods to handle the different burst transmission scenarios in the Ant SDK.
 
@@ -59,28 +59,28 @@ class MyBurstListener extends Ant.BurstListener {
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**onReceiveComplete**](#onReceiveComplete-instance_function)(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
+- [**onReceiveComplete**](#onReceiveComplete-instance_function)(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
 
     Callback when a burst reception completes successfully.
 
--   [**onReceiveFail**](#onReceiveFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
+- [**onReceiveFail**](#onReceiveFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
 
     Callback when a burst reception fails over the air.
 
--   [**onTransmitComplete**](#onTransmitComplete-instance_function)() as **Void**
+- [**onTransmitComplete**](#onTransmitComplete-instance_function)() as **Void**
 
     Callback when a burst transmission completes successfully.
 
--   [**onTransmitFail**](#onTransmitFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
+- [**onTransmitFail**](#onTransmitFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
 
     Callback when a burst transmission fails over the air.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **onReceiveComplete(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
 
@@ -88,19 +88,19 @@ Callback when a burst reception completes successfully
 
 Parameters:
 
--   burstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
+- burstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
     The BurstPayload received
 
 
-See Also:
+另见：
 
--   [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
+- [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onReceiveFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
 
@@ -108,14 +108,14 @@ Callback when a burst reception fails over the air
 
 Parameters:
 
--   errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
+- errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
     The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onTransmitComplete()** as **Void**
 
@@ -123,7 +123,7 @@ Callback when a burst transmission completes successfully
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **onTransmitFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
 
@@ -131,11 +131,11 @@ Callback when a burst transmission fails over the air
 
 Parameters:
 
--   errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
+- errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
     The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

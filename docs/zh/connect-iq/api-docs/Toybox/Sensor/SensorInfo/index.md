@@ -7,59 +7,59 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)
+- [Toybox.Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A class describing a Sensor
 
-The SensorInfo 提供访问 the attributes of a Sensor.
+The SensorInfo provides access to the attributes of a Sensor.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**data**](#data-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
+- [**data**](#data-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
     The Sensor-specific data A dictionary of sensor-specific attributes.
 
--   [**enabled**](#enabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**enabled**](#enabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     The Sensor enabled flag.
 
--   [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The Sensor manufacturer.
 
--   [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     The Sensor name.
 
--   [**partNumber**](#partNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**partNumber**](#partNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The Sensor part number.
 
--   [**softwareVersion**](#softwareVersion-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**softwareVersion**](#softwareVersion-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The Sensor software version.
 
--   [**technology**](#technology-var) as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
+- [**technology**](#technology-var) as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
 
     The Sensor technology The technology used to communicate with this sensor.
 
--   [**type**](#type-var) as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
+- [**type**](#type-var) as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
 
     The Sensor type.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
@@ -67,26 +67,26 @@ The Sensor-specific data
 
 A dictionary of sensor-specific attributes. Currently supported attributes include:
 
--   `:bleAddress` - The mac address of the BLE sensor (e.g., 01:02:03:04:05:06) as a [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), if available.
+- `:bleAddress` - The mac address of the BLE sensor (e.g., 01:02:03:04:05:06) as a [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), if available.
 
--   `:antSerialNumber` - The 20-bit ANT sensor serial number as a [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- `:antSerialNumber` - The 20-bit ANT sensor serial number as a [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
--   `:bleScanResult` - The scanresult of a discovered BLE device as a [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/).
+- `:bleScanResult` - The scanresult of a discovered BLE device as a [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/).
 
--   `:antMessage` - The ANT message of a discovered ANT device as a [Message](/connect-iq/api-docs/Toybox/Ant/Message/)
+- `:antMessage` - The ANT message of a discovered ANT device as a [Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
-Note:
+注意：
 
 `:bleScanResult` and `:antMessage` are used for native sensor pairing process only.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
+- [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 ### var enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -96,11 +96,11 @@ An indicator of whether or not the sensor is enabled for pairing.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 ### var manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -110,11 +110,11 @@ The manufacturer id of the sensor. May be `null`.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -124,11 +124,11 @@ The name of the sensor.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 ### var partNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -138,11 +138,11 @@ The part number the sensor. May be `null`.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var softwareVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -152,11 +152,11 @@ The software version of the sensor. May be `null`.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var technology as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
 
@@ -166,11 +166,11 @@ The technology used to communicate with this sensor.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module) —
+- [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module) —
 
     The sensor type as a Sensor.SENSOR\_TECHNOLOGY\_\*
 
@@ -183,10 +183,10 @@ The type of the sensor.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) —
+- [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) —
 
     The sensor type as a Sensor.SENSOR\_\*

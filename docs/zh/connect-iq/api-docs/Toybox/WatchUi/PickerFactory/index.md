@@ -7,48 +7,48 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
+- [Toybox.WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Create a PickerFactory.
 
 A PickerFactory is used to specify which objects will be displayed by a [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
+- [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 
-Note:
+注意：
 
 See the Picker sample distributed with the SDK for an example of the use of the PickerFactory class
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -222,22 +222,22 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getDrawable**](#getDrawable-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), isSelected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
+- [**getDrawable**](#getDrawable-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), isSelected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
     Generate a Drawable instance for an item.
 
--   [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the number of items in the PickerFactory.
 
--   [**getValue**](#getValue-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
+- [**getValue**](#getValue-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
     Return value for an item.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getDrawable(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), isSelected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -245,25 +245,25 @@ Generate a Drawable instance for an item.
 
 Parameters:
 
--   item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The item index
 
--   isSelected — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
+- isSelected — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     `true` if the current item is the selected item, otherwise `false`
 
 
 Returns:
 
--   [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
+- [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
     The Drawable object to render
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **getSize()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -271,11 +271,11 @@ Get the number of items in the PickerFactory.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **getValue(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -283,18 +283,18 @@ Return value for an item.
 
 Parameters:
 
--   item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The item index
 
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     The item's value
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0

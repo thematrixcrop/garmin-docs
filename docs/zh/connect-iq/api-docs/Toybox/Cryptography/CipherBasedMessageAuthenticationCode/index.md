@@ -7,29 +7,29 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.CipherBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode/)
+- [Toybox.Cryptography.CipherBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Cipher-Based Message Authentication Code (CMAC) object.
 
-A CipherBasedMessageAuthenticationCode is an object that 可用于 compute a message authentication code using the CMAC algorithm.
+A CipherBasedMessageAuthenticationCode is an object that can be used to compute a message authentication code using the CMAC algorithm.
 
-## See Also:
+## 另见：
 
--   [http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38b.pdf](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38b.pdf)
+- [http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38b.pdf](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38b.pdf)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -186,39 +186,39 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**digest**](#digest-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**digest**](#digest-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Return the digest of the authentication code.
+    返回认证码的摘要。
 
--   [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
+- [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
     Constructor.
 
--   [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
+- [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
     Continue the computation of the CMAC by consuming the next chunk of data.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **digest()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Return the digest of the authentication code.
+返回认证码的摘要。
 
-The state of the object is reset and 可用于 compute a new authentication code with the same options.
+The state of the object is reset and can be used to compute a new authentication code with the same options.
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     The computed message authentication code in network byte order
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })**
 
@@ -226,30 +226,30 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
-    -   :algorithm — ([Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module)) —
+- :algorithm — ([Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module)) —
 
         A [CIPHER\_\*](/connect-iq/api-docs/Toybox/Cryptography/) value specifying the encryption algorithm used for this CMAC computation; CIPHER\_AES128 is the only supported algorithm in Connect IQ 3.x. (required)
 
-    -   :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
         The secret key used by selected cipher algorithm, which must be the appropriate length for chosen encryption type (required)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if the specified algorithm is not supported
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided for the `:key` option, if a type other than [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) is provided for the `:algorithm` option, or if either option is not provided
 
@@ -258,21 +258,21 @@ Throws:
 
 Continue the computation of the CMAC by consuming the next chunk of data.
 
-Repeated calls are equivalent to a single call with the concatenation of all the arguments.
+重复调用等价于用所有参数拼接后调用一次。
 
 Parameters:
 
--   message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    The next chunk of the message being hashed
+    待哈希消息的下一块数据
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided
+    若提供 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 以外的类型则抛出

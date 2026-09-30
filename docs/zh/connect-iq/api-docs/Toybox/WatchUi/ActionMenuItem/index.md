@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)
+- [Toybox.WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Class that represents an action menu item.
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -139,64 +139,64 @@ App Types and Runtime Contexts:
 
 :::
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Options**](#Options-named_type) as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
+- [**Options**](#Options-named_type) as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
+- [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Get a MenuItem identifier.
+    获取 MenuItem 标识符。
 
--   [**getLabel**](#getLabel-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**getLabel**](#getLabel-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Get a MenuItem label.
+    获取 MenuItem 标签。
 
--   [**initialize**](#initialize-instance_function)(options as [ActionMenuItem.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/#Options-named_type), identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
+- [**initialize**](#initialize-instance_function)(options as [ActionMenuItem.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/#Options-named_type), identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
 
     Constructor.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Options** as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getId()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Get a MenuItem identifier.
+获取 MenuItem 标识符。
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     The identifier for the MenuItem
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **getLabel()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Get a MenuItem label.
+获取 MenuItem 标签。
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The text label for the MenuItem
+    MenuItem 的文本标签
 
 
 Since:
 
-API Level 3.4.2
+API 级别 3.4.2
 
 ### **initialize(options as [ActionMenuItem.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/#Options-named_type), identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)**
 
@@ -204,19 +204,19 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options.
+    选项字典。
 
-    -   :label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
+- :label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
         label string or string ResourceId for the MenuItem
 
--   identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The identifier for this MenuItem
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0

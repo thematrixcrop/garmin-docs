@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
+- [Toybox.AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Class that stores current status information about a connected derailleur
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -124,34 +124,34 @@ API Level 3.1.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**gearIndex**](#gearIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**gearIndex**](#gearIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Current gear index (for front derailleur 0 - 6, [Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = Unknown gear index / Error) (for rear derailleur 0 - 30, [Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = Unknown gear index / Error).
 
--   [**gearMax**](#gearMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**gearMax**](#gearMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Number of gears installed (1 - 7, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error) (1 - 31, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error).
 
--   [**gearSize**](#gearSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**gearSize**](#gearSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Current gear size (number of teeth, 0 - 255).
 
--   [**invalidInboardShiftCount**](#invalidInboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**invalidInboardShiftCount**](#invalidInboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Number of invalid inboard shifts (0 - 255).
 
--   [**invalidOutboardShiftCount**](#invalidOutboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**invalidOutboardShiftCount**](#invalidOutboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Number of invalid outboard shifts (0 - 255).
 
--   [**shiftFailureCount**](#shiftFailureCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**shiftFailureCount**](#shiftFailureCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Number of shift failures (0 - 255).
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var gearIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -159,11 +159,11 @@ Current gear index (for front derailleur 0 - 6, [Toybox::AntPlus::FRONT\_GEAR\_I
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var gearMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -171,11 +171,11 @@ Number of gears installed (1 - 7, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connec
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var gearSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -183,11 +183,11 @@ Current gear size (number of teeth, 0 - 255)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var invalidInboardShiftCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -195,11 +195,11 @@ Number of invalid inboard shifts (0 - 255)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var invalidOutboardShiftCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -207,11 +207,11 @@ Number of invalid outboard shifts (0 - 255)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var shiftFailureCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -219,8 +219,8 @@ Number of shift failures (0 - 255)
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

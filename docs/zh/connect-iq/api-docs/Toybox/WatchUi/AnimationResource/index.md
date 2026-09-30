@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
+- [Toybox.WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an animation resource.
 
@@ -22,9 +22,9 @@ AnimationResource objects are returned by the [loadResource()](/connect-iq/api-d
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -154,34 +154,34 @@ API Level 3.1.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getColorDepth**](#getColorDepth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getColorDepth**](#getColorDepth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the color depth in terms of bit/pixel of the animation resource.
 
--   [**getFrameRate**](#getFrameRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getFrameRate**](#getFrameRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the target frame rate of an animation resource.
 
--   [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the height of an animation resource.
 
--   [**getNumberOfFrames**](#getNumberOfFrames-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getNumberOfFrames**](#getNumberOfFrames-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the number of frames of an animation resource.
 
--   [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get the width of an animation resource.
 
--   [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
     Get info about an animation resource as a String.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getColorDepth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -189,14 +189,14 @@ Get the color depth in terms of bit/pixel of the animation resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Color depth in terms of bit/pixel
 
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **getFrameRate()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -204,14 +204,14 @@ Get the target frame rate of an animation resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Frame rate of the animation in seconds
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -219,14 +219,14 @@ Get the height of an animation resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Height of the animation in pixels
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getNumberOfFrames()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -234,14 +234,14 @@ Get the number of frames of an animation resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Number of frames
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -249,14 +249,14 @@ Get the width of an animation resource.
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Width of the animation in pixels
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -266,11 +266,11 @@ The info String is formatted as "Animation X x Y" where "X" is the width of the 
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     A String representation of the AnimationResource object
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0

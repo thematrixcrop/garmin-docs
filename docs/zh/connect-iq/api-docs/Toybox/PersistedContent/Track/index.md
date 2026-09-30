@@ -7,27 +7,27 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)
+- [Toybox.PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A saved Track on the device in .GPX format.
 
-## See Also:
+## 另见：
 
--   [PersistedContent.getTracks()](/connect-iq/api-docs/Toybox/PersistedContent/#getTracks-instance_function)
+- [PersistedContent.getTracks()](/connect-iq/api-docs/Toybox/PersistedContent/#getTracks-instance_function)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   GPSMAP® 66s / 66i / 66sr / 66st
 -   GPSMAP® 67 / 67i
@@ -38,56 +38,56 @@ API Level 2.2.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getId**](#getId-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getId**](#getId-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get a unique serializable id.
+    获取唯一的可序列化 id。
 
--   [**getName**](#getName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
+- [**getName**](#getName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Get a readable name for the content.
+    获取内容的可读名称。
 
--   [**remove**](#remove-instance_function)() as **Void**
+- [**remove**](#remove-instance_function)() as **Void**
 
     Remove a track.
 
--   [**toIntent**](#toIntent-instance_function)() as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
+- [**toIntent**](#toIntent-instance_function)() as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
-    Get a system intent for the content.
+    获取内容的系统 Intent。
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getId()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get a unique serializable id
+获取唯一的可序列化 id
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The unique serializable id
+    唯一的可序列化 id
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **getName()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Get a readable name for the content
+获取内容的可读名称
 
 Returns:
 
--   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
+- [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The readable name
+    可读名称
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
 ### **remove()** as **Void**
 
@@ -95,26 +95,26 @@ Remove a track
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if the given content is not owned by the calling application.
+    若给定内容不属于调用方应用则抛出。
 
 
 ### **toIntent()** as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
-Get a system intent for the content
+获取内容的系统 Intent
 
 Returns:
 
--   [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) —
+- [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) —
 
-    The System.Intent for the content
+    内容的 System.Intent
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

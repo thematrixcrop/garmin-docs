@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/)
+- [Toybox.WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Class that represents an action menu view.
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -139,30 +139,30 @@ App Types and Runtime Contexts:
 
 :::
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Options**](#Options-named_type) as { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
+- [**Options**](#Options-named_type) as { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**addItem**](#addItem-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
+- [**addItem**](#addItem-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
 
     Add Menuitem to an ActionMenu.
 
--   [**initialize**](#initialize-instance_function)(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)
+- [**initialize**](#initialize-instance_function)(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)
 
     Constructor for the ActionMenu.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Options** as { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **addItem(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/))** as **Void**
 
@@ -170,18 +170,18 @@ Add Menuitem to an ActionMenu
 
 Parameters:
 
--   item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
+- item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
     The ActionMenuItem to add to the ActionMenu
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 Throws:
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if item is not an [ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)
 
@@ -192,21 +192,21 @@ Constructor for the ActionMenu.
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Options for the ActionMenu.
 
-    -   :theme — ([WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)) —
+- :theme — ([WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)) —
 
         theme for the action menu UI.
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 Throws:
 
--   ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
+- ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
     If invalid theme is provided

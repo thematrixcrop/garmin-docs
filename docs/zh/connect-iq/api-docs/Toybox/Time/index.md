@@ -3,11 +3,11 @@ title: "Module: Toybox.Time"
 ---
 # Module: Toybox.Time
 
-## Overview
+## 概述
 
-The Time 模块提供 functionality for dealing with times and dates.
+The Time module provides functionality for dealing with times and dates.
 
-There are two main concepts used by Monkey C when working with time: the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations 可用于gether for time calculations in the following ways:
+There are two main concepts used by Monkey C when working with time: the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations can be used together for time calculations in the following ways:
 
 ```
   Expression           Method               Result    Notes
@@ -35,11 +35,11 @@ Date and time formatting in Monkey C is relatively open-ended, providing some fo
   FORMAT_LONG    |  0        0        0      Wed          1    Mar    2017
 ```
 
-## See Also:
+## 另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Example:
@@ -85,104 +85,104 @@ var birthday = Gregorian.moment(options);
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Modules Under Namespace
+## 命名空间下的模块
 
 **Modules:** [Time.Gregorian](/connect-iq/api-docs/Toybox/Time/Gregorian/)
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)
+类：[Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)
 
-## Constant Summary
+## 常量摘要
 
 ### DateFormat
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | FORMAT\_SHORT | 0 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Short formatting is a numerical representation of date/time.
 
- |
+|
 | FORMAT\_MEDIUM | 1 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Medium formatting is a mix of Numbers and Strings depending on which function is called. If formatted as a String, the result is an abbreviated form of the time or date.
 
- |
+|
 | FORMAT\_LONG | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Long formatting is a mix of Numbers and Strings depending on which function is called. If formatted as a String, the result is an abbreviated form of the time or date.
 
- |
+|
 
 ### CurrentTime
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | CURRENT\_TIME\_DEFAULT | 0 |
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 The default system clock, which may be user-modified.
 
- |
+|
 | CURRENT\_TIME\_GPS | 1 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 The clock time based on your current GPS location if a GPS signal is available.
 
- |
+|
 | CURRENT\_TIME\_RTC | 2 |
 
-API Level 3.0.10
+API 级别 3.0.10
 
- |
+|
 
 The system's real-time clock that cannot be overridden by user settings, and can only be updated by trusted sources such as GPS.
 
- |
+|
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCurrentTime**](#getCurrentTime-instance_function)(options as { :currentTimeType as [Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**getCurrentTime**](#getCurrentTime-instance_function)(options as { :currentTimeType as [Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time based on the specified source.
 
--   [**now**](#now-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**now**](#now-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time.
 
--   [**today**](#today-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
+- [**today**](#today-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
     Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for midnight today.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCurrentTime(options as { :currentTimeType as [Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module) })** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -192,27 +192,27 @@ This method behaves the same as [Time.now()](/connect-iq/api-docs/Toybox/Time/#n
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Clock options
 
-    -   :currentTimeType — ([Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module)) —
+- :currentTimeType — ([Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module)) —
 
         A [Time.CURRENT\_TIME\_\*](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const) value, which defaults to [Time.CURRENT\_TIME\_DEFAULT](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const) if no time type is provided
 
 
-See Also:
+另见：
 
--   [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function)
+- [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function)
 
 
 Since:
 
-API Level 3.0.10
+API 级别 3.0.10
 
 Throws:
 
--   ([Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)) —
+- ([Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)) —
 
     Thrown if [Time.CURRENT\_TIME\_RTC](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_RTC-const) is passed as an option and the real-time clock value is not valid, i.e. synced with trusted source such as GPS.
 
@@ -232,21 +232,21 @@ var now = new Time.Moment(Time.now().value()); // UNIX epoch 631148400
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A Moment representing the current moment in time.
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **today()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -263,18 +263,18 @@ var now = new Time.Moment(Time.today().value()); // UNIX epoch 631087200
 
 Returns:
 
--   [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
+- [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     A Moment representing the the beginning of the current day.
 
 
-See Also:
+另见：
 
--   [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
--   [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

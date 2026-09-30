@@ -7,36 +7,36 @@ Inherits:
 
 Toybox.Lang.Exception
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
--   [Toybox.System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)
+- [Toybox.System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 This exception indicates that the app targeted for opening is not installed.
 
-## See Also:
+## 另见：
 
--   [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
+- [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize()**
 
@@ -44,4 +44,4 @@ Constructor
 
 Since:
 
-API Level 2.2.0
+API 级别 2.2.0

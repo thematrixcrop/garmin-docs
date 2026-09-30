@@ -3,29 +3,29 @@ title: "Module: Toybox.Timer"
 ---
 # Module: Toybox.Timer
 
-## Overview
+## 概述
 
 The Timer module allows access to a Timer object.
 
-This Timer 可用于 run code at some point in the future or at a regular interval.
+This Timer can be used to run code at some point in the future or at a regular interval.
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-## Classes Under Namespace
+## 命名空间下的类
 
-**Classes:** [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
+类：[Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)

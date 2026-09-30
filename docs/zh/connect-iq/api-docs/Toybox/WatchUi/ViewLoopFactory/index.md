@@ -7,37 +7,37 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)
+- [Toybox.WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A factory object for view/delegate instances, used by ViewLoop
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -147,29 +147,29 @@ App Types and Runtime Contexts:
 
 :::
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**Delegates**](#Delegates-named_type) as [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
+- [**Delegates**](#Delegates-named_type) as [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
     Delegate types that can be provided by a ViewLoopFactory.
 
--   [**Views**](#Views-named_type) as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [**Views**](#Views-named_type) as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
     View types that can be provided by a ViewLoopFactory.
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Return the number of view/delegate pairs that are managed by this factory.
 
--   [**getView**](#getView-instance_function)(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
+- [**getView**](#getView-instance_function)(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
 
     This function will be called by the system to retrieve a view/delegate pair for the page at the given index.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **Delegates** as [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
@@ -177,7 +177,7 @@ Delegate types that can be provided by a ViewLoopFactory
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **Views** as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
@@ -185,9 +185,9 @@ View types that can be provided by a ViewLoopFactory
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getSize()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -195,41 +195,41 @@ Return the number of view/delegate pairs that are managed by this factory
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     total number of views for this factory
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0
 
 ### **getView(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
 
 This function will be called by the system to retrieve a view/delegate pair for the page at the given index
 
-Note:
+注意：
 
-This method must be overridden in derived classes. If called, this function will cause the application to crash.
+此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
-Note:
+注意：
 
 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) and [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) support added for API version 5.1.0.
 
 Parameters:
 
--   page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     Index for the view/delegate pair
 
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An Array containing a [View](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) and an optional [Delegate](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type).
 
 
 Since:
 
-API Level 3.4.0
+API 级别 3.4.0

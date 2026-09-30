@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
+- [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Method is a class that represents a callback, or a function that can be used as an argument to another function. You can create one using the [method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) call, and invoke the Method using the [invoke()](/connect-iq/api-docs/Toybox/Lang/Method/#invoke-instance_function) method.
 
-## See Also:
+## 另见：
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Timer](/connect-iq/api-docs/Toybox/Timer/)
+- [Toybox.Timer](/connect-iq/api-docs/Toybox/Timer/)
 
--   [Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/)
+- [Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/)
 
 
 Example:
@@ -75,51 +75,51 @@ var elevationIter = sensorIterator(ELEVATION, {:period => 10 });
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     Get a hash code value for a Method.
 
--   [**initialize**](#initialize-instance_function)(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))
+- [**initialize**](#initialize-instance_function)(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))
 
     Method Constructor.
 
--   [**invoke**](#invoke-instance_function)(parameters...) [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [**invoke**](#invoke-instance_function)(parameters...) [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
     Invoke a Method.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 Get a hash code value for a Method. This computes a 32-bit Number that is typically used as an index when placing Objects into a Dictionary. Hash code values have the following characteristics:
 
--   The computed hash code is constant for the lifetime of an Object
+- The computed hash code is constant for the lifetime of an Object
 
--   If two Objects are equal, their hash codes will be equal
+- If two Objects are equal, their hash codes will be equal
 
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     A hash code for the Method
 
 
-See Also:
+另见：
 
--   [Hash Function](https://en.wikipedia.org/wiki/Hash_function)
+- [Hash Function](https://en.wikipedia.org/wiki/Hash_function)
 
--   [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+- [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **initialize(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))**
 
@@ -127,18 +127,18 @@ Method Constructor.
 
 Parameters:
 
--   aClass —
+- aClass —
 
     Classdef of method (e.g. Toybox.SensorHistory) or a class instance.
 
--   aMethod — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
+- aMethod — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     Symbol of class method
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **invoke(parameters...)** [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -146,18 +146,18 @@ Invoke a Method.
 
 Parameters:
 
--   parameters... — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
+- parameters... — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     The parameters required by the invoked Method
 
 
 Returns:
 
--   [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
+- [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     The return value from the invoked Method
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

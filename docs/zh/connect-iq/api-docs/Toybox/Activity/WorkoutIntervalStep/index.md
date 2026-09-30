@@ -7,22 +7,22 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
+- [Toybox.Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 The WorkoutIntervalStep class contains information about the current workout interval step.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -153,22 +153,22 @@ API Level 3.2.0
 
 :::
 
-## Instance Member Summary [collapse](#)
+## 实例成员摘要 [collapse](#)
 
--   [**activeStep**](#activeStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
+- [**activeStep**](#activeStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
     The step data for the active portion of the interval.
 
--   [**repetitionNumber**](#repetitionNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [**repetitionNumber**](#repetitionNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
     The repetition number in the interval.
 
--   [**restStep**](#restStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
+- [**restStep**](#restStep-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
     The step data for the rest portion of the interval.
 
 
-## Instance Attribute Details
+## 实例属性详情
 
 ### var activeStep as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
@@ -176,11 +176,11 @@ The step data for the active portion of the interval
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
+- [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
 ### var repetitionNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -188,11 +188,11 @@ The repetition number in the interval
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 ### var restStep as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
@@ -200,8 +200,8 @@ The step data for the rest portion of the interval
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Returns:
 
--   [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
+- [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)

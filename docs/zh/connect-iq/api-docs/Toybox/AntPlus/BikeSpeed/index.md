@@ -7,16 +7,16 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.BikeSpeed](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeed/)
+- [Toybox.AntPlus.BikeSpeed](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeed/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a Bike Speed Device instance.
 
@@ -40,9 +40,9 @@ var speedInfo = bikeSpeed.getSpeedInfo();
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -194,18 +194,18 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getSpeedInfo**](#getSpeedInfo-instance_function)() as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
+- [**getSpeedInfo**](#getSpeedInfo-instance_function)() as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
     getSpeedInfo - Returns the most recent BikeSpeedInfo.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getSpeedInfo()** as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
@@ -213,14 +213,14 @@ getSpeedInfo - Returns the most recent BikeSpeedInfo
 
 Returns:
 
--   [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/) —
+- [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/) —
 
     with current information.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)**
 
@@ -228,11 +228,11 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/)) —
+- listener — ([AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/)) —
 
     The bike speed instance optionally takes an extension of the [BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) class as a parameter. `null` can be passed in instead if the user plans to only poll for data using the [getSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeed/) method.
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

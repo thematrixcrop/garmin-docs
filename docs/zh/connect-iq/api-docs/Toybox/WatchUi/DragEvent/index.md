@@ -7,20 +7,20 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
+- [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 DragEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is a drag interaction with a device's touch screen.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
+- [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
 Example:
@@ -40,24 +40,24 @@ class InputDelegate extends WatchUi.InputDelegate {
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -145,18 +145,18 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
+- [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
     Get the coordinates of a drag event.
 
--   [**getType**](#getType-instance_function)() as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
+- [**getType**](#getType-instance_function)() as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
 
     Get the type of drag event.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getCoordinates()** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
@@ -164,14 +164,14 @@ Get the coordinates of a drag event.
 
 Returns:
 
--   [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
+- [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     An array containing the x and y coordinates of the drag event as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0
 
 ### **getType()** as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
 
@@ -179,11 +179,11 @@ Get the type of drag event.
 
 Returns:
 
--   [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module) —
+- [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module) —
 
-    A [WatchUi.DRAG\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#DRAG_TYPE_START-const) value
+    一个 [WatchUi.DRAG\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#DRAG_TYPE_START-const) 值
 
 
 Since:
 
-API Level 3.3.0
+API 级别 3.3.0

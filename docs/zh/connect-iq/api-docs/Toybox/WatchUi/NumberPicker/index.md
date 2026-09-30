@@ -7,14 +7,14 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.NumberPicker](/connect-iq/api-docs/Toybox/WatchUi/NumberPicker/)
+- [Toybox.WatchUi.NumberPicker](/connect-iq/api-docs/Toybox/WatchUi/NumberPicker/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen number picker.
 
@@ -22,16 +22,16 @@ A NumberPicker is a special View that provides a way to specify numeric values w
 
 The NumberPicker class is limited to the eight specific modes described by the [WatchUi.NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) types enum. There are set minimum and maximum values enforced by the product for each mode, and the initial value of the NumberPicker will be adjusted to fall within these bounds.
 
-**This has been deprecated**
+**此项已弃用**
 
 This class may be removed after System 3.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)
+- [Toybox.WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)
 
 
-Note:
+注意：
 
 The look and feel of a number picker is device-specific.
 
@@ -78,24 +78,24 @@ class MyInputDelegate extends WatchUi.BehaviorDelegate {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S60
 -   Approach® S62
@@ -133,14 +133,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(mode as [WatchUi.NumberPickerMode](/connect-iq/api-docs/Toybox/WatchUi/#NumberPickerMode-module), initialValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))
+- [**initialize**](#initialize-instance_function)(mode as [WatchUi.NumberPickerMode](/connect-iq/api-docs/Toybox/WatchUi/#NumberPickerMode-module), initialValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(mode as [WatchUi.NumberPickerMode](/connect-iq/api-docs/Toybox/WatchUi/#NumberPickerMode-module), initialValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))**
 
@@ -148,15 +148,15 @@ Constructor
 
 Parameters:
 
--   mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The [NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) value for the desired mode
 
--   initialValue — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
+- initialValue — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     The initial value for the NumberPicker, dependent on the specified mode
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0

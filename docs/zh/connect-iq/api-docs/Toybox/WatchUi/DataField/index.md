@@ -7,31 +7,31 @@ Inherits:
 
 Toybox.WatchUi.View
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+- [Toybox.WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
--   [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
+- [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Create a Data Field.
 
 A DataField is a special View that automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) once per second via the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method. A DataField requires the implementation of the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method to handle the incoming Activity info, and otherwise provides a significant amount of flexibility regarding the way the information is displayed. If less complexity is required, consider a [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/).
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)
+- [Toybox.WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)
 
--   [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+- [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
--   [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)
+- [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)
 
 
-Note:
+注意：
 
 The system will call the onUpdate() method inherited from View when a Data Field is displayed by the system. Because compute() and onUpdate() are asynchronous, there is no guarantee that compute() will be called before onUpdate(). For this reason, variables should never be initialized in compute().
 
@@ -81,24 +81,24 @@ class MyHRField extends WatchUi.DataField {
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -274,55 +274,55 @@ App Types and Runtime Contexts:
 
 :::
 
-## Direct Known Subclasses
+## 直接已知子类
 
 [WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)
 
-## Constant Summary
+## 常量摘要
 
 ### Obscurity
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | OBSCURE\_LEFT | 1 |
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Some of the left edge of the device context is obscured
 
- |
+|
 | OBSCURE\_TOP | 2 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Some of the top edge of the device context is obscured
 
- |
+|
 | OBSCURE\_RIGHT | 4 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Some of the right edge of the device context is obscured
 
- |
+|
 | OBSCURE\_BOTTOM | 8 |
 
-API Level 1.0.0
+API 级别 1.0.0
 
- |
+|
 
 Some of the bottom edge of the device context is obscured
 
- |
+|
 
 ### LapTriggerType
 
@@ -330,233 +330,233 @@ Reason for lap creation
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
-| Name | Value | Since | Description |
+| 名称 | 值 | 自 | 说明 |
 | --- | --- | --- | --- |
 | LAP\_TRIGGER\_MANUAL | 0 |
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_TIME | 1 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_DISTANCE | 2 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POSITION\_START | 3 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POSITION\_LAP | 4 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POSITION\_WAYPOINT | 5 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POSITION\_MARKED | 6 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_SESSION\_END | 7 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_FITNESS\_EQUIPMENT | 8 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_HEART\_RATE | 9 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POWER | 10 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_CALORIES | 11 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_PAUSE | 12 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_DOWNHILL\_RUN | 13 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_REP\_COUNTING\_START | 14 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_REP\_COUNTING\_STOP | 15 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_WORKOUT\_STEP\_MANUAL\_RESTART | 16 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_SET\_STOP | 17 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_REP\_STOP | 18 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_POLYLINE | 19 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_EXIT\_CURRENT\_REPEAT | 20 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_WORKOUT\_STEP\_PREVIOUS | 21 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_DEPTH | 22 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_TIMING\_GATE | 23 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 | LAP\_TRIGGER\_WORKOUT\_CANCELLED | 24 |
 
-API Level 5.2.2
+API 级别 5.2.2
 
  |  |
 
-## Typedef Summary [collapse](#)
+## 类型定义摘要 [collapse](#)
 
--   [**LapInfoType**](#LapInfoType-named_type) as { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
--   [**RouteTarget**](#RouteTarget-named_type) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
--   [**Workout**](#Workout-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)\> or [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
+- [**LapInfoType**](#LapInfoType-named_type) as { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
+- [**RouteTarget**](#RouteTarget-named_type) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
+- [**Workout**](#Workout-named_type) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)\> or [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))
+- [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))
 
     Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a DataField.
 
--   [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+- [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
     Create a new custom FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
 
--   [**getBackgroundColor**](#getBackgroundColor-instance_function)() as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
+- [**getBackgroundColor**](#getBackgroundColor-instance_function)() as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
 
     Get the current Data Field background color.
 
--   [**getObscurityFlags**](#getObscurityFlags-instance_function)() as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
+- [**getObscurityFlags**](#getObscurityFlags-instance_function)() as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
 
     Get the screen regions that are obscured.
 
--   [**initialize**](#initialize-instance_function)()
+- [**initialize**](#initialize-instance_function)()
 
     Constructor.
 
--   [**onNextMultisportLeg**](#onNextMultisportLeg-instance_function)() as **Void**
+- [**onNextMultisportLeg**](#onNextMultisportLeg-instance_function)() as **Void**
 
     The device has transitioned to the next multisport leg.
 
--   [**onTimerLap**](#onTimerLap-instance_function)() as **Void**
+- [**onTimerLap**](#onTimerLap-instance_function)() as **Void**
 
-    A lap event has occurred.
+    发生了一次计圈事件。
 
--   [**onTimerLap2**](#onTimerLap2-instance_function)(trigger as [DataField.LapInfoType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapInfoType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**onTimerLap2**](#onTimerLap2-instance_function)(trigger as [DataField.LapInfoType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapInfoType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A lap event has occurred.
+    发生了一次计圈事件。
 
--   [**onTimerPause**](#onTimerPause-instance_function)() as **Void**
+- [**onTimerPause**](#onTimerPause-instance_function)() as **Void**
 
     The activity timer is paused.
 
--   [**onTimerReset**](#onTimerReset-instance_function)() as **Void**
+- [**onTimerReset**](#onTimerReset-instance_function)() as **Void**
 
     The current activity has ended.
 
--   [**onTimerResume**](#onTimerResume-instance_function)() as **Void**
+- [**onTimerResume**](#onTimerResume-instance_function)() as **Void**
 
     The activity time has resumed.
 
--   [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
+- [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
 
     A split has ended This method is called when a split is ended in the current activity.
 
--   [**onTimerSplitStart**](#onTimerSplitStart-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
+- [**onTimerSplitStart**](#onTimerSplitStart-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
 
     A split has started This method is called when a split is added to the current activity.
 
--   [**onTimerStart**](#onTimerStart-instance_function)() as **Void**
+- [**onTimerStart**](#onTimerStart-instance_function)() as **Void**
 
     The activity timer has started.
 
--   [**onTimerStop**](#onTimerStop-instance_function)() as **Void**
+- [**onTimerStop**](#onTimerStop-instance_function)() as **Void**
 
     The activity timer has stopped.
 
--   [**onWorkoutStarted**](#onWorkoutStarted-instance_function)() as **Void**
+- [**onWorkoutStarted**](#onWorkoutStarted-instance_function)() as **Void**
 
     The current workout is started.
 
--   [**onWorkoutStepComplete**](#onWorkoutStepComplete-instance_function)() as **Void**
+- [**onWorkoutStepComplete**](#onWorkoutStepComplete-instance_function)() as **Void**
 
     The current workout step is complete.
 
--   [**routeTo**](#routeTo-instance_function)(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**routeTo**](#routeTo-instance_function)(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the activity's destination.
 
--   [**setWorkout**](#setWorkout-instance_function)(workout as [DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**setWorkout**](#setWorkout-instance_function)(workout as [DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Set the activity's workout.
 
--   [**showAlert**](#showAlert-instance_function)(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) as **Void**
+- [**showAlert**](#showAlert-instance_function)(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) as **Void**
 
     Show an alert.
 
 
-## Typedef Details
+## 类型定义详情
 
 ### **LapInfoType** as { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -603,15 +603,15 @@ API Level 1.0.0
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **Workout** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)\> or [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
-## Instance Method Details
+## 实例方法详情
 
 ### **compute(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))**
 
@@ -621,7 +621,7 @@ This method is called once per second and automatically provides [Activity.Info]
 
 Parameters:
 
--   info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
+- info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
 
     The updated Activity.Info object
 
@@ -640,14 +640,14 @@ function compute(info) {
 }
 ```
 
-See Also:
+另见：
 
--   [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
+- [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **createField(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) })** as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
@@ -657,49 +657,49 @@ To record custom activity data to a FIT file, a new [Field](/connect-iq/api-docs
 
 Parameters:
 
--   name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The name of the Field
 
--   fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     The unique Field identifier of the Field
 
--   type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
+- type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
     A [FitContributor.DATA\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_SINT8-const) value representing the type definition of the Field
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Optional parameters for field creation
 
-    -   :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+- :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         The number of elements to add to the field if it is an Array. This is also the maximum combined size of the Strings plus their `null` terminators if the Field type is FitContributor.DATA\_TYPE\_STRING (Default 1).
 
-    -   :mesgType — ([FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module)) —
+- :mesgType — ([FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module)) —
 
         Optional. A [FitContributor.MESG\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_SESSION-const) value representing the Field message type. This defaults to FitContributor.MESG\_TYPE\_RECORD if not specified. Additionally, if FitContributor.MESG\_TYPE\_RECORD is used, the field type cannot be FitContributor.DATA\_TYPE\_STRING.
 
-    -   :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         Optional. A String representing the display units (e.g. "mph", "ft", "Pa")
 
 
 Returns:
 
--   [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
+- [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-See Also:
+另见：
 
--   [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
+- [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
 
--   [The Messages Sheet in Profile.xlsx included with the FIT SDK for native field numbers](https://www.thisisant.com/resources/fit)
+- [The Messages Sheet in Profile.xlsx included with the FIT SDK for native field numbers](https://www.thisisant.com/resources/fit)
 
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **getBackgroundColor()** as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
 
@@ -709,19 +709,19 @@ Some devices provide a global Data Field background color setting. This method w
 
 Returns:
 
--   [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) —
+- [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) —
 
-    A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value
+    一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值
 
 
-See Also:
+另见：
 
--   [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)
+- [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)
 
 
 Since:
 
-API Level 1.2.0
+API 级别 1.2.0
 
 ### **getObscurityFlags()** as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
 
@@ -731,14 +731,14 @@ Non-rectangular screens have certain portions of the screen obscured. For exampl
 
 Returns:
 
--   [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module) —
+- [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module) —
 
-    A [WatchUi.DataField.OBSCURE\_\*](/connect-iq/api-docs/Toybox/WatchUi/DataField/#OBSCURE_LEFT-const) value
+    一个 [WatchUi.DataField.OBSCURE\_\*](/connect-iq/api-docs/Toybox/WatchUi/DataField/#OBSCURE_LEFT-const) 值
 
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **initialize()**
 
@@ -746,7 +746,7 @@ Constructor
 
 Since:
 
-API Level 1.0.0
+API 级别 1.0.0
 
 ### **onNextMultisportLeg()** as **Void**
 
@@ -754,7 +754,7 @@ The device has transitioned to the next multisport leg.
 
 This method is called when the device transitions to the next multisport leg.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -909,15 +909,15 @@ This method is called when the device transitions to the next multisport leg.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **onTimerLap()** as **Void**
 
-A lap event has occurred.
+发生了一次计圈事件。
 
 This method is called when a lap is added to the current activity. A notification is triggered after the lap record has been written to the FIT file.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1086,26 +1086,26 @@ This method is called when a lap is added to the current activity. A notificatio
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onTimerLap2(trigger as [DataField.LapInfoType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapInfoType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A lap event has occurred.
+发生了一次计圈事件。
 
 This method is called when a lap is added to the current activity. A notification is triggered after the lap record has been written to the FIT file.
 
 Parameters:
 
--   trigger —
+- trigger —
 
     A LapInfoType with lap information
 
-    -   :lapTrigger — ([DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module)) —
+- :lapTrigger — ([DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module)) —
 
         Identifier of what triggered the lap
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -1150,12 +1150,12 @@ Parameters:
 
 Returns:
 
--   true if handled, false otherwise. If false is returned then DataField.onTimerLap() will be called.
+- true if handled, false otherwise. If false is returned then DataField.onTimerLap() will be called.
 
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **onTimerPause()** as **Void**
 
@@ -1163,7 +1163,7 @@ The activity timer is paused.
 
 This method is called when the activity timer goes from a running state to a paused state. The paused state occurs when the auto-pause feature pauses the timer. If the activity timer is paused when the app is loaded, this event will run immediately after startup.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1332,7 +1332,7 @@ This method is called when the activity timer goes from a running state to a pau
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onTimerReset()** as **Void**
 
@@ -1340,7 +1340,7 @@ The current activity has ended.
 
 This method is called when the time has stopped and current activity is ended.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1509,7 +1509,7 @@ This method is called when the time has stopped and current activity is ended.
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onTimerResume()** as **Void**
 
@@ -1517,7 +1517,7 @@ The activity time has resumed.
 
 This method is called when the activity timer goes from a paused state to a running state.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1686,7 +1686,7 @@ This method is called when the activity timer goes from a paused state to a runn
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onTimerSplitEnd(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/))** as **Void**
 
@@ -1694,7 +1694,7 @@ A split has ended
 
 This method is called when a split is ended in the current activity. A notification is triggered after the split record has been written to the FIT file.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -1739,7 +1739,7 @@ This method is called when a split is ended in the current activity. A notificat
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **onTimerSplitStart(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/))** as **Void**
 
@@ -1747,7 +1747,7 @@ A split has started
 
 This method is called when a split is added to the current activity. A notification is triggered after the split record has been written to the FIT file.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 2 Pro
 -   Edge® 1040 / 1040 Solar
@@ -1792,7 +1792,7 @@ This method is called when a split is added to the current activity. A notificat
 
 Since:
 
-API Level 5.2.2
+API 级别 5.2.2
 
 ### **onTimerStart()** as **Void**
 
@@ -1800,7 +1800,7 @@ The activity timer has started.
 
 This method is called when the activity timer goes from a stopped state to a started state. If the activity timer is running when the app is loaded, this event will run immediately after startup.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -1969,7 +1969,7 @@ This method is called when the activity timer goes from a stopped state to a sta
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onTimerStop()** as **Void**
 
@@ -1977,7 +1977,7 @@ The activity timer has stopped.
 
 This method is called when the activity timer goes from a running state to a stopped state.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S60
@@ -2146,7 +2146,7 @@ This method is called when the activity timer goes from a running state to a sto
 
 Since:
 
-API Level 1.3.0
+API 级别 1.3.0
 
 ### **onWorkoutStarted()** as **Void**
 
@@ -2154,7 +2154,7 @@ The current workout is started.
 
 This method is called when the a workout is started.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -2290,7 +2290,7 @@ This method is called when the a workout is started.
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 ### **onWorkoutStepComplete()** as **Void**
 
@@ -2298,7 +2298,7 @@ The current workout step is complete.
 
 This method is called when the a workout step has been completed.
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -2453,7 +2453,7 @@ This method is called when the a workout step has been completed.
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **routeTo(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -2463,16 +2463,16 @@ Change the route target of the current activity. Only available to `datafield` a
 
 Parameters:
 
--   target — ([DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type)) —
+- target — ([DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type)) —
 
     the location to route to
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     reserved for future user, can be `null`
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -2522,14 +2522,14 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` of the activity location was set, `false` otherwise
 
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
 ### **setWorkout(workout as [DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -2537,7 +2537,7 @@ Set the activity's workout.
 
 Change the workout for the current activity. Only available to `datafield` app types and requires the `ActivityControl` permission.
 
-Note:
+注意：
 
 If using a Toybox::Activity:WorkoutStepInfo to set the workout, `WorkoutStepInfo.sport` and `WorkoutStepInfo.subsport` will be ignored and set to the current activity's settings. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutStep:
 
@@ -2545,39 +2545,39 @@ If using a Toybox::Activity:WorkoutStepInfo to set the workout, `WorkoutStepInfo
    * +WorkoutStep.durationType+ can only be set to +Activity.WORKOUT_STEP_DURATION_TIME+ or +Activity.WORKOUT_STEP_DURATION_DISTANCE+.
 ```
 
--   For `Activity.WORKOUT_STEP_DURATION_TIME`, `WorkoutStep.durationValue` is in seconds.
+- For `Activity.WORKOUT_STEP_DURATION_TIME`, `WorkoutStep.durationValue` is in seconds.
 
--   For `Activity.WORKOUT_STEP_DURATION_DISTANCE`, `WorkoutStep.durationValue` is in meters.
+- For `Activity.WORKOUT_STEP_DURATION_DISTANCE`, `WorkoutStep.durationValue` is in meters.
 
--   The values of `WorkoutStep.targetValueLow` and `WorkoutStep.targetValueHigh` depends on the value of `WorkoutStep.targetType`. See the FIT SDK for more details. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutIntervalStep:
+- The values of `WorkoutStep.targetValueLow` and `WorkoutStep.targetValueHigh` depends on the value of `WorkoutStep.targetType`. See the FIT SDK for more details. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutIntervalStep:
 
--   `WorkoutIntervalStep.repetitionNumber` is the number of times to repeat the interval.
+- `WorkoutIntervalStep.repetitionNumber` is the number of times to repeat the interval.
 
--   The `WorkoutIntervalStep.activeStep` will occur first, followed by `WorkoutIntervalStep.restStep`.
+- The `WorkoutIntervalStep.activeStep` will occur first, followed by `WorkoutIntervalStep.restStep`.
 
--   If the intensity of the step following a `WorkoutIntervalStep` is `Activity.WORKOUT_INTENSITY_COOLDOWN`, the final rest step will be skipped. If using a Toybox::PersistedContent::Workout, note that:
+- If the intensity of the step following a `WorkoutIntervalStep` is `Activity.WORKOUT_INTENSITY_COOLDOWN`, the final rest step will be skipped. If using a Toybox::PersistedContent::Workout, note that:
 
--   The workout's sport must match the current activity.
+- The workout's sport must match the current activity.
 
--   The workout's subsport must either match the current activity or set to generic, all or invalid.
+- The workout's subsport must either match the current activity or set to generic, all or invalid.
 
 
 Parameters:
 
--   workout — ([DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type)) —
+- workout — ([DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type)) —
 
     the workout to start
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     additional information about the workout, can be `null`
 
-    -   :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         the name of the workout (optional)
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -2641,21 +2641,21 @@ Parameters:
 
 Returns:
 
--   [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
+- [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     `true` of the workout was set, `false` otherwise
 
 
-See Also:
+另见：
 
--   [Toybox.Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)
+- [Toybox.Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)
 
--   [FIT SDK](https://developer.garmin.com/fit/overview/)
+- [FIT SDK](https://developer.garmin.com/fit/overview/)
 
 
 Since:
 
-API Level 5.2.0
+API 级别 5.2.0
 
 ### **showAlert(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/))** as **Void**
 
@@ -2663,15 +2663,15 @@ Show an alert.
 
 Parameters:
 
--   alertView — ([WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) —
+- alertView — ([WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) —
 
     View to push
 
-    -   Only [Toybox::WatchUi::DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) is supported for this operation
+- Only [Toybox::WatchUi::DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) is supported for this operation
 
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -2808,14 +2808,14 @@ Parameters:
 
 Since:
 
-API Level 3.2.0
+API 级别 3.2.0
 
 Throws:
 
--   ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
+- ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
     Thrown if called from an app type other than data field
 
--   ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
+- ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
     Thrown if the view type is not [DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)

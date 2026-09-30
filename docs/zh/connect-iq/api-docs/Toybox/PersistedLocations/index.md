@@ -3,33 +3,33 @@ title: "Module: Toybox.PersistedLocations"
 ---
 # Module: Toybox.PersistedLocations
 
-## Overview
+## 概述
 
 Persisted locations allows the saving of a location (waypoint) to a device's location list. This feature is only available on devices that support waypoints.
 
-**This has been deprecated**
+**此项已弃用**
 
 This module may be removed after System 4.
 
-## See Also:
+## 另见：
 
--   [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)
+- [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)
 
 
 Since:
 
-API Level 1.0.2
+API 级别 1.0.2
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Bravo Titanium
 -   D2™ Bravo
@@ -163,48 +163,48 @@ App Types and Runtime Contexts:
 
 :::
 
-Requires Permission:
+需要权限：
 
--   PersistedLocations
+- PersistedLocations
 
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**persistLocation**](#persistLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** } or **Null**) as **Void** deprecated
+- [**persistLocation**](#persistLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** } or **Null**) as **Void** deprecated
 
     Save a location (waypoint) to the device's location list.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **persistLocation(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** } or **Null**)** as **Void**
 
-**This has been deprecated**
+**此项已弃用**
 
-This method may be removed after System 4.
+此方法可能在 System 4 之后移除。
 
 Save a location (waypoint) to the device's location list
 
 Parameters:
 
--   location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
+- location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     Location object to persist
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Dictionary of options, or `null` to accept defaults
 
-    -   :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
         Name to assign to the waypoint. If not specified will be auto-named.
 
 
-See Also:
+另见：
 
--   [PersistedContent.saveWaypoint()](/connect-iq/api-docs/Toybox/PersistedContent/#saveWaypoint-instance_function)
+- [PersistedContent.saveWaypoint()](/connect-iq/api-docs/Toybox/PersistedContent/#saveWaypoint-instance_function)
 
 
 Since:
 
-API Level 1.0.2
+API 级别 1.0.2

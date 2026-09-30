@@ -7,25 +7,25 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
+- [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 A representation of an on-screen text picker.
 
 A TextPicker is a special View that provides a way to specify textual input in an app. A TextPicker is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), and provides a [TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) as the input delegate. A default value can be provided and is displayed as editable text with the cursor placed at the end.
 
-## See Also:
+## 另见：
 
--   [Toybox.WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/)
+- [Toybox.WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/)
 
 
-Note:
+注意：
 
 The look and feel of a text picker is device-specific.
 
@@ -76,24 +76,24 @@ class MyInputDelegate extends WatchUi.InputDelegate {
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0
 
-App Types and Runtime Contexts:
+应用类型与运行时上下文：
 
--   Audio Content Provider
+- 音频内容提供者
 
--   Data Field
+- 数据字段
 
--   Glance
+- 速览
 
--   Watch App
+- 手表应用
 
--   Watch Face
+- 表盘
 
--   Widget
+- 微件
 
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S70 42mm
@@ -249,14 +249,14 @@ App Types and Runtime Contexts:
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**initialize**](#initialize-instance_function)(initialText as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
+- [**initialize**](#initialize-instance_function)(initialText as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **initialize(initialText as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
@@ -264,11 +264,11 @@ Constructor
 
 Parameters:
 
--   initialText — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
+- initialText — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     The initial text for the TextPicker
 
 
 Since:
 
-API Level 1.1.0
+API 级别 1.1.0

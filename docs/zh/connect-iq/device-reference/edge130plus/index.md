@@ -3,183 +3,183 @@ title: "Edge® 130 Plus"
 ---
 # Edge® 130 Plus
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | edge130plus |
-| Screen Shape | rectangle |
-| Screen Size | 230 x 303 |
-| Display Colors | 2 |
-| Touch | False |
-| Buttons | lap, start, up, menu, down |
-| Launcher Icon Size | 35 x 35 |
+| 标识 | edge130plus |
+| 屏幕形状 | rectangle |
+| 屏幕尺寸 | 230 x 303 |
+| 显示颜色 | 2 |
+| 触摸 | False |
+| 按键 | lap, start, up, menu, down |
+| 启动图标尺寸 | 35 x 35 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Background | 32768 | Requires Permission |
-| Data Field | 32768 |  |
+| 后台 | 32768 | 需要权限 |
+| 数据字段 | 32768 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/edge130plus/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 303 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 303 | 0 | False | False | False | False |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/edge130plus/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
-| Field 2 | 0 | 152 | 230 | 151 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
+| 字段 2 | 0 | 152 | 230 | 151 | 0 | False | False | False | False |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/edge130plus/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
-| Field 2 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
+| 字段 2 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/edge130plus/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
-| Field 2 | 0 | 76 | 230 | 151 | 0 | False | False | False | False |
-| Field 3 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
+| 字段 2 | 0 | 76 | 230 | 151 | 0 | False | False | False | False |
+| 字段 3 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
 
-**3 Fields C Layout**
+**3 字段 C 布局**
 
 
 ![3 Fields C](/connect-iq/resources/device-reference/edge130plus/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 101 | 0 | False | False | False | False |
-| Field 2 | 0 | 102 | 230 | 101 | 0 | False | False | False | False |
-| Field 3 | 0 | 204 | 230 | 101 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 101 | 0 | False | False | False | False |
+| 字段 2 | 0 | 102 | 230 | 101 | 0 | False | False | False | False |
+| 字段 3 | 0 | 204 | 230 | 101 | 0 | False | False | False | False |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/edge130plus/layout5.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
-| Field 2 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 4 | 116 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
+| 字段 2 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 4 | 116 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**4 Fields B Layout**
+**4 字段 B 布局**
 
 
 ![4 Fields B](/connect-iq/resources/device-reference/edge130plus/layout6.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
-| Field 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
-| Field 4 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
+| 字段 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
+| 字段 4 | 0 | 228 | 230 | 75 | 0 | False | False | False | False |
 
-**5 Fields A Layout**
+**5 字段 A 布局**
 
 
 ![5 Fields A](/connect-iq/resources/device-reference/edge130plus/layout7.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
-| Field 2 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
-| Field 3 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
-| Field 4 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 5 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 151 | 0 | False | False | False | False |
+| 字段 2 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
+| 字段 3 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
+| 字段 4 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 5 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**5 Fields B Layout**
+**5 字段 B 布局**
 
 
 ![5 Fields B](/connect-iq/resources/device-reference/edge130plus/layout8.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
-| Field 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
-| Field 4 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 5 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
+| 字段 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 152 | 230 | 75 | 0 | False | False | False | False |
+| 字段 4 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 5 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**6 Fields Layout**
+**6 字段布局**
 
 
 ![6 Fields](/connect-iq/resources/device-reference/edge130plus/layout9.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
-| Field 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
-| Field 4 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
-| Field 5 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 6 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
+| 字段 2 | 0 | 76 | 230 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
+| 字段 4 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
+| 字段 5 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 6 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**7 Fields Layout**
+**7 字段布局**
 
 
 ![7 Fields](/connect-iq/resources/device-reference/edge130plus/layout10.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
-| Field 2 | 0 | 76 | 114 | 75 | 0 | False | False | False | False |
-| Field 3 | 115 | 76 | 115 | 75 | 0 | False | False | False | False |
-| Field 4 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
-| Field 5 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
-| Field 6 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 7 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 230 | 75 | 0 | False | False | False | False |
+| 字段 2 | 0 | 76 | 114 | 75 | 0 | False | False | False | False |
+| 字段 3 | 115 | 76 | 115 | 75 | 0 | False | False | False | False |
+| 字段 4 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
+| 字段 5 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
+| 字段 6 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 7 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**8 Fields Layout**
+**8 字段布局**
 
 
 ![8 Fields](/connect-iq/resources/device-reference/edge130plus/layout11.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 114 | 75 | 0 | False | False | False | False |
-| Field 2 | 115 | 0 | 115 | 75 | 0 | False | False | False | False |
-| Field 3 | 0 | 76 | 114 | 75 | 0 | False | False | False | False |
-| Field 4 | 115 | 76 | 115 | 75 | 0 | False | False | False | False |
-| Field 5 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
-| Field 6 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
-| Field 7 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
-| Field 8 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
+| 字段 1 | 0 | 0 | 114 | 75 | 0 | False | False | False | False |
+| 字段 2 | 115 | 0 | 115 | 75 | 0 | False | False | False | False |
+| 字段 3 | 0 | 76 | 114 | 75 | 0 | False | False | False | False |
+| 字段 4 | 115 | 76 | 115 | 75 | 0 | False | False | False | False |
+| 字段 5 | 0 | 152 | 114 | 75 | 0 | False | False | False | False |
+| 字段 6 | 115 | 152 | 115 | 75 | 0 | False | False | False | False |
+| 字段 7 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
+| 字段 8 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
 **Part Number 006-B3558-00**
 
-*Languages*
+*语言*
 
 ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 | FONT\_TINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_BOLD\_17 |
@@ -195,13 +195,13 @@ ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, rus, slo, 
 
 **Part Number 006-B3813-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 | FONT\_TINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_BOLD\_17 |
@@ -215,13 +215,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_27 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_27 |
@@ -235,13 +235,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_27 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_CHN\_27 |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_27 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_27 |
@@ -255,13 +255,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_27 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_TWN\_27 |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_JP\_BOLD\_27 |
 | FONT\_TINY | Noto Sans CJK JP Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_JP\_BOLD\_27 |
@@ -275,13 +275,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_JP\_BOLD\_27 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_JP\_BOLD\_27 |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_27 |
 | FONT\_TINY | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_27 |
@@ -295,13 +295,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_27 |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK TC Bold | 27 | EDGE130\_NOTO\_SANS\_CJK\_TC\_BOLD\_KOR\_27 |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -315,13 +315,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_BOLD\_27 |
 | FONT\_TINY | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_BOLD\_27 |

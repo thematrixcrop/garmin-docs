@@ -7,27 +7,27 @@ Inherits:
 
 Toybox.Lang.Object
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.Cryptography.Hash](/connect-iq/api-docs/Toybox/Cryptography/Hash/)
+- [Toybox.Cryptography.Hash](/connect-iq/api-docs/Toybox/Cryptography/Hash/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Compute the Hash digest of a message.
 
-## See Also:
+## 另见：
 
--   [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
+- [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   Approach® S50
 -   Approach® S62
@@ -186,41 +186,41 @@ API Level 3.0.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**digest**](#digest-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
+- [**digest**](#digest-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
     Get the current digest of the message that has been hashed.
 
--   [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module) })
+- [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module) })
 
     Constructor.
 
--   [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
+- [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
     Continue hashing of a message by consuming the next chunk of data.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **digest()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
 Get the current digest of the message that has been hashed.
 
-Note:
+注意：
 
-This method resets the state of the Hash object, which 可用于 compute a new hash
+This method resets the state of the Hash object, which can be used to compute a new hash
 
 Returns:
 
--   [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
+- [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     The digest of the message
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module) })**
 
@@ -228,27 +228,27 @@ Constructor
 
 Parameters:
 
--   options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
+- options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options
+    选项字典
 
-    -   :algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
+- :algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
         The type of Hash this object will compute from the [HASH\_\*](/connect-iq/api-docs/Toybox/Cryptography/) enumeration (required)
 
 
-See Also:
+另见：
 
--   [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
+- [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0
 
 Throws:
 
--   ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
+- ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
     Thrown if the algorithm selected is not supported, or if a required option is not provided
 
@@ -257,15 +257,15 @@ Throws:
 
 Continue hashing of a message by consuming the next chunk of data.
 
-Repeated calls are equivalent to a single call with the concatenation of all the arguments.
+重复调用等价于用所有参数拼接后调用一次。
 
 Parameters:
 
--   message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
+- message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    The next chunk of the message being hashed
+    待哈希消息的下一块数据
 
 
 Since:
 
-API Level 3.0.0
+API 级别 3.0.0

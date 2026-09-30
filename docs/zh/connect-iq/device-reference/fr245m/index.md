@@ -3,94 +3,94 @@ title: "Forerunner® 245 Music"
 ---
 # Forerunner® 245 Music
 
-| Attribute | Value |
+| 属性 | 值 |
 | --- | --- |
-| Id | fr245m |
-| Screen Shape | round |
-| Screen Size | 240 x 240 |
-| Display Colors | 64 |
-| Touch | False |
-| Buttons | enter, up, menu, down, esc |
-| Launcher Icon Size | 40 x 40 |
+| 标识 | fr245m |
+| 屏幕形状 | round |
+| 屏幕尺寸 | 240 x 240 |
+| 显示颜色 | 64 |
+| 触摸 | False |
+| 按键 | enter, up, menu, down, esc |
+| 启动图标尺寸 | 40 x 40 |
 
-**App Types**
+**应用类型**
 
-| App Type | Memory Limit | Notes |
+| 应用类型 | 内存上限 | 说明 |
 | --- | --- | --- |
-| Audio Content Provider | 524288 |  |
-| Background | 65536 | Requires Permission |
-| Data Field | 131072 |  |
-| Glance | 32768 | Build as Widget |
-| Watch App | 1310720 |  |
-| Watch Face | 98304 |  |
-| Widget | 1048576 |  |
+| 音频内容提供者 | 524288 |  |
+| 后台 | 65536 | 需要权限 |
+| 数据字段 | 131072 |  |
+| 速览 | 32768 | Build as Widget |
+| 手表应用 | 1310720 |  |
+| 表盘 | 98304 |  |
+| 微件 | 1048576 |  |
 
-**Color Palette**
+**调色板**
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x000055&lt;/td>&lt;td class="entry">0x0000aa&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x005500&lt;/td>&lt;td class="entry">0x005555&lt;/td>&lt;td class="entry">0x0055aa&lt;/td>&lt;td class="entry">0x0055ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x00aa00&lt;/td>&lt;td class="entry">0x00aa55&lt;/td>&lt;td class="entry">0x00aaaa&lt;/td>&lt;td class="entry">0x00aaff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ff55&lt;/td>&lt;td class="entry">0x00ffaa&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x550000&lt;/td>&lt;td class="entry">0x550055&lt;/td>&lt;td class="entry">0x5500aa&lt;/td>&lt;td class="entry">0x5500ff&lt;/td>&lt;td class="entry">0x555500&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0x5555aa&lt;/td>&lt;td class="entry">0x5555ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x55aa00&lt;/td>&lt;td class="entry">0x55aa55&lt;/td>&lt;td class="entry">0x55aaaa&lt;/td>&lt;td class="entry">0x55aaff&lt;/td>&lt;td class="entry">0x55ff00&lt;/td>&lt;td class="entry">0x55ff55&lt;/td>&lt;td class="entry">0x55ffaa&lt;/td>&lt;td class="entry">0x55ffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaa0000&lt;/td>&lt;td class="entry">0xaa0055&lt;/td>&lt;td class="entry">0xaa00aa&lt;/td>&lt;td class="entry">0xaa00ff&lt;/td>&lt;td class="entry">0xaa5500&lt;/td>&lt;td class="entry">0xaa5555&lt;/td>&lt;td class="entry">0xaa55aa&lt;/td>&lt;td class="entry">0xaa55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xaaaa00&lt;/td>&lt;td class="entry">0xaaaa55&lt;/td>&lt;td class="entry">0xaaaaaa&lt;/td>&lt;td class="entry">0xaaaaff&lt;/td>&lt;td class="entry">0xaaff00&lt;/td>&lt;td class="entry">0xaaff55&lt;/td>&lt;td class="entry">0xaaffaa&lt;/td>&lt;td class="entry">0xaaffff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff0055&lt;/td>&lt;td class="entry">0xff00aa&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xff5500&lt;/td>&lt;td class="entry">0xff5555&lt;/td>&lt;td class="entry">0xff55aa&lt;/td>&lt;td class="entry">0xff55ff&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xffaa00&lt;/td>&lt;td class="entry">0xffaa55&lt;/td>&lt;td class="entry">0xffaaaa&lt;/td>&lt;td class="entry">0xffaaff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffff55&lt;/td>&lt;td class="entry">0xffffaa&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**1 Field Layout**
+**1 字段布局**
 
 
 ![1 Field](/connect-iq/resources/device-reference/fr245m/layout0.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 240 | 15 | True | True | True | True |
+| 字段 1 | 0 | 0 | 240 | 240 | 15 | True | True | True | True |
 
-**2 Fields Layout**
+**2 字段布局**
 
 
 ![2 Fields](/connect-iq/resources/device-reference/fr245m/layout1.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
-| Field 2 | 0 | 122 | 240 | 119 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 119 | 7 | True | True | True | False |
+| 字段 2 | 0 | 122 | 240 | 119 | 13 | True | True | False | True |
 
-**3 Fields A Layout**
+**3 字段 A 布局**
 
 
 ![3 Fields A](/connect-iq/resources/device-reference/fr245m/layout2.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 76 | 7 | True | True | True | False |
-| Field 2 | 0 | 78 | 240 | 84 | 5 | True | True | False | False |
-| Field 3 | 0 | 164 | 240 | 76 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 76 | 7 | True | True | True | False |
+| 字段 2 | 0 | 78 | 240 | 84 | 5 | True | True | False | False |
+| 字段 3 | 0 | 164 | 240 | 76 | 13 | True | True | False | True |
 
-**3 Fields B Layout**
+**3 字段 B 布局**
 
 
 ![3 Fields B](/connect-iq/resources/device-reference/fr245m/layout3.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 86 | 7 | True | True | True | False |
-| Field 2 | 0 | 86 | 240 | 68 | 5 | True | True | False | False |
-| Field 3 | 0 | 153 | 240 | 86 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 86 | 7 | True | True | True | False |
+| 字段 2 | 0 | 86 | 240 | 68 | 5 | True | True | False | False |
+| 字段 3 | 0 | 153 | 240 | 86 | 13 | True | True | False | True |
 
-**4 Fields A Layout**
+**4 字段 A 布局**
 
 
 ![4 Fields A](/connect-iq/resources/device-reference/fr245m/layout4.svg)
 
-| Name | Left | Top | Width | Height | Obscurity Flags | Obscure Left | Obscure Right | Obscure Top | Obscure Bottom |
+| 名称 | 左 | 上 | 宽 | 高 | 遮挡标志 | 遮挡左侧 | 遮挡右侧 | 遮挡顶部 | 遮挡底部 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Field 1 | 0 | 0 | 240 | 85 | 7 | True | True | True | False |
-| Field 2 | 0 | 87 | 119 | 67 | 1 | True | False | False | False |
-| Field 3 | 121 | 87 | 119 | 67 | 4 | False | True | False | False |
-| Field 4 | 0 | 156 | 240 | 85 | 13 | True | True | False | True |
+| 字段 1 | 0 | 0 | 240 | 85 | 7 | True | True | True | False |
+| 字段 2 | 0 | 87 | 119 | 67 | 1 | True | False | False | False |
+| 字段 3 | 121 | 87 | 119 | 67 | 4 | False | True | False | False |
+| 字段 4 | 0 | 156 | 240 | 85 | 13 | True | True | False | True |
 
 **Part Number 006-B3077-00**
 
-*Languages*
+*语言*
 
 ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, nob, pol, ron, rus, slo, slv, spa, swe
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | FR945\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 26 | FR945\_CDPG\_ROBOTO\_17B |
@@ -115,13 +115,13 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 
 **Part Number 006-B3321-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | FR945\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 26 | FR945\_CDPG\_ROBOTO\_17B |
@@ -144,13 +144,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 22 | FR945\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 29 | FR945\_CDPG\_ROBOTO\_19B |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 | FONT\_TINY | Noto Sans CJK SC Bold | 26 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_26B |
@@ -169,13 +169,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 | FONT\_TINY | Noto Sans CJK SC Bold | 26 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_26B |
@@ -194,13 +194,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 | FONT\_TINY | Noto Sans CJK JP Bold | 26 | NOTO\_SANS\_CJK\_JP\_BOLD\_26B |
@@ -219,13 +219,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 | FONT\_TINY | Noto Sans CJK KR Bold | 26 | NOTO\_SANS\_CJK\_KR\_BOLD\_26B |
@@ -244,13 +244,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -269,13 +269,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_VIET\_19B |
 | FONT\_TINY | Roboto Condensed | 26 | ROBOTO\_CONDENSED\_BOLD\_VIET\_26B |
@@ -296,13 +296,13 @@ vie
 
 **Part Number 006-B3913-00**
 
-*Languages*
+*语言*
 
 eng, ind, zsm
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | FR945\_CDPG\_ROBOTO\_13B |
 | FONT\_TINY | Roboto Condensed | 26 | FR945\_CDPG\_ROBOTO\_17B |
@@ -325,13 +325,13 @@ eng, ind, zsm
 | FONT\_GLANCE | Roboto Condensed | 22 | FR945\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 29 | FR945\_CDPG\_ROBOTO\_19B |
 
-*Languages*
+*语言*
 
 zhs
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 | FONT\_TINY | Noto Sans CJK SC Bold | 26 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_26B |
@@ -350,13 +350,13 @@ zhs
 | FONT\_GLANCE | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_CHN\_19B |
 
-*Languages*
+*语言*
 
 zht
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 | FONT\_TINY | Noto Sans CJK SC Bold | 26 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_26B |
@@ -375,13 +375,13 @@ zht
 | FONT\_GLANCE | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK SC Bold | 19 | NOTO\_SANS\_CJK\_SC\_BOLD\_TWN\_19B |
 
-*Languages*
+*语言*
 
 jpn
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 | FONT\_TINY | Noto Sans CJK JP Bold | 26 | NOTO\_SANS\_CJK\_JP\_BOLD\_26B |
@@ -400,13 +400,13 @@ jpn
 | FONT\_GLANCE | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK JP Bold | 19 | NOTO\_SANS\_CJK\_JP\_BOLD\_19B |
 
-*Languages*
+*语言*
 
 kor
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 | FONT\_TINY | Noto Sans CJK KR Bold | 26 | NOTO\_SANS\_CJK\_KR\_BOLD\_26B |
@@ -425,13 +425,13 @@ kor
 | FONT\_GLANCE | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 | FONT\_GLANCE\_NUMBER | Noto Sans CJK KR Bold | 19 | NOTO\_SANS\_CJK\_KR\_BOLD\_19B |
 
-*Languages*
+*语言*
 
 tha
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_TINY | Vera Sans | 16 | bitstreamVeraSans 16 |
@@ -450,13 +450,13 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-*Languages*
+*语言*
 
 vie
 
-*Fonts*
+*字体*
 
-| Font Symbol | Font Face | Font Size | Font |
+| 字体符号 | 字体 | 字号 | Font |
 | --- | --- | --- | --- |
 | FONT\_XTINY | Roboto Condensed | 19 | ROBOTO\_CONDENSED\_BOLD\_VIET\_19B |
 | FONT\_TINY | Roboto Condensed | 26 | ROBOTO\_CONDENSED\_BOLD\_VIET\_26B |

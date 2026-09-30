@@ -7,24 +7,24 @@ Inherits:
 
 Toybox.AntPlus.Device
 
--   [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [Toybox.Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
--   [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
+- [Toybox.AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)
 
--   [Toybox.AntPlus.Shifting](/connect-iq/api-docs/Toybox/AntPlus/Shifting/)
+- [Toybox.AntPlus.Shifting](/connect-iq/api-docs/Toybox/AntPlus/Shifting/)
 
 
 [show all](#)
 
-## Overview
+## 概述
 
 Represents a shifting device instance
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
-:::details Supported Devices
+:::details 支持的设备
 
 -   D2™ Mach 1
 -   D2™ Mach 2 Pro
@@ -126,18 +126,18 @@ API Level 3.1.0
 
 :::
 
-## Instance Method Summary [collapse](#)
+## 实例方法摘要 [collapse](#)
 
--   [**getShiftingStatus**](#getShiftingStatus-instance_function)() as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
+- [**getShiftingStatus**](#getShiftingStatus-instance_function)() as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
     Get current shifting system status Will not provide status for Shimano shifting systems.
 
--   [**initialize**](#initialize-instance_function)(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)
+- [**initialize**](#initialize-instance_function)(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)
 
     Constructor.
 
 
-## Instance Method Details
+## 实例方法详情
 
 ### **getShiftingStatus()** as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
@@ -145,14 +145,14 @@ Get current shifting system status Will not provide status for Shimano shifting 
 
 Returns:
 
--   [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/) —
+- [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/) —
 
     Current shifting system status
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
 
 ### **initialize(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)**
 
@@ -160,11 +160,11 @@ Constructor
 
 Parameters:
 
--   listener — ([AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)) —
+- listener — ([AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)) —
 
     An extension of the ShiftingListener class.
 
 
 Since:
 
-API Level 3.1.0
+API 级别 3.1.0
