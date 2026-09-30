@@ -139,7 +139,7 @@ title: "fēnix® 7 Pro - Solar Edition (no Wi-Fi)"
 | 字段 5 | 131 | 131 | 129 | 64 | 4 | False | True | False | False |
 | 字段 6 | 0 | 196 | 260 | 64 | 13 | True | True | False | True |
 
-**Part Number 006-B4595-00**
+**部件号 006-B4595-00**
 
 *语言*
 

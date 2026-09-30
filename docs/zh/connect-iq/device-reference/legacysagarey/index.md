@@ -70,7 +70,7 @@ title: "Rey™"
 | 字段 3 | 110 | 73 | 108 | 71 | 4 | False | True | False | False |
 | 字段 4 | 0 | 146 | 218 | 72 | 13 | True | True | False | True |
 
-**Part Number 006-B3498-00**
+**部件号 006-B3498-00**
 
 *语言*
 
@@ -101,7 +101,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 17 | VIVOACTIVE4S\_ROBOTO\_XTINY\_BOLD |
 
-**Part Number 006-B3537-00**
+**部件号 006-B3537-00**
 
 *语言*
 

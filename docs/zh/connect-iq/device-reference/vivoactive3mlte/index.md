@@ -77,7 +77,7 @@ title: "vívoactive® 3 Music LTE"
 | 字段 1 | 0 | 50 | 240 | 69 | 5 | True | True | False | False |
 | 字段 2 | 0 | 120 | 240 | 69 | 5 | True | True | False | False |
 
-**Part Number 006-B3066-00**
+**部件号 006-B3066-00**
 
 *语言*
 

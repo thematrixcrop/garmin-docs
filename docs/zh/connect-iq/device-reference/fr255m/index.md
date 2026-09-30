@@ -171,7 +171,7 @@ title: "Forerunner® 255 Music"
 | 字段 7 | 131 | 159 | 129 | 54 | 4 | False | True | False | False |
 | 字段 8 | 0 | 216 | 260 | 44 | 13 | True | True | False | True |
 
-**Part Number 006-B3990-00**
+**部件号 006-B3990-00**
 
 *语言*
 

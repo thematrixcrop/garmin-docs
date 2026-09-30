@@ -93,7 +93,7 @@ API 级别 5.1.0
 
 ### NotificationMessageType
 
-Notification message types
+通知消息类型
 
 Since:
 
@@ -130,7 +130,7 @@ The notification action was selected by the user
 - [**NotificationMessageCallback**](#NotificationMessageCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as **Void**
 - [**ShowNotificationOptions**](#ShowNotificationOptions-named_type) as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :body as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type), :actions as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.Action](/connect-iq/api-docs/Toybox/Notifications/#Action-named_type)\>, :dismissPrevious as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
-    Notification options.
+    通知选项。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -174,7 +174,7 @@ API 级别 5.1.0
 
 ### **ShowNotificationOptions** as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :body as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type), :actions as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.Action](/connect-iq/api-docs/Toybox/Notifications/#Action-named_type)\>, :dismissPrevious as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
-Notification options
+通知选项
 
 Since:
 

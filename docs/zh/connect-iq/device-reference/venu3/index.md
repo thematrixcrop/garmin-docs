@@ -67,7 +67,7 @@ title: "Venu® 3"
 | 字段 3 | 244 | 161 | 218 | 127 | 4 | False | True | False | False |
 | 字段 4 | 100 | 290 | 269 | 167 | 13 | True | True | False | True |
 
-**Part Number 006-B4260-00**
+**部件号 006-B4260-00**
 
 *语言*
 

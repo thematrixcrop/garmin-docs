@@ -81,7 +81,7 @@ Parameters:
 
 - type — ([Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module)) —
 
-    One of the [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) enum values
+    [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) 枚举值之一
 
 
 Since:

@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示向 [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) 提供了无效时间，该时间可能无效，原因是：
 
-- Occurs less than five minutes after the last background event occurred
+- 在上次后台事件发生后不到五分钟时发生
 
 - 持续时间少于五分钟
 

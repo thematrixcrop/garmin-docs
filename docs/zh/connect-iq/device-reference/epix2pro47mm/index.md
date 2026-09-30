@@ -171,7 +171,7 @@ title: "epix™ Pro (Gen 2) 47mm / quatix® 7 Pro"
 | 字段 7 | 209 | 253 | 207 | 87 | 4 | False | True | False | False |
 | 字段 8 | 0 | 342 | 416 | 74 | 13 | True | True | False | True |
 
-**Part Number 006-B4313-00**
+**部件号 006-B4313-00**
 
 *语言*
 

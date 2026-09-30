@@ -69,7 +69,7 @@ title: "Forerunner® 735xt"
 | 字段 3 | 109 | 57 | 107 | 66 | 4 | False | True | False | False |
 | 字段 4 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
 
-**Part Number 006-B2158-00**
+**部件号 006-B2158-00**
 
 *语言*
 
@@ -89,7 +89,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, 
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-**Part Number 006-B2533-00**
+**部件号 006-B2533-00**
 
 *语言*
 
@@ -181,7 +181,7 @@ tha
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-**Part Number 006-B2534-00**
+**部件号 006-B2534-00**
 
 *语言*
 

@@ -171,7 +171,7 @@ title: "Enduro™ 3"
 | 字段 7 | 141 | 171 | 139 | 58 | 4 | False | True | False | False |
 | 字段 8 | 0 | 232 | 280 | 48 | 13 | True | True | False | True |
 
-**Part Number 006-B4575-00**
+**部件号 006-B4575-00**
 
 *语言*
 

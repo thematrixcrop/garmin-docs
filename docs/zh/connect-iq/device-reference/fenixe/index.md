@@ -171,7 +171,7 @@ title: "fēnix® E"
 | 字段 7 | 209 | 165 | 206 | 86 | 4 | False | True | False | False |
 | 字段 8 | 0 | 344 | 416 | 72 | 13 | True | True | False | True |
 
-**Part Number 006-B4666-00**
+**部件号 006-B4666-00**
 
 *语言*
 

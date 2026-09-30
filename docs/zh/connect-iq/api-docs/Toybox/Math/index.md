@@ -508,7 +508,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Non-negative random number
+    非负随机数
 
 
 Since:

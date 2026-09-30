@@ -67,7 +67,7 @@ title: "Approach® S50"
 | 字段 3 | 203 | 136 | 187 | 109 | 4 | False | True | False | False |
 | 字段 4 | 78 | 247 | 234 | 143 | 13 | True | True | False | True |
 
-**Part Number 006-B4656-00**
+**部件号 006-B4656-00**
 
 *语言*
 

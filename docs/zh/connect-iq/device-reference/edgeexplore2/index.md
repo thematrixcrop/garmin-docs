@@ -223,7 +223,7 @@ title: "Edge® Explore 2"
 | 字段 9 | 0 | 320 | 119 | 80 | 0 | False | False | False | False |
 | 字段 10 | 121 | 320 | 119 | 80 | 0 | False | False | False | False |
 
-**Part Number 006-B4169-00**
+**部件号 006-B4169-00**
 
 *语言*
 

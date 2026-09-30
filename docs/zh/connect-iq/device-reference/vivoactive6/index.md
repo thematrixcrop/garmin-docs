@@ -171,7 +171,7 @@ title: "vívoactive® 6"
 | 字段 7 | 196 | 155 | 193 | 80 | 4 | False | True | False | False |
 | 字段 8 | 0 | 322 | 390 | 68 | 13 | True | True | False | True |
 
-**Part Number 006-B4625-00**
+**部件号 006-B4625-00**
 
 *语言*
 

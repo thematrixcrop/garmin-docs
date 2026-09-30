@@ -81,7 +81,7 @@ title: "Forerunner® 55"
 | 字段 3 | 105 | 76 | 103 | 61 | 4 | False | True | False | False |
 | 字段 4 | 0 | 139 | 208 | 69 | 13 | True | True | False | True |
 
-**Part Number 006-B3869-00**
+**部件号 006-B3869-00**
 
 *语言*
 
@@ -103,7 +103,7 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 | FONT\_GLANCE | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 
-**Part Number 006-B4033-00**
+**部件号 006-B4033-00**
 
 *语言*
 
@@ -245,7 +245,7 @@ tha
 | FONT\_GLANCE | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 22 | 006B386900\_CDPG\_ROBOTO\_13B |
 
-**Part Number 006-B4838-00**
+**部件号 006-B4838-00**
 
 *语言*
 

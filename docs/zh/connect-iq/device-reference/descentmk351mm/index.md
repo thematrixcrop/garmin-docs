@@ -185,7 +185,7 @@ title: "Descent™ Mk3i 51mm"
 | 字段 7 | 228 | 276 | 226 | 96 | 4 | False | True | False | False |
 | 字段 8 | 0 | 373 | 454 | 80 | 13 | True | True | False | True |
 
-**Part Number 006-B4223-00**
+**部件号 006-B4223-00**
 
 *语言*
 

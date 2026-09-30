@@ -67,7 +67,7 @@ title: "vívoactive® 5"
 | 字段 3 | 205 | 142 | 187 | 109 | 4 | False | True | False | False |
 | 字段 4 | 84 | 253 | 226 | 143 | 13 | True | True | False | True |
 
-**Part Number 006-B4426-00**
+**部件号 006-B4426-00**
 
 *语言*
 

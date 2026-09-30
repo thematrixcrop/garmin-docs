@@ -91,7 +91,7 @@ title: "D2™ Bravo Titanium"
 | 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
 | 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**Part Number 006-B2547-00**
+**部件号 006-B2547-00**
 
 *语言*
 

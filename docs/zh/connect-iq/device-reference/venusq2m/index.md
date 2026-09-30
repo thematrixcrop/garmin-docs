@@ -67,7 +67,7 @@ title: "Venu® Sq 2 Music"
 | 字段 3 | 161 | 122 | 159 | 118 | 0 | False | False | False | False |
 | 字段 4 | 0 | 239 | 320 | 121 | 0 | False | False | False | False |
 
-**Part Number 006-B4116-00**
+**部件号 006-B4116-00**
 
 *语言*
 

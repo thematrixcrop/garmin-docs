@@ -171,7 +171,7 @@ title: "fēnix® 8 47mm / 51mm / tactix® 8 47mm / 51mm / quatix® 8 47mm / 51mm
 | 字段 7 | 228 | 277 | 225 | 94 | 4 | False | True | False | False |
 | 字段 8 | 0 | 376 | 454 | 78 | 13 | True | True | False | True |
 
-**Part Number 006-B4536-00**
+**部件号 006-B4536-00**
 
 *语言*
 
@@ -407,7 +407,7 @@ tha
 | RobotoMedium | Roboto | Scalable | Roboto-Medium-Outdoor |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-**Part Number 006-B4775-00**
+**部件号 006-B4775-00**
 
 *语言*
 

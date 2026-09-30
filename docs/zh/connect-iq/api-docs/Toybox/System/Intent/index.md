@@ -105,7 +105,7 @@ Parameters:
 
 - aArgs — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Parameters to pass to the target URI
+    传递给目标 URI 的参数
 
 
 Since:

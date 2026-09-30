@@ -105,7 +105,7 @@ title: "MARQ® Driver"
 | 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
 | 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**Part Number 006-B3246-00**
+**部件号 006-B3246-00**
 
 *语言*
 
@@ -136,7 +136,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 22 | MARQ\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Bionic | 37 | MARQ\_BIONIC\_BOLD\_NUMBER\_18 |
 
-**Part Number 006-B3420-00**
+**部件号 006-B3420-00**
 
 *语言*
 

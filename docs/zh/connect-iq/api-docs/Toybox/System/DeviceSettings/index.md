@@ -256,7 +256,7 @@ Returns:
 
 勿扰设置模式。
 
-Not all devices support Do Not Disturb, so it's a good idea to perform a `has` check when attempting to use this value.
+并非所有设备都支持免打扰，因此尝试使用此值时最好执行 `has` 检查。
 
 Example:
 
@@ -402,7 +402,7 @@ Returns:
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
-    One of two UNIT\_\* constant values:
+    两个 UNIT\_\* 常量值之一：
 
 - UNIT\_METRIC if height is set to display in meters (m)
 

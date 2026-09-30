@@ -171,7 +171,7 @@ title: "Forerunner® 265s"
 | 字段 7 | 181 | 220 | 179 | 76 | 4 | False | True | False | False |
 | 字段 8 | 0 | 300 | 360 | 60 | 13 | True | True | False | True |
 
-**Part Number 006-B4258-00**
+**部件号 006-B4258-00**
 
 *语言*
 

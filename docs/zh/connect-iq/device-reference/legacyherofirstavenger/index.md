@@ -70,7 +70,7 @@ title: "First Avenger"
 | 字段 3 | 131 | 87 | 129 | 85 | 4 | False | True | False | False |
 | 字段 4 | 0 | 174 | 260 | 86 | 13 | True | True | False | True |
 
-**Part Number 006-B3501-00**
+**部件号 006-B3501-00**
 
 *语言*
 
@@ -101,7 +101,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 19 | VIVOACTIVE4\_ROBOTO\_XTINY\_BOLD |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | VIVOACTIVE4\_ROBOTO\_XTINY\_BOLD |
 
-**Part Number 006-B3536-00**
+**部件号 006-B3536-00**
 
 *语言*
 

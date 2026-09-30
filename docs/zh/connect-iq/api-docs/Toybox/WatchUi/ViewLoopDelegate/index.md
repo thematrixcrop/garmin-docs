@@ -172,7 +172,7 @@ Parameters:
 
 - viewLoop — ([WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)) —
 
-    Object that manages the collection of views
+    管理视图集合的 Object
 
 
 Since:

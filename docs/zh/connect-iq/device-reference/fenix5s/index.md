@@ -92,7 +92,7 @@ title: "fēnix® 5S"
 | 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
 | 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**Part Number 006-B2544-00**
+**部件号 006-B2544-00**
 
 *语言*
 
@@ -121,7 +121,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 46 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_46PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 53 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_53PX |
 
-**Part Number 006-B2797-00**
+**部件号 006-B2797-00**
 
 *语言*
 

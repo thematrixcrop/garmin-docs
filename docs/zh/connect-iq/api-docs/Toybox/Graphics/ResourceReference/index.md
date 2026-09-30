@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Object represents a reference for the resource allocated from the graphics memory pool rather than from the app's local memory. The underlying resource object could be temporarily purged from the system memory pool when all `strong` references are destroyed. The memory allocation is performed only when [ResourceReference::get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function) method is invoked.
+Object 表示从图形内存池而非应用本地内存分配的资源的引用。当所有 `strong` 引用都被销毁时，底层资源对象可能会暂时从系统内存池中清除。仅在调用 [ResourceReference::get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function) 方法时执行内存分配。
 
 Since:
 

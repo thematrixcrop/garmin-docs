@@ -207,7 +207,7 @@ title: "GPSMAP® H1 / H1i Plus"
 | 字段 7 | 4 | 305 | 137 | 83 | 0 | False | False | False | False |
 | 字段 8 | 142 | 305 | 137 | 83 | 0 | False | False | False | False |
 
-**Part Number 006-B4552-00**
+**部件号 006-B4552-00**
 
 *语言*
 

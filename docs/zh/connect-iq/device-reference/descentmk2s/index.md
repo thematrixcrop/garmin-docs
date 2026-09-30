@@ -144,7 +144,7 @@ title: "Descent™ Mk2 S"
 | 字段 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
 | 字段 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**Part Number 006-B3542-00**
+**部件号 006-B3542-00**
 
 *语言*
 
@@ -175,7 +175,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 22 | FENIX6\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Bionic | 37 | FENIX6\_BIONIC\_BOLD\_NUMBER\_18 |
 
-**Part Number 006-B3930-00**
+**部件号 006-B3930-00**
 
 *语言*
 

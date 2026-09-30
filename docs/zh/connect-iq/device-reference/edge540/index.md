@@ -223,7 +223,7 @@ title: "Edge® 540 / 540 Solar"
 | 字段 9 | 0 | 256 | 122 | 66 | 0 | False | False | False | False |
 | 字段 10 | 124 | 256 | 122 | 66 | 0 | False | False | False | False |
 
-**Part Number 006-B4061-00**
+**部件号 006-B4061-00**
 
 *语言*
 

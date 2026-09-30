@@ -23,7 +23,7 @@ title: "Garmin Swim™ 2"
 
 &lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0x000000&lt;/td>&lt;td class="entry">0x0000ff&lt;/td>&lt;td class="entry">0x00ff00&lt;/td>&lt;td class="entry">0x00ffff&lt;/td>&lt;td class="entry">0xff0000&lt;/td>&lt;td class="entry">0xff00ff&lt;/td>&lt;td class="entry">0xffff00&lt;/td>&lt;td class="entry">0xffffff&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
-**Part Number 006-B3405-00**
+**部件号 006-B3405-00**
 
 *语言*
 
@@ -43,7 +43,7 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 | FONT\_NUMBER\_HOT | Roboto Black | 90 | FR45\_ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 | FONT\_NUMBER\_THAI\_HOT | Roboto Black | 90 | FR45\_ROBOTO\_BLACK\_NUMBER\_FONT\_50 |
 
-**Part Number 006-B3639-00**
+**部件号 006-B3639-00**
 
 *语言*
 

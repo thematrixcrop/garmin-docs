@@ -671,7 +671,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Optional parameters for field creation
+    字段创建的可选参数
 
 - :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -679,11 +679,11 @@ Parameters:
 
 - :mesgType — ([FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module)) —
 
-        Optional. A [FitContributor.MESG\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_SESSION-const) value representing the Field message type. This defaults to FitContributor.MESG\_TYPE\_RECORD if not specified. Additionally, if FitContributor.MESG\_TYPE\_RECORD is used, the field type cannot be FitContributor.DATA\_TYPE\_STRING.
+        可选。表示 Field 消息类型的 [FitContributor.MESG\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_SESSION-const) 值。如果未指定，默认为 FitContributor.MESG\_TYPE\_RECORD。此外，如果使用 FitContributor.MESG\_TYPE\_RECORD，则字段类型不能为 FitContributor.DATA\_TYPE\_STRING。
 
 - :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        Optional. A String representing the display units (e.g. "mph", "ft", "Pa")
+        可选。表示显示单位的 String（例如 "mph"、"ft"、"Pa"）
 
 
 Returns:
@@ -727,7 +727,7 @@ API 级别 1.2.0
 
 获取被遮挡的屏幕区域。
 
-Non-rectangular screens have certain portions of the screen obscured. For example, a round screen effectively cuts off the corners of a square screen. This method returns a sum of the enumerated values defined by the WatchUi.DataField.OBSCURE\_\* constants that match the obscured screen regions on the device. Use of this method is only valid during the call to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function).
+非矩形屏幕的某些部分会被遮挡。例如，圆形屏幕实际上会截去方形屏幕的角部。此方法返回由 WatchUi.DataField.OBSCURE\_\* 常量定义的枚举值之和，这些值与设备上被遮挡的屏幕区域相匹配。此方法仅可在调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 期间使用。
 
 Returns:
 
@@ -2667,7 +2667,7 @@ Parameters:
 
     要推送的 View
 
-- Only [Toybox::WatchUi::DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) is supported for this operation
+- 此操作仅支持 [Toybox::WatchUi::DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)
 
 
 

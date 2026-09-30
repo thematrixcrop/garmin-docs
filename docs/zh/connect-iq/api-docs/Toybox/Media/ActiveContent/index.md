@@ -18,7 +18,7 @@ Toybox.Media.Content
 
 ## 概述
 
-Pairs a [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) with associated [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) information and allows a playback start position to be set.
+将 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 与关联的 [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) 信息配对，并允许设置播放起始位置。
 
 Since:
 

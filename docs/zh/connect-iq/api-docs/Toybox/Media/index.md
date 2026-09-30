@@ -743,7 +743,7 @@ Parameters:
 
 - :contentType — ([Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module)) —
 
-        One of the [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) values that indicates the type of cached content.
+        [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) 值之一，用于指示缓存内容的类型。
 
 - :shuffle — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 

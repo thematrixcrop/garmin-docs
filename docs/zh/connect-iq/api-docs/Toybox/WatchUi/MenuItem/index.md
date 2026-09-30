@@ -376,7 +376,7 @@ Parameters:
 
 - :alignment — ([MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module)) —
 
-        One of the [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) values that indicates the text alignment for the menu item.
+        [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) 值之一，用于指示菜单项的文本对齐方式。
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 

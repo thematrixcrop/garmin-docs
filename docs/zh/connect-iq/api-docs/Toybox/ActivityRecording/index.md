@@ -1127,7 +1127,7 @@ API 级别 1.0.0
 
 创建一个由调用方确定选项的 [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) 对象。
 
-Only one Session object is allowed to exist at a time. If there is an existing object that has not been closed using the [save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function) or [discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function) methods, this method will return that object instead of creating a new one. On some products running the 1.x virtual machine, creating a Session object requires a large memory allocation. To free this memory, the Session must first be successfully saved or discarded, and then app references to the Session object should be set to `null`.
+一次只能存在一个 Session 对象。如果已有对象尚未使用 [save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function) 或 [discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function) 方法关闭，此方法将返回该对象，而不是创建新对象。在某些运行 1.x 虚拟机的产品上，创建 Session 对象需要大量内存分配。要释放此内存，必须先成功保存或丢弃 Session，然后将应用对 Session 对象的引用设置为 `null`。
 
 Parameters:
 

@@ -76,7 +76,7 @@ title: "Approach® S62"
 | 字段 1 | 0 | 50 | 260 | 79 | 5 | True | True | False | False |
 | 字段 2 | 0 | 131 | 260 | 79 | 5 | True | True | False | False |
 
-**Part Number 006-B3393-00**
+**部件号 006-B3393-00**
 
 *语言*
 
@@ -105,7 +105,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_SYSTEM\_NUMBER\_HOT | Roboto Black | 83 | VIVOACTIVE4\_BOLD\_NUMBER\_FONT\_5 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Roboto Black | 97 | VIVOACTIVE4\_BOLD\_NUMBER\_FONT\_6 |
 
-**Part Number 006-B3700-00**
+**部件号 006-B3700-00**
 
 *语言*
 

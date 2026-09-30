@@ -93,7 +93,7 @@ title: "fēnix® 5X Plus"
 | 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
 | 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**Part Number 006-B3111-00**
+**部件号 006-B3111-00**
 
 *语言*
 
@@ -124,7 +124,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | Roboto Condensed | 26 | FENIX5\_ROBOTOCONDENSEDREGULAR\_26PX |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | FENIX5\_ROBOTOCONDENSEDREGULAR\_26PX |
 
-**Part Number 006-B3135-00**
+**部件号 006-B3135-00**
 
 *语言*
 

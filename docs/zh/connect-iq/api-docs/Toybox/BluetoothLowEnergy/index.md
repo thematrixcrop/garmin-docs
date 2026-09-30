@@ -189,7 +189,7 @@ API 级别 3.1.0
 
 |
 
-Operation Successful
+操作成功
 
 |
 | STATUS\_NOT\_ENOUGH\_RESOURCES | 1 |
@@ -198,7 +198,7 @@ API 级别 3.1.0
 
 |
 
-Operation failed due to lack of resources
+由于资源不足，操作失败
 
 |
 | STATUS\_READ\_FAIL | 12 |
@@ -365,7 +365,7 @@ API 级别 5.1.0
 
 |
 
-Pair the device, bonding may be requested later.
+配对设备，之后可能会请求绑定。
 
 |
 | CONNECTION\_STRATEGY\_SECURE\_PAIR\_BOND | 1 |
@@ -374,7 +374,7 @@ API 级别 5.1.0
 
 |
 
-Pair the device and establish secure bonding. Device may be bonded as part of the pairing process.
+配对设备并建立安全绑定。设备可能会在配对过程中完成绑定。
 
 |
 

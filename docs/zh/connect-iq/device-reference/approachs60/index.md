@@ -57,7 +57,7 @@ title: "Approach® S60"
 | 字段 2 | 0 | 79 | 240 | 82 | 5 | True | True | False | False |
 | 字段 3 | 0 | 163 | 240 | 77 | 13 | True | True | False | True |
 
-**Part Number 006-B2656-00**
+**部件号 006-B2656-00**
 
 *语言*
 
@@ -86,7 +86,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ind, ita, nob, pol, 
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 76 | NOTO\_SANS\_BOLD\_NMBR\_76PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 94 | NOTO\_SANS\_BOLD\_NMBR\_94PX |
 
-**Part Number 006-B2907-00**
+**部件号 006-B2907-00**
 
 *语言*
 

@@ -335,7 +335,7 @@ API 级别 3.1.0
 
 |
 
-Page request sent
+页面请求已发送
 
 |
 | MESSAGE\_TYPE\_COUNT | 2 |
@@ -776,7 +776,7 @@ API 级别 3.0.0
 
 |
 
-No threat
+无威胁
 
 |
 | THREAT\_LEVEL\_VEHICLE\_APPROACHING | 1 |

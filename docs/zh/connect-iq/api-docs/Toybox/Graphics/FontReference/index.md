@@ -18,7 +18,7 @@ Toybox.Graphics.ResourceReference
 
 ## 概述
 
-Object that references the font resource allocated from the system memory pool rather than form the app's local memory.
+引用从系统内存池而非应用本地内存分配的字体资源的 Object。
 
 Since:
 

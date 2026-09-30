@@ -144,7 +144,7 @@ title: "Forerunner® 945"
 | 字段 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
 | 字段 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**Part Number 006-B3113-00**
+**部件号 006-B3113-00**
 
 *语言*
 
@@ -175,7 +175,7 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 | FONT\_GLANCE | Roboto Condensed | 22 | FR945\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 29 | FR945\_CDPG\_ROBOTO\_19B |
 
-**Part Number 006-B3441-00**
+**部件号 006-B3441-00**
 
 *语言*
 

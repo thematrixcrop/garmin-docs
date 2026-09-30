@@ -171,7 +171,7 @@ title: "Venu® 4 41mm"
 | 字段 7 | 196 | 155 | 193 | 80 | 4 | False | True | False | False |
 | 字段 8 | 0 | 322 | 390 | 68 | 13 | True | True | False | True |
 
-**Part Number 006-B4644-00**
+**部件号 006-B4644-00**
 
 *语言*
 

@@ -93,7 +93,7 @@ title: "D2™ Delta"
 | 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
 | 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**Part Number 006-B3197-00**
+**部件号 006-B3197-00**
 
 *语言*
 

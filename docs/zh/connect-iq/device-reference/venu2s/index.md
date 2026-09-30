@@ -67,7 +67,7 @@ title: "Venu® 2S"
 | 字段 3 | 181 | 121 | 179 | 118 | 4 | False | True | False | False |
 | 字段 4 | 0 | 241 | 360 | 119 | 13 | True | True | False | True |
 
-**Part Number 006-B3704-00**
+**部件号 006-B3704-00**
 
 *语言*
 
@@ -98,7 +98,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 37 | 006B370400\_SMALL |
 | FONT\_GLANCE\_NUMBER | Yantramanav | 46 | 006B370400\_NUMBER\_XTINY |
 
-**Part Number 006-B3949-00**
+**部件号 006-B3949-00**
 
 *语言*
 
@@ -274,7 +274,7 @@ tha
 | FONT\_GLANCE | Roboto Condensed | 37 | 006B370400\_SMALL |
 | FONT\_GLANCE\_NUMBER | Yantramanav | 46 | 006B370400\_NUMBER\_XTINY |
 
-**Part Number 006-B4175-00**
+**部件号 006-B4175-00**
 
 *语言*
 
@@ -305,7 +305,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 37 | 006B370400\_SMALL |
 | FONT\_GLANCE\_NUMBER | Yantramanav | 46 | 006B370400\_NUMBER\_XTINY |
 
-**Part Number 006-B4181-00**
+**部件号 006-B4181-00**
 
 *语言*
 

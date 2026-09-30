@@ -158,7 +158,7 @@ title: "GPSMAP® 67 / 67i"
 | 字段 11 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
 | 字段 12 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**Part Number 006-B4336-00**
+**部件号 006-B4336-00**
 
 *语言*
 
@@ -180,7 +180,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-**Part Number 006-B4473-00**
+**部件号 006-B4473-00**
 
 *语言*
 

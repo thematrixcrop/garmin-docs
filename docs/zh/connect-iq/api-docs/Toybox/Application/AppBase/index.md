@@ -188,7 +188,7 @@ API 级别 4.0.0
 
 - [**getTrialDaysRemaining**](#getTrialDaysRemaining-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Override to return the number of days remaining in the trial If a developer wishes to implement time-based app trials, they will need to override this function to return the number of days remaining in the trial.
+    重写以返回试用期剩余天数。如果开发者希望实现基于时间的应用试用，则需要重写此函数以返回试用期剩余天数。
 
 - [**isActive**](#isActive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -1695,7 +1695,7 @@ API 级别 3.1.0
 
 ### **getTrialDaysRemaining()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Override to return the number of days remaining in the trial
+重写以返回试用期剩余天数
 
 如果开发者希望实现基于时间的应用试用，则需要重写此函数，以返回试用剩余天数。应用启动时会调用此函数，以确定试用是否处于活动状态，并向用户提示试用剩余天数。请注意，如果重写 [allowTrialMessage()](/connect-iq/api-docs/Toybox/Application/AppBase/#allowTrialMessage-instance_function) 使其返回 `false`，则不会显示任何通知。
 
@@ -2401,7 +2401,7 @@ Parameters:
 
 Example:
 
-onStart() used with Intent
+与 Intent 一起使用的 onStart()
 
 ```
 function onStart(state) {

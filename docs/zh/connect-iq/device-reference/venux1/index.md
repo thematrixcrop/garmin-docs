@@ -171,7 +171,7 @@ title: "Venu® X1"
 | 字段 7 | 225 | 193 | 222 | 100 | 0 | False | False | False | False |
 | 字段 8 | 0 | 401 | 448 | 85 | 0 | False | False | False | False |
 
-**Part Number 006-B4603-00**
+**部件号 006-B4603-00**
 
 *语言*
 

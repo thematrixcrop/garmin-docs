@@ -91,7 +91,7 @@ title: "fēnix® 3 HR"
 | 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
 | 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**Part Number 006-B2413-00**
+**部件号 006-B2413-00**
 
 *语言*
 
@@ -111,7 +111,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Steelfish Rg | 83 | STEELFISH\_54 |
 | FONT\_NUMBER\_THAI\_HOT | Steelfish Rg | 116 | STEELFISH\_75 |
 
-**Part Number 006-B2473-00**
+**部件号 006-B2473-00**
 
 *语言*
 

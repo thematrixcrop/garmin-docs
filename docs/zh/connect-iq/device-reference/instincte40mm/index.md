@@ -81,7 +81,7 @@ title: "Instinct® E 40mm"
 | 字段 3 | 83 | 62 | 83 | 77 | 0 | False | False | False | False |
 | 字段 4 | 31 | 141 | 104 | 25 | 0 | False | False | False | False |
 
-**Part Number 006-B4583-00**
+**部件号 006-B4583-00**
 
 *语言*
 

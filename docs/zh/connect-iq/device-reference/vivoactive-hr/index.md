@@ -57,7 +57,7 @@ title: "vívoactive® HR"
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 字段 1 | 0 | 0 | 148 | 205 | 0 | False | False | False | False |
 
-**Part Number 006-B2337-00**
+**部件号 006-B2337-00**
 
 *语言*
 
@@ -77,7 +77,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Bebas Neue ttf | 54 | BEBAS\_NEUE\_36BT |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue ttf | 70 | BEBAS\_NEUE\_48BT |
 
-**Part Number 006-B2497-00**
+**部件号 006-B2497-00**
 
 *语言*
 

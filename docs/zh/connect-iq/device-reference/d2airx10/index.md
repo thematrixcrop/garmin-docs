@@ -67,7 +67,7 @@ title: "D2™ Air X10"
 | 字段 3 | 209 | 139 | 207 | 137 | 4 | False | True | False | False |
 | 字段 4 | 0 | 278 | 416 | 138 | 13 | True | True | False | True |
 
-**Part Number 006-B4125-00**
+**部件号 006-B4125-00**
 
 *语言*
 

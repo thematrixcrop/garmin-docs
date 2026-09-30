@@ -92,7 +92,7 @@ title: "fēnix® Chronos"
 | 字段 3 | 0 | 110 | 108 | 108 | 9 | True | False | False | True |
 | 字段 4 | 110 | 110 | 108 | 108 | 12 | False | True | False | True |
 
-**Part Number 006-B2432-00**
+**部件号 006-B2432-00**
 
 *语言*
 
@@ -117,7 +117,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_SYSTEM\_MEDIUM | Roboto Condensed | 31 | FENIX5\_ROBOTOCONDENSEDBOLD\_31PX |
 | FONT\_SYSTEM\_LARGE | Roboto Condensed | 34 | FENIX5\_ROBOTOCONDENSEDBOLD\_34PX |
 
-**Part Number 006-B2675-00**
+**部件号 006-B2675-00**
 
 *语言*
 

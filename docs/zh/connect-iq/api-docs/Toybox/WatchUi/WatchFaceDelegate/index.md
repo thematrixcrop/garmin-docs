@@ -249,7 +249,7 @@ API 级别 4.2.0
 
 发生了一次屏幕点击事件。
 
-Only available in WatchFace config mode. Can be overridden by application to change the selected `complication`, using [WatchFaceDelegate.setSelectedComplication()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#setSelectedComplication-instance_function)
+仅在 WatchFace 配置模式下可用。应用可以使用 [WatchFaceDelegate.setSelectedComplication()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#setSelectedComplication-instance_function) 重写此方法以更改选定的 `complication`
 
 Parameters:
 
@@ -309,7 +309,7 @@ API 级别 5.1.0
 
 已发生表盘配置更改。
 
-Only available in WatchFace config mode, application can call [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to retrieve the current settings.
+仅在 WatchFace 配置模式下可用，应用可以调用 [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) 来检索当前设置。
 
 Parameters:
 

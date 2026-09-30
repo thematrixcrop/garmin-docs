@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-NumberPickerDelegate responds to a NumberPicker selection.
+NumberPickerDelegate 响应 NumberPicker 选择。
 
 This class should be extended to handle the specified number.
 

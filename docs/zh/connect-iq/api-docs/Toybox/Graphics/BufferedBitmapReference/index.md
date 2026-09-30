@@ -18,7 +18,7 @@ Toybox.Graphics.ResourceReference
 
 ## 概述
 
-Object that references the bitmap resource allocated from the graphics memory pool rather than form the app's local memory.
+引用从图形内存池而非应用本地内存分配的位图资源的 Object。
 
 Since:
 

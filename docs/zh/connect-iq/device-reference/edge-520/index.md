@@ -157,7 +157,7 @@ title: "Edge® 520"
 | 字段 9 | 0 | 214 | 99 | 51 | 0 | False | False | False | False |
 | 字段 10 | 101 | 214 | 99 | 51 | 0 | False | False | False | False |
 
-**Part Number 006-B2067-00**
+**部件号 006-B2067-00**
 
 *语言*
 
@@ -177,7 +177,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Garmin | 50 | DEJAVU\_FITNESS\_36 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 
-**Part Number 006-B2260-00**
+**部件号 006-B2260-00**
 
 *语言*
 
@@ -251,7 +251,7 @@ tha
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2261-00**
+**部件号 006-B2261-00**
 
 *语言*
 

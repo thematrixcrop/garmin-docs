@@ -76,7 +76,7 @@ title: "vívoactive® 3 Mercedes-Benz® Collection"
 | 字段 1 | 0 | 50 | 240 | 69 | 5 | True | True | False | False |
 | 字段 2 | 0 | 120 | 240 | 69 | 5 | True | True | False | False |
 
-**Part Number 006-B3473-00**
+**部件号 006-B3473-00**
 
 *语言*
 
@@ -105,7 +105,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ind, ita, nob, pol, 
 | FONT\_SYSTEM\_NUMBER\_HOT | Noto Sans | 76 | NOTO\_SANS\_BOLD\_NMBR\_76PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Noto Sans | 94 | NOTO\_SANS\_BOLD\_NMBR\_94PX |
 
-**Part Number 006-B3477-00**
+**部件号 006-B3477-00**
 
 *语言*
 

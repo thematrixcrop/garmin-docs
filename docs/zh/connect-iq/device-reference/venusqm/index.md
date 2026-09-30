@@ -54,7 +54,7 @@ title: "Venu® Sq. Music Edition"
 | 字段 2 | 12 | 77 | 220 | 86 | 0 | False | False | False | False |
 | 字段 3 | 12 | 163 | 220 | 77 | 0 | False | False | False | False |
 
-**Part Number 006-B3596-00**
+**部件号 006-B3596-00**
 
 *语言*
 
@@ -85,7 +85,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-**Part Number 006-B3599-00**
+**部件号 006-B3599-00**
 
 *语言*
 
@@ -116,7 +116,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-**Part Number 006-B3838-00**
+**部件号 006-B3838-00**
 
 *语言*
 
@@ -292,7 +292,7 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-**Part Number 006-B4119-00**
+**部件号 006-B4119-00**
 
 *语言*
 

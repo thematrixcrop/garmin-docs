@@ -34,6 +34,7 @@ function looksUntranslatable(raw: string): boolean {
   if (/^[A-Za-z][A-Za-z0-9_.]*\s+[+\-*/=]\s+[A-Za-z][A-Za-z0-9_.]*(?:\s+[+\-*/=]\s+[A-Za-z][A-Za-z0-9_.]*)*$/.test(s)) return true;
   if (/^[A-Za-z][A-Za-z0-9_]* — \(.+\)$/.test(s)) return true;
   if (/^[A-Za-z_][A-Za-z0-9_.]*\(parameters\.\.\.\)\s+\{\d+\}$/.test(s)) return true;
+  if (/^[A-Za-z_][A-Za-z0-9_.]*\.\.\. — \(.+\) —$/.test(s)) return true;
   // Garmin product labels and font slots are proper names, not prose.
   if (/^(?:Approach®\s+S\d+(?:\s+\d+mm)?|AutoGNSS(?:\s+\(.+\))?|Auxiliary Font \d+)$/.test(s)) return true;
   return false;

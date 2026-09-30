@@ -791,7 +791,7 @@ API 级别 1.0.0
 
 |
 
-No transition.
+无过渡。
 
 |
 | SLIDE\_LEFT | 1 |
@@ -1314,7 +1314,7 @@ Returns:
 
 - [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) —
 
-    object or `null` if no subscreen is present or if a virtual subscreen is present but not used for normal views.
+    如果不存在子屏幕，或者存在虚拟子屏幕但未用于普通视图，则为 object 或 `null`。
 
 
 Since:

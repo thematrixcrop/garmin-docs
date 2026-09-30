@@ -81,7 +81,7 @@ title: "Instinct® 3 Solar 45mm / 50mm"
 | 字段 3 | 88 | 72 | 88 | 75 | 12 | False | True | False | True |
 | 字段 4 | 33 | 149 | 110 | 27 | 0 | False | False | False | False |
 
-**Part Number 006-B4585-00**
+**部件号 006-B4585-00**
 
 *语言*
 
@@ -203,7 +203,7 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 27 | 006B388800\_0000\_GARMIN\_16 |
 
-**Part Number 006-B4759-00**
+**部件号 006-B4759-00**
 
 *语言*
 

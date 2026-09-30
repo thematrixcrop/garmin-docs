@@ -144,7 +144,7 @@ title: "Forerunner® 945 LTE"
 | 字段 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
 | 字段 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**Part Number 006-B3652-00**
+**部件号 006-B3652-00**
 
 *语言*
 

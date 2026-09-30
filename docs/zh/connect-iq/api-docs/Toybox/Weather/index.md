@@ -677,7 +677,7 @@ Returns:
 
 - [Weather.CurrentConditions](/connect-iq/api-docs/Toybox/Weather/CurrentConditions/) —
 
-    or `null` if no data is available
+    如果没有可用数据，则为 `null`
 
 
 Since:

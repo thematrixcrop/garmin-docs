@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Pairs a [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) with associated [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) information.
+将 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 与关联的 [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) 信息配对。
 
 Since:
 

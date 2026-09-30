@@ -171,7 +171,7 @@ title: "fēnix® 8 Pro 47mm / 51mm / MicroLED / quatix® 8 Pro 47mm / 51mm"
 | 字段 7 | 228 | 277 | 225 | 94 | 4 | False | True | False | False |
 | 字段 8 | 0 | 376 | 454 | 78 | 13 | True | True | False | True |
 
-**Part Number 006-B4631-00**
+**部件号 006-B4631-00**
 
 *语言*
 

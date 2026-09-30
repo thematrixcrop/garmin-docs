@@ -140,7 +140,7 @@ title: "fēnix® 7S"
 | 字段 5 | 121 | 121 | 119 | 59 | 4 | False | True | False | False |
 | 字段 6 | 0 | 181 | 240 | 59 | 13 | True | True | False | True |
 
-**Part Number 006-B3905-00**
+**部件号 006-B3905-00**
 
 *语言*
 
@@ -382,7 +382,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B3908-00**
+**部件号 006-B3908-00**
 
 *语言*
 

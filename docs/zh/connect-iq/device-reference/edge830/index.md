@@ -222,7 +222,7 @@ title: "Edge® 830"
 | 字段 9 | 0 | 257 | 122 | 63 | 0 | False | False | False | False |
 | 字段 10 | 124 | 257 | 122 | 63 | 0 | False | False | False | False |
 
-**Part Number 006-B3122-00**
+**部件号 006-B3122-00**
 
 *语言*
 
@@ -244,7 +244,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_GLANCE | Roboto Condensed | 13 | ROBOTO\_CONDENSED\_13 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 13 | ROBOTO\_CONDENSED\_13 |
 
-**Part Number 006-B3350-00**
+**部件号 006-B3350-00**
 
 *语言*
 

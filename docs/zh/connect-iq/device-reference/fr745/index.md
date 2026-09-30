@@ -82,7 +82,7 @@ title: "Forerunner® 745"
 | 字段 3 | 121 | 87 | 119 | 67 | 4 | False | True | False | False |
 | 字段 4 | 0 | 156 | 240 | 85 | 13 | True | True | False | True |
 
-**Part Number 006-B3589-00**
+**部件号 006-B3589-00**
 
 *语言*
 
@@ -113,7 +113,7 @@ ara, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, lit, 
 | FONT\_GLANCE | Roboto Condensed | 19 | FR945\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | FR945\_CDPG\_ROBOTO\_13B |
 
-**Part Number 006-B3794-00**
+**部件号 006-B3794-00**
 
 *语言*
 

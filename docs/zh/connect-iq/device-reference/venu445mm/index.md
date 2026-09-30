@@ -171,7 +171,7 @@ title: "Venu® 4 45mm / D2™ Air X15"
 | 字段 7 | 228 | 277 | 225 | 94 | 4 | False | True | False | False |
 | 字段 8 | 0 | 376 | 454 | 78 | 13 | True | True | False | True |
 
-**Part Number 006-B4643-00**
+**部件号 006-B4643-00**
 
 *语言*
 
@@ -363,7 +363,7 @@ tha
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 | YantramanavRegular | Yantramanav | Scalable | Yantramanav-Regular |
 
-**Part Number 006-B4944-00**
+**部件号 006-B4944-00**
 
 *语言*
 

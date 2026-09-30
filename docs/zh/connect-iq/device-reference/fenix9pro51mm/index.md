@@ -171,7 +171,7 @@ title: "fēnix® 9 Pro 51mm"
 | 字段 7 | 234 | 185 | 231 | 96 | 4 | False | True | False | False |
 | 字段 8 | 0 | 385 | 466 | 81 | 13 | True | True | False | True |
 
-**Part Number 006-B4954-00**
+**部件号 006-B4954-00**
 
 *语言*
 

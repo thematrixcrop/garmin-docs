@@ -68,7 +68,7 @@ title: "Forerunner® 920XT"
 | 字段 3 | 0 | 77 | 100 | 71 | 0 | False | False | False | False |
 | 字段 4 | 105 | 77 | 100 | 71 | 0 | False | False | False | False |
 
-**Part Number 006-B1765-00**
+**部件号 006-B1765-00**
 
 *语言*
 
@@ -88,7 +88,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Digi | 43 | DIGI\_38 |
 | FONT\_NUMBER\_THAI\_HOT | Digi | 67 | DIGI\_62 |
 
-**Part Number 006-B2130-00**
+**部件号 006-B2130-00**
 
 *语言*
 
@@ -126,7 +126,7 @@ zht
 | FONT\_NUMBER\_HOT | Digi | 43 | DIGI\_38 |
 | FONT\_NUMBER\_THAI\_HOT | Digi | 67 | DIGI\_62 |
 
-**Part Number 006-B2131-00**
+**部件号 006-B2131-00**
 
 *语言*
 
@@ -164,7 +164,7 @@ zhs
 | FONT\_NUMBER\_HOT | Digi | 43 | DIGI\_38 |
 | FONT\_NUMBER\_THAI\_HOT | Digi | 67 | DIGI\_62 |
 
-**Part Number 006-B2132-00**
+**部件号 006-B2132-00**
 
 *语言*
 

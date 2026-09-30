@@ -139,7 +139,7 @@ title: "Instinct® 3 AMOLED 45mm"
 | 字段 5 | 195 | 195 | 194 | 97 | 4 | False | True | False | False |
 | 字段 6 | 0 | 292 | 390 | 97 | 13 | True | True | False | True |
 
-**Part Number 006-B4586-00**
+**部件号 006-B4586-00**
 
 *语言*
 

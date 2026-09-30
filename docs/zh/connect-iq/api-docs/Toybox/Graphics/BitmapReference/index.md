@@ -18,7 +18,7 @@ Toybox.Graphics.ResourceReference
 
 ## 概述
 
-Object that references a bitmap resource allocated from the graphics memory pool
+引用从图形内存池分配的位图资源的 Object
 
 Since:
 

@@ -67,7 +67,7 @@ title: "Venu® 3S"
 | 字段 3 | 209 | 139 | 187 | 109 | 4 | False | True | False | False |
 | 字段 4 | 91 | 250 | 220 | 143 | 13 | True | True | False | True |
 
-**Part Number 006-B4261-00**
+**部件号 006-B4261-00**
 
 *语言*
 

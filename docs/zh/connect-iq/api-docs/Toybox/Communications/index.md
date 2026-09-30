@@ -315,7 +315,7 @@ API 级别 1.0.0
 
 |
 
-No BLE connection is available.
+没有可用的 BLE 连接。
 
 |
 | INVALID\_HTTP\_HEADER\_FIELDS\_IN\_REQUEST | \-200 |

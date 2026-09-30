@@ -222,7 +222,7 @@ title: "Edge® 1030 / Bontrager"
 | 字段 9 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
 | 字段 10 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**Part Number 006-B3095-00**
+**部件号 006-B3095-00**
 
 *语言*
 

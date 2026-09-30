@@ -139,7 +139,7 @@ title: "Forerunner® 255s"
 | 字段 5 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
 | 字段 6 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
 
-**Part Number 006-B3993-00**
+**部件号 006-B3993-00**
 
 *语言*
 

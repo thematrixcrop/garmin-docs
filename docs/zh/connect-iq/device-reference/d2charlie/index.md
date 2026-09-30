@@ -92,7 +92,7 @@ title: "D2™ Charlie"
 | 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
 | 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**Part Number 006-B2819-00**
+**部件号 006-B2819-00**
 
 *语言*
 
@@ -121,7 +121,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ind, ita, nob, pol, 
 | FONT\_SYSTEM\_NUMBER\_HOT | Chronos | 52 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_52PX |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | Chronos | 58 | FENIX5\_CHRONOSSEMIBOLDCONDENSED\_58PX |
 
-**Part Number 006-B2994-00**
+**部件号 006-B2994-00**
 
 *语言*
 

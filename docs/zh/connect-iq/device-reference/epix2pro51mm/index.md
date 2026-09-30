@@ -171,7 +171,7 @@ title: "epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edit
 | 字段 7 | 228 | 276 | 226 | 96 | 4 | False | True | False | False |
 | 字段 8 | 0 | 373 | 454 | 80 | 13 | True | True | False | True |
 
-**Part Number 006-B4314-00**
+**部件号 006-B4314-00**
 
 *语言*
 
@@ -375,7 +375,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B4542-00**
+**部件号 006-B4542-00**
 
 *语言*
 
@@ -579,7 +579,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B4556-00**
+**部件号 006-B4556-00**
 
 *语言*
 

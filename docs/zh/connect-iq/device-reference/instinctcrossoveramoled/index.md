@@ -166,7 +166,7 @@ title: "Instinct® Crossover AMOLED"
 | 字段 5 | 195 | 206 | 195 | 97 | 4 | False | True | False | False |
 | 字段 6 | 0 | 292 | 390 | 68 | 13 | True | True | False | True |
 
-**Part Number 006-B4678-00**
+**部件号 006-B4678-00**
 
 *语言*
 

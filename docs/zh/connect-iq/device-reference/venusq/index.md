@@ -53,7 +53,7 @@ title: "Venu® Sq"
 | 字段 2 | 16 | 79 | 220 | 88 | 0 | False | False | False | False |
 | 字段 3 | 16 | 172 | 220 | 66 | 0 | False | False | False | False |
 
-**Part Number 006-B3600-00**
+**部件号 006-B3600-00**
 
 *语言*
 
@@ -84,7 +84,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-**Part Number 006-B3603-00**
+**部件号 006-B3603-00**
 
 *语言*
 
@@ -115,7 +115,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 26 | 006B360000\_ROBOTO\_MEDIUM\_REG |
 
-**Part Number 006-B3837-00**
+**部件号 006-B3837-00**
 
 *语言*
 
@@ -291,7 +291,7 @@ tha
 | FONT\_GLANCE | Vera Sans | 16 | bitstreamVeraSans 16 |
 | FONT\_GLANCE\_NUMBER | Vera Sans | 16 | bitstreamVeraSans 16 |
 
-**Part Number 006-B4118-00**
+**部件号 006-B4118-00**
 
 *语言*
 

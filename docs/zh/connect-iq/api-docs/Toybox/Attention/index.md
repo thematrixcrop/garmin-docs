@@ -7,7 +7,7 @@ title: "Module: Toybox.Attention"
 
 The Attention module provides the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
 
-Not all devices fully support this module, so `has` checks are recommended. For example, the vivoactive does not have a tone generator and will trigger an error if an app attempts to play sounds.
+并非所有设备都完全支持此模块，因此建议使用 `has` 检查。例如，vivoactive 没有音调生成器，如果应用尝试播放声音，就会触发错误。
 
 Since:
 
@@ -411,7 +411,7 @@ API 级别 3.4.3
 
 The backlight will always respect the backlight timeout settings on the device. Behavior of this feature may also change depending on device settings. For example, if a device is set to activate the back light with key presses, the backlight will toggle on with key presses even if the app is written to turn off the back light with a key press.
 
-On products that use a gesture enabled display, calling this API will suppress the gesture detection for the period that the backlight is on. Calling this repeatedly can hold the display on, but if the product has burn in protection an exception will be thrown if you attempt to keep the display enabled for too long (e.g. over 1 minute).
+对于使用支持手势的显示屏的产品，调用此 API 会在背光开启期间禁止手势检测。反复调用此 API 可以保持显示屏开启，但如果产品具有防烧屏保护功能，尝试让显示屏长时间保持启用状态时将引发异常（例如超过 1 分钟）。
 
 注意：
 
@@ -701,7 +701,7 @@ Parameters:
 
 - :repeatCount — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Number of times to repeat the given tone sequence.
+        重复给定音调序列的次数。
 
 
 Example:

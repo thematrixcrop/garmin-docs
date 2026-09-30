@@ -194,7 +194,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Options for the ActionMenu.
+    ActionMenu 的选项。
 
 - :theme — ([WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)) —
 

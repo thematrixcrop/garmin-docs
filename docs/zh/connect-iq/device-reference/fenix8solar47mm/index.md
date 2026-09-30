@@ -171,7 +171,7 @@ title: "fēnix® 8 Solar 47mm"
 | 字段 7 | 0 | 0 | 260 | 44 | 7 | True | True | True | False |
 | 字段 8 | 0 | 216 | 260 | 44 | 13 | True | True | False | True |
 
-**Part Number 006-B4532-00**
+**部件号 006-B4532-00**
 
 *语言*
 

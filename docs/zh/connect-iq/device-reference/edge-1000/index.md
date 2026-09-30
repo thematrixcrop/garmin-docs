@@ -274,7 +274,7 @@ title: "Edge® 1000 / Explore"
 | 字段 8 | 268 | 81 | 132 | 78 | 0 | False | False | False | False |
 | 字段 9 | 268 | 161 | 132 | 79 | 0 | False | False | False | False |
 
-**Part Number 006-B1836-00**
+**部件号 006-B1836-00**
 
 *语言*
 
@@ -294,7 +294,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2204-00**
+**部件号 006-B2204-00**
 
 *语言*
 
@@ -314,7 +314,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2070-00**
+**部件号 006-B2070-00**
 
 *语言*
 
@@ -352,7 +352,7 @@ zhs, zht
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2052-00**
+**部件号 006-B2052-00**
 
 *语言*
 
@@ -390,7 +390,7 @@ zht
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2053-00**
+**部件号 006-B2053-00**
 
 *语言*
 
@@ -428,7 +428,7 @@ jpn
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2100-00**
+**部件号 006-B2100-00**
 
 *语言*
 
@@ -466,7 +466,7 @@ kor
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2274-00**
+**部件号 006-B2274-00**
 
 *语言*
 

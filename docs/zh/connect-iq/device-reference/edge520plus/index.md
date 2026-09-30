@@ -222,7 +222,7 @@ title: "Edge® 520 Plus"
 | 字段 9 | 0 | 213 | 99 | 52 | 0 | False | False | False | False |
 | 字段 10 | 101 | 213 | 99 | 52 | 0 | False | False | False | False |
 
-**Part Number 006-B3112-00**
+**部件号 006-B3112-00**
 
 *语言*
 
@@ -242,7 +242,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Garmin | 50 | DEJAVU\_FITNESS\_36 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 
-**Part Number 006-B3142-00**
+**部件号 006-B3142-00**
 
 *语言*
 

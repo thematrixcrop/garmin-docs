@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Object is the root object for the Monkey C class hierarchy.
+Object 是 Monkey C 类层次结构的根对象。
 
 Since:
 

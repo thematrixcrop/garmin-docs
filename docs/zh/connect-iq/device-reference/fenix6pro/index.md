@@ -144,7 +144,7 @@ title: "fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 
 | 字段 5 | 131 | 131 | 129 | 64 | 4 | False | True | False | False |
 | 字段 6 | 0 | 196 | 260 | 64 | 13 | True | True | False | True |
 
-**Part Number 006-B3290-00**
+**部件号 006-B3290-00**
 
 *语言*
 
@@ -175,7 +175,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 22 | FENIX6\_CDPG\_ROBOTO\_15B |
 | FONT\_GLANCE\_NUMBER | Bionic | 37 | FENIX6\_BIONIC\_BOLD\_NUMBER\_18 |
 
-**Part Number 006-B3515-00**
+**部件号 006-B3515-00**
 
 *语言*
 
@@ -380,7 +380,7 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 
-**Part Number 006-B3782-00**
+**部件号 006-B3782-00**
 
 *语言*
 
@@ -585,7 +585,7 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 
-**Part Number 006-B3767-00**
+**部件号 006-B3767-00**
 
 *语言*
 
@@ -790,7 +790,7 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | FENIX6\_ROBOTO\_CONDENSED\_BOLD\_VIET\_19 |
 
-**Part Number 006-B3771-00**
+**部件号 006-B3771-00**
 
 *语言*
 

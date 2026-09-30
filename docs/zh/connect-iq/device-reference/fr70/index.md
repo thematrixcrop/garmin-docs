@@ -77,7 +77,7 @@ title: "Forerunner® 70"
 | 字段 3 | 196 | 141 | 193 | 116 | 4 | False | True | False | False |
 | 字段 4 | 0 | 260 | 390 | 130 | 13 | True | True | False | True |
 
-**Part Number 006-B4916-00**
+**部件号 006-B4916-00**
 
 *语言*
 
@@ -259,7 +259,7 @@ tha
 | RobotoItalic | Roboto Wide | Scalable | Roboto-Italic |
 | RobotoRegular | Roboto | Scalable | Roboto-Regular |
 
-**Part Number 006-B5214-00**
+**部件号 006-B5214-00**
 
 *语言*
 

@@ -70,7 +70,7 @@ title: "Instinct® Crossover"
 | 字段 3 | 0 | 89 | 87 | 87 | 9 | True | False | False | True |
 | 字段 4 | 89 | 89 | 87 | 87 | 12 | False | True | False | True |
 
-**Part Number 006-B4155-00**
+**部件号 006-B4155-00**
 
 *语言*
 

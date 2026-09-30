@@ -157,7 +157,7 @@ title: "Edge® Explore"
 | 字段 9 | 0 | 321 | 119 | 79 | 0 | False | False | False | False |
 | 字段 10 | 121 | 321 | 119 | 79 | 0 | False | False | False | False |
 
-**Part Number 006-B3011-00**
+**部件号 006-B3011-00**
 
 *语言*
 

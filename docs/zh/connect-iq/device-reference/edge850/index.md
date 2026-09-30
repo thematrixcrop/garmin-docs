@@ -309,7 +309,7 @@ title: "Edge® 850"
 | 字段 9 | 0 | 480 | 209 | 120 | 0 | False | False | False | False |
 | 字段 10 | 211 | 480 | 209 | 120 | 0 | False | False | False | False |
 
-**Part Number 006-B4634-00**
+**部件号 006-B4634-00**
 
 *语言*
 

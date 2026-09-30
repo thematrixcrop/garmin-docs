@@ -171,7 +171,7 @@ title: "Forerunner® 265"
 | 字段 7 | 209 | 254 | 206 | 86 | 4 | False | True | False | False |
 | 字段 8 | 0 | 344 | 416 | 72 | 13 | True | True | False | True |
 
-**Part Number 006-B4257-00**
+**部件号 006-B4257-00**
 
 *语言*
 

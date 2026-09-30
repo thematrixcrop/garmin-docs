@@ -354,7 +354,7 @@ title: "Edge® MTB"
 | 字段 9 | 121 | 64 | 119 | 62 | 0 | False | False | False | False |
 | 字段 10 | 121 | 0 | 119 | 62 | 0 | False | False | False | False |
 
-**Part Number 006-B4655-00**
+**部件号 006-B4655-00**
 
 *语言*
 

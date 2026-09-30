@@ -282,7 +282,7 @@ December
 
 This is an alternative to [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function) that allows the Duration to be made more easily, using familiar units, which can be handy when building a Duration manually.
 
-Option values are represented as signed 32-bit integers.
+选项值表示为 32 位有符号整数。
 
 Parameters:
 

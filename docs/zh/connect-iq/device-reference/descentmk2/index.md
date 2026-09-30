@@ -175,7 +175,7 @@ title: "Descent™ Mk2 / Mk2i"
 | 字段 7 | 141 | 173 | 139 | 59 | 4 | False | True | False | False |
 | 字段 8 | 0 | 234 | 280 | 49 | 13 | True | True | False | True |
 
-**Part Number 006-B3258-00**
+**部件号 006-B3258-00**
 
 *语言*
 
@@ -206,7 +206,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 19 | FENIX6X\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | FENIX6X\_CDPG\_ROBOTO\_13B |
 
-**Part Number 006-B3702-00**
+**部件号 006-B3702-00**
 
 *语言*
 

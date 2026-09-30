@@ -94,7 +94,7 @@ API 级别 1.0.0
 
 |
 
-Normal size number only Connect IQ font
+仅 Connect IQ 字体的普通大小数字
 
 |
 | FONT\_NUMBER\_MEDIUM | 6 |
@@ -175,7 +175,7 @@ API 级别 1.3.0
 
 |
 
-Normal size number only system font
+仅系统字体的普通大小数字
 
 |
 | FONT\_SYSTEM\_NUMBER\_MEDIUM | 15 |
@@ -604,7 +604,7 @@ Surface for buffered bitmap with at least a 1-bit alpha channel. The actual numb
 
 ### RadialTextDirection
 
-Orientation for radial text
+径向文本的方向
 
 Since:
 
@@ -835,19 +835,19 @@ Parameters:
 
 - alpha — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Number value ranging from 0-255 representing alpha channel
+    表示 Alpha 通道的数值，范围为 0-255
 
 - red — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Number value ranging from 0-255 representing red channel
+    表示红色通道的数值，范围为 0-255
 
 - green — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Number value ranging from 0-255 representing green channel
+    表示绿色通道的数值，范围为 0-255
 
 - blue — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Number value ranging from 0-255 representing blue channel
+    表示蓝色通道的数值，范围为 0-255
 
 
 Returns:

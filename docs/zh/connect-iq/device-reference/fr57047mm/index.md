@@ -171,7 +171,7 @@ title: "Forerunner® 570 47mm"
 | 字段 7 | 0 | 376 | 454 | 78 | 13 | True | True | False | True |
 | 字段 8 | 228 | 180 | 225 | 94 | 4 | False | True | False | False |
 
-**Part Number 006-B4570-00**
+**部件号 006-B4570-00**
 
 *语言*
 

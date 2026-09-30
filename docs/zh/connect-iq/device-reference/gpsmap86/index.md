@@ -158,7 +158,7 @@ title: "GPSMAP® 86s / 86sc / 86i / 86sci"
 | 字段 11 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
 | 字段 12 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**Part Number 006-B3452-00**
+**部件号 006-B3452-00**
 
 *语言*
 
@@ -178,7 +178,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_NUMBER\_HOT | Garmin | 65 | GPSMAP66\_DEJAVU\_REC\_45 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 94 | GPSMAP66\_DEJAVU\_REC\_66 |
 
-**Part Number 006-B3453-00**
+**部件号 006-B3453-00**
 
 *语言*
 
@@ -198,7 +198,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_NUMBER\_HOT | Garmin | 65 | GPSMAP66\_DEJAVU\_REC\_45 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 94 | GPSMAP66\_DEJAVU\_REC\_66 |
 
-**Part Number 006-B3454-00**
+**部件号 006-B3454-00**
 
 *语言*
 
@@ -218,7 +218,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_NUMBER\_HOT | Garmin | 65 | GPSMAP66\_DEJAVU\_REC\_45 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 94 | GPSMAP66\_DEJAVU\_REC\_66 |
 
-**Part Number 006-B3455-00**
+**部件号 006-B3455-00**
 
 *语言*
 
@@ -238,7 +238,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_NUMBER\_HOT | Garmin | 65 | GPSMAP66\_DEJAVU\_REC\_45 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 94 | GPSMAP66\_DEJAVU\_REC\_66 |
 
-**Part Number 006-B4720-00**
+**部件号 006-B4720-00**
 
 *语言*
 

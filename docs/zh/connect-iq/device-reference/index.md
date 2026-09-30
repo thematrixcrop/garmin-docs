@@ -179,4 +179,4 @@ title: "Device Reference"
 | [vívoactive® 6](/connect-iq/device-reference/vivoactive6/) | round | 390 x 390 | Yes | 65536 | 54 x 54 | enter, esc |
 | [vívoactive® HR](/connect-iq/device-reference/vivoactive-hr/) | rectangle | 148 x 205 | Yes | 64 | 40 x 33 | enter, esc, menu |
 
-**Note:** All button functions listed are available in the simulator. For non-touch devices without a dedicated *"Menu"* button it may be necessary to press and hold the middle button on the left to access the menu. For the Edge® 520 there is a shared *"Enter/Menu"* button that behaves in much the same way.
+注意：列出的所有按钮功能在模拟器中均可用。对于没有专用 *"Menu"* 按钮的非触摸设备，可能需要按住左侧中间的按钮才能访问菜单。Edge® 520 有一个共享的 *"Enter/Menu"* 按钮，其行为大致相同。

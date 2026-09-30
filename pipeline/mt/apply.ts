@@ -69,6 +69,7 @@ function looksUntranslatable(raw: string): boolean {
   if (/^[A-Za-z][A-Za-z0-9_.]*\s+[+\-*/=]\s+[A-Za-z][A-Za-z0-9_.]*(?:\s+[+\-*/=]\s+[A-Za-z][A-Za-z0-9_.]*)*$/.test(s)) return true;
   if (/^[A-Za-z][A-Za-z0-9_]* — \(.+\)$/.test(s)) return true;
   if (/^[A-Za-z_][A-Za-z0-9_.]*\(parameters\.\.\.\)\s+\{\d+\}$/.test(s)) return true;
+  if (/^[A-Za-z_][A-Za-z0-9_.]*\.\.\. — \(.+\) —$/.test(s)) return true;
   // Garmin product labels and font slots are proper names, not prose.
   if (/^(?:Approach®\s+S\d+(?:\s+\d+mm)?|AutoGNSS(?:\s+\(.+\))?|Auxiliary Font \d+)$/.test(s)) return true;
   return false;
@@ -80,6 +81,7 @@ const PATTERNS: Array<[RegExp, string]> = [
   [/^(\d+) Fields? ([A-Z]) Layout$/, '$1 字段 $2 布局'],
   [/^(\d+) Fields? Layout$/, '$1 字段布局'],
   [/^Field (\d+)$/, '字段 $1'],
+  [/^Part Number (.*)$/, '部件号 $1'],
   [/^(\d+) Fields$/, '$1 字段'],
   [/^Classes: (.*)$/, '类：$1'],
   [/^Constants: (.*)$/, '常量：$1'],

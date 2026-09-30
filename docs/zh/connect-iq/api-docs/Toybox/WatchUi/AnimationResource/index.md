@@ -236,7 +236,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Number of frames
+    帧数
 
 
 Since:

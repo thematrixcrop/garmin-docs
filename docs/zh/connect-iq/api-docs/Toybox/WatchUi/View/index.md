@@ -349,7 +349,7 @@ API 级别 1.0.0
 
 View 的入口点。
 
-onLayout() is called before the View is shown to load resources and set up the layout of the View.
+onLayout() 会在 View 显示前被调用，用于加载资源并设置 View 的布局。
 
 Parameters:
 
@@ -378,13 +378,13 @@ API 级别 1.0.0
 
 This is called when a View is brought to the foreground, after the call to [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function). While a View is active, this method is generally used to update dynamic content in the View. There are also some special cases when it will be invoked:
 
-- On [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) calls within Widgets and Watch Apps
+- 在 Widgets 和 Watch Apps 中调用 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) 时
 
-- Once per minute in Watch Faces when in low power mode
+- 低功耗模式下的 Watch Faces 每分钟一次
 
-- Once per second in Watch Faces when in high power mode
+- 高功耗模式下的 Watch Faces 每秒一次
 
-- Once per second in Data Fields
+- Data Fields 中每秒一次
 
 - 当 [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 处于活动状态时以更高频率进行
 
@@ -439,7 +439,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Optional parameters for action menu indicator settings. If null, the action menu indicator will be disabled.
+    用于操作菜单指示器设置的可选参数。如果为 null，则禁用操作菜单指示器。
 
 - :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -474,7 +474,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Options for setting the analog clock state.
+    设置模拟时钟状态的选项。
 
 - :clockState — ([WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module)) —
 
@@ -538,7 +538,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Optional parameters for control bar. If null, the control bar will be hidden.
+    控制栏的可选参数。如果为 null，则隐藏控制栏。
 
 - :leftButton — ([WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module)) —
 

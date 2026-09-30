@@ -67,7 +67,7 @@ title: "Venu® 2 Plus"
 | 字段 3 | 209 | 139 | 207 | 137 | 4 | False | True | False | False |
 | 字段 4 | 0 | 278 | 416 | 138 | 13 | True | True | False | True |
 
-**Part Number 006-B3851-00**
+**部件号 006-B3851-00**
 
 *语言*
 
@@ -98,7 +98,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 43 | 006B370300\_SMALL |
 | FONT\_GLANCE\_NUMBER | Yantramanav | 51 | 006B370300\_NUMBER\_XTINY |
 
-**Part Number 006-B4017-00**
+**部件号 006-B4017-00**
 
 *语言*
 

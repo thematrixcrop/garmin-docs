@@ -171,7 +171,7 @@ title: "Edge® 130 Plus"
 | 字段 7 | 0 | 228 | 114 | 75 | 0 | False | False | False | False |
 | 字段 8 | 115 | 228 | 115 | 75 | 0 | False | False | False | False |
 
-**Part Number 006-B3558-00**
+**部件号 006-B3558-00**
 
 *语言*
 
@@ -193,7 +193,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, rus, slo, 
 | FONT\_GLANCE | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 27 | EDGE130\_ROBOTO\_CONDENSED\_17 |
 
-**Part Number 006-B3813-00**
+**部件号 006-B3813-00**
 
 *语言*
 

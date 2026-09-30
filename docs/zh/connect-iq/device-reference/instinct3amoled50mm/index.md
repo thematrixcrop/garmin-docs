@@ -139,7 +139,7 @@ title: "Instinct® 3 AMOLED 50mm"
 | 字段 5 | 209 | 208 | 207 | 103 | 4 | False | True | False | False |
 | 字段 6 | 0 | 312 | 416 | 103 | 13 | True | True | False | True |
 
-**Part Number 006-B4587-00**
+**部件号 006-B4587-00**
 
 *语言*
 

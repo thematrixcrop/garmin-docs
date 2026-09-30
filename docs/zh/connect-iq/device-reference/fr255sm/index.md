@@ -140,7 +140,7 @@ title: "Forerunner® 255s Music"
 | 字段 5 | 110 | 110 | 108 | 53 | 4 | False | True | False | False |
 | 字段 6 | 0 | 165 | 218 | 53 | 13 | True | True | False | True |
 
-**Part Number 006-B3991-00**
+**部件号 006-B3991-00**
 
 *语言*
 

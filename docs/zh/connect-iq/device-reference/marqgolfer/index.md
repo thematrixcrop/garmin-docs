@@ -105,7 +105,7 @@ title: "MARQ® Golfer"
 | 字段 3 | 0 | 121 | 119 | 119 | 9 | True | False | False | True |
 | 字段 4 | 121 | 121 | 119 | 119 | 12 | False | True | False | True |
 
-**Part Number 006-B3739-00**
+**部件号 006-B3739-00**
 
 *语言*
 
@@ -136,7 +136,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 19 | MARQ\_CDPG\_ROBOTO\_13B |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 19 | MARQ\_CDPG\_ROBOTO\_13B |
 
-**Part Number 006-B3850-00**
+**部件号 006-B3850-00**
 
 *语言*
 

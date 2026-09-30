@@ -185,7 +185,7 @@ title: "epix™ (Gen 2) / quatix® 7 Sapphire"
 | 字段 5 | 159 | 242 | 257 | 98 | 4 | False | True | False | False |
 | 字段 6 | 0 | 341 | 416 | 73 | 13 | True | True | False | True |
 
-**Part Number 006-B3943-00**
+**部件号 006-B3943-00**
 
 *语言*
 
@@ -467,7 +467,7 @@ vie
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B3944-00**
+**部件号 006-B3944-00**
 
 *语言*
 

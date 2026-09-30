@@ -171,7 +171,7 @@ title: "fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2"
 | 字段 7 | 141 | 173 | 139 | 59 | 4 | False | True | False | False |
 | 字段 8 | 0 | 234 | 280 | 49 | 13 | True | True | False | True |
 
-**Part Number 006-B3907-00**
+**部件号 006-B3907-00**
 
 *语言*
 
@@ -413,7 +413,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B3910-00**
+**部件号 006-B3910-00**
 
 *语言*
 
@@ -655,7 +655,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B4135-00**
+**部件号 006-B4135-00**
 
 *语言*
 
@@ -897,7 +897,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B4341-00**
+**部件号 006-B4341-00**
 
 *语言*
 

@@ -56,7 +56,7 @@ title: "vívoactive®"
 | 字段 2 | 0 | 45 | 205 | 57 | 0 | False | False | False | False |
 | 字段 3 | 0 | 104 | 205 | 44 | 0 | False | False | False | False |
 
-**Part Number 006-B1907-00**
+**部件号 006-B1907-00**
 
 *语言*
 
@@ -76,7 +76,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2160-00**
+**部件号 006-B2160-00**
 
 *语言*
 

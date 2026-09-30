@@ -185,7 +185,7 @@ title: "MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition 
 | 字段 7 | 195 | 237 | 194 | 82 | 4 | False | True | False | False |
 | 字段 8 | 0 | 320 | 390 | 68 | 13 | True | True | False | True |
 
-**Part Number 006-B4105-00**
+**部件号 006-B4105-00**
 
 *语言*
 
@@ -347,7 +347,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B4472-00**
+**部件号 006-B4472-00**
 
 *语言*
 

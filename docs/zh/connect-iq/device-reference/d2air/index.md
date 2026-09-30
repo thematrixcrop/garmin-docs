@@ -66,7 +66,7 @@ title: "D2™ Air"
 | 字段 3 | 196 | 131 | 194 | 128 | 4 | False | True | False | False |
 | 字段 4 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
 
-**Part Number 006-B2187-00**
+**部件号 006-B2187-00**
 
 *语言*
 

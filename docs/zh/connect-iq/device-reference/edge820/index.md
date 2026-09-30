@@ -157,7 +157,7 @@ title: "Edge® 820 / Explore"
 | 字段 9 | 0 | 214 | 99 | 51 | 0 | False | False | False | False |
 | 字段 10 | 101 | 214 | 99 | 51 | 0 | False | False | False | False |
 
-**Part Number 006-B2530-00**
+**部件号 006-B2530-00**
 
 *语言*
 
@@ -249,7 +249,7 @@ tha
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2531-00**
+**部件号 006-B2531-00**
 
 *语言*
 
@@ -341,7 +341,7 @@ tha
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2599-00**
+**部件号 006-B2599-00**
 
 *语言*
 
@@ -379,7 +379,7 @@ zhs
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2600-00**
+**部件号 006-B2600-00**
 
 *语言*
 
@@ -417,7 +417,7 @@ jpn
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2628-00**
+**部件号 006-B2628-00**
 
 *语言*
 
@@ -455,7 +455,7 @@ zht
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2629-00**
+**部件号 006-B2629-00**
 
 *语言*
 
@@ -493,7 +493,7 @@ kor
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2630-00**
+**部件号 006-B2630-00**
 
 *语言*
 

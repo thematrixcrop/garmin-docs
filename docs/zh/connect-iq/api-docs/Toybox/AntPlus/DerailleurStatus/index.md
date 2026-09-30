@@ -132,7 +132,7 @@ API 级别 3.1.0
 
 - [**gearMax**](#gearMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Number of gears installed (1 - 7, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error) (1 - 31, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error).
+    已安装齿轮数量（1 - 7，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）（1 - 31，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）。
 
 - [**gearSize**](#gearSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -140,15 +140,15 @@ API 级别 3.1.0
 
 - [**invalidInboardShiftCount**](#invalidInboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Number of invalid inboard shifts (0 - 255).
+    无效内侧换挡次数（0 - 255）。
 
 - [**invalidOutboardShiftCount**](#invalidOutboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Number of invalid outboard shifts (0 - 255).
+    无效外侧换挡次数（0 - 255）。
 
 - [**shiftFailureCount**](#shiftFailureCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Number of shift failures (0 - 255).
+    换挡失败次数（0 - 255）。
 
 
 ## 实例属性详情
@@ -167,7 +167,7 @@ Returns:
 
 ### var gearMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Number of gears installed (1 - 7, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error) (1 - 31, [Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = Unknown gear count / Error)
+已安装齿轮数量（1 - 7，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）（1 - 31，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）
 
 Since:
 
@@ -191,7 +191,7 @@ Returns:
 
 ### var invalidInboardShiftCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Number of invalid inboard shifts (0 - 255)
+无效内侧换挡次数（0 - 255）
 
 Since:
 
@@ -203,7 +203,7 @@ Returns:
 
 ### var invalidOutboardShiftCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Number of invalid outboard shifts (0 - 255)
+无效外侧换挡次数（0 - 255）
 
 Since:
 
@@ -215,7 +215,7 @@ Returns:
 
 ### var shiftFailureCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Number of shift failures (0 - 255)
+换挡失败次数（0 - 255）
 
 Since:
 

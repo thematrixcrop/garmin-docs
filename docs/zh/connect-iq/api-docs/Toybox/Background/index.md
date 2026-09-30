@@ -1104,7 +1104,7 @@ Temporal background events may be registered to run at a specific point in time 
 
 Temporal events cannot be set to occur less than 5 minutes after the last temporal event occurred. For watch-apps and widgets the 5 minute restriction is cleared on application startup if the event was specified using a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/).
 
-Only one temporal event may be registered at a time. Calling `registerForTemporalEvent` will overwrite any previously registered temporal events.
+一次只能注册一个时间事件。调用 `registerForTemporalEvent` 将覆盖之前注册的任何时间事件。
 
 Parameters:
 

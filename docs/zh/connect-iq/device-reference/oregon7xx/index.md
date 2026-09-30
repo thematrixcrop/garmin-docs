@@ -128,7 +128,7 @@ title: "Oregon® 7 Series"
 | 字段 7 | 0 | 175 | 137 | 55 | 0 | False | False | False | False |
 | 字段 8 | 139 | 175 | 128 | 55 | 0 | False | False | False | False |
 
-**Part Number 006-B2512-00**
+**部件号 006-B2512-00**
 
 *语言*
 
@@ -148,7 +148,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_NUMBER\_HOT | Garmin | 56 | DEJAVU\_FITNESS\_40 |
 | FONT\_NUMBER\_THAI\_HOT | Garmin | 70 | DEJAVU\_FITNESS\_50 |
 
-**Part Number 006-B2681-00**
+**部件号 006-B2681-00**
 
 *语言*
 
@@ -240,7 +240,7 @@ tha
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2692-00**
+**部件号 006-B2692-00**
 
 *语言*
 

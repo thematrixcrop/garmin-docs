@@ -355,7 +355,7 @@ title: "Edge® 1040 / 1040 Solar"
 | 字段 9 | 142 | 94 | 140 | 92 | 0 | False | False | False | False |
 | 字段 10 | 142 | 0 | 140 | 92 | 0 | False | False | False | False |
 
-**Part Number 006-B3843-00**
+**部件号 006-B3843-00**
 
 *语言*
 
@@ -377,7 +377,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, rus, 
 | FONT\_GLANCE | Roboto | 22 | Roboto-Medium |
 | FONT\_GLANCE\_NUMBER | Roboto | 26 | Roboto-Medium |
 
-**Part Number 006-B4305-00**
+**部件号 006-B4305-00**
 
 *语言*
 

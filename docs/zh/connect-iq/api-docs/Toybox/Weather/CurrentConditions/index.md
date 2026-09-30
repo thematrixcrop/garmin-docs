@@ -203,7 +203,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    or `null`.
+    或 `null`。
 
 
 ### var observationLocationPosition as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**

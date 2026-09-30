@@ -185,7 +185,7 @@ title: "Descent™ Mk3 43mm / Mk3i 43mm"
 | 字段 7 | 195 | 237 | 194 | 82 | 4 | False | True | False | False |
 | 字段 8 | 0 | 320 | 390 | 68 | 13 | True | True | False | True |
 
-**Part Number 006-B4222-00**
+**部件号 006-B4222-00**
 
 *语言*
 

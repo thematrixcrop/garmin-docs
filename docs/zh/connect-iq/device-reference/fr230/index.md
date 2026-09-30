@@ -68,7 +68,7 @@ title: "Forerunner® 230"
 | 字段 3 | 109 | 57 | 107 | 66 | 4 | False | True | False | False |
 | 字段 4 | 0 | 125 | 215 | 55 | 13 | True | True | False | True |
 
-**Part Number 006-B2157-00**
+**部件号 006-B2157-00**
 
 *语言*
 
@@ -88,7 +88,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Bebas Neue Bold | 59 | BEBAS\_NEUE\_40B |
 | FONT\_NUMBER\_THAI\_HOT | Bebas Neue Bold | 104 | BEBAS\_NEUE\_72B |
 
-**Part Number 006-B2313-00**
+**部件号 006-B2313-00**
 
 *语言*
 

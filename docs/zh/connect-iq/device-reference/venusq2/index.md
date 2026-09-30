@@ -66,7 +66,7 @@ title: "Venu® Sq 2"
 | 字段 3 | 160 | 139 | 160 | 97 | 0 | False | False | False | False |
 | 字段 4 | 0 | 256 | 320 | 97 | 0 | False | False | False | False |
 
-**Part Number 006-B4115-00**
+**部件号 006-B4115-00**
 
 *语言*
 

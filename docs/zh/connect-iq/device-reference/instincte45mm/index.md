@@ -81,7 +81,7 @@ title: "Instinct® E 45mm"
 | 字段 3 | 88 | 72 | 88 | 75 | 12 | False | True | False | True |
 | 字段 4 | 33 | 149 | 110 | 27 | 0 | False | False | False | False |
 
-**Part Number 006-B4584-00**
+**部件号 006-B4584-00**
 
 *语言*
 

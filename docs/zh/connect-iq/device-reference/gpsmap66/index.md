@@ -158,7 +158,7 @@ title: "GPSMAP® 66s / 66i / 66sr / 66st"
 | 字段 11 | 1 | 339 | 118 | 60 | 0 | False | False | False | False |
 | 字段 12 | 121 | 339 | 118 | 60 | 0 | False | False | False | False |
 
-**Part Number 006-B3028-00**
+**部件号 006-B3028-00**
 
 *语言*
 
@@ -180,7 +180,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-**Part Number 006-B3284-00**
+**部件号 006-B3284-00**
 
 *语言*
 
@@ -202,7 +202,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-**Part Number 006-B3694-00**
+**部件号 006-B3694-00**
 
 *语言*
 
@@ -224,7 +224,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 | FONT\_GLANCE\_NUMBER | DejaVu Sans Medium Condensed B | 12 | GPSMAP66\_DEJAVU\_SANS\_9 |
 
-**Part Number 006-B3657-00**
+**部件号 006-B3657-00**
 
 *语言*
 
@@ -306,7 +306,7 @@ vie
 | FONT\_GLANCE | Roboto Condensed | 12 | ROBOTO\_CONDENSED\_VIET\_12 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 12 | ROBOTO\_CONDENSED\_VIET\_12 |
 
-**Part Number 006-B3658-00**
+**部件号 006-B3658-00**
 
 *语言*
 

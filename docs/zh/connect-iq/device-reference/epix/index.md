@@ -91,7 +91,7 @@ title: "epix™"
 | 字段 3 | 0 | 76 | 101 | 72 | 0 | False | False | False | False |
 | 字段 4 | 103 | 76 | 102 | 72 | 0 | False | False | False | False |
 
-**Part Number 006-B1988-00**
+**部件号 006-B1988-00**
 
 *语言*
 
@@ -111,7 +111,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_NUMBER\_HOT | Phelant | 42 | PHELANT\_38B |
 | FONT\_NUMBER\_THAI\_HOT | Phelant | 70 | PHELANT\_62B |
 
-**Part Number 006-B2332-00**
+**部件号 006-B2332-00**
 
 *语言*
 

@@ -231,7 +231,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Options for this view loop object
+    此视图循环对象的选项
 
 - :page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

@@ -222,7 +222,7 @@ title: "Edge® 1030"
 | 字段 9 | 0 | 377 | 140 | 93 | 0 | False | False | False | False |
 | 字段 10 | 142 | 377 | 140 | 93 | 0 | False | False | False | False |
 
-**Part Number 006-B2713-00**
+**部件号 006-B2713-00**
 
 *语言*
 
@@ -244,7 +244,7 @@ ces, dan, deu, dut, eng, fin, fre, gre, hrv, hun, ita, nob, pol, por, rus, slo, 
 | FONT\_GLANCE | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 16 | ROBOTO\_CONDENSED\_16 |
 
-**Part Number 006-B2924-00**
+**部件号 006-B2924-00**
 
 *语言*
 

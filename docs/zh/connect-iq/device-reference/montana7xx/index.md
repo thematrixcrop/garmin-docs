@@ -178,7 +178,7 @@ title: "Montana® 7 Series"
 | 字段 11 | 577 | 257 | 222 | 110 | 0 | False | False | False | False |
 | 字段 12 | 577 | 369 | 222 | 110 | 0 | False | False | False | False |
 
-**Part Number 006-B3459-00**
+**部件号 006-B3459-00**
 
 *语言*
 
@@ -200,7 +200,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 
-**Part Number 006-B4415-00**
+**部件号 006-B4415-00**
 
 *语言*
 
@@ -222,7 +222,7 @@ ara, bul, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ita, nob, pol, por, 
 | FONT\_GLANCE | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 15 | 006B345900\_FNT\_1252\_PRO\_09 |
 
-**Part Number 006-B5015-00**
+**部件号 006-B5015-00**
 
 *语言*
 

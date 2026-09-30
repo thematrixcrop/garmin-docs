@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Number represents a 32-bit signed integer.
+数字表示一个 32 位有符号整数。
 
 Since:
 

@@ -77,7 +77,7 @@ title: "vívoactive® 3 Music"
 | 字段 1 | 0 | 50 | 240 | 69 | 5 | True | True | False | False |
 | 字段 2 | 0 | 120 | 240 | 69 | 5 | True | True | False | False |
 
-**Part Number 006-B2988-00**
+**部件号 006-B2988-00**
 
 *语言*
 
@@ -108,7 +108,7 @@ ara, ces, dan, deu, dut, eng, fin, fre, gre, heb, hrv, hun, ind, ita, nob, pol, 
 | FONT\_GLANCE | Noto Sans | 16 | NOTO\_SANS\_BOLD\_16PX |
 | FONT\_GLANCE\_NUMBER | Noto Sans | 16 | NOTO\_SANS\_BOLD\_16PX |
 
-**Part Number 006-B3163-00**
+**部件号 006-B3163-00**
 
 *语言*
 

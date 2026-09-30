@@ -354,7 +354,7 @@ title: "Edge® 1050"
 | 字段 9 | 0 | 640 | 239 | 160 | 0 | False | False | False | False |
 | 字段 10 | 241 | 640 | 239 | 160 | 0 | False | False | False | False |
 
-**Part Number 006-B4440-00**
+**部件号 006-B4440-00**
 
 *语言*
 

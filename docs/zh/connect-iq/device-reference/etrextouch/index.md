@@ -207,7 +207,7 @@ title: "eTrex® Touch"
 | 字段 7 | 4 | 251 | 116 | 65 | 0 | False | False | False | False |
 | 字段 8 | 121 | 251 | 116 | 65 | 0 | False | False | False | False |
 
-**Part Number 006-B4522-00**
+**部件号 006-B4522-00**
 
 *语言*
 

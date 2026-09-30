@@ -114,7 +114,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Optional parameters that can be specified for Field creation
+    可为 Field 创建指定的可选参数
 
 - :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

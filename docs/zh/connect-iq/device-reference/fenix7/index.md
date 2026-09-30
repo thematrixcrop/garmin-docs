@@ -140,7 +140,7 @@ title: "fēnix® 7 / quatix® 7"
 | 字段 5 | 131 | 131 | 129 | 64 | 4 | False | True | False | False |
 | 字段 6 | 0 | 196 | 260 | 64 | 13 | True | True | False | True |
 
-**Part Number 006-B3906-00**
+**部件号 006-B3906-00**
 
 *语言*
 
@@ -382,7 +382,7 @@ tha
 | Swiss721Bold | Swis721Hebrew BT | Scalable | swiss\_721\_bd |
 | Swiss721Regular | Swis721Hebrew BT | Scalable | swiss\_721\_reg |
 
-**Part Number 006-B3909-00**
+**部件号 006-B3909-00**
 
 *语言*
 

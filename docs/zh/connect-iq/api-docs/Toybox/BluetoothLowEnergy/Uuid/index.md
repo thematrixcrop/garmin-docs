@@ -73,7 +73,7 @@ Throws:
 
 Retrieve a hash code of the UUID
 
-Optimized for BLE standard
+针对 BLE 标准进行了优化
 
 Since:
 

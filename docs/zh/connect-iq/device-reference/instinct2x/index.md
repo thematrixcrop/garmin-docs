@@ -86,7 +86,7 @@ title: "Instinct® 2X Solar"
 | 字段 4 | 32 | 149 | 110 | 27 | 0 | False | False | False | False |
 | 字段 5 | 113 | 1 | 62 | 62 | 15 | True | True | True | True |
 
-**Part Number 006-B4394-00**
+**部件号 006-B4394-00**
 
 *语言*
 

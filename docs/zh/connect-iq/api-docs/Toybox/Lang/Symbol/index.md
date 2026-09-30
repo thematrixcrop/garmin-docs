@@ -53,7 +53,7 @@ This will return a number containing the integer value of the symbol.
 
 Returns:
 
-- Number —
+- 数字 —
 
     The number representation of the Symbol
 

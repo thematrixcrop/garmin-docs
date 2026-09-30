@@ -66,7 +66,7 @@ title: "Venu® Mercedes-Benz® Collection"
 | 字段 3 | 196 | 131 | 194 | 128 | 4 | False | True | False | False |
 | 字段 4 | 0 | 261 | 390 | 129 | 13 | True | True | False | True |
 
-**Part Number 006-B3740-00**
+**部件号 006-B3740-00**
 
 *语言*
 
@@ -97,7 +97,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 | FONT\_GLANCE\_NUMBER | Roboto Condensed | 33 | VENU\_ROBOTO\_TINY\_BOLD |
 
-**Part Number 006-B3737-00**
+**部件号 006-B3737-00**
 
 *语言*
 

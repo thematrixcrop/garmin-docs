@@ -171,7 +171,7 @@ title: "fēnix® 9 47mm / 51mm"
 | 字段 7 | 228 | 277 | 225 | 94 | 4 | False | True | False | False |
 | 字段 8 | 0 | 376 | 454 | 78 | 13 | True | True | False | True |
 
-**Part Number 006-B5134-00**
+**部件号 006-B5134-00**
 
 *语言*
 

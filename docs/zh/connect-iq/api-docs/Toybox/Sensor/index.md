@@ -334,7 +334,7 @@ API 级别 3.2.0
 
 |
 
-Onboard Sensor
+板载传感器
 
 |
 
@@ -1370,7 +1370,7 @@ The callback will get invoked each time a new set of sensor data over the length
 
 注意：
 
-Only one data request is allowed to be registered at a time. Subsequent calls to this function for the same sensor type will override previously registered requests.
+一次只能注册一个数据请求。随后针对相同传感器类型调用此函数时，将覆盖之前注册的请求。
 
 注意：
 
@@ -1417,7 +1417,7 @@ Parameters:
 
 - :heartBeatIntervals — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for Heart Beat Interval data.
+        Heart Beat Interval 数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch heart beat interval data.
 

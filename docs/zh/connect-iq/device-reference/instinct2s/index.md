@@ -86,7 +86,7 @@ title: "Instinct® 2S / Solar / Dual Power"
 | 字段 4 | 30 | 131 | 96 | 24 | 0 | False | False | False | False |
 | 字段 5 | 109 | 0 | 54 | 54 | 15 | True | True | True | True |
 
-**Part Number 006-B3889-00**
+**部件号 006-B3889-00**
 
 *语言*
 
@@ -108,7 +108,7 @@ ara, bul, ces, dan, deu, dut, eng, est, fin, fre, gre, heb, hrv, hun, ita, lav, 
 | FONT\_GLANCE | Roboto Condensed | 22 | 006B388900\_CDPG\_ROBOTO\_18M |
 | FONT\_GLANCE\_NUMBER | Bebas Neue Bold DJV Glyph ttf | 23 | 006B388900\_0000\_GARMIN\_16 |
 
-**Part Number 006-B4091-00**
+**部件号 006-B4091-00**
 
 *语言*
 
