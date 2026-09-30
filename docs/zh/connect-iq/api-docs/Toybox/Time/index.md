@@ -13,13 +13,13 @@ Monkey C 处理时间时使用两个主要概念：[Moment](/connect-iq/api-docs
   Expression           Method               Result    Notes
   ---------------------------------------------------------------------------
   Moment + Moment      -                    -         Invalid
-  Moment + Duration    Moment.add()         Moment    A later Moment
-  Moment - Moment      Moment.subtract()    Duration  The span between Moments
-  Moment - Duration    Moment.subtract()    Moment    An earlier Moment
+  Moment + Duration    Moment.add()         Moment    更晚的 Moment
+  Moment - Moment      Moment.subtract()    Duration  两个 Moment 之间的时间跨度
+  Moment - Duration    Moment.subtract()    Moment    更早的 Moment
 
-  Duration + Duration  Duration.add()       Duration  A longer Duration
-  Duration + Moment    Duration.add()       Moment    A later Moment
-  Duration - Duration  Duration.subtract()  Duration  A shorter Duration
+  Duration + Duration  Duration.add()       Duration  更长的 Duration
+  Duration + Moment    Duration.add()       Moment    更晚的 Moment
+  Duration - Duration  Duration.subtract()  Duration  更短的 Duration
   Duration - Moment    -                    -         Invalid
 ```
 

@@ -185,7 +185,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The interval \[0..PI\] in radians, or `NaN` if invalid
+    弧度范围为 \[0..PI\]；如果无效则返回 `NaN`
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -212,7 +212,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The interval \[-PI/2..PI/2\] in radians, or `NaN` if invalid
+    弧度范围为 \[-PI/2..PI/2\]；如果无效则返回 `NaN`
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -239,7 +239,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The interval \[-PI/2..PI/2\] in radians, or `NaN` if invalid
+    弧度范围为 \[-PI/2..PI/2\]；如果无效则返回 `NaN`
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -270,7 +270,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The principal arc tangent of y/x, in the interval \[-PI..PI\] radians, or `NaN` if invalid
+    y/x 的主值弧正切，弧度范围为 \[-PI..PI\]；如果无效则返回 `NaN`
 
 - 两个输入均为 Number 或 Float 时返回 Float
 
