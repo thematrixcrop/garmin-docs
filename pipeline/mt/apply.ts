@@ -64,6 +64,8 @@ function looksUntranslatable(raw: string): boolean {
   if (/\bas\s+(?:\{\d+\}|[A-Z])/.test(s)) return true;
   if (/as\s+\[/.test(s)) return true;
   if (/^[A-Za-z0-9_.:/#()-]+$/.test(s)) return true;
+  // Garmin product labels and font slots are proper names, not prose.
+  if (/^(?:Approach®\s+S\d+(?:\s+\d+mm)?|AutoGNSS(?:\s+\(.+\))?|Auxiliary Font \d+)$/.test(s)) return true;
   return false;
 }
 
