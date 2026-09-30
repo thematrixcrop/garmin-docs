@@ -1034,7 +1034,7 @@ API 级别 3.4.2
 
 - [**getSubscreen**](#getSubscreen-instance_function)() as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) or **Null**
 
-    Get the subscreen area in the display.
+    获取显示屏中的子屏幕区域。
 
 - [**getTouchEventsConfiguration**](#getTouchEventsConfiguration-instance_function)() as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)
 
@@ -1296,7 +1296,7 @@ API 级别 3.4.0
 
 ### **getSubscreen()** as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) or **Null**
 
-Get the subscreen area in the display.
+获取显示屏中的子屏幕区域。
 
 :::details 支持的设备
 

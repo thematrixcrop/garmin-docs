@@ -228,7 +228,7 @@ API 级别 3.3.0
 
 - [**getTimeZoneOffset**](#getTimeZoneOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the time zone offset from UTC time in seconds.
+    获取 UTC 时间的时区偏移量（以秒为单位）。
 
 - [**greaterThan**](#greaterThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -252,7 +252,7 @@ API 级别 3.3.0
 
 - [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the UTC value of a LocalMoment.
+    获取 LocalMoment 的 UTC 值。
 
 
 ## 实例方法详情
@@ -363,7 +363,7 @@ API 级别 3.3.0
 
 ### **getTimeZoneOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the time zone offset from UTC time in seconds.
+获取 UTC 时间的时区偏移量（以秒为单位）。
 
 This is the time zone offset without the daylight saving time offset.
 
@@ -476,7 +476,7 @@ API 级别 3.3.0
 
 ### **value()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the UTC value of a LocalMoment.
+获取 LocalMoment 的 UTC 值。
 
 Returns:
 

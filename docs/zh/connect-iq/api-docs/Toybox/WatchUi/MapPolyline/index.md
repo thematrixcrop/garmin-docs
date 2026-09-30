@@ -150,7 +150,7 @@ API 级别 3.0.0
 
 - [**numLocations**](#numLocations-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the number of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects in this MapPolyline object.
+    获取此 MapPolyline 对象中 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象的数量。
 
 - [**setColor**](#setColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
@@ -210,7 +210,7 @@ API 级别 3.0.0
 
 ### **numLocations()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the number of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects in this MapPolyline object.
+获取此 MapPolyline 对象中 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象的数量。
 
 Returns:
 

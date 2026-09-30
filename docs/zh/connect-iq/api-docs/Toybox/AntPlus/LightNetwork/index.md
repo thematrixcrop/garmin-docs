@@ -227,11 +227,11 @@ API 级别 2.2.0
 
 - [**getNetworkMode**](#getNetworkMode-instance_function)() as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
 
-    Get the light network mode.
+    获取灯光网络模式。
 
 - [**getNetworkState**](#getNetworkState-instance_function)() as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)
 
-    Get the light network state.
+    获取灯光网络状态。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) or **Null**)
 
@@ -277,7 +277,7 @@ API 级别 2.2.0
 
 ### **getNetworkMode()** as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
 
-Get the light network mode.
+获取灯光网络模式。
 
 Returns:
 
@@ -292,7 +292,7 @@ API 级别 2.2.0
 
 ### **getNetworkState()** as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)
 
-Get the light network state.
+获取灯光网络状态。
 
 Returns:
 

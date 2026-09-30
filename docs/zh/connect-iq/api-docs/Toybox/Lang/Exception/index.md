@@ -63,7 +63,7 @@ API 级别 1.0.0
 
 - [**getErrorMessage**](#getErrorMessage-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Get the error message for the Exception.
+    获取 Exception 的错误消息。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -78,7 +78,7 @@ API 级别 1.0.0
 
 ### **getErrorMessage()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Get the error message for the Exception.
+获取 Exception 的错误消息。
 
 Returns:
 

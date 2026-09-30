@@ -245,7 +245,7 @@ API 级别 2.3.0
 
 - [**getLastTemporalEventTime**](#getLastTemporalEventTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Get the time the last temporal background event was triggered.
+    获取上一次时间型后台事件触发的时间。
 
 - [**getOAuthResponseEventRegistered**](#getOAuthResponseEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -265,7 +265,7 @@ API 级别 2.3.0
 
 - [**getTemporalEventRegisteredTime**](#getTemporalEventRegisteredTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-    Get the Moment or Duration with which a background event is registered by [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function).
+    获取 [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) 注册后台事件时使用的 Moment 或 Duration。
 
 - [**getWakeEventRegistered**](#getWakeEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -624,7 +624,7 @@ API 级别 3.0.0
 
 ### **getLastTemporalEventTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Get the time the last temporal background event was triggered.
+获取上一次时间型后台事件触发的时间。
 
 This is useful for ensuring new events are not scheduled within the five minute minimum time allowed between temporal events.
 
@@ -862,7 +862,7 @@ API 级别 3.0.0
 
 ### **getTemporalEventRegisteredTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-Get the Moment or Duration with which a background event is registered by [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function).
+获取 [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) 注册后台事件时使用的 Moment 或 Duration。
 
 Returns:
 

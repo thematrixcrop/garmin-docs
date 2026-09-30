@@ -481,7 +481,7 @@ API 级别 5.2.2
 
 - [**getObscurityFlags**](#getObscurityFlags-instance_function)() as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
 
-    Get the screen regions that are obscured.
+    获取被遮挡的屏幕区域。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -725,7 +725,7 @@ API 级别 1.2.0
 
 ### **getObscurityFlags()** as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
 
-Get the screen regions that are obscured.
+获取被遮挡的屏幕区域。
 
 Non-rectangular screens have certain portions of the screen obscured. For example, a round screen effectively cuts off the corners of a square screen. This method returns a sum of the enumerated values defined by the WatchUi.DataField.OBSCURE\_\* constants that match the obscured screen regions on the device. Use of this method is only valid during the call to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function).
 

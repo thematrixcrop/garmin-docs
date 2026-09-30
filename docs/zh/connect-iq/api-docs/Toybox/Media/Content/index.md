@@ -38,7 +38,7 @@ API 级别 3.0.0
 
 - [**getPlaybackStartPosition**](#getPlaybackStartPosition-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the playback start position for media content.
+    获取媒体内容的播放起始位置。
 
 - [**initialize**](#initialize-instance_function)(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/), metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/))
 
@@ -77,7 +77,7 @@ API 级别 3.0.0
 
 ### **getPlaybackStartPosition()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the playback start position for media content
+获取媒体内容的播放起始位置
 
 Returns:
 

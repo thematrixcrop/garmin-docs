@@ -263,9 +263,9 @@ Parameters:
 
     The period of time from which to retrieve heart rate samples
 
-- If period is `null`, the entire available history is retrieved
+- 如果 period 为 `null`，则检索所有可用历史记录
 
-- If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索给定 Duration 的历史记录
 
 - If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last Number entries are retrieved
 

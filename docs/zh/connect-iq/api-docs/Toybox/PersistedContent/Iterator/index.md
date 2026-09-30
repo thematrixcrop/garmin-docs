@@ -31,14 +31,14 @@ API 级别 2.2.0
 
 - [**next**](#next-instance_function)() as [PersistedContent.Content](/connect-iq/api-docs/Toybox/PersistedContent/#Content-named_type) or **Null**
 
-    Get the next item in the list.
+    获取列表中的下一个项目。
 
 
 ## 实例方法详情
 
 ### **next()** as [PersistedContent.Content](/connect-iq/api-docs/Toybox/PersistedContent/#Content-named_type) or **Null**
 
-Get the next item in the list
+获取列表中的下一个项目
 
 Returns:
 

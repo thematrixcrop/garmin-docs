@@ -46,18 +46,18 @@ API 级别 2.1.0
 
 - [**getInstance**](#getInstance-instance_function)() as [WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
 
-    Get the instance of the manipulated [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/).
+    获取所操作的 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 实例。
 
 - [**getPreviousState**](#getPreviousState-instance_function)() as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
 
-    Get the previous state of the Selectable that generated the event.
+    获取生成该事件的 Selectable 的先前状态。
 
 
 ## 实例方法详情
 
 ### **getInstance()** as [WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
 
-Get the instance of the manipulated [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/).
+获取所操作的 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 实例。
 
 Returns:
 
@@ -72,7 +72,7 @@ API 级别 2.1.0
 
 ### **getPreviousState()** as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
 
-Get the previous state of the Selectable that generated the event.
+获取生成该事件的 Selectable 的先前状态。
 
 Returns:
 

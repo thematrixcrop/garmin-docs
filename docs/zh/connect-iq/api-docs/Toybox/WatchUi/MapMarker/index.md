@@ -133,7 +133,7 @@ API 级别 3.0.0
 
 - [**getLocation**](#getLocation-instance_function)() as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-    Get the location for the MapMarker.
+    获取 MapMarker 的位置。
 
 - [**initialize**](#initialize-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))
 
@@ -149,7 +149,7 @@ API 级别 3.0.0
 
 ### **getLocation()** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-Get the location for the MapMarker.
+获取 MapMarker 的位置。
 
 Returns:
 

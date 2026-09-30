@@ -230,7 +230,7 @@ API 级别 1.2.0
 
 - [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the number of items in the PickerFactory.
+    获取 PickerFactory 中项目的数量。
 
 - [**getValue**](#getValue-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -267,7 +267,7 @@ API 级别 1.2.0
 
 ### **getSize()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the number of items in the PickerFactory.
+获取 PickerFactory 中项目的数量。
 
 Returns:
 

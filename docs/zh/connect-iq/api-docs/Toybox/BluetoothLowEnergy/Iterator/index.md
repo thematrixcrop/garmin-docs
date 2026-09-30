@@ -26,14 +26,14 @@ API 级别 3.1.0
 
 - [**next**](#next-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Get the next item in the list.
+    获取列表中的下一个项目。
 
 
 ## 实例方法详情
 
 ### **next()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Get the next item in the list
+获取列表中的下一个项目
 
 Returns:
 

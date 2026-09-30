@@ -153,7 +153,7 @@ API 级别 3.3.0
 
 - [**getType**](#getType-instance_function)() as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
 
-    Get the type of drag event.
+    获取拖动事件的类型。
 
 
 ## 实例方法详情
@@ -175,7 +175,7 @@ API 级别 3.3.0
 
 ### **getType()** as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
 
-Get the type of drag event.
+获取拖动事件的类型。
 
 Returns:
 

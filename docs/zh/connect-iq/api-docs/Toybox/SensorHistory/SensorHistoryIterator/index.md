@@ -61,11 +61,11 @@ API 级别 2.1.0
 
 - [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Get the maximum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
+    获取此迭代器中包含的最大 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
 - [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Get the minimum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
+    获取此迭代器中包含的最小 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
 - [**getNewestSampleTime**](#getNewestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -77,14 +77,14 @@ API 级别 2.1.0
 
 - [**next**](#next-instance_function)() as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
 
-    Get the next [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) entry in the iterator.
+    获取迭代器中的下一个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 条目。
 
 
 ## 实例方法详情
 
 ### **getMax()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Get the maximum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
+获取此迭代器中包含的最大 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
 Example:
 
@@ -118,7 +118,7 @@ API 级别 2.1.0
 
 ### **getMin()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Get the minimum [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) data value contained in this iterator.
+获取此迭代器中包含的最小 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
 Example:
 
@@ -228,7 +228,7 @@ API 级别 2.1.0
 
 ### **next()** as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
 
-Get the next [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) entry in the iterator.
+获取迭代器中的下一个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 条目。
 
 This must be called to get the initial data from the iterator.
 

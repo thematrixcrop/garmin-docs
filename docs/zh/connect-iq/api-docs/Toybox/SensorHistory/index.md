@@ -195,7 +195,7 @@ Request iterator with oldest data first
 
 - [**getElevationHistory**](#getElevationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the elevation history for the given period, up to the last power cycle.
+    获取给定时间段内的海拔历史记录，最远追溯至上次断电。
 
 - [**getHeartRateHistory**](#getHeartRateHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) or **Null** } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -207,7 +207,7 @@ Request iterator with oldest data first
 
 - [**getPressureHistory**](#getPressureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the pressure history for the given period, up to the last power cycle.
+    获取给定时间段内的气压历史记录，最远追溯至上次断电。
 
 - [**getStressHistory**](#getStressHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -215,7 +215,7 @@ Request iterator with oldest data first
 
 - [**getTemperatureHistory**](#getTemperatureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the temperature history for the given period, up to the last power cycle.
+    获取给定时间段内的温度历史记录，最远追溯至上次断电。
 
 
 ## 实例方法详情
@@ -416,7 +416,7 @@ API 级别 3.3.0
 
 ### **getElevationHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the elevation history for the given period, up to the last power cycle.
+获取给定时间段内的海拔历史记录，最远追溯至上次断电。
 
 This function always returns the most recent pressure samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
 
@@ -650,7 +650,7 @@ Parameters:
 
         获取样本的顺序：
 
-- If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 如果为 `null`，样本将按 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 列出
 
 - 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
@@ -907,7 +907,7 @@ API 级别 3.2.0
 
 ### **getPressureHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the pressure history for the given period, up to the last power cycle.
+获取给定时间段内的气压历史记录，最远追溯至上次断电。
 
 This function always returns the most recent pressure samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
 
@@ -921,9 +921,9 @@ Parameters:
 
         The period of time from which to retrieve the samples.
 
-- If period is `null`, the entire available history is retrieved
+- 如果 period 为 `null`，则检索所有可用历史记录
 
-- If period is a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/), then the history for the given Duration is retrieved
+- 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索给定 Duration 的历史记录
 
 - If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
 
@@ -1312,7 +1312,7 @@ API 级别 3.3.0
 
 ### **getTemperatureHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the temperature history for the given period, up to the last power cycle.
+获取给定时间段内的温度历史记录，最远追溯至上次断电。
 
 This function always returns the most recent temperature samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
 
@@ -1337,7 +1337,7 @@ Parameters:
 
         The order in which to retrieve the samples.
 
-- If `null`, the samples will be listed [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 如果为 `null`，样本将按 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 列出
 
 - 使用 ORDER_* 枚举显式选择 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 或 [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 

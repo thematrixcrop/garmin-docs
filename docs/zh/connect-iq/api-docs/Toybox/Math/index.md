@@ -121,7 +121,7 @@ API 级别 1.0.0
 
 - [**mode**](#mode-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-    Get the most common value found in an array of data.
+    获取数据数组中出现次数最多的值。
 
 - [**pow**](#pow-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -137,7 +137,7 @@ API 级别 1.0.0
 
 - [**sin**](#sin-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the sine of an angle.
+    获取角度的正弦值。
 
 - [**sqrt**](#sqrt-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -149,11 +149,11 @@ API 级别 1.0.0
 
 - [**stdev**](#stdev-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Get the standard deviation of a sample of population data.
+    获取总体数据样本的标准差。
 
 - [**tan**](#tan-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the tangent of an angle.
+    获取角度的正切值。
 
 - [**toDegrees**](#toDegrees-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -165,7 +165,7 @@ API 级别 1.0.0
 
 - [**variance**](#variance-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Get the sample variance of an array of data.
+    获取数据数组的样本方差。
 
 
 ## 实例方法详情
@@ -442,7 +442,7 @@ Throws:
 
 ### **mode(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>)** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-Get the most common value found in an array of data.
+获取数据数组中出现次数最多的值。
 
 Parameters:
 
@@ -539,7 +539,7 @@ API 级别 1.3.0
 
 ### **sin(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the sine of an angle.
+获取角度的正弦值。
 
 Parameters:
 
@@ -612,7 +612,7 @@ API 级别 1.0.0
 
 ### **stdev(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**)** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Get the standard deviation of a sample of population data.
+获取总体数据样本的标准差。
 
 Parameters:
 
@@ -645,7 +645,7 @@ Throws:
 
 ### **tan(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the tangent of an angle.
+获取角度的正切值。
 
 Parameters:
 
@@ -721,7 +721,7 @@ API 级别 1.3.0
 
 ### **variance(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**)** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Get the sample variance of an array of data.
+获取数据数组的样本方差。
 
 Returns the sample variance with Bessel's correction.
 

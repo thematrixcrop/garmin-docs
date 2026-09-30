@@ -68,7 +68,7 @@ API 级别 2.3.0
 
 - [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the height of a bitmap.
+    获取位图的高度。
 
 - [**getPalette**](#getPalette-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>
 
@@ -76,7 +76,7 @@ API 级别 2.3.0
 
 - [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the width of a bitmap.
+    获取位图的宽度。
 
 - [**initialize**](#initialize-instance_function)(options as { :width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>, :colorDepth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapResource as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), :alphaBlending as [Graphics.AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) }) deprecated
 
@@ -107,7 +107,7 @@ API 级别 2.3.0
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the height of a bitmap.
+获取位图的高度。
 
 Returns:
 
@@ -137,7 +137,7 @@ API 级别 2.3.0
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the width of a bitmap.
+获取位图的宽度。
 
 Returns:
 

@@ -34,7 +34,7 @@ API 级别 4.0.0
 
 - [**get**](#get-instance_function)() as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) or **Null**
 
-    Get the underlying resource object referenced by the ResourceReference, this trigger either the allocate from the system memory pool or return the existing resource in the pool.
+    获取 ResourceReference 引用的底层资源对象，此操作会触发从系统内存池分配资源，或返回内存池中已有的资源。
 
 
 ## 类型定义详情
@@ -49,7 +49,7 @@ API 级别 4.0.0
 
 ### **get()** as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) or **Null**
 
-Get the underlying resource object referenced by the ResourceReference, this trigger either the allocate from the system memory pool or return the existing resource in the pool.
+获取 ResourceReference 引用的底层资源对象，此操作会触发从系统内存池分配资源，或返回内存池中已有的资源。
 
 Returns:
 

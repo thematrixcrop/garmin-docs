@@ -362,11 +362,11 @@ Onboard Sensor
 
 - [**getMaxSampleRate**](#getMaxSampleRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the maximum sample rate supported by the system.
+    获取系统支持的最大采样率。
 
 - [**getMaxSampleRateForSensorType**](#getMaxSampleRateForSensorType-instance_function)(sensorDataType as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the maximum sample rate supported for given sensor data type.
+    获取给定传感器数据类型支持的最大采样率。
 
 - [**getRegisteredSensors**](#getRegisteredSensors-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**) as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
@@ -543,7 +543,7 @@ API 级别 1.0.0
 
 ### **getMaxSampleRate()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the maximum sample rate supported by the system.
+获取系统支持的最大采样率。
 
 注意：
 
@@ -735,7 +735,7 @@ API 级别 2.3.0
 
 ### **getMaxSampleRateForSensorType(sensorDataType as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the maximum sample rate supported for given sensor data type.
+获取给定传感器数据类型支持的最大采样率。
 
 注意：
 

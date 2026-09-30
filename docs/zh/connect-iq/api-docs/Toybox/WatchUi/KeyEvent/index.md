@@ -61,7 +61,7 @@ API 级别 1.0.0
 
 - [**getKey**](#getKey-instance_function)() as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)
 
-    Get the key value of this event.
+    获取此事件的键值。
 
 - [**getType**](#getType-instance_function)() as [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module)
 
@@ -72,7 +72,7 @@ API 级别 1.0.0
 
 ### **getKey()** as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)
 
-Get the key value of this event.
+获取此事件的键值。
 
 Returns:
 

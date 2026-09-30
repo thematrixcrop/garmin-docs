@@ -102,7 +102,7 @@ API 级别 1.0.0
 
 - [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the UTC value of a Moment.
+    获取 Moment 的 UTC 值。
 
 
 ## 实例方法详情
@@ -376,7 +376,7 @@ API 级别 1.0.0
 
 ### **value()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the UTC value of a Moment.
+获取 Moment 的 UTC 值。
 
 Returns:
 

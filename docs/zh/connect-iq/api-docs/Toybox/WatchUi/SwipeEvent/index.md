@@ -60,14 +60,14 @@ API 级别 1.0.0
 
 - [**getDirection**](#getDirection-instance_function)() as [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module)
 
-    Get the direction of the swipe.
+    获取滑动的方向。
 
 
 ## 实例方法详情
 
 ### **getDirection()** as [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module)
 
-Get the direction of the swipe.
+获取滑动的方向。
 
 Returns:
 

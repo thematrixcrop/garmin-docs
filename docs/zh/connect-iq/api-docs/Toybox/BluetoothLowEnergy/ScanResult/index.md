@@ -52,7 +52,7 @@ API 级别 3.1.0
 
 - [**getRssi**](#getRssi-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Gets the received signal strength indication (RSSI) value of the received advertisement.
+    获取接收广告的接收信号强度指示（RSSI）值。
 
 - [**getServiceData**](#getServiceData-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -185,7 +185,7 @@ API 级别 3.1.0
 
 ### **getRssi()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Gets the received signal strength indication (RSSI) value of the received advertisement.
+获取接收广告的接收信号强度指示（RSSI）值。
 
 Returns:
 

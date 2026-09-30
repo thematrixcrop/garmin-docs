@@ -422,7 +422,7 @@ API 级别 3.0.0
 
 ### **getIcon()** as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-Get the icon
+获取图标
 
 Retrieve the icon for this Menu2.
 

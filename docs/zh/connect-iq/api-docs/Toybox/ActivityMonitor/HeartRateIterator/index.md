@@ -168,22 +168,22 @@ API 级别 1.2.2
 
 - [**getMax**](#getMax-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Get the maximum heart rate contained in this iterator.
+    获取此迭代器中包含的最大心率。
 
 - [**getMin**](#getMin-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Get the minimum heart rate contained in this iterator.
+    获取此迭代器中包含的最小心率。
 
 - [**next**](#next-instance_function)() as [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) or **Null**
 
-    Get the next entry in the iterator.
+    获取迭代器中的下一个条目。
 
 
 ## 实例方法详情
 
 ### **getMax()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Get the maximum heart rate contained in this iterator.
+获取此迭代器中包含的最大心率。
 
 Returns:
 
@@ -198,7 +198,7 @@ API 级别 1.2.2
 
 ### **getMin()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Get the minimum heart rate contained in this iterator.
+获取此迭代器中包含的最小心率。
 
 Returns:
 
@@ -213,7 +213,7 @@ API 级别 1.2.2
 
 ### **next()** as [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) or **Null**
 
-Get the next entry in the iterator.
+获取迭代器中的下一个条目。
 
 This must be called to get the initial data from the iterator.
 

@@ -194,7 +194,7 @@ API 级别 1.0.0
 
 - [**next**](#next-instance_function)() as [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type) or **Null**
 
-    Get the next message from the mailbox.
+    从邮箱中获取下一条消息。
 
 
 ## 类型定义详情
@@ -215,7 +215,7 @@ API 级别 1.0.0
 
 ### **next()** as [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type) or **Null**
 
-Get the next message from the mailbox.
+从邮箱中获取下一条消息。
 
 Returns:
 

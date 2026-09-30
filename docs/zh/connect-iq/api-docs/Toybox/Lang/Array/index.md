@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 - [**indexOf**](#indexOf-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the index of an Object within the Array.
+    获取 Array 中 Object 的索引。
 
 - [**remove**](#remove-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -50,7 +50,7 @@ API 级别 1.0.0
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the size of an Array.
+    获取 Array 的大小。
 
 - [**slice**](#slice-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
@@ -117,7 +117,7 @@ API 级别 1.3.0
 
 ### **indexOf(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the index of an Object within the Array.
+获取 Array 中 Object 的索引。
 
 Parameters:
 
@@ -202,7 +202,7 @@ API 级别 1.3.0
 
 ### **size()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the size of an Array.
+获取 Array 的大小。
 
 Returns:
 

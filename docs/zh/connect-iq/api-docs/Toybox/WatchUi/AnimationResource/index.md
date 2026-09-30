@@ -162,19 +162,19 @@ API 级别 3.1.0
 
 - [**getFrameRate**](#getFrameRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the target frame rate of an animation resource.
+    获取动画资源的目标帧率。
 
 - [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the height of an animation resource.
+    获取动画资源的高度。
 
 - [**getNumberOfFrames**](#getNumberOfFrames-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the number of frames of an animation resource.
+    获取动画资源的帧数。
 
 - [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the width of an animation resource.
+    获取动画资源的宽度。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -200,7 +200,7 @@ API 级别 3.2.0
 
 ### **getFrameRate()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the target frame rate of an animation resource.
+获取动画资源的目标帧率。
 
 Returns:
 
@@ -215,7 +215,7 @@ API 级别 3.1.0
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the height of an animation resource.
+获取动画资源的高度。
 
 Returns:
 
@@ -230,7 +230,7 @@ API 级别 3.1.0
 
 ### **getNumberOfFrames()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the number of frames of an animation resource.
+获取动画资源的帧数。
 
 Returns:
 
@@ -245,7 +245,7 @@ API 级别 3.1.0
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the width of an animation resource.
+获取动画资源的宽度。
 
 Returns:
 

@@ -38,19 +38,19 @@ API 级别 3.0.0
 
 - [**next**](#next-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-    Get the next media content object.
+    获取下一个媒体内容对象。
 
 - [**peekNext**](#peekNext-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-    Get the next media content object without incrementing the iterator.
+    获取下一个媒体内容对象，但不递增迭代器。
 
 - [**peekPrevious**](#peekPrevious-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-    Get the previous media content object without decrementing the iterator.
+    获取上一个媒体内容对象，但不递减迭代器。
 
 - [**previous**](#previous-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-    Get the previous media content object.
+    获取上一个媒体内容对象。
 
 - [**repeatMode**](#repeatMode-instance_function)() as [Media.RepeatMode](/connect-iq/api-docs/Toybox/Media/#RepeatMode-module) or **Null**
 
@@ -112,7 +112,7 @@ API 级别 3.0.0
 
 ### **next()** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-Get the next media content object.
+获取下一个媒体内容对象。
 
 Returns:
 
@@ -132,7 +132,7 @@ API 级别 3.0.0
 
 ### **peekNext()** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-Get the next media content object without incrementing the iterator.
+获取下一个媒体内容对象，但不递增迭代器。
 
 Returns:
 
@@ -152,7 +152,7 @@ API 级别 3.0.0
 
 ### **peekPrevious()** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-Get the previous media content object without decrementing the iterator.
+获取上一个媒体内容对象，但不递减迭代器。
 
 Returns:
 
@@ -172,7 +172,7 @@ API 级别 3.0.0
 
 ### **previous()** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-Get the previous media content object.
+获取上一个媒体内容对象。
 
 Returns:
 

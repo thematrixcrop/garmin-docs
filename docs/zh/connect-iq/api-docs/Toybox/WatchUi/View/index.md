@@ -127,11 +127,11 @@ API 级别 1.0.0
 
 - [**insertLayer**](#insertLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Insert the layer at the given index in the layer stack, this will stop animation playback.
+    将图层插入图层堆栈中的给定索引处，这将停止动画播放。
 
 - [**onHide**](#onHide-instance_function)() as **Void**
 
-    Hide the View.
+    隐藏 View。
 
 - [**onLayout**](#onLayout-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
@@ -318,7 +318,7 @@ API 级别 2.1.0
 
 ### **insertLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Insert the layer at the given index in the layer stack, this will stop animation playback.
+将图层插入图层堆栈中的给定索引处，这将停止动画播放。
 
 Parameters:
 
@@ -337,7 +337,7 @@ API 级别 3.1.0
 
 ### **onHide()** as **Void**
 
-Hide the View.
+隐藏 View。
 
 This is called before the View is removed from the foreground. This occurs when a new View object is pushed on top of the current one, when the current View is popped, or when the app is closed. Resources should be freed from memory at this point if the current View will be left on the page stack.
 

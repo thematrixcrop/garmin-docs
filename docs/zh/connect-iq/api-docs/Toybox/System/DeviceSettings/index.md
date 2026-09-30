@@ -53,7 +53,7 @@ API 级别 1.0.0
 
 - [**connectionAvailable**](#connectionAvailable-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Indicates if any communication channel is connected and available for use.
+    指示是否有任何通信通道已连接并可供使用。
 
 - [**connectionInfo**](#connectionInfo-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
 
@@ -97,11 +97,11 @@ API 级别 1.0.0
 
 - [**isEnhancedReadabilityModeEnabled**](#isEnhancedReadabilityModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Indicates the device is currently using Enhanced Readability Mode.
+    指示设备当前正在使用增强可读性模式。
 
 - [**isGlanceModeEnabled**](#isGlanceModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Indicates if widget glances are enabled on the device.
+    指示设备上是否启用了小组件速览。
 
 - [**isNightModeEnabled**](#isNightModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -207,7 +207,7 @@ Returns:
 
 ### var connectionAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Indicates if any communication channel is connected and available for use.
+指示是否有任何通信通道已连接并可供使用。
 
 Since:
 
@@ -459,7 +459,7 @@ Returns:
 
 ### var isEnhancedReadabilityModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Indicates the device is currently using Enhanced Readability Mode.
+指示设备当前正在使用增强可读性模式。
 
 Since:
 
@@ -507,7 +507,7 @@ Returns:
 
 ### var isGlanceModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Indicates if widget glances are enabled on the device.
+指示设备上是否启用了小组件速览。
 
 If glance mode is enabled, the system will pass up / down key events to a widget base page. Otherwise, the system will mask them out.
 

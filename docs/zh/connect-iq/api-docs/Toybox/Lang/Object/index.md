@@ -87,7 +87,7 @@ This computes a 32-bit Number that is typically used as an index when placing Ob
 
 - The computed hash code is constant for the lifetime of an Object
 
-- If two Objects are equal, their hash codes will be equal
+- 如果两个 Object 相等，则它们的哈希代码也相等
 
 
 Returns:

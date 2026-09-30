@@ -32,7 +32,7 @@ API 级别 3.3.0
 
 |
 
-How the OAuth token will be returned in the final step.
+OAuth 令牌在最后一步中的返回方式。
 
 |
 
@@ -49,7 +49,7 @@ API 级别 3.3.0
 
 |
 
-How the OAuth request will be signed
+OAuth 请求的签名方式
 
 |
 

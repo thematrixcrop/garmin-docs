@@ -168,7 +168,7 @@ API 级别 1.2.2
 
 - [**heartRate**](#heartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Heart rate in beats per minute (bpm).
+    以每分钟心跳次数（bpm）表示的心率。
 
 - [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -179,7 +179,7 @@ API 级别 1.2.2
 
 ### var heartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Heart rate in beats per minute (bpm).
+以每分钟心跳次数（bpm）表示的心率。
 
 Before using heart rate information, check for [INVALID\_HR\_SAMPLE](/connect-iq/api-docs/Toybox/ActivityMonitor/#INVALID_HR_SAMPLE-const) to be sure data is available.
 

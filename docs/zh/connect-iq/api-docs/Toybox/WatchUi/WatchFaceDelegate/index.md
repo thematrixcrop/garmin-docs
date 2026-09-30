@@ -50,7 +50,7 @@ API 级别 2.3.0
 
 - [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function)(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/)) as **Void**
 
-    Handle a partial update exceeding the power budget.
+    处理超出功耗预算的部分更新。
 
 - [**onPress**](#onPress-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -133,7 +133,7 @@ API 级别 5.1.0
 
 ### **onPowerBudgetExceeded(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/))** as **Void**
 
-Handle a partial update exceeding the power budget.
+处理超出功耗预算的部分更新。
 
 If the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) callback of the associated [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/) exceeds the power budget of the device, this method will be called with information about the limits that were exceeded.
 

@@ -220,7 +220,7 @@ API 级别 4.0.0
 
 - [**onBackgroundData**](#onBackgroundData-instance_function)(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
 
-    Handle data passed from a ServiceDelegate to the application.
+    处理从 ServiceDelegate 传递给应用程序的数据。
 
 - [**onDeviceSettingChanged**](#onDeviceSettingChanged-instance_function)(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
@@ -2024,7 +2024,7 @@ API 级别 3.3.0
 
 ### **onBackgroundData(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type))** as **Void**
 
-Handle data passed from a ServiceDelegate to the application.
+处理从 ServiceDelegate 传递给应用程序的数据。
 
 When the [Background](/connect-iq/api-docs/Toybox/Background/) process terminates, a data payload may be available. If the main application is active when this occurs, the data will be passed directly to the application's `onBackgroundData()` method. If the main application is not active, the data will be saved until the next time the application is launched and will be passed to the application after the [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) method completes.
 

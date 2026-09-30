@@ -160,7 +160,7 @@ API 级别 2.2.0
 
 - [**rightPedalIndicator**](#rightPedalIndicator-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Indicates the pedal contribution.
+    指示踏板贡献。
 
 
 ## 实例属性详情
@@ -179,7 +179,7 @@ Returns:
 
 ### var rightPedalIndicator as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Indicates the pedal contribution.
+指示踏板贡献。
 
 Since:
 

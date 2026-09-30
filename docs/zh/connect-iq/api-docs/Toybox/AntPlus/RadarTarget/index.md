@@ -171,11 +171,11 @@ API 级别 3.0.0
 
 - [**range**](#range-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Indicates the distance to the target in metres (m).
+    指示到目标的距离（以米（m）为单位）。
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Indicates the speed of the target relative to the user in metres per second (m/s).
+    指示目标相对于用户的速度（以米每秒（m/s）为单位）。
 
 - [**threat**](#threat-var) as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
@@ -190,7 +190,7 @@ API 级别 3.0.0
 
 ### var range as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Indicates the distance to the target in metres (m).
+指示到目标的距离（以米（m）为单位）。
 
 Since:
 
@@ -202,7 +202,7 @@ Returns:
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Indicates the speed of the target relative to the user in metres per second (m/s).
+指示目标相对于用户的速度（以米每秒（m/s）为单位）。
 
 Since:
 

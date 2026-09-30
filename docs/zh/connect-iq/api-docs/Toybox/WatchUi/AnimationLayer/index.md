@@ -173,7 +173,7 @@ API 级别 3.1.0
 
 - [**getDc**](#getDc-instance_function)() as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
-    getDc will always return `null`, as the dc buffer of animations can not be updated by user.
+    getDc 始终返回 `null`，因为用户无法更新动画的 dc 缓冲区。
 
 - [**getResource**](#getResource-instance_function)() as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
@@ -196,7 +196,7 @@ API 级别 3.1.0
 
 ### **getDc()** as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
-getDc will always return `null`, as the dc buffer of animations can not be updated by user.
+getDc 始终返回 `null`，因为用户无法更新动画的 dc 缓冲区。
 
 Since:
 

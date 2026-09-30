@@ -180,11 +180,11 @@ API 级别 3.0.0
 
 - [**getPrivateKey**](#getPrivateKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-    Get the private key.
+    获取私钥。
 
 - [**getPublicKey**](#getPublicKey-instance_function)() as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-    Get the public key.
+    获取公钥。
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
@@ -195,7 +195,7 @@ API 级别 3.0.0
 
 ### **getPrivateKey()** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-Get the private key.
+获取私钥。
 
 Returns:
 
@@ -210,7 +210,7 @@ API 级别 3.0.0
 
 ### **getPublicKey()** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-Get the public key.
+获取公钥。
 
 Returns:
 

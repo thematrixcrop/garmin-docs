@@ -26,7 +26,7 @@ API 级别 3.0.0
 
 - [**getContentType**](#getContentType-instance_function)() as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module)
 
-    Get the media content type.
+    获取媒体内容类型。
 
 - [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -41,7 +41,7 @@ API 级别 3.0.0
 
 ### **getContentType()** as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module)
 
-Get the media content type.
+获取媒体内容类型。
 
 Returns:
 

@@ -457,7 +457,7 @@ API 级别 4.2.4
 
 |
 
-Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipForwardTimeDelta](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#skipForwardTimeDelta-var).
+指示歌曲已向前跳过 [PlaybackProfile.skipForwardTimeDelta](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#skipForwardTimeDelta-var) 中指定的秒数。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -467,7 +467,7 @@ API 级别 4.2.4
 
 |
 
-Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipBackwardTimeDelta](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#skipBackwardTimeDelta-var).
+指示歌曲已向前跳过 [PlaybackProfile.skipBackwardTimeDelta](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#skipBackwardTimeDelta-var) 中指定的秒数。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |

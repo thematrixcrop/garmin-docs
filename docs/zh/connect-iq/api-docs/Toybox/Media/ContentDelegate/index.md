@@ -46,7 +46,7 @@ API 级别 3.0.0
 
 - [**onSong**](#onSong-instance_function)(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), songEvent as [Media.SongEvent](/connect-iq/api-docs/Toybox/Media/#SongEvent-module), playbackPosition as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module)) as **Void**
 
-    Handle a notification from a system that a song has been played.
+    处理系统发出的歌曲已播放通知。
 
 - [**onThumbsDown**](#onThumbsDown-instance_function)(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
@@ -123,7 +123,7 @@ API 级别 3.0.0
 
 ### **onSong(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), songEvent as [Media.SongEvent](/connect-iq/api-docs/Toybox/Media/#SongEvent-module), playbackPosition as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module))** as **Void**
 
-Handle a notification from a system that a song has been played.
+处理系统发出的歌曲已播放通知。
 
 Parameters:
 
@@ -154,7 +154,7 @@ Parameters:
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    ID referencing a [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) object
+    引用 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID
 
 
 Since:
@@ -171,7 +171,7 @@ Parameters:
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    ID referencing a [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) object
+    引用 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID
 
 
 Since:

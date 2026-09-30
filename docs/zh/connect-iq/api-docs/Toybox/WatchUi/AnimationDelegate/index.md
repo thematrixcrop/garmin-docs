@@ -176,14 +176,14 @@ API 级别 3.1.0
 
 - [**onAnimationEvent**](#onAnimationEvent-instance_function)(event as [WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**
 
-    Handle an Animation event.
+    处理 Animation 事件。
 
 
 ## 实例方法详情
 
 ### **onAnimationEvent(event as [WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))** as **Void**
 
-Handle an Animation event.
+处理 Animation 事件。
 
 Parameters:
 

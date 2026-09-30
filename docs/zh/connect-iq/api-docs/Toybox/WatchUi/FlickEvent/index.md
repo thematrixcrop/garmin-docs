@@ -154,11 +154,11 @@ API 级别 3.3.0
 
 - [**getDistance**](#getDistance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the distance of the flick.
+    获取轻拂的距离。
 
 - [**getVelocity**](#getVelocity-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Get the velocity of the flick.
+    获取轻拂的速度。
 
 
 ## 实例方法详情
@@ -195,7 +195,7 @@ API 级别 3.3.0
 
 ### **getDistance()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the distance of the flick.
+获取轻拂的距离。
 
 Returns:
 
@@ -210,7 +210,7 @@ API 级别 3.3.0
 
 ### **getVelocity()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Get the velocity of the flick.
+获取轻拂的速度。
 
 Returns:
 

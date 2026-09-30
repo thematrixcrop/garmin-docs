@@ -110,4 +110,4 @@ Throws:
 
 - ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 
-    if the request is invalid
+    如果请求无效

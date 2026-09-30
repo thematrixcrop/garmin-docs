@@ -170,23 +170,23 @@ API 级别 1.0.0
 
 - [**getFontHeight**](#getFontHeight-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the height of a font.
+    获取字体的高度。
 
 - [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the height of the display region that is available to the app.
+    获取应用可用显示区域的高度。
 
 - [**getTextDimensions**](#getTextDimensions-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-    Get the width and height of a String.
+    获取 String 的宽度和高度。
 
 - [**getTextWidthInPixels**](#getTextWidthInPixels-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the width of a String.
+    获取 String 的宽度。
 
 - [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the width of the display region that is available to the app.
+    获取应用可用显示区域的宽度。
 
 - [**setAntiAlias**](#setAntiAlias-instance_function)(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -1194,7 +1194,7 @@ API 级别 1.0.0
 
 ### **getFontHeight(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the height of a font.
+获取字体的高度。
 
 Parameters:
 
@@ -1216,7 +1216,7 @@ API 级别 1.0.0
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the height of the display region that is available to the app.
+获取应用可用显示区域的高度。
 
 Returns:
 
@@ -1231,7 +1231,7 @@ API 级别 1.0.0
 
 ### **getTextDimensions(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Get the width and height of a String.
+获取 String 的宽度和高度。
 
 This takes new lines into account when determining the height. The width is the maximum width for a given line of the String. If a String has two newline characters (\\\\n) in it, the height would be for three lines and the width would be the width of the longest String.
 
@@ -1259,7 +1259,7 @@ API 级别 1.0.0
 
 ### **getTextWidthInPixels(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the width of a String.
+获取 String 的宽度。
 
 Parameters:
 
@@ -1285,7 +1285,7 @@ API 级别 1.0.0
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the width of the display region that is available to the app.
+获取应用可用显示区域的宽度。
 
 Returns:
 

@@ -476,7 +476,7 @@ API 级别 1.3.0
 
 |
 
-How the OAuth token will be returned in the final step.
+OAuth 令牌在最后一步中的返回方式。
 
 |
 
@@ -493,7 +493,7 @@ API 级别 1.3.0
 
 |
 
-How the OAuth request will be signed
+OAuth 请求的签名方式
 
 |
 
@@ -911,11 +911,11 @@ API 级别 6.0.0
 
 - [**getMailbox**](#getMailbox-instance_function)() as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) deprecated
 
-    Get the MailboxIterator for this Application's mailbox.
+    获取此 Application 的邮箱对应的 MailboxIterator。
 
 - [**makeImageRequest**](#makeImageRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as { :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :maxWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :dithering as [Communications.Dithering](/connect-iq/api-docs/Toybox/Communications/#Dithering-module), :packingFormat as [Communications.PackingFormat](/connect-iq/api-docs/Toybox/Communications/#PackingFormat-module) }, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**) as **Void**) as **Void**
 
-    Initiate an image download request.
+    发起图像下载请求。
 
 - [**makeJsonRequest**](#makeJsonRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\> or **Null**, options as { :method as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), :headers as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) } or **Null**, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**) as **Void**) as **Void** deprecated
 
@@ -1297,7 +1297,7 @@ API 级别 1.3.0
 
 此方法可能在 System 4 之后移除。
 
-Get the MailboxIterator for this Application's mailbox.
+获取此 Application 的邮箱对应的 MailboxIterator。
 
 :::details 支持的设备
 
@@ -1471,7 +1471,7 @@ API 级别 1.0.0
 
 ### **makeImageRequest(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as { :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :maxWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :dithering as [Communications.Dithering](/connect-iq/api-docs/Toybox/Communications/#Dithering-module), :packingFormat as [Communications.PackingFormat](/connect-iq/api-docs/Toybox/Communications/#PackingFormat-module) }, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**) as **Void**)** as **Void**
 
-Initiate an image download request.
+发起图像下载请求。
 
 GCM will scale and dither the image based on the capabilities of the device, but the user will be able to pass additional options (like dithering it down to a one color image)
 

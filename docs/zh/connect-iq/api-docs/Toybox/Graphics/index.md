@@ -713,15 +713,15 @@ Clockwise draw
 
 - [**getFontAscent**](#getFontAscent-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the recommended distance above the baseline for single spaced text.
+    获取单倍行距文本基线以上的建议距离。
 
 - [**getFontDescent**](#getFontDescent-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the recommended distance below the baseline for single spaced text.
+    获取单倍行距文本基线以下的建议距离。
 
 - [**getFontHeight**](#getFontHeight-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the height (ascent plus descent) of the given font.
+    获取给定字体的高度（上升高度加下降高度）。
 
 - [**getVectorFont**](#getVectorFont-instance_function)(options as [Graphics.VectorFontOptions](/connect-iq/api-docs/Toybox/Graphics/#VectorFontOptions-named_type)) as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/) or **Null**
 
@@ -901,7 +901,7 @@ API 级别 3.1.0
 
 ### **getFontAscent(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the recommended distance above the baseline for single spaced text.
+获取单倍行距文本基线以上的建议距离。
 
 The base line is the line on which the text sits.
 
@@ -929,7 +929,7 @@ API 级别 1.2.0
 
 ### **getFontDescent(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the recommended distance below the baseline for single spaced text.
+获取单倍行距文本基线以下的建议距离。
 
 The base line is the line on which the text sits.
 
@@ -957,7 +957,7 @@ API 级别 1.2.0
 
 ### **getFontHeight(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the height (ascent plus descent) of the given font.
+获取给定字体的高度（上升高度加下降高度）。
 
 注意：
 

@@ -50,7 +50,7 @@ API 级别 3.0.0
 
 - [**indexOf**](#indexOf-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the index of a byte within the ByteArray.
+    获取 ByteArray 中字节的索引。
 
 - [**remove**](#remove-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -66,7 +66,7 @@ API 级别 3.0.0
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the size of a ByteArray.
+    获取 ByteArray 的大小。
 
 - [**slice**](#slice-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -183,7 +183,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Indicates that one of the options provided is not valid.
+    指示所提供的选项中有一个无效。
 
 
 ### **encodeNumber(value as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) })** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
@@ -221,7 +221,7 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Indicates that one of the options provided is not valid.
+    指示所提供的选项中有一个无效。
 
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -273,7 +273,7 @@ API 级别 3.0.0
 
 ### **indexOf(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the index of a byte within the ByteArray.
+获取 ByteArray 中字节的索引。
 
 Parameters:
 
@@ -395,7 +395,7 @@ API 级别 3.0.0
 
 ### **size()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the size of a ByteArray.
+获取 ByteArray 的大小。
 
 Returns:
 
