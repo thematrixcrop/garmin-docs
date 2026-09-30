@@ -1,68 +1,70 @@
 ---
 title: "Welcome to Connect IQ"
 ---
-# 欢迎来到"连接智能"
+<a id="welcome-to-connect-iq"></a>
 
-连接智能结合了三个W:
+# 欢迎使用 Connect IQ
 
-- ** 穿着** - - Garmin设备不会在桌子上或口袋里生活.相反,它们被戴在手腕上或安装在自行车上,以帮助我们的用户击败昨天.Garmin在电力管理,活动跟踪和[ANT or ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/)传感器方面的经验意味着我们的用户将花更多的时间使用产品而不是更少的时间充电.
+Connect IQ 融合了三个 W：
 
-虽然它们仍然是高功能设备,即使没有与智能手机相对,但启动这种配对过程将为您的Garmin设备释放一系列新的功能.
+- **Wear（穿戴）**：Garmin 设备不会放在桌面上或装在口袋里，而是佩戴在手腕上或安装在自行车上，帮助用户超越昨天。Garmin 在电源管理、活动跟踪以及 [ANT 和 ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/) 传感器方面的经验，让用户可以把更多时间花在使用产品上，而不是给设备充电。
 
-- **警告** - Garmin的新的Connect IQ应用程序系统允许开发人员将他们的应用程序扩展到Garmin的可穿戴生态系统.
+- **Where（位置）**：位置感知是 Garmin 产品的核心。即使不与智能手机配对，这些设备仍然功能完善；而启动配对流程后，Garmin 设备将获得一系列全新的功能。
+
+- **Ware（软件）**：Garmin 全新的 Connect IQ 应用系统允许开发者将应用扩展到 Garmin 可穿戴设备生态系统。
 
 
-连接智商产品提供了Garmin提供的最好的设计,位置意识和高效的电力管理.使用Connect IQ SDK,开发人员可以为Connect IQ设备创建应用程序,并通过Connect IQ商店发行它们.
+Connect IQ 产品结合了 Garmin 擅长的精美设计、位置感知和高效电源管理。开发者可以使用 Connect IQ SDK 为 Connect IQ 设备创建应用，并通过 Connect IQ 商店发布。
 
-连接智商应用程序是在Monkey C中创建的,这是一个针对对象的语言,旨在简单开发应用程序.Monkey C的目标是简化应用程序构建过程,让开发人员更多地关注客户而不关注资源限制.它使用引用计数来自动清理内存,使您免于专注于内存管理.此外,资源编译器可以帮助您导入字体和图像,以便轻松地将它们在设备之间转换.如果你过去曾使用过JavaTM,PHP,Ruby或PythonTM等动态语言,Monkey C应该非常熟悉.
+Connect IQ 应用使用 Monkey C 编写。Monkey C 是一种面向对象的语言，旨在简化应用开发，让开发者更多关注用户，而不是资源限制。它使用引用计数自动回收内存，减少手动管理内存的负担；资源编译器还可以导入字体和图像，并轻松将它们转换为适用于不同设备的资源。如果您使用过 Java™、PHP、Ruby 或 Python™ 等动态语言，应该会很快熟悉 Monkey C。
 
 ## 设备和 API
 
-*API碎片化*问题对应用程序开发者来说是一个挑战.如果开发者利用新的API,则可能会针对较少客户透的新设备.如果只使用已建立的API,则应用程序可能不会利用新的功能.
+*API 碎片化*是应用开发者面临的挑战。如果开发者使用新 API，应用可能只能面向用户较少的新设备；如果只使用成熟 API，应用又无法利用新功能。
 
-每个Garmin设备都有一些差异:圆屏与方形屏,触摸屏与按,以及根据设备目的不同的传感器阵列.虽然Java的"写一次运行到任何地方"的哲学是一个显著的目标,但创建一个跨越每个Garmin设备的通用API必然会成为最低的共同分母API.
+每款 Garmin 设备都有差异：屏幕可能是圆形或方形，输入方式可能是触摸或按键，传感器配置也会因设备用途而不同。Java 的“编写一次，随处运行”理念很有价值，但要创建一个覆盖所有 Garmin 设备的通用 API，最终必然只能取各设备能力的最低公分母。
 
-与其试图抽象设备中的差异,Connect IQ API是根据运行的设备进行定制的.如果设备有磁测量器,该设备应该有磁测量器 API.如果两个设备都有磁测量器,则该 API 应在它们之间相同.如果设备没有磁测量器,它不会提供该 API.
+Connect IQ API 不会掩盖设备差异，而是针对 API 所运行的设备进行设计。如果设备配备磁力计，就应提供磁力计 API；如果两台设备都配备磁力计，它们使用的 API 应保持一致；如果设备没有磁力计，就不会提供该 API。
 
-查看连接IQ兼容的设备及其功能,请访问[Device Reference](/connect-iq/device-reference/#device-reference)部分.
+要查看兼容 Connect IQ 的设备及其能力，请参阅[设备参考](/connect-iq/device-reference/#device-reference)。
 
 ## 系统级别与 API 级别
 
-连接IQ使用两个版本: *API级别*和 *系统号码*.
+Connect IQ 使用两种版本编号：*API 级别*和*系统编号*。
 
-*API级别*是一个三号版本 (`major.minor.micro`) 规定设备支持的 *潜在* API.如上所述,并非每个设备都支持每个 API,但如果产品在 API级别或以下,则保证不会支持 API.
+*API 级别*是由三个数字组成（`major.minor.micro`）的版本号，表示设备可能支持的 API。并非每台设备都支持该级别的所有 API；但如果产品的 API 级别低于某个 API 所需级别，则一定不支持该 API。
 
-*系统号码*是一个单位数的号码,与最低API级别相关.系统号码通信满足最低API级别的设备集.
+*系统编号*是与最低 API 级别关联的单个数字，用于表示满足该最低 API 级别的一组设备。
 
-运行最新系统的产品可能会获得API更新和 bug fixes. 不运行最新系统的产品可能会在必要时获得更新.
+运行最新系统的产品最有可能获得 API 更新和错误修复。未运行最新系统的产品也可能在必要时获得更新。
 
-## 连接智商的道#
+## Connect IQ 之道
 
-在"子C"背后,有着一种语和理由,
+Monkey C 的设计遵循以下原则，以便开发者更容易支持 Garmin 生态系统中的产品：
 
 1. **开发人员选择支持哪些设备**
 
-连接智商应用程序可以在多个设备上运行,但预期的设备取决于开发人员. 并非每个设备都将针对开发人员想要的市场或提供开发人员想要提供的体验.开发人员不应该被迫支持他们不想的设备.
+Connect IQ 应用可以运行在多台设备上，但支持哪些设备由开发者决定。并非每台设备都适合开发者的目标市场或用户体验，开发者不应被迫支持不需要的设备。
 
 2.  **开发者工具应帮助开发者支持多种设备**
 
-开发人员工具减轻了支持多个设备的重量.资源编译器隐藏了设备特定的板和方向.它还允许每个设备覆盖资源,允许在资源XML中指定不同的图像,字体和页面布局.模拟器只需要暴露特定设备支持的API,以便开发人员可以测试设备支持.
+开发者工具会降低支持多台设备的负担。资源编译器会隐藏设备特有的调色板和方向，还允许按设备覆盖资源，从而在资源 XML 中指定不同的图像、字体和页面布局。模拟器只暴露目标设备支持的 API，让开发者可以测试设备兼容性。
 
 3.  **相似设备应具有相似的 API**
 
-不是所有的设备都是一样的,但它们之间往往存在共同点.两个不同的手表可能具有不同的显示技术,但它们都支持位图,字体,用户事件,[ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/)和[BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy).编写体育应用程序的开发人员不应该完全重新编写他们的应用程序以支持多个设备.
+设备并不完全相同，但通常具有共同能力。两款手表可能采用不同的显示技术，却都支持位图、字体、用户事件、[ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/) 和 [BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy)。开发体育应用的开发者不应为了支持多台设备而完全重写应用。
 
 4. **在运行时,开发人员可以询问系统"有什么"**
 
-连接 IQ 应用程序是动态地与系统链接的.如果应用程序引用一个在特定系统上不存在的 API,应用程序将在运行时失败,当应用程序引用 API,而不是像C++这样的加载时间. 这允许应用程序通过利用"`has`"操作员避免打电话.
+Connect IQ 应用会在运行时与系统动态链接。如果应用引用了特定系统中不存在的 API，只有在实际引用该 API 时才会运行失败，而不是像 C++ 那样在加载时失败。应用可以利用 `has` 运算符先检查能力，从而避免调用不存在的 API。
 
 
 ## 概述
 
-| Section | 说明 |
+| 部分 | 说明 |
 | --- | --- |
-| [入门](/connect-iq/connect-iq-basics/getting-started/#getting-started) |步骤指导安装 Connect IQ工具|
-| [你的第一个应用](/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | 使用 Connect IQ 创建您的第一个表盘 |
-| [应用类型](/connect-iq/connect-iq-basics/app-types/#app-types) |了解手表面部应用程序类型以及必须考虑的内容|
+| [入门](/connect-iq/connect-iq-basics/getting-started/#getting-started) | 分步安装 Connect IQ 工具 |
+| [您的第一个应用](/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | 使用 Connect IQ 创建第一个表盘 |
+| [应用类型](/connect-iq/connect-iq-basics/app-types/#app-types) | 了解表盘应用类型及其注意事项 |
 
-经验丰富的Connect IQ开发人员阅读这篇文章,可能会想知道我们是否试图实现搜索,答案是肯定的.
+有经验的 Connect IQ 开发者可能会疑惑，我们是不是想让“fetch”流行起来。答案是肯定的，毕竟它确实很“fetch”。
