@@ -139,7 +139,7 @@ API 级别 3.0.0
 
 - [**clear**](#clear-instance_function)() as **Void**
 
-    Clear all the objects from the map.
+    清除地图中的所有对象。
 
 - [**getMapMode**](#getMapMode-instance_function)() as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
 
@@ -174,7 +174,7 @@ API 级别 3.0.0
 
 ### **clear()** as **Void**
 
-Clear all the objects from the map.
+清除地图中的所有对象。
 
 Removes all [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) and [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) objects.
 

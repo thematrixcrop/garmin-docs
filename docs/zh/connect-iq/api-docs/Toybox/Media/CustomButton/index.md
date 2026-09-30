@@ -26,7 +26,7 @@ API 级别 3.0.3
 
 - [**getImage**](#getImage-instance_function)(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**
 
-    Called by the system to draw the button in the Media Player.
+    由系统调用以绘制 Media Player 中的按钮。
 
 - [**getState**](#getState-instance_function)() as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)
 
@@ -41,7 +41,7 @@ API 级别 3.0.3
 
 ### **getImage(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**
 
-Called by the system to draw the button in the Media Player
+由系统调用以绘制 Media Player 中的按钮
 
 注意：
 

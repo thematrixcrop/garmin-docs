@@ -26,30 +26,30 @@ API 级别 1.3.0
 
 - [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Compare the unicode code point self to some other numeric value.
+    将 self 的 Unicode 码点与其他某个数值进行比较。
 
 - [**toLower**](#toLower-instance_function)() as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-    Convert a Char to lowercase.
+    将 Char 转换为小写。
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Convert a Char to a Number.
+    将 Char 转换为 Number。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a Char to a String.
+    将 Char 转换为 String。
 
 - [**toUpper**](#toUpper-instance_function)() as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-    Convert a Char to uppercase.
+    将 Char 转换为大写。
 
 
 ## 实例方法详情
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Compare the unicode code point self to some other numeric value.
+将 self 的 Unicode 码点与其他某个数值进行比较。
 
 Parameters:
 
@@ -78,7 +78,7 @@ Throws:
 
 ### **toLower()** as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Convert a Char to lowercase.
+将 Char 转换为小写。
 
 Returns:
 
@@ -93,7 +93,7 @@ API 级别 1.3.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Convert a Char to a Number.
+将 Char 转换为 Number。
 
 Returns:
 
@@ -108,7 +108,7 @@ API 级别 1.3.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a Char to a String.
+将 Char 转换为 String。
 
 Returns:
 
@@ -123,7 +123,7 @@ API 级别 1.3.0
 
 ### **toUpper()** as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Convert a Char to uppercase.
+将 Char 转换为大写。
 
 Returns:
 

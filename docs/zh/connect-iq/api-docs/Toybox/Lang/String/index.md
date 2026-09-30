@@ -375,9 +375,9 @@ Parameters:
 
     The base of the input string. If the value of `base` is zero, the string content is expected to have syntax similar to that of integer constants, which includes:
 
-- An optional sign character ('+' or '-')
+- 可选的符号字符（'+' 或 '-'）
 
-- An optional prefix for octal or hexadecimal ('0' or '0x')
+- 八进制或十六进制数的可选前缀（'0' 或 '0x'）
 
 - 指定前缀进制中的一串数字；如果未指定进制，则为十进制。如果进制值介于 2 和 36 之间，则该数字的格式必须是表示指定基数的有效数字和/或字母（从 '0' 到 'z'，或在基数为 36 时使用 'Z'）。
 
@@ -469,9 +469,9 @@ Parameters:
 
     The base of the input string. If the value of `base` is zero, the string content expected to have syntax similar to that of integer constants, which includes:
 
-- An optional sign character ('+' or '-')
+- 可选的符号字符（'+' 或 '-'）
 
-- An optional prefix for octal or hexadecimal ('0' or '0x')
+- 八进制或十六进制数的可选前缀（'0' 或 '0x'）
 
 - 指定前缀进制中的一串数字；如果未指定进制，则为十进制。如果进制值介于 2 和 36 之间，则该数字的格式必须是表示指定基数的有效数字和/或字母（从 '0' 到 'z'，或在基数为 36 时使用 'Z'）。
 

@@ -187,7 +187,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of [RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/) objects
+    包含 [RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/) 个对象的数组
 
 
 Since:

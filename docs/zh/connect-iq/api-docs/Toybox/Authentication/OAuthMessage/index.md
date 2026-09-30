@@ -18,7 +18,7 @@ Toybox.Authentication.Message
 
 ## 概述
 
-An OAuthMessage received by the callback registered in [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function).
+由注册到 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function) 的回调接收的 OAuthMessage。
 
 Unlike the `data` in the [Message](/connect-iq/api-docs/Toybox/Authentication/Message/) parent class, data in an OAuthMessage should always be a [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/).
 

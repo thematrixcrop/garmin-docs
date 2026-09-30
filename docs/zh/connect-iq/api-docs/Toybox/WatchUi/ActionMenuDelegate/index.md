@@ -147,11 +147,11 @@ API 级别 3.4.0
 
 - [**onBack**](#onBack-instance_function)() as **Void**
 
-    An ActionMenu back key was pressed.
+    按下了 ActionMenu 返回键。
 
 - [**onSelect**](#onSelect-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
 
-    An ActionMenuItem was selected.
+    选择了 ActionMenuItem。
 
 
 ## 实例方法详情
@@ -166,7 +166,7 @@ API 级别 3.4.0
 
 ### **onBack()** as **Void**
 
-An ActionMenu back key was pressed.
+按下了 ActionMenu 返回键。
 
 Since:
 
@@ -174,7 +174,7 @@ API 级别 3.4.0
 
 ### **onSelect(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/))** as **Void**
 
-An ActionMenuItem was selected.
+选择了 ActionMenuItem。
 
 Parameters:
 

@@ -804,7 +804,7 @@ Parameters:
 
 - percentageComplete — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    An integer from 0 to 100 indicating the completion percentage.
+    一个从 0 到 100 的整数，表示完成百分比。
 
 
 另见：

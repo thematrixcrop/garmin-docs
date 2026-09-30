@@ -32,15 +32,15 @@ API 级别 3.1.0
 
 - [**onCharacteristicChanged**](#onCharacteristicChanged-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    After enabling notifications or indications on a characteristic by enabling the appropriate bit of the CCCD of the characteristic this function will be called after every change to the characteristic.
+    通过启用该特征的 CCCD 中相应的位来启用通知或指示后，每次特征发生更改时都会调用此函数。
 
 - [**onCharacteristicRead**](#onCharacteristicRead-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function will be called when the operation is completed.
+    使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function) 请求读取特征后，操作完成时将调用此函数。
 
 - [**onCharacteristicWrite**](#onCharacteristicWrite-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function will be called when the operation is completed.
+    使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function) 请求写入特征后，操作完成时将调用此函数。
 
 - [**onConnectedStateChanged**](#onConnectedStateChanged-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), state as [BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module)) as **Void**
 
@@ -48,15 +48,15 @@ API 级别 3.1.0
 
 - [**onDescriptorRead**](#onDescriptorRead-instance_function)(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function will be called when the operation is completed.
+    使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) 请求读取描述符后，操作完成时将调用此函数。
 
 - [**onDescriptorWrite**](#onDescriptorWrite-instance_function)(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function will be called when the operation is completed.
+    使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) 请求写入描述符后，操作完成时将调用此函数。
 
 - [**onEncryptionStatus**](#onEncryptionStatus-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After requesting a new bond or reconnecting to a device with a previously established bond, this function will be called with the current encryption status.
+    请求建立新的绑定或重新连接到之前已建立绑定的设备后，将使用当前加密状态调用此函数。
 
 - [**onProfileRegister**](#onProfileRegister-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
@@ -83,7 +83,7 @@ API 级别 3.1.0
 
 ### **onCharacteristicChanged(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-After enabling notifications or indications on a characteristic by enabling the appropriate bit of the CCCD of the characteristic this function will be called after every change to the characteristic.
+通过启用该特征的 CCCD 中相应的位来启用通知或指示后，每次特征发生更改时都会调用此函数。
 
 Parameters:
 
@@ -102,7 +102,7 @@ API 级别 3.1.0
 
 ### **onCharacteristicRead(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function will be called when the operation is completed.
+使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function) 请求读取特征后，操作完成时将调用此函数。
 
 Parameters:
 
@@ -125,7 +125,7 @@ API 级别 3.1.0
 
 ### **onCharacteristicWrite(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function will be called when the operation is completed.
+使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function) 请求写入特征后，操作完成时将调用此函数。
 
 Parameters:
 
@@ -163,7 +163,7 @@ API 级别 3.1.0
 
 ### **onDescriptorRead(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function will be called when the operation is completed.
+使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) 请求读取描述符后，操作完成时将调用此函数。
 
 Parameters:
 
@@ -186,7 +186,7 @@ API 级别 3.1.0
 
 ### **onDescriptorWrite(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function will be called when the operation is completed.
+使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) 请求写入描述符后，操作完成时将调用此函数。
 
 Parameters:
 
@@ -205,7 +205,7 @@ API 级别 3.1.0
 
 ### **onEncryptionStatus(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After requesting a new bond or reconnecting to a device with a previously established bond, this function will be called with the current encryption status.
+请求建立新的绑定或重新连接到之前已建立绑定的设备后，将使用当前加密状态调用此函数。
 
 Parameters:
 

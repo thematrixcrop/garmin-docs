@@ -50,23 +50,23 @@ API 级别 1.0.0
 
 - [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Convert a Long to a Double.
+    将 Long 转换为 Double。
 
 - [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Convert a Long to a Float.
+    将 Long 转换为 Float。
 
 - [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    Convert a Long to a Long.
+    将 Long 转换为 Long。
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Convert a Long to a Number.
+    将 Long 转换为 Number。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a Long to a String.
+    将 Long 转换为 String。
 
 
 ## 实例方法详情
@@ -194,7 +194,7 @@ API 级别 1.0.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Convert a Long to a Double.
+将 Long 转换为 Double。
 
 Returns:
 
@@ -209,7 +209,7 @@ API 级别 1.0.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Convert a Long to a Float.
+将 Long 转换为 Float。
 
 Returns:
 
@@ -224,7 +224,7 @@ API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-Convert a Long to a Long.
+将 Long 转换为 Long。
 
 Returns:
 
@@ -239,7 +239,7 @@ API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Convert a Long to a Number.
+将 Long 转换为 Number。
 
 Returns:
 
@@ -254,7 +254,7 @@ API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a Long to a String.
+将 Long 转换为 String。
 
 Returns:
 

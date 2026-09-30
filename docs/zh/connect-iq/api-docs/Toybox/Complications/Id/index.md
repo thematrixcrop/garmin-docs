@@ -69,7 +69,7 @@ Returns:
 
 - [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) —
 
-    Complication type
+    复杂功能类型
 
 
 Since:
@@ -84,7 +84,7 @@ Parameters:
 
 - id — ([Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module)) —
 
-    Complication type
+    复杂功能类型
 
 
 Since:

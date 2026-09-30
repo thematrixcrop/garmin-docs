@@ -297,7 +297,7 @@ API 级别 3.0.0
 
 224-bit secp224r1 Elliptic Curve
 
-Based on the algebraic structure of elliptic curves over finite fields. ECC requires smaller keys compared to non-ECC cryptography to provide equivalent security.
+基于有限域上椭圆曲线的代数结构。与非 ECC 加密相比，ECC 使用更小的密钥即可提供同等的安全性。
 
 | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
 |
@@ -309,7 +309,7 @@ API 级别 3.0.0
 
 256-bit secp256r1 Elliptic Curve
 
-Based on the algebraic structure of elliptic curves over finite fields. ECC requires smaller keys compared to non-ECC cryptography to provide equivalent security.
+基于有限域上椭圆曲线的代数结构。与非 ECC 加密相比，ECC 使用更小的密钥即可提供同等的安全性。
 
 | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
 |

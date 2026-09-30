@@ -172,7 +172,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of Numbers as integers representing the bytes of the data payload
+    由整数形式的 Number 数组组成，表示数据负载的字节
 
 
 Since:
@@ -187,7 +187,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An Array of Numbers as integers representing the bytes of the data payload
+    由整数形式的 Number 数组组成，表示数据负载的字节
 
 
 Since:

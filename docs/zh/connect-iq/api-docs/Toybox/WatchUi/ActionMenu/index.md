@@ -151,7 +151,7 @@ API 级别 3.4.0
 
 - [**initialize**](#initialize-instance_function)(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)
 
-    Constructor for the ActionMenu.
+    ActionMenu 的构造函数。
 
 
 ## 类型定义详情
@@ -188,7 +188,7 @@ Throws:
 
 ### **initialize(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)**
 
-Constructor for the ActionMenu.
+ActionMenu 的构造函数。
 
 Parameters:
 

@@ -37,7 +37,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(c as [Ant.ChannelType](/connect-iq/api-docs/Toybox/Ant/#ChannelType-module), n as [Ant.NetworkType](/connect-iq/api-docs/Toybox/Ant/#NetworkType-module))
 
-    Constructor By default disables background scanning.
+    构造函数，默认情况下禁用后台扫描。
 
 - [**isBackgroundScanEnabled**](#isBackgroundScanEnabled-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -74,7 +74,7 @@ API 级别 1.0.0
 
 ### **initialize(c as [Ant.ChannelType](/connect-iq/api-docs/Toybox/Ant/#ChannelType-module), n as [Ant.NetworkType](/connect-iq/api-docs/Toybox/Ant/#NetworkType-module))**
 
-Constructor By default disables background scanning.
+构造函数，默认情况下禁用后台扫描。
 
 Parameters:
 

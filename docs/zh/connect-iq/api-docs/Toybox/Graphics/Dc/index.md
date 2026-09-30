@@ -198,7 +198,7 @@ API 级别 1.0.0
 
 - [**setClip**](#setClip-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Apply a clipping region to the Dc.
+    为 Dc 应用剪裁区域。
 
 - [**setColor**](#setColor-instance_function)(foreground as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
@@ -1528,7 +1528,7 @@ API 级别 4.0.0
 
 ### **setClip(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Apply a clipping region to the Dc.
+为 Dc 应用剪裁区域。
 
 Pixels outside of the region will not be affected by any operations.
 

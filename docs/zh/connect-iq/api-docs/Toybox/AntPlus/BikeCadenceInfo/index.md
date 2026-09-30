@@ -177,14 +177,14 @@ API 级别 3.0.0
 
 - [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Cadence (rpm).
+    踏频（rpm）。
 
 
 ## 实例属性详情
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Cadence (rpm)
+踏频（rpm）
 
 Since:
 

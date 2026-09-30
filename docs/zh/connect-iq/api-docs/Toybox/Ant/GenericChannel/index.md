@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**close**](#close-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Close a generic ANT Channel.
+    关闭通用 ANT 通道。
 
 - [**disableEncryption**](#disableEncryption-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -79,7 +79,7 @@ API 级别 1.0.0
 
 ### **close()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Close a generic ANT Channel.
+关闭通用 ANT 通道。
 
 Example:
 

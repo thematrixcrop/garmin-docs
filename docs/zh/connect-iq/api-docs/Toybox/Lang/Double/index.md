@@ -50,23 +50,23 @@ API 级别 1.0.0
 
 - [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Convert a Double to a Double.
+    将 Double 转换为 Double。
 
 - [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Convert a Double to a Float.
+    将 Double 转换为 Float。
 
 - [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    Convert a Double to a Long.
+    将 Double 转换为 Long。
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Convert a Double to a Number.
+    将 Double 转换为 Number。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a Double to a String.
+    将 Double 转换为 String。
 
 
 ## 实例方法详情
@@ -88,7 +88,7 @@ API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Compare the numeric value of self to some other numeric value. NaN is
+将 self 的数值与其他某个数值进行比较。NaN 是
 
 ```
   considered greater than all numbers and equal to itself.
@@ -198,7 +198,7 @@ API 级别 1.0.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Convert a Double to a Double.
+将 Double 转换为 Double。
 
 Returns:
 
@@ -213,7 +213,7 @@ API 级别 1.0.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Convert a Double to a Float.
+将 Double 转换为 Float。
 
 Returns:
 
@@ -228,7 +228,7 @@ API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-Convert a Double to a Long.
+将 Double 转换为 Long。
 
 Returns:
 
@@ -243,7 +243,7 @@ API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Convert a Double to a Number.
+将 Double 转换为 Number。
 
 The Double value will be rounded toward 0 upon conversion. For example, 6.8 becomes 6 and -5.7 becomes -5.
 
@@ -260,7 +260,7 @@ API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a Double to a String.
+将 Double 转换为 String。
 
 Returns:
 

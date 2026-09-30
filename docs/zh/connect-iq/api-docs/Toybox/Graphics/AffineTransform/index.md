@@ -105,7 +105,7 @@ API 级别 4.2.0
 
 ### **concatenate(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/))** as **Void**
 
-Apply the given transform
+应用给定的变换
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 
@@ -176,7 +176,7 @@ Throws:
 
 ### **preConcatenate(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/))** as **Void**
 
-Apply the given transform
+应用给定的变换
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 

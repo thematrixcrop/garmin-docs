@@ -17,7 +17,7 @@ API 级别 1.0.0
 
 - 音频内容提供者
 
-- Background (supported since API Level 5.1.0)
+- 背景（自 API Level 5.1.0 起支持）
 
 - 数据字段
 
@@ -792,7 +792,7 @@ Parameters:
 
 - :colorDepth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Color depth in terms of bits/pixel, when missing, default to system value.
+        以位/像素表示的颜色深度；缺失时默认为系统值。
 
 - :bitmapResource — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)) —
 

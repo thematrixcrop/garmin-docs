@@ -82,7 +82,7 @@ API 级别 1.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a Dictionary to a String.
+    将 Dictionary 转换为 String。
 
 - [**values**](#values-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
@@ -216,7 +216,7 @@ API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a Dictionary to a String.
+将 Dictionary 转换为 String。
 
 Due to the nature of hash tables, the order of Dictionary elements are not guaranteed to match the insertion order when converting to a String.
 

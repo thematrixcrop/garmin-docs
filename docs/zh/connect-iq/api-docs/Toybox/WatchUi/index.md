@@ -21,7 +21,7 @@ API 级别 1.0.0
 
 - 音频内容提供者
 
-- Background (supported since API Level 5.1.0)
+- 背景（自 API Level 5.1.0 起支持）
 
 - 数据字段
 
@@ -1018,7 +1018,7 @@ API 级别 3.4.2
 
 - [**animate**](#animate-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), property as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), type as [WatchUi.AnimationType](/connect-iq/api-docs/Toybox/WatchUi/#AnimationType-module), start as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), stop as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), period as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), callback as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**) as **Void**
 
-    Animate an Object.
+    为对象设置动画。
 
 - [**cancelAllAnimations**](#cancelAllAnimations-instance_function)() as **Void**
 
@@ -1026,7 +1026,7 @@ API 级别 3.4.2
 
 - [**configureTouchEvents**](#configureTouchEvents-instance_function)(options as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Configurate touch event settings, only allowed for Watch Apps and Audio Content Providers when running in the foreground mode.
+    配置触摸事件设置；仅当 Watch Apps 和音频内容提供程序以前台模式运行时允许配置。
 
 - [**getCurrentView**](#getCurrentView-instance_function)() as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) or **Null**, [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null** \]
 
@@ -1107,7 +1107,7 @@ API 级别 1.0.0
 
 ### **animate(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), property as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), type as [WatchUi.AnimationType](/connect-iq/api-docs/Toybox/WatchUi/#AnimationType-module), start as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), stop as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), period as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), callback as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**)** as **Void**
 
-Animate an Object.
+为对象设置动画。
 
 Animate works by changing an object property over time, such as the x-position of a Drawable. The animation starts after the call and runs the length of the specified period. During this time, the View object's onUpdate() method will be invoked at an increased rate to facilitate animation.
 
@@ -1189,7 +1189,7 @@ API 级别 3.1.7
 
 ### **configureTouchEvents(options as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Configurate touch event settings, only allowed for Watch Apps and Audio Content Providers when running in the foreground mode.
+配置触摸事件设置；仅当 Watch Apps 和音频内容提供程序以前台模式运行时允许配置。
 
 Parameters:
 
@@ -1403,7 +1403,7 @@ Parameters:
 
 - resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    An identifier for a resource defined in the project's `resources.xml` file
+    项目 `resources.xml` 文件中定义的资源标识符
 
 
 Example:

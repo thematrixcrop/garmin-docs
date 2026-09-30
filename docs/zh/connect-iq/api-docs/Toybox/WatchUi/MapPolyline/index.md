@@ -142,7 +142,7 @@ API 级别 3.0.0
 
 - [**clear**](#clear-instance_function)() as **Void**
 
-    Clear all the [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects from the MapPolyline object's location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
+    从 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 清除所有 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 - [**getLocation**](#getLocation-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -180,7 +180,7 @@ API 级别 3.0.0
 
 ### **clear()** as **Void**
 
-Clear all the [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects from the MapPolyline object's location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
+从 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 清除所有 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 Since:
 

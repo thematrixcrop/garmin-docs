@@ -97,7 +97,7 @@ API 级别 1.0.0
 
 - [**ceil**](#ceil-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Compute the ceiling of a value.
+    计算一个值的上限整数。
 
 - [**cos**](#cos-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -105,7 +105,7 @@ API 级别 1.0.0
 
 - [**floor**](#floor-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Compute the floor of a value.
+    计算一个值的下限整数。
 
 - [**ln**](#ln-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -125,7 +125,7 @@ API 级别 1.0.0
 
 - [**pow**](#pow-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Calculate x to the power of y.
+    计算 x 的 y 次幂。
 
 - [**rand**](#rand-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -141,7 +141,7 @@ API 级别 1.0.0
 
 - [**sqrt**](#sqrt-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Calculate the square root of a value.
+    计算一个值的平方根。
 
 - [**srand**](#srand-instance_function)(seed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -284,7 +284,7 @@ API 级别 1.3.0
 
 ### **ceil(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Compute the ceiling of a value.
+计算一个值的上限整数。
 
 Parameters:
 
@@ -333,7 +333,7 @@ API 级别 1.0.0
 
 ### **floor(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Compute the floor of a value.
+计算一个值的下限整数。
 
 Parameters:
 
@@ -471,7 +471,7 @@ Throws:
 
 ### **pow(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Calculate x to the power of y.
+计算 x 的 y 次幂。
 
 Parameters:
 
@@ -566,7 +566,7 @@ API 级别 1.0.0
 
 ### **sqrt(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Calculate the square root of a value.
+计算一个值的平方根。
 
 Parameters:
 
@@ -618,7 +618,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Long](/connect-iq/api-docs/Toybox/Lang/Long/), or [Double](/connect-iq/api-docs/Toybox/Lang/Double/) values with at least two elements.
+    包含 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Long](/connect-iq/api-docs/Toybox/Lang/Long/) 或 [Double](/connect-iq/api-docs/Toybox/Lang/Double/) 值且至少有两个元素的数组。
 
 - xbar — ([Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
@@ -729,7 +729,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Long](/connect-iq/api-docs/Toybox/Lang/Long/), or [Double](/connect-iq/api-docs/Toybox/Lang/Double/) values with at least two elements.
+    包含 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Long](/connect-iq/api-docs/Toybox/Lang/Long/) 或 [Double](/connect-iq/api-docs/Toybox/Lang/Double/) 值且至少有两个元素的数组。
 
 - xbar — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 

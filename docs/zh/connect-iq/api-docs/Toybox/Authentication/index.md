@@ -88,7 +88,7 @@ Parameters:
 
 - resultType — ([Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module)) —
 
-    An OAUTH\_RESULT\_TYPE\_\* value that specifies the format of the result
+    用于指定结果格式的 OAUTH\_RESULT\_TYPE\_\* 值
 
 - resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

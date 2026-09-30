@@ -136,7 +136,7 @@ API 级别 4.0.0
 
 - [**allowTrialMessage**](#allowTrialMessage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check if application trial messages are allowed.
+    检查是否允许应用程序试用消息。
 
 - [**clearProperties**](#clearProperties-instance_function)() as **Void** deprecated
 
@@ -196,7 +196,7 @@ API 级别 4.0.0
 
 - [**isTrial**](#isTrial-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check if the application is in trial mode.
+    检查应用程序是否处于试用模式。
 
 - [**loadProperties**](#loadProperties-instance_function)() as **Void** deprecated
 
@@ -216,7 +216,7 @@ API 级别 4.0.0
 
 - [**onAuthenticationRequest**](#onAuthenticationRequest-instance_function)() as **Void**
 
-    Called when an Application requests to run code on demand, during an authentication process.
+    Application 请求在身份验证过程中按需运行代码时调用。
 
 - [**onBackgroundData**](#onBackgroundData-instance_function)(data as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
 
@@ -260,7 +260,7 @@ API 级别 4.0.0
 
 - [**onValidateProperty**](#onValidateProperty-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Called when a property needs to be validated by the application.
+    应用程序需要验证属性时调用。
 
 - [**openAppSettingsEditor**](#openAppSettingsEditor-instance_function)() as **Void**
 
@@ -283,7 +283,7 @@ API 级别 4.0.0
 
 ### **allowTrialMessage()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check if application trial messages are allowed.
+检查是否允许应用程序试用消息。
 
 Returns `true` if the application should allow the product to push unlock instruction pages for locked apps. Returns `true` by default.
 
@@ -936,7 +936,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
+    包含一个 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 的数组
 
 
 Since:
@@ -1399,7 +1399,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
+    包含一个 [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) 的数组
 
 
 另见：
@@ -1749,7 +1749,7 @@ API 级别 4.2.3
 
 ### **isTrial()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check if the application is in trial mode.
+检查应用程序是否处于试用模式。
 
 This will always return `true` for development build apps. If the app has been signed by the store it will return the current unlock state of the app. This method should not be overridden or your trial mode functionality could cease to function correctly.
 
@@ -2016,7 +2016,7 @@ API 级别 3.0.0
 
 ### **onAuthenticationRequest()** as **Void**
 
-Called when an Application requests to run code on demand, during an authentication process.
+Application 请求在身份验证过程中按需运行代码时调用。
 
 Since:
 
@@ -2460,7 +2460,7 @@ API 级别 3.2.0
 
 ### **onValidateProperty(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Called when a property needs to be validated by the application.
+应用程序需要验证属性时调用。
 
 Parameters:
 

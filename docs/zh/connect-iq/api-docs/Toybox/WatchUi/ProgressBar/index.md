@@ -287,7 +287,7 @@ Parameters:
 
     The initial value for the ProgressBar:
 
-- An increment from 0 to 100
+- 从 0 到 100 的增量
 
 - `null` 表示“忙”
 
@@ -322,7 +322,7 @@ Parameters:
 
     The current value of the ProgressBar:
 
-- An increment from 0 to 100
+- 从 0 到 100 的增量
 
 - `null` 表示“忙”
 

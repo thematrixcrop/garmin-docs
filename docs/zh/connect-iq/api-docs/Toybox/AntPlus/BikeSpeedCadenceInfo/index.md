@@ -178,7 +178,7 @@ API 级别 3.0.0
 
 - [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Cadence (rpm).
+    踏频（rpm）。
 
 - [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -193,7 +193,7 @@ API 级别 3.0.0
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Cadence (rpm)
+踏频（rpm）
 
 Since:
 

@@ -198,7 +198,7 @@ API 级别 3.0.0
 
 - [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    Continue computation of the HMAC by consuming the next chunk of data.
+    通过处理下一段数据继续计算 HMAC。
 
 
 ## 实例方法详情
@@ -256,7 +256,7 @@ Throws:
 
 ### **update(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-Continue computation of the HMAC by consuming the next chunk of data.
+通过处理下一段数据继续计算 HMAC。
 
 重复调用等价于用所有参数拼接后调用一次。
 

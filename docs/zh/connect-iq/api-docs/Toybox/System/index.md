@@ -659,7 +659,7 @@ API 级别 5.1.0
 
 - [**isAppInstalled**](#isAppInstalled-instance_function)(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check the installation status of an app.
+    检查应用程序的安装状态。
 
 - [**print**](#print-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
@@ -892,7 +892,7 @@ API 级别 1.0.0
 
 ### **isAppInstalled(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check the installation status of an app.
+检查应用程序的安装状态。
 
 Parameters:
 

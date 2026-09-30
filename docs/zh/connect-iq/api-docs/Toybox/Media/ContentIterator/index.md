@@ -122,7 +122,7 @@ Returns:
 
 - 若没有剩余轨迹则返回 `null`
 
-- An error object if an error occurred. This can be anything that inherits from [Object](/connect-iq/api-docs/Toybox/Lang/Object/), but it must implement toString().
+- 如果发生错误，则为错误对象。它可以是任何继承自 [Object](/connect-iq/api-docs/Toybox/Lang/Object/) 的对象，但必须实现 toString()。
 
 
 
@@ -182,7 +182,7 @@ Returns:
 
 - `null` if no tracks remain.
 
-- An error object if an error occurred. This can be anything that inherits from [Object](/connect-iq/api-docs/Toybox/Lang/Object/), but it must implement toString().
+- 如果发生错误，则为错误对象。它可以是任何继承自 [Object](/connect-iq/api-docs/Toybox/Lang/Object/) 的对象，但必须实现 toString()。
 
 
 

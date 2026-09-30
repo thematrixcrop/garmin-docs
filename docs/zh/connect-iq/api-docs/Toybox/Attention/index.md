@@ -387,7 +387,7 @@ API 级别 3.4.3
 
 - [**backlight**](#backlight-instance_function)(setting as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Control the display backlight.
+    控制显示背光。
 
 - [**hasFlashlightColor**](#hasFlashlightColor-instance_function)(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -407,7 +407,7 @@ API 级别 3.4.3
 
 ### **backlight(setting as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Control the display backlight.
+控制显示背光。
 
 The backlight will always respect the backlight timeout settings on the device. Behavior of this feature may also change depending on device settings. For example, if a device is set to activate the back light with key presses, the backlight will toggle on with key presses even if the app is written to turn off the back light with a key press.
 
@@ -990,7 +990,7 @@ Parameters:
 
 - vibeProfiles — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An Array of [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) objects
+    包含 [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) 个对象的数组
 
 
 Example:

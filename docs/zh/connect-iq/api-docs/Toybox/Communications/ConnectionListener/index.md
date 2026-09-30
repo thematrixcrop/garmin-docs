@@ -193,18 +193,18 @@ API 级别 1.0.0
 
 - [**onComplete**](#onComplete-instance_function)() as **Void**
 
-    Callback when a communications operation completes.
+    通信操作完成时的回调。
 
 - [**onError**](#onError-instance_function)() as **Void**
 
-    Callback when a communications operation error occurs.
+    通信操作发生错误时的回调。
 
 
 ## 实例方法详情
 
 ### **onComplete()** as **Void**
 
-Callback when a communications operation completes.
+通信操作完成时的回调。
 
 Since:
 
@@ -212,7 +212,7 @@ API 级别 1.0.0
 
 ### **onError()** as **Void**
 
-Callback when a communications operation error occurs.
+通信操作发生错误时的回调。
 
 Since:
 

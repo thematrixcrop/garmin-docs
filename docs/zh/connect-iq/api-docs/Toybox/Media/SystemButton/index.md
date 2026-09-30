@@ -30,7 +30,7 @@ API 级别 3.0.3
 
 - [**getImage**](#getImage-instance_function)(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
-    Called by the system to draw the button in the Media Player.
+    由系统调用以绘制 Media Player 中的按钮。
 
 - [**initialize**](#initialize-instance_function)(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
 
@@ -41,7 +41,7 @@ API 级别 3.0.3
 
 ### **getImage(image as [Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module), state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module), highlighted as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or **Null**
 
-Called by the system to draw the button in the Media Player
+由系统调用以绘制 Media Player 中的按钮
 
 注意：
 

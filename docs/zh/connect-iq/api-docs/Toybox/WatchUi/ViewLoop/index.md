@@ -181,7 +181,7 @@ Loop in the backward direction
 
 - [**changeView**](#changeView-instance_function)(direction as [ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Change the view to the next/previous one in the view loop based on the direction and display the page indicator after transitioning.
+    根据方向将视图更改为视图循环中的下一个或上一个视图，并在转换后显示页面指示器。
 
 - [**initialize**](#initialize-instance_function)(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)
 
@@ -192,7 +192,7 @@ Loop in the backward direction
 
 ### **changeView(direction as [ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Change the view to the next/previous one in the view loop based on the direction and display the page indicator after transitioning.
+根据方向将视图更改为视图循环中的下一个或上一个视图，并在转换后显示页面指示器。
 
 Parameters:
 

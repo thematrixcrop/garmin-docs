@@ -112,13 +112,13 @@ API 级别 3.1.0
     function compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
     }
 
-    Comparable defines an ordering between an object and others.
+    Comparable 定义对象与其他对象之间的排序关系。
 
 - [**Comparator**](#Comparator-named_type) as interface {
     function compare(a as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), b as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
     }
 
-    Comparator defines an ordering between objects.
+    Comparator 定义对象之间的排序关系。
 
 - [**Decimal**](#Decimal-named_type) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 - [**Integer**](#Integer-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
@@ -137,7 +137,7 @@ API 级别 3.1.0
 function compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
 }
 
-Comparable defines an ordering between an object and others.
+Comparable 定义对象与其他对象之间的排序关系。
 
 Comparator can be use to specify an ordering between an object and others.
 
@@ -149,7 +149,7 @@ API 级别 5.0.0
 function compare(a as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), b as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/);
 }
 
-Comparator defines an ordering between objects.
+Comparator 定义对象之间的排序关系。
 
 Comparator can be use to specify an ordering between objects.
 

@@ -239,11 +239,11 @@ API 级别 2.2.0
 
 - [**restoreHeadlightsNetworkModeControl**](#restoreHeadlightsNetworkModeControl-instance_function)() as **Void**
 
-    Bring all headlights under the control of whichever light network mode has been chosen by the user.
+    将所有前灯交由用户选择的灯光网络模式控制。
 
 - [**restoreTaillightsNetworkModeControl**](#restoreTaillightsNetworkModeControl-instance_function)() as **Void**
 
-    Bring all taillights under the control of whichever light network mode has been chosen by the user.
+    将所有尾灯交由用户选择的灯光网络模式控制。
 
 - [**setHeadlightsMode**](#setHeadlightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
@@ -322,7 +322,7 @@ API 级别 2.2.0
 
 ### **restoreHeadlightsNetworkModeControl()** as **Void**
 
-Bring all headlights under the control of whichever light network mode has been chosen by the user.
+将所有前灯交由用户选择的灯光网络模式控制。
 
 Since:
 
@@ -330,7 +330,7 @@ API 级别 2.2.0
 
 ### **restoreTaillightsNetworkModeControl()** as **Void**
 
-Bring all taillights under the control of whichever light network mode has been chosen by the user.
+将所有尾灯交由用户选择的灯光网络模式控制。
 
 Since:
 

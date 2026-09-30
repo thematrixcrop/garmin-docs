@@ -131,7 +131,7 @@ Parameters:
 
 - resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    An identifier for a resource defined in the project's `resources.xml` file
+    项目 `resources.xml` 文件中定义的资源标识符
 
 
 Example:

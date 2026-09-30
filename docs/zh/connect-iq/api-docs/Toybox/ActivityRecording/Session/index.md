@@ -47,15 +47,15 @@ API 级别 1.0.0
 
 - [**discard**](#discard-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Complete the Session by discarding the recorded data.
+    丢弃录制的数据以完成 Session。
 
 - [**isRecording**](#isRecording-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check if recording is active for this Session.
+    检查此 Session 是否正在进行录制。
 
 - [**save**](#save-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Complete the session by storing the FIT file on the file system.
+    将 FIT 文件存储到文件系统以完成 Session。
 
 - [**setTimerEventListener**](#setTimerEventListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**) as **Void**
 
@@ -63,7 +63,7 @@ API 级别 1.0.0
 
 - [**start**](#start-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Begin recording a FIT file on the system.
+    开始在系统上录制 FIT 文件。
 
 - [**stop**](#stop-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -176,7 +176,7 @@ API 级别 1.3.0
 
 ### **discard()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Complete the Session by discarding the recorded data.
+丢弃录制的数据以完成 Session。
 
 Returns:
 
@@ -191,7 +191,7 @@ API 级别 1.0.0
 
 ### **isRecording()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check if recording is active for this Session.
+检查此 Session 是否正在进行录制。
 
 Returns:
 
@@ -206,7 +206,7 @@ API 级别 1.0.0
 
 ### **save()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Complete the session by storing the FIT file on the file system.
+将 FIT 文件存储到文件系统以完成 Session。
 
 Returns:
 
@@ -390,7 +390,7 @@ API 级别 3.0.10
 
 ### **start()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Begin recording a FIT file on the system.
+开始在系统上录制 FIT 文件。
 
 Returns:
 

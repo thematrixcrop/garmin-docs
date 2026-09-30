@@ -142,7 +142,7 @@ API 级别 2.2.0
 
 - [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Average crank cadence calculated from the sensor data in rounds per minute (rpm).
+    根据传感器数据计算出的平均曲柄踏频，单位为每分钟转数（rpm）。
 
 - [**powerSensorType**](#powerSensorType-var) as [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module) or **Null**
 
@@ -153,7 +153,7 @@ API 级别 2.2.0
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Average crank cadence calculated from the sensor data in rounds per minute (rpm).
+根据传感器数据计算出的平均曲柄踏频，单位为每分钟转数（rpm）。
 
 Since:
 

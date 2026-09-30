@@ -178,7 +178,7 @@ Parameters:
 
 - :colorDepth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Color depth in terms of bits/pixel, when missing, default to system value.
+        以位/像素表示的颜色深度；缺失时默认为系统值。
 
 - :bitmapResource — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)) —
 

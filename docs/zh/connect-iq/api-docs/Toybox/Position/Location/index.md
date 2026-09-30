@@ -32,7 +32,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(options as { :latitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :longitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :format as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) })
 
-    Constructor Create a Location based on a set of coordinates.
+    构造函数，根据一组坐标创建 Location。
 
 - [**toDegrees**](#toDegrees-instance_function)() as \[ [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) \]
 
@@ -77,7 +77,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :latitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :longitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :format as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) })**
 
-Constructor Create a Location based on a set of coordinates.
+构造函数，根据一组坐标创建 Location。
 
 Parameters:
 

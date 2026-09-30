@@ -38,23 +38,23 @@ API 级别 1.0.0
 
 - [**toChar**](#toChar-instance_function)() as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-    Convert a Number to a Char.
+    将 Number 转换为 Char。
 
 - [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Convert a Number to a Double.
+    将 Number 转换为 Double。
 
 - [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Convert a Number to a Float.
+    将 Number 转换为 Float。
 
 - [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    Convert a Number to a Long.
+    将 Number 转换为 Long。
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Convert a Number to a Number.
+    将 Number 转换为 Number。
 
 
 ## 实例方法详情
@@ -181,7 +181,7 @@ API 级别 1.0.0
 
 ### **toChar()** as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Convert a Number to a Char.
+将 Number 转换为 Char。
 
 Returns:
 
@@ -196,7 +196,7 @@ API 级别 1.3.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Convert a Number to a Double.
+将 Number 转换为 Double。
 
 Returns:
 
@@ -211,7 +211,7 @@ API 级别 1.0.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Convert a Number to a Float.
+将 Number 转换为 Float。
 
 Returns:
 
@@ -226,7 +226,7 @@ API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-Convert a Number to a Long.
+将 Number 转换为 Long。
 
 Returns:
 
@@ -241,7 +241,7 @@ API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Convert a Number to a Number.
+将 Number 转换为 Number。
 
 Returns:
 

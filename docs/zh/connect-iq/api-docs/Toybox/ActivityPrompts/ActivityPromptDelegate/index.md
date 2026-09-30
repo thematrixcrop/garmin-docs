@@ -28,7 +28,7 @@ API 级别 5.2.0
 
 - [**onAudioOutputChange**](#onAudioOutputChange-instance_function)(selectedHandler as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Called by the system if [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) has been called and the user has changed the activity prompt output provider.
+    如果已调用 [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) 且用户更改了活动提示输出提供程序，则由系统调用。
 
 - [**onPrompt**](#onPrompt-instance_function)(prompts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/)\>, priority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -39,7 +39,7 @@ API 级别 5.2.0
 
 ### **onAudioOutputChange(selectedHandler as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Called by the system if [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) has been called and the user has changed the activity prompt output provider.
+如果已调用 [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) 且用户更改了活动提示输出提供程序，则由系统调用。
 
 Parameters:
 

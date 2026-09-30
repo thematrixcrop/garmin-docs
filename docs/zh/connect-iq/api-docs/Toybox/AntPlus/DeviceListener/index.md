@@ -30,34 +30,34 @@ API 级别 2.2.0
 
 - [**onBatteryStatusUpdate**](#onBatteryStatusUpdate-instance_function)(data as [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/)) as **Void**
 
-    Callback when battery status is received.
+    收到电池状态时的回调。
 
 - [**onDeviceStateUpdate**](#onDeviceStateUpdate-instance_function)(data as [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)) as **Void**
 
-    Callback when device state is updated.
+    设备状态更新时的回调。
 
 - [**onManufacturerInfoUpdate**](#onManufacturerInfoUpdate-instance_function)(data as [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/)) as **Void**
 
-    Callback when manufacturer's information is received.
+    收到制造商信息时的回调。
 
 - [**onMessage**](#onMessage-instance_function)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**
 
-    Callback when ANT message is received.
+    收到 ANT 消息时的回调。
 
 - [**onProductInfoUpdate**](#onProductInfoUpdate-instance_function)(data as [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/)) as **Void**
 
-    Callback when product information is received.
+    收到产品信息时的回调。
 
 - [**onSentMessage**](#onSentMessage-instance_function)(status as [AntPlus.MessageSendStatus](/connect-iq/api-docs/Toybox/AntPlus/#MessageSendStatus-module), sentMesgData as { :messageType as [AntPlus.MessageType](/connect-iq/api-docs/Toybox/AntPlus/#MessageType-module), :pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as **Void**
 
-    After sending a manufacturer message or page request this will be called to indicate message sent status.
+    发送制造商消息或页面请求后，将调用此函数以指示消息发送状态。
 
 
 ## 实例方法详情
 
 ### **onBatteryStatusUpdate(data as [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/))** as **Void**
 
-Callback when battery status is received.
+收到电池状态时的回调。
 
 Parameters:
 
@@ -72,7 +72,7 @@ API 级别 2.2.0
 
 ### **onDeviceStateUpdate(data as [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/))** as **Void**
 
-Callback when device state is updated.
+设备状态更新时的回调。
 
 Parameters:
 
@@ -87,7 +87,7 @@ API 级别 2.2.0
 
 ### **onManufacturerInfoUpdate(data as [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/))** as **Void**
 
-Callback when manufacturer's information is received.
+收到制造商信息时的回调。
 
 Parameters:
 
@@ -102,7 +102,7 @@ API 级别 2.2.0
 
 ### **onMessage(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as **Void**
 
-Callback when ANT message is received.
+收到 ANT 消息时的回调。
 
 Parameters:
 
@@ -117,7 +117,7 @@ API 级别 3.1.0
 
 ### **onProductInfoUpdate(data as [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/))** as **Void**
 
-Callback when product information is received.
+收到产品信息时的回调。
 
 Parameters:
 
@@ -132,7 +132,7 @@ API 级别 2.2.0
 
 ### **onSentMessage(status as [AntPlus.MessageSendStatus](/connect-iq/api-docs/Toybox/AntPlus/#MessageSendStatus-module), sentMesgData as { :messageType as [AntPlus.MessageType](/connect-iq/api-docs/Toybox/AntPlus/#MessageType-module), :pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as **Void**
 
-After sending a manufacturer message or page request this will be called to indicate message sent status.
+发送制造商消息或页面请求后，将调用此函数以指示消息发送状态。
 
 Parameters:
 

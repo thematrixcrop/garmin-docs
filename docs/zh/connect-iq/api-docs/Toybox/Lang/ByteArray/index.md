@@ -74,7 +74,7 @@ API 级别 3.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a ByteArray to a String.
+    将 ByteArray 转换为 String。
 
 
 ## 实例方法详情
@@ -436,7 +436,7 @@ API 级别 3.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a ByteArray to a String.
+将 ByteArray 转换为 String。
 
 This does not convert the elements of the ByteArray into Strings, but transforms the entire ByteArray into a String.
 

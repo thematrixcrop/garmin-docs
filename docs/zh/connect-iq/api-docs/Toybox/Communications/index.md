@@ -891,7 +891,7 @@ API 级别 6.0.0
 
 - [**cancelAllRequests**](#cancelAllRequests-instance_function)() as **Void**
 
-    Cancel all pending JSON and Image requests.
+    取消所有待处理的 JSON 和图像请求。
 
 - [**checkWifiConnection**](#checkWifiConnection-instance_function)(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**) as **Void**
 
@@ -899,7 +899,7 @@ API 级别 6.0.0
 
 - [**emptyMailbox**](#emptyMailbox-instance_function)() as **Void** deprecated
 
-    Clear the contents of the mailbox.
+    清除邮箱内容。
 
 - [**encodeURL**](#encodeURL-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -1000,7 +1000,7 @@ API 级别 1.0.0
 
 ### **cancelAllRequests()** as **Void**
 
-Cancel all pending JSON and Image requests.
+取消所有待处理的 JSON 和图像请求。
 
 The number of active requests running in parallel is limited in the Connect IQ platform. This call will cancel all outstanding requests.
 
@@ -1034,7 +1034,7 @@ API 级别 3.2.0
 
 此方法可能在 System 4 之后移除。
 
-Clear the contents of the mailbox.
+清除邮箱内容。
 
 :::details 支持的设备
 
@@ -1849,7 +1849,7 @@ Parameters:
 
 - resultType — (TokenResult) —
 
-    An OAUTH\_RESULT\_TYPE\_\* value that specifies the format of the result
+    用于指定结果格式的 OAUTH\_RESULT\_TYPE\_\* 值
 
 - resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2204,7 +2204,7 @@ Parameters:
 
 - percentageComplete — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    An integer from 0 to 100 indicating the completion percentage.
+    一个从 0 到 100 的整数，表示完成百分比。
 
 
 :::details 支持的设备
