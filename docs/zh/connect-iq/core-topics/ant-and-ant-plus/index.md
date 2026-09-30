@@ -3,7 +3,7 @@ title: "ANT and ANT+"
 ---
 # ANT 和 ANT+
 
-Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传感器。 Connect IQ 还提供可用 ANT 通道的访问。 This allows developers to communicate with sensors not supported by Garmin. 通过 FIT 录制系统，这些数据可以记录到 Activity 文件中并上传到 Garmin Connect。
+Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传感器。Connect IQ 还提供对可用 ANT 通道的访问，使开发者能够与 Garmin 不支持的传感器通信。通过 FIT 记录系统，这些数据可以记录到 Activity 文件中并上传到 Garmin Connect。
 
 在 [thisisant.com](http://thisisant.com/) 了解有关 ANT 和 ANT+ 的更多信息
 
@@ -14,11 +14,11 @@ Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传�
 
 ## 通用 ANT 通道
 
-Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。 使用此接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
+Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。使用此接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
 
 使用ANT USB dongle,您可以在 Connect IQ模拟器中使用 Connect IQ ANT API.请注意,如果运行,Garmin Express将阻止访问ANT USB dongle,因此确保在使用 Connect IQ模拟器时关闭Garmin Express.
 
-### 在 Linux 中使用 ANT stick
+### 在 Linux 中使用 ANT 棒
 
 为了在 Linux 中使用 ANT 棒,USB 设备必须可访问模拟器.必须安装在系统中一个 udev 规则,以便 ANT 棒充满非根特权.
 
@@ -28,7 +28,7 @@ Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。 使用此接
 $ lsusb
 ```
 
-Identify the ANT stick in the list and its vendor and product id. 示例：
+在列表中找到 ANT 棒以及其供应商和产品 ID。例如：
 
 ```bash
 Bus 001 Device 009: ID 0fcf:1009 Dynastream Innovations, Inc. ANTUSB-m Stick
@@ -158,7 +158,7 @@ MO2Display样品提供了采样应用程序,实现了肌肉氧 ANT 配置文件.
 
 传感器特定的听器的扩展被传输到构造器中,用于[AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)的传感器特定的扩展.如果有给定的类型的传感器与用户设备相对,则可以使用传感器特定的getters或通过[Device.getBatteryStatus()](/connect-iq/api-docs/Toybox/AntPlus/Device/#getBatteryStatus-instance_function)等常见的数据getters获取有关传感器的信息.
 
-Callbacks in the [AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) and extensions of it will be called automatically if a sensor of the given type is paired and the corresponding information is updated via ANT. For example, [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function) will be called if a sensor's ANT channel goes from connected to searching, or if the user switches the sensor ID of a given type that their device is connected to. Callbacks like 将在...时调用 new pieces of information about a power sensor are received via ANT.
+如果指定类型的传感器已配对，且相应信息通过 ANT 更新，则会自动调用 [AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) 及其扩展中的回调。例如，当传感器的 ANT 通道从已连接变为搜索状态，或用户切换设备当前连接的指定类型传感器 ID 时，会调用 [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function)。通过 ANT 接收到功率传感器的新信息时，也会调用类似的回调。
 
 某些ANT+传感器,如自行车灯,具有特殊的回调.例如,回调应应应用于了解光网络的状态而不是[DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function).[AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/)类将允许您对自行车灯模式进行更改,因为有自行车灯与用户设备配对,并且光网络完全形成.
 
