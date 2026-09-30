@@ -3,13 +3,31 @@ import { defineConfig } from '@rspress/core';
 const SITE_TITLE_EN = 'Garmin Connect IQ Docs';
 const SITE_TITLE_ZH = 'Garmin Connect IQ 文档';
 
+/**
+ * GitHub Pages project sites live under `/<repo>/`. CI injects RSPRESS_BASE
+ * from `actions/configure-pages`. Local `pnpm dev` / `pnpm preview` keep
+ * serving at `/`.
+ */
+function resolveBase(): string {
+  const raw = process.env.RSPRESS_BASE?.trim();
+  if (!raw || raw === '/') {
+    return '/';
+  }
+  const withLeading = raw.startsWith('/') ? raw : `/${raw}`;
+  return withLeading.endsWith('/') ? withLeading : `${withLeading}/`;
+}
+
+const base = resolveBase();
+
+console.info(`[rspress] base=${base}`);
+
 // Nav and sidebar are intentionally NOT declared here. They are generated from
 // the per-language _nav.json and _meta.json files, which the pipeline emits from
 // the source site's own navigation order.
 export default defineConfig({
   root: 'docs',
   lang: 'en',
-  base: '/',
+  base,
   // Site title/description are per-locale; a root-level `title` would override
   // them and leak the English name into the Chinese <title>.
   locales: [

@@ -1,0 +1,72 @@
+# Build the Rspress site and publish it to GitHub Pages.
+# Live URL: https://thematrixcrop.github.io/garmin-docs/
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build with Rspress
+        env:
+          RSPRESS_BASE: ${{ steps.pages.outputs.base_path }}
+        run: |
+          echo "Pages origin=${{ steps.pages.outputs.origin }}"
+          echo "Pages base_path=${{ steps.pages.outputs.base_path }}"
+          echo "Pages base_url=${{ steps.pages.outputs.base_url }}"
+          pnpm build
+          echo "Build output:"
+          du -sh doc_build
+          find doc_build -maxdepth 2 -type d | head -n 40
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: doc_build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
