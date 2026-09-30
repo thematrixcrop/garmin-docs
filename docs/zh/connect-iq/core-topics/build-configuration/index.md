@@ -3,88 +3,88 @@ title: "Build Configuration"
 ---
 # 构建配置
 
-连接IQ支持各种Garmin设备,如手表,自行车电脑和手持电脑.即使在这些更广泛的类别内,设备也可以具有不同的屏幕尺寸,形状和分辨率.应用程序开发人员可能希望为某些设备或设备家庭定义特定资源,如字体和位图图形,以获得更好的用户体验.例如,应用程序可能需要使用圆形设备的圆形背景图像和方形设备的方形背景图像.
+Connect IQ 支持各种 Garmin 设备，例如手表、自行车电脑和手持设备。即使属于同一类别，设备也可能具有不同的屏幕尺寸、形状和分辨率。开发者可以为特定设备或设备系列定义字体、位图等资源，以获得更好的用户体验。例如，圆形设备可能需要圆形背景图像，而方形设备需要方形背景图像。
 
-连接智商提供管理应用资源的一些方法:设备和家庭资格,林和构建排斥.
+Connect IQ 提供多种管理应用资源的方式：设备限定符、系列限定符、本地化限定符、Jungle 和构建排除。
 
 ## 设备、系列和本地化限定符
 
 覆盖资源最简单的方法是使用设备、系列和本地化限定符：在 resources 文件夹名称后添加连字符（`-`）和有效的限定符值。下面来看一个示例：
 
-图1.图1:使用fēnix 5设备资源资格的项目
+图 1：使用 fēnix 5 设备限定符的项目
 
 ![](/connect-iq/resources/programmers-guide/qualifier-project.png)
 
-在图1中,`resources-fenix5`目录使用`-fenix5`资格分类专门用于fēnix5的资源.当这个项目为fēnix5构建时,`resources-fenix5`目录中的布局和绘制可用于显示与更通用的`resources`目录中不同的背景图像.所有其他支持产品将与默认资源进行编译.
+在图 1 中，`resources-fenix5` 目录使用 `-fenix5` 限定符，专门存放 fēnix 5 的资源。针对 fēnix 5 构建项目时，系统会使用该目录中的布局和可绘制资源来显示不同于通用 `resources` 目录的背景图像。其他支持的产品仍会使用默认资源进行编译。
 
-** 注:** 单个文件上可以使用通过字符串分开的多个资格,但设备资格不允许与相同文件名称的家庭资格共存 (例如`resources-round-fenix3`)) ,如果遇到,资源编译器将会跳过.
+**注意：** 一个文件夹名称可以包含多个以连字符分隔的限定符，但设备限定符不能与系列限定符同时出现在同一个名称中（例如 `resources-round-fenix3`）。如果遇到这种名称，资源编译器会跳过该文件夹。
 
 ### 设备限定符
 
-设备资格格格式允许资源针对特定设备 (如图1所示).包含设备资格格的文件中的资源将在构建相关设备时覆盖基础资源文件中定义的相同ID的资源.设备资格也优先于较少特定的资格,如家庭资格.
+设备限定符允许资源针对特定设备（如图 1 所示）。使用设备限定符的文件夹中的资源，在为对应设备构建时会覆盖基础资源文件夹中具有相同 ID 的资源。设备限定符的优先级也高于系列限定符等更宽泛的限定符。
 
 ### 系列限定符
 
-家庭资格格格式允许资源针对特定设备家庭,这是由共享屏幕特性区分的设备组.有两个家庭资格:
+系列限定符允许资源针对特定设备系列，即由共同屏幕特征区分的一组设备。系列限定符有两种：
 
-- **屏幕形状:**屏幕的形状 (例如`round`,`rectangle`等)
+- **屏幕形状**：屏幕的形状（例如 `round`、`rectangle`）。
 
-- **屏幕尺寸:** 屏幕的物理尺寸在像素中 (例如`218x218`,`148x205`等)
-
-
-在使用家庭资格表示器时,必须总是指定屏幕形状,并且可以添加屏幕大小以进一步完善目标家庭.以下是一些有效和无效的家庭资格表示器示例:
-
--`resources-round`: *有效*针对圆屏设备,如Fēnix3系列和Fēnix5系列
-
--`resources-round-218x218`: *有效*目标218px x 218px,圆屏设备,如fēnix 3和fēnix 5S (但不是5或5X,因为它们有240px x 240px的屏幕)
-
--`resources-218x218`: *无效*资源编译器会忽略这个,因为没有指定屏幕形状
-
--`resources-218x218-round`: *无效*屏幕形状未被先指定
+- **屏幕尺寸**：屏幕的像素尺寸（例如 `218x218`、`148x205`）。
 
 
-具有更具体的资格的资源总是优先于更少的资格,因此在一个圆形的218px x218px设备上,任何包含在`resources-round-218x218`资源文件中的资源都会被使用,如果它们共享ID.此外,任何载有家庭资格的资源文件将总是转移到设备资格的资源文件.
+使用系列限定符时必须指定屏幕形状，也可以添加屏幕尺寸来进一步缩小目标范围。以下是有效和无效的示例：
+
+- `resources-round`：*有效*，针对圆形屏幕设备，例如 fēnix 3 和 fēnix 5 系列。
+
+- `resources-round-218x218`：*有效*，针对 218 x 218 像素的圆形屏幕设备，例如 fēnix 3 和 fēnix 5S（不包括屏幕为 240 x 240 像素的 fēnix 5 和 5X）。
+
+- `resources-218x218`：*无效*，因为没有指定屏幕形状，资源编译器会忽略它。
+
+- `resources-218x218-round`：*无效*，屏幕形状必须排在尺寸之前。
+
+
+更具体的限定符始终优先于更宽泛的限定符。因此，在 218 x 218 像素的圆形设备上，如果资源 ID 相同，会优先使用 `resources-round-218x218` 中的资源，而不是 `resources-round` 中的资源。此外，带系列限定符的资源文件夹始终让位于带设备限定符的文件夹。
 
 ### 本地化限定符
 
 本地化限定符用于指定特定语言的字符串资源，其值采用 [ISO 639-2 语言代码](https://www.loc.gov/standards/iso639-2/php/code_list.php)。这些限定符可以与设备或系列限定符组合，并且在限定符命名方案中始终放在最后。例如：
 
--`resources-fre`:为所有设备提供法语语言特定的字符串资源
+- `resources-fre`：为所有设备提供法语字符串资源。
 
--`resources-round-fre`:仅为圆形设备提供法语特定字符串资源
+- `resources-round-fre`：仅为圆形设备提供法语字符串资源。
 
--`resources-fenix5s-fre`:仅为fēnix 5设备提供法语特定字符串资源
+- `resources-fenix5s-fre`：仅为 fēnix 5S 设备提供法语字符串资源。
 
 
 ## 通过 Jungles 进行构建配置
 
-连接智商运行在各种目的构建设备上.由于输入,屏幕形状和资源的多样性,通常需要包含针对特定条件的代码和资源.例如,在一个方形设备上,进步可能是矩形,但在一个圆的设备上,它可能看起来更好,像一个围绕屏幕的弧形.
+Connect IQ 运行在用途各异的专用设备上。由于输入方式、屏幕形状和资源存在差异，通常需要为特定条件提供相应的代码和资源。例如，进度条在方形设备上可以是矩形，在圆形设备上则可能更适合显示为环绕屏幕的弧线。
 
-林允许开发人员为子C项目编写自定义构建配置.
+Jungle 允许开发者为 Monkey C 项目编写自定义构建配置。
 
-- 定义每个设备或每个设备的源和资源目录的家庭路径
+- 为每台设备或设备系列定义源代码和资源目录路径。
 
-- 排除注释的源代码部分
+- 使用注解排除部分源代码。
 
-- 指定项目建设时应包含的[Monkey Barrels](/connect-iq/core-topics/shareable-libraries/#shareable-libraries).
+- 指定构建项目时应包含的 [Monkey Barrel](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)。
 
 
 ### 按设备配置
 
-林允许对所有产品,屏幕形状或特定产品设置源路径,资源路径和排斥.
+Jungle 允许按所有产品、屏幕形状或特定产品设置源代码路径、资源路径和排除项。
 
-|姓名|描述|
+| 名称 | 说明 |
 | --- | --- |
-| `base` |配置适用于所有产品|
-| `round` |配置适用于圆屏产品|
-| `semiround` |配置适用于半圆屏幕的产品|
-| `rectangle` |配置适用于矩形或方形屏幕的产品|
-| `semioctagon` |配置适用于具有子窗口的八角屏幕的产品|
-| `<product id>` |配置适用于特定产品.`<product id>`与表格文件中使用的相同|
+| `base` | 配置适用于所有产品 |
+| `round` | 配置适用于圆形屏幕产品 |
+| `semiround` | 配置适用于半圆形屏幕产品 |
+| `rectangle` | 配置适用于矩形或方形屏幕产品 |
+| `semioctagon` | 配置适用于带子窗口的八边形屏幕产品 |
+| `<product id>` | 配置适用于特定产品。`<product id>` 与清单文件中使用的值相同 |
 
-对于`round`,`semiround`,`semi-octagon`和`rectangle`标识符,可添加可选的`-<width>x<height>`后音,以缩小范围.
+对于 `round`、`semiround`、`semi-octagon` 和 `rectangle` 标识符，可以添加可选的 `-<width>x<height>` 后缀来缩小范围。
 
-假设您正在编写一个可穿戴的应用程序,该应用程序为圆形,半圆形和矩形布局提供不同的资源. Venu 还有一个AMOLED特定的实现. 林让在一个地方更容易管理项目构建配置:
+假设您正在编写一个可穿戴应用，为圆形、半圆形和矩形布局提供不同资源，且 Venu 还有专用的 AMOLED 实现。Jungle 可以让您在一个地方管理项目构建配置：
 
 ```
 base.sourcePath = source
@@ -99,11 +99,11 @@ venu.sourcePath = $(base.sourcePath);source-venu
 venu.resourcePath = $(base.resourcePath);resource-venu
 ```
 
-这些指令将所有设备的源路径设置为`source`. 它告诉构建系统分别使用圆,半圆和矩形的`resource-round`,`resource-semiround`和`resource-rectangle`路径.最后,Venu增加了额外的源和资源文件.
+这些指令将所有设备的源路径设为 `source`，并告诉构建系统分别为圆形、半圆形和矩形设备使用 `resource-round`、`resource-semiround` 和 `resource-rectangle` 路径。最后，为 Venu 添加额外的源代码和资源目录。
 
 ### 感到被排除在外
 
-现在,假设我们在应用程序中有一些代码只应该运行在圆形产品上,
+现在假设应用中有一段代码只应在圆形产品上运行：
 
 ```typescript
 (:roundVersion)
@@ -117,7 +117,7 @@ function drawThis(dc) {
 }
 ```
 
-我们不想将这两个版本都包含在任何可执行的版本中,因为其中一个版本只是死码. 林允许我们使用排除来指定这一点.
+我们不希望两个版本都编译进任何可执行文件，因为其中一个版本会成为无效代码。Jungle 可以通过排除项表达这一点。
 
 ```bash
 # Say that all products exclude declarations
@@ -128,6 +128,6 @@ base.excludeAnnotations = roundVersion
 round.excludeAnnotations = regularVersion
 ```
 
-在构建产品应用程序时,圆型产品将排除`drawThis`的版本与`:regularVersion`注释,其余的产品将排除`drawThis`的版本与`:roundVersion`注释.
+为产品构建应用时，圆形产品会排除带 `:regularVersion` 注解的 `drawThis` 版本，其他产品会排除带 `:roundVersion` 注解的版本。
 
-更多关于如何使用林的信息请参阅[Jungle Reference Guide](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide).
+有关 Jungle 用法的更多信息，请参阅 [Jungle 参考指南](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide)。
