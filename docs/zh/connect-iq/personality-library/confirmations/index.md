@@ -40,21 +40,21 @@ WatchUi.pushView(
 ```xml
 <!-- layout.xml -->
 
-    <!-- A Delete Confirmation page -->
+    <!-- 删除确认页面 -->
     <layout id="DeleteConfirmationPage">
-        <!-- Confirm -->
+        <!-- 确认 -->
         <bitmap id="confirmIcon" personality="
             confirmation_icon__hint_confirm
             confirmation_loc__hint_confirm
         " />
 
-        <!-- Delete -->
+        <!-- 删除 -->
         <bitmap id="deleteIcon" personality="
             confirmation_icon__hint_delete
             confirmation_loc__hint_delete
         " />
 
-        <!-- Prompt body -->
+        <!-- 提示正文 -->
         <text-area text="@Strings.deletePrompt" personality="
             confirmation_color_dark__body
             confirmation_size__body
@@ -94,15 +94,15 @@ WatchUi.pushView(
 ```
 
 ```typescript
-// Helper Functions
+// 辅助函数
 
 import Rez.Styles;
 
-//! Function to see if a tap falls within the touch area for
-//! the confirm touch area.
-//! @param x X coord of tap
-//! @param y Y coord of tap
-//! @return true if tapped, false otherwise
+//! 检查点击是否落在
+//! 确认触摸区域内。
+//! @param x 点击的 X 坐标
+//! @param y 点击的 Y 坐标
+//! @return 点击时为 true，否则为 false
 function isInConfirmArea(coord as Array<Numeric>) as Boolean {
     if (Styles.confirmation_input__confirm has :x1 &&
         Styles.confirmation_input__confirm has :y1 &&
@@ -122,11 +122,11 @@ function isInConfirmArea(coord as Array<Numeric>) as Boolean {
     return false;
 }
 
-//! Function to see if a tap falls within the touch area for
-//! the reject touch area.
-//! @param x X coord of tap
-//! @param y Y coord of tap
-//! @return true if tapped, false otherwise
+//! 检查点击是否落在
+//! 拒绝触摸区域内。
+//! @param x 点击的 X 坐标
+//! @param y 点击的 Y 坐标
+//! @return 点击时为 true，否则为 false
 function isInRejectArea(coord as Array<Numeric>) as Boolean {
     if (Styles.confirmation_input__reject has :x1 &&
         Styles.confirmation_input__reject has :y1 &&
