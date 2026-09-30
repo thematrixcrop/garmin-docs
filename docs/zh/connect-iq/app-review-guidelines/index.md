@@ -92,7 +92,7 @@ title: "Garmin Connect IQ 应用审核指南"
 
 你必须:
 
--   Have an agreement with end users that prohibits unlawful, harmful, obscene, inappropriate, or offensive content (see 1(b) – 禁止内容, above);
+-   与最终用户达成协议，禁止违法、有害、淫秽、不当或冒犯性内容（参见上文 1(b)“禁止内容”）；
 
 - 保持用户报告任何不合适或被禁止的内容的方法;
 
@@ -183,7 +183,7 @@ Garmin 的 DMCA 政策并非替代您对用户生成内容进行调节的政策.
 - 确定您的应用程序是否需要任何特定的Garmin或第三方硬件或软件来运行.例如,如果应用程序的核心功能没有ANT+工作,您必须披露这一点.如果某个特定功能具有依赖性,您必须披露这种依赖性当广告该特定功能.
 
 
-**b.** **兼容性 with Garmin Devices and ANT or ANT+ Communications Protocols**
+**b.** **与 Garmin 设备以及 ANT 或 ANT+ 通信协议的兼容性**
 
 你必须准确地披露 Garmin 支持你的应用程序的设备.由于 Garmin 定期发布新产品,我们鼓励你更新这个列表.至少,你必须避免虚假地声称你的应用程序与特定的 Garmin 设备工作.
 

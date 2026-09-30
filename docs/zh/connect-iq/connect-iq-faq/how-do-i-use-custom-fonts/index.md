@@ -5,7 +5,7 @@ title: "How do I use custom fonts?"
 
 *这个客人帖子是由*[*Hermo Terblanche*](https://www.instagram.com/hermoterblanche/)*在南非的Connect IQ开发者撰写的.*
 
-Have you ever seen an app in the Connect IQ app store that made you wonder, "That is so cool! How did the developer do that?" In order to draw attention to your app 您需要 stand out from the rest, by for example applying some really cool font tricks. I am going to let you in on some of my secrets from [my own Connect IQ creations](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps). Hopefully this will inspire you to create your very own jaw-dropping apps for Garmin Connect IQ devices.
+您是否见过 Connect IQ 商店中让您惊叹“太酷了！开发者是怎么做到的？”的应用程序？要让您的应用脱颖而出，可以尝试一些有趣的字体技巧。我会分享一些来自[我自己制作的 Connect IQ 应用](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps)的经验，希望能启发您为 Garmin Connect IQ 设备创建令人印象深刻的应用程序。
 
 让我们直接进入魔术吧!
 
@@ -69,7 +69,7 @@ dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
 - 确保重复 \*.FNT文件中的文件属性被重复 \*.PNG (反射字体) 指向.
 
--   In code load your two fonts, and after you've drawn the normal time, you draw the same time using the reflection font. For the reflected time, 您需要 align the characters with the bottom of the normal time's characters.
+-   在代码中加载两种字体。绘制普通时间后，使用反射字体绘制相同的时间。对于反射时间，需要将字符与普通时间字符的底部对齐。
 
 
 下面是从正常字体中的一些字体和它们相应的反射字体中的反射字体的插图.
@@ -131,7 +131,7 @@ dc.drawText(timeX,timeY, innerFillFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
 ![](/connect-iq/resources/faq/rotated_glyphs.jpg)
 
-When drawing text diagonally, you can no longer draw the string as a single entity; otherwise you'll just end up with a horizontal line of text with tilted characters, similar to what you now see in the above illustration. The real trick is to draw each character individually, but for each character adjust the y and x coordinates appropriately. For descending orientation, 您需要 increase the y coordinates, and for ascending 您需要 decrease it. The x coordinate will always increase in both scenarios. The glyphs have to overlap each other in order to create the diagonal effect. This is where a transparent background color does the trick!
+对角绘制文本时，不能再把字符串作为一个整体绘制，否则最终只会得到一行字符倾斜的水平文本，类似上图所示。真正的技巧是逐个绘制字符，并为每个字符适当调整 y 和 x 坐标。向下倾斜时，需要增加 y 坐标；向上倾斜时，需要减小 y 坐标。两种情况下 x 坐标都会增加。字形必须彼此重叠才能产生对角效果，此时透明背景色就能发挥作用！
 
 ![](/connect-iq/resources/faq/overlapping_rotated_glyphs.jpg)
 

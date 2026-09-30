@@ -46,7 +46,7 @@ title: "Jungle Reference Guide"
 
 ### 局部变量
 
-变量是重用值的便捷方式，例如长路径字符串。与限定符不同，局部变量没有属性，不能设置为等于限定符，并且是局部作用域。 Variables can be used with the dereference operator `$(VAR)` and are evaluated after the Jungle file in which they are defined has been processed.
+变量是重用值的便捷方式，例如长路径字符串。与限定符不同，局部变量没有属性，不能设置为等于限定符，并且是局部作用域。变量可以与解引用运算符 `$(VAR)` 一起使用，并在定义它们的 Jungle 文件处理完成后求值。
 
 ### 值
 

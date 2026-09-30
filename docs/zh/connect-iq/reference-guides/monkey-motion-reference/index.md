@@ -48,8 +48,8 @@ Argument
 | `-h` | 输出帮助信息 | NA | NA | 可选 |
 | `-m <arg>` |为了指定构建的设备的明示文件|一个项目公布文件的路径| Empty | 可选 |
 | `-o <arg>` | 输出文件路径 | 有效且可解析的文件路径 | 目标动画文件路径 | 可选 |
-| `-p <arg>` |编码动画的目标压缩水平| A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | 可选 |
-| `-q <arg>` |编码动画的目标图像质量| A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | 可选 |
+| `-p <arg>` | 编码动画的目标压缩级别 | 1 到 7 之间的值。更多信息请参阅[压缩级别影响](#compression-level-impact) | 5 | 可选 |
+| `-q <arg>` | 编码动画的目标图像质量 | 1 到 3 之间的值。更多信息请参阅[注意事项](#considerations) | 3 | 可选 |
 | `-r <arg>` |动画的目标分辨率 (如果不是设备屏幕尺寸)|在`<width>x<height>`中,`width`和`height`是目标分辨率的数值 (例如: 40x40)| NA | 可选 |
 | `-s <arg>` |动画的目标图像扩展质量|1至3之间的值| 如适用，3 | 可选 |
 | `-v <arg>` | 目标动画文件 | 有效且可解析的 `YUV` / `GIF` 文件 | NA | 必需 |
