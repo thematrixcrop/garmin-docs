@@ -1,11 +1,12 @@
 ---
 title: "Layouts"
 ---
+<a id="layouts"></a>
 # 布局
 
-资源编译器允许页面布局在不改变任何子C代码的情况下定制到特定设备上.此外,可绘制列表对象也可以定义,它们是[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)对象,可以绘制一些图形原始.
+资源编译器可以针对特定设备定制页面布局，而无需修改任何 Monkey C 代码。此外，还可以定义可绘制列表对象。它们是能够绘制多种图形基本元素的 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 对象。
 
-在XML中定义布局时,简单地列出列出的可绘制物体,在列出的布局标签中包含在列出的布局标签中.列出的每一个可绘制物体将转化为子C[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)物体,并将一个接一个地绘制.由于此,如果您的布局中的两个可绘制物重叠,定义的第二个可绘制物体将在定义的第一个可绘制物体上绘制.以下是基本布局的一个例子:
+在 XML 中定义布局时，只需在一组 `layout` 标签中列出要包含的可绘制对象。每个对象都会转换为 Monkey C 的 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 对象，并按列出的顺序绘制。因此，如果布局中的两个可绘制对象相互重叠，后定义的对象会绘制在先定义的对象之上。下面是一个基本布局示例：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -18,7 +19,7 @@ title: "Layouts"
 </resources>
 ```
 
-要在代码中使用此布局，只需在 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 函数中调用 [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function)。如果计划使用 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 更新屏幕上的动态值，请调用父类的 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)。例如：
+要在代码中使用此布局，请在 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 函数中调用 [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function)。如果计划使用 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 更新屏幕上的动态值，请调用父类的 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)。例如：
 
 ```java
 class MainView extends WatchUi.View {
@@ -37,49 +38,49 @@ class MainView extends WatchUi.View {
 
 ## 布局
 
-在`layout`标签中支持以下属性:
+`layout` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于Rez模块中的布局引用|任何以字母开始的值| 不适用 | 必需 |
+| `id` | 布局的句柄，用于在 Rez 模块中引用该布局 | 以字母开头的任意值 | 不适用 | 必需 |
 
 ## 标签
 
-文本可以包含在布局中. 为了包含文本,使用支持以下属性的`label`标签:
+布局中可以包含文本。要添加文本，请使用 `label` 标签，它支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |标签的手柄.在这里提供的ID引用了资源XML文件中定义的标签|任何以字母开始的值| 不适用 |  |
-| `text` |显示的文本| 不适用 | 空字符串 |  |
-| `font` |在绘制文本时使用的字体| 请参阅 [font references](#font-references) | `Graphics.FONT_MEDIUM` |  |
-| `x` |文本将被证明是对的点的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |文本将被证明为合理的点的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `justification` |如何根据X&Y位置证明文本的合理性| `Graphics` 文本对齐常量 | `Graphics.TEXT_JUSTIFY_LEFT` |  |
-| `color` |文本的颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数| `Graphics.COLOR_WHITE` |  |
-| `background` |文本的背景颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数| `Gfx.COLOR_TRANSPARENT` |  |
-| `visible` |图纸可见|`true`或`false`| `true` |仅支持ConnectIQ 3.3.0及后版本的设备|
+| `id` | 标签的句柄。此处提供的 ID 用于引用资源 XML 文件中定义的标签 | 以字母开头的任意值 | 不适用 |  |
+| `text` | 要显示的文本 | 不适用 | 空字符串 |  |
+| `font` | 绘制文本时使用的字体 | 请参阅 [字体引用](#font-references) | `Graphics.FONT_MEDIUM` |  |
+| `x` | 文本对齐基准点的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 文本对齐基准点的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
+| `justification` | 文本相对于 X、Y 位置的对齐方式 | `Graphics` 文本对齐常量 | `Graphics.TEXT_JUSTIFY_LEFT` |  |
+| `color` | 文本颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | `Graphics.COLOR_WHITE` |  |
+| `background` | 文本背景颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | `Gfx.COLOR_TRANSPARENT` |  |
+| `visible` | 是否显示该可绘制对象 | `true` 或 `false` | `true` | 仅支持 Connect IQ 3.3.0 及更高版本的设备 |
 
 ## 文本区域
 
-*自 API 级别 3.1.0*
+*自 API 级别 3.1.0 起支持*
 
-文本也可以作为文本区的布局中包含.文本区类似于文本标签,但它将试图通过选择适当的字体,添加行间歇或使用缩短来将文本插入给定的区域.
+布局中也可以使用文本区域。文本区域类似于文本标签，但会通过选择合适的字体、插入换行或截断文本，尝试将文本放入指定区域。要添加文本区域，请使用 `text-area` 元素，它支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |文本区域的手柄.在这里提供的ID指的是资源XML文件中定义的文本区域|任何以字母开始的值| 不适用 |  |
-| `text` |显示的文本| 不适用 | 空字符串 |  |
-| `font` |在绘制文本时使用的字体| 请参阅 [font references](#font-references) | `Graphics.FONT_MEDIUM` |如果提供字体序列,不能使用|
-| `x` |文本将被证明是对的点的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |文本将被证明为合理的点的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `width` |适合文本的区域宽度|像素值,使用"%"或`fill`的相对维度| `0` |  |
-| `height` |适合文本的区域的高度|像素值,使用"%"或`fill`的相对维度| `0` |  |
-| `justification` |如何根据X&Y位置证明文本的合理性| `Graphics` 文本对齐常量 | `Graphics.TEXT_JUSTIFY_LEFT` |  |
-| `color` |文本的颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数| `Graphics.COLOR_WHITE` |  |
-| `background` |文本的背景颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数| `Gfx.COLOR_TRANSPARENT` |  |
-| `visible` |图纸可见|`true`或`false`| `true` |仅支持ConnectIQ 3.3.0及后版本的设备|
+| `id` | 文本区域的句柄。此处提供的 ID 用于引用资源 XML 文件中定义的文本区域 | 以字母开头的任意值 | 不适用 |  |
+| `text` | 要显示的文本 | 不适用 | 空字符串 |  |
+| `font` | 绘制文本时使用的字体 | 请参阅 [字体引用](#font-references) | `Graphics.FONT_MEDIUM` | 提供字体序列时不能使用 |
+| `x` | 文本对齐基准点的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 文本对齐基准点的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
+| `width` | 文本区域的宽度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `0` |  |
+| `height` | 文本区域的高度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `0` |  |
+| `justification` | 文本相对于 X、Y 位置的对齐方式 | `Graphics` 文本对齐常量 | `Graphics.TEXT_JUSTIFY_LEFT` |  |
+| `color` | 文本颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | `Graphics.COLOR_WHITE` |  |
+| `background` | 文本背景颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | `Gfx.COLOR_TRANSPARENT` |  |
+| `visible` | 是否显示该可绘制对象 | `true` 或 `false` | `true` | 仅支持 Connect IQ 3.3.0 及更高版本的设备 |
 
-一个文本区域可以从一个序列中选择一个字体,以最大限度地减少缩小.文本区域将在指定顺序中尝试字体,直到文本可以在给定的区域中无缩小绘制.如果没有找到避免缩小的字体,则该序列中的最后一个字体将被使用,文本将被缩小.每个字体元素的有效值与`font`属性相同.一个字体序列的`text-area`示例:
+文本区域可以从字体序列中选择字体，以尽量减少截断。它会按指定顺序尝试字体，直到文本能够在给定区域内完整绘制。如果没有字体能够避免截断，则使用序列中的最后一个字体，并截断文本。每个 `font` 元素的有效值与 `font` 属性相同。下面是包含字体序列的 `text-area` 示例：
 
 ```xml
 <text-area id="BlockOfText" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." x="10%" y="10%" width="80%" height="80%">
@@ -91,29 +92,30 @@ class MainView extends WatchUi.View {
 </text-area>
 ```
 
+<a id="font-references"></a>
 ### 字体引用
 
-在布局定义中,有三种方法可以引用字体:
+在布局定义中，可以通过以下三种方式引用字体：
 
-| 引用 | 描述 | 示例 |
+| 引用方式 | 说明 | 示例 |
 | --- | --- | --- |
-| 系统字体引用 |在[Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)模块中引用标准FONT编号.| `Graphics.FONT_SMALL` |
-| 自定义字体引用 |在[application resources](/connect-iq/core-topics/resources/#fonts)中引用字体.| `@Rez.Fonts.MySmallFont` |
-| 可缩放字体引用 | 引用系统可缩放字体。这里是字体名称，可用逗号分隔多个名称，并使用冒号分隔像素大小。更多信息请参阅[可缩放字体](/connect-iq/core-topics/graphics/#scalable-fonts)。 | `"#BionicBold,Roboto:12"` |
+| 系统字体引用 | 引用 [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/) 模块中的标准 FONT 枚举值 | `Graphics.FONT_SMALL` |
+| 自定义字体引用 | 引用 [应用资源](/connect-iq/core-topics/resources/#fonts) 中的字体 | `@Rez.Fonts.MySmallFont` |
+| 可缩放字体引用 | 引用系统可缩放字体。可以指定一个字体名称，或用逗号分隔多个名称，并在末尾用冒号指定像素大小。详情请参阅[可缩放字体](/connect-iq/core-topics/graphics/#scalable-fonts) | `"#BionicBold,Roboto:12"` |
 
 ## 可绘制对象
 
-绘图器 (bitmap 和可绘图的XML资源) 也可以在使用`drawable`标签的布局中包含.以下属性由`drawable`标签支持:
+位图和可绘制 XML 资源都可以通过 `drawable` 标签包含在布局中。`drawable` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |图形的手柄.在这里提供的ID指的是资源XML文件中定义的图形|任何以字母开始的值| 不适用 |需要;可绘制的必须在资源XML文件中定义|
-| `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
+| `id` | 可绘制对象的句柄。此处提供的 ID 用于引用资源 XML 文件中定义的对象 | 以字母开头的任意值 | 不适用 | 必需；该对象也必须在资源 XML 文件中定义 |
+| `x` | 相对于父元素左上角的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 相对于父元素左上角的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
 
-## 可绘制对象列表
+## 可绘制列表
 
-图形XML资源由基本图形列表组成:位图和形状.为了创建一个XML图形,在XML资源文件中定义一个`<drawable-list>`.`<bitmap>`和`<shape>`标签都应该作为`<drawable-list>`内部的子节点放置.一个图形列表:
+可绘制 XML 资源由位图和形状等基本可绘制对象组成。要创建 XML 可绘制资源，请在资源 XML 文件中定义 `<drawable-list>`。`<bitmap>` 和 `<shape>` 标签都应作为 `<drawable-list>` 的子节点。下面是一个示例：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -126,7 +128,7 @@ class MainView extends WatchUi.View {
 </resources>
 ```
 
-为了使用这个可抽象的代码,请做以下事情:
+要在代码中使用此可绘制对象，请执行以下操作：
 
 ```java
 function onUpdate( dc as Dc ) as Void {
@@ -135,57 +137,57 @@ function onUpdate( dc as Dc ) as Void {
 }
 ```
 
-`<drawable-list>`标签支持以下属性:
+`<drawable-list>` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |抽取机的身份证|任何以字符开始的字符串| 不适用 | 必需 |
-| `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `width` |图表的宽度.|像素值,使用"%"或`fill`的相对维度| `fill` |  |
-| `height` |抽取列表的高度.|像素值,使用"%"或`fill`的相对维度| `fill` |  |
-| `foreground` |图纸中的元素 (形状和文本) 的颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数|现在的图文背景的前景颜色|  |
-| `background` |画机的背景颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数| `Gfx.COLOR_TRANSPARENT` |  |
+| `id` | 可绘制对象的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `x` | 相对于父元素左上角的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 相对于父元素左上角的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
+| `width` | 可绘制列表的宽度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` |  |
+| `height` | 可绘制列表的高度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` |  |
+| `foreground` | 列表中绘制的元素（形状和文本）的颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | 当前绘图上下文的前景色 |  |
+| `background` | 可绘制对象的背景颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | `Gfx.COLOR_TRANSPARENT` |  |
 
-查看与SDK共享的`Drawable`样本应用.
+更多信息请参阅 SDK 随附的 `Drawable` 示例应用。
 
 ## 形状
 
-`<shape>`标签支持以下属性:
+`<shape>` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `type` |图形的类型| `rectangle`、`ellipse`、`circle` 或 `polygon` | 不适用 | 必需 |
-| `x` |对圆圈和圆:对母体的X坐标;对其他一切:对母体的X坐标.|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |圆圈和圆:与母体相比的形状中心的Y坐标;其他所有:与母体相比的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `points` |定义`polygon`的点列表|`[[x1, y1], [x2, y2], ... , [xN, yN]]`,点可以使用'%'  relative来相对位置| 不适用 |要求`polygon`;必须至少有3分|
-| `width` |图形的宽度|像素值,使用"%"或`fill`的相对维度| `fill` |对于`rectangle`所需|
-| `height` |图形的高度|像素值,使用"%"或`fill`的相对维度| `fill` |对于`rectangle`所需|
-| `a` |图画的圆的 一个值|像素值,使用"%"或`fill`的相对维度| `fill` |对于`ellipse`所需|
-| `b` |应绘制的圆的b值|像素值,使用"%"或`fill`的相对维度| `fill` |对于`ellipse`所需|
-| `color` |图形的颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数|现在的图文背景的前景颜色|  |
-| `corner_radius` |`rectangle`圆角的半径|像素值| `0` |仅适用于`rectangle`|
-| `radius` |`circle`的半径|使用"%"的像素值或相对维度| `0` |对于`circle`所需|
-| `border_width` |形状周围边界的宽度|像素值| `0` |仅适用于`rectangle`,`ellipse`和`circle`|
-| `border_color` |形状周围边界的颜色|`Graphics`颜色常数或形式`0xRRGGBB`的24位整数|现在的图文背景的前景颜色|仅适用于`rectangle`,`ellipse`和`circle`|
+| `type` | 要绘制的形状类型 | `rectangle`、`ellipse`、`circle` 或 `polygon` | 不适用 | 必需 |
+| `x` | 对于圆和椭圆，是相对于父元素的形状中心 X 坐标；对于其他形状，是相对于父元素左上角的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 对于圆和椭圆，是相对于父元素的形状中心 Y 坐标；对于其他形状，是相对于父元素左上角的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
+| `points` | 定义 `polygon` 的点列表 | `[[x1, y1], [x2, y2], ... , [xN, yN]]`，点可以使用 `%` 表示相对位置 | 不适用 | `polygon` 必需；至少包含 3 个点 |
+| `width` | 要绘制的形状宽度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` | `rectangle` 必需 |
+| `height` | 要绘制的形状高度 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` | `rectangle` 必需 |
+| `a` | 要绘制的椭圆的 a 值 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` | `ellipse` 必需 |
+| `b` | 要绘制的椭圆的 b 值 | 像素值，或使用 `%` 或 `fill` 的相对尺寸 | `fill` | `ellipse` 必需 |
+| `color` | 要绘制的形状颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | 当前绘图上下文的前景色 |  |
+| `corner_radius` | `rectangle` 圆角半径 | 像素值 | `0` | 仅适用于 `rectangle` |
+| `radius` | `circle` 半径 | 像素值，或使用 `%` 的相对尺寸 | `0` | `circle` 必需 |
+| `border_width` | 形状边框宽度 | 像素值 | `0` | 仅适用于 `rectangle`、`ellipse` 和 `circle` |
+| `border_color` | 形状边框颜色 | `Graphics` 颜色常量，或形式为 `0xRRGGBB` 的 24 位整数 | 当前绘图上下文的前景色 | 仅适用于 `rectangle`、`ellipse` 和 `circle` |
 
-查看与SDK共享的`Drawable`样本应用.
+更多信息请参阅 SDK 随附的 `Drawable` 示例应用。
 
 ## 位图
 
-`<bitmap>`标签支持以下属性:
+`<bitmap>` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |抽取机的身份证|任何以字符开始的字符串| 不适用 | 必需 |
-| `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
-| `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `filename` |应该显示的图像相对路径| 有效的相对路径 | 不适用 | 必需 |
-| `visible` |图纸可见|`true`或`false`| `true` |仅支持ConnectIQ 3.3.0及后版本的设备|
+| `id` | 可绘制对象的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `x` | 相对于父元素左上角的 X 坐标 | 像素值，或使用 `%`、`center`、`left`、`right` 或 `start` 的相对位置 | `0` |  |
+| `y` | 相对于父元素左上角的 Y 坐标 | 像素值，或使用 `%`、`center`、`top`、`bottom` 或 `start` 的相对位置 | `0` |  |
+| `filename` | 要显示图像的相对路径 | 有效的相对路径 | 不适用 | 必需 |
+| `visible` | 是否显示该可绘制对象 | `true` 或 `false` | `true` | 仅支持 Connect IQ 3.3.0 及更高版本的设备 |
 
 ## 自定义可绘制对象
 
-在某些情况下,在布局点内有可绘制的输入用于扩展[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)的定制定义类,或其直接已知的子类.这是通过使用`<drawable>`标签的`class`属性来实现的.
+有时需要让布局中的可绘制项指向一个自定义类。该类应继承 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或其已知的直接子类。可以通过 `drawable` 标签的 `class` 属性实现：
 
 ```xml
 <layout>
@@ -193,7 +195,7 @@ function onUpdate( dc as Dc ) as Void {
 </layout>
 ```
 
-上面的可绘制入口将添加`CustomMoveBar`类的新实例到布局中.然后你可以通过取消`draw(dc)`函数来定义`CustomMoveBar`如何绘制.
+上面的可绘制项会向布局中添加一个 `CustomMoveBar` 类的新实例。然后可以通过重写 `draw(dc)` 函数定义 `CustomMoveBar` 的绘制方式。
 
 ```java
 import Toybox.WatchUi;
@@ -205,9 +207,9 @@ class CustomMoveBar extends WatchUi.Drawable {
 }
 ```
 
-### 转换参数到定制抽
+### 向自定义可绘制对象传递参数
 
-如果可以将值传递到自定义的Drawable中.这样做,您将`<param>`儿童定义在`<drawable>`标签中.`<param>`标签应该使用`name`属性定义参数名称和内容的值.内容值将被传递到自定义的Drawable中.这意味着如果你想传递一个字符串,你必须用引用包裹内容.
+有时需要向自定义 Drawable 传递值。为此，请在 `drawable` 标签中定义 `<param>` 子节点。`<param>` 标签通过 `name` 属性指定参数名称，并将参数值放在标签内容中。内容会原样传递给自定义 Drawable；如果要传递字符串，必须将内容放在引号中。
 
 ```xml
 <layout>
@@ -218,7 +220,7 @@ class CustomMoveBar extends WatchUi.Drawable {
 </layout>
 ```
 
-在XML中定义的参数被传递到自定义Drawable的初始化函数作为字典.名称被传递为符号,值被传递在XML中出现时.
+XML 中定义的参数会以字典形式传递给自定义 Drawable 的初始化函数。参数名称会作为符号传递，参数值则保持 XML 中的原样。
 
 ```typescript
 import Toybox.WatchUi;
