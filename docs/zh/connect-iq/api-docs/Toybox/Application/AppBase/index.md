@@ -55,17 +55,17 @@ Example:
 ```
 using Toybox.Application;
 class AppLifeCycle extends Application.AppBase {
-    // 初始化 AppBase 类
+    // initialize the AppBase class
     function initialize() {
         AppBase.initialize();
     }
-    // 应用启动时调用 onStart()
+    // onStart() is called on application start up
     function onStart(state) {
     }
-    // 应用退出时调用 onStop()
+    // onStop() is called when your application is exiting
     function onStop(state) {
     }
-    // 在此处返回应用的初始视图
+    // Return the initial view of your application here
     function getInitialView() {
         return [new AppLifeCycleView()];
     }
@@ -2343,9 +2343,9 @@ API 级别 4.1.2
 Example:
 
 ```
-function onSettingsChanged() { // 由 GCM 中的设置更改触发
+function onSettingsChanged() { // triggered by settings change in GCM
     _mainView.handleSettingUpdate();
-    WatchUi.requestUpdate();   // 更新视图以反映更改
+    WatchUi.requestUpdate();   // update the view to reflect changes
 }
 ```
 
@@ -2713,15 +2713,15 @@ Example:
 using Toybox.Application;
 var app = Application.getApp();
 
-app.setProperty("number", 2);               // 为 "number" 键设置值
-app.setProperty("float", 3.14);             // 为 "float" 键设置值
-app.setProperty("string", "Hello World!");  // 为 "string" 键设置值
-app.setProperty("boolean", true);           // 为 "boolean" 键设置值
+app.setProperty("number", 2);               // set value for "number" key
+app.setProperty("float", 3.14);             // set value for "float" key
+app.setProperty("string", "Hello World!");  // set value for "string" key
+app.setProperty("boolean", true);           // set value for "boolean" key
 
-var int = app.getProperty("number");          // 获取 "number" 键的值
-var float = app.getProperty("float");         // 获取 "float" 键的值
-var string = app.getProperty("string");       // 获取 "string" 键的值
-var boolean = app.getProperty("boolean");     // 获取 "boolean" 键的值
+var int = app.getProperty("number");          // get value for "number" key
+var float = app.getProperty("float");         // get value for "float" key
+var string = app.getProperty("string");       // get value for "string" key
+var boolean = app.getProperty("boolean");     // get value for "boolean" key
 ```
 
 :::details 支持的设备

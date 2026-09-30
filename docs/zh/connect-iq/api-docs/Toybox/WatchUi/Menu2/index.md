@@ -70,7 +70,7 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
                 {}
             )
         );
-        delegate = new MyMenu2Delegate(); // 一个 WatchUi.Menu2InputDelegate
+        delegate = new MyMenu2Delegate(); // a WatchUi.Menu2InputDelegate
         WatchUi.pushView(menu, delegate, WatchUi.SLIDE_IMMEDIATE);
         return true;
     }

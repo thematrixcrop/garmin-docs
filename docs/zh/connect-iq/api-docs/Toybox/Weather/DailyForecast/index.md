@@ -42,7 +42,7 @@ API 级别 3.2.0
 
 - [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    降水概率，范围为 \\[0-100%\\]。
+    降水概率，范围为 \[0-100%\]。
 
 
 ## 实例属性详情

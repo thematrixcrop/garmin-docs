@@ -55,18 +55,18 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
         var menu = new WatchUi.CustomMenu(80, Graphics.COLOR_BLACK, {});
 
         menu.addItem(
-            new MyCustomMenuItem( // 一个 WatchUi.CustomMenuItem
+            new MyCustomMenuItem( // a WatchUi.CustomMenuItem
                 :itemOne,
                 {}
             )
         );
         menu.addItem(
-            new MyCustomMenuItem( // 一个 WatchUi.CustomMenuItem
+            new MyCustomMenuItem( // a WatchUi.CustomMenuItem
                 :itemTwo,
                 {}
             )
         );
-        var delegate = new MyMenu2Delegate(); // 一个 WatchUi.Menu2InputDelegate
+        var delegate = new MyMenu2Delegate(); // a WatchUi.Menu2InputDelegate
         WatchUi.pushView(menu, delegate, WatchUi.SLIDE_IMMEDIATE);
         return true;
     }

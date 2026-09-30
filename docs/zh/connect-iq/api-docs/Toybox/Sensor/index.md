@@ -464,7 +464,7 @@ Example:
 
 ```
 using Toybox.Sensor;
-// 假设已定义 onSensor 监听器方法
+// Given an onSensor listener method is defined
 Sensor.enableSensorEvents(method(:onSensor));
 ```
 
@@ -516,7 +516,7 @@ using Toybox.Sensor;
 using Toybox.System;
 using Toybox.Timer;
 var dataTimer = new Timer.Timer();
-dataTimer.start(method(:timerCallback), 1000, true); // 一秒计时器
+dataTimer.start(method(:timerCallback), 1000, true); // A one-second timer
 function timerCallback() {
     var sensorInfo = Sensor.getInfo();
     if (sensorInfo has :accel && sensorInfo.accel != null) {
@@ -1449,18 +1449,18 @@ Example:
 
 ```
 using Toybox.Sensor;
-// 初始化加速度计
+// initialize accelerometer
 var options = {
-    :period => 1,               // 1 秒采样时间
+    :period => 1,               // 1 second sample time
     :accelerometer => {
-        :enabled => true,       // 启用加速度计
-        :sampleRate => 25       // 25 个样本
+        :enabled => true,       // Enable the accelerometer
+        :sampleRate => 25       // 25 samples
     },
     :heartBeatIntervals => {
         :enabled => true
     }
 };
-// 使用 Toybox.SensorHistory.SensorData 中设置的回调
+// Using the callback setup in Toybox.SensorHistory.SensorData
 Sensor.registerSensorDataListener(method(:accelCallback), options);
 ```
 
@@ -1701,11 +1701,11 @@ API 级别 1.0.0
 Example:
 
 ```
-// 假设使用 registerSensorDataListener() 示例和 mSession
+// Assuming use of registerSensorDataListener() example and mSession
 using Toybox.Sensor;
 
-Sensor.unregisterSensorDataListener(); // 注销监听器
-mSession.stop();                       // 停止活动记录
+Sensor.unregisterSensorDataListener(); // Unregister Listener
+mSession.stop();                       // Stop Activity Recording
 ```
 
 :::details 支持的设备

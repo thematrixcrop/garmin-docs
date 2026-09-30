@@ -241,8 +241,8 @@ Example:
 var a = [ 1, 2 ]b;
 var b = [ 1, 2 ]b;
 var c = [ 1, 2 ];
-a.equals(b); // 返回 true
-a.equals(c); // 返回 false
+a.equals(b); // returns true
+a.equals(c); // returns false
 ```
 
 Returns:

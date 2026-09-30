@@ -261,21 +261,21 @@ Example:
 using Toybox.SensorHistory;
 using Toybox.System;
 
-  // 创建一个用于获取 SensorHistoryIterator 对象的方法
+  // Create a method to get the SensorHistoryIterator object
   function getIterator() {
-      // 检查设备是否支持 SensorHistory
+      // Check device for SensorHistory compatibility
       if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory)) {
-          // 设置方法参数
+          // Set up the method with parameters
           return Toybox.SensorHistory.getBodyBatteryHistory({});
       }
       return null;
   }
-  // 获取身体电量迭代器对象
+  // get the body battery iterator object
   var bbIterator = getIterator();
-  var sample = bbIterator.next();                         // 获取身体电量数据
+  var sample = bbIterator.next();                         // get the body battery data
 
   while (sample != null) {
-      System.println("Sample: " + sample.data);           // 打印当前样本
+      System.println("Sample: " + sample.data);           // print the current sample
       sample = bbIterator.next();
   }
 ```
@@ -456,21 +456,21 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// 创建一个用于获取 SensorHistoryIterator 对象的方法
+// Create a method to get the SensorHistoryIterator object
 function getIterator() {
-    // 检查设备是否支持 SensorHistory
+    // Check device for SensorHistory compatibility
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getElevationHistory)) {
         return Toybox.SensorHistory.getElevationHistory({});
     }
     return null;
 }
 
-// 将迭代器信息存储在变量中。本例中的选项为 'null'，
-// 因此返回所有可用历史记录，并按
-// 最新样本优先排列。
+// Store the iterator info in a variable. The options are 'null' in
+// this case so the entire available history is returned with the
+// newest samples returned first.
 var sensorIter = getIterator();
 
-// 打印迭代器中的下一条记录
+// Print out the next entry in the iterator
 if (sensorIter != null) {
     System.println(sensorIter.next().data);
 }
@@ -665,21 +665,21 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// 创建一个用于获取 SensorHistoryIterator 对象的方法
+// Create a method to get the SensorHistoryIterator object
 function getIterator() {
-    // 检查设备是否支持 SensorHistory
+    // Check device for SensorHistory compatibility
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
         return Toybox.SensorHistory.getHeartRateHistory({});
     }
     return null;
 }
 
-// 将迭代器信息存储在变量中。本例中的选项为 'null'，
-// 因此返回所有可用历史记录，并按
-// 最新样本优先排列。
+// Store the iterator info in a variable. The options are 'null' in
+// this case so the entire available history is returned with the
+// newest samples returned first.
 var sensorIter = getIterator();
 
-// 打印迭代器中的下一条记录
+// Print out the next entry in the iterator
 if (sensorIter != null) {
     System.println(sensorIter.next().data);
 }
@@ -747,22 +747,22 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// 创建一个用于获取 SensorHistoryIterator 对象的方法
+// Create a method to get the SensorHistoryIterator object
 function getIterator() {
-    // 检查设备是否支持 SensorHistory
+    // Check device for SensorHistory compatibility
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getOxygenSaturationHistory)) {
-        // 设置方法参数
+        // Set up the method with parameters
         return Toybox.SensorHistory.getOxygenSaturationHistory({});
     }
     return null;
 }
 
-// 将迭代器信息存储在变量中。本例中的选项为 'null'，
-// 因此返回所有可用历史记录，并按
-// 最新样本优先排列。
+// Store the iterator info in a variable. The options are 'null' in
+// this case so the entire available history is returned with the
+// newest samples returned first.
 var sensorIter = getIterator();
 
-// 打印迭代器中的下一条记录
+// Print out the next entry in the iterator
 if (sensorIter != null) {
     System.println(sensorIter.next().data);
 }
@@ -947,21 +947,21 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// 创建一个用于获取 SensorHistoryIterator 对象的方法
+// Create a method to get the SensorHistoryIterator object
 function getIterator() {
-    // 检查设备是否支持 SensorHistory
+    // Check device for SensorHistory compatibility
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getPressureHistory)) {
         return Toybox.SensorHistory.getPressureHistory({});
     }
     return null;
 }
 
-// 将迭代器信息存储在变量中。本例中的选项为 'null'，
-// 因此返回所有可用历史记录，并按
-// 最新样本优先排列。
+// Store the iterator info in a variable. The options are 'null' in
+// this case so the entire available history is returned with the
+// newest samples returned first.
 var sensorIter = getIterator();
 
-// 打印迭代器中的下一条记录
+// Print out the next entry in the iterator
 if (sensorIter != null) {
     System.println(sensorIter.next().data);
 }
@@ -1153,22 +1153,22 @@ Example:
 using Toybox.ActivityMonitor;
 using Toybox.System;
 
-  // 创建一个用于获取 SensorHistoryIterator 对象的方法
+  // Create a method to get the SensorHistoryIterator object
   function getIterator() {
-      // 检查设备是否支持 SensorHistory
+      // Check device for SensorHistory compatibility
       if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getStressHistory)) {
-          // 设置方法参数
+          // Set up the method with parameters
           return Toybox.SensorHistory.getStressHistory({});
       }
       return null;
   }
 
-// 获取压力历史迭代器对象
+// get stress history iterator object
 var stressIterator = getIterator();
-var sample = stressIterator.next();                        // 获取压力数据
+var sample = stressIterator.next();                        // get the stress data
 
 while (sample != null) {
-    System.println("Sample: " + sample.data);        // 打印当前样本
+    System.println("Sample: " + sample.data);        // print the current sample
     sample = stressIterator.next();
 }
 ```
@@ -1352,22 +1352,22 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// 创建一个用于获取 SensorHistoryIterator 对象的方法
+// Create a method to get the SensorHistoryIterator object
 function getIterator() {
-    // 检查设备是否支持 SensorHistory
+    // Check device for SensorHistory compatibility
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getTemperatureHistory)) {
-        // 设置方法参数
+        // Set up the method with parameters
         return Toybox.SensorHistory.getTemperatureHistory({});
     }
     return null;
 }
 
-// 将迭代器信息存储在变量中。本例中的选项为 'null'，
-// 因此返回所有可用历史记录，并按
-// 最新样本优先排列。
+// Store the iterator info in a variable. The options are 'null' in
+// this case so the entire available history is returned with the
+// newest samples returned first.
 var sensorIter = getIterator();
 
-// 打印迭代器中的下一条记录
+// Print out the next entry in the iterator
 if (sensorIter != null) {
     System.println(sensorIter.next().data);
 }

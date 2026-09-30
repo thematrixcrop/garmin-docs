@@ -75,7 +75,7 @@ API 级别 2.3.0
 
 获取用于高亮显示的 Drawable。
 
-系统调用此方法获取指定复杂功能字段的 Drawable，以便进行高亮显示。此方法仅在 WatchFace 配置模式下可用。动画会围绕 Drawable 的中心进行缓动。传递给 Drawable.draw 函数的 Dc 对象与屏幕共享同一原点（例如 \\[0, 0\\]），因此可方便地与 drawable 坐标对齐。
+系统调用此方法获取指定复杂功能字段的 Drawable，以便进行高亮显示。此方法仅在 WatchFace 配置模式下可用。动画会围绕 Drawable 的中心进行缓动。传递给 Drawable.draw 函数的 Dc 对象与屏幕共享同一原点（例如 \[0, 0\]），因此可方便地与 drawable 坐标对齐。
 
 Parameters:
 

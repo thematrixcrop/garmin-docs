@@ -24,36 +24,36 @@ Example:
 
 ```
 // > openssl ec -in key.pem -text -noout
-// 读取 EC 密钥
-// 私钥：（224 位）
-// 私钥：
+// read EC key
+// Private-Key: (224 bit)
+// priv:
 //     00:89:01:46:f8:bd:64:ce:75:e0:83:02:d0:fc:e1:
 //     1d:ce:fd:eb:66:f8:81:1d:68:64:49:05:d3:ee
-// 公钥：
+// pub:
 //     04:1d:ba:39:9a:16:6e:62:0b:56:e3:16:73:f7:38:
 //     b0:d1:b7:2d:40:ca:92:3a:f8:94:26:24:22:e6:6f:
 //     d7:61:db:e8:9b:47:03:33:da:46:0e:6b:36:c9:34:
 //     a6:75:6d:d1:10:9f:c2:d7:c6:07:72:bc
-// ASN1 OID：secp224r1
-// NIST 曲线：P-224
+// ASN1 OID: secp224r1
+// NIST CURVE: P-224
 
 using Toybox.Cryptography;
 using Toybox.System;
 
 const PRIVATE_KEY_SECP224R1 = [
-    // 第一个字节不是密钥的一部分，因此将其省略
+    // first byte is not part of the key, so it is omitted
     // 0x00,
 
-    // 字节序交换后的 28 字节（224 位）字
+    // byte swapped 28 byte (224 bit) word
     0xee, 0xd3, 0x05, 0x49, 0x64, 0x68, 0x1d, 0x81, 0xf8, 0x66, 0xeb, 0xfd, 0xce, 0x1d,
     0xe1, 0xfc, 0xd0, 0x02, 0x83, 0xe0, 0x75, 0xce, 0x64, 0xbd, 0xf8, 0x46, 0x01, 0x89,
 ]b;
 
 const PUBLIC_KEY_SECP224R1 = [
-    // 第一个字节不是密钥的一部分，因此将其省略
+    // first byte is not part of the key, so it is omitted
     // 0x04,
 
-    // 字节序交换后的 28 字节（224 位）字
+    // byte swapped 28 byte (224 bit) words
     0xe6, 0x22, 0x24, 0x26, 0x94, 0xf8, 0x3a, 0x92, 0xca, 0x40, 0x2d, 0xb7, 0xd1, 0xb0,
     0x38, 0xf7, 0x73, 0x16, 0xe3, 0x56, 0x0b, 0x62, 0x6e, 0x16, 0x9a, 0x39, 0xba, 0x1d,
 
@@ -61,7 +61,7 @@ const PUBLIC_KEY_SECP224R1 = [
     0x36, 0x6b, 0x0e, 0x46, 0xda, 0x33, 0x03, 0x47, 0x9b, 0xe8, 0xdb, 0x61, 0xd7, 0x6f,
 ]b;
 
-// Alice 从私钥生成密钥对
+// Alice generates a key pair from a private key
 var keyPairAlice = new Cryptography.KeyPair({
     :algorithm => Cryptography.KEY_PAIR_ELLIPTIC_CURVE_SECP224R1,
     :privateKey => PRIVATE_KEY_SECP224R1
@@ -69,10 +69,10 @@ var keyPairAlice = new Cryptography.KeyPair({
 
 var publicKeyAlice = PUBLIC_KEY_SECP224R1;
 
-// 验证 Alice 的公钥是否与预期匹配
-System.println(keyPairAlice.getPublicKey().equals(publicKeyAlice)); // 打印 'true'
+// Sanity check Alice's public key matches what we expect
+System.println(keyPairAlice.getPublicKey().equals(publicKeyAlice)); // prints 'true'
 
-// Bob 从头生成密钥对
+// Bob generates a key pair from scratch
 var keyPairBob = new Cryptography.KeyPair({
     :algorithm => Cryptography.KEY_PAIR_ELLIPTIC_CURVE_SECP224R1
 });
@@ -80,33 +80,34 @@ var keyPairBob = new Cryptography.KeyPair({
 var publicKeyBob = keyPairBob.getPublicKey().getBytes();
 
 //
-// Alice 和 Bob 交换公钥
+// Alice and Bob exchange public keys
 //
 
-// Alice 使用她的私钥创建密钥协商
+// Alice creates a key agreement from her private key
 var keyAgreementAlice = new Cryptography.KeyAgreement({
     :protocol => Cryptography.KEY_AGREEMENT_ECDH,
     :privateKey => keyPairAlice.getPrivateKey()
 });
 
-// Alice 使用 Bob 的公钥生成只有 Bob 和她自己知道的密钥
+// Alice uses Bob's public key to generate a secret known only to Bob and herself
 keyAgreementAlice.addKey(keyPairBob.getPublicKey());
 var secretKeyAliceAndBob = keyAgreementAlice.generateSecret();
 
-// Bob 使用他的私钥创建密钥协商
+// Bob creates a key agreement from his private key
 var keyAgreementBob = new Cryptography.KeyAgreement({
     :protocol => Cryptography.KEY_AGREEMENT_ECDH,
     :privateKey => keyPairBob.getPrivateKey()
 });
 
-// Bob 使用 Alice 的公钥生成只有 Alice 和他自己知道的密钥
+// Bob uses Alice's public key to generate a secret known only to and Alice and himself
 keyAgreementBob.addKey(keyPairAlice.getPublicKey());
 var secretKeyBobAndAlice = keyAgreementBob.generateSecret();
 
-// Bob 和 Alice 现在拥有共享密钥，且没有暴露任一方的
-// 私钥。此密钥可用于对 Bob 和 Alice 之间的消息进行签名或加密。
-// 验证两者的共享密钥相同。
-System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // 打印 'true'
+// Bob and Alice now have a shared secret without exposing either of
+// their private keys. This secret can be used to sign or encrypt
+// messages between Alice and Bob. Sanity check shared secret is same
+// for both Alice and Bob.
+System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // prints 'true'
 ```
 
 Since:

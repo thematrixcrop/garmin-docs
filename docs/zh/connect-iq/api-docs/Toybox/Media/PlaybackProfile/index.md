@@ -23,32 +23,32 @@ Example:
 PlaybackProfile 对象的示例
 
 ```
-// 返回播放配置文件
+// Returns the playback profile
 function getPlaybackProfile() {
    var profile = new PlaybackProfile();
 
-   // 设置 PlaybackProfile.playbackControls 参数
+   // Set the parameters for the PlaybackProfile.playbackControls
    profile.playbackControls = [
-       Media.PLAYBACK_CONTROL_PLAYBACK,      // 允许播放/暂停控制
-       Media.PLAYBACK_CONTROL_SHUFFLE,       // 允许随机播放控制
-       Media.PLAYBACK_CONTROL_PREVIOUS,      // 允许上一曲控制
-       Media.PLAYBACK_CONTROL_NEXT,          // 允许下一曲控制
-       Media.PLAYBACK_CONTROL_SKIP_FORWARD,  // 允许快进控制
-       Media.PLAYBACK_CONTROL_SKIP_BACKWARD, // 允许快退控制
-       Media.PLAYBACK_CONTROL_REPEAT,        // 允许重复播放控制
-       Media.PLAYBACK_CONTROL_RATING         // 允许评分控制
+       Media.PLAYBACK_CONTROL_PLAYBACK,      // Allow Play/Pause control
+       Media.PLAYBACK_CONTROL_SHUFFLE,       // Allow Shuffle control
+       Media.PLAYBACK_CONTROL_PREVIOUS,      // Allow Previous control
+       Media.PLAYBACK_CONTROL_NEXT,          // Allow Next control
+       Media.PLAYBACK_CONTROL_SKIP_FORWARD,  // Allow Skip-Forward control
+       Media.PLAYBACK_CONTROL_SKIP_BACKWARD, // Allow Skip-Backward control
+       Media.PLAYBACK_CONTROL_REPEAT,        // Allow Repeat control
+       Media.PLAYBACK_CONTROL_RATING         // Allow Ratings control
    ];
 
-   // 点踩时跳过媒体内容
+   // Skip media content on thumbs-down
    profile.attemptSkipAfterThumbsDown = true;
 
-   // 不要求播放通知
+   // Do not require playback notification
    profile.requirePlaybackNotification = false;
 
-   // 将通知阈值设置为 30 秒
+   // Set the notification threshold to 30 seconds
    profile.playbackNotificationThreshold = 30;
 
-   // 将跳过上一曲阈值设置为 5 秒
+   // Set the skip previous threshold to 5 seconds
    profile.skipPreviousThreshold = 5;
 
    return profile;
