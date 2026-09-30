@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of View Layer that will be drawn (bitblit) by system onto the screen during screen update, which include regular View update (onUpdate/onPartialUpdate) as well as animation playback if supported.
+要在屏幕更新期间由系统绘制（bitblit）的 View Layer 的表示，其中包括常规 View 更新（onUpdate/onPartialUpdate）以及动画播放（如果支持）。
 
 Since:
 

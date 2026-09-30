@@ -196,7 +196,7 @@ Returns:
 
 - [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module) —
 
-    a WORKOUT\_INTENSITY\_\* value
+    WORKOUT\_INTENSITY\_\* 值
 
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
@@ -235,7 +235,7 @@ Returns:
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
-    A SPORT\_\* value
+    SPORT\_\* 值
 
 
 ### var step as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
@@ -262,4 +262,4 @@ Returns:
 
 - [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 
-    A SUB\_SPORT\_\* value, or `null`
+    SUB\_SPORT\_\* 值，或 `null`

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 AppBase is the base class for an app.
 
-All apps inherit from this class and use it's methods to manage the life cycle of an app.
+所有应用都继承自此类，并使用其方法管理应用生命周期。
 
 - Your app overrides the class to provide entry points with the following methods:
 
@@ -905,7 +905,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and an optional [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/). If this function returns `null` the app name will be used as preview content.
+    包含一个 [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 和一个可选 [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) 的 Array。如果此函数返回 `null`，则会使用应用名称作为预览内容。
 
 
 Since:

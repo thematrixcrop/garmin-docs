@@ -247,7 +247,7 @@ Parameters:
 
 - :actions — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        An array of action strings to display, and the data for those strings when the action is selected. The selected action will be passed to the application for context when the notification action is selected. An empty :action array with no :data will appear as an actionless notification. These notifications will not trigger a notification when dismissed.
+        用于显示的操作字符串数组，以及在选择操作时传递给这些字符串的数据。选择通知操作时，所选操作将作为上下文传递给应用。没有 :data 的空 :action 数组将显示为无操作通知。关闭这些通知时不会触发通知。
 
 - :dismissPrevious — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 

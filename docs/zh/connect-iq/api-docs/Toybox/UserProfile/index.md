@@ -270,7 +270,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of zone thresholds for the requested sport.
+    所请求运动项目的区域阈值数组。
 
 
 Since:
@@ -316,7 +316,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of zone thresholds for the requested sport. If the given sport does not have heart rate zones configured, zones for a default sport will be returned, or `null` will be returned on error.
+    所请求运动项目的区域阈值数组。如果给定运动项目未配置心率区域，则返回默认运动项目的区域；如果出错，则返回 `null`。
 
 
 Since:
@@ -385,7 +385,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of zone thresholds for the requested sport. If the given sport does not have power zones configured, zones for a default sport will be returned, or `null` will be returned on error.
+    所请求运动项目的区域阈值数组。如果给定运动项目未配置功率区域，则返回默认运动项目的区域；如果出错，则返回 `null`。
 
 
 Since:

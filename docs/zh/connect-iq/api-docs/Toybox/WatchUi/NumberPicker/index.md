@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an on-screen number picker.
+屏幕上数字选择器的表示。
 
 NumberPicker 是一种特殊的 View，用于在应用中指定数值。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 NumberPicker，并将 [NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/) 作为输入委托。
 

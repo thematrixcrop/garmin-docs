@@ -93,7 +93,7 @@ Parameters:
 
 - :coefficients — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        An Array of Float values that specify the filter coefficients. A ResourceId referencing a JSON Array resource can also be used here.
+        指定滤波器系数的 Float 值数组。也可以在此处使用引用 JSON Array 资源的 ResourceId。
 
 - :gain — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 

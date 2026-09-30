@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of a menu item in a Menu2.
+Menu2 中菜单项的表示。
 
 MenuItem 是 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View 的一个元素，表示菜单中的一个选项。可以使用 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) 方法将 MenuItem 添加到 Menu2。
 

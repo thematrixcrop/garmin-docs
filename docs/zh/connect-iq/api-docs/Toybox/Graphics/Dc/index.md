@@ -351,7 +351,7 @@ API 级别 4.2.1
 
 注意：
 
-All parameters are truncated towards zero. A complete circle will be drawn if degreeStart and degreeEnd are equal.
+所有参数都向零截断。当 degreeStart 和 degreeEnd 相等时，将绘制完整的圆。
 
 Parameters:
 

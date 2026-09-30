@@ -106,7 +106,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A two element array containing the width and height of the Bitmap object
+    包含 Bitmap 对象宽度和高度的双元素数组
 
 
 Since:

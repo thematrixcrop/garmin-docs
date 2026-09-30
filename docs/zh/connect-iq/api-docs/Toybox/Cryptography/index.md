@@ -235,7 +235,7 @@ API 级别 3.0.0
 
 |
 
-AES128 implementation for Cipher objects
+Cipher 对象的 AES128 实现
 
 | -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 |
@@ -245,7 +245,7 @@ API 级别 3.0.0
 
 |
 
-AES256 implementation for Cipher objects
+Cipher 对象的 AES256 实现
 
 | -   [https://en.wikipedia.org/wiki/Advanced\_Encryption\_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 |

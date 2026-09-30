@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of a vector font.
+矢量字体的表示。
 
 VectorFont objects are returned by the [getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) method.
 

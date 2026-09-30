@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an on-screen text picker.
+屏幕上文本选择器的表示。
 
-A TextPicker is a special View that provides a way to specify textual input in an app. A TextPicker is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), and provides a [TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) as the input delegate. A default value can be provided and is displayed as editable text with the cursor placed at the end.
+TextPicker 是一种特殊的 View，用于在应用中指定文本输入。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推入 TextPicker，并提供一个 [TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 作为输入委托。可以提供默认值，该值会显示为可编辑文本，光标位于末尾。
 
 ## 另见：
 

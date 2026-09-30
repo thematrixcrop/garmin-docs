@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## 概述
 
-A representation of an on-screen generic picker.
+屏幕上通用选择器的表示。
 
 Picker 由一个或多个可选择对象、标题、下一个和上一个箭头以及确认按钮组成。下一个和上一个箭头以及确认按钮因设备而异，但可根据需要重写。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Picker，并提供 [PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)。
 
@@ -301,11 +301,11 @@ Parameters:
 
 - :pattern — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        An Array of either [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) objects for the Picker to display. A PickerFactory presents a choice of Pickers, while a Drawable immediately displays the Picker (required)
+        供 Picker 显示的 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 或 [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) 对象数组。PickerFactory 提供 Picker 选择，而 Drawable 会立即显示 Picker（必需）
 
 - :defaults — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        An Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects indicating the starting index for each entry in the supplied pattern (optional)
+        包含 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象的 Array，表示所提供模式中每个条目的起始索引（可选）
 
 - :nextArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 

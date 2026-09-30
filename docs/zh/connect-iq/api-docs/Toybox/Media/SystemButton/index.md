@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A SystemButton allows an app to override a default media player button. The button can be overridden by providing a new [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or a [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) representing a 24-bit RRGGBB color value. If a color value is provided then the system default button will be used but will drawn using the given color.
+SystemButton 允许应用覆盖默认的媒体播放器按钮。可以通过提供新的 [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)、[Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)，或表示 24 位 RRGGBB 颜色值的 [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 来覆盖按钮。如果提供颜色值，则会使用系统默认按钮，但使用给定颜色绘制。
 
 注意：
 

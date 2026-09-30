@@ -18,11 +18,11 @@ Toybox.WatchUi.MenuItem
 
 ## 概述
 
-A representation of a toggle item in a Menu2.
+Menu2 中切换项的表示。
 
-A ToggleMenuItem is a element of a [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View that represents one of the options in the menu, and includes an indicator on the menu item that appears in one of two states: enabled or disabled. When selected, the state of the ToggleMenuItem changes to the state opposite of the state prior to the onSelect delegate callback invocation.
+ToggleMenuItem 是 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View 的一个元素，表示菜单中的某个选项，并在菜单项上包含一个指示器，该指示器显示两种状态之一：启用或禁用。选中后，ToggleMenuItem 的状态会变为调用 onSelect 委托回调之前状态的相反状态。
 
-A ToggleMenuItem can be added to a Menu2 using the [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) method.
+可以使用 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) 方法将 ToggleMenuItem 添加到 Menu2。
 
 ## 另见：
 

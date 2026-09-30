@@ -20,7 +20,7 @@ Provides the media player with specific rules about what playback options are su
 
 Example:
 
-an example of the PlaybackProfile object
+PlaybackProfile 对象的示例
 
 ```
 // Returns the playback profile

@@ -291,7 +291,7 @@ Cadence is derived from (in order of priority):
 
 1. Bike sensors (cadence or speed must be enabled)
 
-2. Advanced running dynamics sensors (e.g. heart strap with running dynamics enabled)
+2. 高级跑步动态传感器（例如启用跑步动态功能的心率带）
 
 3. 脚踏传感器
 

@@ -386,7 +386,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Accessor for determining the number of available connections.
+    用于确定可用连接数量的访问器。
 
 - [**getBondedDevices**](#getBondedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
@@ -453,7 +453,7 @@ API 级别 3.1.0
 
 ### **getAvailableConnectionCount()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Accessor for determining the number of available connections
+用于确定可用连接数量的访问器
 
 Returns:
 
@@ -562,7 +562,7 @@ Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    All paired devices available to the App
+    应用可用的所有已配对设备
 
 
 Since:
@@ -612,7 +612,7 @@ Parameters:
 
 - scanResult — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
 
-    A scan result for the device that should be paired. Cannot be `null`.
+    应与设备配对的扫描结果。不能为 `null`。
 
 
 Returns:
@@ -705,13 +705,13 @@ API 级别 5.1.0
 
 Sets the Delegate Handler for Bluetooth Asynchronous Callbacks
 
-An application can only have 1 registered delegate. Subsequent calls to this function will override the current delegate
+一个应用只能注册一个委托。后续调用此函数将覆盖当前委托
 
 Parameters:
 
 - delegate — ([BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) —
 
-    An implementation of the [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) class to register as the handler for callbacks, or `null` to deregister the current handler.
+    要注册为回调处理程序的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 类的实现，或用于注销当前处理程序的 `null`。
 
 
 Example:

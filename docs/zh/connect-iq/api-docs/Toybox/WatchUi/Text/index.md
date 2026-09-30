@@ -18,7 +18,7 @@ Toybox.WatchUi.Drawable
 
 ## 概述
 
-A representation of a text resource.
+文本资源的表示。
 
 ## 另见：
 
@@ -133,7 +133,7 @@ Parameters:
 
 - :font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
-        A value representing the desired font face, defaults to FONT\_MEDIUM
+        表示所需字体的值，默认为 FONT\_MEDIUM
 
 - :justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

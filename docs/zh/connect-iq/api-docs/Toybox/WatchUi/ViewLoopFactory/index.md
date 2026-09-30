@@ -227,7 +227,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing a [View](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) and an optional [Delegate](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type).
+    包含一个 [View](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) 和一个可选 [Delegate](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) 的 Array。
 
 
 Since:

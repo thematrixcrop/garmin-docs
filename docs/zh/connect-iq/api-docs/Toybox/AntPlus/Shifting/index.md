@@ -162,7 +162,7 @@ Parameters:
 
 - listener — ([AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)) —
 
-    An extension of the ShiftingListener class.
+    ShiftingListener 类的扩展。
 
 
 Since:

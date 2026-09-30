@@ -11,7 +11,7 @@ WatchUi provides several classes that represent Views, or what is displayed on t
 
 注意：
 
-All keys in the key types enum listed after EXTENDED\_KEYS (16) were added after ConnectIQ version 1.1.2. Before evaluating these keys, check for the availability of these keys with a `has` check: if (Toybox.WatchUi has :EXTENDED\_KEYS) [...](/connect-iq/api-docs/)
+key types 枚举中列在 EXTENDED\_KEYS (16) 之后的所有键，都是在 ConnectIQ 1.1.2 版本之后添加的。在计算这些键之前，请使用 `has` 检查确认这些键是否可用：if (Toybox.WatchUi has :EXTENDED\_KEYS) [...](/connect-iq/api-docs/)
 
 Since:
 
@@ -365,7 +365,7 @@ API 级别 1.0.0
 
 |
 
-A tap on the screen
+点击屏幕
 
 |
 | CLICK\_TYPE\_HOLD | 1 |
@@ -443,7 +443,7 @@ API 级别 1.0.0
 
 |
 
-A swipe in the upward direction
+向上滑动
 
 |
 | SWIPE\_RIGHT | 1 |
@@ -452,7 +452,7 @@ API 级别 1.0.0
 
 |
 
-A swipe towards the right
+向右滑动
 
 |
 | SWIPE\_DOWN | 2 |
@@ -461,7 +461,7 @@ API 级别 1.0.0
 
 |
 
-A swipe in the downward direction
+向下滑动
 
 |
 | SWIPE\_LEFT | 3 |
@@ -470,7 +470,7 @@ API 级别 1.0.0
 
 |
 
-A swipe towards the left
+向左滑动
 
 |
 
@@ -1287,7 +1287,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An array containing the view and the delegate.
+    包含视图和委托的数组。
 
 
 Since:
@@ -1609,17 +1609,17 @@ Push an action menu to the display
 
 注意：
 
-An action menu will dismiss it self on either user selecting a menu item or pressing back button.
+操作菜单会在用户选择菜单项或按下返回按钮时自动关闭。
 
 Parameters:
 
 - menu — ([WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/)) —
 
-    An action menu object.
+    操作菜单对象。
 
 - delegate — ([WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)) —
 
-    An action menu delegate object.
+    操作菜单委托对象。
 
 
 :::details 支持的设备

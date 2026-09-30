@@ -82,7 +82,7 @@ Parameters:
 
 Example:
 
-Add two Duration objects
+添加两个 Duration 对象
 
 ```
 using Toybox.Time;

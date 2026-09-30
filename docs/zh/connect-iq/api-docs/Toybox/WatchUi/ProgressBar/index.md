@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an on-screen progress bar.
+屏幕上进度条的表示。
 
 ProgressBar 是一种特殊的 View，用于向用户显示进度指示器。它可以显示字符串，以及从 0-100% 递增的进度条或“忙碌”指示器。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 ProgressBar，并提供 `null` 或 [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)。如果提供了 BehaviorDelegate，则在显示 ProgressBar 时按下返回按钮将调用 [onBack()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onBack-instance_function) 方法。
 

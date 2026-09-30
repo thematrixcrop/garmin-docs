@@ -152,7 +152,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the Object
+    Object 的字符串表示。
 
 
 Since:
@@ -163,7 +163,7 @@ API 级别 1.0.0
 
 获取指向 Object 的 WeakReference。
 
-A weak reference is an object that keeps a reference to an object but does not increment the reference count. This means the object reference can be destroyed, so is a case that should be handled.
+弱引用是一个持有对象引用但不会增加引用计数的对象。这意味着对象引用可能会被销毁，因此需要处理这种情况。
 
 注意：
 
@@ -173,7 +173,7 @@ Returns:
 
 - [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) —
 
-    A WeakReference to the Object
+    对 Object 的 WeakReference
 
 
 另见：

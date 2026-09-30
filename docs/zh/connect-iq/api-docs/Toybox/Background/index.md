@@ -326,7 +326,7 @@ Parameters:
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
-    An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type of the event to remove
+    表示要移除的事件目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
 Example:
@@ -527,7 +527,7 @@ API 级别 2.3.0
 
 终止当前后台进程。
 
-All background processes should call this method when they have completed the desired tasks. Data passed to this method will either be passed immediately to the active application if it is running, or will be saved and passed to the application the next time it runs. Data must be one of the following types:
+所有后台进程都应在完成所需任务后调用此方法。传递给此方法的数据将立即传递给正在运行的活动应用，或者保存下来并在应用下次运行时传递给它。数据必须是以下类型之一：
 
 - [String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -608,7 +608,7 @@ Parameters:
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
-    An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type to check for registered background events
+    表示要检查已注册后台事件的目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
 Returns:
@@ -911,7 +911,7 @@ Parameters:
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
-    An [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) value representing the goal type on which to trigger the background event
+    表示要触发后台事件的目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
 Example:

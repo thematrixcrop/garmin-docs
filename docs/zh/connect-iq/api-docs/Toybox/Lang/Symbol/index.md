@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Symbol is a lightweight constant identifier.
+Symbol 是一种轻量级常量标识符。
 
 The Monkey C compiler will assign a new value when it encounters a new Symbol. This allows a developer to use Symbol objects as keys or constant values without explicitly declaring a `constant` or `enum`. While Symbol values are constant for a build, their values may change across builds.
 

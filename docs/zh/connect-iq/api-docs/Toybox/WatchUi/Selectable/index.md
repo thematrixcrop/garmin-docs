@@ -18,7 +18,7 @@ Toybox.WatchUi.Drawable
 
 ## 概述
 
-A representation of an on-screen selectable object with defined states depending on selection mode.
+屏幕上可选择对象的表示，其状态取决于选择模式。
 
 ## 另见：
 

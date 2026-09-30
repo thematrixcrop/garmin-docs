@@ -87,7 +87,7 @@ Constructor
 
 注意：
 
-A SensorLogger may be initialized with the same dictionary of options provided to [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function), but only the options documented below will be used.
+SensorLogger 可以使用提供给 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 的相同选项字典进行初始化，但仅使用下面记录的选项。
 
 注意：
 

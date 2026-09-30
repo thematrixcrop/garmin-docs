@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A saved Course on the device in .FIT format.
+设备上以 .FIT 格式保存的 Course。
 
 ## 另见：
 

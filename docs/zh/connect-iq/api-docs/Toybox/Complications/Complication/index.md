@@ -90,7 +90,7 @@ Returns:
 
 - [Complications.Icon](/connect-iq/api-docs/Toybox/Complications/#Icon-named_type) —
 
-    An icon for a user complication, or `null` for if this is a native complication complications.
+    用户复杂功能的图标；如果这是原生复杂功能，则为 `null`
 
 
 Since:

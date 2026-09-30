@@ -223,11 +223,11 @@ Parameters:
 
 - startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
-    A zero-based index of the start of the new Array. If a negative `startIndex` is provided, it will offset from the end of the Array. If the `startIndex` is `null`, the slice will begin at 0. An out-of-bounds index will be truncated to the array limits.
+    新 Array 起始位置的从零开始索引。如果提供负的 `startIndex`，则会从 Array 末尾开始偏移。如果 `startIndex` 为 `null`，切片将从 0 开始。超出范围的索引将截断到数组边界。
 
 - endIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
-    A zero-based index of the end of the new Array. Items are included up to, but not including `endIndex`. If a negative `endIndex` is provided, it will offset from the end of the Array. If `endIndex` is `null`, the the slice will end at the last element. An out-of-bounds index will be truncated to the Array limits.
+    新 Array 末尾的从零开始索引。包含直到 `endIndex` 之前的项目，但不包含 `endIndex`。如果提供负的 `endIndex`，则会从 Array 末尾开始偏移。如果 `endIndex` 为 `null`，切片将在最后一个元素处结束。超出范围的索引将截断到 Array 的边界。
 
 
 Example:
@@ -314,7 +314,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the Array
+    Array 的字符串表示。
 
 
 Since:

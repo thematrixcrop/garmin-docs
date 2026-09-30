@@ -44,7 +44,7 @@ API 级别 3.1.0
 
 - [**onConnectedStateChanged**](#onConnectedStateChanged-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), state as [BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module)) as **Void**
 
-    After pairing a device this will be called after the connection is made.
+    设备配对后，将在建立连接后调用此方法。
 
 - [**onDescriptorRead**](#onDescriptorRead-instance_function)(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
@@ -60,7 +60,7 @@ API 级别 3.1.0
 
 - [**onProfileRegister**](#onProfileRegister-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After Registering a UUID this callback will notify of the result of the registration request.
+    注册 UUID 后，此回调将通知注册请求的结果。
 
 - [**onScanResults**](#onScanResults-instance_function)(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) as **Void**
 
@@ -144,7 +144,7 @@ API 级别 3.1.0
 
 ### **onConnectedStateChanged(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), state as [BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module))** as **Void**
 
-After pairing a device this will be called after the connection is made
+设备配对后，将在建立连接后调用此方法
 
 Parameters:
 
@@ -297,7 +297,7 @@ API 级别 4.2.5
 
 ### **onProfileRegister(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After Registering a UUID this callback will notify of the result of the registration request
+注册 UUID 后，此回调将通知注册请求的结果
 
 Parameters:
 

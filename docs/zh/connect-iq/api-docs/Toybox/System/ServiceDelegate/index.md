@@ -127,7 +127,7 @@ Parameters:
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
-    An Application.GOAL\_TYPE\_\* value, representing the goal type that is being registered.
+    表示正在注册的目标类型的 Application.GOAL\_TYPE\_\* 值。
 
 
 Since:

@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## 概述
 
-Alert View for DataFields
+DataFields 的警报 View
 
 Use this view for pushing alerts from a DataField
 

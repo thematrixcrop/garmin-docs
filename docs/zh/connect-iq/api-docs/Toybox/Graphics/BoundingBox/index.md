@@ -57,11 +57,11 @@ API 级别 3.2.7
 
 - [**addPoint**](#addPoint-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Add a point to the bounding box Update `self` to include the point specified.
+    向边界框添加一个点。更新 `self` 以包含指定的点。
 
 - [**addPoints**](#addPoints-instance_function)(points as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;\[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]>) as **Void**
 
-    Add one or more points to a bounding box Update `self` to include all of the points specified.
+    向边界框添加一个或多个点。更新 `self` 以包含所有指定的点。
 
 - [**addRectangle**](#addRectangle-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -231,7 +231,7 @@ Throws:
 
 ### **addPoint(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Add a point to the bounding box
+向边界框添加一个点
 
 Update `self` to include the point specified. If `self` is not valid, sets `self` to the bounding box that contains the given point.
 
@@ -263,7 +263,7 @@ Throws:
 
 ### **addPoints(points as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;\[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]>)** as **Void**
 
-Add one or more points to a bounding box
+向边界框添加一个或多个点
 
 Update `self` to include all of the points specified. If `self` is not valid, sets `self` to the bounding box that contains all of the given points.
 

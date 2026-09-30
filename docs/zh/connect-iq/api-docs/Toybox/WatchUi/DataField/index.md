@@ -513,11 +513,11 @@ API 级别 5.2.2
 
 - [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
 
-    A split has ended This method is called when a split is ended in the current activity.
+    分段已结束。在当前活动中分段结束时调用此方法。
 
 - [**onTimerSplitStart**](#onTimerSplitStart-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
 
-    A split has started This method is called when a split is added to the current activity.
+    分段已开始。在当前活动中添加分段时调用此方法。
 
 - [**onTimerStart**](#onTimerStart-instance_function)() as **Void**
 
@@ -1690,7 +1690,7 @@ API 级别 1.3.0
 
 ### **onTimerSplitEnd(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/))** as **Void**
 
-A split has ended
+分段已结束
 
 This method is called when a split is ended in the current activity. A notification is triggered after the split record has been written to the FIT file.
 
@@ -1743,7 +1743,7 @@ API 级别 5.2.2
 
 ### **onTimerSplitStart(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/))** as **Void**
 
-A split has started
+分段已开始
 
 This method is called when a split is added to the current activity. A notification is triggered after the split record has been written to the FIT file.
 
@@ -2570,7 +2570,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    additional information about the workout, can be `null`
+    有关 Workout 的其他信息，可以为 `null`
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 

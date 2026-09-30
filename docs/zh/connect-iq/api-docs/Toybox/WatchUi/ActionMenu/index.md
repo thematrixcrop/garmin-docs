@@ -147,7 +147,7 @@ API 级别 3.4.0
 
 - [**addItem**](#addItem-instance_function)(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) as **Void**
 
-    Add Menuitem to an ActionMenu.
+    向 ActionMenu 添加 Menuitem。
 
 - [**initialize**](#initialize-instance_function)(options as [ActionMenu.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/#Options-named_type) or **Null**)
 
@@ -166,7 +166,7 @@ API 级别 3.4.0
 
 ### **addItem(item as [WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/))** as **Void**
 
-Add Menuitem to an ActionMenu
+向 ActionMenu 添加 Menuitem
 
 Parameters:
 

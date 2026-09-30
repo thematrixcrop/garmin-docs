@@ -692,7 +692,7 @@ Returns:
 
 - [Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/) —
 
-    An array of daily forecasts or `null` if no data is available
+    每日预报数组；如果没有可用数据，则为 `null`
 
 
 Since:
@@ -707,7 +707,7 @@ Returns:
 
 - [Weather.HourlyForecast](/connect-iq/api-docs/Toybox/Weather/HourlyForecast/) —
 
-    An array of hourly forecasts or `null` if no data is available
+    每小时预报数组；如果没有可用数据，则为 `null`
 
 
 Since:

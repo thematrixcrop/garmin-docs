@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an animation resource.
+动画资源的表示。
 
 AnimationResource objects are returned by the [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) method.
 
@@ -268,7 +268,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the AnimationResource object
+    AnimationResource 对象的字符串表示。
 
 
 Since:

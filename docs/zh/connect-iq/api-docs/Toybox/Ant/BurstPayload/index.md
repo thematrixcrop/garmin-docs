@@ -63,7 +63,7 @@ Parameters:
 
 - message — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    An Array of integers representing the bytes of the data payload
+    表示数据负载字节的整数数组
 
 
 Since:

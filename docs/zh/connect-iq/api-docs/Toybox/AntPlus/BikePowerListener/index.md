@@ -22,7 +22,7 @@ Listener class for Bike Power.
 
 Example:
 
-An implementation of BikePowerListener
+BikePowerListener 的实现
 
 ```
 using Toybox.AntPlus;

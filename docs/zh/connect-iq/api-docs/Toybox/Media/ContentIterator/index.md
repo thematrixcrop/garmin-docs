@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A user-defined iterator that returns referenced to media content on the system for use by the system media player.
+用户定义的迭代器，用于返回系统上的媒体内容引用，以供系统媒体播放器使用。
 
 Since:
 

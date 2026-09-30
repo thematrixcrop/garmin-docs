@@ -191,7 +191,7 @@ API 级别 3.0.0
 
 |
 
-ADTS audio encoding type
+ADTS 音频编码类型
 
 |
 | ENCODING\_MP3 | 2 |
@@ -859,7 +859,7 @@ Parameters:
 
 - args — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    A serializable object to pass to [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) when the app starts in playback mode.
+    应用以播放模式启动时传递给 [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) 的可序列化对象。
 
 
 Since:

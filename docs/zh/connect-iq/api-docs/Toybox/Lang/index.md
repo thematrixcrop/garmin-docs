@@ -185,7 +185,7 @@ Parameters:
 
 - format — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    A string using $1$, $2$, $3$... as substitution identifiers
+    使用 $1$、$2$、$3$... 作为替换标识符的字符串。
 
 - parameters — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

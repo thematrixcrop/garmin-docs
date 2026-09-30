@@ -158,7 +158,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of keys in the Dictionary
+    Dictionary 中键的数组
 
 
 Since:
@@ -241,7 +241,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the Dictionary
+    Dictionary 的字符串表示。
 
 
 另见：
@@ -261,7 +261,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of values in the Dictionary
+    Dictionary 中值的数组
 
 
 Since:

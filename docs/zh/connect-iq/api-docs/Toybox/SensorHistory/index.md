@@ -398,7 +398,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the body battery history for the given period. Samples returned by this iterator are ranges from 0-100. A 0 indicates that the body is drained and a 100 indicates the body is rested and charged.
+    给定时间段的身体电量历史迭代器。此迭代器返回的样本范围为 0-100。0 表示身体能量耗尽，100 表示身体已休息并充满能量。
 
 
 另见：
@@ -607,7 +607,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the elevation history for the given period. Samples returned by this iterator are in meters (m).
+    给定时间段的海拔历史迭代器。此迭代器返回的样本单位为米（m）。
 
 
 另见：
@@ -689,7 +689,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the heart rate history for the given period. Samples returned by this iterator are in beats per minute (bpm).
+    给定时间段的心率历史迭代器。此迭代器返回的样本单位为每分钟心跳次数（bpm）。
 
 
 另见：
@@ -889,7 +889,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the oxygen saturation history for the given period. Samples returned by this iterator are in percent (%).
+    给定时间段的血氧饱和度历史迭代器。此迭代器返回的样本单位为百分比（%）。
 
 
 另见：
@@ -1096,7 +1096,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the pressure history for the given period. Samples returned by this iterator are in Pascals (Pa).
+    给定时间段的压力历史迭代器。此迭代器返回的样本单位为帕斯卡（Pa）。
 
 
 另见：
@@ -1294,7 +1294,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the stress history for the given period. Samples returned by this iterator are ranges from 0-100. Higher value indicate higher stress and lower value indicate lower stress. and a 100 indicates the body is rested and charged.
+    给定时间段的压力历史迭代器。此迭代器返回的样本范围为 0-100。数值越高表示压力越大，数值越低表示压力越小；100 表示身体已休息并充满能量。
 
 
 另见：
@@ -1504,7 +1504,7 @@ Returns:
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
-    An iterator for the temperature history for the given period. Samples returned by this iterator are in degrees Celsius (C).
+    给定时间段的温度历史迭代器。此迭代器返回的样本单位为摄氏度（C）。
 
 
 另见：

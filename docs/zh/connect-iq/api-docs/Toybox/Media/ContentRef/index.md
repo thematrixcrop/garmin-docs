@@ -77,7 +77,7 @@ Parameters:
 
 - id — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    A unique identifier for this ContentRef object
+    此 ContentRef 对象的唯一标识符
 
 - type — ([Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module)) —
 

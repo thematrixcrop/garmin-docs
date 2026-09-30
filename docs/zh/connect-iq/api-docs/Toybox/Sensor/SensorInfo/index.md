@@ -92,7 +92,7 @@ Returns:
 
 Sensor 启用标志。
 
-An indicator of whether or not the sensor is enabled for pairing.
+表示传感器是否已启用配对的指示器。
 
 Since:
 

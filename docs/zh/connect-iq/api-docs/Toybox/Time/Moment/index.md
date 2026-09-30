@@ -122,7 +122,7 @@ Parameters:
 
 Example:
 
-Add one day to today
+将今天加一天
 
 ```
 using Toybox.Time;

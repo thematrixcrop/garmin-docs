@@ -83,7 +83,7 @@ Parameters:
 
 - options — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An Array of options
+    选项数组
 
 - :latitude — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

@@ -243,7 +243,7 @@ Parameters:
 
 - :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        accent color for the page indicator. The :color option may be ignored if the device does not support accent colors.
+        页面指示器的强调色。如果设备不支持强调色，则可能会忽略 :color 选项。
 
 
 Since:

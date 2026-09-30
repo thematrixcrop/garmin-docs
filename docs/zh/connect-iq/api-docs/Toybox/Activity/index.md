@@ -7,7 +7,7 @@ title: "Module: Toybox.Activity"
 
 The Activity module provides a way to retrieve available info for the current activity.
 
-Activity Info is automatically provided by the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method in Data Fields. The [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) method is available for use within apps or in other cases, such as data field initialization.
+Activity Info 会由 Data Fields 中的 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法自动提供。[getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法可在应用内或其他情况下使用，例如数据字段初始化。
 
 此模块还提供两组常量：
 

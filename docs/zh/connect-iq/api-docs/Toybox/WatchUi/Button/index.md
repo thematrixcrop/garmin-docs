@@ -20,7 +20,7 @@ Toybox.WatchUi.Selectable
 
 ## 概述
 
-A representation of a Selectable button.
+可选择按钮的表示。
 
 Button objects are mappable to a BehaviorDelegate method on selection.
 
@@ -138,7 +138,7 @@ Parameters:
 
 - :behavior — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-        A Symbol object to call when the Button is selected; set to `null` to use a [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/) (optional)
+        选择 Button 时调用的 Symbol 对象；设置为 `null` 可使用 [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)（可选）
 
 - :background — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 

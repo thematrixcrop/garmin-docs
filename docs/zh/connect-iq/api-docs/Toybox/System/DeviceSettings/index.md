@@ -439,7 +439,7 @@ Returns:
 
 - [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) —
 
-    A System.BUTTON\_INPUT\_\* value
+    System.BUTTON\_INPUT\_\* 值
 
 
 ### var is24Hour as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -902,7 +902,7 @@ Returns:
 
 - [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module) —
 
-    A System.SCREEN\_SHAPE\_\* value
+    System.SCREEN\_SHAPE\_\* 值
 
 
 ### var screenWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -999,7 +999,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    An identifier that can be used to identify the host device or `null` on error.
+    可用于标识主机设备的标识符；出错时为 `null`。
 
 
 ### var vibrateOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)

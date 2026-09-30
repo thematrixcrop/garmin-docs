@@ -102,7 +102,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the UUID
+    UUID 的字符串表示。
 
 
 Since:

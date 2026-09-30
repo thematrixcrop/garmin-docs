@@ -186,7 +186,7 @@ Returns:
 
 - [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) —
 
-    An instance of the newly reset ContentIterator
+    新重置的 ContentIterator 实例
 
 
 Since:

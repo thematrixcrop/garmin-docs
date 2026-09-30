@@ -510,7 +510,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of String
+    String 的字符串表示。
 
 
 Since:
@@ -542,7 +542,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array representation of the String, where each byte in the string is an element in the Array
+    String 的 Array 表示，其中字符串中的每个字节都是 Array 中的一个元素
 
 
 Since:

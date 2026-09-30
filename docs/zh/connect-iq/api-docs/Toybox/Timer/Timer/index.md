@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Timer object will invoke a callback function after a specified number of milliseconds.
+Timer 对象会在指定的毫秒数后调用回调函数。
 
 There are two types of timers: one-shot or repeating. A one-shot Timer will only run once after the Timer expires, while a repeating Timer will invoke the callback function every n milliseconds until stop() is called. If a repeating Timer fails to run before its next execution time, then any missed executions will be skipped.
 

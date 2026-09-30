@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A weak reference is a loosely bound reference to another object. If all strong references have been freed, the `WeakReference.get()` method will return `null`. This allows the developer to avoid circular references.
+弱引用是与另一个对象松散绑定的引用。如果所有强引用都已释放，`WeakReference.get()` 方法将返回 `null`。这使开发者能够避免循环引用。
 
 ## 另见：
 

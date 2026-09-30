@@ -883,7 +883,7 @@ Parameters:
 
 - sensorType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
-    A SENSOR\_\* value that describes the sensor type to enumerate, or `null` to get all sensors.
+    用于描述要枚举的传感器类型的 SENSOR\_\* 值，或用于获取所有传感器的 `null`。
 
 
 Returns:
@@ -1664,7 +1664,7 @@ Parameters:
 
     The sensors to enable:
 
-- An Array of SENSOR\_\* types to enable
+- 要启用的 SENSOR\_\* 类型数组
 
 - An empty array (\[\]) to disable all sensors
 
@@ -1683,7 +1683,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of requested sensors that are available
+    可用的请求传感器数组
 
 
 Since:

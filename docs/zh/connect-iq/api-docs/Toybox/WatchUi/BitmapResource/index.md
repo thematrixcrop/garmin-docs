@@ -96,7 +96,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A String representation of the BitmapResource object
+    BitmapResource 对象的字符串表示。
 
 
 Since:

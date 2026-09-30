@@ -190,7 +190,7 @@ Returns:
 
 - [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module) —
 
-    a WORKOUT\_STEP\_DURATION\_\* value
+    WORKOUT\_STEP\_DURATION\_\* 值
 
 
 ### var durationValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -205,7 +205,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A value whose meaning is dependent on the value of durationType
+    其含义取决于 durationType 值的值
 
 
 ### var targetType as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
@@ -220,7 +220,7 @@ Returns:
 
 - [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module) —
 
-    A WORKOUT\_STEP\_TARGET\_\* value
+    WORKOUT\_STEP\_TARGET\_\* 值
 
 
 ### var targetValueHigh as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

@@ -707,7 +707,7 @@ Parameters:
 
 - listener — ([Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) —
 
-    An extension of the BurstListener class
+    BurstListener 类的扩展
 
 
 Example:

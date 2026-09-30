@@ -20,7 +20,7 @@ Toybox.WatchUi.Menu2
 
 ## 概述
 
-A representation of a custom menu.
+自定义菜单的表示。
 
 CustomMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View，用于向用户显示自定义渲染的选项列表。选择选项后，将调用已注册的 [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) 方法。
 

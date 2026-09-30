@@ -426,7 +426,7 @@ Returns:
 
 - [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/) —
 
-    An iterator for the heart rate history for the given period
+    给定时间段的心率历史迭代器
 
 
 Since:
@@ -441,7 +441,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array of [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) objects.
+    包含 [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) 对象的 Array。
 
 - The Array will be a maximum of 7 objects
 
@@ -461,7 +461,7 @@ Returns:
 
 - [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) —
 
-    An Info object with the current information.
+    包含当前信息的 Info 对象。
 
 
 Since:

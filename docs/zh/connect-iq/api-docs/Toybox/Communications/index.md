@@ -1254,7 +1254,7 @@ Parameters:
 
 - requestMethod — ([Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module)) —
 
-    An HTTP\_REQUEST\_METHOD\_\* value
+    HTTP\_REQUEST\_METHOD\_\* 值
 
 - signatureMethod — ([Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module)) —
 
@@ -1496,7 +1496,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Additional image options
+    其他图像选项
 
 - :palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -1972,7 +1972,7 @@ Parameters:
 
 - :context — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-        A user-specific context object to be passed to the response callback. The callback will need to accept a third parameter if this value is populated.
+        传递给响应回调的用户特定上下文对象。如果填充此值，回调需要接受第三个参数。
 
 - :mediaEncoding — ([Media.Encoding](/connect-iq/api-docs/Toybox/Media/#Encoding-module)) —
 
@@ -2350,7 +2350,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Additional options for the request
+    请求的其他选项
 
 
 Example:
@@ -3096,11 +3096,11 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Additional transmit options for future proofing. For now, an empty Dictionary is used.
+    用于未来扩展的其他传输选项。目前使用空 Dictionary。
 
 - listener — ([Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)) —
 
-    An extension of the ConnectionListener class
+    ConnectionListener 类的扩展
 
 
 :::details 支持的设备

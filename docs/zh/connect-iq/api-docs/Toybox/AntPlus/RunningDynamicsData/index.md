@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-All running dynamics information. Fields may return `null` so you should `null` check values before using them.
+所有跑步动态信息。字段可能返回 `null`，因此在使用这些值之前应检查是否为 `null`。
 
 Since:
 

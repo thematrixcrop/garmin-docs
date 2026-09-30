@@ -394,7 +394,7 @@ Parameters:
 
 - :constellations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        An array of CONSTELLATION\_\* enum values specifying what constellations to enable. If not provided, CONSTELLATION\_GPS will be used by default.
+        用于指定要启用哪些星座的 CONSTELLATION\_\* 枚举值数组。如果未提供，默认使用 CONSTELLATION\_GPS。
 
 - :configuration — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 

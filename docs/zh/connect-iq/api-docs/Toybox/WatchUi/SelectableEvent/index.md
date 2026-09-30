@@ -78,7 +78,7 @@ Returns:
 
 - [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) —
 
-    A symbol representing one of the four available states:
+    表示以下四种可用状态之一的符号：
 
 - [stateDefault](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateDefault-var)
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A View is an object that represents a page within an app.
+View 是表示应用内页面的对象。
 
 An app may have multiple View objects representing things like menus and other app states. Each View contains a Layout, which in turn contain [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) objects, such as [Bitmaps](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) and [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/). View objects also handle the life cycle of each app, which varies depending on the app type:
 
@@ -103,7 +103,7 @@ API 级别 1.0.0
 
 - [**addLayer**](#addLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as **Void**
 
-    Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack.
+    在视图的图层堆栈顶部添加一个 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)。
 
 - [**clearLayers**](#clearLayers-instance_function)() as **Void**
 
@@ -188,7 +188,7 @@ API 级别 1.0.0
 
 ### **addLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as **Void**
 
-Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack. Users do not need to draw the layer on the screen manually, instead, once a layer is added to the view, the system will draw all layers during screen updates which include View update (e.g. onUpdate/onPartialUpdate) and animation playback.
+在视图的图层堆栈顶部添加一个 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)。用户无需手动将图层绘制到屏幕上；将图层添加到视图后，系统会在屏幕更新期间绘制所有图层，其中包括 View 更新（例如 onUpdate/onPartialUpdate）和动画播放。
 
 Disabled for DataFiled and Background Apps
 
@@ -301,7 +301,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    an array of [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) or `null`
+    包含 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 或 `null` 的数组
 
 
 Since:
@@ -478,7 +478,7 @@ Parameters:
 
 - :clockState — ([WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module)) —
 
-        An ANALOG\_CLOCK\_STATE\_\* value for the clock state
+        表示时钟状态的 ANALOG\_CLOCK\_STATE\_\* 值
 
 - :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -634,7 +634,7 @@ Parameters:
 
 - layout — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An array of Drawables or `null`.
+    包含 Drawable 的数组，或 `null`。
 
 
 Since:

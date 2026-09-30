@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A structured custom Workout saved on the device.
+设备上保存的结构化自定义 Workout。
 
 ## 另见：
 

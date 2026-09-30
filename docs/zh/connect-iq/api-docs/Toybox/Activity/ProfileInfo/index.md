@@ -72,7 +72,7 @@ Returns:
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
-    A SPORT\_\* enum value
+    SPORT\_\* 枚举值
 
 
 ### var subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
@@ -87,7 +87,7 @@ Returns:
 
 - [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 
-    A SUB\_SPORT\_\* enum value
+    SUB\_SPORT\_\* 枚举值
 
 
 ### var uniqueIdentifier as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)

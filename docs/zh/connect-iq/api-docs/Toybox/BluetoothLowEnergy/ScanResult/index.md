@@ -247,7 +247,7 @@ Parameters:
 
 - address — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    Address to check for as a big-endian byte array or a string in the format "00:01:02:03:04:05"
+    要检查的地址，可以是大端字节数组，也可以是格式为 "00:01:02:03:04:05" 的字符串
 
 
 Returns:

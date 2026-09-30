@@ -18,7 +18,7 @@ Toybox.WatchUi.Drawable
 
 ## 概述
 
-A representation of a text area that will automatically apply line breaks to fit as much text as possible.
+文本区域的表示，该文本区域会自动换行，以适应尽可能多的文本。
 
 ## 另见：
 

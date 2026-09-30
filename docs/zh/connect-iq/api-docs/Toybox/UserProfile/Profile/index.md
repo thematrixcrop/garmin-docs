@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**activityClass**](#activityClass-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Activity level as configured by the user.
+    用户配置的活动级别。
 
 - [**averageRestingHeartRate**](#averageRestingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -91,7 +91,7 @@ API 级别 1.0.0
 
 ### var activityClass as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Activity level as configured by the user
+用户配置的活动级别
 
 Since:
 

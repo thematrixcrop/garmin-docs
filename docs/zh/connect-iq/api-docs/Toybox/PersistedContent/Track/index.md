@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A saved Track on the device in .GPX format.
+设备上以 .GPX 格式保存的 Track。
 
 ## 另见：
 

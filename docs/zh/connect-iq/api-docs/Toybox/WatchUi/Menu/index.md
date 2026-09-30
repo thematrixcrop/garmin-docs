@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an on-screen menu.
+屏幕上菜单的表示。
 
 Menu 是一种特殊的 View，用于向用户显示选项列表。选择选项后，将调用已注册的 [onMenuItem()](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/#onMenuItem-instance_function) 方法。虽然可以通过编程方式生成 Menu，但通常应将其创建为资源。
 
@@ -117,7 +117,7 @@ Parameters:
 
 - identifier — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    A Symbol representing the Menu item value
+    表示 Menu 项值的 Symbol
 
 
 Since:

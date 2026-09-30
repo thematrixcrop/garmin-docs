@@ -18,9 +18,9 @@ Toybox.WatchUi.View
 
 ## 概述
 
-A representation of an on-screen menu. A Menu2 is a special View, similar to a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), that presents the user with a list of options. A Menu2 offers more capabilities than a [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/), like graphical titles, menu items that can be updated dynamically, and additional menu elements such as check boxes.
+屏幕上菜单的表示。Menu2 是一种特殊的 View，类似于 [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)，用于向用户呈现选项列表。Menu2 提供的功能多于 [Toybox::WatchUi::Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)，例如图形标题、可动态更新的菜单项，以及复选框等其他菜单元素。
 
-After an option is selected, the registered [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) method will be called. While a Menu2 can be generated programmatically, they should generally be created as a resource.
+选择选项后，将调用已注册的 [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) 方法。虽然可以通过编程方式生成 Menu2，但通常应将其创建为资源。
 
 使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Menu2，该方法将 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 作为输入委托。
 

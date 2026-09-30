@@ -517,7 +517,7 @@ API 级别 4.0.0
 
 |
 
-Alias for `BLEND_MODE_SOURCE_OVER`
+BLEND_MODE_SOURCE_OVER 的别名
 
  |  |
 | BLEND\_MODE\_NO\_BLEND | 1 |
@@ -526,7 +526,7 @@ API 级别 4.0.0
 
 |
 
-Alias for `BLEND_MODE_SOURCE`
+BLEND_MODE_SOURCE 的别名
 
  |  |
 | BLEND\_MODE\_SOURCE\_OVER | 0 |
@@ -997,7 +997,7 @@ Parameters:
 
 - :face — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        A String representing the face name requested, or an Array of face names that are acceptable.
+        所请求的表盘名称，或可接受的表盘名称数组。
 
 - :size — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 

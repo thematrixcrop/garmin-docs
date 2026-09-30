@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A saved Waypoint on the device in .FIT or .GPX format.
+设备上以 .FIT 或 .GPX 格式保存的 Waypoint。
 
 ## 另见：
 

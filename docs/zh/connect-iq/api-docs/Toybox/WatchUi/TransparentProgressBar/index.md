@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of an on-screen transparent progress bar or spinner.
+屏幕上透明进度条或微调器的表示。
 
 Since:
 

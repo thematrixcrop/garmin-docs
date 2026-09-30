@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 |
 
-An alert ending with a high note
+以高音结束的警报
 
 |
 | TONE\_ALERT\_LO | 5 |
@@ -90,7 +90,7 @@ API 级别 1.0.0
 
 |
 
-An alert ending with a low note
+以低音结束的警报
 
 |
 | TONE\_LOUD\_BEEP | 6 |
@@ -144,7 +144,7 @@ API 级别 1.0.0
 
 |
 
-An annoying sound to get the users attention
+用于吸引用户注意的恼人声音
 
 |
 | TONE\_TIME\_ALERT | 12 |
@@ -153,7 +153,7 @@ API 级别 1.0.0
 
 |
 
-An alert that a time threshold has been met
+达到时间阈值时发出的警报
 
 |
 | TONE\_DISTANCE\_ALERT | 13 |
@@ -162,7 +162,7 @@ API 级别 1.0.0
 
 |
 
-An alert that a distance threshold has been met
+达到距离阈值时发出的警报
 
 |
 | TONE\_FAILURE | 14 |
@@ -693,7 +693,7 @@ Parameters:
 
 - options — ([Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A TONE\_\* value or [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) of options.
+    TONE\_\* 值或 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 个选项。
 
 - :toneProfile — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

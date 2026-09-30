@@ -47,7 +47,7 @@ Returns:
 
 - [Media.ImageFormat](/connect-iq/api-docs/Toybox/Media/#ImageFormat-module) —
 
-    An [IMAGE\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Media/#IMAGE_FORMAT_INVALID-const) enum value
+    [IMAGE\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Media/#IMAGE_FORMAT_INVALID-const) 枚举值
 
 
 ### var image\_offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

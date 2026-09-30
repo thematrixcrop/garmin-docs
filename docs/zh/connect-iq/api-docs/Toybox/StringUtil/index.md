@@ -87,7 +87,7 @@ Parameters:
 
 - charArray — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An Array of Char objects
+    包含 Char 对象的 Array
 
 
 Returns:
@@ -173,7 +173,7 @@ Parameters:
 
 - utf8Array — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An Array of UTF-8 bytes
+    UTF-8 字节数组
 
 
 Returns:

@@ -20,11 +20,11 @@ Toybox.WatchUi.View
 
 Create a Watch Face that supports exiting/entering low power mode.
 
-A WatchFace is a special View that provides notifications when the device changes power states.
+Watch Face 是一种特殊的 View，可在设备电源状态发生变化时提供通知。
 
-A WatchFace will run in a high power mode for a short period when responding to a gesture (i.e., raising the watch to check the time) or when returning to the watch face from another application. While in high power mode, the watch face will perform full screen updates every second via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and the application will have access to timers and animations.
+Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回表盘时，会在短时间内以高功耗模式运行。在高功耗模式下，表盘会通过调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 每秒执行完整的屏幕更新，并且应用可以使用计时器和动画。
 
-After this period in high power mode (typically about ten seconds), the system will call [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) to notify the application that it is preparing to enter low power mode.
+在高功耗模式下经过此时间段（通常约十秒）后，系统将调用 [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function)，通知应用正在准备进入低功耗模式。
 
 During low power mode the system will call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
 

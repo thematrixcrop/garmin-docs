@@ -22,11 +22,11 @@ Toybox.WatchUi.DataField
 
 Create a SimpleDataField.
 
-A SimpleDataField is a special View that automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) once per second via the [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method.
+SimpleDataField 是一种特殊的 View，它通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
 Just like in a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a SimpleDataField automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) once per second via the [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method. In exchange for the flexibility offered in a DataField, all field layout is handled automatically in a SimpleDataField.
 
-A SimpleDataField requires two items:
+SimpleDataField 需要两个项目：
 
 - [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法应返回 SimpleDataField 要显示的值。允许的类型包括 Number、Float、Long、Double、Duration 和 String。
 
@@ -46,7 +46,7 @@ A SimpleDataField requires two items:
 
 Example:
 
-A SimpleDataField that displays current heart rate
+显示当前心率的 SimpleDataField
 
 ```
 using Toybox.WatchUi;

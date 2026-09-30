@@ -27,7 +27,7 @@ Filters are devices or processes that remove some unwanted components or feature
 
 注意：
 
-An exception will be thrown if the base Filter class version of this method is called.
+如果调用此方法的基础 Filter 类版本，将引发异常。
 
 Example:
 
@@ -92,7 +92,7 @@ API 级别 2.3.0
 
 注意：
 
-An Exception will be thrown if the base Filter class version of this method is called.
+如果调用此方法的基础 Filter 类版本，将引发 Exception。
 
 Parameters:
 

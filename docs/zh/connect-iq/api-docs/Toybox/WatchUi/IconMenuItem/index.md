@@ -18,11 +18,11 @@ Toybox.WatchUi.MenuItem
 
 ## 概述
 
-A representation of an icon item in a Menu2.
+Menu2 中图标项的表示。
 
-An IconMenuItem is a element of a [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View that represents one of the options in the menu. An IconMenuItem has an icon displayed on the left or right of the menu item labels.
+IconMenuItem 是 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View 的一个元素，表示菜单中的某个选项。IconMenuItem 会在菜单项标签的左侧或右侧显示图标。
 
-An IconMenuItem can be added to a Menu2 using the [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) method.
+可以使用 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#addItem-instance_function) 方法将 IconMenuItem 添加到 Menu2。
 
 ## 另见：
 

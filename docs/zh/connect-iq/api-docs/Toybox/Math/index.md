@@ -419,7 +419,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Long](/connect-iq/api-docs/Toybox/Lang/Long/), or [Double](/connect-iq/api-docs/Toybox/Lang/Double/) values
+    包含 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Long](/connect-iq/api-docs/Toybox/Lang/Long/) 或 [Double](/connect-iq/api-docs/Toybox/Lang/Double/) 值的数组
 
 
 Returns:
@@ -448,7 +448,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    An array of [Objects](/connect-iq/api-docs/Toybox/Lang/Object/)
+    包含 [Objects](/connect-iq/api-docs/Toybox/Lang/Object/) 的数组
 
 
 Returns:

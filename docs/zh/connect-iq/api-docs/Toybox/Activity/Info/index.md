@@ -3670,7 +3670,7 @@ Returns:
 
 - [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) —
 
-    A SWIM\_STROKE\_\* value
+    SWIM\_STROKE\_\* 值
 
 
 ### var swimSwolf as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -3839,7 +3839,7 @@ Returns:
 
 - [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) —
 
-    A TIMER\_STATE\_\* value
+    TIMER\_STATE\_\* 值
 
 
 ### var timerTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A ResourceId is a resource identifier.
+ResourceId 是资源标识符。
 
 ResourceId values uniquely identify a resource to the system.
 
