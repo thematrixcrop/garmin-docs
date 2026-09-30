@@ -3,7 +3,7 @@
 把 **Garmin Connect IQ** 开发者文档（`developer.garmin.com/connect-iq/**`）抓取下来、转成 Markdown，用
 [RSPress 2](https://rspress.rs/) 托管的双语文档站。文档站是**可重复构建**的：源站更新后重跑流水线即可刷新。
 
-在线站点：<https://thematrixcrop.github.io/garmin-docs/>（`main` 推送后由 GitHub Actions 构建并发布）。
+在线站点：<https://thematrixcrop.github.io/garmin-docs/>（`main` 推送后由 GitHub Actions 构建并发布）。站点带 `noindex` 与 `robots.txt`，不向搜索引擎和常见爬虫开放索引。
 
 - 语言：英文（`/`）与简体中文（`/zh/`）。**当前只产出英文内容**，中文目录先镜像英文，翻译脚本已就绪但未运行。
 - 规模：**616 个页面 × 2 语言 = 1236 页**（Connect IQ 指南 288 页 + API 参考 328 页）。

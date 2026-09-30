@@ -19,7 +19,11 @@ function resolveBase(): string {
 
 const base = resolveBase();
 
-console.info(`[rspress] base=${base}`);
+/** Ask crawlers not to index, follow, archive, or snippet this mirror. */
+const ROBOTS_POLICY =
+  'noindex, nofollow, noarchive, nosnippet, noimageindex, nocache';
+
+console.info(`[rspress] base=${base} robots=${ROBOTS_POLICY}`);
 
 // Nav and sidebar are intentionally NOT declared here. They are generated from
 // the per-language _nav.json and _meta.json files, which the pipeline emits from
@@ -28,6 +32,15 @@ export default defineConfig({
   root: 'docs',
   lang: 'en',
   base,
+  // Do not emit llms.txt / markdown dumps that invite model crawlers.
+  llms: false,
+  head: [
+    ['meta', { name: 'robots', content: ROBOTS_POLICY }],
+    ['meta', { name: 'googlebot', content: ROBOTS_POLICY }],
+    ['meta', { name: 'bingbot', content: ROBOTS_POLICY }],
+    ['meta', { name: 'yandex', content: ROBOTS_POLICY }],
+    ['meta', { 'http-equiv': 'X-Robots-Tag', content: ROBOTS_POLICY }],
+  ],
   // Site title/description are per-locale; a root-level `title` would override
   // them and leak the English name into the Chinese <title>.
   locales: [
