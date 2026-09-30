@@ -42,15 +42,15 @@ class SampleName extends Toybox.Application.AppBase
     function initialize() {
         AppBase.initialize();
     }
-    // onStart() is called on application start up
+    // onStart() 在应用启动时调用
     function onStart(state) {
     }
 
-    // onStop() is called when your application is exiting
+    // onStop() 在应用退出时调用
     function onStop(state) {
     }
 
-    // Return the initial view of your application here
+    // 在此返回应用的初始视图
     function getInitialView(){
         return [new SampleNameView(), new SampleNameDelegate()];
     }
