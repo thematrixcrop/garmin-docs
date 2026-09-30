@@ -3,20 +3,20 @@ title: "Persisting Data"
 ---
 # Persisting Data
 
-Connect IQ is also able to save data from within an app at runtime. For example, an app may need to obtain or calculate data and store it for later use. This is accomplished by the use of Storage, Properties, and Settings.
+连接智能也可以在运行时间内存储应用程序内部的数据.例如,应用程序可能需要获取或计算数据并存储其以后使用.这通过使用存储,属性和设置实现.
 
--   *Storage* represents data written to disk so it may persist across executions of an application.
+- *存储*表示写到磁盘上的数据,以便在应用程序执行中保持.
 
--   *Properties* are constant values defined at build time and included in the executable that are useful for product-specific values that shouldn't be defined in code. Properties may also define the default Settings values.
+- *属性*是构建时定义的常数值,并包含在可执行中的值,用于不应该在代码中定义的特定产品值.属性也可以定义默认设置值.
 
--   *Settings* are user-editable values modified through Garmin Connect Mobile and Garmin Express. Default settings values are defined by Properties.
+- *设置*是通过 Garmin Connect Mobile和 Garmin Express 修改的用户可编辑的值.默认设置值由 Properties 定义.
 
 
 ## Storage
 
-Storage is used for saving and retrieving data from the file system of the device at run time as defined by the developer. This data is only available to the application and is not accessible by the end user. For example, this feature could be used to store a location from when an app was last used. The next time the app is launched, Storage can provide the last known location to the app.
+存储是用来在开发人员定义的运行时间内从设备的文件系统保存和检索数据.这些数据仅可用于应用程序,最终用户无法访问.例如,该功能可以用于存储应用程序最后使用时的位置.下一次应用程序启动时,存储可以为应用程序提供最后已知位置.
 
-The following data types may be stored:
+下列数据类型可存储:
 
 -   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -37,43 +37,43 @@ The following data types may be stored:
 -   [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 
-It is important to note that an [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) may only contain the data types listed above. For example, it is not possible to store a [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) in an [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) in Storage.
+值得注意的是,[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)可能只包含上述数据类型.例如,无法在存储中存储[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)在[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/).
 
 ## Accessing Properties and Settings: Object Store
 
-Prior to API level 2.4.0, all content was persisted in the object store. If your app runs on Connect IQ System 1 devices, you will need to use [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) and [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) to persist data. These functions allow access to both settings and persisted data.
+在 API 级别 2.4.0 之前,所有内容都存在于对象存储中.如果您的应用程序运行在 Connect IQ System 1 设备上,则需要使用[AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)和[AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)来保持数据.这些功能允许访问既设置,又保持数据.
 
-The object store is a [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) that lives in memory until your app terminates, at which point it is saved to disk. Because the object store costs against your runtime memory, do not use these methods unless you are running on System 1 devices.
+由于对象存储器的成本与运行时间内存相比,除非您在系统1设备上运行,否则不要使用这些方法.
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) | Retrieve information by key from the object store | 1.0.0 |
-| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) | Store information by key in the object store | 1.0.0 |
+| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) |从物体存储器中按键获取信息| 1.0.0 |
+| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) |存储信息按键在物体存储器中| 1.0.0 |
 
 ## Accessing Storage: `Application.Storage`
 
 *Since API level 2.4.0*
 
-The [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) module manages persistent key-value pair data storage. Information is automatically saved on disk when [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) is called. Keys and values are limited to 8 KB each, and a total of 128 KB of storage is available.
+[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块管理持续的键值对数据存储.当调用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function)时,信息自动存储在磁盘上.键和值每个限制在8 KB,总共可存储 128 KB.
 
-For example, an application might save a location for later use with the code below:
+例如,一个应用程序可能会保存一个位置以后使用以下代码:
 
 ```java
 Storage.setValue("location", locationValue.toDegrees());
 ```
 
-The next time the application is launched, the stored location value can be retrieved and displayed:
+下次启动应用程序时,可检索并显示存储的位置值:
 
 ```java
 var myLastLocation = Application.Storage.getValue("location");
 dc.drawText(x, y, Graphics.FONT_SMALL, "Last location: " + myLastLocation, Graphics.TEXT_JUSTIFY_LEFT);
 ```
 
-API level 3.2.0 introduced the ability to access the [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) module from background processes. The background process can modify storage using [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function), [Storage.deleteValue()](/connect-iq/api-docs/Toybox/Application/Storage/#deleteValue-instance_function) and . When the storage is written from the background process, [AppBase.onStorageChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStorageChanged-instance_function) callback will be invoked for the foreground process if the background and foreground process are active at the same time and vice-versa. The application would then have to reload data from storage to reflect updated information.
+API级 3.2.0 引入了从背景过程中访问[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块的能力.后台过程可以使用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function),[Storage.deleteValue()](/connect-iq/api-docs/Toybox/Application/Storage/#deleteValue-instance_function)和 .当存储从背景过程中编写时,如果背景和前景过程同时和相反而活跃,则将调用[AppBase.onStorageChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStorageChanged-instance_function)调用后台进程.应用程序将不得不重新加载存储数据以反映更新信息.
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [Storage.getValue()](/connect-iq/api-docs/Toybox/Application/Storage/#getValue-instance_function) | Retrieve information by key from persisted storage | 2.4.0 |
+| [Storage.getValue()](/connect-iq/api-docs/Toybox/Application/Storage/#getValue-instance_function) |从持续存储中按键获取信息| 2.4.0 |
 | [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) | Store information by key in persisted storage | 2.4.0 |
 
 ## Accessing Properties and Settings: `Application.Properties`
@@ -90,23 +90,23 @@ Properties.setValue("mySetting", mySetting);
 var mySetting = Properties.getValue("mySetting");
 ```
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) | Retrieve information by key from properties. Property values must be defined in a resources xml file in a `<properties>` element. If a key that is not present in application properties is passed to [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function), an exception will be thrown | 2.4.0 |
-| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) | Store information by key in persisted storage. Property values must be defined in the resource xml file in a `<properties>` element. If a key that is not present in application properties is passed to [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function), an exception will be thrown | 2.4.0 |
+| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) |从属性中按键获取信息.属性值必须在`<properties>`元素中的资源xml文件中定义.如果一个不存在应用属性中的密钥被传递给[Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function),则会抛出一个例外| 2.4.0 |
+| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) |存储信息按按键在持续存储中.资源xml文件中必须在`<properties>`元素中定义属性值.如果在应用属性中不存在的密钥被传递到[Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function),则会抛出一个例外| 2.4.0 |
 
-## Which API Should I Use?
+##我应该使用哪个API?
 
-If your app runs on devices at API level 2.4.0 or above, [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) offers a superior solution for persisting application data compared to the Object Store. Using the newer APIs in an existing app is simply a matter of updating code to call the new methods. However, there are a couple of important things of which to be aware:
+如果您的应用程序在API级别2.4.0或以上的设备上运行,[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)比对象存储器提供了更好的应用数据持久解决方案.在现有应用程序中使用更新的API只是更新代码来调用新方法.
 
-1.  Object Store data files are not converted to the new format.
+1. 对象存储数据文件不会转换为新格式.
 
-    If an app used storage prior to API level 2.4.0, existing properties will not automatically migrate to the new file format used by the [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) module. If a conversion is needed, an app must include a routine to get the data from the old files and store it in the new format.
+如果应用程序使用了 API 级别 2.4.0 之前的存储,现有的属性不会自动迁移到[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块所使用的新文件格式.如果需要转换,应用程序必须包含一个程序,以从旧文件中获取数据并将其存储在新的格式中.
 
-2.  [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) will throw an exception if attempting to write to an undefined property. Prior to API level 2.4.0, an attempt to write to an undefined property would result in a value written to storage (the .STR file) since [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) and [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) were overloaded to function with each of Storage, Properties, and Settings. This behavior will no longer occur when using the [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) module since it is distinct from . Instead, an [Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/) is thrown.
+2.[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)将在未定义的属性上尝试写时抛出例外.在API级别2.4.0之前,尝试写到未定义的属性会导致为存储写入值 ( .STR文件),因为[AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)和[AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)被过载以与存储,属性和设置每个功能.使用[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)模块时,这种行为将不再发生,因为它与 .而不是,一个[Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)被抛出.
 
 
-To maximize the number of supported devices, use a `has` check to see if the Storage API is available and then call the appropriate methods based on what the device supports:
+为了最大限度地使用支持设备的数量,使用`has`检查查是否可用存储API,然后根据设备支持的方法调用适当的方法:
 
 ```typescript
 if ( Toybox.Application has :Storage ) {
@@ -116,4 +116,4 @@ if ( Toybox.Application has :Storage ) {
 }
 ```
 
-For more, see the `ApplicationStorage` sample app distributed with the SDK.
+查看与SDK共享的`ApplicationStorage`样本应用.

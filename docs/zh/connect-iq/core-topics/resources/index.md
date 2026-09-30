@@ -5,7 +5,7 @@ title: "Resources"
 
 ![](/connect-iq/resources/programmers-guide/sculptor-monkey.png)
 
-The resource compiler compiles images, text, and static data into a resource database that the application can access at run time. The resource compiler is tied into the Monkey C compiler. Its input is an XML file:
+资源编译器将图像,文本和静态数据编译成一个资源数据库,该应用程序可以在运行时间访问.资源编译器被绑定到子C编译器中.其输入是XML文件:
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,34 +16,34 @@ The resource compiler compiles images, text, and static data into a resource dat
 </resources>
 ```
 
-## The Resource Module (a.k.a. Rez)
+##资源模块 (也称为Rez)
 
-The resource compiler auto-generates a Monkey C module named `Rez` that contains the resource IDs for the resource file. These identifiers, of type [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), are used to refer to your resources:
+资源编译器自动生成一个名为`Rez`的子C模块,其中包含资源文件的资源ID.这些类型的[Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)识别符用于引用您的资源:
 
-The code can use the `Rez` class to reference the resources at run time. You can use the following APIs:
+代码可以使用`Rez`类来引用运行时间的资源.
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) | Load a resource from the PRG into memory | 1.0.0 |
-| [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) | Load a resource from the PRG into memory | 3.1.0 |
+| [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) |输入一个资源从PRG到内存中| 1.0.0 |
+| [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) |输入一个资源从PRG到内存中| 3.1.0 |
 
-For example, let's say you have a bitmap you want to use in your view. Before it can be used by the app, it must be loaded from the resource file:
+例如,假设您在您的视图中想要使用的位地图.
 
 ```typescript
 image = Application.loadResource( Rez.Drawables.bitmap_id ) as BitmapResource;
 ```
 
-Now the bitmap can be drawn in the update handler:
+现在可以在更新处理器中绘制位图:
 
 ```typescript
 dc.drawBitmap( 50, 50, image );
 ```
 
-Resources are reference counted just like other Monkey C objects. Loading a resource can be an expensive operation, so do not load resources when handling screen updates.
+资源是参考数量的,就像其他 C子C对象一样.加载资源可能是一项昂贵的操作,因此在处理屏幕更新时不要加载资源.
 
 ### Referencing Resources Within Resource Files
 
-Resources can also be referenced from within another resource file. To do this use the syntax `@<module>.<id>`. For example, you could reference a String resource within a menu definition using the following code.
+资源也可以从其他资源文件中引用. 为此,使用语法`@<module>.<id>`. 例如,您可以使用以下代码引用菜单定义中的字符串资源.
 
 ```xml
 <string id="menu_item_1_label">Item 1</string>
@@ -53,13 +53,13 @@ Resources can also be referenced from within another resource file. To do this u
 </menu>
 ```
 
-This code would use the string defined with an ID of `menu_item_1_label` as the label for the menu item.
+这代码将使用用`menu_item_1_label`的ID定义的字符串作为菜单项的标签.
 
 ## Resource Scopes
 
 *Since API level 3.1.0*
 
-Adding resources to an app comes with a minor runtime memory cost. While the cost is small, it can seriously cut into the available memory for background services and glances. To mitigate these costs, Connect IQ has an additional `scope` attribute to the following resource tags: `<layout>`, `<drawable-list>`, `<bitmap>`, `<string>`, `<font>`, `<jsonData>`. The `scope` attribute tells the resource compiler the type of application that the resource should be made available to. Valid values for the `scope` attribute are `background`, `glance`, and `foreground`. If the attribute is not specified for a resource, it will be considered part of the `foreground` scope by default. An example of using the `scope` attribute with string resources:
+添加资源到应用程序中带来较小的运行时间内存成本.虽然成本很小,但它可以严重削减可用的后台服务和视图内存.为了减轻这些成本,Connect IQ 具有额外的`scope`属性,用于以下资源标签:`<layout>`,`<drawable-list>`,`<bitmap>`,`<string>`,`<font>`,`<jsonData>`.`scope`属性告诉资源编译器该资源应提供的应用类型.`scope`属性的有效值为`background`,`<layout>`0和`<layout>`1 .如果属性不指定给某个资源,则默认将被认为是`<layout>`2范围的一部分.使用`<layout>`3属性配备资源的例子:
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -70,7 +70,7 @@ Adding resources to an app comes with a minor runtime memory cost. While the cos
 </resources>
 ```
 
-Use the `scope` attribute to save memory in your glance or background service. All background scoped resources will be available to the glance and foreground application. All glance scoped resources will be available to the foreground application, but not to the background service. Foreground scoped resources will only be available to the foreground application.
+使用`scope`属性来存储您的视角或背景服务中的内存.所有背景范围资源将可用于视角和前景应用.所有视角范围资源将可用于前景应用,但不是背景服务.前景范围资源将只可用于前景应用.
 
 | Application Mode | MyBackgroundString | MyGlanceString | MyForegroundString |
 | --- | --- | --- | --- |
@@ -78,13 +78,13 @@ Use the `scope` attribute to save memory in your glance or background service. A
 | Glance | X | X |  |
 | Foreground | X | X | X |
 
-In the example above, `MyBackgroundString` would be available when running the application in any valid mode. `MyGlanceString` would be available to the glance and foreground application, but not to the background service if present. `MyForegroundString` would only be available to the foreground application. By providing this hierarchy, developers can better determine how their resources should be scoped.
+在上述例子中,`MyBackgroundString`将在任何有效模式下运行应用程序时可用.`MyGlanceString`将可用于视线和前景应用程序,但如果存在,则不会用于背景服务.`MyForegroundString`仅可用于前景应用程序.通过提供这种层次结构,开发人员可以更好地确定如何将其资源进行范围.
 
 See [Background Services](/connect-iq/core-topics/backgrounding/#background-services) or [Glances](/connect-iq/core-topics/glances/#glances) 更多信息.
 
 ## Strings
 
-Connect IQ products are used around the world, and those users want apps to work in their language. Connect IQ supports adding strings using a strings resource file:
+连接智商产品在世界各地使用,这些用户希望应用程序在他们的语言中工作.连接智商支持使用字符串资源文件添加字符串:
 
 ```xml
 <strings>
@@ -92,15 +92,15 @@ Connect IQ products are used around the world, and those users want apps to work
 </strings>
 ```
 
-At runtime, you can load this string using [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function). String definitions take the following attributes:
+在运行时,您可以使用[WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)加载这个字符串.字符串定义采用以下属性:
 
 | Attribute | Required | Description |
 | --- | --- | --- |
-| `id` | Yes | Identifier for the string |
-| `scope` | No | See [resource scopes](#resource-scopes). String can have the additional `settings` scope which removes it from the runtime. This is useful when a string is only used within your setting definitions. |
-| `translatable` | No | Indicates if a string requires translations. Set to `false` to mark a string as not requiring translations. |
+| `id` | Yes |字符串的标识符|
+| `scope` | No |参见[resource scopes](#resource-scopes). 字符串可以具有额外的`settings`范围,从而将其从运行时间中删除.当字符串仅在设置定义中使用时,这很有用.|
+| `translatable` | No |设置为`false`以标记一个字符串不需要翻译.|
 
-Using [localization qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers) of your resource folders you can provide different strings for different languages. Adding the following suffixes to your resource folder will allow you to add string files for various languages
+使用您的资源文件的[localization qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers),您可以为不同的语言提供不同的字符串.将下列后音符添加到您的资源文件中,将允许您添加各种语言的字符串文件
 
 | Qualifier | Language | Notes |
 | --- | --- | --- |
@@ -140,17 +140,17 @@ Using [localization qualifiers](/connect-iq/core-topics/build-configuration/#dev
 | `zhs` | Simplified Chinese |  |
 | `zht` | Traditional Chinese |  |
 
-You can combine these qualifiers with device, family and screen qualifiers to have strings that are customized to each device if necessary.
+您可以将这些资格与设备,家庭和屏幕资格结合起来,以设置适应每个设备的字符串.
 
 ![Resource folders with qualifiers](/connect-iq/resources/programmers-guide/resources-strings.png)
 
-See the `Strings` sample for an example of how to use the strings resource system.
+查看`Strings`样本为使用字符串资源系统的一个例子.
 
 ## Bitmaps
 
-Garmin devices have different form factors, screen sizes and screen technologies, so bitmaps need to be explicitly converted for every device. The resource compiler will generate resources for every intended product, which allows the developer to have one set of resources for black and white products, one set for color products, one for larger screen sizes, etc. The resource compiler supports `JPG/JPEG`, `BMP/WBMP`, `GIF`, `SVG` and `PNG` file formats.
+Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每台设备都需要明确转换位图.资源编译器将为每个预期的产品生成资源,这允许开发人员拥有一组黑白产品资源,一组彩色产品资源,一组更大的屏幕尺寸等.资源编译器支持`JPG/JPEG`,`BMP/WBMP`,`GIF`,`SVG`和`PNG`文件格式.
 
-While each device has a unique palette, the developer can specify a palette to use for an image. The resource compiler will map the colors that are defined in the developer's palette to the closest match in the device palette and use only those colors. A palette can be defined using the following syntax:
+虽然每个设备都有一个独特的调色板,但开发人员可以指定用于图像的调色板.资源编译器将在开发人员的调色板中定义的颜色映射到设备调色板中最接近的颜色,只使用这些颜色.一个调色板可以使用以下语法定义:
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -165,149 +165,149 @@ While each device has a unique palette, the developer can specify a palette to u
 </resources>
 ```
 
-The table below shows some of the valid attributes for a `<bitmap>` definition.
+下面的表显示了`<bitmap>`定义的有效属性.
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The handle for the layout, which is used to reference the layout in the Rez module | Any value that starts with a letter | NA | Required |
-| `filename` | The relative path to the image file | A valid, resolvable path to an image file | NA | Required |
-| `dithering` | The type of dithering to use when compiling the image | `floyd_steinberg` or `none` | `floyd_steinberg` |  |
-| `compress` | Indicate that the compiled bitmap should be compressed to reduce .PRG size | `true` or `false` | `false` |  |
-| `automaticPalette` | Automatically determine a reduced color palette to use while compiling the image. Images will be limited to 256 colors for 16-bit color devices. | `true` or `false` | `true` for 16-bit color devices |  |
-| `packingFormat` | The format with which the image will be encoded into the PRG | `default`, `png`, `jpg`, `yuv`. | `default` | Options besides `default` only available on certain devices. See [Bitmap Packing Formats](#bitmap-packing-formats) |
-| `scaleX` | How should the image be scaled in the x dimension? | Pixel size or percentage | If `scaleY` is set, will default to `scaleY`’s value. Otherwise will default to 100% of image width | See `scaleRelativeTo` |
-| `scaleY` | How should the image be scaled in the x dimension? | Pixel size or percentage | If `scaleX` is set, will default to `scaleX`’s value. Otherwise will default to 100% of image height | See `scaleRelativeTo` |
-| `scaleRelativeTo` | What should the scale factor be based on? | `screen` or `image` | `screen` | Sets what to base relative scaling on. If set to screen, image will be re-scaled based on product it is being built for at compile time |
-| `personality` | Personality class for the element | Personality class | None | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | Required |
+| `filename` |图像文件的相对路径|一个有效,可解决的图像文件的路径| NA | Required |
+| `dithering` |在编译图像时使用的旋的类型|`floyd_steinberg`或`none`| `floyd_steinberg` |  |
+| `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
+| `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| `true` for 16-bit color devices |  |
+| `packingFormat` |将图像编码到PRG的格式| `default`, `png`, `jpg`, `yuv`. | `default` | Options besides `default` only available on certain devices. See [Bitmap Packing Formats](#bitmap-packing-formats) |
+| `scaleX` |在x维度上,该图像应该如何扩展?| Pixel size or percentage |如果设置`scaleY`,则将默认地设置为`scaleY`s值.否则将默认地设置为100%的图像宽度| See `scaleRelativeTo` |
+| `scaleY` |在x维度上,该图像应该如何扩展?| Pixel size or percentage |如果设置`scaleX`,则将默认设置为`scaleX`s值.否则将默认设置为100%的图像高度.| See `scaleRelativeTo` |
+| `scaleRelativeTo` |规模因素应该基于什么?|`screen`或`image`| `screen` |设置对相对扩展的基础. 如果设置为屏幕,图像将根据编译时正在构建的产品重新扩展|
+| `personality` |元素的个性类|个性类| None | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
-The valid attributes for a `<palette>` definition are in the table below.
+对于`<palette>`定义的有效属性如下表.
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `disableTransparency` | Should the compiler allow transparent pixels in the image? Disabling transparency may save memory | `true` or `false` | `false` |  |
+| `disableTransparency` |编译器应该允许图像中透明的像素吗?|`true`或`false`| `false` |  |
 
 ### Bitmap Packing Formats
 
 *Since API level 4.0.0*
 
-Images can grow your executable size, which can add extra wait when users install or update your app. To reduce executable bloat use these bitmap attributes for packing images into your executable.
+图像可以增加您的执行式尺寸,这可以增加用户安装或更新您的应用程序时的额外等待. 为了减少可执行式膨胀,使用这些位图属性将图像包装到您的执行式中.
 
-Each of the formats can have their advantages and disadvantages:
+每种格式都有其优点和缺点:
 
 | Format | Advantage | Disadvantage | Use Case |
 | --- | --- | --- | --- |
-| `default` | Available on all products, fastest to load, supports alpha channel | No compression | App runs on pre-API level 4.0.0 devices. Low palette images can have very small runtime costs |
-| `png` | Lossless, compressed and supports alpha channel | Slowest to load, which can add runtime cost if purged and reloaded frequently from the graphics pool | Importing non-photo images with or without alpha channel |
-| `jpg` | Compresses very well, fast to load | Lossy format and does not support alpha channel | Importing photo imagery without alpha channel |
-| `yuv` | Compresses well, supports alpha channel, fast to load | Lossy format | Importing photo imagery with alpha channel |
+| `default` |可在所有产品上使用,最快加载,支持阿尔法频道| No compression |应用程序在API前4.0.0级设备上运行.低调图像可能具有非常小的运行时间成本|
+| `png` | Lossless, compressed and supports alpha channel |最慢的加载,如果经常从图形库中清除和重新加载,这可以增加运行时间成本|进口带或无带阿尔法频道的非照片图像|
+| `jpg` |压缩非常好,快速加载| Lossy format and does not support alpha channel | Importing photo imagery without alpha channel |
+| `yuv` |压缩良好,支持阿尔法通道,快速加载| Lossy format |通过阿尔法频道进口照片图像|
 |  |  |  |  |
 
 ## Fonts
 
-The resource compiler reads fonts in `TXT` or `PNG` format. You can use the BMFont tool (available at [http://www.angelcode.com/products/bmfont/](http://www.angelcode.com/products/bmfont/)) to convert a font from many different formats to a compatible format. Prior to export, ensure that BMFont's *Font Settings* specify the Unicode character set. Recommended export options are shown in the image below:
+资源编译器可以读取`TXT`或`PNG`格式的字体.您可以使用BMFont工具 (可在[http://www.angelcode.com/products/bmfont/](http://www.angelcode.com/products/bmfont/)上使用) 来将字体从许多不同的格式转换为兼容格式. 在出口之前,请确保BMFont的 *字体设置*指定Unicode字符集.下面的图片中显示出所建议的出口选项:
 
-Figure 1. The BMFont Export Options
+图1.BMFont出口选择
 
 ![The BMFont Export Options](/connect-iq/resources/programmers-guide/bmfont_options.png)
 
-The color can be set using [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function). Since bitmap fonts can take a lot of runtime memory, the font converter defaults to non-anti-aliased 1-bit fonts to save memory. If you know you will have the runtime RAM available, you can turn on font anti-aliasing with the `antialias` option.
+颜色可以使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)设置.由于位图字体可以耗费大量的运行时间内存,字体转换器默认设置为非-反-aliased 1-bit字体来存储内存.如果你知道你将有运行时间内存,你可以使用`antialias`选项启动字体反-aliasing.
 
 ```xml
 <!-- Domo arigato mister font -->
 <font id="font_id" filename="roboto.fnt" antialias="true" />
 ```
 
-If you are creating a large font, sometimes, only particular glyphs need to be large-sized (like numbers for a watch face). Use the filter attribute to specify the particular glyphs to include:
+如果您正在创建一个大字体,有时,只需要特定的字体大小 (就像手表面的数字一样). 使用过属性来指定特定的字体,包括:
 
 ```xml
 <!-- Only include digits from this large font -->
 <font id="font_id" filename="big_font.fnt" filter="0123456789:"/>
 ```
 
-Font elements accept the following attributes:
+字体元素接受以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None | Unique identifier for the font |
-| `filename` | String | Yes | None | BMFont generated `.fnt` file |
-| `filter` | String | No | None | Optional string that outlines all characters to import from the font |
-| `antialias` | Boolean | No | `false` | Boolean that identifies if fonts should be imported with anti-aliasing information |
+| `id` | String | Yes | None |字体的唯一标识符|
+| `filename` | String | Yes | None |在BMFont生成的`.fnt`文件中|
+| `filter` | String | No | None |选项字符串概述所有字符从字体中输入|
+| `antialias` | Boolean | No | `false` |布尔字体识别是否应进口与反化信息|
 | `scope` | String | No | `foreground` | See [resource scopes](#resource-scopes) |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 ## Menus
 
-Menus are common UI elements on Connect IQ products. Menu resources allow you to define your menus within your resource definitions.
+菜单是Connect IQ产品中常见的UI元素.菜单资源允许您在资源定义中定义菜单.
 
 ### Standard Menus
 
-Menus are defined using the `<menu2>` element, which has the following attributes:
+菜单使用以下属性的`<menu2>`元素定义:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None | Unique identifier for the menu |
+| `id` | String | Yes | None |菜单的唯一标识符|
 | `title` | String | No | None | String, string resource identifier, or drawable resource identifier |
-| `icon` | Drawable reference | No | None | Bitmap identifier. Used for Instinct 2 sub-screen icon. |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `icon` | Drawable reference | No | None |用于 Instinct 2 子屏幕图标.|
+| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
-Within a `<menu2>` element can be an array of `<menu-item>`, `<toggle-menu-item>`, or `<icon-menu-item>` types.
+在`<menu2>`元素内可以有`<menu-item>`,`<toggle-menu-item>`或`<icon-menu-item>`类型的数组.
 
 #### Standard Menu Items
 
-Standard menu items are contained within `<menu-item>` elements and have the following attributes:
+标准菜单项目包含在`<menu-item>`元素中,具有以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None | Unique identifier for the menu item |
-| `label` | String | Yes | None | String title for the menu item |
-| `subLabel` | String | No | None | String sub-title for the menu item |
-| `icon` | Drawable reference | No | None | Drawable icon displayed in the Instinct 2 sub-screen |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `id` | String | Yes | None |菜单项的唯一标识符|
+| `label` | String | Yes | None |菜单项的字符串标题|
+| `subLabel` | String | No | None |菜单项的字符串字幕|
+| `icon` | Drawable reference | No | None |在 Instinct 2 子屏幕中显示的可画图标|
+| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 #### Toggle Menu Items
 
-Toggle menu items are contained within the `<toggle-menu-item>` element. In addition to the attributes mentioned in [standard menu items](#standard-menu-items), they have the following attributes:
+调节菜单项包含在`<toggle-menu-item>`元素中.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `disabledSubLabel` | String | No | None | Separate sub-label for when the toggle id in the disabled state |
-| `checked` | Boolean | No | `false` | `true` if toggle should be enabled, `false` otherwise |
+| `disabledSubLabel` | String | No | None |独立的子标签,用于在禁用状态下切换ID时|
+| `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
 
 #### Icon Menu Items
 
-Icon Menu items are defined with the `<icon-menu-item>` element. With icon menu icons, the `icon` attribute is displayed in the menu item.
+标签菜单项由`<icon-menu-item>`元素定义. 标签菜单图标,`icon`属性显示在菜单项中.
 
 ### Checkbox Menus
 
-Checkbox menus are defined with the `<checkbox-menu>` element, which has the same attributes as [standard menus](#standard-menus). Inside of the checkbox menu can be a sequence of `<checkbox-menu-item>` elements.
+查询框菜单是用`<checkbox-menu>`元素定义的,它具有与[standard menus](#standard-menus)相同的属性.查询框菜单内可以包含`<checkbox-menu-item>`元素的序列.
 
 #### Checkbox Menu Items
 
-Checkbox menu items are defined with the `<checkbox-menu-item>` element. In addition to the attributes mentioned in [standard menu items](#standard-menu-items), they have the following attributes:
+查询框菜单项是用`<checkbox-menu-item>`元素定义的.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `checked` | Boolean | No | `false` | `true` if toggle should be enabled, `false` otherwise |
+| `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
 
 ### Action Menus
 
-Action menus are contextual menus associated with a page. Action menus are defined with the `<action-menu>` element, which can have the following attributes:
+动作菜单是与页面相关的文本菜单. 动作菜单是用`<action-menu>`元素定义的,它可以具有以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None | Unique identifier for the menu |
-| `theme` | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) or [`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) | No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) | Allows configuring if the action menu is light on dark or dark on light. Not configurable on all products. |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `id` | String | Yes | None |菜单的唯一标识符|
+| `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |允许设置如果动作菜单是光在暗或暗在光明. 不能在所有产品上设置.|
+| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 #### Action Menu Items
 
-Action menu items are contained within `<action-menu-item>` elements and have the following attributes:
+动作菜单项目包含在`<action-menu-item>`元素中,具有以下属性:
 
 | Attribute | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| `id` | String | Yes | None | Unique identifier for the menu item |
-| `label` | String | Yes | None | String title for the menu item |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `id` | String | Yes | None |菜单项的唯一标识符|
+| `label` | String | Yes | None |菜单项的字符串标题|
+| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 ## Animations
 
@@ -315,7 +315,7 @@ Action menu items are contained within `<action-menu-item>` elements and have th
 
 The Monkey Motion tool included in the Connect IQ SDK that 可用于 generate animation resources for compatible Connect IQ products.
 
-The Monkey Motion tool supports importing from [`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc) and `GIF` file formats. Due the fact that `YUV` is a true color, close-to-raw file format, it is the recommended format when entering a high quality animation into the Monkey Motion encoder tool. If necessary, [FFmpeg](https://ffmpeg.org/) is a convenient tool for converting video file formats. For example, if your creative team has provided a video in some other popular format, convert the file to the `YUV` format:
+tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc)和`GIF`文件格式导入.由于`YUV`是真正的颜色,接近原始的文件格式,它是将高质量的动画输入子动作编码工具时建议的格式.如果需要,[FFmpeg](https://ffmpeg.org/)是转换视频文件格式的方便工具.例如,如果您的创意团队已经提供了其他流行的格式的视频,则将文件转换为`YUV`格式:
 
 ```
 > ffmpeg -i input.mp4 -vf format=yuv420p output.y4m
@@ -329,17 +329,17 @@ Additionally, to overcome the fact that the `YUV` format does not support transp
 
 ![](/connect-iq/resources/programmers-guide/app_settings_editor.png)
 
-For the same reasons outlined in the section above, animations need to be explicitly converted for every device. For easy import into your Connect IQ application, the Monkey Motion tool batch converts video to binary encoding for devices you select.
+由于上述部分所述相同的原因,动画必须明确转换为每个设备. 为了轻松地将其进口到您的Connect IQ应用程序中,Monkey Motion工具批量将视频转换为您选择的设备的二进制编码.
 
-### Including Animation Resources in a Monkey C Project
+### 包含动画资源在子C项目中
 
-To include an animation resource in a Monkey C project, define an animation resource. This can be done manually or by using the Monkey Motion tool. The table below shows all of the valid attributes for an `<animation>` resource:
+为了将动画资源纳入子C项目的,定义动画资源.这可以手动或使用子运动工具.下表显示了`<animation>`资源的所有有效属性:
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The handle for the layout, which is used to reference the layout in the Rez module | Any value that starts with a letter | NA | Required |
-| `filename` | The relative path to the Monkey Motion Manifest file | A valid, resolvable path to a Monkey Motion Manifest file | NA | Required |
-| `personality` | Personality class for the element | A defined personality class | NA | Optional |
+| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | Required |
+| `filename` |子运动宣言文件的相对路径|一个有效的,可解决的路径到一个子运动表现文件| NA | Required |
+| `personality` |元素的个性类|一个定义的人格类| NA | Optional |
 
 An example Animation XML resource:
 
@@ -350,7 +350,7 @@ An example Animation XML resource:
 </resources>
 ```
 
-To load this animation resource in code, create a [WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/) then add it to a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/):
+要将此动画资源加载到代码中,创建一个[WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)然后将其添加到一个[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/):
 
 ```typescript
 class MyAnimationView extends WatchUi.View {
@@ -380,20 +380,20 @@ class MyAnimationView extends WatchUi.View {
 }
 ```
 
-Read more about Animations in the [Monkey Motion reference](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion), [API documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), [AnimationLayer documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/), and the `AnimationWatchFace` sample.
+阅读更多关于[Monkey Motion reference](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion),[API documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/),[AnimationLayer documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)和`AnimationWatchFace`样本中的动画
 
 ## JSON Data
 
-JSON data resources can store relatively large amounts of data in your app without having to keep it in memory at all times. This can be useful for storing something like a table of information that must be referenced at runtime, but will not be modified.
+JSON 数据资源可以在应用程序中存储相对大量的数据,而无需随时存储其在内存中.这可以用于存储类似在运行时需要引用的信息表的东西,但不会被修改.
 
-These resources are declared with the `jsonData` tag in a resource file, are read by the resource compiler, and loaded on demand at runtime. The `jsonData` tag supports the following attributes:
+这些资源是用`jsonData`标签声明在资源文件中,由资源编译器读取,并在运行时按需加载.`jsonData`标签支持以下属性:
 
 | Attribute | Definition | Valid Values |
 | --- | --- | --- |
-| `id` | The identifier of the JSON resource | Any string starting with a letter |
-| `filename` | The name of a file containing JSON data | A valid, resolvable path to a data file |
+| `id` |JSON 资源的标识符|任何以字母开始的字符串|
+| `filename` |包含JSON数据的文件名称|一个有效的,可解决的数据文件路径|
 
-JSON data resources may be provided as either a `jsonData` value or as a file referenced by the `filename` attribute, depending on whether it's easier to manage the data inside a resource file or in a separate JSON file. If using a file, it may only contain JSON data. Here are a few examples:
+JSON 数据资源可以作为一个`jsonData`值或作为一个由`filename`属性引用的文件提供,取决于资源文件内或单独的 JSON 文件中是否更容易管理数据.如果使用文件,它可能只包含 JSON 数据.以下是几个例子:
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -406,16 +406,16 @@ JSON data resources may be provided as either a `jsonData` value or as a file re
 </resources>
 ```
 
-The JSON data is loaded with the [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) method by passing in the `jsonData` ID. For example, to load the `jsonArray` data from the example above, the following code would be used:
+通过通过`jsonData`ID来加载JSON数据,采用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)方法.例如,从上面的示例中加载`jsonArray`数据,将使用以下代码:
 
 ```typescript
 var array = Application.loadResource(Rez.JsonData.jsonArray);
 ```
 
-For more see the `JsonDataResources` sample app distributed with the SDK.
+查看与SDK共享的`JsonDataResources`样本应用.
 
-[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) wasn't accessible by background services so we moved it.
+我们把[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/)移动了.
 
-We stan a sub-screen icon. QUEEN!
+我们将设置一个子屏幕图标.
 
-Their own language and their own video file format? Who do these people think they are?
+他们的语言和视频文件格式?

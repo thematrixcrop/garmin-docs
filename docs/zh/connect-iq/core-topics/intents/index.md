@@ -5,20 +5,20 @@ title: "Intents"
 
 *Since API level 2.2.0*
 
-Intents allow a Connect IQ watch-app or widget to launch another Connect IQ watch-app, Connect IQ widget, or native application (e.g. built in activities like Run, Bike, etc.) by calling [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function):
+意图允许Connect IQ手表应用程序或小工具通过调用[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)来启动另一个Connect IQ手表应用程序,Connect IQ小程序或本地应用程序 (例如,在运行,自行车等活动中内置)
 
-Calling [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) will cause a confirmation view to be displayed asking the user whether to exit to the intended app. If the user chooses 'No' then the app that called [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) will continue to run. If the user chooses 'Yes' then the app will exit and the new app will launch. While the confirmation view is shown, the originating app will continue to run.
+调用[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)将导致一个确认视图显示,询问用户是否要退出预期的应用程序.如果用户选择'不',则称为[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)的应用程序将继续运行.如果用户选择'是',则应用程序将退出,新应用程序将启动.
 
-## Exiting to Connect IQ Apps
+## 离开连接智商应用程序
 
-In order to exit to another Connect IQ app, a [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) must be created, which contains a target app identifier and any arguments you wish to pass to the target app. The target app identifier must be specified using one of two supported URI schemes:
+为了进入另一个Connect IQ应用程序,必须创建一个[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/),其中包含目标应用程序识别符和任何您想将参数传递给目标应用程序.目标应用程序识别符必须使用两个支持的URI方案之一指定:
 
--   `manifest-id://` followed by a valid UUID from the app's manifest.xml
+-`manifest-id://`后面是应用程序的 manifest.xml 的有效 UUID
 
--   `store-id://` followed by a valid app store UUID
+-`store-id://`后面是有效的应用商店 UUID
 
 
-Arguments are passsed to the target app as a dictionary, which may be empty or `null`, and are received by the target app's [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) method as a [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) object.
+参数将作为字典传递到目标应用程序,可能是空的或`null`,并通过目标应用程序的[AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)方法作为[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象接收.
 
 ```java
 import Toybox.System;
@@ -27,18 +27,18 @@ var intent = new System.Intent("manifest-id://01234567-89AB-CDEF-0123-456789ABCD
 System.exitTo(intent);
 ```
 
-Assuming the target app is installed on the device, this example launches the app with manifest ID `01234567-89AB-CDEF-0123-456789ABCDEF` and passes it the `"lat"` and `"lon"` arguments.
+假设目标应用程序安装在设备上,这个例子将启动具有明示 ID`01234567-89AB-CDEF-0123-456789ABCDEF`的应用程序,并通过`"lat"`和`"lon"`参数.
 
-## Exiting to Native Apps
+## 退出本地应用程序
 
 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) objects to launch native apps deal exclusively with [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) objects, such as [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/), [PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), and [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/). Connect IQ handles most of the [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) functionality for native apps behind the scenes, automatically embedding the appropriate native app identifier in the [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) object, which is accessible via the `toIntent()` method. See the [Persisted Content](/connect-iq/core-topics/downloading-content/#persisted-content-in-the-simulator) section 更多信息.
 
 ## Intent Exceptions
 
-Connect IQ includes three exception types related to intents:
+连接智商包括三个与意图相关的例外类型:
 
--   [System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/) is thrown if your app tries to exit to a Connect IQ app type other than device app or widget
+- 如果您的应用程序试图进入Connect IQ应用程序类型,而不是设备应用程序或小工具,则将[System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)丢弃
 
--   [System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/) is thrown if your app tries to exit to an app that is not installed
+- 如果您的应用程序试图退出未安装的应用程序,则[System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)会被丢弃
 
--   [System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/) is thrown if [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) is called a while a confirmation view from a previous [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) call has not been acknowledged by the user
+- 如果[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)被调用时,[System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/)会被丢弃,而用户未认出之前的[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)调用的确认视图

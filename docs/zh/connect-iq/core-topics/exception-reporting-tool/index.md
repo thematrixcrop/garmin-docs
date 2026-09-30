@@ -7,13 +7,13 @@ The ERA tool 可用于 view your app's crashes after it has been released on the
 
 ## Getting Started
 
-To launch the graphical ERA tool, either run the *Monkey C: Start ERA Viewer* command from the command palette of Visual Studio Code or use the [Command Line](#Command-Line). When first running the tool, the *Login Prompt* window will appear asking you to log in to your developer account. Once you have completed the login process, the list of apps will download and the app selection list will be populated.
+要启动图形ERA工具,要么从视觉工作室代码的命令中运行*Monkey C:Start ERA Viewer*命令,要么使用[Command Line](#Command-Line).第一次运行工具时,会出现*登录提示*窗口,要求您登录开发者帐户.一旦您完成登录过程,应用程序列表将下载,应用程序选择列表将填满.
 
 ### Command Line
 
-You can launch the Graphical ERA tool from the command line by simply running `java -jar era.jar` inside the **bin** folder of your current SDK.
+您可以从命令行启动 Graphical ERA 工具,只需运行`java -jar era.jar`在当前SDK的**bin**文件中.
 
-The ERA tool can also retrieve crash reports for a single app directly from the command line by running the `era` command inside the **bin** folder of your current SDK. This will output the crashes for the given app in a JSON format. Note that the first time you launch the ERA tool via either method mentioned above, you may be prompted to log in to your developer account if you've not done so previously.
+ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通过运行您当前 SDK 的 **bin**文件内的`era`命令. 这将在 JSON 格式中输出给定的应用程序的崩.请注意,在上述方法中的任何一种方式中首次启动ERA工具时,您可能会被要求登录您的开发人员帐户,如果您以前没有这样做.
 
 ```
 > era [-a <arg>]
@@ -21,26 +21,26 @@ The ERA tool can also retrieve crash reports for a single app directly from the 
 
 | Argument | Definition |
 | --- | --- |
-| `-a <arg>` | The app UUID to retrieve crashes for |
+| `-a <arg>` |应用程序将 UUID 检索到  的故障|
 | `-h` | Prints help text |
 
 ## Viewing App Settings
 
 ![](/connect-iq/resources/programmers-guide/era_manage_apps.png)
 
-The Manage Apps window allows you to see the apps associated with your developer account. You can launch this window by selecting **Settings > Manage Apps** in the menu. The list of apps is color coded to allow easy identification of an app's status.
+管理应用程序窗口允许您查看与您的开发者帐户相关的应用程序.您可以在菜单中选择**设置>管理应用程序** 启动此窗口.应用程序列表是颜色编码的,以便轻松识别应用程序的状态.
 
 | Font Style | App Status | Crashes Viewable |
 | --- | --- | --- |
 | Normal | Released app | Yes |
 | Gold | Beta app | Yes |
-| Strikethrough | App is hidden | No |
+| Strikethrough |应用程序隐藏| No |
 
-In this window you can rearrange the apps and change an app's settings. To rearrange the order of the apps, click on an app and click on the **∧** or **∨** buttons. The order of the apps in this window are reflected in the app selection box in the crash report view. To change an app's settings choose the app in the list and click on the **i** button.
+在此窗口中,您可以重新排列应用程序并改变应用程序的设置.为了重新排列应用程序,单击应用程序并单击****或****按.该窗口中的应用程序的排列反映在崩盘报告视图中的应用程序选择框中.为了更改应用程序的设置,请选择应用程序在列表中,单击**i**按.
 
 ![](/connect-iq/resources/programmers-guide/era_app_info.png)
 
-In the Application Settings window you can hide the app from the drop down box in the crash report view. If the **Hide this app** box is checked then the app will not be shown in the crash report view app list.
+在应用程序设置窗口中,您可以隐藏应用程序在崩报告视图中的下拉框中.如果选出**隐藏这个应用程序**框,则该应用程序将不会显示在崩报告视图应用程序列表中.
 
 ## Viewing Crash Reports
 

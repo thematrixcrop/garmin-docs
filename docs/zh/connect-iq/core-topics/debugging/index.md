@@ -7,44 +7,44 @@ title: "测试 and Debugging"
 
 Connect IQ 有几种不同的方法来测试和调试您的应用：
 
-1.  Basic debugging with `println()` statements
+1.使用`println()`语句进行基本调试
 
-2.  Using the Visual Studio Code debugger
+2. 使用视觉工作室代码调试器
 
-3.  Using the command line debugger (`mdd`)
+3. 使用命令行调试器 (`mdd`)
 
 
 ## Basic Debugging
 
-One way to test Connect IQ apps is to include [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) statements at strategic points in your app. Within Visual Studio Code, these [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) statements will output to the console. On a device, [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) statements write to an `<APPNAME>.TXT file` in the `/GARMIN/APPS/LOGS` directory in the device file system.
+测试Connect IQ应用程序的一种方法是将[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句包含在应用中的战略点上.在视觉工作室代码中,这些[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句将输出到控制台上.在设备上,[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句会写到设备文件系统中的`/GARMIN/APPS/LOGS`目录中的`<APPNAME>.TXT file`.
 
-These log files are not automatically created, so they must be manually created on the device and named to match the name of the app's corresponding `PRG` file. For example, to log output from `/GARMIN/APPS/MYAPP.PRG`, you must create `/GARMIN/APPS/LOGS/MYAPP.TXT`.
+这些日志文件不会自动创建,因此它们必须在设备上手动创建并命名以匹配应用程序的相应`PRG`文件名称.例如,从`/GARMIN/APPS/MYAPP.PRG`输出日志,您必须创建`/GARMIN/APPS/LOGS/MYAPP.TXT`.
 
-## Debugging with Visual Studio Code
+## 修改视觉工作室代码
 
 To begin debugging your application select *Run > Start Debugging*. 确保您已在编辑器中打开了要调试的项目源文件。 After selecting the product you want to debug, the app will launch in debug mode in the simulator. 仅在连接 IQ 模拟器上运行时支持调试。
 
-### Setting a Breakpoint
+###设定一个断点
 
-Like other projects in Visual Studio Code, to set a breakpoint in the Monkey C editor, highlight a line in the vertical ruler next to the source code and click to set a breakpoint.
+与视觉工作室代码中的其他项目一样,在 Monkey C 编辑器中设置断点,在源代码旁边垂直行列中突出一行,然后点击设置断点.
 
 ![](/connect-iq/resources/programmers-guide/vscode-breakpoint.png)
 
 ### Viewing Application Status
 
-When your application hits a breakpoint, you can examine the runtime state in *Run and Debug*. The *Variables* view allows you to see your arguments and locals, while the *Call Stack* allows you to see state at different stack frame.
+当你的应用程序达到断点时,你可以在 * Run 和 Debug* 中检查运行时间状态. * 变量 * 视图允许你看到你的参数和本地,而 * 调用堆 * 允许你看到不同堆框架中的状态.
 
-When your application suspends while debugging you will be prompted to open the native *Debug* perspective. From here, you can view the stack trace within the native Debug view. Clicking on a stack frame within the stack trace will populate the native Variables view with the applicable variables at that stack frame. Global variables will only be visible in the top stack frame; they appear as the `$` variable within that stack frame.
+当您的应用程序在调试中暂停时,您将被要求打开本土的 *Debug*视角.从这里,您可以在本土的调试视图中查看堆痕迹.点击堆痕迹内的堆框架将填充本土的变量视图,并将在该堆框架中的适用的变量.全球变量只会在顶部堆框架中可见;它们会作为该堆框架内的`$`变量出现.
 
 ![](/connect-iq/resources/programmers-guide/vscode-debugging.png)
 
-## Debugging with the Command Line
+## 在命令行上做错误
 
-`mdd` is the Monkey C command line debugger. Modeled after `gdb`, `mdd` allows you to load your executables, set breakpoints, and examine stack frames, local variables, and the global environment.
+`mdd`是Monkey C命令行调试器.基于`gdb`的模型,`mdd`允许您加载执行式,设置断点,并检查堆框架,本地变量和全球环境.
 
 ### Getting Started
 
-Make sure you have followed the "Getting Started" instructions to set up the command line environment. Before you begin, start the simulator:
+在开始之前,请启动模拟器:
 
 ```bash
 > simulator &
@@ -52,14 +52,14 @@ Make sure you have followed the "Getting Started" instructions to set up the com
 > mdd
 ```
 
-You will be greeted with the following:
+您将受到以下欢迎:
 
 ```
 Connect IQ Version 3.2.0. Type "help" 更多信息.
 (mdd)
 ```
 
-Help is always available from the command line prompt:
+随时可从命令行提示中获取帮助:
 
 ```
 (mdd) help
@@ -78,17 +78,17 @@ Type "help" followed by a command name for full documentation.
 Command name abbreviations are allowed if defined.
 ```
 
-### Loading and Running an Executable
+### 装载和运行一个可执行的
 
-To load an executable into `mdd`, you need the `prg`, the debug XML and the product the `prg` is built for. If you compile your `prg` using the `monkeyc` command, the `debug.xml` will also be generated, and Visual Studio Code typically outputs these files in the `bin` folder of your project.
+要将执行式加载到`mdd`中,你需要`prg`,调试 XML和`prg`构建的产品.如果你使用`monkeyc`命令编译`prg`,`debug.xml`也会生成,Visual Studio Code通常将这些文件输出到你的项目`bin`文件中.
 
-You use the `file` command to load these into the `mdd` environment.
+您使用`file`命令将它们加载到`mdd`环境中.
 
 ```
 (mdd) file MyFace.prg MyFace.prg.debug.xml fenix6
 ```
 
-Now you can run the executable using the `run` command:
+现在可以使用`run`命令运行执行式:
 
 ```
 (mdd) r
@@ -97,13 +97,13 @@ Starting app: C:\Projects\ciq-apps\strava\bin\Strava.prg
 
 ### Setting Breakpoints
 
-Breakpoints can be assigned to a file/line pair with the `break` command:
+通过`break`命令,可以将分区分分配给文件/行对:
 
 ```
 (mdd) break \path\to\Thx.mc:1138
 ```
 
-Execution will pause when your program executes that line:
+当程序执行该行时,执行将暂停:
 
 ```
 Hit breakpoint 1, initialize () at Thx.mc:1138
@@ -112,7 +112,7 @@ Hit breakpoint 1, initialize () at Thx.mc:1138
 
 ### Frame Information
 
-You can inquire about your current stack frame using `info frame`:
+您可以使用`info frame`查询您目前的堆框架:
 
 ```
 (mdd) info frame
@@ -126,7 +126,7 @@ Stack level 0, frame at 0x10002120
       sen = null
 ```
 
-You can also use the `print` command to output variables as well as expressions.
+您还可以使用`print`命令输出变量以及表达式.
 
 ```
 (mdd) print thx
@@ -135,19 +135,19 @@ thx = null
 
 ### Controlling Execution
 
-You can step to the next line using the `next` command:
+你可以使用`next`命令进入下一行:
 
 ```
 (mdd) next
 ```
 
-The `step` command will step into a subroutine:
+命令将进入一个子程序:
 
 ```
 (mdd) step
 ```
 
-The `continue` command will return to full execution until the next breakpoint is set or the app terminates:
+命令将返回完整执行状态,直到设置下一个断点或应用程序终止:
 
 ```
 (mdd) continue
@@ -155,11 +155,11 @@ The `continue` command will return to full execution until the next breakpoint i
 
 ## Handling Crashes
 
-Despite the best debugging efforts, crashes will sometimes happen. There are two general types of on-device crash that can occur related to Connect IQ, which each generate log files: *app crashes* and *device crashes*.
+尽管最好的调试工作,但有时会发生崩.与Connect IQ相关的两种通用设备崩可能发生: *应用程序崩*和 *设备崩*.
 
 ### App Crashes
 
-App crashes typically result in an app quitting unexpectedly or displaying an 'IQ!' icon, but does not cause the entire device to crash or reboot. This kind of crash is most commonly due to a bug in an app, though it can also be due to a bug in Connect IQ itself. Whenever an app crash occurs, a `CIQ_LOG.YAML` file is written or updated to `/GARMIN/APPS/LOGS` on the device, and contains information related to the crash that app developers may use to address the problem. Here is what a CIQ\_LOG generally looks like:
+应用程序崩通常会导致应用程序意外放弃或显示"IQ!"图标,但不会导致整个设备崩或重新启动.这种崩通常是由于应用程序中的错误,尽管它也可能是由于Connect IQ本身的错误.每当应用程序崩发生时,设备上写出或更新一个`CIQ_LOG.YAML`文件,并包含应用程序开发人员可以用来解决该问题的崩相关的信息.
 
 ```yaml
 Error: ErrorName
@@ -183,14 +183,14 @@ Stack:
     Function: otherBrokenItems
 ```
 
-The `ConnectIQ-Version` entry is not the Connect IQ version of the device. Rather, this refers to the SDK version used by the developer when exporting the application.
+`ConnectIQ-Version`输入不是设备的Connect IQ版本.相反,这指开发人员在出口应用程序时使用的SDK版本.
 
-**Note:** For devices before API level 3.0.0, a simplified error log will be printed as `CIQ_LOG.TXT`.
+** 注:** 在API级别3.0.0之前的设备中,将打印一个简单的错误日志为`CIQ_LOG.TXT`.
 
 ### Device Crashes
 
-Device crashes typically cause the device to reboot or freeze. These indicate a Connect IQ or device firmware bug, and should be much less common than app crashes. When a device crash occurs, an `ERR_LOG.txt` file is written to `/GARMIN` on the device, containing stack trace information related to the crash. Please provide this file when reporting a crash on our developer forum. Garmin's device teams can take a look at the device crash logs to determine the cause of the crash and will typically provide a fix in a future firmware release.
+设备崩通常会导致设备重新启动或结.这些表明Connect IQ或设备固件错误,并且应该比应用程序崩少得多.当设备崩发生时,将`ERR_LOG.txt`文件写给`/GARMIN`在设备上,包含与崩相关的堆痕迹信息.请在我们的开发者论坛上报告崩时提供此文件.Garmin的设备团队可以查看设备崩日志来确定崩的原因,通常将在未来的固件发布中提供修复.
 
-### A Note About Log Files
+关于日志文件的注释
 
-When any log file on a device exceeds 5kb in size, it will automatically be archived to `<LOGNAME>.BAK`, and a new log will be started. Any old `.BAK` files will be overwritten when the archive occurs, so the max space a log can reach is around 10kb.
+当设备上的任何日志文件大小超过5kb时,它将自动归档到`<LOGNAME>.BAK`,并启动一个新的日志.任何旧的`.BAK`文件都会在存档发生时被重写,因此日志可以达到最大的空间约为10kb.

@@ -11,14 +11,14 @@ The Application object must be specified in the application `manifest.xml`. 构�
 
 *Since API level 3.0.0*
 
-Your [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) has two handlers that are called on during installations and updates:
+您的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)有两个处理器,在安装和更新过程中被调用:
 
 | API | Description | API Level |
 | --- | --- | --- |
-| [AppBase.onAppInstall()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppInstall-instance_function) | Callback method that is triggered in the background when the app is installed | 3.0.0 |
-| [AppBase.onAppUpdate()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppUpdate-instance_function) | Callback method that is triggered in the background when the app is updated | 3.0.0 |
+| [AppBase.onAppInstall()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppInstall-instance_function) |在安装应用程序时在背景中触发的回调方法| 3.0.0 |
+| [AppBase.onAppUpdate()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppUpdate-instance_function) |当应用程序更新时在背景中启动的回调方法| 3.0.0 |
 
-Both of these require that your application has the `Background` permission. Potential use cases include registering a background service on install or starting an authentication method.
+这两项都要求您的应用程序具有`Background`许可. 潜在的使用情况包括在安装或启动身份验证方法时注册背景服务.
 
 这些方法的运行不保证。不要依赖它们实现关键功能。
 
@@ -32,13 +32,13 @@ Both of these require that your application has the `Background` permission. Pot
 
 应用加载后，应用对象将被实例化。 From that point forward it will be available throughout the application by calling [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function).
 
-After you application object is instantiated, the [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) function will be called. This is your opportunity to initialize the application and restore state.
+在您的应用对象即时化后,将调用[AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)函数.这是您的机会启动应用程序并恢复状态.
 
 If your application is launched via an [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/), the state parameter will contain arguments passed via the intent. Do not attempt to push a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance at this time. See the [Intents](/connect-iq/core-topics/intents/#intents) section 更多信息.
 
 应用加载后，系统将请求应用的初始视图。 Depending on what functionality your application implements, you may have to implement several of the following handlers:
 
--   [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function): The primary method for app startup. Return the base view for your watch face, data field, widget, or device app.
+-[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function): 应用程序启动的主要方法. 返回您的手表面,数据场,小工具或设备应用程序的基本视图.
 
 -   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function): If your are implementing a widget that has a glance, this 将在...时调用 the user goes to browse your glance in the glance list. See the [Glances](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
@@ -47,7 +47,7 @@ If your application is launched via an [System.Intent](/connect-iq/api-docs/Toyb
 -   : If you are implementing an audio content provider, this method is called when 您需要 present playback options to the user.
 
 
-All of these functions return an array: The first item is the [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance, and the second is the [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) instance that handles the input for the view.
+所有这些函数都返回一个阵列:第一个项目是[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)实例,第二个是[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)实例,处理视图的输入.
 
 从速览列表和活动菜单启动的应用行为不同。 If an app is launched from the glance list, a timeout will be applied to the app. If the user does not exit the app within a given time frame, 系统将 terminate the app and return to the home screen. If an app is launched from the activity menu, however, it will not time out, and the user must explicitly exit your application.
 
@@ -76,23 +76,23 @@ class MySuperApp extends Application.AppBase {
 
 | State | Description |
 | --- | --- |
-| Active | [AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function) is called when your app is transitioning from the inactive to active state. Active apps have access defined by the app type. When transitioning from inactive to active, access to sensors, ANT/BLE, will be restored. |
+| Active |当您的应用程序从不活跃状态转向活跃状态时,[AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function)被调用.活跃应用程序的访问由应用程序类型定义.从不活跃到活跃时,将恢复访问传感器,ANT/BLE.|
 | Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) 在从...转换时调用 the active to inactive state. |
 
 根据应用运行的状态，您将拥有不同级别的系统资源访问权限：
 
 | State | Active | Inactive |
 | --- | --- | --- |
-| Activity | With permission, you may be allowed to start and stop activity recording. | If the app is recording an activity, recording will continue. If the app is not recording, it is not allowed to start or stop activity recording. |
-| GPS | GPS access may be denied if another app is recording an activity. | If the app is recording an activity and receiving position events, it will continue to receive events in the inactive state. If the app is not recording an activity, it is blocked from modifying the GPS state. |
-| ANT | ANT access may be denied if another app is recording an activity. | If the app is recording an activity, ANT access is permitted. If the app is not recording an activity, all open channels will be closed and will be reopened when transitioning from inactive to active. |
-| High Frequency Sensors (Accelerometer, Magnetometer, Gyro) | If the app is recording an activity, access is permitted. If the app is not recording an activity, access may fail in a non-fatal way. | If the app is recording an activity, access will be permitted. Otherwise, measurements can be retrieved at a maximum of 10 hz. |
-| Sensors | If the app is recording an activity, access is permitted. If the app is not recording an activity, access may fail in a non-fatal way. | If the app is recording an activity, access will be permitted. Otherwise, sensor access will be limited. |
-| Attention | Access is allowed. | Access is denied. |
+| Activity |您可以在获取许可的情况下启动和停止活动记录.|如果应用程序正在记录活动,则将继续记录.如果应用程序没有记录,则不允许启动或停止活动记录.|
+| GPS |如果另一个应用程序记录活动,则可能会拒绝GPS访问.|如果应用程序正在记录活动和接收位置事件,它将继续接收不活跃状态的事件.如果应用程序没有记录活动,它将被阻止修改GPS状态.|
+| ANT |如果另一个应用程序正在记录活动,则可能会拒绝ANT访问.|如果应用程序正在记录活动,则允许访问ANT. 如果应用程序没有记录活动,则将关闭所有开放道,并在从不活跃到活跃的转变时重新打开.|
+| High Frequency Sensors (Accelerometer, Magnetometer, Gyro) |如果应用程序正在记录活动,则允许访问.如果应用程序没有记录活动,则访问可能会以非致命的方式失败.|如果应用程序正在记录活动,则允许访问.否则,测量可以在最高10hz中获取.|
+| Sensors |如果应用程序正在记录活动,则允许访问.如果应用程序没有记录活动,则访问可能会以非致命的方式失败.|如果应用程序正在记录活动,则允许访问.否则,传感器访问将会受到限制.|
+| Attention |允许访问.|访问被拒绝.|
 
 可能存在用户启动的应用超过系统资源支持的情况。 If your app is not active but is still running, the system may terminate your app to free up resources.
 
-When this happens, your [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) will be called with a :suspend option to inform you that you are being terminated. You can use this call to persist your state for when you are resumed. When the user returns to your application, you will be called with a `:resume` option on your [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function). You can then restore your state from storage:
+当这种情况发生时,您的[AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)将被调用一个:暂停选项,以通知您即将终止.您可以使用此调用来维持您的状态,直到您恢复.当用户返回您的应用程序时,您将被调用一个`:resume`选项在[AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)上.
 
 ```typescript
 class MyApp  extends Application.AppBase {
@@ -114,11 +114,11 @@ class MyApp  extends Application.AppBase {
 }
 ```
 
-If you do nothing, the user will return to your app as if it was just launched.
+如果您不做任何事情,用户将回到您的应用程序,好像它刚刚启动.
 
 ### App Termination
 
-When your application is terminated, the [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) function is called. This gives your application the option to save state before termination.
+当您的应用程序终止时,将调用[AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)函数. 这使您的应用程序有机会在终止之前保存状态.
 
 ## Widgets
 
@@ -126,7 +126,7 @@ When your application is terminated, the [AppBase.onStop()](/connect-iq/api-docs
 
 在 API 级别 4.0 及以下的设备上，存在小组件应用类型。 小部件是从表盘可访问的轮播中运行的应用。 On devices after API 4.0.0, widgets are now from the app launcher, and apps can have glances. The glance list is accessible to the user while they are in an activity, and your apps can be launched from the glance list while the user is recording an activity.
 
-Widgets still build and run for API level 4.0 products without modification. However, you now must create a glance if you want the widget to show in the glance list. If you are building an app, creating a glance for your application gives users two unique ways to launch your app.
+如果您正在构建应用程序,为您的应用程序创建一个视角,则用户可以启动您的应用程序的两种独特方式.
 
 ## System
 
@@ -134,13 +134,13 @@ The [Toybox.System](/connect-iq/api-docs/Toybox/System/) 模块提供 access to 
 
 | API | Description | API Level |
 | --- | --- | --- |
-| [System.error()](/connect-iq/api-docs/Toybox/System/#error-instance_function) | Write an error to the console and exit the system | 1.0.0 |
-| [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function) | End execution of the current app | 1.0.0 |
-| [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) | Exit the current app and launch a new app | 2.2.0 |
-| [System.getClockTime()](/connect-iq/api-docs/Toybox/System/#getClockTime-instance_function) | Get the current clock time | 1.0.0 |
-| [System.getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function) | Get the user settings for the device as well as the device metadata | 1.0.0 |
-| [System.getSystemStats()](/connect-iq/api-docs/Toybox/System/#getSystemStats-instance_function) | Get runtime statistics for your current runtime | 1.0.0 |
-| [System.isAppInstalled()](/connect-iq/api-docs/Toybox/System/#isAppInstalled-instance_function) | Query the system to see if another app is installed | 3.2.0 |
-| [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function), [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) | Writes a message to the console or application log | 1.0.0 |
+| [System.error()](/connect-iq/api-docs/Toybox/System/#error-instance_function) |写错误到控制台,然后退出系统| 1.0.0 |
+| [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function) |终止执行当前应用程序| 1.0.0 |
+| [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) |退出当前的应用程序并启动新的应用程序| 2.2.0 |
+| [System.getClockTime()](/connect-iq/api-docs/Toybox/System/#getClockTime-instance_function) |查看当前的时间| 1.0.0 |
+| [System.getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function) |获取设备的用户设置以及设备的元数据| 1.0.0 |
+| [System.getSystemStats()](/connect-iq/api-docs/Toybox/System/#getSystemStats-instance_function) |获取当前运行时间统计数据| 1.0.0 |
+| [System.isAppInstalled()](/connect-iq/api-docs/Toybox/System/#isAppInstalled-instance_function) |查询系统是否安装了另一个应用| 3.2.0 |
+| [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function), [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) |写一个信息到控制台或应用日志| 1.0.0 |
 
-Connect IQ's hottest API is [System.getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function). This API has everything: user alarms, device settings, connection state, units, Connect IQ API level, monkeys...
+连接IQ最热门的API是[System.getDeviceSettings()](/connect-iq/api-docs/Toybox/System/#getDeviceSettings-instance_function). 这个API有一切:用户警报,设备设置,连接状态,单元,连接IQAPI水平,子...

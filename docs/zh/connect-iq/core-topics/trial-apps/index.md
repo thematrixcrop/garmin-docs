@@ -5,7 +5,7 @@ title: "App Trials"
 
 *Since API level 2.3.0*
 
-The app trials feature allows developers to enable a special "trial" mode for their app. Enabling trial mode is accomplished by adding a new tag to the manifest under the application tag as follows:
+应用程序试验功能允许开发人员为他们的应用程序启用一个特殊的"试验"模式.通过在应用程序标签下添加一个新的标签来实现试验模式:
 
 ```xml
 <iq:application entry="CommExample" id="a3421feed289106a538cb9547ab12095"
@@ -16,9 +16,9 @@ The app trials feature allows developers to enable a special "trial" mode for th
 </iq:application>
 ```
 
-The unlock URL provides an endpoint for the app store to redirect the user to in order go through whatever you want your app "unlock" process to be. The app store will only accept secured HTTPS-URLs when uploading your iq-file. Also make sure that the enable-attribute of the `trialMode` tag is set to "true".
+解锁URL为应用商店提供一个终端点,以便将用户转移到您想要的应用程序"解锁"过程中.应用商店只会在上传您的 iq文件时接受安全的HTTPS-URL. 还要确保`trialMode`标签的启用属性设置为"真".
 
-The app trials feature is not supported for watch faces.
+应用程序测试功能不支持手表面孔.
 
 ## Trial Mode Functionality
 
@@ -28,15 +28,15 @@ By default, when an app is in trial mode, 系统将 push special trial notificat
 
 ## Trial App Server API
 
-Once the app is available in the store, the user can unlock the app by clicking on the unlock button in the store. At this point, the app store will redirect to the provided unlock-URL, adding these parameters to the URL:
+一旦应用程序在商店中可用,用户可以通过点击商店中的解锁按来解锁应用程序.此时,应用商店将重定向到提供的解锁URL,并将这些参数添加到URL:
 
 | Parameter Name | Description |
 | --- | --- |
-| `callbackUrl` | The URL that has to be called back when the unlock-process on your side successfully finished. |
-| `appUnlockRequestId` | The app store's internal unlock-ID which can be stored by the app-developer as reference. |
-| `appPageUrl` | The app details page of the app to be unlocked. You should redirect to this page after a successful call to the callback-URL, and ask the user to download the unlocked app for his desired device. |
+| `callbackUrl` |在您的侧面成功完成解锁过程后,必须调回的URL.|
+| `appUnlockRequestId` |应用商店的内部解锁ID,可以由应用程序开发人员作为参考存储.|
+| `appPageUrl` |应用程序详细介绍了要解锁的应用程序的页面. 在成功调用后,您应该转移到该页面,并要求用户下载用于其所需设备的解锁应用程序.|
 
-So this is what a typical/complete call from the app store to your unlock-URL will look like:
+这就是从应用商店到您的解锁URL的典型/完整调用样子:
 
 ```
 https://your.unlock.url.com?appUnlockRequestId=1fe443e5-e76c-4e1c-b82b-2d084bd4c4fe
@@ -44,17 +44,17 @@ https://your.unlock.url.com?appUnlockRequestId=1fe443e5-e76c-4e1c-b82b-2d084bd4c
     &appPageUrl=https%3A%2F%2Fapps.garmin.com%2Fen-US%2Fapps%2Fbf1d944a-8a54-41fa-b7b0-24e651dc88e1
 ```
 
-Both the `callbackUrl` and the `appPageUrl` will be passed in URL-encoded form.
+`callbackUrl`和`appPageUrl`都将通过URL编码形式.
 
-## How to use the `callbackUrl`
+如何使用`callbackUrl`
 
-The `callbackUrl`\-endpoint is secured and can only be used with a (one-legged) OAuth1-signed request.
+`callbackUrl`\-endpoint是安全的,只可使用 (单腿) OAuth1签名的请求.
 
-For this you'll need to obtain your individual set of key/secret credentials from the app store's "Developer Dashboard":
+您需要从应用商店的"开发者仪表板"中获取您的个人密钥/秘密凭证:
 
-With these credentials you simply create a standard OAuth1-request and fire it to the callback-URL. (Using a framework which generates all the necessary OAuth-HTTP-Headers is recommended.)
+使用这些凭证,您只需创建一个标准的OAuth1请求,并将其发送到回调URL. (建议使用生成所有必要的OAuth-HTTP-Headers的框架.)
 
-A straightforward Java example (using the Signpost-library, and Apache's HttpClient) would look like this:
+一个简单的Java示例 (使用Signpost图书馆和Apache的HttpClient) 将看起来像这样:
 
 ```java
 HttpGet request = new HttpGet("callbackUrl");
@@ -68,24 +68,24 @@ HttpResponse response = client.execute(request);
 System.out.println("Return code: " + org.springframework.http.HttpStatus.valueOf(response.getStatusLine().getStatusCode()));
 ```
 
-The following return-codes can be expected:
+预计将有以下退货代码:
 
 | Status Code | Status Phrase | Description |
 | --- | --- | --- |
-| 200 | OK | Everything worked just fine; the app got marked as "unlocked" for the user. |
-| 202 | Accepted | When making a successful test-request (see below). |
-| 401 | Unauthorized | When the authorization (OAuth) was incorrect. |
-| 404 | Not Found | When the requested unlock item was not found. |
-| 409 | Conflict | When an app is already being marked as unlocked in the app store. |
-| 410 | Gone | When an app is orphaned (e.g. because the app changed ownership due to GDPR). |
-| 510 | Internal Server Error | When an unexpected error occurred. |
+| 200 | OK |应用程序被标记为"解锁".|
+| 202 | Accepted |在成功的测试请求时 (见下面).|
+| 401 | Unauthorized |如果授权 (OAuth) 是不正确的|
+| 404 | Not Found |当未找到所需解锁项时.|
+| 409 | Conflict |当应用程序已经被标记为未锁在应用商店.|
+| 410 | Gone |当应用程序成为孤儿时 (例如由于应用程序因GDPR而改变了所有权).|
+| 510 | Internal Server Error |当发生意外错误时.|
 
-You can test your OAuth-implementation without the need of an actual unlock-request.
+您可以测试您的OAuth实现,而无需实际解锁请求.
 
-Just make a signed call using your credentials and "test" as `appUnlockRequestId`.
+通过你的身份证进行签名电话,并"测试"作为`appUnlockRequestId`.
 
 ```
 https://apps.garmin.com/appUnlock?appUnlockRequestId=test
 ```
 
-When receiving a 202, you can be sure that your OAuth-handling is working.
+在收到202时,您可以确定您的OAuth处理正在工作.

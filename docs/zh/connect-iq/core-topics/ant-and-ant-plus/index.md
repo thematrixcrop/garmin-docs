@@ -7,22 +7,22 @@ Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传�
 
 Learn more about ANT and ANT+ at [thisisant.com](http://thisisant.com/)
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/) | Provides access to generic ANT channels. These allow direct communication between your app and an ANT device | 1.0.0 |
-| [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) | Allows access to ANT devices paired with the device. | 2.2.0 |
+| [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/) |提供通用ANT道的访问.这些 app道允许您的应用程序和ANT设备之间进行直接通信| 1.0.0 |
+| [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) |允许与该设备相对的ANT设备访问.| 2.2.0 |
 
 ## Generic ANT Channels
 
 Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。 使用此接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
 
-With an ANT USB dongle you can use Connect IQ ANT APIs in the Connect IQ Simulator. Note that Garmin Express will block access to the ANT USB dongle if it is running, so make sure to shut down Garmin Express when using the ANT USB dongle with the Connect IQ simulator.
+使用ANT USB dongle,您可以在 Connect IQ模拟器中使用 Connect IQ ANT API.请注意,如果运行,Garmin Express将阻止访问ANT USB dongle,因此确保在使用 Connect IQ模拟器时关闭Garmin Express.
 
 ### Using ANT stick in Linux
 
-In order to use ANT stick in Linux the usb device should be accessible to the simulator. A udev rule must be installed in the system for the ANT stick to populate with non-root privileges.
+为了在 Linux 中使用 ANT 棒,USB 设备必须可访问模拟器.必须安装在系统中一个 udev 规则,以便 ANT 棒充满非根特权.
 
-Find the vendor and product id for the ANT stick
+查找ANT棒的供应商和产品ID
 
 ```bash
 $ lsusb
@@ -34,36 +34,36 @@ Identify the ANT stick in the list and its vendor and product id. 示例：
 Bus 001 Device 009: ID 0fcf:1009 Dynastream Innovations, Inc. ANTUSB-m Stick
 ```
 
-Create a udev rule for this device
+创建该设备的 udev 规则
 
 ```bash
 $ sudo touch /etc/udev/rules.d/50-connectiq-usbant.rules
 $ sudo nano /etc/udev/rules.d/50-connectiq-usbant.rules
 ```
 
-Then add the line below to the file and save the changes: CTRL-x
+然后将下面的行添加到文件中并保存更改:CTRL-x
 
 ```bash
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1009", MODE="664", GROUP="plugdev"
 ```
 
-Restart the udev service and plug the ANT stick
+再启动 udev 服务并插入 ANT 棒
 
 ```bash
 $ sudo /etc/init.d/udev restart
 ```
 
-Add yourself to the 'plugdev' group
+加入"插件"组
 
 ```bash
 $ sudo usermod -a -G plugdev <userName>
 ```
 
-## Communicating with a Tempe Sensor
+##与温度传感器沟通
 
-The Environment Profile is supported by sensors like the Garmin tempe™ wireless environment sensor and makes it possible to read the minimum, maximum and current temperature.
+环境配置文件由像Garmin tempeTM无线环境传感器这样的传感器支持,可读取最低,最高和当前温度.
 
-We can initialize an ANT channel to a tempe sensor with the following:
+我们可以将ANT频道初始化成一个度传感器,
 
 ```typescript
     // Constructor
@@ -91,7 +91,7 @@ We can initialize an ANT channel to a tempe sensor with the following:
     }
 ```
 
-This code sets up the ANT channel assignment and sets device config and passes them to the base [Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/) class. The device config is set to wildcard search to find any environment sensor. The initializer also sets up the `onMessage` callback to handle incoming packets.
+这个代码设置了ANT频道分配,设置了设备配置,并将它们传递到基层[Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/)类.设备配置设置为寻找任何环境传感器的野生卡.初始化器还设置了`onMessage`回调来处理接入的包.
 
 ```typescript
     // Handle incoming information
@@ -136,30 +136,30 @@ This code sets up the ANT channel assignment and sets device config and passes t
     } // end on message
 ```
 
-The callback handles pairing with a nearby sensor, and handing incoming packets.
+呼叫回覆处理与附近的传感器结合,并交付接入的包.
 
-The MO2Display sample provides a sample application that implements the Muscle Oxygen ANT profile. The ANT Generic interface is not available to watch faces. Low and high priority search timeout for sensors differs from the basic ANT radio specification to allow for interoperation with native ANT behavior on devices. These are limited to a maximum timeout of 30 seconds and 5 seconds respectively.
+MO2Display样品提供了采样应用程序,实现了肌肉氧 ANT 配置文件.ANT通用界面无法用于观看面孔.低和高优先搜索时间为传感器与基本的ANT 无线电规范不同,以允许与设备上本土的ANT 行为进行互操作.这些限制在分别最大的30秒和5秒的时间.
 
 ## Burst Data
 
 *Since API level 2.2.0*
 
-Burst data transmission provides a mechanism for large amounts of data to be sent between devices over an ANT Generic Channel. Developers are notified through a listener of the success/failure of burst transmit/receive events. Burst data transmission is limited to up to 8Kb of data at a time.
+爆发数据传输提供了一个机制,可以通过ANT通用频道在设备之间传输大量数据. 开发人员通过一个听众通知爆发传输/接收事件的成功/失败.一次爆发数据传输限制在最高8Kb的数据.
 
-Common use cases for this include passkey authentication or sending/receiving configuration data between devices.
+这种常见使用情况包括密钥验证或设备之间发送/接收配置数据.
 
-The `GenericChannelBurst` sample provides a demonstration of transmitting and receiving burst data.
+采用`GenericChannelBurst`样本提供传输和接收爆发数据的示范.
 
 ## ANT+ Profiles
 
 *Since API level 2.2.0*
 
-The [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) module allows access to information about ANT+ sensors that are paired to a user's device without requiring you to set up and manage the ANT channel yourself. All management of ANT+ sensors such as adding, removing, enabling, disabling, and calibrating is managed by the user via the device's regular sensor menus.
+[Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/)模块允许访问与用户设备相对的ANT+传感器的信息,而不需要您自行设置和管理ANT频道.所有ANT+传感器的管理,如添加,删除,启用,禁用和校准,都由用户通过设备的常规传感器菜单来管理.
 
-An extension of a sensor-specific listener is passed into the constructor for a sensor-specific extension of [AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/). If there is a sensor of the given type paired to the user's device, information about that sensor can be retrieved using the sensor-specific getters, or through the common data getters such as [Device.getBatteryStatus()](/connect-iq/api-docs/Toybox/AntPlus/Device/#getBatteryStatus-instance_function). `null` can be passed in as the identifier for sensor types (like most) that do not support multi-components.
+传感器特定的听器的扩展被传输到构造器中,用于[AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/)的传感器特定的扩展.如果有给定的类型的传感器与用户设备相对,则可以使用传感器特定的getters或通过[Device.getBatteryStatus()](/connect-iq/api-docs/Toybox/AntPlus/Device/#getBatteryStatus-instance_function)等常见的数据getters获取有关传感器的信息.
 
 Callbacks in the [AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) and extensions of it will be called automatically if a sensor of the given type is paired and the corresponding information is updated via ANT. For example, [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function) will be called if a sensor's ANT channel goes from connected to searching, or if the user switches the sensor ID of a given type that their device is connected to. Callbacks like 将在...时调用 new pieces of information about a power sensor are received via ANT.
 
-Certain ANT+ sensors, such as bike lights, have special callbacks. For example, the callback should be used to understand the light network's state rather than [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function). The [AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/) class will allow you to make changes to bike light modes, given there are bike lights paired to the user's device and a light network is fully formed.
+某些ANT+传感器,如自行车灯,具有特殊的回调.例如,回调应应应用于了解光网络的状态而不是[DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function).[AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/)类将允许您对自行车灯模式进行更改,因为有自行车灯与用户设备配对,并且光网络完全形成.
 
-Not all ANT+ profiles provisioned by Monkey C will be supported by every Connect IQ-compatible device.
+不是所有由 Monkey C 提供的 ANT+ 配置文件都会由每个连接 IQ 兼容的设备支持.

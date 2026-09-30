@@ -3,47 +3,47 @@ title: "Activity Recording"
 ---
 # Activity Recording
 
-Imagine that you are trying to create a yoga app. You'd like the app to record heart rate and calories burned during your yoga workout, just like other Garmin apps. You'd also like the recording to be displayed on [Garmin Connect](https://connect.garmin.com/). Monkey C allows for apps to start and stop recording of FIT files. Controlling the FIT file recording requires a few steps:
+想象一下你正在创建一个应用程序.你希望该应用程序记录你的心率和 other训练期间燃烧的卡路里,就像其他Garmin应用程序一样.你也希望该录音显示在[Garmin Connect](https://connect.garmin.com/)上.子C允许应用程序启动和停止FIT文件的录音.控制FIT文件录音需要几个步骤:
 
-1.  Enable the sensors to be recorded
+1. 让传感器能够记录
 
-2.  Use [ActivityRecording.createSession()](/connect-iq/api-docs/Toybox/ActivityRecording/#createSession-instance_function) to create a session object
+2. 使用[ActivityRecording.createSession()](/connect-iq/api-docs/Toybox/ActivityRecording/#createSession-instance_function)创建一个会议对象
 
-3.  Use the [Session.start()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#start-instance_function) method of the FIT session to begin recording. Data from the enabled sensors will be recorded into the FIT file.
+3. 使用FIT会议的[Session.start()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#start-instance_function)方法开始录制.启用传感器的数据将记录在FIT文件中.
 
-4.  Use [Session.stop()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#stop-instance_function) to pause the recording
+4. 使用[Session.stop()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#stop-instance_function)暂停录音
 
-5.  Use [Session.save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function) to save the recording, or [Session.discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function) to delete the recording
+5. 使用[Session.save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function)保存录音,或者使用[Session.discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function)删除录音
 
 
-The FIT file will sync with [Garmin Connect](https://connect.garmin.com/). You can use the [Garmin Connect Developer Program](https://developer.garmin.com/gc-developer-program/overview/) to process the FIT file from a web service.
+FIT文件将与[Garmin Connect](https://connect.garmin.com/)同步.您可以使用[Garmin Connect Developer Program](https://developer.garmin.com/gc-developer-program/overview/)从网络服务处理FIT文件.
 
-For more, see the `RecordSample` sample app distributed with the SDK.
+查看与SDK共享的`RecordSample`样本应用.
 
 ## Recording FIT Files
 
-In addition to being able to play back existing FIT files, the simulator can also record files using data obtained via the *Simulation*\>*Activity Data* menu option. To begin recording a session you must start the timer; this can be done by clicking the start button on the dialog, or by clicking the corresponding start button on the device you have selected. The following table describes the different options available for activity recording and provides instructions for how to access them via the dialog, or the device buttons (where available).
+除了能够播放现有的FIT文件外,模拟器还可以使用使用使用 *模拟*\>*活动数据*菜单选项获取的数据记录文件.要开始记录一个会议,您必须启动计时器;这可以通过点击对话框上的启动按或点击您选择的设备上的相应的启动按.下面表描述了活动记录的不同选项,并提供通过对话框或设备按如何访问它们的说明.
 
 | Option | Dialog | Device Button | Notes |
 | --- | --- | --- | --- |
-| Start Activity | Start | Start Button | The device start button starts and stops an activity. |
-| Stop Activity | Stop | Start Button | The device start button starts and stops an activity, and the *Start* button on the dialog is renamed to *Stop* when recording is active. |
-| Lap Activity | Lap | Back Button | Records a lap record in the FIT file. Note this option is only available when FIT data simulation is enabled and activity recording is active. |
-| Pause Activity | Pause | N/A | Pauses activity recording. Note this option is only available when FIT data simulation is enabled and activity recording is active. |
-| Resume Activity | Resume | N/A | Resumes activity recording. Note this option is only available when FIT data simulation is enabled and activity recording is paused. |
-| Complete Workout Step | Workout Step | N/A | Completes the current workout step. Note this option is only available when FIT data simulation is enabled and activity recording is active. |
-| Move to Next Multisport | Next Multisport | N/A | Transitions to the next multisport leg. Note this option is only available when FIT data simulation is enabled and activity recording is active. |
-| Select Split Type | Split Type | N/A | Selects the desired split type to be added to the current activity. Note this option is only available on devices with API level 5.2.2 and when recording is active. |
-| Start Split | Start Split | N/A | Adds the selected split to the current activity. Note this option is only available on devices with API level 5.2.2 and when activity recording is active. |
-| End Split | End Split | N/A | Ends the split in the current activity. Note this option is only available on devices with API level 5.2.2 and when the split is active. |
-| Discard Activity | Discard | N/A | Discards the current recording and deletes the corresponding .fit file. Note this is only enabled if activity recording has been started and subsequently stopped. |
-| Save Activity | Save | N/A | Saves the recorded activity into a .fit file and resets the timer state. Note this is only enabled if activity recording has been started and subsequently stopped. |
+| Start Activity | Start | Start Button |设备启动按启动和停止活动.|
+| Stop Activity | Stop | Start Button |设备启动按启动和停止活动,当录音活动时,对话框上的*Start*按被更名为*Stop*.|
+| Lap Activity | Lap | Back Button |在FIT文件中记录一圈记录. 请注意,只有在FIT数据模拟启用,活动记录是活跃时,该选项才可使用.|
+| Pause Activity | Pause | N/A |暂停活动记录. 请注意,只有在FIT数据模拟启用,活动记录是活跃时,该选项才可使用.|
+| Resume Activity | Resume | N/A |恢复活动记录. 请注意,只有在启用FIT数据模拟和暂停活动记录时,该选项才可使用.|
+| Complete Workout Step | Workout Step | N/A |请注意,当FIT数据模拟启用并且活动记录已启动时,该选项只有可用.|
+|转到下一个多体育| Next Multisport | N/A |转移到下一个多体育阶段. 请注意,只有在FIT数据模拟启用并且活动记录是活跃时,该选项才可使用.|
+|选择分类类型|分类类型| N/A |请注意,此选项仅可用于 API 级别 5.2.2 的设备,并且在录制活动中使用.|
+| Start Split | Start Split | N/A |添加选定的分区到当前活动. 请注意,这个选项仅在API级别5.2.2的设备上可用,并且活动记录是活跃的.|
+| End Split | End Split | N/A |在当前活动中结束分区. 请注意,这个选项仅在API级别5.2.2的设备上可用,并且当分区活跃时.|
+| Discard Activity | Discard | N/A |丢弃当前的录音并删除相应的 .fit文件. 请注意,如果活动录音已启动,然后停止,这只能实现.|
+| Save Activity | Save | N/A |保存记录的活动到 .fit文件中并重置计时器状态. 请注意,如果活动记录已启动,然后停止,这只能实现.|
 
-**Note:** the device simulator will not automatically start activity recording when a data field is being run. You must explicitly start and stop activity recording as described here.
+** 注:** 设备模拟器在运行数据场时不会自动启动活动记录.您必须明确启动和停止如下描述的活动记录.
 
 ## FIT Developer Fields
 
-Now imagine you want to add a new metric - Namastes - to the Yoga app `namaste`. This metric will combine heart rate, accelerometer, and other sensor data into a single value, and does not have an analog in any Garmin recording metric. To do this we need the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) module, which allows you to add new metrics to a FIT recording and display it on [Garmin Connect](https://connect.garmin.com/).
+现在想想把一个新的指标 - Namastes - 添加到果应用程序`namaste`.这个指标将心率,加速仪和其他传感器数据结合成一个值,并且没有任何Garmin记录指标中的模拟.
 
 First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) permission in the manifest file (see the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section 更多信息). Next, 您需要 add your field definitions in your resources using the `fitContributions` block:
 
@@ -60,22 +60,22 @@ First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/F
     </fitContributions>
 ```
 
-The `fitField` block has a number of configurable options:
+`fitField`区块有几个可配置的选项:
 
 | Attribute | Value | Notes |
 | --- | --- | --- |
-| `id` | A numeric value from 0 to 255 used to refer to your field | No duplicates within an app are allowed |
-| `displayInChart` | Indicates whether or not record level connect IQ data should be rendered in a chart | `true` if you want this entry to be displayed as a chart, `false` otherwise. Graph fields can only support numeric data. |
-| `displayInActivityLaps` | Indicates whether or not lap level connect IQ data should be rendered in the Activity Laps section in the Garmin Connect Activity Details page | `true` if you want this entry to be displayed in the activity laps, `false` otherwise |
-| `displayInActivitySummary` | Indicates whether or not activity (fit session) level connect IQ data should be rendered in the Activity Summary section in the Garmin Connect Activity Details page | `true` if you want this entry to be displayed in the activity summary data, `false` otherwise |
-| `sortOrder` | Determines the order in which the Connect IQ data will appear in the Summary or Lap Sections of the Activity Details page and what order charts will be displayed on the Activity Details page | No duplicates are allowed |
-| `precision` | Decimal point precision for numeric data | 0 for integer, 1 for one decimal point, 2 for two decimal points. Without this attribute the default is no rounding |
-| `chartTitle` | This is the resources string key to use to render the title of the chart | Optional if `displayInChart` is `false`. Must be a string resource. |
-| `dataLabel` | This is the resources string key to use to render the label of the data field in the Activity Summary or Activity Laps section of the Activity Details page (ex. Cadence, or Heart Rate). | Must be a string resource |
-| `unitLabel` | This is the key to use to render the unit of the data field in the Activity Summary or Activity Laps section of the Activity Details page (ex. kph, or miles). | Must be a string resource |
-| `fillColor` | RRGGBB value of color to use for chart | Optional if `displayInChart` is `false` |
+| `id` |0 到 255 之间的数字值用于您的字段|在应用程序中不允许复制|
+| `displayInChart` |显示是否应该在图表中呈现记录水平连接IQ数据|如果您希望这个输入显示为图表,则`false`. 图表字段只能支持数值数据.|
+| `displayInActivityLaps` |显示在 Garmin Connect 活动细节页面的活动周期部分是否应呈现圈连接水平IQ数据|如果您希望该输入显示在活动圈中,`false`否则|
+| `displayInActivitySummary` |显示是否应该在 Garmin Connect 活动细节页面的活动总结部分显示活动 (健身会议) 连接 IQ 数据|如果您希望该条目显示在活动总结数据中,则`false`否则|
+| `sortOrder` |确定 Connect IQ 数据将在活动细节页的总结或回合部分显示的顺序,以及活动细节页上显示的顺序图表|不允许复制|
+| `precision` |数字数据的十分点精度|没有这个属性,默认情况下没有圆形|
+| `chartTitle` |这是一个资源字符串键,可用于将图表的标题呈现|如果`displayInChart`是`false`,则可选. 必须是字符串资源.|
+| `dataLabel` |这是用于将活动细节页的活动总结或活动周期部分数据场的标签表现的资源字符串键 (例如率或心率).|必须是一个字符串资源|
+| `unitLabel` |这是一个用于将活动细节页 (例如 kph,或英里) 的活动总结或活动周期部分中的数据场的单元表示的关键.|必须是一个字符串资源|
+| `fillColor` |用于图表的RRGGBB颜色值|如果`displayInChart`是`false`|
 
-This will communicate the metadata to display our chart to [Garmin Connect](https://connect.garmin.com/). Now we need to create our Field in the code. You do this by using the [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) method of the [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) object within your source:
+现在我们需要在代码中创建我们的字段.您可以通过使用源中的[ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)对象的[Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)方法这样做:
 
 ```java
 // Field ID from resources.
@@ -101,6 +101,6 @@ function setupField(session as Session) {
 }
 ```
 
-Now when you call on `mNamasteField` the value will be recorded into either the Record, Lap, or Session information of the FIT file based on the message type specified when calling [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function). If you are creating a Record (graph), you should update this value once a second. For lap and summary, you should provide constant updates to the current lap or workout value for the metric.
+现在,当您调用`mNamasteField`时,该值将根据调用[Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)时指定的消息类型记录在FIT文件的记录,圈或会议信息中记录.如果您正在创建记录 (图),则您应该每秒更新此值.
 
-After setting this up, you will want to preview how this will look on [Garmin Connect](https://connect.garmin.com/). We can use the Monkey Graph tool to create a preview. The Monkey Graph tool requires the following: a FIT file with the recorded developer data, and an IQ file of the app (you can acquire an IQ file via the [App Export Wizard](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store). The tool will allow you to test how charts will look before uploading your app for review. [See how to launch the Monkey Graph tool included with the SDK.](/connect-iq/reference-guides/monkey-graph-reference/#using-the-monkey-graph-tool)
+在设置后,您将想预览[Garmin Connect](https://connect.garmin.com/)上将如何看待.我们可以使用Monkey Graph工具来创建预览.Monkey Graph工具需要以下内容:记录开发人员数据的FIT文件和应用程序的IQ文件 (您可以通过[App Export Wizard](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store)获取IQ文件.该工具将允许您在上传应用程序进行审查之前测试图表的外观.

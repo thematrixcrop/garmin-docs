@@ -3,65 +3,65 @@ title: "Graphics"
 ---
 # Graphics
 
-The graphics module handles drawing bitmaps, fonts, and shapes to the device screen.
+图形模块处理将位地图,字体和形状绘制到设备屏幕上.
 
 ## Drawing Context
 
-The [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object is used to draw to a graphics surface. The primary device surface is provided to the View object methods [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function), [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and . The size of the surface can be queried with the [Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function) and [Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function) methods.
+[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象用于绘制图形表面.主要设备表面为查看对象方法[View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function),[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function),和 .可以使用[Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)和[Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)方法查询表面的大小.
 
 | Primitive or Operation | Draw | Fill | API Level | Notes |
 | --- | --- | --- | --- | --- |
-| Set the pen or fill color | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 | [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) and [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) are API 4.0.0. |
-| Set the pen width | [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
-| Clear the drawable area | N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
-| Draw a bitmap | [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | NA | 1.0.0 |  |
-| Draw a bitmap | [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | NA | 4.2.0 |  |
-| Draw a text string | [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | NA | 1.0.0 | Only works with [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) |
-| Draw a pixel | [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | NA | 1.0.0 |  |
-| Draw a line | [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | NA | 1.0.0 |  |
-| Draw a circle | [Dc.drawCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawCircle-instance_function) | [Dc.fillCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillCircle-instance_function) | 1.0.0 |  |
-| Draw an ellipse | [Dc.drawEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawEllipse-instance_function) | [Dc.fillEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillEllipse-instance_function) | 1.0.0 |  |
-| Draw a rectangle | [Dc.drawRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRectangle-instance_function) | [Dc.fillRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRectangle-instance_function) | 1.0.0 |  |
-| Draw a rounded rectangle | [Dc.drawRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRoundedRectangle-instance_function) | [Dc.fillRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRoundedRectangle-instance_function) | 1.0.0 |  |
-| Draw an arc | [Dc.drawArc()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawArc-instance_function) | N/A | 1.0.0 |  |
-| Draw a polygon | N/A | [Dc.fillPolygon()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillPolygon-instance_function) | 1.0.0 |  |
-| Set the clip area | [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) | N/A | 2.3.0 |  |
+|设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function), [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
+|设置笔宽度| [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
+|清除可拉的区域| N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
+|绘制一个位图| [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | NA | 1.0.0 |  |
+|绘制一个位图| [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | NA | 4.2.0 |  |
+|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | NA | 1.0.0 |只有使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)|
+|绘制一个像素| [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | NA | 1.0.0 |  |
+|绘制一个线| [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | NA | 1.0.0 |  |
+|绘制一个圆| [Dc.drawCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawCircle-instance_function) | [Dc.fillCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillCircle-instance_function) | 1.0.0 |  |
+|绘制一个圆| [Dc.drawEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawEllipse-instance_function) | [Dc.fillEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillEllipse-instance_function) | 1.0.0 |  |
+|绘制一个矩形| [Dc.drawRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRectangle-instance_function) | [Dc.fillRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRectangle-instance_function) | 1.0.0 |  |
+|绘制一个圆形矩形| [Dc.drawRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRoundedRectangle-instance_function) | [Dc.fillRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRoundedRectangle-instance_function) | 1.0.0 |  |
+|画一个弧| [Dc.drawArc()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawArc-instance_function) | N/A | 1.0.0 |  |
+|绘制一个多边形| N/A | [Dc.fillPolygon()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillPolygon-instance_function) | 1.0.0 |  |
+|设置剪辑区域| [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) | N/A | 2.3.0 |  |
 
-The [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) method allows you to set the foreground and background drawing colors. Colors are passed to [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) as 24-bit colors of the form 0xRRGGBB. When setting a color, the device will select the closest available color on the system.
+采用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)方法可以设置前景和背景绘画颜色.颜色被传输到[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)作为24位颜色的形式0xRRGGBB.在设置颜色时,设备会选择系统上最接近可用的颜色.
 
-A clipping region can be set for a [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. The top left corner coordinates, width, and height are specified to set this region. All pixels outside of this region will be unaffected by any drawing operations. The pixels within the region will be updated normally. The [Dc.clearClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clearClip-instance_function) method will remove the clipping region.
+采用[Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function)方法,可以为[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象设置剪辑区域.用于设置该区域,指定左上角坐标,宽度和高度.该区域以外的所有像素都不会受到任何绘图操作的影响.该区域内的像素将正常更新.[Dc.clearClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clearClip-instance_function)方法将删除剪辑区域.
 
 ## Strings and Fonts
 
-Text can be drawn using the [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) method. The [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object also has methods available to get the text width and height of a string with a specified font. Note that text size methods are also available in the Graphics module outside the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object.
+文字可以使用[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)方法绘制.[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象还可用方法获取一个字体字符串的文字宽度和高度.请注意,在[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象之外的图形模块中也可使用文本尺寸方法.
 
 | Operation | Function | API Level |
 | --- | --- | --- |
-| Draw a text string | [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
-| Draw text at an angle | [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
-| Draw text oriented along an arc | [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) | 4.2.2 |
-| Get the width and height of a text string with a given font | [Dc.getTextDimensions()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextDimensions-instance_function) | 1.0.0 |
-| Get the width of a text string with a given font | [Dc.getTextWidthInPixels()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextWidthInPixels-instance_function) | 1.0.0 |
-| Get the height of a given font | [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function), [Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0, 1.2.0 |
-| Get the ascent of a given font | [Graphics.getFontAscent()](/connect-iq/api-docs/Toybox/Graphics/#getFontAscent-instance_function) | 1.2.0 |
-| Get the descent of a given font | [Graphics.getFontDescent()](/connect-iq/api-docs/Toybox/Graphics/#getFontDescent-instance_function) | 1.2.0 |
-| Retrieve a system vector font | [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) | 4.2.2 |
+|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
+|绘制一个角度的文本| [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
+|绘制一个弧线的文本| [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) | 4.2.2 |
+|获取一个字体字符串的宽度和高度| [Dc.getTextDimensions()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextDimensions-instance_function) | 1.0.0 |
+|获取一个字体字符串的宽度| [Dc.getTextWidthInPixels()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextWidthInPixels-instance_function) | 1.0.0 |
+|获取给定的字体的高度| [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function), [Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0, 1.2.0 |
+|获取给定的字体的升| [Graphics.getFontAscent()](/connect-iq/api-docs/Toybox/Graphics/#getFontAscent-instance_function) | 1.2.0 |
+|获取给定的字体的下降| [Graphics.getFontDescent()](/connect-iq/api-docs/Toybox/Graphics/#getFontDescent-instance_function) | 1.2.0 |
+|检索系统向量字体| [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) | 4.2.2 |
 
 ### Scalable Fonts
 
 *Since API level 4.2.2*
 
-Font support for Garmin devices can vary from device to device. All devices support unicode bitmap fonts, but some devices support scalable fonts. If a device supports scalable fonts, the supported fonts are published in the [Device Reference](/connect-iq/device-reference/#device-reference) as `Scalable Font` entries in the font list.
+Garmin 设备的字体支持可以因设备而异.所有设备都支持单码位地图字体,但有些设备支持可扩展字体.如果设备支持可扩展字体,支持的字体将在[Device Reference](/connect-iq/device-reference/#device-reference)中发表为`Scalable Font`字体列表中.
 
-To access a scalable font, you can call [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) using the name from the device reference as the `:face` argument. The `:face` argument also will take an array of face names. This allows you to specify backup font faces that are acceptable for your needs in case the device doesn't support your preferred choice. You can also specify the font size in pixels.
+为了访问可扩展字体,您可以用设备参考中的名称调用[Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function)作为`:face`参数.`:face`参数还将采用一系列面孔名称.如果设备不支持您喜欢的选择,这允许您指定适合您的需求的备份字体面.您也可以指定像素中字体大小.
 
-Scalable fonts work with [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) but can also be used with the [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) and [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function). These APIs only support scalable fonts and do not support custom fonts loaded as resources.
+可扩展字体与[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)工作,但也可以与[Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function)和[Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function)使用.这些API只支持可扩展字体,并且不支持作为资源加载的自定义字体.
 
 ## Anti-Aliasing
 
 *Since API level 3.2.0*
 
-By default, anti-aliasing of primitives like polygons and lines are disabled, but it can be enabled by calling [Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function). This method is not available before API level 3.2.0 so if your app runs with the API level set below 3.2.0 make sure to guard it with a `has` check.
+默认情况下,禁用对多边形和线程等原始的反位,但可以通过调用[Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function)启用.此方法在API级 3.2.0之前不存在,所以如果您的应用程序运行以3.2.0以下的API级设置,请确保使用`has`检查保护它.
 
 ```typescript
 function draw(dc) {
@@ -76,23 +76,23 @@ function draw(dc) {
 
 *Since API level 4.0.0*
 
-API level 4.0.0 adds some powerful new tools to the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/):
+增添一些强大的新工具到[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/):
 
-| Function | Purpose | Accepts | API Level |
+| Function |目的| Accepts | API Level |
 | --- | --- | --- | --- |
-| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | Set fill tool for drawing primitives. | [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
-| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | Set pen tool for drawing primitives | [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
-| [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) | Set blend mode for drawing |  | 4.0.0 |
+| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) |设置填充工具来绘制原始.| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) |设置笔工具来绘制原始| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) |设置绘图混合模式|  | 4.0.0 |
 
-Previously, the [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) API allowed the setting of a foreground or background color based on a 24-bit RRGGBB value. [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) and [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) both accept 32-bit AARRGGBB values, allowing you to provide an alpha channel value with the RGB value. The [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) API allows setting the pen tool for the Dc, while [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) sets the fill tool.
+之前,[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)API允许根据24位RRGGBB值设置前景或背景颜色.[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)和[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)都接受32位AARRGGBB值,允许您提供RGB值的阿尔法频道值.[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)API允许设置笔工具,而[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)设置填充工具.
 
 You can also set the blend mode with [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function). By default, 系统将 blend your color with whatever is being drawn over. However, you can use \`BLEND\_MODE\_NO\_BLEND\` to set the color and alpha of a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) directly. You can also use \`BLEND\_MODE\_ADDITION\` to have your blend added to the channels being drawn to.
 
-In addition to colors, you can now also provide a [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/). This allows a primitive to be filled by a bitmap and opens up many new drawing possibilities.
+除了颜色之外,现在还可以提供[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/). 这允许通过位图填写原始图,并开辟了许多新的绘图可能性.
 
 ## Bitmaps
 
-Bitmap resources can be added to your executable using the [resource compiler](/connect-iq/core-topics/resources/#bitmaps). You can use [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) to load a bitmap at runtime, and [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) or [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) to render it to the screen on the [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) call.
+通过[resource compiler](/connect-iq/core-topics/resources/#bitmaps)可以添加比特图资源到可执行的中文中.你可以使用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)在运行时加载比特图,并使用[Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function)或[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)将其转载到[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)调用屏幕上.
 
 ### Transformation
 
@@ -110,9 +110,9 @@ Sometimes you want the color of an asset, like an icon, to be user-definable. Fo
 
 *Since API level 4.0.0*
 
-Before API level 4.0.0, all resources loaded at runtime into the application heap. This heap is used to hold your code, data, stack and runtime objects, so loading images could quickly limit the runtime functionality of your app. API level 4.0.0 introduced a new graphics pool that is separate from your application heap. When you load a bitmap or font at runtime, the resource will load into the graphics pool, and you will be returned a [Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/). The graphics pool dynamically caches, unloads and reloads your resources behind the scenes based on available memory. All the drawing primitives that accept resource objects also accept references so your app should not have to be reworked to take advantage of the new system.
+在 API 级别 4.0.0 之前,运行时加载的所有资源都进入了应用程序堆.该堆用于保留您的代码,数据,堆和运行时间对象,因此加载图像可以快速限制您的应用程序的运行时间功能. API 级别 4.0.0 引入了一个新的图形库,与应用程序堆分开.当您运行时加载一张位地图或字体时,资源将加载到图形库中,您将收回[Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/).图形库动态缓存,卸载和重新加载您的资源基于可用的内存.所有接受资源对象的原始图形也接受引用,因此您的应用程序不需要重新工作以利用新系统.
 
-Calling [ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function) on a reference will return a resource object. As long as the object returned is in scope, the resource will be locked in the graphics pool.
+在引用中调用[ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function)将返回资源对象.只要返回的对象在范围内,资源将被锁定在图形池中.
 
 ### Buffered Bitmaps
 
@@ -120,17 +120,17 @@ Calling [ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceR
 
 The [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) class 可用于 draw to surface other than the primary display surface. There are two options for creating a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object. The first is to generate one from a loaded bitmap resource. In this case, the provided bitmap is used as the drawing surface that is manipulated. The second option is to specify the width, and height of the surface, and optionally a color palette. If no color palette is specified, the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) will use the system colors, and will not have a palette. If a bitmap resource is provided to the initializer, the width, height, and palette parameters are ignored.
 
-If a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) does have a palette, it can be read using the [BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function) method. The palette can also be modified using the [BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function) method. The palette provided must have the same number of colors as the existing palette for that bitmap. All pixels in the image will change color to the new color assigned at each color index. Note that Bitmaps with a palette that are generated by the resource compiler will have an additional transparent index at the end of the specified palette unless the `disableTransparency` flag has been specified.
+如果一个[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)确实有一个色调,则可以使用[BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function)方法读取.该色调也可以使用[BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function)方法修改.所提供的色调必须与该位图的现有色调相同.图像中的所有像素将将颜色更改为每个色调指标的新颜色.请注意,资源编译器生成的位图带有色调,除非已指定了`disableTransparency`旗,否则在指定的色调末端将有一个额外的透明索引.
 
 A Drawing Context can be obtained from the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) using the [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) method. This returns a [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) class that has the same capabilities as the primary device [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) that is provided to the methods [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function), [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and . This object 可用于 modify the contents of the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) by drawing shapes, text, and bitmaps to it.
 
-#### Buffered Bitmaps and the Graphics Pool
+##### 缓冲的比特图和图形池
 
-[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) objects, like other graphics resources, now take advantage of the graphics pool, as well. The advantage of this scenario is that you can now liberally use temporary graphics buffers without running out of application heap.
+像其他图形资源一样,[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)对象现在也利用了图形库.这个场景的优势是,现在可以自由地使用临时图形缓冲器,而没有耗尽应用程序堆.
 
 As noted earlier, the graphics pool will intelligently purge and restore resources from the pool if the loaded resources exceed the available pool space. Unlike static resources that are reloaded from your executable, [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) are not restored if they have been purged. This works fine if you are using a short-lived, temporary buffer, but if your bitmap is purged after allocation, 您需要 re-render its contents. Alternatively, you can call the get() method on the reference to get a locked version of the bitmap. This will prevent the [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object from being purged from the pool, but it can also lead to the graphics pool running out of available space if more resources are loaded.
 
-To create a [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/), use the [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function) API. If your application runs on pre-API level 4.0 devices, use a has check for allocating your [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/):
+如果您的应用程序运行在API前的4.0级设备上,请使用分发[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)的 has检查:
 
 ```typescript
 import Toybox.Graphics;
@@ -155,4 +155,4 @@ Yes, really.
 
 Yes, really.
 
-I'm so glad I wasn't the one [to come up with this](https://www.reddit.com/r/EngineeringStudents/comments/dl6hfz/to_all_my_fellow_civil_engineers_i_give_you_ed/).
+我很高兴我不是那个[to come up with this](https://www.reddit.com/r/EngineeringStudents/comments/dl6hfz/to_all_my_fellow_civil_engineers_i_give_you_ed/)的人.

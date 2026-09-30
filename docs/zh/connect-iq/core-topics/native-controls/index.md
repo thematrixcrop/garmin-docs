@@ -5,7 +5,7 @@ title: "Native UI Controls"
 
 ![](/connect-iq/resources/programmers-guide/artsy-monkey.png)
 
-[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) provides a number of native widgets to handle input:
+[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/)提供了一些本地插件来处理输入:
 
 -   Menus
 
@@ -34,9 +34,9 @@ Menus are full screen lists of options for the user. Menus 可用于 present opt
 
 *Since API level 3.0.0*
 
-The [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) system allows for complex menu user interfaces. The [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) class includes new capabilities like graphical titles, menu items that can be updated dynamically, and additional menu elements such as check boxes. The Menu2 system includes multiple new classes. Let's start with the most simple of the new menu elements.
+[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)系统允许复杂的菜单用户界面.[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)类包括新的功能,如图形标题,可动地更新的菜单项,以及检查框等额外的菜单元素. Menu2 系统包括多个新的类.让我们从新菜单元素中最简单的开始.
 
-Here is a basic implementation of a Menu2 using a simple [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/):
+以下是简单的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的 Menu2基本实现:
 
 ```cpp
 import Toybox.WatchUi;
@@ -86,38 +86,38 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-While the [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) example is built using the resource system, the [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) example above is built programmatically. Let's take a look at some of the new features demonstrated:
+虽然[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)示例是使用资源系统构建的,但上述[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)示例是编程构建的.让我们看看一些新功能:
 
 new WatchUi.Menu2
 
-The [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) class is a special [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) that is similar to [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) that presents the user with a list of options.
+[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)类是一个类似于[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)的特殊[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)类,它向用户提供了选项列表.
 
 MenuItem
 
-The MenuItem object constructor takes four parameters: `label`, `subLabel`, `identifier`, and `options`. Each `MenuItem` can display a label and sub-label defined by the first two parameters. Here is a diagram that demonstrates the layout of the label and sub-label in [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/):
+menuItem对象构造器采用了四个参数:`label`,`subLabel`,`identifier`和`options`.每个`MenuItem`可以显示一个标签和子标签,由前两个参数定义.以下是图表显示了[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)中的标签和子标签布局:
 
-Figure 1. An Illustration of label and sub-labels in \`Menu2\`
+图1. 标签和子标签的说明在 \`Menu2\`
 
 ![Illustration of label and sub-labels in Menu2](/connect-iq/resources/programmers-guide/Menu2_labels.png)
 
-The [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) `identifier` is an object, typically a string, and is used to identify the `MenuItem` object in event calls. There is a fourth parameter which is a `Dictionary` of options which can be `null`.
+[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)`identifier`是一个对象,通常是一个字符串,用于识别事件调用中`MenuItem`对象.有一个第四个参数是`Dictionary`的选项,可以是`null`.
 
 WatchUi.Menu2InputDelegate
 
-The new [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) class is used to handle selected Menu2 items. This object handles these selections with three methods:
+新的[WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)类用于处理选定的Menu2项目.该对象使用三个方法处理这些选择:
 
--   [Menu2InputDelegate.onBack()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onBack-instance_function) - Handles the back key and pops the current page off the stack if not overridden.
+-[Menu2InputDelegate.onBack()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onBack-instance_function)- 处理后键并将当前页面从堆中删除,如果没有被覆盖.
 
--   [Menu2InputDelegate.onDone()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onDone-instance_function) - Used with a specialized [WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/). Pops the current page when not overridden.
+-[Menu2InputDelegate.onDone()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onDone-instance_function)- 用于专业的[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/). 当未被重覆时,显示当前页面.
 
--   [Menu2InputDelegate.onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) - Handles when a Menu2 item is selected.
+-[Menu2InputDelegate.onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function)- 选择menu2项时处理.
 
 
-For more, see the `Menu2Sample` sample app distributed with the SDK.
+查看与SDK共享的`Menu2Sample`样本应用.
 
 #### Menu2 XML Resources
 
-A basic [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) can be defined in XML as a resource as follows:
+基本[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)可以在 XML 中定义为资源如下:
 
 ```xml
 <menu2 id="MainMenu" title="@Strings.MainMenuTitle">
@@ -126,39 +126,39 @@ A basic [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) can be defin
 </menu2>
 ```
 
-Here are the attributes and definitions of a [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) defined as an XML resource:
+以下是定义为XML资源的[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)的属性和定义:
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The ID of the `<menu-item>` | Any string that starts with a character | NA | Required |
-| `title` | The label text to be displayed as the header | A valid [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) identifier, a string resource, or `String` | NA | optional |
-| `icon` | The icon to display in the sub-window (Instinct 2 only) | Bitmap resource identifier | NA |  |
-| `dividerType` | The location of the divider (5.0.1+ device support only) | A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | optional |
-| `theme` | The background color of a menu item | A or "disabled" | `WatchUi.MENU_THEME_DEFAULT` | optional |
-| `personality` | The personality class for the menu | A defined personality class | NA | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
+| `title` |标签文本将作为标题显示|有效的[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)标识符,字符串资源或`String`| NA | optional |
+| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
+| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | optional |
+| `theme` |菜单项的背景颜色|一个或"残疾人"| `WatchUi.MENU_THEME_DEFAULT` | optional |
+| `personality` |菜单的个性类|一个定义的人格类| NA | See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
-The [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) identified as "generic1" uses both a label and sublabel. The "generic2" item uses only a label.
+标签"通用1"的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)使用标签和子标签. "通用2"的项目仅使用标签.
 
-Here are the attributes and definitions of a [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) defined as an XML resource:
+以下是定义为XML资源的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的属性和定义:
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The ID of the `<menu-item>` | Any string that starts with a character | NA | Required |
-| `label` | The label text to be displayed | A valid string resource or `String` | NA | Required |
-| `subLabel` | The sub-label text to be displayed | A valid string resource or `String` | NA |  |
-| `icon` | The icon to display in the sub-window (Instinct 2 only) | Bitmap resource identifier | NA |  |
+| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
+| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
+| `subLabel` |显示的子标签文本| A valid string resource or `String` | NA |  |
+| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
 
-The most exciting part about Menu2 is the use of icons, check boxes and toggles within menus. All Menu2 items can be created and launched in the same way, but each new menu item behaves uniquely. We've already seen the basic `MenuItem` class. Lets talk about some of the specifics when using the others.
+Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项目都可以以相同的方式创建和启动,但每个新的菜单项目都表现得独特.我们已经看到了基本的`MenuItem`类.我们谈谈使用其他时的具体细节.
 
 #### Icon Menu Item
 
-The [WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) class allows developers to implement an icon based menu system. The [WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) uses a label and sub-label, but also includes an icon that may be displayed to the right or left of the label and sub-label text.
+[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)类允许开发人员实现基于图标的菜单系统.[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)使用标签和子标签,但还包括一个标签和子标签文本的右或左边可显示的标签.
 
-Figure 2. An illustration of an \`IconMenuItem\` in \`Menu2\`
+图 2. 在 \`Menu2\`中 \`IconMenuItem\`的说明
 
 ![Illustration of a \`IconMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/IconFigure.png)
 
-Here is an `IconMenuItem` created as an XML resource:
+以下是作为XML资源创建的`IconMenuItem`:
 
 ```xml
 <menu2 id="IconMenu" title="@Strings.IconMenuTitle">
@@ -171,24 +171,24 @@ Here is an `IconMenuItem` created as an XML resource:
 </menu2>
 ```
 
-Here are the attributes available for `<icon-menu-item>`:
+以下是`<icon-menu-item>`可用的属性:
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The ID of the `<icon-menu-item>` | Any string that starts with a character | NA | Required |
-| `label` | The label text to be displayed | A valid string resource or `String` | NA | Required |
-| `subLabel` | The sub-label text to be displayed | A valid string resource or `String` | NA |  |
-| `icon` | The icon to be displayed | A valid drawable resource or custom drawable | NA | Required |
+| `id` |`<icon-menu-item>`的身份证|任何以字符开始的字符串| NA | Required |
+| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
+| `subLabel` |显示的子标签文本| A valid string resource or `String` | NA |  |
+| `icon` |显示的图标| A valid drawable resource or custom drawable | NA | Required |
 
 #### Checkbox and Toggle Menu Items
 
-The [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) allows users to check multiple items in a list of menu items and save their state at one time (i.e. selecting play lists for music content). The [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) class is used in combination with a class extending the [WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) View and a [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/).
+[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)允许用户检查列表中的多个项目,并同时保存它们的状态 (即选择音乐内容的播放列表).[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)类是使用[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/)视图和[WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)扩展的类结合.
 
-Figure 3. An illustration of a \`CheckboxMenuItem\` in \`Menu2\`
+图3. 在 \`Menu2\`中 \`CheckboxMenuItem\`的说明
 
 ![Illustration of a \`CheckboxMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/CheckboxFigure.png)
 
-Developers define a [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) using XML as follows:
+开发人员使用XML定义[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)如下:
 
 ```xml
 <checkbox-menu id="CheckMenu" title="@Strings.CheckMenuTitle">
@@ -201,13 +201,13 @@ Developers define a [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/Watch
 </checkbox-menu>
 ```
 
-The [WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/) class is an element that indicates a menu item is in one of two states: `:enabled` or `:disabled`. See the change in the image below:
+[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)类是指指一个菜单项在两个状态中的一个元素:`:enabled`或`:disabled`. 查看下图中的变化:
 
-Figure 4. An illustration of a \`ToggleMenuItem\` in \`Menu2\`
+图 4. 在 \`Menu2\`中 \`ToggleMenuItem\`的说明
 
 ![Illustration of a \`ToggleMenuItem\` in in Menu2](/connect-iq/resources/programmers-guide/ToggleFigure.png)
 
-You can create a [WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/) as a resource using XML:
+您可以使用XML创建[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)作为资源:
 
 ```xml
 <menu2 id="ToggleMenu" title="@Strings.ToggleMenuTitle">
@@ -220,33 +220,33 @@ You can create a [WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/To
 </menu2>
 ```
 
-The `<checkbox-menu-item>` and `<toggle-menu-item>` attributes are identical in name and function:
+在名称和函数上,`<checkbox-menu-item>`和`<toggle-menu-item>`属性相同:
 
-| Attribute | Definition | Valid Values | Default Value | Notes |
+| Attribute | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `id` | The ID of the `<toggle-menu-item>` or `<checkbox-menu-item>` | Any string that starts with a character | NA | Required |
-| `label` | The label text to be displayed | A valid string resource or `String` | NA | Required |
-| `subLabel` | The sub-label text to be displayed when `checked` is `true` | A valid string resource or `String` | NA |  |
-| `disabledSubLabel` | The sub-label text to be displayed when `checked` is `false` | A valid string resource or `String` | NA |  |
-| `checked` | The boolean state of the `<toggle-menu-item>` or `<checkbox-menu-item>` | `true` for `:enabled`, `false` for `disabled` | `false` | Value will switch even when not defined in XML |
-| `icon` | The icon to display in the sub-window (Instinct 2 only) | Bitmap resource identifier | NA |  |
-| `dividerType` | The location of the divider (5.0.1+ device support only) | A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | Optional |
+| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的ID|任何以字符开始的字符串| NA | Required |
+| `label` |显示的标签文本| A valid string resource or `String` | NA | Required |
+| `subLabel` |当`checked`是`true`时显示的子标签文本| A valid string resource or `String` | NA |  |
+| `disabledSubLabel` |当`checked`是`false`时显示的子标签文本| A valid string resource or `String` | NA |  |
+| `checked` |`<toggle-menu-item>`或`<checkbox-menu-item>`的布尔状态|对于`:enabled`而言`true`,对于`disabled`而言`false`| `false` |值即使在 XML 中未定义,也会发生变化|
+| `icon` |在子窗口中显示的图标 (仅本能2)| Bitmap resource identifier | NA |  |
+| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | Optional |
 
-The `checked` attribute is automatically created as part of a or object and does not have to be defined in XML. If it is not defined in XML, then it will default to `false`.
+`checked`属性自动创建为 一个 或对象的一部分,并且不需要在 XML 中定义.如果它不是在 XML 中定义的,那么它将默认为`false`.
 
-For a [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) using graphical elements such as toggles and check boxes, developers can choose to align the elements to the left or right of the [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) label. If not defined, then elements will be aligned to the right as seen in the `defaultAlign` toggle menu above. A `<param>` tag with the desired \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*\` value is used to set the alignment of icons, checks, and toggles. Developers can also explicitly align items to the right by using the \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_RIGHT\` value.
+对于使用图形元素如转换器和检查框的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/),开发人员可以选择将元素对齐到[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)标签的左或右边.如果未定义,则元素将被对齐到右边,如上面的`defaultAlign`转换菜单中所看到的.使用一个具有所需的 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*\`值的`<param>`标签来设置图标,检查和转换器的对齐.开发人员还可以明确使用 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_RIGHT\`值对齐到右边.
 
 ### Action Menus
 
 *Since API level 3.4.0*
 
-Action views are screens that both provide information and provide a contextual menu of actions. These actions might be next steps or tasks that can be performed on the visible information.
+动作视图是提供信息和提供文本中的动作菜单的屏幕.这些动作可能是可在可见信息上执行的下一步或任务.
 
-For more, see the [WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) API and the Action Views chapter of the Personality Library.
+查看[WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function)API和个性图书馆的行动视图章.
 
 ### Original Menu API
 
-[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) is the older API for providing a list of options for the user. The options are displayed in a list that matches the device the app is running on. A menu can be defined in the resource XML file using the following format:
+[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)是为用户提供选项列表的旧API.选项显示在匹配应用程序运行的设备的列表中.在资源XML文件中可以定义菜单,使用以下格式:
 
 ```xml
 <menu id="MainMenu">
@@ -255,7 +255,7 @@ For more, see the [WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi
 </menu>
 ```
 
-The resource compiler will then take this XML and generate a [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) object in the `Rez` module. In order to use this menu, a developer simply needs to push the menu and a delegate for the menu using [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function):
+资源编译器将接下来采用这个XML并在`Rez`模块中生成一个[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)对象.为了使用这个菜单,开发人员只需要按下菜单和使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)的代表来使用菜单:
 
 ```java
 class MyView extends WatchUi.View {
@@ -277,56 +277,56 @@ class MyMenuDelegate extends WatchUi.MenuInputDelegate {
 
 ## Generic Picker
 
-The [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/) class, along with the [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/) and [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) classes, provides applications with the ability to create on-screen lists of user-selectable objects. A picker consists of one or more objects, a title, a next and previous arrow, and a confirm button. The next and previous arrows and the confirm button are device specific but can be overwritten if desired. Pickers are pushed using [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), providing a [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/) for the input delegate. A [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) is required to indicate what should be displayed for each pick-able value.
+[WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)类,以及[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)和[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)类,提供了应用程序在屏幕上创建用户可选择的对象列表的能力.选手包括一个或多个对象,标题,下一个和上一个箭头,以及确认按.下一个和上一个箭头和确认按是设备特定的,但可以在需要时重写.选手使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)推送,为输入代表提供[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/).一个[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)是要求指示每个可选的值显示的.
 
 ### User Interface
 
 ![Main components of a generic picker layout](/connect-iq/resources/programmers-guide/picker-layout.png)
 
-The above image is a representation of the general structure of what a picker should look like on a square screen. Other screen formats should have the same layout with some size differences to account for the screen and button layout.
+上面的图像是对选号机在方形屏幕上应该看起来像什么的一般结构的表示.其他屏幕格式应该具有相同的布局,有一些尺寸差异,以考虑屏幕和按布局.
 
--   The top red bar represents where the title of the picker is displayed.
+- 上面的红色标志着选手的标题.
 
--   Up and down arrows to scroll through the available options are placed where the green boxes are.
+- 在绿色盒子处,放上下箭头,可通过可用的选项滚动.
 
--   The leftmost blue box is where the last item you selected is shown if the picker has multiple selectable items.
+- 如果选手有多个可选项,最左边的蓝色框将显示您选择的最后一项.
 
--   The center blue box is the item you are currently selecting.
+- 中央蓝色框是您目前选择的物品.
 
--   The white box will either be the next selectable item in the list or the button to confirm your selection.
+- 白框将是列表中的下一个可选项或确认选择的按.
 
 
-For more, see the `Picker` sample app distributed with the SDK.
+查看与SDK共享的`Picker`样本应用.
 
 ## Confirmation Dialog
 
-The [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) and [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/) provides a simple yes/no dialog. This is useful when presenting a simple selection to the user.
+[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)和[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)提供了一个简单的是/否对话.
 
-For more, see the `ConfirmationDialog` sample app distributed with the SDK, and the Confirmations section of the Personality Library.
+查看SDK共享的`ConfirmationDialog`样本应用程序,以及个性图书馆的确认部分.
 
 ## Progress Bar
 
-The progress dialog gives a standard wait dialog. It has two modes—one that shows the completion of some process, and a second that acts a wait timer displaying an indeterminate amount of progress. The look and feel of the progress bar will be device-specific.
+进步对话框提供了标准的等待对话框.它有两个模式,一个显示了某个过程的完成,第二个显示了无限量的进步的等待计时器.进步的外观和感觉将是设备特定的.
 
-For more, see the `ProgressBar` sample app distributed with the SDK, and the Progress Bars section of the Personality Library.
+查看 SDK 配备的`ProgressBar`样本应用程序和个性图书馆的进步条节.
 
 # Page Loops
 
-Page loops are carousels of views. When the user is in a page loop, the user interface presents a set of pages of information that provide different data and insights to the user. There are standard behaviors for going to the next and previous pages. Advancing from the last page typically loops the user back to the first page.
+页面循环是视图的轮.当用户在页面循环中时,用户界面会呈现一组信息页面,为用户提供不同的数据和见解.进入下一个和上一个页面的标准行为.从最后页面前进通常将用户返回第一页.
 
-For more, see the [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) API, and the Page Loops section of the Personality Library.
+查看[WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)API和个性库页面循环部分.
 
 ## Toasts
 
 *Since API level 3.4.0*
 
-Toasts are partial screen banners with text and an optional icon. The user cannot interact with them, and they dismiss after a short period. Toasts are good for informing users about asynchronous events without disrupting what they are currently doing.
+乾杯是部分屏幕横幅,有文本和可选的图标.用户无法与它们互动,并且它们在短时间后会被驳回.乾杯是为用户告知异步事件而不会破坏他们目前正在做的事情而有用的.
 
-For more, see the [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API, and the Toasts section of the Personality Library.
+查看[WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function)API和个性图书馆的吐司部分.
 
 ## Data Field
 
-Data fields function as plug-ins for the Garmin activity experience. After users install a data field from the store, they can place them inside of their activity pages for any Garmin activity.
+数据字段作为加密器活动体验的插件.用户在从商店安装数据字段后,可以在其活动页面内放置它们.
 
 On devices with touch screen support, an input delegate 可用于 accept input. Only the [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) behavior is supported and will be triggered when the user touches a point inside the data field when it is active on the screen. The behavior delegate should be the second element of the array that is returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) as with other app types.
 
@@ -351,19 +351,19 @@ class DataFieldDelegate extends Ui.InputDelegate {
 
 *Since API level 3.2.0*
 
-When you want your data field to notify the user of a specific event, you can push a view that extends [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/). [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) is a special instance of [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) that can be presented to the user with [DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function). The alert does not accept input and will time out after the standard alert period. The user is required to enable alerts for your app in the workout alert settings.
+当您希望您的数据字段通知用户特定事件时,您可以按一个扩展[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)的视图.[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)是[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)的一个特殊实例,可以用[DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function)呈现给用户.警报不会接受输入,并且将在标准警报期后停机.用户需要在训练警报设置中启用您的应用程序的警报.
 
 ## Mapping
 
 *Since API level 3.0.0*
 
-Connect IQ enables developers to embed map views into their apps on products with onboard cartography. Mapping is accessible in two ways: The [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) and the [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/).
+连接智商使开发人员能够将内载地图图的产品嵌入地图视图应用程序中.地图绘制可以通过两种方式访问:[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)和[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/).
 
 ### MapViews
 
-The [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) class is pushed like any other [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) class, but has some unique characteristics. Namely, [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) objects give you access to a rendering of a specified portion of the on-board map for a device. [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) objects let you choose a portion of a map to focus on by using two points of the type .
+[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)类像其他任何[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)类一样推进,但具有一些独特的特性.即,[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)对象为您提供了一个设备内载地图的特定部分的染.[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)对象允许您使用两点类型来选择一个地图的部分.
 
-Here is the setup for a basic [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/):
+基本[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)的设置如下:
 
 ```cpp
 import Toybox.WatchUi;
@@ -393,50 +393,50 @@ class MyMapView extends MapView {
 }
 ```
 
-Let's dissect this a bit to learn about the view itself:
+让我们稍微分析一下,来了解视图本身:
 
 MapView.initialize()
 
-It is recommended to set the parameters of your MapView in it's `initialize()` function as shown here.
+建议设置MapView的参数在`initialize()`函数中,如图.
 
 MapView.setMapVisibleArea()
 
-This method takes `top_left` and `bottom_right` parameters as `Position.Location` objects. These two locations create a bounding box that defines the view area of the map which are the top-left and bottom-right most `Location` objects that must be displayed on the initial map render. Conceptually, this works itself out into a rectangular portion of a map that must be focused on for the initial render of the MapView.
+这种方法将`top_left`和`bottom_right`参数作为`Position.Location`对象.这两个位置创建了一个边界框,定义了地图的视角区域,这些区域是最初地图染上必须显示的最左上和右下`Location`对象.概念上,这将自己变成一个矩形部分的地图,必须集中在地图 Map视图的初始染上.
 
 MapView.setScreenVisibleArea()
 
-MapViews allow developers to overlay UI items on top. Sometimes you want the entire screen to have the map image, but other times you'll want to split the display between map and UI elements. If you want the map area to not be the center of the screen you can use this method to define the rectangular area. This method determines the rectangular area in which the area of the map defined in the `setMapVisibleArea()` call should be rendered. Here is a figure to help illustrate the relationship where the blue rectangles represent the map area and the red rectangles represent the screen area.
+MapViews允许开发人员在顶部叠加UI项目.有时你希望整个屏幕具有地图图像,但有时你会想将显示器分为地图和UI元素.如果你希望地图区域不成为屏幕的中心,你可以使用这种方法来定义矩形区域.这种方法决定了`setMapVisibleArea()`调用中定义的地图的矩形区域应呈现的矩形区域.这里有一个图形来帮助说明蓝色矩形代表地图区域和红色矩形代表屏幕区域的关系.
 
-Figure 5. An Illustration of relationship between Map Area and the Screen Area
+图5.地图区与屏幕区之间的关系的说明
 
 ![Illustration of relationship between Map Area and the Screen Area](/connect-iq/resources/programmers-guide/MappingDiagram.png)
 
 MapView.setMapMode()
 
-This call sets the map mode to one of the `MAP_MODE_*` enum values.
+这个调用设置地图模式为`MAP_MODE_*`enum值之一.
 
 MapViews and MapTrackViews have two modes:
 
--   **Preview:** Selected with the `MAP_MODE_PREVIEW` enum value. This allows a non-movable map to be rendered on the screen.
+- **预览:** 用`MAP_MODE_PREVIEW`enum值选择. 这允许在屏幕上染一个不动地图.
 
--   **Browse:** Selected with the `MAP_MODE_BROWSE` enum value. This mode allows the user to zoom, pan, and move the map using the system default controls.
+- **浏览:** 用`MAP_MODE_BROWSE`enum值进行选择.这种模式允许用户使用系统默认控制来放大,浏览和移动地图.
 
 
 ### MapTrackView
 
-The MapTrackView is similar to the MapView in all ways except for one. The MapTrackView will dynamically render the active location of the device on the screen.
+MapTrackView在所有方面都与MapView相似,除了一个.MapTrackView将动态显示设备在屏幕上的活跃位置.
 
-For more, see the `MapSample` sample app distributed with the SDK.
+查看与SDK共享的`MapSample`样本应用.
 
 ### Mapping Artifacts
 
-Maps can add context with your content, but only if you can combine them together. Thankfully, not only can you access the maps native to devices, you can draw on them too! Monkey C has two new objects to interact with maps: [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) and [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/).
+图可以添加语境与你的内容,但只有如果你能把它们结合在一起.幸运的是,不仅可以访问原生地图,你也可以从它们中绘制!子C有两个新的对象与图表互动:[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)和[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/).
 
 #### MapPolyline
 
-The [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object allows developers to draw a line with multiple points of location on a MapView rendering of a map. Only one [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object is allowed in a view.
+[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象允许开发人员在MapView映射图上绘制多个位置点的线.只允许一个[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象在视图中.
 
-Here is an example of a [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) with four points:
+以下是[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的一个例子,有四个点:
 
 ```cpp
     // Initialize a new MapPolyline object
@@ -484,29 +484,29 @@ Here is an example of a [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchU
 
 new WatchUi.MapPolyline
 
-This creates a new instance of [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object.
+这会创建一个新的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象.
 
 setColor()
 
-Sets the color of the [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) with a `COLOR_*` enum value.
+设置[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的颜色为`COLOR_*`enum值.
 
 setWidth()
 
-Sets the pen width used to draw the [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) in pixels.
+设置用于绘制[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的笔宽度.
 
 addLocation()
 
-This method takes a object and adds it to an `Array` of [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) objects. These locations make up the points used to draw the lines that comprise the [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) representation on the map.
+这种方法取一个对象,并将其添加到`Array`的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象中.这些位置构成绘制图上包含[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)表示的线路的点.
 
 MapView.setPolyline()
 
-This sets the MapPolyline object to be rendered on the map in the [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) or [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/). In this example it is using the [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object stored as `polyline`.
+这设置MapPolyline对象将在[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)或[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)的地图上呈现 . 在本例中,它使用存储为`polyline`的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象 .
 
 #### MapMarker
 
-The [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object pairs a object with a BitmapResource to create a marker to be draw on a map. Each Bitmap image used in a [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object will have a "hotspot" for the image. The hotspot is the point of the image that will be drawn at the latitude and longitude for the provided for the [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/).
+[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象将对象与BitmapResource结合起来,以创建一个标记,将在地图上绘制.在[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象中使用的每个Bitmap图像将有一个"热点"为图像.热点是图像的点,将在[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)所提供的宽度和长度上绘制.
 
-Here is a simple implementation of a [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object:
+以下是[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象的简单实现:
 
 ```cpp
     // Initialize a map marker with a Location object
@@ -534,23 +534,23 @@ Here is a simple implementation of a [WatchUi.MapMarker](/connect-iq/api-docs/To
     MapView.setMapMarker(defaultMarker);
 ```
 
-Let's look at the code above to get a better handle on the APIs.
+让我们看看上面的代码来更好地了解API.
 
 new WatchUi.MapMarker
 
-The [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object is initialized with the `Location` object passed to it. This is be the point at which the `MapMarker` hotspot of the Bitmap resource is be drawn.
+[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象被传递给`Location`对象的初始化.这是Bitmap资源的`MapMarker`热点被绘制的点.
 
 bitmapMarker.setIcon(WatchUi.loadResource(Rez.Drawables.MapPin), 12, 24)
 
-This call sets the icon of the[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) named `bitmapMarker` to the bitmap resource `Rez.Drawables.MapPin`. The hotspot is set to `12` for the `x` coordinate of the bitmap and `24` for the `y` coordinate of the `MapPin` icon.
+这个调用设置了[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)的标志,称为`bitmapMarker`的位地图资源`Rez.Drawables.MapPin`.热点设置为`12`的位地图的`x`坐标和`24`的`y`坐标的`MapPin`标志.
 
 setLabel()
 
-Sets the label of the [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) icon to be displayed on the rendered map.
+设置将[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)图标在映射地图上显示的标签.
 
 defaultMarker.setIcon(WatchUi.MAP\_MARKER\_ICON\_PIN, 0, 0)
 
-This [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) is using the `MAP_MARKER_ICON_PIN` enum value when setting the icon and use the system default icon for marking the point on the map. Note that the provided values for `x, y` for the hotspot are `0, 0` respectively. When using the default icon, the hotspot management is handled by the system.
+当设置图标时,这个[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)使用`MAP_MARKER_ICON_PIN`enum值,并使用系统默认图标记地图上的点.请注意,为热点`x, y`提供的值分别是`0, 0`.使用默认图标时,系统处理热点管理.
 
 setMapMarker()
 
@@ -570,7 +570,7 @@ MapView.setMapMarker(markers);
 
 ### Simulating Maps
 
-When working with maps in the simulator, Connect IQ uses web APIs to retrieve map images to simulate on-device behavior. Simulator and on-device mapping coverage with vary as on-device mapping is contingent on the device and maps available. Here is the detail coverage map for the simulator:
+在模拟器中的地图工作时,Connect IQ使用网络API来检索地图图图像,模拟设备上的行为.模拟器和设备上映射覆盖范围因设备上映射而异.以下是模拟器的详细覆盖地图:
 
 -   **Green:** Low detail
 
@@ -579,8 +579,8 @@ When working with maps in the simulator, Connect IQ uses web APIs to retrieve ma
 -   **Red:** High detail
 
 
-Figure 6. The detail map available on the Connect IQ Simulator
+图6. 在Connect IQ模拟器上可用的详细地图
 
 ![Detail map coverage guide for the Connect IQ Simulator](/connect-iq/resources/programmers-guide/MapCoverage.png)
 
-Graphical titles are currently only supported via programmatic creation of `MenuItem` elements in `Menu2`. Defining a title as a drawable resource will result in compiler error.
+目前,图形标题仅通过在`Menu2`中编程创建`MenuItem`元素来支持.将标题定义为可绘制资源将导致编译器错误.

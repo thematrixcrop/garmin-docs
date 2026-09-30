@@ -5,19 +5,19 @@ title: "Manifest File and Permissions"
 
 ![](/connect-iq/resources/programmers-guide/wizard-monkey.png)
 
-All the sections of the `manifest.xml` can be edited in the Monkey C Extension manifest editor. The *Edit as XML* option will allow you access to the underlying definitions.
+所有`manifest.xml`的部分都可在 Monkey C Extension manifest 编辑器中进行编辑. *编辑为 XML* 选项将允许您访问底层定义.
 
 ## Application Attributes
 
-The `application` element has a number of important attributes. The `id` field is a 128-bit UUID identifier. Unique identifiers can be generated with the [UUID Generator](http://www.uuidgenerator.net/version4) or with standard tools.
+`application`元素具有多个重要属性.`id`字段是一个128-位 UUID识别符.可以使用[UUID Generator](http://www.uuidgenerator.net/version4)或标准工具生成独特识别符.
 
-The `entry` attribute must specify the [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) object for your application.
+`entry`属性必须指定您的应用程序的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)对象.
 
 The `name` and `launcherIcon` attributes must specify a resource ID that is defined in the app resources. The `name` must reference a `string` entry in your strings resources, and the `launcherIcon` must reference a bitmap resource. See the [Resources](/connect-iq/core-topics/resources/#resources) 更多信息. Note that the icon resource should not be re-used within your application; use a duplicate resource if you want to use the icon within the app.
 
 If you specify a `launcherIcon`, 系统将 resource compiler will auto size the resource to match the product icon size. If a `launcherIcon` isn't specified, a default icon will be compiled into the application.
 
-The `type` field specifies what kind of application you are developing. Currently, Connect IQ supports five types of apps:
+在`type`字段中指定您正在开发的应用程序.目前,Connect IQ支持五种类型的应用程序:
 
 1.  `watchface`
 
@@ -30,13 +30,13 @@ The `type` field specifies what kind of application you are developing. Currentl
 5.  `audio-content-provider-app`
 
 
-The app type specified in the manifest file determines where your app appears on the device and which APIs the app can use.
+在表格文件中指定的应用程序类型决定了应用程序在设备上何处出现,以及应用程序可以使用哪些API.
 
-The `minApiLevel` field specifies the minimum Connect IQ API level that your app is compatible with. It serves to prevent you from targeting incompatible devices. The Monkey C extension allows you to select a minimum API level when creating a new app or editing the properties of an existing one. The micro version is written out to the manifest at version 1 (1.2.1 for example), but only the major and minor versions are considered when determining device support.
+在`minApiLevel`字段中,指定了您的应用程序兼容的最低 Connect IQ API 级别.它用于防止您针对不兼容的设备.在创建新应用程序或编辑现有应用程序时,可以选择最低 API 级别.微版本在版本 1 (1.2.1 比如),但在确定设备支持时只考虑主要和小版本.
 
-Every application must include an [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) object, which serves as the entry point for your application. The Monkey C extension will generate an [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) object when a project is created.
+每个应用程序都必须包含一个[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)对象,作为应用程序的入口点.当创建项目时,C扩展将生成一个[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)对象.
 
-An [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) object should override [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) to provide the view object to initially push. An array must be returned with either a view and a delegate, or just a one element array with the [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) object:
+一个[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)对象应取代[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)以提供视觉对象的最初推力.一个阵列必须以视觉和代表或只是一个元素阵列返回[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)对象:
 
 ```java
 return [ new MyView(), new MyDelegate() ];
@@ -44,9 +44,9 @@ return [ new MyView(), new MyDelegate() ];
 
 ## Products
 
-Garmin makes a wide variety of products for many use cases, and Monkey C makes it easy to write for all our Connect IQ compatible devices. Monkey C asks the developer which Connect IQ devices they choose to support because it is impossible to know whether a future product may be incompatible with your app. As new Connect IQ compatible products appear on the market, the simulator will be updated to support them so developers can decide whether to support them.
+Garmin为许多应用程序制作了各种各样的产品,而 Monkey C 简单地为我们所有的 Connect IQ 兼容设备编写. Monkey C 问开发人员他们选择支持哪些 Connect IQ 设备,因为不可能知道未来的产品是否与您的应用程序兼容.随着新 Connect IQ 兼容产品的出现,模拟器将会更新以支持它们,以便开发人员可以决定是否支持它们.
 
-Products supported by an app are listed in the `products` block of the manifest file:
+应用程序支持的产品列出在表文件`products`区块中:
 
 ```xml
 <iq:products>
@@ -58,7 +58,7 @@ Products supported by an app are listed in the `products` block of the manifest 
 
 *Since API level 5.2.0*
 
-On devices with API level 5.2, data fields have a post-install flow that lets the user associate them with activities. If you want to filter the list of activities, you can include an activity filter in the manifest.
+在API级5.2的设备上,数据字段具有后安装流程,允许用户将其与活动联系起来.如果你想过活动列表,你可以在表格中包含活动过器.
 
 ```xml
 <!--
@@ -74,7 +74,7 @@ On devices with API level 5.2, data fields have a post-install flow that lets th
         </iq:activityFilter>
 ```
 
-This will build a filter based on FIT sport and sub-sport identifiers. If the sub-sport is not provided, the filter will cover all sports. You can use the direct FIT identifier rather than the and constants. Here are some examples you can use:
+这将建立一个基于FIT运动和子运动标识符的过器.如果没有提供子运动,过器将覆盖所有运动.你可以使用直接FIT标识符而不是和常数.以下是一些你可以使用的例子:
 
 | Activity | Sport | Sub-Sport |
 | --- | --- | --- |
@@ -90,9 +90,9 @@ This will build a filter based on FIT sport and sub-sport identifiers. If the su
 
 ## Permissions
 
-Certain modules expose personal information about the user or expose communication to the internet. To use these modules, permission must be requested from the user at the time of installation. To request permission, the module name must be added to the permissions list of the manifest file.
+一些模块将用户的个人信息或网络通信暴露.使用这些模块,必须在安装时要求用户的许可.
 
-More modules may be added to this list as modules are added to the API. To request permission, use the following syntax in the manifest file:
+随着模块的添加到API,可能会添加更多模块.
 
 ```xml
 <iq:permissions>
@@ -100,7 +100,7 @@ More modules may be added to this list as modules are added to the API. To reque
 </iq:permissions>
 ```
 
-The following permissions are available:
+下面的权限可用:
 
 | Permission | Applicable Modules | API Level | Watch Face | Data Field | Widget | App | Audio Content Provider |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ The following permissions are available:
 | SensorLogging | [Toybox.SensorLogging](/connect-iq/api-docs/Toybox/SensorLogging/) | 2.3.0 |  |  |  |  |  |
 | UserProfile | [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) | 1.0.0 | x | x | x | x | x |
 
-Some products provide separation between activities and apps. If your app has the `Fit` permission, it will show in the Activities list.
+一些产品提供活动与应用程序之间的分离. 如果您的应用程序有`Fit`许可,则将显示在活动列表中.
 
 ## Languages
 
@@ -127,7 +127,7 @@ Connect IQ apps can be localized across over 30 languages, and the languages you
 
 ## Dependencies
 
-If your app links to other libraries, they must be declared in the manifest:
+如果您的应用程序链接到其他图书馆,则必须在表中声明:
 
 ```xml
 <iq:barrels>
@@ -135,34 +135,34 @@ If your app links to other libraries, they must be declared in the manifest:
 </iq:barrels>
 ```
 
-The options for each barrel are as follows:
+每桶的选项如下:
 
 | Option | Type | Value |
 | --- | --- | --- |
-| `name` | `string` | The declared namespace Module name for the monkey barrel. |
-| `version` | `a.b.c.d` (Optional) | The declared version number for the monkey barrel. |
+| `name` | `string` |declared  Mod|
+| `version` | `a.b.c.d` (Optional) |子桶的声明版本号.|
 
-`a`, `b` and `c` must be numbers. `d` is an optional alpha-numeric string of `A-Z`, `a-z`, `0-9`, and `_`.
+`a`,`b`和`c`必须是数字.`d`是`A-Z`,`a-z`,`0-9`和`_`的可选的阿尔法数字字符串.
 
-If a version is specified, the build system will enforce that library version being used. These rules can be modified with the following options:
+如果指定版本,构建系统将执行使用的图书馆版本.这些规则可以通过以下选项修改:
 
 | Format | Meaning | Example | Valid Version | Invalid Version |
 | --- | --- | --- | --- | --- |
-| Exact | An application links to a specific version of a library | `version="1.2.3"` | Version `1.2.3` | Any other version |
-| Greater or Equal | An application links to a library that matches or exceeds the version. | `version=">=1.2.3"` | Version `1.2.3` or greater. | Versions `1.2.2` or less. |
-| Pessimistic | The application links to a library with a matching major and minor version, but the micro version must match or be greater than the specified version. | `version="~>1.2.3"` | Versions `1.2.3`, `1.2.4`, `1.2.5`, etc. | Versions `1.2.2`, `1.3.1`, etc. |
-| Whatever | The version of the link library will not be enforced at build time. | No version attribute specified. | Any | N/A |
+| Exact |应用程序链接到特定版本的库| `version="1.2.3"` |版本`1.2.3`| Any other version |
+| Greater or Equal |应用程序链接到匹配或超过版本的库.| `version=">=1.2.3"` | Version `1.2.3` or greater. | Versions `1.2.2` or less. |
+| Pessimistic |应用程序将链接到具有匹配的主要和小型版本的图书馆,但微版本必须匹配或大于指定版本.| `version="~>1.2.3"` | Versions `1.2.3`, `1.2.4`, `1.2.5`, etc. | Versions `1.2.2`, `1.3.1`, etc. |
+| Whatever |链接库的版本不会在构建时执行.| No version attribute specified. | Any | N/A |
 
-The version can be prefixed with `>=` to indicate a minimum supported version.
+版本可以以`>=`为先fix,以表示最低支持版本.
 
 See [Shareable Libraries](/connect-iq/core-topics/shareable-libraries/#shareable-libraries) 更多信息.
 
-Communication requires the background permission to be enabled, but Authentication does not
+通信需要启用背景许可,但身份验证不
 
-Communication requires the background permission to be enabled, but Authentication does not
+通信需要启用背景许可,但身份验证不
 
-Only widgets and apps are allowed to call [Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)
+只有小工具和应用程序可以拨打[Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)
 
-Only widgets and apps are allowed to call [Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)
+只有小工具和应用程序可以拨打[Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)
 
-Only widgets and apps are allowed to call [Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)
+只有小工具和应用程序可以拨打[Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)

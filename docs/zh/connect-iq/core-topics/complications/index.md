@@ -5,7 +5,7 @@ title: "Complications"
 
 Garmin 设备在用户佩戴时收集大量数据点。 Many of these data points can be summarized and displayed on the watch face as a [complication](https://en.wikipedia.org/wiki/Complication_(horology)). The Connect IQ SDK offers multiple APIs to access user metrics, and has expanded the offerings with every release.
 
-The [Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/) module consolidates the specific metrics typically displayed by Garmin devices into a unified interface. This unified interface gives the developer access to the information typically shown on the watch face for the developer. The complications are exposed using a publish/subscribe model.
+[Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/)模块将Garmin设备通常显示的特定指标结合成一个统一的接口.这种统一的接口为开发者提供了开发者通常在表面上显示的信息的访问权限.使用发布/订阅模型来揭示并发症.
 
 此外，设备应用和音频内容提供者开发人员现在可以使用此新框架发布最多四个复杂功能。 Complications have public, protected, and private visibility levels with the system.
 
@@ -20,31 +20,31 @@ The [Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/) module co
 
 ### Complication Objects
 
-Data is published as a [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) object. The complication object exposes the following information:
+数据作为[Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)对象发布.复杂性对象暴露以下信息:
 
 | Identifier | Description | API Level |
 | --- | --- | --- |
-| [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) | A unique identifier for the type of data being published of type [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) | 4.2.0 |
-| [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) | A textual name for the complication. The long label is intended for display in a configuration menu. | 4.2.0 |
-| [Complication.ranges](/connect-iq/api-docs/Toybox/Complications/Complication/#ranges-var) | An optional array of numeric values. Ranges allow breakdowns of sets of values that can be integrated into the display. | 4.2.0 |
-| [Complication.shortLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#shortLabel-var) | A five-character string intended to summarize your complication as a radial complication. | 4.2.0 |
-| [Complication.unit](/connect-iq/api-docs/Toybox/Complications/Complication/#unit-var) | The units to use with the value. If this is `null` then the unit shouldn't be displayed. If this is a `UNIT` identifier, the `value` is expected to be in a specific unit for conversion. If the `unit` is a string, the `value` should be interpreted without conversion. | `4.2.0` |
-| [Complication.value](/connect-iq/api-docs/Toybox/Complications/Complication/#value-var) | A string or numeric value describing the value to be displayed to the user | `4.2.0` |
+| [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) |发布的[Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)类型数据类型的唯一标识符| 4.2.0 |
+| [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) |长标签是用于配置菜单中显示的.| 4.2.0 |
+| [Complication.ranges](/connect-iq/api-docs/Toybox/Complications/Complication/#ranges-var) |选项数值阵列. 范围允许将可集成到显示器中的数值组分解.| 4.2.0 |
+| [Complication.shortLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#shortLabel-var) |五个字符的字符串旨在总结你的复杂性为一个半径复杂性.| 4.2.0 |
+| [Complication.unit](/connect-iq/api-docs/Toybox/Complications/Complication/#unit-var) |如果这是`null`则该单元不应该显示.如果这是`UNIT`标识符,则`value`预计将在特定的单元中进行转换.如果`unit`是字符串,则`value`应在没有转换的情况下解释.| `4.2.0` |
+| [Complication.value](/connect-iq/api-docs/Toybox/Complications/Complication/#value-var) |列或数字值,描述向用户显示的值| `4.2.0` |
 
-You can query additional information with these accessors:
+您可以使用这些配件查询更多信息:
 
 | Method | Description | API Level |
 | --- | --- | --- |
-| [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) | For Connect IQ complications, query the icon provided by the app | 4.2.0 |
-| [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) | For native complications, returns the `COMPLICATION_TYPE`. Will return `COMPLICATION_TYPE_INVALID` for Connect IQ complications. | 4.2.0 |
+| [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) |对于 Connect IQ 复杂性,请查询应用程序提供的图标| 4.2.0 |
+| [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) |对于本土的并发症,返回`COMPLICATION_TYPE`.将返回`COMPLICATION_TYPE_INVALID`连接智商并发症.| 4.2.0 |
 
 ### Units
 
-Complications are allowed to publish information in units that are configurable by the user in their system settings. When receiving complication values, it is the subscriber's role to convert the value to the metric specified in system settings.
+复杂性允许在用户在系统设置中配置的单位中发布信息.在收到复杂性值时,用户的角色是将值转换为系统设置中指定的指标.
 
-Units should be expected to be published as the following:
+预计单位将以以下方式公布:
 
-| Unit | Expected Value |
+| Unit |预期价值|
 | --- | --- |
 | [`Complications.UNIT_DISTANCE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters |
 | [`Complications.UNIT_ELEVATION`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Meters |
@@ -53,7 +53,7 @@ Units should be expected to be published as the following:
 | [`Complications.UNIT_TEMPERATURE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Degrees Celsius |
 | [`Complications.UNIT_WEIGHT`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | Grams |
 
-## Subscribing to Complications
+## 订阅复杂性
 
 To subscribe to a complication 您需要 add the `ComplicationSubscriber` permission to your manifest file. Subscribing to Complications requires the [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/). You can use [Complications.getComplications()](/connect-iq/api-docs/Toybox/Complications/#getComplications-instance_function) to query the all complications supported by the system. You can also query a native complication directly by constructing a [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) explicitly:
 
@@ -63,9 +63,9 @@ var complication = Complications.getComplication(
 );
 ```
 
-This only works for native complications. Once you have the complication id, you can persist the id in storage for later use.
+这只适用于本土的并发症. 一旦您获得了并发症ID,您可以保留存储的ID以后使用.
 
-You can use [Complications.registerComplicationChangeCallback()](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function) to subscribe to multiple complication values. All subscriptions are terminated when your app shuts down and must be re-done when your app is launched. When you subscribe, you register a callback to be called when the value updates:
+您可以使用[Complications.registerComplicationChangeCallback()](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function)订阅多个复杂值.当应用程序关闭时,所有订阅都会终止,并且必须在应用程序启动时重新完成.
 
 ```typescript
 function onStart(params as Dictionary) as Void {
@@ -82,7 +82,7 @@ function onStart(params as Dictionary) as Void {
 }
 ```
 
-In your callback, you can then query the updated information and process it:
+在回调中,您可以查询更新的信息并处理:
 
 ```typescript
 function onComplicationChanged(
@@ -104,11 +104,11 @@ function onComplicationChanged(
 
 If the complication is no longer available, for example the user has uninstalled the publishing app, 系统将 throw a [Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/). You should trap this exception and handle it within your app. If a publishing app is uninstalled, 系统将 send an event to your `ComplicationChangeCallback` and automatically unsubscribe your app from any subscribed complications.
 
-When wheelchair mode is enabled, `COMPLICATION_TYPE_STEPS` and `COMPLICATION_TYPE_FLOORS_CLIMBED` are replaced with `COMPLICATION_TYPE_WHEELCHAIR_PUSHES`.
+当轮椅模式启用时,`COMPLICATION_TYPE_STEPS`和`COMPLICATION_TYPE_FLOORS_CLIMBED`将被`COMPLICATION_TYPE_WHEELCHAIR_PUSHES`取代.
 
-### Hold to Launch
+### 保持发射
 
-Some Connect IQ products have a feature where pressing and holding on a complication launches the associated app. You can add this functionality to your watch face by implementing the [WatchFaceDelegate.onPress()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function) method:
+一些Connect IQ产品有一个功能,按下并保持一个复杂的功能,启动相关的应用程序.你可以通过实施[WatchFaceDelegate.onPress()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function)方法,将此功能添加到你的手表面:
 
 ```typescript
 function onPress(clickEvent as ClickEvent) as Boolean {
@@ -129,7 +129,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 }
 ```
 
-If your complication publisher is launched via hold to launch, the `state` dictionary parameter of your will have the option `:launchedFromComplication` set to the complication id that triggered the launch.
+如果您的复杂性发布器通过等待启动启动,则您的`state`字典参数将设置`:launchedFromComplication`选项为启动的复杂性 id.
 
 ## Publishing Complications
 
@@ -159,18 +159,18 @@ If your complication publisher is launched via hold to launch, the `state` dicti
 </complications>
 ```
 
-The `complication` element has the following attributes:
+`complication`元素具有以下属性:
 
 | Attribute | Description | Required | API Level |
 | --- | --- | --- | --- |
-| `id` | Numerical identifier from 0 - 255. Keep this value stable across versions. Changing this value between versions will impact apps consuming your complication when your app updates. | Yes | 4.2.0 |
+| `id` |在版本中保持这个值稳定.在版本之间更改这个值将会影响应用程序,当应用程序更新时消耗您的复杂性.| Yes | 4.2.0 |
 | `access` | `public`, `protected`, or `private` | Yes | 4.2.0 |
-| `longLabel` | A descriptive title for your complication value. | Yes | 4.2.0 |
-| `shortLabel` | A short string for apps that are displaying your complication as a radial complication. | No | 4.2.0 |
-| `icon` | A resource identifier for the icon you want to associate with this complication. The specified resource must be an `svg` if your access is `public` or `protected`. The icon cannot be changed at runtime. | Yes | 4.2.0 |
-| `glancePreview` | A Boolean value. When users place your glance into a glance folder, you can identify one of your complications to be used as the preview value. Only one of your complications can be demarked as a preview. | No | 4.2.0 |
+| `longLabel` |描述你的复杂性值.| Yes | 4.2.0 |
+| `shortLabel` |对于显示您的复杂性为辐射复杂性的应用程序来说,一个短字符串.| No | 4.2.0 |
+| `icon` |您想要与这个复杂性联系的图标的资源识别器. 如果您访问的是`public`或`protected`则,所指定的资源必须是`svg`. 运行时无法更改图标. X| Yes | 4.2.0 |
+| `glancePreview` |布尔值.当用户把你的眼睛放进一个眼睛文件时,你可以识别一个你的复杂性作为预览值.只有一个你的复杂性可以作为预览区分.| No | 4.2.0 |
 
-Using the `access` attribute, you can control if your complications are visible to just apps with your developer key, all apps, and Face It or all of the above:
+通过使用`access`属性,您可以控制您的并发症是否只能通过开发者键,所有应用程序,以及面对它或以上所有应用程序看到:
 
 | Access | Your Apps | Face It | All Apps |
 | --- | --- | --- | --- |
@@ -178,17 +178,17 @@ Using the `access` attribute, you can control if your complications are visible 
 | `protected` | X | X |  |
 | `private` | X |  |  |
 
-The required `faceIt` element allows you to provide information for Face it:
+要求的`faceIt`元素允许您提供面对它的信息:
 
 | Attribute | Description | Required | API Level |
 | --- | --- | --- | --- |
-| `defaultText` | This will be shown in Face It as the name of the complication. | Yes | 4.2.0 |
+| `defaultText` |这将在"面对它"中显示为复杂性的名称.| Yes | 4.2.0 |
 
-The optional `range` element allows you to provide an ordered set of numeric values that define different ranges for your value.
+选择性`range`元素允许您提供一个顺序的数值集合,定义您的值的不同范围.
 
 ## Publishing Values
 
-Once your complication is defined, you can use the [Complications.updateComplication()](/connect-iq/api-docs/Toybox/Complications/#updateComplication-instance_function) function to publish data:
+一旦您的复杂性定义,您可以使用[Complications.updateComplication()](/connect-iq/api-docs/Toybox/Complications/#updateComplication-instance_function)函数发布数据:
 
 ```typescript
 var data = {
@@ -213,16 +213,16 @@ Complications.updateComplication(0, data);
 
 ## Face It Complications
 
-Publishing a complication as `public` allows Face It to integrate your complication. It will always display your complication icon, and will use the following rules to display your complication value:
+发布一个复杂性为`public`允许Face It整合您的复杂性.它将始终显示您的复杂性图标,并将使用以下规则显示您的复杂性值:
 
-| If units are... | ...then value is expected to be... | ...and will be displayed as... |
+|如果单位是...|...那么价值预计是...|...并将被显示为...|
 | --- | --- | --- |
-| `Complications.UNIT_*` type besides `Complications.UNIT_INVALID` | A numerical value | A numerical value converted from the default units defined for the unit type to the system units with the appropriate unit abbreviation. |
-| String | A numerical value | A numerical value with the string units appended. |
-| [`Complications.UNIT_INVALID`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or `null` | A numerical or string value | A numerical or string value will be displayed without conversion and without any units appended. |
+| `Complications.UNIT_*` type besides `Complications.UNIT_INVALID` |一个数值|从单位类型所定义的默认单元转换为适当单元缩写的系统单元的数值.|
+| String |一个数值|一个数字值,附带了字符串单位.|
+|[`Complications.UNIT_INVALID`](/connect-iq/api-docs/Toybox/Complications/#Unit-module)或`null`|一个数值或字符串值|没有转换和没有任何单元附加的数值或字符串值将显示.|
 
 Some best practices:
 
--   Make sure your Face It icon is high contrast and will appear well in both light and dark mode in mobile.
+- 确保您的Face It图标具有高对比度,并且在移动中将在光和暗模式中显示得很好
 
--   Use Latin characters (A-Z, a-z, 0-9) for published complication strings.
+- 在发表的复杂字符串中使用拉丁字母 (A-Z,一个-z,0-9)

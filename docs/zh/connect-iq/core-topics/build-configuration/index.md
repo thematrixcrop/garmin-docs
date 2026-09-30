@@ -3,88 +3,88 @@ title: "Build Configuration"
 ---
 # Build Configuration
 
-Connect IQ supports a wide variety of Garmin devices, like watches, bike computers and handhelds. Even within these broader categories, devices can have different screen sizes, shapes and resolutions. Application developers may wish to define specific resources, like fonts and bitmap graphics, for certain devices or device families for a better user experience. For example, an app may need to use a round background image for round devices and a square background image for square devices.
+连接IQ支持各种Garmin设备,如手表,自行车电脑和手持电脑.即使在这些更广泛的类别内,设备也可以具有不同的屏幕尺寸,形状和分辨率.应用程序开发人员可能希望为某些设备或设备家庭定义特定资源,如字体和位图图形,以获得更好的用户体验.例如,应用程序可能需要使用圆形设备的圆形背景图像和方形设备的方形背景图像.
 
-Connect IQ offers a few ways to manage app resources: device and family qualifiers, Jungles and build exclusions.
+连接智商提供管理应用资源的一些方法:设备和家庭资格,林和构建排斥.
 
 ## Device, Family, and 本地化 Qualifiers
 
 The simplest way to override resources is with device, family, and localization qualifiers, which are added to a resources folder by adding a hyphen (`-`) followed by a valid qualifier value. Let's take a look at an 示例：
 
-Figure 1. Figure 1: A project that uses a fēnix 5 device resource qualifier
+图1.图1:使用fēnix 5设备资源资格的项目
 
 ![](/connect-iq/resources/programmers-guide/qualifier-project.png)
 
-In Figure 1, the `resources-fenix5` directory uses a `-fenix5` qualifier to segregate resources specifically intended for the fēnix 5. When this project is built for fēnix 5, the layout and drawable in the `resources-fenix5` directory will be used to display a different background image than the one in the more generic `resources` directory. All other supported products will compile with the default resources.
+在图1中,`resources-fenix5`目录使用`-fenix5`资格分类专门用于fēnix5的资源.当这个项目为fēnix5构建时,`resources-fenix5`目录中的布局和绘制可用于显示与更通用的`resources`目录中不同的背景图像.所有其他支持产品将与默认资源进行编译.
 
-**Note:** Multiple qualifiers separated by hyphens may be used on a single folder, but device qualifiers are not allowed to co-exist with family qualifiers in the same folder name (e.g. `resources-round-fenix3`) and will be skipped by the resource compiler if encountered.
+** 注:** 单个文件上可以使用通过字符串分开的多个资格,但设备资格不允许与相同文件名称的家庭资格共存 (例如`resources-round-fenix3`)) ,如果遇到,资源编译器将会跳过.
 
 ### Device Qualifiers
 
-The device qualifier format allows for resources to target specific devices (as demonstrated in Figure 1). Resources included in a folder with a device qualifier will override the resources with the same ID that are defined in the base resource folder when building for the associated device. Device qualifiers also take precedence over less specific qualifiers, such as family qualifiers.
+设备资格格格式允许资源针对特定设备 (如图1所示).包含设备资格格的文件中的资源将在构建相关设备时覆盖基础资源文件中定义的相同ID的资源.设备资格也优先于较少特定的资格,如家庭资格.
 
 ### Family Qualifiers
 
-The family qualifier format allows for resources to target specific device families, which is a group of devices differentiated by shared screen characteristics. There are two family qualifiers:
+家庭资格格格式允许资源针对特定设备家庭,这是由共享屏幕特性区分的设备组.有两个家庭资格:
 
--   **Screen shape:** The shape of the screen (e.g. `round`, `rectangle`, etc.)
+- **屏幕形状:**屏幕的形状 (例如`round`,`rectangle`等)
 
--   **Screen size:** The physical size of the screen in pixels ( e.g. `218x218`, `148x205`, etc.)
-
-
-The screen shape must always be specified when using a family qualifier, and the screen size may be added to further refine the target family. Here are some examples of valid and invalid family qualifier examples:
-
--   `resources-round`: *Valid*—targets round screen devices, like the fēnix 3 series and fēnix 5 series
-
--   `resources-round-218x218`: *Valid*—targets 218px x 218px, round screen screen devices, like the fēnix 3 and fēnix 5S (but not the 5 or 5X since they have 240px x 240px screens)
-
--   `resources-218x218`: *Invalid*—this will be ignored by the resource compiler because no screen shape has been specified
-
--   `resources-218x218-round`: *Invalid*—the screen shape was not specified first
+- **屏幕尺寸:** 屏幕的物理尺寸在像素中 (例如`218x218`,`148x205`等)
 
 
-Resources with more specific qualifiers will always take precedence over less specific ones, so on a round, 218px x 218px device, any resources contained in the `resources-round-218x218` resources folder will be used in place of those in `resources-round` if they share an ID. In addition any resource folder that carries a family qualifier will always defer to resource folders named with device qualifiers.
+在使用家庭资格表示器时,必须总是指定屏幕形状,并且可以添加屏幕大小以进一步完善目标家庭.以下是一些有效和无效的家庭资格表示器示例:
+
+-`resources-round`: *有效*针对圆屏设备,如Fēnix3系列和Fēnix5系列
+
+-`resources-round-218x218`: *有效*目标218px x 218px,圆屏设备,如fēnix 3和fēnix 5S (但不是5或5X,因为它们有240px x 240px的屏幕)
+
+-`resources-218x218`: *无效*资源编译器会忽略这个,因为没有指定屏幕形状
+
+-`resources-218x218-round`: *无效*屏幕形状未被先指定
+
+
+具有更具体的资格的资源总是优先于更少的资格,因此在一个圆形的218px x218px设备上,任何包含在`resources-round-218x218`资源文件中的资源都会被使用,如果它们共享ID.此外,任何载有家庭资格的资源文件将总是转移到设备资格的资源文件.
 
 ### 本地化 Qualifiers
 
 本地化 qualifiers are a way to specify language-specific string resources, and are specified as an [ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php). These qualifiers may be combined with either device or family qualifiers, and are always specified last in the qualifier naming scheme. For 示例：
 
--   `resources-fre`: Provides French language-specific string resources for all devices
+-`resources-fre`:为所有设备提供法语语言特定的字符串资源
 
--   `resources-round-fre`: Provides French language-specific string resources for round devices only
+-`resources-round-fre`:仅为圆形设备提供法语特定字符串资源
 
--   `resources-fenix5s-fre`: Provides French language-specific string resources for fēnix 5 devices only
+-`resources-fenix5s-fre`:仅为fēnix 5设备提供法语特定字符串资源
 
 
 ## Build Configuration via Jungles
 
-Connect IQ runs on a diverse set of purpose built devices. Because of the variety of inputs, screen shapes and resources, it often is necessary to include code and resources tailored to specific conditions. For example, on a square device a progress bar may be rectangular, but on a round device it might look better as an arc that orbits the screen.
+连接智商运行在各种目的构建设备上.由于输入,屏幕形状和资源的多样性,通常需要包含针对特定条件的代码和资源.例如,在一个方形设备上,进步可能是矩形,但在一个圆的设备上,它可能看起来更好,像一个围绕屏幕的弧形.
 
-Jungles allow developers to write custom build configurations for Monkey C projects. With Jungles, developers may:
+林允许开发人员为子C项目编写自定义构建配置.
 
--   Define per-device or per-device family paths to source and resource directories
+- 定义每个设备或每个设备的源和资源目录的家庭路径
 
--   Exclude portions of source code with annotations
+- 排除注释的源代码部分
 
--   Specify [Monkey Barrels](/connect-iq/core-topics/shareable-libraries/#shareable-libraries) that should be included when a project is built.
+- 指定项目建设时应包含的[Monkey Barrels](/connect-iq/core-topics/shareable-libraries/#shareable-libraries).
 
 
 ### Per Device Configuration
 
-Jungles allow for the source path, resource path and exclusions to be set for all products, by screen shape, or for particular products. The following prefixes are allowed:
+林允许对所有产品,屏幕形状或特定产品设置源路径,资源路径和排斥.
 
 | Name | Description |
 | --- | --- |
-| `base` | Configuration applies to all products |
-| `round` | Configuration applies to products with round screens |
-| `semiround` | Configuration applies to products with semi-round screens |
-| `rectangle` | Configuration applies to products with rectangle or square screens |
-| `semioctagon` | Configuration applies to products with octagon screens with sub-window |
-| `<product id>` | Configuration applies to a specific product. `<product id>` is the same as what is used in the manifest file |
+| `base` |配置适用于所有产品|
+| `round` |配置适用于圆屏产品|
+| `semiround` |配置适用于半圆屏幕的产品|
+| `rectangle` |配置适用于矩形或方形屏幕的产品|
+| `semioctagon` |配置适用于具有子窗口的八角屏幕的产品|
+| `<product id>` |配置适用于特定产品.`<product id>`与表格文件中使用的相同|
 
-For `round`, `semiround`, `semi-octagon`, and `rectangle` identifiers, an optional `-<width>x<height>` suffix can be added for narrow the scope.
+对于`round`,`semiround`,`semi-octagon`和`rectangle`标识符,可添加可选的`-<width>x<height>`后音,以缩小范围.
 
-Let's say you are writing a wearable app that has different resources for round, semi-round and rectangle layouts. The Venu has a AMOLED specific implementation as well. Jungles make it easy to manage project build configurations in one place:
+假设您正在编写一个可穿戴的应用程序,该应用程序为圆形,半圆形和矩形布局提供不同的资源. Venu 还有一个AMOLED特定的实现. 林让在一个地方更容易管理项目构建配置:
 
 ```
 base.sourcePath = source
@@ -99,11 +99,11 @@ venu.sourcePath = $(base.sourcePath);source-venu
 venu.resourcePath = $(base.resourcePath);resource-venu
 ```
 
-These instructions set the source path for all devices to `source`. It tells the build system to use the `resource-round`, `resource-semiround` and `resource-rectangle` paths for the round, semi-round and rectangle the devices respectively. Finally, the Venu has an additional source and resource folders added.
+这些指令将所有设备的源路径设置为`source`. 它告诉构建系统分别使用圆,半圆和矩形的`resource-round`,`resource-semiround`和`resource-rectangle`路径.最后,Venu增加了额外的源和资源文件.
 
 ### Feeling Excluded
 
-Now, let's say that we have some code in our application that should only be run on round products, and all the non-round products should use the "regular" version:
+现在,假设我们在应用程序中有一些代码只应该运行在圆形产品上,
 
 ```typescript
 (:roundVersion)
@@ -117,7 +117,7 @@ function drawThis(dc) {
 }
 ```
 
-We don't want to include both versions in any executable because one version would just be dead code. Jungles allow us to specify this using exclusions.
+我们不想将这两个版本都包含在任何可执行的版本中,因为其中一个版本只是死码. 林允许我们使用排除来指定这一点.
 
 ```bash
 # Say that all products exclude declarations
@@ -128,6 +128,6 @@ base.excludeAnnotations = roundVersion
 round.excludeAnnotations = regularVersion
 ```
 
-When building the app for a product, round products will exclude the version of `drawThis` with the `:regularVersion` annotation, and the rest of the products will exclude the version of `drawThis` with the `:roundVersion` annotation.
+在构建产品应用程序时,圆型产品将排除`drawThis`的版本与`:regularVersion`注释,其余的产品将排除`drawThis`的版本与`:roundVersion`注释.
 
-For more information on how to use Jungles see the [Jungle Reference Guide](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide).
+更多关于如何使用林的信息请参阅[Jungle Reference Guide](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide).

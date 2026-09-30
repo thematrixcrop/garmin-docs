@@ -3,11 +3,11 @@ title: "Unit 测试"
 ---
 # Unit 测试
 
-The Connect IQ SDK has Run No Evil, an automated unit testing framework found in the Test module. Run No Evil operates only within the Connect IQ simulator and provides the ability to add asserts and unit test methods to your app.
+连接智商SDK有 Run No Evil,这是测试模块中发现的自动化单元测试框架. Run No Evil仅在 Connect IQ模拟器内运行,并为您的应用程序提供添加断言和单元测试方法的能力.
 
 ## Asserts
 
-Asserts are a useful way to check for conditions at critical points in your code and will always execute when your app is launched in the simulator. For example, if your app always expects the value of x and y to not be equal:
+断言是检查代码的关键点条件的有用方法,并且在模拟器中启动应用时将始终执行.例如,如果你的应用程序总是期望x和y的值不等:
 
 ```typescript
 import Toybox.Test;
@@ -20,7 +20,7 @@ function onShow() {
 }
 ```
 
-The code above produces the following output in the console when the app is run in the Simulator:
+当应用程序在模拟器中运行时,上面的代码会产生下列输出:
 
 ```bash
 Device Version 0.1.0
@@ -29,29 +29,29 @@ Shell Version 0.1.0
 ASSERTION FAILED: x and y are equal!
 ```
 
-Assert code requires no special compiler commands to execute within the simulator, and are removed by the compiler when building release code. Run No Evil has four different assert flavors:
+断言代码不需要在模拟器内执行任何特殊的编译命令,并且在构建发布代码时被编译器删除. 运行无恶有四种不同的断言口味:
 
 | Function | Description |
 | --- | --- |
-| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) | Assert throws an exception if the test is false |
-| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) | Assert throws an exception and outputs a message if the test is false |
-| [Test.assertNotEqual()](/connect-iq/api-docs/Toybox/Test/#assertNotEqual-instance_function) | Throws an exception if value1 and value2 are not equal |
-| [Test.assertNotEqualMessage()](/connect-iq/api-docs/Toybox/Test/#assertNotEqualMessage-instance_function) | Throws an exception and outputs a message if value1 and value2 are not equal |
+| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该断言会产生例外|
+| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该声明会产生异常,并输出信息.|
+| [Test.assertNotEqual()](/connect-iq/api-docs/Toybox/Test/#assertNotEqual-instance_function) |如果值1和值2不等等,则抛出例外|
+| [Test.assertNotEqualMessage()](/connect-iq/api-docs/Toybox/Test/#assertNotEqualMessage-instance_function) |如果值1和值2不等等,则会抛出一个例外并输出一个消息|
 
 ## Unit Tests
 
-Unit tests are a great way to check discrete pieces of your app for pass/fail criteria. Each test is run independently, so if a test fails or causes a crash, the test will be marked as a failed test and the next test will automatically be executed. This allows an entire suite of tests to be run with a single command in an automated fashion.
+单元测试是检查您的应用程序的分别部分通过/失败标准的好方法.每个测试都是独立运行的,所以如果测试失败或导致崩,测试将被标记为失败的测试,下一次测试将自动执行.这允许使用单个命令自动运行整个测试组.
 
-Unit tests are written mostly like any other class, module, or function in Monkey C, but have the following requirements:
+单元测试主要与子C中任何其他类,模块或函数一样,但具有以下要求:
 
--   Tests methods must be marked with the `:test` annotation
+- 测试方法必须标记为`:test`注释
 
--   Test methods must take a [Test.Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object
+- 测试方法必须采用[Test.Logger](/connect-iq/api-docs/Toybox/Test/Logger/)对象
 
--   Tests methods that are not global (part of a test class or custom test module) must be static methods
+- 不是全球性的测试方法 (作为测试类或定制测试模块的一部分) 必须是静态方法
 
 
-Here is a simple example of a unit test method:
+以下是一个单元测试方法的简单例子:
 
 ```typescript
 // Unit test to check if 2 + 2 == 4
@@ -71,19 +71,19 @@ The unit tests include a handy logger with different logging levels for more mea
 -   [Logger.error()](/connect-iq/api-docs/Toybox/Test/Logger/#error-instance_function)
 
 
-While unit tests are defined in program source code, they are not included in debug or release executables.
+虽然单元测试在程序源代码中定义,但它们不包含在调试或释放执行式中.
 
-### Running Unit Tests from the Monkey C Extension
+###从子C扩展的运行单元测试
 
-The Monkey C Extension Test Explorer provides a powerful user interface for executing unit tests on your application. You can initiate the test explorer by clicking on the test tube icon on the left. When you start the test explorer, it will enumerate all tests in the code and list them by the module and class they belong to. You can configure which products you want to test by right clicking on an element and selecting *Configure Devices*.
+子C扩展测试探险器为您的应用程序执行单元测试提供了强大的用户界面.您可以通过点击左边的测试管图标启动测试探险器.当您启动测试探险器时,它将列出所有测试在代码中,并按它们属于的模块和类别列出它们.您可以通过右键点击一个元素并选择 *配置设备*来配置您想测试的产品.
 
-Hitting the play button on a list element will run that test or the collection of tests contained by that element. The test output will be directed to the *Test Results* tab next to the terminal section.
+按一下列表元素的播放按将运行该测试或该元素所包含的测试集合.测试输出将转向终端部分旁边的*测试结果* tabb.
 
-### Running Unit Tests from the Command Line
+####从指挥线执行单位测试
 
-If you want to run unit tests on your application, build the app with the `--unit-test` flag on the build command to compile with unit tests. It's usually easiest to copy and paste the build command from the Visual Studio Code console and add the unit test flag. Then use the `connectiq` script in your SDK's bin directory to launch the simulator from the terminal (no arguments required), and use the `monkeydo` script in your SDK's bin directory with the `/t` flag to run the app with unit tests enabled - `monkeydo.bat path\to\projects\bin\MyApp.prg /t`
+如果您想在应用程序上运行单元测试,请使用构建命令上的`--unit-test`旗构建该应用程序,以编译单元测试.通常最容易将构建命令从视觉工作室代码控制台复制和粘贴,并添加单元测试旗.然后使用 SDK 的垃圾桶目录中的`connectiq`脚本来从终端启动模拟器 (不需要参数),并使用 SDK 的垃圾桶目录中的`monkeydo`脚本,以`/t`旗运行该应用程序,启用单元测试 -`monkeydo.bat path\to\projects\bin\MyApp.prg /t`
 
-You may also supply a function name after `/t` to run the test associated with a single function. The sample unit test above produces the following output in the console:
+您也可以在`/t`之后提供一个函数名称,以运行与单个函数相关的测试.上面的样本单元测试在控制台中产生以下输出:
 
 ```bash
 Device Version 0.1.0
@@ -103,6 +103,6 @@ Connection Finished
 Closing shell and port
 ```
 
-If you want to run tests in your [monkey barrel](/connect-iq/core-topics/shareable-libraries/#shareable-libraries), you can use the `barreltest` script. It supports the [same options](/connect-iq/monkey-c/compiler-options/#compiler-options) as the compiler, but can output a PRG that can be used by the test system.
+如果你想在[monkey barrel](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)中运行测试,你可以使用`barreltest`脚本.它支持[same options](/connect-iq/monkey-c/compiler-options/#compiler-options)作为编译器,但可以输出一个可以被测试系统使用的PRG.
 
-Unit test code will not execute unless the compiler is explicitly told to run unit tests. All test code is automatically removed at compile time when your app is exported for use on devices.
+除非编译器明确被告知运行单元测试,否则单元测试代码不会执行.所有测试代码都会在编译时自动删除,当您的应用程序出口用于设备上使用时.

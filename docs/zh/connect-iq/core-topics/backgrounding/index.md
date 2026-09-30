@@ -5,33 +5,33 @@ title: "Background Services"
 
 *Since API level 2.3.0*
 
-Applications can register for background services. Services can be registered to run when various events occur. These events include when the user reaches goal targets, when sleep and wake times occur, when a steps threshold is reached, or at a scheduled time. Modules available to background processes differ from those of their parent application.
+应用程序可以注册背景服务. 服务可以在各种事件发生时注册运行. 这些事件包括当用户达到目标目标时,当睡眠和觉醒时间发生时,当达到步骤门时,或在规定的时间.背景流程可用的模块与其母应用程序的不同.
 
-Services may be terminated at any time free memory for foreground applications. Services will also be terminated automatically if the do not exit properly within 30 seconds of opening.
+服务可在任何时候终止前景应用程序的自由内存. 如果在开放后30秒内服务不出正确,则也将自动终止.
 
-## Registering for Events
+## 报名活动
 
-When your application runs you can register for events your application can subscribe to by using calls in the [Toybox.Background](/connect-iq/api-docs/Toybox/Background/) module.
+在您的应用程序运行时,您可以通过使用[Toybox.Background](/connect-iq/api-docs/Toybox/Background/)模块的呼叫进行注册,以参加活动.
 
-| Event | Description | Register With | API Level |
+| Event | Description |登记| API Level |
 | --- | --- | --- | --- |
-| Activity Completed | Wakes your background service when the user completes an activity | [Background.registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) | 3.1.0 |
-| Goal | Wakes your background service when the user meets one of their activity goals | [Background.registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) | 2.3.0 |
-| OAUTH Response | Wakes your background service when the user completes the OAUTH flow | [Background.registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function) | 2.3.0 |
-| Phone App Message | Wakes your background service when your app receives a message from the Mobile SDK | [Background.registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function) | 3.2.0 |
-| Sleep | Wakes your background service at the time the user has configured as their sleep time | [Background.registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function) | 2.3.0 |
-| Steps | Wakes your background service every 1000 steps taken by the user | [Background.registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function) | 2.3.0 |
-| Temporal | Allows your service to be woken at a specific time or repeatedly at a certain interval (up to every five minutes) | [Background.registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) | 2.3.0 |
+| Activity Completed |当用户完成活动时,唤醒您的背景服务| [Background.registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) | 3.1.0 |
+| Goal |当用户达到其活动目标之一时,唤醒您的背景服务| [Background.registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) | 2.3.0 |
+| OAUTH Response |当用户完成OAUTH流时,唤醒您的背景服务| [Background.registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function) | 2.3.0 |
+| Phone App Message |当应用程序从移动 SDK 收到消息时,会唤醒您的背景服务| [Background.registerForPhoneAppMessageEvent()](/connect-iq/api-docs/Toybox/Background/#registerForPhoneAppMessageEvent-instance_function) | 3.2.0 |
+| Sleep |唤醒您的背景服务,用户设置的时间作为他们的睡眠时间| [Background.registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function) | 2.3.0 |
+| Steps |唤醒您的背景服务每1000个用户所做的步骤| [Background.registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function) | 2.3.0 |
+| Temporal |允许您的服务在特定时间或在特定的间隔中重复被唤醒 (最多每五分钟).| [Background.registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) | 2.3.0 |
 
-## Making a `ServiceDelegate`
+##做一个`ServiceDelegate`
 
-When background services are started, the [AppBase.getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function) is called. This method returns a [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) and the method corresponding to the event that triggered is invoked. Once a background service has finished any necessary tasks, it should exit using the [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) method. This method takes a argument containing data to be sent to the main process. Use null to provide no data.
+当启动后台服务时,调用[AppBase.getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function).这种方法返回[System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)并调用相应于触发事件的方法.一旦后台服务完成了任何必要任务,它应该使用[Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)方法退出.这种方法需要一个包含数据的参数,以将数据发送到主过程中.使用 null来提供没有数据.
 
 ### Application Scope
 
-Background services are allowed to run at any time, including while the user is in an activity. In order to achieve this, the memory pool made available to background services is much smaller than what is available for the application. In many instances, the executable code of your application will be larger than the memory pool available.
+背景服务可以随时运行,包括用户在活动中.为了实现这一目标,背景服务可用的内存库比应用程序可用的小得多.在许多情况下,应用程序的可执行代码将比可用的内存库大.
 
-The Connect IQ compiler allows you to select what code is necessary for running in the background with the `:background` annotation. Only modules, classes, functions and member variables decorated with the `:background` annotation will be compiled into your background service. This means you must decorate all related code with the annotation (including your Application class).
+连接 IQ 编译器允许您选择使用`:background`注释在背景中运行所需的代码.只有装饰`:background`注释的模块,类,函数和成员变量将被编译到您的背景服务中.这意味着您必须用注释装饰所有相关代码 (包括您的应用程序类).
 
 ```typescript
 import Toybox.Application;
@@ -84,4 +84,4 @@ The resource compiler can control the scope level of your resources as well. See
 
 ## Simulating Background Services
 
-In the Connect IQ simulator, an option has been added under the Simulation menu, which allows manually triggering background services. When manually triggering a service, the background service for the most recently run application will be loaded, and the corresponding call in the [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) will be triggered regardless of whether the application has registered for that event.
+在Connect IQ模拟器中,在模拟菜单中添加了一个选项,允许手动启动后台服务.手动启动服务时,将加载最近运行的应用程序的后台服务,无论应用程序是否已注册该事件,[System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)中的相应调用将启动.

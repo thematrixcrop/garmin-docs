@@ -3,11 +3,11 @@ title: "Properties and Settings"
 ---
 # Properties and Settings
 
-The app settings framework enables app developers to present options to end users for their apps within Garmin Connect and Garmin Express. This will allow app customization and setup, especially for watch faces and data fields, that have no way to receive user input on Garmin devices.
+应用程序设置框架使应用程序开发人员能够在Garmin Connect和Garmin Express中向终端用户展示其应用程序的选项.这将允许应用程序的定制和设置,特别是对于手表面和数据字段,这些应用程序无法在Garmin设备上接收用户输入.
 
 ## Properties
 
-An app property is a key and value that is built into the app at compile time. Properties are defined in application resources, and follow the rules of resource overrides.
+应用程序属性是编译时内置在应用程序中的关键和值.属性在应用程序资源中定义,并遵循资源覆盖规则.
 
 ```xml
 <properties>
@@ -15,31 +15,31 @@ An app property is a key and value that is built into the app at compile time. P
 </properties>
 ```
 
-The `id` is a string identifier. The `type` must be one of the following:
+`id`是一个字符串识别符.`type`必须是以下一个:
 
 | Value | Notes |
 | --- | --- |
 | `number`, `long`, `float`, `double` | Numeric values |
-| `boolean` | Boolean value |
-| `string` | String value |
-| `array` | Array values cannot be initialized in properties, but defaults can be programmed in app settings |
+| `boolean` |布尔值|
+| `string` |字符串值|
+| `array` |在属性中不能初始化列值,但默认值可以在应用程序设置中编程|
 
-When your app is installed the properties are initialized to the values programmed into resources. The property values can be fetched and modified via the following APIs:
+当您的应用程序安装时,属性被初始化为编程为资源的值.通过以下API来获取和修改属性值:
 
 | API | Notes | API Level |
 | --- | --- | --- |
-| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) | Get a property by its name | 1.0.0 |
-| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) | Modify a property value | 1.0.0 |
-| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) | Get a property by its name | 2.4.0 |
-| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) | Modify a property value | 2.4.0 |
+| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) |得到一个名字的财产| 1.0.0 |
+| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) |修改一个财产值| 1.0.0 |
+| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) |得到一个名字的财产| 2.4.0 |
+| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) |修改一个财产值| 2.4.0 |
 
 ## Settings
 
-App settings allow the user to modify app properties using their mobile device. The app settings can be modified in the Connect IQ Store app, the Garmin Connect app, or Garmin Express.
+应用程序设置允许用户使用移动设备修改应用程序属性.应用程序设置可以在Connect IQ Store应用程序,Garmin Connect应用程序或Garmin Express中修改.
 
-An app setting is composed of a property and an associated setting. The property is used to store the underlying setting value. The setting is used to describe how the property should displayed to the end user. You can define a property as a default value and not define an associated setting but you cannot define a setting without tying it to a property.
+应用程序设置由一个属性和相关设置组成.该属性用于存储底层设置值.设置用于描述属性应该如何显示给最终用户.你可以定义一个属性为默认值而不能定义相关设置,但你不能定义一个设置没有将其绑定到一个属性.
 
-Settings are also defined as a resource. Use the `<setting>` tag to define a setting.
+设置也被定义为资源.使用`<setting>`标签来定义设置.
 
 ```xml
 <settings>
@@ -71,32 +71,32 @@ Settings are also defined as a resource. Use the `<setting>` tag to define a set
 </settings>
 ```
 
-The table below shows all of the valid attributes for a setting.
+下面的表显示了设置的所有有效属性.
 
 | Attribute | Value | Notes |
 | --- | --- | --- |
-| `propertyKey` | The key of the property that this setting will manage. An error will be thrown at compile time if the property key can't be found. | Required |
-| `title` | The title to display in Garmin Connect Mobile/Garmin Express when displaying the list of settings/value of the setting. This must reference a string resource ID. | Required |
-| `prompt` | The message to display when prompting the user to set the value. This must reference a string resource ID. | Optional. Some settings will not display a prompt even if it's provided (for example, `readonly` or `boolean` settings displayed as an on/off switch). |
-| `helpUrl` | A URL to a web page which will provide help for the user. **This has been deprecated.** | Optional |
-| `maxLength` | The maximum number of elements allowed in an array setting | Optional |
+| `propertyKey` |如果不能找到属性密钥,则在编译时会出现错误.| Required |
+| `title` |在 Garmin Connect Mobile/Garmin Express中显示设置列表/设置值时显示的标题. 这必须引用字符串资源ID.| Required |
+| `prompt` |当要求用户设置值时显示的消息. 这必须引用字符串资源ID.|选择性.即使提供提示,一些设置不会显示提示 (例如,`readonly`或`boolean`设置显示为开关开关).|
+| `helpUrl` |一个为用户提供帮助的网页URL. ** 这已过时使用. **| Optional |
+| `maxLength` |在数组设置中允许的最大元素数| Optional |
 
-A `<settingConfig>`, a child element of a `<setting>`, provides additional details about the setting. The valid attributes are given in the table below.
+一个`<settingConfig>`,是`<setting>`的子元素,提供了有关设置的额外细节.
 
 | Attribute | Value | Valid Values | Notes |
 | --- | --- | --- | --- |
-| `type` | The display type of the setting. | `list`, `boolean`, `numeric`, `alphaNumeric`, `phone`, `email`, `url`, `date` or `password` | A value of `list` will require child `<listEntry>` elements to define the options which should be available within the list. |
-| `readonly` | If the setting is read only or not. This attribute is valid for all types except `list` and `password`. | `true` or `false` | Optional. Defaults to `false`. |
-| `required` | If the field is required. | `true` or `false` | Optional. Defaults to `false`. |
-| `min` | The minimum value to allow. | An integer value | Optional. Only valid for a `type` value of `numeric` or `date`. |
-| `max` | The maximum value to allow. | An integer value | Optional. Only valid for a `type` value of `numeric` or `date`. |
-| `maxLength` | The maximum allowed value length. | An integer value | Optional. Only valid for settings whose associated property's type is `string`. |
-| `errorMessage` | An error message to display if the value a user enters isn't valid based on the `type`, `min`, `max` and `maxLength` values. | A reference to a string resource. |  |
-| `id` | In array settings, an identifier that is used to mark a field inside the object setting. | A string identifier | This is only used with array settings |
+| `type` |设置的显示类型.| `list`, `boolean`, `numeric`, `alphaNumeric`, `phone`, `email`, `url`, `date` or `password` |一个`list`值需要儿童`<listEntry>`元素来定义该列表中应提供的选项.|
+| `readonly` |如果设置仅读或不读. 这个属性适用于`list`和`password`除外.|`true`或`false`|默认的`false`.|
+| `required` |如果需要该字段.|`true`或`false`|默认的`false`.|
+| `min` |允许的最低值.|一个整数值|可选.仅适用于`type`值的`numeric`或`date`.|
+| `max` |允许的最大值.|一个整数值|可选.仅适用于`type`值的`numeric`或`date`.|
+| `maxLength` |允许的最大值长度.|一个整数值|可选.仅适用于与其相关属性类型为`string`的设置.|
+| `errorMessage` |如果一个用户输入的值不根据`type`,`min`,`max`和`maxLength`值进行有效显示的错误信息.|引用一个字符串资源.|  |
+| `id` |在数组设置中,用于标记对象设置内的字段的标识符.| A string identifier |这只用于阵列设置|
 
-`<settingConfig>` types are only valid for certain property types:
+`<settingConfig>`类型仅适用于某些属性类型:
 
-| Property Type | Valid `settingsConfig` Types |
+|房产类型| Valid `settingsConfig` Types |
 | --- | --- |
 | `string` | `alphaNumeric`, `phone`, `email`, `url`, `password` |
 | `number` | `list`, `numeric`, `date` |
@@ -105,19 +105,19 @@ A `<settingConfig>`, a child element of a `<setting>`, provides additional detai
 | `double` | `numeric` |
 | `boolean` | `boolean` |
 
-The `<listEntry>` element is defined in the table below. Its value must be a reference to a string resource.
+在下面表中定义了`<listEntry>`元素.它的值必须是引用字符串资源.
 
 | Attribute | Value | Notes |
 | --- | --- | --- |
-| `value` | The value to save if this item is selected by the user. | The type of the value should match the property it's being saved to. If it doesn't match a compile time error is thrown. |
+| `value` |如果用户选择了此项,则保存值.|如果它不匹配,则会出现编译时间错误.|
 
-See the [Object Store](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store) and [Application Properties](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties) on how to read these value at runtime.
+查看[Object Store](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store)和[Application Properties](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties)如何在运行时读取这些值.
 
 ### Groups
 
-The `<group>` tag allows settings to be grouped together. This lets you visually separate related settings from non-related ones. A group contains the settings it groups together. A group is not allowed to contain a group.
+`<group>`标签允许设置组合在一起. 这允许您视觉分离相关设置与非相关设置.一个组包含它组合的设置.一个组不允许包含一个组.
 
-Here is a simple example of a group definition:
+以下是一个简单的组定义例子:
 
 ```xml
 <settings>
@@ -133,22 +133,22 @@ Here is a simple example of a group definition:
 </settings>
 ```
 
-Here are the options for groups:
+以下是组选的选项:
 
 | Attribute | Values | Notes |
 | --- | --- | --- |
-| `id` | String | Identifier for the group |
-| `title` | String | Title for the group. This is shown as a list item in mobile. |
-| `description` | String | Description text for the group. This should describe the context of the group of settings |
-| `enableIfTrue` | Property identifier | Allows a group to be disabled if a `boolean` setting is not checked. This allows for settings to appear if the user enables a feature. |
+| `id` | String |组的标识符|
+| `title` | String |集团标题. 这是在移动中显示为列表项.|
+| `description` | String |组的描述文本.该文本应描述组设置的背景|
+| `enableIfTrue` | Property identifier |如果没有检查`boolean`设置,则可以禁用组.如果用户启用功能,则可以显示设置.|
 
 ### Array Settings
 
-There are times when it can be helpful to allow the user to manipulate one or more related items. For example, let's say that your app can support more than one kind of activity type, and each activity type has a different set of heart rate zones. The user may only have two or three activity types, but your app supports 50 different ones.
+有时允许用户操纵一个或多个相关项目是有帮助的.例如,假设你的应用程序可以支持多种类型的活动,每个类型的活动都有不同的心率区.用户可能只有两个或三个类型的活动,但你的应用程序支持50种不同的活动.
 
-Array settings allow you to define a set of settings that are added and removed as a group. This allows the user to create a variable list (up to a maximum size) of objects that can be read at runtime.
+阵列设置允许您定义作为组添加和删除的设置集. 这允许用户创建可在运行时间读取的对象变量列表 (最大尺寸).
 
-To create a variable list, the property referenced must be of type `array`. The setting definition is then a set of settings:
+为了创建变量列表,所引用的属性必须是`array`类型. 设置定义是设置的集合:
 
 ```xml
 <setting propertyKey="@Properties.ActivityHrZones" title="Activities" maxLength="4">
@@ -190,17 +190,17 @@ To create a variable list, the property referenced must be of type `array`. The 
 </setting>
 ```
 
-When you query the property, it will be an array of [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) objects, with each `id` key associated with the value. You can use `maxLength` to set an upper bound to the number of elements. Each `settingConfig` must have an `id` field.
+当你查询属性时,它将是一个由[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象组成的阵列,每个`id`键与值相关.你可以使用`maxLength`设置对元素数量的上限.每个`settingConfig`必须有一个`id`字段.
 
-The `<defaults>` tag allows you to program the initial value when your app is first installed. Each `<default>` tag must reference the identifier with the `id` attribute.
+每个`<default>`标签都必须引用使用`id`属性的标识符.
 
 ## Changing Settings Within Garmin Connect Mobile/Garmin Express
 
-End users will be able to view the settings you define within the Garmin Connect or Garmin Express UI. When app settings are changed while an app is running the [AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function) function is called. Apps can override this function and update accordingly. When dealing with date type settings that are set by Garmin Express or Garmin Connect, one should note that times are stored in UTC and that [Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function) should be used in place of [Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function) when working with such values to prevent unnecessary local time conversion.
+最终用户可以在Garmin Connect或Garmin Express UI中查看您定义的设置.当应用程序运行时改变应用程序设置时,会调用[AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)函数.应用程序可以取消此功能并相应更新.当处理由Garmin Express或Garmin Connect设置的日期类型设置时,应注意时间是存储在UTC中,并且在使用此类值时应使用[Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function)代替[Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function)以防止不必要的本地时间转换.
 
 ## 测试 App Settings
 
-An app settings editor tool is available within the Connect IQ simulator. Go to *File > Edit Persistent Storage > Edit Application.Properties data*. This tool will allow you to view the defined settings for a project, select values for each setting and send them to the simulator for testing.
+应用程序设置编辑工具可在Connect IQ模拟器中使用. 进入 *文件 > 编辑持久存储 > 编辑Application.Properties数据*. 该工具将允许您查看一个项目的定义设置,选择每个设置的值并将它们发送到模拟器进行测试.
 
 ![](/connect-iq/resources/programmers-guide/app_settings_editor.png)
 
@@ -208,8 +208,8 @@ An app settings editor tool is available within the Connect IQ simulator. Go to 
 
 *Since API level 3.2.0*
 
-Device applications, widgets, and audio content providers all accept user input that allow them to implement on-device settings in the app. Watch faces and data fields are not allowed to accept input or push views that would allow on device configuration.
+设备应用程序,小程序和音频内容提供商都接受用户输入,允许他们在应用程序中实现设备上的设置. 视频面孔和数据字段不允许接受设备配置的输入或推视图.
 
-If you want to provide an on-device settings user interface for your watch face or data field, you can implement [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function). [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function) functions similarly to [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) where you return a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) and [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) pair that can serve as the initial view.
+如果您想为您的手表面或数据领域提供设备设置用户界面,您可以实现[AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function).[AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)的功能类似于[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function),您可以返回最初视图的[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)和[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)对.
 
-Watch face configuration is available to the user in the system Watch Face menu. Data field configuration is available from the activity menu.
+在系统的Watch Face菜单中可使用手表面孔配置.数据场配置可从活动菜单中使用.

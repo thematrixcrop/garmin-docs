@@ -7,39 +7,39 @@ title: "Getting Started with Connect IQ BLE Development"
 
 ## Resources
 
-When going through this guide, developers will want to keep a few things handy.
+在阅读这本指南时,开发人员会想让一些事情随时掌握.
 
 -   **Connect IQ BLE API 文档**
 
-    Having the [API 文档](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/) close by will be critical (especially in the later steps of this document).
+接近[API 文档](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/)将是关键的 (特别是在本文的后期阶段).
 
 -   **Nordic nRF52 DK**
 
-    The Connect IQ team has built out the Connect IQ SDK tools to be compatible with the [Nordic nRF52 DK](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52-DK) Bluetooth 5 and Bluetooth mesh Development Kit for nRF52810.
+连接智能团队已经开发了连接智能 SDK工具,以兼容[Nordic nRF52 DK](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52-DK)蓝牙5和蓝牙网格开发套件 nRF52810.
 
 
 -   **Nordic 文档 Page**
 
-    The [Nordic 文档](https://www.nordicsemi.com/DocLib?Product=nRF52832%20core%20documentation&tags=nRF52832%2CnRF52+DK) has links to all of the resources needed to use the nRF52 DK.
+[Nordic 文档](https://www.nordicsemi.com/DocLib?Product=nRF52832%20core%20documentation&tags=nRF52832%2CnRF52+DK)链接到使用nRF52 DK所需的所有资源.
 
--   **nRF Connect For Desktop**
+- **NRF连接机器**
 
-    The [nRF Connect For Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) application allows developers to flash new firmware to the board, monitor connections, etc. This software is necessary to program the board to work correctly with the Connect IQ simulator.
+[nRF Connect For Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop)应用程序允许开发人员将新的固件闪存到板上,监控连接等.
 
 -   **An up-to-date Connect IQ SDK**
 
-    To use the BLE APIs, developers should be working with the current version of the Connect IQ SDK.
+为了使用BLE API,开发人员应该使用Connect IQ SDK的当前版本.
 
--   **Firmware for the nRF52 DK**
+- **为nRF52 DK**的固件
 
-    The memory layout of the nRF52 DK will need to be flashed to a different firmware for use with the Connect IQ SDK. The correct firmware for the development environment has been provided:
+需要将 nRF52 DK 的内存布局转移到不同的固件,以便与Connect IQ SDK 使用.
 
     -   [nRF52 DK firmware](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_1m_with_s132_6.1.1.zip)
 
     -   [nRF52840 Dongle firmware](https://developer.garmin.com/downloads/connect-iq/connectivity_1.0.0_usb_with_s140_6.1.1.zip)
 
 
-    **Note:** For SDKs prior to 9.2.0, use:
+** 注:** 9.2.0 之前的 SDK 使用:
 
     -   [nRF52 DK firmware (old)](https://developer.garmin.com/connect-iq/connectivity_2.0.1_115k2_with_s132_5.0.zip)
 
@@ -48,36 +48,36 @@ When going through this guide, developers will want to keep a few things handy.
 
 ## Windows
 
-The drivers and applications needed to communicate with the nRF52 DK are all included in the installation of [nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) for the Windows platform. Once this application is installed along with the necessary drivers, the nRF52 DK should be found by the nRF Connect for Desktop application.
+在Windows平台的[nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop)安装中,需要与nRF52DK通信的驱动程序和应用程序都包含在内.一旦安装了该应用程序以及必要的驱动程序,nRF52DK应由nRF Connect 用于 Desktop应用程序找到.
 
-At this point, proceed to the [Using Nordic nRF Connect](#using-nordic-nrf-connect) section.
+在此点,继续到[Using Nordic nRF Connect](#using-nordic-nrf-connect)节.
 
 ## Mac
 
-When using macOS, developers will need to manually install the JLink/JTrace USB drivers to communicate with the nRF52 DK board. To do so, download and install the Segger JLink installer [package 6.22g](https://www.segger.com/downloads/jlink/JLink_MacOSX_V622g.pkg) for Mac.
+在使用macOS时,开发人员需要手动安装JLink/JTrace USB驱动器,以便与nRF52 DK板通信.
 
-Once this is completed, developers will need to install the [nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) for Mac.
+一旦完成,开发人员需要安装Mac的[nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop).
 
-At this point, proceed to the [Using Nordic nRF Connect](#using-nordic-nrf-connect) section.
+在此点,继续到[Using Nordic nRF Connect](#using-nordic-nrf-connect)节.
 
 ## Linux
 
-When using Linux, developers will need to manually install the JLink/JTrace USB drivers to communicate with the nRF52 DK board. To do so, download and install using the appropriate Segger JLink installer for Linux:
+在使用Linux时,开发人员需要手动安装JLink/JTrace USB驱动程序,以便与nRF52 DK板通信.
 
 -   32-bit: [JLink\_6.22g - 32](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_i386.deb)
 
 -   64-bit: [JLink\_6.22g - 64](https://www.segger.com/downloads/jlink/JLink_Linux_V622g_x86_64.deb)
 
 
-Once this is completed developers will need to install the [nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop) for Linux.
+一旦完成,开发人员需要安装Linux的[nRF Connect for Desktop](https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop).
 
 ![](/connect-iq/resources/programmers-guide/intent-launched.png)
 
 ## Using Nordic nRF Connect
 
-The nRF Connect Desktop application will need to be installed. Please see the above sections for the appropriate links.
+需要安装 nRF 连接桌面应用程序.请参阅上述部分,查看适当的链接.
 
-1.  Once installed, launch the application. Click *Add/remove apps*:
+1. 一旦安装,启动应用程序. 点击*添加/删除应用程序*:
 
 
 ![](/connect-iq/resources/programmers-guide/nRFConnectLaunch.png)
@@ -88,49 +88,49 @@ The nRF Connect Desktop application will need to be installed. Please see the ab
 
 ![](/connect-iq/resources/programmers-guide/nRFConnectWriteMemoryLayout.png)
 
-## Finding The COM Port
+## 找到COM端口
 
-Now that the board is properly communicating with the computer, it's time to figure out which port it's utilizing.
+现在,电脑已经与电脑进行了正确的通信, 现在是时候弄清楚它使用哪个端口.
 
 ### Windows
 
 Open up Device Manager and find your device under `Ports`.
 
-It will look something like this:
+这将像这样:
 
 ![](/connect-iq/resources/programmers-guide/nRFJLinkDevMgr.png)
 
-The communications port is listed in parentheses. In the example above the communications port is `COM4`. Copy this to be used in a later step and proceed to [Setting the COM Port](#setting-the-com-port).
+通信端口在括号中列出.上面的示例中,通信端口是`COM4`. 复制此以后一步使用,然后继续到[Setting the COM Port](#setting-the-com-port).
 
 ### Mac
 
-Open up a terminal and type:
+打开一个终端,输入:
 
 ```
 ls /dev/tty.usbmodem*
 ```
 
-then press `Tab`. This should list out the port information in the format `/dev/tty.usbmodem<number>`. Copy this to be used in a later step and proceed to [Setting the COM Port](#setting-the-com-port).
+然后点击`Tab`. 这应该列出`/dev/tty.usbmodem<number>`格式的端口信息 . 复制后一步使用并继续到[Setting the COM Port](#setting-the-com-port).
 
 ### Linux
 
-Open up a terminal and type:
+打开一个终端,输入:
 
 ```
 ls /dev/ttyACM*
 ```
 
-then press `Tab`. This should list out the port information in the format `/dev/ttyACM<number>`. Copy this to be used in a later step and proceed to [Setting the COM Port](#setting-the-com-port).
+然后点击`Tab`. 这应该列出`/dev/ttyACM<number>`格式的端口信息 . 复制后一步使用并继续到[Setting the COM Port](#setting-the-com-port).
 
-### Setting the COM Port
+###设置COM端口
 
-At this point the nRF52 is properly communicating with the development environment and the com port information has been retrieved. The final step is to set the COM port in the Connect IQ Simulator.
+在此时,nRF52正与开发环境进行正确沟通,并获取了电源端口信息.最后一步是设置Connect IQ模拟器中的COM端口.
 
-1.  Launch the simulator via Visual Studio Code or command line tools.
+1. 通过视觉工作室代码或命令行工具启动模拟器.
 
-2.  Select *Settings* > *BLE Settings*
+2,选择 *设置* > *BLE设置*
 
-3.  In the dialog box, enter the COM port information from [Finding the COM Port](#finding-the-com-port).
+3. 在对话框中,输入来自[Finding the COM Port](#finding-the-com-port)的COM端口信息.
 
 
 ![](/connect-iq/resources/programmers-guide/nRFSetComPortSim.png)
@@ -138,13 +138,13 @@ At this point the nRF52 is properly communicating with the development environme
 1.  Click *OK*.
 
 
-It's possible that developers might encounter an error. This is likely due to a failure to set the COM Port for the Connect IQ simulator. If an error occurs, then developers have a few things they can check.
+开发人员可能会遇到错误.这可能是由于无法设置Connect IQ模拟器的COM端口.如果出现错误,开发人员可以检查一些事情.
 
-1.  **Double check the COM Port assignment:** Follow the steps for the correct environment to [find](#finding-the-com-port) and confirm the COM Port.
+1. ** 双重检查COM端口分配:** 按照[find](#finding-the-com-port)的步骤查看正确的环境,并确认COM端口.
 
-2.  **Ensure there are no copy/paste errors:** Double check the information entered when [setting the COM Port](#setting-the-com-port).
+2. **确保没有复制/粘贴错误:** 检查[setting the COM Port](#setting-the-com-port)时输入的信息.
 
 
-That's it! If all goes well, then the Connect IQ Simulator will use the nRF52 DK board BLE chipset to communicate with nearby BLE devices per the Connect IQ Bluetooth Low Energy APIs. For more information on the APIs, please refer to the [API documentation](/connect-iq/api-docs/) and the `NordicThingy52` and `NordicThingy52CoinCollector` sample applications included in the Connect IQ SDK.
+如果一切顺利,Connect IQ模拟器将使用nRF52 DK板BLE芯片组来与Connect IQ蓝牙低能 API通信. 更多关于API的信息请参阅Connect IQ SDK中包含的[API documentation](/connect-iq/api-docs/)和`NordicThingy52`和`NordicThingy52CoinCollector`样本应用程序.
 
-Developers may also check the \_Auto read memory\_ checkbox to have the device memory read automatically each time an action is taken.
+开发人员也可以检查自动阅读内存的选项框,以便每次采取行动时自动阅读设备内存.

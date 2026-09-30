@@ -1,13 +1,13 @@
 ---
 title: "Mobile SDK for Android"
 ---
-# Mobile SDK for Android
+#移动SDK用于Android
 
-The Mobile SDK allows you to create companion applications that run on a user's phone and interact with your application on their wearable device. This allows for a more feature rich user experience where doing certain tasks on the wearable device might be tedious or resource intensive.
+移动SDK允许您创建在用户手机上运行的伴手应用程序,并与您的应用程序在其可穿戴设备上交互.这允许在可穿戴设备上执行某些任务可能会乏味或耗费资源的更丰富的功能用户体验.
 
-## Adding the Mobile SDK to a project
+## 将移动SDK添加到一个项目中
 
-The Mobile SDK is publicly available on Maven Central at [ConnectIQ Companion App SDK](https://central.sonatype.com/artifact/com.garmin.connectiq/ciq-companion-app-sdk). To include the AAR to your project add the following line to your build.gradle file
+移动 SDK 在 Maven Central 在[ConnectIQ Companion App SDK](https://central.sonatype.com/artifact/com.garmin.connectiq/ciq-companion-app-sdk)上公开可用 . 要将 AAR 添加到您的项目中,将下列行添加到您的 build.gradle 文件
 
 ```kotlin
    implementation "com.garmin.connectiq:ciq-companion-app-sdk:<latest_version>@aar"
@@ -17,9 +17,9 @@ The Mobile SDK is publicly available on Maven Central at [ConnectIQ Companion Ap
 
 In order for your companion application to communicate with a Connect IQ device the user must also install Garmin Connect Mobile onto their phone. All communication for companion applications running on Android goes through a Garmin Connect Mobile service to reach the device. When initializing the SDK with a wireless connection type this requirement is checked and initialization will fail if Garmin Connect Mobile is not installed. If true is passed to the auto UI parameter of initialize, a message is displayed to the user that they need to either install or upgrade Garmin Connect Mobile and provides them a way to go directly to the application in the Google Play Store. See `Displaying a UI message automatically when initialization fails` 更多信息.
 
-## Interacting with the SDK
+##与SDK互动
 
-All interactions between the companion application and the Connect IQ application are done via the `ConnectIQ` class. To use this class you must first obtain an instance of the class and then initialize it.
+连接 IQ 应用程序和伴侣应用程序之间的所有互动都通过`ConnectIQ`类进行.
 
 ```java
   ConnectIQ connectIQ = ConnectIQ.getInstance(ConnectIQ.IQConnectType.<protocol>);
@@ -27,14 +27,14 @@ All interactions between the companion application and the Connect IQ applicatio
 
 `ConnectIQ.IQConnectType` provides two options:
 
--   WIRELESS - For communicating with the Connect IQ simulator or real device via BLE. This is the default.
+- 无线 - 通过BLE与Connect IQ模拟器或真实设备进行通信.
 
--   TETHERED - For communicating with the Connect IQ simulator over the Android Debug Bridge.
+- TETHERED - 用于通过Android调试桥与Connect IQ模拟器通信.
 
 
-## Initializing the SDK
+##启动SDK
 
-Initializing the SDK is an asynchronous process and requires a `ConnectIQListener` to handle returned states of the SDK. You must wait for the `onSdkReady()` call to be made before calling any additional API methods. Doing so beforehand will result in an `InvalidStateException`.
+启动SDK是一个异步的过程,需要一个`ConnectIQListener`来处理SDK返回状态.在调用任何额外的API方法之前,您必须等到`onSdkReady()`调用.
 
 ```java
 connectIQ.initialize(context, true, new ConnectIQListener() {
@@ -66,36 +66,36 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
 });
 ```
 
-## Displaying a UI message automatically when initialization fails
+## 当初始化失败时自动显示UI消息
 
-If initialization fails due to Garmin Connect Mobile not being installed on the user's phone or if it needs to be upgraded, a message can be displayed prompting the user to take action. You can tell the SDK to display this message automatically by passing true as the second parameter to the `initialize()` method. By default, the UI will display a dialog message to the user asking them to take action. The strings that make up the dialogs are by default English only strings. These strings are fully customizable by simply adding some predefined strings to your projects `strings.xml` file.
+如果由于 Garmin Connect Mobile 不安装在用户的手机上,或者如果需要升级,则可以显示一个消息,促使用户采取行动.你可以告诉 SDK 通过通过通过 true 作为`initialize()`方法的第二个参数来自动显示这个消息.默认情况下,UI 将向用户显示一个对话消息,要求他们采取行动.构成对话符串的字符串是默认的英语字符串.这些字符串可以通过简单地添加一些预定义字符串到您的项目`strings.xml`文件来完全定制.
 
 ### Customizable Strings
 
--   `install_needed_title` --- Dialog title for when Garmin Connect Mobile needs to be installed.
+-`install_needed_title`--- 需要安装 Garmin Connect Mobile 的对话标题.
 
--   `install_needed_message` --- Dialog message for when Garmin Connect Mobile needs to be installed.
+-`install_needed_message`--- 需要安装 Garmin Connect Mobile 的对话信息.
 
--   `install_needed_yes` --- Button text for user to confirm they want to visit the Google Play Store to install Garmin Connect Mobile.
+-`install_needed_yes`--- 按文字,让用户确认他们想访问Google Play商店安装Garmin Connect Mobile.
 
--   `install_needed_cancel` --- Button text for user to cancel the dialog and not install Garmin Connect Mobile.
+-`install_needed_cancel`--- 按文字使用户取消对话框,而不安装Garmin Connect Mobile.
 
--   `upgrade_needed_title` --- Dialog title for when Garmin Connect Mobile needs to be upgraded to a version that supports the SDK.
+-`upgrade_needed_title`--- 在 Garmin Connect Mobile 需要升级到支持 SDK 的版本时使用对话标题.
 
--   `upgrade_needed_message` --- Dialog message for when Garmin Connect Mobile needs to be upgraded to a version that supports the SDK.
+-`upgrade_needed_message`--- 在需要升级到支持SDK的版本时,Garmin Connect Mobile的对话信息.
 
--   `upgrade_needed_yes` --- Button text for user to confirm they want to visit the Google Play Store to upgrade Garmin Connect Mobile.
+-`upgrade_needed_yes`--- 按文字,让用户确认他们想访问Google Play商店升级Garmin Connect移动.
 
--   `upgrade_needed_cancel` --- Button text for a user to cancel the dialog and not upgrade Garmin Connect Mobile.
+-`upgrade_needed_cancel`--- 按文字使用户取消对话框,而不是升级Garmin Connect Mobile.
 
 
-## Working with Devices
+##与设备合作
 
 ### Finding Connect IQ-compatible Devices
 
-Before you can interact with a Connect IQ device, you must obtain a reference to an `IQDevice` object instance representing it. This is done by one of two methods.
+在您可以与Connect IQ设备进行交互之前,您必须获得代表其的`IQDevice`对象实例的引用.
 
-`getKnownDevices()` will return a list of any Connect IQ device that has been paired within Garmin Connect Mobile. These devices may or may not be connected at the time the API is called.
+`getKnownDevices()`将返回 Garmin Connect Mobile 中已搭配的任何 Connect IQ 设备的列表.这些设备可能在 API 调用时连接或不连接.
 
 ```java
 List<IQDevice> paired = connectIQ.getKnownDevices();
@@ -122,9 +122,9 @@ if (devices != null && devices.size() > 0) {
 }
 ```
 
-### Listening for Device Events
+### 听到设备事件
 
-You can request to be notified when the status of a device changes by calling `registerForDeviceEvents(IQDevice, IQDeviceEventListener)`. Once registered any device status change will call the `IQDeviceEventListener.onDeviceStatusChanged()` with the new status. When you no longer need to receive updates for a device, you should call `unregisterForDeviceEvents(IQDevice)` to release any associated resources.
+您可以通过调用`registerForDeviceEvents(IQDevice, IQDeviceEventListener)`请求通知设备状态发生变化. 一旦已注册,任何设备状态变化将调用新状态的`IQDeviceEventListener.onDeviceStatusChanged()`. 当您不再需要收到设备更新时,您应该调用`unregisterForDeviceEvents(IQDevice)`释放任何相关资源.
 
 ```java
 // Register to receive status updates
@@ -146,18 +146,18 @@ connectIQ.unregisterForDeviceEvents(device);
 
 #### Possible Device statuses
 
--   `CONNECTED` --- The device is connected and can be communicated with.
+-`CONNECTED`--- 设备连接,可以与其通信.
 
--   `NOT_CONNECTED` --- The device is paired with Garmin Connect Mobile but is not currently connected and cannot be communicated with.
+-`NOT_CONNECTED`--- 该设备与 Garmin Connect Mobile 结合,但目前没有连接,无法与此通信.
 
--   `NOT_PAIRED` --- The device is not paired with Garmin Connect Mobile and cannot be communicated with.
+-`NOT_PAIRED`--- 该设备不配合Garmin Connect Mobile,无法与此通信.
 
 
-## Working with Apps
+##与应用程序合作
 
-### Obtaining an Instance of IQApp
+### 获得IQApp的实例
 
-Apps are represented in the Mobile SDK as instances of the `IQApp` class. While you can create an `IQApp` instance on your own, it is recommended to obtain a fully populated `IQApp` instance via the `getApplicationInfo()` method. You can determine if your Connect IQ application is installed on the user's device by passing the Applications UUID, the `IQDevice`, and an `IQApplicationInfoListener` into a `getApplicationInfo()` call. `IQApplicationInfoListener.onApplicationInfoReceived( IQApp )` will be called if the application is installed on the watch, and `IQApplicationInfoListener.onApplicationNotInstalled( String )` if the app does not exist on the watch. `onApplicationInfoReceived` will be called with an IQApp object that can be inspected via the `getStatus()` method to determine the status of your application on the device. If the status is `INSTALLED`, the version number will also be populated so you can determine if the user has the latest version of your application.
+应用程序在移动SDK中被表示为`IQApp`类的实例.虽然您可以自行创建一个`IQApp`实例,但建议通过`getApplicationInfo()`方法获得一个完全拥挤的`IQApp`实例.您可以通过将应用程序 UUID,`IQDevice`和`IQApplicationInfoListener`传入`getApplicationInfo()`调用来确定您的Connect IQ应用程序是否安装在用户设备上.如果应用程序安装在手表上,则将`IQApplicationInfoListener.onApplicationInfoReceived( IQApp )`调用,如果应用程序不存在在手表上,则将`IQApplicationInfoListener.onApplicationNotInstalled( String )`调用.如果用户已使用`IQApp`0方法检查该应用程序的状态,则将`onApplicationInfoReceived`号码被调用.如果状态是`IQApp`1 ,则您的号码也将被调用,以便确定用户是否拥有最新版本的应用程序.
 
 ```java
 connectIQ.getApplicationInfo(MY_APPLICATION_ID, device, new IQApplicationInfoListener() {
@@ -184,16 +184,16 @@ connectIQ.getApplicationInfo(MY_APPLICATION_ID, device, new IQApplicationInfoLis
 
 #### Possible Application Statuses
 
--   INSTALLED --- The application is installed on the device and the version information has been populated.
+应用程序安装在设备上,已填写版本信息.
 
--   NOT\_INSTALLED --- The application is not currently installed on the device but is supported.
+- NOT\_INSTALLED --- 该应用程序目前不安装在设备上,但支持.
 
--   NOT\_SUPPORTED --- The application is not installed on the device and is not supported by the device.
+- NOT\_SUPPORTED --- 该应用程序不安装在设备上,并且设备不支持.
 
 
-### Opening an App on the Device
+### 在设备上打开应用程序
 
-You may wish to prompt the user to open a Connect IQ application on their device. To do this you can use the `openApplication` API. A response from the device will be returned to your `IQOpenApplicationListener`.
+您可能希望要求用户在设备上打开Connect IQ应用程序.此目的可以使用`openApplication`API.设备的响应将返回您的`IQOpenApplicationListener`.
 
 ```java
 connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
@@ -219,9 +219,9 @@ connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
 -   UNKNOWN\_FAILURE
 
 
-### Opening the Connect IQ store
+### 打开连接智能商店
 
-If the user does not have your applications installed (status of `NOT_INSTALLED`), or needs to upgrade to the latest version, you can open the Connect IQ store directly to your application. Simply call `openStore()` passing in a String containing the public UUID associated with your application in the store. Note, this will not work if you are using the TETHERED connection option.
+如果用户没有安装你的应用程序 (`NOT_INSTALLED`状态),或者需要升级到最新版本,您可以直接在应用程序中打开Connect IQ存储器. 简单地调用`openStore()`传递在存储器中包含与应用程序相关的公共 UUID中的字符串中. 注意,如果您使用TETHERED连接选项,这将无法工作.
 
 ```java
 connectIQ.openStore( MY_STORE_ID );
@@ -248,9 +248,9 @@ connectIQ.sendMessage(device, app, message, new IQSendMessageListener() {
 
 ## Receiving Messages
 
-In order to receive data messages from a Connect IQ application, you must first register to receive application events. Once registered via `registerForAppEvents()`, when a new message arrives from the Connect IQ application, it will be delivered to the `onMessageReceived()` method of the listener passed when registering. When you no longer wish to receive incoming messages, you should call `unregisterForAppEvents()` to release any associated resources.
+为了从Connect IQ应用程序接收数据消息,您必须首先注册接收应用程序事件.一旦通过`registerForAppEvents()`注册,当从Connect IQ应用程序接收新的消息时,它将被传递到注册时通过的`onMessageReceived()`方式.当您不再希望接收接入的消息时,您应该打电话给`unregisterForAppEvents()`释放任何相关资源.
 
-A companion app may register to receive messages from multiple apps across many devices. However, multiple companion apps cannot be registered to receive messages from the same ConnectIQ application. The SDK will override any previous registrations with each call to `registerForAppEvents()`.
+一个伴侣应用程序可以注册接收来自多个应用程序的消息在多个设备上.然而,多个伴侣应用程序不能注册接收来自同一连接IQ应用程序的消息.SDK将在每次调用到`registerForAppEvents()`时取消任何以前的注册.
 
 ```java
 // Register to receive messages from our application
@@ -273,14 +273,14 @@ connectIQ.unregisterForAppEvents(device, app);
 
 ## 支持ed Data Types
 
-| Java Data Type | Monkey C Type | Notes |
+|Java数据类型|子C类型| Notes |
 | --- | --- | --- |
 | int, Integer | Integer |  |
-| long, Long | Integer, Long | If the value of the long is small enough to be represented as an integer, it will be converted to save space. |
+| long, Long | Integer, Long |如果长的值足够小以表示为整数,则将转换为节省空间.|
 | float, Float | Float |  |
-| double, Double | Float, Double | If the value of the double is within 5 matching significant fractional digits of the nearest float, it will be converted to a float to save space. |
+| double, Double | Float, Double |如果倍数的值在最近的浮动的5个相匹配的重要分数数字内,则将转换为浮动,以节省空间.|
 | boolean, Boolean | Boolean |  |
 | char | Char |  |
 | String | String |  |
-| List&lt;?> | Array | List must contain only supported data types. If the list contains unsupported data types, an exception will be thrown. |
-| Map | Dictionary | Map keys and values must be supported data types. If the map contains unsupported data types, an exception will be thrown. |
+|列表| Array |如果列表中包含未支持的数据类型,则会提出例外.|
+| Map | Dictionary |如果地图包含未支持的数据类型,则会提出例外.|

@@ -7,18 +7,18 @@ title: "Activity Prompts"
 
 The [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) module allows for a data field to intercept and suppress the voice prompts of an activity. This 可用于 integrate a device with its own text-to-speech (TTS) engine with the activity experience.
 
-When installing an app that uses the [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) API, the user will be presented with a confirmation asking if they agree to allow the app to control the voice prompts. The user can always select the app as the audio prompts handler either in the audio prompts menu or through device settings. Note that not all devices have an on-device audio prompts menu.
+在安装使用[Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/)API的应用程序时,用户会得到确认,要求他们是否同意允许应用程序控制语音提示.用户可以在音频提示菜单或设备设置中选择该应用程序作为音频提示处理器.请注意,并非所有设备都有设备上的音频提示菜单.
 
-You can call [ActivityPrompts.registerActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) to register your app to handle activity prompts. This call will return true if the user has selected your app to handle activity prompts. If the user chooses to enable or disable your apps’ handling of activity prompts during the activity, your [ActivityPromptDelegate.onAudioOutputChange()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onAudioOutputChange-instance_function) delegate function will be called with the status change.
+您可以拨打[ActivityPrompts.registerActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function)注册您的应用程序来处理活动提示.如果用户选择了您的应用程序来处理活动提示,则该电话将返回真实.如果用户选择启用或禁用您的应用程序活动期间处理活动提示,则您的[ActivityPromptDelegate.onAudioOutputChange()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onAudioOutputChange-instance_function)委托函数将随着状态变更被调用.
 
-When active, your [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function) will be passed an ActivityPrompt object when the user triggers lap, workout and other audio prompts. The [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var) will contain a TTS-friendly string in the current language. You can use to change the language of the text string. This will return `false` if the language is not supported. Calling does not change the system language.
+当激活时,[ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)将通过 ActivityPrompt 对象,当用户触发圈子,训练和其他音频提示时.[ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var)将包含当前语言中的TTS友好的字符串.您可以使用它来更改文字符串的语言.如果语言不支持,这将返回`false`.调用不会改变系统语言.
 
-If your external TTS engine is not available, calling [ActivityPrompts.unregisterActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#unregisterActivityPromptsListener-instance_function) will disable the audio prompt handler. The device will fall back to the system audio prompt handler.
+如果您的外部TTS引擎无法使用,调用[ActivityPrompts.unregisterActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#unregisterActivityPromptsListener-instance_function)将禁用音频提示处理器.设备将回到系统音频提示处理器.
 
-These APIs require the `ActivityPrompts` permission:
+这些API需要`ActivityPrompts`许可:
 
-| Function or Class | Purpose | API Version |
+|函数或类型|目的|应用程序版本|
 | --- | --- | --- |
-| [ActivityPrompts.registerActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) | Register a as the activity prompt output provider | 5.2.0 |
-| [ActivityPrompts.setActivityPromptTextLanguage()](/connect-iq/api-docs/Toybox/ActivityPrompts/#setActivityPromptTextLanguage-instance_function) | Set the language for [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var) | 5.2.0 |
-| [ActivityPrompts.unregisterActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#unregisterActivityPromptsListener-instance_function) | Unregister as the activity prompt output handler | 5.2.0 |
+| [ActivityPrompts.registerActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) |注册一个作为活动提示输出提供者| 5.2.0 |
+| [ActivityPrompts.setActivityPromptTextLanguage()](/connect-iq/api-docs/Toybox/ActivityPrompts/#setActivityPromptTextLanguage-instance_function) |设置语言为[ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var)| 5.2.0 |
+| [ActivityPrompts.unregisterActivityPromptsListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#unregisterActivityPromptsListener-instance_function) |取消作为活动提示输出处理器的注册| 5.2.0 |

@@ -3,21 +3,21 @@ title: "JSON REST Requests"
 ---
 # JSON REST Requests
 
-Widgets and apps can communicate with a mobile phone via [Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy) (BLE). The mobile phone may be sharing data with the device, or it may act as a bridge between the app and the Internet. This allows the mobile phone to become part of the wearable web.
+插件和应用程序可以通过[Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)(BLE) 与手机通信.手机可能与设备共享数据,或者它可以作为应用程序和互联网之间的桥梁. 这使手机成为可穿戴网络的一部分.
 
-There are also high-level interfaces for making JSON and image requests. This allows developers the option of developing a wearable web app without having to write their own companion phone app.
+此外,还提供了高层次的接口,可进行JSON和图像请求. 这使开发人员可以开发可穿戴的网页应用程序,而无需编写自己的伴手机应用程序.
 
-| API | Purpose | API Level |
+| API |目的| API Level |
 | --- | --- | --- |
-| [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) | Make an asynchronous JSON REST request to a web service | 1.3.0 |
-| [Communications.makeImageRequest()](/connect-iq/api-docs/Toybox/Communications/#makeImageRequest-instance_function) | Download an image from the web | 1.2.0 |
-| [Communications.openWebPage()](/connect-iq/api-docs/Toybox/Communications/#openWebPage-instance_function) | Commands Connect Mobile to ask the user to view a web link | 1.3.0 |
+| [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) |将一个web服务进行异步JSON REST请求| 1.3.0 |
+| [Communications.makeImageRequest()](/connect-iq/api-docs/Toybox/Communications/#makeImageRequest-instance_function) |从网上下载图像| 1.2.0 |
+| [Communications.openWebPage()](/connect-iq/api-docs/Toybox/Communications/#openWebPage-instance_function) |命令连接手机要求用户查看网页链接| 1.3.0 |
 
 ## JSON REST Requests via Mobile Proxy
 
-Monkey C exposes a high level APIs to allow calls to basic web services through Garmin Connect Mobile via the [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) and APIs. These APIs expose JSON requests and image requests as very straightforward APIs for making REST API calls. The JSON calls are converted to serialized Monkey C data and sent across the BLE pipe. You must have set the `Communications` permission to use this API.
+子C将一个高水平的API暴露,通过[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function)和API允许通过Garmin Connect Mobile对基本网络服务进行调用.这些API将JSON请求和图像请求暴露为REST API调用的非常简单的API.JSON调用将转换为序列化子C数据并通过BLE管道发送.您必须设置`Communications`权限使用这个API.
 
-[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) provides a high level API for making a JSON REST request to an endpoint. The call is asynchronous and requires a callback to receive the data once the operation completes.
+[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function)提供了一个高层次的API来向终端点提交JSON REST请求.通话是异步的,需要回调才能接收数据一旦操作完成.
 
 ```typescript
 // It is common for developers to wrap a makeWebRequest() call in a function
@@ -63,7 +63,7 @@ class JsonTransaction {
 }
 ```
 
-offers a similar API for making an image request. The images can be processed by the system, including applying a palette and dithering.
+系统可以处理这些图像,包括应用一个调色板和动.
 
 ```typescript
 import Toybox.System;
@@ -112,8 +112,8 @@ class ImageTransaction {
 }
 ```
 
-For more see the `WebRequest` sample app distributed with the SDK.
+查看与SDK共享的`WebRequest`样本应用.
 
-## Directing Users to Web Content
+## 引导用户进入网页内容
 
 The call 可用于 direct the user to a specific web page on the paired mobile device. When called, the specified web page should be fetched and displayed in the phones default browser. There is no callback for this function and the watch app has no method for checking if the call was completed on the phone successfully.

@@ -5,7 +5,7 @@ title: "Downloading Content"
 
 *Since API level 2.2.0*
 
-The [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) module allows access to the saved Tracks, Courses, Waypoints, Workouts, and Routes that the user has on their device. These content types contain a name and a unique identifier, which can be used by [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) as an [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) to launch into a native app and present the content to the user in some way. See the [Intents](/connect-iq/core-topics/intents/#intents) section for more details.
+[Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)模块允许访问用户在设备上存储的轨道,课程,路线,训练和路线.这些内容类型包含一个名称和独特的识别符,这些内容类型可以由[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)作为[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)来启动本地应用程序并以某种方式向用户展示内容.查看[Intents](/connect-iq/core-topics/intents/#intents)部分更多详情.
 
 | Type | Object | API Level |
 | --- | --- | --- |
@@ -13,9 +13,9 @@ The [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) mod
 | Waypoint | [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) | 2.2.0 |
 | Workout | [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/) | 2.2.0 |
 
-Calling [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) with a [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) object prompts the user to choose which native app to launch. For example, if an app calls [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) with a [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) object, the dialog will ask whether to launch the waypoint with one of either the Run or Bike native apps.
+使用[Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)对象调用[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)提示用户选择哪个本土应用程序启动.例如,如果应用程序使用[PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)对象调用[System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function),对话框将会询问是否使用 Run或 Bike本土应用程序启动路线.
 
-When retrieving the list of stored content on the device, a [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) will be returned. The [Iterator.next()](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/#next-instance_function) function must be called to get the first entry, and `null` is returned when there are no more entries:
+在检索设备上存储的内容列表时,将返回[PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/). 必须调用[Iterator.next()](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/#next-instance_function)函数来获取第一个输入,并且在没有更多输入时返回`null`:
 
 ```typescript
 import Toybox.PersistedContent;
@@ -34,45 +34,45 @@ function example() as Void {}
 }
 ```
 
-There are three possible cases once the content is sent to the device:
+一旦内容被发送到设备上,有三个可能的情况:
 
-1.  **Data import is successful** - A `PersistedContent.Iterator` will be returned, which contains the elements that were downloaded.
+1. **数据进口成功** - 将返回一个`PersistedContent.Iterator`,其中包含下载的元素.
 
-2.  **The system does not have enough space** - The `STORAGE_FULL` response will be returned to the `responseCallback`.
+2. **系统没有足够的空间** -`STORAGE_FULL`响应将返回`responseCallback`.
 
-3.  **The system does not support the file type** (i.e. a running workout is sent to a cycling device) - The `responseCallback` will return an empty iterator or `null` value.
-
-
-Access to `PersistedContent` requires the 'Persisted Content' permission.
-
-## Persisted Content in the Simulator
-
-Because native apps are not simulated in Connect IQ simulator, an *Intent Launched* feature has been added that is useful for testing with [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/). This feature displays three critical pieces of information about the [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) object supplied via [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) in the simulator window:
-
-1.  The object type
-
-2.  The unique serializable ID of the object
-
-3.  The name of the object
+3. **系统不支持文件类型** (即运行训练被发送到自行车设备上) -`responseCallback`将返回空代码器或`null`值.
 
 
-For example, the sample code above may display a picture of an activity with "Intent Launched", a type, an ID number and its name displayed.
+访问`PersistedContent`需要"持续内容"权限.
+
+## 在模拟器中持续的内容
+
+由于本土应用程序在Connect IQ模拟器中不被模拟,因此已添加了一个*Intent Launched*功能,可用于测试[Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/).该功能在模拟器窗口中显示了通过[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)提供的[Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)对象的三个关键信息:
+
+1.物体类型
+
+2. 对象的唯一可串行ID
+
+3. 物体名称
+
+
+例如,上面的样本代码可能显示一个活动的图像,其中"Intent Launched",一个类型,一个身份识别号码和其名称显示.
 
 ![](/connect-iq/resources/programmers-guide/intent-launched.png)
 
 *Since API level 3.1.0*
 
-In some cases, the [Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy) (BLE) link to Garmin Connect Mobile is too slow for downloading some content. For these situations, the WiFi Bulk Downloads feature can prove useful.
+在某些情况下,[Bluetooth low energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)(BLE) 链接到Garmin Connect Mobile是太慢的下载某些内容.在这些情况下,WiFi Bulk Downloads功能可以证明有用.
 
 The [Toybox.Communications](/connect-iq/api-docs/Toybox/Communications/) 模块提供 methods to initiate a transition to sync mode, and communicate sync status information to the system for display. The [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) class provides an entry point for the system to get a delegate used to communicate with the app while in sync mode.
 
-| Function or Class | Purpose |
+|函数或类型|目的|
 | --- | --- |
-| [Communications.startSync()](/connect-iq/api-docs/Toybox/Communications/#startSync-instance_function) | Exit the Application and launch it in sync mode. |
-| [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) | Get a SyncDelegate object that communicates sync status to the system |
-| [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) | A delegate object that the user implements to respond to sync request |
-| [Communications.notifySyncProgress()](/connect-iq/api-docs/Toybox/Communications/#notifySyncProgress-instance_function) | Send a system notification to the system to indicate overall sync progress. |
-| [Communications.notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function) | Send a system notification to the system to indicate that the sync completed. |
+| [Communications.startSync()](/connect-iq/api-docs/Toybox/Communications/#startSync-instance_function) |输出应用程序,并在同步模式中启动.|
+| [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) |获取一个 SyncDelegate 对象,将同步状态传达到系统中|
+| [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) |用户执行的委托对象来响应同步请求|
+| [Communications.notifySyncProgress()](/connect-iq/api-docs/Toybox/Communications/#notifySyncProgress-instance_function) |发送系统通知给系统,说明整体同步进展.|
+| [Communications.notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function) |向系统发送系统通知,说明同步完成.|
 
 To use the bulk download functionality, implement [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) to return an instance of a class derived from [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/). When the application calls [Communications.startSync()](/connect-iq/api-docs/Toybox/Communications/#startSync-instance_function), 系统将 terminate the running application, re-launch it in sync mode, and make a call to [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) to retrieve the application's [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/).
 
@@ -80,6 +80,6 @@ Once the application has retrieved the application's [Communications.SyncDelegat
 
 If the user decides to cancel the bulk download operation, 系统将 call [SyncDelegate.onStopSync()](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/#onStopSync-instance_function) to notify the application. The app must acknowledge the sync cancellation by calling [Communications.notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function). The system will display the given error message, if appropriate, and will proceed to exit sync mode.
 
-For more see the `BulkDownload` sample app distributed with the SDK.
+查看与SDK共享的`BulkDownload`样本应用.
 
-I can't tell you what the differences are. Sometimes our job is to just abstract the thing and not ask questions.
+我不能告诉你什么是差异. 有时我们的工作只是抽象了这个东西,而不是问问题.
