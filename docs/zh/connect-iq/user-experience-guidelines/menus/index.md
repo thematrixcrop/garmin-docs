@@ -3,36 +3,36 @@ title: "Menus"
 ---
 # Menus
 
-The app can create a menu with a default presentation style that matches the device’s look and feel. If you want to match your branded look and feel, you can use a custom menu instead.
+应用程序可以创建一个与设备的外观和感觉相匹配的默认演示风格的菜单.如果你想匹配你的品牌外观和感觉,你可以使用一个定制菜单.
 
-By default, menus loop from the last element on the list back to the first but can also continue into a new menu. If you have a very long list of options, consider ways to sort in a predictable and meaningful way, such as alphabetically. Or consider grouping into related categories. Users would then see the category name in the parent menu, and then can select a “parent” option to see the options in a “child” menu.
+默认情况下,菜单从列表上最后一个元素循环回到第一个,但也可以继续进入一个新的菜单.如果你有一个非常长的选项列表,请考虑以可预测和有意义的方式排序的方式,如字母.或者考虑分组成相关类别.用户会在母菜单中看到类别名称,然后可以选择parent选项来看到在child菜单中的选项.
 
 ## Selection Menu
 
-Use the selection menu when there is a selectable list of items for the user to navigate. A header and footer at the top and bottom of the menu can give context to the selection.
+使用选项菜单,当用户可以浏览选项列表时.菜单的顶部和底部的标题和脚本可以给选项提供语境.
 
-Optional use of icons or images is recommended to highlight the meaning of the selection:
+建议选择使用图标或图像来突出选择的意义:
 
 ![](/connect-iq/resources/ux-guide/selection-menu.png)
 
-For graphic guidance, including the use of color, fonts and icons, see the Product Design Appendix.
+图形指导,包括使用颜色,字体和图标,见产品设计附件.
 
 ## Settings Menu
 
-Typically, a menu behavior from the base page will provide access to a settings menu. Settings menus allow users to customize global settings within your application. A header and footer at the top and bottom of the menu can give context to the selection.
+通常,从基本页面的菜单行为将提供访问设置菜单.设置菜单允许用户在应用程序内定制全球设置.菜单的顶部和底部的标题和脚本可以为选择提供文本.
 
 ![](/connect-iq/resources/ux-guide/settings-menu.png)
 
-For graphic guidance, including the use of color, fonts and icons, see the Product Design Appendix.
+图形指导,包括使用颜色,字体和图标,见产品设计附件.
 
 ## Best Practices
 
--   Group menus into categories as needed. A general rule of thumb is to try to have a maximum of seven items in each list.
+- 按需要将菜单分为类别. 总的来说,每个列表中最多要有7个项目.
 
--   Use toggles for options with on/off choices in settings menus.
+- 在设置菜单中使用开/关选项的开关选项.
 
--   Use checkboxes for multiple selections in settings and selection menus.
+- 在设置和选项菜单中使用多个选项的选项框
 
--   For other selections, provide a secondary menu for users to see all their choices. Show the current selection as subtext in the parent menu list item.
+- 在其他选项中,为用户提供一个二级菜单,以便查看所有选项.
 
--   A common pattern to break up long sets of information is to draw a custom footer element that hints at what lies beneath, and then switch to a new menu if the user goes past the end.
+- 一种常见的模式是将长段信息分解成一个指向下面的自定义脚本元素,然后如果用户过去了最后,切换到新的菜单.

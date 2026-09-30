@@ -3,47 +3,47 @@ title: "Entry Points"
 ---
 # Entry Points
 
-Connect IQ exposes multiple ways for developer content to integrate with the device. Based on the app type, there may be multiple touchpoints where your app will appear. Here is a comprehensive list:
+根据应用程序类型,可能会出现多个触摸点.以下是详细的列表:
 
-**Activity Data Field Screen** (*Data fields*) – In native Garmin activities, the user has a page loop of metrics available to them. Users can edit the contents of the pages for the activity. One option is to add a Connect IQ data field as a metric in a page. Once added, the data field can render itself inside of its designated area.
+**活动数据领域屏幕** (*数据领域*)  在原生 Garmin 活动中,用户可使用一个页面循环的指标.用户可以为该活动编辑页面的内容.一个选项是添加一个连接 IQ 数据领域作为一个指标在页面中.一旦添加,数据领域可以自行呈现在指定区域内.
 
-On API level 3.2 products and above, the user can configure settings for the data field on the device. This launches into an application-defined workflow.
+在API级3.2及以上的产品上,用户可以配置设备上的数据字段的设置.
 
-**Activity List** (*Device apps*) – From the home page of the device, the user can get to the list of supported activities either by pressing the start button or tapping the appropriate place on the touchscreen. Connect IQ apps are listed along with the natively supported Garmin activities. The user can edit the list order on device or in the Garmin Connect mobile app.
+**活动列表** (*设备应用程序*)  user 从设备的首页,用户可以通过按下启动按或触摸屏上的适当位置访问支持活动列表.连接智能智能应用程序与本地支持的Garmin活动一起列出.用户可以在设备上或在Garmin Connect手机应用程序中编辑列表顺序.
 
-When a user launches an app from the activity list, the app will run until the user explicitly backs out from the first page.
+当用户从活动列表中启动应用程序时,应用程序将运行直到用户明确退出第一页.
 
 **Glance List** (*Device apps, Widgets*) – Glances are an evolution of the widget concept. The information of a widget is condensed into a glanceable item, and the collection is presented to the user as a list. Selecting an item from the list launches into the experience. The user can exit by backing out of the base page, but after a period of inactivity, 系统将 terminate the launched app, as well.
 
-On API level 3.1 products, widgets were the only app type to support glances. In API level 4.0, device apps were given the ability to support glances, as well.
+在API级3.1产品上,小程序是唯一支持眼光的应用程序类型.在API级4.0中,设备应用程序也获得了支持眼光的能力.
 
-**Media Player** (*Audio content providers*) – On products that support music, users can select a music source. The source can be music files on the device, controlling the music player on their phone or music from the audio content provider’s app.
+**媒体播放器** (*音频内容提供商*)  users 在支持音乐的产品上,用户可以选择音乐源.来源可以是设备上的音乐文件,控制他们的手机上的音乐播放器或来自音频内容提供商的应用程序的音乐.
 
-When the user switches to a Connect IQ audio content provider, the initial view is displayed. This gives an opportunity to provide onboarding, including authenticating into a cloud service and guiding the user to download music. When the user returns to the media player, they will get the media controls and have a way to return to your interface if they want to change playlists or download more content.
+当用户切换到Connect IQ音频内容提供商时,最初的视图会显示.这提供了提供登录的机会,包括验证到云服务中并引导用户下载音乐.当用户返回媒体播放器时,他们将获得媒体控制,如果他们想更改播放列表或下载更多内容,他们就能返回您的接口.
 
-**Watch Face** (*Watch faces*) – On Garmin wearables, the user can choose a watch face to run as the home screen, including installed Connect IQ watch faces. When the user returns to the home screen, the watch face application will launch. The watch face does not take user input.
+**Watch Face** (*Watch faces*)  Gar 在Garmin可穿戴设备上,用户可以选择一个表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表表
 
-Watch faces render in different ways based on what the device supports:
+根据设备支持的不同方式表现表面:
 
--   *MIP standard **–*** The watch face will request an update every minute. When the user gestures to look at the watch face, the watch face will begin requesting updates every second for a short period.
+- *MIP标准 ***** 时表面每分钟都会要求更新.当用户举动看时表面时,时表面会在短时间内开始要求每秒更新.
 
--   *MIP always active **–*** The watch face will request a full update every minute but will allow a small portion of the screen to be updated every second. When the user gestures to look at the watch face, the watch face will begin requesting updates every second for a short period.
+- *MIP总是活跃 ***** 时表面每分钟都会要求全面更新,但会允许每秒更新屏幕的一小部分.当用户手势看时表面,时表面会在短时间内开始要求每秒更新.
 
--   *AMOLED standard **–*** The screen is off by default. When the user gestures to look at the watch face, the display will enable, and the watch face will begin requesting updates every second for a short period.
+- *AMOLED标准 ***** 屏幕默认关闭. 当用户动手看手表面时,显示屏将启用,手表面将开始每秒要求更新.
 
--   *AMOLED always active (version 1)* – The watch face operates with a burn-in detection mechanism that will prevent any pixel from being enabled for more than four minutes, or for the watch face from using more than 10% of the screen pixels. When the user gestures to look at the watch face, the display will turn on, the pixel limits are disabled, and the watch face will begin requesting updates every second for a short period.
+- *AMOLED总是活跃 (版本1) *  The 时钟面部采用燃烧检测机制,防止任何像素被启动超过4分钟,或者时钟面部使用超过10%的屏幕像素.当用户手势来看时,显示屏将启动,像素限制被禁用,并且时钟面部将在短时间内开始要求每秒更新.
 
--   *AMOLED always active (version 2)* - The watch face is prevented from using more than 10% of the screen pixels. When the user gestures to look at the watch face, the display will turn on, the pixel limits are disabled, and the watch face will begin requesting updates every second for a short period.
+- *AMOLED总是活跃 (版本2) * - 屏幕面部被阻止使用超过10%的屏幕像素.当用户动手看屏幕面部时,显示屏将启动,像素限制将被禁用,并且屏幕面部将在短时间内开始要求每秒更新.
 
 
-**Widget Loop** (*Widgets*) – On wearables that have widgets, the widget loop is available by performing the next/previous behavior from the watch face. On cycling computers, the widget loop is available by swiping down from the top of the screen, then swiping right or left or using the navigation arrows to move between widget pages.
+**Widget Loop** (*Widgets*)  在具有小工具的可穿戴设备上,小程序循环可通过从手表面执行下一个/前一个行为来实现.在自行车计算机上,小程序循环可通过从屏幕顶部滑下来滑下来,然后滑向右或左或使用导航箭头来移动小程序页面.
 
-The user can use the next/previous behaviors to navigate the widget loop if the widget is on the base page. Other interactions can be captured by the widget and used to push pages onto the page loop. After a period of inactivity, the widget will be terminated, and the user will return to the home screen.
+如果小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小
 
 ## Best Practices
 
--   When designing a widget, make sure to design both a launch from widget (full screen) and launch from glance (list item to full screen).
+- 在设计 widget时,请确保从 widget (全屏) 设计启动和从眼前启动 (列表项目到全屏).
 
--   When launching from a glance, the base page of your widget/app will not have the input restrictions when launching as a widget.
+- 在一眼启动时,您的小工具/应用程序的基页将没有作为小工具启动时的输入限制.
 
--   On certain devices, device apps can be launched from a glance. If your app has a trackable metric, consider creating a glance for it.
+- 在某些设备上,设备应用程序可以从一眼中启动. 如果您的应用程序具有可追踪的指标,请考虑为此创建一眼.

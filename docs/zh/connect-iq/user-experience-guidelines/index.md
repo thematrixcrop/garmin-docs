@@ -3,35 +3,35 @@ title: "User Experience Guidelines"
 ---
 # User Experience Guidelines
 
-The Connect IQ system allows third party developers to bring their design and experience to Garmin products. This document will go over some of the guidelines of designing an app for a Garmin audience.
+连接智商系统允许第三方开发人员将他们的设计和经验带入Garmin产品.本文将介绍为Garmin观众设计应用程序的一些指南.
 
 ## Customer Focused Devices
 
-Unlike other platforms, Garmin products are targeted at the customers they serve:
+与其他平台不同,Garmin的产品针对其服务的客户:
 
--   **The Edge series** are the best cycling computers on the market.
+- ** 边缘系列** 是市场上最好的自行车计算机.
 
--   **The fēnix®** series is the best wearable for the outdoors.
+- **Fēnix®**系列是最好的户外穿戴设备.
 
--   **The Forerunner® series** is the best wearable for runners and triathletes.
+- **前跑者®系列**是跑步运动员和三运动员最好的穿戴设备.
 
--   **The vívoactive® and Venu® series** brings the best of Garmin to an active lifestyle audience.
+- ** 维沃阿克טיוו®和Venu®系列**将Garmin的最佳产品带给积极的生活方式的观众.
 
--   **The Oregon®, GPSMAP®, and Rino® series** are the best handheld mapping products on the market.
+- **Oregon®,GPSMAP®和Rino®系列**是市场上最好的手持地图产品.
 
 
-Think about these distinctions when choosing which products to support.
+在选择支持哪些产品时,请考虑这些区别.
 
-## The Wearable User
+##可穿戴的用户
 
-One of the synonyms of the word "watch" is "to observe." When designing smartwatch apps, keep in mind that watches are best when they are used to observe. Great wearable apps stay out of the user's way and keep the interactions to a minimum. Instead, give the user fast access to the information and key interactions they care about.
+"观察"这个词的同义词之一是"观察".设计智能手表应用时,请记住,手表在观察中使用时最好.伟大的可穿戴应用程序远离用户的路线,并将交互最小化.相反,让用户快速获取他们关心的信息和关键交互.
 
-Remember that wearables are the most personal computing platform ever created. Garmin devices have access to several different sensors, including GPS, heart rate monitors, compass, accelerometer, barometer, gyroscope, as well as the ANT+ network. Let the user see information about themselves in interesting ways.
+记住,可穿戴设备是迄今为止最具个人计算平台.Garmin设备可以访问几种不同的传感器,包括GPS,心率监测器, компас,加速仪,气程仪,陀螺镜,以及ANT+网络.让用户以有趣的方式看到关于自己的信息. Gar
 
-## The Cycling User
+骑自行车的用户
 
-The Edge user needs their cycling computer to function flawlessly while they ride, regardless of duration or weather conditions. Create apps that integrate with the existing Garmin cycling experience rather than replacing the experience with your own. Users won't like it if your apps lower their battery life, no matter how great your experience is.
+边缘用户需要他们的自行车计算机在骑行时无地运行,无论持续时间或天气状况如何.创建与现有的Garmin自行车体验集成的应用程序,而不是用自己的体验取代体验.用户不会喜欢你的应用程序降低电池寿命,无论你的体验是多么伟大的.
 
-## The Outdoor User
+##户外用户
 
-The outdoor user wants to be outdoors and not focused on your app experience. Provide them with an experience that complements what they want to do. Design an autonomous experience that does not assume you are in a connected environment.
+户外用户希望在户外,而不是专注于应用体验. 提供给他们补充他们想要做的事情的体验. 设计一个自主体验,不假设你在连接环境中.

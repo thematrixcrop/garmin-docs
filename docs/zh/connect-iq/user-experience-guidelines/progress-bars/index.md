@@ -3,7 +3,7 @@ title: "Progress Bars"
 ---
 # Progress Bars
 
-At points where your app needs to do something asynchronous, you should present an indication that the user needs to wait. Progress bars provide a full-page experience that communicates progress. If you don't have a known progress end point, you can use an infinite progress mode.
+在您的应用程序需要做一些异步时,您应该提示用户需要等待的迹象.进步提供一个全页的体验,以传达进步.如果您没有已知的进步终点,您可以使用无限进步模式.
 
 Percent Progress:
 
@@ -15,8 +15,8 @@ Infinite Progress:
 
 ## Best Practices
 
--   Provide a back behavior in case the user wants to cancel the action.
+- 如果用户想取消操作,提供后背行为.
 
--   Be informative, so the user understands what process is taking place.
+- 提供信息,以便用户了解正在进行的过程.
 
--   If there are multiple processes taking place one after another, try to represent the progress for these in one progress bar, or use the infinite progress. Use the message to keep the user apprised of status.
+- 如果有多个进程发生一个接一个,请试图在一个进步中表示这些进程的进步,或者使用无限进步.

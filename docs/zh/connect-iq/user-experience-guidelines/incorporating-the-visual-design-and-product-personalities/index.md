@@ -3,39 +3,39 @@ title: "Incorporating Visual Design and Product Personalities"
 ---
 # Incorporating Visual Design and Product Personalities
 
-Now that we have established our workflow and interaction paradigms, we can focus on incorporating visual design. Your visual design needs to combine both your brand and the personality of the product you are designing for.
+现在我们已经建立了我们的工作流程和互动范式,我们可以专注于纳入视觉设计.你的视觉设计需要结合你的品牌和你设计的产品的个性.
 
 ## Product Personality
 
-Garmin products have different personalities, depending on the target audience of that product, the core usage of the product, the graphics and industrial design of the product and the hardware and technology used in the product.
+根据该产品的目标受众,产品的核心用途,产品的图形和工业设计以及产品中使用的硬件和技术,Garmin产品具有不同的个性.
 
 ### Screen Technology
 
-Many Garmin products use a screen technology known as Memory in Pixel (MIP). MIP displays are very low power. They depend on reflecting light, so they look brightest outdoors. The display technology has a limited color palette: Some offer up to 64 colors, while others offer only eight or even black and white.
+许多Garmin产品采用一种称为Memory in Pixel (MIP) 的屏幕技术.MIP显示器的功率非常低.它们依赖于反射光,因此外面看起来最明亮.显示器技术具有有限的颜色调色:有些提供高达64种颜色,而有些仅提供8种甚至黑白.
 
-Most Garmin products using MIP displays offer a 64-color palette:
+大多数使用MIP显示器的Garmin产品提供64色色调:
 
-Figure 1. The 64-color palette
+图1.64种颜色
 
-&lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0xFFFFFF&lt;/td>&lt;td class="entry">0xFFFFAA&lt;/td>&lt;td class="entry">0xFFFF55&lt;/td>&lt;td class="entry">0xFFFF00&lt;/td>&lt;td class="entry">0xFFAAFF&lt;/td>&lt;td class="entry">0xFFAAAA&lt;/td>&lt;td class="entry">0xFFAA55&lt;/td>&lt;td class="entry">0xFFAA00&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xFF55FF&lt;/td>&lt;td class="entry">0xFF55AA&lt;/td>&lt;td class="entry">0xFF5555&lt;/td>&lt;td class="entry">0xFF5500&lt;/td>&lt;td class="entry">0xFF00FF&lt;/td>&lt;td class="entry">0xFF00AA&lt;/td>&lt;td class="entry">0xFF0055&lt;/td>&lt;td class="entry">0xFF0000&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xAAFFFF&lt;/td>&lt;td class="entry">0xAAFFAA&lt;/td>&lt;td class="entry">0xAAFF55&lt;/td>&lt;td class="entry">0xAAFF00&lt;/td>&lt;td class="entry">0xAAAAFF&lt;/td>&lt;td class="entry">0xAAAAAA&lt;/td>&lt;td class="entry">0xAAAA55&lt;/td>&lt;td class="entry">0xAAAA00&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0xAA55FF&lt;/td>&lt;td class="entry">0xAA55AA&lt;/td>&lt;td class="entry">0xAA5555&lt;/td>&lt;td class="entry">0xAA5500&lt;/td>&lt;td class="entry">0xAA00FF&lt;/td>&lt;td class="entry">0xAA00AA&lt;/td>&lt;td class="entry">0xAA0055&lt;/td>&lt;td class="entry">0xAA0000&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x55FFFF&lt;/td>&lt;td class="entry">0x55FFAA&lt;/td>&lt;td class="entry">0x55FF55&lt;/td>&lt;td class="entry">0x55FF00&lt;/td>&lt;td class="entry">0x55AAFF&lt;/td>&lt;td class="entry">0x55AAAA&lt;/td>&lt;td class="entry">0x55AA55&lt;/td>&lt;td class="entry">0x55AA00&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x5555FF&lt;/td>&lt;td class="entry">0x5555AA&lt;/td>&lt;td class="entry">0x555555&lt;/td>&lt;td class="entry">0x555500&lt;/td>&lt;td class="entry">0x5500FF&lt;/td>&lt;td class="entry">0x5500AA&lt;/td>&lt;td class="entry">0x550055&lt;/td>&lt;td class="entry">0x550000&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x00FFFF&lt;/td>&lt;td class="entry">0x00FFAA&lt;/td>&lt;td class="entry">0x00FF55&lt;/td>&lt;td class="entry">0x00FF00&lt;/td>&lt;td class="entry">0x00AAFF&lt;/td>&lt;td class="entry">0x00AAAA&lt;/td>&lt;td class="entry">0x00AA55&lt;/td>&lt;td class="entry">0x00AA00&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry">0x0055FF&lt;/td>&lt;td class="entry">0x0055AA&lt;/td>&lt;td class="entry">0x005555&lt;/td>&lt;td class="entry">0x005500&lt;/td>&lt;td class="entry">0x0000FF&lt;/td>&lt;td class="entry">0x0000AA&lt;/td>&lt;td class="entry">0x000055&lt;/td>&lt;td class="entry">0x000000&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
+标签: 标签: 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签 标签
 
-The Forerunner 45 and 55 use an eight-color palette:
+预跑者45和55采用八色色调:
 
-Figure 2. The eight-color palette
+图2. 八色色调
 
-&lt;table class="table palette">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry">0xFFFFFF&lt;/td>&lt;td class="entry">0xFFFF00&lt;/td>&lt;td class="entry">0xFF00FF&lt;/td>&lt;td class="entry">0xFF0000&lt;/td>&lt;td class="entry">0x00FFFF&lt;/td>&lt;td class="entry">0x00FF00&lt;/td>&lt;td class="entry">0x0000FF&lt;/td>&lt;td class="entry">0x000000&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
+标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签:
 
-The other common screen technology for Garmin devices is LCD or AMOLED displays. These offer many more colors and can look vibrant, but they also use more power in outdoor use cases.
+Garmin设备的另一种常见的屏幕技术是LCD或AMOLED显示器.这些显示器提供了更多的颜色,可以看起来充满活力,但在户外使用时也会使用更多的电力.
 
 ### Visual Theme
 
-Different Garmin devices have different visual themes. Some devices go for dark text on light backgrounds, while others use a light text on a dark background:
+不同的Garmin设备有不同的视觉主题.有些设备使用光背景的暗文字,而其他设备则使用暗背景的轻文字:
 
-There can be reasons besides aesthetics for these decisions. On MIP devices, dark on light is context-specific and is used predominately during activities to provide better contrast. Because the screen is reflective, it achieves the best contrast in outdoor environments with a white background and black text.
+在MIP设备上,光线的暗光是具体的,主要是在活动中使用,以提供更好的对比度.由于屏幕是反射的,它在白色背景和黑色文本的户外环境中实现最佳对比度.
 
-On Edge products, the visual theme changes based on the time of day. These devices use a white background and black text during daylight hours for best contrast. At night, they have a black background and white text to be easier on the eyes in low-light use.
+在Edge产品上,视觉主题根据白天的时间变化.这些设备在白天使用白色背景和黑色文本,以获得最佳对比.夜间,它们具有黑色背景和白色文本,以便在低光使用时更容易于眼睛.
 
-Devices with AMOLED or LCD screens use a light text on a black background. By having a dark visual theme, devices with AMOLED displays can extend battery life while still incorporating beautiful imagery into the user interface.
+采用AMOLED或LCD屏幕的设备使用黑色背景上的光文.通过具有黑暗的视觉主题,AMOLED屏幕的设备可以延长电池使用寿命,同时还可以将美丽的图像纳入用户界面.
 
 #### Example
 
@@ -49,26 +49,26 @@ Dark on Light
 
 ### Typography
 
-There are two kinds of system fonts on a Garmin device: the text font and the number font. The text font should be used for textual data and labels, while the number font is used for numerical data. The system fonts that come with the device have been tested for readability for the device and should be used whenever possible.
+在Garmin设备上有两种系统字体:文字字体和数字字体.文字字体应用于文本数据和标签,而数字字体应用于数值数据.设备的系统字体已经被测试为设备可读性,并且应尽可能使用.
 
-Connect IQ allows developers to import a typeface into an app. These typefaces only allow for one-point size to be imported. Custom typefaces should be used to give a visual accent or to add a branding element to your app.
+连接 IQ 允许开发人员将字体进口到应用程序中.这些字体只允许进口一点尺寸. 定制字体应用于给出视觉强调或添加品牌元素.
 
 ### Headers and Footers
 
-Within the app, it is common to have a header portion at the top of the view. The header can have a small string of text or iconography to give the user context as to where they are within the application. On MIP products with fewer colors, it is common for the header to be a solid color. On LCD or AMOLED displays, the header should be a gradient that fades into black.
+在应用程序中,通常在视图顶部有一个标题部分.标题可以包含一个小文字串或图标图,以给用户提供他们在应用程序中的位置的语境.在较少颜色的MIP产品上,标题通常是固体颜色.在LCD或AMOLED显示器上,标题应该是一个渐变的黑色.
 
 ### Imagery
 
-On devices with LCD or AMOLED screens, subtle imagery on backgrounds can add a visual accent to pages.
+在使用液晶或AMOLED屏幕的设备上,背景上的微妙图像可以增加视觉 accent.
 
 ## Best Practices
 
--   When designing across multiple products, show the same content regardless of display size. Rely on standard patterns and system fonts for content to scale appropriately to the display size and resolution.
+- 在多个产品中设计时,无论显示尺寸如何都显示相同的内容. 依赖标准模式和系统字体,以便内容适合显示尺寸和分辨率.
 
--   Put the most Important information front and center. Device applications are not meant to be the focus of the user's attention. Clearly place the relevant information on screen, so the user can return to what they need to do quickly.
+- 将最重要的信息放在前面和中心.设备应用程序不应该成为用户的关注重点.明确将相关信息放在屏幕上,以便用户能够快速回到他们需要做的事情.
 
--   If you can only choose one, focus on light-on-dark themes. A light-on-dark theme will still look acceptable on devices with a default dark-on light display. On the other hand, a dark-on-light them will look out of place on an AMOLED display. Dark-on-light themes are best reserved for apps intended for outdoor activities on MIP displays.
+- 如果你只能选择一个,专注于光与黑暗主题.光与黑暗主题仍然会在具有默认暗光显示屏的设备上看起来是可接受的.另一方面,一个暗光显示屏将在AMOLED显示屏上看起来是不合适的.暗光主题最适合用于MIP显示屏的户外活动的应用程序.
 
--   Identify a theme color that speaks to your brand, and use that in your iconography and headers.
+- 确定一个与您的品牌交谈的主题颜色,并在您的标志图和标题中使用.
 
--   The system fonts have been tested for readability, but you will have varying typeface sizes across devices. Keep any text on device short, or have it flow across multiple pages.
+- 系统字体已进行可读性测试,但您的字体尺寸在设备上会有所不同. 保持设备上的任何文本短,或让它在多页面上流动.

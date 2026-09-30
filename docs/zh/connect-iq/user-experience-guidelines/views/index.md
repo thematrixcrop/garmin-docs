@@ -3,36 +3,36 @@ title: "Views"
 ---
 # Views
 
-Views are full-screen canvases for your information. They can display text, graphics, animations and other content.
+视图是您的信息的全屏画布.它们可以显示文本,图形,动画和其他内容.
 
 ## View Stack
 
-Garmin devices have limited screen real estate, so you typically do not have multiple views on the screen at the same time. Instead, views are stacked on top of each other. The user uses the back behavior to remove views from the stack.
+Garmin 设备具有有限的屏幕房地产,因此您通常不会同时在屏幕上多个视图.相反,视图被叠加在一起.用户使用后背的行为来删除视图.
 
 ## View Transitions
 
-The Garmin user interface toolkit offers several transitions to animate your views on and off screen. Views can:
+Garmin 用户界面工具包提供了几种转型,以动画屏幕内外的视图.
 
 -   Immediately appear
 
--   Slide from the left, right, top or bottom
+- 从左,右,上或下滑
 
--   Blink onto the screen
+- 点击屏幕
 
 
-You can use these transitions to push a page on top of a page, push a page away to reveal the page below, or replace the current page with another one.
+您可以使用这些转移将页面推向页面的顶部, 推移页面以显示下面的页面, 或取代当前页面以另一个.
 
-### Use Transitions to Suggest Page Hierarchy
+###使用过渡建议页面层次
 
-A common pattern in Garmin apps is to have a primary view of information and allow interaction via a menu hierarchy. When pushing the menus on screen, have them slide in from the right. Then, when the user dismisses them, they can slide away to the right.
+在 Garmin 应用程序中,一个常见的模式是通过菜单等级进行交互.在屏幕上按下菜单时,让它们从右侧滑进.然后,当用户丢弃它们时,它们可以滑向右侧.
 
-### Use Transitions to Suggest Page Loops
+###使用过渡建议页面循环
 
-Another common pattern in Garmin apps is the page loop, where the main screen offers a carousel of information that the user can loop through. With this pattern, either the up/down buttons or up/down swipes allow navigation between the pages. You can use sliding page transitions to give the illusion of this carousel of pages.
+在Garmin应用程序中,另一个常见模式是页面循环,主要屏幕提供了一个信息轮,用户可以通过.使用这种模式,上下按或上下滑鼠标允许页面之间的导航.您可以使用滑页过渡,给出页面的幻觉.
 
 ## Interaction Hints
 
-Sometimes there isn’t enough visual space to present the user with both information and navigation actions. In those cases, you may want to give a hint on what button to press or where on screen to tap to bring up a selection menu:
+有时没有足够的视觉空间来向用户提供信息和导航操作.在这些情况下,您可能需要给一个提示按哪个按或在屏幕上点击哪个位置来显示选项菜单:
 
 ### Example
 

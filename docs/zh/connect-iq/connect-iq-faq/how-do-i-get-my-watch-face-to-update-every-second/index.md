@@ -5,15 +5,15 @@ title: "How do I Make My Watch Face Update Every Second?"
 
 *Since API level 2.3*
 
-Some devices support updating the watchface every second. These devices will run normal updates via the `onUpdate()` method at the top of each minute like other devices, but will also call the `onPartialUpdate()` method each second. The `onPartialUpdate()` method has very strict limits set on execution time, and must complete within these limits. If the execution limit is exceeded, the `onPowerBudgetExceeded()` method will be invoked in the WatchFaceDelegate, and partial updates will stop executing for the remainder of the app life-cycle.
+一些设备支持每秒更新watchface. 这些设备会像其他设备一样在每分钟的顶部运行正常更新通过`onUpdate()`方法,但也会每秒调用`onPartialUpdate()`方法.`onPartialUpdate()`方法对执行时间设定了非常严格的限制,并且必须在这些限制范围内完成.如果执行限制超过,WatchFaceDelegate中将调用`onPowerBudgetExceeded()`方法,部分更新将停止执行应用程序生命周期的剩余时间.
 
-Minimizing the number of pixels updated on the display during `onPartialUpdate` is important because refreshing the display is an expensive part of the update process. For this reason, the Connect IQ API provides a couple of useful tools: `Dc.setClip()`and `BufferedBitmap`.
+在`onPartialUpdate`期间在显示器上更新的像素数量最小化是重要的,因为刷新显示器是更新过程中昂贵的一部分.
 
-The `Dc.setClip()` method is used to restrict the rendering window when drawing during an `onPartialUpdate()` callback. All pixels in the active clipping area are considered modified every time any pixel in the clip is modified.
+采用`Dc.setClip()`方法,在`onPartialUpdate()`回调中限制绘制时的染窗口.每次剪辑中的任何像素都被修改时,将所有活跃剪辑区域中的像素都视为修改.
 
-For more complex graphics, resources can be rendered off-screen in one or more `BufferedBitmap` objects and copied as a single object to redraw background pixels during `onPartialUpdate()`. Rendering in a `BufferedBitmap` should be completed during `onUpdate()` since it is not subject to the execution time limits as `onPartialUpdate()`.
+对于更复杂的图形来说,资源可以在一个或多个`BufferedBitmap`对象中在屏幕外呈现并作为单个对象复制,在`onPartialUpdate()`期间重新绘制背景像素.在`onUpdate()`期间应完成在`BufferedBitmap`中的呈现,因为它不受`onPartialUpdate()`的执行时间限制.
 
-The Analog watch face, included in the SDK samples, is an example of a watchface that uses every second watchface updates.
+在SDK样本中包含的模拟表面是使用每秒更新表面的表面的一个例子.
 
 ```java
 module WatchUi

@@ -3,17 +3,17 @@ title: "How do I communicate with REST services?"
 ---
 # 如何与 REST 服务通信？
 
-The Connect IQ Communication API is the API that brings the wearable web to Garmin devices. However, there are some subtleties to how to expose a web service to a Garmin device.
+连接IQ通信API是将可穿戴网络带到Garmin设备的API.
 
-## The Bluetooth Smart Connection
+##蓝牙智能连接
 
-Because all of the communication takes place over a Bluetooth Smart (you may know this as Bluetooth LE or BLE) connection the device is bandwidth limited. Data transfers through the Connect IQ SDK will have a transfer speed less than 1 Kb/s, generally between 400 and 800 bytes/s. A single tweet being pulled from Twitter's API can be upwards of 2.5 Kb. We'll do some magic under the hood to minimize the amount of data that's transferred from the phone to the watch but you can quickly see how pulling a user's last few Tweets could be somewhat time consuming.
+由于所有通信都通过蓝牙智能 (您可能知道这为蓝牙LE或BLE) 连接进行,设备带宽有限.通过Connect IQ SDK传输数据的传输速度将低于1Kb/s,通常在400至800字节/s之间.从Twitter的API中抽取单个推文可能高达2.5Kb.我们将在罩杯下进行一些魔法,以最大限度地减少从手机传输到手表的数据量,但您可以快速看到如何抽取用户最后几条推文可能会耗时.
 
-## Less Is More
+## 减少是更多的
 
-This classic proverb couldn't be more true when considering JSON responses or messages between a Connect IQ app and a companion mobile app. If you are writing a web service to return tweets which your Connect IQ app will be calling consider what information you really need to have at the Connect IQ level. You can probably get away with only having the text of a Tweet and the username of the person who Tweeted said Tweet. Now you're looking at only having to transfer about 250 bytes per Tweet.
+如果您正在编写一个网络服务来返回您的Connect IQ应用程序将打电话,请考虑您真正需要在Connect IQ级别上拥有哪些信息.您可能只能使用Twitter的文本和 Tweet的用户名.现在您只需要将每条 Tweet 转移约250字节.
 
-Referencing the example result on [this](https://dev.twitter.com/rest/reference/get/search/tweets) Twitter API page, a resulting Tweet's JSON would be:
+在[this](https://dev.twitter.com/rest/reference/get/search/tweets)Twitter API 页面上引用示例结果时,结果的推文的 JSON 将是:
 
 ```javascript
 {
@@ -117,7 +117,7 @@ Referencing the example result on [this](https://dev.twitter.com/rest/reference/
 }
 ```
 
-Using your web service to parse and minimize the data down to the aforementioned fields would result in a much smaller JSON object:
+使用您的网页服务分析和最小化数据到上述领域将导致一个更小的JSON对象:
 
 ```javascript
 {

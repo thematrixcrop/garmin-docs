@@ -1,34 +1,34 @@
 ---
 title: "Developing the Concepts"
 ---
-# Developing the Concepts
+# 发展概念
 
-With an understanding of the problem you want to solve and who you are solving it for, you can focus on a design that meets these needs. Now we can begin looking at the important content and workflows to achieve the user’s goals.
+现在我们可以开始研究重要内容和工作流程,以实现用户的目标.
 
 ## 应用类型
 
-Unlike other platforms, Connect IQ apps have context specific types that define their location in the device interface, as well as their interaction model. The app type you choose should be based on the problem statement of the user. Is your goal to augment the workout experience? You should make a data field. Are you looking to let the user monitor a metric outside of an activity? You should use an app. Does your app have information that updates throughout the day? Add a glance to your device app.
+与其他平台不同,Connect IQ应用程序具有特定的环境类型,定义了它们在设备接口中的位置,以及它们的交互模式.您选择的应用类型应基于用户的问题声明.您的目标是增强训练体验吗?您应该创建一个数据字段.您是否希望让用户在活动之外监测一个指标?您应该使用应用程序.您的应用程序是否有信息在一天内更新? 添加一击设备应用程序.
 
-The app type impacts your workflow by placing limits on the potential workflows:
+应用程序类型影响您的工作流程,通过限制潜在的工作流程:
 
--   Watch faces and data fields do not take user input, but the user can enter an app-defined settings flow on the device or can edit settings in mobile.
+- 观看面孔和数据字段不采用用户输入,但用户可以在设备上输入应用定义的设置流程或在移动中编辑设置.
 
--   Data fields, with permission from the user, can display alerts if the user achieves a milestone.
+- 如果用户达到里程碑,数据字段可以通过用户的许可显示警报.
 
--   Data fields can record additional information into an activity file.
+- 数据领域可以将额外的信息记录在活动文件中.
 
--   The base page of a widget has limits placed on the inputs to allow user navigation of the carousel. On button products, this is typically done with the up and down buttons.
+-  widget 的基本页面设置了对输入的限制,以允许用户在车轮导航.在按产品上,这通常是通过上下按完成的.
 
 
 ### Watch Faces
 
-Watch faces are the home screen of Garmin wearables. They do not accept direct user input, but they can have settings that are editable within the Connect IQ mobile app. On devices with API level 3.2, watch faces can have a launchable on-device configuration flow.
+腕表面孔是Garmin可穿戴设备的首页屏幕.它们不接受直接用户输入,但它们可以在Connect IQ移动应用程序中进行编辑的设置.在API级3.2的设备上,腕表面孔可以具有可启动的设备配置流.
 
 ![Watch faces](/connect-iq/resources/ux-guide/watch-face.png)
 
 ### Data Fields
 
-Data fields are plug-ins that can display information within a Garmin activity. After they are installed, the user can place the data field anywhere within the page loop of their activity. To protect the Garmin experience, data fields aren’t allowed to take input. They can have settings that are editable within the Connect IQ mobile app. On devices with API level 3.2, watch faces can have a launchable on-device configuration flow.
+数据字域是可以在 Garmin 活动中显示信息的插件.安装后,用户可以在其活动页面循环中任何地方放置数据字段.为了保护 Garmin 体验,数据字段不被允许输入.它们可以在 Connect IQ 移动应用程序中进行编辑的设置.在 API 级别 3.2 的设备上,腕表面孔可以具有可启动的设备配置流.
 
 ![Data fields](/connect-iq/resources/ux-guide/data-fields.png)
 
@@ -46,13 +46,13 @@ Glances
 
 ### Audio Content Providers
 
-Audio content providers function as plug-ins to the music player. The user can select them to be their audio source. When the user launches the audio player, they will have access to the media controls that communicate with your app, but the user can perform deeper interactions by going to the media player sub-menu and tapping on your app icon. From here, you can add flows for downloading and managing content and beginning playback.
+音频内容提供商作为音乐播放器的插件.用户可以选择它们作为其音频源.用户启动音频播放器时,他们将获得与应用程序通信的媒体控制,但用户可以通过进入媒体播放器子菜单并点击应用程序图标进行更深入的互动.从这里,您可以添加下载和管理内容并开始播放的流.
 
 ![Audio content provider](/connect-iq/resources/ux-guide/audio-content-providers.png)
 
 ### Device Apps
 
-Device apps are launchable experiences that do not time out. Device apps can take input, manipulate the page stack and communicate with the cloud and with wireless sensors. The user exits them by backing out of the main page. On devices with API level 4.0, you can add a glance for device apps. Examples of device apps include apps that record activities, games and apps that integrate rich content onto the device.
+设备应用程序是可启动的体验,不会停机.设备应用程序可以接收输入,操纵页面堆,并与云和无线传感器通信.用户通过退出主页后退.在API级别4.0的设备上,您可以添加设备应用程序的视图.设备应用程序的例子包括记录活动,游戏和应用程序,将丰富的内容集成到设备上.
 
 ![Device apps](/connect-iq/resources/ux-guide/device-apps.png)
 
@@ -60,6 +60,6 @@ Device apps are launchable experiences that do not time out. Device apps can tak
 
 Connect IQ apps are typically “information forward,” meaning the key information is presented up front, and there are limited interactions 更多信息:
 
--   Data fields always display the key information. Any customized setup flow requires the user to go to the data field settings.
+- 数据领域总是显示关键信息.任何定制设置流都要求用户进入数据领域设置.
 
--   Widgets should always display the core information on the base page. They can allow the user to enter a flow to see more information.
+-  widget 应该始终在基页上显示核心信息.它们可以让用户进入流量来查看更多信息.

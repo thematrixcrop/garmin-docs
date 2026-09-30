@@ -3,15 +3,15 @@ title: "Data Fields"
 ---
 # Data Fields
 
-Garmin activities typically present the user with a page loop of data field pages. In the activity settings, the user can subdivide the page using a pre-defined set of data field layouts. In each subdivision, the user can assign a data field that displays a metric relevant to the activity.
+Garmin 活动通常向用户提供数据字段页面循环.在活动设置中,用户可以使用预定义的数据字段布局组分类页面.在每个分类中,用户可以分配一个与活动相关的指标的数据字段.
 
-Custom data fields allow developers to extend the Garmin workout experience. Your data field can compute new metrics, read data from sensors over ANT or Bluetooth Low Energy, show alerts, and record information to Garmin Connect.
+您的数据字段可以计算新的指标,通过ANT或蓝牙低能量的传感器读取数据,显示警报和记录信息到Garmin Connect.
 
-Handling direct user input is reserved for the activity experience itself. The inputs for your data field should come from the activity, sensors or the configuration.
+处理直接的用户输入仅用于活动体验本身.您的数据场的输入应来自活动,传感器或配置.
 
 ## Data Field Layouts
 
-When designing your data field, you cannot assume the user will choose to give your data field a full-screen presentation. Some users like having multiple pages with one or two data fields, while others will fill their data pages full of information. Your data field should support visually filling a full page, while also providing a summarized view if placed in a smaller presentation.
+在设计数据字段时,您不能假设用户会选择给您的数据字段一个全屏介绍.有些用户喜欢有一个或两个数据字段的多个页面,而其他人则会填充他们的数据页面满了信息.您的数据字段应该支持视觉填写一个完整的页面,同时在更小的介绍中提供总结视图.
 
 ### Example
 
@@ -33,30 +33,30 @@ Four field layout:
 
 ### Obscurity
 
-Based on where the user places your data field on a page, part of the visual area may be obscured by the curvature of the screen. This could reduce your visual area for labels or other elements of your design. Connect IQ will communicate if the top, left, right or bottom of your visual area is obscured by the curvature. Based on this, you can rearrange your visual layout to adapt to the placement, for example by moving labels to the bottom to give them the most visual area.
+根据用户在页面上放置数据场的位置,视觉区域的一部分可能会被屏幕的曲线掩盖.这可能会减少您的视觉区域,以减少标签或您的设计的其他元素.连接智商将通信,如果您的视觉区域的顶部,左侧,右侧或底部被曲线掩盖.基于此,您可以重新安排您的视觉布局以适应位置,例如将标签移动到底部,以给它们最多的视觉区域.
 
 ![Obscurity example](/connect-iq/resources/ux-guide/obscurity-example.png)
 
 ## Settings
 
-Data fields are not allowed to take direct user input, but the user can configure them using mobile and on-device settings. Mobile settings let the user modify a set of app properties. Your app will be notified when they change.
+数据字域不允许直接接收用户输入,但用户可以使用移动和设备设置来配置它们.移动设置允许用户修改一组应用程序属性.当应用程序发生变化时,您将被通知.
 
-On System 4 and above devices, Connect IQ data fields can have a launchable configuration flow built into the watch face. Data field settings are available from the *Connect IQ Settings* menu item in the activity settings menu. From within the settings, flow you can push and pop views to enable configuration.
+在系统4及以上的设备上,Connect IQ数据字段可以在表面内内建一个可启动的配置流.数据字段设置可从活动设置菜单中的*Connect IQ设置*菜单项中获得.从设置中,可以推出流量并启用设置视图.
 
 ## Alerts
 
-Because data fields are placed in a page loop, they are not guaranteed to be visible during a workout. If you want to alert the user to an event, you can push a full-page alert to the screen. The alert is dismissible or will auto-dismiss after a period of time.
+由于数据字段被放置在页面循环中,因此不保证在训练期间可见.如果您想向用户提醒事件,您可以将全页的警告推到屏幕上.该警告是不可接受的,或者会自动丢弃.
 
-By default, alerts for a data field are disabled. The user needs to go to the activity *Settings* -> *Alerts* -> *Connect IQ* and select the app they wish to enable alerts for.
+默认情况下,数据字段的警报被禁用.用户需要进入活动 *设置* -> *警报* -> *连接IQ*,然后选择他们希望启用警报的应用程序.
 
-## Recording Information to Garmin Connect
+## 录取信息到Garmin连接
 
-Data fields can define and record up to 16 metrics in an activity file. These metrics can be recorded up to once a second as part of the activity, as part of the lap information or as part of the summary information. If the information is recorded as part of an activity, it can be displayed as an area chart in Garmin Connect. In addition to the data, you also have control over the translatable label, the translatable metric name and the color of the area chart.
+数据字段可以定义和记录一个活动文件中最多16个指标.这些指标可以作为活动的一部分,作为圈信息的一部分或作为总结信息的一部分记录到每秒一次.如果信息被记录为活动的一部分,则可以在Garmin Connect中显示为区域图.除了数据外,您还可以控制可翻译的标签,可翻译的指标名称和区域图的颜色.
 
 ## Best Practices
 
--   If your data field shows a single metric, implementing a *SimpleDataField* will handle all the labeling and layout logic for you.
+- 如果您的数据字段显示出单个指标,则实现*SimpleDataField*将为您处理所有标签和布局逻辑.
 
--   Use the on-device settings flow for authentication, pairing with wireless sensors and configuration flows.
+- 使用设备内设置流进行验证,与无线传感器和配置流进行配对.
 
--   For recorded data, choose a color that matches your brand but works with the color schemes of Garmin Connect activities in both web and mobile.
+- 为了记录数据,请选择与您的品牌匹配的颜色,但与 Garmin Connect 网络和移动活动的颜色方案相符.

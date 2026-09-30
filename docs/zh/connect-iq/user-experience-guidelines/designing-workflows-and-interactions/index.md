@@ -3,44 +3,44 @@ title: "Designing Workflows and Interactions"
 ---
 # Designing Workflows and Interactions
 
-Once you have your information architecture established, you can begin converting it into a workflow.
+一旦您建立了信息架构,您就可以开始将其转换为工作流程.
 
 ## Hierarchical Navigation
 
-The traditional Garmin user interface is hierarchical, where views are stacked based on the user's selections. Every device has a standard behavior for navigating the selections and backing out of the hierarchy, but these standard behaviors can be different from product to product.
+传统的Garmin用户界面是层次性的,视图根据用户的选择堆叠.每个设备都有导航选择和退出层次的标准行为,但这些标准行为可以因产品而异.
 
-Try to limit the depth of your navigational hierarchy. Focus on quick selections and not forcing the user to make multiple choices.
+试着限制导航层次的深度. 专注于快速选择,而不是迫使用户做出多种选择.
 
 ## Behaviors
 
-The following abstract behaviors apply to all Garmin devices.
+下面的抽象行为适用于所有Garmin设备.
 
-| Select | Action to pick an item out of a set. |
+| Select |选出一组物品的动作.|
 | --- | --- |
-| Start/Stop | Action to mark the beginning or ending. On button products, this is often the same as select. |
-| Next/Previous | Action to either pick the next or previous item or navigate to the next or previous page in the page loop. On button products, this is often the up/down buttons. |
-| Back | Action to back out of an app screen or view and return to the previous screen or view. |
-| Menu | Action that brings up the settings menu for the application. |
+| Start/Stop |在按产品上,这通常与选择相同.|
+| Next/Previous |在按产品上,通常是上下按.|
+| Back |退出应用程序屏幕或视图,然后返回之前的屏幕或视图.|
+| Menu |显示应用程序设置菜单的操作.|
 
 ## Common Patterns
 
-Take advantage of the following patterns found on Garmin devices when making the conversion from information architecture to workflow:
+在从信息架构转换到工作流程时,利用 Garmin 设备上发现的以下模式:
 
 ### Page Loops
 
-Page loops are carousels of views. When the user is in a page loop, the user interface presents a set of pages of information that provide different data and insights to the user. There are standard behaviors for going to the next and previous pages. Going past the last page typically loops the user back to the first page.
+页面循环是视图的轮.当用户在页面循环中时,用户界面会呈现一组信息页面,为用户提供不同的数据和见解.往下一个和前一个页面的行为标准.过上最后一页通常会把用户返回第一页.
 
 ![Page loops](/connect-iq/resources/ux-guide/page-loops.png)
 
 ### Dialogs
 
-Dialogs are typically a modal screen with a message that the user must confirm reading to continue. These can be used for error messages, instructions or other forms of guidance.
+对话通常是一个模拟屏幕,用户必须确认阅读才能继续.这些可以用于错误消息,指令或其他形式的指导.
 
 ![Dialogs](/connect-iq/resources/ux-guide/dialogs.png)
 
 ### Progress Bars
 
-Progress bars tell the user to wait for an asynchronous action to be completed. There are two styles of progress bar: A standard progress bar that counts from 0% to 100%, and a busy progress bar for when the completion time cannot be quantified.
+进步告诉用户等待一个异步操作完成.进步有两种类型:一个从0%到100%的标准进步,一个无法量化完成时间的繁忙进步.
 
 ![Progress bars](/connect-iq/resources/ux-guide/progress-bars.png)
 
@@ -52,89 +52,89 @@ Confirmations are pages that confirm a user action. They 可用于 confirm a dec
 
 ### Selection Menus
 
-Selection menus allow a user to choose between two or more items. The items are presented on a one-dimensional list with optional iconography.
+选择菜单允许用户在两个或多个项目之间选择.这些项目被呈现在一个维度清单上.
 
 ![Selection menu](/connect-iq/resources/ux-guide/selection-menu.png)
 
 ### Settings Menus
 
-A Settings menu is typically available from the base view of the application via the menu behavior. The settings menu typically allows the user to alter global settings for the app.
+设置菜单通常通过菜单行为从应用程序的基本视图可用.设置菜单通常允许用户改变应用程序的全球设置.
 
 ![Settings menu](/connect-iq/resources/ux-guide/settings-menu.png)
 
 ## Interactions
 
-When mapping out your workflow, it’s inevitable that you will face some decisions that cannot be solved by common UI patterns. At this point, you’ll need to think about the best way for a user to make the decision on the device.
+在绘制你的工作流程时,你将会面临一些无法通过常见的UI模式解决的决定.此时,你需要考虑用户在设备上做出决定的最佳方式.
 
-Garmin designs products with this use case in mind, and one key consideration is if the product is touchscreen or push-button. For those who have primarily developed in the mobile space, physical buttons can be foreign. Touchscreens function well in indoor environments, but they can be difficult to use with gloves, when wet or when your body is in motion. For these situations, the tactile feedback of buttons makes for a better experience.
+Garmin设计产品以这种使用情况为基础,一个关键考虑因素是,产品是否是触摸屏或按.对于那些主要是在移动空间开发的用户来说,物理按可能是外来的.触摸屏在室内环境中很好运行,但在手套,湿或身体在运动时使用可能很困难.对于这些情况来说,按的触摸反使得体验更好.
 
-Connect IQ does allow for separate, tailored experiences for touchscreens versus push-button devices, but it also provides tools that allow a single implementation for both. Ultimately, it is up to you to choose if you want to tailor your app’s interaction model to these different input patterns or not.
+连接智能确实允许触摸屏与按设备进行单独的定制体验,但它还提供了允许两者都实现单一的工具.最终,你决定是否想根据这些不同的输入模式定制应用程序的交互模式.
 
 ### Input Patterns
 
-Here are the common input patterns for Garmin devices:
+以下是Garmin设备的常见输入模式:
 
 ![](/connect-iq/resources/ux-guide/five-button.png)
 
-The **five-button** configuration has three buttons on the left and two buttons on the right. The buttons perform the following actions:
+五按配置有左边三个按,右边两个按.按执行以下操作:
 
--   Top Left – Press to toggle the backlight. Press and hold to access the controls menu.
+- 左上方  按下来切换后光. 按下来保持访问控制菜单.
 
--   Middle Left – Press for a previous/up behavior. Press and hold for a menu behavior.
+- 中左  按一下前/上的行为. 按一下并保留菜单的行为.
 
--   Bottom Left – Press for a next/down behavior.
+- 下左  按下来/下来行为.
 
--   Top Right – Press for a select behavior. Commonly used for the start/stop action on Garmin activities.
+- 顶右  按一下选择的行为. 通常用于 Garmin 活动的启动/停止操作.
 
--   Bottom Right – Press for a back behavior.
+- 下右  按下背部的行为.
 
 
 ![](/connect-iq/resources/ux-guide/touchscreen-two-button.png)
 
-The **touchscreen two-button** configuration combines a touchscreen with two navigation buttons:
+触摸屏两个按**配置组合了触摸屏和两个导航按:
 
--   The top button is a start/stop button. Press and hold to access the controls menu.
+- 上方按是启动/停止按.
 
--   The bottom button performs the back behavior. Press and hold for a menu behavior.
+按下按执行后背行为.
 
 
-The following actions are also standard:
+下面的行动也是标准的:
 
--   Swiping up will perform the previous/up behavior.
+- 向上滑动将执行前/上的行为.
 
--   Swiping down will perform the next/down behavior.
+- 滑向下将执行下一个/下的行为.
 
--   Menus can be dragged and flicked with the touch screen.
+- 菜单可以通过触摸屏拖动和动.
 
--   Tapping on a screen item performs a select behavior.
+- 点击屏幕的项目会执行选择行为.
 
--   Swiping right to left performs a back behavior.
+- 往右往左转会执行背部行为.
 
 
 ![](/connect-iq/resources/ux-guide/edge-touchscreen-one-button.png)
 
-The **touchscreen one-button edge** configuration combines a touchscreen with a power button. All behaviors are done via the touch screen:
+触摸屏一个按边缘**配置结合触摸屏和电源按.所有行为都通过触摸屏进行:
 
--   Swiping left to right will perform the previous/up behavior.
+- 滑向左向右将执行前/上的行为.
 
--   Swiping right to left will perform the next/down behavior.
+- 滑向右向左将执行下/下的行为.
 
--   Menus can be dragged and flicked with the touch screen.
+- 菜单可以通过触摸屏拖动和动.
 
--   Tapping on a screen item performs a select behavior.
+- 点击屏幕的项目会执行选择行为.
 
--   Tapping the on-screen back button performs the back action.
+- 按屏幕后面按执行后面操作.
 
--   Tapping the on-screen hamburger menu performs the menu action.
+- 在屏幕上点击汉堡菜单执行菜单操作.
 
 
 ### Mobile App Settings
 
 ![](/connect-iq/resources/ux-guide/mobile-app-settings.png)
 
-Connect IQ allows the developer to have a configurable set of editable app settings available to the user in the Garmin Connect™ mobile app, the Connect IQ™ mobile app or in Garmin Express.
+连接IQ允许开发人员在Garmin ConnectTM移动应用程序,Connect IQTM移动应用程序或在Garmin Express中设置可编辑的应用程序设置.
 
-These settings can have a label and a prompt. The value can be any of the following:
+这些设置可以有标签和提示.值可以是以下任何一个:
 
 -   Boolean
 
@@ -153,38 +153,38 @@ These settings can have a label and a prompt. The value can be any of the follow
 -   Password
 
 
-App settings can be a way to make your app more configurable without adding a complicated on-device UI. Connect IQ apps can be informed when the user changes their settings in mobile to provide instant feedback.
+应用程序设置可以是让您的应用程序变得更可配置的方法,而不需要添加复杂的设备内UI. 当用户在移动中更改设置时,Connect IQ应用程序可以被通知,以提供即时反.
 
 ## Mobile Authentication
 
-Cloud services require users to authenticate themselves, most often with a username and password. On mobile devices, these flows are very easy, but on Garmin devices with limited input capabilities, entering credentials can be a challenge.
+云服务要求用户自行验证,通常使用用户名和密码.在移动设备上,这些流程非常容易,但在具有有限输入能力的Garmin设备上,输入凭证可能是一个挑战.
 
-Connect IQ has a standard authentication method that allows the device to hand authentication over to the mobile device. The app can choose to hand authentication either to the Garmin Connect mobile app, or in System 5 to the Connect IQ store mobile app. This mechanism requires the cloud service to support OAUTH2 authentication via a web browser view.
+连接IQ有一个标准的身份验证方法,允许设备将身份验证交给移动设备.应用程序可以选择将身份验证交给Garmin Connect移动应用程序,或者在系统5中交给Connect IQ商店移动应用程序.此机制要求云服务通过网页浏览器视图支持OAUTH2身份验证.
 
-At the point where you need the user to authenticate, include a dialog that directs the user to open the appropriate app on their phone. If the user has notifications enabled for the appropriate app on their mobile device, they will receive a mobile notification, as well. When they enter the mobile app, they will be prompted to begin authentication on their phone.
+在您需要用户认证时,请包含一个对话框,指示用户在手机上打开适当的应用程序.如果用户在手机上启用了适当的应用程序的通知,则他们也将收到移动通知.进入移动应用程序时,他们将被要求开始在手机上认证.
 
 ![](/connect-iq/resources/ux-guide/mobile-authentication.png)
 
-When credential entry is complete, the web view will close, and the credentials will be sent to the Connect IQ app. At this point, your Connect IQ app should continue with its workflow.
+当凭证输入完成时,网页视图将关闭,并将凭证发送到Connect IQ应用程序.此时,您的Connect IQ应用程序应该继续其工作流程.
 
 ## Best Practices
 
-Here are some best practices for defining interactions in your app:
+以下是定义应用程序中的互动的最佳实践:
 
--   Keep input to a minimum. Garmin devices offer a wealth of information to the user. All this information should be available within three to four interactions with the device. The more the user is interacting with an app the less they are paying attention to the task at hand.
+- 保持输入量为最低.Garmin设备为用户提供大量信息.所有这些信息都应该在设备的三到四次互动内获得.用户与应用程序的互动越多,他们就越不关注所需任务.
 
--   Stick with the up/down page loop model (versus left and right) for the best experience on both. Horizontal page loops do not map well to the button configuration.
+- 坚持上下页循环模型 (反左和右) 来获得两者之间的最佳体验.水平页循环不适合按配置.
 
--   If you’d like to have on-screen buttons for your touchscreen app, make sure the button actions are intuitive and obvious.
+- 如果您想为您的触摸屏应用程序设置屏幕按,请确保按操作是直观的和明显的.
 
--   If your app is intended to be used during physical activity, try to limit the number of interactions in your app. Let the user focus on their activity and not your application.
+- 如果您的应用程序是用于身体活动时,请尽量限制应用程序中的交互数量.让用户专注于他们的活动而不是您的应用程序.
 
--   Use text entry sparingly on device. Instead, use mobile app settings or generate useful default strings that the user can change later in mobile or on web.
+- 在设备上使用文本输入. 相反,使用移动应用程序设置或生成有用的默认字符串,用户可以在手机或网上更改.
 
--   Use the native menus, confirmations and progress bars. They will automatically have the product personality, and users will already be familiar with the interactions.
+- 使用本地菜单,确认和进步.它们将自动具有产品个性,用户将已经熟悉互动.
 
--   The back behavior is one of the most common behaviors on Garmin devices. Avoid modifying this behavior in your app.
+- 后背行为是Garmin设备上最常见的行为之一. 避免在应用程序中修改这种行为.
 
--   Don’t require the user to use mobile app settings before they can use your app. The app should be usable without requiring the user to enter the settings flow.
+-  app不要求用户使用移动应用程序设置,才能使用您的应用程序.应用程序应该可以使用,而不需要用户输入设置流.
 
--   Do not depend on the mobile notification for your authentication flow. Always give clear guidance directing the user to the appropriate mobile app or website within your Connect IQ app.
+- 不要依赖移动通知来进行身份验证流程. 始终提供明确的指导,引导用户进入您的Connect IQ应用程序中的适当的移动应用程序或网站.

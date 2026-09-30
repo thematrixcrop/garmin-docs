@@ -5,7 +5,7 @@ title: "How do I Override The Goal Animation?"
 
 *Since API level 1.3.0*
 
-The screen displayed when activity tracking goals are reached can be overridden by the active watchface. This is done by implementing the `getGoalView()` function in the application's `AppBase` class.
+当实现活动跟踪目标时显示的屏幕可以被激活的表表面覆盖.通过在应用程序的`AppBase`类中实现`getGoalView()`函数.
 
 ```java
 class AppBase {

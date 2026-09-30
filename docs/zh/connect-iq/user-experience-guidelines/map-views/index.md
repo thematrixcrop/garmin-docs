@@ -3,12 +3,12 @@ title: "Map Views"
 ---
 # Map Views
 
-For products with onboard cartography, the Garmin UI allows you to push the native map view to the screen. You can overlay your own graphic elements over the map and change the view of the map to design your UI around it.
+对于内载地图图的产品,Garmin UI允许您将本地地地图视图推到屏幕上.您可以在地图上覆盖您自己的图形元素,并更改地图的视图,以围绕地图设计您的UI.
 
 ## Points and Polylines
 
-Maps allow bitmaps to be geo-located on the map to highlight points of interest. Maps also allow polylines to be overlaid for display of courses and boundaries.
+地图允许位图在地图上地理位置,以突出兴趣的点.地图还允许对课程和边界的显示叠加多线.
 
 ## Previewing, Browsing and Tracking
 
-Map views can be used in three contexts. A map can be pushed to the screen that previews a given area. In this mode, user input is directed to any interface elements on the screen. When browsing, the user can pan and zoom the map to control the focus areas. Finally, tracking will center the map on the user's GPS location.
+图景可在三个背景中使用.一个图景可推向预览给定的区域的屏幕.在这种模式下,用户输入将转向屏幕上的任何接口元素.在浏览时,用户可以缩和放大地图来控制焦点区域.最后,跟踪将中心地图在用户的GPS位置.

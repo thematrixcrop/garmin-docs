@@ -6,11 +6,11 @@ title: "How do I optimize bitmaps in my app?"
 ![](/connect-iq/resources/faq/cake_undithered.jpg)
 ![](/connect-iq/resources/faq/cake_dithered.png)
 
-In our world of HTML, megapixels, and gigabytes it can be easy to forget the resource usage of bitmap images. Connect IQ's constrained embedded environment requires developers to consider the cost of bitmaps when making pages. Thankfully, the Connect IQ SDK provides a number of tools to control your image costs while make a great looking app.
+在我们的HTML,megapixel和gigabyte的世界里,很容易忘记位图图像的资源使用.Connect IQ的局限嵌入式环境要求开发人员在制作页面时考虑位图的成本.幸运的是,Connect IQ SDK提供了许多工具来控制您的图像成本,同时制作出一款看起来很棒的应用程序.
 
 ## Bit Depth
 
-The bit depth of the image refers to how many bits are being used to represent each pixel. For every bit you add per pixel, you double the number of colors you can represent as well as double the memory used for the entire image. This affects how many colors you can represent in the image, and the amount of memory the image will use when it is loaded from resources. In this table, we show the number of colors and the memory size of a 100 x 100 image. The higher the bit depth, the more colors you can use at the cost of more memory used.
+图像的比特深度是指用来表示每个像素的比特数量.每一个比特的每一个比特,你可以增加两倍的颜色数量,以及对整个图像的使用数量.这会影响图像中可以表示多少颜色,以及图像将使用的存储量.在本表中,我们显示了颜色数量和100 x100图像的存储量.比特深度越高,你可以使用更多颜色以牺牲更多的存储量.
 
 | **Bit Depth** | **Colors** | **Image Size (KB)** |
 | --- | --- | --- |
@@ -20,20 +20,20 @@ The bit depth of the image refers to how many bits are being used to represent e
 | 8 | 256 | 9.77 |
 | 16 | 65536 | 19.53 |
 
-Connect IQ supports images of bit depth of 1 BPP, 2 BPP, 4 BPP, 8 BPP, and 16 BPP.
+连接 IQ支持1 BPP,2 BPP,4 BPP,8 BPP和16 BPP的位深度图像.
 
 ## Palettes
 
-Different Connect IQ devices have different display bit depths. Some products are able to display thousands of colors, while others are constrained to 16 colors. In general devices fall under three categories:
+不同的Connect IQ设备具有不同的显示位深度.有些产品能够显示数千种颜色,而其他产品仅限于16种颜色.
 
--   16 Color Palette: The product is only able to display 16 colors
+- 16色调:产品只能显示16种颜色
 
--   RGB222: The product is able to display 64 colors. In this scenario, 2 bits are available for red, green, and blue.
+- RGB222:该产品可显示64种颜色.在这种情况下,可为红色,绿色和蓝色提供2位.
 
--   RGB565: The product is able to display 65535 colors. In this scenario, 5 bits are available for red and blue, and 6 bits are available for green.
+- RGB565:该产品可显示65535种颜色. 在这种情况下,红色和蓝色可用5位,绿色可用6位.
 
 
-The [\`Dc.setColor API\`](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) takes an RGB888 color as an input. It will always map the input color to the closest color available on the device.
+[\`Dc.setColor API\`](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)将RGB888颜色作为输入. 它将始终将输入颜色映射到设备上最接近可用的颜色.
 
 | **Product** | **Colors** | **Bit Depth** |
 | --- | --- | --- |
@@ -69,23 +69,23 @@ The [\`Dc.setColor API\`](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-inst
 
 ## 16 Color Palette
 
-While the goal is to always provide the best display possible, sometimes a device are constrained by the display technology used or by the amount of memory used by the underlying screen buffer. The choice to only support a 16 color palette is often made to sacrifice color depth at the expense of other product features.
+虽然目标是始终提供最佳显示屏,但有时设备被使用的显示技术或底层屏幕缓冲器所使用的内存量限制.只支持16色调的选择通常是为了牺牲颜色深度而牺牲其他产品功能.
 
-For devices that use a 16 color palette, the colors are programmed into the device. The [Graphics color constants](/connect-iq/api-docs/Toybox/Graphics/) map directly to the 16 available colors
+对于使用16种颜色调色的设备,颜色被编程到设备中.[Graphics color constants](/connect-iq/api-docs/Toybox/Graphics/)地图直接向16种可用的颜色
 
 ![](/connect-iq/resources/faq/16_color_palette.png)
 
 ## RGB222
 
-Some devices have 64 available colors. These colors are chosen using 2 bits for red, 2 bits for green, and 2 bits for blue. The graphics system will internally represent bitmaps as 8 bits per pixel.
+一些设备有64种可用的颜色.这些颜色是使用红色的2位,绿色的2位,蓝色的2位来选择的.图形系统将内部表示每像素的8位.
 
 ## RGB565
 
-Some devices have 65535 available colors. These colors are chosen using 5 bits for red, 6 bits for green, and 5 bits for blue. The graphics system will internally represent bitmaps as 16 bits per pixel.
+一些设备有65535种可用的颜色.这些颜色是使用红色的5位,绿色的6位和蓝色的5位来选择的.图形系统将内部表示每像素的16位.
 
 ## Resources
 
-Connect IQ has a number of options to help developers specify how they want their images imported.
+连接智能有多种选项来帮助开发人员确定他们想要如何进口图像.
 
 ```xml
 <!-- Use the dithering option to enable or disable auto dithering of the image -->
@@ -103,11 +103,11 @@ Connect IQ has a number of options to help developers specify how they want thei
     </bitmap>
 ```
 
-There's a lot of options in that block, so let's go through them one by one.
+这块区有很多选择,所以让我们一个接一个来看看.
 
 ## Dithering
 
-Connect IQ by default uses [Floyd-Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering) when importing images. The dithering algorithm helps correct for the error when mapping a high color image to a low color space representation. This is preferable when importing a photograph, but when importing a graphic it can introduce random pixels that are not wanted. To directly map colors, set the dithering attribute to "none".
+默认连接IQ在输入图像时使用[Floyd-Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering). 旋算法在将高颜色图像映射到低颜色空间表示时有助于纠正错误. 在输入照片时最好,但在输入图形时可以引入不需要的随机像素.
 
 ```xml
 <bitmap id="Logo" x="center" y="12" filename="Logo.png" dithering="none">
@@ -115,13 +115,13 @@ Connect IQ by default uses [Floyd-Steinberg dithering](https://en.wikipedia.org/
 
 ## Palette
 
-When importing images, Connect IQ will always default to the best available bit depth for the device. This means on 16 color devices the images will be imported as dithered 4 bit images, while on RGB222 devices the images will import as dithered 8 bit 64 color images. We want to make sure the Doge looks as recognizable as possible.
+在进口图像时,Connect IQ将始终默认调整为设备的最佳可用位深度.这意味着在16种颜色设备上,图像将被导入为4位的图像,而在RGB222设备上,图像将被导入为8位64色图像.我们希望确保Doge尽可能可识别.
 
 ![](/connect-iq/resources/faq/doge.png)
 
-This also means that, by default, images for a Vivoactive will take twice as much memory as images for the Fenix 3. That's fine if you have a one image watch face, but in the tight constraints of a data field it could be the difference between working and running out of memory.
+这也意味着,默认情况下, Vivoactive 的图像将占Fenix 3 的图像的存储量两倍.如果您有一个图像表面,那就很好,但在数据场的紧密限制下,
 
-If you have a low color image, reducing the bit depth can save precious runtime memory. By setting the import palette, you can communicate the total number of colors the image should use.
+如果您的图像颜色较低,减少位深度可以节省宝贵的运行时间内存.
 
 ```xml
         <palette disableTransparency="true">
@@ -133,8 +133,8 @@ If you have a low color image, reducing the bit depth can save precious runtime 
         <palette>
 ```
 
-This block says the image should only use four colors - white, light gray, dark gray, and black. The palette is bound to the colors available on a device. If you specify colors not available on a device, they will be mapped to the closest available colors.
+这块说明图片只应该使用四种颜色 - 白色,浅灰色,深灰色和黑色. 色板与设备上可用的颜色相结合.如果你指定设备上不可用的颜色,它们将被映射到可用的最接近的颜色.
 
-On 16 color and RGB222 devices the resource compiler automatically uses an extra color - the transparent color - to represent transparent areas. Disabling transparency tells the resource compiler that the image doesn't have any transparent areas, saving one color in the converted image and potentially reducing bit depth. With the four colors set and transparency resource compiler creates a 4 bit image; with no transparency it will create a 2 bit image for a 50% memory savings.
+在16色和RGB222设备上,资源编译器自动使用额外的颜色 - 透明色 - 来表示透明区域.禁用透明度告诉资源编译器图像没有透明区域,节省转换图像中的一个颜色,并可能减少位深度.使用四种颜色和透明度编译器创建了4位图像;没有透明度,它将创建一个2位图像,节省50%的内存.
 
-In general, use low bit depth images to save memory when possible. If you have a logo that can be represented with a small number of colors, use the palette and disable dithering to make a sharper image with a lower bit depth. Remember: great looking 16 color images will work across all wearables. 64 color images add some shading options, but you'll need to weigh the balance of image quality and memory savings. Edge bike computers have better color representation, but using high bit depth images can quickly eat your runtime memory as well.
+总体来说,使用低位深度图像以保存内存,尽可能.如果您有一个可以用少量颜色表示的标志,请使用调色板并禁用色,以更低位深度的图像做出更敏的图像.请记住:看起来很棒的16色图像将在所有可穿戴设备上工作.64色图像增加了一些阴影选项,但您需要权衡图像质量和存储内存的平衡.边缘自行车电脑具有更好的颜色表示,但使用高位深度图像可以快速消耗您的运行时间内存.

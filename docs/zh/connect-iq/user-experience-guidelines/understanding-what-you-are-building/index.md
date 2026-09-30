@@ -1,42 +1,42 @@
 ---
 title: "Understanding What You Are Building"
 ---
-# Understanding What You Are Building
+了解你正在建设的东西
 
-Now that you have identified who your users are, the next step is to identify what they are trying to do. They are using your app to achieve a particular outcome. Focus on the “jobs” they are “hiring” your app to do. The jobs could range from “I want to see the time quickly and clearly” to “I want a quick glance of my key stats without sorting through unwanted information.”
+现在你已经确定了你的用户是谁,下一步是确定他们试图做什么.他们正在使用你的应用程序来实现特定的结果. 专注于他们正在聘请你的应用程序的工作. 工作范围可能从 想快速清晰地看到时间到 想快速地查看我的关键统计数据,而不需要搜索不必要的信息.
 
-Ask yourself, what is the key information that you want to convey to the user? Apps on Garmin devices should be focused on presenting key information to the user quickly and with minimal interaction. Save deep dives for mobile apps or the web. What are the necessary features? Once again, keep it simple.
+问问自己,你想向用户传递哪些关键信息?Garmin设备上的应用程序应该专注于快速和最小的互动地向用户提供关键信息.为移动应用程序或网络保存深度潜水.需要的功能是什么?再次,保持简单.
 
-The usability of any design is relative to two variables: Users and tasks. Apps on Garmin devices should be focused on allowing the user to accomplish key tasks quickly with minimal interaction. Save deep dives for mobile apps or the web.
+任何设计的可用性与两个变量相比:用户和任务.在Garmin设备上的应用程序应该专注于允许用户快速地完成关键任务,并且具有最小的互动.为移动应用程序或网络保存深度潜水.
 
 ## Common Use Cases
 
-Garmin is a trusted brand with athletes, with an audience that extends from aspirational to endurance. Connect IQ allows you to bring your brand or solution in front of this large audience.
+卡尔明是运动员们所信任的品牌,拥有从野心到耐力的观众. 连接智商让你能够让你的品牌或解决方案出现在这个庞大的观众面前.
 
 ### Customized Watch Faces
 
-The watch face is not only the home screen of the Garmin wearable experience but also an opportunity for the user to express themselves. Custom watch faces allow you to bring your brand and creativity to our customers.
+腕表面孔不仅是Garmin可穿戴体验的首页屏幕,而且也是用户表达自己的机会.
 
 ### Third-Party Sensors
 
-Connect IQ allows third-party sensor makers to connect with Garmin devices. Sensors can then record extra activity information that can be displayed in Garmin Connect.
+Connect IQ允许第三方传感器制造商与Garmin设备连接.传感器可以记录在Garmin Connect中可显示的额外活动信息.
 
 ### Integrating Workout Content
 
-Connect IQ allows developers to work their content into the Garmin activity experience.
+连接 IQ 允许开发人员将其内容纳入Garmin活动体验.
 
 ### New Activities
 
-Garmin supports a wide range of activities, but Connect IQ developers can let users records workouts not supported natively on the devices, such as dance, in-line skating and more.
+Garmin支持各种活动,但Connect IQ开发人员可以让用户在设备上记录不支持本土的训练,如舞蹈,线上滑冰等.
 
-### Extending your Services to Garmin Customers
+### 扩展您的服务到Garmin客户
 
-Garmin wearables are meant to be worn 24/7. Connect IQ apps allow our users to access your services at a flick of the wrist.
+连接智商应用程序允许我们的用户在手腕的点击下访问您的服务.
 
 ### Music Services
 
-Connect IQ allows music content providers to extend their services to Garmin users. Content can be downloaded over Wi-Fi and securely stored on our devices for later playback by users. You can enforce your playback tracking and subscription management within the app.
+连接 IQ 允许音乐内容提供商将他们的服务扩展到Garmin用户.内容可以通过Wi-Fi下载并安全存储在我们的设备上以后被用户播放.您可以在应用程序中执行播放跟踪和订阅管理.
 
-### Garmin as Part of a Broader Solution
+### 作为更广泛的解决方案的一部分
 
-Sometimes it's necessary to architect a solution that involves a variety of technologies. With their programmability, sensors and connectivity options, Connect IQ-compatible devices can often serve as a part of a larger solution.
+有时需要构建涉及各种技术的解决方案. 通过其可编程性,传感器和连接选项,Connect IQ兼容的设备通常可以作为更大的解决方案的一部分.

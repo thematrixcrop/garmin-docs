@@ -3,14 +3,14 @@ title: "Confirmations"
 ---
 # Confirmations
 
-Confirmations provide the ability to ask the user a question and get a yes or no answer. Confirmations are usually text only with a way to respond positively or negatively. These are useful when trying to add small bits of friction around big decisions.
+确认提供了向用户提出问题并获得"是"或"否"的答案的能力.确认通常只用文字来回答积极或负面.这些都是试图在大决策周围添加微小摩擦时有用的.
 
 ![](/connect-iq/resources/ux-guide/confirmations.png)
 
 ## Best Practices
 
--   Confirmations add friction to the experience, so only use them when the friction is necessary. Do not interrupt the user if it isn’t necessary.
+- 确认给体验增加摩擦,所以只在摩擦必要时使用它们.如果不必要,不要打断用户.
 
--   On native confirmations, the choices may be “Yes” or ”No,” or it may be a visual indication based on the product personality. Design for both.
+- 在本土确认中,选项可能是Yes或No,或可能是基于产品个性的视觉指示.
 
--   Be specific with your dialog, so the user understands the choice they are making. And be sure to phrase it in the form of a yes or no question.
+- 具体地进行对话,以便用户理解他们所做的选择.并确保以"是"或"不"的形式表达.

@@ -3,41 +3,41 @@ title: "How do I create an Audio Content Provider?"
 ---
 # 如何创建音频内容提供者？
 
-In 2018 Garmin has launched [multiple music capable wearable products](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc) that allow users to leave their phone at home while they live their active lifestyle. Users can copy their music library directly to the device, or they can install a Connect IQ audio content provider app that acts as a bridge between the wearable and a Content Delivery Network (CDN).
+2018年,Garmin推出了[multiple music capable wearable products](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc),允许用户在生活时留下手机在家里.用户可以直接将他们的音乐库复制到设备上,或者可以安装Connect IQ音频内容提供商应用程序,作为可穿戴设备和内容传输网络 (CDN) 之间的桥梁.
 
-*Audio content providers* enable third-party music services to deliver protected content. They can download content from a CDN via Wi-Fi directly to the watch, and act as a plug-in to the native media player. The content is encrypted before it reaches disk and decrypted during playback.
+*音频内容提供商*允许第三方音乐服务提供受保护的内容.它们可以通过Wi-Fi直接下载CDN内容到手表,并作为原生媒体播放器的插件.内容在进入磁盘之前加密,并在播放过程中解密.
 
-This post explains all the roles an audio content provider fills as well as the basics of implementation.
+这篇文章解释了音频内容提供商所扮演的所有角色以及实施的基础.
 
-## Syncing Content to the Device
+## 同步内容到设备上
 
-The Garmin music wearables interact with third party services by syncing content to the device for later playback. Users can launch the music app in a *sync configuration* state that lets them select what content they want to sync down to the device.
+Garmin 音乐可穿戴设备通过将内容同步到设备上进行后续播放来与第三方服务互动.用户可以在 *同步配置*状态下启动音乐应用程序,允许他们选择他们想将内容同步到设备上.
 
 ![](/connect-iq/resources/faq/sync_config.png)
 
-The sync configuration user interface is defined by the audio content provider app. If you want your interface to be consistent with the device look and feel, the WatchUi.Menu2 class will do much of your implementation for you. If you want to tailor your look and feel to your brand, the `WatchUi.CustomMenu` provides much more flexibility.
+如果您希望您的接口与设备的外观和感觉一致,WatchUi.Menu2类将为您完成大部分的实现.如果您想根据您的品牌定制您的外观和感觉,`WatchUi.CustomMenu`提供了更大的灵活性.
 
-Audio content provider apps can download content from a content delivery network via restful services directly to the watch. To get a song onto the watch the following should occur:
+音频内容提供商的应用程序可以通过休服务直接将内容从内容交付网络下载到手表.
 
-1.  The Connect IQ app uses a web API to request an audio file download
+1. 连接智能应用程序使用网络API请求下载音频文件
 
-2.  The back-end service will serve up the audio file from the CDN
+2.后端服务将提供CDN的音频文件
 
-3.  The Connect IQ app will store the downloaded audio file on the watch's file system. As the data is written to the filesystem the content is encrypted; no un-encrypted content ever gets written to the filesystem.
+3. 连接 IQ 应用程序将下载的音频文件存储在手表的文件系统中.由于数据被写入文件系统,内容被加密;未加密的内容从未被写入文件系统.
 
 
 ![](/connect-iq/resources/faq/downloading_music_content.png)
 
-Content downloaded by audio content provider apps are protected in several ways:
+通过音频内容提供商应用程序下载的内容以多种方式得到保护:
 
 1.  Music apps and audio files stored in hidden folders on device
 
-2.  Apps and audio files are encrypted using AES-128.
+2. 应用程序和音频文件使用AES-128进行加密.
 
-3.  App can destroy all downloaded and reset encryption key in a single call
+3. 应用程序可以在一次通话中摧毁所有下载和重置加密密钥
 
 
-Each application gets access to a storage sandbox. The storage files are encrypted and cannot be accessed by any other apps on the system.
+每个应用程序都能访问一个存储沙箱.存储文件是加密的,系统上的其他应用程序都无法访问.
 
 The system will initiate a sync after the configuration step. The user will be prompted to start a sync, and if they agree the device will activate Wi-Fi, and upon connection 系统将 request the app create a `SyncDelegate`. The delegate is used to notify the app that a sync has started, has been stopped, and to determine if a sync is needed. In the `onStart` method of the `SyncDelegate`, the app needs to download the songs chosen in the sync configuration step. The app notifies the system of the sync progress, so the UI can be updated.
 
@@ -45,44 +45,44 @@ The system will initiate a sync after the configuration step. The user will be p
 
 ## Playback
 
-Once the content is downloaded, the Connect IQ app can serve up the audio files to the native media player for playback. They can either use the media controls to control playback, or the user can select what content they want to listen to by entering the playback configuration mode of the app.
+一旦下载内容,Connect IQ应用程序可以将音频文件传输到本土媒体播放器中.用户可以使用媒体控制来控制播放,或者用户可以通过输入应用程序播放配置模式来选择他们想听的内容.
 
 ![](/connect-iq/resources/faq/playback_tree.png)
 
 ### Playback Configuration
 
-When the user enters playback configuration, the app should allow them to change their audio content (playlists, books, or podcasts) within the app. The interface for playback configuration is defined by the audio content provider.
+当用户输入播放配置时,应用程序应该允许他们在应用程序内更改其音频内容 (播放列表,书籍或播客).播放配置的界面由音频内容提供商定义.
 
 ![](/connect-iq/resources/faq/playback_configuration.png)
 
-This flow allows a user to control what songs to playback. The app can allow the user to choose from playlists or individual songs. The app can choose to start playback from this flow using `Media.startPlayback()`, or let the user select play from the media player.
+该流程允许用户控制播放哪些歌曲.该应用程序可以让用户选择播放列表或单独的歌曲.该应用程序可以选择使用`Media.startPlayback()`从该流程开始播放,或者让用户从媒体播放器中选择播放.
 
 ### Playback
 
-Playback is driven by the media player, but the app can decide what media player controls to display and what content to play. This is enabled by defining a `Media.ContentDelegate` class.
+播放由媒体播放器驱动,但应用程序可以决定播放器控制的显示内容和播放内容.
 
-The content delegate is responsible for providing a `Media.ContentIterator` that provides the media player an iterator of `Media.ContentRef` instances that represent the downloaded songs. The content iterator also provides a `Media.PlaybackProfile` that allows customization of the media player interface. The skip buttons can be disabled on a per-song basis, and `Media.ContentRef` metadata will display in the player.
+内容代表负责提供一个`Media.ContentIterator`,为媒体播放器提供了代表下载的歌曲的`Media.ContentRef`实例的代码器.内容代码器还提供了一个`Media.PlaybackProfile`,允许定制媒体播放器界面.跳转按可以按歌曲禁用,而`Media.ContentRef`元数据将在播放器中显示.
 
-As audio is played, the media player sends playback information to the `ContentDelegate` that can be used for reporting purposes. The Connect IQ app can store the reporting information for each play of a song and send it back to the provider via web calls, or during sync.
+随着音频播放,媒体播放器将播放信息发送到`ContentDelegate`,可用于报告目的.Connect IQ应用程序可以存储歌曲的每个播放报告信息,并通过网络通话或同步后将其发送给提供商.
 
 ## Hints and Tips
 
-The `Toybox.Media` module provide tools for downloading and interfacing with audio content, but for keeping reporting information you should take advantage of the `Toybox.Application.Storage` module. The Connect IQ storage system provides a simple key/value system for persisting content, but values are limited to 8KB.
+`Toybox.Media`模块提供下载和与音频内容接口的工具,但为了保存报告信息,您应该利用`Toybox.Application.Storage`模块.Connect IQ存储系统为持久内容提供了一个简单的关键/值系统,但值仅限于8KB.
 
-If you're storing lots of playback information, it is important to design an approach with these limits in mind. It's best to use a flat structure, as nested tables will quickly grow past your 8 KB limit.
+如果您正在存储大量播放信息,重要的是要考虑到这些限制.最好使用平坦的结构,因为嵌入式表将快速超越您的8 KB 限制.
 
 ![](/connect-iq/resources/faq/music_storage.png)
 
-Store playlist ids (`Px`) in a top-level array using a known key ("playlists"). Give each playlist and song id (`Sx`) their own dictionary entry in Storage. In playlists store the song id references, and in song ids store the `ContentRef` id and an array of plays. This allows each song to use most of the storage for song playback storage.
+存储播放列表ID (`Px`) 在顶级数组中使用已知键 ("播放列表").给每个播放列表和歌曲ID (`Sx`) 存储中的自己的字典入口.在播放列表中存储歌曲ID参考,而在歌曲ID中存储`ContentRef`id和播放数组.这允许每个歌曲使用大部分存储用于歌曲播放存储.
 
 ## Conclusion
 
-With Connect IQ audio content provide apps you can:
+通过 Connect IQ 音频内容提供应用程序,您可以:
 
--   Deliver your protected content securely to Garmin music-enabled wearables via your existing content delivery web services
+- 通过现有内容网服务安全地将您的受保护内容交付给 Garmin 音乐支持的可穿戴设备
 
--   Provide your users the ability to listen to their favorite content from your service while leaving their phone behind
+- 让用户可以在您的服务中听听他们最喜欢的内容,同时留下他们的手机
 
--   Provide an experience that integrates seamlessly with the native watch user interface
+- 提供与原生手表用户界面无整合的体验
 
--   Maintain accurate royalty calculations by caching playback information in encrypted app storage to send to your reporting services via the web during sync
+- 通过在加密应用程序存储中缓存播放信息来保持准确的版权计算,以便在同步过程中通过网络发送到您的报告服务
