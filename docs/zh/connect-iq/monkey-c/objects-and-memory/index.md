@@ -238,7 +238,7 @@ if( weakRef.stillAlive() ) {
 
 ## 模块
 
-Monkey C 中的模块允许对类和函数进行作用域限定。 Unlike Java packages, Monkey C modules have many of the same properties as classes. You can have variables, functions, classes, and other modules at the module level:
+Monkey C 中的模块允许对类和函数进行作用域限定。与 Java 包不同，Monkey C 模块具有许多与类相同的属性。您可以在模块级别声明变量、函数、类和其他模块：
 
 ```java
 module MyModule
