@@ -57,26 +57,26 @@ API 级别 5.1.0
 
 - [**accentColor**](#accentColor-var) as [WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/) or **Null**
 
-    WatchFace accent color selected by the user, `null` if not available.
+    用户选择的表盘强调色；如果不可用，则为 `null`。
 
 - [**complicationColor**](#complicationColor-var) as [WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/) or **Null**
 
-    WatchFace complication color selected by the user, `null` if not available.
+    用户选择的表盘复杂功能颜色；如果不可用，则为 `null`。
 
 - [**complicationSettings**](#complicationSettings-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)\> or **Null**
 
-    WatchFace complication settings, `null` if not available.
+    表盘复杂功能设置；如果不可用，则为 `null`。
 
 - [**styleId**](#styleId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    WatchFace style id selected by the user, `null` if not available.
+    用户选择的表盘样式 ID；如果不可用，则为 `null`。
 
 
 ## 实例属性详情
 
 ### var accentColor as [WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/) or **Null**
 
-WatchFace accent color selected by the user, `null` if not available.
+用户选择的表盘强调色；如果不可用，则为 `null`。
 
 Since:
 
@@ -84,7 +84,7 @@ API 级别 5.1.0
 
 ### var complicationColor as [WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/) or **Null**
 
-WatchFace complication color selected by the user, `null` if not available.
+用户选择的表盘复杂功能颜色；如果不可用，则为 `null`。
 
 Since:
 
@@ -92,7 +92,7 @@ API 级别 5.1.0
 
 ### var complicationSettings as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)\> or **Null**
 
-WatchFace complication settings, `null` if not available.
+表盘复杂功能设置；如果不可用，则为 `null`。
 
 Since:
 
@@ -100,7 +100,7 @@ API 级别 5.1.0
 
 ### var styleId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-WatchFace style id selected by the user, `null` if not available.
+用户选择的表盘样式 ID；如果不可用，则为 `null`。
 
 Since:
 

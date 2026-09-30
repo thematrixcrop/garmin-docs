@@ -915,7 +915,7 @@ API 级别 3.0.0
 
 发生了一次计圈事件。
 
-This method is called when a lap is added to the current activity. A notification is triggered after the lap record has been written to the FIT file.
+向当前活动添加计圈时会调用此方法。计圈记录写入 FIT 文件后会触发通知。
 
 :::details 支持的设备
 
@@ -1092,7 +1092,7 @@ API 级别 1.3.0
 
 发生了一次计圈事件。
 
-This method is called when a lap is added to the current activity. A notification is triggered after the lap record has been written to the FIT file.
+向当前活动添加计圈时会调用此方法。计圈记录写入 FIT 文件后会触发通知。
 
 Parameters:
 
@@ -2665,7 +2665,7 @@ Parameters:
 
 - alertView — ([WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) —
 
-    View to push
+    要推送的 View
 
 - Only [Toybox::WatchUi::DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) is supported for this operation
 

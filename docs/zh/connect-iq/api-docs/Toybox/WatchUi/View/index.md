@@ -143,7 +143,7 @@ API 级别 1.0.0
 
 - [**onUpdate**](#onUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Update the View.
+    更新 View。
 
 - [**removeLayer**](#removeLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -374,7 +374,7 @@ API 级别 1.0.0
 
 ### **onUpdate(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Update the View.
+更新 View。
 
 This is called when a View is brought to the foreground, after the call to [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function). While a View is active, this method is generally used to update dynamic content in the View. There are also some special cases when it will be invoked:
 
@@ -463,7 +463,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if one or more of the specified options is not valid for the view type.
+    如果指定的一个或多个选项对该视图类型无效，则抛出。
 
 
 ### **setClockHandPosition(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** })** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -578,7 +578,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if one or more of the specified options is not valid for the view type.
+    如果指定的一个或多个选项对该视图类型无效，则抛出。
 
 
 ### **setKeyToSelectableInteraction(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**

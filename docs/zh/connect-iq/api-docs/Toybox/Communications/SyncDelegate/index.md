@@ -164,9 +164,9 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-- When `true`, a sync is needed
+- 当值为 `true` 时，需要同步
 
-- When `false` a sync is not needed and [onStartSync](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/#onStartSync-instance_function) will not be called if a sync is triggered for this application
+- 当值为 `false` 时，不需要同步；如果为此应用触发同步，则不会调用 [onStartSync](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/#onStartSync-instance_function)
 
 
 
@@ -188,7 +188,7 @@ API 级别 3.1.0
 
 活动同步被取消时调用。
 
-This method will be called when an active sync is being cancelled by the user. The app is responsible for calling the [cancelAllRequests()](/connect-iq/api-docs/Toybox/Communications/#cancelAllRequests-instance_function) to cancel any requests made for a sync process. The app is also responsible to let the system know that sync has successfully been cancelled by calling [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function).
+用户取消活动同步时会调用此方法。应用负责调用 [cancelAllRequests()](/connect-iq/api-docs/Toybox/Communications/#cancelAllRequests-instance_function)，以取消为同步过程发出的任何请求。应用还负责通过调用 [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function) 通知系统同步已成功取消。
 
 Since:
 

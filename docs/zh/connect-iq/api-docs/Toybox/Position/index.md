@@ -7,7 +7,7 @@ title: "Module: Toybox.Position"
 
 The Position module provides an interface for location information and positioning sensors.
 
-This module also provides two sets of constants:
+此模块还提供两组常量：
 
 - **GEO:** Used to specify the [Location](/connect-iq/api-docs/Toybox/Position/Location/) formatting.
 
@@ -129,7 +129,7 @@ API 级别 3.3.6
 
 GPS L1, GLONASS, GALILEO L1, BEIDOU L1
 
-This option is supported by System 6 devices like fenix7 and edge1040
+fenix7 和 edge1040 等 System 6 设备支持此选项
 
 |
 | CONFIGURATION\_GPS\_GLONASS\_GALILEO\_BEIDOU\_L1\_L5 | 6 |
@@ -142,7 +142,7 @@ GPS L1, GPS L5, GLONASS, GALILEO L1A, GALILEO L5, BEIDOU L1, BEIDOU L5
 
 Referred to as Multi-GNSS Multi-band on Edge 1040.
 
-This option is supported by System 6 devices like fenix7 and edge1040
+fenix7 和 edge1040 等 System 6 设备支持此选项
 
 |
 | CONFIGURATION\_SAT\_IQ | 255 |

@@ -276,7 +276,7 @@ API 级别 4.0.0
 
 - [**validateProperty**](#validateProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
-    Validate a property being stored.
+    验证要存储的属性。
 
 
 ## 实例方法详情
@@ -505,7 +505,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    Thrown if called from a background process
+    如果从后台进程调用，则抛出
 
 
 ### **deleteProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type))** as **Void**
@@ -722,7 +722,7 @@ Throws:
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    Thrown if called from a background process
+    如果从后台进程调用，则抛出
 
 
 ### **getGlanceTheme()** as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
@@ -2932,7 +2932,7 @@ Throws:
 
 ### **validateProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type))** as **Void**
 
-Validate a property being stored.
+验证要存储的属性。
 
 Parameters:
 

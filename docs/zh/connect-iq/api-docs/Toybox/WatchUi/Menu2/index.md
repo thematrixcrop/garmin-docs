@@ -341,7 +341,7 @@ Icon divider type
 
 - [**updateItem**](#updateItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Update a MenuItem in a Menu2.
+    更新 Menu2 中的 MenuItem。
 
 
 ## 实例方法详情
@@ -372,7 +372,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if item is not a valid type
+    如果 item 不是有效类型，则抛出
 
 
 ### **deleteItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
@@ -388,7 +388,7 @@ Parameters:
 
 Returns:
 
-- [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) `true` if the item exists, or `null` if the specified index it outside of the bounds of the menu items array.
+- [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) 如果项目存在，则为 `true`；如果指定索引超出菜单项数组的范围，则为 `null`。
 
 
 Since:
@@ -574,11 +574,11 @@ Throws:
 
 - (WatchUi.InvalidValueException) —
 
-    Thrown if divider is not an valid value.
+    如果 divider 不是有效值，则抛出。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if divider is not a valid type.
+    如果 divider 不是有效类型，则抛出。
 
 
 ### **setFocus(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as **Void**
@@ -729,7 +729,7 @@ Throws:
 
 ### **updateItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Update a MenuItem in a Menu2.
+更新 Menu2 中的 MenuItem。
 
 Parameters:
 

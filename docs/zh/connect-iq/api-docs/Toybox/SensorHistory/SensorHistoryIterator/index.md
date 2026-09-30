@@ -230,7 +230,7 @@ API 级别 2.1.0
 
 获取迭代器中的下一个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 条目。
 
-This must be called to get the initial data from the iterator.
+必须调用此方法以从迭代器获取初始数据。
 
 Example:
 

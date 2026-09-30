@@ -33,14 +33,14 @@ API 级别 1.2.0
 
 - [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), unused1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, unused2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
 
-    UnexpectedTypeException constructor.
+    UnexpectedTypeException 构造函数。
 
 
 ## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), unused1 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, unused2 as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)**
 
-UnexpectedTypeException constructor.
+UnexpectedTypeException 构造函数。
 
 ```
   @param msg [Toybox::Lang::String] The exception message

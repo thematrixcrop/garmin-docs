@@ -52,7 +52,7 @@ API 级别 1.0.0
 
 - [**year**](#year-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The year.
+    年份。
 
 
 ## 实例属性详情
@@ -159,7 +159,7 @@ Returns:
 
 ### var year as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The year.
+年份。
 
 Since:
 

@@ -127,7 +127,7 @@ API 级别 2.4.0
 
 - [**getRunningDynamics**](#getRunningDynamics-instance_function)() as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)
 
-    Use getRunningDynamics() to get the most current running dynamics.
+    使用 getRunningDynamics() 获取最新的跑步动态数据。
 
 - [**getSensorPosition**](#getSensorPosition-instance_function)() as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
@@ -142,7 +142,7 @@ API 级别 2.4.0
 
 ### **getRunningDynamics()** as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)
 
-Use getRunningDynamics() to get the most current running dynamics.
+使用 getRunningDynamics() 获取最新的跑步动态数据。
 
 Returns:
 

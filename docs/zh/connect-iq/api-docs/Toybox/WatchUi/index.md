@@ -1564,7 +1564,7 @@ Parameters:
 
 - view — ([WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)) —
 
-    View to push
+    要推送的 View
 
 - delegate — ([WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/), [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/), [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/), [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/), [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/), [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/), [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)) —
 

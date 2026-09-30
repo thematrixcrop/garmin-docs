@@ -20,7 +20,7 @@ Toybox.Communications.Message
 
 由注册到 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) 的回调接收的 OAuthMessage。
 
-Unlike the `data` in the [Message](/connect-iq/api-docs/Toybox/Communications/Message/) parent class, data in an OAuthMessage should always be a [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/).
+与 [Message](/connect-iq/api-docs/Toybox/Communications/Message/) 父类中的 `data` 不同，OAuthMessage 中的 data 应始终为 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 Since:
 

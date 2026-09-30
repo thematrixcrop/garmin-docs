@@ -197,15 +197,15 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the palette size exceeds the number of system colors.
+    如果调色板大小超过系统颜色数量，则抛出。
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the palette size exceeds 256 colors.
+    如果调色板大小超过 256 种颜色，则抛出。
 
 - ([Graphics.InvalidBitmapResourceException](/connect-iq/api-docs/Toybox/Graphics/InvalidBitmapResourceException/)) —
 
-    Thrown if the [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) provided has an alpha channel.
+    如果提供的 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 包含 alpha 通道，则抛出。
 
 - ([Graphics.OutOfGraphicsMemoryException](/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException/)) —
 

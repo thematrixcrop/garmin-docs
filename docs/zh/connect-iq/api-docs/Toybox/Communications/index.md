@@ -1018,9 +1018,9 @@ Parameters:
 
     A callback that will be invoked after the connection test has completed. This callback accepts a single dictionary parameter. This dictionary has two keys:
 
-- :wifiAvailable `true` if an access point with internet access could be connected to, `false` otherwise
+- :wifiAvailable 如果可以连接到具有互联网访问权限的接入点，则为 `true`；否则为 `false`
 
-- :errorCode If :wifiAvailable is `false` the value will be a [WIFI\_CONNECTION\_STATUS\_\*](/connect-iq/api-docs/Toybox/Communications/#WIFI_CONNECTION_STATUS_LOW_BATTERY-const) indicating why the connection is not available.
+- :errorCode 如果 :wifiAvailable 为 `false`，则该值将为一个 [WIFI\_CONNECTION\_STATUS\_\*](/connect-iq/api-docs/Toybox/Communications/#WIFI_CONNECTION_STATUS_LOW_BATTERY-const)，用于指示连接不可用的原因。
 
 
 
@@ -1831,7 +1831,7 @@ API 级别 1.0.0
 
 注意：
 
-This method can only be used when connected to a mobile device over Bluetooth.
+此方法只能在通过 Bluetooth 连接到移动设备时使用。
 
 Parameters:
 
@@ -2336,7 +2336,7 @@ This method will push a phone notification that must be accepted by the user. If
 
 注意：
 
-This method can only be used when connected to a mobile device over Bluetooth.
+此方法只能在通过 Bluetooth 连接到移动设备时使用。
 
 Parameters:
 
@@ -3085,7 +3085,7 @@ API 级别 4.0.4
 
 Support for transmittable types has been expanded over time.
 
-- [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) (Since 6.0.0)
+- [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)（自 6.0.0）
 
 
 Parameters:

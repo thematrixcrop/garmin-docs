@@ -82,26 +82,26 @@ Parameters:
 
     The channel type specifier. Must use one of the following constants:
 
-- [CHANNEL\_TYPE\_TX\_NOT\_RX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) - Bidirectional Transmit (Master)
+- [CHANNEL\_TYPE\_TX\_NOT\_RX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) - 双向发送（主机）
 
 
 - Master Channels are not allowed on the ANT+ Network
 
 
-- [CHANNEL\_TYPE\_RX\_NOT\_TX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_RX_NOT_TX-const) - Bidirectional Receive (Slave)
+- [CHANNEL\_TYPE\_RX\_NOT\_TX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_RX_NOT_TX-const) - 双向接收（从机）
 
-- [CHANNEL\_TYPE\_RX\_ONLY](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_RX_ONLY-const) - Receive Only (Slave)
+- [CHANNEL\_TYPE\_RX\_ONLY](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_RX_ONLY-const) - 仅接收（从机）
 
 
 - n — ([Ant.NetworkType](/connect-iq/api-docs/Toybox/Ant/#NetworkType-module)) —
 
     The network type specifier. Must use one of the following constants:
 
-- [NETWORK\_PUBLIC](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) - ANT public network
+- [NETWORK\_PUBLIC](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) - ANT 公共网络
 
-- [NETWORK\_PLUS](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PLUS-const) - ANT+ network
+- [NETWORK\_PLUS](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PLUS-const) - ANT+ 网络
 
-- [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) - ANT private network
+- [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) - ANT 专用网络
 
 
 - A network key must be provided for an Private Network

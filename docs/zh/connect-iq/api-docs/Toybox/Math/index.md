@@ -640,7 +640,7 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the provided data array has fewer than two elements.
+    如果提供的数据数组少于两个元素，则抛出。
 
 
 ### **tan(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
@@ -751,4 +751,4 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    Thrown if the provided data array has fewer than two elements.
+    如果提供的数据数组少于两个元素，则抛出。

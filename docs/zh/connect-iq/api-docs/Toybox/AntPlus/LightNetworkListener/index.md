@@ -255,7 +255,7 @@ Parameters:
 
 - data — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) enum value
+    [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) 枚举值
 
 
 Since:

@@ -418,7 +418,7 @@ API 级别 3.3.0
 
 获取给定时间段内的海拔历史记录，最远追溯至上次断电。
 
-This function always returns the most recent pressure samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
+此函数始终返回最新的压力采样。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间可能因设备而异。
 
 Parameters:
 
@@ -909,7 +909,7 @@ API 级别 3.2.0
 
 获取给定时间段内的气压历史记录，最远追溯至上次断电。
 
-This function always returns the most recent pressure samples. The time between each [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in the iterator may be device dependent.
+此函数始终返回最新的压力采样。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间可能因设备而异。
 
 Parameters:
 

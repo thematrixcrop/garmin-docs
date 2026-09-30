@@ -627,7 +627,7 @@ API 级别 5.1.0
 
 - [**error**](#error-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
-    Write an error to the console and exit the system.
+    将错误写入控制台并退出系统。
 
 - [**exit**](#exit-instance_function)() as **Void**
 
@@ -674,7 +674,7 @@ API 级别 5.1.0
 
 ### **error(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
-Write an error to the console and exit the system.
+将错误写入控制台并退出系统。
 
 注意：
 

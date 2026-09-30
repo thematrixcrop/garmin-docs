@@ -249,11 +249,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the text
+    文本的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the text
+    文本的 y 位置
 
 - font — ([Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)) —
 
@@ -574,7 +574,7 @@ Parameters:
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the circle center
+    圆心的 y 位置
 
 - radius — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -593,11 +593,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the ellipse center
+    椭圆中心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the ellipse center
+    椭圆中心的 y 位置
 
 - a — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -1039,11 +1039,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the text
+    文本的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the text
+    文本的 y 位置
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
@@ -1081,7 +1081,7 @@ Parameters:
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the circle center
+    圆心的 y 位置
 
 - radius — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1100,11 +1100,11 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the ellipse center
+    椭圆中心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The y location of the ellipse center
+    椭圆中心的 y 位置
 
 - a — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1459,7 +1459,7 @@ Parameters:
 
 - mode — ([Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module)) —
 
-    [Graphics.BLEND\_MODE\_\*](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module) constant.
+    [Graphics.BLEND\_MODE\_\*](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module) 常量。
 
 
 :::details 支持的设备

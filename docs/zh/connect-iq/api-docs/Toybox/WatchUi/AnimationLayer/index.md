@@ -241,7 +241,7 @@ Parameters:
 
 - :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-        unique object for identification (optional)
+        用于标识的唯一对象（可选）
 
 - :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 

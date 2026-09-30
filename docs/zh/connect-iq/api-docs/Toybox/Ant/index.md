@@ -9,15 +9,15 @@ This module provide the interface for the ANT wireless protocol.
 
 The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT module provides a list of constants to be used with different Class objects and Methods provided within the module. These include:
 
-- [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) Constants - Message IDs
+- [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) 常量 - 消息 ID
 
-- [MSG\_CODE\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_RESPONSE_NO_ERROR-const) Constants - Message Codes for the response event
+- [MSG\_CODE\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_RESPONSE_NO_ERROR-const) 常量 - 响应事件的消息代码
 
-- [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) Constants - Network Types
+- [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) 常量 - 网络类型
 
-- [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) Constants - Channel Types
+- [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) 常量 - 通道类型
 
-- [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) Constants - Burst Error types
+- [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量 - Burst 错误类型
 
 
 ANT resources and documentation can be found at the links below.

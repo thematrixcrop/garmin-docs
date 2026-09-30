@@ -24,7 +24,7 @@ The NumberPicker class is limited to the eight specific modes described by the [
 
 **此项已弃用**
 
-This class may be removed after System 3.
+此类可能会在 System 3 之后移除。
 
 ## 另见：
 

@@ -605,7 +605,7 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 - [**updateComplication**](#updateComplication-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) as **Void**
 
-    Update the complication data Values not specified in \`data\` will not be updated from the last update or what is specified in the resource definition.
+    更新复杂功能数据。未在 \`data\` 中指定的值不会根据上次更新的内容或资源定义中指定的内容进行更新。
 
 
 ## 类型定义详情
@@ -871,7 +871,7 @@ API 级别 4.2.0
 
 ### **updateComplication(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type))** as **Void**
 
-Update the complication data Values not specified in \`data\` will not be updated from the last update or what is specified in the resource definition.
+更新复杂功能数据。未在 \`data\` 中指定的值不会根据上次更新的内容或资源定义中指定的内容进行更新。
 
 Parameters:
 

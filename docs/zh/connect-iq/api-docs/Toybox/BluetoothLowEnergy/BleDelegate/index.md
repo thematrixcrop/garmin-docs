@@ -68,7 +68,7 @@ API 级别 3.1.0
 
 - [**onScanStateChange**](#onScanStateChange-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    When the state of scanning is modified the system will call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
+    扫描状态发生修改时，系统将使用新状态以及上次调用 [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function) 的结果状态调用此函数。
 
 
 ## 实例方法详情
@@ -331,7 +331,7 @@ API 级别 3.1.0
 
 ### **onScanStateChange(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-When the state of scanning is modified the system will call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
+扫描状态发生修改时，系统将使用新状态以及上次调用 [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function) 的结果状态调用此函数。
 
 Parameters:
 

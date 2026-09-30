@@ -170,7 +170,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if color is not a valid type
+    如果 color 不是有效类型，则抛出
 
 
 ### **setColor(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
@@ -192,7 +192,7 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if color is not a valid type
+    如果 color 不是有效类型，则抛出
 
 
 ### **setFont(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)\>)** as **Void**

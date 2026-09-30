@@ -805,7 +805,7 @@ Parameters:
 
 Returns:
 
-- [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) A reference to BufferedBitmap object
+- [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) BufferedBitmap 对象的引用
 
 
 Since:
@@ -816,15 +816,15 @@ Throws:
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the palette size exceeds the number of system colors.
+    如果调色板大小超过系统颜色数量，则抛出。
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
-    Thrown if the palette size exceeds 256 colors.
+    如果调色板大小超过 256 种颜色，则抛出。
 
 - ([Graphics.InvalidBitmapResourceException](/connect-iq/api-docs/Toybox/Graphics/InvalidBitmapResourceException/)) —
 
-    Thrown if the [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) provided has an alpha channel.
+    如果提供的 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 包含 alpha 通道，则抛出。
 
 
 ### **createColor(alpha as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), red as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), green as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), blue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

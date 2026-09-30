@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The ProfileInfo class contains information about the active profile.
 
-This information can be retrieved with the [getProfileInfo()](/connect-iq/api-docs/Toybox/Activity/#getProfileInfo-instance_function) method. Fields in this class may return `null` so should be checked for `null` values prior to use.
+可通过 [getProfileInfo()](/connect-iq/api-docs/Toybox/Activity/#getProfileInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
 Since:
 

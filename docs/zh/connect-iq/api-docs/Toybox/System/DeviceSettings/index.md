@@ -137,7 +137,7 @@ API 级别 1.0.0
 
 - [**requiresBurnInProtection**](#requiresBurnInProtection-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    This flag indicates whether the device screen requires burn-in protection.
+    此标志指示设备屏幕是否需要防烧屏保护。
 
 - [**screenHeight**](#screenHeight-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -856,7 +856,7 @@ Returns:
 
 ### var requiresBurnInProtection as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-This flag indicates whether the device screen requires burn-in protection.
+此标志指示设备屏幕是否需要防烧屏保护。
 
 Some screens require special drawing behavior when rendering content in always-on mode. If a screen requires burn-in protection the following rules must be followed: A maximum of ten-percent of the total available screen pixels can be in use at one time. Individual pixels can be on for no more than three update cycles when updating at once-per-minute intervals. If either condition is violated all screen pixels will be turned off until the device goes into high-power mode.
 

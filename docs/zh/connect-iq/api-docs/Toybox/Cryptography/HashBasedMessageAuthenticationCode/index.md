@@ -247,11 +247,11 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    Thrown if the specified algorithm is not supported
+    如果不支持指定的算法，则抛出
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if a type other than [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is provided for the `:key` option, if a type other than [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) is provided for the `:algorithm` option, or if either option is not provided
+    如果为 `:key` 选项提供的类型不是 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)，为 `:algorithm` 选项提供的类型不是 [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)，或者未提供任一选项，则抛出
 
 
 ### **update(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The Sensor.Info class contains all of the information provided by enabled sensors.
 
-[Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/) can be retrieved on every call of [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) or it can be obtained on demand. Fields in this class may return `null` so should be checked for `null` values prior to use.
+[Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/) 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时检索，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
 Since:
 
@@ -310,7 +310,7 @@ Returns:
 
 以弧度为单位的真北参考航向。
 
-This provides compass orientation if it is supported by the device.
+如果设备支持，此方法会提供罗盘方向。
 
 Since:
 
@@ -653,7 +653,7 @@ Returns:
 
 气压，单位为帕斯卡（Pa）。
 
-This returns barometric pressure calibrated to sea level. Since pressure varies dues to several factors, a GPS-based altitude must first be obtained, then the ambient (local) pressure is measured by the pressure sensor before conversion to a calibrated barometric pressure value.
+此方法返回校准到海平面的气压。由于压力会因多种因素而变化，因此必须先获取基于 GPS 的海拔，然后由压力传感器测量环境（本地）压力，再将其转换为校准后的气压值。
 
 Since:
 

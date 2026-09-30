@@ -264,7 +264,7 @@ API 级别 1.2.0
 
 表示 *Action* *Menu* 行为。
 
-This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) to push an action menu.
+按下操作菜单时会触发此事件。调用 [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) 可推送操作菜单。
 
 :::details 支持的设备
 

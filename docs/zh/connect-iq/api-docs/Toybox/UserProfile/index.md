@@ -175,7 +175,7 @@ Parameters:
 
 Example:
 
-Use the SPORT\_\* enum to get the zone for that specific sport
+使用 SPORT\_\* 枚举获取特定运动的区域
 
 ```
 using Toybox.UserProfile;
@@ -259,7 +259,7 @@ Parameters:
 
 Example:
 
-Use the HR\_ZONE\_SPORT\_\* enum to get the zone for that specific sport
+使用 HR\_ZONE\_SPORT\_\* 枚举获取特定运动的区域
 
 ```
 using Toybox.UserProfile;
@@ -305,7 +305,7 @@ Parameters:
 
 Example:
 
-Use the HR\_ZONE\_SPORT\_\* enum to get the zone for that specific sport
+使用 HR\_ZONE\_SPORT\_\* 枚举获取特定运动的区域
 
 ```
 using Toybox.UserProfile;
@@ -336,7 +336,7 @@ Parameters:
 
 Example:
 
-Use the SPORT\_\* enum to get the zone for that specific sport
+使用 SPORT\_\* 枚举获取特定运动的区域
 
 ```
 using Toybox.UserProfile;

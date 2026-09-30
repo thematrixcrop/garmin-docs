@@ -214,7 +214,7 @@ This function will be called by the system to retrieve a view/delegate pair for 
 
 注意：
 
-[Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) and [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) support added for API version 5.1.0.
+[Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 和 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 的支持已添加到 API 版本 5.1.0。
 
 Parameters:
 

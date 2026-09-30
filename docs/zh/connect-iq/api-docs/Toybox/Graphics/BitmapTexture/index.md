@@ -70,11 +70,11 @@ Parameters:
 
 - offsetX —
 
-    [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) An x offset with in the bitmap to be used to render the texture
+    [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 位图中用于渲染纹理的 x 偏移量
 
 - offsetY —
 
-    [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) An y offset with in the bitmap to be used to render the texture
+    [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 位图中用于渲染纹理的 y 偏移量
 
 
 Since:

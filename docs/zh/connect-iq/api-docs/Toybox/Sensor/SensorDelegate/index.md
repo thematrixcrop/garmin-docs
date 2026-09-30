@@ -116,7 +116,7 @@ API 级别 5.1.0
 
 - [**onUnpair**](#onUnpair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Unpair the sensor.
+    取消传感器配对。
 
 - [**pairingRequired**](#pairingRequired-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -142,7 +142,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if the sensor was paired successfully, false otherwise
+    如果传感器成功配对，则为 true；否则为 false
 
 
 Since:
@@ -168,7 +168,7 @@ API 级别 5.1.0
 
 ### **onUnpair(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Unpair the sensor.
+取消传感器配对。
 
 Is called by the system to unpair the sensor, during the native sensor removing process.
 
@@ -183,7 +183,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    true if the sensor was paired successfully, false otherwise
+    如果传感器成功配对，则为 true；否则为 false
 
 
 Since:

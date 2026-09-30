@@ -402,7 +402,7 @@ Onboard Sensor
 
 - [**unregisterSensorDataListener**](#unregisterSensorDataListener-instance_function)() as **Void**
 
-    Unregister a previously registered data listener.
+    注销之前注册的数据监听器。
 
 
 ## 类型定义详情
@@ -419,7 +419,7 @@ API 级别 1.0.0
 
 禁用指定传感器类型以供使用。
 
-Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
+与现有的 setEnabledSensors() 函数不同，此函数不会启用或禁用其他传感器类型。
 
 注意：
 
@@ -476,7 +476,7 @@ API 级别 1.0.0
 
 启用指定传感器类型以供使用。
 
-Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
+与现有的 setEnabledSensors() 函数不同，此函数不会启用或禁用其他传感器类型。
 
 注意：
 
@@ -551,7 +551,7 @@ API 级别 1.0.0
 
 注意：
 
-This function can produce different results after the app transitions to the active state after being inactive. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+应用从非活动状态转换到活动状态后，此函数可能产生不同的结果。这些状态变化由对 AppBase.onActive() 和 AppBase.onInactive() 的调用表示。
 
 Example:
 
@@ -743,7 +743,7 @@ API 级别 2.3.0
 
 注意：
 
-This function can produce different results after the app transitions to the active state after being inactive. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+应用从非活动状态转换到活动状态后，此函数可能产生不同的结果。这些状态变化由对 AppBase.onActive() 和 AppBase.onInactive() 的调用表示。
 
 Parameters:
 
@@ -1692,7 +1692,7 @@ API 级别 1.0.0
 
 ### **unregisterSensorDataListener()** as **Void**
 
-Unregister a previously registered data listener.
+注销之前注册的数据监听器。
 
 注意：
 

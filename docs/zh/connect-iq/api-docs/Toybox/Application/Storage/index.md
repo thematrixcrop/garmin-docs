@@ -147,15 +147,15 @@ Throws:
 
 Support for storing object types has been expanded over time.
 
-- [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) (Since 3.0.0)
+- [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)（自 3.0.0）
 
-- [AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) (Since 3.0.8)
+- [AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)（自 3.0.8）
 
-- [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) (Since 3.2.0)
+- [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)（自 3.2.0）
 
-- [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) (Since 4.2.0)
+- [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)（自 4.2.0）
 
-- [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) (Since 5.1.0)
+- [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)（自 5.1.0）
 
 
 There is a limit on the size of the Object Store that can vary between devices. If you reach this limit, the value will not be saved and an exception will be thrown. Also, values are limited to 32 KB in size.

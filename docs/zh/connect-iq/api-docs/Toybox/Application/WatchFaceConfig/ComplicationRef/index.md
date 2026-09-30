@@ -61,7 +61,7 @@ API 级别 5.1.0
 
 - [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Unique id of this complication field.
+    此复杂功能字段的唯一 ID。
 
 
 ## 实例属性详情
@@ -76,7 +76,7 @@ API 级别 5.1.0
 
 ### var uniqueIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Unique id of this complication field.
+此复杂功能字段的唯一 ID。
 
 Since:
 

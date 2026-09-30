@@ -28,22 +28,22 @@ API 级别 2.1.0
 
 - [**debug**](#debug-instance_function)(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Write a debug [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+    将调试 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 - [**error**](#error-instance_function)(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Write an error [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+    将错误 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 - [**warning**](#warning-instance_function)(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Write a warning [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+    将警告 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 
 ## 实例方法详情
 
 ### **debug(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Write a debug [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+将调试 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 The String is prefixed with DEBUG and a time stamp.
 
@@ -73,7 +73,7 @@ API 级别 2.1.0
 
 ### **error(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Write an error [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+将错误 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 The String is prefixed with ERROR and time stamp.
 
@@ -103,7 +103,7 @@ API 级别 2.1.0
 
 ### **warning(str as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Write a warning [String](/connect-iq/api-docs/Toybox/Lang/String/) to the output stream.
+将警告 [String](/connect-iq/api-docs/Toybox/Lang/String/) 写入输出流。
 
 The String is prefixed with WARNING and a time stamp.
 

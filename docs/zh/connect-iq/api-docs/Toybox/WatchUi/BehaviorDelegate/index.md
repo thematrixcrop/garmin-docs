@@ -121,7 +121,7 @@ API 级别 1.0.0
 
 表示 *Action* *Menu* 行为。
 
-This will be triggered when action menu is pushed. Invoke [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) to push an action menu.
+按下操作菜单时会触发此事件。调用 [WatchUi.showActionMenu](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) 可推送操作菜单。
 
 :::details 支持的设备
 
@@ -200,7 +200,7 @@ API 级别 1.0.0
 
 表示 *Next* *Page* 行为。
 
-This is typically triggered by the down button ([KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)) or by a [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
+这通常由向下按钮（[KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)）或触摸屏上的 [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
 Returns:
 

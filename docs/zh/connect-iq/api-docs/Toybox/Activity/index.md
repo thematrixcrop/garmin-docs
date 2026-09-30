@@ -9,7 +9,7 @@ The Activity module provides a way to retrieve available info for the current ac
 
 Activity Info is automatically provided by the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method in Data Fields. The [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) method is available for use within apps or in other cases, such as data field initialization.
 
-This module also provides two sets of constants:
+此模块还提供两组常量：
 
 - **SWIM\_STROKE:** Indicates the [swimStrokeType()](/connect-iq/api-docs/Toybox/Activity/Info/#swimStrokeType-var), such as freestyle, backstroke, or butterfly.
 

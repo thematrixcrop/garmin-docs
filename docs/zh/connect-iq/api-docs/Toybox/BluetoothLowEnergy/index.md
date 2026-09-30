@@ -588,7 +588,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    Uuid Object
+    Uuid 对象
 
 
 另见：
@@ -757,7 +757,7 @@ Returns:
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    Uuid Object
+    Uuid 对象
 
 
 另见：

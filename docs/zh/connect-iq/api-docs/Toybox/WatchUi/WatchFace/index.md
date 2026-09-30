@@ -217,7 +217,7 @@ API 级别 1.0.0
 
 - [**onPartialUpdate**](#onPartialUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Update a portion of the screen.
+    更新屏幕的一部分。
 
 
 ## 实例方法详情
@@ -262,7 +262,7 @@ API 级别 1.0.0
 
 ### **onPartialUpdate(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Update a portion of the screen.
+更新屏幕的一部分。
 
 Partial updates can be used to update a small part of the screen to allow for Always On Watch Faces.
 

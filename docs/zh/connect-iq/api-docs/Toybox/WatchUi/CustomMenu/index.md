@@ -315,11 +315,11 @@ Throws:
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if item is not a [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/).
+    如果 item 不是 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)，则抛出。
 
 - ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
-    Thrown if item is not a [CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/).
+    如果 item 不是 [CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)，则抛出。
 
 
 ### **drawFooter(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
@@ -533,11 +533,11 @@ Throws:
 
 - (WatchUi.InvalidValueException) —
 
-    Thrown if divider is not an valid value.
+    如果 divider 不是有效值，则抛出。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    Thrown if divider is not a valid type.
+    如果 divider 不是有效类型，则抛出。
 
 
 ### **setFooter(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**

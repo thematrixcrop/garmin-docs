@@ -108,7 +108,7 @@ API 级别 1.0.0
 
 - [**timeToRecovery**](#timeToRecovery-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Time to recovery from the last activity, in hours Value may be `null`.
+    从上次活动恢复所需的时间，以小时为单位。值可能为 `null`。
 
 
 ## 实例属性详情
@@ -1925,7 +1925,7 @@ Returns:
 
 ### var timeToRecovery as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Time to recovery from the last activity, in hours Value may be `null`.
+从上次活动恢复所需的时间，以小时为单位。值可能为 `null`。
 
 Since:
 

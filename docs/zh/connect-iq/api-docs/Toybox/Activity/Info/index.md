@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The Info class contains information about the current activity.
 
-This information can be retrieved with the [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) method. Fields in this class may return `null` so should be checked for `null` values prior to use.
+可通过 [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
 Since:
 
@@ -992,7 +992,7 @@ Returns:
 
 以弧度为单位的真北参考航向。
 
-This provides compass orientation if it is supported by the device.
+如果设备支持，此方法会提供罗盘方向。
 
 Since:
 
@@ -1018,7 +1018,7 @@ Returns:
 
 当前位置。
 
-This member will always provide a `null` value unless the Positioning Permission is enabled.
+除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
 
 Since:
 
@@ -2496,7 +2496,7 @@ Returns:
 
 平均海平面气压，单位为帕斯卡 (Pa)。
 
-This returns barometric pressure calibrated to sea level. Since pressure varies dues to several factors, a GPS-based altitude must first be obtained, then the ambient (local) pressure is measured by the pressure sensor before conversion to a calibrated barometric pressure value.
+此方法返回校准到海平面的气压。由于压力会因多种因素而变化，因此必须先获取基于 GPS 的海拔，然后由压力传感器测量环境（本地）压力，再将其转换为校准后的气压值。
 
 Since:
 
@@ -3496,7 +3496,7 @@ Returns:
 
 当前活动的起始位置。
 
-This member will always provide a `null` value unless the Positioning Permission is enabled.
+除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
 
 Since:
 
