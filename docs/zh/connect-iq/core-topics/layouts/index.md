@@ -95,7 +95,7 @@ class MainView extends WatchUi.View {
 
 在布局定义中,有三种方法可以引用字体:
 
-| Reference | Description | Example |
+| Reference |描述| Example |
 | --- | --- | --- |
 | System font reference |在[Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)模块中引用标准FONT编号.| `Graphics.FONT_SMALL` |
 | Custom font reference |在[application resources](/connect-iq/core-topics/resources/#fonts)中引用字体.| `@Rez.Fonts.MySmallFont` |

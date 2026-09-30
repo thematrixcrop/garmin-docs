@@ -610,7 +610,7 @@ API 级别 6.0.2
 
 ## 类型定义详情
 
-### **ComplicationChangedCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
+### ComplicationChangedCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as Void
 
 用于通知订阅者复杂功能更新的回调
 
@@ -618,7 +618,7 @@ Since:
 
 API 级别 4.2.0
 
-### **Data** as { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
+### Data，格式为 { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
 
 Since:
 

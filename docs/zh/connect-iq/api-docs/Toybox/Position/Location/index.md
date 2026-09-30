@@ -144,7 +144,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing the latitude and longitude as [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/) in a degree format
+    包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用度数格式
 
 
 Since:
@@ -210,7 +210,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    An Array containing latitude and longitude as [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/) in a radian format
+    包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用弧度格式
 
 
 Since:

@@ -156,7 +156,7 @@ API 级别 3.4.0
 
 ## 类型定义详情
 
-### **Options** as { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
+### Options，格式为 { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
 
 Since:
 

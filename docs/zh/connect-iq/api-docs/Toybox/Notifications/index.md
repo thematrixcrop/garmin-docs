@@ -146,7 +146,7 @@ API 级别 5.1.0
 
 ## 类型定义详情
 
-### **Action** as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
+### Action，格式为 { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
 
 通知操作
 
@@ -166,7 +166,7 @@ Since:
 
 API 级别 5.1.0
 
-### **NotificationMessageCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as **Void**
+### NotificationMessageCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as Void
 
 Since:
 

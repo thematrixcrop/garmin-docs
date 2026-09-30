@@ -13,7 +13,7 @@ title: "Background Services"
 
 在您的应用程序运行时,您可以通过使用[Toybox.Background](/connect-iq/api-docs/Toybox/Background/)模块的呼叫进行注册,以参加活动.
 
-| Event | Description |登记| API Level |
+| Event |描述|登记| API Level |
 | --- | --- | --- | --- |
 | Activity Completed |当用户完成活动时,唤醒您的背景服务| [Background.registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) | 3.1.0 |
 | Goal |当用户达到其活动目标之一时,唤醒您的背景服务| [Background.registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) | 2.3.0 |

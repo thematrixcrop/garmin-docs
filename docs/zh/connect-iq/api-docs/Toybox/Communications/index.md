@@ -972,13 +972,13 @@ API 级别 6.0.0
 
 ## 类型定义详情
 
-### **PhoneMessageCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as **Void**
+### PhoneMessageCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as Void
 
 Since:
 
 API 级别 1.0.0
 
-### **PhoneMessageErrorCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(error as [Communications.PhoneAppMessageError](/connect-iq/api-docs/Toybox/Communications/#PhoneAppMessageError-module)) as **Void**
+### PhoneMessageErrorCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(error as [Communications.PhoneAppMessageError](/connect-iq/api-docs/Toybox/Communications/#PhoneAppMessageError-module)) as Void
 
 Since:
 
@@ -1954,7 +1954,7 @@ Parameters:
 
 - 默认情况下，DELETE 请求会将其参数追加到 URL。
 
-- Setting the method as DELETE as well as a "Content-Type" header will result in the parameters being set in the body of the request and they will not be appended to the URL.
+- 将此方法设置为 DELETE，同时设置“Content-Type”标头，会导致参数被设置在请求正文中，而不会附加到 URL。
 
 - GET 请求只能将参数附加到 URL，指定“Content-Type”标头不会设置正文。
 

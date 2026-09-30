@@ -17,7 +17,7 @@ personality_class {
 
 人格类和属性必须以 legal子C的法定名称命名,并且可以具有以下值类型:
 
-| Type | Example |
+|类型| Example |
 | --- | --- |
 | Number | 500 |
 | Percent | 80% |

@@ -5,7 +5,7 @@ title: "Getting the User's Attention"
 
 Your app may need to request the user's attention at certain times. Connect IQ offers ways to do this via the [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module. The [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块提供 access to the vibration motor, tone generator, screen backlight and flashlight.
 
-| API | Description | API Level |
+| API |描述| API Level |
 | --- | --- | --- |
 | [Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function) |控制显示屏后光| 1.0.0 |
 | [Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function) |控制显示屏后光| 1.0.0 |
@@ -46,7 +46,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `mode`是以下可能性的数量:
 
-| Value | Description | API Level |
+|值|描述| API Level |
 | --- | --- | --- |
 | \`FLASHLIGHT\_MODE\_OFF\`odule) |关掉手灯| 4.2.0 |
 | \`FLASHLIGHT\_MODE\_ON\`odule) |点灯| 4.2.0 |
@@ -56,7 +56,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 选择`:brightness`接受以下值:
 
-| Value | Description | API Level |
+|值|描述| API Level |
 | --- | --- | --- |
 | 0 to 100 |设置亮度从0到100%| 4.2.0 |
 | \`FLASHLIGHT\_BRIGHTNESS\_LOW\`odule) |设置亮度为设备低设置| 4.2.0 |
@@ -65,7 +65,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `:strobeMode`可以设置为以下:
 
-| Value | Description | API Level |
+|值|描述| API Level |
 | --- | --- | --- |
 | \`FLASHLIGHT\_STROBE\_MODE\_BLINK\`odule) |设置横幅为`-- -- -- --`模式| 4.2.0 |
 | \`FLASHLIGHT\_STROBE\_MODE\_PULSE\`odule) |设置横幅为`=-_ =-_ =-_ =-_`模式| 4.2.0 |
@@ -73,7 +73,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 `:strobeSpeed`可以设置为以下:
 
-| Value | Description | API Level |
+|值|描述| API Level |
 | --- | --- | --- |
 | \`FLASHLIGHT\_STROBE\_SPEED\_SLOW\`odule) |使用缓慢的静音模式| 4.2.0 |
 | \`FLASHLIGHT\_STROBE\_SPEED\_MEDIUM\`odule) |使用中度光谱模式| 4.2.0 |
@@ -81,7 +81,7 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 基于输入的[Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function)API返回以下内容:
 
-| Value | Description | API Level |
+|值|描述| API Level |
 | --- | --- | --- |
 | \`FLASHLIGHT\_RESULT\_SUCCESS\`odule) | Flashlight mode was set successfully | 4.2.0 |
 | \`FLASHLIGHT\_RESULT\_INVALID\_COLOR\`odule) |无法设置闪光灯模式,因为指定了无效的颜色| 4.2.0 |

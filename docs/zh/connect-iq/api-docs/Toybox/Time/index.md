@@ -163,7 +163,7 @@ API 级别 3.0.10
 
 |
 
-The system's real-time clock that cannot be overridden by user settings, and can only be updated by trusted sources such as GPS.
+系统的实时时钟，无法通过用户设置覆盖，只能由 GPS 等受信任的来源更新。
 
 |
 
@@ -188,7 +188,7 @@ The system's real-time clock that cannot be overridden by user settings, and can
 
 根据指定来源获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
-This method behaves the same as [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function), but accepts an `options` argument that allows the time source to be selected.
+此方法的行为与 [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function) 相同，但接受一个 `options` 参数，用于选择时间源。
 
 Parameters:
 
@@ -214,7 +214,7 @@ Throws:
 
 - ([Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)) —
 
-    Thrown if [Time.CURRENT\_TIME\_RTC](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_RTC-const) is passed as an option and the real-time clock value is not valid, i.e. synced with trusted source such as GPS.
+    如果将 [Time.CURRENT\_TIME\_RTC](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_RTC-const) 作为选项传入，且实时时钟值无效，即未与 GPS 等受信任的来源同步，则抛出此异常。
 
 
 ### **now()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

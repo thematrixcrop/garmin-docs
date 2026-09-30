@@ -26,7 +26,9 @@ function looksUntranslatable(raw: string): boolean {
   if (/^:[a-z][A-Za-z0-9_]* — /.test(s)) return true;
   if (/\\[{}\[\]]/.test(s)) return true;
   if (/^[A-Z][A-Z0-9_]*(?:[,\s]+[A-Z][A-Z0-9_]*)*$/.test(s)) return true;
-  if (/\bas\s+(?:\{\d+\}|[A-Z])/.test(s)) return true;
+  if (/^(?:var\s+)?[A-Za-z_][A-Za-z0-9_.]*(?:\([^)]*\))?\s+as\s+(?:\{\d+\}|[A-Z][A-Za-z0-9_.]*)$/.test(s)) return true;
+  if (/^(?:var\s+[A-Za-z_][A-Za-z0-9_]*|\{0\})(?:\([^)]*\))?.*\bas\b/.test(s)) return true;
+  if(/^\{0\}\([^)]*\)/.test(s)) return true;
   if (/as\s+\[/.test(s)) return true;
   if (/^[A-Za-z0-9_.:/#()-]+$/.test(s)) return true;
   if (/[®™]/.test(s) && /^[\w\s®™/+.(),&:;\-]+$/.test(s)) return true;
@@ -143,6 +145,8 @@ function check(out: string[], raw: string): void {
   if (!s) return;
   // API member signatures retain English type syntax after links are removed.
   if (/^(?:var\s+)?[A-Za-z_][A-Za-z0-9_]*(?:\(\))?\s+as(?:\s+or\s+Null)?$/.test(s)) return;
+  if (/\bas\b/.test(s) && !/[.!?]/.test(s) && /^(?:\(|[A-Za-z_][A-Za-z0-9_.]*\b|as\b)/.test(s)) return;
+  if (/\bas\b/.test(s) && /[{}()[\]]/.test(s) && !/[.!?]/.test(s)) return;
   if (/^<[^>]+>$/.test(s)) return; // raw HTML such as an anchor tag
   // A quoted fragment is a sample value, not prose ("What's the deal?").
   if (/^["“'][^"”']*["”']$/.test(s)) return;

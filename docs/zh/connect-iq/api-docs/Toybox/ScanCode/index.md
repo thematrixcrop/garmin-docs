@@ -124,7 +124,7 @@ API 级别 6.0.0
 
 ## 类型定义详情
 
-### **QrCodeOptions** as { :minVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maskValue as [ScanCode.QrCodeMask](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeMask-module), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) }
+### QrCodeOptions，格式为 { :minVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maskValue as [ScanCode.QrCodeMask](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeMask-module), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) }
 
 Since:
 

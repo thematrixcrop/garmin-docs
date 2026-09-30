@@ -47,7 +47,7 @@ When the user has the device scan for sensors, 系统将 start your app without 
 
 For more information, see [Basic Commands](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands).
 
-| API | Description | API Level |
+| API |描述| API Level |
 | --- | --- | --- |
 | [AppBase.getSensorDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorDelegate-instance_function) |实现传感器代表. 实现这种方法来通信应用程序支持本土的配对流.| 5.1.0 |
 | [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function) |扫描您的应用程序支持的设备.| 5.1.0 |

@@ -137,7 +137,7 @@ Connect IQ apps can be localized across over 30 languages, and the languages you
 
 每桶的选项如下:
 
-| Option | Type | Value |
+| Option |类型|值|
 | --- | --- | --- |
 | `name` | `string` |declared  Mod|
 | `version` | `a.b.c.d` (Optional) |子桶的声明版本号.|

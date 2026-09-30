@@ -55,7 +55,7 @@ function onSensor(sensorInfo as Sensor.Info) as Void {
 
 调用[Sensor.registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)将使您的应用程序能够通过您提供的回调接收加速度计数据.提供的数据类型和数量通过选项词典参数配置,该参数支持以下字段:
 
-| Option | Description |
+| Option |描述|
 | --- | --- |
 | `:period` |一个[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)表示在秒钟中请求样本的时间.最高为4秒.|
 | `:sampleRate` |用[Sensor.getMaxSampleRate()](/connect-iq/api-docs/Toybox/Sensor/#getMaxSampleRate-instance_function)来确定系统可以支持什么.|
@@ -66,7 +66,7 @@ function onSensor(sensorInfo as Sensor.Info) as Void {
 
 采用`:accelerometer`,`:heartBeatIntervals`,`:gyroscope`和`:magnetometer`的选项允许:
 
-| Option |适用于| Description |
+| Option |适用于|描述|
 | --- | --- | --- |
 | `:enabled` | `:accelerometer`, `:heartBeatIntervals`, `:gyroscope`, `:magnetometer` |设置为`true`启动传感器|
 | `:sampleRate` | `:accelerometer`, `:gyroscope`, `:magnetometer` |用`getMaxSampleRate()`来确定系统可以支持什么.|
@@ -124,7 +124,7 @@ class MyAccelHistoryClass
 
 在处理加速计数据时,您可能希望将过器应用于您的应用程序收到的原始传感器输入.IIR和FIR过器对象为开发人员提供帮助进行样品过.以下新对象已加入数学模块:
 
-| Class |目的| API Level |
+|类|目的| API Level |
 | --- | --- | --- |
 | [Math.FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) |创建一个可以应用到样本阵列的FIR过器| 2.3.0 |
 | [Math.IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) |创建一个可以应用到样本阵列的IIR过器| 2.3.0 |
@@ -133,14 +133,14 @@ class MyAccelHistoryClass
 
 **FIR Filter**
 
-| Option | Description |
+| Option |描述|
 | --- | --- |
 | `:coefficients` |一组漂浮值,指定过系数. 这也可以是指嵌入式JSON资源的资源ID,定义了数值阵列.|
 | `:gain` |一个浮动值,指向对系数应应用的乘法.|
 
 **IIR Filter**
 
-| Option | Description |
+| Option |描述|
 | --- | --- |
 | `:coefficientList1` |一组漂浮值,指定过系数. 这也可以是指嵌入式JSON资源的资源ID,定义了数值阵列.|
 | `:coefficientList2` |一组漂浮值,指定过系数. 这也可以是指嵌入式JSON资源的资源ID,定义了数值阵列.|

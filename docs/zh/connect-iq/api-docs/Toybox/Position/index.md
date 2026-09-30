@@ -140,7 +140,7 @@ API 级别 3.3.6
 
 GPS L1, GPS L5, GLONASS, GALILEO L1A, GALILEO L5, BEIDOU L1, BEIDOU L5
 
-Referred to as Multi-GNSS Multi-band on Edge 1040.
+在 Edge 1040 上称为 Multi-GNSS Multi-band。
 
 fenix7 和 edge1040 等 System 6 设备支持此选项
 

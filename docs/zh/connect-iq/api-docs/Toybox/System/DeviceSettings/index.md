@@ -326,7 +326,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A two element Array containing the major and minor version numbers as [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects
+    包含主版本号和次版本号的两个元素的 Array，其中元素为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象
 
 
 ### var firstDayOfWeek as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
@@ -706,7 +706,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A three element Array containing the major, minor, and micro version numbers as [Number](/connect-iq/api-docs/Toybox/Lang/Number/) objects
+    包含主版本号、次版本号和微版本号的三个元素的 Array，其中元素为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象
 
 
 ### var notificationCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

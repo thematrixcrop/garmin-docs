@@ -1091,7 +1091,7 @@ Since:
 
 API 级别 1.0.0
 
-### **TouchEventSettings** as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
+### TouchEventSettings，格式为 { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
 Since:
 

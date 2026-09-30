@@ -418,7 +418,7 @@ API 级别 5.1.0
 
 - [**setScanState**](#setScanState-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) as **Void**
 
-    Starts the BLE Scanning Operations Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
+    启动 BLE 扫描操作。扫描开始后，接收到 Advertising 数据时，将在已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上调用 [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function)。
 
 - [**stringToUuid**](#stringToUuid-instance_function)(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -547,7 +547,7 @@ Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Bonded devices available to the App as [ScanResults](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)
+    应用可用的已配对设备，类型为 [ScanResults](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)
 
 
 Since:
@@ -736,7 +736,7 @@ API 级别 3.1.0
 
 开始 BLE 扫描操作
 
-Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
+扫描开始后，接收到 Advertising 数据时，将在已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上调用 [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function)。
 
 Since:
 

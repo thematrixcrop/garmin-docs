@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates that the Real-Time Clock (RTC) value is not secure, i.e. not synced with trusted sources, such as GPS.
+表示实时时钟（RTC）值不安全，即未与 GPS 等受信任的来源同步。
 
 Since:
 

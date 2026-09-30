@@ -30,7 +30,7 @@ By default, when an app is in trial mode, 系统将 push special trial notificat
 
 一旦应用程序在商店中可用,用户可以通过点击商店中的解锁按来解锁应用程序.此时,应用商店将重定向到提供的解锁URL,并将这些参数添加到URL:
 
-| Parameter Name | Description |
+| Parameter Name |描述|
 | --- | --- |
 | `callbackUrl` |在您的侧面成功完成解锁过程后,必须调回的URL.|
 | `appUnlockRequestId` |应用商店的内部解锁ID,可以由应用程序开发人员作为参考存储.|
@@ -70,7 +70,7 @@ System.out.println("Return code: " + org.springframework.http.HttpStatus.valueOf
 
 预计将有以下退货代码:
 
-| Status Code | Status Phrase | Description |
+| Status Code | Status Phrase |描述|
 | --- | --- | --- |
 | 200 | OK |应用程序被标记为"解锁".|
 | 202 | Accepted |在成功的测试请求时 (见下面).|

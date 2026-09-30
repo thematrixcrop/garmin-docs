@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 View 是表示应用内页面的对象。
 
-An app may have multiple View objects representing things like menus and other app states. Each View contains a Layout, which in turn contain [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) objects, such as [Bitmaps](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) and [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/). View objects also handle the life cycle of each app, which varies depending on the app type:
+应用可能有多个 View 对象，用于表示菜单和其他应用状态。每个 View 都包含一个 Layout，而 Layout 又包含 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 对象，例如 [Bitmaps](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) 和 [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/)。View 对象还负责处理每个应用的生命周期，该生命周期取决于应用类型：
 
 小组件和手表应用
 
@@ -172,13 +172,13 @@ API 级别 1.0.0
 
 ## 类型定义详情
 
-### **ActionMenuIndicatorOptions** as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
+### ActionMenuIndicatorOptions，格式为 { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
 Since:
 
 API 级别 1.0.0
 
-### **ControlBarOptions** as { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
+### ControlBarOptions，格式为 { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
 
 Since:
 

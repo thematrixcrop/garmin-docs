@@ -31,7 +31,7 @@ ASSERTION FAILED: x and y are equal!
 
 断言代码不需要在模拟器内执行任何特殊的编译命令,并且在构建发布代码时被编译器删除. 运行无恶有四种不同的断言口味:
 
-| Function | Description |
+| Function |描述|
 | --- | --- |
 | [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该断言会产生例外|
 | [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该声明会产生异常,并输出信息.|

@@ -22,7 +22,7 @@ Garmin 设备在用户佩戴时收集大量数据点。 Many of these data point
 
 数据作为[Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)对象发布.复杂性对象暴露以下信息:
 
-| Identifier | Description | API Level |
+| Identifier |描述| API Level |
 | --- | --- | --- |
 | [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) |发布的[Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)类型数据类型的唯一标识符| 4.2.0 |
 | [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) |长标签是用于配置菜单中显示的.| 4.2.0 |
@@ -33,7 +33,7 @@ Garmin 设备在用户佩戴时收集大量数据点。 Many of these data point
 
 您可以使用这些配件查询更多信息:
 
-| Method | Description | API Level |
+| Method |描述| API Level |
 | --- | --- | --- |
 | [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) |对于 Connect IQ 复杂性,请查询应用程序提供的图标| 4.2.0 |
 | [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) |对于本土的并发症,返回`COMPLICATION_TYPE`.将返回`COMPLICATION_TYPE_INVALID`连接智商并发症.| 4.2.0 |
@@ -161,7 +161,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 `complication`元素具有以下属性:
 
-| Attribute | Description | Required | API Level |
+| Attribute |描述| Required | API Level |
 | --- | --- | --- | --- |
 | `id` |在版本中保持这个值稳定.在版本之间更改这个值将会影响应用程序,当应用程序更新时消耗您的复杂性.| Yes | 4.2.0 |
 | `access` | `public`, `protected`, or `private` | Yes | 4.2.0 |
@@ -180,7 +180,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 要求的`faceIt`元素允许您提供面对它的信息:
 
-| Attribute | Description | Required | API Level |
+| Attribute |描述| Required | API Level |
 | --- | --- | --- | --- |
 | `defaultText` |这将在"面对它"中显示为复杂性的名称.| Yes | 4.2.0 |
 

@@ -94,7 +94,7 @@ See [Background Services](/connect-iq/core-topics/backgrounding/#background-serv
 
 在运行时,您可以使用[WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)加载这个字符串.字符串定义采用以下属性:
 
-| Attribute | Required | Description |
+| Attribute | Required |描述|
 | --- | --- | --- |
 | `id` | Yes |字符串的标识符|
 | `scope` | No |参见[resource scopes](#resource-scopes). 字符串可以具有额外的`settings`范围,从而将其从运行时间中删除.当字符串仅在设置定义中使用时,这很有用.|
@@ -226,7 +226,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 字体元素接受以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None |字体的唯一标识符|
 | `filename` | String | Yes | None |在BMFont生成的`.fnt`文件中|
@@ -243,7 +243,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 菜单使用以下属性的`<menu2>`元素定义:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None |菜单的唯一标识符|
 | `title` | String | No | None | String, string resource identifier, or drawable resource identifier |
@@ -256,7 +256,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 标准菜单项目包含在`<menu-item>`元素中,具有以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None |菜单项的唯一标识符|
 | `label` | String | Yes | None |菜单项的字符串标题|
@@ -268,7 +268,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 调节菜单项包含在`<toggle-menu-item>`元素中.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `disabledSubLabel` | String | No | None |独立的子标签,用于在禁用状态下切换ID时|
 | `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
@@ -285,7 +285,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 查询框菜单项是用`<checkbox-menu-item>`元素定义的.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `checked` | Boolean | No | `false` |`true`如果必须启用转换,`false`不然|
 
@@ -293,7 +293,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 动作菜单是与页面相关的文本菜单. 动作菜单是用`<action-menu>`元素定义的,它可以具有以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None |菜单的唯一标识符|
 | `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |允许设置如果动作菜单是光在暗或暗在光明. 不能在所有产品上设置.|
@@ -303,7 +303,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 动作菜单项目包含在`<action-menu-item>`元素中,具有以下属性:
 
-| Attribute | Type | Required | Default | Description |
+| Attribute |类型| Required | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None |菜单项的唯一标识符|
 | `label` | String | Yes | None |菜单项的字符串标题|

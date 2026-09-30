@@ -2269,7 +2269,7 @@ API 级别 4.2.3
 
 ### **onInactive(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Invoked when app enters inactive mode, i.e. hidden by system and not occupying screen. Access to certain system resources will be limited, such as GPS, ANT, Alerts (Vibs tones, flashlight).
+在应用进入非活动模式时调用，即应用被系统隐藏且不占用屏幕时调用。对某些系统资源的访问将受到限制，例如 GPS、ANT 和提醒（振动音、手电筒）。
 
 Parameters:
 

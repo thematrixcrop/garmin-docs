@@ -77,4 +77,4 @@ Returns:
 
 - [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) —
 
-    The device state as DEVICE\_STATE\_\* enum value
+    设备状态，值为 DEVICE\_STATE\_\* 枚举值

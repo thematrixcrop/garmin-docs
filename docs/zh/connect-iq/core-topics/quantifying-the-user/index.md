@@ -13,7 +13,7 @@ The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 
 
 [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfile-instance_function)调用返回一个[UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)对象,提供
 
-| Metric | API | Value | API Level |
+| Metric | API |值| API Level |
 | --- | --- | --- | --- |
 |活动类| [Profile.activityClass](/connect-iq/api-docs/Toybox/UserProfile/Profile/#activityClass-var) |从0到100的用户活动量化| 1.0.0 |
 | Average Resting Heart Rate | [Profile.averageRestingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#averageRestingHeartRate-var) |用户七天的平均休息心率 (bpm)| 3.2.0 |
@@ -29,7 +29,7 @@ The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 
 
 [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 the additional data:
 
-| Information | API | Value | API Level |
+| Information | API |值| API Level |
 | --- | --- | --- | --- |
 | Activity History | [UserProfile.getUserActivityHistory()](/connect-iq/api-docs/Toybox/UserProfile/#getUserActivityHistory-instance_function) |用户所做的活动记录| 3.3.0 |
 | Heart Rate Zones | [UserProfile.getHeartRateZones()](/connect-iq/api-docs/Toybox/UserProfile/#getHeartRateZones-instance_function) |用户为跑步,骑自行车或游泳而定义的心率区| 1.2.6 |
@@ -40,7 +40,7 @@ The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 
 
 您还可以使用[ActivityMonitor.getHistory()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getHistory-instance_function)获取一些这些指标的日常历史记录,该数据库返回了[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)对象的数组.这段历史的历史可以因设备而异,以及设备已被激活了多久,但7天的历史相当典型.
 
-| Metric | API | Value | API Level |
+| Metric | API |值| API Level |
 | --- | --- | --- | --- |
 | Calories Burned | [Info.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#calories-var), [History.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#calories-var) |迄今为止,当前的卡路里热量为千卡路里 (kCal)| 1.0.0 |
 | Daily Active Minutes | [Info.activeMinutesDay](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesDay-var), [History.activeMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#activeMinutes-var) |当前活动日的活跃分钟数| 2.1.0 |

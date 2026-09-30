@@ -160,7 +160,7 @@ API 级别 3.4.0
 
 ## 类型定义详情
 
-### **Options** as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
+### Options，格式为 { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
 
 Since:
 

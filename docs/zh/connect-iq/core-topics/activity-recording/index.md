@@ -62,7 +62,7 @@ First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/F
 
 `fitField`区块有几个可配置的选项:
 
-| Attribute | Value | Notes |
+| Attribute |值| Notes |
 | --- | --- | --- |
 | `id` |0 到 255 之间的数字值用于您的字段|在应用程序中不允许复制|
 | `displayInChart` |显示是否应该在图表中呈现记录水平连接IQ数据|如果您希望这个输入显示为图表,则`false`. 图表字段只能支持数值数据.|

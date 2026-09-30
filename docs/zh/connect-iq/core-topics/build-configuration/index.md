@@ -73,7 +73,7 @@ The simplest way to override resources is with device, family, and localization 
 
 林允许对所有产品,屏幕形状或特定产品设置源路径,资源路径和排斥.
 
-| Name | Description |
+|姓名|描述|
 | --- | --- |
 | `base` |配置适用于所有产品|
 | `round` |配置适用于圆屏产品|

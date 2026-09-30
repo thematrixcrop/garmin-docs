@@ -13,7 +13,7 @@ The Application object must be specified in the application `manifest.xml`. 构�
 
 您的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)有两个处理器,在安装和更新过程中被调用:
 
-| API | Description | API Level |
+| API |描述| API Level |
 | --- | --- | --- |
 | [AppBase.onAppInstall()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppInstall-instance_function) |在安装应用程序时在背景中触发的回调方法| 3.0.0 |
 | [AppBase.onAppUpdate()](/connect-iq/api-docs/Toybox/Application/AppBase/#onAppUpdate-instance_function) |当应用程序更新时在背景中启动的回调方法| 3.0.0 |
@@ -74,7 +74,7 @@ class MySuperApp extends Application.AppBase {
 
 某些设备具有任务切换器，可以方便地在活动和设备上的应用之间切换。 This can switch your app from *active* to *inactive*. To take full advantage of the task switcher, 您需要 utilize the full app lifecycle.
 
-| State | Description |
+| State |描述|
 | --- | --- |
 | Active |当您的应用程序从不活跃状态转向活跃状态时,[AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function)被调用.活跃应用程序的访问由应用程序类型定义.从不活跃到活跃时,将恢复访问传感器,ANT/BLE.|
 | Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) 在从...转换时调用 the active to inactive state. |
@@ -132,7 +132,7 @@ class MyApp  extends Application.AppBase {
 
 The [Toybox.System](/connect-iq/api-docs/Toybox/System/) 模块提供 access to the device state, settings, and metadata. Here you can get runtime information about the device that is running your app, and exercise some execution control.
 
-| API | Description | API Level |
+| API |描述| API Level |
 | --- | --- | --- |
 | [System.error()](/connect-iq/api-docs/Toybox/System/#error-instance_function) |写错误到控制台,然后退出系统| 1.0.0 |
 | [System.exit()](/connect-iq/api-docs/Toybox/System/#exit-instance_function) |终止执行当前应用程序| 1.0.0 |

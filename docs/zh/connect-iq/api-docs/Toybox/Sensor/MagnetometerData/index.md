@@ -164,26 +164,26 @@ API 级别 3.3.0
 
 - [**timestamp**](#timestamp-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of timestamp values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliseconds.
+    以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**x**](#x-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of x axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+    以 milliGauss 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**y**](#y-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of y axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+    以 milliGauss 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**z**](#z-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of z axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+    以 milliGauss 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 
 ## 实例属性详情
 
 ### var timestamp as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of timestamp values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliseconds.
+以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 Since:
 
@@ -195,7 +195,7 @@ Returns:
 
 ### var x as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of x axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+以 milliGauss 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 Since:
 
@@ -207,7 +207,7 @@ Returns:
 
 ### var y as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of y axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+以 milliGauss 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 Since:
 
@@ -219,7 +219,7 @@ Returns:
 
 ### var z as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of z axis values as [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/) in milliGauss.
+以 milliGauss 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 Since:
 

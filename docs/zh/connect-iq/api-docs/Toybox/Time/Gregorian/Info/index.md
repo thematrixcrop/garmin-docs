@@ -91,7 +91,7 @@ Returns:
 
 - FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：星期几的缩写：“Sun”、“Mon”、…、“Sat”
 
-- FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): Currently the same as FORMAT\_MEDIUM
+- FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：当前与 FORMAT\_MEDIUM 相同
 
 
 
@@ -141,7 +141,7 @@ Returns:
 
 - FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：月份的缩写：“Jan”、“Feb”、…、“Dec”
 
-- FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): Currently the same as FORMAT\_MEDIUM
+- FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：当前与 FORMAT\_MEDIUM 相同
 
 
 

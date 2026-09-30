@@ -84,7 +84,7 @@ API 级别 2.3.0
 
 - [**isCached**](#isCached-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check if the memory for the bitmap is still loaded in the memory User can invoke this method to check if the underlying resource is still available in the memory since last used if `true`, the resource such as [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) has been cached and can be used directly without re-drawing.
+    检查位图的内存是否仍已加载。用户可以调用此方法，检查自上次使用以来底层资源是否仍在内存中；如果为 `true`，则表示诸如 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 之类的资源已被缓存，可以直接使用而无需重新绘制。
 
 - [**setPalette**](#setPalette-instance_function)(palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>) as **Void**
 
@@ -214,7 +214,7 @@ Throws:
 
 ### **isCached()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check if the memory for the bitmap is still loaded in the memory User can invoke this method to check if the underlying resource is still available in the memory since last used if `true`, the resource such as [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) has been cached and can be used directly without re-drawing.
+检查位图的内存是否仍已加载。用户可以调用此方法，检查自上次使用以来底层资源是否仍在内存中；如果为 `true`，则表示诸如 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 之类的资源已被缓存，可以直接使用而无需重新绘制。
 
 Returns:
 

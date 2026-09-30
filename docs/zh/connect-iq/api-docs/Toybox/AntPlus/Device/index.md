@@ -107,7 +107,7 @@ API 级别 2.2.0
 
 获取此 Device 的已知组件标识符列表。
 
-This list may update over time as ANT+ devices with >1 component periodically send information about each of their components. The device reports its total number of components in [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var). The returned Array will only contain entries for components that the ANT+ device has provided a component identifier for.
+此列表可能会随着时间推移而更新，因为包含多个组件的 ANT+ 设备会定期发送有关其各个组件的信息。设备会在 [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var) 中报告其组件总数。返回的 Array 只包含 ANT+ 设备已提供组件标识符的组件条目。
 
 Example:
 

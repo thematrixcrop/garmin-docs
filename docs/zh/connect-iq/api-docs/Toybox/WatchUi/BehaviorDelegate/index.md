@@ -151,7 +151,7 @@ API 级别 5.1.1
 
 注意：
 
-Some devices interpret [SWIPE\_RIGHT](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_RIGHT-const) [SwipeEvents](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) as [KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const) events. On these devices, returning `false` will cause [onKey()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onKey-instance_function) to be called rather than [onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function).
+某些设备会将 [SWIPE\_RIGHT](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_RIGHT-const) [SwipeEvents](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 解释为 [KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const) 事件。在这些设备上，返回 `false` 将导致调用 [onKey()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onKey-instance_function)，而不是 [onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function)。
 
 Returns:
 

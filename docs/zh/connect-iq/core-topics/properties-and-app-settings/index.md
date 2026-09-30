@@ -17,7 +17,7 @@ title: "Properties and Settings"
 
 `id`是一个字符串识别符.`type`必须是以下一个:
 
-| Value | Notes |
+|值| Notes |
 | --- | --- |
 | `number`, `long`, `float`, `double` | Numeric values |
 | `boolean` |布尔值|
@@ -73,7 +73,7 @@ title: "Properties and Settings"
 
 下面的表显示了设置的所有有效属性.
 
-| Attribute | Value | Notes |
+| Attribute |值| Notes |
 | --- | --- | --- |
 | `propertyKey` |如果不能找到属性密钥,则在编译时会出现错误.| Required |
 | `title` |在 Garmin Connect Mobile/Garmin Express中显示设置列表/设置值时显示的标题. 这必须引用字符串资源ID.| Required |
@@ -83,7 +83,7 @@ title: "Properties and Settings"
 
 一个`<settingConfig>`,是`<setting>`的子元素,提供了有关设置的额外细节.
 
-| Attribute | Value | Valid Values | Notes |
+| Attribute |值| Valid Values | Notes |
 | --- | --- | --- | --- |
 | `type` |设置的显示类型.| `list`, `boolean`, `numeric`, `alphaNumeric`, `phone`, `email`, `url`, `date` or `password` |一个`list`值需要儿童`<listEntry>`元素来定义该列表中应提供的选项.|
 | `readonly` |如果设置仅读或不读. 这个属性适用于`list`和`password`除外.|`true`或`false`|默认的`false`.|
@@ -107,7 +107,7 @@ title: "Properties and Settings"
 
 在下面表中定义了`<listEntry>`元素.它的值必须是引用字符串资源.
 
-| Attribute | Value | Notes |
+| Attribute |值| Notes |
 | --- | --- | --- |
 | `value` |如果用户选择了此项,则保存值.|如果它不匹配,则会出现编译时间错误.|
 

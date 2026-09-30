@@ -550,7 +550,7 @@ API 级别 5.2.2
 
 ## 类型定义详情
 
-### **LapInfoType** as { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
+### LapInfoType，格式为 { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
 
 Since:
 
