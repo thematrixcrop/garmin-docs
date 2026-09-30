@@ -9,20 +9,22 @@ title: "App Types"
 
 它们可以是简单的手表或复杂的数据屏幕,
 
--[Data Fields](#data-fields)- 数据字域是加器用于Garmin活动体验.它们允许计算新的指标或允许将新数据带入训练中.
+-[表盘](#watch-faces)- 表盘是 Garmin 可穿戴设备的主屏幕，可以是简单的时钟，也可以显示数十项健康和健身数据。
 
--[Widgets](#widgets)- 插件是可以从主屏幕启动的小型应用程序,它们旨在提供可见的信息访问.
+-[数据字段](#data-fields)- 数据字段是可添加到 Garmin 活动体验中的应用。它们可以计算新指标，或将新数据带入训练中。
 
--[Device Apps](#device-apps)- 设备应用程序是最强大的应用程序类型,提供全面访问系统.
+-[小工具](#widgets)- 小工具是可以从主屏幕启动的小型应用，旨在提供一目了然的信息。
 
--[Audio Content Providers](#audio-content-providers)- 音频内容提供商是音乐支持的可穿戴设备上的媒体播放器的插件,它们提供了媒体和第三方内容服务之间的桥梁.
+-[设备应用](#device-apps)- 设备应用是功能最完整的应用类型，可全面访问系统。
+
+-[音频内容提供商](#audio-content-providers)- 音频内容提供商是支持音乐的可穿戴设备上的媒体播放器插件，为媒体播放器和第三方内容服务提供桥梁。
 
 
 ## API 和应用类型
 
 应用程序类型定义了应用程序的用户背景.例如,表格面具备许多限制,因为它们在低功率模式下运行.为了执行这些限制,Connect IQ虚拟机将根据应用程序类型限制您的可用API.
 
-| 模块名称 | 数据字段 | 表盘 | Widget | App | 音频内容提供程序 | API 级别 |
+| 模块名称 | 数据字段 | 表盘 | 小工具 | 应用 | 音频内容提供程序 | API 级别 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Toybox.Activity](/connect-iq/api-docs/Toybox/Activity/) | ✓ |  |  | ✓ | ✓ | 1.0.0 |
 | [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/)\* | ✓ | ✓ | ✓ | ✓ | ✓ | 1.0.0 |
@@ -188,7 +190,7 @@ Garmin 媒体支持的设备是为活跃的生活方式用户设计的,他们希
 
 你的应用程序应该实现一个[Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)而不是传统的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/).
 
-| Method |目的|
+| 方法 | 目的 |
 | --- | --- |
 | [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) |获取[Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)用于系统使用,以通过设备上的媒体内容进行代.|
 | [AudioContentProviderApp.getPlaybackConfigurationView()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getPlaybackConfigurationView-instance_function) |获取配置播放的初始视图. 媒体播放器启动时,这是主要的视图.|

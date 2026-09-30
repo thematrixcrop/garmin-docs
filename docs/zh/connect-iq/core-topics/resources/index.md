@@ -94,15 +94,15 @@ dc.drawBitmap( 50, 50, image );
 
 在运行时,您可以使用[WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)加载这个字符串.字符串定义采用以下属性:
 
-| Attribute | 必需 |描述|
+| 属性 | 必需 | 描述 |
 | --- | --- | --- |
-| `id` | Yes |字符串的标识符|
-| `scope` | No |参见[resource scopes](#resource-scopes). 字符串可以具有额外的`settings`范围,从而将其从运行时间中删除.当字符串仅在设置定义中使用时,这很有用.|
-| `translatable` | No |设置为`false`以标记一个字符串不需要翻译.|
+| `id` | 是 |字符串的标识符|
+| `scope` | 否 |参见[资源作用域](#resource-scopes)。字符串可以具有额外的 `settings` 作用域，从而将其从运行时删除。当字符串仅在设置定义中使用时，这很有用。|
+| `translatable` | 否 |设置为 `false` 可标记字符串无需翻译。|
 
-使用您的资源文件的[localization qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers),您可以为不同的语言提供不同的字符串.将下列后音符添加到您的资源文件中,将允许您添加各种语言的字符串文件
+使用资源文件的[本地化限定符](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers)，您可以为不同语言提供不同字符串。将以下限定符添加到资源文件中，即可添加多种语言的字符串文件。
 
-| Qualifier | Language | 备注 |
+| 限定符 | 语言 | 备注 |
 | --- | --- | --- |
 | 无限定符 | 基础语言 | 未提供语言时使用这些字符串。如果特定语言没有提供某个字符串的翻译，系统会使用基础语言版本作为替代。 |
 | `ara` | 阿拉伯语 |  |
@@ -167,22 +167,22 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 下面的表显示了`<bitmap>`定义的有效属性.
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | 必需 |
-| `filename` |图像文件的相对路径|一个有效,可解决的图像文件的路径| NA | 必需 |
+| `id` |用于引用 Rez 模块中布局的句柄|任何以字母开头的值| 不适用 | 必需 |
+| `filename` |图像文件的相对路径|有效且可解析的图像文件路径| 不适用 | 必需 |
 | `dithering` |在编译图像时使用的旋的类型|`floyd_steinberg`或`none`| `floyd_steinberg` |  |
 | `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
 | `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| 对于 16 位颜色设备为 `true` |  |
-| `packingFormat` |将图像编码到PRG的格式| `default`, `png`, `jpg`, `yuv`. | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [Bitmap Packing Formats](#bitmap-packing-formats) |
+| `packingFormat` |将图像编码到 PRG 的格式| `default`、`png`、`jpg`、`yuv` | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [位图打包格式](#bitmap-packing-formats) |
 | `scaleX` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleY`,则将默认地设置为`scaleY`s值.否则将默认地设置为100%的图像宽度| 请参阅 `scaleRelativeTo` |
 | `scaleY` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleX`,则将默认设置为`scaleX`s值.否则将默认设置为100%的图像高度.| 请参阅 `scaleRelativeTo` |
 | `scaleRelativeTo` |规模因素应该基于什么?|`screen`或`image`| `screen` |设置对相对扩展的基础. 如果设置为屏幕,图像将根据编译时正在构建的产品重新扩展|
-| `personality` |元素的个性类|个性类| None | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `personality` |元素的个性类|个性类| 无 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 对于`<palette>`定义的有效属性如下表.
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
 | `disableTransparency` |编译器应该允许图像中透明的像素吗?|`true`或`false`| `false` |  |
 
@@ -194,7 +194,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 每种格式都有其优点和缺点:
 
-| Format | Advantage | Disadvantage | 使用场景 |
+| 格式 | 优点 | 缺点 | 使用场景 |
 | --- | --- | --- | --- |
 | `default` |可在所有产品上使用,最快加载,支持阿尔法频道| 不压缩 |应用程序在API前4.0.0级设备上运行.低调图像可能具有非常小的运行时间成本|
 | `png` | 无损、已压缩并支持 Alpha 通道 |最慢的加载,如果经常从图形库中清除和重新加载,这可以增加运行时间成本|进口带或无带阿尔法频道的非照片图像|
@@ -226,13 +226,13 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 字体元素接受以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `id` | 字符串 | Yes | None |字体的唯一标识符|
-| `filename` | 字符串 | Yes | None |在BMFont生成的`.fnt`文件中|
-| `filter` | 字符串 | No | None |选项字符串概述所有字符从字体中输入|
-| `antialias` | 布尔值 | No | `false` |布尔字体识别是否应进口与反化信息|
-| `scope` | 字符串 | No | `foreground` | 请参阅 [resource scopes](#resource-scopes) |
+| `id` | 字符串 | 是 | 无 |字体的唯一标识符|
+| `filename` | 字符串 | 是 | 无 |BMFont 生成的 `.fnt` 文件|
+| `filter` | 字符串 | 否 | 无 |指定要从字体中包含的字符|
+| `antialias` | 布尔值 | 否 | `false` |指定字体是否应导入抗锯齿信息|
+| `scope` | 字符串 | 否 | `foreground` | 请参阅 [资源作用域](#resource-scopes) |
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 ## 菜单
@@ -243,11 +243,11 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 菜单使用以下属性的`<menu2>`元素定义:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `id` | 字符串 | Yes | None |菜单的唯一标识符|
-| `title` | 字符串 | No | None | 字符串、字符串资源标识符或可绘制资源标识符 |
-| `icon` | 可绘制对象引用 | No | None |用于 Instinct 2 子屏幕图标.|
+| `id` | 字符串 | 是 | 无 |菜单的唯一标识符|
+| `title` | 字符串 | 否 | 无 | 字符串、字符串资源标识符或可绘制资源标识符 |
+| `icon` | 可绘制对象引用 | 否 | 无 |用于 Instinct 2 子屏幕图标。|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 在`<menu2>`元素内可以有`<menu-item>`,`<toggle-menu-item>`或`<icon-menu-item>`类型的数组.
@@ -256,22 +256,22 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 标准菜单项目包含在`<menu-item>`元素中,具有以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `id` | 字符串 | Yes | None |菜单项的唯一标识符|
-| `label` | 字符串 | Yes | None |菜单项的字符串标题|
-| `subLabel` | 字符串 | No | None |菜单项的字符串字幕|
-| `icon` | 可绘制对象引用 | No | None |在 Instinct 2 子屏幕中显示的可画图标|
+| `id` | 字符串 | 是 | 无 |菜单项的唯一标识符|
+| `label` | 字符串 | 是 | 无 |菜单项的字符串标题|
+| `subLabel` | 字符串 | 否 | 无 |菜单项的字符串副标题|
+| `icon` | 可绘制对象引用 | 否 | 无 |在 Instinct 2 子屏幕中显示的可绘制图标|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 #### 切换菜单项
 
 调节菜单项包含在`<toggle-menu-item>`元素中.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `disabledSubLabel` | 字符串 | No | None |独立的子标签,用于在禁用状态下切换ID时|
-| `checked` | 布尔值 | No | `false` |`true`如果必须启用转换,`false`不然|
+| `disabledSubLabel` | 字符串 | 否 | 无 |切换项禁用时显示的副标签|
+| `checked` | 布尔值 | 否 | `false` |启用切换时为 `true`，否则为 `false`|
 
 #### 图标菜单项
 
@@ -285,17 +285,17 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 查询框菜单项是用`<checkbox-menu-item>`元素定义的.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `checked` | 布尔值 | No | `false` |`true`如果必须启用转换,`false`不然|
+| `checked` | 布尔值 | 否 | `false` |启用复选框时为 `true`，否则为 `false`|
 
 ### 操作菜单
 
 动作菜单是与页面相关的文本菜单. 动作菜单是用`<action-menu>`元素定义的,它可以具有以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `id` | 字符串 | Yes | None |菜单的唯一标识符|
+| `id` | 字符串 | 是 | 无 |菜单的唯一标识符|
 | `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| 否 | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |用于设置动作菜单的显示主题（深色或浅色）。并非所有产品都支持设置此选项。|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
@@ -303,10 +303,10 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 
 动作菜单项目包含在`<action-menu-item>`元素中,具有以下属性:
 
-| Attribute |类型| 必需 | Default |描述|
+| 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| `id` | 字符串 | Yes | None |菜单项的唯一标识符|
-| `label` | 字符串 | Yes | None |菜单项的字符串标题|
+| `id` | 字符串 | 是 | 无 |菜单项的唯一标识符|
+| `label` | 字符串 | 是 | 无 |菜单项的字符串标题|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 ## 动画
@@ -335,11 +335,11 @@ tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/
 
 为了将动画资源纳入子C项目的,定义动画资源.这可以手动或使用子运动工具.下表显示了`<animation>`资源的所有有效属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用Rez模块中的布局的布局手柄|任何以字母开始的值| NA | 必需 |
-| `filename` |子运动宣言文件的相对路径|一个有效的,可解决的路径到一个子运动表现文件| NA | 必需 |
-| `personality` |元素的个性类|一个定义的人格类| NA | 可选 |
+| `id` |用于引用 Rez 模块中布局的句柄|任何以字母开头的值| 不适用 | 必需 |
+| `filename` |Monkey Motion 清单文件的相对路径|有效且可解析的 Monkey Motion 清单文件路径| 不适用 | 必需 |
+| `personality` |元素的个性类|已定义的个性类| 不适用 | 可选 |
 
 动画 XML 资源示例：
 
@@ -388,7 +388,7 @@ JSON 数据资源可以在应用程序中存储相对大量的数据,而无需�
 
 这些资源是用`jsonData`标签声明在资源文件中,由资源编译器读取,并在运行时按需加载.`jsonData`标签支持以下属性:
 
-| Attribute | Definition | 有效值 |
+| 属性 | 定义 | 有效值 |
 | --- | --- | --- |
 | `id` |JSON 资源的标识符|任何以字母开始的字符串|
 | `filename` |包含JSON数据的文件名称|一个有效的,可解决的数据文件路径|

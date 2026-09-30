@@ -128,25 +128,25 @@ WatchUi.Menu2InputDelegate
 
 以下是定义为XML资源的[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)的属性和定义:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
-| `title` |标签文本将作为标题显示|有效的[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)标识符,字符串资源或`String`| NA | optional |
-| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
+| `id` |`<menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
+| `title` |标签文本将作为标题显示|有效的 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 标识符、字符串资源或 `String`| 不适用 | 可选 |
+| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
 | `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
-| `theme` |菜单项的背景颜色|一个或"残疾人"| `WatchUi.MENU_THEME_DEFAULT` | optional |
-| `personality` |菜单的个性类|一个定义的人格类| NA | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `theme` |菜单项的背景颜色|`A` 或 `"disabled"`| `WatchUi.MENU_THEME_DEFAULT` | 可选 |
+| `personality` |菜单的个性类|一个定义的人格类| 不适用 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 标签"通用1"的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)使用标签和子标签. "通用2"的项目仅使用标签.
 
 以下是定义为XML资源的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的属性和定义:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
-| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
-| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
+| `id` |`<menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
+| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
 
 Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项目都可以以相同的方式创建和启动,但每个新的菜单项目都表现得独特.我们已经看到了基本的`MenuItem`类.我们谈谈使用其他时的具体细节.
 
@@ -173,12 +173,12 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 
 以下是`<icon-menu-item>`可用的属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<icon-menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
-| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
-| `icon` |显示的图标| 有效的可绘制资源或自定义可绘制对象 | NA | 必需 |
+| `id` |`<icon-menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
+| `icon` |显示的图标| 有效的可绘制资源或自定义可绘制对象 | 不适用 | 必需 |
 
 #### 复选框和切换菜单项
 
@@ -222,14 +222,14 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 
 在名称和函数上,`<checkbox-menu-item>`和`<toggle-menu-item>`属性相同:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的ID|任何以字符开始的字符串| NA | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | NA | 必需 |
-| `subLabel` |当`checked`是`true`时显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
-| `disabledSubLabel` |当`checked`是`false`时显示的子标签文本| 有效的字符串资源或 `String` | NA |  |
+| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
+| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` |当 `checked` 为 `true` 时显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
+| `disabledSubLabel` |当 `checked` 为 `false` 时显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
 | `checked` |`<toggle-menu-item>`或`<checkbox-menu-item>`的布尔状态|对于`:enabled`而言`true`,对于`disabled`而言`false`| `false` |值即使在 XML 中未定义,也会发生变化|
-| `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
+| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
 | `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
 
 `checked`属性自动创建为 一个 或对象的一部分,并且不需要在 XML 中定义.如果它不是在 XML 中定义的,那么它将默认为`false`.
