@@ -232,7 +232,7 @@ Parameters:
 
 - :algorithm — ([Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module)) —
 
-        A [CIPHER\_\*](/connect-iq/api-docs/Toybox/Cryptography/) value specifying the encryption algorithm used for this CMAC computation; CIPHER\_AES128 is the only supported algorithm in Connect IQ 3.x. (required)
+        一个指定此 CMAC 计算所用加密算法的 [CIPHER\_\*](/connect-iq/api-docs/Toybox/Cryptography/) 值；CIPHER\_AES128 是 Connect IQ 3.x 中唯一支持的算法。（必需）
 
 - :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 

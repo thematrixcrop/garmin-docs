@@ -62,7 +62,7 @@ Returns:
 
 ### var sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)
 
-A [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) enum value
+一个 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 枚举值
 
 Since:
 
@@ -77,7 +77,7 @@ Returns:
 
 ### var subSport as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
-A [SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SUB_SPORT_GENERIC-const) enum value. Can be `null`.
+一个 [SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SUB_SPORT_GENERIC-const) 枚举值。可以为 `null`。
 
 Since:
 

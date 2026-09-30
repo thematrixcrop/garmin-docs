@@ -1913,13 +1913,13 @@ Returns:
 
     Values correspond to the following scale
 
-- 0–25: Resting state
+- 0–25：休息状态
 
-- 26–50: Low stress
+- 26–50：低压力
 
-- 51–75: Medium stress
+- 51–75：中等压力
 
-- 76–100: High stress
+- 76–100：高压力
 
 
 

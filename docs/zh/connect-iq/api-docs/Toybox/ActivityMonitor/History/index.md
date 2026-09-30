@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 - [**startOfDay**](#startOfDay-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) object representing the start time of the day recorded by this History object.
+    一个表示此 History 对象记录日期起始时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象。
 
 - [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -882,7 +882,7 @@ Returns:
 
 ### var startOfDay as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) object representing the start time of the day recorded by this History object
+一个表示此 History 对象记录日期起始时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象
 
 Since:
 

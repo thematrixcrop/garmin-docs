@@ -135,7 +135,7 @@ Parameters:
 
 - :font — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
-        A [Graphics.FONT\_\*](/connect-iq/api-docs/Toybox/Graphics/#FONT_XTINY-const) value representing the desired font face, or an array of such values. Defaults to FONT\_MEDIUM
+        一个表示所需字体的 [Graphics.FONT\_\*](/connect-iq/api-docs/Toybox/Graphics/#FONT_XTINY-const) 值，或包含此类值的数组。默认为 FONT\_MEDIUM
 
 - :justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module)) —
 
@@ -203,7 +203,7 @@ Parameters:
 
 - font — ([Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
-    A [Graphics.FONT\_\*](/connect-iq/api-docs/Toybox/Graphics/#FONT_XTINY-const) value representing the desired font face or a resource object from [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function), or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of such values.
+    一个表示所需字体或来自 [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 的资源对象的 [Graphics.FONT\_\*](/connect-iq/api-docs/Toybox/Graphics/#FONT_XTINY-const) 值，或包含此类值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。
 
 
 另见：

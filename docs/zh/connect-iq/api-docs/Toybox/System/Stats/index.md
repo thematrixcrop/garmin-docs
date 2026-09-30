@@ -56,7 +56,7 @@ API 级别 1.0.0
 
 - [**solarIntensity**](#solarIntensity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    A [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) value from 0-100 that describes the solar sensor's charge efficiency, if available.
+    一个 0-100 的 [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值，用于描述太阳能传感器的充电效率（如果可用）。
 
 - [**totalMemory**](#totalMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -228,7 +228,7 @@ Returns:
 
 ### var solarIntensity as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-A [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) value from 0-100 that describes the solar sensor's charge efficiency, if available. Will be set to `null` if the device doesn't support solar or a `negative` number when the device is not currently charging.
+一个 0-100 的 [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值，用于描述太阳能传感器的充电效率（如果可用）。如果设备不支持太阳能，则设置为 `null`；如果设备当前未充电，则设置为负数。
 
 Since:
 

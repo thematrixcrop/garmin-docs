@@ -962,7 +962,7 @@ Returns:
 
 - [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) —
 
-    A [FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) value indicating the operation status.
+    一个表示操作状态的 [FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) 值。
 
 
 Since:

@@ -28,9 +28,9 @@ Just like in a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a Si
 
 A SimpleDataField requires two items:
 
-- A [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method should return the value to be displayed by the SimpleDataField. Allowed types are Number, Float, Long, Double, Duration, and String.
+- [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法应返回 SimpleDataField 要显示的值。允许的类型包括 Number、Float、Long、Double、Duration 和 String。
 
-- A "label" variable, which should be assigned a String label for the field.
+- 一个“label”变量，应为该字段分配一个 String 标签。
 
 
 ## 另见：

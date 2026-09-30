@@ -22,7 +22,7 @@ A representation of an on-screen generic picker.
 
 A Picker consists of one or more choose-able objects, a title, a next and previous arrow, and a confirmation button. The next and previous arrows and the confirmation button are device specific but can be overridden if desired. A Picker is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/).
 
-A [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) is required to indicate what should be displayed for each pick-able value, and is capable of displaying any number of entries from which may be chosen. For example, consider the following:
+必须提供一个 [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)，用于指示每个可选值应显示的内容，并且能够显示任意数量的可选条目。例如，请考虑以下内容：
 
 ```
      new NumberFactory();

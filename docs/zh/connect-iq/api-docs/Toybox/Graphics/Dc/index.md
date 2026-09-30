@@ -340,13 +340,13 @@ API 级别 4.2.1
 
 绘制弧线。
 
-- 0 degrees: 3 o'clock position.
+- 0 度：3 点钟位置。
 
-- 90 degrees: 12 o'clock position.
+- 90 度：12 点钟位置。
 
-- 180 degrees: 9 o'clock position.
+- 180 度：9 点钟位置。
 
-- 270 degrees: 6 o'clock position.
+- 270 度：6 点钟位置。
 
 
 注意：

@@ -154,7 +154,7 @@ Parameters:
 
 - state — ([BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module)) —
 
-    A [CONNECTION\_STATE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#CONNECTION_STATE_DISCONNECTED-const) indicating the state of the connection
+    一个表示连接状态的 [CONNECTION\_STATE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#CONNECTION_STATE_DISCONNECTED-const)
 
 
 Since:
@@ -215,7 +215,7 @@ Parameters:
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 
-    A [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const) indicating the status of the encryption operation.
+    一个表示加密操作状态的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)。
 
 
 :::details 支持的设备
@@ -307,7 +307,7 @@ Parameters:
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 
-    A [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const) indicating the result of a call to [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
+    一个表示调用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 结果的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
 
 
 Since:
@@ -337,7 +337,7 @@ Parameters:
 
 - scanState — ([BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) —
 
-    A [SCAN\_STATE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#SCAN_STATE_OFF-const) enum value indicating the new Scan State of the system
+    一个表示系统新扫描状态的 [SCAN\_STATE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#SCAN_STATE_OFF-const) 枚举值
 
 - status — ([BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) —
 

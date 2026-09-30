@@ -232,7 +232,7 @@ Parameters:
 
 - :algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
-        A [HASH\_\*](/connect-iq/api-docs/Toybox/Cryptography/) value specifying the type of Hash used for this HMAC computation; HASH\_SHA256 is the only supported algorithm in Connect IQ 3.x (required)
+        一个指定此 HMAC 计算所用 Hash 类型的 [HASH\_\*](/connect-iq/api-docs/Toybox/Cryptography/) 值；HASH\_SHA256 是 Connect IQ 3.x 中唯一支持的算法（必需）
 
 - :key — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 

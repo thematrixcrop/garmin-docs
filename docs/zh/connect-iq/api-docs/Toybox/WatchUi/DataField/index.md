@@ -667,7 +667,7 @@ Parameters:
 
 - type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
-    A [FitContributor.DATA\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_SINT8-const) value representing the type definition of the Field
+    一个表示 Field 类型定义的 [FitContributor.DATA\_TYPE\_\*](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_SINT8-const) 值
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2524,7 +2524,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` of the activity location was set, `false` otherwise
+    如果设置了活动位置，则为 `true`，否则为 `false`
 
 
 Since:
@@ -2551,7 +2551,7 @@ If using a Toybox::Activity:WorkoutStepInfo to set the workout, `WorkoutStepInfo
 
 - The values of `WorkoutStep.targetValueLow` and `WorkoutStep.targetValueHigh` depends on the value of `WorkoutStep.targetType`. See the FIT SDK for more details. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutIntervalStep:
 
-- `WorkoutIntervalStep.repetitionNumber` is the number of times to repeat the interval.
+- `WorkoutIntervalStep.repetitionNumber` 是重复间隔的次数。
 
 - The `WorkoutIntervalStep.activeStep` will occur first, followed by `WorkoutIntervalStep.restStep`.
 
@@ -2643,7 +2643,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` of the workout was set, `false` otherwise
+    如果设置了锻炼，则为 `true`，否则为 `false`
 
 
 另见：

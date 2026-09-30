@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A 2D affine transformation matrix
+一个二维仿射变换矩阵
 
 This is a 2D transform, typically used for converting coordinates from one 2D coordinate system to another. These transformations can represent a sequence of rotations, scales, shears, and translations.
 

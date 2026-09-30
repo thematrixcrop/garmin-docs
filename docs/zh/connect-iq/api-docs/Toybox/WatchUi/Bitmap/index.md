@@ -20,7 +20,7 @@ Toybox.WatchUi.Drawable
 
 Bitmap is the class representation of a bitmap resource.
 
-A Bitmap can be constructed using the resource compiler and loaded through the resource (Rez) module.
+可以使用资源编译器构造 Bitmap，并通过资源（Rez）模块加载。
 
 ## 另见：
 
@@ -147,7 +147,7 @@ API 级别 1.0.0
 
 注意：
 
-A `null` value passed for the bitmap parameter is only supported with ConnectIQ 5.0.0 and later.
+仅 ConnectIQ 5.0.0 及更高版本支持将 `null` 值传递给 bitmap 参数。
 
 Parameters:
 

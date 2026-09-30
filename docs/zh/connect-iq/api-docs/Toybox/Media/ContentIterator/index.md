@@ -118,7 +118,7 @@ Returns:
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
-- A [Content](/connect-iq/api-docs/Toybox/Media/Content/) object representing the next track
+- 一个表示下一曲目的 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象
 
 - 若没有剩余轨迹则返回 `null`
 
@@ -178,7 +178,7 @@ Returns:
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
-- A [Content](/connect-iq/api-docs/Toybox/Media/Content/) object representing the next track.
+- 一个表示下一曲目的 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象。
 
 - 没有剩余轨迹时为 `null`。
 

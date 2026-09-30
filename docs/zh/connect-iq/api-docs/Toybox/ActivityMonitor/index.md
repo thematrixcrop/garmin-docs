@@ -274,7 +274,7 @@ Parameters:
 
     The order in which to retrieve heart rate samples
 
-- `true` to get the samples newest first
+- 设为 `true` 以按最新顺序获取样本
 
 - 按从旧到新的顺序获取样本时为 `false`
 

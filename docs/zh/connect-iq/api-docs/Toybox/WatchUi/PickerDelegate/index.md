@@ -247,7 +247,7 @@ Handle a confirm event from a Picker
 
 注意：
 
-A `null` value will be returned for any [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) entries
+对于任何 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 条目，都将返回 `null` 值
 
 Parameters:
 

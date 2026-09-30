@@ -113,7 +113,7 @@ Parameters:
 
 - setting — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    A [TRAINER\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE-const) value.
+    一个 [TRAINER\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE-const) 值。
 
 - data — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 

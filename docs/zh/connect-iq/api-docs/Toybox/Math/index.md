@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 |
 
-32-bit floating point representation of E
+E 的 32 位浮点表示
 
 |
 | 类型 | PI | 3.14159265358979323846 |
@@ -73,7 +73,7 @@ API 级别 1.0.0
 
 |
 
-32-bit floating point representation of PI
+PI 的 32 位浮点表示
 
 |
 

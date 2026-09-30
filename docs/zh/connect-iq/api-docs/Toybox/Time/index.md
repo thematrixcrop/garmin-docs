@@ -198,7 +198,7 @@ Parameters:
 
 - :currentTimeType — ([Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module)) —
 
-        A [Time.CURRENT\_TIME\_\*](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const) value, which defaults to [Time.CURRENT\_TIME\_DEFAULT](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const) if no time type is provided
+        一个 [Time.CURRENT\_TIME\_\*](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const) 值；如果未提供时间类型，则默认为 [Time.CURRENT\_TIME\_DEFAULT](/connect-iq/api-docs/Toybox/Time/#CURRENT_TIME_DEFAULT-const)
 
 
 另见：

@@ -228,7 +228,7 @@ Returns:
 
 - [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) —
 
-    A bitmap containing the QR code image
+    包含 QR 码图像的位图
 
 
 Since:

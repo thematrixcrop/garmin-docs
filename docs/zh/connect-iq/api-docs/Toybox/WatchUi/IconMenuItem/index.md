@@ -269,7 +269,7 @@ Parameters:
 
 - :alignment — ([MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module)) —
 
-        A [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) constant representing the label alignment, which defaults to MENU\_ITEM\_LABEL\_ALIGN\_LEFT
+        一个表示标签对齐方式的 [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) 常量，默认为 MENU\_ITEM\_LABEL\_ALIGN\_LEFT
 
 
 Since:

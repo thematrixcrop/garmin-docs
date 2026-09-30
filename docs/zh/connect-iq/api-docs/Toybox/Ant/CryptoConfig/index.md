@@ -325,7 +325,7 @@ Parameters:
 
 - :decimationRate — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        A [Number](/connect-iq/api-docs/Toybox/Lang/Number/) with range 1-255 used for division of the master channel rate by the slave's
+        一个范围为 1-255 的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，用于将主通道速率除以从通道的速率
 
 
 Since:

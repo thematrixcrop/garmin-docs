@@ -73,7 +73,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-0xFFFFFFFF, units in meters
+    0-0xFFFFFFFF，单位为米
 
 
 ### var feHeartRate as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -88,7 +88,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    0-254 bpm, invalid 0xFF
+    0-254 bpm，无效值为 0xFF
 
 
 ### var feSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -103,4 +103,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-65.534m/s range, invalid 0xFFFF
+    范围为 0-65.534m/s，无效值为 0xFFFF

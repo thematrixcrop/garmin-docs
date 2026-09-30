@@ -289,7 +289,7 @@ Parameters:
 
 - :alignment — ([MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module)) —
 
-        A [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) constant representing the label alignment, which defaults to the system default for toggle menu items if not specified.
+        一个表示标签对齐方式的 [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) 常量；如果未指定，则默认为切换菜单项的系统默认值。
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 

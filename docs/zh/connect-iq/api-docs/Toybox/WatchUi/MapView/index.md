@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## 概述
 
-A [View](/connect-iq/api-docs/Toybox/WatchUi/View/) for rendering a map on the screen.
+一个用于在屏幕上渲染地图的 [View](/connect-iq/api-docs/Toybox/WatchUi/View/)。
 
 The map is rendered statically and focused on the bounding box and/or a MapMarker point or MapPolyline drawn on the map. The map can be rendered in [MAP\_MODE\_BROWSE](/connect-iq/api-docs/Toybox/WatchUi/) or [MAP\_MODE\_PREVIEW](/connect-iq/api-docs/Toybox/WatchUi/) mode.
 

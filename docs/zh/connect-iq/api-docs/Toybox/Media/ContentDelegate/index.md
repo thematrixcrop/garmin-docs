@@ -133,7 +133,7 @@ Parameters:
 
 - songEvent — ([Media.SongEvent](/connect-iq/api-docs/Toybox/Media/#SongEvent-module)) —
 
-    A [SONG\_EVENT\_\*](/connect-iq/api-docs/Toybox/Media/#SONG_EVENT_START-const) value indicating the triggered event
+    一个表示触发事件的 [SONG\_EVENT\_\*](/connect-iq/api-docs/Toybox/Media/#SONG_EVENT_START-const) 值
 
 - playbackPosition — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module)) —
 

@@ -41,7 +41,7 @@ If the size of the data field has changed since the last onUpdate(), onLayout() 
 
 Example:
 
-A basic widget View class definition
+基本的小组件 View 类定义
 
 ```
 using Toybox.WatchUi;
@@ -196,7 +196,7 @@ Parameters:
 
 - layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
-    a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) object to add
+    一个要添加的 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 对象
 
 
 Since:
@@ -279,7 +279,7 @@ Parameters:
 
 - layer —
 
-    a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) a layer object
+    一个 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 图层对象
 
 
 Returns:
@@ -417,14 +417,14 @@ Parameters:
 
 - layer —
 
-    a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) to remove from the layer stack.
+    一个要从图层堆栈中移除的 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)。
 
 
 Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true`, if layer is removed successfully, otherwise `false`
+    如果成功移除图层，则为 `true`，否则为 `false`
 
 
 Since:

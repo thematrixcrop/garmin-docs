@@ -153,7 +153,7 @@ Parameters:
 
 - format — ([Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module)) —
 
-    A [Lang.NUMBER\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Lang/#NUMBER_FORMAT_FLOAT-const) value representing the number format to decode.
+    一个表示要解码数字格式的 [Lang.NUMBER\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Lang/#NUMBER_FORMAT_FLOAT-const) 值。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -165,7 +165,7 @@ Parameters:
 
 - :endianness — ([Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module)) —
 
-        A [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) value representing the endianness of the number to decode. Default value is [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const).
+        一个表示要解码数字字节序的 [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) 值。默认值为 [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const)。
 
 
 Returns:
@@ -198,7 +198,7 @@ Parameters:
 
 - format — ([Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module)) —
 
-    A [Lang.NUMBER\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Lang/#NUMBER_FORMAT_FLOAT-const) value representing the number format to encode.
+    一个表示要编码数字格式的 [Lang.NUMBER\_FORMAT\_\*](/connect-iq/api-docs/Toybox/Lang/#NUMBER_FORMAT_FLOAT-const) 值。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -210,7 +210,7 @@ Parameters:
 
 - :endianness — ([Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module)) —
 
-        A [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) value representing the endianness of the number to encode. Default value is [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const).
+        一个表示要编码数字字节序的 [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) 值。默认值为 [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const)。
 
 
 Since:

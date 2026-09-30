@@ -96,7 +96,7 @@ API 级别 2.1.0
 
 Selectable 对象的默认状态。
 
-A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) constant, or 24-bit integer of the form 0xRRGGBB representing the default state of the Selectable
+一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的默认状态
 
 Since:
 
@@ -110,7 +110,7 @@ Returns:
 
 Selectable 对象的禁用状态。
 
-A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) constant, or 24-bit integer of the form 0xRRGGBB representing the disabled state of the Selectable
+一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的禁用状态
 
 Since:
 
@@ -124,7 +124,7 @@ Returns:
 
 Selectable 对象的高亮状态。
 
-A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) constant, or 24-bit integer of the form 0xRRGGBB representing the highlighted state of the Selectable
+一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的高亮状态
 
 Since:
 
@@ -138,7 +138,7 @@ Returns:
 
 Selectable 对象的选中状态。
 
-A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) constant, or 24-bit integer of the form 0xRRGGBB representing the selected state of the Selectable
+一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的选中状态
 
 Since:
 

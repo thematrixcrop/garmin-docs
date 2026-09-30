@@ -154,7 +154,7 @@ Parameters:
 
 - :writeType — ([BluetoothLowEnergy.WriteType](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WriteType-module)) —
 
-        A [WRITE\_TYPE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WRITE_TYPE_WITH_RESPONSE-const) indicating the write type to use when writing to the characteristic. Cannot be `null`.
+        一个表示写入特征时所用写入类型的 [WRITE\_TYPE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WRITE_TYPE_WITH_RESPONSE-const)。不能为 `null`。
 
 
 Since:

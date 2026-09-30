@@ -20,7 +20,7 @@ Toybox.WatchUi.InputDelegate
 
 BehaviorDelegate handles behavior input events.
 
-A BehaviorDelegate differs from an [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) in that it acts upon device-independent behaviors, such as "next page" and "previous page" instead of device-specific button presses. For example, these behaviors might be mapped to swipe left and swipe right inputs on touch screen devices, while on non-touch screen devices these behaviors might be mapped to physical buttons.
+BehaviorDelegate 与 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的区别在于，它作用于与设备无关的行为，例如“下一页”和“上一页”，而不是特定于设备的按键操作。例如，在触摸屏设备上，这些行为可能映射到向左滑动和向右滑动输入；而在非触摸屏设备上，这些行为可能映射到实体按键。
 
 Since BehaviorDelegate extends InputDelegate, so it can also act on basic inputs as well. If a BehaviorDelegate returns `true` for a function (indicating the input was used) then the InputDelegate function that corresponds to the behavior will not be called.
 

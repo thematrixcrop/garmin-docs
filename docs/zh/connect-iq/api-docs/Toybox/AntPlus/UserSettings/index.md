@@ -77,7 +77,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-50kg range
+    范围为 0-50kg
 
 
 ### var gearRatio as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -92,7 +92,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0.03-7.65 range
+    范围为 0.03-7.65
 
 
 ### var userWeight as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -107,7 +107,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-655.34 kg range
+    范围为 0-655.34 kg
 
 
 ### var wheelDiameter as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -122,4 +122,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-2.54m range
+    范围为 0-2.54m

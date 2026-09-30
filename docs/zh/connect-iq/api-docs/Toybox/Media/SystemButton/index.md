@@ -66,7 +66,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
 
-    A bitmap representation of the button or a 24-bit RRGGBB color
+    按钮的位图表示或 24 位 RRGGBB 颜色
 
 
 Since:

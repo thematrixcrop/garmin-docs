@@ -62,7 +62,7 @@ Returns:
 
 - [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
 
-    A bitmap representation of the button
+    按钮的位图表示
 
 
 Since:

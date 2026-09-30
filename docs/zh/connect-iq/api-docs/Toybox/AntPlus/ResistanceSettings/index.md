@@ -65,4 +65,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0-100% of maximum resistance.
+    最大阻力的 0-100%。

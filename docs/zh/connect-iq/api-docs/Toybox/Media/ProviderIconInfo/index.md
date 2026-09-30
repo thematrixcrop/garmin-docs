@@ -43,7 +43,7 @@ Parameters:
 
 - accentColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/) value to indicate the icon's accent color
+    一个用于指示图标强调色的 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/) 值
 
 
 Since:

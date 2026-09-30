@@ -22,7 +22,7 @@ A class representing a network of bike lights
 
 Example:
 
-A basic example of LightNetwork and LightNetworkListener setup
+LightNetwork 和 LightNetworkListener 设置的基本示例
 
 ```
 using Toybox.AntPlus;
@@ -385,7 +385,7 @@ Parameters:
 
 - left — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-- `true` to control left signal
+- 设为 `true` 以控制左侧信号
 
 - 为控制右侧信号时为 `false`
 

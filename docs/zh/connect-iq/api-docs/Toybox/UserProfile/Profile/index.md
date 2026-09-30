@@ -340,7 +340,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) representing the upcoming sleep time.
+    一个表示即将到来的睡眠时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 
 ### var upcomingWakeTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
@@ -355,7 +355,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) representing the upcoming wake time.
+    一个表示即将到来的唤醒时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 
 ### var vo2maxCycling as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**

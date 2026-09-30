@@ -122,7 +122,7 @@ Parameters:
 
 - :encoding — ([StringUtil.CharacterEncoding](/connect-iq/api-docs/Toybox/StringUtil/#CharacterEncoding-module)) —
 
-        A [CHAR\_ENCODING\_\*](/connect-iq/api-docs/Toybox/StringUtil/) value indicating the String encoding to use when generating a hex string or ByteArray when either the `fromRepresentation` or `toRepresentation` is set to REPRESENTATION\_STRING\_PLAIN\_TEXT. Defaults to CHAR\_ENCODING\_UTF8 if not specified.
+        一个 [CHAR\_ENCODING\_\*](/connect-iq/api-docs/Toybox/StringUtil/) 值，用于指示在 `fromRepresentation` 或 `toRepresentation` 设置为 REPRESENTATION\_STRING\_PLAIN\_TEXT 时，生成十六进制字符串或 ByteArray 所使用的 String 编码。如果未指定，则默认为 CHAR\_ENCODING\_UTF8。
 
 
 Returns:
@@ -158,7 +158,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A base64 encoded String
+    一个经过 base64 编码的 String
 
 
 Since:

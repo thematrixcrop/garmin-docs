@@ -182,11 +182,11 @@ Parameters:
 
 - :bitmapResource — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)) —
 
-        A [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) to initialize
+        用于初始化的 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)
 
 - :alphaBlending — ([Graphics.AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module)) —
 
-        A [AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) enum to specify the level of alpha blending support for this buffered bitmap object
+        一个用于指定此缓冲位图对象所支持的 Alpha 混合级别的 [AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) 枚举
 
 
 Since:

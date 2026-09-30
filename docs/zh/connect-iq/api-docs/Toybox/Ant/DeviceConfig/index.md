@@ -135,11 +135,11 @@ Network key lengths
 
 - [**networkKey128Bit**](#networkKey128Bit-var) as [DeviceConfig.NetworkKey128Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey128Bit-named_type) or **Null**
 
-    A 128 bit network key.
+    一个 128 位网络密钥。
 
 - [**networkKey64Bit**](#networkKey64Bit-var) as [DeviceConfig.NetworkKey64Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey64Bit-named_type) or **Null**
 
-    A 64 bit network key.
+    一个 64 位网络密钥。
 
 - [**radioFrequency**](#radioFrequency-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -195,7 +195,7 @@ API 级别 1.0.0
 
 ### var deviceType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-A 1-Byte device type identifier
+一个 1 字节设备类型标识符
 
 Since:
 
@@ -211,7 +211,7 @@ API 级别 1.0.0
 
 ### var networkKey128Bit as [DeviceConfig.NetworkKey128Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey128Bit-named_type) or **Null**
 
-A 128 bit network key
+一个 128 位网络密钥
 
 Since:
 
@@ -219,7 +219,7 @@ API 级别 1.2.0
 
 ### var networkKey64Bit as [DeviceConfig.NetworkKey64Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey64Bit-named_type) or **Null**
 
-A 64 bit network key
+一个 64 位网络密钥
 
 Since:
 
@@ -293,7 +293,7 @@ Parameters:
 
 - :deviceType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        1-Byte device type identifier
+        1 字节设备类型标识符
 
 - :transmissionType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -350,14 +350,14 @@ Parameters:
 
 - :networkKey64Bit — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        64 bit network key
+        64 位网络密钥
 
 - Set this when [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) was chosen in the channel assignment
 
 
 - :networkKey128Bit — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        128 bit network key
+        128 位网络密钥
 
 - Set this when NETWORK\_PRIVATE was chosen in the channel assignment
 

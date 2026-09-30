@@ -81,7 +81,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0 - 1.0 range, invalid = 0xFF
+    范围为 0 - 1.0，无效值 = 0xFF
 
 
 ### var slope as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -111,7 +111,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0 - 0.0127 range, invalid = 0xFF
+    范围为 0 - 0.0127，无效值 = 0xFF
 
 
 ### var windResistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -126,7 +126,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    0.0 - 1.86 kg/m range, invalid = 0xFF
+    范围为 0.0 - 1.86 kg/m，无效值 = 0xFF
 
 
 ### var windSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
