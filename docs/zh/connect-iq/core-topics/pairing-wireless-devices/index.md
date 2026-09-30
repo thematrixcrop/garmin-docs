@@ -11,9 +11,9 @@ title: "Sensor Pairing"
 
 为了让系统知道你的设备应用程序或数据字段支持本地对接流,你需要你的[AppBase.getSensorDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorDelegate-instance_function)来返回你的[Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)的实现. 在你的代表中,你的实现必须返回`true`参与扫描.
 
-##扫描你的设备
+## 扫描您的设备
 
-When the user has the device scan for sensors, 系统将 start your app without a UI, request your sensor delegate and call your [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function). During this time, you can begin scanning for ANT or BLE devices.
+当用户让设备扫描传感器时，系统会在无界面的情况下启动您的应用程序，请求您的传感器委托并调用 [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function)。此时，您可以开始扫描 ANT 或 BLE 设备。
 
 如果您的扫描显示任何设备,请填满Sensor.SensorInfo的信息,并为每个检测的设备拨打Sensor.notifyNewSensor().当扫描完成时,请拨打通知系统您已经完成扫描.由于其他应用程序也可能需要扫描设备,使用现实的时间限期,并快速通知如果没有发现设备.
 
@@ -29,7 +29,7 @@ When the user has the device scan for sensors, 系统将 start your app without 
 
 如果添加支持本地对配流,用户将被要求在数据字段安装时与传感器对配.应用程序通常希望作为设置流的一部分对配设备.您可以使用`System.exitTo(new Intent("system://pairing", {}))`离开用户进入本地传感器扫描过程.
 
-## 测试 in the Simulator
+## 在模拟器中测试
 
 如果您想在Connect IQ模拟器中测试您的配对代码,请使用*设置>管理传感器*选项.使用*添加*按将触发[Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/).
 
