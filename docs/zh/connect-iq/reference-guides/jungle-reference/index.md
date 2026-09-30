@@ -174,24 +174,24 @@ class MyAmazingAppView extends WatchUi.View {
         sharedLogic();
 
         if (experimental) {
-            // If a newer device, call the new logic
+            // 如果是较新的设备，调用新逻辑
             newHotnessLogic();
         } else {
-            // If an older device, call the old logic
+            // 如果是较旧的设备，调用旧逻辑
             oldAndBoringLogic();
         }
     }
 
     function newHotnessLogic() {
-        // Advanced functionality using Sensor.AccelerometerData
+        // 使用 Sensor.AccelerometerData 的高级功能
     }
 
     function oldAndBoringLogic() {
-        // Basic functionality using Sensor.Info.accel data
+        // 使用 Sensor.Info.accel 数据的基本功能
     }
 
     function sharedLogic() {
-        // Shared logic
+        // 共享逻辑
     }
 }
 ```
@@ -216,8 +216,8 @@ import Toybox.WatchUi;
 class MyAmazingAppView extends WatchUi.View {
 
     function onUpdate(dc) {
-        // If a newer device, call the new logic
-        // otherwise, call the old logic
+        // 如果是较新的设备，调用新逻辑
+        // 否则调用旧逻辑
         myAlgorithm();
     }
 
@@ -239,16 +239,16 @@ class MyAmazingAppView extends WatchUi.View {
 
     (:experimental)
     function newHotnessLogic() {
-        // Advanced functionality using Sensor.AccelerometerData
+        // 使用 Sensor.AccelerometerData 的高级功能
     }
 
     (:boring)
     function oldAndBoringLogic() {
-        // Basic functionality using Sensor.Info.accel data
+        // 使用 Sensor.Info.accel 数据的基本功能
     }
 
     function sharedLogic() {
-        // Shared logic
+        // 共享逻辑
     }
 }
 ```
