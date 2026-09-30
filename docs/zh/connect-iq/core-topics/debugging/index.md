@@ -5,46 +5,46 @@ title: "测试和调试"
 
 ![](/connect-iq/resources/programmers-guide/chopper-monkey.png)
 
-Connect IQ 有几种不同的方法来测试和调试您的应用：
+Connect IQ 提供多种测试和调试应用的方法：
 
-1.使用`println()`语句进行基本调试
+1. 使用 `println()` 语句进行基本调试
 
-2. 使用视觉工作室代码调试器
+2. 使用 Visual Studio Code 调试器
 
-3. 使用命令行调试器 (`mdd`)
+3. 使用命令行调试器（`mdd`）
 
 
 ## 基本调试
 
-测试Connect IQ应用程序的一种方法是将[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句包含在应用中的战略点上.在视觉工作室代码中,这些[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句将输出到控制台上.在设备上,[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句会写到设备文件系统中的`/GARMIN/APPS/LOGS`目录中的`<APPNAME>.TXT file`.
+测试 Connect IQ 应用的一种方法，是在代码中的关键位置加入 [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) 语句。在 Visual Studio Code 中，这些语句会将输出写入控制台。在设备上，输出会写入设备文件系统 `/GARMIN/APPS/LOGS` 目录下的 `<APPNAME>.TXT` 文件。
 
-这些日志文件不会自动创建,因此它们必须在设备上手动创建并命名以匹配应用程序的相应`PRG`文件名称.例如,从`/GARMIN/APPS/MYAPP.PRG`输出日志,您必须创建`/GARMIN/APPS/LOGS/MYAPP.TXT`.
+日志文件不会自动创建，因此必须在设备上手动创建，并将文件名设为与应用对应的 `PRG` 文件一致。例如，要记录 `/GARMIN/APPS/MYAPP.PRG` 的输出，必须创建 `/GARMIN/APPS/LOGS/MYAPP.TXT`。
 
-## 修改视觉工作室代码
+## 使用 Visual Studio Code 调试
 
-要开始调试应用程序，请选择 *Run > Start Debugging*。确保您已在编辑器中打开要调试的项目源文件。选择要调试的产品后，应用程序会在模拟器中以调试模式启动。调试仅在 Connect IQ 模拟器中运行时受支持。
+要开始调试应用，请选择 *Run > Start Debugging*。请确保编辑器中打开的是待调试项目的源文件。选择要调试的产品后，应用会在模拟器中以调试模式启动。只有在 Connect IQ 模拟器中运行应用时才支持调试。
 
-###设定一个断点
+### 设置断点
 
-与视觉工作室代码中的其他项目一样,在 Monkey C 编辑器中设置断点,在源代码旁边垂直行列中突出一行,然后点击设置断点.
+与 Visual Studio Code 中的其他项目一样，要在 Monkey C 编辑器中设置断点，请突出显示源代码旁垂直标尺中的某一行，然后单击设置断点。
 
 ![](/connect-iq/resources/programmers-guide/vscode-breakpoint.png)
 
 ### 查看应用状态
 
-当你的应用程序达到断点时,你可以在 * Run 和 Debug* 中检查运行时间状态. * 变量 * 视图允许你看到你的参数和本地,而 * 调用堆 * 允许你看到不同堆框架中的状态.
+应用运行到断点时，可以在 *Run and Debug* 中查看运行时状态。*Variables* 视图显示参数和局部变量，*Call Stack* 显示不同栈帧中的状态。
 
-当您的应用程序在调试中暂停时,您将被要求打开本土的 *Debug*视角.从这里,您可以在本土的调试视图中查看堆痕迹.点击堆痕迹内的堆框架将填充本土的变量视图,并将在该堆框架中的适用的变量.全球变量只会在顶部堆框架中可见;它们会作为该堆框架内的`$`变量出现.
+应用在调试期间暂停时，系统会提示您打开原生的 *Debug* 视图。在该视图中可以查看调用栈。单击调用栈中的某个栈帧后，原生 *Variables* 视图会显示该栈帧中的相关变量。全局变量仅在最顶部的栈帧中可见，并以该栈帧中的 `$` 变量形式出现。
 
 ![](/connect-iq/resources/programmers-guide/vscode-debugging.png)
 
-## 在命令行上做错误
+## 使用命令行调试
 
-`mdd`是Monkey C命令行调试器.基于`gdb`的模型,`mdd`允许您加载执行式,设置断点,并检查堆框架,本地变量和全球环境.
+`mdd` 是 Monkey C 命令行调试器。它以 `gdb` 为模型，允许您加载可执行文件、设置断点，以及检查栈帧、局部变量和全局环境。
 
 ### 入门
 
-在开始之前,请启动模拟器:
+开始前，请先启动模拟器：
 
 ```bash
 > simulator &
@@ -52,14 +52,14 @@ Connect IQ 有几种不同的方法来测试和调试您的应用：
 > mdd
 ```
 
-您将受到以下欢迎:
+启动后会看到以下提示：
 
 ```
-Connect IQ Version 3.2.0. Type "help" 更多信息.
+Connect IQ Version 3.2.0. Type "help" for more information.
 (mdd)
 ```
 
-随时可从命令行提示中获取帮助:
+在命令行提示符下随时可以获取帮助：
 
 ```
 (mdd) help
@@ -70,24 +70,22 @@ data -- Examining data.
 running -- Running the program.
 stack -- Examining the stack.
 status -- Status inquiries.
-support -- 支持 facilities.
+support -- Support facilities.
 
-输入 `help` 后跟类名，可列出该类中的命令。输入 `help all` 可列出所有命令。
-Type "help" followed by a command name for full documentation.
-Command name abbreviations are allowed if defined.
+输入 `help` 加类名，可以列出该类中的命令。输入 `help all` 可以列出所有命令。输入 `help` 加命令名，可以查看完整文档。已定义的命令名可以使用缩写。
 ```
 
-### 装载和运行一个可执行的
+### 加载并运行可执行文件
 
-要将执行式加载到`mdd`中,你需要`prg`,调试 XML和`prg`构建的产品.如果你使用`monkeyc`命令编译`prg`,`debug.xml`也会生成,Visual Studio Code通常将这些文件输出到你的项目`bin`文件中.
+要将可执行文件加载到 `mdd`，需要准备 `prg` 文件、调试 XML 文件，以及构建该 `prg` 时所针对的产品。如果使用 `monkeyc` 命令编译 `prg`，编译器也会生成 `debug.xml`；Visual Studio Code 通常会将这些文件输出到项目的 `bin` 文件夹中。
 
-您使用`file`命令将它们加载到`mdd`环境中.
+使用 `file` 命令将它们加载到 `mdd` 环境中。
 
 ```
 (mdd) file MyFace.prg MyFace.prg.debug.xml fenix6
 ```
 
-现在可以使用`run`命令运行执行式:
+现在可以使用 `run` 命令运行可执行文件：
 
 ```
 (mdd) r
@@ -96,22 +94,22 @@ Starting app: C:\Projects\ciq-apps\strava\bin\Strava.prg
 
 ### 设置断点
 
-通过`break`命令,可以将分区分分配给文件/行对:
+使用 `break` 命令，可以将断点分配给文件和行号：
 
 ```
 (mdd) break \path\to\Thx.mc:1138
 ```
 
-当程序执行该行时,执行将暂停:
+程序执行到该行时会暂停：
 
 ```
 Hit breakpoint 1, initialize () at Thx.mc:1138
 (mdd)
 ```
 
-### 帧信息
+### 栈帧信息
 
-您可以使用`info frame`查询您目前的堆框架:
+可以使用 `info frame` 查询当前栈帧：
 
 ```
 (mdd) info frame
@@ -125,7 +123,7 @@ Stack level 0, frame at 0x10002120
       sen = null
 ```
 
-您还可以使用`print`命令输出变量以及表达式.
+还可以使用 `print` 命令输出变量和表达式的值。
 
 ```
 (mdd) print thx
@@ -134,19 +132,19 @@ thx = null
 
 ### 控制执行
 
-你可以使用`next`命令进入下一行:
+使用 `next` 命令可以执行到下一行：
 
 ```
 (mdd) next
 ```
 
-命令将进入一个子程序:
+使用 `step` 命令可以进入子程序：
 
 ```
 (mdd) step
 ```
 
-命令将返回完整执行状态,直到设置下一个断点或应用程序终止:
+使用 `continue` 命令可以恢复完整执行，直到命中下一个断点或应用终止：
 
 ```
 (mdd) continue
@@ -154,11 +152,11 @@ thx = null
 
 ## 处理崩溃
 
-尽管最好的调试工作,但有时会发生崩.与Connect IQ相关的两种通用设备崩可能发生: *应用程序崩*和 *设备崩*.
+即使进行了充分的调试，应用仍可能发生崩溃。Connect IQ 相关的设备崩溃通常分为两类，并且每类都会生成日志文件：*应用崩溃* 和 *设备崩溃*。
 
 ### 应用崩溃
 
-应用程序崩通常会导致应用程序意外放弃或显示"IQ!"图标,但不会导致整个设备崩或重新启动.这种崩通常是由于应用程序中的错误,尽管它也可能是由于Connect IQ本身的错误.每当应用程序崩发生时,设备上写出或更新一个`CIQ_LOG.YAML`文件,并包含应用程序开发人员可以用来解决该问题的崩相关的信息.
+应用崩溃通常会导致应用意外退出或显示“IQ!”图标，但不会导致整个设备崩溃或重启。这类崩溃通常由应用中的错误引起，也可能是 Connect IQ 本身的错误。每次应用崩溃时，设备都会在 `/GARMIN/APPS/LOGS` 中写入或更新 `CIQ_LOG.YAML` 文件，其中包含可帮助开发者排查问题的信息。CIQ_LOG 通常如下所示：
 
 ```yaml
 Error: ErrorName
@@ -182,14 +180,14 @@ Stack:
     Function: otherBrokenItems
 ```
 
-`ConnectIQ-Version`输入不是设备的Connect IQ版本.相反,这指开发人员在出口应用程序时使用的SDK版本.
+`ConnectIQ-Version` 条目不是设备上的 Connect IQ 版本，而是开发者导出应用时使用的 SDK 版本。
 
-** 注:** 在API级别3.0.0之前的设备中,将打印一个简单的错误日志为`CIQ_LOG.TXT`.
+**注意：** API 级别低于 3.0.0 的设备会将简化的错误日志写入 `CIQ_LOG.TXT`。
 
 ### 设备崩溃
 
-设备崩通常会导致设备重新启动或结.这些表明Connect IQ或设备固件错误,并且应该比应用程序崩少得多.当设备崩发生时,将`ERR_LOG.txt`文件写给`/GARMIN`在设备上,包含与崩相关的堆痕迹信息.请在我们的开发者论坛上报告崩时提供此文件.Garmin的设备团队可以查看设备崩日志来确定崩的原因,通常将在未来的固件发布中提供修复.
+设备崩溃通常会导致设备重启或冻结。这通常表示 Connect IQ 或设备固件存在错误，因此发生频率应远低于应用崩溃。设备崩溃时，设备会在 `/GARMIN` 中写入 `ERR_LOG.txt` 文件，其中包含与崩溃相关的调用栈信息。在开发者论坛报告崩溃时，请附上此文件。Garmin 设备团队可以通过设备崩溃日志确定原因，并通常会在后续固件版本中提供修复。
 
-关于日志文件的注释
+### 日志文件说明
 
-当设备上的任何日志文件大小超过5kb时,它将自动归档到`<LOGNAME>.BAK`,并启动一个新的日志.任何旧的`.BAK`文件都会在存档发生时被重写,因此日志可以达到最大的空间约为10kb.
+设备上的任何日志文件超过 5 KB 后，都会自动归档为 `<LOGNAME>.BAK`，然后开始写入新的日志文件。归档时会覆盖旧的 `.BAK` 文件，因此单个日志最多占用约 10 KB 空间。
