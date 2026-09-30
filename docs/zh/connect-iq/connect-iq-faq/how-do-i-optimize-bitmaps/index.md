@@ -89,13 +89,13 @@ Connect IQ 支持 1 BPP、2 BPP、4 BPP、8 BPP 和 16 BPP 的图像。
 Connect IQ 提供了多种选项，帮助开发者指定图像的导入方式。
 
 ```xml
-<!-- Use the dithering option to enable or disable auto dithering of the image -->
+<!-- 使用抖动选项启用或禁用图像自动抖动 -->
     <bitmap id="Logo" x="center" y="12" filename="Logo.png" dithering="none">
-        <!-- The palette option allows you to reduce the bit depth of an image. Connect IQ will pick a bit depth
-               based on the number of colors specified in the palette. If your image does not have transparency,
-               use the disableTransparency option to remove the extra color used to represent transparent -->
+        <!-- 调色板选项可让您减少图像的位深度。Connect IQ 会根据调色板中指定的颜色数量选择位深度
+               如果图像没有透明度，请使用 disableTransparency 选项
+               移除用于表示透明色的额外颜色 -->
         <palette disableTransparency="true">
-            <!-- Logo is black on white text, so using four colors to get shading while reducing the color depth to 2 bpp -->
+            <!-- 徽标为白底黑字，因此使用四种颜色进行着色，同时将颜色深度降低到 2 bpp -->
             <color>FFFFFF</color>
             <color>AAAAAA</color>
             <color>555555</color>
@@ -126,7 +126,7 @@ Connect IQ 导入图像时默认使用 [Floyd-Steinberg dithering](https://en.wi
 
 ```xml
         <palette disableTransparency="true">
-            <!-- Logo is black on white text, so using four colors to get shading while reducing the color depth to 2 bpp -->
+            <!-- 徽标为白底黑字，因此使用四种颜色进行着色，同时将颜色深度降低到 2 bpp -->
             <color>FFFFFF</color>
             <color>AAAAAA</color>
             <color>555555</color>
