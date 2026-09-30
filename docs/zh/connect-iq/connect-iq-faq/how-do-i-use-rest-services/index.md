@@ -126,4 +126,4 @@ title: "How do I communicate with REST services?"
 }
 ```
 
-Limiting the data to just what 您需要 display, and use will result in a much faster communications transaction. Of course, writing and hosting your own web service can be a bit much for a simple, glanceable widget.
+将数据限制为您需要显示和使用的内容，可以显著加快通信事务。当然，对于一个简单、只需快速查看的小组件，编写并托管自己的 Web 服务可能有些复杂。
