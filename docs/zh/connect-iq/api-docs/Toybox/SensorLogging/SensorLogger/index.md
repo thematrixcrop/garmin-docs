@@ -103,21 +103,21 @@ Parameters:
 
         加速度计数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取加速度计数据。
 
 
 - :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         陀螺仪数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取陀螺仪数据。
 
 
 - :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         磁力计数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取磁力计数据。
 
 
 - :synchronous — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —

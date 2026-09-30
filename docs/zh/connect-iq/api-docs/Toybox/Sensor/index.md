@@ -1402,46 +1402,46 @@ Parameters:
 
         加速度计数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取加速度计数据。
 
-- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [power Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var) be computed.
+- :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [power Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var)。
 
-- :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [pitch Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var) be computed.
+- :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [pitch Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var)。
 
-- :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [roll Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var) be computed.
+- :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [roll Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var)。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:accelerometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 - :heartBeatIntervals — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         Heart Beat Interval 数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch heart beat interval data.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取心跳间隔数据。
 
 
 - :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         陀螺仪数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取陀螺仪数据。
 
-- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:gyroscope=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:gyroscope=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 - :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
         磁力计数据的选项。
 
-- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
+- :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取磁力计数据。
 
-- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) Samples per second to request in Hz.
+- :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Valid only when `:magnetometer=>:enabled` is set to `true`. Requests that the [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var) be included. This is useful for synchronizing data with other sensors.
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:magnetometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 

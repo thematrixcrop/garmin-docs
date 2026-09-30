@@ -143,6 +143,11 @@ const TYPE_PAIR = /^[A-Za-z][A-Za-z0-9_.]*(?:, [A-Za-z][A-Za-z0-9_.]*)+$/;
 function check(out: string[], raw: string): void {
   let s = raw.trim().replace(/\*\*/g, '');
   if (!s) return;
+  // API signature rows and exception markers are structural metadata.
+  if (/—\s*\(.+\)\s*—$/.test(s)) return;
+  if (/^\([^)]*(?:Exception|Error)\)\s*—$/.test(s)) return;
+  if (/^\$\([^)]*\)/.test(s)) return;
+  if (/^(?:new\s+)?WatchUi\.|^(?:bitmapMarker|defaultMarker)\./.test(s)) return;
   // API member signatures retain English type syntax after links are removed.
   if (/^(?:var\s+)?[A-Za-z_][A-Za-z0-9_]*(?:\(\))?\s+as(?:\s+or\s+Null)?$/.test(s)) return;
   if (/\bas\b/.test(s) && !/[.!?]/.test(s) && /^(?:\(|[A-Za-z_][A-Za-z0-9_.]*\b|as\b)/.test(s)) return;
@@ -160,6 +165,9 @@ function check(out: string[], raw: string): void {
   if (/[\u4e00-\u9fff]/.test(s)) return; // already Chinese
   if ((s.match(/[A-Za-z]{2,}/g) ?? []).length < 2) return;
   if (KEEP_ENGLISH.some((k) => s.includes(k))) return;
+  if (/^(?:Face It|Captain Marvel|First Avenger|Stack Overflow)$/.test(s)) return;
+  if (/^(?:Fenix|D2|Forerunner|Vivoactive|EDGE|epix)/i.test(s)) return;
+  if (/^(?:int|long|float|double)、(?:Integer|Long|Float|Double)$/.test(s)) return;
   if (TYPE_PAIR.test(s)) return;
   if (!/[a-z]{3,}/.test(s)) return;
   if (looksUntranslatable(s)) return;
