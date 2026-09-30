@@ -13,13 +13,13 @@ title: "Get the SDK"
 
 - 一个. **许可证.** 根据本协议的条款和条件,Garmin通过此授予您使用程序材料的有限,非独家,个人,可撤销,不可转让,不可下许可和不可转移的许可证,仅用于开发和测试应用程序.本协议中未明确授予的所有许可证均保留.
 - b. **限制**:您不得以本协议明确不允许的任何目的使用程序材料.您同意不出租,租用,借贷,上传或托管任何网站或服务器,销售,重新分配或下许可程序材料,全部或部分,或使其他人能够这样做.您不得,并您同意不允许,或允许他人创建衍生作品,复制,复制 (除非本协议明确允许),解构,逆工程,拆除,试图获得程序材料的源代码,或解密任何网站或服务器.您不得: (一个) 改变或删除任何在或在材料上出现的版权,商标或其他专有权的通知; (b) 参与任何活动,除非您在任何形式中涉及到程序,程序或任何其他授权的程序,程序或任何授权的程序,程序或任何其他平台,或任何授权的程序,程序或任何其他设备,或任何未经授权的程序,程序或任何授权的程序,或任何授权的程序,或任何未经授权的程序,或任何其他设备,或您的
--   c. **Updates; No 支持 or Maintenance**: Garmin may, but is not obligated to, extend, enhance, or otherwise modify the SDK at any time without notice. If updates are made available by Garmin, the terms of this Agreement will govern such updates, unless the update is accompanied by a separate license in which case the terms of that license will govern. Garmin may, but is not obligated to, provide any maintenance, technical or other support for the SDK. You agree that the form and nature of the Program Materials may change without prior notice to you and that future versions of the Program Materials may be incompatible with applications developed on previous versions of the Program Materials.
+-   c. **更新；不提供支持或维护。** Garmin 可以随时扩展、增强或以其他方式修改 SDK，且无需另行通知。Garmin 提供更新时，除非更新附带单独的许可证，否则本协议的条款适用于这些更新；如果附带单独许可证，则以该许可证的条款为准。Garmin 可以提供 SDK 的维护、技术支持或其他支持，但不承担此项义务。您同意，程序材料的形式和性质可能在未事先通知您的情况下发生变化，程序材料的未来版本也可能与使用早期版本程序材料开发的应用程序不兼容。
 - d. **应用程序要求**:您对应用程序的开发和使用的所有方面负责,包括相关的文档,用户协助,支持和保证.您将确保您的应用程序符合 (i) 在[https://developer.garmin.com/connect-iq/app-review-guidelines/](/connect-iq/app-review-guidelines/)上可用的开发者指南,随时更新由Garmin;和 (ii) 在 **表 A (应用程序要求)**中所述的要求.如果适用,Garmin对应用程序的审查,测试或批准都不会限制或解除您与应用程序有关的任何责任.
 
 在ICQ商店发行应用程序
 
 - 一个. **注册和申请提交过程.** 为了提交申请,您必须遵守以下要求:
-    -   1\. **Registration**. You must complete the registration process specified by Garmin ("**Registration**") to create an account ("**Garmin 开发者账户**"). You must provide complete and accurate information as requested during Registration. You must maintain your Garmin 开发者账户 in good standing. You may not share your login credentials or your Garmin 开发者账户 with anyone other than Authorized Users and you must ensure that each Authorized User is aware of and complies with the terms and conditions of this Agreement. Garmin reserves the right to approve or decline your participation as a Garmin Developer in its sole discretion.
+    -   1\. **注册。** 您必须完成 Garmin 指定的注册流程（“**注册**”）以创建账户（“**Garmin 开发者账户**”）。您必须按注册流程要求提供完整且准确的信息，并保持 Garmin 开发者账户处于良好状态。除授权用户外，您不得与任何人共享登录凭据或 Garmin 开发者账户，并且必须确保每位授权用户了解并遵守本协议的条款和条件。Garmin 保留自行决定批准或拒绝您作为 Garmin 开发者参与的权利。
 - 2\. **品牌用户名**. 如果与您的应用程序相关的用户名包括公司名称或品牌,那么您必须由该公司授权在您的用户名中使用该公司名称或品牌,或者更改您的用户名以删除该公司名称或品牌.
 您必须至少18岁才能创建开发者帐户并提交申请.
 - 4\. **申请提交**. 通过提交申请,您表示并保证:
@@ -33,11 +33,11 @@ title: "Get the SDK"
 - B.您将向最终用户准确地披露任何支付要求的范围,并完成所有这些购买.
 - C. 如果您使用 Garmin 不提供的支付处理器,您将确保任何此类支付方式的安全性.
 - 2\. **使用Garmin商务服务.**您不需要使用商务服务来利您的申请,但如果您选择这样做,则适用于本节的要求.
-        -   A. **支持ed Countries.** You must be in a supported country to use the Merchant Service. Information on supported countries is available in the 文档.
+        -   A. **支持的国家/地区。** 您必须位于受支持的国家或地区，才能使用商户服务。受支持国家或地区的信息请参阅文档。
 - B. **市场账户.** 您必须与Garmin授权的支付处理器和市场平台提供商达成单独协议,并保持有效的账户 ("**商户**").
-        -   C. **Fees.** In consideration of Garmin’s provision of the Merchant Service, Garmin will collect (i) a non-refundable annual fee; and (ii) a service fee that is a percentage of revenue collected by Garmin—in each case, in the amounts specified in the 文档.
-        -   D. **Customer Returns.** You agree that your earned revenue from sales through the Merchant Service is subject to the return policy published in the 文档. In Garmin’s discretion, Garmin may either hold funds during the applicable return period, set-off amounts from returned Applications from future payouts to you, or require you to provide a Garmin a refund in the amount remitted to you for a returned Application.
-        -   E. **Payout Schedule.** Garmin will remit earned payments to you in accordance with the schedule and minimum amount threshold specified in the 文档.
+        -   C. **费用。** 作为 Garmin 提供商户服务的对价，Garmin 将收取：(i) 不可退款的年度费用；以及 (ii) 按 Garmin 收取收入的一定比例计算的服务费。两项费用的金额均以文档中规定的金额为准。
+        -   D. **客户退货。** 您同意，通过商户服务销售获得的收入须遵守文档中公布的退货政策。Garmin 可自行决定在适用的退货期内暂扣资金、从未来应向您支付的款项中抵扣退回应用程序的金额，或要求您向 Garmin 退还已就退回应用程序支付给您的金额。
+        -   E. **付款时间表。** Garmin 将按照文档中规定的时间表和最低金额门槛向您支付已赚取的款项。
         -   F. **税费。**
 - (i) 您同意及时提供任何与您使用商务服务相关的税务文件或证书.
 - (ii) 如果Garmin或其付款处理商合理地确定适用的 (本地) 法律或适用的政府税务部门要求申报,收取,扣除或扣除任何税 (在每个情况下,"**扣除税**),Garmin也可以扣除这些扣除税的金额, Garmin向您转发的金额.
@@ -51,20 +51,20 @@ title: "Get the SDK"
 - 2\. **因原因的终止.** 如果您未履行或在任何重大方面未遵守本协议下的任何义务,并且未经收到此次失败的书面通知后30天内纠正此次失败,那么Garmin可在此30天的治疗期到期后终止本协议.
 - c. **终止效果.** 由于任何原因终止协议:
 您应立即停止使用和删除程序材料.
-    -   2\. Upon termination, Garmin will remove your Application from the CIQ Store. End users who have previously downloaded a copy of the Application may continue to use that copy indefinitely. Garmin will pay any amounts due in your account in accordance with the ordinary schedule specified in the 文档.
+    -   2\. 协议终止后，Garmin 将从 CIQ 商店移除您的应用程序。此前已下载应用程序副本的最终用户可以继续无限期使用该副本。Garmin 将按照文档中规定的常规时间表支付您账户中应付的任何款项。
 - 3\.本协议终止自然存活的条款应存活.
 
 ##### **IV. 专有权利**
 
 - 一个. **Garmin的所有权.**Garmin保留所有权,所有权和对和对程序材料的兴趣,包括任何更新.您同意与Garmin合作维持Garmin对程序材料的所有权,并同意立即通知Garmin关于与程序材料有关的任何索赔.本协议下没有隐含许可证,并且任何未明确授予您的权利均由Garmin保留.
 - b. **您的商标许可证.**您授予Garmin可撤销,非独家,不可转移的免费许可证,以使用您的商标与Garmin本协议下的活动有关的,并根据Garmin的裁量公布您参与Garmin开发者计划和您的应用程序.
--   c. **Feedback.** If you provide any Feedback to Garmin: (a) you grant to Garmin a worldwide, non-exclusive, royalty-free, transferable, sublicensable, perpetual and irrevocable license to use and otherwise exploit such Feedback in connection with any Garmin products, applications and services; (b) Garmin shall be free to use, disclose, reproduce, distribute and otherwise commercialize all Feedback that you provide without obligation or restriction of any kind on account of 知识产权 Rights or otherwise; (c) you waive all rights to be compensated or seek compensation for your Feedback; and (d) Feedback, even if marked confidential, shall not create any confidentiality obligations on Garmin, unless Garmin has otherwise expressly agreed in a signed agreement.
+-   c. **反馈。** 如果您向 Garmin 提供任何反馈：(a) 您授予 Garmin 全球范围内、非独占、免版税、可转让、可再许可、永久且不可撤销的许可，使其可以结合任何 Garmin 产品、应用程序和服务使用或以其他方式利用该反馈；(b) Garmin 可以自由使用、披露、复制、分发并以其他方式商业化您提供的全部反馈，且不因知识产权或其他原因承担任何形式的义务或受任何限制；(c) 您放弃就反馈获得报酬或寻求报酬的所有权利；(d) 即使反馈标记为机密，也不会对 Garmin 产生任何保密义务，除非 Garmin 已在签署的协议中明确同意承担该义务。
 - d. ** 机密信息.**您将保证Garmin的机密信息是保密的,并不得向第三方披露这些机密信息,也不不得以任何其他目的使用这些机密信息,除了根据本协议执行所需.您同意限制授权用户的访问机密信息.所有这些授权用户必须与您签订书面的保密协议,不少于本文所载的条款.您将保护保密信息免受未授权使用,存在或披露,就像您保护您自己的机密或专有信息的类似性质和不少于合理的注意力一样.在未经任何行为或开发人员,公开的公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公开公
 
 ##### **V. 声明与保证**
 
 - 一个. **相互保证.*** 各方向另一方表示并保证: (一个) 具有执行本协议所规定的义务和履行所需的所有权利,权力和能力; (b) 对于本协议的执行,交付或执行,第三方不需要任何授权或批准; (c) 本协议下的义务不违反任何法律或违反任何其他协议,该缔约方有义务.
--   a. **Your Warranties.** You represent and warrant to Garmin that: (a) you are duly licensed to conduct your business under the Laws of all jurisdictions in which you conduct business; (b) any materials you provide, create or develop that are in any way related to this Agreement, or the use thereof, do not and will not infringe any 知识产权 Rights of any third party; and (c) all information you provide to Garmin is true, correct and complete in all respects and you will update Garmin with any changes to information you have previously supplied. You represent and warrant that you have all 知识产权 Rights, including all necessary patent, trademark, trade secret, copyright or other proprietary rights, in and to the Application (including without limitation any and all content therein or portions thereof). If you use third-party materials, you represent and warrant that you have the right to distribute the third-party material in the Application.
+-   a. **您的保证。** 您向 Garmin 声明并保证：(a) 根据您开展业务的所有司法管辖区的法律，您已获得开展业务所需的适当许可；(b) 您提供、创建或开发的、以任何方式与本协议或其使用相关的任何材料，现在和将来都不会侵犯任何第三方的知识产权；(c) 您向 Garmin 提供的所有信息在各方面都真实、准确且完整，并且您会在此前提供的信息发生变化时更新 Garmin。您声明并保证，您拥有应用程序相关的全部知识产权，包括所有必要的专利权、商标权、商业秘密、著作权或其他专有权利（包括但不限于其中包含的全部内容或部分内容）。如果您使用第三方材料，您声明并保证有权在应用程序中分发该第三方材料。
 - c. 免责保证. 程序材料和其中包含或可用的所有信息和其它材料的代表或保证,在没有任何类型的保证的情况下提供"AS IS","AS IS"的基础上,并且您使用任何预期的产品是您自己的风险. 任何保证方 (如下所定义) 代表或保证,该程序材料或其它材料的含有任何信息或其他信息或其他材料的使用权,在任何类型的保证的情况下,您的使用权是您自己的风险. 然而,在法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,法律,
 
 ###### **VI. 责任的限制**
@@ -92,34 +92,34 @@ title: "Get the SDK"
 
 - 一个. **"应用程序"**是您使用程序材料的组件开发的任何软件.
 - b. **"申请要求"** 意思是本协议,Connect IQ商店审查指南以及Garmin可能以其他方式提供或提供给您的任何额外指南.
--   c. **"Authorized Users"** means your employees, agents and contractors who have a need to access and use your Garmin 开发者账户 as permitted under this Agreement.
+-   c. **“授权用户”** 是指根据本协议获准访问和使用您的 Garmin 开发者账户，且确有此需要的员工、代理人和承包商。
 - d. **"CIQ Store"**是Garmin运营的网站,移动应用程序或设备上的应用程序,最终用户下载应用程序.
 - e. **"公司SDK"**是Garmin为第三方平台开发应用提供的SDK.除非另有说明,本协议中对SDK的引用包括公司SDK.
 - f. **"机密信息"**是指Garmin SDK,程序材料,您可以获取或获取访问的基础计算机代码,Garmin SDK的功能或技术设计,逻辑或其他内部程序或工作,以及Garmin指定为机密或您合理认为机密的其他Garmin材料.
--   g. **"文档"** means the Connect IQ Monetization System manual available to you in the developer dashboard, available at [https://developer.garmin.com/connect-iq/monetization](/connect-iq/monetization/).
+-   g. **“文档”** 是指开发者控制面板中提供的 Connect IQ 变现系统手册，网址为 [https://developer.garmin.com/connect-iq/monetization](/connect-iq/monetization/)。
 - h. **"反"**是您向 Garmin 提供有关 Garmin 开发者计划,SDK或 Garmin 产品或服务的任何建议,评论,反或其他信息或材料.
 - i. **"Garmin开发人员"**是通过注册程序获得Garmin批准使用程序材料的任何开发人员.
--   j. **"Garmin 开发者账户"** means the account by which you and/or Authorized Users gain access to the Program Materials subject to the terms and conditions of this Agreement.
+-   j. **“Garmin 开发者账户”** 是指您和/或授权用户根据本协议的条款和条件访问程序材料所使用的账户。
 - k. "Garmin开发人员程序"**是 Garmin开发人员使用程序材料的 Garmin开发程序,因为该程序可在 Garmin 唯一的裁量下从一时到一时进行修改.
--   l. **"知识产权 Rights"** means ideas, inventions, discoveries, improvements, modifications, updates, enhancements, designs, business models, software, derivatives, know-how, processes, methodologies, technical information, data, test results, information, know-how, concepts, and works of authorship, whether patentable or not and whether reduced to practice or not, and all related intellectual property, including, but not limited to, patents and patent applications (including but not limited to all reissues, continuations, continuations-in-part, revisions, extensions, divisionals, designs and reexaminations thereof), copyrights, mask works, trademarks, trade secrets, and other forms of intellectual property protection related thereto, including all applications, certifications and registrations therefor.
+-   l. **“知识产权”** 是指构想、发明、发现、改进、修改、更新、增强、设计、商业模式、软件、衍生作品、专门知识、流程、方法、技术信息、数据、测试结果、概念和作者作品，无论是否可申请专利、是否已付诸实施，以及与之相关的所有知识产权，包括但不限于专利和专利申请（包括但不限于所有再授权、继续申请、部分继续申请、修订、延展、分案、设计和复审）、著作权、掩模作品、商标、商业秘密以及与之相关的其他知识产权保护形式，包括相关的所有申请、认证和注册。
 - m. **"法律"**是指所有适用于您,您的企业或您访问和使用Garmin开发者计划的当地,州,地区,国家,国外,国际或其他法律,政策,指导方针,标准,法规,条例,规则和裁决,包括但不限于联邦贸易委员会法规,规则和裁决,以及任何其他有关本文主题的监管机构或机构的法规和裁决.
 - n. **"商务服务"**是Garmin的服务,可通过Garmin的授权支付处理器直接在CIQ商店向终端用户销售应用程序.
 - o. **"SDK"**指Garmin的CONNECT IQ软件开发套件,以对象代码形式,在本协议下授权您,包括 Garmin向您提供的文档,固件,软件,样本代码,工具,图书馆,API,数据和文件.
--   p. **"Program Materials"** means any materials made available to you by Garmin or a Garmin affiliate in connection with the Garmin Developer Program, at a Garmin developer website or otherwise, including the SDK and all tools, the 文档, other SDK- and CIQ Store-related documentation and materials, in written or digital form, such as sample code, simulators, tools, and libraries, and including any upgrades, modified versions, updates, enhancements, bug fixes, supplements to, revisions, new releases, and/or additions thereto, if any, that may be provided or made available by Garmin.
+-   p. **“程序材料”** 是指 Garmin 或 Garmin 关联公司通过 Garmin 开发者网站或其他方式，就 Garmin 开发者计划向您提供的任何材料，包括 SDK 及其所有工具、文档、其他与 SDK 和 CIQ 商店相关的文档和材料（无论是书面还是数字形式，例如示例代码、模拟器、工具和库），以及 Garmin 可能提供或提供给您的任何升级版、修改版、更新、增强功能、错误修复、补充、修订版、新版本和/或新增内容。
 - . **"商标"**"** 代表所有手段,包括所有商标,商标,标志,商标,商标,商标名称和商标名称,任何注册和注册申请,以及所有上述任何事项,以及任何美国法律或任何其他国家或司法管辖范围内产生的所有类似或相关权利,无论现在存在还是以后通过或获得.
 
 ##### **证明A - 申请要求**
 
 ##### **I. 隐私。**
 
--   a. **隐私政策.** If your Application will collect any data from users of the Application, then you must have a privacy policy for the Application that complies with all applicable Laws. You must update your privacy policy if you change the way you collect, use, store, or disclose user data. Additionally, you may not change the URL or location for your privacy policy without redirecting users to the new location of your privacy policy. Your privacy policy or other notices or terms must make it clear that any data submitted to the Application is submitted to you and not to Garmin and that Garmin has no responsibility or liability for any such data.
+-   a. **隐私政策。** 如果您的应用程序将收集应用程序用户的任何数据，则必须为应用程序制定符合所有适用法律的隐私政策。如果您改变收集、使用、存储或披露用户数据的方式，则必须更新隐私政策。此外，除非将用户重定向到隐私政策的新位置，否则您不得更改隐私政策的 URL 或位置。您的隐私政策或其他通知、条款必须明确说明，提交到应用程序的任何数据都是提交给您的，而不是提交给 Garmin，并且 Garmin 对此类数据不承担任何责任。
 - b. **数据保留.** 除非用户明确同意您保留用户数据更长时间,否则您不得保留用户数据超过应用程序合理运行所需的时间.
 - c. **位置数据.**您表示并保证您的应用程序不默认收集用户的位置数据,并且用户被通知并被要求选择允许您的应用程序收集位置数据.
 - d. **其它数据限制.**您的应用程序只能访问和/或收集 Garmin 关于用户或用户活动的信息,只要用户给予您事先的明确同意,而您的应用程序只能使用该信息,在用户已给予您明确同意的有限目的下.此外,您或您的应用程序不得: (i) 保留您从 Garmin 获得的任何关于用户或用户活动的数据,而没有用户的明确同意, (ii) 保留用户通过应用程序或 Garmin 收集的任何用户数据,或者用户撤回同意或要求您删除这些数据后,或 (iii) 销售,租或转移 (直接或间接) 任何用户或用户活动的数据,您从 Garmin 获得的任何数据.
 
-##### **II. 安全; Data.**
+##### **II. 安全；数据。**
 
-You are solely responsible for the security of user data residing on server(s) or systems owned or operated by you, or by a third party designated by you (e.g., a web hosting company, processor, or other service provider). You must maintain, and must require any third party designated by you to maintain processes and controls to protect and secure user data. You acknowledge that Garmin will not be liable for any improperly processed or unauthorized transactions or illegal or fraudulent access to your Garmin 开发者账户, your Application or to Program Materials. You must notify us immediately in the event of any unauthorized access (confirmed or suspected) to Program Materials, your Garmin 开发者账户 credentials, your authentication key, and/or your Application.
+对于存储在您拥有或运营的服务器或系统，或由您指定的第三方（例如网络托管公司、处理商或其他服务提供商）拥有或运营的服务器或系统上的用户数据，其安全性完全由您负责。您必须维护保护和保障用户数据的流程与控制措施，并要求您指定的任何第三方维护这些流程与控制措施。您确认，Garmin 不会对任何处理不当或未经授权的交易，或对您的 Garmin 开发者账户、应用程序或程序材料的非法或欺诈性访问承担责任。如果发生任何未经授权的访问（无论已确认还是疑似）程序材料、您的 Garmin 开发者账户凭据、身份验证密钥和/或应用程序，您必须立即通知我们。
 
 ##### **III. 其他法规。**
 
