@@ -33,12 +33,12 @@ Have you ever seen an app in the Connect IQ app store that made you wonder, "Tha
 为了看到时间背后的地平线,你首先绘制地平线,然后指定字体的透明背景颜色,
 
 ```
-//draw skyline here
+//在这里绘制天际线
 ..
-//load custom font
+//加载自定义字体
 var font = Ui.loadResource( Rez.Fonts.Sunset );
 
-//set the time's color and draw it
+//设置时间颜色并绘制时间
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -77,16 +77,16 @@ dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ![](/connect-iq/resources/faq/normal_and_reflected.jpg)
 
 ```
-//load custom font for the normal time
+//加载普通时间的自定义字体
 var normalFont = Ui.loadResource( Rez.Fonts.Normal );
-//load custom font for the reflected time
+//加载反射时间的自定义字体
 var reflectedFont = Ui.loadResource( Rez.Fonts.Reflected );
 
-//set the normal time's color and draw it
+//设置普通时间的颜色并绘制
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, normalFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//set the reflected time's color and draw it
+//设置反射时间的颜色并绘制
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(offsetX,offsetY, reflectedFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -108,16 +108,16 @@ dc.drawText(offsetX,offsetY, reflectedFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 顶面膜是原始的字体,是通过BMFont工具出口的.对于下面面膜,我创建了顶面膜的复制品,然后基本上翻了颜色,以确保它只会用特定颜色绘制内部区域.
 
 ```
-//load custom font for the border
+//加载边框的自定义字体
 var borderFont = Ui.loadResource( Rez.Fonts.Border );
-//load custom font for the inner fill
+//加载内部填充的自定义字体
 var innerFillFont = Ui.loadResource( Rez.Fonts.InnerFill );
 
-//set the time's border color and draw it
+//设置时间边框颜色并绘制
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, borderFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//set the time's inner fill color and draw it
+//设置时间内部填充颜色并绘制
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, innerFillFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -138,19 +138,19 @@ When drawing text diagonally, you can no longer draw the string as a single enti
 您想要为您的字体的旋转角度取决于您,您可以在您的图形编辑器中实验不同的旋转度.为了知道下一个字符的绘制地点,您可以保持一个坐标阵列.使用单空间字体更容易管理和绘制横向文本,因为任何字符都可以在同一坐标上绘制,而不会造成相邻字符之间的差距.
 
 ```typescript
-//predefined coordinates based on diagonal angle and orientation
+//基于对角线角度和方向预定义坐标
 var ascCoords = [[21,143],[42,129],[62,119],[73,108],[93,95]];
 var descCoords = [[21,34],[42,48],[62,58],[73,69],[93,82]];
 
-//set background color transparent to prevent clipping of characters
+//将背景色设为透明以防止字符被裁剪
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
-//string to be drawn
+//要绘制的字符串
 var time = clock.hour.format("d") + ":" + clock.min.format("d");
 
 var coords, font;
 
-//determine the font and coordinates to use based on orientation
+//根据方向确定要使用的字体和坐标
 if(Orientation == "Descending"){
         coords = descCoords;
         font = Ui.loadResource(Rez.Fonts.fontDesc);
@@ -160,7 +160,7 @@ else{
         font = Ui.loadResource(Rez.Fonts.fontAsc);
 }
 
-//draw each character individually
+//逐个绘制字符
 for( var i = 0; i < time.length(); i++ ) {
         var char = time.substring(i,i+1);
         dc.drawText(coords[0], coords[1], font, char, Gfx.TEXT_JUSTIFY_LEFT);
@@ -187,18 +187,18 @@ for( var i = 0; i < time.length(); i++ ) {
 
 
 ```typescript
-//load custom font
+//加载自定义字体
 var font = Ui.loadResource( Rez.Fonts.MyFont );
 
-//draw filled rectangle to represent text's color
+//绘制填充矩形来表示文本颜色
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
 dc.fillRectangle(rectX, rectY, width, height);
 
-//draw filled rectangle to represent water level
+//绘制填充矩形来表示水位
 dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLUE);
 dc.fillRectangle(effectX, effectY, width, effectHeight);
 
-//create and draw the clipping mask
+//创建并绘制裁剪蒙版
 dc.setColor(Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK);
 dc.drawText(timeX, timeY, font, timeString, Gfx.TEXT_JUSTIFY_CENTER);
 ```
