@@ -5,25 +5,25 @@ title: "Monkey Motion"
 
 The Monkey Motion UI tool or the command line 可用于 import your animations.
 
-## Using the Monkey Motion UI
+##使用子运动UI
 
-To use the Monkey Motion tool's user interface, launch the executable, `monkeymotion` (Windows/Linux) or `monkeymotion.app` (Mac), either from the command line or using the Visual Studio Code Monkey C extension with the *Monkey C: Open Monkey Motion* command from the command palette.
+要使用 tool子动作工具的用户界面,从命令行启动可执行的`monkeymotion`(Windows/Linux) 或`monkeymotion.app`(Mac),或使用视觉工作室代码子C扩展,从命令中启动 *子C:开放子动作*命令.
 
-When initially launched, the tool will populate a list of devices that support Connect IQ Animations:
+当最初启动时,该工具将填充支持Connect IQ动画的设备列表:
 
-Figure 1. The Monkey Motion Tool
+图1. 子运动工具
 
 ![The Monkey Motion Tool](/connect-iq/resources/programmers-guide/monkey_motion.png)
 
-The developer can then select which devices to encode an animation for. A Connect IQ project manifest file can be loaded into the tool if the developer prefers which causes the tool to mark any devices that are both supported by the project as well as that support Connect IQ Animations as selected. If a developer wishes to tweak the file encoding to use something other than the default settings, the advanced tab offers more options:
+开发人员可以选择哪些设备要编码动画. 如果开发人员更喜欢,则可加载Connect IQ项目明示文件,这会导致该工具标记所有由项目支持的设备以及支持Connect IQ动画的设备. 如果开发人员希望调整文件编码以使用其他设置,先进的页面会提供更多选项:
 
-Figure 2. The Monkey Motion Tool Advanced Settings
+图 2.  Advanced子运动工具 高级设置
 
 ![The Monkey Motion Tool Advanced Settings](/connect-iq/resources/programmers-guide/monkey_motion_advanced.png)
 
-The Monkey Motion tool generates a Monkey Motion Manifest (or .mmm) file for each animation processed. The manifest will contain mappings between a device and a Monkey Motion (or .mm) file containing the binary of the encoded file. It is possible for a single animation to produce multiple .mm files since different encodings will be created based off of a video's target resolution and the bits per pixel of the device.
+tool子动作工具为每个处理的动画生成一个 file子动作宣言 (或 .mmm) 文件.该宣言将包含一个设备和一个 enc子动作 (或 .mm) 文件之间的映射,包含编码文件的二进制.单个动画可以产生多个 .mm 文件,因为根据视频的目标分辨率和设备的每像素位数创建不同的编码.
 
-In addition to generating encodings of the input, the tool can be used for scrubbing the encoded animation:
+除了生成输入代码外,该工具可用于清除编码的动画:
 
 Figure 3. Monkey Motion Scrubbing
 
@@ -31,47 +31,47 @@ Figure 3. Monkey Motion Scrubbing
 
 If the developer wishes to scrub a previously encoded animation, the *File* menu option 可用于 select *Load Animation*, which accepts Monkey Motion Manifest files as input.
 
-## Using the Command Line
+##使用命令行
 
-Videos can also be encoded at the command line using the `monkeym` script. The following options are available at the command line:
+视频也可以在命令行上使用`monkeym`脚本编码.下列选项可在命令行上使用:
 
 |
 Argument
 
- | Definition | Valid Values | Default Value | Notes |
+ | Definition | Valid Values |默认值| Notes |
 | --- | --- | --- | --- | --- |
-| `-a <arg>` | The target alpha channel mask for a `YUV` encoded video file | A valid, resolvable `YUV` encoded video file | NA | Optional |
-| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 | A value between 1 and 6 | 6 | Optional |
-| `-d <arg>` | Target devices | Device qualifiers separated by a colon (:); devices that support orientation changing should be followed by '-portrait' or '-landscape' to determine the appropriate resolution when encoding a full screen animation | NA | Required |
-| `-e <arg>` | The identifier of an animation resource that should be exported along with the Monkey Motion encoded files | Any value that starts with a letter | NA | Optional |
-| `-f <arg>` | The target frame rate of the animation | A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 | 10 for YUV encoded videos; GIF files can have a delay rate encoded within the animation, which will apply if not specified | Optional |
+| `-a <arg>` |针对`YUV`编码的视频文件的目标阿尔法频道面膜| A valid, resolvable `YUV` encoded video file | NA | Optional |
+| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 |1至6之间的值| 6 | Optional |
+| `-d <arg>` | Target devices |通过一个直角 (:) 分开的设备资格;支持方向变化的设备应被"肖像图"或"景观图"接下来来来,以确定在编码全屏动画时适当的分辨率| NA | Required |
+| `-e <arg>` |应出口的动画资源的标识符与子动作编码的文件|任何以字母开始的值| NA | Optional |
+| `-f <arg>` |动画的目标率| A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 |对于YUV编码的视频,GIF文件可以在动画中编码延迟率,如果未指定,则会适用| Optional |
 | `-h` | Print help information | NA | NA | Optional |
-| `-m <arg>` | Manifest file to specify the devices to build for | A path to a project manifest file | Empty | Optional |
+| `-m <arg>` |为了指定构建的设备的明示文件|一个项目公布文件的路径| Empty | Optional |
 | `-o <arg>` | The output file path | A valid, resolvable file path | The target animation file path | Optional |
-| `-p <arg>` | The target compression level of the encoded animation | A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | Optional |
-| `-q <arg>` | The target image quality of the encoded animation | A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | Optional |
-| `-r <arg>` | The target resolution of the animation (if not the device screen size) | `<width>x<height>` where `width` and `height` are the numeric values of the target resolution (ex: 40x40) | NA | Optional |
-| `-s <arg>` | The target image scaling quality of the animation | A value between 1 and 3 | If applicable, 3 | Optional |
+| `-p <arg>` |编码动画的目标压缩水平| A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | Optional |
+| `-q <arg>` |编码动画的目标图像质量| A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | Optional |
+| `-r <arg>` |动画的目标分辨率 (如果不是设备屏幕尺寸)|在`<width>x<height>`中,`width`和`height`是目标分辨率的数值 (例如: 40x40)| NA | Optional |
+| `-s <arg>` |动画的目标图像扩展质量|1至3之间的值| If applicable, 3 | Optional |
 | `-v <arg>` | The target animation file | A valid, resolvable `YUV` / `GIF` file | NA | Required |
 | `-w` | Print Monkey Motion warnings | NA | NA | Optional |
 
 ## Considerations
 
-The Monkey Motion tool offers several advanced settings options, which introduce multiple areas of consideration. This section offers developers a few tips, case studies, and generally more in-depth information with the intention of them finding the most beneficial video encoding configurations.
+tool子动作工具提供了几种先进的设置选项,这些选项介绍了多个考虑领域.本部分为开发人员提供了一些提示,案例研究和一般更深入的信息,以帮助他们找到最有益的视频编码配置.
 
 ### Image Quality Considerations
 
-Specifying an image quality value of 3 provides lossless compression (lossless in the sense that the encoder always uses the closest color available in the palette for each pixel), whereas specifying a value of 2 or 1 may allow further compression at the expense of making color substitutions which allow for better compression (lossy).
+指定3的图像质量值可提供无损压缩 (无损,即编码器始终使用每个像素的 available上可用的最接近的颜色),而指定2或1的值可能允许进一步的压缩,以牺牲更好的压缩 (损失) 的颜色替代.
 
 ### Frame Rate Considerations
 
-The maximum frame rate of an animation is limited by both decoding time, which increases with higher compression, and by the amount of motion in the input video.
+动画的最大图像速度由加密时间,随着更高的压缩增加,以及输入视频中的运动量都受到限制.
 
 **Note:** Because Connect IQ devices do not support vertical synchronization, high frames rates could potentially result in screen tearing.
 
 ### Compression Level Impact
 
-Compression level effects both compression and decoding overhead. Videos where the majority of the frame does not change from frame to frame can benefit from higher compression levels such as 9 without much consideration to the performance impact. For videos with lots of motion all over the screen, selecting a higher compression level may cause slower playback (due to the extra overhead necessary to decompress). For reference, this is a table showing the correlation between compression level and decoding time of a `GIF` file (with a high degree of complexity) running on the Fēnix 5 Plus:
+压缩级别效果,包括压缩和解码的上层费用.大部分框架不从框架到框架的视频可以受益于更高的压缩级别,例如9不考虑性能影响.对于屏幕上运动的视频,选择更高的压缩级别可能会导致更慢的播放 (由于解压缩所需的额外的上层费用).作为参考,这是一个表显示了在Fēnix 5 Plus上运行的`GIF`文件 (具有高度复杂程度) 的压缩级别和解码时间之间的相关性:
 
 | Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ Compression level effects both compression and decoding overhead. Videos where t
 | 6 | 711 | 40 |
 | 7 | 703 | 40 |
 
-At the same time, it is possible in some cases of these high motion, hard to compress videos that using a lower compression level may actually result in a smaller file size. For reference, this is another table showing the correlation between compression level and decoding time of a different `GIF` file (again with a high degree of complexity) running on the Venu:
+同时,在某些高运动,难以压缩的视频中,使用较低的压缩水平实际上可能导致文件大小更小.作为参考,这是另一个表,显示了在Venu上运行的不同`GIF`文件的压缩水平和解码时间之间的相关性 (再次具有高度复杂性):
 
 | Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
 | --- | --- | --- |
@@ -95,15 +95,15 @@ At the same time, it is possible in some cases of these high motion, hard to com
 | 6 | 599 | 71 |
 | 7 | 600 | 84 |
 
-The compression level of 6 actually produces the smallest file size. However, in this scenario, it would be better to accept the negligible size increase and use the compression level 1 because the decoding overhead would be much less. When in doubt about trying to get the maximum frame rate for a high motion video, a developer should start at compression level 1 and work their way up (knowing it may make the frame rate / size worse).
+压缩级别为6实际上产生最小的文件大小.然而,在这种情况下,更好接受微不足道的尺寸增加并使用压缩级别1,因为解码的上层费用将要小得多.如果怀疑要试图为高动作视频获得最大的速,开发人员应该从压缩级别1开始并上升 (知道这可能会使速/尺寸变得更糟).
 
-**Note:** The decoding time on high color resolution devices can potentially be affected more dramatically.
+** 注:** 高颜色分辨率设备的解码时间可能会更严重地受到影响.
 
 ### Complexity Level Impact
 
-Like the video compression level, the complexity of the video also has a direct impact on animation file size, as well as decoding performance. The complexity is determined by both the variations within the same frame and the variations among successive frames.
+与视频压缩水平一样,视频的复杂性也直接影响了动画文件大小,以及解码性能.复杂性是由同一框架内的变化和连续框架之间的变化决定的.
 
-For reference, sample `GIF` files were encoded for the Fēnix 5 Plus using a compression level of 5 to test the complexity impact.
+作为参考,采样`GIF`文件用于Fēnix 5 Plus使用5的压缩级别进行编码,以测试复杂性影响.
 
 #### Low Complexity
 
@@ -138,23 +138,23 @@ For reference, sample `GIF` files were encoded for the Fēnix 5 Plus using a com
 
 ![](/connect-iq/resources/programmers-guide/swirl.gif)
 
-### Color Depth for AMOLED Devices
+#### AMOLED设备的颜色深度
 
-AMOLED devices use the RGB565 color format, i.e., red / blue can never exceed 5 bits per pixel. Specifying the value of 5 for AMOLED devices, which will reduce green from 6 to 5 bits per pixel, could potentially result in improving the animation's compression without causing a visually noticeable difference considering the 256 color palette restriction.
+AMOLED设备采用RGB565颜色格式,即红色/蓝色永远不能超过每像素的5位.指定AMOLED设备的5的值,将绿色从每像素的6到5位减少,可能会导致动画的压缩提高,而考虑到256色调度限制,不会造成视觉明显的差异.
 
 ### Memory Impact
 
-Each animation is considered a rendering layer. When an animation is added to a `View`, it will be assigned a frame buffer (in the form of a BufferedBitmap), which is worth a single frame of raw pixel data. For example, if the color depth is 8 bits, then a 240x240 animation will take roughly 58 KB (240 x 240 x 1) of memory out of the Connect IQ app memory budget.
+每个动画都被认为是染层.当一个动画被添加到`View`时,它将被分配到一个框架缓冲器 (以缓冲Bitmap的形式),值单个原始像素数据的框架.例如,如果颜色深度为8位,则240x240动画将从Connect IQ应用程序内存预算中大约耗费58 KB (240 x 240 x 1) 的内存.
 
 #### Overlay Frame Memory
 
-In the context of a `View` with animations, native drawables added to a `View` are grouped into a single layer, known as the "overlay" layer. The overlay frame is needed to ensure a smooth playback experience and will only be created on demand. Currently, the overlay buffer takes a full screen's worth of memory from the app memory budget (in the form of a BufferedBitmap, like animations).
+在带动机的`View`背景下,添加到`View`的本土抽取器被组合成一个层,称为"覆盖"层.覆盖框是为了确保流的播放体验而需要的,并且只会根据需求创建.目前,覆盖缓冲器从应用程序内存预算中取出一个全屏幕值的内存 (以缓冲Bitmap的形式,就像动画一样).
 
 #### Case Studies
 
-For reference, these tables show the memory impact of animations played on the Fēnix 5 Plus, which has a 240x240 screen resolution and 8bpp color depth.
+作为参考,这些表表显示了在Fēnix 5 Plus上播放的动画的内存影响,其屏幕分辨率为240x240和颜色深度为8bpp.
 
-A `View` with two animations and no native drawables:
+一个`View`,有两个动画,没有本土的引擎:
 
 | Layer | Resolution | Frame Buffer Size (KB) |
 | --- | --- | --- |
@@ -164,7 +164,7 @@ A `View` with two animations and no native drawables:
 
 Total: 60 KB
 
-A `View` with two animations and native drawables:
+具有两个动画和本土的抽象:
 
 | Layer | Resolution | Frame Buffer Size (KB) |
 | --- | --- | --- |

@@ -1,29 +1,29 @@
 ---
 title: "Using Monkey C from the Command Line"
 ---
-# Using Monkey C from the Command Line
+通过命令线的子C
 
-Before getting started with the installation on Mac or Windows, you'll need version 11 or higher of the Oracle Java™ Runtime Environment installed. Once that's done, continue on to your platform's installation instructions.
+在开始在Mac或Windows上安装之前,您需要安装Oracle JavaTM运行环境版本11或更高的版本.
 
 ## OS X Installation
 
-1.  [Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/), download the SDK, and set the active SDK.
+1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
-2.  Point your `PATH` to the active Connect IQ bin directory in the Terminal. To temporarily add it to a single local shell instance:
+2. 将`PATH`指向终端的Connect IQbin目录.暂时将其添加到单个本地实例中:
 
 
 ```bash
 $ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-For a more persistent addition, open `.bash_profile` in a text editor:
+为了更持久的添加,在文本编辑器中打开`.bash_profile`:
 
 ```bash
 $ touch ~/.bash_profile
 $ open ~/.bash_profile
 ```
 
-Then add the line below to the file and save the changes:
+然后将下面的行添加到文件中,并保存更改:
 
 ```bash
 export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
@@ -31,9 +31,9 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 
 ## Windows Installation
 
-1.  [Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/), download the SDK, and set the active SDK.
+1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
-2.  Point your `PATH` to the active Connect IQ bin directory in the command prompt:
+2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
 
 
 ```bash
@@ -43,23 +43,23 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 
 ## Linux Installation
 
-1.  [Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/), download the SDK, and set the active SDK.
+1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
 
-2.  Point your `PATH` to the active Connect IQ bin directory in the command prompt:
+2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
 
 
 ```bash
 $ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-For a more persistent addition, open `.bash_profile` in a text editor:
+为了更持久的添加,在文本编辑器中打开`.bash_profile`:
 
 ```bash
 $ touch ~/.bash_profile
 $ nano ~/.bash_profile
 ```
 
-Then add the line below to the file and save the changes: CTRL-X
+然后将下面的行添加到文件中,并保存更改:CTRL-X
 
 ```bash
 export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
@@ -67,11 +67,11 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 
 ## Basic Commands
 
-After installation, three new shell commands are available: `connectiq`, `monkeyc`, and `monkeydo`.
+在安装后,有三个新的 shell 命令:`connectiq`,`monkeyc`和`monkeydo`.
 
 -   `connectiq` launches the Connect IQ simulator, which 可用于 run and test apps on your computer before running them on your device. In the simulator, your app will only have access to those APIs that are available on the currently simulated device. For example, an API only available in Connect IQ v2.2.x or higher, such as `PersistedContent`, will not be available on devices that run earlier versions of Connect IQ.
 
--   `monkeyc` calls the Monkey C compiler. The compiler can take code from multiple files and link them together into a single Connect IQ executable (a PRG file). The usage is:
+编译器可以从多个文件中取代代码并将它们连接到单个Connect IQ执行器 (一个PRG文件) 中. 使用方式是:
 
 
 ```bash
@@ -82,12 +82,12 @@ After installation, three new shell commands are available: `connectiq`, `monkey
 | --- | --- |
 | `-d <arg>` | Target device |
 | `-f <arg>` | Jungle files |
-| `-o <arg>` | Output file to create |
-| `-y <arg>` | [Private key](#generating-a-key-using-openssl) to sign builds with |
+| `-o <arg>` |创建输出文件|
+| `-y <arg>` |[Private key](#generating-a-key-using-openssl)签字的构建|
 
-**Note:** For more information on all the command line options, refer to the [Compiler Options](/connect-iq/monkey-c/compiler-options/) section in the Monkey C guide.
+** 注:** 查看 command子C指南中[Compiler Options](/connect-iq/monkey-c/compiler-options/)部分,了解所有命令行选项的更多信息.
 
--   `monkeydo` runs a Connect IQ executable in the simulator. You must have previously started the simulator with `connectiq`. The usage is:
+-`monkeydo`在模拟器中运行了Connect IQ执行式.你必须以前使用`connectiq`启动模拟器.使用方式是:
 
 
 ```bash
@@ -96,12 +96,12 @@ monkeydo [executable] [device_id] [-n] [-t | -t test_name]
 
 | Argument | Definition |
 | --- | --- |
-| `executable` | A Connect IQ executable (PRG) to run |
-| `device_id` | The device to simulate (e.g. "fenix5plus") |
-| `-n` | Runs the app in sensor native pairing mode |
-| `-t` | Execute Run No Evil unit tests. Supply an optional test method or class name to only run that test or set of tests. |
+| `executable` |运行一个连接智商执行式 (PRG)|
+| `device_id` |模拟设备 (例如"fenix5plus")|
+| `-n` |在传感器本地对接模式下运行应用程序|
+| `-t` |执行 Run No Evil 单元测试. 提供可选的测试方法或类名单,只运行该测试或测试集.|
 
-Here is an example of a basic build and run cycle from the command line:
+以下是从命令行构建和运行周期的基本例子:
 
 ```bash
 // Launch the simulator:
@@ -114,15 +114,15 @@ Here is an example of a basic build and run cycle from the command line:
 > monkeydo myApp.prg fenix5plus
 ```
 
-**Note:** For more information on the `-f` option and the Jungle build framework, see the [Overriding Resources](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide) section of this guide.
+** 注:** 更多关于`-f`选项和林构建框架的信息,请参阅本指南的[Overriding Resources](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide)部分.
 
-## Generating a Key Using OpenSSL
+##使用OpenSSL生成密钥
 
-If you're working from the command line you can generate a RSA key using [OpenSSL](https://www.openssl.org/). The following command will generate a valid signing key.
+如果您从命令行工作,您可以使用[OpenSSL](https://www.openssl.org/)生成RSA键.下列命令将生成有效的签字键.
 
 ```bash
 > openssl genrsa -out developer_key.pem 4096
 > openssl pkcs8 -topk8 -inform PEM -outform DER -in developer_key.pem -out developer_key.der -nocrypt
 ```
 
-This developer key, `developer_key.der`, is passed to the compiler using the `-y` command line option.
+这个开发者密钥,`developer_key.der`,通过`-y`命令行选项传递到编译器中.

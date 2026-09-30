@@ -11,34 +11,34 @@ Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，�
 
 ## Variables, Expressions, and Operators
 
-The basic types supported by Monkey C are:
+子C支持的基本类型是:
 
 -   **Integers** - 32-bit signed integers
 
 -   **Floats** - 32-bit floating point numbers
 
--   **Longs** – 64-bit signed integers
+- **长度**  64-64位签名整数
 
--   **Doubles** – 64-bit floating point numbers
+- **双式**  64-64位浮点数字
 
 -   **Booleans** - `true` and `false`
 
 -   **Chars** - Unicode characters
 
--   **Strings** - strings of characters
+- **字符串**
 
--   **Objects** – Instantiated objects (defined with the class keyword)
+- **对象**  实时对象 (用类关键字定义)
 
--   **Arrays** - Allocated with the syntax `new [X]` where 'X' is an expression computing the size of the array
+- **阵列** - 配分为`new [X]`语法,其中"X"是计算阵列大小的表达式
 
--   **Dictionaries** - Associative arrays, allocated with the syntax `{}`
+- **词典** - 配套阵列,配合`{}`语法
 
 
 ### Keywords
 
-Here is a list of keywords in the Monkey C programming language. You cannot use any of the following as variables or symbols in your programs. The keywords `native` and `alias` are reserved, even though it is not currently used. `true`, `false`, `null`, `NaN`, `new`, `and`, and `or` might seem like keywords, but they are actually literals and operators; you cannot use them as identifiers in your programs.
+以下是子C编程语言的关键字列表.您不能在程序中使用以下任何变量或符号.关键字`native`和`alias`是保留的,尽管目前不使用.`true`,`false`,`null`,`NaN`,`new`,`and`和`or`可能看起来像关键字,但它们实际上是字体和运算符;您不能在程序中使用它们作为标识符.
 
-&lt;table class="table">&lt;caption>&lt;/caption>&lt;colgroup>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;col>&lt;/colgroup>&lt;thead class="thead">&lt;/thead>&lt;tbody class="tbody">&lt;tr class="row">&lt;td class="entry align-center">&lt;code class="ph codeph">as&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">const&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">enum&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">has&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">module&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">self&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">using&lt;/code>&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry align-center">&lt;code class="ph codeph">break&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">continue&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">extends&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">hidden&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">private&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">static&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">var&lt;/code>&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry align-center">&lt;code class="ph codeph">case&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">default&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">finally&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">if&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">protected&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">switch&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">while&lt;/code>&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry align-center">&lt;code class="ph codeph">catch&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">do&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">for&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">instanceof&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">public&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">throw&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;/td>&lt;/tr>&lt;tr class="row">&lt;td class="entry align-center">&lt;code class="ph codeph">class&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">else&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">function&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">me&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">return&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;code class="ph codeph">try&lt;/code>&lt;/td>&lt;td class="entry align-center">&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
+标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签
 
 ### Declaring Variables
 
@@ -58,7 +58,7 @@ var dict = { x=>y };        // Dictionary: key is 5, value is 6.0
 var z = arr[2] + x;         // Null pointer waiting to happen
 ```
 
-Monkey C supports the following operators:
+子C支持以下操作符:
 
 | Precedence | Operator | Description |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Monkey C supports the following operators:
 
 ### Symbols
 
-Symbols are lightweight constant identifiers. When the Monkey C compiler finds a new symbol, it will assign it a new unique value. This allows symbols to be used as keys or constants without explicitly declaring a const or enum:
+符号是轻量级的常数标识符.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为键或常数使用,而不明确声明一个 const或 enum:
 
 ```java
 var a = :symbol_1;
@@ -100,7 +100,7 @@ Sys.println( a == b );  // Prints true
 Sys.println( a == c );  // Prints false
 ```
 
-Symbols can be useful when wanting to create keys without having to declare an enum:
+符号可以在不需要声明enum的情况下创建键时有用:
 
 ```java
 var person = { :firstName=>"Bob", :lastName=>"Jones" };
@@ -108,9 +108,9 @@ var person = { :firstName=>"Bob", :lastName=>"Jones" };
 
 ### Constants
 
-Constants are named, immutable values declared with the `const` keyword. These are useful for storing unchanging values that may be used repeatedly throughout code. Constants must be declared at the module or class level; they cannot be declared within a function.
+常量是以`const`关键字声明的不变值.这些值用于存储在代码中可重复使用的不变值.常量必须在模块或类级别上声明;它们不能在函数内声明.
 
-Constants support the same types as [listed for variables](#declaring-variables). It is important to note that with data structures like arrays, `const` functions similar to Java's `final` keyword. For example, a `const` array prevents the array from being replaced by a new instance, but the elements of the array may be modified.
+常数支持与[listed for variables](#declaring-variables)相同的类型.重要的是要注意,在像数组这样的数据结构中,`const`的功能类似于Java的`final`关键字.例如,`const`数组阻止数组被新实例取代,但数组的元素可能会被修改.
 
 ```java
 const PI = 3.14;
@@ -120,7 +120,7 @@ const BANANA_YELLOW = "#FFE135";
 
 ### Enumerations
 
-Enumerations are explicit or auto-incrementing constant mappings from symbol to integer. Unless explicity set (see the second example), each proceeding symbol is automatically assigned the value of its predecessor plus one, starting with `0`. So, in the following example, the symbol Monday is automatically assigned the value `0`, Tuesday is assigned `1`, and so on. These symbols can be used just like constant variables (which is essentially what they are). Enums must be declared at the module or class level; they cannot be declared within a function.
+列表是从符号到整数的明确或自动增长常数映射.除非有明确的集合 (见第二例),否则每一个接下来的符号自动分配其前身加一个的值,从`0`开始.因此,在下面的例子中,星期一符号自动分配值`0`,星期二分配值`1`,等等.这些符号可以像常数变量一样使用 (这基本上是它们的).Enums必须在模块或类级级别上声明;它们不能在函数内声明.
 
 ```java
 enum {
@@ -144,7 +144,7 @@ enum {
 
 ### Calling Methods and Functions
 
-To call a method within your own class or module, simply use the function call syntax:
+要在自己的类或模块中调用方法,只需使用函数调用语法:
 
 ```typescript
 function foo( a ) {
@@ -156,16 +156,16 @@ function bar() {
 }
 ```
 
-If calling on an instance of an object, precede the call with the object and a '`.`'.
+如果调用一个对象的实例,请先使用对象和"`.`"来调用.
 
-When accessing class members, `public` and `protected` variables should be accessed using either one of the following formats:
+在访问类成员时,应使用以下任何一个格式访问`public`和`protected`变量:
 
 ```typescript
 var x = mMemberVariable;
 var y = self.mMemberVariable;
 ```
 
-Overridden parent member functions should be accessed using the following syntax:
+通过以下语法访问过失的母会成员函数:
 
 ```typescript
 class A
@@ -184,9 +184,9 @@ class B extends A
 }
 ```
 
-The syntax of `SuperClass.memberVariable` is not supported in the Monkey C language. Always use `self` to access member variables of super classes.
+在子C语言中,`SuperClass.memberVariable`的语法不支持.总是使用`self`访问超级类的成员变量.
 
-### If Statements
+###如果声明
 
 `if` statements allow branch points in your code:
 
@@ -205,20 +205,20 @@ if ( a == true ) {
 var result = a ? 1 : 2;
 ```
 
-The expression inside the `if` statement is required to be an expression; assignments are not allowed. Things that will evaluate to true are:
+要求`if`语句中的表达式是表达式;分配不允许.
 
 -   `true`
 
--   A non-zero integer
+- 不为零的整数
 
--   A non-null object
+- 非零的对象
 
 
 ### Switch Statements
 
-Like `if` statements, `switch` statements also allow branch points in your code. Deciding whether to use `if` statements or a `switch` statement is based on readability and the expression that the statement is testing.
+与`if`语句一样,`switch`语句也允许您的代码中的分支点.决定是否使用`if`语句或`switch`语句是基于可读性和语句正在测试的表达.
 
-A `switch` statement tests expressions based only on a single object. Like `if` statements, the expression inside the `switch` statement is required to be an expression; assignments are not allowed. You can have any number of `case` statements within a `switch` statement. Each `case` is followed by the object or `instanceof` object to be compared to and a colon:
+一个`switch`语句测试仅基于一个对象的表达式.就像`if`语句一样,`switch`语句内的表达式必须是表达式;分配不允许.你可以在`switch`语句内拥有任何数量的`case`语句.每一个`case`都会被对比的对象或`instanceof`对象和一个直角接下来:
 
 ```typescript
 switch ( obj ) {
@@ -263,15 +263,15 @@ switch ( obj ) {
 }
 ```
 
-The `instanceof` operator is discussed in more detail later in this guide.
+在本指南中详细介绍了`instanceof`运算器
 
-When the object being switched on is either equal to or an instance of the value defined in a `case` statement, the statements following that `case` will execute until a `break` statement is reached. Each `break` statement terminates the enclosing `switch` statement. Without a `break` statement, `case` statements fall through: all statements after the matching `case` label are executed in sequence, regardless of the expression of the subsequent `case` labels, until a `break` statement is encountered. A final `break` statement is not required because control flow will just naturally fall out of the `switch` statement.
+当被启动的对象要么是`case`语句中定义的值的等值或实例时,接下来的语句是`case`将执行到`break`语句达到.每一个`break`语句终止附加的`switch`语句.没有`break`语句,`case`语句都会发生:匹配的`case`标签后的所有语句都是顺序执行的,无论随后的`case`标签的表达如何,直到遇到`break`语句.最后的`case`0语句不需要,因为控制流将自然而然从`case`1语句中掉下来.
 
-A `switch` statement can also have a single optional `default` case, which is not required to appear at the end of the `switch` statement. The `default` case handles all objects that are not explicitly handled by one of the `case` statements.
+一个`switch`语句也可以有一个单个可选的`default`语句,它不需要出现在`switch`语句末尾.`default`语句处理所有不是明确处理的物体.
 
 ### Switch Block Variable Scoping
 
-The body of a `switch` statement is known as the "switch block". Variables declared within the switch block will be scoped at the switch block level. Variables defined within curly braces of a case block will be scoped at that code block level. Additionally, due to the nature of fall-through cases, all variables defined at the switch block level must be initialized before being used in any subsequent `case` statements. For instance:
+`switch`语句的体体被称为"开关区块".开关区块内声明的变量将在开关区块水平上进行范围检测.在一个案例区块的卷曲式支中定义的变量将在该代码区块水平检测范围检测.此外,由于发生的事件性质,在任何随后的`case`语句中使用之前,必须初始化开关区块水平上定义的所有变量.例如:
 
 ```java
 switch ( obj ) {
@@ -300,7 +300,7 @@ switch ( obj ) {
 
 ### Loops
 
-Monkey C supports `for` loops, `while` loops, and `do/while` loops. `while` and `do/while` loops have a familiar syntax:
+子C支持`for`循环,`while`循环和`do/while`循环.`while`和`do/while`循环具有熟悉的语法:
 
 ```java
 // do/while loop
@@ -315,7 +315,7 @@ while( expression ) {
 }
 ```
 
-Loops must have braces around them because single-line loops are not supported:
+循环必须周围有支,因为单线循环不支持:
 
 ```java
 // Monkey C does allow for variable declaration in for loops
@@ -324,7 +324,7 @@ for( var i = 0; i < array.size(); i++ ) {
 }
 ```
 
-Control within loops can be managed by using the `break` and `continue` statements. These should also have familiar behavior:
+循环中的控制可以通过使用`break`和`continue`语句进行管理.这些语句也应该具有熟悉的行为:
 
 ```java
 // This for loop should only print 5, 6, and 7.
@@ -339,21 +339,21 @@ for (var i = 0; i < 10; i += 1) {
 }
 ```
 
-### Returning Values From Functions
+### 返回函数的值
 
-All functions return values in Monkey C. You can explicitly set the return value by using the `return` keyword:
+所有函数在 Monkey C 中返回值.你可以用`return`关键字明确设置返回值:
 
 ```java
 return expression;
 ```
 
-The expression is optional. Functions without a return statement automatically return the last value operated on.
+这个表达式是可选的.没有返回语句的函数自动返回最后操作的值.
 
 ### Instanceof and Has
 
-As a duck-typed language, Monkey C gives the programmer great flexibility, but the trade off is that the compiler cannot perform the type checking like in C, C++ or Java. Monkey C provides two tools to do runtime type checking—`instanceof` and `has`.
+作为一个型语言,子C给程序员提供了很大的灵活性,但缺点是编译器无法执行C,C++或Java中的类型检查.子C提供了两个工具来执行运行时间类型检查`instanceof`和`has`.
 
-The `instanceof` operator offers the ability to check if an object instance inherits from a given class. The second argument is the class name to check against:
+`instanceof`运算器提供了检查对象实例是否继承给定的类的能力.第二个参数是检查类名称:
 
 ```java
 var value = 5;
@@ -364,7 +364,7 @@ if ( value instanceof Toybox.Lang.Number )
 }
 ```
 
-The `has` operator lets you check if a given object has a symbol, which may be a public method, instance variable, or even a class definition or module. The second argument is the symbol to check for. For example, assume we have magnetometer libraries in `Toybox.Sensor.Magnetometer`, but not all products have a magnetometer. Here is an example of changing your implementation based on those criteria:
+`has`操作符允许您检查给定对象是否具有符号,这可能是公共方法,实例变量,甚至类定义或模块.第二个参数是检查的符号.例如,假设我们在`Toybox.Sensor.Magnetometer`中有磁铁仪库,但不是所有的产品都有磁铁仪.以下是基于这些标准的实现更改的一个例子:
 
 ```java
 var impl;
@@ -379,11 +379,11 @@ else
 }
 ```
 
-Monkey C's object-oriented design patterns in conjunction with the `has` and `instanceof` operator enables software that has implementations for many devices in one code base.
+子C的对象导向设计模式与`has`和`instanceof`操作符结合,使得软件能够在一个代码库中实现许多设备的实现.
 
 ## Callbacks
 
-Functions in Monkey C are not first class, meaning you cannot pass them as objects directly for use in other functions. However, using the `method()` function inherited from `Toybox.Lang.Object`, a class instance can create a `Method` object, which provides a way to invoke it as a callback method.
+子C中的函数不是第一类,这意味着您不能直接将它们作为对象用于其他函数.然而,使用从`Toybox.Lang.Object`继承的`method()`函数,一个类实例可以创建一个`Method`对象,这提供了一个方法来调用它作为回调方法.
 
 ```java
 class Foo
@@ -402,9 +402,9 @@ function usageSample() {
 }
 ```
 
-A `Method` object will invoke a method on the instance of the object it came from. It keeps a strong reference to the source object.
+一个`Method`对象将在它来自的对象实例上调用一种方法.它保持着对源对象的强烈引用.
 
-Unlike classes, Modules do not inherit from Object so do not have access to the `method()` function. However, a new instance of `Method` can be created, which allows module-level functions to be invoked as callbacks in a similar fashion:
+与类不同,模块不会继承从对象,因此无法访问`method()`函数.然而,可以创建一个新的`Method`实例,允许模块级函数以类似的方式被调用为回调:
 
 ```typescript
 import Toybox.Lang;
@@ -421,4 +421,4 @@ function moduleSample() {
 }
 ```
 
-Tofu for the vegetarians, BBQ for Kansans…
+豆腐给素食者,烧烤给堪萨斯人...

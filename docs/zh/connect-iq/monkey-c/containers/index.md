@@ -3,11 +3,11 @@ title: "Containers"
 ---
 # 容器
 
-Monkey C has two container types built into the language: Arrays and Dictionaries.
+子C有两个集装箱类型:阵列和词典.
 
 ## Arrays
 
-Arrays in Monkey C, like variables, are typeless, it is not necessary to declare a data type. There are two forms for creating a new array. To create an empty array of a fixed `size`, use this:
+子C中的数组,就像变量一样,是无类型的,不需要声明数据类型.创建新数组有两种形式.创建固定`size`的空格数组,请使用以下方法:
 
 ```typescript
 // Create a typeless array
@@ -16,7 +16,7 @@ var untypedArray = new [size];
 var typedArray = new Array<Number>[size];
 ```
 
-To pre-initialize an array, this syntax can be used:
+为了预先启动数组,可以使用这个语法:
 
 ```typescript
 // New array. Will be typed as a Tuple
@@ -26,13 +26,13 @@ var untypedArray = [1, 2, 3, 4, 5];
 var typedArray = [1, 2, 3, 4, 5] as Array<Number>;
 ```
 
-Elements are expressions, so multidimensional arrays can be created using this syntax:
+元素是表达式,因此可以使用这个语法创建多维数组:
 
 ```typescript
 var array = [ [1,2], [3,4] ];
 ```
 
-Monkey C does not have a direct way of creating an empty two-dimensional array, one may be initialized with this syntax:
+子C没有直接的方式来创建一个空的二维数组,一个可以用这个语法初始化:
 
 ```typescript
 // Shout out to all the Java programmers in the house
@@ -46,7 +46,7 @@ for( var i = 0; i < first_dimension_size; i += 1 ) {
 
 ## Dictionaries
 
-Dictionaries, or associative arrays, are a built-in data structure in Monkey C:
+词典或关联阵列是子C中内置的数据结构:
 
 ```java
 var dict = { "a" => 1, "b" => 2 };  // Creates a dictionary
@@ -55,13 +55,13 @@ System.println( dict["b"] );        // Prints "2"
 System.println( dict["c"] );        // Prints "null"
 ```
 
-To initialize an empty dictionary, use the following syntax:
+为了启动空白字典,使用以下语法:
 
 ```typescript
 var x = {};                         // Empty dictionary
 ```
 
-A type suffix can be added when creating new [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) objects:
+在创建新的[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象时可以添加类型后:
 
 ```typescript
 var x = {} as Dictionary<Symbol, String>;
@@ -71,7 +71,7 @@ x[:option] = "value";
 x["option"] = "value";
 ```
 
-By default, objects hash on their reference value. Classes should override the `hashCode()` method in `Toybox.Lang.Object` to change the hashing function for their type:
+默认情况下,对象按其参考值进行哈希.类别应在`Toybox.Lang.Object`中取代`hashCode()`方法,以更改其类型的哈希函数:
 
 ```java
 class Person
@@ -86,4 +86,4 @@ class Person
 }
 ```
 
-Dictionaries automatically resize and rehash as the contents grow or shrink. This makes them extremely flexible, but it comes at a cost. Insertion and removal of the contents can cause performance problems if there is accidental or excessive resizing and rehashing. Also, because hash tables require extra space for allocation, they are not as space-efficient as either objects or arrays.
+词典随着内容的增长或缩小,自动地改变大小和重写.这使得它们非常灵活,但有成本.如果有意外或过度的重写和重写,插入和删除内容可能会导致性能问题.

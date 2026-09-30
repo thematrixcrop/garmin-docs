@@ -3,11 +3,11 @@ title: "Objects, Modules, and Memory"
 ---
 # 对象、模块和内存
 
-Objects are created with the `class` keyword. Classes allow data and operations to be bound together on an object. In Monkey C, variables, functions, and other classes can be defined within a class.
+类允许数据和操作在对象上被绑定在一起.在子C中,变量,函数和其他类可以在类中定义.
 
 ## Constructors
 
-When an object is instantiated with the `new` keyword, the memory is allocated and the `initialize` method is called:
+当用`new`关键词实时化一个对象时,将内存分配到`initialize`方法:
 
 ```typescript
 class Circle
@@ -23,7 +23,7 @@ function createCircle() {
 }
 ```
 
-Within a method implementation you can refer to your current instance using either the `self` or `me` keywords.
+在方法实现中,您可以使用`self`或`me`关键字来引用您的当前实例.
 
 ```java
 class A
@@ -37,11 +37,11 @@ class A
 }
 ```
 
-To instantiate an inner class of nested classes, you must first instantiate the outer class. However, unlike Java, nested classes in Monkey C do not have access to the members of the enclosing class.
+要实现嵌套类的内部类,首先必须实现外部类.然而,与Java不同,子C中的嵌套类没有访问附加类的成员.
 
 ## Inheritance
 
-Monkey C uses the `extends` keyword to support class inheritance:
+子C使用`extends`关键字来支持类继承:
 
 ```typescript
 import Toybox.System;
@@ -64,7 +64,7 @@ function usageSample() {
 }
 ```
 
-You can call superclass methods by using the super class's symbol:
+通过使用超级类的符号来调用超级类的方法:
 
 ```java
 import Toybox.System;
@@ -95,13 +95,13 @@ function usageSample() {
 
 ## Data Hiding
 
-Class members have three levels of access — `public`, `protected`, and `private`.
+班子成员有三级接入:`public`,`protected`和`private`.
 
-`public` is the default, but it can also be explicitly specified. When the `public` access modifier is used for an enum, variable, or function, those members are visible to all other classes.
+`public`是默认的,但它也可以明确指定.当使用`public`访问修改器为enum,变量或函数时,这些成员可见于所有其他类.
 
-The `private` modifier specifies that the member can only be accessed in its own class.
+`private`修改器指定该成员只能在自己的类中访问.
 
-The `protected` modifier specifies that the member can only be accessed by its own class or one of its subclasses. The `hidden` keyword is synonymous with the `protected` keyword. Monkey C version 1.0 only had two visibility levels: `public` and `hidden`. `hidden` remains for backwards compatibility purposes but can be considered the same as `protected`.
+`protected`修改器指定该成员只能通过自己的类或其子类访问.`hidden`关键字与`protected`关键字同义.子C版本 1.0仅有两个可见性水平:`public`和`hidden`.`hidden`仍然用于反向兼容性目的,但可以被认为是`protected`相同的.
 
 ```typescript
 import Toybox.System;
@@ -142,9 +142,9 @@ function usageSample() {
 
 ## Polymorphism
 
-Most object-oriented languages support a concept of *polymorphic functions* in which a function can have multiple definitions based on the input parameter quantity and type. Partially because of its duck-typed nature, Monkey C does not support this kind of runtime polymorphism.
+大多数对象导向语言都支持*多形函数*的概念,其中函数可以根据输入参数数量和类型具有多个定义.部分原因是由于它的型性质,子C不支持这种运行时间多形.
 
-Because function parameters are duck typed, it is possible to implement some level of polymorphism using the `instanceof` operator:
+由于函数参数是类型,因此可以使用`instanceof`运算器实现某种多形性水平:
 
 ```typescript
 import Toybox.Lang;
@@ -163,7 +163,7 @@ function aPolymorphicFunction(a) {
 }
 ```
 
-This kind of pattern works when the function expects the same number of inputs. If your function needs to expect multiple inputs, another pattern is to use the options dictionary. You can use symbols to define the keys to maximize processing efficiency:
+如果您的函数需要预期多个输入,另一个模式是使用选项词典.您可以使用符号来定义键来最大化处理效率:
 
 ```typescript
 x = aPolymorphicFunction({
@@ -172,28 +172,28 @@ x = aPolymorphicFunction({
 })
 ```
 
-This pattern is good when you want to leave room for an API to expand in the future.
+这种模式是很好的,如果你想让一个API在未来扩展的空间.
 
 ## Strong and Weak References
 
-Monkey C is reference counted, which means the runtime system will free memory when the number of objects referencing that memory decrements to zero. Reference counting allows memory to become available very quickly which is important in low memory environments. The kryptonite of reference counting are *circular references*. A circular reference happens when a cycle is formed in the reference chain. For example, imagine object C references object A, object A references object B, *and* object B references object A.
+run子C是引用数,这意味着运行时间系统将释放内存,当引用该内存的对象数量下降到零时.引用数允许内存非常快速可用,这在低内存环境中很重要.引用数的基普顿化是*圆形引用*.在引用链中形成一个周期时,循环引用发生.例如,想象对象C引用对象A,对象A引用对象B, *和*对象B引用对象A.
 
 
 ![presentation](/connect-iq/resources/programmers-guide/weak-reference-1.png)
 
-Now C gets invited to sit at the cool-kid table, so it dereferences A so it can hang out with its *real* friends.
+现在C被邀请坐下一个酷孩子的桌子上,所以它放弃了A,所以它可以和真正的朋友一起.
 
 
 ![Weak References](/connect-iq/resources/programmers-guide/weak-reference-2.png)
 
-This forms a roundabout to nowhere. The memory for A and B should be freed at this point, but A and B both have a reference count of one because they reference each other. The memory used by A and B are now unavailable to objects from the cool-kids table.
+这形成了无处的循环通道.A和B的记忆应该在此点释放,但A和B都有一个参考数,因为它们相互引用.A和B所使用的记忆现在不适用于冷子表中的对象.
 
-Sometimes B really does need to reference A. In these cases, you can use a *weak reference*. A weak reference is an object that keeps a reference to an object but does not increment the reference count. This means the object reference can be destroyed, and is a case that should be handled.
+有时B确实需要引用A.在这些情况下,你可以使用 *弱引用*.弱引用是保持引用对象的对象,但不会增加引用数量.这意味着对象引用可以被破坏,并且是一个应处理的情况.
 
 
 ![Weak References](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
-To create a weak reference you use the `weak()` method. Weak is a method in `Lang.Object` and is available to all Monkey C objects.
+为了创建一个弱引用,你使用`weak()`方法. 弱是`Lang.Object`中的一种方法,可用于所有子C对象.
 
 ```java
 // I would make a "Hans and Franz" reference but I
@@ -201,7 +201,7 @@ To create a weak reference you use the `weak()` method. Weak is a method in `Lan
 var weakRef = obj.weak()
 ```
 
-If you are calling `weak` on one of the immutable types (`Number`, `Float`, `Char`, `Long`, `Double`, `String`), then it returns the object itself. Otherwise it will return a [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) instance.
+如果您正在调用`weak`在不可变的类型之一 (`Number`,`Float`,`Char`,`Long`,`Double`,`String`),则它将返回对象本身.否则它将返回一个[Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)实例.
 
 ```typescript
 //! A weak reference is a loosely bound reference to
@@ -224,7 +224,7 @@ class WeakReference
 }
 ```
 
-You can use the `stillAlive` method to check if the reference has been cleaned up. Use `get` to create a strong reference to the object. Only keep the strong reference during the scope you need it!
+您可以使用`stillAlive`方法来检查引用是否已清除.使用`get`创建对象的强烈引用.只保持强烈引用在您需要的范围内!
 
 ```java
 // This is a triumph...
@@ -236,7 +236,7 @@ if( weakRef.stillAlive() ) {
 
 ### Handles and Heap Allocation
 
-The heap memory limit varies on a per device basis. Starting with version 2.4.x, Connect IQ uses a dynamically allocated heap for memory handles. Each unique object takes up one memory handle. Object references do not have unique allocations and only reference the memory handle of the object. Older versions of Connect IQ have a smaller, static limit for objects defined by the device. Reaching the object limit in either version will cause a runtime error.
+从2.4.x版本开始,Connect IQ使用动态分配的堆积用于内存手柄.每个独特的对象都占据了一个内存手柄.对象引用没有独特的分配,只引用对象的内存手柄.Connect IQ的旧版本对设备定义的对象具有较小的静态限制.在任何版本中达到对象限制将导致运行时间错误.
 
 ## Modules
 
@@ -257,11 +257,11 @@ function usageSample() {
 }
 ```
 
-However, unlike classes in Monkey C, modules have no concept of inheritance or data hiding (the `extends`, `private`, and `protected` keywords are not supported for modules).
+然而,与子C类不同,模块没有继承或隐藏数据的概念 (模块不支持`extends`,`private`和`protected`关键字).
 
 ### Import and Using Statements
 
-You can bring a module into your scoping level with the `import` keyword. When you use `import` it will bring the *module suffix and all classes in the module into the type namespace*. This allows classes in a module to be accessed without the module suffix, making for easier typing. Function invocations still require the module suffix to be accessed.
+您可以使用`import`关键字将模块带入您的范围级别.使用`import`时,它将 *模块后音和模块中的所有类型带入类型命名空间.* 这使得模块中的类型可以访问而不用模块后音,从而更容易打字.函数调用仍然需要访问模块后音.
 
 ```typescript
 import Toybox.Lang;
@@ -279,7 +279,7 @@ function hasANumber() {
 }
 ```
 
-You can also bring a module into your scoping level with the `using` keyword. `using` allows a module to be imported into another class or module by a symbol:
+您还可以使用`using`关键字将模块带入您的范围水平.`using`允许通过符号将模块导入另一个类或模块:
 
 ```java
 using Toybox.System;
@@ -289,7 +289,7 @@ function foo() {
 }
 ```
 
-The `as` clause provides a way to assign a module to a different name within scope. This is useful for shortening module names or when you simply disagree with our naming scheme:
+`as`条款提供了一个方法来将模块分配到范围内的不同名称. 这对于缩短模块名称或当您简单地不同意我们的命名方案时有用:
 
 ```java
 using Toybox.System as Sys;
@@ -299,39 +299,39 @@ function foo() {
 }
 ```
 
-`using` statements are scoped to the class or module in which they are defined.
+在`using`语句中,它们的定义范围为类或模块.
 
-The difference between `import` and `using` is subtle. `import` brings the module name and class names into the namespace, where `using` only brings the module name into the namespace. If you are using [Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types) you should use `import` exclusively, as it will save you a lot of redundant module references. Finally, the `as` clause is only supported for `using` statements.
+`import`将模块名称和类名称带入命名空间,而`using`只将模块名称带入命名空间.如果你使用[Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types),你应该使用`import`独家,因为它将节省你很多冗余的模块引用.最后,`as`条款仅支持`using`语句.
 
 ## Scoping
 
-Monkey C is a message-passed language. When a function is called, the virtual machine does a look up operation at runtime to find the function being called. Here is the hierarchy that it will search:
+子C是一个通过消息的语言.当调用函数时,虚拟机在运行时进行搜索操作,以找到正在调用的函数.以下是它将搜索的等级:
 
-1.  Instance members of the class
+1. 班级成员
 
-2.  Members of the superclass
+2.超级级级成员
 
-3.  Static members of the class
+3. 类的静态成员
 
-4.  Members of the parent module, and the parent modules up to the global namespace
+4. 主模块的成员,以及全球名称空间的主模块
 
-5.  Members of the superclass's parent module up to the global namespace
+5. 超级级级的母模块成员到全球名称空间
 
-6.  Public static members of the parent module, and the parent modules up to the global namespace
+6. 主模块的公共静态成员,至全球命名空间
 
-7.  Public static members of the superclass’s parent module up to the global namespace
-
-
-For example, if function `a()` is called on an instance of `Child()`, it will be able to access non-member functions `b()`, `c()`, and `d()` when:
-
--   `b()` is a member of the parent module of the object
-
--   `c()` is a static member of the object
-
--   `d()` is a member of the parent module of the parent module, also known as the globals module
+7. 超级级级的母模块的公共静态成员到全球名称空间
 
 
-The code below tries to clarify:
+例如,如果函数`a()`在`Child()`的实例上被调用,它将能够访问非成员函数`b()`,`c()`和`d()`当:
+
+-`b()`是对象的母模块的成员
+
+-`c()`是对象的静态成员
+
+-`d()`是母模块母模块的成员,也称为全球模块
+
+
+下面的代码试图澄清:
 
 ```typescript
 import Toybox.System;
@@ -372,7 +372,7 @@ module Parent
 }
 ```
 
-Sometimes you want to run your search from the global namespace instead of your current scope. You can do this using the bling symbol `$`. The bling symbol refers to global scope:
+有时你想从全球名字空间运行搜索,而不是你的当前范围.你可以使用`$`的模糊符号来完成这项搜索.
 
 ```java
 function helloFunction() {
@@ -393,7 +393,7 @@ class A {
 }
 ```
 
-If you are referring to a global variable, using bling can improve runtime performance:
+如果您指的是一个全球变量,则使用bling可以提高运行时间的性能:
 
 ```java
 var globalScopedVariable = "Global String";
@@ -418,8 +418,8 @@ module A
 }
 ```
 
-Because Monkey C is dynamically typed, referencing a global variable will search your Object's inheritance structure and the module hierarchy before it will eventually find the global variable. Using the bling symbol we can search globals directly.
+由于子C是动态打字的,所以引用一个全球变量将在最终找到全球变量之前搜索对象的继承结构和模块层次结构.使用 symbol符号,我们可以直接搜索全球.
 
-Not that this ever happened to the author.
+这并不是发生在作者身上.
 
-Do not forget to match your bling with pieces of flair; you can't have enough of either.
+别忘了把你的子和巧合相匹配,你都不能够了.

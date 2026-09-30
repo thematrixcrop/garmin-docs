@@ -3,7 +3,7 @@ title: "Exceptions and Errors"
 ---
 # 异常和错误
 
-Monkey C supports structured exception handling for non-fatal errors from which there can be recovery. The syntax should be familiar for Java and Javascript developers:
+子C支持对可恢复的非致命错误进行结构化例外处理.Java和JavaScript开发人员应该熟悉这个语法:
 
 ```java
 try {
@@ -20,20 +20,20 @@ finally {
 }
 ```
 
-You can use the `throw` keyword to throw an exception.
+您可以使用`throw`关键字来做一个例外.
 
-## Creating an Exception
+##创造一个例外
 
-If you are creating your own exception, follow these rules:
+如果您正在创建自己的例外,请遵循以下规则:
 
 -   Extend `Toybox.Lang.Exception`
 
--   Initialize the superclass in the initializer
+- 在初始化器中初始化超级类
 
--   Assign a string message to the `mMessage` member variable
+- 将字符串消息分配给`mMessage`成员变量
 
 
-For example, an app specific exception can be defined as follows:
+例如,应用程序特定的例外可以定义如下:
 
 ```typescript
 class AppSpecificException extends Lang.Exception {
@@ -48,9 +48,9 @@ class AppSpecificException extends Lang.Exception {
 
 ## Errors
 
-Because Monkey C uses dynamic typing, there are many errors for which the compiler cannot check. If the error is of high enough severity, it will raise an fatal API error and cause your app to terminate at runtime. These errors cannot be caught.
+由于 Monkey C 使用动态打字,因此编译器无法检查许多错误.如果错误的严重程度足够高,它将导致致命的API错误,并导致您的应用程序在运行时终止.这些错误无法被捕获.
 
-Array Out Of Bounds
+无限的排列
 
 ```
   An attempt is being made to reference an array outside of its allocated bounds
@@ -58,7 +58,7 @@ Array Out Of Bounds
 
 Circular Dependency
 
-There is a loop in the dependency graph of a module or object that prevents a module or object from being constructed
+在模块或对象的依赖图中存在循环,阻止模块或对象的构建
 
 Communications Error
 
@@ -66,64 +66,64 @@ An error has occurred in [Bluetooth low energy](https://en.wikipedia.org/wiki/Bl
 
 File Not Found
 
-The app file could not be found, which is usually caused when trying to load a resource from the app file
+应用文件无法找到,通常是试图从应用文件中加载资源时引起的
 
 Illegal Frame
 
-The return address on the stack is corrupted
+堆上的返回地址是腐败的
 
 Initializer Error
 
-An error occurred in an initializer
+启动器出现错误
 
-Invalid Value
+无效值
 
-An argument passed to a function or method is invalid
+转移到函数或方法的参数是无效的
 
 Null Reference
 
-A value is being requested from a null value
+从零值中请求一个值
 
-Out of Memory
+忘记了
 
-Indicates no more system memory is available for allocation
+显示系统内存不再可用于分配
 
 Permission Required
 
-An attempt was made to use a restricted API without permission
+尝试使用未经许可的限制 API
 
 Stack Underflow
 
-The stack pointer went past the bottom of the stack memory limit
+堆积指针超过了堆积内存限制的底部
 
 Stack Overflow
 
-The stack pointer went past the top of the stack memory limit
+堆积指针超过了堆积内存限制
 
 Symbol Not Found
 
-An attempt was made to access a variable or method that does not exist in the specified object or method
+尝试访问一个不存在于指定对象或方法中的变量或方法
 
 System Error
 
-A generic error used by the Toybox APIs for fatal errors
+玩具盒API用于致命错误的通用错误
 
 Too Many Arguments
 
-Too many arguments used by a method, which are currently limited to 10 arguments
+一种方法使用过多的参数,目前仅限于10个参数
 
 Too Many Timers
 
-Too many `Timer::Timer` objects for the target device were started
+太多的`Timer::Timer`对象被启动了
 
-Unexpected Type
+意外的类型
 
-Indicates an operation being done on a variable that is unsupported by the type; for example, trying to perform a bitwise OR on two string
+表示一个因类型不支持的变量上进行的操作;例如,试图在两个字符串上执行一个位向 OR
 
 Unhandled Exception
 
-An `Exception` was thrown but was not caught by an exception handler
+一个`Exception`被扔了,但没有被例外处理器抓住
 
 Watchdog Tripped
 
-A Monkey C function has executed for too long; watchdogs prevent a Monkey C program from hanging the system via an infinite loop
+一个子C函数已经执行了太长时间;监护犬阻止 program子C程序通过无限循环挂系统

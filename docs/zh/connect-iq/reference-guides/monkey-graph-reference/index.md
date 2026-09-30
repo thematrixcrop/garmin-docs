@@ -7,7 +7,7 @@ title: "Monkey Graph 参考"
 
 1.  包含记录的开发数据的 FIT 文件
 
-2.  An IQ file of the app (you can acquire an IQ file via the [App Export Wizard](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store)).
+2. 应用程序的智商文件 (您可以通过[App Export Wizard](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store)获得智商文件).
 
 
 该工具允许您在上传应用进行审核之前测试图表的外观。

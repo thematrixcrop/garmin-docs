@@ -5,44 +5,44 @@ title: "Jungle Reference Guide"
 
 欢迎来到 Jungles，这是 Connect IQ 应用的构建语言。本指南将涵盖以下主题：
 
--   The [syntax](/connect-iq/reference-guides/jungle-reference/#jungle-syntax) of the jungle build language
+-  Z林的[syntax](/connect-iq/reference-guides/jungle-reference/#jungle-syntax)构建语言
 
--   Using [build exclusions](/connect-iq/reference-guides/jungle-reference/#excluded-annotations) to tailor your apps at build time
+- 使用[build exclusions](/connect-iq/reference-guides/jungle-reference/#excluded-annotations)来定制您的应用程序在构建时
 
 -   Managing [monkey barrels](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
 
--   Using Jungles [with Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) or from the [command line](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
+- 使用林[with Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code)或从[command line](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
 
 
 ## Jungle 语法
 
-Jungle files contain *build instructions* that are made up of *qualifiers*, *local variables*, and *values*. Jungle files may also contain *comments*. Each build instruction is made up of qualifier-value or variable-value pairs separated by an equal sign (`=`), and terminate with a new line character.
+林文件包含*构建指令*由*资格*,*本地变量*和*值组成. Jung林文件也可能包含*评论*.每个构建指令由由一个等值符号 (`=`) 分开的资格值或变量值对组成,并以一个新的行字符结束.
 
-Qualifiers are analogous to the [device and family qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers) described in the previous section. They are treated as reserved words, can only be set equal to other qualifiers, and are globally scoped. Qualifiers and their properties can be used with the dereference operator `$(VAR)` and are evaluated after all Jungle files for a project have been processed.
+资格是类似于上一节所描述的[device and family qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers).它们被视为保留的单词,只能与其他资格等同,并且具有全球范围.资格和其属性可以与Dereference运算器`$(VAR)`一起使用,并且在处理所有项目林文件后进行评估.
 
 ### 项目限定符
 
-Project qualifiers specify global information that applies across the project. Project qualifiers have x properties that can be referenced by following `project` with a dot (`.`) and a property name:
+项目资格指定在整个项目中适用的全球信息.项目资格有x属性,可以通过使用点 (`.`) 和属性的名称引用`project`:
 
 | Qualifier | Description |
 | --- | --- |
-| `manifest` | Path to the manifest file for the project |
-| `optimization` | Specifies the optimization level for the project. See the [`--optimization` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
-| `typecheck` | Specifies the type check level. See the [`--typecheck` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
+| `manifest` |项目公开文件的路径|
+| `optimization` |指定项目优化水平.详细见[`--optimization` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options)|
+| `typecheck` |指定类型检查水平.详见[`--typecheck` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options)|
 
 ### 设备限定符
 
-Device qualifiers have six properties that can be referenced by following a qualifier with a dot (`.`) and a property name:
+设备资格有六个属性,可以通过一个点 (`.`) 和属性名称的资格进行引用:
 
 | Qualifier | Description |
 | --- | --- |
-| `annotations` | Monkey Barrel annotations applicable to this qualifier |
-| `barrelPath` | Monkey Barrel file (`.barrel`) paths applicable to this qualifier |
+| `annotations` |适用于本资格的子桶注释|
+| `barrelPath` |适用于本资格的 file子桶文件 (`.barrel`) 路径|
 | `exclude注解` | 注解 to exclude when building for this qualifier |
-| `lang` | The language(s) supported by this qualifier |
-| `personality` | Monkey style file (`.mss`) paths applicable to this qualifier |
-| `resourcePath` | Resource file (`.xml`) paths applicable to this qualifier |
-| `sourcePath` | Source file (`.mc`) paths applicable to this qualifier |
+| `lang` |支持本资格的语言(|
+| `personality` |适用于本资格的 file子格式文件 (`.mss`) 路径|
+| `resourcePath` |适用于本资格的资源文件 (`.xml`) 路径|
+| `sourcePath` |适用于本资格的源文件 (`.mc`) 路径|
 
 ### 局部变量
 
@@ -50,9 +50,9 @@ Device qualifiers have six properties that can be referenced by following a qual
 
 ### 值
 
-Values are a list of one or more string values that represent the value of a particular qualifier, qualifier property, or local variable. Multiple list items are separated by semicolons (`;`).
+值列表是一个或多个字符串值的列表,代表特定的资格符,资格符属性或本地变量的值.多个列表项由半柱分开 (`;`).
 
-Spaces in string values must be contained within quotes. For example, a source or resource path that contains a space should be defined in the following way:
+字符串值中的空间必须包含在引用中.例如,包含空间的源或资源路径应以以下方式定义:
 
 ```
 fenix5.sourcePath = "my projects/my source/file.mc";"my fenix5 source"
@@ -60,47 +60,47 @@ fenix5.sourcePath = "my projects/my source/file.mc";"my fenix5 source"
 
 ### 注释
 
-Lines preceded with a hash mark (`#`) are treated as comments and are ignored by the compiler.
+之前使用哈希标记 (`#`) 的行列被视为评论,并被编译器忽视.
 
-A basic Jungle file build instruction will use this pattern (comments are optional):
+一个基本的 Jungle 文件构建说明将使用此模式 (评论是可选的):
 
 ```
 # This is a comment
 qualifier[.property] = value
 ```
 
-Jungle files must be named with a `.jungle` extension, and are kept in the root of the Connect IQ project.
+林文件必须以`.jungle`扩展命名,并存储在Connect IQ项目的根部.
 
-**Note:** Dereferenced qualifiers are evaluated "lazily", which means that when building for a specific device, all qualifiers and properties are resolved for that device after all Jungle files are processed, while local variables will be resolved after processing the Jungle files in which they are defined. The exception to lazy evaluation is when a qualifier or local variable is dereferenced when *setting* that qualifier or variable, in which case the qualifier or variable is evaluated during Jungle file processing.
+**注:** fer惰评价的例外是当一个合格或本地变量在设置该合格或变量时被fer置,在 Jungle 文件处理过程中评估该合格或变量.
 
 ## 源代码和资源
 
-Setting source and resource paths are a common use for Jungles. In addition to tailoring source code and resources to particular devices to improve user experience, it can also help with memory management since only the sources defined in the Jungle file are compiled into the executable.
+设置源路径和资源路径是 Jungles 常用的.除了针对特定设备定制源代码和资源来改善用户体验,它还可以帮助管理内存,因为只有 Jungle 文件中定义的来源才被编译成可执行的.
 
-As a practical example, assume an application will use a shared set of resources for fēnix devices contained in a `fenix-resources` directory at the root of the project. Since these products are not all in the same [families](/connect-iq/core-topics/build-configuration/#family-qualifiers), a custom Jungle file must be written to tell the compiler these devices should use this shared resources folder. We can start by setting the resource path for fēnix 5:
+作为一个实用的例子,假设一个应用程序将使用一个共享的资源组用于fēnix设备,包含在一个`fenix-resources`目录的项目根部.由于这些产品都不是相同的[families](/connect-iq/core-topics/build-configuration/#family-qualifiers),必须编写一个自定义的林文件,告诉编译器这些设备应该使用这个共享资源文件.我们可以从设置fēnix的资源路径开始5:
 
 ```
 # Set the fenix 5 resource directory
 fenix5.resourcePath = $(fenix5.resourcePath);fenix-resources
 ```
 
-Let's break this down a little:
+让我们把这件事分解一下:
 
 fenix5.resourcePath
 
-The device qualifier for the fēnix 5 defined in the default Jungle file followed by the resourcePath property
+在默认 jungle 文件中定义的 fēnix 5 设备资格,其次是 resourcePath 属性
 
 $(fenix5.resourcePath);
 
-The original value of the fenix5.resourcePath property, accessed with the dereference operator `$(VAR)`.
+通过Dereference操作符`$(VAR)`访问的fenix5.resourcePath属性的原始值.
 
-The default Jungle file defines the base resource path as the `resource` directory in the root of the project, and all devices inherit this. It also defines device-specific and family-specific resource directories that can be used implicitly in any project. Including this in the resource path ensures that the device can still look in these directories for resources if required resources aren't found in more device-specific locations. If this is omitted, it would tell the compiler to only look for fenix 5 resources in the `fenix-resources` directory.
+默认的 Jungle 文件定义了基础资源路径为项目根部中的`resource`目录,所有设备都继承了这一定义.它还定义了可以隐含地在任何项目中使用的设备特定和家庭特定资源目录.在资源路径中包含这一点,确保设备仍然可以在这些目录中查找资源,如果需要的资源不在更特定的设备位置.如果此遗漏,它将告诉编译器只在`fenix-resources`目录中查找fenix 5资源.
 
 fenix-resources
 
-The shared directory we want to add as a resource location for the device.
+我们想要添加的共享目录作为设备资源位置.
 
-If this looks familiar, it's because it's pretty similar in concept to setting [PATH environment variables](https://en.wikipedia.org/wiki/PATH_(variable)). Path precedence goes from left to right in Jungle files, so the compiler will process inherited resources first before processing resources found within 'fenix-resources', which can potentially override resources already defined. Adding the `fenix-resources` directory to other fēnix devices just requires similar instructions for each additional device:
+如果这看起来很熟悉,那是因为它在概念上相当类似于设置[PATH environment variables](https://en.wikipedia.org/wiki/PATH_(variable)).  comp林文件中的路径优先级从左到右,因此编译器将首先处理在"enix-resources"中发现的资源之前,然后处理遗传资源,这可能会覆盖已经定义的资源.将`fenix-resources`目录添加到其他ēnienix设备中只需要每个额外设备的类似指示:
 
 ```
 # Set the fenix 5 resource locations
@@ -111,7 +111,7 @@ fenix3.resourcePath = $(fenix3.resourcePath);fenix-resources
 ...
 ```
 
-Setting source paths works in essentially the same way, allowing apps to selectively include specific source code on a per-device or per-device family basis. As an example, consider an app that has common code shared by all products in the `source` folder and product-line specific source code in other folders: `wearable-source` for wearable devices, `edge-source` for bike computers, and `handheld-source` for handheld mapping units. The following demonstrates how to use a jungle to configure this project:
+设置源路径基本上是相同的,允许应用程序选择性地在每个设备或每个设备家庭基础上包含特定源代码.例如,考虑一个应用程序,该应用程序在`source`文件中的所有产品和其他文件中的产品线特定源代码都有共同代码:可穿戴设备的`wearable-source`,自行车计算机的`edge-source`和手持地图单位的`handheld-source`.下列说明如何使用林来配置这个项目:
 
 ```
 # Reset the base source path to include only source files in the source folder. The
@@ -152,15 +152,15 @@ fenix3.lang.spa = $(fenix3.lang.spa);fenix-resources-spa
 ...
 ```
 
-The `lang` qualifier property is used in this build instruction to specify that a localization resource is being set, and is followed by an additional [ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php) localization qualifier to indicate for which language the supplied resource locations are intended. A list of supported localization qualifiers can be found in the [Strings](/connect-iq/core-topics/resources/#strings) section. Specifying an unsupported localization qualifier will result in an error at compile time.
+在此构建说明中,使用`lang`资格的属性来指定一个本地化资源正在设置,其后则是另一个[ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php)本地化资格,以指示提供的资源位置是用于哪种语言的.支持本地化资格的列表可以在[Strings](/connect-iq/core-topics/resources/#strings)部分找到.指定一个不支持本地化资格将导致编译时的错误.
 
-When specifying localization resources within Jungle files, the supported languages must also be set in a project's manifest, otherwise the associated localization overrides will be ignored.
+在 Jungle 文件中指定本地化资源时,支持的语言也必须设置在项目表格中,否则将忽略相关本地化覆盖.
 
 ## 排除的注解
 
-In some cases, there are specific modules, classes, methods, or variables that should only be used by a subset of devices, but excluding an entire source file is excessive. The `exclude注解` qualifier property allows build instructions to specify specific [annotations](/connect-iq/monkey-c/annotations/#annotations) that will be excluded when an application is built. This may help save memory during app execution on a device.
+在某些情况下,只有一个子组的设备才能使用特定的模块,类,方法或变量,但排除整个源文件是过分的.`exclude注解`资格特征允许构建说明指定特定的[annotations](/connect-iq/monkey-c/annotations/#annotations)将被排除在应用程序构建时.这可能有助于在设备上执行应用程序时节省内存.
 
-A common reason for excluding source is when an application uses one algorithm that takes advantage of the latest APIs on newer devices, but must use a simpler algorithm on older devices that don't have the latest APIs available. For example, the following example shows an app that has two methods—one that uses the newer [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/), and one that relies on [Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var) data:
+排除源源的常见原因是,应用程序使用一种利用新设备上最新API的算法,但必须在没有最新API的旧设备上使用更简单的算法.例如,下面的例子显示一个应用程序有两个方法,一个使用了新[Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/),一个依赖于[Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var)数据:
 
 ```cpp
 import Toybox.WatchUi;
@@ -196,7 +196,7 @@ class MyAmazingAppView extends WatchUi.View {
 }
 ```
 
-This will function properly as-is, but all of the code is included regardless of the build target. If the app is approaching memory limits, it may be useful to exclude the unused method, especially if the method is sufficiently large and impacts available memory. To do this, set the `exclude注解` qualifier property in the Jungle file to the appropriate annotation value:
+如果应用程序接近内存限制,则可能很有用排除未使用的方法,特别是如果该方法足够大,并且影响可用内存.为了这样做,设置Jungle文件中的`exclude注解`资格属性为适当的注释值:
 
 ```
 # By default, exclude the new, experimental logic
@@ -205,7 +205,7 @@ base.exclude注解 = experimental
 fenix5.exclude注解 = boring
 ```
 
-Then, update the application to use annotations:
+然后,更新应用程序以使用注释:
 
 ```cpp
 import Toybox.WatchUi;
@@ -255,7 +255,7 @@ class MyAmazingAppView extends WatchUi.View {
 
 ## Monkey Barrel 管理
 
-Barrels can also be added manually to the project's main Jungle file using the `barrelPath` qualifier property:
+manu也可以手动添加到该项目的主要林文件中,使用`barrelPath`资格属性:
 
 ```
 # Include all the Barrels from the 'barrels' directory at the root of the project
@@ -268,14 +268,14 @@ base.barrelPath = barrels/IconLibrary.barrel
 base.barrelPath = barrels/IconLibrary.barrel;barrels/GraphLibrary.barrel
 ```
 
-It's also possible to use the `annotations` qualifier property to import select, annotated portions of a barrel. This is useful when a Barrel contains a library of classes and methods, but an application only needs to use a fragment of the library. For example, assume the GraphLibrary barrel imported above contains several different graphing methods, but an application only needs to use a bar graph. The Barrel author was kind enough to annotate each method, so rather than using the entire Barrel, we can limit imported code to only those methods that are needed:
+也可以使用`annotations`资格性属性来进口一个桶的选定的注释部分.当一个桶包含一个类和方法的库时,这是有用的,但应用程序只需要使用图书馆的碎片.例如,假设上面进口的图书馆桶包含了几个不同的图形方法,但应用程序只需要使用条图.Barrel作者足够善于注释每个方法,所以我们可以限制进口代码到只需要的方法:
 
 ```
 # Import the 'bar' annotated method from the GraphLibrary Barrel
 base.GraphLibrary.annotations = bar
 ```
 
-In order for the compiler to correctly resolve Monkey Barrels, Barrel dependencies must also be added to the project's manifest file:
+为了让编译器能够正确解决子桶,还必须在项目表文件中添加rel子依赖性:
 
 ```cpp
 <iq:barrels>
@@ -283,79 +283,79 @@ In order for the compiler to correctly resolve Monkey Barrels, Barrel dependenci
 </iq:barrels>
 ```
 
-Once completed, the specified Barrels will be available for use in a project.
+一旦完成,所指定的桶将可用于项目中.
 
 ## 定义项目依赖项
 
-What if a quick change is made to a developer's barrel code in the development process of a dependant application? It would be cumbersome to [export a barrel](/connect-iq/core-topics/shareable-libraries/#exporting-a-monkey-barrel) and update the dependencies in the manifest.xml every time the code is changed in the Barrel project. Connect IQ application projects can have direct Monkey Barrel project dependencies removing the need for these steps.
+如果开发人员在开发过程中对一个依赖应用程序的桶代码进行快速变化呢?这将会让[export a barrel](/connect-iq/core-topics/shareable-libraries/#exporting-a-monkey-barrel)变得繁,并且每次在桶项目的代码变更时都会更新 manifest.xml 中的依赖.连接 IQ 应用程序项目可以有直接的子桶项目依赖,从而消除了这些步骤的需要.
 
-Adding a Barrel project dependency is done by specifying the Jungle file or files of the project or projects depended upon within the `barrelPath`. Jungle files can be specified individually or grouped in the `barrelPath`.
+添加一个桶项目的依赖性是通过指定`barrelPath`中依赖的项目或项目的 Jung林文件或文件 . Jung林文件可以单独指定或组装在`barrelPath`中 .
 
-For example, a developer is creating an application, but she wants to include a standard set of icons that define her brand. She realizes in development that she needs to add a few more icons and decides to finally create that super specialized function that she is always needing. She can work dynamically on both projects and link her application project to her Barrel code by adding the Barrel project's Jungle file to the `barrePath` like this:
+例如,一个开发人员正在创建一个应用程序,但她想包括一个标准的标志组,定义她的品牌.她意识到在开发中她需要添加更多的标志,并决定最终创建她总是需要的超级专业功能.她可以在两个项目上动态工作,并通过添加Barrel项目的Jungle文件到`barrePath`来将她的应用程序项目与她的桶代码联系起来.
 
 ```
 # Include a specific Barrel project
 base.barrelPath = MyIconBarrel/MyIconBarrel.jungle
 ```
 
-Another developer is working on a math intensive application. Thankfully, someone has created an extensive MathLibrary Barrel that he has pulled in. He also has a local MyIconLibrary Barrel project with some standard icons. He has a set of icons for round devices defined in a `roundIcons.jungle` file that he wants to use in his application. He includes both the packaged MathLibrary.barrel and his own roundIcons defined in his local barrel project like this:
+另一个开发人员正在开发一个密集的数学应用程序.幸运的是,有人已经创建了一个广泛的数学库桶,他已经拉进了.他还有一个本地 MyIcon Library Barrel 项目,有一些标准图标.他有一组图标为在`roundIcons.jungle`文件中定义的圆型设备,他希望在他的应用中使用.他包括包装的数学库桶和他在本地桶项目中定义的自己的圆形图标.
 
 ```
 # Include a specific Barrel from the 'barrels' directory and a Jungle from a Barrel project
 base.barrelPath = barrels/MathLibrary.barrel;MyIconBarrel/roundIcons.jungle
 ```
 
-Our second developer realizes that he wants to support rectangle devices as well. These have been defined in a `rectangleIcons.jungle`. He includes multiple build instructions from MyIconBarrel by grouping the Jungle files in square brackets `[]` like this:
+我们的第二个开发人员意识到,他也希望支持矩形设备.这些设备已被定义在`rectangleIcons.jungle`.他包括来自MyIconBarrel的多个构建指令,通过将林文件集成到`[]`的方形括号中,如下:
 
 ```
 # Include a specific Barrel from the 'barrels' directory and multiple Jungles from a Barrel project
 base.barrelPath = barrels/MathLibrary.barrel;[MyIconBarrel/roundIcons.jungle;MyIconBarrel/rectangleIcons.jungle]
 ```
 
-Take a look at the (../Core\_Topics/Shareable.md Libraries#shareablelibraries) chapter to learn more about Monkey Barrels and how they can be used.
+了解更多关于子桶和如何使用的信息,请查看 (../Core\_Topics/Shareable.md图书馆#shareablelibraries) 章.
 
 ## 默认 Jungle 文件
 
-The Connect IQ SDK includes a default Jungle file, which is always applied to projects even if no custom Jungle files are present. It defines a `base` qualifier, which represents all source files (`.mc`) contained in the project, and all resource files found in the `resources` at the root of a Connect IQ project. It also defines default device, family, and language qualifiers that are the basis for the qualifier scheme described in the previous section.
+连接IQ SDK包括默认的林文件,即使没有自定义的 Jung林文件都适用于项目.它定义了一个`base`资格,代表了项目中包含的所有源文件 (`.mc`),以及在Connect IQ项目的根部的`resources`中发现的所有资源文件.它还定义了默认设备,家庭和语言资格,这是上一节描述的资格方案的基础.
 
-When a project is built, the instructions from the default Jungle file are applied first, then any instructions from custom Jungle files are applied. This makes it possible for customizations to override the default build instructions.
+当一个项目被构建时,首先应用于默认的 jungle 文件中的指示,然后应用于自定义的 jungle 文件中的任何指示. 这使得可进行定制,以取代默认的构建指示.
 
 ## 在 Visual Studio Code 中使用 Jungles
 
-By default, each project is configured to look for a `monkey.jungle` file in the root of the project and will use it if it exists. However, if a project is organized differently or a different Jungle file name is preferred, the Jungle file location can be set easily by going to *File > Preferences > Settings* and editing the *Monkey C* settings:
+默认情况下,每个项目都设置在项目根部寻找一个`monkey.jungle`文件,如果它存在,则会使用它.然而,如果一个项目有不同的组织或更喜欢不同的Jungle文件名称,那么通过进入 *File > 首选 > 设置*和编辑 *Monkey C*设置可以轻松设置Jungle文件位置:
 
 
 ![Jungle file specification in Visual Studio Code](/connect-iq/resources/programmers-guide/vscode-jungles.png)
 
 ## 从命令行使用 Jungles
 
-For those who prefer to use the `monkeyc` [shell command](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands) to build projects rather than Visual Studio Code, the `-f` option is required and accepts a list of Jungle files, separated by semicolons (`;`) or colons (`:`):
+对于那些更喜欢使用`monkeyc`[shell command](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands)来构建项目而不是视觉工作室代码的人来说,需要`-f`选项,并接受由半柱 (`;`) 或柱 (`:`) 分开的 list林文件列表:
 
 ```
 monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
 ```
 
-In lieu of this new option, the `-z` option to specify resource paths, the `-x` option to specify build exclusions, the `-m` option to specify the manifest file, and the ability to specify source paths have been deprecated and will be removed in a future SDK release. Here is a general description of how this will work:
+取而代之的是`-z`选项指定资源路径,`-x`选项指定构建排除,`-m`选项指定表格文件,以及指定源路径的功能已经过时,将在未来的SDK版本中被删除.以下是如何工作的一般描述:
 
--   When specifying a Jungle file with the `-f` option, the [default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file) will first be applied to the project before the specified Jungle file is applied
+- 在使用`-f`选项指定一个林文件时,首先将[default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用于该项目之前,然后将指定的林文件应用于
 
--   If more than one Jungle file is provided after the `-f` option, precedence will be given to the build instructions in the last Jungle file in the list
+- 如果`-f`选项后提供了多个Jungle文件,则将优先考虑列表中的最后一个Jungle文件中的构建说明
 
--   If no resource or source options are specified, either as a Jungle file the compiler will attempt to apply the [default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file) to the project
+- 如果没有指定资源或源选项,编译器将试图将[default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目中
 
--   Use of both the `-f` option and any deprecated options in combination is not allowed and will cause a compiler error
+- 不允许使用`-f`选项和任何过时选项的组合,并会导致编译错误
 
 
-The manifest file of the project must be specified within a Jungle file passed at the command line and any Jungle can contain this specification. Here is what it looks like:
+项目明示文件必须在命令行传递的林文件中指定,任何林都可以包含此规范.
 
 ```
 project.manifest = manifest.xml
 ```
 
-There can be only one manifest file defined within the set of jungle files provided. When relative paths are used within a jungle file the path will be resolved against the Jungle file's parent directory. Relative paths within the `default.jungle` are resolved against the parent directory of the manifest file that is found.
+在提供的林文件集中只能定义一个表格文件.当 relative林文件中使用相对路径时,路径将与 Jung林文件的主目录解决.`default.jungle`中的相对路径将与发现的表格文件的主目录解决.
 
-**Note:** Legacy projects using `-m`, `-x`, `-z`, and/or supplying source files at the command line will result in a compiler warning.
+** 注:**使用`-m`,`-x`,`-z`和/或在命令行提供源文件的遗产项目将导致编译器警告.
 
-Resist urge... to make... reference...
+抵制冲动...做出...参考...
 
-When multiple manifests are found, one must destroy the other and absorb its power to become the strongest manifest.
+当发现多个表现时,一个必须摧毁另一个并吸收它的力量,成为最强大的表现.

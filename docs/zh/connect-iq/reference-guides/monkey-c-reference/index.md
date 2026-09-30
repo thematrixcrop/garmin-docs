@@ -5,138 +5,138 @@ title: "Monkey C Language Reference"
 
 ![](/connect-iq/resources/programmers-guide/smart-monkey.png)
 
-Monkey C is an object-oriented language built from the ground up, designed for easy app development on wearable devices. If you've worked with dynamic languages in the past like Java™, PHP, Ruby, or Python™, Monkey C should be very familiar.
+子C是一个从头开始构建的基于对象的语言,旨在轻松在可穿戴设备上开发应用程序.如果你过去曾经使用JavaTM,PHP,Ruby或PythonTM等动态语言,子C应该非常熟悉.
 
-The goal of Monkey C is to round the sharp edges of app development, allowing developers to focus more on the customer and less on resource constraints. Monkey C compiles into byte code that is interpreted by a virtual machine, similar to Java. Also like Java, objects are allocated on the heap, and the virtual machine cleans up memory.
+子C的目标是将应用程序开发的尖端边缘圆圆,允许开发人员更多地关注客户而不是减少资源限制.子C编译成字节代码,由虚拟机解释,类似于Java.
 
 ## Language Essentials
 
 ### Data Types
 
-Monkey C is a [duck typed](https://en.wikipedia.org/wiki/Duck_typing) language, and does not have true primitive types. The [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), and [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) types are all objects, which means primitives can have methods just like other objects. In languages like Java or C++, types must be declared for each function parameter and return value. The Monkey C compiler will optionally verify type safety, however, and runtime errors occur when functions mishandle objects. Using operators like [`instanceof` and `has`](#instanceof-and-has) can help avoid potential typing issues.
+子C是一个[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,并没有真正的原始类型.[Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/),[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/),[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/),[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/),[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)和[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)类型都是对象,这意味着原始类型可以像其他对象一样有方法.在Java或C++等语言中,必须对每个函数参数和返回值进行类型声明. however子C编译器会选择验证类型安全性,然而,当函数不处理对象时会出现运行时间错误.使用[`instanceof` and `has`](#instanceof-and-has)这样的操作员可以帮助避免潜在的键字问题.
 
-The basic data types supported by Monkey C are:
+子C支持的基本数据类型是:
 
 | Type | Description | Example |
 | --- | --- | --- |
 | [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 32-bit signed integer | `var x = 5;` |
-| [Float](/connect-iq/api-docs/Toybox/Lang/Float/) | 32-bit floating point number | `var y = 6.0;` |
+| [Float](/connect-iq/api-docs/Toybox/Lang/Float/) |32位浮点号码| `var y = 6.0;` |
 | [Long](/connect-iq/api-docs/Toybox/Lang/Long/)\* | 64-bit signed integer | `var l = 5l;` |
-| [Double](/connect-iq/api-docs/Toybox/Lang/Double/)\* | 64-bit floating point number | `var d = 4.0d;` |
-| [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) | `true` and `false` | `var bool = true;` |
+| [Double](/connect-iq/api-docs/Toybox/Lang/Double/)\* |64位浮点号码| `var d = 4.0d;` |
+| [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) |`true`和`false`| `var bool = true;` |
 | [Char](/connect-iq/api-docs/Toybox/Lang/Char/) | UTF-32 character | `var c = 'x';` |
-| [String](/connect-iq/api-docs/Toybox/Lang/String/)\* | A sequence of characters | `var str = "Hello";` |
-| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) | A lightweight constant identifier (See [Symbols](#symbols) for more info) | `var sym = :mySymbol;` |
+| [String](/connect-iq/api-docs/Toybox/Lang/String/)\* |一个字符的序列| `var str = "Hello";` |
+| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) |一个轻量级的恒定识别器 (查看[Symbols](#symbols)更多信息)| `var sym = :mySymbol;` |
 
 Monkey C also supports two container types:
 
 | Type | Description | Example |
 | --- | --- | --- |
-| [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* | Fixed size (not a linked list), numerically indexed, single dimensional list of objects | `var arr = new [1, 2, 3];` |
-| [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* | An associative array or hash table that maps keys to values | `var dict = {one=>1, two=>2};` |
+| [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* |固定尺寸 (不是链接列表),数值索引,单维物体列表| `var arr = new [1, 2, 3];` |
+| [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* |交配阵列或哈希表,将键映射到值| `var dict = {one=>1, two=>2};` |
 
-\*Requires heap allocation, which requires more memory than a 32-bit type.
+需要堆积分配,需要比32位类型更多的内存.
 
-There are several keywords, operators, and reserved words in the Monkey C programming language that cannot be used as variables or symbols in your programs:
+在 Monkey C 编程语言中,有几个关键字,操作符和保留的单词,不能作为程序中的变量或符号:
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `and` | Logical AND, equivalent to `&&` | See [Logical Operators](#logical-operators) |
-| `as` | Assign an alias to a module denoted by a `using` statement | See [Using Statements](#using-statements) |
-| `break` | Break out of a loop or a switch-case block | See [Loops](#loops) and [Switch-Case Statements](#switch-case-statements) |
-| `catch` | Catch a thrown [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) | See [Exception Handling](#exception-handling) |
-| `case` | Specify a case in a `switch` block | See [Switch-Case Statements](#switch-case-statements) |
-| `class` | Declare a new class | See [Classes and Objects](#classes-and-objects) |
-| `const` | Declare a new constant | See [Constants](#constants) |
-| `continue` | Continue to executing the current flow, primarily used within loops | See [Loops](#loops) |
-| `default` | Specify a default case in a `switch` block | See [Switch-Case Statements](#switch-case-statements) |
-| `do` | Start a `do` loop | See [Loops](#loops) |
-| `else` | Specify an alternate case in an `if` block | See [If Statements](#if-statements) |
-| `enum` | Declare a new enumeration | See [Enumerations](#enumerations) |
-| `extends` | Declare a class that inherits from another class | See [Classes and Objects](#classes-and-objects) |
+| `and` |逻辑 AND,相当于`&&`| See [Logical Operators](#logical-operators) |
+| `as` |指定一个以`using`语句表示的模块的号| See [Using Statements](#using-statements) |
+| `break` |从循环或开关区块中脱| See [Loops](#loops) and [Switch-Case Statements](#switch-case-statements) |
+| `catch` |抓住一个抛出的[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)| See [Exception Handling](#exception-handling) |
+| `case` |指定`switch`区块中的一个案例| See [Switch-Case Statements](#switch-case-statements) |
+| `class` |宣布一个新的类型| See [Classes and Objects](#classes-and-objects) |
+| `const` |声明一个新的常数| See [Constants](#constants) |
+| `continue` |继续执行电流,主要在循环中使用| See [Loops](#loops) |
+| `default` |在`switch`区块中指定默认案例| See [Switch-Case Statements](#switch-case-statements) |
+| `do` |启动`do`循环| See [Loops](#loops) |
+| `else` |在`if`区块中指定一个替代案例| See [If Statements](#if-statements) |
+| `enum` |声明一个新的清单| See [Enumerations](#enumerations) |
+| `extends` |声明从另一个类中继承的类型| See [Classes and Objects](#classes-and-objects) |
 | `false` | Logical `false` | See [If Statements](#if-statements) |
-| `finally` | Specify a block of code to always execute in a `try` block | See [Exception Handling](#exception-handling) |
-| `for` | Start a `for` loop | See [Loops](#loops) |
-| `function` | Declare a new function | See [Functions](#functions) |
-| `has` | Check whether an object has a particular symbol | See [Instanceof and Has](#instanceof-and-has) |
-| `hidden` | Specify a protected object member, equivalent to `protected` | See [Data Hiding](#data-hiding) |
-| `if` | Start an `if` block | See [If Statements](#if-statements) |
-| `instanceof` | Check object type | See [Instanceof and Has](#instanceof-and-has) |
-| `me` | Refer to the current object instance | See [Classes and Objects](#classes-and-objects) |
-| `module` | Declare a new module | See [Modules](#modules) |
-| `NaN` | An invalid or undefined value, "Not a Number" | NA |
-| `native` | Reserved for internal use | NA |
-| `new` | Create a new instance of an object | See [Miscellaneous Operators](#miscellaneous-operators) |
-| `null` | A null value | See [Declaring Variables](#declaring-variables) |
-| `or` | Logical OR, equivalent to `||` | See [Logical Operators](#logical-operators) |
-| `private` | Specify a private object member | See [Data Hiding](#data-hiding) |
-| `protected` | Specify a protected object member | See [Data Hiding](#data-hiding) |
-| `public` | Specify a public object member | See [Data Hiding](#data-hiding) |
-| `return` | Specify a value to return from a function | See [Functions](#functions) |
-| `self` | Refer to the current object instance | See [Classes and Objects](#classes-and-objects) |
-| `static` | Declare a static variable or function | See [Static Members](#static-members) |
-| `switch` | Start a `switch` block | See [Switch-Case Statements](#switch-case-statements) |
-| `throw` | Throw an exception | See [Exception Handling](#exception-handling) |
+| `finally` |指定一个代码区块,在`try`区块中总是执行| See [Exception Handling](#exception-handling) |
+| `for` |启动`for`循环| See [Loops](#loops) |
+| `function` |声明一个新函数| See [Functions](#functions) |
+| `has` |检查对象是否具有特定的符号| See [Instanceof and Has](#instanceof-and-has) |
+| `hidden` |指定一个受保护对象成员,相当于`protected`| See [Data Hiding](#data-hiding) |
+| `if` |启动一个`if`区块| See [If Statements](#if-statements) |
+| `instanceof` |检查对象类型| See [Instanceof and Has](#instanceof-and-has) |
+| `me` |参照当前的对象实例| See [Classes and Objects](#classes-and-objects) |
+| `module` |声明一个新的模块| See [Modules](#modules) |
+| `NaN` |无效或未定义的值",不是数字"| NA |
+| `native` |用于内部使用| NA |
+| `new` |创建一个对象的新实例| See [Miscellaneous Operators](#miscellaneous-operators) |
+| `null` |一个零值| See [Declaring Variables](#declaring-variables) |
+| `or` |〇等于 `的逻辑 OR||` | See [Logical Operators](#logical-operators) |
+| `private` |指定一个私有对象成员| See [Data Hiding](#data-hiding) |
+| `protected` |指定受保护对象成员| See [Data Hiding](#data-hiding) |
+| `public` |指定一个公共对象成员| See [Data Hiding](#data-hiding) |
+| `return` |指定从函数返回值| See [Functions](#functions) |
+| `self` |参照当前的对象实例| See [Classes and Objects](#classes-and-objects) |
+| `static` |声明静态变量或函数| See [Static Members](#static-members) |
+| `switch` |启动一个`switch`区块| See [Switch-Case Statements](#switch-case-statements) |
+| `throw` |放一个例外| See [Exception Handling](#exception-handling) |
 | `true` | Logical `true` | See [If Statements](#if-statements) |
-| `try` | Start a try-catch block to handle exceptions | See [Exception Handling](#exception-handling) |
-| `using` | Import a module for use in the app | See [Using Statements](#using-statements) |
-| `var` | Declare a new variable | See [Declaring Variables](#declaring-variables) |
-| `while` | Start a new `while` loop or set a condition for a `do` loop | See [Loops](#loops) |
+| `try` |启动一个试捕区块来处理例外| See [Exception Handling](#exception-handling) |
+| `using` |进口用于应用程序的模块| See [Using Statements](#using-statements) |
+| `var` |声明一个新的变量| See [Declaring Variables](#declaring-variables) |
+| `while` |启动新的`while`循环或设置`do`循环的条件| See [Loops](#loops) |
 
 ### Operators
 
-Monkey C supports several useful operators outlined below. In the examples below, assume `a = 10`, `b = 5`, `x = 1`, `y = 0`, `m = true`, and `n = false`.
+在下面的例子中,假设`a = 10`,`b = 5`,`x = 1`,`y = 0`,`m = true`和`n = false`.
 
 #### Arithmetic Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `+` | Add two operands; unary positive | `a + b` results in 15; `+a` is 10 |
-| `-` | Subtract the second operand from the first; unary negative | `a - b` results in 5; `-a` is -10 |
+| `+` | Add two operands; unary positive |`a + b`结果为 15;`+a`是 10|
+| `-` |减去第二个操作数从第一个;单数负|`a - b`结果为 5;`-a`是 -10|
 | `*` | Multiply two operands | `a * b` results in 50 |
-| `/` | Divide the dividend by the divisor | `a / b` results in 2 |
-| `%` | Modulus, provides the remainder after division | `a % b` results in 0 |
-| `++` | Increment a numeric value by one, may be prefix or postfix | `a++` results in 11 |
-| `--` | Decrement a numeric value by one, may be prefix or postfix | `a--` results in 9 |
+| `/` |按分数分配股息| `a / b` results in 2 |
+| `%` |模块,在分开后提供剩余部分| `a % b` results in 0 |
+| `++` |增加一个数字值,可以是前置或后置| `a++` results in 11 |
+| `--` |一个数值的减值,可以是前或后| `a--` results in 9 |
 
-**Note:** The `+` operator is also used to concatenate [String](/connect-iq/api-docs/Toybox/Lang/String/) values.
+**注:**`+`运算符也用于连接[String](/connect-iq/api-docs/Toybox/Lang/String/)值.
 
 #### Relational Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `==` | Check to see if two operands are equal | `a == b` is `false` |
-| `!=` | Check to see if two operands are not equal | `a != b` is `true` |
-| `>` | Check to see if the left operand is greater than the right operand | `a > b` is `true` |
-| `<` | Check to see if the left operand is less than the right operand | `a < b` is `false` |
-| `>=` | Check to see if the left operand is greater than or equal to the right operand | `a >= b` is `false` |
-| `<=` | Check to see if the left operand is less than or equal to the right operand | `a <= b` is `false` |
+| `==` |检查两个操作数是否等等|`a == b`是`false`|
+| `!=` |检查两个操作数是否不等等|`a != b`是`true`|
+| `>` |检查左边操作数是否大于右边操作数|`a > b`是`true`|
+| `<` |检查左边操作数是否小于右边操作数|`a < b`是`false`|
+| `>=` |检查左边操作数是否大于右边操作数或等于右边操作数|`a >= b`是`false`|
+| `<=` |检查左边操作数是否小于右边操作数|`a <= b`是`false`|
 
 #### Logical Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `&&`, 'and' | Logical AND, which is `true` if both values are true | `m && n` is `false` |
-| `||` | Logical OR, which is `true` if either value is true | `m || n` is `true` |
-| `!` | Logical NOT, which reverses the value of a logical expression | `!(m && n)` is `true` |
+|`&&`, '和'|逻辑 AND,如果两个值都是正确的`true`|`m && n`是`false`|
+| `||` |逻辑 OR,如果任何值都是正确的,则是`true`| `m |||
+| `!` |逻辑NOT,反转一个逻辑表达式的值|`!(m && n)`是`true`|
 
-In Monkey C the following apply:
+在子C中,适用于:
 
--   If an object is not `null`, it is evaluated as `true`. A value of `0` is evaluated as `false`.
+- 如果一个对象不是`null`,则被评为`true`.
 
--   A `!` applied to a `Number` or `Long` is the same as applying a `~`.
+- 对`Number`或`Long`应用的`!`与`~`的应用相同.
 
 
 When comparing non-Boolean values in logical expressions:
 
--   The expression `x && y` first evaluates `x`. If `x` is `false`, its value is returned; otherwise, `y` is evaluated and the resulting value is returned.
+- 表达式`x && y`首先评估`x`. 如果`x`是`false`,则返回它的值;否则,`y`被评估,结果值被返回.
 
--   The expression `x || y` first evaluates `x`. If `x` is `true`, its value is returned; otherwise, `y` is evaluated and the resulting value is returned.
+- 表达式`x || y`首先评估`x`. 如果`x`是`true`,则返回它的值;否则,`y`被评估,结果值被返回.
 
 
 #### Bitwise Operators
 
-Bitwise operators perform operations on binary values, bit-by-bit. These adhere to conventions illustrated by the following truth table:
+位向运算者对二进制值进行操作,比分比分.这些运算遵循以下真相表所示的公约:
 
 | p | q | p & q | p | q | p ^ q |
 | --- | --- | --- | --- | --- |
@@ -145,43 +145,43 @@ Bitwise operators perform operations on binary values, bit-by-bit. These adhere 
 | 1 | 1 | 1 | 1 | 0 |
 | 1 | 0 | 0 | 1 | 1 |
 
-Assume `p = 3` and `q = 1`. If written as byte values in binary, `p` is `0000 0011` and `q` is `0000 0001`.
+假设`p = 3`和`q = 1`.如果写为字节值,`p`是`0000 0011`和`q`是`0000 0001`.
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `&` | Bitwise AND, which copies a bit to the result if it exists in both operands | `p & q` results in 1 (0000 0001) |
-| `|` | Bitwise OR, which copies a bit to the result if it exists in either operand | `p | q` results in 3 (0000 0011) |
-| `^` | Bitwise XOR, which copies a bit to the result if it exists in either operand, but not both | `p ^ q` results in 2 (0000 0010) |
-| `~` | Bitwise NOT, two's compliment, which effectively "flips" the bits | `~q` results in -2 (1111 1110) |
+| `&` |如果它存在于两种操作中,则将结果复制为 bitwise AND| `p & q` results in 1 (0000 0001) |
+| `|` |如果它存在于任何一个操作中,它可以对结果进行复制| `p |` (0000 0011)|
+| `^` |如果它存在于任何一个操作数中,但不是两个| `p ^ q` results in 2 (0000 0010) |
+| `~` |两人的恭喜,这实际上"翻了"两部分| `~q` results in -2 (1111 1110) |
 
-**Note:** All numeric values in Monkey C are signed values, indicated by the high-order bit.
+** 注:** 子C中的所有数字值都是签名值,由高序位表示
 
 #### Assignment Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `=` | Assign the value from the right operand to the left operand | `b = a` assigns `b` the value of `a` (10) |
-| `+=` | Add the right operand and left operand and assign the result to the left operand | `a += b` equivalent to `a = a + b` (15) |
-| `-=` | Subtract the right operand from the left operand and assign the result to the left operand | `a -= b` equivalent to `a = a - b` (5) |
-| `*=` | Multiply the right operand with the left operand and assign the result to the left operand | `a *= b` equivalent to `a = a * b` (50) |
-| `/=` | Divide the left operand from the right operand and assign the result to the left operand | `a /= b` equivalent to `a = a / b` (2) |
-| `%=` | Divide the left operand from the right operand and assign the remainder to the left operand | `a %= b` results in 0 |
-| `<<=` | Left shift the left operand by the right operand and assign the result to the left operand | `x <<= y` equivalent to `x = x << y` (1) |
-| `>>=` | Right shift the left operand by the right operand and assign the result to the left operand | `x >>= y` equivalent to `x = x >> y` (1) |
-| `&=` | Bitwise AND the right operand by the left operand and assign the result to the left operand | `x &= y` equivalent to `x = x & y` (0) |
-| `|=` | Bitwise OR the right operand by the left operand and assign the result to the left operand | `x |= y` equivalent to `x = x | y` (1) |
-| `^=` | Bitwise XOR the right operand by the left operand and assign the result to the left operand | `x ^= y` equivalent to `x = x ^ y` (1) |
+| `=` |从右操作数到左操作数分配值|`b = a`将`b`赋予`a`(10) 的值|
+| `+=` |添加右操作和左操作,将结果分配到左操作|`a += b`相当于`a = a + b`(15)|
+| `-=` |减去右操作数从左操作数,将结果分配到左操作数|`a -= b`相当于`a = a - b`(5)|
+| `*=` |乘以左运行对右运行对左运行对结果分配|相当于`a *= b`和`a = a * b`(50)|
+| `/=` |分开左运算与右运算,将结果分配到左运算|`a /= b`相当于`a = a / b`(2)|
+| `%=` |分开左运行器与右运行器,将其余的分配到左运行器| `a %= b` results in 0 |
+| `<<=` |移动左运行对右运行对左运行对右运行对结果分配|`x <<= y`相当于`x = x << y`(1)|
+| `>>=` |右移动左运行对右运行对右运行对左运行分配结果|`x >>= y`相当于`x = x >> y`(1)|
+| `&=` |位向和右运行对左运行,将结果分配给左运行|`x &= y`相当于`x = x & y`(0)|
+| `|=` |位向或右运行对左运行对应,并将结果分配给左运行对应| `x |= y` equivalent to `x = x | y` (1) |
+| `^=` |位向 XOR 右操作数与左操作数,并将结果分配到左操作数|`x ^= y`相当于`x = x ^ y`(1)|
 
 #### Miscellaneous Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| `?` and `:` | The ternary operator, a shorthand form of [if-else](#if-statements) | `var myBool = a > 5 ? true : false` |
-| `new` | Create a new instance of an object | `var myTimer = new Toybox.Timer.Timer` |
+|`?`和`:`|三角形运算器,[if-else](#if-statements)的缩写形式| `var myBool = a > 5 ? true : false` |
+| `new` |创建一个对象的新实例| `var myTimer = new Toybox.Timer.Timer` |
 
 #### Operator Precedence
 
-Operator precedence determines which parts of an expression will be evaluated first. The list below groups the operators by precedence, the highest appearing at the top of the table, and the lowest at the bottom.
+运算器优先级决定了表达式的哪些部分将首先进行评估.下列列表将运算器按优先级组分,表顶部出现的最高,下部出现的最低.
 
 | Precedence | Operators |
 | --- | --- |
@@ -196,7 +196,7 @@ Operator precedence determines which parts of an expression will be evaluated fi
 
 ### Comments
 
-Commented statements are ignored by the compiler. Monkey C supports multi-line (`/* */`) and single-line (`//`) comments. Here is an example of a multi-line comment:
+编译器忽略了评论的声明.子C支持多行 (`/* */`) 和单行 (`//`) 的评论.以下是多行评论的一个例子:
 
 ```cpp
 /*
@@ -206,7 +206,7 @@ inside the comment delimiters.
 */
 ```
 
-Single-line comments may appear on their own line, or may appear in-line with other Monkey C code:
+单行评论可能会出现在自己的行上,或可能出现在其他子C代码的行上:
 
 ```cpp
 using Toybox.System;
@@ -217,7 +217,7 @@ System.println("Hello World!");  // This comment shares a line with code that wi
 
 ### Declaring Variables
 
-All variables must be declared before use with the `var` keyword. Since Monkey C is a [duck typed](https://en.wikipedia.org/wiki/Duck_typing) language, it is not necessary to delcare each variable's type.
+所有变量必须在使用`var`关键字之前被声明.由于子C是[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,因此不需要注意每个变量的类型.
 
 ```cpp
 var x = 5;            // A 32-bit integer value
@@ -226,7 +226,7 @@ var n = null;         // Null value
 var f = 4.0d;         // A 64-bit floating point value
 ```
 
-The flexibility of duck typing means there are things watch out for:
+ck,,,,,,,.
 
 ```cpp
 var arr = new[10];     // Create a new array; since the values are unassigned, they are initialized as 'null'
@@ -235,7 +235,7 @@ var z = arr[0] + 5;    // Attempt to add a Number to a null array element. Unexp
 
 ### Constants
 
-Constants, declared with the `const` keyword, are named, immutable values that support all basic data types. These are useful for storing unchanging values that may be used repeatedly throughout code. Constants must be declared at the module or class level and cannot be declared within a function. It is important to note that with data structures like arrays, `const` works in a way similar to Java's `final` keyword. For example, a `const` array prevents the array from being replaced by a new instance, but the elements of the array may be modified.
+常数以`const`关键字声明,它们是名字的,可支持所有基本数据类型的不可变值.这些值对于存储可重复使用的不变值来有用.常数必须在模块或类级别上声明,并且不能在函数内声明.重要的是,`const`以类似Java的`final`关键字的方式运行.例如,`const`数组可以防止数组被新实例取代,但数组的元素可以被修改.
 
 ```cpp
 const PI = 3.14;
@@ -245,7 +245,7 @@ const BANANA_YELLOW = "#FFE135";
 
 ### Symbols
 
-[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) objects are lightweight constant identifiers. When the Monkey C compiler finds a new symbol, it will assign it a new unique value. This allows symbols to be used as constants without explicitly declaring a constant:
+[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)对象是轻量级的常数识别器.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为常数使用,而不明确声明一个常数:
 
 ```cpp
 using Toybox.System;
@@ -257,17 +257,17 @@ System.println(a == b);  // Prints true
 System.println(a == c);  // Prints false
 ```
 
-Symbols are also useful as keys in data structures like dictionaries:
+象征也作为数据结构中的关键,如字典:
 
 ```cpp
 var person = {:title=>"George", :name=>"Taylor"};
 ```
 
-One other important use for symbols is to reference method implementations for calls to [Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) or when assigning callbacks with [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/). In this instances, if a method `myMethod{...}` has been implemented, it can be referenced as a callbacks using the symbol `:myMethod`. See the section on [Callbacks](#callbacks) for more in-depth examples.
+符号的另一个重要用途是引用[Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function)的调用方法实现或在[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)的调用后分配.在这种情况下,如果已实现`myMethod{...}`的方法,可以使用`:myMethod`的符号引用它作为调用后.查看[Callbacks](#callbacks)的部分,以了解更多详细的例子.
 
 ### Enumerations
 
-Enumerations are constant mappings from a [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) to a [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) value, created using the `enum` keyword. Unless explicitly set, the first symbol in an enumeration is assigned a value of `0`, and each subsequent symbol is automatically assigned the value of the previous unassigned symbol plus one. Enumeration symbols can be used just like constants (that's essentially what they are), and like constants, enumerations must be declared at the module or class level.
+编号是从[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)到[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)值的恒定映射,使用`enum`关键词创建.除非明确设置,则编号中的第一个符号被赋予`0`的值,每一个后续符号都被自动赋予前一个未分配的符号加一个的值.编号符号可以像常数一样使用 (这基本上是它们的),并且像常数一样,编号必须在模块或类层面宣布.
 
 ```cpp
 // Automatically incremented enumeration
@@ -296,7 +296,7 @@ enum {
 
 ### Arrays
 
-[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) objects are fixed-size (not a linked list), numerically indexed lists of objects. All members of an array do not need to be the same type of object. Like variables, arrays in Monkey C are typeless, so it is not necessary to declare an array's type. There are two ways to create a new array:
+[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象是固定尺寸的 (不是链接列表),数值索引的对象列表.一个阵列的所有成员不需要是相同类型的对象.就像变量一样,子C中的阵列是无类型的,因此不需要声明阵列的类型.创建一个新的阵列有两种方法:
 
 ```cpp
 // A new array with ten empty slots, initialized to 'null'
@@ -306,13 +306,13 @@ var myArray = new[10];
 var myArray = [1, 2, 3, 4, 5];
 ```
 
-Array elements are expressions, so it's also possible to build multi-dimensional arrays:
+阵列元素是表达式,所以也可以构建多维阵列:
 
 ```cpp
 var myArray = [[1, 2], ["one", "two"]];
 ```
 
-Although Monkey C does not have a direct way of creating an empty, two-dimensional array, it can be done:
+虽然子C没有直接的方式来创建一个空的二维数组,但可以做到:
 
 ```cpp
 // Specify the array sizes
@@ -328,11 +328,11 @@ for(var i = 0; i < first_dimension_size; i += 1) {
 }
 ```
 
-**Note:** When using this technique, it's important to pay close attention to the array dimensions. The example above only makes three [Array](/connect-iq/api-docs/Toybox/Lang/Array/) allocations to provide 200 slots, but were the dimensions reversed, this would make 101 allocations, using a lot more memory to provide the same number of slots.
+** 注:**使用这种技术时,很重要要注意数组尺寸.上面的例子只做了三次[Array](/connect-iq/api-docs/Toybox/Lang/Array/)分配,以提供200个插槽,但如果维度逆转,这将使得101个分配,使用更多的内存来提供相同的插槽数量.
 
 ### Dictionaries
 
-[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) objects, also called associative arrays or hash tables, are data structures similar to [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) objects that map key-value pairs. Keys and values can be any type of [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), and each key-value pair does not need to be the same type combination within a given dictionary.
+[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象,也称为关联阵列或哈希表,是类似于[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象的数据结构,它们映射键值对.键和值可以是任何类型的[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/),每个键值对不需要在给定的词典中是相同类型的组合.
 
 ```cpp
 using Toybox.System;
@@ -345,14 +345,14 @@ System.println(myDictionary["c"]);          // Prints "three"
 System.println(myDictionary["d"]);          // Prints "null" (there is no key "d")
 ```
 
-The [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) class has a built-in [Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) method that automatically hashes (indexes) the keys added to a Dictionary. This provides an efficient way of looking up the arbitrarily ordered Dictionary values. Dictionaries automatically resize and rehash as items are added or removed, which makes them extremely flexible, but comes at a cost:
+[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)类有内置的[Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function)方法,它自动将添加到字典中的密钥 (索引) 哈希 (索引).这提供了一个高效的方法来查找任意排序的字典值.字典随着添加或删除项目的自动变大和重新改大小,这使得它们非常灵活,但成本:
 
--   Insertion and removal of Dictionary contents can cause performance problems if there is excessive resizing and rehashing
+- 如果过度调整大小和重新调整,插入和删除字典内容可能会导致性能问题
 
--   Dictionaries are not as space-efficient as either [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) type objects because they require extra memory allocation space
+- 词典不像[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)或[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)类型的对象那么空间效率,因为它们需要额外的内存分配空间
 
 
-The built-in [Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) method is adequate in most cases, but if a custom [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) type is used as keys in a Dictionary, it may be beneficial to override it to avoid index collisions and reduce lookup time:
+在大多数情况下,内置的[Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function)方法是足够的,但如果在字典中使用自定义[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)类型的密钥,则可能是有益的,以避免索引碰撞并减少搜索时间:
 
 ```cpp
 class Monkey
@@ -385,18 +385,18 @@ var monkeyContinents = {
 
 ## Flow Control
 
-### If Statements
+###如果声明
 
-In Monkey C, `if` statement are the most basic of the available flow control statements. They are used to execute a certain section of code *only* if a particular Boolean expression evaluates to `true`. The expression evaluated by the `if` statement cannot be an assignment. Values or objects that will evaluate to `true` include:
+在子C中,`if`语句是可用的流量控制语句中最基本的语句.它们用于执行特定部分的代码 *只有*如果特定的布尔式表达式评估为`true`.由`if`语句评估的表达式不能是赋值.将评估为`true`的值或对象包括:
 
--   A value of `true`
+-`true`的值
 
--   A non-zero [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- 不为零的[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
--   A non-null [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- 一个非零的[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
-As an example, this prints a message to the console when the value of `result` is greater than zero:
+例如,当`result`的值超过零时,它会打印一个信息给控制台:
 
 ```cpp
 using Toybox.System;
@@ -407,7 +407,7 @@ if (result > 0) {
 }
 ```
 
-The `else` keyword can be added to an `if` block for more complex branching. Once an expression evaluates to `true`, its associated block of statements are executed and any remaining statements in the `if` block are skipped:
+关键字`else`可以添加到`if`区块中,以便更复杂的分分类.一旦表达式被评价为`true`,其相关的语句区块会执行,并且在`if`区块中的任何剩余语句都会被跳过:
 
 ```cpp
 using Toybox.System;
@@ -427,7 +427,7 @@ if (a == true) {
 }
 ```
 
-Statements may also be nested. In the example below, `b` and `c` are only evaluated if `a` is equal to 1:
+在下面的示例中,`b`和`c`仅在`a`等于1:
 
 ```cpp
 using Toybox.System;
@@ -441,13 +441,13 @@ if (a == 1) {
 }
 ```
 
-Lastly, Monkey C supports the ternary operator, which is a simple, alternative syntax for a basic if-else statement. The general form is:
+最后,子C支持三位数运算符,这是一个简单的,替代语法.
 
 ```
 var result = testExpression ? whenTrueExpression : whenFalseExpression
 ```
 
-Where `testExpression` is evaluated to determine whether it is `true`, `whenTrueExpression` is the `true` result, and `whenFalseExpression` is the `false` result. The value of the resulting expression is assigned to the `result` variable. If resulting expression does not resolve to a value (e.g. something like a [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) statement), the `result` variable is assigned a value of `null`.
+在`testExpression`被评估以确定它是否是`true`,`whenTrueExpression`是`true`结果,`whenFalseExpression`是`false`结果.结果表达式的值被分配给`result`变量.如果结果表达式没有达到值 (例如类似于[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句),`result`变量被分配为`null`的值.
 
 ```cpp
 // If 'a' is true, 'myValue' is assigned a value of 1; otherwise, it is assigned a value of 2.
@@ -456,7 +456,7 @@ var myValue = a ? 1 : 2;
 
 ### Switch-Case Statements
 
-A `switch` statement is another type of flow control statement that may have multiple execution paths rather than the single path offered by `if` statements. A `switch` statement first evaluates a condition, which must be an object—assignments are not allowed. Any number of successive `case` statements are allowed within a switch block, each followed by either an object or an `instanceof` expression. When the `switch` evaluation is either equal to or an instance of a `case` statement, the matching case block will execute. For example, these two examples function similarly:
+一个`switch`语句是另一种流量控制语句,它可能具有多个执行路径,而不是`if`语句提供的单一路径.一个`switch`语句首先评估一个条件,必须是对象分配不允许.任何数量的连续`case`语句都被允许在开关区块内,每个语句都被对象或`instanceof`表达式接下来.当`switch`评估是等于或是`case`语句的一个实例时,匹配案例区块将执行.例如,这两个例子运行类似:
 
 ```cpp
 using Toybox.System;
@@ -483,7 +483,7 @@ switch (myValue) {
 }
 ```
 
-All statements following the matching case block, including subsequent case blocks, are executed in sequence until a `break` statement is encountered. At this point, the switch block terminates and the remaining case blocks are skipped. This behavior, called *fall through*, is illustrated below:
+匹配案例区块之后的所有语句,包括随后的案例区块,都在顺序执行,直到遇到`break`语句.此时,开关区块结束,剩余的案例区块被跳过.这种行为称为*fall through*,如下:
 
 ```cpp
 using Toybox.System;
@@ -501,9 +501,9 @@ switch (myValue) {
 }
 ```
 
-A switch block may also have a single, optional `default` case, which handles all cases not explicitly handled by one of the preceding `case` statements. A final `break` statement is not required because control flow will naturally fall out of the switch block at the end of the block, but it may be included if preferred.
+一个开关区块也可以有一个单个,可选的`default`案例,它处理所有未明确处理的案例.最后一个`break`声明不需要,因为控制流量自然会在区块末端掉入开关区块,但如果首选的话,可以包括.
 
-Since `switch` statements can switch on objects or object types, it's possible to perform more sophisticated actions. Below is a snippet of an app that receives an Ant payload that must be handled differently depending on how the message is coded:
+由于`switch`语句可以启动对象或对象类型,因此可以执行更复杂的操作.下面是接收的应用程序的摘录,根据信息编码方式必须处理不同:
 
 ```cpp
 var payload = message.getPayload();
@@ -535,7 +535,7 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 }
 ```
 
-Deciding whether to use `switch` instead of `if` is often a matter of personal preference. In some cases, switch blocks may be more readable, particularly when there are a relatively large number of cases to consider. Fall through can also be a useful tool depending on the needs of a particular application.
+决定是否使用`switch`而不是`if`通常是个人偏好的问题.在某些情况下,交换区块可能更可读,特别是当有相对大量的案例需要考虑时.根据特定应用程序的需求,落后也可以是一个有用的工具.
 
 #### Scoping in Switch Blocks
 
@@ -569,9 +569,9 @@ switch (myValue) {
 
 ### Loops
 
-Monkey C supports `for`, `while`, and `do-while` loops. Loops are used to repeat statements until conditions specified by an expression are met. All loops require braces enclosing their block of statements, and single-line loops are not supported.
+子C支持`for`,`while`和`do-while`循环.循环用于重复语句,直到一个表达式指定的条件达到.所有循环都需要关闭其语句块的支,而单线循环不支持.
 
-The `while` and `do-while` loops have a familiar syntax:
+`while`和`do-while`循环具有熟悉的语法:
 
 ```cpp
 // A do-while loop
@@ -590,7 +590,7 @@ while (myCounter < 10) {
 }
 ```
 
-Monkey C allows variable declaration in `for` loops, which also have a familiar syntax:
+子C允许在`for`循环中变量声明,这些循环也具有熟悉的语法:
 
 ```cpp
 var myArray = [1, 2, 3, 4, 5];
@@ -599,7 +599,7 @@ for (var i = 0; i < myArray.size(); i++) {
 }
 ```
 
-Flow control within loops can be managed by using the `break` and `continue` statements:
+通过使用`break`和`continue`语句来控制循环中的流量:
 
 ```cpp
 using Toybox.System;
@@ -618,7 +618,7 @@ for (var i = 0; i < 10; i += 1) {
 
 ### Exception Handling
 
-Monkey C supports structured [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) handling for non-fatal errors in the form of `try-catch` blocks:
+子C支持结构化[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理,以防止`try-catch`块的非致命错误:
 
 ```cpp
 try {
@@ -628,7 +628,7 @@ try {
 }
 ```
 
-Multiple `catch` statements are allowed to handle more than one possible exception type. When an exception is thrown, the first matching catch block will execute, and all subsequent catch blocks will be skipped (if a generic [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) handler is used, it's a good idea to place last). An optional `finally` statement can be placed at the end of a try-catch block, which will execute regardless of whether an exception has been thrown.
+多个`catch`语句可以处理多个可能的例外类型.当一个例外被扔时,第一个匹配的捕获区块将执行,所有随后的捕获区块将被跳过 (如果使用通用[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理器,这是一个好主意的位置).可选的`finally`语句可以放在试捕获区块的尽头,这将执行不论是否投放了例外.
 
 ```cpp
 try {
@@ -642,21 +642,21 @@ try {
 }
 ```
 
-To throw an [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/), use The `throw` keyword:
+要抛出[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/),使用`throw`关键字:
 
 ```cpp
 throw new Lang.Exception();
 ```
 
-If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/) and [Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). Refer to the [API 文档](/connect-iq/api-docs/) for more details about the various [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) types.
+如果不处理例外,运行时会出现 *未处理的例外* 错误.连接 IQ API 在一些实例中会抛出例外,如[Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)和[Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). 查看[API 文档](/connect-iq/api-docs/)有关各种[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)类型的更多详情.
 
 ## 函数
 
-Functions (also called methods) are the meat of an application, defining discrete, callable units of code. They can exist in a class, module, or appear in the global module.
+函数 (也称为方法) 是应用程序的基础,定义了单独的可调用代码单元.它们可以存在于一个类,模块或出现在全球模块中.
 
-### Defining a Function
+定义一个函数
 
-Monkey C functions can take arguments, but because Monkey C is a dynamically typed language, argument types are not declared. Below is a simple function that takes a single 'myValue' argument and multiplies it by two:
+子C函数可以采用参数,但由于子C是一个动态键字语言,所以参数类型不被声明.下面是一个简单的函数,采用一个'myValue'参数并乘以两个:
 
 ```cpp
 function myFunction(myValue) {
@@ -664,11 +664,11 @@ function myFunction(myValue) {
 }
 ```
 
-**Note:** Dynamic typing makes it easy to accidentally write functions that may not work under every circumstance. The example above works great if you provide a Number as an argument, but won't be as happy if it's passed a String. For this reason, it's often a good idea to do some basic [type checking](#instanceof-and-has) within functions to make sure functions receive what's expected.
+** 注:** 动态打字可以轻松地意外地写函数,可能在所有情况下都不会工作.上面的例子很好,如果你提供一个数字作为参数,但如果它通过一个字符串,它不会那么快乐.
 
-### Returning Values From Functions
+### 返回函数的值
 
-It is not necessary to declare the return value of a function, thanks to dynamic typing, but all functions in Monkey C will still return a value. A return value may be specified with a `return` keyword:
+由于动态键入,不必声明函数的返回值,但在子C中的所有函数仍然会返回值.可以用`return`关键字指定返回值:
 
 ```cpp
 function myFunction(myValue) {
@@ -677,11 +677,11 @@ function myFunction(myValue) {
 }
 ```
 
-The `return` statement is optional, and if a function doesn't have one, it will return a "garbage" value from the viewpoint of the caller.
+`return`语句是可选的,如果函数没有一个,它将从调用者的角度返回一个"垃圾"值.
 
 ### Calling Functions
 
-To use a function or a method, simply use the function call syntax:
+要使用函数或方法,只需使用函数调用语法:
 
 ```cpp
 // Call myFunction() and pass it an argument of '2', but do nothing with the result
@@ -691,7 +691,7 @@ myFunction(2);
 var myResult = myFunction(2);
 ```
 
-It is also possible to call a function or method within another function or method:
+在另一个函数或方法中还可以调用函数或方法:
 
 ```cpp
 function myOtherFunction() {
@@ -702,11 +702,11 @@ function myOtherFunction() {
 
 ## Classes and Objects
 
-Classes are blueprints that bundle data and operations together into an instance of the class, called an *object*. Variables, functions, and other classes (often referred to as *members*) can be defined within a Monkey C class. Objects are compiled and cannot be modified at runtime, so all variables must be declared in either a local function, the class instance, or the parent module before they can be used.
+类是将数据和操作捆绑在一起的蓝图,将其组建成一个类的实例,称为 *对象*.变量,函数和其他类 (通常称为 *members*) 可以在子C类内定义.对象被编译,不能在运行时进行修改,因此所有变量必须在使用之前在本地函数,类实例或母模块中声明.
 
 ### Defining Classes
 
-A class is defined using the `class` keyword. For example, here is a simple class that defines a circle with an `mRadius` member, representing the radius of a circle:
+一个类是使用`class`关键词定义的.例如,这里有一个简单的类,定义了一个圆形,其中有一个`mRadius`成员,代表一个圆形的半径:
 
 ```cpp
 class Circle {
@@ -716,13 +716,13 @@ class Circle {
 
 ### Creating Objects
 
-To create an instance of a class, use the `new` keyword:
+为了创建一个类的实例,使用`new`关键字:
 
 ```cpp
 var myCircle = new Circle();
 ```
 
-This doesn't do too much that's useful yet. However, when an object is instantiated with the `new` keyword, memory for the object is allocated and its `initialize()` method is automatically called, acting as a constructor. An `initialize()` method has been implemented in the Circle class below, which sets a radius value whenever a new Circle is created:
+这还没有做太多有用的事情.然而,当一个对象被使用`new`关键字即时化时,对象的内存被分配,其`initialize()`方法被自动调用,作为构造器.在下面的圆圈类中已经实现了`initialize()`方法,每当创建新的圆圈时都设定一个半径值:
 
 ```cpp
 class Circle {
@@ -736,11 +736,11 @@ class Circle {
 var myCircle = new Circle(2);
 ```
 
-If classes are nested, the outermost class must first be instantiated before and enclosed class may be instantiated.
+如果类是嵌入式的,最远的类必须首先在此之前进行实时化,并且可以在附带的类中进行实时化.
 
-### Accessing Class Members
+### 进入课堂成员
 
-Within a method implementation, the current object instance can be referred to with either the `self` or `me` keywords. These may be used for disambiguating instance variables from local variables, or simply for clarity. For example, here's the Circle class with new methods to calculate its circumference and surface area that use the `self` keyword to refer to the `mRadius` instance variable:
+在一个方法实现中,当前的对象实例可以用`self`或`me`关键字来引用.这些可以用于从本地变量中分歧的实例变量,或者简单来澄清.例如,这里有新的方法来计算它的周围和表面积,使用`self`关键字来引用`mRadius`实例变量:
 
 ```cpp
 using Toybox.Math as Math;
@@ -761,11 +761,11 @@ class Circle {
 }
 ```
 
-**Note:** Nested classes in Monkey C do not have access to the members of the enclosing class.
+** 注:**子C中嵌入的类别无法访问附加类的成员.
 
 ### Inheritance
 
-Inheritance allows one class to be based on another class, which helps speed development time and promotes code re-use. Instead of defining entirely new classes for similar objects, new classes can inherit members from existing classes. For example, a new Sphere class can be defined that shares a lot of the same characteristics of a circle by using the `extends` keyword to inherit from the Circle class:
+继承允许一个类基于另一个类,这有助于加快开发时间并促进代码重复使用.而不是为类似对象定义完全新的类,新的类可以继承现有类的成员.例如,可以通过使用`extends`关键字来定义一个新的球类,通过从圆类继承了许多相同的属性:
 
 ```cpp
 using Toybox.Math as Math;
@@ -809,11 +809,11 @@ class Sphere extends Circle {
 }
 ```
 
-The only thing not inherited from the parent class (also called a base class or superclass) is an `initialize()` method, which must be implemented separately for Sphere. In this case, it's just calling the parent class's `initialize()` method to set a radius.
+唯一没有从母类继承的东西 (也称为基类或超级类) 是一个`initialize()`方法,该方法必须单独用于球体. 在这种情况下,它只是调用母类的`initialize()`方法来设置半径.
 
-**Note:** Monkey C does not implicitly call a parent class's `initialize()` method, so child classes must explicitly call the base class constructor. Examples of this can be seen in the samples distributed with the Connect IQ SDK anywhere something like a `View` class is extended.
+** 注:** 子C不隐含地调用母类的`initialize()`方法,因此小类必须明确地调用基类构造器.可以在任何扩展`View`类的 Connect IQ SDK分布式样本中看到这一点.
 
-The `getArea()` method from the Circle class won't work for spheres, so a new `getArea()` method was also implemented to *override* the `getArea()` the method from the Circle class. Lastly, `describe()` methods were added to each class to let each object type describe itself. Let's put these classes to work:
+循环类的`getArea()`方法不会适用于球体,因此也实施了一个新的`getArea()`方法,以*过渡*`getArea()`的循环类的方法.最后,每个类都添加了`describe()`方法,让每个对象类型描述自己.让我们把这些类进行工作:
 
 ```cpp
 // Create new objects
@@ -829,11 +829,11 @@ System.println(mySphere.getArea());           // 314.159271
 mySphere.describe();                          // "I'm a Sphere! My parent is a Circle!"
 ```
 
-Notice the `describe()` method from Sphere calls the parent's `describe()` method directly using the parent class's symbol. The `superclass.memberMethod()` is valid in Monkey C, but the `superclass.memberVariable` syntax is not supported.
+注意从Sphere的`describe()`方法直接使用母类的符号来调用母类的`describe()`方法.`superclass.memberMethod()`在子C中有效,但`superclass.memberVariable`语法不支持.
 
 ### Static Members
 
-In some cases, certain class members need to be accessible within an object without creating an instance of an object. For example, imagine a unit conversion class that only contains unit conversion constants:
+在某些情况下,某些类成员需要在对象内访问,而不需要创建对象的实例.例如,想象一下只包含单元转换常数的单元转换类:
 
 ```cpp
 class Conversion {
@@ -848,7 +848,7 @@ var myConverter = new Conversion(); // Create an instance of the Conversion clas
 System.println(meters * myConverter.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
 ```
 
-Normally, it would be necessary to first create an instance of the Conversion class before using any of the members within the class, including variables, constants, enumerations, or functions. If the `static` keyword is applied to the constants, however, it's possible to use them without instantiating the Conversion class:
+通常情况下,在使用该类内的任何成员之前,首先需要创建转换类的实例,包括变量,常数,编号或函数.如果`static`关键字被应用到常数上,但在不实例化转换类的情况下,可以使用它们:
 
 ```cpp
 class Conversion {
@@ -862,7 +862,7 @@ var meters = 32;
 System.println(meters * Conversion.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
 ```
 
-Another advantage to static members is that they belong to the class rather than to a particular instance of the class. This means that something like a static variable can be shared between mutliple instances of class, and if its value is changed in one instance, the new value is immediately available in all instances:
+静态成员的另一个优势是,它们属于类而不是类的特定实例.这意味着类似于静态变量的东西可以在类的多个实例之间共享,如果在一个实例中改变其值,新的值就会在所有实例中立即可用:
 
 ```cpp
 class BananaBunch {
@@ -883,7 +883,7 @@ System.println(bunchTwo.mNumberOfBananas); // 12 - notice this one also reflects
 
 ### Data Hiding
 
-Class members have three levels of access—*private*, *protected*, and *public*. The `private` modifier specifies that the member can only be accessed in its own class. The `protected` modifier specifies that the member can only be accessed by its own class or one of its subclasses. The `hidden` keyword is synonymous with the `protected` keyword. A `public` access modifier is the default, but it can also be explicitly specified. When the `public` access modifier is used for an enumeration, variable, or function, those members are visible to all other classes.
+类成员有三个访问级别*私*,*保护*,和*公共*.`private`修改器指定了成员只能在自己的类中访问.`protected`修改器指定了成员只能通过自己的类或其子类访问.`hidden`关键字是`protected`关键字的同义词.一个`public`访问修改器是默认的,但也可以明确指定.当`public`修改器用于列表,变量或函数时,这些成员可见于所有其他类.
 
 ```cpp
 using Toybox.System as System;
@@ -899,20 +899,20 @@ function myFunction() {
 }
 ```
 
-Variables that are `public` or `protected` may be accessed using either one of the following formats:
+变量是`public`或`protected`可以使用以下任何一个格式访问:
 
 ```cpp
 var x = mMmemberVariable;
 var y = self.mMemberVariable;
 ```
 
-**Note:** Data hiding is only available at a class member level. [Modules](#modules) in Monkey C have no concept of data hiding, and [classes](#classes-and-objects) are always public.
+** 注:** 隐藏数据仅可在类成员级别上使用. 子C中的[Modules](#modules)没有隐藏数据的概念,而[classes](#classes-and-objects)总是公开的.
 
 ### Instanceof and Has
 
-Monkey C provides two operators to do runtime type checking that need some special attention: `instanceof` and `has`. Monkey C's object-oriented design patterns in conjunction with the `has` and `instanceof` operator enables software that has implementations for many devices in a single code base.
+子C提供两个运营商进行运行时间类型检查,需要特别注意:`instanceof`和`has`.子C的对象导向设计模式与`has`和`instanceof`运营商结合,可以在一个代码库中实现许多设备的软件.
 
-The `instanceof` operator checks whether an object instance inherits from a given class:
+`instanceof`操作符检查对象实例是否继承给定的类别:
 
 ```cpp
 using Toybox.System;
@@ -939,9 +939,9 @@ if (sensorInfo has :accel && sensorInfo.accel != null) {
 
 ### Callbacks
 
-Functions in Monkey C are not first class, so cannot be passed as arguments to other functions to be used as callbacks. Since functions are bound to the object in which they are created, [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) objects must be used to create callbacks.
+子C中的函数不是一级,因此不能作为参数传递到其他函数以作为回调.由于函数与它们创建的对象绑定,因此必须使用[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象来创建回调.
 
-One approach is to use a combination of a function and its object instance:
+一种方法是使用函数及其对象实例的组合:
 
 ```cpp
 class MyClass {
@@ -957,7 +957,7 @@ function myFunction() {
 }
 ```
 
-Unlike classes, modules do not inherit from [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) so do not have access to the `method()` function. However, a new instance of [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) can be created, which allows module-level functions to be invoked as callbacks in a similar fashion:
+与类不同的是,模块不会继承[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/),因此无法访问`method()`函数.然而,可以创建一个新的[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)实例,允许模块级函数以类似的方式被调用为回调:
 
 ```cpp
 using Toybox.Lang as Lang;
@@ -976,30 +976,30 @@ function myFunction() {
 }
 ```
 
-A [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) object will invoke a method on the instance of the object it came from, and keeps a strong reference to the source object.
+一个[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象将在它来自的对象的实例上调用一种方法,并保持对源对象的强烈引用.
 
 ### Weak References
 
-Monkey C is *reference counted*, which means the runtime system will free memory when the number of objects referencing that memory decrements to zero. Reference counting allows memory to become available very quickly, which is important in low memory environments. The kryptonite of reference counting are *circular references*. A circular reference happens when a cycle is formed in the reference chain. For example, imagine that object C references an object A, while object A references object B *and* object B references object A:
+run子C是*引用数*,这意味着运行时间系统将释放内存,当引用该内存的对象数量减少到零时.引用数允许内存非常快速获得,这在低内存环境中很重要.引用数的基普顿化是*圆形引用*.当引用链中形成循环时,循环引用发生.例如,想象对象C引用对象A,而对象A引用对象B *和*对象B引用对象A:
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-1.png)
 
-After a while, C gets invited to sit at the cool-kid table, so it dereferences A to go hang out with its *real* friends:
+在一段时间后,C被邀请坐下一个酷孩子的桌子上,所以它放弃了A去和其真正的朋友在一起:
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-2.png)
 
-The memory for A and B should be freed at this point, but A and B both have a reference count of one because they reference *each other*. The memory used by A and B are now unavailable to objects from the cool-kids table, which is generally not a good thing. However, sometimes A and B really do need to reference each other. In these cases, you can use a *weak reference*, which keeps a reference to an object but does not increment the reference count. This means the object reference can be destroyed, and is a case that should be handled.
+在此点,A和B的内存应该被释放,但A和B都有一个引用数,因为它们引用 *彼此*.A和B所使用的内存现在不适用于冷幼儿表中的对象,这通常不是一件好事.然而,有时A和B确实需要相互引用.在这些情况下,你可以使用 *弱引用*,保留对象的引用数,但不会增加引用数.这意味着对象引用可以被破坏,这是一个应处理的案例.
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
-To create a weak reference, use the `weak()` method, an [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) method available to all Monkey C objects.
+为了创建一个弱的参考,使用`weak()`方法,这是所有子C对象可用的[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)方法.
 
 ```cpp
 // We would make a "Hans and Franz" reference here but certain advertising has probably made them uncool.
 var weakReference = myObject.weak()
 ```
 
-If calling `weak()` on one of the immutable types ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)), then it returns the object itself. Otherwise, it will return a [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) instance. Weak references have a `stillAlive()` method to check if a weak reference is still valid, and have a `get()` method to create a strong reference to an object:
+如果调用`weak()`在不可变的类型之一 ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/),[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/),[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/),[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/),[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/),[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)),则它将返回对象本身.否则,它将返回一个[Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)实例.弱引用有`stillAlive()`方法来检查一个弱引用是否仍然有效,并有`get()`方法来创建一个强 reference对象:
 
 ```cpp
 if (weakReference.stillAlive()) {
@@ -1008,11 +1008,11 @@ if (weakReference.stillAlive()) {
 }
 ```
 
-Remember to only keep the strong reference within the needed scope!
+记住只能在必要范围内保持强烈的参考!
 
 ## Modules
 
-Monkey C modules serve a purpose similar to Java packages, but can contain variables, functions, classes, and other modules:
+子C模块的目的类似于Java包,但可以包含变量,函数,类型和其他模块:
 
 ```cpp
 module MyModule
@@ -1028,11 +1028,11 @@ function myFunction() {
 }
 ```
 
-It is common for static methods to exist at the module level instead of belonging to a particular class. Unlike classes, however, modules have no concept of inheritance or data hiding (the `extends` and `hidden` keywords are not supported for modules).
+常见的是,静态方法存在于模块层面,而不是属于特定类别.与类别不同,模块没有遗传或隐藏数据的概念 (模块不支持`extends`和`hidden`关键字).
 
 ### Using Statements
 
-Modules can be imported into another class or module with the `using` keyword, scoping the module to the class or module in which they are defined.
+模块可以通过`using`关键字进口到另一个类或模块中,将模块扩展到它们定义的类或模块.
 
 ```cpp
 using Toybox.System;
@@ -1042,7 +1042,7 @@ function myFunction() {
 }
 ```
 
-Modules may also be assigned an alias with the `as` clause, useful for shortening module names or when a different naming scheme is preferred:
+模块也可能被赋予`as`条款的别名,可用于缩短模块名称或更喜欢不同的命名方案:
 
 ```cpp
 using Toybox.System as Sys;
@@ -1052,25 +1052,25 @@ function myFunction() {
 }
 ```
 
-Once imported, all classes inside a module must be referenced through their parent module.
+一旦进口,一个模块内的所有类必须通过其母模块引用.
 
 ## Scoping
 
-Monkey C is a message-passed language. When a function is called, the virtual machine searches a hierarchy at runtime in the following order to find the function:
+子C是一个通过消息的语言.当调用函数时,虚拟机在运行时以以下顺序搜索一个等级来找到函数:
 
-1.  Instance members of the class
+1. 班级成员
 
-2.  Members of the superclass
+2.超级级级成员
 
-3.  Static members of the class
+3. 类的静态成员
 
-4.  Members of the parent module, and the parent modules up to the global namespace
+4. 主模块的成员,以及全球名称空间的主模块
 
-5.  Members of the superclass's parent module up to the global namespace
+5. 超级级级的母模块成员到全球名称空间
 
-6.  Public static members of the parent module, and the parent modules up to the global namespace
+6. 主模块的公共静态成员,至全球命名空间
 
-7.  Public static members of the superclass’s parent module up to the global namespace
+7. 超级级级的母模块的公共静态成员到全球名称空间
 
 
 The code below illustrates:
@@ -1109,7 +1109,7 @@ module Parent
 }
 ```
 
-In some cases, it may be more efficient to search from the global namespace instead of the current scope with the bling symbol `$`, which refers to the global scope:
+在某些情况下,使用全球范围的混合符号`$`来搜索全球名称空间而不是当前范围可能更有效:
 
 ```cpp
 using Toybox.System as System;
@@ -1129,7 +1129,7 @@ class MyClass {
 }
 ```
 
-Using bling can improve runtime performance when referring to a global variable. Because Monkey C is dynamically typed, referencing a global variable will search your object's inheritance structure and the module hierarchy before it will eventually find the global variable. Instead, we can search globals directly with the bling symbol:
+由于 global子C是动态键入的,引用一个全球变量将在最终找到全球变量之前搜索对象的遗产结构和模块层次结构. 相反,我们可以直接使用 symbol子符号搜索全球:
 
 ```cpp
 using Toybox.System as System;
@@ -1155,13 +1155,13 @@ module BluthCompany
 }
 ```
 
-While Monkey C will normally search the entire object hierarchy for an object, when the bling symbol is used, only the global space is checked. If nothing is found there, the virtual machine will not traverse back down the object hierarchy looking and will instead return a *Symbol Not Found* error.
+虽然子C通常会在整个对象层次结构中搜索一个对象,但当使用 bling 符号时,只会检查全球空间.如果没有发现任何东西,虚拟机将不会回过对象层次结构,而是会返回 *Symbol Not Found* 错误.
 
-**Note:** Switch blocks have some additional scoping rules, which can be found in the [Switch-Case Statements](#scoping-in-switch-blocks) section.
+** 注:** 切换块有一些额外的范围规则,可以在[Switch-Case Statements](#scoping-in-switch-blocks)部分找到.
 
 ## 注解
 
-Monkey C allows associating symbols with class or module methods and variables. Annotations are used to communicate additional intentions to the compiler, and are sometimes used to add new features without changing the Monkey C grammar. For example, Run No Evil tests require annotations to demark sections of code that are meant only for testing:
+子C允许将符号与类或模块方法和变量联系起来.注释用于向编译器传达额外的意图,有时也用于在不改变子C语法的情况下添加新功能.例如,运行无恶测试需要注释来区分仅用于测试的代码部分:
 
 ```cpp
 // A test class containing a Run No Evil test method denoted by (:test)
@@ -1171,22 +1171,22 @@ class TestMethods {
 }
 ```
 
-The following annotations have special meanings to the Monkey C compiler:
+下列注释对子C编译器具有特殊意义:
 
 **:background**
 
-Denotes code blocks available to the [Background](/connect-iq/api-docs/Toybox/Background/) process.
+表示[Background](/connect-iq/api-docs/Toybox/Background/)过程可用的代码区块.
 
 **:debug**
 
-Code blocks decorated with this annotation will not be included in release builds at compile time.
+在编译时,以此注释装饰的代码块不会被包含在发布构建中.
 
 **:release**
 
-Code blocks decorated with this annotation will not be included in debug builds at compile time.
+在编译时,用此注释装饰的代码区块不会被包含在调试构建中.
 
 **:test**
 
-Denotes code blocks available to the [Test](/connect-iq/api-docs/Toybox/Test/) module for [Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing) tests
+表示[Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing)测试[Test](/connect-iq/api-docs/Toybox/Test/)模块可用的代码块
 
-For reference, annotations are written into the `debug.xml` file generated in a project's 'bin' directory by the compiler when a project is built.
+编译器在构建项目时将注释写入项目"bin"目录中生成的`debug.xml`文件中.

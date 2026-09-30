@@ -3,48 +3,48 @@ title: "Coding Conventions"
 ---
 # 编码约定
 
-Here are guidelines for Monkey C code:
+以下是子C代码的指南:
 
 ## Naming
 
--   Modules and Classes are camel-cased with the first letter in upper case.
+- 模块和课程以大字母上写的第一字母.
 
--   Functions are camel-cased with the first letter always being lower case.
+- 函数是 lower驼的,第一个字母总是小字母.
 
--   Private class member variables are camel cased with the first character being an underscore (\_) and then the first letter lower case.
+- 私人类成员变量是驼,第一字母是下标 (\_) 然后是第一字母小字母.
 
--   Public class member variables are camel cased with the first letter lower case.
+- 公共类成员变量是 lower驼子,第一字母是小字母.
 
--   Module variables should be camel cased with a lower cased first letter
+- 模块变量应以下面的第一字母
 
--   Enums must have a common prefix, e.g. *COLOR\_RED*, *COLOR\_BLUE*.
+- 号必须有一个共同的前,例如*COLOR\_RED*, *COLOR\_BLUE*.
 
--   In POMO (Plain Old Monkey C Objects) it is okay to have all public members.
+- 在POMO (平坦的老子C对象) 中,所有公众成员都可以.
 
 
 ## Source
 
--   Put one class per Monkey C source file.
+- 每个 source子C源文件上放一个类.
 
--   Monkey C code should use spaces aligned four spaces per indent level. The Monkey C editor will automatically convert spaces to tabs and remove trailing white space.
+- 子C代码应使用每分数水平均排列4个空间的空间. editor子C编辑器将自动将空间转换为标签,并删除后落的白空间.
 
--   When defining modules, classes, functions, and enums, put the opening brace on the same line as the definition and the closing brace aligned with the first character as the definition.
+- 在定义模块,类别,函数和组时,将开放式放在与定义相同的线上,并将关闭式与定义的第一个字符一致.
 
 
 ## Definitions
 
--   Avoid pure global variables when possible.
+- 尽可能避免纯粹的全球变量.
 
--   Because modules are not purely lexical and have runtime memory cost, putting class definitions into the global module is acceptable.
+- 由于模块不是纯粹的词汇和运行时间内存成本,因此将类定义纳入全球模块是可接受的.
 
--   Avoid having public static members in class definitions; instead move those definitions into the parent module.
+- 避免在类定义中具有公共静态成员; 相反,将这些定义转移到母模块中.
 
--   In the first line of your class initialize function, always call the superclass initialize.
+- 在你的类初始函数的第一个行,总是叫超级类初始.
 
 
 ## Sample
 
-Here is a sample:
+这里有一个样本:
 
 ```cpp
 class SampleName extends Toybox.Application.AppBase
