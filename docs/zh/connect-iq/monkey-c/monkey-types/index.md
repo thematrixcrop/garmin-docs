@@ -39,8 +39,8 @@ using Toybox.System;
 var globalX as Lang.Number = 0;
 
 function hasANumber() {
-    globalX = 2;  // Allowed
-    globalX = "2"; // Not allowed
+    globalX = 2;  // 允许
+    globalX = "2"; // 不允许
     System.println("globalX = " + globalX);
 }
 ```
@@ -56,8 +56,8 @@ using Toybox.System;
 var globalX as Lang.Number or Lang.String = 0;
 
 function hasANumber() {
-    globalX = 2;  // Allowed
-    globalX = "2"; // Allowed
+    globalX = 2;  // 允许
+    globalX = "2"; // 允许
     System.println("globalX = " + globalX);
 }
 ```
@@ -72,14 +72,14 @@ function hasANumber() {
 import Toybox.Lang;
 import Toybox.System;
 
-// Import lets you say goodbye to
-// module prefixes
+// import 让你可以告别
+// 模块前缀
 var globalX as Number or String = 0;
 
 function hasANumber() {
-    globalX = 2;  // Allowed
-    globalX = "2"; // Allowed
-    // Still require prefixes in code
+    globalX = 2;  // 允许
+    globalX = "2"; // 允许
+    // 代码中仍然需要前缀
     System.println("globalX = " + globalX);
 }
 ```
@@ -124,17 +124,17 @@ Void 类型只用于返回值，表示函数不返回值，也表示调用方不
 import Toybox.Lang;
 
 function doNothing() as Void {
-    // Compiler error - this is failing to
-    // do nothing.
+    // 编译器错误 - 此处未能
+    // 什么都不做。
     return true;
 }
 
 function doSomething() as String {
-    // Compiler error - cannot assign value
-    // from a function that returns nothing
+    // 编译器错误 - 无法从
+    // 不返回任何值的函数中赋值
     var x = doNothing();
-    // Compiler error - doSomething should
-    // return a String
+    // 编译器错误 - doSomething 应该
+    // 返回 String
 }
 ```
 
@@ -176,10 +176,10 @@ function processSheep(baa as Sheep) {
 }
 
 function example() {
-    // Allowed
+    // 允许
     processSheep(new Sheep());
     processSheep(new BlackSheep());
-    // Not allowed
+    // 不允许
     processSheep(new Wool());
 }
 ```
@@ -212,10 +212,10 @@ function subtract(a as Numeric, b as Numeric) as Numeric {
 }
 
 function doWork() {
-    // Allowed
+    // 允许
     var x as Addable = add("1", "2");
-    // Not allowed; Addable has String which is
-    // not within Numeric
+    // 不允许；Addable 包含 String，而它
+    // 不属于 Numeric
     var y as Numeric = subtract(x, 2);
 }
 ```
@@ -233,7 +233,7 @@ typedef LittleBoys as interface {
     var puppyDogTails as Array<PuppyDogTails>;
 };
 
-// Implements LittleBoys interface
+// 实现 LittleBoys 接口
 class MaleChild {
     var frogs as Array<Frogs>;
     var snails as Array<Snails>;
@@ -244,7 +244,7 @@ class MaleChild {
 类无需额外的修饰即可实现 Interface，因此可以在函数参数中定义匿名 Interface。
 
 ```typescript
-// Processing
+// 处理
 function example(you as interface {
     var frogs as Array<Frogs>;
 })
@@ -267,11 +267,11 @@ Monkey C 目前不会推断容器类型，因此需要显式声明容器。要�
 
 ```typescript
 class ContainerClass {
-    // Array of 10 items that takes only numbers
+    // 只接受数字的 10 项数组
     var typedArray as Array<Number> = new Array<Number>[10];
-    // Initialized array
+    // 已初始化的数组
     var initializedArray as Array<Number> = [1, 2, 3, 4, 5] as Array<Number>;
-    // Initialized dictionary
+    // 已初始化的字典
     var initializedDictionary as Dictionary<String, String> = {"this"=>"that"} as Dictionary<String, String>;
 }
 ```
@@ -307,8 +307,8 @@ function sumArray(x as Array<Numeric>) as Number {
 }
 
 function sumThisTuple() as Number{
-    // This should pass type checking because the
-    // Tuple [Number, Number... ] should be an instanceOf Array<Numeric>
+    // 这应该通过类型检查，因为
+    // Tuple [Number, Number... ] 应该是 Array<Numeric> 的实例
     return sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 }
 ```
@@ -317,8 +317,8 @@ Tuple 类型也更具可变性。底层数组发生变化时，只要类型系�
 
 ```typescript
 function foo(x as [Number, Number, Number]) as [Number, Number, Number] {
-    x[1] = "Hello"; // Allowed, type is now [Number, String, Number]
-    return x; // Error, type mismatch
+    x[1] = "Hello"; // 允许，类型现在是 [Number, String, Number]
+    return x; // 错误，类型不匹配
 }
 ```
 
@@ -360,7 +360,7 @@ enum Dog {
 }
 
 function getDogName(dog as Dog) as String {
-    // Return the dog name
+    // 返回狗的名称
     return dog.toString();
 }
 ```
@@ -455,16 +455,14 @@ function handleCat(cat as Cat, here as Array, there as Array, everywhere as Arra
 
 function eieio() {
     var here = [], there = [], everywhere = [];
-    // Animal will be typed as a Dog based
-    // on the assignment. No need to declare
-    // its type
+    // 根据赋值，Animal 的类型将是 Dog。
+    // 无需声明其类型
     var animal = new OldMacDonaldsFarm.Dog();
-    // Allowed, animal is currently assigned a Dog value
+    // 允许，animal 当前被赋予 Dog 值
     handleDog(animal, here, there, everywhere);
-    // Animal will now be typed as a Cat based on
-    // the assignment
+    // 根据赋值，Animal 的类型现在将是 Cat
     animal = new OldMacDonaldsFarm.Cat();
-    // Allowed, animal is currently assigned a Cat value
+    // 允许，animal 当前被赋予 Cat 值
     handleCat(animal, here, there, everywhere);
 }
 ```
@@ -480,8 +478,8 @@ function process(a as Boolean) as Boolean? {
     if(a) {
         x = true;
     }
-    // At this point, x is now the poly type
-    // Boolean or Null
+    // 此时，x 的多类型为
+    // Boolean 或 Null
     return x;
 }
 ```
@@ -498,9 +496,9 @@ class A {
 
 function process() {
     var a = new A();
-    a.foo(); // Allowed
-    a.bar(); // Allowed
-    a.fonz(); // Not allowed
+    a.foo(); // 允许
+    a.bar(); // 允许
+    a.fonz(); // 不允许
 }
 ```
 
@@ -511,9 +509,9 @@ import Toybox.Lang;
 
 function example() {
     var a = {} as Dictionary<String, String>;
-    a["key"] = "value" // <-- Assignments to a's value must obey type
+    a["key"] = "value" // <-- 对 a 的值进行赋值必须遵守类型
 
-    a = null; // <-- a is Any and can be assigned to null
+    a = null; // <-- a 是 Any，可以赋值为 null
 }
 ```
 
@@ -525,7 +523,7 @@ function example() {
 import Toybox.Lang;
 
 function isTrue() as Boolean {
-    return "true"; // Not allowed
+    return "true"; // 不允许
 }
 ```
 
@@ -539,11 +537,11 @@ function isTrue() as Boolean {
 import Toybox.Lang;
 
 function foo(a) as Integer? {
-    // a is of type Any, so Monkey Types can't identify what doThis() is being called
+    // a 的类型是 Any，因此 Monkey Types 无法确定调用的是哪个 doThis()
     var x = a.doThis();
-    // x is of type Any, so we can't know what the result type is
+    // x 的类型是 Any，因此我们无法知道结果类型
     var y = x + 3;
-    // What is Y? What is Why? What is Love?
+    // Y 是什么？Why 是什么？Love 是什么？
     return y;
 }
 ```
@@ -622,12 +620,11 @@ function handleCandleStick(jack as Nimble or Quick) {
 ```java
 public boolean foo(SomeInterfaceType x) {
     if(x instanceof SomeConcreteType) {
-        // My life will just be easier if I make
-        // a new variable, even though it should
-        // be possible to assume that x is
-        // a SomeConcreteType
+        // 如果创建一个新变量，事情会容易很多，
+        // 尽管本应可以假设 x 是
+        // SomeConcreteType
         SomeConcreteType y = (SomeConcreteType)x;
-        // Do operations on y
+        // 对 y 执行操作
     }
 }
 ```
@@ -639,9 +636,9 @@ import Toybox.Lang;
 
 public function foo(x as Number?) as Boolean {
     if(x != null) {
-        // Within this block assume x is Number and not null
+        // 在此代码块中，假设 x 是 Number 且不为 null
     } else {
-        // Within this block assume x is null
+        // 在此代码块中，假设 x 为 null
     }
 }
 ```
@@ -668,12 +665,11 @@ import Toybox.Lang;
 typedef Addable as Number or Float or Long or Double or String;
 
 public function foo(x as Addable?) {
-    // In the first clause, x is modified to remove the null
-    // from the poly type. In the second clause, the new polytype
-    // is modified to be a String concrete type.
+    // 在第一个子句中，x 被修改为从多类型中移除 null。
+    // 在第二个子句中，新的多类型被修改为 String 具体类型。
     if(x != null &&
        x instanceof String) {
-        // Within this block assume x is a string
+        // 在此代码块中，假设 x 是字符串
     }
 }
 ```
@@ -688,7 +684,7 @@ typedef Addable as Number or Float or Long or Double or String;
 public function foo(x as Addable?) {
     if(x instanceof Number ||
        x instanceof Float) {
-        // Within this block assume x is a Number or Float
+        // 在此代码块中，假设 x 是 Number 或 Float
     }
 }
 ```
@@ -701,16 +697,16 @@ public function foo(x as Addable?) {
 
 ```typescript
 class Example {
-    // Member variable
+    // 成员变量
     private var _x as Number = 0;
 
-    // Enum values can be explicitly assigned, or by default will
-    // be numerically incremented values.
+    // 可以显式分配枚举值，否则默认使用
+    // 按数字递增的值。
     enum NamedEnum {
         NAMED_ENUM;
     }
 
-    // Constants assume their type by assignment
+    // 常量通过赋值推断其类型
     private const _constant = "Constant";
 }
 ```
@@ -721,7 +717,7 @@ class Example {
 import Toybox.Lang;
 import Toybox.System;
 
-// Don't shoot
+// 请勿射击
 class Messenger {
     private var _message as String;
 
@@ -737,12 +733,12 @@ class Messenger {
 import Toybox.Lang;
 import Toybox.System;
 
-// Don't shoot
+// 请勿射击
 class Messenger {
     private var _message as String;
 
     public function initialize() {
-       // Initialize message
+       // 初始化消息
         _message = "";
     }
 
