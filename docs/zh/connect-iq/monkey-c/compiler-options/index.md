@@ -13,7 +13,7 @@ title: "Compiler Options"
 | `-g` | `--debug` | 无 |打印了故障输出.|
 | `-h` | `--help` | 无 |打印帮助信息.|
 | `-k` | `--profile` | 无 |在执行式中包含配置文件信息.当一个配置文件信息的执行式在设备上运行时,设备将生成可在模拟器中分析的配置文件信息.|
-| `-l` | `--typecheck` |`0`=关闭,`1`=渐进,`2`=信息,`3`=严格| See the [Monkey Types](/connect-iq/monkey-c/monkey-types/) section 更多信息. |
+| `-l` | `--typecheck` |`0`=关闭，`1`=渐进，`2`=信息，`3`=严格| 更多信息请参阅 [Monkey Types](/connect-iq/monkey-c/monkey-types/) 一节。 |
 | `-o` | `--output` |文件输出|**要求**. 指定编译器的输出.|
 | `-O` | `--optimization` |`0`= 没有,`1`= 基本,`2`= 快速优化,`3`= 缓慢优化,`p`= 性能优化,`z`= 代码空间优化|默认是`1`用于调试中构建,`2`用于释放中构建. 数字级别可以用字母补充,因此`-O 2pz`是允许的参数.|
 | `-r` | `--release` | 无 | 不要将调试信息包含在 PRG 中。 |

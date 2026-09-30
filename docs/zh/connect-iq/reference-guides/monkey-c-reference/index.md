@@ -41,47 +41,47 @@ Monkey C 还支持两种容器类型：
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-| `and` |逻辑 AND,相当于`&&`| 请参阅 [Logical Operators](#logical-operators) |
-| `as` |指定一个以`using`语句表示的模块的号| 请参阅 [Using Statements](#using-statements) |
-| `break` |从循环或开关区块中脱| 请参阅 [Loops](#loops) 和 [Switch-Case Statements](#switch-case-statements) |
-| `catch` |抓住一个抛出的[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)| 请参阅 [Exception Handling](#exception-handling) |
-| `case` |指定`switch`区块中的一个案例| 请参阅 [Switch-Case Statements](#switch-case-statements) |
-| `class` |宣布一个新的类型| 请参阅 [Classes and Objects](#classes-and-objects) |
-| `const` |声明一个新的常数| 请参阅 [Constants](#constants) |
-| `continue` |继续执行电流,主要在循环中使用| 请参阅 [Loops](#loops) |
-| `default` |在`switch`区块中指定默认案例| 请参阅 [Switch-Case Statements](#switch-case-statements) |
-| `do` |启动`do`循环| 请参阅 [Loops](#loops) |
-| `else` |在`if`区块中指定一个替代案例| 请参阅 [If Statements](#if-statements) |
-| `enum` |声明一个新的清单| 请参阅 [Enumerations](#enumerations) |
-| `extends` |声明从另一个类中继承的类型| 请参阅 [Classes and Objects](#classes-and-objects) |
-| `false` | 逻辑 `false` | 请参阅 [If Statements](#if-statements) |
-| `finally` |指定一个代码区块,在`try`区块中总是执行| 请参阅 [Exception Handling](#exception-handling) |
-| `for` |启动`for`循环| 请参阅 [Loops](#loops) |
-| `function` |声明一个新函数| 请参阅 [Functions](#functions) |
-| `has` |检查对象是否具有特定的符号| 请参阅 [Instanceof and Has](#instanceof-and-has) |
-| `hidden` |指定一个受保护对象成员,相当于`protected`| 请参阅 [Data Hiding](#data-hiding) |
-| `if` |启动一个`if`区块| 请参阅 [If Statements](#if-statements) |
-| `instanceof` |检查对象类型| 请参阅 [Instanceof and Has](#instanceof-and-has) |
-| `me` |参照当前的对象实例| 请参阅 [Classes and Objects](#classes-and-objects) |
-| `module` |声明一个新的模块| 请参阅 [Modules](#modules) |
-| `NaN` |无效或未定义的值",不是数字"| 不适用 |
+| `and` |逻辑 AND，等价于 `&&`| 请参阅[逻辑运算符](#logical-operators) |
+| `as` |指定使用 `using` 语句导入的模块| 请参阅[using 语句](#using-statements) |
+| `break` |退出循环或 `switch` 代码块| 请参阅[循环](#loops)和 [Switch-Case 语句](#switch-case-statements) |
+| `catch` |捕获抛出的 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)| 请参阅[异常处理](#exception-handling) |
+| `case` |指定 `switch` 代码块中的一个分支| 请参阅 [Switch-Case 语句](#switch-case-statements) |
+| `class` |声明新类型| 请参阅[类和对象](#classes-and-objects) |
+| `const` |声明新常量| 请参阅[常量](#constants) |
+| `continue` |继续执行当前循环的下一次迭代| 请参阅[循环](#loops) |
+| `default` |在 `switch` 代码块中指定默认分支| 请参阅 [Switch-Case 语句](#switch-case-statements) |
+| `do` |启动 `do` 循环| 请参阅[循环](#loops) |
+| `else` |在 `if` 代码块中指定备用分支| 请参阅 [if 语句](#if-statements) |
+| `enum` |声明新枚举| 请参阅[枚举](#enumerations) |
+| `extends` |声明继承自另一个类的类型| 请参阅[类和对象](#classes-and-objects) |
+| `false` |逻辑值 `false`| 请参阅 [if 语句](#if-statements) |
+| `finally` |指定总是在 `try` 代码块中执行的代码块| 请参阅[异常处理](#exception-handling) |
+| `for` |启动 `for` 循环| 请参阅[循环](#loops) |
+| `function` |声明新函数| 请参阅[函数](#functions) |
+| `has` |检查对象是否具有特定符号| 请参阅 [instanceof 和 has](#instanceof-and-has) |
+| `hidden` |指定受保护的对象成员，作用等同于 `protected`| 请参阅[数据隐藏](#data-hiding) |
+| `if` |启动 `if` 代码块| 请参阅 [if 语句](#if-statements) |
+| `instanceof` |检查对象类型| 请参阅 [instanceof 和 has](#instanceof-and-has) |
+| `me` |引用当前对象实例| 请参阅[类和对象](#classes-and-objects) |
+| `module` |声明新模块| 请参阅[模块](#modules) |
+| `NaN` |无效或未定义的值，表示“不是数字”| 不适用 |
 | `native` |用于内部使用| 不适用 |
-| `new` |创建一个对象的新实例| 请参阅 [Miscellaneous Operators](#miscellaneous-operators) |
-| `null` |一个零值| 请参阅 [Declaring Variables](#declaring-variables) |
-| `or` |〇等于 `的逻辑 OR||` | 请参阅 [Logical Operators](#logical-operators) |
-| `private` |指定一个私有对象成员| 请参阅 [Data Hiding](#data-hiding) |
-| `protected` |指定受保护对象成员| 请参阅 [Data Hiding](#data-hiding) |
-| `public` |指定一个公共对象成员| 请参阅 [Data Hiding](#data-hiding) |
-| `return` |指定从函数返回值| 请参阅 [Functions](#functions) |
-| `self` |参照当前的对象实例| 请参阅 [Classes and Objects](#classes-and-objects) |
-| `static` |声明静态变量或函数| 请参阅 [Static Members](#static-members) |
-| `switch` |启动一个`switch`区块| 请参阅 [Switch-Case Statements](#switch-case-statements) |
-| `throw` |放一个例外| 请参阅 [Exception Handling](#exception-handling) |
-| `true` | 逻辑 `true` | 请参阅 [If Statements](#if-statements) |
-| `try` |启动一个试捕区块来处理例外| 请参阅 [Exception Handling](#exception-handling) |
-| `using` |进口用于应用程序的模块| 请参阅 [Using Statements](#using-statements) |
-| `var` |声明一个新的变量| 请参阅 [Declaring Variables](#declaring-variables) |
-| `while` |启动新的`while`循环或设置`do`循环的条件| 请参阅 [Loops](#loops) |
+| `new` |创建对象的新实例| 请参阅[其他运算符](#miscellaneous-operators) |
+| `null` |空值| 请参阅[声明变量](#declaring-variables) |
+| `or` |逻辑 OR，等价于 `||`| 请参阅[逻辑运算符](#logical-operators) |
+| `private` |指定私有对象成员| 请参阅[数据隐藏](#data-hiding) |
+| `protected` |指定受保护对象成员| 请参阅[数据隐藏](#data-hiding) |
+| `public` |指定公共对象成员| 请参阅[数据隐藏](#data-hiding) |
+| `return` |指定函数返回值| 请参阅[函数](#functions) |
+| `self` |引用当前对象实例| 请参阅[类和对象](#classes-and-objects) |
+| `static` |声明静态变量或函数| 请参阅[静态成员](#static-members) |
+| `switch` |启动 `switch` 代码块| 请参阅 [Switch-Case 语句](#switch-case-statements) |
+| `throw` |抛出异常| 请参阅[异常处理](#exception-handling) |
+| `true` |逻辑值 `true`| 请参阅 [if 语句](#if-statements) |
+| `try` |启动用于处理异常的 `try` 代码块| 请参阅[异常处理](#exception-handling) |
+| `using` |导入供应用使用的模块| 请参阅[using 语句](#using-statements) |
+| `var` |声明新变量| 请参阅[声明变量](#declaring-variables) |
+| `while` |启动新的 `while` 循环，或设置 `do` 循环的条件| 请参阅[循环](#loops) |
 
 ### 运算符
 
@@ -111,6 +111,8 @@ Monkey C 还支持两种容器类型：
 | `<` |检查左边操作数是否小于右边操作数|`a < b`是`false`|
 | `>=` |检查左边操作数是否大于右边操作数或等于右边操作数|`a >= b`是`false`|
 | `<=` |检查左边操作数是否小于右边操作数|`a <= b`是`false`|
+
+<a id="logical-operators"></a>
 
 #### 逻辑运算符
 
@@ -172,6 +174,8 @@ Monkey C 还支持两种容器类型：
 | `|=` |对左操作数和右操作数执行按位或，并将结果赋给左操作数| `x |= y` 等价于 `x = x | y`（1）|
 | `^=` |位向 XOR 右操作数与左操作数,并将结果分配到左操作数|`x ^= y`相当于`x = x ^ y`(1)|
 
+<a id="miscellaneous-operators"></a>
+
 #### 其他运算符
 
 | 运算符 | 说明 | 示例 |
@@ -215,6 +219,8 @@ using Toybox.System;
 System.println("Hello World!");  // This comment shares a line with code that will execute
 ```
 
+<a id="declaring-variables"></a>
+
 ### 声明变量
 
 所有变量必须在使用 `var` 关键字之前声明。由于 Monkey C 是[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，因此无需为每个变量声明类型。
@@ -233,6 +239,8 @@ var arr = new[10];     // Create a new array; since the values are unassigned, t
 var z = arr[0] + 5;    // Attempt to add a Number to a null array element. UnexpectedTypeException!
 ```
 
+<a id="constants"></a>
+
 ### 常量
 
 常数以`const`关键字声明,它们是名字的,可支持所有基本数据类型的不可变值.这些值对于存储可重复使用的不变值来有用.常数必须在模块或类级别上声明,并且不能在函数内声明.重要的是,`const`以类似Java的`final`关键字的方式运行.例如,`const`数组可以防止数组被新实例取代,但数组的元素可以被修改.
@@ -242,6 +250,8 @@ const PI = 3.14;
 const EAT_BANANAS = true;
 const BANANA_YELLOW = "#FFE135";
 ```
+
+<a id="symbols"></a>
 
 ### 符号
 
@@ -264,6 +274,8 @@ var person = {:title=>"George", :name=>"Taylor"};
 ```
 
 符号的另一个重要用途是引用[Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function)的调用方法实现或在[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)的调用后分配.在这种情况下,如果已实现`myMethod{...}`的方法,可以使用`:myMethod`的符号引用它作为调用后.查看[Callbacks](#callbacks)的部分,以了解更多详细的例子.
+
+<a id="enumerations"></a>
 
 ### 枚举
 
@@ -385,7 +397,9 @@ var monkeyContinents = {
 
 ## 流程控制
 
-###如果声明
+<a id="if-statements"></a>
+
+### if 语句
 
 在子C中,`if`语句是可用的流量控制语句中最基本的语句.它们用于执行特定部分的代码 *只有*如果特定的布尔式表达式评估为`true`.由`if`语句评估的表达式不能是赋值.将评估为`true`的值或对象包括:
 
@@ -453,6 +467,8 @@ var result = testExpression ? whenTrueExpression : whenFalseExpression
 // If 'a' is true, 'myValue' is assigned a value of 1; otherwise, it is assigned a value of 2.
 var myValue = a ? 1 : 2;
 ```
+
+<a id="switch-case-statements"></a>
 
 ### Switch-Case 语句
 
@@ -537,6 +553,8 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 
 决定是否使用`switch`而不是`if`通常是个人偏好的问题.在某些情况下,交换区块可能更可读,特别是当有相对大量的案例需要考虑时.根据特定应用程序的需求,落后也可以是一个有用的工具.
 
+<a id="scoping-in-switch-blocks"></a>
+
 #### Switch 代码块中的作用域
 
 在 switch 代码块中声明的变量，其作用域为整个 switch 代码块。也可以在 case 代码块中使用花括号包围变量，将其作用域限制在该 case 代码块内。在后续 `case` 语句中使用 switch 代码块级别声明的变量之前，必须先完成初始化。例如：
@@ -566,6 +584,8 @@ switch (myValue) {
         var b = a;
 }
 ```
+
+<a id="loops"></a>
 
 ### 循环
 
@@ -616,6 +636,8 @@ for (var i = 0; i < 10; i += 1) {
 }
 ```
 
+<a id="exception-handling"></a>
+
 ### 异常处理
 
 子C支持结构化[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理,以防止`try-catch`块的非致命错误:
@@ -649,6 +671,8 @@ throw new Lang.Exception();
 ```
 
 如果不处理例外,运行时会出现 *未处理的例外* 错误.连接 IQ API 在一些实例中会抛出例外,如[Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)和[Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). 查看[API 文档](/connect-iq/api-docs/)有关各种[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)类型的更多详情.
+
+<a id="functions"></a>
 
 ## 函数
 
@@ -699,6 +723,8 @@ function myOtherFunction() {
     // Do some other stuff with the result here
 }
 ```
+
+<a id="classes-and-objects"></a>
 
 ## 类和对象
 
@@ -831,6 +857,8 @@ mySphere.describe();                          // "I'm a Sphere! My parent is a C
 
 注意从Sphere的`describe()`方法直接使用母类的符号来调用母类的`describe()`方法.`superclass.memberMethod()`在子C中有效,但`superclass.memberVariable`语法不支持.
 
+<a id="static-members"></a>
+
 ### 静态成员
 
 在某些情况下,某些类成员需要在对象内访问,而不需要创建对象的实例.例如,想象一下只包含单元转换常数的单元转换类:
@@ -881,6 +909,8 @@ System.println(bunchOne.mNumberOfBananas); // 12
 System.println(bunchTwo.mNumberOfBananas); // 12 - notice this one also reflects the change!
 ```
 
+<a id="data-hiding"></a>
+
 ### 数据隐藏
 
 类成员有三个访问级别*私*,*保护*,和*公共*.`private`修改器指定了成员只能在自己的类中访问.`protected`修改器指定了成员只能通过自己的类或其子类访问.`hidden`关键字是`protected`关键字的同义词.一个`public`访问修改器是默认的,但也可以明确指定.当`public`修改器用于列表,变量或函数时,这些成员可见于所有其他类.
@@ -908,7 +938,9 @@ var y = self.mMemberVariable;
 
 **注：**隐藏数据只能用于类成员级别。Monkey C 中的[模块](#modules)没有隐藏数据的概念，而[类](#classes-and-objects)始终是公开的。
 
-### Instanceof 和 Has
+<a id="instanceof-and-has"></a>
+
+### instanceof 和 has
 
 子C提供两个运营商进行运行时间类型检查,需要特别注意:`instanceof`和`has`.子C的对象导向设计模式与`has`和`instanceof`运营商结合,可以在一个代码库中实现许多设备的软件.
 
@@ -1010,6 +1042,8 @@ if (weakReference.stillAlive()) {
 
 记住只能在必要范围内保持强烈的参考!
 
+<a id="modules"></a>
+
 ## 模块
 
 子C模块的目的类似于Java包,但可以包含变量,函数,类型和其他模块:
@@ -1030,7 +1064,9 @@ function myFunction() {
 
 常见的是,静态方法存在于模块层面,而不是属于特定类别.与类别不同,模块没有遗传或隐藏数据的概念 (模块不支持`extends`和`hidden`关键字).
 
-### Using 语句
+<a id="using-statements"></a>
+
+### using 语句
 
 模块可以通过`using`关键字进口到另一个类或模块中,将模块扩展到它们定义的类或模块.
 

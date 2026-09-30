@@ -7,7 +7,7 @@ title: "Using Monkey C from the Command Line"
 
 ## OS X 安装
 
-1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
+1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
 2. 将`PATH`指向终端的Connect IQbin目录.暂时将其添加到单个本地实例中:
 
@@ -31,7 +31,7 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 
 ## Windows 安装
 
-1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
+1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
 2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
 
@@ -43,7 +43,7 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 
 ## Linux 安装
 
-1.[Install the Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/),下载SDK,设置主动SDK.
+1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
 2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
 
