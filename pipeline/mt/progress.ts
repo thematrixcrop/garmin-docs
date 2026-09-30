@@ -141,6 +141,8 @@ const TYPE_PAIR = /^[A-Za-z][A-Za-z0-9_.]*(?:, [A-Za-z][A-Za-z0-9_.]*)+$/;
 function check(out: string[], raw: string): void {
   let s = raw.trim().replace(/\*\*/g, '');
   if (!s) return;
+  // API member signatures retain English type syntax after links are removed.
+  if (/^(?:var\s+)?[A-Za-z_][A-Za-z0-9_]*(?:\(\))?\s+as(?:\s+or\s+Null)?$/.test(s)) return;
   if (/^<[^>]+>$/.test(s)) return; // raw HTML such as an anchor tag
   // A quoted fragment is a sample value, not prose ("What's the deal?").
   if (/^["“'][^"”']*["”']$/.test(s)) return;
