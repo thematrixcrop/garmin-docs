@@ -1,68 +1,68 @@
 ---
 title: "Welcome to Connect IQ"
 ---
-# Welcome to Connect IQ
+# 欢迎来到"连接智能"
 
-Connect IQ combines three W's:
+连接智能结合了三个W:
 
--   **Wear** - Garmin devices don't live on a desk or in a pocket. Rather, they are worn on wrists or mounted to bicycles to help our users beat yesterday. Garmin's experience in power management, activity tracking and [ANT or ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/) sensors means our users will spend more time using the products and less time charging them.
+- ** 穿着** - - Garmin设备不会在桌子上或口袋里生活.相反,它们被戴在手腕上或安装在自行车上,以帮助我们的用户击败昨天.Garmin在电力管理,活动跟踪和[ANT or ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/)传感器方面的经验意味着我们的用户将花更多的时间使用产品而不是更少的时间充电.
 
--   **Where** - Location awareness is at the center of our products. While they are still highly functional devices even when not paired with a smart phone, initiating this pairing process will unlock a world of new features and functions for your Garmin device.
+虽然它们仍然是高功能设备,即使没有与智能手机相对,但启动这种配对过程将为您的Garmin设备释放一系列新的功能.
 
--   **Ware** - Garmin's new Connect IQ app system allows for developers to extend their apps into Garmin's wearable ecosystem.
+- **警告** - Garmin的新的Connect IQ应用程序系统允许开发人员将他们的应用程序扩展到Garmin的可穿戴生态系统.
 
 
-Connect IQ products provide the best of what Garmin has to offer like beautiful design, location awareness, and efficient power management with the Connect IQ app system. Using the Connect IQ SDK, developers can create apps for Connect IQ devices and distribute them via the Connect IQ Store.
+连接智商产品提供了Garmin提供的最好的设计,位置意识和高效的电力管理.使用Connect IQ SDK,开发人员可以为Connect IQ设备创建应用程序,并通过Connect IQ商店发行它们.
 
-Connect IQ apps are created in Monkey C, an object-oriented language designed for easy app development. The goal of Monkey C is to simplify the app building process, letting developers focus more on the customer and less on resource constraints. It uses reference counting to automatically clean up memory, freeing you from focusing on memory management. In addition, the resource compiler helps you import fonts and images to easily convert them between devices. If you've worked with dynamic languages in the past like Java™, PHP, Ruby or Python™, Monkey C should be very familiar.
+连接智商应用程序是在Monkey C中创建的,这是一个针对对象的语言,旨在简单开发应用程序.Monkey C的目标是简化应用程序构建过程,让开发人员更多地关注客户而不关注资源限制.它使用引用计数来自动清理内存,使您免于专注于内存管理.此外,资源编译器可以帮助您导入字体和图像,以便轻松地将它们在设备之间转换.如果你过去曾使用过JavaTM,PHP,Ruby或PythonTM等动态语言,Monkey C应该非常熟悉.
 
 ## Devices and APIs
 
-The problem of *API fragmentation* is a challenge for app developers. If a developer takes advantage of new APIs, newer devices with less customer penetration may be targeted. If only established APIs are used, apps may not take advantage of new capabilities.
+*API碎片化*问题对应用程序开发者来说是一个挑战.如果开发者利用新的API,则可能会针对较少客户透的新设备.如果只使用已建立的API,则应用程序可能不会利用新的功能.
 
-Garmin devices each have some differences you'll need to account for: round screens versus square screens, touch screens versus buttons, and a different array of sensors depending on the device purpose. While the Java philosophy of "write once run anywhere" is a notable goal, creating a universal API that crosses every Garmin device would inevitably become a lowest common denominator API.
+每个Garmin设备都有一些差异:圆屏与方形屏,触摸屏与按,以及根据设备目的不同的传感器阵列.虽然Java的"写一次运行到任何地方"的哲学是一个显著的目标,但创建一个跨越每个Garmin设备的通用API必然会成为最低的共同分母API.
 
-Rather than attempting to abstract away differences in devices, Connect IQ APIs are tailored to the devices they run on. If a device has a magnetometer, the device should have available the Magnetometer API. If two devices each have a magnetometer, the API should be the same between them. If a device does not have a magnetometer, it will not provide that API.
+与其试图抽象设备中的差异,Connect IQ API是根据运行的设备进行定制的.如果设备有磁测量器,该设备应该有磁测量器 API.如果两个设备都有磁测量器,则该 API 应在它们之间相同.如果设备没有磁测量器,它不会提供该 API.
 
-To see the Connect IQ compatible devices and their capabilities go to the [Device Reference](/connect-iq/device-reference/#device-reference) section .
+查看连接IQ兼容的设备及其功能,请访问[Device Reference](/connect-iq/device-reference/#device-reference)部分.
 
 ## System versus API Level
 
-Connect IQ uses two versions : the *API level* and the *system number*.
+连接IQ使用两个版本: *API级别*和 *系统号码*.
 
-The *API level* is a three number (`major.minor.micro`) version that dictates the *potential* APIs that a device supports. As stated above, not every device supports every API, but if a product is at or below an API level it is guaranteed to not support an API.
+*API级别*是一个三号版本 (`major.minor.micro`) 规定设备支持的 *潜在* API.如上所述,并非每个设备都支持每个 API,但如果产品在 API级别或以下,则保证不会支持 API.
 
-The *system number* is a single digit number that is associated with a minimum API level. The system number communicates the set of devices that meet the minimum API level.
+*系统号码*是一个单位数的号码,与最低API级别相关.系统号码通信满足最低API级别的设备集.
 
-Products running the latest system are most likely to get API updates and bug fixes. Products not running the latest system may receive updates when necessary.
+运行最新系统的产品可能会获得API更新和 bug fixes. 不运行最新系统的产品可能会在必要时获得更新.
 
-## The Tao of Connect IQ
+## 连接智商的道#
 
-There is a rhyme and reason behind Monkey C to make it easier for developers to support the Garmin ecosystem of products:
+在"子C"背后,有着一种语和理由,
 
-1.  **The developer chooses what devices to support**
+1. **开发人员选择支持哪些设备**
 
-    Connect IQ apps can run across multiple devices, but the intended devices are up to the developer. Not every device will be aimed at the markets the developer wants to target or provide the experience the developer wants to provide. The developer should not be forced to support devices they don't want to.
+连接智商应用程序可以在多个设备上运行,但预期的设备取决于开发人员. 并非每个设备都将针对开发人员想要的市场或提供开发人员想要提供的体验.开发人员不应该被迫支持他们不想的设备.
 
 2.  **The developer tools should help developers support multiple devices**
 
-    The developer tools lessen the weight of supporting multiple devices. The Resource Compiler hides device specific palettes and orientations from the developer. It also allows per device override of resources, allowing different images, fonts, and page layouts to be specified in the resources XML. The simulator needs to expose only the APIs a particular device supports so the developer can test device support.
+开发人员工具减轻了支持多个设备的重量.资源编译器隐藏了设备特定的板和方向.它还允许每个设备覆盖资源,允许在资源XML中指定不同的图像,字体和页面布局.模拟器只需要暴露特定设备支持的API,以便开发人员可以测试设备支持.
 
 3.  **Similar devices should have similar APIs**
 
-    Not all devices will be equal, but there is often commonality between them. Two different watches may have different display technologies, but they both support bitmaps, fonts, user events, [ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/), and [BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy). A developer writing a sports app should not have to completely rewrite their app to support multiple devices.
+不是所有的设备都是一样的,但它们之间往往存在共同点.两个不同的手表可能具有不同的显示技术,但它们都支持位图,字体,用户事件,[ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/)和[BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy).编写体育应用程序的开发人员不应该完全重新编写他们的应用程序以支持多个设备.
 
-4.  **At runtime, the developer can ask what the system 'has'**
+4. **在运行时,开发人员可以询问系统"有什么"**
 
-    Connect IQ applications are dynamically linked to the system. If an app makes a reference to an API that does not exist on a particular system, the app will fail at runtime when the app references the API, not at load time like C++. This allows an app to avoid making the call by taking advantage of the '`has`' operator.
+连接 IQ 应用程序是动态地与系统链接的.如果应用程序引用一个在特定系统上不存在的 API,应用程序将在运行时失败,当应用程序引用 API,而不是像C++这样的加载时间. 这允许应用程序通过利用"`has`"操作员避免打电话.
 
 
 ## Overview
 
 | Section | Description |
 | --- | --- |
-| [Getting Started](/connect-iq/connect-iq-basics/getting-started/#getting-started) | Step by step instructions for installing the Connect IQ tools |
+| [Getting Started](/connect-iq/connect-iq-basics/getting-started/#getting-started) |步骤指导安装 Connect IQ工具|
 | [Your First App](/connect-iq/connect-iq-basics/your-first-app/#your-first-connect-iq-app) | Create your first watch face using Connect IQ |
-| [App Types](/connect-iq/connect-iq-basics/app-types/#app-types) | Learn about the watch face app type and what must be taken into consideration |
+| [App Types](/connect-iq/connect-iq-basics/app-types/#app-types) |了解手表面部应用程序类型以及必须考虑的内容|
 
-Experienced Connect IQ developers reading this may be wondering if we are attempting to make fetch happen, and the answer is yes. You have to admit that it is pretty fetch.
+经验丰富的Connect IQ开发人员阅读这篇文章,可能会想知道我们是否试图实现搜索,答案是肯定的.

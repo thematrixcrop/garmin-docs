@@ -6,83 +6,83 @@ title: "Getting Started"
 
 ![What is step 3?](/connect-iq/resources/programmers-guide/learning-monkey.png)
 
-## The Connect IQ SDK Manager
+## 连接智能 SDK 管理器
 
-The Connect IQ SDK Manager application keeps your Connect IQ SDK and device library up to date. It will download SDK updates and new devices from the cloud as they become available.
+连接 IQ SDK 管理器应用程序将您的连接 IQ SDK 和设备库保持更新.随着它们的可用性,它将从云中下载 SDK 更新和新设备.
 
-### Installing the Connect IQ SDK Manager
+###安装 Connect IQ SDK 管理器
 
 1.  Go to [developer.garmin.com/connect-iq/sdk](/connect-iq/sdk/)
 
-2.  In the **Install the SDK Manager** section select *Accept & Download*
+2. 在**安装SDK管理器**部分中选择*接受和下载*
 
-3.  Create a new folder in a convenient location
+3. 在一个方便的地方创建一个新的文件
 
-    1.  **Windows and Linux** - Copy the executable and support files to the new folder
+1. **Windows和Linux** - 将可执行和支持文件复制到新的文件
 
-    2.  **Mac** - Open the disk image and copy the SDK manager to the new folder
+2. **Mac** - 打开磁盘图像并将SDK管理器复制到新的文件
 
-4.  Launch the SDK Manager. You should see the following:
+4.启动 SDK 管理器.你应该看到以下内容:
 
 
     ![Launching the SDK Manager](/connect-iq/resources/programmers-guide/sdk-manager-start.png)
 
-5.  Press the **Login** button and enter the credentials of the Connect account:
+5. 按**登录**按,输入连接帐户的凭证:
 
 
     ![Credential entry](/connect-iq/resources/programmers-guide/sdk-manager-login.png)
 
-6.  The SDK Manager can remember your credentials or you can re-enter them every time. Select which option you prefer and press **Next**
+6. SDK 管理器可以记住您的凭证,或者您可以每次重新输入它们.选择您喜欢的选项,然后按 **Next**
 
-7.  You'll be presented with the option of having the Connect IQ SDK update automatically, or to be notified when a new version is available. Select the option you prefer and press **Next**
+7. 您将会有自动更新Connect IQ SDK的选项,或者在新版本可用时会被通知. 选择您喜欢的选项,然后按**Next**
 
 
     ![Update SDK](/connect-iq/resources/programmers-guide/sdk-manager-update-sdk.png)
 
-8.  You'll be presented with the option of having Connect IQ devices update, or to be notified when new devices are available. If you want to update devices automatically, you can choose the types of devices you want updates for. Select the option you prefer and press **Finish**
+8. 您将获得Connect IQ设备更新的选项,或者在新设备可用时被通知.如果您想自动更新设备,您可以选择您想要更新的设备类型. 选择您喜欢的选项,然后按 ** 完成**
 
 
     ![Update devices](/connect-iq/resources/programmers-guide/sdk-manager-update-devices.png)
 
 
-The SDK Manager has two tabs: **SDK** and **Devices**. The SDK tab shows what SDKs are available. Use the ![](/connect-iq/resources/programmers-guide/sdk-manager-download-button.png)
+SDK 管理器有两个标签: **SDK**和 **设备**. SDK 标签显示了 SDK 有哪些.使用![](/connect-iq/resources/programmers-guide/sdk-manager-download-button.png)
 
-#### The Monkey C Visual Studio Code Extension
+##### 子C视觉工作室代码扩展
 
-The Monkey C extension adds support for using the Connect IQ SDK, including a syntax highlighting editor, build integration, and integrated debugger. The Monkey C extension requires [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview), version 11 or higher of the Oracle Java™ Runtime Environment, and Connect IQ SDK version 4.0.6 or higher.
+子C扩展增加了使用Connect IQ SDK的支持,包括语法突出编辑器,构建集成器和集成的调试器.子C扩展需要Oracle JavaTM运行环境的[Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview),版本11或更高,以及Connect IQ SDK版本4.0.6或更高.
 
-##### Installing the Monkey C Extension
+#######安装子C扩展
 
-1.  In Visual Studio Code, go to the *View* > *Extension*
+1. 在视觉工作室代码中,进入 *查看* > *扩展*
 
-2.  In the Extensions Marketplace, search box type "Monkey C"
+2. 在扩展市场中,输入"子C"的搜索框
 
-3.  Select the *Monkey C* extension from Garmin
+3. 从Garmin中选择"子C"扩展
 
-4.  Use the *Install* button to install the extension in Visual Studio Code. This will require a restart of Visual Studio Code.
+4. 使用*安装*按安装Visual Studio Code中的扩展.这需要重新启动Visual Studio Code.
 
-5.  After Visual Studio Code restarts, summon the command palette with *Ctrl + Shift + P* (*Command + Shift + P* on Mac)
+5. 视觉工作室代码重新启动后,请调用*Ctrl + Shift + P* (*在Mac上命令 + Shift + P*)
 
-6.  Type "Verify Installation" and select *Monkey C: Verify Installation*
-
-
-#### Generating a Developer Key
-
-The Connect IQ compiler requires a developer key to sign apps when they're compiled and packaged. The required key must be a RSA 4096 bit private key.
-
-**Note:** It's important you keep track of the key you use to sign app packages. You will need to use the same key to sign updates to an existing app on the store. If you lose your original signing key you will not be able to update your app.
-
-##### Generating a Key Using the Monkey C Extension
-
-If you have a developer key, you can set the path to it by selecting *File > Preferences > Settings > Monkey C* and setting the *Monkey C: Developer Key Path* to your developer key. If you do not have a developer key, you can generate one using the following steps:
-
-1.  Summon the command palette with *Ctrl + Shift + P* (*Command + Shift + P* on Mac)
-
-2.  Type "Generate a developer key" and select *Monkey C: Generate a Developer Key*
-
-3.  Select the directory in which to save your developer key
+6. 输入"验证安装"并选择*子C:验证安装*
 
 
-The developer key specified in the Connect IQ compiler preferences will automatically be passed to the compiler when a project is compiled.
+#####生成一个开发钥匙
+
+连接 IQ 编译器需要开发者密钥来签署应用程序,当它们被编译和包装时.所需的密钥必须是RSA 4096位私钥.
+
+** 注:** 重要的是要跟踪你签署应用程序包的关键.你需要使用相同的关键在商店上签署现有应用程序的更新.如果你丢失了原始签名关键,你将无法更新你的应用程序.
+
+#######使用子C扩展来生成钥匙
+
+如果您有开发者密钥,您可以通过选择 *文件 > 偏好 > 设置 > 子C*来设置该密钥的路径,并将 *子C: 开发者密钥路径*设置在开发者密钥上.如果您没有开发者密钥,您可以使用以下步骤生成一个:
+
+1. 调用*Ctrl + Shift + P* (在 Mac 上使用命令+ Shift + P*)
+
+2. 输入"生成开发钥匙"并选择*子C:生成开发钥匙*
+
+3. 选择保存开发者密钥的目录
+
+
+在"Connect IQ"编译器偏好中所指定的开发者密钥将在编译项目时自动传递给编译器.
 
 Connect IQ only supports Ubuntu Linux distributions

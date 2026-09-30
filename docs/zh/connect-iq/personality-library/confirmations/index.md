@@ -3,15 +3,15 @@ title: "Confirmations"
 ---
 # Confirmations
 
-Confirmations ask the user for a yes or no response to a question. Confirmations are usually text only. Confirmations are a useful way of adding small amounts of friction to important decisions, to make sure the user understands their significance.
+确认要求用户对一个问题作出"是"或"不"的答案.确认通常仅仅是文本.确认是增加少量的摩擦到重要决策的有用方法,以确保用户理解它们的意义.
 
 ![Front views of devices displaying a yes confirmation](/connect-iq/resources/personality-library/personality_ui_confirmationhigh.jpg)
 
-A yes/no confirmation gives the user an opportunity to confirm an action.
+一个是/不是确认给用户提供了确认行动的机会.
 
 ## Example
 
-The following example uses [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) to display a yes/no confirmation.
+下面的示例使用[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)来显示"是/否"确认.
 
 ```typescript
 // InputDelegate.mc
@@ -31,11 +31,11 @@ WatchUi.pushView(
 
 ![Front views of devices displaying a delete confirmation](/connect-iq/resources/personality-library/personality_ui_delete_confirmationhigh.jpg)
 
-A delete confirmation asks the user to confirm whether they want to delete an item.
+删除确认要求用户确认是否想要删除一个项目.
 
 ## Example
 
-[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) does not support delete confirmations, but you can build your own confirmation using selectors.
+[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)不支持删除确认,但您可以使用选择器构建自己的确认.
 
 ```xml
 <!-- layout.xml -->

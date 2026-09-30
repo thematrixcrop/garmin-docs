@@ -3,17 +3,17 @@ title: "Typography"
 ---
 # Typography
 
-The choice of fonts used for a product are based on readability, the product's visual language, and other aesthetic considerations.
+对于产品使用的字体的选择取决于可读性,产品的视觉语言和其他审美考虑.
 
-## System and Number Fonts
+##系统和数字字体
 
-Garmin® products typically have two sets of fonts. The system font is used for textural information, while the number font is used for numeric information. Each font has a set of sizes available. The device reference outlines the available fonts on each product.
+Garmin® 产品通常有两组字体.系统字体用于纹理信息,而数字字体用于数值信息.每个字体都有一组可用的尺寸.设备参考概述了每个产品上可用的字体.
 
-The font selectors in the layout system map out the fonts available for each usage context. The selector typically provides the font size and justification, and it relies on other selectors for color, position, and bounding area.
+布局系统中的字体选择器为每个使用环境提供可用的字体. 选择器通常提供字体大小和理由,并且依赖于其他选择器的颜色,位置和边界面积.
 
 ### Example
 
-The following example describes the body text displayed in a prompt with a title.
+下面的示例描述了一个标题的提示中显示的体格文本.
 
 ```xml
 <!-- layout.xml -->
@@ -31,7 +31,7 @@ The following example describes the body text displayed in a prompt with a title
 
 | Selector | Context |
 | --- | --- |
-| `confirmation_font__body` | The font for the body text in a confirmation. |
-| `prompt_font__title` | The font for prompt titles. |
-| `prompt_font__body_no_title` | The font for the body text in a prompt without a title. |
-| `prompt_font__body_with_title` | The font for prompts with a title string or icon. |
+| `confirmation_font__body` |在确认中使用体文字的字体.|
+| `prompt_font__title` |快速标题的字体.|
+| `prompt_font__body_no_title` |字体文本的字体在没有标题的提示中.|
+| `prompt_font__body_with_title` |字体为标题字符串或图标的提示.|

@@ -3,11 +3,11 @@ title: "Action Views"
 ---
 # Action Views
 
-Action views are screens that provide both information and a contextual menu of actions. These actions might be steps or tasks that can be performed on the visible information.
+动作视图是提供信息和文本中的动作菜单的屏幕.这些动作可能是可在可见信息上执行的步骤或任务.
 
 ![Front views of devices displaying action hints](/connect-iq/resources/personality-library/personality_ui_action_hinthigh.jpg)
 
-Each product has a standard hint about how to access the contextual action menu.
+每个产品都有标准提示,说明如何访问文本行动菜单.
 
 ## Example
 
@@ -60,11 +60,11 @@ Action menus do not support iconography.
     }
 ```
 
-The `system_input__action_menu` will let you know if the product uses a button or a touch area to trigger the contextual information.
+`system_input__action_menu`将通知您产品是否使用按或触摸区域启动文本信息.
 
 ## Example
 
-When available, you can use the [View.setActionMenuIndicator()](/connect-iq/api-docs/Toybox/WatchUi/View/#setActionMenuIndicator-instance_function) API to trigger a call to `onActionMenu()`(see [BehaviorDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)) where the contextual information can be pushed.
+当可用时,您可以使用[View.setActionMenuIndicator()](/connect-iq/api-docs/Toybox/WatchUi/View/#setActionMenuIndicator-instance_function)API触发对`onActionMenu()`的呼叫 (见[BehaviorDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function)或[PickerDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)),可将文本信息推进.
 
 ```typescript
 class ActionView extends WatchUi.View {
@@ -124,7 +124,7 @@ function isInActionArea(coord as Array<Numeric>) as Boolean {
 
 ## Edge 2022 Personality
 
-Products with the Edge 2022 personality have an optional configurable control bar that provides contextual actions. You can configure this bar to have an action menu using the [View.setControlBar()](/connect-iq/api-docs/Toybox/WatchUi/View/#setControlBar-instance_function) API.
+具有Edge 2022个性的产品具有可配置的可选控制,可提供文本操作.您可以使用[View.setControlBar()](/connect-iq/api-docs/Toybox/WatchUi/View/#setControlBar-instance_function)API配置这个以设置一个动作菜单.
 
 ### Example
 
@@ -139,4 +139,4 @@ Products with the Edge 2022 personality have an optional configurable control ba
         }
 ```
 
-By using `has` in the above example, you can share this code with other products.
+在上述例子中使用`has`,您可以与其他产品共享此代码.

@@ -3,11 +3,11 @@ title: "Page Loops"
 ---
 # Page Loops
 
-Page loops present the user with a set of pages containing data and insights. There are standard behaviors for moving to the next and previous pages. Advancing from the last page typically loops the user back to the first page.
+页面循环向用户提供一组包含数据和见解的页面. 转移到下一个页面和前一个页面的标准行为. 从最后页面前进通常将用户转向第一页.
 
 ## Activity Page Loop
 
-One common page loop on Garmin® products appears when the user records an activity. While the activity is in progress, the user can navigate through multiple pages of information and metrics related to it.
+在 Garmin® 产品上,当用户记录活动时,会出现一个常见的页面循环.
 
 ## Example
 

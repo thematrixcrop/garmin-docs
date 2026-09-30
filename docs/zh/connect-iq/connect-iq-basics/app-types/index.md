@@ -5,22 +5,22 @@ title: "App Types"
 
 ![](/connect-iq/resources/programmers-guide/cyclist-monkey.png)
 
-Every Connect IQ app must identify its app type. The app type sets the use case and boundaries for the app when it runs. There are five app types available in the Connect IQ system:
+每个Connect IQ应用程序都必须识别其应用程序类型.应用程序类型在运行时设定应用程序的使用情况和界限.Connect IQ系统中有五种应用程序类型:
 
--   [Watch Faces](#watch-faces) - These are the home screen for Garmin wearables. They can be simple timepieces or complex data screens with dozens of health and fitness stats.
+它们可以是简单的手表或复杂的数据屏幕,
 
--   [Data Fields](#data-fields) - Data fields are plug-ins to the Garmin activity experience. They allow computation of new metrics or allow bringing new data into a workout.
+-[Data Fields](#data-fields)- 数据字域是加器用于Garmin活动体验.它们允许计算新的指标或允许将新数据带入训练中.
 
--   [Widgets](#widgets) - Widgets are mini-apps that can be launched from the home screen. They are intended to provide glanceable access to information.
+-[Widgets](#widgets)- 插件是可以从主屏幕启动的小型应用程序,它们旨在提供可见的信息访问.
 
--   [Device Apps](#device-apps) - Device apps are the most powerful app type and provide full access to the system.
+-[Device Apps](#device-apps)- 设备应用程序是最强大的应用程序类型,提供全面访问系统.
 
--   [Audio Content Providers](#audio-content-providers) - Audio content providers are plug-ins to the media player on music-enabled wearables, and they provide a bridge between the media and third-party content services.
+-[Audio Content Providers](#audio-content-providers)- 音频内容提供商是音乐支持的可穿戴设备上的媒体播放器的插件,它们提供了媒体和第三方内容服务之间的桥梁.
 
 
 ## APIs and App Types
 
-The app type defines the user context of an app. Watch faces, for example, have many constraints because they operate in low power mode. To enforce these limits, the Connect IQ Virtual Machine will limit your available APIs based on your app type.
+应用程序类型定义了应用程序的用户背景.例如,表格面具备许多限制,因为它们在低功率模式下运行.为了执行这些限制,Connect IQ虚拟机将根据应用程序类型限制您的可用API.
 
 | Module Name | Data Field | Watch Face | Widget | App | Audio Content Provider | API Level |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -64,45 +64,45 @@ The app type defines the user context of an app. Watch faces, for example, have 
 
 *\*\* Communications support in data field introduced in API level 5.0.0*
 
-A Toybox module requested for your app type that is outside this list will result in a *Symbol Not Found* error.
+对于您的应用程序类型而要求的玩具盒模块将导致 *Symbol Not Found* 错误.
 
 ## Watch Faces
 
-Watch faces are a special application type that display on the main screen of Garmin's wearable devices. These application types are limited some ways to allow them to have minimal impact on the device's battery life.
+腕表面孔是一种特殊的应用类型,在Garmin的可穿戴设备的主屏幕上显示.这些应用类型是有限的,以允许它们对设备的电池寿命产生最小影响.
 
-Watch faces run continuously on the device and can have the most effect on power consumption. A poorly designed watch face — one that takes too long to draw — can greatly degrade the battery life of the wearable.
+时钟面孔在设备上连续运行,可以对电力消耗产生最大影响.设计不良的时钟面孔 需要太长时间来绘制 可以大大降低可穿戴设备的电池使用寿命.
 
-Due to these battery life concerns, watch faces have the least access to APIs in the system. They have access to graphics, bitmaps, fonts, current activity tracker status, current battery status, and the user's activity profile. They cannot access the compass, GPS, or other sensors.
+由于电池使用寿命的担忧,手表面对系统中的API访问量最小.它们可以访问图形,位地图,字体,当前活动跟踪器状态,当前电池状态和用户活动配置文件.它们无法访问 компас,GPS或其他传感器.
 
-If you use custom fonts for numeric display, use the filter option to only load the critical glyphs. This will save memory that you can use for additional graphics
+如果您使用定制字体用于数字显示,请使用过选项仅将关键字体加载. 这将节省您可以用于额外的图形
 
 ### Watch Face Sleep
 
-Watch faces spend the majority of the time in "Sleep Mode" in this mode, execution is restricted to updates once each minute, and cannot use timers or animations. When a user raises the watch to look at it, the watch face exits sleep mode. When this occurs, the [WatchFace.onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) method is called, and updates will increase to once per second, and timers and animations are allowed until the [WatchFace.onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) method is called.
+在此模式下,手表面部大部分时间都在"睡眠模式"中,执行时间仅限于每分钟一次更新,不能使用计时器或动画.当用户抬起手表看时,手表面部会退出睡眠模式.此时,调用[WatchFace.onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function)方法,更新将每秒增加到一次,直到调用[WatchFace.onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function)方法之前允许计时器和动画.
 
 ### Watch Face Delegate
 
 *Since API Level 2.3.0*
 
-The [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) provides input from the system to watch faces. The delegate should be returned as the second element of the array returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) similar to input delegates for other application types. This delegate is currently only used to report power budget violations for watch faces that support every second updates. If the execution budget is exceeded over the course of a minute, the [WatchFaceDelegate.onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) callback will be invoked, providing information about the execution time of the watch face, and the limit that was exceeded.
+[WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)提供系统的输入来观看面孔.该代表应作为从[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)返回的阵列的第二个元素,类似于其他应用类型的输入代表.目前仅用于报告每次更新支持的表表表面的电源预算违规.如果执行预算超过一分钟,则将调用[WatchFaceDelegate.onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function)回调,提供有关表表面的执行时间和超越的限制的信息.
 
 ## Data Fields
 
-Dynamic data fields allow customers and third party developers to write additional metrics and data that will display with Garmin activities. The goal is to create a system that not only makes it easy for a user to make a quick data field based off our workout data, but also gives the developer the the ability to customize the presentation.
+动态数据字段允许客户和第三方开发人员编写额外的指标和数据,这些数据将与Garmin的活动显示.目标是创建一个系统,不仅让用户根据我们的训练数据轻松地创建一个快速的数据字段,还让开发人员能够定制演示.
 
-Data fields can display during an already supported activity on the device. They are a great way to provide new metrics to users by performing calculations on data that is already being recorded. Data fields are integrated within existing activities, so it's best if they appear in the same font and format as that used for the native data fields on the device. For that reason, the simple layout is best, as it will ensure your data field will have the same native look and will scale appropriately to all data screen layouts. If you would like to customize your data field, for example, by inserting a bitmap in place of a numerical value, you will need to ensure that your custom field will scale appropriately among one-field, two-field, three-field, and other layouts.
+数据字段可以在设备上已经支持的活动中显示.它们是通过对已记录的数据进行计算来向用户提供新指标的绝佳方法. 数据字段是已存在的活动中集成的,因此最好它们与设备上原生数据字段使用的字体和格式出现.因此,简单的布局是最好的,因为它将确保您的数据字段将具有相同的原生外观,并将适合所有数据屏幕布局进行扩展.如果你想定制数据字段,例如,通过插入位地图而不是数字值,你需要确保您的定制字段在一个字段,两个字段,三个字段和其他布局之间适当扩展.
 
 ### Data Fields and Simple Data Fields
 
-The base class for data fields is [WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/). This class extends [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), and in many ways behaves similarly to other View objects. The [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) method call will be made every time the data field needs to update.
+数据字段的基类是[WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/). 这个类扩展到[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/),并且在许多方面与其他查看对象类似.每次数据字段需要更新时都会进行[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)方法调用.
 
-In Garmin activities, the user controls the data page layout; specifically, whether it displays one, two, three, or more fields. The Connect IQ data field must handle displaying in all of those layouts, and the developer can use the simulator to test their field in all layouts supported by devices.
+在Garmin活动中,用户控制数据页面布局;具体来说,它是否显示一个,两个,三个或更多的字段.Connect IQ数据字段必须处理所有这些布局中的显示,开发人员可以使用模拟器测试其字段在所有设备支持的布局中.
 
-Many developers will only want to display a single value and not want to handle all the complexity of the drawing of a data field. In those instances, they can use a [WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/) object. A simple data field handles the drawing of the field in multiple sizes, and only requires the developer to implement a [DataField.compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method. The [DataField.compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method is passed an [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) object, which contains all current workout information.
+许多开发人员只想显示一个值,不想处理数据场的绘图的全部复杂性.在这些情况下,他们可以使用[WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)对象.一个简单的数据场处理了多个尺寸的场的绘图,并且只需要开发人员实现[DataField.compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function)方法.[DataField.compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function)方法通过了[Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)对象,其中包含所有当前的训练信息.
 
-Use a [WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/) when possible to guarantee your data field will have the native look and feel of the other Garmin Data Fields. Connect IQ will try to ensure your data displays with the best font and layout possible.
+使用[WatchUi.SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)在可能的情况下,以确保您的数据字段将具有其他Garmin数据字段的原生外观和感觉.Connect IQ将试图确保您的数据显示以最佳字体和布局.
 
-The following is an example of a "Beers Earned" data field, which displays how many beers you have "earned" during your workout:
+以下是"酒"数据场的一个例子,显示了你在训练期间"酒"的数量:
 
 ```typescript
 using Toybox.Application;
@@ -127,74 +127,74 @@ class BeersEarned extends Application.AppBase
 }
 ```
 
-### Simulating a Workout
+###模拟一个炼
 
-To test your data field in the simulator, feed your data field simulated data by clicking the *Simulation* menu, choose *FIT Data* and then *Simulate*. This will generate random but valid data. You can also use *Simulation* > *FIT Data* > *Playback File...* to simulate a workout by using a pre-recorded FIT file.
+在模拟器中测试您的数据场,通过点击 *模拟*菜单,输送数据场模拟数据,然后选择 *FIT数据*然后 *模拟*. 这将生成随机但有效的数据.您还可以使用 *模拟* > *FIT数据* > *播放文件...*使用预记录的FIT文件模拟训练.
 
 ## Widgets
 
-Widgets are mini-apps that allow developers to provide glanceable views of information. The information may be from a cloud service, from the onboard sensors, or from other Connect IQ APIs. Widgets are launchable from a rotating carousel of pages accessible from the main screen of wearables, or from a side view on bike computers and outdoor handhelds. Unlike apps, Widgets time out after a period of inactivity and are not allowed to record activities, but they are also launchable at any time.
+工具是微软应用程序,允许开发人员提供可见的信息视图.信息可能来自云服务,内载传感器或其他Connect IQ API. 工具可从可穿戴设备主屏幕上可访问的旋转页面中启动,或从自行车计算机和户外手持式设备的侧视图中启动.与应用程序不同,工具在停机期间后会停机,并且不允许记录活动,但它们也可以随时启动.
 
-### Base View and the Widget Carousel
+### 基础视图和小程序 Carousel
 
-On wearable products the watch face is the home screen of the widget carousel. Users can use the up/down buttons (on button products) or up/down swipes (on touchscreen wearables) to navigate through the widgets.
+在可穿戴产品上,手表面是 widget carousel 的首页屏幕.用户可以使用上下按 (按产品) 或上下滑动 (触摸屏可穿戴设备) 导航通过widget.
 
-When a widget launches the initial view returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) is shown. Since they are used for widget navigation, the will never receive either the up/down button or up/down swipe events when the base view is shown. Any views pushed on top of the base view using [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) will not have these input restrictions.
+当开启 widget时,显示了从[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)返回的初始视图.由于它们用于 widget 导航,当显示基视图时,不会接收上下按或上下滑动事件.使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)按上基视图的任何视图都不会有这些输入限制.
 
-The expectation for all views in the widget loop is that the system menu shows when the user performs the menu behavior. For widgets, the first item on the system menu will be to view the menu options for the widget. When the user makes that selection, your widget's [BehaviorDelegate.onMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onMenu-instance_function) will be called.
+预期在 widget 循环中的所有视图是系统菜单显示用户执行菜单行为时.对于 widget,系统菜单上的第一个项目将是查看 widget 的菜单选项.当用户进行选择时,将调用 widget 的[BehaviorDelegate.onMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onMenu-instance_function).
 
 ### Glances
 
 *Since API Level 3.1.0*
 
-The Fenix 6 moved glanceable information from a page carousel presentation to a list presentation. Each item offers a small area of real-estate to display information. If the user selects it the full widget is launched. When launched in this context, the widget base view don't have the input restrictions regularly applied.
+Fenix 6 将可查看的信息从页面轮介绍转移到列表介绍.每个项目提供了一个小区域的房地产显示信息.如果用户选择它,完整的小程序将启动.在这个背景下启动时,小程序基础视图没有定期应用输入限制.
 
-Glance views run in a limited runtime space, with reduced memory and privileges and do not accept any input.
+闪光视图在有限的运行时间空间中运行,内存和特权减少,并且不接受任何输入.
 
-When your widget is launched, you can check if `DeviceInfo` has `isGlanceModeEnabled` defined. If it does, you can also determine what the value is. If glance mode is enabled you can launch directly into the interactive portion of your widget. Otherwise you should launch the base view.
+当你启动小工具时,你可以检查`DeviceInfo`是否定义了`isGlanceModeEnabled`.如果是这样,你也可以确定值是什么.如果启用了视觉模式,你可以直接启动到小工具的互动部分.否则你应该启动基视图.
 
 See the [Glance](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
-### Designing a Widget
+###设计一个小工具
 
-Your widget should be designed with both a glance and a base view. Your base view and glance should both offer a simple summary of the presented data. If the user performs a behavior (pressing the start button, touching the screen) that indicates they want more information, your widget should then push a view that allows navigation through the offered information.
+如果用户执行一种行为 (按起按,触摸屏幕) 表示他们想要更多信息,则您的小工具应该推出一个视图,允许通过提供的信息导航.
 
 ## Device Apps
 
-Device apps are by far the most robust type of app available. These allow the most flexibility and customization to the app designer. They also provide the most access to the capabilities of the wearable device, such as accessing ANT+ sensors, the accelerometer and reading/recording FIT files.
+设备应用程序是迄今为止最强大的应用程序类型.这些应用程序允许应用程序设计师进行最多的灵活性和定制.它们还提供最多的访问可穿戴设备的功能,例如访问ANT+传感器,加速器和阅读/录制FIT文件.
 
-The suite of Garmin wearables are each designed to fulfill different needs and behaviors of active individuals, from endurance runners to triathletes to outdoor enthusiasts and adventurers. The core focus of these wearables centers on the recording and tracking of activities, from running to hiking to skiing. Users of the different Garmin wearables desire to track specific types of data and great care should be taken in designing your watch app to understand the needs of the user doing a particular activity or task and provide appropriate feedback, metrics and configurability to give the user the best experience.
+穿戴式手机组件的每个套件都旨在满足从耐力跑步运动员到三运动员到户外爱好者和冒险家的不同需求和行为.这些穿戴式手机的核心重点集中在记录和跟踪活动,从跑步到徒步旅行到滑雪.不同 Garmin穿戴式手机的用户希望跟踪特定类型的数据,并且在设计时钟应用程序时应非常小心,以了解执行特定活动或任务的用户的需求,并提供适当的反,指标和配置,以为用户提供最佳体验.
 
-The initial view of the app should be a call to action. If your app represents some form of activity like hiking or weight lifting, the initial view of the app should ask to be started. Present the user with information from the sensors that make them want to hit the start button.
+应用程序的初始视图应该是行动调用.如果您的应用程序代表了一些活动,如徒步旅行或举重,应用程序的初始视图应该要求启动.向用户提供来自传感器的信息,让他们想要按开机按.
 
-Garmin commonly uses page loops to present multiple pages of information. Page loops are a carousel of pages, each one a unique view on the activity. This is a common metaphor in Garmin products and easy to implement in Connect IQ.
+格林通常使用页面循环来呈现多页的信息.页面循环是页面的轮,每个页面都具有独特的活动视图.这是格林产品中的一个常见的比喻,并且在Connect IQ中很容易实现.
 
-When your app is presenting large amounts of text to the user, try to keep information in the center of the screen. On round screens the top and bottom of the screen provide a limited viewing area. Use the top for contextual headers, scroll arrows, and other small hints of information.
+当你的应用程序向用户展示大量文本时,试着把信息放在屏幕中心.在圆屏幕上,屏幕的顶部和底部提供有限的视觉区域.使用顶部进行文本标题,滚动箭头和其他小信息提示.
 
 ## Audio Content Providers
 
-Garmin media enabled devices are designed for active lifestyle users who want to listen to music without carrying their phone on their rides, runs or other activities. The media player allows the user to listen to their music, podcasts, and audio-books on the go.
+Garmin 媒体支持的设备是为活跃的生活方式用户设计的,他们希望在骑行,跑步或其他活动中不携带手机来听音乐.
 
-Audio content providers function as plug-ins for the media player on media-enabled product. These apps act as bridges between music services and the Garmin media player. Audio content providers allow users to select content from a content provider, sync the content over Wi-Fi to the device, and listen to it
+音频内容提供商作为媒体播放器的插件.这些应用程序作为音乐服务和Garmin媒体播放器之间的桥梁.音频内容提供商允许用户从内容提供商中选择内容,通过Wi-Fi同步内容到设备,并听到它
 
 These apps have three contexts:
 
-1.  Playback Configuration: Allows the user to select what content they want to listen to from what they have synced
+1.播放配置:允许用户从他们同步的内容中选择他们想听的内容
 
-2.  Sync: The device activates Wi-Fi and allows the audio content provider to request content for later offline playback
+2.同步:该设备激活Wi-Fi,允许音频内容提供商要求内容以后在线播放
 
-3.  Playback: The playback experience. The audio content provider tells the media player what to play based on the user's selection.
+3.播放:播放体验.音频内容提供商根据用户的选择告诉媒体播放器要播放什么.
 
 
-Your app should implement an [Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/) instead of the traditional [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/). This class adds the following methods:
+你的应用程序应该实现一个[Application.AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)而不是传统的[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/).
 
-| Method | Purpose |
+| Method |目的|
 | --- | --- |
-| [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) | Get a [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/) for use by the system to get and iterate through media content on the device. |
-| [AudioContentProviderApp.getPlaybackConfigurationView()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getPlaybackConfigurationView-instance_function) | Get the initial view for configuring playback. This is the main view when launched by the media player. |
+| [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) |获取[Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)用于系统使用,以通过设备上的媒体内容进行代.|
+| [AudioContentProviderApp.getPlaybackConfigurationView()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getPlaybackConfigurationView-instance_function) |获取配置播放的初始视图. 媒体播放器启动时,这是主要的视图.|
 | [AudioContentProviderApp.getProviderIconInfo()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getProviderIconInfo-instance_function) | Get audio provider icon information. |
-| [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) | Get a [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing media content to the device. |
+| [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) |获取一个[Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)对象,将同步状态传达到系统中,以便将媒体内容同步到设备中.|
 
-Sync Configuration has been deprecated. We recommend providing the user a mechanism to download content inside of the playback configuration.
+同步配置已被废除. 我们建议用户提供一个机制来下载在播放配置内部的内容.
 
 See the [How do I create an Audio Content Provider?](/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/#how-do-i-create-an-audio-content-provider) section 更多信息.

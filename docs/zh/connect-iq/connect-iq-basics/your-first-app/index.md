@@ -7,101 +7,101 @@ title: "Your First Connect IQ App"
 
 First 您需要 create your new project:
 
-1.  Use *Ctrl + Shift + P* (*Command + Shift + P* on the Mac) to summon the command palette
+1. 使用*Ctrl + Shift + P* (*在Mac上命令 + Shift + P*) 调用命令
 
-2.  Type "New Project" and select *Monkey C: New Project*
+2. 输入"新项目"并选择*子C:新项目*
 
-3.  When prompted with *Set Project Name* enter a name for your new project
+3. 当被*设置项目名称* 提示时,输入您的新项目名称
 
-4.  Select the project type *Watch Face*
+4. 选择项目类型 *Watch Face*
 
-5.  Select the *Simple* template upon which the project will be based
+5. 选择项目将基于的*简单*模板
 
-6.  Select *3.2.0* as the minimum API level
+6. 选择*3.2.0*作为最低API水平
 
-7.  Set the parent directory for your new project
+7. 设置您的新项目的母目录
 
 
-Once the project is initialized, the following project elements will be created automatically:
+一旦项目启动,将自动创建以下项目元素:
 
 ![](/connect-iq/resources/programmers-guide/new_project_structure.png)
 
 bin
 
-Contains binary and debug output from the app compilation
+包含应用程序编译中的二进制和调试输出
 
 resources
 
-Inputs to the resource compiler, such as layouts, images, fonts, and strings, and language-specific resources
+资源编译器的输入,如布局,图像,字体和字符串以及语言特定资源
 
 source
 
-Contains the Monkey C source files, initially broken into 'App' and 'View' files
+包含"子C"源文件,最初分为"应用程序"和"查看"文件
 
 manifest.xml
 
-Application properties like the app id, the app type, and the targeted devices
+应用程序特性如应用程序ID,应用程序类型和目标设备
 
-### About the Minimum SDK Version Field
+###关于最小SDK版本字段
 
-The minimum SDK version allows you to configure device compatibility by ensuring that only devices that support, at a minimum, the SDK version you've selected will be enabled for your app. For example, if your app relies heavily on a feature of the **2.1.x** SDK, such as the **Sensor History** feature, you can set your minimum SDK version to **2.1.x** and the list of available devices will be pruned such that you cannot select an incompatible product.
+最小 SDK 版本允许您配置设备兼容性,确保仅支持您选择的 SDK 版本的设备才能为您的应用程序启用.例如,如果您的应用程序严重依赖于 **2.1.x** SDK 的功能,如**传感器历史** 功能,您可以设置您的最小 SDK 版本为 **2.1.x**,可用的设备列表将被切割,使您无法选择不兼容的产品.
 
 ### Editing the 支持ed Products
 
-After creating the project, you will be presented with the project manifest, which is where metadata about your project like the name id, application id and supported products is maintained. Most of this will be auto-created by the *New Project* command, but you will need to edit the supported products:
+在创建项目后,您将会得到项目公布,该公布是您的项目名称,应用程序代码和支持产品等元数据所保存的.大部分将通过*新项目*命令自动创建,但您需要编辑支持产品:
 
-1.  Use *Ctrl + Shift + P* (*Command + Shift + P* on the Mac) to summon the command palette
+1. 使用*Ctrl + Shift + P* (*在Mac上命令 + Shift + P*) 调用命令
 
-2.  Type "Edit Products" and select *Monkey C: Edit Products*
+2. 输入"编辑产品"并选择*子C:编辑产品*
 
-3.  You will be presented with a list of all products that meet your minimum API level. Select the top checkbox to select all products or select the specific products you want to support.
-
-
-The manifest will update with all products.
-
-## Running the Program
-
-Before running the program, make sure you have one of your source files (In the `source` folder with the `.mc` extension) open and selected in the editor.
-
-1.  Select *Run > Run Without Debugging* (*Command + F5* on Mac, *Ctrl + F5* on other platforms)
-
-2.  You will be prompted with the list of products your application supports. Select one from the list.
+3. 您将得到满足您的最低API级别的所有产品列表. 选择顶部的选项框来选择所有产品或选择您想支持的特定产品.
 
 
-If all goes well the simulator will start up and the selected watch will appear:
+这份公告将与所有产品更新.
+
+## 运行程序
+
+在运行程序之前,请确保您在编辑器中开放和选择了源文件中的一个 (在`source`文件中与`.mc`扩展)
+
+1. 选择*运行>无需调试的运行* (*在Mac上命令+F5*,在其他平台上*Ctrl+F5*)
+
+2. 您将被提示提供您的申请支持的产品列表.
+
+
+如果一切顺利,模拟器将启动,
 
 ![](/connect-iq/resources/programmers-guide/first_app.png)
 
-## Importing an Example
+## 进口一个例子
 
-To try one of the Connect IQ sample apps load it into Visual Studio Code:
+要尝试一个Connect IQ样本应用程序,将其加载到Visual Studio Code中:
 
-1.  Click the *File* menu
+1. 点击"文件"菜单
 
 2.  Select *Open Folder...*
 
-3.  Browse in the downloaded SDK `samples` folder and select the root directory of the sample to import
+3. 浏览下载的SDK`samples`文件,然后选择输入样本的根目录
 
-4.  Click *Select Folder* to complete the import
+4. 点击*选择文件*来完成进口
 
 
-## Side Loading an App
+## 页面加载应用程序
 
-The Monkey C extension provides a wizard to help developers side load an application. The wizard will create an executable (PRG) of the selected project. Here's how to use it:
+子C扩展提供了一个助手来帮助开发人员加载一个应用程序.助手将创建选定的项目的执行式 (PRG).以下是如何使用它:
 
 1.  Plug your device into your computer
 
-2.  Use *Ctrl + Shift + P* (*Command + Shift + P* on the Mac) to summon the command palette
+2. 使用 *Ctrl + Shift + P* (*Mac上命令 + Shift + P*) 调用命令
 
-3.  In the command palette type "Build for Device" and select *Monkey C: Build for Device*
+3. 在命令上输入"为设备构建"并选择*子C:为设备构建*
 
-4.  Select the product you wish to build for. If you are unable to choose a device for which to build (the menu appears empty), it means that there are no valid devices configured for your project. See [Editing the 支持ed Products](#editing-the-supported-products) for instructions.
+4. 选择您想要构建的产品. 如果您无法选择构建的设备 (菜单显示为空),这意味着您的项目没有有效的设备配置. 查看[Editing the 支持ed Products](#editing-the-supported-products)说明.
 
-5.  Choose a directory for the output and click *Select Folder*
+5. 选择输出目录,然后点击*选择文件*
 
-6.  In your file manager, go to the directory selected in step 4
+6. 在文件管理器中,进入4步中选择的目录
 
-7.  Copy the generated `PRG` files to your device's `GARMIN/APPS` directory
+7. 将生成的`PRG`文件复制到设备的`GARMIN/APPS`目录
 
 
-When using the command palette you will be tempted to type *Money C* instead of *Monkey C* which is understandable as *Money C* is Monkey C's nom de plume in the music industry with such hits as *Mo' Monkeys Mo' Problems* and *Baller C Baller Do*
+在使用命令板时,你会被诱惑输入*Money C*而不是*Monkey C*,这是可以理解的,因为*Money C*是音乐行业中的子C的名字,

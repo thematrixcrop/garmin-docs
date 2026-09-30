@@ -3,15 +3,15 @@ title: "Color"
 ---
 # Color
 
-The colors chosen for the product depend on the display technology and the graphic design language for the product.
+产品的颜色取决于显示技术和产品的图形设计语言.
 
 ## Using Color Selectors
 
-Personality UI provides context-specific color selectors that you can use with the resource system and in your code.
+个性UI提供了特定环境的颜色选择器,可以在资源系统和代码中使用.
 
 ### Example
 
-Within layouts, combine the color with other selectors when adding layout components.
+在布局中,在添加布局组件时,将颜色与其他选择器结合起来.
 
 ```xml
 <!-- layout.xml -->
@@ -27,7 +27,7 @@ Within layouts, combine the color with other selectors when adding layout compon
 
 ### Example
 
-In Monkey C source, you can reference the color selector directly in code.
+在子C源中,你可以直接引用颜色选择器在代码中.
 
 ```typescript
 // View.mc
@@ -45,9 +45,9 @@ dc.setColor(
 
 ![Front views of devices in light and dark modes](/connect-iq/resources/personality-library/personality_ui_light_dark_modeshigh.jpg)
 
-Many Garmin® products have both light and dark themes. Some products allow customers to choose a theme for each activity, while others have day and night modes that determine the theme. Components in the personality design system have all of their colors documented with `color_light` and `color_dark` selectors. On certain products, especially those with AMOLED displays, these selectors are the same.
+许多Garmin®产品都有光和暗的主题.有些产品允许客户选择每个活动的主题,而其他产品都有昼夜模式,决定主题.个性设计系统中的组件的所有颜色都用`color_light`和`color_dark`选择器记录.在某些产品上,特别是那些具有AMOLED显示屏的产品上,这些选择器是相同的.
 
-If your app does not take night mode into account or does not run on products that have night mode, use only the `color_dark` selectors.
+如果您的应用程序不考虑夜间模式或不运行在夜间模式的产品上,只使用`color_dark`选择器.
 
 ### Example
 
@@ -97,7 +97,7 @@ If your app does not take night mode into account or does not run on products th
 
 ### Example
 
-For performance reasons, it is faster to track the day or night mode in your own local variable rather than querying the system on every update. The following example exposes day or night mode as a theme that can be accessed by pages in the app.
+由于性能原因,在您的本地变量中更快地跟踪白天或夜间模式,而不是在每次更新中查询系统.下面的例子揭示白天或夜间模式是应用中的页面可以访问的主题.
 
 ```typescript
 //! Application.mb
@@ -152,7 +152,7 @@ class MyApp extends Application {
 
 ### Example
 
-You can load different layouts based on whether your app is in day or night mode. The following example keeps track of the current mode and changes it if the theme changes.
+根据您的应用程序是否在白天或夜间模式下,您可以加载不同的布局.下面的例子跟踪当前模式,并在主题变化时更改它.
 
 ```typescript
 // View.mb
@@ -197,7 +197,7 @@ class MainView extends WatchUi.View {
 | `activity_color_light__background`, `activity_color_dark__background` | The default activity background color. |
 | `activity_color_light__text`, `activity_color_dark__text` | The default activity text color. |
 | `prompt_color_light__background`, `prompt_color_dark__background` | The default prompt background color. |
-| `prompt_color_light__title`, `prompt_color_dark__title` | The text color for a title string in a prompt. |
-| `prompt_color_light__body`, `prompt_color_dark__body` | The text color for the body text of a prompt. |
+| `prompt_color_light__title`, `prompt_color_dark__title` |在提示中标题字符串的文本颜色.|
+| `prompt_color_light__body`, `prompt_color_dark__body` |提示的体文本的文本颜色.|
 | `confirmation_color_light__background`, `confirmation_color_dark__background` | The default confirmation background color. |
 | `confirmation_color_light__body`, `confirmation_color_dark__body` | The default confirmation body text color. |
