@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for Fitness Equipment
+健身器材的侦听器类
 
 Since:
 

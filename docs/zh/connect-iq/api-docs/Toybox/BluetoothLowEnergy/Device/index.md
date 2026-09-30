@@ -40,11 +40,11 @@ API 级别 3.1.0
 
 - [**isBonded**](#isBonded-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Gets the Bonded State of the Device.
+    获取设备的绑定状态。
 
 - [**isConnected**](#isConnected-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Gets the connected status of the device.
+    获取设备的连接状态。
 
 - [**requestBond**](#requestBond-instance_function)() as **Void**
 
@@ -72,7 +72,7 @@ API 级别 3.1.0
 
 Retrieves the service with a specified UUID
 
-If access to a specific service is required, use this function to directly access the service based on a UUID.
+如果需要访问特定服务，请使用此函数根据 UUID 直接访问该服务。
 
 Parameters:
 
@@ -102,7 +102,7 @@ Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Iterator of [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) objects provided by a device.
+    设备提供的 [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) 个对象的迭代器。
 
 
 Since:
@@ -111,7 +111,7 @@ API 级别 3.1.0
 
 ### **isBonded()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Gets the Bonded State of the Device
+获取设备的绑定状态
 
 :::details 支持的设备
 
@@ -199,7 +199,7 @@ API 级别 4.2.5
 
 ### **isConnected()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Gets the connected status of the device
+获取设备的连接状态
 
 Returns:
 
@@ -216,7 +216,7 @@ API 级别 3.1.0
 
 Requests that a bond is formed with the Device
 
-If the device is not currently bonded this will initiate the bonding procedure.
+如果设备当前尚未配对，则会启动配对过程。
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onEncryptionStatus()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onEncryptionStatus-instance_function)
 
@@ -301,4 +301,4 @@ Throws:
 
 - ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 
-    if the device is not connected or is already bonded.
+    如果设备未连接或已配对。

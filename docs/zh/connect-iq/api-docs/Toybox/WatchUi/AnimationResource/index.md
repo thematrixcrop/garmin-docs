@@ -206,7 +206,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Frame rate of the animation in seconds
+    动画的帧速率（单位为秒）
 
 
 Since:
@@ -221,7 +221,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Height of the animation in pixels
+    动画的高度（以像素为单位）
 
 
 Since:

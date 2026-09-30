@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Communications"
 ---
-# Module: Toybox.Communications
+# 模块：Toybox.Communications
 
 ## 概述
 
@@ -396,7 +396,7 @@ API 级别 2.2.0
 
 |
 
-Filesystem too full to store response data.
+文件系统空间不足，无法存储响应数据。
 
 |
 | SECURE\_CONNECTION\_REQUIRED | \-1001 |
@@ -405,7 +405,7 @@ API 级别 2.3.0
 
 |
 
-Indicates an https connection is required for the request.
+表示该请求需要 https 连接。
 
 |
 | UNSUPPORTED\_CONTENT\_TYPE\_IN\_RESPONSE | \-1002 |
@@ -423,7 +423,7 @@ API 级别 2.4.2
 
 |
 
-Http request was cancelled by the system.
+Http 请求已被系统取消。
 
 |
 | REQUEST\_CONNECTION\_DROPPED | \-1004 |
@@ -459,7 +459,7 @@ API 级别 3.0.10
 
 |
 
-HLS content could not be downloaded. Most often occurs when requested and provided bit rates do not match.
+无法下载 HLS 内容。最常见的原因是请求的比特率与提供的比特率不匹配。
 
 |
 
@@ -765,7 +765,7 @@ Specifies a content type of application/json
 
 ### PackingFormat
 
-Image packing format used for image request.
+用于图像请求的图像打包格式。
 
 The packing format describes the encoding a requested image should use when being transmitted. The encoding used affects the transfer size, decoding time, and image quality.
 
@@ -780,7 +780,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in the device native format, a lossless encoding that available on all devices. It is very efficient to decode, but often results in large transfer sizes so is slow to download.
+图像数据采用设备原生格式编码，这是一种所有设备都支持的无损编码。其解码效率非常高，但通常会导致较大的传输大小，因此下载速度较慢。
 
 |
 | PACKING\_FORMAT\_YUV | 1 |
@@ -789,7 +789,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in YUV format. This is a lossy encoding that is compressed, and is fast to load. It is ideal for photographic imagery with transparency.
+图像数据采用 YUV 格式编码。这是一种有损编码，经过压缩且加载速度较快。适合带透明度的摄影图像。
 
 |
 | PACKING\_FORMAT\_PNG | 2 |
@@ -798,7 +798,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in PNG format. This is a lossless encoding that is compressed, but is relatively slow to load. It is ideal for non-photographic imagery.
+图像数据采用 PNG 格式编码。这是一种无损压缩编码，但加载速度相对较慢。适合非摄影图像。
 
 |
 | PACKING\_FORMAT\_JPG | 3 |
@@ -807,7 +807,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in JPG format. This is a lossy encoding that is compressed, and is reasonably fast to load. It is ideal for photographic imagery.
+图像数据采用 JPG 格式编码。这是一种有损编码，经过压缩且加载速度较快。适合摄影图像。
 
 |
 
@@ -1240,7 +1240,7 @@ The returned value can be set as the "Authorization" header for [makeWebRequest(
 
 注意：
 
-It is recommended to use OAuth 2.0 instead of OAuth 1.0a. See [Toybox::Communications#makeOAuthRequest](/connect-iq/api-docs/Toybox/Communications/#makeOAuthRequest-instance_function).
+建议使用 OAuth 2.0，而不是 OAuth 1.0a。请参见 [Toybox::Communications#makeOAuthRequest](/connect-iq/api-docs/Toybox/Communications/#makeOAuthRequest-instance_function)。
 
 Parameters:
 
@@ -1457,7 +1457,7 @@ Returns:
 
 - [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) —
 
-    Iterator for the mailbox
+    邮箱的迭代器
 
 
 另见：
@@ -1473,7 +1473,7 @@ API 级别 1.0.0
 
 发起图像下载请求。
 
-GCM will scale and dither the image based on the capabilities of the device, but the user will be able to pass additional options (like dithering it down to a one color image)
+GCM 将根据设备的功能缩放并抖动图像，但用户可以传递其他选项（例如将其抖动为单色图像）
 
 注意：
 
@@ -1623,7 +1623,7 @@ Parameters:
 
 - This is only valid for methods PUT and POST (you cannot set a body for a GET or DELETE request)
 
-- If the content type is not specified, it will default to "application/json" for GET and DELETE requests, and will default to "application/x-www-form-urlencoded" for POST and PUT requests
+- 如果未指定内容类型，则 GET 和 DELETE 请求默认为 "application/json"，POST 和 PUT 请求默认为 "application/x-www-form-urlencoded"
 
 
 - responseCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
@@ -1950,13 +1950,13 @@ Parameters:
 
 - The "Content-Type" header for the body of the request can be specified using a [REQUEST\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
 
-- If the content type is not specified, it will default to "application/json" for GET and DELETE requests, and will default to "application/x-www-form-urlencoded" for POST and PUT requests.
+- 如果未指定内容类型，则 GET 和 DELETE 请求默认为 "application/json"，POST 和 PUT 请求默认为 "application/x-www-form-urlencoded"。
 
 - 默认情况下，DELETE 请求会将其参数追加到 URL。
 
 - Setting the method as DELETE as well as a "Content-Type" header will result in the parameters being set in the body of the request and they will not be appended to the URL.
 
-- GET requests can only have their parameters appended to the URL, specifying the "Content-Type" header will not set the body.
+- GET 请求只能将参数附加到 URL，指定“Content-Type”标头不会设置正文。
 
 
 - :responseType — ([Communications.HttpResponseContentType](/connect-iq/api-docs/Toybox/Communications/#HttpResponseContentType-module)) —
@@ -1965,9 +1965,9 @@ Parameters:
 
 - This should be an [HTTP\_RESPONSE\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
 
-- If HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT or HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX is given, the system will attempt to download and parse a FIT or GPX file and store the contained data in the device, based on the contents of the file.
+- 如果提供了 HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT 或 HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX，系统将尝试下载并解析 FIT 或 GPX 文件，并根据文件内容将其中包含的数据存储到设备中。
 
-- If not given, the system will use the Content-Type header from the server response to determine the format of the response body. If the Content-Type header from the response is not one of the known HTTP\_RESPONSE\_CONTENT\_TYPE\_\* types, an error will occur.
+- 如果未提供该值，系统将使用服务器响应中的 Content-Type 标头来确定响应正文的格式。如果响应中的 Content-Type 标头不是已知的 HTTP\_RESPONSE\_CONTENT\_TYPE\_\* 类型之一，则会发生错误。
 
 
 - :context — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
@@ -1980,7 +1980,7 @@ Parameters:
 
 - :maxBandwidth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        maximum bandwidth. TVM will select the audio stream with the highest bandwidth that's less than or equal to the maximum This option is only effective when processing HLS content
+        最大带宽。TVM 将选择带宽小于或等于最大值且带宽最高的音频流。此选项仅在处理 HLS 内容时有效
 
 - :fileDownloadProgressCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1988,7 +1988,7 @@ Parameters:
 
 - totalBytesTransferred: The total number of bytes transferred for the current file download
 
-- fileSize: The size of the file being downloaded. Note that this can be `null` if file size cannot be determined from the server.
+- fileSize：正在下载的文件大小。请注意，如果无法从服务器确定文件大小，此值可能为 `null`。
 
 - This option is only supported for media file download progress
 

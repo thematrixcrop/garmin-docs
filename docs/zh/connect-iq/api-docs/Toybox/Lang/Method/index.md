@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Method is a class that represents a callback, or a function that can be used as an argument to another function. You can create one using the [method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) call, and invoke the Method using the [invoke()](/connect-iq/api-docs/Toybox/Lang/Method/#invoke-instance_function) method.
+Method 是表示回调的类，也可以是作为参数传递给另一个函数的函数。可以使用 [method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) 调用创建它，并使用 [invoke()](/connect-iq/api-docs/Toybox/Lang/Method/#invoke-instance_function) 方法调用 Method。
 
 ## 另见：
 
@@ -46,7 +46,7 @@ myTimer.start(method(:timerCallback), 1000, true);
 
 Example:
 
-Invoking a Method
+调用方法
 
 ```
 using Toybox.Lang;
@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get a hash code value for a Method.
+    获取 Method 的哈希代码值。
 
 - [**initialize**](#initialize-instance_function)(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))
 
@@ -96,7 +96,7 @@ API 级别 1.0.0
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get a hash code value for a Method. This computes a 32-bit Number that is typically used as an index when placing Objects into a Dictionary. Hash code values have the following characteristics:
+获取 Method 的哈希代码值。此操作计算一个 32 位 Number，通常用作将 Object 放入 Dictionary 时的索引。哈希代码值具有以下特征：
 
 - 计算得到的哈希码在 Object 的整个生命周期内保持不变
 

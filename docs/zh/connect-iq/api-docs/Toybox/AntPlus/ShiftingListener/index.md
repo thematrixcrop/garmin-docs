@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for shifting
+变速的侦听器类
 
 Since:
 

@@ -32,23 +32,23 @@ API 级别 3.1.0
 
 - [**getAppearance**](#getAppearance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Gets the Advertised Appearance of the sensor.
+    获取传感器广播的外观。
 
 - [**getDeviceName**](#getDeviceName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Gets the advertised device name If no device name is advertised this function will return `null`.
+    获取广播的设备名称。如果未广播设备名称，此函数将返回 `null`。
 
 - [**getManufacturerSpecificData**](#getManufacturerSpecificData-instance_function)(manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Gets Manufacturer Specific Data for a given Manufacturer Manufacturer Specific Data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.11.
+    获取给定制造商的制造商特定数据。制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码。
 
 - [**getManufacturerSpecificDataIterator**](#getManufacturerSpecificDataIterator-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Gets an iterator over all of the Manufacturer Specific Data AD Entries in the advertising packet Manufacturer Specific Data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.11.
+    获取广告数据包中所有制造商特定数据 AD 条目的迭代器。制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码。
 
 - [**getRawData**](#getRawData-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Gets the Raw Data that was retrieved in the advertising packet.
+    获取广告数据包中检索到的原始数据。
 
 - [**getRssi**](#getRssi-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -56,11 +56,11 @@ API 级别 3.1.0
 
 - [**getServiceData**](#getServiceData-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Gets Service Data for a specific UUID Service data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.10.
+    获取特定 UUID 的服务数据。服务数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.10 节进行解码。
 
 - [**getServiceUuids**](#getServiceUuids-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Gets service UUIDs advertised by the device If the advertising data contains any service UUID values.
+    获取设备广播的服务 UUID。如果广告数据包含任何服务 UUID 值。
 
 - [**hasAddress**](#hasAddress-instance_function)(address as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -97,7 +97,7 @@ API 级别 3.2.0
 
 ### **getAppearance()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Gets the Advertised Appearance of the sensor
+获取传感器广播的外观
 
 Returns:
 
@@ -112,9 +112,9 @@ API 级别 3.1.0
 
 ### **getDeviceName()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Gets the advertised device name
+获取广播的设备名称
 
-If no device name is advertised this function will return `null`
+如果未播报设备名称，此函数将返回 `null`
 
 Returns:
 
@@ -129,7 +129,7 @@ API 级别 3.1.0
 
 ### **getManufacturerSpecificData(manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Gets Manufacturer Specific Data for a given Manufacturer
+获取给定制造商的制造商特定数据
 
 制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
@@ -144,7 +144,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    Manufacturer Specific Data.
+    制造商特定数据。
 
 
 Since:
@@ -153,7 +153,7 @@ API 级别 3.1.0
 
 ### **getManufacturerSpecificDataIterator()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Gets an iterator over all of the Manufacturer Specific Data AD Entries in the advertising packet
+获取广告数据包中所有制造商特定数据 AD 条目的迭代器
 
 制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
@@ -161,7 +161,7 @@ Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Iterator of [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) objects for each AD entry. Dictionary will have keys for `:companyId` and `:data`
+    每个 AD 条目中的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 个对象的迭代器。字典将包含 `:companyId` 和 `:data` 键
 
 
 Since:
@@ -170,7 +170,7 @@ API 级别 3.1.0
 
 ### **getRawData()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Gets the Raw Data that was retrieved in the advertising packet
+获取从广告数据包中检索的原始数据
 
 Returns:
 
@@ -200,7 +200,7 @@ API 级别 3.1.0
 
 ### **getServiceData(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Gets Service Data for a specific UUID
+获取特定 UUID 的服务数据
 
 Service data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.10
 
@@ -224,15 +224,15 @@ API 级别 3.1.0
 
 ### **getServiceUuids()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Gets service UUIDs advertised by the device
+获取设备广播的服务 UUID
 
-If the advertising data contains any service UUID values. They can be accessed through this iterator. If there are no advertised UUIDs this function will return an empty iterator.
+如果广告数据包含任何服务 UUID 值，则可以通过此迭代器访问这些值。如果没有播报的 UUID，此函数将返回空迭代器。
 
 Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Iterator of [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) objects advertised in the ScanResult
+    ScanResult 中公布的 [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) 个对象的迭代器
 
 
 Since:
@@ -276,7 +276,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Indicating if this scan result represents the same device as another
+    表示此扫描结果是否代表与另一个设备相同的设备
 
 
 Since:

@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates the data payload provided to [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) exceeds the maximum allowed data size (approximately 8 KB).
+表示提供给 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) 的数据负载超过允许的最大数据大小（约 8 KB）。
 
 Since:
 

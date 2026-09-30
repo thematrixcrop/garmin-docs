@@ -60,7 +60,7 @@ API 级别 2.4.0
 
 - [**basicResistanceSupported**](#basicResistanceSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Flag for basic resistance training mode support.
+    支持基本阻力训练模式的标志。
 
 - [**mode**](#mode-var) as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module) or **Null**
 
@@ -68,18 +68,18 @@ API 级别 2.4.0
 
 - [**simulationSupported**](#simulationSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Flag for simulation training mode support.
+    支持模拟训练模式的标志。
 
 - [**targetPowerSupported**](#targetPowerSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Flag for target power training mode support.
+    支持目标功率训练模式的标志。
 
 
 ## 实例属性详情
 
 ### var basicResistanceSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Flag for basic resistance training mode support
+支持基本阻力训练模式的标志
 
 Since:
 
@@ -109,7 +109,7 @@ Returns:
 
 ### var simulationSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Flag for simulation training mode support
+支持模拟训练模式的标志
 
 Since:
 
@@ -124,7 +124,7 @@ Returns:
 
 ### var targetPowerSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Flag for target power training mode support
+支持目标功率训练模式的标志
 
 Since:
 

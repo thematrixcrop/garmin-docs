@@ -84,4 +84,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    Maximum allowed time in milliseconds (ms)
+    允许的最大时间，单位为毫秒（ms）

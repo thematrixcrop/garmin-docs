@@ -231,7 +231,7 @@ API 级别 3.0.0
 
 |
 
-Left align a MenuItem label
+将 MenuItem 标签左对齐
 
 |
 
@@ -239,7 +239,7 @@ Left align a MenuItem label
 
 - [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    Get the icon Retrieve the icon for this MenuItem.
+    获取图标。检索此 MenuItem 的图标。
 
 - [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 

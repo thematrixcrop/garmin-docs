@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-FlickEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is a flick interaction with the device's touch screen.
+FlickEvent 是在设备触摸屏发生轻扫交互时发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的对象。
 
 ## 另见：
 

@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.System"
 ---
-# Module: Toybox.System
+# 模块：Toybox.System
 
 ## 概述
 
@@ -207,7 +207,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that the connection is not setup or is inactive.
+表示连接未建立或处于非活动状态。
 
 |
 | CONNECTION\_STATE\_NOT\_CONNECTED | 1 |
@@ -216,7 +216,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that the connection has been setup but is not in range.
+表示连接已建立，但设备不在范围内。
 
 |
 | CONNECTION\_STATE\_CONNECTED | 2 |
@@ -225,7 +225,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that the connection is available for use.
+表示连接可供使用。
 
 |
 
@@ -749,15 +749,15 @@ Throws:
 
 - ([System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)) —
 
-    Indicates the intended application is not a device app or widget
+    表示目标应用不是设备应用或小组件
 
 - ([System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)) —
 
-    Indicates the intended application is not installed
+    表示目标应用未安装
 
 - ([System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/)) —
 
-    Indicates exitTo() is called a second time before the initial call completes
+    表示在初始 exitTo() 调用完成前再次调用了 exitTo()
 
 
 ### **getClockTime()** as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)

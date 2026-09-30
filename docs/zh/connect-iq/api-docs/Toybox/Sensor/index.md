@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Sensor"
 ---
-# Module: Toybox.Sensor
+# 模块：Toybox.Sensor
 
 ## 概述
 
@@ -374,23 +374,23 @@ Onboard Sensor
 
 - [**notifyError**](#notifyError-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**) as **Void**
 
-    Let the system know the app has encountered an error.
+    通知系统应用遇到了错误。
 
 - [**notifyNewSensor**](#notifyNewSensor-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), configurationRequired as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Let the system know the app has discovered a new sensor.
+    通知系统应用发现了新传感器。
 
 - [**notifyPairComplete**](#notifyPairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
 
-    Let the system know the app has finished pairing a sensor.
+    通知系统应用已完成传感器配对。
 
 - [**notifyScanComplete**](#notifyScanComplete-instance_function)() as **Void**
 
-    Let the system know the app has finished scanning for sensors.
+    通知系统应用已完成传感器扫描。
 
 - [**notifyUnpairComplete**](#notifyUnpairComplete-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as **Void**
 
-    Let the system know the app has finished unpairing a sensor.
+    通知系统应用已完成取消传感器配对。
 
 - [**registerSensorDataListener**](#registerSensorDataListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
 
@@ -509,7 +509,7 @@ This is useful for retrieving the current sensor info either on demand or period
 
 Example:
 
-Get accelerometer data once per second
+每秒获取一次加速度计数据
 
 ```
 using Toybox.Sensor;
@@ -899,7 +899,7 @@ API 级别 3.2.0
 
 ### **notifyError(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)** as **Void**
 
-Let the system know the app has encountered an error
+通知系统应用遇到了错误
 
 :::details 支持的设备
 
@@ -987,7 +987,7 @@ API 级别 5.1.0
 
 ### **notifyNewSensor(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/), configurationRequired as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Let the system know the app has discovered a new sensor
+通知系统应用发现了新传感器
 
 Parameters:
 
@@ -997,7 +997,7 @@ Parameters:
 
 - configurationRequired — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    flag indicating whether or not the sensor require custom configuration. A value of True will prompt the app for a custom configuration view through [AppBase.getSensorConfigurationView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorConfigurationView-instance_function) during the pairing process.
+    指示传感器是否需要自定义配置的标志。值为 True 时，在配对过程中，应用将通过 [AppBase.getSensorConfigurationView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSensorConfigurationView-instance_function) 显示自定义配置视图。
 
 
 :::details 支持的设备
@@ -1086,7 +1086,7 @@ API 级别 5.1.0
 
 ### **notifyPairComplete(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as **Void**
 
-Let the system know the app has finished pairing a sensor
+通知系统应用已完成传感器配对
 
 Parameters:
 
@@ -1181,7 +1181,7 @@ API 级别 5.1.0
 
 ### **notifyScanComplete()** as **Void**
 
-Let the system know the app has finished scanning for sensors
+通知系统应用已完成传感器扫描
 
 :::details 支持的设备
 
@@ -1269,7 +1269,7 @@ API 级别 5.1.0
 
 ### **notifyUnpairComplete(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as **Void**
 
-Let the system know the app has finished unpairing a sensor
+通知系统应用已完成取消传感器配对
 
 Parameters:
 

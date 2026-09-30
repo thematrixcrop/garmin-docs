@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 LocalMoment 是一个不可变的时间点。
 
-LocalMoment represents a single point in time at a specific location. It differs from Moment in that it also keeps time zone information in addition to the time.
+LocalMoment 表示特定位置的单个时间点。与 Moment 不同的是，它除了保存时间外，还会保存时区信息。
 
 Example:
 
@@ -224,7 +224,7 @@ API 级别 3.3.0
 
 - [**getOffset**](#getOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the total time offset from UTC time in seconds.
+    获取相对于 UTC 时间的总时间偏移（单位为秒）。
 
 - [**getTimeZoneOffset**](#getTimeZoneOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -236,7 +236,7 @@ API 级别 3.3.0
 
 - [**isDaylightSavingsTime**](#isDaylightSavingsTime-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get whether the daylight saving time offset is in effect.
+    获取是否正在应用夏令时偏移。
 
 - [**lessThan**](#lessThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -348,7 +348,7 @@ API 级别 3.3.0
 
 ### **getOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the total time offset from UTC time in seconds
+获取相对于 UTC 时间的总时间偏移（单位为秒）
 
 Returns:
 
@@ -402,7 +402,7 @@ API 级别 3.3.0
 
 ### **isDaylightSavingsTime()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get whether the daylight saving time offset is in effect
+获取是否正在应用夏令时偏移
 
 Returns:
 

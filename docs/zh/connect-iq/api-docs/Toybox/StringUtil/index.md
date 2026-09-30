@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.StringUtil"
 ---
-# Module: Toybox.StringUtil
+# 模块：Toybox.StringUtil
 
 ## 概述
 
@@ -62,7 +62,7 @@ API 级别 3.0.0
 
 - [**charArrayToString**](#charArrayToString-instance_function)(charArray as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Given an Array of [Char](/connect-iq/api-docs/Toybox/Lang/Char/) objects, return the String equivalent.
+    给定一个由 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 对象组成的 Array，返回对应的 String。
 
 - [**convertEncodedString**](#convertEncodedString-instance_function)(input as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :fromRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :toRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :encoding as [StringUtil.CharacterEncoding](/connect-iq/api-docs/Toybox/StringUtil/#CharacterEncoding-module) }) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -74,14 +74,14 @@ API 级别 3.0.0
 
 - [**utf8ArrayToString**](#utf8ArrayToString-instance_function)(utf8Array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Given an Array of UTF-8 bytes, return the String equivalent.
+    给定一个 UTF-8 字节组成的 Array，返回对应的 String。
 
 
 ## 实例方法详情
 
 ### **charArrayToString(charArray as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>)** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Given an Array of [Char](/connect-iq/api-docs/Toybox/Lang/Char/) objects, return the String equivalent
+给定一个由 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 对象组成的 Array，返回对应的 String
 
 Parameters:
 
@@ -109,7 +109,7 @@ Parameters:
 
 - input — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    Input that needs to be converted.
+    需要转换的输入。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))
 - :fromRepresentation — ([StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module)) —
@@ -167,7 +167,7 @@ API 级别 1.3.0
 
 ### **utf8ArrayToString(utf8Array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>)** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Given an Array of UTF-8 bytes, return the String equivalent
+给定一个 UTF-8 字节组成的 Array，返回对应的 String
 
 Parameters:
 

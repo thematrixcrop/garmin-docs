@@ -285,7 +285,7 @@ API 级别 5.0.1
 
 |
 
-Icon divider type
+图标分隔线类型
 
 |
 
@@ -305,7 +305,7 @@ Icon divider type
 
 - [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    Get the icon Retrieve the icon for this Menu2.
+    获取图标。检索此 Menu2 的图标。
 
 - [**getItem**](#getItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
 
@@ -356,7 +356,7 @@ Parameters:
 
     The MenuItem to add to the Menu2
 
-- May not be a [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
+- 不能是 [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)
 
 
 
@@ -537,11 +537,11 @@ API 级别 3.0.0
 
 设置或更改所需的分隔线类型。
 
-If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module).
+如果设置为 [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)。
 
-For [IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) and [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/), icon and checkbox will be rendered on the left side of the divider if item is [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) or `default` aligned.
+对于 [IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) 和 [CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)，如果项目采用 [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) 或 `default` 对齐，图标和复选框将渲染在分隔线左侧。
 
-For [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/), toggle icon will be rendered on the left side of the divider, if item is [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) aligned only.
+对于 [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)，仅当项目采用 [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) 对齐时，切换图标才会渲染在分隔线左侧。
 
 [Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 对于支持分隔符的设备，如果未设置或传入 `null`，则使用该值。
 

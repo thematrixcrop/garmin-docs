@@ -261,7 +261,7 @@ API 级别 1.3.0
 
 将 String 转换为 Double。
 
-If a String is in the numeric form of "123" or "123.45", convert it to a Double. Additional characters after the detected floating point value will be ignored. Strings that cannot be interpreted as a Double, or whose value exceeds that which can be represented in a Double, will result in a `null` value.
+如果 String 采用 "123" 或 "123.45" 的数字形式，则将其转换为 Double。检测到的浮点值之后的其他字符将被忽略。无法解释为 Double 的字符串，或其值超出 Double 可表示范围的字符串，将产生 `null` 值。
 
 Example:
 
@@ -297,7 +297,7 @@ API 级别 3.1.0
 
 将 String 转换为 Float。
 
-If a String is in the numeric form of "123" or "123.45", convert it to a Float. Additional characters after the detected floating point value will be ignored. Strings that cannot be interpreted as a Float, or whose value exceeds that which can be represented in a Float, will result in a `null` value.
+如果 String 采用 "123" 或 "123.45" 的数字形式，则将其转换为 Float。检测到的浮点值之后的其他字符将被忽略。无法解释为 Float 的字符串，或其值超出 Float 可表示范围的字符串，将产生 `null` 值。
 
 Example:
 
@@ -333,7 +333,7 @@ API 级别 1.0.0
 
 将 String 转换为 Long。
 
-If a String is in the numeric form of "123", it can be converted to a Long. Additional characters after the detected number value will be ignored. Strings that cannot be interpreted as a Long, or whose value exceeds that which can be represented in a Long, will result in a `null` value.
+如果 String 采用 "123" 的数字形式，则可以将其转换为 Long。检测到的数字值之后的其他字符将被忽略。无法解释为 Long 的字符串，或其值超出 Long 可表示范围的字符串，将产生 `null` 值。
 
 Example:
 
@@ -427,7 +427,7 @@ API 级别 1.0.0
 
 将 String 转换为 Number。
 
-If a String is in the numeric form of "123", it can be converted to a Number. Additional characters after the detected number value will be ignored. Strings that cannot be interpreted as a Number, or whose value exceeds that which can be represented in a Number, will result in a `null` value.
+如果 String 采用 "123" 的数字形式，则可以将其转换为 Number。检测到的数字值之后的其他字符将被忽略。无法解释为 Number 的字符串，或其值超出 Number 可表示范围的字符串，将产生 `null` 值。
 
 Example:
 

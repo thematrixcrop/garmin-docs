@@ -1,13 +1,13 @@
 ---
 title: "Module: Toybox.Time.Gregorian"
 ---
-# Module: Toybox.Time.Gregorian
+# 模块：Toybox.Time.Gregorian
 
 ## 概述
 
 The Gregorian module provides an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
 
-For convenience, several time constants are defined that represent the number of seconds per year, per day, per hour, and per minute.
+为方便使用，定义了几个时间常量，分别表示每年、每天、每小时和每分钟的秒数。
 
 ## 另见：
 
@@ -353,7 +353,7 @@ Parameters:
 
 Example:
 
-Get Info for today in local time (assume CST)
+获取今天本地时间的信息（假定为 CST）
 
 ```
 using Toybox.System;
@@ -377,7 +377,7 @@ Returns:
 
 - [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
-    Info for the supplied Moment formatted according to the specified format type in local time.
+    以本地时间按照指定的格式类型格式化所提供 Moment 的信息。
 
 
 Since:
@@ -626,7 +626,7 @@ Parameters:
 
 Example:
 
-Get Info for today in UTC
+获取今天 UTC 时间的信息
 
 ```
 using Toybox.System;
@@ -650,7 +650,7 @@ Returns:
 
 - [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
-    Info for the supplied Moment formatted according to the specified format type in UTC time.
+    以 UTC 时间按照指定的格式类型格式化所提供 Moment 的信息。
 
 
 另见：

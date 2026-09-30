@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.UserProfile"
 ---
-# Module: Toybox.UserProfile
+# 模块：Toybox.UserProfile
 
 ## 概述
 
@@ -118,7 +118,7 @@ API 级别 1.2.6
 
 - [**getUserActivityHistory**](#getUserActivityHistory-instance_function)() as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
-    Get an iterator for Activity history for the user.
+    获取用户活动历史记录的迭代器。
 
 
 ## 实例方法详情
@@ -127,7 +127,7 @@ API 级别 1.2.6
 
 返回当前活动用于获取心率区间阈值的运动项目。
 
-If the active sport does not have sport specific zones, it will return [HR\_ZONE\_SPORT\_GENERIC](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const).
+如果活动的运动项目没有特定于运动项目的区域，则返回 [HR\_ZONE\_SPORT\_GENERIC](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const)。
 
 Example:
 
@@ -440,7 +440,7 @@ Returns:
 
 - [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/) —
 
-    Iterator object
+    迭代器对象
 
 
 Since:

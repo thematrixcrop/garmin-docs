@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.ScanCode"
 ---
-# Module: Toybox.ScanCode
+# 模块：Toybox.ScanCode
 
 ## 概述
 

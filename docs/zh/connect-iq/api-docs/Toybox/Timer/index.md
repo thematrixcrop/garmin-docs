@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Timer"
 ---
-# Module: Toybox.Timer
+# 模块：Toybox.Timer
 
 ## 概述
 

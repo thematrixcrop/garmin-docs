@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for Bike Power.
+自行车功率的侦听器类。
 
 Example:
 

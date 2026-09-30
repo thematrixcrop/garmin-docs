@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates that a storage limit has been reached
+表示已达到存储限制
 
 Since:
 

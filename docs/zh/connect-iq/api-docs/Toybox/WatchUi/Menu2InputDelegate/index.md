@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Menu2InputDelegate responds to a Menu2 selection.
+Menu2InputDelegate 响应 Menu2 选择。
 
 This class should be extended to handle selected Menu2 items.
 

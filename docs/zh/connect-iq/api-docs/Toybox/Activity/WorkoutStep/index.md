@@ -161,7 +161,7 @@ API 级别 3.2.0
 
 - [**durationValue**](#durationValue-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    How long the step should last.
+    步骤应持续多长时间。
 
 - [**targetType**](#targetType-var) as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
 
@@ -195,7 +195,7 @@ Returns:
 
 ### var durationValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-How long the step should last
+步骤应持续多长时间
 
 Since:
 

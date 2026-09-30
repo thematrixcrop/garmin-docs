@@ -34,7 +34,7 @@ API 级别 3.0.0
 
 - [**onCustomButton**](#onCustomButton-instance_function)(button as [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/)) as **Void**
 
-    Handle a CustomButton being selected in the Media Player.
+    处理 Media Player 中选中的 CustomButton。
 
 - [**onRepeat**](#onRepeat-instance_function)() as **Void**
 
@@ -92,7 +92,7 @@ API 级别 3.0.0
 
 ### **onCustomButton(button as [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/))** as **Void**
 
-Handle a CustomButton being selected in the Media Player
+处理 Media Player 中选中的 CustomButton
 
 Parameters:
 

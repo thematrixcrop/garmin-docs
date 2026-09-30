@@ -1032,7 +1032,7 @@ Returns:
 
 当前 GPS 精度。
 
-GPS accuracy values range from 0-4. A value of 0 indicates an accuracy value is not available, while a value of 4 indicates a good GPS fix.
+GPS 精度值范围为 0-4。值为 0 表示精度值不可用，值为 4 表示 GPS 定位良好。
 
 Since:
 
@@ -2004,7 +2004,7 @@ Returns:
 
 当前前自行车拨链器索引。
 
-Index values range from from 1 to the frontDerailleurMax.
+索引值范围为 1 到 frontDerailleurMax。
 
 Since:
 
@@ -3173,7 +3173,7 @@ Returns:
 
 当前后自行车变速器索引。
 
-Index values range from from 1 to the rearDerailleurMax.
+索引值范围为 1 到 rearDerailleurMax。
 
 Since:
 

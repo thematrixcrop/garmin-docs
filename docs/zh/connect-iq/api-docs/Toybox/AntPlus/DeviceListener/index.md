@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Listener class for Device.
+设备的侦听器类。
 
 Since:
 

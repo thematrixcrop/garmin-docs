@@ -149,7 +149,7 @@ width
 
 Example:
 
-Formatting time with leading zeros
+使用前导零格式化时间
 
 ```
 // Format the time to display "08:03:15"

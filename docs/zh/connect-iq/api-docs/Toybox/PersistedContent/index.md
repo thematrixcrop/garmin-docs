@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.PersistedContent"
 ---
-# Module: Toybox.PersistedContent
+# 模块：Toybox.PersistedContent
 
 ## 概述
 
@@ -246,43 +246,43 @@ API 级别 2.2.0
 
 - [**getAppCourses**](#getAppCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the subset of courses installed on the system that are owned by the application.
+    获取系统上安装的、归应用所有的路线子集。
 
 - [**getAppRoutes**](#getAppRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the subset of routes installed on the system that are owned by the application.
+    获取系统上安装的、归应用所有的路线子集。
 
 - [**getAppTracks**](#getAppTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the subset of tracks installed on the system that are owned by the application.
+    获取系统上安装的、归应用所有的轨迹子集。
 
 - [**getAppWaypoints**](#getAppWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the subset of waypoints installed on the system that are owned by the application.
+    获取系统上安装的、归应用所有的航点子集。
 
 - [**getAppWorkouts**](#getAppWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the subset of workouts installed on the system that are owned by the application.
+    获取系统上安装的、归应用所有的训练。
 
 - [**getCourses**](#getCourses-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the courses installed on the system.
+    获取系统上安装的路线。
 
 - [**getRoutes**](#getRoutes-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the routes installed on the system.
+    获取系统上安装的路线。
 
 - [**getTracks**](#getTracks-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the tracks installed on the system.
+    获取系统上安装的轨迹。
 
 - [**getWaypoints**](#getWaypoints-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the waypoints installed on the system.
+    获取系统上安装的航点。
 
 - [**getWorkouts**](#getWorkouts-instance_function)() as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-    Get the workouts installed on the system.
+    获取系统上安装的训练。
 
 - [**saveWaypoint**](#saveWaypoint-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
 
@@ -306,7 +306,7 @@ API 级别 2.2.0
 
 ### **getAppCourses()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the subset of courses installed on the system that are owned by the application
+获取系统上安装的、归应用所有的路线子集
 
 Example:
 
@@ -459,7 +459,7 @@ API 级别 3.0.0
 
 ### **getAppRoutes()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the subset of routes installed on the system that are owned by the application
+获取系统上安装的、归应用所有的路线子集
 
 Example:
 
@@ -541,7 +541,7 @@ API 级别 3.0.0
 
 ### **getAppTracks()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the subset of tracks installed on the system that are owned by the application
+获取系统上安装的、归应用所有的轨迹子集
 
 Example:
 
@@ -577,7 +577,7 @@ API 级别 3.0.0
 
 ### **getAppWaypoints()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the subset of waypoints installed on the system that are owned by the application
+获取系统上安装的、归应用所有的航点子集
 
 Example:
 
@@ -752,7 +752,7 @@ API 级别 3.0.0
 
 ### **getAppWorkouts()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the subset of workouts installed on the system that are owned by the application
+获取系统上安装的、归应用所有的训练
 
 Example:
 
@@ -920,7 +920,7 @@ API 级别 3.0.0
 
 ### **getCourses()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the courses installed on the system
+获取系统上安装的路线
 
 Example:
 
@@ -1075,7 +1075,7 @@ API 级别 2.2.0
 
 ### **getRoutes()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the routes installed on the system
+获取系统上安装的路线
 
 Example:
 
@@ -1156,7 +1156,7 @@ API 级别 2.2.0
 
 ### **getTracks()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the tracks installed on the system
+获取系统上安装的轨迹
 
 Example:
 
@@ -1191,7 +1191,7 @@ API 级别 2.2.0
 
 ### **getWaypoints()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the waypoints installed on the system
+获取系统上安装的航点
 
 Example:
 
@@ -1368,7 +1368,7 @@ API 级别 2.2.0
 
 ### **getWorkouts()** as [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
-Get the workouts installed on the system
+获取系统上安装的训练
 
 Example:
 

@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for Bike Speed
+自行车速度的侦听器类
 
 Since:
 

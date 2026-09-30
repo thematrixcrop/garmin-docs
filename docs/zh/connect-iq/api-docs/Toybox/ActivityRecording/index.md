@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.ActivityRecording"
 ---
-# Module: Toybox.ActivityRecording
+# 模块：Toybox.ActivityRecording
 
 ## 概述
 
@@ -1098,7 +1098,7 @@ API 级别 3.0.10
 
 |
 
-Multisport leg started
+多项目运动的分段已开始
 
 |
 

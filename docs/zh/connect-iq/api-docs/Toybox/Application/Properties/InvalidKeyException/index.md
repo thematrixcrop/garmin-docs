@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates a the application attempted to access a key that does not exist in Application Settings
+表示应用尝试访问 Application Settings 中不存在的键
 
 Since:
 

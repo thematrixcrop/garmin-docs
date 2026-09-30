@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Time"
 ---
-# Module: Toybox.Time
+# 模块：Toybox.Time
 
 ## 概述
 
@@ -44,7 +44,7 @@ Monkey C 中的日期和时间格式相对开放，提供了用于短格式、�
 
 Example:
 
-Formatting and printing a date
+格式化和打印日期
 
 ```
 using Toybox.System;
@@ -89,7 +89,7 @@ API 级别 1.0.0
 
 ## 命名空间下的模块
 
-**Modules:** [Time.Gregorian](/connect-iq/api-docs/Toybox/Time/Gregorian/)
+模块：[Time.Gregorian](/connect-iq/api-docs/Toybox/Time/Gregorian/)
 
 ## 命名空间下的类
 
@@ -119,7 +119,7 @@ API 级别 1.0.0
 
 |
 
-Medium formatting is a mix of Numbers and Strings depending on which function is called. If formatted as a String, the result is an abbreviated form of the time or date.
+Medium 格式由 Numbers 和 Strings 混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
 
 |
 | FORMAT\_LONG | 2 |
@@ -128,7 +128,7 @@ API 级别 1.0.0
 
 |
 
-Long formatting is a mix of Numbers and Strings depending on which function is called. If formatted as a String, the result is an abbreviated form of the time or date.
+Long 格式由 Numbers 和 Strings 混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
 
 |
 

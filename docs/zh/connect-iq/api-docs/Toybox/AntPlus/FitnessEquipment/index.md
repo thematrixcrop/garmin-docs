@@ -72,27 +72,27 @@ API 级别 2.4.0
 
 - [**getEquipmentData**](#getEquipmentData-instance_function)() as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
-    Get the current training data from the FE.
+    获取 FE 的当前训练数据。
 
 - [**getResistanceSettings**](#getResistanceSettings-instance_function)() as [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
 
-    Get the resistance percentage setting of the fitness equipment for basic resistance training mode.
+    获取健身设备在基本阻力训练模式下的阻力百分比设置。
 
 - [**getSimulationSettings**](#getSimulationSettings-instance_function)() as [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
 
-    Get the wind and track resistance simulation settings.
+    获取风力和赛道阻力模拟设置。
 
 - [**getTargetPowerSettings**](#getTargetPowerSettings-instance_function)() as [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
-    Get the target power setting of the fitness equipment for target power training mode.
+    获取健身设备在目标功率训练模式下的目标功率设置。
 
 - [**getTrainerMode**](#getTrainerMode-instance_function)() as [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/)
 
-    Get the current training mode and supported modes of the fitness equipment.
+    获取健身设备的当前训练模式和支持的模式。
 
 - [**getUserSettings**](#getUserSettings-instance_function)() as [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
 
-    Get the user configuration settings of the fitness equipment for simulation training mode.
+    获取健身设备在模拟训练模式下的用户配置设置。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)
 
@@ -126,13 +126,13 @@ API 级别 2.4.0
 
 ### **getEquipmentData()** as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
-Get the current training data from the FE
+获取 FE 的当前训练数据
 
 Returns:
 
 - [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/) —
 
-    Fitness Equipment training data
+    健身设备训练数据
 
 
 Since:
@@ -141,13 +141,13 @@ API 级别 2.4.0
 
 ### **getResistanceSettings()** as [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
 
-Get the resistance percentage setting of the fitness equipment for basic resistance training mode. You should set resistance values and be in basic resistance training mode before calling this method, otherwise `null` or default values may be returned.
+获取健身设备在基本阻力训练模式下的阻力百分比设置。调用此方法前，应设置阻力值并处于基本阻力训练模式，否则可能返回 `null` 或默认值。
 
 Returns:
 
 - [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/) —
 
-    Fitness Equipment resistance Setting
+    健身设备阻力设置
 
 
 Since:
@@ -156,13 +156,13 @@ API 级别 2.4.0
 
 ### **getSimulationSettings()** as [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
 
-Get the wind and track resistance simulation settings. You should set wind and track settings, as well as be in simulation training mode before calling this method or `null` or default values may be returned.
+获取风力和赛道阻力模拟设置。调用此方法前，应设置风力和赛道设置，并处于模拟训练模式，否则可能返回 `null` 或默认值。
 
 Returns:
 
 - [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/) —
 
-    Fitness Equipment simulation settings
+    健身设备模拟设置
 
 
 Since:
@@ -171,13 +171,13 @@ API 级别 2.4.0
 
 ### **getTargetPowerSettings()** as [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
-Get the target power setting of the fitness equipment for target power training mode. You should set the target power and be in target power training mode before calling this method, otherwise `null` or default values may be returned.
+获取健身设备在目标功率训练模式下的目标功率设置。调用此方法前，应设置目标功率并处于目标功率训练模式，否则可能返回 `null` 或默认值。
 
 Returns:
 
 - [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/) —
 
-    Fitness Equipment target power Setting
+    健身设备目标功率设置
 
 
 Since:
@@ -186,13 +186,13 @@ API 级别 2.4.0
 
 ### **getTrainerMode()** as [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/)
 
-Get the current training mode and supported modes of the fitness equipment
+获取健身设备的当前训练模式和支持的模式
 
 Returns:
 
 - [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/) —
 
-    Fitness Equipment training mode
+    健身设备训练模式
 
 
 Since:
@@ -201,13 +201,13 @@ API 级别 2.4.0
 
 ### **getUserSettings()** as [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/)
 
-Get the user configuration settings of the fitness equipment for simulation training mode. You should set user settings values and be in simulation mode before calling this method, otherwise `null` or default values may be returned.
+获取健身设备在模拟训练模式下的用户配置设置。调用此方法前，应设置用户设置值并处于模拟模式，否则可能返回 `null` 或默认值。
 
 Returns:
 
 - [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/) —
 
-    Fitness Equipment user profile settings
+    健身设备用户配置文件设置
 
 
 Since:

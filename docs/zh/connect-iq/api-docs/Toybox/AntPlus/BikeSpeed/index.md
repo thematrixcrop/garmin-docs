@@ -198,7 +198,7 @@ API 级别 3.0.0
 
 - [**getSpeedInfo**](#getSpeedInfo-instance_function)() as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
-    getSpeedInfo - Returns the most recent BikeSpeedInfo.
+    getSpeedInfo - 返回最近的 BikeSpeedInfo。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)
 
@@ -209,7 +209,7 @@ API 级别 3.0.0
 
 ### **getSpeedInfo()** as [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
-getSpeedInfo - Returns the most recent BikeSpeedInfo
+getSpeedInfo - 返回最近的 BikeSpeedInfo
 
 Returns:
 

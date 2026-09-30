@@ -26,14 +26,14 @@ API 级别 3.3.0
 
 - [**next**](#next-instance_function)() as [UserProfile.UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/)
 
-    Get the data and increment the iterator to next entry.
+    获取数据并将迭代器递增到下一个条目。
 
 
 ## 实例方法详情
 
 ### **next()** as [UserProfile.UserActivity](/connect-iq/api-docs/Toybox/UserProfile/UserActivity/)
 
-Get the data and increment the iterator to next entry
+获取数据并将迭代器递增到下一个条目
 
 Returns:
 

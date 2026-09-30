@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Graphics"
 ---
-# Module: Toybox.Graphics
+# 模块：Toybox.Graphics
 
 ## 概述
 
@@ -76,7 +76,7 @@ API 级别 1.0.0
 
 |
 
-Medium Connect IQ font
+中号 Connect IQ 字体
 
 |
 | FONT\_LARGE | 4 |
@@ -85,7 +85,7 @@ API 级别 1.0.0
 
 |
 
-Large Connect IQ font
+大型 Connect IQ 字体
 
 |
 | FONT\_NUMBER\_MILD | 5 |
@@ -103,7 +103,7 @@ API 级别 1.0.0
 
 |
 
-Medium size number only Connect IQ font
+仅用于中号数字的 Connect IQ 字体
 
 |
 | FONT\_NUMBER\_HOT | 7 |
@@ -112,7 +112,7 @@ API 级别 1.0.0
 
 |
 
-Large size number only Connect IQ font
+仅用于大号数字的 Connect IQ 字体
 
 |
 | FONT\_NUMBER\_THAI\_HOT | 8 |
@@ -121,7 +121,7 @@ API 级别 1.0.0
 
 |
 
-Huge size number only Connect IQ font
+超大号纯数字 Connect IQ 字体
 
 |
 | FONT\_SYSTEM\_XTINY | 9 |
@@ -157,7 +157,7 @@ API 级别 1.3.0
 
 |
 
-Medium system font
+中号系统字体
 
 |
 | FONT\_SYSTEM\_LARGE | 13 |
@@ -166,7 +166,7 @@ API 级别 1.3.0
 
 |
 
-Large system font
+大号系统字体
 
 |
 | FONT\_SYSTEM\_NUMBER\_MILD | 14 |
@@ -184,7 +184,7 @@ API 级别 1.3.0
 
 |
 
-Medium size number only system font
+仅用于中号数字的系统字体
 
 |
 | FONT\_SYSTEM\_NUMBER\_HOT | 16 |
@@ -193,7 +193,7 @@ API 级别 1.3.0
 
 |
 
-Large size number only system font
+仅用于大号数字的系统字体
 
 |
 | FONT\_SYSTEM\_NUMBER\_THAI\_HOT | 17 |
@@ -202,7 +202,7 @@ API 级别 1.3.0
 
 |
 
-Huge size number only system font
+超大号纯数字系统字体
 
 |
 | FONT\_GLANCE | 18 |
@@ -211,7 +211,7 @@ API 级别 3.1.8
 
 |
 
-Glance text font
+速览文本字体
 
 |
 | FONT\_GLANCE\_NUMBER | 19 |
@@ -220,7 +220,7 @@ API 级别 3.1.8
 
 |
 
-Glance number only font
+速览专用数字字体
 
 |
 | FONT\_AUX1 | 20 |
@@ -327,7 +327,7 @@ API 级别 1.0.0
 
 |
 
-Light Gray
+浅灰色
 
 |
 | COLOR\_DK\_GRAY | 0x555555 |
@@ -479,7 +479,7 @@ API 级别 1.0.0
 
 |
 
-Left justify the text at the x/y coordinates
+将文本左对齐到 x/y 坐标
 
 |
 | TEXT\_JUSTIFY\_VCENTER | 4 |
@@ -498,7 +498,7 @@ API 级别 1.0.0
 
 Specifies how colors of a source pixel will be blended with the colors of a destination pixel.
 
-In the below descriptions
+在以下描述中
 
 ```
    S is source pixel
@@ -632,7 +632,7 @@ API 级别 4.2.1
 
 ### FilterMode
 
-Filter mode
+过滤模式
 
 Specifies how many pixels to sample
 
@@ -709,7 +709,7 @@ API 级别 1.2.0
 
 - [**fitTextToArea**](#fitTextToArea-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), truncate as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Get a text string to fit in a specified area.
+    获取适合指定区域的文本字符串。
 
 - [**getFontAscent**](#getFontAscent-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -725,7 +725,7 @@ API 级别 1.2.0
 
 - [**getVectorFont**](#getVectorFont-instance_function)(options as [Graphics.VectorFontOptions](/connect-iq/api-docs/Toybox/Graphics/#VectorFontOptions-named_type)) as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/) or **Null**
 
-    Get a font for this device.
+    获取此设备的字体。
 
 
 ## 类型定义详情
@@ -861,7 +861,7 @@ API 级别 4.0.0
 
 ### **fitTextToArea(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), truncate as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Get a text string to fit in a specified area
+获取适合指定区域的文本字符串
 
 注意：
 
@@ -887,7 +887,7 @@ Parameters:
 
 - truncate — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    If `true`, the resulting string may be truncated to fit within the provided area using the provided font
+    如果为 `true`，生成的字符串可能会使用提供的字体进行截断，以适应提供的区域
 
 
 Returns:
@@ -983,7 +983,7 @@ API 级别 1.2.0
 
 ### **getVectorFont(options as [Graphics.VectorFontOptions](/connect-iq/api-docs/Toybox/Graphics/#VectorFontOptions-named_type))** as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/) or **Null**
 
-Get a font for this device
+获取此设备的字体
 
 注意：
 
@@ -1076,7 +1076,7 @@ Returns:
 
 - [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/) —
 
-    if a font can be created for the given parameters, otherwise `null`
+    如果可以根据给定参数创建字体，则返回该字体；否则返回 `null`
 
 
 另见：

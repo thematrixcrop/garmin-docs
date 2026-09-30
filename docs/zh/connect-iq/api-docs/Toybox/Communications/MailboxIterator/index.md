@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Get the messages out of the Mailbox.
+获取 Mailbox 中的消息。
 
 **此项已弃用**
 
@@ -219,7 +219,7 @@ API 级别 1.0.0
 
 Returns:
 
-- Message content, or `null` if no messages
+- 消息内容；如果没有消息，则为 `null`
 
 
 Since:

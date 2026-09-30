@@ -268,7 +268,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    List of lights that are part of the network, `null` if light network state is not [LIGHT\_NETWORK\_STATE\_FORMED](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const)
+    属于网络的灯光列表；如果灯光网络状态不是 [LIGHT\_NETWORK\_STATE\_FORMED](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const)，则为 `null`
 
 
 Since:
@@ -374,9 +374,9 @@ API 级别 2.2.0
 
 用于右转向灯和左转向灯的信号开关。
 
-- If signal light is engaged, disengage it.
+- 如果信号灯已接通，则断开信号灯。
 
-- If signal light is disengaged, engage it.
+- 如果信号灯未接通，则接通信号灯。
 
 
 \*如果相反的信号当前处于启用状态，则此操作会自动将其停用。

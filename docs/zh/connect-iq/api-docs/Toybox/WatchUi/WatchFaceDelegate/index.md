@@ -135,7 +135,7 @@ API 级别 5.1.0
 
 处理超出功耗预算的部分更新。
 
-If the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) callback of the associated [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/) exceeds the power budget of the device, this method will be called with information about the limits that were exceeded.
+如果关联 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/) 的 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 回调超出设备的功耗预算，则会调用此方法，并提供有关超出限制的信息。
 
 Parameters:
 

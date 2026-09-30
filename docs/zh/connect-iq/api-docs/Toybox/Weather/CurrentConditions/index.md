@@ -193,7 +193,7 @@ This value may be removed after System 11.
 
 观测位置的文本描述。
 
-If the app does not have the position permission or the underlying weather provider does not provide a location name, this will be `null`.
+如果应用没有位置权限，或底层天气提供程序未提供位置名称，则此值为 `null`。
 
 Since:
 
@@ -210,7 +210,7 @@ Returns:
 
 观测到这些状况的位置。
 
-If the app does not have the position permission then this will be `null`.
+如果应用没有位置权限，则此值为 `null`。
 
 Since:
 

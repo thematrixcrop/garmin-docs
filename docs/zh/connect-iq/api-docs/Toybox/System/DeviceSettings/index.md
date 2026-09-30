@@ -105,7 +105,7 @@ API 级别 1.0.0
 
 - [**isNightModeEnabled**](#isNightModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Indicates the device is currently using night mode colors.
+    表示设备当前正在使用夜间模式颜色。
 
 - [**isTouchScreen**](#isTouchScreen-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -509,7 +509,7 @@ Returns:
 
 指示设备上是否启用了小组件速览。
 
-If glance mode is enabled, the system will pass up / down key events to a widget base page. Otherwise, the system will mask them out.
+如果启用速览模式，系统会将向上/向下按键事件传递给小组件基础页面。否则，系统会屏蔽这些事件。
 
 Since:
 
@@ -636,7 +636,7 @@ Returns:
 
 ### var isNightModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Indicates the device is currently using night mode colors
+表示设备当前正在使用夜间模式颜色
 
 Since:
 
@@ -875,7 +875,7 @@ Returns:
 
 设备屏幕高度，单位为像素。
 
-In some cases, this can be useful to determine the device type at runtime. However, to get the height of the screen area currently available to an app, use [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function).
+在某些情况下，这对于在运行时确定设备类型很有用。但是，要获取当前可供应用使用的屏幕区域高度，请使用 [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)。
 
 Since:
 
@@ -909,7 +909,7 @@ Returns:
 
 设备屏幕的像素宽度。
 
-In some cases, this can be useful to determine the device type at runtime. However, to get the width of the screen area currently available to an app, use [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function).
+在某些情况下，这对于在运行时确定设备类型很有用。但是，要获取当前可供应用使用的屏幕区域宽度，请使用 [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)。
 
 Since:
 
@@ -936,7 +936,7 @@ Returns:
 
 - [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module) —
 
-    LANGUAGE\_\* enum
+    LANGUAGE\_\* 枚举
 
 
 ### var temperatureUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)

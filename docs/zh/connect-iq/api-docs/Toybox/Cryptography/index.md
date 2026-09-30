@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Cryptography"
 ---
-# Module: Toybox.Cryptography
+# 模块：Toybox.Cryptography
 
 ## 概述
 
@@ -213,7 +213,7 @@ API 级别 3.0.0
 
 |
 
-MD5 implementation for Hash objects
+Hash 对象的 MD5 实现
 
 | -   [https://en.wikipedia.org/wiki/MD5](https://en.wikipedia.org/wiki/MD5)
 |
@@ -349,7 +349,7 @@ API 级别 3.0.0
 
 从要添加到 [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/) 的字节创建公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象。
 
-If a public key is received from another party, it can be converted to a [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object using this method.
+如果从其他方接收到公钥，则可以使用此方法将其转换为 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象。
 
 注意：
 

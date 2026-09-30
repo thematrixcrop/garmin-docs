@@ -34,7 +34,7 @@ API 级别 3.0.0
 
 - [**getPlaybackProfile**](#getPlaybackProfile-instance_function)() as [Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) or **Null**
 
-    Get the current media content playback profile.
+    获取当前媒体内容播放配置文件。
 
 - [**next**](#next-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
@@ -54,7 +54,7 @@ API 级别 3.0.0
 
 - [**repeatMode**](#repeatMode-instance_function)() as [Media.RepeatMode](/connect-iq/api-docs/Toybox/Media/#RepeatMode-module) or **Null**
 
-    Get the current repeat state.
+    获取当前重复状态。
 
 - [**shuffling**](#shuffling-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -100,7 +100,7 @@ API 级别 3.0.0
 
 ### **getPlaybackProfile()** as [Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) or **Null**
 
-Get the current media content playback profile
+获取当前媒体内容播放配置文件
 
 Returns:
 
@@ -192,7 +192,7 @@ API 级别 3.0.0
 
 ### **repeatMode()** as [Media.RepeatMode](/connect-iq/api-docs/Toybox/Media/#RepeatMode-module) or **Null**
 
-Get the current repeat state
+获取当前重复状态
 
 Returns:
 

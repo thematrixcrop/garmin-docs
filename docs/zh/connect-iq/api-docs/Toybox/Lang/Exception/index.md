@@ -39,7 +39,7 @@ if (myVar == false) {
 
 Example:
 
-Handling an Exception in a try-catch block
+处理 try-catch 代码块中的 Exception
 
 ```
 using Toybox.Lang;

@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Media"
 ---
-# Module: Toybox.Media
+# 模块：Toybox.Media
 
 ## 概述
 
@@ -156,7 +156,7 @@ API 级别 3.0.0
 
 |
 
-Invalid content type
+无效的内容类型
 
 |
 | CONTENT\_TYPE\_AUDIO | 1 |
@@ -182,7 +182,7 @@ API 级别 3.0.0
 
 |
 
-Invalid encoding type
+无效的编码类型
 
 |
 | ENCODING\_ADTS | 1 |
@@ -200,7 +200,7 @@ API 级别 3.0.0
 
 |
 
-MP3 audio encoding type
+MP3 音频编码类型
 
 |
 | ENCODING\_M4A | 3 |
@@ -209,7 +209,7 @@ API 级别 3.0.0
 
 |
 
-M4A audio encoding type
+M4A 音频编码类型
 
 |
 | ENCODING\_WAV | 4 |
@@ -235,7 +235,7 @@ API 级别 3.0.0
 
 |
 
-Invalid media content image format
+无效的媒体内容图像格式
 
 |
 | IMAGE\_FORMAT\_JPEG | 1 |
@@ -244,7 +244,7 @@ API 级别 3.0.0
 
 |
 
-JPEG media content image format
+JPEG 媒体内容图像格式
 
 |
 | IMAGE\_FORMAT\_PNG | 2 |
@@ -377,7 +377,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was started from the beginning.
+表示歌曲从头开始播放。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -387,7 +387,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was skipped and the next song was requested.
+表示歌曲已跳过，并请求播放下一首歌曲。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -397,7 +397,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was skipped and the previous song was requested.
+表示歌曲已跳过，并请求播放上一首歌曲。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -407,7 +407,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was played for the duration set in [PlaybackProfile.playbackNotificationThreshold](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackNotificationThreshold-var).
+表示歌曲已播放 [PlaybackProfile.playbackNotificationThreshold](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackNotificationThreshold-var) 中设置的时长。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -417,7 +417,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was completed.
+表示歌曲已播放完成。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -427,7 +427,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was stopped in the middle of playback.
+表示歌曲在播放过程中停止。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -437,7 +437,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was paused in the middle of playback.
+表示歌曲在播放过程中暂停。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |
@@ -447,7 +447,7 @@ API 级别 3.0.0
 
 |
 
-Indicates that a song was resumed after being paused.
+表示歌曲在暂停后恢复播放。
 
 | -   [ContentDelegate.onSong()](/connect-iq/api-docs/Toybox/Media/ContentDelegate/#onSong-instance_function)
 |

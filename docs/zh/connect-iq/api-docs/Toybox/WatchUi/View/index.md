@@ -32,7 +32,7 @@ Watch Faces
 
 [onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) → [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) → [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
-If the size of the data field has changed since the last onUpdate(), onLayout() will be called prior to onUpdate(). However, onLayout(), onShow(), and onUpdate() are not called for [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/) objects.
+如果数据字段的大小自上次 onUpdate() 以来发生变化，则会在 onUpdate() 之前调用 onLayout()。但是，对于 [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/) 对象，不会调用 onLayout()、onShow() 和 onUpdate()。
 
 ## 另见：
 
@@ -119,7 +119,7 @@ API 级别 1.0.0
 
 - [**getLayers**](#getLayers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
 
-    Get a copy of the layer stack currently added to the view, sorted by the drawing order, i.e.
+    获取当前添加到视图的图层堆栈副本，并按绘制顺序排序，即
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -233,7 +233,7 @@ Parameters:
 
 Example:
 
-Formatting the clock time as centered, blue text
+将时钟时间格式化为居中的蓝色文本
 
 ```
 // The layout.xml file contents:
@@ -286,7 +286,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    index of the layer from the bottom of the layer stack
+    图层堆栈中从底部开始的图层索引
 
 
 Since:
@@ -295,7 +295,7 @@ API 级别 3.1.0
 
 ### **getLayers()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
 
-Get a copy of the layer stack currently added to the view, sorted by the drawing order, i.e. from the bottom to the top.
+获取当前添加到视图的图层堆栈副本，并按绘制顺序排序，即从底部到顶部。
 
 Returns:
 
@@ -388,10 +388,10 @@ This is called when a View is brought to the foreground, after the call to [onSh
 
 - 当 [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 处于活动状态时以更高频率进行
 
-- More than one call to onUpdate() may occur during View transitions
+- View 转换期间可能会多次调用 onUpdate()
 
 
-If a class that extends View does not implement this function then any Drawable objects contained in the View will automatically be drawn.
+如果继承 View 的类未实现此函数，则 View 中包含的任何 Drawable 对象都会自动绘制。
 
 Parameters:
 

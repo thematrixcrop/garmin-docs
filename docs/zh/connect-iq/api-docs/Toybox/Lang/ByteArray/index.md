@@ -308,9 +308,9 @@ Throws:
 
 从 ByteArray 中移除一个字节。
 
-If the passed byte is found, the ByteArray size is decreased by one and elements beyond it are shifted to the next lower index. If the ByteArray has multiple matches, the matching byte at the lowest index will be removed but the other matching bytes will not be removed.
+如果找到传入的字节，ByteArray 大小将减少一，且其后的元素将向前移动到下一个较低的索引。如果 ByteArray 中存在多个匹配项，则会移除索引最低的匹配字节，而不会移除其他匹配字节。
 
-If no byte is provided as an argument, the ByteArray will remain unchanged and `remove()` will return `false`.
+如果没有将字节作为参数提供，ByteArray 将保持不变，且 `remove()` 将返回 `false`。
 
 Parameters:
 
@@ -345,9 +345,9 @@ Throws:
 
 从 ByteArray 中移除字节。
 
-For each instance of the byte that is found, the ByteArray size is decreased by one and elements beyond it are shifted to the next lower index.
+对于找到的每个字节实例，ByteArray 大小减一，其后的元素向下一个索引移动。
 
-If no byte is given as an argument, the ByteArray will remain unchanged and `removeAll()` will return `false`.
+如果没有将字节作为参数提供，ByteArray 将保持不变，且 `removeAll()` 将返回 `false`。
 
 Parameters:
 

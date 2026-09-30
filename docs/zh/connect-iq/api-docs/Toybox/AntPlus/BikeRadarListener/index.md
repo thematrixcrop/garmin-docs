@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for Bike Radar
+自行车雷达的侦听器类
 
 Since:
 
@@ -198,7 +198,7 @@ Parameters:
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    List of information for tracked targets (maximum of 8).
+    已跟踪目标的信息列表（最多 8 个）。
 
 
 Since:

@@ -1,7 +1,7 @@
 ---
 title: "First Avenger"
 ---
-# First Avenger
+# 第一复仇者
 
 | 属性 | 值 |
 | --- | --- |

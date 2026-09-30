@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates a [Background](/connect-iq/api-docs/Toybox/Background/) process has attempted to access or modify the object store.
+表示 [Background](/connect-iq/api-docs/Toybox/Background/) 进程尝试访问或修改对象存储。
 
 ## 另见：
 

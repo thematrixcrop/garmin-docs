@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for use with LightNetwork.
+与 LightNetwork 一起使用的侦听器类。
 
 Example:
 

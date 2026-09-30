@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Notifications"
 ---
-# Module: Toybox.Notifications
+# 模块：Toybox.Notifications
 
 ## 概述
 
@@ -251,7 +251,7 @@ Parameters:
 
 - :dismissPrevious — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        If true, dismiss all prior notifications that the app has posted. Note that this defaults to true if not provided.
+        如果为 true，则关闭应用之前发布的所有通知。请注意，如果未提供此值，则默认为 true。
 
 
 Example:

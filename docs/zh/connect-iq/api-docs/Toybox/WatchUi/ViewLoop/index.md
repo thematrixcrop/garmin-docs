@@ -164,7 +164,7 @@ API 级别 3.4.0
 
 |
 
-Loop in the forward direction
+向前循环
 
 |
 | DIRECTION\_PREVIOUS | 1 |
@@ -173,7 +173,7 @@ API 级别 3.4.0
 
 |
 
-Loop in the backward direction
+向后循环
 
 |
 
@@ -235,11 +235,11 @@ Parameters:
 
 - :page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        initial page index for the view loop. The default value is 0.
+        视图循环的初始页面索引。默认值为 0。
 
 - :wrap — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        if wrapping through the pages is allowed The default value is true.
+        如果允许循环浏览页面。默认值为 true。
 
 - :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 

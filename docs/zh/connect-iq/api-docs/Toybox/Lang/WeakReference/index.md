@@ -33,7 +33,7 @@ API 级别 1.2.0
 
 - [**get**](#get-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Get the Object referenced by the WeakReference.
+    获取 WeakReference 引用的 Object。
 
 - [**stillAlive**](#stillAlive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -44,7 +44,7 @@ API 级别 1.2.0
 
 ### **get()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Get the Object referenced by the WeakReference
+获取 WeakReference 引用的 Object
 
 Returns:
 
@@ -63,7 +63,7 @@ API 级别 1.2.0
 
 注意：
 
-I feel FANTASTIC and I am still alive. When you're dying I'll be still alive. And when you're dead I will be still alive.
+我感觉棒极了，而且我还活着。当你快死时，我还会活着。当你死了，我仍然会活着。
 
 Returns:
 

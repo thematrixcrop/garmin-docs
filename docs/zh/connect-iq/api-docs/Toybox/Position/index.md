@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Position"
 ---
-# Module: Toybox.Position
+# 模块：Toybox.Position
 
 ## 概述
 
@@ -9,7 +9,7 @@ The Position module provides an interface for location information and positioni
 
 此模块还提供两组常量：
 
-- **GEO:** Used to specify the [Location](/connect-iq/api-docs/Toybox/Position/Location/) formatting.
+- GEO：用于指定 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 格式。
 
 - **QUALITY:** Represents the GPS fix quality when the [Location](/connect-iq/api-docs/Toybox/Position/Location/) information was calculated
 
@@ -100,7 +100,7 @@ API 级别 3.3.6
 
 |
 
-GPS L1 and GLONASS
+GPS L1 和 GLONASS
 
 |
 | CONFIGURATION\_GPS\_GALILEO | 3 |
@@ -109,7 +109,7 @@ API 级别 3.3.6
 
 |
 
-GPS L1 and GALILEO L1
+GPS L1 和 GALILEO L1
 
 |
 | CONFIGURATION\_GPS\_BEIDOU | 4 |
@@ -118,7 +118,7 @@ API 级别 3.3.6
 
 |
 
-GPS L1 and BEIDOU L1
+GPS L1 和 BEIDOU L1
 
 |
 | CONFIGURATION\_GPS\_GLONASS\_GALILEO\_BEIDOU\_L1 | 5 |
@@ -196,7 +196,7 @@ API 级别 1.0.0
 
 |
 
-Military Grid Reference System, or MGRS (e.g. 4QFJ12345678)
+军事网格参考系统，即 MGRS（例如 4QFJ12345678）
 
 | -   [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
 |
@@ -214,7 +214,7 @@ API 级别 1.0.0
 
 |
 
-GPS is not available
+GPS 不可用
 
  |  |
 | QUALITY\_LAST\_KNOWN | 1 |
@@ -380,7 +380,7 @@ Passing the `:configuration` option is only supported with ConnectIQ 3.3.6 or la
 
 注意：
 
-Multitasking: Location events will be disabled when app enters inacitve state, and re-enabled when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+多任务：应用进入非活动状态时，位置事件将被禁用，并在再次变为活动状态时重新启用。这些状态变化通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
 Parameters:
 
@@ -650,7 +650,7 @@ Using this API requires enabling the Positioning Permission. This is useful for 
 
 Example:
 
-Get position info once per second
+每秒获取一次位置信息
 
 ```
 using Toybox.Position;

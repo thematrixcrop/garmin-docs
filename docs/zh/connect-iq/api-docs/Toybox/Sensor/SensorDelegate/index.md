@@ -120,7 +120,7 @@ API 级别 5.1.0
 
 - [**pairingRequired**](#pairingRequired-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Is sensor pairing required? Is called by the system to check if sensor pairing is required.
+    是否需要配对传感器？由系统调用，以检查是否需要配对传感器。
 
 
 ## 实例方法详情
@@ -129,7 +129,7 @@ API 级别 5.1.0
 
 配对传感器。
 
-Is called by the system to pair the sensor, during the native sensor pairing process.
+在原生传感器配对过程中，由系统调用以配对传感器。
 
 Parameters:
 
@@ -153,7 +153,7 @@ API 级别 5.1.0
 
 开始传感器扫描过程。
 
-Is called by the system to start the sensor scan process, during the native sensor pairing process.
+在原生传感器配对过程中，由系统调用以启动传感器扫描过程。
 
 Returns:
 
@@ -170,7 +170,7 @@ API 级别 5.1.0
 
 取消传感器配对。
 
-Is called by the system to unpair the sensor, during the native sensor removing process.
+在原生传感器移除过程中，由系统调用以取消传感器配对。
 
 Parameters:
 
@@ -192,9 +192,9 @@ API 级别 5.1.0
 
 ### **pairingRequired()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Is sensor pairing required?
+是否需要配对传感器？
 
-Is called by the system to check if sensor pairing is required.
+由系统调用，以检查是否需要配对传感器。
 
 Returns:
 

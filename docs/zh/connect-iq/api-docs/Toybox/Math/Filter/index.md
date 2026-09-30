@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 This is the base class for filters.
 
-Filters are devices or processes that remove some unwanted components or features from a signal or set of data. More detailed examples of filters can be found in the [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) and [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) definitions.
+过滤器是用于移除信号或数据集中的某些不需要的成分或特征的设备或过程。有关过滤器的更多详细示例，请参阅 [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) 和 [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) 定义。
 
 ## 另见：
 
@@ -114,7 +114,7 @@ Throws:
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
-    If called on base class Filter object
+    如果在基类 Filter 对象上调用
 
 
 ### **initialize(dictionary as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))**

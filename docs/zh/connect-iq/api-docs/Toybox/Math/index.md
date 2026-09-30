@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Math"
 ---
-# Module: Toybox.Math
+# 模块：Toybox.Math
 
 ## 概述
 
@@ -109,11 +109,11 @@ PI 的 32 位浮点表示
 
 - [**ln**](#ln-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get natural logarithm of a value.
+    获取值的自然对数。
 
 - [**log**](#log-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), base as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get logarithm of a value using the specified base.
+    使用指定底数获取值的对数。
 
 - [**mean**](#mean-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
@@ -355,7 +355,7 @@ API 级别 1.3.0
 
 ### **ln(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get natural logarithm of a value
+获取值的自然对数
 
 Parameters:
 
@@ -368,7 +368,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    natural logarithm of x
+    x 的自然对数
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -382,7 +382,7 @@ API 级别 2.3.0
 
 ### **log(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), base as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get logarithm of a value using the specified base
+使用指定底数获取值的对数
 
 Parameters:
 

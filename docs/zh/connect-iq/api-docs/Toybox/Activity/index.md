@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Activity"
 ---
-# Module: Toybox.Activity
+# 模块：Toybox.Activity
 
 ## 概述
 
@@ -39,7 +39,7 @@ API 级别 1.2.2
 
 |
 
-Freestyle stroke
+自由泳划水
 
 |
 | SWIM\_STROKE\_BACKSTROKE | 1 |
@@ -84,7 +84,7 @@ API 级别 1.2.2
 
 |
 
-Mixed stroke mode
+混合泳模式
 
 |
 | SWIM\_STROKE\_IM | 6 |
@@ -93,7 +93,7 @@ API 级别 1.2.2
 
 |
 
-Mixed interval with equal number of butterfly, backstroke, breaststroke, and freestyle, in that order.
+混合间歇，蝶泳、仰泳、蛙泳和自由泳的次数相同，并按此顺序排列。
 
 |
 
@@ -1516,7 +1516,7 @@ Returns:
 
 - [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) —
 
-    if a workout is active, `null` otherwise
+    如果锻炼处于活动状态，则返回相关值；否则返回 `null`
 
 
 Since:
@@ -1669,7 +1669,7 @@ Returns:
 
 - [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) —
 
-    if a workout is active and there is a next step, `null` otherwise
+    如果锻炼处于活动状态且存在下一步，则返回下一步；否则返回 `null`
 
 
 Since:

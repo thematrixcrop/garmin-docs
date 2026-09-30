@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 字体资源的表示。
 
-FontResource objects are returned by the [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) method.
+FontResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
 Since:
 

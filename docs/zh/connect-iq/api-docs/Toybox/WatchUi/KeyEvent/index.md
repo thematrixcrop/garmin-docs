@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-KeyEvent is an object sent to an [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when a physical button on the device is pressed.
+KeyEvent 是在设备上的物理按钮按下时发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的对象。
 
 ## 另见：
 

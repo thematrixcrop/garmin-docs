@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Application.Properties"
 ---
-# Module: Toybox.Application.Properties
+# 模块：Toybox.Application.Properties
 
 ## 概述
 

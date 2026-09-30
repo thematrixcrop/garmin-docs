@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.ActivityMonitor"
 ---
-# Module: Toybox.ActivityMonitor
+# 模块：Toybox.ActivityMonitor
 
 ## 概述
 
@@ -212,7 +212,7 @@ API 级别 1.2.2
 
 |
 
-Indicates that the given heart rate sample is invalid.
+表示给定的心率样本无效。
 
 |
 | 类型 | MOVE\_BAR\_LEVEL\_MAX | 5 |
@@ -242,7 +242,7 @@ The minimum level of the move bar
 
 - [**getHistory**](#getHistory-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)\>
 
-    Get an Array of ActivityMonitor.History objects.
+    获取 ActivityMonitor.History 对象的 Array。
 
 - [**getInfo**](#getInfo-instance_function)() as [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
@@ -267,7 +267,7 @@ Parameters:
 
 - 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索给定 Duration 的历史记录
 
-- If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last Number entries are retrieved
+- 如果 period 是 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则检索最后 Number 条记录
 
 
 - newestFirst — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
@@ -435,7 +435,7 @@ API 级别 1.2.1
 
 ### **getHistory()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)\>
 
-Get an Array of ActivityMonitor.History objects
+获取 ActivityMonitor.History 对象的 Array
 
 Returns:
 
@@ -455,7 +455,7 @@ API 级别 1.0.0
 
 ### **getInfo()** as [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
-Get the current [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
+获取当前 [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
 Returns:
 

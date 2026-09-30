@@ -228,7 +228,7 @@ API 级别 1.2.0
 
 - [**onAccept**](#onAccept-instance_function)(values as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Handle a confirm event from a Picker.
+    处理来自 Picker 的确认事件。
 
 - [**onActionMenu**](#onActionMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -236,14 +236,14 @@ API 级别 1.2.0
 
 - [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Handle a cancel event from a Picker.
+    处理来自 Picker 的取消事件。
 
 
 ## 实例方法详情
 
 ### **onAccept(values as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Handle a confirm event from a Picker
+处理来自 Picker 的确认事件
 
 注意：
 
@@ -288,7 +288,7 @@ API 级别 5.1.1
 
 ### **onCancel()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Handle a cancel event from a Picker
+处理来自 Picker 的取消事件
 
 Since:
 

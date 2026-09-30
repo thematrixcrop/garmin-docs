@@ -64,7 +64,7 @@ API 级别 3.1.0
 
 - [**onScanResults**](#onScanResults-instance_function)(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) as **Void**
 
-    If a scan is running this will be called when new ScanResults are received.
+    如果扫描正在运行，则在收到新的 ScanResults 时调用此函数。
 
 - [**onScanStateChange**](#onScanStateChange-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
@@ -316,7 +316,7 @@ API 级别 3.1.0
 
 ### **onScanResults(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/))** as **Void**
 
-If a scan is running this will be called when new ScanResults are received
+如果扫描正在运行，则在收到新的 ScanResults 时调用此函数
 
 Parameters:
 

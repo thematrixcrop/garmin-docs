@@ -20,7 +20,7 @@ Field 将来自 Application 或 Data Field 的自定义 FIT 数据记录到设�
 
 Once a Field is created with the [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) method, you can submit the next Field value with [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function), which will get written to the FIT file at the next opportunity. Depending on the device, writes to the FIT file may occur once per second or when new data is available (Smart Recording). Best practice is to only call [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function) when values have changed to accommodate Smart Recording.
 
-If [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function) is called before the previous data is written out, the previous value will be lost and replaced by the current data. For this reason, we do not recommend using this feature for time-sensitive data requiring sub-second granularity.
+如果在之前的数据写出前调用 [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function)，之前的值将丢失并被当前数据替换。因此，不建议将此功能用于需要亚秒级粒度的时间敏感型数据。
 
 ## 另见：
 

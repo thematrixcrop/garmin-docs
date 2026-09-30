@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.SensorLogging"
 ---
-# Module: Toybox.SensorLogging
+# 模块：Toybox.SensorLogging
 
 ## 概述
 

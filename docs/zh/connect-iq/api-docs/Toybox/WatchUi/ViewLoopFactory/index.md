@@ -220,7 +220,7 @@ Parameters:
 
 - page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Index for the view/delegate pair
+    视图/委托对的索引
 
 
 Returns:

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The Location object represents a specific position.
 
-Location objects provide methods for retrieving position coordinates in various formats.
+Location 对象提供了以各种格式获取位置坐标的方法。
 
 Since:
 

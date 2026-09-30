@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.PersistedLocations"
 ---
-# Module: Toybox.PersistedLocations
+# 模块：Toybox.PersistedLocations
 
 ## 概述
 
@@ -189,7 +189,7 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    Location object to persist
+    要持久化的位置对象
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -197,7 +197,7 @@ Parameters:
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        Name to assign to the waypoint. If not specified will be auto-named.
+        要分配给航点的名称。如果未指定，将自动命名。
 
 
 另见：

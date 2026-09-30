@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Attention"
 ---
-# Module: Toybox.Attention
+# 模块：Toybox.Attention
 
 ## 概述
 
@@ -45,7 +45,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that a key was pressed
+表示按下了按键
 
 |
 | TONE\_START | 1 |
@@ -54,7 +54,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that an activity has started
+表示活动已开始
 
 |
 | TONE\_STOP | 2 |
@@ -63,7 +63,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that an activity has stopped
+表示活动已停止
 
 |
 | TONE\_MSG | 3 |
@@ -72,7 +72,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that a message is available
+表示有消息可用
 
 |
 | TONE\_ALERT\_HI | 4 |
@@ -108,7 +108,7 @@ API 级别 1.0.0
 
 |
 
-Indicates a change in interval
+表示间隔发生变化
 
 |
 | TONE\_ALARM | 8 |
@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 |
 
-Indicates an alarm has triggered
+表示已触发闹钟
 
 |
 | TONE\_RESET | 9 |
@@ -126,7 +126,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that the activity was reset
+表示活动已重置
 
 |
 | TONE\_LAP | 10 |
@@ -135,7 +135,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that the user has completed a lap
+表示用户已完成一圈
 
 |
 | TONE\_CANARY | 11 |
@@ -171,7 +171,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that the activity was a failure
+表示活动失败
 
 |
 | TONE\_SUCCESS | 15 |
@@ -180,7 +180,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that the activity was a success
+表示活动成功
 
 |
 | TONE\_POWER | 16 |
@@ -198,7 +198,7 @@ API 级别 1.0.0
 
 |
 
-Indicates that the device has low battery power
+表示设备电池电量低
 
 |
 | TONE\_ERROR | 18 |
@@ -207,13 +207,13 @@ API 级别 1.0.0
 
 |
 
-Indicates an error occurred
+表示发生错误
 
 |
 
 ### FlashlightMode
 
-Flashlight modes
+手电筒模式
 
 Since:
 
@@ -238,7 +238,7 @@ API 级别 3.4.3
 
 ### FlashlightColor
 
-Flashlight colors
+手电筒颜色
 
 Since:
 
@@ -263,7 +263,7 @@ API 级别 3.4.3
 
 ### FlashlightBrightness
 
-Flashlight brightness
+手电筒亮度
 
 常量映射到设备特定的亮度级别
 
@@ -290,7 +290,7 @@ API 级别 3.4.3
 
 ### FlashlightStrobeMode
 
-Flashlight strobe modes
+手电筒频闪模式
 
 Since:
 
@@ -320,7 +320,7 @@ API 级别 3.4.3
 
 ### FlashlightStrobeSpeed
 
-Flashlight strobe speeds
+手电筒频闪速度
 
 Since:
 
@@ -345,7 +345,7 @@ API 级别 3.4.3
 
 ### FlashlightResult
 
-Flashlight result codes
+手电筒结果代码
 
 Since:
 
@@ -421,9 +421,9 @@ Parameters:
 
 - setting — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-- If `setting` is a [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), `false` will disable the backlight and `true` will enable the backlight at the system backlight level.
+- 如果 `setting` 是 [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)，`false` 将禁用背光，`true` 将以系统背光亮度级别启用背光。
 
-- If `setting` is a [Float](/connect-iq/api-docs/Toybox/Lang/Float/), the value 0.0 will disable the backlight and values greater than 0.0 and less than or equal to 1.0 will enable the backlight at the specified brightness.
+- 如果 `setting` 是 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)，值 0.0 将禁用背光，大于 0.0 且小于或等于 1.0 的值将以指定亮度启用背光。
 
 
 
@@ -611,7 +611,7 @@ Throws:
 
 - BacklightOnTooLongException 在具有防烧屏保护的产品上，如果背光连续点亮时间过长，则会引发此异常
 
-- InvalidOptionsException If the Float value is outside the valid range.
+- 如果 Float 值超出有效范围，则抛出 InvalidOptionsException。
 
 
 ### **hasFlashlightColor(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -899,7 +899,7 @@ Parameters:
 - mode — ([Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module))
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Flashlight mode options
+    手电筒模式选项
 
 - :color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
@@ -907,7 +907,7 @@ Parameters:
 
 - :strobeMode — ([Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module)) —
 
-        Mode of strobe. Default is FLASHLIGHT\_STROBE\_MODE\_BLINK.
+        频闪模式。默认值为 FLASHLIGHT\_STROBE\_MODE\_BLINK。
 
 - :strobeSpeed — ([Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module)) —
 
@@ -915,7 +915,7 @@ Parameters:
 
 - :brightness — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module)) —
 
-        Intensity of the flashlight. Default is FLASHLIGHT\_BRIGHTNESS\_MEDIUM.
+        闪光灯的亮度。默认值为 FLASHLIGHT\_BRIGHTNESS\_MEDIUM。
 
 
 :::details 支持的设备
@@ -984,7 +984,7 @@ The vibrate method takes an Array containing at least one [VibeProfile](/connect
 
 注意：
 
-Forerunner devices do not support vibration patterns. Vibration may still be used, but the vibration will always run at the same duty cycle.
+Forerunner 设备不支持振动模式。仍然可以使用振动，但振动始终以相同的占空比运行。
 
 Parameters:
 

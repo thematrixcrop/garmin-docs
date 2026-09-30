@@ -35,7 +35,7 @@ API 级别 4.2.0
 
 - [**getIcon**](#getIcon-instance_function)() as [Complications.Icon](/connect-iq/api-docs/Toybox/Complications/#Icon-named_type) or **Null**
 
-    Get the complication icon.
+    获取复杂功能图标。
 
 - [**getType**](#getType-instance_function)() as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) or **Null**
 
@@ -84,7 +84,7 @@ API 级别 4.2.0
 
 ### **getIcon()** as [Complications.Icon](/connect-iq/api-docs/Toybox/Complications/#Icon-named_type) or **Null**
 
-Get the complication icon. This is only available for user complications
+获取复杂功能图标。此功能仅适用于用户复杂功能
 
 Returns:
 

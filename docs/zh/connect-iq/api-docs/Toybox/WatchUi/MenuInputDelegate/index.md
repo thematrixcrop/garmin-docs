@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-MenuInputDelegate responds to a Menu selection.
+MenuInputDelegate 响应 Menu 选择。
 
 This class should be extended to handle selected Menu items.
 

@@ -285,7 +285,7 @@ Returns:
 
 位置的纬度和经度。
 
-If no GPS is available or is between GPS fix intervals (typically 1 second), the position is propagated (i.e. dead-reckoned) using the last known heading and last known speed. After a short period of time, the position will cease to be propagated to avoid excessive accumulation of position errors.
+如果 GPS 不可用，或处于 GPS 定位间隔期间（通常为 1 秒），则会使用上次已知的航向和速度推算位置（即航位推算）。经过一小段时间后，为避免位置误差过度累积，系统将停止推算位置。
 
 Since:
 

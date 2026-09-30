@@ -125,19 +125,19 @@ API 级别 2.4.0
 
 - [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Filtered instantaneous cadence (0 - 255 strides/min).
+    经过过滤的瞬时步频（0 - 255 步/分钟）。
 
 - [**groundContactBalance**](#groundContactBalance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Filtered instantaneous ground contact balance (0 - 100%, 0.03125% precision).
+    经过过滤的瞬时触地平衡（0 - 100%，精度为 0.03125%）。
 
 - [**groundContactTime**](#groundContactTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Filtered instantaneous ground contact time (0 - 2047 ms).
+    经过过滤的瞬时触地时间（0 - 2047 毫秒）。
 
 - [**stanceTime**](#stanceTime-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Filtered instantaneous stance time percentage (0 - 100%, 0.25% precision).
+    经过过滤的瞬时站立时间百分比（0 - 100%，精度为 0.25%）。
 
 - [**stepCount**](#stepCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -149,7 +149,7 @@ API 级别 2.4.0
 
 - [**verticalOscillation**](#verticalOscillation-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Filtered instantaneous vertical oscillation (0 - 2047 mm, 0.25mm precision).
+    经过过滤的瞬时垂直振幅（0 - 2047 毫米，精度为 0.25 毫米）。
 
 - [**verticalRatio**](#verticalRatio-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -164,7 +164,7 @@ API 级别 2.4.0
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Filtered instantaneous cadence (0 - 255 strides/min)
+经过过滤的瞬时步频（0 - 255 步/分钟）
 
 Since:
 
@@ -176,7 +176,7 @@ Returns:
 
 ### var groundContactBalance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Filtered instantaneous ground contact balance (0 - 100%, 0.03125% precision)
+经过过滤的瞬时触地平衡（0 - 100%，精度为 0.03125%）
 
 Since:
 
@@ -188,7 +188,7 @@ Returns:
 
 ### var groundContactTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Filtered instantaneous ground contact time (0 - 2047 ms)
+经过过滤的瞬时触地时间（0 - 2047 毫秒）
 
 Since:
 
@@ -200,7 +200,7 @@ Returns:
 
 ### var stanceTime as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Filtered instantaneous stance time percentage (0 - 100%, 0.25% precision)
+经过过滤的瞬时站立时间百分比（0 - 100%，精度为 0.25%）
 
 Since:
 
@@ -236,7 +236,7 @@ Returns:
 
 ### var verticalOscillation as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Filtered instantaneous vertical oscillation (0 - 2047 mm, 0.25mm precision)
+经过过滤的瞬时垂直振幅（0 - 2047 毫米，精度为 0.25 毫米）
 
 Since:
 

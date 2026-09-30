@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Floats are 32-bit floating point values.
+浮点数是 32 位浮点值。
 
 默认情况下，Monkey C 中的小数值为 Float。
 

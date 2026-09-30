@@ -30,11 +30,11 @@ API 级别 3.0.0
 
 - [**getContentRef**](#getContentRef-instance_function)() as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
-    Get the underlying ContentRef object.
+    获取底层 ContentRef 对象。
 
 - [**getMetadata**](#getMetadata-instance_function)() as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)
 
-    Get the metadata for this object.
+    获取此对象的元数据。
 
 - [**getPlaybackStartPosition**](#getPlaybackStartPosition-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -53,7 +53,7 @@ API 级别 3.0.0
 
 ### **getContentRef()** as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
-Get the underlying ContentRef object
+获取底层 ContentRef 对象
 
 Returns:
 
@@ -65,7 +65,7 @@ API 级别 3.0.0
 
 ### **getMetadata()** as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)
 
-Get the metadata for this object
+获取此对象的元数据
 
 Returns:
 

@@ -31,7 +31,7 @@ The SensorHistoryIterator describes a sequence of [SensorSample](/connect-iq/api
 
 Example:
 
-Gets a SensorHistoryIterator object to be used with the below methods
+获取用于以下方法的 SensorHistoryIterator 对象
 
 ```
 using Toybox.SensorHistory;

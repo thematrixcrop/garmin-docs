@@ -24,7 +24,7 @@ Toybox.WatchUi.DataField
 
 SimpleDataField 是一种特殊的 View，它通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
-Just like in a [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/), a SimpleDataField automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) once per second via the [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) method. In exchange for the flexibility offered in a DataField, all field layout is handled automatically in a SimpleDataField.
+与 [DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/) 一样，SimpleDataField 会通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。作为 DataField 所提供灵活性的交换，SimpleDataField 会自动处理所有字段布局。
 
 SimpleDataField 需要两个项目：
 

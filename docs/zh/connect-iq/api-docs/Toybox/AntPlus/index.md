@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.AntPlus"
 ---
-# Module: Toybox.AntPlus
+# 模块：Toybox.AntPlus
 
 ## 概述
 
@@ -203,7 +203,7 @@ API 级别 3.1.0
 
 |
 
-Invalid front gear index
+无效的前齿轮索引
 
 |
 | 类型 | INVALID\_CADENCE | \-1 |
@@ -226,7 +226,7 @@ API 级别 3.1.0
 
 |
 
-Invalid max gears value
+无效的最大齿轮数值
 
 |
 | 类型 | REAR\_GEAR\_INVALID | 31 |
@@ -235,7 +235,7 @@ API 级别 3.1.0
 
 |
 
-Invalid rear gear index
+无效的后齿轮索引
 
 |
 
@@ -295,7 +295,7 @@ API 级别 3.1.0
 
 |
 
-Message sent successfully
+消息发送成功
 
 |
 | MESSAGE\_SENT\_FAILED | 1 |
@@ -304,7 +304,7 @@ API 级别 3.1.0
 
 |
 
-Message sent failed
+消息发送失败
 
 |
 | MESSAGE\_SENT\_COUNT | 2 |
@@ -326,7 +326,7 @@ API 级别 3.1.0
 
 |
 
-Manufacturer specific message sent
+已发送制造商特定消息
 
 |
 | MESSAGE\_TYPE\_PAGE\_REQUEST | 1 |
@@ -406,7 +406,7 @@ API 级别 2.2.0
 
 |
 
-Light network is not yet formed
+灯光网络尚未形成
 
 |
 | LIGHT\_NETWORK\_STATE\_FORMING | 1 |
@@ -415,7 +415,7 @@ API 级别 2.2.0
 
 |
 
-Light network is forming
+灯光网络正在形成
 
 |
 | LIGHT\_NETWORK\_STATE\_FORMED | 2 |
@@ -424,7 +424,7 @@ API 级别 2.2.0
 
 |
 
-Light network is formed
+灯光网络已形成
 
 |
 
@@ -441,7 +441,7 @@ API 级别 2.2.0
 
 |
 
-Light modes are set by the user
+灯光模式由用户设置
 
 |
 | LIGHT\_NETWORK\_MODE\_AUTO | 1 |
@@ -450,7 +450,7 @@ API 级别 2.2.0
 
 |
 
-Light modes are automatically set based on ambient light (or time of day if there is no ambient light sensor available)
+灯光模式会根据环境光自动设置（如果没有可用的环境光传感器，则根据一天中的时间设置）
 
 |
 | LIGHT\_NETWORK\_MODE\_HIGH\_VIS | 2 |
@@ -459,7 +459,7 @@ API 级别 2.2.0
 
 |
 
-Light modes are automatically placed in their highest-visibility mode
+灯光模式会自动设置为可见性最高的模式
 
 |
 
@@ -535,7 +535,7 @@ API 级别 2.2.0
 
 |
 
-Fast flash mode
+快速闪光模式
 
 |
 | LIGHT\_MODE\_RANDOM\_FLASH | 8 |
@@ -594,7 +594,7 @@ API 级别 2.2.0
 
 |
 
-Hazard - right and left signals flash
+危险 - 左右转向灯闪烁
 
 |
 | LIGHT\_MODE\_CUSTOM\_5 | 59 |
@@ -656,7 +656,7 @@ API 级别 2.2.0
 
 |
 
-Headlight light type
+前灯灯光类型
 
 |
 | LIGHT\_TYPE\_TAILLIGHT | 2 |
@@ -683,7 +683,7 @@ API 级别 2.2.0
 
 |
 
-Left turn signal light type
+左转向灯类型
 
 |
 | LIGHT\_TYPE\_SIGNAL\_RIGHT | 5 |
@@ -997,7 +997,7 @@ API 级别 2.4.0
 
 |
 
-Left leg body location
+左腿身体位置
 
 |
 | BODY\_LOCATION\_RIGHT\_LEG | 1 |
@@ -1015,7 +1015,7 @@ API 级别 2.4.0
 
 |
 
-Front torso body location
+躯干前部身体位置
 
 |
 | BODY\_LOCATION\_WAIST\_MID\_BACK | 36 |

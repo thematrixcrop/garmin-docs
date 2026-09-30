@@ -84,7 +84,7 @@ API 级别 1.0.0
 
 ### GlanceTheme
 
-Glance color themes for supported devices
+支持的设备的速览颜色主题
 
 Since:
 
@@ -200,11 +200,11 @@ API 级别 4.0.0
 
 - [**loadProperties**](#loadProperties-instance_function)() as **Void** deprecated
 
-    Load the properties for the application.
+    加载应用的属性。
 
 - [**onActive**](#onActive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Invoked when app enters active mode, i.e.
+    在应用进入活动模式时调用，即
 
 - [**onAppInstall**](#onAppInstall-instance_function)() as **Void**
 
@@ -236,7 +236,7 @@ API 级别 4.0.0
 
 - [**onInactive**](#onInactive-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Invoked when app enters inactive mode, i.e.
+    在应用进入非活动模式时调用，即
 
 - [**onNightModeChanged**](#onNightModeChanged-instance_function)() as **Void**
 
@@ -264,7 +264,7 @@ API 级别 4.0.0
 
 - [**openAppSettingsEditor**](#openAppSettingsEditor-instance_function)() as **Void**
 
-    Function to open application settings editor.
+    打开应用设置编辑器的函数。
 
 - [**saveProperties**](#saveProperties-instance_function)() as **Void** deprecated
 
@@ -916,13 +916,13 @@ API 级别 3.1.0
 
 重写此方法，为表盘中已触发的目标提供一个 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)。
 
-- If a goal is reached when a watch face is running, this function will be triggered.
+- 如果表盘运行时达到目标，则会触发此函数。
 
 - The type of goal that was met will be provided, and the AppBase should return a View that displays a goal reached message and/or animations for that goal.
 
-- If a View is returned from this function, the main watch face view will be shutdown, and then new View will pushed.
+- 如果此函数返回 View，则主表盘视图将关闭，然后推送新的 View。
 
-- If this method is not overridden in the AppBase, or if it returns `null`, the native goal screens will be shown.
+- 如果未在 AppBase 中重写此方法，或该方法返回 `null`，则会显示原生目标屏幕。
 
 
 Parameters:
@@ -1697,7 +1697,7 @@ API 级别 3.1.0
 
 Override to return the number of days remaining in the trial
 
-If a developer wishes to implement time-based app trials, they will need to override this function to return the number of days remaining in the trial. This function will be called on app startup to determine if a trial is active and push a notice to the user of how many days remain in the trial. Note that if [allowTrialMessage()](/connect-iq/api-docs/Toybox/Application/AppBase/#allowTrialMessage-instance_function) is overridden to return `false`, no notifications will be displayed.
+如果开发者希望实现基于时间的应用试用，则需要重写此函数，以返回试用剩余天数。应用启动时会调用此函数，以确定试用是否处于活动状态，并向用户提示试用剩余天数。请注意，如果重写 [allowTrialMessage()](/connect-iq/api-docs/Toybox/Application/AppBase/#allowTrialMessage-instance_function) 使其返回 `false`，则不会显示任何通知。
 
 Returns:
 
@@ -1770,7 +1770,7 @@ API 级别 2.3.0
 
 此方法可能在 System 4 之后移除。
 
-Load the properties for the application
+加载应用的属性
 
 :::details 支持的设备
 
@@ -1956,7 +1956,7 @@ API 级别 1.0.0
 
 ### **onActive(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Invoked when app enters active mode, i.e. occupying screen in the foreground.
+在应用进入活动模式时调用，即占据前台屏幕。
 
 Parameters:
 
@@ -2376,27 +2376,27 @@ Parameters:
 
 - :resume — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        If true, indicates app has been resumed from suspension, restore the previously saved app state if needed.
+        如果为 true，则表示应用已从暂停状态恢复；如有需要，请恢复之前保存的应用状态。
 
 - :launchedFromGlance — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        If true, indicates the app is started from glance list as opposed to the the app list.
+        如果为 true，则表示应用是从速览列表启动的，而不是从应用列表启动的。
 
 - :launchedFromComplication — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        If present, indicates the complication index the app was launched from.
+        如果存在，则表示应用启动时所在的 complication 索引。
 
 - :launchedFromPostInstall — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        If present, indicates the app was launched from a post-install page.
+        如果存在，则表示应用是从安装后页面启动的。
 
 - :launchedFromWatchFaceSettingsEditor — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        If `true` indicates the watchface is started in watchface config mode.
+        如果为 `true`，表示表盘以表盘配置模式启动。
 
 - :configId — ([WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)) —
 
-        If present, represents the desired watch face settings to launch watch face with. use [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to fetch given settings.
+        如果存在，则表示用于启动表盘的目标表盘设置。使用 [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) 获取给定设置。
 
 
 Example:
@@ -2424,7 +2424,7 @@ API 级别 1.0.0
 
 重写此方法，以便在应用终止时处理应用清理。
 
-If the application needs to save data to the object store it should be done in this function. Once the function is complete, the application will terminate.
+如果应用需要将数据保存到对象存储中，应在此函数中执行。函数完成后，应用将终止。
 
 注意：
 
@@ -2438,7 +2438,7 @@ Parameters:
 
 - :suspend — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        If true, the app has been suspended and the current state can be resumed at a later time.
+        如果为 true，则表示应用已暂停，当前状态可以稍后恢复。
 
 
 另见：
@@ -2484,7 +2484,7 @@ API 级别 4.1.0
 
 ### **openAppSettingsEditor()** as **Void**
 
-Function to open application settings editor
+打开应用设置编辑器的函数
 
 Since:
 

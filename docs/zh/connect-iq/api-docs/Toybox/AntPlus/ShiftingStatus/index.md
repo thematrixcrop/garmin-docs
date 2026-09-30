@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Includes the shifting system status. Fields may return `null` if there is no valid information so you should `null` check before using them.
+包括变化的系统状态。字段可能会返回 `null`，如果没有有效信息，则应在使用前检查是否为 `null`。
 
 Since:
 
@@ -128,7 +128,7 @@ API 级别 3.1.0
 
 - [**frontDerailleur**](#frontDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
-    Front derailleur status.
+    前拨链器状态。
 
 - [**rearDerailleur**](#rearDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
@@ -139,7 +139,7 @@ API 级别 3.1.0
 
 ### var frontDerailleur as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
-Front derailleur status
+前拨链器状态
 
 Since:
 

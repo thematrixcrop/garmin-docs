@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Weather"
 ---
-# Module: Toybox.Weather
+# 模块：Toybox.Weather
 
 ## 概述
 
@@ -181,7 +181,7 @@ API 级别 3.2.0
 
 |
 
-Mostly cloudy
+大部分多云
 
 |
 | CONDITION\_RAIN | 3 |
@@ -289,7 +289,7 @@ API 级别 3.2.0
 
 |
 
-Light rain
+小雨
 
 |
 | CONDITION\_HEAVY\_RAIN | 15 |
@@ -298,7 +298,7 @@ API 级别 3.2.0
 
 |
 
-Heavy rain
+大雨
 
 |
 | CONDITION\_LIGHT\_SNOW | 16 |
@@ -307,7 +307,7 @@ API 级别 3.2.0
 
 |
 
-Light snow
+小雪
 
 |
 | CONDITION\_HEAVY\_SNOW | 17 |
@@ -316,7 +316,7 @@ API 级别 3.2.0
 
 |
 
-Heavy snow
+大雪
 
 |
 | CONDITION\_LIGHT\_RAIN\_SNOW | 18 |
@@ -325,7 +325,7 @@ API 级别 3.2.0
 
 |
 
-Light rain snow
+小雨夹雪
 
 |
 | CONDITION\_HEAVY\_RAIN\_SNOW | 19 |
@@ -334,7 +334,7 @@ API 级别 3.2.0
 
 |
 
-Heavy rain snow
+大雨夹雪
 
 |
 | CONDITION\_CLOUDY | 20 |
@@ -370,7 +370,7 @@ API 级别 3.2.0
 
 |
 
-Mostly clear
+大部分晴朗
 
 |
 | CONDITION\_LIGHT\_SHOWERS | 24 |
@@ -379,7 +379,7 @@ API 级别 3.2.0
 
 |
 
-Light showers
+小阵雨
 
 |
 | CONDITION\_SHOWERS | 25 |
@@ -397,7 +397,7 @@ API 级别 3.2.0
 
 |
 
-Heavy showers
+大阵雨
 
 |
 | CONDITION\_CHANCE\_OF\_SHOWERS | 27 |
@@ -604,7 +604,7 @@ API 级别 3.2.0
 
 |
 
-Freezing rain
+冻雨
 
 |
 | CONDITION\_SLEET | 50 |
@@ -622,7 +622,7 @@ API 级别 3.2.0
 
 |
 
-Ice snow
+冰雪
 
 |
 | CONDITION\_THIN\_CLOUDS | 52 |
@@ -648,15 +648,15 @@ Unknown
 
 - [**getCurrentConditions**](#getCurrentConditions-instance_function)() as [Weather.CurrentConditions](/connect-iq/api-docs/Toybox/Weather/CurrentConditions/) or **Null**
 
-    Get the most recently cached weather conditions.
+    获取最近缓存的天气状况。
 
 - [**getDailyForecast**](#getDailyForecast-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/)\> or **Null**
 
-    Get the daily forecast.
+    获取每日天气预报。
 
 - [**getHourlyForecast**](#getHourlyForecast-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Weather.HourlyForecast](/connect-iq/api-docs/Toybox/Weather/HourlyForecast/)\> or **Null**
 
-    Get the hourly forecast.
+    获取每小时天气预报。
 
 - [**getSunrise**](#getSunrise-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), date as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -671,7 +671,7 @@ Unknown
 
 ### **getCurrentConditions()** as [Weather.CurrentConditions](/connect-iq/api-docs/Toybox/Weather/CurrentConditions/) or **Null**
 
-Get the most recently cached weather conditions
+获取最近缓存的天气状况
 
 Returns:
 
@@ -686,7 +686,7 @@ API 级别 3.2.0
 
 ### **getDailyForecast()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/)\> or **Null**
 
-Get the daily forecast
+获取每日天气预报
 
 Returns:
 
@@ -701,7 +701,7 @@ API 级别 3.2.0
 
 ### **getHourlyForecast()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Weather.HourlyForecast](/connect-iq/api-docs/Toybox/Weather/HourlyForecast/)\> or **Null**
 
-Get the hourly forecast
+获取每小时天气预报
 
 Returns:
 
@@ -722,7 +722,7 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    Location to get the sunrise information
+    用于获取日出信息的位置
 
 - date — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
@@ -879,7 +879,7 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
-    Location to get the sunset information
+    用于获取日落信息的位置
 
 - date — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 

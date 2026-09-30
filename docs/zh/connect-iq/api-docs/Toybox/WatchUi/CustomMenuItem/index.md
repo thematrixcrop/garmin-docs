@@ -328,7 +328,7 @@ Parameters:
 
 - :dividerIcon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        icon for the divider area.
+        分隔区域的图标。
 
 
 另见：
@@ -383,7 +383,7 @@ API 级别 3.0.0
 
 设置或更改菜单图标。
 
-If device support [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) and parent menu is set to [DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module), `icon` (if not +null+) will be rendered on the left side of the divider.
+如果设备支持 [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 且父菜单设置为 [DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)，则 `icon`（如果不是 +null+）会呈现在分隔线左侧。
 
 Parameters:
 

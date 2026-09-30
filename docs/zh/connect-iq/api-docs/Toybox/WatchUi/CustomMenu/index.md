@@ -498,7 +498,7 @@ Throws:
 
 设置或更改所需的分隔线类型。
 
-If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module). Icon from [CustomMenuItem.setDividerIcon](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function) will be rendered on the left side of the divider.
+如果设置为 [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)。来自 [CustomMenuItem.setDividerIcon](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function) 的图标将呈现在分隔线左侧。
 
 Set to `null` to disable divider which may also disable [MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module), [CustomMenuItem.draw](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#draw-instance_function) will be called with full width of menu item.
 

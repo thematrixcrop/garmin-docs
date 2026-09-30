@@ -29,7 +29,7 @@ ClockTime 提供了一种便捷方式，可以以易于使用的格式获取当�
 
 Example:
 
-Get the time and print it to the console
+获取时间并将其打印到控制台
 
 ```
 using Toybox.System;

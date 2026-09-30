@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.WatchUi"
 ---
-# Module: Toybox.WatchUi
+# 模块：Toybox.WatchUi
 
 ## 概述
 
@@ -197,7 +197,7 @@ API 级别 1.1.2
 
 |
 
-Indicates extended key support
+表示支持扩展按键
 
 |
 | KEY\_PAGE | 17 |
@@ -614,7 +614,7 @@ API 级别 5.1.0
 
 ### MenuTheme
 
-Menu theme for supported devices
+支持的设备的菜单主题
 
 Since:
 
@@ -941,7 +941,7 @@ API 级别 3.1.0
 
 |
 
-Indicates the completion of an animation.
+表示动画完成。
 
 |
 | ANIMATION\_EVENT\_CANCELED | 1 |
@@ -950,7 +950,7 @@ API 级别 3.1.0
 
 |
 
-Indicates the cancel of the animation playback
+表示取消动画播放
 
 |
 
@@ -978,7 +978,7 @@ API 级别 3.4.0
 
 |
 
-Light theme for the action menu
+操作菜单的浅色主题
 
 |
 
@@ -1030,7 +1030,7 @@ API 级别 3.4.2
 
 - [**getCurrentView**](#getCurrentView-instance_function)() as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) or **Null**, [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null** \]
 
-    Get the current view that is displayed in the UI.
+    获取 UI 中当前显示的视图。
 
 - [**getSubscreen**](#getSubscreen-instance_function)() as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) or **Null**
 
@@ -1046,7 +1046,7 @@ API 级别 3.4.2
 
 - [**makeReviewTokenRequest**](#makeReviewTokenRequest-instance_function)(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseStatus as [WatchUi.ReviewRequestStatus](/connect-iq/api-docs/Toybox/WatchUi/#ReviewRequestStatus-module), token as [WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/) or **Null**) as **Void**) as **Void**
 
-    Initiate a request to ask for this app to be reviewed.
+    发起请求以邀请用户评价此应用。
 
 - [**popView**](#popView-instance_function)(transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) as **Void**
 
@@ -1148,7 +1148,7 @@ Parameters:
 
 Example:
 
-Move a bitmap across the screen from left to right
+将位图从左向右横跨屏幕移动
 
 ```
 using System.WatchUi;
@@ -1199,7 +1199,7 @@ Parameters:
 
 - :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        Master flag to enable or disable touch events while application is running in the foreground.
+        用于在应用于前台运行时启用或禁用触摸事件的主标志。
 
 
 :::details 支持的设备
@@ -1272,16 +1272,16 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    if called by application type that is not Watch App or Audio Content Provider, or called in background mode.
+    如果由既不是 Watch App 也不是 Audio Content Provider 的应用类型调用，或在后台模式下调用。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    If invalid options are provided.
+    如果提供了无效选项。
 
 
 ### **getCurrentView()** as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) or **Null**, [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null** \]
 
-Get the current view that is displayed in the UI
+获取 UI 中当前显示的视图
 
 Returns:
 
@@ -1430,7 +1430,7 @@ API 级别 1.0.0
 
 ### **makeReviewTokenRequest(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseStatus as [WatchUi.ReviewRequestStatus](/connect-iq/api-docs/Toybox/WatchUi/#ReviewRequestStatus-module), token as [WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/) or **Null**) as **Void**)** as **Void**
 
-Initiate a request to ask for this app to be reviewed
+发起请求以邀请用户评价此应用
 
 Parameters:
 
@@ -1971,7 +1971,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    if `token` is not a ReviewResponseToken.
+    如果 `token` 不是 ReviewResponseToken。
 
 
 ### **switchToView(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module))** as **Void**

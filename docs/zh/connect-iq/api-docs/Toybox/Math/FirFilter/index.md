@@ -18,7 +18,7 @@ Toybox.Math.Filter
 
 ## 概述
 
-Finite Impulse Response (FIR) filter implementation.
+有限冲激响应（FIR）过滤器实现。
 
 ## 另见：
 
@@ -108,4 +108,4 @@ Throws:
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    If the Dictionary does not have valid coefficients for filter or the :gain field is missing. Will also be thrown if an invalid JSON ResourceId is specified for coefficients instead of an array
+    如果 Dictionary 不包含有效的筛选器系数，或缺少 :gain 字段。如果为 coefficients 指定的不是数组的无效 JSON ResourceId，也会抛出此异常

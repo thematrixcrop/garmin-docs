@@ -85,7 +85,7 @@ Parameters:
 - [CHANNEL\_TYPE\_TX\_NOT\_RX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) - 双向发送（主机）
 
 
-- Master Channels are not allowed on the ANT+ Network
+- ANT+ 网络不允许主通道
 
 
 - [CHANNEL\_TYPE\_RX\_NOT\_TX](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_RX_NOT_TX-const) - 双向接收（从机）

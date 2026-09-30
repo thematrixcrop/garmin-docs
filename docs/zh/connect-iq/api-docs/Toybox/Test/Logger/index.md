@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The Logger class provides output capabilities to tests.
 
-It is not necessary to instantiate the Logger class. This is done automatically behind the scenes.
+无需实例化 Logger 类。此操作会在后台自动完成。
 
 Since:
 

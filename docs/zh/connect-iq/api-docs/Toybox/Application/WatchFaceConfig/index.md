@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Application.WatchFaceConfig"
 ---
-# Module: Toybox.Application.WatchFaceConfig
+# 模块：Toybox.Application.WatchFaceConfig
 
 ## 概述
 

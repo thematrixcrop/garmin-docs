@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Application"
 ---
-# Module: Toybox.Application
+# 模块：Toybox.Application
 
 ## 概述
 
@@ -20,7 +20,7 @@ API 级别 1.0.0
 
 ## 命名空间下的模块
 
-**Modules:** [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/), [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/), [Application.WatchFaceConfig](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/)
+模块：[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)、[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)、[Application.WatchFaceConfig](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/)
 
 ## 命名空间下的类
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Long represents a 64-bit signed integer.
+Long 表示有符号的 64 位整数。
 
 To use a Long value in Monkey C add 'l' to the end of the number.
 

@@ -16,11 +16,11 @@ Toybox.Lang.Object
 
 ## 概述
 
-InputDelegate handles basic input events.
+InputDelegate 处理基本输入事件。
 
 There are four types of basic inputs InputDelegate can handle:
 
-- Key, represented by [KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
+- 由 [KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/) 表示的键
 
 - Touch, represented by [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 

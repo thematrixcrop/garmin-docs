@@ -276,7 +276,7 @@ API 级别 5.2.2
 
 - [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Max speed for split in meters per second.
+    分段的最大速度，单位为米每秒。
 
 - [**splitDistance**](#splitDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -329,7 +329,7 @@ Returns:
 
 ### var maxSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Max speed for split in meters per second
+分段的最大速度，单位为米每秒
 
 Since:
 

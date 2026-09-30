@@ -177,7 +177,7 @@ API 级别 3.1.0
 
 - [**getResource**](#getResource-instance_function)() as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
-    Get the animation resource.
+    获取动画资源。
 
 - [**initialize**](#initialize-instance_function)(rez as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), options as { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
 
@@ -204,7 +204,7 @@ API 级别 3.1.0
 
 ### **getResource()** as [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
-Get the animation resource
+获取动画资源
 
 Returns:
 

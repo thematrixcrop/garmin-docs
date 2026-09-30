@@ -210,7 +210,7 @@ Parameters:
 
 - :label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        label string or string ResourceId for the MenuItem
+        MenuItem 的标签字符串或字符串 ResourceId
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 

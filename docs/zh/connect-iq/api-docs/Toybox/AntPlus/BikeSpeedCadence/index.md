@@ -198,7 +198,7 @@ API 级别 3.0.0
 
 - [**getSpeedCadenceInfo**](#getSpeedCadenceInfo-instance_function)() as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)
 
-    getSpeedCadenceInfo - Returns the most recent BikeSpeedCadenceInfo.
+    getSpeedCadenceInfo - 返回最近的 BikeSpeedCadenceInfo。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeSpeedCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener/) or **Null**)
 
@@ -209,7 +209,7 @@ API 级别 3.0.0
 
 ### **getSpeedCadenceInfo()** as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)
 
-getSpeedCadenceInfo - Returns the most recent BikeSpeedCadenceInfo
+getSpeedCadenceInfo - 返回最近的 BikeSpeedCadenceInfo
 
 Returns:
 

@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Application.Storage"
 ---
-# Module: Toybox.Application.Storage
+# 模块：Toybox.Application.Storage
 
 ## 概述
 

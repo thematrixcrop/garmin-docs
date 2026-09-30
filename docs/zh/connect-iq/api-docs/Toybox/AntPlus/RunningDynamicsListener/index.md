@@ -18,7 +18,7 @@ Toybox.AntPlus.DeviceListener
 
 ## 概述
 
-Listener class for Running Dynamics.
+跑步动态的侦听器类。
 
 Since:
 

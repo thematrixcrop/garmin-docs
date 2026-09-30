@@ -38,7 +38,7 @@ API 级别 4.2.0
 
 - [**getDeterminant**](#getDeterminant-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Get the transform determinant.
+    获取变换行列式。
 
 - [**getMatrix**](#getMatrix-instance_function)() as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \]
 
@@ -46,11 +46,11 @@ API 级别 4.2.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    initialize self to the identity transform | 1 0 0 | | 0 1 0 | | 0 0 1 |.
+    将自身初始化为单位变换 | 1 0 0 | | 0 1 0 | | 0 0 1 |。
 
 - [**invert**](#invert-instance_function)() as **Void**
 
-    Invert self.
+    反转自身。
 
 - [**preConcatenate**](#preConcatenate-instance_function)(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)) as **Void**
 
@@ -125,7 +125,7 @@ API 级别 4.2.0
 
 ### **getDeterminant()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Get the transform determinant
+获取变换行列式
 
 Since:
 
@@ -133,9 +133,9 @@ API 级别 4.2.0
 
 ### **getMatrix()** as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \]
 
-Get the transform values
+获取变换值
 
-Get the underlying values of this transform as an Array
+获取此变换的底层值组成的 Array
 
 ```
    | m00  m01  m02 |
@@ -149,7 +149,7 @@ API 级别 4.2.0
 
 ### **initialize()**
 
-initialize self to the identity transform
+将自身初始化为恒等变换
 
 ```
    |   1    0    0 |
@@ -163,7 +163,7 @@ API 级别 4.2.0
 
 ### **invert()** as **Void**
 
-Invert self
+反转自身
 
 Since:
 
@@ -276,7 +276,7 @@ Throws:
 
 - UnexpectedTypeException if parameter is not an Array
 
-- InvalidValueException if parameter does not have exactly 6 elements
+- 如果参数不恰好包含 6 个元素，则抛出 InvalidValueException
 
 
 ### **setToRotation(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**

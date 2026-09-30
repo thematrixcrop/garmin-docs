@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Complications"
 ---
-# Module: Toybox.Complications
+# 模块：Toybox.Complications
 
 ## 概述
 
@@ -178,7 +178,7 @@ API 级别 4.2.0
 
 |
 
-Invalid build-in complication type
+无效的内置复杂功能类型
 
 |
 | COMPLICATION\_TYPE\_BATTERY | 1 |
@@ -577,11 +577,11 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 - [**exitTo**](#exitTo-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
-    Launches the app associated with the complication.
+    启动与复杂功能关联的应用。
 
 - [**getComplication**](#getComplication-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
 
-    Given a complication Id, get the complication.
+    给定一个 complication Id，获取该 complication。
 
 - [**getComplications**](#getComplications-instance_function)() as [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
 
@@ -658,7 +658,7 @@ API 级别 4.2.0
 
 ### **exitTo(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as **Void**
 
-Launches the app associated with the complication
+启动与复杂功能关联的应用
 
 Parameters:
 
@@ -758,7 +758,7 @@ Throws:
 
 ### **getComplication(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
 
-Given a complication Id, get the complication
+给定一个 complication Id，获取该 complication
 
 Parameters:
 
@@ -793,7 +793,7 @@ Returns:
 
 - [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/) —
 
-    Iterator instance
+    迭代器实例
 
 
 Since:

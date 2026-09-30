@@ -18,11 +18,11 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates a invalid time was provided to [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function), which may be invalid because it either:
+表示向 [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) 提供了无效时间，该时间可能无效，原因是：
 
 - Occurs less than five minutes after the last background event occurred
 
-- Has a duration of less than five minutes
+- 持续时间少于五分钟
 
 
 Since:

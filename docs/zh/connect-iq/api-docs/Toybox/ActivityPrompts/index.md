@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.ActivityPrompts"
 ---
-# Module: Toybox.ActivityPrompts
+# 模块：Toybox.ActivityPrompts
 
 ## 概述
 

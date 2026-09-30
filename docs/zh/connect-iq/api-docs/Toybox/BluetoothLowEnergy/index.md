@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.BluetoothLowEnergy"
 ---
-# Module: Toybox.BluetoothLowEnergy
+# 模块：Toybox.BluetoothLowEnergy
 
 ## 概述
 
@@ -225,7 +225,7 @@ API 级别 4.2.5
 
 |
 
-GATT operation failed due to insufficent authentication
+GATT 操作因身份验证不足而失败
 
 |
 | STATUS\_GATT\_INSUFFICIENT\_ENCRYPTION\_FAIL | 19 |
@@ -234,7 +234,7 @@ API 级别 4.2.5
 
 |
 
-GATT operation failed due to insufficent encryption
+GATT 操作因加密不足而失败
 
 |
 | STATUS\_ENCRYPTION\_BOND\_FAIL | 100 |
@@ -243,7 +243,7 @@ API 级别 4.2.5
 
 |
 
-Initial Bond Procedure Failed
+初始配对过程失败
 
 |
 | STATUS\_ENCRYPTION\_PEER\_KEYS\_LOST | 101 |
@@ -577,11 +577,11 @@ Parameters:
 
 - mostSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
 
-    Most Significant 64-bits of the UUID
+    UUID 的最高有效 64 位
 
 - leastSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
 
-    Least Significant 64-bits of the UUID
+    UUID 的最低有效 64 位
 
 
 Returns:
@@ -679,7 +679,7 @@ Throws:
 
 - ([BluetoothLowEnergy.ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/)) —
 
-    If registration could not be completed
+    如果无法完成注册
 
 
 ### **setConnectionStrategy(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module))** as **Void**
@@ -773,14 +773,14 @@ Throws:
 
 - ([BluetoothLowEnergy.UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)) —
 
-    If string is not in valid format
+    如果字符串格式无效
 
 
 ### **unpairDevice(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/))** as **Void**
 
 Unpairs a peripheral device from the system
 
-If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect. If the device is not connected the system will stop searching for the device.
+如果设备已连接，BLE 子系统将断开与设备的连接，且不会尝试重新连接。如果设备未连接，系统将停止搜索设备。
 
 Parameters:
 

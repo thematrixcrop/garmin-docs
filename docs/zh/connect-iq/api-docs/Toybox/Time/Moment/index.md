@@ -18,9 +18,9 @@ Toybox.Lang.Object
 
 Moment 是一个不可变的时间点。
 
-Moment objects are closely related to [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects, and are frequently used together for time calculations. While a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) represents a span of time, a Moment represents a single point in time such as a specific date.
+Moment 对象与 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 对象密切相关，并经常结合使用以进行时间计算。[Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 表示一段时间，而 Moment 表示单个时间点，例如某个具体日期。
 
-Internally, Moment objects are stored as 32-bit integers representing the number of seconds since the UNIX epoch (January 1, 1970 at 00:00:00 UTC).
+在内部，Moment 对象以 32 位整数存储，表示自 UNIX 纪元（1970 年 1 月 1 日 00:00:00 UTC）以来的秒数。
 
 ## 另见：
 

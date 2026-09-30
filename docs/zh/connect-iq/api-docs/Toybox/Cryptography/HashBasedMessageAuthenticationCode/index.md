@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Hash-Based Message Authentication Code (HMAC) object.
+基于哈希的消息认证码（HMAC）对象。
 
 HashBasedMessageAuthenticationCode 是一个可使用 HMAC 算法计算消息验证码的对象。
 

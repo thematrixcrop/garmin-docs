@@ -83,7 +83,7 @@ Returns:
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Iterator of [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) objects for the descriptors discovered in the Characteristic
+    Characteristic 中发现的描述符的 [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 个对象的迭代器
 
 
 Since:

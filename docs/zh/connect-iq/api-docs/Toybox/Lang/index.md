@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Lang"
 ---
-# Module: Toybox.Lang
+# 模块：Toybox.Lang
 
 ## 概述
 
@@ -30,7 +30,7 @@ API 级别 3.1.0
 
 |
 
-IEEE 754 Single Precision Float Value (32-bits)
+IEEE 754 单精度浮点值（32 位）
 
 |
 | NUMBER\_FORMAT\_SINT16 | 1 |

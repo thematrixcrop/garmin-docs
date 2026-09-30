@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates that an invalid point was set.
+表示设置了无效点。
 
 Since:
 

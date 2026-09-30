@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Background"
 ---
-# Module: Toybox.Background
+# 模块：Toybox.Background
 
 ## 概述
 
@@ -567,7 +567,7 @@ Throws:
 
 - ([Background.ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/)) —
 
-    Indicates the data provided exceeds the data size limit (approximately 8 KB). If this exception is caught, the process will not exit and should attempt to call `Background.exit()` again with less data.
+    表示提供的数据超过数据大小限制（约 8 KB）。如果捕获此异常，进程不会退出，并应尝试再次使用较少的数据调用 `Background.exit()`。
 
 
 ### **getActivityCompletedEventRegistered()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -1138,7 +1138,7 @@ Throws:
 
 - ([Background.InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/)) —
 
-    Indicates an application has attempted to schedule a background event which either: \* Occurs less than five minutes after the last background event occurred \* Has a duration of less than five minutes
+    表示应用尝试安排后台事件，但该事件满足以下任一条件：\* 距上次后台事件发生不到五分钟 \* 持续时间少于五分钟
 
 
 ### **registerForWakeEvent()** as **Void**
@@ -1153,7 +1153,7 @@ API 级别 2.3.0
 
 显示确认对话框，请求启动后台任务所属的应用。
 
-If the dialog is confirmed, the application will open. If the dialog is declined, the application will not open and the dialog will be dismissed. This request is only valid for widget or device app background tasks, and will be ignored by watch face apps. [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) must be called at some point in the background process after this method is invoked because the confirmation dialog will only trigger after the background task exits.
+如果对话框已确认，应用将打开。如果对话框被拒绝，应用将不会打开，并且对话框将被关闭。此请求仅对小组件或设备应用的后台任务有效，表盘应用将忽略此请求。调用此方法后，必须在后台进程中的某个时间点调用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，因为确认对话框只有在后台任务退出后才会触发。
 
 Parameters:
 
@@ -1194,4 +1194,4 @@ Throws:
 
 - ([Background.MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)) —
 
-    Indicates the provided message exceeds the size limit (255 Bytes). Note that some characters may be larger than 1 Byte
+    表示提供的消息超过大小限制（255 Bytes）。请注意，某些字符可能大于 1 Byte

@@ -1102,7 +1102,7 @@ Parameters:
 
 - :lapTrigger — ([DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module)) —
 
-        Identifier of what triggered the lap
+        触发计圈的标识符
 
 
 :::details 支持的设备
@@ -2539,15 +2539,15 @@ API 级别 5.2.0
 
 注意：
 
-If using a Toybox::Activity:WorkoutStepInfo to set the workout, `WorkoutStepInfo.sport` and `WorkoutStepInfo.subsport` will be ignored and set to the current activity's settings. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutStep:
+如果使用 Toybox::Activity:WorkoutStepInfo 设置锻炼，WorkoutStepInfo.sport 和 WorkoutStepInfo.subsport 将被忽略，并设置为当前活动的设置。如果将 `.WorkoutStepInfo.step` 设置为 Toybox::Activity.WorkoutStep：
 
 ```
    * +WorkoutStep.durationType+ can only be set to +Activity.WORKOUT_STEP_DURATION_TIME+ or +Activity.WORKOUT_STEP_DURATION_DISTANCE+.
 ```
 
-- For `Activity.WORKOUT_STEP_DURATION_TIME`, `WorkoutStep.durationValue` is in seconds.
+- 对于 `Activity.WORKOUT_STEP_DURATION_TIME`，`WorkoutStep.durationValue` 的单位为秒。
 
-- For `Activity.WORKOUT_STEP_DURATION_DISTANCE`, `WorkoutStep.durationValue` is in meters.
+- 对于 `Activity.WORKOUT_STEP_DURATION_DISTANCE`，`WorkoutStep.durationValue` 的单位为米。
 
 - The values of `WorkoutStep.targetValueLow` and `WorkoutStep.targetValueHigh` depends on the value of `WorkoutStep.targetType`. See the FIT SDK for more details. If setting `.WorkoutStepInfo.step` to a Toybox::Activity.WorkoutIntervalStep:
 
@@ -2555,7 +2555,7 @@ If using a Toybox::Activity:WorkoutStepInfo to set the workout, `WorkoutStepInfo
 
 - The `WorkoutIntervalStep.activeStep` will occur first, followed by `WorkoutIntervalStep.restStep`.
 
-- If the intensity of the step following a `WorkoutIntervalStep` is `Activity.WORKOUT_INTENSITY_COOLDOWN`, the final rest step will be skipped. If using a Toybox::PersistedContent::Workout, note that:
+- 如果紧跟在 `WorkoutIntervalStep` 之后的步骤强度为 `Activity.WORKOUT_INTENSITY_COOLDOWN`，则会跳过最后的休息步骤。如果使用 Toybox::PersistedContent::Workout，请注意：
 
 - The workout's sport must match the current activity.
 

@@ -110,7 +110,7 @@ API 级别 1.2.0
 
 |
 
-Network key lengths
+网络密钥长度
 
 |
 
@@ -151,7 +151,7 @@ Network key lengths
 
 - [**searchTimeoutHighPriority**](#searchTimeoutHighPriority-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    High Priority search timeout that a receiving channel will wait for in order to start tracking a master \* Measured in 2.5s increments \* Limited to a maximum of 5 seconds (Range of 0 to 2).
+    高优先级搜索超时时间，接收通道将在该时间内等待，以开始跟踪主设备 \* 以 2.5 秒为增量进行测量 \* 最大限制为 5 秒（范围为 0 到 2）。
 
 - [**searchTimeoutLowPriority**](#searchTimeoutLowPriority-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -243,11 +243,11 @@ API 级别 1.0.0
 
 ### var searchTimeoutHighPriority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-High Priority search timeout that a receiving channel will wait for in order to start tracking a master
+高优先级搜索超时时间，接收通道将在该时间内等待，以开始跟踪主设备
 
 - 以 2.5 秒为增量进行测量
 
-- Limited to a maximum of 5 seconds (Range of 0 to 2)
+- 最多限制为 5 秒（范围为 0 到 2）
 
 
 Since:
@@ -260,7 +260,7 @@ The low Priority search timeout that a receiving channel will wait for in order 
 
 - 以 2.5 秒为增量进行测量
 
-- Limited to a maximum of 30 seconds (Range of 0 to 12)
+- 最多限制为 30 秒（范围为 0 到 12）
 
 
 Since:
@@ -311,7 +311,7 @@ Parameters:
 
         The Low Priority search timeout that a receiving channel will wait for in order to start tracking a master
 
-- Low Priority search provides the capability of searching for a master without interrupting other channels on the device
+- 低优先级搜索能够在不干扰设备上其他通道的情况下搜索主设备
 
 - Range of 0 to 12 (2.5s increments)
 
@@ -322,17 +322,17 @@ Parameters:
 
         The High Priority search timeout that a receiving channel will wait for in order to start tracking a master
 
-- Is triggered after the Low Priority search mode times out
+- 低优先级搜索模式超时后触发
 
 - Will interrupt other channels
 
 - Will take priority over any other open channels on that device
 
-- If it overlaps another channel the High Priority search takes priority and that other channel is blocked
+- 如果它与另一个通道重叠，则高优先级搜索具有优先权，另一个通道将被阻塞
 
-- Keeping this search type disabled unless you have great difficulty acquiring a master through Low Priority search is recommended
+- 建议仅在通过低优先级搜索获取主设备非常困难时，才启用此搜索类型
 
-- High Priority searches are disabled in data-fields, and will be ignored for that application type
+- 数据字段中禁用高优先级搜索，并且对于该应用类型将忽略高优先级搜索
 
 - Range of 0 to 2 (2.5s increments)
 

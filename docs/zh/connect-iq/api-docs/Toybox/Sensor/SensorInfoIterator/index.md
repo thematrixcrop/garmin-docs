@@ -22,7 +22,7 @@ The SensorIterator describes a collection of [SensorInfo](/connect-iq/api-docs/T
 
 Example:
 
-Gets a SensorIterator object for all registered external heart rate sensors on the device
+获取设备上所有已注册外部心率传感器的 SensorIterator 对象
 
 ```
 using Toybox.Sensor;
@@ -52,7 +52,7 @@ API 级别 3.2.0
 
 获取当前 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 并前进。
 
-Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and advance self to refer to the next.
+获取当前 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)，并将自身前进到下一个。
 
 Returns:
 

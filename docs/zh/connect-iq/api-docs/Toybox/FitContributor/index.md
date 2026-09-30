@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.FitContributor"
 ---
-# Module: Toybox.FitContributor
+# 模块：Toybox.FitContributor
 
 ## 概述
 
@@ -15,7 +15,7 @@ Session data is written once per recording session at the end of the recording, 
 
 MESG\_TYPE\_LAP
 
-Lap data is written once for every lap in the session, and used for data that pertains to each lap (e.g. average lap speed).
+每圈数据在会话中每圈写入一次，用于记录与每圈相关的数据（例如平均圈速）。
 
 MESG\_TYPE\_RECORD
 

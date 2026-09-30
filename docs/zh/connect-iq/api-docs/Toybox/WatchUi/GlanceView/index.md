@@ -20,7 +20,7 @@ Toybox.WatchUi.View
 
 The class that represents a glance view which can be used to display the widget preview content in a restricted drawing context (dc) among other widgets.
 
-Glance view behaves mostly like a regular WatchUi.View, e.g. user can load layout and update view using [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) and [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), however, the `dc` object passed in those calls will be bounded by glance area rather than a full screen `dc`.
+速览视图的行为大体类似于常规的 WatchUi.View，例如，用户可以加载布局，并使用 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 更新视图；但是，这些调用中传入的 `dc` 对象将受速览区域限制，而不是完整屏幕的 `dc`。
 
 GlanceView doesn't support [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) or other View APIs that are associated with layering system, such as [View.addLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#addLayer-instance_function) [View.removeLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#removeLayer-instance_function), [View.insertLayer()](/connect-iq/api-docs/Toybox/WatchUi/View/#insertLayer-instance_function), [View.clearLayers()](/connect-iq/api-docs/Toybox/WatchUi/View/#clearLayers-instance_function)
 

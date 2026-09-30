@@ -40,11 +40,11 @@ API 级别 1.0.0
 
 - [**gender**](#gender-var) as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
 
-    Gender as configured by the user.
+    用户配置的性别。
 
 - [**height**](#height-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Height as configured by the user.
+    用户配置的高度。
 
 - [**restingHeartRate**](#restingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -258,7 +258,7 @@ Returns:
 
 ### var gender as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
 
-Gender as configured by the user
+用户配置的性别
 
 Since:
 
@@ -270,7 +270,7 @@ Returns:
 
 ### var height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Height as configured by the user
+用户配置的高度
 
 Since:
 
@@ -280,7 +280,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Height of the user in centimeters (cm)
+    用户身高（以厘米（cm）为单位）
 
 
 ### var restingHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**

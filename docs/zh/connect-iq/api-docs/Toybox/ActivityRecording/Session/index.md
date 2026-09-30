@@ -20,7 +20,7 @@ Session objects control the FIT recording state machine.
 
 Example:
 
-Format for setting up a Session object
+用于设置 Session 对象的格式
 
 ```
 using Toybox.ActivityRecording;
@@ -91,7 +91,7 @@ API 级别 1.0.0
 
 创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
-Field objects allow developers to store information in FIT developer fields. This information can be displayed in Garmin Connect as a per-second graph, as lap information, or as workout summary information.
+字段对象允许开发者将信息存储在 FIT 开发者字段中。此信息可以在 Garmin Connect 中显示为每秒图表、圈信息或锻炼摘要信息。
 
 Parameters:
 
@@ -126,7 +126,7 @@ Parameters:
 
 - 每条消息的数据字段限制为 32 字节
 
-- Messages larger than the limit will result in a "New Field out of memory for FIT data" error.
+- 超过限制大小的消息将导致“New Field out of memory for FIT data”错误。
 
 
 - :mesgType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
@@ -135,7 +135,7 @@ Parameters:
 
 - 如果未提供，则默认为 [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)
 
-- If mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const), [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) cannot be used as the Field type.
+- 如果 mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)，则不能将 [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) 用作 Field 类型。
 
 
 - :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
@@ -151,7 +151,7 @@ Parameters:
 
 - :nativeNum — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        If this Field can be treated equivalently to a Field that is included in the FIT SDK use this to indicate the Field Number that is specified by the FIT Profile.
+        如果此 Field 可等同于 FIT SDK 中包含的 Field，请使用此项指示 FIT Profile 指定的 Field Number。
 
 
 Returns:

@@ -157,7 +157,7 @@ API 级别 3.1.0
 
 - [**onGlanceEvent**](#onGlanceEvent-instance_function)(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Invoked when certain glance event occurs, none for now.
+    在发生特定速览事件时调用，目前没有此类事件。
 
 
 ## 实例方法详情
@@ -172,7 +172,7 @@ API 级别 3.1.0
 
 ### **onGlanceEvent(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Invoked when certain glance event occurs, none for now
+在发生特定速览事件时调用，目前没有此类事件
 
 Since:
 

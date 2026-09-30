@@ -268,7 +268,7 @@ Partial updates can be used to update a small part of the screen to allow for Al
 
 This method is called each second as long as the device power budget is not exceeded. It is important to update as small of a portion of the display as possible in this method to avoid exceeding the allowed power budget. To do this, the application must set the clipping region for the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. Calls to [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) and [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) will not execute on devices when this function is being invoked, but can be used in the device simulator.
 
-If the call to this method exceeds the power budget of the device, the partial update will not draw and a call to [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) is made to report the limits that were exceeded.
+如果调用此方法超出设备的功耗预算，则不会绘制部分更新，并会调用 [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) 报告超出的限制。
 
 注意：
 

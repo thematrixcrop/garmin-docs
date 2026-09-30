@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates that the function could not serialize an object
+表示函数无法序列化对象
 
 Since:
 

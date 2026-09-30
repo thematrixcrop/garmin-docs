@@ -167,7 +167,7 @@ API 级别 1.0.0
 
 注意：
 
-Immutable types (Number, Float, Long, Double, Boolean, String) will return their values. Other Object types will return a WeakReference object.
+不可变类型（Number、Float、Long、Double、Boolean、String）将返回其值。其他 Object 类型将返回 WeakReference 对象。
 
 Returns:
 

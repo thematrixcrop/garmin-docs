@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates the instance of [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) is assigned a state that it doesn't contain.
+表示已为 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 的实例分配了它不包含的状态。
 
 ## 另见：
 

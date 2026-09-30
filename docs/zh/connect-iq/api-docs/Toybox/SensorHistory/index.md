@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.SensorHistory"
 ---
-# Module: Toybox.SensorHistory
+# 模块：Toybox.SensorHistory
 
 ## 概述
 
@@ -203,7 +203,7 @@ Request iterator with oldest data first
 
 - [**getOxygenSaturationHistory**](#getOxygenSaturationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the oxygen saturation history for the given period This function always returns the most recent sensor history samples.
+    获取给定时间段的血氧饱和度历史数据。此函数始终返回最近的传感器历史样本。
 
 - [**getPressureHistory**](#getPressureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -211,7 +211,7 @@ Request iterator with oldest data first
 
 - [**getStressHistory**](#getStressHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get stress history data for the given period This function always returns the most recent sensor history samples.
+    获取给定时间段的压力历史数据。此函数始终返回最近的传感器历史样本。
 
 - [**getTemperatureHistory**](#getTemperatureHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -449,7 +449,7 @@ Parameters:
 
 Example:
 
-Gets a SensoryHistoryIterator and prints out the elevation value from the most recent SensorSample
+获取 SensoryHistoryIterator，并打印最近 SensorSample 中的海拔值
 
 ```
 using Toybox.SensorHistory;
@@ -658,7 +658,7 @@ Parameters:
 
 Example:
 
-Gets a SensoryHistoryIterator and prints out the heart rate value from the most recent SensorSample
+获取 SensoryHistoryIterator，并打印最近 SensorSample 中的心率值
 
 ```
 using Toybox.SensorHistory;
@@ -707,7 +707,7 @@ API 级别 2.1.0
 
 ### **getOxygenSaturationHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the oxygen saturation history for the given period
+获取给定时间段的血氧饱和度历史数据
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
@@ -740,7 +740,7 @@ Parameters:
 
 Example:
 
-Gets a SensoryHistoryIterator and prints out the Muscle Oxygen Saturation value from the most recent SensorSample
+获取 SensoryHistoryIterator，并打印最近 SensorSample 中的肌肉血氧饱和度值
 
 ```
 using Toybox.SensorHistory;
@@ -925,14 +925,14 @@ Parameters:
 
 - 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索给定 Duration 的历史记录
 
-- If period is a [Number](/connect-iq/api-docs/Toybox/Lang/Number/), then the last specified Number of entries are retrieved
+- 如果 period 是 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则检索最后指定数量的 Number 条记录
 
 
 - :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
         检索样本的顺序。
 
-- If order is `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
+- 如果 order 为 `null`，则样本将为 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
 - Use the ORDER enumeration to explicitly select [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) or [ORDER\_OLDEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_OLDEST_FIRST-const)
 
@@ -940,7 +940,7 @@ Parameters:
 
 Example:
 
-Gets a SensoryHistoryIterator and prints out the pressure value from the most recent SensorSample
+获取 SensoryHistoryIterator，并打印最近 SensorSample 中的压力值
 
 ```
 using Toybox.SensorHistory;
@@ -1114,7 +1114,7 @@ API 级别 2.1.0
 
 ### **getStressHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get stress history data for the given period
+获取给定时间段的压力历史数据
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
@@ -1345,7 +1345,7 @@ Parameters:
 
 Example:
 
-Gets a SensoryHistoryIterator and prints out the temperature value from the most recent SensorSample
+获取 SensoryHistoryIterator，并打印最近 SensorSample 中的温度值
 
 ```
 using Toybox.SensorHistory;

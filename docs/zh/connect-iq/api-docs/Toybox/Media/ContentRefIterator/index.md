@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Iterates over [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) objects present on the system for this application.
+遍历系统中对此应用存在的 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 个对象。
 
 Since:
 
@@ -26,14 +26,14 @@ API 级别 3.0.0
 
 - [**next**](#next-instance_function)() as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
-    Get the next [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/).
+    获取下一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)。
 
 
 ## 实例方法详情
 
 ### **next()** as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
-Get the next [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)
+获取下一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)
 
 Returns:
 

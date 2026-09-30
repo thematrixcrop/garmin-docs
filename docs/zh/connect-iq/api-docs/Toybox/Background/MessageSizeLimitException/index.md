@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates the message provided to [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) exceeds the maximum allowed message size (255 Bytes).
+表示提供给 [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 的消息超过允许的最大消息大小（255 Bytes）。
 
 注意：
 

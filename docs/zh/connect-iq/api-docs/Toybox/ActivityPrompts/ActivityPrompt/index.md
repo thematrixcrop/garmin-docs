@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Informtion about the activity prompt.
+有关活动提示的信息。
 
 由系统创建，并在需要播放活动提示时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。
 

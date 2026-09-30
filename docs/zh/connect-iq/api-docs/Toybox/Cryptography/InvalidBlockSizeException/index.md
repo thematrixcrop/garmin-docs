@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Indicates an invalid input block size was provided.
+表示提供了无效的输入块大小。
 
 ## 另见：
 

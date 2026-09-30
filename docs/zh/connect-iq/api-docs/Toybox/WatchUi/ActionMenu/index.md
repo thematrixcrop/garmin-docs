@@ -209,4 +209,4 @@ Throws:
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
-    If invalid theme is provided
+    如果提供了无效主题

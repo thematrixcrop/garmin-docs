@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 This class represents a device context.
 
-It provides methods to perform drawing operations on the device.
+它提供了在设备上执行绘图操作的方法。
 
 注意：
 
@@ -559,7 +559,7 @@ API 级别 4.2.1
 
 Throws:
 
-- InvalidValueException if one of `:bitmapX`, `:bitmapY`, `:bitmapWidth`, `:bitmapHeight` are provided and outside the bounds of `bitmap`.
+- 如果提供了 `:bitmapX`、`:bitmapY`、`:bitmapWidth`、`:bitmapHeight` 中的任意一个，且其超出 `bitmap` 的边界，则抛出 InvalidValueException。
 
 
 ### **drawCircle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
@@ -1055,7 +1055,7 @@ Parameters:
 
 - justification —
 
-    Mask of Graphics.TEXT\_JUSTIFY\_\* constants. This may either be a single Graphics.TEXT\_JUSTIFY\_\* constant, or a combination of one vertical and one horizontal justification value as a bit mask (e.g., Graphics.TEXT\_JUSTIFY\_CENTER | Graphics.TEXT\_JUSTIFY\_VCENTER).
+    Graphics.TEXT\_JUSTIFY\_\* 常量的掩码。这可以是单个 Graphics.TEXT\_JUSTIFY\_\* 常量，也可以是一个垂直对齐值和一个水平对齐值组合而成的位掩码（例如 Graphics.TEXT\_JUSTIFY\_CENTER | Graphics.TEXT\_JUSTIFY\_VCENTER）。
 
 
 Since:

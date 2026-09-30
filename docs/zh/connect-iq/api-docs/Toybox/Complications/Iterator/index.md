@@ -24,20 +24,20 @@ API 级别 4.2.0
 
 - [**next**](#next-instance_function)() as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) or **Null**
 
-    Get the next complication.
+    获取下一个复杂功能。
 
 
 ## 实例方法详情
 
 ### **next()** as [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) or **Null**
 
-Get the next complication
+获取下一个复杂功能
 
 Returns:
 
 - [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) —
 
-    Next complication instance or `null` on completion
+    下一个复杂功能实例；完成时为 `null`
 
 
 Since:

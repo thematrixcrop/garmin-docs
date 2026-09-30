@@ -87,9 +87,9 @@ Returns:
 
     The day of the week in the specified format:
 
-- FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)): A number in the range 1 to 7. 1 = Sunday, 2 = Monday, ..., 7 = Saturday
+- FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/))：范围为 1 到 7 的数字。1 = 星期日，2 = 星期一，…，7 = 星期六
 
-- FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): The abbreviated day of the week: "Sun", "Mon", ... "Sat"
+- FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：星期几的缩写：“Sun”、“Mon”、…、“Sat”
 
 - FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): Currently the same as FORMAT\_MEDIUM
 
@@ -137,9 +137,9 @@ Returns:
 
     The month of the year in the specified format:
 
-- FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)): A number in the range 1 to 12. 1 = January, 2= February, ..., 12 = December
+- FORMAT\_SHORT ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/))：范围为 1 到 12 的数字。1 = 一月，2 = 二月，…，12 = 十二月
 
-- FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): The abbreviated month: "Jan", "Feb", ..., "Dec"
+- FORMAT\_MEDIUM ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/))：月份的缩写：“Jan”、“Feb”、…、“Dec”
 
 - FORMAT\_LONG ([Toybox::Lang::String](/connect-iq/api-docs/Toybox/Lang/String/)): Currently the same as FORMAT\_MEDIUM
 

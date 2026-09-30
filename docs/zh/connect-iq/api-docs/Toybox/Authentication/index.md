@@ -1,7 +1,7 @@
 ---
 title: "Module: Toybox.Authentication"
 ---
-# Module: Toybox.Authentication
+# 模块：Toybox.Authentication
 
 ## 概述
 

@@ -53,15 +53,15 @@ API 级别 3.1.0
 
 - [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Layer identifier, can be `null`.
+    图层标识符，可以为 `null`。
 
 - [**getX**](#getX-instance_function)() as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Get X-axis absolute draw offset relative to the screen origin.
+    获取相对于屏幕原点的 X 轴绝对绘制偏移量。
 
 - [**getY**](#getY-instance_function)() as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Get Y-axis absolute draw offset relative to the screen origin.
+    获取相对于屏幕原点的 Y 轴绝对绘制偏移量。
 
 - [**initialize**](#initialize-instance_function)(options as [Layer.Options](/connect-iq/api-docs/Toybox/WatchUi/Layer/#Options-named_type) or **Null**)
 
@@ -105,7 +105,7 @@ API 级别 3.1.0
 
 ### **getId()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Layer identifier, can be `null`
+图层标识符，可以为 `null`
 
 Returns:
 
@@ -120,7 +120,7 @@ API 级别 3.1.0
 
 ### **getX()** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Get X-axis absolute draw offset relative to the screen origin
+获取相对于屏幕原点的 X 轴绝对绘制偏移量
 
 Returns:
 
@@ -135,7 +135,7 @@ API 级别 3.1.0
 
 ### **getY()** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Get Y-axis absolute draw offset relative to the screen origin
+获取相对于屏幕原点的 Y 轴绝对绘制偏移量
 
 Returns:
 
@@ -176,7 +176,7 @@ Parameters:
 
 - :colorDepth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        hidden option, Color depth in terms of bits/pixel, when missing, default to system value.
+        隐藏选项，以位/像素表示的颜色深度；缺少时使用系统值。
 
 - :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 

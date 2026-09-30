@@ -519,7 +519,7 @@ Throws:
 
 注意：
 
-Multitasking: Ant channel connection can not be changed while in inacitve mode and ant channels opened during active mode will be closed when app becomes inactive, and re-opened automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+多任务：处于非活动模式时无法更改 Ant 通道连接；在活动模式期间打开的 Ant 通道会在应用变为非活动状态时关闭，并在再次变为活动状态时自动重新打开。这些状态变化通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
 Example:
 
@@ -545,7 +545,7 @@ API 级别 1.0.0
 
 将通用 ANT 通道释放回系统。
 
-If the channel is open it will be automatically closed.
+如果通道处于打开状态，则会自动关闭。
 
 Example:
 
@@ -701,7 +701,7 @@ Throws:
 
 设置突发事件使用的 [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)。
 
-Failed bursts or those larger than the specified threshold will be discarded.
+失败的突发数据或大于指定阈值的数据将被丢弃。
 
 Parameters:
 

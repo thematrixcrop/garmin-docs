@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Information about the position of the sensor on the body. Fields may return `null` so you should `null` check values before using them.
+有关传感器在身体上位置的信息。字段可能会返回 `null`，因此应在使用前检查值是否为 `null`。
 
 Since:
 

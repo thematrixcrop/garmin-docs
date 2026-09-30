@@ -141,7 +141,7 @@ API 级别 1.3.0
 
 从 Array 中移除一个 Object。
 
-If the passed Object is found, the Array size is decreased by one and elements beyond it are shifted to the next lower index. If the Array has multiple matches, the matching Object at the lowest index will be removed but the other matching Objects will not be removed.
+如果找到传入的 Object，Array 大小将减少一，且其后的元素将向前移动到下一个较低的索引。如果 Array 中存在多个匹配项，则会移除索引最低的匹配 Object，而不会移除其他匹配 Object。
 
 Parameters:
 
@@ -165,7 +165,7 @@ API 级别 1.3.0
 
 从 Array 中移除 Object。
 
-For each instance of the Object that is found, the Array size is decreased by one and elements beyond it are shifted to the next lower index.
+对于找到的每个 Object 实例，Array 大小减一，其后的元素向下一个索引移动。
 
 Parameters:
 
