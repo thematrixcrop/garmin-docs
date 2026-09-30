@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.Shifting"
 ---
-# Class: Toybox.AntPlus.Shifting
+# 类：Toybox.AntPlus.Shifting
 
 Inherits:
 
@@ -147,7 +147,7 @@ Returns:
 
 - [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/) —
 
-    Current shifting system status
+    当前变速系统状态
 
 
 Since:

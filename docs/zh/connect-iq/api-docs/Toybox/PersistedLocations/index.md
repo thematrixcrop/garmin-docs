@@ -193,7 +193,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options, or `null` to accept defaults
+    选项字典，或使用 `null` 接受默认值
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.PlayerColors"
 ---
-# Class: Toybox.Media.PlayerColors
+# 类：Toybox.Media.PlayerColors
 
 Inherits:
 

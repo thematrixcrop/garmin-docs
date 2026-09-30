@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Communications.PhoneAppMessage"
 ---
-# Class: Toybox.Communications.PhoneAppMessage
+# 类：Toybox.Communications.PhoneAppMessage
 
 Inherits:
 

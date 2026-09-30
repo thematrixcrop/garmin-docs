@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Bitmap"
 ---
-# Class: Toybox.WatchUi.Bitmap
+# 类：Toybox.WatchUi.Bitmap
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.WatchUi.Drawable
 
 ## 概述
 
-Bitmap is the class representation of a bitmap resource.
+Bitmap 是位图资源的类表示。
 
 可以使用资源编译器构造 Bitmap，并通过资源（Rez）模块加载。
 

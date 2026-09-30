@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.SyncDelegate"
 ---
-# Class: Toybox.Media.SyncDelegate
+# 类：Toybox.Media.SyncDelegate
 
 Inherits:
 

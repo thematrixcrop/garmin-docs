@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.ScanResult"
 ---
-# Class: Toybox.BluetoothLowEnergy.ScanResult
+# 类：Toybox.BluetoothLowEnergy.ScanResult
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Encapsulates an Advertisement seen during scanning. Cannot be instantiated.
+封装扫描期间发现的广播。无法实例化。
 
 Used as an argument to [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) to add a new device to the System's Paired Devices list
 
@@ -28,7 +28,7 @@ API 级别 3.1.0
 
 - [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Compares the ScanResult to another object for equality.
+    比较 ScanResult 与另一个对象是否相等。
 
 - [**getAppearance**](#getAppearance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -64,7 +64,7 @@ API 级别 3.1.0
 
 - [**hasAddress**](#hasAddress-instance_function)(address as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check that advertised device BLE address matches.
+    检查广播设备的 BLE 地址是否匹配。
 
 - [**isSameDevice**](#isSameDevice-instance_function)(other as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -75,7 +75,7 @@ API 级别 3.1.0
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Compares the ScanResult to another object for equality
+比较 ScanResult 与另一个对象是否相等
 
 Parameters:
 
@@ -241,7 +241,7 @@ API 级别 3.1.0
 
 ### **hasAddress(address as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check that advertised device BLE address matches
+检查广播设备的 BLE 地址是否匹配
 
 Parameters:
 

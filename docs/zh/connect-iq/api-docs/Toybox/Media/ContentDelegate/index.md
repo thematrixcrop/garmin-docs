@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.ContentDelegate"
 ---
-# Class: Toybox.Media.ContentDelegate
+# 类：Toybox.Media.ContentDelegate
 
 Inherits:
 
@@ -83,7 +83,7 @@ Parameters:
 
 - adContext — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    Context information for the ad that was clicked
+    已点击广告的上下文信息
 
 
 Since:

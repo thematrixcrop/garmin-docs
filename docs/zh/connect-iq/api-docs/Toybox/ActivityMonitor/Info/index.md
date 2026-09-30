@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityMonitor.Info"
 ---
-# Class: Toybox.ActivityMonitor.Info
+# 类：Toybox.ActivityMonitor.Info
 
 Inherits:
 
@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 - [**isSleepMode**](#isSleepMode-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null** deprecated
 
-    Determine whether the device is in sleep mode.
+    确定设备是否处于睡眠模式。
 
 - [**metersClimbed**](#metersClimbed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 当天的活动分钟数。
 
-Contains the moderate, vigorous, and total accumulated minutes for the day. Value may be `null`.
+包含当天累计的中等强度、高强度和总分钟数。值可能为 `null`。
 
 Since:
 
@@ -269,7 +269,7 @@ Returns:
 
 本周的活动分钟数。
 
-Contains the moderate, vigorous, and total accumulated minutes for the week. Value may be `null`.
+包含本周累计的中等强度、高强度和总分钟数。值可能为 `null`。
 
 Since:
 
@@ -1155,7 +1155,7 @@ Returns:
 
 This value may be removed after System 4.
 
-Determine whether the device is in sleep mode. Value may be `null`.
+确定设备是否处于睡眠模式。值可能为 `null`。
 
 Since:
 

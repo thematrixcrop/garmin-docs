@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.BurstListener"
 ---
-# Class: Toybox.Ant.BurstListener
+# 类：Toybox.Ant.BurstListener
 
 Inherits:
 
@@ -65,26 +65,26 @@ API 级别 2.2.0
 
 - [**onReceiveComplete**](#onReceiveComplete-instance_function)(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
 
-    Callback when a burst reception completes successfully.
+    突发接收成功完成时的回调。
 
 - [**onReceiveFail**](#onReceiveFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
 
-    Callback when a burst reception fails over the air.
+    突发接收通过无线传输失败时的回调。
 
 - [**onTransmitComplete**](#onTransmitComplete-instance_function)() as **Void**
 
-    Callback when a burst transmission completes successfully.
+    突发传输成功完成时的回调。
 
 - [**onTransmitFail**](#onTransmitFail-instance_function)(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) as **Void**
 
-    Callback when a burst transmission fails over the air.
+    突发传输通过无线传输失败时的回调。
 
 
 ## 实例方法详情
 
 ### **onReceiveComplete(burstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
 
-Callback when a burst reception completes successfully
+突发接收成功完成时的回调
 
 Parameters:
 
@@ -104,7 +104,7 @@ API 级别 2.2.0
 
 ### **onReceiveFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
 
-Callback when a burst reception fails over the air
+突发接收通过无线传输失败时的回调
 
 Parameters:
 
@@ -119,7 +119,7 @@ API 级别 2.2.0
 
 ### **onTransmitComplete()** as **Void**
 
-Callback when a burst transmission completes successfully
+突发传输成功完成时的回调
 
 Since:
 
@@ -127,7 +127,7 @@ API 级别 2.2.0
 
 ### **onTransmitFail(errorCode as [Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module))** as **Void**
 
-Callback when a burst transmission fails over the air
+突发传输通过无线传输失败时的回调
 
 Parameters:
 

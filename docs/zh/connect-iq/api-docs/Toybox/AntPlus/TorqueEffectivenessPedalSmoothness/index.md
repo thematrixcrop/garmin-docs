@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.TorqueEffectivenessPedalSmoothness"
 ---
-# Class: Toybox.AntPlus.TorqueEffectivenessPedalSmoothness
+# 类：Toybox.AntPlus.TorqueEffectivenessPedalSmoothness
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.HashBasedMessageAuthenticationCode"
 ---
-# Class: Toybox.Cryptography.HashBasedMessageAuthenticationCode
+# 类：Toybox.Cryptography.HashBasedMessageAuthenticationCode
 
 Inherits:
 

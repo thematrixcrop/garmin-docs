@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.ConnectionInfo"
 ---
-# Class: Toybox.System.ConnectionInfo
+# 类：Toybox.System.ConnectionInfo
 
 Inherits:
 

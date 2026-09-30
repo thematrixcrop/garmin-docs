@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.ProfileInfo"
 ---
-# Class: Toybox.Activity.ProfileInfo
+# 类：Toybox.Activity.ProfileInfo
 
 Inherits:
 
@@ -40,7 +40,7 @@ API 级别 3.2.0
 
 - [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-    An unique identifer of the profile.
+    配置文件的唯一标识符。
 
 
 ## 实例属性详情
@@ -92,7 +92,7 @@ Returns:
 
 ### var uniqueIdentifier as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-An unique identifer of the profile
+配置文件的唯一标识符
 
 Since:
 

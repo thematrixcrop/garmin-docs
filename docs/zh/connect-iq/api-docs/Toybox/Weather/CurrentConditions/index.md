@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Weather.CurrentConditions"
 ---
-# Class: Toybox.Weather.CurrentConditions
+# 类：Toybox.Weather.CurrentConditions
 
 Inherits:
 

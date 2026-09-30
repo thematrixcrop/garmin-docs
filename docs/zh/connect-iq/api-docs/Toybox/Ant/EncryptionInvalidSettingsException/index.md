@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.EncryptionInvalidSettingsException"
 ---
-# Class: Toybox.Ant.EncryptionInvalidSettingsException
+# 类：Toybox.Ant.EncryptionInvalidSettingsException
 
 Inherits:
 

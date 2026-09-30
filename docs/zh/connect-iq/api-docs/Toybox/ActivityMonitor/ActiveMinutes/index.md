@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityMonitor.ActiveMinutes"
 ---
-# Class: Toybox.ActivityMonitor.ActiveMinutes
+# 类：Toybox.ActivityMonitor.ActiveMinutes
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Workout"
 ---
-# Class: Toybox.PersistedContent.Workout
+# 类：Toybox.PersistedContent.Workout
 
 Inherits:
 

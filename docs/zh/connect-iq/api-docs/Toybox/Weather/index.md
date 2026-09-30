@@ -406,7 +406,7 @@ API 级别 3.2.0
 
 |
 
-Chance of showers
+阵雨概率
 
 |
 | CONDITION\_CHANCE\_OF\_THUNDERSTORMS | 28 |
@@ -415,7 +415,7 @@ API 级别 3.2.0
 
 |
 
-Chance of thunderstorms
+雷暴概率
 
 |
 | CONDITION\_MIST | 29 |
@@ -550,7 +550,7 @@ API 级别 3.2.0
 
 |
 
-Chance of snow
+降雪概率
 
 |
 | CONDITION\_CHANCE\_OF\_RAIN\_SNOW | 44 |
@@ -559,7 +559,7 @@ API 级别 3.2.0
 
 |
 
-Chance of rain snow
+降雨或降雪概率
 
 |
 | CONDITION\_CLOUDY\_CHANCE\_OF\_RAIN | 45 |
@@ -568,7 +568,7 @@ API 级别 3.2.0
 
 |
 
-Cloudy chance of rain
+多云降雨概率
 
 |
 | CONDITION\_CLOUDY\_CHANCE\_OF\_SNOW | 46 |
@@ -577,7 +577,7 @@ API 级别 3.2.0
 
 |
 
-Cloudy chance of snow
+降雪概率
 
 |
 | CONDITION\_CLOUDY\_CHANCE\_OF\_RAIN\_SNOW | 47 |
@@ -586,7 +586,7 @@ API 级别 3.2.0
 
 |
 
-Cloudy chance of rain snow
+多云降雪概率
 
 |
 | CONDITION\_FLURRIES | 48 |
@@ -726,7 +726,7 @@ Parameters:
 
 - date — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    date to get the sunrise information
+    用于获取日出信息的日期
 
 
 :::details 支持的设备
@@ -883,7 +883,7 @@ Parameters:
 
 - date — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
-    date to get the sunset information
+    用于获取日落信息的日期
 
 
 :::details 支持的设备

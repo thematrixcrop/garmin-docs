@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ConfirmationDelegate"
 ---
-# Class: Toybox.WatchUi.ConfirmationDelegate
+# 类：Toybox.WatchUi.ConfirmationDelegate
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ConfirmationDelegate responds to a [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) selection.
+ConfirmationDelegate 响应 [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 选择。
 
 ## 另见：
 

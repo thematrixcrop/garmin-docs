@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.PlaybackProfile"
 ---
-# Class: Toybox.Media.PlaybackProfile
+# 类：Toybox.Media.PlaybackProfile
 
 Inherits:
 
@@ -63,7 +63,7 @@ API 级别 3.0.0
 
 - [**attemptSkipAfterThumbsDown**](#attemptSkipAfterThumbsDown-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Defines if the current song is skipped if a thumbs-down operation is given.
+    定义执行点踩操作时是否跳过当前歌曲。
 
 - [**playbackControls**](#playbackControls-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
 
@@ -79,7 +79,7 @@ API 级别 3.0.0
 
 - [**requirePlaybackNotification**](#requirePlaybackNotification-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Defines if the system notifies the app when each song is played.
+    定义系统是否在每首歌曲播放时通知应用。
 
 - [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -98,7 +98,7 @@ API 级别 3.0.0
 
 ### var attemptSkipAfterThumbsDown as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Defines if the current song is skipped if a thumbs-down operation is given
+定义执行点踩操作时是否跳过当前歌曲
 
 Since:
 
@@ -148,7 +148,7 @@ Returns:
 
 ### var requirePlaybackNotification as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Defines if the system notifies the app when each song is played
+定义系统是否在每首歌曲播放时通知应用
 
 Since:
 

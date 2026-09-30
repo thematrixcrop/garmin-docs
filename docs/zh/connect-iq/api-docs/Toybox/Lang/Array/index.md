@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Array"
 ---
-# Class: Toybox.Lang.Array
+# 类：Toybox.Lang.Array
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Array objects are fixed size (not a linked list), numerically indexed, single dimensional, and take any Objects (including Arrays) as members. Array keys must be Numbers, but Array values may be any type of Object.
+Array 对象大小固定（不是链表），按数字索引，是一维的，并且可以将任意 Object（包括 Array）作为成员。Array 的键必须是 Number，但 Array 的值可以是任何类型的 Object。
 
 Since:
 
@@ -264,7 +264,7 @@ Parameters:
 
 - comparator — ([Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type), null) —
 
-    An object that can be used to specify the order of Objects relative to others. If `comparator` is `null`, a default comparator will be used. The default comparator will sort values in ascending order, and is able to compare Numeric, Boolean, and Char values, or String values.
+    可用于指定对象相对于其他对象排序的对象。如果 `comparator` 为 `null`，则会使用默认比较器。默认比较器将按升序对值排序，并且能够比较 Numeric、Boolean 和 Char 值或 String 值。
 
 
 Example:

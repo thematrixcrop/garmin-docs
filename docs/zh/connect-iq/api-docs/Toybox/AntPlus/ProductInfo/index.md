@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.ProductInfo"
 ---
-# Class: Toybox.AntPlus.ProductInfo
+# 类：Toybox.AntPlus.ProductInfo
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.AntPlus.CommonData
 
 ## 概述
 
-Class containing information from the Product Information ANT+ common page.
+包含产品信息 ANT+ 通用页面信息的类。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

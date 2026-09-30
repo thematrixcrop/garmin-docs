@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.ContentRef"
 ---
-# Class: Toybox.Media.ContentRef
+# 类：Toybox.Media.ContentRef
 
 Inherits:
 

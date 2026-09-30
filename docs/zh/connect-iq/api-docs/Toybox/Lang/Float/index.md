@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Float"
 ---
-# Class: Toybox.Lang.Float
+# 类：Toybox.Lang.Float
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Floats are 32-bit floating point values.
 
-By default, decimal values in Monkey C are Floats.
+默认情况下，Monkey C 中的小数值为 Float。
 
 Since:
 

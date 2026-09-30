@@ -49,7 +49,7 @@ API 级别 1.0.0
 
 |
 
-Extra tiny Connect IQ font
+超小型 Connect IQ 字体
 
 |
 | FONT\_TINY | 1 |
@@ -130,7 +130,7 @@ API 级别 1.3.0
 
 |
 
-Extra tiny system font
+超小型系统字体
 
 |
 | FONT\_SYSTEM\_TINY | 10 |
@@ -336,7 +336,7 @@ API 级别 1.0.0
 
 |
 
-Dark Gray
+深灰色
 
 |
 | COLOR\_BLACK | 0x000000 |
@@ -363,7 +363,7 @@ API 级别 1.0.0
 
 |
 
-Dark Red
+深红色
 
 |
 | COLOR\_ORANGE | 0xFF5500 |
@@ -399,7 +399,7 @@ API 级别 1.0.0
 
 |
 
-Dark Green
+深绿色
 
 |
 | COLOR\_BLUE | 0x00AAFF |
@@ -417,7 +417,7 @@ API 级别 1.0.0
 
 |
 
-Dark Blue
+深蓝色
 
 |
 | COLOR\_PURPLE | 0xAA00FF |
@@ -470,7 +470,7 @@ API 级别 1.0.0
 
 |
 
-Center justify the text at the x/y coordinates
+使文本以 x/y 坐标为中心对齐
 
 |
 | TEXT\_JUSTIFY\_LEFT | 2 |
@@ -488,13 +488,13 @@ API 级别 1.0.0
 
 |
 
-Center the text vertically
+使文本垂直居中
 
 |
 
 ### BlendMode
 
-Blend mode
+混合模式
 
 Specifies how colors of a source pixel will be blended with the colors of a destination pixel.
 
@@ -576,7 +576,7 @@ S + D
 
 ### AlphaBlending
 
-Constant representing alpha blending state for buffered bitmaps
+表示缓冲位图 alpha 混合状态的常量
 
 Since:
 
@@ -589,7 +589,7 @@ API 级别 4.0.0
 
 |
 
-Default surface for buffered bitmap with maximum alpha blending support
+对最大支持 alpha 混合的缓冲位图使用的默认表面
 
 |
 | ALPHA\_BLENDING\_PARTIAL | 1 |
@@ -626,7 +626,7 @@ API 级别 4.2.1
 
 |
 
-Bottom of text is further from center. Typically used for upright text along the bottom of a circle.
+文本底部远离中心。通常用于沿圆底部显示正向文本。
 
 |
 
@@ -656,7 +656,7 @@ API 级别 4.2.1
 
 |
 
-Bilinear filter
+双线性滤波器
 
 |
 
@@ -673,7 +673,7 @@ API 级别 1.2.0
 
 |
 
-Counter clockwise draw
+逆时针绘制
 
 |
 | ARC\_CLOCKWISE | 1 |
@@ -682,7 +682,7 @@ API 级别 1.2.0
 
 |
 
-Clockwise draw
+顺时针绘制
 
 |
 
@@ -701,11 +701,11 @@ Clockwise draw
 
 - [**createBufferedBitmap**](#createBufferedBitmap-instance_function)(options as { :width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>, :colorDepth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapResource as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), :alphaBlending as [Graphics.AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) }) as [Graphics.BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/)
 
-    Create a buffered bitmap object.
+    创建缓冲位图对象。
 
 - [**createColor**](#createColor-instance_function)(alpha as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), red as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), green as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), blue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Create a color with the individual channel values passed in.
+    使用传入的各个通道值创建颜色。
 
 - [**fitTextToArea**](#fitTextToArea-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), truncate as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -766,7 +766,7 @@ API 级别 1.0.0
 
 ### **createBufferedBitmap(options as { :width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>, :colorDepth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapResource as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), :alphaBlending as [Graphics.AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) })** as [Graphics.BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/)
 
-Create a buffered bitmap object. This function will return a [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) object which can be used to reference the [Toybox::Graphics::BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object.
+创建缓冲位图对象。此函数将返回一个 [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) 对象，可用于引用 [Toybox::Graphics::BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象。
 
 注意：
 
@@ -829,7 +829,7 @@ Throws:
 
 ### **createColor(alpha as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), red as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), green as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), blue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Create a color with the individual channel values passed in
+使用传入的各个通道值创建颜色
 
 Parameters:
 

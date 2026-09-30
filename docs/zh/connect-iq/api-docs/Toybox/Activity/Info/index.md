@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.Info"
 ---
-# Class: Toybox.Activity.Info
+# 类：Toybox.Activity.Info
 
 Inherits:
 
@@ -233,7 +233,7 @@ API 级别 1.0.0
 
 平均海平面以上的海拔（米）。
 
-Elevation is derived from the most accurate source: Barometer or GPS
+海拔高度取自最准确的数据源：气压计或 GPS
 
 Since:
 
@@ -731,7 +731,7 @@ Returns:
 
 当前方位角，单位为弧度。
 
-Bearing is the direction from your current location or position to the destination of navigation, dependent on your current location.
+方位是从当前位置或位置指向导航目的地的方向，取决于你当前的位置。
 
 Since:
 
@@ -848,7 +848,7 @@ Returns:
 
 从起始位置到目的地的方位角，单位为弧度。
 
-Bearing from start is the direction of desired track from the start of navigation to the destination in radians. This is only dependent on your location when a course is set, and it is not dependent on where you may have moved to during an activity
+起点方位是从导航起点到目的地的期望航线方向，单位为弧度。设置路线时，这仅取决于你的位置，与活动期间你可能移动到的位置无关
 
 Since:
 
@@ -1814,7 +1814,7 @@ Returns:
 
 当前能量消耗，单位为每分钟千卡（kcals/min）。
 
-Energy expenditure is a metric developed by FirstBeat that provides an estimation of the calorie burn rate calculated from heart rate data.
+能量消耗是 FirstBeat 开发的一项指标，用于根据心率数据估算卡路里消耗率。
 
 Since:
 

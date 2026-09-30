@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.CustomMenu"
 ---
-# Class: Toybox.WatchUi.CustomMenu
+# 类：Toybox.WatchUi.CustomMenu
 
 Inherits:
 
@@ -41,7 +41,7 @@ CustomMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/
 
 Example:
 
-Build a CustomMenu programmatically
+以编程方式构建 CustomMenu
 
 ```
 using Toybox.WatchUi;

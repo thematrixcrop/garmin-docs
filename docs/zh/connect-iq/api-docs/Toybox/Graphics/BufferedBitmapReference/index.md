@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.BufferedBitmapReference"
 ---
-# Class: Toybox.Graphics.BufferedBitmapReference
+# 类：Toybox.Graphics.BufferedBitmapReference
 
 Inherits:
 

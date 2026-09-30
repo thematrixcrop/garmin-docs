@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Time.Gregorian.Info"
 ---
-# Class: Toybox.Time.Gregorian.Info
+# 类：Toybox.Time.Gregorian.Info
 
 Inherits:
 

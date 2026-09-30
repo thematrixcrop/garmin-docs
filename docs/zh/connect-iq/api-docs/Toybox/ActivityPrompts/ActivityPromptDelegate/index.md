@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityPrompts.ActivityPromptDelegate"
 ---
-# Class: Toybox.ActivityPrompts.ActivityPromptDelegate
+# 类：Toybox.ActivityPrompts.ActivityPromptDelegate
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Delegate used by the system to notify the app about activity prompts
+系统用于向应用通知活动提示的委托
 
 Registered using [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) to allow an app to get notified when an activity prompt should be played.
 
@@ -32,7 +32,7 @@ API 级别 5.2.0
 
 - [**onPrompt**](#onPrompt-instance_function)(prompts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/)\>, priority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Called by the system when an activity prompt is to be played.
+    系统准备播放活动提示时调用。
 
 
 ## 实例方法详情
@@ -54,7 +54,7 @@ API 级别 5.2.0
 
 ### **onPrompt(prompts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/)\>, priority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Called by the system when an activity prompt is to be played
+系统准备播放活动提示时调用
 
 Parameters:
 

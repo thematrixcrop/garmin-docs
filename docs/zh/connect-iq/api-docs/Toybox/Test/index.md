@@ -47,7 +47,7 @@ function aTestOfAssert(logger) {
 
 Example:
 
-Console Output for above example
+上述示例的控制台输出
 
 ```
 // Output:
@@ -240,7 +240,7 @@ Parameters:
 
 - test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    Expression to test for `true`
+    用于测试 `true` 的表达式
 
 - message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 

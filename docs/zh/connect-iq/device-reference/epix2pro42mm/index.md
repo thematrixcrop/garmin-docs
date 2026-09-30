@@ -1,7 +1,7 @@
 ---
 title: "epix™ Pro (Gen 2) 42mm"
 ---
-# epix™ Pro (Gen 2) 42mm
+# epix™ Pro（第 2 代）42 毫米
 
 | 属性 | 值 |
 | --- | --- |

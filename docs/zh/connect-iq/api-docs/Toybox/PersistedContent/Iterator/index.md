@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Iterator"
 ---
-# Class: Toybox.PersistedContent.Iterator
+# 类：Toybox.PersistedContent.Iterator
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Content iterator for the persisted content
+持久化内容的内容迭代器
 
 ## 另见：
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.ShiftingStatus"
 ---
-# Class: Toybox.AntPlus.ShiftingStatus
+# 类：Toybox.AntPlus.ShiftingStatus
 
 Inherits:
 

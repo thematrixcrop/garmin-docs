@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Communications.SyncDelegate"
 ---
-# Class: Toybox.Communications.SyncDelegate
+# 类：Toybox.Communications.SyncDelegate
 
 Inherits:
 

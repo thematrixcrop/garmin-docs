@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.AntPlusNotAllowedException"
 ---
-# Class: Toybox.AntPlus.AntPlusNotAllowedException
+# 类：Toybox.AntPlus.AntPlusNotAllowedException
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.FlickEvent"
 ---
-# Class: Toybox.WatchUi.FlickEvent
+# 类：Toybox.WatchUi.FlickEvent
 
 Inherits:
 

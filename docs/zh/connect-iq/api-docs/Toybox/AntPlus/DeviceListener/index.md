@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.DeviceListener"
 ---
-# Class: Toybox.AntPlus.DeviceListener
+# 类：Toybox.AntPlus.DeviceListener
 
 Inherits:
 

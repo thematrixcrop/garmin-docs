@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.RunningDynamicsListener"
 ---
-# Class: Toybox.AntPlus.RunningDynamicsListener
+# 类：Toybox.AntPlus.RunningDynamicsListener
 
 Inherits:
 
@@ -131,11 +131,11 @@ API 级别 2.4.0
 
 - [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function)(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) as **Void**
 
-    Callback when running dynamics are updated (max freq 1Hz).
+    跑步动态更新时的回调（最大频率 1Hz）。
 
 - [**onSensorPositionUpdate**](#onSensorPositionUpdate-instance_function)(data as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) as **Void**
 
-    Callback when sensor position is updated (max freq 1Hz).
+    传感器位置更新时的回调（最大频率 1Hz）。
 
 
 ## 实例方法详情
@@ -150,13 +150,13 @@ API 级别 2.4.0
 
 ### **onRunningDynamicsUpdate(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/))** as **Void**
 
-Callback when running dynamics are updated (max freq 1Hz)
+跑步动态更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) —
 
-    Data with updated running dynamics information.
+    包含更新后的跑步动态信息的数据。
 
 
 Since:
@@ -165,13 +165,13 @@ API 级别 2.4.0
 
 ### **onSensorPositionUpdate(data as [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/))** as **Void**
 
-Callback when sensor position is updated (max freq 1Hz)
+传感器位置更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) —
 
-    Data with updated sensor position information.
+    包含更新后的传感器位置信息的数据。
 
 
 Since:

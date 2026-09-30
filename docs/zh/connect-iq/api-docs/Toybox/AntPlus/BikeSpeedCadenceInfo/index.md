@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikeSpeedCadenceInfo"
 ---
-# Class: Toybox.AntPlus.BikeSpeedCadenceInfo
+# 类：Toybox.AntPlus.BikeSpeedCadenceInfo
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Attention.ToneProfile"
 ---
-# Class: Toybox.Attention.ToneProfile
+# 类：Toybox.Attention.ToneProfile
 
 Inherits:
 
@@ -16,13 +16,13 @@ Toybox.Lang.Object
 
 ## 概述
 
-Define a tone pattern.
+定义音调模式。
 
 Tones have two characteristics: frequency and duration. These characteristics are used to define a single ToneProfile object, which can then be passed with a collection of other ToneProfile objects in an Array to the playTone() method. The playTone() method will play through each of the ToneProfile objects within the Array in order.
 
 Example:
 
-Build a set of ToneProfile objects
+构建一组 ToneProfile 对象
 
 ```
 if (Attention has :ToneProfile) {

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.NumberPicker"
 ---
-# Class: Toybox.WatchUi.NumberPicker
+# 类：Toybox.WatchUi.NumberPicker
 
 Inherits:
 
@@ -37,7 +37,7 @@ The look and feel of a number picker is device-specific.
 
 Example:
 
-Display a distance picker when the Menu button is pressed
+按下 Menu 按钮时显示距离选择器
 
 ```
 using Toybox.WatchUi;

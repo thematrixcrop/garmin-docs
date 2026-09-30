@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.StringUtil.InvalidHexStringException"
 ---
-# Class: Toybox.StringUtil.InvalidHexStringException
+# 类：Toybox.StringUtil.InvalidHexStringException
 
 Inherits:
 

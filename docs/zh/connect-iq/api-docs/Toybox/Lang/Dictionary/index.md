@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Dictionary"
 ---
-# Class: Toybox.Lang.Dictionary
+# 类：Toybox.Lang.Dictionary
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Dictionary 是一种哈希表或关联数组，用于将键映射到值。
 
-Both the keys and values can be any Object type, though they do not all need to be of the same type. Objects used as a keys should override the [hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) method. Due to the nature of hash tables, the order of Dictionary elements are not guaranteed to match the insertion order.
+键和值都可以是任何 Object 类型，但不必全部属于同一类型。用作键的对象应重写 [hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) 方法。由于哈希表的特性，Dictionary 元素的顺序不保证与插入顺序一致。
 
 ## 另见：
 
@@ -218,7 +218,7 @@ API 级别 1.0.0
 
 将 Dictionary 转换为 String。
 
-Due to the nature of hash tables, the order of Dictionary elements are not guaranteed to match the insertion order when converting to a String.
+由于哈希表的特性，将 Dictionary 转换为 String 时，元素顺序不保证与插入顺序一致。
 
 Example:
 

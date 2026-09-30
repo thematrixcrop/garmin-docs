@@ -303,7 +303,7 @@ API 级别 3.2.0
 
 The sensor technology
 
-Describes the technology used to communicate with the sensor.
+描述用于与传感器通信的技术。
 
 Since:
 
@@ -316,7 +316,7 @@ API 级别 3.2.0
 
 |
 
-ANT Sensor
+ANT 传感器
 
 |
 | SENSOR\_TECHNOLOGY\_BLE | 1 |
@@ -325,7 +325,7 @@ API 级别 3.2.0
 
 |
 
-Bluetooth Low Energy Sensor
+低功耗蓝牙传感器
 
 |
 | SENSOR\_TECHNOLOGY\_ONBOARD | 2 |
@@ -452,7 +452,7 @@ Parameters:
 
     对侦听器 Method 的引用：
 
-- Called when sensor updates are received
+- 收到传感器更新时调用
 
 - Receives a Sensor.info object
 
@@ -890,7 +890,7 @@ Returns:
 
 - [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/) —
 
-    An iterator of the sensors that are currently registered.
+    当前已注册传感器的迭代器。
 
 
 Since:
@@ -1672,7 +1672,7 @@ Parameters:
 
 Example:
 
-Enable a heart rate sensor
+启用心率传感器
 
 ```
 using Toybox.Sensor;

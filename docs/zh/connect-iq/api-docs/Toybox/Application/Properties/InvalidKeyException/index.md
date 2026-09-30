@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.Properties.InvalidKeyException"
 ---
-# Class: Toybox.Application.Properties.InvalidKeyException
+# 类：Toybox.Application.Properties.InvalidKeyException
 
 Inherits:
 

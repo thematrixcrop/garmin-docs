@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.MapView"
 ---
-# Class: Toybox.WatchUi.MapView
+# 类：Toybox.WatchUi.MapView
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.IconMenuItem"
 ---
-# Class: Toybox.WatchUi.IconMenuItem
+# 类：Toybox.WatchUi.IconMenuItem
 
 Inherits:
 

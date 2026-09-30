@@ -5,7 +5,7 @@ title: "Module: Toybox.Background"
 
 ## 概述
 
-Background events are special events that trigger in the background when either certain system events occur, such as when an activity goal has been met, or at certain times (called temporal events). This allows an application to update its data even when the application is not active.
+后台事件是特殊事件，当某些系统事件发生时（例如达到活动目标），或在特定时间（称为时间事件）触发。这使应用能够即使在未处于活动状态时也更新其数据。
 
 ## 另见：
 
@@ -548,7 +548,7 @@ API 级别 2.3.0
 - [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 
-Arrays and Dictionaries may contain `null` values or any of the above listed types. If no data should be passed to the main process, `null` may be specified.
+Array 和 Dictionary 可以包含 `null` 值或上述列出的任何类型。如果不应向主进程传递数据，可以指定 `null`。
 
 This method will exit if called by a background process, but will do nothing if called by the main application process.
 
@@ -589,7 +589,7 @@ API 级别 3.0.10
 
 获取后台进程之前保存的数据。
 
-Data is delivered via [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function), and is reset to `null` once data has been delivered to the main process. This method always returns `null` in the main application's process.
+数据通过 [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 传递，并在数据传递到主进程后重置为 `null`。此方法在主应用程序进程中始终返回 `null`。
 
 另见：
 

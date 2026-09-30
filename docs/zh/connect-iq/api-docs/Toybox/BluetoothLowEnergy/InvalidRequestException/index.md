@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.InvalidRequestException"
 ---
-# Class: Toybox.BluetoothLowEnergy.InvalidRequestException
+# 类：Toybox.BluetoothLowEnergy.InvalidRequestException
 
 Inherits:
 

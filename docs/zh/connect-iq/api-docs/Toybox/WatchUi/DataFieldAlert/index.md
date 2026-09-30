@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.DataFieldAlert"
 ---
-# Class: Toybox.WatchUi.DataFieldAlert
+# 类：Toybox.WatchUi.DataFieldAlert
 
 Inherits:
 

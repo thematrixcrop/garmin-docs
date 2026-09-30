@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.DataField"
 ---
-# Class: Toybox.WatchUi.DataField
+# 类：Toybox.WatchUi.DataField
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## 概述
 
-Create a Data Field.
+创建数据字段。
 
 DataField 是一种特殊的 View，通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。DataField 必须实现 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法来处理传入的活动信息，同时在信息显示方式方面提供很大的灵活性。如果不需要这么复杂的功能，请考虑使用 [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)。
 
@@ -2459,7 +2459,7 @@ API 级别 3.0.0
 
 设置活动的目的地。
 
-Change the route target of the current activity. Only available to `datafield` app types and requires the `ActivityControl` permission.
+更改当前活动的路线目标。仅适用于 `datafield` 应用类型，并且需要 `ActivityControl` 权限。
 
 Parameters:
 
@@ -2535,7 +2535,7 @@ API 级别 5.2.0
 
 设置活动的锻炼。
 
-Change the workout for the current activity. Only available to `datafield` app types and requires the `ActivityControl` permission.
+更改当前活动的锻炼。仅适用于 `datafield` 应用类型，并且需要 `ActivityControl` 权限。
 
 注意：
 

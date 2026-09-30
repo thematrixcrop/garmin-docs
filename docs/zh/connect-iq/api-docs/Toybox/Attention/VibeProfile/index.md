@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Attention.VibeProfile"
 ---
-# Class: Toybox.Attention.VibeProfile
+# 类：Toybox.Attention.VibeProfile
 
 Inherits:
 
@@ -16,13 +16,13 @@ Toybox.Lang.Object
 
 ## 概述
 
-Define a vibration pattern.
+定义振动模式。
 
 Vibrations have two characteristics: duty cycle and length. These characteristics are used to define a single VibeProfile object, which can then be passed with a collection of other VibeProfile objects in an Array to the vibrate() method. The vibrate() method will play through each of the VibeProfile objects within the Array in order.
 
 Example:
 
-Build a set of VibeProfile objects
+构建一组 VibeProfile 对象
 
 ```
 if (Attention has :vibrate) {
@@ -214,7 +214,7 @@ API 级别 1.0.0
 
 振动强度。
 
-Duty cycle is the felt strength of the vibration, and is analogous in practice to the frequency of the vibration. It is specified as a value from 0 to 100%, 0 indicating no vibration and 100 indicating the strongest vibration.
+占空比表示感受到的振动强度，在实际应用中类似于振动频率。其值范围为 0 到 100%，其中 0 表示无振动，100 表示最强振动。
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.CommonData"
 ---
-# Class: Toybox.AntPlus.CommonData
+# 类：Toybox.AntPlus.CommonData
 
 Inherits:
 
@@ -45,7 +45,7 @@ API 级别 2.2.0
 
 组件标识符。
 
-Component IDs are defined on a by-ANT+-profile basis.
+组件 ID 按 ANT+ 配置文件定义。
 
 Since:
 

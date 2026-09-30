@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.AffineTransform"
 ---
-# Class: Toybox.Graphics.AffineTransform
+# 类：Toybox.Graphics.AffineTransform
 
 Inherits:
 
@@ -34,7 +34,7 @@ API 级别 4.2.0
 
 - [**concatenate**](#concatenate-instance_function)(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)) as **Void**
 
-    Apply the given transform Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | x00 x01 x02 | | m10 m11 m12 | x | x10 x11 x12 | | 0 0 1 | | 0 0 1 |.
+    应用给定的变换 将自身赋值为以下矩阵乘积的结果：| m00 m01 m02 | | x00 x01 x02 | | m10 m11 m12 | x | x10 x11 x12 | | 0 0 1 | | 0 0 1 |。
 
 - [**getDeterminant**](#getDeterminant-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -54,15 +54,15 @@ API 级别 4.2.0
 
 - [**preConcatenate**](#preConcatenate-instance_function)(xform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)) as **Void**
 
-    Apply the given transform Assign self to the result of the following matrix-matrix product: | x00 x01 x02 | | m00 m01 m02 | | x10 x11 x12 | x | m10 m11 m12 | | 0 0 1 | | 0 0 1 |.
+    应用给定的变换 将自身赋值为以下矩阵乘积的结果：| x00 x01 x02 | | m00 m01 m02 | | x10 x11 x12 | x | m10 m11 m12 | | 0 0 1 | | 0 0 1 |。
 
 - [**rotate**](#rotate-instance_function)(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Apply a rotation Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | cos -sin 0 | | m10 m11 m12 | x | sin cos 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToRotation(theta); self.concatenate(xform);.
+    应用旋转 将自身赋值为以下矩阵乘积的结果：| m00 m01 m02 | | cos -sin 0 | | m10 m11 m12 | x | sin cos 0 | | 0 0 1 | | 0 0 1 |。等价于 var xform = new AffineTransform(); xform.setToRotation(theta); self.concatenate(xform);。
 
 - [**scale**](#scale-instance_function)(sx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), sy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Apply a scale Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | sx 0 0 | | m10 m11 m12 | x | 0 sy 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToScale(sx, sy); self.concatenate(xform);.
+    应用缩放 将自身赋值为以下矩阵乘积的结果：| m00 m01 m02 | | sx 0 0 | | m10 m11 m12 | x | 0 sy 0 | | 0 0 1 | | 0 0 1 |。等价于 var xform = new AffineTransform(); xform.setToScale(sx, sy); self.concatenate(xform);。
 
 - [**setMatrix**](#setMatrix-instance_function)(m as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \]) as **Void**
 
@@ -86,19 +86,19 @@ API 级别 4.2.0
 
 - [**shear**](#shear-instance_function)(shx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), shy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Apply a shear Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | 1 shx 0 | | m10 m11 m12 | x | shy 1 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToShear(shx, shy); self.concatenate(xform);.
+    应用切变 将自身赋值为以下矩阵乘积的结果：| m00 m01 m02 | | 1 shx 0 | | m10 m11 m12 | x | shy 1 0 | | 0 0 1 | | 0 0 1 |。等价于 var xform = new AffineTransform(); xform.setToShear(shx, shy); self.concatenate(xform);。
 
 - [**transformPoint**](#transformPoint-instance_function)(pt as [Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)) as [Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)
 
-    Apply transform to a 2D coordinate Transform a single point as if by generating the following matrix-vector product: | m00 m01 m02 | | ptx | | m10 m11 m12 | x | pty | | 0 0 1 | | 1 |.
+    将变换应用于二维坐标 通过生成以下矩阵向量乘积来变换单个点：| m00 m01 m02 | | ptx | | m10 m11 m12 | x | pty | | 0 0 1 | | 1 |。
 
 - [**transformPoints**](#transformPoints-instance_function)(pts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>
 
-    Apply transform to an Array of 2D coordinates Transform an array of coordinates.
+    将变换应用于二维坐标数组 变换坐标数组。
 
 - [**translate**](#translate-instance_function)(tx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), ty as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Apply translation Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | 1 0 tx | | m10 m11 m12 | x | 0 1 ty | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToTranslation(tx, ty); self.concatenate(xform);.
+    应用平移 将自身赋值为以下矩阵乘积的结果：| m00 m01 m02 | | 1 0 tx | | m10 m11 m12 | x | 0 1 ty | | 0 0 1 | | 0 0 1 |。等价于 var xform = new AffineTransform(); xform.setToTranslation(tx, ty); self.concatenate(xform);。
 
 
 ## 实例方法详情
@@ -196,7 +196,7 @@ API 级别 4.2.0
 
 ### **rotate(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Apply a rotation
+应用旋转
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 
@@ -224,7 +224,7 @@ API 级别 4.2.0
 
 ### **scale(sx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), sy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Apply a scale
+应用缩放
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 
@@ -356,7 +356,7 @@ API 级别 4.2.0
 
 ### **shear(shx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), shy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Apply a shear
+应用切变
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 
@@ -385,7 +385,7 @@ API 级别 4.2.0
 
 ### **transformPoint(pt as [Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type))** as [Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)
 
-Apply transform to a 2D coordinate
+将变换应用于二维坐标
 
 Transform a single point as if by generating the following matrix-vector product:
 
@@ -409,7 +409,7 @@ API 级别 4.2.0
 
 ### **transformPoints(pts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>
 
-Apply transform to an Array of 2D coordinates
+将变换应用于二维坐标数组
 
 Transform an array of coordinates
 
@@ -427,7 +427,7 @@ API 级别 4.2.0
 
 ### **translate(tx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), ty as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Apply translation
+应用平移
 
 将 self 赋值为以下矩阵与矩阵乘积的结果：
 

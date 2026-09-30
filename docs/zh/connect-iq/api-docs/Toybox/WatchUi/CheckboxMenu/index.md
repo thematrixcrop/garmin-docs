@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.CheckboxMenu"
 ---
-# Class: Toybox.WatchUi.CheckboxMenu
+# 类：Toybox.WatchUi.CheckboxMenu
 
 Inherits:
 
@@ -45,7 +45,7 @@ The look and feel of a CheckboxMenu is device-specific.
 
 Example:
 
-Build a simple CheckboxMenu programmatically
+以编程方式构建简单的 CheckboxMenu
 
 ```
 using Toybox.WatchUi;

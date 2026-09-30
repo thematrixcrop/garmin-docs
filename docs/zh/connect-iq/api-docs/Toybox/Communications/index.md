@@ -234,7 +234,7 @@ API 级别 1.0.0
 
 |
 
-An unknown error has occurred.
+发生未知错误。
 
 |
 | BLE\_ERROR | \-1 |
@@ -414,7 +414,7 @@ API 级别 2.4.1
 
 |
 
-Content type given in response is not supported or does not match what is expected.
+响应中提供的内容类型不受支持，或与预期内容类型不匹配。
 
 |
 | REQUEST\_CANCELLED | \-1003 |
@@ -432,7 +432,7 @@ API 级别 3.0.0
 
 |
 
-Connection was lost before a response could be obtained.
+在获得响应之前连接已丢失。
 
 |
 | UNABLE\_TO\_PROCESS\_MEDIA | \-1005 |
@@ -441,7 +441,7 @@ API 级别 3.0.2
 
 |
 
-Downloaded media file was unable to be read.
+无法读取下载的媒体文件。
 
 |
 | UNABLE\_TO\_PROCESS\_IMAGE | \-1006 |
@@ -450,7 +450,7 @@ API 级别 3.0.3
 
 |
 
-Downloaded image file was unable to be processed.
+无法处理下载的图像文件。
 
 |
 | UNABLE\_TO\_PROCESS\_HLS | \-1007 |
@@ -554,7 +554,7 @@ API 级别 1.3.0
 
 |
 
-Content type specifier for response is expected to be a json type. Content type string must be "application/json".
+响应的内容类型说明符应为 json 类型。内容类型字符串必须为 "application/json"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_URL\_ENCODED | 1 |
@@ -563,7 +563,7 @@ API 级别 1.3.0
 
 |
 
-Content type specifier for response is expected to indicate url encoding. Content type string must be "application/x-www-form-urlencoded".
+响应的内容类型说明符应指示 URL 编码。内容类型字符串必须为 "application/x-www-form-urlencoded"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX | 2 |
@@ -572,7 +572,7 @@ API 级别 2.2.0
 
 |
 
-Content type specifier for response is expected to be a gpx type.
+响应的内容类型说明符应为 gpx 类型。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT | 3 |
@@ -581,7 +581,7 @@ API 级别 2.2.0
 
 |
 
-Content type specifier for response is expected to be a FIT type.
+响应的内容类型说明符应为 FIT 类型。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_AUDIO | 4 |
@@ -590,7 +590,7 @@ API 级别 3.0.0
 
 |
 
-Content type specifier for response is expected to be an audio type. Content type string must be of the "audio/\*" format.
+响应的内容类型说明符应为音频类型。内容类型字符串必须采用 "audio/\*" 格式。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_TEXT\_PLAIN | 5 |
@@ -599,7 +599,7 @@ API 级别 3.0.0
 
 |
 
-Content type specifier for response is expected to be plain text type. Content type string must be "text/plain"
+响应的内容类型说明符应指示纯文本类型。内容类型字符串必须为 "text/plain"
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_HLS\_DOWNLOAD | 6 |
@@ -608,7 +608,7 @@ API 级别 3.0.10
 
 |
 
-Content type specifier for response is expected to be an HLS data type. Content type string must be either "application/vnd.apple.mpegurl" or "audio/mpegurl".
+响应的内容类型说明符应为 HLS 数据类型。内容类型字符串必须为 "application/vnd.apple.mpegurl" 或 "audio/mpegurl"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_ANIMATION\_MANIFEST | 7 |
@@ -617,7 +617,7 @@ API 级别 3.1.0
 
 |
 
-Content type specifier for response is expected to be a CIQ animation manifest data type. Content type string must be "application/vnd.garmin.connectiq.animation.manifest".
+响应的内容类型说明符应为 CIQ 动画清单数据类型。内容类型字符串必须为 "application/vnd.garmin.connectiq.animation.manifest"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_ANIMATION | 8 |
@@ -626,7 +626,7 @@ API 级别 3.1.0
 
 |
 
-Content type specifier for response is expected to be a CIQ animation data type. Content type string must be "image/vnd.garmin.connectiq.animation".
+响应的内容类型说明符应为 CIQ 动画数据类型。内容类型字符串必须为 "image/vnd.garmin.connectiq.animation"。
 
 |
 
@@ -849,7 +849,7 @@ API 级别 1.2.0
 
 |
 
-Do not apply dithering to an image.
+不对图像应用抖动。
 
 |
 | IMAGE\_DITHERING\_FLOYD\_STEINBERG | 2 |
@@ -858,7 +858,7 @@ API 级别 1.2.0
 
 |
 
-Apply Floyd-Steinberg dithering to an image.
+对图像应用 Floyd-Steinberg 抖动。
 
 |
 
@@ -895,7 +895,7 @@ API 级别 6.0.0
 
 - [**checkWifiConnection**](#checkWifiConnection-instance_function)(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**) as **Void**
 
-    Checks if an internet-enabled WIFI access point is visible and can be connected to.
+    检查是否存在可见且可连接的已启用互联网的 WIFI 接入点。
 
 - [**emptyMailbox**](#emptyMailbox-instance_function)() as **Void** deprecated
 
@@ -1010,7 +1010,7 @@ API 级别 1.2.0
 
 ### **checkWifiConnection(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**)** as **Void**
 
-Checks if an internet-enabled WIFI access point is visible and can be connected to
+检查是否存在可见且可连接的已启用互联网的 WIFI 接入点
 
 Parameters:
 
@@ -1258,7 +1258,7 @@ Parameters:
 
 - signatureMethod — ([Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module)) —
 
-    An OAUTH\_SIGNING\_METHOD\_\* value
+    一个 OAUTH\_SIGNING\_METHOD\_\* 值
 
 - token — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), null) —
 
@@ -1489,7 +1489,7 @@ Parameters:
 
     The Dictionary of keys and values
 
-- Appended to the URL
+- 追加到 URL
 
 - 可以为 `null`
 
@@ -1524,7 +1524,7 @@ Parameters:
 
 - responseCode：服务器响应代码或 BLE\_\* 错误类型
 
-- data: A [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) from a successful request, or `null` on error
+- data：成功请求返回的 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 或 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)，出错时为 `null`
 
 
 
@@ -1594,7 +1594,7 @@ Parameters:
 
     包含键和值的字典
 
-- Appended to the URL for GET/DELETE request
+- 追加到 GET/DELETE 请求的 URL
 
 - Set as the body for a POST/PUT request
 
@@ -1632,7 +1632,7 @@ Parameters:
 
 - responseCode: the server response code
 
-- data: the content if the request was successful, or `null`
+- data：请求成功时的内容，或 `null`
 
 
 
@@ -1933,7 +1933,7 @@ Parameters:
 
 - These values should not be URL encoded.
 
-- Can be `null`.
+- 可以为 `null`。
 
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
@@ -1952,7 +1952,7 @@ Parameters:
 
 - If the content type is not specified, it will default to "application/json" for GET and DELETE requests, and will default to "application/x-www-form-urlencoded" for POST and PUT requests.
 
-- By default, DELETE requests will have their parameters appended to the URL.
+- 默认情况下，DELETE 请求会将其参数追加到 URL。
 
 - Setting the method as DELETE as well as a "Content-Type" header will result in the parameters being set in the body of the request and they will not be appended to the URL.
 
@@ -2001,7 +2001,7 @@ Parameters:
 
 - responseCode：服务器响应代码或 BLE\_\* 错误类型
 
-- data: The content if the request was successful, or `null`
+- data：请求成功时的内容，或 `null`
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ViewLoop"
 ---
-# Class: Toybox.WatchUi.ViewLoop
+# 类：Toybox.WatchUi.ViewLoop
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-An object representing the view loop with a collection of scrollable views.
+表示视图循环的对象，其中包含一组可滚动视图。
 
 Since:
 
@@ -185,7 +185,7 @@ Loop in the backward direction
 
 - [**initialize**](#initialize-instance_function)(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)
 
-    Constructor for the ViewLoop.
+    ViewLoop 的构造函数。
 
 
 ## 实例方法详情
@@ -221,7 +221,7 @@ Throws:
 
 ### **initialize(factory as [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/), options as { :page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :wrap as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) } or **Null**)**
 
-Constructor for the ViewLoop
+ViewLoop 的构造函数
 
 Parameters:
 

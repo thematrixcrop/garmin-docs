@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Time.LocalMoment"
 ---
-# Class: Toybox.Time.LocalMoment
+# 类：Toybox.Time.LocalMoment
 
 Inherits:
 
@@ -216,7 +216,7 @@ API 级别 3.3.0
 
 - [**compare**](#compare-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Determine if a LocalMoment is before or after another LocalMoment This computes a Number representing the difference between the two LocalMoment objects in seconds.
+    确定一个 LocalMoment 位于另一个 LocalMoment 之前还是之后 此操作会计算一个 Number，表示两个 LocalMoment 对象之间的秒数差。
 
 - [**getDaylightSavingsTimeOffset**](#getDaylightSavingsTimeOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -281,7 +281,7 @@ API 级别 3.3.0
 
 ### **compare(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Determine if a LocalMoment is before or after another LocalMoment
+确定一个 LocalMoment 位于另一个 LocalMoment 之前还是之后
 
 This computes a Number representing the difference between the two LocalMoment objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function) method can also be used to get the absolute Duration between two LocalMoment objects.
 

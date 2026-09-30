@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.TooManySensorDataListenersException"
 ---
-# Class: Toybox.Sensor.TooManySensorDataListenersException
+# 类：Toybox.Sensor.TooManySensorDataListenersException
 
 Inherits:
 

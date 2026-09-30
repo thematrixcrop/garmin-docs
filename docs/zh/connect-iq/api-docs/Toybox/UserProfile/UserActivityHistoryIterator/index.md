@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.UserProfile.UserActivityHistoryIterator"
 ---
-# Class: Toybox.UserProfile.UserActivityHistoryIterator
+# 类：Toybox.UserProfile.UserActivityHistoryIterator
 
 Inherits:
 

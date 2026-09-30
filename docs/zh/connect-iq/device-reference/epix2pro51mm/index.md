@@ -1,7 +1,7 @@
 ---
 title: "epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition"
 ---
-# epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
+# epix™ Pro（第 2 代）51 毫米 / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
 
 | 属性 | 值 |
 | --- | --- |

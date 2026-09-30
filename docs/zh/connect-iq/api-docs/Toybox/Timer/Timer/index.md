@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Timer.Timer"
 ---
-# Class: Toybox.Timer.Timer
+# 类：Toybox.Timer.Timer
 
 Inherits:
 
@@ -24,7 +24,7 @@ The number of available timers (default 3) and the minimum time value (default 5
 
 Example:
 
-Create a counter that increments by one each second
+创建一个每秒递增 1 的计数器
 
 ```
 using Toybox.Timer;

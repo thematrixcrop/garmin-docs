@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.ShiftingListener"
 ---
-# Class: Toybox.AntPlus.ShiftingListener
+# 类：Toybox.AntPlus.ShiftingListener
 
 Inherits:
 
@@ -134,7 +134,7 @@ API 级别 3.1.0
 
 - [**onShiftingUpdate**](#onShiftingUpdate-instance_function)(data as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)) as **Void**
 
-    Callback when shifting system status is changed.
+    变速系统状态更改时的回调。
 
 
 ## 实例方法详情
@@ -149,7 +149,7 @@ API 级别 3.1.0
 
 ### **onShiftingUpdate(data as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/))** as **Void**
 
-Callback when shifting system status is changed
+变速系统状态更改时的回调
 
 Parameters:
 

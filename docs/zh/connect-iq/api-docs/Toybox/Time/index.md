@@ -23,9 +23,9 @@ There are two main concepts used by Monkey C when working with time: the [Moment
   Duration - Moment    -                    -         Invalid
 ```
 
-Dates and times are generally represented in UTC time from the UNIX epoch, with the exception of the [Gregorian Moment](/connect-iq/api-docs/Toybox/Time/Gregorian/#moment-instance_function), which are created relative to the current local time.
+日期和时间通常以 UNIX 纪元起的 UTC 时间表示，但 [Gregorian Moment](/connect-iq/api-docs/Toybox/Time/Gregorian/#moment-instance_function) 除外，后者是相对于当前本地时间创建的。
 
-Date and time formatting in Monkey C is relatively open-ended, providing some formatting constants for short, medium, and long formatting (long and medium formatting are currently equivalent).
+Monkey C 中的日期和时间格式相对开放，提供了用于短格式、中格式和长格式的格式常量（长格式和中格式目前等效）。
 
 ```
   Constant          Seconds  Minutes  Hours  Day of Week  Day  Month  Year
@@ -68,7 +68,7 @@ System.println(dateString); // e.g. "16:28:32 Wed 1 Mar 2017"
 
 Example:
 
-Creating a Moment representing May 16, 2003
+创建一个表示 2003 年 5 月 16 日的 Moment
 
 ```
 using Toybox.System;
@@ -194,7 +194,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Clock options
+    时钟选项
 
 - :currentTimeType — ([Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module)) —
 

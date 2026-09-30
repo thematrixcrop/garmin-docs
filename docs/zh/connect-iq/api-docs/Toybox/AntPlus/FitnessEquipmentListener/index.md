@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.FitnessEquipmentListener"
 ---
-# Class: Toybox.AntPlus.FitnessEquipmentListener
+# 类：Toybox.AntPlus.FitnessEquipmentListener
 
 Inherits:
 
@@ -54,7 +54,7 @@ API 级别 2.4.0
 
 - [**onFitnessEquipmentUpdate**](#onFitnessEquipmentUpdate-instance_function)(data as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) as **Void**
 
-    Callback when fitness equipment data is updated.
+    健身器材数据更新时的回调。
 
 
 ## 实例方法详情
@@ -69,13 +69,13 @@ API 级别 2.4.0
 
 ### **onFitnessEquipmentUpdate(data as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/))** as **Void**
 
-Callback when fitness equipment data is updated
+健身器材数据更新时的回调
 
 Parameters:
 
 - data — ([AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) —
 
-    Data with updated information
+    包含更新后的信息的数据
 
 
 Since:

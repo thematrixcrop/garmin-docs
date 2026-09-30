@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Char"
 ---
-# Class: Toybox.Lang.Char
+# 类：Toybox.Lang.Char
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.GlanceViewDelegate"
 ---
-# Class: Toybox.WatchUi.GlanceViewDelegate
+# 类：Toybox.WatchUi.GlanceViewDelegate
 
 Inherits:
 

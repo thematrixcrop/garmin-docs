@@ -19,9 +19,9 @@ Lap data is written once for every lap in the session, and used for data that pe
 
 MESG\_TYPE\_RECORD
 
-Depending on the device, record data is written once per second or when new data is available (Smart Recording), but is never written faster than once per second. This message type is used for instantaneous values (e.g. current speed).
+根据设备不同，记录数据每秒写入一次，或在有新数据时写入（智能记录），但写入频率绝不会高于每秒一次。此消息类型用于瞬时值（例如当前速度）。
 
-Data type constants are also available for use with the [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) method.
+数据类型常量也可用于 [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) 方法。
 
 ## 另见：
 

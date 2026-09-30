@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityMonitor.HeartRateSample"
 ---
-# Class: Toybox.ActivityMonitor.HeartRateSample
+# 类：Toybox.ActivityMonitor.HeartRateSample
 
 Inherits:
 
@@ -181,7 +181,7 @@ API 级别 1.2.2
 
 以每分钟心跳次数（bpm）表示的心率。
 
-Before using heart rate information, check for [INVALID\_HR\_SAMPLE](/connect-iq/api-docs/Toybox/ActivityMonitor/#INVALID_HR_SAMPLE-const) to be sure data is available.
+使用心率信息之前，请检查 [INVALID\_HR\_SAMPLE](/connect-iq/api-docs/Toybox/ActivityMonitor/#INVALID_HR_SAMPLE-const) 以确保数据可用。
 
 Since:
 

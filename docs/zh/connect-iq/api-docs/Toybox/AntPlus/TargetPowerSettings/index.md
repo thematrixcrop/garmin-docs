@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.TargetPowerSettings"
 ---
-# Class: Toybox.AntPlus.TargetPowerSettings
+# 类：Toybox.AntPlus.TargetPowerSettings
 
 Inherits:
 

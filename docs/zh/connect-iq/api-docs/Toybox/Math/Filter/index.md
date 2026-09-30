@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Math.Filter"
 ---
-# Class: Toybox.Math.Filter
+# 类：Toybox.Math.Filter
 
 Inherits:
 
@@ -98,12 +98,12 @@ Parameters:
 
 - data —
 
-    Array of samples to apply filter
+    要应用滤波器的样本数组
 
 
 Returns:
 
-- Array of samples with filter applied.
+- 已应用滤波器的样本数组。
 
 
 Since:

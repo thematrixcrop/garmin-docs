@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.InvalidOptionsException"
 ---
-# Class: Toybox.Lang.InvalidOptionsException
+# 类：Toybox.Lang.InvalidOptionsException
 
 Inherits:
 

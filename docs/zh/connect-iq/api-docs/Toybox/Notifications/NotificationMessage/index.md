@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Notifications.NotificationMessage"
 ---
-# Class: Toybox.Notifications.NotificationMessage
+# 类：Toybox.Notifications.NotificationMessage
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.RunningDynamics"
 ---
-# Class: Toybox.AntPlus.RunningDynamics
+# 类：Toybox.AntPlus.RunningDynamics
 
 Inherits:
 
@@ -148,7 +148,7 @@ Returns:
 
 - [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/) —
 
-    Current running dynamics data
+    当前跑步动态数据
 
 
 Since:
@@ -163,7 +163,7 @@ Returns:
 
 - [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/) —
 
-    Current sensor position
+    当前传感器位置
 
 
 Since:

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.WorkoutStep"
 ---
-# Class: Toybox.Activity.WorkoutStep
+# 类：Toybox.Activity.WorkoutStep
 
 Inherits:
 

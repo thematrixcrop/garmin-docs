@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Attention.BacklightOnTooLongException"
 ---
-# Class: Toybox.Attention.BacklightOnTooLongException
+# 类：Toybox.Attention.BacklightOnTooLongException
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-Exception thrown on products with burn in protection if the display is enabled for too long (e.g. over a minute)
+在启用显示屏时间过长的情况下，在具有烧屏保护功能的产品上抛出的异常（例如超过一分钟）
 
 Since:
 

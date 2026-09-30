@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.SimpleDataField"
 ---
-# Class: Toybox.WatchUi.SimpleDataField
+# 类：Toybox.WatchUi.SimpleDataField
 
 Inherits:
 
@@ -20,7 +20,7 @@ Toybox.WatchUi.DataField
 
 ## 概述
 
-Create a SimpleDataField.
+创建 SimpleDataField。
 
 SimpleDataField 是一种特殊的 View，它通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 

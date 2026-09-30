@@ -1,7 +1,7 @@
 ---
 title: "epix™ Pro (Gen 2) 47mm / quatix® 7 Pro"
 ---
-# epix™ Pro (Gen 2) 47mm / quatix® 7 Pro
+# epix™ Pro（第 2 代）47 毫米 / quatix® 7 Pro
 
 | 属性 | 值 |
 | --- | --- |

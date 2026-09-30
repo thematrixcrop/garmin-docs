@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.UuidFormatException"
 ---
-# Class: Toybox.BluetoothLowEnergy.UuidFormatException
+# 类：Toybox.BluetoothLowEnergy.UuidFormatException
 
 Inherits:
 

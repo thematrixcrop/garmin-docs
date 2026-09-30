@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.Hash"
 ---
-# Class: Toybox.Cryptography.Hash
+# 类：Toybox.Cryptography.Hash
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Compute the Hash digest of a message.
+计算消息的哈希摘要。
 
 ## 另见：
 

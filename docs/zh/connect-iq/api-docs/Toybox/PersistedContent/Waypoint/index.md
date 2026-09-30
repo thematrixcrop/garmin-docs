@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Waypoint"
 ---
-# Class: Toybox.PersistedContent.Waypoint
+# 类：Toybox.PersistedContent.Waypoint
 
 Inherits:
 

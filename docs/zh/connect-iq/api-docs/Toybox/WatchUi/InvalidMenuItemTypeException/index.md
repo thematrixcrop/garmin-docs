@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.InvalidMenuItemTypeException"
 ---
-# Class: Toybox.WatchUi.InvalidMenuItemTypeException
+# 类：Toybox.WatchUi.InvalidMenuItemTypeException
 
 Inherits:
 

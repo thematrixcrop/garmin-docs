@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.ManufacturerInfo"
 ---
-# Class: Toybox.AntPlus.ManufacturerInfo
+# 类：Toybox.AntPlus.ManufacturerInfo
 
 Inherits:
 

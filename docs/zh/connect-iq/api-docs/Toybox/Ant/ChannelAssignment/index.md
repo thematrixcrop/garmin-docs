@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.ChannelAssignment"
 ---
-# Class: Toybox.Ant.ChannelAssignment
+# 类：Toybox.Ant.ChannelAssignment
 
 Inherits:
 
@@ -106,7 +106,7 @@ Parameters:
 
 - 必须为 Private Network 提供网络密钥
 
-- Both 64 and 128 bit keys are required
+- 需要 64 位和 128 位密钥
 
 
 
@@ -160,7 +160,7 @@ API 级别 1.2.0
 
 设置启用或禁用后台扫描。
 
-Enabling background scan can only be done on Receive Only channels.
+只能在仅接收通道上启用后台扫描。
 
 Parameters:
 

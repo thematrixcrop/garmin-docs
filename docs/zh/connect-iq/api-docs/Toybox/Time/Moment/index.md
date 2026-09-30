@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Time.Moment"
 ---
-# Class: Toybox.Time.Moment
+# 类：Toybox.Time.Moment
 
 Inherits:
 
@@ -249,7 +249,7 @@ Parameters:
 
 Example:
 
-Create a Moment with a UNIX time stamp
+使用 UNIX 时间戳创建 Moment
 
 ```
 using Toybox.Time;
@@ -258,7 +258,7 @@ var garminFounded = new Time.Moment(631065600);
 
 Example:
 
-Create a Moment representing today
+创建一个表示今天的 Moment
 
 ```
 using Toybox.Time;

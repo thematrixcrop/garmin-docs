@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.UnexpectedAppTypeException"
 ---
-# Class: Toybox.System.UnexpectedAppTypeException
+# 类：Toybox.System.UnexpectedAppTypeException
 
 Inherits:
 

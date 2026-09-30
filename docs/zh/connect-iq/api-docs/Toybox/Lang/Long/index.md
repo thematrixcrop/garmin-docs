@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Long"
 ---
-# Class: Toybox.Lang.Long
+# 类：Toybox.Lang.Long
 
 Inherits:
 

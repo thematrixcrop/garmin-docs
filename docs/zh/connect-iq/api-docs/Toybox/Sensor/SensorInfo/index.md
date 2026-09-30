@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.SensorInfo"
 ---
-# Class: Toybox.Sensor.SensorInfo
+# 类：Toybox.Sensor.SensorInfo
 
 Inherits:
 

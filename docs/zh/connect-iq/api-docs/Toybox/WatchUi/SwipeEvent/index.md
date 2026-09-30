@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.SwipeEvent"
 ---
-# Class: Toybox.WatchUi.SwipeEvent
+# 类：Toybox.WatchUi.SwipeEvent
 
 Inherits:
 

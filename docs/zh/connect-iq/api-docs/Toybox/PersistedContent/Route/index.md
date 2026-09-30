@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Route"
 ---
-# Class: Toybox.PersistedContent.Route
+# 类：Toybox.PersistedContent.Route
 
 Inherits:
 

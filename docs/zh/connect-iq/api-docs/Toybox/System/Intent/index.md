@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.Intent"
 ---
-# Class: Toybox.System.Intent
+# 类：Toybox.System.Intent
 
 Inherits:
 

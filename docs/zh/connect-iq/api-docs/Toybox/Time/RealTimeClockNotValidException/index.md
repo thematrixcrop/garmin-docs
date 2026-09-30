@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Time.RealTimeClockNotValidException"
 ---
-# Class: Toybox.Time.RealTimeClockNotValidException
+# 类：Toybox.Time.RealTimeClockNotValidException
 
 Inherits:
 

@@ -265,7 +265,7 @@ API 级别 3.4.3
 
 Flashlight brightness
 
-Constants map to device-specific brightness levels
+常量映射到设备特定的亮度级别
 
 Since:
 
@@ -391,7 +391,7 @@ API 级别 3.4.3
 
 - [**hasFlashlightColor**](#hasFlashlightColor-instance_function)(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a given flashlight color is supported by this device.
+    确定设备是否支持指定的闪光灯颜色。
 
 - [**playTone**](#playTone-instance_function)(options as [Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module) or { :toneProfile as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)\>, :repeatCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as **Void**
 
@@ -609,20 +609,20 @@ API 级别 1.0.0
 
 Throws:
 
-- BacklightOnTooLongException On products with burn in protection, this exception is thrown if the backlight is held on for too long continuously
+- BacklightOnTooLongException 在具有防烧屏保护的产品上，如果背光连续点亮时间过长，则会引发此异常
 
 - InvalidOptionsException If the Float value is outside the valid range.
 
 
 ### **hasFlashlightColor(color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a given flashlight color is supported by this device
+确定设备是否支持指定的闪光灯颜色
 
 Parameters:
 
 - color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
-    Color to check
+    要检查的颜色
 
 
 :::details 支持的设备
@@ -697,7 +697,7 @@ Parameters:
 
 - :toneProfile — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        Array containing at least one [ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/) object to be played in sequence.
+        包含至少一个按顺序播放的 [ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/) 对象的数组。
 
 - :repeatCount — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -903,7 +903,7 @@ Parameters:
 
 - :color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
-        Color of flashlight. Default is FLASHLIGHT\_COLOR\_WHITE.
+        闪光灯颜色。默认值为 FLASHLIGHT\_COLOR\_WHITE。
 
 - :strobeMode — ([Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module)) —
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.DerailleurStatus"
 ---
-# Class: Toybox.AntPlus.DerailleurStatus
+# 类：Toybox.AntPlus.DerailleurStatus
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class that stores current status information about a connected derailleur
+存储已连接变速器当前状态信息的类
 
 Since:
 
@@ -128,7 +128,7 @@ API 级别 3.1.0
 
 - [**gearIndex**](#gearIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Current gear index (for front derailleur 0 - 6, [Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = Unknown gear index / Error) (for rear derailleur 0 - 30, [Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = Unknown gear index / Error).
+    当前档位索引（对于前拨链器为 0 - 6，[Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = 未知档位索引/错误）（对于后拨链器为 0 - 30，[Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = 未知档位索引/错误）。
 
 - [**gearMax**](#gearMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -136,7 +136,7 @@ API 级别 3.1.0
 
 - [**gearSize**](#gearSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Current gear size (number of teeth, 0 - 255).
+    当前档位大小（齿数，0 - 255）。
 
 - [**invalidInboardShiftCount**](#invalidInboardShiftCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -155,7 +155,7 @@ API 级别 3.1.0
 
 ### var gearIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Current gear index (for front derailleur 0 - 6, [Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = Unknown gear index / Error) (for rear derailleur 0 - 30, [Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = Unknown gear index / Error)
+当前档位索引（对于前拨链器为 0 - 6，[Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = 未知档位索引/错误）（对于后拨链器为 0 - 30，[Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = 未知档位索引/错误）
 
 Since:
 
@@ -179,7 +179,7 @@ Returns:
 
 ### var gearSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Current gear size (number of teeth, 0 - 255)
+当前档位大小（齿数，0 - 255）
 
 Since:
 

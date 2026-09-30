@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.AppNotInstalledException"
 ---
-# Class: Toybox.System.AppNotInstalledException
+# 类：Toybox.System.AppNotInstalledException
 
 Inherits:
 

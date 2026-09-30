@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.AccelerometerData"
 ---
-# Class: Toybox.Sensor.AccelerometerData
+# 类：Toybox.Sensor.AccelerometerData
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储加速度计采样数据的类。
 
-Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values. The values for the x, y, and z axes are in Milli G units. For reference, 1000 Milli G = 1 G. If not `null`, all fields are of equal size. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
+指定的每个字段都是 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 或 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的值以 Milli G 为单位。作为参考，1000 Milli G = 1 G。如果不为 `null`，所有字段的大小都相同。此项通常用于 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 使用的回调方法
 
 ## 另见：
 

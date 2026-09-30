@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Selectable"
 ---
-# Class: Toybox.WatchUi.Selectable
+# 类：Toybox.WatchUi.Selectable
 
 Inherits:
 

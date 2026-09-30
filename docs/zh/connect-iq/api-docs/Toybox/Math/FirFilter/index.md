@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Math.FirFilter"
 ---
-# Class: Toybox.Math.FirFilter
+# 类：Toybox.Math.FirFilter
 
 Inherits:
 

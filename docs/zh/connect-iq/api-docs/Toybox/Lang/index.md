@@ -139,7 +139,7 @@ function compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Objec
 
 Comparable 定义对象与其他对象之间的排序关系。
 
-Comparator can be use to specify an ordering between an object and others.
+Comparator 可用于指定一个对象与其他对象之间的顺序。
 
 Since:
 
@@ -151,7 +151,7 @@ function compare(a as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), b
 
 Comparator 定义对象之间的排序关系。
 
-Comparator can be use to specify an ordering between objects.
+Comparator 可用于指定对象之间的顺序。
 
 Since:
 

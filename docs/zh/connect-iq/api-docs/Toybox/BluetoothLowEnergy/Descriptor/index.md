@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Descriptor"
 ---
-# Class: Toybox.BluetoothLowEnergy.Descriptor
+# 类：Toybox.BluetoothLowEnergy.Descriptor
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Encapsulates a Descriptor from on a Characteristic
+封装特征中的描述符
 
 Since:
 

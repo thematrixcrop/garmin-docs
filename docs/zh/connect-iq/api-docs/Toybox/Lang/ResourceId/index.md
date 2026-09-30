@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.ResourceId"
 ---
-# Class: Toybox.Lang.ResourceId
+# 类：Toybox.Lang.ResourceId
 
 Inherits:
 
@@ -35,14 +35,14 @@ API 级别 1.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a ResourceId to a String.
+    将 ResourceId 转换为 String。
 
 
 ## 实例方法详情
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a ResourceId to a String
+将 ResourceId 转换为 String
 
 Returns:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.AnimationLayer"
 ---
-# Class: Toybox.WatchUi.AnimationLayer
+# 类：Toybox.WatchUi.AnimationLayer
 
 Inherits:
 
@@ -225,7 +225,7 @@ Parameters:
 
 - rez — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)) —
 
-    either an animation ResourceId or a [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
+    动画 ResourceId 或 [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

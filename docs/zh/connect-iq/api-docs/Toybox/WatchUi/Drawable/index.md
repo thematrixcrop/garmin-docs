@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Drawable"
 ---
-# Class: Toybox.WatchUi.Drawable
+# 类：Toybox.WatchUi.Drawable
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Drawable is the base class of a drawable object.
+Drawable 是可绘制对象的基类。
 
 可以使用资源编译器构造 Drawable，并通过资源（Rez）模块加载。
 
@@ -198,7 +198,7 @@ Returns:
 
 此方法假定设备上下文已经配置为正确的选项。
 
-Derived classes should check the isVisible property, if it exists, before trying to draw.
+派生类应在尝试绘制前检查 isVisible 属性（如果存在）。
 
 Parameters:
 

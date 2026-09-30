@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.SerializationException"
 ---
-# Class: Toybox.Lang.SerializationException
+# 类：Toybox.Lang.SerializationException
 
 Inherits:
 

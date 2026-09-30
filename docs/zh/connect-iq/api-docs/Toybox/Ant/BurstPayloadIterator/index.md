@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.BurstPayloadIterator"
 ---
-# Class: Toybox.Ant.BurstPayloadIterator
+# 类：Toybox.Ant.BurstPayloadIterator
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-An iterator to use with a [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/).
+用于 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 的迭代器。
 
 The BurstPayloadIterator is used to iterate over the BurstPayload and and access each data packet.
 

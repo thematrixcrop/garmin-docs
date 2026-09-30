@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Service"
 ---
-# Class: Toybox.BluetoothLowEnergy.Service
+# 类：Toybox.BluetoothLowEnergy.Service
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Encapsulates a service provided by a device
+封装设备提供的服务
 
 Since:
 

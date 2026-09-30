@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.DevicePairException"
 ---
-# Class: Toybox.BluetoothLowEnergy.DevicePairException
+# 类：Toybox.BluetoothLowEnergy.DevicePairException
 
 Inherits:
 

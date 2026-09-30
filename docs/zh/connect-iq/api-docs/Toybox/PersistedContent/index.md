@@ -20,7 +20,7 @@ This module provides an Iterator class that gives access to content stored on th
 - [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
 
-Each of these objects can utilize [System.Intents](/connect-iq/api-docs/Toybox/System/Intent/) to to launch the appropriate application type for the content type (e.g. The workout might launch the workout player). This is typically used in conjunction with the [Communications](/connect-iq/api-docs/Toybox/Communications/) module to retrieve content of type .FIT and .GPX and later access it using the get methods provided within this module.
+这些对象中的每一个都可以使用 [System.Intents](/connect-iq/api-docs/Toybox/System/Intent/) 为内容类型启动相应的应用程序类型（例如，锻炼可能会启动锻炼播放器）。此项通常与 [Communications](/connect-iq/api-docs/Toybox/Communications/) 模块结合使用，以获取 .FIT 和 .GPX 类型的内容，之后使用此模块中提供的 get 方法访问这些内容。
 
 ## 另见：
 
@@ -33,7 +33,7 @@ Each of these objects can utilize [System.Intents](/connect-iq/api-docs/Toybox/S
 
 注意：
 
-As a general rule, Fitness and Edge devices will support .FIT format. Outdoor devices will support .GPX format.
+一般来说，Fitness 和 Edge 设备支持 .FIT 格式。Outdoor 设备支持 .GPX 格式。
 
 Example:
 

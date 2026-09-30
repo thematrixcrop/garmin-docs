@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.AnimationDelegate"
 ---
-# Class: Toybox.WatchUi.AnimationDelegate
+# 类：Toybox.WatchUi.AnimationDelegate
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-AnimationDelegate responds to an Animation event.
+AnimationDelegate 响应 Animation 事件。
 
 ## 另见：
 

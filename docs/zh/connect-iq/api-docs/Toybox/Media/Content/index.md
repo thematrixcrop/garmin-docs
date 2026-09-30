@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.Content"
 ---
-# Class: Toybox.Media.Content
+# 类：Toybox.Media.Content
 
 Inherits:
 

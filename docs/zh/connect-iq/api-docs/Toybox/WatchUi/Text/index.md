@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Text"
 ---
-# Class: Toybox.WatchUi.Text
+# 类：Toybox.WatchUi.Text
 
 Inherits:
 

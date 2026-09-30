@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.InvalidPaletteException"
 ---
-# Class: Toybox.Graphics.InvalidPaletteException
+# 类：Toybox.Graphics.InvalidPaletteException
 
 Inherits:
 

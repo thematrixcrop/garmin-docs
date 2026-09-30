@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.AppBase"
 ---
-# Class: Toybox.Application.AppBase
+# 类：Toybox.Application.AppBase
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-AppBase is the base class for an app.
+AppBase 是应用的基类。
 
 所有应用都继承自此类，并使用其方法管理应用生命周期。
 
@@ -46,7 +46,7 @@ AppBase is the base class for an app.
 3. [onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)
 
 
-Every AppBase object has access to an object store to persist data.
+每个 AppBase 对象都可以访问用于持久化数据的对象存储。
 
 Example:
 
@@ -244,7 +244,7 @@ API 级别 4.0.0
 
 - [**onSettingsChanged**](#onSettingsChanged-instance_function)() as **Void**
 
-    Called when the application settings have been changed by Garmin Connect Mobile (GCM) while while the app is running.
+    应用运行时，Garmin Connect Mobile（GCM）更改应用设置时调用。
 
 - [**onStart**](#onStart-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
@@ -256,7 +256,7 @@ API 级别 4.0.0
 
 - [**onStorageChanged**](#onStorageChanged-instance_function)() as **Void**
 
-    Called when Application storage is changed by the other running instance, of the app i.e Background Process while the CIQ app is running or vice-versa.
+    当应用存储被应用的另一个运行实例（即应用运行时的后台进程，反之亦然）更改时调用。
 
 - [**onValidateProperty**](#onValidateProperty-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -308,7 +308,7 @@ API 级别 2.3.0
 
 注意：
 
-Background processes cannot clear properties.
+后台进程无法清除属性。
 
 :::details 支持的设备
 
@@ -518,7 +518,7 @@ Throws:
 
 注意：
 
-Background processes cannot delete properties.
+后台进程无法删除属性。
 
 Parameters:
 
@@ -2338,7 +2338,7 @@ API 级别 4.1.2
 
 ### **onSettingsChanged()** as **Void**
 
-Called when the application settings have been changed by Garmin Connect Mobile (GCM) while while the app is running. Override this method to change app behavior when settings change. This is typically used to call for an update to the [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
+应用运行时，Garmin Connect Mobile（GCM）更改应用设置时调用。重写此方法，以便在设置更改时更改应用行为。通常用于请求更新 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
 
 Example:
 
@@ -2362,7 +2362,7 @@ API 级别 1.2.0
 
 在启动时调用的方法，用于处理应用初始化。
 
-Before the initial [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) is retrieved, onStart() is called. Application level settings can be initialized or retrieved from the object store before the initial View is created. This method must be overridden to handle your own app initialization.
+在检索初始 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 之前，会调用 onStart()。在创建初始 View 之前，可以从对象存储中初始化或检索应用级设置。必须重写此方法来处理应用自身的初始化。
 
 注意：
 
@@ -2452,7 +2452,7 @@ API 级别 1.0.0
 
 ### **onStorageChanged()** as **Void**
 
-Called when Application storage is changed by the other running instance, of the app i.e Background Process while the CIQ app is running or vice-versa. Override this function to receive a callback when the storage is updated. Use this function to reload storage data from the application storage.
+当应用存储被应用的另一个运行实例（即应用运行时的后台进程，反之亦然）更改时调用。重写此函数，以便在存储更新时接收回调。使用此函数从应用存储重新加载存储数据。
 
 Since:
 
@@ -2690,7 +2690,7 @@ API 级别 1.0.0
 
 注意：
 
-Background processes cannot save properties.
+后台进程无法保存属性。
 
 注意：
 

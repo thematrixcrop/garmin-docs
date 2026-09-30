@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ProgressBar"
 ---
-# Class: Toybox.WatchUi.ProgressBar
+# 类：Toybox.WatchUi.ProgressBar
 
 Inherits:
 
@@ -26,7 +26,7 @@ The look and feel of a progress bar is device-specific.
 
 Example:
 
-Create a simple busy progress indicator
+创建简单的忙碌进度指示器
 
 ```
 using Toybox.WatchUi;

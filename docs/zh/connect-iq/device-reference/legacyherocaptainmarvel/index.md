@@ -1,7 +1,7 @@
 ---
 title: "Captain Marvel"
 ---
-# Captain Marvel
+# 惊奇队长
 
 | 属性 | 值 |
 | --- | --- |

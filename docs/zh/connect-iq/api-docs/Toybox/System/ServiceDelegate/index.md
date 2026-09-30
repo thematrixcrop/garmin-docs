@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.ServiceDelegate"
 ---
-# Class: Toybox.System.ServiceDelegate
+# 类：Toybox.System.ServiceDelegate
 
 Inherits:
 

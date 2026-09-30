@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.InvalidPointException"
 ---
-# Class: Toybox.WatchUi.InvalidPointException
+# 类：Toybox.WatchUi.InvalidPointException
 
 Inherits:
 

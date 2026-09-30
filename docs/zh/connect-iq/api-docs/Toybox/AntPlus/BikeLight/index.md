@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikeLight"
 ---
-# Class: Toybox.AntPlus.BikeLight
+# 类：Toybox.AntPlus.BikeLight
 
 Inherits:
 

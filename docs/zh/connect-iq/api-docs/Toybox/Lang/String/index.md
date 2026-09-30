@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.String"
 ---
-# Class: Toybox.Lang.String
+# 类：Toybox.Lang.String
 
 Inherits:
 
@@ -221,7 +221,7 @@ Parameters:
 
 - endIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    End position of the substring, exclusive
+    子字符串的结束位置，不包含该位置
 
 
 Example:
@@ -536,7 +536,7 @@ API 级别 1.0.0
 
 将 String 转换为 Number 对象数组。
 
-Each Number represents one byte of the UTF-8 representation of the String.
+每个 Number 表示 String 的 UTF-8 表示形式中的一个字节。
 
 Returns:
 

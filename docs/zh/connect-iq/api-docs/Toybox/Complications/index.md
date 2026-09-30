@@ -114,7 +114,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a distance; value is in meters
+复杂功能表示距离；值以米为单位
 
 |
 | UNIT\_ELEVATION | 2 |
@@ -123,7 +123,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a elevation; value is in meters
+复杂功能表示海拔；值以米为单位
 
 |
 | UNIT\_HEIGHT | 3 |
@@ -132,7 +132,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a height; value is in meters
+复杂功能表示高度；值以米为单位
 
 |
 | UNIT\_SPEED | 4 |
@@ -141,7 +141,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a speed; value is in meters/second
+复杂功能表示速度；值以米/秒为单位
 
 |
 | UNIT\_TEMPERATURE | 5 |
@@ -150,7 +150,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a temperature; value is in degrees Celsius
+复杂功能表示温度；值以摄氏度为单位
 
 |
 | UNIT\_WEIGHT | 6 |
@@ -159,7 +159,7 @@ API 级别 4.2.0
 
 |
 
-Complication is a weight; value is in grams
+复杂功能表示重量；值以克为单位
 
 |
 
@@ -564,7 +564,7 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 - [**ComplicationChangedCallback**](#ComplicationChangedCallback-named_type) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
-    Callback for subscribers to be notified of complication updates.
+    用于通知订阅者复杂功能更新的回调。
 
 - [**Data**](#Data-named_type) as { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
 - [**Icon**](#Icon-named_type) as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
@@ -612,7 +612,7 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 ### **ComplicationChangedCallback** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as **Void**
 
-Callback for subscribers to be notified of complication updates
+用于通知订阅者复杂功能更新的回调
 
 Since:
 
@@ -764,7 +764,7 @@ Parameters:
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
-    Complication Id to fetch
+    要获取的复杂功能 ID
 
 
 Returns:
@@ -808,7 +808,7 @@ Parameters:
 
 - callback — ([Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type)) —
 
-    Callback to be invoked when complication is changed or becomes unavailable.
+    复杂功能发生更改或变得不可用时调用的回调。
 
 
 Since:
@@ -862,7 +862,7 @@ Parameters:
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
-    Complication Td to unsubscribe from
+    要取消订阅的复杂功能 Td
 
 
 Since:
@@ -877,7 +877,7 @@ Parameters:
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Application complication to be updated
+    要更新的应用复杂功能
 
 - data — ([Complications.Data](/connect-iq/api-docs/Toybox/Complications/#Data-named_type)) —
 

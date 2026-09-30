@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.UnexpectedTypeException"
 ---
-# Class: Toybox.Lang.UnexpectedTypeException
+# 类：Toybox.Lang.UnexpectedTypeException
 
 Inherits:
 

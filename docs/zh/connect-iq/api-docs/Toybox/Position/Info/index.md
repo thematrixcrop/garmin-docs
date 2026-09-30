@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Position.Info"
 ---
-# Class: Toybox.Position.Info
+# 类：Toybox.Position.Info
 
 Inherits:
 
@@ -252,7 +252,7 @@ Returns:
 
 高于平均海平面的海拔，单位为米 (m)。
 
-Elevation is obtained from the GPS. If no GPS is present, then no valid elevation will be returned.
+海拔高度从 GPS 获取。如果没有 GPS，则不会返回有效的海拔高度。
 
 Since:
 

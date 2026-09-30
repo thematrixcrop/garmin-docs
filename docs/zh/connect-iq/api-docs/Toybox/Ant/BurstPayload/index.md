@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.BurstPayload"
 ---
-# Class: Toybox.Ant.BurstPayload
+# 类：Toybox.Ant.BurstPayload
 
 Inherits:
 

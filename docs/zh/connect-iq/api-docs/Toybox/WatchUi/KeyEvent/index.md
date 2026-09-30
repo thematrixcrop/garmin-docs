@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.KeyEvent"
 ---
-# Class: Toybox.WatchUi.KeyEvent
+# 类：Toybox.WatchUi.KeyEvent
 
 Inherits:
 

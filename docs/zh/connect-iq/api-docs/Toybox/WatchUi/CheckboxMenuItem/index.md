@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.CheckboxMenuItem"
 ---
-# Class: Toybox.WatchUi.CheckboxMenuItem
+# 类：Toybox.WatchUi.CheckboxMenuItem
 
 Inherits:
 

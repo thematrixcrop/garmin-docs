@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Background.InvalidBackgroundTimeException"
 ---
-# Class: Toybox.Background.InvalidBackgroundTimeException
+# 类：Toybox.Background.InvalidBackgroundTimeException
 
 Inherits:
 

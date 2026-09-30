@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.BleDelegate"
 ---
-# Class: Toybox.BluetoothLowEnergy.BleDelegate
+# 类：Toybox.BluetoothLowEnergy.BleDelegate
 
 Inherits:
 
@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-Delegate Class for Bluetooth Low Energy Callbacks.
+用于 Bluetooth Low Energy 回调的委托类。
 
-Applications must extend this Class and register an instance with the BLE Subsystem using [setDelegate()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setDelegate-instance_function) to support asynchronous operations.
+应用必须扩展此类，并使用 [setDelegate()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setDelegate-instance_function) 注册一个实例到 BLE 子系统，以支持异步操作。
 
 Since:
 
@@ -116,7 +116,7 @@ Parameters:
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    Characteristic value that was read. `null` if status is not [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
+    已读取的特征值。如果状态不是 [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)，则为 `null`
 
 
 Since:
@@ -177,7 +177,7 @@ Parameters:
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    Descriptor value that was read. `null` if status is not [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
+    已读取的描述符值。当状态不是 [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const) 时为 `null`
 
 
 Since:
@@ -322,7 +322,7 @@ Parameters:
 
 - scanResults — ([BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) —
 
-    An iterator of [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) objects for all of the advertisements seen since the last call to this callback
+    自上次调用此回调以来所看到的所有广告的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 对象迭代器
 
 
 Since:

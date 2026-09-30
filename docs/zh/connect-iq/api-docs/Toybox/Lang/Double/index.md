@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Double"
 ---
-# Class: Toybox.Lang.Double
+# 类：Toybox.Lang.Double
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Double represents a 64-bit floating point number.
+Double 表示 64 位浮点数。
 
 To use a double in Monkey C add 'd' to the end of the number.
 

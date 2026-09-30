@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.UserSettings"
 ---
-# Class: Toybox.AntPlus.UserSettings
+# 类：Toybox.AntPlus.UserSettings
 
 Inherits:
 

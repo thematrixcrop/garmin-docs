@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Layer"
 ---
-# Class: Toybox.WatchUi.Layer
+# 类：Toybox.WatchUi.Layer
 
 Inherits:
 

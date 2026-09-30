@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.SensorDelegate"
 ---
-# Class: Toybox.Sensor.SensorDelegate
+# 类：Toybox.Sensor.SensorDelegate
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Delegate for handling native sensor pairing process.
+用于处理原生传感器配对过程的委托。
 
 The members of this object get called by the system to delegate scanning and pairing of different sensors.
 

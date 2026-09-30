@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.Device"
 ---
-# Class: Toybox.AntPlus.Device
+# 类：Toybox.AntPlus.Device
 
 Inherits:
 

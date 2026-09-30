@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.SensorInfoIterator"
 ---
-# Class: Toybox.Sensor.SensorInfoIterator
+# 类：Toybox.Sensor.SensorInfoIterator
 
 Inherits:
 

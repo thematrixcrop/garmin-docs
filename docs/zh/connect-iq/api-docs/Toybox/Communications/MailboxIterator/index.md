@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Communications.MailboxIterator"
 ---
-# Class: Toybox.Communications.MailboxIterator
+# 类：Toybox.Communications.MailboxIterator
 
 Inherits:
 

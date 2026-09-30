@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.Message"
 ---
-# Class: Toybox.Ant.Message
+# 类：Toybox.Ant.Message
 
 Inherits:
 

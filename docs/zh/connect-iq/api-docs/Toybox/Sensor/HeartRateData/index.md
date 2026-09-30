@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.HeartRateData"
 ---
-# Class: Toybox.Sensor.HeartRateData
+# 类：Toybox.Sensor.HeartRateData
 
 Inherits:
 

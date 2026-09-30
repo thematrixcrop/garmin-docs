@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Test.AssertException"
 ---
-# Class: Toybox.Test.AssertException
+# 类：Toybox.Test.AssertException
 
 Inherits:
 

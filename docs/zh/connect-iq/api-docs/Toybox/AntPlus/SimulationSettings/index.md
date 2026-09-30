@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.SimulationSettings"
 ---
-# Class: Toybox.AntPlus.SimulationSettings
+# 类：Toybox.AntPlus.SimulationSettings
 
 Inherits:
 

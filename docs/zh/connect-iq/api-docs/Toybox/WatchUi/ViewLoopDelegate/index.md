@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ViewLoopDelegate"
 ---
-# Class: Toybox.WatchUi.ViewLoopDelegate
+# 类：Toybox.WatchUi.ViewLoopDelegate
 
 Inherits:
 
@@ -151,7 +151,7 @@ API 级别 3.4.0
 
 - [**initialize**](#initialize-instance_function)(viewLoop as [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/))
 
-    Constructor for the delegate.
+    委托的构造函数。
 
 - [**onNextView**](#onNextView-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -166,7 +166,7 @@ API 级别 3.4.0
 
 ### **initialize(viewLoop as [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/))**
 
-Constructor for the delegate
+委托的构造函数
 
 Parameters:
 

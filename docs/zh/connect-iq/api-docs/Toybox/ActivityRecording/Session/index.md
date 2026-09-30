@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityRecording.Session"
 ---
-# Class: Toybox.ActivityRecording.Session
+# 类：Toybox.ActivityRecording.Session
 
 Inherits:
 
@@ -101,7 +101,7 @@ Parameters:
 
 - 最大长度可能因产品而异。
 
-- At least 64 bytes are available
+- 至少有 64 个字节可用
 
 
 - fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
@@ -122,9 +122,9 @@ Parameters:
 
 - This is also the maximum combined size of strings plus `null` terminators if the type is DATA\_TYPE\_STRING (Default 1)
 
-- Apps are limited to 256 total bytes per message
+- 每条消息中应用的总字节数限制为 256。
 
-- Data fields are limited to 32 bytes per message
+- 每条消息的数据字段限制为 32 字节
 
 - Messages larger than the limit will result in a "New Field out of memory for FIT data" error.
 
@@ -133,7 +133,7 @@ Parameters:
 
         The message type that this Field should be added to
 
-- Defaults to [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const) if not provided
+- 如果未提供，则默认为 [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)
 
 - If mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const), [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) cannot be used as the Field type.
 
@@ -146,7 +146,7 @@ Parameters:
 
 - 最大长度可能因产品而异。
 
-- At least 16 bytes are available
+- 至少有 16 个字节可用
 
 
 - :nativeNum — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
@@ -233,9 +233,9 @@ Parameters:
 
     对必须接受两个参数的回调的引用。
 
-- eventType: A TIMER\_EVENT\_\* enum that describes the event that occurred.
+- eventType：描述所发生事件的 TIMER\_EVENT\_\* 枚举。
 
-- eventData: A [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) containing data relevant to the timer event or `null`. If eventType is TIMER\_EVENT\_LAP, the following are provided if available:
+- eventData：包含计时器事件相关数据的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)，或为 `null`。如果 eventType 为 TIMER\_EVENT\_LAP，则在可用时提供以下内容：
 
 
 - `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米）

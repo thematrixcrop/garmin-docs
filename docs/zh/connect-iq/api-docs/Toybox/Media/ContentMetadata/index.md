@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.ContentMetadata"
 ---
-# Class: Toybox.Media.ContentMetadata
+# 类：Toybox.Media.ContentMetadata
 
 Inherits:
 

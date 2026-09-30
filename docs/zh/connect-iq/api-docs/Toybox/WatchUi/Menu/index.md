@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Menu"
 ---
-# Class: Toybox.WatchUi.Menu
+# 类：Toybox.WatchUi.Menu
 
 Inherits:
 
@@ -35,7 +35,7 @@ The look and feel of a menu is device-specific.
 
 Example:
 
-Build a simple menu programmatically
+以编程方式构建简单菜单
 
 ```
 using Toybox.WatchUi;

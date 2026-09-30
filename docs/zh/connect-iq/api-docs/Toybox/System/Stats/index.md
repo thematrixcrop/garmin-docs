@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.Stats"
 ---
-# Class: Toybox.System.Stats
+# 类：Toybox.System.Stats
 
 Inherits:
 
@@ -48,7 +48,7 @@ API 级别 1.0.0
 
 - [**charging**](#charging-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Battery charging indicator.
+    电池充电指示器。
 
 - [**freeMemory**](#freeMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -199,7 +199,7 @@ Returns:
 
 ### var charging as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Battery charging indicator. This will be set to `true` if the device is connected to the charging cradle or cable whether or not the device is fully charged.
+电池充电指示器。如果设备已连接到充电底座或充电线缆，无论设备是否已充满电，此值都将设置为 `true`。
 
 Since:
 

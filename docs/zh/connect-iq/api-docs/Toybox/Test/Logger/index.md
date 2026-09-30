@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Test.Logger"
 ---
-# Class: Toybox.Test.Logger
+# 类：Toybox.Test.Logger
 
 Inherits:
 

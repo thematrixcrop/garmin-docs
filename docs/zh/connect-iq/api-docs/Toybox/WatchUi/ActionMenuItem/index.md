@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ActionMenuItem"
 ---
-# Class: Toybox.WatchUi.ActionMenuItem
+# 类：Toybox.WatchUi.ActionMenuItem
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class that represents an action menu item.
+表示操作菜单项的类。
 
 Since:
 

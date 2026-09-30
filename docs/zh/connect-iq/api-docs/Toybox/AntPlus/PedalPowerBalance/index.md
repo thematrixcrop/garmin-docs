@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.PedalPowerBalance"
 ---
-# Class: Toybox.AntPlus.PedalPowerBalance
+# 类：Toybox.AntPlus.PedalPowerBalance
 
 Inherits:
 

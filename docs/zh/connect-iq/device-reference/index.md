@@ -1,7 +1,7 @@
 ---
 title: "Device Reference"
 ---
-# Device Reference
+# 设备引用
 
 | Device | 屏幕形状 | 屏幕尺寸 | Touch Screen | Colors | Icon Size | 按键 |
 | --- | --- | --- | --- | --- | --- | --- |

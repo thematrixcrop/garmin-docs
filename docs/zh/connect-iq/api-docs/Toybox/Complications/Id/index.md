@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Complications.Id"
 ---
-# Class: Toybox.Complications.Id
+# 类：Toybox.Complications.Id
 
 Inherits:
 

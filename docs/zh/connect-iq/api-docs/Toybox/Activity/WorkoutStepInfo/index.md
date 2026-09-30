@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.WorkoutStepInfo"
 ---
-# Class: Toybox.Activity.WorkoutStepInfo
+# 类：Toybox.Activity.WorkoutStepInfo
 
 Inherits:
 
@@ -175,7 +175,7 @@ API 级别 3.2.0
 
 - [**step**](#step-var) as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
-    Duration and target information about the step.
+    有关步的持续时间和目标信息。
 
 - [**subSport**](#subSport-var) as [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) or **Null**
 
@@ -240,7 +240,7 @@ Returns:
 
 ### var step as [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/) or [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
-Duration and target information about the step
+有关步的持续时间和目标信息
 
 Since:
 

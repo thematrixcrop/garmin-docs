@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.ObjectStoreAccessException"
 ---
-# Class: Toybox.Application.ObjectStoreAccessException
+# 类：Toybox.Application.ObjectStoreAccessException
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.RadarTarget"
 ---
-# Class: Toybox.AntPlus.RadarTarget
+# 类：Toybox.AntPlus.RadarTarget
 
 Inherits:
 

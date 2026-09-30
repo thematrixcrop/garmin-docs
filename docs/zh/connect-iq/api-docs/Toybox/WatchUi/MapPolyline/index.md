@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.MapPolyline"
 ---
-# Class: Toybox.WatchUi.MapPolyline
+# 类：Toybox.WatchUi.MapPolyline
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-An object representing a polyline (polygonal chain) on the map.
+表示地图上折线的对象。
 
 This object holds an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects to draw a polyline on the map.
 

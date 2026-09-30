@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Weather.HourlyForecast"
 ---
-# Class: Toybox.Weather.HourlyForecast
+# 类：Toybox.Weather.HourlyForecast
 
 Inherits:
 

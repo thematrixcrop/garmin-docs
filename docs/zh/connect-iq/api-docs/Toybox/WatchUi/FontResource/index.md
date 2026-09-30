@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.FontResource"
 ---
-# Class: Toybox.WatchUi.FontResource
+# 类：Toybox.WatchUi.FontResource
 
 Inherits:
 

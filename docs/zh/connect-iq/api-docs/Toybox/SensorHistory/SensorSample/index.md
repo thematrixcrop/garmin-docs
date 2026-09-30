@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.SensorHistory.SensorSample"
 ---
-# Class: Toybox.SensorHistory.SensorSample
+# 类：Toybox.SensorHistory.SensorSample
 
 Inherits:
 

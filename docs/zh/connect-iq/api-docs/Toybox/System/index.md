@@ -30,7 +30,7 @@ API 级别 1.0.0
 
 |
 
-Display units in metric units
+以公制单位显示单位
 
 |
 | UNIT\_STATUTE | 1 |
@@ -39,7 +39,7 @@ API 级别 1.0.0
 
 |
 
-Display units in statute units
+以英制单位显示单位
 
 |
 
@@ -269,7 +269,7 @@ API 级别 3.1.0
 
 |
 
-Chinese (Simplified)
+简体中文
 
 |
 | LANGUAGE\_CHT | 8389371 |
@@ -278,7 +278,7 @@ API 级别 3.1.0
 
 |
 
-Chinese (Traditional)
+繁体中文
 
 |
 | LANGUAGE\_DAN | 8389353 |
@@ -386,7 +386,7 @@ API 级别 3.1.0
 
 |
 
-Bahasa Indonesia
+印度尼西亚语
 
 |
 | LANGUAGE\_ITA | 8389362 |
@@ -563,7 +563,7 @@ Standard (Bahasa) Malay
 
 ### DisplayMode
 
-Enum class for display mode
+用于显示模式的枚举类
 
 Since:
 
@@ -576,7 +576,7 @@ API 级别 5.0.0
 
 |
 
-Display in high power mode. [View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) are not subject to burn-in protection.
+在高功耗模式下显示。[View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 不受烧屏保护限制。
 
 |
 | DISPLAY\_MODE\_LOW\_POWER | 1 |
@@ -585,7 +585,7 @@ API 级别 5.0.0
 
 |
 
-Display in low power mode, including watch face always-on mode. [View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) subject to burn-in protection.
+在低功耗模式下显示，包括表盘常亮模式。[View.onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 受烧屏保护限制。
 
 |
 | DISPLAY\_MODE\_OFF | 2 |
@@ -594,7 +594,7 @@ API 级别 5.0.0
 
 |
 
-Display is off.
+显示屏关闭。
 
 |
 

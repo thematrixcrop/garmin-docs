@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.ContentRefIterator"
 ---
-# Class: Toybox.Media.ContentRefIterator
+# 类：Toybox.Media.ContentRefIterator
 
 Inherits:
 

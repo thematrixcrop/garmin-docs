@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.GlanceView"
 ---
-# Class: Toybox.WatchUi.GlanceView
+# 类：Toybox.WatchUi.GlanceView
 
 Inherits:
 

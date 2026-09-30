@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityMonitor.HeartRateIterator"
 ---
-# Class: Toybox.ActivityMonitor.HeartRateIterator
+# 类：Toybox.ActivityMonitor.HeartRateIterator
 
 Inherits:
 

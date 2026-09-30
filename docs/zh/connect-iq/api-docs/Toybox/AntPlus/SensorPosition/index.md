@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.SensorPosition"
 ---
-# Class: Toybox.AntPlus.SensorPosition
+# 类：Toybox.AntPlus.SensorPosition
 
 Inherits:
 

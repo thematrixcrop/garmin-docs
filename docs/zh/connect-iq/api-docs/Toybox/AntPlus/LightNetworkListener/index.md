@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.LightNetworkListener"
 ---
-# Class: Toybox.AntPlus.LightNetworkListener
+# 类：Toybox.AntPlus.LightNetworkListener
 
 Inherits:
 
@@ -215,11 +215,11 @@ API 级别 2.2.0
 
 - [**onBikeLightUpdate**](#onBikeLightUpdate-instance_function)(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) as **Void**
 
-    Callback when a bike light's data is updated (max freq.
+    自行车灯数据更新时的回调（最大频率
 
 - [**onLightNetworkStateUpdate**](#onLightNetworkStateUpdate-instance_function)(data as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)) as **Void**
 
-    Callback when the light network state changes.
+    灯光网络状态更改时的回调。
 
 
 ## 实例方法详情
@@ -234,7 +234,7 @@ API 级别 2.2.0
 
 ### **onBikeLightUpdate(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/))** as **Void**
 
-Callback when a bike light's data is updated (max freq. 1Hz)
+自行车灯数据更新时的回调（最大频率 1Hz）
 
 Parameters:
 
@@ -249,7 +249,7 @@ API 级别 2.2.0
 
 ### **onLightNetworkStateUpdate(data as [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module))** as **Void**
 
-Callback when the light network state changes
+灯光网络状态更改时的回调
 
 Parameters:
 

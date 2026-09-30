@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Complications.Iterator"
 ---
-# Class: Toybox.Complications.Iterator
+# 类：Toybox.Complications.Iterator
 
 Inherits:
 

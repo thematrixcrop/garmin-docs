@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Boolean"
 ---
-# Class: Toybox.Lang.Boolean
+# 类：Toybox.Lang.Boolean
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Boolean objects represent a true or false value.
+Boolean 对象表示 true 或 false 值。
 
 You can use the `true` or `false` keyword to create a Boolean.
 
@@ -41,7 +41,7 @@ API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Compare the numeric value of self to some other numeric value. false is
+将 self 的数值与其他数值进行比较。如果 false 表示
 
 ```
   considered numerically zero and true is considered numerically 1.

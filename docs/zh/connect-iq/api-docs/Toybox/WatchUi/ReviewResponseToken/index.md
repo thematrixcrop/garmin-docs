@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ReviewResponseToken"
 ---
-# Class: Toybox.WatchUi.ReviewResponseToken
+# 类：Toybox.WatchUi.ReviewResponseToken
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class that represents an opaque review response token
+表示不透明审核响应令牌的类
 
 Since:
 

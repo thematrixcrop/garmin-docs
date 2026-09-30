@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Complications.ComplicationNotFoundException"
 ---
-# Class: Toybox.Complications.ComplicationNotFoundException
+# 类：Toybox.Complications.ComplicationNotFoundException
 
 Inherits:
 

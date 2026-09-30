@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.WatchFace"
 ---
-# Class: Toybox.WatchUi.WatchFace
+# 类：Toybox.WatchUi.WatchFace
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## 概述
 
-Create a Watch Face that supports exiting/entering low power mode.
+创建支持退出/进入低功耗模式的表盘。
 
 Watch Face 是一种特殊的 View，可在设备电源状态发生变化时提供通知。
 
@@ -26,7 +26,7 @@ Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回
 
 在高功耗模式下经过此时间段（通常约十秒）后，系统将调用 [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function)，通知应用正在准备进入低功耗模式。
 
-During low power mode the system will call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
+在低功耗模式下，系统会在每分钟开始时调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)。如果支持部分更新，则会在每分钟的前 59 秒调用 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 方法。处于低功耗模式时，应用无法使用计时器或动画。
 
 When a gesture occurs while running in low power mode the system will call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.BoundingBox"
 ---
-# Class: Toybox.Graphics.BoundingBox
+# 类：Toybox.Graphics.BoundingBox
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-An object representing a bounding box in the UI
+表示 UI 中边界框的对象
 
 Since:
 
@@ -45,15 +45,15 @@ API 级别 3.2.7
 
 - [**addBoundingBox**](#addBoundingBox-instance_function)(box as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)) as **Void**
 
-    Expand self to include a bounding box Update `self` to include the full bounding box specified.
+    扩展 self 以包含边界框 更新 `self` 以包含指定的完整边界框。
 
 - [**addCircle**](#addCircle-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), radius as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Expand self to include a circle Update `self` to include the circle specified.
+    扩展 self 以包含圆形 更新 `self` 以包含指定的圆形。
 
 - [**addEllipse**](#addEllipse-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), a as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), b as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Expand self to include an ellipse Update `self` to include the ellipse specified.
+    扩展 self 以包含椭圆 更新 `self` 以包含指定的椭圆。
 
 - [**addPoint**](#addPoint-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -65,15 +65,15 @@ API 级别 3.2.7
 
 - [**addRectangle**](#addRectangle-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Expand self to include a rectangle Update `self` to include the rectangle specified.
+    扩展 self 以包含矩形 更新 `self` 以包含指定的矩形。
 
 - [**expand**](#expand-instance_function)(dx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), dy as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Expand self by the given offsets Expand `self` by the x and y offsets specified.
+    按照给定偏移量扩展 self 按照指定的 x 和 y 偏移量扩展 `self`。
 
 - [**includesPoint**](#includesPoint-instance_function)(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if self includes a point Points on the edge of a box are considered to be included since the box would not expand if such a point were added to the box.
+    确定 self 是否包含一个点 由于添加边界框边缘上的点不会使边界框扩展，因此边缘上的点也被视为包含在内。
 
 - [**normalize**](#normalize-instance_function)() as **Void**
 
@@ -85,7 +85,7 @@ API 级别 3.2.7
 
 - [**valid**](#valid-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Check box is valid.
+    复选框有效。
 
 
 ## 实例属性详情
@@ -126,7 +126,7 @@ API 级别 3.2.7
 
 ### **addBoundingBox(box as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/))** as **Void**
 
-Expand self to include a bounding box
+扩展 self 以包含边界框
 
 Update `self` to include the full bounding box specified. If `self` is not valid, sets `self` to `box`.
 
@@ -143,7 +143,7 @@ API 级别 5.1.0
 
 ### **addCircle(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), radius as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Expand self to include a circle
+扩展 self 以包含圆形
 
 Update `self` to include the circle specified. If `self` is not valid, sets `self` to the bounding box that contains the given circle.
 
@@ -183,7 +183,7 @@ Throws:
 
 ### **addEllipse(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), a as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), b as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Expand self to include an ellipse
+扩展 self 以包含椭圆
 
 Update `self` to include the ellipse specified. If `self` is not valid, sets `self` to the bounding box that contains the given ellipse.
 
@@ -287,7 +287,7 @@ Throws:
 
 ### **addRectangle(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Expand self to include a rectangle
+扩展 self 以包含矩形
 
 Update `self` to include the rectangle specified. If `self` is not valid, sets `self` to the bounding box that contains the given rectangle.
 
@@ -335,9 +335,9 @@ Throws:
 
 ### **expand(dx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), dy as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Expand self by the given offsets
+按照给定偏移量扩展 self
 
-Expand `self` by the x and y offsets specified. Use negative values to contract self.
+按照指定的 x 和 y 偏移量扩展 `self`。使用负值收缩 self。
 
 Parameters:
 
@@ -367,7 +367,7 @@ Throws:
 
 ### **includesPoint(x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if self includes a point
+确定 self 是否包含一个点
 
 Points on the edge of a box are considered to be included since the box would not expand if such a point were added to the box.
 
@@ -424,7 +424,7 @@ API 级别 5.1.0
 
 ### **valid()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Check box is valid
+复选框有效
 
 Returns:
 

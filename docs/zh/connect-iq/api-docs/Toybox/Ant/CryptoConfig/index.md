@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.CryptoConfig"
 ---
-# Class: Toybox.Ant.CryptoConfig
+# 类：Toybox.Ant.CryptoConfig
 
 Inherits:
 

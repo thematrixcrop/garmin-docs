@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.SymbolNotAllowedException"
 ---
-# Class: Toybox.Lang.SymbolNotAllowedException
+# 类：Toybox.Lang.SymbolNotAllowedException
 
 Inherits:
 

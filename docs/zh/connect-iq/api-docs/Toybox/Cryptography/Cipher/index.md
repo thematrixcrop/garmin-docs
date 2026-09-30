@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.Cipher"
 ---
-# Class: Toybox.Cryptography.Cipher
+# 类：Toybox.Cryptography.Cipher
 
 Inherits:
 
@@ -205,7 +205,7 @@ API 级别 3.0.0
 
 根据密码的初始化方式，使用密钥解密数据。
 
-Decryption can be broken up into two or more calls to decrypt(). For MODE\_CBC, the `ciphertext` length (in bytes) must be a multiple of the block size.
+解密可以拆分为两次或更多次 decrypt() 调用。对于 MODE\_CBC，`ciphertext` 的长度（以字节为单位）必须是块大小的倍数。
 
 Parameters:
 
@@ -240,7 +240,7 @@ Throws:
 
 根据密码的初始化方式，使用密钥加密数据。
 
-Encryption can be broken up into two or more calls to encrypt. For MODE\_CBC, the `plaintext` length (in bytes) must be a multiple of the block size.
+加密可以拆分为两次或更多次 encrypt 调用。对于 MODE\_CBC，`plaintext` 的长度（以字节为单位）必须是块大小的倍数。
 
 Parameters:
 

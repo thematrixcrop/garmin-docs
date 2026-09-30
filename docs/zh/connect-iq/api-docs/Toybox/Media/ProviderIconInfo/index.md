@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.ProviderIconInfo"
 ---
-# Class: Toybox.Media.ProviderIconInfo
+# 类：Toybox.Media.ProviderIconInfo
 
 Inherits:
 

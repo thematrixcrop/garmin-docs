@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.InvalidBitmapResourceException"
 ---
-# Class: Toybox.Graphics.InvalidBitmapResourceException
+# 类：Toybox.Graphics.InvalidBitmapResourceException
 
 Inherits:
 

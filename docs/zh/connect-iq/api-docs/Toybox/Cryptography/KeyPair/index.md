@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.KeyPair"
 ---
-# Class: Toybox.Cryptography.KeyPair
+# 类：Toybox.Cryptography.KeyPair
 
 Inherits:
 
@@ -188,7 +188,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
-    Constructor A KeyPair can be initialized from a private key by passing a private key [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) from an initialized [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object into the `:privateKey` option of the initialize method for this class.
+    构造函数 KeyPair 可以通过将已初始化的 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象中的私钥 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 传递给此类 initialize 方法的 `:privateKey` 选项来初始化。
 
 
 ## 实例方法详情

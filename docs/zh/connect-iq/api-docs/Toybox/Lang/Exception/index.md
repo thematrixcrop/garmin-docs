@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Exception"
 ---
-# Class: Toybox.Lang.Exception
+# 类：Toybox.Lang.Exception
 
 Inherits:
 
@@ -16,11 +16,11 @@ Toybox.Lang.Object
 
 ## 概述
 
-Exception is a class that represents a thrown Exception. Custom exceptions can be created by extending this class.
+Exception 是表示抛出异常的类。可以通过扩展此类来创建自定义异常。
 
 Example:
 
-Creating and throwing a new Exception class
+创建并抛出新的 Exception 类
 
 ```
 using Toybox.Lang;

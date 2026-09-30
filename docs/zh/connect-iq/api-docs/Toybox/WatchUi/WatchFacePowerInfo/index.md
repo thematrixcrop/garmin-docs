@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.WatchFacePowerInfo"
 ---
-# Class: Toybox.WatchUi.WatchFacePowerInfo
+# 类：Toybox.WatchUi.WatchFacePowerInfo
 
 Inherits:
 
@@ -69,7 +69,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    Average elapsed time per update in milliseconds (ms)
+    每次更新的平均耗时，单位为毫秒（ms）
 
 
 ### var executionTimeLimit as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

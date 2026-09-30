@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Confirmation"
 ---
-# Class: Toybox.WatchUi.Confirmation
+# 类：Toybox.WatchUi.Confirmation
 
 Inherits:
 

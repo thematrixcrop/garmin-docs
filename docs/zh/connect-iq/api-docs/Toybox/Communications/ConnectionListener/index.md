@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Communications.ConnectionListener"
 ---
-# Class: Toybox.Communications.ConnectionListener
+# 类：Toybox.Communications.ConnectionListener
 
 Inherits:
 

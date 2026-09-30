@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Authentication.OAuthMessage"
 ---
-# Class: Toybox.Authentication.OAuthMessage
+# 类：Toybox.Authentication.OAuthMessage
 
 Inherits:
 

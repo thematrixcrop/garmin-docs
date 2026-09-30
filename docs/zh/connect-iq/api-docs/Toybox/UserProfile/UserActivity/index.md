@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.UserProfile.UserActivity"
 ---
-# Class: Toybox.UserProfile.UserActivity
+# 类：Toybox.UserProfile.UserActivity
 
 Inherits:
 
@@ -26,11 +26,11 @@ API 级别 3.3.0
 
 - [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Distance covered by the activity in meters.
+    活动覆盖的距离，单位为米。
 
 - [**duration**](#duration-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-    Duration of the activity.
+    活动持续时间。
 
 - [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -45,7 +45,7 @@ API 级别 3.3.0
 
 ### var distance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Distance covered by the activity in meters
+活动覆盖的距离，单位为米
 
 Since:
 
@@ -60,7 +60,7 @@ Returns:
 
 ### var duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
-Duration of the activity
+活动持续时间
 
 Since:
 

@@ -70,7 +70,7 @@ API 级别 3.0.0
 
 - [**encodeBase64**](#encodeBase64-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Encodes a String in base64.
+    将 String 编码为 base64。
 
 - [**utf8ArrayToString**](#utf8ArrayToString-instance_function)(utf8Array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -145,7 +145,7 @@ Throws:
 
 ### **encodeBase64(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Encodes a String in base64
+将 String 编码为 base64
 
 Parameters:
 

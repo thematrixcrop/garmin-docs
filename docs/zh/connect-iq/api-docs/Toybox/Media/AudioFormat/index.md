@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.AudioFormat"
 ---
-# Class: Toybox.Media.AudioFormat
+# 类：Toybox.Media.AudioFormat
 
 Inherits:
 

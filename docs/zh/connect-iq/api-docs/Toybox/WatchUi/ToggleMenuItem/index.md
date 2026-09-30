@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ToggleMenuItem"
 ---
-# Class: Toybox.WatchUi.ToggleMenuItem
+# 类：Toybox.WatchUi.ToggleMenuItem
 
 Inherits:
 

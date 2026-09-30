@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.SensorHistory.SensorHistoryIterator"
 ---
-# Class: Toybox.SensorHistory.SensorHistoryIterator
+# 类：Toybox.SensorHistory.SensorHistoryIterator
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.SensorData"
 ---
-# Class: Toybox.Sensor.SensorData
+# 类：Toybox.Sensor.SensorData
 
 Inherits:
 
@@ -231,7 +231,7 @@ API 级别 2.3.0
 
 一个 [AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/) 对象。
 
-Can be `null` if accelerometer data was not requested.
+如果未请求加速度计数据，则可以为 `null`。
 
 Since:
 
@@ -403,7 +403,7 @@ API 级别 2.3.0
 
 一个 [GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/) 对象。
 
-Can be `null` if gyroscope data was not requested.
+如果未请求陀螺仪数据，则可以为 `null`。
 
 Since:
 
@@ -549,7 +549,7 @@ Returns:
 
 一个 [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) 对象。
 
-Can be `null` if heart rate interval data is not available.
+如果心率间隔数据不可用，则可以为 `null`。
 
 Example:
 
@@ -722,7 +722,7 @@ API 级别 3.0.0
 
 一个 [MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) 对象。
 
-Can be `null` if MagnetometerData data was not requested.
+如果未请求 MagnetometerData 数据，则可以为 `null`。
 
 Since:
 

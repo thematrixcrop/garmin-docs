@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikeRadarListener"
 ---
-# Class: Toybox.AntPlus.BikeRadarListener
+# 类：Toybox.AntPlus.BikeRadarListener
 
 Inherits:
 
@@ -177,7 +177,7 @@ API 级别 3.0.0
 
 - [**onBikeRadarUpdate**](#onBikeRadarUpdate-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>) as **Void**
 
-    Callback when radar data is updated.
+    雷达数据更新时的回调。
 
 
 ## 实例方法详情
@@ -192,7 +192,7 @@ API 级别 3.0.0
 
 ### **onBikeRadarUpdate(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>)** as **Void**
 
-Callback when radar data is updated
+雷达数据更新时的回调
 
 Parameters:
 

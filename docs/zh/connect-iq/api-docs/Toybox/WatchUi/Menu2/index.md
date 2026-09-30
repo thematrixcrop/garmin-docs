@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Menu2"
 ---
-# Class: Toybox.WatchUi.Menu2
+# 类：Toybox.WatchUi.Menu2
 
 Inherits:
 
@@ -41,7 +41,7 @@ The look and feel of a Menu2 is device-specific.
 
 Example:
 
-Build a simple Menu2 programmatically
+以编程方式构建简单的 Menu2
 
 ```
 using Toybox.WatchUi;
@@ -263,7 +263,7 @@ API 级别 3.0.0
 
 ### DividerType
 
-Divider type for supported devices
+支持的设备的分隔符类型
 
 Since:
 
@@ -276,7 +276,7 @@ API 级别 5.0.1
 
 |
 
-Default divider type
+默认分隔符类型
 
 |
 | DIVIDER\_TYPE\_ICON | 1 |

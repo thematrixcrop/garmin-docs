@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.TransparentProgressBar"
 ---
-# Class: Toybox.WatchUi.TransparentProgressBar
+# 类：Toybox.WatchUi.TransparentProgressBar
 
 Inherits:
 

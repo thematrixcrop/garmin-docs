@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.ProfileRegistrationException"
 ---
-# Class: Toybox.BluetoothLowEnergy.ProfileRegistrationException
+# 类：Toybox.BluetoothLowEnergy.ProfileRegistrationException
 
 Inherits:
 

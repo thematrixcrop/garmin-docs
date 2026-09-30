@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BatteryStatus"
 ---
-# Class: Toybox.AntPlus.BatteryStatus
+# 类：Toybox.AntPlus.BatteryStatus
 
 Inherits:
 

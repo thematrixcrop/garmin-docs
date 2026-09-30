@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.SelectableEvent"
 ---
-# Class: Toybox.WatchUi.SelectableEvent
+# 类：Toybox.WatchUi.SelectableEvent
 
 Inherits:
 

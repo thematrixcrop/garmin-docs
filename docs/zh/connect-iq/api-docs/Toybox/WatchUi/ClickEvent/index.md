@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ClickEvent"
 ---
-# Class: Toybox.WatchUi.ClickEvent
+# 类：Toybox.WatchUi.ClickEvent
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ClickEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) there is tap interaction with a device's touch screen.
+ClickEvent 是在设备触摸屏发生点击交互时发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的对象。
 
 ## 另见：
 

@@ -278,7 +278,7 @@ API 级别 3.1.0
 
 |
 
-BLE scanning disabled
+BLE 扫描已禁用
 
 |
 | SCAN\_STATE\_SCANNING | 1 |
@@ -287,7 +287,7 @@ API 级别 3.1.0
 
 |
 
-BLE scanning active
+BLE 扫描已启用
 
 |
 
@@ -304,7 +304,7 @@ API 级别 3.1.0
 
 |
 
-Device is Disconnected
+设备已断开连接
 
 |
 | CONNECTION\_STATE\_CONNECTED | 1 |
@@ -313,7 +313,7 @@ API 级别 3.1.0
 
 |
 
-Device is Connected
+设备已连接
 
 |
 | CONNECTION\_STATE\_REJECTED | 2 |
@@ -322,7 +322,7 @@ API 级别 5.1.0
 
 |
 
-Device connection is rejected by the user because of insufficient security
+由于安全性不足，用户拒绝了设备连接
 
 |
 
@@ -398,7 +398,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**longToUuid**](#longToUuid-instance_function)(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Converts long representation of a UUID to a Uuid object.
+    将 UUID 的长表示形式转换为 Uuid 对象。
 
 - [**pairDevice**](#pairDevice-instance_function)(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
 
@@ -422,7 +422,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**stringToUuid**](#stringToUuid-instance_function)(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Converts the String Representation of a UUID into a Uuid Object.
+    将 UUID 的字符串表示形式转换为 Uuid 对象。
 
 - [**unpairDevice**](#unpairDevice-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) as **Void**
 
@@ -571,7 +571,7 @@ API 级别 3.1.0
 
 ### **longToUuid(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/))** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Converts long representation of a UUID to a Uuid object
+将 UUID 的长表示形式转换为 Uuid 对象
 
 Parameters:
 
@@ -637,7 +637,7 @@ Throws:
 
 Registers a Bluetooth Profile Definition
 
-Call this function to define all of the Profiles that will be used in the application. Only registered characteristics and descriptors will be available when performing GATT operations
+调用此函数定义应用中将使用的所有 Profile。执行 GATT 操作时，只有已注册的特征和描述符可用
 
 When the operation is completed, [onProfileRegister()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onProfileRegister-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the UUID and a Status.
 
@@ -744,7 +744,7 @@ API 级别 3.1.0
 
 ### **stringToUuid(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Converts the String Representation of a UUID into a Uuid Object
+将 UUID 的字符串表示形式转换为 Uuid 对象
 
 Parameters:
 

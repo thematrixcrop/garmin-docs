@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.DeviceSettings"
 ---
-# Class: Toybox.System.DeviceSettings
+# 类：Toybox.System.DeviceSettings
 
 Inherits:
 

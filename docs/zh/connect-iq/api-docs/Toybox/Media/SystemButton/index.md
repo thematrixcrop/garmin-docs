@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.SystemButton"
 ---
-# Class: Toybox.Media.SystemButton
+# 类：Toybox.Media.SystemButton
 
 Inherits:
 

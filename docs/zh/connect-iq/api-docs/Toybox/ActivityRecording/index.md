@@ -7,7 +7,7 @@ title: "Module: Toybox.ActivityRecording"
 
 The Activity Recording module will allow Apps to access the FIT file recording capabilities of the device.
 
-Apps can use this module to allow the user to start and stop recordings, create laps, and save recorded data. SPORT\_\* and SUB\_SPORT\_\* constants are provided as enums.
+应用可以使用此模块允许用户开始和停止记录、创建分段并保存记录的数据。SPORT\_\* 和 SUB\_SPORT\_\* 常量以枚举形式提供。
 
 The SPORT\_\* defines the type of activity, but is not guaranteed to change device behavior. This may cause different algorithms to be applied to the sensor data. For example, a device that does not natively support SPORT\_MULTISPORT recording will not gain SPORT\_MULTISPORT transition features. However, the FIT file can be defined as SPORT\_MULTISPORT and MULTI\_SPORT algorithms may be applied to the sensor data.
 
@@ -1162,7 +1162,7 @@ Parameters:
 
 Example:
 
-Create a Session with auto lap detection using entry/exit lines
+使用进入/退出线创建具有自动计圈检测功能的 Session
 
 ```
 using Toybox.ActivityRecording;

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.WatchFaceConfig.Settings"
 ---
-# Class: Toybox.Application.WatchFaceConfig.Settings
+# 类：Toybox.Application.WatchFaceConfig.Settings
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Contains all settings associated with a watchface config.
+包含与表盘配置相关的所有设置。
 
 Since:
 

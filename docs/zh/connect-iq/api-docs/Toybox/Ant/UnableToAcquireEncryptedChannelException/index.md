@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.UnableToAcquireEncryptedChannelException"
 ---
-# Class: Toybox.Ant.UnableToAcquireEncryptedChannelException
+# 类：Toybox.Ant.UnableToAcquireEncryptedChannelException
 
 Inherits:
 

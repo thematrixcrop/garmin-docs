@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.CustomButton"
 ---
-# Class: Toybox.Media.CustomButton
+# 类：Toybox.Media.CustomButton
 
 Inherits:
 
@@ -30,11 +30,11 @@ API 级别 3.0.3
 
 - [**getState**](#getState-instance_function)() as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)
 
-    Called by the system to determine if the current state of the button.
+    由系统调用以确定按钮的当前状态。
 
 - [**getText**](#getText-instance_function)(state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Called by the system to draw the name of the button.
+    由系统调用以绘制按钮名称。
 
 
 ## 实例方法详情
@@ -71,7 +71,7 @@ API 级别 3.0.3
 
 ### **getState()** as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)
 
-Called by the system to determine if the current state of the button
+由系统调用以确定按钮的当前状态
 
 Returns:
 
@@ -86,7 +86,7 @@ API 级别 3.0.3
 
 ### **getText(state as [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Called by the system to draw the name of the button
+由系统调用以绘制按钮名称
 
 Parameters:
 

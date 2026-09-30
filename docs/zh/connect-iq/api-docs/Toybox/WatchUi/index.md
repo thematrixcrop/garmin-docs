@@ -286,7 +286,7 @@ API 级别 1.0.0
 
 |
 
-Animation with a constant speed
+速度恒定的动画
 
 |
 | ANIM\_TYPE\_EASE\_IN | 1 |
@@ -295,7 +295,7 @@ API 级别 1.0.0
 
 |
 
-Animation that increases in speed from start to end
+从开始到结束速度逐渐提高的动画
 
 |
 | ANIM\_TYPE\_EASE\_OUT | 2 |
@@ -304,7 +304,7 @@ API 级别 1.0.0
 
 |
 
-Animation that decreases in speed from start to end
+从开始到结束速度逐渐降低的动画
 
 |
 | ANIM\_TYPE\_EASE\_IN\_OUT | 3 |
@@ -313,7 +313,7 @@ API 级别 1.0.0
 
 |
 
-Animation that increases in speed from the start, then decreases in speed toward the end
+从开始时速度逐渐提高，然后在接近结束时速度逐渐降低的动画
 
 |
 
@@ -496,7 +496,7 @@ API 级别 3.3.0
 
 |
 
-Continuation of a screen drag
+屏幕拖动的延续
 
 |
 | DRAG\_TYPE\_STOP | 2 |
@@ -969,7 +969,7 @@ API 级别 3.4.0
 
 |
 
-Dark theme for the action menu
+操作菜单的深色主题
 
 |
 | ACTION\_MENU\_THEME\_LIGHT | 1 |
@@ -984,7 +984,7 @@ Light theme for the action menu
 
 ### ReviewRequestStatus
 
-Enum class for makeReviewTokenRequest return status
+用于 makeReviewTokenRequest 返回状态的枚举类
 
 Since:
 
@@ -1022,7 +1022,7 @@ API 级别 3.4.2
 
 - [**cancelAllAnimations**](#cancelAllAnimations-instance_function)() as **Void**
 
-    Cancel animations started with [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) Stop all animations that were started with [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function).
+    取消由 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 启动的动画 停止所有由 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 启动的动画。
 
 - [**configureTouchEvents**](#configureTouchEvents-instance_function)(options as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -1109,7 +1109,7 @@ API 级别 1.0.0
 
 为对象设置动画。
 
-Animate works by changing an object property over time, such as the x-position of a Drawable. The animation starts after the call and runs the length of the specified period. During this time, the View object's onUpdate() method will be invoked at an increased rate to facilitate animation.
+Animate 通过随时间改变对象属性来工作，例如 Drawable 的 x 位置。动画会在调用后开始，并持续指定的时长。在此期间，View 对象的 onUpdate() 方法将以更高频率调用，以便实现动画。
 
 注意：
 
@@ -1174,7 +1174,7 @@ API 级别 1.0.0
 
 ### **cancelAllAnimations()** as **Void**
 
-Cancel animations started with [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function)
+取消由 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 启动的动画
 
 Stop all animations that were started with [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function). This will leave all animations at their final frame, as if [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) ran to completion.
 
@@ -1195,7 +1195,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of touch event settings.
+    触摸事件设置字典。
 
 - :enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -1384,7 +1384,7 @@ Returns:
 
 - [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
-    Current touch event settings.
+    当前触摸事件设置。
 
 
 Since:
@@ -1436,7 +1436,7 @@ Parameters:
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    Callback to invoke when the review token request has completed.
+    审查令牌请求完成时调用的回调。
 
 
 :::details 支持的设备

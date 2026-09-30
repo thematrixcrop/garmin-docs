@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.ResistanceSettings"
 ---
-# Class: Toybox.AntPlus.ResistanceSettings
+# 类：Toybox.AntPlus.ResistanceSettings
 
 Inherits:
 

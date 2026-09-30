@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityPrompts.ActivityPrompt"
 ---
-# Class: Toybox.ActivityPrompts.ActivityPrompt
+# 类：Toybox.ActivityPrompts.ActivityPrompt
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Informtion about the activity prompt.
 
-Created by the system and passed to [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function) when an activity prompt is to be played.
+由系统创建，并在需要播放活动提示时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。
 
 Since:
 
@@ -28,7 +28,7 @@ API 级别 5.2.0
 
 - [**context**](#context-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\>
 
-    Data for the prompt.
+    提示的数据。
 
 - [**templateName**](#templateName-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -43,7 +43,7 @@ API 级别 5.2.0
 
 ### var context as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\>
 
-Data for the prompt. The usage of this depends on the value of [ActivityPrompt.templateName](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#templateName-var).
+提示的数据。其用法取决于 [ActivityPrompt.templateName](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#templateName-var) 的值。
 
 Since:
 

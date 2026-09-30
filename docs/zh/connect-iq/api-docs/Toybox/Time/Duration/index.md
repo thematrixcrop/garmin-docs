@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Time.Duration"
 ---
-# Class: Toybox.Time.Duration
+# 类：Toybox.Time.Duration
 
 Inherits:
 
@@ -18,9 +18,9 @@ Toybox.Lang.Object
 
 Duration 是一个不可变的时间段。
 
-Duration objects are closely related to [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects, and are frequently used together for time calculations. While a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) represents a single point in time, a Duration represents a span of time such as seven days.
+Duration 对象与 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象密切相关，并且经常结合使用来进行时间计算。[Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 表示单个时间点，而 Duration 表示一段时间，例如七天。
 
-Duration objects are stored as a the number of seconds that compose the span of time the Duration represents.
+Duration 对象以构成其所表示时间跨度的秒数存储。
 
 Since:
 
@@ -225,7 +225,7 @@ Parameters:
 
 Example:
 
-Create a Duration of one day with a number of seconds
+创建一个包含秒数的一天 Duration
 
 ```
 using Toybox.Time;

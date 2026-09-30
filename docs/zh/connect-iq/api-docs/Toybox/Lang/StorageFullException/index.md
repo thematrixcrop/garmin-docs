@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.StorageFullException"
 ---
-# Class: Toybox.Lang.StorageFullException
+# 类：Toybox.Lang.StorageFullException
 
 Inherits:
 

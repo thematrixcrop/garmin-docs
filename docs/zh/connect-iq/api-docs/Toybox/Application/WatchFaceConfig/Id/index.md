@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.WatchFaceConfig.Id"
 ---
-# Class: Toybox.Application.WatchFaceConfig.Id
+# 类：Toybox.Application.WatchFaceConfig.Id
 
 Inherits:
 

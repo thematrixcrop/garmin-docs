@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Characteristic"
 ---
-# Class: Toybox.BluetoothLowEnergy.Characteristic
+# 类：Toybox.BluetoothLowEnergy.Characteristic
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Encapsulates a characteristic on a service
+封装服务上的特征
 
 Since:
 

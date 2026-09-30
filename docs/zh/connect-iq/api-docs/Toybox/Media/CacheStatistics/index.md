@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.CacheStatistics"
 ---
-# Class: Toybox.Media.CacheStatistics
+# 类：Toybox.Media.CacheStatistics
 
 Inherits:
 

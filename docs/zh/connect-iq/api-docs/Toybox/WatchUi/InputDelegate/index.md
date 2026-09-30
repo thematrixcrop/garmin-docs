@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.InputDelegate"
 ---
-# Class: Toybox.WatchUi.InputDelegate
+# 类：Toybox.WatchUi.InputDelegate
 
 Inherits:
 

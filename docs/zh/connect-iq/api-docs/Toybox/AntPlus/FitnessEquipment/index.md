@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.FitnessEquipment"
 ---
-# Class: Toybox.AntPlus.FitnessEquipment
+# 类：Toybox.AntPlus.FitnessEquipment
 
 Inherits:
 
@@ -68,7 +68,7 @@ API 级别 2.4.0
 
 - [**controlEquipment**](#controlEquipment-instance_function)(setting as [AntPlus.TrainerValue](/connect-iq/api-docs/Toybox/AntPlus/#TrainerValue-module), data as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
 
-    Control the fitness Equipment Note: Setting a value related to a specific training mode will cause the fitness equipment to change to that mode.
+    控制健身器材。注意：设置与特定训练模式相关的值会使健身器材切换到该模式。
 
 - [**getEquipmentData**](#getEquipmentData-instance_function)() as [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
@@ -107,7 +107,7 @@ API 级别 2.4.0
 
 ### **controlEquipment(setting as [AntPlus.TrainerValue](/connect-iq/api-docs/Toybox/AntPlus/#TrainerValue-module), data as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module))** as **Void**
 
-Control the fitness Equipment Note: Setting a value related to a specific training mode will cause the fitness equipment to change to that mode. For example, controlEquipment(TRAINER\_TARGET\_POWER, 100) will set the fitness equipment to target power mode with target power set to 100W if such mode is supported. Values out of range will be set to within the nearest range boundary value.
+控制健身器材。注意：设置与特定训练模式相关的值会使健身器材切换到该模式。例如，如果支持该模式，controlEquipment(TRAINER\_TARGET\_POWER, 100) 会将健身器材设置为目标功率模式，并将目标功率设为 100W。超出范围的值将设置为最近的范围边界值。
 
 Parameters:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.OperationNotAllowedException"
 ---
-# Class: Toybox.Lang.OperationNotAllowedException
+# 类：Toybox.Lang.OperationNotAllowedException
 
 Inherits:
 

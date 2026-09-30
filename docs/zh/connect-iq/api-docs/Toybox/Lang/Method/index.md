@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Method"
 ---
-# Class: Toybox.Lang.Method
+# 类：Toybox.Lang.Method
 
 Inherits:
 
@@ -129,7 +129,7 @@ Parameters:
 
 - aClass —
 
-    Classdef of method (e.g. Toybox.SensorHistory) or a class instance.
+    方法的类定义（例如 Toybox.SensorHistory）或类实例。
 
 - aMethod — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 

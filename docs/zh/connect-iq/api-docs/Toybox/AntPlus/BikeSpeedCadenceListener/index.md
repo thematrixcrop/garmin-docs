@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikeSpeedCadenceListener"
 ---
-# Class: Toybox.AntPlus.BikeSpeedCadenceListener
+# 类：Toybox.AntPlus.BikeSpeedCadenceListener
 
 Inherits:
 
@@ -184,7 +184,7 @@ API 级别 3.0.0
 
 - [**onBikeSpeedCadenceUpdate**](#onBikeSpeedCadenceUpdate-instance_function)(data as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) as **Void**
 
-    Callback when speed / cadence data is updated.
+    速度/踏频数据更新时的回调。
 
 
 ## 实例方法详情
@@ -199,13 +199,13 @@ API 级别 3.0.0
 
 ### **onBikeSpeedCadenceUpdate(data as [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/))** as **Void**
 
-Callback when speed / cadence data is updated
+速度/踏频数据更新时的回调
 
 Parameters:
 
 - data — ([AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/)) —
 
-    data Data with updated speed / cadence information.
+    data 包含更新后的速度/踏频信息。
 
 
 Since:

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.KeyAgreement"
 ---
-# Class: Toybox.Cryptography.KeyAgreement
+# 类：Toybox.Cryptography.KeyAgreement
 
 Inherits:
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 Example:
 
-Create a shared secret using KeyAgreement
+使用 KeyAgreement 创建共享密钥
 
 ```
 // > openssl ec -in key.pem -text -noout

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Track"
 ---
-# Class: Toybox.PersistedContent.Track
+# 类：Toybox.PersistedContent.Track
 
 Inherits:
 

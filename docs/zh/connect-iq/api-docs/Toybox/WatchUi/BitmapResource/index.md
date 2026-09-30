@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.BitmapResource"
 ---
-# Class: Toybox.WatchUi.BitmapResource
+# 类：Toybox.WatchUi.BitmapResource
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 位图资源的表示形式。
 
-BitmapResource objects are returned by the [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) method.
+BitmapResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
 Since:
 

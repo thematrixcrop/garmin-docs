@@ -263,7 +263,7 @@ API 级别 3.0.0
 
 |
 
-Electronic Code Book (ECB)
+电子密码本（ECB）
 
 This is the simplest encryption mode. Each plaintext block is directly encrypted into a ciphertext block, independent of any other block. This mode exposes frequency of symbols in your plaintext. Other modes (e.g. CBC) are recommended.
 
@@ -275,9 +275,9 @@ API 级别 3.0.0
 
 |
 
-Cipher-Block Chaining
+密码分组链接
 
-Each ciphertext block depends on the current and all previous plaintext blocks. An Initialization Vector (IV) is required. The IV is a data block to be transmitted to the receiver. The IV can be made public, but it must be authenticated by the receiver and it should be picked randomly.
+每个密文块都取决于当前以及之前的所有明文块。需要初始化向量（IV）。IV 是要传输给接收方的数据块。IV 可以公开，但必须由接收方进行身份验证，并且应随机生成。
 
 | -   [https://en.wikipedia.org/wiki/Block\_cipher\_mode\_of\_operation#Cipher\_Block\_Chaining\_(CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC))
 |
@@ -327,7 +327,7 @@ API 级别 3.0.0
 
 |
 
-Elliptic Curve Diffie-Hellman (ECDH)
+椭圆曲线 Diffie-Hellman（ECDH）
 
 | -   [https://en.wikipedia.org/wiki/Elliptic-curve\_Diffie%E2%80%93Hellman](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman)
 |
@@ -353,7 +353,7 @@ If a public key is received from another party, it can be converted to a [Key](/
 
 注意：
 
-bytes is expected to be in little-endian byte order.
+bytes 预期采用小端字节序。
 
 Parameters:
 

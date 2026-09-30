@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.AnimationResource"
 ---
-# Class: Toybox.WatchUi.AnimationResource
+# 类：Toybox.WatchUi.AnimationResource
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 动画资源的表示。
 
-AnimationResource objects are returned by the [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) method.
+AnimationResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
 Since:
 
@@ -191,7 +191,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Color depth in terms of bit/pixel
+    以位/像素表示的颜色深度
 
 
 Since:

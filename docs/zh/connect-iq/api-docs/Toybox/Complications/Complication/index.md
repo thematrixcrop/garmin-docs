@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Complications.Complication"
 ---
-# Class: Toybox.Complications.Complication
+# 类：Toybox.Complications.Complication
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Complication object
+复杂功能对象
 
 Since:
 

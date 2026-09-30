@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Communications.Message"
 ---
-# Class: Toybox.Communications.Message
+# 类：Toybox.Communications.Message
 
 Inherits:
 

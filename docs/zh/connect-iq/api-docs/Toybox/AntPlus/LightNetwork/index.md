@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.LightNetwork"
 ---
-# Class: Toybox.AntPlus.LightNetwork
+# 类：Toybox.AntPlus.LightNetwork
 
 Inherits:
 

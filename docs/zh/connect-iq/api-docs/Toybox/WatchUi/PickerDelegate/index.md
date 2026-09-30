@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.PickerDelegate"
 ---
-# Class: Toybox.WatchUi.PickerDelegate
+# 类：Toybox.WatchUi.PickerDelegate
 
 Inherits:
 

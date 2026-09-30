@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Iterator"
 ---
-# Class: Toybox.BluetoothLowEnergy.Iterator
+# 类：Toybox.BluetoothLowEnergy.Iterator
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Content iterator for Bluetooth Low Energy Data
+Bluetooth Low Energy 数据的内容迭代器
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.FontReference"
 ---
-# Class: Toybox.Graphics.FontReference
+# 类：Toybox.Graphics.FontReference
 
 Inherits:
 

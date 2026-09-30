@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.CalculatedPower"
 ---
-# Class: Toybox.AntPlus.CalculatedPower
+# 类：Toybox.AntPlus.CalculatedPower
 
 Inherits:
 

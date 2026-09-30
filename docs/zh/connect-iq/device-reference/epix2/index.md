@@ -1,7 +1,7 @@
 ---
 title: "epix™ (Gen 2) / quatix® 7 Sapphire"
 ---
-# epix™ (Gen 2) / quatix® 7 Sapphire
+# epix™（第 2 代）/ quatix® 7 Sapphire
 
 | 属性 | 值 |
 | --- | --- |

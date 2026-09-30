@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ViewLoopFactory"
 ---
-# Class: Toybox.WatchUi.ViewLoopFactory
+# 类：Toybox.WatchUi.ViewLoopFactory
 
 Inherits:
 
@@ -151,7 +151,7 @@ API 级别 3.4.0
 
 - [**Delegates**](#Delegates-named_type) as [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
-    Delegate types that can be provided by a ViewLoopFactory.
+    ViewLoopFactory 可提供的委托类型。
 
 - [**Views**](#Views-named_type) as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)
 
@@ -173,7 +173,7 @@ API 级别 3.4.0
 
 ### **Delegates** as [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)
 
-Delegate types that can be provided by a ViewLoopFactory
+ViewLoopFactory 可提供的委托类型
 
 Since:
 

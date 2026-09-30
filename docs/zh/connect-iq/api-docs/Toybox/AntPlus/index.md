@@ -7,7 +7,7 @@ title: "Module: Toybox.AntPlus"
 
 The AntPlus module contains the interface for ANT+ data.
 
-ANT+ is built on top of ANT. It is a set of mutually agreed upon device profiles for what the information sent over ANT represents. For example, a heart rate monitor will send information about your heart rate over ANT as defined in the ANT+ Heart Rate Device Profile. CIQ devices can use the [ANT Module](/connect-iq/api-docs/Toybox/Ant/) to implement ANT+ device profiles and talk to nearby devices that also implement the same ANT+ device profile (such as heart rate, bike power and fitness equipment control). The AntPlus Module provides the APIs to communicate in specific and standard ways with the ANT+ profiles defined in the document available at the link below titled, "ANT+ Device Profiles".
+ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用于定义通过 ANT 传输的信息含义。例如，心率监测器会根据 ANT+ 心率设备配置文件中的定义，通过 ANT 发送心率信息。CIQ 设备可以使用 [ANT Module](/connect-iq/api-docs/Toybox/Ant/) 实现 ANT+ 设备配置文件，并与附近同样实现了该 ANT+ 设备配置文件的设备通信，例如心率、骑行功率和健身器材控制。AntPlus 模块提供了用于以特定且标准化方式与 ANT+ 配置文件通信的 API，这些配置文件定义在下方链接所指向的文档“ANT+ Device Profiles”中。
 
 ## 另见：
 
@@ -357,7 +357,7 @@ API 级别 2.2.0
 
 |
 
-Device is not usable (not paired or disabled)
+设备不可用（未配对或已禁用）
 
 |
 | DEVICE\_STATE\_CLOSED | 1 |
@@ -366,7 +366,7 @@ API 级别 2.2.0
 
 |
 
-Device's channel is closed
+设备通道已关闭
 
 |
 | DEVICE\_STATE\_SEARCHING | 2 |
@@ -375,7 +375,7 @@ API 级别 2.2.0
 
 |
 
-Device's channel is open and searching
+设备通道已打开并正在搜索
 
 |
 | DEVICE\_STATE\_TRACKING | 3 |
@@ -384,7 +384,7 @@ API 级别 2.2.0
 
 |
 
-Device's channel is open and tracking
+设备通道已打开并正在跟踪
 
 |
 | DEVICE\_STATE\_CNT | 4 |
@@ -674,7 +674,7 @@ API 级别 2.2.0
 
 |
 
-Configurable signal light type
+可配置的信号灯类型
 
 |
 | LIGHT\_TYPE\_SIGNAL\_LEFT | 4 |
@@ -846,7 +846,7 @@ API 级别 2.4.0
 
 |
 
-Basic resistance fitness equipment training mode In this mode the user may set the percentage of maximum resistance on the equipment
+基本阻力健身器材训练模式 在此模式下，用户可以设置器材最大阻力的百分比
 
 |
 | TRAINER\_MODE\_TARGET\_POWER | 1 |
@@ -890,7 +890,7 @@ API 级别 2.4.0
 
 |
 
-Basic resistance value of the fitness equipment. Percent of max resistance 0 - 100 input range, unit 0.5%.
+健身器材的基本阻力值。最大阻力的百分比，输入范围为 0 - 100，单位为 0.5%。
 
 |
 | TRAINER\_TARGET\_POWER | 9 |

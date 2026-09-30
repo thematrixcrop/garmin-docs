@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.ByteArray"
 ---
-# Class: Toybox.Lang.ByteArray
+# 类：Toybox.Lang.ByteArray
 
 Inherits:
 
@@ -34,11 +34,11 @@ API 级别 3.0.0
 
 - [**decodeNumber**](#decodeNumber-instance_function)(format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) }) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Decodes a portion of the array to a number based on a specified format.
+    根据指定格式将数组的一部分解码为数字。
 
 - [**encodeNumber**](#encodeNumber-instance_function)(value as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) }) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Encodes a number into the byte array.
+    将数字编码到字节数组中。
 
 - [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -147,7 +147,7 @@ Throws:
 
 ### **decodeNumber(format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) })** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Decodes a portion of the array to a number based on a specified format
+根据指定格式将数组的一部分解码为数字
 
 Parameters:
 
@@ -172,7 +172,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    Converted Number.
+    转换后的 Number。
 
 
 Since:
@@ -188,7 +188,7 @@ Throws:
 
 ### **encodeNumber(value as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) })** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Encodes a number into the byte array
+将数字编码到字节数组中
 
 Parameters:
 

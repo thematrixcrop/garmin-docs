@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.Dc"
 ---
-# Class: Toybox.Graphics.Dc
+# 类：Toybox.Graphics.Dc
 
 Inherits:
 
@@ -26,7 +26,7 @@ You should never directly instantiate a Dc object, or attempt to render to the s
 
 Example:
 
-Draws a blue rectangle using direct pixel parameters.
+使用直接像素参数绘制蓝色矩形。
 
 ```
 using Toybox.Graphics;
@@ -38,7 +38,7 @@ function onUpdate(dc) {
 
 Example:
 
-Draws a red circle using direct pixel parameters.
+使用直接像素参数绘制红色圆形。
 
 ```
 using Toybox.Graphics;
@@ -50,7 +50,7 @@ function onUpdate(dc) {
 
 Example:
 
-Draws "Hello World" in the center of the screen using calls to the Device Context (dc).
+使用设备上下文（dc）的调用在屏幕中央绘制“Hello World”。
 
 ```
 using Toybox.Graphics;
@@ -68,7 +68,7 @@ function onUpdate(dc) {
 
 Example:
 
-Clears the screen of device with background color (Graphics.COLOR\_BLACK).
+使用背景色（Graphics.COLOR\_BLACK）清除设备屏幕。
 
 ```
 using Toybox.Graphics;
@@ -94,7 +94,7 @@ API 级别 1.0.0
 
 - [**drawAngledText**](#drawAngledText-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw angled text Draw text such that it is oriented perpendicular to a radial line at the given angle.
+    绘制倾斜文本 绘制文本，使其方向垂直于给定角度处的径向线。
 
 - [**drawArc**](#drawArc-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), r as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), attr as [Graphics.ArcDirection](/connect-iq/api-docs/Toybox/Graphics/#ArcDirection-module), degreeStart as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), degreeEnd as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -106,7 +106,7 @@ API 级别 1.0.0
 
 - [**drawBitmap2**](#drawBitmap2-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), options as { :bitmapX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :tintColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :filterMode as [Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module), :transform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) } or **Null**) as **Void**
 
-    Draw bitmap with the given options.
+    使用给定选项绘制位图。
 
 - [**drawCircle**](#drawCircle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -130,7 +130,7 @@ API 级别 1.0.0
 
 - [**drawRadialText**](#drawRadialText-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), direction as [Graphics.RadialTextDirection](/connect-iq/api-docs/Toybox/Graphics/#RadialTextDirection-module)) as **Void**
 
-    Draw radial text Draw text oriented along an arc.
+    绘制径向文本 沿弧线方向绘制文本。
 
 - [**drawRectangle**](#drawRectangle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -241,9 +241,9 @@ API 级别 2.3.0
 
 ### **drawAngledText(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw angled text
+绘制倾斜文本
 
-Draw text such that it is oriented perpendicular to a radial line at the given angle.
+绘制文本，使其方向垂直于给定角度处的径向线。
 
 Parameters:
 
@@ -269,7 +269,7 @@ Parameters:
 
 - angle — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    Angle of the text baseline in degrees counter-clockwise from the 3 o'clock position.
+    文本基线相对于 3 点钟位置逆时针方向的角度，以度为单位。
 
 
 :::details 支持的设备
@@ -369,7 +369,7 @@ Parameters:
 
 - attr — ([Graphics.ArcDirection](/connect-iq/api-docs/Toybox/Graphics/#ArcDirection-module)) —
 
-    Arc drawing attributes. (ARC\_COUNTER\_CLOCKWISE or ARC\_CLOCKWISE)
+    弧线绘制属性。（ARC\_COUNTER\_CLOCKWISE 或 ARC\_CLOCKWISE）
 
 - degreeStart — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -420,7 +420,7 @@ Throws:
 
 ### **drawBitmap2(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), options as { :bitmapX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :tintColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :filterMode as [Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module), :transform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) } or **Null**)** as **Void**
 
-Draw bitmap with the given options
+使用给定选项绘制位图
 
 Parameters:
 
@@ -462,7 +462,7 @@ Parameters:
 
 - :filterMode — ([Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module)) —
 
-        Default is FILTER\_MODE\_POINT.
+        默认值为 FILTER\_MODE\_POINT。
 
 - :transform — ([Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)) —
 
@@ -766,9 +766,9 @@ API 级别 1.0.0
 
 ### **drawRadialText(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), direction as [Graphics.RadialTextDirection](/connect-iq/api-docs/Toybox/Graphics/#RadialTextDirection-module))** as **Void**
 
-Draw radial text
+绘制径向文本
 
-Draw text oriented along an arc.
+沿弧线方向绘制文本。
 
 Parameters:
 
@@ -794,11 +794,11 @@ Parameters:
 
 - angle — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    Angle to a point on the circle to justify text in degrees counter-clockwise from the 3 o'clock position.
+    圆上某点相对于 3 点钟位置逆时针方向的角度，以度为单位，用于对齐文本。
 
 - radius — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    Distance from center of circle on which to draw text.
+    文本绘制所在圆的中心到文本的距离。
 
 - direction — ([Graphics.RadialTextDirection](/connect-iq/api-docs/Toybox/Graphics/#RadialTextDirection-module)) —
 
@@ -1127,7 +1127,7 @@ Parameters:
 
 - pts — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    Array of coordinates with a 64 point limit
+    坐标数组，限制为 64 个点
 
 
 Since:
@@ -1453,7 +1453,7 @@ Throws:
 
 注意：
 
-BLEND\_MODE\_NO\_BLEND is only supported while drawing bitmaps
+BLEND\_MODE\_NO\_BLEND 仅支持在绘制位图时使用
 
 Parameters:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.CalculatedWheelSpeed"
 ---
-# Class: Toybox.AntPlus.CalculatedWheelSpeed
+# 类：Toybox.AntPlus.CalculatedWheelSpeed
 
 Inherits:
 

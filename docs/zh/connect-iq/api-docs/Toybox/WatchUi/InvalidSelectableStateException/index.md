@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.InvalidSelectableStateException"
 ---
-# Class: Toybox.WatchUi.InvalidSelectableStateException
+# 类：Toybox.WatchUi.InvalidSelectableStateException
 
 Inherits:
 

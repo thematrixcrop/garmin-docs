@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.AudioContentProviderApp"
 ---
-# Class: Toybox.Application.AudioContentProviderApp
+# 类：Toybox.Application.AudioContentProviderApp
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.InvalidBlockSizeException"
 ---
-# Class: Toybox.Cryptography.InvalidBlockSizeException
+# 类：Toybox.Cryptography.InvalidBlockSizeException
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Uuid"
 ---
-# Class: Toybox.BluetoothLowEnergy.Uuid
+# 类：Toybox.BluetoothLowEnergy.Uuid
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Encapsulates a Bluetooth UUID and provides various helper methods for interacting with UUID within the Bluetooth Low Energy Subsystem
+封装 Bluetooth UUID，并提供用于在 Bluetooth Low Energy 子系统中与 UUID 交互的各种辅助方法
 
 Since:
 
@@ -26,7 +26,7 @@ API 级别 3.1.0
 
 - [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Compares the Uuid to another object for equality.
+    比较 Uuid 与另一个对象是否相等。
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -34,18 +34,18 @@ API 级别 3.1.0
 
 - [**toByteArray**](#toByteArray-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Convert UUID to a Little Endian Byte Array.
+    将 UUID 转换为小端字节数组。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a UUID to a String.
+    将 UUID 转换为 String。
 
 
 ## 实例方法详情
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Compares the Uuid to another object for equality
+比较 Uuid 与另一个对象是否相等
 
 Parameters:
 
@@ -81,7 +81,7 @@ API 级别 3.1.0
 
 ### **toByteArray()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Convert UUID to a Little Endian Byte Array
+将 UUID 转换为小端字节数组
 
 Returns:
 
@@ -96,7 +96,7 @@ API 级别 3.1.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a UUID to a String
+将 UUID 转换为 String
 
 Returns:
 

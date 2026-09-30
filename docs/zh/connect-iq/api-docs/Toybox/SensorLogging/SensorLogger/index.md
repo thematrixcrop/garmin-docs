@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.SensorLogging.SensorLogger"
 ---
-# Class: Toybox.SensorLogging.SensorLogger
+# 类：Toybox.SensorLogging.SensorLogger
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class for the SensorLogger object. This object gets passed to FIT session to start recording sensor data.
+用于 SensorLogger 对象的类。此对象会传递给 FIT 会话，以开始记录传感器数据。
 
 Since:
 

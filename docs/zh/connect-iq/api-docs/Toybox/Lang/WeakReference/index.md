@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.WeakReference"
 ---
-# Class: Toybox.Lang.WeakReference
+# 类：Toybox.Lang.WeakReference
 
 Inherits:
 

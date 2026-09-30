@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.OutOfGraphicsMemoryException"
 ---
-# Class: Toybox.Graphics.OutOfGraphicsMemoryException
+# 类：Toybox.Graphics.OutOfGraphicsMemoryException
 
 Inherits:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.CalculatedCadence"
 ---
-# Class: Toybox.AntPlus.CalculatedCadence
+# 类：Toybox.AntPlus.CalculatedCadence
 
 Inherits:
 

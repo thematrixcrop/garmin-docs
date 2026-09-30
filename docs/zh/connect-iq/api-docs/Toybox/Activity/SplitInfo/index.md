@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.SplitInfo"
 ---
-# Class: Toybox.Activity.SplitInfo
+# 类：Toybox.Activity.SplitInfo
 
 Inherits:
 
@@ -268,11 +268,11 @@ API 级别 5.2.2
 
 - [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Average speed for split in meters per second.
+    分段平均速度，单位为米/秒。
 
 - [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Elapsed time for split in milliseconds.
+    分段的经过时间，单位为毫秒。
 
 - [**maxSpeed**](#maxSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -316,7 +316,7 @@ Returns:
 
 ### var elapsedTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Elapsed time for split in milliseconds
+分段的经过时间，单位为毫秒
 
 Since:
 
@@ -324,7 +324,7 @@ API 级别 5.2.2
 
 Returns:
 
-- Elapsed time in milliseconds
+- 经过时间，单位为毫秒
 
 
 ### var maxSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -389,7 +389,7 @@ API 级别 5.2.2
 
 Returns:
 
-- Ascent for split in meters
+- 分段爬升高度，单位为米
 
 
 ### var totalDescent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -402,4 +402,4 @@ API 级别 5.2.2
 
 Returns:
 
-- Descent for split in meters
+- 分段的下降高度，单位为米

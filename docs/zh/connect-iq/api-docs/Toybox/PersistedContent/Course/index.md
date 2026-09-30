@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.PersistedContent.Course"
 ---
-# Class: Toybox.PersistedContent.Course
+# 类：Toybox.PersistedContent.Course
 
 Inherits:
 

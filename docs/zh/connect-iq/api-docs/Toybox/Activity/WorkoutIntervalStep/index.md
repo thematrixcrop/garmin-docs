@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Activity.WorkoutIntervalStep"
 ---
-# Class: Toybox.Activity.WorkoutIntervalStep
+# 类：Toybox.Activity.WorkoutIntervalStep
 
 Inherits:
 

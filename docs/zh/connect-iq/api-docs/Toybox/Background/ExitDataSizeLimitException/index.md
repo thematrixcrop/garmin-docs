@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Background.ExitDataSizeLimitException"
 ---
-# Class: Toybox.Background.ExitDataSizeLimitException
+# 类：Toybox.Background.ExitDataSizeLimitException
 
 Inherits:
 

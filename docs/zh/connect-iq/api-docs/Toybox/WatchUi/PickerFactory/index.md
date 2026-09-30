@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.PickerFactory"
 ---
-# Class: Toybox.WatchUi.PickerFactory
+# 类：Toybox.WatchUi.PickerFactory
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Create a PickerFactory.
+创建 PickerFactory。
 
 PickerFactory 用于指定 [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/) 将显示哪些对象
 

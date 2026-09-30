@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.Button"
 ---
-# Class: Toybox.WatchUi.Button
+# 类：Toybox.WatchUi.Button
 
 Inherits:
 
@@ -22,7 +22,7 @@ Toybox.WatchUi.Selectable
 
 可选择按钮的表示。
 
-Button objects are mappable to a BehaviorDelegate method on selection.
+Button 对象可在选中时映射到 BehaviorDelegate 方法。
 
 ## 另见：
 
@@ -69,7 +69,7 @@ API 级别 2.1.0
 
 - [**initialize**](#initialize-instance_function)(options as { :behavior as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :stateDefault as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateHighlighted as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateSelected as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateDisabled as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })
 
-    Constructor Initializes a Button object's foreground, background, and behavior.
+    构造函数初始化 Button 对象的前景、背景和行为。
 
 
 ## 实例属性详情
@@ -128,7 +128,7 @@ API 级别 2.1.0
 
 ### **initialize(options as { :behavior as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :stateDefault as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateHighlighted as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateSelected as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :stateDisabled as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })**
 
-Constructor Initializes a Button object's foreground, background, and behavior. The Button must be registered during [setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) in order to be usable.
+构造函数初始化 Button 对象的前景、背景和行为。必须在 [setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) 期间注册 Button，才能使用它。
 
 Parameters:
 

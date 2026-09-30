@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.Key"
 ---
-# Class: Toybox.Cryptography.Key
+# 类：Toybox.Cryptography.Key
 
 Inherits:
 

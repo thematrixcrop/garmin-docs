@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.GenericChannel"
 ---
-# Class: Toybox.Ant.GenericChannel
+# 类：Toybox.Ant.GenericChannel
 
 Inherits:
 

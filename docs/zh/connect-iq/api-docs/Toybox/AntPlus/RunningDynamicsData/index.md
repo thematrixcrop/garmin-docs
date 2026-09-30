@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.RunningDynamicsData"
 ---
-# Class: Toybox.AntPlus.RunningDynamicsData
+# 类：Toybox.AntPlus.RunningDynamicsData
 
 Inherits:
 

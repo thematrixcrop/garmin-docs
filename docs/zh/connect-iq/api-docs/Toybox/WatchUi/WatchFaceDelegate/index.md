@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.WatchFaceDelegate"
 ---
-# Class: Toybox.WatchUi.WatchFaceDelegate
+# 类：Toybox.WatchUi.WatchFaceDelegate
 
 Inherits:
 
@@ -54,7 +54,7 @@ API 级别 2.3.0
 
 - [**onPress**](#onPress-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Called when user does a touch and hold.
+    用户触摸并按住时调用。
 
 - [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -154,13 +154,13 @@ API 级别 2.3.0
 
 ### **onPress(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Called when user does a touch and hold
+用户触摸并按住时调用
 
 Parameters:
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
-    Click event
+    点击事件
 
 
 :::details 支持的设备
@@ -374,7 +374,7 @@ API 级别 5.1.0
 
 设置选中的复杂功能字段。
 
-Can be called by application when handling `onTap` event, to change the selected (highlighted) complication. Only effective during WatchFace config mode.
+应用处理 `onTap` 事件时可以调用，以更改选中的（高亮显示的）复杂功能。仅在表盘配置模式下有效。
 
 Parameters:
 

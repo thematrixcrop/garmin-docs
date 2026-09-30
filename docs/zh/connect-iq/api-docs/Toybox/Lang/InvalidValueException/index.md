@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.InvalidValueException"
 ---
-# Class: Toybox.Lang.InvalidValueException
+# 类：Toybox.Lang.InvalidValueException
 
 Inherits:
 

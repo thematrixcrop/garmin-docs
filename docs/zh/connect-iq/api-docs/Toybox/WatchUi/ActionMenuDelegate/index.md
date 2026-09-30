@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ActionMenuDelegate"
 ---
-# Class: Toybox.WatchUi.ActionMenuDelegate
+# 类：Toybox.WatchUi.ActionMenuDelegate
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class that represents an action menu delegate, which can be used to relay events regarding the action menu.
+表示操作菜单委托的类，可用于转发与操作菜单相关的事件。
 
 Since:
 
@@ -143,7 +143,7 @@ API 级别 3.4.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor for the ActionMenuDelegate.
+    ActionMenuDelegate 的构造函数。
 
 - [**onBack**](#onBack-instance_function)() as **Void**
 
@@ -158,7 +158,7 @@ API 级别 3.4.0
 
 ### **initialize()**
 
-Constructor for the ActionMenuDelegate
+ActionMenuDelegate 的构造函数
 
 Since:
 

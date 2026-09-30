@@ -263,7 +263,7 @@ December
 
 - [**localMoment**](#localMoment-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
 
-    Create a LocalMoment from a Moment and a Location.
+    从 Moment 和 Location 创建 LocalMoment。
 
 - [**moment**](#moment-instance_function)(options as { :year as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :month as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :day as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :second as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -313,7 +313,7 @@ Parameters:
 
 Example:
 
-Create a Duration of one day with Gregorian.duration()
+使用 Gregorian.duration() 创建一天的 Duration
 
 ```
 using Toybox.Time.Gregorian;
@@ -386,7 +386,7 @@ API 级别 1.0.0
 
 ### **localMoment(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
 
-Create a LocalMoment from a Moment and a Location
+从 Moment 和 Location 创建 LocalMoment
 
 Parameters:
 
@@ -584,7 +584,7 @@ Parameters:
 
 Example:
 
-Create a Moment representing midnight on the first day of the current month.
+创建一个表示当前月份第一天午夜的 Moment。
 
 ```
 using Toybox.Time;

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.Info"
 ---
-# Class: Toybox.Sensor.Info
+# 类：Toybox.Sensor.Info
 
 Inherits:
 
@@ -266,7 +266,7 @@ Returns:
 
 平均海平面以上的海拔（米）。
 
-Elevation is derived from the most accurate source: Barometer or GPS in order of descending accuracy. If no GPS is present, then barometer readings will be used.
+海拔高度取自按准确度降序排列的最准确数据源：气压计或 GPS。如果没有 GPS，则使用气压计读数。
 
 Since:
 
@@ -287,9 +287,9 @@ Returns:
 
 步频，单位为每分钟转数（rpm）。
 
-Cadence is derived from (in order of priority):
+踏频的推导依据如下（按优先级排序）：
 
-1. Bike sensors (cadence or speed must be enabled)
+1. 自行车传感器（必须启用踏频或速度）
 
 2. 高级跑步动态传感器（例如启用跑步动态功能的心率带）
 

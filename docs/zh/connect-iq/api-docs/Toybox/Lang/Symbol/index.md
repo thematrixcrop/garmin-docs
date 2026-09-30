@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.Symbol"
 ---
-# Class: Toybox.Lang.Symbol
+# 类：Toybox.Lang.Symbol
 
 Inherits:
 
@@ -36,18 +36,18 @@ API 级别 1.0.0
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Convert a Symbol to a Number This will return a number containing the integer value of the symbol.
+    将 Symbol 转换为 Number。此操作将返回一个包含该符号整数值的数字。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a Symbol to a String This will return the string for the name of the symbol in development builds.
+    将 Symbol 转换为 String。此操作将在开发版本中返回符号名称对应的字符串。
 
 
 ## 实例方法详情
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Convert a Symbol to a Number
+将 Symbol 转换为 Number
 
 This will return a number containing the integer value of the symbol.
 
@@ -64,7 +64,7 @@ API 级别 2.3.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a Symbol to a String
+将 Symbol 转换为 String
 
 This will return the string for the name of the symbol in development builds. Because Monkey C does not contain runtime reflection information in release builds, the returned string will be different and will follow the format "symbol (num)". In this format, "num" is the integer value of the symbol.
 

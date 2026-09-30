@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.ActivityMonitor.History"
 ---
-# Class: Toybox.ActivityMonitor.History
+# 类：Toybox.ActivityMonitor.History
 
 Inherits:
 
@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 活跃分钟数。
 
-Contains the moderate, vigorous, and total accumulated minutes for the day.
+包含当天累计的中等强度、高强度和总分钟数。
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.View"
 ---
-# Class: Toybox.WatchUi.View
+# 类：Toybox.WatchUi.View
 
 Inherits:
 
@@ -28,7 +28,7 @@ Watch Faces
 
 [onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) → [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) → [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
-Data Fields
+数据字段
 
 [onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) → [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) → [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
@@ -107,7 +107,7 @@ API 级别 1.0.0
 
 - [**clearLayers**](#clearLayers-instance_function)() as **Void**
 
-    Clear all layers that are added to the view.
+    清除已添加到视图中的所有图层。
 
 - [**findDrawableById**](#findDrawableById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -190,7 +190,7 @@ API 级别 1.0.0
 
 在视图的图层堆栈顶部添加一个 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)。用户无需手动将图层绘制到屏幕上；将图层添加到视图后，系统会在屏幕更新期间绘制所有图层，其中包括 View 更新（例如 onUpdate/onPartialUpdate）和动画播放。
 
-Disabled for DataFiled and Background Apps
+对 DataFiled 和后台应用禁用
 
 Parameters:
 
@@ -212,7 +212,7 @@ Throws:
 
 ### **clearLayers()** as **Void**
 
-Clear all layers that are added to the view
+清除已添加到视图中的所有图层
 
 Since:
 
@@ -386,7 +386,7 @@ This is called when a View is brought to the foreground, after the call to [onSh
 
 - Once per second in Data Fields
 
-- At an increased rate while an [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) is active
+- 当 [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 处于活动状态时以更高频率进行
 
 - More than one call to onUpdate() may occur during View transitions
 
@@ -528,11 +528,11 @@ With [View](/connect-iq/api-docs/Toybox/WatchUi/View/), the control bar can be h
 
 With [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) and [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/), the `options` parameter cannot be `null`; the control bar is always shown. The `:leftButton` option must be set to [CONTROL\_BAR\_LEFT\_BUTTON\_BACK](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module). The `:rightButton` option may be `null`, for no button, or [CONTROL\_BAR\_RIGHT\_BUTTON\_ACCEPT](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module).
 
-Attempting to call this method on any other class derived from View, or with an unsupported option for the given view type, will result in an exception.
+尝试在任何其他派生自 View 的类上调用此方法，或为给定视图类型使用不受支持的选项，将导致异常。
 
 注意：
 
-Control bar visibility changes made from [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) or [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) will result in an exception.
+从 [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 或 [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 进行的控制栏可见性更改将导致异常。
 
 Parameters:
 
@@ -625,7 +625,7 @@ Throws:
 
 Set the array of Drawable objects to be managed by this View. The specified Drawables will be:
 
-- Drawn automatically via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
+- 通过调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 自动绘制
 
 - Searched via calls to [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function)
 

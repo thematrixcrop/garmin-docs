@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikeRadar"
 ---
-# Class: Toybox.AntPlus.BikeRadar
+# 类：Toybox.AntPlus.BikeRadar
 
 Inherits:
 

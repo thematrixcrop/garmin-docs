@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.BikePowerListener"
 ---
-# Class: Toybox.AntPlus.BikePowerListener
+# 类：Toybox.AntPlus.BikePowerListener
 
 Inherits:
 
@@ -202,27 +202,27 @@ API 级别 2.2.0
 
 - [**onCalculatedCadenceUpdate**](#onCalculatedCadenceUpdate-instance_function)(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) as **Void**
 
-    Callback when calculated cadence is updated (max freq 1Hz).
+    计算出的踏频更新时的回调（最大频率 1Hz）。
 
 - [**onCalculatedPowerUpdate**](#onCalculatedPowerUpdate-instance_function)(data as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) as **Void**
 
-    Callback when calculated power is updated (max freq 1Hz).
+    计算出的功率更新时的回调（最大频率 1Hz）。
 
 - [**onCalculatedWheelDistanceUpdate**](#onCalculatedWheelDistanceUpdate-instance_function)(data as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) as **Void**
 
-    Callback when calculated wheel distance is updated (max freq 1Hz).
+    计算出的车轮距离更新时的回调（最大频率 1Hz）。
 
 - [**onCalculatedWheelSpeedUpdate**](#onCalculatedWheelSpeedUpdate-instance_function)(data as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) as **Void**
 
-    Callback when calculated wheel speed is updated (max freq 1Hz).
+    计算出的车轮速度更新时的回调（最大频率 1Hz）。
 
 - [**onPedalPowerBalanceUpdate**](#onPedalPowerBalanceUpdate-instance_function)(data as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) as **Void**
 
-    Callback when power balance is updated (max freq 1Hz).
+    功率平衡更新时的回调（最大频率 1Hz）。
 
 - [**onTorqueEffectivenessPedalSmoothnessUpdate**](#onTorqueEffectivenessPedalSmoothnessUpdate-instance_function)(data as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) as **Void**
 
-    Callback when torque effectiveness & pedal smoothness are updated (max freq 1Hz).
+    扭矩有效性和踩踏平顺性更新时的回调（最大频率 1Hz）。
 
 
 ## 实例方法详情
@@ -237,13 +237,13 @@ API 级别 2.2.0
 
 ### **onCalculatedCadenceUpdate(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/))** as **Void**
 
-Callback when calculated cadence is updated (max freq 1Hz)
+计算出的踏频更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) —
 
-    Data with updated cadence information
+    包含更新后的踏频信息的数据
 
 
 Since:
@@ -252,13 +252,13 @@ API 级别 2.2.0
 
 ### **onCalculatedPowerUpdate(data as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/))** as **Void**
 
-Callback when calculated power is updated (max freq 1Hz)
+计算出的功率更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) —
 
-    Data with updated power information
+    包含更新后的功率信息的数据
 
 
 Since:
@@ -267,13 +267,13 @@ API 级别 2.2.0
 
 ### **onCalculatedWheelDistanceUpdate(data as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/))** as **Void**
 
-Callback when calculated wheel distance is updated (max freq 1Hz)
+计算出的车轮距离更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) —
 
-    Data with updated distance information
+    包含更新后的距离信息的数据
 
 
 Since:
@@ -282,13 +282,13 @@ API 级别 2.2.0
 
 ### **onCalculatedWheelSpeedUpdate(data as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/))** as **Void**
 
-Callback when calculated wheel speed is updated (max freq 1Hz)
+计算出的车轮速度更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) —
 
-    Data with updated speed information
+    包含更新后的速度信息的数据
 
 
 Since:
@@ -297,13 +297,13 @@ API 级别 2.2.0
 
 ### **onPedalPowerBalanceUpdate(data as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/))** as **Void**
 
-Callback when power balance is updated (max freq 1Hz)
+功率平衡更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) —
 
-    Data with updated balance information.
+    包含更新后的平衡信息的数据。
 
 
 Since:
@@ -312,13 +312,13 @@ API 级别 2.2.0
 
 ### **onTorqueEffectivenessPedalSmoothnessUpdate(data as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/))** as **Void**
 
-Callback when torque effectiveness & pedal smoothness are updated (max freq 1Hz)
+扭矩有效性和踩踏平顺性更新时的回调（最大频率 1Hz）
 
 Parameters:
 
 - data — ([AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) —
 
-    Data with updated torque effectiveness & pedal smoothness information
+    包含更新后的扭矩有效性和踩踏平顺性信息的数据
 
 
 Since:

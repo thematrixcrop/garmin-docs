@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.ResourceReference"
 ---
-# Class: Toybox.Graphics.ResourceReference
+# 类：Toybox.Graphics.ResourceReference
 
 Inherits:
 

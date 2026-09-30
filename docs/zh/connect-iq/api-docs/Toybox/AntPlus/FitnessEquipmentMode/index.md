@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.FitnessEquipmentMode"
 ---
-# Class: Toybox.AntPlus.FitnessEquipmentMode
+# 类：Toybox.AntPlus.FitnessEquipmentMode
 
 Inherits:
 

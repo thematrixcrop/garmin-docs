@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.BluetoothLowEnergy.Device"
 ---
-# Class: Toybox.BluetoothLowEnergy.Device
+# 类：Toybox.BluetoothLowEnergy.Device
 
 Inherits:
 

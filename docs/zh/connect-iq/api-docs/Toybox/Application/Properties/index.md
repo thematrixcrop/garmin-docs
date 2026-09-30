@@ -88,7 +88,7 @@ Throws:
 
 注意：
 
-Background processes cannot save Application Properties
+后台进程无法保存应用属性
 
 Parameters:
 

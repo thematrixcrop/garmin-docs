@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Cryptography.CipherBasedMessageAuthenticationCode"
 ---
-# Class: Toybox.Cryptography.CipherBasedMessageAuthenticationCode
+# 类：Toybox.Cryptography.CipherBasedMessageAuthenticationCode
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Cipher-Based Message Authentication Code (CMAC) object.
+基于密码的消息认证码（CMAC）对象。
 
 CipherBasedMessageAuthenticationCode 是一个可使用 CMAC 算法计算消息验证码的对象。
 

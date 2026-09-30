@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.PreviousOperationNotCompleteException"
 ---
-# Class: Toybox.System.PreviousOperationNotCompleteException
+# 类：Toybox.System.PreviousOperationNotCompleteException
 
 Inherits:
 

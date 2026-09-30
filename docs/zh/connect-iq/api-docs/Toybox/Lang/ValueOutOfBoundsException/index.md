@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Lang.ValueOutOfBoundsException"
 ---
-# Class: Toybox.Lang.ValueOutOfBoundsException
+# 类：Toybox.Lang.ValueOutOfBoundsException
 
 Inherits:
 

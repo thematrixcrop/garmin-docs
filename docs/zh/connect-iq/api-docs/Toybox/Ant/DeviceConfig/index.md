@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Ant.DeviceConfig"
 ---
-# Class: Toybox.Ant.DeviceConfig
+# 类：Toybox.Ant.DeviceConfig
 
 Inherits:
 
@@ -315,7 +315,7 @@ Parameters:
 
 - Range of 0 to 12 (2.5s increments)
 
-- Default 6 (15s)
+- 默认值为 6（15 秒）
 
 
 - :searchTimeoutHighPriority — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
@@ -336,14 +336,14 @@ Parameters:
 
 - Range of 0 to 2 (2.5s increments)
 
-- Default 0 (disabled)
+- 默认值为 0（已禁用）
 
 
 - :searchThreshold — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         以 Number 表示的接近度阈值区间
 
-- Configures the RSSI threshold a slave channel will search for which is effectively the distance at which a slave is willing to be from a master
+- 配置从设备将搜索的 RSSI 阈值，该阈值实际上表示从设备愿意与主设备保持的距离
 
 - Values are 0 (disabled), 1 (closest), 10 (farthest)
 

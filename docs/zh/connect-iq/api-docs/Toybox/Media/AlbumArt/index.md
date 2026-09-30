@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Media.AlbumArt"
 ---
-# Class: Toybox.Media.AlbumArt
+# 类：Toybox.Media.AlbumArt
 
 Inherits:
 
@@ -30,7 +30,7 @@ API 级别 3.0.0
 
 - [**image\_offset**](#image_offset-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Byte offset of the album art image within the audio file.
+    音频文件中专辑封面图像的字节偏移量。
 
 
 ## 实例属性详情
@@ -52,7 +52,7 @@ Returns:
 
 ### var image\_offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Byte offset of the album art image within the audio file
+音频文件中专辑封面图像的字节偏移量
 
 Since:
 

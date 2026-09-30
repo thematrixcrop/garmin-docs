@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.WatchFaceConfig.ComplicationRef"
 ---
-# Class: Toybox.Application.WatchFaceConfig.ComplicationRef
+# 类：Toybox.Application.WatchFaceConfig.ComplicationRef
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Complication configuration for a watchface.
+表盘的复杂功能配置。
 
 Since:
 

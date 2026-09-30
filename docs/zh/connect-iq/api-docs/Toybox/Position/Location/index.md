@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Position.Location"
 ---
-# Class: Toybox.Position.Location
+# 类：Toybox.Position.Location
 
 Inherits:
 

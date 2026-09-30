@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.UserProfile.Profile"
 ---
-# Class: Toybox.UserProfile.Profile
+# 类：Toybox.UserProfile.Profile
 
 Inherits:
 
@@ -32,11 +32,11 @@ API 级别 1.0.0
 
 - [**averageRestingHeartRate**](#averageRestingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Average resting heart rate This value is calculated based on historical data.
+    平均静息心率 此值根据历史数据计算得出。
 
 - [**birthYear**](#birthYear-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Birth year as configured by the user.
+    用户配置的出生年份。
 
 - [**gender**](#gender-var) as [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module) or **Null**
 
@@ -68,7 +68,7 @@ API 级别 1.0.0
 
 - [**vo2maxCycling**](#vo2maxCycling-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Cycling VO2 Max This value is calculated based on historical data.
+    骑行 VO2 Max 此值根据历史数据计算得出。
 
 - [**vo2maxRunning**](#vo2maxRunning-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -106,7 +106,7 @@ Returns:
 
 ### var averageRestingHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Average resting heart rate
+平均静息心率
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
@@ -243,7 +243,7 @@ Returns:
 
 ### var birthYear as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Birth year as configured by the user
+用户配置的出生年份
 
 Since:
 
@@ -360,7 +360,7 @@ Returns:
 
 ### var vo2maxCycling as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Cycling VO2 Max
+骑行 VO2 Max
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 

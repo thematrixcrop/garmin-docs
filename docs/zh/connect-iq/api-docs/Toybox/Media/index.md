@@ -165,7 +165,7 @@ API 级别 3.0.0
 
 |
 
-Content type for Audio
+音频的内容类型
 
 |
 

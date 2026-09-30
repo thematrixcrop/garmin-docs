@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Graphics.VectorFont"
 ---
-# Class: Toybox.Graphics.VectorFont
+# 类：Toybox.Graphics.VectorFont
 
 Inherits:
 

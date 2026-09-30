@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.System.ClockTime"
 ---
-# Class: Toybox.System.ClockTime
+# 类：Toybox.System.ClockTime
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Represents the current local time.
 
-ClockTime is a convenient way to get the current time in an easy-to-use format without the need to perform time zone conversions or time-based arithmetic. Values provided by ClockTime may require formatting for proper display within an app.
+ClockTime 提供了一种便捷方式，可以以易于使用的格式获取当前时间，而无需执行时区转换或基于时间的算术运算。ClockTime 提供的值可能需要格式化，才能在应用中正确显示。
 
 ## 另见：
 

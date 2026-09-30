@@ -119,7 +119,7 @@ API 级别 6.0.0
 
 - [**createQrCodeImage**](#createQrCodeImage-instance_function)(value as [ScanCode.QrCodeValue](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeValue-named_type), ecc as [ScanCode.QrCodeEcc](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeEcc-module), imageSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), options as [ScanCode.QrCodeOptions](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeOptions-named_type) or **Null**) as [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)
 
-    Create a Quick Response Code image.
+    创建快速响应码图像。
 
 
 ## 类型定义详情
@@ -140,7 +140,7 @@ API 级别 6.0.0
 
 ### **createQrCodeImage(value as [ScanCode.QrCodeValue](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeValue-named_type), ecc as [ScanCode.QrCodeEcc](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeEcc-module), imageSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), options as [ScanCode.QrCodeOptions](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeOptions-named_type) or **Null**)** as [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)
 
-Create a Quick Response Code image
+创建快速响应码图像
 
 Parameters:
 
@@ -158,7 +158,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options.
+    选项字典。
 
 - :minVersion — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

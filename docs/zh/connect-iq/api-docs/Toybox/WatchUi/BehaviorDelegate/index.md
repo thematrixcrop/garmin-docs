@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.BehaviorDelegate"
 ---
-# Class: Toybox.WatchUi.BehaviorDelegate
+# 类：Toybox.WatchUi.BehaviorDelegate
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.WatchUi.InputDelegate
 
 ## 概述
 
-BehaviorDelegate handles behavior input events.
+BehaviorDelegate 处理行为输入事件。
 
 BehaviorDelegate 与 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的区别在于，它作用于与设备无关的行为，例如“下一页”和“上一页”，而不是特定于设备的按键操作。例如，在触摸屏设备上，这些行为可能映射到向左滑动和向右滑动输入；而在非触摸屏设备上，这些行为可能映射到实体按键。
 

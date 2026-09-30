@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.MapMarker"
 ---
-# Class: Toybox.WatchUi.MapMarker
+# 类：Toybox.WatchUi.MapMarker
 
 Inherits:
 

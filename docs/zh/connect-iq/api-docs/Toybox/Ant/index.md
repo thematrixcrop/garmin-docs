@@ -20,7 +20,7 @@ The ANT wireless protocol is a low level communications protocol that provides v
 - [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量 - Burst 错误类型
 
 
-ANT resources and documentation can be found at the links below.
+可通过以下链接获取 ANT 资源和文档。
 
 ## 另见：
 
@@ -435,7 +435,7 @@ API 级别 5.1.0
 
 |
 
-Ant connection is rejected by the user.
+用户拒绝了 Ant 连接。
 
 |
 
@@ -475,7 +475,7 @@ API 级别 1.0.0
 
 |
 
-Bidirectional Transmit (Master)
+双向传输（主设备）
 
 |
 | CHANNEL\_TYPE\_RX\_NOT\_TX | 0x00 |
@@ -484,7 +484,7 @@ API 级别 1.0.0
 
 |
 
-Bidirectional Receive (Slave)
+双向接收（从设备）
 
 |
 | CHANNEL\_TYPE\_RX\_ONLY | 0x40 |
@@ -517,7 +517,7 @@ Shared Bidirectional Transmit (Master)
 
 ### BurstError
 
-Error codes passed to the failure functions in the BurstListener
+传递给 BurstListener 中失败函数的错误代码
 
 Since:
 
@@ -557,6 +557,6 @@ API 级别 2.2.0
 
 |
 
-Burst was blocked by another burst from the native system code
+突发传输被原生系统代码中的另一个突发传输阻止
 
 |

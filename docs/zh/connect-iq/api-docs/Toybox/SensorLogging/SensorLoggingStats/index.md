@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.SensorLogging.SensorLoggingStats"
 ---
-# Class: Toybox.SensorLogging.SensorLoggingStats
+# 类：Toybox.SensorLogging.SensorLoggingStats
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Class for the sensor logging status.
+用于传感器记录状态的类。
 
 Since:
 

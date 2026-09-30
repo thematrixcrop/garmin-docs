@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Application.WatchFaceConfig.Color"
 ---
-# Class: Toybox.Application.WatchFaceConfig.Color
+# 类：Toybox.Application.WatchFaceConfig.Color
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Color configuration for a watchface.
+表盘的颜色配置。
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.DragEvent"
 ---
-# Class: Toybox.WatchUi.DragEvent
+# 类：Toybox.WatchUi.DragEvent
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-DragEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is a drag interaction with a device's touch screen.
+当设备触摸屏发生拖动交互时，DragEvent 是发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的对象。
 
 ## 另见：
 

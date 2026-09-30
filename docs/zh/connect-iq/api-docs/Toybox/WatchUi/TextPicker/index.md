@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.TextPicker"
 ---
-# Class: Toybox.WatchUi.TextPicker
+# 类：Toybox.WatchUi.TextPicker
 
 Inherits:
 

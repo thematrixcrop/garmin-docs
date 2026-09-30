@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Sensor.GyroscopeData"
 ---
-# Class: Toybox.Sensor.GyroscopeData
+# 类：Toybox.Sensor.GyroscopeData
 
 Inherits:
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储陀螺仪采样数据的类。
 
-Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Float](/connect-iq/api-docs/Toybox/Lang/Float/) values. The values for the x, y, and z axes are in deg/sec units. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
+指定的每个字段都是 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的值以 deg/sec 为单位。此项通常用于 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 使用的回调方法
 
 ## 另见：
 

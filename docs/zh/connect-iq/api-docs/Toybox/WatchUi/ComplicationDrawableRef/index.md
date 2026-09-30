@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.WatchUi.ComplicationDrawableRef"
 ---
-# Class: Toybox.WatchUi.ComplicationDrawableRef
+# 类：Toybox.WatchUi.ComplicationDrawableRef
 
 Inherits:
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Complication drawable reference which defines the drawable and its bounds used to animating or highlighting the complication.
+复杂功能可绘制对象引用，用于定义复杂功能在动画或高亮显示时所使用的可绘制对象及其边界。
 
 Since:
 

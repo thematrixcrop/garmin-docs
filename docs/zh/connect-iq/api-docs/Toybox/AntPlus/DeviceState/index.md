@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.DeviceState"
 ---
-# Class: Toybox.AntPlus.DeviceState
+# 类：Toybox.AntPlus.DeviceState
 
 Inherits:
 

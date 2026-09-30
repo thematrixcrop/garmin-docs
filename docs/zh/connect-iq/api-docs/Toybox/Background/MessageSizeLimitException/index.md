@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Background.MessageSizeLimitException"
 ---
-# Class: Toybox.Background.MessageSizeLimitException
+# 类：Toybox.Background.MessageSizeLimitException
 
 Inherits:
 

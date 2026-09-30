@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.Math.IirFilter"
 ---
-# Class: Toybox.Math.IirFilter
+# 类：Toybox.Math.IirFilter
 
 Inherits:
 

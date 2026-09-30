@@ -78,7 +78,7 @@ Use the GALILEO satellite constellation
 
 ### Configuration
 
-Configuration values for known GNSS configurations
+已知 GNSS 配置的配置值
 
 Since:
 
@@ -187,7 +187,7 @@ API 级别 1.0.0
 
 |
 
-degrees/minutes/seconds (DMS) format: ddd mm ss (e.g. 38 27' 8")
+度/分/秒（DMS）格式：ddd mm ss（例如 38 27' 8"）
 
  |  |
 | GEO\_MGRS | 3 |
@@ -269,7 +269,7 @@ API 级别 1.0.0
 
 |
 
-Enables a one-time Location acquisition
+启用一次性位置获取
 
 |
 | LOCATION\_CONTINUOUS | 1 |
@@ -278,7 +278,7 @@ API 级别 1.0.0
 
 |
 
-Enables continuous Location tracking
+启用持续位置跟踪
 
 |
 | LOCATION\_DISABLE | 2 |
@@ -287,7 +287,7 @@ API 级别 1.0.0
 
 |
 
-Disables Location tracking
+禁用位置跟踪
 
 |
 
@@ -313,7 +313,7 @@ API 级别 3.2.0
 
 |
 
-Enable special mode for aviation use-cases that require support for higher altitudes.
+为需要支持更高海拔的航空用例启用特殊模式。
 
 |
 
@@ -333,7 +333,7 @@ Enable special mode for aviation use-cases that require support for higher altit
 
 - [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function)(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determines if the device supports a requested GPS configuration.
+    确定设备是否支持请求的 GPS 配置。
 
 - [**parse**](#parse-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -350,14 +350,14 @@ Parameters:
 
 - locations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    Array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects.
+    [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象数组。
 
 
 Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    Array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects that specify the bounds of the input array or `null` if the the input array is empty. The first element describes the top left corner, the second describes the bottom right.
+    包含用于指定输入数组边界的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象的数组；如果输入数组为空，则为 `null`。第一个元素描述左上角，第二个元素描述右下角。
 
 
 Since:
@@ -408,7 +408,7 @@ Parameters:
 
     对侦听器方法的引用：
 
-- Called when location updates are received
+- 收到位置更新时调用
 
 - Receives a Position.Info object
 
@@ -855,7 +855,7 @@ API 级别 1.0.0
 
 ### **hasConfigurationSupport(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determines if the device supports a requested GPS configuration
+确定设备是否支持请求的 GPS 配置
 
 Parameters:
 

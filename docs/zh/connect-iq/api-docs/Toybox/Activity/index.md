@@ -66,7 +66,7 @@ API 级别 1.2.2
 
 |
 
-Butterfly stroke
+蝶泳划水
 
 |
 | SWIM\_STROKE\_DRILL | 4 |
@@ -75,7 +75,7 @@ API 级别 1.2.2
 
 |
 
-Drill mode
+钻取模式
 
 |
 | SWIM\_STROKE\_MIXED | 5 |

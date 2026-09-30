@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.FitContributor.Field"
 ---
-# Class: Toybox.FitContributor.Field
+# 类：Toybox.FitContributor.Field
 
 Inherits:
 

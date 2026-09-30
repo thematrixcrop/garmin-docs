@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.FitnessEquipmentData"
 ---
-# Class: Toybox.AntPlus.FitnessEquipmentData
+# 类：Toybox.AntPlus.FitnessEquipmentData
 
 Inherits:
 

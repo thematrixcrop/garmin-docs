@@ -1,7 +1,7 @@
 ---
 title: "Class: Toybox.AntPlus.CalculatedWheelDistance"
 ---
-# Class: Toybox.AntPlus.CalculatedWheelDistance
+# 类：Toybox.AntPlus.CalculatedWheelDistance
 
 Inherits:
 
