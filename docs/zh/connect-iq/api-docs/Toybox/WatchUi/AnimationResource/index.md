@@ -158,7 +158,7 @@ API 级别 3.1.0
 
 - [**getColorDepth**](#getColorDepth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the color depth in terms of bit/pixel of the animation resource.
+    获取动画资源以位/像素表示的色深。
 
 - [**getFrameRate**](#getFrameRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -178,14 +178,14 @@ API 级别 3.1.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Get info about an animation resource as a String.
+    以 String 形式获取动画资源信息。
 
 
 ## 实例方法详情
 
 ### **getColorDepth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the color depth in terms of bit/pixel of the animation resource.
+获取动画资源以位/像素表示的色深。
 
 Returns:
 
@@ -260,7 +260,7 @@ API 级别 3.1.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Get info about an animation resource as a String.
+以 String 形式获取动画资源信息。
 
 The info String is formatted as "Animation X x Y" where "X" is the width of the animation and "Y" is the height.
 

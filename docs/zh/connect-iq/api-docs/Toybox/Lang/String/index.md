@@ -38,7 +38,7 @@ API 级别 1.0.0
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get a hash code value for a String.
+    获取 String 的哈希代码值。
 
 - [**length**](#length-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -177,7 +177,7 @@ API 级别 1.0.0
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get a hash code value for a String.
+获取 String 的哈希代码值。
 
 Returns:
 

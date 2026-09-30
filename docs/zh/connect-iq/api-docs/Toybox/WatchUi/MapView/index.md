@@ -143,7 +143,7 @@ API 级别 3.0.0
 
 - [**getMapMode**](#getMapMode-instance_function)() as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
 
-    Get the current mode for the map in this MapView.
+    获取此 MapView 中地图的当前模式。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -184,7 +184,7 @@ API 级别 3.0.0
 
 ### **getMapMode()** as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)
 
-Get the current mode for the map in this MapView.
+获取此 MapView 中地图的当前模式。
 
 Returns:
 

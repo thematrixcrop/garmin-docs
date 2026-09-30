@@ -26,11 +26,11 @@ API 级别 2.3.0
 
 - [**getStats**](#getStats-instance_function)() as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) or **Null**
 
-    Get statistics for the data gathered in the current session.
+    获取当前会话中收集的数据统计信息。
 
 - [**getStats2**](#getStats2-instance_function)(sensor as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) or **Null**) as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) or { :accelerometer as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), :gyroscope as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), :magnetometer as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) }
 
-    Get statistics for the sensor data gathered in the current session.
+    获取当前会话中收集的传感器数据统计信息。
 
 - [**initialize**](#initialize-instance_function)(options as { :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })
 
@@ -41,7 +41,7 @@ API 级别 2.3.0
 
 ### **getStats()** as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) or **Null**
 
-Get statistics for the data gathered in the current session.
+获取当前会话中收集的数据统计信息。
 
 Returns:
 
@@ -56,7 +56,7 @@ API 级别 2.3.0
 
 ### **getStats2(sensor as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) or **Null**)** as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) or { :accelerometer as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), :gyroscope as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), :magnetometer as [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) }
 
-Get statistics for the sensor data gathered in the current session.
+获取当前会话中收集的传感器数据统计信息。
 
 Parameters:
 

@@ -191,7 +191,7 @@ Request iterator with oldest data first
 
 - [**getBodyBatteryHistory**](#getBodyBatteryHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-    Get the body battery history for the given period.
+    获取指定时间段的身体电量历史记录。
 
 - [**getElevationHistory**](#getElevationHistory-instance_function)(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**) as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
@@ -222,7 +222,7 @@ Request iterator with oldest data first
 
 ### **getBodyBatteryHistory(options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**, :order as [SensorHistory.Order](/connect-iq/api-docs/Toybox/SensorHistory/#Order-module) } or **Null**)** as [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/)
 
-Get the body battery history for the given period.
+获取指定时间段的身体电量历史记录。
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 

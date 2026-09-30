@@ -220,7 +220,7 @@ API 级别 3.3.0
 
 - [**getDaylightSavingsTimeOffset**](#getDaylightSavingsTimeOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the daylight saving time offset from UTC time in seconds.
+    获取夏令时相对于 UTC 时间的偏移量（以秒为单位）。
 
 - [**getOffset**](#getOffset-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -248,7 +248,7 @@ API 级别 3.3.0
 
 - [**toMoment**](#toMoment-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Get a Moment for this.
+    获取对应于此对象的 Moment。
 
 - [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -333,7 +333,7 @@ API 级别 3.3.0
 
 ### **getDaylightSavingsTimeOffset()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the daylight saving time offset from UTC time in seconds.
+获取夏令时相对于 UTC 时间的偏移量（以秒为单位）。
 
 Returns:
 
@@ -461,7 +461,7 @@ API 级别 3.3.0
 
 ### **toMoment()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Get a Moment for this.
+获取对应于此对象的 Moment。
 
 Returns:
 

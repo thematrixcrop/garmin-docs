@@ -176,7 +176,7 @@ API 级别 4.0.0
 
 - [**getServiceDelegate**](#getServiceDelegate-instance_function)() as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
 
-    Get a [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) to run background tasks for this app.
+    获取用于运行此应用后台任务的 [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)。
 
 - [**getSettingsView**](#getSettingsView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
 
@@ -184,7 +184,7 @@ API 级别 4.0.0
 
 - [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
-    Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing content to the device.
+    获取用于向系统传达同步状态、以便将内容同步到设备的 [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) 对象。
 
 - [**getTrialDaysRemaining**](#getTrialDaysRemaining-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1384,7 +1384,7 @@ API 级别 5.1.0
 
 ### **getServiceDelegate()** as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
 
-Get a [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) to run background tasks for this app.
+获取用于运行此应用后台任务的 [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)。
 
 When a ServiceDelegate is retrieved, the following will occur:
 
@@ -1566,7 +1566,7 @@ API 级别 3.2.0
 
 ### **getSyncDelegate()** as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
-Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing content to the device.
+获取用于向系统传达同步状态、以便将内容同步到设备的 [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) 对象。
 
 :::details 支持的设备
 
@@ -1962,7 +1962,7 @@ Parameters:
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    for future expansion, null for now.
+    用于未来扩展，目前为 null。
 
 
 :::details 支持的设备
@@ -2275,7 +2275,7 @@ Parameters:
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    for future expansion, null for now.
+    用于未来扩展，目前为 null。
 
 
 :::details 支持的设备

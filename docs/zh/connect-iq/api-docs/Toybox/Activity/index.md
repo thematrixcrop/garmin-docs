@@ -1345,26 +1345,26 @@ API 级别 3.2.0
 
 - [**getActivityInfo**](#getActivityInfo-instance_function)() as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
-    Get the current Activity Info.
+    获取当前活动信息。
 
 - [**getCurrentWorkoutStep**](#getCurrentWorkoutStep-instance_function)() as [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) or **Null**
 
-    Get information about the current workout step.
+    获取当前锻炼步骤的信息。
 
 - [**getNextWorkoutStep**](#getNextWorkoutStep-instance_function)() as [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) or **Null**
 
-    Get information about the next workout step.
+    获取下一个锻炼步骤的信息。
 
 - [**getProfileInfo**](#getProfileInfo-instance_function)() as [Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/)
 
-    Get information about the current profile.
+    获取当前配置文件的信息。
 
 
 ## 实例方法详情
 
 ### **getActivityInfo()** as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
-Get the current Activity Info.
+获取当前活动信息。
 
 Returns:
 
@@ -1379,7 +1379,7 @@ API 级别 1.0.0
 
 ### **getCurrentWorkoutStep()** as [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) or **Null**
 
-Get information about the current workout step.
+获取当前锻炼步骤的信息。
 
 :::details 支持的设备
 
@@ -1532,7 +1532,7 @@ Throws:
 
 ### **getNextWorkoutStep()** as [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) or **Null**
 
-Get information about the next workout step.
+获取下一个锻炼步骤的信息。
 
 :::details 支持的设备
 
@@ -1685,7 +1685,7 @@ Throws:
 
 ### **getProfileInfo()** as [Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/)
 
-Get information about the current profile.
+获取当前配置文件的信息。
 
 Returns:
 

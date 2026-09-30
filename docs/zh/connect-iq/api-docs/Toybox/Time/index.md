@@ -171,22 +171,22 @@ The system's real-time clock that cannot be overridden by user settings, and can
 
 - [**getCurrentTime**](#getCurrentTime-instance_function)(options as { :currentTimeType as [Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module) }) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time based on the specified source.
+    根据指定来源获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 - [**now**](#now-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time.
+    获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 - [**today**](#today-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for midnight today.
+    获取今天午夜的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 
 ## 实例方法详情
 
 ### **getCurrentTime(options as { :currentTimeType as [Time.CurrentTime](/connect-iq/api-docs/Toybox/Time/#CurrentTime-module) })** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time based on the specified source.
+根据指定来源获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 This method behaves the same as [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function), but accepts an `options` argument that allows the time source to be selected.
 
@@ -219,7 +219,7 @@ Throws:
 
 ### **now()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for the current time.
+获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 Example:
 
@@ -250,7 +250,7 @@ API 级别 1.0.0
 
 ### **today()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Get a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) for midnight today.
+获取今天午夜的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 Example:
 

@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**getProjectedLocation**](#getProjectedLocation-instance_function)(angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), distance as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-    Get a [Location](/connect-iq/api-docs/Toybox/Position/Location/) object that is offset from the current position by a given distance and angle.
+    获取相对于当前位置按给定距离和角度偏移的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 - [**initialize**](#initialize-instance_function)(options as { :latitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :longitude as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :format as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) })
 
@@ -36,22 +36,22 @@ API 级别 1.0.0
 
 - [**toDegrees**](#toDegrees-instance_function)() as \[ [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) \]
 
-    Get a Location object's coordinates in degrees.
+    获取 Location 对象以度为单位的坐标。
 
 - [**toGeoString**](#toGeoString-instance_function)(format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Get a String representation a Location object's coordinates.
+    获取 Location 对象坐标的 String 表示形式。
 
 - [**toRadians**](#toRadians-instance_function)() as \[ [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) \]
 
-    Get a location object's coordinates in radians.
+    获取 Location 对象以弧度为单位的坐标。
 
 
 ## 实例方法详情
 
 ### **getProjectedLocation(angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), distance as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-Get a [Location](/connect-iq/api-docs/Toybox/Position/Location/) object that is offset from the current position by a given distance and angle.
+获取相对于当前位置按给定距离和角度偏移的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 Parameters:
 
@@ -124,7 +124,7 @@ API 级别 1.0.0
 
 ### **toDegrees()** as \[ [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) \]
 
-Get a Location object's coordinates in degrees.
+获取 Location 对象以度为单位的坐标。
 
 Example:
 
@@ -153,7 +153,7 @@ API 级别 1.0.0
 
 ### **toGeoString(format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Get a String representation a Location object's coordinates.
+获取 Location 对象坐标的 String 表示形式。
 
 Parameters:
 
@@ -190,7 +190,7 @@ API 级别 1.0.0
 
 ### **toRadians()** as \[ [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) \]
 
-Get a location object's coordinates in radians.
+获取 Location 对象以弧度为单位的坐标。
 
 Example:
 

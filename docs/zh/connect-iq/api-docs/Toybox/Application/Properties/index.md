@@ -25,7 +25,7 @@ API 级别 2.4.0
 
 - [**getValue**](#getValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)
 
-    Get the data associated with a given key from application settings.
+    从应用程序设置中获取与给定键关联的数据。
 
 - [**setValue**](#setValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as **Void**
 
@@ -44,7 +44,7 @@ API 级别 2.4.0
 
 ### **getValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)
 
-Get the data associated with a given key from application settings.
+从应用程序设置中获取与给定键关联的数据。
 
 Property values must be defined in the application settings xml. If a key that is not present in application settings is passed to getValue(), an exception will be thrown.
 

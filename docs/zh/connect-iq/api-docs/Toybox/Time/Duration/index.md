@@ -58,7 +58,7 @@ API 级别 1.0.0
 
 - [**subtract**](#subtract-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Get the absolute difference between two Duration objects.
+    获取两个 Duration 对象之间的绝对差值。
 
 - [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -314,7 +314,7 @@ API 级别 1.0.0
 
 ### **subtract(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Get the absolute difference between two Duration objects.
+获取两个 Duration 对象之间的绝对差值。
 
 The computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Duration/#compare-instance_function) method can also be used to get the difference between two Duration objects.
 

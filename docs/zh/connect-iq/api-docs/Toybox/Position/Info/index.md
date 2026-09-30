@@ -303,7 +303,7 @@ Speed is derived from the most accurate source in the following order:
 
 1. GPS
 
-2. Foot pod
+2. 脚踏传感器
 
 3. Accelerometer
 

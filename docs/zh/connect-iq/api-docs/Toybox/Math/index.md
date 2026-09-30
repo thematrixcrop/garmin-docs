@@ -81,19 +81,19 @@ API 级别 1.0.0
 
 - [**acos**](#acos-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the arc cosine of an angle.
+    获取角度的反余弦值。
 
 - [**asin**](#asin-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the arc sine of an angle.
+    获取角度的反正弦值。
 
 - [**atan**](#atan-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the arc tangent of an angle.
+    获取角度的反正切值。
 
 - [**atan2**](#atan2-instance_function)(y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the arc tangent of y/x in radians.
+    获取 y/x 的弧度反正切值。
 
 - [**ceil**](#ceil-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
@@ -101,7 +101,7 @@ API 级别 1.0.0
 
 - [**cos**](#cos-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Get the cosine of an angle.
+    获取角度的余弦值。
 
 - [**floor**](#floor-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 - [**mean**](#mean-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Get the arithmetic mean (average) of an array of data.
+    获取数据数组的算术平均值。
 
 - [**mode**](#mode-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -172,7 +172,7 @@ API 级别 1.0.0
 
 ### **acos(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the arc cosine of an angle.
+获取角度的反余弦值。
 
 Parameters:
 
@@ -199,7 +199,7 @@ API 级别 1.0.0
 
 ### **asin(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the arc sine of an angle.
+获取角度的反正弦值。
 
 Parameters:
 
@@ -226,7 +226,7 @@ API 级别 1.0.0
 
 ### **atan(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the arc tangent of an angle.
+获取角度的反正切值。
 
 Parameters:
 
@@ -253,7 +253,7 @@ API 级别 1.0.0
 
 ### **atan2(y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the arc tangent of y/x in radians.
+获取 y/x 的弧度反正切值。
 
 Parameters:
 
@@ -306,7 +306,7 @@ API 级别 1.3.0
 
 ### **cos(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Get the cosine of an angle.
+获取角度的余弦值。
 
 Parameters:
 
@@ -413,7 +413,7 @@ API 级别 1.0.0
 
 ### **mean(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>)** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Get the arithmetic mean (average) of an array of data.
+获取数据数组的算术平均值。
 
 Parameters:
 

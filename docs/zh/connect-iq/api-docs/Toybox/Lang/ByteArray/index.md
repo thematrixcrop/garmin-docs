@@ -46,7 +46,7 @@ API 级别 3.0.0
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get a hash code value for a ByteArray.
+    获取 ByteArray 的哈希代码值。
 
 - [**indexOf**](#indexOf-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -70,7 +70,7 @@ API 级别 3.0.0
 
 - [**slice**](#slice-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Get a new ByteArray containing a portion of an existing ByteArray.
+    获取包含现有 ByteArray 部分内容的新 ByteArray。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -258,7 +258,7 @@ API 级别 3.0.0
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get a hash code value for a ByteArray.
+获取 ByteArray 的哈希代码值。
 
 Returns:
 
@@ -410,7 +410,7 @@ API 级别 3.0.0
 
 ### **slice(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Get a new ByteArray containing a portion of an existing ByteArray.
+获取包含现有 ByteArray 部分内容的新 ByteArray。
 
 Parameters:
 

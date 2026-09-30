@@ -225,11 +225,11 @@ API 级别 3.0.0
 
 - [**isFocused**](#isFocused-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get the CustomMenuItem focus state.
+    获取 CustomMenuItem 的焦点状态。
 
 - [**isSelected**](#isSelected-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get the CustomMenuItem selected state.
+    获取 CustomMenuItem 的选中状态。
 
 - [**setDividerIcon**](#setDividerIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
@@ -351,7 +351,7 @@ Throws:
 
 ### **isFocused()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get the CustomMenuItem focus state.
+获取 CustomMenuItem 的焦点状态。
 
 Returns:
 
@@ -366,7 +366,7 @@ API 级别 3.0.0
 
 ### **isSelected()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get the CustomMenuItem selected state.
+获取 CustomMenuItem 的选中状态。
 
 Returns:
 

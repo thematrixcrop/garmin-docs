@@ -907,7 +907,7 @@ API 级别 6.0.0
 
 - [**generateSignedOAuthHeader**](#generateSignedOAuthHeader-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>, requestMethod as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), signatureMethod as [Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module), token as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**, tokenSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerKey as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) deprecated
 
-    Generate the value for the "Authorization" header in an OAuth 1.0a request.
+    生成 OAuth 1.0a 请求中“Authorization”标头的值。
 
 - [**getMailbox**](#getMailbox-instance_function)() as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) deprecated
 
@@ -1234,7 +1234,7 @@ API 级别 1.1.2
 
 This method may be removed after System 10.
 
-Generate the value for the "Authorization" header in an OAuth 1.0a request.
+生成 OAuth 1.0a 请求中“Authorization”标头的值。
 
 The returned value can be set as the "Authorization" header for [makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function).
 

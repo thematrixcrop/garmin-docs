@@ -223,7 +223,7 @@ API 级别 2.2.0
 
 - [**getBikeLights**](#getBikeLights-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)\> or **Null**
 
-    Get a list of lights in the network.
+    获取网络中的灯列表。
 
 - [**getNetworkMode**](#getNetworkMode-instance_function)() as [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module)
 
@@ -262,7 +262,7 @@ API 级别 2.2.0
 
 ### **getBikeLights()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module)\> or **Null**
 
-Get a list of lights in the network.
+获取网络中的灯列表。
 
 Returns:
 

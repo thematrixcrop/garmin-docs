@@ -237,7 +237,7 @@ API 级别 2.3.0
 
 - [**getBackgroundData**](#getBackgroundData-instance_function)() as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
-    Get data previously saved by a background process.
+    获取后台进程之前保存的数据。
 
 - [**getGoalEventRegistered**](#getGoalEventRegistered-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -587,7 +587,7 @@ API 级别 3.0.10
 
 ### **getBackgroundData()** as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
-Get data previously saved by a background process.
+获取后台进程之前保存的数据。
 
 Data is delivered via [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function), and is reset to `null` once data has been delivered to the main process. This method always returns `null` in the main application's process.
 

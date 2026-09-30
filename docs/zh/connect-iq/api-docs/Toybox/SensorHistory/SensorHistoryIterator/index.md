@@ -69,11 +69,11 @@ API 级别 2.1.0
 
 - [**getNewestSampleTime**](#getNewestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the newest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
+    获取此迭代器中最新 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 - [**getOldestSampleTime**](#getOldestSampleTime-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the oldest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
+    获取此迭代器中最早 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 - [**next**](#next-instance_function)() as [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) or **Null**
 
@@ -152,7 +152,7 @@ API 级别 2.1.0
 
 ### **getNewestSampleTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the newest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
+获取此迭代器中最新 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 Example:
 
@@ -190,7 +190,7 @@ API 级别 2.1.0
 
 ### **getOldestSampleTime()** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Get the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) of the oldest [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) in this iterator.
+获取此迭代器中最早 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 Example:
 

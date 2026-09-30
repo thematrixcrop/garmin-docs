@@ -477,7 +477,7 @@ API 级别 5.2.2
 
 - [**getBackgroundColor**](#getBackgroundColor-instance_function)() as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
 
-    Get the current Data Field background color.
+    获取当前数据字段背景颜色。
 
 - [**getObscurityFlags**](#getObscurityFlags-instance_function)() as [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module)
 
@@ -703,7 +703,7 @@ API 级别 1.3.0
 
 ### **getBackgroundColor()** as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
 
-Get the current Data Field background color.
+获取当前数据字段背景颜色。
 
 Some devices provide a global Data Field background color setting. This method will return the current value of that setting as a value of either [Graphics.COLOR\_WHITE](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) or [Graphics.COLOR\_BLACK](/connect-iq/api-docs/Toybox/Graphics/#COLOR_BLACK-const).
 

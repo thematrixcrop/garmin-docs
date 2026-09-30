@@ -150,7 +150,7 @@ API 级别 3.3.0
 
 - [**getDirection**](#getDirection-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the direction of the flick.
+    获取轻扫的方向。
 
 - [**getDistance**](#getDistance-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -180,7 +180,7 @@ API 级别 3.3.0
 
 ### **getDirection()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the direction of the flick.
+获取轻扫的方向。
 
 Returns:
 

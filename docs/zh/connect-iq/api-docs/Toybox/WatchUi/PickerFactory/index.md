@@ -226,7 +226,7 @@ API 级别 1.2.0
 
 - [**getDrawable**](#getDrawable-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), isSelected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    Generate a Drawable instance for an item.
+    为项目生成 Drawable 实例。
 
 - [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -241,7 +241,7 @@ API 级别 1.2.0
 
 ### **getDrawable(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), isSelected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-Generate a Drawable instance for an item.
+为项目生成 Drawable 实例。
 
 Parameters:
 

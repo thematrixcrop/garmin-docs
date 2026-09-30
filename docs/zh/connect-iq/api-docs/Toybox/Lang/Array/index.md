@@ -54,7 +54,7 @@ API 级别 1.0.0
 
 - [**slice**](#slice-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-    Get a new Array containing a portion of an existing Array.
+    获取包含现有 Array 部分内容的新 Array。
 
 - [**sort**](#sort-instance_function)(comparator as [Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type) or **Null**) as **Void**
 
@@ -217,7 +217,7 @@ API 级别 1.0.0
 
 ### **slice(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-Get a new Array containing a portion of an existing Array.
+获取包含现有 Array 部分内容的新 Array。
 
 Parameters:
 

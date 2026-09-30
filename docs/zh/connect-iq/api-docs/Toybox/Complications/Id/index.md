@@ -30,7 +30,7 @@ API 级别 4.2.0
 
 - [**getType**](#getType-instance_function)() as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module)
 
-    Get the complication type.
+    获取复杂功能类型。
 
 - [**initialize**](#initialize-instance_function)(id as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module))
 
@@ -63,7 +63,7 @@ API 级别 4.2.0
 
 ### **getType()** as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module)
 
-Get the complication type
+获取复杂功能类型
 
 Returns:
 

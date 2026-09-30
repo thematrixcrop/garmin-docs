@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 - [**abs**](#abs-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    Get the absolute value of a Double.
+    获取 Double 的绝对值。
 
 - [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -46,7 +46,7 @@ API 级别 1.0.0
 
 - [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Format a Double using a formatting String.
+    使用格式化字符串格式化 Double。
 
 - [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
@@ -73,7 +73,7 @@ API 级别 1.0.0
 
 ### **abs()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Get the absolute value of a Double.
+获取 Double 的绝对值。
 
 Returns:
 
@@ -143,7 +143,7 @@ API 级别 1.3.0
 
 ### **format(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Format a Double using a formatting String.
+使用格式化字符串格式化 Double。
 
 格式字符串类似于 C stdio 库中 `printf` 可用的格式字符串，但不支持 `length` 选项：
 

@@ -191,7 +191,7 @@ API 级别 2.2.0
 
 - [**getCapableModes**](#getCapableModes-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)\> or **Null**
 
-    Get a list of the standard and custom light modes that a bike light supports.
+    获取自行车灯支持的标准灯光模式和自定义灯光模式列表。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -232,7 +232,7 @@ Returns:
 
 ### **getCapableModes()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)\> or **Null**
 
-Get a list of the standard and custom light modes that a bike light supports.
+获取自行车灯支持的标准灯光模式和自定义灯光模式列表。
 
 Returns:
 

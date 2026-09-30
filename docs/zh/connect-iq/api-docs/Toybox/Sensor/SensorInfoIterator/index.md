@@ -43,14 +43,14 @@ API 级别 3.2.0
 
 - [**next**](#next-instance_function)() as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) or **Null**
 
-    Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and advance.
+    获取当前 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 并前进。
 
 
 ## 实例方法详情
 
 ### **next()** as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) or **Null**
 
-Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and advance.
+获取当前 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 并前进。
 
 Get the current [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) and advance self to refer to the next.
 

@@ -416,7 +416,7 @@ API 级别 1.0.0
 
 ### **getUserActivityHistory()** as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
-Get an iterator for Activity history for the user
+获取用户活动历史记录的迭代器
 
 Example:
 

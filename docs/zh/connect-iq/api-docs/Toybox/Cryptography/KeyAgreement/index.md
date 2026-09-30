@@ -271,7 +271,7 @@ API 级别 3.0.0
 
 - [**generateSecret**](#generateSecret-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Generate a shared secret for the KeyAgreement.
+    为 KeyAgreement 生成共享密钥。
 
 - [**initialize**](#initialize-instance_function)(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })
 
@@ -304,7 +304,7 @@ Throws:
 
 ### **generateSecret()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Generate a shared secret for the KeyAgreement.
+为 KeyAgreement 生成共享密钥。
 
 Returns:
 

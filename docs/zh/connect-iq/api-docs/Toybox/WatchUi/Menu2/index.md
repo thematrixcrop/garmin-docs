@@ -309,7 +309,7 @@ Icon divider type
 
 - [**getItem**](#getItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
 
-    Get a MenuItem from a Menu2.
+    从 Menu2 获取 MenuItem。
 
 - [**initialize**](#initialize-instance_function)(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
 
@@ -453,7 +453,7 @@ API 级别 3.4.0
 
 ### **getItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) or **Null**
 
-Get a MenuItem from a Menu2.
+从 Menu2 获取 MenuItem。
 
 Parameters:
 

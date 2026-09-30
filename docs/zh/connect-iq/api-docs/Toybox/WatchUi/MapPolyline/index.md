@@ -146,7 +146,7 @@ API 级别 3.0.0
 
 - [**getLocation**](#getLocation-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-    Get the [Location](/connect-iq/api-docs/Toybox/Position/Location/) object at a provided index in this MapPolyline object.
+    获取此 MapPolyline 对象中指定索引处的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 - [**numLocations**](#numLocations-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -188,7 +188,7 @@ API 级别 3.0.0
 
 ### **getLocation(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-Get the [Location](/connect-iq/api-docs/Toybox/Position/Location/) object at a provided index in this MapPolyline object.
+获取此 MapPolyline 对象中指定索引处的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
 Parameters:
 

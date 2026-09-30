@@ -251,7 +251,7 @@ Left align a MenuItem label
 
 - [**getSubLabel**](#getSubLabel-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**\> or **Null**
 
-    Get a MenuItem substring label.
+    获取 MenuItem 的子字符串标签。
 
 - [**initialize**](#initialize-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, options as { :alignment as [MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) } or **Null**)
 
@@ -335,7 +335,7 @@ API 级别 3.0.0
 
 ### **getSubLabel()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**\> or **Null**
 
-Get a MenuItem substring label.
+获取 MenuItem 的子字符串标签。
 
 Returns:
 

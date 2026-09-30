@@ -30,7 +30,7 @@ API 级别 1.0.0
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get a hash code value for an Object.
+    获取 Object 的哈希代码值。
 
 - [**method**](#method-instance_function)(methodName as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
@@ -42,7 +42,7 @@ API 级别 1.0.0
 
 - [**weak**](#weak-instance_function)() as [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
-    Get a WeakReference to an Object.
+    获取指向 Object 的 WeakReference。
 
 
 ## 实例方法详情
@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get a hash code value for an Object.
+获取 Object 的哈希代码值。
 
 This computes a 32-bit Number that is typically used as an index when placing Objects into a Dictionary. Hash code values have the following characteristics:
 
@@ -161,7 +161,7 @@ API 级别 1.0.0
 
 ### **weak()** as [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
-Get a WeakReference to an Object.
+获取指向 Object 的 WeakReference。
 
 A weak reference is an object that keeps a reference to an object but does not increment the reference count. This means the object reference can be destroyed, so is a case that should be handled.
 

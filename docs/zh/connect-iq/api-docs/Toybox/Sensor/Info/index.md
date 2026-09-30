@@ -293,7 +293,7 @@ Cadence is derived from (in order of priority):
 
 2. Advanced running dynamics sensors (e.g. heart strap with running dynamics enabled)
 
-3. Foot pod
+3. 脚踏传感器
 
 4. Watch-based cadence calculations
 

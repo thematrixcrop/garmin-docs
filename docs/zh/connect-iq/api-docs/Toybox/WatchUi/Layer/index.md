@@ -49,7 +49,7 @@ API 级别 3.1.0
 
 - [**getDc**](#getDc-instance_function)() as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
-    Get the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) to draw on.
+    获取用于绘制的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)。
 
 - [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -97,7 +97,7 @@ API 级别 3.1.0
 
 ### **getDc()** as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) or **Null**
 
-Get the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) to draw on.
+获取用于绘制的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)。
 
 Since:
 

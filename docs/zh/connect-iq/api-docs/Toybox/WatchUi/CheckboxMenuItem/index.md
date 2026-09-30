@@ -217,7 +217,7 @@ API 级别 3.0.0
 
 - [**isChecked**](#isChecked-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get a CheckboxMenuItem state.
+    获取 CheckboxMenuItem 状态。
 
 - [**setChecked**](#setChecked-instance_function)(checked as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -271,7 +271,7 @@ API 级别 3.0.0
 
 ### **isChecked()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get a CheckboxMenuItem state.
+获取 CheckboxMenuItem 状态。
 
 Returns:
 

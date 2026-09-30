@@ -340,7 +340,7 @@ Elliptic Curve Diffie-Hellman (ECDH)
 
 - [**randomBytes**](#randomBytes-instance_function)(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Generates cryptographically random bytes.
+    生成经过密码学安全处理的随机字节。
 
 
 ## 实例方法详情
@@ -541,7 +541,7 @@ Throws:
 
 ### **randomBytes(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Generates cryptographically random bytes.
+生成经过密码学安全处理的随机字节。
 
 Parameters:
 

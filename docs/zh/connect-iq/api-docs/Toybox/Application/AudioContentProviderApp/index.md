@@ -39,7 +39,7 @@ API 级别 3.0.0
 
 - [**getContentDelegate**](#getContentDelegate-instance_function)(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
-    Get a [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/) for use by the system to get and iterate through media content on the device.
+    获取供系统在设备上获取和遍历媒体内容的 [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)。
 
 - [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
@@ -47,7 +47,7 @@ API 级别 3.0.0
 
 - [**getProviderIconInfo**](#getProviderIconInfo-instance_function)() as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
 
-    Get audio provider icon information.
+    获取音频提供商图标信息。
 
 - [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
@@ -55,7 +55,7 @@ API 级别 3.0.0
 
 - [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null** deprecated
 
-    Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing media content to the device.
+    获取用于向系统传达同步状态、以便将媒体内容同步到设备的 [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) 对象。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -66,7 +66,7 @@ API 级别 3.0.0
 
 ### **getContentDelegate(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type))** as [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
-Get a [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/) for use by the system to get and iterate through media content on the device.
+获取供系统在设备上获取和遍历媒体内容的 [ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)。
 
 注意：
 
@@ -199,7 +199,7 @@ API 级别 3.0.0
 
 ### **getProviderIconInfo()** as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
 
-Get audio provider icon information.
+获取音频提供商图标信息。
 
 :::details 支持的设备
 
@@ -333,7 +333,7 @@ API 级别 3.0.0
 
 此方法可能在 System 9 之后移除。
 
-Get a [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) object that communicates sync status to the system for syncing media content to the device.
+获取用于向系统传达同步状态、以便将媒体内容同步到设备的 [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) 对象。
 
 Returns:
 

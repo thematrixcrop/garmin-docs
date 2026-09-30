@@ -64,7 +64,7 @@ API 级别 2.3.0
 
 - [**getDc**](#getDc-instance_function)() as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)
 
-    Get the Dc to draw on the buffered bitmap.
+    获取用于在缓冲位图上绘制的 Dc。
 
 - [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -92,7 +92,7 @@ API 级别 2.3.0
 
 ### **getDc()** as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)
 
-Get the Dc to draw on the buffered bitmap.
+获取用于在缓冲位图上绘制的 Dc。
 
 Returns:
 

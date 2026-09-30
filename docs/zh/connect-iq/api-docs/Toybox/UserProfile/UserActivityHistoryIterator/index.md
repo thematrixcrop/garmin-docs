@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Get an iterator for Activity history for the user
+获取用户活动历史记录的迭代器
 
 Since:
 

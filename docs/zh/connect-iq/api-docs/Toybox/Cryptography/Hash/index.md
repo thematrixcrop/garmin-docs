@@ -190,7 +190,7 @@ API 级别 3.0.0
 
 - [**digest**](#digest-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Get the current digest of the message that has been hashed.
+    获取当前已进行哈希处理的消息摘要。
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module) })
 
@@ -205,7 +205,7 @@ API 级别 3.0.0
 
 ### **digest()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Get the current digest of the message that has been hashed.
+获取当前已进行哈希处理的消息摘要。
 
 注意：
 

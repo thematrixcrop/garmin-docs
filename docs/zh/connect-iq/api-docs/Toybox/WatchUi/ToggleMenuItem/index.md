@@ -213,7 +213,7 @@ API 级别 3.0.0
 
 - [**getSubLabel**](#getSubLabel-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**\> or **Null**
 
-    Get a ToggleMenuItem label substring.
+    获取 ToggleMenuItem 的子字符串标签。
 
 - [**initialize**](#initialize-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or { :enabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, :disabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null** } or **Null**, identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), options as { :alignment as [MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) } or **Null**)
 
@@ -221,7 +221,7 @@ API 级别 3.0.0
 
 - [**isEnabled**](#isEnabled-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Get a ToggleMenuItem state.
+    获取 ToggleMenuItem 状态。
 
 - [**setEnabled**](#setEnabled-instance_function)(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -236,7 +236,7 @@ API 级别 3.0.0
 
 ### **getSubLabel()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**\> or **Null**
 
-Get a ToggleMenuItem label substring.
+获取 ToggleMenuItem 的子字符串标签。
 
 Returns:
 
@@ -302,7 +302,7 @@ API 级别 3.0.0
 
 ### **isEnabled()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Get a ToggleMenuItem state.
+获取 ToggleMenuItem 状态。
 
 Returns:
 

@@ -26,7 +26,7 @@ API 级别 1.0.0
 
 - [**abs**](#abs-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the absolute value of a Number.
+    获取 Number 的绝对值。
 
 - [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 - [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Format a Number using a formatting String.
+    使用格式化字符串格式化 Number。
 
 - [**toChar**](#toChar-instance_function)() as [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
@@ -61,7 +61,7 @@ API 级别 1.0.0
 
 ### **abs()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the absolute value of a Number.
+获取 Number 的绝对值。
 
 Returns:
 
@@ -105,7 +105,7 @@ Throws:
 
 ### **format(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Format a Number using a formatting String.
+使用格式化字符串格式化 Number。
 
 格式字符串类似于 C stdio 库中 `printf` 可用的格式字符串，但不支持 `length` 选项：
 

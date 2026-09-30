@@ -130,7 +130,7 @@ API 级别 3.1.0
 
 - [**getShiftingStatus**](#getShiftingStatus-instance_function)() as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
-    Get current shifting system status Will not provide status for Shimano shifting systems.
+    获取当前变速系统状态。不会提供 Shimano 变速系统的状态。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)
 
@@ -141,7 +141,7 @@ API 级别 3.1.0
 
 ### **getShiftingStatus()** as [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
-Get current shifting system status Will not provide status for Shimano shifting systems.
+获取当前变速系统状态。不会提供 Shimano 变速系统的状态。
 
 Returns:
 

@@ -358,7 +358,7 @@ Onboard Sensor
 
 - [**getInfo**](#getInfo-instance_function)() as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
-    Get the current Sensor [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/).
+    获取当前传感器 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)。
 
 - [**getMaxSampleRate**](#getMaxSampleRate-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -499,7 +499,7 @@ API 级别 3.2.0
 
 ### **getInfo()** as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
-Get the current Sensor [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/).
+获取当前传感器 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)。
 
 This is useful for retrieving the current sensor info either on demand or periodically within a [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/).
 

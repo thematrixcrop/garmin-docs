@@ -639,23 +639,23 @@ API 级别 5.1.0
 
 - [**getClockTime**](#getClockTime-instance_function)() as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
-    Get the current clock time.
+    获取当前时钟时间。
 
 - [**getDeviceSettings**](#getDeviceSettings-instance_function)() as [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
-    Get the current device settings.
+    获取当前设备设置。
 
 - [**getDisplayMode**](#getDisplayMode-instance_function)() as [System.DisplayMode](/connect-iq/api-docs/Toybox/System/#DisplayMode-module)
 
-    Get the current display mode, only available in devices with AMOLED or LCD screens.
+    获取当前显示模式，仅适用于配备 AMOLED 或 LCD 屏幕的设备。
 
 - [**getSystemStats**](#getSystemStats-instance_function)() as [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
-    Get the current system stats.
+    获取当前系统统计信息。
 
 - [**getTimer**](#getTimer-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Get the current millisecond timer value.
+    获取当前毫秒计时器值。
 
 - [**isAppInstalled**](#isAppInstalled-instance_function)(uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -762,7 +762,7 @@ Throws:
 
 ### **getClockTime()** as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
-Get the current clock time.
+获取当前时钟时间。
 
 Returns:
 
@@ -774,7 +774,7 @@ API 级别 1.0.0
 
 ### **getDeviceSettings()** as [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
-Get the current device settings.
+获取当前设备设置。
 
 Example:
 
@@ -793,7 +793,7 @@ API 级别 1.0.0
 
 ### **getDisplayMode()** as [System.DisplayMode](/connect-iq/api-docs/Toybox/System/#DisplayMode-module)
 
-Get the current display mode, only available in devices with AMOLED or LCD screens.
+获取当前显示模式，仅适用于配备 AMOLED 或 LCD 屏幕的设备。
 
 :::details 支持的设备
 
@@ -857,7 +857,7 @@ API 级别 5.0.0
 
 ### **getSystemStats()** as [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
-Get the current system stats.
+获取当前系统统计信息。
 
 Example:
 
@@ -876,7 +876,7 @@ API 级别 1.0.0
 
 ### **getTimer()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Get the current millisecond timer value.
+获取当前毫秒计时器值。
 
 注意：
 

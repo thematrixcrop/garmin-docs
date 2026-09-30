@@ -175,14 +175,14 @@ API 级别 3.0.0
 
 - [**getBytes**](#getBytes-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or **Null**
 
-    Get the bytes of a Key object.
+    获取 Key 对象的字节。
 
 
 ## 实例方法详情
 
 ### **getBytes()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or **Null**
 
-Get the bytes of a Key object.
+获取 Key 对象的字节。
 
 Returns:
 

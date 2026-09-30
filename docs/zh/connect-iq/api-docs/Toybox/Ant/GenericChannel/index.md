@@ -40,7 +40,7 @@ API 级别 1.0.0
 
 - [**getDeviceConfig**](#getDeviceConfig-instance_function)() as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
-    Get the current ANT channel configuration.
+    获取当前 ANT 通道配置。
 
 - [**initialize**](#initialize-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))
 
@@ -451,7 +451,7 @@ Throws:
 
 ### **getDeviceConfig()** as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
-Get the current ANT channel configuration.
+获取当前 ANT 通道配置。
 
 Example:
 

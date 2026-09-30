@@ -621,15 +621,15 @@ The larger image for when the icon is highlighted
 
 - [**getCacheStatistics**](#getCacheStatistics-instance_function)() as [Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
 
-    Get the current size statistics of the media cache.
+    获取媒体缓存的当前大小统计信息。
 
 - [**getCachedContentObj**](#getCachedContentObj-instance_function)(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/)
 
-    Get a [Content](/connect-iq/api-docs/Toybox/Media/Content/) object by ID from what has been persisted on the system.
+    根据 ID 从系统中已持久化的数据获取 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象。
 
 - [**getContentRefIter**](#getContentRefIter-instance_function)(options as { :contentType as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module), :shuffle as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/)
 
-    Get a [ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) object.
+    获取 [ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) 对象。
 
 - [**notifySyncComplete**](#notifySyncComplete-instance_function)(errorMessage as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**) as **Void** deprecated
 
@@ -683,7 +683,7 @@ API 级别 3.0.0
 
 ### **getCacheStatistics()** as [Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
 
-Get the current size statistics of the media cache.
+获取媒体缓存的当前大小统计信息。
 
 Returns:
 
@@ -698,7 +698,7 @@ API 级别 3.0.0
 
 ### **getCachedContentObj(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/))** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/)
 
-Get a [Content](/connect-iq/api-docs/Toybox/Media/Content/) object by ID from what has been persisted on the system.
+根据 ID 从系统中已持久化的数据获取 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象。
 
 Parameters:
 
@@ -731,7 +731,7 @@ Throws:
 
 ### **getContentRefIter(options as { :contentType as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module), :shuffle as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/)
 
-Get a [ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) object.
+获取 [ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) 对象。
 
 The ContentRefIterator is used to iterate over all cached media on the system for the calling app.
 

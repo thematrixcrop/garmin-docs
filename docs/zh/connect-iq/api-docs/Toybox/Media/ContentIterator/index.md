@@ -30,7 +30,7 @@ API 级别 3.0.0
 
 - [**get**](#get-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-    Get the current media content object.
+    获取当前媒体内容对象。
 
 - [**getPlaybackProfile**](#getPlaybackProfile-instance_function)() as [Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) or **Null**
 
@@ -80,7 +80,7 @@ API 级别 3.0.0
 
 ### **get()** as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
-Get the current media content object.
+获取当前媒体内容对象。
 
 Returns:
 

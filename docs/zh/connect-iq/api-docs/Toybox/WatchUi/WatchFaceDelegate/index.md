@@ -46,7 +46,7 @@ API 级别 2.3.0
 
 - [**getComplicationDrawable**](#getComplicationDrawable-instance_function)(complication as [WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) or **Null**
 
-    Get a Drawable for highlighting purposes.
+    获取用于高亮显示的 Drawable。
 
 - [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function)(powerInfo as [WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/)) as **Void**
 
@@ -73,7 +73,7 @@ API 级别 2.3.0
 
 ### **getComplicationDrawable(complication as [WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) or **Null**
 
-Get a Drawable for highlighting purposes.
+获取用于高亮显示的 Drawable。
 
 Called by system to get a Drawable for the given complication field for highlighting purposes. Only available in WatchFace config mode. Animation will be easing around the center of the Drawable. The Dc object passed to the Drawable.draw function shares the same origin as screen, e.g. at \[0, 0\], so it's aligned with the drawable coordinates for convenience.
 

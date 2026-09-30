@@ -259,7 +259,7 @@ December
 
 - [**info**](#info-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
-    Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in local time.
+    获取本地时间中 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 的 [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)。
 
 - [**localMoment**](#localMoment-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) or **Null**
 
@@ -271,7 +271,7 @@ December
 
 - [**utcInfo**](#utcInfo-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
-    Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in UTC time.
+    获取 UTC 时间中 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 的 [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)。
 
 
 ## 实例方法详情
@@ -338,7 +338,7 @@ API 级别 1.0.0
 
 ### **info(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module))** as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
-Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in local time.
+获取本地时间中 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 的 [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)。
 
 Parameters:
 
@@ -611,7 +611,7 @@ API 级别 1.0.0
 
 ### **utcInfo(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), format as [Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module))** as [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
-Get [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) for a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) in UTC time.
+获取 UTC 时间中 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 的 [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)。
 
 ```
   Info

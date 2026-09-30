@@ -660,11 +660,11 @@ Unknown
 
 - [**getSunrise**](#getSunrise-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), date as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Get sunrise time for the provided location and date.
+    获取给定位置和日期的日出时间。
 
 - [**getSunset**](#getSunset-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), date as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Get sunrise time for the provided location and date.
+    获取给定位置和日期的日出时间。
 
 
 ## 实例方法详情
@@ -716,7 +716,7 @@ API 级别 3.2.0
 
 ### **getSunrise(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), date as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Get sunrise time for the provided location and date
+获取给定位置和日期的日出时间
 
 Parameters:
 
@@ -873,7 +873,7 @@ API 级别 3.3.0
 
 ### **getSunset(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), date as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Get sunrise time for the provided location and date
+获取给定位置和日期的日出时间
 
 Parameters:
 

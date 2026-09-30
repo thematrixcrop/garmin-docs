@@ -30,7 +30,7 @@ API 级别 3.0.0
 
 - [**getId**](#getId-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-    Get the content ref ID.
+    获取内容引用 ID。
 
 - [**initialize**](#initialize-instance_function)(id as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), type as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module))
 
@@ -56,7 +56,7 @@ API 级别 3.0.0
 
 ### **getId()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-Get the content ref ID.
+获取内容引用 ID。
 
 Returns:
 

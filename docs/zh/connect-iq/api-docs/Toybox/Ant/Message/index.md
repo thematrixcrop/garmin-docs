@@ -90,7 +90,7 @@ API 级别 1.0.0
 
 - [**getPayload**](#getPayload-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    Get the ANT data packet.
+    获取 ANT 数据包。
 
 - [**setPayload**](#setPayload-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>) as **Void**
 
@@ -166,7 +166,7 @@ API 级别 1.2.0
 
 ### **getPayload()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-Get the ANT data packet.
+获取 ANT 数据包。
 
 Returns:
 

@@ -149,7 +149,7 @@ API 级别 3.3.0
 
 - [**getCoordinates**](#getCoordinates-instance_function)() as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-    Get the coordinates of a drag event.
+    获取拖动事件的坐标。
 
 - [**getType**](#getType-instance_function)() as [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module)
 
@@ -160,7 +160,7 @@ API 级别 3.3.0
 
 ### **getCoordinates()** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Get the coordinates of a drag event.
+获取拖动事件的坐标。
 
 Returns:
 

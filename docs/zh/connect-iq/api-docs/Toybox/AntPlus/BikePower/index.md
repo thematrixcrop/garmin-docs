@@ -168,7 +168,7 @@ API 级别 2.2.0
 
 - [**getCalculatedCadence**](#getCalculatedCadence-instance_function)() as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
 
-    Get the current calculated crank cadence.
+    获取当前计算的曲柄踏频。
 
 - [**getCalculatedPower**](#getCalculatedPower-instance_function)() as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
@@ -199,7 +199,7 @@ API 级别 2.2.0
 
 ### **getCalculatedCadence()** as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
 
-Get the current calculated crank cadence.
+获取当前计算的曲柄踏频。
 
 Returns:
 

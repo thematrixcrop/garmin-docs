@@ -51,7 +51,7 @@ API 级别 1.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Get info about a bitmap resource as a String.
+    以 String 形式获取位图资源信息。
 
 
 ## 实例方法详情
@@ -88,7 +88,7 @@ API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Get info about a bitmap resource as a String.
+以 String 形式获取位图资源信息。
 
 The info String is formatted as "Bitmap X x Y" where "X" is the width of the bitmap and "Y" is the height.
 
