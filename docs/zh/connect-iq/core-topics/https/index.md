@@ -85,7 +85,7 @@ class ImageTransaction {
         }
     }
 
-    // 封装请求的函数
+    // 将请求封装在函数中
     function makeRequest() as Void {
         // 设置图像 URL
         var url = "http://www.garmin.com/image-path";
