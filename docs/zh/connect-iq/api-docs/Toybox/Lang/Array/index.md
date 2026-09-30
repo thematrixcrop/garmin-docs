@@ -46,7 +46,7 @@ API 级别 1.0.0
 
 - [**reverse**](#reverse-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-    Return a new Array that contains the elements of a source Array in reverse order.
+    返回一个新的 Array，其中包含源 Array 中按逆序排列的元素。
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -187,7 +187,7 @@ API 级别 1.3.0
 
 ### **reverse()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-Return a new Array that contains the elements of a source Array in reverse order.
+返回一个新的 Array，其中包含源 Array 中按逆序排列的元素。
 
 Returns:
 

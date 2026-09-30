@@ -263,11 +263,11 @@ Left align a MenuItem label
 
 - [**setLabel**](#setLabel-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
-    Set a MenuItem label.
+    设置 MenuItem 标签。
 
 - [**setSubLabel**](#setSubLabel-instance_function)(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
-    Set a MenuItem substring label.
+    设置 MenuItem 子字符串标签。
 
 
 ## 实例方法详情
@@ -389,7 +389,7 @@ API 级别 3.0.0
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
 
-Set the icon
+设置图标
 
 Set the icon displayed in the subscreen area when this MenuItem has the focus. If the provided icon is `null`, the icon from the Menu2 will be shown instead.
 
@@ -420,7 +420,7 @@ API 级别 3.4.0
 
 ### **setLabel(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
 
-Set a MenuItem label.
+设置 MenuItem 标签。
 
 Parameters:
 
@@ -442,7 +442,7 @@ Throws:
 
 ### **setSubLabel(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
 
-Set a MenuItem substring label.
+设置 MenuItem 子字符串标签。
 
 Parameters:
 

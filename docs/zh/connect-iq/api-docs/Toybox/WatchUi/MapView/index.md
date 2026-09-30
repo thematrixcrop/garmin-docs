@@ -155,7 +155,7 @@ API 级别 3.0.0
 
 - [**setMapMode**](#setMapMode-instance_function)(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) as **Void**
 
-    Set the mode for the map in this MapView.
+    设置此 MapView 中地图的模式。
 
 - [**setMapVisibleArea**](#setMapVisibleArea-instance_function)(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) as **Void**
 
@@ -167,7 +167,7 @@ API 级别 3.0.0
 
 - [**setScreenVisibleArea**](#setScreenVisibleArea-instance_function)(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Set the area on the screen to focus the map.
+    设置屏幕上用于聚焦地图的区域。
 
 
 ## 实例方法详情
@@ -229,7 +229,7 @@ Throws:
 
 ### **setMapMode(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module))** as **Void**
 
-Set the mode for the map in this MapView.
+设置此 MapView 中地图的模式。
 
 Parameters:
 
@@ -297,7 +297,7 @@ Throws:
 
 ### **setScreenVisibleArea(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Set the area on the screen to focus the map.
+设置屏幕上用于聚焦地图的区域。
 
 Parameters:
 

@@ -469,7 +469,7 @@ API 级别 5.2.2
 
 - [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))
 
-    Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a DataField.
+    在 DataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
 - [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
@@ -537,11 +537,11 @@ API 级别 5.2.2
 
 - [**routeTo**](#routeTo-instance_function)(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the activity's destination.
+    设置活动的目的地。
 
 - [**setWorkout**](#setWorkout-instance_function)(workout as [DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the activity's workout.
+    设置活动的锻炼。
 
 - [**showAlert**](#showAlert-instance_function)(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) as **Void**
 
@@ -615,7 +615,7 @@ API 级别 1.0.0
 
 ### **compute(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))**
 
-Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a DataField.
+在 DataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
 This method is called once per second and automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) to the DataField object for display or additional computation. It is necessary to override `compute()` when implementing a DataField.
 
@@ -2457,7 +2457,7 @@ API 级别 3.0.0
 
 ### **routeTo(target as [DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the activity's destination.
+设置活动的目的地。
 
 Change the route target of the current activity. Only available to `datafield` app types and requires the `ActivityControl` permission.
 
@@ -2533,7 +2533,7 @@ API 级别 5.2.0
 
 ### **setWorkout(workout as [DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the activity's workout.
+设置活动的锻炼。
 
 Change the workout for the current activity. Only available to `datafield` app types and requires the `ActivityControl` permission.
 

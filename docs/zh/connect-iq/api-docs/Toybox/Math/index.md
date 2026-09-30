@@ -133,7 +133,7 @@ API 级别 1.0.0
 
 - [**round**](#round-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    Round a value.
+    对值进行四舍五入。
 
 - [**sin**](#sin-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -145,7 +145,7 @@ API 级别 1.0.0
 
 - [**srand**](#srand-instance_function)(seed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Seed the random number generator.
+    为随机数生成器设定种子。
 
 - [**stdev**](#stdev-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
@@ -517,7 +517,7 @@ API 级别 1.0.0
 
 ### **round(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-Round a value.
+对值进行四舍五入。
 
 Parameters:
 
@@ -593,7 +593,7 @@ API 级别 1.0.0
 
 ### **srand(seed as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Seed the random number generator.
+为随机数生成器设定种子。
 
 注意：
 

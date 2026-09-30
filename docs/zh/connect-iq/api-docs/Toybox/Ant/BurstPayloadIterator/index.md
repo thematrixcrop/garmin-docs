@@ -49,7 +49,7 @@ API 级别 2.2.0
 
 - [**next**](#next-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    Return the next message in the [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) object.
+    返回 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 对象中的下一条消息。
 
 
 ## 实例方法详情
@@ -68,7 +68,7 @@ API 级别 2.2.0
 
 ### **next()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-Return the next message in the [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) object.
+返回 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 对象中的下一条消息。
 
 Returns:
 

@@ -90,7 +90,7 @@ API 级别 1.0.0
 
 - [**clearClip**](#clearClip-instance_function)() as **Void**
 
-    Reset the drawable area.
+    重置可绘制区域。
 
 - [**drawAngledText**](#drawAngledText-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -194,7 +194,7 @@ API 级别 1.0.0
 
 - [**setBlendMode**](#setBlendMode-instance_function)(mode as [Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module)) as **Void**
 
-    Set blend mode for drawing.
+    设置绘制时的混合模式。
 
 - [**setClip**](#setClip-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -202,11 +202,11 @@ API 级别 1.0.0
 
 - [**setColor**](#setColor-instance_function)(foreground as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
-    Set the current foreground and background colors.
+    设置当前前景色和背景色。
 
 - [**setFill**](#setFill-instance_function)(fill as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/)) as **Void**
 
-    Set fill tool for drawing primitives.
+    设置用于绘制基本图形的填充工具。
 
 - [**setPenWidth**](#setPenWidth-instance_function)(width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -214,7 +214,7 @@ API 级别 1.0.0
 
 - [**setStroke**](#setStroke-instance_function)(stroke as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/)) as **Void**
 
-    Set draw tool for drawing primitives.
+    设置用于绘制基本图形的绘制工具。
 
 
 ## 实例方法详情
@@ -233,7 +233,7 @@ API 级别 1.0.0
 
 ### **clearClip()** as **Void**
 
-Reset the drawable area.
+重置可绘制区域。
 
 Since:
 
@@ -1449,7 +1449,7 @@ Throws:
 
 ### **setBlendMode(mode as [Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module))** as **Void**
 
-Set blend mode for drawing.
+设置绘制时的混合模式。
 
 注意：
 
@@ -1557,7 +1557,7 @@ API 级别 2.3.0
 
 ### **setColor(foreground as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), background as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
 
-Set the current foreground and background colors.
+设置当前前景色和背景色。
 
 Parameters:
 
@@ -1576,7 +1576,7 @@ API 级别 1.0.0
 
 ### **setFill(fill as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/))** as **Void**
 
-Set fill tool for drawing primitives.
+设置用于绘制基本图形的填充工具。
 
 注意：
 
@@ -1670,7 +1670,7 @@ API 级别 1.0.0
 
 ### **setStroke(stroke as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/))** as **Void**
 
-Set draw tool for drawing primitives.
+设置用于绘制基本图形的绘制工具。
 
 注意：
 

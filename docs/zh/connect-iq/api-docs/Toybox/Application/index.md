@@ -63,7 +63,7 @@ API 级别 1.3.0
 
 - [**getApp**](#getApp-instance_function)() as [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
-    Retrieve the AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/) that is currently running.
+    获取当前正在运行的 AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/)。
 
 - [**loadResource**](#loadResource-instance_function)(resource as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as [Application.ResourceType](/connect-iq/api-docs/Toybox/Application/#ResourceType-named_type) or [Application.ResourceReferenceType](/connect-iq/api-docs/Toybox/Application/#ResourceReferenceType-named_type)
 
@@ -106,7 +106,7 @@ API 级别 1.0.0
 
 ### **getApp()** as [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)
 
-Retrieve the AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/) that is currently running.
+获取当前正在运行的 AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/)。
 
 Returns:
 

@@ -100,7 +100,7 @@ The maximum number of allowed entries in a Menu.
 
 - [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
-    Set a Menu title.
+    设置 Menu 标题。
 
 
 ## 实例方法详情
@@ -126,7 +126,7 @@ API 级别 1.0.0
 
 ### **setTitle(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
 
-Set a Menu title.
+设置 Menu 标题。
 
 Parameters:
 

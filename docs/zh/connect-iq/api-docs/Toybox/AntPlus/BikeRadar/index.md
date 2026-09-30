@@ -173,7 +173,7 @@ API 级别 3.0.0
 
 - [**getRadarInfo**](#getRadarInfo-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>
 
-    Retrieves information on the current list of tracked targets.
+    获取当前跟踪目标列表的信息。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) or **Null**)
 
@@ -181,7 +181,7 @@ API 级别 3.0.0
 
 ### **getRadarInfo()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>
 
-Retrieves information on the current list of tracked targets.
+获取当前跟踪目标列表的信息。
 
 Returns:
 

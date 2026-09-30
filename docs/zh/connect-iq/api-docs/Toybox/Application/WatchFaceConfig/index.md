@@ -50,22 +50,22 @@ API 级别 5.1.0
 
 - [**getIds**](#getIds-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)\> or **Null**
 
-    Returns ids of all saved watchface config settings.
+    返回所有已保存的表盘配置设置的 ID。
 
 - [**getSettings**](#getSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**) as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) or **Null**
 
-    Returns the watchface config settings for the given unique identifier.
+    返回给定唯一标识符对应的表盘配置设置。
 
 - [**setSettings**](#setSettings-instance_function)(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**, settings as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/)) as **Void**
 
-    Set or update watchface config settings with the given unique identifier, `configId`.
+    使用给定的唯一标识符 `configId` 设置或更新表盘配置设置。
 
 
 ## 实例方法详情
 
 ### **getIds()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)\> or **Null**
 
-Returns ids of all saved watchface config settings.
+返回所有已保存的表盘配置设置的 ID。
 
 :::details 支持的设备
 
@@ -111,7 +111,7 @@ API 级别 5.1.0
 
 ### **getSettings(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**)** as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) or **Null**
 
-Returns the watchface config settings for the given unique identifier.
+返回给定唯一标识符对应的表盘配置设置。
 
 Parameters:
 
@@ -164,7 +164,7 @@ API 级别 5.1.0
 
 ### **setSettings(configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**, settings as [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/))** as **Void**
 
-Set or update watchface config settings with the given unique identifier, `configId`.
+使用给定的唯一标识符 `configId` 设置或更新表盘配置设置。
 
 Parameters:
 

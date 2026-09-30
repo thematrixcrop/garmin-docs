@@ -87,7 +87,7 @@ API 级别 3.1.0
 
 ### **requestWrite(value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-Requests a write operation
+请求执行写入操作
 
 Writes the locally stored value to the remote descriptor.
 

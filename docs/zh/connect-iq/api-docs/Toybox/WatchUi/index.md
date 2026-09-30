@@ -1038,7 +1038,7 @@ API 级别 3.4.2
 
 - [**getTouchEventsConfiguration**](#getTouchEventsConfiguration-instance_function)() as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)
 
-    Returns the current touch event settings.
+    返回当前触摸事件设置。
 
 - [**loadResource**](#loadResource-instance_function)(resource as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as [WatchUi.Resource](/connect-iq/api-docs/Toybox/WatchUi/#Resource-named_type)
 
@@ -1323,7 +1323,7 @@ API 级别 3.2.7
 
 ### **getTouchEventsConfiguration()** as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)
 
-Returns the current touch event settings.
+返回当前触摸事件设置。
 
 :::details 支持的设备
 

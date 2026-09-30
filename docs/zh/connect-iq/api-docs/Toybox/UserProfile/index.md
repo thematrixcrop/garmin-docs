@@ -90,23 +90,23 @@ API 级别 1.2.6
 
 - [**getCurrentSport**](#getCurrentSport-instance_function)() as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)
 
-    Return the sport for which the current activity retrieves heart rate zone thresholds.
+    返回当前活动用于获取心率区间阈值的运动项目。
 
 - [**getCurrentSport2**](#getCurrentSport2-instance_function)() as \[ [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) \]
 
-    Return the sport for the current activity.
+    返回当前活动所属的运动项目。
 
 - [**getFunctionalThresholdPower**](#getFunctionalThresholdPower-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Return the user's functional threshold power (FTP).
+    返回用户的功能性阈值功率（FTP）。
 
 - [**getHeartRateZones**](#getHeartRateZones-instance_function)(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm) The returned Array contains zone values as follows: \* min zone 1 - The minimum heart rate threshold for zone 1 \* max zone 1 - The maximum heart rate threshold for zone 1 \* max zone 2 - The maximum heart rate threshold for zone 2 \* max zone 3 - The maximum heart rate threshold for zone 3 \* max zone 4 - The maximum heart rate threshold for zone 4 \* max zone 5 - The maximum heart rate threshold for zone 5.
+    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* min zone 1 - 区间 1 的最小心率阈值 \* max zone 1 - 区间 1 的最大心率阈值 \* max zone 2 - 区间 2 的最大心率阈值 \* max zone 3 - 区间 3 的最大心率阈值 \* max zone 4 - 区间 4 的最大心率阈值 \* max zone 5 - 区间 5 的最大心率阈值。
 
 - [**getHeartRateZones2**](#getHeartRateZones2-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm) The returned Array contains zone values as follows: \* min zone 1 - The minimum heart rate threshold for zone 1 \* max zone 1 - The maximum heart rate threshold for zone 1 \* max zone 2 - The maximum heart rate threshold for zone 2 \* max zone 3 - The maximum heart rate threshold for zone 3 \* max zone 4 - The maximum heart rate threshold for zone 4 \* max zone 5 - The maximum heart rate threshold for zone 5.
+    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* min zone 1 - 区间 1 的最小心率阈值 \* max zone 1 - 区间 1 的最大心率阈值 \* max zone 2 - 区间 2 的最大心率阈值 \* max zone 3 - 区间 3 的最大心率阈值 \* max zone 4 - 区间 4 的最大心率阈值 \* max zone 5 - 区间 5 的最大心率阈值。
 
 - [**getPowerZones**](#getPowerZones-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
@@ -114,7 +114,7 @@ API 级别 1.2.6
 
 - [**getProfile**](#getProfile-instance_function)() as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
-    Retrieve the current [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) object.
+    获取当前的 [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) 对象。
 
 - [**getUserActivityHistory**](#getUserActivityHistory-instance_function)() as [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
@@ -125,7 +125,7 @@ API 级别 1.2.6
 
 ### **getCurrentSport()** as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)
 
-Return the sport for which the current activity retrieves heart rate zone thresholds.
+返回当前活动用于获取心率区间阈值的运动项目。
 
 If the active sport does not have sport specific zones, it will return [HR\_ZONE\_SPORT\_GENERIC](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const).
 
@@ -149,7 +149,7 @@ API 级别 1.2.6
 
 ### **getCurrentSport2()** as \[ [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) \]
 
-Return the sport for the current activity.
+返回当前活动所属的运动项目。
 
 Returns:
 
@@ -164,7 +164,7 @@ API 级别 5.2.2
 
 ### **getFunctionalThresholdPower(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Return the user's functional threshold power (FTP).
+返回用户的功能性阈值功率（FTP）。
 
 Parameters:
 
@@ -233,7 +233,7 @@ API 级别 5.2.2
 
 ### **getHeartRateZones(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm)
+获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）
 
 The returned Array contains zone values as follows:
 
@@ -279,7 +279,7 @@ API 级别 1.2.6
 
 ### **getHeartRateZones2(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current heart rate zone threshold values in beats per minute (bpm)
+获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）
 
 The returned Array contains zone values as follows:
 
@@ -394,7 +394,7 @@ API 级别 5.2.2
 
 ### **getProfile()** as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
-Retrieve the current [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) object.
+获取当前的 [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) 对象。
 
 Example:
 

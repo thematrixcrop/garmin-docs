@@ -41,11 +41,11 @@ API 级别 1.0.0
 
 - [**isBackgroundScanEnabled**](#isBackgroundScanEnabled-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    See if background scanning is enabled for the channel assignment.
+    检查是否已为通道分配启用后台扫描。
 
 - [**setBackgroundScan**](#setBackgroundScan-instance_function)(isBackgroundScanEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set background scan to be enabled or disabled.
+    设置启用或禁用后台扫描。
 
 
 ## 实例属性详情
@@ -135,7 +135,7 @@ API 级别 1.0.0
 
 ### **isBackgroundScanEnabled()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-See if background scanning is enabled for the channel assignment.
+检查是否已为通道分配启用后台扫描。
 
 Example:
 
@@ -158,7 +158,7 @@ API 级别 1.2.0
 
 ### **setBackgroundScan(isBackgroundScanEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set background scan to be enabled or disabled.
+设置启用或禁用后台扫描。
 
 Enabling background scan can only be done on Receive Only channels.
 

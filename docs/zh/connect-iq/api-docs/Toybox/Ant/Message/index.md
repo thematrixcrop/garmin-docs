@@ -94,7 +94,7 @@ API 级别 1.0.0
 
 - [**setPayload**](#setPayload-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>) as **Void**
 
-    Set the ANT data packet.
+    设置 ANT 数据包。
 
 
 ## 实例属性详情
@@ -181,7 +181,7 @@ API 级别 1.0.0
 
 ### **setPayload(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>)** as **Void**
 
-Set the ANT data packet.
+设置 ANT 数据包。
 
 Parameters:
 

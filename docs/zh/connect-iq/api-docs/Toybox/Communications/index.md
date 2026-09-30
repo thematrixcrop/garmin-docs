@@ -923,7 +923,7 @@ API 级别 6.0.0
 
 - [**makeOAuthRequest**](#makeOAuthRequest-instance_function)(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Communications.TokenResult](/connect-iq/api-docs/Toybox/Communications/#TokenResult-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>) as **Void**
 
-    Request an OAuth sign-in through Garmin Connect Mobile.
+    通过 Garmin Connect Mobile 请求 OAuth 登录。
 
 - [**makeWebRequest**](#makeWebRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\> or **Null**, options as { :method as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), :headers as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), :responseType as [Communications.HttpResponseContentType](/connect-iq/api-docs/Toybox/Communications/#HttpResponseContentType-module), :context as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, :maxBandwidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :fileDownloadProgressCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(totalBytesTransferred as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), fileSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void** } or **Null**, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**) as **Void** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**, context as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**) as **Void**
 
@@ -939,7 +939,7 @@ API 级别 6.0.0
 
 - [**openWebPage**](#openWebPage-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Request that GCM issue a phone notification that will open a web page.
+    请求 GCM 发出一条手机通知，打开网页。
 
 - [**registerForOAuthMessages**](#registerForOAuthMessages-instance_function)(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Communications.OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/)) as **Void**) as **Void**
 
@@ -967,7 +967,7 @@ API 级别 6.0.0
 
 - [**transmit**](#transmit-instance_function)(content as [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, listener as [Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)) as **Void**
 
-    Send data across the the BLE link.
+    通过 BLE 链路发送数据。
 
 
 ## 类型定义详情
@@ -1522,7 +1522,7 @@ Parameters:
 
     对回调方法的引用，该方法必须接受两个参数：
 
-- responseCode: The server response code or a BLE\_\* error type
+- responseCode：服务器响应代码或 BLE\_\* 错误类型
 
 - data: A [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) from a successful request, or `null` on error
 
@@ -1825,7 +1825,7 @@ API 级别 1.0.0
 
 ### **makeOAuthRequest(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Communications.TokenResult](/connect-iq/api-docs/Toybox/Communications/#TokenResult-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>)** as **Void**
 
-Request an OAuth sign-in through Garmin Connect Mobile.
+通过 Garmin Connect Mobile 请求 OAuth 登录。
 
 手机上将触发通知；点击该通知后会显示一个展示 `requestUrl` 的 Web 视图。如果用户授予应用权限，则 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) 注册的回调将使用 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) 进行调用。
 
@@ -1999,7 +1999,7 @@ Parameters:
 
     对回调方法的引用，该方法必须接受两个参数：
 
-- responseCode: The server response code or a BLE\_\* error type
+- responseCode：服务器响应代码或 BLE\_\* 错误类型
 
 - data: The content if the request was successful, or `null`
 
@@ -2330,7 +2330,7 @@ API 级别 3.1.0
 
 ### **openWebPage(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Request that GCM issue a phone notification that will open a web page.
+请求 GCM 发出一条手机通知，打开网页。
 
 This method will push a phone notification that must be accepted by the user. If the used accepts it, a web page defined by this method will be opened in the default browser on the phone.
 
@@ -3081,7 +3081,7 @@ API 级别 4.0.4
 
 ### **transmit(content as [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, listener as [Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/))** as **Void**
 
-Send data across the the BLE link.
+通过 BLE 链路发送数据。
 
 Support for transmittable types has been expanded over time.
 

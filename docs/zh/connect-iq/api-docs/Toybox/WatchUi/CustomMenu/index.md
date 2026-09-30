@@ -275,7 +275,7 @@ API 级别 3.0.0
 
 - [**setBackgroundColor**](#setBackgroundColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
-    Set the background color.
+    设置背景颜色。
 
 - [**setDividerType**](#setDividerType-instance_function)(divider as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null**) as **Void**
 
@@ -283,11 +283,11 @@ API 级别 3.0.0
 
 - [**setFooter**](#setFooter-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set the footer drawable.
+    设置页脚 Drawable。
 
 - [**setForeground**](#setForeground-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set the foreground drawable.
+    设置前景 Drawable。
 
 - [**setTitle**](#setTitle-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
@@ -474,7 +474,7 @@ Throws:
 
 ### **setBackgroundColor(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
 
-Set the background color.
+设置背景颜色。
 
 Parameters:
 
@@ -542,7 +542,7 @@ Throws:
 
 ### **setFooter(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set the footer drawable.
+设置页脚 Drawable。
 
 Parameters:
 
@@ -564,7 +564,7 @@ Throws:
 
 ### **setForeground(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set the foreground drawable.
+设置前景 Drawable。
 
 Parameters:
 

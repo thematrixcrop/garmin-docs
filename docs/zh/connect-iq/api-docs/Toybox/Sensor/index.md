@@ -350,7 +350,7 @@ Onboard Sensor
 
 - [**enableSensorEvents**](#enableSensorEvents-instance_function)(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**) as **Void**
 
-    Request sensor events from enabled sensors.
+    请求来自已启用传感器的传感器事件。
 
 - [**enableSensorType**](#enableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -370,7 +370,7 @@ Onboard Sensor
 
 - [**getRegisteredSensors**](#getRegisteredSensors-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**) as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
-    Retrieve the sensors that are currently registered.
+    获取当前已注册的传感器。
 
 - [**notifyError**](#notifyError-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**) as **Void**
 
@@ -438,7 +438,7 @@ API 级别 3.2.0
 
 ### **enableSensorEvents(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**)** as **Void**
 
-Request sensor events from enabled sensors.
+请求来自已启用传感器的传感器事件。
 
 Sensor events are retrieved from any enabled sensors at a rate of 1 Hz. The data retrieved from enabled sensors is passed to the listener [Method](/connect-iq/api-docs/Toybox/Lang/Method/) provided as a parameter to this method.
 
@@ -875,7 +875,7 @@ API 级别 3.4.5
 
 ### **getRegisteredSensors(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) or **Null**)** as [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/)
 
-Retrieve the sensors that are currently registered.
+获取当前已注册的传感器。
 
 This function returns an iterator for the sensors that are considered to be \`registered\` if pairing information has been provided for it in Sensor settings.
 

@@ -272,7 +272,7 @@ API 级别 1.0.0
 
 - [**compute**](#compute-instance_function)(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a SimpleDataField.
+    在 SimpleDataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -293,7 +293,7 @@ API 级别 1.0.0
 
 ### **compute(info as [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Retrieve [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) in a SimpleDataField.
+在 SimpleDataField 中获取 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。
 
 This method is called once per second and automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) to the SimpleDataField object for display or additional computation. It is necessary to override `compute()` when implementing a SimpleDataField. The value to be displayed in the field must be returned by this method.
 

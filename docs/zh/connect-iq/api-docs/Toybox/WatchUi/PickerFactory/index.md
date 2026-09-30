@@ -234,7 +234,7 @@ API 级别 1.2.0
 
 - [**getValue**](#getValue-instance_function)(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Return value for an item.
+    返回某个项目的值。
 
 
 ## 实例方法详情
@@ -279,7 +279,7 @@ API 级别 1.2.0
 
 ### **getValue(item as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Return value for an item.
+返回某个项目的值。
 
 Parameters:
 

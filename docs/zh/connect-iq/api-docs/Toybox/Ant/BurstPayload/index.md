@@ -42,7 +42,7 @@ API 级别 2.2.0
 
 - [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Return the number of bursts contained in the payload.
+    返回有效负载中包含的突发数量。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -72,7 +72,7 @@ API 级别 2.2.0
 
 ### **getSize()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Return the number of bursts contained in the payload.
+返回有效负载中包含的突发数量。
 
 Returns:
 

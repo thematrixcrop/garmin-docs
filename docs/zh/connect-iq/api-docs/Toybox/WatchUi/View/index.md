@@ -155,11 +155,11 @@ API 级别 1.0.0
 
 - [**setClockHandPosition**](#setClockHandPosition-instance_function)(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** }) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the clock hands position.
+    设置时钟指针的位置。
 
 - [**setControlBar**](#setControlBar-instance_function)(options as [View.ControlBarOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ControlBarOptions-named_type) or **Null**) as **Void**
 
-    Set control bar options for this view.
+    设置此视图的控制栏选项。
 
 - [**setKeyToSelectableInteraction**](#setKeyToSelectableInteraction-instance_function)(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -167,7 +167,7 @@ API 级别 1.0.0
 
 - [**setLayout**](#setLayout-instance_function)(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**) as **Void**
 
-    Set the layout for the View.
+    设置 View 的布局。
 
 
 ## 类型定义详情
@@ -468,7 +468,7 @@ Throws:
 
 ### **setClockHandPosition(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** })** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the clock hands position.
+设置时钟指针的位置。
 
 Parameters:
 
@@ -520,7 +520,7 @@ Throws:
 
 ### **setControlBar(options as [View.ControlBarOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ControlBarOptions-named_type) or **Null**)** as **Void**
 
-Set control bar options for this view.
+设置此视图的控制栏选项。
 
 Use of this method has many restrictions.
 
@@ -621,7 +621,7 @@ Throws:
 
 ### **setLayout(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**)** as **Void**
 
-Set the layout for the View.
+设置 View 的布局。
 
 Set the array of Drawable objects to be managed by this View. The specified Drawables will be:
 

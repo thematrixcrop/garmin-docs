@@ -30,23 +30,23 @@ API 级别 2.2.0
 
 - [**getBatteryStatus**](#getBatteryStatus-instance_function)(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/) or **Null**
 
-    Retrieve battery status for provided component identifier.
+    获取指定组件标识符的电池状态。
 
 - [**getComponentIdentifiers**](#getComponentIdentifiers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    Retrieve a list of known component identifiers for this Device.
+    获取此 Device 的已知组件标识符列表。
 
 - [**getDeviceState**](#getDeviceState-instance_function)() as [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)
 
-    Retrieve the state of the device.
+    获取设备状态。
 
 - [**getManufacturerInfo**](#getManufacturerInfo-instance_function)(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/) or **Null**
 
-    Retrieve manufacturer information for provided component identifier.
+    获取指定组件标识符的制造商信息。
 
 - [**getProductInfo**](#getProductInfo-instance_function)(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/) or **Null**
 
-    Retrieve product information for provided component identifier.
+    获取指定组件标识符的产品信息。
 
 - [**sendManufacturerMessage**](#sendManufacturerMessage-instance_function)(message as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**
 
@@ -61,7 +61,7 @@ API 级别 2.2.0
 
 ### **getBatteryStatus(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/) or **Null**
 
-Retrieve battery status for provided component identifier.
+获取指定组件标识符的电池状态。
 
 Parameters:
 
@@ -105,7 +105,7 @@ API 级别 2.2.0
 
 ### **getComponentIdentifiers()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-Retrieve a list of known component identifiers for this Device.
+获取此 Device 的已知组件标识符列表。
 
 This list may update over time as ANT+ devices with >1 component periodically send information about each of their components. The device reports its total number of components in [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var). The returned Array will only contain entries for components that the ANT+ device has provided a component identifier for.
 
@@ -134,7 +134,7 @@ API 级别 2.2.0
 
 ### **getDeviceState()** as [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)
 
-Retrieve the state of the device.
+获取设备状态。
 
 Example:
 
@@ -158,7 +158,7 @@ API 级别 2.2.0
 
 ### **getManufacturerInfo(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/) or **Null**
 
-Retrieve manufacturer information for provided component identifier.
+获取指定组件标识符的制造商信息。
 
 Parameters:
 
@@ -197,7 +197,7 @@ API 级别 2.2.0
 
 ### **getProductInfo(identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/) or **Null**
 
-Retrieve product information for provided component identifier.
+获取指定组件标识符的产品信息。
 
 Parameters:
 

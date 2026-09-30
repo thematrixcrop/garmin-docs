@@ -26,11 +26,11 @@ API 级别 3.0.0
 
 - [**getContentIterator**](#getContentIterator-instance_function)() as [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) or **Null**
 
-    Return a [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) object for the system to use to iterate over media tracks.
+    返回一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 对象，供系统用于遍历媒体音轨。
 
 - [**onAdAction**](#onAdAction-instance_function)(adContext as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Respond to a user ad click.
+    响应用户广告点击。
 
 - [**onCustomButton**](#onCustomButton-instance_function)(button as [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/)) as **Void**
 
@@ -42,7 +42,7 @@ API 级别 3.0.0
 
 - [**onShuffle**](#onShuffle-instance_function)() as **Void**
 
-    Respond to a command to turn shuffle on or off.
+    响应打开或关闭随机播放的命令。
 
 - [**onSong**](#onSong-instance_function)(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), songEvent as [Media.SongEvent](/connect-iq/api-docs/Toybox/Media/#SongEvent-module), playbackPosition as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module)) as **Void**
 
@@ -50,22 +50,22 @@ API 级别 3.0.0
 
 - [**onThumbsDown**](#onThumbsDown-instance_function)(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Respond to a thumbs-down action.
+    响应点踩操作。
 
 - [**onThumbsUp**](#onThumbsUp-instance_function)(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Respond to a thumbs-up action.
+    响应点赞操作。
 
 - [**resetContentIterator**](#resetContentIterator-instance_function)() as [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) or **Null**
 
-    Reset the [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) to the beginning of the current playlist.
+    将 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 重置到当前播放列表的开头。
 
 
 ## 实例方法详情
 
 ### **getContentIterator()** as [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) or **Null**
 
-Return a [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) object for the system to use to iterate over media tracks.
+返回一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 对象，供系统用于遍历媒体音轨。
 
 Returns:
 
@@ -77,7 +77,7 @@ API 级别 3.0.0
 
 ### **onAdAction(adContext as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Respond to a user ad click.
+响应用户广告点击。
 
 Parameters:
 
@@ -115,7 +115,7 @@ API 级别 3.0.0
 
 ### **onShuffle()** as **Void**
 
-Respond to a command to turn shuffle on or off.
+响应打开或关闭随机播放的命令。
 
 Since:
 
@@ -146,7 +146,7 @@ API 级别 3.0.0
 
 ### **onThumbsDown(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Respond to a thumbs-down action.
+响应点踩操作。
 
 The thumbs-down option is native to the device media player. When a user selects the thumbs-down function on the device, a corresponding onThumbsDown() event is sent to application.
 
@@ -163,7 +163,7 @@ API 级别 3.0.0
 
 ### **onThumbsUp(contentRefId as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Respond to a thumbs-up action.
+响应点赞操作。
 
 The thumbs-up option is native to the device media player. When a user selects the thumbs-up function on the device, a corresponding onThumbsUp() event is sent to the application.
 
@@ -180,7 +180,7 @@ API 级别 3.0.0
 
 ### **resetContentIterator()** as [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) or **Null**
 
-Reset the [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) to the beginning of the current playlist.
+将 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 重置到当前播放列表的开头。
 
 Returns:
 

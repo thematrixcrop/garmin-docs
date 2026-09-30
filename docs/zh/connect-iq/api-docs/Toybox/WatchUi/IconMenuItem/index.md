@@ -221,7 +221,7 @@ API 级别 3.0.0
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
-    Set the IconMenuItem icon.
+    设置 IconMenuItem 图标。
 
 
 ## 实例方法详情
@@ -278,7 +278,7 @@ API 级别 3.0.0
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
 
-Set the IconMenuItem icon.
+设置 IconMenuItem 图标。
 
 Parameters:
 

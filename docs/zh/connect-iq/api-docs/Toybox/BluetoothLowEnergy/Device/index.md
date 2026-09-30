@@ -36,7 +36,7 @@ API 级别 3.1.0
 
 - [**getServices**](#getServices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Retrieves an Iterator over the services provided by the device.
+    获取一个 Iterator，用于遍历设备提供的服务。
 
 - [**isBonded**](#isBonded-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -94,7 +94,7 @@ API 级别 3.1.0
 
 ### **getServices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Retrieves an Iterator over the services provided by the device.
+获取一个 Iterator，用于遍历设备提供的服务。
 
 This will only provide Services that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
 

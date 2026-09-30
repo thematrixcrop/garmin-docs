@@ -62,7 +62,7 @@ API 级别 3.0.0
 
 - [**reverse**](#reverse-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Return a new ByteArray that contains the elements of a source ByteArray in reverse order.
+    返回一个新的 ByteArray，其中包含源 ByteArray 中按逆序排列的元素。
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -380,7 +380,7 @@ Throws:
 
 ### **reverse()** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Return a new ByteArray that contains the elements of a source ByteArray in reverse order.
+返回一个新的 ByteArray，其中包含源 ByteArray 中按逆序排列的元素。
 
 Returns:
 

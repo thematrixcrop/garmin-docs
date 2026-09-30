@@ -136,7 +136,7 @@ API 级别 3.1.0
 
 ### **requestWrite(value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :writeType as [BluetoothLowEnergy.WriteType](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WriteType-module) })** as **Void**
 
-Requests a write operation
+请求执行写入操作
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function)
 

@@ -154,7 +154,7 @@ API 级别 3.0.0
 
 - [**setColor**](#setColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
-    Set the color of the MapPolyline to draw on the map.
+    设置要在地图上绘制的 MapPolyline 颜色。
 
 - [**setWidth**](#setWidth-instance_function)(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -225,7 +225,7 @@ API 级别 3.0.0
 
 ### **setColor(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))** as **Void**
 
-Set the color of the MapPolyline to draw on the map.
+设置要在地图上绘制的 MapPolyline 颜色。
 
 Parameters:
 

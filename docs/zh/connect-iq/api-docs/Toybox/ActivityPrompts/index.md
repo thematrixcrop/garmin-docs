@@ -106,7 +106,7 @@ API 级别 5.2.0
 
 - [**setActivityPromptTextLanguage**](#setActivityPromptTextLanguage-instance_function)(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the language for [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var).
+    设置 [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var) 的语言。
 
 - [**unregisterActivityPromptsListener**](#unregisterActivityPromptsListener-instance_function)() as **Void**
 
@@ -151,7 +151,7 @@ API 级别 5.2.0
 
 ### **setActivityPromptTextLanguage(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the language for [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var).
+设置 [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var) 的语言。
 
 Parameters:
 

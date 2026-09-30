@@ -28,14 +28,14 @@ API 级别 2.4.2
 
 - [**initialize**](#initialize-instance_function)(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
-    SerializationException constructor.
+    SerializationException 构造函数。
 
 
 ## 实例方法详情
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
-SerializationException constructor.
+SerializationException 构造函数。
 
 Parameters:
 

@@ -54,7 +54,7 @@ API 级别 1.0.0
 
 - [**get**](#get-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    Retrieve a value from a Dictionary for a given key.
+    根据给定的键从 Dictionary 中获取值。
 
 - [**hasKey**](#hasKey-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -66,7 +66,7 @@ API 级别 1.0.0
 
 - [**keys**](#keys-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
 
-    Retrieve the keys in the Dictionary.
+    获取 Dictionary 中的键。
 
 - [**put**](#put-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
@@ -78,7 +78,7 @@ API 级别 1.0.0
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Retrieve the number of elements in a Dictionary.
+    获取 Dictionary 中元素的数量。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -86,14 +86,14 @@ API 级别 1.0.0
 
 - [**values**](#values-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-    Retrieve the values in the Dictionary.
+    获取 Dictionary 中的值。
 
 
 ## 实例方法详情
 
 ### **get(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-Retrieve a value from a Dictionary for a given key.
+根据给定的键从 Dictionary 中获取值。
 
 Parameters:
 
@@ -152,7 +152,7 @@ API 级别 1.0.0
 
 ### **keys()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
 
-Retrieve the keys in the Dictionary.
+获取 Dictionary 中的键。
 
 Returns:
 
@@ -201,7 +201,7 @@ API 级别 1.0.0
 
 ### **size()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Retrieve the number of elements in a Dictionary.
+获取 Dictionary 中元素的数量。
 
 Returns:
 
@@ -255,7 +255,7 @@ API 级别 1.0.1
 
 ### **values()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-Retrieve the values in the Dictionary.
+获取 Dictionary 中的值。
 
 Returns:
 

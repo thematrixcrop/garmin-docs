@@ -105,7 +105,7 @@ API 级别 1.0.0
 
 - [**setLocation**](#setLocation-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set the on-screen location for a Drawable object.
+    设置 Drawable 对象在屏幕上的位置。
 
 - [**setSize**](#setSize-instance_function)(w as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), h as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -256,7 +256,7 @@ API 级别 1.0.0
 
 ### **setLocation(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set the on-screen location for a Drawable object.
+设置 Drawable 对象在屏幕上的位置。
 
 Parameters:
 

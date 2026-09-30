@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 - [**fontScale**](#fontScale-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Scale factor to be used for displayed text.
+    用于显示文本的缩放因子。
 
 - [**heightUnits**](#heightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
@@ -346,7 +346,7 @@ Returns:
 
 ### var fontScale as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Scale factor to be used for displayed text.
+用于显示文本的缩放因子。
 
 Since:
 

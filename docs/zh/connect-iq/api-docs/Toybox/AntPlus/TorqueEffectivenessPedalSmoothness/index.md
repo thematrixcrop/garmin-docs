@@ -150,11 +150,11 @@ API 级别 2.2.0
 
 - [**rightPedalSmoothness**](#rightPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Right pedal smoothness (%).
+    右踏板平顺度（%）。
 
 - [**rightTorqueEffectiveness**](#rightTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Right torque effectiveness.
+    右侧扭矩效率。
 
 - [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -215,7 +215,7 @@ Returns:
 
 ### var rightPedalSmoothness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Right pedal smoothness (%).
+右踏板平顺度（%）。
 
 Example:
 
@@ -239,7 +239,7 @@ Returns:
 
 ### var rightTorqueEffectiveness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Right torque effectiveness.
+右侧扭矩效率。
 
 0xFF：无效值或负值（%）。
 

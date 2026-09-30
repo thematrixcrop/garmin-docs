@@ -141,7 +141,7 @@ API 级别 3.0.0
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Set a bitmap icon to use for the MapMarker object on a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/).
+    设置位图图标，以便在 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 上用于 MapMarker 对象。
 
 - [**setLabel**](#setLabel-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
@@ -186,7 +186,7 @@ Throws:
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Set a bitmap icon to use for the MapMarker object on a [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/).
+设置位图图标，以便在 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 上用于 MapMarker 对象。
 
 Parameters:
 

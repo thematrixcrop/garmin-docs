@@ -87,7 +87,7 @@ API 级别 2.1.0
 
 - [**setState**](#setState-instance_function)(state as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
 
-    Set the current state of a Selectable object.
+    设置 Selectable 对象的当前状态。
 
 
 ## 实例属性详情
@@ -245,7 +245,7 @@ API 级别 2.1.0
 
 ### **setState(state as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as **Void**
 
-Set the current state of a Selectable object.
+设置 Selectable 对象的当前状态。
 
 Parameters:
 

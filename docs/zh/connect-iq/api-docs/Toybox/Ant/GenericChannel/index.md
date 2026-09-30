@@ -36,7 +36,7 @@ API 级别 1.0.0
 
 - [**enableEncryption**](#enableEncryption-instance_function)(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the encryption configuration and enable encryption on this channel.
+    设置加密配置并在此通道上启用加密。
 
 - [**getDeviceConfig**](#getDeviceConfig-instance_function)() as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
@@ -56,23 +56,23 @@ API 级别 1.0.0
 
 - [**sendAcknowledge**](#sendAcknowledge-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Send an acknowledge message.
+    发送确认消息。
 
 - [**sendBroadcast**](#sendBroadcast-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Send a broadcast message.
+    发送广播消息。
 
 - [**sendBurst**](#sendBurst-instance_function)(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
 
-    Send an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) as a burst across the ANT channel.
+    将 [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
 
 - [**setBurstListener**](#setBurstListener-instance_function)(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) as **Void**
 
-    Set the [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) for burst events.
+    设置突发事件使用的 [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)。
 
 - [**setDeviceConfig**](#setDeviceConfig-instance_function)(configuration as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Set the current ANT channel configuration.
+    设置当前 ANT 通道配置。
 
 
 ## 实例方法详情
@@ -265,7 +265,7 @@ API 级别 2.3.0
 
 ### **enableEncryption(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the encryption configuration and enable encryption on this channel.
+设置加密配置并在此通道上启用加密。
 
 Parameters:
 
@@ -569,7 +569,7 @@ API 级别 1.0.0
 
 ### **sendAcknowledge(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Send an acknowledge message.
+发送确认消息。
 
 You can expect to receive either [MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_COMPLETED-const) or [MSG\_CODE\_EVENT\_TRANSFER\_TX\_FAILED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_FAILED-const) if the message succeeded/failed going to the recipient.
 
@@ -614,7 +614,7 @@ API 级别 1.0.0
 
 ### **sendBroadcast(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Send a broadcast message.
+发送广播消息。
 
 Parameters:
 
@@ -657,7 +657,7 @@ API 级别 1.0.0
 
 ### **sendBurst(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
 
-Send an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) as a burst across the ANT channel.
+将 [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
 
 Success or Fail is received by the [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/).
 
@@ -699,7 +699,7 @@ Throws:
 
 ### **setBurstListener(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/))** as **Void**
 
-Set the [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) for burst events.
+设置突发事件使用的 [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)。
 
 Failed bursts or those larger than the specified threshold will be discarded.
 
@@ -738,7 +738,7 @@ Throws:
 
 ### **setDeviceConfig(configuration as [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Set the current ANT channel configuration.
+设置当前 ANT 通道配置。
 
 Parameters:
 

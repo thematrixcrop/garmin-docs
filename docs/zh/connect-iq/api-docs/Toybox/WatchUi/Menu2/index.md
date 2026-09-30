@@ -321,11 +321,11 @@ Icon divider type
 
 - [**setFocus**](#setFocus-instance_function)(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void**
 
-    Set the focus of a MenuItem in a Menu2.
+    设置 Menu2 中 MenuItem 的焦点。
 
 - [**setFooter**](#setFooter-instance_function)(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set a Menu2 footer.
+    设置 Menu2 页脚。
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
@@ -337,7 +337,7 @@ Icon divider type
 
 - [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set a Menu2 title.
+    设置 Menu2 标题。
 
 - [**updateItem**](#updateItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/), index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -583,7 +583,7 @@ Throws:
 
 ### **setFocus(focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as **Void**
 
-Set the focus of a MenuItem in a Menu2.
+设置 Menu2 中 MenuItem 的焦点。
 
 Parameters:
 
@@ -605,7 +605,7 @@ Throws:
 
 ### **setFooter(footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set a Menu2 footer.
+设置 Menu2 页脚。
 
 Parameters:
 
@@ -627,7 +627,7 @@ Throws:
 
 ### **setIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
 
-Set the icon
+设置图标
 
 Set the icon to display in the subscreen area when the focused MenuItem does not have an icon. If this menu does not have an icon, the app icon will be shown instead.
 
@@ -707,7 +707,7 @@ API 级别 4.1.8
 
 ### **setTitle(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set a Menu2 title.
+设置 Menu2 标题。
 
 Parameters:
 

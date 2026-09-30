@@ -172,23 +172,23 @@ API 级别 2.2.0
 
 - [**getCalculatedPower**](#getCalculatedPower-instance_function)() as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
-    Retrieve the current calculated power.
+    获取当前计算出的功率。
 
 - [**getCalculatedWheelDistance**](#getCalculatedWheelDistance-instance_function)() as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
 
-    Retrieve the current calculated wheel distance.
+    获取当前计算出的车轮距离。
 
 - [**getCalculatedWheelSpeed**](#getCalculatedWheelSpeed-instance_function)() as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
 
-    Retrieve the current calculated wheel speed.
+    获取当前计算出的车轮速度。
 
 - [**getPedalPowerBalance**](#getPedalPowerBalance-instance_function)() as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
-    Retrieve the current pedal power balance.
+    获取当前的踏板功率平衡。
 
 - [**getTorqueEffectivenessPedalSmoothness**](#getTorqueEffectivenessPedalSmoothness-instance_function)() as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
-    Retrieve the current torque effectiveness and pedal smoothness.
+    获取当前的扭矩效率和踏板平顺度。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)
 
@@ -214,7 +214,7 @@ API 级别 2.2.0
 
 ### **getCalculatedPower()** as [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)
 
-Retrieve the current calculated power.
+获取当前计算出的功率。
 
 Returns:
 
@@ -229,7 +229,7 @@ API 级别 2.2.0
 
 ### **getCalculatedWheelDistance()** as [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
 
-Retrieve the current calculated wheel distance.
+获取当前计算出的车轮距离。
 
 Returns:
 
@@ -244,7 +244,7 @@ API 级别 2.2.0
 
 ### **getCalculatedWheelSpeed()** as [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
 
-Retrieve the current calculated wheel speed.
+获取当前计算出的车轮速度。
 
 Returns:
 
@@ -259,7 +259,7 @@ API 级别 2.2.0
 
 ### **getPedalPowerBalance()** as [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
-Retrieve the current pedal power balance.
+获取当前的踏板功率平衡。
 
 Returns:
 
@@ -274,7 +274,7 @@ API 级别 2.2.0
 
 ### **getTorqueEffectivenessPedalSmoothness()** as [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
-Retrieve the current torque effectiveness and pedal smoothness.
+获取当前的扭矩效率和踏板平顺度。
 
 Returns:
 

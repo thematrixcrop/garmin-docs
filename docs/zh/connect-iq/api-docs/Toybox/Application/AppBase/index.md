@@ -192,7 +192,7 @@ API 级别 4.0.0
 
 - [**isActive**](#isActive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    return true if app is currently in active state, otherwise false.
+    如果应用当前处于活动状态，则返回 true，否则返回 false。
 
 - [**isTrial**](#isTrial-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -1712,7 +1712,7 @@ API 级别 2.3.0
 
 ### **isActive()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-return true if app is currently in active state, otherwise false.
+如果应用当前处于活动状态，则返回 true，否则返回 false。
 
 :::details 支持的设备
 

@@ -225,11 +225,11 @@ API 级别 3.0.0
 
 - [**setEnabled**](#setEnabled-instance_function)(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Set a ToggleMenuItem state.
+    设置 ToggleMenuItem 状态。
 
 - [**setSubLabel**](#setSubLabel-instance_function)(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or { :enabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, :disabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null** } or **Null**) as **Void**
 
-    Set a ToggleMenuItem label substring.
+    设置 ToggleMenuItem 标签子字符串。
 
 
 ## 实例方法详情
@@ -317,7 +317,7 @@ API 级别 3.0.0
 
 ### **setEnabled(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Set a ToggleMenuItem state.
+设置 ToggleMenuItem 状态。
 
 Parameters:
 
@@ -339,7 +339,7 @@ Throws:
 
 ### **setSubLabel(subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or { :enabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, :disabled as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null** } or **Null**)** as **Void**
 
-Set a ToggleMenuItem label substring.
+设置 ToggleMenuItem 标签子字符串。
 
 Parameters:
 

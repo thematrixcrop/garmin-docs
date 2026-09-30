@@ -390,7 +390,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**getBondedDevices**](#getBondedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Retrieve an Iterator of devices that the Application has bonded with that the system has saved bond information for.
+    获取一个 Iterator，其中包含 Application 已配对且系统已保存配对信息的设备。
 
 - [**getPairedDevices**](#getPairedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
@@ -410,7 +410,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**setConnectionStrategy**](#setConnectionStrategy-instance_function)(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) as **Void**
 
-    Set the connection type used to connect to the BLE device.
+    设置用于连接 BLE 设备的连接类型。
 
 - [**setDelegate**](#setDelegate-instance_function)(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) as **Void**
 
@@ -468,7 +468,7 @@ API 级别 3.1.0
 
 ### **getBondedDevices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Retrieve an Iterator of devices that the Application has bonded with that the system has saved bond information for.
+获取一个 Iterator，其中包含 Application 已配对且系统已保存配对信息的设备。
 
 :::details 支持的设备
 
@@ -684,7 +684,7 @@ Throws:
 
 ### **setConnectionStrategy(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module))** as **Void**
 
-Set the connection type used to connect to the BLE device.
+设置用于连接 BLE 设备的连接类型。
 
 注意：
 

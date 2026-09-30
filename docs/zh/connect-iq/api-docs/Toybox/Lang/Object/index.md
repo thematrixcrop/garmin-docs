@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 - [**method**](#method-instance_function)(methodName as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
-    Retrieve a callback to a Method.
+    获取指向 Method 的回调。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -110,7 +110,7 @@ API 级别 1.0.0
 
 ### **method(methodName as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
-Retrieve a callback to a Method.
+获取指向 Method 的回调。
 
 This is typically used when supplying a callback function to another method.
 

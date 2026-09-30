@@ -30,7 +30,7 @@ API 级别 4.0.0
 
 - [**setOffset**](#setOffset-instance_function)(offsetX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), offsetY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Set an offset for the texture.
+    设置纹理的偏移量。
 
 
 ## 实例方法详情
@@ -64,7 +64,7 @@ API 级别 4.0.0
 
 ### **setOffset(offsetX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), offsetY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Set an offset for the texture.
+设置纹理的偏移量。
 
 Parameters:
 

@@ -233,11 +233,11 @@ API 级别 3.0.0
 
 - [**setDividerIcon**](#setDividerIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
-    Set or change the menu icon.
+    设置或更改菜单图标。
 
 - [**setDrawable**](#setDrawable-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set a CustomMenuItem Drawable.
+    设置 CustomMenuItem Drawable。
 
 
 ## 实例方法详情
@@ -381,7 +381,7 @@ API 级别 3.0.0
 
 ### **setDividerIcon(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
 
-Set or change the menu icon.
+设置或更改菜单图标。
 
 If device support [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) and parent menu is set to [DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module), `icon` (if not +null+) will be rendered on the left side of the divider.
 
@@ -426,7 +426,7 @@ Throws:
 
 ### **setDrawable(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set a CustomMenuItem Drawable.
+设置 CustomMenuItem Drawable。
 
 Parameters:
 

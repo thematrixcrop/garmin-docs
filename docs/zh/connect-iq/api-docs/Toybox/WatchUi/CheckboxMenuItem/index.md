@@ -221,7 +221,7 @@ API 级别 3.0.0
 
 - [**setChecked**](#setChecked-instance_function)(checked as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Set a CheckboxMenuItem state.
+    设置 CheckboxMenuItem 状态。
 
 
 ## 实例方法详情
@@ -286,7 +286,7 @@ API 级别 3.0.0
 
 ### **setChecked(checked as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Set a CheckboxMenuItem state.
+设置 CheckboxMenuItem 状态。
 
 Parameters:
 
