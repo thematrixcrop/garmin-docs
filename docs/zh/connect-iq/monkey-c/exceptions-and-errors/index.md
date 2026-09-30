@@ -7,16 +7,16 @@ title: "Exceptions and Errors"
 
 ```java
 try {
-    // Code to execute
+    // 要执行的代码
 }
 catch( ex instanceof AnExceptionClass ) {
-    // Code to handle the throw of AnExceptionClass
+    // 处理 AnExceptionClass 的抛出
 }
 catch( ex ) {
-    // Code to catch all execeptions
+    // 捕获所有异常
 }
 finally {
-    // Code to execute when
+    // 要执行的代码
 }
 ```
 
@@ -37,8 +37,8 @@ finally {
 
 ```typescript
 class AppSpecificException extends Lang.Exception {
-    //! Constructor
-    //! @param msg Message explaining cause
+    //! 构造函数
+    //! @param msg 解释原因的消息
     function initialize(msg) {
         Exception.initialize();
         self.mMessage = msg;
