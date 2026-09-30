@@ -188,11 +188,11 @@ API 级别 3.0.0
 
 - [**decrypt**](#decrypt-instance_function)(ciphertext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Decrypt data with the key, depending on how the cipher was initialized.
+    根据密码的初始化方式，使用密钥解密数据。
 
 - [**encrypt**](#encrypt-instance_function)(plaintext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Encrypt data with the key, depending on how the cipher was initialized.
+    根据密码的初始化方式，使用密钥加密数据。
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :mode as [Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), :iv as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
@@ -203,7 +203,7 @@ API 级别 3.0.0
 
 ### **decrypt(ciphertext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Decrypt data with the key, depending on how the cipher was initialized.
+根据密码的初始化方式，使用密钥解密数据。
 
 Decryption can be broken up into two or more calls to decrypt(). For MODE\_CBC, the `ciphertext` length (in bytes) must be a multiple of the block size.
 
@@ -238,7 +238,7 @@ Throws:
 
 ### **encrypt(plaintext as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Encrypt data with the key, depending on how the cipher was initialized.
+根据密码的初始化方式，使用密钥加密数据。
 
 Encryption can be broken up into two or more calls to encrypt. For MODE\_CBC, the `plaintext` length (in bytes) must be a multiple of the block size.
 

@@ -68,7 +68,7 @@ API 级别 3.1.0
 
 - [**isSameDevice**](#isSameDevice-instance_function)(other as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determines if another scan result represents the same device as another.
+    确定另一个扫描结果是否表示同一设备。
 
 
 ## 实例方法详情
@@ -263,7 +263,7 @@ API 级别 3.2.0
 
 ### **isSameDevice(other as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determines if another scan result represents the same device as another.
+确定另一个扫描结果是否表示同一设备。
 
 Parameters:
 

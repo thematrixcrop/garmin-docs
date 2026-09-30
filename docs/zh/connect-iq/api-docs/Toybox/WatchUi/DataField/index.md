@@ -473,7 +473,7 @@ API 级别 5.2.2
 
 - [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-    Create a new custom FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
+    创建新的自定义 FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
 - [**getBackgroundColor**](#getBackgroundColor-instance_function)() as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)
 
@@ -651,7 +651,7 @@ API 级别 1.0.0
 
 ### **createField(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [FitContributor.MessageType](/connect-iq/api-docs/Toybox/FitContributor/#MessageType-module), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) })** as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-Create a new custom FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
+创建新的自定义 FIT [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
 To record custom activity data to a FIT file, a new [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) must first be created to allow Data Fields access to FIT recording without allowing access to the session. Once created, a Field is updated in the FIT file by changing the **value** of the data within the Field.
 

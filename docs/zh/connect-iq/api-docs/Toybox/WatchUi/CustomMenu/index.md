@@ -259,15 +259,15 @@ API 级别 3.0.0
 
 - [**drawFooter**](#drawFooter-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw the CustomMenu footer.
+    绘制 CustomMenu 页脚。
 
 - [**drawForeground**](#drawForeground-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw the CustomMenu foreground.
+    绘制 CustomMenu 前景。
 
 - [**drawTitle**](#drawTitle-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw the CustomMenu title.
+    绘制 CustomMenu 标题。
 
 - [**initialize**](#initialize-instance_function)(itemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), options as { :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :focusItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :foreground as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :titleItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :footerItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
 
@@ -324,7 +324,7 @@ Throws:
 
 ### **drawFooter(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw the CustomMenu footer.
+绘制 CustomMenu 页脚。
 
 This is called to render the menu footer region.
 
@@ -341,7 +341,7 @@ API 级别 3.0.0
 
 ### **drawForeground(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw the CustomMenu foreground.
+绘制 CustomMenu 前景。
 
 This is called after a menu's items and title have been rendered. It can be used to draw overlay content for the menu.
 
@@ -358,7 +358,7 @@ API 级别 3.0.0
 
 ### **drawTitle(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw the CustomMenu title.
+绘制 CustomMenu 标题。
 
 This is called to render the menu title region.
 

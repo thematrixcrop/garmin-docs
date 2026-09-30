@@ -66,7 +66,7 @@ API 级别 3.0.0
 
 - [**convertEncodedString**](#convertEncodedString-instance_function)(input as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :fromRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :toRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :encoding as [StringUtil.CharacterEncoding](/connect-iq/api-docs/Toybox/StringUtil/#CharacterEncoding-module) }) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Convert a String or ByteArray representation to a String or ByteArray representation whose underlying byte format corresponds to the provided input options.
+    将 String 或 ByteArray 表示转换为 String 或 ByteArray 表示，其底层字节格式与提供的输入选项相对应。
 
 - [**encodeBase64**](#encodeBase64-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -103,7 +103,7 @@ API 级别 1.3.0
 
 ### **convertEncodedString(input as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :fromRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :toRepresentation as [StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module), :encoding as [StringUtil.CharacterEncoding](/connect-iq/api-docs/Toybox/StringUtil/#CharacterEncoding-module) })** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Convert a String or ByteArray representation to a String or ByteArray representation whose underlying byte format corresponds to the provided input options.
+将 String 或 ByteArray 表示转换为 String 或 ByteArray 表示，其底层字节格式与提供的输入选项相对应。
 
 Parameters:
 

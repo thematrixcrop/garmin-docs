@@ -97,7 +97,7 @@ API 级别 1.0.0
 
 - [**draw**](#draw-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw an object to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+    将对象绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 - [**initialize**](#initialize-instance_function)(options as { :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })
 
@@ -194,7 +194,7 @@ Returns:
 
 ### **draw(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw an object to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将对象绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 此方法假定设备上下文已经配置为正确的选项。
 

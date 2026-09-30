@@ -617,7 +617,7 @@ The larger image for when the icon is highlighted
 
 - [**deleteCachedItem**](#deleteCachedItem-instance_function)(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) as **Void**
 
-    Delete an individual cached media item.
+    删除单个缓存的媒体项。
 
 - [**getCacheStatistics**](#getCacheStatistics-instance_function)() as [Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
 
@@ -645,7 +645,7 @@ The larger image for when the icon is highlighted
 
 - [**resetContentCache**](#resetContentCache-instance_function)() as **Void**
 
-    Delete the cached media content and reset the encryption key for the app.
+    删除缓存的媒体内容并重置应用的加密密钥。
 
 - [**setAlbumArt**](#setAlbumArt-instance_function)(albumArt as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or **Null**) as **Void**
 
@@ -653,11 +653,11 @@ The larger image for when the icon is highlighted
 
 - [**startPlayback**](#startPlayback-instance_function)(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
 
-    Exit the [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/) in its current mode and launch it in playback mode.
+    退出当前模式下的 [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)，并以播放模式启动它。
 
 - [**startSync**](#startSync-instance_function)() as **Void** deprecated
 
-    Exit the [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/) in its current mode and launch it in sync mode.
+    退出当前模式下的 [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)，并以同步模式启动它。
 
 - [**stopPlayback**](#stopPlayback-instance_function)() as **Void**
 
@@ -668,7 +668,7 @@ The larger image for when the icon is highlighted
 
 ### **deleteCachedItem(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/))** as **Void**
 
-Delete an individual cached media item.
+删除单个缓存的媒体项。
 
 Parameters:
 
@@ -826,7 +826,7 @@ API 级别 3.0.3
 
 ### **resetContentCache()** as **Void**
 
-Delete the cached media content and reset the encryption key for the app.
+删除缓存的媒体内容并重置应用的加密密钥。
 
 Since:
 
@@ -853,7 +853,7 @@ API 级别 3.0.10
 
 ### **startPlayback(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type))** as **Void**
 
-Exit the [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/) in its current mode and launch it in playback mode.
+退出当前模式下的 [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)，并以播放模式启动它。
 
 Parameters:
 
@@ -879,7 +879,7 @@ Throws:
 
 此方法可能在 System 9 之后移除。
 
-Exit the [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/) in its current mode and launch it in sync mode.
+退出当前模式下的 [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)，并以同步模式启动它。
 
 另见：
 

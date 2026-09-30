@@ -232,7 +232,7 @@ API 级别 3.3.0
 
 - [**greaterThan**](#greaterThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a LocalMoment is greater than another LocalMoment.
+    确定一个 LocalMoment 是否大于另一个 LocalMoment。
 
 - [**isDaylightSavingsTime**](#isDaylightSavingsTime-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -240,7 +240,7 @@ API 级别 3.3.0
 
 - [**lessThan**](#lessThan-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a LocalMoment is less than another LocalMoment.
+    确定一个 LocalMoment 是否小于另一个 LocalMoment。
 
 - [**subtract**](#subtract-instance_function)(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
@@ -380,7 +380,7 @@ API 级别 3.3.0
 
 ### **greaterThan(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a LocalMoment is greater than another LocalMoment.
+确定一个 LocalMoment 是否大于另一个 LocalMoment。
 
 Parameters:
 
@@ -417,7 +417,7 @@ API 级别 3.3.0
 
 ### **lessThan(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a LocalMoment is less than another LocalMoment.
+确定一个 LocalMoment 是否小于另一个 LocalMoment。
 
 Parameters:
 

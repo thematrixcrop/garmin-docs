@@ -305,7 +305,7 @@ API 级别 2.3.0
 
 - [**requestApplicationWake**](#requestApplicationWake-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
-    Display a confirmation dialog requesting to launch the application to which the background task belongs.
+    显示确认对话框，请求启动后台任务所属的应用。
 
 
 ## 实例方法详情
@@ -1151,7 +1151,7 @@ API 级别 2.3.0
 
 ### **requestApplicationWake(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
-Display a confirmation dialog requesting to launch the application to which the background task belongs.
+显示确认对话框，请求启动后台任务所属的应用。
 
 If the dialog is confirmed, the application will open. If the dialog is declined, the application will not open and the dialog will be dismissed. This request is only valid for widget or device app background tasks, and will be ignored by watch face apps. [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) must be called at some point in the background process after this method is invoked because the confirmation dialog will only trigger after the background task exits.
 

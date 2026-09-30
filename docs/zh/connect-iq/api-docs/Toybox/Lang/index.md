@@ -128,7 +128,7 @@ API 级别 3.1.0
 
 - [**format**](#format-instance_function)(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Create a formatted String by substituting the given parameters into the given format at the corresponding locations.
+    将给定参数替换到给定格式中相应位置，以创建格式化 String。
 
 
 ## 类型定义详情
@@ -179,7 +179,7 @@ API 级别 1.0.0
 
 ### **format(format as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Create a formatted String by substituting the given parameters into the given format at the corresponding locations.
+将给定参数替换到给定格式中相应位置，以创建格式化 String。
 
 Parameters:
 

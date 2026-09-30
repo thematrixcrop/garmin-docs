@@ -66,7 +66,7 @@ API 级别 1.0.0
 
 - [**draw**](#draw-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw a Bitmap to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+    将 Bitmap 绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 - [**getDimensions**](#getDimensions-instance_function)() as \[ [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) \]
 
@@ -85,7 +85,7 @@ API 级别 1.0.0
 
 ### **draw(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw a Bitmap to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Bitmap 绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 Parameters:
 

@@ -37,7 +37,7 @@ API 级别 1.2.0
 
 - [**stillAlive**](#stillAlive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine whether a WeakReference is still alive.
+    确定 WeakReference 是否仍然有效。
 
 
 ## 实例方法详情
@@ -59,7 +59,7 @@ API 级别 1.2.0
 
 ### **stillAlive()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine whether a WeakReference is still alive.
+确定 WeakReference 是否仍然有效。
 
 注意：
 

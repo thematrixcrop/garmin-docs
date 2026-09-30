@@ -43,7 +43,7 @@ API 级别 1.0.0
 
 - [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-    Create a new [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
+    创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
 - [**discard**](#discard-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -89,7 +89,7 @@ API 级别 1.0.0
 
 ### **createField(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
-Create a new [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/).
+创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
 Field objects allow developers to store information in FIT developer fields. This information can be displayed in Garmin Connect as a per-second graph, as lap information, or as workout summary information.
 

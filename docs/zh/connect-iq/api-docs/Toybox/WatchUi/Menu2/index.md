@@ -297,11 +297,11 @@ Icon divider type
 
 - [**deleteItem**](#deleteItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Delete a MenuItem from a Menu2.
+    从 Menu2 中删除 MenuItem。
 
 - [**findItemById**](#findItemById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Find a MenuItem by ID in a Menu2.
+    在 Menu2 中按 ID 查找 MenuItem。
 
 - [**getIcon**](#getIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -377,7 +377,7 @@ Throws:
 
 ### **deleteItem(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Delete a MenuItem from a Menu2.
+从 Menu2 中删除 MenuItem。
 
 Parameters:
 
@@ -397,7 +397,7 @@ API 级别 3.0.0
 
 ### **findItemById(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Find a MenuItem by ID in a Menu2.
+在 Menu2 中按 ID 查找 MenuItem。
 
 Parameters:
 

@@ -631,11 +631,11 @@ API 级别 5.1.0
 
 - [**exit**](#exit-instance_function)() as **Void**
 
-    End execution of the current app.
+    结束当前应用的执行。
 
 - [**exitTo**](#exitTo-instance_function)(intent as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) as **Void**
 
-    Exit the current app and launch a new app.
+    退出当前应用并启动新应用。
 
 - [**getClockTime**](#getClockTime-instance_function)() as [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
@@ -704,7 +704,7 @@ API 级别 1.0.0
 
 ### **exit()** as **Void**
 
-End execution of the current app.
+结束当前应用的执行。
 
 This will exit the system cleanly from any point within an app.
 
@@ -714,7 +714,7 @@ API 级别 1.0.0
 
 ### **exitTo(intent as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/))** as **Void**
 
-Exit the current app and launch a new app.
+退出当前应用并启动新应用。
 
 This may only be called by watch-apps and widgets, and may only target watch-apps (both native activities and Connect IQ apps) and widgets. This is an asynchronous request that presents a confirmation dialog to launch the Intent. If confirmed, the current app will exit. Otherwise, the app will continue to run without exiting.
 

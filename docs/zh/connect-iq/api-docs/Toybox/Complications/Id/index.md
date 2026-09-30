@@ -26,7 +26,7 @@ API 级别 4.2.0
 
 - [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Equals implementation.
+    Equals 实现。
 
 - [**getType**](#getType-instance_function)() as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module)
 
@@ -41,7 +41,7 @@ API 级别 4.2.0
 
 ### **equals(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Equals implementation
+Equals 实现
 
 Parameters:
 

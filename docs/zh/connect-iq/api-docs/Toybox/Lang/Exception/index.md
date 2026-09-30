@@ -67,7 +67,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Exception constructor.
+    异常构造函数。
 
 - [**printStackTrace**](#printStackTrace-instance_function)() as **Void**
 
@@ -93,7 +93,7 @@ API 级别 1.2.0
 
 ### **initialize()**
 
-Exception constructor.
+异常构造函数。
 
 Since:
 

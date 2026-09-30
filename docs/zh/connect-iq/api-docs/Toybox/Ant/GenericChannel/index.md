@@ -32,7 +32,7 @@ API 级别 1.0.0
 
 - [**disableEncryption**](#disableEncryption-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Disable encryption on this channel.
+    禁用此通道上的加密。
 
 - [**enableEncryption**](#enableEncryption-instance_function)(configuration as [Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -103,7 +103,7 @@ API 级别 1.0.0
 
 ### **disableEncryption()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Disable encryption on this channel.
+禁用此通道上的加密。
 
 Example:
 

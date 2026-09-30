@@ -34,15 +34,15 @@ API 级别 1.0.0
 
 - [**compare**](#compare-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Determine if a Duration is shorter or longer than another Duration.
+    确定一个 Duration 比另一个 Duration 更短还是更长。
 
 - [**divide**](#divide-instance_function)(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Divide a Duration by a value.
+    将 Duration 除以一个值。
 
 - [**greaterThan**](#greaterThan-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a Duration is longer than another Duration.
+    确定一个 Duration 是否比另一个 Duration 更长。
 
 - [**initialize**](#initialize-instance_function)(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
@@ -50,7 +50,7 @@ API 级别 1.0.0
 
 - [**lessThan**](#lessThan-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a Duration is shorter than another Duration.
+    确定一个 Duration 是否比另一个 Duration 更短。
 
 - [**multiply**](#multiply-instance_function)(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
@@ -114,7 +114,7 @@ API 级别 1.0.0
 
 ### **compare(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Determine if a Duration is shorter or longer than another Duration.
+确定一个 Duration 比另一个 Duration 更短还是更长。
 
 This computes a Number representing the difference between the two Duration objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/Duration/#subtract-instance_function) method can also be used to get the absolute difference between two Duration objects.
 
@@ -150,7 +150,7 @@ API 级别 1.0.0
 
 ### **divide(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Divide a Duration by a value.
+将 Duration 除以一个值。
 
 Parameters:
 
@@ -180,7 +180,7 @@ API 级别 1.0.0
 
 ### **greaterThan(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a Duration is longer than another Duration.
+确定一个 Duration 是否比另一个 Duration 更长。
 
 Parameters:
 
@@ -250,7 +250,7 @@ API 级别 1.0.0
 
 ### **lessThan(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a Duration is shorter than another Duration.
+确定一个 Duration 是否比另一个 Duration 更短。
 
 Parameters:
 

@@ -111,7 +111,7 @@ API 级别 1.0.0
 
 - [**findDrawableById**](#findDrawableById-instance_function)(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    Find a Drawable by its ID.
+    按 ID 查找 Drawable。
 
 - [**getLayerIndex**](#getLayerIndex-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -163,7 +163,7 @@ API 级别 1.0.0
 
 - [**setKeyToSelectableInteraction**](#setKeyToSelectableInteraction-instance_function)(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Enter Selectable interaction mode.
+    进入 Selectable 交互模式。
 
 - [**setLayout**](#setLayout-instance_function)(layout as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)\> or **Null**) as **Void**
 
@@ -220,7 +220,7 @@ API 级别 3.1.0
 
 ### **findDrawableById(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-Find a Drawable by its ID.
+按 ID 查找 Drawable。
 
 A common use for this method is to get layout information to format dynamic content, such as a string that updates at runtime.
 
@@ -583,7 +583,7 @@ Throws:
 
 ### **setKeyToSelectableInteraction(enable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Enter Selectable interaction mode.
+进入 Selectable 交互模式。
 
 When enabled, physical buttons may be used to cycle through on-screen [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) objects. The first registered Selectable in the current layout will be highlighted initially.
 

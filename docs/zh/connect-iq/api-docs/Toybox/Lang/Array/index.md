@@ -62,7 +62,7 @@ API 级别 1.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert an Array to a String.
+    将 Array 转换为 String。
 
 
 ## 实例方法详情
@@ -293,7 +293,7 @@ Throws:
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert an Array to a String.
+将 Array 转换为 String。
 
 This does not convert the elements of the Array into Strings, but transforms the entire Array into a String.
 

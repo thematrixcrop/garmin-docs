@@ -157,11 +157,11 @@ API 级别 1.0.0
 
 - [**toDegrees**](#toDegrees-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Convert an angle from radians to degrees.
+    将角度从弧度转换为度。
 
 - [**toRadians**](#toRadians-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-    Convert an angle from degrees to radians.
+    将角度从度转换为弧度。
 
 - [**variance**](#variance-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
@@ -667,7 +667,7 @@ API 级别 1.0.0
 
 ### **toDegrees(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Convert an angle from radians to degrees.
+将角度从弧度转换为度。
 
 Parameters:
 
@@ -694,7 +694,7 @@ API 级别 1.3.0
 
 ### **toRadians(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
-Convert an angle from degrees to radians.
+将角度从度转换为弧度。
 
 Parameters:
 

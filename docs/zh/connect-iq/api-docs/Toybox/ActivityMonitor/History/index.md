@@ -44,7 +44,7 @@ API 级别 1.0.0
 
 - [**floorsClimbedGoal**](#floorsClimbedGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Floors climbed goal for the day.
+    当天的爬楼层数目标。
 
 - [**floorsDescended**](#floorsDescended-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -541,7 +541,7 @@ Returns:
 
 ### var floorsClimbedGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Floors climbed goal for the day.
+当天的爬楼层数目标。
 
 Since:
 

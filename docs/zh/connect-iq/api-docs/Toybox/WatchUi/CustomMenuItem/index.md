@@ -213,7 +213,7 @@ API 级别 3.0.0
 
 - [**draw**](#draw-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw method for a CustomMenuItem.
+    CustomMenuItem 的绘制方法。
 
 - [**getDividerIcon**](#getDividerIcon-instance_function)() as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
@@ -244,7 +244,7 @@ API 级别 3.0.0
 
 ### **draw(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw method for a CustomMenuItem.
+CustomMenuItem 的绘制方法。
 
 This is called when a menu item is rendering.
 

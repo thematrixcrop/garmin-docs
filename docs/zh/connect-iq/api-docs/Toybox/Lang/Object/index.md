@@ -38,7 +38,7 @@ API 级别 1.0.0
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert an Object to a String.
+    将 Object 转换为 String。
 
 - [**weak**](#weak-instance_function)() as [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
@@ -139,7 +139,7 @@ API 级别 1.0.0
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert an Object to a String.
+将 Object 转换为 String。
 
 Example:
 

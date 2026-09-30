@@ -58,11 +58,11 @@ API 级别 1.0.0
 
 - [**hasKey**](#hasKey-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine whether a key exists within a Dictionary.
+    确定 Dictionary 中是否存在某个键。
 
 - [**isEmpty**](#isEmpty-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine whether a Dictionary is empty.
+    确定 Dictionary 是否为空。
 
 - [**keys**](#keys-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>
 
@@ -74,7 +74,7 @@ API 级别 1.0.0
 
 - [**remove**](#remove-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Delete an item from a Dictionary.
+    从 Dictionary 中删除项。
 
 - [**size**](#size-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -115,7 +115,7 @@ API 级别 1.0.0
 
 ### **hasKey(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine whether a key exists within a Dictionary.
+确定 Dictionary 中是否存在某个键。
 
 Parameters:
 
@@ -137,7 +137,7 @@ API 级别 1.0.0
 
 ### **isEmpty()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine whether a Dictionary is empty.
+确定 Dictionary 是否为空。
 
 Returns:
 
@@ -186,7 +186,7 @@ API 级别 1.0.0
 
 ### **remove(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Delete an item from a Dictionary.
+从 Dictionary 中删除项。
 
 Parameters:
 

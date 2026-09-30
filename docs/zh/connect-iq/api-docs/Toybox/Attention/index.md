@@ -400,7 +400,7 @@ API 级别 3.4.3
 - [**setFlashlightMode**](#setFlashlightMode-instance_function)(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
 - [**vibrate**](#vibrate-instance_function)(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>) as **Void**
 
-    Engage the vibration motor.
+    启动振动马达。
 
 
 ## 实例方法详情
@@ -978,7 +978,7 @@ Throws:
 
 ### **vibrate(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>)** as **Void**
 
-Engage the vibration motor.
+启动振动马达。
 
 The vibrate method takes an Array containing at least one [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) object, up to a maximum of 8, and runs them in sequence.
 

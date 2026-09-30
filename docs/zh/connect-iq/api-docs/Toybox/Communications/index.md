@@ -903,7 +903,7 @@ API 级别 6.0.0
 
 - [**encodeURL**](#encodeURL-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a URL String into a percent-encoded string.
+    将 URL String 转换为百分号编码字符串。
 
 - [**generateSignedOAuthHeader**](#generateSignedOAuthHeader-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>, requestMethod as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), signatureMethod as [Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module), token as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**, tokenSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerKey as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) deprecated
 
@@ -959,11 +959,11 @@ API 级别 6.0.0
 
 - [**startSync**](#startSync-instance_function)() as **Void**
 
-    Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode.
+    退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并以同步模式启动它。
 
 - [**startSync2**](#startSync2-instance_function)(options as { :message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
 
-    Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode with the provided message.
+    退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并使用提供的消息以同步模式启动它。
 
 - [**transmit**](#transmit-instance_function)(content as [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, listener as [Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)) as **Void**
 
@@ -1201,7 +1201,7 @@ API 级别 1.0.0
 
 ### **encodeURL(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a URL String into a percent-encoded string.
+将 URL String 转换为百分号编码字符串。
 
 The reserved characters in the string will be replaced with their corresponding hex-value pairs. This follows the URI-encoding scheme as detailed by RFC 3986.
 
@@ -2861,7 +2861,7 @@ API 级别 1.0.0
 
 ### **startSync()** as **Void**
 
-Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode.
+退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并以同步模式启动它。
 
 :::details 支持的设备
 
@@ -2986,7 +2986,7 @@ API 级别 3.1.0
 
 ### **startSync2(options as { :message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**)** as **Void**
 
-Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode with the provided message.
+退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并使用提供的消息以同步模式启动它。
 
 Parameters:
 

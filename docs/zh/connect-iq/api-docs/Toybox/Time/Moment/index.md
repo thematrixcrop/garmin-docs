@@ -82,11 +82,11 @@ API 级别 1.0.0
 
 - [**compare**](#compare-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Determine if a Moment is before or after another Moment.
+    确定一个 Moment 早于还是晚于另一个 Moment。
 
 - [**greaterThan**](#greaterThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a Moment is greater than another Moment.
+    确定一个 Moment 是否大于另一个 Moment。
 
 - [**initialize**](#initialize-instance_function)(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -94,7 +94,7 @@ API 级别 1.0.0
 
 - [**lessThan**](#lessThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if a Moment is less than another Moment.
+    确定一个 Moment 是否小于另一个 Moment。
 
 - [**subtract**](#subtract-instance_function)(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
@@ -152,7 +152,7 @@ API 级别 1.0.0
 
 ### **compare(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Determine if a Moment is before or after another Moment.
+确定一个 Moment 早于还是晚于另一个 Moment。
 
 This computes a Number representing the difference between the two Moment objects in seconds. The [subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function) method can also be used to get the absolute Duration between two Moment objects.
 
@@ -197,7 +197,7 @@ API 级别 1.0.0
 
 ### **greaterThan(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a Moment is greater than another Moment.
+确定一个 Moment 是否大于另一个 Moment。
 
 Parameters:
 
@@ -285,7 +285,7 @@ API 级别 1.1.2
 
 ### **lessThan(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if a Moment is less than another Moment.
+确定一个 Moment 是否小于另一个 Moment。
 
 Parameters:
 

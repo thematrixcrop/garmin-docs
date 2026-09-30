@@ -26,7 +26,7 @@ API 级别 3.0.0
 
 - [**canSkip**](#canSkip-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if the the current track can be skipped.
+    确定当前曲目是否可以跳过。
 
 - [**get**](#get-instance_function)() as [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) or **Null**
 
@@ -58,14 +58,14 @@ API 级别 3.0.0
 
 - [**shuffling**](#shuffling-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Determine if playback is currently set to shuffle.
+    确定当前播放是否设置为随机播放。
 
 
 ## 实例方法详情
 
 ### **canSkip()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if the the current track can be skipped.
+确定当前曲目是否可以跳过。
 
 Returns:
 
@@ -207,7 +207,7 @@ API 级别 3.0.0
 
 ### **shuffling()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Determine if playback is currently set to shuffle.
+确定当前播放是否设置为随机播放。
 
 Returns `true` if shuffle is on, otherwise `false`.
 

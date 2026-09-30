@@ -336,7 +336,7 @@ Elliptic Curve Diffie-Hellman (ECDH)
 
 - [**createPublicKey**](#createPublicKey-instance_function)(algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), bytes as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-    Create a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object from bytes to be added to a [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/).
+    从要添加到 [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/) 的字节创建公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象。
 
 - [**randomBytes**](#randomBytes-instance_function)(size as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -347,7 +347,7 @@ Elliptic Curve Diffie-Hellman (ECDH)
 
 ### **createPublicKey(algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), bytes as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
-Create a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object from bytes to be added to a [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/).
+从要添加到 [KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/) 的字节创建公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象。
 
 If a public key is received from another party, it can be converted to a [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) object using this method.
 

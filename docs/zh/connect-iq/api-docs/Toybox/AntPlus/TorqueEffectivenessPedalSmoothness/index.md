@@ -158,7 +158,7 @@ API 级别 2.2.0
 
 - [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    Define if pedal smoothness is separate.
+    定义踏板平滑度是否独立。
 
 
 ## 实例属性详情
@@ -265,7 +265,7 @@ Returns:
 
 ### var separatePedalSmoothnessSupport as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-Define if pedal smoothness is separate.
+定义踏板平滑度是否独立。
 
 Example:
 

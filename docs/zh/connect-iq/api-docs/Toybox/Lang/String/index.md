@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 - [**find**](#find-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Determine if the specified String exists in a String.
+    确定指定的 String 是否存在于某个 String 中。
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -46,51 +46,51 @@ API 级别 1.0.0
 
 - [**substring**](#substring-instance_function)(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Create a new String that contains the contents of the current String from a start position to an end position.
+    创建一个新的 String，其中包含当前 String 从起始位置到结束位置的内容。
 
 - [**toCharArray**](#toCharArray-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>
 
-    Convert a String to an Array of Char objects.
+    将 String 转换为 Char 对象数组。
 
 - [**toDouble**](#toDouble-instance_function)() as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**
 
-    Convert a String to a Double.
+    将 String 转换为 Double。
 
 - [**toFloat**](#toFloat-instance_function)() as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Convert a String to a Float.
+    将 String 转换为 Float。
 
 - [**toLong**](#toLong-instance_function)() as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
-    Convert a String to a Long.
+    将 String 转换为 Long。
 
 - [**toLongWithBase**](#toLongWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
-    Convert a String to a Long using a specified base.
+    使用指定进制将 String 转换为 Long。
 
 - [**toLower**](#toLower-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a String to lowercase.
+    将 String 转换为小写。
 
 - [**toNumber**](#toNumber-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Convert a String to a Number.
+    将 String 转换为 Number。
 
 - [**toNumberWithBase**](#toNumberWithBase-instance_function)(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Convert a String to a Number using a specified base.
+    使用指定进制将 String 转换为 Number。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a String to a String.
+    将 String 转换为 String。
 
 - [**toUpper**](#toUpper-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a String to uppercase.
+    将 String 转换为大写。
 
 - [**toUtf8Array**](#toUtf8Array-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    Convert a String to an Array of Number objects.
+    将 String 转换为 Number 对象数组。
 
 
 ## 实例方法详情
@@ -148,7 +148,7 @@ API 级别 1.0.0
 
 ### **find(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Determine if the specified String exists in a String.
+确定指定的 String 是否存在于某个 String 中。
 
 Parameters:
 
@@ -207,7 +207,7 @@ API 级别 1.0.0
 
 ### **substring(startIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, endIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**)** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Create a new String that contains the contents of the current String from a start position to an end position.
+创建一个新的 String，其中包含当前 String 从起始位置到结束位置的内容。
 
 注意：
 
@@ -244,7 +244,7 @@ API 级别 1.0.0
 
 ### **toCharArray()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)\>
 
-Convert a String to an Array of Char objects.
+将 String 转换为 Char 对象数组。
 
 Returns:
 
@@ -259,7 +259,7 @@ API 级别 1.3.0
 
 ### **toDouble()** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**
 
-Convert a String to a Double.
+将 String 转换为 Double。
 
 If a String is in the numeric form of "123" or "123.45", convert it to a Double. Additional characters after the detected floating point value will be ignored. Strings that cannot be interpreted as a Double, or whose value exceeds that which can be represented in a Double, will result in a `null` value.
 
@@ -295,7 +295,7 @@ API 级别 3.1.0
 
 ### **toFloat()** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Convert a String to a Float.
+将 String 转换为 Float。
 
 If a String is in the numeric form of "123" or "123.45", convert it to a Float. Additional characters after the detected floating point value will be ignored. Strings that cannot be interpreted as a Float, or whose value exceeds that which can be represented in a Float, will result in a `null` value.
 
@@ -331,7 +331,7 @@ API 级别 1.0.0
 
 ### **toLong()** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
-Convert a String to a Long.
+将 String 转换为 Long。
 
 If a String is in the numeric form of "123", it can be converted to a Long. Additional characters after the detected number value will be ignored. Strings that cannot be interpreted as a Long, or whose value exceeds that which can be represented in a Long, will result in a `null` value.
 
@@ -367,7 +367,7 @@ API 级别 3.1.0
 
 ### **toLongWithBase(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or **Null**
 
-Convert a String to a Long using a specified base.
+使用指定进制将 String 转换为 Long。
 
 Parameters:
 
@@ -410,7 +410,7 @@ API 级别 3.1.0
 
 ### **toLower()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a String to lowercase.
+将 String 转换为小写。
 
 Returns:
 
@@ -425,7 +425,7 @@ API 级别 1.0.0
 
 ### **toNumber()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Convert a String to a Number.
+将 String 转换为 Number。
 
 If a String is in the numeric form of "123", it can be converted to a Number. Additional characters after the detected number value will be ignored. Strings that cannot be interpreted as a Number, or whose value exceeds that which can be represented in a Number, will result in a `null` value.
 
@@ -461,7 +461,7 @@ API 级别 1.0.0
 
 ### **toNumberWithBase(base as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Convert a String to a Number using a specified base.
+使用指定进制将 String 转换为 Number。
 
 Parameters:
 
@@ -504,7 +504,7 @@ API 级别 1.4.1
 
 ### **toString()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a String to a String.
+将 String 转换为 String。
 
 Returns:
 
@@ -519,7 +519,7 @@ API 级别 1.0.0
 
 ### **toUpper()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a String to uppercase.
+将 String 转换为大写。
 
 Returns:
 
@@ -534,7 +534,7 @@ API 级别 1.0.0
 
 ### **toUtf8Array()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-Convert a String to an Array of Number objects.
+将 String 转换为 Number 对象数组。
 
 Each Number represents one byte of the UTF-8 representation of the String.
 

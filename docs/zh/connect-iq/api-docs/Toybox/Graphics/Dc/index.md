@@ -86,7 +86,7 @@ API 级别 1.0.0
 
 - [**clear**](#clear-instance_function)() as **Void**
 
-    Erase the screen using the background color.
+    使用背景色擦除屏幕。
 
 - [**clearClip**](#clearClip-instance_function)() as **Void**
 
@@ -98,11 +98,11 @@ API 级别 1.0.0
 
 - [**drawArc**](#drawArc-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), r as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), attr as [Graphics.ArcDirection](/connect-iq/api-docs/Toybox/Graphics/#ArcDirection-module), degreeStart as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), degreeEnd as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw an arc.
+    绘制弧线。
 
 - [**drawBitmap**](#drawBitmap-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type)) as **Void**
 
-    Draw a bitmap to the screen.
+    将位图绘制到屏幕上。
 
 - [**drawBitmap2**](#drawBitmap2-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), options as { :bitmapX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :tintColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :filterMode as [Graphics.FilterMode](/connect-iq/api-docs/Toybox/Graphics/#FilterMode-module), :transform as [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) } or **Null**) as **Void**
 
@@ -110,23 +110,23 @@ API 级别 1.0.0
 
 - [**drawCircle**](#drawCircle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw a circle around a point.
+    围绕某个点绘制圆。
 
 - [**drawEllipse**](#drawEllipse-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), a as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), b as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw an ellipse around a point.
+    围绕某个点绘制椭圆。
 
 - [**drawLine**](#drawLine-instance_function)(x1 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y1 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), x2 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y2 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw a line between two points.
+    在两个点之间绘制线段。
 
 - [**drawOffsetBitmap**](#drawOffsetBitmap-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapWidth as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapHeight as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type)) as **Void**
 
-    Draw a bitmap to the screen with an offset.
+    使用偏移量将位图绘制到屏幕上。
 
 - [**drawPoint**](#drawPoint-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw a point on the screen.
+    在屏幕上绘制点。
 
 - [**drawRadialText**](#drawRadialText-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), angle as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), direction as [Graphics.RadialTextDirection](/connect-iq/api-docs/Toybox/Graphics/#RadialTextDirection-module)) as **Void**
 
@@ -134,39 +134,39 @@ API 级别 1.0.0
 
 - [**drawRectangle**](#drawRectangle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw a rectangle.
+    绘制矩形。
 
 - [**drawRoundedRectangle**](#drawRoundedRectangle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Draw a rounded rectangle.
+    绘制圆角矩形。
 
 - [**drawScaledBitmap**](#drawScaledBitmap-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type)) as **Void**
 
-    Draw a scaled bitmap to a surface.
+    将缩放后的位图绘制到曲面上。
 
 - [**drawText**](#drawText-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), text as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Draw text at the given location.
+    在给定位置绘制文本。
 
 - [**fillCircle**](#fillCircle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Fill a circle with the foreground color.
+    使用前景色填充圆。
 
 - [**fillEllipse**](#fillEllipse-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), a as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), b as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Fill an ellipse with the foreground color.
+    使用前景色填充椭圆。
 
 - [**fillPolygon**](#fillPolygon-instance_function)(pts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>) as **Void**
 
-    Fill a polygon with the foreground color.
+    使用前景色填充多边形。
 
 - [**fillRectangle**](#fillRectangle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Fill a rectangle with the foreground color.
+    使用前景色填充矩形。
 
 - [**fillRoundedRectangle**](#fillRoundedRectangle-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Fill a rounded rectangle with the foreground color.
+    使用前景色填充圆角矩形。
 
 - [**getFontHeight**](#getFontHeight-instance_function)(font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -190,7 +190,7 @@ API 级别 1.0.0
 
 - [**setAntiAlias**](#setAntiAlias-instance_function)(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Enable anti-aliased drawing for primitives This method is not supported for a [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) that has a palette.
+    启用图元的抗锯齿绘制。此方法不支持带有调色板的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)。
 
 - [**setBlendMode**](#setBlendMode-instance_function)(mode as [Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module)) as **Void**
 
@@ -221,7 +221,7 @@ API 级别 1.0.0
 
 ### **clear()** as **Void**
 
-Erase the screen using the background color.
+使用背景色擦除屏幕。
 
 注意：
 
@@ -338,7 +338,7 @@ API 级别 4.2.1
 
 ### **drawArc(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), r as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), attr as [Graphics.ArcDirection](/connect-iq/api-docs/Toybox/Graphics/#ArcDirection-module), degreeStart as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), degreeEnd as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw an arc.
+绘制弧线。
 
 - 0 degrees: 3 o'clock position.
 
@@ -386,7 +386,7 @@ API 级别 1.2.0
 
 ### **drawBitmap(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type))** as **Void**
 
-Draw a bitmap to the screen.
+将位图绘制到屏幕上。
 
 注意：
 
@@ -564,7 +564,7 @@ Throws:
 
 ### **drawCircle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw a circle around a point.
+围绕某个点绘制圆。
 
 Parameters:
 
@@ -587,7 +587,7 @@ API 级别 1.0.0
 
 ### **drawEllipse(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), a as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), b as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw an ellipse around a point.
+围绕某个点绘制椭圆。
 
 Parameters:
 
@@ -614,7 +614,7 @@ API 级别 1.0.0
 
 ### **drawLine(x1 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y1 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), x2 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y2 as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw a line between two points.
+在两个点之间绘制线段。
 
 Parameters:
 
@@ -641,7 +641,7 @@ API 级别 1.0.0
 
 ### **drawOffsetBitmap(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapWidth as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmapHeight as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type))** as **Void**
 
-Draw a bitmap to the screen with an offset.
+使用偏移量将位图绘制到屏幕上。
 
 Parameters:
 
@@ -747,7 +747,7 @@ Throws:
 
 ### **drawPoint(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw a point on the screen.
+在屏幕上绘制点。
 
 Parameters:
 
@@ -871,7 +871,7 @@ API 级别 4.2.1
 
 ### **drawRectangle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw a rectangle.
+绘制矩形。
 
 Parameters:
 
@@ -898,7 +898,7 @@ API 级别 1.0.0
 
 ### **drawRoundedRectangle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Draw a rounded rectangle.
+绘制圆角矩形。
 
 Parameters:
 
@@ -929,7 +929,7 @@ API 级别 1.0.0
 
 ### **drawScaledBitmap(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type))** as **Void**
 
-Draw a scaled bitmap to a surface.
+将缩放后的位图绘制到曲面上。
 
 Parameters:
 
@@ -1027,7 +1027,7 @@ Throws:
 
 ### **drawText(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), font as [Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type), text as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, justification as [Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Draw text at the given location.
+在给定位置绘制文本。
 
 This method is not supported for anti-aliased fonts (including most built in fonts) for a [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) that has a palette.
 
@@ -1071,7 +1071,7 @@ Throws:
 
 ### **fillCircle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Fill a circle with the foreground color.
+使用前景色填充圆。
 
 Parameters:
 
@@ -1094,7 +1094,7 @@ API 级别 1.0.0
 
 ### **fillEllipse(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), a as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), b as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Fill an ellipse with the foreground color.
+使用前景色填充椭圆。
 
 Parameters:
 
@@ -1121,7 +1121,7 @@ API 级别 1.0.0
 
 ### **fillPolygon(pts as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)\>)** as **Void**
 
-Fill a polygon with the foreground color.
+使用前景色填充多边形。
 
 Parameters:
 
@@ -1136,7 +1136,7 @@ API 级别 1.0.0
 
 ### **fillRectangle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Fill a rectangle with the foreground color.
+使用前景色填充矩形。
 
 Parameters:
 
@@ -1163,7 +1163,7 @@ API 级别 1.0.0
 
 ### **fillRoundedRectangle(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), radius as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Fill a rounded rectangle with the foreground color.
+使用前景色填充圆角矩形。
 
 Parameters:
 
@@ -1300,7 +1300,7 @@ API 级别 1.0.0
 
 ### **setAntiAlias(enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Enable anti-aliased drawing for primitives This method is not supported for a [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) that has a palette.
+启用图元的抗锯齿绘制。此方法不支持带有调色板的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)。
 
 Parameters:
 

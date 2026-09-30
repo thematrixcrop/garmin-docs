@@ -178,7 +178,7 @@ API 级别 3.0.0
 
 - [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Distance (m).
+    距离（m）。
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -189,7 +189,7 @@ API 级别 3.0.0
 
 ### var distance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Distance (m)
+距离（m）
 
 Since:
 

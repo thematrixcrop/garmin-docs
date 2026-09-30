@@ -75,7 +75,7 @@ API 级别 2.1.0
 
 - [**draw**](#draw-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
-    Draw the Selectable to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+    将 Selectable 绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 - [**getState**](#getState-instance_function)() as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
 
@@ -152,7 +152,7 @@ Returns:
 
 ### **draw(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))** as **Void**
 
-Draw the Selectable to the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Selectable 绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
 此方法假定设备上下文已经配置为正确的选项。
 

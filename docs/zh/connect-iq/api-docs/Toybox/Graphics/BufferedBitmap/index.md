@@ -162,7 +162,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Dictionary of options. Must contain width and height, with optional palette, or a [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/). This resource is not allowed to have an alpha channel.
+    选项 Dictionary。必须包含 width 和 height，可选 palette，或为 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)。此资源不得包含 alpha 通道。
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

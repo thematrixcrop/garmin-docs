@@ -1110,7 +1110,7 @@ Multisport leg started
 
 - [**createSession**](#createSession-instance_function)(options as { :sport as [ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type) or [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module) or [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module), :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :poolLength as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), :sensorLogger as [SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), :autoLap as { :type as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :entry as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \], :exit as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] } }) as [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
-    Create a [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) object with options determined by the caller.
+    创建一个由调用方确定选项的 [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) 对象。
 
 
 ## 类型定义详情
@@ -1125,7 +1125,7 @@ API 级别 1.0.0
 
 ### **createSession(options as { :sport as [ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type) or [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module), :subSport as [ActivityRecording.SubSport](/connect-iq/api-docs/Toybox/ActivityRecording/#SubSport-module) or [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module), :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :poolLength as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), :sensorLogger as [SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/), :autoLap as { :type as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), :entry as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \], :exit as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] } })** as [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
-Create a [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) object with options determined by the caller.
+创建一个由调用方确定选项的 [Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) 对象。
 
 Only one Session object is allowed to exist at a time. If there is an existing object that has not been closed using the [save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function) or [discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function) methods, this method will return that object instead of creating a new one. On some products running the 1.x virtual machine, creating a Session object requires a large memory allocation. To free this memory, the Session must first be successfully saved or discarded, and then app references to the Session object should be set to `null`.
 

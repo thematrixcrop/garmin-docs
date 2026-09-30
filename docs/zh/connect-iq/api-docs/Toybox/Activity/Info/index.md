@@ -112,7 +112,7 @@ API 级别 1.0.0
 
 - [**elapsedTime**](#elapsedTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Elapsed time of the current activity in milliseconds (ms).
+    当前活动的已用时间，单位为毫秒（ms）。
 
 - [**elevationAtDestination**](#elevationAtDestination-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1570,7 +1570,7 @@ Returns:
 
 ### var elapsedTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Elapsed time of the current activity in milliseconds (ms).
+当前活动的已用时间，单位为毫秒（ms）。
 
 Since:
 

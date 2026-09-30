@@ -92,7 +92,7 @@ API 级别 1.0.0
 
 - [**respirationRate**](#respirationRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Current respiration rate for the user, in breaths per minute Value may be `null`.
+    用户当前的呼吸频率，单位为每分钟呼吸次数。值可能为 `null`。
 
 - [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1672,7 +1672,7 @@ Returns:
 
 ### var respirationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Current respiration rate for the user, in breaths per minute Value may be `null`.
+用户当前的呼吸频率，单位为每分钟呼吸次数。值可能为 `null`。
 
 Since:
 

@@ -26,11 +26,11 @@ API 级别 1.0.0
 
 - [**channelType**](#channelType-var) as [Ant.ChannelType](/connect-iq/api-docs/Toybox/Ant/#ChannelType-module)
 
-    Defines the type of channel.
+    定义通道的类型。
 
 - [**network**](#network-var) as [Ant.NetworkType](/connect-iq/api-docs/Toybox/Ant/#NetworkType-module)
 
-    Defines the type of network the channel should operate under.
+    定义通道应在其上运行的网络类型。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -52,7 +52,7 @@ API 级别 1.0.0
 
 ### var channelType as [Ant.ChannelType](/connect-iq/api-docs/Toybox/Ant/#ChannelType-module)
 
-Defines the type of channel.
+定义通道的类型。
 
 The channel can be defined to primarily send data (master) or receive data(slave). The channel type is set via the [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) constant passed to the [Ant.ChannelAssignment.initialize()](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/#initialize-instance_function) function for the `channelType` parameter.
 
@@ -62,7 +62,7 @@ API 级别 1.0.0
 
 ### var network as [Ant.NetworkType](/connect-iq/api-docs/Toybox/Ant/#NetworkType-module)
 
-Defines the type of network the channel should operate under.
+定义通道应在其上运行的网络类型。
 
 The network is set via the [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) constant passed to the [Ant.ChannelAssignment.initialize()](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/#initialize-instance_function) function for the `network` parameter.
 

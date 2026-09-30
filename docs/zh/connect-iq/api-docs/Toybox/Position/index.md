@@ -321,7 +321,7 @@ Enable special mode for aviation use-cases that require support for higher altit
 
 - [**createBoundingBox**](#createBoundingBox-instance_function)(locations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] or **Null**
 
-    Create a bounding box from an array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects.
+    从 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象数组创建边界框。
 
 - [**enableLocationEvents**](#enableLocationEvents-instance_function)(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**) as **Void**
 
@@ -337,14 +337,14 @@ Enable special mode for aviation use-cases that require support for higher altit
 
 - [**parse**](#parse-instance_function)(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-    Convert a String to a Location object.
+    将 String 转换为 Location 对象。
 
 
 ## 实例方法详情
 
 ### **createBoundingBox(locations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>)** as \[ [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) \] or **Null**
 
-Create a bounding box from an array of [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects.
+从 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象数组创建边界框。
 
 Parameters:
 
@@ -997,7 +997,7 @@ API 级别 3.3.6
 
 ### **parse(string as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), format as [Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module))** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
-Convert a String to a Location object.
+将 String 转换为 Location 对象。
 
 The input String must be in one of the four formats described by the [Position.GEO\_\*](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module) constants.
 

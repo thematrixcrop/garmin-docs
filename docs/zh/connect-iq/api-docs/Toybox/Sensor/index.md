@@ -346,7 +346,7 @@ Onboard Sensor
 
 - [**disableSensorType**](#disableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Disable the given sensor type for use.
+    禁用指定传感器类型以供使用。
 
 - [**enableSensorEvents**](#enableSensorEvents-instance_function)(listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(info as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)) as **Void**) as **Void**
 
@@ -354,7 +354,7 @@ Onboard Sensor
 
 - [**enableSensorType**](#enableSensorType-instance_function)(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Enable the given sensor type for use.
+    启用指定传感器类型以供使用。
 
 - [**getInfo**](#getInfo-instance_function)() as [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
@@ -398,7 +398,7 @@ Onboard Sensor
 
 - [**setEnabledSensors**](#setEnabledSensors-instance_function)(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
 
-    Enable sensors for use.
+    启用传感器以供使用。
 
 - [**unregisterSensorDataListener**](#unregisterSensorDataListener-instance_function)() as **Void**
 
@@ -417,7 +417,7 @@ API 级别 1.0.0
 
 ### **disableSensorType(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Disable the given sensor type for use.
+禁用指定传感器类型以供使用。
 
 Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
 
@@ -474,7 +474,7 @@ API 级别 1.0.0
 
 ### **enableSensorType(sensorType as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Enable the given sensor type for use.
+启用指定传感器类型以供使用。
 
 Unlike the existing setEnabledSensors() function, this will not enable/disable other sensor types.
 
@@ -1646,7 +1646,7 @@ Throws:
 
 ### **setEnabledSensors(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
 
-Enable sensors for use.
+启用传感器以供使用。
 
 This will enable both connected ANT+ sensors and system sensors if possible.
 
