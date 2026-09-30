@@ -7,7 +7,7 @@ title: "Monkey Types"
 
 子类型的目标如下:
 
-1.  **兼容性** - Breaking changes to the Monkey C language would require rework to thousands of Connect IQ apps. Monkey Types extends the Monkey C grammar but avoids breaking changes. Monkey Types is also designed to not rely on additional run time information. Because of this, you can use Monkey Types for apps that run on all Connect IQ compatible devices.
+1.  **兼容性** - Monkey C 语言的破坏性变更会导致数千个 Connect IQ 应用需要返工。Monkey Types 扩展了 Monkey C 语法，同时避免破坏性变更。Monkey Types 的设计也不依赖额外的运行时信息。因此，您可以在所有兼容 Connect IQ 的设备上运行的应用中使用 Monkey Types。
 
 2. **使用方便** - 子C的哲学是要是你不知道你已经知道的语言*.我们希望写子C的经验就像 deja-vu.同样,子类型在设计中借鉴了科特林,斯威夫特和类型.
 
@@ -16,12 +16,12 @@ title: "Monkey Types"
 
 连接IQ类型检查器默认被禁用,并通过`-l`编译器选项启用.类型检查有四个级别:
 
-| Option | Level | 说明 |
+| 选项 | 级别 | 说明 |
 | --- | --- | --- |
-| `-l 0` | Silent |没有类型检查; 保持所有动态类型|
-| `-l 1` | Gradual |输入检查任何输入可以推断的语句,否则保持沉默|
-| `-l 2` | Informative | 仅检查已输入的类型，对歧义发出警告 |
-| `-l 3` | Strict | 不允许编译器产生歧义 |
+| `-l 0` | 静默 | 不进行类型检查；保持所有动态类型 |
+| `-l 1` | 渐进 | 检查可以推断类型的语句，否则保持沉默 |
+| `-l 2` | 提示 | 仅检查已输入的类型，并对歧义发出警告 |
+| `-l 3` | 严格 | 不允许编译器产生歧义 |
 
 让我们来介绍一种新的语法来将类型信息传达到类型系统.
 
@@ -183,7 +183,7 @@ function example() {
 }
 ```
 
-Note that concrete types do not implicitly accept `null` as a value. If you want a value to also accept `null` you must make a poly type (see [`Null`](#null) 更多信息).
+请注意，具体类型不会隐式接受 `null` 作为值。如果希望某个值同时接受 `null`，必须创建多类型（有关详细信息，请参阅 [`Null`](#null)）。
 
 ### Poly
 
@@ -262,7 +262,7 @@ typedef ContainerB as Dictionary<String, Number>;
 
 容器类型只能匹配其他容器类型,如果键类型和值类型均等.一个`Array<String>`只匹配一个`Array<String>`而不是一个`Array<String or Number>`.
 
-Monkey C does not infer container types at this time, so you will need to declare your containers. If you want to create a new typed array or dictionary 您可以使用以下语法：
+Monkey C 目前不会推断容器类型，因此您需要声明容器。如果要创建新的类型化数组或字典，可以使用以下语法：
 
 ```typescript
 class ContainerClass {
