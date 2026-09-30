@@ -15,7 +15,7 @@ title: "Mobile SDK for Android"
 
 ## 其他要求
 
-In order for your companion application to communicate with a Connect IQ device the user must also install Garmin Connect Mobile onto their phone. All communication for companion applications running on Android goes through a Garmin Connect Mobile service to reach the device. When initializing the SDK with a wireless connection type this requirement is checked and initialization will fail if Garmin Connect Mobile is not installed. If true is passed to the auto UI parameter of initialize, a message is displayed to the user that they need to either install or upgrade Garmin Connect Mobile and provides them a way to go directly to the application in the Google Play Store. See `Displaying a UI message automatically when initialization fails` 更多信息.
+要让配套应用与 Connect IQ 设备通信，用户还必须在手机上安装 Garmin Connect Mobile。Android 配套应用的所有通信都会通过 Garmin Connect Mobile 服务到达设备。使用无线连接类型初始化 SDK 时，系统会检查此要求；如果未安装 Garmin Connect Mobile，初始化将失败。如果将 `true` 传递给 `initialize` 的自动 UI 参数，系统会向用户显示消息，要求其安装或升级 Garmin Connect Mobile，并提供直接前往 Google Play 商店中该应用页面的方式。有关详细信息，请参阅[初始化失败时自动显示 UI 消息](#当初始化失败时自动显示ui消息)。
 
 ##与SDK互动
 
@@ -111,7 +111,7 @@ if (paired != null && paired.size() > 0) {
 }
 ```
 
-`getConnectedDevices()` will return a list of currently connected devices. Because these devices could become disconnected at any time, it is good practice to register to receive a notification when the device connects or disconnects. See the next section 更多信息.
+`getConnectedDevices()` 会返回当前已连接设备的列表。由于这些设备可能随时断开连接，建议注册通知，以便在设备连接或断开时收到通知。有关详细信息，请参阅下一节。
 
 ```java
 List<IQDevice> devices = connectIQ.getConnectedDevices();
@@ -229,7 +229,7 @@ connectIQ.openStore( MY_STORE_ID );
 
 ## 发送消息
 
-You can send messages to your Connect IQ application on a connected device using any of the Java equivalent Monkey C data types (see *支持ed Data Types* table below). Calling `sendMessage()` will deliver the message to your applications mailbox.
+您可以使用与 Monkey C 数据类型对应的 Java 类型向已连接设备上的 Connect IQ 应用程序发送消息（请参阅下方的*支持的数据类型*表）。调用 `sendMessage()` 会将消息传递到应用程序的邮箱。
 
 ```java
 List<Object> message = new ArrayList<String>() {"hello pi", 3.14159};
@@ -271,7 +271,7 @@ connectIQ.registerForAppEvents(device, app, new IQApplicationEventListener() {
 connectIQ.unregisterForAppEvents(device, app);
 ```
 
-## 支持ed Data Types
+## 支持的数据类型
 
 |Java数据类型|子C类型| 备注 |
 | --- | --- | --- |
