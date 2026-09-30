@@ -62,7 +62,7 @@ API 级别 2.3.0
 
 - [**onWatchFaceConfigEdited**](#onWatchFaceConfigEdited-instance_function)(options as { :configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), :type as [WatchUi.WatchFaceConfigType](/connect-iq/api-docs/Toybox/WatchUi/#WatchFaceConfigType-module) or **Null**, :committed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
 
-    A watchface config change has occurred.
+    已发生表盘配置更改。
 
 - [**setSelectedComplication**](#setSelectedComplication-instance_function)(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -307,7 +307,7 @@ API 级别 5.1.0
 
 ### **onWatchFaceConfigEdited(options as { :configId as [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/), :type as [WatchUi.WatchFaceConfigType](/connect-iq/api-docs/Toybox/WatchUi/#WatchFaceConfigType-module) or **Null**, :committed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as **Void**
 
-A watchface config change has occurred.
+已发生表盘配置更改。
 
 Only available in WatchFace config mode, application can call [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) to retrieve the current settings.
 

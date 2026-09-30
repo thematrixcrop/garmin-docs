@@ -255,7 +255,7 @@ API 级别 2.2.0
 
 - [**toggleSignalLight**](#toggleSignalLight-instance_function)(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    A signal switch for right and left signals.
+    用于右转向灯和左转向灯的信号开关。
 
 
 ## 实例方法详情
@@ -372,7 +372,7 @@ API 级别 2.2.0
 
 ### **toggleSignalLight(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-A signal switch for right and left signals.
+用于右转向灯和左转向灯的信号开关。
 
 - If signal light is engaged, disengage it.
 

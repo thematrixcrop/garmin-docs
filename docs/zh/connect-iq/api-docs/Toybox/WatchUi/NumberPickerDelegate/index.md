@@ -106,14 +106,14 @@ API 级别 1.0.0
 
 - [**onNumberPicked**](#onNumberPicked-instance_function)(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A number was entered in a NumberPicker.
+    在 NumberPicker 中输入了一个数字。
 
 
 ## 实例方法详情
 
 ### **onNumberPicked(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A number was entered in a NumberPicker.
+在 NumberPicker 中输入了一个数字。
 
 This method is called when a number has been specified by a NumberPicker, and receives the numeric value as an argument.
 

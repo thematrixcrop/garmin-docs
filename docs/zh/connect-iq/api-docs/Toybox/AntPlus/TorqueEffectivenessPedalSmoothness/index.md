@@ -191,7 +191,7 @@ Returns:
 
 Left torque effectiveness.
 
-0xFF: Invalid or negative values (%).
+0xFF：无效值或负值（%）。
 
 Example:
 
@@ -241,7 +241,7 @@ Returns:
 
 Right torque effectiveness.
 
-0xFF: Invalid or negative values (%).
+0xFF：无效值或负值（%）。
 
 Example:
 

@@ -955,7 +955,7 @@ API 级别 6.0.0
 
 - [**setMailboxListener**](#setMailboxListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(mailboxIterator as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)) as **Void**) as **Void** deprecated
 
-    Add a listener for mailbox events.
+    为邮箱事件添加侦听器。
 
 - [**startSync**](#startSync-instance_function)() as **Void**
 
@@ -1827,7 +1827,7 @@ API 级别 1.0.0
 
 Request an OAuth sign-in through Garmin Connect Mobile.
 
-A notification will trigger on the phone, that when clicked, provides a web view that shows `requestUrl`. If the user grants permission to the app, then the callback registered by [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) will be called with an [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) from the OAuth response.
+手机上将触发通知；点击该通知后会显示一个展示 `requestUrl` 的 Web 视图。如果用户授予应用权限，则 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) 注册的回调将使用 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) 进行调用。
 
 注意：
 
@@ -2072,7 +2072,7 @@ Parameters:
 
 - errorMessage — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    A descriptive error message if a failure occurred. If the sync completes successfully, `null` should be passed to this method.
+    如果发生失败，则为描述性错误消息。如果同步成功完成，则应将 `null` 传递给此方法。
 
 
 :::details 支持的设备
@@ -2685,7 +2685,7 @@ API 级别 1.4.0
 
 此方法可能在 System 4 之后移除。
 
-Add a listener for mailbox events.
+为邮箱事件添加侦听器。
 
 The listener method is called whenever a new message is received.
 

@@ -70,7 +70,7 @@ How the OAuth request will be signed
 
 Request an OAuth sign-in through Garmin Connect IQ Mobile App
 
-A notification will trigger on the phone, that when clicked, provides a web view that shows `requestUrl`. If the user grants permission to the app, then the callback registered by [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function) will be called with an [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) from the OAuth response.
+手机上将触发通知；点击该通知后会显示一个展示 `requestUrl` 的 Web 视图。如果用户授予应用权限，则 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function) 注册的回调将使用 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 进行调用。
 
 Parameters:
 

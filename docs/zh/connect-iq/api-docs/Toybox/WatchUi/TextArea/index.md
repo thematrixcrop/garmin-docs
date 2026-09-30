@@ -119,7 +119,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing the options for the Text object
+    包含 Text 对象选项的 Dictionary
 
 - :text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -127,11 +127,11 @@ Parameters:
 
 - :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value representing the desired text color, defaults to COLOR\_WHITE
+        表示所需文本颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值，默认为 COLOR\_WHITE
 
 - :backgroundColor — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-        A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value representing the desired background color, defaults to COLOR\_TRANSPARENT
+        表示所需背景颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值，默认为 COLOR\_TRANSPARENT
 
 - :font — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
@@ -139,7 +139,7 @@ Parameters:
 
 - :justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module)) —
 
-        A [Graphics.TEXT\_JUSTIFY\_\*](/connect-iq/api-docs/Toybox/Graphics/#TEXT_JUSTIFY_RIGHT-const) value representing the desired justification, defaults to TEXT\_JUSTIFY\_LEFT
+        表示所需对齐方式的一个 [Graphics.TEXT\_JUSTIFY\_\*](/connect-iq/api-docs/Toybox/Graphics/#TEXT_JUSTIFY_RIGHT-const) 值，默认为 TEXT\_JUSTIFY\_LEFT
 
 
 另见：
@@ -159,7 +159,7 @@ Parameters:
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value representing the desired background color
+    表示所需背景颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值
 
 
 Since:
@@ -181,7 +181,7 @@ Parameters:
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
-    A [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) value representing the desired text color
+    表示所需文本颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值
 
 
 Since:
@@ -230,7 +230,7 @@ Parameters:
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module)) —
 
-    A [Graphics.TEXT\_JUSTIFY\_\*](/connect-iq/api-docs/Toybox/Graphics/#TEXT_JUSTIFY_RIGHT-const) value representing the desired justification
+    表示所需对齐方式的一个 [Graphics.TEXT\_JUSTIFY\_\*](/connect-iq/api-docs/Toybox/Graphics/#TEXT_JUSTIFY_RIGHT-const) 值
 
 
 Since:

@@ -348,7 +348,7 @@ Parameters:
 
 - format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
-    A Time.FORMAT\_\* type
+    一个 Time.FORMAT\_\* 类型
 
 
 Example:
@@ -595,7 +595,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A Moment representing the specified moment in time
+    表示指定时刻的一个 Moment
 
 
 另见：
@@ -621,7 +621,7 @@ Parameters:
 
 - format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
-    A Time.FORMAT\_\* type
+    一个 Time.FORMAT\_\* 类型
 
 
 Example:

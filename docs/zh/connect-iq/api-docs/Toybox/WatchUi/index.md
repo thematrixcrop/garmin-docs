@@ -711,7 +711,7 @@ API 级别 1.0.0
 
 |
 
-A Float in meters (m)
+以米（m）为单位的一个 Float
 
 |
 | NUMBER\_PICKER\_TIME | 1 |
@@ -720,7 +720,7 @@ API 级别 1.0.0
 
 |
 
-A Duration
+一个 Duration
 
 |
 | NUMBER\_PICKER\_TIME\_MIN\_SEC | 2 |
@@ -729,7 +729,7 @@ API 级别 1.0.0
 
 |
 
-A Duration
+一个 Duration
 
 |
 | NUMBER\_PICKER\_TIME\_OF\_DAY | 3 |
@@ -756,7 +756,7 @@ API 级别 1.0.0
 
 |
 
-A Float in meters (m)
+以米（m）为单位的一个 Float
 
 |
 | NUMBER\_PICKER\_CALORIES | 6 |
@@ -765,7 +765,7 @@ API 级别 1.0.0
 
 |
 
-A Number
+一个数字
 
 |
 | NUMBER\_PICKER\_BIRTH\_YEAR | 7 |
@@ -774,7 +774,7 @@ API 级别 1.0.0
 
 |
 
-A Number
+一个数字
 
 |
 

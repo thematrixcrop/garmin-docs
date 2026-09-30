@@ -58,7 +58,7 @@ API 级别 2.1.0
 
 - [**behavior**](#behavior-var) as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) or **Null**
 
-    A Symbol describing the behavior method executed when button is selected.
+    描述按钮被选中时执行的行为方法的 Symbol。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -90,7 +90,7 @@ Returns:
 
 ### var behavior as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) or **Null**
 
-A Symbol describing the behavior method executed when button is selected.
+描述按钮被选中时执行的行为方法的 Symbol。
 
 This Symbol must be a member of the active View object's registered BehaviorDelegate, such as :onBack, but may also be a Symbol from an extended class. If the value is `null`, then a [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/) will be issued.
 

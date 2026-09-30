@@ -358,7 +358,7 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    A Long representation of the String
+    String 的 Long 表示形式
 
 
 Since:
@@ -379,7 +379,7 @@ Parameters:
 
 - An optional prefix for octal or hexadecimal ('0' or '0x')
 
-- A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
+- 指定前缀进制中的一串数字；如果未指定进制，则为十进制。如果进制值介于 2 和 36 之间，则该数字的格式必须是表示指定基数的有效数字和/或字母（从 '0' 到 'z'，或在基数为 36 时使用 'Z'）。
 
 
 
@@ -401,7 +401,7 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    A Long representation of the String
+    String 的 Long 表示形式
 
 
 Since:
@@ -452,7 +452,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A Number representation of the String
+    字符串的数字表示
 
 
 Since:
@@ -473,7 +473,7 @@ Parameters:
 
 - An optional prefix for octal or hexadecimal ('0' or '0x')
 
-- A sequence of digits in the prefixed base, or decimal if none was specified. If the base value is between 2 and 36, the format expected for the number is valid digits and/or letters that represent integers of the specified radix (from '0' to 'z' or 'Z' for base 36).
+- 指定前缀进制中的一串数字；如果未指定进制，则为十进制。如果进制值介于 2 和 36 之间，则该数字的格式必须是表示指定基数的有效数字和/或字母（从 '0' 到 'z'，或在基数为 36 时使用 'Z'）。
 
 
 
@@ -495,7 +495,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A Number representation of the String
+    字符串的数字表示
 
 
 Since:

@@ -26,11 +26,11 @@ API 级别 1.0.0
 
 - [**add**](#add-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-    Add an Object to the end of an Array.
+    将一个对象添加到 Array 的末尾。
 
 - [**addAll**](#addAll-instance_function)(array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-    Add an Array of Objects to the end of an Array.
+    将一个对象数组添加到 Array 的末尾。
 
 - [**indexOf**](#indexOf-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -69,7 +69,7 @@ API 级别 1.0.0
 
 ### **add(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-Add an Object to the end of an Array.
+将一个对象添加到 Array 的末尾。
 
 When adding an Object, the Array size is increased by one and the new Object is inserted at the new index.
 
@@ -93,7 +93,7 @@ API 级别 1.3.0
 
 ### **addAll(array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
-Add an Array of Objects to the end of an Array.
+将一个对象数组添加到 Array 的末尾。
 
 When adding an Array of Objects, the Array is expanded by the size of the provided Array, and all of the new elements are inserted starting at the new index.
 

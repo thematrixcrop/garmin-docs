@@ -289,7 +289,7 @@ Parameters:
 
 - An increment from 0 to 100
 
-- `null` for "busy"
+- `null` 表示“忙”
 
 
 
@@ -324,7 +324,7 @@ Parameters:
 
 - An increment from 0 to 100
 
-- `null` for "busy"
+- `null` 表示“忙”
 
 
 

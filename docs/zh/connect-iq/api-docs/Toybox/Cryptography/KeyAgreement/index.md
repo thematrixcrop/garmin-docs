@@ -267,7 +267,7 @@ API 级别 3.0.0
 
 - [**addKey**](#addKey-instance_function)(key as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) as **Void**
 
-    Add a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) to KeyAgreement.
+    将一个公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 添加到 KeyAgreement。
 
 - [**generateSecret**](#generateSecret-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -282,7 +282,7 @@ API 级别 3.0.0
 
 ### **addKey(key as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/))** as **Void**
 
-Add a public [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) to KeyAgreement.
+将一个公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 添加到 KeyAgreement。
 
 Parameters:
 

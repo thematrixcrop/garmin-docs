@@ -234,7 +234,7 @@ API 级别 3.0.0
 
 - [**onFooter**](#onFooter-instance_function)() as **Void**
 
-    A CustomMenu footer was selected.
+    已选择 CustomMenu 页脚。
 
 - [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -246,15 +246,15 @@ API 级别 3.0.0
 
 - [**onSelect**](#onSelect-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
 
-    A Menu2 MenuItem was selected.
+    已选择一个 Menu2 MenuItem。
 
 - [**onTitle**](#onTitle-instance_function)() as **Void**
 
-    A CustomMenu title was selected.
+    已选择 CustomMenu 标题。
 
 - [**onWrap**](#onWrap-instance_function)(key as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A Menu2 is preparing to wrap.
+    Menu2 正在准备换行。
 
 
 ## 实例方法详情
@@ -277,7 +277,7 @@ API 级别 3.0.0
 
 ### **onFooter()** as **Void**
 
-A CustomMenu footer was selected.
+已选择 CustomMenu 页脚。
 
 This method is triggered on products with touch input when the user selects the footer area of a CustomMenu.
 
@@ -325,7 +325,7 @@ API 级别 5.1.0
 
 ### **onSelect(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/))** as **Void**
 
-A Menu2 MenuItem was selected.
+已选择一个 Menu2 MenuItem。
 
 Parameters:
 
@@ -340,7 +340,7 @@ API 级别 3.0.0
 
 ### **onTitle()** as **Void**
 
-A CustomMenu title was selected.
+已选择 CustomMenu 标题。
 
 This method is triggered on products with touch input when the user selects the title area of a CustomMenu.
 
@@ -354,7 +354,7 @@ API 级别 3.0.0
 
 ### **onWrap(key as [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A Menu2 is preparing to wrap.
+Menu2 正在准备换行。
 
 This method is triggered on button-based products when the user attempts to navigate off the end of a menu. If this method returns `false` the list will not wrap to the opposite end. If this method is not overridden, it will return `true` and allow the menu to wrap.
 

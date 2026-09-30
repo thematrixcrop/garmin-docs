@@ -30,7 +30,7 @@ API 级别 1.0.0
 
 - [**add**](#add-instance_function)(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Add a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or another Duration to a Duration.
+    将一个 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 或另一个 Duration 添加到 Duration。
 
 - [**compare**](#compare-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -69,7 +69,7 @@ API 级别 1.0.0
 
 ### **add(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Add a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or another Duration to a Duration.
+将一个 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 或另一个 Duration 添加到 Duration。
 
 When adding a Moment to a Duration, this method functions the same as the [Moment.add()](/connect-iq/api-docs/Toybox/Time/Moment/#add-instance_function) method.
 

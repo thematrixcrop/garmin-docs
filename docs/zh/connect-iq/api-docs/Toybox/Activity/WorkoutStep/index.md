@@ -235,7 +235,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A value whose meaning is dependent on the value of targetType
+    其含义取决于 targetType 值的值
 
 
 ### var targetValueLow as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -250,4 +250,4 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A value whose meaning is dependent on the value of targetType
+    其含义取决于 targetType 值的值

@@ -255,7 +255,7 @@ API 级别 3.0.0
 
 - [**addItem**](#addItem-instance_function)(item as [WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) as **Void**
 
-    Add a CustomMenuItem to a CustomMenu.
+    将 CustomMenuItem 添加到 CustomMenu。
 
 - [**drawFooter**](#drawFooter-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
@@ -298,7 +298,7 @@ API 级别 3.0.0
 
 ### **addItem(item as [WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/))** as **Void**
 
-Add a CustomMenuItem to a CustomMenu.
+将 CustomMenuItem 添加到 CustomMenu。
 
 Parameters:
 
@@ -405,7 +405,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options. Can be `null`
+    包含选项的 Dictionary。可以为 `null`
 
 - :focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

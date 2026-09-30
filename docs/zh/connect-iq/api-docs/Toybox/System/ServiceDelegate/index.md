@@ -67,7 +67,7 @@ API 级别 2.3.0
 
 - [**onGoalReached**](#onGoalReached-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
-    A callback method that is triggered in the background when a fitness goal is reached.
+    在达到健身目标时于后台触发的回调方法。
 
 - [**onOAuthResponse**](#onOAuthResponse-instance_function)() as **Void**
 
@@ -87,11 +87,11 @@ API 级别 2.3.0
 
 - [**onTemporalEvent**](#onTemporalEvent-instance_function)() as **Void**
 
-    A callback method that is triggered in the background when time-based events occur.
+    在基于时间的事件发生时于后台触发的回调方法。
 
 - [**onWakeTime**](#onWakeTime-instance_function)() as **Void**
 
-    A callback method that is triggered in the background at the configured wake time.
+    在配置的唤醒时间于后台触发的回调方法。
 
 
 ## 实例方法详情
@@ -121,7 +121,7 @@ API 级别 3.0.10
 
 ### **onGoalReached(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
-A callback method that is triggered in the background when a fitness goal is reached.
+在达到健身目标时于后台触发的回调方法。
 
 Parameters:
 
@@ -313,7 +313,7 @@ API 级别 2.3.0
 
 ### **onTemporalEvent()** as **Void**
 
-A callback method that is triggered in the background when time-based events occur.
+在基于时间的事件发生时于后台触发的回调方法。
 
 Since:
 
@@ -321,7 +321,7 @@ API 级别 2.3.0
 
 ### **onWakeTime()** as **Void**
 
-A callback method that is triggered in the background at the configured wake time.
+在配置的唤醒时间于后台触发的回调方法。
 
 Since:
 

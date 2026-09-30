@@ -151,7 +151,7 @@ API 级别 3.0.0
 
 - [**setMapMarker**](#setMapMarker-instance_function)(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>) as **Void**
 
-    Add a [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of MapMarker objects to be rendered on the map.
+    将一个 [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象或 MapMarker 对象的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到地图以进行渲染。
 
 - [**setMapMode**](#setMapMode-instance_function)(mode as [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) as **Void**
 
@@ -163,7 +163,7 @@ API 级别 3.0.0
 
 - [**setPolyline**](#setPolyline-instance_function)(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) as **Void**
 
-    Add [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object to be rendered on the map.
+    将 [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象添加到地图以进行渲染。
 
 - [**setScreenVisibleArea**](#setScreenVisibleArea-instance_function)(topLeftX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), topLeftY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), bottomRightY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
@@ -207,7 +207,7 @@ API 级别 3.0.0
 
 ### **setMapMarker(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>)** as **Void**
 
-Add a [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of MapMarker objects to be rendered on the map.
+将一个 [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象或 MapMarker 对象的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到地图以进行渲染。
 
 Parameters:
 
@@ -275,7 +275,7 @@ Throws:
 
 ### **setPolyline(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/))** as **Void**
 
-Add [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) object to be rendered on the map.
+将 [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象添加到地图以进行渲染。
 
 Parameters:
 

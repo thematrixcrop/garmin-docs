@@ -245,7 +245,7 @@ Returns:
 
 - [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
-    A Position.QUALITY\_\* value
+    一个 Position.QUALITY\_\* 值
 
 
 ### var altitude as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**

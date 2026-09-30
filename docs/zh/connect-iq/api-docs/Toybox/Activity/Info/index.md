@@ -1047,7 +1047,7 @@ Returns:
 
 - [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
-    A Position.QUALITY\_\* value
+    一个 Position.QUALITY\_\* 值
 
 
 ### var currentOxygenSaturation as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**

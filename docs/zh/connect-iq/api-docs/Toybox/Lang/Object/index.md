@@ -72,7 +72,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if Objects are equal, otherwise `false`
+    如果对象相等，则为 `true`，否则为 `false`
 
 
 Since:

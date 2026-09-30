@@ -780,7 +780,7 @@ Parameters:
 
 - errorMessage — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    A descriptive error message if a failure occurred. If the sync completes successfully, `null` should be passed to this method.
+    如果发生失败，则为描述性错误消息。如果同步成功完成，则应将 `null` 传递给此方法。
 
 
 另见：

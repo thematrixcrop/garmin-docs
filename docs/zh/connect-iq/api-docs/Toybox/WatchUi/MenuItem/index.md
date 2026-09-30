@@ -372,7 +372,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options. Can be `null`
+    包含选项的 Dictionary。可以为 `null`
 
 - :alignment — ([MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module)) —
 

@@ -67,14 +67,14 @@ API 级别 1.0.0
 
 - [**onResponse**](#onResponse-instance_function)(response as [WatchUi.Confirm](/connect-iq/api-docs/Toybox/WatchUi/#Confirm-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A confirmation selection was made.
+    已进行确认选择。
 
 
 ## 实例方法详情
 
 ### **onResponse(response as [WatchUi.Confirm](/connect-iq/api-docs/Toybox/WatchUi/#Confirm-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A confirmation selection was made.
+已进行确认选择。
 
 This method is called when a [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) response is selected, and receives the response as an argument. The response is either a [CONFIRM\_NO](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) or [CONFIRM\_YES](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_YES-const) value.
 

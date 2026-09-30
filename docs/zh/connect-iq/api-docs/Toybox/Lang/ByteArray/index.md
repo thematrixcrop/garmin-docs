@@ -26,11 +26,11 @@ API 级别 3.0.0
 
 - [**add**](#add-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Add a byte to the end of a ByteArray.
+    将一个字节添加到 ByteArray 的末尾。
 
 - [**addAll**](#addAll-instance_function)(array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-    Add a ByteArray or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of bytes to the end of a ByteArray.
+    将一个 ByteArray 或字节的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到 ByteArray 的末尾。
 
 - [**decodeNumber**](#decodeNumber-instance_function)(format as [Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module), options as { :offset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :endianness as [Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module) }) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
@@ -81,7 +81,7 @@ API 级别 3.0.0
 
 ### **add(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Add a byte to the end of a ByteArray.
+将一个字节添加到 ByteArray 的末尾。
 
 When adding a byte, the ByteArray size is increased and new bytes are inserted at the end.
 
@@ -116,7 +116,7 @@ Throws:
 
 ### **addAll(array as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Add a ByteArray or an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of bytes to the end of a ByteArray.
+将一个 ByteArray 或字节的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到 ByteArray 的末尾。
 
 When adding an array of bytes, the ByteArray is expanded by the size of the provided ByteArray or Array, and all of the new elements are inserted starting at the new index.
 
@@ -157,7 +157,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing conversion options
+    包含转换选项的 Dictionary
 
 - :offset — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -202,7 +202,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing conversion options
+    包含转换选项的 Dictionary
 
 - :offset — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -249,7 +249,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if Objects are equal, otherwise `false`
+    如果对象相等，则为 `true`，否则为 `false`
 
 
 Since:

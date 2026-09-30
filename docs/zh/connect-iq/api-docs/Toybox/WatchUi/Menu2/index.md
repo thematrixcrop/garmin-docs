@@ -293,7 +293,7 @@ Icon divider type
 
 - [**addItem**](#addItem-instance_function)(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) as **Void**
 
-    Add a MenuItem to a Menu2.
+    将 MenuItem 添加到 Menu2。
 
 - [**deleteItem**](#deleteItem-instance_function)(index as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -348,7 +348,7 @@ Icon divider type
 
 ### **addItem(item as [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/))** as **Void**
 
-Add a MenuItem to a Menu2.
+将 MenuItem 添加到 Menu2。
 
 Parameters:
 

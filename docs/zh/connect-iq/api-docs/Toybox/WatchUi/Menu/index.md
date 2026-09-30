@@ -96,7 +96,7 @@ The maximum number of allowed entries in a Menu.
 
 - [**addItem**](#addItem-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), identifier as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
 
-    Add an entry to a Menu.
+    向 Menu 添加一个条目。
 
 - [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
@@ -107,7 +107,7 @@ The maximum number of allowed entries in a Menu.
 
 ### **addItem(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), identifier as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as **Void**
 
-Add an entry to a Menu.
+向 Menu 添加一个条目。
 
 Parameters:
 

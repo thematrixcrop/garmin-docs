@@ -87,31 +87,31 @@ API 级别 1.0.0
 
 - [**onDrag**](#onDrag-instance_function)(dragEvent as [WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A touch screen drag event has occurred.
+    已发生触摸屏拖动事件。
 
 - [**onFlick**](#onFlick-instance_function)(flickEvent as [WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A touch screen flick event has occurred.
+    已发生触摸屏快速滑动事件。
 
 - [**onHold**](#onHold-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A touch screen hold event has occurred.
+    已发生触摸屏按住事件。
 
 - [**onKey**](#onKey-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A physical button has been pressed and released.
+    已按下并释放物理按钮。
 
 - [**onKeyPressed**](#onKeyPressed-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A physical button has been pressed down.
+    已按下物理按钮。
 
 - [**onKeyReleased**](#onKeyReleased-instance_function)(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A physical button has been released.
+    已释放物理按钮。
 
 - [**onRelease**](#onRelease-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A touch screen release event has occurred.
+    已发生触摸屏释放事件。
 
 - [**onSelectable**](#onSelectable-instance_function)(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -119,7 +119,7 @@ API 级别 1.0.0
 
 - [**onSwipe**](#onSwipe-instance_function)(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A touch screen swipe event has occurred.
+    已发生触摸屏滑动事件。
 
 - [**onTap**](#onTap-instance_function)(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -130,7 +130,7 @@ API 级别 1.0.0
 
 ### **onDrag(dragEvent as [WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A touch screen drag event has occurred.
+已发生触摸屏拖动事件。
 
 This is sent when the touch screen is dragged.
 
@@ -247,7 +247,7 @@ API 级别 3.3.0
 
 ### **onFlick(flickEvent as [WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A touch screen flick event has occurred.
+已发生触摸屏快速滑动事件。
 
 This is sent when the touch screen is flicked.
 
@@ -362,7 +362,7 @@ API 级别 3.3.0
 
 ### **onHold(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A touch screen hold event has occurred.
+已发生触摸屏按住事件。
 
 This is sent when the touch screen is touched and not released.
 
@@ -391,7 +391,7 @@ API 级别 1.0.0
 
 ### **onKey(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A physical button has been pressed and released.
+已按下并释放物理按钮。
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
@@ -420,7 +420,7 @@ API 级别 1.0.0
 
 ### **onKeyPressed(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A physical button has been pressed down.
+已按下物理按钮。
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
@@ -449,7 +449,7 @@ API 级别 1.1.2
 
 ### **onKeyReleased(keyEvent as [WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A physical button has been released.
+已释放物理按钮。
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
@@ -478,7 +478,7 @@ API 级别 1.1.2
 
 ### **onRelease(clickEvent as [WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A touch screen release event has occurred.
+已发生触摸屏释放事件。
 
 This is only sent after an [onHold()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onHold-instance_function) event, once the hold on the touch screen is released.
 
@@ -536,7 +536,7 @@ API 级别 2.1.0
 
 ### **onSwipe(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A touch screen swipe event has occurred.
+已发生触摸屏滑动事件。
 
 This is sent when the touch screen is swiped.
 

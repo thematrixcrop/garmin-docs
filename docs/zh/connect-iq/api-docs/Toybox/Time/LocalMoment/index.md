@@ -212,7 +212,7 @@ API 级别 3.3.0
 
 - [**add**](#add-instance_function)(addend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
-    Add a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) to a LocalMoment.
+    将一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 添加到 LocalMoment。
 
 - [**compare**](#compare-instance_function)(moment as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -259,7 +259,7 @@ API 级别 3.3.0
 
 ### **add(addend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
-Add a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) to a LocalMoment.
+将一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 添加到 LocalMoment。
 
 Parameters:
 

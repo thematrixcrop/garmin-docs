@@ -69,14 +69,14 @@ API 级别 1.0.0
 
 - [**onMenuItem**](#onMenuItem-instance_function)(item as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) as **Void**
 
-    A Menu item was chosen.
+    已选择一个菜单项。
 
 
 ## 实例方法详情
 
 ### **onMenuItem(item as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))** as **Void**
 
-A Menu item was chosen.
+已选择一个菜单项。
 
 This method is called when a Menu item has been selected, and receives the Menu item as an argument.
 

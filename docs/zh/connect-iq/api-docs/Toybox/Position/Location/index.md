@@ -159,7 +159,7 @@ Parameters:
 
 - format — ([Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) —
 
-    A Position.GEO\_\* value
+    一个 Position.GEO\_\* 值
 
 
 Example:

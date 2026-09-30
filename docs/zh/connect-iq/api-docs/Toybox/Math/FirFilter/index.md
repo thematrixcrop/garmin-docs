@@ -89,7 +89,7 @@ Parameters:
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing filter settings.
+    包含筛选设置的 Dictionary。
 
 - :coefficients — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -97,7 +97,7 @@ Parameters:
 
 - :gain — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-        A Float value that specifies a multiplier to be applied to the coefficients.
+        指定要应用于系数的乘数的一个 Float 值。
 
 
 Since:

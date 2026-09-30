@@ -187,7 +187,7 @@ Returns:
 
     The current manufacturer information for this identifier
 
-- `null` if unknown identifier
+- 如果标识符未知，则为 `null`
 
 
 
@@ -226,7 +226,7 @@ Returns:
 
     The current product information for this identifier
 
-- `null` if unknown identifier
+- 如果标识符未知，则为 `null`
 
 
 

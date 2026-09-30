@@ -234,7 +234,7 @@ API 级别 1.1.0
 
 - [**onTextEntered**](#onTextEntered-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    A text string was entered into a TextPicker.
+    已在 TextPicker 中输入文本字符串。
 
 
 ## 实例方法详情
@@ -249,7 +249,7 @@ API 级别 1.1.0
 
 ### **onTextEntered(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-A text string was entered into a TextPicker.
+已在 TextPicker 中输入文本字符串。
 
 This method is called when text has been specified by a TextPicker, and receives the text String as an argument.
 

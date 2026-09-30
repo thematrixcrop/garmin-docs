@@ -229,7 +229,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options, can be `null`
+    包含选项的 Dictionary，可以为 `null`
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -245,7 +245,7 @@ Parameters:
 
 - :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        `true` if the layer is visible, otherwise `false` (optional, default to +true+)
+        如果图层可见，则为 `true`，否则为 `false`（可选，默认为 +true+）
 
 
 Since:
@@ -269,7 +269,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options, can be `null`
+    包含选项的 Dictionary，可以为 `null`
 
 - :delegate — ([WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)) —
 

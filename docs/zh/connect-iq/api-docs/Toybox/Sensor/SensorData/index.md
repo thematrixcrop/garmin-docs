@@ -218,7 +218,7 @@ API 级别 2.3.0
 
 - [**heartRateData**](#heartRateData-var) as [Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) or **Null**
 
-    A [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) object.
+    一个 [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) 对象。
 
 - [**magnetometerData**](#magnetometerData-var) as [Sensor.MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/) or **Null**
 
@@ -547,7 +547,7 @@ Returns:
 
 ### var heartRateData as [Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) or **Null**
 
-A [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) object.
+一个 [HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/) 对象。
 
 Can be `null` if heart rate interval data is not available.
 

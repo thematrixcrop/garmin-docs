@@ -325,7 +325,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    A [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) since local midnight
+    自本地午夜起的一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
 
 ### var upcomingSleepTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
@@ -662,7 +662,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    A [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) since local midnight
+    自本地午夜起的一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
 
 ### var walkingStepLength as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**

@@ -273,7 +273,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing the options for the Picker object
+    包含 Picker 对象选项的 Dictionary
 
 
 另见：
@@ -293,7 +293,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing the options for the Picker object
+    包含 Picker 对象选项的 Dictionary
 
 - :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 

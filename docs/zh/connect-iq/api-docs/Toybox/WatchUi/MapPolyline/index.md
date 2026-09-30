@@ -138,7 +138,7 @@ API 级别 3.0.0
 
 - [**addLocation**](#addLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>) as **Void**
 
-    Add a Location or Locations to the MapPolyline object location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
+    将一个或多个 Location 添加到 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。
 
 - [**clear**](#clear-instance_function)() as **Void**
 
@@ -165,7 +165,7 @@ API 级别 3.0.0
 
 ### **addLocation(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)\>)** as **Void**
 
-Add a Location or Locations to the MapPolyline object location [Array](/connect-iq/api-docs/Toybox/Lang/Array/).
+将一个或多个 Location 添加到 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。
 
 Parameters:
 

@@ -95,7 +95,7 @@ Parameters:
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
-    A reference to media content
+    对媒体内容的引用
 
 - metadata — ([Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)) —
 

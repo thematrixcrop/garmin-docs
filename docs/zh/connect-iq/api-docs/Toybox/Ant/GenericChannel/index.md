@@ -577,7 +577,7 @@ Parameters:
 
 - data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
-    A message whose payload is an 8-byte [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of numbers
+    其负载为由数字组成的 8 字节 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 的消息
 
 
 Example:
@@ -620,7 +620,7 @@ Parameters:
 
 - data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
-    A message whose payload is an 8-byte [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of numbers
+    其负载为由数字组成的 8 字节 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 的消息
 
 
 Example:

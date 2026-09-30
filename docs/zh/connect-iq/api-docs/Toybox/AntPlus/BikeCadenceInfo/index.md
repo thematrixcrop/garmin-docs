@@ -194,4 +194,4 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    0 - 254 range, [Toybox::AntPlus::INVALID\_CADENCE](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_CADENCE-const) if invalid
+    范围为 0 - 254；如果无效，则为 [Toybox::AntPlus::INVALID\_CADENCE](/connect-iq/api-docs/Toybox/AntPlus/#INVALID_CADENCE-const)

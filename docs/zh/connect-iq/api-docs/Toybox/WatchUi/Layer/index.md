@@ -180,7 +180,7 @@ Parameters:
 
 - :visibility — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        `true` if the layer is visible, otherwise `false` (optional, default to +true+)
+        如果图层可见，则为 `true`，否则为 `false`（可选，默认为 +true+）
 
 - :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 

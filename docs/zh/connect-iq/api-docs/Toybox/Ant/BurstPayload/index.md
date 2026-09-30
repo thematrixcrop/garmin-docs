@@ -38,7 +38,7 @@ API 级别 2.2.0
 
 - [**add**](#add-instance_function)(message as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    Add bytes to the end of the burst data.
+    将字节添加到突发数据的末尾。
 
 - [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -53,7 +53,7 @@ API 级别 2.2.0
 
 ### **add(message as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-Add bytes to the end of the burst data.
+将字节添加到突发数据的末尾。
 
 注意：
 

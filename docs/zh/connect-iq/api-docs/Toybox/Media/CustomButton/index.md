@@ -51,7 +51,7 @@ Parameters:
 
 - image — ([Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module)) —
 
-    A BUTTON\_IMAGE\_\* value
+    一个 BUTTON\_IMAGE\_\* 值
 
 - highlighted — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -92,7 +92,7 @@ Parameters:
 
 - state — ([Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)) —
 
-    A BUTTON\_STATE\_\* value indicating the current state of the button
+    一个表示按钮当前状态的 BUTTON\_STATE\_\* 值
 
 
 Returns:

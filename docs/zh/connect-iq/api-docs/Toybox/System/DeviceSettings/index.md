@@ -165,7 +165,7 @@ API 级别 1.0.0
 
 - [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    A unique alphanumeric device identifier.
+    唯一的字母数字设备标识符。
 
 - [**vibrateOn**](#vibrateOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -976,7 +976,7 @@ Returns:
 
 ### var uniqueIdentifier as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-A unique alphanumeric device identifier.
+唯一的字母数字设备标识符。
 
 The value is unique for every app, but is stable on a device across uninstall and reinstall. Any use of this value for tracking user information must be in compliance with international privacy law.
 
