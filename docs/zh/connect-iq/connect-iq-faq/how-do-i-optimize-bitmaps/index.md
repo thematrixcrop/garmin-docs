@@ -88,13 +88,12 @@ title: "How do I optimize bitmaps in my app?"
 连接智能有多种选项来帮助开发人员确定他们想要如何进口图像.
 
 ```xml
-<!-- Use the dithering option to enable or disable auto dithering of the image -->
+<!-- 使用抖动选项启用或禁用图像的自动抖动 -->
     <bitmap id="Logo" x="center" y="12" filename="Logo.png" dithering="none">
-        <!-- The palette option allows you to reduce the bit depth of an image. Connect IQ will pick a bit depth
-               based on the number of colors specified in the palette. If your image does not have transparency,
-               use the disableTransparency option to remove the extra color used to represent transparent -->
+        <!-- 调色板选项允许你减少图像的位深。Connect IQ 将根据调色板中指定的颜色数量选择位深
+               如果图像没有透明度，请使用 disableTransparency 选项移除用于表示透明色的额外颜色 -->
         <palette disableTransparency="true">
-            <!-- Logo is black on white text, so using four colors to get shading while reducing the color depth to 2 bpp -->
+            <!-- 徽标文字为黑色、背景为白色，因此使用四种颜色进行着色，同时将颜色深度降至 2 bpp -->
             <color>FFFFFF</color>
             <color>AAAAAA</color>
             <color>555555</color>
@@ -125,7 +124,7 @@ title: "How do I optimize bitmaps in my app?"
 
 ```xml
         <palette disableTransparency="true">
-            <!-- Logo is black on white text, so using four colors to get shading while reducing the color depth to 2 bpp -->
+            <!-- 徽标文字为黑色、背景为白色，因此使用四种颜色进行着色，同时将颜色深度降至 2 bpp -->
             <color>FFFFFF</color>
             <color>AAAAAA</color>
             <color>555555</color>
