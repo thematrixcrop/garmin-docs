@@ -7,7 +7,7 @@ title: "Module: Toybox.PersistedContent"
 
 The PersistedContent module allows access to stored routes, waypoints, and other stored user data.
 
-This module provides an Iterator class that gives access to content stored on the device. Included content types are as follows:
+This 模块提供 an Iterator class that gives access to content stored on the device. Included content types are as follows:
 
 -   [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/)
 

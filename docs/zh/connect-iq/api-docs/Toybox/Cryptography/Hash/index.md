@@ -209,7 +209,7 @@ Get the current digest of the message that has been hashed.
 
 Note:
 
-This method resets the state of the Hash object, which can be used to compute a new hash
+This method resets the state of the Hash object, which 可用于 compute a new hash
 
 Returns:
 

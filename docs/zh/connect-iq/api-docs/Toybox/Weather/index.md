@@ -5,7 +5,7 @@ title: "Module: Toybox.Weather"
 
 ## Overview
 
-The Weather module provides functionality for accessing information related to the current weather.
+The Weather 模块提供 functionality for accessing information related to the current weather.
 
 Since:
 

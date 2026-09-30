@@ -1,11 +1,11 @@
 ---
 title: "Testing and Debugging"
 ---
-# Testing and Debugging
+# 测试和调试
 
 ![](/connect-iq/resources/programmers-guide/chopper-monkey.png)
 
-Connect IQ has a couple of different methods for testing and debugging your apps:
+Connect IQ 有几种不同的方法来测试和调试您的应用：
 
 1.  Basic debugging with `println()` statements
 
@@ -22,7 +22,7 @@ These log files are not automatically created, so they must be manually created 
 
 ## Debugging with Visual Studio Code
 
-To begin debugging your application select *Run > Start Debugging*. Make sure you have a source file from the project you wish to debug open in the editor. After selecting the product you want to debug, the app will launch in debug mode in the simulator. Debugging is only supported while running an application on the Connect IQ simulator.
+To begin debugging your application select *Run > Start Debugging*. 确保您已在编辑器中打开了要调试的项目源文件。 After selecting the product you want to debug, the app will launch in debug mode in the simulator. 仅在连接 IQ 模拟器上运行时支持调试。
 
 ### Setting a Breakpoint
 
@@ -55,7 +55,7 @@ Make sure you have followed the "Getting Started" instructions to set up the com
 You will be greeted with the following:
 
 ```
-Connect IQ Version 3.2.0. Type "help" for more information.
+Connect IQ Version 3.2.0. Type "help" 更多信息.
 (mdd)
 ```
 

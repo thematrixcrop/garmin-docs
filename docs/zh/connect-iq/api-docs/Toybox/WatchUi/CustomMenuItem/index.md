@@ -20,7 +20,7 @@ Toybox.WatchUi.MenuItem
 
 A representation of a custom item in a CustomMenu.
 
-A CustomMenuItem is a element of a [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) View that represents one of the items in the menu. When selected, the onSelect() delegate callback will be invoked. The selected state of the item may change when it is being selected. This state can be evaluated using the isSelected() method and can be used to control the look of a selected item.
+A CustomMenuItem is a element of a [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) View that represents one of the items in the menu. When selected, the onSelect() delegate callback will be invoked. The selected state of the item may change when it is being selected. This state can be evaluated using the isSelected() method and 可用于 control the look of a selected item.
 
 A CustomMenuItem can be added to a CustomMenu using the [addItem()](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#addItem-instance_function) method.
 

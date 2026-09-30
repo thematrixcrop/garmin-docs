@@ -18,7 +18,7 @@ Toybox.WatchUi.View
 
 ## Overview
 
-The class that represents a glance view which can be used to display the widget preview content in a restricted drawing context (dc) among other widgets.
+The class that represents a glance view which 可用于 display the widget preview content in a restricted drawing context (dc) among other widgets.
 
 Glance view behaves mostly like a regular WatchUi.View, e.g. user can load layout and update view using [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) and [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), however, the `dc` object passed in those calls will be bounded by glance area rather than a full screen `dc`.
 

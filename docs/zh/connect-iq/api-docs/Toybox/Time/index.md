@@ -5,9 +5,9 @@ title: "Module: Toybox.Time"
 
 ## Overview
 
-The Time module provides functionality for dealing with times and dates.
+The Time 模块提供 functionality for dealing with times and dates.
 
-There are two main concepts used by Monkey C when working with time: the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations can be used together for time calculations in the following ways:
+There are two main concepts used by Monkey C when working with time: the [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations 可用于gether for time calculations in the following ways:
 
 ```
   Expression           Method               Result    Notes

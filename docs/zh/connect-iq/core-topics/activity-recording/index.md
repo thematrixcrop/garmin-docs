@@ -45,7 +45,7 @@ In addition to being able to play back existing FIT files, the simulator can als
 
 Now imagine you want to add a new metric - Namastes - to the Yoga app `namaste`. This metric will combine heart rate, accelerometer, and other sensor data into a single value, and does not have an analog in any Garmin recording metric. To do this we need the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) module, which allows you to add new metrics to a FIT recording and display it on [Garmin Connect](https://connect.garmin.com/).
 
-First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) permission in the manifest file (see the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section for more information). Next, you need to add your field definitions in your resources using the `fitContributions` block:
+First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) permission in the manifest file (see the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section 更多信息). Next, 您需要 add your field definitions in your resources using the `fitContributions` block:
 
 ```xml
     <strings>

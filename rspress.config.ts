@@ -9,8 +9,9 @@ const SITE_TITLE_ZH = 'Garmin Connect IQ 文档';
 export default defineConfig({
   root: 'docs',
   lang: 'en',
-  title: SITE_TITLE_EN,
   base: '/',
+  // Site title/description are per-locale; a root-level `title` would override
+  // them and leak the English name into the Chinese <title>.
   locales: [
     {
       lang: 'en',

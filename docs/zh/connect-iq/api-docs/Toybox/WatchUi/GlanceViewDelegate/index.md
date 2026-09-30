@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## Overview
 
-The class that represents a glance view delegate, which can be used to relay events happened during widget glance (preview) mode.
+The class that represents a glance view delegate, which 可用于 relay events happened during widget glance (preview) mode.
 
 Since:
 

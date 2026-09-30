@@ -1,11 +1,11 @@
 ---
 title: "How do I use custom fonts?"
 ---
-# How do I use custom fonts?
+# 如何使用自定义字体？
 
 *This guest post was written by* [*Hermo Terblanche*](https://www.instagram.com/hermoterblanche/)*, a Connect IQ developer in South Africa.*
 
-Have you ever seen an app in the Connect IQ app store that made you wonder, "That is so cool! How did the developer do that?" In order to draw attention to your app you need to stand out from the rest, by for example applying some really cool font tricks. I am going to let you in on some of my secrets from [my own Connect IQ creations](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps). Hopefully this will inspire you to create your very own jaw-dropping apps for Garmin Connect IQ devices.
+Have you ever seen an app in the Connect IQ app store that made you wonder, "That is so cool! How did the developer do that?" In order to draw attention to your app 您需要 stand out from the rest, by for example applying some really cool font tricks. I am going to let you in on some of my secrets from [my own Connect IQ creations](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps). Hopefully this will inspire you to create your very own jaw-dropping apps for Garmin Connect IQ devices.
 
 Let's jump straight into the magic! You'll need the following tools:
 
@@ -69,7 +69,7 @@ This approach uses two separate fonts. For this I also downloaded a free font an
 
 -   Make sure to point the file property in the duplicated \*.FNT file to the duplicated \*.PNG (reflected font).
 
--   In code load your two fonts, and after you've drawn the normal time, you draw the same time using the reflection font. For the reflected time, you need to align the characters with the bottom of the normal time's characters.
+-   In code load your two fonts, and after you've drawn the normal time, you draw the same time using the reflection font. For the reflected time, 您需要 align the characters with the bottom of the normal time's characters.
 
 
 Below is an illustration of some of the glyphs from the normal font and their corresponding reflected glyphs in the reflection font.
@@ -131,7 +131,7 @@ The idea to write text with an orientation other than horizontal is not somethin
 
 ![](/connect-iq/resources/faq/rotated_glyphs.jpg)
 
-When drawing text diagonally, you can no longer draw the string as a single entity; otherwise you'll just end up with a horizontal line of text with tilted characters, similar to what you now see in the above illustration. The real trick is to draw each character individually, but for each character adjust the y and x coordinates appropriately. For descending orientation, you need to increase the y coordinates, and for ascending you need to decrease it. The x coordinate will always increase in both scenarios. The glyphs have to overlap each other in order to create the diagonal effect. This is where a transparent background color does the trick!
+When drawing text diagonally, you can no longer draw the string as a single entity; otherwise you'll just end up with a horizontal line of text with tilted characters, similar to what you now see in the above illustration. The real trick is to draw each character individually, but for each character adjust the y and x coordinates appropriately. For descending orientation, 您需要 increase the y coordinates, and for ascending 您需要 decrease it. The x coordinate will always increase in both scenarios. The glyphs have to overlap each other in order to create the diagonal effect. This is where a transparent background color does the trick!
 
 ![](/connect-iq/resources/faq/overlapping_rotated_glyphs.jpg)
 

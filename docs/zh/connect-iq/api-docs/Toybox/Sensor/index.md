@@ -5,7 +5,7 @@ title: "Module: Toybox.Sensor"
 
 ## Overview
 
-The Sensor module provides access to sensor data.
+The Sensor 模块提供 access to sensor data.
 
 Sensor allows Apps to register for updates to the current sensor data. It also enables apps to control the ANT+ sensors supported natively by the device, which are described by the provided SENSOR\_\* constants.
 

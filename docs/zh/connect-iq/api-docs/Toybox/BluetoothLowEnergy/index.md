@@ -5,7 +5,7 @@ title: "Module: Toybox.BluetoothLowEnergy"
 
 ## Overview
 
-The BluetoothLowEnergy module provides access to Generic BLE communication functionality in the central role. Including the ability to scan for peripheral devices, pair with sensors, and performing GATTC operations on a peripheral
+The BluetoothLowEnergy 模块提供 access to Generic BLE communication functionality in the central role. Including the ability to scan for peripheral devices, pair with sensors, and performing GATTC operations on a peripheral
 
 This module also provides several sets of constants:
 
@@ -780,7 +780,7 @@ Throws:
 
 Unpairs a peripheral device from the system
 
-If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect. If the device is not connected the system will stop searching for the device.
+If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect. If the device is not connected 系统将 stop searching for the device.
 
 Parameters:
 

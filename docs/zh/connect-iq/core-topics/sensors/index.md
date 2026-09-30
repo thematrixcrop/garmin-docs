@@ -1,9 +1,9 @@
 ---
 title: "Sensors"
 ---
-# Sensors
+# 传感器
 
-The [Toybox.Sensor](/connect-iq/api-docs/Toybox/Sensor/) module allows the app to enable and receive information from Garmin ANT+ sensors. To receive information, a listener method must be assigned and the sensors enabled:
+The [Toybox.Sensor](/connect-iq/api-docs/Toybox/Sensor/) module allows the app to enable and receive information from Garmin ANT+ sensors. 要接收信息，必须分配监听器方法并启用传感器：
 
 ```typescript
 function initialize() {

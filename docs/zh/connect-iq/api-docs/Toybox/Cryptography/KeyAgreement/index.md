@@ -104,7 +104,7 @@ keyAgreementBob.addKey(keyPairAlice.getPublicKey());
 var secretKeyBobAndAlice = keyAgreementBob.generateSecret();
 
 // Bob and Alice now have a shared secret without exposing either of
-// their private keys. This secret can be used to sign or encrypt
+// their private keys. This secret 可用于 sign or encrypt
 // messages between Alice and Bob. Sanity check shared secret is same
 // for both Alice and Bob.
 System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // prints 'true'

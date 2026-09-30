@@ -1,5 +1,5 @@
 ---
-title: "Get the SDK | Connect IQ | Garmin Developers"
+title: "Get the SDK"
 ---
 # Get the SDK | Connect IQ | Garmin Developers
 

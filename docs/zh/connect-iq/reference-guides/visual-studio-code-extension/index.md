@@ -39,7 +39,7 @@ To fully take advantage of these features, your project needs to have a type che
 
 ## Project Management
 
-The following commands can be used to create a new project and export it:
+The following commands 可用于 create a new project and export it:
 
 | Command | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ The following commands can be used to create a new project and export it:
 
 ## Manifest Editing
 
-The following commands can be used to edit and update the `manifest.xml` of your project:
+The following commands 可用于 edit and update the `manifest.xml` of your project:
 
 | Command | Description |
 | --- | --- |

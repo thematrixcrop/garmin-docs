@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Cipher-Based Message Authentication Code (CMAC) object.
 
-A CipherBasedMessageAuthenticationCode is an object that can be used to compute a message authentication code using the CMAC algorithm.
+A CipherBasedMessageAuthenticationCode is an object that 可用于 compute a message authentication code using the CMAC algorithm.
 
 ## See Also:
 
@@ -207,7 +207,7 @@ API Level 3.0.0
 
 Return the digest of the authentication code.
 
-The state of the object is reset and can be used to compute a new authentication code with the same options.
+The state of the object is reset and 可用于 compute a new authentication code with the same options.
 
 Returns:
 

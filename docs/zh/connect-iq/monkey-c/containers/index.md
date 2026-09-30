@@ -1,7 +1,7 @@
 ---
 title: "Containers"
 ---
-# Containers
+# 容器
 
 Monkey C has two container types built into the language: Arrays and Dictionaries.
 

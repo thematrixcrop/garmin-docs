@@ -46,7 +46,7 @@ Progress bars tell the user to wait for an asynchronous action to be completed. 
 
 ### Confirmations
 
-Confirmations are pages that confirm a user action. They can be used to confirm a decision by the user or add a point of friction if the user is exiting a flow.
+Confirmations are pages that confirm a user action. They 可用于 confirm a decision by the user or add a point of friction if the user is exiting a flow.
 
 ![Confirmations](/connect-iq/resources/ux-guide/confirmations.png)
 

@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 ServiceDelegate is a class used to service [Background](/connect-iq/api-docs/Toybox/Background/) events.
 
-This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
+This class is used as the main entry point for background processes. A callback function within the delegate 可用于 initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
 
 ## See Also:
 

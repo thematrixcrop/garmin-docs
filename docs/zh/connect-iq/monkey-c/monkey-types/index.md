@@ -1,7 +1,7 @@
 ---
 title: "Monkey Types"
 ---
-# Monkey Types
+# Monkey 类型
 
 Monkey Types is the gradual type system for the Monkey C language. The type system is designed to recognize Monkey C's historically duck-typed nature but add the necessary components to type check your applications at compile time.
 
@@ -183,7 +183,7 @@ function example() {
 }
 ```
 
-Note that concrete types do not implicitly accept `null` as a value. If you want a value to also accept `null` you must make a poly type (see [`Null`](#null) for more information).
+Note that concrete types do not implicitly accept `null` as a value. If you want a value to also accept `null` you must make a poly type (see [`Null`](#null) 更多信息).
 
 ### Poly
 
@@ -262,7 +262,7 @@ typedef ContainerB as Dictionary<String, Number>;
 
 Container types only match other container types if both the key and value types are equivalent. An `Array<String>` only matches an `Array<String>` and not an `Array<String or Number>`.
 
-Monkey C does not infer container types at this time, so you will need to declare your containers. If you want to create a new typed array or dictionary you can use the following syntax:
+Monkey C does not infer container types at this time, so you will need to declare your containers. If you want to create a new typed array or dictionary 您可以使用以下语法：
 
 ```typescript
 class ContainerClass {

@@ -9,7 +9,7 @@ The [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) and [
 
 ## User Profile
 
-The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) provides access to personal information about the user, including their gender, birth year, height, weight, and athletic metrics like VO2 Max and activity class. It requires the `UserProfile` permission to access.
+The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 personal information about the user, including their gender, birth year, height, weight, and athletic metrics like VO2 Max and activity class. It requires the `UserProfile` permission to access.
 
 The [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfile-instance_function) call returns a [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) object, which provides
 
@@ -27,7 +27,7 @@ The [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfi
 | Sleep Time | [Profile.sleepTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#sleepTime-var) | Typical sleep time as configured by the user | 1.0.0 |
 | Wake Time | [Profile.wakeTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#wakeTime-var) | Typical wake time as configured by the user | 1.0.0 |
 
-[Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) provides access to the additional data:
+[Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 the additional data:
 
 | Information | API | Value | API Level |
 | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ The [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfi
 
 ## Activity Monitoring
 
-[Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) provides access to the current day's metrics via [ActivityMonitor.getInfo()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getInfo-instance_function) which returns a [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) object.
+[Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/) 提供访问 the current day's metrics via [ActivityMonitor.getInfo()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getInfo-instance_function) which returns a [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) object.
 
 You can also get a daily history of some of these metrics with [ActivityMonitor.getHistory()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getHistory-instance_function) which returns an array of [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) objects. How far back this history goes can vary by device as well as how long the device has been turned on, but a seven day history is fairly typical.
 

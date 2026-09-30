@@ -5,7 +5,7 @@ title: "Module: Toybox.Graphics"
 
 ## Overview
 
-The Graphics module provides a set of tools that allow developers to use basic drawing functionality.
+The Graphics 模块提供 a set of tools that allow developers to use basic drawing functionality.
 
 This provides the ability to draw shapes, lines, fill shapes, and use dynamic layouts for graphic elements based on specific device contexts. The Device Context (Dc) is useful for developers who are interested in creating content for multiple device platforms with differing screen shapes, sizes, and color palettes.
 
@@ -766,7 +766,7 @@ API Level 1.0.0
 
 ### **createBufferedBitmap(options as { :width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>, :colorDepth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :bitmapResource as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), :alphaBlending as [Graphics.AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) })** as [Graphics.BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/)
 
-Create a buffered bitmap object. This function will return a [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) object which can be used to reference the [Toybox::Graphics::BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object.
+Create a buffered bitmap object. This function will return a [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) object which 可用于 reference the [Toybox::Graphics::BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) object.
 
 Note:
 

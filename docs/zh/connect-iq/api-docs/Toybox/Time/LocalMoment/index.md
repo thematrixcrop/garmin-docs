@@ -452,7 +452,7 @@ Returns:
 
 -   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
-    The Duration between the two LocalMoment objects or the LocalMoment offset by a Duration. When subtracting LocalMoments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) method can be used to determine whether one LocalMoment is before or after another LocalMoment.
+    The Duration between the two LocalMoment objects or the LocalMoment offset by a Duration. When subtracting LocalMoments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) method 可用于 determine whether one LocalMoment is before or after another LocalMoment.
 
 
 Since:

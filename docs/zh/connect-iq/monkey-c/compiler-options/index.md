@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options"
 ---
-# Compiler Options
+# 编译器选项
 
 The following are command line options for `monkeyc` :
 
@@ -13,7 +13,7 @@ The following are command line options for `monkeyc` :
 | `-g` | `--debug` | None | Prints the debug output. |
 | `-h` | `--help` | None | Prints the help information. |
 | `-k` | `--profile` | None | Includes profiler information in the executable. When an executable with profiler information runs on device, the device will generate profiler information that can be analyzed in the simulator. |
-| `-l` | `--typecheck` | `0` = off, `1` = gradual, `2` = informative, `3` = strict | See the [Monkey Types](/connect-iq/monkey-c/monkey-types/) section for more information. |
+| `-l` | `--typecheck` | `0` = off, `1` = gradual, `2` = informative, `3` = strict | See the [Monkey Types](/connect-iq/monkey-c/monkey-types/) section 更多信息. |
 | `-o` | `--output` | File to output | **Required**. Specifies the output of the compiler. |
 | `-O` | `--optimization` | `0` = None, `1` = Basic,`2` = Fast Optimizations, `3` = Slow Optimizations, `p` = Performance Optimizations, `z` = Code Space Optimizations | Default is `1` for building in debug, and `2` for building in release. The numeric level can be suffixed with the letters, so `-O 2pz` is an allowed argument. |
 | `-r` | `--release` | None | Do not include debug information in PRG. |

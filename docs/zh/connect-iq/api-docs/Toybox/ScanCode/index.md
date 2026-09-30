@@ -5,7 +5,7 @@ title: "Module: Toybox.ScanCode"
 
 ## Overview
 
-The ScanCode module provides functionality to for generating machine readable code images.
+The ScanCode 模块提供 functionality to for generating machine readable code images.
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Exceptions and Errors"
 ---
-# Exceptions and Errors
+# 异常和错误
 
 Monkey C supports structured exception handling for non-fatal errors from which there can be recovery. The syntax should be familiar for Java and Javascript developers:
 

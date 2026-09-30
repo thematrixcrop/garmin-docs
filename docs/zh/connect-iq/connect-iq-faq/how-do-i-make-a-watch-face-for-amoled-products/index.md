@@ -1,7 +1,7 @@
 ---
 title: "How do I Make a Watch Face for AMOLED Products?"
 ---
-# How do I Make a Watch Face for AMOLED Products?
+# 如何为 AMOLED 产品制作表盘？
 
 *Since API level 3.1.0*
 
@@ -11,7 +11,7 @@ The Venu is the first Garmin watch with an AMOLED screen, AMOLED displays provid
 
 Pixels in an AMOLED display only draw power when illuminated, so a pixel is considered on when rendering any color other than black, and is considered off when and only when rendering black pixel.
 
-Burn-in protection is only activated when Connect IQ watch face is in foreground and after system enters sleep mode. Under such conditions, if more than 10% of the screen pixels are on or any pixel is on for longer than 3 minutes, the system will shut off the screen.
+Burn-in protection is only activated when Connect IQ watch face is in foreground and after system enters sleep mode. Under such conditions, if more than 10% of the screen pixels are on or any pixel is on for longer than 3 minutes, 系统将 shut off the screen.
 
 Most of the existing Connect IQ watch faces will trip the burn-in protector, however there is still hope to have an always-on watch face on AMOLED screens.
 

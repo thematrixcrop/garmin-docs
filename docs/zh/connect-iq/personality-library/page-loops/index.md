@@ -11,7 +11,7 @@ One common page loop on Garmin® products appears when the user records an activ
 
 ## Example
 
-The System 6 [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) can be used to handle the inputs and transitions between pages. You create a [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) that feeds [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) on demand. As the user selects the system input to navigate the page loop, the [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) handles the page transitions and displays the page indicators. You provide your own [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) for each view to handle inputs not involved with page navigation.
+The System 6 [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) 可用于 handle the inputs and transitions between pages. You create a [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) that feeds [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) on demand. As the user selects the system input to navigate the page loop, the [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) handles the page transitions and displays the page indicators. You provide your own [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) for each view to handle inputs not involved with page navigation.
 
 ```typescript
 // InputDelegate.mc

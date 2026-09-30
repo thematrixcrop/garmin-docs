@@ -1,7 +1,7 @@
 ---
 title: "Objects, Modules, and Memory"
 ---
-# Objects, Modules, and Memory
+# 对象、模块和内存
 
 Objects are created with the `class` keyword. Classes allow data and operations to be bound together on an object. In Monkey C, variables, functions, and other classes can be defined within a class.
 
@@ -240,7 +240,7 @@ The heap memory limit varies on a per device basis. Starting with version 2.4.x,
 
 ## Modules
 
-Modules in Monkey C allow for the scoping of classes and functions. Unlike Java packages, Monkey C modules have many of the same properties as classes. You can have variables, functions, classes, and other modules at the module level:
+Monkey C 中的模块允许对类和函数进行作用域限定。 Unlike Java packages, Monkey C modules have many of the same properties as classes. You can have variables, functions, classes, and other modules at the module level:
 
 ```java
 module MyModule

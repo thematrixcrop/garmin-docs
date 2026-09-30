@@ -9,6 +9,8 @@ export const EXTRACTED_DIR = resolve(DATA_DIR, 'extracted');
 export const MARKDOWN_DIR = resolve(DATA_DIR, 'markdown');
 export const MANIFEST_FILE = resolve(DATA_DIR, 'manifest.json');
 export const GLOSSARY_FILE = resolve(DATA_DIR, 'glossary.json');
+/** Curated English -> Chinese strings for the UI layer (labels, titles). */
+export const ZH_UI_FILE = resolve(DATA_DIR, 'zh-ui.json');
 
 export const DOCS_ROOT = resolve(PROJECT_ROOT, 'docs');
 export const ASSETS_ROOT = resolve(DOCS_ROOT, 'public/assets');

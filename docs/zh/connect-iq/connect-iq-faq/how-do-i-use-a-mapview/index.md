@@ -1,7 +1,7 @@
 ---
 title: "How do I use a MapView?"
 ---
-# How do I use a MapView?
+# 如何使用 MapView？
 
 Garmin built itself as a company by making location aware products, and has grown to make products that serve automotive, aviation, marine, fitness, and outdoor markets. A cornerstone to location awareness is digital cartography. Garmin products are often used outside of cell coverage, and our users depend on us to know where you are even when disconnected from the cloud. For over a decade Garmin has been digitizing the world and putting maps on devices of all shapes and sizes.
 
@@ -15,11 +15,11 @@ Let's talk through a common use case on Garmin devices. Assume the use case wher
 
 ## Setting The Scene
 
-The first thing you need to do is tell the map where on the Earth you want to focus the user's attention. The method `setMapVisibleArea` allows you to set a bounding box of `Location` objects that define what part of the world should render on screen.
+The first thing 您需要 do is tell the map where on the Earth you want to focus the user's attention. The method `setMapVisibleArea` allows you to set a bounding box of `Location` objects that define what part of the world should render on screen.
 
 ## Overlaying Content
 
-`MapView` objects allow for two kinds of overlays: *markers* and *polylines*. A `MapMarker` instance represents a single location on the map. You can use either the default Garmin pin, or you can provide your own `BitmapResource` object. If you use a custom marker, you need to set the pixel that will be drawn at the exact location (the hotspot). If you pass an array of `MapMarker` objects to the `MapView` instance, it will add all of them to the map. Calling `setMapMarker` will clear whatever markers are currently set.
+`MapView` objects allow for two kinds of overlays: *markers* and *polylines*. A `MapMarker` instance represents a single location on the map. You can use either the default Garmin pin, or you can provide your own `BitmapResource` object. If you use a custom marker, 您需要 set the pixel that will be drawn at the exact location (the hotspot). If you pass an array of `MapMarker` objects to the `MapView` instance, it will add all of them to the map. Calling `setMapMarker` will clear whatever markers are currently set.
 
 A `MapPolyline` instance represents a series of coordinates, like a course. You can set the width and color of the polyline. You can set the polyline for a `MapView`using `setPolyline`. A `MapView` instance can only have one `MapPolyline` instance set at any given time.
 

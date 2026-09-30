@@ -5,7 +5,7 @@ title: "Module: Toybox.Complications"
 
 ## Overview
 
-The Complications module allows apps to both subscribe to and publish complications. Complications are exposed via an iterator, or can be queried by identifier. Watch faces can register a callback and subscribe to multiple complications. Device apps and audio content providers can publish complication information.
+The Complications module 允许应用 both subscribe to and publish complications. Complications are exposed via an iterator, or can be queried by identifier. Watch faces can register a callback and subscribe to multiple complications. Device apps and audio content providers can publish complication information.
 
 Since:
 

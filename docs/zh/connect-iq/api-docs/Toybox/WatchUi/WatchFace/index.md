@@ -24,11 +24,11 @@ A WatchFace is a special View that provides notifications when the device change
 
 A WatchFace will run in a high power mode for a short period when responding to a gesture (i.e., raising the watch to check the time) or when returning to the watch face from another application. While in high power mode, the watch face will perform full screen updates every second via calls to [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function), and the application will have access to timers and animations.
 
-After this period in high power mode (typically about ten seconds), the system will call [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) to notify the application that it is preparing to enter low power mode.
+After this period in high power mode (typically about ten seconds), 系统将 call [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function) to notify the application that it is preparing to enter low power mode.
 
-During low power mode the system will call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
+During low power mode 系统将 call [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) at the top of every minute. If partial update support is available, the [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) method will be called for the first 59 seconds of every minute. The application will not have access to timers or animations while in low power mode.
 
-When a gesture occurs while running in low power mode the system will call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
+When a gesture occurs while running in low power mode 系统将 call [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function) to notify the application that the transition to high power mode has occurred.
 
 The initial view of a watch face application `must` extend [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/).
 
@@ -264,7 +264,7 @@ API Level 1.0.0
 
 Update a portion of the screen.
 
-Partial updates can be used to update a small part of the screen to allow for Always On Watch Faces.
+Partial updates 可用于 update a small part of the screen to allow for Always On Watch Faces.
 
 This method is called each second as long as the device power budget is not exceeded. It is important to update as small of a portion of the display as possible in this method to avoid exceeding the allowed power budget. To do this, the application must set the clipping region for the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. Calls to [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) and [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) will not execute on devices when this function is being invoked, but can be used in the device simulator.
 

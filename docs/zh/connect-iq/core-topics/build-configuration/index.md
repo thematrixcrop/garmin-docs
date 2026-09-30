@@ -9,7 +9,7 @@ Connect IQ offers a few ways to manage app resources: device and family qualifie
 
 ## Device, Family, and Localization Qualifiers
 
-The simplest way to override resources is with device, family, and localization qualifiers, which are added to a resources folder by adding a hyphen (`-`) followed by a valid qualifier value. Let's take a look at an example:
+The simplest way to override resources is with device, family, and localization qualifiers, which are added to a resources folder by adding a hyphen (`-`) followed by a valid qualifier value. Let's take a look at an 示例：
 
 Figure 1. Figure 1: A project that uses a fēnix 5 device resource qualifier
 
@@ -47,7 +47,7 @@ Resources with more specific qualifiers will always take precedence over less sp
 
 ### Localization Qualifiers
 
-Localization qualifiers are a way to specify language-specific string resources, and are specified as an [ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php). These qualifiers may be combined with either device or family qualifiers, and are always specified last in the qualifier naming scheme. For example:
+Localization qualifiers are a way to specify language-specific string resources, and are specified as an [ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php). These qualifiers may be combined with either device or family qualifiers, and are always specified last in the qualifier naming scheme. For 示例：
 
 -   `resources-fre`: Provides French language-specific string resources for all devices
 

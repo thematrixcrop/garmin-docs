@@ -1,11 +1,11 @@
 ---
 title: "Application and System Modules"
 ---
-# Application and System Modules
+# 应用和系统模块
 
-Every application has to have a class that extends [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/). This object, known as the application object, is the handler for application lifecycle events.
+Every application has to have a class that extends [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/). 这个对象称为应用对象，是处理应用生命周期事件的处理器。
 
-The Application object must be specified in the application `manifest.xml`. This is used by the build tools to denote which class to load at startup. See the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section for more information.
+The Application object must be specified in the application `manifest.xml`. 构建工具使用此来指示在启动时加载哪个类。 See the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section 更多信息.
 
 ## Install and Uninstall
 
@@ -20,38 +20,38 @@ Your [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) has
 
 Both of these require that your application has the `Background` permission. Potential use cases include registering a background service on install or starting an authentication method.
 
-These methods are not guaranteed to run. Do not depend on them for essential functionality.
+这些方法的运行不保证。不要依赖它们实现关键功能。
 
 ## Application Lifecycle
 
-*Since API level 4.2.0* There are four main application lifecycle states: launched, active, inactive, and suspended
+*Since API level 4.2.0* 有四个主要的生命周期状态：已启动、活跃、不活跃和已暂停。
 
 ![](/connect-iq/resources/programmers-guide/app-lifecycle.png)
 
 ### Launch
 
-After your application is loaded, your application object will be instantiated. From that point forward it will be available throughout the application by calling [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function).
+应用加载后，应用对象将被实例化。 From that point forward it will be available throughout the application by calling [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function).
 
 After you application object is instantiated, the [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) function will be called. This is your opportunity to initialize the application and restore state.
 
-If your application is launched via an [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/), the state parameter will contain arguments passed via the intent. Do not attempt to push a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance at this time. See the [Intents](/connect-iq/core-topics/intents/#intents) section for more information.
+If your application is launched via an [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/), the state parameter will contain arguments passed via the intent. Do not attempt to push a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance at this time. See the [Intents](/connect-iq/core-topics/intents/#intents) section 更多信息.
 
-Once your application is loaded, the system will request the initial view for your application. Depending on what functionality your application implements, you may have to implement several of the following handlers:
+应用加载后，系统将请求应用的初始视图。 Depending on what functionality your application implements, you may have to implement several of the following handlers:
 
 -   [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function): The primary method for app startup. Return the base view for your watch face, data field, widget, or device app.
 
--   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function): If your are implementing a widget that has a glance, this will be called when the user goes to browse your glance in the glance list. See the [Glances](/connect-iq/core-topics/glances/#glances) section for more information.
+-   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function): If your are implementing a widget that has a glance, this 将在...时调用 the user goes to browse your glance in the glance list. See the [Glances](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
--   [AppBase.getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function): If your watch face is overriding the goal views, this gives you an opportunity to present your goal view.
+-   [AppBase.getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function): If your watch face is overriding the goal views, 这为您提供了 an opportunity to present your goal view.
 
--   : If you are implementing an audio content provider, this method is called when you need to present playback options to the user.
+-   : If you are implementing an audio content provider, this method is called when 您需要 present playback options to the user.
 
 
 All of these functions return an array: The first item is the [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) instance, and the second is the [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) instance that handles the input for the view.
 
-Apps will behave differently when they are launched from the glance list versus the activity menu. If an app is launched from the glance list, a timeout will be applied to the app. If the user does not exit the app within a given time frame, the system will terminate the app and return to the home screen. If an app is launched from the activity menu, however, it will not time out, and the user must explicitly exit your application.
+从速览列表和活动菜单启动的应用行为不同。 If an app is launched from the glance list, a timeout will be applied to the app. If the user does not exit the app within a given time frame, 系统将 terminate the app and return to the home screen. If an app is launched from the activity menu, however, it will not time out, and the user must explicitly exit your application.
 
-You can detect which way the user enters your application using the following method:
+您可以使用以下方法检测用户进入应用的方式：
 
 ```typescript
 class MySuperApp extends Application.AppBase {
@@ -72,14 +72,14 @@ class MySuperApp extends Application.AppBase {
 
 *Since API level 4.2.0*
 
-Some devices have a task switcher that makes it easy to switch between activities and apps on the device. This can switch your app from *active* to *inactive*. To take full advantage of the task switcher, you need to utilize the full app lifecycle.
+某些设备具有任务切换器，可以方便地在活动和设备上的应用之间切换。 This can switch your app from *active* to *inactive*. To take full advantage of the task switcher, 您需要 utilize the full app lifecycle.
 
 | State | Description |
 | --- | --- |
 | Active | [AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function) is called when your app is transitioning from the inactive to active state. Active apps have access defined by the app type. When transitioning from inactive to active, access to sensors, ANT/BLE, will be restored. |
-| Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) is called when transitioning from the active to inactive state. |
+| Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) 在从...转换时调用 the active to inactive state. |
 
-Based on the state your app is running in, you will have different levels of access to system resources:
+根据应用运行的状态，您将拥有不同级别的系统资源访问权限：
 
 | State | Active | Inactive |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Based on the state your app is running in, you will have different levels of acc
 | Sensors | If the app is recording an activity, access is permitted. If the app is not recording an activity, access may fail in a non-fatal way. | If the app is recording an activity, access will be permitted. Otherwise, sensor access will be limited. |
 | Attention | Access is allowed. | Access is denied. |
 
-There may be scenarios where the user has launched more apps than the system has resources to support. If your app is not active but is still running, the system may terminate your app to free up resources.
+可能存在用户启动的应用超过系统资源支持的情况。 If your app is not active but is still running, the system may terminate your app to free up resources.
 
 When this happens, your [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) will be called with a :suspend option to inform you that you are being terminated. You can use this call to persist your state for when you are resumed. When the user returns to your application, you will be called with a `:resume` option on your [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function). You can then restore your state from storage:
 
@@ -124,13 +124,13 @@ When your application is terminated, the [AppBase.onStop()](/connect-iq/api-docs
 
 *Since API level 4.0.0*
 
-On devices with API level 4.0 and below, there is the widget app type. Widgets are apps that run from a carousel accessible from the watch face. On devices after API 4.0.0, widgets are now from the app launcher, and apps can have glances. The glance list is accessible to the user while they are in an activity, and your apps can be launched from the glance list while the user is recording an activity.
+在 API 级别 4.0 及以下的设备上，存在小组件应用类型。 小部件是从表盘可访问的轮播中运行的应用。 On devices after API 4.0.0, widgets are now from the app launcher, and apps can have glances. The glance list is accessible to the user while they are in an activity, and your apps can be launched from the glance list while the user is recording an activity.
 
 Widgets still build and run for API level 4.0 products without modification. However, you now must create a glance if you want the widget to show in the glance list. If you are building an app, creating a glance for your application gives users two unique ways to launch your app.
 
 ## System
 
-The [Toybox.System](/connect-iq/api-docs/Toybox/System/) module provides access to the device state, settings, and metadata. Here you can get runtime information about the device that is running your app, and exercise some execution control.
+The [Toybox.System](/connect-iq/api-docs/Toybox/System/) 模块提供 access to the device state, settings, and metadata. Here you can get runtime information about the device that is running your app, and exercise some execution control.
 
 | API | Description | API Level |
 | --- | --- | --- |

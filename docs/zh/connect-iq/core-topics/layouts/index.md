@@ -18,7 +18,7 @@ When defining a layout in XML, simply list the drawable objects to include in yo
 </resources>
 ```
 
-To use this layout in your code simply call [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) inside the [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) function. Call the parent [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) if you plan on using the [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) function to update dynamic values on the screen. For example:
+To use this layout in your code simply call [View.setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) inside the [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) function. Call the parent [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) if you plan on using the [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) function to update dynamic values on the screen. For 示例：
 
 ```java
 class MainView extends WatchUi.View {
@@ -99,7 +99,7 @@ In layout definitions, there are three ways to refer to fonts:
 | --- | --- | --- |
 | System font reference | Reference the standard FONT enumeration in the [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/) module. | `Graphics.FONT_SMALL` |
 | Custom font reference | Reference a font in [application resources](/connect-iq/core-topics/resources/#fonts). | `@Rez.Fonts.MySmallFont` |
-| Scalable font reference | Reference a system scalable font. This is the font name or names optionally separated by a comma and the pixel size separated by a colon. See [Scalable Fonts](/connect-iq/core-topics/graphics/#scalable-fonts) for more information. | `"#BionicBold,Roboto:12"` |
+| Scalable font reference | Reference a system scalable font. This is the font name or names optionally separated by a comma and the pixel size separated by a colon. See [Scalable Fonts](/connect-iq/core-topics/graphics/#scalable-fonts) 更多信息. | `"#BionicBold,Roboto:12"` |
 
 ## Drawables
 

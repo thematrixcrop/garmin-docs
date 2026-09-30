@@ -1,22 +1,22 @@
 ---
 title: "Complications"
 ---
-# Complications
+# 复杂功能
 
-Garmin devices collect numerous data points as users wear them. Many of these data points can be summarized and displayed on the watch face as a [complication](https://en.wikipedia.org/wiki/Complication_(horology)). The Connect IQ SDK offers multiple APIs to access user metrics, and has expanded the offerings with every release.
+Garmin 设备在用户佩戴时收集大量数据点。 Many of these data points can be summarized and displayed on the watch face as a [complication](https://en.wikipedia.org/wiki/Complication_(horology)). The Connect IQ SDK offers multiple APIs to access user metrics, and has expanded the offerings with every release.
 
 The [Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/) module consolidates the specific metrics typically displayed by Garmin devices into a unified interface. This unified interface gives the developer access to the information typically shown on the watch face for the developer. The complications are exposed using a publish/subscribe model.
 
-In addition, device app and audio content provider developers can now publish up to four complications using this new framework. Complications have public, protected, and private visibility levels with the system.
+此外，设备应用和音频内容提供者开发人员现在可以使用此新框架发布最多四个复杂功能。 Complications have public, protected, and private visibility levels with the system.
 
-Finally, Face It will also be a consumer of Connect IQ complications. This allows developers to create information that can be published on Face It watch faces.
+最后，Face It 也将成为 Connect IQ 复杂功能的消费者。 This allows developers to create information that can be published on Face It watch faces.
 
 ## Publishers and Subscribers
 
 
 ![](/connect-iq/resources/programmers-guide/complication_publishers_and_subscribers.png)
 
-At the heart of the complications system is a publisher/subscriber system. The system publishes complication data for subscribers to consume. Connect IQ device apps and audio content providers can publish complication data, but only watch faces can subscribe to complication information.
+复杂系统的核心是一个发布者/订阅者系统。 系统发布供订阅者消费的复杂数据。 Connect IQ device apps and audio content providers can publish complication data, but only watch faces can subscribe to complication information.
 
 ### Complication Objects
 
@@ -55,7 +55,7 @@ Units should be expected to be published as the following:
 
 ## Subscribing to Complications
 
-To subscribe to a complication you need to add the `ComplicationSubscriber` permission to your manifest file. Subscribing to Complications requires the [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/). You can use [Complications.getComplications()](/connect-iq/api-docs/Toybox/Complications/#getComplications-instance_function) to query the all complications supported by the system. You can also query a native complication directly by constructing a [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) explicitly:
+To subscribe to a complication 您需要 add the `ComplicationSubscriber` permission to your manifest file. Subscribing to Complications requires the [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/). You can use [Complications.getComplications()](/connect-iq/api-docs/Toybox/Complications/#getComplications-instance_function) to query the all complications supported by the system. You can also query a native complication directly by constructing a [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) explicitly:
 
 ```typescript
 var complication = Complications.getComplication(
@@ -102,7 +102,7 @@ function onComplicationChanged(
 }
 ```
 
-If the complication is no longer available, for example the user has uninstalled the publishing app, the system will throw a [Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/). You should trap this exception and handle it within your app. If a publishing app is uninstalled, the system will send an event to your `ComplicationChangeCallback` and automatically unsubscribe your app from any subscribed complications.
+If the complication is no longer available, for example the user has uninstalled the publishing app, 系统将 throw a [Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/). You should trap this exception and handle it within your app. If a publishing app is uninstalled, 系统将 send an event to your `ComplicationChangeCallback` and automatically unsubscribe your app from any subscribed complications.
 
 When wheelchair mode is enabled, `COMPLICATION_TYPE_STEPS` and `COMPLICATION_TYPE_FLOORS_CLIMBED` are replaced with `COMPLICATION_TYPE_WHEELCHAIR_PUSHES`.
 
@@ -133,11 +133,11 @@ If your complication publisher is launched via hold to launch, the `state` dicti
 
 ## Publishing Complications
 
-If you are developing a device or audio content provider apps, you can publish up to four complications to the framework. To publish a complication you need to add the `ComplicationPublisher` permission to your manifest file.
+如果您正在开发设备或音频内容提供者应用，可以向框架发布最多四个复杂功能。 To publish a complication 您需要 add the `ComplicationPublisher` permission to your manifest file.
 
 ### Resources
 
-To publish a complication, you have to define each complication in your resources:
+要发布复杂功能，您必须在资源中定义每个复杂功能：
 
 ```xml
 <complications>

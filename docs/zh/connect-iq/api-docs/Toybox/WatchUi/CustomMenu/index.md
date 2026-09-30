@@ -343,7 +343,7 @@ API Level 3.0.0
 
 Draw the CustomMenu foreground.
 
-This is called after a menu's items and title have been rendered. It can be used to draw overlay content for the menu.
+This is called after a menu's items and title have been rendered. It 可用于 draw overlay content for the menu.
 
 Parameters:
 

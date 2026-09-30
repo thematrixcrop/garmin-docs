@@ -5,7 +5,7 @@ title: "Module: Toybox.Media"
 
 ## Overview
 
-The Media module provides objects and methods for implementing audio content provider apps.
+The Media 模块提供 objects and methods for implementing audio content provider apps.
 
 This includes interfaces and methods for managing downloaded media content as well as interfaces used to provide required information to the system for playback.
 

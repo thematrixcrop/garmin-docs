@@ -1,41 +1,41 @@
 ---
 title: "Profiling Applications"
 ---
-# Profiling Applications
+# 应用性能分析
 
-The Connect IQ profiler captures time spent in total within a function and for the code within a function, and lets you examine the different call stacks profiled. The profiler is integrated into the simulator, and the devices will allow hardware profiling as well.
+Connect IQ 性能分析器捕获函数内及函数代码中花费的总时间，并让您检查不同的调用栈配置文件。性能分析器集成在模拟器中，设备也允许硬件性能分析。
 
-## Profiling from the Simulator
+## 从模拟器进行性能分析
 
-To launch the profiler from the Simulator, go to *File -> View Profiler*. You will see the following:
+要从模拟器启动性能分析器，请转到 *文件 -> 查看性能分析器*。您将看到以下内容：
 
 ![](/connect-iq/resources/programmers-guide/profiler-empty.png)
 
-When you reach the point in your application you wish to profile, hit the “Start” button to begin data collection and hit “Stop” to finish. The data will then display in the profiler window:
+当到达您希望进行分析的应用程序位置时，点击"开始"按钮开始收集数据，点击"停止"完成。数据然后显示在性能分析器窗口中：
 
 ![](/connect-iq/resources/programmers-guide/profiler.png)
 
-The data collected is as follows:
+收集的数据如下：
 
-| Name | Description | Notes |
+| 名称 | 描述 | 备注 |
 | --- | --- | --- |
-| Function | The function signature being called |  |
-| Total Time (us) | The total time executing the function in microseconds. | This includes all calls during the capture duration. |
-| Actual Time (us) | The time spent within the function in microseconds. | This includes all calls during the capture duration, but ignores time spent calling other functions. |
-| Average Time (us) | The average amount of time per call spent in the function in microseconds | This is the average of the time to execute the function |
-| Call Count | Number of times the function was called during the sample period |  |
-| Call Stack | Indication of which functions invoked the sampled function |  |
+| Function（函数） | 被调用的函数签名 |  |
+| Total Time (us)（总时间，微秒） | 执行函数的总时间（微秒）。 | 包括捕获期间的所有调用。 |
+| Actual Time (us)（实际时间，微秒） | 在函数内花费的时间（微秒）。 | 包括捕获期间的所有调用，但忽略调用其他函数所花的时间。 |
+| Average Time (us)（平均时间，微秒） | 每次调用在函数中花费的平均时间（微秒） | 这是执行函数的时间的平均值 |
+| Call Count（调用次数） | 采样期间函数被调用的次数 |  |
+| Call Stack（调用栈） | 指示哪些函数调用了采样函数 |  |
 
-If you only want to sample for a period, you can set a sample period in *Profiler -> Settings*. This will automatically stop the profiler after the specified period.
+如果您只想对一段时间进行采样，您可以在 *性能分析器 -> 设置* 中设置采样周期。这将在指定周期后自动停止性能分析器。
 
-## Profiling on the Device
+## 在设备上进行分析
 
-You can profile your app on device by compiling the app with the `-k` option. To do this in Visual Studio Code, edit the workspace settings edit the Monkey C Compiler Options:
+您可以通过使用 `-k` 选项编译应用来对设备进行性能分析。要在 Visual Studio Code 中执行此操作，编辑工作区设置中的 Monkey C 编译器选项：
 
 ![](/connect-iq/resources/programmers-guide/profiler-command-line.png)
 
-After you do that, use *Monkey C: Build for Device* to create an executable. After you side load and run the program, a file named `<appname>.PRF` will be generated in the `GARMIN\APPS\LOGS` folder. You can load the PRF file into the simulator profile tool for analysis using the *Load* button in the profiler window.
+完成后，使用 *Monkey C: Build for Device*（为设备构建）创建可执行文件。侧载并运行程序后，将生成一个名为 `<appname>.PRF` 的文件，位于 `GARMIN\APPS\LOGS` 文件夹中。您可以将 PRF 文件加载到模拟器的配置文件工具中进行分，使用性能分析器窗口中的 *Load*（加载）按钮。
 
-## Best Practices
+## 最佳实践
 
-You can re-sort the sampled functions based on the total, actual, and average time spent as well as call count. Each can have value in identifying performance bottlenecks. For example, a function that has a low average time but is repeatedly called can sometimes cause performance bottlenecks. See what functions your application are spending the most time running and use that to focus your optimization efforts.
+您可以根据总时间、实际时间和平均时间以及调用次数重新排序采样函数。每项都可以用于识别性能瓶颈。例如，具有低平均时间但反复调用的函数有时会导致性能瓶颈。查看您的应用花费最多时间运行的函数，并使用这些信息集中精力进行优化。

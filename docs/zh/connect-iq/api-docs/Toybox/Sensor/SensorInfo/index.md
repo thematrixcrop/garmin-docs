@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 A class describing a Sensor
 
-The SensorInfo provides access to the attributes of a Sensor.
+The SensorInfo 提供访问 the attributes of a Sensor.
 
 Since:
 

@@ -264,7 +264,7 @@ Parameters:
 
 -   comparator — ([Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type), null) —
 
-    An object that can be used to specify the order of Objects relative to others. If `comparator` is `null`, a default comparator will be used. The default comparator will sort values in ascending order, and is able to compare Numeric, Boolean, and Char values, or String values.
+    An object that 可用于 specify the order of Objects relative to others. If `comparator` is `null`, a default comparator will be used. The default comparator will sort values in ascending order, and is able to compare Numeric, Boolean, and Char values, or String values.
 
 
 Example:

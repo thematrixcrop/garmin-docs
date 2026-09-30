@@ -80,7 +80,7 @@ API level 3.2.0 introduced the ability to access the [Application.Storage](/conn
 
 *Since API level 2.4.0*
 
-The [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) module provides an interface for accessing the values and properties of settings. Information is automatically saved on disk when [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) is called. To get or set a property value use the [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) or methods, respectively:
+The [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供 an interface for accessing the values and properties of settings. Information is automatically saved on disk when [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) is called. To get or set a property value use the [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) or methods, respectively:
 
 ```java
 // Set an Object Store app setting

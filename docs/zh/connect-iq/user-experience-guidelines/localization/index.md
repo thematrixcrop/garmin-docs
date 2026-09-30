@@ -84,7 +84,7 @@ When developing a Connect IQ app, you should consider what is necessary to adapt
 
 -   Garmin devices allow the user to customize their preferred units for distance, elevation, height, pace, temperature and weight. Look at their preference before displaying any metric of those types.
 
--   Leave enough space for translated text. The height and width of the text may expand or contract based on which language is displayed. The Connect IQ simulator can be used to test your text in multiple languages.
+-   Leave enough space for translated text. The height and width of the text may expand or contract based on which language is displayed. The Connect IQ simulator 可用于 test your text in multiple languages.
 
 -   Use iconography when possible, but be cautious about the cultural significance of images and colors in different cultures.
 

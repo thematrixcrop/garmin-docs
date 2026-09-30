@@ -1,7 +1,7 @@
 ---
-title: "Get the SDK | Connect IQ | Garmin Developers"
+title: "Get the SDK"
 ---
-# Get the SDK | Connect IQ | Garmin Developers
+# 获取 SDK | Connect IQ | Garmin 开发者
 
 This Connect IQ Developer Agreement (the "**Agreement**") between you and, if applicable, your company ("**you**" or "**your**") and Garmin International, Inc. and its affiliates ("**Garmin**") governs your use of the SDK and other Program Materials to develop Applications, your submission of Applications for publication on the CIQ Store, and, if applicable, the sale of your Application on the CIQ Store. Capitalized terms have the meanings set forth in the body of this Agreement or in Section IX of this Agreement.
 

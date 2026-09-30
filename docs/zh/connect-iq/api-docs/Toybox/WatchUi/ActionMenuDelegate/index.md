@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## Overview
 
-Class that represents an action menu delegate, which can be used to relay events regarding the action menu.
+Class that represents an action menu delegate, which 可用于 relay events regarding the action menu.
 
 Since:
 

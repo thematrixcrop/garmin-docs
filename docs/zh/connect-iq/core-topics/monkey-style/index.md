@@ -3,7 +3,7 @@ title: "Monkey Style"
 ---
 # Monkey Style
 
-Monkey style is a domain-specific property language for managing style elements. It borrows heavily from CSS but has been tailored for Monkey C. Monkey style allows developers to create style property constants that can adapt between Garmin products.
+Monkey style 是一种用于管理样式元素的专业领域属性语言。 它大量借鉴了 CSS，但已针对 Monkey C 进行了定制。 Monkey style 允许开发者创建可以在 Garmin 产品之间适应的样式属性常量。
 
 ## Personality Classes
 
@@ -62,11 +62,11 @@ Any personality class you define is addressable from the `Rez.Styles` namespace.
 dc.setFont(Rez.Styles.layout1__time.font);
 ```
 
-When referenced this way, the compiler can replace the constant references at compile time and eliminate the personality classes from your runtime.
+以这种方式引用时，编译器可以在编译时替换常量引用并从运行时中消除个性类。
 
 ## Configuring Personalities
 
-You can configure the series of monkey style sheets in the jungle. This allows you to have specific style sheets for each product while keeping the content universal across products. You can configure the personality with the `personality` selector:
+您可以在丛林中配置一系列 monkey 样式表。 This allows you to have specific style sheets for each product while keeping the content universal across products. You can configure the personality with the `personality` selector:
 
 ```properties
 fenix7system6preview.personality=$(fenix7system6preview.personality);resources-fenix2022

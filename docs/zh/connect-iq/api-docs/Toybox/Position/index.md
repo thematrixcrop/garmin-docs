@@ -5,7 +5,7 @@ title: "Module: Toybox.Position"
 
 ## Overview
 
-The Position module provides an interface for location information and positioning sensors.
+The Position 模块提供 an interface for location information and positioning sensors.
 
 This module also provides two sets of constants:
 

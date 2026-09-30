@@ -1,7 +1,7 @@
 ---
 title: "App Types"
 ---
-# App Types
+# 应用类型
 
 ![](/connect-iq/resources/programmers-guide/cyclist-monkey.png)
 
@@ -153,7 +153,7 @@ Glance views run in a limited runtime space, with reduced memory and privileges 
 
 When your widget is launched, you can check if `DeviceInfo` has `isGlanceModeEnabled` defined. If it does, you can also determine what the value is. If glance mode is enabled you can launch directly into the interactive portion of your widget. Otherwise you should launch the base view.
 
-See the [Glance](/connect-iq/core-topics/glances/#glances) section for more information.
+See the [Glance](/connect-iq/core-topics/glances/#glances) section 更多信息.
 
 ### Designing a Widget
 
@@ -197,4 +197,4 @@ Your app should implement an [Application.AudioContentProviderApp](/connect-iq/a
 
 Sync Configuration has been deprecated. We recommend providing the user a mechanism to download content inside of the playback configuration.
 
-See the [How do I create an Audio Content Provider?](/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/#how-do-i-create-an-audio-content-provider) section for more information.
+See the [How do I create an Audio Content Provider?](/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/#how-do-i-create-an-audio-content-provider) section 更多信息.

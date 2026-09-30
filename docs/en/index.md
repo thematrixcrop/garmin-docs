@@ -1,5 +1,5 @@
 ---
-title: "Garmin Connect IQ Docs"
+title: "Connect IQ"
 ---
 
 # Garmin Connect IQ Docs

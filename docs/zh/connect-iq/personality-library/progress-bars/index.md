@@ -7,7 +7,7 @@ At points where your app needs to perform an asynchronous operation, such as loa
 
 ## Percent Progress Indicator
 
-If you quantify the percentage or time you need to complete a process, you can use a percent progress indicator to present that progress to the user.
+If you quantify the percentage or time 您需要 complete a process, you can use a percent progress indicator to present that progress to the user.
 
 ### Example
 

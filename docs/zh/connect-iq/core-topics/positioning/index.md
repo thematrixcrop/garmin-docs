@@ -5,7 +5,7 @@ title: "Positioning"
 
 ![](/connect-iq/resources/programmers-guide/archy-monkey.png)
 
-Monkey C provides access to the wearable's available sensors, which may include the GPS, altimeter, thermometer, and supported ANT sensors.
+Monkey C 提供访问 the wearable's available sensors, which may include the GPS, altimeter, thermometer, and supported ANT sensors.
 
 | API | Purpose | API Level |
 | --- | --- | --- |

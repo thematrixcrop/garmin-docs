@@ -1,7 +1,7 @@
 ---
-title: "Compatible Devices | Connect IQ | Garmin Developers"
+title: "Compatible Devices"
 ---
-# Compatible Devices | Connect IQ | Garmin Developers
+# 兼容设备 | Connect IQ | Garmin Developers
 
 | Watches/Wearables | Screen Resolution | Screen Shape | Screen Technology | API Level |
 | --- | --- | --- | --- | --- |

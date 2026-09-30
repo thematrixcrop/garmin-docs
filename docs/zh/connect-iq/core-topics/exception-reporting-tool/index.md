@@ -3,7 +3,7 @@ title: "Error Reporting Application (ERA)"
 ---
 # Error Reporting Application (ERA)
 
-The ERA tool can be used to view your app's crashes after it has been released on the store. If your app crashes on a device the error report will be collected and aggregated by the ERA server. These reports can be viewed for up to 30 days after a crash occurs. This tool is available in the bin folder of the SDK.
+The ERA tool 可用于 view your app's crashes after it has been released on the store. If your app crashes on a device the error report will be collected and aggregated by the ERA server. These reports can be viewed for up to 30 days after a crash occurs. This tool is available in the bin folder of the SDK.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ In the Application Settings window you can hide the app from the drop down box i
 
 ![](/connect-iq/resources/programmers-guide/era_report_view.png)
 
-The crash report view allows you to view all uploaded crash reports for an app in the last 30 days. At the top of this window you can select which app's crash reports to view. After selecting an app the latest reports will be downloaded from the server. In the left pane of the window a list of crash reports will be shown. Each unique crash will be identified by file name, function, and line number where the crash occurred. Choosing a crash in the left pane causes the details for the crash to be shown in the right pane. At the top of the right pane the **Fixed** checkbox can be used to indicate that this particular crash has been fixed. The fixed status will persist across application runs and SDK upgrades. You can change the sort order of the crash reports you are viewing by changing the value in the **Sort By** selector.
+The crash report view allows you to view all uploaded crash reports for an app in the last 30 days. At the top of this window you can select which app's crash reports to view. After selecting an app the latest reports will be downloaded from the server. In the left pane of the window a list of crash reports will be shown. Each unique crash will be identified by file name, function, and line number where the crash occurred. Choosing a crash in the left pane causes the details for the crash to be shown in the right pane. At the top of the right pane the **Fixed** checkbox 可用于 indicate that this particular crash has been fixed. The fixed status will persist across application runs and SDK upgrades. You can change the sort order of the crash reports you are viewing by changing the value in the **Sort By** selector.
 
 | Font Style | Crash Status |
 | --- | --- |

@@ -1,7 +1,7 @@
 ---
 title: "How do I use the Connect IQ Mobile SDK"
 ---
-# How do I use the Connect IQ Mobile SDK
+# 如何使用 Connect IQ 移动 SDK
 
 The first step to writing a partner powered Connect IQ app is getting your partner app and Connect IQ app connected. The Partner SDK provides the tools for you to do this how you feel it best fits into the flow of the app.
 

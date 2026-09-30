@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## Overview
 
-An object representing a textured area with in a bitmap that can be can be used to fill a primitive drawable object.
+An object representing a textured area with in a bitmap that can be 可用于 fill a primitive drawable object.
 
 Since:
 

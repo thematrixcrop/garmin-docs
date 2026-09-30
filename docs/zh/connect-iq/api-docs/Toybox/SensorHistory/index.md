@@ -7,7 +7,7 @@ title: "Module: Toybox.SensorHistory"
 
 The SensorHistory module contains the interface for SensorHistory.
 
-SensorHistory provides access to historical information recorded by the on-board sensors of device hardware. The amount of information that is available is device dependent. This means that one device may provide more information than another. This class provides an ORDER\_\* enum which is used to select the data order of the sample iterator.
+SensorHistory 提供访问 historical information recorded by the on-board sensors of device hardware. The amount of information that is available is device dependent. This means that one device may provide more information than another. This class provides an ORDER\_\* enum which is used to select the data order of the sample iterator.
 
 Since:
 

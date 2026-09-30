@@ -5,7 +5,7 @@ title: "Developing the Concepts"
 
 With an understanding of the problem you want to solve and who you are solving it for, you can focus on a design that meets these needs. Now we can begin looking at the important content and workflows to achieve the user’s goals.
 
-## App Types
+## 应用类型
 
 Unlike other platforms, Connect IQ apps have context specific types that define their location in the device interface, as well as their interaction model. The app type you choose should be based on the problem statement of the user. Is your goal to augment the workout experience? You should make a data field. Are you looking to let the user monitor a metric outside of an activity? You should use an app. Does your app have information that updates throughout the day? Add a glance to your device app.
 
@@ -34,7 +34,7 @@ Data fields are plug-ins that can display information within a Garmin activity. 
 
 ### Widgets and Glances
 
-Widgets are a carousel of apps that the user can quickly navigate through. The base page has limited input but can push pages to let the user go deeper for more information. In 2019 Garmin introduced Glances. Glances are a scrollable list of key data, and each list item has a displayable metric. The user can select any glance to dig in further. Both widgets and glances will time out after a period of inactivity.
+Widgets are a carousel of apps that the user can quickly navigate through. The base page has limited input but can push pages to let the user go deeper 更多信息. In 2019 Garmin introduced Glances. Glances are a scrollable list of key data, and each list item has a displayable metric. The user can select any glance to dig in further. Both widgets and glances will time out after a period of inactivity.
 
 Widgets
 
@@ -58,7 +58,7 @@ Device apps are launchable experiences that do not time out. Device apps can tak
 
 ## Connect IQ Apps and Information Architecture
 
-Connect IQ apps are typically “information forward,” meaning the key information is presented up front, and there are limited interactions for more information:
+Connect IQ apps are typically “information forward,” meaning the key information is presented up front, and there are limited interactions 更多信息:
 
 -   Data fields always display the key information. Any customized setup flow requires the user to go to the data field settings.
 

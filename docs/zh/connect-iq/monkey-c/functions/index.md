@@ -1,13 +1,13 @@
 ---
 title: "Functions"
 ---
-# Functions
+# 函数
 
-Functions are the meat of your program. Functions define discrete callable units of code.
+函数是程序的核心。函数定义了独立的代码调用单元。
 
-Monkey C functions can take arguments, but because Monkey C is a dynamically typed language the argument types is not declared; just its name. Also, it is not necessary to declare the return value of a function, or even if a function returns a value, because all functions return values.
+Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，参数类型未被声明；仅有名称。 此外，无需声明函数的返回值，甚至无需声明函数是否返回值，因为所有函数都返回值。
 
-Functions can exist in a class or module, or appear in the global module.
+函数可以存在于类或模块中，也可以出现在全局模块中。
 
 ## Variables, Expressions, and Operators
 
@@ -42,7 +42,7 @@ Here is a list of keywords in the Monkey C programming language. You cannot use 
 
 ### Declaring Variables
 
-All local variables must be declared ahead of time using the `var` keyword. In the Monkey C language, all values (including numeric values) are objects.
+All local variables must be declared ahead of time using the `var` keyword. 在 Monkey C 语言中，所有值（包括数值）都是对象。
 
 ```java
 var n = null;               // Null reference

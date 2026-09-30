@@ -1,24 +1,21 @@
 ---
 title: "Publishing to the Connect IQ Store"
 ---
-# Publishing to the Connect IQ Store
+# 发布到 Connect IQ 商店
 
-![](/connect-iq/resources/programmers-guide/captain-monkey.png)
+我们很高兴您希望为 Garmin 设备开发应用，我们也希望您取得成功。请务必[查看我们的指南](http://developer.garmin.com/connect-iq/app-review-guidelines)并在开发应用时牢记这些指南。
 
-We're glad you want to develop for Garmin devices, and we want you to be successful. Be sure to [review our guidelines](http://developer.garmin.com/connect-iq/app-review-guidelines) and keep them in mind as you develop your apps.
+一旦您的应用经过充分测试并准备就绪，您就可以将应用发布和推广到 Garmin Connect IQ 应用商店。以下是准备应用提交的方法：
 
-Once your apps are fully tested and ready to go, you can publish and promote your apps to the Garmin Connect IQ App Store. Here's how to prepare your apps for submission.
+1.  确保清单文件指定了应用支持的所有产品
 
-1.  Make sure the manifest file specifies all products supported by the app
+2.  使用 *Monkey C: Export Project*（导出项目）命令生成 IQ 文件，其中将包含每个支持设备的二进制文件
 
-2.  Use the *Monkey C: Export Project* command to generate an IQ file, which will contain binaries for each supported device
+3.  将应用上传到应用商店
 
-3.  Upload the app to the App Store
+## 检查支持的产品
 
-
-## Check Supported Products
-
-It is easy to quickly check the products supported by an app by viewing the manifest XML file in the project root:
+通过查看项目根目录中的清单 XML 文件，可以轻松快速检查应用支持的产品：
 
 ```xml
 <iq:products>
@@ -29,45 +26,43 @@ It is easy to quickly check the products supported by an app by viewing the mani
 </iq:products>
 ```
 
-## Exporting the App
+## 导出应用
 
-Launch the Export Wizard with the *Monkey C: Export Project* command in the command palette. After setting the export destination folder the Monkey C extension will generate the `.iq` file of your project.
+在命令面板中使用 *Monkey C: Export Project*（导出项目）命令启动导出向导。设置导出目标文件夹后，Monkey C 扩展将生成项目的 `.iq` 文件。
 
-## Publishing the First Version
+## 发布第一个版本
 
-To upload the IQ file to your developer account, start by visiting the [Submit an App](http://developer.garmin.com/connect-iq/submit-an-app/) page of the Garmin Developer site. Click on the *Submit an App* button to fill out the form shown below:
-
+要将 IQ 文件上传到您的开发者账户，请首先访问 Garmin 开发者网站的 [Submit an App]（提交应用）页面。点击 *Submit an App*（提交应用）按钮填写下方显示的表单：
 
 ![Uploading an app to the App Store](/connect-iq/resources/programmers-guide/upload_app.png)
 
-Once the IQ file has been validated, add in a description, screen shots, and other details about your app:
-
+IQ 文件验证通过后，添加描述、屏幕截图以及有关您应用的详细信息：
 
 ![Adding a title and description](/connect-iq/resources/programmers-guide/title_description.png)
 
 ## GDPR
 
-In April of 2016, the EU Parliament passed the [General Data Protection Regulation](https://publications.europa.eu/en/publication-detail/-/publication/3e485e15-11bd-11e6-ba9a-01aa75ed71a1/language-en) (GDPR), an act that was designed to harmonize data privacy laws across the European Union (EU). The GDPR provides requirements for the lawful processing of EU Personal Data, including requirements related to data privacy, consent, and digital services. GDPR generally applies to the processing of EU Personal Data, and it may apply to you or your company even if you are not in the EU. Data protection authorities may issue fines up to 4% of annual global turnover or €20 Million, whichever is greater, for non-compliance. . This isn't legal advice and we encourage you to consult with your legal counsel for guidance.
+2016 年 4 月，欧盟议会通过了 [General Data Protection Regulation]（通用数据保护条例）（GDPR），这是一项旨在协调欧盟各国数据隐私法律的法案。GDPR 规定了合法处理欧盟个人数据的要求，包括与数据隐私、同意和数字服务相关的要求。GDPR 通常适用于欧盟个人数据的处理，即使您不在欧盟，也可能适用于您或您的公司。对于不合规行为，数据保护当局可处以高达全球年营业额 4% 或 2000 万欧元的罚款，以较高者为准。这不是法律建议，我们建议您咨询法律顾问获取指导。
 
-Connect IQ is a global platform, and, as stated in the [Connect IQ license agreement](/connect-iq/sdk/), developers are responsible for their apps' compliance with all applicable laws, including those related to data protection and privacy. Specific responsibilities related to privacy can be found in Section 2 of the [Connect IQ license agreement](/connect-iq/sdk/). Developers should review the GDPR to determine what obligations they may have under the GDPR. These obligations may include the following:
+Connect IQ 是一个全球平台，正如 [Connect IQ 许可协议]（/connect-iq/sdk/）中所述，开发者负责确保其应用符合所有适用法律，包括与数据保护和隐私相关的法律。与隐私相关的具体责任可在 [Connect IQ 许可协议]（/connect-iq/sdk/）的第 2 节中找到。开发者应审查 GDPR 以确定他们可能承担的 GDPR 义务。这些义务可能包括以下内容：
 
--   Asking for consent for collection of personal data.
+-   征求收集个人数据的同意。
 
--   Providing access to information on what personal data concerning them is being processed, where and for what purpose.
+-   提供有关正在处理哪些涉及他们的个人数据、在哪里以及出于什么目的的信息。
 
--   Providing access to any personal data collected from them free of charge.
+-   免费提供给用户任何从其收集的个人信息。
 
--   Ability for a user to erase their presence entirely within your product, including the ability to halt third party processing of personal data.
+-   允许用户完全删除其在您产品中的存在，包括阻止第三方处理个人数据的能力。
 
 
-If your solution collects personal data in any way, including using the `Communications` permission to collect or retain personal data (potentially in conjunction with `Sensor`, `Sensor History`, or `Position` permissions) or using any other mechanism, you are responsible for ensuring that your solution is in compliance with GDPR.
+如果您的解决方案以任何方式收集个人数据，包括使用 `Communications` 权限收集或保留个人数据（可能与 `Sensor`、`Sensor History` 或 `Position` 权限一起使用）或使用任何其他机制，您有责任确保您的解决方案符合 GDPR。
 
-## Approval Process
+## 审批流程
 
-After your app is successfully uploaded to the app store, the Connect IQ team will review your submission. Aside from special circumstances, such as national holidays, reviews are completed within 72 hours.
+成功将应用上传到应用商店后，Connect IQ 团队将审核您的提交。除特殊情况（如国家假日）外，审核将在 72 小时内完成。
 
-If you indicate your app uses one or more ANT+ profiles, an additional 48 hours is typically required to complete ANT+ certification. Once certification is complete, we'll provide ANT+ branding information and a link to the [ANT+ Directory](https://www.thisisant.com/directory) to add to your app's description on the store.
+如果您指示您的应用使用一个或多个 ANT+ 配置文件，通常需要额外 48 小时来完成 ANT+ 认证。认证完成后，我们将提供 ANT+ 品牌信息和指向 [ANT+ Directory]（https://www.thisisant.com/directory）的链接，添加到您在商店中的应用描述中。
 
-While approval is pending, your app will not appear on the Garmin Connect App Store, but you will be able to preview your app and download it yourself for testing. Once it's approved, you will receive a notification and it will appear on the Connect IQ App Store for all users to download and load to their devices!
+审批等待期间，您的应用不会出现在 Garmin Connect 应用商店，但您将能够预览应用并自行下载进行测试。批准后，您将收到通知，它将出现在 Connect IQ 应用商店，供所有用户下载并加载到他们的设备上！
 
-If for some reason your app is rejected, don't despair! The Connect IQ team will provide specific reasons for the rejection via email, and may work with you to resolve issues. The app will continue to be available for you to update as needed and re-submit for approval, but it will not be displayed on the Connect IQ App Store until approved.
+如果您的应用因某些原因被拒绝，请不要沮丧！Connect IQ 团队将通过电子邮件提供具体的拒绝原因，并可能会与您合作解决问题。应用将继续可供您更新并在需要时重新提交以供审批，但在获得批准之前，它不会显示在 Connect IQ 应用商店上。

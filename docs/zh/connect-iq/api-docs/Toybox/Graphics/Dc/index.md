@@ -225,7 +225,7 @@ Erase the screen using the background color.
 
 Note:
 
-Starting form version 3.1.0, COLOR\_TRANSPARENT will also be honored as background color, which will cause the value of pixels in the clip region to be replaced by COLOR\_TRANSPARENT. For example, this can be used to clear the transparent overlay layer so animation background is visible.
+Starting form version 3.1.0, COLOR\_TRANSPARENT will also be honored as background color, which will cause the value of pixels in the clip region to be replaced by COLOR\_TRANSPARENT. For example, this 可用于 clear the transparent overlay layer so animation background is visible.
 
 Since:
 

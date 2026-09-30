@@ -1578,7 +1578,7 @@ This method may be removed after System 4.
 
 Initiate a download request.
 
-The request is asynchronous; the responseCallback will be called when the request returns.
+The request is asynchronous; the responseCallback 将在...时调用 the request returns.
 
 Note:
 
@@ -1915,7 +1915,7 @@ API Level 1.3.0
 
 Initiate a download request.
 
-Web requests are asynchronous. The supplied response callback method will be called when the request returns.
+Web requests are asynchronous. The supplied response callback method 将在...时调用 the request returns.
 
 Note:
 
@@ -1965,9 +1965,9 @@ Parameters:
 
         -   This should be an [HTTP\_RESPONSE\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
 
-        -   If HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT or HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX is given, the system will attempt to download and parse a FIT or GPX file and store the contained data in the device, based on the contents of the file.
+        -   If HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT or HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX is given, 系统将 attempt to download and parse a FIT or GPX file and store the contained data in the device, based on the contents of the file.
 
-        -   If not given, the system will use the Content-Type header from the server response to determine the format of the response body. If the Content-Type header from the response is not one of the known HTTP\_RESPONSE\_CONTENT\_TYPE\_\* types, an error will occur.
+        -   If not given, 系统将 use the Content-Type header from the server response to determine the format of the response body. If the Content-Type header from the response is not one of the known HTTP\_RESPONSE\_CONTENT\_TYPE\_\* types, an error will occur.
 
 
     -   :context — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
@@ -2407,7 +2407,7 @@ API Level 1.3.0
 
 Register a callback for receiving Phone App message errors.
 
-The callback will be called when a message cannot be received. If there are messages waiting for the app when this function is called, the callback will immediately be called.
+The callback 将在...时调用 a message cannot be received. If there are messages waiting for the app when this function is called, the callback will immediately be called.
 
 Example:
 

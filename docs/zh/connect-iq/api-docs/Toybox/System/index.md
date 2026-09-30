@@ -5,7 +5,7 @@ title: "Module: Toybox.System"
 
 ## Overview
 
-The System module provides basic system information, including access to the clock time, device settings, battery level, and memory use.
+The System 模块提供 basic system information, including access to the clock time, device settings, battery level, and memory use.
 
 Since:
 

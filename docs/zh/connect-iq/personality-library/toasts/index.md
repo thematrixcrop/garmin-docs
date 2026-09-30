@@ -7,7 +7,7 @@ Asynchronous events can occur outside of the user's current flow. For example, G
 
 ## Standard Toast
 
-The System 6 [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API provides access to the system toast. The toast can display a short text string and an icon.
+The System 6 [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API 提供访问 the system toast. The toast can display a short text string and an icon.
 
 ## Example
 

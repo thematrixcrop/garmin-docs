@@ -13,7 +13,7 @@ On API level 3.2 products and above, the user can configure settings for the dat
 
 When a user launches an app from the activity list, the app will run until the user explicitly backs out from the first page.
 
-**Glance List** (*Device apps, Widgets*) – Glances are an evolution of the widget concept. The information of a widget is condensed into a glanceable item, and the collection is presented to the user as a list. Selecting an item from the list launches into the experience. The user can exit by backing out of the base page, but after a period of inactivity, the system will terminate the launched app, as well.
+**Glance List** (*Device apps, Widgets*) – Glances are an evolution of the widget concept. The information of a widget is condensed into a glanceable item, and the collection is presented to the user as a list. Selecting an item from the list launches into the experience. The user can exit by backing out of the base page, but after a period of inactivity, 系统将 terminate the launched app, as well.
 
 On API level 3.1 products, widgets were the only app type to support glances. In API level 4.0, device apps were given the ability to support glances, as well.
 

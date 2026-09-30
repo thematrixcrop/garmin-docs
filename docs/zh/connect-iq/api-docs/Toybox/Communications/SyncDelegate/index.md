@@ -188,7 +188,7 @@ API Level 3.1.0
 
 Called when an active sync is cancelled.
 
-This method will be called when an active sync is being cancelled by the user. The app is responsible for calling the [cancelAllRequests()](/connect-iq/api-docs/Toybox/Communications/#cancelAllRequests-instance_function) to cancel any requests made for a sync process. The app is also responsible to let the system know that sync has successfully been cancelled by calling [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function).
+This method 将在...时调用 an active sync is being cancelled by the user. The app is responsible for calling the [cancelAllRequests()](/connect-iq/api-docs/Toybox/Communications/#cancelAllRequests-instance_function) to cancel any requests made for a sync process. The app is also responsible to let the system know that sync has successfully been cancelled by calling [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function).
 
 Since:
 

@@ -1,7 +1,7 @@
 ---
 title: "Coding Conventions"
 ---
-# Coding Conventions
+# 编码约定
 
 Here are guidelines for Monkey C code:
 

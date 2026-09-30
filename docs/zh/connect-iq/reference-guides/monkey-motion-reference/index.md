@@ -3,7 +3,7 @@ title: "Monkey Motion"
 ---
 # Monkey Motion
 
-The Monkey Motion UI tool or the command line can be used to import your animations.
+The Monkey Motion UI tool or the command line 可用于 import your animations.
 
 ## Using the Monkey Motion UI
 
@@ -29,7 +29,7 @@ Figure 3. Monkey Motion Scrubbing
 
 ![Monkey Motion Scrubbing](/connect-iq/resources/programmers-guide/monkey_motion_scrubber.png)
 
-If the developer wishes to scrub a previously encoded animation, the *File* menu option can be used to select *Load Animation*, which accepts Monkey Motion Manifest files as input.
+If the developer wishes to scrub a previously encoded animation, the *File* menu option 可用于 select *Load Animation*, which accepts Monkey Motion Manifest files as input.
 
 ## Using the Command Line
 
@@ -41,15 +41,15 @@ Argument
  | Definition | Valid Values | Default Value | Notes |
 | --- | --- | --- | --- | --- |
 | `-a <arg>` | The target alpha channel mask for a `YUV` encoded video file | A valid, resolvable `YUV` encoded video file | NA | Optional |
-| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) for more information | A value between 1 and 6 | 6 | Optional |
+| `-c <arg>` | The preferred color depth (bits per color channel) of the animation. See [Color Depth for AMOLED Devices](#color-depth-for-amoled-devices) 更多信息 | A value between 1 and 6 | 6 | Optional |
 | `-d <arg>` | Target devices | Device qualifiers separated by a colon (:); devices that support orientation changing should be followed by '-portrait' or '-landscape' to determine the appropriate resolution when encoding a full screen animation | NA | Required |
 | `-e <arg>` | The identifier of an animation resource that should be exported along with the Monkey Motion encoded files | Any value that starts with a letter | NA | Optional |
-| `-f <arg>` | The target frame rate of the animation | A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) for more information | 10 for YUV encoded videos; GIF files can have a delay rate encoded within the animation, which will apply if not specified | Optional |
+| `-f <arg>` | The target frame rate of the animation | A value between 1 and 10 is recommended; higher frame rates will be subject to the speed in which the animation can be decoded. See [Frame Rate Considerations](#frame-rate-considerations) 更多信息 | 10 for YUV encoded videos; GIF files can have a delay rate encoded within the animation, which will apply if not specified | Optional |
 | `-h` | Print help information | NA | NA | Optional |
 | `-m <arg>` | Manifest file to specify the devices to build for | A path to a project manifest file | Empty | Optional |
 | `-o <arg>` | The output file path | A valid, resolvable file path | The target animation file path | Optional |
-| `-p <arg>` | The target compression level of the encoded animation | A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) for more information | 5 | Optional |
-| `-q <arg>` | The target image quality of the encoded animation | A value between 1 and 3. See [Considerations](#considerations) for more information | 3 | Optional |
+| `-p <arg>` | The target compression level of the encoded animation | A value between 1 and 7. See [Compression Level Impact](#compression-level-impact) 更多信息 | 5 | Optional |
+| `-q <arg>` | The target image quality of the encoded animation | A value between 1 and 3. See [Considerations](#considerations) 更多信息 | 3 | Optional |
 | `-r <arg>` | The target resolution of the animation (if not the device screen size) | `<width>x<height>` where `width` and `height` are the numeric values of the target resolution (ex: 40x40) | NA | Optional |
 | `-s <arg>` | The target image scaling quality of the animation | A value between 1 and 3 | If applicable, 3 | Optional |
 | `-v <arg>` | The target animation file | A valid, resolvable `YUV` / `GIF` file | NA | Required |

@@ -5,7 +5,7 @@ title: "Module: Toybox.Attention"
 
 ## Overview
 
-The Attention module provides the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
+The Attention 模块提供 the ability to play pre-defined sounds, methods for managing vibration, and control of the back light.
 
 Not all devices fully support this module, so `has` checks are recommended. For example, the vivoactive does not have a tone generator and will trigger an error if an app attempts to play sounds.
 

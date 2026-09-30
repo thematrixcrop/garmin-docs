@@ -539,7 +539,7 @@ Deciding whether to use `switch` instead of `if` is often a matter of personal p
 
 #### Scoping in Switch Blocks
 
-Variables declared within the switch block are scoped at the switch block level. Variables may also be enclosed by curly braces within a case block to limit scope to that case block. All variables defined at the switch block level must be initialized before being used in any subsequent `case` statements. For example:
+Variables declared within the switch block are scoped at the switch block level. Variables may also be enclosed by curly braces within a case block to limit scope to that case block. All variables defined at the switch block level must be initialized before being used in any subsequent `case` statements. For 示例：
 
 ```cpp
 switch (myValue) {
@@ -650,7 +650,7 @@ throw new Lang.Exception();
 
 If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/) and [Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). Refer to the [API Documentation](/connect-iq/api-docs/) for more details about the various [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) types.
 
-## Functions
+## 函数
 
 Functions (also called methods) are the meat of an application, defining discrete, callable units of code. They can exist in a class, module, or appear in the global module.
 
@@ -923,7 +923,7 @@ if (value instanceof Lang.Number) {
 }
 ```
 
-The `has` operator checks whether a given object has a particular symbol, which may be a public method, instance variable, or even a class definition or module. For example, accelerometer data is available in [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/), but not all products have an accelerometer. Attempting to use this data on certain products may cause the app to crash with a *Symbol Not Found* error. To avoid this, the `has` operator can be used to check for accelerometer support:
+The `has` operator checks whether a given object has a particular symbol, which may be a public method, instance variable, or even a class definition or module. For example, accelerometer data is available in [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/), but not all products have an accelerometer. Attempting to use this data on certain products may cause the app to crash with a *Symbol Not Found* error. To avoid this, the `has` operator 可用于 check for accelerometer support:
 
 ```cpp
 using Toybox.Sensor as Sensor;
@@ -1159,7 +1159,7 @@ While Monkey C will normally search the entire object hierarchy for an object, w
 
 **Note:** Switch blocks have some additional scoping rules, which can be found in the [Switch-Case Statements](#scoping-in-switch-blocks) section.
 
-## Annotations
+## 注解
 
 Monkey C allows associating symbols with class or module methods and variables. Annotations are used to communicate additional intentions to the compiler, and are sometimes used to add new features without changing the Monkey C grammar. For example, Run No Evil tests require annotations to demark sections of code that are meant only for testing:
 

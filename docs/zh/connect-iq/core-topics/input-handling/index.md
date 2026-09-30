@@ -26,7 +26,7 @@ The delegate object implements a certain interface specific to input handling. M
 | [InputDelegate.onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function) | This is sent when the touch screen is swiped | 1.0.0 |
 | [InputDelegate.onSelectable()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSelectable-instance_function) | This is sent when the state of a [WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) has changed. | 2.1.0 |
 
-To process input events, extend the [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) and override the appropriate handler operation. If you return `true` in the handler, the system will know the event has been handled. Returning `false` will tell the system to handle the input.
+To process input events, extend the [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) and override the appropriate handler operation. If you return `true` in the handler, 系统将 know the event has been handled. Returning `false` will tell the system to handle the input.
 
 For more see the `Input` sample app distributed with the SDK.
 

@@ -3,7 +3,7 @@ title: "Jungle Reference Guide"
 ---
 # Jungle Reference Guide
 
-Welcome to Jungles, the build language for Connect IQ apps. This guide will cover the following topics:
+欢迎来到 Jungles，这是 Connect IQ 应用的构建语言。本指南将涵盖以下主题：
 
 -   The [syntax](/connect-iq/reference-guides/jungle-reference/#jungle-syntax) of the jungle build language
 
@@ -14,13 +14,13 @@ Welcome to Jungles, the build language for Connect IQ apps. This guide will cove
 -   Using Jungles [with Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) or from the [command line](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
 
 
-## Jungle Syntax
+## Jungle 语法
 
 Jungle files contain *build instructions* that are made up of *qualifiers*, *local variables*, and *values*. Jungle files may also contain *comments*. Each build instruction is made up of qualifier-value or variable-value pairs separated by an equal sign (`=`), and terminate with a new line character.
 
 Qualifiers are analogous to the [device and family qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers) described in the previous section. They are treated as reserved words, can only be set equal to other qualifiers, and are globally scoped. Qualifiers and their properties can be used with the dereference operator `$(VAR)` and are evaluated after all Jungle files for a project have been processed.
 
-### Project Qualifiers
+### 项目限定符
 
 Project qualifiers specify global information that applies across the project. Project qualifiers have x properties that can be referenced by following `project` with a dot (`.`) and a property name:
 
@@ -30,7 +30,7 @@ Project qualifiers specify global information that applies across the project. P
 | `optimization` | Specifies the optimization level for the project. See the [`--optimization` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
 | `typecheck` | Specifies the type check level. See the [`--typecheck` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
 
-### Device Qualifiers
+### 设备限定符
 
 Device qualifiers have six properties that can be referenced by following a qualifier with a dot (`.`) and a property name:
 
@@ -38,17 +38,17 @@ Device qualifiers have six properties that can be referenced by following a qual
 | --- | --- |
 | `annotations` | Monkey Barrel annotations applicable to this qualifier |
 | `barrelPath` | Monkey Barrel file (`.barrel`) paths applicable to this qualifier |
-| `excludeAnnotations` | Annotations to exclude when building for this qualifier |
+| `exclude注解` | 注解 to exclude when building for this qualifier |
 | `lang` | The language(s) supported by this qualifier |
 | `personality` | Monkey style file (`.mss`) paths applicable to this qualifier |
 | `resourcePath` | Resource file (`.xml`) paths applicable to this qualifier |
 | `sourcePath` | Source file (`.mc`) paths applicable to this qualifier |
 
-### Local Variables
+### 局部变量
 
-Variables are a convenient way of re-using values, such as long path strings. Unlike qualifiers, local variables have no properties, cannot be set equal to a qualifier, and are locally scoped. Variables can be used with the dereference operator `$(VAR)` and are evaluated after the Jungle file in which they are defined has been processed.
+变量是重用值的便捷方式，例如长路径字符串。与限定符不同，局部变量没有属性，不能设置为等于限定符，并且是局部作用域。 Variables can be used with the dereference operator `$(VAR)` and are evaluated after the Jungle file in which they are defined has been processed.
 
-### Values
+### 值
 
 Values are a list of one or more string values that represent the value of a particular qualifier, qualifier property, or local variable. Multiple list items are separated by semicolons (`;`).
 
@@ -58,7 +58,7 @@ Spaces in string values must be contained within quotes. For example, a source o
 fenix5.sourcePath = "my projects/my source/file.mc";"my fenix5 source"
 ```
 
-### Comments
+### 注释
 
 Lines preceded with a hash mark (`#`) are treated as comments and are ignored by the compiler.
 
@@ -73,7 +73,7 @@ Jungle files must be named with a `.jungle` extension, and are kept in the root 
 
 **Note:** Dereferenced qualifiers are evaluated "lazily", which means that when building for a specific device, all qualifiers and properties are resolved for that device after all Jungle files are processed, while local variables will be resolved after processing the Jungle files in which they are defined. The exception to lazy evaluation is when a qualifier or local variable is dereferenced when *setting* that qualifier or variable, in which case the qualifier or variable is evaluated during Jungle file processing.
 
-## Sources and Resources
+## 源代码和资源
 
 Setting source and resource paths are a common use for Jungles. In addition to tailoring source code and resources to particular devices to improve user experience, it can also help with memory management since only the sources defined in the Jungle file are compiled into the executable.
 
@@ -133,7 +133,7 @@ oregon7xx.sourcePath = $(oregon7xx.sourcePath);handheld-source
 rino7xx.sourcePath = $(rino7xx.sourcePath);handheld-source
 ```
 
-### Localization Resources
+### 本地化资源
 
 Localization strings are a kind of resource in Connect IQ, but have a slightly different syntax since multiple languages may be supported by a single device or device family. Suppose an application supports both English and Spanish, and all of the fēnix English localization resources are stored in a `fenix-resources-eng` directory, while the Spanish localization resources are kept in a `fenix-resources-spa` directory.
 
@@ -156,9 +156,9 @@ The `lang` qualifier property is used in this build instruction to specify that 
 
 When specifying localization resources within Jungle files, the supported languages must also be set in a project's manifest, otherwise the associated localization overrides will be ignored.
 
-## Excluded Annotations
+## 排除的注解
 
-In some cases, there are specific modules, classes, methods, or variables that should only be used by a subset of devices, but excluding an entire source file is excessive. The `excludeAnnotations` qualifier property allows build instructions to specify specific [annotations](/connect-iq/monkey-c/annotations/#annotations) that will be excluded when an application is built. This may help save memory during app execution on a device.
+In some cases, there are specific modules, classes, methods, or variables that should only be used by a subset of devices, but excluding an entire source file is excessive. The `exclude注解` qualifier property allows build instructions to specify specific [annotations](/connect-iq/monkey-c/annotations/#annotations) that will be excluded when an application is built. This may help save memory during app execution on a device.
 
 A common reason for excluding source is when an application uses one algorithm that takes advantage of the latest APIs on newer devices, but must use a simpler algorithm on older devices that don't have the latest APIs available. For example, the following example shows an app that has two methods—one that uses the newer [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/), and one that relies on [Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var) data:
 
@@ -196,13 +196,13 @@ class MyAmazingAppView extends WatchUi.View {
 }
 ```
 
-This will function properly as-is, but all of the code is included regardless of the build target. If the app is approaching memory limits, it may be useful to exclude the unused method, especially if the method is sufficiently large and impacts available memory. To do this, set the `excludeAnnotations` qualifier property in the Jungle file to the appropriate annotation value:
+This will function properly as-is, but all of the code is included regardless of the build target. If the app is approaching memory limits, it may be useful to exclude the unused method, especially if the method is sufficiently large and impacts available memory. To do this, set the `exclude注解` qualifier property in the Jungle file to the appropriate annotation value:
 
 ```
 # By default, exclude the new, experimental logic
-base.excludeAnnotations = experimental
+base.exclude注解 = experimental
 # Exclude the old, boring logic from fenix 5
-fenix5.excludeAnnotations = boring
+fenix5.exclude注解 = boring
 ```
 
 Then, update the application to use annotations:
@@ -253,7 +253,7 @@ class MyAmazingAppView extends WatchUi.View {
 }
 ```
 
-## Monkey Barrel Management
+## Monkey Barrel 管理
 
 Barrels can also be added manually to the project's main Jungle file using the `barrelPath` qualifier property:
 
@@ -285,7 +285,7 @@ In order for the compiler to correctly resolve Monkey Barrels, Barrel dependenci
 
 Once completed, the specified Barrels will be available for use in a project.
 
-## Defining Project Dependencies
+## 定义项目依赖项
 
 What if a quick change is made to a developer's barrel code in the development process of a dependant application? It would be cumbersome to [export a barrel](/connect-iq/core-topics/shareable-libraries/#exporting-a-monkey-barrel) and update the dependencies in the manifest.xml every time the code is changed in the Barrel project. Connect IQ application projects can have direct Monkey Barrel project dependencies removing the need for these steps.
 
@@ -314,20 +314,20 @@ base.barrelPath = barrels/MathLibrary.barrel;[MyIconBarrel/roundIcons.jungle;MyI
 
 Take a look at the (../Core\_Topics/Shareable.md Libraries#shareablelibraries) chapter to learn more about Monkey Barrels and how they can be used.
 
-## The Default Jungle File
+## 默认 Jungle 文件
 
 The Connect IQ SDK includes a default Jungle file, which is always applied to projects even if no custom Jungle files are present. It defines a `base` qualifier, which represents all source files (`.mc`) contained in the project, and all resource files found in the `resources` at the root of a Connect IQ project. It also defines default device, family, and language qualifiers that are the basis for the qualifier scheme described in the previous section.
 
 When a project is built, the instructions from the default Jungle file are applied first, then any instructions from custom Jungle files are applied. This makes it possible for customizations to override the default build instructions.
 
-## Using Jungles with Visual Studio Code
+## 在 Visual Studio Code 中使用 Jungles
 
 By default, each project is configured to look for a `monkey.jungle` file in the root of the project and will use it if it exists. However, if a project is organized differently or a different Jungle file name is preferred, the Jungle file location can be set easily by going to *File > Preferences > Settings* and editing the *Monkey C* settings:
 
 
 ![Jungle file specification in Visual Studio Code](/connect-iq/resources/programmers-guide/vscode-jungles.png)
 
-## Using Jungles from the Command Line
+## 从命令行使用 Jungles
 
 For those who prefer to use the `monkeyc` [shell command](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands) to build projects rather than Visual Studio Code, the `-f` option is required and accepts a list of Jungle files, separated by semicolons (`;`) or colons (`:`):
 

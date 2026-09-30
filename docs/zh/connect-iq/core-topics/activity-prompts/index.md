@@ -5,7 +5,7 @@ title: "Activity Prompts"
 
 *Since API 5.2.0*
 
-The [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) module allows for a data field to intercept and suppress the voice prompts of an activity. This can be used to integrate a device with its own text-to-speech (TTS) engine with the activity experience.
+The [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) module allows for a data field to intercept and suppress the voice prompts of an activity. This 可用于 integrate a device with its own text-to-speech (TTS) engine with the activity experience.
 
 When installing an app that uses the [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) API, the user will be presented with a confirmation asking if they agree to allow the app to control the voice prompts. The user can always select the app as the audio prompts handler either in the audio prompts menu or through device settings. Note that not all devices have an on-device audio prompts menu.
 

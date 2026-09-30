@@ -13,7 +13,7 @@ For the system to know that your device application or data field supports the n
 
 ## Scanning for Your Device
 
-When the user has the device scan for sensors, the system will start your app without a UI, request your sensor delegate and call your [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function). During this time, you can begin scanning for ANT or BLE devices.
+When the user has the device scan for sensors, 系统将 start your app without a UI, request your sensor delegate and call your [SensorDelegate.onScan()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onScan-instance_function). During this time, you can begin scanning for ANT or BLE devices.
 
 If your scan reveals any devices, populate a Sensor.SensorInfo with the information and call Sensor.notifyNewSensor() for each device you detect. When your scan is complete, call to inform the system that you are done scanning. Since other apps also may need to scan for devices, use a realistic timeout, and notify quickly if no devices are detected.
 

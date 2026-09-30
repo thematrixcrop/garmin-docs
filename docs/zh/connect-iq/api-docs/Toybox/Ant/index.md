@@ -7,7 +7,7 @@ title: "Module: Toybox.Ant"
 
 This module provide the interface for the ANT wireless protocol.
 
-The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT module provides a list of constants to be used with different Class objects and Methods provided within the module. These include:
+The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT 模块提供 a list of constants to be used with different Class objects and Methods provided within the module. These include:
 
 -   [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) Constants - Message IDs
 

@@ -5,9 +5,9 @@ title: "Module: Toybox.Application.Storage"
 
 ## Overview
 
-The Storage module provides persistent storage to applications.
+The Storage 模块提供 persistent storage to applications.
 
-Storage provides access to persistent disk storage.
+Storage 提供访问 persistent disk storage.
 
 Since:
 

@@ -1,5 +1,5 @@
 ---
-title: "Compatible Devices | Connect IQ | Garmin Developers"
+title: "Compatible Devices"
 ---
 # Compatible Devices | Connect IQ | Garmin Developers
 

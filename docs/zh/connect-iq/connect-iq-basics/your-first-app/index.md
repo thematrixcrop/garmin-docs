@@ -5,7 +5,7 @@ title: "Your First Connect IQ App"
 
 ## Creating Your First Project
 
-First you need to create your new project:
+First 您需要 create your new project:
 
 1.  Use *Ctrl + Shift + P* (*Command + Shift + P* on the Mac) to summon the command palette
 

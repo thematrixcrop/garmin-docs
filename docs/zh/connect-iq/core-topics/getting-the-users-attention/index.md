@@ -3,7 +3,7 @@ title: "Getting the User's Attention"
 ---
 # Getting the User's Attention
 
-Your app may need to request the user's attention at certain times. Connect IQ offers ways to do this via the [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module. The [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module provides access to the vibration motor, tone generator, screen backlight and flashlight.
+Your app may need to request the user's attention at certain times. Connect IQ offers ways to do this via the [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module. The [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块提供 access to the vibration motor, tone generator, screen backlight and flashlight.
 
 | API | Description | API Level |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ Your app may need to request the user's attention at certain times. Connect IQ o
 
 The backlight behavior for Garmin devices depends on the display technology. *Reflective* displays like memory-in-pixel (MIP) typically keep the backlight off to conserve power. The user has options to have the backlight enable for different actions like button touches and gestures. These will be handled automatically by the system based on the user settings.
 
-*Emissive* displays like AMOLED are not backlit, but instead typically draw power to light every pixel. The brightness of the display can vary from a low brightness of an "always on" mode to full brightness when the user has gestured. The user can choose their brightness settings for the device, and the system will obey them automatically.
+*Emissive* displays like AMOLED are not backlit, but instead typically draw power to light every pixel. The brightness of the display can vary from a low brightness of an "always on" mode to full brightness when the user has gestured. The user can choose their brightness settings for the device, and 系统将 obey them automatically.
 
 The [Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function) API allows the developer to enable the screen backlight. On API 3.2.0 and above, the backlight brightness can be provided as a value between 0.0 and 1.0, and below API 3.2 the brightness can be set to `true` or `false`.
 
@@ -92,7 +92,7 @@ The [Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFl
 
 ## Tones
 
-Garmin devices often use audible tones for different events. The [Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) API provides access to the tone generator:
+Garmin devices often use audible tones for different events. The [Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) API 提供访问 the tone generator:
 
 ```typescript
     function playTone(options as Tone or {
@@ -105,7 +105,7 @@ To play a system tone, you can pass one of the odule) enum values. If you want t
 
 ## Vibration
 
-The vibration motor can be used to inform the user that an event that needs their attention is occurring. You can engage the vibration motor with the [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) API:
+The vibration motor 可用于 inform the user that an event that needs their attention is occurring. You can engage the vibration motor with the [Attention.vibrate()](/connect-iq/api-docs/Toybox/Attention/#vibrate-instance_function) API:
 
 ```typescript
 function vibrate(vibeProfiles as Array<VibeProfile>) as Void

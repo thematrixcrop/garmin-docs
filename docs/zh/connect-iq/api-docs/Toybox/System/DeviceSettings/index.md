@@ -509,7 +509,7 @@ Returns:
 
 Indicates if widget glances are enabled on the device.
 
-If glance mode is enabled, the system will pass up / down key events to a widget base page. Otherwise, the system will mask them out.
+If glance mode is enabled, 系统将 pass up / down key events to a widget base page. Otherwise, 系统将 mask them out.
 
 Since:
 
@@ -999,7 +999,7 @@ Returns:
 
 -   [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    An identifier that can be used to identify the host device or `null` on error.
+    An identifier that 可用于 identify the host device or `null` on error.
 
 
 ### var vibrateOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)

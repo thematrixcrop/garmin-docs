@@ -80,7 +80,7 @@ Use the `scope` attribute to save memory in your glance or background service. A
 
 In the example above, `MyBackgroundString` would be available when running the application in any valid mode. `MyGlanceString` would be available to the glance and foreground application, but not to the background service if present. `MyForegroundString` would only be available to the foreground application. By providing this hierarchy, developers can better determine how their resources should be scoped.
 
-See [Background Services](/connect-iq/core-topics/backgrounding/#background-services) or [Glances](/connect-iq/core-topics/glances/#glances) for more information.
+See [Background Services](/connect-iq/core-topics/backgrounding/#background-services) or [Glances](/connect-iq/core-topics/glances/#glances) 更多信息.
 
 ## Strings
 
@@ -104,7 +104,7 @@ Using [localization qualifiers](/connect-iq/core-topics/build-configuration/#dev
 
 | Qualifier | Language | Notes |
 | --- | --- | --- |
-| No qualifier | Base language | These strings will be used if no language is provided. If a translation is not provided for a string in a specific language, the system will use the base language version as a substitution. |
+| No qualifier | Base language | These strings will be used if no language is provided. If a translation is not provided for a string in a specific language, 系统将 use the base language version as a substitution. |
 | `ara` | Arabic |  |
 | `bul` | Bulgarian |  |
 | `ces` | Czech |  |
@@ -233,7 +233,7 @@ Font elements accept the following attributes:
 | `filter` | String | No | None | Optional string that outlines all characters to import from the font |
 | `antialias` | Boolean | No | `false` | Boolean that identifies if fonts should be imported with anti-aliasing information |
 | `scope` | String | No | `foreground` | See [resource scopes](#resource-scopes) |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) for more information |
+| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 ## Menus
 
@@ -248,7 +248,7 @@ Menus are defined using the `<menu2>` element, which has the following attribute
 | `id` | String | Yes | None | Unique identifier for the menu |
 | `title` | String | No | None | String, string resource identifier, or drawable resource identifier |
 | `icon` | Drawable reference | No | None | Bitmap identifier. Used for Instinct 2 sub-screen icon. |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) for more information |
+| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 Within a `<menu2>` element can be an array of `<menu-item>`, `<toggle-menu-item>`, or `<icon-menu-item>` types.
 
@@ -262,7 +262,7 @@ Standard menu items are contained within `<menu-item>` elements and have the fol
 | `label` | String | Yes | None | String title for the menu item |
 | `subLabel` | String | No | None | String sub-title for the menu item |
 | `icon` | Drawable reference | No | None | Drawable icon displayed in the Instinct 2 sub-screen |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) for more information |
+| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 #### Toggle Menu Items
 
@@ -297,7 +297,7 @@ Action menus are contextual menus associated with a page. Action menus are defin
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None | Unique identifier for the menu |
 | `theme` | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) or [`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) | No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) | Allows configuring if the action menu is light on dark or dark on light. Not configurable on all products. |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) for more information |
+| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 #### Action Menu Items
 
@@ -307,13 +307,13 @@ Action menu items are contained within `<action-menu-item>` elements and have th
 | --- | --- | --- | --- | --- |
 | `id` | String | Yes | None | Unique identifier for the menu item |
 | `label` | String | Yes | None | String title for the menu item |
-| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) for more information |
+| `personality` | Personality class | No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
 
 ## Animations
 
 *Since API level 3.1.0*
 
-The Monkey Motion tool included in the Connect IQ SDK that can be used to generate animation resources for compatible Connect IQ products.
+The Monkey Motion tool included in the Connect IQ SDK that 可用于 generate animation resources for compatible Connect IQ products.
 
 The Monkey Motion tool supports importing from [`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc) and `GIF` file formats. Due the fact that `YUV` is a true color, close-to-raw file format, it is the recommended format when entering a high quality animation into the Monkey Motion encoder tool. If necessary, [FFmpeg](https://ffmpeg.org/) is a convenient tool for converting video file formats. For example, if your creative team has provided a video in some other popular format, convert the file to the `YUV` format:
 
@@ -321,7 +321,7 @@ The Monkey Motion tool supports importing from [`YUV`](https://github.com/cota/s
 > ffmpeg -i input.mp4 -vf format=yuv420p output.y4m
 ```
 
-Additionally, to overcome the fact that the `YUV` format does not support transparency (unlike the `GIF` file format), the Monkey Motion tool accepts an additional `YUV` file as input. This video file should represent an alpha channel mask of the original animation that contained transparency. Again, FFmpeg is a convenient tool for creating such a video. The `alphaextract` option can be used to take an input stream with an alpha channel and return a video containing just the alpha component as a greyscale value:
+Additionally, to overcome the fact that the `YUV` format does not support transparency (unlike the `GIF` file format), the Monkey Motion tool accepts an additional `YUV` file as input. This video file should represent an alpha channel mask of the original animation that contained transparency. Again, FFmpeg is a convenient tool for creating such a video. The `alphaextract` option 可用于 take an input stream with an alpha channel and return a video containing just the alpha component as a greyscale value:
 
 ```
 > ffmpeg -i input.gif -vf alphaextract,format=yuv420p output.y4m

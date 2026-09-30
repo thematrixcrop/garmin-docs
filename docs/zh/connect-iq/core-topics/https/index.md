@@ -116,4 +116,4 @@ For more see the `WebRequest` sample app distributed with the SDK.
 
 ## Directing Users to Web Content
 
-The call can be used to direct the user to a specific web page on the paired mobile device. When called, the specified web page should be fetched and displayed in the phones default browser. There is no callback for this function and the watch app has no method for checking if the call was completed on the phone successfully.
+The call 可用于 direct the user to a specific web page on the paired mobile device. When called, the specified web page should be fetched and displayed in the phones default browser. There is no callback for this function and the watch app has no method for checking if the call was completed on the phone successfully.

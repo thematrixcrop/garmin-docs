@@ -1,9 +1,9 @@
 ---
 title: "ANT and ANT+"
 ---
-# ANT and ANT+
+# ANT 和 ANT+
 
-The Sensor module of Connect IQ gives developers access to the built-in and paired sensors of the device. Connect IQ also provides access to the available ANT channels as well. This allows developers to communicate with sensors not supported by Garmin. Using the FIT recording system those metrics can be recorded to the Activity file and uploaded to Garmin Connect.
+Connect IQ 的 Sensor 模块让开发者可以访问设备的内置和配对传感器。 Connect IQ 还提供可用 ANT 通道的访问。 This allows developers to communicate with sensors not supported by Garmin. 通过 FIT 录制系统，这些数据可以记录到 Activity 文件中并上传到 Garmin Connect。
 
 Learn more about ANT and ANT+ at [thisisant.com](http://thisisant.com/)
 
@@ -14,7 +14,7 @@ Learn more about ANT and ANT+ at [thisisant.com](http://thisisant.com/)
 
 ## Generic ANT Channels
 
-Connect IQ provides a low level interface for communication with ANT and ANT+ sensors. With this interface, an ANT channel can be created to send and receive ANT packets.
+Connect IQ 提供与 ANT 和 ANT+ 传感器通信的低级接口。 使用此接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
 
 With an ANT USB dongle you can use Connect IQ ANT APIs in the Connect IQ Simulator. Note that Garmin Express will block access to the ANT USB dongle if it is running, so make sure to shut down Garmin Express when using the ANT USB dongle with the Connect IQ simulator.
 
@@ -28,7 +28,7 @@ Find the vendor and product id for the ANT stick
 $ lsusb
 ```
 
-Identify the ANT stick in the list and its vendor and product id. example:
+Identify the ANT stick in the list and its vendor and product id. 示例：
 
 ```bash
 Bus 001 Device 009: ID 0fcf:1009 Dynastream Innovations, Inc. ANTUSB-m Stick
@@ -158,7 +158,7 @@ The [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) module allows access 
 
 An extension of a sensor-specific listener is passed into the constructor for a sensor-specific extension of [AntPlus.Device](/connect-iq/api-docs/Toybox/AntPlus/Device/). If there is a sensor of the given type paired to the user's device, information about that sensor can be retrieved using the sensor-specific getters, or through the common data getters such as [Device.getBatteryStatus()](/connect-iq/api-docs/Toybox/AntPlus/Device/#getBatteryStatus-instance_function). `null` can be passed in as the identifier for sensor types (like most) that do not support multi-components.
 
-Callbacks in the [AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) and extensions of it will be called automatically if a sensor of the given type is paired and the corresponding information is updated via ANT. For example, [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function) will be called if a sensor's ANT channel goes from connected to searching, or if the user switches the sensor ID of a given type that their device is connected to. Callbacks like will be called when new pieces of information about a power sensor are received via ANT.
+Callbacks in the [AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) and extensions of it will be called automatically if a sensor of the given type is paired and the corresponding information is updated via ANT. For example, [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function) will be called if a sensor's ANT channel goes from connected to searching, or if the user switches the sensor ID of a given type that their device is connected to. Callbacks like 将在...时调用 new pieces of information about a power sensor are received via ANT.
 
 Certain ANT+ sensors, such as bike lights, have special callbacks. For example, the callback should be used to understand the light network's state rather than [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function). The [AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/) class will allow you to make changes to bike light modes, given there are bike lights paired to the user's device and a light network is fully formed.
 

@@ -24,11 +24,11 @@ title: "Native UI Controls"
 -   Map Views
 
 
-Two additional handlers provided by [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) can be used to give feedback to the user: the confirmation dialog and progress dialog.
+Two additional handlers provided by [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 可用于 give feedback to the user: the confirmation dialog and progress dialog.
 
 ## Menus
 
-Menus are full screen lists of options for the user. Menus can be used to present options or settings for the user to choose from.
+Menus are full screen lists of options for the user. Menus 可用于 present options or settings for the user to choose from.
 
 ### Menu2
 
@@ -328,7 +328,7 @@ For more, see the [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#sho
 
 Data fields function as plug-ins for the Garmin activity experience. After users install a data field from the store, they can place them inside of their activity pages for any Garmin activity.
 
-On devices with touch screen support, an input delegate can be used to accept input. Only the [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) behavior is supported and will be triggered when the user touches a point inside the data field when it is active on the screen. The behavior delegate should be the second element of the array that is returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) as with other app types.
+On devices with touch screen support, an input delegate 可用于 accept input. Only the [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) behavior is supported and will be triggered when the user touches a point inside the data field when it is active on the screen. The behavior delegate should be the second element of the array that is returned from [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) as with other app types.
 
 ```java
 // This data field accepts touch input
@@ -554,7 +554,7 @@ This [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) is usin
 
 setMapMarker()
 
-The method takes a [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object and sets it on the map. In this example only the `defaultMarker` is set to be drawn on the map. However, it is acceptable to set multiple MapMarker objects by setting them in an [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/). For example:
+The method takes a [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) object and sets it on the map. In this example only the `defaultMarker` is set to be drawn on the map. However, it is acceptable to set multiple MapMarker objects by setting them in an [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/). For 示例：
 
 ```cpp
 // Create an Array to hold the MapMarker objects

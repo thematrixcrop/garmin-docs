@@ -5,7 +5,7 @@ title: "Module: Toybox.Time.Gregorian"
 
 ## Overview
 
-The Gregorian module provides an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
+The Gregorian 模块提供 an interface for getting [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects and [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects based on the Gregorian calendar.
 
 For convenience, several time constants are defined that represent the number of seconds per year, per day, per hour, and per minute.
 

@@ -5,9 +5,9 @@ title: "Module: Toybox.Application.Properties"
 
 ## Overview
 
-The Properties module provides access to application properties.
+The Properties 模块提供 access to application properties.
 
-Storage provides access to properties defined in application properties.
+Storage 提供访问 properties defined in application properties.
 
 Since:
 

@@ -23,7 +23,7 @@ Custom fonts liven up watch faces. Due to the variety of resolutions, your desig
 
 ![](/connect-iq/resources/ux-guide/low-power-modes.png)
 
-Connect IQ watch faces typically operate in a low-power state where the system requests updates every minute. When the user gestures to look at the watch, the system will request the watch face enter a high-power state. During this period, typically 10 seconds, the watch face can enable timers and play animations. Use this time to add some action to your watch faces.
+Connect IQ watch faces typically operate in a low-power state where the system requests updates every minute. When the user gestures to look at the watch, 系统将 request the watch face enter a high-power state. During this period, typically 10 seconds, the watch face can enable timers and play animations. Use this time to add some action to your watch faces.
 
 ## Always Active
 

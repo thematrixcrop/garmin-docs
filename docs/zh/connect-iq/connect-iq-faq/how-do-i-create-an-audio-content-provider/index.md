@@ -1,7 +1,7 @@
 ---
 title: "How do I create an Audio Content Provider?"
 ---
-# How do I create an Audio Content Provider?
+# 如何创建音频内容提供者？
 
 In 2018 Garmin has launched [multiple music capable wearable products](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc) that allow users to leave their phone at home while they live their active lifestyle. Users can copy their music library directly to the device, or they can install a Connect IQ audio content provider app that acts as a bridge between the wearable and a Content Delivery Network (CDN).
 
@@ -39,7 +39,7 @@ Content downloaded by audio content provider apps are protected in several ways:
 
 Each application gets access to a storage sandbox. The storage files are encrypted and cannot be accessed by any other apps on the system.
 
-The system will initiate a sync after the configuration step. The user will be prompted to start a sync, and if they agree the device will activate Wi-Fi, and upon connection the system will request the app create a `SyncDelegate`. The delegate is used to notify the app that a sync has started, has been stopped, and to determine if a sync is needed. In the `onStart` method of the `SyncDelegate`, the app needs to download the songs chosen in the sync configuration step. The app notifies the system of the sync progress, so the UI can be updated.
+The system will initiate a sync after the configuration step. The user will be prompted to start a sync, and if they agree the device will activate Wi-Fi, and upon connection 系统将 request the app create a `SyncDelegate`. The delegate is used to notify the app that a sync has started, has been stopped, and to determine if a sync is needed. In the `onStart` method of the `SyncDelegate`, the app needs to download the songs chosen in the sync configuration step. The app notifies the system of the sync progress, so the UI can be updated.
 
 ![](/connect-iq/resources/faq/sync_flow.png)
 

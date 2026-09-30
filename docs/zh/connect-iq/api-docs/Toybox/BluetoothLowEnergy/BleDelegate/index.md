@@ -36,11 +36,11 @@ API Level 3.1.0
 
 -   [**onCharacteristicRead**](#onCharacteristicRead-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function will be called when the operation is completed.
+    After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function 将在...时调用 the operation is completed.
 
 -   [**onCharacteristicWrite**](#onCharacteristicWrite-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function will be called when the operation is completed.
+    After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function 将在...时调用 the operation is completed.
 
 -   [**onConnectedStateChanged**](#onConnectedStateChanged-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), state as [BluetoothLowEnergy.ConnectionState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionState-module)) as **Void**
 
@@ -48,11 +48,11 @@ API Level 3.1.0
 
 -   [**onDescriptorRead**](#onDescriptorRead-instance_function)(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function will be called when the operation is completed.
+    After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function 将在...时调用 the operation is completed.
 
 -   [**onDescriptorWrite**](#onDescriptorWrite-instance_function)(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function will be called when the operation is completed.
+    After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function 将在...时调用 the operation is completed.
 
 -   [**onEncryptionStatus**](#onEncryptionStatus-instance_function)(device as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
@@ -64,11 +64,11 @@ API Level 3.1.0
 
 -   [**onScanResults**](#onScanResults-instance_function)(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) as **Void**
 
-    If a scan is running this will be called when new ScanResults are received.
+    If a scan is running this 将在...时调用 new ScanResults are received.
 
 -   [**onScanStateChange**](#onScanStateChange-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
-    When the state of scanning is modified the system will call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
+    When the state of scanning is modified 系统将 call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
 
 
 ## Instance Method Details
@@ -102,7 +102,7 @@ API Level 3.1.0
 
 ### **onCharacteristicRead(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function will be called when the operation is completed.
+After requesting a read operation on a Characteristic with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function), this function 将在...时调用 the operation is completed.
 
 Parameters:
 
@@ -125,7 +125,7 @@ API Level 3.1.0
 
 ### **onCharacteristicWrite(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function will be called when the operation is completed.
+After requesting a write operation on a Characteristic with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function), this function 将在...时调用 the operation is completed.
 
 Parameters:
 
@@ -163,7 +163,7 @@ API Level 3.1.0
 
 ### **onDescriptorRead(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/))** as **Void**
 
-After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function will be called when the operation is completed.
+After requesting a read operation on a Descriptor with [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) this function 将在...时调用 the operation is completed.
 
 Parameters:
 
@@ -186,7 +186,7 @@ API Level 3.1.0
 
 ### **onDescriptorWrite(descriptor as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function will be called when the operation is completed.
+After requesting a write operation on a Descriptor with [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) this function 将在...时调用 the operation is completed.
 
 Parameters:
 
@@ -316,7 +316,7 @@ API Level 3.1.0
 
 ### **onScanResults(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/))** as **Void**
 
-If a scan is running this will be called when new ScanResults are received
+If a scan is running this 将在...时调用 new ScanResults are received
 
 Parameters:
 
@@ -331,7 +331,7 @@ API Level 3.1.0
 
 ### **onScanStateChange(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module))** as **Void**
 
-When the state of scanning is modified the system will call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
+When the state of scanning is modified 系统将 call this function with the new state and a status indicating the result of the last call to [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function).
 
 Parameters:
 

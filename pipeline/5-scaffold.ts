@@ -10,9 +10,10 @@ import {
   MARKDOWN_DIR,
   NAV,
   SECTION_I18N,
+  ZH_UI_FILE,
   type Lang,
 } from './config';
-import { ensureDir, readJson, readText, walkFiles, writeJson, writeText } from './lib/fsx';
+import { ensureDir, exists, readJson, readText, walkFiles, writeJson, writeText } from './lib/fsx';
 import { log } from './lib/logger';
 import { routeToRelFile } from './lib/routes';
 import type { ExtractedPage, ManifestEntry, SidebarLink } from './lib/types';
@@ -94,7 +95,12 @@ function labelFor(route: string, harvested?: string): string {
   return humanize(segs[segs.length - 1] ?? '');
 }
 
-function buildMetaFiles(pages: PageInfo[], labels: Map<string, string>, order: Map<string, string[]>): {
+function buildMetaFiles(
+  pages: PageInfo[],
+  labels: Map<string, string>,
+  order: Map<string, string[]>,
+  tr: (s: string) => string,
+): {
   path: string;
   data: unknown;
 }[] {
@@ -124,7 +130,7 @@ function buildMetaFiles(pages: PageInfo[], labels: Map<string, string>, order: M
 
     const items = names.map((name) => {
       const childRoute = joinRoute([...dsegs, name]);
-      const label = labelFor(childRoute, labels.get(childRoute));
+      const label = tr(labelFor(childRoute, labels.get(childRoute)));
       // Every route maps to `<name>/index.md`, so every entry is a directory.
       const isGroup = routes.some((r) => {
         const s = segments(r);
@@ -146,43 +152,85 @@ function buildMetaFiles(pages: PageInfo[], labels: Map<string, string>, order: M
   return result;
 }
 
-function withHeading(page: PageInfo): string {
+/**
+ * SSR-rendered landing pages fall back to the raw `<title>` tag, which carries
+ * boilerplate such as "Foo | Connect IQ | Garmin Developers".
+ */
+function cleanTitle(raw: string): string {
+  return /Garmin Developers/i.test(raw) ? raw.split('|')[0].trim() : raw.trim();
+}
+
+function withHeading(page: PageInfo, tr: (s: string) => string): string {
   const body = page.markdown.trim();
+  const fallback = tr(page.title) || segments(page.route).pop() || 'Connect IQ';
   if (!body) {
     return [
-      `# ${page.title || segments(page.route).pop() || 'Connect IQ'}`,
+      `# ${fallback}`,
       '',
       ':::info',
-      'This page is rendered client-side on the source site and has no mirrored content.',
+      '本页在原站由浏览器端渲染，没有可供镜像的正文内容。',
       '',
-      `See [the source page](${page.route}).`,
+      `见[源站页面](https://developer.garmin.com${page.route})。`,
       ':::',
     ].join('\n');
   }
   if (/^#\s/.test(body)) return body;
-  return `# ${page.title || segments(page.route).pop()}\n\n${body}`;
+  return `# ${fallback}\n\n${body}`;
 }
 
-function renderFile(page: PageInfo): string {
-  const title = page.title || segments(page.route).pop() || 'Connect IQ';
+function renderFile(page: PageInfo, tr: (s: string) => string): string {
+  const title = tr(cleanTitle(page.title)) || segments(page.route).pop() || 'Connect IQ';
   const frontmatter = [`---`, `title: ${yamlString(title)}`, `---`, ''].join('\n');
-  return `${frontmatter}${withHeading(page)}\n`;
+  return `${frontmatter}${withHeading(page, tr)}\n`;
 }
 
-async function writeLang(lang: Lang, pages: PageInfo[], metaFiles: { path: string; data: unknown }[]): Promise<void> {
+/** Body of a generated page, i.e. everything after the frontmatter block. */
+function bodyOf(text: string): string {
+  return text.replace(/^---\n[\s\S]*?\n---\n/, '').trim();
+}
+
+async function writeLang(
+  lang: Lang,
+  pages: PageInfo[],
+  metaFiles: { path: string; data: unknown }[],
+  tr: (s: string) => string,
+): Promise<void> {
   const langRoot = join(DOCS_ROOT, lang);
 
-  // Rebuild the locale from scratch so stale files never linger.
-  await rm(langRoot, { recursive: true, force: true });
+  // The default locale is fully generated, so it is rebuilt from scratch.
+  if (lang === 'en') await rm(langRoot, { recursive: true, force: true });
   await ensureDir(langRoot);
 
+  const expected = new Set<string>(['_nav.json', 'index.md']);
+  for (const page of pages) expected.add(`${page.relFile}.md`);
+  for (const meta of metaFiles) expected.add(meta.path);
+
+  let preserved = 0;
   await Promise.all(
     pages.map((page) =>
       limit(async () => {
-        await writeText(join(langRoot, `${page.relFile}.md`), renderFile(page));
+        const target = join(langRoot, `${page.relFile}.md`);
+
+        // Hand-translated pages must survive a re-scaffold: a locale page whose
+        // body no longer matches the English source is a translation.
+        if (lang !== 'en' && (await exists(target))) {
+          const existing = await readText(target);
+          if (bodyOf(existing) !== bodyOf(renderFile(page, (s) => s))) {
+            preserved++;
+            return;
+          }
+        }
+
+        await writeText(target, renderFile(page, tr));
       }),
     ),
   );
+
+  // Drop files that no longer correspond to a page.
+  for (const file of await walkFiles(langRoot)) {
+    const rel = file.slice(langRoot.length + 1);
+    if (!expected.has(rel)) await rm(file, { force: true });
+  }
 
   await Promise.all(
     metaFiles.map((meta) =>
@@ -195,12 +243,14 @@ async function writeLang(lang: Lang, pages: PageInfo[], metaFiles: { path: strin
     `${JSON.stringify(NAV, null, 2)}\n`,
   );
 
+  if (preserved > 0) log.info(`  [${lang}] preserved ${preserved} translated page(s)`);
+
   const zh = lang === 'zh';
   await writeText(
     join(langRoot, 'index.md'),
     [
       '---',
-      `title: ${yamlString(zh ? 'Garmin Connect IQ 文档' : 'Garmin Connect IQ Docs')}`,
+      `title: ${yamlString('Connect IQ')}`,
       '---',
       '',
       `# ${zh ? 'Garmin Connect IQ 文档' : 'Garmin Connect IQ Docs'}`,
@@ -248,9 +298,13 @@ async function main(): Promise<void> {
   }
 
   const { order, labels } = buildNavMaps(pages);
-  const metaFiles = buildMetaFiles(pages, labels, order);
 
-  log.info(`pages: ${pages.length}, _meta.json files: ${metaFiles.length}`);
+  const uiStrings = (await exists(ZH_UI_FILE))
+    ? (await readJson<{ strings: Record<string, string> }>(ZH_UI_FILE)).strings
+    : {};
+  const identity = (s: string): string => s;
+  const translatorFor = (lang: Lang): ((s: string) => string) =>
+    lang === 'zh' ? (s: string) => uiStrings[s] ?? s : identity;
 
   // Remove the hand-written root _meta.json files (per-directory sidebars only).
   for (const lang of LANGS) {
@@ -258,12 +312,16 @@ async function main(): Promise<void> {
   }
 
   for (const lang of LANGS) {
+    const tr = translatorFor(lang);
+    const metaFiles = buildMetaFiles(pages, labels, order, tr);
+    log.info(`[${lang}] pages: ${pages.length}, _meta.json files: ${metaFiles.length}`);
     await ensureDir(join(DOCS_ROOT, lang));
-    await writeLang(lang, pages, metaFiles);
+    await writeLang(lang, pages, metaFiles, tr);
     log.ok(`wrote docs/${lang}`);
   }
 
-  log.ok(`scaffolded ${pages.length} pages × ${LANGS.length} languages`);
+  const translated = Object.keys(uiStrings).length;
+  log.ok(`scaffolded ${pages.length} pages × ${LANGS.length} languages (${translated} UI strings localised)`);
 }
 
 main().catch((err) => {

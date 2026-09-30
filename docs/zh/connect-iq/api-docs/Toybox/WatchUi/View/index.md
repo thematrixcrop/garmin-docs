@@ -188,7 +188,7 @@ API Level 1.0.0
 
 ### **addLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as **Void**
 
-Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack. Users do not need to draw the layer on the screen manually, instead, once a layer is added to the view, the system will draw all layers during screen updates which include View update (e.g. onUpdate/onPartialUpdate) and animation playback.
+Add a [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) on the top of view's layer stack. Users do not need to draw the layer on the screen manually, instead, once a layer is added to the view, 系统将 draw all layers during screen updates which include View update (e.g. onUpdate/onPartialUpdate) and animation playback.
 
 Disabled for DataFiled and Background Apps
 
@@ -433,7 +433,7 @@ API Level 3.1.0
 
 ### **setActionMenuIndicator(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**)** as **Void**
 
-Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) will be called when the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
+Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) 将在...时调用 the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
 
 Parameters:
 

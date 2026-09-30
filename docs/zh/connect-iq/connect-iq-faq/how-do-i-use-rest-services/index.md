@@ -1,7 +1,7 @@
 ---
 title: "How do I communicate with REST services?"
 ---
-# How do I communicate with REST services?
+# 如何与 REST 服务通信？
 
 The Connect IQ Communication API is the API that brings the wearable web to Garmin devices. However, there are some subtleties to how to expose a web service to a Garmin device.
 
@@ -126,4 +126,4 @@ Using your web service to parse and minimize the data down to the aforementioned
 }
 ```
 
-Limiting the data to just what you need to display, and use will result in a much faster communications transaction. Of course, writing and hosting your own web service can be a bit much for a simple, glanceable widget.
+Limiting the data to just what 您需要 display, and use will result in a much faster communications transaction. Of course, writing and hosting your own web service can be a bit much for a simple, glanceable widget.

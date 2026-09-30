@@ -1,7 +1,7 @@
 ---
 title: "How do I optimize bitmaps in my app?"
 ---
-# How do I optimize bitmaps in my app?
+# 如何在应用中优化位图？
 
 ![](/connect-iq/resources/faq/cake_undithered.jpg)
 ![](/connect-iq/resources/faq/cake_dithered.png)

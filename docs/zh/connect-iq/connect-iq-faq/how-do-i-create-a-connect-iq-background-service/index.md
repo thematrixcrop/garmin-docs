@@ -1,7 +1,7 @@
 ---
 title: "How do I create a Connect IQ Background Service?"
 ---
-# How do I create a Connect IQ Background Service?
+# 如何创建 Connect IQ 后台服务？
 
 *This post was written by Jim Miller, a Connect IQ developer in Phoenix, AZ.*
 

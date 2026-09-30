@@ -15,7 +15,7 @@ The Mobile SDK is publicly available on Maven Central at [ConnectIQ Companion Ap
 
 ## Additional Requirements
 
-In order for your companion application to communicate with a Connect IQ device the user must also install Garmin Connect Mobile onto their phone. All communication for companion applications running on Android goes through a Garmin Connect Mobile service to reach the device. When initializing the SDK with a wireless connection type this requirement is checked and initialization will fail if Garmin Connect Mobile is not installed. If true is passed to the auto UI parameter of initialize, a message is displayed to the user that they need to either install or upgrade Garmin Connect Mobile and provides them a way to go directly to the application in the Google Play Store. See `Displaying a UI message automatically when initialization fails` for more information.
+In order for your companion application to communicate with a Connect IQ device the user must also install Garmin Connect Mobile onto their phone. All communication for companion applications running on Android goes through a Garmin Connect Mobile service to reach the device. When initializing the SDK with a wireless connection type this requirement is checked and initialization will fail if Garmin Connect Mobile is not installed. If true is passed to the auto UI parameter of initialize, a message is displayed to the user that they need to either install or upgrade Garmin Connect Mobile and provides them a way to go directly to the application in the Google Play Store. See `Displaying a UI message automatically when initialization fails` 更多信息.
 
 ## Interacting with the SDK
 
@@ -59,7 +59,7 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
     public void onInitializationError(IQSdkErrorStatus status) {
 
         // A failure has occurred during initialization. Inspect
-        // the IQSdkErrorStatus value for more information regarding
+        // the IQSdkErrorStatus value 更多信息 regarding
         // the failure.
     }
 
@@ -111,7 +111,7 @@ if (paired != null && paired.size() > 0) {
 }
 ```
 
-`getConnectedDevices()` will return a list of currently connected devices. Because these devices could become disconnected at any time, it is good practice to register to receive a notification when the device connects or disconnects. See the next section for more information.
+`getConnectedDevices()` will return a list of currently connected devices. Because these devices could become disconnected at any time, it is good practice to register to receive a notification when the device connects or disconnects. See the next section 更多信息.
 
 ```java
 List<IQDevice> devices = connectIQ.getConnectedDevices();

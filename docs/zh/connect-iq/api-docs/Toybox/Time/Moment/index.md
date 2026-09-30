@@ -360,7 +360,7 @@ Returns:
 
 -   [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    The Duration between the two Moment objects or the Moment offset by a Duration. When subtracting Moments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) method can be used to determine whether one Moment is before or after another Moment.
+    The Duration between the two Moment objects or the Moment offset by a Duration. When subtracting Moments, the computed Duration is always a positive value. The [compare()](/connect-iq/api-docs/Toybox/Time/Moment/#compare-instance_function) method 可用于 determine whether one Moment is before or after another Moment.
 
 
 See Also:

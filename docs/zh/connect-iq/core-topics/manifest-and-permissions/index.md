@@ -13,9 +13,9 @@ The `application` element has a number of important attributes. The `id` field i
 
 The `entry` attribute must specify the [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) object for your application.
 
-The `name` and `launcherIcon` attributes must specify a resource ID that is defined in the app resources. The `name` must reference a `string` entry in your strings resources, and the `launcherIcon` must reference a bitmap resource. See the [Resources](/connect-iq/core-topics/resources/#resources) for more information. Note that the icon resource should not be re-used within your application; use a duplicate resource if you want to use the icon within the app.
+The `name` and `launcherIcon` attributes must specify a resource ID that is defined in the app resources. The `name` must reference a `string` entry in your strings resources, and the `launcherIcon` must reference a bitmap resource. See the [Resources](/connect-iq/core-topics/resources/#resources) 更多信息. Note that the icon resource should not be re-used within your application; use a duplicate resource if you want to use the icon within the app.
 
-If you specify a `launcherIcon`, the system will resource compiler will auto size the resource to match the product icon size. If a `launcherIcon` isn't specified, a default icon will be compiled into the application.
+If you specify a `launcherIcon`, 系统将 resource compiler will auto size the resource to match the product icon size. If a `launcherIcon` isn't specified, a default icon will be compiled into the application.
 
 The `type` field specifies what kind of application you are developing. Currently, Connect IQ supports five types of apps:
 
@@ -123,7 +123,7 @@ Some products provide separation between activities and apps. If your app has th
 
 ## Languages
 
-Connect IQ apps can be localized across over 30 languages, and the languages your app support can impact what regions of the world your app is available in. In the manifest you can declare the languages your app supports, which will be used when exporting your application to the store. See [Resources](/connect-iq/core-topics/resources/#strings) for more information.
+Connect IQ apps can be localized across over 30 languages, and the languages your app support can impact what regions of the world your app is available in. In the manifest you can declare the languages your app supports, which will be used when exporting your application to the store. See [Resources](/connect-iq/core-topics/resources/#strings) 更多信息.
 
 ## Dependencies
 
@@ -155,7 +155,7 @@ If a version is specified, the build system will enforce that library version be
 
 The version can be prefixed with `>=` to indicate a minimum supported version.
 
-See [Shareable Libraries](/connect-iq/core-topics/shareable-libraries/#shareable-libraries) for more information.
+See [Shareable Libraries](/connect-iq/core-topics/shareable-libraries/#shareable-libraries) 更多信息.
 
 Communication requires the background permission to be enabled, but Authentication does not
 

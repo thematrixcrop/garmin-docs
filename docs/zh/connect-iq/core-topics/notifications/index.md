@@ -1,46 +1,46 @@
 ---
 title: "Notifications"
 ---
-# Notifications
+# 通知
 
-Background services are allowed to periodically run, either by scheduling an update or being woken up by an event. Sometimes you may want to ask the user to open your app based on background processing.
+后台服务可以通过调度更新或被事件唤醒来定期运行。有时您可能希望根据后台处理请求用户打开您的应用。
 
-| API | Description | API level |
+| API | 描述 | API 级别 |
 | --- | --- | --- |
-| [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) | Request the user launch the application. This displays as a confirmation. | 2.3.0 |
-| [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) | Notify the user of an event from the background. This displays as an app notification. | 5.1.0 |
-| [Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) | Receive status of app notifications. | 5.1.0 |
+| [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) | 请求用户启动应用。这显示为确认对话框。 | 2.3.0 |
+| [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) | 通知用户来自后台的事件。这显示为应用通知。 | 5.1.0 |
+| [Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) | 接收应用通知的状态。 | 5.1.0 |
 
-## Waking the Application
+## 唤醒应用
 
-*Since API level 2.3.0*
+*自 API 级别 2.3.0 起*
 
-[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) allows you to interrupt the user to request that they open your application. When called, the user will be presented with a confirmation message of your choice. The system may suppress the request if there are not sufficient resources to launch the app.
+[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 允许您中断用户并请求他们打开您的应用。调用时，用户将看到您选择的确认消息。如果资源不足以启动应用，系统可能会阻止此请求。
 
-## Notifications
+## 通知
 
-*Since API level 5.1.0*
+*自 API 级别 5.1.0 起*
 
-The Notifications API allows you to tie into the notification system and give actionable notifications to the user. To show a notification to the user, use the [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) API. The notification can have the following items:
+Notifications API 允许您连接到通知系统并向用户提供可操作的通知。要向用户显示通知，请使用 [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) API。通知可以包含以下项目：
 
--   Title string
+-   标题字符串
 
--   Sub-title string
+-   副标题字符串
 
--   Body string
+-   正文字符串
 
--   Custom icon. If this is not specified, the app icon is used.
+-   自定义图标。如果不指定此项，则使用应用图标。
 
 
-The presentation will match the personality of the device, and is not guaranteed to display the same across different devices. If multiple notifications are present, the most recent notification will be displayed. You can set the `:dismissPrevious` option to true to request the system clear other notifications from your application before displaying the new one.
+展示将匹配设备的个性风格，不能保证在不同设备上显示相同。如果有多个通知存在，将显示最新的通知。您可以将 `:dismissPrevious` 选项设置为 true，以在显示新通知之前请求系统清除您应用的其他通知。
 
-You are allowed to define an array of actions with the notification. The actions are defined as a string and serializable data. The action strings are presented to the user with the notification. If the user selects one of these actions, the `state` dictionary of your [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) is called with `:launchedFromNotification` containing the action data. By default, the notification has a launch and dismiss action associated with it. Using the `:data` option allows you to associate data with the default action.
+您可以为通知定义一个动作数组。动作定义为字符串和可序列化数据。动作字符串与通知一起呈现给用户。如果用户选择其中一个动作，您的 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) 的 `state` 字典将被调用，其中包含 `:launchedFromNotification`（带有动作数据）。默认情况下，通知具有与之关联的启动和关闭动作。使用 `:data` 选项允许您将数据与默认动作关联。
 
-[Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) allows the app to be notified if a notification action is triggered, or if the notification is dismissed.
+[Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 允许应用在通知动作被触发或通知被取消时收到通知。
 
-## Example
+## 示例
 
-The following would display a notification with the “Reply” and “Dismiss” options:
+以下内容将显示带有"回复"和"关闭"选项的通知：
 
 ```typescript
 Notifications.showNotification("Jeff", "Something Happened", {
@@ -53,6 +53,6 @@ Notifications.showNotification("Jeff", "Something Happened", {
 });
 ```
 
-# See Also
+# 另见
 
-The Notification sample shows how to use notifications.
+Notification 示例展示了如何使用通知。

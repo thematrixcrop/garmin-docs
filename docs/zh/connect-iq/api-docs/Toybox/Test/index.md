@@ -5,9 +5,9 @@ title: "Module: Toybox.Test"
 
 ## Overview
 
-The Test module provides a testing framework for Monkey C.
+The Test 模块提供 a testing framework for Monkey C.
 
-The test module provides the tools to implement your own unit test and asserts in your source code. Unit tests take a [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object and allow for different levels of output. Unit tests are annotated with `:test` and ignored if testing is not run. Asserts do not require the `:test` annotation and will be compiled out in release versions or you Connect IQ Content. A test RESULTS section is printed to the console with the tests run, test status, and failure rates.
+The test 模块提供 the tools to implement your own unit test and asserts in your source code. Unit tests take a [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) object and allow for different levels of output. Unit tests are annotated with `:test` and ignored if testing is not run. Asserts do not require the `:test` annotation and will be compiled out in release versions or you Connect IQ Content. A test RESULTS section is printed to the console with the tests run, test status, and failure rates.
 
 ## See Also:
 

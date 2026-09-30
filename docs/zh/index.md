@@ -1,5 +1,5 @@
 ---
-title: "Garmin Connect IQ 文档"
+title: "Connect IQ"
 ---
 
 # Garmin Connect IQ 文档

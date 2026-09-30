@@ -78,9 +78,9 @@ class MyServiceDelegate extends System.ServiceDelegate {
 }
 ```
 
-If your type check level is at `informative` or above, the compiler will detect if your background service or any objects referenced is attempting to reference something not marked as background. See [Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types) for more information.
+If your type check level is at `informative` or above, the compiler will detect if your background service or any objects referenced is attempting to reference something not marked as background. See [Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types) 更多信息.
 
-The resource compiler can control the scope level of your resources as well. See the [Resources](/connect-iq/core-topics/resources/#resource-scopes) section for more information.
+The resource compiler can control the scope level of your resources as well. See the [Resources](/connect-iq/core-topics/resources/#resource-scopes) section 更多信息.
 
 ## Simulating Background Services
 

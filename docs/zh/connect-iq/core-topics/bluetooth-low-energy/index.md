@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Connect IQ BLE Development"
 ---
-# Getting Started with Connect IQ BLE Development
+# 开始 Connect IQ BLE 开发
 
 ![](/connect-iq/resources/programmers-guide/sculptor-monkey.png)
 

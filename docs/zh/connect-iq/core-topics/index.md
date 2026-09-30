@@ -3,4 +3,4 @@ title: "Core Topics"
 ---
 # Core Topics
 
-This section covers the core topics of the Connect IQ platform.
+本节涵盖 the core topics of the Connect IQ platform.

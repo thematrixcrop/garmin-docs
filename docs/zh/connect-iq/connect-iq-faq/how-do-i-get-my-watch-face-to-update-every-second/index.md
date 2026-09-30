@@ -1,7 +1,7 @@
 ---
 title: "How do I Make My Watch Face Update Every Second?"
 ---
-# How do I Make My Watch Face Update Every Second?
+# 如何让我的表盘每秒更新？
 
 *Since API level 2.3*
 
