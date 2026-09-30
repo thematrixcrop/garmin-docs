@@ -9,7 +9,7 @@ title: "Mobile SDK for iOS"
 
 #### 加入项目框架
 
-移动SDK用于iOS作为iOS框架包分布,可在[Garmin GitHub repo for Connect IQ Mobile SDK](https://github.com/garmin/connectiq-companion-app-sdk-ios)上找到.
+移动 SDK for iOS 以 iOS 框架包形式分发，可在 [Garmin Connect IQ Mobile SDK GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)中找到。
 
 ![将框架添加到 iOS 项目](/connect-iq/resources/programmers-guide/ios-image1.png)
 
@@ -29,7 +29,7 @@ title: "Mobile SDK for iOS"
 
 #####注册一个URL方案
 
-Unlike the Mobile SDK for Android, apps created with the Mobile SDK for iOS are standalone apps and do not directly rely on Garmin Connect Mobile (GCM) to communicate with a wearable device. They do, however, require GCM to initially discover Connect IQ-compatible devices that are available for communication, or to install Monkey C applications on the wearable device. The companion app and GCM exchange information by launching each other via the iOS URL scheme system. To facilitate this, a URL scheme that GCM can send data to must be registered by the app. To do this, add an entry to the `Target > Info > URL Types` panel. A string that is not likely to collide with any other apps on the iOS device should be chosen. See the Apple documentation 更多信息 on [custom URL schemes](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1).
+与 Android 移动 SDK 不同，使用 iOS 移动 SDK 创建的应用程序是独立应用，不直接依赖 Garmin Connect Mobile（GCM）与可穿戴设备通信。不过，应用程序仍需要 GCM 首次发现可用于通信的 Connect IQ 兼容设备，或在可穿戴设备上安装 Monkey C 应用程序。配套应用和 GCM 通过 iOS URL 方案系统相互启动并交换信息。为此，应用程序必须注册一个 GCM 可以向其发送数据的 URL 方案。请在 `Target > Info > URL Types` 面板中添加条目，并选择一个不太可能与 iOS 设备上其他应用冲突的字符串。有关详细信息，请参阅 Apple 关于[自定义 URL 方案](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1)的文档。
 
 ![为目标注册 URL 方案](/connect-iq/resources/programmers-guide/ios-image5.png)
 
