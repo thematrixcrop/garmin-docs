@@ -11,19 +11,19 @@ Monkey C 语言内置两种容器类型：数组（Array）和字典（Dictionar
 Monkey C 中的数组和变量一样不带固定类型，因此不需要声明数据类型。创建新数组有两种形式。要创建固定 `size` 的空数组，请使用：
 
 ```typescript
-// Create a typeless array
+// 创建无类型数组
 var untypedArray = new [size];
-// Create a typed array
+// 创建有类型数组
 var typedArray = new Array<Number>[size];
 ```
 
 要预先填充数组，可以使用以下语法：
 
 ```typescript
-// New array. Will be typed as a Tuple
+// 新建数组，将被作为元组进行类型化
 // [Number, Number, Number, Number, Number]
 var untypedArray = [1, 2, 3, 4, 5];
-// New typed array
+// 新建类型化数组
 var typedArray = [1, 2, 3, 4, 5] as Array<Number>;
 ```
 
@@ -36,10 +36,10 @@ var array = [ [1,2], [3,4] ];
 Monkey C 没有直接创建空二维数组的语法，但可以使用以下方式初始化：
 
 ```typescript
-// Shout out to all the Java programmers in the house
+// 向在场的所有 Java 程序员致意
 var array = new [first_dimension_size];
 
-// Initialize the sub-arrays
+// 初始化子数组
 for( var i = 0; i < first_dimension_size; i += 1 ) {
     array[i] = new [second_dimension_size];
 }
@@ -50,25 +50,25 @@ for( var i = 0; i < first_dimension_size; i += 1 ) {
 字典（也称关联数组）是 Monkey C 内置的数据结构：
 
 ```java
-var dict = { "a" => 1, "b" => 2 };  // Creates a dictionary
-System.println( dict["a"] );        // Prints "1"
-System.println( dict["b"] );        // Prints "2"
-System.println( dict["c"] );        // Prints "null"
+var dict = { "a" => 1, "b" => 2 };  // 创建字典
+System.println( dict["a"] );        // 打印 "1"
+System.println( dict["b"] );        // 打印 "2"
+System.println( dict["c"] );        // 打印 "null"
 ```
 
 要初始化空字典，请使用以下语法：
 
 ```typescript
-var x = {};                         // Empty dictionary
+var x = {};                         // 空字典
 ```
 
 创建新的 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象时，可以添加类型后缀以限制键和值的类型：
 
 ```typescript
 var x = {} as Dictionary<Symbol, String>;
-// Valid
+// 有效
 x[:option] = "value";
-// Invalid
+// 无效
 x["option"] = "value";
 ```
 
@@ -77,11 +77,11 @@ x["option"] = "value";
 ```java
 class Person
 {
-    // Return a number as the hash code. Remember that the hash code must be
-    // the same for two objects that are equal.
-    // @return Hash code value
+    // 返回作为哈希码的数字。请记住，两个相等对象的哈希码必须
+    // 相同。
+    // @return 哈希码值
     function hashCode() {
-        // Using the unique person id for the hash code
+        // 使用唯一的人员 ID 作为哈希码
         return mPersonId;
     }
 }
