@@ -39,7 +39,7 @@ Garmin 音乐可穿戴设备通过将内容同步到设备上进行后续播放�
 
 每个应用程序都能访问一个存储沙箱.存储文件是加密的,系统上的其他应用程序都无法访问.
 
-The system will initiate a sync after the configuration step. The user will be prompted to start a sync, and if they agree the device will activate Wi-Fi, and upon connection 系统将 request the app create a `SyncDelegate`. The delegate is used to notify the app that a sync has started, has been stopped, and to determine if a sync is needed. In the `onStart` method of the `SyncDelegate`, the app needs to download the songs chosen in the sync configuration step. The app notifies the system of the sync progress, so the UI can be updated.
+配置步骤完成后，系统会启动同步。系统会提示用户开始同步；如果用户同意，设备会启用 Wi-Fi，并在连接后请求应用程序创建 `SyncDelegate`。该委托用于通知应用程序同步已开始或已停止，并确定是否需要同步。在 `SyncDelegate` 的 `onStart` 方法中，应用程序需要下载用户在同步配置步骤中选择的歌曲。应用程序会将同步进度通知系统，以便更新界面。
 
 ![](/connect-iq/resources/faq/sync_flow.png)
 

@@ -77,7 +77,7 @@ class MySuperApp extends Application.AppBase {
 | 状态 | 描述 |
 | --- | --- |
 | Active |当您的应用程序从不活跃状态转向活跃状态时,[AppBase.onActive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onActive-instance_function)被调用.活跃应用程序的访问由应用程序类型定义.从不活跃到活跃时,将恢复访问传感器,ANT/BLE.|
-| Inactive | [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function) 在从...转换时调用 the active to inactive state. |
+| 不活跃 | 从活跃状态转换为不活跃状态时调用 [AppBase.onInactive()](/connect-iq/api-docs/Toybox/Application/AppBase/#onInactive-instance_function)。 |
 
 根据应用运行的状态，您将拥有不同级别的系统资源访问权限：
 

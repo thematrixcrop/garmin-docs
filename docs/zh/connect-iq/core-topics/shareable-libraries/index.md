@@ -24,7 +24,7 @@ title: "Shareable Libraries"
 6. 设置您的新项目
 
 
-Once the project is created, you can edit your supported products and permissions in the *manifest.xml*. See [Editing the 支持ed Products](/connect-iq/connect-iq-basics/your-first-app/#editing-the-supported-products) 更多信息. A specific check is in place to ensure that developers cannot have a Barrel with the name "Toybox". The Barrel has now been created—now it's time to fill it!
+创建项目后，您可以在 *manifest.xml* 中编辑受支持的产品和权限。更多信息请参阅[编辑受支持的产品](/connect-iq/connect-iq-basics/your-first-app/#editing-the-supported-products)。系统会进行专门检查，确保开发者不能将 Barrel 命名为“Toybox”。Barrel 已创建，现在可以向其中添加内容了！
 
 开发人员可以将桶作为定制模块,实际上它们应该是这样设置的:
 
@@ -77,7 +77,7 @@ module FooBarrel {
 }
 ```
 
-Developers can use annotations to denote sub-modules within their Barrels. Sub-modules with annotations (i.e. the `(:Bars)` annotation above) allow developers to import certain sections of code without importing the entire Barrel. If a module directly below the namespace is found at compile time that is not decorated with an annotation, a warning will be generated. A module lacking an annotation that is found within a module decorated with an annotation will also generate a warning (i.e. `AlsoEmpty` module above). See 更多信息 on how to include Barrels and specific annotations.
+开发者可以使用注解标记 Barrel 中的子模块。带注解的子模块（例如上面的 `(:Bars)` 注解）允许开发者导入代码的特定部分，而无需导入整个 Barrel。如果编译时发现命名空间下的直接模块没有注解，系统会生成警告。在带注解模块中发现缺少注解的模块时，也会生成警告（例如上面的 `AlsoEmpty` 模块）。有关如何包含 Barrel 和特定注解的详细信息，请参阅相关文档。
 
 对于桶项目的表格还必须配置说明:
 

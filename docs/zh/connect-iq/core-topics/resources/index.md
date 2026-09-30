@@ -80,7 +80,7 @@ dc.drawBitmap( 50, 50, image );
 
 在上述例子中,`MyBackgroundString`将在任何有效模式下运行应用程序时可用.`MyGlanceString`将可用于视线和前景应用程序,但如果存在,则不会用于背景服务.`MyForegroundString`仅可用于前景应用程序.通过提供这种层次结构,开发人员可以更好地确定如何将其资源进行范围.
 
-See [Background Services](/connect-iq/core-topics/backgrounding/#background-services) or [Glances](/connect-iq/core-topics/glances/#glances) 更多信息.
+更多信息请参阅[后台服务](/connect-iq/core-topics/backgrounding/#background-services)或[速览](/connect-iq/core-topics/glances/#glances)。
 
 ## 字符串
 
@@ -233,7 +233,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | `filter` | 字符串 | No | None |选项字符串概述所有字符从字体中输入|
 | `antialias` | 布尔值 | No | `false` |布尔字体识别是否应进口与反化信息|
 | `scope` | 字符串 | No | `foreground` | 请参阅 [resource scopes](#resource-scopes) |
-| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 ## 菜单
 
@@ -248,7 +248,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | `id` | 字符串 | Yes | None |菜单的唯一标识符|
 | `title` | 字符串 | No | None | 字符串、字符串资源标识符或可绘制资源标识符 |
 | `icon` | 可绘制对象引用 | No | None |用于 Instinct 2 子屏幕图标.|
-| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 在`<menu2>`元素内可以有`<menu-item>`,`<toggle-menu-item>`或`<icon-menu-item>`类型的数组.
 
@@ -262,7 +262,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | `label` | 字符串 | Yes | None |菜单项的字符串标题|
 | `subLabel` | 字符串 | No | None |菜单项的字符串字幕|
 | `icon` | 可绘制对象引用 | No | None |在 Instinct 2 子屏幕中显示的可画图标|
-| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 #### 切换菜单项
 
@@ -297,7 +297,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | --- | --- | --- | --- | --- |
 | `id` | 字符串 | Yes | None |菜单的唯一标识符|
 | `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |允许设置如果动作菜单是光在暗或暗在光明. 不能在所有产品上设置.|
-| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 #### 操作菜单项
 
@@ -307,7 +307,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | --- | --- | --- | --- | --- |
 | `id` | 字符串 | Yes | None |菜单项的唯一标识符|
 | `label` | 字符串 | Yes | None |菜单项的字符串标题|
-| `personality` |个性类| No | None | Personality class for the element. See [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) 更多信息 |
+| `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 ## 动画
 

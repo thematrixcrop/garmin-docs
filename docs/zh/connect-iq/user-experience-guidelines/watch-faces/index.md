@@ -23,7 +23,7 @@ title: "Watch Faces"
 
 ![](/connect-iq/resources/ux-guide/low-power-modes.png)
 
-Connect IQ watch faces typically operate in a low-power state where the system requests updates every minute. When the user gestures to look at the watch, 系统将 request the watch face enter a high-power state. During this period, typically 10 seconds, the watch face can enable timers and play animations. Use this time to add some action to your watch faces.
+Connect IQ 表盘通常在低功耗状态下运行，系统每分钟请求一次更新。当用户抬腕查看手表时，系统会请求表盘进入高功耗状态。此状态通常持续 10 秒，表盘可以启用计时器并播放动画。您可以利用这段时间为表盘添加动态效果。
 
 ## 始终活动
 

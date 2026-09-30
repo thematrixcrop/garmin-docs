@@ -45,7 +45,7 @@ FIT文件将与[Garmin Connect](https://connect.garmin.com/)同步.您可以使�
 
 现在想想把一个新的指标 - Namastes - 添加到果应用程序`namaste`.这个指标将心率,加速仪和其他传感器数据结合成一个值,并且没有任何Garmin记录指标中的模拟.
 
-First, you must enable the [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) permission in the manifest file (see the [Manifest and Permissions](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions) section 更多信息). Next, 您需要 add your field definitions in your resources using the `fitContributions` block:
+首先，您必须在清单文件中启用 [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) 权限（更多信息请参阅[清单和权限](/connect-iq/core-topics/manifest-and-permissions/#manifest-file-and-permissions)一节）。接下来，您需要在资源中使用 `fitContributions` 块添加字段定义：
 
 ```xml
     <strings>

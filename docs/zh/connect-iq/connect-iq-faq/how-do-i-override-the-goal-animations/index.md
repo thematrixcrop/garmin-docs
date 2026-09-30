@@ -13,4 +13,4 @@ class AppBase {
 }
 ```
 
-The 'getGoalView()' function is passed one of the supported goal view types: 'GOAL\_TYPE\_STEPS', 'GOAL\_TYPE\_FLOORS\_CLIMBED', or 'GOAL\_TYPE\_ACTIVE\_MINUTES'. Not all types are supported on every product. The application can return a view to be displayed from this function, or null to allow the system to display the default goal display. Goal Views can start animations, similar to the main WatchFace view when onExitSleep() is triggered. Goal Views are displayed for approximately 10 seconds. When they expire, 系统将 call 'getInitialView()' to switch back to the main WatchFace view.
+`getGoalView()` 函数会接收以下受支持的目标视图类型之一：`GOAL_TYPE_STEPS`、`GOAL_TYPE_FLOORS_CLIMBED` 或 `GOAL_TYPE_ACTIVE_MINUTES`。并非每种产品都支持所有类型。应用程序可以从此函数返回要显示的视图，也可以返回 null，让系统显示默认目标视图。目标视图可以启动动画，类似于触发 `onExitSleep()` 时的主表盘视图。目标视图显示约 10 秒，超时后系统会调用 `getInitialView()` 切换回主表盘视图。

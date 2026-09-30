@@ -9,7 +9,7 @@ title: "Quantifying User Information"
 
 ## 用户配置文件
 
-The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 personal information about the user, including their gender, birth year, height, weight, and athletic metrics like VO2 Max and activity class. It requires the `UserProfile` permission to access.
+[Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供用户个人信息，包括性别、出生年份、身高、体重，以及最大摄氧量（VO2 Max）和活动等级等运动指标。访问这些信息需要 `UserProfile` 权限。
 
 [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfile-instance_function)调用返回一个[UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)对象,提供
 
@@ -27,7 +27,7 @@ The [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 
 | 睡眠时间 | [Profile.sleepTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#sleepTime-var) |用户设置的典型睡眠时间| 1.0.0 |
 | 唤醒时间 | [Profile.wakeTime](/connect-iq/api-docs/Toybox/UserProfile/Profile/#wakeTime-var) |用户配置的典型警觉时间| 1.0.0 |
 
-[Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 提供访问 the additional data:
+[Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 还提供以下数据：
 
 | Information | API |值| API 级别 |
 | --- | --- | --- | --- |

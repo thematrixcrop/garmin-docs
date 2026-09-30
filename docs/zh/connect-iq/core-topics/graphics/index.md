@@ -104,7 +104,7 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 *自 API 级别 4.2.2*
 
-Sometimes you want the color of an asset, like an icon, to be user-definable. For example, you may want the complication icons on a watch face to match a user-defined theme color. One of the features of [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) is the ability to apply a tint color to an asset. The `:tintColor` option 可用于 specify a color to apply to a grayscale asset.
+有时您希望资源（例如图标）的颜色可由用户定义。例如，您可能希望表盘上的复杂功能图标匹配用户定义的主题颜色。[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) 支持为资源应用着色颜色。`:tintColor` 选项可用于指定应用到灰度资源的颜色。
 
 ### 图形池
 

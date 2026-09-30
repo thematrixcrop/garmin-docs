@@ -5,7 +5,7 @@ title: "Activity Prompts"
 
 *自 API 5.2.0*
 
-The [Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) module allows for a data field to intercept and suppress the voice prompts of an activity. This 可用于 integrate a device with its own text-to-speech (TTS) engine with the activity experience.
+[Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/) 模块允许数据字段拦截并抑制活动语音提示。这可用于将设备自身的文本转语音（TTS）引擎集成到活动体验中。
 
 在安装使用[Toybox.ActivityPrompts](/connect-iq/api-docs/Toybox/ActivityPrompts/)API的应用程序时,用户会得到确认,要求他们是否同意允许应用程序控制语音提示.用户可以在音频提示菜单或设备设置中选择该应用程序作为音频提示处理器.请注意,并非所有设备都有设备上的音频提示菜单.
 

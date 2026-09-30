@@ -31,7 +31,7 @@ System.exitTo(intent);
 
 ## 退出本地应用程序
 
-[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) objects to launch native apps deal exclusively with [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) objects, such as [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/), [PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/), and [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/). Connect IQ handles most of the [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) functionality for native apps behind the scenes, automatically embedding the appropriate native app identifier in the [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) object, which is accessible via the `toIntent()` method. See the [Persisted Content](/connect-iq/core-topics/downloading-content/#persisted-content-in-the-simulator) section 更多信息.
+[System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 对象用于启动原生应用，并且只处理 [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) 对象，例如 [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)、[PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/) 和 [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)。Connect IQ 会在后台处理原生应用的大部分 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 功能，自动将适当的原生应用标识嵌入 [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) 对象中，并可通过 `toIntent()` 方法访问。更多信息请参阅[持久化内容](/connect-iq/core-topics/downloading-content/#persisted-content-in-the-simulator)一节。
 
 ## Intent 异常
 

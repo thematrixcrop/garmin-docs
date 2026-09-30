@@ -24,11 +24,11 @@ title: "Native UI Controls"
 -   地图视图
 
 
-Two additional handlers provided by [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 可用于 give feedback to the user: the confirmation dialog and progress dialog.
+ [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 还提供两个可用于向用户提供反馈的处理器：确认对话框和进度对话框。
 
 ## 菜单
 
-Menus are full screen lists of options for the user. Menus 可用于 present options or settings for the user to choose from.
+菜单是向用户显示选项的全屏列表。菜单可用于呈现供用户选择的选项或设置。
 
 ### Menu2
 

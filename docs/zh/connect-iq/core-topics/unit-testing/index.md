@@ -62,7 +62,7 @@ function myUnitTest(logger as Logger) as Boolean {
 }
 ```
 
-The unit tests include a handy logger with different logging levels for more meaningful error reporting. The sample code above uses a "debug" logging level, but the Logger contains a total of three logging levels that 可用于 distinguish between different types of errors in your unit test output:
+单元测试包含一个便捷的日志记录器，并提供不同日志级别以生成更有意义的错误报告。上面的示例代码使用“debug”日志级别，但 Logger 总共提供三个日志级别，可用于区分单元测试输出中的不同错误类型：
 
 -   [Logger.debug()](/connect-iq/api-docs/Toybox/Test/Logger/#debug-instance_function)
 
