@@ -78,22 +78,22 @@ FIT 文件会与 [Garmin Connect](https://connect.garmin.com/) 同步。您可�
 接下来需要在代码中创建字段。可以在源代码中调用 [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) 对象的 [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) 方法：
 
 ```java
-// Field ID from resources.
+// 来自资源的字段 ID。
 const NAMASTE_FIELD_ID = 0;
 hidden var mNamasteField;
 
-// Initializes the new Namaste field in the activity file
+// 初始化活动文件中的新 Namaste 字段
 function setupField(session as Session) {
-    // Create a new field in the session.
-    // Current namastes provides an file internal definition of the field
-    // Field id must match the fitField id in resources or your data will not display!
-    // The field type specifies the kind of data we are going to store.
-    // For Record data this must be numeric, for others it can also be a string.
-    // The mesgType allows us to say what kind of FIT record we are writing.
-    //    FitContributor.MESG_TYPE_RECORD for graph information
-    //    FitContributor.MESG_TYPE_LAP for lap information
-    //    FitContributor.MESG_TYPE_SESSION for summary information.
-    // Units provides a file internal units field.
+    // 在会话中创建新字段。
+    // 当前 namastes 为字段提供文件内部定义。
+    // 字段 ID 必须与资源中的 fitField ID 匹配，否则不会显示数据！
+    // 字段类型指定要存储的数据类型。
+    // 对于 Record 数据，此类型必须为数字；对于其他数据，也可以是字符串。
+    // mesgType 用于指定要写入的 FIT 记录类型。
+    //    FitContributor.MESG_TYPE_RECORD 表示图表信息
+    //    FitContributor.MESG_TYPE_LAP 表示圈信息
+    //    FitContributor.MESG_TYPE_SESSION 表示摘要信息。
+    // Units 提供文件内部单位字段。
     mNamasteField =
         session.createField(
             "current_namastes", NAMASTE_FIELD_ID, FitContributor.DATA_TYPE_FLOAT,
