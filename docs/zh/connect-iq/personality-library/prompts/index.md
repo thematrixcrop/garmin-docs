@@ -14,12 +14,12 @@ title: "Prompts"
 ```xml
 <!-- layout.xml -->
 
-    <!-- Informational Prompt -->
+    <!-- 信息提示 -->
     <layout id="InfoPromptDark" >
-        <!-- Dark Background -->
+        <!-- 深色背景 -->
         <drawable id="DarkBackground" />
 
-        <!-- Prompt Body -->
+        <!-- 提示正文 -->
         <text-area id="mainLabel" text="@Strings.informationPrompt" personality="
             prompt_color_dark__body
             prompt_size__body_no_title
@@ -40,19 +40,19 @@ title: "Prompts"
 ```xml
 <!-- layout.xml -->
 
-    <!-- Informational Prompt -->
+    <!-- 信息提示 -->
     <layout id="TitlePromptDark" >
-        <!-- Dark Background -->
+        <!-- 深色背景 -->
         <drawable id="DarkBackground" />
 
-        <!-- Prompt Title -->
+        <!-- 提示标题 -->
         <text-area id="title" text="@Strings.mainTitle" personality="
             prompt_color_dark__title
             prompt_size__title
             prompt_loc__title
             prompt_font__title
         " />
-        <!-- Prompt Body -->
+        <!-- 提示正文 -->
         <text-area id="mainLabel" text="@Strings.informationPrompt" personality="
             prompt_color_dark__body
             prompt_size__body_with_title
@@ -75,9 +75,9 @@ title: "Prompts"
 ```xml
 <!-- layout.xml -->
 
-        <!-- About page prompt -->
+        <!-- 关于页面提示 -->
     <layout id="AboutPageLight">
-        <!-- Light Background -->
+        <!-- 浅色背景 -->
         <drawable id="LightBackground" />
 
         <bitmap id="aboutIconLight" personality="
