@@ -25,31 +25,31 @@ Toybox.Lang.Object
 ```
 using Toybox.Ant;
 
-// An extension of BurstListener to handle burst events
+// 用于处理突发事件的 BurstListener 扩展
 class MyBurstListener extends Ant.BurstListener {
 
-    // Callback when a burst transmission completes successfully
+    // 突发传输成功完成时的回调
     function onTransmitComplete() as Void {
         System.println("onTransmitComplete");
     }
 
-    // Callback when a burst transmission fails over the air.
-    // Takes an errorCode parameter which is the type of burst
-    // failure that occurred.
+    // 突发传输通过无线方式失败时的回调。
+    // 接受 errorCode 参数，该参数表示所发生的突发
+    // 失败类型。
     function onTransmitFail(errorCode as BurstError) as Void {
         System.println("onTransmitFail-" + errorCode);
     }
 
-    // Callback when a burst reception fails over the air.
-    // Takes an errorCode parameter which is the type of burst
-    // failure that occurred.
+    // 突发接收通过无线方式失败时的回调。
+    // 接受 errorCode 参数，该参数表示所发生的突发
+    // 失败类型。
     function onReceiveFail(errorCode as BurstError) as Void {
         System.println("onReceiveFail-" + errorCode);
     }
 
-    // Callback when a burst reception completes successfully.
-    // Takes a burstPayload parameter which is the burst data
-    // received across the channel.
+    // 突发接收成功完成时的回调。
+    // 接受 burstPayload 参数，该参数是
+    // 通过通道接收的突发数据。
     function onReceiveComplete(burstPayload as BurstPayload) as Void {
         System.println("onReceiveComplete");
     }
