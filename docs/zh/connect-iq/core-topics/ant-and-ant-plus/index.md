@@ -67,24 +67,24 @@ Garmin tempe™ 无线环境传感器等设备支持环境配置文件（Environ
 可以使用以下代码将 ANT 通道初始化为 tempe 传感器：
 
 ```typescript
-    // Constructor
+    // 构造函数
     function initialize() {
-        // Get the channel
+        // 获取通道
         chanAssign = new Ant.ChannelAssignment(
             Ant.CHANNEL_TYPE_RX_NOT_TX,
             Ant.NETWORK_PLUS);
         GenericChannel.initialize(method(:onMessage), chanAssign);
 
-        // Set the configuration
+        // 设置配置
         deviceCfg = new Ant.DeviceConfig( {
-            :deviceNumber => 0,                 //Wildcard our search
+            :deviceNumber => 0,                 // 将搜索设为通配
             :deviceType => DEVICE_TYPE,
             :transmissionType => 0,
             :messagePeriod => PERIOD,
-            :radioFrequency => 57,              //Ant+ Frequency
-            :searchTimeoutLowPriority => 10,    //Timeout in 25s
-            :searchTimeoutHighPriority => 2,    //Timeout in 5s
-            :searchThreshold => 0} );           //Pair to all transmitting sensors
+            :radioFrequency => 57,              // ANT+ 频率
+            :searchTimeoutLowPriority => 10,    // 25 秒超时
+            :searchTimeoutHighPriority => 2,    // 5 秒超时
+            :searchThreshold => 0} );           // 与所有正在发射的传感器配对
         GenericChannel.setDeviceConfig(deviceCfg);
 
         data = new TempeData();
@@ -95,30 +95,30 @@ Garmin tempe™ 无线环境传感器等设备支持环境配置文件（Environ
 此代码设置 ANT 通道分配和设备配置，并将它们传递给基类 [Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/)。设备配置使用通配搜索，以查找任意环境传感器。初始化代码还设置了 `onMessage` 回调，用于处理收到的数据包。
 
 ```typescript
-    // Handle incoming information
+    // 处理传入信息
     function onMessage(msg as Message) {
-        // Parse the payload
+        // 解析负载
         var payload = msg.getPayload();
 
         if( Ant.MSG_ID_BROADCAST_DATA == msg.messageId ) {
             if( TempeDataPage.PAGE_NUMBER == (payload[0].toNumber() & 0xFF) ) {
-                // Were we searching?
+                // 是否正在搜索？
                 if(searching) {
                     searching = false;
 
-                    // Update our device configuration primarily to see
-                    // the device number of the sensor we paired to
+                    // 更新设备配置，主要用于查看
+                    // 已配对传感器的设备编号
                     deviceCfg = GenericChannel.getDeviceConfig();
                 }
                 var dp = new TempeDataPage();
                 dp.parse( msg.getPayload(), data );
                 tempDataAvailable = true;
-                // Check if the data has changed and we need to update the ui
+                // 检查数据是否发生变化，以及是否需要更新 UI
                 if( pastEventCount != data.eventCount ) {
                     pastEventCount = data.eventCount;
                 }
             }
-        } // end broadcast data
+        } // 广播数据结束
 
         else if( Ant.MSG_ID_CHANNEL_RESPONSE_EVENT == msg.messageId ) {
             if( Ant.MSG_ID_RF_EVENT == (payload[0] & 0xFF) ) {
@@ -130,11 +130,11 @@ Garmin tempe™ 无线环境传感器等设备支持环境配置文件（Environ
                 }
             }
             else{
-                //It is a channel response.
+                // 这是通道响应。
             }
-        } // end channel response event
+        } // 通道响应事件结束
 
-    } // end on message
+    } // 消息处理结束
 ```
 
 此回调负责与附近的传感器配对，并处理收到的数据包。
