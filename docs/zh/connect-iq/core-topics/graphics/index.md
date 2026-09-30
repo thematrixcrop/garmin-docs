@@ -14,11 +14,11 @@ title: "Graphics"
 |设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
 |设置笔宽度| [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
 |清除可拉的区域| N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
-|绘制一个位图| [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | NA | 1.0.0 |  |
-|绘制一个位图| [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | NA | 4.2.0 |  |
-|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | NA | 1.0.0 |只有使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)|
-|绘制一个像素| [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | NA | 1.0.0 |  |
-|绘制一个线| [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | NA | 1.0.0 |  |
+|绘制一个位图| [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | 不适用 | 1.0.0 |  |
+|绘制一个位图| [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | 不适用 | 4.2.0 |  |
+|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 不适用 | 1.0.0 |只有使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)|
+|绘制一个像素| [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | 不适用 | 1.0.0 |  |
+|绘制一个线| [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | 不适用 | 1.0.0 |  |
 |绘制一个圆| [Dc.drawCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawCircle-instance_function) | [Dc.fillCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillCircle-instance_function) | 1.0.0 |  |
 |绘制一个圆| [Dc.drawEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawEllipse-instance_function) | [Dc.fillEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillEllipse-instance_function) | 1.0.0 |  |
 |绘制一个矩形| [Dc.drawRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRectangle-instance_function) | [Dc.fillRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRectangle-instance_function) | 1.0.0 |  |

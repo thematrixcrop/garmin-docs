@@ -64,8 +64,8 @@ Monkey C 还支持两种容器类型：
 | `instanceof` |检查对象类型| 请参阅 [Instanceof and Has](#instanceof-and-has) |
 | `me` |参照当前的对象实例| 请参阅 [Classes and Objects](#classes-and-objects) |
 | `module` |声明一个新的模块| 请参阅 [Modules](#modules) |
-| `NaN` |无效或未定义的值",不是数字"| NA |
-| `native` |用于内部使用| NA |
+| `NaN` |无效或未定义的值",不是数字"| 不适用 |
+| `native` |用于内部使用| 不适用 |
 | `new` |创建一个对象的新实例| 请参阅 [Miscellaneous Operators](#miscellaneous-operators) |
 | `null` |一个零值| 请参阅 [Declaring Variables](#declaring-variables) |
 | `or` |〇等于 `的逻辑 OR||` | 请参阅 [Logical Operators](#logical-operators) |

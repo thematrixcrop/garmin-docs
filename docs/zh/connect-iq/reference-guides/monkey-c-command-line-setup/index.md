@@ -78,7 +78,7 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 > monkeyc [-d <arg>] [-f <arg>] [-o <arg>] [-y <arg>]
 ```
 
-| Argument | Definition |
+| 参数 | 定义 |
 | --- | --- |
 | `-d <arg>` | 目标设备 |
 | `-f <arg>` | Jungle 文件 |
@@ -94,7 +94,7 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 monkeydo [executable] [device_id] [-n] [-t | -t test_name]
 ```
 
-| Argument | Definition |
+| 参数 | 定义 |
 | --- | --- |
 | `executable` |运行一个连接智商执行式 (PRG)|
 | `device_id` |模拟设备 (例如"fenix5plus")|

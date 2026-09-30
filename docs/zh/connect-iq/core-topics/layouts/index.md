@@ -39,18 +39,18 @@ class MainView extends WatchUi.View {
 
 在`layout`标签中支持以下属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于Rez模块中的布局引用|任何以字母开始的值| NA | 必需 |
+| `id` |用于Rez模块中的布局引用|任何以字母开始的值| 不适用 | 必需 |
 
 ## 标签
 
 文本可以包含在布局中. 为了包含文本,使用支持以下属性的`label`标签:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |标签的手柄.在这里提供的ID引用了资源XML文件中定义的标签|任何以字母开始的值| NA |  |
-| `text` |显示的文本| NA | 空字符串 |  |
+| `id` |标签的手柄.在这里提供的ID引用了资源XML文件中定义的标签|任何以字母开始的值| 不适用 |  |
+| `text` |显示的文本| 不适用 | 空字符串 |  |
 | `font` |在绘制文本时使用的字体| 请参阅 [font references](#font-references) | `Graphics.FONT_MEDIUM` |  |
 | `x` |文本将被证明是对的点的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |文本将被证明为合理的点的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
@@ -65,10 +65,10 @@ class MainView extends WatchUi.View {
 
 文本也可以作为文本区的布局中包含.文本区类似于文本标签,但它将试图通过选择适当的字体,添加行间歇或使用缩短来将文本插入给定的区域.
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |文本区域的手柄.在这里提供的ID指的是资源XML文件中定义的文本区域|任何以字母开始的值| NA |  |
-| `text` |显示的文本| NA | 空字符串 |  |
+| `id` |文本区域的手柄.在这里提供的ID指的是资源XML文件中定义的文本区域|任何以字母开始的值| 不适用 |  |
+| `text` |显示的文本| 不适用 | 空字符串 |  |
 | `font` |在绘制文本时使用的字体| 请参阅 [font references](#font-references) | `Graphics.FONT_MEDIUM` |如果提供字体序列,不能使用|
 | `x` |文本将被证明是对的点的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |文本将被证明为合理的点的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
@@ -105,9 +105,9 @@ class MainView extends WatchUi.View {
 
 绘图器 (bitmap 和可绘图的XML资源) 也可以在使用`drawable`标签的布局中包含.以下属性由`drawable`标签支持:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |图形的手柄.在这里提供的ID指的是资源XML文件中定义的图形|任何以字母开始的值| NA |需要;可绘制的必须在资源XML文件中定义|
+| `id` |图形的手柄.在这里提供的ID指的是资源XML文件中定义的图形|任何以字母开始的值| 不适用 |需要;可绘制的必须在资源XML文件中定义|
 | `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
 
@@ -137,9 +137,9 @@ function onUpdate( dc as Dc ) as Void {
 
 `<drawable-list>`标签支持以下属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |抽取机的身份证|任何以字符开始的字符串| NA | 必需 |
+| `id` |抽取机的身份证|任何以字符开始的字符串| 不适用 | 必需 |
 | `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
 | `width` |图表的宽度.|像素值,使用"%"或`fill`的相对维度| `fill` |  |
@@ -153,12 +153,12 @@ function onUpdate( dc as Dc ) as Void {
 
 `<shape>`标签支持以下属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
 | `type` |图形的类型| `rectangle`、`ellipse`、`circle` 或 `polygon` | 不适用 | 必需 |
 | `x` |对圆圈和圆:对母体的X坐标;对其他一切:对母体的X坐标.|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |圆圈和圆:与母体相比的形状中心的Y坐标;其他所有:与母体相比的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `points` |定义`polygon`的点列表|`[[x1, y1], [x2, y2], ... , [xN, yN]]`,点可以使用'%'  relative来相对位置| NA |要求`polygon`;必须至少有3分|
+| `points` |定义`polygon`的点列表|`[[x1, y1], [x2, y2], ... , [xN, yN]]`,点可以使用'%'  relative来相对位置| 不适用 |要求`polygon`;必须至少有3分|
 | `width` |图形的宽度|像素值,使用"%"或`fill`的相对维度| `fill` |对于`rectangle`所需|
 | `height` |图形的高度|像素值,使用"%"或`fill`的相对维度| `fill` |对于`rectangle`所需|
 | `a` |图画的圆的 一个值|像素值,使用"%"或`fill`的相对维度| `fill` |对于`ellipse`所需|
@@ -175,12 +175,12 @@ function onUpdate( dc as Dc ) as Void {
 
 `<bitmap>`标签支持以下属性:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |抽取机的身份证|任何以字符开始的字符串| NA | 必需 |
+| `id` |抽取机的身份证|任何以字符开始的字符串| 不适用 | 必需 |
 | `x` |左上角对母元素的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |对于母元素的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
-| `filename` |应该显示的图像相对路径| 有效的相对路径 | NA | 必需 |
+| `filename` |应该显示的图像相对路径| 有效的相对路径 | 不适用 | 必需 |
 | `visible` |图纸可见|`true`或`false`| `true` |仅支持ConnectIQ 3.3.0及后版本的设备|
 
 ## 自定义可绘制对象

@@ -73,7 +73,7 @@ title: "Properties and Settings"
 
 下面的表显示了设置的所有有效属性.
 
-| Attribute |值| 备注 |
+| 属性 | 值 | 备注 |
 | --- | --- | --- |
 | `propertyKey` |如果不能找到属性密钥,则在编译时会出现错误.| 必需 |
 | `title` |在 Garmin Connect Mobile/Garmin Express中显示设置列表/设置值时显示的标题. 这必须引用字符串资源ID.| 必需 |
@@ -83,7 +83,7 @@ title: "Properties and Settings"
 
 一个`<settingConfig>`,是`<setting>`的子元素,提供了有关设置的额外细节.
 
-| Attribute |值| 有效值 | 备注 |
+| 属性 | 值 | 有效值 | 备注 |
 | --- | --- | --- | --- |
 | `type` |设置的显示类型.| `list`, `boolean`, `numeric`, `alphaNumeric`, `phone`, `email`, `url`, `date` or `password` |一个`list`值需要儿童`<listEntry>`元素来定义该列表中应提供的选项.|
 | `readonly` |如果设置仅读或不读. 这个属性适用于`list`和`password`除外.|`true`或`false`|默认的`false`.|
@@ -107,7 +107,7 @@ title: "Properties and Settings"
 
 在下面表中定义了`<listEntry>`元素.它的值必须是引用字符串资源.
 
-| Attribute |值| 备注 |
+| 属性 | 值 | 备注 |
 | --- | --- | --- |
 | `value` |如果用户选择了此项,则保存值.|如果它不匹配,则会出现编译时间错误.|
 
@@ -135,7 +135,7 @@ title: "Properties and Settings"
 
 以下是组选的选项:
 
-| Attribute | Values | 备注 |
+| 属性 | 值 | 备注 |
 | --- | --- | --- |
 | `id` | 字符串 |组的标识符|
 | `title` | 字符串 |集团标题. 这是在移动中显示为列表项.|

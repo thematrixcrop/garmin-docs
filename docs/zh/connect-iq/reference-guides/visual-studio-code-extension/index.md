@@ -41,7 +41,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 以下命令可用于创建新项目并导出项目：
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：新建项目* |创建新的Connect IQ应用程序或子桶|
 | *Monkey C：构建当前项目* |将当前的项目与指定设备进行编译|
@@ -53,7 +53,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 以下命令可用于编辑和更新项目的 `manifest.xml`：
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：编辑产品* |在`manifest.xml`中编辑产品.只允许选择支持最小SDK版本的产品|
 | *Monkey C：编辑权限* |编辑`manifest.xml`中的权限|
@@ -68,7 +68,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 下列命令允许您从Visual Studio Code访问SDK工具和文档:
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：打开 ERA 查看器* |打开[Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application)工具|
 | *Monkey C：打开 Monkey Graph* |打开[Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference)工具|
@@ -93,7 +93,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 您可以使用以下命令运行测试:
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：运行测试* |在您的应用程序中运行所有 Run No Evil 测试|
 
@@ -101,7 +101,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 您可以使用以下命令运行并调试复杂性发布器和复杂性订阅器应用程序:
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：启动复杂功能* |在调试器中运行复杂应用程序|
 
@@ -111,7 +111,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 在传感器配对模式下使用以下命令启动和调试应用程序:
 
-| Command | 说明 |
+| 命令 | 说明 |
 | --- | --- |
 | *Monkey C：启动原生配对* |运行应用程序在传感器本地配对模式在调试器中|
 
@@ -121,7 +121,7 @@ title: "Monkey C Visual Studio Code Extension"
 
 扩展将为您的项目创建`launch.json`当您运行或调试产品.`launch.json`提供了许多定制选项,以添加启动功能
 
-| Property | 必需 | 类型 | 说明 |
+| 属性 | 必需 | 类型 | 说明 |
 | --- | --- | --- | --- |
 | `prg` | x | Path |绝对路径到项目文件|
 | `prgDebugXml` | x | Path |绝对路径到项目调试xml文件|

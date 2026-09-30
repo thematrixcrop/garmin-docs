@@ -62,7 +62,7 @@ FIT文件将与[Garmin Connect](https://connect.garmin.com/)同步.您可以使�
 
 `fitField`区块有几个可配置的选项:
 
-| Attribute |值| 备注 |
+| 属性 | 值 | 备注 |
 | --- | --- | --- |
 | `id` |0 到 255 之间的数字值用于您的字段|在应用程序中不允许复制|
 | `displayInChart` |显示是否应该在图表中呈现记录水平连接IQ数据|如果您希望这个输入显示为图表,则`false`. 图表字段只能支持数值数据.|
