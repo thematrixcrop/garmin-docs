@@ -155,11 +155,11 @@ API 级别 3.4.0
 
 - [**onNextView**](#onNextView-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the next page behavior.
+    表示下一页行为。
 
 - [**onPreviousView**](#onPreviousView-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the previous page behavior.
+    表示上一页行为。
 
 
 ## 实例方法详情
@@ -181,7 +181,7 @@ API 级别 3.4.0
 
 ### **onNextView()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the next page behavior.
+表示下一页行为。
 
 This is typically triggered by the down button ([KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)) or by a [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
 
@@ -198,7 +198,7 @@ API 级别 3.4.0
 
 ### **onPreviousView()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the previous page behavior.
+表示上一页行为。
 
 This is typically triggered by the up button ([KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)) or by a [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) on a touch screen.
 

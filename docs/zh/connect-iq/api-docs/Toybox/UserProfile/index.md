@@ -237,17 +237,17 @@ Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current hear
 
 The returned Array contains zone values as follows:
 
-- min zone 1 - The minimum heart rate threshold for zone 1
+- min zone 1 - 区域 1 的最小心率阈值
 
-- max zone 1 - The maximum heart rate threshold for zone 1
+- max zone 1 - 区域 1 的最大心率阈值
 
-- max zone 2 - The maximum heart rate threshold for zone 2
+- max zone 2 - 区域 2 的最大心率阈值
 
-- max zone 3 - The maximum heart rate threshold for zone 3
+- max zone 3 - 区域 3 的最大心率阈值
 
-- max zone 4 - The maximum heart rate threshold for zone 4
+- max zone 4 - 区域 4 的最大心率阈值
 
-- max zone 5 - The maximum heart rate threshold for zone 5
+- max zone 5 - 区域 5 的最大心率阈值
 
 
 Parameters:
@@ -283,17 +283,17 @@ Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current hear
 
 The returned Array contains zone values as follows:
 
-- min zone 1 - The minimum heart rate threshold for zone 1
+- min zone 1 - 区域 1 的最小心率阈值
 
-- max zone 1 - The maximum heart rate threshold for zone 1
+- max zone 1 - 区域 1 的最大心率阈值
 
-- max zone 2 - The maximum heart rate threshold for zone 2
+- max zone 2 - 区域 2 的最大心率阈值
 
-- max zone 3 - The maximum heart rate threshold for zone 3
+- max zone 3 - 区域 3 的最大心率阈值
 
-- max zone 4 - The maximum heart rate threshold for zone 4
+- max zone 4 - 区域 4 的最大心率阈值
 
-- max zone 5 - The maximum heart rate threshold for zone 5
+- max zone 5 - 区域 5 的最大心率阈值
 
 
 Parameters:

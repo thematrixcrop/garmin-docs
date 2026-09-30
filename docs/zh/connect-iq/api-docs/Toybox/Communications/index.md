@@ -947,11 +947,11 @@ API 级别 6.0.0
 
 - [**registerForPhoneAppMessageErrors**](#registerForPhoneAppMessageErrors-instance_function)(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**) as **Void**
 
-    Register a callback for receiving Phone App message errors.
+    注册用于接收 Phone App 消息错误的回调。
 
 - [**registerForPhoneAppMessages**](#registerForPhoneAppMessages-instance_function)(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**) as **Void**
 
-    Register a callback for receiving Phone App messages.
+    注册用于接收 Phone App 消息的回调。
 
 - [**setMailboxListener**](#setMailboxListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(mailboxIterator as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)) as **Void**) as **Void** deprecated
 
@@ -1841,7 +1841,7 @@ Parameters:
 
 - requestParams — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Non-URL encoded parameters for the `requestUrl`
+    用于 `requestUrl` 的未进行 URL 编码的参数
 
 - resultUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -2405,7 +2405,7 @@ API 级别 1.3.0
 
 ### **registerForPhoneAppMessageErrors(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**)** as **Void**
 
-Register a callback for receiving Phone App message errors.
+注册用于接收 Phone App 消息错误的回调。
 
 The callback will be called when a message cannot be received. If there are messages waiting for the app when this function is called, the callback will immediately be called.
 
@@ -2478,7 +2478,7 @@ API 级别 6.0.0
 
 ### **registerForPhoneAppMessages(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**)** as **Void**
 
-Register a callback for receiving Phone App messages.
+注册用于接收 Phone App 消息的回调。
 
 The callback will be called once for each message received. If there are messages waiting for the app when this function is called, the callback will immediately be called once for each waiting message.
 

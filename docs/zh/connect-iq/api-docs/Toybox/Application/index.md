@@ -136,7 +136,7 @@ Parameters:
 
 Example:
 
-Loading a String resource
+加载 String 资源
 
 ```
 // The resources.xml file contents:

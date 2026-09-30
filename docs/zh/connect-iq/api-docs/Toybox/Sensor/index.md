@@ -394,7 +394,7 @@ Onboard Sensor
 
 - [**registerSensorDataListener**](#registerSensorDataListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }) as **Void**
 
-    Register a callback to fetch high-frequency data from various sensors.
+    注册一个回调，用于从各种传感器获取高频数据。
 
 - [**setEnabledSensors**](#setEnabledSensors-instance_function)(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>
 
@@ -484,7 +484,7 @@ Unlike the existing setEnabledSensors() function, this will not enable/disable o
 
 注意：
 
-Multitasking: Sensor states can not be changed while in inacitve mode and sensor enabled during active mode will be disabled when app becomes inactive, and re-enabled automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+多任务处理：处于非活动模式时无法更改传感器状态；在活动模式下启用的传感器将在应用变为非活动状态时被禁用，并在再次变为活动状态时自动重新启用。这些状态更改通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
 Returns:
 
@@ -1364,7 +1364,7 @@ API 级别 5.1.0
 
 ### **registerSensorDataListener(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)) as **Void**, options as { :period as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includePower as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includePitch as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeRoll as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :sampleRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :includeTimestamps as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :heartBeatIntervals as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })** as **Void**
 
-Register a callback to fetch high-frequency data from various sensors.
+注册一个回调，用于从各种传感器获取高频数据。
 
 The callback will get invoked each time a new set of sensor data over the length of time specified in the period option is available.
 
@@ -1374,7 +1374,7 @@ Only one data request is allowed to be registered at a time. Subsequent calls to
 
 注意：
 
-Magnetometer data is not supported in synchronous data request.
+同步数据请求不支持磁力计数据。
 
 注意：
 
@@ -1400,7 +1400,7 @@ Parameters:
 
 - :accelerometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for accelerometer data.
+        加速度计数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
 
@@ -1424,7 +1424,7 @@ Parameters:
 
 - :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for gyroscope data.
+        陀螺仪数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
 
@@ -1435,7 +1435,7 @@ Parameters:
 
 - :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for magnetometer data.
+        磁力计数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
 
@@ -1656,7 +1656,7 @@ This will enable both connected ANT+ sensors and system sensors if possible.
 
 注意：
 
-Multitasking: Sensor states can not be changed while in inacitve mode and sensor enabled during active mode will be disabled when app becomes inactive, and re-enabled automatically when is active again. These state changes are denoted by calls to AppBase.onActive() and AppBase.onInactive().
+多任务处理：处于非活动模式时无法更改传感器状态；在活动模式下启用的传感器将在应用变为非活动状态时被禁用，并在再次变为活动状态时自动重新启用。这些状态更改通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
 Parameters:
 

@@ -108,7 +108,7 @@ API 级别 5.1.0
 
 - [**onPair**](#onPair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Pair the sensor.
+    配对传感器。
 
 - [**onScan**](#onScan-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -127,7 +127,7 @@ API 级别 5.1.0
 
 ### **onPair(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Pair the sensor.
+配对传感器。
 
 Is called by the system to pair the sensor, during the native sensor pairing process.
 

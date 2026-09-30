@@ -71,7 +71,7 @@ API 级别 1.0.0
 
 - [**printStackTrace**](#printStackTrace-instance_function)() as **Void**
 
-    Print the stack trace of the thrown Exception.
+    打印抛出异常的堆栈跟踪。
 
 
 ## 实例方法详情
@@ -101,7 +101,7 @@ API 级别 1.1.2
 
 ### **printStackTrace()** as **Void**
 
-Print the stack trace of the thrown Exception.
+打印抛出异常的堆栈跟踪。
 
 Since:
 

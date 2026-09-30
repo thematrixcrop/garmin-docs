@@ -142,11 +142,11 @@ API 级别 2.2.0
 
 - [**leftOrCombinedPedalSmoothness**](#leftOrCombinedPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Left pedal smoothness if separate is supported, else it is the combined smoothness (%).
+    如果支持单独测量，则为左踏板平滑度；否则为合并平滑度（%）。
 
 - [**leftTorqueEffectiveness**](#leftTorqueEffectiveness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Left torque effectiveness.
+    左侧扭矩有效性。
 
 - [**rightPedalSmoothness**](#rightPedalSmoothness-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -165,7 +165,7 @@ API 级别 2.2.0
 
 ### var leftOrCombinedPedalSmoothness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Left pedal smoothness if separate is supported, else it is the combined smoothness (%).
+如果支持单独测量，则为左踏板平滑度；否则为合并平滑度（%）。
 
 Example:
 
@@ -189,7 +189,7 @@ Returns:
 
 ### var leftTorqueEffectiveness as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Left torque effectiveness.
+左侧扭矩有效性。
 
 0xFF：无效值或负值（%）。
 

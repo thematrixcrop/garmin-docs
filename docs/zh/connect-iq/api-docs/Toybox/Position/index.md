@@ -325,7 +325,7 @@ Enable special mode for aviation use-cases that require support for higher altit
 
 - [**enableLocationEvents**](#enableLocationEvents-instance_function)(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**) as **Void**
 
-    Request a Location event.
+    请求 Location 事件。
 
 - [**getInfo**](#getInfo-instance_function)() as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
@@ -366,7 +366,7 @@ API 级别 3.0.3
 
 ### **enableLocationEvents(options as { :acquisitionType as [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), :constellations as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Position.Constellation](/connect-iq/api-docs/Toybox/Position/#Constellation-module)\>, :configuration as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module), :mode as [Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module) } or [Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(loc as [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)) as **Void**)** as **Void**
 
-Request a Location event.
+请求 Location 事件。
 
 Using this API requires enabling the Positioning Permission. Only Device Apps and Widgets may use this API.
 

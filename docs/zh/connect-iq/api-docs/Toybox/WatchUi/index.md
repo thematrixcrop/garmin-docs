@@ -1050,15 +1050,15 @@ API 级别 3.4.2
 
 - [**popView**](#popView-instance_function)(transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) as **Void**
 
-    Pop the current View from the View stack.
+    从 View 堆栈中弹出当前 View。
 
 - [**pushView**](#pushView-instance_function)(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) as **Void**
 
-    Push a View onto the View stack.
+    将 View 推入 View 堆栈。
 
 - [**requestUpdate**](#requestUpdate-instance_function)() as **Void**
 
-    Request a call to the [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) method for the current View.
+    请求为当前 View 调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 方法。
 
 - [**showActionMenu**](#showActionMenu-instance_function)(menu as [WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/), delegate as [WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)) as **Void**
 
@@ -1074,7 +1074,7 @@ API 级别 3.4.2
 
 - [**switchToView**](#switchToView-instance_function)(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) as **Void**
 
-    Pop the current View from the View stack and push a new one.
+    从 View 堆栈中弹出当前 View，并推入一个新的 View。
 
 
 ## 类型定义详情
@@ -1408,7 +1408,7 @@ Parameters:
 
 Example:
 
-Loading a String resource
+加载 String 资源
 
 ```
 // The resources.xml file contents:
@@ -1536,7 +1536,7 @@ API 级别 3.4.2
 
 ### **popView(transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module))** as **Void**
 
-Pop the current View from the View stack.
+从 View 堆栈中弹出当前 View。
 
 Parameters:
 
@@ -1558,7 +1558,7 @@ Throws:
 
 ### **pushView(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module))** as **Void**
 
-Push a View onto the View stack.
+将 View 推入 View 堆栈。
 
 Parameters:
 
@@ -1592,7 +1592,7 @@ Throws:
 
 ### **requestUpdate()** as **Void**
 
-Request a call to the [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) method for the current View.
+请求为当前 View 调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 方法。
 
 另见：
 
@@ -1976,7 +1976,7 @@ Throws:
 
 ### **switchToView(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module))** as **Void**
 
-Pop the current View from the View stack and push a new one.
+从 View 堆栈中弹出当前 View，并推入一个新的 View。
 
 注意：
 

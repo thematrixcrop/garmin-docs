@@ -148,19 +148,19 @@ API 级别 4.0.0
 
 - [**getGlanceTheme**](#getGlanceTheme-instance_function)() as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
 
-    Method to get the glance theme.
+    获取速览主题的方法。
 
 - [**getGlanceView**](#getGlanceView-instance_function)() as \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) \] or \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) \] or **Null**
 
-    Override to provide the [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) for the glance preview.
+    重写此方法，为速览预览提供 [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 和 [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/)。
 
 - [**getGoalView**](#getGoalView-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) \] or **Null**
 
-    Override to provide a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) for a goal that has triggered within a watch face.
+    重写此方法，为表盘中已触发的目标提供一个 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)。
 
 - [**getInitialView**](#getInitialView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-    Override to provide the initial View and Input Delegate of the application.
+    重写此方法，以提供应用的初始 View 和 Input Delegate。
 
 - [**getProperty**](#getProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) deprecated
 
@@ -168,11 +168,11 @@ API 级别 4.0.0
 
 - [**getSensorConfigurationView**](#getSensorConfigurationView-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-    Override to provide the pairing config View and Input Delegate of the application.
+    重写此方法，以提供应用的配对配置 View 和 Input Delegate。
 
 - [**getSensorDelegate**](#getSensorDelegate-instance_function)() as [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) or **Null**
 
-    Override to provide the Sensor Delegate object.
+    重写此方法，以提供 Sensor Delegate 对象。
 
 - [**getServiceDelegate**](#getServiceDelegate-instance_function)() as \[ [System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) \]
 
@@ -180,7 +180,7 @@ API 级别 4.0.0
 
 - [**getSettingsView**](#getSettingsView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
 
-    Override to provide the settings View and Input Delegate of the application.
+    重写此方法，以提供应用的设置 View 和 Input Delegate。
 
 - [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null**
 
@@ -248,11 +248,11 @@ API 级别 4.0.0
 
 - [**onStart**](#onStart-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Method called at startup to allow handling of app initialization.
+    在启动时调用的方法，用于处理应用初始化。
 
 - [**onStop**](#onStop-instance_function)(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Override to handle application cleanup upon termination.
+    重写此方法，以便在应用终止时处理应用清理。
 
 - [**onStorageChanged**](#onStorageChanged-instance_function)() as **Void**
 
@@ -727,7 +727,7 @@ Throws:
 
 ### **getGlanceTheme()** as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
 
-Method to get the glance theme.
+获取速览主题的方法。
 
 :::details 支持的设备
 
@@ -787,7 +787,7 @@ API 级别 4.0.0
 
 ### **getGlanceView()** as \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) \] or \[ [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/), [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) \] or **Null**
 
-Override to provide the [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) and [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) for the glance preview.
+重写此方法，为速览预览提供 [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 和 [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/)。
 
 :::details 支持的设备
 
@@ -914,7 +914,7 @@ API 级别 3.1.0
 
 ### **getGoalView(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) \] or **Null**
 
-Override to provide a [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) for a goal that has triggered within a watch face.
+重写此方法，为表盘中已触发的目标提供一个 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)。
 
 - If a goal is reached when a watch face is running, this function will be triggered.
 
@@ -945,7 +945,7 @@ API 级别 1.3.0
 
 ### **getInitialView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-Override to provide the initial View and Input Delegate of the application.
+重写此方法，以提供应用的初始 View 和 Input Delegate。
 
 注意：
 
@@ -1185,7 +1185,7 @@ API 级别 1.0.0
 
 ### **getSensorConfigurationView(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/))** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-Override to provide the pairing config View and Input Delegate of the application.
+重写此方法，以提供应用的配对配置 View 和 Input Delegate。
 
 Parameters:
 
@@ -1287,7 +1287,7 @@ API 级别 5.1.0
 
 ### **getSensorDelegate()** as [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) or **Null**
 
-Override to provide the Sensor Delegate object.
+重写此方法，以提供 Sensor Delegate 对象。
 
 The sensor delegate object will be used to get information about the sensors during the native pairing process.
 
@@ -1413,7 +1413,7 @@ API 级别 2.3.0
 
 ### **getSettingsView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \] or **Null**
 
-Override to provide the settings View and Input Delegate of the application.
+重写此方法，以提供应用的设置 View 和 Input Delegate。
 
 - This function is only applicable to watch faces and data fields.
 
@@ -2360,7 +2360,7 @@ API 级别 1.2.0
 
 ### **onStart(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Method called at startup to allow handling of app initialization.
+在启动时调用的方法，用于处理应用初始化。
 
 Before the initial [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) is retrieved, onStart() is called. Application level settings can be initialized or retrieved from the object store before the initial View is created. This method must be overridden to handle your own app initialization.
 
@@ -2422,7 +2422,7 @@ API 级别 1.0.0
 
 ### **onStop(state as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Override to handle application cleanup upon termination.
+重写此方法，以便在应用终止时处理应用清理。
 
 If the application needs to save data to the object store it should be done in this function. Once the function is complete, the application will terminate.
 

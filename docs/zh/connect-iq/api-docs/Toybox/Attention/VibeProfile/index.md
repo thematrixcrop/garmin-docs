@@ -198,7 +198,7 @@ API 级别 1.0.0
 
 - [**length**](#length-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Length of the vibration in milliseconds (ms).
+    振动持续时间，单位为毫秒（ms）。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -227,7 +227,7 @@ API 级别 1.0.0
 
 ### var length as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Length of the vibration in milliseconds (ms).
+振动持续时间，单位为毫秒（ms）。
 
 Since:
 

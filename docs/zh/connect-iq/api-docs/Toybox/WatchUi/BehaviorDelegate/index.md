@@ -80,15 +80,15 @@ API 级别 1.0.0
 
 - [**onBack**](#onBack-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Back* behavior.
+    表示 *Back* 行为。
 
 - [**onMenu**](#onMenu-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Menu* behavior.
+    表示 *Menu* 行为。
 
 - [**onNextMode**](#onNextMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Next* behavior.
+    表示 *Next* 行为。
 
 - [**onNextPage**](#onNextPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -96,7 +96,7 @@ API 级别 1.0.0
 
 - [**onPreviousMode**](#onPreviousMode-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Previous* *Mode* behavior.
+    表示 *Previous* *Mode* 行为。
 
 - [**onPreviousPage**](#onPreviousPage-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -104,7 +104,7 @@ API 级别 1.0.0
 
 - [**onSelect**](#onSelect-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Represents the *Selection* behavior.
+    表示 *Selection* 行为。
 
 
 ## 实例方法详情
@@ -145,7 +145,7 @@ API 级别 5.1.1
 
 ### **onBack()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Back* behavior.
+表示 *Back* 行为。
 
 This is typically triggered by the back button ([KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const)).
 
@@ -166,7 +166,7 @@ API 级别 1.0.0
 
 ### **onMenu()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Menu* behavior.
+表示 *Menu* 行为。
 
 This is typically triggered by the menu button ([KEY\_MENU](/connect-iq/api-docs/Toybox/WatchUi/#KEY_MENU-const)).
 
@@ -183,7 +183,7 @@ API 级别 1.0.0
 
 ### **onNextMode()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Next* behavior.
+表示 *Next* 行为。
 
 Returns:
 
@@ -215,7 +215,7 @@ API 级别 1.0.0
 
 ### **onPreviousMode()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Previous* *Mode* behavior.
+表示 *Previous* *Mode* 行为。
 
 Returns:
 
@@ -247,7 +247,7 @@ API 级别 1.0.0
 
 ### **onSelect()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Represents the *Selection* behavior.
+表示 *Selection* 行为。
 
 This is typically triggered by the Start/Enter button ([KEY\_ENTER](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ENTER-const)) or by a [CLICK\_TYPE\_TAP](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/) on a touch screen.
 

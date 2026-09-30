@@ -28,18 +28,18 @@ API 级别 4.0.0
 
 - [**getHeight**](#getHeight-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Load the resource, then get the height of a bitmap resource referenced.
+    加载资源，然后获取所引用位图资源的高度。
 
 - [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Load the resource, then get the width of a bitmap resource referenced.
+    加载资源，然后获取所引用位图资源的宽度。
 
 
 ## 实例方法详情
 
 ### **getHeight()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Load the resource, then get the height of a bitmap resource referenced
+加载资源，然后获取所引用位图资源的高度
 
 Returns:
 
@@ -61,7 +61,7 @@ Throws:
 
 ### **getWidth()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Load the resource, then get the width of a bitmap resource referenced
+加载资源，然后获取所引用位图资源的宽度
 
 Returns:
 

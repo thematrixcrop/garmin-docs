@@ -147,7 +147,7 @@ API 级别 1.0.0
 
 - [**removeLayer**](#removeLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Remove a layer from the view layer stack, this will stop animation playback.
+    从 View 图层堆栈中移除一个图层，这将停止动画播放。
 
 - [**setActionMenuIndicator**](#setActionMenuIndicator-instance_function)(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**) as **Void**
 
@@ -411,7 +411,7 @@ API 级别 1.0.0
 
 ### **removeLayer(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Remove a layer from the view layer stack, this will stop animation playback.
+从 View 图层堆栈中移除一个图层，这将停止动画播放。
 
 Parameters:
 

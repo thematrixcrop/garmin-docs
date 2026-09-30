@@ -212,11 +212,11 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    new x offset from screen origin
+    距屏幕原点的新 x 偏移量
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    new y offset from screen origin
+    距屏幕原点的新 y 偏移量
 
 
 Since:
@@ -246,7 +246,7 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    new x offset from screen origin
+    距屏幕原点的新 x 偏移量
 
 
 Since:
@@ -261,7 +261,7 @@ Parameters:
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    new y offset from screen origin
+    距屏幕原点的新 y 偏移量
 
 
 Since:

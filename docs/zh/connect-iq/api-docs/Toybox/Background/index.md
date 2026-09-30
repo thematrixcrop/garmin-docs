@@ -201,11 +201,11 @@ API 级别 2.3.0
 
 - [**deleteGoalEvent**](#deleteGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
-    Remove the active goal background event of specified type for the application.
+    移除应用中指定类型的活动目标后台事件。
 
 - [**deleteOAuthResponseEvent**](#deleteOAuthResponseEvent-instance_function)() as **Void**
 
-    Remove the OAuth response background event.
+    移除 OAuth 响应后台事件。
 
 - [**deletePhoneAppMessageEvent**](#deletePhoneAppMessageEvent-instance_function)() as **Void**
 
@@ -213,19 +213,19 @@ API 级别 2.3.0
 
 - [**deleteSleepEvent**](#deleteSleepEvent-instance_function)() as **Void**
 
-    Remove the active sleep background event for the application.
+    移除应用中活动的睡眠后台事件。
 
 - [**deleteStepsEvent**](#deleteStepsEvent-instance_function)() as **Void**
 
-    Remove the active steps background event for the application.
+    移除应用中活动的步数后台事件。
 
 - [**deleteTemporalEvent**](#deleteTemporalEvent-instance_function)() as **Void**
 
-    Remove the active temporal background event for the application.
+    移除应用中活动的定时后台事件。
 
 - [**deleteWakeEvent**](#deleteWakeEvent-instance_function)() as **Void**
 
-    Remove the active wake background event for the application.
+    移除应用中活动的唤醒后台事件。
 
 - [**exit**](#exit-instance_function)(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
@@ -273,35 +273,35 @@ API 级别 2.3.0
 
 - [**registerForActivityCompletedEvent**](#registerForActivityCompletedEvent-instance_function)() as **Void**
 
-    Registers the application to receive an event whenever an activity is completed.
+    注册应用，以便在活动完成时接收事件。
 
 - [**registerForGoalEvent**](#registerForGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
-    Register a background event that triggers when the user reaches a specified goal.
+    注册一个在用户达到指定目标时触发的后台事件。
 
 - [**registerForOAuthResponseEvent**](#registerForOAuthResponseEvent-instance_function)() as **Void**
 
-    Registers a background event that triggers each time an OAuth login request completes and the token becomes available on the system for use.
+    注册一个每当 OAuth 登录请求完成且令牌在系统上可供使用时触发的后台事件。
 
 - [**registerForPhoneAppMessageEvent**](#registerForPhoneAppMessageEvent-instance_function)() as **Void**
 
-    Registers the application to receive an event whenever a phone app message is received.
+    注册应用，以便在收到 Phone App 消息时接收事件。
 
 - [**registerForSleepEvent**](#registerForSleepEvent-instance_function)() as **Void**
 
-    Register a background event that triggers at the sleep time configured on the device.
+    注册一个在设备上配置的睡眠时间触发的后台事件。
 
 - [**registerForStepsEvent**](#registerForStepsEvent-instance_function)() as **Void**
 
-    Registers a background event that triggers each time a multiple of 1000 steps is reached.
+    注册一个每达到 1000 步的倍数时触发的后台事件。
 
 - [**registerForTemporalEvent**](#registerForTemporalEvent-instance_function)(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as **Void**
 
-    Register a background event that triggers at a specific time or at a regular interval.
+    注册一个在特定时间或按固定间隔触发的后台事件。
 
 - [**registerForWakeEvent**](#registerForWakeEvent-instance_function)() as **Void**
 
-    Register a background event that triggers at the wake time configured on the device.
+    注册一个在设备上配置的唤醒时间触发的后台事件。
 
 - [**requestApplicationWake**](#requestApplicationWake-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
@@ -320,7 +320,7 @@ API 级别 3.0.10
 
 ### **deleteGoalEvent(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
-Remove the active goal background event of specified type for the application.
+移除应用中指定类型的活动目标后台事件。
 
 Parameters:
 
@@ -341,7 +341,7 @@ API 级别 2.3.0
 
 ### **deleteOAuthResponseEvent()** as **Void**
 
-Remove the OAuth response background event.
+移除 OAuth 响应后台事件。
 
 Since:
 
@@ -493,7 +493,7 @@ API 级别 3.2.0
 
 ### **deleteSleepEvent()** as **Void**
 
-Remove the active sleep background event for the application.
+移除应用中活动的睡眠后台事件。
 
 Since:
 
@@ -501,7 +501,7 @@ API 级别 2.3.0
 
 ### **deleteStepsEvent()** as **Void**
 
-Remove the active steps background event for the application.
+移除应用中活动的步数后台事件。
 
 Since:
 
@@ -509,7 +509,7 @@ API 级别 2.3.0
 
 ### **deleteTemporalEvent()** as **Void**
 
-Remove the active temporal background event for the application.
+移除应用中活动的定时后台事件。
 
 Since:
 
@@ -517,7 +517,7 @@ API 级别 2.3.0
 
 ### **deleteWakeEvent()** as **Void**
 
-Remove the active wake background event for the application.
+移除应用中活动的唤醒后台事件。
 
 Since:
 
@@ -897,7 +897,7 @@ API 级别 3.0.0
 
 ### **registerForActivityCompletedEvent()** as **Void**
 
-Registers the application to receive an event whenever an activity is completed.
+注册应用，以便在活动完成时接收事件。
 
 Since:
 
@@ -905,7 +905,7 @@ API 级别 3.0.10
 
 ### **registerForGoalEvent(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module))** as **Void**
 
-Register a background event that triggers when the user reaches a specified goal.
+注册一个在用户达到指定目标时触发的后台事件。
 
 Parameters:
 
@@ -926,7 +926,7 @@ API 级别 2.3.0
 
 ### **registerForOAuthResponseEvent()** as **Void**
 
-Registers a background event that triggers each time an OAuth login request completes and the token becomes available on the system for use.
+注册一个每当 OAuth 登录请求完成且令牌在系统上可供使用时触发的后台事件。
 
 This event is triggered when a OAuth response is received by the system.
 
@@ -936,7 +936,7 @@ API 级别 2.3.0
 
 ### **registerForPhoneAppMessageEvent()** as **Void**
 
-Registers the application to receive an event whenever a phone app message is received.
+注册应用，以便在收到 Phone App 消息时接收事件。
 
 :::details 支持的设备
 
@@ -1080,7 +1080,7 @@ API 级别 3.2.0
 
 ### **registerForSleepEvent()** as **Void**
 
-Register a background event that triggers at the sleep time configured on the device.
+注册一个在设备上配置的睡眠时间触发的后台事件。
 
 Since:
 
@@ -1088,7 +1088,7 @@ API 级别 2.3.0
 
 ### **registerForStepsEvent()** as **Void**
 
-Registers a background event that triggers each time a multiple of 1000 steps is reached.
+注册一个每达到 1000 步的倍数时触发的后台事件。
 
 This event is triggered only by device-recorded steps, and will not trigger based on synced steps.
 
@@ -1098,7 +1098,7 @@ API 级别 2.3.0
 
 ### **registerForTemporalEvent(time as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as **Void**
 
-Register a background event that triggers at a specific time or at a regular interval.
+注册一个在特定时间或按固定间隔触发的后台事件。
 
 Temporal background events may be registered to run at a specific point in time by providing a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) at which the event should trigger, or may be registered to run at a periodically by specifying an interval [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). If a temporal event is scheduled for a time in the past, the event will trigger immediately.
 
@@ -1143,7 +1143,7 @@ Throws:
 
 ### **registerForWakeEvent()** as **Void**
 
-Register a background event that triggers at the wake time configured on the device.
+注册一个在设备上配置的唤醒时间触发的后台事件。
 
 Since:
 

@@ -71,7 +71,7 @@ Parameters:
 
 - 单分量时返回 `null`
 
-- Light index for bike lights.
+- 自行车灯的灯光索引。
 
 
 
@@ -168,7 +168,7 @@ Parameters:
 
 - 单分量时返回 `null`
 
-- Light index for bike lights
+- 自行车灯的灯光索引
 
 
 
@@ -207,7 +207,7 @@ Parameters:
 
 - 单分量时返回 `null`
 
-- Light index for bike lights
+- 自行车灯的灯光索引
 
 
 

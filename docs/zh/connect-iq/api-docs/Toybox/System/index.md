@@ -663,11 +663,11 @@ API 级别 5.1.0
 
 - [**print**](#print-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
-    Print to the console.
+    输出到控制台。
 
 - [**println**](#println-instance_function)(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
-    Print to the console with a line terminator.
+    输出到控制台，并附加行终止符。
 
 
 ## 实例方法详情
@@ -930,7 +930,7 @@ Throws:
 
 ### **print(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
-Print to the console.
+输出到控制台。
 
 Parameters:
 
@@ -945,7 +945,7 @@ API 级别 1.0.0
 
 ### **println(output as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
-Print to the console with a line terminator.
+输出到控制台，并附加行终止符。
 
 Parameters:
 

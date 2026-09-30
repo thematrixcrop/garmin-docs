@@ -146,7 +146,7 @@ Parameters:
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
-    New value to store.
+    要存储的新值。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

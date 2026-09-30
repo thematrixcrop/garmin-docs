@@ -54,7 +54,7 @@ API 级别 1.0.0
 
 - [**multiply**](#multiply-instance_function)(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Multiply a Duration by a value.
+    将 Duration 乘以一个值。
 
 - [**subtract**](#subtract-instance_function)(duration as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
@@ -284,7 +284,7 @@ API 级别 1.0.0
 
 ### **multiply(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Multiply a Duration by a value.
+将 Duration 乘以一个值。
 
 Parameters:
 

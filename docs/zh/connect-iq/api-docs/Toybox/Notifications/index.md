@@ -137,7 +137,7 @@ The notification action was selected by the user
 
 - [**registerForNotificationMessages**](#registerForNotificationMessages-instance_function)(callback as [Notifications.NotificationMessageCallback](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageCallback-named_type) or **Null**) as **Void**
 
-    Register a callback for receiving notification messages.
+    注册用于接收通知消息的回调。
 
 - [**showNotification**](#showNotification-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**) as **Void**
 
@@ -184,7 +184,7 @@ API 级别 5.1.0
 
 ### **registerForNotificationMessages(callback as [Notifications.NotificationMessageCallback](/connect-iq/api-docs/Toybox/Notifications/#NotificationMessageCallback-named_type) or **Null**)** as **Void**
 
-Register a callback for receiving notification messages.
+注册用于接收通知消息的回调。
 
 The callback will be called once for each notification message. If there are messages queued for the app when this function is called, the callback will immediately be called once for each pending message.
 

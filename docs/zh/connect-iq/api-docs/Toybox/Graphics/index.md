@@ -557,7 +557,7 @@ API 级别 4.2.1
 
 |
 
-Only supported on devices with GPU
+仅支持配备 GPU 的设备
 
 |
 | BLEND\_MODE\_ADDITIVE | 3 |
@@ -570,7 +570,7 @@ S + D
 
 |
 
-Only supported on devices with GPU
+仅支持配备 GPU 的设备
 
 |
 

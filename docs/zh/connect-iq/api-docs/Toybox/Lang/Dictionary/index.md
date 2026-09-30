@@ -70,7 +70,7 @@ API 级别 1.0.0
 
 - [**put**](#put-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as **Void**
 
-    Place a value in the Dictionary with a given key.
+    使用给定的键将值放入 Dictionary。
 
 - [**remove**](#remove-instance_function)(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
@@ -167,7 +167,7 @@ API 级别 1.0.0
 
 ### **put(key as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), value as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as **Void**
 
-Place a value in the Dictionary with a given key.
+使用给定的键将值放入 Dictionary。
 
 Parameters:
 

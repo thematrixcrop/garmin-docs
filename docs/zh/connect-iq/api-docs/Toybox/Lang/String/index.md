@@ -26,7 +26,7 @@ API 级别 1.0.0
 
 - [**compareTo**](#compareTo-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Lexicographically compare self to some other string.
+    按字典顺序将自身与其他字符串进行比较。
 
 - [**equals**](#equals-instance_function)(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -97,7 +97,7 @@ API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Lexicographically compare self to some other string.
+按字典顺序将自身与其他字符串进行比较。
 
 Parameters:
 

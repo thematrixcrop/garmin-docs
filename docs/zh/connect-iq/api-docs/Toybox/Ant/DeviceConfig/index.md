@@ -245,7 +245,7 @@ API 级别 1.0.0
 
 High Priority search timeout that a receiving channel will wait for in order to start tracking a master
 
-- Measured in 2.5s increments
+- 以 2.5 秒为增量进行测量
 
 - Limited to a maximum of 5 seconds (Range of 0 to 2)
 
@@ -258,7 +258,7 @@ API 级别 1.0.0
 
 The low Priority search timeout that a receiving channel will wait for in order to start tracking a master
 
-- Measured in 2.5s increments
+- 以 2.5 秒为增量进行测量
 
 - Limited to a maximum of 30 seconds (Range of 0 to 12)
 

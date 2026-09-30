@@ -91,7 +91,7 @@ A SensorLogger may be initialized with the same dictionary of options provided t
 
 注意：
 
-Magnetometer data is not supported in synchronous data request.
+同步数据请求不支持磁力计数据。
 
 Parameters:
 
@@ -101,21 +101,21 @@ Parameters:
 
 - :accelerometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for accelerometer data.
+        加速度计数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the accelerometer.
 
 
 - :gyroscope — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for gyroscope data.
+        陀螺仪数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the gyroscope.
 
 
 - :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Options for magnetometer data.
+        磁力计数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) Set to `true` to fetch data from the magnetometer.
 

@@ -36,7 +36,7 @@ API 级别 2.2.0
 
 - [**numComponents**](#numComponents-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Number of components in the system.
+    系统中的组件数。
 
 
 ## 实例属性详情
@@ -59,13 +59,13 @@ Returns:
 
 - 单分量时返回 `null`
 
-- Light index for bike lights.
+- 自行车灯的灯光索引。
 
 
 
 ### var numComponents as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Number of components in the system.
+系统中的组件数。
 
 Since:
 

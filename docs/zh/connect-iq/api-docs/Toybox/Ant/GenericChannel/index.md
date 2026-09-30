@@ -48,11 +48,11 @@ API 级别 1.0.0
 
 - [**open**](#open-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Open a generic ANT Channel.
+    打开通用 ANT 通道。
 
 - [**release**](#release-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Release the generic ANT Channel back to the system.
+    将通用 ANT 通道释放回系统。
 
 - [**sendAcknowledge**](#sendAcknowledge-instance_function)(data as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -515,7 +515,7 @@ Throws:
 
 ### **open()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Open a generic ANT Channel.
+打开通用 ANT 通道。
 
 注意：
 
@@ -543,7 +543,7 @@ API 级别 1.0.0
 
 ### **release()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Release the generic ANT Channel back to the system.
+将通用 ANT 通道释放回系统。
 
 If the channel is open it will be automatically closed.
 

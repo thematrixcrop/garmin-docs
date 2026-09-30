@@ -67,7 +67,7 @@ API 级别 1.0.0
 
 - [**length**](#length-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Number of data bytes in the data payload (not including any extended data if applicable).
+    数据负载中的数据字节数（不包括适用时的任何扩展数据）。
 
 - [**messageId**](#messageId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -122,7 +122,7 @@ API 级别 1.2.0
 
 ### var length as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Number of data bytes in the data payload (not including any extended data if applicable).
+数据负载中的数据字节数（不包括适用时的任何扩展数据）。
 
 Since:
 

@@ -131,7 +131,7 @@ API 级别 3.1.0
 
 Gets Manufacturer Specific Data for a given Manufacturer
 
-Manufacturer Specific Data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.11
+制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
 Parameters:
 
@@ -155,7 +155,7 @@ API 级别 3.1.0
 
 Gets an iterator over all of the Manufacturer Specific Data AD Entries in the advertising packet
 
-Manufacturer Specific Data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.11
+制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
 Returns:
 

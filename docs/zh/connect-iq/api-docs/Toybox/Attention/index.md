@@ -395,7 +395,7 @@ API 级别 3.4.3
 
 - [**playTone**](#playTone-instance_function)(options as [Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module) or { :toneProfile as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)\>, :repeatCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as **Void**
 
-    Play a tone.
+    播放音调。
 
 - [**setFlashlightMode**](#setFlashlightMode-instance_function)(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
 - [**vibrate**](#vibrate-instance_function)(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>) as **Void**
@@ -678,12 +678,12 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Raised if called from an app type other than watch-app.
+    如果从 watch-app 以外的应用类型调用，则引发。
 
 
 ### **playTone(options as [Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module) or { :toneProfile as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)\>, :repeatCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })** as **Void**
 
-Play a tone.
+播放音调。
 
 注意：
 
@@ -973,7 +973,7 @@ Throws:
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    Raised if called from an app type other than watch-app.
+    如果从 watch-app 以外的应用类型调用，则引发。
 
 
 ### **vibrate(vibeProfiles as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)\>)** as **Void**

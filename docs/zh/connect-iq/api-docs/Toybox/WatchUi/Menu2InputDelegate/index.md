@@ -283,7 +283,7 @@ This method is triggered on products with touch input when the user selects the 
 
 注意：
 
-Prior to ConnectIQ API version 5.1.0, this function was only called on [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/). It is now used for all [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) types.
+在 ConnectIQ API 版本 5.1.0 之前，此函数仅在 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) 上调用。现在它用于所有 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类型。
 
 Since:
 
@@ -346,7 +346,7 @@ This method is triggered on products with touch input when the user selects the 
 
 注意：
 
-Prior to ConnectIQ API version 5.1.0, this function was only called on [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/). It is now used for all [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) types.
+在 ConnectIQ API 版本 5.1.0 之前，此函数仅在 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) 上调用。现在它用于所有 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类型。
 
 Since:
 

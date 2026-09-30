@@ -402,7 +402,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**pairDevice**](#pairDevice-instance_function)(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
 
-    Pairs a peripheral device seen in scanning with the system.
+    将扫描中发现的外围设备与系统配对。
 
 - [**registerProfile**](#registerProfile-instance_function)(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> }) as **Void**
 
@@ -602,7 +602,7 @@ API 级别 3.1.0
 
 ### **pairDevice(scanResult as [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/))** as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) or **Null**
 
-Pairs a peripheral device seen in scanning with the system.
+将扫描中发现的外围设备与系统配对。
 
 The BLE Subsystem will begin to search for the device specified by the scanResult parameter. Once the device is found and connected, [onConnectedStateChanged()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onConnectedStateChanged-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the associated [Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) object
 

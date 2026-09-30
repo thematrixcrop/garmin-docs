@@ -85,11 +85,11 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))
 
-    Method Constructor.
+    方法构造函数。
 
 - [**invoke**](#invoke-instance_function)(parameters...) [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-    Invoke a Method.
+    调用方法。
 
 
 ## 实例方法详情
@@ -123,7 +123,7 @@ API 级别 1.0.0
 
 ### **initialize(aClass, aMethod as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/))**
 
-Method Constructor.
+方法构造函数。
 
 Parameters:
 
@@ -142,7 +142,7 @@ API 级别 1.0.0
 
 ### **invoke(parameters...)** [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
-Invoke a Method.
+调用方法。
 
 Parameters:
 

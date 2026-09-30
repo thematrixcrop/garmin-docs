@@ -43,7 +43,7 @@ API 级别 3.0.0
 
 - [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-    Override to provide the initial View and Input Delegate for configuring playback.
+    重写此方法，为配置播放提供初始 View 和 Input Delegate。
 
 - [**getProviderIconInfo**](#getProviderIconInfo-instance_function)() as [Media.ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) or **Null**
 
@@ -51,7 +51,7 @@ API 级别 3.0.0
 
 - [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function)() as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-    Override to provide the initial View and Input Delegate for configuring sync.
+    重写此方法，为配置同步提供初始 View 和 Input Delegate。
 
 - [**getSyncDelegate**](#getSyncDelegate-instance_function)() as [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) or **Null** deprecated
 
@@ -180,7 +180,7 @@ API 级别 3.0.0
 
 ### **getPlaybackConfigurationView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-Override to provide the initial View and Input Delegate for configuring playback.
+重写此方法，为配置播放提供初始 View 和 Input Delegate。
 
 注意：
 
@@ -310,7 +310,7 @@ API 级别 3.0.0
 
 ### **getSyncConfigurationView()** as \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type) \] or \[ [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) \]
 
-Override to provide the initial View and Input Delegate for configuring sync.
+重写此方法，为配置同步提供初始 View 和 Input Delegate。
 
 注意：
 

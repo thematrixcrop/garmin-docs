@@ -80,7 +80,7 @@ Parameters:
 
 - requestParams — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Non-URL encoded parameters for the `requestUrl`
+    用于 `requestUrl` 的未进行 URL 编码的参数
 
 - resultUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 

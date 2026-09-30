@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**activeMinutes**](#activeMinutes-var) as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-    Number of active minutes.
+    活跃分钟数。
 
 - [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -79,7 +79,7 @@ API 级别 1.0.0
 
 ### var activeMinutes as [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/) or **Null**
 
-Number of active minutes.
+活跃分钟数。
 
 Contains the moderate, vigorous, and total accumulated minutes for the day.
 

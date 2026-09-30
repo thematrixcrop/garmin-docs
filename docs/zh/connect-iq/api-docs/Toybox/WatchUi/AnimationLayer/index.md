@@ -185,7 +185,7 @@ API 级别 3.1.0
 
 - [**play**](#play-instance_function)(options as { :delegate as [WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/) } or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Play animation, animation must be added to and not abandoned by the view before it can be played.
+    播放动画；动画必须先添加到 View 中且不能从 View 中移除，然后才能播放。
 
 - [**stop**](#stop-instance_function)() as **Void**
 
@@ -261,7 +261,7 @@ Throws:
 
 ### **play(options as { :delegate as [WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/) } or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Play animation, animation must be added to and not abandoned by the view before it can be played.
+播放动画；动画必须先添加到 View 中且不能从 View 中移除，然后才能播放。
 
 This will stop the existing playback first.
 

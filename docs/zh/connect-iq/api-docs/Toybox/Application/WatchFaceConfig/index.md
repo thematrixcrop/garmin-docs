@@ -102,7 +102,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    or `null` if the watchface does not support watchface config.
+    如果表盘不支持表盘配置，则为 `null`。
 
 
 Since:
@@ -155,7 +155,7 @@ Returns:
 
 - [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) —
 
-    or `null` if the watchface does not support watchface config.
+    如果表盘不支持表盘配置，则为 `null`。
 
 
 Since:

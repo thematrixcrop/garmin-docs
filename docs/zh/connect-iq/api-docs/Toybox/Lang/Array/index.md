@@ -38,11 +38,11 @@ API 级别 1.0.0
 
 - [**remove**](#remove-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Remove an Object from an Array.
+    从 Array 中移除一个 Object。
 
 - [**removeAll**](#removeAll-instance_function)(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Remove Objects from an Array.
+    从 Array 中移除 Object。
 
 - [**reverse**](#reverse-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**\>
 
@@ -139,7 +139,7 @@ API 级别 1.3.0
 
 ### **remove(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Remove an Object from an Array.
+从 Array 中移除一个 Object。
 
 If the passed Object is found, the Array size is decreased by one and elements beyond it are shifted to the next lower index. If the Array has multiple matches, the matching Object at the lowest index will be removed but the other matching Objects will not be removed.
 
@@ -163,7 +163,7 @@ API 级别 1.3.0
 
 ### **removeAll(object as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Remove Objects from an Array.
+从 Array 中移除 Object。
 
 For each instance of the Object that is found, the Array size is decreased by one and elements beyond it are shifted to the next lower index.
 

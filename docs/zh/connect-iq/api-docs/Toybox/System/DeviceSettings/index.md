@@ -133,7 +133,7 @@ API 级别 1.0.0
 
 - [**phoneOperatingSystem**](#phoneOperatingSystem-var) as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
 
-    Operating System of the BLE-connected mobile device.
+    BLE 连接移动设备的操作系统。
 
 - [**requiresBurnInProtection**](#requiresBurnInProtection-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -770,7 +770,7 @@ Returns:
 
 ### var phoneOperatingSystem as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
 
-Operating System of the BLE-connected mobile device.
+BLE 连接移动设备的操作系统。
 
 Since:
 

@@ -67,7 +67,7 @@ API 级别 3.0.0
 
 - [**playbackControls**](#playbackControls-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
 
-    Playback controls that should be rendered in the player.
+    应在播放器中渲染的播放控件。
 
 - [**playbackNotificationThreshold**](#playbackNotificationThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -110,7 +110,7 @@ Returns:
 
 ### var playbackControls as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module) or [Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) or [Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)\> or **Null**
 
-Playback controls that should be rendered in the player.
+应在播放器中渲染的播放控件。
 
 This is an Array that holds a combination of [PLAYBACK\_CONTROL\_\*](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), [CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/), and [SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/) values defined by the developer. The values in this Array determine which native media player control options are rendered and available to the end user of the current device. The first entry in the array may be used as a hotkey in the media player. This is device dependent.
 

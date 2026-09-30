@@ -54,7 +54,7 @@ API 级别 3.2.0
 
 - [**observationLocationPosition**](#observationLocationPosition-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-    Location where the conditions were observed.
+    观测到这些状况的位置。
 
 - [**observationTime**](#observationTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
@@ -208,7 +208,7 @@ Returns:
 
 ### var observationLocationPosition as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-Location where the conditions were observed.
+观测到这些状况的位置。
 
 If the app does not have the position permission then this will be `null`.
 

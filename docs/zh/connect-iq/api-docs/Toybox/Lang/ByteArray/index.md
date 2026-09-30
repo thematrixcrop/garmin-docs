@@ -54,11 +54,11 @@ API 级别 3.0.0
 
 - [**remove**](#remove-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Remove a byte from a ByteArray.
+    从 ByteArray 中移除一个字节。
 
 - [**removeAll**](#removeAll-instance_function)(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Remove bytes from a ByteArray.
+    从 ByteArray 中移除字节。
 
 - [**reverse**](#reverse-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -306,7 +306,7 @@ Throws:
 
 ### **remove(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Remove a byte from a ByteArray.
+从 ByteArray 中移除一个字节。
 
 If the passed byte is found, the ByteArray size is decreased by one and elements beyond it are shifted to the next lower index. If the ByteArray has multiple matches, the matching byte at the lowest index will be removed but the other matching bytes will not be removed.
 
@@ -343,7 +343,7 @@ Throws:
 
 ### **removeAll(byte as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Remove bytes from a ByteArray.
+从 ByteArray 中移除字节。
 
 For each instance of the byte that is found, the ByteArray size is decreased by one and elements beyond it are shifted to the next lower index.
 
