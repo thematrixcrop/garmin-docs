@@ -26,7 +26,7 @@ API 级别 3.2.0
 
 - [**cloudCover**](#cloudCover-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The cloud cover \[0-100%\].
+    云量，范围为 \[0-100%\]。
 
 - [**condition**](#condition-var) as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
 
@@ -42,11 +42,11 @@ API 级别 3.2.0
 
 - [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The chance of precipitation \[0-100%\].
+    降水概率，范围为 \[0-100%\]。
 
 - [**relativeHumidity**](#relativeHumidity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The relative humidity \[0-100%\].
+    相对湿度，范围为 \[0-100%\]。
 
 - [**temperature**](#temperature-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) or **Null**
 
@@ -54,7 +54,7 @@ API 级别 3.2.0
 
 - [**uvIndex**](#uvIndex-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The UV index \[0-10\].
+    紫外线指数，范围为 \[0-10\]。
 
 - [**windBearing**](#windBearing-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -69,7 +69,7 @@ API 级别 3.2.0
 
 ### var cloudCover as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The cloud cover \[0-100%\]
+云量，范围为 \[0-100%\]
 
 Since:
 
@@ -126,7 +126,7 @@ Returns:
 
 ### var precipitationChance as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The chance of precipitation \[0-100%\]
+降水概率，范围为 \[0-100%\]
 
 Since:
 
@@ -141,7 +141,7 @@ Returns:
 
 ### var relativeHumidity as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The relative humidity \[0-100%\]
+相对湿度，范围为 \[0-100%\]
 
 Since:
 
@@ -171,7 +171,7 @@ Returns:
 
 ### var uvIndex as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The UV index \[0-10\]
+紫外线指数，范围为 \[0-10\]
 
 Since:
 

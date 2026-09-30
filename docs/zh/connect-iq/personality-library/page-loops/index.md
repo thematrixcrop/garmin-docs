@@ -11,7 +11,7 @@ title: "Page Loops"
 
 ## 示例
 
-The System 6 [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) 可用于 handle the inputs and transitions between pages. You create a [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/) that feeds [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) on demand. As the user selects the system input to navigate the page loop, the [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) handles the page transitions and displays the page indicators. You provide your own [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) for each view to handle inputs not involved with page navigation.
+System 6 中的 [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) 可用于处理页面之间的输入和切换。您需要创建一个 [WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)，按需提供 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)。用户选择系统输入来浏览页面循环时，[WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) 会处理页面切换并显示页面指示器。您需要为每个视图提供自己的 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)，以处理与页面导航无关的输入。
 
 ```typescript
 // InputDelegate.mc

@@ -60,7 +60,7 @@ API 级别 2.4.0
 
 - [**windResistance**](#windResistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The simulated wind resistance coefficient setting for simulation mode Wind Resistance Coefficient \[kg/m\] = Frontal Surface Area \[m2\] x Drag Coefficient x Air Density \[kg/m3\].
+    模拟模式的风阻系数设置。风阻系数 \\[kg/m\\] = 迎风面积 \\[m2\\] × 阻力系数 × 空气密度 \\[kg/m3\\]。
 
 - [**windSpeed**](#windSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -101,7 +101,7 @@ Returns:
 
 ### var surfaceResistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The simulated surface resistance coefficient for simulation mode. Dimensionless factor to quantify rolling resistance based on friction between bicycle tires and the tracker surface. Rolling Resistance \[N\] = (Bicycle Mass + Cyclist Mass) x Coefficient of Rolling Resistance x 9.8 Sample coefficients: Wooden track = 0.001 Smooth Concrete = 0.002 Asphalt Road = 0.004 Rough Road = 0.008
+模拟模式的表面阻力系数。该无量纲因子根据自行车轮胎与骑行路线表面之间的摩擦量化滚动阻力。滚动阻力 \\[N\\] =（自行车质量 + 骑手质量）× 滚动阻力系数 × 9.8。示例系数：木质赛道 = 0.001，平滑混凝土 = 0.002，沥青路面 = 0.004，粗糙路面 = 0.008。
 
 Since:
 
@@ -116,7 +116,7 @@ Returns:
 
 ### var windResistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The simulated wind resistance coefficient setting for simulation mode Wind Resistance Coefficient \[kg/m\] = Frontal Surface Area \[m2\] x Drag Coefficient x Air Density \[kg/m3\]
+模拟模式的风阻系数设置。风阻系数 \\[kg/m\\] = 迎风面积 \\[m2\\] × 阻力系数 × 空气密度 \\[kg/m3\\]。
 
 Since:
 

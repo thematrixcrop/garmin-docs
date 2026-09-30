@@ -17,7 +17,7 @@ title: "Monkey C Language Reference"
 
 子C支持的基本数据类型是:
 
-| 类型 | 说明 | Example |
+| 类型 | 说明 | 示例 |
 | --- | --- | --- |
 | [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 32 位有符号整数 | `var x = 5;` |
 | [Float](/connect-iq/api-docs/Toybox/Lang/Float/) |32位浮点号码| `var y = 6.0;` |
@@ -30,7 +30,7 @@ title: "Monkey C Language Reference"
 
 Monkey C 还支持两种容器类型：
 
-| 类型 | 说明 | Example |
+| 类型 | 说明 | 示例 |
 | --- | --- | --- |
 | [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* |固定尺寸 (不是链接列表),数值索引,单维物体列表| `var arr = new [1, 2, 3];` |
 | [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* |交配阵列或哈希表,将键映射到值| `var dict = {one=>1, two=>2};` |
@@ -39,7 +39,7 @@ Monkey C 还支持两种容器类型：
 
 在 Monkey C 编程语言中,有几个关键字,操作符和保留的单词,不能作为程序中的变量或符号:
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 | `and` |逻辑 AND,相当于`&&`| 请参阅 [Logical Operators](#logical-operators) |
 | `as` |指定一个以`using`语句表示的模块的号| 请参阅 [Using Statements](#using-statements) |
@@ -89,7 +89,7 @@ Monkey C 还支持两种容器类型：
 
 #### 算术运算符
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 | `+` | 加法：两个操作数；一元正号 |`a + b`结果为 15;`+a`是 10|
 | `-` |减去第二个操作数从第一个;单数负|`a - b`结果为 5;`-a`是 -10|
@@ -103,7 +103,7 @@ Monkey C 还支持两种容器类型：
 
 #### 关系运算符
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 | `==` |检查两个操作数是否等等|`a == b`是`false`|
 | `!=` |检查两个操作数是否不等等|`a != b`是`true`|
@@ -114,7 +114,7 @@ Monkey C 还支持两种容器类型：
 
 #### 逻辑运算符
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 |`&&`, '和'|逻辑 AND,如果两个值都是正确的`true`|`m && n`是`false`|
 | `||` |逻辑 OR,如果任何值都是正确的,则是`true`| `m |||
@@ -147,7 +147,7 @@ Monkey C 还支持两种容器类型：
 
 假设`p = 3`和`q = 1`.如果写为字节值,`p`是`0000 0011`和`q`是`0000 0001`.
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 | `&` |如果它存在于两种操作中,则将结果复制为 bitwise AND| `p & q` 的结果为 1（0000 0001） |
 | `|` |如果它存在于任何一个操作中,它可以对结果进行复制| `p |` (0000 0011)|
@@ -158,7 +158,7 @@ Monkey C 还支持两种容器类型：
 
 #### 赋值运算符
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 | `=` |从右操作数到左操作数分配值|`b = a`将`b`赋予`a`(10) 的值|
 | `+=` |添加右操作和左操作,将结果分配到左操作|`a += b`相当于`a = a + b`(15)|
@@ -169,12 +169,12 @@ Monkey C 还支持两种容器类型：
 | `<<=` |移动左运行对右运行对左运行对右运行对结果分配|`x <<= y`相当于`x = x << y`(1)|
 | `>>=` |右移动左运行对右运行对右运行对左运行分配结果|`x >>= y`相当于`x = x >> y`(1)|
 | `&=` |位向和右运行对左运行,将结果分配给左运行|`x &= y`相当于`x = x & y`(0)|
-| `|=` |位向或右运行对左运行对应,并将结果分配给左运行对应| `x |= y` equivalent to `x = x | y` (1) |
+| `|=` |对左操作数和右操作数执行按位或，并将结果赋给左操作数| `x |= y` 等价于 `x = x | y`（1）|
 | `^=` |位向 XOR 右操作数与左操作数,并将结果分配到左操作数|`x ^= y`相当于`x = x ^ y`(1)|
 
 #### 其他运算符
 
-| Operator | 说明 | Example |
+| 运算符 | 说明 | 示例 |
 | --- | --- | --- |
 |`?`和`:`|三角形运算器,[if-else](#if-statements)的缩写形式| `var myBool = a > 5 ? true : false` |
 | `new` |创建一个对象的新实例| `var myTimer = new Toybox.Timer.Timer` |
@@ -183,7 +183,7 @@ Monkey C 还支持两种容器类型：
 
 运算器优先级决定了表达式的哪些部分将首先进行评估.下列列表将运算器按优先级组分,表顶部出现的最高,下部出现的最低.
 
-| Precedence | Operators |
+| 优先级 | 运算符 |
 | --- | --- |
 | 1 | `new ! ~ ()` |
 | 2 | `* / % & << >>` |
@@ -539,7 +539,7 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 
 #### Switch 代码块中的作用域
 
-Variables declared within the switch block are scoped at the switch block level. Variables may also be enclosed by curly braces within a case block to limit scope to that case block. All variables defined at the switch block level must be initialized before being used in any subsequent `case` statements. For 示例：
+在 switch 代码块中声明的变量，其作用域为整个 switch 代码块。也可以在 case 代码块中使用花括号包围变量，将其作用域限制在该 case 代码块内。在后续 `case` 语句中使用 switch 代码块级别声明的变量之前，必须先完成初始化。例如：
 
 ```cpp
 switch (myValue) {
@@ -923,7 +923,7 @@ if (value instanceof Lang.Number) {
 }
 ```
 
-The `has` operator checks whether a given object has a particular symbol, which may be a public method, instance variable, or even a class definition or module. For example, accelerometer data is available in [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/), but not all products have an accelerometer. Attempting to use this data on certain products may cause the app to crash with a *Symbol Not Found* error. To avoid this, the `has` operator 可用于 check for accelerometer support:
+`has` 运算符用于检查给定对象是否具有特定符号。该符号可以是公共方法、实例变量，甚至是类定义或模块。例如，加速度计数据可通过 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/) 获取，但并非所有产品都配备加速度计。在某些产品上尝试使用这些数据可能导致应用因 *Symbol Not Found* 错误而崩溃。为避免此问题，可以使用 `has` 运算符检查是否支持加速度计：
 
 ```cpp
 using Toybox.Sensor as Sensor;

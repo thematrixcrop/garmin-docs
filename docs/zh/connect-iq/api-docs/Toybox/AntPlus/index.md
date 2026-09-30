@@ -926,7 +926,7 @@ API 级别 2.4.0
 
 |
 
-The simulated wind resistance coefficient setting of simulation training mode. 0.0 - 1.86 kg/m input range, 0.01 scale. Wind Resistance Coefficient \[kg/m\] = Frontal Surface Area \[m2\] x Drag Coefficient x Air Density \[kg/m3\] Default value is set to 0xFF.
+模拟训练模式的模拟风阻系数设置。输入范围为 0.0 至 1.86 kg/m，缩放比例为 0.01。风阻系数 \[kg/m\] = 迎风面积 \[m2\] × 阻力系数 × 空气密度 \[kg/m3\]。默认值设置为 0xFF。
 
 |
 | TRAINER\_WIND\_SPEED | 13 |
