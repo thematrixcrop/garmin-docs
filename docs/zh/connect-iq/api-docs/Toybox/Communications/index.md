@@ -1016,7 +1016,7 @@ Parameters:
 
 - connectionStatusCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A callback that will be invoked after the connection test has completed. This callback accepts a single dictionary parameter. This dictionary has two keys:
+    连接测试完成后调用的回调。此回调接受一个字典参数。此字典包含两个键：
 
 - :wifiAvailable 如果可以连接到具有互联网访问权限的接入点，则为 `true`；否则为 `false`
 
@@ -1592,7 +1592,7 @@ Parameters:
 
 - parameters — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of keys and values
+    包含键和值的字典
 
 - Appended to the URL for GET/DELETE request
 
@@ -1616,7 +1616,7 @@ Parameters:
 
 - :headers — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        A Dictionary of HTTP headers to include in the request
+        要包含在请求中的 HTTP 标头字典
 
 - The "Content-Type" header for the body of the request can be specified using a REQUEST\_CONTENT\_TYPE\_\* value
 
@@ -1929,7 +1929,7 @@ Parameters:
 
 - parameters — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of keys and values.
+    包含键和值的字典。
 
 - These values should not be URL encoded.
 
@@ -1946,7 +1946,7 @@ Parameters:
 
 - :headers — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        A Dictionary of HTTP headers to include in the request.
+        要包含在请求中的 HTTP 标头字典。
 
 - The "Content-Type" header for the body of the request can be specified using a [REQUEST\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
 
@@ -1984,7 +1984,7 @@ Parameters:
 
 - :fileDownloadProgressCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-        a callback method which must accept two parameters
+        一个必须接受两个参数的回调方法
 
 - totalBytesTransferred: The total number of bytes transferred for the current file download
 
@@ -2992,7 +2992,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    a dictionary of options, can be null
+    选项字典，可以为 null
 
 - :message — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

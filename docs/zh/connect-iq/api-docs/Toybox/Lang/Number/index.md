@@ -187,7 +187,7 @@ Returns:
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
-    A Char representation of the Number
+    Number 的 Char 表示
 
 
 Since:
@@ -202,7 +202,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    A Double representation of the Number
+    Number 的 Double 表示
 
 
 Since:

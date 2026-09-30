@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class containing sensor data for a given period of time.
+包含指定时间段传感器数据的类。
 
 The SensorHistoryIterator describes a sequence of [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) objects. The iterator is retrieved using the appropriate "get" methods found in [SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/) at the module level. This class provides the methods needed to retrieve information from each of the SensorSample objects included in the iterator.
 

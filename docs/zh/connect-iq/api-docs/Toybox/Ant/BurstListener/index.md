@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class that provides a set of callback methods to handle the different burst transmission scenarios in the Ant SDK.
+提供一组回调方法以处理 Ant SDK 中不同突发传输场景的类。
 
 Example:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to control the assignment of an ANT wireless channel.
+用于控制 ANT 无线通道分配的类。
 
 Since:
 

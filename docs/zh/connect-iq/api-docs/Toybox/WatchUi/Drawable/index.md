@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Drawable is the base class of a drawable object.
 
-A Drawable can be constructed using the resource compiler and loaded through the resource (Rez) module.
+可以使用资源编译器构造 Drawable，并通过资源（Rez）模块加载。
 
 Example:
 
@@ -223,7 +223,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing options for the Drawable object
+    包含 Drawable 对象选项的字典
 
 - :identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 

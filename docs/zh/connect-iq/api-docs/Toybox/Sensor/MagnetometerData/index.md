@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to store magnetometerData sample data.
+用于存储磁力计采样数据的类。
 
 Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values. The values for the x, y, and z axes are in milliGauss (mG) This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 

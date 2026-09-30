@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class for storing user activity information.
+用于存储用户活动信息的类。
 
 Since:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class containing Burst payload data.
+包含 Burst 负载数据的类。
 
 The payload data is provided in the form of [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/) objects. The default max size of a `BurstPayload` is 8192 bytes, or 1024 [Message](/connect-iq/api-docs/Toybox/Ant/Message/) objects. However, this can vary by device.
 

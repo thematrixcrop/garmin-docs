@@ -555,7 +555,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary of options; values that would not result in a valid date are not allowed
+    选项字典；不允许使用会导致无效日期的值
 
 - :year — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

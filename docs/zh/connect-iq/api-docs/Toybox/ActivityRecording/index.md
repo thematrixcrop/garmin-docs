@@ -1133,7 +1133,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing session creation options.
+    包含会话创建选项的字典。
 
 - :sport — ([ActivityRecording.Sport](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport-named_type), [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
@@ -1153,7 +1153,7 @@ Parameters:
 
 - :autoLap — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        A dictionary containing auto-lap detection options. If present, this dictionary must have a `:type` key; If the value of `:type` is `:lines`, the `:entry` and `:exit` keys are required. The values associated with `:entry` and `:exit` describe the endpoints of the auto lap entry and exit line segments, each being defined as an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of two [Location](/connect-iq/api-docs/Toybox/Position/Location/) objects. (added in 3.0.10)
+        包含自动计圈检测选项的字典。如果存在，此字典必须包含 `:type` 键；如果 `:type` 的值为 `:lines`，则必须包含 `:entry` 和 `:exit` 键。与 `:entry` 和 `:exit` 关联的值描述自动计圈进线段和出线段的端点，每个端点都定义为由两个 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象组成的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。（在 3.0.10 中添加）
 
 - :sensorLogger — ([SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)) —
 

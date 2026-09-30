@@ -398,7 +398,7 @@ Parameters:
 
 - :configuration — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 
-        A CONFIGURATION\_\* value specifying what configuration to enable. Only available with ConnectIQ 3.3.6 and later.
+        指定要启用哪项配置的 CONFIGURATION\_\* 值。仅 ConnectIQ 3.3.6 及更高版本可用。
 
 - :mode — ([Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module)) —
 
@@ -861,7 +861,7 @@ Parameters:
 
 - config — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 
-    A CONFIGURATION\_\* enum value specifying what configuration to enable. Only available with ConnectIQ 3.3.6 and later.
+    指定要启用哪项配置的 CONFIGURATION\_\* 枚举值。仅 ConnectIQ 3.3.6 及更高版本可用。
 
 
 :::details 支持的设备

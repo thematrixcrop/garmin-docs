@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A delegate object that the user implements to respond to sync requests from the system.
+用户实现的委托对象，用于响应系统发出的同步请求。
 
 Since:
 

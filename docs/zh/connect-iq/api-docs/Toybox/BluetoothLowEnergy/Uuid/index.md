@@ -87,7 +87,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A Byte Array Representation of the UUID
+    UUID 的字节数组表示
 
 
 Since:

@@ -96,7 +96,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A ByteArray composed of the original ByteArray plus the added byte
+    由原始 ByteArray 和添加的字节组成的 ByteArray
 
 
 Since:
@@ -131,7 +131,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A ByteArray composed of the original ByteArray plus the added byte(s)
+    由原始 ByteArray 和添加的字节组成的 ByteArray
 
 
 Since:

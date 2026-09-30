@@ -325,7 +325,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary of options for the KeyAgreement
+    KeyAgreement 的选项字典
 
 - :protocol — ([Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module)) —
 

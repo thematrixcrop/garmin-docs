@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to store gyroscope sample data.
+用于存储陀螺仪采样数据的类。
 
 Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Float](/connect-iq/api-docs/Toybox/Lang/Float/) values. The values for the x, y, and z axes are in deg/sec units. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 

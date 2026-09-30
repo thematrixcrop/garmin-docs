@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class describing a Sensor
+描述传感器的类
 
 The SensorInfo provides access to the attributes of a Sensor.
 
@@ -65,7 +65,7 @@ API 级别 3.2.0
 
 The Sensor-specific data
 
-A dictionary of sensor-specific attributes. Currently supported attributes include:
+传感器特定属性的字典。目前支持的属性包括：
 
 - `:bleAddress` - BLE 传感器的 MAC 地址（例如 01:02:03:04:05:06），类型为 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)（如果可用）。
 

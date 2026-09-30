@@ -20,9 +20,9 @@ Toybox.WatchUi.MenuItem
 
 A representation of a custom item in a CustomMenu.
 
-A CustomMenuItem is a element of a [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) View that represents one of the items in the menu. When selected, the onSelect() delegate callback will be invoked. The selected state of the item may change when it is being selected. This state can be evaluated using the isSelected() method and can be used to control the look of a selected item.
+CustomMenuItem 是 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) View 的一个元素，表示菜单中的一个项目。选中后，将调用 onSelect() 委托回调。项目的选中状态可能会在选中过程中发生变化。可以使用 isSelected() 方法检查此状态，并使用它控制选中项目的外观。
 
-A CustomMenuItem can be added to a CustomMenu using the [addItem()](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#addItem-instance_function) method.
+可以使用 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#addItem-instance_function) 方法将 CustomMenuItem 添加到 CustomMenu。
 
 ## 另见：
 
@@ -320,7 +320,7 @@ Parameters:
 
 - :drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A Drawable that draws the item. (required)
+        用于绘制项目的 Drawable。（必需）
 
 - :icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 

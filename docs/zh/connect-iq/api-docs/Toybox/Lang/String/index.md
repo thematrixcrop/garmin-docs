@@ -250,7 +250,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A Char Array representation of the String, where each character in the String is an element in the Array
+    String 的 Char 数组表示，其中 String 中的每个字符都是 Array 的一个元素
 
 
 Since:
@@ -286,7 +286,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    A Double representation of the String
+    String 的 Double 表示
 
 
 Since:

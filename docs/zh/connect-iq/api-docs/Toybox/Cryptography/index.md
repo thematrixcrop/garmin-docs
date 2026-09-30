@@ -554,7 +554,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A ByteArray of the requested size filled with cryptographically random bytes
+    一个指定大小、填充了密码学随机字节的 ByteArray
 
 
 Since:

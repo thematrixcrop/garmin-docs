@@ -20,7 +20,7 @@ Toybox.WatchUi.View
 
 Create a Data Field.
 
-A DataField is a special View that automatically provides [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) once per second via the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method. A DataField requires the implementation of the [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) method to handle the incoming Activity info, and otherwise provides a significant amount of flexibility regarding the way the information is displayed. If less complexity is required, consider a [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/).
+DataField 是一种特殊的 View，通过 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法每秒自动提供一次 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)。DataField 必须实现 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法来处理传入的活动信息，同时在信息显示方式方面提供很大的灵活性。如果不需要这么复杂的功能，请考虑使用 [SimpleDataField](/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField/)。
 
 ## 另见：
 
@@ -37,7 +37,7 @@ A DataField is a special View that automatically provides [Activity.Info](/conne
 
 Example:
 
-A DataField that displays current heart rate
+显示当前心率的 DataField
 
 ```
 using Toybox.WatchUi;

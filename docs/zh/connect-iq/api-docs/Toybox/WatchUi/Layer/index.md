@@ -156,7 +156,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options; can be `null`, which defaults to full screen layer
+    选项字典；可以为 `null`，默认为全屏图层
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

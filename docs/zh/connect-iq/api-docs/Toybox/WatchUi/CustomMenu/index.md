@@ -22,9 +22,9 @@ Toybox.WatchUi.Menu2
 
 A representation of a custom menu.
 
-A CustomMenu is a specialized [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View that presents the user with a list of custom rendered options. After an option is selected, the registered [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) method will be called.
+CustomMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View，用于向用户显示自定义渲染的选项列表。选择选项后，将调用已注册的 [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) 方法。
 
-A CustomMenu is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
+使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 CustomMenu，该方法将 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 作为输入委托。
 
 ## 另见：
 
@@ -417,11 +417,11 @@ Parameters:
 
 - :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A Drawable that will render the title area. (optional)
+        用于渲染标题区域的 Drawable。（可选）
 
 - :footer — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A Drawable that will render the area after the final item in the menu.(optional)
+        用于渲染菜单中最后一个项目之后区域的 Drawable。（可选）
 
 - :foreground — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
@@ -548,7 +548,7 @@ Parameters:
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
-    A drawable that will render the footer area or `null`.
+    用于渲染页脚区域的 drawable，或 `null`。
 
 
 Since:
@@ -592,7 +592,7 @@ Parameters:
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
-    A drawable that will render the title area or `null`.
+    用于渲染标题区域的 drawable，或 `null`。
 
 
 Since:

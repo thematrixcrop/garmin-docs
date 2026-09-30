@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to encapsulate all high-frequency sensor data that can be retrieved.
+封装可检索的所有高频传感器数据的类。
 
 Example:
 

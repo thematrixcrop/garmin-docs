@@ -20,9 +20,9 @@ Toybox.WatchUi.MenuItem
 
 A representation of a check box item in a CheckboxMenu.
 
-A CheckboxMenuItem is a element of a [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) View that represents one of the options in the menu, and can appear in one of two states: checked or unchecked. When selected, the state of the CheckboxMenuItem changes to the state opposite of the state prior to the onSelect delegate callback invocation.
+CheckboxMenuItem 是 [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) View 的一个元素，表示菜单中的一个选项，并且可以处于两种状态之一：选中或未选中。选中后，CheckboxMenuItem 的状态将变为调用 onSelect 委托回调前状态的相反状态。
 
-A CheckboxMenuItem can be added to a CheckboxMenu using the [addItem()](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/#addItem-instance_function) method.
+可以使用 [addItem()](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/#addItem-instance_function) 方法将 CheckboxMenuItem 添加到 CheckboxMenu。
 
 ## 另见：
 

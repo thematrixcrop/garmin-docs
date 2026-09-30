@@ -229,7 +229,7 @@ Returns:
 
 - [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
-    A Dictionary that contains the state of each available connection. The keys, `:bluetooth`, `:wifi`, and `:lte` indicate the connection type. If a key is not present then it means that connection type is not available to the device. The values are a [ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/) object, which contain the state of the connection type.
+    包含每个可用连接状态的字典。`:bluetooth`、`:wifi` 和 `:lte` 键表示连接类型。如果缺少某个键，则表示设备不支持该连接类型。值是包含连接类型状态的 [ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/) 对象。
 
 
 ### var distanceUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)

@@ -104,7 +104,7 @@ Parameters:
 
 - activity — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary containing information about the completed activity.
+    包含已完成活动信息的字典。
 
 - :sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 

@@ -222,7 +222,7 @@ API 级别 3.1.0
 
 按 ID 查找 Drawable。
 
-A common use for this method is to get layout information to format dynamic content, such as a string that updates at runtime.
+此方法的一个常见用途是获取布局信息，以便格式化动态内容，例如运行时更新的字符串。
 
 Parameters:
 
@@ -259,7 +259,7 @@ Returns:
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
-    A Drawable if found, otherwise `null`
+    找到的 Drawable，否则为 `null`
 
 
 另见：

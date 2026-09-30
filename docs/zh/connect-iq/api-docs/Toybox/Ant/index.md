@@ -539,7 +539,7 @@ API 级别 2.2.0
 
 |
 
-A burst packet was received out of order and the entire message was dropped
+收到的突发数据包顺序错误，整个消息已被丢弃
 
 |
 | BURST\_ERROR\_RF\_FAIL | 2 |
@@ -548,7 +548,7 @@ API 级别 2.2.0
 
 |
 
-A burst failed over the air
+空中传输突发数据失败
 
 |
 | BURST\_ERROR\_TRANSFER\_IN\_PROGRESS | 3 |

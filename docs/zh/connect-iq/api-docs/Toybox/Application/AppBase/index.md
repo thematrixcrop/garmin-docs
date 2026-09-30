@@ -224,7 +224,7 @@ API 级别 4.0.0
 
 - [**onDeviceSettingChanged**](#onDeviceSettingChanged-instance_function)(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    A device setting has changed This method is called when a device setting value is changed.
+    设备设置已更改。设备设置值发生更改时会调用此方法。
 
 - [**onDisplayModeChanged**](#onDisplayModeChanged-instance_function)() as **Void**
 
@@ -2046,7 +2046,7 @@ API 级别 2.3.0
 
 ### **onDeviceSettingChanged(aSymbol as [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), aValue as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-A device setting has changed
+设备设置已更改
 
 This method is called when a device setting value is changed.
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to hold and define the information in an ANT wireless data payload.
+用于保存和定义 ANT 无线数据负载中信息的类。
 
 Example:
 

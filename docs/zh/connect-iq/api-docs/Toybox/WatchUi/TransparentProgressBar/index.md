@@ -168,7 +168,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A dictionary of options. There are no options at the moment.
+    选项字典。目前没有选项。
 
 
 Since:

@@ -134,7 +134,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary containing options for the Button object
+    包含 Button 对象选项的字典
 
 - :behavior — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Dictionary is a hash table or associative array used to map keys to values.
+Dictionary 是一种哈希表或关联数组，用于将键映射到值。
 
 Both the keys and values can be any Object type, though they do not all need to be of the same type. Objects used as a keys should override the [hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) method. Due to the nature of hash tables, the order of Dictionary elements are not guaranteed to match the insertion order.
 

@@ -993,7 +993,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
-    A description of the font to retrieve.
+    要获取的字体描述。
 
 - :face — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

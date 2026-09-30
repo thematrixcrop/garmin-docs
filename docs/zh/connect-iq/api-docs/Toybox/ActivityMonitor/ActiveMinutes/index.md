@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class representing the active minutes recorded by the device.
+表示设备记录的活动分钟数的类。
 
 Since:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to define the ANT wireless channel device configuration.
+用于定义 ANT 无线通道设备配置的类。
 
 ## 另见：
 

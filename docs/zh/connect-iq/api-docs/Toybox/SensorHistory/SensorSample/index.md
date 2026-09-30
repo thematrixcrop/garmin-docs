@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class containing sensor data at a given time.
+包含指定时间传感器数据的类。
 
 Since:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A delegate object that the user implements to respond to certain media events from the native media player
+用户实现的委托对象，用于响应原生媒体播放器发出的特定媒体事件
 
 Since:
 

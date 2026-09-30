@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Cipher object.
+一个 Cipher 对象。
 
 ## 另见：
 

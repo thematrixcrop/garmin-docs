@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class encapsulating a collection of Sensors
+封装传感器集合的类
 
 The SensorIterator describes a collection of [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) objects that describe actual sensors. Such an iterator is retrieved using the appropriate "get\*Sensors' methods found in [Sensor](/connect-iq/api-docs/Toybox/Sensor/) at the module level.
 

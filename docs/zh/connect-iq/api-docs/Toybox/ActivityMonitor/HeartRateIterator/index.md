@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class containing heart rate data for a given period of time.
+包含指定时间段心率数据的类。
 
 Since:
 

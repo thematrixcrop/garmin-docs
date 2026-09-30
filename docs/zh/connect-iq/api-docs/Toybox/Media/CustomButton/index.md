@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A CustomButton allows for a media player action other than one of the PLAYBACK\_CONTROL\_\* actions. When a CustomButton is pressed in the media player the ContentDelegate.onCustomButton(button) function is called with the pressed button as a parameter.
+CustomButton 可执行除 PLAYBACK\_CONTROL\_\* 操作之外的媒体播放器操作。在媒体播放器中按下 CustomButton 时，将调用 ContentDelegate.onCustomButton(button) 函数，并将按下的按钮作为参数传入。
 
 Since:
 
@@ -77,7 +77,7 @@ Returns:
 
 - [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module) —
 
-    A BUTTON\_STATE\_\* enum value representing the current state of the button
+    表示按钮当前状态的 BUTTON\_STATE\_\* 枚举值
 
 
 Since:

@@ -18,7 +18,7 @@ Toybox.AntPlus.CommonData
 
 ## 概述
 
-A class containing information from the Manufacturer's Information ANT+ common page.
+包含制造商信息 ANT+ 公共页面信息的类。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

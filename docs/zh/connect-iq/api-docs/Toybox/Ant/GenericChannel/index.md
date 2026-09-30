@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class for controlling an ANT wireless channel.
+用于控制 ANT 无线通道的类。
 
 The GenericChannel provides the methods necessary for initialization, life cycle, and encryption of ANT channels.
 

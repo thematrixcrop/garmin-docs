@@ -309,15 +309,15 @@ Parameters:
 
 - :nextArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A custom next icon for the Picker (optional)
+        Picker 的自定义下一个图标（可选）
 
 - :previousArrow — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A custom previous icon for the Picker (optional)
+        Picker 的自定义上一个图标（可选）
 
 - :confirm — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A custom confirmation icon for the Picker (optional)
+        Picker 的自定义确认图标（可选）
 
 
 另见：

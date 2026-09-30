@@ -18,7 +18,7 @@ Toybox.AntPlus.CommonData
 
 ## 概述
 
-A class representing a bike light sensor.
+表示自行车灯传感器的类。
 
 Since:
 

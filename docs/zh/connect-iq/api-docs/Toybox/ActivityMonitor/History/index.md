@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class containing information about the user's activity history.
+包含用户活动历史记录信息的类。
 
 此类中的字段可能返回 `null`。建议在使用值之前检查其是否为 `null`。如果值不可用，则会抛出指示未找到该符号的错误。
 

@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-A class representing a network of bike lights
+表示自行车灯网络的类
 
 Example:
 

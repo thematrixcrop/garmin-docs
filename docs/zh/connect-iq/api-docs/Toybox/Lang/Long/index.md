@@ -200,7 +200,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    A Double representation of the Long
+    Long 的 Double 表示
 
 
 Since:

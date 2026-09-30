@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to store accelerometer sample data.
+用于存储加速度计采样数据的类。
 
 Each field specified is an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of [Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values. The values for the x, y, and z axes are in Milli G units. For reference, 1000 Milli G = 1 G. If not `null`, all fields are of equal size. This is typically used in a callback method used by [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 

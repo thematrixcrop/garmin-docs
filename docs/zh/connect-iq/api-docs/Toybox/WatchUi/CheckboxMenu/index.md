@@ -22,9 +22,9 @@ Toybox.WatchUi.Menu2
 
 A representation of a check box menu.
 
-A CheckboxMenu is a specialized [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View that presents the user with a list of check box options. After an option is selected, the registered [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) method will be called. While a CheckboxMenu can be generated programmatically, they should generally be created as a resource.
+CheckboxMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View，用于向用户显示复选框选项列表。选择选项后，将调用已注册的 [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) 方法。虽然可以通过编程方式生成 CheckboxMenu，但通常应将其创建为资源。
 
-A CheckboxMenu is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
+使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 CheckboxMenu，该方法将 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 作为输入委托。
 
 ## 另见：
 

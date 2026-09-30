@@ -1388,7 +1388,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of options. The allowed values depend on sensor type.
+    选项字典。允许的值取决于传感器类型。
 
 - :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

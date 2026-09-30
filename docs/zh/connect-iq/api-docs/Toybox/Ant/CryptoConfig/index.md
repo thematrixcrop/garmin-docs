@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A class to handle encryption of ANT wireless data.
+用于处理 ANT 无线数据加密的类。
 
 ## 另见：
 

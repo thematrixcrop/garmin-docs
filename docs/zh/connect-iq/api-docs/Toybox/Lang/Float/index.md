@@ -168,7 +168,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    A Double representation of the Float
+    Float 的 Double 表示
 
 
 Since:
