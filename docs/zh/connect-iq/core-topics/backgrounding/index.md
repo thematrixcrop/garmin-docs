@@ -39,24 +39,24 @@ import Toybox.Background;
 import Toybox.System;
 import Toybox.Time;
 
-// Because this is referenced in the application object
-// constructor, it must be marked as background.
+// 由于应用程序对象的构造函数引用了此内容，
+// 因此必须将其标记为后台运行。
 (:background)
 var globalMember;
 
-// Your application object has to be marked as background
-// so that the service delegate can be referenced
+// 应用程序对象必须标记为后台运行，
+// 这样才能引用服务委托
 (:background)
 class MyApp extends Application.AppBase {
 
-    // Constructor. Remember everything referenced in this function
-    // must be marked as background
+    // 构造函数。请记住，此函数引用的所有内容
+    // 都必须标记为后台运行
     public function initialize() {
-        // Register to run every five minutes
+        // 注册为每五分钟运行一次
         if(Background.getTemporalEventRegisteredTime() != null) {
             Background.registerForTemporalEvent(new Time.Duration(5 * 60))
         }
-        // Initialize a global member
+        // 初始化全局成员
         $.globalMember = true;
     }
 
@@ -66,13 +66,13 @@ class MyApp extends Application.AppBase {
 
 }
 
-// Your service delegate has to be marked as background
-// so it can handle your service callbacks
+// 服务委托必须标记为后台运行，
+// 这样才能处理服务回调
 (:background)
 class MyServiceDelegate extends System.ServiceDelegate {
 
     public function onTemporalEvent() as Void {
-        // Do fun stuff here
+        // 在此执行任务
     }
 
 }
