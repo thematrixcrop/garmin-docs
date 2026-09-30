@@ -2016,10 +2016,10 @@ using Toybox.Communications;
    // 设置响应回调函数
    function onReceive(responseCode, data) {
        if (responseCode == 200) {
-            System.println("Request Successful");                   // 打印成功信息
+           System.println("Request Successful");                   // 打印成功信息
        }
        else {
-            System.println("Response: " + responseCode);            // 打印响应代码
+           System.println("Response: " + responseCode);            // 打印响应代码
        };
 
    };
