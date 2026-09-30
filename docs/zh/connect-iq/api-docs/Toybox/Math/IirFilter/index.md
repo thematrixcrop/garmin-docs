@@ -14,7 +14,7 @@ Toybox.Math.Filter
 - [Toybox.Math.IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -84,7 +84,7 @@ API 级别 2.3.0
 
 ### **initialize(dictionary as { :coefficients\_a as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :coefficients\_b as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :gain as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) })**
 
-Constructor
+构造函数
 
 参数：
 

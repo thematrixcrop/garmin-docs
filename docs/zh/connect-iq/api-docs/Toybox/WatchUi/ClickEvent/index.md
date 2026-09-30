@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

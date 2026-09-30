@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

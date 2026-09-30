@@ -14,7 +14,7 @@ Toybox.Communications.Message
 - [Toybox.Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -201,7 +201,7 @@ API 级别 1.4.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

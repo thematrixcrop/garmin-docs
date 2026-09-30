@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.StorageFullException](/connect-iq/api-docs/Toybox/Lang/StorageFullException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

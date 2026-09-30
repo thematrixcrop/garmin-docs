@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Application.WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

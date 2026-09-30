@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -200,7 +200,7 @@ API 级别 3.4.2
 
 ### **initialize(options as [ActionMenuItem.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/#Options-named_type), identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

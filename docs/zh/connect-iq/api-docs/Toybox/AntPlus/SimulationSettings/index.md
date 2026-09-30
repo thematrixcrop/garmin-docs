@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

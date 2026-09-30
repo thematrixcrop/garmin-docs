@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -164,7 +164,7 @@ API 级别 3.0.0
 
 ### **initialize(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))**
 
-Constructor
+构造函数
 
 参数：
 

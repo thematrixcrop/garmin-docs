@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

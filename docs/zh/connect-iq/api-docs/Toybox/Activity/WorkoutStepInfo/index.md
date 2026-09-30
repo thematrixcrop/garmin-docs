@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

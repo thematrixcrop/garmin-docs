@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -78,7 +78,7 @@ API 级别 4.2.0
 
 ### **initialize(id as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module))**
 
-Constructor
+构造函数
 
 参数：
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.CommonData](/connect-iq/api-docs/Toybox/AntPlus/CommonData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

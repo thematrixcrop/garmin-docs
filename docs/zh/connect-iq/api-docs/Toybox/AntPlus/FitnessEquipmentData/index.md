@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

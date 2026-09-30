@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Sensor.HeartRateData](/connect-iq/api-docs/Toybox/Sensor/HeartRateData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

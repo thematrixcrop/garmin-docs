@@ -14,7 +14,7 @@ Toybox.WatchUi.View
 - [Toybox.WatchUi.DataField](/connect-iq/api-docs/Toybox/WatchUi/DataField/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -742,7 +742,7 @@ API 级别 1.0.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

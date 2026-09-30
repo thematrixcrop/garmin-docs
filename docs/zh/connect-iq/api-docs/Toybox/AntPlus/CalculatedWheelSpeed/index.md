@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.AntPlus.AntPlusNotAllowedException](/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -35,7 +35,7 @@ API 级别 3.1.0
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
-Constructor
+构造函数
 
 起始版本：
 

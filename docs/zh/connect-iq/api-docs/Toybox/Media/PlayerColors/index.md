@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

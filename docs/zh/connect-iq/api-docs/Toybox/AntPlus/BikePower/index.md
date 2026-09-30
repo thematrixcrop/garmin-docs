@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.BikePower](/connect-iq/api-docs/Toybox/AntPlus/BikePower/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -289,7 +289,7 @@ API 级别 2.2.0
 
 ### **initialize(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

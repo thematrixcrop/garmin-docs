@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

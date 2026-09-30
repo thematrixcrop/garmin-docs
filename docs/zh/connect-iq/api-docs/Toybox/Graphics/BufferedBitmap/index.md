@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -156,7 +156,7 @@ API 级别 4.0.0
 
 在 ConnectIQ 4.0.0 之后使用 [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function)。
 
-Constructor
+构造函数
 
 参数：
 

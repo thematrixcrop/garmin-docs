@@ -14,7 +14,7 @@ Toybox.Graphics.ResourceReference
 - [Toybox.Graphics.BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

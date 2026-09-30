@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.SensorLogging.SensorLogger](/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -83,7 +83,7 @@ API 级别 3.3.0
 
 ### **initialize(options as { :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })**
 
-Constructor
+构造函数
 
 注意：
 

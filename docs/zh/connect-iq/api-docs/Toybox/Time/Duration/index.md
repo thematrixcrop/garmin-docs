@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -214,7 +214,7 @@ API 级别 1.0.0
 
 ### **initialize(value as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Constructor
+构造函数
 
 参数：
 

@@ -16,7 +16,7 @@ Toybox.WatchUi.Menu2
 - [Toybox.WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -302,7 +302,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)**
 
-Constructor
+构造函数
 
 注意：
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

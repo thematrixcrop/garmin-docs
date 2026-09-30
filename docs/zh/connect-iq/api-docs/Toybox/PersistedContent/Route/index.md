@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

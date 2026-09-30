@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

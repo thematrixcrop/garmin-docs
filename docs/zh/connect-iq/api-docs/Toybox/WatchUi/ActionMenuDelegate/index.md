@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

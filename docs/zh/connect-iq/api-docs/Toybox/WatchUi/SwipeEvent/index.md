@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

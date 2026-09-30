@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

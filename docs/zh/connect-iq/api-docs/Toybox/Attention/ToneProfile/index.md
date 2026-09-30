@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Attention.ToneProfile](/connect-iq/api-docs/Toybox/Attention/ToneProfile/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -217,7 +217,7 @@ API 级别 3.1.0
 
 ### **initialize(aFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), aDuration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))**
 
-Constructor
+构造函数
 
 参数：
 

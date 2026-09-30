@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

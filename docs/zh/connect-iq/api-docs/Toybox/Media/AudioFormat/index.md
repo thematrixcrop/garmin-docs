@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.AudioFormat](/connect-iq/api-docs/Toybox/Media/AudioFormat/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

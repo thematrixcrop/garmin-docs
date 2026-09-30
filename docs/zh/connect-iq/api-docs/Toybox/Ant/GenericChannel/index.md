@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Ant.GenericChannel](/connect-iq/api-docs/Toybox/Ant/GenericChannel/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -479,7 +479,7 @@ API 级别 1.0.0
 
 ### **initialize(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))**
 
-Constructor
+构造函数
 
 参数：
 

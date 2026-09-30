@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

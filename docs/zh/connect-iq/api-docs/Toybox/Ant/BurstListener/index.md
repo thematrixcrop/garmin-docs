@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

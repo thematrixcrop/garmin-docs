@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

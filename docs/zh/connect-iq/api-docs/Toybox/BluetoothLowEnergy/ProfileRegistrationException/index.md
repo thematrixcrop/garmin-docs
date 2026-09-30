@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.BluetoothLowEnergy.ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

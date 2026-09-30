@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

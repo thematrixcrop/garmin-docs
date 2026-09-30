@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

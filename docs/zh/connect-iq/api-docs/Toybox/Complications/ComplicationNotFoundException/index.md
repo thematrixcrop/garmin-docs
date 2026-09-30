@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -40,7 +40,7 @@ API 级别 4.2.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

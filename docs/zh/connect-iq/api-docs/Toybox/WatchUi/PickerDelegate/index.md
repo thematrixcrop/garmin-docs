@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

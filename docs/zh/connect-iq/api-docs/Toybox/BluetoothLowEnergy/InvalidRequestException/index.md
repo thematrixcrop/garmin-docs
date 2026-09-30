@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

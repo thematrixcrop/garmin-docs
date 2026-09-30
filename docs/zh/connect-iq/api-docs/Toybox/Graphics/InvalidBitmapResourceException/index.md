@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Graphics.InvalidBitmapResourceException](/connect-iq/api-docs/Toybox/Graphics/InvalidBitmapResourceException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -40,7 +40,7 @@ API 级别 2.3.0
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
-Constructor
+构造函数
 
 参数：
 

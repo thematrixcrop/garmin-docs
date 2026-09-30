@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

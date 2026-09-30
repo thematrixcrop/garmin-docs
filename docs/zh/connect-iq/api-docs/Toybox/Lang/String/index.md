@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Application.WatchFaceConfig.ComplicationRef](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

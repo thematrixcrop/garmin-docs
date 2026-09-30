@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

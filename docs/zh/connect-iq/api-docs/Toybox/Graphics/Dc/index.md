@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

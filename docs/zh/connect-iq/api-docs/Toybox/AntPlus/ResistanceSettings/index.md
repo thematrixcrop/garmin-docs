@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

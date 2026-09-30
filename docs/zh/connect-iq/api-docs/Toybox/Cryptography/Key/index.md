@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

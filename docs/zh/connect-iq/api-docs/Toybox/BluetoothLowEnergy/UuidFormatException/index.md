@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.BluetoothLowEnergy.UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

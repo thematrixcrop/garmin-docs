@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

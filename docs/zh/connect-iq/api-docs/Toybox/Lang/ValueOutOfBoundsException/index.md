@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

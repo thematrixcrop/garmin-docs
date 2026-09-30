@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.TransparentProgressBar](/connect-iq/api-docs/Toybox/WatchUi/TransparentProgressBar/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -162,7 +162,7 @@ API 级别 3.0.3
 
 ### **initialize(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

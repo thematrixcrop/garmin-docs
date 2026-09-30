@@ -14,7 +14,7 @@ Toybox.Authentication.Message
 - [Toybox.Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -62,7 +62,7 @@ API 级别 3.3.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

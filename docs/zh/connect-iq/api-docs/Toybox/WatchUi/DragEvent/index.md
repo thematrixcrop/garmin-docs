@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

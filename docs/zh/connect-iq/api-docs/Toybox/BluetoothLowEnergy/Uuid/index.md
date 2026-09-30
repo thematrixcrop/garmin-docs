@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

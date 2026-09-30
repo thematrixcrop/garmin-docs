@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -79,7 +79,7 @@ API 级别 5.1.0
 
 ### **initialize(options as { :drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :boundingBox as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) })**
 
-Constructor
+构造函数
 
 参数：
 

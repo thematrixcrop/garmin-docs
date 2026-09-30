@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

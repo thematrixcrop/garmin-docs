@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

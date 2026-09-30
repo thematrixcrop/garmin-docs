@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.NumberPicker](/connect-iq/api-docs/Toybox/WatchUi/NumberPicker/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -144,7 +144,7 @@ API 级别 1.0.0
 
 ### **initialize(mode as [WatchUi.NumberPickerMode](/connect-iq/api-docs/Toybox/WatchUi/#NumberPickerMode-module), initialValue as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))**
 
-Constructor
+构造函数
 
 参数：
 

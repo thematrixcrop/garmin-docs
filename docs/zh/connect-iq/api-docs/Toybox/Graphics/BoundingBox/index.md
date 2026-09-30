@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

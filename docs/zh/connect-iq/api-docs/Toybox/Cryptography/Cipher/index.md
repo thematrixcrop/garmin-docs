@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -273,7 +273,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :mode as [Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), :iv as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })**
 
-Constructor
+构造函数
 
 参数：
 

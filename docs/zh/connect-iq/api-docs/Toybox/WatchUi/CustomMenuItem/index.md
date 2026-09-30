@@ -14,7 +14,7 @@ Toybox.WatchUi.MenuItem
 - [Toybox.WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -302,7 +302,7 @@ API 级别 5.0.1
 
 ### **initialize(identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, options as { :alignment as [MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module), :drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :dividerIcon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) })**
 
-Constructor
+构造函数
 
 注意：
 

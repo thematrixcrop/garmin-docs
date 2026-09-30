@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.SyncDelegate](/connect-iq/api-docs/Toybox/Media/SyncDelegate/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

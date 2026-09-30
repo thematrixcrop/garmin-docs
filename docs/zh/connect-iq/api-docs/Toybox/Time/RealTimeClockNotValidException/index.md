@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

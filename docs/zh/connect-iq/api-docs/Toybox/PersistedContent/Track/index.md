@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

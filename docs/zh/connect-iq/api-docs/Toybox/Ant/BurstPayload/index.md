@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -87,7 +87,7 @@ API 级别 2.2.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

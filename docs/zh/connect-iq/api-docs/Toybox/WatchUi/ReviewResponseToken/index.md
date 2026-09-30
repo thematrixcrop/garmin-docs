@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

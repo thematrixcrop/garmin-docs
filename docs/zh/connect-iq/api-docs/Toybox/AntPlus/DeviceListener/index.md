@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

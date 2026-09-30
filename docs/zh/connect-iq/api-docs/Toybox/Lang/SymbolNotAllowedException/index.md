@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

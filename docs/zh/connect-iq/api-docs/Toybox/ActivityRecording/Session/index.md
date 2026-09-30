@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

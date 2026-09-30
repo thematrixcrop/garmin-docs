@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -303,7 +303,7 @@ API 级别 2.3.0
 
 ### **initialize(options as { :encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type), :userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type), :decimationRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })**
 
-Constructor
+构造函数
 
 参数：
 

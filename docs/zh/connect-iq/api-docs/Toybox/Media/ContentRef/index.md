@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -71,7 +71,7 @@ API 级别 3.0.0
 
 ### **initialize(id as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), type as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module))**
 
-Constructor
+构造函数
 
 参数：
 

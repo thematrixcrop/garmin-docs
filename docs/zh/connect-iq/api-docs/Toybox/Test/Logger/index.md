@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Test.Logger](/connect-iq/api-docs/Toybox/Test/Logger/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

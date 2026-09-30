@@ -14,7 +14,7 @@ Toybox.Graphics.ResourceReference
 - [Toybox.Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.BikeSpeed](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeed/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -224,7 +224,7 @@ API 级别 3.0.0
 
 ### **initialize(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

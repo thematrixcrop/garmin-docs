@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

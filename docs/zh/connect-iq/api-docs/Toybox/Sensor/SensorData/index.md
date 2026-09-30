@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

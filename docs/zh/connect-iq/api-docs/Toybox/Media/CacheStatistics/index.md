@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

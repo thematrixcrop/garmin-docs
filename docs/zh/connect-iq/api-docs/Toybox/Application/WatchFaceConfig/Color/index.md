@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Application.WatchFaceConfig.Color](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

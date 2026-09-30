@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.CipherBasedMessageAuthenticationCode](/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -222,7 +222,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })**
 
-Constructor
+构造函数
 
 参数：
 

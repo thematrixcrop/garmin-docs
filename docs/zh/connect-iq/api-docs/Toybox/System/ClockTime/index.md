@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

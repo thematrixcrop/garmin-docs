@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

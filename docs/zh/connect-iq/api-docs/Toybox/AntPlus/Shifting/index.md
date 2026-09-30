@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.Shifting](/connect-iq/api-docs/Toybox/AntPlus/Shifting/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -156,7 +156,7 @@ API 级别 3.1.0
 
 ### **initialize(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

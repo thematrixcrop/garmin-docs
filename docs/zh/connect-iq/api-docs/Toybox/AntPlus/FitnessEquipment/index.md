@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.FitnessEquipment](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipment/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -216,7 +216,7 @@ API 级别 2.4.0
 
 ### **initialize(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

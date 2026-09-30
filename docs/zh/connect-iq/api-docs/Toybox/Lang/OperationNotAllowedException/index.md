@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

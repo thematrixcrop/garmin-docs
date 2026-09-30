@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -319,7 +319,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })**
 
-Constructor
+构造函数
 
 参数：
 

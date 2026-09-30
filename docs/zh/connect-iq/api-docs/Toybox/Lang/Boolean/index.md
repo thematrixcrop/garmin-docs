@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

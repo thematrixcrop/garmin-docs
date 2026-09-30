@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

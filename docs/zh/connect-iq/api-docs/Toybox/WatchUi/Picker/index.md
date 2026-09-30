@@ -14,7 +14,7 @@ Toybox.WatchUi.View
 - [Toybox.WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -267,7 +267,7 @@ API 级别 1.2.0
 
 ### **initialize(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))**
 
-Constructor
+构造函数
 
 参数：
 

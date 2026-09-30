@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

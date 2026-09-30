@@ -14,7 +14,7 @@ Toybox.WatchUi.Layer
 - [Toybox.WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -219,7 +219,7 @@ API 级别 3.1.0
 
 ### **initialize(rez as [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), options as { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

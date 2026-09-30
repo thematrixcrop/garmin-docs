@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

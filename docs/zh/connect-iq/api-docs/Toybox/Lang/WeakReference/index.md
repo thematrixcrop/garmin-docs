@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

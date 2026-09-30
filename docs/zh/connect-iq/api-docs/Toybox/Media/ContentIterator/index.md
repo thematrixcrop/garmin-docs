@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

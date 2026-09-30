@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -75,7 +75,7 @@ API 级别 3.0.3
 
 ### **initialize(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

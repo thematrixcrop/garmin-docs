@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Weather.CurrentConditions](/connect-iq/api-docs/Toybox/Weather/CurrentConditions/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

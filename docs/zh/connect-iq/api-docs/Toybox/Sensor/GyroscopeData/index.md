@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Sensor.GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

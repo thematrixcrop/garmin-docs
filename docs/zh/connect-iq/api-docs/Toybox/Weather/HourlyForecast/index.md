@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Weather.HourlyForecast](/connect-iq/api-docs/Toybox/Weather/HourlyForecast/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

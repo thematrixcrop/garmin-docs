@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -150,7 +150,7 @@ API 级别 3.1.0
 
 ### **initialize(options as [Layer.Options](/connect-iq/api-docs/Toybox/WatchUi/Layer/#Options-named_type) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Time.Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

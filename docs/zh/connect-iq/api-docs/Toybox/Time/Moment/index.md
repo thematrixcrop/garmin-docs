@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -238,7 +238,7 @@ API 级别 1.0.0
 
 ### **initialize(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-Constructor
+构造函数
 
 参数：
 

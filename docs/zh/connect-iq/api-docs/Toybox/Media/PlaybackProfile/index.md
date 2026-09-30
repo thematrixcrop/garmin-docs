@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

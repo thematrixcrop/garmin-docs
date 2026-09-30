@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.KeyPair](/connect-iq/api-docs/Toybox/Cryptography/KeyPair/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -225,7 +225,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module), :privateKey as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })**
 
-Constructor
+构造函数
 
 KeyPair 可以通过将已初始化的 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 对象中的私钥 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 传入此类 initialize 方法的 `:privateKey` 选项进行初始化。如果未提供私钥，则会使用必需的 `:algorithm` 选项同时生成私钥和公钥。
 

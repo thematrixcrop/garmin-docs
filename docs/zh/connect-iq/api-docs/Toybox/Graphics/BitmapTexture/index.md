@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -37,7 +37,7 @@ API 级别 4.0.0
 
 ### **initialize(options as { :bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :offsetX as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :offsetY as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) })**
 
-Constructor
+构造函数
 
 参数：
 

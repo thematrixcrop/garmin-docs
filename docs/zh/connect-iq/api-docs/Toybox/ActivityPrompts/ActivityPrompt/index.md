@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.ActivityPrompts.ActivityPrompt](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

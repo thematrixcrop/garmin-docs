@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -350,7 +350,7 @@ API 级别 3.0.0
 
 ### **initialize(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subLabel as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**, identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, options as { :alignment as [MenuItem.Alignment](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) } or **Null**)**
 
-Constructor
+构造函数
 
 注意：
 

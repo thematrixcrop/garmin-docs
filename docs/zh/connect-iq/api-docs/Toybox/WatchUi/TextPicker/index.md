@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -260,7 +260,7 @@ API 级别 1.1.0
 
 ### **initialize(initialText as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
-Constructor
+构造函数
 
 参数：
 

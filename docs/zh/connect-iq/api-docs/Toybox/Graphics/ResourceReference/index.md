@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

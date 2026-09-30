@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

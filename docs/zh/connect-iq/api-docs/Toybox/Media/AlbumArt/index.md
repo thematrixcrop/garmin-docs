@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.AlbumArt](/connect-iq/api-docs/Toybox/Media/AlbumArt/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

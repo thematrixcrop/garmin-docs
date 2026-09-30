@@ -14,7 +14,7 @@ Toybox.Graphics.ResourceReference
 - [Toybox.Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

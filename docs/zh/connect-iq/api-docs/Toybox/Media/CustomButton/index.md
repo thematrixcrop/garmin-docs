@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

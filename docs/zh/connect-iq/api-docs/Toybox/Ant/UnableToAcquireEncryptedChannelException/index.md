@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Ant.UnableToAcquireEncryptedChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireEncryptedChannelException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -40,7 +40,7 @@ API 级别 2.3.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

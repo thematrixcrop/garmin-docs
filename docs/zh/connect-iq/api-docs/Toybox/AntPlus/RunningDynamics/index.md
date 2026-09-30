@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.RunningDynamics](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamics/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -172,7 +172,7 @@ API 级别 2.4.0
 
 ### **initialize(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

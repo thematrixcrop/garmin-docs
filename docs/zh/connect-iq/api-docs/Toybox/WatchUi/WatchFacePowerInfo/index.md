@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

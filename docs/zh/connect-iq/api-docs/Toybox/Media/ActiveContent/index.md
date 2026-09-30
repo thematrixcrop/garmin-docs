@@ -14,7 +14,7 @@ Toybox.Media.Content
 - [Toybox.Media.ActiveContent](/connect-iq/api-docs/Toybox/Media/ActiveContent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -51,7 +51,7 @@ API 级别 3.0.0
 
 ### **initialize(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/), metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/), playbackStartPos as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Media.PlaybackPosition](/connect-iq/api-docs/Toybox/Media/#PlaybackPosition-module))**
 
-Constructor
+构造函数
 
 参数：
 

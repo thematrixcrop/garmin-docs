@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

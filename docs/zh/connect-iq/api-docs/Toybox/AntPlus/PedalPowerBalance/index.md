@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

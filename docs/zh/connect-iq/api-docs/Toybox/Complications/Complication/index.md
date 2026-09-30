@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

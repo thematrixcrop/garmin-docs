@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -14,7 +14,7 @@ Toybox.AntPlus.Device
 - [Toybox.AntPlus.BikeRadar](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

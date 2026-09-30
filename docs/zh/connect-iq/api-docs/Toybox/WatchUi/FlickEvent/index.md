@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

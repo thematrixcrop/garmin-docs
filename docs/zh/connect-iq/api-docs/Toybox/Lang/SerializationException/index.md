@@ -14,7 +14,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -16,7 +16,7 @@ Toybox.WatchUi.Selectable
 - [Toybox.WatchUi.Button](/connect-iq/api-docs/Toybox/WatchUi/Button/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

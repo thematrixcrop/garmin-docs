@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -237,7 +237,7 @@ API 级别 1.0.0
 
 ### **initialize(dutyCycleVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), lengthVal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))**
 
-Constructor
+构造函数
 
 参数：
 

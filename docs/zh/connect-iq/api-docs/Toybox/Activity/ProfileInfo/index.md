@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

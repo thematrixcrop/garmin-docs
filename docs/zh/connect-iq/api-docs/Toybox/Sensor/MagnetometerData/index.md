@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Sensor.MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

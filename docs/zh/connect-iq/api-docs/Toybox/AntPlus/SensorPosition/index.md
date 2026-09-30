@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

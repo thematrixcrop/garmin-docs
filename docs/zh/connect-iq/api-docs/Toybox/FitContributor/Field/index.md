@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

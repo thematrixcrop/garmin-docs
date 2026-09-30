@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.Hash](/connect-iq/api-docs/Toybox/Cryptography/Hash/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -224,7 +224,7 @@ API 级别 3.0.0
 
 ### **initialize(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module) })**
 
-Constructor
+构造函数
 
 参数：
 

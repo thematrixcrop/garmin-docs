@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -95,7 +95,7 @@ API 级别 2.2.0
 
 ### **initialize(aURI as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), aArgs as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)**
 
-Constructor
+构造函数
 
 参数：
 

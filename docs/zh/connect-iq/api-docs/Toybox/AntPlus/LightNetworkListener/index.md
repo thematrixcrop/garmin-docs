@@ -14,7 +14,7 @@ Toybox.AntPlus.DeviceListener
 - [Toybox.AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -226,7 +226,7 @@ API 级别 2.2.0
 
 ### **initialize()**
 
-Constructor
+构造函数
 
 起始版本：
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.Authentication.Message](/connect-iq/api-docs/Toybox/Authentication/Message/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent.Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

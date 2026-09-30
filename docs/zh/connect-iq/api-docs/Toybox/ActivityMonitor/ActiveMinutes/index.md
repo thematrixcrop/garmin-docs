@@ -12,7 +12,7 @@ Toybox.Lang.Object
 - [Toybox.ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 

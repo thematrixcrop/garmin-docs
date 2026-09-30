@@ -14,7 +14,7 @@ Toybox.Math.Filter
 - [Toybox.Math.FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/)
 
 
-[show all](#)
+[显示全部](#)
 
 ## 概述
 
@@ -83,7 +83,7 @@ API 级别 2.3.0
 
 ### **initialize(dictionary as { :coefficients as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :gain as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) })**
 
-Constructor
+构造函数
 
 参数：
 
