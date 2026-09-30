@@ -3,7 +3,7 @@ title: "Monkey Style"
 ---
 # Monkey 风格
 
-Monkey style 是一种用于管理样式元素的专业领域属性语言。 它大量借鉴了 CSS，但已针对 Monkey C 进行了定制。 Monkey style 允许开发者创建可以在 Garmin 产品之间适应的样式属性常量。
+Monkey Style 是一种用于管理样式元素的领域专用属性语言。它大量借鉴了 CSS，但已针对 Monkey C 进行了定制。Monkey Style 允许开发者创建可在 Garmin 产品之间适配的样式属性常量。
 
 ## 个性类
 
@@ -17,7 +17,7 @@ personality_class {
 
 人格类和属性必须以 legal子C的法定名称命名,并且可以具有以下值类型:
 
-|类型| Example |
+| 类型 | 示例 |
 | --- | --- |
 | Number | 500 |
 | Percent | 80% |
@@ -66,7 +66,7 @@ dc.setFont(Rez.Styles.layout1__time.font);
 
 ## 配置个性化设置
 
-您可以在丛林中配置一系列 monkey 样式表。 This allows you to have specific style sheets for each product while keeping the content universal across products. You can configure the personality with the `personality` selector:
+您可以在 Jungle 中配置一系列 Monkey Style 样式表。这样可以为每个产品指定样式表，同时让内容在不同产品之间保持通用。您可以使用 `personality` 选择器配置 personality：
 
 ```properties
 fenix7system6preview.personality=$(fenix7system6preview.personality);resources-fenix2022
