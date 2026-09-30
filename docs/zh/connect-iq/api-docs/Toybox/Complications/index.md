@@ -823,7 +823,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if subscribed successfully, `false` if given complication could not be subscribed to
+    如果订阅成功，则为 `true`；如果无法订阅给定的复杂功能，则为 `false`
 
 
 另见：

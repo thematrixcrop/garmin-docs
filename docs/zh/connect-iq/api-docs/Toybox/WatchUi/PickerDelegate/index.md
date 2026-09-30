@@ -25,7 +25,7 @@ PickerDelegate responds to a Picker confirm or cancel.
 
 注意：
 
-[popView()](/connect-iq/api-docs/Toybox/WatchUi/#popView-instance_function) is not automatically called once a Picker selection is made
+做出 Picker 选择后，不会自动调用 [popView()](/connect-iq/api-docs/Toybox/WatchUi/#popView-instance_function)
 
 注意：
 

@@ -180,7 +180,7 @@ Returns:
 
 - A [Content](/connect-iq/api-docs/Toybox/Media/Content/) object representing the next track.
 
-- `null` if no tracks remain.
+- 没有剩余轨迹时为 `null`。
 
 - 如果发生错误，则为错误对象。它可以是任何继承自 [Object](/connect-iq/api-docs/Toybox/Lang/Object/) 的对象，但必须实现 toString()。
 

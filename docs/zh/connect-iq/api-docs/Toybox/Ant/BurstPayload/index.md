@@ -57,7 +57,7 @@ API 级别 2.2.0
 
 注意：
 
-[ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) is supported with ConnectIQ 4.2.0 and later.
+[ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 支持 ConnectIQ 4.2.0 及更高版本。
 
 Parameters:
 

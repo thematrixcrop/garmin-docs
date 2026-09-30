@@ -412,7 +412,7 @@ Returns:
 
     The index of the [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) assigned the supplied identifier
 
-- \-1 if not found
+- 未找到时为 \-1
 
 
 
@@ -543,7 +543,7 @@ For [IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) and [Check
 
 For [ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/), toggle icon will be rendered on the left side of the divider, if item is [MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_LEFT](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#Alignment-module) aligned only.
 
-[Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) will be used if not set for devices that support divider, or `null` is passed.
+[Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 对于支持分隔符的设备，如果未设置或传入 `null`，则使用该值。
 
 :::details 支持的设备
 

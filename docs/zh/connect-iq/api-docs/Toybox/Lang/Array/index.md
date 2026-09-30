@@ -154,7 +154,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if instances of the object are found, otherwise `false`
+    如果找到对象的实例，则为 `true`，否则为 `false`
 
 
 Since:
@@ -178,7 +178,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if instances of the Object are found, otherwise `false`
+    如果找到 Object 的实例，则为 `true`，否则为 `false`
 
 
 Since:

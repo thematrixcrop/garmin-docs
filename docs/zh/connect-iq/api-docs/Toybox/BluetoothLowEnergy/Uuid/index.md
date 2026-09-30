@@ -58,7 +58,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the parameter provided is an equivalent Uuid or equivalent UUID String, `false` otherwise.
+    如果提供的参数是等效的 Uuid 或等效的 UUID String，则为 `true`，否则为 `false`。
 
 
 Since:

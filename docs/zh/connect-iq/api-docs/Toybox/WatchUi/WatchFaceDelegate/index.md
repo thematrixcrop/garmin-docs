@@ -293,7 +293,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the event was handled, `false` otherwise.
+    如果事件已处理，则为 `true`，否则为 `false`。
 
 
 另见：
@@ -327,7 +327,7 @@ Parameters:
 
 - :committed — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        `true` if user has committed the change, `false` otherwise.
+        如果用户已提交更改，则为 `true`，否则为 `false`。
 
 
 :::details 支持的设备

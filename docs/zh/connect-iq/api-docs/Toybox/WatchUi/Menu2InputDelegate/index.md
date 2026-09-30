@@ -369,7 +369,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if wrap is allowed, `false` otherwise
+    如果允许换行，则为 `true`，否则为 `false`
 
 
 Since:

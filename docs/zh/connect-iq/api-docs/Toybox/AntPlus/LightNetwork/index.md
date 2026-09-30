@@ -379,7 +379,7 @@ API 级别 2.2.0
 - If signal light is disengaged, engage it.
 
 
-\*This will automatically disengage the opposite signal if it is currently engaged.
+\*如果相反的信号当前处于启用状态，则此操作会自动将其停用。
 
 Parameters:
 
@@ -387,7 +387,7 @@ Parameters:
 
 - `true` to control left signal
 
-- `false` to control right signal
+- 为控制右侧信号时为 `false`
 
 
 

@@ -128,7 +128,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the key is in the Dictionary, otherwise `false`
+    如果键位于 Dictionary 中，则为 `true`，否则为 `false`
 
 
 Since:
@@ -143,7 +143,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the Dictionary is empty, otherwise `false`
+    如果 Dictionary 为空，则为 `true`，否则为 `false`
 
 
 Since:

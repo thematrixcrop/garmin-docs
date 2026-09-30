@@ -96,7 +96,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    \-200% - +200% range, invalid 0xFFFF
+    范围为 \-200% - +200%，无效值为 0xFFFF
 
 
 ### var surfaceResistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
@@ -141,4 +141,4 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    \-127 - +127 km/hr range, invalid = 0xFF
+    范围为 \-127 - +127 km/hr，无效值为 0xFF

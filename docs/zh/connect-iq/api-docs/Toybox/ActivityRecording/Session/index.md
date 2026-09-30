@@ -80,7 +80,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a lap was successfully created, otherwise `false`
+    如果成功创建了圈，则为 `true`，否则为 `false`
 
 
 Since:
@@ -182,7 +182,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the Session was successfully discarded, otherwise `false`
+    如果 Session 已成功丢弃，则为 `true`，否则为 `false`
 
 
 Since:
@@ -197,7 +197,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if recording is active, otherwise `false`
+    如果录制处于活动状态，则为 `true`，否则为 `false`
 
 
 Since:
@@ -212,7 +212,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the session was successfully saved, otherwise `false`
+    如果会话已成功保存，则为 `true`，否则为 `false`
 
 
 Since:
@@ -238,17 +238,17 @@ Parameters:
 - eventData: A [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) containing data relevant to the timer event or `null`. If eventType is TIMER\_EVENT\_LAP, the following are provided if available:
 
 
-- `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters)
+- `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米）
 
-- `:averageSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
+- `:averageSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米/秒）
 
-- `:maxSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/) (meters/second)
+- `:maxSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米/秒）
 
-- `:startTime` [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) (Moment)
+- `:startTime` [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)（Moment）
 
-- `:elapsedTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
+- `:elapsedTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/)（毫秒）
 
-- `:timerTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/) (milliseconds)
+- `:timerTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/)（毫秒）
 
 
 
@@ -396,7 +396,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if recording was successfully started, otherwise `false`
+    如果成功开始录制，则为 `true`，否则为 `false`
 
 
 Since:
@@ -411,7 +411,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if recording was successfully stopped, otherwise `false`
+    如果成功停止录制，则为 `true`，否则为 `false`
 
 
 Since:

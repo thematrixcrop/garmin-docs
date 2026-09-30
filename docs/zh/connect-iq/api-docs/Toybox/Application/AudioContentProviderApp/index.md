@@ -301,7 +301,7 @@ API 级别 3.0.0
 
 Returns:
 
-- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) The icon for the audio content provider
+- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) 音频内容提供程序的图标
 
 
 Since:

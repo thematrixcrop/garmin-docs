@@ -287,6 +287,6 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-- `true` if pedal smoothness is separate
+- 如果踏板平顺度是独立的，则为 `true`
 
-- `false` if combined
+- 合并时为 `false`

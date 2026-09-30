@@ -189,6 +189,6 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-- `true` if right pedal contribution
+- 如果是右侧踏板贡献，则为 `true`
 
-- `false` if unknown pedal contribution
+- 踏板贡献未知时为 `false`

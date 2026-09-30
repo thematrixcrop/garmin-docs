@@ -500,7 +500,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the request to change the analog hands was successful, `false` otherwise.
+    如果更改模拟指针的请求成功，则为 `true`，否则为 `false`。
 
 
 Since:

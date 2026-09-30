@@ -276,7 +276,7 @@ Parameters:
 
 - `true` to get the samples newest first
 
-- `false` to get the samples oldest first
+- 按从旧到新的顺序获取样本时为 `false`
 
 
 

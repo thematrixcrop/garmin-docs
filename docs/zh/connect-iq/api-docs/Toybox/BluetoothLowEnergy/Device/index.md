@@ -190,7 +190,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the device is bonded `false` if the device is not bonded
+    如果设备已绑定，则为 `true`；如果设备未绑定，则为 `false`
 
 
 Since:
@@ -205,7 +205,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the sensor is connected `false` if sensor is disconnected
+    如果传感器已连接，则为 `true`；如果传感器已断开连接，则为 `false`
 
 
 Since:

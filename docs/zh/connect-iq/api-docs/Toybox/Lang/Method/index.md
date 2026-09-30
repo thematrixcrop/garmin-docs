@@ -87,7 +87,7 @@ API 级别 1.0.0
 
     方法构造函数。
 
-- [**invoke**](#invoke-instance_function)(parameters...) [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
+- [invoke](#invoke-instance_function)(参数...) [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
     调用方法。
 

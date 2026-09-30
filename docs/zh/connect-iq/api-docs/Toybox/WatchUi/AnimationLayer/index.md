@@ -280,7 +280,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if playback started, otherwise `false`
+    如果已开始播放，则为 `true`，否则为 `false`
 
 
 Since:

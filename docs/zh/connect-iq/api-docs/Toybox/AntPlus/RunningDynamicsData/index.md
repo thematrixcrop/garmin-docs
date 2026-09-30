@@ -157,7 +157,7 @@ API 级别 2.4.0
 
 - [**walkingFlag**](#walkingFlag-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-    `true` if walking, `false` if running.
+    步行时为 `true`，跑步时为 `false`。
 
 
 ## 实例属性详情
@@ -260,7 +260,7 @@ Returns:
 
 ### var walkingFlag as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
-`true` if walking, `false` if running
+步行时为 `true`，跑步时为 `false`
 
 Since:
 

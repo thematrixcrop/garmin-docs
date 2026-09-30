@@ -78,7 +78,7 @@ API 级别 3.3.0
 
 Throws:
 
-- [Toybox::Lang::InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/) Thrown if provided argument are out of range or are of the wrong type.
+- [Toybox::Lang::InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/) 如果提供的参数超出范围或类型错误，则抛出。
 
 
 ### **initialize(options as { :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })**

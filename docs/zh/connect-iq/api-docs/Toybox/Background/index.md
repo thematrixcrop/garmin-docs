@@ -578,7 +578,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForActivityCompletedEvent(), otherwise `false`
+    如果通过 registerForActivityCompletedEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -615,7 +615,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForGoalEvent(), otherwise `false`
+    如果通过 registerForGoalEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -672,7 +672,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForOAuthResponseEvent(), otherwise `false`
+    如果通过 registerForOAuthResponseEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -823,7 +823,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForPhoneAppMessageEvent(), otherwise `false`
+    如果通过 registerForPhoneAppMessageEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -838,7 +838,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForSleepEvent(), otherwise `false`
+    如果通过 registerForSleepEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -853,7 +853,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForStepsEvent(), otherwise `false`
+    如果通过 registerForStepsEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:
@@ -888,7 +888,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a background event is registered with registerForWakeEvent(), otherwise `false`
+    如果通过 registerForWakeEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
 Since:

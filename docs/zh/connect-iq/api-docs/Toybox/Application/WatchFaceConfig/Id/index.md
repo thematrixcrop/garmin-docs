@@ -77,7 +77,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the `other` parameter is a WatchFaceConfig.Id that is equal, otherwise `false`
+    如果 `other` 参数是相等的 WatchFaceConfig.Id，则为 `true`，否则为 `false`
 
 
 Since:

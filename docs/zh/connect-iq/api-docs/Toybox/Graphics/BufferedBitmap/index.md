@@ -72,7 +72,7 @@ API 级别 2.3.0
 
 - [**getPalette**](#getPalette-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>
 
-    `null` if this surface uses the system palette.
+    此表面使用系统调色板时为 `null`。
 
 - [**getWidth**](#getWidth-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -122,7 +122,7 @@ API 级别 4.0.0
 
 ### **getPalette()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>
 
-`null` if this surface uses the system palette
+此表面使用系统调色板时为 `null`
 
 Returns:
 
@@ -220,7 +220,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the object's memory has not been recycled since last usage.
+    如果自上次使用以来对象的内存尚未被回收，则为 `true`。
 
 
 Since:

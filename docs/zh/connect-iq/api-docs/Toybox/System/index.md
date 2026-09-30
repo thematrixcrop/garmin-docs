@@ -914,7 +914,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the app is installed, otherwise `false`
+    如果已安装应用，则为 `true`，否则为 `false`
 
 
 Since:

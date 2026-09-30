@@ -1191,7 +1191,7 @@ Parameters:
 
 - sensor —
 
-    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) The sensor object that needs additional configuration
+    [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 需要额外配置的传感器对象
 
 
 :::details 支持的设备

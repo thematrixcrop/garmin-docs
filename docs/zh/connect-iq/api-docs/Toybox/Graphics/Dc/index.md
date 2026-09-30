@@ -1306,7 +1306,7 @@ Parameters:
 
 - enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    `true` if AA is to be enabled, `false` otherwise.
+    如果要启用 AA，则为 `true`，否则为 `false`。
 
 
 :::details 支持的设备

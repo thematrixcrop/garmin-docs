@@ -205,7 +205,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this Duration is longer than the Duration supplied for comparison, otherwise `false`
+    如果此 Duration 长于提供用于比较的 Duration，则为 `true`，否则为 `false`
 
 
 Since:
@@ -275,7 +275,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this Duration is shorter than the Duration supplied for comparison, otherwise `false`
+    如果此 Duration 短于提供用于比较的 Duration，则为 `true`，否则为 `false`
 
 
 Since:

@@ -251,7 +251,7 @@ Parameters:
 
 - isSelected — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    `true` if the current item is the selected item, otherwise `false`
+    如果当前项目是选定项目，则为 `true`，否则为 `false`
 
 
 Returns:

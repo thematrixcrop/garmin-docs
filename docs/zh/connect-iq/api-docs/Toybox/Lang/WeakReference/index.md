@@ -69,7 +69,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if object is still alive, otherwise `false`
+    如果对象仍然存活，则为 `true`，否则为 `false`
 
 
 另见：

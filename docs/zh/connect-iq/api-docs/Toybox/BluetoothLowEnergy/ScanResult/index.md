@@ -88,7 +88,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if other is a scan result for the same device, otherwise `false`
+    如果 other 是同一设备的扫描结果，则为 `true`，否则为 `false`
 
 
 Since:
@@ -254,7 +254,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the parameter provided is the same as the address associated with this ScanResult, otherwise `false`
+    如果提供的参数与此 ScanResult 关联的地址相同，则为 `true`，否则为 `false`
 
 
 Since:

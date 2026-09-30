@@ -1639,9 +1639,9 @@ API 级别 2.3.0
 
 Throws:
 
-- [Toybox::Sensor::TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/) Thrown if more than one listener is tried to register for sensor data.
+- [Toybox::Sensor::TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/) 如果尝试为传感器数据注册多个侦听器，则抛出。
 
-- [Toybox::Lang::InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/) Thrown if any required options are excluded, if provided options are out of range, or are of the wrong type.
+- [Toybox::Lang::InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/) 如果排除了任何必需选项、提供的选项超出范围或类型错误，则抛出。
 
 
 ### **setEnabledSensors(sensors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)\>

@@ -224,7 +224,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this Moment is greater than the Moment supplied for comparison, otherwise `false`
+    如果此 Moment 大于提供用于比较的 Moment，则为 `true`，否则为 `false`
 
 
 另见：
@@ -312,7 +312,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this Moment is less than the Moment supplied for comparison, otherwise `false`
+    如果此 Moment 小于提供用于比较的 Moment，则为 `true`，否则为 `false`
 
 
 另见：

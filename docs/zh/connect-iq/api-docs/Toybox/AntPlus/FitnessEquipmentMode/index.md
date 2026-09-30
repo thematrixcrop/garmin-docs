@@ -89,7 +89,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if basic resistance is supported, `false` otherwise
+    如果支持基本阻力，则为 `true`，否则为 `false`
 
 
 ### var mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module) or **Null**
@@ -119,7 +119,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if simulation is supported, `false` otherwise
+    如果支持模拟，则为 `true`，否则为 `false`
 
 
 ### var targetPowerSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
@@ -134,4 +134,4 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if target power is supported, `false` otherwise
+    如果支持目标功率，则为 `true`，否则为 `false`

@@ -393,7 +393,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this LocalMoment is greater than the LocalMoment supplied for comparison, otherwise `false`
+    如果此 LocalMoment 大于提供用于比较的 LocalMoment，则为 `true`，否则为 `false`
 
 
 Since:
@@ -430,7 +430,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this LocalMoment is less than the LocalMoment supplied for comparison, otherwise `false`
+    如果此 LocalMoment 小于提供用于比较的 LocalMoment，则为 `true`，否则为 `false`
 
 
 Since:

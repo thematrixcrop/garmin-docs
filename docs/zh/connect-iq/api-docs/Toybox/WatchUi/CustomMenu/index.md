@@ -502,7 +502,7 @@ If set to [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/
 
 Set to `null` to disable divider which may also disable [MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module), [CustomMenuItem.draw](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#draw-instance_function) will be called with full width of menu item.
 
-[Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) will be used if not set for devices that support divider.
+[Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 对于支持分隔符的设备，如果未设置，则使用该值。
 
 :::details 支持的设备
 

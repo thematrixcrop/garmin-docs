@@ -314,7 +314,7 @@ function compute(info) {
 
 Returns:
 
-- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), null —
+- [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)、[Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)、[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)、null —
 
     The value to be displayed in the field or `null`
 

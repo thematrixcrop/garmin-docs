@@ -386,7 +386,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if this box includes the given point.
+    如果此框包含给定点，则为 `true`。
 
 
 Since:
@@ -430,7 +430,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if `self` describes a valid bounding box.
+    如果 `self` 描述的是有效的边界框，则为 `true`。
 
 
 Since:

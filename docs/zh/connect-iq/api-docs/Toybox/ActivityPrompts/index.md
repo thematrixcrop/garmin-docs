@@ -142,7 +142,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the app was registered succesfully, `false` otherwise
+    如果应用注册成功，则为 `true`，否则为 `false`
 
 
 Since:
@@ -164,7 +164,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the language is available and the data field is the current activity prompt output provider, `false` otherwise.
+    如果语言可用且数据字段是当前活动提示输出提供程序，则为 `true`，否则为 `false`。
 
 
 Since:

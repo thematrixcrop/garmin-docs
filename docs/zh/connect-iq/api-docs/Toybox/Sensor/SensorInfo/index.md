@@ -67,18 +67,18 @@ The Sensor-specific data
 
 A dictionary of sensor-specific attributes. Currently supported attributes include:
 
-- `:bleAddress` - The mac address of the BLE sensor (e.g., 01:02:03:04:05:06) as a [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), if available.
+- `:bleAddress` - BLE 传感器的 MAC 地址（例如 01:02:03:04:05:06），类型为 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)（如果可用）。
 
-- `:antSerialNumber` - The 20-bit ANT sensor serial number as a [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- `:antSerialNumber` - ANT 传感器的 20 位序列号，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-- `:bleScanResult` - The scanresult of a discovered BLE device as a [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/).
+- `:bleScanResult` - 已发现 BLE 设备的扫描结果，类型为 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)。
 
-- `:antMessage` - The ANT message of a discovered ANT device as a [Message](/connect-iq/api-docs/Toybox/Ant/Message/)
+- `:antMessage` - 已发现 ANT 设备的 ANT 消息，类型为 [Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
 注意：
 
-`:bleScanResult` and `:antMessage` are used for native sensor pairing process only.
+`:bleScanResult` 和 `:antMessage` 仅用于原生传感器配对过程。
 
 Since:
 

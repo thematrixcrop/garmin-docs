@@ -124,7 +124,7 @@ Returns:
 
     A list of known component identifiers
 
-- `null` if there are no known component identifiers
+- 没有已知组件标识符时为 `null`
 
 
 

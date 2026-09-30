@@ -190,7 +190,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if activity tracking is enabled on the device, otherwise `false`
+    如果设备已启用活动跟踪，则为 `true`，否则为 `false`
 
 
 ### var alarmCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -276,7 +276,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if enabled on the device, otherwise `false`
+    如果设备已启用，则为 `true`，否则为 `false`
 
 
 ### var elevationUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
@@ -454,7 +454,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the device is set to 24 hour mode, `false` if it is set to 12 hour mode
+    如果设备设置为 24 小时制，则为 `true`；如果设置为 12 小时制，则为 `false`
 
 
 ### var isEnhancedReadabilityModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -631,7 +631,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if glance mode is enabled, otherwise `false`
+    如果已启用速览模式，则为 `true`，否则为 `false`
 
 
 ### var isNightModeEnabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
@@ -676,7 +676,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the device has a touch screen and it is enabled in settings, otherwise `false`
+    如果设备具有触摸屏且已在设置中启用触摸屏，则为 `true`，否则为 `false`
 
 
 ### var monkeyVersion as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
@@ -765,7 +765,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if a mobile phone is connected to the device, otherwise `false`
+    如果移动电话已连接到设备，则为 `true`，否则为 `false`
 
 
 ### var phoneOperatingSystem as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
@@ -868,7 +868,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the screen type needs burn-in protection, `false` otherwise.
+    如果屏幕类型需要防烧屏保护，则为 `true`，否则为 `false`。
 
 
 ### var screenHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -971,7 +971,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if tones are enabled on the device, otherwise `false`
+    如果设备已启用提示音，则为 `true`，否则为 `false`
 
 
 ### var uniqueIdentifier as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
@@ -1014,7 +1014,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if vibration is enabled on the device, otherwise `false`
+    如果设备已启用振动，则为 `true`，否则为 `false`
 
 
 ### var weightUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)

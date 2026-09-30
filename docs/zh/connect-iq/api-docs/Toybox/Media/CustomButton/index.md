@@ -45,7 +45,7 @@ API 级别 3.0.3
 
 注意：
 
-[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) is only supported in CIQ 4.0.0 and later.
+[BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅支持 CIQ 4.0.0 及更高版本。
 
 Parameters:
 
@@ -55,7 +55,7 @@ Parameters:
 
 - highlighted — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    `true` if the button is highlighted, otherwise `false`
+    如果按钮已高亮显示，则为 `true`，否则为 `false`
 
 
 Returns:

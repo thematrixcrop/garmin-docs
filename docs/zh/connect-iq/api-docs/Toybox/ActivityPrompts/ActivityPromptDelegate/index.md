@@ -45,7 +45,7 @@ Parameters:
 
 - selectedHandler — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    `true` if the app is now the activity prompt handler, `false` otherwise
+    如果应用现在是活动提示处理程序，则为 `true`，否则为 `false`
 
 
 Since:

@@ -197,7 +197,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    `true` if the layer is visible otherwise `false`
+    如果图层可见，则为 `true`，否则为 `false`
 
 
 Since:
@@ -231,7 +231,7 @@ Parameters:
 
 - visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    `true` for visible (or to show), `false` for invisible (or to hide).
+    可见（或用于显示）时为 `true`，不可见（或用于隐藏）时为 `false`。
 
 
 Since:
