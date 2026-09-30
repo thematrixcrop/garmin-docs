@@ -231,7 +231,7 @@ Parameters:
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a callback which must accept two arguments.
+    对必须接受两个参数的回调的引用。
 
 - eventType: A TIMER\_EVENT\_\* enum that describes the event that occurred.
 

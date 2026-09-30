@@ -18,7 +18,7 @@ Toybox.Communications.Message
 
 ## 概述
 
-A PhoneAppMessage received by the callback registered in [registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
+由在 [registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function) 中注册的回调接收的 PhoneAppMessage
 
 Since:
 

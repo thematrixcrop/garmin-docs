@@ -386,7 +386,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A new ByteArray with elements in reversed order
+    一个元素顺序反转的新 ByteArray
 
 
 Since:
@@ -427,7 +427,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    A new ByteArray containing the elements from `startIndex` to `endIndex`
+    一个包含从 `startIndex` 到 `endIndex` 元素的新 ByteArray
 
 
 Since:

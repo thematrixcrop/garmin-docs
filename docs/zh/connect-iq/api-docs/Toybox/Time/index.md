@@ -234,7 +234,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A Moment representing the current moment in time.
+    表示当前时间点的 Moment。
 
 
 另见：
@@ -265,7 +265,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A Moment representing the the beginning of the current day.
+    表示当前日期开始时刻的 Moment。
 
 
 另见：

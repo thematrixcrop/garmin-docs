@@ -63,7 +63,7 @@ Returns:
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    A reference to the Selectable
+    对 Selectable 的引用
 
 
 Since:

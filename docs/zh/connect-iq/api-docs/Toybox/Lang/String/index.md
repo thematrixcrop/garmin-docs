@@ -322,7 +322,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    A Float representation of the String
+    String 的 Float 表示形式
 
 
 Since:
@@ -416,7 +416,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A new lowercase String
+    一个新的小写 String
 
 
 Since:
@@ -525,7 +525,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A new uppercase String
+    一个新的大写 String
 
 
 Since:

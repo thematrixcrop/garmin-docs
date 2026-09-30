@@ -233,7 +233,7 @@ Parameters:
 
 - palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    A palette for this bitmap. The number of colors must match the current palette. Each color in the image will be replaced with the colors specified in the new palette.
+    此位图的调色板。颜色数量必须与当前调色板匹配。图像中的每种颜色都会被新调色板中指定的颜色替换。
 
 
 Since:

@@ -94,7 +94,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A hash code for the Object
+    Object 的哈希代码
 
 
 另见：
@@ -125,7 +125,7 @@ Returns:
 
 - [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) —
 
-    A Method object for the specified Symbol
+    指定 Symbol 对应的 Method 对象
 
 
 另见：

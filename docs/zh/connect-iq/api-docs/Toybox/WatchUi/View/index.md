@@ -324,7 +324,7 @@ Parameters:
 
 - layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
-    a layer to insert.
+    要插入的层。
 
 - idx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

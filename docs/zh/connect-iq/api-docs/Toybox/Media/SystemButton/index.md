@@ -81,7 +81,7 @@ Parameters:
 
 - type — ([Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)) —
 
-    A PLAYBACK\_CONTROL\_\* value for the button.
+    按钮对应的 PLAYBACK\_CONTROL\_\* 值。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

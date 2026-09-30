@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Moment is an immutable moment in time.
+Moment 是一个不可变的时间点。
 
 Moment objects are closely related to [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) objects, and are frequently used together for time calculations. While a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) represents a span of time, a Moment represents a single point in time such as a specific date.
 
@@ -136,7 +136,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A Moment object that is the sum of self and the provided Duration object
+    一个 Moment 对象，表示 self 与提供的 Duration 对象之和
 
 
 另见：

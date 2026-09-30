@@ -450,7 +450,7 @@ Parameters:
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a listener Method:
+    对侦听器 Method 的引用：
 
 - Called when sensor updates are received
 
@@ -1384,7 +1384,7 @@ Parameters:
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A method that takes a single [SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/) object as a parameter that will contain the requested data.
+    一个以单个 [SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/) 对象为参数的方法，该对象将包含请求的数据。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

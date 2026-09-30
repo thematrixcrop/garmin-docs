@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 A representation of an on-screen number picker.
 
-A NumberPicker is a special View that provides a way to specify numeric values within an app. A NumberPicker is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) and provides a [NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/) as the input delegate.
+NumberPicker 是一种特殊的 View，用于在应用中指定数值。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 NumberPicker，并将 [NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/) 作为输入委托。
 
 The NumberPicker class is limited to the eight specific modes described by the [WatchUi.NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) types enum. There are set minimum and maximum values enforced by the product for each mode, and the initial value of the NumberPicker will be adjusted to fall within these bounds.
 

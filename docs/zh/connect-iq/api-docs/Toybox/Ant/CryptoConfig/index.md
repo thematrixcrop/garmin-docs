@@ -313,7 +313,7 @@ Parameters:
 
 - :encryptionId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        a Number (uint32) to uniquely identify a device during encryption negotiation
+        用于在加密协商期间唯一标识设备的 Number（uint32）
 
 - :encryptionKey — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 

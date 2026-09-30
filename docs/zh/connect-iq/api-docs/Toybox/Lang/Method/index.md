@@ -107,7 +107,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A hash code for the Method
+    Method 的哈希代码
 
 
 另见：

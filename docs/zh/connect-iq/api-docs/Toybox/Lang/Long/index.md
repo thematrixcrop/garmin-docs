@@ -215,7 +215,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    A Float representation of the Long
+    Long 的 Float 表示形式
 
 
 Since:
@@ -230,7 +230,7 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    A Long representation of the Long
+    Long 的 Long 表示形式
 
 
 Since:
@@ -245,7 +245,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A Number representation of the Long
+    Long 的 Number 表示形式
 
 
 Since:

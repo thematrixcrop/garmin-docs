@@ -123,7 +123,7 @@ The notification action was selected by the user
 
 - [**Action**](#Action-named_type) as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
 
-    A notification action.
+    通知操作。
 
 - [**NotificationDataKeyType**](#NotificationDataKeyType-named_type) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 - [**NotificationDataType**](#NotificationDataType-named_type) as [Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type), [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or **Null**
@@ -148,7 +148,7 @@ The notification action was selected by the user
 
 ### **Action** as { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :data as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) }
 
-A notification action
+通知操作
 
 Since:
 

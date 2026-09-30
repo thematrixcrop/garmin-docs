@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A factory object for view/delegate instances, used by ViewLoop
+用于创建视图/委托实例的工厂对象，由 ViewLoop 使用
 
 Since:
 

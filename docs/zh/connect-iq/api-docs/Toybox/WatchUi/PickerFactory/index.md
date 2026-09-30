@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Create a PickerFactory.
 
-A PickerFactory is used to specify which objects will be displayed by a [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
+PickerFactory 用于指定 [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/) 将显示哪些对象
 
 ## 另见：
 

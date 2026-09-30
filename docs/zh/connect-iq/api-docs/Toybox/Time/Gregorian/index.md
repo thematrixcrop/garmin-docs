@@ -344,7 +344,7 @@ Parameters:
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
-    A Moment or LocalMoment object for which to get Info
+    用于获取 Info 的 Moment 或 LocalMoment 对象
 
 - format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
@@ -534,7 +534,7 @@ Returns:
 
 - [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
-    A LocalMoment object for the local time at the given location, or `null` if an error occurred.
+    给定位置的本地时间对应的 LocalMoment 对象；如果发生错误，则为 `null`。
 
 
 Since:

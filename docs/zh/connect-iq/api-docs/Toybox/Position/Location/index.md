@@ -181,7 +181,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A formatted coordinate String in the specified format
+    采用指定格式的格式化坐标 String
 
 
 Since:

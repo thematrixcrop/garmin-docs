@@ -227,7 +227,7 @@ Parameters:
 
 - factory — ([WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)) —
 
-    A factory object for the view loop to retrieve view and delegates managed with in this view loop
+    供视图循环检索在此视图循环中管理的视图和委托的工厂对象
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

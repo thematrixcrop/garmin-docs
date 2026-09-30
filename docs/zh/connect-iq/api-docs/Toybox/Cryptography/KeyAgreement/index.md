@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A local private key in combination with a public key to generate a shared secret.
+与公钥结合以生成共享密钥的本地私钥。
 
 Example:
 

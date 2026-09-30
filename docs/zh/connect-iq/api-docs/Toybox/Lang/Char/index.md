@@ -84,7 +84,7 @@ Returns:
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
-    A new lowercase Char
+    一个新的小写 Char
 
 
 Since:
@@ -129,7 +129,7 @@ Returns:
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
-    A new uppercase Char
+    一个新的大写 Char
 
 
 Since:

@@ -20,7 +20,7 @@ Toybox.WatchUi.View
 
 A representation of an on-screen generic picker.
 
-A Picker consists of one or more choose-able objects, a title, a next and previous arrow, and a confirmation button. The next and previous arrows and the confirmation button are device specific but can be overridden if desired. A Picker is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/).
+Picker 由一个或多个可选择对象、标题、下一个和上一个箭头以及确认按钮组成。下一个和上一个箭头以及确认按钮因设备而异，但可根据需要重写。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Picker，并提供 [PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)。
 
 必须提供一个 [PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)，用于指示每个可选值应显示的内容，并且能够显示任意数量的可选条目。例如，请考虑以下内容：
 

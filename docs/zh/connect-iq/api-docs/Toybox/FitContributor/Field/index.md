@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Field records custom FIT data from an Application or Data Field to a FIT file on the device's file system.
+Field 将来自 Application 或 Data Field 的自定义 FIT 数据记录到设备文件系统中的 FIT 文件。
 
 Once a Field is created with the [createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function) method, you can submit the next Field value with [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function), which will get written to the FIT file at the next opportunity. Depending on the device, writes to the FIT file may occur once per second or when new data is available (Smart Recording). Best practice is to only call [setData()](/connect-iq/api-docs/Toybox/FitContributor/Field/#setData-instance_function) when values have changed to accommodate Smart Recording.
 

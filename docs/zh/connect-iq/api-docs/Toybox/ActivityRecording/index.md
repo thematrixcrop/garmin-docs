@@ -1186,7 +1186,7 @@ Returns:
 
 - [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) —
 
-    A new Session object, or the existing Session object if a Session is active and has not been saved or discarded.
+    一个新的 Session 对象；如果当前存在活动的 Session 且尚未保存或丢弃，则返回现有的 Session 对象。
 
 
 Since:

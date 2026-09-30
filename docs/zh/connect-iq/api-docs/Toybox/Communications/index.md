@@ -243,7 +243,7 @@ API 级别 1.0.0
 
 |
 
-A generic BLE error has occurred.
+发生了一般 BLE 错误。
 
 |
 | BLE\_HOST\_TIMEOUT | \-2 |
@@ -1216,7 +1216,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A percent-encoded String
+    百分比编码的 String
 
 
 另见：
@@ -2693,7 +2693,7 @@ Parameters:
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a callback method which must accept an iterator. The iterator is the mailbox iterator for the app
+    对必须接受迭代器的回调方法的引用。该迭代器是应用的邮箱迭代器
 
 
 :::details 支持的设备

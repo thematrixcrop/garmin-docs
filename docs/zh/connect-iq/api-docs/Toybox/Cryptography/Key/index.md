@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A public key or a private key.
+公钥或私钥。
 
 Since:
 

@@ -226,11 +226,11 @@ API 级别 3.0.0
 
 - [**onBack**](#onBack-instance_function)() as **Void**
 
-    A Menu2 Back key was pressed.
+    按下了 Menu2 返回键。
 
 - [**onDone**](#onDone-instance_function)() as **Void**
 
-    A Menu2 Done item was selected.
+    选择了 Menu2 完成项。
 
 - [**onFooter**](#onFooter-instance_function)() as **Void**
 
@@ -261,7 +261,7 @@ API 级别 3.0.0
 
 ### **onBack()** as **Void**
 
-A Menu2 Back key was pressed. If this method is not overridden, it will pop the active view.
+按下了 Menu2 返回键。如果未重写此方法，它将弹出活动视图。
 
 Since:
 
@@ -269,7 +269,7 @@ API 级别 3.0.0
 
 ### **onDone()** as **Void**
 
-A Menu2 Done item was selected. This method is only triggered by a [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) If this method is not overridden, it will pop the active view.
+选择了 Menu2 完成项。此方法仅由 [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) 触发。如果未重写此方法，它将弹出活动视图。
 
 Since:
 

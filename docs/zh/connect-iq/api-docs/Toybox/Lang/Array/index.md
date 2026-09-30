@@ -193,7 +193,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A new Array with elements in reversed order
+    一个元素顺序反转的新 Array
 
 
 Since:
@@ -249,7 +249,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A new Array containing the elements from `startIndex` to `endIndex`
+    一个包含从 `startIndex` 到 `endIndex` 元素的新 Array
 
 
 Since:

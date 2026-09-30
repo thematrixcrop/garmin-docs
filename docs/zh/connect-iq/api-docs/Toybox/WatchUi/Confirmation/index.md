@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of a confirmation dialog.
+确认对话框的表示形式。
 
 Confirmation 是一种特殊的 View，用于向用户显示“是/否”问题。选择选项后，将调用已注册的 [onResponse()](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/#onResponse-instance_function) 方法。使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Confirmation，该方法将 [ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/) 作为输入委托。
 

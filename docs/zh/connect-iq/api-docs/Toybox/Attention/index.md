@@ -99,7 +99,7 @@ API 级别 1.0.0
 
 |
 
-A loud beep
+响亮的提示音
 
 |
 | TONE\_INTERVAL\_ALERT | 7 |

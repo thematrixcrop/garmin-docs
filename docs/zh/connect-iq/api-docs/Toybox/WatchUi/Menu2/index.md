@@ -22,7 +22,7 @@ A representation of an on-screen menu. A Menu2 is a special View, similar to a [
 
 After an option is selected, the registered [onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function) method will be called. While a Menu2 can be generated programmatically, they should generally be created as a resource.
 
-A Menu2 is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) as the input delegate.
+使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Menu2，该方法将 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 作为输入委托。
 
 ## 另见：
 

@@ -206,7 +206,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A new String with the substituted content
+    包含替换后内容的新 String
 
 
 Since:

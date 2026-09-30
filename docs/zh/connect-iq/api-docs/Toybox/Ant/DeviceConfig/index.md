@@ -341,7 +341,7 @@ Parameters:
 
 - :searchThreshold — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        A proximity threshold bin as a Number
+        以 Number 表示的接近度阈值区间
 
 - Configures the RSSI threshold a slave channel will search for which is effectively the distance at which a slave is willing to be from a master
 

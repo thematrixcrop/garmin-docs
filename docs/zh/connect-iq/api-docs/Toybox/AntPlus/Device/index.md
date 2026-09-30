@@ -122,7 +122,7 @@ Returns:
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    A list of known component identifiers
+    已知组件标识符列表
 
 - 没有已知组件标识符时为 `null`
 

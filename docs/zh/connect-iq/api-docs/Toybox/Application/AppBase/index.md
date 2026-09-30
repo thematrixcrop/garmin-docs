@@ -1703,7 +1703,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A Number object indicating the number of days remaining in the trial, or `null` if no timed trial is active.
+    指示试用剩余天数的 Number 对象；如果当前没有启用限时试用，则为 `null`。
 
 
 Since:

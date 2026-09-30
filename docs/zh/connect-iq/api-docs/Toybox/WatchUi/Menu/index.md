@@ -18,9 +18,9 @@ Toybox.Lang.Object
 
 A representation of an on-screen menu.
 
-A Menu is a special View that presents the user with a list of options. After an option is selected, the registered [onMenuItem()](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/#onMenuItem-instance_function) method will be called. While a Menu can be generated programmatically, they should generally be created as a resource.
+Menu 是一种特殊的 View，用于向用户显示选项列表。选择选项后，将调用已注册的 [onMenuItem()](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/#onMenuItem-instance_function) 方法。虽然可以通过编程方式生成 Menu，但通常应将其创建为资源。
 
-A Menu is pushed using [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function), which provides a [MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/) as the input delegate.
+使用 [pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推送 Menu，该方法将 [MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/) 作为输入委托。
 
 ## 另见：
 

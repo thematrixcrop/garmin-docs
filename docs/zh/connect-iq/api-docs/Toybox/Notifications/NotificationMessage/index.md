@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A NotificationMessage is received by the callback registered in [registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function).
+NotificationMessage 将由在 [registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 中注册的回调接收。
 
 Since:
 

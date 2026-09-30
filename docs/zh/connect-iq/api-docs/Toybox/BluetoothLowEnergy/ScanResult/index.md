@@ -103,7 +103,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    A number representing the appearance of the sensor
+    表示传感器外观的数字
 
 
 Since:

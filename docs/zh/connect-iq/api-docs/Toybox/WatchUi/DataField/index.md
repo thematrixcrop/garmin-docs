@@ -1098,7 +1098,7 @@ Parameters:
 
 - trigger —
 
-    A LapInfoType with lap information
+    包含圈信息的 LapInfoType
 
 - :lapTrigger — ([DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module)) —
 

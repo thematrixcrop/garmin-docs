@@ -70,7 +70,7 @@ Parameters:
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A function to call after the Timer completes
+    Timer 完成后调用的函数
 
 - time — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

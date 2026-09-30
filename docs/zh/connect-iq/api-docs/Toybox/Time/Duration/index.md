@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A Duration is an immutable period of time.
+Duration 是一个不可变的时间段。
 
 Duration objects are closely related to [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) objects, and are frequently used together for time calculations. While a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) represents a single point in time, a Duration represents a span of time such as seven days.
 
@@ -95,7 +95,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    A Duration or Moment object that is the sum of self and the provided object:
+    一个 Duration 或 Moment 对象，表示 self 与提供的对象之和：
 
 - Duration + Moment = Moment
 
@@ -236,7 +236,7 @@ Returns:
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
-    A Duration representing the specified Number of seconds
+    表示指定秒数的 Duration
 
 
 另见：

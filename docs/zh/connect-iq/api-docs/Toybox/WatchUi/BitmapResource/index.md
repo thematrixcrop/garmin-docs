@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A representation of a bitmap resource.
+位图资源的表示形式。
 
 BitmapResource objects are returned by the [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) method.
 

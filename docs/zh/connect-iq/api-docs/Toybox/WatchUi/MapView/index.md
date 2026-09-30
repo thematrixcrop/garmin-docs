@@ -213,7 +213,7 @@ Parameters:
 
 - markers — ([WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    A MapMarker object or an Array of Marker objects to be rendered on the map
+    要在地图上渲染的 MapMarker 对象或 Marker 对象数组
 
 
 Since:

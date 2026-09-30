@@ -18,7 +18,7 @@ Toybox.WatchUi.MenuItem
 
 ## 概述
 
-A representation of a custom item in a CustomMenu.
+CustomMenu 中自定义项目的表示形式。
 
 CustomMenuItem 是 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) View 的一个元素，表示菜单中的一个项目。选中后，将调用 onSelect() 委托回调。项目的选中状态可能会在选中过程中发生变化。可以使用 isSelected() 方法检查此状态，并使用它控制选中项目的外观。
 
@@ -432,7 +432,7 @@ Parameters:
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-    A Drawable to render on top of the menu items, or `null`.
+    用于渲染在菜单项上方的 Drawable，或 `null`。
 
 
 Since:

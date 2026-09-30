@@ -374,7 +374,7 @@ API 级别 1.0.0
 
 |
 
-A press and hold on the screen
+长按屏幕
 
 |
 | CLICK\_TYPE\_RELEASE | 2 |
@@ -383,7 +383,7 @@ API 级别 1.0.0
 
 |
 
-A release of a hold on the screen
+释放对屏幕的按住操作
 
 |
 
@@ -738,7 +738,7 @@ API 级别 1.0.0
 
 |
 
-A Duration representing the number of seconds since midnight
+表示自午夜起经过的秒数的 Duration
 
 |
 | NUMBER\_PICKER\_WEIGHT | 4 |
@@ -747,7 +747,7 @@ API 级别 1.0.0
 
 |
 
-A Float in kilograms (kg)
+以千克（kg）为单位的 Float
 
 |
 | NUMBER\_PICKER\_HEIGHT | 5 |
@@ -1143,7 +1143,7 @@ Parameters:
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A Method to call when the animation is complete; this can be `null`
+    动画完成时调用的 Method；可以为 `null`
 
 
 Example:

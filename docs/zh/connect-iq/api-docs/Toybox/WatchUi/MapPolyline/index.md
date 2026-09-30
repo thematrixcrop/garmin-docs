@@ -171,7 +171,7 @@ Parameters:
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    A Location object or an Array of Location objects
+    一个 Location 对象或 Location 对象数组
 
 
 Since:

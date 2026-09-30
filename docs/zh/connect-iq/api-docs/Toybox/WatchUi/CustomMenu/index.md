@@ -425,7 +425,7 @@ Parameters:
 
 - :foreground — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
-        A Drawable to render on top of menu items. (optional)
+        用于渲染在菜单项上方的 Drawable（可选）。
 
 - :titleItemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -570,7 +570,7 @@ Parameters:
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
-    A Drawable to render on top of the menu items or `null`.
+    用于渲染在菜单项上方的 Drawable，或 `null`。
 
 
 Since:

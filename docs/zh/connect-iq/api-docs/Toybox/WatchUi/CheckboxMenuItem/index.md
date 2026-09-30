@@ -18,7 +18,7 @@ Toybox.WatchUi.MenuItem
 
 ## 概述
 
-A representation of a check box item in a CheckboxMenu.
+CheckboxMenu 中复选框项的表示形式。
 
 CheckboxMenuItem 是 [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) View 的一个元素，表示菜单中的一个选项，并且可以处于两种状态之一：选中或未选中。选中后，CheckboxMenuItem 的状态将变为调用 onSelect 委托回调前状态的相反状态。
 

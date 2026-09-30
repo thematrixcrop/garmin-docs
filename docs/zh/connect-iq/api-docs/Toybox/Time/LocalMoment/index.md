@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-A LocalMoment is an immutable moment in time.
+LocalMoment 是一个不可变的时间点。
 
 LocalMoment represents a single point in time at a specific location. It differs from Moment in that it also keeps time zone information in addition to the time.
 
@@ -272,7 +272,7 @@ Returns:
 
 - [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
-    A LocalMoment object that is the sum of self and the provided Duration object.
+    一个 Moment 对象，表示 self 与提供的 Duration 对象之和。
 
 
 Since:

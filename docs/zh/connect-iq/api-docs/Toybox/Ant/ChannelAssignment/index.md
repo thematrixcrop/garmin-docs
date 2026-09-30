@@ -104,7 +104,7 @@ Parameters:
 - [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) - ANT 专用网络
 
 
-- A network key must be provided for an Private Network
+- 必须为 Private Network 提供网络密钥
 
 - Both 64 and 128 bit keys are required
 

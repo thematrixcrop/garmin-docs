@@ -386,11 +386,11 @@ Parameters:
 
 - options — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A LOCATION\_\* value or [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) of options.
+    一个 LOCATION\_\* 值或选项中的 [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 - :acquisitionType — ([Position.LocationAcquisitionType](/connect-iq/api-docs/Toybox/Position/#LocationAcquisitionType-module)) —
 
-        A LOCATION\_\* enum value indicating the position acquisition type to use.
+        指示要使用的位置获取类型的 LOCATION\_\* 枚举值。
 
 - :constellations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -402,11 +402,11 @@ Parameters:
 
 - :mode — ([Position.PositioningMode](/connect-iq/api-docs/Toybox/Position/#PositioningMode-module)) —
 
-        a POSITIONING\_MODE\_\* value specifying the mode to use. If `null` POSITIONING\_MODE\_NORMAL will be used by default.
+        指定要使用模式的 POSITIONING\_MODE\_\* 值。如果为 `null`，默认使用 POSITIONING\_MODE\_NORMAL。
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A reference to a listener method:
+    对侦听器方法的引用：
 
 - Called when location updates are received
 
@@ -1026,7 +1026,7 @@ Returns:
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
-    A Location object representing the position described by the input String
+    表示输入 String 所描述位置的 Location 对象
 
 
 Since:
