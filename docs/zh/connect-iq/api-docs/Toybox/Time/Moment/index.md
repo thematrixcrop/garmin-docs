@@ -35,7 +35,7 @@ Moment 对象与 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 对象�
 using Toybox.System;
 using Toybox.Time.Gregorian;
 
-// Options for Saturday February 24th, 2018 12:12am
+// 2018 年 2 月 24 日星期六凌晨 12:12 的选项
 var options = {
     :year   => 2018,
     :month  => 2,
@@ -48,14 +48,14 @@ var now = Gregorian.moment(options);
 var info;
 info = Gregorian.utcInfo(now, Time.FORMAT_SHORT);
 
-// Prints "2018-02-24" to the console
+// 在控制台打印 "2018-02-24"
 System.println(Lang.format("$1$-$2$-$3$", [
     info.year.format("%04u"),
     info.month.format("%02u"),
     info.day.format("%02u")
 ]));
 
-// Prints "day_of_week=7 month=2" to the console
+// 在控制台打印 "day_of_week=7 month=2"
 System.println(Lang.format("day_of_week=$1$ month=$2$", [
     info.day_of_week,
     info.month
@@ -63,7 +63,7 @@ System.println(Lang.format("day_of_week=$1$ month=$2$", [
 
 info = Gregorian.utcInfo(now, Time.FORMAT_LONG);
 
-// Prints "day_of_week=Sat month=Feb" to the console
+// 在控制台打印 "day_of_week=Sat month=Feb"
 System.println(Lang.format("day_of_week=$1$ month=$2$", [
     info.day_of_week,
     info.month
@@ -173,8 +173,8 @@ var today = new Time.Moment(Time.today().value());
 var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
 var tomorrow = today.add(oneDay);
 
-System.println(today.compare(tomorrow)); // -86400, or one day in the past
-System.println(tomorrow.compare(today)); //  86400, or one day in the future
+System.println(today.compare(tomorrow)); // -86400，即过去一天
+System.println(tomorrow.compare(today)); //  86400，即未来一天
 ```
 
 返回：
@@ -352,8 +352,8 @@ var tomorrow = today.add(oneDay);
 var duration1 = today.subtract(tomorrow);
 var duration2 = tomorrow.subtract(today);
 
-System.println(duration1.value()); // 86400, or one day
-System.println(duration2.value()); // 86400, or one day
+System.println(duration1.value()); // 86400，即一天
+System.println(duration2.value()); // 86400，即一天
 ```
 
 返回：
