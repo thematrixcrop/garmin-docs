@@ -69,15 +69,15 @@ var complication = Complications.getComplication(
 
 ```typescript
 function onStart(params as Dictionary) as Void {
-    // Retrieve persisted Complication ID
+    // 获取持久化的复杂功能 ID
     mComplicationId = Storage.getValue(COMPLICATION_ID_KEY);
 
-    // Register a callback for receiving
-    // updates on complication information
+    // 注册用于接收复杂功能信息
+    // 更新的回调
     Complications.registerComplicationChangeCallback(
         self.method(:onComplicationChanged));
 
-    // Liking and subscribing
+    // 建立链接并订阅
     Complications.subscribeToUpdates(mComplicationId);
 }
 ```
@@ -87,13 +87,13 @@ function onStart(params as Dictionary) as Void {
 ```typescript
 function onComplicationChanged(
     complicationId as Complication.Id) as Void {
-    // Identify the complication being updated
+    // 确定正在更新的复杂功能
     if (complicationId == mComplicationId) {
-        // Get the complication information
+        // 获取复杂功能信息
         try {
             var data = Complications.getComplication(
                 complicationId);
-            // Handle the application processing
+            // 处理应用逻辑
             updateData(complicationId, data);
         } catch (e instanceof ComplicationNotFoundException) {
             handleComplicationRemoval(complicationId);
@@ -115,13 +115,13 @@ function onPress(clickEvent as ClickEvent) as Boolean {
     if ((mComplicationId != null) &&
          isClickInside(clickEvent, mBoundingBox)) {
 
-        // launch the app that published the
-        // complication
+        // 启动发布该复杂功能的
+        // 应用
         try {
             Complications.exitTo(mComplicationId);
             return true;
         } catch (e instanceof AppNotInstalledException) {
-            // fall through
+            // 继续执行
         }
     }
 
@@ -192,22 +192,22 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 ```typescript
 var data = {
-    // String, Number, Float, Long, Double, or null
+    // String、Number、Float、Long、Double 或 null
     :value => newValue,
 
     // String
     :shortLabel => newShortLabel,
 
-    // String or Complication.UNITS_* value
+    // String 或 Complication.UNITS_* 值
     :units => newUnits,
 
-    // Array<Numeric> with at least 3 elements
+    // 至少包含 3 个元素的 Array<Numeric>
     :ranges => newRanges,
 }
 
-// update complication
-// 0 is the id of the complication
-// from complications.xml
+// 更新复杂功能
+// 0 是复杂功能的 ID
+// 来自 complications.xml
 Complications.updateComplication(0, data);
 ```
 
