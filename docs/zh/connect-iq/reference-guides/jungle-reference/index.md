@@ -1,46 +1,46 @@
 ---
-title: "Jungle Reference Guide"
+title: "Jungle 参考指南"
 ---
 # Jungle 参考指南
 
-欢迎来到 Jungles，这是 Connect IQ 应用的构建语言。本指南将涵盖以下主题：
+欢迎使用 Jungle，这是 Connect IQ 应用的构建语言。本指南将涵盖以下主题：
 
--  Z林的[syntax](/connect-iq/reference-guides/jungle-reference/#jungle-syntax)构建语言
+-  Jungle 构建语言的[语法](/connect-iq/reference-guides/jungle-reference/#jungle-syntax)
 
-- 使用[build exclusions](/connect-iq/reference-guides/jungle-reference/#excluded-annotations)来定制您的应用程序在构建时
+- 使用[构建排除项](/connect-iq/reference-guides/jungle-reference/#excluded-annotations)在构建时定制应用
 
--   管理 [monkey barrels](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
+-   管理 [Monkey Barrel](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
 
-- 使用林[with Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code)或从[command line](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
+- 使用 Jungle[Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) 或[命令行](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
 
 
 ## Jungle 语法
 
-林文件包含*构建指令*由*资格*,*本地变量*和*值组成. Jung林文件也可能包含*评论*.每个构建指令由由一个等值符号 (`=`) 分开的资格值或变量值对组成,并以一个新的行字符结束.
+Jungle 文件包含由*限定符*、*局部变量*和*值*组成的*构建指令*。Jungle 文件也可以包含*注释*。每条构建指令由等号 (`=`) 分隔的限定符-值或变量-值对组成，并以换行符结束。
 
-资格是类似于上一节所描述的[device and family qualifiers](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers).它们被视为保留的单词,只能与其他资格等同,并且具有全球范围.资格和其属性可以与Dereference运算器`$(VAR)`一起使用,并且在处理所有项目林文件后进行评估.
+限定符类似于上一节所述的[设备和系列限定符](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers)。它们被视为保留字，只能设置为其他限定符的值，并且具有全局作用域。限定符及其属性可以与解引用运算符 `$(VAR)` 一起使用，并在处理完项目中的所有 Jungle 文件后求值。
 
 ### 项目限定符
 
-项目资格指定在整个项目中适用的全球信息.项目资格有x属性,可以通过使用点 (`.`) 和属性的名称引用`project`:
+项目限定符指定适用于整个项目的全局信息。项目限定符具有多个属性，可以在 `project` 后加点号 (`.`) 和属性名来引用：
 
-| Qualifier | 说明 |
+| 限定符 | 说明 |
 | --- | --- |
 | `manifest` |项目公开文件的路径|
-| `optimization` |指定项目优化水平.详细见[`--optimization` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options)|
-| `typecheck` |指定类型检查水平.详见[`--typecheck` compiler option](/connect-iq/monkey-c/compiler-options/#compiler-options)|
+| `optimization` |指定项目的优化级别。详情请参阅[`--optimization` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)|
+| `typecheck` |指定类型检查级别。详情请参阅[`--typecheck` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)|
 
 ### 设备限定符
 
-设备资格有六个属性,可以通过一个点 (`.`) 和属性名称的资格进行引用:
+设备限定符有六个属性，可以在限定符后加点号 (`.`) 和属性名来引用：
 
-| Qualifier | 说明 |
+| 限定符 | 说明 |
 | --- | --- |
 | `annotations` |适用于本资格的子桶注释|
-| `barrelPath` |适用于本资格的 file子桶文件 (`.barrel`) 路径|
-| `exclude注解` | 注解 to exclude when building for this qualifier |
-| `lang` |支持本资格的语言(|
-| `personality` |适用于本资格的 file子格式文件 (`.mss`) 路径|
+| `barrelPath` |适用于本限定符的 Monkey Barrel 文件 (`.barrel`) 路径|
+| `excludeAnnotations` | 构建此限定符时要排除的注解 |
+| `lang` |本限定符支持的语言|
+| `personality` |适用于本限定符的 Monkey Style 文件 (`.mss`) 路径|
 | `resourcePath` |适用于本资格的资源文件 (`.xml`) 路径|
 | `sourcePath` |适用于本资格的源文件 (`.mc`) 路径|
 
@@ -50,9 +50,9 @@ title: "Jungle Reference Guide"
 
 ### 值
 
-值列表是一个或多个字符串值的列表,代表特定的资格符,资格符属性或本地变量的值.多个列表项由半柱分开 (`;`).
+值列表是一个或多个字符串值的列表，表示特定限定符、限定符属性或局部变量的值。多个列表项用分号 (`;`) 分隔。
 
-字符串值中的空间必须包含在引用中.例如,包含空间的源或资源路径应以以下方式定义:
+字符串值中的空格必须放在引号内。例如，包含空格的源路径或资源路径应按以下方式定义：
 
 ```
 fenix5.sourcePath = "my projects/my source/file.mc";"my fenix5 source"
@@ -60,47 +60,47 @@ fenix5.sourcePath = "my projects/my source/file.mc";"my fenix5 source"
 
 ### 注释
 
-之前使用哈希标记 (`#`) 的行列被视为评论,并被编译器忽视.
+以井号 (`#`) 开头的行会被视为注释，并被编译器忽略。
 
 一个基本的 Jungle 文件构建说明将使用此模式 (评论是可选的):
 
 ```
-# This is a comment
+# 这是注释
 qualifier[.property] = value
 ```
 
-林文件必须以`.jungle`扩展命名,并存储在Connect IQ项目的根部.
+Jungle 文件必须使用 `.jungle` 扩展名，并存储在 Connect IQ 项目的根目录中。
 
-**注:** fer惰评价的例外是当一个合格或本地变量在设置该合格或变量时被fer置,在 Jungle 文件处理过程中评估该合格或变量.
+**注：**限定符会延迟求值：针对特定设备构建时，会在处理完所有 Jungle 文件后解析该设备的所有限定符及属性；局部变量则在处理定义它们的 Jungle 文件后求值。唯一的例外是在设置限定符或局部变量时对其进行解引用，此时会在处理 Jungle 文件期间立即求值。
 
 ## 源代码和资源
 
-设置源路径和资源路径是 Jungles 常用的.除了针对特定设备定制源代码和资源来改善用户体验,它还可以帮助管理内存,因为只有 Jungle 文件中定义的来源才被编译成可执行的.
+设置源路径和资源路径是 Jungle 的常见用途。除了针对特定设备定制源代码和资源以改善用户体验，这也有助于管理内存，因为只有 Jungle 文件中定义的源文件才会被编译到可执行文件中。
 
-作为一个实用的例子,假设一个应用程序将使用一个共享的资源组用于fēnix设备,包含在一个`fenix-resources`目录的项目根部.由于这些产品都不是相同的[families](/connect-iq/core-topics/build-configuration/#family-qualifiers),必须编写一个自定义的林文件,告诉编译器这些设备应该使用这个共享资源文件.我们可以从设置fēnix的资源路径开始5:
+例如，假设应用要使用一组供 fēnix 设备共享的资源，这些资源位于项目根目录的 `fenix-resources` 文件夹中。由于这些产品并不属于同一[设备系列](/connect-iq/core-topics/build-configuration/#family-qualifiers)，必须编写自定义 Jungle 文件，告诉编译器这些设备应使用该共享资源文件。我们可以先设置 fēnix 5 的资源路径：
 
 ```
 # Set the fenix 5 resource directory
 fenix5.resourcePath = $(fenix5.resourcePath);fenix-resources
 ```
 
-让我们把这件事分解一下:
+下面分解说明这条指令：
 
 fenix5.resourcePath
 
-在默认 jungle 文件中定义的 fēnix 5 设备资格,其次是 resourcePath 属性
+默认 Jungle 文件中定义的 fēnix 5 设备限定符，后跟 `resourcePath` 属性。
 
 $(fenix5.resourcePath);
 
-通过Dereference操作符`$(VAR)`访问的fenix5.resourcePath属性的原始值.
+通过解引用运算符 `$(VAR)` 访问的 `fenix5.resourcePath` 属性原始值。
 
-默认的 Jungle 文件定义了基础资源路径为项目根部中的`resource`目录,所有设备都继承了这一定义.它还定义了可以隐含地在任何项目中使用的设备特定和家庭特定资源目录.在资源路径中包含这一点,确保设备仍然可以在这些目录中查找资源,如果需要的资源不在更特定的设备位置.如果此遗漏,它将告诉编译器只在`fenix-resources`目录中查找fenix 5资源.
+默认 Jungle 文件将项目根目录中的 `resource` 文件夹定义为基础资源路径，所有设备都会继承该定义。它还定义了可以在任何项目中隐式使用的设备专属和系列专属资源目录。将原路径保留在资源路径中，可以确保设备在更具体的位置找不到所需资源时仍会搜索这些目录。如果省略原路径，编译器将只在 `fenix-resources` 目录中查找 fēnix 5 资源。
 
 fenix-resources
 
-我们想要添加的共享目录作为设备资源位置.
+要添加为设备资源位置的共享目录。
 
-如果这看起来很熟悉,那是因为它在概念上相当类似于设置[PATH environment variables](https://en.wikipedia.org/wiki/PATH_(variable)).  comp林文件中的路径优先级从左到右,因此编译器将首先处理在"enix-resources"中发现的资源之前,然后处理遗传资源,这可能会覆盖已经定义的资源.将`fenix-resources`目录添加到其他ēnienix设备中只需要每个额外设备的类似指示:
+如果这看起来很熟悉，是因为它在概念上类似于设置 [PATH 环境变量](https://en.wikipedia.org/wiki/PATH_(variable))。Jungle 文件中的路径优先级从左到右，因此编译器会先处理继承的资源，再处理 `fenix-resources` 中的资源；后者可以覆盖已定义的资源。将 `fenix-resources` 目录添加到其他 fēnix 设备时，只需为每台设备添加类似指令：
 
 ```
 # Set the fenix 5 resource locations
@@ -111,7 +111,7 @@ fenix3.resourcePath = $(fenix3.resourcePath);fenix-resources
 ...
 ```
 
-设置源路径基本上是相同的,允许应用程序选择性地在每个设备或每个设备家庭基础上包含特定源代码.例如,考虑一个应用程序,该应用程序在`source`文件中的所有产品和其他文件中的产品线特定源代码都有共同代码:可穿戴设备的`wearable-source`,自行车计算机的`edge-source`和手持地图单位的`handheld-source`.下列说明如何使用林来配置这个项目:
+设置源路径的方式基本相同，可以让应用按设备或设备系列选择性地包含源代码。例如，应用可能在 `source` 文件夹中包含所有产品共用的代码，并在其他文件夹中包含产品线专属代码：可穿戴设备使用 `wearable-source`，自行车电脑使用 `edge-source`，手持地图设备使用 `handheld-source`。下面演示如何使用 Jungle 配置此项目：
 
 ```
 # Reset the base source path to include only source files in the source folder. The
@@ -135,7 +135,7 @@ rino7xx.sourcePath = $(rino7xx.sourcePath);handheld-source
 
 ### 本地化资源
 
-本地化 strings are a kind of resource in Connect IQ, but have a slightly different syntax since multiple languages may be supported by a single device or device family. Suppose an application supports both English and Spanish, and all of the fēnix English localization resources are stored in a `fenix-resources-eng` directory, while the Spanish localization resources are kept in a `fenix-resources-spa` directory.
+本地化字符串是 Connect IQ 中的一类资源，但语法略有不同，因为同一设备或设备系列可能支持多种语言。假设应用同时支持英语和西班牙语，所有 fēnix 英语本地化资源存储在 `fenix-resources-eng` 目录中，西班牙语本地化资源存储在 `fenix-resources-spa` 目录中。
 
 ```
 # Set the fenix 5 English language resource location
@@ -152,15 +152,15 @@ fenix3.lang.spa = $(fenix3.lang.spa);fenix-resources-spa
 ...
 ```
 
-在此构建说明中,使用`lang`资格的属性来指定一个本地化资源正在设置,其后则是另一个[ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php)本地化资格,以指示提供的资源位置是用于哪种语言的.支持本地化资格的列表可以在[Strings](/connect-iq/core-topics/resources/#strings)部分找到.指定一个不支持本地化资格将导致编译时的错误.
+在此构建指令中，使用 `lang` 限定符属性表示正在设置本地化资源，后面跟着一个额外的 [ISO 639–2 语言代码](https://www.loc.gov/standards/iso639-2/php/code_list.php)限定符，用于指明资源位置对应的语言。支持的本地化限定符列表请参阅[字符串资源](/connect-iq/core-topics/resources/#strings)。指定不受支持的本地化限定符会导致编译错误。
 
-在 Jungle 文件中指定本地化资源时,支持的语言也必须设置在项目表格中,否则将忽略相关本地化覆盖.
+在 Jungle 文件中指定本地化资源时，还必须在项目清单中设置支持的语言，否则会忽略相关的本地化覆盖。
 
 ## 排除的注解
 
-在某些情况下,只有一个子组的设备才能使用特定的模块,类,方法或变量,但排除整个源文件是过分的.`exclude注解`资格特征允许构建说明指定特定的[annotations](/connect-iq/monkey-c/annotations/#annotations)将被排除在应用程序构建时.这可能有助于在设备上执行应用程序时节省内存.
+在某些情况下，只有部分设备可以使用特定的模块、类、方法或变量，但排除整个源文件过于极端。`excludeAnnotations` 限定符属性允许构建指令指定应用构建时要排除的[注解](/connect-iq/monkey-c/annotations/#annotations)。这有助于减少应用在设备上运行时的内存占用。
 
-排除源源的常见原因是,应用程序使用一种利用新设备上最新API的算法,但必须在没有最新API的旧设备上使用更简单的算法.例如,下面的例子显示一个应用程序有两个方法,一个使用了新[Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/),一个依赖于[Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var)数据:
+一种常见情况是，应用在新设备上使用利用最新 API 的算法，但在不支持最新 API 的旧设备上必须使用更简单的算法。下面的示例展示了两个方法：一个使用新的 [Sensor.AccelerometerData](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/)，另一个依赖 [Info.accel](/connect-iq/api-docs/Toybox/Sensor/Info/#accel-var) 数据：
 
 ```cpp
 import Toybox.WatchUi;
@@ -196,13 +196,13 @@ class MyAmazingAppView extends WatchUi.View {
 }
 ```
 
-如果应用程序接近内存限制,则可能很有用排除未使用的方法,特别是如果该方法足够大,并且影响可用内存.为了这样做,设置Jungle文件中的`exclude注解`资格属性为适当的注释值:
+如果应用接近内存限制，排除未使用的方法可能会有所帮助，尤其是在方法较大并会影响可用内存时。为此，请在 Jungle 文件中将 `excludeAnnotations` 限定符属性设置为适当的注解值：
 
 ```
 # By default, exclude the new, experimental logic
-base.exclude注解 = experimental
+base.excludeAnnotations = experimental
 # Exclude the old, boring logic from fenix 5
-fenix5.exclude注解 = boring
+fenix5.excludeAnnotations = boring
 ```
 
 然后,更新应用程序以使用注释:
@@ -255,7 +255,7 @@ class MyAmazingAppView extends WatchUi.View {
 
 ## Monkey Barrel 管理
 
-manu也可以手动添加到该项目的主要林文件中,使用`barrelPath`资格属性:
+也可以使用 `barrelPath` 限定符属性，将 Monkey Barrel 手动添加到项目的主 Jungle 文件中：
 
 ```
 # Include all the Barrels from the 'barrels' directory at the root of the project
@@ -268,7 +268,7 @@ base.barrelPath = barrels/IconLibrary.barrel
 base.barrelPath = barrels/IconLibrary.barrel;barrels/GraphLibrary.barrel
 ```
 
-也可以使用`annotations`资格性属性来进口一个桶的选定的注释部分.当一个桶包含一个类和方法的库时,这是有用的,但应用程序只需要使用图书馆的碎片.例如,假设上面进口的图书馆桶包含了几个不同的图形方法,但应用程序只需要使用条图.Barrel作者足够善于注释每个方法,所以我们可以限制进口代码到只需要的方法:
+也可以使用 `annotations` 限定符属性导入 Barrel 中带有指定注解的部分。当 Barrel 包含一个类和方法库，而应用只需要其中一部分时，这很有用。例如，假设上面导入的库 Barrel 包含多个图形方法，但应用只需要条形图方法。Barrel 作者已经为每个方法添加了注解，因此我们可以将导入的代码限制为所需方法：
 
 ```
 # Import the 'bar' annotated method from the GraphLibrary Barrel
@@ -287,49 +287,49 @@ base.GraphLibrary.annotations = bar
 
 ## 定义项目依赖项
 
-如果开发人员在开发过程中对一个依赖应用程序的桶代码进行快速变化呢?这将会让[export a barrel](/connect-iq/core-topics/shareable-libraries/#exporting-a-monkey-barrel)变得繁,并且每次在桶项目的代码变更时都会更新 manifest.xml 中的依赖.连接 IQ 应用程序项目可以有直接的子桶项目依赖,从而消除了这些步骤的需要.
+如果开发人员在开发过程中频繁修改应用依赖的 Barrel 代码，会发生什么？每次代码变更都[导出 Barrel](/connect-iq/core-topics/shareable-libraries/#exporting-a-monkey-barrel)并更新 `manifest.xml` 中的依赖会很繁琐。Connect IQ 应用项目可以直接依赖 Barrel 项目，从而省去这些步骤。
 
-添加一个桶项目的依赖性是通过指定`barrelPath`中依赖的项目或项目的 Jung林文件或文件 . Jung林文件可以单独指定或组装在`barrelPath`中 .
+添加 Barrel 项目依赖的方式，是在 `barrelPath` 中指定依赖项目的 Jungle 文件或文件列表。可以单独指定 Jungle 文件，也可以将多个文件组合到 `barrelPath` 中。
 
-例如,一个开发人员正在创建一个应用程序,但她想包括一个标准的标志组,定义她的品牌.她意识到在开发中她需要添加更多的标志,并决定最终创建她总是需要的超级专业功能.她可以在两个项目上动态工作,并通过添加Barrel项目的Jungle文件到`barrePath`来将她的应用程序项目与她的桶代码联系起来.
+例如，开发人员正在创建一个应用，希望包含一组定义其品牌的标准图标。她意识到开发过程中还需要添加更多图标，并决定最终创建一个包含常用功能的库。她可以同时处理两个项目，并将 Barrel 项目的 Jungle 文件添加到 `barrelPath`，从而将应用项目连接到 Barrel 代码。
 
 ```
 # Include a specific Barrel project
 base.barrelPath = MyIconBarrel/MyIconBarrel.jungle
 ```
 
-另一个开发人员正在开发一个密集的数学应用程序.幸运的是,有人已经创建了一个广泛的数学库桶,他已经拉进了.他还有一个本地 MyIcon Library Barrel 项目,有一些标准图标.他有一组图标为在`roundIcons.jungle`文件中定义的圆型设备,他希望在他的应用中使用.他包括包装的数学库桶和他在本地桶项目中定义的自己的圆形图标.
+另一位开发人员正在开发一个计算密集型数学应用。幸运的是，已有一个完善的数学库 Barrel，他已经将其引入项目。他还有一个包含标准图标的本地 MyIcon Library Barrel 项目，并在 `roundIcons.jungle` 文件中为圆形设备定义了一组图标，希望在应用中使用。他需要同时包含打包的数学库 Barrel 和本地 Barrel 项目中定义的圆形图标。
 
 ```
 # Include a specific Barrel from the 'barrels' directory and a Jungle from a Barrel project
 base.barrelPath = barrels/MathLibrary.barrel;MyIconBarrel/roundIcons.jungle
 ```
 
-我们的第二个开发人员意识到,他也希望支持矩形设备.这些设备已被定义在`rectangleIcons.jungle`.他包括来自MyIconBarrel的多个构建指令,通过将林文件集成到`[]`的方形括号中,如下:
+这位开发人员后来还希望支持矩形设备，这些设备已在 `rectangleIcons.jungle` 中定义。他可以将 Jungle 文件放入方括号 `[]`，从 MyIconBarrel 导入多个构建指令：
 
 ```
 # Include a specific Barrel from the 'barrels' directory and multiple Jungles from a Barrel project
 base.barrelPath = barrels/MathLibrary.barrel;[MyIconBarrel/roundIcons.jungle;MyIconBarrel/rectangleIcons.jungle]
 ```
 
-了解更多关于子桶和如何使用的信息,请查看 (../Core\_Topics/Shareable.md图书馆#shareablelibraries) 章.
+有关 Barrel 及其用法的更多信息，请参阅[可共享库](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)一章。
 
 ## 默认 Jungle 文件
 
-连接IQ SDK包括默认的林文件,即使没有自定义的 Jung林文件都适用于项目.它定义了一个`base`资格,代表了项目中包含的所有源文件 (`.mc`),以及在Connect IQ项目的根部的`resources`中发现的所有资源文件.它还定义了默认设备,家庭和语言资格,这是上一节描述的资格方案的基础.
+Connect IQ SDK 包含一个默认 Jungle 文件，即使没有自定义 Jungle 文件也会应用到项目。它定义了 `base` 限定符，代表项目中包含的所有源文件 (`.mc`) 以及 Connect IQ 项目根目录 `resources` 文件夹中的所有资源文件。它还定义了默认的设备、系列和语言限定符，这些限定符构成上一节所述限定符方案的基础。
 
-当一个项目被构建时,首先应用于默认的 jungle 文件中的指示,然后应用于自定义的 jungle 文件中的任何指示. 这使得可进行定制,以取代默认的构建指示.
+构建项目时，会先应用默认 Jungle 文件中的指令，再应用自定义 Jungle 文件中的指令。这样可以通过自定义指令覆盖默认构建设置。
 
 ## 在 Visual Studio Code 中使用 Jungles
 
-默认情况下,每个项目都设置在项目根部寻找一个`monkey.jungle`文件,如果它存在,则会使用它.然而,如果一个项目有不同的组织或更喜欢不同的Jungle文件名称,那么通过进入 *File > 首选 > 设置*和编辑 *Monkey C*设置可以轻松设置Jungle文件位置:
+默认情况下，每个项目都会在项目根目录查找 `monkey.jungle` 文件，并在找到时使用它。如果项目采用不同的目录结构，或希望使用其他 Jungle 文件名，可以通过 *文件 > 首选项 > 设置* 编辑 *Monkey C* 设置来指定 Jungle 文件位置：
 
 
 ![Visual Studio Code 中的 Jungle 文件规范](/connect-iq/resources/programmers-guide/vscode-jungles.png)
 
 ## 从命令行使用 Jungles
 
-对于那些更喜欢使用`monkeyc`[shell command](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands)来构建项目而不是视觉工作室代码的人来说,需要`-f`选项,并接受由半柱 (`;`) 或柱 (`:`) 分开的 list林文件列表:
+如果您更喜欢使用 `monkeyc`[Shell 命令](/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands)而不是 Visual Studio Code 构建项目，则需要使用 `-f` 选项，并提供由分号 (`;`) 或冒号 (`:`) 分隔的 Jungle 文件列表：
 
 ```
 monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
@@ -337,25 +337,23 @@ monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
 
 取而代之的是`-z`选项指定资源路径,`-x`选项指定构建排除,`-m`选项指定表格文件,以及指定源路径的功能已经过时,将在未来的SDK版本中被删除.以下是如何工作的一般描述:
 
-- 在使用`-f`选项指定一个林文件时,首先将[default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用于该项目之前,然后将指定的林文件应用于
+- 使用 `-f` 选项指定 Jungle 文件时，会先将[默认 Jungle 文件](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目，然后应用指定的 Jungle 文件。
 
 - 如果`-f`选项后提供了多个Jungle文件,则将优先考虑列表中的最后一个Jungle文件中的构建说明
 
-- 如果没有指定资源或源选项,编译器将试图将[default Jungle file](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目中
+- 如果未指定资源或源代码选项，编译器会尝试将[默认 Jungle 文件](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目中。
 
 - 不允许使用`-f`选项和任何过时选项的组合,并会导致编译错误
 
 
-项目明示文件必须在命令行传递的林文件中指定,任何林都可以包含此规范.
+项目清单文件必须在通过命令行传递的 Jungle 文件中指定，任何 Jungle 文件都可以包含此声明。
 
 ```
 project.manifest = manifest.xml
 ```
 
-在提供的林文件集中只能定义一个表格文件.当 relative林文件中使用相对路径时,路径将与 Jung林文件的主目录解决.`default.jungle`中的相对路径将与发现的表格文件的主目录解决.
+提供的 Jungle 文件集合中只能定义一个清单文件。在 Jungle 文件中使用相对路径时，路径相对于该 Jungle 文件所在目录解析。`default.jungle` 中的相对路径则相对于找到的清单文件所在目录解析。
 
 ** 注:**使用`-m`,`-x`,`-z`和/或在命令行提供源文件的遗产项目将导致编译器警告.
 
-抵制冲动...做出...参考...
-
-当发现多个表现时,一个必须摧毁另一个并吸收它的力量,成为最强大的表现.
+请勿在多个清单之间重复定义项目。

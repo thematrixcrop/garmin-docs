@@ -9,7 +9,7 @@ title: "Graphics"
 
 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象用于绘制图形表面.主要设备表面为查看对象方法[View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function),[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function),和 .可以使用[Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)和[Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)方法查询表面的大小.
 
-| 原语或操作 | Draw | Fill | API 级别 | 备注 |
+| 原语或操作 | 描边 | 填充 | API 级别 | 备注 |
 | --- | --- | --- | --- | --- |
 |设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
 |设置笔宽度| [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
@@ -35,7 +35,7 @@ title: "Graphics"
 
 文字可以使用[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)方法绘制.[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象还可用方法获取一个字体字符串的文字宽度和高度.请注意,在[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象之外的图形模块中也可使用文本尺寸方法.
 
-| Operation | Function | API 级别 |
+| 操作 | 函数 | API 级别 |
 | --- | --- | --- |
 |绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
 |绘制一个角度的文本| [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
@@ -51,7 +51,7 @@ title: "Graphics"
 
 *自 API 级别 4.2.2*
 
-Garmin 设备的字体支持可以因设备而异.所有设备都支持单码位地图字体,但有些设备支持可扩展字体.如果设备支持可扩展字体,支持的字体将在[Device Reference](/connect-iq/device-reference/#device-reference)中发表为`Scalable Font`字体列表中.
+Garmin 设备的字体支持可能因设备而异。所有设备都支持单码位位图字体，但有些设备支持可缩放字体。如果设备支持可缩放字体，支持的字体会在[设备参考](/connect-iq/device-reference/#device-reference)的 `Scalable Font` 字体列表中列出。
 
 为了访问可扩展字体,您可以用设备参考中的名称调用[Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function)作为`:face`参数.`:face`参数还将采用一系列面孔名称.如果设备不支持您喜欢的选择,这允许您指定适合您的需求的备份字体面.您也可以指定像素中字体大小.
 
@@ -78,7 +78,7 @@ function draw(dc) {
 
 增添一些强大的新工具到[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/):
 
-| Function |目的| Accepts | API 级别 |
+| 函数 | 目的 | 接受的参数 | API 级别 |
 | --- | --- | --- | --- |
 | [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) |设置填充工具来绘制原始.| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
 | [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) |设置笔工具来绘制原始| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
@@ -92,7 +92,7 @@ function draw(dc) {
 
 ## 位图
 
-通过[resource compiler](/connect-iq/core-topics/resources/#bitmaps)可以添加比特图资源到可执行的中文中.你可以使用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)在运行时加载比特图,并使用[Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function)或[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)将其转载到[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)调用屏幕上.
+通过[资源编译器](/connect-iq/core-topics/resources/#bitmaps)可以将位图资源添加到可执行文件中。您可以使用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)在运行时加载位图，并使用[Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function)或[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)在[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)调用中将其绘制到屏幕上。
 
 ### 变换
 
@@ -118,7 +118,7 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 *自 API 级别 2.3.0*
 
-The [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：第一种是从已加载的位图资源生成对象，此时提供的位图会作为可操作的绘图表面；第二种是指定表面的宽度和高度，并可选地指定颜色调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且没有调色板。如果向初始化器提供了位图资源，则会忽略宽度、高度和调色板参数。
+[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：第一种是从已加载的位图资源生成对象，此时提供的位图会作为可操作的绘图表面；第二种是指定表面的宽度和高度，并可选地指定颜色调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且没有调色板。如果向初始化器提供了位图资源，则会忽略宽度、高度和调色板参数。
 
 如果一个[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)确实有一个色调,则可以使用[BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function)方法读取.该色调也可以使用[BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function)方法修改.所提供的色调必须与该位图的现有色调相同.图像中的所有像素将将颜色更改为每个色调指标的新颜色.请注意,资源编译器生成的位图带有色调,除非已指定了`disableTransparency`旗,否则在指定的色调末端将有一个额外的透明索引.
 
@@ -155,4 +155,4 @@ function bufferedBitmapFactory(options as {
 
 没错，就是这样。
 
-我很高兴我不是那个[to come up with this](https://www.reddit.com/r/EngineeringStudents/comments/dl6hfz/to_all_my_fellow_civil_engineers_i_give_you_ed/)的人.
+我很高兴提出这个点子的人不是我。

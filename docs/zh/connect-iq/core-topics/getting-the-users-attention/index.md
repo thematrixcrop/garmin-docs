@@ -3,7 +3,7 @@ title: "Getting the User's Attention"
 ---
 # 吸引用户的注意
 
-Your app may need to request the user's attention at certain times. Connect IQ offers ways to do this via the [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) module. The [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块提供 access to the vibration motor, tone generator, screen backlight and flashlight.
+您的应用可能需要在特定时刻提醒用户注意。Connect IQ 提供了 [Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块来实现这一点。[Toybox.Attention](/connect-iq/api-docs/Toybox/Attention/) 模块可访问振动马达、音调生成器、屏幕背光和手电筒。
 
 | API |描述| API 级别 |
 | --- | --- | --- |
@@ -14,17 +14,17 @@ Your app may need to request the user's attention at certain times. Connect IQ o
 
 ## 背光
 
-Garmin设备的后光行为取决于显示技术. *反射式*显示器如内存像素 (MIP) 通常保持后光 typ灭节能.用户有选择让后光启用按触摸和手势等不同的操作.这些操作将根据用户设置自动由系统处理.
+Garmin 设备的背光行为取决于显示技术。*反射式*显示屏（例如内存像素（MIP）显示屏）通常会关闭背光以节省电量。用户可以选择在触摸按钮或执行手势等操作时启用背光。系统会根据用户设置自动处理这些操作。
 
 AMOLED 等*自发光*显示屏没有背光，而是通常通过为每个像素供电来发光。显示屏亮度可以从“始终开启”模式下的低亮度变化到用户做出手势后的全亮度。用户可以选择设备的亮度设置，系统会自动遵循这些设置。
 
-采用[Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function)API,开发人员可以启用屏幕后光.在API 3.2.0及以上,后光亮度可以提供为0.0至1.0之间的值,而在API 3.2以下,可以设置为`true`或`false`.
+开发人员可以通过 [Attention.backlight()](/connect-iq/api-docs/Toybox/Attention/#backlight-instance_function) API 启用屏幕背光。在 API 3.2.0 及更高版本中，背光亮度可以设置为 0.0 到 1.0 之间的值；在 API 3.2 之前，则可以设置为 `true` 或 `false`。
 
 请注意,长期保持AMOLED显示器在全亮度上可能会损坏显示器.如果系统发现开发人员试图这样做,则会提出例外.后照明,特别是AMOLED设备,不应该作为手筒.在这些情况下,您可以使用[flashlight](#flashlight)API.
 
 ## 手电筒
 
-fēnix® 7X是第一台设备上有笔记本电筒的设备.
+fēnix® 7X 是首款配备设备端手电筒的产品。
 
 -   关闭、开启或闪烁模式
 
@@ -48,51 +48,51 @@ fēnix® 7X是第一台设备上有笔记本电筒的设备.
 
 |值|描述| API 级别 |
 | --- | --- | --- |
-| \`FLASHLIGHT\_MODE\_OFF\`odule) |关掉手灯| 4.2.0 |
-| \`FLASHLIGHT\_MODE\_ON\`odule) |点灯| 4.2.0 |
-| \`FLASHLIGHT\_MODE\_STROBE\`odule) |使用`:strobeMode`和`:strobeSpeed`选项来配置光盘.| 4.2.0 |
+| `FLASHLIGHT\_MODE\_OFF` |关闭手电筒| 4.2.0 |
+| `FLASHLIGHT\_MODE\_ON` |打开手电筒| 4.2.0 |
+| `FLASHLIGHT\_MODE\_STROBE` |将手电筒设置为频闪模式。使用 `:strobeMode` 和 `:strobeSpeed` 选项配置频闪。| 4.2.0 |
 
-`:color`选项接受 \`FLASHLIGHT\_COLOR\_WHITE\`odule), \`FLASHLIGHT\_COLOR\_GREEN\`odule),或 \`FLASHLIGHT\_COLOR\_RED\`odule). 并非每个设备都支持每种颜色.使用[Attention.hasFlashlightColor()](/connect-iq/api-docs/Toybox/Attention/#hasFlashlightColor-instance_function)检查是否支持颜色.
+`:color` 选项接受 `FLASHLIGHT\_COLOR\_WHITE`、`FLASHLIGHT\_COLOR\_GREEN` 或 `FLASHLIGHT\_COLOR\_RED`。并非所有设备都支持每种颜色。使用 [Attention.hasFlashlightColor()](/connect-iq/api-docs/Toybox/Attention/#hasFlashlightColor-instance_function) 检查是否支持指定颜色。
 
 选择`:brightness`接受以下值:
 
 |值|描述| API 级别 |
 | --- | --- | --- |
 | 0 to 100 |设置亮度从0到100%| 4.2.0 |
-| \`FLASHLIGHT\_BRIGHTNESS\_LOW\`odule) |设置亮度为设备低设置| 4.2.0 |
-| \`FLASHLIGHT\_BRIGHTNESS\_MEDIUM\`odule) |设置亮度为设备介质设置| 4.2.0 |
-| \`FLASHLIGHT\_BRIGHTNESS\_HIGH\`odule) |设置亮度为设备高设置| 4.2.0 |
+| `FLASHLIGHT\_BRIGHTNESS\_LOW` |设置为设备的低亮度| 4.2.0 |
+| `FLASHLIGHT\_BRIGHTNESS\_MEDIUM` |设置为设备的中亮度| 4.2.0 |
+| `FLASHLIGHT\_BRIGHTNESS\_HIGH` |设置为设备的高亮度| 4.2.0 |
 
 `:strobeMode`可以设置为以下:
 
 |值|描述| API 级别 |
 | --- | --- | --- |
-| \`FLASHLIGHT\_STROBE\_MODE\_BLINK\`odule) |设置横幅为`-- -- -- --`模式| 4.2.0 |
-| \`FLASHLIGHT\_STROBE\_MODE\_PULSE\`odule) |设置横幅为`=-_ =-_ =-_ =-_`模式| 4.2.0 |
-| \`FLASHLIGHT\_STROBE\_MODE\_BLITZ\`odule) |设置横幅为`... ... ...`模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_MODE\_BLINK` |设置为 `-- -- -- --` 闪烁模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_MODE\_PULSE` |设置为 `=-_ =-_ =-_ =-_` 脉冲模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_MODE\_BLITZ` |设置为 `... ... ...` 闪击模式| 4.2.0 |
 
 `:strobeSpeed`可以设置为以下:
 
 |值|描述| API 级别 |
 | --- | --- | --- |
-| \`FLASHLIGHT\_STROBE\_SPEED\_SLOW\`odule) |使用缓慢的静音模式| 4.2.0 |
-| \`FLASHLIGHT\_STROBE\_SPEED\_MEDIUM\`odule) |使用中度光谱模式| 4.2.0 |
-| \`FLASHLIGHT\_STROBE\_SPEED\_FAST\`odule) |使用快速光模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_SPEED\_SLOW` |使用慢速频闪模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_SPEED\_MEDIUM` |使用中速频闪模式| 4.2.0 |
+| `FLASHLIGHT\_STROBE\_SPEED\_FAST` |使用快速频闪模式| 4.2.0 |
 
 基于输入的[Attention.setFlashlightMode()](/connect-iq/api-docs/Toybox/Attention/#setFlashlightMode-instance_function)API返回以下内容:
 
 |值|描述| API 级别 |
 | --- | --- | --- |
-| \`FLASHLIGHT\_RESULT\_SUCCESS\`odule) | 手电筒模式设置成功 | 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_INVALID\_COLOR\`odule) |无法设置闪光灯模式,因为指定了无效的颜色| 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_INVALID\_BRIGHTNESS\`odule) |闪电模式无法设置,因为亮度不支持| 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_MODE\`odule) |无法设置闪光灯模式,因为该模式不支持| 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_SPEED\`odule) |闪光灯模式无法设置,因为光谱速度不支持| 4.2.0 |
-| \`FLASHLIGHT\_RESULT\_FAILURE\`odule) | 无法设置手电筒模式 | 4.2.0 |
+| `FLASHLIGHT\_RESULT\_SUCCESS` | 手电筒模式设置成功 | 4.2.0 |
+| `FLASHLIGHT\_RESULT\_INVALID\_COLOR` |无法设置手电筒模式，因为指定了无效颜色| 4.2.0 |
+| `FLASHLIGHT\_RESULT\_INVALID\_BRIGHTNESS` |无法设置手电筒模式，因为不支持指定亮度| 4.2.0 |
+| `FLASHLIGHT\_RESULT\_MODE` |无法设置手电筒模式，因为不支持指定模式| 4.2.0 |
+| `FLASHLIGHT\_RESULT\_SPEED` |无法设置手电筒模式，因为不支持指定频闪速度| 4.2.0 |
+| `FLASHLIGHT\_RESULT\_FAILURE` | 无法设置手电筒模式 | 4.2.0 |
 
 ## 音调
 
-Garmin devices often use audible tones for different events. The [Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) API 提供访问 the tone generator:
+Garmin 设备经常使用可听见的音调表示不同事件。[Attention.playTone()](/connect-iq/api-docs/Toybox/Attention/#playTone-instance_function) API 可访问音调生成器：
 
 ```typescript
     function playTone(options as Tone or {
