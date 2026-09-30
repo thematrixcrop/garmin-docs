@@ -5,10 +5,10 @@ title: "Stay Informed"
 
 ## Stay Informed
 
-Join the Garmin Connect IQ developer program to be notified about new versions and features of the Connect IQ SDK. By signing up, I agree to Garmin’s [privacy policy](https://www.garmin.com/en-US/privacy/global/).
+加入 Garmin Connect IQ开发者程序,以获悉Connect IQ SDK的新版本和功能.
 
 [Stay Informed](https://www.garmin.com/en-US/forms/developerstayinformed/)
 
 
 
-Last Updated: May 25, 2018
+最后更新: 2018 年 5 月 25 日

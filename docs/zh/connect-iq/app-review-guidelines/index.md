@@ -5,234 +5,234 @@ title: "Garmin Connect IQ 应用审核指南"
 
 **Last Updated:** Oct 13th, 2021
 
-Using the Connect IQ SDK, developers can create apps for Garmin Connect IQ compatible devices and distribute them via the Connect IQ store. Connect IQ is a strategic commitment for Garmin enabling you to bring your innovations to life through our mutual users, diverse device portfolio & powerful metrics. We’re glad you want to develop Connect IQ apps, and we want you to be successful.
+通过使用Connect IQ SDK,开发人员可以为Garmin Connect IQ兼容的设备创建应用程序,并通过Connect IQ商店发行它们.Connect IQ是Garmin的战略承诺,使您能够通过我们的共同用户,多元化的设备组合和强大的指标实现您的创新.我们很高兴您想开发Connect IQ应用程序,我们希望您成功.
 
-To help you create apps that best serve our users, we created these Connect IQ App Developer Guidelines (these “**Guidelines**”). These Guidelines apply to any development or creation using the Connect IQ SDK, such as device apps, widgets, watch faces, custom data fields, and audio content provider apps. For ease of reference, we use the term “app” to cover all of these categories.
+为了帮助您创建最适合用户的应用程序,我们创建了这些Connect IQ应用程序开发者指南 (这些指南******).这些指南适用于使用Connect IQ SDK的任何开发或创建,例如设备应用程序,小工具,视频面孔,定制数据字段和音频内容提供商应用程序.为了简单的参考,我们使用了appapp这个术语来涵盖所有这些类别.
 
-These Guidelines are not an exhaustive set of rules. It may be necessary for us to suspend or remove a potentially harmful app from the Connect IQ store, even if there is no specific violation of the Guidelines. In other words, by providing you with these Guidelines, we do not waive any of our rights under applicable law or the [Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html) (which you should review).
+这些指导方针不是一个完整的规则集.即使没有具体违反指导方针,我们可能需要暂停或删除一个潜在有害的应用程序从Connect IQ商店.换句话说,通过向您提供这些指导方针,我们不会放弃任何在适用的法律或[Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html)(您应该审查) 下的权利.
 
 ## Summary
 
-We encourage you to read the entire Guidelines, but here is a summary of the main points:
+我们鼓励您阅读整个指导方针,但以下是总结的主要点:
 
-1.  **Appropriate Content and Subject Matter.** You are responsible for your app. We may reject or remove an app for any content or subject matter we believe is dangerous, offensive, inappropriate or unlawful. You should also be aware that certain types of apps, such as aviation apps, medical apps, or apps that support user-generated content, may be allowed only if you comply with additional requirements.
+1. **适当的内容和主题.**您对您的应用程序负责.我们可能会拒绝或删除任何我们认为危险,冒犯,不合适或非法的内容或主题.您还应该意识到某些类型的应用程序,如航空应用程序,医疗应用程序或支持用户生成的内容的应用程序,只能允许您遵守额外的要求.
 
-2.  **Performance Requirements.** We want our users to have the best experience. If your app doesn’t function, diminishes battery life or other features of the Garmin device, or crashes frequently, it may be rejected or removed.
+2. ** 性能要求.** 我们希望我们的用户有最佳体验. 如果您的应用程序不正常运行,减轻了Garmine设备的电池寿命或其他功能,或经常崩,则可能会被拒绝或删除.
 
-3.  **Promoting and Monetizing Your App.** The user experience begins with how you promote, describe, and monetize your app. You must do so in a manner that is honest and fair to users and other apps
+3. ** 推广和钱你的应用程序.** 用户体验始于你如何推广,描述和钱你的应用程序.你必须以对用户和其他应用程序的诚实和公平的方式做到这一点
 
-4.  **Respecting the Rights of Others.** Do not use copyrighted content or other intellectual property of others without their permission. Your app cannot use data in a way that violates the [Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html) or privacy laws.
+4. **尊重他人权利.** 不要使用其他人的版权所有内容或其它知识产权.您的应用程序不能以违反[Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html)或隐私法的方式使用数据.
 
-5.  **Enforcement.** We expect our developers to comply, and we reserve the right to take steps to protect our users if these Guidelines are not followed.
+5. **执行.** 我们期望我们的开发人员遵守,如果不遵守这些指南,我们保留采取措施保护我们的用户.
 
 
-The remainder of these Guidelines provide additional details for these five topics.
+其他本指南提供了这些五个主题的额外详细信息.
 
 ## Detailed Guidelines
 
 **1.** **Appropriate Content and Subject Matter**
 
-You are ultimately responsible for your app. This includes your app’s software and content, your app’s description in the Connect IQ store, the behavior of your app’s users, and compliance with laws, regulations, and contracts. These Guidelines describe potential issues with content and subject matter that ask you to avoid.
+您最终负责您的应用程序.包括您的应用程序的软件和内容,您的应用程序在Connect IQ商店中的描述,应用程序用户的行为以及遵守法律,法规和合同.这些指南描述了您应避免的内容和主题的潜在问题.
 
 **a.** **禁止内容**
 
-Your app should not include content that is unlawful, harmful, obscene, inappropriate, or offensive. We prohibit apps from including, linking to, or encouraging the creation of the following types of content:
+您的应用程序不应包含非法,有害,丑,不合适或冒犯的内容.我们禁止应用程序包含,链接或鼓励创建以下类型的内容:
 
--   Sexual or obscene content: Including pornography, any content or services intended to be sexually gratifying, any content relating to bestiality or non-consensual sex, or explicit descriptions or displays or sexual organs or activities.
+- 性或淫秽内容:包括色情,任何旨在性取悦的内容或服务,任何有关动物性或非自愿性行为的内容,或明确描述或显示或性器官或活动的内容.
 
 -   Bullying, harassment, and abuse;
 
 -   Profanity or defamatory, fraudulent, infringing, or other unlawful content;
 
--   Spam or advertising-focused content that serves primarily to drive affiliate traffic to a website; or that has the primary purpose of serving ads;
+- 垃圾邮件或广告专注的内容,主要用于向网站推送关联营销;或主要目的是提供广告;
 
 -   Gambling;
 
--   Any other inappropriate or offensive Content: We reserve the right to reject or remove any app that, in our opinion, creates any risk of liability to Garmin, threatens any type of harm to our users or third parties, or could harm our reputation. This includes, but is not limited to, any content that directly or indirectly violates other of our terms or guidelines.
+- 其他任何不合适或冒犯的内容:我们保留拒绝或删除任何在我们看来,对Garmin造成任何责任风险,威胁我们的用户或第三方,或可能损害我们的声誉的应用程序的权利.包括,但不限于,任何直接或间接违反我们的条款或指南的内容.
 
 
 **b.** **Physical Safety**
 
-Your app must not threaten the physical safety or well-being of users or anyone else. We reserve the right to reject any app that we believe is unsafe or could, directly or indirectly, cause anyone harm. This includes apps that may create a false sense of security, such as “safety awareness” apps.
+您的应用程序不应威胁用户或其他人的身体安全或福祉.我们保留拒绝任何我们认为不安全或可以直接或间接伤害任何人的应用程序的权利.这包括可能产生虚假的安全感的应用程序,如安全意识应用程序.
 
-Here are some specific issues to avoid:
+以下是一些应避免的问题:
 
--   **Harmful Challenges:** Your app should not encourage or challenge users to act or use devices in a manner that risks physical harm to themselves or others. For example, apps should not challenge users to perform exercises or activities in a manner likely to result in injury or to drink excessive amounts of alcohol.
+- **有害挑战:** 您的应用程序不应鼓励或挑战用户以危及自身或他人身体伤害的方式采取行动或使用设备.例如,应用程序不应挑战用户以可能导致伤害或饮酒过度量的方式进行运动或活动.
 
--   **Dangerous Activities:** We prohibit apps that are designed to be used during dangerous activities such as scuba diving, free diving, skydiving, base-jumping, and extreme flight sports, even if your app is designed to work with one of Garmin’s products that has been designed for those activities. For example, you may create apps that add functionality to a Garmin Descent series dive watch, but your app should not be intended only for use *during* a user’s dive.
+- ** 危险活动:** 我们禁止用于潜水,自由潜水,天空跳跃,基跳和极端飞行运动等危险活动时使用的应用程序,即使你的应用程序是为了与这些活动设计的Garmin产品之一工作而设计的.例如,你可以创建应用程序,添加功能到Garmin Descent系列潜水手表,但你的应用程序不应该仅仅用于 *在*用户的潜水期间.
 
--   **Violence:** We do not allow apps to facilitate or encourage gratuitous violence, human rights violations, domestic violence, child or animal abuse, or similar actions that harm the user or others.
+- **暴力:** 我们不允许应用程序促进或鼓励无偿暴力,侵犯人权,家庭暴力,虐待儿童或动物,或类似伤害用户或他人的行为.
 
--   **Drugs and Dangerous Products:** Apps should not promote the use of illegal drugs, tobacco or vape products, excessive amounts of alcohol, unapproved substances, and illegal or dangerous products.
+- **毒品和危险产品:**应用程序不应促进使用非法毒品,烟草或吸烟产品,过度的酒精量,未经批准的物质以及非法或危险产品.
 
--   **Certain Aviation Use Cases:** We will allow appropriate aviation-themed apps, but in addition to any other legally required disclaimers, aviation apps (except watch faces) must include the following disclaimer: “WARNING: The app is intended only as an in-flight aid and should not be used as a primary information source. If the app contains a barometric altimeter, it will not function in a pressurized aircraft and should not be used in a pressurized aircraft.”
+- **某些航空用例:** 我们将允许适当的航空主题应用程序,但除了其他法律要求的免责声明外,航空应用程序 (除了时钟面) 必须包括以下免责声明: 警告:该应用程序仅用于飞行中辅助,不应作为主要信息来源.如果应用程序含有气ometric高度计,它不会在压力飞机中运行,也不应在压力飞机中使用.
 
--   **Regulated Activities**: You are solely responsible for ensuring that your app complies with laws and regulations and includes any legally-required disclaimer. We encourage you to seek independent legal advice where appropriate, especially if your app relates to regulated activities, including the practice of medicine, law, or financial services.
+- ** 监管活动**:您唯一负责确保您的应用程序符合法律法规,并包括法律要求的任何免责声明. 我们鼓励您在适当的情况下寻求独立的法律咨询,特别是如果您的应用程序涉及监管活动,包括医疗,法律或金融服务.
 
 
 **c.** **Medical Apps**
 
-If your app is intended for use in the diagnosis, cure, mitigation, treatment or prevention of disease or other conditions, you must be prepared to submit documentation from any relevant regulatory agencies proving the app is cleared for use in your target markets. Otherwise, you must update the app’s description, features and functionality to ensure it does not indicate any use for the purposes of diagnosis, cure, prevention, mitigation or treatment of disease or other conditions and is intended for informational purposes only. Even if your app has been cleared by a regulatory agency, we reserve the right to accept or reject the app based on these Guidelines.
+如果您的应用程序用于诊断,治疗,缓解,治疗或预防疾病或其他疾病,您必须准备向任何相关监管机构提交证明该应用程序在您的目标市场使用的许可证的文件.否则,您必须更新应用程序的描述,功能和功能,以确保它不表明用于诊断,治疗,预防,缓解或治疗疾病或其他疾病的目的,仅是为了信息目的.即使您的应用程序已被监管机构批准,我们保留根据本指南接受或拒绝应用程序的权利.
 
 **d.** **No Malware or Harmful Apps**
 
-We do not allow any apps that introduce or exploit security vulnerabilities. This includes, but is not limited to, apps that contain or enable any malicious software, including viruses, spyware, disabling code, or other software designed to damage a device or server or violate the privacy of our users. You are responsible for screening your apps for malicious software prior to submitting.
+我们不允许引入或利用安全漏洞的应用程序.包括但不限于包含或启用任何恶意软件,包括病毒,间软件,禁用代码或其他旨在损害设备或服务器或侵犯用户的隐私的软件的应用程序. 在提交之前,您负责检查您的应用程序是否存在恶意软件.
 
-**e.** **No Mining for Cryptocurrency**
+**e.** **没有加密货币的采矿**
 
-We prohibit apps from using Garmin devices to mine for cryptocurrency.
+我们禁止应用程序使用Garmin设备挖掘加密货币.
 
-**f.** **No Apps for Children under 13**
+**f.** **没有13岁以下儿童的应用程序
 
-We prohibit apps that are designed to be used by children under the age of 13. This prohibition does not apply to any general audience apps, unless you are aware that the app is used by children under the age of 13.
+我们禁止为13岁以下儿童使用的应用程序,除非您知道该应用程序由13岁以下儿童使用.
 
 **g.** **User-Generated Content**
 
-If you offer features that allow the publication of user-generated content to the general public or other users in your app, you are responsible for moderating the content, as necessary, to prevent any unlawful, infringing or inappropriate content. “User-generated content” includes text, images, sound, or other data submitted or uploaded by users or third parties.
+如果您在应用程序中提供允许公众或其他用户发布用户生成内容的功能,则您有责任根据需要调节内容,以防止任何非法,侵犯或不合适的内容. ser用户生成的内容包括用户或第三方提交或上传的文本,图像,声音或其他数据.
 
-You must:
+你必须:
 
 -   Have an agreement with end users that prohibits unlawful, harmful, obscene, inappropriate, or offensive content (see 1(b) – 禁止内容, above);
 
--   Maintain a method for users to report any inappropriate or prohibited content; and
+- 保持用户报告任何不合适或被禁止的内容的方法;
 
--   Publish a DMCA-compliant policy to remove content that infringes the intellectual property rights of third parties.
+- 发布符合DMCA的政策,以删除违反第三方知识产权的内容
 
 
-If you fail to moderate your app’s user-generated content, we reserve the right to take action to suspend or remove your app – just as if your own content violated these Guidelines.
+如果您未能调节应用程序的用户生成内容,我们保留采取行动暂停或删除应用程序的权利,就像您的内容违反本指南一样.
 
 **2.** **Performance Requirements**
 
-Our users expect a high-quality experience when using Garmin products. These Guidelines are intended to help ensure that apps perform to our users’ expectations.
+我们的用户在使用Garmin产品时期望高质量的体验.这些指南旨在帮助确保应用程序达到用户的期望.
 
-**a.** **Do Not Harm the Garmin Experience**
+**一个.** **不要伤害Garmin体验**
 
-Your app should do no harm. Apps must not interfere with the use or enjoyment of other apps or features, such as the activity experience, battery life, device performance, etc.
+你的应用程序不应造成伤害.应用程序不应干扰使用或享受其他应用程序或功能,如活动体验,电池寿命,设备性能等.
 
-Here are some specific issues to avoid:
+以下是一些应避免的问题:
 
--   **Interfering with Other Features.** We do not allow apps that damage, disrupt or access in an unauthorized manner the user’s Garmin device, other devices or computers, networks, servers, application programming interfaces (APIs), or services. The app should not require changes to system settings that will adversely affect the performance of other features on the device (e.g., requiring users to disconnect a Garmin device from a paired compatible smartphone).
+- **干扰其他功能.** 我们不允许破坏,破坏或未经授权访问用户的Garmin设备,其它设备或计算机,网络,服务器,应用程序编程接口 (API) 或服务的应用程序.应用程序不应要求对系统设置进行更改,这会对设备上的其他功能的性能产生不利影响 (例如,要求用户将Garmin设备从兼容的智能手机中断开).
 
--   **Drain on Battery Life.** Apps should not cause Garmin’s products to no longer meet their expected battery life, cause other apps to run more slowly, attempt to access data in an unauthorized manner, or otherwise disrupt the advertised or desired user experience.
+- ** 电池使用寿命. ** 应用程序不应导致Garmin的产品不再达到预期的电池使用寿命,导致其他应用程序运行更慢,未经授权访问数据,或以其他方式扰乱广告或希望的用户体验.
 
--   **Overriding the User’s Data**. We do not allow apps to override information previously synced to their Connect account, where such data fields typically come from the Garmin device itself (e.g., speed or distance). We want to maintain the integrity and reliability of data values collected or generated by Garmin’s devices and software.
+- ** 过关用户数据**.我们不允许应用程序过关以前与其Connect帐户同步的信息,这些数据字段通常来自Garmin设备本身 (例如速度或距离).我们希望维护Garmin设备和软件收集或生成的数据值的完整性和可靠性.
 
--   **Features Likely to Harm the Device**. Apps should not require or encourage the use of a Garmin device in a manner likely to harm the device. For example, the app should not be designed for use during activities that will expose the device to harmful levels of heat or water pressure.
+- **可能损害设备的功能**.应用程序不应要求或鼓励使用Garmin设备以可能损害设备的方式.例如,该应用程序不应用于将设备暴露于有害的温度或水压水平的活动中.
 
--   **Test Before Submitting**. By the time you submit, your app should be fully completed, tested, and ready for use. You should ensure that your app provides a stable, engaging, and responsive user experience. The app should not contain any broken links or functionality.
+- ** 在提交之前测试**. 在提交时,您的应用程序应该完全完成,测试和准备好使用.您应该确保您的应用程序提供稳定,有吸引力和响应的用户体验.应用程序不应该包含任何破损的链接或功能.
 
 
 **b.** **支持**
 
-We are not responsible for providing customer support for your app or fielding complaints. You should clearly explain to users your support policy and availability. It is your responsibility to follow through on whatever support commitments you make.
+我们不负责为您的应用程序提供客户支持或提交投诉.您应该明确向用户解释您的支持政策和可用性.您的责任是履行您所做出的任何支持承诺.
 
-**3.** **Respect the Rights of Others, including IP and Privacy Rights**
+**3.** **尊重他人权利,包括知识产权和隐私权**
 
 **a.** **No Infringement**
 
-You may not infringe any copyright, trademark, patent, trade secret, or any other form of intellectual property (“**IP”**). You must own or have a license to use all IP included in or used by your app. This includes your app’s software and content (other than user generated content, discussed below), your developer account name, as well as the logos, images, and content that you use to promote your app in the Connect IQ store.
+您不得侵犯任何版权,商标,专利,商业机密或任何其他形式的知识产权 (**IP**).您必须拥有或拥有使用您的应用程序所包含或使用的所有IP的许可证.这包括您的应用程序软件和内容 (除了用户生成的内容,下面讨论),您的开发者帐户名称,以及您在Connect IQ商店推广应用程序使用的标志,图像和内容.
 
-It is your responsibility to ensure IP compliance and non-infringement. Here are some tips (not legal advice):
+您的责任是确保知识产权的遵守和不违反. 以下是一些建议 (而不是法律建议):
 
--   **Obtain legal advice:** If you are unsure if your use of IP is infringing, check with a lawyer. It is not for us to decide whether your use of a third party’s IP may be infringing, properly used under a license, or fair use.
+- **获取法律建议:** 如果您不确定您使用知识产权是否违反法律,请咨询律师.我们不应决定您使用第三方的知识产权是否违反法律,是否在许可证下正确使用或公平使用.
 
--   **Get permission:** It is your responsibility to get permission as necessary from the IP owner before using their materials. Get permission in writing, keep a record of the permission, and make sure you’re complying with any terms and conditions.
+- **获取许可:** 在使用其材料之前,您的责任是从知识产权所有者那里获得必要的许可.
 
--   **Be careful using brand names and logos:** Your app may be the perfect complement for someone else’s product or brand. That doesn’t mean you have a right to use their intellectual property. Be careful before making any mention of a brand or using any logo or name that is not yours.
+- **请注意使用品牌名称和标志:**您的应用程序可能是对别人的产品或品牌的完美补充.这并不意味着您有权使用其知识产权.
 
--   **Ask the IP owner:** If you have questions about someone’s IP, you should ask the IP owner, not us (unless it is Garmin’s IP).
+- **请问IP所有者:** 如果您对某人的IP有问题,请问IP所有者,而不是我们 (除非这是Garmin的IP).
 
 
-**b.** **Garmin’s DMCA Policy**
+**b.** **Garmin的DMCA政策**
 
-Garmin maintains a DMCA policy for IP owners to notify Garmin of alleged infringement. In some situations, we may need to remove or suspend your app in accordance with our policy. You can find the policy and additional details in our [Terms of Use](https://www.garmin.com/en-US/legal/terms-of-use/).
+在某些情况下,我们可能需要根据我们的政策删除或暂停您的应用程序.您可以在我们的[Terms of Use](https://www.garmin.com/en-US/legal/terms-of-use/)中找到该政策和额外的详细信息.
 
-Garmin’s DMCA Policy is not a substitute for maintaining your own policy for moderating user-generated content. However, in some cases, we may need take action against your app as the result of infringing user-generated content.
+Garmin 的 DMCA 政策并非替代您对用户生成内容进行调节的政策. 然而,在某些情况下,由于违反用户生成内容,我们可能需要对您的应用采取行动.
 
 **c.** **Privacy and Data Use**
 
-If your app collects and processes any user data, including any personal data, you must comply with privacy laws and any other applicable laws and regulations, as well as all privacy requirements stated in the [Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html).
+如果您的应用程序收集和处理任何用户数据,包括任何个人数据,您必须遵守隐私法和其他适用的法律和法规,以及[Connect IQ Developer Agreement](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html)中所述的所有隐私要求.
 
-Here are some general considerations to keep in mind (not legal advice):
+以下是一些需要注意的一般考虑因素 (而不是法律建议):
 
--   **Data Minimization:** Think carefully before collecting and using personal data. It is a best practice (and often a required practice) that you take all steps to minimize the collection, processing, and retention of personal data as much as possible.
+- ** 数据最小化:** 在收集和使用个人数据之前,仔细考虑.这是一个最佳实践 (而且通常是必要的实践),你尽可能尽量减少个人数据的收集,处理和保留.
 
--   **Notice:** Publish and make available your own privacy policy or other notice concerning your processing of personal data and how users may contact you to exercise any of their privacy rights. You cannot rely on Garmin’s privacy policies, which only describe *Garmin’s privacy practices.*
+- **通知:** 发布并提供您的个人隐私政策或有关您处理个人数据的其他通知以及用户如何联系您,以行使其隐私权.您不能依赖Garmin的隐私政策,这些政策只描述Garmin的隐私实践.
 
--   **Permissions:** Where appropriate, seek permission from users prior to collecting location data or data that may be considered sensitive. After obtaining permission, use the data only in accordance with that permission. You are responsible for complying with any legal obligations to obtain consent, even if doing so would require you to take steps outside of the Connect IQ framework for your particular use case.
+- ** 许可:** 在适当的情况下,在收集位置数据或可能被认为敏感的数据之前,请向用户寻求许可.获得许可后,只根据该许可使用数据.您负责遵守任何获得同意的法律义务,即使这样做需要您采取措施,不符合您特定的使用情况的Connect IQ框架.
 
 
 **4.** **Promoting and Monetizing Your App**
 
-We want users to download, install, and use your app. Promoting your app starts with a strong description in the Connect IQ store but can also include advertising the app in your own channels. We expect you to advertise in a fair, lawful and transparent manner.
+我们希望用户可以下载,安装和使用您的应用程序. 推广您的应用程序从Connect IQ商店中得到一个强烈的描述开始,但也可以包括在您自己的道上广告. 我们希望您以公平,合法和透明的方式进行广告.
 
 **a.** **Describe Your App Accurately and Completely**
 
-You must not make any inaccurate or misleading statements. The information you provide about your app when submitting it to the app store should include a complete description of all features and any minimum requirements, limitations, or dependencies. This also applies to any other advertising you for your app, whether or not on a Garmin digital property, and any content or metadata associated with your app.
+您不得做出任何不准确或误导性的声明.在应用商店提交应用程序时,您提供的有关应用程序的信息应包括所有功能以及任何最低要求,限制或依赖性的完整描述.这也适用于您对应用程序的任何其他广告,无论是在Garmin数字产品上还是不上,以及与应用程序相关的任何内容或元数据.
 
-Specifically, you must:
+具体来说,您必须:
 
--   Use your or your company’s real name or an alias that does not impersonate another person or company;
+- 使用您或您的公司的真名或别名,不伪装成另一个人或公司;
 
 -   Keep your contact information up-to-date;
 
--   Avoid claiming any partnership or affiliation with Garmin, unless we have given you express written permission;
+- 避免与Garmin的任何合作伙伴关系或关联,除非我们明确书面授权;
 
--   Do not claim your app is compatible with any third-party system or protocol, if you have not obtained any required certification necessary to support such compatibility claim; and
+- 如果您未获得支持此类兼容性要求所需的必要认证,请勿声称您的应用程序与任何第三方系统或协议兼容;
 
--   Identify whether your app requires any specific Garmin or third-party hardware or software to operate. For example, if the app’s core features do not work without ANT+, you must disclose that. If a specific feature has a dependency, you must disclose that dependency when advertising that the specific feature.
+- 确定您的应用程序是否需要任何特定的Garmin或第三方硬件或软件来运行.例如,如果应用程序的核心功能没有ANT+工作,您必须披露这一点.如果某个特定功能具有依赖性,您必须披露这种依赖性当广告该特定功能.
 
 
 **b.** **兼容性 with Garmin Devices and ANT or ANT+ Communications Protocols**
 
-You must accurately disclose which Garmin devices support your app. Because Garmin regularly releases new products, we encourage you to keep this list up-to-date. At minimum, you must avoid falsely claiming that your app works with a certain Garmin device.
+你必须准确地披露 Garmin 支持你的应用程序的设备.由于 Garmin 定期发布新产品,我们鼓励你更新这个列表.至少,你必须避免虚假地声称你的应用程序与特定的 Garmin 设备工作.
 
-If your app supports ANT or ANT+ profiles, you must list all profiles your app supports. In addition, where applicable, your app must pass ANT+ certification.
+如果您的应用程序支持ANT或ANT+个人资料,您必须列出所有您的应用程序支持的个人资料.
 
 **c.** **No Review or Rating Manipulation**
 
-You must not perform or encourage any action that creates deceptive reviews or manipulates your app’s rating.
+您不得执行或鼓励任何创建欺骗性评论或操纵您的应用程序评级的行动.
 
-Specifically, you must **not**:
+具体来说,您必须****不**:
 
--   Disguise yourself as a user to publish positive reviews of your app or negative reviews of another developer’s app;
+- 伪装自己为用户,以发布对您的应用程序的积极评论或对另一个开发者应用程序的负面评论;
 
--   Pay for positive reviews, including by offering users discounts on your products in exchange for a positive review or rating – even if you disclose your material connection to the reviewer; and
+- 付出积极评价,包括为用户提供优惠的产品,以换取积极评价或评分,即使你向评价者透露你的相关性;
 
--   Submit a rating for your own app.
+- 提交自己的应用程序评级.
 
 
-**d.** **Monetization of Your App**
+**d.** **您的应用程序的货币化**
 
-You must identify whether or not your app requires payment. An app requires payment if the user must pay to access or use any primary feature of the app (i.e., those features that are advertised in the app’s description, excluding any features that are clearly labeled optional). In contrast, an app is not considered to require payment, if the only features that require payment or subscription are optional.
+您必须确定您的应用程序是否需要支付.如果用户必须支付才能访问或使用应用程序的任何主要功能 (即应用程序描述中广告的功能,不包括明确标记的选项).相反,如果唯一需要支付或订阅的功能是选项,则应用程序不被认为需要支付.
 
-You must be honest when describing any payment requirements, whether optional or not. You must:
+在描述任何付款要求时,你必须诚实,无论是自愿的还是不自愿的.
 
--   Disclose from the outset if your app is only free for a limited time or for a limited number of uses;
+- 您的应用程序是否仅限于有限时间或限量使用,从一开始就说明;
 
--   Inform users of your refund policy or lack thereof;
+- 通知用户您的退款政策或其缺乏;
 
--   Not “bait-and-switch” users by implying that a feature is available for free, when it is not; and
+- 没有bait-和-switch用户,如果没有,则暗示功能是免费的;以及
 
--   Obtain express consent for any auto-renewal of payments, regardless of whether required to do so by law.
+- 获得任何自动更新支付的明确同意,无论法律是否要求这样做.
 
 
 **5.** **Enforcement**
 
-Garmin intends to enforce these Guidelines by rejecting or removing apps, if necessary to stop or prevent violations. Garmin, in its discretion, may choose to contact developers and request changes to apps, but Garmin is not required to provide notice prior to suspending or removing an app.
+嘉敏打算通过拒绝或删除应用程序来执行这些指导方针,如果需要阻止或防止违规行为. 嘉敏可以根据其裁量选择联系开发人员并要求对应用程序进行更改,但在暂停或删除应用程序之前,嘉敏不需要通知.
 
 **a.** **Approval Process**
 
-When you submit an app for approval, we expect the app to be ready to meet all of our Guidelines. We endeavor to review the app and the related documentation as thoroughly and promptly as possible. Please keep in mind that even if an app is approved, we may later discover issues after the review process.
+当您提交应用程序进行批准时,我们预计该应用程序将准备好满足我们所有指南.我们尽量尽量彻底及及时审查应用程序和相关文档.请记住,即使应用程序获得批准,我们可能会在审查过程后发现问题.
 
 **b.** **Removal Process**
 
-If we find an issue with an app, whether discovered by us or brought to our attention by a user, we endeavor to provide an opportunity for the developer to resubmit with feedback. If the issue presents significant risks to Garmin or our users, we may immediately suspend the ability to download or use the app. We are under no obligation to provide you with any notice or process before taking action.
+如果我们发现应用程序存在问题,无论是我们发现的还是被用户提醒的,我们努力为开发人员提供重新提交反的机会.如果该问题对Garmin或我们的用户构成重大风险,我们可以立即暂停下载或使用应用程序的能力.我们没有义务在采取行动之前向您提供任何通知或程序.
 
-**c.** **Reservation of Rights**
+**c.** **权利保留**
 
-Garmin reserves all rights to take any actions necessary to protect its users, products, brand, reputation, etc. This means that even if we remove an app, we can still exercise all available legal or equitable remedies.
+嘉敏保留所有权采取必要的措施来保护其用户,产品,品牌,声誉等. 这意味着即使我们删除应用程序,我们仍然可以行使所有可用的法律或公平的补救措施.
 
 **d.** **Contact Us**
 
-Despite our right to enforce these Guidelines, we hope to avoid the need to take any action. We want your app to be a success. If you have questions about Connect IQ or these Guidelines, please feel free to [ask a question in our developer forums](https://forums.garmin.com/developer/connect-iq/).
+尽管我们有权执行这些指导方针,但我们希望避免采取任何行动.我们希望你的应用程序取得成功.

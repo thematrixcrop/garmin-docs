@@ -1,24 +1,24 @@
 ---
 title: "Submit an App"
 ---
-# Submit an App
+# 提交应用程序
 
-## Submit an App
+##提交应用程序
 
-Once your apps are fully tested and ready to go, you can publish and promote your apps.
+一旦您的应用程序已经完全测试并准备好使用,您可以发布和推广您的应用程序.
 
-### Prepare your app for submission:
+### 准备你的应用程序提交:
 
-1.  Make sure your app manifest specifies all the products you wish to support.
-2.  Use the *Monkey C: Export Project* command in the Visual Studio Code Monkey C extension to generate your .iq file that contains the binaries for all of the products you are supporting.
-3.  After you select it, you will be presented a wizard to create the IQ file.
-4.  Click *Finish* to generate an app package. You can also click *Next* to update the list of supported languages before exporting. If there are no errors, your apps are now ready to publish.
+1. 确保您的应用程序公布中指定您希望支持的所有产品.
+2. 在Visual Studio Code Monkey C扩展中使用*Monkey C:Export Project*命令生成您所支持的所有产品的二进制文件.
+3. 选择后,你将会被介绍一个巫师来创建智商文件.
+4. 点击*完成*生成应用程序包.您也可以点击*下一步*更新支持语言列表,然后出口.如果没有错误,您的应用程序现在已经准备好发布.
 
-### Publishing the First Version
+####发布第一版本
 
-The first step is to upload your IQ file to the Connect IQ Store.
+第一个步骤是将你的智商文件上传到"连接智商商店".
 
-Once the binary has been validated you will be able to add a description and screen shots. Be very specific in your description. This is your chance to get people interested in getting your app.
+一旦二进制验证后,您将能够添加描述和屏幕截图. 在您的描述中非常具体.这是您的机会让人们感兴趣获得您的应用程序.
 
 
 
@@ -30,10 +30,10 @@ Once the binary has been validated you will be able to add a description and scr
 
 #### Approval Process
 
-After you upload your app successfully, we will review it. You will be able to preview your app and download it yourself for testing. While approval is pending, your app will not appear in the Connect IQ Store. Once it’s approved, we will notify you. Then it will appear on the Connect IQ Store for all users to send to their devices.
+在你成功上传你的应用程序后,我们会审查它.你将能够预览你的应用程序,然后自己下载它进行测试.在批准等待期间,你的应用程序不会出现在连接智商商店.一旦它被批准,我们会通知你.然后它会出现在连接智商商店,让所有用户发送到他们的设备.
 
 #### General Guidelines
 
-We’re glad you want to develop Connect IQ apps, and we want you to be successful. Here are [some guidelines](/connect-iq/app-review-guidelines/) that you should keep in mind as you develop your apps. These guidelines will help you speed through the approval process.
+我们很高兴您想开发Connect IQ应用程序,我们希望您取得成功.在开发应用程序时,您应该记住的[some guidelines](/connect-iq/app-review-guidelines/).这些指南将帮助您加快审批过程.
 
-Keep in mind that these guidelines may change at any time.
+请记住,这些指南可能随时会发生变化.
