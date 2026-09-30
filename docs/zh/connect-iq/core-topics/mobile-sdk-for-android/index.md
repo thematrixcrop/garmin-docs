@@ -15,7 +15,7 @@ title: "Mobile SDK for Android"
 
 ## 其他要求
 
-要让配套应用与 Connect IQ 设备通信，用户还必须在手机上安装 Garmin Connect Mobile。Android 配套应用的所有通信都会通过 Garmin Connect Mobile 服务到达设备。使用无线连接类型初始化 SDK 时，系统会检查此要求；如果未安装 Garmin Connect Mobile，初始化将失败。如果将 `true` 传递给 `initialize` 的自动 UI 参数，系统会向用户显示消息，要求其安装或升级 Garmin Connect Mobile，并提供直接前往 Google Play 商店中该应用页面的方式。有关详细信息，请参阅[初始化失败时自动显示 UI 消息](#当初始化失败时自动显示ui消息)。
+要让配套应用与 Connect IQ 设备通信，用户还必须在手机上安装 Garmin Connect Mobile。Android 配套应用的所有通信都会通过 Garmin Connect Mobile 服务到达设备。使用无线连接类型初始化 SDK 时，系统会检查此要求；如果未安装 Garmin Connect Mobile，初始化将失败。如果将 `true` 传递给 `initialize` 的自动 UI 参数，系统会向用户显示消息，要求其安装或升级 Garmin Connect Mobile，并提供直接前往 Google Play 商店中该应用页面的方式。有关详细信息，请参阅“初始化失败时自动显示 UI 消息”一节。
 
 ##与SDK互动
 
