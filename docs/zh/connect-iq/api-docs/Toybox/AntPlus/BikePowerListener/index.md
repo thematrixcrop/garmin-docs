@@ -40,7 +40,7 @@ class MyBikePowerListener extends AntPlus.BikePowerListener {
 
     var items;
 
-    //! Initializes class variables
+    //! 初始化类变量
     function initialize() {
         BikePowerListener.initialize();
         items = [
@@ -50,26 +50,26 @@ class MyBikePowerListener extends AntPlus.BikePowerListener {
         ];
     }
 
-    //! Sets the isPowerUpdated boolean to true
-    //! Allows view to know an update has been received
-    //! Takes a data parameter which is the CalculatedPower object that has been
-    //! modified
+    //! 将 isPowerUpdated 布尔值设为 true
+    //! 使视图知道已收到更新
+    //! 接受 data 参数，该参数是已被修改的
+    //! CalculatedPower 对象
     function onCalculatedPowerUpdate(data) {
         items[ITEM_POWER].setValue(data.power);
     }
 
-    //! Sets the isDistanceUpdated boolean to true
-    //! Allows view to know an update has been received
-    //! Takes a data parameter which is the CalculatedWheelDistance object that
-    //! has been modified
+    //! 将 isDistanceUpdated 布尔值设为 true
+    //! 使视图知道已收到更新
+    //! 接受 data 参数，该参数是已被修改的
+    //! CalculatedWheelDistance 对象
     function onCalculatedWheelDistanceUpdate(data) {
         items[ITEM_DISTANCE].setValue(data.distance);
     }
 
-    //! Sets the isSpeedUpdated boolean to true
-    //! Allows view to know an update has been received
-    //! Takes a data parameter which is the CalculatedWheelSpeed object that has
-    //! been modified
+    //! 将 isSpeedUpdated 布尔值设为 true
+    //! 使视图知道已收到更新
+    //! 接受 data 参数，该参数是已被修改的
+    //! CalculatedWheelSpeed 对象
     function onCalculatedSpeedUpdate(data) {
         items[ITEM_SPEED].setValue(data.wheelSpeed);
     }
