@@ -14,7 +14,7 @@ title: "操作视图"
 ```xml
 <!-- layout.xml -->
 
-        <!-- ActionMenu hint -->
+        <!-- 操作菜单提示 -->
         <bitmap id="actionMenu" personality="
             system_icon_dark__hint_action_menu
             system_loc__hint_action_menu" />
@@ -95,13 +95,13 @@ class ActionViewDelegate extends WatchUi.BehaviorDelegate {
 ## 示例
 
 ```typescript
-// Helper: isInActionArea
+// 辅助函数：isInActionArea
 
-//! Function to see if a tap falls within the touch area for
-//! a action menu.
-//! @param x X coord of tap
-//! @param y Y coord of tap
-//! @return true if tapped, false otherwise
+//! 检查点击是否落在
+//! 操作菜单的触摸区域内。
+//! @param x 点击的 X 坐标
+//! @param y 点击的 Y 坐标
+//! @return 点击时为 true，否则为 false
 function isInActionArea(coord as Array<Numeric>) as Boolean {
     if (Styles.system_input__action_menu has :x1 &&
         Styles.system_input__action_menu has :y1 &&
