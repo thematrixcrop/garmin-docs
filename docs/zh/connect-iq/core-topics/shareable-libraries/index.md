@@ -31,47 +31,47 @@ Once the project is created, you can edit your supported products and permission
 ```cpp
 module FooBarrel {
 
-    (:Bars)           // Notice the annotations above the submodule names
+    (:Bars)           // 注意子模块名称上方的注解
     module Bars {
-        // Create a counter var for the "Current Bars"
+        // 创建“当前 Bars”的计数变量
         var currentBars = 0;
 
-        // Draw a "Bar"
+        // 绘制一个“Bar”
         function drawBar() {
-           // . . . draw a super awesome "Bar"
+           // ……绘制一个非常棒的“Bar”
            return Bar;
         }
 
-        // Increment the Bar counter
+        // 增加 Bar 计数器
         function addBar(currentBars) {
            bars = currentBars;
            bars ++;
            return bars;
         }
 
-        // Get the current Bars
+        // 获取当前 Bars
         function getCurrentBars() {
             return currentBars;
         }
     }
 
-    (:BarsToo)        // Notice this here too
+    (:BarsToo)        // 此处也有同样的注解
     module BarsToo {
         function fancyBars() {
-            // . . . Do a fancy thing
+            // ……执行一个花哨操作
             return somethingFancy;
         }
     }
 
-    (:Empty)          // An empty annotation
+    (:Empty)          // 空注解
     module Empty {
 
-        // A sub-module without an annotation
+        // 无注解的子模块
         module AlsoEmpty {
         }
     }
 
-    // This module throws an error
+    // 此模块会抛出错误
     module throwsError {
     }
 }
@@ -97,10 +97,10 @@ Developers can use annotations to denote sub-modules within their Barrels. Sub-m
 编译器将构建资源模块作为桶模块的子模块.例如,在称为`IconLibrary`的桶中,模块将像这样:
 
 ```cpp
-IconLibrary {                       // Barrel Level
-    Rez {                           // Rez Level
-        Drawables {                 // Drawables Level
-            var myIcon = 123;       // Resource
+IconLibrary {                       // 桶级别
+    Rez {                           // Rez 级别
+        Drawables {                 // Drawables 级别
+            var myIcon = 123;       // 资源
         }
     }
 }
@@ -151,9 +151,9 @@ Barr子桶由 comp子C编译器包装,以满足源代码的基本语法检查. *
 桶将自动添加到默认的桶林文件中.明示文件也将更新到这些桶依赖性.如果桶支持注释,这些必须为单个桶进行手动配置,这将将注释部分的桶进口到项目中:
 
 ```bash
-# All products include the code
-# annotated with 'Bars' and 'BarsToo'
-# of the 'FooBarrel' barrel
+# 所有产品都包含代码
+# 使用 'Bars' 和 'BarsToo' 注解
+# 的 'FooBarrel' 桶中的代码
 base.FooBarrel.annotations = Bars;BarsToo
 ```
 
@@ -166,26 +166,26 @@ base.FooBarrel.annotations = Bars;BarsToo
 一旦它们被添加到一个项目中,使用桶是直接的和简单的.开发人员不需要将桶进口到源文件中,但如果他们选择使用号的话,他们需要使用语句:
 
 ```cpp
-// This is a normal Toybox "using" statment
+// 这是普通的 Toybox “using” 语句
 using Toybox.System;
 
-// This sets up an alias for a "submodule" within a barrel
+// 这会为桶中的“子模块”设置别名
 using FooBarrel.Bars as Bars;
 ```
 
 在这个时候,已建立了号,并且该项目中已提供了桶代码.
 
 ```cpp
-// This is a normal Connect IQ call
+// 这是普通的 Connect IQ 调用
 System.println("Cool Bars");
 
-// This is a general Barrels call (No using statment needed)
+// 这是常规的 Barrels 调用（无需 using 语句）
 FooBarrel.BarsToo.fancyBars();
 
-// This is a specific Barrels call (Alias)
+// 这是特定的 Barrels 调用（别名）
 var globalBars = Bars.getCurrentBars();
 
-// This is a call to use a resource held in a Barrel
+// 这是使用桶中资源的调用
 var icon = UserInterface.loadResource(IconLibrary.Rez.Drawables.myIcon)
 ```
 
