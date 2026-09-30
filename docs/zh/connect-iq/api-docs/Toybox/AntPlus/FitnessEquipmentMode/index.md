@@ -58,7 +58,7 @@ API 级别 2.4.0
 
 ## 实例成员摘要 [collapse](#)
 
-- [**basicResistanceSupported**](#basicResistanceSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**basicResistance支持ed**](#basicResistance支持ed-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Flag for basic resistance training mode support.
 
@@ -66,18 +66,18 @@ API 级别 2.4.0
 
     The current training mode of the fitness equipment.
 
-- [**simulationSupported**](#simulationSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**simulation支持ed**](#simulation支持ed-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Flag for simulation training mode support.
 
-- [**targetPowerSupported**](#targetPowerSupported-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**targetPower支持ed**](#targetPower支持ed-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Flag for target power training mode support.
 
 
 ## 实例属性详情
 
-### var basicResistanceSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+### var basicResistance支持ed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
 Flag for basic resistance training mode support
 
@@ -107,7 +107,7 @@ Returns:
     [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) 枚举值
 
 
-### var simulationSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+### var simulation支持ed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
 Flag for simulation training mode support
 
@@ -122,7 +122,7 @@ Returns:
     `true` if simulation is supported, `false` otherwise
 
 
-### var targetPowerSupported as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+### var targetPower支持ed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
 Flag for target power training mode support
 

@@ -74,7 +74,7 @@ The following commands allow you to access the SDK tools and documentation from 
 | *Monkey C: Open Monkey Graph* | Opens the [Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference) tool |
 | *Monkey C: Open Monkey Motion* | Opens the [Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion) tool |
 | *Monkey C: Open SDK Manager* | Opens the Connect IQ SDK Manager |
-| *Monkey C: View Documentation* | Provides access to all of the Connect IQ SDK documentation |
+| *Monkey C: View 文档* | Provides access to all of the Connect IQ SDK documentation |
 
 ## Running the Program
 

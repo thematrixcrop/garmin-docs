@@ -7,7 +7,7 @@ Monkey Types is the gradual type system for the Monkey C language. The type syst
 
 Monkey Types has the following goals:
 
-1.  **Compatibility** - Breaking changes to the Monkey C language would require rework to thousands of Connect IQ apps. Monkey Types extends the Monkey C grammar but avoids breaking changes. Monkey Types is also designed to not rely on additional run time information. Because of this, you can use Monkey Types for apps that run on all Connect IQ compatible devices.
+1.  **兼容性** - Breaking changes to the Monkey C language would require rework to thousands of Connect IQ apps. Monkey Types extends the Monkey C grammar but avoids breaking changes. Monkey Types is also designed to not rely on additional run time information. Because of this, you can use Monkey Types for apps that run on all Connect IQ compatible devices.
 
 2.  **Ease of Use** - The philosophy of Monkey C is to be *the language you didn't know you already knew*. We want the experience of writing Monkey C to be like deja-vu. Likewise, Monkey Types borrows heavily from Kotlin, Swift, and Typescript in its design.
 

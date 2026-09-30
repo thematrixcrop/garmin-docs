@@ -54,7 +54,7 @@ Products supported by an app are listed in the `products` block of the manifest 
 </iq:products>
 ```
 
-### Supported Activities
+### 支持ed Activities
 
 *Since API level 5.2.0*
 

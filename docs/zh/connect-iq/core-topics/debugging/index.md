@@ -1,5 +1,5 @@
 ---
-title: "Testing and Debugging"
+title: "测试 and Debugging"
 ---
 # 测试和调试
 
@@ -70,7 +70,7 @@ data -- Examining data.
 running -- Running the program.
 stack -- Examining the stack.
 status -- Status inquiries.
-support -- Support facilities.
+support -- 支持 facilities.
 
 Type "help" followed by a class name for a list of commands in that class.
 Type "help all" for the list of all commands.

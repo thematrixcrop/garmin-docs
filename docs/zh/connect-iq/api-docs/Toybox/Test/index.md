@@ -11,12 +11,12 @@ The test module provides the tools to implement your own unit test and asserts i
 
 ## 另见：
 
-- [Core Topics - Unit Testing](/connect-iq/core-topics/unit-testing/)
+- [Core Topics - Unit 测试](/connect-iq/core-topics/unit-testing/)
 
 
 Example:
 
-Testing Implementation
+测试 Implementation
 
 ```
 using Toybox.Test;

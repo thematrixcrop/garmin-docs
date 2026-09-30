@@ -29,7 +29,7 @@ Once your device is paired, it can be managed in the device Sensors list. The us
 
 If you add support for the native pairing flow, users will be prompted to pair with your sensor when the data field is installed. Applications typically want to pair devices as part of a setup flow. You can use `System.exitTo(new Intent("system://pairing", {}))` to exit the user to the native sensor scanning process.
 
-## Testing in the Simulator
+## 测试 in the Simulator
 
 If you’d like to test your pairing code in the Connect IQ simulator, use the *Settings > Manage Sensors* option. Using the *Add* button will trigger your [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/).
 

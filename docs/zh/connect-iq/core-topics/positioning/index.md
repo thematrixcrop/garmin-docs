@@ -49,4 +49,4 @@ There are times where you may want control over what positioning solution is use
 | [`CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5`](/connect-iq/api-docs/Toybox/Position/#Configuration-module) | GPS L1, GLONASS, GALILEO L1, BEIDOU L1, GPS L5, GALILEO L5, BEIDOU L5 | 3.3.6 |
 | [`CONFIGURATION_SAT_IQ`](/connect-iq/api-docs/Toybox/Position/#Configuration-module) | Solution chosen dynamically for optimum power usage | 3.3.6 |
 
-Not every device supports every GPS configuration. You can use [Position.hasConfigurationSupport()](/connect-iq/api-docs/Toybox/Position/#hasConfigurationSupport-instance_function) to determine if the device supports a specific configuration.
+Not every device supports every GPS configuration. You can use [Position.hasConfiguration支持()](/connect-iq/api-docs/Toybox/Position/#hasConfiguration支持-instance_function) to determine if the device supports a specific configuration.

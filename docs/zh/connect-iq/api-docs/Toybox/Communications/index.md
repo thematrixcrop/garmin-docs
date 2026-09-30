@@ -5,13 +5,13 @@ title: "Module: Toybox.Communications"
 
 ## 概述
 
-The Communications Module provides tools for communication.
+通信模块提供通信工具。
 
-With the Communications module, widgets and apps will be able to communicate with a mobile phone via Bluetooth Low Energy (BLE). The mobile phone may be sharing data with the device, or it may act as a bridge between the app and the Internet. This allows the device to become part of the Internet of Things.
+通过通信模块，小部件和应用可通过蓝牙低功耗（BLE）与手机通信。手机可与设备共享数据，也可作为应用与互联网之间的桥接。这样设备便成为物联网的一部分。
 
 注意：
 
-This module was made available to foreground data fields with API 5.0.0
+此模块自 API 5.0.0 起对前台数据字段可用
 
 Since:
 
@@ -234,7 +234,7 @@ API 级别 1.0.0
 
 |
 
-An unknown error has occurred.
+未知错误。
 
 |
 | BLE\_ERROR | \-1 |
@@ -243,7 +243,7 @@ API 级别 1.0.0
 
 |
 
-A generic BLE error has occurred.
+通用 BLE 错误。
 
 |
 | BLE\_HOST\_TIMEOUT | \-2 |
@@ -252,7 +252,7 @@ API 级别 1.0.0
 
 |
 
-We timed out waiting for a response from the host.
+等待主机响应超时。
 
 |
 | BLE\_SERVER\_TIMEOUT | \-3 |
@@ -261,7 +261,7 @@ API 级别 1.0.0
 
 |
 
-We timed out waiting for a response from a server.
+等待服务器响应超时。
 
 |
 | BLE\_NO\_DATA | \-4 |
@@ -270,7 +270,7 @@ API 级别 1.0.0
 
 |
 
-Response contained no data.
+响应不含数据。
 
 |
 | BLE\_REQUEST\_CANCELLED | \-5 |
@@ -279,7 +279,7 @@ API 级别 1.0.0
 
 |
 
-The request was cancelled at the request of the system.
+请求被系统取消。
 
 |
 | BLE\_QUEUE\_FULL | \-101 |
@@ -288,7 +288,7 @@ API 级别 1.0.0
 
 |
 
-Too many requests have been made.
+请求过多。
 
 |
 | BLE\_REQUEST\_TOO\_LARGE | \-102 |
@@ -297,7 +297,7 @@ API 级别 1.0.0
 
 |
 
-Serialized input data for the request was too large.
+请求的序列化输入数据过大。
 
 |
 | BLE\_UNKNOWN\_SEND\_ERROR | \-103 |
@@ -306,7 +306,7 @@ API 级别 1.0.0
 
 |
 
-Send failed for an unknown reason.
+发送失败，未知原因。
 
 |
 | BLE\_CONNECTION\_UNAVAILABLE | \-104 |
@@ -315,7 +315,7 @@ API 级别 1.0.0
 
 |
 
-No BLE connection is available.
+无可用 BLE 连接。
 
 |
 | INVALID\_HTTP\_HEADER\_FIELDS\_IN\_REQUEST | \-200 |
@@ -324,7 +324,7 @@ API 级别 1.0.0
 
 |
 
-Request contained invalid http header fields.
+请求包含无效的 HTTP 头字段。
 
 |
 | INVALID\_HTTP\_BODY\_IN\_REQUEST | \-201 |
@@ -333,7 +333,7 @@ API 级别 1.0.0
 
 |
 
-Request contained an invalid http body.
+请求包含无效的 HTTP 正文。
 
 |
 | INVALID\_HTTP\_METHOD\_IN\_REQUEST | \-202 |
@@ -342,7 +342,7 @@ API 级别 1.0.0
 
 |
 
-Request used an invalid http method.
+请求使用了无效的 HTTP 方法。
 
 |
 | NETWORK\_REQUEST\_TIMED\_OUT | \-300 |
@@ -351,7 +351,7 @@ API 级别 1.0.0
 
 |
 
-Request timed out before a response was received.
+在收到响应前请求超时。
 
 |
 | INVALID\_HTTP\_BODY\_IN\_NETWORK\_RESPONSE | \-400 |
@@ -360,7 +360,7 @@ API 级别 1.0.0
 
 |
 
-Response body data is invalid for the request type.
+响应正文数据对请求类型无效。
 
 |
 | INVALID\_HTTP\_HEADER\_FIELDS\_IN\_NETWORK\_RESPONSE | \-401 |
@@ -369,7 +369,7 @@ API 级别 1.0.0
 
 |
 
-Response contained invalid http header fields.
+响应包含无效的 HTTP 头字段。
 
 |
 | NETWORK\_RESPONSE\_TOO\_LARGE | \-402 |
@@ -378,7 +378,7 @@ API 级别 1.0.0
 
 |
 
-Serialized response was too large.
+序列化响应过大。
 
 |
 | NETWORK\_RESPONSE\_OUT\_OF\_MEMORY | \-403 |
@@ -387,7 +387,7 @@ API 级别 3.0.0
 
 |
 
-Ran out of memory processing network response.
+处理网络响应时内存不足。
 
 |
 | STORAGE\_FULL | \-1000 |
@@ -396,7 +396,7 @@ API 级别 2.2.0
 
 |
 
-Filesystem too full to store response data.
+文件系统空间不足，无法存储响应数据。
 
 |
 | SECURE\_CONNECTION\_REQUIRED | \-1001 |
@@ -405,7 +405,7 @@ API 级别 2.3.0
 
 |
 
-Indicates an https connection is required for the request.
+表示请求需要 HTTPS 连接。
 
 |
 | UNSUPPORTED\_CONTENT\_TYPE\_IN\_RESPONSE | \-1002 |
@@ -414,7 +414,7 @@ API 级别 2.4.1
 
 |
 
-Content type given in response is not supported or does not match what is expected.
+响应中给出的内容类型不受支持或不匹配期望值。
 
 |
 | REQUEST\_CANCELLED | \-1003 |
@@ -423,7 +423,7 @@ API 级别 2.4.2
 
 |
 
-Http request was cancelled by the system.
+HTTP 请求被系统取消。
 
 |
 | REQUEST\_CONNECTION\_DROPPED | \-1004 |
@@ -432,7 +432,7 @@ API 级别 3.0.0
 
 |
 
-Connection was lost before a response could be obtained.
+在获取响应前连接丢失。
 
 |
 | UNABLE\_TO\_PROCESS\_MEDIA | \-1005 |
@@ -441,7 +441,7 @@ API 级别 3.0.2
 
 |
 
-Downloaded media file was unable to be read.
+下载的媒体文件无法读取。
 
 |
 | UNABLE\_TO\_PROCESS\_IMAGE | \-1006 |
@@ -450,7 +450,7 @@ API 级别 3.0.3
 
 |
 
-Downloaded image file was unable to be processed.
+下载的图像文件无法处理。
 
 |
 | UNABLE\_TO\_PROCESS\_HLS | \-1007 |
@@ -459,7 +459,7 @@ API 级别 3.0.10
 
 |
 
-HLS content could not be downloaded. Most often occurs when requested and provided bit rates do not match.
+HLS 内容无法下载。通常发生在请求和提供的比特率不匹配时。
 
 |
 
@@ -476,7 +476,7 @@ API 级别 1.3.0
 
 |
 
-How the OAuth token will be returned in the final step.
+OAuth 令牌在最终步骤如何返回。
 
 |
 
@@ -493,7 +493,7 @@ API 级别 1.3.0
 
 |
 
-How the OAuth request will be signed
+OAuth 请求将如何签名
 
 |
 
@@ -510,7 +510,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the GET method.
+指定使用 GET 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_PUT | 2 |
@@ -519,7 +519,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the PUT method.
+指定使用 PUT 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_POST | 3 |
@@ -528,7 +528,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the POST method.
+指定使用 POST 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_DELETE | 4 |
@@ -537,7 +537,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the DELETE method.
+指定使用 DELETE 方法执行请求。
 
 |
 
@@ -554,7 +554,7 @@ API 级别 1.3.0
 
 |
 
-Content type specifier for response is expected to be a json type. Content type string must be "application/json".
+响应的内容类型应为 JSON 类型。内容类型字符串必须为 "application/json"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_URL\_ENCODED | 1 |
@@ -563,7 +563,7 @@ API 级别 1.3.0
 
 |
 
-Content type specifier for response is expected to indicate url encoding. Content type string must be "application/x-www-form-urlencoded".
+响应的内容类型应表示 URL 编码。内容类型字符串必须为 "application/x-www-form-urlencoded"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_GPX | 2 |
@@ -572,7 +572,7 @@ API 级别 2.2.0
 
 |
 
-Content type specifier for response is expected to be a gpx type.
+响应的内容类型应为 GPX 类型。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_FIT | 3 |
@@ -581,7 +581,7 @@ API 级别 2.2.0
 
 |
 
-Content type specifier for response is expected to be a FIT type.
+响应的内容类型应为 FIT 类型。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_AUDIO | 4 |
@@ -599,7 +599,7 @@ API 级别 3.0.0
 
 |
 
-Content type specifier for response is expected to be plain text type. Content type string must be "text/plain"
+响应的内容类型应为纯文本类型。内容类型字符串必须为 "text/plain"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_HLS\_DOWNLOAD | 6 |
@@ -608,7 +608,7 @@ API 级别 3.0.10
 
 |
 
-Content type specifier for response is expected to be an HLS data type. Content type string must be either "application/vnd.apple.mpegurl" or "audio/mpegurl".
+响应的内容类型应为 HLS 数据类型。内容类型字符串必须为 "application/vnd.apple.mpegurl" 或 "audio/mpegurl"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_ANIMATION\_MANIFEST | 7 |
@@ -617,7 +617,7 @@ API 级别 3.1.0
 
 |
 
-Content type specifier for response is expected to be a CIQ animation manifest data type. Content type string must be "application/vnd.garmin.connectiq.animation.manifest".
+响应的内容类型应为 CIQ 动画清单数据类型。内容类型字符串必须为 "application/vnd.garmin.connectiq.animation.manifest"。
 
 |
 | HTTP\_RESPONSE\_CONTENT\_TYPE\_ANIMATION | 8 |
@@ -626,7 +626,7 @@ API 级别 3.1.0
 
 |
 
-Content type specifier for response is expected to be a CIQ animation data type. Content type string must be "image/vnd.garmin.connectiq.animation".
+响应的内容类型应为 CIQ 动画数据类型。内容类型字符串必须为 "image/vnd.garmin.connectiq.animation"。
 
 |
 
@@ -643,7 +643,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, battery is too low to start a WIFI connection.
+错误状态：电池电量过低，无法启动 WIFI 连接。
 
 |
 | WIFI\_CONNECTION\_STATUS\_NO\_ACCESS\_POINTS | 2 |
@@ -652,7 +652,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, no access-point is stored on the device.
+错误状态：设备上未存储接入点。
 
 |
 | WIFI\_CONNECTION\_STATUS\_UNSUPPORTED | 3 |
@@ -661,7 +661,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is not supported on current device.
+错误状态：当前设备不支持 WIFI。
 
 |
 | WIFI\_CONNECTION\_STATUS\_USER\_DISABLED | 4 |
@@ -670,7 +670,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by user.
+错误状态：WIFI 被用户禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_BATTERY\_SAVER\_ACTIVE | 5 |
@@ -679,7 +679,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by battery saver.
+错误状态：WIFI 被电池节省模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_STEALTH\_MODE\_ACTIVE | 6 |
@@ -688,7 +688,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by stealth mode.
+错误状态：WIFI 被隐身模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_AIRPLANE\_MODE\_ACTIVE | 7 |
@@ -706,7 +706,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by the device.
+错误状态：WIFI 被设备禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_UNKNOWN | 9 |
@@ -715,7 +715,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is not usable but status is unknown.
+错误状态：WIFI 不可用但状态未知。
 
 |
 | WIFI\_CONNECTION\_STATUS\_CANNOT\_CONNECT\_TO\_ACCESS\_POINT | 10 |
@@ -724,7 +724,7 @@ API 级别 3.3.0
 
 |
 
-Specifies an error condition, WIFI can not connect to saved AccessPoint.
+错误状态：WIFI 无法连接到已保存的接入点。
 
 |
 | WIFI\_CONNECTION\_STATUS\_TRANSFER\_ALREADY\_IN\_PROGRESS | 11 |
@@ -733,7 +733,7 @@ API 级别 3.3.0
 
 |
 
-Specifies an error condition, WIFI transfer already in progress
+错误状态：WIFI 传输已在进行中
 
 |
 
@@ -750,7 +750,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a content type of application/x-www-form-urlencoded
+内容类型为 application/x-www-form-urlencoded
 
 |
 | REQUEST\_CONTENT\_TYPE\_JSON | 1 |
@@ -759,15 +759,15 @@ API 级别 1.2.0
 
 |
 
-Specifies a content type of application/json
+内容类型为 application/json
 
 |
 
 ### PackingFormat
 
-Image packing format used for image request.
+图像请求使用的图像打包格式。
 
-The packing format describes the encoding a requested image should use when being transmitted. The encoding used affects the transfer size, decoding time, and image quality.
+打包格式描述请求图像在传输时应使用的编码。编码影响传输大小、解码时间和图像质量。
 
 Since:
 
@@ -780,7 +780,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in the device native format, a lossless encoding that available on all devices. It is very efficient to decode, but often results in large transfer sizes so is slow to download.
+图像数据以设备原生格式编码，这是一种所有设备都可用的无损编码。解码效率很高，但通常导致较大的传输大小，因此下载较慢。
 
 |
 | PACKING\_FORMAT\_YUV | 1 |
@@ -789,7 +789,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in YUV format. This is a lossy encoding that is compressed, and is fast to load. It is ideal for photographic imagery with transparency.
+图像数据以 YUV 格式编码。这是有损编码，经压缩，加载速度快。适合带透明度的照片图像。
 
 |
 | PACKING\_FORMAT\_PNG | 2 |
@@ -798,7 +798,7 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in PNG format. This is a lossless encoding that is compressed, but is relatively slow to load. It is ideal for non-photographic imagery.
+图像数据以 PNG 格式编码。这是无损编码，经压缩，但加载相对较慢。适合非照片图像。
 
 |
 | PACKING\_FORMAT\_JPG | 3 |
@@ -807,13 +807,13 @@ API 级别 4.2.0
 
 |
 
-Image data is encoded in JPG format. This is a lossy encoding that is compressed, and is reasonably fast to load. It is ideal for photographic imagery.
+图像数据以 JPG 格式编码。这是有损编码，经压缩，加载速度合理。适合照片图像。
 
 |
 
 ### HlsBandwidth
 
-TVM will select the HLS audio stream with the highest bandwidth that's less than or equal to the maximum
+TVM 将选择带宽最高且不超过最大值的 HLS 音频流
 
 Since:
 
@@ -849,7 +849,7 @@ API 级别 1.2.0
 
 |
 
-Do not apply dithering to an image.
+不对图像应用抖动。
 
 |
 | IMAGE\_DITHERING\_FLOYD\_STEINBERG | 2 |
@@ -858,7 +858,7 @@ API 级别 1.2.0
 
 |
 
-Apply Floyd-Steinberg dithering to an image.
+对图像应用 Floyd-Steinberg 抖动。
 
 |
 
@@ -891,31 +891,31 @@ API 级别 6.0.0
 
 - [**cancelAllRequests**](#cancelAllRequests-instance_function)() as **Void**
 
-    Cancel all pending JSON and Image requests.
+    取消所有待处理的 JSON 和图像请求。
 
 - [**checkWifiConnection**](#checkWifiConnection-instance_function)(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**) as **Void**
 
-    Checks if an internet-enabled WIFI access point is visible and can be connected to.
+    检查是否有可用的互联网 WIFI 接入点并可连接。
 
 - [**emptyMailbox**](#emptyMailbox-instance_function)() as **Void** deprecated
 
-    Clear the contents of the mailbox.
+    清空邮箱内容。
 
 - [**encodeURL**](#encodeURL-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    Convert a URL String into a percent-encoded string.
+    将 URL 字符串转换为百分号编码字符串。
 
 - [**generateSignedOAuthHeader**](#generateSignedOAuthHeader-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\>, requestMethod as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), signatureMethod as [Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module), token as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**, tokenSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerKey as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), consumerSecret as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) deprecated
 
-    Generate the value for the "Authorization" header in an OAuth 1.0a request.
+    生成 OAuth 1.0a 请求中 "Authorization" 头的值。
 
 - [**getMailbox**](#getMailbox-instance_function)() as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) deprecated
 
-    Get the MailboxIterator for this Application's mailbox.
+    获取该应用邮箱的 MailboxIterator。
 
 - [**makeImageRequest**](#makeImageRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as { :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :maxWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :dithering as [Communications.Dithering](/connect-iq/api-docs/Toybox/Communications/#Dithering-module), :packingFormat as [Communications.PackingFormat](/connect-iq/api-docs/Toybox/Communications/#PackingFormat-module) }, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**) as **Void**) as **Void**
 
-    Initiate an image download request.
+    发起图像下载请求。
 
 - [**makeJsonRequest**](#makeJsonRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\> or **Null**, options as { :method as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), :headers as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) } or **Null**, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**) as **Void**) as **Void** deprecated
 
@@ -923,7 +923,7 @@ API 级别 6.0.0
 
 - [**makeOAuthRequest**](#makeOAuthRequest-instance_function)(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Communications.TokenResult](/connect-iq/api-docs/Toybox/Communications/#TokenResult-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>) as **Void**
 
-    Request an OAuth sign-in through Garmin Connect Mobile.
+    通过 Garmin Connect Mobile 请求 OAuth 登录。
 
 - [**makeWebRequest**](#makeWebRequest-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)\> or **Null**, options as { :method as [Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module), :headers as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), :responseType as [Communications.HttpResponseContentType](/connect-iq/api-docs/Toybox/Communications/#HttpResponseContentType-module), :context as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**, :maxBandwidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :fileDownloadProgressCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(totalBytesTransferred as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), fileSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**) as **Void** } or **Null**, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**) as **Void** or [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) or **Null**, context as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**) as **Void**
 
@@ -939,7 +939,7 @@ API 级别 6.0.0
 
 - [**openWebPage**](#openWebPage-instance_function)(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as **Void**
 
-    Request that GCM issue a phone notification that will open a web page.
+    请求 GCM 发出将打开网页的手机通知。
 
 - [**registerForOAuthMessages**](#registerForOAuthMessages-instance_function)(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(data as [Communications.OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/)) as **Void**) as **Void**
 
@@ -947,11 +947,11 @@ API 级别 6.0.0
 
 - [**registerForPhoneAppMessageErrors**](#registerForPhoneAppMessageErrors-instance_function)(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**) as **Void**
 
-    Register a callback for receiving Phone App message errors.
+    注册接收 Phone App 消息错误的回调。
 
 - [**registerForPhoneAppMessages**](#registerForPhoneAppMessages-instance_function)(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**) as **Void**
 
-    Register a callback for receiving Phone App messages.
+    注册接收 Phone App 消息的回调。
 
 - [**setMailboxListener**](#setMailboxListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(mailboxIterator as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)) as **Void**) as **Void** deprecated
 
@@ -959,15 +959,15 @@ API 级别 6.0.0
 
 - [**startSync**](#startSync-instance_function)() as **Void**
 
-    Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode.
+    退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 并以同步模式启动。
 
 - [**startSync2**](#startSync2-instance_function)(options as { :message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
 
-    Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode with the provided message.
+    退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 并以同步模式启动，带提供的消息。
 
 - [**transmit**](#transmit-instance_function)(content as [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, listener as [Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/)) as **Void**
 
-    Send data across the the BLE link.
+    通过 BLE 链路发送数据。
 
 
 ## 类型定义详情
@@ -1000,9 +1000,9 @@ API 级别 1.0.0
 
 ### **cancelAllRequests()** as **Void**
 
-Cancel all pending JSON and Image requests.
+取消所有待处理的 JSON 和图像请求。
 
-The number of active requests running in parallel is limited in the Connect IQ platform. This call will cancel all outstanding requests.
+Connect IQ 平台上并行运行的活动请求数量有限。此调用将取消所有未完成的请求。
 
 Since:
 
@@ -1016,11 +1016,11 @@ Parameters:
 
 - connectionStatusCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    A callback that will be invoked after the connection test has completed. This callback accepts a single dictionary parameter. This dictionary has two keys:
+    连接测试完成后将调用的回调。此回调接受单个字典参数。该字典有两个键：
 
-- :wifiAvailable `true` if an access point with internet access could be connected to, `false` otherwise
+- :wifiAvailable — 如果可以连接到具有互联网访问的接入点则为 `true`，否则为 `false`
 
-- :errorCode If :wifiAvailable is `false` the value will be a [WIFI\_CONNECTION\_STATUS\_\*](/connect-iq/api-docs/Toybox/Communications/#WIFI_CONNECTION_STATUS_LOW_BATTERY-const) indicating why the connection is not available.
+- :errorCode — 如果 :wifiAvailable 为 `false`，值将为 [WIFI\_CONNECTION\_STATUS\_\*](/connect-iq/api-docs/Toybox/Communications/#WIFI_CONNECTION_STATUS_LOW_BATTERY-const)，指示连接不可用的原因。
 
 
 
@@ -1034,7 +1034,7 @@ API 级别 3.2.0
 
 此方法可能在 System 4 之后移除。
 
-Clear the contents of the mailbox.
+清空邮箱内容。
 
 :::details 支持的设备
 
@@ -1201,22 +1201,22 @@ API 级别 1.0.0
 
 ### **encodeURL(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Convert a URL String into a percent-encoded string.
+将 URL 字符串转换为百分号编码字符串。
 
-The reserved characters in the string will be replaced with their corresponding hex-value pairs. This follows the URI-encoding scheme as detailed by RFC 3986.
+字符串中的保留字符将被替换为相应的十六进制值对。遵循 RFC 3986 中详述的 URI 编码方案。
 
 Parameters:
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL String to be encoded
+    要编码的 URL 字符串
 
 
 Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    A percent-encoded String
+    百分号编码的字符串
 
 
 另见：
@@ -1232,9 +1232,9 @@ API 级别 1.1.2
 
 **此项已弃用**
 
-This method may be removed after System 10.
+此方法可能在 System 10 之后移除。
 
-Generate the value for the "Authorization" header in an OAuth 1.0a request.
+生成 OAuth 1.0a 请求中 "Authorization" 头的值。
 
 The returned value can be set as the "Authorization" header for [makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function).
 
@@ -1246,23 +1246,23 @@ Parameters:
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The request URL
+    请求 URL
 
 - params — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The parameters of the request
+    请求参数
 
 - requestMethod — ([Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module)) —
 
-    An HTTP\_REQUEST\_METHOD\_\* value
+    HTTP\_REQUEST\_METHOD\_\* 值
 
 - signatureMethod — ([Communications.SigningMethod](/connect-iq/api-docs/Toybox/Communications/#SigningMethod-module)) —
 
-    An OAUTH\_SIGNING\_METHOD\_\* value
+    OAUTH\_SIGNING\_METHOD\_\* 值
 
 - token — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), null) —
 
-    The token given by the OAuth service
+    OAuth 服务提供的令牌
 
 - 可以为 `null`
 
@@ -1273,18 +1273,18 @@ Parameters:
 
 - consumerKey — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The key that identifies your application
+    标识应用的密钥
 
 - consumerSecret — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The consumer secret that is used to sign the request
+    用于签名请求的消费者密钥
 
 
 Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The value for the "Authorization" header
+    "Authorization" 头的值
 
 
 Since:
@@ -1297,7 +1297,7 @@ API 级别 1.3.0
 
 此方法可能在 System 4 之后移除。
 
-Get the MailboxIterator for this Application's mailbox.
+获取该应用邮箱的 MailboxIterator。
 
 :::details 支持的设备
 
@@ -1457,7 +1457,7 @@ Returns:
 
 - [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) —
 
-    Iterator for the mailbox
+    邮箱的迭代器
 
 
 另见：
@@ -1471,9 +1471,9 @@ API 级别 1.0.0
 
 ### **makeImageRequest(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), parameters as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as { :palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :maxWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :dithering as [Communications.Dithering](/connect-iq/api-docs/Toybox/Communications/#Dithering-module), :packingFormat as [Communications.PackingFormat](/connect-iq/api-docs/Toybox/Communications/#PackingFormat-module) }, responseCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(responseCode as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), data as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or **Null**) as **Void**)** as **Void**
 
-Initiate an image download request.
+发起图像下载请求。
 
-GCM will scale and dither the image based on the capabilities of the device, but the user will be able to pass additional options (like dithering it down to a one color image)
+GCM 将根据设备能力缩放和抖动图像，但用户可以传递额外选项（如将图像抖动为单色）
 
 注意：
 
@@ -1483,40 +1483,40 @@ Parameters:
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL of an image to request
+    要请求的图像的 URL
 
 - parameters — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), null) —
 
-    The Dictionary of keys and values
+    键值对的字典
 
-- Appended to the URL
+- 附加到 URL
 
 - 可以为 `null`
 
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Additional image options
+    额外的图像选项
 
 - :palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        The color palette to restrict the image dithering to. Using a smaller palette can reduce the size of the image data to speed up transfers
+        限制图像抖动的颜色板。使用较小的调色板可减小图像数据大小以加快传输速度
 
 - :maxWidth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The maximum width an image should be scaled to
+        图像应缩放的最大宽度
 
 - :maxHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The maximum height an image should be scaled to
+        图像应缩放的最大高度
 
 - :dithering — ([Communications.Dithering](/connect-iq/api-docs/Toybox/Communications/#Dithering-module)) —
 
-        The type of dithering to use when processing the image. Defaults to [IMAGE\_DITHERING\_FLOYD\_STEINBERG](/connect-iq/api-docs/Toybox/Communications/#IMAGE_DITHERING_FLOYD_STEINBERG-const)
+        处理图像时使用的抖动类型。默认为 [IMAGE\_DITHERING\_FLOYD\_STEINBERG](/connect-iq/api-docs/Toybox/Communications/#IMAGE_DITHERING_FLOYD_STEINBERG-const)
 
 - :packingFormat — ([Communications.PackingFormat](/connect-iq/api-docs/Toybox/Communications/#PackingFormat-module)) —
 
-        The format of the image data to request. Defaults to [PACKING\_FORMAT\_DEFAULT](/connect-iq/api-docs/Toybox/Communications/#PACKING_FORMAT_DEFAULT-const)
+        要请求的图像数据格式。默认为 [PACKING\_FORMAT\_DEFAULT](/connect-iq/api-docs/Toybox/Communications/#PACKING_FORMAT_DEFAULT-const)
 
 - responseCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1588,17 +1588,17 @@ Parameters:
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL being requested
+    正在请求的 URL
 
 - parameters — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     A Dictionary of keys and values
 
-- Appended to the URL for GET/DELETE request
+- 附加到 URL for GET/DELETE request
 
-- Set as the body for a POST/PUT request
+- 作为 POST/PUT 请求的正文
 
-- These values must be URL encoded
+- 这些值必须进行 URL 编码
 
 - 可以为 `null`
 
@@ -1612,7 +1612,7 @@ Parameters:
 
 - :method — ([Communications.HttpRequestMethod](/connect-iq/api-docs/Toybox/Communications/#HttpRequestMethod-module)) —
 
-        The HTTP method of the request. This option should be an HTTP\_REQUEST\_METHOD\_\* value.
+        请求的 HTTP 方法。此选项应为 HTTP\_REQUEST\_METHOD\_\* 值。
 
 - :headers — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1825,9 +1825,9 @@ API 级别 1.0.0
 
 ### **makeOAuthRequest(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Communications.TokenResult](/connect-iq/api-docs/Toybox/Communications/#TokenResult-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>)** as **Void**
 
-Request an OAuth sign-in through Garmin Connect Mobile.
+通过 Garmin Connect Mobile 请求 OAuth 登录。
 
-A notification will trigger on the phone, that when clicked, provides a web view that shows `requestUrl`. If the user grants permission to the app, then the callback registered by [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) will be called with an [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) from the OAuth response.
+手机将触发通知，点击后显示包含 `requestUrl` 的网页视图。如果用户授予应用权限，则调用 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForOAuthMessages-instance_function) 注册的回调，并传入 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/)。
 
 注意：
 
@@ -1849,11 +1849,11 @@ Parameters:
 
 - resultType — (TokenResult) —
 
-    An OAUTH\_RESULT\_TYPE\_\* value that specifies the format of the result
+    指定结果格式的 OAUTH\_RESULT\_TYPE\_\* 值
 
 - resultKeys — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The desired OAuth response values passed to the callback method. The keys map to the actual OAuth response keys, and the values map to the keys of the [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) data.
+    传递给回调方法的期望 OAuth 响应值。键映射到实际的 OAuth 响应键，值映射到 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) 数据的键。
 
 
 Example:
@@ -1915,7 +1915,7 @@ API 级别 1.3.0
 
 发起下载请求。
 
-Web requests are asynchronous. The supplied response callback method will be called when the request returns.
+Web 请求是异步的。提供的响应回调方法将在请求返回时调用。
 
 注意：
 
@@ -1925,15 +1925,15 @@ Parameters:
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL being requested
+    正在请求的 URL
 
 - parameters — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    A Dictionary of keys and values.
+    键值对的字典。
 
-- These values should not be URL encoded.
+- 这些值不应进行 URL 编码。
 
-- Can be `null`.
+- 可以为 `null`。
 
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
@@ -1961,7 +1961,7 @@ Parameters:
 
 - :responseType — ([Communications.HttpResponseContentType](/connect-iq/api-docs/Toybox/Communications/#HttpResponseContentType-module)) —
 
-        The format of the response.
+        响应格式。
 
 - This should be an [HTTP\_RESPONSE\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
 
@@ -1972,7 +1972,7 @@ Parameters:
 
 - :context — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-        A user-specific context object to be passed to the response callback. The callback will need to accept a third parameter if this value is populated.
+        传递给响应回调的用户特定上下文对象。如果填充了此值，回调需要接受第三个参数。
 
 - :mediaEncoding — ([Media.Encoding](/connect-iq/api-docs/Toybox/Media/#Encoding-module)) —
 
@@ -1980,19 +1980,19 @@ Parameters:
 
 - :maxBandwidth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        maximum bandwidth. TVM will select the audio stream with the highest bandwidth that's less than or equal to the maximum This option is only effective when processing HLS content
+        最大带宽。TVM 将选择带宽最高且不超过最大值的音频流。此选项仅在处理 HLS 内容时有效
 
 - :fileDownloadProgressCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-        a callback method which must accept two parameters
+        必须接受两个参数的回调方法
 
-- totalBytesTransferred: The total number of bytes transferred for the current file download
+- totalBytesTransferred：当前文件下载传输的总字节数
 
-- fileSize: The size of the file being downloaded. Note that this can be `null` if file size cannot be determined from the server.
+- fileSize：正在下载的文件大小。注意，如果无法从服务器确定文件大小，此值可能为 `null`。
 
-- This option is only supported for media file download progress
+- 此选项仅支持媒体文件下载进度
 
-- This option is supported since CIQ 3.2.0
+- 此选项自 CIQ 3.2.0 起支持
 
 
 - responseCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
@@ -2072,7 +2072,7 @@ Parameters:
 
 - errorMessage — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    A descriptive error message if a failure occurred. If the sync completes successfully, `null` should be passed to this method.
+    失败时的错误描述消息。如果同步成功完成，应将此方法传递 `null`。
 
 
 :::details 支持的设备
@@ -2204,7 +2204,7 @@ Parameters:
 
 - percentageComplete — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    An integer from 0 to 100 indicating the completion percentage.
+    0 到 100 的整数，表示完成百分比。
 
 
 :::details 支持的设备
@@ -2330,9 +2330,9 @@ API 级别 3.1.0
 
 ### **openWebPage(url as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), params as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as **Void**
 
-Request that GCM issue a phone notification that will open a web page.
+请求 GCM 发出将打开网页的手机通知。
 
-This method will push a phone notification that must be accepted by the user. If the used accepts it, a web page defined by this method will be opened in the default browser on the phone.
+此方法将推送必须由用户接受的手机通知。如果用户接受，将在手机默认浏览器中打开此方法定义的网页。
 
 注意：
 
@@ -2374,7 +2374,7 @@ API 级别 1.3.0
 
 注册用于接收 OAuth 消息的回调。
 
-The callback will be called once for each received OAuth message. If there are messages waiting for the app when this function is called, the callback will immediately be called once for each waiting message.
+每接收一条 OAuth 消息调用一次回调。如果调用此函数时有消息等待应用，回调将立即为每条等待消息调用一次。
 
 Parameters:
 
@@ -2405,9 +2405,9 @@ API 级别 1.3.0
 
 ### **registerForPhoneAppMessageErrors(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**)** as **Void**
 
-Register a callback for receiving Phone App message errors.
+注册接收 Phone App 消息错误的回调。
 
-The callback will be called when a message cannot be received. If there are messages waiting for the app when this function is called, the callback will immediately be called.
+当消息无法接收时调用回调。如果调用此函数时有消息等待应用，回调将立即被调用。
 
 Example:
 
@@ -2478,9 +2478,9 @@ API 级别 6.0.0
 
 ### **registerForPhoneAppMessages(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**)** as **Void**
 
-Register a callback for receiving Phone App messages.
+注册接收 Phone App 消息的回调。
 
-The callback will be called once for each message received. If there are messages waiting for the app when this function is called, the callback will immediately be called once for each waiting message.
+每接收一条消息调用一次回调。如果调用此函数时有消息等待应用，回调将立即为每条等待消息调用一次。
 
 Parameters:
 
@@ -2861,7 +2861,7 @@ API 级别 1.0.0
 
 ### **startSync()** as **Void**
 
-Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode.
+退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 并以同步模式启动。
 
 :::details 支持的设备
 
@@ -2986,7 +2986,7 @@ API 级别 3.1.0
 
 ### **startSync2(options as { :message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**)** as **Void**
 
-Exit the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) and launch it in sync mode with the provided message.
+退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 并以同步模式启动，带提供的消息。
 
 Parameters:
 
@@ -3081,9 +3081,9 @@ API 级别 4.0.4
 
 ### **transmit(content as [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**, listener as [Communications.ConnectionListener](/connect-iq/api-docs/Toybox/Communications/ConnectionListener/))** as **Void**
 
-Send data across the the BLE link.
+通过 BLE 链路发送数据。
 
-Support for transmittable types has been expanded over time.
+支持 for transmittable types has been expanded over time.
 
 - [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) (Since 6.0.0)
 

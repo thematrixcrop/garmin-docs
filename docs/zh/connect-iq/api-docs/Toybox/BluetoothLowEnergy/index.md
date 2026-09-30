@@ -261,7 +261,7 @@ API 级别 4.2.5
 
 |
 
-Peer Attempted to Reduce Key Security Level from a previous bond
+Peer Attempted to Reduce Key 安全 Level from a previous bond
 
 |
 
@@ -418,7 +418,7 @@ Pair the device and establish secure bonding. Device may be bonded as part of th
 
 - [**setScanState**](#setScanState-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) as **Void**
 
-    Starts the BLE Scanning Operations Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
+    Starts the BLE Scanning Operations Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as 广告 data is received.
 
 - [**stringToUuid**](#stringToUuid-instance_function)(str as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -736,7 +736,7 @@ API 级别 3.1.0
 
 Starts the BLE Scanning Operations
 
-Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
+Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as 广告 data is received.
 
 Since:
 

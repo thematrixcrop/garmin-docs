@@ -7,7 +7,7 @@ The developer dashboard now includes a Merchant Account tab. To begin the mercha
 
 After you complete the onboarding process, you must wait for approval. The verification process can take several days, and you may be asked to provide additional information. You will receive an email when the application is approved.
 
-## Supported Countries for Developers
+## 支持ed Countries for Developers
 
 The Connect IQ™ monetization system is available to developers with legal entities in the United States, Canada, Australia, Singapore, and most of the European Union. If you do not live or are not incorporated in any of the following countries, you cannot sign up for the monetization system:
 
@@ -29,7 +29,7 @@ The Connect IQ monetization system recognizes both sole proprietors and organiza
 
 After you begin receiving payouts, you cannot change your business entity type without contacting [`ConnectIQAppStoreAdmin@garmin.com`](mailto://ConnectIQAppStoreAdmin@garmin.com). Changing your business entity type after payouts are received will have implications on tax reporting for the year.
 
-## Legal Documentation
+## Legal 文档
 
 You must provide legal information to verify your business. The required legal documentation includes photo identification, proof of address, proof of tax information, VAT documentation, and other information based on your legal entity type.
 
@@ -39,7 +39,7 @@ You must provide legal information to verify your business. The required legal d
 | Sole Proprietorship | Constitutional document, proof of address, and proof of industry |
 | Organization | Registration document, proof of address, proof of industry, proof of ownership, proof of tax information, and VAT document |
 
-## Tax Documentation
+## Tax 文档
 
 To finish enrollment, you must provide tax documentation. The required tax documentation varies by country of incorporation. The system requires different forms of documentation based on your home or business address.
 

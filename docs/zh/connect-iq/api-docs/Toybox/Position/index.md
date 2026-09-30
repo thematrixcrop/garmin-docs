@@ -331,7 +331,7 @@ Enable special mode for aviation use-cases that require support for higher altit
 
     获取当前 [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)。
 
-- [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function)(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+- [**hasConfiguration支持**](#hasConfiguration支持-instance_function)(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
     Determines if the device supports a requested GPS configuration.
 
@@ -427,15 +427,15 @@ if (Position has :POSITIONING_MODE_AVIATION) {
     options[:mode] = Position.POSITIONING_MODE_AVIATION;
 }
 
-if (Position has :hasConfigurationSupport) {
+if (Position has :hasConfiguration支持) {
     if ((Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5) &&
-       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5)) {
+       Position.hasConfiguration支持(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5)) {
         options[:configuration] = Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1_L5;
     } else if ((Position has :CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1) &&
-       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1)) {
+       Position.hasConfiguration支持(Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1)) {
         options[:configuration] = Position.CONFIGURATION_GPS_GLONASS_GALILEO_BEIDOU_L1;
     } else if ((Position has :CONFIGURATION_GPS) &&
-       Position.hasConfigurationSupport(Position.CONFIGURATION_GPS)) {
+       Position.hasConfiguration支持(Position.CONFIGURATION_GPS)) {
         options[:configuration] = Position.CONFIGURATION_GPS;
     }
 } else if (Position has :CONSTELLATION_GLONASS) {
@@ -853,7 +853,7 @@ Since:
 
 API 级别 1.0.0
 
-### **hasConfigurationSupport(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
+### **hasConfiguration支持(config as [Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
 Determines if the device supports a requested GPS configuration
 

@@ -1,7 +1,7 @@
 ---
-title: "Garmin Connect IQ App Review Guidelines"
+title: "Garmin Connect IQ 应用审核指南"
 ---
-# Garmin Connect IQ App Review Guidelines
+# Garmin Connect IQ 应用审核指南
 
 **Last Updated:** Oct 13th, 2021
 
@@ -34,7 +34,7 @@ The remainder of these Guidelines provide additional details for these five topi
 
 You are ultimately responsible for your app. This includes your app’s software and content, your app’s description in the Connect IQ store, the behavior of your app’s users, and compliance with laws, regulations, and contracts. These Guidelines describe potential issues with content and subject matter that ask you to avoid.
 
-**a.** **Prohibited Content**
+**a.** **禁止内容**
 
 Your app should not include content that is unlawful, harmful, obscene, inappropriate, or offensive. We prohibit apps from including, linking to, or encouraging the creation of the following types of content:
 
@@ -92,7 +92,7 @@ If you offer features that allow the publication of user-generated content to th
 
 You must:
 
--   Have an agreement with end users that prohibits unlawful, harmful, obscene, inappropriate, or offensive content (see 1(b) – Prohibited Content, above);
+-   Have an agreement with end users that prohibits unlawful, harmful, obscene, inappropriate, or offensive content (see 1(b) – 禁止内容, above);
 
 -   Maintain a method for users to report any inappropriate or prohibited content; and
 
@@ -122,7 +122,7 @@ Here are some specific issues to avoid:
 -   **Test Before Submitting**. By the time you submit, your app should be fully completed, tested, and ready for use. You should ensure that your app provides a stable, engaging, and responsive user experience. The app should not contain any broken links or functionality.
 
 
-**b.** **Support**
+**b.** **支持**
 
 We are not responsible for providing customer support for your app or fielding complaints. You should clearly explain to users your support policy and availability. It is your responsibility to follow through on whatever support commitments you make.
 
@@ -183,7 +183,7 @@ Specifically, you must:
 -   Identify whether your app requires any specific Garmin or third-party hardware or software to operate. For example, if the app’s core features do not work without ANT+, you must disclose that. If a specific feature has a dependency, you must disclose that dependency when advertising that the specific feature.
 
 
-**b.** **Compatibility with Garmin Devices and ANT or ANT+ Communications Protocols**
+**b.** **兼容性 with Garmin Devices and ANT or ANT+ Communications Protocols**
 
 You must accurately disclose which Garmin devices support your app. Because Garmin regularly releases new products, we encourage you to keep this list up-to-date. At minimum, you must avoid falsely claiming that your app works with a certain Garmin device.
 

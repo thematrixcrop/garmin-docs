@@ -13,7 +13,7 @@ Before getting started with the installation on Mac or Windows, you'll need vers
 
 
 ```bash
-$ export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/current-sdk.cfg`/bin
+$ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
 For a more persistent addition, open `.bash_profile` in a text editor:
@@ -26,7 +26,7 @@ $ open ~/.bash_profile
 Then add the line below to the file and save the changes:
 
 ```bash
-export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/current-sdk.cfg`/bin
+export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
 ## Windows Installation

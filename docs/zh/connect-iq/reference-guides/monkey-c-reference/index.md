@@ -648,7 +648,7 @@ To throw an [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/), use T
 throw new Lang.Exception();
 ```
 
-If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/) and [Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). Refer to the [API Documentation](/connect-iq/api-docs/) for more details about the various [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) types.
+If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/) and [Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). Refer to the [API 文档](/connect-iq/api-docs/) for more details about the various [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) types.
 
 ## 函数
 

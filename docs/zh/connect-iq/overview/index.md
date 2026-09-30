@@ -17,7 +17,7 @@ Updated: August 25, 2026 11:17 AM
 
 [Get the SDK](/connect-iq/sdk/)
 
--   [API Documentation](/connect-iq/api-docs/)
+-   [API 文档](/connect-iq/api-docs/)
 -   [Programmer's Guide](/connect-iq/connect-iq-basics/)
 -   [How to Submit Your App](/connect-iq/submit-an-app/)
 

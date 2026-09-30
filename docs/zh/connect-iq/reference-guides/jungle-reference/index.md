@@ -135,7 +135,7 @@ rino7xx.sourcePath = $(rino7xx.sourcePath);handheld-source
 
 ### 本地化资源
 
-Localization strings are a kind of resource in Connect IQ, but have a slightly different syntax since multiple languages may be supported by a single device or device family. Suppose an application supports both English and Spanish, and all of the fēnix English localization resources are stored in a `fenix-resources-eng` directory, while the Spanish localization resources are kept in a `fenix-resources-spa` directory.
+本地化 strings are a kind of resource in Connect IQ, but have a slightly different syntax since multiple languages may be supported by a single device or device family. Suppose an application supports both English and Spanish, and all of the fēnix English localization resources are stored in a `fenix-resources-eng` directory, while the Spanish localization resources are kept in a `fenix-resources-spa` directory.
 
 ```
 # Set the fenix 5 English language resource location

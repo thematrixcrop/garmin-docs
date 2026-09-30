@@ -198,7 +198,7 @@ The `<defaults>` tag allows you to program the initial value when your app is fi
 
 End users will be able to view the settings you define within the Garmin Connect or Garmin Express UI. When app settings are changed while an app is running the [AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function) function is called. Apps can override this function and update accordingly. When dealing with date type settings that are set by Garmin Express or Garmin Connect, one should note that times are stored in UTC and that [Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function) should be used in place of [Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function) when working with such values to prevent unnecessary local time conversion.
 
-## Testing App Settings
+## 测试 App Settings
 
 An app settings editor tool is available within the Connect IQ simulator. Go to *File > Edit Persistent Storage > Edit Application.Properties data*. This tool will allow you to view the defined settings for a project, select values for each setting and send them to the simulator for testing.
 

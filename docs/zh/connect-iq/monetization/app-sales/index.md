@@ -5,7 +5,7 @@ title: "App Sales"
 
 After your application is approved, you are officially a merchant and can begin listing apps for sale. To list your app, select Upload an App from the developer dashboard. When asked if your app is monetized, select Yes, through Garmin CIQ merchant account. Select a price from the drop-down menu.
 
-## Supported Products
+## 支持ed Products
 
 When you list an app for sale, it will only be offered on these products:
 
@@ -19,7 +19,7 @@ When you list an app for sale, it will only be offered on these products:
 
 **Note:** This list is subject to change.
 
-## Supported Countries for Users
+## 支持ed Countries for Users
 
 Only users from the following countries can purchase monetized apps:
 

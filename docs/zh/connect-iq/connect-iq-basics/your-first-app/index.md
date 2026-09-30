@@ -46,7 +46,7 @@ Application properties like the app id, the app type, and the targeted devices
 
 The minimum SDK version allows you to configure device compatibility by ensuring that only devices that support, at a minimum, the SDK version you've selected will be enabled for your app. For example, if your app relies heavily on a feature of the **2.1.x** SDK, such as the **Sensor History** feature, you can set your minimum SDK version to **2.1.x** and the list of available devices will be pruned such that you cannot select an incompatible product.
 
-### Editing the Supported Products
+### Editing the 支持ed Products
 
 After creating the project, you will be presented with the project manifest, which is where metadata about your project like the name id, application id and supported products is maintained. Most of this will be auto-created by the *New Project* command, but you will need to edit the supported products:
 
@@ -95,7 +95,7 @@ The Monkey C extension provides a wizard to help developers side load an applica
 
 3.  In the command palette type "Build for Device" and select *Monkey C: Build for Device*
 
-4.  Select the product you wish to build for. If you are unable to choose a device for which to build (the menu appears empty), it means that there are no valid devices configured for your project. See [Editing the Supported Products](#editing-the-supported-products) for instructions.
+4.  Select the product you wish to build for. If you are unable to choose a device for which to build (the menu appears empty), it means that there are no valid devices configured for your project. See [Editing the 支持ed Products](#editing-the-supported-products) for instructions.
 
 5.  Choose a directory for the output and click *Select Folder*
 

@@ -24,7 +24,7 @@ From Visual Studio Code, Barrels can be created as a new project type:
 6.  Set the parent directory for your new project
 
 
-Once the project is created, you can edit your supported products and permissions in the *manifest.xml*. See [Editing the Supported Products](/connect-iq/connect-iq-basics/your-first-app/#editing-the-supported-products) 更多信息. A specific check is in place to ensure that developers cannot have a Barrel with the name "Toybox". The Barrel has now been created—now it's time to fill it!
+Once the project is created, you can edit your supported products and permissions in the *manifest.xml*. See [Editing the 支持ed Products](/connect-iq/connect-iq-basics/your-first-app/#editing-the-supported-products) 更多信息. A specific check is in place to ensure that developers cannot have a Barrel with the name "Toybox". The Barrel has now been created—now it's time to fill it!
 
 Developers can think of Barrels as custom modules. In fact this is exactly how they should be set up:
 

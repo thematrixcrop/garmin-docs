@@ -156,7 +156,7 @@ API 级别 2.2.0
 
     Right torque effectiveness.
 
-- [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+- [**separatePedalSmoothness支持**](#separatePedalSmoothness支持-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
     Define if pedal smoothness is separate.
 
@@ -263,7 +263,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-### var separatePedalSmoothnessSupport as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
+### var separatePedalSmoothness支持 as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
 Define if pedal smoothness is separate.
 
@@ -274,9 +274,9 @@ using Toybox.AntPlus;
 using Toybox.System;
 
 // Assumes AntPlus.BikePower.getTorqueEffectivenessPedalSmoothness(); already called
-var separatePedalSmoothnessSupport = TorqueEffectivenessPedalSmoothness.separatePedalSmoothnessSupport;
+var separatePedalSmoothness支持 = TorqueEffectivenessPedalSmoothness.separatePedalSmoothness支持;
 
-System.println("separatePedalSmoothnessSupport is: " + separatePedalSmoothnessSupport);
+System.println("separatePedalSmoothness支持 is: " + separatePedalSmoothness支持);
 ```
 
 Since:

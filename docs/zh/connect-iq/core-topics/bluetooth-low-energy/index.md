@@ -9,18 +9,18 @@ title: "Getting Started with Connect IQ BLE Development"
 
 When going through this guide, developers will want to keep a few things handy.
 
--   **Connect IQ BLE API Documentation**
+-   **Connect IQ BLE API 文档**
 
-    Having the [API Documentation](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/) close by will be critical (especially in the later steps of this document).
+    Having the [API 文档](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/) close by will be critical (especially in the later steps of this document).
 
 -   **Nordic nRF52 DK**
 
     The Connect IQ team has built out the Connect IQ SDK tools to be compatible with the [Nordic nRF52 DK](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52-DK) Bluetooth 5 and Bluetooth mesh Development Kit for nRF52810.
 
 
--   **Nordic Documentation Page**
+-   **Nordic 文档 Page**
 
-    The [Nordic Documentation](https://www.nordicsemi.com/DocLib?Product=nRF52832%20core%20documentation&tags=nRF52832%2CnRF52+DK) has links to all of the resources needed to use the nRF52 DK.
+    The [Nordic 文档](https://www.nordicsemi.com/DocLib?Product=nRF52832%20core%20documentation&tags=nRF52832%2CnRF52+DK) has links to all of the resources needed to use the nRF52 DK.
 
 -   **nRF Connect For Desktop**
 

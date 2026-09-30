@@ -229,7 +229,7 @@ connectIQ.openStore( MY_STORE_ID );
 
 ## Sending Messages
 
-You can send messages to your Connect IQ application on a connected device using any of the Java equivalent Monkey C data types (see *Supported Data Types* table below). Calling `sendMessage()` will deliver the message to your applications mailbox.
+You can send messages to your Connect IQ application on a connected device using any of the Java equivalent Monkey C data types (see *支持ed Data Types* table below). Calling `sendMessage()` will deliver the message to your applications mailbox.
 
 ```java
 List<Object> message = new ArrayList<String>() {"hello pi", 3.14159};
@@ -271,7 +271,7 @@ connectIQ.registerForAppEvents(device, app, new IQApplicationEventListener() {
 connectIQ.unregisterForAppEvents(device, app);
 ```
 
-## Supported Data Types
+## 支持ed Data Types
 
 | Java Data Type | Monkey C Type | Notes |
 | --- | --- | --- |

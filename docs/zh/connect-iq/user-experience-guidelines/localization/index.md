@@ -1,7 +1,7 @@
 ---
-title: "Localization"
+title: "本地化"
 ---
-# Localization
+# 本地化
 
 Garmin devices are available all over the world, and Connect IQ is a global marketplace. A single Connect IQ product may have different localized variants that support different languages or may have languages that have different character sets. Connect IQ allows a single device app to accommodate all of these variations.
 
@@ -80,7 +80,7 @@ When developing a Connect IQ app, you should consider what is necessary to adapt
 
 ## Best Practices
 
--   All Connect IQ devices support English, but not all devices support all languages. Supporting only English is not a localization strategy.
+-   All Connect IQ devices support English, but not all devices support all languages. 支持ing only English is not a localization strategy.
 
 -   Garmin devices allow the user to customize their preferred units for distance, elevation, height, pace, temperature and weight. Look at their preference before displaying any metric of those types.
 
@@ -88,6 +88,6 @@ When developing a Connect IQ app, you should consider what is necessary to adapt
 
 -   Use iconography when possible, but be cautious about the cultural significance of images and colors in different cultures.
 
--   Support multiple presentations of the date based on locale.
+-   支持 multiple presentations of the date based on locale.
 
 -   Avoid text entry steps when possible.

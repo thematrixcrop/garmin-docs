@@ -145,7 +145,7 @@ Throws:
 
 把给定数据存入该对象。
 
-Support for storing object types has been expanded over time.
+支持 for storing object types has been expanded over time.
 
 - [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) (Since 3.0.0)
 
