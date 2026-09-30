@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Cryptography"
+title: "模块：Toybox.Cryptography"
 ---
 # 模块：Toybox.Cryptography
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Cryptography"
 
 Cryptography 模块允许应用创建可加密和解密 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 对象的 [Cipher](/connect-iq/api-docs/Toybox/Cryptography/Cipher/) 对象。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -178,7 +178,7 @@ API 级别 3.0.0
 
 ### HashAlgorithm
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -224,7 +224,7 @@ MD5 算法存在已知漏洞，不应将其用于安全目的。
 
 ### CipherAlgorithm
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -252,7 +252,7 @@ Cipher 对象的 AES256 实现
 
 ### EncryptionMode
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -284,7 +284,7 @@ API 级别 3.0.0
 
 ### KeyPairAlgorithm
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -316,7 +316,7 @@ API 级别 3.0.0
 
 ### KeyAgreementProtocol
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -355,7 +355,7 @@ API 级别 3.0.0
 
 bytes 预期采用小端字节序。
 
-Parameters:
+参数：
 
 - algorithm — ([Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module)) —
 
@@ -515,7 +515,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)
 
@@ -524,11 +524,11 @@ Returns:
 - [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -543,20 +543,20 @@ Throws:
 
 生成经过密码学安全处理的随机字节。
 
-Parameters:
+参数：
 
 - size — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     请求的随机字节数
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     一个指定大小、填充了密码学随机字节的 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

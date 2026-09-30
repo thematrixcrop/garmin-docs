@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Array"
+title: "类：Toybox.Lang.Array"
 ---
 # 类：Toybox.Lang.Array
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Array 对象大小固定（不是链表），按数字索引，是一维的，并且可以将任意 Object（包括 Array）作为成员。Array 的键必须是 Number，但 Array 的值可以是任何类型的 Object。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -73,21 +73,21 @@ API 级别 1.0.0
 
 添加 Object 时，Array 大小会增加 1，新 Object 会插入到新索引处。
 
-Parameters:
+参数：
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要添加到 Array 的 Object
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     self
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -97,21 +97,21 @@ API 级别 1.3.0
 
 添加 Object 的 Array 时，Array 会按所提供 Array 的大小扩展，所有新元素都会从新索引开始插入。
 
-Parameters:
+参数：
 
 - array — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     要添加到数组中的对象数组
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     self
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -119,21 +119,21 @@ API 级别 1.3.0
 
 获取 Array 中 Object 的索引。
 
-Parameters:
+参数：
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要查找其索引的 Object
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Array 中所提供 Object 第一次出现的索引。如果未找到该 Object，则返回 -1。
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -143,21 +143,21 @@ API 级别 1.3.0
 
 如果找到传入的 Object，Array 大小将减少一，且其后的元素将向前移动到下一个较低的索引。如果 Array 中存在多个匹配项，则会移除索引最低的匹配 Object，而不会移除其他匹配 Object。
 
-Parameters:
+参数：
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要从 Array 中移除的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果找到对象的实例，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -167,21 +167,21 @@ API 级别 1.3.0
 
 对于找到的每个 Object 实例，Array 大小减一，其后的元素向下一个索引移动。
 
-Parameters:
+参数：
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要从 Array 中移除的 Object
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果找到 Object 的实例，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -189,14 +189,14 @@ API 级别 1.3.0
 
 返回一个新的 Array，其中包含源 Array 中按逆序排列的元素。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     一个元素顺序反转的新 Array
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -204,14 +204,14 @@ API 级别 1.3.0
 
 获取 Array 的大小。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Array 中的元素数
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -219,7 +219,7 @@ API 级别 1.0.0
 
 获取包含现有 Array 部分内容的新 Array。
 
-Parameters:
+参数：
 
 - startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
@@ -230,7 +230,7 @@ Parameters:
     新 Array 末尾的从零开始索引。包含直到 `endIndex` 之前的项目，但不包含 `endIndex`。如果提供负的 `endIndex`，则会从 Array 末尾开始偏移。如果 `endIndex` 为 `null`，切片将在最后一个元素处结束。超出范围的索引将截断到 Array 的边界。
 
 
-Example:
+示例：
 
 ```
 var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -245,14 +245,14 @@ var newArray2 = myArray.slice(-1, null); // [10]
 var myArray3 = myArray.slice(1, -1);     // [2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     一个包含从 `startIndex` 到 `endIndex` 元素的新 Array
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -260,14 +260,14 @@ API 级别 1.3.0
 
 对 Array 排序
 
-Parameters:
+参数：
 
 - comparator — ([Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type), null) —
 
     可用于指定对象相对于其他对象排序的对象。如果 `comparator` 为 `null`，则会使用默认比较器。默认比较器将按升序对值排序，并且能够比较 Numeric、Boolean 和 Char 值或 String 值。
 
 
-Example:
+示例：
 
 ```
 var myArray = [2, 1, 3.0f, 0.0d];
@@ -280,11 +280,11 @@ var myProblem = ["1", 1];
 myProblem.sort(null); // UnexpectedTypeException
 ```
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -297,7 +297,7 @@ Throws:
 
 此方法不会将 Array 的元素转换为 Strings，而是将整个 Array 转换为 String。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -310,13 +310,13 @@ System.println(myString[1]);               // UnexpectedTypeException
 System.println(myString.substring(0, 5));  // "[1, 2"
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Array 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

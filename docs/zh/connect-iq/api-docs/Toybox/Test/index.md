@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Test"
+title: "模块：Toybox.Test"
 ---
 # 模块：Toybox.Test
 
@@ -14,7 +14,7 @@ test 模块提供在源代码中实现自定义单元测试和断言的工具。
 - [Core Topics - Unit Testing](/connect-iq/core-topics/unit-testing/)
 
 
-Example:
+示例：
 
 测试实现
 
@@ -45,7 +45,7 @@ function aTestOfAssert(logger) {
 }
 ```
 
-Example:
+示例：
 
 上述示例的控制台输出
 
@@ -75,7 +75,7 @@ Ran 2 tests
 FAILED (passed=1, failed=0, errors=1)
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -116,14 +116,14 @@ API 级别 2.1.0
 
 如果测试结果为 `false`，则抛出异常。
 
-Parameters:
+参数：
 
 - test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     要测试是否为 `true` 的表达式
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -138,11 +138,11 @@ ASSERTION FAILED
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
@@ -152,7 +152,7 @@ Throws:
 
 传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
-Parameters:
+参数：
 
 - value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -163,7 +163,7 @@ Parameters:
     用于测试相等性的秒值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -179,11 +179,11 @@ ASSERTION FAILED
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
@@ -193,7 +193,7 @@ Throws:
 
 传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
-Parameters:
+参数：
 
 - value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -208,7 +208,7 @@ Parameters:
     用于标识断言的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -224,11 +224,11 @@ ASSERTION FAILED: x and y are not equal!
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
@@ -236,7 +236,7 @@ Throws:
 
 如果测试结果为 `false`，随后抛出开发者定义的 [String](/connect-iq/api-docs/Toybox/Lang/String/)。
 
-Parameters:
+参数：
 
 - test — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -247,7 +247,7 @@ Parameters:
     用于标识断言的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -262,11 +262,11 @@ ASSERTION FAILED: The assert is False for x.
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
@@ -276,7 +276,7 @@ Throws:
 
 传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
-Parameters:
+参数：
 
 - value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -287,7 +287,7 @@ Parameters:
     用于比较是否相等的值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -303,11 +303,11 @@ ASSERTION FAILED
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))
 
@@ -317,7 +317,7 @@ Throws:
 
 传入此函数的对象必须实现 [Object.equals()](/connect-iq/api-docs/Toybox/Lang/Object/#equals-instance_function) 方法，该方法会比较类型和值。
 
-Parameters:
+参数：
 
 - value1 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -332,7 +332,7 @@ Parameters:
     用于标识断言的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -348,10 +348,10 @@ ASSERTION FAILED: x and y are equal!
 Unhandled Exception
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Test.AssertException](/connect-iq/api-docs/Toybox/Test/AssertException/))

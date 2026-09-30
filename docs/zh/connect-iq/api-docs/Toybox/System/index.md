@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.System"
+title: "模块：Toybox.System"
 ---
 # 模块：Toybox.System
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.System"
 
 System 模块提供基本系统信息，包括访问时钟时间、设备设置、电池电量和内存使用情况。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -19,7 +19,7 @@ API 级别 1.0.0
 
 ### UnitsSystem
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -45,7 +45,7 @@ API 级别 1.0.0
 
 ### ScreenShape
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -73,7 +73,7 @@ API 级别 3.3.0
 
 ### ButtonInputs
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -196,7 +196,7 @@ API 级别 3.1.0
 
 ### ConnectionState
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -231,7 +231,7 @@ API 级别 3.0.0
 
 ### Language
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -565,7 +565,7 @@ API 级别 3.1.0
 
 用于显示模式的枚举类
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
@@ -602,7 +602,7 @@ API 级别 5.0.0
 
 与已连接手机关联的平台。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -680,14 +680,14 @@ API 级别 5.1.0
 
 香蕉永远不会嫌多。
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要输出的错误消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -698,7 +698,7 @@ if (bananasInBunch > MAX_BANANAS) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -708,7 +708,7 @@ API 级别 1.0.0
 
 此项将从应用内的任意位置正常退出系统。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -718,14 +718,14 @@ API 级别 1.0.0
 
 此函数只能由 watch-app 和小组件调用，并且只能针对 watch-app（包括原生活动和 Connect IQ 应用）及小组件。这是一个异步请求，用于显示确认对话框以启动 Intent。如果确认，当前应用将退出。否则，应用将继续运行而不退出。
 
-Parameters:
+参数：
 
 - intent — ([System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)) —
 
     要触发的 Intent
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -741,11 +741,11 @@ System.exitTo(targetApp);
 - [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Throws:
+抛出：
 
 - ([System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)) —
 
@@ -764,11 +764,11 @@ Throws:
 
 获取当前时钟时间。
 
-Returns:
+返回：
 
 - [System.ClockTime](/connect-iq/api-docs/Toybox/System/ClockTime/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -776,18 +776,18 @@ API 级别 1.0.0
 
 获取当前设备设置。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
 var mySettings = System.getDeviceSettings();
 ```
 
-Returns:
+返回：
 
 - [System.DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -851,7 +851,7 @@ API 级别 1.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
@@ -859,18 +859,18 @@ API 级别 5.0.0
 
 获取当前系统统计信息。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
 var myStats = System.getSystemStats();
 ```
 
-Returns:
+返回：
 
 - [System.Stats](/connect-iq/api-docs/Toybox/System/Stats/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -882,11 +882,11 @@ API 级别 1.0.0
 
 返回值通常在设备启动时从零开始，并会定期回绕。假设计时器从零开始，这将在重启后约 25 天发生，此后每约 50 天发生一次。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -894,14 +894,14 @@ API 级别 1.0.0
 
 检查应用程序的安装状态。
 
-Parameters:
+参数：
 
 - uri — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     指定应用的 URI
 
 
-Example:
+示例：
 
 有效的 URI 格式
 
@@ -910,18 +910,18 @@ manifest-id://[manifest ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 store-id://[app store ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果已安装应用，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -932,14 +932,14 @@ Throws:
 
 输出到控制台。
 
-Parameters:
+参数：
 
 - output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要打印的项目，通常是 [String](/connect-iq/api-docs/Toybox/Lang/String/)。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -947,20 +947,20 @@ API 级别 1.0.0
 
 输出到控制台，并附加行终止符。
 
-Parameters:
+参数：
 
 - output — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要打印的项目，通常是 [String](/connect-iq/api-docs/Toybox/Lang/String/)。
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
 System.println("Hello Monkey C!");
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0

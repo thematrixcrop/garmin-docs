@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Time"
+title: "模块：Toybox.Time"
 ---
 # 模块：Toybox.Time
 
@@ -42,7 +42,7 @@ Monkey C 中的日期和时间格式相对开放，提供了用于短格式、�
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Example:
+示例：
 
 格式化和打印日期
 
@@ -66,7 +66,7 @@ var dateString = Lang.format(
 System.println(dateString); // e.g. "16:28:32 Wed 1 Mar 2017"
 ```
 
-Example:
+示例：
 
 创建一个表示 2003 年 5 月 16 日的 Moment
 
@@ -83,7 +83,7 @@ var options = {
 var birthday = Gregorian.moment(options);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -99,7 +99,7 @@ API 级别 1.0.0
 
 ### DateFormat
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -134,7 +134,7 @@ Long 格式由 Numbers 和 Strings 混合组成，具体取决于调用的函数
 
 ### CurrentTime
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -190,7 +190,7 @@ API 级别 3.0.10
 
 此方法的行为与 [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function) 相同，但接受一个 `options` 参数，用于选择时间源。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -206,11 +206,11 @@ Parameters:
 - [Time.now()](/connect-iq/api-docs/Toybox/Time/#now-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
-Throws:
+抛出：
 
 - ([Time.RealTimeClockNotValidException](/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException/)) —
 
@@ -221,7 +221,7 @@ Throws:
 
 获取当前时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
-Example:
+示例：
 
 在 1989 年 12 月 31 日下午 5:00 CST 使用 now()
 
@@ -230,7 +230,7 @@ using Toybox.Time;
 var now = new Time.Moment(Time.now().value()); // UNIX epoch 631148400
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -244,7 +244,7 @@ Returns:
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -252,7 +252,7 @@ API 级别 1.0.0
 
 获取今天午夜的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
-Example:
+示例：
 
 在 1989 年 12 月 31 日下午 5:00 CST 使用 today()
 
@@ -261,7 +261,7 @@ using Toybox.Time;
 var now = new Time.Moment(Time.today().value()); // UNIX epoch 631087200
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -275,6 +275,6 @@ Returns:
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

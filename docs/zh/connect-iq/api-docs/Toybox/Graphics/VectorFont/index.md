@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.VectorFont"
+title: "类：Toybox.Graphics.VectorFont"
 ---
 # 类：Toybox.Graphics.VectorFont
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 VectorFont 对象由 [getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) 方法返回。
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 

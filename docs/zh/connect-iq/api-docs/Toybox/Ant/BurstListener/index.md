@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.BurstListener"
+title: "类：Toybox.Ant.BurstListener"
 ---
 # 类：Toybox.Ant.BurstListener
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 提供一组回调方法以处理 Ant SDK 中不同突发传输场景的类。
 
-Example:
+示例：
 
 显示如何扩展 BurstListener 类
 
@@ -57,7 +57,7 @@ class MyBurstListener extends Ant.BurstListener {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -86,7 +86,7 @@ API 级别 2.2.0
 
 突发接收成功完成时的回调
 
-Parameters:
+参数：
 
 - burstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
@@ -98,7 +98,7 @@ Parameters:
 - [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -106,14 +106,14 @@ API 级别 2.2.0
 
 突发接收通过无线传输失败时的回调
 
-Parameters:
+参数：
 
 - errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
     作为 [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量发生的突发故障类型。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -121,7 +121,7 @@ API 级别 2.2.0
 
 突发传输成功完成时的回调
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -129,13 +129,13 @@ API 级别 2.2.0
 
 突发传输通过无线传输失败时的回调
 
-Parameters:
+参数：
 
 - errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
     作为 [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量发生的突发故障类型。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

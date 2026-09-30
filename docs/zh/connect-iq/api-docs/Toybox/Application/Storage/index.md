@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Application.Storage"
+title: "模块：Toybox.Application.Storage"
 ---
 # 模块：Toybox.Application.Storage
 
@@ -9,7 +9,7 @@ Storage 模块为应用程序提供持久化存储。
 
 Storage 提供对持久磁盘存储的访问。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -41,13 +41,13 @@ API 级别 2.4.0
 
 ### **KeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
 ### **ValueType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) or [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type), [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)\> or **Null**
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -57,11 +57,11 @@ API 级别 2.4.0
 
 清空该应用的对象存储。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
@@ -72,7 +72,7 @@ Throws:
 
 从对象存储中删除指定的键。
 
-Parameters:
+参数：
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
@@ -84,11 +84,11 @@ Parameters:
 - [setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -109,14 +109,14 @@ Throws:
 
 符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values
 
-Parameters:
+参数：
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
     要从对象存储中获取的值所对应的键
 
 
-Returns:
+返回：
 
 - [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type) —
 
@@ -130,11 +130,11 @@ Returns:
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -164,7 +164,7 @@ Object Store 的大小存在限制，该限制可能因设备而异。如果达�
 
 符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values
 
-Parameters:
+参数：
 
 - key — ([Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type)) —
 
@@ -175,7 +175,7 @@ Parameters:
     要放入对象存储中的值。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Application.Storage;
@@ -200,11 +200,11 @@ var boolean = Storage.getValue("boolean");     // get value for "boolean" key
 - [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

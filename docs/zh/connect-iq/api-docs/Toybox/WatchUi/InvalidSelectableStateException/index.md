@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.InvalidSelectableStateException"
+title: "类：Toybox.WatchUi.InvalidSelectableStateException"
 ---
 # 类：Toybox.WatchUi.InvalidSelectableStateException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -57,6 +57,6 @@ API 级别 2.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.1.0

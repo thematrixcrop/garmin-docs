@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ViewLoop"
+title: "类：Toybox.WatchUi.ViewLoop"
 ---
 # 类：Toybox.WatchUi.ViewLoop
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示视图循环的对象，其中包含一组可滚动视图。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -153,7 +153,7 @@ API 级别 3.4.0
 
 指定视图转换的方向
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -194,25 +194,25 @@ API 级别 3.4.0
 
 根据方向将视图更改为视图循环中的下一个或上一个视图，并在转换后显示页面指示器。
 
-Parameters:
+参数：
 
 - direction — ([ViewLoop.Direction](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/#Direction-module)) —
 
     要将页面更改到的方向
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果视图已更改，则为 true，否则为 false，例如到达不可循环的循环起点或终点。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -223,7 +223,7 @@ Throws:
 
 ViewLoop 的构造函数
 
-Parameters:
+参数：
 
 - factory — ([WatchUi.ViewLoopFactory](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/)) —
 
@@ -246,11 +246,11 @@ Parameters:
         页面指示器的强调色。如果设备不支持强调色，则可能会忽略 :color 选项。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
-Throws:
+抛出：
 
 - ([Lang.ValueOutOfBoundsException](/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException/)) —
 

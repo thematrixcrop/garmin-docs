@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Background"
+title: "模块：Toybox.Background"
 ---
 # 模块：Toybox.Background
 
@@ -14,7 +14,7 @@ title: "Module: Toybox.Background"
 - [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -314,7 +314,7 @@ API 级别 2.3.0
 
 停止应用接收活动完成事件。
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -322,20 +322,20 @@ API 级别 3.0.10
 
 移除应用中指定类型的活动目标后台事件。
 
-Parameters:
+参数：
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     表示要移除的事件目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
-Example:
+示例：
 
 ```
 Background.deleteGoalEvent(GOAL_TYPE_STEPS);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -343,7 +343,7 @@ API 级别 2.3.0
 
 移除 OAuth 响应后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -487,7 +487,7 @@ API 级别 2.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -495,7 +495,7 @@ API 级别 3.2.0
 
 移除应用中活动的睡眠后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -503,7 +503,7 @@ API 级别 2.3.0
 
 移除应用中活动的步数后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -511,7 +511,7 @@ API 级别 2.3.0
 
 移除应用中活动的定时后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -519,7 +519,7 @@ API 级别 2.3.0
 
 移除应用中活动的唤醒后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -552,18 +552,18 @@ Array 和 Dictionary 可以包含 `null` 值或上述列出的任何类型。如
 
 如果由后台进程调用，此方法将退出；如果由主应用进程调用，则不会执行任何操作。
 
-Parameters:
+参数：
 
 - backgroundData — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要传递给主进程 [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 方法的对象。传递 `null` 不会覆盖尚未被父应用程序的 AppBase.onBackgroundData() 方法使用的先前数据值。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Background.ExitDataSizeLimitException](/connect-iq/api-docs/Toybox/Background/ExitDataSizeLimitException/)) —
 
@@ -574,14 +574,14 @@ Throws:
 
 获取是否已向 [registerForActivityCompletedEvent()](/connect-iq/api-docs/Toybox/Background/#registerForActivityCompletedEvent-instance_function) 注册后台事件
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForActivityCompletedEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -596,7 +596,7 @@ API 级别 3.0.10
 - [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -604,21 +604,21 @@ API 级别 2.3.0
 
 获取是否已向 [registerForGoalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForGoalEvent-instance_function) 注册后台事件。
 
-Parameters:
+参数：
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     表示要检查已注册后台事件的目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForGoalEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -628,7 +628,7 @@ API 级别 3.0.0
 
 这有助于确保不会在时间事件之间允许的五分钟最短间隔内调度新事件。
 
-Example:
+示例：
 
 在允许时立即注册新的临时后台事件
 
@@ -646,7 +646,7 @@ if (lastTime != null) {
 }
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -660,7 +660,7 @@ Returns:
 - [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -668,14 +668,14 @@ API 级别 2.3.0
 
 获取是否已向 [registerForOAuthResponseEvent()](/connect-iq/api-docs/Toybox/Background/#registerForOAuthResponseEvent-instance_function) 注册后台事件
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForOAuthResponseEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -819,14 +819,14 @@ API 级别 3.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForPhoneAppMessageEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -834,14 +834,14 @@ API 级别 3.2.0
 
 获取是否已向 [registerForSleepEvent()](/connect-iq/api-docs/Toybox/Background/#registerForSleepEvent-instance_function) 注册后台事件。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForSleepEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -849,14 +849,14 @@ API 级别 3.0.0
 
 获取是否已向 [registerForStepsEvent()](/connect-iq/api-docs/Toybox/Background/#registerForStepsEvent-instance_function) 注册后台事件。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForStepsEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -864,7 +864,7 @@ API 级别 3.0.0
 
 获取 [registerForTemporalEvent()](/connect-iq/api-docs/Toybox/Background/#registerForTemporalEvent-instance_function) 注册后台事件时使用的 Moment 或 Duration。
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -876,7 +876,7 @@ Returns:
 - [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -884,14 +884,14 @@ API 级别 3.0.0
 
 获取是否已向 [registerForWakeEvent()](/connect-iq/api-docs/Toybox/Background/#registerForWakeEvent-instance_function) 注册后台事件。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果通过 registerForWakeEvent() 注册了后台事件，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -899,7 +899,7 @@ API 级别 3.0.0
 
 注册应用，以便在活动完成时接收事件。
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -907,20 +907,20 @@ API 级别 3.0.10
 
 注册一个在用户达到指定目标时触发的后台事件。
 
-Parameters:
+参数：
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     表示要触发后台事件的目标类型的 [Application.GOAL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Application/#GOAL_TYPE_STEPS-const) 值
 
 
-Example:
+示例：
 
 ```
 Background.registerForGoalEvent(GOAL_TYPE_STEPS);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -930,7 +930,7 @@ API 级别 2.3.0
 
 系统收到 OAuth 响应时会触发此事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1074,7 +1074,7 @@ API 级别 2.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1082,7 +1082,7 @@ API 级别 3.2.0
 
 注册一个在设备上配置的睡眠时间触发的后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1092,7 +1092,7 @@ API 级别 2.3.0
 
 此事件仅由设备记录的步数触发，不会根据同步的步数触发。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1106,14 +1106,14 @@ API 级别 2.3.0
 
 一次只能注册一个时间事件。调用 `registerForTemporalEvent` 将覆盖之前注册的任何时间事件。
 
-Parameters:
+参数：
 
 - time — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     运行后台事件的特定 Moment，或重复后台事件的间隔 Duration
 
 
-Example:
+示例：
 
 安排一个后台事件在五分钟后运行
 
@@ -1130,11 +1130,11 @@ Background.registerForTemporalEvent(eventTime);
 - [Toybox.Time](/connect-iq/api-docs/Toybox/Time/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Background.InvalidBackgroundTimeException](/connect-iq/api-docs/Toybox/Background/InvalidBackgroundTimeException/)) —
 
@@ -1145,7 +1145,7 @@ Throws:
 
 注册一个在设备上配置的唤醒时间触发的后台事件。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1155,14 +1155,14 @@ API 级别 2.3.0
 
 如果对话框已确认，应用将打开。如果对话框被拒绝，应用将不会打开，并且对话框将被关闭。此请求仅对小组件或设备应用的后台任务有效，表盘应用将忽略此请求。调用此方法后，必须在后台进程中的某个时间点调用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，因为确认对话框只有在后台任务退出后才会触发。
 
-Parameters:
+参数：
 
 - message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     请求启动应用时要在对话框中显示的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Background;
@@ -1186,11 +1186,11 @@ class BackgroundServiceDelegate extends System.ServiceDelegate {
 - [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Background.MessageSizeLimitException](/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException/)) —
 

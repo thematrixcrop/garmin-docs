@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.BluetoothLowEnergy"
+title: "模块：Toybox.BluetoothLowEnergy"
 ---
 # 模块：Toybox.BluetoothLowEnergy
 
@@ -9,7 +9,7 @@ BluetoothLowEnergy 模块提供中心角色下的通用 BLE 通信功能，包�
 
 此模块还提供以下几组常量：
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -178,7 +178,7 @@ API 级别 3.1.0
 
 ### Status
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -267,7 +267,7 @@ API 级别 4.2.5
 
 ### ScanState
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -293,7 +293,7 @@ BLE 扫描已启用
 
 ### ConnectionState
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -328,7 +328,7 @@ API 级别 5.1.0
 
 ### WriteType
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -354,7 +354,7 @@ API 级别 3.1.0
 
 ### ConnectionStrategy
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -435,7 +435,7 @@ API 级别 5.1.0
 
 获取 CCCD Uuid
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
@@ -447,7 +447,7 @@ Returns:
 - [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -455,14 +455,14 @@ API 级别 3.1.0
 
 用于确定可用连接数量的访问器
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     可用连接数
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -543,14 +543,14 @@ API 级别 3.1.0
 
 :::
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     应用可用的已配对设备，类型为 [ScanResults](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)
 
 
-Since:
+起始版本：
 
 API 级别 4.2.5
 
@@ -558,14 +558,14 @@ API 级别 4.2.5
 
 获取应用程序可访问的所有当前已配对设备的迭代器
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     应用可用的所有已配对设备
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -573,7 +573,7 @@ API 级别 3.1.0
 
 将 UUID 的长表示形式转换为 Uuid 对象
 
-Parameters:
+参数：
 
 - mostSigBits — ([Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) —
 
@@ -584,7 +584,7 @@ Parameters:
     UUID 的最低有效 64 位
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
@@ -596,7 +596,7 @@ Returns:
 - [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -608,25 +608,25 @@ BLE 子系统将开始搜索 scanResult 参数指定的设备。找到并连接�
 
 此配对不会跨应用实例持久化。
 
-Parameters:
+参数：
 
 - scanResult — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
 
     应与设备配对的扫描结果。不能为 `null`。
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
 
     添加到已配对列表中的设备；如果设备无法配对，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.DevicePairException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException/)) —
 
@@ -643,14 +643,14 @@ Throws:
 
 如果注册的 Profile 太多，注册可能会失败；当前限制为 3 个。
 
-Parameters:
+参数：
 
 - profile — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     Profile 定义。定义预期的 Profile UUID、Profile 特征和特征描述符。不能为 `null`。
 
 
-Example:
+示例：
 
 ```
 using Toybox.BluetoothLowEnergy;
@@ -671,11 +671,11 @@ using Toybox.BluetoothLowEnergy;
   }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.ProfileRegistrationException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException/)) —
 
@@ -690,14 +690,14 @@ Throws:
 
 默认值为 CONNECTION\_TYPE\_DEFAULT。使用 CONNECTION\_TYPE\_SECURE\_PAIR\_BOND 的值将在配对过程中对设备进行配对和绑定。
 
-Parameters:
+参数：
 
 - connectionStrategy — ([BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) —
 
     用于连接所有 BLE 设备的所需连接类型。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -707,14 +707,14 @@ API 级别 5.1.0
 
 一个应用只能注册一个委托。后续调用此函数将覆盖当前委托
 
-Parameters:
+参数：
 
 - delegate — ([BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) —
 
     要注册为回调处理程序的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 类的实现，或用于注销当前处理程序的 `null`。
 
 
-Example:
+示例：
 
 ```
 using Toybox.BluetoothLowEnergy as Ble;
@@ -728,7 +728,7 @@ var handler = new Handler();
 Ble.setDelegate(handler);
 ```
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -738,7 +738,7 @@ API 级别 3.1.0
 
 扫描开始后，接收到 Advertising 数据时，将在已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上调用 [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function)。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -746,14 +746,14 @@ API 级别 3.1.0
 
 将 UUID 的字符串表示形式转换为 Uuid 对象
 
-Parameters:
+参数：
 
 - str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     Uuid 的字符串表示，格式为 "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
@@ -765,11 +765,11 @@ Returns:
 - [Toybox.BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.UuidFormatException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException/)) —
 
@@ -782,13 +782,13 @@ Throws:
 
 如果设备已连接，BLE 子系统将断开与设备的连接，且不会尝试重新连接。如果设备未连接，系统将停止搜索设备。
 
-Parameters:
+参数：
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
     要从已配对设备存储中移除的设备。不能为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Complications"
+title: "模块：Toybox.Complications"
 ---
 # 模块：Toybox.Complications
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Complications"
 
 Complications 模块允许应用订阅和发布复杂功能。复杂功能通过迭代器公开，也可以按标识符查询。表盘可以注册回调并订阅多个复杂功能。设备应用和音频内容提供程序可以发布复杂功能信息。
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -98,7 +98,7 @@ API 级别 4.2.0
 
 Complication 报告的单位
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -167,7 +167,7 @@ API 级别 4.2.0
 
 系统内置的 complication 类型
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -614,43 +614,43 @@ API 级别 6.0.2
 
 用于通知订阅者复杂功能更新的回调
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### Data，格式为 { :shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type), :value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type), :unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) }
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### **Icon** as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### **Label** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### **RangeValue** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### **Ranges** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)\>
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### **Value** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Complications.RangeValue](/connect-iq/api-docs/Toybox/Complications/#RangeValue-named_type)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -660,7 +660,7 @@ API 级别 4.2.0
 
 启动与复杂功能关联的应用
 
-Parameters:
+参数：
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
@@ -745,11 +745,11 @@ Parameters:
 - [Toybox.System.exitTo](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -760,25 +760,25 @@ Throws:
 
 给定一个 complication Id，获取该 complication
 
-Parameters:
+参数：
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
     要获取的复杂功能 ID
 
 
-Returns:
+返回：
 
 - [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) —
 
     Complication
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
@@ -789,14 +789,14 @@ Throws:
 
 提供一个迭代器，用于遍历我们有权访问的 complication id
 
-Returns:
+返回：
 
 - [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/) —
 
     迭代器实例
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -804,14 +804,14 @@ API 级别 4.2.0
 
 注册 complication 更新通知回调
 
-Parameters:
+参数：
 
 - callback — ([Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type)) —
 
     复杂功能发生更改或变得不可用时调用的回调。
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -819,7 +819,7 @@ API 级别 4.2.0
 
 订阅 complication。信息会发送到已注册的 ComplicationChangedCallback 方法。请确保已注册更改回调。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -831,11 +831,11 @@ Returns:
 - [Toybox.Complications.registerComplicationChangeCallback](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -850,7 +850,7 @@ Throws:
 
 取消订阅所有已订阅的 Complication
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -858,14 +858,14 @@ API 级别 4.2.0
 
 取消订阅 Complication
 
-Parameters:
+参数：
 
 - id — ([Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) —
 
     要取消订阅的复杂功能 Td
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -873,7 +873,7 @@ API 级别 4.2.0
 
 更新复杂功能数据。未在 \`data\` 中指定的值不会根据上次更新的内容或资源定义中指定的内容进行更新。
 
-Parameters:
+参数：
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -884,11 +884,11 @@ Parameters:
     Complication 的更新值
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 

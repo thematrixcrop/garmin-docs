@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Application"
+title: "模块：Toybox.Application"
 ---
 # 模块：Toybox.Application
 
@@ -14,7 +14,7 @@ Application 模块包含负责控制应用生命周期的 [AppBase](/connect-iq/
 - [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -30,7 +30,7 @@ API 级别 1.0.0
 
 ### GoalType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -74,31 +74,31 @@ API 级别 1.3.0
 
 ### **PersistableType** as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **PropertyKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **PropertyValueType** as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)\> or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) or [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or [WatchFaceConfig.Id](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id/) or **Null**
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **ResourceReferenceType** as [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **ResourceType** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -108,14 +108,14 @@ API 级别 1.0.0
 
 获取当前正在运行的 AppBase [Object](/connect-iq/api-docs/Toybox/Lang/Object/)。
 
-Returns:
+返回：
 
 - [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) —
 
     当前正在运行的 AppBase 对象
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -127,14 +127,14 @@ API 级别 1.0.0
 
 在 CIQ 4.0.0 及更高版本中，[Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 和 [Toybox::Graphics::FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 会针对 [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 和 [Toybox::WatchUi::FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) 返回。
 
-Parameters:
+参数：
 
 - resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     项目 `resources.xml` 文件中定义的资源标识符
 
 
-Example:
+示例：
 
 加载 String 资源
 
@@ -148,10 +148,10 @@ using Toybox.Application;
 var banana = Application.loadResource(Rez.Strings.AppName);
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
-Since:
+起始版本：
 
 API 级别 3.1.0

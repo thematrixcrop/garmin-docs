@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.SensorHistory.SensorSample"
+title: "类：Toybox.SensorHistory.SensorSample"
 ---
 # 类：Toybox.SensorHistory.SensorSample
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包含指定时间传感器数据的类。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -39,11 +39,11 @@ API 级别 2.1.0
 
 Sensor 样本。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -51,10 +51,10 @@ Returns:
 
 Sensor 样本的时间。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

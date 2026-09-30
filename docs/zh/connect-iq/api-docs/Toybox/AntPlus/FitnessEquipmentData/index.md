@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.FitnessEquipmentData"
+title: "类：Toybox.AntPlus.FitnessEquipmentData"
 ---
 # 类：Toybox.AntPlus.FitnessEquipmentData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示健身器材传输的一般数据。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -65,11 +65,11 @@ API 级别 2.4.0
 
 训练器自重置以来计算的已经过距离。范围始终大于或等于 0m
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -80,11 +80,11 @@ Returns:
 
 训练器计算的心率。该值可能来自手部传感器，或来自连接到设备的 HRM
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -95,11 +95,11 @@ Returns:
 
 训练器计算出的速度
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

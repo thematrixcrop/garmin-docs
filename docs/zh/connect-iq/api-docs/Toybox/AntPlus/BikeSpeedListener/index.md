@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeSpeedListener"
+title: "类：Toybox.AntPlus.BikeSpeedListener"
 ---
 # 类：Toybox.AntPlus.BikeSpeedListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 自行车速度的侦听器类
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -193,7 +193,7 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -201,13 +201,13 @@ API 级别 3.0.0
 
 速度数据更新时的回调
 
-Parameters:
+参数：
 
 - data — ([AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/)) —
 
     data 包含更新后的速度和距离信息。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

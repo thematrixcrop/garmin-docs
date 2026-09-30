@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.AnimationLayer"
+title: "类：Toybox.WatchUi.AnimationLayer"
 ---
 # 类：Toybox.WatchUi.AnimationLayer
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Layer
 
@@ -20,7 +20,7 @@ Toybox.WatchUi.Layer
 
 表示 Animation 图层的类
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -198,7 +198,7 @@ API 级别 3.1.0
 
 getDc 始终返回 `null`，因为用户无法更新动画的 dc 缓冲区。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -206,14 +206,14 @@ API 级别 3.1.0
 
 获取动画资源
 
-Returns:
+返回：
 
 - [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) —
 
     [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -221,7 +221,7 @@ API 级别 3.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - rez — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)) —
 
@@ -248,11 +248,11 @@ Parameters:
         如果图层可见，则为 `true`，否则为 `false`（可选，默认为 +true+）
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -265,7 +265,7 @@ Throws:
 
 此项将先停止现有播放。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -276,14 +276,14 @@ Parameters:
         An [AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果已开始播放，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -295,6 +295,6 @@ API 级别 3.1.0
   The last frame of the animation will be persisted in the frame buffer.
 ```
 
-Since:
+起始版本：
 
 API 级别 3.1.0

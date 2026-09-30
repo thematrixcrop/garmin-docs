@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Communications"
+title: "模块：Toybox.Communications"
 ---
 # 模块：Toybox.Communications
 
@@ -13,7 +13,7 @@ Communications 模块提供通信工具。
 
 此模块在 API 5.0.0 中开始对前台数据字段可用
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -223,7 +223,7 @@ API 级别 1.0.0
 
 ### Error
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -465,7 +465,7 @@ API 级别 3.0.10
 
 ### TokenResult
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -482,7 +482,7 @@ OAuth 令牌在最后一步中的返回方式。
 
 ### SigningMethod
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -499,7 +499,7 @@ OAuth 请求的签名方式
 
 ### HttpRequestMethod
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -543,7 +543,7 @@ API 级别 1.2.0
 
 ### HttpResponseContentType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -632,7 +632,7 @@ API 级别 3.1.0
 
 ### WifiConnectionStatus
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -739,7 +739,7 @@ API 级别 3.3.0
 
 ### HttpRequestContentType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -769,7 +769,7 @@ API 级别 1.2.0
 
 打包格式描述了传输请求图像时应使用的编码方式。所使用的编码会影响传输大小、解码时间和图像质量。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -815,7 +815,7 @@ API 级别 4.2.0
 
 TVM 将选择带宽最高且小于或等于最大带宽的 HLS 音频流
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -838,7 +838,7 @@ API 级别 3.0.10
 
 ### Dithering
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -864,7 +864,7 @@ API 级别 1.2.0
 
 ### PhoneAppMessageError
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -974,25 +974,25 @@ API 级别 6.0.0
 
 ### PhoneMessageCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) as Void
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### PhoneMessageErrorCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(error as [Communications.PhoneAppMessageError](/connect-iq/api-docs/Toybox/Communications/#PhoneAppMessageError-module)) as Void
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **TransmitKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **TransmitType** as [Communications.TransmitKeyType](/connect-iq/api-docs/Toybox/Communications/#TransmitKeyType-named_type) or [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Communications.TransmitKeyType](/connect-iq/api-docs/Toybox/Communications/#TransmitKeyType-named_type), [Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type)\> or **Null**
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1004,7 +1004,7 @@ API 级别 1.0.0
 
 Connect IQ 平台限制了并行运行的活动请求数量。此调用将取消所有未完成的请求。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -1012,7 +1012,7 @@ API 级别 1.2.0
 
 检查是否存在可见且可连接的已启用互联网的 WIFI 接入点
 
-Parameters:
+参数：
 
 - connectionStatusCallback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1024,7 +1024,7 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1195,7 +1195,7 @@ API 级别 3.2.0
 - [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1205,14 +1205,14 @@ API 级别 1.0.0
 
 字符串中的保留字符将替换为对应的十六进制值对。这遵循 RFC 3986 中详细说明的 URI 编码方案。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要编码的 URL 字符串
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -1224,7 +1224,7 @@ Returns:
 - [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt)
 
 
-Since:
+起始版本：
 
 API 级别 1.1.2
 
@@ -1242,7 +1242,7 @@ API 级别 1.1.2
 
 建议使用 OAuth 2.0，而不是 OAuth 1.0a。请参见 [Toybox::Communications#makeOAuthRequest](/connect-iq/api-docs/Toybox/Communications/#makeOAuthRequest-instance_function)。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1280,14 +1280,14 @@ Parameters:
     用于对请求进行签名的使用者密钥
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     “Authorization”标头的值
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1453,7 +1453,7 @@ API 级别 1.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/) —
 
@@ -1465,7 +1465,7 @@ Returns:
 - [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1479,7 +1479,7 @@ GCM 将根据设备的功能缩放并抖动图像，但用户可以传递其他�
 
 连接到 WiFi 或通过 Bluetooth 连接到移动设备时，可以使用此方法。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1528,7 +1528,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -1566,7 +1566,7 @@ var responseCode;
     }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -1584,7 +1584,7 @@ API 级别 1.2.0
 
 连接到 WiFi 或通过 Bluetooth 连接到移动设备时，可以使用此方法。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1819,7 +1819,7 @@ Parameters:
 - [Communications.makeWebRequest().](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1833,7 +1833,7 @@ API 级别 1.0.0
 
 此方法只能在通过 Bluetooth 连接到移动设备时使用。
 
-Parameters:
+参数：
 
 - requestUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1856,7 +1856,7 @@ Parameters:
     传递给回调方法的所需 OAuth 响应值。键映射到实际的 OAuth 响应键，值映射到 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) 数据的键。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Communications;
@@ -1907,7 +1907,7 @@ function onOAuthMessage(message) {
 // the OAuth service can now be used with a makeWebRequest() call
 ```
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1921,7 +1921,7 @@ Web 请求是异步的。请求返回时，将调用提供的响应回调方法�
 
 连接到 WiFi 或通过 Bluetooth 连接到移动设备时，可以使用此方法。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -2005,7 +2005,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 // It is common for developers to wrap a makeWebRequest() call in a function
@@ -2049,11 +2049,11 @@ using Toybox.Communications;
   }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -2068,7 +2068,7 @@ Throws:
 
 发送系统通知以指示同步已完成。
 
-Parameters:
+参数：
 
 - errorMessage — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -2192,7 +2192,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -2200,7 +2200,7 @@ API 级别 3.1.0
 
 发送系统通知以指示同步的整体进度。
 
-Parameters:
+参数：
 
 - percentageComplete — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -2324,7 +2324,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -2338,7 +2338,7 @@ API 级别 3.1.0
 
 此方法只能在通过 Bluetooth 连接到移动设备时使用。
 
-Parameters:
+参数：
 
 - url — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -2353,7 +2353,7 @@ Parameters:
     请求的其他选项
 
 
-Example:
+示例：
 
 ```
 using Toybox.Communications;
@@ -2366,7 +2366,7 @@ Communications.openWebPage(
 // browser on the phone
 ```
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -2376,14 +2376,14 @@ API 级别 1.3.0
 
 每接收到一条 OAuth 消息，都会调用一次回调。如果调用此函数时有消息正在等待应用处理，回调会立即针对每条等待中的消息调用一次。
 
-Parameters:
+参数：
 
 - method — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     对回调的引用，该回调必须接收类型为 [OAuthMessage](/connect-iq/api-docs/Toybox/Communications/OAuthMessage/) 的 `data` 参数。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Communications;
@@ -2399,7 +2399,7 @@ function onOAuthMessage(message) {
 Communications.registerForOAuthMessages(method(:onOAuthMessage));
 ```
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -2409,7 +2409,7 @@ API 级别 1.3.0
 
 无法接收消息时调用回调。如果调用此函数时有消息正在等待应用处理，回调将立即调用。
 
-Example:
+示例：
 
 ```
 using Communications;
@@ -2472,7 +2472,7 @@ if (Communications has :registerForPhoneAppMessageErrors) {
 - [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -2482,14 +2482,14 @@ API 级别 6.0.0
 
 每收到一条消息，都会调用一次回调。如果调用此函数时有消息正在等待应用处理，回调将立即针对每条等待中的消息调用一次。
 
-Parameters:
+参数：
 
 - method — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     对回调的引用，该回调必须接收类型为 [PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/) 的 `data` 参数。
 
 
-Example:
+示例：
 
 ```
 using Communications;
@@ -2675,7 +2675,7 @@ Communications.registerForPhoneAppMessages(method(:phoneMessageCallback));
 - [Communications.registerForPhoneAppMessageErrors()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessageErrors-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.4.0
 
@@ -2689,7 +2689,7 @@ API 级别 1.4.0
 
 每当收到新消息时，都会调用侦听器方法。
 
-Parameters:
+参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -2855,7 +2855,7 @@ Parameters:
 - [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -2980,7 +2980,7 @@ API 级别 1.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -2988,7 +2988,7 @@ API 级别 3.1.0
 
 退出 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并使用提供的消息以同步模式启动它。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -3075,7 +3075,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.4
 
@@ -3088,7 +3088,7 @@ API 级别 4.0.4
 - [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)（自 6.0.0）
 
 
-Parameters:
+参数：
 
 - content — ([Communications.TransmitType](/connect-iq/api-docs/Toybox/Communications/#TransmitType-named_type)) —
 
@@ -3270,6 +3270,6 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0

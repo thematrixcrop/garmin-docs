@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.SensorLogging.SensorLogger"
+title: "类：Toybox.SensorLogging.SensorLogger"
 ---
 # 类：Toybox.SensorLogging.SensorLogger
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于 SensorLogger 对象的类。此对象会传递给 FIT 会话，以开始记录传感器数据。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -43,14 +43,14 @@ API 级别 2.3.0
 
 获取当前会话中收集的数据统计信息。
 
-Returns:
+返回：
 
 - [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) —
 
     返回一个 SensorLoggingStats 对象。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -58,25 +58,25 @@ API 级别 2.3.0
 
 获取当前会话中收集的传感器数据统计信息。
 
-Parameters:
+参数：
 
 - sensor —
 
     要获取日志统计信息的传感器类型符号；如果要获取所有已启用传感器的统计信息，则为 `null`。
 
 
-Returns:
+返回：
 
 - [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
     如果传入 `null`，则返回请求传感器类型的一个 [SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)，或返回包含所有已启用传感器统计信息的 [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Throws:
+抛出：
 
 - [Toybox::Lang::InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/) 如果提供的参数超出范围或类型错误，则抛出。
 
@@ -93,7 +93,7 @@ SensorLogger 可以使用提供给 [registerSensorDataListener()](/connect-iq/ap
 
 同步数据请求不支持磁力计数据。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -125,6 +125,6 @@ Parameters:
         设置为 `true` 以请求同步的传感器数据。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.SwipeEvent"
+title: "类：Toybox.WatchUi.SwipeEvent"
 ---
 # 类：Toybox.WatchUi.SwipeEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -37,7 +37,7 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -69,13 +69,13 @@ API 级别 1.0.0
 
 获取滑动的方向。
 
-Returns:
+返回：
 
 - [WatchUi.SwipeDirection](/connect-iq/api-docs/Toybox/WatchUi/#SwipeDirection-module) —
 
     一个 [WatchUi.SWIPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

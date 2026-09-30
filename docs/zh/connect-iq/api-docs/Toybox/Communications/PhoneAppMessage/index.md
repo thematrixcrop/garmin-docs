@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.PhoneAppMessage"
+title: "类：Toybox.Communications.PhoneAppMessage"
 ---
 # 类：Toybox.Communications.PhoneAppMessage
 
-Inherits:
+继承：
 
 Toybox.Communications.Message
 
@@ -20,7 +20,7 @@ Toybox.Communications.Message
 
 由在 [registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function) 中注册的回调接收的 PhoneAppMessage
 
-Since:
+起始版本：
 
 API 级别 1.4.0
 
@@ -203,6 +203,6 @@ API 级别 1.4.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.4.0

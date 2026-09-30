@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeRadarListener"
+title: "类：Toybox.AntPlus.BikeRadarListener"
 ---
 # 类：Toybox.AntPlus.BikeRadarListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 自行车雷达的侦听器类
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -186,7 +186,7 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -194,13 +194,13 @@ API 级别 3.0.0
 
 雷达数据更新时的回调
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     已跟踪目标的信息列表（最多 8 个）。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

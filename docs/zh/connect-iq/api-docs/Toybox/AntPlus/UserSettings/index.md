@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.UserSettings"
+title: "类：Toybox.AntPlus.UserSettings"
 ---
 # 类：Toybox.AntPlus.UserSettings
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示支持模拟训练模式的健身器材的用户配置。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -69,11 +69,11 @@ API 级别 2.4.0
 
 模拟训练模式下设置的自行车重量
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -84,11 +84,11 @@ Returns:
 
 模拟训练模式下设置的齿轮比
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -99,11 +99,11 @@ Returns:
 
 为模拟训练模式设置的用户体重
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -114,11 +114,11 @@ Returns:
 
 为模拟训练模式设置的车轮直径
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

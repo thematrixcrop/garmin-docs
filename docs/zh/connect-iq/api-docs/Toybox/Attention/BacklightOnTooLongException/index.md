@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Attention.BacklightOnTooLongException"
+title: "类：Toybox.Attention.BacklightOnTooLongException"
 ---
 # 类：Toybox.Attention.BacklightOnTooLongException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 在启用显示屏时间过长的情况下，在具有烧屏保护功能的产品上抛出的异常（例如超过一分钟）
 
-Since:
+起始版本：
 
 API 级别 3.2.1
 
@@ -37,13 +37,13 @@ API 级别 3.2.1
 
 Constructor
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 3.2.1

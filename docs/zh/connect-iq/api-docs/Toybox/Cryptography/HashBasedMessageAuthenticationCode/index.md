@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.HashBasedMessageAuthenticationCode"
+title: "类：Toybox.Cryptography.HashBasedMessageAuthenticationCode"
 ---
 # 类：Toybox.Cryptography.HashBasedMessageAuthenticationCode
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ HashBasedMessageAuthenticationCode 是一个可使用 HMAC 算法计算消息验
 - [http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.198-1.pdf](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.198-1.pdf)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -209,14 +209,14 @@ API 级别 3.0.0
 
 对象状态已重置，可以使用相同选项计算新的身份验证代码。
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     以网络字节序表示的计算所得消息验证码
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -224,7 +224,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -239,11 +239,11 @@ Parameters:
         用于计算消息认证码的密钥，字节长度可以是任意值（必需）
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -260,18 +260,18 @@ Throws:
 
 重复调用等价于用所有参数拼接后调用一次。
 
-Parameters:
+参数：
 
 - message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     待哈希消息的下一块数据
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

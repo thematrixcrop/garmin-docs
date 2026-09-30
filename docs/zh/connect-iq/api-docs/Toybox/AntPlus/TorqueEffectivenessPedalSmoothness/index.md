@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.TorqueEffectivenessPedalSmoothness"
+title: "类：Toybox.AntPlus.TorqueEffectivenessPedalSmoothness"
 ---
 # 类：Toybox.AntPlus.TorqueEffectivenessPedalSmoothness
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ TorqueEffectivenessPedalSmoothness 对象表示即时扭矩效率和踏板平顺
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -167,7 +167,7 @@ API 级别 2.2.0
 
 如果支持单独测量，则为左踏板平滑度；否则为合并平滑度（%）。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -179,11 +179,11 @@ var leftOrCombinedPedalSmoothness= TorqueEffectivenessPedalSmoothness.leftOrComb
 System.println("leftOrCombinedPedalSmoothness is set to: " + leftOrCombinedPedalSmoothness);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -193,7 +193,7 @@ Returns:
 
 0xFF：无效值或负值（%）。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -205,11 +205,11 @@ var leftTorqueEffectiveness = TorqueEffectivenessPedalSmoothness.leftTorqueEffec
 System.println("leftTorqueEffectiveness is: " + leftTorqueEffectiveness);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -217,7 +217,7 @@ Returns:
 
 右踏板平顺度（%）。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -229,11 +229,11 @@ var rightPedalSmoothness = TorqueEffectivenessPedalSmoothness.rightPedalSmoothne
 System.println("rightPedalSmoothness is: " + rightPedalSmoothness);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -243,7 +243,7 @@ Returns:
 
 0xFF：无效值或负值（%）。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -255,11 +255,11 @@ var rightTorqueEffectiveness= TorqueEffectivenessPedalSmoothness.rightTorqueEffe
 System.println("rightTorqueEffectiveness is set to: " + rightTorqueEffectiveness);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -267,7 +267,7 @@ Returns:
 
 定义踏板平滑度是否独立。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -279,11 +279,11 @@ var separatePedalSmoothnessSupport = TorqueEffectivenessPedalSmoothness.separate
 System.println("separatePedalSmoothnessSupport is: " + separatePedalSmoothnessSupport);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 

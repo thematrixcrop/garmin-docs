@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.FitnessEquipmentListener"
+title: "类：Toybox.AntPlus.FitnessEquipmentListener"
 ---
 # 类：Toybox.AntPlus.FitnessEquipmentListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 健身器材的侦听器类
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -63,7 +63,7 @@ API 级别 2.4.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -71,13 +71,13 @@ API 级别 2.4.0
 
 健身器材数据更新时的回调
 
-Parameters:
+参数：
 
 - data — ([AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/)) —
 
     包含更新后的信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0

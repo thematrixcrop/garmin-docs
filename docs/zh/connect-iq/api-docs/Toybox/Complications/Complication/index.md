@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Complications.Complication"
+title: "类：Toybox.Complications.Complication"
 ---
 # 类：Toybox.Complications.Complication
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 复杂功能对象
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -46,37 +46,37 @@ API 级别 4.2.0
 
 ### var complicationId as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### var longLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### var ranges as [Complications.Ranges](/connect-iq/api-docs/Toybox/Complications/#Ranges-named_type) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### var shortLabel as [Complications.Label](/connect-iq/api-docs/Toybox/Complications/#Label-named_type) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### var unit as [Complications.Unit](/connect-iq/api-docs/Toybox/Complications/#Unit-module) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
 ### var value as [Complications.Value](/connect-iq/api-docs/Toybox/Complications/#Value-named_type) or **Null**
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -86,18 +86,18 @@ API 级别 4.2.0
 
 获取复杂功能图标。此功能仅适用于用户复杂功能
 
-Returns:
+返回：
 
 - [Complications.Icon](/connect-iq/api-docs/Toybox/Complications/#Icon-named_type) —
 
     用户复杂功能的图标；如果这是原生复杂功能，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - ([Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)) —
 
@@ -108,13 +108,13 @@ Throws:
 
 获取复杂功能类型
 
-Returns:
+返回：
 
 - [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) —
 
     系统复杂功能的复杂功能类型；对于用户复杂功能，则为 COMPLICATION\_TYPE\_INVALID。
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0

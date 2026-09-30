@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.ProfileRegistrationException"
+title: "类：Toybox.BluetoothLowEnergy.ProfileRegistrationException"
 ---
 # 类：Toybox.BluetoothLowEnergy.ProfileRegistrationException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,6 +25,6 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

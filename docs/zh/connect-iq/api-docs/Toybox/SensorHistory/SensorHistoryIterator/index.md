@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.SensorHistory.SensorHistoryIterator"
+title: "类：Toybox.SensorHistory.SensorHistoryIterator"
 ---
 # 类：Toybox.SensorHistory.SensorHistoryIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ SensorHistoryIterator 描述一系列 [SensorSample](/connect-iq/api-docs/Toybox
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Example:
+示例：
 
 获取用于以下方法的 SensorHistoryIterator 对象
 
@@ -53,7 +53,7 @@ function getIterator() {
 var sensorIter = getIterator();
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -86,7 +86,7 @@ API 级别 2.1.0
 
 获取此迭代器中包含的最大 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
-Example:
+示例：
 
 打印最大 SensorSample 数据值
 
@@ -98,7 +98,7 @@ using Toybox.System;
 System.println(sensorIter.getMax().data);
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -112,7 +112,7 @@ Returns:
 - [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -120,7 +120,7 @@ API 级别 2.1.0
 
 获取此迭代器中包含的最小 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 数据值。
 
-Example:
+示例：
 
 打印最小 SensorSample 数据值
 
@@ -132,7 +132,7 @@ using Toybox.System;
 System.println(sensorIter.getMin().data);
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -146,7 +146,7 @@ Returns:
 - [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -154,7 +154,7 @@ API 级别 2.1.0
 
 获取此迭代器中最新 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
-Example:
+示例：
 
 打印最新 SensorSample 的 Moment
 
@@ -166,7 +166,7 @@ using Toybox.System;
 System.println(sensorIter.getNewestSampleTime());
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -184,7 +184,7 @@ Returns:
 - [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -192,7 +192,7 @@ API 级别 2.1.0
 
 获取此迭代器中最早 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
-Example:
+示例：
 
 打印最早 SensorSample 的 Moment
 
@@ -204,7 +204,7 @@ using Toybox.System;
 System.println(sensorIter.getOldestSampleTime());
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -222,7 +222,7 @@ Returns:
 - [Toybox.Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -232,7 +232,7 @@ API 级别 2.1.0
 
 必须调用此方法以从迭代器获取初始数据。
 
-Example:
+示例：
 
 打印下一个 SensorSample 数据值
 
@@ -244,7 +244,7 @@ using Toybox.System;
 System.println(sensorIter.next().data);
 ```
 
-Returns:
+返回：
 
 - [SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) —
 
@@ -258,6 +258,6 @@ Returns:
 - [Toybox.SensorHistory.SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0

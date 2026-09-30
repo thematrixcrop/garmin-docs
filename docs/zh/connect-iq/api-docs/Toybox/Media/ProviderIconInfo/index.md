@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ProviderIconInfo"
+title: "类：Toybox.Media.ProviderIconInfo"
 ---
 # 类：Toybox.Media.ProviderIconInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 ProviderIconInfo 是提供程序图标的类表示。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -35,7 +35,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - icon — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -46,6 +46,6 @@ Parameters:
     一个用于指示图标强调色的 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

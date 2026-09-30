@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ViewLoopDelegate"
+title: "类：Toybox.WatchUi.ViewLoopDelegate"
 ---
 # 类：Toybox.WatchUi.ViewLoopDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 视图循环的委托对象。当应用启用 [ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) 时，系统生成的下一个和上一个事件会传递给该委托对象。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -168,14 +168,14 @@ API 级别 3.4.0
 
 委托的构造函数
 
-Parameters:
+参数：
 
 - viewLoop — ([WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)) —
 
     管理视图集合的 Object
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -185,14 +185,14 @@ API 级别 3.4.0
 
 这通常由向下按钮（[KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)）或触摸屏上的 [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -202,13 +202,13 @@ API 级别 3.4.0
 
 通常由向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或触摸屏上的 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0

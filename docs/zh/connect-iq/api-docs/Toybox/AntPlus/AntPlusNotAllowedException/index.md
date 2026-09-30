@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.AntPlusNotAllowedException"
+title: "类：Toybox.AntPlus.AntPlusNotAllowedException"
 ---
 # 类：Toybox.AntPlus.AntPlusNotAllowedException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 此异常表示尝试执行了无效操作。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -37,6 +37,6 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.1.0

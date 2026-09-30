@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Position"
+title: "模块：Toybox.Position"
 ---
 # 模块：Toybox.Position
 
@@ -14,7 +14,7 @@ Position 模块为位置信息和定位传感器提供接口。
 - QUALITY：表示计算 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 信息时的 GPS 定位质量
 
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -27,7 +27,7 @@ function onPosition(info) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -43,7 +43,7 @@ API 级别 1.0.0
 
 此枚举可能会在 System 10 之后移除。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -80,7 +80,7 @@ API 级别 3.2.0
 
 已知 GNSS 配置的配置值
 
-Since:
+起始版本：
 
 API 级别 3.3.6
 
@@ -157,7 +157,7 @@ AutoGNSS (SatIQ™)
 
 ### CoordinateFormat
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -203,7 +203,7 @@ API 级别 1.0.0
 
 ### Quality
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -258,7 +258,7 @@ API 级别 1.0.0
 
 ### LocationAcquisitionType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -293,7 +293,7 @@ API 级别 1.0.0
 
 ### PositioningMode
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -346,21 +346,21 @@ API 级别 3.2.0
 
 从 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象数组创建边界框。
 
-Parameters:
+参数：
 
 - locations — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象数组。
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含用于指定输入数组边界的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象的数组；如果输入数组为空，则为 `null`。第一个元素描述左上角，第二个元素描述右下角。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -382,7 +382,7 @@ API 级别 3.0.3
 
 多任务：应用进入非活动状态时，位置事件将被禁用，并在再次变为活动状态时重新启用。这些状态变化通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
-Parameters:
+参数：
 
 - options — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -414,7 +414,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -631,11 +631,11 @@ function onPosition(info) {
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -648,7 +648,7 @@ Throws:
 
 使用此 API 需要启用定位权限。这对于在 [Timer](/connect-iq/api-docs/Toybox/Timer/Timer/) 中按需或定期获取当前位置信息很有用。
 
-Example:
+示例：
 
 每秒获取一次位置信息
 
@@ -845,11 +845,11 @@ function timerCallback() {
 
 :::
 
-Returns:
+返回：
 
 - [Position.Info](/connect-iq/api-docs/Toybox/Position/Info/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -857,7 +857,7 @@ API 级别 1.0.0
 
 确定设备是否支持请求的 GPS 配置
 
-Parameters:
+参数：
 
 - config — ([Position.Configuration](/connect-iq/api-docs/Toybox/Position/#Configuration-module)) —
 
@@ -991,7 +991,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.3.6
 
@@ -1001,7 +1001,7 @@ API 级别 3.3.6
 
 输入 String 必须采用 [Position.GEO\_\*](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module) 常量描述的四种格式之一。
 
-Parameters:
+参数：
 
 - string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1012,7 +1012,7 @@ Parameters:
     一个 Position.GEO\_\* 值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -1022,13 +1022,13 @@ var myLocation = Position.parse(locString, Position.GEO_DEG);
 System.println(myLocation.toRadians()); // [0.678168, -1.654589]
 ```
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     表示输入 String 所描述位置的 Location 对象
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.BurstPayload"
+title: "类：Toybox.Ant.BurstPayload"
 ---
 # 类：Toybox.Ant.BurstPayload
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 有效负载数据以 [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/) 对象的形式提供。`BurstPayload` 的默认最大大小为 8192 字节，即 1024 个 [Message](/connect-iq/api-docs/Toybox/Ant/Message/) 对象。不过，这可能因设备而异。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -30,7 +30,7 @@ burst.add(message.getPayload()); // Add a message payload to payload
 burst.getSize();                 // The number of messages
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -59,14 +59,14 @@ API 级别 2.2.0
 
 [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) 支持 ConnectIQ 4.2.0 及更高版本。
 
-Parameters:
+参数：
 
 - message — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     表示数据负载字节的整数数组
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -74,14 +74,14 @@ API 级别 2.2.0
 
 返回有效负载中包含的突发数量。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Message 数量
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -89,6 +89,6 @@ API 级别 2.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0

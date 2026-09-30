@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.ProfileInfo"
+title: "类：Toybox.Activity.ProfileInfo"
 ---
 # 类：Toybox.Activity.ProfileInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ ProfileInfo 类包含有关活动配置文件的信息。
 
 可通过 [getProfileInfo()](/connect-iq/api-docs/Toybox/Activity/#getProfileInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -49,11 +49,11 @@ API 级别 3.2.0
 
 配置文件名称
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -64,11 +64,11 @@ Returns:
 
 一个 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 枚举值
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
@@ -79,11 +79,11 @@ Returns:
 
 一个 [SUB\_SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SUB_SPORT_GENERIC-const) 枚举值。可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 
@@ -94,11 +94,11 @@ Returns:
 
 配置文件的唯一标识符
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 

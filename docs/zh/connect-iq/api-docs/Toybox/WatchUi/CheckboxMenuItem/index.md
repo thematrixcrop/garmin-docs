@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.CheckboxMenuItem"
+title: "类：Toybox.WatchUi.CheckboxMenuItem"
 ---
 # 类：Toybox.WatchUi.CheckboxMenuItem
 
-Inherits:
+继承：
 
 Toybox.WatchUi.MenuItem
 
@@ -31,7 +31,7 @@ CheckboxMenuItem 是 [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/Checkbox
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -234,7 +234,7 @@ Constructor
 
 `:icon` 选项仅在支持子屏幕的 ConnectIQ 3.4.0 设备上使用。
 
-Parameters:
+参数：
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -265,7 +265,7 @@ Parameters:
         用于菜单项获得焦点时的子屏幕区域
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -273,14 +273,14 @@ API 级别 3.0.0
 
 获取 CheckboxMenuItem 状态。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     CheckboxMenuItem 的当前状态
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -288,18 +288,18 @@ API 级别 3.0.0
 
 设置 CheckboxMenuItem 状态。
 
-Parameters:
+参数：
 
 - checked — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     CheckboxMenuItem 的预期状态；`true` 表示选中，`false` 表示未选中
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

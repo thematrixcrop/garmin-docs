@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ConfirmationDelegate"
+title: "类：Toybox.WatchUi.ConfirmationDelegate"
 ---
 # 类：Toybox.WatchUi.ConfirmationDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ ConfirmationDelegate 响应 [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/C
 - [Toybox.WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -44,7 +44,7 @@ class MyConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -78,7 +78,7 @@ API 级别 1.0.0
 
 选择 [Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 响应时会调用此方法，并将该响应作为参数接收。响应为 [CONFIRM\_NO](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) 或 [CONFIRM\_YES](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_YES-const) 值。
 
-Parameters:
+参数：
 
 - response — ([WatchUi.Confirm](/connect-iq/api-docs/Toybox/WatchUi/#Confirm-module)) —
 
@@ -90,6 +90,6 @@ Parameters:
 - [Toybox.WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

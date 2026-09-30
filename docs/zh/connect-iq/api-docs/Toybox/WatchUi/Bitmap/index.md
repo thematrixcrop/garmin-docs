@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Bitmap"
+title: "类：Toybox.WatchUi.Bitmap"
 ---
 # 类：Toybox.WatchUi.Bitmap
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Drawable
 
@@ -27,7 +27,7 @@ Bitmap 是位图资源的类表示。
 - [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
-Example:
+示例：
 
 ```
 // The bitmap.xml file contents:
@@ -58,7 +58,7 @@ class MyWatchView extends WatchUi.View {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -87,14 +87,14 @@ API 级别 1.0.0
 
 将 Bitmap 绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -102,14 +102,14 @@ API 级别 1.0.0
 
 获取 Bitmap 的尺寸。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 Bitmap 对象宽度和高度的双元素数组
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -137,7 +137,7 @@ Parameters:
 - [Drawable.initialize()](/connect-iq/api-docs/Toybox/WatchUi/Drawable/#initialize-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -149,18 +149,18 @@ API 级别 1.0.0
 
 仅 ConnectIQ 5.0.0 及更高版本支持将 `null` 值传递给 bitmap 参数。
 
-Parameters:
+参数：
 
 - bitmap — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     ResourceId 或 Bitmap 对象。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

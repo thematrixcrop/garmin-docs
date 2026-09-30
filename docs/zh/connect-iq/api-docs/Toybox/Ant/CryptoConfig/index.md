@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.CryptoConfig"
+title: "类：Toybox.Ant.CryptoConfig"
 ---
 # 类：Toybox.Ant.CryptoConfig
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -52,7 +52,7 @@ cryptoConfig = new Ant.CryptoConfig({
 });
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -255,13 +255,13 @@ API 级别 2.3.0
 
 ### **EncryptionKey** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
 ### **UserInfoString** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -271,7 +271,7 @@ API 级别 2.3.0
 
 加密计数器的除法因子
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -279,7 +279,7 @@ API 级别 2.3.0
 
 加密主设备或协商从设备的唯一 4 字节标识符。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -287,7 +287,7 @@ API 级别 2.3.0
 
 用于加密/解密 ANT 数据包的 128 位加密密钥。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -295,7 +295,7 @@ API 级别 2.3.0
 
 加密协商成功后要发送到主通道的（可选）用户信息 String（仅限从通道）。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -305,7 +305,7 @@ API 级别 2.3.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -328,6 +328,6 @@ Parameters:
         一个范围为 1-255 的 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，用于将主通道速率除以从通道的速率
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0

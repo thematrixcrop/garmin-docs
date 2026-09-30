@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.BitmapResource"
+title: "类：Toybox.WatchUi.BitmapResource"
 ---
 # 类：Toybox.WatchUi.BitmapResource
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 BitmapResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -60,14 +60,14 @@ API 级别 1.0.0
 
 获取位图资源的高度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图高度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -75,14 +75,14 @@ API 级别 1.0.0
 
 获取位图资源的宽度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图宽度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -92,13 +92,13 @@ API 级别 1.0.0
 
 info String 的格式为 "Bitmap X x Y"，其中 "X" 是位图宽度，"Y" 是位图高度。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     BitmapResource 对象的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

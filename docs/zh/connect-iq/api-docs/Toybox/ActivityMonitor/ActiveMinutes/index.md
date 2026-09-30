@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityMonitor.ActiveMinutes"
+title: "类：Toybox.ActivityMonitor.ActiveMinutes"
 ---
 # 类：Toybox.ActivityMonitor.ActiveMinutes
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示设备记录的活动分钟数的类。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -181,11 +181,11 @@ API 级别 2.1.0
 
 设备记录的中等强度活动分钟总数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -195,11 +195,11 @@ Returns:
 
 此值等于中等强度分钟总数加上高强度分钟总数的两倍。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -207,10 +207,10 @@ Returns:
 
 设备记录的高强度活动分钟总数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

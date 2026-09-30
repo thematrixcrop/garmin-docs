@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.FitContributor.Field"
+title: "类：Toybox.FitContributor.Field"
 ---
 # 类：Toybox.FitContributor.Field
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -31,7 +31,7 @@ Field 将来自 Application 或 Data Field 的自定义 FIT 数据记录到设�
 - [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -48,18 +48,18 @@ API 级别 1.3.0
 
 设置要写入此 Field 的值。
 
-Parameters:
+参数：
 
 - input — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要写入 Field 的数据
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

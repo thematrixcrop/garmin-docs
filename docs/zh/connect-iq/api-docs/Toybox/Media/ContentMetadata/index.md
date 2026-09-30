@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ContentMetadata"
+title: "类：Toybox.Media.ContentMetadata"
 ---
 # 类：Toybox.Media.ContentMetadata
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 为原生媒体播放器用户界面显示提供媒体内容元数据。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -51,11 +51,11 @@ API 级别 3.0.0
 
 专辑标题
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -63,11 +63,11 @@ Returns:
 
 艺术家的姓名
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -75,11 +75,11 @@ Returns:
 
 流派
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -87,11 +87,11 @@ Returns:
 
 轨迹标题
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -99,10 +99,10 @@ Returns:
 
 轨迹编号
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Complications.Iterator"
+title: "类：Toybox.Complications.Iterator"
 ---
 # 类：Toybox.Complications.Iterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -33,13 +33,13 @@ API 级别 4.2.0
 
 获取下一个复杂功能
 
-Returns:
+返回：
 
 - [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) —
 
     下一个复杂功能实例；完成时为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.ConnectionInfo"
+title: "类：Toybox.System.ConnectionInfo"
 ---
 # 类：Toybox.System.ConnectionInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示通信通道连接的状态。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -35,11 +35,11 @@ API 级别 3.0.0
 
 连接状态。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module) —
 

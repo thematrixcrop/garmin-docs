@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.ChannelAssignment"
+title: "类：Toybox.Ant.ChannelAssignment"
 ---
 # 类：Toybox.Ant.ChannelAssignment
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于控制 ANT 无线通道分配的类。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -56,7 +56,7 @@ API 级别 1.0.0
 
 可以将通道定义为主要发送数据（主设备）或接收数据（从设备）。通道类型通过传递给 [Ant.ChannelAssignment.initialize()](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/#initialize-instance_function) 函数的 [CHANNEL\_TYPE\_\*](/connect-iq/api-docs/Toybox/Ant/#CHANNEL_TYPE_TX_NOT_RX-const) 常量为 `channelType` 参数设置。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -66,7 +66,7 @@ API 级别 1.0.0
 
 通过传递给 [Ant.ChannelAssignment.initialize()](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/#initialize-instance_function) 函数 `network` 参数的 [NETWORK\_\*](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PUBLIC-const) 常量设置网络。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -76,7 +76,7 @@ API 级别 1.0.0
 
 构造函数，默认情况下禁用后台扫描。
 
-Parameters:
+参数：
 
 - c — ([Ant.ChannelType](/connect-iq/api-docs/Toybox/Ant/#ChannelType-module)) —
 
@@ -110,7 +110,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -129,7 +129,7 @@ GenericChannel.initialize(method(:onMessage), channelAssign);
 - [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -137,7 +137,7 @@ API 级别 1.0.0
 
 检查是否已为通道分配启用后台扫描。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -145,14 +145,14 @@ using Toybox.Ant;
 ChannelAssignment.isBackgroundScanEnabled();
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果启用了后台扫描，则返回 `true`；否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -162,14 +162,14 @@ API 级别 1.2.0
 
 只能在仅接收通道上启用后台扫描。
 
-Parameters:
+参数：
 
 - isBackgroundScanEnabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     值为 `true` 时启用后台扫描，否则为 `false`。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -177,13 +177,13 @@ using Toybox.Ant;
 ChannelAssignment.setBackgroundScan(isBackgroundScanEnabled);
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果成功设置后台扫描属性，则返回 `true`；否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

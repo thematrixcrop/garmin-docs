@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.InputDelegate"
+title: "类：Toybox.WatchUi.InputDelegate"
 ---
 # 类：Toybox.WatchUi.InputDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -36,7 +36,7 @@ InputDelegate 可以处理四种基本输入类型：
 - [Toybox.WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -60,7 +60,7 @@ class MyInputDelegate extends WatchUi.InputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -134,7 +134,7 @@ API 级别 1.0.0
 
 触摸屏被拖动时会发送此事件。
 
-Parameters:
+参数：
 
 - dragEvent — ([WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)) —
 
@@ -229,7 +229,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -241,7 +241,7 @@ Returns:
 - [Toybox.WatchUi.DragEvent](/connect-iq/api-docs/Toybox/WatchUi/DragEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -251,7 +251,7 @@ API 级别 3.3.0
 
 触摸屏被快速滑动时会发送此事件。
 
-Parameters:
+参数：
 
 - flickEvent — ([WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)) —
 
@@ -344,7 +344,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -356,7 +356,7 @@ Returns:
 - [Toybox.WatchUi.FlickEvent](/connect-iq/api-docs/Toybox/WatchUi/FlickEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -366,14 +366,14 @@ API 级别 3.3.0
 
 触摸屏被触摸但未释放时会发送此事件。
 
-Parameters:
+参数：
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     已发生的点击事件
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -385,7 +385,7 @@ Returns:
 - [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -395,14 +395,14 @@ API 级别 1.0.0
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
-Parameters:
+参数：
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     发生的按键事件。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -414,7 +414,7 @@ Returns:
 - [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -424,14 +424,14 @@ API 级别 1.0.0
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
-Parameters:
+参数：
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     已发生的按键事件。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -443,7 +443,7 @@ Returns:
 - [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.1.2
 
@@ -453,14 +453,14 @@ API 级别 1.1.2
 
 要确定按下了哪个键，请使用 [KeyEvent.getKey()](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/#getKey-instance_function) 获取按钮的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举值。
 
-Parameters:
+参数：
 
 - keyEvent — ([WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)) —
 
     发生的按键事件。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -472,7 +472,7 @@ Returns:
 - [Toybox.WatchUi.KeyEvent](/connect-iq/api-docs/Toybox/WatchUi/KeyEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.1.2
 
@@ -482,14 +482,14 @@ API 级别 1.1.2
 
 只有在 [onHold()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onHold-instance_function) 事件之后、触摸屏上的按压被释放后，才会发送此事件。
 
-Parameters:
+参数：
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     已发生的点击事件
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -501,7 +501,7 @@ Returns:
 - [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -509,14 +509,14 @@ API 级别 1.0.0
 
 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 的状态已更改。
 
-Parameters:
+参数：
 
 - selectableEvent — ([WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) —
 
     包含状态已更改的 Selectable 信息的可选择事件
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -530,7 +530,7 @@ Returns:
 - [Toybox.WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -540,14 +540,14 @@ API 级别 2.1.0
 
 触摸屏被滑动时会发送此事件。
 
-Parameters:
+参数：
 
 - swipeEvent — ([WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) —
 
     已发生的滑动事件
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -559,7 +559,7 @@ Returns:
 - [Toybox.WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -569,14 +569,14 @@ API 级别 1.0.0
 
 触摸屏被点击时会发送此事件（快速触摸并释放）。
 
-Parameters:
+参数：
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
     发生的点击事件
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -588,6 +588,6 @@ Returns:
 - [Toybox.WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

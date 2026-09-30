@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Button"
+title: "类：Toybox.WatchUi.Button"
 ---
 # 类：Toybox.WatchUi.Button
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Selectable
 
@@ -33,7 +33,7 @@ Button 对象可在选中时映射到 BehaviorDelegate 方法。
 
 请参阅 SDK 中随附的 Selectable 示例，了解 Button 类的使用示例
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -80,11 +80,11 @@ API 级别 2.1.0
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值或格式为 0xRRGGBB 的 24 位整数，在绘制当前 Selectable 状态之前进行绘制。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -94,7 +94,7 @@ Returns:
 
 此 Symbol 必须是活动 View 对象的已注册 BehaviorDelegate 的成员，例如 :onBack，但也可以是扩展类中的 Symbol。如果值为 `null`，则会发出 [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -103,7 +103,7 @@ API 级别 2.1.0
 - [Toybox.WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
 
 
-Returns:
+返回：
 
 - [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)
 
@@ -115,14 +115,14 @@ Returns:
 
 此方法假定设备上下文已经配置为正确的选项。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -130,7 +130,7 @@ API 级别 2.1.0
 
 构造函数初始化 Button 对象的前景、背景和行为。必须在 [setLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#setLayout-instance_function) 期间注册 Button，才能使用它。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -150,6 +150,6 @@ Parameters:
 - [Selectable.initialize()](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#initialize-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0

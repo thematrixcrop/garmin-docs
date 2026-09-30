@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Sensor"
+title: "模块：Toybox.Sensor"
 ---
 # 模块：Toybox.Sensor
 
@@ -9,7 +9,7 @@ Sensor 模块提供对传感器数据的访问。
 
 Sensor 允许应用注册以接收当前传感器数据的更新。它还允许应用控制设备原生支持的 ANT+ 传感器，这些传感器由提供的 SENSOR\_\* 常量描述。
 
-Example:
+示例：
 
 使用心率传感器显示当前心率
 
@@ -25,7 +25,7 @@ function onSensor(sensorInfo) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -235,7 +235,7 @@ API 级别 1.0.0
 
 ### RemoteSensorType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -278,7 +278,7 @@ API 级别 5.1.0
 
 ### OnboardSensorType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -305,7 +305,7 @@ API 级别 3.2.0
 
 描述用于与传感器通信的技术。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -409,7 +409,7 @@ API 级别 3.2.0
 
 ### **SensorType** as [Sensor.RemoteSensorType](/connect-iq/api-docs/Toybox/Sensor/#RemoteSensorType-module) or [Sensor.OnboardSensorType](/connect-iq/api-docs/Toybox/Sensor/#OnboardSensorType-module)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -425,14 +425,14 @@ API 级别 1.0.0
 
 在数据字段应用中调用会导致应用崩溃
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -446,7 +446,7 @@ API 级别 3.2.0
 
 在数据字段应用中调用会导致应用崩溃
 
-Parameters:
+参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -460,7 +460,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.Sensor;
@@ -468,7 +468,7 @@ using Toybox.Sensor;
 Sensor.enableSensorEvents(method(:onSensor));
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -486,14 +486,14 @@ API 级别 1.0.0
 
 多任务处理：处于非活动模式时无法更改传感器状态；在活动模式下启用的传感器将在应用变为非活动状态时被禁用，并在再次变为活动状态时自动重新启用。这些状态更改通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -507,7 +507,7 @@ API 级别 3.2.0
 
 在数据字段应用中调用会导致应用崩溃
 
-Example:
+示例：
 
 每秒获取一次加速度计数据
 
@@ -528,7 +528,7 @@ function timerCallback() {
 }
 ```
 
-Returns:
+返回：
 
 - [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/)
 
@@ -537,7 +537,7 @@ Returns:
 - [Toybox.Timer.Timer](/connect-iq/api-docs/Toybox/Timer/Timer/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -553,7 +553,7 @@ API 级别 1.0.0
 
 应用从非活动状态转换到活动状态后，此函数可能产生不同的结果。这些状态变化由对 AppBase.onActive() 和 AppBase.onInactive() 的调用表示。
 
-Example:
+示例：
 
 ```
 using Toybox.Sensor;
@@ -722,14 +722,14 @@ var maxSample = Sensor.getMaxSampleRate();
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     最大采样率，类型为数字
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -745,14 +745,14 @@ API 级别 2.3.0
 
 应用从非活动状态转换到活动状态后，此函数可能产生不同的结果。这些状态变化由对 AppBase.onActive() 和 AppBase.onInactive() 的调用表示。
 
-Parameters:
+参数：
 
 - sensorDataType — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     要获取最大速率的传感器数据类型符号；允许的符号为 `accelerometer`、`gyroscope` 和 `magnetometer`。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Sensor;
@@ -862,14 +862,14 @@ var maxSample = Sensor.getMaxSampleRateForSensorType(:accelerometer);
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     最大采样率，类型为 Number
 
 
-Since:
+起始版本：
 
 API 级别 3.4.5
 
@@ -879,21 +879,21 @@ API 级别 3.4.5
 
 如果已在传感器设置中为传感器提供配对信息，此函数将返回被视为 \`registered\` 的传感器的迭代器。
 
-Parameters:
+参数：
 
 - sensorType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
     用于描述要枚举的传感器类型的 SENSOR\_\* 值，或用于获取所有传感器的 `null`。
 
 
-Returns:
+返回：
 
 - [Sensor.SensorInfoIterator](/connect-iq/api-docs/Toybox/Sensor/SensorInfoIterator/) —
 
     当前已注册传感器的迭代器。
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -981,7 +981,7 @@ API 级别 3.2.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -989,7 +989,7 @@ API 级别 5.1.0
 
 通知系统应用发现了新传感器
 
-Parameters:
+参数：
 
 - sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
@@ -1080,7 +1080,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1088,7 +1088,7 @@ API 级别 5.1.0
 
 通知系统应用已完成传感器配对
 
-Parameters:
+参数：
 
 - sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
@@ -1175,7 +1175,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1263,7 +1263,7 @@ API 级别 5.1.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1271,7 +1271,7 @@ API 级别 5.1.0
 
 通知系统应用已完成取消传感器配对
 
-Parameters:
+参数：
 
 - sensor — ([Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) —
 
@@ -1358,7 +1358,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1380,7 +1380,7 @@ API 级别 5.1.0
 
 在数据字段应用中调用会导致应用崩溃
 
-Parameters:
+参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1445,7 +1445,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.Sensor;
@@ -1633,11 +1633,11 @@ Sensor.registerSensorDataListener(method(:accelCallback), options);
 - [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - [Toybox::Sensor::TooManySensorDataListenersException](/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException/) 如果尝试为传感器数据注册多个侦听器，则抛出。
 
@@ -1658,7 +1658,7 @@ Throws:
 
 多任务处理：处于非活动模式时无法更改传感器状态；在活动模式下启用的传感器将在应用变为非活动状态时被禁用，并在再次变为活动状态时自动重新启用。这些状态更改通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
-Parameters:
+参数：
 
 - sensors — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -1670,7 +1670,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 启用心率传感器
 
@@ -1679,14 +1679,14 @@ using Toybox.Sensor;
 Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     可用的请求传感器数组
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1698,7 +1698,7 @@ API 级别 1.0.0
 
 在数据字段应用中调用会导致应用崩溃
 
-Example:
+示例：
 
 ```
 // Assuming use of registerSensorDataListener() example and mSession
@@ -1875,6 +1875,6 @@ mSession.stop();                       // Stop Activity Recording
 - [Sensor.registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0

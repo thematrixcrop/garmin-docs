@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.ResistanceSettings"
+title: "类：Toybox.AntPlus.ResistanceSettings"
 ---
 # 类：Toybox.AntPlus.ResistanceSettings
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示健身器材处于基本阻力训练模式时设置的基本阻力百分比。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -57,11 +57,11 @@ API 级别 2.4.0
 
 健身器材的阻力百分比。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

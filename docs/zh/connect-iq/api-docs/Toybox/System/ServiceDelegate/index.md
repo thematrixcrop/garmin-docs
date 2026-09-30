@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.ServiceDelegate"
+title: "类：Toybox.System.ServiceDelegate"
 ---
 # 类：Toybox.System.ServiceDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ ServiceDelegate 是一个用于处理 [Background](/connect-iq/api-docs/Toybox/B
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.Background;
@@ -55,7 +55,7 @@ class MyServiceDelegate extends System.ServiceDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -100,7 +100,7 @@ API 级别 2.3.0
 
 活动完成时触发的回调方法
 
-Parameters:
+参数：
 
 - activity — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -115,7 +115,7 @@ Parameters:
         已完成活动的运动项目子类别。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -123,14 +123,14 @@ API 级别 3.0.10
 
 在达到健身目标时于后台触发的回调方法。
 
-Parameters:
+参数：
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     表示正在注册的目标类型的 Application.GOAL\_TYPE\_\* 值。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -138,7 +138,7 @@ API 级别 2.3.0
 
 系统收到 OAuth 响应后在后台触发的回调方法
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -146,7 +146,7 @@ API 级别 2.3.0
 
 此应用收到手机应用消息时触发的回调方法
 
-Parameters:
+参数：
 
 - msg — ([Communications.PhoneAppMessage](/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage/)) —
 
@@ -289,7 +289,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -297,7 +297,7 @@ API 级别 3.2.0
 
 在配置的休眠时间于后台触发的回调方法。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -307,7 +307,7 @@ API 级别 2.3.0
 
 步数目标以每 1000 步为增量。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -315,7 +315,7 @@ API 级别 2.3.0
 
 在基于时间的事件发生时于后台触发的回调方法。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -323,6 +323,6 @@ API 级别 2.3.0
 
 在配置的唤醒时间于后台触发的回调方法。
 
-Since:
+起始版本：
 
 API 级别 2.3.0

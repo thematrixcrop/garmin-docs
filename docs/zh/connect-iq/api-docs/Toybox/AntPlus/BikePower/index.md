@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikePower"
+title: "类：Toybox.AntPlus.BikePower"
 ---
 # 类：Toybox.AntPlus.BikePower
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -27,7 +27,7 @@ Toybox.AntPlus.Device
 - [BikePowerListener example for examples of onCalculated\* methods available in {Toybox::AntPlus::BikePowerListener BikePowerListener}](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -46,7 +46,7 @@ var calculatedPower = bikePower.getCalculatedPower();
 // ...etc
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -201,14 +201,14 @@ API 级别 2.2.0
 
 获取当前计算的曲柄踏频。
 
-Returns:
+返回：
 
 - [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/) —
 
     当前计算得出的曲柄踏频
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -216,14 +216,14 @@ API 级别 2.2.0
 
 获取当前计算出的功率。
 
-Returns:
+返回：
 
 - [AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/) —
 
     当前计算得出的功率
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -231,14 +231,14 @@ API 级别 2.2.0
 
 获取当前计算出的车轮距离。
 
-Returns:
+返回：
 
 - [AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/) —
 
     当前计算得出的车轮距离
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -246,14 +246,14 @@ API 级别 2.2.0
 
 获取当前计算出的车轮速度。
 
-Returns:
+返回：
 
 - [AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/) —
 
     当前计算得出的车轮速度
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -261,14 +261,14 @@ API 级别 2.2.0
 
 获取当前的踏板功率平衡。
 
-Returns:
+返回：
 
 - [AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/) —
 
     踏板功率平衡
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -276,14 +276,14 @@ API 级别 2.2.0
 
 获取当前的扭矩效率和踏板平顺度。
 
-Returns:
+返回：
 
 - [AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/) —
 
     当前扭矩效果和踩踏平顺度
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -291,13 +291,13 @@ API 级别 2.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)) —
 
     自行车功率实例的参数可选用 [BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) 类的扩展类。如果用户计划仅使用 getCalculated\* 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

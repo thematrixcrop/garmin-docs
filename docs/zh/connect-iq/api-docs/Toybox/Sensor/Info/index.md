@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.Info"
+title: "类：Toybox.Sensor.Info"
 ---
 # 类：Toybox.Sensor.Info
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Sensor.Info 类包含启用的传感器提供的所有信息。
 
 [Sensor.Info](/connect-iq/api-docs/Toybox/Sensor/Info/) 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时检索，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 某些设备在启动时不会启用加速度计。要从这些设备的此字段获取有效数据，应用必须通过调用 [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 启用传感器。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -258,7 +258,7 @@ API 级别 1.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -268,7 +268,7 @@ Returns:
 
 海拔高度取自按准确度降序排列的最准确数据源：气压计或 GPS。如果没有 GPS，则使用气压计读数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -279,7 +279,7 @@ API 级别 1.0.0
 - [Positional Altitude](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -298,11 +298,11 @@ Returns:
 4. 基于手表的步频计算
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -312,11 +312,11 @@ Returns:
 
 如果设备支持，此方法会提供罗盘方向。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -324,11 +324,11 @@ Returns:
 
 心率，单位为每分钟心跳次数 (bpm)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -340,7 +340,7 @@ Returns:
 
 某些设备在启动时不会启用磁力计。要从这些设备的此字段获取有效数据，应用必须通过调用 [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 启用传感器。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -504,7 +504,7 @@ API 级别 1.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -512,7 +512,7 @@ Returns:
 
 当前血氧饱和度，以百分比 (%) 表示。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -633,7 +633,7 @@ API 级别 3.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -641,11 +641,11 @@ Returns:
 
 以瓦特 (W) 为单位的功率。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -655,11 +655,11 @@ Returns:
 
 此方法返回校准到海平面的气压。由于压力会因多种因素而变化，因此必须先获取基于 GPS 的海拔，然后由压力传感器测量环境（本地）压力，再将其转换为校准后的气压值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -667,7 +667,7 @@ Returns:
 
 以米每秒 (m/s) 为单位的速度。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -676,7 +676,7 @@ API 级别 1.0.0
 - [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -684,10 +684,10 @@ Returns:
 
 以摄氏度 (C) 为单位的温度。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

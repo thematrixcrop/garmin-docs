@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.FitnessEquipmentMode"
+title: "类：Toybox.AntPlus.FitnessEquipmentMode"
 ---
 # 类：Toybox.AntPlus.FitnessEquipmentMode
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示健身器材训练模式。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -30,7 +30,7 @@ var mode = FitnessEquipmentMode.mode;
 System.println("Current training mode is: " + mode);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -81,11 +81,11 @@ API 级别 2.4.0
 
 支持基本阻力训练模式的标志
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -96,11 +96,11 @@ Returns:
 
 健身设备的当前训练模式
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -111,11 +111,11 @@ Returns:
 
 支持模拟训练模式的标志
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -126,11 +126,11 @@ Returns:
 
 支持目标功率训练模式的标志
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 

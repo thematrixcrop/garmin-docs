@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Menu2"
+title: "类：Toybox.WatchUi.Menu2"
 ---
 # 类：Toybox.WatchUi.Menu2
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -39,7 +39,7 @@ Toybox.WatchUi.View
 
 Menu2 的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 以编程方式构建简单的 Menu2
 
@@ -77,7 +77,7 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -265,7 +265,7 @@ API 级别 3.0.0
 
 支持的设备的分隔符类型
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
@@ -350,7 +350,7 @@ API 级别 5.0.1
 
 将 MenuItem 添加到 Menu2。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
@@ -360,11 +360,11 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
@@ -379,19 +379,19 @@ Throws:
 
 从 Menu2 中删除 MenuItem。
 
-Parameters:
+参数：
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     应从 Menu2 中删除的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引。
 
 
-Returns:
+返回：
 
 - [Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) 如果项目存在，则为 `true`；如果指定索引超出菜单项数组的范围，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -399,14 +399,14 @@ API 级别 3.0.0
 
 在 Menu2 中按 ID 查找 MenuItem。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要搜索的标识符
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -416,7 +416,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -440,14 +440,14 @@ API 级别 3.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
     图标
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -455,18 +455,18 @@ API 级别 3.4.0
 
 从 Menu2 获取 MenuItem。
 
-Parameters:
+参数：
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     要获取的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引
 
 
-Returns:
+返回：
 
 - [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -490,7 +490,7 @@ Constructor
 
 `:footer` 选项仅用于 ConnectIQ 5.1.0 设备。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -529,7 +529,7 @@ Parameters:
 - [Toybox.WatchUi.Menu2.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#setDividerType-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -566,11 +566,11 @@ API 级别 3.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
-Throws:
+抛出：
 
 - (WatchUi.InvalidValueException) —
 
@@ -585,18 +585,18 @@ Throws:
 
 设置 Menu2 中 MenuItem 的焦点。
 
-Parameters:
+参数：
 
 - focus — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     应获得焦点的 [MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的索引
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -607,18 +607,18 @@ Throws:
 
 设置 Menu2 页脚。
 
-Parameters:
+参数：
 
 - footer — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     菜单页脚文本、`null`、字符串 ResourceId 或 Drawable
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -631,7 +631,7 @@ Throws:
 
 设置聚焦的 MenuItem 没有图标时要在子屏幕区域中显示的图标。如果此菜单没有图标，则改为显示应用图标。
 
-Parameters:
+参数：
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
@@ -652,7 +652,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -660,7 +660,7 @@ API 级别 3.4.0
 
 设置主题
 
-Parameters:
+参数：
 
 - theme — ([WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)) —
 
@@ -701,7 +701,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.1.8
 
@@ -709,18 +709,18 @@ API 级别 4.1.8
 
 设置 Menu2 标题。
 
-Parameters:
+参数：
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     菜单标题文本、`null`、字符串 ResourceId 或 Drawable
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -731,7 +731,7 @@ Throws:
 
 更新 Menu2 中的 MenuItem。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
@@ -742,6 +742,6 @@ Parameters:
     要更新的 MenuItem 的索引
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

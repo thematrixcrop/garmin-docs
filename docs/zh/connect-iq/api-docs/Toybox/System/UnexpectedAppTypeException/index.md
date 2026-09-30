@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.UnexpectedAppTypeException"
+title: "类：Toybox.System.UnexpectedAppTypeException"
 ---
 # 类：Toybox.System.UnexpectedAppTypeException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -27,7 +27,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -44,13 +44,13 @@ API 级别 2.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

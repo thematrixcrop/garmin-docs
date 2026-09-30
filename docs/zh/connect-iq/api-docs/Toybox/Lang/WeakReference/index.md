@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.WeakReference"
+title: "类：Toybox.Lang.WeakReference"
 ---
 # 类：Toybox.Lang.WeakReference
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [https://en.wikipedia.org/wiki/Weak\_reference](https://en.wikipedia.org/wiki/Weak_reference)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -46,14 +46,14 @@ API 级别 1.2.0
 
 获取 WeakReference 引用的 Object
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     所引用的 Object；如果 Object 不再存在，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -65,7 +65,7 @@ API 级别 1.2.0
 
 我感觉棒极了，而且我还活着。当你快死时，我还会活着。当你死了，我仍然会活着。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -77,6 +77,6 @@ Returns:
 - [http://knowyourmeme.com/memes/still-alive-portal-end-theme](http://knowyourmeme.com/memes/still-alive-portal-end-theme)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

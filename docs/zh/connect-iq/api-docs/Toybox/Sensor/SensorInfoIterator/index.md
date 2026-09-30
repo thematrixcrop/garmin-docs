@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.SensorInfoIterator"
+title: "类：Toybox.Sensor.SensorInfoIterator"
 ---
 # 类：Toybox.Sensor.SensorInfoIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 SensorIterator 描述一组用于表示实际传感器的 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 对象。此类迭代器通过 [Sensor](/connect-iq/api-docs/Toybox/Sensor/) 模块级别中相应的“get\*Sensors”方法获取。
 
-Example:
+示例：
 
 获取设备上所有已注册外部心率传感器的 SensorIterator 对象
 
@@ -35,7 +35,7 @@ function getHeartRateSensorIterator() {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -54,11 +54,11 @@ API 级别 3.2.0
 
 获取当前 [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)，并将自身前进到下一个。
 
-Returns:
+返回：
 
 - [SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0

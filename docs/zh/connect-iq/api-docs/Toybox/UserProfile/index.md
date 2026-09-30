@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.UserProfile"
+title: "模块：Toybox.UserProfile"
 ---
 # 模块：Toybox.UserProfile
 
@@ -9,7 +9,7 @@ UserProfile 模块允许应用访问用户信息。
 
 该模块包含用于从用户配置文件中检索性别信息的 GENDER\_\* 枚举。HR\_ZONE\_SPORT\_\* 枚举还提供用于定义不同运动类型的常量。该枚举用于检索特定运动的心率区间。
 
-Example:
+示例：
 
 简单的 UserProfile 模块使用
 
@@ -20,7 +20,7 @@ var profile = UserProfile.getProfile();
 System.out.println("The user was born in " + profile.birthYear);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -37,7 +37,7 @@ API 级别 1.0.0
 
 ### Gender
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -60,7 +60,7 @@ API 级别 4.2.3
 
 ### SportHrZone
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -129,21 +129,21 @@ API 级别 1.2.6
 
 如果活动的运动项目没有特定于运动项目的区域，则返回 [HR\_ZONE\_SPORT\_GENERIC](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const)。
 
-Example:
+示例：
 
 ```
 using Toybox.UserProfile;
 var profile = UserProfile.getCurrentSport();
 ```
 
-Returns:
+返回：
 
 - [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module) —
 
     来自 [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) 枚举的当前 HR 区间运动类型。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.6
 
@@ -151,14 +151,14 @@ API 级别 1.2.6
 
 返回当前活动所属的运动项目。
 
-Returns:
+返回：
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
     来自 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 枚举的当前运动类型。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -166,14 +166,14 @@ API 级别 5.2.2
 
 返回用户的功能性阈值功率（FTP）。
 
-Parameters:
+参数：
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     请求 FTP 所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
-Example:
+示例：
 
 使用 SPORT\_\* 枚举获取特定运动的区域
 
@@ -220,14 +220,14 @@ var thresholdPower = UserProfile.getFunctionalThresholdPower(Activity.SPORT_CYCL
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     请求运动项目的 FTP 值。如果指定运动项目未配置 FTP 值，则返回默认运动项目的值；如果发生错误，则返回 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -250,14 +250,14 @@ API 级别 5.2.2
 - max zone 5 - 区域 5 的最大心率阈值
 
 
-Parameters:
+参数：
 
 - sport — ([UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) —
 
     请求区域值所针对的运动项目。应为 [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) 值。
 
 
-Example:
+示例：
 
 使用 HR\_ZONE\_SPORT\_\* 枚举获取特定运动的区域
 
@@ -266,14 +266,14 @@ using Toybox.UserProfile;
 var genericZoneInfo = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     所请求运动项目的区域阈值数组。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.6
 
@@ -296,14 +296,14 @@ API 级别 1.2.6
 - max zone 5 - 区域 5 的最大心率阈值
 
 
-Parameters:
+参数：
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     请求区域所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
-Example:
+示例：
 
 使用 HR\_ZONE\_SPORT\_\* 枚举获取特定运动的区域
 
@@ -312,14 +312,14 @@ using Toybox.UserProfile;
 var zoneInfo = UserProfile.getHeartRateZones2(Activity.SPORT_GENERIC);
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     所请求运动项目的区域阈值数组。如果给定运动项目未配置心率区域，则返回默认运动项目的区域；如果出错，则返回 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -327,14 +327,14 @@ API 级别 5.2.2
 
 获取当前功率区间阈值（单位：瓦特 (W)）的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
-Parameters:
+参数：
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
     请求区域值所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
-Example:
+示例：
 
 使用 SPORT\_\* 枚举获取特定运动的区域
 
@@ -381,14 +381,14 @@ var zoneInfo = UserProfile.getPowerZones(Activity.SPORT_RUNNING);
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     所请求运动项目的区域阈值数组。如果给定运动项目未配置功率区域，则返回默认运动项目的区域；如果出错，则返回 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -396,21 +396,21 @@ API 级别 5.2.2
 
 获取当前的 [Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) 对象。
 
-Example:
+示例：
 
 ```
 using Toybox.UserProfile;
 var profile = UserProfile.getProfile();
 ```
 
-Returns:
+返回：
 
 - [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) —
 
     当前用户的 Profile 对象
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -418,7 +418,7 @@ API 级别 1.0.0
 
 获取用户活动历史记录的迭代器
 
-Example:
+示例：
 
 显示 UserActivityHistoryIterator 的使用
 
@@ -436,13 +436,13 @@ while (sample != null) {
 }
 ```
 
-Returns:
+返回：
 
 - [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/) —
 
     迭代器对象
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Menu"
+title: "类：Toybox.WatchUi.Menu"
 ---
 # 类：Toybox.WatchUi.Menu
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -33,7 +33,7 @@ Menu 是一种特殊的 View，用于向用户显示选项列表。选择选项�
 
 菜单的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 以编程方式构建简单菜单
 
@@ -58,7 +58,7 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -109,7 +109,7 @@ Menu 中允许的最大条目数。
 
 向 Menu 添加一个条目。
 
-Parameters:
+参数：
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -120,7 +120,7 @@ Parameters:
     表示 Menu 项值的 Symbol
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -128,13 +128,13 @@ API 级别 1.0.0
 
 设置 Menu 标题。
 
-Parameters:
+参数：
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     标题文本或字符串 ResourceId
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

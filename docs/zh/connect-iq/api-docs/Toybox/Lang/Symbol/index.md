@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Symbol"
+title: "类：Toybox.Lang.Symbol"
 ---
 # 类：Toybox.Lang.Symbol
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -22,13 +22,13 @@ Monkey C 编译器遇到新 Symbol 时会分配一个新值。这使开发者可
 
 因此，不应将 Symbol 对象用于持久化数据。
 
-Example:
+示例：
 
 ```
 var person = {:first_name=>"Bob", :last_name=>"Jones"};
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -51,14 +51,14 @@ API 级别 1.0.0
 
 此项将返回一个包含该 symbol 整数值的数字。
 
-Returns:
+返回：
 
 - 数字 —
 
     Symbol 的数字表示
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -68,13 +68,13 @@ API 级别 2.3.0
 
 在开发版本中，此项将返回 symbol 名称的字符串。由于 Monkey C 在发布版本中不包含运行时反射信息，返回的字符串将有所不同，并采用 "symbol (num)" 格式。在此格式中，"num" 是 symbol 的整数值。
 
-Returns:
+返回：
 
 - 字符串 —
 
     Symbol 的 String 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

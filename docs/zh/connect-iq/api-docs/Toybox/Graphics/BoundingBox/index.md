@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.BoundingBox"
+title: "类：Toybox.Graphics.BoundingBox"
 ---
 # 类：Toybox.Graphics.BoundingBox
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示 UI 中边界框的对象
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -94,7 +94,7 @@ API 级别 3.2.7
 
 表示边界框的高度
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -102,7 +102,7 @@ API 级别 3.2.7
 
 表示边界框的宽度
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -110,7 +110,7 @@ API 级别 3.2.7
 
 表示边界框原点的 x 坐标
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -118,7 +118,7 @@ API 级别 3.2.7
 
 表示边界框原点的 y 坐标
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -130,14 +130,14 @@ API 级别 3.2.7
 
 更新 `self` 以包含指定的完整边界框。如果 `self` 无效，则将 `self` 设置为 `box`。
 
-Parameters:
+参数：
 
 - box — ([Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/)) —
 
     要添加的边界框。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -147,7 +147,7 @@ API 级别 5.1.0
 
 更新 `self` 以包含指定的圆。如果 `self` 无效，则将 `self` 设置为包含给定圆的边界框。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -162,11 +162,11 @@ Parameters:
     要添加的圆的半径。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -187,7 +187,7 @@ Throws:
 
 更新 `self` 以包含指定的椭圆。如果 `self` 无效，则将 `self` 设置为包含给定椭圆的边界框。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -206,11 +206,11 @@ Parameters:
     沿 y 轴添加的椭圆半径
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -235,7 +235,7 @@ Throws:
 
 更新 `self` 以包含指定的点。如果 `self` 无效，则将 `self` 设置为包含给定点的边界框。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -246,11 +246,11 @@ Parameters:
     要添加的点的 y 坐标。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -267,18 +267,18 @@ Throws:
 
 更新 `self` 以包含指定的所有点。如果 `self` 无效，则将 `self` 设置为包含所有给定点的边界框。
 
-Parameters:
+参数：
 
 - points — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     要添加的点数组。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -291,7 +291,7 @@ Throws:
 
 更新 `self` 以包含指定的矩形。如果 `self` 无效，则将 `self` 设置为包含给定矩形的边界框。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -310,11 +310,11 @@ Parameters:
     矩形框的高度。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -339,7 +339,7 @@ Throws:
 
 按照指定的 x 和 y 偏移量扩展 `self`。使用负值收缩 self。
 
-Parameters:
+参数：
 
 - dx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -350,11 +350,11 @@ Parameters:
     沿 y 轴扩展的量。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -371,7 +371,7 @@ Throws:
 
 框边缘上的点被视为包含在内，因为将此类点添加到框中不会使框扩展。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -382,18 +382,18 @@ Parameters:
     要检查的点的 y 坐标。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此框包含给定点，则为 `true`。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -410,7 +410,7 @@ Throws:
 
 修复 `self`，使 `width` 和 `height` 为非负数，并在必要时更新 `x` 和 `y` 坐标。如果 `self` 无效或已经规范化，则不执行任何操作。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -418,7 +418,7 @@ API 级别 5.1.0
 
 将 self 重置为无效状态
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -426,13 +426,13 @@ API 级别 5.1.0
 
 复选框有效
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 `self` 描述的是有效的边界框，则为 `true`。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0

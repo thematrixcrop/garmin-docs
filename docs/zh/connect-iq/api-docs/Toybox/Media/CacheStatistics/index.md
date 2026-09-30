@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.CacheStatistics"
+title: "类：Toybox.Media.CacheStatistics"
 ---
 # 类：Toybox.Media.CacheStatistics
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 存储媒体缓存大小统计信息
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -39,11 +39,11 @@ API 级别 3.0.0
 
 媒体缓存的容量
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
@@ -54,11 +54,11 @@ Returns:
 
 媒体缓存的当前大小
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 

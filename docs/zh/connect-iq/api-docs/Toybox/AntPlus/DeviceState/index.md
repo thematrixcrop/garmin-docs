@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.DeviceState"
+title: "类：Toybox.AntPlus.DeviceState"
 ---
 # 类：Toybox.AntPlus.DeviceState
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -33,7 +33,7 @@ System.println("Current device state is: " + state);
 System.println("Current device number is: " + deviceNumber);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -54,11 +54,11 @@ API 级别 2.2.0
 
 当前正在跟踪/搜索的设备 ID。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -69,11 +69,11 @@ Returns:
 
 设备作为 [DEVICE\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#DEVICE_STATE_CLOSED-const) 值时的状态。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) —
 

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.GenericChannel"
+title: "类：Toybox.Ant.GenericChannel"
 ---
 # 类：Toybox.Ant.GenericChannel
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 GenericChannel 提供 ANT 通道的初始化、生命周期管理和加密所需的方法。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -81,7 +81,7 @@ API 级别 1.0.0
 
 关闭通用 ANT 通道。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -90,14 +90,14 @@ using Toybox.Ant;
 genericChannel.close();
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -105,7 +105,7 @@ API 级别 1.0.0
 
 禁用此通道上的加密。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -252,14 +252,14 @@ genericChannel.disableEncryption();
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -267,14 +267,14 @@ API 级别 2.3.0
 
 设置加密配置并在此通道上启用加密。
 
-Parameters:
+参数：
 
 - configuration — ([Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)) —
 
     要为当前通道设置的 CryptoConfig 对象
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -422,7 +422,7 @@ genericChannel.enableEncryption(cryptoConfig);
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -434,11 +434,11 @@ Returns:
 - [Toybox.Ant.CryptoConfig](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Ant.EncryptionInvalidSettingsException](/connect-iq/api-docs/Toybox/Ant/EncryptionInvalidSettingsException/)) —
 
@@ -453,7 +453,7 @@ Throws:
 
 获取当前 ANT 通道配置。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -461,7 +461,7 @@ var devConfig = genericChannel.getDeviceConfig();
 // devConfig fields can now be accessed for configuration info
 ```
 
-Returns:
+返回：
 
 - [Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/) —
 
@@ -473,7 +473,7 @@ Returns:
 - [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -481,7 +481,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -492,7 +492,7 @@ Parameters:
     通道的 ChannelAssignment 对象
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -502,11 +502,11 @@ using Toybox.Ant;
 GenericChannel.initialize(method(:listenerCallback), channelAssign);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Ant.UnableToAcquireChannelException](/connect-iq/api-docs/Toybox/Ant/UnableToAcquireChannelException/)) —
 
@@ -521,7 +521,7 @@ Throws:
 
 多任务：处于非活动模式时无法更改 Ant 通道连接；在活动模式期间打开的 Ant 通道会在应用变为非活动状态时关闭，并在再次变为活动状态时自动重新打开。这些状态变化通过调用 AppBase.onActive() 和 AppBase.onInactive() 表示。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -530,14 +530,14 @@ using Toybox.Ant;
 genericChannel.open();
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -547,7 +547,7 @@ API 级别 1.0.0
 
 如果通道处于打开状态，则会自动关闭。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -556,14 +556,14 @@ using Toybox.Ant;
 genericChannel.release();
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     成功时返回 `true`，否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -573,14 +573,14 @@ API 级别 1.0.0
 
 如果消息成功/失败发送给接收方，您可以预期收到 [MSG\_CODE\_EVENT\_TRANSFER\_TX\_COMPLETED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_COMPLETED-const) 或 [MSG\_CODE\_EVENT\_TRANSFER\_TX\_FAILED](/connect-iq/api-docs/Toybox/Ant/#MSG_CODE_EVENT_TRANSFER_TX_FAILED-const)。
 
-Parameters:
+参数：
 
 - data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
     其负载为由数字组成的 8 字节 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -596,7 +596,7 @@ message.setPayload(data);   // Assumes valid data
 genericChannel.sendAcknowledge(message);
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -608,7 +608,7 @@ Returns:
 - [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -616,14 +616,14 @@ API 级别 1.0.0
 
 发送广播消息。
 
-Parameters:
+参数：
 
 - data — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
     其负载为由数字组成的 8 字节 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 的消息
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -639,7 +639,7 @@ message.setPayload(data);   // Assumes valid data
 genericChannel.sendBroadcast(message);
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -651,7 +651,7 @@ Returns:
 - [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -661,14 +661,14 @@ API 级别 1.0.0
 
 [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) 会收到成功或失败结果。
 
-Parameters:
+参数：
 
 - burstData — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) —
 
     要通过通道突发传输的数据
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -686,11 +686,11 @@ genericChannel.sendBurst(burstData);    // Send Message
 - [Toybox.Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Throws:
+抛出：
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
@@ -703,14 +703,14 @@ Throws:
 
 失败的突发数据或大于指定阈值的数据将被丢弃。
 
-Parameters:
+参数：
 
 - listener — ([Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) —
 
     BurstListener 类的扩展
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -725,11 +725,11 @@ genericChannel.setBurstListener(listener);
 - [Toybox.Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Throws:
+抛出：
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
@@ -740,14 +740,14 @@ Throws:
 
 设置当前 ANT 通道配置。
 
-Parameters:
+参数：
 
 - configuration — ([Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)) —
 
     要为当前 ANT 通道设置的 DeviceConfig 对象
 
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -757,7 +757,7 @@ var configuration = new Ant.DeviceConfig({});
 genericChannel.setDeviceConfig(configuration);
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -769,11 +769,11 @@ Returns:
 - [Toybox.Ant.DeviceConfig](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - (Lang.UnexpectedTypeError) —
 

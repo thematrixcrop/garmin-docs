@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.AnimationResource"
+title: "类：Toybox.WatchUi.AnimationResource"
 ---
 # 类：Toybox.WatchUi.AnimationResource
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 AnimationResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -187,14 +187,14 @@ API 级别 3.1.0
 
 获取动画资源以位/像素表示的色深。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     以位/像素表示的颜色深度
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -202,14 +202,14 @@ API 级别 3.2.0
 
 获取动画资源的目标帧率。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     动画的帧速率（单位为秒）
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -217,14 +217,14 @@ API 级别 3.1.0
 
 获取动画资源的高度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     动画的高度（以像素为单位）
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -232,14 +232,14 @@ API 级别 3.1.0
 
 获取动画资源的帧数。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     帧数
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -247,14 +247,14 @@ API 级别 3.1.0
 
 获取动画资源的宽度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     动画的宽度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -264,13 +264,13 @@ API 级别 3.1.0
 
 info String 的格式为 "Animation X x Y"，其中 "X" 是动画宽度，"Y" 是动画高度。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     AnimationResource 对象的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

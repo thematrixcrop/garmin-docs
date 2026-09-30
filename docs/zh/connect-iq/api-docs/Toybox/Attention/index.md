@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Attention"
+title: "模块：Toybox.Attention"
 ---
 # 模块：Toybox.Attention
 
@@ -9,7 +9,7 @@ Attention 模块提供播放预定义声音、管理振动以及控制背光的�
 
 并非所有设备都完全支持此模块，因此建议使用 `has` 检查。例如，vivoactive 没有音调生成器，如果应用尝试播放声音，就会触发错误。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -34,7 +34,7 @@ API 级别 1.0.0
 
 ### Tone
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -215,7 +215,7 @@ API 级别 1.0.0
 
 手电筒模式
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -240,7 +240,7 @@ API 级别 3.4.3
 
 手电筒颜色
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -267,7 +267,7 @@ API 级别 3.4.3
 
 常量映射到设备特定的亮度级别
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -292,7 +292,7 @@ API 级别 3.4.3
 
 手电筒频闪模式
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -322,7 +322,7 @@ API 级别 3.4.3
 
 手电筒频闪速度
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -347,7 +347,7 @@ API 级别 3.4.3
 
 手电筒结果代码
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
@@ -417,7 +417,7 @@ API 级别 3.4.3
 
 仅 ConnectIQ 3.2.1 及更高版本支持传递 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。
 
-Parameters:
+参数：
 
 - setting — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
@@ -603,11 +603,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - BacklightOnTooLongException 在具有防烧屏保护的产品上，如果背光连续点亮时间过长，则会引发此异常
 
@@ -618,7 +618,7 @@ Throws:
 
 确定设备是否支持指定的闪光灯颜色
 
-Parameters:
+参数：
 
 - color — ([Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module)) —
 
@@ -665,16 +665,16 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - 如果支持给定颜色，则返回 true；否则返回 false。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -689,7 +689,7 @@ Throws:
 
 仅 ConnectIQ 3.1.0 及更高版本支持传递 options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
-Parameters:
+参数：
 
 - options — ([Attention.Tone](/connect-iq/api-docs/Toybox/Attention/#Tone-module), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -704,7 +704,7 @@ Parameters:
         重复给定音调序列的次数。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Attention;
@@ -881,11 +881,11 @@ if (Attention has :ToneProfile) {
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -894,7 +894,7 @@ Throws:
 
 ### **setFlashlightMode(mode as [Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module), options as { :color as [Attention.FlashlightColor](/connect-iq/api-docs/Toybox/Attention/#FlashlightColor-module), :brightness as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module), :strobeMode as [Attention.FlashlightStrobeMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeMode-module), :strobeSpeed as [Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module) } or **Null**)** as [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module)
 
-Parameters:
+参数：
 
 - mode — ([Attention.FlashlightMode](/connect-iq/api-docs/Toybox/Attention/#FlashlightMode-module))
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
@@ -958,18 +958,18 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Attention.FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) —
 
     一个表示操作状态的 [FlashlightResult](/connect-iq/api-docs/Toybox/Attention/#FlashlightResult-module) 值。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.3
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -986,14 +986,14 @@ vibrate 方法接受一个包含至少一个 [VibeProfile](/connect-iq/api-docs/
 
 Forerunner 设备不支持振动模式。仍然可以使用振动，但振动始终以相同的占空比运行。
 
-Parameters:
+参数：
 
 - vibeProfiles — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     包含 [VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/) 个对象的数组
 
 
-Example:
+示例：
 
 以开启/关闭模式振动
 
@@ -1167,6 +1167,6 @@ Attention.vibrate(vibeData);
 - [Toybox.Attention.VibeProfile](/connect-iq/api-docs/Toybox/Attention/VibeProfile/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

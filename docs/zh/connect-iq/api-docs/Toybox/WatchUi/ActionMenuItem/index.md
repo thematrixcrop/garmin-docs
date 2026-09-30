@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ActionMenuItem"
+title: "类：Toybox.WatchUi.ActionMenuItem"
 ---
 # 类：Toybox.WatchUi.ActionMenuItem
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示操作菜单项的类。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -162,7 +162,7 @@ API 级别 3.4.0
 
 ### Options，格式为 { :label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) }
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -172,14 +172,14 @@ API 级别 3.4.0
 
 获取 MenuItem 标识符。
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     MenuItem 的标识符。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -187,14 +187,14 @@ API 级别 3.4.0
 
 获取 MenuItem 标签。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     MenuItem 的文本标签
 
 
-Since:
+起始版本：
 
 API 级别 3.4.2
 
@@ -202,7 +202,7 @@ API 级别 3.4.2
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -217,6 +217,6 @@ Parameters:
     此 MenuItem 的标识符
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0

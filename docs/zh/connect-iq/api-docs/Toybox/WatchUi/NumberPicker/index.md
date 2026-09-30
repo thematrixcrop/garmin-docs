@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.NumberPicker"
+title: "类：Toybox.WatchUi.NumberPicker"
 ---
 # 类：Toybox.WatchUi.NumberPicker
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -35,7 +35,7 @@ NumberPicker 类仅限于 [WatchUi.NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toyb
 
 数字选择器的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 按下 Menu 按钮时显示距离选择器
 
@@ -76,7 +76,7 @@ class MyInputDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -146,7 +146,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -157,6 +157,6 @@ Parameters:
     NumberPicker 的初始值，取决于指定的模式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

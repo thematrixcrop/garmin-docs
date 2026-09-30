@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.FontResource"
+title: "类：Toybox.WatchUi.FontResource"
 ---
 # 类：Toybox.WatchUi.FontResource
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 FontResource 对象由 [loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 方法返回。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 

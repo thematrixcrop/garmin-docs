@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.AntPlus"
+title: "模块：Toybox.AntPlus"
 ---
 # 模块：Toybox.AntPlus
 
@@ -18,7 +18,7 @@ ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用�
 - [ANT Downloads & Resources (ANT+ Device Profiles)](https://www.thisisant.com/developer/resources/downloads/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -241,7 +241,7 @@ API 级别 3.1.0
 
 ### BatteryStatusValue
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -284,7 +284,7 @@ API 级别 2.2.0
 
 ### MessageSendStatus
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -315,7 +315,7 @@ API 级别 3.1.0
 
 ### MessageType
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -346,7 +346,7 @@ API 级别 3.1.0
 
 ### DeviceCurrentState
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -395,7 +395,7 @@ API 级别 2.2.0
 
 ### LightNetworkState
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -430,7 +430,7 @@ API 级别 2.2.0
 
 ### LightNetworkMode
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -465,7 +465,7 @@ API 级别 2.2.0
 
 ### LightMode
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -645,7 +645,7 @@ API 级别 2.2.0
 
 ### LightType
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -707,7 +707,7 @@ API 级别 2.2.0
 
 ### BikePowerSensorType
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -765,7 +765,7 @@ API 级别 2.2.0
 
 ### ThreatLevel
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -800,7 +800,7 @@ API 级别 3.0.0
 
 ### ThreatSide
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -835,7 +835,7 @@ API 级别 3.0.0
 
 ### TrainerMode
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -870,7 +870,7 @@ API 级别 2.4.0
 
 ### TrainerValue
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -986,7 +986,7 @@ API 级别 2.4.0
 
 ### BodyLocation
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1057,7 +1057,7 @@ API 级别 2.4.0
 
 ### SensorOrientation
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 

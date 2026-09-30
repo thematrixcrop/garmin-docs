@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.UserProfile.Profile"
+title: "类：Toybox.UserProfile.Profile"
 ---
 # 类：Toybox.UserProfile.Profile
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Profile 对象包含用户信息。
 
 如果尚未配置值或无法计算值，则值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -93,11 +93,11 @@ API 级别 1.0.0
 
 用户配置的活动级别
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -110,7 +110,7 @@ Returns:
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -234,7 +234,7 @@ API 级别 3.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -245,11 +245,11 @@ Returns:
 
 用户配置的出生年份
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -260,11 +260,11 @@ Returns:
 
 用户配置的性别
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [UserProfile.Gender](/connect-iq/api-docs/Toybox/UserProfile/#Gender-module)
 
@@ -272,11 +272,11 @@ Returns:
 
 用户配置的高度
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -287,11 +287,11 @@ Returns:
 
 用户配置的静息心率
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -302,11 +302,11 @@ Returns:
 
 用户配置的跑步步长
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -317,11 +317,11 @@ Returns:
 
 用户配置的典型睡眠时间
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -332,11 +332,11 @@ Returns:
 
 如果已设置，则为即将到来的睡眠时间，同时考虑当前星期几和当天时间。如果当前当天时间已过今日的睡眠时间，则返回次日的睡眠时间。
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -347,11 +347,11 @@ Returns:
 
 如果已设置，则为即将到来的起床时间，同时考虑当前星期几和当天时间。如果当前当天时间已过今日的起床时间，则返回次日的起床时间。
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -364,7 +364,7 @@ Returns:
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -497,7 +497,7 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -510,7 +510,7 @@ Returns:
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -643,7 +643,7 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -654,11 +654,11 @@ Returns:
 
 用户配置的典型起床时间
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -669,11 +669,11 @@ Returns:
 
 由用户配置的步行步长
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -684,11 +684,11 @@ Returns:
 
 由用户配置的体重
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 

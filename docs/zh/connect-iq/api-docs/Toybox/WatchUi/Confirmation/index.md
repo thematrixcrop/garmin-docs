@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Confirmation"
+title: "类：Toybox.WatchUi.Confirmation"
 ---
 # 类：Toybox.WatchUi.Confirmation
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -31,7 +31,7 @@ Confirmation 是一种特殊的 View，用于向用户显示“是/否”问题�
 
 确认对话框的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -45,7 +45,7 @@ WatchUi.pushView(
 );
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -77,13 +77,13 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - message — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要在确认对话框中显示的确认消息
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

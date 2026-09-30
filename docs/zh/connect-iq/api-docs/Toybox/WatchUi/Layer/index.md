@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Layer"
+title: "类：Toybox.WatchUi.Layer"
 ---
 # 类：Toybox.WatchUi.Layer
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 要在屏幕更新期间由系统绘制（bitblit）的 View Layer 的表示，其中包括常规 View 更新（onUpdate/onPartialUpdate）以及动画播放（如果支持）。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -89,7 +89,7 @@ API 级别 3.1.0
 
 ### Options，格式为 { :locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :colorDepth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :visibility as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) }
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -99,7 +99,7 @@ API 级别 3.1.0
 
 获取用于绘制的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -107,14 +107,14 @@ API 级别 3.1.0
 
 图层标识符，可以为 `null`
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     图层的标识符，可以为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -122,14 +122,14 @@ API 级别 3.1.0
 
 获取相对于屏幕原点的 X 轴绝对绘制偏移量
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     相对于屏幕原点的 X 轴绝对绘制偏移量
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -137,14 +137,14 @@ API 级别 3.1.0
 
 获取相对于屏幕原点的 Y 轴绝对绘制偏移量
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     相对于屏幕原点的 Y 轴绝对绘制偏移量
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -152,7 +152,7 @@ API 级别 3.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -187,20 +187,20 @@ Parameters:
         用于标识的唯一对象（可选）
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
 ### **isVisible()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果图层可见，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -208,7 +208,7 @@ API 级别 3.1.0
 
 设置相对于屏幕原点的绘制偏移量
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -219,7 +219,7 @@ Parameters:
     距屏幕原点的新 y 偏移量
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -227,14 +227,14 @@ API 级别 3.1.0
 
 设置图层的可见性；如果图层尚未添加到视图，或视图不在视图堆栈顶部，则会保存该值。
 
-Parameters:
+参数：
 
 - visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     可见（或用于显示）时为 `true`，不可见（或用于隐藏）时为 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -242,14 +242,14 @@ API 级别 3.1.0
 
 设置相对于屏幕原点的 X 轴绝对绘制偏移量
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     距屏幕原点的新 x 偏移量
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -257,13 +257,13 @@ API 级别 3.1.0
 
 设置相对于屏幕原点的 Y 轴绝对绘制偏移量
 
-Parameters:
+参数：
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     距屏幕原点的新 y 偏移量
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

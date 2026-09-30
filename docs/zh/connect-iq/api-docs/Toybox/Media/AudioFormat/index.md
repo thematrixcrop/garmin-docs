@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.AudioFormat"
+title: "类：Toybox.Media.AudioFormat"
 ---
 # 类：Toybox.Media.AudioFormat
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 存储与媒体文件关联的音频数据质量相关的元数据。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -43,11 +43,11 @@ API 级别 3.0.0
 
 音频的比特率
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -55,11 +55,11 @@ Returns:
 
 通道数
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -67,10 +67,10 @@ Returns:
 
 音频采样率，单位为 Hz
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

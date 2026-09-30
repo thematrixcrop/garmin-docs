@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.ByteArray"
+title: "类：Toybox.Lang.ByteArray"
 ---
 # 类：Toybox.Lang.ByteArray
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 ByteArray objects are fixed size, numerically indexed, single dimensional, and take Numbers with a value >= -128 and &lt;= 255 as members.
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -85,25 +85,25 @@ API 级别 3.0.0
 
 添加字节时，ByteArray 大小会增加，新字节会插入到末尾。
 
-Parameters:
+参数：
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
     要添加的 Number 或 Char 字节
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     由原始 ByteArray 和添加的字节组成的 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -120,25 +120,25 @@ Throws:
 
 添加字节数组时，ByteArray 会按所提供的 ByteArray 或 Array 的大小扩展，所有新元素都会从新索引开始插入。
 
-Parameters:
+参数：
 
 - array — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     要添加到 ByteArray 的 ByteArray 或字节数组
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     由原始 ByteArray 和添加的字节组成的 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -149,7 +149,7 @@ Throws:
 
 根据指定格式将数组的一部分解码为数字
 
-Parameters:
+参数：
 
 - format — ([Lang.NumberFormat](/connect-iq/api-docs/Toybox/Lang/#NumberFormat-module)) —
 
@@ -168,18 +168,18 @@ Parameters:
         一个表示要解码数字字节序的 [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) 值。默认值为 [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const)。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     转换后的 Number。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -190,7 +190,7 @@ Throws:
 
 将数字编码到字节数组中
 
-Parameters:
+参数：
 
 - value — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -213,11 +213,11 @@ Parameters:
         一个表示要编码数字字节序的 [Lang.ENDIAN\_\*](/connect-iq/api-docs/Toybox/Lang/#Endian-module) 值。默认值为 [Lang.ENDIAN\_LITTLE](/connect-iq/api-docs/Toybox/Lang/#ENDIAN_LITTLE-const)。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -228,14 +228,14 @@ Throws:
 
 测试一个 Object 实例是否等于另一个 Object 实例。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Example:
+示例：
 
 ```
 var a = [ 1, 2 ]b;
@@ -245,14 +245,14 @@ a.equals(b); // returns true
 a.equals(c); // returns false
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果对象相等，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -260,14 +260,14 @@ API 级别 3.0.0
 
 获取 ByteArray 的哈希代码值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     ByteArray 的哈希代码
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -275,25 +275,25 @@ API 级别 3.0.0
 
 获取 ByteArray 中字节的索引。
 
-Parameters:
+参数：
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
     要查找索引的字节
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     ByteArray 中所提供字节第一次出现的索引。如果未找到该字节，则返回 -1。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -312,25 +312,25 @@ Throws:
 
 如果没有将字节作为参数提供，ByteArray 将保持不变，且 `remove()` 将返回 `false`。
 
-Parameters:
+参数：
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
     要从 ByteArray 中移除的字节
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果找到该字节的实例，则返回 `true`；否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -349,25 +349,25 @@ Throws:
 
 如果没有将字节作为参数提供，ByteArray 将保持不变，且 `removeAll()` 将返回 `false`。
 
-Parameters:
+参数：
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
     要从 ByteArray 中移除的字节
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果找到该字节的实例，则返回 `true`；否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -382,14 +382,14 @@ Throws:
 
 返回一个新的 ByteArray，其中包含源 ByteArray 中按逆序排列的元素。
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     一个元素顺序反转的新 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -397,14 +397,14 @@ API 级别 3.0.0
 
 获取 ByteArray 的大小。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     ByteArray 中的元素数。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -412,7 +412,7 @@ API 级别 3.0.0
 
 获取包含现有 ByteArray 部分内容的新 ByteArray。
 
-Parameters:
+参数：
 
 - startIndex — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), null) —
 
@@ -423,14 +423,14 @@ Parameters:
     新 ByteArray 末尾的从零开始索引。包含直到 `endIndex` 之前的项目，但不包含 `endIndex`。如果提供负的 `endIndex`，则会从 ByteArray 末尾开始偏移。如果 `endIndex` 为 `null`，切片将在最后一个元素处结束。超出范围的索引会截断到 ByteArray 的边界。
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     一个包含从 `startIndex` 到 `endIndex` 元素的新 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -440,13 +440,13 @@ API 级别 3.0.0
 
 此方法不会将 ByteArray 的元素转换为 Strings，而是将整个 ByteArray 转换为 String。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     ByteArray 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

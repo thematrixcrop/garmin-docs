@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.Service"
+title: "类：Toybox.BluetoothLowEnergy.Service"
 ---
 # 类：Toybox.BluetoothLowEnergy.Service
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 封装设备提供的服务
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -47,21 +47,21 @@ API 级别 3.1.0
 
 获取具有指定 UUID 的特征
 
-Parameters:
+参数：
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
     要搜索的 UUID。
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) —
 
     由提供的 UUID 表示的 Characteristic；如果特征不存在或 UUID 尚未注册，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -71,14 +71,14 @@ API 级别 3.1.0
 
 此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 Characteristics
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     Service 中发现的 Characteristics 的 [Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) 个对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -88,14 +88,14 @@ API 级别 3.1.0
 
 获取此服务所属的设备
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
 
     父级特征对象
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -103,13 +103,13 @@ API 级别 3.1.0
 
 返回 service 的 UUID
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     service 的 UUID
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

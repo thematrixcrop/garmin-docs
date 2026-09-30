@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.MagnetometerData"
+title: "类：Toybox.Sensor.MagnetometerData"
 ---
 # 类：Toybox.Sensor.MagnetometerData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -185,11 +185,11 @@ API 级别 3.3.0
 
 以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 5.1.1
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -197,11 +197,11 @@ Returns:
 
 以 milliGauss 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -209,11 +209,11 @@ Returns:
 
 以 milliGauss 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -221,10 +221,10 @@ Returns:
 
 以 milliGauss 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)

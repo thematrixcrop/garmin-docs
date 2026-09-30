@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Math.IirFilter"
+title: "类：Toybox.Math.IirFilter"
 ---
 # 类：Toybox.Math.IirFilter
 
-Inherits:
+继承：
 
 Toybox.Math.Filter
 
@@ -25,7 +25,7 @@ Toybox.Math.Filter
 - [IirFilters](https://en.wikipedia.org/wiki/Infinite_impulse_response)
 
 
-Example:
+示例：
 
 显示如何为加速度计数据筛选器的使用实现构造函数。
 
@@ -62,7 +62,7 @@ function accel_callback(sensorData) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -78,7 +78,7 @@ API 级别 2.3.0
 
 ### **apply(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -86,7 +86,7 @@ API 级别 2.3.0
 
 Constructor
 
-Parameters:
+参数：
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -105,11 +105,11 @@ Parameters:
         指定要应用于系数的乘数的一个 Float 值。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 

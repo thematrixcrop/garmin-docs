@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.CustomButton"
+title: "类：Toybox.Media.CustomButton"
 ---
 # 类：Toybox.Media.CustomButton
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 CustomButton 可执行除 PLAYBACK\_CONTROL\_\* 操作之外的媒体播放器操作。在媒体播放器中按下 CustomButton 时，将调用 ContentDelegate.onCustomButton(button) 函数，并将按下的按钮作为参数传入。
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -47,7 +47,7 @@ API 级别 3.0.3
 
 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅支持 CIQ 4.0.0 及更高版本。
 
-Parameters:
+参数：
 
 - image — ([Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module)) —
 
@@ -58,14 +58,14 @@ Parameters:
     如果按钮已高亮显示，则为 `true`，否则为 `false`
 
 
-Returns:
+返回：
 
 - [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
 
     按钮的位图表示
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -73,14 +73,14 @@ API 级别 3.0.3
 
 由系统调用以确定按钮的当前状态
 
-Returns:
+返回：
 
 - [Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module) —
 
     表示按钮当前状态的 BUTTON\_STATE\_\* 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -88,20 +88,20 @@ API 级别 3.0.3
 
 由系统调用以绘制按钮名称
 
-Parameters:
+参数：
 
 - state — ([Media.ButtonState](/connect-iq/api-docs/Toybox/Media/#ButtonState-module)) —
 
     一个表示按钮当前状态的 BUTTON\_STATE\_\* 值
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     按钮的名称
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3

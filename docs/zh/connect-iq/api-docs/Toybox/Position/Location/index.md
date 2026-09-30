@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Position.Location"
+title: "类：Toybox.Position.Location"
 ---
 # 类：Toybox.Position.Location
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Location 对象表示一个特定位置。
 
 Location 对象提供了以各种格式获取位置坐标的方法。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -53,7 +53,7 @@ API 级别 1.0.0
 
 获取相对于当前位置按给定距离和角度偏移的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
-Parameters:
+参数：
 
 - angle — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
@@ -64,14 +64,14 @@ Parameters:
     与当前位置之间的距离，单位为米 (m)。
 
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     投影位置。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -79,7 +79,7 @@ API 级别 3.0.0
 
 构造函数，根据一组坐标创建 Location。
 
-Parameters:
+参数：
 
 - options — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -105,7 +105,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -118,7 +118,7 @@ var myLocation = new Position.Location(
 );
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -126,7 +126,7 @@ API 级别 1.0.0
 
 获取 Location 对象以度为单位的坐标。
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -140,14 +140,14 @@ function onPosition(info) {
 }
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用度数格式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -155,14 +155,14 @@ API 级别 1.0.0
 
 获取 Location 对象坐标的 String 表示形式。
 
-Parameters:
+参数：
 
 - format — ([Position.CoordinateFormat](/connect-iq/api-docs/Toybox/Position/#CoordinateFormat-module)) —
 
     一个 Position.GEO\_\* 值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -177,14 +177,14 @@ var myLocation = new Position.Location(
 var locString = myLocation.toGeoString(Position.GEO_DMS); // N 38 51'22.13" W 94 45' 3.44"
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     采用指定格式的格式化坐标 String
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -192,7 +192,7 @@ API 级别 1.0.0
 
 获取 Location 对象以弧度为单位的坐标。
 
-Example:
+示例：
 
 ```
 using Toybox.Position;
@@ -206,13 +206,13 @@ function onPosition(info) {
 }
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用弧度格式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

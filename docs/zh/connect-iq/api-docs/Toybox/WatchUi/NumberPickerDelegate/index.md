@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.NumberPickerDelegate"
+title: "类：Toybox.WatchUi.NumberPickerDelegate"
 ---
 # 类：Toybox.WatchUi.NumberPickerDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ NumberPickerDelegate 响应 NumberPicker 选择。
 - [Toybox.WatchUi.NumberPicker](/connect-iq/api-docs/Toybox/WatchUi/NumberPicker/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -45,7 +45,7 @@ class MyNumberPickerDelegate extends WatchUi.NumberPickerDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -117,13 +117,13 @@ API 级别 1.0.0
 
 通过 NumberPicker 指定数字时会调用此方法，并将数值作为参数接收。
 
-Parameters:
+参数：
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     输入的数字（类型取决于 NumberPicker 模式）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

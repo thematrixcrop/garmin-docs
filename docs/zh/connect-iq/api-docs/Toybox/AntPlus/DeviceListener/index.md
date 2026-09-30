@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.DeviceListener"
+title: "类：Toybox.AntPlus.DeviceListener"
 ---
 # 类：Toybox.AntPlus.DeviceListener
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 设备的侦听器类。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -59,14 +59,14 @@ API 级别 2.2.0
 
 收到电池状态时的回调。
 
-Parameters:
+参数：
 
 - data — ([AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/)) —
 
     包含电池状态信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -74,14 +74,14 @@ API 级别 2.2.0
 
 设备状态更新时的回调。
 
-Parameters:
+参数：
 
 - data — ([AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)) —
 
     包含更新后的设备状态信息的数据。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -89,14 +89,14 @@ API 级别 2.2.0
 
 收到制造商信息时的回调。
 
-Parameters:
+参数：
 
 - data — ([AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/)) —
 
     包含制造商信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -104,14 +104,14 @@ API 级别 2.2.0
 
 收到 ANT 消息时的回调。
 
-Parameters:
+参数：
 
 - msg — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
     ANT 消息
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -119,14 +119,14 @@ API 级别 3.1.0
 
 收到产品信息时的回调。
 
-Parameters:
+参数：
 
 - data — ([AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/)) —
 
     包含产品信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -134,7 +134,7 @@ API 级别 2.2.0
 
 发送制造商消息或页面请求后，将调用此函数以指示消息发送状态。
 
-Parameters:
+参数：
 
 - status — ([AntPlus.MessageSendStatus](/connect-iq/api-docs/Toybox/AntPlus/#MessageSendStatus-module)) —
 
@@ -145,6 +145,6 @@ Parameters:
     该 Dictionary 将包含消息类型和页码的键。消息类型是一个 [AntPlus.MESSAGE\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#MESSAGE_TYPE_MANUFACTURER-const)。页码是制造商特定消息的字节 0，或请求的页码。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

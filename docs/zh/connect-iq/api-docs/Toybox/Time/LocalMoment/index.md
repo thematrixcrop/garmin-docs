@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Time.LocalMoment"
+title: "类：Toybox.Time.LocalMoment"
 ---
 # 类：Toybox.Time.LocalMoment
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ LocalMoment 是一个不可变的时间点。
 
 LocalMoment 表示特定位置的单个时间点。与 Moment 不同的是，它除了保存时间外，还会保存时区信息。
 
-Example:
+示例：
 
 ```
 // This code will print the following
@@ -73,7 +73,7 @@ Sys.println(Lang.format("day_of_week=$1$ month=$2$", [
 ]));
 ```
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -261,21 +261,21 @@ API 级别 3.3.0
 
 将一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 添加到 LocalMoment。
 
-Parameters:
+参数：
 
 - addend — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     要添加到此 LocalMoment 的 Duration。
 
 
-Returns:
+返回：
 
 - [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
     一个 Moment 对象，表示 self 与提供的 Duration 对象之和。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -285,14 +285,14 @@ API 级别 3.3.0
 
 此方法计算一个 Number，表示两个 LocalMoment 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#subtract-instance_function) 方法获取两个 LocalMoment 对象之间的绝对 Duration。
 
-Parameters:
+参数：
 
 - moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
     用于与此 LocalMoment 比较的 LocalMoment
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -313,7 +313,7 @@ System.println(today.compare(tomorrow)); // -86400, or one day in the past
 System.println(tomorrow.compare(today)); //  86400, or one day in the future
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -327,7 +327,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -335,14 +335,14 @@ API 级别 3.3.0
 
 获取夏令时相对于 UTC 时间的偏移量（以秒为单位）。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     夏令时偏移量，单位为秒。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -350,14 +350,14 @@ API 级别 3.3.0
 
 获取相对于 UTC 时间的总时间偏移（单位为秒）
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     相对于 UTC 时间的总偏移量（秒）。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -367,14 +367,14 @@ API 级别 3.3.0
 
 这是不包含夏令时偏移的时区偏移。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     相对于 UTC 的时区偏移量（以秒为单位）。正值表示位于 UTC 以东。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -382,21 +382,21 @@ API 级别 3.3.0
 
 确定一个 LocalMoment 是否大于另一个 LocalMoment。
 
-Parameters:
+参数：
 
 - moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
     用于与此 LocalMoment 比较的 LocalMoment
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此 LocalMoment 大于提供用于比较的 LocalMoment，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -404,14 +404,14 @@ API 级别 3.3.0
 
 获取是否正在应用夏令时偏移
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此时正在实行夏令时，则为 true。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -419,21 +419,21 @@ API 级别 3.3.0
 
 确定一个 LocalMoment 是否小于另一个 LocalMoment。
 
-Parameters:
+参数：
 
 - moment — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
     用于与此 LocalMoment 比较的 LocalMoment
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此 LocalMoment 小于提供用于比较的 LocalMoment，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -441,21 +441,21 @@ API 级别 3.3.0
 
 从 LocalMoment 中减去一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 或 [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)。
 
-Parameters:
+参数：
 
 - subtrahend — ([Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     要从此 LocalMoment 中减去的 LocalMoment 或 Duration
 
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
     两个 LocalMoment 对象之间的 Duration，或由 Duration 偏移后的 LocalMoment。对 LocalMoment 执行减法时，计算得到的 Duration 始终为正值。可以使用 [compare()](/connect-iq/api-docs/Toybox/Time/LocalMoment/#compare-instance_function) 方法确定一个 LocalMoment 位于另一个 LocalMoment 之前还是之后。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -463,14 +463,14 @@ API 级别 3.3.0
 
 获取对应于此对象的 Moment。
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     LocalMoment 的 UTC 时间，表示为 Moment
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -478,7 +478,7 @@ API 级别 3.3.0
 
 获取 LocalMoment 的 UTC 值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -492,6 +492,6 @@ Returns:
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

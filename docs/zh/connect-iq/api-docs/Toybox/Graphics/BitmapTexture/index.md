@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.BitmapTexture"
+title: "类：Toybox.Graphics.BitmapTexture"
 ---
 # 类：Toybox.Graphics.BitmapTexture
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示位图中纹理区域的对象，该区域可用于填充原始可绘制对象。
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -39,7 +39,7 @@ API 级别 4.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -58,7 +58,7 @@ Parameters:
         位图中的 y 偏移量，用于映射到原始对象原点的 y 坐标。
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -66,7 +66,7 @@ API 级别 4.0.0
 
 设置纹理的偏移量。
 
-Parameters:
+参数：
 
 - offsetX —
 
@@ -77,6 +77,6 @@ Parameters:
     [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 位图中用于渲染纹理的 y 偏移量
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0

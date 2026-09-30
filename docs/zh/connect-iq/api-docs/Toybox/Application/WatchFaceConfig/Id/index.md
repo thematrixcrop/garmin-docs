@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.WatchFaceConfig.Id"
+title: "类：Toybox.Application.WatchFaceConfig.Id"
 ---
 # 类：Toybox.Application.WatchFaceConfig.Id
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表盘配置设置的唯一标识符。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -66,20 +66,20 @@ API 级别 5.1.0
 
 Equals 实现
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 `other` 参数是相等的 WatchFaceConfig.Id，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.CheckboxMenu"
+title: "类：Toybox.WatchUi.CheckboxMenu"
 ---
 # 类：Toybox.WatchUi.CheckboxMenu
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Menu2
 
@@ -43,7 +43,7 @@ CheckboxMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu
 
 CheckboxMenu 的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 以编程方式构建简单的 CheckboxMenu
 
@@ -83,7 +83,7 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -278,18 +278,18 @@ API 级别 3.0.0
 
 将 CheckboxMenuItem 添加到 CheckboxMenu。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)) —
 
     要添加到 CheckboxMenu 的 CheckboxMenuItem
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
@@ -320,7 +320,7 @@ Constructor
 
 `:footer` 选项仅用于 ConnectIQ 5.1.0 设备。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -359,6 +359,6 @@ Parameters:
 - [Toybox.WatchUi.Menu2.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#setDividerType-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

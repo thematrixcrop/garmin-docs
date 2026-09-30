@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.View"
+title: "类：Toybox.WatchUi.View"
 ---
 # 类：Toybox.WatchUi.View
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -39,7 +39,7 @@ View 是表示应用内页面的对象。
 - [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
-Example:
+示例：
 
 基本的小组件 View 类定义
 
@@ -71,7 +71,7 @@ class MyWidgetView extends WatchUi.View {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -174,13 +174,13 @@ API 级别 1.0.0
 
 ### ActionMenuIndicatorOptions，格式为 { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### ControlBarOptions，格式为 { :leftButton as [WatchUi.ControlBarLeftButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarLeftButton-module), :title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :rightButton as [WatchUi.ControlBarRightButton](/connect-iq/api-docs/Toybox/WatchUi/#ControlBarRightButton-module) }
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -192,18 +192,18 @@ API 级别 1.0.0
 
 对 DataFiled 和后台应用禁用
 
-Parameters:
+参数：
 
 - layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
     一个要添加的 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 对象
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -214,7 +214,7 @@ Throws:
 
 清除已添加到视图中的所有图层
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -224,14 +224,14 @@ API 级别 3.1.0
 
 此方法的一个常见用途是获取布局信息，以便格式化动态内容，例如运行时更新的字符串。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要查找的 Drawable 的标识符
 
 
-Example:
+示例：
 
 将时钟时间格式化为居中的蓝色文本
 
@@ -255,7 +255,7 @@ var view = View.findDrawableById("TimeLabel");
 view.setText(timeString);
 ```
 
-Returns:
+返回：
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
@@ -267,7 +267,7 @@ Returns:
 - [System.getClockTime()](/connect-iq/api-docs/Toybox/System/#getClockTime-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -275,21 +275,21 @@ API 级别 1.0.0
 
 返回视图层堆栈中从底部开始的图层索引
 
-Parameters:
+参数：
 
 - layer —
 
     一个 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 图层对象
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     图层堆栈中从底部开始的图层索引
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -297,14 +297,14 @@ API 级别 3.1.0
 
 获取当前添加到视图的图层堆栈副本，并按绘制顺序排序，即从底部到顶部。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/) 或 `null` 的数组
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -312,7 +312,7 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -320,7 +320,7 @@ API 级别 2.1.0
 
 将图层插入图层堆栈中的给定索引处，这将停止动画播放。
 
-Parameters:
+参数：
 
 - layer — ([WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) —
 
@@ -331,7 +331,7 @@ Parameters:
     要插入图层的图层堆栈位置。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -341,7 +341,7 @@ API 级别 3.1.0
 
 从前景移除 View 之前会调用此函数。当新的 View 对象被推送到当前 View 顶部、当前 View 被弹出或应用关闭时，就会发生这种情况。如果当前 View 将从页面堆栈中移除，此时应释放内存中的资源。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -351,14 +351,14 @@ View 的入口点。
 
 onLayout() 会在 View 显示前被调用，用于加载资源并设置 View 的布局。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -368,7 +368,7 @@ API 级别 1.0.0
 
 View 被置于前景时会调用此函数。此时应将资源加载到系统内存中，以供 View 使用。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -393,7 +393,7 @@ API 级别 1.0.0
 
 如果继承 View 的类未实现此函数，则 View 中包含的任何 Drawable 对象都会自动绘制。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
@@ -405,7 +405,7 @@ Parameters:
 - [WatchFace.onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -413,21 +413,21 @@ API 级别 1.0.0
 
 从 View 图层堆栈中移除一个图层，这将停止动画播放。
 
-Parameters:
+参数：
 
 - layer —
 
     一个要从图层堆栈中移除的 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果成功移除图层，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -435,7 +435,7 @@ API 级别 3.1.0
 
 为此视图设置操作菜单指示器选项。如果启用操作菜单，则在推送操作菜单时会调用 [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) 或 [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)。支持的视图类型为 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)、[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)、[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) 和 [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)。在其他视图类型上调用时会被忽略。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -455,11 +455,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.1
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -470,7 +470,7 @@ Throws:
 
 设置时钟指针的位置。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -496,18 +496,18 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果更改模拟指针的请求成功，则为 `true`，否则为 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -534,7 +534,7 @@ Throws:
 
 从 [onLayout](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 或 [onUpdate](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 进行的控制栏可见性更改将导致异常。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -566,11 +566,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.1.2
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -587,14 +587,14 @@ Throws:
 
 启用后，可使用实体按钮循环浏览屏幕上的 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 对象。当前布局中注册的第一个 Selectable 最初会被高亮显示。
 
-Parameters:
+参数：
 
 - enable — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     如果应启用该模式，则设置为 `true`；否则设置为 `false`
 
 
-Example:
+示例：
 
 使用菜单按钮切换可选择交互模式
 
@@ -608,11 +608,11 @@ function onMenu() {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
@@ -630,13 +630,13 @@ Throws:
 - 通过调用 [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function) 进行搜索
 
 
-Parameters:
+参数：
 
 - layout — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     包含 Drawable 的数组，或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

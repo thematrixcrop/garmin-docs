@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ActionMenuDelegate"
+title: "类：Toybox.WatchUi.ActionMenuDelegate"
 ---
 # 类：Toybox.WatchUi.ActionMenuDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示操作菜单委托的类，可用于转发与操作菜单相关的事件。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -160,7 +160,7 @@ API 级别 3.4.0
 
 ActionMenuDelegate 的构造函数
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -168,7 +168,7 @@ API 级别 3.4.0
 
 按下了 ActionMenu 返回键。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -176,13 +176,13 @@ API 级别 3.4.0
 
 选择了 ActionMenuItem。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
     选定的 ActionMenuItem。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0

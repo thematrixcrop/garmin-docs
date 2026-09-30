@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Time.Gregorian.Info"
+title: "类：Toybox.Time.Gregorian.Info"
 ---
 # 类：Toybox.Time.Gregorian.Info
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Gregorian.Info 类包含表示公历日期所需的全部信息。
 
 某些返回值的类型取决于调用 [info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function) 或 [utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function) 时指定的 Time.FORMAT\_\* 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -61,11 +61,11 @@ API 级别 1.0.0
 
 日期，表示月份中的某一天。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -77,11 +77,11 @@ Returns:
 
 返回的字符串值取决于语言和设备。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -99,11 +99,11 @@ Returns:
 
 基于 24 小时制的小时数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -111,11 +111,11 @@ Returns:
 
 一小时内的分钟数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -127,11 +127,11 @@ Returns:
 
 返回的字符串值取决于语言和设备。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -149,11 +149,11 @@ Returns:
 
 一分钟内的秒数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -161,10 +161,10 @@ Returns:
 
 年份。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

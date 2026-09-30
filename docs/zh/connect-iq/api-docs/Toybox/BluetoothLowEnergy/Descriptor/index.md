@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.Descriptor"
+title: "类：Toybox.BluetoothLowEnergy.Descriptor"
 ---
 # 类：Toybox.BluetoothLowEnergy.Descriptor
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 封装特征中的描述符
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -49,14 +49,14 @@ API 级别 3.1.0
 
 获取此描述符所属的特征
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) —
 
     父级特征对象
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -64,14 +64,14 @@ API 级别 3.1.0
 
 返回 Descriptor 的 UUID
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     Descriptor 的 UUID
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -81,7 +81,7 @@ API 级别 3.1.0
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function)
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -95,18 +95,18 @@ API 级别 3.1.0
 
 尚未实现对长写入的支持。请求写入长度超过 20 字节的特征将导致 [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
-Parameters:
+参数：
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     要存储的新值。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 

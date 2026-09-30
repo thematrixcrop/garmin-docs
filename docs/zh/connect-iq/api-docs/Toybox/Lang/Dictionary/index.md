@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Dictionary"
+title: "类：Toybox.Lang.Dictionary"
 ---
 # 类：Toybox.Lang.Dictionary
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Dictionary 是一种哈希表或关联数组，用于将键映射到值。
 - [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -46,7 +46,7 @@ myDict = {}                     // Empty the dictionary
 System.println(myDict.isEmpty()); // true
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -95,21 +95,21 @@ API 级别 1.0.0
 
 根据给定的键从 Dictionary 中获取值。
 
-Parameters:
+参数：
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要进行匹配检查的键。
 
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     指定键的值；如果键不存在，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -117,21 +117,21 @@ API 级别 1.0.0
 
 确定 Dictionary 中是否存在某个键。
 
-Parameters:
+参数：
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要进行匹配检查的键。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果键位于 Dictionary 中，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -139,14 +139,14 @@ API 级别 1.0.0
 
 确定 Dictionary 是否为空。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 Dictionary 为空，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -154,14 +154,14 @@ API 级别 1.0.0
 
 获取 Dictionary 中的键。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     Dictionary 中键的数组
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -169,7 +169,7 @@ API 级别 1.0.0
 
 使用给定的键将值放入 Dictionary。
 
-Parameters:
+参数：
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -180,7 +180,7 @@ Parameters:
     要插入 Dictionary 的值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -188,14 +188,14 @@ API 级别 1.0.0
 
 从 Dictionary 中删除项。
 
-Parameters:
+参数：
 
 - key — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     要移除的值所对应的键
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -203,14 +203,14 @@ API 级别 1.0.0
 
 获取 Dictionary 中元素的数量。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Dictionary 中的元素数
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -220,7 +220,7 @@ API 级别 1.0.0
 
 由于哈希表的特性，将 Dictionary 转换为 String 时，元素顺序不保证与插入顺序一致。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -237,7 +237,7 @@ System.println(myString.get("One"));      // Symbol Not Found Error
 System.println(myString.substring(0, 5)); // "{Two="
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -249,7 +249,7 @@ Returns:
 - [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.1
 
@@ -257,13 +257,13 @@ API 级别 1.0.1
 
 获取 Dictionary 中的值。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     Dictionary 中值的数组
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

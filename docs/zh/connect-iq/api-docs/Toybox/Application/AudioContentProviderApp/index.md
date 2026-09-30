@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.AudioContentProviderApp"
+title: "类：Toybox.Application.AudioContentProviderApp"
 ---
 # 类：Toybox.Application.AudioContentProviderApp
 
-Inherits:
+继承：
 
 Toybox.Application.AppBase
 
@@ -22,7 +22,7 @@ Toybox.Application.AppBase
 
 此对象扩展 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并添加了用于根据应用需要启动的模式获取不同初始视图类型的新方法。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -170,11 +170,11 @@ API 级别 3.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Media.ContentDelegate](/connect-iq/api-docs/Toybox/Media/ContentDelegate/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -186,14 +186,14 @@ API 级别 3.0.0
 
 此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -299,12 +299,12 @@ API 级别 3.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) 音频内容提供程序的图标
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -316,14 +316,14 @@ API 级别 3.0.0
 
 此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -335,7 +335,7 @@ API 级别 3.0.0
 
 获取用于向系统传达同步状态、以便将媒体内容同步到设备的 [SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/) 对象。
 
-Returns:
+返回：
 
 - [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
 
@@ -344,7 +344,7 @@ Returns:
 - [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -352,6 +352,6 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0

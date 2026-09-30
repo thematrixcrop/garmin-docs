@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Attention.VibeProfile"
+title: "类：Toybox.Attention.VibeProfile"
 ---
 # 类：Toybox.Attention.VibeProfile
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 振动有两个特征：占空比和长度。这些特征用于定义单个 VibeProfile 对象，然后可以将其与其他 VibeProfile 对象组成 Array，并传递给 vibrate() 方法。vibrate() 方法将按顺序播放 Array 中的每个 VibeProfile 对象。
 
-Example:
+示例：
 
 构建一组 VibeProfile 对象
 
@@ -35,7 +35,7 @@ if (Attention has :vibrate) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -216,7 +216,7 @@ API 级别 1.0.0
 
 占空比表示感受到的振动强度，在实际应用中类似于振动频率。其值范围为 0 到 100%，其中 0 表示无振动，100 表示最强振动。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -229,7 +229,7 @@ API 级别 1.0.0
 
 振动持续时间，单位为毫秒（ms）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -239,7 +239,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - dutyCycleVal — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -250,6 +250,6 @@ Parameters:
     振动的时长，单位为毫秒 (ms)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

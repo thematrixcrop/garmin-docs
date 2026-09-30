@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikePowerListener"
+title: "类：Toybox.AntPlus.BikePowerListener"
 ---
 # 类：Toybox.AntPlus.BikePowerListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 自行车功率的侦听器类。
 
-Example:
+示例：
 
 BikePowerListener 的实现
 
@@ -76,7 +76,7 @@ class MyBikePowerListener extends AntPlus.BikePowerListener {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -231,7 +231,7 @@ API 级别 2.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -239,14 +239,14 @@ API 级别 2.2.0
 
 计算出的踏频更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) —
 
     包含更新后的踏频信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -254,14 +254,14 @@ API 级别 2.2.0
 
 计算出的功率更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.CalculatedPower](/connect-iq/api-docs/Toybox/AntPlus/CalculatedPower/)) —
 
     包含更新后的功率信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -269,14 +269,14 @@ API 级别 2.2.0
 
 计算出的车轮距离更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.CalculatedWheelDistance](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelDistance/)) —
 
     包含更新后的距离信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -284,14 +284,14 @@ API 级别 2.2.0
 
 计算出的车轮速度更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.CalculatedWheelSpeed](/connect-iq/api-docs/Toybox/AntPlus/CalculatedWheelSpeed/)) —
 
     包含更新后的速度信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -299,14 +299,14 @@ API 级别 2.2.0
 
 功率平衡更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.PedalPowerBalance](/connect-iq/api-docs/Toybox/AntPlus/PedalPowerBalance/)) —
 
     包含更新后的平衡信息的数据。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -314,13 +314,13 @@ API 级别 2.2.0
 
 扭矩有效性和踩踏平顺性更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.TorqueEffectivenessPedalSmoothness](/connect-iq/api-docs/Toybox/AntPlus/TorqueEffectivenessPedalSmoothness/)) —
 
     包含更新后的扭矩有效性和踩踏平顺性信息的数据
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

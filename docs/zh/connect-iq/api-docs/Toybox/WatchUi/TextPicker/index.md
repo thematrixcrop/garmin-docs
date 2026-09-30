@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.TextPicker"
+title: "类：Toybox.WatchUi.TextPicker"
 ---
 # 类：Toybox.WatchUi.TextPicker
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ TextPicker 是一种特殊的 View，用于在应用中指定文本输入。使�
 
 文本选择器的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -74,7 +74,7 @@ class MyInputDelegate extends WatchUi.InputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.1.0
 
@@ -262,13 +262,13 @@ API 级别 1.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - initialText — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     TextPicker 的初始文本
 
 
-Since:
+起始版本：
 
 API 级别 1.1.0

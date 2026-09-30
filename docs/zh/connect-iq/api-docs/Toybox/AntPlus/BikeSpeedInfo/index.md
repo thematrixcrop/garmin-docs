@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeSpeedInfo"
+title: "类：Toybox.AntPlus.BikeSpeedInfo"
 ---
 # 类：Toybox.AntPlus.BikeSpeedInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示接收到的自行车速度信息。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -191,11 +191,11 @@ API 级别 3.0.0
 
 距离（m）
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -203,11 +203,11 @@ Returns:
 
 速度（m/s）
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

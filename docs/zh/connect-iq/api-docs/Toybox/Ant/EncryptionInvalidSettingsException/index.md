@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.EncryptionInvalidSettingsException"
+title: "类：Toybox.Ant.EncryptionInvalidSettingsException"
 ---
 # 类：Toybox.Ant.EncryptionInvalidSettingsException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -42,6 +42,6 @@ API 级别 2.3.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.3.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Time.Moment"
+title: "类：Toybox.Time.Moment"
 ---
 # 类：Toybox.Time.Moment
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ Moment 对象与 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 对象�
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -70,7 +70,7 @@ System.println(Lang.format("day_of_week=$1$ month=$2$", [
 ]));
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -113,14 +113,14 @@ API 级别 1.0.0
 
 向 Moment 添加 Duration 时，此方法的功能与 [Duration.add()](/connect-iq/api-docs/Toybox/Time/Duration/#add-instance_function) 方法相同。
 
-Parameters:
+参数：
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     要添加到此 Moment 的 Duration
 
 
-Example:
+示例：
 
 将今天加一天
 
@@ -132,7 +132,7 @@ var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
 var tomorrow = today.add(oneDay);
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -146,7 +146,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -156,14 +156,14 @@ API 级别 1.0.0
 
 此方法计算一个 Number，表示两个 Moment 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/Moment/#subtract-instance_function) 方法获取两个 Moment 对象之间的绝对 Duration。
 
-Parameters:
+参数：
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
     用于与此 Moment 比较的 Moment
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -177,7 +177,7 @@ System.println(today.compare(tomorrow)); // -86400, or one day in the past
 System.println(tomorrow.compare(today)); //  86400, or one day in the future
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -191,7 +191,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -199,14 +199,14 @@ API 级别 1.0.0
 
 确定一个 Moment 是否大于另一个 Moment。
 
-Parameters:
+参数：
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
     用于与此 Moment 比较的 Moment
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -220,7 +220,7 @@ System.println(today.greaterThan(tomorrow)); // false
 System.println(tomorrow.greaterThan(today)); // true
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -232,7 +232,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -240,14 +240,14 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - seconds — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     用于初始化 Moment 的秒数
 
 
-Example:
+示例：
 
 使用 UNIX 时间戳创建 Moment
 
@@ -256,7 +256,7 @@ using Toybox.Time;
 var garminFounded = new Time.Moment(631065600);
 ```
 
-Example:
+示例：
 
 创建一个表示今天的 Moment
 
@@ -265,7 +265,7 @@ using Toybox.Time;
 var today = new Time.Moment(Time.today().value());
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -279,7 +279,7 @@ Returns:
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Since:
+起始版本：
 
 API 级别 1.1.2
 
@@ -287,14 +287,14 @@ API 级别 1.1.2
 
 确定一个 Moment 是否小于另一个 Moment。
 
-Parameters:
+参数：
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
     用于与此 Moment 比较的 Moment
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -308,7 +308,7 @@ System.println(today.lessThan(tomorrow)); // true
 System.println(tomorrow.lessThan(today)); // false
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -320,7 +320,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -332,14 +332,14 @@ API 级别 1.0.0
 
 直到 ConnectIQ 3.0.0 才支持从 Moment 中减去 Duration。如果需要考虑向后兼容性，最好改为添加负的 Duration。
 
-Parameters:
+参数：
 
 - subtrahend — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     要从此 Moment 中减去的 Moment 或 Duration
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -356,7 +356,7 @@ System.println(duration1.value()); // 86400, or one day
 System.println(duration2.value()); // 86400, or one day
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -370,7 +370,7 @@ Returns:
 - [SECONDS\_PER\_DAY](/connect-iq/api-docs/Toybox/Time/Gregorian/#SECONDS_PER_DAY-const)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -378,7 +378,7 @@ API 级别 1.0.0
 
 获取 Moment 的 UTC 值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -392,6 +392,6 @@ Returns:
 - [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

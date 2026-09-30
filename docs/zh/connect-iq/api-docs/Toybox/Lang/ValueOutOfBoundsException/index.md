@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.ValueOutOfBoundsException"
+title: "类：Toybox.Lang.ValueOutOfBoundsException"
 ---
 # 类：Toybox.Lang.ValueOutOfBoundsException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -42,13 +42,13 @@ API 级别 3.0.0
 
 ValueOutOfBoundsException 构造函数。
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

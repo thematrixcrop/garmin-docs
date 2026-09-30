@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.Device"
+title: "类：Toybox.BluetoothLowEnergy.Device"
 ---
 # 类：Toybox.BluetoothLowEnergy.Device
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 此类无法实例化；必须通过使用 [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function)，或在收到设备的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 后调用 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function)，来访问已配对的系统设备
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -57,14 +57,14 @@ API 级别 3.1.0
 
 根据 GAP Service 中可用的设备名称获取传感器名称
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     设备的名称。设备未连接或尚未接收到名称时为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -74,21 +74,21 @@ API 级别 3.1.0
 
 如果需要访问特定服务，请使用此函数根据 UUID 直接访问该服务。
 
-Parameters:
+参数：
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
     要搜索的 service UUID
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) —
 
     如果服务存在，则为 UUID 表示的服务；如果服务不存在或 UUID 尚未注册，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -98,14 +98,14 @@ API 级别 3.1.0
 
 此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 Services
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     设备提供的 [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) 个对象的迭代器。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -186,14 +186,14 @@ API 级别 3.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果设备已绑定，则为 `true`；如果设备未绑定，则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 4.2.5
 
@@ -201,14 +201,14 @@ API 级别 4.2.5
 
 获取设备的连接状态
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果传感器已连接，则为 `true`；如果传感器已断开连接，则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -293,11 +293,11 @@ API 级别 3.1.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.5
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 

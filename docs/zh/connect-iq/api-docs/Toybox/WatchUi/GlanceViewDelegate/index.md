@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.GlanceViewDelegate"
+title: "类：Toybox.WatchUi.GlanceViewDelegate"
 ---
 # 类：Toybox.WatchUi.GlanceViewDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示速览视图委托的类，可用于传递小组件速览（预览）模式期间发生的事件。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -166,7 +166,7 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -174,6 +174,6 @@ API 级别 3.1.0
 
 在发生特定速览事件时调用，目前没有此类事件
 
-Since:
+起始版本：
 
 API 级别 3.1.0

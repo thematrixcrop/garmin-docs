@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.WorkoutStep"
+title: "类：Toybox.Activity.WorkoutStep"
 ---
 # 类：Toybox.Activity.WorkoutStep
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 WorkoutStep 类包含当前 workout 步骤的信息。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -182,11 +182,11 @@ API 级别 3.2.0
 
 训练步骤的持续时间
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutStepDurationType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepDurationType-module) —
 
@@ -197,11 +197,11 @@ Returns:
 
 步骤应持续多长时间
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -212,11 +212,11 @@ Returns:
 
 训练步骤的目标
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module) —
 
@@ -227,11 +227,11 @@ Returns:
 
 目标范围的高值。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -242,11 +242,11 @@ Returns:
 
 目标范围的低值。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Background.MessageSizeLimitException"
+title: "类：Toybox.Background.MessageSizeLimitException"
 ---
 # 类：Toybox.Background.MessageSizeLimitException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -24,7 +24,7 @@ Toybox.Lang.Exception
 
 某些字符可能大于 1 Byte。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -41,6 +41,6 @@ API 级别 2.3.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.3.0

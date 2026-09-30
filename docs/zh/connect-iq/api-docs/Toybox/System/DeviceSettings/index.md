@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.DeviceSettings"
+title: "类：Toybox.System.DeviceSettings"
 ---
 # 类：Toybox.System.DeviceSettings
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -37,7 +37,7 @@ var versionString = Lang.format("$1$.$2$.$3$", version);
 System.println(versionString); //e.g. 2.2.5
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -182,11 +182,11 @@ API 级别 1.0.0
 
 活动跟踪设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -197,11 +197,11 @@ Returns:
 
 设备上设置的闹钟数量。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -209,11 +209,11 @@ Returns:
 
 指示是否有任何通信通道已连接并可供使用。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -221,11 +221,11 @@ Returns:
 
 设备可用连接的状态。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
@@ -236,11 +236,11 @@ Returns:
 
 距离单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
@@ -258,7 +258,7 @@ Returns:
 
 并非所有设备都支持免打扰，因此尝试使用此值时最好执行 `has` 检查。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -268,11 +268,11 @@ if (deviceSettings has :doNotDisturb) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -283,11 +283,11 @@ Returns:
 
 海拔单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
@@ -303,7 +303,7 @@ Returns:
 
 设备当前的固件版本。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -313,7 +313,7 @@ var versionString = Lang.format("$1$.$2$", version);
 System.println(versionString minor); // e.g. 2.50
 ```
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -322,7 +322,7 @@ API 级别 1.2.0
 - [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
@@ -333,11 +333,11 @@ Returns:
 
 一周的第一天。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module) —
 
@@ -348,7 +348,7 @@ Returns:
 
 用于显示文本的缩放因子。
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
@@ -383,7 +383,7 @@ API 级别 5.0.1
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -394,11 +394,11 @@ Returns:
 
 高度单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
@@ -416,7 +416,7 @@ Returns:
 
 此项返回由 [System.BUTTON\_INPUT\_\*](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) 常量定义的枚举值的按位二进制值，这些值与特定设备上可用的按钮相匹配。例如，vivoactive HR 返回值 9，表示支持 Select（1）和 Menu（8）按钮。而 fenix 5 返回值 11，表示支持所有可用的按钮类型。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -426,7 +426,7 @@ if ((mySettings.inputButtons & System.BUTTON_INPUT_MENU) != 0) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -435,7 +435,7 @@ API 级别 1.2.0
 - [Toybox.System](/connect-iq/api-docs/Toybox/System/)
 
 
-Returns:
+返回：
 
 - [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) —
 
@@ -446,11 +446,11 @@ Returns:
 
 时钟模式模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -461,7 +461,7 @@ Returns:
 
 指示设备当前正在使用增强可读性模式。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -498,7 +498,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -511,7 +511,7 @@ Returns:
 
 如果启用速览模式，系统会将向上/向下按键事件传递给小组件基础页面。否则，系统会屏蔽这些事件。
 
-Since:
+起始版本：
 
 API 级别 3.1.4
 
@@ -627,7 +627,7 @@ API 级别 3.1.4
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -638,7 +638,7 @@ Returns:
 
 表示设备当前正在使用夜间模式颜色
 
-Since:
+起始版本：
 
 API 级别 4.1.2
 
@@ -657,7 +657,7 @@ API 级别 4.1.2
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -668,11 +668,11 @@ Returns:
 
 设备是否配备触摸屏。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -683,7 +683,7 @@ Returns:
 
 设备支持的 Connect IQ 版本。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -693,7 +693,7 @@ var versionString = Lang.format("$1$.$2$.$3$", version);
 System.println(versionString); //e.g. 2.2.5
 ```
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -702,7 +702,7 @@ API 级别 1.2.0
 - [Lang.format()](/connect-iq/api-docs/Toybox/Lang/#format-instance_function)
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
@@ -713,11 +713,11 @@ Returns:
 
 活动通知数量。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -725,11 +725,11 @@ Returns:
 
 配速单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
@@ -745,11 +745,11 @@ Returns:
 
 设备的部件号。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -757,11 +757,11 @@ Returns:
 
 手机连接状态模式。
 
-Since:
+起始版本：
 
 API 级别 1.1.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -772,7 +772,7 @@ Returns:
 
 BLE 连接移动设备的操作系统。
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
@@ -847,7 +847,7 @@ API 级别 5.0.1
 
 :::
 
-Returns:
+返回：
 
 - [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) —
 
@@ -860,11 +860,11 @@ Returns:
 
 某些屏幕在以常亮模式渲染内容时需要特殊的绘制行为。如果屏幕需要防烧屏保护，则必须遵循以下规则：任意时刻最多只能使用可用屏幕像素总数的百分之十。以每分钟更新一次的间隔进行更新时，单个像素的点亮时间不得超过三个更新周期。如果违反任一条件，所有屏幕像素都将关闭，直到设备进入高功耗模式。
 
-Since:
+起始版本：
 
 API 级别 3.0.12
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -877,7 +877,7 @@ Returns:
 
 在某些情况下，这对于在运行时确定设备类型很有用。但是，要获取当前可供应用使用的屏幕区域高度，请使用 [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -886,7 +886,7 @@ API 级别 1.2.0
 - [Graphics.Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -894,11 +894,11 @@ Returns:
 
 设备的屏幕形状。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
-Returns:
+返回：
 
 - [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module) —
 
@@ -911,7 +911,7 @@ Returns:
 
 在某些情况下，这对于在运行时确定设备类型很有用。但是，要获取当前可供应用使用的屏幕区域宽度，请使用 [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -920,7 +920,7 @@ API 级别 1.2.0
 - [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -928,11 +928,11 @@ Returns:
 
 系统正在使用的语言
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module) —
 
@@ -943,11 +943,11 @@ Returns:
 
 温度单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 
@@ -963,11 +963,11 @@ Returns:
 
 音调设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -980,7 +980,7 @@ Returns:
 
 该值对每个应用都是唯一的，但在设备上卸载并重新安装应用后仍保持不变。使用此值跟踪用户信息时，必须遵守国际隐私法律。
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -991,11 +991,11 @@ if (id != null) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.4.1
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -1006,11 +1006,11 @@ Returns:
 
 振动设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -1021,11 +1021,11 @@ Returns:
 
 重量单位设置模式。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module) —
 

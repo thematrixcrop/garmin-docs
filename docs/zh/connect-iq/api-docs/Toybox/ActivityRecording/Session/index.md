@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityRecording.Session"
+title: "类：Toybox.ActivityRecording.Session"
 ---
 # 类：Toybox.ActivityRecording.Session
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Session 对象控制 FIT 记录状态机。
 
-Example:
+示例：
 
 用于设置 Session 对象的格式
 
@@ -31,7 +31,7 @@ var session = ActivityRecording.createSession({  // set up recording session
 });
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -76,14 +76,14 @@ API 级别 1.0.0
 
 向当前记录添加一个圈。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果成功创建了圈，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -93,7 +93,7 @@ API 级别 1.0.0
 
 字段对象允许开发者将信息存储在 FIT 开发者字段中。此信息可以在 Garmin Connect 中显示为每秒图表、圈信息或锻炼摘要信息。
 
-Parameters:
+参数：
 
 - name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -154,7 +154,7 @@ Parameters:
         如果此 Field 可等同于 FIT SDK 中包含的 Field，请使用此项指示 FIT Profile 指定的 Field Number。
 
 
-Returns:
+返回：
 
 - [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) —
 
@@ -170,7 +170,7 @@ Returns:
 - [Core Topics - Activity Recording](/connect-iq/core-topics/activity-recording/)
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -178,14 +178,14 @@ API 级别 1.3.0
 
 丢弃录制的数据以完成 Session。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 Session 已成功丢弃，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -193,14 +193,14 @@ API 级别 1.0.0
 
 检查此 Session 是否正在进行录制。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果录制处于活动状态，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -208,14 +208,14 @@ API 级别 1.0.0
 
 将 FIT 文件存储到文件系统以完成 Session。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果会话已成功保存，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -227,7 +227,7 @@ API 级别 1.0.0
 
 传递给监听器回调的 Dictionary 中的键取决于 eventType 参数的值。
 
-Parameters:
+参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -384,7 +384,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -392,14 +392,14 @@ API 级别 3.0.10
 
 开始在系统上录制 FIT 文件。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果成功开始录制，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -407,13 +407,13 @@ API 级别 1.0.0
 
 停止系统上的 FIT 文件录制。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果成功停止录制，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeCadenceListener"
+title: "类：Toybox.AntPlus.BikeCadenceListener"
 ---
 # 类：Toybox.AntPlus.BikeCadenceListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 自行车踏频的侦听器类
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -192,7 +192,7 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -200,13 +200,13 @@ API 级别 3.0.0
 
 踏频数据更新时的回调
 
-Parameters:
+参数：
 
 - data — ([AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) —
 
     data 包含更新后的踏频信息。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.FlickEvent"
+title: "类：Toybox.WatchUi.FlickEvent"
 ---
 # 类：Toybox.WatchUi.FlickEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ FlickEvent 是在设备触摸屏发生轻扫交互时发送给 [InputDelegate](/
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -37,7 +37,7 @@ class InputDelegate extends WatchUi.InputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -167,14 +167,14 @@ API 级别 3.3.0
 
 获取点击事件的坐标。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 flick 事件结束时 x 和 y 坐标的数组，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -182,14 +182,14 @@ API 级别 3.3.0
 
 获取轻扫的方向。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     以度为单位的轻扫方向
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -197,14 +197,14 @@ API 级别 3.3.0
 
 获取轻拂的距离。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     轻拂操作的长度，单位为像素。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -212,13 +212,13 @@ API 级别 3.3.0
 
 获取轻拂的速度。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     轻扫速度，单位为每秒像素数
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

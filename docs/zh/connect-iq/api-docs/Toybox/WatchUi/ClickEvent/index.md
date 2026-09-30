@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ClickEvent"
+title: "类：Toybox.WatchUi.ClickEvent"
 ---
 # 类：Toybox.WatchUi.ClickEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ ClickEvent 是在设备触摸屏发生点击交互时发送给 [InputDelegate](/
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -38,7 +38,7 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -74,14 +74,14 @@ API 级别 1.0.0
 
 获取点击事件的坐标。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含点击事件 x 和 y 坐标的数组，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -89,13 +89,13 @@ API 级别 1.0.0
 
 获取点击事件的类型。
 
-Returns:
+返回：
 
 - [WatchUi.ClickType](/connect-iq/api-docs/Toybox/WatchUi/#ClickType-module) —
 
     一个 [WatchUi.CLICK\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

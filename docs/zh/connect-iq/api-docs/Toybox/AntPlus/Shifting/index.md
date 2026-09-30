@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.Shifting"
+title: "类：Toybox.AntPlus.Shifting"
 ---
 # 类：Toybox.AntPlus.Shifting
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个变速设备实例
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -143,14 +143,14 @@ API 级别 3.1.0
 
 获取当前变速系统状态。不会提供 Shimano 变速系统的状态。
 
-Returns:
+返回：
 
 - [AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/) —
 
     当前变速系统状态
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -158,13 +158,13 @@ API 级别 3.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/)) —
 
     ShiftingListener 类的扩展。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

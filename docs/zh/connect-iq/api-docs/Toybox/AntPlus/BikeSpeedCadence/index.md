@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeSpeedCadence"
+title: "类：Toybox.AntPlus.BikeSpeedCadence"
 ---
 # 类：Toybox.AntPlus.BikeSpeedCadence
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个自行车速度和踏频设备实例。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -38,7 +38,7 @@ var speedCadenceInfo = bikeSpeedCadence.getSpeedCadenceInfo();
 // ...etc
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -211,14 +211,14 @@ API 级别 3.0.0
 
 getSpeedCadenceInfo - 返回最近的 BikeSpeedCadenceInfo
 
-Returns:
+返回：
 
 - [AntPlus.BikeSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo/) —
 
     使用当前信息。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -226,13 +226,13 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.BikeSpeedCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener/)) —
 
     自行车速度踏频实例的参数可选用 [BikeSpeedCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener/) 类的扩展类。如果用户计划仅使用 [getSpeedCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadence/) 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

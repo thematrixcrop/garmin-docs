@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.LightNetwork"
+title: "类：Toybox.AntPlus.LightNetwork"
 ---
 # 类：Toybox.AntPlus.LightNetwork
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示自行车灯网络的类
 
-Example:
+示例：
 
 LightNetwork 和 LightNetworkListener 设置的基本示例
 
@@ -63,7 +63,7 @@ class MyLightNetworkListener extends AntPlus.LightNetworkListener {
     }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -264,14 +264,14 @@ API 级别 2.2.0
 
 获取网络中的灯列表。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     属于网络的灯光列表；如果灯光网络状态不是 [LIGHT\_NETWORK\_STATE\_FORMED](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const)，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -279,14 +279,14 @@ API 级别 2.2.0
 
 获取灯光网络模式。
 
-Returns:
+返回：
 
 - [AntPlus.LightNetworkMode](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkMode-module) —
 
     [LIGHT\_NETWORK\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_MODE_AUTO-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -294,14 +294,14 @@ API 级别 2.2.0
 
 获取灯光网络状态。
 
-Returns:
+返回：
 
 - [AntPlus.LightNetworkState](/connect-iq/api-docs/Toybox/AntPlus/#LightNetworkState-module) —
 
     [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -309,14 +309,14 @@ API 级别 2.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/)) —
 
     灯光网络实例可选地将 [LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) 类的扩展作为参数。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -324,7 +324,7 @@ API 级别 2.2.0
 
 将所有前灯交由用户选择的灯光网络模式控制。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -332,7 +332,7 @@ API 级别 2.2.0
 
 将所有尾灯交由用户选择的灯光网络模式控制。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -342,14 +342,14 @@ API 级别 2.2.0
 
 发送灯光模式之前，应检查网络中每个前灯支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
-Parameters:
+参数：
 
 - mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
     [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -359,14 +359,14 @@ API 级别 2.2.0
 
 发送灯光模式之前，应检查网络中每个尾灯支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
-Parameters:
+参数：
 
 - mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
     [LIGHT\_MODE\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -381,7 +381,7 @@ API 级别 2.2.0
 
 \*如果相反的信号当前处于启用状态，则此操作会自动将其停用。
 
-Parameters:
+参数：
 
 - left — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -391,6 +391,6 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

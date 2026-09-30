@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.UnableToAcquireChannelException"
+title: "类：Toybox.Ant.UnableToAcquireChannelException"
 ---
 # 类：Toybox.Ant.UnableToAcquireChannelException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -42,6 +42,6 @@ API 级别 1.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.2.0

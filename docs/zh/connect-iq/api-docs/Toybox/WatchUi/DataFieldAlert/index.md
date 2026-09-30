@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.DataFieldAlert"
+title: "类：Toybox.WatchUi.DataFieldAlert"
 ---
 # 类：Toybox.WatchUi.DataFieldAlert
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -22,7 +22,7 @@ DataFields 的警报 View
 
 使用此视图从数据字段推送警报
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -189,6 +189,6 @@ API 级别 3.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.2.0

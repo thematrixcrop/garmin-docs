@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.SplitInfo"
+title: "类：Toybox.Activity.SplitInfo"
 ---
 # 类：Toybox.Activity.SplitInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ SplitInfo 类包含有关当前分段的信息
 
 此信息通过 onTimerSplit API 的数据字段提供。
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -28,7 +28,7 @@ API 级别 5.2.2
 
 ### SplitType
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -305,11 +305,11 @@ API 级别 5.2.2
 
 该分段的平均速度（米/秒）
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 该分段的平均速度（米/秒）
 
@@ -318,11 +318,11 @@ Returns:
 
 分段的经过时间，单位为毫秒
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 经过时间，单位为毫秒
 
@@ -331,11 +331,11 @@ Returns:
 
 分段的最大速度，单位为米每秒
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 该分段的平均速度（米/秒）
 
@@ -344,11 +344,11 @@ Returns:
 
 以米为单位的分段距离
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 以米为单位的分段距离
 
@@ -357,11 +357,11 @@ Returns:
 
 分段类型
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 分段类型标识符
 
@@ -370,11 +370,11 @@ Returns:
 
 计时器分段时间，单位为毫秒
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 计时器时间，单位为毫秒
 
@@ -383,11 +383,11 @@ Returns:
 
 以米为单位的分段爬升
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 分段爬升高度，单位为米
 
@@ -396,10 +396,10 @@ Returns:
 
 以米为单位的分段下降
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
-Returns:
+返回：
 
 - 分段的下降高度，单位为米

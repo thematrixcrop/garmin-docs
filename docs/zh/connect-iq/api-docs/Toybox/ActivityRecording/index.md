@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.ActivityRecording"
+title: "模块：Toybox.ActivityRecording"
 ---
 # 模块：Toybox.ActivityRecording
 
@@ -18,7 +18,7 @@ SUB\_SPORT\_\* 用于在记录时进一步明确运动类型。
 - [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.ActivityRecording;
@@ -46,7 +46,7 @@ function onSelect() {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -252,7 +252,7 @@ API 级别 1.0.0
 
 此枚举可能会在 System 8 之后移除。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -445,7 +445,7 @@ API 级别 1.0.0
 
 此枚举可能会在 System 8 之后移除。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -768,7 +768,7 @@ API 级别 3.0.10
 
 此枚举可能会在 System 8 之后移除。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1024,7 +1024,7 @@ API 级别 1.0.0
 
 ### TimerEventType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1117,7 +1117,7 @@ API 级别 3.0.10
 
 ### **Sport** as [ActivityRecording.Sport1](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport1-module) or [ActivityRecording.Sport2](/connect-iq/api-docs/Toybox/ActivityRecording/#Sport2-module)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1129,7 +1129,7 @@ API 级别 1.0.0
 
 一次只能存在一个 Session 对象。如果已有对象尚未使用 [save()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#save-instance_function) 或 [discard()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#discard-instance_function) 方法关闭，此方法将返回该对象，而不是创建新对象。在某些运行 1.x 虚拟机的产品上，创建 Session 对象需要大量内存分配。要释放此内存，必须先成功保存或丢弃 Session，然后将应用对 Session 对象的引用设置为 `null`。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1160,7 +1160,7 @@ Parameters:
         用于记录此会话的 SensorLogger。
 
 
-Example:
+示例：
 
 使用进入/退出线创建具有自动计圈检测功能的 Session
 
@@ -1182,18 +1182,18 @@ function createSession() {
 }
 ```
 
-Returns:
+返回：
 
 - [ActivityRecording.Session](/connect-iq/api-docs/Toybox/ActivityRecording/Session/) —
 
     一个新的 Session 对象；如果当前存在活动的 Session 且尚未保存或丢弃，则返回现有的 Session 对象。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 

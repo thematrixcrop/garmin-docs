@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ContentIterator"
+title: "类：Toybox.Media.ContentIterator"
 ---
 # 类：Toybox.Media.ContentIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用户定义的迭代器，用于返回系统上的媒体内容引用，以供系统媒体播放器使用。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -67,14 +67,14 @@ API 级别 3.0.0
 
 确定当前曲目是否可以跳过。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果可以跳过当前曲目，则返回 `true`；否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -82,7 +82,7 @@ API 级别 3.0.0
 
 获取当前媒体内容对象。
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
@@ -94,7 +94,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -102,11 +102,11 @@ API 级别 3.0.0
 
 获取当前媒体内容播放配置文件
 
-Returns:
+返回：
 
 - [Media.PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -114,7 +114,7 @@ API 级别 3.0.0
 
 获取下一个媒体内容对象。
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
@@ -126,7 +126,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -134,7 +134,7 @@ API 级别 3.0.0
 
 获取下一个媒体内容对象，但不递增迭代器。
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
@@ -146,7 +146,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -154,7 +154,7 @@ API 级别 3.0.0
 
 获取上一个媒体内容对象，但不递减迭代器。
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
@@ -166,7 +166,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -174,7 +174,7 @@ API 级别 3.0.0
 
 获取上一个媒体内容对象。
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
@@ -186,7 +186,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -194,14 +194,14 @@ API 级别 3.0.0
 
 获取当前重复状态
 
-Returns:
+返回：
 
 - [Media.RepeatMode](/connect-iq/api-docs/Toybox/Media/#RepeatMode-module) —
 
     表示当前重复状态的 [REPEAT\_MODE\_\*](/connect-iq/api-docs/Toybox/Media/#REPEAT_MODE_OFF-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -211,10 +211,10 @@ API 级别 3.0.0
 
 如果已开启随机播放，则返回 `true`；否则返回 `false`。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0

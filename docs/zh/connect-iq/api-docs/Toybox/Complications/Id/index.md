@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Complications.Id"
+title: "类：Toybox.Complications.Id"
 ---
 # 类：Toybox.Complications.Id
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Complication 的唯一标识符
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -43,21 +43,21 @@ API 级别 4.2.0
 
 Equals 实现
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 other 参数是相等的复杂功能 ID，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -65,14 +65,14 @@ API 级别 4.2.0
 
 获取复杂功能类型
 
-Returns:
+返回：
 
 - [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module) —
 
     复杂功能类型
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -80,13 +80,13 @@ API 级别 4.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - id — ([Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module)) —
 
     复杂功能类型
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0

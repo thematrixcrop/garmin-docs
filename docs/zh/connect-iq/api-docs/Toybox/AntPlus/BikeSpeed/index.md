@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeSpeed"
+title: "类：Toybox.AntPlus.BikeSpeed"
 ---
 # 类：Toybox.AntPlus.BikeSpeed
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个自行车速度设备实例。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -38,7 +38,7 @@ var speedInfo = bikeSpeed.getSpeedInfo();
 // ...etc
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -211,14 +211,14 @@ API 级别 3.0.0
 
 getSpeedInfo - 返回最近的 BikeSpeedInfo
 
-Returns:
+返回：
 
 - [AntPlus.BikeSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo/) —
 
     使用当前信息。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -226,13 +226,13 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/)) —
 
     自行车速度实例的参数可选用 [BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) 类的扩展类。如果用户计划仅使用 [getSpeedInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeed/) 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

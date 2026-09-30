@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ContentRefIterator"
+title: "类：Toybox.Media.ContentRefIterator"
 ---
 # 类：Toybox.Media.ContentRefIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 遍历系统中对此应用存在的 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 个对象。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -35,13 +35,13 @@ API 级别 3.0.0
 
 获取下一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)
 
-Returns:
+返回：
 
 - [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/) —
 
     下一个 ContentRef 对象；如果不存在更多对象，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

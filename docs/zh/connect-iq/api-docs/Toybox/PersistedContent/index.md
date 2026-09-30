@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.PersistedContent"
+title: "模块：Toybox.PersistedContent"
 ---
 # 模块：Toybox.PersistedContent
 
@@ -35,7 +35,7 @@ PersistedContent 模块允许访问存储的路线、航点和其他存储的用
 
 一般来说，Fitness 和 Edge 设备支持 .FIT 格式。Outdoor 设备支持 .GPX 格式。
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -50,7 +50,7 @@ var id = content.getId();                   // Get the content id
 System.ExitTo(content.toIntent());          // Use the content for a System.Intent
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -298,7 +298,7 @@ function toIntent() as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent
 function remove() as **Void**;
 }
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -308,7 +308,7 @@ API 级别 2.2.0
 
 获取系统上安装的、归应用所有的路线子集
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -446,14 +446,14 @@ var iterator = PersistedContent.getAppCourses();
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     所请求持久化内容对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -461,7 +461,7 @@ API 级别 3.0.0
 
 获取系统上安装的、归应用所有的路线子集
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -528,14 +528,14 @@ var iterator = PersistedContent.getAppRoutes();
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     所请求持久化内容对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -543,7 +543,7 @@ API 级别 3.0.0
 
 获取系统上安装的、归应用所有的轨迹子集
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -564,14 +564,14 @@ var iterator = PersistedContent.getAppTracks();
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     所请求持久化内容对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -579,7 +579,7 @@ API 级别 3.0.0
 
 获取系统上安装的、归应用所有的航点子集
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -739,14 +739,14 @@ var iterator = PersistedContent.getAppWaypoints();
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     所请求持久化内容对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -754,7 +754,7 @@ API 级别 3.0.0
 
 获取系统上安装的、归应用所有的训练
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -907,14 +907,14 @@ var iterator = PersistedContent.getAppWorkouts();
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     所请求持久化内容对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -922,7 +922,7 @@ API 级别 3.0.0
 
 获取系统上安装的路线
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -1062,14 +1062,14 @@ var iterator = PersistedContent.getCourses(); // Get the Iterator
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     [Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) 对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1077,7 +1077,7 @@ API 级别 2.2.0
 
 获取系统上安装的路线
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -1143,14 +1143,14 @@ var iterator = PersistedContent.getRoutes(); // Get the Iterator
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     [Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/) 对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1158,7 +1158,7 @@ API 级别 2.2.0
 
 获取系统上安装的轨迹
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -1178,14 +1178,14 @@ var iterator = PersistedContent.getTracks(); // Get the Iterator
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     [Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/) 对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1193,7 +1193,7 @@ API 级别 2.2.0
 
 获取系统上安装的航点
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -1355,14 +1355,14 @@ var iterator = PersistedContent.getWaypoints(); // Get the Iterator
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     路线列表中 [Waypoints](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 的 Iterator
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1370,7 +1370,7 @@ API 级别 2.2.0
 
 获取系统上安装的训练
 
-Example:
+示例：
 
 ```
 // Assumes content already saved on device
@@ -1525,14 +1525,14 @@ var iterator = PersistedContent.getWorkouts(); // Get the Iterator
 
 :::
 
-Returns:
+返回：
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
     [Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/) 对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -1540,7 +1540,7 @@ API 级别 2.2.0
 
 将一个 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 作为 [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 保存到设备的位置列表中
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -1555,7 +1555,7 @@ Parameters:
         要分配给航点的名称。如果未指定，系统将自动为航点命名。
 
 
-Example:
+示例：
 
 ```
 using Toybox.PersistedContent;
@@ -1729,6 +1729,6 @@ PersistedContent.saveWaypoint(location, {:name => "Cool Waypoint Name"});
 - [Toybox.Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

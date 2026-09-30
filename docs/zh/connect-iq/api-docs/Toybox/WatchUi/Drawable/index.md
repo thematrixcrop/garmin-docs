@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Drawable"
+title: "类：Toybox.WatchUi.Drawable"
 ---
 # 类：Toybox.WatchUi.Drawable
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Drawable 是可绘制对象的基类。
 
 可以使用资源编译器构造 Drawable，并通过资源（Rez）模块加载。
 
-Example:
+示例：
 
 使用定义为资源的 Drawable
 
@@ -58,7 +58,7 @@ class MyDrawableView extends WatchUi.View {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -122,11 +122,11 @@ API 级别 1.0.0
 
 Drawable 对象的裁剪高度。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -134,11 +134,11 @@ Returns:
 
 用于标识 Drawable 对象的 ID。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -146,11 +146,11 @@ Returns:
 
 Drawable 对象的可见性。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -158,11 +158,11 @@ Returns:
 
 Drawable 对象在屏幕上的绝对 x 坐标。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -170,11 +170,11 @@ Returns:
 
 Drawable 对象在屏幕上的绝对 y 坐标。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -182,11 +182,11 @@ Returns:
 
 Drawable 对象的裁剪宽度。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -200,14 +200,14 @@ Returns:
 
 派生类应在尝试绘制前检查 isVisible 属性（如果存在）。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -219,7 +219,7 @@ Constructor
 
 选项 `:visible` 仅支持 ConnectIQ 3.3.0 及更高版本。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -250,7 +250,7 @@ Parameters:
         Drawable 对象的可见性。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -258,7 +258,7 @@ API 级别 1.0.0
 
 设置 Drawable 对象在屏幕上的位置。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -269,7 +269,7 @@ Parameters:
     屏幕上的垂直位置
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -277,7 +277,7 @@ API 级别 1.0.0
 
 设置 Drawable 对象的大小。
 
-Parameters:
+参数：
 
 - w — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -288,7 +288,7 @@ Parameters:
     Drawable 对象的高度
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -296,13 +296,13 @@ API 级别 1.0.0
 
 设置 Drawable 对象的可见性。
 
-Parameters:
+参数：
 
 - visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     Drawable 对象的可见性。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

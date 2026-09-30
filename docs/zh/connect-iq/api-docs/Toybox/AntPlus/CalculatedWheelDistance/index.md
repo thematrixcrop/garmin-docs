@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.CalculatedWheelDistance"
+title: "类：Toybox.AntPlus.CalculatedWheelDistance"
 ---
 # 类：Toybox.AntPlus.CalculatedWheelDistance
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ CalculatedWheelDistance 对象表示累计距离。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -151,10 +151,10 @@ API 级别 2.2.0
 
 根据传感器数据计算的累计距离，单位为米（m）。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

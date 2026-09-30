@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.RunningDynamics"
+title: "类：Toybox.AntPlus.RunningDynamics"
 ---
 # 类：Toybox.AntPlus.RunningDynamics
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个跑步动态设备实例。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -144,14 +144,14 @@ API 级别 2.4.0
 
 使用 getRunningDynamics() 获取最新的跑步动态数据。
 
-Returns:
+返回：
 
 - [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/) —
 
     当前跑步动态数据
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -159,14 +159,14 @@ API 级别 2.4.0
 
 使用 getSensorPosition() 获取传感器在身体上的位置
 
-Returns:
+返回：
 
 - [AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/) —
 
     当前传感器位置
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -174,13 +174,13 @@ API 级别 2.4.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)) —
 
     运行 dynamics 实例时，可以选择将 [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0

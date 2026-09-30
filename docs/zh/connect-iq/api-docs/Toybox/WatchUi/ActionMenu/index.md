@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ActionMenu"
+title: "类：Toybox.WatchUi.ActionMenu"
 ---
 # 类：Toybox.WatchUi.ActionMenu
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示操作菜单视图的类。
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -158,7 +158,7 @@ API 级别 3.4.0
 
 ### Options，格式为 { :theme as [WatchUi.ActionMenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) }
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -168,18 +168,18 @@ API 级别 3.4.0
 
 向 ActionMenu 添加 Menuitem
 
-Parameters:
+参数：
 
 - item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
     要添加到 ActionMenu 的 ActionMenuItem
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -190,7 +190,7 @@ Throws:
 
 ActionMenu 的构造函数。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -201,11 +201,11 @@ Parameters:
         操作菜单 UI 的主题。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 

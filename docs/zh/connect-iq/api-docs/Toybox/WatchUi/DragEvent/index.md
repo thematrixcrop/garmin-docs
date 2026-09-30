@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.DragEvent"
+title: "类：Toybox.WatchUi.DragEvent"
 ---
 # 类：Toybox.WatchUi.DragEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -38,7 +38,7 @@ class InputDelegate extends WatchUi.InputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -162,14 +162,14 @@ API 级别 3.3.0
 
 获取拖动事件的坐标。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含拖动事件 x 和 y 坐标的数组，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -177,13 +177,13 @@ API 级别 3.3.0
 
 获取拖动事件的类型。
 
-Returns:
+返回：
 
 - [WatchUi.DragType](/connect-iq/api-docs/Toybox/WatchUi/#DragType-module) —
 
     一个 [WatchUi.DRAG\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#DRAG_TYPE_START-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

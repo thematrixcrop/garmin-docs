@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.SensorHistory"
+title: "模块：Toybox.SensorHistory"
 ---
 # 模块：Toybox.SensorHistory
 
@@ -9,7 +9,7 @@ SensorHistory 模块包含 SensorHistory 的接口。
 
 SensorHistory 提供对设备硬件板载传感器记录的历史信息的访问。可用信息量取决于设备。这意味着一台设备提供的信息可能多于另一台设备。此类提供了一个 ORDER\_\* 枚举，用于选择样本迭代器的数据顺序。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -163,7 +163,7 @@ API 级别 2.1.0
 
 ### Order
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -226,7 +226,7 @@ API 级别 2.1.0
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -253,7 +253,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 显示 BodyBatteryIterator 的使用
 
@@ -394,7 +394,7 @@ using Toybox.System;
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -410,7 +410,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -420,7 +420,7 @@ API 级别 3.3.0
 
 此函数始终返回最新的压力采样。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间可能因设备而异。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -447,7 +447,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 获取 SensoryHistoryIterator，并打印最近 SensorSample 中的海拔值
 
@@ -603,7 +603,7 @@ if (sensorIter != null) {
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -619,7 +619,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -629,7 +629,7 @@ API 级别 2.1.0
 
 此函数始终返回最新的心率样本。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间间隔可能取决于设备。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -656,7 +656,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 获取 SensoryHistoryIterator，并打印最近 SensorSample 中的心率值
 
@@ -685,7 +685,7 @@ if (sensorIter != null) {
 }
 ```
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -701,7 +701,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -711,7 +711,7 @@ API 级别 2.1.0
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -738,7 +738,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 获取 SensoryHistoryIterator，并打印最近 SensorSample 中的肌肉血氧饱和度值
 
@@ -885,7 +885,7 @@ if (sensorIter != null) {
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -901,7 +901,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -911,7 +911,7 @@ API 级别 3.2.0
 
 此函数始终返回最新的压力采样。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间可能因设备而异。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -938,7 +938,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 获取 SensoryHistoryIterator，并打印最近 SensorSample 中的压力值
 
@@ -1092,7 +1092,7 @@ if (sensorIter != null) {
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -1108,7 +1108,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1118,7 +1118,7 @@ API 级别 2.1.0
 
 此函数始终返回最新的传感器历史样本。迭代器中每个 \`SensorSample\` 之间的时间间隔可能因设备而异。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1145,7 +1145,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 显示 StressHistoryIterator 的使用
 
@@ -1290,7 +1290,7 @@ while (sample != null) {
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -1306,7 +1306,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -1316,7 +1316,7 @@ API 级别 3.3.0
 
 此函数始终返回最新的温度样本。迭代器中每个 [SensorSample](/connect-iq/api-docs/Toybox/SensorHistory/SensorSample/) 之间的时间间隔可能取决于设备。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1343,7 +1343,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 获取 SensoryHistoryIterator，并打印最近 SensorSample 中的温度值
 
@@ -1500,7 +1500,7 @@ if (sensorIter != null) {
 
 :::
 
-Returns:
+返回：
 
 - [SensorHistory.SensorHistoryIterator](/connect-iq/api-docs/Toybox/SensorHistory/SensorHistoryIterator/) —
 
@@ -1516,6 +1516,6 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0

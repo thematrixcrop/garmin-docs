@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeRadar"
+title: "类：Toybox.AntPlus.BikeRadar"
 ---
 # 类：Toybox.AntPlus.BikeRadar
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个自行车雷达设备实例。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -183,26 +183,26 @@ API 级别 3.0.0
 
 获取当前跟踪目标列表的信息。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/) 个对象的数组
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
 ### **initialize(listener as [AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) or **Null**)**
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/)) —
 
     自行车雷达实例的参数可选用 [BikeRadarListener](/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener/) 类的扩展类。如果用户计划仅使用 [getRadarInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeRadar/) 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

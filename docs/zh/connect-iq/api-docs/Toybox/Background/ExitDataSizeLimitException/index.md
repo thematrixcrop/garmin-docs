@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Background.ExitDataSizeLimitException"
+title: "类：Toybox.Background.ExitDataSizeLimitException"
 ---
 # 类：Toybox.Background.ExitDataSizeLimitException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示提供给 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) 的数据负载超过允许的最大数据大小（约 8 KB）。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -37,6 +37,6 @@ API 级别 2.3.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.3.0

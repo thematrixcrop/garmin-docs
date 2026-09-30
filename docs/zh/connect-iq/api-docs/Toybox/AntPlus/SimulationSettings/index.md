@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.SimulationSettings"
+title: "类：Toybox.AntPlus.SimulationSettings"
 ---
 # 类：Toybox.AntPlus.SimulationSettings
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示健身器材上的风力和轨迹模拟训练模式设置。字段可能返回 `null`，因此使用前应检查值是否为 `null`。尚未设置的值将返回无效值。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -73,11 +73,11 @@ API 级别 2.4.0
 
 模拟模式的模拟跟骑系数设置。跟骑系数为 0 时会消除所有风阻，1.0 表示没有跟骑效果。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -88,11 +88,11 @@ Returns:
 
 模拟路线的坡度（等级）设置
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -103,11 +103,11 @@ Returns:
 
 模拟模式的表面阻力系数。该无量纲因子根据自行车轮胎与骑行路线表面之间的摩擦量化滚动阻力。滚动阻力 \[N\] =（自行车质量 + 骑手质量）× 滚动阻力系数 × 9.8。示例系数：木质赛道 = 0.001，平滑混凝土 = 0.002，沥青路面 = 0.004，粗糙路面 = 0.008。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -118,11 +118,11 @@ Returns:
 
 模拟模式的风阻系数设置。风阻系数 \[kg/m\] = 迎风面积 \[m2\] × 阻力系数 × 空气密度 \[kg/m3\]。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -133,11 +133,11 @@ Returns:
 
 模拟模式的模拟风速设置
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

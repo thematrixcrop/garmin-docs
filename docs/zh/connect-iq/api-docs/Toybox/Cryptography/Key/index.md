@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.Key"
+title: "类：Toybox.Cryptography.Key"
 ---
 # 类：Toybox.Cryptography.Key
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 公钥或私钥。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -184,10 +184,10 @@ API 级别 3.0.0
 
 获取 Key 对象的字节。
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0

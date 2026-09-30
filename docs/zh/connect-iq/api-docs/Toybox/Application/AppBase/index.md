@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.AppBase"
+title: "类：Toybox.Application.AppBase"
 ---
 # 类：Toybox.Application.AppBase
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -48,7 +48,7 @@ AppBase 是应用的基类。
 
 每个 AppBase 对象都可以访问用于持久化数据的对象存储。
 
-Example:
+示例：
 
 显示基本的应用生命周期
 
@@ -72,7 +72,7 @@ class AppLifeCycle extends Application.AppBase {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -86,7 +86,7 @@ API 级别 1.0.0
 
 支持的设备的速览颜色主题
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -287,14 +287,14 @@ API 级别 4.0.0
 
 如果应用应允许产品为锁定的应用推送解锁说明页面，则返回 `true`。默认返回 `true`。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果应显示试用消息，则返回 `true`；否则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -497,11 +497,11 @@ API 级别 2.3.0
 - [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
@@ -520,7 +520,7 @@ Throws:
 
 后台进程无法删除属性。
 
-Parameters:
+参数：
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
@@ -714,11 +714,11 @@ Parameters:
 - [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
@@ -781,7 +781,7 @@ Throws:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -901,14 +901,14 @@ API 级别 4.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含一个 [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 和一个可选 [WatchUi.GlanceViewDelegate](/connect-iq/api-docs/Toybox/WatchUi/GlanceViewDelegate/) 的 Array。如果此函数返回 `null`，则会使用应用名称作为预览内容。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -925,21 +925,21 @@ API 级别 3.1.0
 - 如果未在 AppBase 中重写此方法，或该方法返回 `null`，则会显示原生目标屏幕。
 
 
-Parameters:
+参数：
 
 - goalType — ([Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) —
 
     已触发的目标类型。goalType 将来自 GOAL\_TYPE\_\* 枚举。
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含一个 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -951,14 +951,14 @@ API 级别 1.3.0
 
 此方法必须在派生类中重写；若被直接调用，会导致应用崩溃。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -976,7 +976,7 @@ API 级别 1.0.0
 
 符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values。
 
-Parameters:
+参数：
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
@@ -1161,7 +1161,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) —
 
@@ -1179,7 +1179,7 @@ Returns:
 - [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1187,7 +1187,7 @@ API 级别 1.0.0
 
 重写此方法，以提供应用的配对配置 View 和 Input Delegate。
 
-Parameters:
+参数：
 
 - sensor —
 
@@ -1274,14 +1274,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1371,14 +1371,14 @@ API 级别 5.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/) —
 
     Sensor Delegate 对象
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -1395,7 +1395,7 @@ API 级别 5.1.0
 - 如果未通过这些方法退出，后台任务将在 30 秒后自动终止
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
@@ -1407,7 +1407,7 @@ Returns:
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1553,14 +1553,14 @@ API 级别 2.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 以及可选的 [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/)、[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)、[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)、[WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/)、[WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)、[WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) 或 [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) 的数组
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1685,11 +1685,11 @@ API 级别 3.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Communications.SyncDelegate](/connect-iq/api-docs/Toybox/Communications/SyncDelegate/)
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -1699,14 +1699,14 @@ API 级别 3.1.0
 
 如果开发者希望实现基于时间的应用试用，则需要重写此函数，以返回试用剩余天数。应用启动时会调用此函数，以确定试用是否处于活动状态，并向用户提示试用剩余天数。请注意，如果重写 [allowTrialMessage()](/connect-iq/api-docs/Toybox/Application/AppBase/#allowTrialMessage-instance_function) 使其返回 `false`，则不会显示任何通知。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     指示试用剩余天数的 Number 对象；如果当前没有启用限时试用，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1743,7 +1743,7 @@ API 级别 2.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -1753,14 +1753,14 @@ API 级别 4.2.3
 
 对于开发版本应用，此项始终返回 `true`。如果应用已由商店签名，则返回应用当前的解锁状态。不应重写此方法，否则试用模式功能可能无法正常运行。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果应用处于“锁定”状态并被视为试用模式，则返回 `true`；如果应用已解锁，则返回 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1950,7 +1950,7 @@ API 级别 2.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1958,7 +1958,7 @@ API 级别 1.0.0
 
 在应用进入活动模式时调用，即占据前台屏幕。
 
-Parameters:
+参数：
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1994,7 +1994,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -2002,7 +2002,7 @@ API 级别 4.2.3
 
 应用安装后在后台触发的回调方法。要求启用 Background 权限，并在应用类中添加 :background 注释。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -2010,7 +2010,7 @@ API 级别 3.0.0
 
 应用更新时在后台触发的回调方法。要求启用 Background 权限，并且应用程序类带有 :background 注解。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -2018,7 +2018,7 @@ API 级别 3.0.0
 
 Application 请求在身份验证过程中按需运行代码时调用。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -2028,7 +2028,7 @@ API 级别 3.3.0
 
 [Background](/connect-iq/api-docs/Toybox/Background/) 进程终止时，可能会有数据负载可用。如果主应用处于活动状态，数据将直接传递给应用的 `onBackgroundData()` 方法。如果主应用未处于活动状态，数据将保存起来，直到应用下次启动，并在 [onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) 方法完成后传递给应用。
 
-Parameters:
+参数：
 
 - data — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -2040,7 +2040,7 @@ Parameters:
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -2050,7 +2050,7 @@ API 级别 2.3.0
 
 设备设置值发生更改时会调用此方法。
 
-Parameters:
+参数：
 
 - aSymbol — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
@@ -2061,7 +2061,7 @@ Parameters:
     字段的新值。该值的类型将与 [DeviceSettings](/connect-iq/api-docs/Toybox/System/DeviceSettings/) 类中字段的类型匹配。
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -2154,7 +2154,7 @@ function onDeviceSettingChanged(aSymbol as Symbol, aValue as Object) as Void {
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -2220,7 +2220,7 @@ API 级别 5.1.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
@@ -2263,7 +2263,7 @@ API 级别 5.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -2271,7 +2271,7 @@ API 级别 4.2.3
 
 在应用进入非活动模式时调用，即应用被系统隐藏且不占用屏幕时调用。对某些系统资源的访问将受到限制，例如 GPS、ANT 和提醒（振动音、手电筒）。
 
-Parameters:
+参数：
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2307,7 +2307,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -2332,7 +2332,7 @@ API 级别 4.2.3
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.1.2
 
@@ -2340,7 +2340,7 @@ API 级别 4.1.2
 
 应用运行时，Garmin Connect Mobile（GCM）更改应用设置时调用。重写此方法，以便在设置更改时更改应用行为。通常用于请求更新 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
 
-Example:
+示例：
 
 ```
 function onSettingsChanged() { // triggered by settings change in GCM
@@ -2354,7 +2354,7 @@ function onSettingsChanged() { // triggered by settings change in GCM
 - [WatchUi.requestUpdate() details](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -2368,7 +2368,7 @@ API 级别 1.2.0
 
 挂起状态可以在设备重启或应用更新时清除。
 
-Parameters:
+参数：
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2399,7 +2399,7 @@ Parameters:
         如果存在，则表示用于启动表盘的目标表盘设置。使用 [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) 获取给定设置。
 
 
-Example:
+示例：
 
 与 Intent 一起使用的 onStart()
 
@@ -2416,7 +2416,7 @@ function onStart(state) {
 - [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -2430,7 +2430,7 @@ API 级别 1.0.0
 
 挂起状态可以在设备重启或应用更新时清除。
 
-Parameters:
+参数：
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -2446,7 +2446,7 @@ Parameters:
 - [Toybox.System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -2454,7 +2454,7 @@ API 级别 1.0.0
 
 当应用存储被应用的另一个运行实例（即应用运行时的后台进程，反之亦然）更改时调用。重写此函数，以便在存储更新时接收回调。使用此函数从应用存储重新加载存储数据。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -2462,7 +2462,7 @@ API 级别 3.2.0
 
 应用程序需要验证属性时调用。
 
-Parameters:
+参数：
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -2473,12 +2473,12 @@ Parameters:
     要验证的值。
 
 
-Returns:
+返回：
 
 - 如果属性有效，则为 true；否则返回错误消息。返回 false 会导致设置配置应用显示通用错误
 
 
-Since:
+起始版本：
 
 API 级别 4.1.0
 
@@ -2486,7 +2486,7 @@ API 级别 4.1.0
 
 打开应用设置编辑器的函数
 
-Since:
+起始版本：
 
 API 级别 4.1.0
 
@@ -2676,7 +2676,7 @@ API 级别 4.1.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -2696,7 +2696,7 @@ API 级别 1.0.0
 
 符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values。
 
-Parameters:
+参数：
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
@@ -2707,7 +2707,7 @@ Parameters:
     要放入对象存储中的值。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Application;
@@ -2915,11 +2915,11 @@ var boolean = app.getProperty("boolean");     // get value for "boolean" key
 - [Toybox.Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
@@ -2934,7 +2934,7 @@ Throws:
 
 验证要存储的属性。
 
-Parameters:
+参数：
 
 - key — ([Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type)) —
 
@@ -2945,6 +2945,6 @@ Parameters:
     要验证的值。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.PickerFactory"
+title: "类：Toybox.WatchUi.PickerFactory"
 ---
 # 类：Toybox.WatchUi.PickerFactory
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ PickerFactory 用于指定 [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 请参阅 SDK 中随附的 Picker 示例，了解 PickerFactory 类的使用示例
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -243,7 +243,7 @@ API 级别 1.2.0
 
 为项目生成 Drawable 实例。
 
-Parameters:
+参数：
 
 - item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -254,14 +254,14 @@ Parameters:
     如果当前项目是选定项目，则为 `true`，否则为 `false`
 
 
-Returns:
+返回：
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
     要渲染的 Drawable 对象
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -269,11 +269,11 @@ API 级别 1.2.0
 
 获取 PickerFactory 中项目的数量。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -281,20 +281,20 @@ API 级别 1.2.0
 
 返回某个项目的值。
 
-Parameters:
+参数：
 
 - item — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     项目索引。
 
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     项目的值
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

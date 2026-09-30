@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.DerailleurStatus"
+title: "类：Toybox.AntPlus.DerailleurStatus"
 ---
 # 类：Toybox.AntPlus.DerailleurStatus
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 存储已连接变速器当前状态信息的类
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -157,11 +157,11 @@ API 级别 3.1.0
 
 当前档位索引（对于前拨链器为 0 - 6，[Toybox::AntPlus::FRONT\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#FRONT_GEAR_INVALID-const) = 未知档位索引/错误）（对于后拨链器为 0 - 30，[Toybox::AntPlus::REAR\_GEAR\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#REAR_GEAR_INVALID-const) = 未知档位索引/错误）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -169,11 +169,11 @@ Returns:
 
 已安装齿轮数量（1 - 7，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）（1 - 31，[Toybox::AntPlus::MAX\_GEARS\_INVALID](/connect-iq/api-docs/Toybox/AntPlus/#MAX_GEARS_INVALID-const) = 未知齿轮数量 / 错误）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -181,11 +181,11 @@ Returns:
 
 当前档位大小（齿数，0 - 255）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -193,11 +193,11 @@ Returns:
 
 无效内侧换挡次数（0 - 255）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -205,11 +205,11 @@ Returns:
 
 无效外侧换挡次数（0 - 255）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -217,10 +217,10 @@ Returns:
 
 换挡失败次数（0 - 255）
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

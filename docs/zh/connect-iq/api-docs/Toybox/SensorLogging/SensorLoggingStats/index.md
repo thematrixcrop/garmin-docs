@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.SensorLogging.SensorLoggingStats"
+title: "类：Toybox.SensorLogging.SensorLoggingStats"
 ---
 # 类：Toybox.SensorLogging.SensorLoggingStats
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于传感器记录状态的类。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -46,11 +46,11 @@ API 级别 2.3.0
 
 记录的样本总数
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -58,11 +58,11 @@ Returns:
 
 记录数据的总秒数
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -72,6 +72,6 @@ Returns:
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.3.0

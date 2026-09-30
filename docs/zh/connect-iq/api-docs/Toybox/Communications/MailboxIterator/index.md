@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.MailboxIterator"
+title: "类：Toybox.Communications.MailboxIterator"
 ---
 # 类：Toybox.Communications.MailboxIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ Toybox.Lang.Object
 - [Communications.registerForPhoneAppMessages()](/connect-iq/api-docs/Toybox/Communications/#registerForPhoneAppMessages-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -201,13 +201,13 @@ API 级别 1.0.0
 
 ### **MailboxKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **MailboxValueType** as [MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[MailboxIterator.MailboxKeyType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxKeyType-named_type), [MailboxIterator.MailboxValueType](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/#MailboxValueType-named_type)\>
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -217,11 +217,11 @@ API 级别 1.0.0
 
 从邮箱中获取下一条消息。
 
-Returns:
+返回：
 
 - 消息内容；如果没有消息，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

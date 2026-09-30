@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.TextArea"
+title: "类：Toybox.WatchUi.TextArea"
 ---
 # 类：Toybox.WatchUi.TextArea
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Drawable
 
@@ -25,7 +25,7 @@ Toybox.WatchUi.Drawable
 - [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.Graphics;
@@ -59,7 +59,7 @@ class MyTextAreaView extends WatchUi.View {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -100,14 +100,14 @@ API 级别 3.1.0
 
 把文本绘制到设备上下文（[Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)）。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -115,7 +115,7 @@ API 级别 3.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -147,7 +147,7 @@ Parameters:
 - [Drawable.initialize()](/connect-iq/api-docs/Toybox/WatchUi/Drawable/#initialize-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -155,18 +155,18 @@ API 级别 3.1.0
 
 设置 Text 对象的背景色。
 
-Parameters:
+参数：
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     表示所需背景颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -177,18 +177,18 @@ Throws:
 
 设置 Text 对象的前景色。
 
-Parameters:
+参数：
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     表示所需文本颜色的一个 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -199,7 +199,7 @@ Throws:
 
 设置 Text 对象的字体。
 
-Parameters:
+参数：
 
 - font — ([Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
@@ -211,11 +211,11 @@ Parameters:
 - [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -226,18 +226,18 @@ Throws:
 
 设置 Text 对象的对齐方式。
 
-Parameters:
+参数：
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module)) —
 
     表示所需对齐方式的一个 [Graphics.TEXT\_JUSTIFY\_\*](/connect-iq/api-docs/Toybox/Graphics/#TEXT_JUSTIFY_RIGHT-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -248,18 +248,18 @@ Throws:
 
 设置 Text 对象的文本字符串。
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     文本字符串或字符串 ResourceId。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

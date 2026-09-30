@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.KeyEvent"
+title: "类：Toybox.WatchUi.KeyEvent"
 ---
 # 类：Toybox.WatchUi.KeyEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ KeyEvent 是在设备上的物理按钮按下时发送给 [InputDelegate](/conne
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -38,7 +38,7 @@ class InputDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -74,14 +74,14 @@ API 级别 1.0.0
 
 获取此事件的键值。
 
-Returns:
+返回：
 
 - [WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module) —
 
     一个 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -89,13 +89,13 @@ API 级别 1.0.0
 
 获取点击事件的类型。
 
-Returns:
+返回：
 
 - [WatchUi.KeyPressType](/connect-iq/api-docs/Toybox/WatchUi/#KeyPressType-module) —
 
     一个 [WatchUi.PRESS\_TYPE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#PRESS_TYPE_DOWN-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.1.2

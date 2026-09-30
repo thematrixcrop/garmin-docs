@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.Stats"
+title: "类：Toybox.System.Stats"
 ---
 # 类：Toybox.System.Stats
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [System.getSystemStats()](/connect-iq/api-docs/Toybox/System/#getSystemStats-instance_function)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -32,7 +32,7 @@ System.println(myStats.battery);
 System.println(myStats.totalMemory);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -77,11 +77,11 @@ API 级别 1.0.0
 
 某些设备从充电底座或充电线缆上移除后，可能会立即报告略低于 100% 的电量。当设备处于充电状态时，充电器会在电池充满至 100% 后禁用自身。随后电池会非常缓慢地放电，直到达到滞回阈值，此时充电器会重新启用。这样设计是为了在设备长时间留在充电器上时延长电池寿命。当设备达到满电状态后，Garmin 会在充电页面上人为地将电量指示器锁定为 100%，以掩盖这种轻微的充电周期波动。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -89,7 +89,7 @@ Returns:
 
 剩余电池续航天数。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -193,7 +193,7 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -201,7 +201,7 @@ Returns:
 
 电池充电指示器。如果设备已连接到充电底座或充电线缆，无论设备是否已充满电，此值都将设置为 `true`。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -210,7 +210,7 @@ API 级别 3.0.0
 - [Stats.battery](/connect-iq/api-docs/Toybox/System/Stats/#battery-var)
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -218,11 +218,11 @@ Returns:
 
 当前可用内存，单位为字节。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -230,11 +230,11 @@ Returns:
 
 一个 0-100 的 [Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值，用于描述太阳能传感器的充电效率（如果可用）。如果设备不支持太阳能，则设置为 `null`；如果设备当前未充电，则设置为负数。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -242,11 +242,11 @@ Returns:
 
 以字节为单位的可用内存总量。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -254,10 +254,10 @@ Returns:
 
 应用使用的内存，单位为字节。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

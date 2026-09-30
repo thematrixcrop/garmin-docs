@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Ant"
+title: "模块：Toybox.Ant"
 ---
 # 模块：Toybox.Ant
 
@@ -31,7 +31,7 @@ ANT 无线协议是一种低级通信协议，通过直接控制设备上的无�
 - [ANT Downloads & Resources](https://www.thisisant.com/developer/resources/downloads/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -241,7 +241,7 @@ API 级别 1.0.0
 
 ### MessageId
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -344,7 +344,7 @@ API 级别 1.0.0
 
 ### MessageCode
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -441,7 +441,7 @@ API 级别 5.1.0
 
 ### NetworkType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -464,7 +464,7 @@ API 级别 1.2.0
 
 ### ChannelType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -519,7 +519,7 @@ API 级别 3.1.0
 
 传递给 BurstListener 中失败函数的错误代码
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.BehaviorDelegate"
+title: "类：Toybox.WatchUi.BehaviorDelegate"
 ---
 # 类：Toybox.WatchUi.BehaviorDelegate
 
-Inherits:
+继承：
 
 Toybox.WatchUi.InputDelegate
 
@@ -29,7 +29,7 @@ BehaviorDelegate 与 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDe
 - [Toybox.WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -49,7 +49,7 @@ class MyBehaviorDelegate extends BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -113,7 +113,7 @@ API 级别 1.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -132,14 +132,14 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.1.1
 
@@ -153,14 +153,14 @@ API 级别 5.1.1
 
 某些设备会将 [SWIPE\_RIGHT](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_RIGHT-const) [SwipeEvents](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 解释为 [KEY\_ESC](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ESC-const) 事件。在这些设备上，返回 `false` 将导致调用 [onKey()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onKey-instance_function)，而不是 [onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function)。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -170,14 +170,14 @@ API 级别 1.0.0
 
 通常由菜单按钮（[KEY\_MENU](/connect-iq/api-docs/Toybox/WatchUi/#KEY_MENU-const)）触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -185,14 +185,14 @@ API 级别 1.0.0
 
 表示 *Next* 行为。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -202,14 +202,14 @@ API 级别 1.0.0
 
 这通常由向下按钮（[KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)）或触摸屏上的 [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -217,14 +217,14 @@ API 级别 1.0.0
 
 表示 *Previous* *Mode* 行为。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -234,14 +234,14 @@ API 级别 1.0.0
 
 通常由向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或触摸屏上的 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -251,13 +251,13 @@ API 级别 1.0.0
 
 通常由开始/确认按钮（[KEY\_ENTER](/connect-iq/api-docs/Toybox/WatchUi/#KEY_ENTER-const)）或触摸屏上的 [CLICK\_TYPE\_TAP](/connect-iq/api-docs/Toybox/WatchUi/#CLICK_TYPE_TAP-const) [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/) 触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

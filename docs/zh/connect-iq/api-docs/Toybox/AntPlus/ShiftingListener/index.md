@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.ShiftingListener"
+title: "类：Toybox.AntPlus.ShiftingListener"
 ---
 # 类：Toybox.AntPlus.ShiftingListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 变速的侦听器类
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -143,7 +143,7 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -151,10 +151,10 @@ API 级别 3.1.0
 
 变速系统状态更改时的回调
 
-Parameters:
+参数：
 
 - data — ([AntPlus.ShiftingStatus](/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus/))
 
-Since:
+起始版本：
 
 API 级别 3.1.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.SensorInfo"
+title: "类：Toybox.Sensor.SensorInfo"
 ---
 # 类：Toybox.Sensor.SensorInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 SensorInfo 提供对 Sensor 属性的访问。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -80,11 +80,11 @@ API 级别 3.2.0
 
 `:bleScanResult` 和 `:antMessage` 仅用于原生传感器配对过程。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
@@ -94,11 +94,11 @@ Sensor 启用标志。
 
 表示传感器是否已启用配对的指示器。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -108,11 +108,11 @@ Sensor 制造商。
 
 传感器的制造商 id。可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -122,11 +122,11 @@ Sensor 名称。
 
 传感器的名称。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -136,11 +136,11 @@ Sensor 部件号。
 
 传感器的部件号。可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -150,11 +150,11 @@ Sensor 软件版本。
 
 传感器的软件版本。可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -164,11 +164,11 @@ Returns:
 
 用于与此传感器通信的技术。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module) —
 
@@ -181,11 +181,11 @@ Sensor 类型。
 
 传感器类型。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type) —
 

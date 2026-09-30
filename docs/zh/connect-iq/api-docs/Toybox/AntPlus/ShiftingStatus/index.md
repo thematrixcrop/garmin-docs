@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.ShiftingStatus"
+title: "类：Toybox.AntPlus.ShiftingStatus"
 ---
 # 类：Toybox.AntPlus.ShiftingStatus
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包括变化的系统状态。字段可能会返回 `null`，如果没有有效信息，则应在使用前检查是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -141,11 +141,11 @@ API 级别 3.1.0
 
 前拨链器状态
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)
 
@@ -153,10 +153,10 @@ Returns:
 
 后拨链器状态
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Returns:
+返回：
 
 - [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/)

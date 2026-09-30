@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.RadarTarget"
+title: "类：Toybox.AntPlus.RadarTarget"
 ---
 # 类：Toybox.AntPlus.RadarTarget
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示所跟踪雷达目标的雷达数据。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -192,11 +192,11 @@ API 级别 3.0.0
 
 指示到目标的距离（以米（m）为单位）。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -204,11 +204,11 @@ Returns:
 
 指示目标相对于用户的速度（以米每秒（m/s）为单位）。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -216,11 +216,11 @@ Returns:
 
 [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) 威胁值。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
@@ -228,10 +228,10 @@ Returns:
 
 [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) 威胁位置。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)

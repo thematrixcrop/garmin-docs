@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityMonitor.HeartRateSample"
+title: "类：Toybox.ActivityMonitor.HeartRateSample"
 ---
 # 类：Toybox.ActivityMonitor.HeartRateSample
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包含指定时间心率数据的类。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -183,11 +183,11 @@ API 级别 1.2.2
 
 使用心率信息之前，请检查 [INVALID\_HR\_SAMPLE](/connect-iq/api-docs/Toybox/ActivityMonitor/#INVALID_HR_SAMPLE-const) 以确保数据可用。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -195,10 +195,10 @@ Returns:
 
 心率样本的时间
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

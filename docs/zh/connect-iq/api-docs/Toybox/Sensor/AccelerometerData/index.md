@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.AccelerometerData"
+title: "类：Toybox.Sensor.AccelerometerData"
 ---
 # 类：Toybox.Sensor.AccelerometerData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ Toybox.Lang.Object
 - [G-Force Basic Overview](http://www.gforces.net/what-is-g-force-meaning.html)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -232,7 +232,7 @@ API 级别 2.3.0
 
 俯仰值使用公式 atan2(y, sqrt(x^2 + z^2)) 计算。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -241,7 +241,7 @@ API 级别 2.3.0
 - [Tilt Sensing Using a Three-Axis Accelerometer](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -249,11 +249,11 @@ Returns:
 
 以 millig-units 为单位的向量功率值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -263,7 +263,7 @@ Returns:
 
 滚转值使用公式 atan2(-x, z) 计算。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -272,7 +272,7 @@ API 级别 2.3.0
 - [Tilt Sensing Using a Three-Axis Accelerometer](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -280,11 +280,11 @@ Returns:
 
 以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.1
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -292,11 +292,11 @@ Returns:
 
 以 millig-units 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -304,11 +304,11 @@ Returns:
 
 以 millig-units 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -316,10 +316,10 @@ Returns:
 
 以 millig-units 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.Hash"
+title: "类：Toybox.Cryptography.Hash"
 ---
 # 类：Toybox.Cryptography.Hash
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -211,14 +211,14 @@ API 级别 3.0.0
 
 此方法会重置 Hash 对象的状态，可用于计算新的哈希值
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     消息的摘要
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -226,7 +226,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -242,11 +242,11 @@ Parameters:
 - [https://en.wikipedia.org/wiki/Hash\_function](https://en.wikipedia.org/wiki/Hash_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -259,13 +259,13 @@ Throws:
 
 重复调用等价于用所有参数拼接后调用一次。
 
-Parameters:
+参数：
 
 - message — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     待哈希消息的下一块数据
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

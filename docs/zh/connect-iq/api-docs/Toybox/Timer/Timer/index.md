@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Timer.Timer"
+title: "类：Toybox.Timer.Timer"
 ---
 # 类：Toybox.Timer.Timer
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -22,7 +22,7 @@ Timer 对象会在指定的毫秒数后调用回调函数。
 
 可用计时器数量（默认值为 3）和最小时间值（默认值为 50 ms）取决于主机系统。设置过多计时器时将发生错误。
 
-Example:
+示例：
 
 创建一个每秒递增 1 的计数器
 
@@ -41,7 +41,7 @@ function onLayout(dc) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -66,7 +66,7 @@ API 级别 1.0.0
 
 如果在低功耗模式下从表盘应用调用，将导致应用崩溃
 
-Parameters:
+参数：
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -81,7 +81,7 @@ Parameters:
     设置为 `true`，使 Timer 持续重复，直到调用 stop()
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -91,6 +91,6 @@ API 级别 1.0.0
 
 只需对重复计时器调用此方法。可以通过调用 start() 再次启动 Timer。
 
-Since:
+起始版本：
 
 API 级别 1.0.0

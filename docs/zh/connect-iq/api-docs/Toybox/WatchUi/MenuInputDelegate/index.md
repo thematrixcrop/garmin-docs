@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.MenuInputDelegate"
+title: "类：Toybox.WatchUi.MenuInputDelegate"
 ---
 # 类：Toybox.WatchUi.MenuInputDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ MenuInputDelegate 响应 Menu 选择。
 - [Toybox.WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -46,7 +46,7 @@ class MyMenuInputDelegate extends WatchUi.MenuInputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -80,13 +80,13 @@ API 级别 1.0.0
 
 选择 Menu 项时会调用此方法，并将该 Menu 项作为参数接收。
 
-Parameters:
+参数：
 
 - item — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     所选菜单项的标识符
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

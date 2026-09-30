@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.Message"
+title: "类：Toybox.Ant.Message"
 ---
 # 类：Toybox.Ant.Message
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于保存和定义 ANT 无线数据负载中信息的类。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -40,7 +40,7 @@ function onMessage(msg) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -103,7 +103,7 @@ API 级别 1.0.0
 
 唯一设备编号 (ANT-id)。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -111,7 +111,7 @@ API 级别 1.2.0
 
 1 字节的设备类型标识符。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -124,7 +124,7 @@ API 级别 1.2.0
 
 数据负载中的数据字节数（不包括适用时的任何扩展数据）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -132,7 +132,7 @@ API 级别 1.0.0
 
 数据类型标识符
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -140,7 +140,7 @@ API 级别 1.0.0
 
 接收信号强度指示。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -150,7 +150,7 @@ API 级别 1.0.0
 
 每 2 秒翻转一次。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -158,7 +158,7 @@ API 级别 1.2.0
 
 厂商特定的传输类型和扩展设备号。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -168,14 +168,14 @@ API 级别 1.2.0
 
 获取 ANT 数据包。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     由整数形式的 Number 数组组成，表示数据负载的字节
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -183,13 +183,13 @@ API 级别 1.0.0
 
 设置 ANT 数据包。
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     由整数形式的 Number 数组组成，表示数据负载的字节
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

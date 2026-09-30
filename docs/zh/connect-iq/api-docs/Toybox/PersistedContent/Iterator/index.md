@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.PersistedContent.Iterator"
+title: "类：Toybox.PersistedContent.Iterator"
 ---
 # 类：Toybox.PersistedContent.Iterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Toybox.PersistedContent Module Example](/connect-iq/api-docs/Toybox/PersistedContent/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -40,13 +40,13 @@ API 级别 2.2.0
 
 获取列表中的下一个项目
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     下一个项目；如果到达列表末尾，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

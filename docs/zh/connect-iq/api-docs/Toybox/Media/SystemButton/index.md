@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.SystemButton"
+title: "类：Toybox.Media.SystemButton"
 ---
 # 类：Toybox.Media.SystemButton
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -22,7 +22,7 @@ SystemButton 允许应用覆盖默认的媒体播放器按钮。可以通过提�
 
 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -47,7 +47,7 @@ API 级别 3.0.3
 
 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - image — ([Media.ButtonImage](/connect-iq/api-docs/Toybox/Media/#ButtonImage-module)) —
 
@@ -62,14 +62,14 @@ Parameters:
     如果按钮被高亮显示，则设置为 `true`；否则设置为 `false`
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) —
 
     按钮的位图表示或 24 位 RRGGBB 颜色
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -77,7 +77,7 @@ API 级别 3.0.3
 
 Constructor
 
-Parameters:
+参数：
 
 - type — ([Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)) —
 
@@ -92,6 +92,6 @@ Parameters:
         如果按钮被禁用，则设置为 `true`；否则设置为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.SymbolNotAllowedException"
+title: "类：Toybox.Lang.SymbolNotAllowedException"
 ---
 # 类：Toybox.Lang.SymbolNotAllowedException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -42,6 +42,6 @@ API 级别 2.2.0
 
 SymbolNotAllowedException 构造函数。
 
-Since:
+起始版本：
 
 API 级别 2.2.0

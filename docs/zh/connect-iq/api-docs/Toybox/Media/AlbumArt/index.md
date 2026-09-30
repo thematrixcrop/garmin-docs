@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.AlbumArt"
+title: "类：Toybox.Media.AlbumArt"
 ---
 # 类：Toybox.Media.AlbumArt
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 存储与专辑封面位置和格式相关的元数据
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -39,11 +39,11 @@ API 级别 3.0.0
 
 专辑封面的图像格式
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Media.ImageFormat](/connect-iq/api-docs/Toybox/Media/#ImageFormat-module) —
 
@@ -54,10 +54,10 @@ Returns:
 
 音频文件中专辑封面图像的字节偏移量
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

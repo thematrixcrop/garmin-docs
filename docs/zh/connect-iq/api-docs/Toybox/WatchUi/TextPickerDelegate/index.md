@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.TextPickerDelegate"
+title: "类：Toybox.WatchUi.TextPickerDelegate"
 ---
 # 类：Toybox.WatchUi.TextPickerDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ TextPickerDelegate 响应 TextPicker 选择。
 - [Toybox.WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -51,7 +51,7 @@ class MyTextPickerDelegate extends WatchUi.TextPickerDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.1.0
 
@@ -243,7 +243,7 @@ API 级别 1.1.0
 
 文本输入已取消。
 
-Since:
+起始版本：
 
 API 级别 1.1.0
 
@@ -253,7 +253,7 @@ API 级别 1.1.0
 
 通过 TextPicker 指定文本时会调用此方法，并将文本 String 作为参数接收。
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -264,6 +264,6 @@ Parameters:
     输入的文本不同于 TextPicker 最初指定的文本
 
 
-Since:
+起始版本：
 
 API 级别 1.1.0

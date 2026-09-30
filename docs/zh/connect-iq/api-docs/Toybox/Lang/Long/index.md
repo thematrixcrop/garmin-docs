@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Long"
+title: "类：Toybox.Lang.Long"
 ---
 # 类：Toybox.Lang.Long
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,13 +20,13 @@ Long 表示有符号的 64 位整数。
 
 要在 Monkey C 中使用 Long 值，请在数字末尾添加 'l'。
 
-Example:
+示例：
 
 ```
 var myLong = 9000l;
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -75,14 +75,14 @@ API 级别 1.0.0
 
 获取 Long 的绝对值。
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     Long 的绝对值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -90,25 +90,25 @@ API 级别 1.0.0
 
 将 self 的数值与其他数值进行比较。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -119,21 +119,21 @@ Throws:
 
 测试一个 Object 实例是否等于另一个 Object 实例。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     对象相等时返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -181,14 +181,14 @@ width
 
 仅支持数字（不支持 \*）
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     格式化后的字符串
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -196,14 +196,14 @@ API 级别 1.0.0
 
 将 Long 转换为 Double。
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     Long 的 Double 表示
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -211,14 +211,14 @@ API 级别 1.0.0
 
 将 Long 转换为 Float。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Long 的 Float 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -226,14 +226,14 @@ API 级别 1.0.0
 
 将 Long 转换为 Long。
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     Long 的 Long 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -241,14 +241,14 @@ API 级别 1.0.0
 
 将 Long 转换为 Number。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Long 的 Number 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -256,13 +256,13 @@ API 级别 1.0.0
 
 将 Long 转换为 String。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Long 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

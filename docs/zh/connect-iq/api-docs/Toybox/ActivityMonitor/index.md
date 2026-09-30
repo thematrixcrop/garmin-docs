@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.ActivityMonitor"
+title: "模块：Toybox.ActivityMonitor"
 ---
 # 模块：Toybox.ActivityMonitor
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.ActivityMonitor"
 
 ActivityMonitor 模块包含活动监测数据的接口。
 
-Example:
+示例：
 
 显示 HeartRateIterator、HeartRateSample 和 Info 的使用
 
@@ -43,7 +43,7 @@ System.println("You have taken: " + steps +
                " steps and burned: " + calories + " calories!");
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -257,7 +257,7 @@ API 级别 1.0.0
 
 此函数始终返回最新的心率样本。迭代器中每个 HeartRateSample 之间的时间间隔可能取决于设备。
 
-Parameters:
+参数：
 
 - period — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -422,14 +422,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [ActivityMonitor.HeartRateIterator](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator/) —
 
     给定时间段的心率历史迭代器
 
 
-Since:
+起始版本：
 
 API 级别 1.2.1
 
@@ -437,7 +437,7 @@ API 级别 1.2.1
 
 获取 ActivityMonitor.History 对象的 Array
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
@@ -449,7 +449,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -457,13 +457,13 @@ API 级别 1.0.0
 
 获取当前 [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/)
 
-Returns:
+返回：
 
 - [ActivityMonitor.Info](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/) —
 
     包含当前信息的 Info 对象。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.CalculatedCadence"
+title: "类：Toybox.AntPlus.CalculatedCadence"
 ---
 # 类：Toybox.AntPlus.CalculatedCadence
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -155,11 +155,11 @@ API 级别 2.2.0
 
 根据传感器数据计算出的平均曲柄踏频，单位为每分钟转数（rpm）。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -167,10 +167,10 @@ Returns:
 
 自行车功率传感器的 [BIKE\_POWER\_SENSOR\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BIKE_POWER_SENSOR_TYPE_CNT-const) 值。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module)

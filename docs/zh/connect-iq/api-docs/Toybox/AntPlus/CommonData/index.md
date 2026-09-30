@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.CommonData"
+title: "类：Toybox.AntPlus.CommonData"
 ---
 # 类：Toybox.AntPlus.CommonData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ CommonData 对象表示所有通用数据类型之间共享的信息。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -47,11 +47,11 @@ API 级别 2.2.0
 
 组件 ID 按 ANT+ 配置文件定义。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -67,11 +67,11 @@ Returns:
 
 系统中的组件数。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 

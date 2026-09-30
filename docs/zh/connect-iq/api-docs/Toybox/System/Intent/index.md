@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.Intent"
+title: "类：Toybox.System.Intent"
 ---
 # 类：Toybox.System.Intent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ Intent 将内容从一个应用发送到另一个应用。
 - [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -38,7 +38,7 @@ var targetApp = new System.Intent(
 System.exitTo(targetApp);
 ```
 
-Example:
+示例：
 
 有效的 Intent URI 格式
 
@@ -50,7 +50,7 @@ store-id://[app store ID in the form xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]
 system://pairing
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -81,13 +81,13 @@ API 级别 2.2.0
 
 ### var arguments as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
 ### var uri as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -97,7 +97,7 @@ API 级别 2.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - aURI — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -108,6 +108,6 @@ Parameters:
     传递给目标 URI 的参数
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

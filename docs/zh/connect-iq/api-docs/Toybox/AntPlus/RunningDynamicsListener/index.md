@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.RunningDynamicsListener"
+title: "类：Toybox.AntPlus.RunningDynamicsListener"
 ---
 # 类：Toybox.AntPlus.RunningDynamicsListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 跑步动态的侦听器类。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -144,7 +144,7 @@ API 级别 2.4.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -152,14 +152,14 @@ API 级别 2.4.0
 
 跑步动态更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) —
 
     包含更新后的跑步动态信息的数据。
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -167,13 +167,13 @@ API 级别 2.4.0
 
 传感器位置更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.SensorPosition](/connect-iq/api-docs/Toybox/AntPlus/SensorPosition/)) —
 
     包含更新后的传感器位置信息的数据。
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0

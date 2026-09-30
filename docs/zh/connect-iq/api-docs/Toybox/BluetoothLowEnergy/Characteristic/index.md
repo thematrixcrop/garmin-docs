@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.Characteristic"
+title: "类：Toybox.BluetoothLowEnergy.Characteristic"
 ---
 # 类：Toybox.BluetoothLowEnergy.Characteristic
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 封装服务上的特征
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -55,21 +55,21 @@ API 级别 3.1.0
 
 获取具有指定 UUID 的描述符
 
-Parameters:
+参数：
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
     要搜索的 UUID。
 
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) —
 
     由提供的 UUID 表示的 Descriptor；如果描述符不存在或 UUID 尚未注册，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -79,14 +79,14 @@ API 级别 3.1.0
 
 此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 descriptors
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     Characteristic 中发现的描述符的 [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 个对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -96,14 +96,14 @@ API 级别 3.1.0
 
 获取此特征所属的服务
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) —
 
     父级特征对象
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -111,14 +111,14 @@ API 级别 3.1.0
 
 返回 Characteristic 的 UUID
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
     Characteristic 的 UUID
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -130,7 +130,7 @@ API 级别 3.1.0
 
 尚未实现对长读取的支持。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -142,7 +142,7 @@ API 级别 3.1.0
 
 尚未实现对长写入的支持。请求写入长度超过 20 字节的特征将导致 [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
-Parameters:
+参数：
 
 - value — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
@@ -157,11 +157,11 @@ Parameters:
         一个表示写入特征时所用写入类型的 [WRITE\_TYPE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WRITE_TYPE_WITH_RESPONSE-const)。不能为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([BluetoothLowEnergy.InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)) —
 

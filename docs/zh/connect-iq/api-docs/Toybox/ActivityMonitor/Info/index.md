@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityMonitor.Info"
+title: "类：Toybox.ActivityMonitor.Info"
 ---
 # 类：Toybox.ActivityMonitor.Info
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -24,7 +24,7 @@ ActivityMonitor.Info 包含用户当前活动状态的信息。
 
 除非另有说明，否则 Info 数据按设备提供的当天午夜开始计算。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -119,7 +119,7 @@ API 级别 1.0.0
 
 包含当天累计的中等强度、高强度和总分钟数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -261,7 +261,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
@@ -271,7 +271,7 @@ Returns:
 
 包含本周累计的中等强度、高强度和总分钟数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -413,7 +413,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
@@ -421,7 +421,7 @@ Returns:
 
 当前周活动分钟目标的值。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -563,7 +563,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -571,7 +571,7 @@ Returns:
 
 当前日期截至目前消耗的卡路里，单位为千卡（kCal）。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -725,7 +725,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -733,11 +733,11 @@ Returns:
 
 当天自午夜以来的距离，单位为厘米 (cm)。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -745,7 +745,7 @@ Returns:
 
 当天已爬升的楼层数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -873,7 +873,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -881,7 +881,7 @@ Returns:
 
 当前爬楼层数目标。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1009,7 +1009,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1017,7 +1017,7 @@ Returns:
 
 当天已下降的楼层数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1145,7 +1145,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1157,7 +1157,7 @@ Returns:
 
 确定设备是否处于睡眠模式。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1309,7 +1309,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -1319,7 +1319,7 @@ Returns:
 
 这只计算设备记录的已爬楼层指标所对应的垂直距离。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1447,7 +1447,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1457,7 +1457,7 @@ Returns:
 
 这只计算设备记录的已下楼层指标所对应的垂直距离。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1585,7 +1585,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1593,11 +1593,11 @@ Returns:
 
 [MOVE\_BAR\_LEVEL\_MIN](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MIN-const) 和 [MOVE\_BAR\_LEVEL\_MAX](/connect-iq/api-docs/Toybox/ActivityMonitor/#MOVE_BAR_LEVEL_MAX-const) 之间移动条的当前级别。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1605,7 +1605,7 @@ Returns:
 
 当日的轮椅推行距离（厘米）。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -1620,7 +1620,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1628,7 +1628,7 @@ Returns:
 
 当日的轮椅推行目标次数。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -1643,7 +1643,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1651,7 +1651,7 @@ Returns:
 
 当日的轮椅推行次数。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -1666,7 +1666,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1674,7 +1674,7 @@ Returns:
 
 用户当前的呼吸频率，单位为每分钟呼吸次数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -1792,7 +1792,7 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1800,11 +1800,11 @@ Returns:
 
 当天的步数目标。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1812,11 +1812,11 @@ Returns:
 
 当天午夜以来的步数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1826,7 +1826,7 @@ Returns:
 
 使用最近 30 秒压力等级读数的滚动平均值计算出的压力分数。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
@@ -1907,7 +1907,7 @@ API 级别 5.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -1927,7 +1927,7 @@ Returns:
 
 从上次活动恢复所需的时间，以小时为单位。值可能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -2038,6 +2038,6 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.ConnectionListener"
+title: "类：Toybox.Communications.ConnectionListener"
 ---
 # 类：Toybox.Communications.ConnectionListener
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 为通信操作提供回调函数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -206,7 +206,7 @@ API 级别 1.0.0
 
 通信操作完成时的回调。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -214,6 +214,6 @@ API 级别 1.0.0
 
 通信操作发生错误时的回调。
 
-Since:
+起始版本：
 
 API 级别 1.0.0

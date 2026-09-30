@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Timer"
+title: "模块：Toybox.Timer"
 ---
 # 模块：Toybox.Timer
 
@@ -9,7 +9,7 @@ Timer 模块允许访问 Timer 对象。
 
 此 Timer 可用于在未来某个时间点运行代码，或按固定间隔运行代码。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 

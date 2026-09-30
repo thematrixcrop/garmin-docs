@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.WorkoutStepInfo"
+title: "类：Toybox.Activity.WorkoutStepInfo"
 ---
 # 类：Toybox.Activity.WorkoutStepInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ WorkoutStepInfo 类包含当前 workout 的信息。
 
 可以通过 [getCurrentWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getCurrentWorkoutStep-instance_function) 或 [getNextWorkoutStep()](/connect-iq/api-docs/Toybox/Activity/#getNextWorkoutStep-instance_function) 方法检索此信息。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -188,11 +188,11 @@ API 级别 3.2.0
 
 步骤的强度
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutIntensity](/connect-iq/api-docs/Toybox/Activity/#WorkoutIntensity-module) —
 
@@ -203,11 +203,11 @@ Returns:
 
 当前步骤的名称
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -215,11 +215,11 @@ Returns:
 
 当前步骤的备注
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -227,11 +227,11 @@ Returns:
 
 训练步骤的运动项目
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
@@ -242,11 +242,11 @@ Returns:
 
 有关步的持续时间和目标信息
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/), [Activity.WorkoutIntervalStep](/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep/)
 
@@ -254,11 +254,11 @@ Returns:
 
 训练步骤的子运动项目。目前仅适用于呼吸和游泳训练
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.SubSport](/connect-iq/api-docs/Toybox/Activity/#SubSport-module) —
 

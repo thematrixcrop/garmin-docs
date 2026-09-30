@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Authentication"
+title: "模块：Toybox.Authentication"
 ---
 # 模块：Toybox.Authentication
 
@@ -9,7 +9,7 @@ Authentication 模块提供身份验证工具。
 
 借助 Authentication 模块，Connect IQ 应用可以发起通过 Connect IQ 移动应用重定向的 OAuth 请求。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -21,7 +21,7 @@ API 级别 3.3.0
 
 ### OAuthResultType
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -38,7 +38,7 @@ OAuth 令牌在最后一步中的返回方式。
 
 ### OAuthSigningMethod
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -72,7 +72,7 @@ OAuth 请求的签名方式
 
 手机上将触发通知；点击该通知后会显示一个展示 `requestUrl` 的 Web 视图。如果用户授予应用权限，则 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function) 注册的回调将使用 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 进行调用。
 
-Parameters:
+参数：
 
 - requestUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -95,7 +95,7 @@ Parameters:
     传递给回调方法的所需 OAuth 响应值。键映射到实际的 OAuth 响应键，值映射到 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 数据的键。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Authentication;
@@ -145,7 +145,7 @@ function onOAuthMessage(message) {
 // the OAuth service can now be used with a makeWebRequest() call
 ```
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -155,14 +155,14 @@ API 级别 3.3.0
 
 每接收到一条 OAuth 消息，都会调用一次回调。如果调用此函数时有消息正在等待应用处理，回调会立即针对每条等待中的消息调用一次。
 
-Parameters:
+参数：
 
 - method — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     对回调的引用，该回调必须接收类型为 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 的 `data` 参数。
 
 
-Example:
+示例：
 
 ```
 using Toybox.Authentication;
@@ -178,6 +178,6 @@ function onOAuthMessage(message) {
 Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 ```
 
-Since:
+起始版本：
 
 API 级别 3.3.0

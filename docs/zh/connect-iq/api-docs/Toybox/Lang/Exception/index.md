@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Exception"
+title: "类：Toybox.Lang.Exception"
 ---
 # 类：Toybox.Lang.Exception
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Exception 是表示抛出异常的类。可以通过扩展此类来创建自定义异常。
 
-Example:
+示例：
 
 创建并抛出新的 Exception 类
 
@@ -37,7 +37,7 @@ if (myVar == false) {
 }
 ```
 
-Example:
+示例：
 
 处理 try-catch 代码块中的 Exception
 
@@ -51,7 +51,7 @@ try {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -80,14 +80,14 @@ API 级别 1.0.0
 
 获取 Exception 的错误消息。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Exception 的错误消息；如果未提供消息，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -95,7 +95,7 @@ API 级别 1.2.0
 
 异常构造函数。
 
-Since:
+起始版本：
 
 API 级别 1.1.2
 
@@ -103,6 +103,6 @@ API 级别 1.1.2
 
 打印抛出异常的堆栈跟踪。
 
-Since:
+起始版本：
 
 API 级别 1.1.2

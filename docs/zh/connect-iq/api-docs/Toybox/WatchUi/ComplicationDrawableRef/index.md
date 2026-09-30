@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ComplicationDrawableRef"
+title: "类：Toybox.WatchUi.ComplicationDrawableRef"
 ---
 # 类：Toybox.WatchUi.ComplicationDrawableRef
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 复杂功能可绘制对象引用，用于定义复杂功能在动画或高亮显示时所使用的可绘制对象及其边界。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -81,7 +81,7 @@ API 级别 5.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -96,11 +96,11 @@ Parameters:
         可绘制对象的边界框，用于突出显示可绘制对象的轮廓，并为动画渲染可绘制对象分配缓冲区。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 

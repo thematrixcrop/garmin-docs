@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Test.Logger"
+title: "类：Toybox.Test.Logger"
 ---
 # 类：Toybox.Test.Logger
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Logger 类为测试提供输出功能。
 
 无需实例化 Logger 类。此操作会在后台自动完成。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -47,14 +47,14 @@ API 级别 2.1.0
 
 String 以 DEBUG 和时间戳作为前缀。
 
-Parameters:
+参数：
 
 - str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     输出到控制台的字符串
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -67,7 +67,7 @@ function aDebugTest(logger) {
 DEBUG (9:23): This is a debug message.
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -77,14 +77,14 @@ API 级别 2.1.0
 
 String 以 ERROR 和时间戳作为前缀。
 
-Parameters:
+参数：
 
 - str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     输出到控制台的字符串
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -97,7 +97,7 @@ function anErrorTest(logger) {
 ERROR (9:24): This is an error message.
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -107,14 +107,14 @@ API 级别 2.1.0
 
 String 以 WARNING 和时间戳作为前缀。
 
-Parameters:
+参数：
 
 - str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     输出到控制台的字符串
 
 
-Example:
+示例：
 
 ```
 using Toybox.Test;
@@ -127,6 +127,6 @@ function aWarningTest(logger) {
 WARNING (9:23): This is a warning message.
 ```
 
-Since:
+起始版本：
 
 API 级别 2.1.0

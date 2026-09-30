@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ProgressBar"
+title: "类：Toybox.WatchUi.ProgressBar"
 ---
 # 类：Toybox.WatchUi.ProgressBar
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -24,7 +24,7 @@ ProgressBar 是一种特殊的 View，用于向用户显示进度指示器。它
 
 进度条的外观和交互方式因设备而异。
 
-Example:
+示例：
 
 创建简单的忙碌进度指示器
 
@@ -63,7 +63,7 @@ class MyBehaviorDelegate extends Ui.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -277,7 +277,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -293,7 +293,7 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -301,14 +301,14 @@ API 级别 1.0.0
 
 设置要在 ProgressBar 上显示的字符串。
 
-Parameters:
+参数：
 
 - displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要在 ProgressBar 上显示的字符串。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -316,7 +316,7 @@ API 级别 1.0.0
 
 设置 ProgressBar 的值。
 
-Parameters:
+参数：
 
 - progressValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
@@ -328,6 +328,6 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

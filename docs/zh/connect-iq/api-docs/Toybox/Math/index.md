@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Math"
+title: "模块：Toybox.Math"
 ---
 # 模块：Toybox.Math
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Math"
 
 Math 模块提供 Apps 可使用的各种数学方法。
 
-Example:
+示例：
 
 打印圆的周长。
 
@@ -20,7 +20,7 @@ var circumference = (2 * Math.PI * r);
 System.println(circumference);
 ```
 
-Example:
+示例：
 
 通过直接调用 Math.pow 打印正方形的面积。
 
@@ -31,7 +31,7 @@ using Toybox.Math;
 System.println(Math.pow(10, 2));
 ```
 
-Example:
+示例：
 
 使用勾股定理和多个 Math API 方法求解 c。
 
@@ -45,7 +45,7 @@ var c = Math.sqrt((Math.pow(a, 2) + Math.pow(b, 2)));
 System.println(c);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -174,14 +174,14 @@ PI 的 32 位浮点表示
 
 获取角度的反余弦值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     余弦值
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -193,7 +193,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -201,14 +201,14 @@ API 级别 1.0.0
 
 获取角度的反正弦值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     正弦值
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -220,7 +220,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -228,14 +228,14 @@ API 级别 1.0.0
 
 获取角度的反正切值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     正切值
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -247,7 +247,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -255,7 +255,7 @@ API 级别 1.0.0
 
 获取 y/x 的弧度反正切值。
 
-Parameters:
+参数：
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
@@ -266,7 +266,7 @@ Parameters:
     x 坐标的比例
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -278,7 +278,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -286,21 +286,21 @@ API 级别 1.3.0
 
 计算一个值的上限整数。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     数值
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     大于或等于 x 的最小整数。返回类型与输入参数类型匹配
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -308,14 +308,14 @@ API 级别 1.3.0
 
 获取角度的余弦值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     角度（弧度）
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -327,7 +327,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -335,21 +335,21 @@ API 级别 1.0.0
 
 计算一个值的下限整数。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     数值
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     小于或等于 x 的最大整数。返回类型与输入参数类型匹配
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -357,14 +357,14 @@ API 级别 1.3.0
 
 获取值的自然对数
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     要计算其对数的值。
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -376,7 +376,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -384,7 +384,7 @@ API 级别 2.3.0
 
 使用指定底数获取值的对数
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
@@ -395,7 +395,7 @@ Parameters:
     基数值。
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -407,7 +407,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -415,25 +415,25 @@ API 级别 1.0.0
 
 获取数据数组的算术平均值。
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     包含 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Long](/connect-iq/api-docs/Toybox/Lang/Long/) 或 [Double](/connect-iq/api-docs/Toybox/Lang/Double/) 值的数组
 
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     数据中各值的算术平均值
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -444,25 +444,25 @@ Throws:
 
 获取数据数组中出现次数最多的值。
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     包含 [Objects](/connect-iq/api-docs/Toybox/Lang/Object/) 的数组
 
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     数据中出现频率最高的值。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -473,7 +473,7 @@ Throws:
 
 计算 x 的 y 次幂。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
@@ -484,7 +484,7 @@ Parameters:
     Exponent
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -496,7 +496,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -504,14 +504,14 @@ API 级别 1.0.0
 
 返回一个伪随机 Number。使用 [srand()](/connect-iq/api-docs/Toybox/Math/#srand-instance_function) 函数为随机数生成器设定种子。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     非负随机数
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -519,21 +519,21 @@ API 级别 1.0.0
 
 对值进行四舍五入。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     数值
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     最接近 x 的整数。大于或等于 .5 的小数值将向上舍入。返回类型与输入参数类型一致
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -541,14 +541,14 @@ API 级别 1.3.0
 
 获取角度的正弦值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     角度（弧度）
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -560,7 +560,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -568,14 +568,14 @@ API 级别 1.0.0
 
 计算一个值的平方根。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     要求平方根的值
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -587,7 +587,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -599,14 +599,14 @@ API 级别 1.0.0
 
 srand() 不返回任何值。
 
-Parameters:
+参数：
 
 - seed — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     用于为 rand() 播种的值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -614,7 +614,7 @@ API 级别 1.0.0
 
 获取总体数据样本的标准差。
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -625,18 +625,18 @@ Parameters:
     平均值（如果已知）。否则，传递 `null`，系统将计算数据的平均值。
 
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     样本的标准差
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -647,21 +647,21 @@ Throws:
 
 获取角度的正切值。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     角度（弧度）
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     x 的正切值，x 以弧度表示。如果输入为 Toybox::Lang::Number 或 Toybox::Lang::Float，则为 Toybox::Lang::Float；如果输入为 Toybox::Lang::Long 或 Toybox::Lang::Double，则为 Toybox::Lang::Double
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -669,14 +669,14 @@ API 级别 1.0.0
 
 将角度从弧度转换为度。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     角度（弧度）
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -688,7 +688,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -696,14 +696,14 @@ API 级别 1.3.0
 
 将角度从度转换为弧度。
 
-Parameters:
+参数：
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
     以度为单位的角度
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
@@ -715,7 +715,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -725,7 +725,7 @@ API 级别 1.3.0
 
 返回经过贝塞尔校正的样本方差。
 
-Parameters:
+参数：
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -736,18 +736,18 @@ Parameters:
     平均值（如果已知）。否则，传递 `null`，系统将计算数据的平均值。
 
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     样本的方差
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 

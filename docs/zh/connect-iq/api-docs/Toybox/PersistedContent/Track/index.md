@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.PersistedContent.Track"
+title: "类：Toybox.PersistedContent.Track"
 ---
 # 类：Toybox.PersistedContent.Track
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [PersistedContent.getTracks()](/connect-iq/api-docs/Toybox/PersistedContent/#getTracks-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -63,14 +63,14 @@ API 级别 2.2.0
 
 获取唯一的可序列化 id
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     唯一的可序列化 id
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -78,14 +78,14 @@ API 级别 2.2.0
 
 获取内容的可读名称
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     可读名称
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -93,11 +93,11 @@ API 级别 2.2.0
 
 移除一条轨迹
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -108,13 +108,13 @@ Throws:
 
 获取内容的系统 Intent
 
-Returns:
+返回：
 
 - [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) —
 
     内容的 System.Intent
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

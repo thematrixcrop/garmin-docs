@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.StringUtil"
+title: "模块：Toybox.StringUtil"
 ---
 # 模块：Toybox.StringUtil
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.StringUtil"
 
 StringUtil 模块包含 String 工具函数
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -19,7 +19,7 @@ API 级别 1.3.0
 
 ### CharacterEncoding
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -32,7 +32,7 @@ API 级别 3.0.0
 
 ### Representation
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -83,21 +83,21 @@ API 级别 3.0.0
 
 给定一个由 [Char](/connect-iq/api-docs/Toybox/Lang/Char/) 对象组成的 Array，返回对应的 String
 
-Parameters:
+参数：
 
 - charArray — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     包含 Char 对象的 Array
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     输入 Array 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -105,7 +105,7 @@ API 级别 1.3.0
 
 将 String 或 ByteArray 表示转换为 String 或 ByteArray 表示，其底层字节格式与提供的输入选项相对应。
 
-Parameters:
+参数：
 
 - input — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
@@ -125,18 +125,18 @@ Parameters:
         一个 [CHAR\_ENCODING\_\*](/connect-iq/api-docs/Toybox/StringUtil/) 值，用于指示在 `fromRepresentation` 或 `toRepresentation` 设置为 REPRESENTATION\_STRING\_PLAIN\_TEXT 时，生成十六进制字符串或 ByteArray 所使用的 String 编码。如果未指定，则默认为 CHAR\_ENCODING\_UTF8。
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     根据提供的选项转换后的 String 或 ByteArray
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -147,21 +147,21 @@ Throws:
 
 将 String 编码为 base64
 
-Parameters:
+参数：
 
 - string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要编码的字符串
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     一个经过 base64 编码的 String
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -169,25 +169,25 @@ API 级别 1.3.0
 
 给定一个 UTF-8 字节组成的 Array，返回对应的 String
 
-Parameters:
+参数：
 
 - utf8Array — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     UTF-8 字节数组
 
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     输入 Array 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 

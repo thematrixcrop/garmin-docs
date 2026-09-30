@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.AffineTransform"
+title: "类：Toybox.Graphics.AffineTransform"
 ---
 # 类：Toybox.Graphics.AffineTransform
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -26,7 +26,7 @@ Toybox.Lang.Object
    |   0    0    1 |
 ```
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -115,11 +115,11 @@ API 级别 4.2.0
    |   0    0    1 |   |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - xform — ([Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -127,7 +127,7 @@ API 级别 4.2.0
 
 获取变换行列式
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -143,7 +143,7 @@ API 级别 4.2.0
    |   0    0    1 |
 ```
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -157,7 +157,7 @@ API 级别 4.2.0
    |   0    0    1 |
 ```
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -165,11 +165,11 @@ API 级别 4.2.0
 
 反转自身
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - 如果 self 无法求逆，则为 ValueOutOfBoundsException。
 
@@ -186,11 +186,11 @@ Throws:
    |   0    0    1 |   |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - xform — ([Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -214,11 +214,11 @@ API 级别 4.2.0
      self.concatenate(xform);
 ```
 
-Parameters:
+参数：
 
 - theta — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -242,12 +242,12 @@ API 级别 4.2.0
      self.concatenate(xform);
 ```
 
-Parameters:
+参数：
 
 - sx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - sy — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -268,11 +268,11 @@ m00, m01, m02, m10, m11, m12
     ```
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
-Throws:
+抛出：
 
 - 如果参数不是数组，则为 UnexpectedTypeException
 
@@ -289,11 +289,11 @@ Throws:
    |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - theta — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -307,12 +307,12 @@ API 级别 4.2.0
    |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - sx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - sy — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -326,12 +326,12 @@ API 级别 4.2.0
    |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - shx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - shy — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -345,12 +345,12 @@ API 级别 4.2.0
    |   0    0    1 |
 ```
 
-Parameters:
+参数：
 
 - tx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - ty — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -374,12 +374,12 @@ API 级别 4.2.0
      self.concatenate(xform);
 ```
 
-Parameters:
+参数：
 
 - shx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - shy — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -395,15 +395,15 @@ API 级别 4.2.0
    |   0    0    1 |   |   1 |
 ```
 
-Parameters:
+参数：
 
 - pt — ([Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type))
 
-Returns:
+返回：
 
 - [Graphics.Point2D](/connect-iq/api-docs/Toybox/Graphics/#Point2D-named_type)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -413,15 +413,15 @@ API 级别 4.2.0
 
 变换坐标数组
 
-Parameters:
+参数：
 
 - pts — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/))
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -445,11 +445,11 @@ API 级别 4.2.0
      self.concatenate(xform);
 ```
 
-Parameters:
+参数：
 
 - tx — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 - ty — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))
 
-Since:
+起始版本：
 
 API 级别 4.2.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.FontReference"
+title: "类：Toybox.Graphics.FontReference"
 ---
 # 类：Toybox.Graphics.FontReference
 
-Inherits:
+继承：
 
 Toybox.Graphics.ResourceReference
 
@@ -20,6 +20,6 @@ Toybox.Graphics.ResourceReference
 
 引用从系统内存池而非应用本地内存分配的字体资源的 Object。
 
-Since:
+起始版本：
 
 API 级别 4.0.0

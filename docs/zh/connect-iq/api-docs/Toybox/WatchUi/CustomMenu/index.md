@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.CustomMenu"
+title: "类：Toybox.WatchUi.CustomMenu"
 ---
 # 类：Toybox.WatchUi.CustomMenu
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Menu2
 
@@ -39,7 +39,7 @@ CustomMenu 是一种专用的 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/
 - [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)
 
 
-Example:
+示例：
 
 以编程方式构建 CustomMenu
 
@@ -73,7 +73,7 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -300,18 +300,18 @@ API 级别 3.0.0
 
 将 CustomMenuItem 添加到 CustomMenu。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.CustomMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/)) —
 
     要添加到 CustomMenu 的 CustomMenuItem。不能将其他 MenuItem 变体添加到 Custom Menu。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -328,14 +328,14 @@ Throws:
 
 调用此函数以渲染菜单页脚区域。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     菜单的绘制上下文
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -345,14 +345,14 @@ API 级别 3.0.0
 
 菜单的项目和标题渲染完成后会调用此函数。它可用于为菜单绘制叠加内容。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     菜单的绘制上下文
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -362,14 +362,14 @@ API 级别 3.0.0
 
 调用此函数以渲染菜单标题区域。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     菜单的绘制上下文
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -393,7 +393,7 @@ Constructor
 
 `:dividerType` 选项仅在支持分隔线的 ConnectIQ 5.0.1 设备上使用。
 
-Parameters:
+参数：
 
 - itemHeight — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -453,11 +453,11 @@ Parameters:
 - [Toybox.WatchUi.CustomMenu.setDividerType](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/#setDividerType-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -476,18 +476,18 @@ Throws:
 
 设置背景颜色。
 
-Parameters:
+参数：
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     用于填充菜单背景的颜色。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -525,11 +525,11 @@ Throws:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
-Throws:
+抛出：
 
 - (WatchUi.InvalidValueException) —
 
@@ -544,18 +544,18 @@ Throws:
 
 设置页脚 Drawable。
 
-Parameters:
+参数：
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     用于渲染页脚区域的 drawable，或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -566,18 +566,18 @@ Throws:
 
 设置前景 Drawable。
 
-Parameters:
+参数：
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     用于渲染在菜单项上方的 Drawable，或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -588,18 +588,18 @@ Throws:
 
 设置标题 Drawable。
 
-Parameters:
+参数：
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
     用于渲染标题区域的 drawable，或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

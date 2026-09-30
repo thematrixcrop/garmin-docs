@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Activity"
+title: "模块：Toybox.Activity"
 ---
 # 模块：Toybox.Activity
 
@@ -16,7 +16,7 @@ Activity Info 会由 Data Fields 中的 [compute()](/connect-iq/api-docs/Toybox/
 - TIMER\_STATE：表示活动记录的 [timerState()](/connect-iq/api-docs/Toybox/Activity/Info/#timerState-var)，例如已停止、已开始、已暂停等。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 ### SwimStrokeType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -99,7 +99,7 @@ API 级别 1.2.2
 
 ### TimerState
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -143,7 +143,7 @@ API 级别 2.1.0
 
 ### Sport
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -526,7 +526,7 @@ API 级别 3.2.0
 
 ### SubSport
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1029,7 +1029,7 @@ API 级别 3.2.0
 
 ### WorkoutIntensity
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1072,7 +1072,7 @@ API 级别 3.2.0
 
 ### WorkoutStepDurationType
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1235,7 +1235,7 @@ API 级别 3.2.0
 
 ### WorkoutStepTargetType
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1366,14 +1366,14 @@ API 级别 3.2.0
 
 获取当前活动信息。
 
-Returns:
+返回：
 
 - [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/) —
 
     当前活动信息
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1512,18 +1512,18 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) —
 
     如果锻炼处于活动状态，则返回相关值；否则返回 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -1665,18 +1665,18 @@ Throws:
 
 :::
 
-Returns:
+返回：
 
 - [Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/) —
 
     如果锻炼处于活动状态且存在下一步，则返回下一步；否则返回 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -1687,13 +1687,13 @@ Throws:
 
 获取当前配置文件的信息。
 
-Returns:
+返回：
 
 - [Activity.ProfileInfo](/connect-iq/api-docs/Toybox/Activity/ProfileInfo/) —
 
     当前配置
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0

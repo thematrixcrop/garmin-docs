@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Lang"
+title: "模块：Toybox.Lang"
 ---
 # 模块：Toybox.Lang
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Lang"
 
 Lang 模块包含 Monkey C 语言的基本类型，并提供用于格式化字符串的方法。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -19,7 +19,7 @@ API 级别 1.0.0
 
 ### NumberFormat
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -90,7 +90,7 @@ API 级别 3.1.0
 
 ### Endian
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -141,7 +141,7 @@ Comparable 定义对象与其他对象之间的排序关系。
 
 Comparator 可用于指定一个对象与其他对象之间的顺序。
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
@@ -153,25 +153,25 @@ Comparator 定义对象之间的排序关系。
 
 Comparator 可用于指定对象之间的顺序。
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
 ### **Decimal** as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **Integer** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **Numeric** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -181,7 +181,7 @@ API 级别 1.0.0
 
 将给定参数替换到给定格式中相应位置，以创建格式化 String。
 
-Parameters:
+参数：
 
 - format — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -192,7 +192,7 @@ Parameters:
     要替换到格式化 String 中的内容 Array
 
 
-Example:
+示例：
 
 ```
 // Set the 'myString' variable to "Your next meeting is at 2:30 on Sep 4 in room 6820."
@@ -202,13 +202,13 @@ var myParams = [2, 30, "Sep", 4, "6820"];
 var myString = Lang.format(myFormat, myParams);
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     包含替换后内容的新 String
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

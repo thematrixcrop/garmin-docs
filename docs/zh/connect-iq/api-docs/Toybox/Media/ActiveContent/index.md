@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ActiveContent"
+title: "类：Toybox.Media.ActiveContent"
 ---
 # 类：Toybox.Media.ActiveContent
 
-Inherits:
+继承：
 
 Toybox.Media.Content
 
@@ -20,7 +20,7 @@ Toybox.Media.Content
 
 将 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 与关联的 [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) 信息配对，并允许设置播放起始位置。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -41,11 +41,11 @@ API 级别 3.0.0
 
 获取媒体内容的播放起始位置
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -53,7 +53,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
@@ -68,6 +68,6 @@ Parameters:
     媒体内容的播放起始位置，以秒为单位
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

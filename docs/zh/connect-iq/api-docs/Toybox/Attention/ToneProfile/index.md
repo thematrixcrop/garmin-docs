@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Attention.ToneProfile"
+title: "类：Toybox.Attention.ToneProfile"
 ---
 # 类：Toybox.Attention.ToneProfile
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 音调具有两个特征：频率和持续时间。这些特征用于定义单个 ToneProfile 对象，然后可将其与其他 ToneProfile 对象集合放入数组，并传递给 playTone() 方法。playTone() 方法将按顺序播放数组中的每个 ToneProfile 对象。
 
-Example:
+示例：
 
 构建一组 ToneProfile 对象
 
@@ -38,7 +38,7 @@ if (Attention has :ToneProfile) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -201,7 +201,7 @@ API 级别 3.1.0
 
 音调持续时间，单位为毫秒 (ms)。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -209,7 +209,7 @@ API 级别 3.1.0
 
 音调频率，单位为赫兹 (hz)。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -219,7 +219,7 @@ API 级别 3.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - aFrequency — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -230,6 +230,6 @@ Parameters:
     音调持续时间，单位为毫秒 (ms)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

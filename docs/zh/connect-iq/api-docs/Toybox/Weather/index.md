@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Weather"
+title: "模块：Toybox.Weather"
 ---
 # 模块：Toybox.Weather
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Weather"
 
 Weather 模块提供访问当前天气相关信息的功能。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -152,7 +152,7 @@ API 级别 3.2.0
 
 ### Condition
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -673,14 +673,14 @@ Unknown
 
 获取最近缓存的天气状况
 
-Returns:
+返回：
 
 - [Weather.CurrentConditions](/connect-iq/api-docs/Toybox/Weather/CurrentConditions/) —
 
     如果没有可用数据，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -688,14 +688,14 @@ API 级别 3.2.0
 
 获取每日天气预报
 
-Returns:
+返回：
 
 - [Weather.DailyForecast](/connect-iq/api-docs/Toybox/Weather/DailyForecast/) —
 
     每日预报数组；如果没有可用数据，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -703,14 +703,14 @@ API 级别 3.2.0
 
 获取每小时天气预报
 
-Returns:
+返回：
 
 - [Weather.HourlyForecast](/connect-iq/api-docs/Toybox/Weather/HourlyForecast/) —
 
     每小时预报数组；如果没有可用数据，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -718,7 +718,7 @@ API 级别 3.2.0
 
 获取给定位置和日期的日出时间
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -860,14 +860,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     日出时间，表示为 moment；如果没有可用的日出时间，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -875,7 +875,7 @@ API 级别 3.3.0
 
 获取给定位置和日期的日出时间
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -1017,13 +1017,13 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
     日落时间，表示为 moment；如果没有可用的日落时间，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0

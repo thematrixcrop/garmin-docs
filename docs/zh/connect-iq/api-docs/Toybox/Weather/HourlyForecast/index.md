@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Weather.HourlyForecast"
+title: "类：Toybox.Weather.HourlyForecast"
 ---
 # 类：Toybox.Weather.HourlyForecast
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示指定小时的天气预报
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -71,11 +71,11 @@ API 级别 3.2.0
 
 云量，范围为 \[0-100%\]
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -86,11 +86,11 @@ Returns:
 
 天气状况。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) —
 
@@ -101,11 +101,11 @@ Returns:
 
 露点温度，单位为摄氏度。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -116,11 +116,11 @@ Returns:
 
 预报在 UTC 时间中的有效时间。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -128,11 +128,11 @@ Returns:
 
 降水概率，范围为 \[0-100%\]
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -143,11 +143,11 @@ Returns:
 
 相对湿度，范围为 \[0-100%\]
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -158,11 +158,11 @@ Returns:
 
 当前温度，单位为摄氏度。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
 
@@ -173,11 +173,11 @@ Returns:
 
 紫外线指数，范围为 \[0-10\]
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -188,11 +188,11 @@ Returns:
 
 以度为单位的风向。北 = 0，东 = 90，南 = 180，西 = 270
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -203,11 +203,11 @@ Returns:
 
 当前风速，单位为米每秒。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

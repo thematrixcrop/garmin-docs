@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.SimpleDataField"
+title: "类：Toybox.WatchUi.SimpleDataField"
 ---
 # 类：Toybox.WatchUi.SimpleDataField
 
-Inherits:
+继承：
 
 Toybox.WatchUi.DataField
 
@@ -44,7 +44,7 @@ SimpleDataField 需要两个项目：
 
 系统在显示 Data Field 时会调用从 View 继承的 onUpdate() 方法。由于 compute() 和 onUpdate() 是异步的，因此无法保证在 onUpdate() 之前调用 compute()。因此，不应在 compute() 中初始化变量。
 
-Example:
+示例：
 
 显示当前心率的 SimpleDataField
 
@@ -66,7 +66,7 @@ class MySimpleHRField extends WatchUi.SimpleDataField {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -285,7 +285,7 @@ API 级别 1.0.0
 
 字段标签 String。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -297,14 +297,14 @@ API 级别 1.0.0
 
 此方法每秒调用一次，并自动向 SimpleDataField 对象提供 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)，以供显示或进一步计算。实现 SimpleDataField 时必须重写 `compute()`。此方法必须返回要在字段中显示的值。
 
-Parameters:
+参数：
 
 - info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
 
     更新后的 Activity.Info 对象。
 
 
-Example:
+示例：
 
 ```
 function compute(info) {
@@ -312,7 +312,7 @@ function compute(info) {
 }
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)、[Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)、[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)、null —
 
@@ -324,7 +324,7 @@ Returns:
 - [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -332,6 +332,6 @@ API 级别 1.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.0.0

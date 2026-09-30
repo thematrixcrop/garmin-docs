@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Notifications.NotificationMessage"
+title: "类：Toybox.Notifications.NotificationMessage"
 ---
 # 类：Toybox.Notifications.NotificationMessage
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 NotificationMessage 将由在 [registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 中注册的回调接收。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -52,7 +52,7 @@ API 级别 5.1.0
 
 从提供给 [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 的 `:actions` 选项中选定的操作值。如果选定操作的值为 `null`，或通知已被忽略，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -62,7 +62,7 @@ API 级别 5.1.0
 
 提供给 [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 的 `:data` 选项的值。如果未提供值或值为 `null`，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -70,7 +70,7 @@ API 级别 5.1.0
 
 通知消息类型
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -80,6 +80,6 @@ API 级别 5.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 5.1.0

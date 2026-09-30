@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Picker"
+title: "类：Toybox.WatchUi.Picker"
 ---
 # 类：Toybox.WatchUi.Picker
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -47,7 +47,7 @@ Picker 由一个或多个可选择对象、标题、下一个和上一个箭头�
 
 Picker 的外观和交互方式因设备而异，但每台设备都具有相同的总体布局。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -259,7 +259,7 @@ API 级别 1.2.0
 
 ### **Options** as { :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :pattern as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)\>, :defaults as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>, :nextArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :previousArrow as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :confirm as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) }
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -269,7 +269,7 @@ API 级别 1.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -281,7 +281,7 @@ Parameters:
 - [Picker.setOptions()](/connect-iq/api-docs/Toybox/WatchUi/Picker/#setOptions-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -289,7 +289,7 @@ API 级别 1.2.0
 
 设置 Picker 的选项。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -327,6 +327,6 @@ Parameters:
 - [Toybox.WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

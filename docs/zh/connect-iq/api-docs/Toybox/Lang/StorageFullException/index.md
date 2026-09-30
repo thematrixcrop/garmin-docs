@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.StorageFullException"
+title: "类：Toybox.Lang.StorageFullException"
 ---
 # 类：Toybox.Lang.StorageFullException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示已达到存储限制
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -37,13 +37,13 @@ API 级别 2.4.0
 
 StorageFullException 构造函数。
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0

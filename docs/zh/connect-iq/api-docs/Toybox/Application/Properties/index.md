@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Application.Properties"
+title: "模块：Toybox.Application.Properties"
 ---
 # 模块：Toybox.Application.Properties
 
@@ -9,7 +9,7 @@ Properties 模块提供对应用程序属性的访问。
 
 Storage 提供对应用属性中定义的属性的访问。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -36,7 +36,7 @@ API 级别 2.4.0
 
 ### **ValueType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)\>
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -48,14 +48,14 @@ API 级别 2.4.0
 
 属性值必须在应用程序设置 XML 中定义。如果将应用程序设置中不存在的键传递给 getValue()，将抛出异常。
 
-Parameters:
+参数：
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要从应用程序属性中获取的值所对应的键
 
 
-Returns:
+返回：
 
 - [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type) —
 
@@ -67,11 +67,11 @@ Returns:
 - [setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -90,7 +90,7 @@ Throws:
 
 后台进程无法保存应用属性
 
-Parameters:
+参数：
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -101,11 +101,11 @@ Parameters:
     要放入 Application Properties 的值
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Throws:
+抛出：
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 

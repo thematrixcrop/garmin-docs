@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.BufferedBitmap"
+title: "类：Toybox.Graphics.BufferedBitmap"
 ---
 # 类：Toybox.Graphics.BufferedBitmap
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Core Topics - Resources](/connect-iq/core-topics/resources/)
 
 
-Example:
+示例：
 
 使用资源设置屏幕外缓冲区。
 
@@ -56,7 +56,7 @@ var dateBuffer;
     }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -94,14 +94,14 @@ API 级别 2.3.0
 
 获取用于在缓冲位图上绘制的 Dc。
 
-Returns:
+返回：
 
 - [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) —
 
     绘制上下文
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -109,14 +109,14 @@ API 级别 2.3.0
 
 获取位图的高度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图高度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -124,14 +124,14 @@ API 级别 4.0.0
 
 此表面使用系统调色板时为 `null`
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     此位图的当前调色板。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -139,14 +139,14 @@ API 级别 2.3.0
 
 获取位图的宽度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图宽度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -158,7 +158,7 @@ API 级别 4.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -189,11 +189,11 @@ Parameters:
         一个用于指定此缓冲位图对象所支持的 Alpha 混合级别的 [AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) 枚举
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -216,31 +216,31 @@ Throws:
 
 检查位图的内存是否仍已加载。用户可以调用此方法，检查自上次使用以来底层资源是否仍在内存中；如果为 `true`，则表示诸如 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 之类的资源已被缓存，可以直接使用而无需重新绘制。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果自上次使用以来对象的内存尚未被回收，则为 `true`。
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
 ### **setPalette(palette as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)\>)** as **Void**
 
-Parameters:
+参数：
 
 - palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     此位图的调色板。颜色数量必须与当前调色板匹配。图像中的每种颜色都会被新调色板中指定的颜色替换。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 

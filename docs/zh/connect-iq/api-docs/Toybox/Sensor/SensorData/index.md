@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.SensorData"
+title: "类：Toybox.Sensor.SensorData"
 ---
 # 类：Toybox.Sensor.SensorData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 封装可检索的所有高频传感器数据的类。
 
-Example:
+示例：
 
 设置加速度数据回调
 
@@ -40,7 +40,7 @@ function accel_callback(sensorData) {
 // This method can now be used with registerSensorDataListener()
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -233,7 +233,7 @@ API 级别 2.3.0
 
 如果未请求加速度计数据，则可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -405,7 +405,7 @@ API 级别 2.3.0
 
 如果未请求陀螺仪数据，则可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -540,7 +540,7 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Toybox::Sensor::GyroscopeData](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/)
 
@@ -551,7 +551,7 @@ Returns:
 
 如果心率间隔数据不可用，则可以为 `null`。
 
-Example:
+示例：
 
 ```
 using Toybox.Sensor;
@@ -565,7 +565,7 @@ function heartBeatIntervalsCallback(sensorData) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -724,7 +724,7 @@ API 级别 3.0.0
 
 如果未请求 MagnetometerData 数据，则可以为 `null`。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -859,6 +859,6 @@ API 级别 3.3.0
 
 :::
 
-Returns:
+返回：
 
 - [Toybox::Sensor::MagnetometerData](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/)

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Time.RealTimeClockNotValidException"
+title: "类：Toybox.Time.RealTimeClockNotValidException"
 ---
 # 类：Toybox.Time.RealTimeClockNotValidException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示实时时钟（RTC）值不安全，即未与 GPS 等受信任的来源同步。
 
-Since:
+起始版本：
 
 API 级别 3.0.11
 
@@ -32,6 +32,6 @@ API 级别 3.0.11
 
 ### **initialize(msg as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))**
 
-Since:
+起始版本：
 
 API 级别 3.0.11

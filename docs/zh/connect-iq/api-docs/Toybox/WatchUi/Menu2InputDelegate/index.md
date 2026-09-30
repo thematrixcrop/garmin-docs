@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Menu2InputDelegate"
+title: "类：Toybox.WatchUi.Menu2InputDelegate"
 ---
 # 类：Toybox.WatchUi.Menu2InputDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ Menu2InputDelegate 响应 Menu2 选择。
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -44,7 +44,7 @@ class MyMenu2InputDelegate extends WatchUi.Menu2InputDelegate {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -263,7 +263,7 @@ API 级别 3.0.0
 
 按下了 Menu2 返回键。如果未重写此方法，它将弹出活动视图。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -271,7 +271,7 @@ API 级别 3.0.0
 
 选择了 Menu2 完成项。此方法仅由 [CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) 触发。如果未重写此方法，它将弹出活动视图。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -285,7 +285,7 @@ API 级别 3.0.0
 
 在 ConnectIQ API 版本 5.1.0 之前，此函数仅在 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) 上调用。现在它用于所有 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类型。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -295,14 +295,14 @@ API 级别 3.0.0
 
 通常在菜单底部收到向下按钮（[KEY\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#KEY_DOWN-const)）或 [SWIPE\_UP](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_UP-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 输入时触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -312,14 +312,14 @@ API 级别 5.1.0
 
 通常在菜单顶部收到向上按钮（[KEY\_UP](/connect-iq/api-docs/Toybox/WatchUi/#KEY_UP-const)）或 [SWIPE\_DOWN](/connect-iq/api-docs/Toybox/WatchUi/#SWIPE_DOWN-const) [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 输入时触发。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -327,14 +327,14 @@ API 级别 5.1.0
 
 已选择一个 Menu2 MenuItem。
 
-Parameters:
+参数：
 
 - item — ([WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)) —
 
     选定的 MenuItem。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -348,7 +348,7 @@ API 级别 3.0.0
 
 在 ConnectIQ API 版本 5.1.0 之前，此函数仅在 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/) 上调用。现在它用于所有 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类型。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -358,20 +358,20 @@ Menu2 正在准备换行。
 
 当用户尝试在菜单末端继续导航时，基于按钮的产品会触发此方法。如果此方法返回 `false`，列表将不会循环到另一端。如果不重写此方法，它将返回 `true`，允许菜单循环。
 
-Parameters:
+参数：
 
 - key — ([WatchUi.Key](/connect-iq/api-docs/Toybox/WatchUi/#Key-module)) —
 
     触发菜单循环的 [WatchUi.KEY\_\*](/connect-iq/api-docs/Toybox/WatchUi/#KEY_POWER-const) 枚举中的键。
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果允许换行，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

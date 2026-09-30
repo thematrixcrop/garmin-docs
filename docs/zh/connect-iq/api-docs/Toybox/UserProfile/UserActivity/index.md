@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.UserProfile.UserActivity"
+title: "类：Toybox.UserProfile.UserActivity"
 ---
 # 类：Toybox.UserProfile.UserActivity
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储用户活动信息的类。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -47,11 +47,11 @@ API 级别 3.3.0
 
 活动覆盖的距离，单位为米
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -62,11 +62,11 @@ Returns:
 
 活动持续时间
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -77,11 +77,11 @@ Returns:
 
 活动的开始时间
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -92,11 +92,11 @@ Returns:
 
 活动的运动类型。
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
-Returns:
+返回：
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 

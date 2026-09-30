@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Graphics"
+title: "模块：Toybox.Graphics"
 ---
 # 模块：Toybox.Graphics
 
@@ -9,7 +9,7 @@ Graphics 模块提供一组工具，使开发者能够使用基本绘图功能�
 
 此项支持绘制形状和线条、填充形状，以及根据特定设备上下文对图形元素使用动态布局。设备上下文（Dc）对于希望为具有不同屏幕形状、尺寸和调色板的多个设备平台创建内容的开发者很有用。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -38,7 +38,7 @@ API 级别 1.0.0
 
 ### FontDefinition
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -307,7 +307,7 @@ Auxiliary Font 9
 
 ### ColorValue
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -450,7 +450,7 @@ Transparent
 
 ### TextJustification
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -506,7 +506,7 @@ API 级别 1.0.0
    a is the alpha component
 ```
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -578,7 +578,7 @@ S + D
 
 表示缓冲位图 alpha 混合状态的常量
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -606,7 +606,7 @@ API 级别 4.0.0
 
 径向文本的方向
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
@@ -636,7 +636,7 @@ API 级别 4.2.1
 
 指定要采样的像素数量
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
@@ -662,7 +662,7 @@ API 级别 4.2.1
 
 ### ArcDirection
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -732,19 +732,19 @@ API 级别 1.2.0
 
 ### **BitmapType** as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **ColorType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.ColorValue](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **FontType** as [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) or [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) or [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -752,13 +752,13 @@ API 级别 1.0.0
 
 长度为 2 的数组的类型别名
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **VectorFontOptions** as { :face as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, :size as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), :font as [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module) or [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/), :scale as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) }
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -772,7 +772,7 @@ API 级别 1.0.0
 
 如果绘制的像素不是完全不透明或完全透明，则使用 [ALPHA\_BLENDING\_PARTIAL](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) 创建的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的绘制/填充操作结果可能会因设备和 ConnectIQ 模拟器而不一致。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -803,16 +803,16 @@ Parameters:
         一个用于指定此缓冲位图对象所支持的 Alpha 混合级别的 [AlphaBlending](/connect-iq/api-docs/Toybox/Graphics/#AlphaBlending-module) 枚举。
 
 
-Returns:
+返回：
 
 - [Toybox::Graphics::BufferedBitmapReference](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference/) BufferedBitmap 对象的引用
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -831,7 +831,7 @@ Throws:
 
 使用传入的各个通道值创建颜色
 
-Parameters:
+参数：
 
 - alpha — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -850,12 +850,12 @@ Parameters:
     表示蓝色通道的数值，范围为 0-255
 
 
-Returns:
+返回：
 
 - color \[Toybox::Lang::Number\] 32-bit value representing the created color that can be used with Toybox.Graphics functions.
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -867,7 +867,7 @@ API 级别 4.0.0
 
 [FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -890,12 +890,12 @@ Parameters:
     如果为 `true`，生成的字符串可能会使用提供的字体进行截断，以适应提供的区域
 
 
-Returns:
+返回：
 
 - 返回适合显示在给定区域中的 String。如果“truncate”参数为 `true` 且 String 无法容纳在指定区域内，则会截断 String。否则返回 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -909,21 +909,21 @@ API 级别 3.1.0
 
 [FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
     要使用的字体
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     字体的上升部
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -937,21 +937,21 @@ API 级别 1.2.0
 
 [FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
     要使用的字体
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     字体的下降部
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -963,21 +963,21 @@ API 级别 1.2.0
 
 [FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
     要使用的字体
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     字体高度
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -989,7 +989,7 @@ API 级别 1.2.0
 
 :font 和 :scale 选项仅在 CIQ 5.1.0 及更高版本中受支持。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Graphics.FontDefinition](/connect-iq/api-docs/Toybox/Graphics/#FontDefinition-module)) —
 
@@ -1072,7 +1072,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Graphics.VectorFont](/connect-iq/api-docs/Toybox/Graphics/VectorFont/) —
 
@@ -1084,11 +1084,11 @@ Returns:
 - [Reference Guides - Devices Reference](/connect-iq/device-reference/)
 
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

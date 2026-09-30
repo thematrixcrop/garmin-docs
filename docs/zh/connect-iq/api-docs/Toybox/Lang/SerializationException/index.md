@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.SerializationException"
+title: "类：Toybox.Lang.SerializationException"
 ---
 # 类：Toybox.Lang.SerializationException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示函数无法序列化对象
 
-Since:
+起始版本：
 
 API 级别 2.4.2
 
@@ -37,13 +37,13 @@ API 级别 2.4.2
 
 SerializationException 构造函数。
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 2.4.2

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.PlayerColors"
+title: "类：Toybox.Media.PlayerColors"
 ---
 # 类：Toybox.Media.PlayerColors
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 为媒体播放器提供特定的用户界面颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -59,7 +59,7 @@ API 级别 3.0.3
 
 媒体播放器的背景颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -67,7 +67,7 @@ API 级别 3.0.3
 
 媒体播放器的前景色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -75,7 +75,7 @@ API 级别 3.0.3
 
 当前所选图标后面的边框颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -83,7 +83,7 @@ API 级别 3.0.3
 
 当前选中图标后面的填充颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -91,7 +91,7 @@ API 级别 3.0.3
 
 总时间进度条的颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -99,7 +99,7 @@ API 级别 3.0.3
 
 已用时间进度条的颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -107,6 +107,6 @@ API 级别 3.0.3
 
 媒体播放器中文本的颜色
 
-Since:
+起始版本：
 
 API 级别 3.0.3

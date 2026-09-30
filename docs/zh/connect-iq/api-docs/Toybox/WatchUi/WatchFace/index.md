@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.WatchFace"
+title: "类：Toybox.WatchUi.WatchFace"
 ---
 # 类：Toybox.WatchUi.WatchFace
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -32,7 +32,7 @@ Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回
 
 表盘应用程序的初始视图 `must` 扩展 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -226,7 +226,7 @@ API 级别 1.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -241,7 +241,7 @@ API 级别 1.0.0
 - [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -256,7 +256,7 @@ API 级别 1.0.0
 - [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -274,7 +274,7 @@ API 级别 1.0.0
 
 请参阅 SDK 中随附的 Analog 示例，了解使用裁剪区域实现 onPartialUpdate() 的示例
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
@@ -369,6 +369,6 @@ Parameters:
 - [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0

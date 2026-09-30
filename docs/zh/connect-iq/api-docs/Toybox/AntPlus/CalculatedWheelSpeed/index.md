@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.CalculatedWheelSpeed"
+title: "类：Toybox.AntPlus.CalculatedWheelSpeed"
 ---
 # 类：Toybox.AntPlus.CalculatedWheelSpeed
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ CalculatedWheelSpeed 对象表示计算得出的平均速度。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -151,10 +151,10 @@ API 级别 2.2.0
 
 根据传感器数据计算的平均速度，单位为米每秒（m/s）。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

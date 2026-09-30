@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.System.ClockTime"
+title: "类：Toybox.System.ClockTime"
 ---
 # 类：Toybox.System.ClockTime
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ ClockTime 提供了一种便捷方式，可以以易于使用的格式获取当�
 - [Number.format()](/connect-iq/api-docs/Toybox/Lang/Number/#format-instance_function)
 
 
-Example:
+示例：
 
 获取时间并将其打印到控制台
 
@@ -41,7 +41,7 @@ System.println(
 );
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -74,11 +74,11 @@ API 级别 1.0.0
 
 夏令时偏移量。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -86,11 +86,11 @@ Returns:
 
 基于 24 小时制的小时数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -98,11 +98,11 @@ Returns:
 
 当前小时中的分钟。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -110,11 +110,11 @@ Returns:
 
 当前分钟内的秒数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -122,10 +122,10 @@ Returns:
 
 以秒为单位的 UTC 时间偏移量。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

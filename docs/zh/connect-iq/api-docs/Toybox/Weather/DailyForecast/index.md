@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Weather.DailyForecast"
+title: "类：Toybox.Weather.DailyForecast"
 ---
 # 类：Toybox.Weather.DailyForecast
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示指定日期的天气预报。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -51,11 +51,11 @@ API 级别 3.2.0
 
 天气状况。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) —
 
@@ -66,11 +66,11 @@ Returns:
 
 预报在 UTC 时间中的有效时间。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -78,11 +78,11 @@ Returns:
 
 最高温度，单位为摄氏度
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
 
@@ -93,11 +93,11 @@ Returns:
 
 摄氏低温
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type) —
 
@@ -108,11 +108,11 @@ Returns:
 
 降水概率，范围为 \[0-100%\]
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 

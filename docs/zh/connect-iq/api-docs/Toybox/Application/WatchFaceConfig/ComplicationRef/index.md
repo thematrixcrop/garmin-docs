@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.WatchFaceConfig.ComplicationRef"
+title: "类：Toybox.Application.WatchFaceConfig.ComplicationRef"
 ---
 # 类：Toybox.Application.WatchFaceConfig.ComplicationRef
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表盘的复杂功能配置。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -70,7 +70,7 @@ API 级别 5.1.0
 
 用户选择的 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)，如果不可用则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -78,6 +78,6 @@ API 级别 5.1.0
 
 此复杂功能字段的唯一 ID。
 
-Since:
+起始版本：
 
 API 级别 5.1.0

@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Time.Gregorian"
+title: "模块：Toybox.Time.Gregorian"
 ---
 # 模块：Toybox.Time.Gregorian
 
@@ -14,7 +14,7 @@ Gregorian 模块提供一个接口，用于根据公历获取 [Moment](/connect-
 - [The Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -66,7 +66,7 @@ API 级别 1.0.0
 
 ### DayOfWeek
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -137,7 +137,7 @@ Saturday
 
 ### Month
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -284,7 +284,7 @@ December
 
 选项值表示为 32 位有符号整数。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -311,7 +311,7 @@ Parameters:
         秒数（最大值为 2147483647）
 
 
-Example:
+示例：
 
 使用 Gregorian.duration() 创建一天的 Duration
 
@@ -320,7 +320,7 @@ using Toybox.Time.Gregorian;
 var oneDay = Gregorian.duration({:days => 1});
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -332,7 +332,7 @@ Returns:
 - [Duration.initialize()](/connect-iq/api-docs/Toybox/Time/Duration/#initialize-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -340,7 +340,7 @@ API 级别 1.0.0
 
 获取本地时间中 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 的 [Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/)。
 
-Parameters:
+参数：
 
 - moment — ([Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/), [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) —
 
@@ -351,7 +351,7 @@ Parameters:
     一个 Time.FORMAT\_\* 类型
 
 
-Example:
+示例：
 
 获取今天本地时间的信息（假定为 CST）
 
@@ -373,14 +373,14 @@ System.println(birthday.day);   // 16
 System.println(birthday.hour);  // 19
 ```
 
-Returns:
+返回：
 
 - [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
     以本地时间按照指定的格式类型格式化所提供 Moment 的信息。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -388,7 +388,7 @@ API 级别 1.0.0
 
 从 Moment 和 Location 创建 LocalMoment
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -530,14 +530,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) —
 
     给定位置的本地时间对应的 LocalMoment 对象；如果发生错误，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -551,7 +551,7 @@ API 级别 3.3.0
 
 与基于 UNIX 纪元的 [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function) 不同，使用 Gregorian.moment() 创建的 Moment 基于 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function)。结果通过获取 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function) 的结果并叠加所提供的选项来确定。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -582,7 +582,7 @@ Parameters:
         秒（0-59）
 
 
-Example:
+示例：
 
 创建一个表示当前月份第一天午夜的 Moment。
 
@@ -591,7 +591,7 @@ using Toybox.Time;
 var oneDay = Gregorian.moment({:day => 1});
 ```
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -605,7 +605,7 @@ Returns:
 - [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -617,14 +617,14 @@ API 级别 1.0.0
   Info
 ```
 
-Parameters:
+参数：
 
 - format — ([Time.DateFormat](/connect-iq/api-docs/Toybox/Time/#DateFormat-module)) —
 
     一个 Time.FORMAT\_\* 类型
 
 
-Example:
+示例：
 
 获取今天 UTC 时间的信息
 
@@ -646,7 +646,7 @@ System.println(birthday.day);   // 16
 System.println(birthday.hour);  // 0
 ```
 
-Returns:
+返回：
 
 - [Gregorian.Info](/connect-iq/api-docs/Toybox/Time/Gregorian/Info/) —
 
@@ -658,6 +658,6 @@ Returns:
 - [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0

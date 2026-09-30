@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.Content"
+title: "类：Toybox.Media.Content"
 ---
 # 类：Toybox.Media.Content
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 将 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 与关联的 [ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/) 信息配对。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -55,11 +55,11 @@ API 级别 3.0.0
 
 获取底层 ContentRef 对象
 
-Returns:
+返回：
 
 - [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -67,11 +67,11 @@ API 级别 3.0.0
 
 获取此对象的元数据
 
-Returns:
+返回：
 
 - [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -79,11 +79,11 @@ API 级别 3.0.0
 
 获取媒体内容的播放起始位置
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -91,7 +91,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
@@ -102,7 +102,7 @@ Parameters:
     与所引用媒体内容相关联的元数据。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -110,6 +110,6 @@ API 级别 3.0.0
 
 设置此对象的元数据
 
-Since:
+起始版本：
 
 API 级别 3.0.0

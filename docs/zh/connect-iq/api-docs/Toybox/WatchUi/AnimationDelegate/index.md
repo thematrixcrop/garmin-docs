@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.AnimationDelegate"
+title: "类：Toybox.WatchUi.AnimationDelegate"
 ---
 # 类：Toybox.WatchUi.AnimationDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ AnimationDelegate 响应 Animation 事件。
 - [AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -185,7 +185,7 @@ API 级别 3.1.0
 
 处理 Animation 事件。
 
-Parameters:
+参数：
 
 - event — ([WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module)) —
 
@@ -196,6 +196,6 @@ Parameters:
     选项字典
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

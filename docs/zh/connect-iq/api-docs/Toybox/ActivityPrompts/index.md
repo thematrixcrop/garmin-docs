@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.ActivityPrompts"
+title: "模块：Toybox.ActivityPrompts"
 ---
 # 模块：Toybox.ActivityPrompts
 
@@ -11,7 +11,7 @@ ActivityPrompts 模块允许数据字段在活动期间处理音频输出。
 
 提示将在需要播放时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。如果向 `ActivityPromptDelegate::onPrompt()` 传递多个提示，则这些提示应连续播放且不中断。
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -117,7 +117,7 @@ API 级别 5.2.0
 
 ### **ActivityPromptContextValue** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[ActivityPrompts.ActivityPromptContextValue](/connect-iq/api-docs/Toybox/ActivityPrompts/#ActivityPromptContextValue-named_type)\> or **Null**
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -127,7 +127,7 @@ API 级别 5.2.0
 
 注册为活动提示输出提供程序。仅当该数据字段是选定的活动提示输出提供程序时，才会返回 `true`。如果返回 `false`，当该数据字段成为选定的活动提示输出提供程序时，将使用 `true` 调用 [ActivityPromptDelegate.onAudioOutputChange()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onAudioOutputChange-instance_function)。
 
-Parameters:
+参数：
 
 - delegate — ([ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/)) —
 
@@ -138,14 +138,14 @@ Parameters:
     保留供将来使用
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果应用注册成功，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -153,21 +153,21 @@ API 级别 5.2.0
 
 设置 [ActivityPrompt.text](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#text-var) 的语言。
 
-Parameters:
+参数：
 
 - languages — ([System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) —
 
     用于接收提示文本的语言
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果语言可用且数据字段是当前活动提示输出提供程序，则为 `true`，否则为 `false`。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -175,6 +175,6 @@ API 级别 5.2.0
 
 取消注册为活动提示输出处理程序。如果数据字段是当前提供程序，活动提示输出将恢复为默认提供程序。
 
-Since:
+起始版本：
 
 API 级别 5.2.0

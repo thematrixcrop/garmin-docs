@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.UserProfile.UserActivityHistoryIterator"
+title: "类：Toybox.UserProfile.UserActivityHistoryIterator"
 ---
 # 类：Toybox.UserProfile.UserActivityHistoryIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 获取用户活动历史记录的迭代器
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -35,10 +35,10 @@ API 级别 3.3.0
 
 获取数据并将迭代器递增到下一个条目
 
-Returns:
+返回：
 
 - [UserProfile.UserActivityHistoryIterator](/connect-iq/api-docs/Toybox/UserProfile/UserActivityHistoryIterator/)
 
-Since:
+起始版本：
 
 API 级别 3.3.0

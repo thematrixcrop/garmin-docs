@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.SelectableEvent"
+title: "类：Toybox.WatchUi.SelectableEvent"
 ---
 # 类：Toybox.WatchUi.SelectableEvent
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ SelectableEvent 是一个对象，当使用实体按钮或触摸屏操作 [Selec
 - [Toybox.WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -59,14 +59,14 @@ API 级别 2.1.0
 
 获取所操作的 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 实例。
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     对 Selectable 的引用
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -74,7 +74,7 @@ API 级别 2.1.0
 
 获取生成该事件的 Selectable 的先前状态。
 
-Returns:
+返回：
 
 - [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) —
 
@@ -90,6 +90,6 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.ObjectStoreAccessException"
+title: "类：Toybox.Application.ObjectStoreAccessException"
 ---
 # 类：Toybox.Application.ObjectStoreAccessException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -42,6 +42,6 @@ API 级别 2.3.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.3.0

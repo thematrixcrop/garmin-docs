@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Position.Info"
+title: "类：Toybox.Position.Info"
 ---
 # 类：Toybox.Position.Info
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Position.Info 类包含定位系统提供的所有信息。
 
 Position Info 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时获取，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -237,11 +237,11 @@ API 级别 1.0.0
 
 此值为以下值之一：good、usable、poor 或 not available，对应于 Position.QUALITY\_\* 常量。此值不能为 `null`。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
@@ -254,7 +254,7 @@ Returns:
 
 海拔高度从 GPS 获取。如果没有 GPS，则不会返回有效的海拔高度。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -263,7 +263,7 @@ API 级别 1.0.0
 - [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -273,11 +273,11 @@ Returns:
 
 此项提供移动时的行进方向。如果设备支持，则在静止时提供罗盘方向。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -287,11 +287,11 @@ Returns:
 
 如果 GPS 不可用，或处于 GPS 定位间隔期间（通常为 1 秒），则会使用上次已知的航向和速度推算位置（即航位推算）。经过一小段时间后，为避免位置误差过度累积，系统将停止推算位置。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -308,11 +308,11 @@ Returns:
 3. Accelerometer
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -320,10 +320,10 @@ Returns:
 
 获取的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 定位的 GPS 时间戳。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)

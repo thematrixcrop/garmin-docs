@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Time.Duration"
+title: "类：Toybox.Time.Duration"
 ---
 # 类：Toybox.Time.Duration
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -22,7 +22,7 @@ Duration 对象与 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象密�
 
 Duration 对象以构成其所表示时间跨度的秒数存储。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -73,14 +73,14 @@ API 级别 1.0.0
 
 将 Moment 添加到 Duration 时，此方法的功能与 [Moment.add()](/connect-iq/api-docs/Toybox/Time/Moment/#add-instance_function) 方法相同。
 
-Parameters:
+参数：
 
 - time — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) —
 
     要添加到 Duration 的 Duration 或 Moment
 
 
-Example:
+示例：
 
 添加两个 Duration 对象
 
@@ -91,7 +91,7 @@ var twoHours   = new Time.Duration(7200);
 var threeHours = oneHour.add(twoHours);
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/), [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
@@ -108,7 +108,7 @@ Returns:
 - [Moment.add()](/connect-iq/api-docs/Toybox/Time/Moment/#add-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -118,14 +118,14 @@ API 级别 1.0.0
 
 此方法计算一个 Number，表示两个 Duration 对象之间的秒数差异。也可以使用 [subtract()](/connect-iq/api-docs/Toybox/Time/Duration/#subtract-instance_function) 方法获取两个 Duration 对象之间的绝对差值。
 
-Parameters:
+参数：
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     用于与此 Duration 比较的 Duration
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -137,14 +137,14 @@ System.println(oneHour.compare(twoHours)); // -3600, or one minute in the past
 System.println(twoHours.compare(oneHour)); //  3600, or one minute in the future
 ```
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     两个 Duration 对象之间相差的秒数。如果用于比较的 Duration 长于此 Duration，则该值为负数。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -152,14 +152,14 @@ API 级别 1.0.0
 
 将 Duration 除以一个值。
 
-Parameters:
+参数：
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
     用于除以 Duration 的值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Time;
@@ -167,14 +167,14 @@ var fourHours  = new Time.Duration(Gregorian.SECONDS_PER_HOUR * 4);
 var twoHours = fourHours.divide(2);
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     Duration 与所提供值的商
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -182,14 +182,14 @@ API 级别 1.0.0
 
 确定一个 Duration 是否比另一个 Duration 更长。
 
-Parameters:
+参数：
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     用于与此 Duration 比较的 Duration
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -201,14 +201,14 @@ System.println(oneHour.greaterThan(twoHours)); // false
 System.println(twoHours.greaterThan(oneHour)); // true
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此 Duration 长于提供用于比较的 Duration，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -216,14 +216,14 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     用于初始化 Duration 的秒数
 
 
-Example:
+示例：
 
 创建一个包含秒数的一天 Duration
 
@@ -232,7 +232,7 @@ using Toybox.Time;
 var oneDay = new Time.Duration(86400);
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
@@ -244,7 +244,7 @@ Returns:
 - [Gregorian.duration()](/connect-iq/api-docs/Toybox/Time/Gregorian/#duration-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -252,14 +252,14 @@ API 级别 1.0.0
 
 确定一个 Duration 是否比另一个 Duration 更短。
 
-Parameters:
+参数：
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     用于与此 Duration 比较的 Duration
 
 
-Example:
+示例：
 
 ```
 using Toybox.System;
@@ -271,14 +271,14 @@ System.println(oneHour.lessThan(twoHours)); // true
 System.println(twoHours.lessThan(oneHour)); // false
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果此 Duration 短于提供用于比较的 Duration，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -286,14 +286,14 @@ API 级别 1.0.0
 
 将 Duration 乘以一个值。
 
-Parameters:
+参数：
 
 - value — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
     用于乘以 Duration 的值
 
 
-Example:
+示例：
 
 ```
 using Toybox.Time;
@@ -301,14 +301,14 @@ var twoHours  = new Time.Duration(7200);
 var fourHours = twoHours.multiply(2);
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     Duration 与所提供值的乘积
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -318,14 +318,14 @@ API 级别 1.0.0
 
 计算得出的 Duration 始终为正值。还可以使用 [compare()](/connect-iq/api-docs/Toybox/Time/Duration/#compare-instance_function) 方法获取两个 Duration 对象之间的差值。
 
-Parameters:
+参数：
 
 - duration — ([Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 
     要从此 Duration 中减去的 Duration
 
 
-Example:
+示例：
 
 ```
 using Toybox.Time;
@@ -334,14 +334,14 @@ var threeHours = new Time.Duration(10800);
 var oneHour = threeHours.subtract(twoHours);
 ```
 
-Returns:
+返回：
 
 - [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) —
 
     两个 Duration 对象之间的差值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -349,13 +349,13 @@ API 级别 1.0.0
 
 获取 Duration 的值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Duration 的值（秒）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

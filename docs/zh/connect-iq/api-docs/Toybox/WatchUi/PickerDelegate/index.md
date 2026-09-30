@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.PickerDelegate"
+title: "类：Toybox.WatchUi.PickerDelegate"
 ---
 # 类：Toybox.WatchUi.PickerDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -31,7 +31,7 @@ PickerDelegate 响应 Picker 的确认或取消操作。
 
 请参阅 SDK 中随附的 Picker 示例，了解 PickerDelegate 类的使用示例
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -249,14 +249,14 @@ API 级别 1.2.0
 
 对于任何 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 条目，都将返回 `null` 值
 
-Parameters:
+参数：
 
 - values — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     Picker 中选择的值。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -275,14 +275,14 @@ API 级别 1.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     若已处理则返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.1.1
 
@@ -290,6 +290,6 @@ API 级别 5.1.1
 
 处理来自 Picker 的取消事件
 
-Since:
+起始版本：
 
 API 级别 1.2.0

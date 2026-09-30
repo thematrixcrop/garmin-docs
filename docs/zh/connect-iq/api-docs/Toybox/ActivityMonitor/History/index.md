@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityMonitor.History"
+title: "类：Toybox.ActivityMonitor.History"
 ---
 # 类：Toybox.ActivityMonitor.History
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 此类中的字段可能返回 `null`。建议在使用值之前检查其是否为 `null`。如果值不可用，则会抛出指示未找到该符号的错误。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -83,7 +83,7 @@ API 级别 1.0.0
 
 包含当天累计的中等强度、高强度和总分钟数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -225,7 +225,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [ActivityMonitor.ActiveMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes/)
 
@@ -233,7 +233,7 @@ Returns:
 
 当天的卡路里，单位为千卡（kCal）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -387,7 +387,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -395,11 +395,11 @@ Returns:
 
 当天的距离，单位为厘米 (cm)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -407,7 +407,7 @@ Returns:
 
 当天爬升的楼层数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -535,7 +535,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -543,7 +543,7 @@ Returns:
 
 当天的爬楼层数目标。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -671,7 +671,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -679,7 +679,7 @@ Returns:
 
 当天下降的楼层数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -807,7 +807,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -815,7 +815,7 @@ Returns:
 
 当日的轮椅推行距离（厘米）。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -830,7 +830,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -838,7 +838,7 @@ Returns:
 
 当日的轮椅推行目标次数。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -853,7 +853,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -861,7 +861,7 @@ Returns:
 
 当日的轮椅推行次数。
 
-Since:
+起始版本：
 
 API 级别 4.2.3
 
@@ -876,7 +876,7 @@ API 级别 4.2.3
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -884,11 +884,11 @@ Returns:
 
 一个表示此 History 对象记录日期起始时间的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 对象
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -896,11 +896,11 @@ Returns:
 
 当天的步数目标。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -908,10 +908,10 @@ Returns:
 
 当天的步数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

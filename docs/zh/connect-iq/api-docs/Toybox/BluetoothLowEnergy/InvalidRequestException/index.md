@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.InvalidRequestException"
+title: "类：Toybox.BluetoothLowEnergy.InvalidRequestException"
 ---
 # 类：Toybox.BluetoothLowEnergy.InvalidRequestException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,6 +25,6 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

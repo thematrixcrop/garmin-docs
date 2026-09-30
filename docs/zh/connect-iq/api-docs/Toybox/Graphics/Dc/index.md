@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.Dc"
+title: "类：Toybox.Graphics.Dc"
 ---
 # 类：Toybox.Graphics.Dc
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -24,7 +24,7 @@ Toybox.Lang.Object
 
 不应直接实例化 Dc 对象，也不应在 onUpdate 调用之外尝试向屏幕进行渲染。
 
-Example:
+示例：
 
 使用直接像素参数绘制蓝色矩形。
 
@@ -36,7 +36,7 @@ function onUpdate(dc) {
 }
 ```
 
-Example:
+示例：
 
 使用直接像素参数绘制红色圆形。
 
@@ -48,7 +48,7 @@ function onUpdate(dc) {
 }
 ```
 
-Example:
+示例：
 
 使用设备上下文（dc）的调用在屏幕中央绘制“Hello World”。
 
@@ -66,7 +66,7 @@ function onUpdate(dc) {
 }
 ```
 
-Example:
+示例：
 
 使用背景色（Graphics.COLOR\_BLACK）清除设备屏幕。
 
@@ -78,7 +78,7 @@ function onUpdate(dc) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -227,7 +227,7 @@ API 级别 1.0.0
 
 从版本 3.1.0 开始，COLOR\_TRANSPARENT 也将作为背景颜色生效，这会导致剪辑区域中的像素值被替换为 COLOR\_TRANSPARENT。例如，这可用于清除透明叠加层，使动画背景可见。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -235,7 +235,7 @@ API 级别 1.0.0
 
 重置可绘制区域。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -245,7 +245,7 @@ API 级别 2.3.0
 
 绘制文本，使其方向垂直于给定角度处的径向线。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -332,7 +332,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
@@ -353,7 +353,7 @@ API 级别 4.2.1
 
 所有参数都向零截断。当 degreeStart 和 degreeEnd 相等时，将绘制完整的圆。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -380,7 +380,7 @@ Parameters:
     弧线的结束角度，单位为度。
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -392,7 +392,7 @@ API 级别 1.2.0
 
 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -407,11 +407,11 @@ Parameters:
     要绘制的对象。源颜色调色板必须是目标颜色调色板的子集。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -422,7 +422,7 @@ Throws:
 
 使用给定选项绘制位图
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -553,11 +553,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
-Throws:
+抛出：
 
 - 如果提供了 `:bitmapX`、`:bitmapY`、`:bitmapWidth`、`:bitmapHeight` 中的任意一个，且其超出 `bitmap` 的边界，则抛出 InvalidValueException。
 
@@ -566,7 +566,7 @@ Throws:
 
 围绕某个点绘制圆。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -581,7 +581,7 @@ Parameters:
     圆的半径。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -589,7 +589,7 @@ API 级别 1.0.0
 
 围绕某个点绘制椭圆。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -608,7 +608,7 @@ Parameters:
     椭圆沿 y 轴的半径。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -616,7 +616,7 @@ API 级别 1.0.0
 
 在两个点之间绘制线段。
 
-Parameters:
+参数：
 
 - x1 — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -635,7 +635,7 @@ Parameters:
     第二个 y 坐标
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -643,7 +643,7 @@ API 级别 1.0.0
 
 使用偏移量将位图绘制到屏幕上。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -734,11 +734,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -749,7 +749,7 @@ Throws:
 
 在屏幕上绘制点。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -760,7 +760,7 @@ Parameters:
     点的 y 位置
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -770,7 +770,7 @@ API 级别 1.0.0
 
 沿弧线方向绘制文本。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -865,7 +865,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.1
 
@@ -873,7 +873,7 @@ API 级别 4.2.1
 
 绘制矩形。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -892,7 +892,7 @@ Parameters:
     矩形的高度值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -900,7 +900,7 @@ API 级别 1.0.0
 
 绘制圆角矩形。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -923,7 +923,7 @@ Parameters:
     圆角半径。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -931,7 +931,7 @@ API 级别 1.0.0
 
 将缩放后的位图绘制到曲面上。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1014,11 +1014,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -1035,7 +1035,7 @@ Throws:
 
 [FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1058,11 +1058,11 @@ Parameters:
     Graphics.TEXT\_JUSTIFY\_\* 常量的掩码。这可以是单个 Graphics.TEXT\_JUSTIFY\_\* 常量，也可以是一个垂直对齐值和一个水平对齐值组合而成的位掩码（例如 Graphics.TEXT\_JUSTIFY\_CENTER | Graphics.TEXT\_JUSTIFY\_VCENTER）。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -1073,7 +1073,7 @@ Throws:
 
 使用前景色填充圆。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1088,7 +1088,7 @@ Parameters:
     圆的半径。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1096,7 +1096,7 @@ API 级别 1.0.0
 
 使用前景色填充椭圆。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1115,7 +1115,7 @@ Parameters:
     椭圆沿 y 轴的半径。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1123,14 +1123,14 @@ API 级别 1.0.0
 
 使用前景色填充多边形。
 
-Parameters:
+参数：
 
 - pts — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     坐标数组，限制为 64 个点
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1138,7 +1138,7 @@ API 级别 1.0.0
 
 使用前景色填充矩形。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1157,7 +1157,7 @@ Parameters:
     矩形的高度值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1165,7 +1165,7 @@ API 级别 1.0.0
 
 使用前景色填充圆角矩形。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1188,7 +1188,7 @@ Parameters:
     圆角半径
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1196,21 +1196,21 @@ API 级别 1.0.0
 
 获取字体的高度。
 
-Parameters:
+参数：
 
 - font — ([Graphics.FontType](/connect-iq/api-docs/Toybox/Graphics/#FontType-named_type)) —
 
     要测量的字体
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     字体高度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1218,14 +1218,14 @@ API 级别 1.0.0
 
 获取应用可用显示区域的高度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     显示屏高度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1235,7 +1235,7 @@ API 级别 1.0.0
 
 确定高度时会考虑换行符。宽度是 String 中某一行的最大宽度。如果 String 中包含两个换行符（\\\\n），高度将按三行计算，宽度将取最长 String 的宽度。
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1246,14 +1246,14 @@ Parameters:
     用于测量文本的字体。
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     The \[width, height\] of the String in pixels
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1261,7 +1261,7 @@ API 级别 1.0.0
 
 获取 String 的宽度。
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -1272,14 +1272,14 @@ Parameters:
     用于测量文本的字体。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     String 的宽度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1287,14 +1287,14 @@ API 级别 1.0.0
 
 获取应用可用显示区域的宽度。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     显示屏宽度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1302,7 +1302,7 @@ API 级别 1.0.0
 
 启用图元的抗锯齿绘制。此方法不支持带有调色板的 [BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)。
 
-Parameters:
+参数：
 
 - enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -1436,11 +1436,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Throws:
+抛出：
 
 - ([Graphics.InvalidPaletteException](/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException/)) —
 
@@ -1455,7 +1455,7 @@ Throws:
 
 BLEND\_MODE\_NO\_BLEND 仅支持在绘制位图时使用
 
-Parameters:
+参数：
 
 - mode — ([Graphics.BlendMode](/connect-iq/api-docs/Toybox/Graphics/#BlendMode-module)) —
 
@@ -1522,7 +1522,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -1532,7 +1532,7 @@ API 级别 4.0.0
 
 区域外的像素不会受到任何操作的影响。
 
-Parameters:
+参数：
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1551,7 +1551,7 @@ Parameters:
     裁剪区域的高度，单位为像素。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -1559,7 +1559,7 @@ API 级别 2.3.0
 
 设置当前前景色和背景色。
 
-Parameters:
+参数：
 
 - foreground — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
@@ -1570,7 +1570,7 @@ Parameters:
     [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#ColorValue-module) 常量或形式为 0xRRGGBB 的 24 位整数。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1582,7 +1582,7 @@ API 级别 1.0.0
 
 此函数的优先级高于 setColor()。如果未设置填充工具，将使用前景色。
 
-Parameters:
+参数：
 
 - fill — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -1649,7 +1649,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -1657,14 +1657,14 @@ API 级别 4.0.0
 
 设置线条的宽度。
 
-Parameters:
+参数：
 
 - width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
     画笔宽度，单位为像素
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1676,7 +1676,7 @@ API 级别 1.0.0
 
 此函数的优先级高于 setColor()。如果未设置绘制工具，将使用前景色。
 
-Parameters:
+参数：
 
 - stroke — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -1743,6 +1743,6 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.0.0

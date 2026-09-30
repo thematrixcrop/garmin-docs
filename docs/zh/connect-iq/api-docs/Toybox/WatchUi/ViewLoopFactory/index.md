@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ViewLoopFactory"
+title: "类：Toybox.WatchUi.ViewLoopFactory"
 ---
 # 类：Toybox.WatchUi.ViewLoopFactory
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于创建视图/委托实例的工厂对象，由 ViewLoop 使用
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -175,7 +175,7 @@ API 级别 3.4.0
 
 ViewLoopFactory 可提供的委托类型
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -183,7 +183,7 @@ API 级别 3.4.0
 
 ViewLoopFactory 可提供的视图类型
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -193,14 +193,14 @@ API 级别 3.4.0
 
 返回此工厂管理的视图/委托对数量
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     此工厂的视图总数
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -216,20 +216,20 @@ API 级别 3.4.0
 
 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 和 [Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 的支持已添加到 API 版本 5.1.0。
 
-Parameters:
+参数：
 
 - page — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     视图/委托对的索引
 
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含一个 [View](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) 和一个可选 [Delegate](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) 的 Array。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0

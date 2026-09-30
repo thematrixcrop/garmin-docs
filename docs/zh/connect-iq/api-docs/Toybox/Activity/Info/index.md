@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.Info"
+title: "类：Toybox.Activity.Info"
 ---
 # 类：Toybox.Activity.Info
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Info 类包含有关当前活动的信息。
 
 可通过 [getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法检索此信息。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -235,11 +235,11 @@ API 级别 1.0.0
 
 海拔高度取自最准确的数据源：气压计或 GPS
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -249,7 +249,7 @@ Returns:
 
 此项返回由压力传感器测量的环境（本地）气压。数据经过两级滤波器平滑处理，以减少噪声和瞬时变化。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -405,7 +405,7 @@ API 级别 2.4.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -413,11 +413,11 @@ Returns:
 
 当前活动期间的平均步频，单位为每分钟转数（rpm）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -425,7 +425,7 @@ Returns:
 
 自上一个间隔以来的平均游泳划水距离，单位为米（m）。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -567,7 +567,7 @@ API 级别 1.2.2
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -575,11 +575,11 @@ Returns:
 
 当前活动期间的平均心率，单位为每分钟心跳次数（bpm）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -587,7 +587,7 @@ Returns:
 
 当前活动期间的平均功率，单位为瓦（W）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -709,7 +709,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -719,11 +719,11 @@ Returns:
 
 平均值通过已用时段内累积的三维距离除以已用时间计算得出。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -733,7 +733,7 @@ Returns:
 
 方位是从当前位置或位置指向导航目的地的方向，取决于你当前的位置。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -840,7 +840,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -850,7 +850,7 @@ Returns:
 
 起点方位是从导航起点到目的地的期望航线方向，单位为弧度。设置路线时，这仅取决于你的位置，与活动期间你可能移动到的位置无关
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -957,7 +957,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -965,11 +965,11 @@ Returns:
 
 当前活动期间消耗的卡路里，单位为千卡（kcal）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -977,11 +977,11 @@ Returns:
 
 当前步频，单位为每分钟转数（rpm）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -994,11 +994,11 @@ Returns:
 
 如果设备支持，此方法会提供罗盘方向。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1006,11 +1006,11 @@ Returns:
 
 当前心率，单位为每分钟心跳次数 (bpm)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1020,11 +1020,11 @@ Returns:
 
 除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -1034,7 +1034,7 @@ Returns:
 
 GPS 精度值范围为 0-4。值为 0 表示精度值不可用，值为 4 表示 GPS 定位良好。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1043,7 +1043,7 @@ API 级别 1.0.0
 - [Positional Accuracy](/connect-iq/api-docs/Toybox/Position/Info/#accuracy-var)
 
 
-Returns:
+返回：
 
 - [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) —
 
@@ -1054,7 +1054,7 @@ Returns:
 
 当前血氧饱和度，以百分比 (%) 表示。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -1175,7 +1175,7 @@ API 级别 3.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1183,7 +1183,7 @@ Returns:
 
 当前功率，单位为瓦特 (W)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1305,7 +1305,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1313,7 +1313,7 @@ Returns:
 
 当前速度，单位为米每秒 (mps)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1322,7 +1322,7 @@ API 级别 1.0.0
 - [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1330,7 +1330,7 @@ Returns:
 
 到目的地的距离，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1437,7 +1437,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1445,7 +1445,7 @@ Returns:
 
 到下一个点的距离，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1552,7 +1552,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1560,11 +1560,11 @@ Returns:
 
 当前活动已经过的距离，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1572,11 +1572,11 @@ Returns:
 
 当前活动的已用时间，单位为毫秒（ms）。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -1584,7 +1584,7 @@ Returns:
 
 目的地海拔，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1691,7 +1691,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1699,7 +1699,7 @@ Returns:
 
 下一个点的海拔，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -1806,7 +1806,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -1816,7 +1816,7 @@ Returns:
 
 能量消耗是 FirstBeat 开发的一项指标，用于根据心率数据估算卡路里消耗率。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -1996,7 +1996,7 @@ API 级别 1.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -2006,7 +2006,7 @@ Returns:
 
 索引值范围为 1 到 frontDerailleurMax。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2105,7 +2105,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2113,7 +2113,7 @@ Returns:
 
 前自行车变速器的最大索引。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2212,7 +2212,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2220,7 +2220,7 @@ Returns:
 
 前自行车变速器的齿轮尺寸，以齿数表示。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2319,7 +2319,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2327,11 +2327,11 @@ Returns:
 
 当前活动期间记录的最大步频，单位为每分钟转数 (rpm)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2339,11 +2339,11 @@ Returns:
 
 当前活动期间记录的最大心率，单位为每分钟心跳次数 (bpm)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2351,7 +2351,7 @@ Returns:
 
 当前活动期间记录的最大功率，单位为瓦特 (W)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -2473,7 +2473,7 @@ API 级别 1.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -2481,11 +2481,11 @@ Returns:
 
 当前活动期间记录的最大速度，单位为米每秒 (mps)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -2498,7 +2498,7 @@ Returns:
 
 此方法返回校准到海平面的气压。由于压力会因多种因素而变化，因此必须先获取基于 GPS 的海拔，然后由压力传感器测量环境（本地）压力，再将其转换为校准后的气压值。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -2654,7 +2654,7 @@ API 级别 2.4.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -2662,7 +2662,7 @@ Returns:
 
 目的地名称。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2769,7 +2769,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -2777,7 +2777,7 @@ Returns:
 
 下一个点的名称。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2884,7 +2884,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -2892,7 +2892,7 @@ Returns:
 
 到当前路线最近点的距离，单位为米 (m)。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -2999,7 +2999,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -3009,7 +3009,7 @@ Returns:
 
 此项返回由内部压力传感器测量的环境（本地）气压。数据是直接从内部传感器读取并经过温度补偿的信息。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -3165,7 +3165,7 @@ API 级别 2.4.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -3175,7 +3175,7 @@ Returns:
 
 索引值范围为 1 到 rearDerailleurMax。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -3274,7 +3274,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -3282,7 +3282,7 @@ Returns:
 
 后变速器的最大索引。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -3381,7 +3381,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -3389,7 +3389,7 @@ Returns:
 
 后变速器齿轮的齿数。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -3488,7 +3488,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -3498,11 +3498,11 @@ Returns:
 
 除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)
 
@@ -3510,11 +3510,11 @@ Returns:
 
 当前活动的开始时间。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -3524,7 +3524,7 @@ Returns:
 
 游泳泳姿类型值的范围为 0-6。每个 Number 值表示不同的游泳泳姿类型（例如自由泳、仰泳等）。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -3666,7 +3666,7 @@ API 级别 1.2.2
 
 :::
 
-Returns:
+返回：
 
 - [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) —
 
@@ -3679,7 +3679,7 @@ Returns:
 
 SWOLF 是 Swim-Golf 的缩写，用于衡量游泳效率。该分数为每段距离的划水次数加上游完该段距离所用的总时间。例如，游泳池的一段距离需要划水十次并用时三十秒，则 SWOLF 分数为 40。与高尔夫一样，SWOLF 分数越低越好。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -3821,7 +3821,7 @@ API 级别 1.2.2
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -3831,11 +3831,11 @@ Returns:
 
 计时器状态范围为 0-3。值为 0 表示计时器已关闭且没有活动记录，值为 3 表示计时器已开启且存在活动记录。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) —
 
@@ -3846,11 +3846,11 @@ Returns:
 
 当前计时器值，单位为毫秒 (ms)。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -3858,11 +3858,11 @@ Returns:
 
 当前活动期间的累计爬升，以米 (m) 为单位。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -3870,11 +3870,11 @@ Returns:
 
 当前活动期间的累计下降，以米 (m) 为单位。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -3884,7 +3884,7 @@ Returns:
 
 Track 是根据 GPS 移动确定的行进方向，单位为弧度。如果设备支持，则在停止时提供罗盘方向。
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -3991,7 +3991,7 @@ API 级别 2.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -4001,7 +4001,7 @@ Returns:
 
 训练效果是由 FirstBeat 开发的评分，用于表示活动对有氧健身的影响程度。评分范围为 1.0（轻松）到 5.0（过度训练）。
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -4181,6 +4181,6 @@ API 级别 1.2.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)

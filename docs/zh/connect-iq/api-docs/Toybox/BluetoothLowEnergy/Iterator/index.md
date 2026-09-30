@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.Iterator"
+title: "类：Toybox.BluetoothLowEnergy.Iterator"
 ---
 # 类：Toybox.BluetoothLowEnergy.Iterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Bluetooth Low Energy 数据的内容迭代器
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -35,13 +35,13 @@ API 级别 3.1.0
 
 获取列表中的下一个项目
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     下一个项目；如果到达列表末尾，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

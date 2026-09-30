@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.WatchFaceDelegate"
+title: "类：Toybox.WatchUi.WatchFaceDelegate"
 ---
 # 类：Toybox.WatchUi.WatchFaceDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -77,7 +77,7 @@ API 级别 2.3.0
 
 系统调用此方法获取指定复杂功能字段的 Drawable，以便进行高亮显示。此方法仅在 WatchFace 配置模式下可用。动画会围绕 Drawable 的中心进行缓动。传递给 Drawable.draw 函数的 Dc 对象与屏幕共享同一原点（例如 \[0, 0\]），因此可方便地与 drawable 坐标对齐。
 
-Parameters:
+参数：
 
 - complication — (Complication) —
 
@@ -115,7 +115,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [WatchUi.ComplicationDrawableRef](/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef/) —
 
@@ -127,7 +127,7 @@ Returns:
 - [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -137,7 +137,7 @@ API 级别 5.1.0
 
 如果关联 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/) 的 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 回调超出设备的功耗预算，则会调用此方法，并提供有关超出限制的信息。
 
-Parameters:
+参数：
 
 - powerInfo — ([WatchUi.WatchFacePowerInfo](/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo/))
 
@@ -148,7 +148,7 @@ Parameters:
 - [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -156,7 +156,7 @@ API 级别 2.3.0
 
 用户触摸并按住时调用
 
-Parameters:
+参数：
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
@@ -236,12 +236,12 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - 如果点击事件已处理，则为 true，否则为 false。
 
 
-Since:
+起始版本：
 
 API 级别 4.2.0
 
@@ -251,7 +251,7 @@ API 级别 4.2.0
 
 仅在 WatchFace 配置模式下可用。应用可以使用 [WatchFaceDelegate.setSelectedComplication()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#setSelectedComplication-instance_function) 重写此方法以更改选定的 `complication`
 
-Parameters:
+参数：
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
@@ -289,7 +289,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -301,7 +301,7 @@ Returns:
 - [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -311,7 +311,7 @@ API 级别 5.1.0
 
 仅在 WatchFace 配置模式下可用，应用可以调用 [WatchFaceConfig.getSettings()](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/#getSettings-instance_function) 来检索当前设置。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -366,7 +366,7 @@ Parameters:
 - [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -376,7 +376,7 @@ API 级别 5.1.0
 
 应用处理 `onTap` 事件时可以调用，以更改选中的（高亮显示的）复杂功能。仅在表盘配置模式下有效。
 
-Parameters:
+参数：
 
 - complicationIdentifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -419,11 +419,11 @@ Parameters:
 - [Toybox.Application.AppBase.onStart](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

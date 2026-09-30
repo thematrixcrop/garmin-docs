@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.PlaybackProfile"
+title: "类：Toybox.Media.PlaybackProfile"
 ---
 # 类：Toybox.Media.PlaybackProfile
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 为媒体播放器提供有关支持哪些播放选项的具体规则。
 
-Example:
+示例：
 
 PlaybackProfile 对象的示例
 
@@ -55,7 +55,7 @@ function getPlaybackProfile() {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -100,11 +100,11 @@ API 级别 3.0.0
 
 定义执行点踩操作时是否跳过当前歌曲
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -114,11 +114,11 @@ Returns:
 
 这是一个 Array，其中包含开发者定义的 [PLAYBACK\_CONTROL\_\*](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module)、[CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/) 和 [SystemButton](/connect-iq/api-docs/Toybox/Media/SystemButton/) 值的组合。此 Array 中的值决定当前设备为最终用户呈现并提供哪些原生媒体播放器控制选项。数组中的第一项可用作媒体播放器中的快捷键。这取决于设备。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
@@ -126,11 +126,11 @@ Returns:
 
 歌曲必须播放的秒数，达到该时长后才会触发“已播放”通知。值为 0 表示歌曲开始播放后立即通知。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -138,11 +138,11 @@ Returns:
 
 媒体播放器的颜色。如果设置为 `null`，将使用依赖设备的默认颜色。
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
-Returns:
+返回：
 
 - [Media.PlayerColors](/connect-iq/api-docs/Toybox/Media/PlayerColors/)
 
@@ -150,11 +150,11 @@ Returns:
 
 定义系统是否在每首歌曲播放时通知应用
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -166,11 +166,11 @@ Returns:
 
 覆盖默认值时，需要为向后跳过按钮提供自定义图标，因为默认图标表示 30 秒。可以通过从 [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function) 返回带有自定义 [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) 的 [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) 来实现。
 
-Since:
+起始版本：
 
 API 级别 4.2.4
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -182,11 +182,11 @@ Returns:
 
 覆盖默认值时，需要为向前跳过按钮提供自定义图标，因为默认图标表示 30 秒。可以通过从 [getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function) 返回带有自定义 [playbackControls](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/#playbackControls-var) 的 [PlaybackProfile](/connect-iq/api-docs/Toybox/Media/PlaybackProfile/) 来实现。
 
-Since:
+起始版本：
 
 API 级别 4.2.4
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -194,10 +194,10 @@ Returns:
 
 歌曲必须播放的时长，单位为秒；超过此时长后按返回键会重新开始当前曲目，再次按返回键才会跳到上一曲目。如果设置为 `null`，则使用依赖设备的默认值。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)

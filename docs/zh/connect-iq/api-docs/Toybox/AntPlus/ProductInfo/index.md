@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.ProductInfo"
+title: "类：Toybox.AntPlus.ProductInfo"
 ---
 # 类：Toybox.AntPlus.ProductInfo
 
-Inherits:
+继承：
 
 Toybox.AntPlus.CommonData
 
@@ -22,7 +22,7 @@ Toybox.AntPlus.CommonData
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -38,7 +38,7 @@ System.println("Current swRevisionMain is: " + swRevisionMain);
 System.println("Current swRevisionSupplemental is: " + swRevisionSupplemental);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -70,11 +70,11 @@ API 级别 2.2.0
 
 序列号。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -85,11 +85,11 @@ Returns:
 
 主要软件版本。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -100,11 +100,11 @@ Returns:
 
 补充软件修订版本。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -117,6 +117,6 @@ Returns:
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.KeyAgreement"
+title: "类：Toybox.Cryptography.KeyAgreement"
 ---
 # 类：Toybox.Cryptography.KeyAgreement
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 与公钥结合以生成共享密钥的本地私钥。
 
-Example:
+示例：
 
 使用 KeyAgreement 创建共享密钥
 
@@ -110,7 +110,7 @@ var secretKeyBobAndAlice = keyAgreementBob.generateSecret();
 System.println(secretKeyAliceAndBob.equals(secretKeyBobAndAlice)); // prints 'true'
 ```
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -284,18 +284,18 @@ API 级别 3.0.0
 
 将一个公共 [Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) 添加到 KeyAgreement。
 
-Parameters:
+参数：
 
 - key — ([Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/)) —
 
     要添加到协议中的公钥
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
@@ -306,14 +306,14 @@ Throws:
 
 为 KeyAgreement 生成共享密钥。
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     KeyAgreement 的机密
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -321,7 +321,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -336,11 +336,11 @@ Parameters:
         KeyAgreement 中的私钥
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

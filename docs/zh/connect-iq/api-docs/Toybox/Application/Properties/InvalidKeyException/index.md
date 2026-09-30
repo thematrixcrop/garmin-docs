@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.Properties.InvalidKeyException"
+title: "类：Toybox.Application.Properties.InvalidKeyException"
 ---
 # 类：Toybox.Application.Properties.InvalidKeyException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示应用尝试访问 Application Settings 中不存在的键
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -37,6 +37,6 @@ API 级别 2.4.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.4.0

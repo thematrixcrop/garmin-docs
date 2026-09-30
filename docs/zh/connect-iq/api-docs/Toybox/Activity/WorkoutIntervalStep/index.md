@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Activity.WorkoutIntervalStep"
+title: "类：Toybox.Activity.WorkoutIntervalStep"
 ---
 # 类：Toybox.Activity.WorkoutIntervalStep
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 WorkoutIntervalStep 类包含当前 workout 间歇步骤的信息。
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -174,11 +174,11 @@ API 级别 3.2.0
 
 间隔活动部分的步数数据
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)
 
@@ -186,11 +186,11 @@ Returns:
 
 间隔中的重复次数
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -198,10 +198,10 @@ Returns:
 
 间隔休息部分的步数数据
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Returns:
+返回：
 
 - [Activity.WorkoutStep](/connect-iq/api-docs/Toybox/Activity/WorkoutStep/)

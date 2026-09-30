@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityPrompts.ActivityPromptDelegate"
+title: "类：Toybox.ActivityPrompts.ActivityPromptDelegate"
 ---
 # 类：Toybox.ActivityPrompts.ActivityPromptDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 使用 [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) 注册，以便应用程序在应播放活动提示时收到通知。
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -41,14 +41,14 @@ API 级别 5.2.0
 
 如果已调用 [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) 且用户更改了活动提示输出提供程序，则由系统调用。
 
-Parameters:
+参数：
 
 - selectedHandler — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     如果应用现在是活动提示处理程序，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -56,7 +56,7 @@ API 级别 5.2.0
 
 系统准备播放活动提示时调用
 
-Parameters:
+参数：
 
 - prompts — (ActivityPrompt>) —
 
@@ -67,6 +67,6 @@ Parameters:
     提示的优先级。较低的值应优先于较高的值。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0

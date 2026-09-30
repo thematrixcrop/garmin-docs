@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.Device"
+title: "类：Toybox.AntPlus.Device"
 ---
 # 类：Toybox.AntPlus.Device
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Device 对象表示一个 ANT+ Device 实例。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -63,7 +63,7 @@ API 级别 2.2.0
 
 获取指定组件标识符的电池状态。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -75,7 +75,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -92,14 +92,14 @@ if (batteryStatus == AntPlus.BATT_STATUS_OK) {
 }
 ```
 
-Returns:
+返回：
 
 - [AntPlus.BatteryStatus](/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus/) —
 
     此标识符对应的当前电池状态；如果标识符未知，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -109,7 +109,7 @@ API 级别 2.2.0
 
 此列表可能会随着时间推移而更新，因为包含多个组件的 ANT+ 设备会定期发送有关其各个组件的信息。设备会在 [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var) 中报告其组件总数。返回的 Array 只包含 ANT+ 设备已提供组件标识符的组件条目。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -118,7 +118,7 @@ using Toybox.AntPlus;
 var componentList = AntPlus.getComponentIdentifiers();
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
@@ -128,7 +128,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -136,7 +136,7 @@ API 级别 2.2.0
 
 获取设备状态。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -145,14 +145,14 @@ using Toybox.AntPlus;
 var deviceState = AntPlus.getDeviceState(null);
 ```
 
-Returns:
+返回：
 
 - [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/) —
 
     当前设备状态
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -160,7 +160,7 @@ API 级别 2.2.0
 
 获取指定组件标识符的制造商信息。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -172,7 +172,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -181,7 +181,7 @@ using Toybox.AntPlus;
 var manufacturerInfo = AntPlus.getManufacturerInfo(null);
 ```
 
-Returns:
+返回：
 
 - [AntPlus.ManufacturerInfo](/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo/) —
 
@@ -191,7 +191,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -199,7 +199,7 @@ API 级别 2.2.0
 
 获取指定组件标识符的产品信息。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -211,7 +211,7 @@ Parameters:
 
 
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -220,7 +220,7 @@ using Toybox.AntPlus;
 var productInfo = AntPlus.getProductInfo(null);
 ```
 
-Returns:
+返回：
 
 - [AntPlus.ProductInfo](/connect-iq/api-docs/Toybox/AntPlus/ProductInfo/) —
 
@@ -230,7 +230,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -238,7 +238,7 @@ API 级别 2.2.0
 
 发送制造商消息
 
-Parameters:
+参数：
 
 - message — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
@@ -250,11 +250,11 @@ Parameters:
 - [Toybox.Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([AntPlus.AntPlusNotAllowedException](/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException/)) —
 
@@ -265,18 +265,18 @@ Throws:
 
 发送页面请求 请求连接的传感器广播 2 个页面。使用 [onMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onMessage-instance_function) 处理传感器广播的请求页面。
 
-Parameters:
+参数：
 
 - pageNumber — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     请求的页面编号。不允许请求 ANTFS 页面（0x43）。页面请求可能会更改传感器的页面轮换，因此不允许过于频繁地发送页面请求。页面请求最多每 2 秒发送一次。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
-Throws:
+抛出：
 
 - ([AntPlus.AntPlusNotAllowedException](/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException/)) —
 

@@ -1,11 +1,11 @@
 ---
-title: "Module: Toybox.Notifications"
+title: "模块：Toybox.Notifications"
 ---
 # 模块：Toybox.Notifications
 
 ## 概述
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -95,7 +95,7 @@ API 级别 5.1.0
 
 通知消息类型
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -150,25 +150,25 @@ API 级别 5.1.0
 
 通知操作
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
 ### **NotificationDataKeyType** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) or [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
 ### **NotificationDataType** as [Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Notifications.NotificationDataKeyType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataKeyType-named_type), [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type)\> or **Null**
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
 ### NotificationMessageCallback，格式为 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Notifications.NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/)) as Void
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -176,7 +176,7 @@ API 级别 5.1.0
 
 通知选项
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -188,14 +188,14 @@ API 级别 5.1.0
 
 每收到一条通知消息，都会调用一次回调。如果调用此函数时应用有排队等待处理的消息，回调将立即针对每条待处理消息调用一次。
 
-Parameters:
+参数：
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
     对回调的引用，该回调必须接收类型为 [NotificationMessage](/connect-iq/api-docs/Toybox/Notifications/NotificationMessage/) 的 `data` 参数。
 
 
-Example:
+示例：
 
 ```
 using Communications;
@@ -211,7 +211,7 @@ function notificationMessageCallback(aMessage as NotificationMessage) as Void {
 Notifications.registerForNotificationMessages(self.method(:notificationMessageCallback));
 ```
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -219,7 +219,7 @@ API 级别 5.1.0
 
 向显示屏推送通知
 
-Parameters:
+参数：
 
 - title — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -254,7 +254,7 @@ Parameters:
         如果为 true，则关闭应用之前发布的所有通知。请注意，如果未提供此值，则默认为 true。
 
 
-Example:
+示例：
 
 ```
  Notifications.showNotification("Jeff", "Something Happened", {
@@ -267,6 +267,6 @@ Example:
 });
 ```
 
-Since:
+起始版本：
 
 API 级别 5.1.0

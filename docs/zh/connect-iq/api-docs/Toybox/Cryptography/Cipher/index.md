@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.Cipher"
+title: "类：Toybox.Cryptography.Cipher"
 ---
 # 类：Toybox.Cryptography.Cipher
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [https://en.wikipedia.org/wiki/Cipher](https://en.wikipedia.org/wiki/Cipher)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -207,25 +207,25 @@ API 级别 3.0.0
 
 解密可以拆分为两次或更多次 decrypt() 调用。对于 MODE\_CBC，`ciphertext` 的长度（以字节为单位）必须是块大小的倍数。
 
-Parameters:
+参数：
 
 - ciphertext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     要解密的数据片段
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     已解密的数据
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -242,25 +242,25 @@ Throws:
 
 加密可以拆分为两次或更多次 encrypt 调用。对于 MODE\_CBC，`plaintext` 的长度（以字节为单位）必须是块大小的倍数。
 
-Parameters:
+参数：
 
 - plaintext — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 
     要加密的数据片段
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     加密数据
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -275,7 +275,7 @@ Throws:
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -298,11 +298,11 @@ Parameters:
         用于加密或解密的初始化向量。如果未提供，对于需要初始化向量的算法，系统将使用安全随机字节生成该向量（可选）
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

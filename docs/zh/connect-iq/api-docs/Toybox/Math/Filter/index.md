@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Math.Filter"
+title: "类：Toybox.Math.Filter"
 ---
 # 类：Toybox.Math.Filter
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ Toybox.Lang.Object
 
 如果调用此方法的基础 Filter 类版本，将引发异常。
 
-Example:
+示例：
 
 此项展示了如何对一组数据使用筛选器的方法
 
@@ -65,7 +65,7 @@ using Toybox.Math;
     }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -94,23 +94,23 @@ API 级别 2.3.0
 
 如果调用此方法的基础 Filter 类版本，将引发 Exception。
 
-Parameters:
+参数：
 
 - data —
 
     要应用滤波器的样本数组
 
 
-Returns:
+返回：
 
 - 已应用滤波器的样本数组。
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Throws:
+抛出：
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
@@ -121,13 +121,13 @@ Throws:
 
 Constructor
 
-Parameters:
+参数：
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     未使用。为保持兼容性而保留参数计数
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0

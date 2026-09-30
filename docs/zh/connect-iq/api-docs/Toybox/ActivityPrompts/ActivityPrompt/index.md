@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityPrompts.ActivityPrompt"
+title: "类：Toybox.ActivityPrompts.ActivityPrompt"
 ---
 # 类：Toybox.ActivityPrompts.ActivityPrompt
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 由系统创建，并在需要播放活动提示时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -45,7 +45,7 @@ API 级别 5.2.0
 
 提示的数据。其用法取决于 [ActivityPrompt.templateName](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPrompt/#templateName-var) 的值。
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -53,7 +53,7 @@ API 级别 5.2.0
 
 提示标识符。
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -61,6 +61,6 @@ API 级别 5.2.0
 
 要通过文本转语音播报的文本。
 
-Since:
+起始版本：
 
 API 级别 5.2.0

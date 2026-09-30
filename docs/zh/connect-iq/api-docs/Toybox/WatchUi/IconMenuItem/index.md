@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.IconMenuItem"
+title: "类：Toybox.WatchUi.IconMenuItem"
 ---
 # 类：Toybox.WatchUi.IconMenuItem
 
-Inherits:
+继承：
 
 Toybox.WatchUi.MenuItem
 
@@ -31,7 +31,7 @@ IconMenuItem 是 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View 的一
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -230,14 +230,14 @@ API 级别 3.0.0
 
 获取 IconMenuItem 图标。
 
-Returns:
+返回：
 
 - [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
     IconMenuItem 图标
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -245,7 +245,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -272,7 +272,7 @@ Parameters:
         一个表示标签对齐方式的 [WatchUi.MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/#MENU_ITEM_LABEL_ALIGN_RIGHT-const) 常量，默认为 MENU\_ITEM\_LABEL\_ALIGN\_LEFT
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -280,18 +280,18 @@ API 级别 3.0.0
 
 设置 IconMenuItem 图标。
 
-Parameters:
+参数：
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     用于呈现此项目图标的 Drawable 或 ResourceId。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

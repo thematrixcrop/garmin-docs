@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.ScanResult"
+title: "类：Toybox.BluetoothLowEnergy.ScanResult"
 ---
 # 类：Toybox.BluetoothLowEnergy.ScanResult
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 用作 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) 的参数，将新设备添加到系统的已配对设备列表中
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -77,21 +77,21 @@ API 级别 3.1.0
 
 比较 ScanResult 与另一个对象是否相等
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果 other 是同一设备的扫描结果，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -99,14 +99,14 @@ API 级别 3.2.0
 
 获取传感器广播的外观
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     表示传感器外观的数字
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -116,14 +116,14 @@ API 级别 3.1.0
 
 如果未播报设备名称，此函数将返回 `null`
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     设备名称（如果存在），否则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -133,21 +133,21 @@ API 级别 3.1.0
 
 制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
-Parameters:
+参数：
 
 - manufacturerId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     用于检索制造商特定数据的制造商 id。
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     制造商特定数据。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -157,14 +157,14 @@ API 级别 3.1.0
 
 制造商特定数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.11 节进行解码
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     每个 AD 条目中的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 个对象的迭代器。字典将包含 `:companyId` 和 `:data` 键
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -172,14 +172,14 @@ API 级别 3.1.0
 
 获取从广告数据包中检索的原始数据
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     广告数据包中接收到的原始字节
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -187,14 +187,14 @@ API 级别 3.1.0
 
 获取接收广告的接收信号强度指示（RSSI）值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     与扫描结果关联的广播的 RSSI 值。单位为 dBM
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -204,21 +204,21 @@ API 级别 3.1.0
 
 服务数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.10 节进行解码
 
-Parameters:
+参数：
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
     要搜索的服务 UUID
 
 
-Returns:
+返回：
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
     特定 UUID 的服务数据。
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -228,14 +228,14 @@ API 级别 3.1.0
 
 如果广告数据包含任何服务 UUID 值，则可以通过此迭代器访问这些值。如果没有播报的 UUID，此函数将返回空迭代器。
 
-Returns:
+返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
     ScanResult 中公布的 [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) 个对象的迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -243,21 +243,21 @@ API 级别 3.1.0
 
 检查广播设备的 BLE 地址是否匹配
 
-Parameters:
+参数：
 
 - address — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     要检查的地址，可以是大端字节数组，也可以是格式为 "00:01:02:03:04:05" 的字符串
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果提供的参数与此 ScanResult 关联的地址相同，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -265,20 +265,20 @@ API 级别 3.2.0
 
 确定另一个扫描结果是否表示同一设备。
 
-Parameters:
+参数：
 
 - other — ([BluetoothLowEnergy.ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/)) —
 
     要进行比较的另一个扫描结果
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     表示此扫描结果是否代表与另一个设备相同的设备
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

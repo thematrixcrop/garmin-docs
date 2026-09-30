@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ToggleMenuItem"
+title: "类：Toybox.WatchUi.ToggleMenuItem"
 ---
 # 类：Toybox.WatchUi.ToggleMenuItem
 
-Inherits:
+继承：
 
 Toybox.WatchUi.MenuItem
 
@@ -31,7 +31,7 @@ ToggleMenuItem 是 [Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) View 的�
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -238,14 +238,14 @@ API 级别 3.0.0
 
 获取 ToggleMenuItem 的子字符串标签。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
     ToggleMenuItem 的子字符串文本标签
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -257,7 +257,7 @@ Constructor
 
 `:icon` 选项仅在支持子屏幕的 ConnectIQ 3.4.0 设备上使用。
 
-Parameters:
+参数：
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -296,7 +296,7 @@ Parameters:
         用于菜单项获得焦点时的子屏幕区域
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -304,14 +304,14 @@ API 级别 3.0.0
 
 获取 ToggleMenuItem 状态。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     ToggleMenuItem 的当前状态
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -319,18 +319,18 @@ API 级别 3.0.0
 
 设置 ToggleMenuItem 状态。
 
-Parameters:
+参数：
 
 - enabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     ToggleMenuItem 的预期状态；`true` 表示启用，`false` 表示禁用
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -341,7 +341,7 @@ Throws:
 
 设置 ToggleMenuItem 标签子字符串。
 
-Parameters:
+参数：
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -356,6 +356,6 @@ Parameters:
         ToggleMenuItem 被禁用时显示的字符串，或为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

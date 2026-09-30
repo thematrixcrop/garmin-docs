@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.PedalPowerBalance"
+title: "类：Toybox.AntPlus.PedalPowerBalance"
 ---
 # 类：Toybox.AntPlus.PedalPowerBalance
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ PedalPowerBalance 对象表示用户在左右踏板之间的功率贡献。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -34,7 +34,7 @@ System.println("Current pedalPowerPercent is: " + pedalPowerPercent);
 System.println("rightPedalIndicator is set to: " + rightPedalIndicator);
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -169,11 +169,11 @@ API 级别 2.2.0
 
 踏板功率百分比 (%)
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -181,11 +181,11 @@ Returns:
 
 指示踏板贡献。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Application.WatchFaceConfig.Settings"
+title: "类：Toybox.Application.WatchFaceConfig.Settings"
 ---
 # 类：Toybox.Application.WatchFaceConfig.Settings
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包含与表盘配置相关的所有设置。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -78,7 +78,7 @@ API 级别 5.1.0
 
 用户选择的表盘强调色；如果不可用，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -86,7 +86,7 @@ API 级别 5.1.0
 
 用户选择的表盘复杂功能颜色；如果不可用，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -94,7 +94,7 @@ API 级别 5.1.0
 
 表盘复杂功能设置；如果不可用，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -102,6 +102,6 @@ API 级别 5.1.0
 
 用户选择的表盘样式 ID；如果不可用，则为 `null`。
 
-Since:
+起始版本：
 
 API 级别 5.1.0

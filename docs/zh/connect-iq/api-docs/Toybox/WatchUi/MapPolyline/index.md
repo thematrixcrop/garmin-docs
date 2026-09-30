@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.MapPolyline"
+title: "类：Toybox.WatchUi.MapPolyline"
 ---
 # 类：Toybox.WatchUi.MapPolyline
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [https://en.wikipedia.org/wiki/Polygonal\_chain](https://en.wikipedia.org/wiki/Polygonal_chain)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -167,14 +167,14 @@ API 级别 3.0.0
 
 将一个或多个 Location 添加到 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     一个 Location 对象或 Location 对象数组
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -182,7 +182,7 @@ API 级别 3.0.0
 
 从 MapPolyline 对象的位置 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 清除所有 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -190,21 +190,21 @@ API 级别 3.0.0
 
 获取此 MapPolyline 对象中指定索引处的 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象。
 
-Parameters:
+参数：
 
 - index — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     请求的 Location 的索引
 
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     指定索引处的 Location
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -212,14 +212,14 @@ API 级别 3.0.0
 
 获取此 MapPolyline 对象中 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 对象的数量。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     此 MapPolyline 对象中的 Location 对象数。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -227,14 +227,14 @@ API 级别 3.0.0
 
 设置要在地图上绘制的 MapPolyline 颜色。
 
-Parameters:
+参数：
 
 - color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
     以 [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 枚举值在地图上绘制线条的颜色。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -242,13 +242,13 @@ API 级别 3.0.0
 
 设置要在地图上绘制的 MapPolyline 的宽度。
 
-Parameters:
+参数：
 
 - width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     线宽，单位为像素（px）
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

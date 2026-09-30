@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.MapView"
+title: "类：Toybox.WatchUi.MapView"
 ---
 # 类：Toybox.WatchUi.MapView
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -22,7 +22,7 @@ Toybox.WatchUi.View
 
 地图以静态方式渲染，并聚焦于边界框和/或地图上绘制的 MapMarker 点或 MapPolyline。地图可以在 [MAP\_MODE\_BROWSE](/connect-iq/api-docs/Toybox/WatchUi/) 或 [MAP\_MODE\_PREVIEW](/connect-iq/api-docs/Toybox/WatchUi/) 模式下渲染。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -178,7 +178,7 @@ API 级别 3.0.0
 
 移除所有 [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 和 [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -186,14 +186,14 @@ API 级别 3.0.0
 
 获取此 MapView 中地图的当前模式。
 
-Returns:
+返回：
 
 - [WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module) —
 
     地图在屏幕上渲染时所使用的模式，类型为 [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -201,7 +201,7 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -209,18 +209,18 @@ API 级别 3.0.0
 
 将一个 [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象或 MapMarker 对象的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 添加到地图以进行渲染。
 
-Parameters:
+参数：
 
 - markers — ([WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
     要在地图上渲染的 MapMarker 对象或 Marker 对象数组
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -231,14 +231,14 @@ Throws:
 
 设置此 MapView 中地图的模式。
 
-Parameters:
+参数：
 
 - mode — ([WatchUi.MapMode](/connect-iq/api-docs/Toybox/WatchUi/#MapMode-module)) —
 
     地图将在屏幕上渲染时所使用的模式，类型为 [MAP\_MODE\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -246,7 +246,7 @@ API 级别 3.0.0
 
 使用边界框选择要在屏幕上渲染的地图区域。当前底层地图数据将重新绘制，因此不建议在 onUpdate() 中调用此函数，因为这可能导致地图闪烁。
 
-Parameters:
+参数：
 
 - topLeft — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -262,11 +262,11 @@ Parameters:
 - [MapView.setScreenVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setScreenVisibleArea-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -277,18 +277,18 @@ Throws:
 
 将 [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象添加到地图以进行渲染。
 
-Parameters:
+参数：
 
 - polyline — ([WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) —
 
     要在地图上渲染的折线
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -299,7 +299,7 @@ Throws:
 
 设置屏幕上用于聚焦地图的区域。
 
-Parameters:
+参数：
 
 - topLeftX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -323,11 +323,11 @@ Parameters:
 - [MapView.setMapVisibleArea()](/connect-iq/api-docs/Toybox/WatchUi/MapView/#setMapVisibleArea-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 

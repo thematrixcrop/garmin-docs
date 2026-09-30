@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.SensorLogging"
+title: "模块：Toybox.SensorLogging"
 ---
 # 模块：Toybox.SensorLogging
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.SensorLogging"
 
 SensorLogging 模块包含记录传感器数据的接口。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 

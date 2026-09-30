@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.ResourceId"
+title: "类：Toybox.Lang.ResourceId"
 ---
 # 类：Toybox.Lang.ResourceId
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,14 +20,14 @@ ResourceId 是资源标识符。
 
 ResourceId 值可唯一标识系统中的资源。
 
-Example:
+示例：
 
 ```
 var resourceId = Rez.Strings.AppName;
 var appName = System.loadResource(resourceId);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -44,13 +44,13 @@ API 级别 1.0.0
 
 将 ResourceId 转换为 String
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     ResourceId 的 String 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

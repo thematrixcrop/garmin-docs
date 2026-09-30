@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.OperationNotAllowedException"
+title: "类：Toybox.Lang.OperationNotAllowedException"
 ---
 # 类：Toybox.Lang.OperationNotAllowedException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -42,6 +42,6 @@ API 级别 3.1.0
 
 OperationNotAllowedException 构造函数。
 
-Since:
+起始版本：
 
 API 级别 3.1.0

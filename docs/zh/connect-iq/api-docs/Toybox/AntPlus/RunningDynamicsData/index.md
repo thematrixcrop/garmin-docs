@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.RunningDynamicsData"
+title: "类：Toybox.AntPlus.RunningDynamicsData"
 ---
 # 类：Toybox.AntPlus.RunningDynamicsData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 所有跑步动态信息。字段可能返回 `null`，因此在使用这些值之前应检查是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -166,11 +166,11 @@ API 级别 2.4.0
 
 经过过滤的瞬时步频（0 - 255 步/分钟）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -178,11 +178,11 @@ Returns:
 
 经过过滤的瞬时触地平衡（0 - 100%，精度为 0.03125%）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -190,11 +190,11 @@ Returns:
 
 经过过滤的瞬时触地时间（0 - 2047 毫秒）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -202,11 +202,11 @@ Returns:
 
 经过过滤的瞬时站立时间百分比（0 - 100%，精度为 0.25%）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -214,11 +214,11 @@ Returns:
 
 步数（会循环计数！）（0 - 127 步）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -226,11 +226,11 @@ Returns:
 
 步长（0 - 8191 mm）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -238,11 +238,11 @@ Returns:
 
 经过过滤的瞬时垂直振幅（0 - 2047 毫米，精度为 0.25 毫米）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -250,11 +250,11 @@ Returns:
 
 垂直比率（0 - 100%，精度为 0.03125%）
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -262,10 +262,10 @@ Returns:
 
 步行时为 `true`，跑步时为 `false`
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)

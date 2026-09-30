@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Number"
+title: "类：Toybox.Lang.Number"
 ---
 # 类：Toybox.Lang.Number
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 数字表示一个 32 位有符号整数。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -63,14 +63,14 @@ API 级别 1.0.0
 
 获取 Number 的绝对值。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Number 的绝对值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -78,25 +78,25 @@ API 级别 1.0.0
 
 将 self 的数值与其他数值进行比较。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -147,7 +147,7 @@ width
 
 仅支持数字（不支持 \*）
 
-Example:
+示例：
 
 使用前导零格式化时间
 
@@ -163,7 +163,7 @@ var myTime = Lang.format(
 );
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
@@ -175,7 +175,7 @@ Returns:
 - [Formatted output forum thread](https://forums.garmin.com/showthread.php?255191-Formatted-Output)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -183,14 +183,14 @@ API 级别 1.0.0
 
 将 Number 转换为 Char。
 
-Returns:
+返回：
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
     Number 的 Char 表示
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -198,14 +198,14 @@ API 级别 1.3.0
 
 将 Number 转换为 Double。
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     Number 的 Double 表示
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -213,14 +213,14 @@ API 级别 1.0.0
 
 将 Number 转换为 Float。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Number 的 Float 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -228,14 +228,14 @@ API 级别 1.0.0
 
 将 Number 转换为 Long。
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     Number 的 Long 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -243,13 +243,13 @@ API 级别 1.0.0
 
 将 Number 转换为 Number。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Number 的 Number 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

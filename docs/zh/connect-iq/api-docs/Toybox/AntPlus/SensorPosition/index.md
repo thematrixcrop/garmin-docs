@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.SensorPosition"
+title: "类：Toybox.AntPlus.SensorPosition"
 ---
 # 类：Toybox.AntPlus.SensorPosition
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 有关传感器在身体上位置的信息。字段可能会返回 `null`，因此应在使用前检查值是否为 `null`。
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -138,11 +138,11 @@ API 级别 2.4.0
 
 [AntPlus.BODY\_LOCATION\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module)
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [AntPlus.BodyLocation](/connect-iq/api-docs/Toybox/AntPlus/#BodyLocation-module)
 
@@ -150,10 +150,10 @@ Returns:
 
 [AntPlus.SENSOR\_ORIENTATION\_\*](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module)
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
-Returns:
+返回：
 
 - [AntPlus.SensorOrientation](/connect-iq/api-docs/Toybox/AntPlus/#SensorOrientation-module)

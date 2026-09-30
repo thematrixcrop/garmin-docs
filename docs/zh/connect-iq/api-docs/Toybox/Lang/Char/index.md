@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Char"
+title: "类：Toybox.Lang.Char"
 ---
 # 类：Toybox.Lang.Char
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Chars are Unicode characters.
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -51,25 +51,25 @@ API 级别 1.3.0
 
 将 self 的 Unicode 码点与其他某个数值进行比较。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -80,14 +80,14 @@ Throws:
 
 将 Char 转换为小写。
 
-Returns:
+返回：
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
     一个新的小写 Char
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -95,14 +95,14 @@ API 级别 1.3.0
 
 将 Char 转换为 Number。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     解释为 Number 的 Char 的 UTF-32 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -110,14 +110,14 @@ API 级别 1.3.0
 
 将 Char 转换为 String。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Char 的 String 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -125,13 +125,13 @@ API 级别 1.3.0
 
 将 Char 转换为大写。
 
-Returns:
+返回：
 
 - [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/) —
 
     一个新的大写 Char
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0

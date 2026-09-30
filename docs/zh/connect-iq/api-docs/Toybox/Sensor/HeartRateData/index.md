@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.HeartRateData"
+title: "类：Toybox.Sensor.HeartRateData"
 ---
 # 类：Toybox.Sensor.HeartRateData
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -29,7 +29,7 @@ Toybox.Lang.Object
 - [Beat-to-beat interval or "Interbeat interval"](https://en.wikipedia.org/wiki/Interbeat_interval)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -190,10 +190,10 @@ API 级别 3.0.0
 
 最近的逐次心跳间隔数据，表示为由 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 对象组成的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为毫秒 (ms)。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)

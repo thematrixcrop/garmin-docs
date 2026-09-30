@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.MapMarker"
+title: "类：Toybox.WatchUi.MapMarker"
 ---
 # 类：Toybox.WatchUi.MapMarker
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ MapMarker 对象的基类。
 
 MapMarker 用于保存一个 [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 或 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 枚举值，以及用于标记图像在 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 中作为标记图标时“热点”的相应 `x, y` 值。此类还包含 MapMarker 应在地图上显示的位置 [Location](/connect-iq/api-docs/Toybox/Position/Location/)。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -151,14 +151,14 @@ API 级别 3.0.0
 
 获取 MapMarker 的位置。
 
-Returns:
+返回：
 
 - [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) —
 
     此 MapMarker 的位置，类型为 Location 对象
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -166,18 +166,18 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
     MapMarker 对象将在地图上渲染的位置
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -188,7 +188,7 @@ Throws:
 
 设置位图图标，以便在 [MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 上用于 MapMarker 对象。
 
-Parameters:
+参数：
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -203,11 +203,11 @@ Parameters:
     位图上热点的 `y` 位置，以像素（px）为单位。用于将热点与 MapMarker 的纬度值对齐。此值是必需的，但与 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 类型一起使用时会被忽略。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([WatchUi.InvalidPointException](/connect-iq/api-docs/Toybox/WatchUi/InvalidPointException/)) —
 
@@ -224,7 +224,7 @@ Throws:
 
 ### **setLabel(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/))** as **Void**
 
-Parameters:
+参数：
 
 - label — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -236,6 +236,6 @@ Parameters:
 - [Core Topics - String Resources](/connect-iq/core-topics/resources/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

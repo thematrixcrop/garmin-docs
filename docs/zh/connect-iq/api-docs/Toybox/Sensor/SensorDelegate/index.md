@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Sensor.SensorDelegate"
+title: "类：Toybox.Sensor.SensorDelegate"
 ---
 # 类：Toybox.Sensor.SensorDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 系统会调用此对象的成员，以委托扫描和配对不同的传感器。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -131,21 +131,21 @@ API 级别 5.1.0
 
 在原生传感器配对过程中，由系统调用以配对传感器。
 
-Parameters:
+参数：
 
 - sensor —
 
     [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果传感器成功配对，则为 true；否则为 false
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -155,14 +155,14 @@ API 级别 5.1.0
 
 在原生传感器配对过程中，由系统调用以启动传感器扫描过程。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果扫描成功启动，则为 true，否则为 false
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -172,21 +172,21 @@ API 级别 5.1.0
 
 在原生传感器移除过程中，由系统调用以取消传感器配对。
 
-Parameters:
+参数：
 
 - sensor —
 
     [Toybox::Sensor::SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果传感器成功配对，则为 true；否则为 false
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -196,13 +196,13 @@ API 级别 5.1.0
 
 由系统调用，以检查是否需要配对传感器。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果需要传感器配对，则为 true，否则为 false
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0

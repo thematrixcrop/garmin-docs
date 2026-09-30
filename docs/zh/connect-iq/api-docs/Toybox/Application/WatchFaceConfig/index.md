@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Application.WatchFaceConfig"
+title: "模块：Toybox.Application.WatchFaceConfig"
 ---
 # 模块：Toybox.Application.WatchFaceConfig
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.Application.WatchFaceConfig"
 
 WatchFaceConfig 模块便于访问持久化的表盘配置。表盘可以有多个配置设置，每个设置都由唯一标识符表示。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -98,14 +98,14 @@ API 级别 5.1.0
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     如果表盘不支持表盘配置，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -113,7 +113,7 @@ API 级别 5.1.0
 
 返回给定唯一标识符对应的表盘配置设置。
 
-Parameters:
+参数：
 
 - configId — (Id) —
 
@@ -151,14 +151,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [WatchFaceConfig.Settings](/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings/) —
 
     如果表盘不支持表盘配置，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -166,7 +166,7 @@ API 级别 5.1.0
 
 使用给定的唯一标识符 `configId` 设置或更新表盘配置设置。
 
-Parameters:
+参数：
 
 - configId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -208,11 +208,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

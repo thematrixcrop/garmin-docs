@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Graphics.BitmapReference"
+title: "类：Toybox.Graphics.BitmapReference"
 ---
 # 类：Toybox.Graphics.BitmapReference
 
-Inherits:
+继承：
 
 Toybox.Graphics.ResourceReference
 
@@ -20,7 +20,7 @@ Toybox.Graphics.ResourceReference
 
 引用从图形内存池分配的位图资源的 Object
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
@@ -41,18 +41,18 @@ API 级别 4.0.0
 
 加载资源，然后获取所引用位图资源的高度
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图高度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.OutOfGraphicsMemoryException](/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException/)) —
 
@@ -63,18 +63,18 @@ Throws:
 
 加载资源，然后获取所引用位图资源的宽度
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     位图宽度（像素）
 
 
-Since:
+起始版本：
 
 API 级别 4.0.0
 
-Throws:
+抛出：
 
 - ([Graphics.OutOfGraphicsMemoryException](/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException/)) —
 

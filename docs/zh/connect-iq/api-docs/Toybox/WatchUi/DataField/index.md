@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.DataField"
+title: "类：Toybox.WatchUi.DataField"
 ---
 # 类：Toybox.WatchUi.DataField
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -35,7 +35,7 @@ DataField 是一种特殊的 View，通过 [compute()](/connect-iq/api-docs/Toyb
 
 系统在显示 Data Field 时会调用从 View 继承的 onUpdate() 方法。由于 compute() 和 onUpdate() 是异步的，因此无法保证在 onUpdate() 之前调用 compute()。因此，不应在 compute() 中初始化变量。
 
-Example:
+示例：
 
 显示当前心率的 DataField
 
@@ -79,7 +79,7 @@ class MyHRField extends WatchUi.DataField {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -282,7 +282,7 @@ API 级别 1.0.0
 
 ### Obscurity
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -328,7 +328,7 @@ API 级别 1.0.0
 
 创建圈的原因
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -552,7 +552,7 @@ API 级别 5.2.2
 
 ### LapInfoType，格式为 { :lapTrigger as [DataField.LapTriggerType](/connect-iq/api-docs/Toybox/WatchUi/DataField/#LapTriggerType-module) }
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -601,13 +601,13 @@ API 级别 1.0.0
 
 ### **RouteTarget** as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **Workout** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Activity.WorkoutStepInfo](/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo/)\> or [PersistedContent.Workout](/connect-iq/api-docs/Toybox/PersistedContent/Workout/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -619,14 +619,14 @@ API 级别 1.0.0
 
 此方法每秒调用一次，并自动向 DataField 对象提供 [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)，以供显示或进一步计算。实现 DataField 时必须重写 `compute()`。
 
-Parameters:
+参数：
 
 - info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
 
     更新后的 Activity.Info 对象。
 
 
-Example:
+示例：
 
 ```
 function compute(info) {
@@ -645,7 +645,7 @@ function compute(info) {
 - [Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -655,7 +655,7 @@ API 级别 1.0.0
 
 要将自定义活动数据记录到 FIT 文件，必须先创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)，以允许数据字段访问 FIT 记录，同时不允许访问会话。创建后，通过更改字段中的数据值来更新 FIT 文件中的字段。
 
-Parameters:
+参数：
 
 - name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -686,7 +686,7 @@ Parameters:
         可选。表示显示单位的 String（例如 "mph"、"ft"、"Pa"）
 
 
-Returns:
+返回：
 
 - [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
@@ -697,7 +697,7 @@ Returns:
 - [The Messages Sheet in Profile.xlsx included with the FIT SDK for native field numbers](https://www.thisisant.com/resources/fit)
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -707,7 +707,7 @@ API 级别 1.3.0
 
 某些设备提供全局数据字段背景颜色设置。此方法将返回该设置的当前值，值为 [Graphics.COLOR\_WHITE](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 或 [Graphics.COLOR\_BLACK](/connect-iq/api-docs/Toybox/Graphics/#COLOR_BLACK-const)。
 
-Returns:
+返回：
 
 - [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) —
 
@@ -719,7 +719,7 @@ Returns:
 - [Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -729,14 +729,14 @@ API 级别 1.2.0
 
 非矩形屏幕的某些部分会被遮挡。例如，圆形屏幕实际上会截去方形屏幕的角部。此方法返回由 WatchUi.DataField.OBSCURE\_\* 常量定义的枚举值之和，这些值与设备上被遮挡的屏幕区域相匹配。此方法仅可在调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 期间使用。
 
-Returns:
+返回：
 
 - [DataField.Obscurity](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Obscurity-module) —
 
     一个 [WatchUi.DataField.OBSCURE\_\*](/connect-iq/api-docs/Toybox/WatchUi/DataField/#OBSCURE_LEFT-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -744,7 +744,7 @@ API 级别 1.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -907,7 +907,7 @@ API 级别 1.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -1084,7 +1084,7 @@ API 级别 3.0.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1094,7 +1094,7 @@ API 级别 1.3.0
 
 向当前活动添加计圈时会调用此方法。计圈记录写入 FIT 文件后会触发通知。
 
-Parameters:
+参数：
 
 - trigger —
 
@@ -1148,12 +1148,12 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - 如果已处理，则为 true，否则为 false。如果返回 false，则会调用 DataField.onTimerLap()。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -1330,7 +1330,7 @@ API 级别 5.2.2
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1507,7 +1507,7 @@ API 级别 1.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1684,7 +1684,7 @@ API 级别 1.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -1737,7 +1737,7 @@ API 级别 1.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -1790,7 +1790,7 @@ API 级别 5.2.2
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.2.2
 
@@ -1967,7 +1967,7 @@ API 级别 5.2.2
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -2144,7 +2144,7 @@ API 级别 1.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -2288,7 +2288,7 @@ API 级别 1.3.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
@@ -2451,7 +2451,7 @@ API 级别 3.2.0
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -2461,7 +2461,7 @@ API 级别 3.0.0
 
 更改当前活动的路线目标。仅适用于 `datafield` 应用类型，并且需要 `ActivityControl` 权限。
 
-Parameters:
+参数：
 
 - target — ([DataField.RouteTarget](/connect-iq/api-docs/Toybox/WatchUi/DataField/#RouteTarget-named_type)) —
 
@@ -2520,14 +2520,14 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果设置了活动位置，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -2562,7 +2562,7 @@ API 级别 5.2.0
 - workout 的 subsport 必须与当前活动匹配，或设置为 generic、all 或 invalid。
 
 
-Parameters:
+参数：
 
 - workout — ([DataField.Workout](/connect-iq/api-docs/Toybox/WatchUi/DataField/#Workout-named_type)) —
 
@@ -2639,7 +2639,7 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -2653,7 +2653,7 @@ Returns:
 - [FIT SDK](https://developer.garmin.com/fit/overview/)
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -2661,7 +2661,7 @@ API 级别 5.2.0
 
 显示警告。
 
-Parameters:
+参数：
 
 - alertView — ([WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) —
 
@@ -2806,11 +2806,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 

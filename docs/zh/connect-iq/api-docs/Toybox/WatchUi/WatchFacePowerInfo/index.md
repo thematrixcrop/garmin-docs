@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.WatchFacePowerInfo"
+title: "类：Toybox.WatchUi.WatchFacePowerInfo"
 ---
 # 类：Toybox.WatchUi.WatchFacePowerInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [Toybox.WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/)
 
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
@@ -61,11 +61,11 @@ API 级别 2.3.0
 
 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 完成平均部分更新执行所需的时间。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -76,11 +76,11 @@ Returns:
 
 允许 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 执行部分更新所用的最长时间。
 
-Since:
+起始版本：
 
 API 级别 2.3.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 

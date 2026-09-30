@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.FitnessEquipment"
+title: "类：Toybox.AntPlus.FitnessEquipment"
 ---
 # 类：Toybox.AntPlus.FitnessEquipment
 
-Inherits:
+继承：
 
 Toybox.AntPlus.Device
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.Device
 
 表示一个健身器材设备实例。
 
-Example:
+示例：
 
 ```
 using Toybox.AntPlus;
@@ -38,7 +38,7 @@ fitnessEquipment.controlEquipment(TRAINER_RESISTANCE, 30); //sets basic resistan
 // ...etc
 ```
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -109,7 +109,7 @@ API 级别 2.4.0
 
 控制健身器材。注意：设置与特定训练模式相关的值会使健身器材切换到该模式。例如，如果支持该模式，controlEquipment(TRAINER\_TARGET\_POWER, 100) 会将健身器材设置为目标功率模式，并将目标功率设为 100W。超出范围的值将设置为最近的范围边界值。
 
-Parameters:
+参数：
 
 - setting — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -120,7 +120,7 @@ Parameters:
     要发送的设置值；如果处于设置模式，则为 [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) 枚举值。
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -128,14 +128,14 @@ API 级别 2.4.0
 
 获取 FE 的当前训练数据
 
-Returns:
+返回：
 
 - [AntPlus.FitnessEquipmentData](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData/) —
 
     健身设备训练数据
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -143,14 +143,14 @@ API 级别 2.4.0
 
 获取健身设备在基本阻力训练模式下的阻力百分比设置。调用此方法前，应设置阻力值并处于基本阻力训练模式，否则可能返回 `null` 或默认值。
 
-Returns:
+返回：
 
 - [AntPlus.ResistanceSettings](/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings/) —
 
     健身设备阻力设置
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -158,14 +158,14 @@ API 级别 2.4.0
 
 获取风力和赛道阻力模拟设置。调用此方法前，应设置风力和赛道设置，并处于模拟训练模式，否则可能返回 `null` 或默认值。
 
-Returns:
+返回：
 
 - [AntPlus.SimulationSettings](/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings/) —
 
     健身设备模拟设置
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -173,14 +173,14 @@ API 级别 2.4.0
 
 获取健身设备在目标功率训练模式下的目标功率设置。调用此方法前，应设置目标功率并处于目标功率训练模式，否则可能返回 `null` 或默认值。
 
-Returns:
+返回：
 
 - [AntPlus.TargetPowerSettings](/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings/) —
 
     健身设备目标功率设置
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -188,14 +188,14 @@ API 级别 2.4.0
 
 获取健身设备的当前训练模式和支持的模式
 
-Returns:
+返回：
 
 - [AntPlus.FitnessEquipmentMode](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode/) —
 
     健身设备训练模式
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -203,14 +203,14 @@ API 级别 2.4.0
 
 获取健身设备在模拟训练模式下的用户配置设置。调用此方法前，应设置用户设置值并处于模拟模式，否则可能返回 `null` 或默认值。
 
-Returns:
+返回：
 
 - [AntPlus.UserSettings](/connect-iq/api-docs/Toybox/AntPlus/UserSettings/) —
 
     健身设备用户配置文件设置
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -218,14 +218,14 @@ API 级别 2.4.0
 
 Constructor
 
-Parameters:
+参数：
 
 - listener — ([AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/)) —
 
     健身设备实例可以选择将 [FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0
 
@@ -233,13 +233,13 @@ API 级别 2.4.0
 
 设置训练器模式。应检查健身设备支持的模式，因为如果不支持该模式，健身设备将忽略此命令。
 
-Parameters:
+参数：
 
 - mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     [TRAINER\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#TRAINER_MODE_BASIC_RESISTANCE-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.4.0

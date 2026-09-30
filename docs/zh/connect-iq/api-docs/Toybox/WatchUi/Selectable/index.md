@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.Selectable"
+title: "类：Toybox.WatchUi.Selectable"
 ---
 # 类：Toybox.WatchUi.Selectable
 
-Inherits:
+继承：
 
 Toybox.WatchUi.Drawable
 
@@ -29,7 +29,7 @@ Toybox.WatchUi.Drawable
 
 请参阅 SDK 中随附的 Selectable 示例，了解 Selectable 类的使用示例
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -98,11 +98,11 @@ Selectable 对象的默认状态。
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的默认状态
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -112,11 +112,11 @@ Selectable 对象的禁用状态。
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的禁用状态
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -126,11 +126,11 @@ Selectable 对象的高亮状态。
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的高亮状态
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -140,11 +140,11 @@ Selectable 对象的选中状态。
 
 一个 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)、[Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 常量或格式为 0xRRGGBB 的 24 位整数，表示 Selectable 的选中状态
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)
 
@@ -156,14 +156,14 @@ Returns:
 
 此方法假定设备上下文已经配置为正确的选项。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     设备上下文
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -171,7 +171,7 @@ API 级别 2.1.0
 
 获取 Selectable 对象的当前状态。
 
-Returns:
+返回：
 
 - [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) —
 
@@ -187,7 +187,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -195,7 +195,7 @@ API 级别 2.1.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -239,7 +239,7 @@ Parameters:
 - [Drawable.initialize()](/connect-iq/api-docs/Toybox/WatchUi/Drawable/#initialize-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
@@ -247,7 +247,7 @@ API 级别 2.1.0
 
 设置 Selectable 对象的当前状态。
 
-Parameters:
+参数：
 
 - state — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
@@ -263,10 +263,10 @@ Parameters:
 
 
 
-Since:
+起始版本：
 
 API 级别 2.1.0
 
-Throws:
+抛出：
 
 - ([WatchUi.InvalidSelectableStateException](/connect-iq/api-docs/Toybox/WatchUi/InvalidSelectableStateException/))

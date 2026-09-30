@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.GlanceView"
+title: "类：Toybox.WatchUi.GlanceView"
 ---
 # 类：Toybox.WatchUi.GlanceView
 
-Inherits:
+继承：
 
 Toybox.WatchUi.View
 
@@ -26,7 +26,7 @@ GlanceView 不支持 [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)
 
 在速览模式下运行的小组件禁止使用页面控制功能，因为该模式下只允许有一个视图。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -170,6 +170,6 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.1.0

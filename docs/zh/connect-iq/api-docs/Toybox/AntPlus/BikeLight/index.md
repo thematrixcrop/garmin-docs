@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeLight"
+title: "类：Toybox.AntPlus.BikeLight"
 ---
 # 类：Toybox.AntPlus.BikeLight
 
-Inherits:
+继承：
 
 Toybox.AntPlus.CommonData
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.CommonData
 
 表示自行车灯传感器的类。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -208,11 +208,11 @@ API 级别 2.2.0
 
 灯光的 [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 模式。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
@@ -220,11 +220,11 @@ Returns:
 
 灯光的 [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) 类型。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
@@ -234,14 +234,14 @@ Returns:
 
 获取自行车灯支持的标准灯光模式和自定义灯光模式列表。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     支持的 [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 值列表；如果未知，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -249,7 +249,7 @@ API 级别 2.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -259,13 +259,13 @@ API 级别 2.2.0
 
 发送灯光模式之前，应检查支持的模式，因为灯光会忽略进入其不支持模式的命令。在此处设置模式的灯光将不会受 Light Network Mode 控制，直到恢复这些模式，或直到用户在 ConnectIQ 外部更改 Light Network Mode。
 
-Parameters:
+参数：
 
 - mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
     [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举数值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

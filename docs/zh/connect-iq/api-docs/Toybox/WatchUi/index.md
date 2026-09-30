@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.WatchUi"
+title: "模块：Toybox.WatchUi"
 ---
 # 模块：Toybox.WatchUi
 
@@ -13,7 +13,7 @@ WatchUi 提供了几个表示视图（即设备屏幕上显示内容）的类。
 
 key types 枚举中列在 EXTENDED\_KEYS (16) 之后的所有键，都是在 ConnectIQ 1.1.2 版本之后添加的。在计算这些键之前，请使用 `has` 检查确认这些键是否可用：if (Toybox.WatchUi has :EXTENDED\_KEYS) [...](/connect-iq/api-docs/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -42,7 +42,7 @@ API 级别 1.0.0
 
 ### Key
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -275,7 +275,7 @@ API 级别 5.1.1
 
 ### AnimationType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -319,7 +319,7 @@ API 级别 1.0.0
 
 ### KeyPressType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -354,7 +354,7 @@ API 级别 1.1.2
 
 ### ClickType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -389,7 +389,7 @@ API 级别 1.0.0
 
 ### MapMarkerIcon
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -406,7 +406,7 @@ API 级别 3.0.0
 
 ### MapMode
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -432,7 +432,7 @@ API 级别 3.0.0
 
 ### SwipeDirection
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -476,7 +476,7 @@ API 级别 1.0.0
 
 ### DragType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -511,7 +511,7 @@ API 级别 3.3.0
 
 ### ControlBarLeftButton
 
-Since:
+起始版本：
 
 API 级别 4.1.2
 
@@ -529,7 +529,7 @@ API 级别 4.1.2
 
 ### ControlBarRightButton
 
-Since:
+起始版本：
 
 API 级别 4.1.2
 
@@ -549,7 +549,7 @@ API 级别 4.1.2
 
 设置模拟时钟指针的状态
 
-Since:
+起始版本：
 
 API 级别 3.3.0
 
@@ -586,7 +586,7 @@ API 级别 3.3.0
 
 WatchFace 配置类型。
 
-Since:
+起始版本：
 
 API 级别 5.1.0
 
@@ -616,7 +616,7 @@ API 级别 5.1.0
 
 支持的设备的菜单主题
 
-Since:
+起始版本：
 
 API 级别 4.1.8
 
@@ -678,7 +678,7 @@ API 级别 4.1.8
 
 ### Confirm
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -700,7 +700,7 @@ API 级别 1.0.0
 
 此枚举可能会在 System 3 之后移除。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -780,7 +780,7 @@ API 级别 1.0.0
 
 ### SlideType
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -842,7 +842,7 @@ View 淡入。
 
 ### LayoutVerticalAlignment
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -886,7 +886,7 @@ API 级别 1.2.0
 
 ### LayoutHorizontalAlignment
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -930,7 +930,7 @@ API 级别 1.2.0
 
 ### AnimationEvent
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -958,7 +958,7 @@ API 级别 3.1.0
 
 ActionMenu 的主题
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -986,7 +986,7 @@ API 级别 3.4.0
 
 用于 makeReviewTokenRequest 返回状态的枚举类
 
-Since:
+起始版本：
 
 API 级别 3.4.2
 
@@ -1081,25 +1081,25 @@ API 级别 3.4.2
 
 ### **InputDelegates** as [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) or [WatchUi.BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/) or [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/) or [WatchUi.MenuInputDelegate](/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate/) or [WatchUi.NumberPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/NumberPickerDelegate/) or [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/) or [WatchUi.TextPickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/TextPickerDelegate/) or [WatchUi.WatchFaceDelegate](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/) or [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) or [WatchUi.ViewLoopDelegate](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopDelegate/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **Resource** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) or [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/) or [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### TouchEventSettings，格式为 { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **Views** as [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) or [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) or [WatchUi.TextPicker](/connect-iq/api-docs/Toybox/WatchUi/TextPicker/) or [WatchUi.ProgressBar](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/) or [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) or [WatchUi.NumberPicker](/connect-iq/api-docs/Toybox/WatchUi/NumberPicker/) or [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1115,7 +1115,7 @@ Animate 通过随时间改变对象属性来工作，例如 Drawable 的 x 位�
 
 如果从后台应用或数据字段应用调用，或在低功耗模式下从表盘调用，将导致应用崩溃
 
-Parameters:
+参数：
 
 - object — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -1146,7 +1146,7 @@ Parameters:
     动画完成时调用的 Method；可以为 `null`
 
 
-Example:
+示例：
 
 将位图从左向右横跨屏幕移动
 
@@ -1168,7 +1168,7 @@ WatchUi.animate(square, :locX, Ui.ANIM_TYPE_LINEAR, 10, 200, 10, null);
 - [Toybox.WatchUi.Bitmap](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1183,7 +1183,7 @@ API 级别 1.0.0
 - [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.7
 
@@ -1191,7 +1191,7 @@ API 级别 3.1.7
 
 配置触摸事件设置；仅当 Watch Apps 和音频内容提供程序以前台模式运行时允许配置。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -1257,18 +1257,18 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果操作成功，则为 true，否则为 false。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -1283,14 +1283,14 @@ Throws:
 
 获取 UI 中当前显示的视图
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     包含视图和委托的数组。
 
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -1310,14 +1310,14 @@ API 级别 3.4.0
 
 :::
 
-Returns:
+返回：
 
 - [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) —
 
     如果不存在子屏幕，或者存在虚拟子屏幕但未用于普通视图，则为 object 或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.2.7
 
@@ -1380,14 +1380,14 @@ API 级别 3.2.7
 
 :::
 
-Returns:
+返回：
 
 - [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
     当前触摸事件设置。
 
 
-Since:
+起始版本：
 
 API 级别 5.2.0
 
@@ -1399,14 +1399,14 @@ API 级别 5.2.0
 
 在 CIQ 4.0.0 及更高版本中，[Toybox::Graphics::BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 和 [Toybox::Graphics::FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/) 会针对 [Toybox::WatchUi::BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) 和 [Toybox::WatchUi::FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/) 返回。
 
-Parameters:
+参数：
 
 - resource — ([Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
     项目 `resources.xml` 文件中定义的资源标识符
 
 
-Example:
+示例：
 
 加载 String 资源
 
@@ -1420,11 +1420,11 @@ using Toybox.WatchUi;
 var banana = WatchUi.loadResource(Rez.Strings.AppName);
 ```
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [WatchUi.AnimationResource](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/), [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [WatchUi.FontResource](/connect-iq/api-docs/Toybox/WatchUi/FontResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/), [Graphics.FontReference](/connect-iq/api-docs/Toybox/Graphics/FontReference/)
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1432,7 +1432,7 @@ API 级别 1.0.0
 
 发起请求以邀请用户评价此应用
 
-Parameters:
+参数：
 
 - callback — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
@@ -1530,7 +1530,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.4.2
 
@@ -1538,18 +1538,18 @@ API 级别 3.4.2
 
 从 View 堆栈中弹出当前 View。
 
-Parameters:
+参数：
 
 - transition — ([WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) —
 
     一个 [WatchUi.SLIDE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SLIDE_IMMEDIATE-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -1560,7 +1560,7 @@ Throws:
 
 将 View 推入 View 堆栈。
 
-Parameters:
+参数：
 
 - view — ([WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)) —
 
@@ -1575,11 +1575,11 @@ Parameters:
     一个 [WatchUi.SLIDE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SLIDE_IMMEDIATE-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -1599,7 +1599,7 @@ Throws:
 - [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -1611,7 +1611,7 @@ API 级别 1.0.0
 
 操作菜单会在用户选择菜单项或按下返回按钮时自动关闭。
 
-Parameters:
+参数：
 
 - menu — ([WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/)) —
 
@@ -1724,7 +1724,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -1732,7 +1732,7 @@ API 级别 3.4.0
 
 向显示屏推送 Toast 通知
 
-Parameters:
+参数：
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -1857,7 +1857,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.4.0
 
@@ -1865,7 +1865,7 @@ API 级别 3.4.0
 
 启动应用评价 UI 流程
 
-Parameters:
+参数：
 
 - token — ([WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/)) —
 
@@ -1963,11 +1963,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 3.4.2
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
@@ -1982,7 +1982,7 @@ Throws:
 
 在 ConnectIQ 3.1 之前，此方法仅支持切换到用户定义的 View 对象，并且对于给定 View 的委托，仅接受 InputDelegate 或 BehaviorDelegate 对象。
 
-Parameters:
+参数：
 
 - view — ([WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)) —
 
@@ -1997,11 +1997,11 @@ Parameters:
     一个 [WatchUi.SLIDE\_\*](/connect-iq/api-docs/Toybox/WatchUi/#SLIDE_IMMEDIATE-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
-Throws:
+抛出：
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 

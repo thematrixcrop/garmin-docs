@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.Media"
+title: "模块：Toybox.Media"
 ---
 # 模块：Toybox.Media
 
@@ -9,7 +9,7 @@ Media 模块提供用于实现音频内容提供商应用的对象和方法。
 
 其中包括用于管理已下载媒体内容的接口，以及用于向系统提供播放所需信息的接口。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -128,7 +128,7 @@ API 级别 3.0.0
 
 ### PlaybackPosition
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -145,7 +145,7 @@ API 级别 3.0.0
 
 ### ContentType
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -171,7 +171,7 @@ API 级别 3.0.0
 
 ### Encoding
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -224,7 +224,7 @@ WAV 音频编码类型
 
 ### ImageFormat
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -259,7 +259,7 @@ PNG 媒体内容图像格式
 
 ### PlaybackControl
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -366,7 +366,7 @@ API 级别 3.0.3
 
 ### SongEvent
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -474,7 +474,7 @@ API 级别 4.2.4
 
 ### RepeatMode
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -509,7 +509,7 @@ API 级别 3.0.0
 
 ### ButtonState
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -589,7 +589,7 @@ API 级别 3.0.3
 
 ### ButtonImage
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -670,14 +670,14 @@ API 级别 3.0.3
 
 删除单个缓存的媒体项。
 
-Parameters:
+参数：
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
     要删除的 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象的 ContentRef
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -685,14 +685,14 @@ API 级别 3.0.0
 
 获取媒体缓存的当前大小统计信息。
 
-Returns:
+返回：
 
 - [Media.CacheStatistics](/connect-iq/api-docs/Toybox/Media/CacheStatistics/) —
 
     当前 CacheStatistics 对象
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -700,25 +700,25 @@ API 级别 3.0.0
 
 根据 ID 从系统中已持久化的数据获取 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 对象。
 
-Parameters:
+参数：
 
 - contentRef — ([Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/)) —
 
     所需媒体 [Content](/connect-iq/api-docs/Toybox/Media/Content/) 的 ContentRef 对象
 
 
-Returns:
+返回：
 
 - [Media.Content](/connect-iq/api-docs/Toybox/Media/Content/) —
 
     所需的 Content 对象
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -735,7 +735,7 @@ Throws:
 
 ContentRefIterator 用于遍历调用应用在系统上缓存的所有媒体。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -753,15 +753,15 @@ Parameters:
 
 
 
-Returns:
+返回：
 
 - [Media.ContentRefIterator](/connect-iq/api-docs/Toybox/Media/ContentRefIterator/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
@@ -776,7 +776,7 @@ Throws:
 
 发送系统通知以指示同步已完成。
 
-Parameters:
+参数：
 
 - errorMessage — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
@@ -788,7 +788,7 @@ Parameters:
 - [Communications.notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -800,7 +800,7 @@ API 级别 3.0.0
 
 发送系统通知以指示同步的整体进度。
 
-Parameters:
+参数：
 
 - percentageComplete — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -812,7 +812,7 @@ Parameters:
 - [Communications.notifySyncProgress()](/connect-iq/api-docs/Toybox/Communications/#notifySyncProgress-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -820,7 +820,7 @@ API 级别 3.0.0
 
 请求媒体播放器调用 [ContentIterator.getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function)
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -828,7 +828,7 @@ API 级别 3.0.3
 
 删除缓存的媒体内容并重置应用的加密密钥。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -840,14 +840,14 @@ API 级别 3.0.0
 
 [BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) 仅在 CIQ 4.0.0 及更高版本中受支持
 
-Parameters:
+参数：
 
 - albumArt — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)) —
 
     要显示的专辑封面。如果为 `null`，则会显示系统默认的专辑封面。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.10
 
@@ -855,18 +855,18 @@ API 级别 3.0.10
 
 退出当前模式下的 [AudioContentProviderApp](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/)，并以播放模式启动它。
 
-Parameters:
+参数：
 
 - args — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     应用以播放模式启动时传递给 [AudioContentProviderApp.getContentDelegate()](/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp/#getContentDelegate-instance_function) 的可序列化对象。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.SerializationException](/connect-iq/api-docs/Toybox/Lang/SerializationException/)) —
 
@@ -886,7 +886,7 @@ Throws:
 - [Communications.startSync()](/connect-iq/api-docs/Toybox/Communications/#startSync-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -894,6 +894,6 @@ API 级别 3.0.0
 
 如果播放由应用发起，则停止播放。如果播放不是由应用发起的，调用 stopPlayback() 将不会执行任何操作。
 
-Since:
+起始版本：
 
 API 级别 3.1.8

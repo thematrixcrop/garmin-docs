@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ContentDelegate"
+title: "类：Toybox.Media.ContentDelegate"
 ---
 # 类：Toybox.Media.ContentDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用户实现的委托对象，用于响应原生媒体播放器发出的特定媒体事件
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -67,11 +67,11 @@ API 级别 3.0.0
 
 返回一个 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 对象，供系统用于遍历媒体音轨。
 
-Returns:
+返回：
 
 - [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/)
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -79,14 +79,14 @@ API 级别 3.0.0
 
 响应用户广告点击。
 
-Parameters:
+参数：
 
 - adContext — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     已点击广告的上下文信息
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -94,14 +94,14 @@ API 级别 3.0.0
 
 处理 Media Player 中选中的 CustomButton
 
-Parameters:
+参数：
 
 - button — ([Media.CustomButton](/connect-iq/api-docs/Toybox/Media/CustomButton/)) —
 
     被按下的 CustomButton。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -109,7 +109,7 @@ API 级别 3.0.3
 
 响应更改重复播放模式的命令
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -117,7 +117,7 @@ API 级别 3.0.0
 
 响应打开或关闭随机播放的命令。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -125,7 +125,7 @@ API 级别 3.0.0
 
 处理系统发出的歌曲已播放通知。
 
-Parameters:
+参数：
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -140,7 +140,7 @@ Parameters:
     歌曲已播放的时间（以秒为单位），或 [PLAYBACK\_POSITION\_\*](/connect-iq/api-docs/Toybox/Media/#PLAYBACK_POSITION_START-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -150,14 +150,14 @@ API 级别 3.0.0
 
 向下点赞选项是设备媒体播放器的原生功能。当用户在设备上选择向下点赞功能时，会向应用程序发送相应的 onThumbsDown() 事件。
 
-Parameters:
+参数：
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     引用 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -167,14 +167,14 @@ API 级别 3.0.0
 
 向上点赞选项是设备媒体播放器的原生功能。当用户在设备上选择向上点赞功能时，会向应用程序发送相应的 onThumbsUp() 事件。
 
-Parameters:
+参数：
 
 - contentRefId — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     引用 [ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/) 对象的 ID
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -182,13 +182,13 @@ API 级别 3.0.0
 
 将 [ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) 重置到当前播放列表的开头。
 
-Returns:
+返回：
 
 - [Media.ContentIterator](/connect-iq/api-docs/Toybox/Media/ContentIterator/) —
 
     新重置的 ContentIterator 实例
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.LightNetworkListener"
+title: "类：Toybox.AntPlus.LightNetworkListener"
 ---
 # 类：Toybox.AntPlus.LightNetworkListener
 
-Inherits:
+继承：
 
 Toybox.AntPlus.DeviceListener
 
@@ -20,7 +20,7 @@ Toybox.AntPlus.DeviceListener
 
 与 LightNetwork 一起使用的侦听器类。
 
-Example:
+示例：
 
 ```
 using Toybox.WatchUi;
@@ -51,7 +51,7 @@ function onBikeLightUpdate(data) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -228,7 +228,7 @@ API 级别 2.2.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -236,14 +236,14 @@ API 级别 2.2.0
 
 自行车灯数据更新时的回调（最大频率 1Hz）
 
-Parameters:
+参数：
 
 - data — ([AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) —
 
     更新后的灯光信息
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -251,13 +251,13 @@ API 级别 2.2.0
 
 灯光网络状态更改时的回调
 
-Parameters:
+参数：
 
 - data — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
     [LIGHT\_NETWORK\_STATE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_NETWORK_STATE_FORMED-const) 枚举值
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

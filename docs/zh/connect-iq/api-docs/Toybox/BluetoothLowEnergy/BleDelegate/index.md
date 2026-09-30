@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.BluetoothLowEnergy.BleDelegate"
+title: "类：Toybox.BluetoothLowEnergy.BleDelegate"
 ---
 # 类：Toybox.BluetoothLowEnergy.BleDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 应用必须扩展此类，并使用 [setDelegate()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setDelegate-instance_function) 注册一个实例到 BLE 子系统，以支持异步操作。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -77,7 +77,7 @@ API 级别 3.1.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -85,7 +85,7 @@ API 级别 3.1.0
 
 通过启用该特征的 CCCD 中相应的位来启用通知或指示后，每次特征发生更改时都会调用此函数。
 
-Parameters:
+参数：
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
@@ -96,7 +96,7 @@ Parameters:
     特征的更新值
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -104,7 +104,7 @@ API 级别 3.1.0
 
 使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestRead-instance_function) 请求读取特征后，操作完成时将调用此函数。
 
-Parameters:
+参数：
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
@@ -119,7 +119,7 @@ Parameters:
     已读取的特征值。如果状态不是 [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -127,7 +127,7 @@ API 级别 3.1.0
 
 使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/#requestWrite-instance_function) 请求写入特征后，操作完成时将调用此函数。
 
-Parameters:
+参数：
 
 - characteristic — ([BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)) —
 
@@ -138,7 +138,7 @@ Parameters:
     表示操作结果的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -146,7 +146,7 @@ API 级别 3.1.0
 
 设备配对后，将在建立连接后调用此方法
 
-Parameters:
+参数：
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
@@ -157,7 +157,7 @@ Parameters:
     一个表示连接状态的 [CONNECTION\_STATE\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#CONNECTION_STATE_DISCONNECTED-const)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -165,7 +165,7 @@ API 级别 3.1.0
 
 使用 [requestRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestRead-instance_function) 请求读取描述符后，操作完成时将调用此函数。
 
-Parameters:
+参数：
 
 - descriptor — ([BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/)) —
 
@@ -180,7 +180,7 @@ Parameters:
     已读取的描述符值。当状态不是 [STATUS\_SUCCESS](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const) 时为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -188,7 +188,7 @@ API 级别 3.1.0
 
 使用 [requestWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/#requestWrite-instance_function) 请求写入描述符后，操作完成时将调用此函数。
 
-Parameters:
+参数：
 
 - descriptor — ([BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/)) —
 
@@ -199,7 +199,7 @@ Parameters:
     表示操作结果的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -207,7 +207,7 @@ API 级别 3.1.0
 
 请求建立新的绑定或重新连接到之前已建立绑定的设备后，将使用当前加密状态调用此函数。
 
-Parameters:
+参数：
 
 - device — ([BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)) —
 
@@ -291,7 +291,7 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 4.2.5
 
@@ -299,7 +299,7 @@ API 级别 4.2.5
 
 注册 UUID 后，此回调将通知注册请求的结果
 
-Parameters:
+参数：
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
@@ -310,7 +310,7 @@ Parameters:
     一个表示调用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 结果的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const)
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -318,14 +318,14 @@ API 级别 3.1.0
 
 如果扫描正在运行，则在收到新的 ScanResults 时调用此函数
 
-Parameters:
+参数：
 
 - scanResults — ([BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) —
 
     自上次调用此回调以来所看到的所有广告的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 对象迭代器
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -333,7 +333,7 @@ API 级别 3.1.0
 
 扫描状态发生修改时，系统将使用新状态以及上次调用 [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function) 的结果状态调用此函数。
 
-Parameters:
+参数：
 
 - scanState — ([BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) —
 
@@ -344,6 +344,6 @@ Parameters:
     上次调用 [setScanState()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#setScanState-instance_function) 的 [STATUS\_\*](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#STATUS_SUCCESS-const) 结果
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.MapTrackView"
+title: "类：Toybox.WatchUi.MapTrackView"
 ---
 # 类：Toybox.WatchUi.MapTrackView
 
-Inherits:
+继承：
 
 Toybox.WatchUi.MapView
 
@@ -24,7 +24,7 @@ Toybox.WatchUi.MapView
 
 这是一个动态视图，地图以设备的当前位置为中心。此地图将显示设备的默认导航图标（即导航箭头）。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -146,6 +146,6 @@ API 级别 3.0.0
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 3.0.0

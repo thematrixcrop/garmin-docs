@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Object"
+title: "类：Toybox.Lang.Object"
 ---
 # 类：Toybox.Lang.Object
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Object 是 Monkey C 类层次结构的根对象。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -51,14 +51,14 @@ API 级别 1.0.0
 
 测试一个 Object 实例是否等于另一个 Object 实例。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Example:
+示例：
 
 ```
 var a = 1;
@@ -68,14 +68,14 @@ a.equals(b); // returns true
 a.equals(c); // returns false
 ```
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     如果对象相等，则为 `true`，否则为 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -90,7 +90,7 @@ API 级别 1.0.0
 - 如果两个 Object 相等，则它们的哈希代码也相等
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -104,7 +104,7 @@ Returns:
 - [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -114,14 +114,14 @@ API 级别 1.0.0
 
 通常在向另一个方法提供回调函数时使用。
 
-Parameters:
+参数：
 
 - methodName — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
     指定 Method 的 Symbol
 
 
-Returns:
+返回：
 
 - [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) —
 
@@ -133,7 +133,7 @@ Returns:
 - [Toybox.Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -141,21 +141,21 @@ API 级别 1.0.0
 
 将 Object 转换为 String。
 
-Example:
+示例：
 
 ```
 var myNumber = 3219;
 var myString = myNumber.toString();
 ```
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Object 的字符串表示。
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -169,7 +169,7 @@ API 级别 1.0.0
 
 不可变类型（Number、Float、Long、Double、Boolean、String）将返回其值。其他 Object 类型将返回 WeakReference 对象。
 
-Returns:
+返回：
 
 - [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) —
 
@@ -181,6 +181,6 @@ Returns:
 - [Toybox.Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

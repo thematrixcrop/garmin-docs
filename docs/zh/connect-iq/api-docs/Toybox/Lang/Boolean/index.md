@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Boolean"
+title: "类：Toybox.Lang.Boolean"
 ---
 # 类：Toybox.Lang.Boolean
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,13 +20,13 @@ Boolean 对象表示 true 或 false 值。
 
 可以使用 `true` 或 `false` 关键字创建 Boolean。
 
-Example:
+示例：
 
 ```
 var myBoolean = true;
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -47,25 +47,25 @@ API 级别 1.0.0
   considered numerically zero and true is considered numerically 1.
 ```
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

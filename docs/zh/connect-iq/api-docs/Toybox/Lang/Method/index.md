@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Method"
+title: "类：Toybox.Lang.Method"
 ---
 # 类：Toybox.Lang.Method
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -27,7 +27,7 @@ Method 是表示回调的类，也可以是作为参数传递给另一个函数�
 - [Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/)
 
 
-Example:
+示例：
 
 将回调函数与计时器配合使用
 
@@ -44,7 +44,7 @@ myTimer = new Timer.Timer();
 myTimer.start(method(:timerCallback), 1000, true);
 ```
 
-Example:
+示例：
 
 调用方法
 
@@ -73,7 +73,7 @@ enum {
 var elevationIter = sensorIterator(ELEVATION, {:period => 10 });
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -103,7 +103,7 @@ API 级别 1.0.0
 - 如果两个 Object 相等，则它们的哈希代码也相等
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -117,7 +117,7 @@ Returns:
 - [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -125,7 +125,7 @@ API 级别 1.0.0
 
 方法构造函数。
 
-Parameters:
+参数：
 
 - aClass —
 
@@ -136,7 +136,7 @@ Parameters:
     类方法的符号
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -144,20 +144,20 @@ API 级别 1.0.0
 
 调用方法。
 
-Parameters:
+参数：
 
 - parameters... — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     调用的 Method 所需的参数
 
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     调用的 Method 的返回值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

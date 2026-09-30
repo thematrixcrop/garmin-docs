@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BikeCadenceInfo"
+title: "类：Toybox.AntPlus.BikeCadenceInfo"
 ---
 # 类：Toybox.AntPlus.BikeCadenceInfo
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示接收到的自行车踏频信息。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -186,11 +186,11 @@ API 级别 3.0.0
 
 踏频（rpm）
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 

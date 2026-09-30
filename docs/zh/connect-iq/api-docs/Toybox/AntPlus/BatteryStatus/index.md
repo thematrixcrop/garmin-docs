@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.AntPlus.BatteryStatus"
+title: "类：Toybox.AntPlus.BatteryStatus"
 ---
 # 类：Toybox.AntPlus.BatteryStatus
 
-Inherits:
+继承：
 
 Toybox.AntPlus.CommonData
 
@@ -27,7 +27,7 @@ Toybox.AntPlus.CommonData
 - [ANT Downloads & Resources (ANT+ Common Pages)](https://www.thisisant.com/resources/common-data-pages/)
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -59,11 +59,11 @@ API 级别 2.2.0
 
 电池的 [BATT\_STATUS\_\*](/connect-iq/api-docs/Toybox/AntPlus/#BATT_STATUS_CNT-const) 值。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [AntPlus.BatteryStatusValue](/connect-iq/api-docs/Toybox/AntPlus/#BatteryStatusValue-module) —
 
@@ -74,11 +74,11 @@ Returns:
 
 电压，-1 表示无效
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
@@ -89,11 +89,11 @@ Returns:
 
 以秒为单位的运行时间。
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
@@ -106,6 +106,6 @@ Returns:
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 2.2.0

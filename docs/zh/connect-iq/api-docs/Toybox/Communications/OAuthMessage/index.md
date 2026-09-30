@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.OAuthMessage"
+title: "类：Toybox.Communications.OAuthMessage"
 ---
 # 类：Toybox.Communications.OAuthMessage
 
-Inherits:
+继承：
 
 Toybox.Communications.Message
 
@@ -22,7 +22,7 @@ Toybox.Communications.Message
 
 与 [Message](/connect-iq/api-docs/Toybox/Communications/Message/) 父类中的 `data` 不同，OAuthMessage 中的 data 应始终为 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -50,11 +50,11 @@ HTTP 响应码（正值）或 BLE 错误码（负值）。
 
 此字段中的值不可靠，不应被引用。通常，更安全的做法是检查消息负载以确认响应状态。
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -64,6 +64,6 @@ Returns:
 
 Constructor
 
-Since:
+起始版本：
 
 API 级别 1.3.0

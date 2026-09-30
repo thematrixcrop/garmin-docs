@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.DeviceConfig"
+title: "类：Toybox.Ant.DeviceConfig"
 ---
 # 类：Toybox.Ant.DeviceConfig
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -25,7 +25,7 @@ Toybox.Lang.Object
 - [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/)
 
 
-Example:
+示例：
 
 ```
 // Set the configuration
@@ -41,7 +41,7 @@ deviceCfg = new Ant.DeviceConfig({
 genericChannel.setDeviceConfig(deviceCfg);
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -173,13 +173,13 @@ API 级别 1.2.0
 
 ### **NetworkKey128Bit** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
 ### **NetworkKey64Bit** as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -189,7 +189,7 @@ API 级别 1.0.0
 
 唯一设备编号（ANT-id）
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -197,7 +197,7 @@ API 级别 1.0.0
 
 一个 1 字节设备类型标识符
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -205,7 +205,7 @@ API 级别 1.0.0
 
 传感器使用的消息周期
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -213,7 +213,7 @@ API 级别 1.0.0
 
 一个 128 位网络密钥
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -221,7 +221,7 @@ API 级别 1.2.0
 
 一个 64 位网络密钥
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -229,7 +229,7 @@ API 级别 1.2.0
 
 传感器运行所使用的射频
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -237,7 +237,7 @@ API 级别 1.0.0
 
 接近阈值区间
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -250,7 +250,7 @@ API 级别 1.0.0
 - 最多限制为 5 秒（范围为 0 到 2）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -263,7 +263,7 @@ API 级别 1.0.0
 - 最多限制为 30 秒（范围为 0 到 12）
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -271,7 +271,7 @@ API 级别 1.0.0
 
 制造商特定的传输类型和扩展设备编号。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -281,7 +281,7 @@ API 级别 1.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -368,6 +368,6 @@ Parameters:
 - [ANT Downloads & Resources - ANT Message Protocol and Usage](https://www.thisisant.com/developer/resources/downloads/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0

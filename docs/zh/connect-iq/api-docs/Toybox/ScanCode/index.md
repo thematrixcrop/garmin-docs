@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.ScanCode"
+title: "模块：Toybox.ScanCode"
 ---
 # 模块：Toybox.ScanCode
 
@@ -7,7 +7,7 @@ title: "Module: Toybox.ScanCode"
 
 ScanCode 模块提供生成机器可读代码图像的功能。
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -15,7 +15,7 @@ API 级别 6.0.0
 
 ### QrCodeEcc
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -59,7 +59,7 @@ API 级别 6.0.0
 
 ### QrCodeMask
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -126,13 +126,13 @@ API 级别 6.0.0
 
 ### QrCodeOptions，格式为 { :minVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maxVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :maskValue as [ScanCode.QrCodeMask](/connect-iq/api-docs/Toybox/ScanCode/#QrCodeMask-module), :color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), :backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) }
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
 ### **QrCodeValue** as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) or [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
@@ -142,7 +142,7 @@ API 级别 6.0.0
 
 创建快速响应码图像
 
-Parameters:
+参数：
 
 - value — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
@@ -224,18 +224,18 @@ Parameters:
 
 :::
 
-Returns:
+返回：
 
 - [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) —
 
     包含 QR 码图像的位图
 
 
-Since:
+起始版本：
 
 API 级别 6.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 

@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.InvalidPointException"
+title: "类：Toybox.WatchUi.InvalidPointException"
 ---
 # 类：Toybox.WatchUi.InvalidPointException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -20,7 +20,7 @@ Toybox.Lang.Exception
 
 表示设置了无效点。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -37,13 +37,13 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - msg — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
     异常消息
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

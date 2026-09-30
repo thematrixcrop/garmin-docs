@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.FitContributor"
+title: "模块：Toybox.FitContributor"
 ---
 # 模块：Toybox.FitContributor
 
@@ -30,7 +30,7 @@ MESG\_TYPE\_RECORD
 - [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
 
 
-Example:
+示例：
 
 在 SimpleDataField 应用中使用 FitContributor Field
 
@@ -71,7 +71,7 @@ class BananasEarnedView extends WatchUi.SimpleDataField
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -272,7 +272,7 @@ API 级别 1.3.0
 
 ### MessageType
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -307,7 +307,7 @@ API 级别 1.3.0
 
 ### DataType
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 

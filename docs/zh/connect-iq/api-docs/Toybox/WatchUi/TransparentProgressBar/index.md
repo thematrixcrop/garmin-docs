@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.TransparentProgressBar"
+title: "类：Toybox.WatchUi.TransparentProgressBar"
 ---
 # 类：Toybox.WatchUi.TransparentProgressBar
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 屏幕上透明进度条或微调器的表示。
 
-Since:
+起始版本：
 
 API 级别 3.0.3
 
@@ -164,13 +164,13 @@ API 级别 3.0.3
 
 Constructor
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
     选项字典。目前没有选项。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.3

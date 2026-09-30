@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.ActivityMonitor.HeartRateIterator"
+title: "类：Toybox.ActivityMonitor.HeartRateIterator"
 ---
 # 类：Toybox.ActivityMonitor.HeartRateIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 包含指定时间段心率数据的类。
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -185,14 +185,14 @@ API 级别 1.2.2
 
 获取此迭代器中包含的最大心率。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     最大心率，单位为每分钟跳数 (bpm)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -200,14 +200,14 @@ API 级别 1.2.2
 
 获取此迭代器中包含的最小心率。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     最小心率 (bpm)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.2
 
@@ -217,13 +217,13 @@ API 级别 1.2.2
 
 必须调用此方法以从迭代器获取初始数据。
 
-Returns:
+返回：
 
 - [ActivityMonitor.HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/) —
 
     下一个 [HeartRateSample](/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample/)；如果没有更多样本，则为 `null`
 
 
-Since:
+起始版本：
 
 API 级别 1.2.2

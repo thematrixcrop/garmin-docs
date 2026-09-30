@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Ant.BurstPayloadIterator"
+title: "类：Toybox.Ant.BurstPayloadIterator"
 ---
 # 类：Toybox.Ant.BurstPayloadIterator
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 BurstPayloadIterator 用于遍历 BurstPayload 并访问每个数据包。
 
-Example:
+示例：
 
 ```
 using Toybox.Ant;
@@ -37,7 +37,7 @@ function printPayload(burstPayload) {
 }
 ```
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -58,11 +58,11 @@ API 级别 2.2.0
 
 Constructor
 
-Parameters:
+参数：
 
 - newBurstPayload — ([Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))
 
-Since:
+起始版本：
 
 API 级别 2.2.0
 
@@ -70,13 +70,13 @@ API 级别 2.2.0
 
 返回 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 对象中的下一条消息。
 
-Returns:
+返回：
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
     表示 [BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/) 字节的整数数组；如果不存在，则为 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 2.2.0

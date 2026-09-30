@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.UnexpectedTypeException"
+title: "类：Toybox.Lang.UnexpectedTypeException"
 ---
 # 类：Toybox.Lang.UnexpectedTypeException
 
-Inherits:
+继承：
 
 Toybox.Lang.Exception
 
@@ -25,7 +25,7 @@ Toybox.Lang.Exception
 - [Toybox.Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)
 
 
-Since:
+起始版本：
 
 API 级别 1.2.0
 
@@ -48,6 +48,6 @@ UnexpectedTypeException 构造函数。
   @param unused2 [Toybox::Lang::Object] Unused. Preserves argument count for compatibility
 ```
 
-Since:
+起始版本：
 
 API 级别 1.2.0

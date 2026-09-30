@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.CustomMenuItem"
+title: "类：Toybox.WatchUi.CustomMenuItem"
 ---
 # 类：Toybox.WatchUi.CustomMenuItem
 
-Inherits:
+继承：
 
 Toybox.WatchUi.MenuItem
 
@@ -31,7 +31,7 @@ CustomMenuItem 是 [CustomMenu](/connect-iq/api-docs/Toybox/WatchUi/CustomMenu/)
 - [Toybox.WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -248,14 +248,14 @@ CustomMenuItem 的绘制方法。
 
 渲染菜单项时会调用此函数。
 
-Parameters:
+参数：
 
 - dc — ([Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) —
 
     项目的绘图上下文
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -284,7 +284,7 @@ API 级别 3.0.0
 
 :::
 
-Returns:
+返回：
 
 - [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) —
 
@@ -296,7 +296,7 @@ Returns:
 - [CustomMenuItem.setDividerIcon()](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
@@ -308,7 +308,7 @@ Constructor
 
 `:icon` 选项仅在支持子屏幕的 ConnectIQ 3.4.0 设备上使用。
 
-Parameters:
+参数：
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -338,11 +338,11 @@ Parameters:
 - [CustomMenuItem.setDividerIcon()](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -353,14 +353,14 @@ Throws:
 
 获取 CustomMenuItem 的焦点状态。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     CustomMenuItem 的当前焦点状态
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -368,14 +368,14 @@ API 级别 3.0.0
 
 获取 CustomMenuItem 的选中状态。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     CustomMenuItem 的当前选中状态
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -385,7 +385,7 @@ API 级别 3.0.0
 
 如果设备支持 [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 且父菜单设置为 [DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)，则 `icon`（如果不是 +null+）会呈现在分隔线左侧。
 
-Parameters:
+参数：
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
@@ -413,11 +413,11 @@ Parameters:
 
 :::
 
-Since:
+起始版本：
 
 API 级别 5.0.1
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -428,18 +428,18 @@ Throws:
 
 设置 CustomMenuItem Drawable。
 
-Parameters:
+参数：
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
     用于渲染在菜单项上方的 Drawable，或 `null`。
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 

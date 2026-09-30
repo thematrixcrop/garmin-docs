@@ -1,5 +1,5 @@
 ---
-title: "Module: Toybox.PersistedLocations"
+title: "模块：Toybox.PersistedLocations"
 ---
 # 模块：Toybox.PersistedLocations
 
@@ -16,7 +16,7 @@ title: "Module: Toybox.PersistedLocations"
 - [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.2
 
@@ -185,7 +185,7 @@ API 级别 1.0.2
 
 将位置（航点）保存到设备的位置列表中
 
-Parameters:
+参数：
 
 - location — ([Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) —
 
@@ -205,6 +205,6 @@ Parameters:
 - [PersistedContent.saveWaypoint()](/connect-iq/api-docs/Toybox/PersistedContent/#saveWaypoint-instance_function)
 
 
-Since:
+起始版本：
 
 API 级别 1.0.2

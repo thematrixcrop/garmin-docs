@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Float"
+title: "类：Toybox.Lang.Float"
 ---
 # 类：Toybox.Lang.Float
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 默认情况下，Monkey C 中的小数值为 Float。
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -61,14 +61,14 @@ API 级别 1.0.0
 
 获取 Float 的绝对值。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Float 的绝对值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -80,25 +80,25 @@ API 级别 1.0.0
   considered greater than all numbers and equal to itself.
 ```
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -149,14 +149,14 @@ width
 
 仅支持数字（不支持 \*）
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     格式化后的字符串
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -164,14 +164,14 @@ API 级别 1.0.0
 
 将 Float 转换为 Double。
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     Float 的 Double 表示
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -179,14 +179,14 @@ API 级别 1.0.0
 
 将 Float 转换为 Float。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Float 的 Float 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -194,14 +194,14 @@ API 级别 1.0.0
 
 将 Float 转换为 Long。
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     Float 的 Long 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -211,13 +211,13 @@ API 级别 1.0.0
 
 转换时，Float 值将向 0 舍入。例如，6.8 变为 6，-5.7 变为 -5。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Float 的 Number 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

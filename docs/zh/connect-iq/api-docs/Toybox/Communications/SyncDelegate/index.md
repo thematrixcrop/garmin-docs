@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.SyncDelegate"
+title: "类：Toybox.Communications.SyncDelegate"
 ---
 # 类：Toybox.Communications.SyncDelegate
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用户实现的委托对象，用于响应系统发出的同步请求。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -160,7 +160,7 @@ API 级别 3.1.0
 
 检查是否需要同步。
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
@@ -170,7 +170,7 @@ Returns:
 
 
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -180,7 +180,7 @@ API 级别 3.1.0
 
 应使用此方法启动应用同步过程。这包括获取准备同步所需数据的任何设置工作，以及首次调用 [makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 以下载第一段内容。请注意，使用此方法时，必须手动将 makeWebRequest() 调用串联起来。此外，必须间歇性调用 [notifySyncProgress()](/connect-iq/api-docs/Toybox/Communications/#notifySyncProgress-instance_function)，以便在设备的原生用户界面中显示同步进度更新。最后，必须在同步成功完成或发生错误时调用 [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function)，以便正确通知设备同步过程已结束。
 
-Since:
+起始版本：
 
 API 级别 3.1.0
 
@@ -190,6 +190,6 @@ API 级别 3.1.0
 
 用户取消活动同步时会调用此方法。应用负责调用 [cancelAllRequests()](/connect-iq/api-docs/Toybox/Communications/#cancelAllRequests-instance_function)，以取消为同步过程发出的任何请求。应用还负责通过调用 [notifySyncComplete()](/connect-iq/api-docs/Toybox/Communications/#notifySyncComplete-instance_function) 通知系统同步已成功取消。
 
-Since:
+起始版本：
 
 API 级别 3.1.0

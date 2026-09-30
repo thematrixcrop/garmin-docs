@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Communications.Message"
+title: "类：Toybox.Communications.Message"
 ---
 # 类：Toybox.Communications.Message
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 消息的基类。
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -39,10 +39,10 @@ API 级别 1.3.0
 
 消息携带的数据。
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)

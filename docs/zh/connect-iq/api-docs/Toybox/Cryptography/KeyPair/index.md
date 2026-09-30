@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Cryptography.KeyPair"
+title: "类：Toybox.Cryptography.KeyPair"
 ---
 # 类：Toybox.Cryptography.KeyPair
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -23,7 +23,7 @@ Toybox.Lang.Object
 - [Toybox.Cryptography.KeyAgreement](/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement/)
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -197,14 +197,14 @@ API 级别 3.0.0
 
 获取私钥。
 
-Returns:
+返回：
 
 - [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
     作为 Key 对象的私钥
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -212,14 +212,14 @@ API 级别 3.0.0
 
 获取公钥。
 
-Returns:
+返回：
 
 - [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) —
 
     作为 Key 对象的公钥
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -233,7 +233,7 @@ KeyPair 可以通过将已初始化的 [Key](/connect-iq/api-docs/Toybox/Cryptog
 
 privateKey 预期采用小端字节序。
 
-Parameters:
+参数：
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -248,11 +248,11 @@ Parameters:
         用于生成 KeyPair 的私钥（可选）
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
-Throws:
+抛出：
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 

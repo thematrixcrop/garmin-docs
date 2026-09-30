@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Lang.Double"
+title: "类：Toybox.Lang.Double"
 ---
 # 类：Toybox.Lang.Double
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -20,13 +20,13 @@ Double 表示 64 位浮点数。
 
 要在 Monkey C 中使用 double，请在数字末尾添加 'd'。
 
-Example:
+示例：
 
 ```
 var e = 2.718281828459045d;
 ```
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -75,14 +75,14 @@ API 级别 1.0.0
 
 获取 Double 的绝对值。
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     Double 的绝对值
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -94,25 +94,25 @@ API 级别 1.0.0
   considered greater than all numbers and equal to itself.
 ```
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     比较的右侧操作数。
 
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     如果 self 小于 other，则返回负值；如果两个对象等价，则返回零；如果 self 大于 other，则返回正值。
 
 
-Since:
+起始版本：
 
 API 级别 5.0.0
 
-Throws:
+抛出：
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
@@ -123,21 +123,21 @@ Throws:
 
 测试一个 Object 实例是否等于另一个 Object 实例。
 
-Parameters:
+参数：
 
 - other — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
     用于比较的对象
 
 
-Returns:
+返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
     对象相等时返回 `true`，否则返回 `false`
 
 
-Since:
+起始版本：
 
 API 级别 1.3.0
 
@@ -185,14 +185,14 @@ width
 
 仅支持数字（不支持 \*）
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     格式化后的字符串
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -200,14 +200,14 @@ API 级别 1.0.0
 
 将 Double 转换为 Double。
 
-Returns:
+返回：
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
     Double 的 Double 表示
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -215,14 +215,14 @@ API 级别 1.0.0
 
 将 Double 转换为 Float。
 
-Returns:
+返回：
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
     Double 的 Float 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -230,14 +230,14 @@ API 级别 1.0.0
 
 将 Double 转换为 Long。
 
-Returns:
+返回：
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
     Double 的 Long 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -247,14 +247,14 @@ API 级别 1.0.0
 
 转换时，Double 值将向 0 舍入。例如，6.8 变为 6，-5.7 变为 -5。
 
-Returns:
+返回：
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
     Double 的 Number 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0
 
@@ -262,13 +262,13 @@ API 级别 1.0.0
 
 将 Double 转换为 String。
 
-Returns:
+返回：
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
     Double 的 String 表示形式
 
 
-Since:
+起始版本：
 
 API 级别 1.0.0

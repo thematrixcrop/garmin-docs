@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.Media.ContentRef"
+title: "类：Toybox.Media.ContentRef"
 ---
 # 类：Toybox.Media.ContentRef
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 提供对已下载媒体内容的引用。
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -43,14 +43,14 @@ API 级别 3.0.0
 
 获取媒体内容类型。
 
-Returns:
+返回：
 
 - [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module) —
 
     一个 [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) 值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -58,14 +58,14 @@ API 级别 3.0.0
 
 获取内容引用 ID。
 
-Returns:
+返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
     当前 ContentRef 对象的 ID 参数值
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0
 
@@ -73,7 +73,7 @@ API 级别 3.0.0
 
 Constructor
 
-Parameters:
+参数：
 
 - id — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -84,6 +84,6 @@ Parameters:
     [CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Media/#CONTENT_TYPE_INVALID-const) 枚举值之一
 
 
-Since:
+起始版本：
 
 API 级别 3.0.0

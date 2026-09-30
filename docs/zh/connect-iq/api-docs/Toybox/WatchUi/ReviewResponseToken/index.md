@@ -1,9 +1,9 @@
 ---
-title: "Class: Toybox.WatchUi.ReviewResponseToken"
+title: "类：Toybox.WatchUi.ReviewResponseToken"
 ---
 # 类：Toybox.WatchUi.ReviewResponseToken
 
-Inherits:
+继承：
 
 Toybox.Lang.Object
 
@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示不透明审核响应令牌的类
 
-Since:
+起始版本：
 
 API 级别 3.4.2
 
