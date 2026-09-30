@@ -16,7 +16,7 @@ title: "Color"
 ```xml
 <!-- layout.xml -->
 
-        <!-- Prompt Title -->
+        <!-- 提示标题 -->
         <text-area text="@Strings.mainTitle" personality="
             system_color_dark__text
             prompt_size__title
@@ -67,17 +67,17 @@ dc.setColor(
 ```xml
 <!-- layout.xml -->
 
-    <!-- The Main View for our app -->
+    <!-- 应用的主视图 -->
     <layout id="MainLayoutDark">
-        <!-- Dark Background -->
+        <!-- 深色背景 -->
         <drawable id="DarkBackground" />
 
-        <!-- ActionMenu hint -->
+        <!-- 操作菜单提示 -->
         <bitmap id="actionMenuDark" personality="
             system_icon_dark__hint_action_menu
             system_loc__hint_action_menu" />
 
-        <!-- Prompt Title -->
+        <!-- 提示标题 -->
         <text-area text="@Strings.mainTitle" personality="
             system_color_dark__text
             prompt_size__title
@@ -85,7 +85,7 @@ dc.setColor(
             prompt_font__title
         "/>
 
-        <!-- Prompt Body -->
+        <!-- 提示正文 -->
         <text-area text="@Strings.mainPrompt" personality="
             system_color_dark__text
             prompt_size__body_with_title
@@ -115,11 +115,11 @@ enum Theme {
 class MyApp extends Application {
     private var _theme as Theme;
 
-    // Theme initialization
+    // 主题初始化
     public function initialize() {
         AppBase.initialize();
 
-        // Test for night mode
+        // 检查夜间模式
         if (Styles.device_info.hasNightMode &&
             System.DeviceSettings has :isNightModeEnabled) {
             _theme = System.getDeviceSettings().isNightModeEnabled ? THEME_DARK : THEME_LIGHT;
@@ -129,20 +129,20 @@ class MyApp extends Application {
 
     }
 
-    // Application handler for changes in day/night mode
+    // 应用程序处理昼夜模式变化
     public function onNightModeChanged() {
-        // Handle a change in night mode
+        // 处理夜间模式变化
         if (Styles.device_info.hasNightMode &&
             System.DeviceSettings has :isNightModeEnabled) {
             _theme = System.getDeviceSettings().isNightModeEnabled ? THEME_DARK : THEME_LIGHT;
         } else {
             _theme = THEME_LIGHT;
         }
-        // Force a screen update.
+        // 强制更新屏幕。
         WatchUi.requestUpdate();
     }
 
-    // Theme accessor
+    // 主题访问器
     public function getTheme() as Theme {
         return _theme;
     }
@@ -157,18 +157,18 @@ class MyApp extends Application {
 ```typescript
 // View.mb
 
-//! View that shows the main menu for the app
+//! 显示应用主菜单的视图
 class MainView extends WatchUi.View {
     private var _theme as Theme;
 
-    //! Constructor
+    //! 构造函数
     function initialize() {
         View.initialize();
 
         _theme = $.getApp().getTheme();
     }
 
-    //! Handle layout
+    //! 处理布局
     function onLayout(dc as Dc) as Void {
         _theme = $.getApp().getTheme();
         setLayout(
