@@ -1537,7 +1537,7 @@ using Toybox.Communications;
 var image;
 var responseCode;
 
-    // Set up the responseCallback function to return an image or null
+    // 设置 responseCallback 函数以返回图像或 null
     function responseCallback(responseCode, data) {
         responseCode = responseCode;
         if (responseCode == 200) {
@@ -1547,21 +1547,21 @@ var responseCode;
         }
     }
 
-    // wrap the request in a function
+    // 将请求封装在函数中
     function makeRequest() {
-        var url = "http://www.garmin.com/image-path";           // set the image url
-        var parameters = null;                                  // set the parameters
-        var options = {                                         // set the options
-            :palette => [ Gfx.COLOR_ORANGE,                     // set the palette
+        var url = "http://www.garmin.com/image-path";           // 设置图像 URL
+        var parameters = null;                                  // 设置参数
+        var options = {                                         // 设置选项
+            :palette => [ Gfx.COLOR_ORANGE,                     // 设置调色板
                           Gfx.COLOR_DK_BLUE,
                           Gfx.COLOR_BLUE,
                           Gfx.COLOR_BLACK ],
-            :maxWidth => 100,                                   // set the max width
-            :maxHeight => 100,                                  // set the max height
-            :dithering => Communications.IMAGE_DITHERING_NONE   // set the dithering
+            :maxWidth => 100,                                   // 设置最大宽度
+            :maxHeight => 100,                                  // 设置最大高度
+            :dithering => Communications.IMAGE_DITHERING_NONE   // 设置抖动
         };
 
-        // Make the image request
+        // 发起图像请求
         Communications.makeImageRequest(url, parameters, options, method(:responseCallback));
     }
 ```
@@ -1866,15 +1866,15 @@ const CLIENT_ID = "myClientID";
 const OAUTH_CODE = "myOAuthCode";
 const OAUTH_ERROR = "myOAuthError";
 
-// register a callback to capture results from OAuth requests
+// 注册回调以捕获 OAuth 请求结果
 Communications.registerForOAuthMessages(method(:onOAuthMessage));
 
-// wrap the OAuth request in a function
+// 将 OAuth 请求封装在函数中
 function getOAuthToken() {
    status = "Look at OAuth screen\n";
    Ui.requestUpdate();
 
-   // set the makeOAuthRequest parameters
+   // 设置 makeOAuthRequest 参数
    var params = {
        "scope" => Comm.encodeURL("https://www.serviceurl.com/"),
        "redirect_uri" => "https://localhost",
@@ -1882,10 +1882,9 @@ function getOAuthToken() {
        "client_id" => $.CLIENT_ID
    };
 
-   // makeOAuthRequest triggers login prompt on mobile device.
-   // "responseCode" and "responseError" are the parameters passed
-   // to the resultUrl. Check the oauth provider's documentation
-   // to determine the correct strings to use.
+   // makeOAuthRequest 会在移动设备上触发登录提示。
+   // "responseCode" 和 "responseError" 是传递给 resultUrl 的参数。
+   // 请查看 OAuth 提供商的文档，以确定要使用的正确字符串。
    Comm.makeOAuthRequest(
        "https://requesturl.com",
        params,
@@ -1895,16 +1894,16 @@ function getOAuthToken() {
    );
 }
 
-// implement the OAuth callback method
+// 实现 OAuth 回调方法
 function onOAuthMessage(message) {
     if (message.data != null) {
         var code = message.data[$.OAUTH_CODE];
         var error = message.data[$.OAUTH_ERROR];
     } else {
-        // return an error
+        // 返回错误
     }
 }
-// the OAuth service can now be used with a makeWebRequest() call
+// 现在可以通过调用 makeWebRequest() 使用 OAuth 服务
 ```
 
 Since:
@@ -2008,43 +2007,41 @@ Parameters:
 Example:
 
 ```
-// It is common for developers to wrap a makeWebRequest() call in a function
-// as displayed below. The function defines the variables for each of the
-// necessary arguments in a Communications.makeWebRequest() call, then passes
-// these variables as the arguments. This allows for a clean layout of your web
-// request and expandability.
+// 开发者通常会将 makeWebRequest() 调用封装在函数中，如下所示。
+// 该函数为 Communications.makeWebRequest() 调用中的每个必要参数定义变量，
+// 然后将这些变量作为参数传入。这样可以使 Web 请求布局清晰且易于扩展。
 using Toybox.System;
 using Toybox.Communications;
 
-   // set up the response callback function
+   // 设置响应回调函数
    function onReceive(responseCode, data) {
        if (responseCode == 200) {
-           System.println("Request Successful");                   // print success
+            System.println("Request Successful");                   // 打印成功信息
        }
        else {
-           System.println("Response: " + responseCode);            // print response code
+            System.println("Response: " + responseCode);            // 打印响应代码
        };
 
    };
 
    function makeRequest() {
-       var url = "https://www.garmin.com";                         // set the url
+       var url = "https://www.garmin.com";                         // 设置 URL
 
-       var params = {                                              // set the parameters
+       var params = {                                              // 设置参数
               "definedParams" => "123456789abcdefg"
        };
 
-       var options = {                                             // set the options
-           :method => Communications.HTTP_REQUEST_METHOD_GET,      // set HTTP method
-           :headers => {                                           // set headers
+       var options = {                                             // 设置选项
+           :method => Communications.HTTP_REQUEST_METHOD_GET,      // 设置 HTTP 方法
+           :headers => {                                           // 设置标头
                    "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED},
-                                                                   // set response type
+                                                                   // 设置响应类型
            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
        };
 
-       var responseCallback = method(:onReceive);                  // set responseCallback to
-                                                                   // onReceive() method
-       // Make the Communications.makeWebRequest() call
+       var responseCallback = method(:onReceive);                  // 将 responseCallback 设置为
+                                                                   // onReceive() 方法
+       // 调用 Communications.makeWebRequest()
        Communications.makeWebRequest(url, params, options, responseCallback);
   }
 ```
@@ -2362,8 +2359,8 @@ Communications.openWebPage(
    {"q" => "cute kitten"},
    null
 );
-// passes the url: http://bing.com/images/search?q=cute kitten to the
-// browser on the phone
+// 将 URL：http://bing.com/images/search?q=cute kitten 传递给手机上的
+// 浏览器
 ```
 
 Since:
@@ -2393,7 +2390,7 @@ function onOAuthMessage(message) {
         var code = message.data[OAUTH_CODE];
         var error = message.data[OAUTH_ERROR];
     } else {
-        // return an error
+        // 返回错误
     }
 }
 Communications.registerForOAuthMessages(method(:onOAuthMessage));
@@ -2418,7 +2415,7 @@ function phoneMessageErrorCallback(err as PhoneAppMessageError) as Void {
    System.println(Lang.format("Error: $1$", [ err ]));
 }
 
-// register for message errors where supported
+// 在支持的情况下注册消息错误
 if (Communications has :registerForPhoneAppMessageErrors) {
   Communications.registerForPhoneAppMessageErrors(method(:phoneMessageErrorCallback));
 }
@@ -2498,7 +2495,7 @@ function phoneMessageCallback(msg as PhoneAppMessage) as Void {
    System.println(Lang.format("Data: $1$", [ msg.data ]));
 }
 
-// register for messages
+// 注册消息
 Communications.registerForPhoneAppMessages(method(:phoneMessageCallback));
 ```
 
