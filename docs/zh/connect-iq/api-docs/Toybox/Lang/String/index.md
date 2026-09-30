@@ -161,7 +161,7 @@ Example:
 
 ```
 var myString = "Go bananas with Monkey C!";
-var index = myString.find("bananas"); // index is 3
+var index = myString.find("bananas"); // index 为 3
 ```
 
 Returns:
@@ -228,7 +228,7 @@ Example:
 
 ```
 var myString = "Go bananas with Monkey C!";
-var mySubString = myString.substring(3, 10); // mySubString is "bananas"
+var mySubString = myString.substring(3, 10); // mySubString 为 "bananas"
 ```
 
 Returns:
@@ -270,13 +270,13 @@ var myString;
 var myNum;
 
 myString = "123";
-myNum = myString.toDouble(); // myNum is 123.000000
+myNum = myString.toDouble(); // myNum 为 123.000000
 
 myString = "3.14"
-myNum = myString.toDouble(); // myNum is 3.140000
+myNum = myString.toDouble(); // myNum 为 3.140000
 
 myString = "192.168.0.1"
-myNum = myString.toDouble(); // myNum is 192.167999
+myNum = myString.toDouble(); // myNum 为 192.167999
 
 myString = "Hello There!"
 myNum = myString.toDouble(); // null
@@ -306,13 +306,13 @@ var myString;
 var myNum;
 
 myString = "123";
-myNum = myString.toFloat(); // myNum is 123.000000
+myNum = myString.toFloat(); // myNum 为 123.000000
 
 myString = "3.14"
-myNum = myString.toFloat(); // myNum is 3.140000
+myNum = myString.toFloat(); // myNum 为 3.140000
 
 myString = "192.168.0.1"
-myNum = myString.toFloat(); // myNum is 192.167999
+myNum = myString.toFloat(); // myNum 为 192.167999
 
 myString = "Hello There!"
 myNum = myString.toFloat(); // null
@@ -342,13 +342,13 @@ var myString;
 var myNum;
 
 myString = "123";
-myNum = myString.toLong(); // myNum is 123
+myNum = myString.toLong(); // myNum 为 123
 
 myString = "3.14"
-myNum = myString.toLong(); // myNum is 3
+myNum = myString.toLong(); // myNum 为 3
 
 myString = "1200 E. 151st. Street"
-myNum = myString.toLong(); // myNum is 1200
+myNum = myString.toLong(); // myNum 为 1200
 
 myString = "Hello There!"
 myNum = myString.toLong(); // null
@@ -390,11 +390,11 @@ var myString;
 var myNum;
 
 myString = "10";
-myNum = myString.toLongWithBase(2);    // myNum is 2
+myNum = myString.toLongWithBase(2);    // myNum 为 2
 
 myString = "FF";
-myNum = myString.toLongWithBase(16);   // myNum is 255
-myNum = myString.toLongWithBase(0x10); // myNum is 255
+myNum = myString.toLongWithBase(16);   // myNum 为 255
+myNum = myString.toLongWithBase(0x10); // myNum 为 255
 ```
 
 Returns:
@@ -436,13 +436,13 @@ var myString;
 var myNum;
 
 myString = "123";
-myNum = myString.toNumber(); // myNum is 123
+myNum = myString.toNumber(); // myNum 为 123
 
 myString = "3.14"
-myNum = myString.toNumber(); // myNum is 3
+myNum = myString.toNumber(); // myNum 为 3
 
 myString = "1200 E. 151st. Street"
-myNum = myString.toNumber(); // myNum is 1200
+myNum = myString.toNumber(); // myNum 为 1200
 
 myString = "Hello There!"
 myNum = myString.toNumber(); // null
@@ -484,11 +484,11 @@ var myString;
 var myNum;
 
 myString = "10";
-myNum = myString.toNumberWithBase(2);    // myNum is 2
+myNum = myString.toNumberWithBase(2);    // myNum 为 2
 
 myString = "FF";
-myNum = myString.toNumberWithBase(16);   // myNum is 255
-myNum = myString.toNumberWithBase(0x10); // myNum is 255
+myNum = myString.toNumberWithBase(16);   // myNum 为 255
+myNum = myString.toNumberWithBase(0x10); // myNum 为 255
 ```
 
 Returns:
