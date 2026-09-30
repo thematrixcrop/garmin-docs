@@ -38,18 +38,17 @@ using Toybox.SensorHistory;
 using Toybox.Lang;
 using Toybox.System;
 
-// Create a method to get the SensorHistoryIterator object
+// 创建一个用于获取 SensorHistoryIterator 对象的方法
 function getIterator() {
-    // Check device for SensorHistory compatibility
+    // 检查设备是否支持 SensorHistory
     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
         return Toybox.SensorHistory.getHeartRateHistory({});
     }
     return null;
 }
 
-// Store the iterator info in a variable. The options are 'null' in this
-// case so the entire available history is returned with the newest
-// samples returned first.
+// 将迭代器信息存储在变量中。本例中的选项为 'null'，因此返回所有
+// 可用历史记录，并按最新样本优先排列。
 var sensorIter = getIterator();
 ```
 
@@ -93,8 +92,8 @@ Example:
 ```
 using Toybox.SensorHistory;
 using Toybox.System;
-// Given a valid SensorHistoryIterator object, print out the
-// maximum sample value entry in the iterator
+// 给定有效的 SensorHistoryIterator 对象，打印迭代器中的
+// 最大样本值条目
 System.println(sensorIter.getMax().data);
 ```
 
@@ -127,8 +126,8 @@ Example:
 ```
 using Toybox.SensorHistory;
 using Toybox.System;
-// Given a valid SensorHistoryIterator object, print out the
-// minimum sample value entry in the iterator
+// 给定有效的 SensorHistoryIterator 对象，打印迭代器中的
+// 最小样本值条目
 System.println(sensorIter.getMin().data);
 ```
 
@@ -161,8 +160,8 @@ Example:
 ```
 using Toybox.SensorHistory;
 using Toybox.System;
-// Given a valid SensorHistoryIterator object, print out the Moment
-// of the newest sample entry in the iterator
+// 给定有效的 SensorHistoryIterator 对象，打印迭代器中
+// 最新样本条目的 Moment
 System.println(sensorIter.getNewestSampleTime());
 ```
 
@@ -199,8 +198,8 @@ Example:
 ```
 using Toybox.SensorHistory;
 using Toybox.System;
-// Given a valid SensorHistoryIterator object, print out the Moment
-// of the oldest sample entry in the iterator
+// 给定有效的 SensorHistoryIterator 对象，打印迭代器中
+// 最早样本条目的 Moment
 System.println(sensorIter.getOldestSampleTime());
 ```
 
@@ -239,8 +238,8 @@ Example:
 ```
 using Toybox.SensorHistory;
 using Toybox.System;
-// Given a valid SensorHistoryIterator object, print out the next
-// entry in the iterator
+// 给定有效的 SensorHistoryIterator 对象，打印迭代器中的
+// 下一条记录
 System.println(sensorIter.next().data);
 ```
 
