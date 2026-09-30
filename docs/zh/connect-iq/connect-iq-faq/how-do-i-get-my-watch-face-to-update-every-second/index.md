@@ -20,15 +20,12 @@ module WatchUi
 {
     class WatchFace extends Toybox.WatchUi.View
     {
-        //! onPartialUpdate() is called each second as long as the device
-        //! power budget is not exceeded.
-        //! It is important to update as small of a portion of the display as possible
-        //! in this method to avoid exceeding the allowed power budget. To do this,
-        //! the application must set the clipping region for the Graphics.Dc object
-        //! using the setClip method. Calls to Toybox.System.println() and
-        //! Toybox.System.print() will not execute on devices when this function is
-        //! being invoked, but can be used in the device simulator.
-        //! @param [Graphics.Dc] dc The drawing context
+        //! 只要设备功耗预算未超出，onPartialUpdate() 就会每秒调用一次。
+        //! 为避免超出允许的功耗预算，应尽可能少地更新显示区域。
+        //! 为此，应用必须使用 setClip 方法设置 Graphics.Dc 对象的裁剪区域。
+        //! 调用此函数时，设备不会执行 Toybox.System.println() 和 Toybox.System.print()，
+        //! 但可以在设备模拟器中使用这些方法。
+        //! @param [Graphics.Dc] dc 绘图上下文
         //! @since 2.3.0
         function onPartialUpdate(dc);
     }
