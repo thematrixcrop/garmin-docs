@@ -86,7 +86,7 @@ API 级别 1.0.0
 ```
 using Toybox.Ant;
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.close();
 ```
 
@@ -110,7 +110,7 @@ API 级别 1.0.0
 ```
 using Toybox.Ant;
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.disableEncryption();
 ```
 
@@ -280,7 +280,7 @@ API 级别 2.3.0
 using Toybox.Ant;
 var cryptoConfig = new Ant.CryptoConfig({});
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.enableEncryption(cryptoConfig);
 ```
 
@@ -458,7 +458,7 @@ API 级别 2.3.0
 ```
 using Toybox.Ant;
 var devConfig = genericChannel.getDeviceConfig();
-// devConfig fields can now be accessed for configuration info
+// 现在可以访问 devConfig 字段以获取配置信息
 ```
 
 返回：
@@ -497,8 +497,8 @@ API 级别 1.0.0
 ```
 using Toybox.Ant;
 
-// Assumes a listenerCallback method and ChannelAssignment object supplied
-// as parameters upon initialization
+// 假设初始化时已提供 listenerCallback 方法和 ChannelAssignment 对象
+// 作为参数
 GenericChannel.initialize(method(:listenerCallback), channelAssign);
 ```
 
@@ -526,7 +526,7 @@ API 级别 1.0.0
 ```
 using Toybox.Ant;
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.open();
 ```
 
@@ -552,7 +552,7 @@ API 级别 1.0.0
 ```
 using Toybox.Ant;
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.release();
 ```
 
@@ -584,15 +584,15 @@ API 级别 1.0.0
 
 ```
 using Toybox.Ant;
-// create a data Array to format Message
+// 创建 data Array 以格式化 Message
 var data = new[8];
 for (var i = 0; i < 8; i++) {
-    data[i] = i + 1;    // Set the values of each member
+    data[i] = i + 1;    // 设置每个成员的值
 }
 var message = new Ant.Message();
-message.setPayload(data);   // Assumes valid data
+message.setPayload(data);   // 假设 data 有效
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.sendAcknowledge(message);
 ```
 
@@ -627,15 +627,15 @@ API 级别 1.0.0
 
 ```
 using Toybox.Ant;
-// create a data Array to format Message
+// 创建 data Array 以格式化 Message
 var data = new[8];
 for (var i = 0; i < 8; i++) {
-    data[i] = i + 1;    // Set the values of each member
+    data[i] = i + 1;    // 设置每个成员的值
 }
 var message = new Ant.Message();
-message.setPayload(data);   // Assumes valid data
+message.setPayload(data);   // 假设 data 有效
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.sendBroadcast(message);
 ```
 
@@ -672,13 +672,13 @@ API 级别 1.0.0
 
 ```
 using Toybox.Ant;
-var burstData = new Ant.BurstPayload(); // Create new payload
+var burstData = new Ant.BurstPayload(); // 创建新负载
 
-// Message must contain a valid payload
-burstData.add(message);                 // Add Message object to payload
+// Message 必须包含有效负载
+burstData.add(message);                 // 将 Message 对象添加到负载
 
-// Assumes a valid GenericChannel object
-genericChannel.sendBurst(burstData);    // Send Message
+// 假设 GenericChannel 对象有效
+genericChannel.sendBurst(burstData);    // 发送 Message
 ```
 
 另见：
@@ -715,8 +715,8 @@ API 级别 2.2.0
 ```
 using Toybox.Ant;
 
-// Assumes a valid GenericChannel object
-// Assumes a valid BurstListener object as a parameter
+// 假设 GenericChannel 对象有效
+// 假设将 BurstListener 对象作为参数传入
 genericChannel.setBurstListener(listener);
 ```
 
@@ -753,7 +753,7 @@ API 级别 2.2.0
 using Toybox.Ant;
 var configuration = new Ant.DeviceConfig({});
 
-// Assumes a valid GenericChannel object
+// 假设 GenericChannel 对象有效
 genericChannel.setDeviceConfig(configuration);
 ```
 
