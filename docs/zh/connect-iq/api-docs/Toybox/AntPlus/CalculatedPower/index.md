@@ -142,7 +142,7 @@ API 级别 2.2.0
 
 - [**power**](#power-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The average power calculated from the sensor data in watts (W).
+    根据传感器数据计算的平均功率，单位为瓦（W）。
 
 - [**powerSensorType**](#powerSensorType-var) as [AntPlus.BikePowerSensorType](/connect-iq/api-docs/Toybox/AntPlus/#BikePowerSensorType-module) or **Null**
 
@@ -153,7 +153,7 @@ API 级别 2.2.0
 
 ### var power as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The average power calculated from the sensor data in watts (W).
+根据传感器数据计算的平均功率，单位为瓦（W）。
 
 Since:
 

@@ -142,14 +142,14 @@ API 级别 2.2.0
 
 - [**distance**](#distance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The accumulated distance calculated from sensor data in meters (m).
+    根据传感器数据计算的累计距离，单位为米（m）。
 
 
 ## 实例属性详情
 
 ### var distance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The accumulated distance calculated from sensor data in meters (m).
+根据传感器数据计算的累计距离，单位为米（m）。
 
 Since:
 

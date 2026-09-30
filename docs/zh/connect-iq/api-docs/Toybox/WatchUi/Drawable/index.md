@@ -70,7 +70,7 @@ API 级别 1.0.0
 
 - [**height**](#height-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    The clip height of the Drawable object.
+    Drawable 对象的裁剪高度。
 
 - [**identifier**](#identifier-var) as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
@@ -82,15 +82,15 @@ API 级别 1.0.0
 
 - [**locX**](#locX-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    The absolute, on-screen x-coordinate of the Drawable object.
+    Drawable 对象在屏幕上的绝对 x 坐标。
 
 - [**locY**](#locY-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    The absolute, on-screen y-coordinate of the Drawable object.
+    Drawable 对象在屏幕上的绝对 y 坐标。
 
 - [**width**](#width-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    The clip width of the Drawable object.
+    Drawable 对象的裁剪宽度。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -109,18 +109,18 @@ API 级别 1.0.0
 
 - [**setSize**](#setSize-instance_function)(w as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), h as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set the size of a Drawable object.
+    设置 Drawable 对象的大小。
 
 - [**setVisible**](#setVisible-instance_function)(visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Set the visibility of a Drawable object.
+    设置 Drawable 对象的可见性。
 
 
 ## 实例属性详情
 
 ### var height as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-The clip height of the Drawable object.
+Drawable 对象的裁剪高度。
 
 Since:
 
@@ -156,7 +156,7 @@ Returns:
 
 ### var locX as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-The absolute, on-screen x-coordinate of the Drawable object.
+Drawable 对象在屏幕上的绝对 x 坐标。
 
 Since:
 
@@ -168,7 +168,7 @@ Returns:
 
 ### var locY as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-The absolute, on-screen y-coordinate of the Drawable object.
+Drawable 对象在屏幕上的绝对 y 坐标。
 
 Since:
 
@@ -180,7 +180,7 @@ Returns:
 
 ### var width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-The clip width of the Drawable object.
+Drawable 对象的裁剪宽度。
 
 Since:
 
@@ -275,7 +275,7 @@ API 级别 1.0.0
 
 ### **setSize(w as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), h as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set the size of a Drawable object.
+设置 Drawable 对象的大小。
 
 Parameters:
 
@@ -294,7 +294,7 @@ API 级别 1.0.0
 
 ### **setVisible(visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Set the visibility of a Drawable object.
+设置 Drawable 对象的可见性。
 
 Parameters:
 

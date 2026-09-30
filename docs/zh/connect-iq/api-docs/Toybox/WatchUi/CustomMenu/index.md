@@ -291,7 +291,7 @@ API 级别 3.0.0
 
 - [**setTitle**](#setTitle-instance_function)(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
-    Set the title drawable.
+    设置标题 Drawable。
 
 
 ## 实例方法详情
@@ -586,7 +586,7 @@ Throws:
 
 ### **setTitle(drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**)** as **Void**
 
-Set the title drawable.
+设置标题 Drawable。
 
 Parameters:
 

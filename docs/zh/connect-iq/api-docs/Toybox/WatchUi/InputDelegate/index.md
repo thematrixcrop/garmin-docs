@@ -370,7 +370,7 @@ Parameters:
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
-    The click event that has occurred
+    已发生的点击事件
 
 
 Returns:
@@ -486,7 +486,7 @@ Parameters:
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
-    The click event that has occurred
+    已发生的点击事件
 
 
 Returns:
@@ -573,7 +573,7 @@ Parameters:
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
-    The click event that occurred
+    发生的点击事件
 
 
 Returns:

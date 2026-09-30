@@ -112,7 +112,7 @@ API 级别 5.1.0
 
 - [**onScan**](#onScan-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Start the sensor scan process.
+    开始传感器扫描过程。
 
 - [**onUnpair**](#onUnpair-instance_function)(sensor as [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -151,7 +151,7 @@ API 级别 5.1.0
 
 ### **onScan()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Start the sensor scan process.
+开始传感器扫描过程。
 
 Is called by the system to start the sensor scan process, during the native sensor pairing process.
 

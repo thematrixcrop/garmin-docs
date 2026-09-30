@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The base class for messages.
+消息的基类。
 
 Since:
 

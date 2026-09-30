@@ -197,7 +197,7 @@ API 级别 2.3.0
 
 - [**deleteActivityCompletedEvent**](#deleteActivityCompletedEvent-instance_function)() as **Void**
 
-    Stops the application from receiving activity completed events.
+    停止应用接收活动完成事件。
 
 - [**deleteGoalEvent**](#deleteGoalEvent-instance_function)(goalType as [Application.GoalType](/connect-iq/api-docs/Toybox/Application/#GoalType-module)) as **Void**
 
@@ -209,7 +209,7 @@ API 级别 2.3.0
 
 - [**deletePhoneAppMessageEvent**](#deletePhoneAppMessageEvent-instance_function)() as **Void**
 
-    Stops the application from receiving background phone app messages.
+    停止应用接收后台手机应用消息。
 
 - [**deleteSleepEvent**](#deleteSleepEvent-instance_function)() as **Void**
 
@@ -229,7 +229,7 @@ API 级别 2.3.0
 
 - [**exit**](#exit-instance_function)(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
-    Terminates the current background process.
+    终止当前后台进程。
 
 - [**getActivityCompletedEventRegistered**](#getActivityCompletedEventRegistered-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -312,7 +312,7 @@ API 级别 2.3.0
 
 ### **deleteActivityCompletedEvent()** as **Void**
 
-Stops the application from receiving activity completed events.
+停止应用接收活动完成事件。
 
 Since:
 
@@ -349,7 +349,7 @@ API 级别 2.3.0
 
 ### **deletePhoneAppMessageEvent()** as **Void**
 
-Stops the application from receiving background phone app messages.
+停止应用接收后台手机应用消息。
 
 :::details 支持的设备
 
@@ -525,7 +525,7 @@ API 级别 2.3.0
 
 ### **exit(backgroundData as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type))** as **Void**
 
-Terminates the current background process.
+终止当前后台进程。
 
 All background processes should call this method when they have completed the desired tasks. Data passed to this method will either be passed immediately to the active application if it is running, or will be saved and passed to the application the next time it runs. Data must be one of the following types:
 

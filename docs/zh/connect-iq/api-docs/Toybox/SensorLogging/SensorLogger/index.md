@@ -122,7 +122,7 @@ Parameters:
 
 - :synchronous — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        Set to `true` to request synchronized sensor data.
+        设置为 `true` 以请求同步的传感器数据。
 
 
 Since:

@@ -179,11 +179,11 @@ API 级别 3.0.0
 
 - [**threat**](#threat-var) as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
-    The [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) threat value.
+    [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) 威胁值。
 
 - [**threatSide**](#threatSide-var) as [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
 
-    The [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) threat position.
+    [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) 威胁位置。
 
 
 ## 实例属性详情
@@ -214,7 +214,7 @@ Returns:
 
 ### var threat as [AntPlus.ThreatLevel](/connect-iq/api-docs/Toybox/AntPlus/#ThreatLevel-module)
 
-The [THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) threat value.
+[THREAT\_LEVEL\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_LEVEL_VEHICLE_FAST_APPROACHING-const) 威胁值。
 
 Since:
 
@@ -226,7 +226,7 @@ Returns:
 
 ### var threatSide as [AntPlus.ThreatSide](/connect-iq/api-docs/Toybox/AntPlus/#ThreatSide-module)
 
-The [THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) threat position.
+[THREAT\_SIDE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#THREAT_SIDE_LEFT-const) 威胁位置。
 
 Since:
 

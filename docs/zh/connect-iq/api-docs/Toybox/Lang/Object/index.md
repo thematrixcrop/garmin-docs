@@ -85,7 +85,7 @@ API 级别 1.0.0
 
 This computes a 32-bit Number that is typically used as an index when placing Objects into a Dictionary. Hash code values have the following characteristics:
 
-- The computed hash code is constant for the lifetime of an Object
+- 计算得到的哈希码在 Object 的整个生命周期内保持不变
 
 - 如果两个 Object 相等，则它们的哈希代码也相等
 

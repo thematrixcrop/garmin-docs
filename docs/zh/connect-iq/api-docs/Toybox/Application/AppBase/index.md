@@ -212,7 +212,7 @@ API 级别 4.0.0
 
 - [**onAppUpdate**](#onAppUpdate-instance_function)() as **Void**
 
-    The callback method that is triggered in the background when the app is updated Requires the Background permission to be enabled and your application class to carry the :background annotation.
+    应用更新时在后台触发的回调方法。要求启用 Background 权限，并且应用程序类带有 :background 注解。
 
 - [**onAuthenticationRequest**](#onAuthenticationRequest-instance_function)() as **Void**
 
@@ -974,7 +974,7 @@ Properties must first be set with [setProperty()](/connect-iq/api-docs/Toybox/Ap
 
 注意：
 
-Symbols can change from build to build and are not to be used for for Keys or Values.
+符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values。
 
 Parameters:
 
@@ -1165,7 +1165,7 @@ Returns:
 
 - [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type) —
 
-    The content associated with the key, or `null` if the key is not in the object store
+    与键关联的内容；如果对象存储中不存在该键，则为 `null`
 
 
 另见：
@@ -2008,7 +2008,7 @@ API 级别 3.0.0
 
 ### **onAppUpdate()** as **Void**
 
-The callback method that is triggered in the background when the app is updated Requires the Background permission to be enabled and your application class to carry the :background annotation.
+应用更新时在后台触发的回调方法。要求启用 Background 权限，并且应用程序类带有 :background 注解。
 
 Since:
 
@@ -2694,7 +2694,7 @@ Background processes cannot save properties.
 
 注意：
 
-Symbols can change from build to build and are not to be used for for Keys or Values.
+符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values。
 
 Parameters:
 

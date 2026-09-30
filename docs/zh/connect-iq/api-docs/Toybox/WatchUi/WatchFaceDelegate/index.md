@@ -66,7 +66,7 @@ API 级别 2.3.0
 
 - [**setSelectedComplication**](#setSelectedComplication-instance_function)(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Set the selected complication field.
+    设置选中的复杂功能字段。
 
 
 ## 实例方法详情
@@ -255,7 +255,7 @@ Parameters:
 
 - clickEvent — ([WatchUi.ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)) —
 
-    The click event that occurred
+    发生的点击事件
 
 
 :::details 支持的设备
@@ -372,7 +372,7 @@ API 级别 5.1.0
 
 ### **setSelectedComplication(complicationIdentifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Set the selected complication field.
+设置选中的复杂功能字段。
 
 Can be called by application when handling `onTap` event, to change the selected (highlighted) complication. Only effective during WatchFace config mode.
 

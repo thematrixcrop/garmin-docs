@@ -501,15 +501,15 @@ API 级别 5.2.2
 
 - [**onTimerPause**](#onTimerPause-instance_function)() as **Void**
 
-    The activity timer is paused.
+    活动计时器已暂停。
 
 - [**onTimerReset**](#onTimerReset-instance_function)() as **Void**
 
-    The current activity has ended.
+    当前活动已结束。
 
 - [**onTimerResume**](#onTimerResume-instance_function)() as **Void**
 
-    The activity time has resumed.
+    活动时间已恢复。
 
 - [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function)(info as [Activity.SplitInfo](/connect-iq/api-docs/Toybox/Activity/SplitInfo/)) as **Void**
 
@@ -521,11 +521,11 @@ API 级别 5.2.2
 
 - [**onTimerStart**](#onTimerStart-instance_function)() as **Void**
 
-    The activity timer has started.
+    活动计时器已启动。
 
 - [**onTimerStop**](#onTimerStop-instance_function)() as **Void**
 
-    The activity timer has stopped.
+    活动计时器已停止。
 
 - [**onWorkoutStarted**](#onWorkoutStarted-instance_function)() as **Void**
 
@@ -545,7 +545,7 @@ API 级别 5.2.2
 
 - [**showAlert**](#showAlert-instance_function)(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)) as **Void**
 
-    Show an alert.
+    显示警告。
 
 
 ## 类型定义详情
@@ -1159,7 +1159,7 @@ API 级别 5.2.2
 
 ### **onTimerPause()** as **Void**
 
-The activity timer is paused.
+活动计时器已暂停。
 
 This method is called when the activity timer goes from a running state to a paused state. The paused state occurs when the auto-pause feature pauses the timer. If the activity timer is paused when the app is loaded, this event will run immediately after startup.
 
@@ -1336,7 +1336,7 @@ API 级别 1.3.0
 
 ### **onTimerReset()** as **Void**
 
-The current activity has ended.
+当前活动已结束。
 
 This method is called when the time has stopped and current activity is ended.
 
@@ -1513,7 +1513,7 @@ API 级别 1.3.0
 
 ### **onTimerResume()** as **Void**
 
-The activity time has resumed.
+活动时间已恢复。
 
 This method is called when the activity timer goes from a paused state to a running state.
 
@@ -1796,7 +1796,7 @@ API 级别 5.2.2
 
 ### **onTimerStart()** as **Void**
 
-The activity timer has started.
+活动计时器已启动。
 
 This method is called when the activity timer goes from a stopped state to a started state. If the activity timer is running when the app is loaded, this event will run immediately after startup.
 
@@ -1973,7 +1973,7 @@ API 级别 1.3.0
 
 ### **onTimerStop()** as **Void**
 
-The activity timer has stopped.
+活动计时器已停止。
 
 This method is called when the activity timer goes from a running state to a stopped state.
 
@@ -2659,7 +2659,7 @@ API 级别 5.2.0
 
 ### **showAlert(alertView as [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/))** as **Void**
 
-Show an alert.
+显示警告。
 
 Parameters:
 

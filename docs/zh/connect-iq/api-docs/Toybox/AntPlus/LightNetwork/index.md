@@ -247,11 +247,11 @@ API 级别 2.2.0
 
 - [**setHeadlightsMode**](#setHeadlightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
-    Tell all headlights to enter the same mode.
+    使所有前灯进入相同模式。
 
 - [**setTaillightsMode**](#setTaillightsMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
-    Tell all taillights to enter the same mode.
+    使所有尾灯进入相同模式。
 
 - [**toggleSignalLight**](#toggleSignalLight-instance_function)(left as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -338,7 +338,7 @@ API 级别 2.2.0
 
 ### **setHeadlightsMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
-Tell all headlights to enter the same mode.
+使所有前灯进入相同模式。
 
 You should check the capable modes of each headlight in the network before sending light modes, as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
 
@@ -355,7 +355,7 @@ API 级别 2.2.0
 
 ### **setTaillightsMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
-Tell all taillights to enter the same mode.
+使所有尾灯进入相同模式。
 
 You should check the capable modes of each taillight in the network before sending light modes, as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
 

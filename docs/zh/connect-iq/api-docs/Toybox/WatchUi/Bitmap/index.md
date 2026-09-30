@@ -78,7 +78,7 @@ API 级别 1.0.0
 
 - [**setBitmap**](#setBitmap-instance_function)(bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
-    Set the resource associated with the Bitmap.
+    设置与 Bitmap 关联的资源。
 
 
 ## 实例方法详情
@@ -143,7 +143,7 @@ API 级别 1.0.0
 
 ### **setBitmap(bitmap as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**)** as **Void**
 
-Set the resource associated with the Bitmap.
+设置与 Bitmap 关联的资源。
 
 注意：
 

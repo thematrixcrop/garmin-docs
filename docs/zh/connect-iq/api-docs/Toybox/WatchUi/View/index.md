@@ -139,7 +139,7 @@ API 级别 1.0.0
 
 - [**onShow**](#onShow-instance_function)() as **Void**
 
-    Show the View.
+    显示 View。
 
 - [**onUpdate**](#onUpdate-instance_function)(dc as [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)) as **Void**
 
@@ -364,7 +364,7 @@ API 级别 1.0.0
 
 ### **onShow()** as **Void**
 
-Show the View.
+显示 View。
 
 This is called when the View is brought into the foreground. Resources should be loaded into system memory for use in the View at this point.
 

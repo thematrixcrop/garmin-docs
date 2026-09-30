@@ -264,11 +264,11 @@ API 级别 1.0.0
 
 - [**setDisplayString**](#setDisplayString-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
-    Set the string to display on the ProgressBar.
+    设置要在 ProgressBar 上显示的字符串。
 
 - [**setProgress**](#setProgress-instance_function)(progressValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**) as **Void**
 
-    Set the value of the ProgressBar.
+    设置 ProgressBar 的值。
 
 
 ## 实例方法详情
@@ -299,7 +299,7 @@ API 级别 1.0.0
 
 ### **setDisplayString(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as **Void**
 
-Set the string to display on the ProgressBar.
+设置要在 ProgressBar 上显示的字符串。
 
 Parameters:
 
@@ -314,7 +314,7 @@ API 级别 1.0.0
 
 ### **setProgress(progressValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)** as **Void**
 
-Set the value of the ProgressBar.
+设置 ProgressBar 的值。
 
 Parameters:
 

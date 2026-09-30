@@ -48,7 +48,7 @@ API 级别 2.3.0
 
 - [**executionTimeAverage**](#executionTimeAverage-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    The average partial update execution time [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) took to complete.
+    [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 完成平均部分更新执行所需的时间。
 
 - [**executionTimeLimit**](#executionTimeLimit-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
@@ -59,7 +59,7 @@ API 级别 2.3.0
 
 ### var executionTimeAverage as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-The average partial update execution time [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) took to complete.
+[onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 完成平均部分更新执行所需的时间。
 
 Since:
 

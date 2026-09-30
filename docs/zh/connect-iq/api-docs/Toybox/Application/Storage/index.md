@@ -107,7 +107,7 @@ Values must first be set with [setValue()](/connect-iq/api-docs/Toybox/Applicati
 
 注意：
 
-Symbols can change from build to build and are not to be used for for Keys or Values
+符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values
 
 Parameters:
 
@@ -120,7 +120,7 @@ Returns:
 
 - [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type) —
 
-    The content associated with the key, or `null` if the key is not in the object store
+    与键关联的内容；如果对象存储中不存在该键，则为 `null`
 
 
 另见：
@@ -162,7 +162,7 @@ There is a limit on the size of the Object Store that can vary between devices. 
 
 注意：
 
-Symbols can change from build to build and are not to be used for for Keys or Values
+符号可能因构建版本不同而发生变化，不得将其用于 Keys 或 Values
 
 Parameters:
 

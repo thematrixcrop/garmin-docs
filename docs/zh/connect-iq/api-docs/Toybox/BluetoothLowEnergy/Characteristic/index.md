@@ -140,7 +140,7 @@ API 级别 3.1.0
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function)
 
-Support for long writes is not implemented. Requesting a write on a characteristic longer than 20 bytes will cause an [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
+尚未实现对长写入的支持。请求写入长度超过 20 字节的特征将导致 [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
 Parameters:
 

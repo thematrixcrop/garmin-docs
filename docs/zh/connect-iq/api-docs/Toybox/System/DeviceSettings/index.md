@@ -45,7 +45,7 @@ API 级别 1.0.0
 
 - [**activityTrackingOn**](#activityTrackingOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The activity tracking setting mode.
+    活动跟踪设置模式。
 
 - [**alarmCount**](#alarmCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -73,7 +73,7 @@ API 级别 1.0.0
 
 - [**firmwareVersion**](#firmwareVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-    The current firmware version of the device.
+    设备当前的固件版本。
 
 - [**firstDayOfWeek**](#firstDayOfWeek-var) as [Gregorian.DayOfWeek](/connect-iq/api-docs/Toybox/Time/Gregorian/#DayOfWeek-module)
 
@@ -93,7 +93,7 @@ API 级别 1.0.0
 
 - [**is24Hour**](#is24Hour-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The clock mode mode.
+    时钟模式模式。
 
 - [**isEnhancedReadabilityModeEnabled**](#isEnhancedReadabilityModeEnabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -109,11 +109,11 @@ API 级别 1.0.0
 
 - [**isTouchScreen**](#isTouchScreen-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The availability of a touch screen on the device.
+    设备是否配备触摸屏。
 
 - [**monkeyVersion**](#monkeyVersion-var) as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-    The Connect IQ version supported by the device.
+    设备支持的 Connect IQ 版本。
 
 - [**notificationCount**](#notificationCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -180,7 +180,7 @@ API 级别 1.0.0
 
 ### var activityTrackingOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The activity tracking setting mode.
+活动跟踪设置模式。
 
 Since:
 
@@ -301,7 +301,7 @@ Returns:
 
 ### var firmwareVersion as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-The current firmware version of the device.
+设备当前的固件版本。
 
 Example:
 
@@ -444,7 +444,7 @@ Returns:
 
 ### var is24Hour as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The clock mode mode.
+时钟模式模式。
 
 Since:
 
@@ -666,7 +666,7 @@ Returns:
 
 ### var isTouchScreen as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The availability of a touch screen on the device.
+设备是否配备触摸屏。
 
 Since:
 
@@ -681,7 +681,7 @@ Returns:
 
 ### var monkeyVersion as \[ [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) \]
 
-The Connect IQ version supported by the device.
+设备支持的 Connect IQ 版本。
 
 Example:
 

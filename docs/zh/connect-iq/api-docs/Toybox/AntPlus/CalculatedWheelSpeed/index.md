@@ -142,14 +142,14 @@ API 级别 2.2.0
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The average speed calculated from the sensor data in meters per second (m/s).
+    根据传感器数据计算的平均速度，单位为米每秒（m/s）。
 
 
 ## 实例属性详情
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The average speed calculated from the sensor data in meters per second (m/s).
+根据传感器数据计算的平均速度，单位为米每秒（m/s）。
 
 Since:
 

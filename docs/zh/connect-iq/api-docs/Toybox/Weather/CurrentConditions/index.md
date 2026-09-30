@@ -50,7 +50,7 @@ API 级别 3.2.0
 
 - [**observationLocationName**](#observationLocationName-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** deprecated
 
-    Textual description of the observation location.
+    观测位置的文本描述。
 
 - [**observationLocationPosition**](#observationLocationPosition-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
@@ -191,7 +191,7 @@ Returns:
 
 This value may be removed after System 11.
 
-Textual description of the observation location.
+观测位置的文本描述。
 
 If the app does not have the position permission or the underlying weather provider does not provide a location name, this will be `null`.
 

@@ -252,7 +252,7 @@ API 级别 1.2.0
 
 - [**setOptions**](#setOptions-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type)) as **Void**
 
-    Set the options for the Picker.
+    设置 Picker 的选项。
 
 
 ## 类型定义详情
@@ -287,7 +287,7 @@ API 级别 1.2.0
 
 ### **setOptions(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))** as **Void**
 
-Set the options for the Picker.
+设置 Picker 的选项。
 
 Parameters:
 

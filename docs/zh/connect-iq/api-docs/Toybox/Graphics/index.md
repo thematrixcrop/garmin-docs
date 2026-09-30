@@ -903,7 +903,7 @@ API 级别 3.1.0
 
 获取单倍行距文本基线以上的建议距离。
 
-The base line is the line on which the text sits.
+基线是文本所在的线。
 
 注意：
 
@@ -931,7 +931,7 @@ API 级别 1.2.0
 
 获取单倍行距文本基线以下的建议距离。
 
-The base line is the line on which the text sits.
+基线是文本所在的线。
 
 注意：
 

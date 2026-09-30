@@ -32,7 +32,7 @@ API 级别 2.2.0
 
 - [**identifier**](#identifier-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Component Identifier.
+    组件标识符。
 
 - [**numComponents**](#numComponents-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -43,7 +43,7 @@ API 级别 2.2.0
 
 ### var identifier as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Component Identifier.
+组件标识符。
 
 Component IDs are defined on a by-ANT+-profile basis.
 

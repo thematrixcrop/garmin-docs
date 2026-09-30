@@ -480,7 +480,7 @@ Constructor
 
 注意：
 
-The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme support.
+`:theme` 选项仅用于支持菜单主题的 ConnectIQ 4.1.8 设备。
 
 注意：
 
@@ -488,7 +488,7 @@ The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme supp
 
 注意：
 
-The `:footer` option is only used on ConnectIQ 5.1.0 devices.
+`:footer` 选项仅用于 ConnectIQ 5.1.0 设备。
 
 Parameters:
 

@@ -74,7 +74,7 @@ API 级别 3.1.0
 
 - [**setVisible**](#setVisible-instance_function)(visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Set visibility of the layer, if the layer hasn't been added to a view, or the view isn't on top of view stack, the value will be saved.
+    设置图层的可见性；如果图层尚未添加到视图，或视图不在视图堆栈顶部，则会保存该值。
 
 - [**setX**](#setX-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
@@ -225,7 +225,7 @@ API 级别 3.1.0
 
 ### **setVisible(visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Set visibility of the layer, if the layer hasn't been added to a view, or the view isn't on top of view stack, the value will be saved.
+设置图层的可见性；如果图层尚未添加到视图，或视图不在视图堆栈顶部，则会保存该值。
 
 Parameters:
 

@@ -937,7 +937,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Swimming
+游泳的子运动类型
 
 |
 | SUB\_SPORT\_OPEN\_WATER | 18 |
@@ -946,7 +946,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Swimming
+游泳的子运动类型
 
 |
 | SUB\_SPORT\_FLEXIBILITY\_TRAINING | 19 |

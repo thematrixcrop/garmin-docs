@@ -38,7 +38,7 @@ API 级别 3.3.0
 
 - [**type**](#type-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
 
-    Sport type of the activity.
+    活动的运动类型。
 
 
 ## 实例属性详情
@@ -90,7 +90,7 @@ Returns:
 
 ### var type as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
 
-Sport type of the activity.
+活动的运动类型。
 
 Since:
 

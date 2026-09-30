@@ -28,7 +28,7 @@ API 级别 1.0.0
 
 - [**accel**](#accel-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    The accelerometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in millig-units.
+    以 Array 形式表示的 x、y 和 z 轴加速度计读数，值为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，单位为毫伽。
 
 - [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -36,7 +36,7 @@ API 级别 1.0.0
 
 - [**cadence**](#cadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The cadence in revolutions per minute (rpm).
+    步频，单位为每分钟转数（rpm）。
 
 - [**heading**](#heading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -60,7 +60,7 @@ API 级别 1.0.0
 
 - [**pressure**](#pressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The barometric pressure in Pascals (Pa).
+    气压，单位为帕斯卡（Pa）。
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -75,7 +75,7 @@ API 级别 1.0.0
 
 ### var accel as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-The accelerometer reading of the x, y, and z axes as an Array of [Number](/connect-iq/api-docs/Toybox/Lang/Number/) values in millig-units.
+以 Array 形式表示的 x、y 和 z 轴加速度计读数，值为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，单位为毫伽。
 
 注意：
 
@@ -285,7 +285,7 @@ Returns:
 
 ### var cadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The cadence in revolutions per minute (rpm).
+步频，单位为每分钟转数（rpm）。
 
 Cadence is derived from (in order of priority):
 
@@ -651,7 +651,7 @@ Returns:
 
 ### var pressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The barometric pressure in Pascals (Pa).
+气压，单位为帕斯卡（Pa）。
 
 This returns barometric pressure calibrated to sea level. Since pressure varies dues to several factors, a GPS-based altitude must first be obtained, then the ambient (local) pressure is measured by the pressure sensor before conversion to a calibrated barometric pressure value.
 

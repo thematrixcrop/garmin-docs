@@ -41,7 +41,7 @@ API 级别 2.2.0
 
 - [**deviceNumber**](#deviceNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current Device ID being tracked/searched for.
+    当前正在跟踪/搜索的设备 ID。
 
 - [**state**](#state-var) as [AntPlus.DeviceCurrentState](/connect-iq/api-docs/Toybox/AntPlus/#DeviceCurrentState-module) or **Null**
 
@@ -52,7 +52,7 @@ API 级别 2.2.0
 
 ### var deviceNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current Device ID being tracked/searched for.
+当前正在跟踪/搜索的设备 ID。
 
 Since:
 

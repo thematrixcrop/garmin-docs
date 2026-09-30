@@ -182,7 +182,7 @@ API 级别 3.0.0
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    Speed (m/s).
+    速度（m/s）。
 
 
 ## 实例属性详情
@@ -201,7 +201,7 @@ Returns:
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-Speed (m/s)
+速度（m/s）
 
 Since:
 

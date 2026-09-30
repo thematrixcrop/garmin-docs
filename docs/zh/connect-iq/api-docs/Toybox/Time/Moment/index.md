@@ -98,7 +98,7 @@ API 级别 1.0.0
 
 - [**subtract**](#subtract-instance_function)(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-    Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Moment.
+    从 Moment 中减去一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 或 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 - [**value**](#value-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -326,7 +326,7 @@ API 级别 1.0.0
 
 ### **subtract(subtrahend as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/))** as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)
 
-Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) from a Moment.
+从 Moment 中减去一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 或 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 注意：
 

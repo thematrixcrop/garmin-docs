@@ -52,7 +52,7 @@ API 级别 1.0.0
 
 - [**freeMemory**](#freeMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The current free memory in bytes.
+    当前可用内存，单位为字节。
 
 - [**solarIntensity**](#solarIntensity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -216,7 +216,7 @@ Returns:
 
 ### var freeMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The current free memory in bytes.
+当前可用内存，单位为字节。
 
 Since:
 

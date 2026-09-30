@@ -316,7 +316,7 @@ Parameters:
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
-    The byte to remove from the ByteArray
+    要从 ByteArray 中移除的字节
 
 
 Returns:
@@ -353,7 +353,7 @@ Parameters:
 
 - byte — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)) —
 
-    The byte to remove from the ByteArray
+    要从 ByteArray 中移除的字节
 
 
 Returns:

@@ -213,7 +213,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    The computed message authentication code in network byte order
+    以网络字节序表示的计算所得消息验证码
 
 
 Since:

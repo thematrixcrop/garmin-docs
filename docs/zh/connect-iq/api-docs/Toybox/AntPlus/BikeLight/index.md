@@ -180,11 +180,11 @@ API 级别 2.2.0
 
 - [**mode**](#mode-var) as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
-    The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) mode of the light.
+    灯光的 [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 模式。
 
 - [**type**](#type-var) as [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
-    The [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) type of the light.
+    灯光的 [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) 类型。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -199,14 +199,14 @@ API 级别 2.2.0
 
 - [**setMode**](#setMode-instance_function)(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) as **Void**
 
-    Tell this light to enter a new mode.
+    使此灯进入新模式。
 
 
 ## 实例属性详情
 
 ### var mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)
 
-The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) mode of the light.
+灯光的 [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 模式。
 
 Since:
 
@@ -218,7 +218,7 @@ Returns:
 
 ### var type as [AntPlus.LightType](/connect-iq/api-docs/Toybox/AntPlus/#LightType-module)
 
-The [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) type of the light.
+灯光的 [LIGHT\_TYPE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_TYPE_HEADLIGHT-const) 类型。
 
 Since:
 
@@ -255,7 +255,7 @@ API 级别 2.2.0
 
 ### **setMode(mode as [AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module))** as **Void**
 
-Tell this light to enter a new mode.
+使此灯进入新模式。
 
 You should check the capable modes before sending light modes as lights will ignore commands to go into modes that they do not support. Lights whose modes are set here will not be controlled by the Light Network Mode until they are restored OR until the user changes the Light Network Mode outside of ConnectIQ.
 

@@ -49,18 +49,18 @@ API 级别 1.0.0
 
 - [**start**](#start-instance_function)(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**, time as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), repeat as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
-    Start the Timer.
+    启动 Timer。
 
 - [**stop**](#stop-instance_function)() as **Void**
 
-    Stops the Timer from running.
+    停止 Timer 运行。
 
 
 ## 实例方法详情
 
 ### **start(callback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)() as **Void**, time as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), repeat as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/))** as **Void**
 
-Start the Timer.
+启动 Timer。
 
 注意：
 
@@ -87,7 +87,7 @@ API 级别 1.0.0
 
 ### **stop()** as **Void**
 
-Stops the Timer from running.
+停止 Timer 运行。
 
 This only needs to be called for repeating timers. A Timer can be started again by calling start().
 

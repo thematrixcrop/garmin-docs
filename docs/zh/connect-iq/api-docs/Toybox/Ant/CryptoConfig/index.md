@@ -237,11 +237,11 @@ API 级别 2.3.0
 
 - [**encryptionKey**](#encryptionKey-var) as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
 
-    The 128-bit encryption key used to encrypt/decrypt ANT packets.
+    用于加密/解密 ANT 数据包的 128 位加密密钥。
 
 - [**userInfoString**](#userInfoString-var) as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
 
-    The (optional) user information String to be sent to the master channel on successful negotiation of encryption (Slave channels only).
+    加密协商成功后要发送到主通道的（可选）用户信息 String（仅限从通道）。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -285,7 +285,7 @@ API 级别 2.3.0
 
 ### var encryptionKey as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
 
-The 128-bit encryption key used to encrypt/decrypt ANT packets.
+用于加密/解密 ANT 数据包的 128 位加密密钥。
 
 Since:
 
@@ -293,7 +293,7 @@ API 级别 2.3.0
 
 ### var userInfoString as [CryptoConfig.UserInfoString](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#UserInfoString-named_type) or **Null**
 
-The (optional) user information String to be sent to the master channel on successful negotiation of encryption (Slave channels only).
+加密协商成功后要发送到主通道的（可选）用户信息 String（仅限从通道）。
 
 Since:
 

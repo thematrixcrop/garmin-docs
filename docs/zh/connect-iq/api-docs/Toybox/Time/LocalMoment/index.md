@@ -244,7 +244,7 @@ API 级别 3.3.0
 
 - [**subtract**](#subtract-instance_function)(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
-    Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) from a LocalMoment.
+    从 LocalMoment 中减去一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 或 [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)。
 
 - [**toMoment**](#toMoment-instance_function)() as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
@@ -439,7 +439,7 @@ API 级别 3.3.0
 
 ### **subtract(subtrahend as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/))** as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [Time.LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)
 
-Subtract a [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/) from a LocalMoment.
+从 LocalMoment 中减去一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 或 [LocalMoment](/connect-iq/api-docs/Toybox/Time/LocalMoment/)。
 
 Parameters:
 

@@ -79,11 +79,11 @@ API 级别 2.3.0
 
 - [**onSleepTime**](#onSleepTime-instance_function)() as **Void**
 
-    The callback method that is triggered in the background at the configured sleep time.
+    在配置的休眠时间于后台触发的回调方法。
 
 - [**onSteps**](#onSteps-instance_function)() as **Void**
 
-    The callback method that is triggered in the background when a step goal is reached.
+    达到步数目标时在后台触发的回调方法。
 
 - [**onTemporalEvent**](#onTemporalEvent-instance_function)() as **Void**
 
@@ -295,7 +295,7 @@ API 级别 3.2.0
 
 ### **onSleepTime()** as **Void**
 
-The callback method that is triggered in the background at the configured sleep time.
+在配置的休眠时间于后台触发的回调方法。
 
 Since:
 
@@ -303,7 +303,7 @@ API 级别 2.3.0
 
 ### **onSteps()** as **Void**
 
-The callback method that is triggered in the background when a step goal is reached.
+达到步数目标时在后台触发的回调方法。
 
 Step goals occur at 1000 step increments.
 

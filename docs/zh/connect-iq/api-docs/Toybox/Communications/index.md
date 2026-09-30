@@ -2374,7 +2374,7 @@ API 级别 1.3.0
 
 注册用于接收 OAuth 消息的回调。
 
-The callback will be called once for each received OAuth message. If there are messages waiting for the app when this function is called, the callback will immediately be called once for each waiting message.
+每接收到一条 OAuth 消息，都会调用一次回调。如果调用此函数时有消息正在等待应用处理，回调会立即针对每条等待中的消息调用一次。
 
 Parameters:
 

@@ -29,7 +29,7 @@ API 级别 2.4.0
 
 - [**setValue**](#setValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as **Void**
 
-    Store the given Application Property.
+    存储给定的 Application Property。
 
 
 ## 类型定义详情
@@ -84,7 +84,7 @@ Throws:
 
 ### **setValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as **Void**
 
-Store the given Application Property.
+存储给定的 Application Property。
 
 注意：
 

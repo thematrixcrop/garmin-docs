@@ -230,7 +230,7 @@ API 级别 1.1.0
 
 - [**onCancel**](#onCancel-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Text entry has been canceled.
+    文本输入已取消。
 
 - [**onTextEntered**](#onTextEntered-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), changed as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -241,7 +241,7 @@ API 级别 1.1.0
 
 ### **onCancel()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Text entry has been canceled.
+文本输入已取消。
 
 Since:
 

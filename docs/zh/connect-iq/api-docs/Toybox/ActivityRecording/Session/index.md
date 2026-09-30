@@ -67,7 +67,7 @@ API 级别 1.0.0
 
 - [**stop**](#stop-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Stop recording a FIT file on the system.
+    停止系统上的 FIT 文件录制。
 
 
 ## 实例方法详情
@@ -405,7 +405,7 @@ API 级别 1.0.0
 
 ### **stop()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Stop recording a FIT file on the system.
+停止系统上的 FIT 文件录制。
 
 Returns:
 

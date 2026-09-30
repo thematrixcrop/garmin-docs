@@ -210,7 +210,7 @@ API 级别 1.0.0
 
 - [**setPenWidth**](#setPenWidth-instance_function)(width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set the width of a line.
+    设置线条的宽度。
 
 - [**setStroke**](#setStroke-instance_function)(stroke as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/)) as **Void**
 
@@ -1655,7 +1655,7 @@ API 级别 4.0.0
 
 ### **setPenWidth(width as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set the width of a line.
+设置线条的宽度。
 
 Parameters:
 

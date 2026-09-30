@@ -32,7 +32,7 @@ API 级别 1.0.0
 
 - [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The calories for the day in kilocalories (kCal).
+    当天的卡路里，单位为千卡（kCal）。
 
 - [**distance**](#distance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -231,7 +231,7 @@ Returns:
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The calories for the day in kilocalories (kCal).
+当天的卡路里，单位为千卡（kCal）。
 
 Since:
 

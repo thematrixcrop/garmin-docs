@@ -32,43 +32,43 @@ API 级别 1.0.0
 
 - [**ambientPressure**](#ambientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The ambient pressure in Pascals (Pa).
+    环境压力，单位为帕斯卡（Pa）。
 
 - [**averageCadence**](#averageCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The average cadence during the current activity in revolutions per minute (rpm).
+    当前活动期间的平均步频，单位为每分钟转数（rpm）。
 
 - [**averageDistance**](#averageDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The average swim stroke distance from the previous interval in meters (m).
+    自上一个间隔以来的平均游泳划水距离，单位为米（m）。
 
 - [**averageHeartRate**](#averageHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The average heart rate during the current activity in beats per minute (bpm).
+    当前活动期间的平均心率，单位为每分钟心跳次数（bpm）。
 
 - [**averagePower**](#averagePower-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The average power during the current activity in Watts (W).
+    当前活动期间的平均功率，单位为瓦（W）。
 
 - [**averageSpeed**](#averageSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The average speed during the current activity in meters per second (mps).
+    当前活动期间的平均速度，单位为米每秒（mps）。
 
 - [**bearing**](#bearing-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The current bearing in radians.
+    当前方位角，单位为弧度。
 
 - [**bearingFromStart**](#bearingFromStart-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The bearing from the starting location to the destination in radians.
+    从起始位置到目的地的方位角，单位为弧度。
 
 - [**calories**](#calories-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The calories burned throughout the current activity in kilocalories (kcal).
+    当前活动期间消耗的卡路里，单位为千卡（kcal）。
 
 - [**currentCadence**](#currentCadence-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current cadence in revolutions per minute (rpm).
+    当前步频，单位为每分钟转数（rpm）。
 
 - [**currentHeading**](#currentHeading-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -84,7 +84,7 @@ API 级别 1.0.0
 
 - [**currentLocationAccuracy**](#currentLocationAccuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
 
-    The current GPS accuracy.
+    当前 GPS 精度。
 
 - [**currentOxygenSaturation**](#currentOxygenSaturation-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -124,11 +124,11 @@ API 级别 1.0.0
 
 - [**energyExpenditure**](#energyExpenditure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The current energy expenditure in kilocalories per minute (kcals/min).
+    当前能量消耗，单位为每分钟千卡（kcals/min）。
 
 - [**frontDerailleurIndex**](#frontDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The current front bicycle derailleur index.
+    当前前自行车拨链器索引。
 
 - [**frontDerailleurMax**](#frontDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -245,7 +245,7 @@ Returns:
 
 ### var ambientPressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The ambient pressure in Pascals (Pa).
+环境压力，单位为帕斯卡（Pa）。
 
 This returns ambient (local) barometric pressure as measured by the pressure sensor. The data is smoothed by a two-stage filter to reduce noise and instantaneous variation.
 
@@ -411,7 +411,7 @@ Returns:
 
 ### var averageCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The average cadence during the current activity in revolutions per minute (rpm).
+当前活动期间的平均步频，单位为每分钟转数（rpm）。
 
 Since:
 
@@ -423,7 +423,7 @@ Returns:
 
 ### var averageDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The average swim stroke distance from the previous interval in meters (m).
+自上一个间隔以来的平均游泳划水距离，单位为米（m）。
 
 Since:
 
@@ -573,7 +573,7 @@ Returns:
 
 ### var averageHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The average heart rate during the current activity in beats per minute (bpm).
+当前活动期间的平均心率，单位为每分钟心跳次数（bpm）。
 
 Since:
 
@@ -585,7 +585,7 @@ Returns:
 
 ### var averagePower as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The average power during the current activity in Watts (W).
+当前活动期间的平均功率，单位为瓦（W）。
 
 Since:
 
@@ -715,7 +715,7 @@ Returns:
 
 ### var averageSpeed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The average speed during the current activity in meters per second (mps).
+当前活动期间的平均速度，单位为米每秒（mps）。
 
 The average is computed as the elapsed 3-D accumulated distance divided by the elapsed time.
 
@@ -729,7 +729,7 @@ Returns:
 
 ### var bearing as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The current bearing in radians.
+当前方位角，单位为弧度。
 
 Bearing is the direction from your current location or position to the destination of navigation, dependent on your current location.
 
@@ -846,7 +846,7 @@ Returns:
 
 ### var bearingFromStart as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The bearing from the starting location to the destination in radians.
+从起始位置到目的地的方位角，单位为弧度。
 
 Bearing from start is the direction of desired track from the start of navigation to the destination in radians. This is only dependent on your location when a course is set, and it is not dependent on where you may have moved to during an activity
 
@@ -963,7 +963,7 @@ Returns:
 
 ### var calories as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The calories burned throughout the current activity in kilocalories (kcal).
+当前活动期间消耗的卡路里，单位为千卡（kcal）。
 
 Since:
 
@@ -975,7 +975,7 @@ Returns:
 
 ### var currentCadence as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current cadence in revolutions per minute (rpm).
+当前步频，单位为每分钟转数（rpm）。
 
 Since:
 
@@ -1030,7 +1030,7 @@ Returns:
 
 ### var currentLocationAccuracy as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module) or **Null**
 
-The current GPS accuracy.
+当前 GPS 精度。
 
 GPS accuracy values range from 0-4. A value of 0 indicates an accuracy value is not available, while a value of 4 indicates a good GPS fix.
 
@@ -1812,7 +1812,7 @@ Returns:
 
 ### var energyExpenditure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The current energy expenditure in kilocalories per minute (kcals/min).
+当前能量消耗，单位为每分钟千卡（kcals/min）。
 
 Energy expenditure is a metric developed by FirstBeat that provides an estimation of the calorie burn rate calculated from heart rate data.
 
@@ -2002,7 +2002,7 @@ Returns:
 
 ### var frontDerailleurIndex as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The current front bicycle derailleur index.
+当前前自行车拨链器索引。
 
 Index values range from from 1 to the frontDerailleurMax.
 

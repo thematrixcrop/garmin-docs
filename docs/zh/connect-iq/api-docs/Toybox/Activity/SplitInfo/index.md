@@ -342,7 +342,7 @@ Returns:
 
 ### var splitDistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Split distance in meters
+以米为单位的分段距离
 
 Since:
 
@@ -350,7 +350,7 @@ API 级别 5.2.2
 
 Returns:
 
-- Split distance in meters
+- 以米为单位的分段距离
 
 
 ### var splitType as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**

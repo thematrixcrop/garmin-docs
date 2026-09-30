@@ -158,7 +158,7 @@ API 级别 3.0.0
 
 - [**setWidth**](#setWidth-instance_function)(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Set the width of the MapPolyline to draw on the map.
+    设置要在地图上绘制的 MapPolyline 的宽度。
 
 
 ## 实例方法详情
@@ -240,7 +240,7 @@ API 级别 3.0.0
 
 ### **setWidth(width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Set the width of the MapPolyline to draw on the map.
+设置要在地图上绘制的 MapPolyline 的宽度。
 
 Parameters:
 

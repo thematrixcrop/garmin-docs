@@ -39,14 +39,14 @@ API 级别 1.3.0
 
 - [**setData**](#setData-instance_function)(input as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) as **Void**
 
-    Set the value to write to this Field.
+    设置要写入此 Field 的值。
 
 
 ## 实例方法详情
 
 ### **setData(input as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as **Void**
 
-Set the value to write to this Field.
+设置要写入此 Field 的值。
 
 Parameters:
 

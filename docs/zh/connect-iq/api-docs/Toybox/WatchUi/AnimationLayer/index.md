@@ -189,7 +189,7 @@ API 级别 3.1.0
 
 - [**stop**](#stop-instance_function)() as **Void**
 
-    Stop a playing animation.
+    停止正在播放的动画。
 
 
 ## 实例方法详情
@@ -289,7 +289,7 @@ API 级别 3.1.0
 
 ### **stop()** as **Void**
 
-Stop a playing animation.
+停止正在播放的动画。
 
 ```
   The last frame of the animation will be persisted in the frame buffer.
