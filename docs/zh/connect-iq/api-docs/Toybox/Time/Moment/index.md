@@ -48,14 +48,14 @@ var now = Gregorian.moment(options);
 var info;
 info = Gregorian.utcInfo(now, Time.FORMAT_SHORT);
 
-// 在控制台打印 "2018-02-24"
+// 将 "2018-02-24" 输出到控制台
 System.println(Lang.format("$1$-$2$-$3$", [
     info.year.format("%04u"),
     info.month.format("%02u"),
     info.day.format("%02u")
 ]));
 
-// 在控制台打印 "day_of_week=7 month=2"
+// 将 "day_of_week=7 month=2" 输出到控制台
 System.println(Lang.format("day_of_week=$1$ month=$2$", [
     info.day_of_week,
     info.month
@@ -63,7 +63,7 @@ System.println(Lang.format("day_of_week=$1$ month=$2$", [
 
 info = Gregorian.utcInfo(now, Time.FORMAT_LONG);
 
-// 在控制台打印 "day_of_week=Sat month=Feb"
+// 将 "day_of_week=Sat month=Feb" 输出到控制台
 System.println(Lang.format("day_of_week=$1$ month=$2$", [
     info.day_of_week,
     info.month
