@@ -39,28 +39,28 @@ In order for your companion application to communicate with a Connect IQ device 
 ```java
 connectIQ.initialize(context, true, new ConnectIQListener() {
 
-    // Called when the SDK has been successfully initialized
+    // SDK 成功初始化时调用
     @Override
     public void onSdkReady() {
 
-        // Do any post initialization setup.
+        // 执行初始化后的设置。
     }
 
-    // Called when the SDK has been shut down
+    // SDK 关闭时调用
 
     @Override
     public void onSdkShutDown() {
 
-        // Take care of any post shutdown requirements
+        // 处理关闭后的相关工作
     }
 
-    // Called when initialization fails.
+    // 初始化失败时调用。
     @Override
     public void onInitializationError(IQSdkErrorStatus status) {
 
-        // A failure has occurred during initialization. Inspect
-        // the IQSdkErrorStatus value 更多信息 regarding
-        // the failure.
+        // 初始化期间发生错误。请检查
+        // IQSdkErrorStatus 值以获取有关
+        // 该故障的更多信息。
     }
 
 });
@@ -101,11 +101,11 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
 List<IQDevice> paired = connectIQ.getKnownDevices();
 
 if (paired != null && paired.size() > 0) {
-    // get the status of the devices
+    // 获取设备状态
     for (IQDevice device : paired) {
         IQDeviceStatus status = connectIQ.getStatus(device);
         if (status == IQDeviceStatus.CONNECTED) {
-            // Work with the device
+            // 使用设备
         }
     }
 }
@@ -118,7 +118,7 @@ List<IQDevice> devices = connectIQ.getConnectedDevices();
 
 if (devices != null && devices.size() > 0) {
 
-    // Work with devices.
+    // 使用设备。
 }
 ```
 
@@ -127,20 +127,20 @@ if (devices != null && devices.size() > 0) {
 您可以通过调用`registerForDeviceEvents(IQDevice, IQDeviceEventListener)`请求通知设备状态发生变化. 一旦已注册,任何设备状态变化将调用新状态的`IQDeviceEventListener.onDeviceStatusChanged()`. 当您不再需要收到设备更新时,您应该调用`unregisterForDeviceEvents(IQDevice)`释放任何相关资源.
 
 ```java
-// Register to receive status updates
+// 注册以接收状态更新
 connectIQ.registerForDeviceEvents(device, new IQDeviceEventListener() {
 
     @Override
     public void onDeviceStatusChanged(IQDevice device, IQDeviceStatus newStatus) {
 
-        // Handle new status
+        // 处理新状态
     }
 });
 
-// Get the current status
+// 获取当前状态
 IQDeviceStatus current = device.getStatus();
 
-// Unregister when we no longer need status updates
+// 不再需要状态更新时取消注册
 connectIQ.unregisterForDeviceEvents(device);
 ```
 
@@ -166,14 +166,14 @@ connectIQ.getApplicationInfo(MY_APPLICATION_ID, device, new IQApplicationInfoLis
         if (app != null) {
             if (app.getStatus() == INSTALLED) {
                 if (app.getVersion() < MY_CURRENT_VERSION) {
-                    // Prompt the user to upgrade
+                    // 提示用户升级
                 }
             }
         }
     }
     @Override
     public void onAPplicationNotInstalled( String applicationId ) {
-        // Prompt user with information
+        // 向用户显示信息
         AlertDialog.Builder dialog = new AlertDialog.Builder( this );
         dialog.setTitle( "Missing Application" );
         dialog.setMessage( "Corresponding IQ application not installed" );
@@ -200,7 +200,7 @@ connectIQ.openApplication(device, app, new IQOpenApplicationListener() {
 
     @Override
     public void onOpenApplicationResponse(IQDevice device, IQApp app, IQOpenApplicationStatus status) {
-        // Handle the response here
+        // 在此处处理响应
     }
 
 });
@@ -240,7 +240,7 @@ connectIQ.sendMessage(device, app, message, new IQSendMessageListener() {
     public void onMessageStatus( IQDevice device, IQApp app, IQMessageStatus status ) {
         Toast.makeText( this, status.name(), Toast.LENGTH_LONG ).show();
         if (status != IQMessageStatus.SUCCESS) {
-            // Evalute status for cause of the failure
+            // 评估状态以确定失败原因
         }
     }
 });
@@ -253,21 +253,21 @@ connectIQ.sendMessage(device, app, message, new IQSendMessageListener() {
 一个伴侣应用程序可以注册接收来自多个应用程序的消息在多个设备上.然而,多个伴侣应用程序不能注册接收来自同一连接IQ应用程序的消息.SDK将在每次调用到`registerForAppEvents()`时取消任何以前的注册.
 
 ```java
-// Register to receive messages from our application
+// 注册以接收来自应用程序的消息
 connectIQ.registerForAppEvents(device, app, new IQApplicationEventListener() {
 
     @Override
     public void onMessageReceived(IQDevice device, IQApp app, List<Object> messageData, IQMessageStatus status) {
-        // First inspect the status to make sure this
-        // was a SUCCESS. If not then the status will indicate why there
-        // was an issue receiving the message from the Connect IQ application.
+        // 首先检查状态以确保这是
+        // SUCCESS。如果不是，状态将指出为何
+        // 从 Connect IQ 应用程序接收消息时出现问题。
         if (status == IQMessageStatus.SUCCESS) {
-            // Handle the message.
+            // 处理消息。
         }
     }
 });
 
-// unregister when we no longer care about messages coming from our app.
+// 不再需要接收来自应用程序的消息时取消注册。
 connectIQ.unregisterForAppEvents(device, app);
 ```
 
