@@ -53,17 +53,17 @@ Monkey C 支持以下基本类型：
 所有局部变量都必须提前使用 `var` 关键字声明。在 Monkey C 中，所有值（包括数值）都是对象。
 
 ```java
-var n = null;               // Null reference
-var x = 5;                  // 32-bit signed integers
-var y = 6.0;                // 32-bit floating point
-var l = 5l;                 // 64-bit signed integers
-var d = 4.0d;               // 64-bit floating point
-var bool = true;            // Boolean (true or false)
-var c = 'x';                // Unicode character
+var n = null;               // Null 引用
+var x = 5;                  // 32 位有符号整数
+var y = 6.0;                // 32 位浮点数
+var l = 5l;                 // 64 位有符号整数
+var d = 4.0d;               // 64 位浮点数
+var bool = true;            // 布尔值（true 或 false）
+var c = 'x';                // Unicode 字符
 var str = "Hello";          // String
-var arr = new [20 + 30];    // Array of size 50
-var dict = { x=>y };        // Dictionary: key is 5, value is 6.0
-var z = arr[2] + x;         // Null pointer waiting to happen
+var arr = new [20 + 30];    // 大小为 50 的数组
+var dict = { x=>y };        // 字典：键为 5，值为 6.0
+var z = arr[2] + x;         // 即将发生的空指针错误
 ```
 
 Monkey C 支持以下运算符：
@@ -104,8 +104,8 @@ Monkey C 支持以下运算符：
 var a = :symbol_1;
 var b = :symbol_1;
 var c = :symbol_2;
-Sys.println( a == b );  // Prints true
-Sys.println( a == c );  // Prints false
+Sys.println( a == b );  // 打印 true
+Sys.println( a == c );  // 打印 false
 ```
 
 如果不想声明 Enum，符号可以方便地用来创建键：
@@ -135,7 +135,7 @@ enum {
     Monday,   // Monday = 0
     Tuesday,  // Tuesday = 1
     Wednesday // Wednesday = 2
-    // ...and so on
+    // ……以此类推
 }
 ```
 
@@ -156,7 +156,7 @@ enum {
 
 ```typescript
 function foo( a ) {
-    // Assume foo does something really impressive
+    // 假设 foo 会执行非常出色的操作
 }
 
 function bar() {
@@ -202,14 +202,14 @@ Monkey C 不支持 `SuperClass.memberVariable` 语法。始终使用 `self` 访�
 myInstance.methodToCall( parameter );
 
 if ( a == true ) {
-    // Do something
+    // 执行某些操作
 } else if ( b == true ) {
-    // Do something else
+    // 执行其他操作
 } else {
-    // If all else fails
+    // 如果其他情况都不满足
 }
 
-// Monkey C also supports the ternary operator
+// Monkey C 也支持三元运算符
 var result = a ? 1 : 2;
 ```
 
@@ -231,42 +231,41 @@ var result = a ? 1 : 2;
 ```typescript
 switch ( obj ) {
     case true:
-    // Do something
+    // 执行某些操作
     break;
     case 1:
-    // Do something
+    // 执行某些操作
     break;
     case "B": {
-        // Do something
+        // 执行某些操作
         break;
     }
-    // Executed based on the type
-    // instead of the value
+    // 根据类型而不是值执行
     case instanceof MyClass:
-    // Do something
+    // 执行某些操作
     break;
     default:
-    // If all else fails
+    // 如果其他情况都不满足
     break;
 }
 
-// Monkey C also supports fall-through into the next case statement
+// Monkey C 也支持贯穿到下一个 case 语句
 switch ( obj ) {
     case false:
-    // Do something
-    // Fall through and execute the code in the next case block
+    // 执行某些操作
+    // 贯穿并执行下一个 case 代码块中的代码
     case 2: {
-        // Do something
+        // 执行某些操作
         break;
     }
     case instanceof MyOtherClass:
-    // Do something
+    // 执行某些操作
     break;
     case "B":
-    // Do something
-    // Fall through and execute the code in the default block
+    // 执行某些操作
+    // 贯穿并执行 default 代码块中的代码
     default:
-    // If all else fails
+    // 如果其他情况都不满足
     break;
 }
 ```
@@ -284,22 +283,22 @@ switch ( obj ) {
 ```java
 switch ( obj ) {
     case true:
-    var aaa = 1; // Scoped at the switch block level
+    var aaa = 1; // 作用域为 switch 代码块级别
     ...
     case 1:
-    var zzz = aaa; // Results in a compiler error because aaa was not initialized in this case block
+    var zzz = aaa; // 由于 aaa 未在此 case 代码块中初始化，将导致编译器错误
     ...
     break;
     case "B": {
-       var aaa = true; // Scoped at the code block level within the curly braces, no scoping conflict with variable aaa at the switch block level
+       var aaa = true; // 作用域为花括号内的代码块级别，与 switch 代码块级别的变量 aaa 不冲突
        ...
        break;
     }
     case instanceof MyClass:
-    var aaa = "Hello!" // Results in a compiler error because aaa has already been defined in the switch block
+    var aaa = "Hello!" // 由于 aaa 已在 switch 代码块中定义，将导致编译器错误
     ...
     default:
-    aaa = 0; // aaa was defined in the first case and initialized at the beginning of the default case, no errors!
+    aaa = 0; // aaa 已在第一个 case 中定义，并在 default 开始处初始化，不会出错！
     var good = aaa;
     ...
     break;
@@ -311,31 +310,31 @@ switch ( obj ) {
 Monkey C 支持 `for`、`while` 和 `do/while` 循环。`while` 和 `do/while` 循环的语法与常见语言类似：
 
 ```java
-// do/while loop
+// do/while 循环
 do {
-    // Code to do in a loop
+    // 循环中执行的代码
 }
 while( expression );
 
-// while loop
+// while 循环
 while( expression ) {
-    // Code to do in a loop
+    // 循环中执行的代码
 }
 ```
 
 循环必须使用花括号包围，因为不支持单行循环：
 
 ```java
-// Monkey C does allow for variable declaration in for loops
+// Monkey C 允许在 for 循环中声明变量
 for( var i = 0; i < array.size(); i++ ) {
-    // Code to do in a loop
+    // 循环中执行的代码
 }
 ```
 
 可以使用 `break` 和 `continue` 语句控制循环，它们的行为与常见语言类似：
 
 ```java
-// This for loop should only print 5, 6, and 7.
+// 此 for 循环应只打印 5、6 和 7。
 for (var i = 0; i < 10; i += 1) {
     if (i < 5) {
         continue;
@@ -365,7 +364,7 @@ return expression;
 
 ```java
 var value = 5;
-// Check to see if value is a number
+// 检查值是否为数字
 if ( value instanceof Toybox.Lang.Number )
 {
     System.println( "Value is a number" );
@@ -376,7 +375,7 @@ if ( value instanceof Toybox.Lang.Number )
 
 ```java
 var impl;
-// Check to see if the Magnetometer module exists in Toybox
+// 检查 Toybox 中是否存在 Magnetometer 模块
 if ( Toybox has :Magnetometer )
 {
     impl = new ImplementationWithMagnetometer();
@@ -397,15 +396,15 @@ Monkey C 中的函数不是一等对象，不能直接将它们作为对象传�
 class Foo
 {
     function operation(a, b) {
-        // The code here is really amazing. Like mind blowing amazing. You wish this method was in your program.
+        // 这里的代码非常出色，令人惊叹。你会希望自己的程序中也有这个方法。
     }
 }
 function usageSample() {
-    // Create a new instance of Foo
+    // 创建 Foo 的新实例
     var v = new Foo();
-    // Get the callback for the operation method from the instance of Foo.
+    // 从 Foo 实例获取 operation 方法的回调。
     var m = v.method(:operation);
-    // Invoke v's operation method.
+    // 调用 v 的 operation 方法。
     m.invoke(1,2);
 }
 ```
@@ -420,7 +419,7 @@ import Toybox.Lang;
 module Foo
 {
     function operation() {
-        // Do something
+        // 执行某些操作
     }
 }
 function moduleSample() {
