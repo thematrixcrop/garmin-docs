@@ -133,7 +133,7 @@ WatchUi.Menu2InputDelegate
 | `id` |`<menu-item>`的身份证|任何以字符开始的字符串| NA | 必需 |
 | `title` |标签文本将作为标题显示|有效的[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)标识符,字符串资源或`String`| NA | optional |
 | `icon` |在子窗口中显示的图标 (仅本能2)| 位图资源标识符 | NA |  |
-| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | optional |
+| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
 | `theme` |菜单项的背景颜色|一个或"残疾人"| `WatchUi.MENU_THEME_DEFAULT` | optional |
 | `personality` |菜单的个性类|一个定义的人格类| NA | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 

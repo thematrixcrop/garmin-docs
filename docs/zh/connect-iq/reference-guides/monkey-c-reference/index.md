@@ -13,7 +13,7 @@ title: "Monkey C Language Reference"
 
 ### 数据类型
 
-子C是一个[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,并没有真正的原始类型.[Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/),[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/),[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/),[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/),[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)和[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)类型都是对象,这意味着原始类型可以像其他对象一样有方法.在Java或C++等语言中,必须对每个函数参数和返回值进行类型声明. however子C编译器会选择验证类型安全性,然而,当函数不处理对象时会出现运行时间错误.使用[`instanceof` and `has`](#instanceof-and-has)这样的操作员可以帮助避免潜在的键字问题.
+Monkey C 是一种[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，没有真正的原始类型。[Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)、[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)、[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) 和 [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) 类型都是对象，因此原始类型可以像其他对象一样拥有方法。在 Java 或 C++ 等语言中，必须为每个函数参数和返回值声明类型。不过，Monkey C 编译器会尝试验证类型安全性；当函数处理的不是对象时，仍可能出现运行时错误。使用 [`instanceof` 和 `has`](#instanceof-and-has) 等运算符可以帮助避免潜在的类型问题。
 
 子C支持的基本数据类型是:
 
@@ -217,7 +217,7 @@ System.println("Hello World!");  // This comment shares a line with code that wi
 
 ### 声明变量
 
-所有变量必须在使用`var`关键字之前被声明.由于子C是[duck typed](https://en.wikipedia.org/wiki/Duck_typing)语言,因此不需要注意每个变量的类型.
+所有变量必须在使用 `var` 关键字之前声明。由于 Monkey C 是[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，因此无需为每个变量声明类型。
 
 ```cpp
 var x = 5;            // A 32-bit integer value
@@ -906,7 +906,7 @@ var x = mMmemberVariable;
 var y = self.mMemberVariable;
 ```
 
-** 注:** 隐藏数据仅可在类成员级别上使用. 子C中的[Modules](#modules)没有隐藏数据的概念,而[classes](#classes-and-objects)总是公开的.
+**注：**隐藏数据只能用于类成员级别。Monkey C 中的[模块](#modules)没有隐藏数据的概念，而[类](#classes-and-objects)始终是公开的。
 
 ### Instanceof 和 Has
 
@@ -980,15 +980,15 @@ function myFunction() {
 
 ### 弱引用
 
-run子C是*引用数*,这意味着运行时间系统将释放内存,当引用该内存的对象数量减少到零时.引用数允许内存非常快速获得,这在低内存环境中很重要.引用数的基普顿化是*圆形引用*.当引用链中形成循环时,循环引用发生.例如,想象对象C引用对象A,而对象A引用对象B *和*对象B引用对象A:
+Monkey C 使用*引用计数*，这意味着当引用某块内存的对象数量降至零时，运行时系统会释放该内存。引用计数可以快速回收内存，这在低内存环境中很重要。引用计数的缺点是*循环引用*：当引用链形成环时，就会发生循环引用。例如，假设对象 C 引用对象 A，而对象 A 引用对象 B，*并且*对象 B 又引用对象 A：
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-1.png)
 
-在一段时间后,C被邀请坐下一个酷孩子的桌子上,所以它放弃了A去和其真正的朋友在一起:
+一段时间后，C 被邀请加入另一组对象，因此它放弃了对 A 的引用，转而与真正需要的对象保持联系：
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-2.png)
 
-在此点,A和B的内存应该被释放,但A和B都有一个引用数,因为它们引用 *彼此*.A和B所使用的内存现在不适用于冷幼儿表中的对象,这通常不是一件好事.然而,有时A和B确实需要相互引用.在这些情况下,你可以使用 *弱引用*,保留对象的引用数,但不会增加引用数.这意味着对象引用可以被破坏,这是一个应处理的案例.
+此时 A 和 B 所占用的内存本应释放，但由于它们*彼此*引用，因此都仍保有引用计数。A 和 B 使用的内存无法被其他对象使用，这通常不是好事。不过，有时 A 和 B 确实需要相互引用。此时可以使用*弱引用*，保留对对象的引用，但不增加引用计数。这样引用可以在必要时被断开，应用也能够处理对象被释放的情况。
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 

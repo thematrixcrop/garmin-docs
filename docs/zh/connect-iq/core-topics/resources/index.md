@@ -296,7 +296,7 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 | Attribute |类型| 必需 | Default |描述|
 | --- | --- | --- | --- | --- |
 | `id` | 字符串 | Yes | None |菜单的唯一标识符|
-| `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| No | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |允许设置如果动作菜单是光在暗或暗在光明. 不能在所有产品上设置.|
+| `theme` |[`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)或[`WatchUi.ACTION_MENU_THEME_LIGHT`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module)| 否 | [`WatchUi.ACTION_MENU_THEME_DARK`](/connect-iq/api-docs/Toybox/WatchUi/#ActionMenuTheme-module) |用于设置动作菜单的显示主题（深色或浅色）。并非所有产品都支持设置此选项。|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
 #### 操作菜单项

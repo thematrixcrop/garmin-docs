@@ -3,4 +3,4 @@ title: "Core Topics"
 ---
 # 核心主题
 
-本节涵盖 the core topics of the Connect IQ platform.
+本节介绍 Connect IQ 平台的核心主题。

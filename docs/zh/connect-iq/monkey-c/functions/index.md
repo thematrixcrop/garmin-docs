@@ -42,7 +42,7 @@ Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，�
 
 ### 声明变量
 
-All local variables must be declared ahead of time using the `var` keyword. 在 Monkey C 语言中，所有值（包括数值）都是对象。
+所有局部变量都必须提前使用 `var` 关键字声明。在 Monkey C 语言中，所有值（包括数值）都是对象。
 
 ```java
 var n = null;               // Null 引用

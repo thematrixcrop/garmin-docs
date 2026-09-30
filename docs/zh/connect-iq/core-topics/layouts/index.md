@@ -95,7 +95,7 @@ class MainView extends WatchUi.View {
 
 在布局定义中,有三种方法可以引用字体:
 
-| Reference |描述| Example |
+| 引用 | 描述 | 示例 |
 | --- | --- | --- |
 | 系统字体引用 |在[Toybox.Graphics](/connect-iq/api-docs/Toybox/Graphics/)模块中引用标准FONT编号.| `Graphics.FONT_SMALL` |
 | 自定义字体引用 |在[application resources](/connect-iq/core-topics/resources/#fonts)中引用字体.| `@Rez.Fonts.MySmallFont` |
@@ -155,7 +155,7 @@ function onUpdate( dc as Dc ) as Void {
 
 | Attribute | Definition | 有效值 |默认值| 备注 |
 | --- | --- | --- | --- | --- |
-| `type` |图形的类型| `rectangle`, `ellipse`, `circle`, or `polygon` | NA | 必需 |
+| `type` |图形的类型| `rectangle`、`ellipse`、`circle` 或 `polygon` | 不适用 | 必需 |
 | `x` |对圆圈和圆:对母体的X坐标;对其他一切:对母体的X坐标.|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| `0` |  |
 | `y` |圆圈和圆:与母体相比的形状中心的Y坐标;其他所有:与母体相比的左上角的Y坐标|像素值,使用'%',`center`,`top`,`bottom`或`start`的相对位置| `0` |  |
 | `points` |定义`polygon`的点列表|`[[x1, y1], [x2, y2], ... , [xN, yN]]`,点可以使用'%'  relative来相对位置| NA |要求`polygon`;必须至少有3分|

@@ -58,7 +58,7 @@ Glances
 
 ## Connect IQ 应用和信息架构
 
-Connect IQ apps are typically “information forward,” meaning the key information is presented up front, and there are limited interactions 更多信息:
+Connect IQ 应用通常以“信息优先”为设计原则，即先展示关键信息，并限制交互数量。更多信息：
 
 - 数据领域总是显示关键信息.任何定制设置流都要求用户进入数据领域设置.
 

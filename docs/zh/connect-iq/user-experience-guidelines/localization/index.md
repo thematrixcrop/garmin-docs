@@ -88,6 +88,6 @@ title: "本地化"
 
 - 尽可能使用图标画,但要小心不同文化中的图像和颜色的文化意义.
 
--   支持 multiple presentations of the date based on locale.
+-   根据地区设置支持多种日期显示格式。
 
 - 尽可能避免输入文本.
