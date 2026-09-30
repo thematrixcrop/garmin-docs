@@ -280,7 +280,7 @@ API 级别 5.2.2
 
 - [**splitDistance**](#splitDistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Split distance in meters.
+    以米为单位的分段距离。
 
 - [**splitType**](#splitType-var) as [SplitInfo.SplitType](/connect-iq/api-docs/Toybox/Activity/SplitInfo/#SplitType-module) or **Null**
 
@@ -292,11 +292,11 @@ API 级别 5.2.2
 
 - [**totalAscent**](#totalAscent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Split ascent in meters.
+    以米为单位的分段爬升。
 
 - [**totalDescent**](#totalDescent-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    Split descent in meters.
+    以米为单位的分段下降。
 
 
 ## 实例属性详情
@@ -363,7 +363,7 @@ API 级别 5.2.2
 
 Returns:
 
-- Split type identifier
+- 分段类型标识符
 
 
 ### var timerTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -381,7 +381,7 @@ Returns:
 
 ### var totalAscent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Split ascent in meters
+以米为单位的分段爬升
 
 Since:
 
@@ -394,7 +394,7 @@ Returns:
 
 ### var totalDescent as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-Split descent in meters
+以米为单位的分段下降
 
 Since:
 

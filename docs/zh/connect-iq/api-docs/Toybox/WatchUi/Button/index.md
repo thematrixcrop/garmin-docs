@@ -31,7 +31,7 @@ Button 对象可在选中时映射到 BehaviorDelegate 方法。
 
 注意：
 
-See the Selectable sample distributed with the SDK for an example of the use of the Button class
+请参阅 SDK 中随附的 Selectable 示例，了解 Button 类的使用示例
 
 Since:
 

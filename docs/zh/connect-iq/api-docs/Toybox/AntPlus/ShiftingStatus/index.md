@@ -132,7 +132,7 @@ API 级别 3.1.0
 
 - [**rearDerailleur**](#rearDerailleur-var) as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
-    Rear derailleur status.
+    后拨链器状态。
 
 
 ## 实例属性详情
@@ -151,7 +151,7 @@ Returns:
 
 ### var rearDerailleur as [AntPlus.DerailleurStatus](/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus/) or **Null**
 
-Rear derailleur status
+后拨链器状态
 
 Since:
 

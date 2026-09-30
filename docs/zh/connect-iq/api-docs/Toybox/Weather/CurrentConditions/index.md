@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the most recently cached weather conditions.
+表示最近缓存的天气状况。
 
 Since:
 
@@ -66,7 +66,7 @@ API 级别 3.2.0
 
 - [**pressure**](#pressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The air pressure in Pascals (Pa).
+    以帕斯卡（Pa）为单位的气压。
 
 - [**relativeHumidity**](#relativeHumidity-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -252,7 +252,7 @@ Returns:
 
 ### var pressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The air pressure in Pascals (Pa)
+以帕斯卡（Pa）为单位的气压
 
 Since:
 

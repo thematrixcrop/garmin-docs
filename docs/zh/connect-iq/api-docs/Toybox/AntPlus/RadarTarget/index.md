@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the radar data for a tracked radar target.
+表示所跟踪雷达目标的雷达数据。
 
 Since:
 

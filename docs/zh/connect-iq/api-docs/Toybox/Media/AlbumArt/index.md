@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Stores metadata related to the location and format of album art
+存储与专辑封面位置和格式相关的元数据
 
 Since:
 

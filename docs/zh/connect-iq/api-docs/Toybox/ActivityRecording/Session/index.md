@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Session objects control the FIT recording state machine.
+Session 对象控制 FIT 记录状态机。
 
 Example:
 
@@ -59,7 +59,7 @@ API 级别 1.0.0
 
 - [**setTimerEventListener**](#setTimerEventListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**) as **Void**
 
-    Set the listener for Session timer events The listener method is called whenever a new timer event occurs.
+    设置 Session 计时器事件的监听器 每当发生新的计时器事件时，都会调用监听器方法。
 
 - [**start**](#start-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -221,7 +221,7 @@ API 级别 1.0.0
 
 ### **setTimerEventListener(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**)** as **Void**
 
-Set the listener for Session timer events
+设置 Session 计时器事件的监听器
 
 The listener method is called whenever a new timer event occurs.
 

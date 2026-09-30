@@ -7,7 +7,7 @@ title: "Module: Toybox.Sensor"
 
 The Sensor module provides access to sensor data.
 
-Sensor allows Apps to register for updates to the current sensor data. It also enables apps to control the ANT+ sensors supported natively by the device, which are described by the provided SENSOR\_\* constants.
+Sensor 允许应用注册以接收当前传感器数据的更新。它还允许应用控制设备原生支持的 ANT+ 传感器，这些传感器由提供的 SENSOR\_\* 常量描述。
 
 Example:
 
@@ -440,7 +440,7 @@ API 级别 3.2.0
 
 请求来自已启用传感器的传感器事件。
 
-Sensor events are retrieved from any enabled sensors at a rate of 1 Hz. The data retrieved from enabled sensors is passed to the listener [Method](/connect-iq/api-docs/Toybox/Lang/Method/) provided as a parameter to this method.
+传感器事件以 1 Hz 的速率从所有已启用的传感器中获取。从已启用传感器获取的数据会传递给作为此方法参数提供的监听器 [Method](/connect-iq/api-docs/Toybox/Lang/Method/)。
 
 注意：
 
@@ -454,7 +454,7 @@ Parameters:
 
 - 收到传感器更新时调用
 
-- Receives a Sensor.info object
+- 接收一个 Sensor.info 对象
 
 - Use `null` to specify no listener
 
@@ -749,7 +749,7 @@ Parameters:
 
 - sensorDataType — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    Symbol of the sensor data type to get the max rate for, allowed symbols are `accelerometer`, `gyroscope`, and `magnetometer`.
+    要获取最大速率的传感器数据类型符号；允许的符号为 `accelerometer`、`gyroscope` 和 `magnetometer`。
 
 
 Example:
@@ -1392,7 +1392,7 @@ Parameters:
 
 - :period — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Period of time to request samples in seconds. Maximum is 4 seconds.
+        请求样本的时间段，以秒为单位。最大值为 4 秒。
 
 - :synchronous — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 

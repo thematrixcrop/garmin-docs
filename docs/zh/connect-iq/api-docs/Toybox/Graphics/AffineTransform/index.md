@@ -70,19 +70,19 @@ API 级别 4.2.0
 
 - [**setToRotation**](#setToRotation-instance_function)(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Set self to a rotation transform | cos -sin 0 | | sin cos 0 | | 0 0 1 |.
+    将自身设置为旋转变换 | cos -sin 0 | | sin cos 0 | | 0 0 1 |。
 
 - [**setToScale**](#setToScale-instance_function)(sx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), sy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Set self to a scale transform | sx 0 0 | | 0 sy 0 | | 0 0 1 |.
+    将自身设置为缩放变换 | sx 0 0 | | 0 sy 0 | | 0 0 1 |。
 
 - [**setToShear**](#setToShear-instance_function)(shx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), shy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Set self to a shear transform | 1 shx 0 | | shy 1 0 | | 0 0 1 |.
+    将自身设置为剪切变换 | 1 shx 0 | | shy 1 0 | | 0 0 1 |。
 
 - [**setToTranslation**](#setToTranslation-instance_function)(tx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), ty as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
-    Set self to a translation transform | 1 0 tx | | 0 1 ty | | 0 0 1 |.
+    将自身设置为平移变换 | 1 0 tx | | 0 1 ty | | 0 0 1 |。
 
 - [**shear**](#shear-instance_function)(shx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), shy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
@@ -253,7 +253,7 @@ API 级别 4.2.0
 
 ### **setMatrix(m as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \])** as **Void**
 
-Set the transform values
+设置变换值
 
 ```
                                        | m00  m01  m02 |
@@ -281,7 +281,7 @@ Throws:
 
 ### **setToRotation(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Set self to a rotation transform
+将自身设置为旋转变换
 
 ```
    | cos -sin    0 |
@@ -299,7 +299,7 @@ API 级别 4.2.0
 
 ### **setToScale(sx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), sy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Set self to a scale transform
+将自身设置为缩放变换
 
 ```
    |  sx    0    0 |
@@ -318,7 +318,7 @@ API 级别 4.2.0
 
 ### **setToShear(shx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), shy as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Set self to a shear transform
+将自身设置为剪切变换
 
 ```
    |   1  shx    0 |
@@ -337,7 +337,7 @@ API 级别 4.2.0
 
 ### **setToTranslation(tx as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), ty as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/))** as **Void**
 
-Set self to a translation transform
+将自身设置为平移变换
 
 ```
    |   1    0   tx |

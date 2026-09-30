@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents various settings available on a device.
+表示设备上可用的各种设置。
 
 ## 另见：
 
@@ -387,7 +387,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    Scaling factor configured by user. Values will always be positive, and are typically in the range of 0.8 to 1.2.
+    用户配置的缩放因子。值始终为正数，通常在 0.8 到 1.2 范围内。
 
 
 ### var heightUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
@@ -858,7 +858,7 @@ Returns:
 
 此标志指示设备屏幕是否需要防烧屏保护。
 
-Some screens require special drawing behavior when rendering content in always-on mode. If a screen requires burn-in protection the following rules must be followed: A maximum of ten-percent of the total available screen pixels can be in use at one time. Individual pixels can be on for no more than three update cycles when updating at once-per-minute intervals. If either condition is violated all screen pixels will be turned off until the device goes into high-power mode.
+某些屏幕在以常亮模式渲染内容时需要特殊的绘制行为。如果屏幕需要防烧屏保护，则必须遵循以下规则：任意时刻最多只能使用可用屏幕像素总数的百分之十。以每分钟更新一次的间隔进行更新时，单个像素的点亮时间不得超过三个更新周期。如果违反任一条件，所有屏幕像素都将关闭，直到设备进入高功耗模式。
 
 Since:
 

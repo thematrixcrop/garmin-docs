@@ -9,7 +9,7 @@ The Math Module provides various math methods available for use by Apps.
 
 Example:
 
-Prints the circumference of a circle.
+打印圆的周长。
 
 ```
 using Toybox.System;
@@ -22,7 +22,7 @@ System.println(circumference);
 
 Example:
 
-Prints the area of a square with Math.pow via direct call.
+通过直接调用 Math.pow 打印正方形的面积。
 
 ```
 using Toybox.System;
@@ -33,7 +33,7 @@ System.println(Math.pow(10, 2));
 
 Example:
 
-Solves for c using the Pythagorean Theorem and multiple Math API methods.
+使用勾股定理和多个 Math API 方法求解 c。
 
 ```
 using Toybox.System;
@@ -129,7 +129,7 @@ PI 的 32 位浮点表示
 
 - [**rand**](#rand-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Returns a pseudo-random Number.
+    返回一个伪随机 Number。
 
 - [**round**](#round-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
@@ -399,7 +399,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    specified base logarithm of x
+    x 的指定底数对数
 
 - 两个输入均为 Number 或 Float 时返回 Float
 
@@ -426,7 +426,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The arithmetic mean of the values in data
+    数据中各值的算术平均值
 
 
 Since:
@@ -502,7 +502,7 @@ API 级别 1.0.0
 
 ### **rand()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Returns a pseudo-random Number. Use the [srand()](/connect-iq/api-docs/Toybox/Math/#srand-instance_function) function to seed the random number generator.
+返回一个伪随机 Number。使用 [srand()](/connect-iq/api-docs/Toybox/Math/#srand-instance_function) 函数为随机数生成器设定种子。
 
 Returns:
 
@@ -597,7 +597,7 @@ API 级别 1.0.0
 
 注意：
 
-srand() does not return any value.
+srand() 不返回任何值。
 
 Parameters:
 
@@ -680,7 +680,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The angle of x in degrees
+    x 的角度，以度为单位
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -700,14 +700,14 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)) —
 
-    The angle in degrees
+    以度为单位的角度
 
 
 Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The angle of x in radians
+    x 的角度，以弧度为单位
 
 - 输入为 Number 或 Float 时返回 Float
 
@@ -723,7 +723,7 @@ API 级别 1.3.0
 
 获取数据数组的样本方差。
 
-Returns the sample variance with Bessel's correction.
+返回经过贝塞尔校正的样本方差。
 
 Parameters:
 

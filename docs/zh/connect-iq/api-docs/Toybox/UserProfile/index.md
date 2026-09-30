@@ -11,7 +11,7 @@ The module contains the GENDER\_\* enum to retrieve gender information from the 
 
 Example:
 
-Simple UserProfile module use
+简单的 UserProfile 模块使用
 
 ```
 using Toybox.UserProfile;
@@ -110,7 +110,7 @@ API 级别 1.2.6
 
 - [**getPowerZones**](#getPowerZones-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current power zone threshold values in watts (W).
+    获取当前功率区间阈值（单位：瓦特 (W)）的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。
 
 - [**getProfile**](#getProfile-instance_function)() as [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/)
 
@@ -325,7 +325,7 @@ API 级别 5.2.2
 
 ### **getPowerZones(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module))** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-Retrieve an [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of the current power zone threshold values in watts (W)
+获取当前功率区间阈值（单位：瓦特 (W)）的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)
 
 Parameters:
 
@@ -420,7 +420,7 @@ API 级别 1.0.0
 
 Example:
 
-Shows the use of UserActivityHistoryIterator
+显示 UserActivityHistoryIterator 的使用
 
 ```
 using Toybox.UserProfile;

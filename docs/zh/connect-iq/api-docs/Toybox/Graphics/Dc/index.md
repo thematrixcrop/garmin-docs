@@ -225,7 +225,7 @@ API 级别 1.0.0
 
 注意：
 
-Starting form version 3.1.0, COLOR\_TRANSPARENT will also be honored as background color, which will cause the value of pixels in the clip region to be replaced by COLOR\_TRANSPARENT. For example, this can be used to clear the transparent overlay layer so animation background is visible.
+从版本 3.1.0 开始，COLOR\_TRANSPARENT 也将作为背景颜色生效，这会导致剪辑区域中的像素值被替换为 COLOR\_TRANSPARENT。例如，这可用于清除透明叠加层，使动画背景可见。
 
 Since:
 
@@ -265,7 +265,7 @@ Parameters:
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Specifies how text is placed relative to the text location.
+    指定文本相对于文本位置的放置方式。
 
 - angle — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -790,7 +790,7 @@ Parameters:
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Specifies how text placed relative to the text location.
+    指定文本相对于文本位置的放置方式。
 
 - angle — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -802,7 +802,7 @@ Parameters:
 
 - direction — ([Graphics.RadialTextDirection](/connect-iq/api-docs/Toybox/Graphics/#RadialTextDirection-module)) —
 
-    Text drawing direction along the arc.
+    沿弧线的文本绘制方向。
 
 
 :::details 支持的设备
@@ -1530,7 +1530,7 @@ API 级别 4.0.0
 
 为 Dc 应用剪裁区域。
 
-Pixels outside of the region will not be affected by any operations.
+区域外的像素不会受到任何操作的影响。
 
 Parameters:
 
@@ -1586,7 +1586,7 @@ Parameters:
 
 - fill — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The [BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) or [Color](/connect-iq/api-docs/Toybox/Lang/Number/) 32-bit integer in the format 0xAARRGGBB to use for fill draws.
+    用于填充绘制的 [BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) 或 [Color](/connect-iq/api-docs/Toybox/Lang/Number/) 32 位整数，格式为 0xAARRGGBB。
 
 
 :::details 支持的设备
@@ -1680,7 +1680,7 @@ Parameters:
 
 - stroke — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    The [BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) or [Color](/connect-iq/api-docs/Toybox/Lang/Number/) 32-bit integer in the format 0xAARRGGBB to use for draws.
+    用于绘制的 [BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) 或 [Color](/connect-iq/api-docs/Toybox/Lang/Number/) 32 位整数，格式为 0xAARRGGBB。
 
 
 :::details 支持的设备

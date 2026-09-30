@@ -387,7 +387,7 @@ The options `:titleItemHeight` and `:footerItemHeight` are only supported with C
 
 注意：
 
-The `:theme` option is only used on ConnectIQ 4.1.8 devices with menu theme support. The background color will not be used if themes are supported and the theme is non-null.
+:theme 选项仅用于支持菜单主题的 ConnectIQ 4.1.8 设备。如果支持主题且主题不为 null，则不会使用背景颜色。
 
 注意：
 
@@ -500,7 +500,7 @@ Throws:
 
 如果设置为 [Menu2.DIVIDER\_TYPE\_ICON](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module)。来自 [CustomMenuItem.setDividerIcon](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#setDividerIcon-instance_function) 的图标将呈现在分隔线左侧。
 
-Set to `null` to disable divider which may also disable [MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module), [CustomMenuItem.draw](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#draw-instance_function) will be called with full width of menu item.
+设置为 `null` 以禁用分隔线，这也可能会禁用 [MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module)，[CustomMenuItem.draw](/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem/#draw-instance_function) 将以菜单项的完整宽度调用。
 
 [Menu2.DIVIDER\_TYPE\_DEFAULT](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) 对于支持分隔符的设备，如果未设置，则使用该值。
 

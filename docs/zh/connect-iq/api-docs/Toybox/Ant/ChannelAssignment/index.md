@@ -149,7 +149,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Returns `true` if background scan is enabled, otherwise `false`.
+    如果启用了后台扫描，则返回 `true`；否则返回 `false`。
 
 
 Since:
@@ -181,7 +181,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Return `true` if the background scan property was successfully set, otherwise `false`.
+    如果成功设置后台扫描属性，则返回 `true`；否则返回 `false`。
 
 
 Since:

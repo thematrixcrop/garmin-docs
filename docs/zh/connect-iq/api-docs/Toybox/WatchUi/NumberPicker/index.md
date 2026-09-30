@@ -150,7 +150,7 @@ Parameters:
 
 - mode — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The [NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) value for the desired mode
+    所需模式的 [NUMBER\_PICKER\_\*](/connect-iq/api-docs/Toybox/WatchUi/#NUMBER_PICKER_DISTANCE-const) 值
 
 - initialValue — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/)) —
 

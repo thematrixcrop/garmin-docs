@@ -41,7 +41,7 @@ This Picker will have three entries: a choosable number, a non-choosable "-", an
 
 注意：
 
-See the Picker sample distributed with the SDK for an example of the use of the Picker class
+请参阅 SDK 中随附的 Picker 示例，了解 Picker 类的使用示例
 
 注意：
 

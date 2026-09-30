@@ -82,7 +82,7 @@ Parameters:
 
 - response — ([WatchUi.Confirm](/connect-iq/api-docs/Toybox/WatchUi/#Confirm-module)) —
 
-    The [WatchUi.CONFIRM\_\*](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) value from this Confirmation
+    此 Confirmation 中的 [WatchUi.CONFIRM\_\*](/connect-iq/api-docs/Toybox/WatchUi/#CONFIRM_NO-const) 值
 
 
 另见：

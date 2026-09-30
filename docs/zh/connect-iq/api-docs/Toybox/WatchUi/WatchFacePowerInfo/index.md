@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Power information provided when the power budget is exceeded during a call to [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function).
+调用 [onPartialUpdate()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onPartialUpdate-instance_function) 期间超出功耗预算时提供的功耗信息。
 
 This is automatically passed to the [onPowerBudgetExceeded()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPowerBudgetExceeded-instance_function) method when it is invoked.
 

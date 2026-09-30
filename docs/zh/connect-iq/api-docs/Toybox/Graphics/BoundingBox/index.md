@@ -26,19 +26,19 @@ API 级别 3.2.7
 
 - [**height**](#height-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Represents the height of the bounding box.
+    表示边界框的高度。
 
 - [**width**](#width-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Represents the width of the bounding box.
+    表示边界框的宽度。
 
 - [**x**](#x-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Represents the x coordinate for the origin of the bounding box.
+    表示边界框原点的 x 坐标。
 
 - [**y**](#y-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Represents the y coordinate for the origin of the bounding box.
+    表示边界框原点的 y 坐标。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -81,7 +81,7 @@ API 级别 3.2.7
 
 - [**reset**](#reset-instance_function)() as **Void**
 
-    Reset self to an invalid state.
+    将 self 重置为无效状态。
 
 - [**valid**](#valid-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -92,7 +92,7 @@ API 级别 3.2.7
 
 ### var height as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Represents the height of the bounding box
+表示边界框的高度
 
 Since:
 
@@ -100,7 +100,7 @@ API 级别 3.2.7
 
 ### var width as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Represents the width of the bounding box
+表示边界框的宽度
 
 Since:
 
@@ -108,7 +108,7 @@ API 级别 3.2.7
 
 ### var x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Represents the x coordinate for the origin of the bounding box
+表示边界框原点的 x 坐标
 
 Since:
 
@@ -116,7 +116,7 @@ API 级别 3.2.7
 
 ### var y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Represents the y coordinate for the origin of the bounding box
+表示边界框原点的 y 坐标
 
 Since:
 
@@ -343,11 +343,11 @@ Parameters:
 
 - dx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The amount to expand along the x axis.
+    沿 x 轴扩展的量。
 
 - dy — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The amount to expand along the y axis.
+    沿 y 轴扩展的量。
 
 
 Since:
@@ -369,7 +369,7 @@ Throws:
 
 确定 self 是否包含一个点
 
-Points on the edge of a box are considered to be included since the box would not expand if such a point were added to the box.
+框边缘上的点被视为包含在内，因为将此类点添加到框中不会使框扩展。
 
 Parameters:
 
@@ -408,7 +408,7 @@ Throws:
 
 Update self to ensure non-negative width and height values
 
-Repair `self` to so that `width` and `height` are non-negative, updating the `x` and `y` coordinates as appropriate. If `self` is not valid or is already normalized, has no effect.
+修复 `self`，使 `width` 和 `height` 为非负数，并在必要时更新 `x` 和 `y` 坐标。如果 `self` 无效或已经规范化，则不执行任何操作。
 
 Since:
 
@@ -416,7 +416,7 @@ API 级别 5.1.0
 
 ### **reset()** as **Void**
 
-Reset self to an invalid state
+将 self 重置为无效状态
 
 Since:
 

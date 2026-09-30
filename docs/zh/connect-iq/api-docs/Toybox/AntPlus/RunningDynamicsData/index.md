@@ -141,11 +141,11 @@ API 级别 2.4.0
 
 - [**stepCount**](#stepCount-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Step count (rolls over!) (0 - 127 steps).
+    步数（会循环计数！）（0 - 127 步）。
 
 - [**stepLength**](#stepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Step Length (0 - 8191 mm).
+    步长（0 - 8191 mm）。
 
 - [**verticalOscillation**](#verticalOscillation-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -212,7 +212,7 @@ Returns:
 
 ### var stepCount as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Step count (rolls over!) (0 - 127 steps)
+步数（会循环计数！）（0 - 127 步）
 
 Since:
 
@@ -224,7 +224,7 @@ Returns:
 
 ### var stepLength as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Step Length (0 - 8191 mm)
+步长（0 - 8191 mm）
 
 Since:
 

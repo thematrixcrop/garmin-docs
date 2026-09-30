@@ -65,7 +65,7 @@ Parameters:
 
 - playbackStartPos — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Playback start position for the media content in seconds
+    媒体内容的播放起始位置，以秒为单位
 
 
 Since:

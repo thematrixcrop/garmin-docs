@@ -57,7 +57,7 @@ Parameters:
 
 - angle — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-    The angle in radians from north.
+    以北方为基准、以弧度为单位的角度。
 
 - distance — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 

@@ -630,7 +630,7 @@ This is useful for ensuring new events are not scheduled within the five minute 
 
 Example:
 
-Register a new temporal background event as soon as allowed
+在允许时立即注册新的临时后台事件
 
 ```
 using Toybox.Background;
@@ -1100,9 +1100,9 @@ API 级别 2.3.0
 
 注册一个在特定时间或按固定间隔触发的后台事件。
 
-Temporal background events may be registered to run at a specific point in time by providing a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) at which the event should trigger, or may be registered to run at a periodically by specifying an interval [Duration](/connect-iq/api-docs/Toybox/Time/Duration/). If a temporal event is scheduled for a time in the past, the event will trigger immediately.
+可以通过提供事件应触发时的 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)，将时间事件注册为在特定时间点运行；也可以通过指定间隔 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，将时间事件注册为定期运行。如果时间事件计划在过去的时间触发，则该事件会立即触发。
 
-Temporal events cannot be set to occur less than 5 minutes after the last temporal event occurred. For watch-apps and widgets the 5 minute restriction is cleared on application startup if the event was specified using a [Moment](/connect-iq/api-docs/Toybox/Time/Moment/).
+时间事件不能设置为在上一个时间事件发生后不到 5 分钟时触发。对于表盘应用和小组件，如果通过 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 指定了事件，则应用启动时会解除 5 分钟限制。
 
 一次只能注册一个时间事件。调用 `registerForTemporalEvent` 将覆盖之前注册的任何时间事件。
 
@@ -1115,7 +1115,7 @@ Parameters:
 
 Example:
 
-Schedule a background event to run five minutes from now
+安排一个后台事件在五分钟后运行
 
 ```
 using Toybox.Background;

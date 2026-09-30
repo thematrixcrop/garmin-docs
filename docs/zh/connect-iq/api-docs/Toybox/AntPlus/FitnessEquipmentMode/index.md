@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents a fitness equipment training mode Fields may return `null` so you should `null` check values before using them.
+表示健身器材训练模式。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
 Example:
 

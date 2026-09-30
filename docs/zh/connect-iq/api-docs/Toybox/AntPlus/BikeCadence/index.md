@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Bike Cadence Device instance.
+表示一个自行车踏频设备实例。
 
 Example:
 
@@ -197,7 +197,7 @@ API 级别 3.0.0
 
 - [**getCadenceInfo**](#getCadenceInfo-instance_function)() as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)
 
-    Returns the most recent BikeCadenceInfo.
+    返回最新的 BikeCadenceInfo。
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/) or **Null**)
 
@@ -208,7 +208,7 @@ API 级别 3.0.0
 
 ### **getCadenceInfo()** as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)
 
-Returns the most recent BikeCadenceInfo
+返回最新的 BikeCadenceInfo
 
 Returns:
 

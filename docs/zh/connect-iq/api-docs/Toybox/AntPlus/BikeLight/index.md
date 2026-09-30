@@ -263,7 +263,7 @@ Parameters:
 
 - mode — ([AntPlus.LightMode](/connect-iq/api-docs/Toybox/AntPlus/#LightMode-module)) —
 
-    The [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) enum number value
+    [LIGHT\_MODE\_\*](/connect-iq/api-docs/Toybox/AntPlus/#LIGHT_MODE_AUTO-const) 枚举数值
 
 
 Since:

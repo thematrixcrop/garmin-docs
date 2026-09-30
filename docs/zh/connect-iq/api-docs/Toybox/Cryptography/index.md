@@ -189,7 +189,7 @@ API 级别 3.0.0
 
 |
 
-SHA-1 implementation for Hash objects
+Hash 对象的 SHA-1 实现
 
 | -   [https://en.wikipedia.org/wiki/SHA-1](https://en.wikipedia.org/wiki/SHA-1)
 |
@@ -203,7 +203,7 @@ API 级别 3.0.0
 
 |
 
-SHA-256 implementation for Hash objects
+Hash 对象的 SHA-256 实现
 
 | -   [https://en.wikipedia.org/wiki/SHA-2](https://en.wikipedia.org/wiki/SHA-2)
      |  |

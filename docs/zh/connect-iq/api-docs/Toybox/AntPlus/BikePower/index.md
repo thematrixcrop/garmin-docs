@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Bike Power Device instance.
+表示一个自行车功率设备实例。
 
 ## 另见：
 

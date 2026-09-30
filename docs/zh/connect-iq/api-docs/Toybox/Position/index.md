@@ -11,7 +11,7 @@ The Position module provides an interface for location information and positioni
 
 - GEO：用于指定 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 格式。
 
-- **QUALITY:** Represents the GPS fix quality when the [Location](/connect-iq/api-docs/Toybox/Position/Location/) information was calculated
+- QUALITY：表示计算 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 信息时的 GPS 定位质量
 
 
 Example:
@@ -304,7 +304,7 @@ API 级别 3.2.0
 
 |
 
-Standard positioning mode used by default for fitness activities
+默认用于健身活动的标准定位模式
 
 |
 | POSITIONING\_MODE\_AVIATION | 1 |
@@ -372,11 +372,11 @@ Using this API requires enabling the Positioning Permission. Only Device Apps an
 
 注意：
 
-Passing an options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) is only supported with ConnectIQ 3.2.0 and later.
+仅 ConnectIQ 3.2.0 及更高版本支持传递 options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 注意：
 
-Passing the `:configuration` option is only supported with ConnectIQ 3.3.6 or later.
+仅 ConnectIQ 3.3.6 或更高版本支持传递 `:configuration` 选项。
 
 注意：
 
@@ -410,7 +410,7 @@ Parameters:
 
 - 收到位置更新时调用
 
-- Receives a Position.Info object
+- 接收一个 Position.Info 对象
 
 
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Provides media content metadata for display in native media player user-interface.
+为原生媒体播放器用户界面显示提供媒体内容元数据。
 
 Since:
 
@@ -26,7 +26,7 @@ API 级别 3.0.0
 
 - [**album**](#album-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The album title.
+    专辑标题。
 
 - [**artist**](#artist-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -49,7 +49,7 @@ API 级别 3.0.0
 
 ### var album as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The album title
+专辑标题
 
 Since:
 

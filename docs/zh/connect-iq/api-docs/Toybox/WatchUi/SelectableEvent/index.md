@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-SelectableEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when a [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) is manipulated using physical buttons or touch screen.
+SelectableEvent 是一个对象，当使用实体按钮或触摸屏操作 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 时发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)。
 
 ## 另见：
 

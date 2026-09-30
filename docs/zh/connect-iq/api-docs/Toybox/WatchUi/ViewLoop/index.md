@@ -151,7 +151,7 @@ API 级别 3.4.0
 
 ### Direction
 
-Specifies the direction to transition views
+指定视图转换的方向
 
 Since:
 

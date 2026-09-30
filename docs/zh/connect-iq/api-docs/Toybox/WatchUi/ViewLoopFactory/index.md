@@ -162,7 +162,7 @@ API 级别 3.4.0
 
 - [**getSize**](#getSize-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Return the number of view/delegate pairs that are managed by this factory.
+    返回此工厂管理的视图/委托对数量。
 
 - [**getView**](#getView-instance_function)(page as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type) \] or \[ [ViewLoopFactory.Views](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Views-named_type), [ViewLoopFactory.Delegates](/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory/#Delegates-named_type) \]
 
@@ -191,7 +191,7 @@ API 级别 3.4.0
 
 ### **getSize()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Return the number of view/delegate pairs that are managed by this factory
+返回此工厂管理的视图/委托对数量
 
 Returns:
 

@@ -234,7 +234,7 @@ API 级别 1.0.0
 
 设备正在进入低功耗模式。
 
-Terminate any active timers and prepare for once-per-minute updates.
+终止所有活动计时器，并准备进行每分钟一次的更新。
 
 另见：
 
@@ -264,7 +264,7 @@ API 级别 1.0.0
 
 更新屏幕的一部分。
 
-Partial updates can be used to update a small part of the screen to allow for Always On Watch Faces.
+部分更新可用于更新屏幕的一小部分，从而支持常亮表盘。
 
 This method is called each second as long as the device power budget is not exceeded. It is important to update as small of a portion of the display as possible in this method to avoid exceeding the allowed power budget. To do this, the application must set the clipping region for the [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) object using the [setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) method. Calls to [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function) and [System.print()](/connect-iq/api-docs/Toybox/System/#print-instance_function) will not execute on devices when this function is being invoked, but can be used in the device simulator.
 
@@ -272,7 +272,7 @@ This method is called each second as long as the device power budget is not exce
 
 注意：
 
-See the Analog sample distributed with the SDK for an example of onPartialUpdate() using clipping regions
+请参阅 SDK 中随附的 Analog 示例，了解使用裁剪区域实现 onPartialUpdate() 的示例
 
 Parameters:
 

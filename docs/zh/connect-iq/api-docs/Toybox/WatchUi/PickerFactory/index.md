@@ -27,7 +27,7 @@ PickerFactory 用于指定 [Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)
 
 注意：
 
-See the Picker sample distributed with the SDK for an example of the use of the PickerFactory class
+请参阅 SDK 中随附的 Picker 示例，了解 PickerFactory 类的使用示例
 
 Since:
 

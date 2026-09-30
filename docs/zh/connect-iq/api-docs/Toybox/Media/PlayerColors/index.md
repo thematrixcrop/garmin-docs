@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Provides the media player with specific colors for the UI
+为媒体播放器提供特定的用户界面颜色
 
 Since:
 

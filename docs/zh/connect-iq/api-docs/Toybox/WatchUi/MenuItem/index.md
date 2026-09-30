@@ -222,7 +222,7 @@ API 级别 3.0.0
 
 |
 
-Right align a MenuItem label
+将 MenuItem 标签右对齐
 
 |
 | MENU\_ITEM\_LABEL\_ALIGN\_LEFT | 1 |
@@ -259,7 +259,7 @@ API 级别 3.0.0
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
-    Set the icon Set the icon displayed in the subscreen area when this MenuItem has the focus.
+    设置图标 设置此 MenuItem 获得焦点时显示在子屏幕区域中的图标。
 
 - [**setLabel**](#setLabel-instance_function)(label as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) as **Void**
 
@@ -276,7 +276,7 @@ API 级别 3.0.0
 
 获取图标
 
-Retrieve the icon for this MenuItem.
+获取此 MenuItem 的图标。
 
 :::details 支持的设备
 
@@ -391,7 +391,7 @@ API 级别 3.0.0
 
 设置图标
 
-Set the icon displayed in the subscreen area when this MenuItem has the focus. If the provided icon is `null`, the icon from the Menu2 will be shown instead.
+设置此 MenuItem 获得焦点时显示在子屏幕区域中的图标。如果提供的图标为 `null`，则改为显示 Menu2 中的图标。
 
 Parameters:
 

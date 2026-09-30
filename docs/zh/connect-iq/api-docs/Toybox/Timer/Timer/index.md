@@ -78,7 +78,7 @@ Parameters:
 
 - repeat — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    Set to `true` to have the Timer repeat until stop() is called
+    设置为 `true`，使 Timer 持续重复，直到调用 stop()
 
 
 Since:

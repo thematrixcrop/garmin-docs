@@ -114,11 +114,11 @@ Parameters:
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))
 - :fromRepresentation — ([StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module)) —
 
-        Required. A [REPRESENTATION\_\*](/connect-iq/api-docs/Toybox/StringUtil/) enum value indicating the representation from which the `input` should be converted.
+        必需。一个 [REPRESENTATION\_\*](/connect-iq/api-docs/Toybox/StringUtil/) 枚举值，指示应从哪个表示形式转换 `input`。
 
 - :toRepresentation — ([StringUtil.Representation](/connect-iq/api-docs/Toybox/StringUtil/#Representation-module)) —
 
-        Required. A [REPRESENTATION\_\*](/connect-iq/api-docs/Toybox/StringUtil/) enum value indicating the representation to which the `input` should be converted.
+        必需。一个 [REPRESENTATION\_\*](/connect-iq/api-docs/Toybox/StringUtil/) 枚举值，指示应将 `input` 转换为哪种表示形式。
 
 - :encoding — ([StringUtil.CharacterEncoding](/connect-iq/api-docs/Toybox/StringUtil/#CharacterEncoding-module)) —
 

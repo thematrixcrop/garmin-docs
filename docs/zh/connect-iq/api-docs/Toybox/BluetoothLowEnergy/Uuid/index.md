@@ -30,7 +30,7 @@ API 级别 3.1.0
 
 - [**hashCode**](#hashCode-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Retrieve a hash code of the UUID Optimized for BLE standard.
+    获取 UUID 的哈希代码。针对 BLE 标准进行了优化。
 
 - [**toByteArray**](#toByteArray-instance_function)() as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)
 
@@ -71,7 +71,7 @@ Throws:
 
 ### **hashCode()** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Retrieve a hash code of the UUID
+获取 UUID 的哈希代码
 
 针对 BLE 标准进行了优化
 

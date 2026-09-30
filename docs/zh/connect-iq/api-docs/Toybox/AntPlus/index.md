@@ -5,7 +5,7 @@ title: "Module: Toybox.AntPlus"
 
 ## 概述
 
-The AntPlus module contains the interface for ANT+ data.
+AntPlus 模块包含 ANT+ 数据的接口。
 
 ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用于定义通过 ANT 传输的信息含义。例如，心率监测器会根据 ANT+ 心率设备配置文件中的定义，通过 ANT 发送心率信息。CIQ 设备可以使用 [ANT Module](/connect-iq/api-docs/Toybox/Ant/) 实现 ANT+ 设备配置文件，并与附近同样实现了该 ANT+ 设备配置文件的设备通信，例如心率、骑行功率和健身器材控制。AntPlus 模块提供了用于以特定且标准化方式与 ANT+ 配置文件通信的 API，这些配置文件定义在下方链接所指向的文档“ANT+ Device Profiles”中。
 
@@ -217,7 +217,7 @@ API 级别 3.0.0
 
 |
 
-Represents an invalid speed value
+表示无效的速度值
 
 |
 | 类型 | MAX\_GEARS\_INVALID | 0 |
@@ -481,7 +481,7 @@ API 级别 2.2.0
 
 |
 
-Steady beam 81-100% intensity
+稳定光束，强度为 81-100%
 
 |
 | LIGHT\_MODE\_ST\_61\_80 | 2 |
@@ -490,7 +490,7 @@ API 级别 2.2.0
 
 |
 
-Steady beam 61-80% intensity
+稳定光束，强度为 61-80%
 
 |
 | LIGHT\_MODE\_ST\_41\_60 | 3 |
@@ -499,7 +499,7 @@ API 级别 2.2.0
 
 |
 
-Steady beam 41-60% intensity
+稳定光束，强度为 41-60%
 
 |
 | LIGHT\_MODE\_ST\_21\_40 | 4 |
@@ -508,7 +508,7 @@ API 级别 2.2.0
 
 |
 
-Steady beam 21-40% intensity
+稳定光束，强度为 21-40%
 
 |
 | LIGHT\_MODE\_ST\_0\_20 | 5 |
@@ -517,7 +517,7 @@ API 级别 2.2.0
 
 |
 
-Steady beam 0-20% intensity
+稳定光束，强度为 0-20%
 
 |
 | LIGHT\_MODE\_SLOW\_FLASH | 6 |
@@ -526,7 +526,7 @@ API 级别 2.2.0
 
 |
 
-Slow flash mode
+慢速闪烁模式
 
 |
 | LIGHT\_MODE\_FAST\_FLASH | 7 |
@@ -544,7 +544,7 @@ API 级别 2.2.0
 
 |
 
-Randomly timed flash mode
+随机定时闪烁模式
 
 |
 | LIGHT\_MODE\_AUTO | 9 |
@@ -665,7 +665,7 @@ API 级别 2.2.0
 
 |
 
-Taillight light type
+尾灯灯光类型
 
 |
 | LIGHT\_TYPE\_SIGNAL\_CONFIG | 3 |
@@ -692,7 +692,7 @@ API 级别 2.2.0
 
 |
 
-Right turn signal light type
+右转向信号灯类型
 
 |
 | LIGHT\_TYPE\_OTHER | 7 |
@@ -727,7 +727,7 @@ API 级别 2.2.0
 
 |
 
-Power output directly in Watts
+直接以瓦特为单位的功率输出
 
 |
 | BIKE\_POWER\_SENSOR\_TYPE\_WHEEL\_TORQUE | 2 |
@@ -736,7 +736,7 @@ API 级别 2.2.0
 
 |
 
-Power output from torque on rear wheel
+由后轮扭矩产生的功率输出
 
 |
 | BIKE\_POWER\_SENSOR\_TYPE\_CRANK\_TORQUE | 3 |
@@ -745,7 +745,7 @@ API 级别 2.2.0
 
 |
 
-Power output from torque at crank
+由曲柄处扭矩产生的功率输出
 
 |
 | BIKE\_POWER\_SENSOR\_TYPE\_CRANK\_TORQUE\_FREQUENCY | 4 |
@@ -754,7 +754,7 @@ API 级别 2.2.0
 
 |
 
-Power output from torque frequency at crank
+由曲柄处扭矩频率产生的功率输出
 
 |
 | BIKE\_POWER\_SENSOR\_TYPE\_CNT | 5 |
@@ -855,7 +855,7 @@ API 级别 2.4.0
 
 |
 
-Target power fitness equipment training mode In this mode the user may set the target wattage output of the equipment
+目标功率健身设备训练模式。在此模式下，用户可以设置设备的目标瓦数输出
 
 |
 | TRAINER\_MODE\_SIMULATION | 2 |
@@ -864,7 +864,7 @@ API 级别 2.4.0
 
 |
 
-Simulation fitness equipment training mode In this mode the user may set various fields to adjust resistance
+模拟健身设备训练模式 在此模式下，用户可以设置各种字段来调整阻力
 
 |
 
@@ -899,7 +899,7 @@ API 级别 2.4.0
 
 |
 
-Target power setting of the fitness equipment. 0 - 4000W input range, unit 0.25W.
+健身设备的目标功率设置。输入范围为 0 - 4000W，单位为 0.25W。
 
 |
 | TRAINER\_SLOPE | 10 |
@@ -1006,7 +1006,7 @@ API 级别 2.4.0
 
 |
 
-Right leg body location
+右腿身体位置
 
 |
 | BODY\_LOCATION\_TORSO\_FRONT | 17 |
@@ -1068,7 +1068,7 @@ API 级别 2.4.0
 
 |
 
-Right side up sensor orientation
+传感器正面朝上的方向
 
 |
 | SENSOR\_ORIENTATION\_UPSIDE\_DOWN | 1 |

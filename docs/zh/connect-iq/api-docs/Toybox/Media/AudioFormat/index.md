@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Stores metadata related to the quality of the audio data associated with a media file.
+存储与媒体文件关联的音频数据质量相关的元数据。
 
 Since:
 

@@ -22,7 +22,7 @@ Toybox.Lang.Exception
 
 注意：
 
-Some characters may be larger than 1 Byte.
+某些字符可能大于 1 Byte。
 
 Since:
 

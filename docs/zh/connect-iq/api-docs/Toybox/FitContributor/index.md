@@ -11,7 +11,7 @@ There are three FitContributor message types available:
 
 MESG\_TYPE\_SESSION
 
-Session data is written once per recording session at the end of the recording, and is used for data that pertains to the entire session (e.g. average speed).
+会话数据在每次记录会话结束时写入一次，用于存储与整个会话相关的数据（例如平均速度）。
 
 MESG\_TYPE\_LAP
 

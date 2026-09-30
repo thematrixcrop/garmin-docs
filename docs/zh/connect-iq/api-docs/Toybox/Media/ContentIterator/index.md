@@ -71,7 +71,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Returns `true` if the current track can be skipped, otherwise `false`.
+    如果可以跳过当前曲目，则返回 `true`；否则返回 `false`。
 
 
 Since:
@@ -198,7 +198,7 @@ Returns:
 
 - [Media.RepeatMode](/connect-iq/api-docs/Toybox/Media/#RepeatMode-module) —
 
-    The [REPEAT\_MODE\_\*](/connect-iq/api-docs/Toybox/Media/#REPEAT_MODE_OFF-const) enum value that represents the current repeat state
+    表示当前重复状态的 [REPEAT\_MODE\_\*](/connect-iq/api-docs/Toybox/Media/#REPEAT_MODE_OFF-const) 枚举值
 
 
 Since:
@@ -209,7 +209,7 @@ API 级别 3.0.0
 
 确定当前播放是否设置为随机播放。
 
-Returns `true` if shuffle is on, otherwise `false`.
+如果已开启随机播放，则返回 `true`；否则返回 `false`。
 
 Returns:
 

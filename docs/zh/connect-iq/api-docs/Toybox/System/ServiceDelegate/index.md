@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ServiceDelegate is a class used to service [Background](/connect-iq/api-docs/Toybox/Background/) events.
+ServiceDelegate 是一个用于处理 [Background](/connect-iq/api-docs/Toybox/Background/) 事件的类。
 
 This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](/connect-iq/api-docs/Toybox/Communications/)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
 
@@ -305,7 +305,7 @@ API 级别 2.3.0
 
 达到步数目标时在后台触发的回调方法。
 
-Step goals occur at 1000 step increments.
+步数目标以每 1000 步为增量。
 
 Since:
 

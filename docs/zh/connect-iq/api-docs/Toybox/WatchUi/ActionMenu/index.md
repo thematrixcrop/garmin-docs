@@ -172,7 +172,7 @@ Parameters:
 
 - item — ([WatchUi.ActionMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/)) —
 
-    The ActionMenuItem to add to the ActionMenu
+    要添加到 ActionMenu 的 ActionMenuItem
 
 
 Since:

@@ -5,13 +5,13 @@ title: "Module: Toybox.Activity"
 
 ## 概述
 
-The Activity module provides a way to retrieve available info for the current activity.
+Activity 模块提供了一种检索当前活动可用信息的方法。
 
 Activity Info 会由 Data Fields 中的 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法自动提供。[getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法可在应用内或其他情况下使用，例如数据字段初始化。
 
 此模块还提供两组常量：
 
-- **SWIM\_STROKE:** Indicates the [swimStrokeType()](/connect-iq/api-docs/Toybox/Activity/Info/#swimStrokeType-var), such as freestyle, backstroke, or butterfly.
+- SWIM\_STROKE：表示 [swimStrokeType()](/connect-iq/api-docs/Toybox/Activity/Info/#swimStrokeType-var)，例如自由泳、仰泳或蝶泳。
 
 - **TIMER\_STATE:** Indicates the activity recording [timerState()](/connect-iq/api-docs/Toybox/Activity/Info/#timerState-var), such as stopped, started, paused, etc.
 

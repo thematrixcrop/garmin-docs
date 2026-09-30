@@ -7,7 +7,7 @@ title: "Module: Toybox.Ant"
 
 This module provide the interface for the ANT wireless protocol.
 
-The ANT wireless protocol is a low level communications protocol that provides very efficient transfer of data by directly controlling the radio on the device. The ANT module provides a list of constants to be used with different Class objects and Methods provided within the module. These include:
+ANT 无线协议是一种低级通信协议，通过直接控制设备上的无线电来实现非常高效的数据传输。ANT 模块提供了一系列常量，用于模块中提供的不同类对象和方法。这些包括：
 
 - [MSG\_ID\_\*](/connect-iq/api-docs/Toybox/Ant/#MSG_ID_RF_EVENT-const) 常量 - 消息 ID
 
@@ -493,7 +493,7 @@ API 级别 1.2.0
 
 |
 
-Receive Only (Slave)
+仅接收（从设备）
 
 |
 | CHANNEL\_TYPE\_SHARED\_BIDIRECTIONAL\_RECEIVE | 0x20 |
@@ -502,7 +502,7 @@ API 级别 3.1.0
 
 |
 
-Shared Bidirectional Receive (Slave)
+共享双向接收（从设备）
 
 |
 | CHANNEL\_TYPE\_SHARED\_BIDIRECTIONAL\_TRANSMIT | 0x30 |
@@ -511,7 +511,7 @@ API 级别 3.1.0
 
 |
 
-Shared Bidirectional Transmit (Master)
+共享双向传输（主设备）
 
 |
 

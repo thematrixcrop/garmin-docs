@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Stores media cache size statistics
+存储媒体缓存大小统计信息
 
 Since:
 

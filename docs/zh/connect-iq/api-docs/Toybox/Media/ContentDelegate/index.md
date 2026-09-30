@@ -38,7 +38,7 @@ API 级别 3.0.0
 
 - [**onRepeat**](#onRepeat-instance_function)() as **Void**
 
-    Respond to a command to change repeat mode.
+    响应更改重复播放模式的命令。
 
 - [**onShuffle**](#onShuffle-instance_function)() as **Void**
 
@@ -107,7 +107,7 @@ API 级别 3.0.3
 
 ### **onRepeat()** as **Void**
 
-Respond to a command to change repeat mode
+响应更改重复播放模式的命令
 
 Since:
 

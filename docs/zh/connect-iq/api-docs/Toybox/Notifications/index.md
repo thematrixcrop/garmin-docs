@@ -141,7 +141,7 @@ The notification action was selected by the user
 
 - [**showNotification**](#showNotification-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**) as **Void**
 
-    Push a notification to the display.
+    向显示屏推送通知。
 
 
 ## 类型定义详情
@@ -217,7 +217,7 @@ API 级别 5.1.0
 
 ### **showNotification(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), subTitle as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as [Notifications.ShowNotificationOptions](/connect-iq/api-docs/Toybox/Notifications/#ShowNotificationOptions-named_type) or **Null**)** as **Void**
 
-Push a notification to the display
+向显示屏推送通知
 
 Parameters:
 

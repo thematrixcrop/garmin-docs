@@ -110,7 +110,7 @@ API 级别 1.0.0
 
 |
 
-Short formatting is a numerical representation of date/time.
+短格式是日期/时间的数字表示形式。
 
 |
 | FORMAT\_MEDIUM | 1 |

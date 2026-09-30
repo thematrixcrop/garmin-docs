@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Bike Speed and Cadence Device instance.
+表示一个自行车速度和踏频设备实例。
 
 Example:
 

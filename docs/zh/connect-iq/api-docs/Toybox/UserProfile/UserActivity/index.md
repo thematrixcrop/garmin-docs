@@ -34,7 +34,7 @@ API 级别 3.3.0
 
 - [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    Start time of the activity.
+    活动的开始时间。
 
 - [**type**](#type-var) as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) or **Null**
 
@@ -75,7 +75,7 @@ Returns:
 
 ### var startTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-Start time of the activity
+活动的开始时间
 
 Since:
 
@@ -100,4 +100,4 @@ Returns:
 
 - [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module) —
 
-    SPORT\_\* enum value or `null`
+    SPORT\_\* 枚举值或 `null`

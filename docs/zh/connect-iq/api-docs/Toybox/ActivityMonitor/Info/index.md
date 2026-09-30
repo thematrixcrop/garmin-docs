@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-The ActivityMonitor.Info contains information about the user's current activity status.
+ActivityMonitor.Info 包含用户当前活动状态的信息。
 
 此类中的字段可能返回 `null`。建议在使用值之前检查其是否为 `null`。如果值不可用，则会抛出指示未找到该符号的错误。
 

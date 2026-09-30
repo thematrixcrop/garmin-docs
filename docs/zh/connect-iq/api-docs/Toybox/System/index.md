@@ -557,7 +557,7 @@ API 级别 3.1.0
 
 |
 
-Standard (Bahasa) Malay
+标准马来语（Bahasa）
 
 |
 

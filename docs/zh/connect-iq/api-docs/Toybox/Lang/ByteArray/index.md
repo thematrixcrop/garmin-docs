@@ -161,7 +161,7 @@ Parameters:
 
 - :offset — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The 0 based offset in the array to begin decode. Default value is 0.
+        开始解码的数组中的从 0 开始的偏移量。默认值为 0。
 
 - :endianness — ([Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module)) —
 
@@ -206,7 +206,7 @@ Parameters:
 
 - :offset — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The 0 based offset in the array to begin encoding. Default value is 0.
+        开始编码的数组中的从 0 开始的偏移量。默认值为 0。
 
 - :endianness — ([Lang.Endian](/connect-iq/api-docs/Toybox/Lang/#Endian-module)) —
 
@@ -323,7 +323,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Returns `true` if instances of the byte are found, otherwise `false`
+    如果找到该字节的实例，则返回 `true`；否则返回 `false`
 
 
 Since:
@@ -360,7 +360,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Returns `true` if instances of the byte are found, otherwise `false`.
+    如果找到该字节的实例，则返回 `true`；否则返回 `false`。
 
 
 Since:

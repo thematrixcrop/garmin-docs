@@ -270,7 +270,7 @@ API 级别 1.0.0
 
 |
 
-Response contained no data.
+响应不包含数据。
 
 |
 | BLE\_REQUEST\_CANCELLED | \-5 |
@@ -297,7 +297,7 @@ API 级别 1.0.0
 
 |
 
-Serialized input data for the request was too large.
+请求的序列化输入数据过大。
 
 |
 | BLE\_UNKNOWN\_SEND\_ERROR | \-103 |
@@ -306,7 +306,7 @@ API 级别 1.0.0
 
 |
 
-Send failed for an unknown reason.
+发送因未知原因失败。
 
 |
 | BLE\_CONNECTION\_UNAVAILABLE | \-104 |
@@ -324,7 +324,7 @@ API 级别 1.0.0
 
 |
 
-Request contained invalid http header fields.
+请求包含无效的 http 标头字段。
 
 |
 | INVALID\_HTTP\_BODY\_IN\_REQUEST | \-201 |
@@ -333,7 +333,7 @@ API 级别 1.0.0
 
 |
 
-Request contained an invalid http body.
+请求包含无效的 http 正文。
 
 |
 | INVALID\_HTTP\_METHOD\_IN\_REQUEST | \-202 |
@@ -342,7 +342,7 @@ API 级别 1.0.0
 
 |
 
-Request used an invalid http method.
+请求使用了无效的 http 方法。
 
 |
 | NETWORK\_REQUEST\_TIMED\_OUT | \-300 |
@@ -351,7 +351,7 @@ API 级别 1.0.0
 
 |
 
-Request timed out before a response was received.
+请求在收到响应前超时。
 
 |
 | INVALID\_HTTP\_BODY\_IN\_NETWORK\_RESPONSE | \-400 |
@@ -360,7 +360,7 @@ API 级别 1.0.0
 
 |
 
-Response body data is invalid for the request type.
+响应正文数据对于请求类型无效。
 
 |
 | INVALID\_HTTP\_HEADER\_FIELDS\_IN\_NETWORK\_RESPONSE | \-401 |
@@ -369,7 +369,7 @@ API 级别 1.0.0
 
 |
 
-Response contained invalid http header fields.
+响应包含无效的 http 标头字段。
 
 |
 | NETWORK\_RESPONSE\_TOO\_LARGE | \-402 |
@@ -378,7 +378,7 @@ API 级别 1.0.0
 
 |
 
-Serialized response was too large.
+序列化响应过大。
 
 |
 | NETWORK\_RESPONSE\_OUT\_OF\_MEMORY | \-403 |
@@ -387,7 +387,7 @@ API 级别 3.0.0
 
 |
 
-Ran out of memory processing network response.
+处理网络响应时内存不足。
 
 |
 | STORAGE\_FULL | \-1000 |
@@ -510,7 +510,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the GET method.
+指定使用 GET 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_PUT | 2 |
@@ -519,7 +519,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the PUT method.
+指定使用 PUT 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_POST | 3 |
@@ -528,7 +528,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the POST method.
+指定使用 POST 方法执行请求。
 
 |
 | HTTP\_REQUEST\_METHOD\_DELETE | 4 |
@@ -537,7 +537,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a request be executed using the DELETE method.
+指定使用 DELETE 方法执行请求。
 
 |
 
@@ -643,7 +643,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, battery is too low to start a WIFI connection.
+指定错误状态：电量过低，无法启动 WIFI 连接。
 
 |
 | WIFI\_CONNECTION\_STATUS\_NO\_ACCESS\_POINTS | 2 |
@@ -652,7 +652,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, no access-point is stored on the device.
+指定错误状态：设备上未存储接入点。
 
 |
 | WIFI\_CONNECTION\_STATUS\_UNSUPPORTED | 3 |
@@ -661,7 +661,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is not supported on current device.
+指定错误状态：当前设备不支持 WIFI。
 
 |
 | WIFI\_CONNECTION\_STATUS\_USER\_DISABLED | 4 |
@@ -670,7 +670,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by user.
+指定错误状态：WIFI 被用户禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_BATTERY\_SAVER\_ACTIVE | 5 |
@@ -679,7 +679,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by battery saver.
+指定错误状态：WIFI 被省电模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_STEALTH\_MODE\_ACTIVE | 6 |
@@ -688,7 +688,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by stealth mode.
+指定错误状态：WIFI 被隐身模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_AIRPLANE\_MODE\_ACTIVE | 7 |
@@ -697,7 +697,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by airplane mode.
+指定错误状态：WIFI 被飞行模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_POWERED\_DOWN | 8 |
@@ -706,7 +706,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is disabled by the device.
+指定错误状态：WIFI 被设备禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_UNKNOWN | 9 |
@@ -715,7 +715,7 @@ API 级别 3.2.0
 
 |
 
-Specifies an error condition, WIFI is not usable but status is unknown.
+指定错误状态：WIFI 不可用，但状态未知。
 
 |
 | WIFI\_CONNECTION\_STATUS\_CANNOT\_CONNECT\_TO\_ACCESS\_POINT | 10 |
@@ -724,7 +724,7 @@ API 级别 3.3.0
 
 |
 
-Specifies an error condition, WIFI can not connect to saved AccessPoint.
+指定错误状态：WIFI 无法连接到已保存的 AccessPoint。
 
 |
 | WIFI\_CONNECTION\_STATUS\_TRANSFER\_ALREADY\_IN\_PROGRESS | 11 |
@@ -733,7 +733,7 @@ API 级别 3.3.0
 
 |
 
-Specifies an error condition, WIFI transfer already in progress
+指定错误状态：WIFI 传输已在进行中
 
 |
 
@@ -750,7 +750,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a content type of application/x-www-form-urlencoded
+指定内容类型为 application/x-www-form-urlencoded
 
 |
 | REQUEST\_CONTENT\_TYPE\_JSON | 1 |
@@ -759,7 +759,7 @@ API 级别 1.2.0
 
 |
 
-Specifies a content type of application/json
+指定内容类型为 application/json
 
 |
 
@@ -1596,7 +1596,7 @@ Parameters:
 
 - 追加到 GET/DELETE 请求的 URL
 
-- Set as the body for a POST/PUT request
+- 设置为 POST/PUT 请求的正文
 
 - These values must be URL encoded
 
@@ -1618,7 +1618,7 @@ Parameters:
 
         要包含在请求中的 HTTP 标头字典
 
-- The "Content-Type" header for the body of the request can be specified using a REQUEST\_CONTENT\_TYPE\_\* value
+- 请求正文的 "Content-Type" 标头可以使用 REQUEST\_CONTENT\_TYPE\_\* 值指定
 
 
 - This is only valid for methods PUT and POST (you cannot set a body for a GET or DELETE request)
@@ -1630,7 +1630,7 @@ Parameters:
 
     对回调方法的引用，该方法必须接受两个参数：
 
-- responseCode: the server response code
+- responseCode：服务器响应代码
 
 - data：请求成功时的内容，或 `null`
 
@@ -1948,7 +1948,7 @@ Parameters:
 
         要包含在请求中的 HTTP 标头字典。
 
-- The "Content-Type" header for the body of the request can be specified using a [REQUEST\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) value.
+- 请求正文的 "Content-Type" 标头可以使用 [REQUEST\_CONTENT\_TYPE\_\*](/connect-iq/api-docs/Toybox/Communications/) 值指定。
 
 - 如果未指定内容类型，则 GET 和 DELETE 请求默认为 "application/json"，POST 和 PUT 请求默认为 "application/x-www-form-urlencoded"。
 
@@ -3083,7 +3083,7 @@ API 级别 4.0.4
 
 通过 BLE 链路发送数据。
 
-Support for transmittable types has been expanded over time.
+对可传输类型的支持随着时间推移不断扩展。
 
 - [ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)（自 6.0.0）
 

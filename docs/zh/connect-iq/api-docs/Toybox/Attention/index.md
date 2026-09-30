@@ -415,7 +415,7 @@ The backlight will always respect the backlight timeout settings on the device. 
 
 注意：
 
-Passing a [Float](/connect-iq/api-docs/Toybox/Lang/Float/) is only supported with ConnectIQ 3.2.1 and later.
+仅 ConnectIQ 3.2.1 及更高版本支持传递 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。
 
 Parameters:
 
@@ -667,7 +667,7 @@ Parameters:
 
 Returns:
 
-- Returns true if the given color is supported, otherwise false.
+- 如果支持给定颜色，则返回 true；否则返回 false。
 
 
 Since:
@@ -687,7 +687,7 @@ Throws:
 
 注意：
 
-Passing an options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) is only supported with ConnectIQ 3.1.0 and later.
+仅 ConnectIQ 3.1.0 及更高版本支持传递 options [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 Parameters:
 
@@ -911,7 +911,7 @@ Parameters:
 
 - :strobeSpeed — ([Attention.FlashlightStrobeSpeed](/connect-iq/api-docs/Toybox/Attention/#FlashlightStrobeSpeed-module)) —
 
-        Speed of strobe. Default is FLASHLIGHT\_STROBE\_SPEED\_MEDIUM.
+        频闪速度。默认值为 FLASHLIGHT\_STROBE\_SPEED\_MEDIUM。
 
 - :brightness — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), [Attention.FlashlightBrightness](/connect-iq/api-docs/Toybox/Attention/#FlashlightBrightness-module)) —
 

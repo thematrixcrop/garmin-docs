@@ -50,11 +50,11 @@ API 级别 2.2.0
 
 - [**sendManufacturerMessage**](#sendManufacturerMessage-instance_function)(message as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**
 
-    Send Manufacturer Message.
+    发送制造商消息。
 
 - [**sendPageRequest**](#sendPageRequest-instance_function)(pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    Send Page request Request 2 broadcast pages from connected sensor.
+    发送页面请求 请求连接的传感器广播 2 个页面。
 
 
 ## 实例方法详情
@@ -236,13 +236,13 @@ API 级别 2.2.0
 
 ### **sendManufacturerMessage(message as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/))** as **Void**
 
-Send Manufacturer Message
+发送制造商消息
 
 Parameters:
 
 - message — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
-    The Ant message to send. Only exploration (0xE0-0xEF) and manufacturer specific (0xF0-0xFF) pages are allowed. It is recommended to contact the ANT+ group when exploration pages are used at thisisant.com. The [onSentMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onSentMessage-instance_function) will be called to indicate sent manufacturer message status.
+    要发送的 Ant 消息。仅允许使用探索页面（0xE0-0xEF）和制造商特定页面（0xF0-0xFF）。使用探索页面时，建议通过 at thisisant.com 联系 ANT+ 组织。将调用 [onSentMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onSentMessage-instance_function) 以指示已发送的制造商消息状态。
 
 
 另见：
@@ -263,7 +263,7 @@ Throws:
 
 ### **sendPageRequest(pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-Send Page request Request 2 broadcast pages from connected sensor. Use [onMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onMessage-instance_function) to process requested page broadcasts from the sensor.
+发送页面请求 请求连接的传感器广播 2 个页面。使用 [onMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onMessage-instance_function) 处理传感器广播的请求页面。
 
 Parameters:
 

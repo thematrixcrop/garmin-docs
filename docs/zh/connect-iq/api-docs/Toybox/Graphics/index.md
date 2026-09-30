@@ -67,7 +67,7 @@ API 级别 1.0.0
 
 |
 
-Small Connect IQ font
+小号 Connect IQ 字体
 
 |
 | FONT\_MEDIUM | 3 |
@@ -148,7 +148,7 @@ API 级别 1.3.0
 
 |
 
-Small system font
+小号系统字体
 
 |
 | FONT\_SYSTEM\_MEDIUM | 12 |
@@ -426,7 +426,7 @@ API 级别 1.0.0
 
 |
 
-Purple. Not valid on fenix 3 or D2 Bravo. Use 0x5500AA instead.
+紫色。在 fenix 3 或 D2 Bravo 上无效。请改用 0x5500AA。
 
 |
 | COLOR\_PINK | 0xFF00FF |
@@ -461,7 +461,7 @@ API 级别 1.0.0
 
 |
 
-Right justify the text at the x/y coordinates
+将文本相对于 x/y 坐标右对齐
 
 |
 | TEXT\_JUSTIFY\_CENTER | 1 |
@@ -496,7 +496,7 @@ API 级别 1.0.0
 
 混合模式
 
-Specifies how colors of a source pixel will be blended with the colors of a destination pixel.
+指定源像素的颜色与目标像素的颜色混合的方式。
 
 在以下描述中
 
@@ -544,7 +544,7 @@ API 级别 4.2.1
 
 |
 
-S, i.e. no blending.
+S，即不进行混合。
 
  |  |
 | BLEND\_MODE\_MULTIPLY | 2 |
@@ -598,7 +598,7 @@ API 级别 4.0.0
 
 |
 
-Surface for buffered bitmap with at least a 1-bit alpha channel. The actual number of bits may vary by device.
+用于具有至少 1 位 alpha 通道的缓冲位图的表面。实际位数可能因设备而异。
 
 |
 
@@ -634,7 +634,7 @@ API 级别 4.2.1
 
 过滤模式
 
-Specifies how many pixels to sample
+指定要采样的像素数量
 
 Since:
 
@@ -647,7 +647,7 @@ API 级别 4.2.1
 
 |
 
-Point filter
+点筛选器
 
 |
 | FILTER\_MODE\_BILINEAR | 1 |
@@ -892,7 +892,7 @@ Parameters:
 
 Returns:
 
-- Returns a String suitable for display in the given area. The String will be truncated if the 'truncate' parameter is `true` and the String cannot fit into the specified area. Otherwise, `null` will be returned.
+- 返回适合显示在给定区域中的 String。如果“truncate”参数为 `true` 且 String 无法容纳在指定区域内，则会截断 String。否则返回 `null`。
 
 
 Since:
@@ -987,7 +987,7 @@ API 级别 1.2.0
 
 注意：
 
-The :font and :scale options are only supported in CIQ 5.1.0 and later.
+:font 和 :scale 选项仅在 CIQ 5.1.0 及更高版本中受支持。
 
 Parameters:
 
@@ -1009,7 +1009,7 @@ Parameters:
 
 - :scale — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-        The amount to scale the font.
+        字体缩放量。
 
 
 :::details 支持的设备

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the calculated power.
+表示计算出的功率。
 
 字段可能返回 `null`，因此在使用前应先对值做 `null` 检查。
 

@@ -79,7 +79,7 @@ Returns:
 
 - [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    The absolute value of the Double
+    Double 的绝对值
 
 
 Since:

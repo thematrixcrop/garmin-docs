@@ -329,11 +329,11 @@ API 级别 5.0.1
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or **Null**) as **Void**
 
-    Set the icon Set the icon to display in the subscreen area when the focused MenuItem does not have an icon.
+    设置图标 设置聚焦的 MenuItem 没有图标时要在子屏幕区域中显示的图标。
 
 - [**setTheme**](#setTheme-instance_function)(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**) as **Void**
 
-    Set the theme.
+    设置主题。
 
 - [**setTitle**](#setTitle-instance_function)(title as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**) as **Void**
 
@@ -424,7 +424,7 @@ API 级别 3.0.0
 
 获取图标
 
-Retrieve the icon for this Menu2.
+获取此 Menu2 的图标。
 
 :::details 支持的设备
 
@@ -629,7 +629,7 @@ Throws:
 
 设置图标
 
-Set the icon to display in the subscreen area when the focused MenuItem does not have an icon. If this menu does not have an icon, the app icon will be shown instead.
+设置聚焦的 MenuItem 没有图标时要在子屏幕区域中显示的图标。如果此菜单没有图标，则改为显示应用图标。
 
 Parameters:
 
@@ -658,7 +658,7 @@ API 级别 3.4.0
 
 ### **setTheme(theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**)** as **Void**
 
-Set the theme
+设置主题
 
 Parameters:
 

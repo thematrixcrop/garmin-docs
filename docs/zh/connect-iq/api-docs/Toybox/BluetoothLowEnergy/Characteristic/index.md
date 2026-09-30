@@ -26,34 +26,34 @@ API 级别 3.1.0
 
 - [**getDescriptor**](#getDescriptor-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) or **Null**
 
-    Retrieves the Descriptor with a specified UUID.
+    获取具有指定 UUID 的描述符。
 
 - [**getDescriptors**](#getDescriptors-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Retrieves an Iterator over the [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) discovered in the Characteristic This will only provide descriptors that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function).
+    获取特征中发现的 [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器。仅提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的描述符。
 
 - [**getService**](#getService-instance_function)() as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/)
 
-    Retrieves the Characteristic's Service Retrieve the Service that this characteristic belongs to.
+    获取特征所属的服务。获取此特征所属的服务。
 
 - [**getUuid**](#getUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Return the UUID of the Characteristic.
+    返回 Characteristic 的 UUID。
 
 - [**requestRead**](#requestRead-instance_function)() as **Void**
 
-    Requests a read operation on the characteristic Once the operation is completed, [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation Support for long reads is not implemented.
+    请求对特征执行读取操作。操作完成后，将使用操作状态调用已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 中的 [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function)。尚未实现对长读取的支持。
 
 - [**requestWrite**](#requestWrite-instance_function)(value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), options as { :writeType as [BluetoothLowEnergy.WriteType](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#WriteType-module) }) as **Void**
 
-    Requests a write operation Once the operation is completed, [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation Support for long writes is not implemented.
+    请求执行写入操作。操作完成后，将使用操作状态调用已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 中的 [onCharacteristicWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicWrite-instance_function)。尚未实现对长写入的支持。
 
 
 ## 实例方法详情
 
 ### **getDescriptor(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/))** as [BluetoothLowEnergy.Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) or **Null**
 
-Retrieves the Descriptor with a specified UUID
+获取具有指定 UUID 的描述符
 
 Parameters:
 
@@ -75,7 +75,7 @@ API 级别 3.1.0
 
 ### **getDescriptors()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Retrieves an Iterator over the [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) discovered in the Characteristic
+获取特征中发现的 [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器
 
 This will only provide descriptors that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
 
@@ -92,9 +92,9 @@ API 级别 3.1.0
 
 ### **getService()** as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/)
 
-Retrieves the Characteristic's Service
+获取特征所属的服务
 
-Retrieve the Service that this characteristic belongs to
+获取此特征所属的服务
 
 Returns:
 
@@ -109,7 +109,7 @@ API 级别 3.1.0
 
 ### **getUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Return the UUID of the Characteristic
+返回 Characteristic 的 UUID
 
 Returns:
 
@@ -124,11 +124,11 @@ API 级别 3.1.0
 
 ### **requestRead()** as **Void**
 
-Requests a read operation on the characteristic
+请求对特征执行读取操作
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onCharacteristicRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onCharacteristicRead-instance_function)
 
-Support for long reads is not implemented.
+尚未实现对长读取的支持。
 
 Since:
 

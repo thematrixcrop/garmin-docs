@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Provide a callback function for communications operations.
+为通信操作提供回调函数。
 
 Since:
 

@@ -3522,7 +3522,7 @@ Returns:
 
 上一趟泳程的泳姿类型。
 
-Swim stroke type values range from 0-6. Each Number value represents a different swim stroke type (e.g. freestyle, backstroke, etc.).
+游泳泳姿类型值的范围为 0-6。每个 Number 值表示不同的游泳泳姿类型（例如自由泳、仰泳等）。
 
 Since:
 
@@ -3677,7 +3677,7 @@ Returns:
 
 上一趟泳程的 SWOLF 分数。
 
-SWOLF is an abbreviation for Swim-Golf, a measure of swimming efficiency. The score is obtained by adding the strokes per length to the total time of the length. For example, if it takes ten strokes and thirty seconds to swim a pool length, the SWOLF score is 40. Just like golf, a lower SWOLF score is better.
+SWOLF 是 Swim-Golf 的缩写，用于衡量游泳效率。该分数为每段距离的划水次数加上游完该段距离所用的总时间。例如，游泳池的一段距离需要划水十次并用时三十秒，则 SWOLF 分数为 40。与高尔夫一样，SWOLF 分数越低越好。
 
 Since:
 

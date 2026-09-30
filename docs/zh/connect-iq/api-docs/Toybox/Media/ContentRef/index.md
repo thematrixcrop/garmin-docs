@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Provides a reference to downloaded media content.
+提供对已下载媒体内容的引用。
 
 Since:
 

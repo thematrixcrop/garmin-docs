@@ -79,7 +79,7 @@ API 级别 1.0.0
 
 注意：
 
-Some devices do not enable the accelerometer at startup. To get valid data from this field on such devices, applications must enable the sensor with a call to [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
+某些设备在启动时不会启用加速度计。要从这些设备的此字段获取有效数据，应用必须通过调用 [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 启用传感器。
 
 Since:
 
@@ -338,7 +338,7 @@ Returns:
 
 注意：
 
-Some devices do not enable the magnetometer at startup. To get valid data from this field on such devices, applications must enable the sensor with a call to [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function).
+某些设备在启动时不会启用磁力计。要从这些设备的此字段获取有效数据，应用必须通过调用 [registerSensorDataListener](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 启用传感器。
 
 Since:
 

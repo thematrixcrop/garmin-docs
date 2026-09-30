@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 Intent 将内容从一个应用发送到另一个应用。
 
-Strictly speaking, content is sent to a **URI** by an Intent, which can either be a native activity (e.g. Run, Bike, etc.) or another Connect IQ app. Used in conjunction with [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function), Intents can exit the current app and launch a second app, passing information from the originating app to the newly open app.
+严格来说，内容由 Intent 发送到 URI，而 Intent 可以是原生活动（例如 Run、Bike 等）或其他 Connect IQ 应用。与 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 结合使用时，Intent 可以退出当前应用并启动第二个应用，将信息从源应用传递给新打开的应用。
 
 例如，小组件可能通过 [Communications](/connect-iq/api-docs/Toybox/Communications/) 调用从服务收集数据，并通过 Intent 将这些数据传递给设备应用，以便在活动期间使用。
 

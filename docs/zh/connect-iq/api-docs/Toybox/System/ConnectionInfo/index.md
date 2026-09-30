@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the state of a communications channel connection.
+表示通信通道连接的状态。
 
 Since:
 

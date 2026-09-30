@@ -156,7 +156,7 @@ API 级别 2.2.0
 
 - [**pedalPowerPercent**](#pedalPowerPercent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Pedal power percent (%).
+    踏板功率百分比 (%)。
 
 - [**rightPedalIndicator**](#rightPedalIndicator-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) or **Null**
 
@@ -167,7 +167,7 @@ API 级别 2.2.0
 
 ### var pedalPowerPercent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Pedal power percent (%)
+踏板功率百分比 (%)
 
 Since:
 

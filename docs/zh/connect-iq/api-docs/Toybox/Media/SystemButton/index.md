@@ -59,7 +59,7 @@ Parameters:
 
 - highlighted — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    Set to `true` if the button is highlighted, otherwise `false`
+    如果按钮被高亮显示，则设置为 `true`；否则设置为 `false`
 
 
 Returns:
@@ -89,7 +89,7 @@ Parameters:
 
 - :disabled — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        Set to `true` if the button is disabled, otherwise `false`
+        如果按钮被禁用，则设置为 `true`；否则设置为 `false`
 
 
 Since:

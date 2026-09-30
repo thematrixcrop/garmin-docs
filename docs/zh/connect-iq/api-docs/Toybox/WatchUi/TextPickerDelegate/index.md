@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-TextPickerDelegate responds to a TextPicker selection.
+TextPickerDelegate 响应 TextPicker 选择。
 
 This class should be extended to handle the specified text.
 

@@ -50,7 +50,7 @@ API 级别 2.2.0
 
 - [**remove**](#remove-instance_function)() as **Void**
 
-    Remove a track.
+    移除一条轨迹。
 
 - [**toIntent**](#toIntent-instance_function)() as [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)
 
@@ -91,7 +91,7 @@ API 级别 2.2.0
 
 ### **remove()** as **Void**
 
-Remove a track
+移除一条轨迹
 
 Since:
 

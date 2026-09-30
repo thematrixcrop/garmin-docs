@@ -289,7 +289,7 @@ Parameters:
 
 - :deviceNumber — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The ANT-id of the device to search for. Not setting enables a wild card search
+        要搜索的设备 ANT-id。不设置则启用通配符搜索
 
 - :deviceType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -313,7 +313,7 @@ Parameters:
 
 - 低优先级搜索能够在不干扰设备上其他通道的情况下搜索主设备
 
-- Range of 0 to 12 (2.5s increments)
+- 范围为 0 到 12（每次递增 2.5 秒）
 
 - 默认值为 6（15 秒）
 
@@ -334,7 +334,7 @@ Parameters:
 
 - 数据字段中禁用高优先级搜索，并且对于该应用类型将忽略高优先级搜索
 
-- Range of 0 to 2 (2.5s increments)
+- 范围为 0 到 2（每次递增 2.5 秒）
 
 - 默认值为 0（已禁用）
 
@@ -352,14 +352,14 @@ Parameters:
 
         64 位网络密钥
 
-- Set this when [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) was chosen in the channel assignment
+- 在通道分配中选择 [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) 时设置此项
 
 
 - :networkKey128Bit — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
         128 位网络密钥
 
-- Set this when NETWORK\_PRIVATE was chosen in the channel assignment
+- 在通道分配中选择 NETWORK\_PRIVATE 时设置此项
 
 
 

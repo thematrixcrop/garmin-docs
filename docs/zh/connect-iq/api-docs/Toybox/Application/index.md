@@ -5,9 +5,9 @@ title: "Module: Toybox.Application"
 
 ## 概述
 
-The Application module contains the base class for every Connect IQ app.
+Application 模块包含每个 Connect IQ 应用的基类。
 
-The Application Module includes the [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) class which is responsible for controlling the app life cycle. This module also includes set and get methods to control the settings and properties values held in the Object Store and a GOAL\_TYPE enum that defines the different goal types that can be triggered.
+Application 模块包含负责控制应用生命周期的 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 类。该模块还包含用于控制 Object Store 中保存的设置和属性值的 set 和 get 方法，以及定义可触发的不同目标类型的 GOAL\_TYPE 枚举。
 
 ## 另见：
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents user configurations of fitness equipment for equipment that supports simulation training mode. Fields may return `null` so you should `null` check values before using them.
+表示支持模拟训练模式的健身器材的用户配置。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
 Since:
 

@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Running Dynamics Device instance.
+表示一个跑步动态设备实例。
 
 Since:
 

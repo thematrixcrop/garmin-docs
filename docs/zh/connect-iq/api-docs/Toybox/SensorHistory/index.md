@@ -7,7 +7,7 @@ title: "Module: Toybox.SensorHistory"
 
 The SensorHistory module contains the interface for SensorHistory.
 
-SensorHistory provides access to historical information recorded by the on-board sensors of device hardware. The amount of information that is available is device dependent. This means that one device may provide more information than another. This class provides an ORDER\_\* enum which is used to select the data order of the sample iterator.
+SensorHistory 提供对设备硬件板载传感器记录的历史信息的访问。可用信息量取决于设备。这意味着一台设备提供的信息可能多于另一台设备。此类提供了一个 ORDER\_\* 枚举，用于选择样本迭代器的数据顺序。
 
 Since:
 
@@ -174,7 +174,7 @@ API 级别 2.1.0
 
 |
 
-Request iterator with newest data first
+请求迭代器，最新数据在前
 
 |
 | ORDER\_OLDEST\_FIRST | 1 |
@@ -183,7 +183,7 @@ API 级别 2.1.0
 
 |
 
-Request iterator with oldest data first
+请求迭代器，最早数据在前
 
 |
 
@@ -255,7 +255,7 @@ Parameters:
 
 Example:
 
-Shows the use of BodyBatteryIterator
+显示 BodyBatteryIterator 的使用
 
 ```
 using Toybox.SensorHistory;
@@ -1147,7 +1147,7 @@ Parameters:
 
 Example:
 
-Shows the use of StressHistoryIterator
+显示 StressHistoryIterator 的使用
 
 ```
 using Toybox.ActivityMonitor;

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the current local time.
+表示当前本地时间。
 
 ClockTime 提供了一种便捷方式，可以以易于使用的格式获取当前时间，而无需执行时区转换或基于时间的算术运算。ClockTime 提供的值可能需要格式化，才能在应用中正确显示。
 

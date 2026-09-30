@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents various statistics available on a device, such as the battery charge and memory use.
+表示设备上可用的各种统计信息，例如电池电量和内存使用情况。
 
 ## 另见：
 
@@ -75,7 +75,7 @@ API 级别 1.0.0
 
 注意：
 
-Some devices may report slightly less than 100% charge immediately after being removed from the charging cradle or cable. While the device is on the charger, the charger will disable itself after the battery charges to 100%. The battery will then very slowly discharge until it hits a hysteresis threshold, at which point the charger will reactivate. This is intentionally done to extend the life of the battery if the device is left on the charger for a long time. Garmin artificially locks the charge indicator on the charge page to 100% once the unit reaches full charge to mask this minor charge cycle fluctuation.
+某些设备从充电底座或充电线缆上移除后，可能会立即报告略低于 100% 的电量。当设备处于充电状态时，充电器会在电池充满至 100% 后禁用自身。随后电池会非常缓慢地放电，直到达到滞回阈值，此时充电器会重新启用。这样设计是为了在设备长时间留在充电器上时延长电池寿命。当设备达到满电状态后，Garmin 会在充电页面上人为地将电量指示器锁定为 100%，以掩盖这种轻微的充电周期波动。
 
 Since:
 

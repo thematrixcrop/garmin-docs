@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a shifting device instance
+表示一个变速设备实例
 
 Since:
 

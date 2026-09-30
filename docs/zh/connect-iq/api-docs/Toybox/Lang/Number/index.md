@@ -67,7 +67,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The absolute value of the Number
+    Number 的绝对值
 
 
 Since:

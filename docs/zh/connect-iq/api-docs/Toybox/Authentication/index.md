@@ -57,7 +57,7 @@ OAuth 请求的签名方式
 
 - [**makeOAuthRequest**](#makeOAuthRequest-instance_function)(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>) as **Void**
 
-    Request an OAuth sign-in through Garmin Connect IQ Mobile App A notification will trigger on the phone, that when clicked, provides a web view that shows `requestUrl`.
+    通过 Garmin Connect IQ Mobile App 请求 OAuth 登录。手机上将触发通知，点击通知后会显示一个网页视图，其中包含 `requestUrl`。
 
 - [**registerForOAuthMessages**](#registerForOAuthMessages-instance_function)(method as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(message as [Authentication.OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/)) as **Void**) as **Void**
 
@@ -68,7 +68,7 @@ OAuth 请求的签名方式
 
 ### **makeOAuthRequest(requestUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), requestParams as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>, resultUrl as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), resultType as [Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module), resultKeys as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)\>)** as **Void**
 
-Request an OAuth sign-in through Garmin Connect IQ Mobile App
+通过 Garmin Connect IQ Mobile App 请求 OAuth 登录
 
 手机上将触发通知；点击该通知后会显示一个展示 `requestUrl` 的 Web 视图。如果用户授予应用权限，则 [registerForOAuthMessages()](/connect-iq/api-docs/Toybox/Authentication/#registerForOAuthMessages-instance_function) 注册的回调将使用 OAuth 响应中的 [OAuthMessage](/connect-iq/api-docs/Toybox/Authentication/OAuthMessage/) 进行调用。
 

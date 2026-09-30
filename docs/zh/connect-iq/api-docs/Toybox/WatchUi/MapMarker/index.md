@@ -196,11 +196,11 @@ Parameters:
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `x` location of the hotspot on the bitmap in pixels (px). Used to align the hotspot with the longitude of the MapMarker. This value is required, but will be disregarded when used with [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) type.
+    位图上热点的 `x` 位置，以像素（px）为单位。用于将热点与 MapMarker 的经度对齐。此值是必需的，但与 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 类型一起使用时会被忽略。
 
 - y — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `y` location of the hotspot on the bitmap in pixels (px). Used to align the hotspot with the latitude value of the MapMarker. This value is required, but will be disregarded when used with [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) type.
+    位图上热点的 `y` 位置，以像素（px）为单位。用于将热点与 MapMarker 的纬度值对齐。此值是必需的，但与 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 类型一起使用时会被忽略。
 
 
 Since:

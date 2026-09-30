@@ -65,7 +65,7 @@ Returns:
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) —
 
-    The absolute value of the Float
+    Float 的绝对值
 
 
 Since:

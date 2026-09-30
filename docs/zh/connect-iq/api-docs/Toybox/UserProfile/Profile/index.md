@@ -48,11 +48,11 @@ API 级别 1.0.0
 
 - [**restingHeartRate**](#restingHeartRate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Resting heart rate as configured by the user.
+    用户配置的静息心率。
 
 - [**runningStepLength**](#runningStepLength-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Running step length as configured by the user.
+    用户配置的跑步步长。
 
 - [**sleepTime**](#sleepTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
@@ -72,7 +72,7 @@ API 级别 1.0.0
 
 - [**vo2maxRunning**](#vo2maxRunning-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    Running VO2 Max This value is calculated based on historical data.
+    跑步 VO2 Max 此值根据历史数据计算。
 
 - [**wakeTime**](#wakeTime-var) as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
 
@@ -101,7 +101,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    The activity level as a value from 0-100.
+    活动级别，取值范围为 0-100。
 
 
 ### var averageRestingHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
@@ -285,7 +285,7 @@ Returns:
 
 ### var restingHeartRate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Resting heart rate as configured by the user
+用户配置的静息心率
 
 Since:
 
@@ -300,7 +300,7 @@ Returns:
 
 ### var runningStepLength as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Running step length as configured by the user
+用户配置的跑步步长
 
 Since:
 
@@ -310,7 +310,7 @@ Returns:
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    Running step length in millimeters (mm)
+    以毫米 (mm) 为单位的跑步步长
 
 
 ### var sleepTime as [Time.Duration](/connect-iq/api-docs/Toybox/Time/Duration/) or **Null**
@@ -506,7 +506,7 @@ Returns:
 
 ### var vo2maxRunning as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-Running VO2 Max
+跑步 VO2 Max
 
 此值根据历史数据计算得出。如果数据不足以生成结果，则可能为 `null`。
 

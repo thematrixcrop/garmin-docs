@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents received bike speed information.
+表示接收到的自行车速度信息。
 
 Since:
 

@@ -79,7 +79,7 @@ Returns:
 
 - [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/) —
 
-    The absolute value of the Long
+    Long 的绝对值
 
 
 Since:

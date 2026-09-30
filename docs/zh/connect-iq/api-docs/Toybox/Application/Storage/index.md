@@ -7,7 +7,7 @@ title: "Module: Toybox.Application.Storage"
 
 The Storage module provides persistent storage to applications.
 
-Storage provides access to persistent disk storage.
+Storage 提供对持久磁盘存储的访问。
 
 Since:
 
@@ -145,7 +145,7 @@ Throws:
 
 把给定数据存入该对象。
 
-Support for storing object types has been expanded over time.
+对存储对象类型的支持随着时间推移不断扩展。
 
 - [BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/)（自 3.0.0）
 

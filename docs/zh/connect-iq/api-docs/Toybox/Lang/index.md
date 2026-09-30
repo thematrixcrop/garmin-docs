@@ -39,7 +39,7 @@ API 级别 3.1.0
 
 |
 
-Signed 16-bit Integer Value
+有符号 16 位整数值
 
 |
 | NUMBER\_FORMAT\_SINT32 | 2 |
@@ -48,7 +48,7 @@ API 级别 3.1.0
 
 |
 
-Signed 32-bit Integer Value
+有符号 32 位整数值
 
 |
 | NUMBER\_FORMAT\_SINT8 | 3 |
@@ -57,7 +57,7 @@ API 级别 3.1.0
 
 |
 
-Signed 8-bit Integer Value
+有符号 8 位整数值
 
 |
 | NUMBER\_FORMAT\_UINT16 | 4 |
@@ -189,7 +189,7 @@ Parameters:
 
 - parameters — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    The Array of content to substitute into the formatted String
+    要替换到格式化 String 中的内容 Array
 
 
 Example:

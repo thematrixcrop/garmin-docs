@@ -115,7 +115,7 @@ API 级别 1.0.0
 
 - [**getLayerIndex**](#getLayerIndex-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    Return the index of the layer from the bottom of the view layer stack.
+    返回视图层堆栈中从底部开始的图层索引。
 
 - [**getLayers**](#getLayers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/)\> or **Null**
 
@@ -151,7 +151,7 @@ API 级别 1.0.0
 
 - [**setActionMenuIndicator**](#setActionMenuIndicator-instance_function)(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**) as **Void**
 
-    Set action menu indicator options for this view.
+    为此视图设置操作菜单指示器选项。
 
 - [**setClockHandPosition**](#setClockHandPosition-instance_function)(options as { :clockState as [WatchUi.AnalogClockState](/connect-iq/api-docs/Toybox/WatchUi/#AnalogClockState-module), :hour as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :minute as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null** }) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -273,7 +273,7 @@ API 级别 1.0.0
 
 ### **getLayerIndex(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-Return the index of the layer from the bottom of the view layer stack
+返回视图层堆栈中从底部开始的图层索引
 
 Parameters:
 
@@ -328,7 +328,7 @@ Parameters:
 
 - idx — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    position in the layer stack to insert layer.
+    要插入图层的图层堆栈位置。
 
 
 Since:
@@ -433,7 +433,7 @@ API 级别 3.1.0
 
 ### **setActionMenuIndicator(options as [View.ActionMenuIndicatorOptions](/connect-iq/api-docs/Toybox/WatchUi/View/#ActionMenuIndicatorOptions-named_type) or **Null**)** as **Void**
 
-Set action menu indicator options for this view. If enabled, [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) or [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function) will be called when the action menu is pushed. Supported view types are [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/), [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/), [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) and [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/). Ignored when called on other view types.
+为此视图设置操作菜单指示器选项。如果启用操作菜单，则在推送操作菜单时会调用 [BehaviorDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) 或 [PickerDelegate.onActionMenu](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)。支持的视图类型为 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)、[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)、[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) 和 [WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)。在其他视图类型上调用时会被忽略。
 
 Parameters:
 
@@ -482,11 +482,11 @@ Parameters:
 
 - :hour — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Position for the hour hand in degrees clockwise from the 12 o'clock position
+        时针位置，以从 12 点位置顺时针计算的角度表示
 
 - :minute — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        Position for the minute hand in degrees clockwise from the 12 o'clock position
+        分针位置，以从 12 点位置顺时针计算的角度表示
 
 
 :::details 支持的设备
@@ -591,7 +591,7 @@ Parameters:
 
 - enable — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    Set to `true` if the mode should be enabled, otherwise `false`
+    如果应启用该模式，则设置为 `true`；否则设置为 `false`
 
 
 Example:
@@ -623,11 +623,11 @@ Throws:
 
 设置 View 的布局。
 
-Set the array of Drawable objects to be managed by this View. The specified Drawables will be:
+设置由此 View 管理的 Drawable 对象数组。指定的 Drawable 将：
 
 - 通过调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 自动绘制
 
-- Searched via calls to [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function)
+- 通过调用 [findDrawableById()](/connect-iq/api-docs/Toybox/WatchUi/View/#findDrawableById-instance_function) 进行搜索
 
 
 Parameters:

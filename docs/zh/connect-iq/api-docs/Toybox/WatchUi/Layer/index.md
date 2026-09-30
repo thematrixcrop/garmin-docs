@@ -70,7 +70,7 @@ API 级别 3.1.0
 - [**isVisible**](#isVisible-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 - [**setLocation**](#setLocation-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set draw offset relative to the screen origin.
+    设置相对于屏幕原点的绘制偏移量。
 
 - [**setVisible**](#setVisible-instance_function)(visible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) as **Void**
 
@@ -78,11 +78,11 @@ API 级别 3.1.0
 
 - [**setX**](#setX-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set X-axis absolute draw offset relative to the screen origin.
+    设置相对于屏幕原点的 X 轴绝对绘制偏移量。
 
 - [**setY**](#setY-instance_function)(y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as **Void**
 
-    Set Y-axis absolute draw offset relative to the screen origin.
+    设置相对于屏幕原点的 Y 轴绝对绘制偏移量。
 
 
 ## 类型定义详情
@@ -206,7 +206,7 @@ API 级别 3.1.0
 
 ### **setLocation(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type), y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set draw offset relative to the screen origin
+设置相对于屏幕原点的绘制偏移量
 
 Parameters:
 
@@ -240,7 +240,7 @@ API 级别 3.1.0
 
 ### **setX(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set X-axis absolute draw offset relative to the screen origin
+设置相对于屏幕原点的 X 轴绝对绘制偏移量
 
 Parameters:
 
@@ -255,7 +255,7 @@ API 级别 3.1.0
 
 ### **setY(y as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as **Void**
 
-Set Y-axis absolute draw offset relative to the screen origin
+设置相对于屏幕原点的 Y 轴绝对绘制偏移量
 
 Parameters:
 

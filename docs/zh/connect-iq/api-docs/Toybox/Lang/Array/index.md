@@ -58,7 +58,7 @@ API 级别 1.0.0
 
 - [**sort**](#sort-instance_function)(comparator as [Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type) or **Null**) as **Void**
 
-    Sort an Array.
+    对 Array 排序。
 
 - [**toString**](#toString-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
@@ -258,7 +258,7 @@ API 级别 1.3.0
 
 ### **sort(comparator as [Lang.Comparator](/connect-iq/api-docs/Toybox/Lang/#Comparator-named_type) or **Null**)** as **Void**
 
-Sort an Array
+对 Array 排序
 
 Parameters:
 

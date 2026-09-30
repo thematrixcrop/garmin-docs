@@ -659,7 +659,7 @@ API 级别 1.0.0
 
 将 [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
 
-Success or Fail is received by the [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/).
+[BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) 会收到成功或失败结果。
 
 Parameters:
 

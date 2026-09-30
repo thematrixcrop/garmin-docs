@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the forecast for a given hour
+表示指定小时的天气预报
 
 Since:
 

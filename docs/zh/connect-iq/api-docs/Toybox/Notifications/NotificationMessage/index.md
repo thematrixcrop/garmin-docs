@@ -26,7 +26,7 @@ API 级别 5.1.0
 
 - [**action**](#action-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
-    The action payload associated with the selected action The value of the selected action from the `:actions` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function).
+    与所选操作关联的操作负载。所选操作的值来自提供给 [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) 的 `:actions` 选项。
 
 - [**data**](#data-var) as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
@@ -48,7 +48,7 @@ API 级别 5.1.0
 
 ### var action as [Notifications.NotificationDataType](/connect-iq/api-docs/Toybox/Notifications/#NotificationDataType-named_type) or **Null**
 
-The action payload associated with the selected action
+与所选操作关联的操作负载
 
 The value of the selected action from the `:actions` option provided to [showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function). This will be `null` if the selected action had a `null` value, or if the notification was dismissed.
 

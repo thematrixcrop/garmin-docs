@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-SwipeEvent is an object sent to [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) when there is swipe interaction with the device's touch screen.
+当设备触摸屏发生滑动交互时，SwipeEvent 是发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 的对象。
 
 ## 另见：
 

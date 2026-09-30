@@ -26,26 +26,26 @@ API 级别 3.1.0
 
 - [**getCharacteristic**](#getCharacteristic-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) or **Null**
 
-    Retrieves the Characteristic with a specified UUID.
+    获取具有指定 UUID 的特征。
 
 - [**getCharacteristics**](#getCharacteristics-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Retrieves an Iterator over the Characteristics in a Service This will only provide Characteristics that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function).
+    获取服务中各特征的迭代器。仅提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的特征。
 
 - [**getDevice**](#getDevice-instance_function)() as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
-    Retrieves the Service's Device Retrieve the Device that this service belongs to.
+    获取服务所属的设备。获取此服务所属的设备。
 
 - [**getUuid**](#getUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Returns the UUID of the service.
+    返回 service 的 UUID。
 
 
 ## 实例方法详情
 
 ### **getCharacteristic(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/))** as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/) or **Null**
 
-Retrieves the Characteristic with a specified UUID
+获取具有指定 UUID 的特征
 
 Parameters:
 
@@ -67,7 +67,7 @@ API 级别 3.1.0
 
 ### **getCharacteristics()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Retrieves an Iterator over the Characteristics in a Service
+获取服务中各特征的迭代器
 
 This will only provide Characteristics that have been registered using [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function)
 
@@ -84,9 +84,9 @@ API 级别 3.1.0
 
 ### **getDevice()** as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
-Retrieves the Service's Device
+获取服务所属的设备
 
-Retrieve the Device that this service belongs to
+获取此服务所属的设备
 
 Returns:
 
@@ -101,7 +101,7 @@ API 级别 3.1.0
 
 ### **getUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Returns the UUID of the service
+返回 service 的 UUID
 
 Returns:
 

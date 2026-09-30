@@ -5,11 +5,11 @@ title: "Module: Toybox.ActivityPrompts"
 
 ## 概述
 
-The ActivityPrompts module allows a data field to handle audio output during an activity.
+ActivityPrompts 模块允许数据字段在活动期间处理音频输出。
 
 Using this module will cause to all activity prompts during an activity to no longer play through the device or any connected devices such as headphones. The user must select the data field as the activity prompt handler in the device menus.
 
-Prompts will be passed to [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function) when they are to be played. If more than one prompt is passed to `ActivityPromptDelegate::onPrompt()`, they are meant to be played together uninterrupted.
+提示将在需要播放时传递给 [ActivityPromptDelegate.onPrompt()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onPrompt-instance_function)。如果向 `ActivityPromptDelegate::onPrompt()` 传递多个提示，则这些提示应连续播放且不中断。
 
 Since:
 
@@ -102,7 +102,7 @@ API 级别 5.2.0
 
 - [**registerActivityPromptsListener**](#registerActivityPromptsListener-instance_function)(delegate as [ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Register as the activity prompt output provider.
+    注册为活动提示输出提供程序。
 
 - [**setActivityPromptTextLanguage**](#setActivityPromptTextLanguage-instance_function)(languages as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -125,7 +125,7 @@ API 级别 5.2.0
 
 ### **registerActivityPromptsListener(delegate as [ActivityPrompts.ActivityPromptDelegate](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/), options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Register as the activity prompt output provider. `true` will only be returned only if the data field is the selected activity prompt output provider. If `false` is returned, [ActivityPromptDelegate.onAudioOutputChange()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onAudioOutputChange-instance_function) will be called with `true` if the data field becomes the selected activity prompt output provider.
+注册为活动提示输出提供程序。仅当该数据字段是选定的活动提示输出提供程序时，才会返回 `true`。如果返回 `false`，当该数据字段成为选定的活动提示输出提供程序时，将使用 `true` 调用 [ActivityPromptDelegate.onAudioOutputChange()](/connect-iq/api-docs/Toybox/ActivityPrompts/ActivityPromptDelegate/#onAudioOutputChange-instance_function)。
 
 Parameters:
 
@@ -135,7 +135,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Reserved for future use
+    保留供将来使用
 
 
 Returns:

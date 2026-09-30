@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents received bike cadence information.
+表示接收到的自行车踏频信息。
 
 Since:
 

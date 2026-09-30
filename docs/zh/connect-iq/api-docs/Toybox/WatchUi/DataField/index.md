@@ -293,7 +293,7 @@ API 级别 1.0.0
 
 |
 
-Some of the left edge of the device context is obscured
+设备上下文的部分左边缘被遮挡
 
 |
 | OBSCURE\_TOP | 2 |
@@ -302,7 +302,7 @@ API 级别 1.0.0
 
 |
 
-Some of the top edge of the device context is obscured
+设备上下文的部分顶边缘被遮挡
 
 |
 | OBSCURE\_RIGHT | 4 |
@@ -311,7 +311,7 @@ API 级别 1.0.0
 
 |
 
-Some of the right edge of the device context is obscured
+设备上下文的部分右边缘被遮挡
 
 |
 | OBSCURE\_BOTTOM | 8 |
@@ -320,13 +320,13 @@ API 级别 1.0.0
 
 |
 
-Some of the bottom edge of the device context is obscured
+设备上下文的部分底边缘被遮挡
 
 |
 
 ### LapTriggerType
 
-Reason for lap creation
+创建圈的原因
 
 Since:
 
@@ -705,7 +705,7 @@ API 级别 1.3.0
 
 获取当前数据字段背景颜色。
 
-Some devices provide a global Data Field background color setting. This method will return the current value of that setting as a value of either [Graphics.COLOR\_WHITE](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) or [Graphics.COLOR\_BLACK](/connect-iq/api-docs/Toybox/Graphics/#COLOR_BLACK-const).
+某些设备提供全局数据字段背景颜色设置。此方法将返回该设置的当前值，值为 [Graphics.COLOR\_WHITE](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) 或 [Graphics.COLOR\_BLACK](/connect-iq/api-docs/Toybox/Graphics/#COLOR_BLACK-const)。
 
 Returns:
 
@@ -2469,7 +2469,7 @@ Parameters:
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    reserved for future user, can be `null`
+    为将来的用户保留，可以为 `null`
 
 
 :::details 支持的设备
@@ -2553,7 +2553,7 @@ API 级别 5.2.0
 
 - `WorkoutIntervalStep.repetitionNumber` 是重复间隔的次数。
 
-- The `WorkoutIntervalStep.activeStep` will occur first, followed by `WorkoutIntervalStep.restStep`.
+- `WorkoutIntervalStep.activeStep` 将首先发生，随后是 `WorkoutIntervalStep.restStep`。
 
 - 如果紧跟在 `WorkoutIntervalStep` 之后的步骤强度为 `Activity.WORKOUT_INTENSITY_COOLDOWN`，则会跳过最后的休息步骤。如果使用 Toybox::PersistedContent::Workout，请注意：
 

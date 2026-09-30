@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Bike Radar Device instance.
+表示一个自行车雷达设备实例。
 
 Since:
 

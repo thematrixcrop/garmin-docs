@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the forecast for a given day.
+表示指定日期的天气预报。
 
 Since:
 

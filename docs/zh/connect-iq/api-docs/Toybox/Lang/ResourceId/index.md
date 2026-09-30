@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 ResourceId 是资源标识符。
 
-ResourceId values uniquely identify a resource to the system.
+ResourceId 值可唯一标识系统中的资源。
 
 Example:
 

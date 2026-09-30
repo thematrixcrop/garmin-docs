@@ -286,7 +286,7 @@ API 级别 2.2.0
 
 - [**saveWaypoint**](#saveWaypoint-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**) as **Void**
 
-    Save a [Location](/connect-iq/api-docs/Toybox/Position/Location/) as a [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) to the device's location list.
+    将一个 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 作为 [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 保存到设备的位置列表中。
 
 
 ## 类型定义详情
@@ -1538,7 +1538,7 @@ API 级别 2.2.0
 
 ### **saveWaypoint(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) } or **Null**)** as **Void**
 
-Save a [Location](/connect-iq/api-docs/Toybox/Position/Location/) as a [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) to the device's location list
+将一个 [Location](/connect-iq/api-docs/Toybox/Position/Location/) 作为 [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 保存到设备的位置列表中
 
 Parameters:
 

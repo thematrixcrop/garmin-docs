@@ -70,7 +70,7 @@ This will return the string for the name of the symbol in development builds. Be
 
 Returns:
 
-- String —
+- 字符串 —
 
     The String representation of the Symbol
 

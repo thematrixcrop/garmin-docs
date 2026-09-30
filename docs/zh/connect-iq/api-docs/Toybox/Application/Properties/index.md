@@ -7,7 +7,7 @@ title: "Module: Toybox.Application.Properties"
 
 The Properties module provides access to application properties.
 
-Storage provides access to properties defined in application properties.
+Storage 提供对应用属性中定义的属性的访问。
 
 Since:
 
@@ -46,7 +46,7 @@ API 级别 2.4.0
 
 从应用程序设置中获取与给定键关联的数据。
 
-Property values must be defined in the application settings xml. If a key that is not present in application settings is passed to getValue(), an exception will be thrown.
+属性值必须在应用程序设置 XML 中定义。如果将应用程序设置中不存在的键传递给 getValue()，将抛出异常。
 
 Parameters:
 

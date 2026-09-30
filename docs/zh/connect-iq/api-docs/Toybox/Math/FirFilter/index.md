@@ -27,7 +27,7 @@ Toybox.Math.Filter
 
 Example:
 
-Shows the constructor and implementation for filter use with accelerometer data. Borrowed from the PitchCounter sample included in the SDK.
+显示如何为加速度计数据筛选器的使用实现构造函数。内容借鉴了 SDK 中包含的 PitchCounter 示例。
 
 ```
 using Toybox.Math;

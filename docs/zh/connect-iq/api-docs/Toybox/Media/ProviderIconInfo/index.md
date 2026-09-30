@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ProviderIconInfo is the class representation of a provider icon.
+ProviderIconInfo 是提供程序图标的类表示。
 
 Since:
 

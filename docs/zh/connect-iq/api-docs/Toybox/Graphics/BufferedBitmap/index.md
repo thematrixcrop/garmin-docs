@@ -25,7 +25,7 @@ This class represents an off-screen bitmap. It provides methods to modify the bi
 
 Example:
 
-Sets up an off-screen buffer using resources.
+使用资源设置屏幕外缓冲区。
 
 ```
 using Toybox.Graphics;

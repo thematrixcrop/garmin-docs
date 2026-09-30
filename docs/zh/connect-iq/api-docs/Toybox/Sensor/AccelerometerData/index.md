@@ -230,7 +230,7 @@ API 级别 2.3.0
 
 The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of pitch values as [Floats](/connect-iq/api-docs/Toybox/Lang/Float/) in degrees. Can be `null`.
 
-Pitch values are calculated with the equation atan2(y, sqrt(x^2 + z^2)).
+俯仰值使用公式 atan2(y, sqrt(x^2 + z^2)) 计算。
 
 Since:
 
@@ -261,7 +261,7 @@ Returns:
 
 The [Array](/connect-iq/api-docs/Toybox/Lang/Array/) of roll values as [Floats](/connect-iq/api-docs/Toybox/Lang/Float/) in degrees. Can be `null`.
 
-Roll values are calculated with the equation atan2(-x, z).
+滚转值使用公式 atan2(-x, z) 计算。
 
 Since:
 

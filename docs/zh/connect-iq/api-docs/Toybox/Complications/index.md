@@ -165,7 +165,7 @@ API 级别 4.2.0
 
 ### 类型
 
-System build-in complication type
+系统内置的 complication 类型
 
 Since:
 
@@ -585,15 +585,15 @@ Value is a non-negative number from 0 to 100 representing sleep score or `null`
 
 - [**getComplications**](#getComplications-instance_function)() as [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
 
-    Provide an iterator over complication id that we have access to.
+    提供一个迭代器，用于遍历我们有权访问的 complication id。
 
 - [**registerComplicationChangeCallback**](#registerComplicationChangeCallback-instance_function)(callback as [Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type) or **Null**) as **Void**
 
-    Register callback for notifications of complication updates.
+    注册 complication 更新通知回调。
 
 - [**subscribeToUpdates**](#subscribeToUpdates-instance_function)(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    Subscribes to complication.
+    订阅 complication。
 
 - [**unsubscribeFromAllUpdates**](#unsubscribeFromAllUpdates-instance_function)() as **Void**
 
@@ -787,7 +787,7 @@ Throws:
 
 ### **getComplications()** as [Complications.Iterator](/connect-iq/api-docs/Toybox/Complications/Iterator/)
 
-Provide an iterator over complication id that we have access to
+提供一个迭代器，用于遍历我们有权访问的 complication id
 
 Returns:
 
@@ -802,7 +802,7 @@ API 级别 4.2.0
 
 ### **registerComplicationChangeCallback(callback as [Complications.ComplicationChangedCallback](/connect-iq/api-docs/Toybox/Complications/#ComplicationChangedCallback-named_type) or **Null**)** as **Void**
 
-Register callback for notifications of complication updates
+注册 complication 更新通知回调
 
 Parameters:
 
@@ -817,7 +817,7 @@ API 级别 4.2.0
 
 ### **subscribeToUpdates(id as [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-Subscribes to complication. Information is sent to registered ComplicationChangedCallback method. Make sure you have registered your change callback.
+订阅 complication。信息会发送到已注册的 ComplicationChangedCallback 方法。请确保已注册更改回调。
 
 Returns:
 

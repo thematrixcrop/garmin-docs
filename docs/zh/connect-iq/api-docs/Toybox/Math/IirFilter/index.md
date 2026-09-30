@@ -27,7 +27,7 @@ Toybox.Math.Filter
 
 Example:
 
-Shows the constructor and implementation for filter use with accelerometer data.
+显示如何为加速度计数据筛选器的使用实现构造函数。
 
 ```
 using Toybox.Math;

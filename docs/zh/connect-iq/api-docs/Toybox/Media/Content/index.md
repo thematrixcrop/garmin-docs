@@ -46,7 +46,7 @@ API 级别 3.0.0
 
 - [**setMetadata**](#setMetadata-instance_function)(metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)) as **Void**
 
-    Set the metadata for this object.
+    设置此对象的元数据。
 
 
 ## 实例方法详情
@@ -108,7 +108,7 @@ API 级别 3.0.0
 
 ### **setMetadata(metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/))** as **Void**
 
-Set the metadata for this object
+设置此对象的元数据
 
 Since:
 

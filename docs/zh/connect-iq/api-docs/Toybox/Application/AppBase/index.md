@@ -50,7 +50,7 @@ AppBase 是应用的基类。
 
 Example:
 
-Shows basic app life cycle
+显示基本的应用生命周期
 
 ```
 using Toybox.Application;
@@ -268,7 +268,7 @@ API 级别 4.0.0
 
 - [**saveProperties**](#saveProperties-instance_function)() as **Void** deprecated
 
-    Save the properties for the application.
+    保存应用的属性。
 
 - [**setProperty**](#setProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void** deprecated
 
@@ -285,13 +285,13 @@ API 级别 4.0.0
 
 检查是否允许应用程序试用消息。
 
-Returns `true` if the application should allow the product to push unlock instruction pages for locked apps. Returns `true` by default.
+如果应用应允许产品为锁定的应用推送解锁说明页面，则返回 `true`。默认返回 `true`。
 
 Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Returns `true` if trial messages should be shown, otherwise `false`.
+    如果应显示试用消息，则返回 `true`；否则返回 `false`。
 
 
 Since:
@@ -970,7 +970,7 @@ API 级别 1.0.0
 
 从对象存储中获取与指定键关联的数据。
 
-Properties must first be set with [setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) before they are can be obtained with `getProperty`.
+必须先使用 [setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) 设置属性，然后才能通过 `getProperty` 获取属性。
 
 注意：
 
@@ -1757,7 +1757,7 @@ Returns:
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    Return `true` if the app is "locked" and considered to be in trial mode, otherwise `false` if the app has been unlocked.
+    如果应用处于“锁定”状态并被视为试用模式，则返回 `true`；如果应用已解锁，则返回 `false`。
 
 
 Since:
@@ -2372,7 +2372,7 @@ Parameters:
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Required. If an [Intent](/connect-iq/api-docs/Toybox/System/Intent/) is not used to launch the application, then an empty "state" Dictionary is used. If an Intent is used to start the application the Dictionary contains the arguments from the Intent.
+    必需。如果未使用 [Intent](/connect-iq/api-docs/Toybox/System/Intent/) 启动应用程序，则使用一个空的 "state" Dictionary。如果使用 Intent 启动应用程序，则 Dictionary 包含 Intent 中的参数。
 
 - :resume — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -2434,7 +2434,7 @@ Parameters:
 
 - state — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Required. If an [Intent](/connect-iq/api-docs/Toybox/System/Intent/) is not used to launch an application on stop of the current application an empty "state" Dictionary is used. If an Intent is used to start another application, then the Dictionary contains the arguments from the Intent.
+    必需。如果未使用 [Intent](/connect-iq/api-docs/Toybox/System/Intent/) 在当前应用程序停止时启动应用程序，则使用一个空的 "state" Dictionary。如果使用 Intent 启动另一个应用程序，则 Dictionary 包含 Intent 中的参数。
 
 - :suspend — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
@@ -2496,7 +2496,7 @@ API 级别 4.1.0
 
 此方法可能在 System 4 之后移除。
 
-Save the properties for the application
+保存应用的属性
 
 :::details 支持的设备
 

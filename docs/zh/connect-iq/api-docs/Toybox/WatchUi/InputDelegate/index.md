@@ -24,9 +24,9 @@ There are four types of basic inputs InputDelegate can handle:
 
 - Touch, represented by [ClickEvent](/connect-iq/api-docs/Toybox/WatchUi/ClickEvent/)
 
-- Swipe, represented by [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)
+- 由 [SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/) 表示的滑动
 
-- Selectable, represented by [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)
+- 由 [SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/) 表示的可选择项
 
 
 This class is the base class for [BehaviorDelegate](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/), which goes beyond simple key and screen-based input.

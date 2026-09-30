@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the basic resistance percentage set on fitness equipment when the equipment is in basic resistance training mode. Fields may return `null` so you should `null` check values before using them.
+表示健身器材处于基本阻力训练模式时设置的基本阻力百分比。字段可能返回 `null`，因此使用前应检查值是否为 `null`。
 
 Since:
 

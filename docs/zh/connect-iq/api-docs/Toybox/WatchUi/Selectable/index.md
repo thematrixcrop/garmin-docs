@@ -27,7 +27,7 @@ Toybox.WatchUi.Drawable
 
 注意：
 
-See the Selectable sample distributed with the SDK for an example of the use of the Selectable class
+请参阅 SDK 中随附的 Selectable 示例，了解 Selectable 类的使用示例
 
 Since:
 
@@ -203,11 +203,11 @@ Parameters:
 
 - :locX — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-        The absolute, on-screen x-coordinate for the Selectable object (required)
+        Selectable 对象在屏幕上的绝对 x 坐标（必需）
 
 - :locY — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-        The absolute, on-screen y-coordinate for the Selectable object (required)
+        Selectable 对象在屏幕上的绝对 y 坐标（必需）
 
 - :width — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 

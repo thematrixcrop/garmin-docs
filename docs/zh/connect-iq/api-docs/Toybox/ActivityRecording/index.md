@@ -5,13 +5,13 @@ title: "Module: Toybox.ActivityRecording"
 
 ## 概述
 
-The Activity Recording module will allow Apps to access the FIT file recording capabilities of the device.
+Activity Recording 模块允许应用访问设备的 FIT 文件记录功能。
 
 应用可以使用此模块允许用户开始和停止记录、创建分段并保存记录的数据。SPORT\_\* 和 SUB\_SPORT\_\* 常量以枚举形式提供。
 
 The SPORT\_\* defines the type of activity, but is not guaranteed to change device behavior. This may cause different algorithms to be applied to the sensor data. For example, a device that does not natively support SPORT\_MULTISPORT recording will not gain SPORT\_MULTISPORT transition features. However, the FIT file can be defined as SPORT\_MULTISPORT and MULTI\_SPORT algorithms may be applied to the sensor data.
 
-SUB\_SPORT\_\* allows for clarification of sport when recording.
+SUB\_SPORT\_\* 用于在记录时进一步明确运动类型。
 
 ## 另见：
 
@@ -268,7 +268,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for sports not on the list
+用于列表中未列出的运动的运动类型
 
 |
 | SPORT\_RUNNING | 1 |
@@ -277,7 +277,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for running
+用于跑步的运动类型
 
 |
 | SPORT\_CYCLING | 2 |
@@ -286,7 +286,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for multi-sport transitions
+用于多项运动转换的运动类型
 
 |
 | SPORT\_TRANSITION | 3 |
@@ -300,7 +300,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for ANT enabled exercise equipment
+用于支持 ANT 的健身设备的运动类型
 
 |
 | SPORT\_SWIMMING | 5 |
@@ -309,7 +309,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for swimming
+用于游泳的运动类型
 
 |
 | SPORT\_BASKETBALL | 6 |
@@ -318,7 +318,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for basketball
+用于篮球的运动类型
 
 |
 | SPORT\_SOCCER | 7 |
@@ -327,7 +327,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for soccer
+用于足球的运动类型
 
 |
 | SPORT\_TENNIS | 8 |
@@ -336,7 +336,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for Tennis
+用于网球的运动类型
 
 |
 | SPORT\_AMERICAN\_FOOTBALL | 9 |
@@ -345,7 +345,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for American football
+用于美式橄榄球的运动类型
 
 |
 | SPORT\_TRAINING | 10 |
@@ -354,7 +354,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for activities such as strength training, cardio, etc
+用于力量训练、有氧运动等活动的运动类型
 
 |
 | SPORT\_WALKING | 11 |
@@ -363,7 +363,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for walking
+用于步行的运动类型
 
 |
 | SPORT\_CROSS\_COUNTRY\_SKIING | 12 |
@@ -372,7 +372,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for cross-country skiing
+用于越野滑雪的运动类型
 
 |
 | SPORT\_ALPINE\_SKIING | 13 |
@@ -381,7 +381,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for alpine skiing
+用于高山滑雪的运动类型
 
 |
 | SPORT\_SNOWBOARDING | 14 |
@@ -390,7 +390,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for snowboarding
+用于单板滑雪的运动类型
 
 |
 | SPORT\_ROWING | 15 |
@@ -399,7 +399,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for rowing
+用于赛艇的运动类型
 
 |
 | SPORT\_MOUNTAINEERING | 16 |
@@ -408,7 +408,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for mountaineering
+用于登山的运动类型
 
 |
 | SPORT\_HIKING | 17 |
@@ -417,7 +417,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for hiking
+用于徒步旅行的运动类型
 
 |
 | SPORT\_MULTISPORT | 18 |
@@ -426,7 +426,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for multi-sport events
+用于多项运动赛事的运动类型
 
 |
 | SPORT\_PADDLING | 19 |
@@ -435,7 +435,7 @@ API 级别 1.0.0
 
 |
 
-Sport used for paddling
+用于划桨的运动类型
 
 |
 
@@ -461,7 +461,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for flying
+用于飞行的运动类型
 
 |
 | SPORT\_E\_BIKING | 21 |
@@ -470,7 +470,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for riding an e-bike
+用于骑电动自行车的运动类型
 
 |
 | SPORT\_MOTORCYCLING | 22 |
@@ -479,7 +479,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for motorcycling
+用于骑摩托车的运动类型
 
 |
 | SPORT\_BOATING | 23 |
@@ -488,7 +488,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for boating
+用于划船的运动类型
 
 |
 | SPORT\_DRIVING | 24 |
@@ -497,7 +497,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for driving
+用于驾驶的运动类型
 
 |
 | SPORT\_GOLF | 25 |
@@ -506,7 +506,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for golfing
+用于高尔夫的运动类型
 
 |
 | SPORT\_HANG\_GLIDING | 26 |
@@ -515,7 +515,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for hang gliding
+用于悬挂式滑翔的运动类型
 
 |
 | SPORT\_HORSEBACK\_RIDING | 27 |
@@ -524,7 +524,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for horseback riding
+用于骑马的运动类型
 
 |
 | SPORT\_HUNTING | 28 |
@@ -533,7 +533,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for hunting
+用于狩猎的运动类型
 
 |
 | SPORT\_FISHING | 29 |
@@ -542,7 +542,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for fishing
+用于钓鱼的运动类型
 
 |
 | SPORT\_INLINE\_SKATING | 30 |
@@ -551,7 +551,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for inline skating
+用于轮滑的运动类型
 
 |
 | SPORT\_ROCK\_CLIMBING | 31 |
@@ -560,7 +560,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for rock climbing
+用于攀岩的运动类型
 
 |
 | SPORT\_SAILING | 32 |
@@ -569,7 +569,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for sailing
+用于帆船的运动类型
 
 |
 | SPORT\_ICE\_SKATING | 33 |
@@ -578,7 +578,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for ice skating
+用于滑冰的运动类型
 
 |
 | SPORT\_SKY\_DIVING | 34 |
@@ -587,7 +587,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for sky diving
+用于跳伞的运动类型
 
 |
 | SPORT\_SNOWSHOEING | 35 |
@@ -596,7 +596,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for showshoeing
+用于雪鞋健行的运动类型
 
 |
 | SPORT\_SNOWMOBILING | 36 |
@@ -605,7 +605,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for snowmobiling
+用于驾驶雪地摩托的运动类型
 
 |
 | SPORT\_STAND\_UP\_PADDLEBOARDING | 37 |
@@ -614,7 +614,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for paddle boarding
+用于桨板的运动类型
 
 |
 | SPORT\_SURFING | 38 |
@@ -623,7 +623,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for surfing
+用于冲浪的运动类型
 
 |
 | SPORT\_WAKEBOARDING | 39 |
@@ -632,7 +632,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for wakeboarding
+用于滑水的运动类型
 
 |
 | SPORT\_WATER\_SKIING | 40 |
@@ -641,7 +641,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for water skiing
+用于水上滑雪的运动类型
 
 |
 | SPORT\_KAYAKING | 41 |
@@ -650,7 +650,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for kayaking
+用于皮划艇的运动类型
 
 |
 | SPORT\_RAFTING | 42 |
@@ -659,7 +659,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for rafting
+用于漂流的运动类型
 
 |
 | SPORT\_WINDSURFING | 43 |
@@ -668,7 +668,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for windsurfing
+用于风帆冲浪的运动类型
 
 |
 | SPORT\_KITESURFING | 44 |
@@ -677,7 +677,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for kite surfing
+用于风筝冲浪的运动类型
 
 |
 | SPORT\_TACTICAL | 45 |
@@ -686,7 +686,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for tactical
+用于战术训练的运动类型
 
 |
 | SPORT\_JUMPMASTER | 46 |
@@ -695,7 +695,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for jumpmaster
+用于跳伞指挥员的运动类型
 
 |
 | SPORT\_BOXING | 47 |
@@ -704,7 +704,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for boxing
+用于拳击的运动类型
 
 |
 | SPORT\_FLOOR\_CLIMBING | 48 |
@@ -713,7 +713,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for climbing
+用于攀爬的运动类型
 
 |
 | SPORT\_BASEBALL | 49 |
@@ -722,7 +722,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for baseball
+用于棒球的运动类型
 
 |
 | SPORT\_SOFTBALL\_FAST\_PITCH | 50 |
@@ -731,7 +731,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for fast pitch softball
+用于快投垒球的运动类型
 
 |
 | SPORT\_SOFTBALL\_SLOW\_PITCH | 51 |
@@ -740,7 +740,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for slow pitch softball
+用于慢投垒球的运动类型
 
 |
 | SPORT\_SHOOTING | 56 |
@@ -749,7 +749,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for shooting
+用于射击的运动类型
 
 |
 | SPORT\_AUTO\_RACING | 57 |
@@ -758,7 +758,7 @@ API 级别 3.0.10
 
 |
 
-Sport used for auto racing
+用于赛车的运动类型
 
 |
 
@@ -784,7 +784,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport used if no other sub-sport is applicable
+不适用其他子运动类型时使用的子运动类型
 
 |
 | SUB\_SPORT\_TREADMILL | 1 |
@@ -793,7 +793,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Running and Fitness Equipment
+跑步和健身设备的子运动类型
 
 |
 | SUB\_SPORT\_STREET | 2 |
@@ -838,7 +838,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Cycling and Fitness Equipment
+骑行和健身设备的子运动类型
 
 |
 | SUB\_SPORT\_ROAD | 7 |
@@ -910,7 +910,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Rowing and Fitness Equipment
+划船和健身设备的子运动类型
 
 |
 | SUB\_SPORT\_ELLIPTICAL | 15 |
@@ -973,7 +973,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Activity Warm-up
+Activity 热身的子运动类型
 
 |
 | SUB\_SPORT\_MATCH | 22 |
@@ -982,7 +982,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Sports with Matches (e.g. Tennis)
+有比赛的运动的子运动类型（例如网球）
 
 |
 | SUB\_SPORT\_EXERCISE | 23 |
@@ -991,7 +991,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for Exercise
+锻炼的子运动类型
 
 |
 | SUB\_SPORT\_CHALLENGE | 24 |
@@ -1000,7 +1000,7 @@ API 级别 1.0.0
 
 |
 
-Sub-sport for a Sport Challenge
+Sport Challenge 的子运动类型
 
 |
 | SUB\_SPORT\_INDOOR\_SKIING | 25 |
@@ -1145,7 +1145,7 @@ Parameters:
 
 - :name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        Required. This is the name that will be associated with the sport being recorded. The suggested maximum length of the name is 15 characters (some devices support longer names).
+        必需。这是与所记录运动项目相关联的名称。建议名称的最大长度为 15 个字符（某些设备支持更长的名称）。
 
 - :poolLength — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 

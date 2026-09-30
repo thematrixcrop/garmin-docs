@@ -47,7 +47,7 @@ Returns:
 
 - [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) —
 
-    Returns a SensorLoggingStats object.
+    返回一个 SensorLoggingStats 对象。
 
 
 Since:
@@ -62,14 +62,14 @@ Parameters:
 
 - sensor —
 
-    Symbol for the sensor type to get the logging stats for or `null` to get stats about all the enabled sensors.
+    要获取日志统计信息的传感器类型符号；如果要获取所有已启用传感器的统计信息，则为 `null`。
 
 
 Returns:
 
 - [SensorLogging.SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) —
 
-    Returns a [SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/) for the requested sensor type or the [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) with stats of all the enabled sensors if `null` is passed.
+    如果传入 `null`，则返回请求传感器类型的一个 [SensorLoggingStats](/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats/)，或返回包含所有已启用传感器统计信息的 [Toybox::Lang::Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
 
 Since:

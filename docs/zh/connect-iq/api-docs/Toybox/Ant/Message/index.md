@@ -148,7 +148,7 @@ API 级别 1.0.0
 
 基于 32.768 kHz 时钟生成的接收消息时间戳。
 
-Rolls over every 2 seconds.
+每 2 秒翻转一次。
 
 Since:
 

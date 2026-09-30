@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 Example:
 
-Shows extending BurstListener class
+显示如何扩展 BurstListener 类
 
 ```
 using Toybox.Ant;

@@ -189,7 +189,7 @@ Parameters:
 
 - event — ([WatchUi.AnimationEvent](/connect-iq/api-docs/Toybox/WatchUi/#AnimationEvent-module)) —
 
-    The animation event, a [WatchUi.ANIMATION\_EVENT\*](/connect-iq/api-docs/Toybox/WatchUi/#ANIMATION_EVENT_COMPLETE-const) value
+    动画事件，一个 [WatchUi.ANIMATION\_EVENT\*](/connect-iq/api-docs/Toybox/WatchUi/#ANIMATION_EVENT_COMPLETE-const) 值
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 

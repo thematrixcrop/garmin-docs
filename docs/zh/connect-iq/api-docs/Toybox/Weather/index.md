@@ -172,7 +172,7 @@ API 级别 3.2.0
 
 |
 
-Partly cloudy
+局部多云
 
 |
 | CONDITION\_MOSTLY\_CLOUDY | 2 |
@@ -262,7 +262,7 @@ API 级别 3.2.0
 
 |
 
-Scattered showers
+局部阵雨
 
 |
 | CONDITION\_SCATTERED\_THUNDERSTORMS | 12 |
@@ -271,7 +271,7 @@ API 级别 3.2.0
 
 |
 
-Scattered thunderstorms
+局部雷暴
 
 |
 | CONDITION\_UNKNOWN\_PRECIPITATION | 13 |
@@ -352,7 +352,7 @@ API 级别 3.2.0
 
 |
 
-Rain snow
+雨夹雪
 
 |
 | CONDITION\_PARTLY\_CLEAR | 22 |
@@ -361,7 +361,7 @@ API 级别 3.2.0
 
 |
 
-Partly clear
+局部晴
 
 |
 | CONDITION\_MOSTLY\_CLEAR | 23 |
@@ -864,7 +864,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    Sunrise time as moment or `null` if no sunrise time is available
+    日出时间，表示为 moment；如果没有可用的日出时间，则为 `null`
 
 
 Since:
@@ -1021,7 +1021,7 @@ Returns:
 
 - [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) —
 
-    Sunset time as moment or `null` if no sunset time is available.
+    日落时间，表示为 moment；如果没有可用的日落时间，则为 `null`。
 
 
 Since:

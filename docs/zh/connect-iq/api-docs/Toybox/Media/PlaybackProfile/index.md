@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Provides the media player with specific rules about what playback options are supported.
+为媒体播放器提供有关支持哪些播放选项的具体规则。
 
 Example:
 
@@ -91,7 +91,7 @@ API 级别 3.0.0
 
 - [**skipPreviousThreshold**](#skipPreviousThreshold-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The amount of time a song must be played so that pressing back restarts the track and requires a second back press to skip to the previous track in seconds.
+    歌曲必须播放的时长，单位为秒；超过此时长后按返回键会重新开始当前曲目，再次按返回键才会跳到上一曲目。
 
 
 ## 实例属性详情
@@ -192,7 +192,7 @@ Returns:
 
 ### var skipPreviousThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The amount of time a song must be played so that pressing back restarts the track and requires a second back press to skip to the previous track in seconds. If set to `null` a default value that is device-dependent will be used.
+歌曲必须播放的时长，单位为秒；超过此时长后按返回键会重新开始当前曲目，再次按返回键才会跳到上一曲目。如果设置为 `null`，则使用依赖设备的默认值。
 
 Since:
 

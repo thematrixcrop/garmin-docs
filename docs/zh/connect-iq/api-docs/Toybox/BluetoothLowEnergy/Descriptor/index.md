@@ -26,28 +26,28 @@ API 级别 3.1.0
 
 - [**getCharacteristic**](#getCharacteristic-instance_function)() as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)
 
-    Retrieves the Descriptors Characteristic Retrieve the Characteristic that this descriptor belongs to.
+    获取描述符所属的特征。获取此描述符所属的特征。
 
 - [**getUuid**](#getUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Returns the UUID of the Descriptor.
+    返回 Descriptor 的 UUID。
 
 - [**requestRead**](#requestRead-instance_function)() as **Void**
 
-    Requests a read operation on the descriptor Once the operation is completed, [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the status of the operation.
+    请求对描述符执行读取操作。操作完成后，将使用操作状态调用已注册的 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 中的 [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function)。
 
 - [**requestWrite**](#requestWrite-instance_function)(value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
-    Requests a write operation Writes the locally stored value to the remote descriptor.
+    请求执行写入操作。将本地存储的值写入远程描述符。
 
 
 ## 实例方法详情
 
 ### **getCharacteristic()** as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)
 
-Retrieves the Descriptors Characteristic
+获取描述符所属的特征
 
-Retrieve the Characteristic that this descriptor belongs to
+获取此描述符所属的特征
 
 Returns:
 
@@ -62,7 +62,7 @@ API 级别 3.1.0
 
 ### **getUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Returns the UUID of the Descriptor
+返回 Descriptor 的 UUID
 
 Returns:
 
@@ -77,7 +77,7 @@ API 级别 3.1.0
 
 ### **requestRead()** as **Void**
 
-Requests a read operation on the descriptor
+请求对描述符执行读取操作
 
 操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function)
 

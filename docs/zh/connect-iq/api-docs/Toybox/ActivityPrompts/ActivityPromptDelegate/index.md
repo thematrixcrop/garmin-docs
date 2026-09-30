@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 系统用于向应用通知活动提示的委托
 
-Registered using [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) to allow an app to get notified when an activity prompt should be played.
+使用 [ActivityPrompts.registerActivityPromptListener()](/connect-iq/api-docs/Toybox/ActivityPrompts/#registerActivityPromptsListener-instance_function) 注册，以便应用程序在应播放活动提示时收到通知。
 
 Since:
 

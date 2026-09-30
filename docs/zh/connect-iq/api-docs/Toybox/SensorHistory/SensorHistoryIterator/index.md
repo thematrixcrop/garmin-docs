@@ -88,7 +88,7 @@ API 级别 2.1.0
 
 Example:
 
-Print out the maximum SensorSample data value
+打印最大 SensorSample 数据值
 
 ```
 using Toybox.SensorHistory;
@@ -122,7 +122,7 @@ API 级别 2.1.0
 
 Example:
 
-Print out the minimum SensorSample data value
+打印最小 SensorSample 数据值
 
 ```
 using Toybox.SensorHistory;
@@ -156,7 +156,7 @@ API 级别 2.1.0
 
 Example:
 
-Print out the Moment of the newest SensorSample
+打印最新 SensorSample 的 Moment
 
 ```
 using Toybox.SensorHistory;
@@ -194,7 +194,7 @@ API 级别 2.1.0
 
 Example:
 
-Print out the Moment of the oldest SensorSample
+打印最早 SensorSample 的 Moment
 
 ```
 using Toybox.SensorHistory;
@@ -234,7 +234,7 @@ API 级别 2.1.0
 
 Example:
 
-Print out the next SensorSample data value
+打印下一个 SensorSample 数据值
 
 ```
 using Toybox.SensorHistory;

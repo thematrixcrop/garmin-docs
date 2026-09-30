@@ -159,7 +159,7 @@ API 级别 3.0.0
 
 - [**setMapVisibleArea**](#setMapVisibleArea-instance_function)(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/)) as **Void**
 
-    Select the area of the map to render on the screen with a bounding box.
+    使用边界框选择要在屏幕上渲染的地图区域。
 
 - [**setPolyline**](#setPolyline-instance_function)(polyline as [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)) as **Void**
 
@@ -176,7 +176,7 @@ API 级别 3.0.0
 
 清除地图中的所有对象。
 
-Removes all [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) and [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) objects.
+移除所有 [MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 和 [MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象。
 
 Since:
 
@@ -244,7 +244,7 @@ API 级别 3.0.0
 
 ### **setMapVisibleArea(topLeft as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), bottomRight as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))** as **Void**
 
-Select the area of the map to render on the screen with a bounding box. A redraw of the current underlying map data will occur, so calling this function inside of onUpdate() is discouraged as it could lead to map flicker.
+使用边界框选择要在屏幕上渲染的地图区域。当前底层地图数据将重新绘制，因此不建议在 onUpdate() 中调用此函数，因为这可能导致地图闪烁。
 
 Parameters:
 
@@ -303,19 +303,19 @@ Parameters:
 
 - topLeftX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `x` location of the top-left visible pixel on the screen
+    屏幕上左上角可见像素的 `x` 位置
 
 - topLeftY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `y` location of the top-left visible pixel on the screen
+    屏幕上左上角可见像素的 `y` 位置
 
 - bottomRightX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `x` location of the bottom-right visible pixel on the screen
+    屏幕上右下角可见像素的 `x` 位置
 
 - bottomRightY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The `y` location of the bottom-right visible pixel on the screen
+    屏幕上右下角可见像素的 `y` 位置
 
 
 另见：

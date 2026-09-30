@@ -253,7 +253,7 @@ API 级别 3.0.0
 
 |
 
-PNG media content image format
+PNG 媒体内容图像格式
 
 |
 
@@ -270,7 +270,7 @@ API 级别 3.0.0
 
 |
 
-The "shuffle" operation is allowed
+允许执行"随机播放"操作
 
 |
 | PLAYBACK\_CONTROL\_PREVIOUS | 3 |
@@ -279,7 +279,7 @@ API 级别 3.0.0
 
 |
 
-The "previous track" operation is allowed
+允许执行"上一曲目"操作
 
 |
 | PLAYBACK\_CONTROL\_NEXT | 4 |
@@ -288,7 +288,7 @@ API 级别 3.0.0
 
 |
 
-The "next track" operation is allowed
+允许执行"下一曲目"操作
 
 |
 | PLAYBACK\_CONTROL\_SKIP\_FORWARD | 5 |
@@ -297,7 +297,7 @@ API 级别 3.0.0
 
 |
 
-The "skip forward x seconds" operation is allowed
+允许执行"向前跳过 x 秒"操作
 
 |
 | PLAYBACK\_CONTROL\_SKIP\_BACKWARD | 6 |
@@ -306,7 +306,7 @@ API 级别 3.0.0
 
 |
 
-The "skip backward x seconds" operation is allowed
+允许执行"向后跳过 x 秒"操作
 
 |
 | PLAYBACK\_CONTROL\_REPEAT | 7 |
@@ -315,7 +315,7 @@ API 级别 3.0.0
 
 |
 
-The "repeat" operation is allowed
+允许执行"重复"操作
 
 |
 | PLAYBACK\_CONTROL\_RATING | 9 |
@@ -333,7 +333,7 @@ API 级别 3.0.3
 
 |
 
-The "play/pause" operation is allowed
+允许执行"播放/暂停"操作
 
 |
 | PLAYBACK\_CONTROL\_VOLUME | 11 |
@@ -342,7 +342,7 @@ API 级别 3.0.3
 
 |
 
-The "volume" button - if not provided it will be added to the end of the playback controls
+"volume" 按钮——如果未提供，则会添加到播放控件末尾
 
 |
 | PLAYBACK\_CONTROL\_SOURCE | 12 |
@@ -351,7 +351,7 @@ API 级别 3.0.3
 
 |
 
-The "source" button - if not provided it will be added to the end of the playback controls
+"source" 按钮——如果未提供，则会添加到播放控件末尾
 
 |
 | PLAYBACK\_CONTROL\_LIBRARY | 13 |
@@ -360,7 +360,7 @@ API 级别 3.0.3
 
 |
 
-The "library" button - If provided it will be used for the library button UI.
+"library" 按钮——如果提供，则将用于库按钮 UI。
 
 |
 
@@ -485,7 +485,7 @@ API 级别 3.0.0
 
 |
 
-Repeat is off
+关闭重复播放
 
 |
 | REPEAT\_MODE\_ONE | 1 |
@@ -494,7 +494,7 @@ API 级别 3.0.0
 
 |
 
-Repeat the current track
+重复播放当前轨迹
 
 |
 | REPEAT\_MODE\_ALL | 2 |
@@ -503,7 +503,7 @@ API 级别 3.0.0
 
 |
 
-Repeat all tracks
+重复播放所有轨迹
 
 |
 
@@ -641,7 +641,7 @@ The larger image for when the icon is highlighted
 
 - [**requestPlaybackProfileUpdate**](#requestPlaybackProfileUpdate-instance_function)() as **Void**
 
-    Request that the media player call [ContentIterator.getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function).
+    请求媒体播放器调用 [ContentIterator.getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function)。
 
 - [**resetContentCache**](#resetContentCache-instance_function)() as **Void**
 
@@ -649,7 +649,7 @@ The larger image for when the icon is highlighted
 
 - [**setAlbumArt**](#setAlbumArt-instance_function)(albumArt as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or **Null**) as **Void**
 
-    Set the album art for the currently playing song.
+    设置当前播放歌曲的专辑封面。
 
 - [**startPlayback**](#startPlayback-instance_function)(args as [Application.PersistableType](/connect-iq/api-docs/Toybox/Application/#PersistableType-named_type)) as **Void**
 
@@ -661,7 +661,7 @@ The larger image for when the icon is highlighted
 
 - [**stopPlayback**](#stopPlayback-instance_function)() as **Void**
 
-    Stops playback if it was initiated by the app.
+    如果播放由应用发起，则停止播放。
 
 
 ## 实例方法详情
@@ -818,7 +818,7 @@ API 级别 3.0.0
 
 ### **requestPlaybackProfileUpdate()** as **Void**
 
-Request that the media player call [ContentIterator.getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function)
+请求媒体播放器调用 [ContentIterator.getPlaybackProfile()](/connect-iq/api-docs/Toybox/Media/ContentIterator/#getPlaybackProfile-instance_function)
 
 Since:
 
@@ -834,7 +834,7 @@ API 级别 3.0.0
 
 ### **setAlbumArt(albumArt as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or **Null**)** as **Void**
 
-Set the album art for the currently playing song
+设置当前播放歌曲的专辑封面
 
 注意：
 
@@ -844,7 +844,7 @@ Parameters:
 
 - albumArt — ([WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/), [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/)) —
 
-    The album art to display. If `null` then the system's default album art will be displayed.
+    要显示的专辑封面。如果为 `null`，则会显示系统默认的专辑封面。
 
 
 Since:
@@ -892,7 +892,7 @@ API 级别 3.0.0
 
 ### **stopPlayback()** as **Void**
 
-Stops playback if it was initiated by the app. If playback was not initiated by the app, calling stopPlayback() will do nothing.
+如果播放由应用发起，则停止播放。如果播放不是由应用发起的，调用 stopPlayback() 将不会执行任何操作。
 
 Since:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents the wind and track simulation training mode settings on the fitness equipment. Fields may return `null` so you should `null` check values before using them. Values that have not yet been set will return invalid.
+表示健身器材上的风力和轨迹模拟训练模式设置。字段可能返回 `null`，因此使用前应检查值是否为 `null`。尚未设置的值将返回无效值。
 
 Since:
 

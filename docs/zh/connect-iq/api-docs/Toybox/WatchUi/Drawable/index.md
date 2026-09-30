@@ -231,11 +231,11 @@ Parameters:
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The absolute, on-screen x-coordinate for the Drawable object
+        Drawable 对象在屏幕上的绝对 x 坐标
 
 - :locY — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-        The absolute, on-screen y-coordinate for the Drawable object
+        Drawable 对象在屏幕上的绝对 y 坐标
 
 - :width — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

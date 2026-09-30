@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Receive events on a Watch Face.
+在表盘上接收事件。
 
 ## 另见：
 

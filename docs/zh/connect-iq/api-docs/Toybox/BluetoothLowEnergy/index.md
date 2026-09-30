@@ -207,7 +207,7 @@ API 级别 3.1.0
 
 |
 
-Read Request Failed
+读取请求失败
 
 |
 | STATUS\_WRITE\_FAIL | 14 |
@@ -252,7 +252,7 @@ API 级别 4.2.5
 
 |
 
-Peer reports that its keys have been lost.
+对等方报告其密钥已丢失。
 
 |
 | STATUS\_ENCRYPTION\_SECURITY\_INSUFFICIENT | 102 |
@@ -261,7 +261,7 @@ API 级别 4.2.5
 
 |
 
-Peer Attempted to Reduce Key Security Level from a previous bond
+对等方尝试将密钥安全级别从先前的绑定状态降低
 
 |
 
@@ -382,7 +382,7 @@ API 级别 5.1.0
 
 - [**cccdUuid**](#cccdUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    Retrieves the CCCD Uuid.
+    获取 CCCD Uuid。
 
 - [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function)() as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -394,7 +394,7 @@ API 级别 5.1.0
 
 - [**getPairedDevices**](#getPairedDevices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    Retrieve an Iterator of all currently paired devices accessible to the Application.
+    获取应用程序可访问的所有当前已配对设备的迭代器。
 
 - [**longToUuid**](#longToUuid-instance_function)(mostSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/), leastSigBits as [Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)) as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -406,7 +406,7 @@ API 级别 5.1.0
 
 - [**registerProfile**](#registerProfile-instance_function)(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> }) as **Void**
 
-    Registers a Bluetooth Profile Definition Call this function to define all of the Profiles that will be used in the application.
+    注册 Bluetooth Profile 定义。调用此函数可定义应用程序中将使用的所有 Profile。
 
 - [**setConnectionStrategy**](#setConnectionStrategy-instance_function)(connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ConnectionStrategy-module)) as **Void**
 
@@ -414,7 +414,7 @@ API 级别 5.1.0
 
 - [**setDelegate**](#setDelegate-instance_function)(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/)) as **Void**
 
-    Sets the Delegate Handler for Bluetooth Asynchronous Callbacks An application can only have 1 registered delegate.
+    设置 Bluetooth 异步回调的委托处理器 一个应用只能注册 1 个委托。
 
 - [**setScanState**](#setScanState-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module)) as **Void**
 
@@ -433,7 +433,7 @@ API 级别 5.1.0
 
 ### **cccdUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-Retrieves the CCCD Uuid
+获取 CCCD Uuid
 
 Returns:
 
@@ -556,7 +556,7 @@ API 级别 4.2.5
 
 ### **getPairedDevices()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-Retrieve an Iterator of all currently paired devices accessible to the Application
+获取应用程序可访问的所有当前已配对设备的迭代器
 
 Returns:
 
@@ -635,19 +635,19 @@ Throws:
 
 ### **registerProfile(profile as { :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :characteristics as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;{ :uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/), :descriptors as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)\> }> })** as **Void**
 
-Registers a Bluetooth Profile Definition
+注册 Bluetooth Profile 定义
 
 调用此函数定义应用中将使用的所有 Profile。执行 GATT 操作时，只有已注册的特征和描述符可用
 
 When the operation is completed, [onProfileRegister()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onProfileRegister-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) with the UUID and a Status.
 
-Registration can fail if too many profiles are registered, the current limit is 3.
+如果注册的 Profile 太多，注册可能会失败；当前限制为 3 个。
 
 Parameters:
 
 - profile — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    Profile Definition. Defines the expected Profile UUID, Profile Characteristics and Characteristic Descriptors. Cannot be `null`.
+    Profile 定义。定义预期的 Profile UUID、Profile 特征和特征描述符。不能为 `null`。
 
 
 Example:
@@ -703,7 +703,7 @@ API 级别 5.1.0
 
 ### **setDelegate(delegate as [BluetoothLowEnergy.BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/))** as **Void**
 
-Sets the Delegate Handler for Bluetooth Asynchronous Callbacks
+设置 Bluetooth 异步回调的委托处理器
 
 一个应用只能注册一个委托。后续调用此函数将覆盖当前委托
 
@@ -734,7 +734,7 @@ API 级别 3.1.0
 
 ### **setScanState(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module))** as **Void**
 
-Starts the BLE Scanning Operations
+开始 BLE 扫描操作
 
 Once scanning is started [onScanResults()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onScanResults-instance_function) will be called on the registered [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) as Advertising data is received.
 
@@ -750,7 +750,7 @@ Parameters:
 
 - str — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    String Representation of the Uuid formatted as "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+    Uuid 的字符串表示，格式为 "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 
 
 Returns:

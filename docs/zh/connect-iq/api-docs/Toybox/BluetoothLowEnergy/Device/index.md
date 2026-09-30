@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Represents a Bluetooth Low Energy Device that has been paired with the system.
+表示一个已与系统配对的 Bluetooth Low Energy 设备。
 
 This class cannot be instantiated, access to paired system devices is done through the use of [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function) or by calling [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function) after receiving a [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) for a device
 
@@ -28,11 +28,11 @@ API 级别 3.1.0
 
 - [**getName**](#getName-instance_function)() as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    Retrieves the Name of the sensor according to the device name that is available in the GAP Service.
+    根据 GAP Service 中可用的设备名称获取传感器名称。
 
 - [**getService**](#getService-instance_function)(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) or **Null**
 
-    Retrieves the service with a specified UUID If access to a specific service is required, use this function to directly access the service based on a UUID.
+    获取具有指定 UUID 的服务。如果需要访问特定服务，请使用此函数根据 UUID 直接访问该服务。
 
 - [**getServices**](#getServices-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
@@ -48,14 +48,14 @@ API 级别 3.1.0
 
 - [**requestBond**](#requestBond-instance_function)() as **Void**
 
-    Requests that a bond is formed with the Device If the device is not currently bonded this will initiate the bonding procedure.
+    请求与设备建立绑定。如果设备当前未绑定，则会启动绑定过程。
 
 
 ## 实例方法详情
 
 ### **getName()** as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-Retrieves the Name of the sensor according to the device name that is available in the GAP Service
+根据 GAP Service 中可用的设备名称获取传感器名称
 
 Returns:
 
@@ -70,7 +70,7 @@ API 级别 3.1.0
 
 ### **getService(uuid as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/))** as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) or **Null**
 
-Retrieves the service with a specified UUID
+获取具有指定 UUID 的服务
 
 如果需要访问特定服务，请使用此函数根据 UUID 直接访问该服务。
 
@@ -214,7 +214,7 @@ API 级别 3.1.0
 
 ### **requestBond()** as **Void**
 
-Requests that a bond is formed with the Device
+请求与设备建立绑定
 
 如果设备当前尚未配对，则会启动配对过程。
 

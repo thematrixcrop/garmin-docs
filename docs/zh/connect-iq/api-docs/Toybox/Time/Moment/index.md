@@ -330,7 +330,7 @@ API 级别 1.0.0
 
 注意：
 
-Subtracting a Duration from a Moment was not supported until ConnectIQ 3.0.0. If backward compatibility is a concern, it may be best to add a negative Duration instead.
+直到 ConnectIQ 3.0.0 才支持从 Moment 中减去 Duration。如果需要考虑向后兼容性，最好改为添加负的 Duration。
 
 Parameters:
 

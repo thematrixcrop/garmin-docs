@@ -269,7 +269,7 @@ API 级别 5.1.1
 
 |
 
-The action menu key
+操作菜单键
 
 |
 
@@ -487,7 +487,7 @@ API 级别 3.3.0
 
 |
 
-Start of a screen drag
+屏幕拖动开始
 
 |
 | DRAG\_TYPE\_CONTINUE | 1 |
@@ -505,7 +505,7 @@ API 级别 3.3.0
 
 |
 
-Stop of a screen drag
+屏幕拖动结束
 
 |
 
@@ -547,7 +547,7 @@ API 级别 4.1.2
 
 ### AnalogClockState
 
-Set the state for analog clock hands
+设置模拟时钟指针的状态
 
 Since:
 
@@ -560,7 +560,7 @@ API 级别 3.3.0
 
 |
 
-Set the clock hands to resting position
+将时钟指针设置为静止位置
 
 |
 | ANALOG\_CLOCK\_STATE\_SYSTEM\_TIME | 1 |
@@ -569,7 +569,7 @@ API 级别 3.3.0
 
 |
 
-Set the clock hands to system time
+将时钟指针设置为系统时间
 
 |
 | ANALOG\_CLOCK\_STATE\_HOLDING | 2 |
@@ -578,7 +578,7 @@ API 级别 3.3.0
 
 |
 
-Set the clock hands to the specified position
+将时钟指针设置为指定位置
 
 |
 
@@ -853,7 +853,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locY property to this to align it to the top edge of the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locY 属性设置为此值，使其与设备上下文的顶边缘对齐 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_VALIGN\_BOTTOM | \-0x7FFFFFFE |
@@ -862,7 +862,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locY property to this to align it to the bottom edge of the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locY 属性设置为此值，使其与设备上下文的底边缘对齐 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_VALIGN\_CENTER | \-0x7FFFFFFD |
@@ -871,7 +871,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locY property to this to center it vertically in the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locY 属性设置为此值，使其在设备上下文中垂直居中 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_VALIGN\_START | \-0x7FFFFFFC |
@@ -880,7 +880,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locY property to this to make it equal to its parent's locY property.
+将 Drawable 对象的 locY 属性设置为此值，使其等于其父对象的 locY 属性。
 
 |
 
@@ -897,7 +897,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locX property to this to align it along the left edge of the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locX 属性设置为此值，使其沿设备上下文的左边缘对齐 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_HALIGN\_RIGHT | \-0x7FFFFFFE |
@@ -906,7 +906,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locX property to this to align it along the right edge of the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locX 属性设置为此值，使其沿设备上下文的右边缘对齐 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_HALIGN\_CENTER | \-0x7FFFFFFD |
@@ -915,7 +915,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locX property to this to center it horizontally in the device context ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)).
+将 Drawable 对象的 locX 属性设置为此值，使其在设备上下文中水平居中 ([Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/))。
 
 |
 | LAYOUT\_HALIGN\_START | \-0x7FFFFFFC |
@@ -924,7 +924,7 @@ API 级别 1.2.0
 
 |
 
-Set a Drawable object's locX property to this to make it equal to its parent's locX property.
+将 Drawable 对象的 locX 属性设置为此值，使其等于其父对象的 locX 属性。
 
 |
 
@@ -1062,15 +1062,15 @@ API 级别 3.4.2
 
 - [**showActionMenu**](#showActionMenu-instance_function)(menu as [WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/), delegate as [WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/)) as **Void**
 
-    Push an action menu to the display.
+    向显示屏推送操作菜单。
 
 - [**showToast**](#showToast-instance_function)(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) } or **Null**) as **Void**
 
-    Push a toast notification to the display.
+    向显示屏推送 Toast 通知。
 
 - [**startUserReview**](#startUserReview-instance_function)(token as [WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/)) as **Void**
 
-    Start the app review UI flow.
+    启动应用评价 UI 流程。
 
 - [**switchToView**](#switchToView-instance_function)(view as [WatchUi.Views](/connect-iq/api-docs/Toybox/WatchUi/#Views-named_type), delegate as [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null**, transition as [WatchUi.SlideType](/connect-iq/api-docs/Toybox/WatchUi/#SlideType-module)) as **Void**
 
@@ -1176,7 +1176,7 @@ API 级别 1.0.0
 
 取消由 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 启动的动画
 
-Stop all animations that were started with [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function). This will leave all animations at their final frame, as if [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) ran to completion.
+停止所有通过 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 启动的动画。这会使所有动画停留在最终帧，就像 [WatchUi.animate()](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 已运行完成一样。
 
 另见：
 
@@ -1605,7 +1605,7 @@ API 级别 1.0.0
 
 ### **showActionMenu(menu as [WatchUi.ActionMenu](/connect-iq/api-docs/Toybox/WatchUi/ActionMenu/), delegate as [WatchUi.ActionMenuDelegate](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuDelegate/))** as **Void**
 
-Push an action menu to the display
+向显示屏推送操作菜单
 
 注意：
 
@@ -1730,7 +1730,7 @@ API 级别 3.4.0
 
 ### **showToast(text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), options as { :icon as [WatchUi.BitmapResource](/connect-iq/api-docs/Toybox/WatchUi/BitmapResource/) or [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) } or **Null**)** as **Void**
 
-Push a toast notification to the display
+向显示屏推送 Toast 通知
 
 Parameters:
 
@@ -1863,7 +1863,7 @@ API 级别 3.4.0
 
 ### **startUserReview(token as [WatchUi.ReviewResponseToken](/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken/))** as **Void**
 
-Start the app review UI flow
+启动应用评价 UI 流程
 
 Parameters:
 
@@ -1980,7 +1980,7 @@ Throws:
 
 注意：
 
-Prior to ConnectIQ 3.1, this method only supported switching to user-defined View objects, and would only accept InputDelegate or BehaviorDelegate objects as delegates for the given View.
+在 ConnectIQ 3.1 之前，此方法仅支持切换到用户定义的 View 对象，并且对于给定 View 的委托，仅接受 InputDelegate 或 BehaviorDelegate 对象。
 
 Parameters:
 

@@ -5,11 +5,11 @@ title: "Module: Toybox.ActivityMonitor"
 
 ## 概述
 
-The ActivityMonitor module contains the interface for Activity Monitoring data.
+ActivityMonitor 模块包含活动监测数据的接口。
 
 Example:
 
-Shows the use of HeartRateIterator, HeartRateSample, and Info
+显示 HeartRateIterator、HeartRateSample 和 Info 的使用
 
 ```
 using Toybox.ActivityMonitor;

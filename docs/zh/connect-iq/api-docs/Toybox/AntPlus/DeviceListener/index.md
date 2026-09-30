@@ -108,7 +108,7 @@ Parameters:
 
 - msg — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
-    The ANT message
+    ANT 消息
 
 
 Since:

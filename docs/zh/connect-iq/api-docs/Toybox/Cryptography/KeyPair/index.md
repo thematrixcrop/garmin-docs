@@ -231,7 +231,7 @@ KeyPair 可以通过将已初始化的 [Key](/connect-iq/api-docs/Toybox/Cryptog
 
 注意：
 
-privateKey is expected to be in little-endian byte order.
+privateKey 预期采用小端字节序。
 
 Parameters:
 
@@ -241,7 +241,7 @@ Parameters:
 
 - :algorithm — ([Cryptography.KeyPairAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#KeyPairAlgorithm-module)) —
 
-        The algorithm to use as a [KEY\_PAIR\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) constant (required)
+        用作 [KEY\_PAIR\_\*](/connect-iq/api-docs/Toybox/Cryptography/#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-const) 常量的算法（必需）
 
 - :privateKey — ([Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) —
 

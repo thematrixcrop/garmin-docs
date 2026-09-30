@@ -5,7 +5,7 @@ title: "Module: Toybox.PersistedLocations"
 
 ## 概述
 
-Persisted locations allows the saving of a location (waypoint) to a device's location list. This feature is only available on devices that support waypoints.
+持久化位置允许将位置（航点）保存到设备的位置列表中。此功能仅适用于支持航点的设备。
 
 **此项已弃用**
 
@@ -172,7 +172,7 @@ API 级别 1.0.2
 
 - [**persistLocation**](#persistLocation-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/), options as { :name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null** } or **Null**) as **Void** deprecated
 
-    Save a location (waypoint) to the device's location list.
+    将位置（航点）保存到设备的位置列表中。
 
 
 ## 实例方法详情
@@ -183,7 +183,7 @@ API 级别 1.0.2
 
 此方法可能在 System 4 之后移除。
 
-Save a location (waypoint) to the device's location list
+将位置（航点）保存到设备的位置列表中
 
 Parameters:
 

@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-PickerDelegate responds to a Picker confirm or cancel.
+PickerDelegate 响应 Picker 的确认或取消操作。
 
 ## 另见：
 
@@ -29,7 +29,7 @@ PickerDelegate responds to a Picker confirm or cancel.
 
 注意：
 
-See the Picker sample distributed with the SDK for an example of the use of the PickerDelegate class
+请参阅 SDK 中随附的 Picker 示例，了解 PickerDelegate 类的使用示例
 
 Since:
 

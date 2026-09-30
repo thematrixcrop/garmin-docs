@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 The Position.Info class contains all of the information provided by the positioning system.
 
-Position Info can be retrieved on every call of [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) or it can be obtained on demand. Fields in this class may return `null` so should be checked for `null` values prior to use.
+Position Info 可在每次调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时获取，也可以按需获取。此类中的字段可能返回 `null`，因此使用前应检查 `null` 值。
 
 Since:
 
@@ -299,7 +299,7 @@ Returns:
 
 水平速度，单位为米每秒 (mps)。
 
-Speed is derived from the most accurate source in the following order:
+速度按照以下顺序从最准确的来源得出：
 
 1. GPS
 

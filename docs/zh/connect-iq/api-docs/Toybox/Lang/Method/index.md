@@ -133,7 +133,7 @@ Parameters:
 
 - aMethod — ([Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)) —
 
-    Symbol of class method
+    类方法的符号
 
 
 Since:

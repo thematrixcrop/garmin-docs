@@ -18,7 +18,7 @@ Toybox.AntPlus.Device
 
 ## 概述
 
-Represents a Fitness Equipment Device instance.
+表示一个健身器材设备实例。
 
 Example:
 
@@ -100,7 +100,7 @@ API 级别 2.4.0
 
 - [**setTrainerMode**](#setTrainerMode-instance_function)(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
 
-    Set the trainer mode.
+    设置训练器模式。
 
 
 ## 实例方法详情
@@ -231,7 +231,7 @@ API 级别 2.4.0
 
 ### **setTrainerMode(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module))** as **Void**
 
-Set the trainer mode. You should check the capable modes of the fitness equipment, as the command will be ignored by the fitness equipment if the mode is not supported.
+设置训练器模式。应检查健身设备支持的模式，因为如果不支持该模式，健身设备将忽略此命令。
 
 Parameters:
 

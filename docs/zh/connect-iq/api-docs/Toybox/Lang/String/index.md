@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-String objects represent a sequence of characters, and provide methods for string operations.
+String 对象表示字符序列，并提供字符串操作方法。
 
 Since:
 
@@ -154,7 +154,7 @@ Parameters:
 
 - string — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    String to find
+    要查找的字符串
 
 
 Example:
@@ -211,7 +211,7 @@ API 级别 1.0.0
 
 注意：
 
-Starting with 3.3.2, passing null for `startIndex` sets it to the start of the string and passing null for `endIndex` sets it to the end of the string. Passing in a negative number for either `startIndex` or `endIndex` offsets it from the end of the string.
+从 3.3.2 开始，为 `startIndex` 传入 null 会将其设置为字符串开头，为 `endIndex` 传入 null 会将其设置为字符串末尾。为 `startIndex` 或 `endIndex` 传入负数会使其从字符串末尾开始偏移。
 
 Parameters:
 

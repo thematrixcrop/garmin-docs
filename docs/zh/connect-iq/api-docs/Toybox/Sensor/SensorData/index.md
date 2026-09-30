@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 Example:
 
-Setting up an accel data callback
+设置加速度数据回调
 
 ```
 using Toybox.Sensor;

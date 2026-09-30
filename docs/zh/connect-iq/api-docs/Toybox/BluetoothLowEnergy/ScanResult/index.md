@@ -176,7 +176,7 @@ Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    Raw bytes that were received in the advertising packet
+    广告数据包中接收到的原始字节
 
 
 Since:
@@ -202,20 +202,20 @@ API 级别 3.1.0
 
 获取特定 UUID 的服务数据
 
-Service data is decoded according to the BLE Core Specification V4.0 Volume 3 Part C Section 18.10
+服务数据根据 BLE 核心规范 V4.0 第 3 卷 C 部分第 18.10 节进行解码
 
 Parameters:
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
-    Service UUID to search for
+    要搜索的服务 UUID
 
 
 Returns:
 
 - [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) —
 
-    Service Data for a specific UUID.
+    特定 UUID 的服务数据。
 
 
 Since:
