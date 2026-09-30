@@ -21,44 +21,44 @@ Monkey C 通过 [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Co
 [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 提供了向 Web 服务端点（endpoint）发送 JSON REST 请求的高层 API。调用是异步的，需要回调来接收操作完成后的数据。
 
 ```typescript
-// It is common for developers to wrap a makeWebRequest() call in a function
-// as displayed below. The function defines the variables for each of the
-// necessary arguments in a Communications.makeWebRequest() call, then passes
-// these variables as the arguments. This allows for a clean layout of your web
-// request and expandability.
+// 开发人员通常会将 makeWebRequest() 调用封装在函数中，
+// 如下所示。该函数会为 Communications.makeWebRequest() 调用
+// 所需的每个参数定义变量，然后将这些变量作为参数传入。
+// 这样可以让网页请求的布局更清晰，
+// 也更便于扩展。
 import Toybox.System;
 import Toybox.Communications;
 import Toybox.Lang;
 
 class JsonTransaction {
-    // set up the response callback function
+    // 设置响应回调函数
     function onReceive(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
-            System.println("Request Successful");                   // print success
+            System.println("Request Successful");                   // 打印成功信息
         } else {
-            System.println("Response: " + responseCode);            // print response code
+            System.println("Response: " + responseCode);            // 打印响应代码
         };
 
     };
 
     function makeRequest() as Void {
-        var url = "https://www.garmin.com";                         // set the url
+        var url = "https://www.garmin.com";                         // 设置 URL
 
-        var params = {                                              // set the parameters
+        var params = {                                              // 设置参数
             "definedParams" => "123456789abcdefg"
         };
 
-        var options = {                                             // set the options
-            :method => Communications.HTTP_REQUEST_METHOD_GET,      // set HTTP method
-            :headers => {                                           // set headers
+        var options = {                                             // 设置选项
+            :method => Communications.HTTP_REQUEST_METHOD_GET,      // 设置 HTTP 方法
+            :headers => {                                           // 设置请求头
             "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED},
-            // set response type
+            // 设置响应类型
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
         };
 
-        var responseCallback = method(:onReceive);                  // set responseCallback to
-        // onReceive() method
-        // Make the Communications.makeWebRequest() call
+        var responseCallback = method(:onReceive);                  // 将 responseCallback 设置为
+        // onReceive() 方法
+        // 调用 Communications.makeWebRequest()
         Communications.makeWebRequest(url, params, options, method(:onReceive));
     }
 }
@@ -75,7 +75,7 @@ class ImageTransaction {
     var image as BitmapResource?;
     var responseCode as Number?;
 
-    // Set up the responseCallback function to return an image or null
+    // 设置 responseCallback 函数，使其返回图像或 null
     function responseCallback(responseCode as Number, data as BitmapResource?) {
         responseCode = responseCode;
         if (responseCode == 200) {
@@ -85,29 +85,29 @@ class ImageTransaction {
         }
     }
 
-    // wrap the request in a function
+    // 封装请求的函数
     function makeRequest() as Void {
-        // set the image url
+        // 设置图像 URL
         var url = "http://www.garmin.com/image-path";
-        // set the parameters
+        // 设置参数
         var parameters = null;
-        // set the options
+        // 设置选项
         var options = {
-            // set the palette
+            // 设置调色板
             :palette => [ Gfx.COLOR_ORANGE,
                           Gfx.COLOR_DK_BLUE,
                           Gfx.COLOR_BLUE,
                           Gfx.COLOR_BLACK
                         ],
-            // set the max width
+            // 设置最大宽度
             :maxWidth => 100,
-            // set the max height
+            // 设置最大高度
             :maxHeight => 100,
-            // set the dithering
+            // 设置抖动
             :dithering => Communications.IMAGE_DITHERING_NONE
         };
 
-        // Make the image request
+        // 发起图像请求
         Communications.makeImageRequest(url, parameters, options, method(:responseCallback));
     }
 }
