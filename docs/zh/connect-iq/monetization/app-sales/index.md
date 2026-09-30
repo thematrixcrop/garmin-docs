@@ -5,11 +5,11 @@ title: "App Sales"
 
 在申请获得批准后,您正式成为商家,可以开始列出出出售的应用程序.为了列出您的应用程序,请从开发者仪表板中选择上传应用程序. 当被问及您的应用程序是否获利时,请通过Garmin CIQ商家帐户选择是的.从下拉菜单中选择价格.
 
-## 支持ed Products
+## 受支持的产品
 
 当你列出出出售的应用程序时,它只会在以下产品上提供:
 
-| Category | Products |
+| 类别 | 产品 |
 | --- | --- |
 | API 级别 6.0 |极端® 550,极端® 840 / 840 太阳能,极端® 850,极端® MTB,终端TM 3,先驱® 170,先驱® 170 音乐,先驱® 570 42mm,先驱® 570 47mm,先驱® 70,先驱® 970, fēnix® 8 43mm, fēnix® 8 47mm / 51mm, fēnix® 8 Pro 47mm / 51mm / 51mm / 微LED, fēnix® 8 Solar 47mm, fēnix® 8 Solar 51mm, fēnix® 9 43mm, fēnix® 9 47mm / 51mm, fēnix® 47mm / 47mm, fēnix® 47mm / 47mm / 47mm, fēnix® 43mm, fēnix® 47mm / 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix 45mm|
 | API 级别 5.2 |D2TM Mach 1, D2TM Mach 1 Pro, D2TM Mach 2, EnduroTM 2, epixTM (Gen 2), epixTM Pro (Gen 2) 42mm, epixTM Pro (Gen 2) 47mm, epixTM Pro (Gen 2) 51mm, Forerunner® 165, Forerunner® 165音乐, Forerunner® 255, Forerunner® 255音乐, Forerunner® 255s, Forerunner® 255s音乐, Forerunner® 265, Forerunner® 265s, Forerunner® 955 / Solar, Forerunner® 965, fēnix® 7, fēnix® 7 Pro, fēnix® 7 Pro - Solar Edition (无 Wi-Fi), fēnix® 7S, fēnix® 7S, fēnix® 7 Pro, 7 Prox® 7X, fēnix® 7Q, fēnix / 7Q, fenix / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q /|
@@ -19,11 +19,11 @@ title: "App Sales"
 
 **注意:**本列表可能会发生变化.
 
-## 支持ed Countries for Users
+## 用户所在的受支持国家
 
 只有以下国家的用户才能购买货币化的应用程序:
 
-| Region | Countries |
+| 地区 | 国家/地区 |
 | --- | --- |
 | Americas |阿根廷,阿鲁巴,巴哈马,巴巴多斯,贝利兹,伯慕大,玻利维亚,布韦特岛,巴西,加拿大,开曼群岛,哥伦比亚,哥斯达黎加,多米尼加共和国,厄瓜多尔,萨尔瓦多,福克兰群岛 (马尔维纳斯),法国,圭亚那,格陵兰,瓜地马拉,瓜地马拉,圭亚那,洪都拉斯,牙买加,马丁尼克,墨西哥,蒙塞拉特,尼加拉瓜,巴拿马,巴拉圭,秘鲁,波多黎各,圣基茨和内维斯,圣卢西亚,南格鲁吉亚和南方三星群岛,苏里纳姆,特里纳德和托巴哥,美国,乌拉圭,维尔京群岛 (英国) 和维尔京群岛 (美国)|
 | Africa |阿尔及利亚,安哥拉,本尼,博茨瓦纳,英国印度洋领土,布基纳法索,布隆迪,喀麦隆,喀布尔特维尔,中非共和国,查德,科莫罗斯,刚果,象牙海岸,吉布提,埃及,赤道几内亚,厄立特里亚,埃塞俄比亚,法国南方领土,加本,冈比亚,加纳,几内亚,基尼,莱索托,利比利亚,马拉维,马拉维,马里塔尼亚,毛里求斯,马约特,摩洛哥,莫桑比克,纳米比亚,尼日尔,尼日利亚,伦比亚,卢旺达,圣赫莱纳,圣托马尼和普林辛普,塞内加尔,塞舌尔,塞拉利昂,利比亚国家,斯瓦西兰,坦桑尼亚联合共和国,东哥,突尼斯,乌干达,西班牙和津巴布韦|
@@ -55,7 +55,7 @@ title: "App Sales"
 
 应用程序上传需要进行审查,以验证它符合Connect IQTM开发商许可协议中列出的条款和条件.如果您为已经批准的应用程序设定价格,则该应用程序暂时被从商店中删除,以便再次进行审查.应用程序被批准后,用户收到一个信息,说明他们必须购买该应用程序才能再次使用.
 
-如果您正在从不同的货币化系统转换到Connect IQ货币化系统,您可以使用[this marketing form](https://www.garmin.com/en-US/forms/ciq-dev-marketing-request/)请求促销代码来迁移已经购买应用程序的用户.这些一次性使用代码允许现有用户免费购买应用程序.您负责这些代码的分配.
+如果您正在从其他货币化系统迁移到 Connect IQ 货币化系统，可以使用[此营销表单](https://www.garmin.com/en-US/forms/ciq-dev-marketing-request/)申请促销代码，以便迁移已购买应用的用户。这些一次性代码允许现有用户免费购买应用。代码的分发由您负责。
 
 ## 分成
 

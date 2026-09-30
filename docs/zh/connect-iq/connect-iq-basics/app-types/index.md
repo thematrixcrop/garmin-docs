@@ -155,7 +155,7 @@ Fenix 6 将可查看的信息从页面轮介绍转移到列表介绍.每个项�
 
 当你启动小工具时,你可以检查`DeviceInfo`是否定义了`isGlanceModeEnabled`.如果是这样,你也可以确定值是什么.如果启用了视觉模式,你可以直接启动到小工具的互动部分.否则你应该启动基视图.
 
-See the [Glance](/connect-iq/core-topics/glances/#glances) section 更多信息.
+更多信息请参阅[速览](/connect-iq/core-topics/glances/#glances)一节。
 
 ###设计一个小工具
 
