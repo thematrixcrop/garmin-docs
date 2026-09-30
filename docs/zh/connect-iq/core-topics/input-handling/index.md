@@ -26,7 +26,7 @@ title: "Input Handling"
 | [InputDelegate.onSwipe()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSwipe-instance_function) |这是在触摸屏被滑动时发送| 1.0.0 |
 | [InputDelegate.onSelectable()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onSelectable-instance_function) |在[WatchUi.Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/)的状态发生变化时,| 2.1.0 |
 
-To process input events, extend the [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) and override the appropriate handler operation. If you return `true` in the handler, 系统将 know the event has been handled. Returning `false` will tell the system to handle the input.
+要处理输入事件，请扩展 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)，并重写适当的处理函数。如果处理函数返回 `true`，系统会认为该事件已处理；返回 `false` 则会告知系统继续处理输入。
 
 查看与SDK共享的`Input`样本应用.
 
@@ -77,7 +77,7 @@ Garmin制作产品有目的,而这个目的可以改变一个产品线的设计.
 
 像其母语[WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)一样,选择式和按都支持布局系统.选择式和按XML资源由状态ID和可选参数列表组成.创建XML选择式,在XML资源文件中定义`<selectable>`:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
 | `id` |选项的身份证|任何以字符开始的字符串| NA |  |
 | `x` |选择区域左上角的X坐标|像素值,使用'%',`center`,`left`,`right`或`start`的相对位置| N/A | 必需 |
@@ -87,16 +87,16 @@ Garmin制作产品有目的,而这个目的可以改变一个产品线的设计.
 
 `<button>`资源扩大了`<selectable>`的定义,并添加了以下内容:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
 | `behavior` |在视图注册的行为代表中存在的方法| 方法符号 | `null` | 可选 / 参数 |
 | `background` |按的背景颜色|颜色常数或形式`0xRRGGBB`的24位整数| `Graphics.COLOR_TRANSPARENT` | 可选 / 参数 |
 
 `<selectable>`和`<button>`标签都使用`<state>`作为儿童节点来定义其构建状态.每个状态是可选定义的,但定义为以下:
 
-| Attribute | Definition | 有效值 |默认值| 备注 |
+| 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |按/可选择的状态身份证| `stateDefault`, `stateHighlighted`, `stateSelected`, or `stateDisabled` | N/A | 必需 |
+| `id` | 按钮/可选择项的状态标识 | `stateDefault`、`stateHighlighted`、`stateSelected` 或 `stateDisabled` | N/A | 必需 |
 | `bitmap` |在选项/按来源中绘制的布局中的位图资源|`WatchUi.Bitmap`对象| N/A |要求或必须指定`color`或`drawable`|
 | `color` |在可选择/按区域上应用颜色填充|颜色常数或形式`0xRRGGBB`的24位整数| `Graphics.COLOR_TRANSPARENT` |要求或必须指定`bitmap`或`drawable`|
 | `drawable` |在选项/按来源中绘制的布局中可绘制的对象|`WatchUi.Drawable`对象| N/A |要求或必须指定`bitmap`或`color`|
