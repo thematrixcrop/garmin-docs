@@ -33,12 +33,12 @@ title: "如何使用自定义字体？"
 要在时间背后显示天际线，请先绘制天际线，再将字体背景色设为透明，最后在天际线上绘制时间：
 
 ```
-//draw skyline here
+//在这里绘制天际线
 ..
-//load custom font
+//加载自定义字体
 var font = Ui.loadResource( Rez.Fonts.Sunset );
 
-//set the time's color and draw it
+//设置时间颜色并绘制时间
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -76,16 +76,16 @@ dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ![](/connect-iq/resources/faq/normal_and_reflected.jpg)
 
 ```
-//load custom font for the normal time
+//加载普通时间的自定义字体
 var normalFont = Ui.loadResource( Rez.Fonts.Normal );
-//load custom font for the reflected time
+//加载反射时间的自定义字体
 var reflectedFont = Ui.loadResource( Rez.Fonts.Reflected );
 
-//set the normal time's color and draw it
+//设置普通时间的颜色并绘制
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, normalFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//set the reflected time's color and draw it
+//设置反射时间的颜色并绘制
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(offsetX,offsetY, reflectedFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -107,16 +107,16 @@ Connect IQ 的自定义字体只能使用一种颜色。这是因为字体 PNG �
 上方蒙版是使用 BMFont 导出的原始字体。下方蒙版是上方蒙版的副本，我将颜色反转，使它只绘制指定颜色的内部区域。
 
 ```
-//load custom font for the border
+//加载边框的自定义字体
 var borderFont = Ui.loadResource( Rez.Fonts.Border );
-//load custom font for the inner fill
+//加载内部填充的自定义字体
 var innerFillFont = Ui.loadResource( Rez.Fonts.InnerFill );
 
-//set the time's border color and draw it
+//设置时间边框颜色并绘制
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, borderFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//set the time's inner fill color and draw it
+//设置时间内部填充颜色并绘制
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, innerFillFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
@@ -137,19 +137,19 @@ dc.drawText(timeX,timeY, innerFillFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 字体的旋转角度由您自行决定，可以在图形编辑器中尝试不同的角度。为了确定下一个字符的绘制位置，可以维护一个坐标数组。使用等宽字体更容易管理和绘制对角文字，因为所有字符都可以使用相同的坐标间距，不会在相邻字符之间产生大小不同的空隙。
 
 ```typescript
-//predefined coordinates based on diagonal angle and orientation
+//基于对角线角度和方向预定义坐标
 var ascCoords = [[21,143],[42,129],[62,119],[73,108],[93,95]];
 var descCoords = [[21,34],[42,48],[62,58],[73,69],[93,82]];
 
-//set background color transparent to prevent clipping of characters
+//将背景色设为透明以防止字符被裁剪
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
-//string to be drawn
+//要绘制的字符串
 var time = clock.hour.format("d") + ":" + clock.min.format("d");
 
 var coords, font;
 
-//determine the font and coordinates to use based on orientation
+//根据方向确定要使用的字体和坐标
 if(Orientation == "Descending"){
         coords = descCoords;
         font = Ui.loadResource(Rez.Fonts.fontDesc);
@@ -159,7 +159,7 @@ else{
         font = Ui.loadResource(Rez.Fonts.fontAsc);
 }
 
-//draw each character individually
+//逐个绘制字符
 for( var i = 0; i < time.length(); i++ ) {
         var char = time.substring(i,i+1);
         dc.drawText(coords[0], coords[1], font, char, Gfx.TEXT_JUSTIFY_LEFT);
@@ -185,18 +185,18 @@ for( var i = 0; i < time.length(); i++ ) {
 5.  在所有内容上方绘制文字，然后编译并运行程序查看效果。
 
 ```typescript
-//load custom font
+//加载自定义字体
 var font = Ui.loadResource( Rez.Fonts.MyFont );
 
-//draw filled rectangle to represent text's color
+//绘制填充矩形来表示文本颜色
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
 dc.fillRectangle(rectX, rectY, width, height);
 
-//draw filled rectangle to represent water level
+//绘制填充矩形来表示水位
 dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLUE);
 dc.fillRectangle(effectX, effectY, width, effectHeight);
 
-//create and draw the clipping mask
+//创建并绘制裁剪蒙版
 dc.setColor(Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK);
 dc.drawText(timeX, timeY, font, timeString, Gfx.TEXT_JUSTIFY_CENTER);
 ```
