@@ -7,9 +7,9 @@ title: "Build Configuration"
 
 连接智商提供管理应用资源的一些方法:设备和家庭资格,林和构建排斥.
 
-## Device, Family, and 本地化 Qualifiers
+## 设备、系列和本地化限定符
 
-The simplest way to override resources is with device, family, and localization qualifiers, which are added to a resources folder by adding a hyphen (`-`) followed by a valid qualifier value. Let's take a look at an 示例：
+覆盖资源最简单的方法是使用设备、系列和本地化限定符：在 resources 文件夹名称后添加连字符（`-`）和有效的限定符值。下面来看一个示例：
 
 图1.图1:使用fēnix 5设备资源资格的项目
 
@@ -45,9 +45,9 @@ The simplest way to override resources is with device, family, and localization 
 
 具有更具体的资格的资源总是优先于更少的资格,因此在一个圆形的218px x218px设备上,任何包含在`resources-round-218x218`资源文件中的资源都会被使用,如果它们共享ID.此外,任何载有家庭资格的资源文件将总是转移到设备资格的资源文件.
 
-### 本地化 Qualifiers
+### 本地化限定符
 
-本地化 qualifiers are a way to specify language-specific string resources, and are specified as an [ISO 639–2 language code](https://www.loc.gov/standards/iso639-2/php/code_list.php). These qualifiers may be combined with either device or family qualifiers, and are always specified last in the qualifier naming scheme. For 示例：
+本地化限定符用于指定特定语言的字符串资源，其值采用 [ISO 639-2 语言代码](https://www.loc.gov/standards/iso639-2/php/code_list.php)。这些限定符可以与设备或系列限定符组合，并且在限定符命名方案中始终放在最后。例如：
 
 -`resources-fre`:为所有设备提供法语语言特定的字符串资源
 
