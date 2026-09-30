@@ -3,15 +3,15 @@ title: "Error Reporting Application (ERA)"
 ---
 # 错误报告应用程序（ERA）
 
-The ERA tool 可用于 view your app's crashes after it has been released on the store. If your app crashes on a device the error report will be collected and aggregated by the ERA server. These reports can be viewed for up to 30 days after a crash occurs. This tool is available in the bin folder of the SDK.
+ERA 工具可用于查看应用程序发布到商店后的崩溃情况。如果应用程序在设备上崩溃，错误报告会由 ERA 服务器收集并汇总。崩溃发生后，您最多可以查看这些报告 30 天。该工具位于 SDK 的 bin 文件夹中。
 
 ## 入门
 
-要启动图形ERA工具,要么从视觉工作室代码的命令中运行*Monkey C:Start ERA Viewer*命令,要么使用[Command Line](#Command-Line).第一次运行工具时,会出现*登录提示*窗口,要求您登录开发者帐户.一旦您完成登录过程,应用程序列表将下载,应用程序选择列表将填满.
+要启动图形 ERA 工具，可以在 Visual Studio Code 的命令面板中运行 *Monkey C:Start ERA Viewer* 命令，或者使用[命令行](#Command-Line)。第一次运行工具时会出现*登录提示*窗口，要求您登录开发者账户。完成登录后，应用程序列表会下载，应用程序选择列表也会填充。
 
 ### 命令行
 
-您可以从命令行启动 Graphical ERA 工具,只需运行`java -jar era.jar`在当前SDK的**bin**文件中.
+您可以从命令行启动图形 ERA 工具，只需在当前 SDK 的 **bin** 文件夹中运行`java -jar era.jar`。
 
 ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通过运行您当前 SDK 的 **bin**文件内的`era`命令. 这将在 JSON 格式中输出给定的应用程序的崩.请注意,在上述方法中的任何一种方式中首次启动ERA工具时,您可能会被要求登录您的开发人员帐户,如果您以前没有这样做.
 
@@ -19,7 +19,7 @@ ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通�
 > era [-a <arg>]
 ```
 
-| Argument | Definition |
+| 参数 | 定义 |
 | --- | --- |
 | `-a <arg>` |应用程序将 UUID 检索到  的故障|
 | `-h` | 输出帮助文本 |
@@ -32,9 +32,9 @@ ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通�
 
 | 字体样式 | 应用状态 | 可查看的崩溃 |
 | --- | --- | --- |
-| Normal | 已发布的应用 | Yes |
-| Gold | Beta 应用 | Yes |
-| Strikethrough |应用程序隐藏| No |
+| Normal | 已发布的应用 | 是 |
+| Gold | Beta 应用 | 是 |
+| Strikethrough | 应用程序隐藏 | 否 |
 
 在此窗口中,您可以重新排列应用程序并改变应用程序的设置.为了重新排列应用程序,单击应用程序并单击****或****按.该窗口中的应用程序的排列反映在崩盘报告视图中的应用程序选择框中.为了更改应用程序的设置,请选择应用程序在列表中,单击**i**按.
 
@@ -46,7 +46,7 @@ ERA工具还可以直接从命令行中获取单个应用程序的崩报告,通�
 
 ![](/connect-iq/resources/programmers-guide/era_report_view.png)
 
-The crash report view allows you to view all uploaded crash reports for an app in the last 30 days. At the top of this window you can select which app's crash reports to view. After selecting an app the latest reports will be downloaded from the server. In the left pane of the window a list of crash reports will be shown. Each unique crash will be identified by file name, function, and line number where the crash occurred. Choosing a crash in the left pane causes the details for the crash to be shown in the right pane. At the top of the right pane the **Fixed** checkbox 可用于 indicate that this particular crash has been fixed. The fixed status will persist across application runs and SDK upgrades. You can change the sort order of the crash reports you are viewing by changing the value in the **Sort By** selector.
+崩溃报告视图允许您查看应用程序最近 30 天内上传的所有崩溃报告。您可以在窗口顶部选择要查看其崩溃报告的应用程序。选择应用程序后，最新报告会从服务器下载。窗口左侧窗格会显示崩溃报告列表。每次独立的崩溃都会标明发生崩溃的文件名、函数和行号。在左侧窗格中选择某次崩溃后，右侧窗格会显示该崩溃的详细信息。右侧窗格顶部的 **Fixed** 复选框可用于标记该次崩溃是否已修复。修复状态会在应用程序运行和 SDK 升级之间保留。您可以通过更改 **Sort By** 选择器中的值来更改当前崩溃报告的排序顺序。
 
 | 字体样式 | 崩溃状态 |
 | --- | --- |
