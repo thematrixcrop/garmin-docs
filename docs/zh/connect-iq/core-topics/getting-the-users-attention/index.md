@@ -37,7 +37,7 @@ fēnix® 7X 是首款配备设备端手电筒的产品。设备端手电筒支�
 ```typescript
     function setFlashlightMode(mode as FlashlightMode, options as {
         :color as FlashlightColor,
-        :brightness as Number or FlashlightBrightness, // 0 to 100 or special value
+        :brightness as Number or FlashlightBrightness, // 0 到 100 或特殊值
         :strobeMode as FlashlightStrobeMode,
         :strobeSpeed as FlashlightStrobeSpeed,
     }?) as FlashlightResult
