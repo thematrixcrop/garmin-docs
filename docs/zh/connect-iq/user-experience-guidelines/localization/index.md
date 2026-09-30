@@ -80,7 +80,7 @@ title: "本地化"
 
 ## 最佳实践
 
--   All Connect IQ devices support English, but not all devices support all languages. 支持ing only English is not a localization strategy.
+-   所有 Connect IQ 设备都支持英语，但并非所有设备都支持全部语言。仅支持英语不能称为本地化策略。
 
 - Garmin 设备允许用户根据距离,高度,高度,速度,温度和重量定制自己喜欢的单位.
 

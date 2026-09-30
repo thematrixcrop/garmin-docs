@@ -197,4 +197,4 @@ Garmin 媒体支持的设备是为活跃的生活方式用户设计的,他们希
 
 同步配置已被废除. 我们建议用户提供一个机制来下载在播放配置内部的内容.
 
-See the [How do I create an Audio Content Provider?](/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/#how-do-i-create-an-audio-content-provider) section 更多信息.
+更多信息请参阅[如何创建音频内容提供者？](/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/#how-do-i-create-an-audio-content-provider)一节。

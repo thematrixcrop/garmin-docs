@@ -11,7 +11,7 @@ Venu是第一款拥有AMOLED屏幕的Garmin手表,AMOLED显示器提供了高像
 
 在AMOLED显示屏中的像素只能在照明时吸取电源,因此在呈现任何颜色除黑色以外时,将像素视为开放,并且在呈现黑色像素时才会被视为关闭.
 
-Burn-in protection is only activated when Connect IQ watch face is in foreground and after system enters sleep mode. Under such conditions, if more than 10% of the screen pixels are on or any pixel is on for longer than 3 minutes, 系统将 shut off the screen.
+仅当 Connect IQ 表盘处于前台且系统进入睡眠模式后，烧屏保护才会启用。在这种情况下，如果超过 10% 的屏幕像素处于点亮状态，或任何像素连续点亮超过 3 分钟，系统就会关闭屏幕。
 
 现有的Connect IQ手表面孔中的大部分都会使燃烧保护器陷入失效,但仍有希望在AMOLED屏幕上能够保持一面一直开放的手表.
 

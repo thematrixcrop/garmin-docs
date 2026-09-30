@@ -80,7 +80,7 @@ API级 3.2.0 引入了从背景过程中访问[Application.Storage](/connect-iq/
 
 *自 API 级别 2.4.0*
 
-The [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供 an interface for accessing the values and properties of settings. Information is automatically saved on disk when [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) is called. To get or set a property value use the [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) or methods, respectively:
+[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供访问设置值和属性的接口。调用 [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) 时，信息会自动保存到磁盘。分别使用 [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) 和相应的设置方法获取或设置属性值：
 
 ```java
 // Set an Object Store app setting
