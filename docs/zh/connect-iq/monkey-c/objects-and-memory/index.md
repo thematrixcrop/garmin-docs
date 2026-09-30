@@ -31,8 +31,8 @@ class A
     public var x;
     public var y;
     public function initialize() {
-        me.x = "Hello"; // Set current instance x variable
-        self.y = "Hello"; // Set current instance y variable
+        me.x = "Hello"; // 设置当前实例的 x 变量
+        self.y = "Hello"; // 设置当前实例的 y 变量
     }
 }
 ```
@@ -60,7 +60,7 @@ class B extends A
 
 function usageSample() {
     var inst = new B();
-    inst.print();           // Prints "Hello!"
+    inst.print();           // 打印 "Hello!"
 }
 ```
 
@@ -79,17 +79,17 @@ class A
 class B extends A
 {
     function print() {
-        // Call the super class implementation
+        // 调用父类实现
         A.print();
 
-        // Amend the output
+        // 修改输出
         System.println( "Hola!" );
     }
 }
 
 function usageSample() {
     var inst = new B();
-    inst.print();           // Prints "Hello! Hola!"
+    inst.print();           // 打印 "Hello! Hola!"
 }
 ```
 
@@ -121,11 +121,11 @@ class Foo
 
 class Bar extends Foo {
     public function initialize() {
-        // Initialize the parent
+        // 初始化父类
         Foo.initialize();
         publicVar = "b";
         _protectedVar = "c";
-        // Error - can't access private member
+        // 错误 - 无法访问私有成员
         _privateVar = "d";
     }
 }
@@ -133,9 +133,9 @@ class Bar extends Foo {
 function usageSample() {
     var v = new Foo();
     System.println( v.publicVar );
-    // Error - cannot access protected member
+    // 错误 - 无法访问受保护成员
     System.println( v._protectedVar );
-    // Error - cannot access private member
+    // 错误 - 无法访问私有成员
     System.println( v._privateVar );
 }
 ```
@@ -196,30 +196,28 @@ run子C是引用数,这意味着运行时间系统将释放内存,当引用该�
 为了创建一个弱引用,你使用`weak()`方法. 弱是`Lang.Object`中的一种方法,可用于所有子C对象.
 
 ```java
-// I would make a "Hans and Franz" reference but I
-// think certain advertising has made them uncool.
+// 我本想提到 “Hans and Franz”，但
+// 某些广告让他们显得不酷了。
 var weakRef = obj.weak()
 ```
 
 如果您正在调用`weak`在不可变的类型之一 (`Number`,`Float`,`Char`,`Long`,`Double`,`String`),则它将返回对象本身.否则它将返回一个[Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)实例.
 
 ```typescript
-//! A weak reference is a loosely bound reference to
-//! another object. If all strong references have been
-//! freed, the get() method will return null.
-//! This allows the developer to avoid circular references.
+//! 弱引用是对另一个对象的松散绑定引用。
+//! 如果所有强引用都已释放，get() 方法将返回 null。
+//! 这使开发者能够避免循环引用。
 //! @since 1.2.0
 class WeakReference
 {
-    //! Return if the reference is still alive.
-    //! @return true if object is still alive, false otherwise.
-    //!    When you are dead I will be STILL ALIVE
-    //!    I feel fantastic and I am STILL ALIVE
+    //! 返回引用是否仍然有效。
+    //! @return 如果对象仍然有效则为 true，否则为 false。
+    //!    当你死去时，我仍然活着
+    //!    我感觉棒极了，而我仍然活着
     function stillAlive();
 
-    //! Get the object referenced.
-    //! @return Object referenced, or null if object is no
-    //!         longer alive.
+    //! 获取被引用的对象。
+    //! @return 被引用的对象；如果不再有效则为 null。
     function get();
 }
 ```
@@ -227,7 +225,7 @@ class WeakReference
 您可以使用`stillAlive`方法来检查引用是否已清除.使用`get`创建对象的强烈引用.只保持强烈引用在您需要的范围内!
 
 ```java
-// This is a triumph...
+// 这是一次胜利……
 if( weakRef.stillAlive() ) {
     var strongRef = weakRef.get();
     strongRef.doTheThing();
@@ -267,14 +265,14 @@ function usageSample() {
 import Toybox.Lang;
 import Toybox.System;
 
-// Import lets you say goodbye to
-// module prefixes
+// import 让你可以告别
+// 模块前缀
 var globalX as Number or String = 0;
 
 function hasANumber() {
-    globalX = 2;  // Allowed
-    globalX = "2"; // Allowed
-    // Still require prefixes in code
+    globalX = 2;  // 允许
+    globalX = "2"; // 允许
+    // 代码中仍然需要前缀
     System.println("globalX = " + globalX);
 }
 ```
@@ -336,37 +334,37 @@ function foo() {
 ```typescript
 import Toybox.System;
 
-// A globally visible function
+// 全局可见的函数
 function d() {
     System.print( "this is D!" );
 }
 
 module Parent
 {
-    // A module function.
+    // 模块函数。
     function b() {
         System.print( "This is B!" );
-        d(); // Call a globally visible function
+        d(); // 调用全局可见的函数
     }
 
-    // A child class of a Parent module
+    // Parent 模块的子类
     class Child
     {
-        // An instance method of Child
+        // Child 的实例方法
         function a() {
             System.print( "This is A!" );
-            b(); // Call a function in our parent module
-            c(); // Call a static function within the class.
-            d(); // Call a globally visible function.
+            b(); // 调用父模块中的函数
+            c(); // 调用类中的静态函数。
+            d(); // 调用全局可见的函数。
         }
 
-        // A static function of Child.
-        // Note that static methods can't call instance method but still have
-        // access to parent modules.
+        // Child 的静态函数。
+        // 注意，静态方法无法调用实例方法，但仍然可以
+        // 访问父模块。
         static function c() {
             System.print( "This is C!" );
-            b(); // Call a method in the parent module.
-            d(); // Call a globally visible function
+            b(); // 调用父模块中的方法。
+            d(); // 调用全局可见的函数
         }
     }
 }
@@ -385,9 +383,9 @@ class A {
      }
 
     function b() {
-        // Call global helloFunction
+        // 调用全局 helloFunction
         $.helloFunction();
-        // Call instance helloFunction
+        // 调用实例 helloFunction
         helloFunction();
     }
 }
@@ -403,15 +401,15 @@ module A
     class B
     {
         function c() {
-            // To find globalScopedVariable, the VM will search at runtime:
-            //     instance B
-            //     instance B's superclass Toybox.Lang.Object
-            //     Module A
-            //     Module A's parent globals
-            // and finally find globalScopedVariable.
+            // 为查找 globalScopedVariable，VM 将在运行时搜索：
+            //     B 实例
+            //     B 实例的父类 Toybox.Lang.Object
+            //     A 模块
+            //     A 模块的父级全局模块
+            // 最终找到 globalScopedVariable。
             System.println(globalScopedVariable);
-            // This will search only the global namespace for globalScopedVariable.
-            // Thanks bling!
+            // 这只会在全局命名空间中搜索 globalScopedVariable。
+            // 多亏了 bling！
             System.println($.globalScopedVariable);
         }
     }
