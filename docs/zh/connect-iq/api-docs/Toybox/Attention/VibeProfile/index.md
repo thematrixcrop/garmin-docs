@@ -194,7 +194,7 @@ API 级别 1.0.0
 
 - [**dutyCycle**](#dutyCycle-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The strength of the vibration.
+    振动强度。
 
 - [**length**](#length-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -212,7 +212,7 @@ API 级别 1.0.0
 
 ### var dutyCycle as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The strength of the vibration.
+振动强度。
 
 Duty cycle is the felt strength of the vibration, and is analogous in practice to the frequency of the vibration. It is specified as a value from 0 to 100%, 0 indicating no vibration and 100 indicating the strongest vibration.
 

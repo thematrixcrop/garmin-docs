@@ -61,11 +61,11 @@ API 级别 1.0.0
 
 - [**sec**](#sec-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The second of the current minute.
+    当前分钟内的秒数。
 
 - [**timeZoneOffset**](#timeZoneOffset-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The time offset from UTC in seconds.
+    以秒为单位的 UTC 时间偏移量。
 
 
 ## 实例属性详情
@@ -108,7 +108,7 @@ Returns:
 
 ### var sec as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The second of the current minute.
+当前分钟内的秒数。
 
 Since:
 
@@ -120,7 +120,7 @@ Returns:
 
 ### var timeZoneOffset as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The time offset from UTC in seconds.
+以秒为单位的 UTC 时间偏移量。
 
 Since:
 

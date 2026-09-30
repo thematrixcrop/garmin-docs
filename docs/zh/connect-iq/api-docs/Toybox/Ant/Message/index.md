@@ -59,7 +59,7 @@ API 级别 1.0.0
 
 - [**deviceNumber**](#deviceNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Unique device number (ANT-id).
+    唯一设备编号 (ANT-id)。
 
 - [**deviceType**](#deviceType-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -75,11 +75,11 @@ API 级别 1.0.0
 
 - [**rssi**](#rssi-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The Received Signal Strength Indication.
+    接收信号强度指示。
 
 - [**timestamp**](#timestamp-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The time stamp of received message generated off of a 32.768 kHz clock.
+    基于 32.768 kHz 时钟生成的接收消息时间戳。
 
 - [**transmissionType**](#transmissionType-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -101,7 +101,7 @@ API 级别 1.0.0
 
 ### var deviceNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Unique device number (ANT-id).
+唯一设备编号 (ANT-id)。
 
 Since:
 
@@ -138,7 +138,7 @@ API 级别 1.0.0
 
 ### var rssi as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The Received Signal Strength Indication.
+接收信号强度指示。
 
 Since:
 
@@ -146,7 +146,7 @@ API 级别 1.0.0
 
 ### var timestamp as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The time stamp of received message generated off of a 32.768 kHz clock.
+基于 32.768 kHz 时钟生成的接收消息时间戳。
 
 Rolls over every 2 seconds.
 

@@ -86,7 +86,7 @@ API 级别 3.2.0
 
 - [**windBearing**](#windBearing-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wind bearing in degrees.
+    以度为单位的风向。
 
 - [**windSpeed**](#windSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -327,7 +327,7 @@ Returns:
 
 ### var windBearing as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wind bearing in degrees. North = 0, East = 90, South = 180, West = 270
+以度为单位的风向。北 = 0，东 = 90，南 = 180，西 = 270
 
 Since:
 

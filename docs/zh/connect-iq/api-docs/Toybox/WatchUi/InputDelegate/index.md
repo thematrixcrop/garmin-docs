@@ -115,7 +115,7 @@ API 级别 1.0.0
 
 - [**onSelectable**](#onSelectable-instance_function)(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The state of a [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) has changed.
+    [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 的状态已更改。
 
 - [**onSwipe**](#onSwipe-instance_function)(swipeEvent as [WatchUi.SwipeEvent](/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -507,7 +507,7 @@ API 级别 1.0.0
 
 ### **onSelectable(selectableEvent as [WatchUi.SelectableEvent](/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent/))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The state of a [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) has changed.
+[Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 的状态已更改。
 
 Parameters:
 

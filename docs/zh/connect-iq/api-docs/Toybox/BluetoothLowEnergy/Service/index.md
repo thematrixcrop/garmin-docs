@@ -51,7 +51,7 @@ Parameters:
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
-    the UUID to search for.
+    要搜索的 UUID。
 
 
 Returns:

@@ -48,7 +48,7 @@ API 级别 1.0.0
 
 - [**sec**](#sec-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The seconds within a minute.
+    一分钟内的秒数。
 
 - [**year**](#year-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -75,7 +75,7 @@ The day of the week (e.g. Monday, Tuesday, Wednesday, etc,).
 
 注意：
 
-The String values returned are language and device dependent.
+返回的字符串值取决于语言和设备。
 
 Since:
 
@@ -125,7 +125,7 @@ The month of the year (e.g. January, February, March, etc.).
 
 注意：
 
-The String values returned are language and device dependent.
+返回的字符串值取决于语言和设备。
 
 Since:
 
@@ -147,7 +147,7 @@ Returns:
 
 ### var sec as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The seconds within a minute.
+一分钟内的秒数。
 
 Since:
 

@@ -2366,7 +2366,7 @@ Before the initial [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) is 
 
 注意：
 
-the suspension state can be cleared in the event of reboot or app update.
+挂起状态可以在设备重启或应用更新时清除。
 
 Parameters:
 
@@ -2428,7 +2428,7 @@ If the application needs to save data to the object store it should be done in t
 
 注意：
 
-the suspension state can be cleared in the event of reboot or app update.
+挂起状态可以在设备重启或应用更新时清除。
 
 Parameters:
 
@@ -2470,7 +2470,7 @@ Parameters:
 
 - value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
-    The value to validate
+    要验证的值。
 
 
 Returns:
@@ -2704,7 +2704,7 @@ Parameters:
 
 - value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 
-    The value to put into the object store
+    要放入对象存储中的值。
 
 
 Example:
@@ -2942,7 +2942,7 @@ Parameters:
 
 - value — ([Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) —
 
-    The value to validate
+    要验证的值。
 
 
 Since:

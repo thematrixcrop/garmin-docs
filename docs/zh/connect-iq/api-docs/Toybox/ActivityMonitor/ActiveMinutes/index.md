@@ -164,22 +164,22 @@ API 级别 2.1.0
 
 - [**moderate**](#moderate-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total number of moderate activity minutes recorded by the device.
+    设备记录的中等强度活动分钟总数。
 
 - [**total**](#total-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total number of active minutes recorded by the device.
+    设备记录的活动分钟总数。
 
 - [**vigorous**](#vigorous-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total number of vigorous activity minutes recorded by the device.
+    设备记录的高强度活动分钟总数。
 
 
 ## 实例属性详情
 
 ### var moderate as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total number of moderate activity minutes recorded by the device.
+设备记录的中等强度活动分钟总数。
 
 Since:
 
@@ -191,7 +191,7 @@ Returns:
 
 ### var total as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total number of active minutes recorded by the device.
+设备记录的活动分钟总数。
 
 This value is equal to the total number of moderate minutes plus twice the total number of vigorous minutes.
 
@@ -205,7 +205,7 @@ Returns:
 
 ### var vigorous as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total number of vigorous activity minutes recorded by the device.
+设备记录的高强度活动分钟总数。
 
 Since:
 

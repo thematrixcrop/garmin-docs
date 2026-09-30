@@ -265,15 +265,15 @@ Parameters:
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The substring label for the item or a dictionary of toggle states mapped to sub-label strings, which can be `null`
+    项目的子标签，或将切换状态映射到子标签字符串的字典，可以为 `null`
 
 - :enabled — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The string displayed when the ToggleMenuItem is enabled, or `null`
+        ToggleMenuItem 被启用时显示的字符串，或为 `null`
 
 - :disabled — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The string displayed when the ToggleMenuItem is disabled, or `null`
+        ToggleMenuItem 被禁用时显示的字符串，或为 `null`
 
 - identifier — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
@@ -345,15 +345,15 @@ Parameters:
 
 - subLabel — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    The substring label for the item or a dictionary of toggle states mapped to sub-label strings, which can be `null`
+    项目的子标签，或将切换状态映射到子标签字符串的字典，可以为 `null`
 
 - :enabled — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        The string displayed when the ToggleMenuItem is enabled, or `null`
+        ToggleMenuItem 被启用时显示的字符串，或为 `null`
 
 - :disabled — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-        The string displayed when the ToggleMenuItem is disabled, or `null`
+        ToggleMenuItem 被禁用时显示的字符串，或为 `null`
 
 
 Since:

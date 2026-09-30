@@ -32,23 +32,23 @@ API 级别 3.2.0
 
 - [**enabled**](#enabled-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The Sensor enabled flag.
+    Sensor 启用标志。
 
 - [**manufacturerId**](#manufacturerId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The Sensor manufacturer.
+    Sensor 制造商。
 
 - [**name**](#name-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The Sensor name.
+    Sensor 名称。
 
 - [**partNumber**](#partNumber-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The Sensor part number.
+    Sensor 部件号。
 
 - [**softwareVersion**](#softwareVersion-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The Sensor software version.
+    Sensor 软件版本。
 
 - [**technology**](#technology-var) as [Sensor.SensorTechnology](/connect-iq/api-docs/Toybox/Sensor/#SensorTechnology-module)
 
@@ -56,7 +56,7 @@ API 级别 3.2.0
 
 - [**type**](#type-var) as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
 
-    The Sensor type.
+    Sensor 类型。
 
 
 ## 实例属性详情
@@ -90,7 +90,7 @@ Returns:
 
 ### var enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The Sensor enabled flag.
+Sensor 启用标志。
 
 An indicator of whether or not the sensor is enabled for pairing.
 
@@ -104,7 +104,7 @@ Returns:
 
 ### var manufacturerId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The Sensor manufacturer.
+Sensor 制造商。
 
 The manufacturer id of the sensor. May be `null`.
 
@@ -118,7 +118,7 @@ Returns:
 
 ### var name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The Sensor name.
+Sensor 名称。
 
 The name of the sensor.
 
@@ -132,7 +132,7 @@ Returns:
 
 ### var partNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The Sensor part number.
+Sensor 部件号。
 
 The part number the sensor. May be `null`.
 
@@ -146,7 +146,7 @@ Returns:
 
 ### var softwareVersion as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The Sensor software version.
+Sensor 软件版本。
 
 The software version of the sensor. May be `null`.
 
@@ -177,7 +177,7 @@ Returns:
 
 ### var type as [Sensor.SensorType](/connect-iq/api-docs/Toybox/Sensor/#SensorType-named_type)
 
-The Sensor type.
+Sensor 类型。
 
 The type of the sensor.
 

@@ -110,7 +110,7 @@ Parameters:
 
 - errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
-    The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
+    作为 [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量发生的突发故障类型。
 
 
 Since:
@@ -133,7 +133,7 @@ Parameters:
 
 - errorCode — ([Ant.BurstError](/connect-iq/api-docs/Toybox/Ant/#BurstError-module)) —
 
-    The type of burst failure that occurred as a [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) constant
+    作为 [BURST\_ERROR\_\*](/connect-iq/api-docs/Toybox/Ant/#BURST_ERROR_OUT_OF_MEMORY-const) 常量发生的突发故障类型。
 
 
 Since:

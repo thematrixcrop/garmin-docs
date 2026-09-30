@@ -40,11 +40,11 @@ API 级别 1.0.0
 
 - [**battery**](#battery-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    The remaining battery life as a percentage.
+    剩余电池电量百分比。
 
 - [**batteryInDays**](#batteryInDays-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-    The remaining battery life in days.
+    剩余电池续航天数。
 
 - [**charging**](#charging-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -60,7 +60,7 @@ API 级别 1.0.0
 
 - [**totalMemory**](#totalMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The total available memory in bytes.
+    以字节为单位的可用内存总量。
 
 - [**usedMemory**](#usedMemory-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -71,7 +71,7 @@ API 级别 1.0.0
 
 ### var battery as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-The remaining battery life as a percentage.
+剩余电池电量百分比。
 
 注意：
 
@@ -87,7 +87,7 @@ Returns:
 
 ### var batteryInDays as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)
 
-The remaining battery life in days.
+剩余电池续航天数。
 
 Since:
 
@@ -240,7 +240,7 @@ Returns:
 
 ### var totalMemory as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The total available memory in bytes.
+以字节为单位的可用内存总量。
 
 Since:
 

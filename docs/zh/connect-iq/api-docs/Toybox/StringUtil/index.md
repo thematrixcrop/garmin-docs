@@ -94,7 +94,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The String representation of the input Array
+    输入 Array 的字符串表示。
 
 
 Since:
@@ -180,7 +180,7 @@ Returns:
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    The String representation of the input Array
+    输入 Array 的字符串表示。
 
 
 Since:

@@ -206,7 +206,7 @@ API 级别 1.0.0
 
 - [**accuracy**](#accuracy-var) as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module)
 
-    The positional accuracy.
+    位置精度。
 
 - [**altitude**](#altitude-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -233,7 +233,7 @@ API 级别 1.0.0
 
 ### var accuracy as [Position.Quality](/connect-iq/api-docs/Toybox/Position/#Quality-module)
 
-The positional accuracy.
+位置精度。
 
 This is given as one of the following values: good, usable, poor, or not available, which corresponds with the Position.QUALITY\_\* constants. This cannot be `null`.
 

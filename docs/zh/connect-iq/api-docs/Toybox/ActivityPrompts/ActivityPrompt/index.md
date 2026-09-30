@@ -32,11 +32,11 @@ API 级别 5.2.0
 
 - [**templateName**](#templateName-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The prompt identifier.
+    提示标识符。
 
 - [**text**](#text-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-    The text-to-speech text to be spoken.
+    要通过文本转语音播报的文本。
 
 
 ## 实例属性详情
@@ -51,7 +51,7 @@ API 级别 5.2.0
 
 ### var templateName as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The prompt identifier.
+提示标识符。
 
 Since:
 
@@ -59,7 +59,7 @@ API 级别 5.2.0
 
 ### var text as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
-The text-to-speech text to be spoken.
+要通过文本转语音播报的文本。
 
 Since:
 

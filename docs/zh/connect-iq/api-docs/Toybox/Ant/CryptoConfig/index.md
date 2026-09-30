@@ -233,7 +233,7 @@ API 级别 2.3.0
 
 - [**encryptionId**](#encryptionId-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The unique 4 byte identifier of the encrypted master or the negotiating slave.
+    加密主设备或协商从设备的唯一 4 字节标识符。
 
 - [**encryptionKey**](#encryptionKey-var) as [CryptoConfig.EncryptionKey](/connect-iq/api-docs/Toybox/Ant/CryptoConfig/#EncryptionKey-named_type)
 
@@ -277,7 +277,7 @@ API 级别 2.3.0
 
 ### var encryptionId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The unique 4 byte identifier of the encrypted master or the negotiating slave.
+加密主设备或协商从设备的唯一 4 字节标识符。
 
 Since:
 

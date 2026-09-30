@@ -48,14 +48,14 @@ API 级别 2.4.0
 
 - [**basicResistance**](#basicResistance-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The resistance percentage of the fitness equipment.
+    健身器材的阻力百分比。
 
 
 ## 实例属性详情
 
 ### var basicResistance as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The resistance percentage of the fitness equipment.
+健身器材的阻力百分比。
 
 Since:
 

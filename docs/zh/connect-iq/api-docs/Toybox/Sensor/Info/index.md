@@ -56,7 +56,7 @@ API 级别 1.0.0
 
 - [**power**](#power-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The power in Watts (W).
+    以瓦特 (W) 为单位的功率。
 
 - [**pressure**](#pressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -64,11 +64,11 @@ API 级别 1.0.0
 
 - [**speed**](#speed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The speed in meters per second (m/s).
+    以米每秒 (m/s) 为单位的速度。
 
 - [**temperature**](#temperature-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The temperature in degrees Celsius (C).
+    以摄氏度 (C) 为单位的温度。
 
 
 ## 实例属性详情
@@ -639,7 +639,7 @@ Returns:
 
 ### var power as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The power in Watts (W).
+以瓦特 (W) 为单位的功率。
 
 Since:
 
@@ -665,7 +665,7 @@ Returns:
 
 ### var speed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The speed in meters per second (m/s).
+以米每秒 (m/s) 为单位的速度。
 
 Since:
 
@@ -682,7 +682,7 @@ Returns:
 
 ### var temperature as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The temperature in degrees Celsius (C).
+以摄氏度 (C) 为单位的温度。
 
 Since:
 

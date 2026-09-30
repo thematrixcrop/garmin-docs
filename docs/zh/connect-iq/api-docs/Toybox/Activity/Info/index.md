@@ -172,7 +172,7 @@ API 级别 1.0.0
 
 - [**rawAmbientPressure**](#rawAmbientPressure-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The raw ambient pressure in Pascals (Pa).
+    以帕斯卡 (Pa) 为单位的原始环境气压。
 
 - [**rearDerailleurIndex**](#rearDerailleurIndex-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -180,31 +180,31 @@ API 级别 1.0.0
 
 - [**rearDerailleurMax**](#rearDerailleurMax-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The rear bicycle derailleur maximum index.
+    后变速器的最大索引。
 
 - [**rearDerailleurSize**](#rearDerailleurSize-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The rear bicycle derailleur gear size in number of teeth.
+    后变速器齿轮的齿数。
 
 - [**startLocation**](#startLocation-var) as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-    The starting location of the current activity.
+    当前活动的起始位置。
 
 - [**startTime**](#startTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    The starting time of the current activity.
+    当前活动的开始时间。
 
 - [**swimStrokeType**](#swimStrokeType-var) as [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) or **Null**
 
-    The swim stroke type from the previous length.
+    上一趟泳程的泳姿类型。
 
 - [**swimSwolf**](#swimSwolf-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The SWOLF score from the previous length.
+    上一趟泳程的 SWOLF 分数。
 
 - [**timerState**](#timerState-var) as [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) or **Null**
 
-    The recording timer state.
+    记录计时器状态。
 
 - [**timerTime**](#timerTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -212,11 +212,11 @@ API 级别 1.0.0
 
 - [**totalAscent**](#totalAscent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The total ascent during the current activity in meters (m).
+    当前活动期间的累计爬升，以米 (m) 为单位。
 
 - [**totalDescent**](#totalDescent-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The total descent during the current activity in meters (m).
+    当前活动期间的累计下降，以米 (m) 为单位。
 
 - [**track**](#track-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -224,7 +224,7 @@ API 级别 1.0.0
 
 - [**trainingEffect**](#trainingEffect-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The Training Effect score of the current activity.
+    当前活动的 Training Effect 分数。
 
 
 ## 实例属性详情
@@ -3005,7 +3005,7 @@ Returns:
 
 ### var rawAmbientPressure as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The raw ambient pressure in Pascals (Pa).
+以帕斯卡 (Pa) 为单位的原始环境气压。
 
 This returns ambient (local) barometric pressure as measured by the internal pressure sensor. The data is the temperature compensated information read directly from the internal sensor.
 
@@ -3280,7 +3280,7 @@ Returns:
 
 ### var rearDerailleurMax as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The rear bicycle derailleur maximum index.
+后变速器的最大索引。
 
 Since:
 
@@ -3387,7 +3387,7 @@ Returns:
 
 ### var rearDerailleurSize as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The rear bicycle derailleur gear size in number of teeth.
+后变速器齿轮的齿数。
 
 Since:
 
@@ -3494,7 +3494,7 @@ Returns:
 
 ### var startLocation as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/) or **Null**
 
-The starting location of the current activity.
+当前活动的起始位置。
 
 This member will always provide a `null` value unless the Positioning Permission is enabled.
 
@@ -3508,7 +3508,7 @@ Returns:
 
 ### var startTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-The starting time of the current activity.
+当前活动的开始时间。
 
 Since:
 
@@ -3520,7 +3520,7 @@ Returns:
 
 ### var swimStrokeType as [Activity.SwimStrokeType](/connect-iq/api-docs/Toybox/Activity/#SwimStrokeType-module) or **Null**
 
-The swim stroke type from the previous length.
+上一趟泳程的泳姿类型。
 
 Swim stroke type values range from 0-6. Each Number value represents a different swim stroke type (e.g. freestyle, backstroke, etc.).
 
@@ -3675,7 +3675,7 @@ Returns:
 
 ### var swimSwolf as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The SWOLF score from the previous length.
+上一趟泳程的 SWOLF 分数。
 
 SWOLF is an abbreviation for Swim-Golf, a measure of swimming efficiency. The score is obtained by adding the strokes per length to the total time of the length. For example, if it takes ten strokes and thirty seconds to swim a pool length, the SWOLF score is 40. Just like golf, a lower SWOLF score is better.
 
@@ -3827,7 +3827,7 @@ Returns:
 
 ### var timerState as [Activity.TimerState](/connect-iq/api-docs/Toybox/Activity/#TimerState-module) or **Null**
 
-The recording timer state.
+记录计时器状态。
 
 The timer state ranges from 0-3. A value of 0 indicates that the timer is off and there is no active recording, while a value of 3 indicates timer is on and there is an active recording.
 
@@ -3856,7 +3856,7 @@ Returns:
 
 ### var totalAscent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The total ascent during the current activity in meters (m).
+当前活动期间的累计爬升，以米 (m) 为单位。
 
 Since:
 
@@ -3868,7 +3868,7 @@ Returns:
 
 ### var totalDescent as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The total descent during the current activity in meters (m).
+当前活动期间的累计下降，以米 (m) 为单位。
 
 Since:
 
@@ -3997,7 +3997,7 @@ Returns:
 
 ### var trainingEffect as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The Training Effect score of the current activity.
+当前活动的 Training Effect 分数。
 
 Training Effect is a score developed by FirstBeat, which indicates an activity's level of effect on aerobic fitness. Scores range from 1.0 (easy) to 5.0 (overreaching).
 

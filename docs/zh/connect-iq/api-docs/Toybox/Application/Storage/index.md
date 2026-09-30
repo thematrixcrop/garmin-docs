@@ -172,7 +172,7 @@ Parameters:
 
 - value — ([Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)) —
 
-    The value to put into the object store
+    要放入对象存储中的值。
 
 
 Example:

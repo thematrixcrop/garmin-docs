@@ -30,7 +30,7 @@ API 级别 3.2.0
 
 - [**condition**](#condition-var) as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
 
-    The weather condition.
+    天气状况。
 
 - [**dewPoint**](#dewPoint-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -38,7 +38,7 @@ API 级别 3.2.0
 
 - [**forecastTime**](#forecastTime-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-    The time the forecast is valid in UTC time.
+    预报在 UTC 时间中的有效时间。
 
 - [**precipitationChance**](#precipitationChance-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -58,7 +58,7 @@ API 级别 3.2.0
 
 - [**windBearing**](#windBearing-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The wind bearing in degrees.
+    以度为单位的风向。
 
 - [**windSpeed**](#windSpeed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -84,7 +84,7 @@ Returns:
 
 ### var condition as [Weather.Condition](/connect-iq/api-docs/Toybox/Weather/#Condition-module) or **Null**
 
-The weather condition
+天气状况。
 
 Since:
 
@@ -114,7 +114,7 @@ Returns:
 
 ### var forecastTime as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/) or **Null**
 
-The time the forecast is valid in UTC time
+预报在 UTC 时间中的有效时间。
 
 Since:
 
@@ -186,7 +186,7 @@ Returns:
 
 ### var windBearing as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The wind bearing in degrees. North = 0, East = 90, South = 180, West = 270
+以度为单位的风向。北 = 0，东 = 90，南 = 180，西 = 270
 
 Since:
 

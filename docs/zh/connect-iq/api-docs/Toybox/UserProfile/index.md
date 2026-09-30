@@ -235,7 +235,7 @@ API 级别 5.2.2
 
 获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）
 
-The returned Array contains zone values as follows:
+返回值 Array 包含以下区域值：
 
 - min zone 1 - 区域 1 的最小心率阈值
 
@@ -254,7 +254,7 @@ Parameters:
 
 - sport — ([UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) —
 
-    The sport that zones are being requested from. Should be a [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) value.
+    请求区域值所针对的运动项目。应为 [HR\_ZONE\_SPORT\_\*](/connect-iq/api-docs/Toybox/UserProfile/#HR_ZONE_SPORT_GENERIC-const) 值。
 
 
 Example:
@@ -281,7 +281,7 @@ API 级别 1.2.6
 
 获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）
 
-The returned Array contains zone values as follows:
+返回值 Array 包含以下区域值：
 
 - min zone 1 - 区域 1 的最小心率阈值
 
@@ -331,7 +331,7 @@ Parameters:
 
 - sport — ([Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) —
 
-    The sport that zones are being requested from. Should be a [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) value.
+    请求区域值所针对的运动项目。应为 [SPORT\_\*](/connect-iq/api-docs/Toybox/Activity/#SPORT_GENERIC-const) 值。
 
 
 Example:

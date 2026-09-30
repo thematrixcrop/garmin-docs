@@ -68,11 +68,11 @@ API 级别 1.0.0
 
 - [**stepGoal**](#stepGoal-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The step goal for the day in number of steps.
+    当天的步数目标。
 
 - [**steps**](#steps-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The step count for the day in number of steps.
+    当天的步数。
 
 
 ## 实例属性详情
@@ -894,7 +894,7 @@ Returns:
 
 ### var stepGoal as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The step goal for the day in number of steps.
+当天的步数目标。
 
 Since:
 
@@ -906,7 +906,7 @@ Returns:
 
 ### var steps as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The step count for the day in number of steps.
+当天的步数。
 
 Since:
 

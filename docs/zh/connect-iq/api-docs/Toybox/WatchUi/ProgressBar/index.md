@@ -281,7 +281,7 @@ Parameters:
 
 - displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The string to display on the ProgressBar
+    要在 ProgressBar 上显示的字符串。
 
 - startValue — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
@@ -305,7 +305,7 @@ Parameters:
 
 - displayString — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The string to display on the ProgressBar
+    要在 ProgressBar 上显示的字符串。
 
 
 Since:

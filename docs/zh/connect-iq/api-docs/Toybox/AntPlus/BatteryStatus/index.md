@@ -43,7 +43,7 @@ API 级别 2.2.0
 
 - [**operatingTime**](#operatingTime-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The operating time in seconds.
+    以秒为单位的运行时间。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -87,7 +87,7 @@ Returns:
 
 ### var operatingTime as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The operating time in seconds.
+以秒为单位的运行时间。
 
 Since:
 

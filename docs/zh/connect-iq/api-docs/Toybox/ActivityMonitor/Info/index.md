@@ -68,11 +68,11 @@ API 级别 1.0.0
 
 - [**metersClimbed**](#metersClimbed-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The vertical distance of floors climbed in meters (m).
+    以米 (m) 为单位的爬楼层垂直距离。
 
 - [**metersDescended**](#metersDescended-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The vertical distance of floors descended in meters (m).
+    以米 (m) 为单位的下楼层垂直距离。
 
 - [**moveBarLevel**](#moveBarLevel-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -1315,7 +1315,7 @@ Returns:
 
 ### var metersClimbed as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The vertical distance of floors climbed in meters (m).
+以米 (m) 为单位的爬楼层垂直距离。
 
 This only counts the vertical distance associated with the floors climbed metric recorded by the device. Value may be `null`.
 
@@ -1453,7 +1453,7 @@ Returns:
 
 ### var metersDescended as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The vertical distance of floors descended in meters (m).
+以米 (m) 为单位的下楼层垂直距离。
 
 This only counts the vertical distance associated with the floors descended metric recorded by the device. Value may be `null`.
 

@@ -48,7 +48,7 @@ HTTP 响应码（正值）或 BLE 错误码（负值）。
 
 注意：
 
-The value in this field is unreliable and should not be referenced. It is generally safer to examine the message payload to check the status of the response.
+此字段中的值不可靠，不应被引用。通常，更安全的做法是检查消息负载以确认响应状态。
 
 Since:
 

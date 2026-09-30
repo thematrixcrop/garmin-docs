@@ -33,7 +33,7 @@ A DataField is a special View that automatically provides [Activity.Info](/conne
 
 注意：
 
-The system will call the onUpdate() method inherited from View when a Data Field is displayed by the system. Because compute() and onUpdate() are asynchronous, there is no guarantee that compute() will be called before onUpdate(). For this reason, variables should never be initialized in compute().
+系统在显示 Data Field 时会调用从 View 继承的 onUpdate() 方法。由于 compute() 和 onUpdate() 是异步的，因此无法保证在 onUpdate() 之前调用 compute()。因此，不应在 compute() 中初始化变量。
 
 Example:
 
@@ -623,7 +623,7 @@ Parameters:
 
 - info — ([Activity.Info](/connect-iq/api-docs/Toybox/Activity/Info/)) —
 
-    The updated Activity.Info object
+    更新后的 Activity.Info 对象。
 
 
 Example:

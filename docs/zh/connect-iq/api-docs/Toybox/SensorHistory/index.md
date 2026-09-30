@@ -930,7 +930,7 @@ Parameters:
 
 - :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples.
+        检索样本的顺序。
 
 - If order is `null`, the samples will be [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const)
 
@@ -1335,7 +1335,7 @@ Parameters:
 
 - :order — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The order in which to retrieve the samples.
+        检索样本的顺序。
 
 - 如果为 `null`，样本将按 [ORDER\_NEWEST\_FIRST](/connect-iq/api-docs/Toybox/SensorHistory/#ORDER_NEWEST_FIRST-const) 列出
 

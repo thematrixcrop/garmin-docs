@@ -78,7 +78,7 @@ API 级别 1.0.0
 
 - [**isVisible**](#isVisible-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The visibility of the Drawable object.
+    Drawable 对象的可见性。
 
 - [**locX**](#locX-var) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
@@ -144,7 +144,7 @@ Returns:
 
 ### var isVisible as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The visibility of the Drawable object.
+Drawable 对象的可见性。
 
 Since:
 
@@ -247,7 +247,7 @@ Parameters:
 
 - :visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-        The visibility of the Drawable object
+        Drawable 对象的可见性。
 
 
 Since:
@@ -300,7 +300,7 @@ Parameters:
 
 - visible — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
-    The visibility of the Drawable object
+    Drawable 对象的可见性。
 
 
 Since:

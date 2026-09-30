@@ -57,7 +57,7 @@ API 级别 1.0.0
 
 - [**connectionInfo**](#connectionInfo-var) as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
 
-    The state of connections available to the device.
+    设备可用连接的状态。
 
 - [**distanceUnits**](#distanceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
@@ -89,7 +89,7 @@ API 级别 1.0.0
 
 - [**inputButtons**](#inputButtons-var) as [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module)
 
-    The physical buttons supported by the device.
+    设备支持的物理按钮。
 
 - [**is24Hour**](#is24Hour-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -121,15 +121,15 @@ API 级别 1.0.0
 
 - [**paceUnits**](#paceUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The pace unit setting mode.
+    配速单位设置模式。
 
 - [**partNumber**](#partNumber-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-    The part number of the device.
+    设备的部件号。
 
 - [**phoneConnected**](#phoneConnected-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The phone connection status mode.
+    手机连接状态模式。
 
 - [**phoneOperatingSystem**](#phoneOperatingSystem-var) as [System.PhoneOperatingSystem](/connect-iq/api-docs/Toybox/System/#PhoneOperatingSystem-module) or **Null**
 
@@ -145,11 +145,11 @@ API 级别 1.0.0
 
 - [**screenShape**](#screenShape-var) as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
 
-    The screen shape of the device.
+    设备的屏幕形状。
 
 - [**screenWidth**](#screenWidth-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-    The width of the device screen in pixels.
+    设备屏幕的像素宽度。
 
 - [**systemLanguage**](#systemLanguage-var) as [System.Language](/connect-iq/api-docs/Toybox/System/#Language-module)
 
@@ -157,11 +157,11 @@ API 级别 1.0.0
 
 - [**temperatureUnits**](#temperatureUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The temperature unit setting mode.
+    温度单位设置模式。
 
 - [**tonesOn**](#tonesOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The tone setting mode.
+    音调设置模式。
 
 - [**uniqueIdentifier**](#uniqueIdentifier-var) as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**
 
@@ -169,11 +169,11 @@ API 级别 1.0.0
 
 - [**vibrateOn**](#vibrateOn-var) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    The vibration setting mode.
+    振动设置模式。
 
 - [**weightUnits**](#weightUnits-var) as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-    The weight unit setting mode.
+    重量单位设置模式。
 
 
 ## 实例属性详情
@@ -219,7 +219,7 @@ Returns:
 
 ### var connectionInfo as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)&lt;[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/), [System.ConnectionInfo](/connect-iq/api-docs/Toybox/System/ConnectionInfo/)\>
 
-The state of connections available to the device.
+设备可用连接的状态。
 
 Since:
 
@@ -412,7 +412,7 @@ Returns:
 
 ### var inputButtons as [System.ButtonInputs](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module)
 
-The physical buttons supported by the device.
+设备支持的物理按钮。
 
 This returns a bitwise binary of the enumerated values defined by the [System.BUTTON\_INPUT\_\*](/connect-iq/api-docs/Toybox/System/#ButtonInputs-module) constants that match the available buttons on a particular device. For example, a vivoactive HR returns a value of 9, which indicates Select (1) and Menu (8) button support. A fenix 5, however, returns 11, indicating support for all available button types.
 
@@ -723,7 +723,7 @@ Returns:
 
 ### var paceUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The pace unit setting mode.
+配速单位设置模式。
 
 Since:
 
@@ -743,7 +743,7 @@ Returns:
 
 ### var partNumber as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)
 
-The part number of the device.
+设备的部件号。
 
 Since:
 
@@ -755,7 +755,7 @@ Returns:
 
 ### var phoneConnected as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The phone connection status mode.
+手机连接状态模式。
 
 Since:
 
@@ -892,7 +892,7 @@ Returns:
 
 ### var screenShape as [System.ScreenShape](/connect-iq/api-docs/Toybox/System/#ScreenShape-module)
 
-The screen shape of the device.
+设备的屏幕形状。
 
 Since:
 
@@ -907,7 +907,7 @@ Returns:
 
 ### var screenWidth as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-The width of the device screen in pixels.
+设备屏幕的像素宽度。
 
 In some cases, this can be useful to determine the device type at runtime. However, to get the width of the screen area currently available to an app, use [Graphics.Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function).
 
@@ -941,7 +941,7 @@ Returns:
 
 ### var temperatureUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The temperature unit setting mode.
+温度单位设置模式。
 
 Since:
 
@@ -961,7 +961,7 @@ Returns:
 
 ### var tonesOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The tone setting mode.
+音调设置模式。
 
 Since:
 
@@ -1004,7 +1004,7 @@ Returns:
 
 ### var vibrateOn as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-The vibration setting mode.
+振动设置模式。
 
 Since:
 
@@ -1019,7 +1019,7 @@ Returns:
 
 ### var weightUnits as [System.UnitsSystem](/connect-iq/api-docs/Toybox/System/#UnitsSystem-module)
 
-The weight unit setting mode.
+重量单位设置模式。
 
 Since:
 

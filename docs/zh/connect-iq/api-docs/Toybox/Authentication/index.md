@@ -76,7 +76,7 @@ Parameters:
 
 - requestUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL to load in the web view to begin authentication
+    要在 WebView 中加载以开始身份验证的 URL。
 
 - requestParams — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
@@ -84,7 +84,7 @@ Parameters:
 
 - resultUrl — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The URL of the final page of authentication that contains the `resultKeys`
+    包含 `resultKeys` 的身份验证最终页面的 URL。
 
 - resultType — ([Authentication.OAuthResultType](/connect-iq/api-docs/Toybox/Authentication/#OAuthResultType-module)) —
 

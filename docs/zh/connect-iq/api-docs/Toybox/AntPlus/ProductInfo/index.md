@@ -46,7 +46,7 @@ API 级别 2.2.0
 
 - [**serial**](#serial-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The serial number.
+    序列号。
 
 - [**swRevisionMain**](#swRevisionMain-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
@@ -54,7 +54,7 @@ API 级别 2.2.0
 
 - [**swRevisionSupplemental**](#swRevisionSupplemental-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-    The supplemental software revision.
+    补充软件修订版本。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -68,7 +68,7 @@ API 级别 2.2.0
 
 ### var serial as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The serial number.
+序列号。
 
 Since:
 
@@ -98,7 +98,7 @@ Returns:
 
 ### var swRevisionSupplemental as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
 
-The supplemental software revision.
+补充软件修订版本。
 
 Since:
 

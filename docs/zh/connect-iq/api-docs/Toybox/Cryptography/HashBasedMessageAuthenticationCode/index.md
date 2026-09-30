@@ -207,7 +207,7 @@ API 级别 3.0.0
 
 返回认证码的摘要。
 
-The state of the object is reset and can be used to compute a new authentication code with the same options.
+对象状态已重置，可以使用相同选项计算新的身份验证代码。
 
 Returns:
 

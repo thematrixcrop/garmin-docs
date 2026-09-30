@@ -48,7 +48,7 @@ API 级别 2.4.0
 
 - [**draftFactor**](#draftFactor-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The simulated draft factor setting for simulation mode A draft factor of 0 removes all wind resistance, and 1.0 indicates no drafting effects.
+    模拟模式的模拟跟骑系数设置。跟骑系数为 0 时会消除所有风阻，1.0 表示没有跟骑效果。
 
 - [**slope**](#slope-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
@@ -71,7 +71,7 @@ API 级别 2.4.0
 
 ### var draftFactor as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The simulated draft factor setting for simulation mode A draft factor of 0 removes all wind resistance, and 1.0 indicates no drafting effects.
+模拟模式的模拟跟骑系数设置。跟骑系数为 0 时会消除所有风阻，1.0 表示没有跟骑效果。
 
 Since:
 

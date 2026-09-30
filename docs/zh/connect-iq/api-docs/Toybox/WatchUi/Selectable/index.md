@@ -68,7 +68,7 @@ API 级别 2.1.0
 
 - [**stateSelected**](#stateSelected-var) as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-    The selected state of a Selectable object.
+    Selectable 对象的选中状态。
 
 
 ## 实例方法摘要 [collapse](#)
@@ -136,7 +136,7 @@ Returns:
 
 ### var stateSelected as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or **Null**
 
-The selected state of a Selectable object.
+Selectable 对象的选中状态。
 
 A [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), [Graphics.COLOR\_\*](/connect-iq/api-docs/Toybox/Graphics/#COLOR_WHITE-const) constant, or 24-bit integer of the form 0xRRGGBB representing the selected state of the Selectable
 

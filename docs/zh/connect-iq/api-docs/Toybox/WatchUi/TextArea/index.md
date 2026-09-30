@@ -123,7 +123,7 @@ Parameters:
 
 - :text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-        The text string or ResourceId of a string resource
+        字符串资源的文本字符串或 ResourceId。
 
 - :color — ([Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) —
 
@@ -252,7 +252,7 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
-    The text String or a string ResourceId
+    文本字符串或字符串 ResourceId。
 
 
 Since:

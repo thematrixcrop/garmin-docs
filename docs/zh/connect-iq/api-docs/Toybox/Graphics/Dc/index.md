@@ -261,7 +261,7 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The String to render.
+    要渲染的字符串。
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -570,7 +570,7 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the circle center
+    圆心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -578,7 +578,7 @@ Parameters:
 
 - radius — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the circle
+    圆的半径。
 
 
 Since:
@@ -601,11 +601,11 @@ Parameters:
 
 - a — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the ellipse along the x axis
+    椭圆沿 x 轴的半径。
 
 - b — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    The radius of the ellipse along the y axis
+    椭圆沿 y 轴的半径。
 
 
 Since:
@@ -786,7 +786,7 @@ Parameters:
 
 - text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    The String to render.
+    要渲染的字符串。
 
 - justification — ([Graphics.TextJustification](/connect-iq/api-docs/Toybox/Graphics/#TextJustification-module), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -1077,7 +1077,7 @@ Parameters:
 
 - x — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The x location of the circle center
+    圆心的 x 位置
 
 - y — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
@@ -1085,7 +1085,7 @@ Parameters:
 
 - radius — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the circle
+    圆的半径。
 
 
 Since:
@@ -1108,11 +1108,11 @@ Parameters:
 
 - a — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the ellipse along the x axis
+    椭圆沿 x 轴的半径。
 
 - b — ([Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) —
 
-    The radius of the ellipse along the y axis
+    椭圆沿 y 轴的半径。
 
 
 Since:

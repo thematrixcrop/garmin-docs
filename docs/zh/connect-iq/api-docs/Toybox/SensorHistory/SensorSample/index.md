@@ -26,18 +26,18 @@ API 级别 2.1.0
 
 - [**data**](#data-var) as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    The Sensor sample.
+    Sensor 样本。
 
 - [**when**](#when-var) as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    The time of the Sensor sample.
+    Sensor 样本的时间。
 
 
 ## 实例属性详情
 
 ### var data as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-The Sensor sample.
+Sensor 样本。
 
 Since:
 
@@ -49,7 +49,7 @@ Returns:
 
 ### var when as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-The time of the Sensor sample.
+Sensor 样本的时间。
 
 Since:
 

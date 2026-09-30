@@ -26,14 +26,14 @@ API 级别 3.0.0
 
 - [**state**](#state-var) as [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module)
 
-    The state of the connection.
+    连接状态。
 
 
 ## 实例属性详情
 
 ### var state as [System.ConnectionState](/connect-iq/api-docs/Toybox/System/#ConnectionState-module)
 
-The state of the connection.
+连接状态。
 
 Since:
 
