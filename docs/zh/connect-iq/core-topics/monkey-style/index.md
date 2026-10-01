@@ -6,7 +6,7 @@ title: "Monkey Style"
 
 Monkey Style 是一种用于管理样式元素的领域专用属性语言。它大量借鉴了 CSS，但针对 Monkey C 进行了定制。借助 Monkey Style，开发者可以创建能够适配不同 Garmin 产品的样式属性常量。
 
-## 个性类
+## 个性类（Personality Class）
 
 Monkey Style 支持创建由常量组成的个性类。可以使用以下语法定义个性类：
 
@@ -18,7 +18,7 @@ personality_class {
 
 个性类和属性必须使用符合 Monkey C 规则的名称，并且值可以是以下类型：
 
-| Type | Example |
+| 类型 | 示例 |
 | --- | --- |
 | Number | 500 |
 | Percent | 80% |
