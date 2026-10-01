@@ -166,7 +166,7 @@ API 级别 3.3.0
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    包含拖动事件 x 和 y 坐标的数组，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)
+    包含拖动事件 x 和 y 坐标的数组，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
 
 起始版本：
