@@ -4,11 +4,11 @@ title: "如何创建音频内容提供商？"
 <a id="how-do-i-create-an-audio-content-provider"></a>
 # 如何创建音频内容提供商？
 
-Garmin 于 2018 年推出了[多款支持音乐的可穿戴产品](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc)，让用户在进行日常活动时可以把手机留在家里。用户可以直接将音乐库复制到设备，也可以安装 Connect IQ Audio Content Provider 应用，作为可穿戴设备与内容分发网络（CDN）之间的桥梁。
+Garmin 于 2018 年推出了[多款支持音乐的可穿戴产品](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc)，让用户在进行日常活动时可以把手机留在家里。用户可以直接将音乐库复制到设备，也可以安装 Connect IQ 音频内容提供商应用，作为可穿戴设备与内容分发网络（CDN）之间的桥梁。
 
-*Audio Content Provider* 允许第三方音乐服务传送受保护的内容。它们可以通过 Wi-Fi 直接从 CDN 将内容下载到手表，并作为原生媒体播放器的插件。内容在写入磁盘前会加密，播放时再解密。
+*音频内容提供商* 允许第三方音乐服务传送受保护的内容。它们可以通过 Wi-Fi 直接从 CDN 将内容下载到手表，并作为原生媒体播放器的插件。内容在写入磁盘前会加密，播放时再解密。
 
-本文介绍 Audio Content Provider 所承担的各项职责，以及实现它所需的基础知识。
+本文介绍音频内容提供商所承担的各项职责，以及实现它所需的基础知识。
 
 ## 将内容同步到设备
 
@@ -16,9 +16,9 @@ Garmin 音乐可穿戴设备通过将内容同步到设备，以便之后播放�
 
 ![](/connect-iq/resources/faq/sync_config.png)
 
-同步配置界面由 Audio Content Provider 应用定义。如果希望界面与设备的外观和交互风格一致，WatchUi.Menu2 类可以完成大部分实现工作。如果希望根据品牌定制外观和交互风格，`WatchUi.CustomMenu` 会提供更大的灵活性。
+同步配置界面由音频内容提供商应用定义。如果希望界面与设备的外观和交互风格一致，WatchUi.Menu2 类可以完成大部分实现工作。如果希望根据品牌定制外观和交互风格，`WatchUi.CustomMenu` 会提供更大的灵活性。
 
-Audio Content Provider 应用可以通过 REST 服务直接从 CDN 将内容下载到手表。要将歌曲下载到手表，需要经过以下步骤：
+音频内容提供商应用可以通过 REST 服务直接从 CDN 将内容下载到手表。要将歌曲下载到手表，需要经过以下步骤：
 
 1.  Connect IQ 应用通过 Web API 请求下载音频文件。
 
@@ -29,7 +29,7 @@ Audio Content Provider 应用可以通过 REST 服务直接从 CDN 将内容下�
 
 ![](/connect-iq/resources/faq/downloading_music_content.png)
 
-Audio Content Provider 应用下载的内容会受到多重保护：
+音频内容提供商应用下载的内容会受到多重保护：
 
 1.  音乐应用和音频文件存储在设备的隐藏文件夹中。
 
@@ -52,7 +52,7 @@ Audio Content Provider 应用下载的内容会受到多重保护：
 
 ### 播放配置
 
-用户进入播放配置后，应用应允许用户在应用内选择或更改音频内容（播放列表、书籍或播客）。播放配置界面由 Audio Content Provider 定义。
+用户进入播放配置后，应用应允许用户在应用内选择或更改音频内容（播放列表、书籍或播客）。播放配置界面由音频内容提供商定义。
 
 ![](/connect-iq/resources/faq/playback_configuration.png)
 
@@ -78,7 +78,7 @@ ContentDelegate 负责提供一个 `Media.ContentIterator`，为媒体播放器�
 
 ## 结论
 
-借助 Connect IQ Audio Content Provider 应用，您可以：
+借助 Connect IQ 音频内容提供商应用，您可以：
 
 -   通过现有的内容分发 Web 服务，将受保护的内容安全地传送到支持 Garmin 音乐功能的可穿戴设备。
 
