@@ -34,7 +34,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(id as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/), type as [Media.ContentType](/connect-iq/api-docs/Toybox/Media/#ContentType-module))
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
