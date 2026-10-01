@@ -68,7 +68,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(message as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
