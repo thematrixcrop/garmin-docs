@@ -20,9 +20,9 @@ Toybox.WatchUi.View
 
 创建支持退出/进入低功耗模式的表盘。
 
-Watch Face 是一种特殊的 View，可在设备电源状态发生变化时提供通知。
+表盘（Watch Face）是一种特殊的 View，可在设备电源状态发生变化时提供通知。
 
-Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回表盘时，会在短时间内以高功耗模式运行。在高功耗模式下，表盘会通过调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 每秒执行完整的屏幕更新，并且应用可以使用计时器和动画。
+表盘（Watch Face）在响应手势（例如抬腕查看时间）或从其他应用返回表盘时，会在短时间内以高功耗模式运行。在高功耗模式下，表盘会通过调用 [onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 每秒执行完整的屏幕更新，并且应用可以使用计时器和动画。
 
 在高功耗模式下经过此时间段（通常约十秒）后，系统将调用 [onEnterSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onEnterSleep-instance_function)，通知应用正在准备进入低功耗模式。
 
@@ -30,7 +30,7 @@ Watch Face 在响应手势（例如抬腕查看时间）或从其他应用返回
 
 在低功耗模式下运行时发生手势，系统将调用 [onExitSleep()](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/#onExitSleep-instance_function)，通知应用已转换到高功耗模式。
 
-表盘应用程序的初始视图 `must` 扩展 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)。
+表盘应用程序的初始视图必须扩展 [WatchFace](/connect-iq/api-docs/Toybox/WatchUi/WatchFace/)。
 
 起始版本：
 
