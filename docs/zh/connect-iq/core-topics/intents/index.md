@@ -2,17 +2,17 @@
 title: "Intents"
 ---
 <a id="intents"></a>
-# Intent
+# Intent（意图）
 
 *自 API 级别 2.2.0 起支持*
 
-Intent 允许 Connect IQ watch-app 或 widget 通过调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)，启动另一个 Connect IQ watch-app、Connect IQ widget 或原生应用（例如 Run、Bike 等内置活动）。
+Intent 允许 Connect IQ 设备应用或小工具通过调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)，启动另一个 Connect IQ 设备应用、小工具或原生应用（例如 Run、Bike 等内置活动）。
 
 调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 后，系统会显示确认视图，询问用户是否要切换到目标应用。选择“否”时，调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 的应用会继续运行；选择“是”时，当前应用退出并启动新应用。确认视图显示期间，原应用仍会继续运行。
 
 ## 切换到 Connect IQ 应用
 
-要切换到另一个 Connect IQ 应用，必须创建一个 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)，其中包含目标应用标识符以及要传给目标应用的参数。目标应用标识符必须使用以下 URI scheme 之一：
+要切换到另一个 Connect IQ 应用，必须创建一个 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/)，其中包含目标应用标识符以及要传给目标应用的参数。目标应用标识符必须使用以下 URI 方案之一：
 
 - `manifest-id://` 后跟 `manifest.xml` 中的有效 UUID
 - `store-id://` 后跟有效的应用商店 UUID
@@ -36,6 +36,6 @@ System.exitTo(intent);
 
 Connect IQ 提供三种与 Intent 相关的异常：
 
-- 如果应用尝试切换到设备应用或 widget 以外的 Connect IQ 应用类型，会抛出 [System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)。
+- 如果应用尝试切换到设备应用或小工具以外的 Connect IQ 应用类型，会抛出 [System.UnexpectedAppTypeException](/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException/)。
 - 如果应用尝试切换到未安装的应用，会抛出 [System.AppNotInstalledException](/connect-iq/api-docs/Toybox/System/AppNotInstalledException/)。
 - 如果上一次 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 调用的确认视图尚未得到用户响应，就再次调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function)，会抛出 [System.PreviousOperationNotCompleteException](/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException/)。
