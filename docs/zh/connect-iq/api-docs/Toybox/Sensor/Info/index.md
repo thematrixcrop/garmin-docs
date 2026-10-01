@@ -276,7 +276,7 @@ API 级别 1.0.0
 
 - [海拔高度](https://en.wikipedia.org/wiki/Metres_above_sea_level)
 
-- [Positional Altitude](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
+- [位置海拔](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
 
 
 返回：
@@ -673,7 +673,7 @@ API 级别 1.0.0
 
 另见：
 
-- [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
+- [位置速度](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
 返回：
