@@ -1,5 +1,5 @@
 ---
-title: "Make Your Mark"
+title: "留下你的印记"
 ---
 <a id="make-your-mark"></a>
 # 留下你的印记
@@ -49,7 +49,7 @@ title: "Make Your Mark"
 - 使用 FIT 记录捕获、显示、记录和分享数据
 - 通过 OAuth 连接到需要身份验证的 Web 服务
 
-### Widget
+### 小工具
 
 - 一眼提供信息
 - 向主轮播添加自定义卡片
