@@ -271,7 +271,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(itemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), backgroundColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type), options as { :focus as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :focusItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :title as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :footer as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :foreground as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), :titleItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :footerItemHeight as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**, :theme as [WatchUi.MenuTheme](/connect-iq/api-docs/Toybox/WatchUi/#MenuTheme-module) or **Null**, :dividerType as [Menu2.DividerType](/connect-iq/api-docs/Toybox/WatchUi/Menu2/#DividerType-module) or **Null** } or **Null**)
 
-    Constructor.
+    构造函数。
 
 - [**setBackgroundColor**](#setBackgroundColor-instance_function)(color as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)) as **Void**
 
