@@ -1,5 +1,5 @@
 ---
-title: "App Sales"
+title: "应用销售"
 ---
 # 应用销售
 
