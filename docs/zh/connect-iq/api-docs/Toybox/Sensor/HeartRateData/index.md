@@ -26,7 +26,7 @@ Toybox.Lang.Object
 
 - [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
-- [Beat-to-beat interval or "Interbeat interval"](https://en.wikipedia.org/wiki/Interbeat_interval)
+- [心搏间期或“心搏间隔”](https://en.wikipedia.org/wiki/Interbeat_interval)
 
 
 起始版本：
