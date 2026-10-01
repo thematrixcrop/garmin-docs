@@ -242,7 +242,7 @@ API 级别 2.2.0
 
 - message — ([Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) —
 
-    要发送的 Ant 消息。仅允许使用探索页面（0xE0-0xEF）和制造商特定页面（0xF0-0xFF）。使用探索页面时，建议通过 at thisisant.com 联系 ANT+ 组织。将调用 [onSentMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onSentMessage-instance_function) 以指示已发送的制造商消息状态。
+    要发送的 Ant 消息。仅允许使用探索页面（0xE0-0xEF）和制造商特定页面（0xF0-0xFF）。使用探索页面时，建议通过 thisisant.com 联系 ANT+ 组织。将调用 [onSentMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onSentMessage-instance_function) 以指示已发送的制造商消息状态。
 
 
 另见：
