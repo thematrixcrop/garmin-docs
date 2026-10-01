@@ -1,5 +1,5 @@
 ---
-title: "Connect IQ Monetization System"
+title: "Connect IQ 变现系统"
 ---
 <a id="connect-iq-monetization-system"></a>
 # Connect IQ 变现系统
