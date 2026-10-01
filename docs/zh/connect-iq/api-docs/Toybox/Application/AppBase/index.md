@@ -272,7 +272,7 @@ API 级别 4.0.0
 
 - [**setProperty**](#setProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void** deprecated
 
-    把给定数据存入该对象。
+    将给定数据存入对象存储。
 
 - [**validateProperty**](#validateProperty-instance_function)(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type), value as [Application.PropertyValueType](/connect-iq/api-docs/Toybox/Application/#PropertyValueType-named_type)) as **Void**
 
@@ -505,7 +505,7 @@ API 级别 1.0.0
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果从后台进程调用，则抛出
+    如果从后台进程调用此方法，则抛出此异常。
 
 
 ### **deleteProperty(key as [Application.PropertyKeyType](/connect-iq/api-docs/Toybox/Application/#PropertyKeyType-named_type))** as **Void**
@@ -722,7 +722,7 @@ API 级别 1.0.0
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果从后台进程调用，则抛出
+    如果从后台进程调用此方法，则抛出此异常。
 
 
 ### **getGlanceTheme()** as [AppBase.GlanceTheme](/connect-iq/api-docs/Toybox/Application/AppBase/#GlanceTheme-module)
@@ -2686,7 +2686,7 @@ API 级别 1.0.0
 
 此方法可能在 System 4 之后移除。
 
-把给定数据存入该对象。
+将给定数据存入对象存储。
 
 注意：
 
@@ -2923,7 +2923,7 @@ API 级别 1.0.0
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则抛出。使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，始终可以将数据从后台进程传递到前台进程。
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用此方法，则抛出此异常。使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，始终可以将数据从后台进程传递到前台进程。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
