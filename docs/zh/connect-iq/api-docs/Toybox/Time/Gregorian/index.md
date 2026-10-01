@@ -602,7 +602,7 @@ var oneDay = Gregorian.moment({:day => 1});
 
 - [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function)
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
 起始版本：
@@ -655,7 +655,7 @@ System.println(birthday.hour);  // 0
 
 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
 
 起始版本：
