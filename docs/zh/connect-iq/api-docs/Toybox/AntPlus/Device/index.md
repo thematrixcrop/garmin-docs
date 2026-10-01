@@ -54,7 +54,7 @@ API 级别 2.2.0
 
 - [**sendPageRequest**](#sendPageRequest-instance_function)(pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
-    发送页面请求 请求连接的传感器广播 2 个页面。
+    发送页面请求，请求连接的传感器广播两个页面。
 
 
 ## 实例方法详情
@@ -263,7 +263,7 @@ API 级别 3.1.0
 
 ### **sendPageRequest(pageNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))** as **Void**
 
-发送页面请求 请求连接的传感器广播 2 个页面。使用 [onMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onMessage-instance_function) 处理传感器广播的请求页面。
+发送页面请求，请求连接的传感器广播两个页面。使用 [onMessage()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onMessage-instance_function) 处理传感器广播的请求页面。
 
 参数：
 
