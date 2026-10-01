@@ -1068,7 +1068,7 @@ function myFunction() {
 
 ### using 语句
 
-模块可以通过`using`关键字进口到另一个类或模块中,将模块扩展到它们定义的类或模块.
+可以使用 `using` 关键字将模块导入其他类或模块，从而在当前类或模块中使用其中定义的内容。
 
 ```cpp
 using Toybox.System;
@@ -1078,7 +1078,7 @@ function myFunction() {
 }
 ```
 
-模块也可能被赋予`as`条款的别名,可用于缩短模块名称或更喜欢不同的命名方案:
+也可以使用 `as` 子句为模块指定别名，以缩短模块名称或采用不同的命名方案：
 
 ```cpp
 using Toybox.System as Sys;
@@ -1088,25 +1088,25 @@ function myFunction() {
 }
 ```
 
-一旦进口,一个模块内的所有类必须通过其母模块引用.
+导入模块后，其中的类必须通过父模块引用。
 
 ## 作用域
 
-子C是一个通过消息的语言.当调用函数时,虚拟机在运行时以以下顺序搜索一个等级来找到函数:
+Monkey C 是一种基于消息的语言。调用函数时，虚拟机会在运行时按以下顺序搜索函数：
 
-1. 班级成员
+1. 类成员
 
-2.超级级级成员
+2. 超类成员
 
 3. 类的静态成员
 
-4. 主模块的成员,以及全球名称空间的主模块
+4. 父模块的成员，以及全局命名空间中的父模块
 
-5. 超级级级的母模块成员到全球名称空间
+5. 沿父模块链向上搜索，直到全局命名空间
 
-6. 主模块的公共静态成员,至全球命名空间
+6. 父模块的 public 静态成员，直到全局命名空间
 
-7. 超级级级的母模块的公共静态成员到全球名称空间
+7. 沿父模块链向上搜索 public 静态成员，直到全局命名空间
 
 
 以下代码示例说明了：
@@ -1145,7 +1145,7 @@ module Parent
 }
 ```
 
-在某些情况下,使用全球范围的混合符号`$`来搜索全球名称空间而不是当前范围可能更有效:
+在某些情况下，使用全局作用域的 bling 符号 `$` 搜索全局命名空间，而不是当前作用域，可能更高效：
 
 ```cpp
 using Toybox.System as System;
@@ -1165,7 +1165,7 @@ class MyClass {
 }
 ```
 
-由于 global子C是动态键入的,引用一个全球变量将在最终找到全球变量之前搜索对象的遗产结构和模块层次结构. 相反,我们可以直接使用 symbol子符号搜索全球:
+由于 Monkey C 是动态类型语言，引用全局变量时，会先搜索对象的继承结构和模块层级，最后才查找全局变量。相反，可以使用 bling 符号直接搜索全局命名空间：
 
 ```cpp
 using Toybox.System as System;
@@ -1191,13 +1191,13 @@ module BluthCompany
 }
 ```
 
-虽然子C通常会在整个对象层次结构中搜索一个对象,但当使用 bling 符号时,只会检查全球空间.如果没有发现任何东西,虚拟机将不会回过对象层次结构,而是会返回 *Symbol Not Found* 错误.
+Monkey C 通常会在整个对象层级中搜索对象；使用 bling 符号时，只检查全局命名空间。如果找不到目标，虚拟机不会回到对象层级搜索，而是返回 *Symbol Not Found* 错误。
 
-** 注:** 切换块有一些额外的范围规则,可以在[Switch-Case Statements](#scoping-in-switch-blocks)部分找到.
+**注意：**switch 代码块还有其他作用域规则，详见 [Switch-Case Statements](#scoping-in-switch-blocks)。
 
 ## 注解
 
-子C允许将符号与类或模块方法和变量联系起来.注释用于向编译器传达额外的意图,有时也用于在不改变子C语法的情况下添加新功能.例如,运行无恶测试需要注释来区分仅用于测试的代码部分:
+Monkey C 允许将符号关联到类或模块的方法和变量。注解用于向编译器传达额外意图，有时也用于在不改变 Monkey C 语法的情况下增加功能。例如，Run No Evil 测试使用注解标识仅用于测试的代码：
 
 ```cpp
 // A test class containing a Run No Evil test method denoted by (:test)
@@ -1207,22 +1207,22 @@ class TestMethods {
 }
 ```
 
-下列注释对子C编译器具有特殊意义:
+下面的注解对 Monkey C 编译器具有特殊意义：
 
 **:background**
 
-表示[Background](/connect-iq/api-docs/Toybox/Background/)过程可用的代码区块.
+表示可用于 [Background](/connect-iq/api-docs/Toybox/Background/) 进程的代码块。
 
 **:debug**
 
-在编译时,以此注释装饰的代码块不会被包含在发布构建中.
+编译时，使用此注解修饰的代码块不会包含在发布构建中。
 
 **:release**
 
-在编译时,用此注释装饰的代码区块不会被包含在调试构建中.
+编译时，使用此注解修饰的代码块不会包含在调试构建中。
 
 **:test**
 
-表示[Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing)测试[Test](/connect-iq/api-docs/Toybox/Test/)模块可用的代码块
+表示可用于 [Run No Evil](/connect-iq/core-topics/unit-testing/#unit-testing) 测试 [Test](/connect-iq/api-docs/Toybox/Test/) 模块的代码块。
 
-编译器在构建项目时将注释写入项目"bin"目录中生成的`debug.xml`文件中.
+构建项目时，编译器会将注解写入项目 `bin` 目录生成的 `debug.xml` 文件。
