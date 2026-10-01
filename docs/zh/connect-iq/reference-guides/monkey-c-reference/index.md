@@ -273,7 +273,7 @@ System.println(a == c);  // Prints false
 var person = {:title=>"George", :name=>"Taylor"};
 ```
 
-符号的另一个重要用途是引用 [Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) 要调用的方法，或在调用 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 时传入方法。如果实现了 `myMethod{...}`，可以使用符号 `:myMethod` 引用它进行调用。更多示例请参阅 [Callbacks](#callbacks)。
+符号的另一个重要用途是引用 [Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) 要调用的方法，或在调用 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 时传入方法。如果实现了 `myMethod{...}`，可以使用符号 `:myMethod` 引用它进行调用。更多示例请参阅[回调](#callbacks)。
 
 <a id="enumerations"></a>
 
@@ -969,7 +969,7 @@ if (sensorInfo has :accel && sensorInfo.accel != null) {
 }
 ```
 
-### Callbacks
+### 回调
 
 Monkey C 中的函数不是一等对象，因此不能直接作为参数传递给其他函数作为回调。由于函数与创建它们的对象绑定，必须使用 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 对象创建回调。
 
