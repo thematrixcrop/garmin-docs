@@ -7,7 +7,7 @@ title: "模块：Toybox.Application"
 
 Application 模块包含每个 Connect IQ 应用的基类。
 
-Application 模块包含负责控制应用生命周期的 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 类。该模块还包含用于控制 Object Store 中保存的设置和属性值的 set 和 get 方法，以及定义可触发的不同目标类型的 GOAL\_TYPE 枚举。
+Application 模块包含负责控制应用生命周期的 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 类。该模块还包含用于控制对象存储中保存的设置和属性值的 set 和 get 方法，以及定义可触发的不同目标类型的 GOAL\_TYPE 枚举。
 
 ## 另见：
 
