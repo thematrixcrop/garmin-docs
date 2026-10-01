@@ -164,7 +164,7 @@ API 级别 3.3.0
 
 - [**timestamp**](#timestamp-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**x**](#x-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
@@ -183,7 +183,7 @@ API 级别 3.3.0
 
 ### var timestamp as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 起始版本：
 
