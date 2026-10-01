@@ -1,50 +1,37 @@
 ---
 title: "Coding Conventions"
 ---
+<a id="coding-conventions"></a>
 # 编码约定
 
-以下是子C代码的指南:
+以下是 Monkey C 代码的编写建议。
 
 ## 命名
 
-- 模块和课程以大字母上写的第一字母.
+- 模块和类使用首字母大写的驼峰命名法。
+- 函数使用首字母小写的驼峰命名法。
+- 私有类成员变量使用驼峰命名法，首字符为下划线（`_`），后接小写字母。
+- 公有类成员变量使用首字母小写的驼峰命名法。
+- 模块变量应使用首字母小写的驼峰命名法。
+- 枚举值必须使用共同前缀，例如 *COLOR_RED*、*COLOR_BLUE*。
+- 对于 POMO（Plain Old Monkey C Objects），可以将所有成员声明为公有成员。
 
-- 函数是 lower驼的,第一个字母总是小字母.
+## 源代码
 
-- 私人类成员变量是驼,第一字母是下标 (\_) 然后是第一字母小字母.
-
-- 公共类成员变量是 lower驼子,第一字母是小字母.
-
-- 模块变量应以下面的第一字母
-
-- 号必须有一个共同的前,例如*COLOR\_RED*, *COLOR\_BLUE*.
-
-- 在POMO (平坦的老子C对象) 中,所有公众成员都可以.
-
-
-## 源
-
-- 每个 source子C源文件上放一个类.
-
-- 子C代码应使用每分数水平均排列4个空间的空间. editor子C编辑器将自动将空间转换为标签,并删除后落的白空间.
-
-- 在定义模块,类别,函数和组时,将开放式放在与定义相同的线上,并将关闭式与定义的第一个字符一致.
-
+- 每个 Monkey C 源文件放置一个类。
+- Monkey C 代码的每级缩进使用四个空格。Monkey C editor 会自动将空格转换为制表符，并删除行尾空白。
+- 定义模块、类、函数和枚举时，将左大括号放在定义所在行；右大括号与定义的首字符对齐。
 
 ## 定义
 
-- 尽可能避免纯粹的全球变量.
-
-- 由于模块不是纯粹的词汇和运行时间内存成本,因此将类定义纳入全球模块是可接受的.
-
-- 避免在类定义中具有公共静态成员; 相反,将这些定义转移到母模块中.
-
-- 在你的类初始函数的第一个行,总是叫超级类初始.
-
+- 尽量避免使用纯全局变量。
+- 模块并非纯粹的词法容器，而且会产生运行时内存开销，因此可以将类定义放在全局模块中。
+- 避免在类定义中使用公有静态成员；应将这些定义移到父模块中。
+- 在类的 `initialize` 函数第一行始终调用超类的 `initialize`。
 
 ## 示例
 
-这里有一个样本:
+下面是一个示例：
 
 ```cpp
 class SampleName extends Toybox.Application.AppBase
@@ -55,15 +42,15 @@ class SampleName extends Toybox.Application.AppBase
     function initialize() {
         AppBase.initialize();
     }
-    // onStart() 在应用启动时调用
+    // onStart() is called on application start up
     function onStart(state) {
     }
 
-    // onStop() 在应用退出时调用
+    // onStop() is called when your application is exiting
     function onStop(state) {
     }
 
-    // 在此返回应用的初始视图
+    // Return the initial view of your application here
     function getInitialView(){
         return [new SampleNameView(), new SampleNameDelegate()];
     }
