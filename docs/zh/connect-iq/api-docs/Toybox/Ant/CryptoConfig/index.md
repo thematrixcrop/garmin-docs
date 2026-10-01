@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 ## 另见：
 
-- [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源 - ANT 消息协议](https://www.thisisant.com/developer/resources/downloads/)
 
 
 示例：
