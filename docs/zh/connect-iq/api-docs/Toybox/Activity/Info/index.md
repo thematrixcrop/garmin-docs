@@ -224,7 +224,7 @@ API 级别 1.0.0
 
 - [**trainingEffect**](#trainingEffect-var) as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-    当前活动的 Training Effect 分数。
+    当前活动的训练效果（Training Effect）分数。
 
 
 ## 实例属性详情
@@ -1018,7 +1018,7 @@ API 级别 1.0.0
 
 当前位置。
 
-除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
+除非启用定位权限（Positioning Permission），否则此成员始终提供 `null` 值。
 
 起始版本：
 
@@ -3496,7 +3496,7 @@ API 级别 2.1.0
 
 当前活动的起始位置。
 
-除非启用 Positioning Permission，否则此成员始终提供 `null` 值。
+除非启用定位权限（Positioning Permission），否则此成员始终提供 `null` 值。
 
 起始版本：
 
@@ -3997,7 +3997,7 @@ API 级别 2.1.0
 
 ### var trainingEffect as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**
 
-当前活动的 Training Effect 分数。
+当前活动的训练效果（Training Effect）分数。
 
 训练效果是由 FirstBeat 开发的评分，用于表示活动对有氧健身的影响程度。评分范围为 1.0（轻松）到 5.0（过度训练）。
 
