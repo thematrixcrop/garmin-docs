@@ -37,9 +37,9 @@ Monkey C 中的日期和时间格式相对开放，提供了用于短格式、�
 
 ## 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 示例：
@@ -239,9 +239,9 @@ var now = new Time.Moment(Time.now().value()); // UNIX epoch 631148400
 
 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 起始版本：
@@ -270,9 +270,9 @@ var now = new Time.Moment(Time.today().value()); // UNIX epoch 631087200
 
 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 起始版本：
