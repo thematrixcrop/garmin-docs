@@ -14,7 +14,7 @@ title: "Manifest 文件和权限"
 
 `entry` 属性必须指定应用的 [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 对象。
 
-`name` 和 `launcherIcon` 属性必须指定应用资源中定义的资源 ID。`name` 必须引用 strings 资源中的 `string` 条目，`launcherIcon` 必须引用 bitmap 资源。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#resources)。请注意，不应在应用中重复使用启动器图标资源；如果要在应用内部使用同一图标，请创建一个副本资源。
+`name` 和 `launcherIcon` 属性必须指定应用资源中定义的资源 ID。`name` 必须引用 strings 资源中的 `string` 条目，`launcherIcon` 必须引用 bitmap 资源。更多信息请参阅 [资源](/connect-iq/core-topics/resources/#resources)。请注意，不应在应用中重复使用启动器图标资源；如果要在应用内部使用同一图标，请创建一个副本资源。
 
 如果指定了 `launcherIcon`，资源编译器会自动调整资源大小以匹配产品图标尺寸。如果未指定 `launcherIcon`，系统会将默认图标编译到应用中。
 
@@ -124,7 +124,7 @@ API 级别 5.2 的设备支持安装后流程，允许用户将数据字段与�
 
 ## 语言
 
-Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会影响应用可以在哪些地区发布。在 Manifest 中声明应用支持的语言后，将应用导出到商店时会使用这些设置。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#strings)。
+Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会影响应用可以在哪些地区发布。在 Manifest 中声明应用支持的语言后，将应用导出到商店时会使用这些设置。更多信息请参阅 [资源](/connect-iq/core-topics/resources/#strings)。
 
 ## 依赖项
 
