@@ -4,7 +4,7 @@ title: "通知"
 <a id="notifications"></a>
 # 通知
 
-后台服务可以通过定时更新或事件唤醒的方式周期性运行。有时，你可能希望根据后台处理结果提示用户打开应用。
+后台服务可以通过定时更新或事件唤醒的方式周期性运行。有时，您可能希望根据后台处理结果提示用户打开应用。
 
 | API | 说明 | API 级别 |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ title: "通知"
 
 *自 API 级别 2.3.0 起支持*
 
-[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 可以打断用户当前操作，请求用户打开应用。调用后，系统会显示由你指定的确认消息。如果没有足够资源启动应用，系统可能会抑制此请求。
+[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 可以打断用户当前操作，请求用户打开应用。调用后，系统会显示由您指定的确认消息。如果没有足够资源启动应用，系统可能会抑制此请求。
 
 ## 通知
 
