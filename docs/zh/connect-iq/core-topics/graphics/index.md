@@ -92,19 +92,19 @@ function draw(dc) {
 
 ## 位图
 
-通过[资源编译器](/connect-iq/core-topics/resources/#bitmaps)可以将位图资源添加到可执行文件中。您可以使用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)在运行时加载位图，并使用[Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function)或[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)在[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function)调用中将其绘制到屏幕上。
+可以通过[资源编译器](/connect-iq/core-topics/resources/#bitmaps)将位图资源添加到可执行文件。运行时使用 [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) 加载位图，再在调用 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 时使用 [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) 或 [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) 将其绘制到屏幕。
 
 ### 变换
 
 *自 API 级别 4.2.2*
 
-Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 类创建二维仿射变换。[Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 提供对变换矩阵的访问，以及[旋转](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#rotate-instance_function)、缩放和[倾斜](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#shear-instance_function)等常用操作。要应用变换，请将 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 作为选项字典中的 `:transform` 参数传递给 [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)。
+Connect IQ 允许使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 类创建二维仿射变换。[Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 提供变换矩阵，以及[旋转](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#rotate-instance_function)、缩放和[倾斜](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/#shear-instance_function)等常用操作。要应用变换，请将 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/Graphics/AffineTransform/) 作为选项字典中的 `:transform` 参数传递给 [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function)。
 
 ### 着色
 
 *自 API 级别 4.2.2*
 
-有时您希望资源（例如图标）的颜色可由用户定义。例如，您可能希望表盘上的复杂功能图标匹配用户定义的主题颜色。[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) 支持为资源应用着色颜色。`:tintColor` 选项可用于指定应用到灰度资源的颜色。
+有时需要让用户定义资源（例如图标）的颜色。例如，可以让表盘上的复杂功能图标匹配用户定义的主题颜色。[Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) 支持为资源着色，`:tintColor` 选项用于指定应用到灰度资源的颜色。
 
 ### 图形池
 
@@ -118,11 +118,11 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 *自 API 级别 2.3.0*
 
-[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：第一种是从已加载的位图资源生成对象，此时提供的位图会作为可操作的绘图表面；第二种是指定表面的宽度和高度，并可选地指定颜色调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且没有调色板。如果向初始化器提供了位图资源，则会忽略宽度、高度和调色板参数。
+[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：一种是从已加载的位图资源生成对象，此时位图会作为可操作的绘图表面；另一种是指定表面的宽度和高度，并可选地指定调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且不带调色板。如果向初始化器提供位图资源，则会忽略宽度、高度和调色板参数。
 
 如果 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 包含调色板，可以使用 [BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function) 读取，也可以使用 [BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function) 修改。提供的调色板必须与位图现有的调色板大小相同。图像中的所有像素都会使用调色板中对应索引的新颜色。请注意，资源编译器生成的位图默认包含调色板；除非指定 `disableTransparency` 标志，否则调色板末尾还会有一个额外的透明索引。
 
-可以使用 [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) 方法从 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 获取绘图上下文。该方法返回一个 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 类，其能力与主设备提供给 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 等方法的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 相同。您可以通过在其中绘制形状、文本和位图来修改 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的内容。
+可以使用 [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) 方法从 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 获取绘图上下文。该方法返回 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象，能力与设备为 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function)、[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 等方法提供的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 相同。可以在其中绘制形状、文本和位图，修改 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的内容。
 
 ##### 缓冲的比特图和图形池
 
