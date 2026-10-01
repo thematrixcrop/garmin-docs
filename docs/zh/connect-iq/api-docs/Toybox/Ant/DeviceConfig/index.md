@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 ## 另见：
 
-- [ANT Downloads & Resources - ANT Message Protocol](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源 - ANT 消息协议](https://www.thisisant.com/developer/resources/downloads/)
 
 - [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/)
 
@@ -365,7 +365,7 @@ API 级别 1.0.0
 
 另见：
 
-- [ANT Downloads & Resources - ANT Message Protocol and Usage](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源 - ANT 消息协议和用法](https://www.thisisant.com/developer/resources/downloads/)
 
 
 起始版本：
