@@ -1,5 +1,5 @@
 ---
-title: "Notifications"
+title: "通知"
 ---
 <a id="notifications"></a>
 # 通知
