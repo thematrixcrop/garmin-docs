@@ -46,7 +46,7 @@ export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/curre
 
 1.  [安装 Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
-2.  在命令提示符中将 `PATH` 指向活动 Connect IQ 的 `bin` 目录：
+2.  在终端中将 `PATH` 指向活动 Connect IQ 的 `bin` 目录：
 
 
 ```bash
@@ -70,7 +70,7 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 
 安装后会有三个新的 shell 命令可用：`connectiq`、`monkeyc` 和 `monkeydo`。
 
--   `connectiq` 启动 Connect IQ Simulator。你可以在将应用运行到设备前，先在计算机上运行和测试应用。在 Simulator 中，应用只能访问当前模拟设备支持的 API。例如，`PersistedContent` 只在 Connect IQ v2.2.x 或更高版本中提供，因此运行早期 Connect IQ 版本的设备无法使用该 API。
+-   `connectiq` 启动 Connect IQ Simulator。您可以在将应用运行到设备前，先在计算机上运行和测试应用。在 Simulator 中，应用只能访问当前模拟设备支持的 API。例如，`PersistedContent` 只在 Connect IQ v2.2.x 或更高版本中提供，因此运行早期 Connect IQ 版本的设备无法使用该 API。
 
 -   `monkeyc` 调用 Monkey C 编译器。编译器可以从多个文件读取代码，并将它们链接成一个 Connect IQ 可执行文件（PRG 文件）。用法如下：
 
