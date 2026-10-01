@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储加速度计采样数据的类。
 
-指定的每个字段都是 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 或 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的值以 Milli G 为单位。作为参考，1000 Milli G = 1 G。如果不为 `null`，所有字段的大小都相同。此项通常用于 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 使用的回调方法
+每个字段都是包含 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 或 [Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的采样值以毫 G 为单位，1000 毫 G = 1 G。所有非 `null` 字段的数组长度相同。此类通常用于通过 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 注册的回调方法。
 
 ## 另见：
 
