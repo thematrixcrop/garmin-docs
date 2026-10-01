@@ -102,11 +102,11 @@ API 级别 1.2.6
 
 - [**getHeartRateZones**](#getHeartRateZones-instance_function)(sport as [UserProfile.SportHrZone](/connect-iq/api-docs/Toybox/UserProfile/#SportHrZone-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* min zone 1 - 区间 1 的最小心率阈值 \* max zone 1 - 区间 1 的最大心率阈值 \* max zone 2 - 区间 2 的最大心率阈值 \* max zone 3 - 区间 3 的最大心率阈值 \* max zone 4 - 区间 4 的最大心率阈值 \* max zone 5 - 区间 5 的最大心率阈值。
+    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* 区间 1 的最小心率阈值 \* 区间 1 的最大心率阈值 \* 区间 2 的最大心率阈值 \* 区间 3 的最大心率阈值 \* 区间 4 的最大心率阈值 \* 区间 5 的最大心率阈值。
 
 - [**getHeartRateZones2**](#getHeartRateZones2-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* min zone 1 - 区间 1 的最小心率阈值 \* max zone 1 - 区间 1 的最大心率阈值 \* max zone 2 - 区间 2 的最大心率阈值 \* max zone 3 - 区间 3 的最大心率阈值 \* max zone 4 - 区间 4 的最大心率阈值 \* max zone 5 - 区间 5 的最大心率阈值。
+    获取当前心率区间阈值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，单位为每分钟心跳次数（bpm）。返回的 Array 包含以下区间值：\* 区间 1 的最小心率阈值 \* 区间 1 的最大心率阈值 \* 区间 2 的最大心率阈值 \* 区间 3 的最大心率阈值 \* 区间 4 的最大心率阈值 \* 区间 5 的最大心率阈值。
 
 - [**getPowerZones**](#getPowerZones-instance_function)(sport as [Activity.Sport](/connect-iq/api-docs/Toybox/Activity/#Sport-module)) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
