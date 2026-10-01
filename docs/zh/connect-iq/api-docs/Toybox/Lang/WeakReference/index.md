@@ -33,7 +33,7 @@ API 级别 1.2.0
 
 - [**get**](#get-instance_function)() as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-    获取 WeakReference 引用的 Object。
+    获取 WeakReference 引用的对象（Object）。
 
 - [**stillAlive**](#stillAlive-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
@@ -44,13 +44,13 @@ API 级别 1.2.0
 
 ### **get()** as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**
 
-获取 WeakReference 引用的 Object
+获取 WeakReference 引用的对象（Object）。
 
 返回：
 
 - [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) —
 
-    所引用的 Object；如果 Object 不再存在，则为 `null`
+    所引用的对象（Object）；如果对象（Object）不再存在，则为 `null`
 
 
 起始版本：
