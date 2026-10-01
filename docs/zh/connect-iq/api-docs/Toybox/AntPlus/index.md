@@ -7,7 +7,7 @@ title: "模块：Toybox.AntPlus"
 
 AntPlus 模块包含 ANT+ 数据的接口。
 
-ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用于定义通过 ANT 传输的信息含义。例如，心率监测器会根据 ANT+ 心率设备配置文件中的定义，通过 ANT 发送心率信息。CIQ 设备可以使用 [ANT Module](/connect-iq/api-docs/Toybox/Ant/) 实现 ANT+ 设备配置文件，并与附近同样实现了该 ANT+ 设备配置文件的设备通信，例如心率、骑行功率和健身器材控制。AntPlus 模块提供了用于以特定且标准化方式与 ANT+ 配置文件通信的 API，这些配置文件定义在下方链接所指向的文档“ANT+ Device Profiles”中。
+ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用于定义通过 ANT 传输的信息含义。例如，心率监测器会根据 ANT+ 心率设备配置文件中的定义，通过 ANT 发送心率信息。CIQ 设备可以使用 [ANT 模块](/connect-iq/api-docs/Toybox/Ant/)实现 ANT+ 设备配置文件，并与附近同样实现了该 ANT+ 设备配置文件的设备通信，例如心率、骑行功率和健身器材控制。AntPlus 模块提供了用于以特定且标准化方式与 ANT+ 配置文件通信的 API，这些配置文件定义在下方链接所指向的文档“ANT+ Device Profiles”中。
 
 ## 另见：
 
