@@ -11,7 +11,7 @@ test 模块提供在源代码中实现自定义单元测试和断言的工具。
 
 ## 另见：
 
-- [Core Topics - Unit Testing](/connect-iq/core-topics/unit-testing/)
+- [核心主题 - 单元测试](/connect-iq/core-topics/unit-testing/)
 
 
 示例：
