@@ -50,7 +50,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 
 ## 实例属性详情
