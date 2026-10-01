@@ -201,7 +201,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeCadenceListener](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
