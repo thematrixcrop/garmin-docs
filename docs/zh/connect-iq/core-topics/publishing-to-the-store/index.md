@@ -1,5 +1,5 @@
 ---
-title: "Publishing to the Connect IQ Store"
+title: "发布到 Connect IQ 商店"
 ---
 # 发布到 Connect IQ 商店
 
