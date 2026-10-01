@@ -1,39 +1,40 @@
 ---
 title: "Using Monkey C from the Command Line"
 ---
-通过命令线的子C
+<a id="using-monkey-c-from-the-command-line"></a>
+# 从命令行使用 Monkey C
 
-在开始在Mac或Windows上安装之前,您需要安装Oracle JavaTM运行环境版本11或更高的版本.
+在 Mac 或 Windows 上开始安装前，需要先安装 Oracle Java™ Runtime Environment 11 或更高版本。完成后，继续按照对应平台的安装说明操作。
 
 ## OS X 安装
 
-1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
+1.  [安装 Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
-2. 将`PATH`指向终端的Connect IQbin目录.暂时将其添加到单个本地实例中:
+2.  在 Terminal 中将 `PATH` 指向活动 Connect IQ 的 `bin` 目录。要临时添加到当前 shell 实例，请执行：
 
 
 ```bash
-$ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
+$ export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-为了更持久的添加,在文本编辑器中打开`.bash_profile`:
+要永久添加，请在文本编辑器中打开 `.bash_profile`：
 
 ```bash
 $ touch ~/.bash_profile
 $ open ~/.bash_profile
 ```
 
-然后将下面的行添加到文件中,并保存更改:
+将下面一行添加到文件中并保存：
 
 ```bash
-export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/current-sdk.cfg`/bin
+export PATH=$PATH:`cat $HOME/Library/Application\ Support/Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
 ## Windows 安装
 
-1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
+1.  [安装 Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
-2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
+2.  在命令提示符中将 `PATH` 指向活动 Connect IQ 的 `bin` 目录：
 
 
 ```bash
@@ -43,23 +44,23 @@ export PATH=$PATH:`cat $HOME/Library/Application\ 支持/Garmin/ConnectIQ/curren
 
 ## Linux 安装
 
-1. [安装 Connect IQ SDK 管理器](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
+1.  [安装 Connect IQ SDK Manager](/connect-iq/connect-iq-basics/getting-started/)，下载 SDK 并设置活动 SDK。
 
-2. 在命令提示中,指向`PATH`到活跃的连接IQbin目录:
+2.  在命令提示符中将 `PATH` 指向活动 Connect IQ 的 `bin` 目录：
 
 
 ```bash
 $ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 ```
 
-为了更持久的添加,在文本编辑器中打开`.bash_profile`:
+要永久添加，请在文本编辑器中打开 `.bash_profile`：
 
 ```bash
 $ touch ~/.bash_profile
 $ nano ~/.bash_profile
 ```
 
-然后将下面的行添加到文件中,并保存更改:CTRL-X
+将下面一行添加到文件中并保存更改：按 `CTRL-X`。
 
 ```bash
 export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
@@ -67,11 +68,11 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 
 ## 基本命令
 
-在安装后,有三个新的 shell 命令:`connectiq`,`monkeyc`和`monkeydo`.
+安装后会有三个新的 shell 命令可用：`connectiq`、`monkeyc` 和 `monkeydo`。
 
--   `connectiq` 启动 Connect IQ 模拟器，您可以在应用程序运行到设备前，在计算机上运行和测试应用程序。在模拟器中，应用程序只能访问当前模拟设备提供的 API。例如，仅 Connect IQ v2.2.x 或更高版本提供的 API（如 `PersistedContent`）在运行早期版本 Connect IQ 的设备上不可用。
+-   `connectiq` 启动 Connect IQ Simulator。你可以在将应用运行到设备前，先在计算机上运行和测试应用。在 Simulator 中，应用只能访问当前模拟设备支持的 API。例如，`PersistedContent` 只在 Connect IQ v2.2.x 或更高版本中提供，因此运行早期 Connect IQ 版本的设备无法使用该 API。
 
-编译器可以从多个文件中取代代码并将它们连接到单个Connect IQ执行器 (一个PRG文件) 中. 使用方式是:
+-   `monkeyc` 调用 Monkey C 编译器。编译器可以从多个文件读取代码，并将它们链接成一个 Connect IQ 可执行文件（PRG 文件）。用法如下：
 
 
 ```bash
@@ -82,12 +83,12 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 | --- | --- |
 | `-d <arg>` | 目标设备 |
 | `-f <arg>` | Jungle 文件 |
-| `-o <arg>` |创建输出文件|
-| `-y <arg>` |[Private key](#generating-a-key-using-openssl)签字的构建|
+| `-o <arg>` | 要创建的输出文件 |
+| `-y <arg>` | 用于签名构建的[私钥](#generating-a-key-using-openssl) |
 
-** 注:** 查看 command子C指南中[Compiler Options](/connect-iq/monkey-c/compiler-options/)部分,了解所有命令行选项的更多信息.
+**注意：** 有关全部命令行选项的更多信息，请参阅 Monkey C 指南中的 [Compiler Options](/connect-iq/monkey-c/compiler-options/) 部分。
 
--`monkeydo`在模拟器中运行了Connect IQ执行式.你必须以前使用`connectiq`启动模拟器.使用方式是:
+-   `monkeydo` 在 Simulator 中运行 Connect IQ 可执行文件。必须先使用 `connectiq` 启动 Simulator。用法如下：
 
 
 ```bash
@@ -96,12 +97,12 @@ monkeydo [executable] [device_id] [-n] [-t | -t test_name]
 
 | 参数 | 定义 |
 | --- | --- |
-| `executable` |运行一个连接智商执行式 (PRG)|
-| `device_id` |模拟设备 (例如"fenix5plus")|
-| `-n` |在传感器本地对接模式下运行应用程序|
-| `-t` |执行 Run No Evil 单元测试. 提供可选的测试方法或类名单,只运行该测试或测试集.|
+| `executable` | 要运行的 Connect IQ 可执行文件（PRG） |
+| `device_id` | 要模拟的设备（例如 `fenix5plus`） |
+| `-n` | 以传感器原生配对模式运行应用 |
+| `-t` | 执行 Run No Evil 单元测试。可以提供可选的测试方法或类名，仅运行该测试或测试集合。 |
 
-以下是从命令行构建和运行周期的基本例子:
+下面是一个从命令行构建和运行应用的基本示例：
 
 ```bash
 // Launch the simulator:
@@ -114,15 +115,16 @@ monkeydo [executable] [device_id] [-n] [-t | -t test_name]
 > monkeydo myApp.prg fenix5plus
 ```
 
-** 注:** 更多关于`-f`选项和林构建框架的信息,请参阅本指南的[Overriding Resources](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide)部分.
+**注意：** 有关 `-f` 选项和 Jungle 构建框架的更多信息，请参阅本指南中的 [Overriding Resources](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide) 部分。
 
-##使用OpenSSL生成密钥
+<a id="generating-a-key-using-openssl"></a>
+## 使用 OpenSSL 生成密钥
 
-如果您从命令行工作,您可以使用[OpenSSL](https://www.openssl.org/)生成RSA键.下列命令将生成有效的签字键.
+如果从命令行工作，可以使用 [OpenSSL](https://www.openssl.org/) 生成 RSA 密钥。以下命令会生成有效的签名密钥。
 
 ```bash
 > openssl genrsa -out developer_key.pem 4096
 > openssl pkcs8 -topk8 -inform PEM -outform DER -in developer_key.pem -out developer_key.der -nocrypt
 ```
 
-这个开发者密钥,`developer_key.der`,通过`-y`命令行选项传递到编译器中.
+将开发者密钥 `developer_key.der` 通过 `-y` 命令行选项传递给编译器。
