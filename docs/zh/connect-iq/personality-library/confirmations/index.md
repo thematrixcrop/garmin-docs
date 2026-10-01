@@ -1,17 +1,17 @@
 ---
-title: "Confirmations"
+title: "确认"
 ---
 # 确认
 
-确认要求用户对一个问题作出"是"或"不"的答案.确认通常仅仅是文本.确认是增加少量的摩擦到重要决策的有用方法,以确保用户理解它们的意义.
+确认页面会要求用户回答一个“是”或“否”的问题。确认通常只包含文本，是为重要决定增加少量确认步骤、确保用户理解其影响的实用方式。
 
 ![设备正面显示“是”确认界面](/connect-iq/resources/personality-library/personality_ui_confirmationhigh.jpg)
 
-一个是/不是确认给用户提供了确认行动的机会.
+是/否确认会让用户有机会确认某项操作。
 
 ## 示例
 
-下面的示例使用[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)来显示"是/否"确认.
+下面的示例使用 [WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 显示是/否确认。
 
 ```typescript
 // InputDelegate.mc
@@ -31,30 +31,30 @@ WatchUi.pushView(
 
 ![设备正面显示删除确认界面](/connect-iq/resources/personality-library/personality_ui_delete_confirmationhigh.jpg)
 
-删除确认要求用户确认是否想要删除一个项目.
+删除确认会要求用户确认是否要删除某个项目。
 
 ## 示例
 
-[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)不支持删除确认,但您可以使用选择器构建自己的确认.
+[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 不支持删除确认，但可以使用选择器构建自定义确认页面。
 
 ```xml
 <!-- layout.xml -->
 
-    <!-- 删除确认页面 -->
+    <!-- A Delete Confirmation page -->
     <layout id="DeleteConfirmationPage">
-        <!-- 确认 -->
+        <!-- Confirm -->
         <bitmap id="confirmIcon" personality="
             confirmation_icon__hint_confirm
             confirmation_loc__hint_confirm
         " />
 
-        <!-- 删除 -->
+        <!-- Delete -->
         <bitmap id="deleteIcon" personality="
             confirmation_icon__hint_delete
             confirmation_loc__hint_delete
         " />
 
-        <!-- 提示正文 -->
+        <!-- Prompt body -->
         <text-area text="@Strings.deletePrompt" personality="
             confirmation_color_dark__body
             confirmation_size__body
@@ -94,15 +94,15 @@ WatchUi.pushView(
 ```
 
 ```typescript
-// 辅助函数
+// Helper Functions
 
 import Rez.Styles;
 
-//! 检查点击是否落在
-//! 确认触摸区域内。
-//! @param x 点击的 X 坐标
-//! @param y 点击的 Y 坐标
-//! @return 点击时为 true，否则为 false
+//! Function to see if a tap falls within the touch area for
+//! the confirm touch area.
+//! @param x X coord of tap
+//! @param y Y coord of tap
+//! @return true if tapped, false otherwise
 function isInConfirmArea(coord as Array<Numeric>) as Boolean {
     if (Styles.confirmation_input__confirm has :x1 &&
         Styles.confirmation_input__confirm has :y1 &&
@@ -122,11 +122,11 @@ function isInConfirmArea(coord as Array<Numeric>) as Boolean {
     return false;
 }
 
-//! 检查点击是否落在
-//! 拒绝触摸区域内。
-//! @param x 点击的 X 坐标
-//! @param y 点击的 Y 坐标
-//! @return 点击时为 true，否则为 false
+//! Function to see if a tap falls within the touch area for
+//! the reject touch area.
+//! @param x X coord of tap
+//! @param y Y coord of tap
+//! @return true if tapped, false otherwise
 function isInRejectArea(coord as Array<Numeric>) as Boolean {
     if (Styles.confirmation_input__reject has :x1 &&
         Styles.confirmation_input__reject has :y1 &&
