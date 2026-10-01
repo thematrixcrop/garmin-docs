@@ -7,7 +7,7 @@ title: "如何优化应用中的位图？"
 ![](/connect-iq/resources/faq/cake_undithered.jpg)
 ![](/connect-iq/resources/faq/cake_dithered.png)
 
-在 HTML、百万像素和 GB 已成为日常概念的今天，很容易忘记位图图像也会占用资源。Connect IQ 的嵌入式环境资源有限，开发者在制作页面时必须考虑位图的成本。Connect IQ SDK 提供了多种工具，帮助你控制图像的资源消耗，同时制作出外观出色的应用。
+在 HTML、百万像素和 GB 已成为日常概念的今天，很容易忘记位图图像也会占用资源。Connect IQ 的嵌入式环境资源有限，开发者在制作页面时必须考虑位图的成本。Connect IQ SDK 提供了多种工具，帮助您控制图像的资源消耗，同时制作出外观出色的应用。
 
 ## 位深度
 
@@ -116,7 +116,7 @@ Connect IQ 导入图像时默认使用 [Floyd-Steinberg dithering](https://en.wi
 
 ## 调色板
 
-导入图像时，Connect IQ 默认会为设备选择最佳可用位深度。这意味着在 16 色设备上，图像会作为经过抖动处理的 4 位图像导入；在 RGB222 设备上，图像会作为经过抖动处理的 8 位、64 色图像导入。这样可以让 Doge 尽可能清晰可辨。
+导入图像时，Connect IQ 默认会为设备选择最佳可用位深度。这意味着在 16 色设备上，图像会作为经过抖动处理的 4 位图像导入；在 RGB222 设备上，图像会作为经过抖动处理的 8 位、64 色图像导入。这样可以让图像尽可能清晰可辨。
 
 ![](/connect-iq/resources/faq/doge.png)
 
