@@ -6,7 +6,7 @@ title: "Monkey Graph 参考"
 Monkey Graph 工具可以根据活动中记录的数据生成预览图表。使用该工具需要以下文件：
 
 1. 包含已记录开发者数据的 FIT 文件；
-2. 应用的 IQ 文件（可以通过 [App Export Wizard](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store) 获取）。
+2. 应用的 IQ 文件（可以通过[应用导出向导](/connect-iq/core-topics/publishing-to-the-store/#publishing-to-the-connect-iq-store)获取）。
 
 您可以在上传应用审核前，使用该工具检查图表的显示效果。
 
