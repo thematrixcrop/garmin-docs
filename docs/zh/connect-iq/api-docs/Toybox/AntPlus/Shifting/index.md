@@ -134,7 +134,7 @@ API 级别 3.1.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.ShiftingListener](/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
