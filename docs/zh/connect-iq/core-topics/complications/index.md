@@ -1,50 +1,50 @@
 ---
 title: "Complications"
 ---
-# 复杂功能
+<a id="complications"></a>
+# Complications
 
-Garmin 设备在用户佩戴时收集大量数据点。其中许多数据点可以汇总，并作为[复杂功能](https://en.wikipedia.org/wiki/Complication_(horology))显示在表盘上。Connect IQ SDK 提供多个 API 来访问用户指标，并在每个版本中不断扩展可用功能。
+Garmin 设备在用户佩戴期间会收集大量数据点。其中许多数据点可以汇总，并作为 [complication](https://en.wikipedia.org/wiki/Complication_(horology)) 显示在 Watch Face 上。Connect IQ SDK 提供了多个访问用户指标的 API，并在每个版本中不断扩展可用指标。
 
-[Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/)模块将Garmin设备通常显示的特定指标结合成一个统一的接口.这种统一的接口为开发者提供了开发者通常在表面上显示的信息的访问权限.使用发布/订阅模型来揭示并发症.
+[Toybox.Complications](/connect-iq/api-docs/Toybox/Complications/) 模块将 Garmin 设备通常显示的特定指标整合为统一接口，为开发者提供 Watch Face 上常见的信息。Complication 通过发布/订阅模型公开。
 
-此外，设备应用和音频内容提供者开发人员现在可以使用此新框架发布最多四个复杂功能。在系统中，复杂功能具有公开、受保护和私有三种可见性级别。
+此外，Device app 和 Audio Content Provider 开发者现在可以使用这一框架发布最多四个 Complication。Complication 在系统中有 public、protected 和 private 三种可见性级别。
 
-最后，Face It 也将成为 Connect IQ 复杂功能的使用者。这使开发者能够创建可发布到 Face It 表盘的信息。
+最后，Face It 也可以使用 Connect IQ Complication。开发者可以创建能够发布到 Face It Watch Face 的信息。
 
 ## 发布者和订阅者
 
-
 ![](/connect-iq/resources/programmers-guide/complication_publishers_and_subscribers.png)
 
-复杂功能系统的核心是发布者/订阅者系统。系统发布供订阅者使用的复杂功能数据。Connect IQ 设备应用和音频内容提供者可以发布复杂功能数据，但只有表盘可以订阅复杂功能信息。
+Complication 系统的核心是发布者和订阅者模型。系统发布 Complication 数据供订阅者使用。Connect IQ Device app 和 Audio Content Provider 可以发布 Complication 数据，但只有 Watch Face 可以订阅 Complication 信息。
 
-### 复杂功能对象
+### Complication 对象
 
-数据作为[Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/)对象发布.复杂性对象暴露以下信息:
+数据以 [Complications.Complication](/connect-iq/api-docs/Toybox/Complications/Complication/) 对象发布。该对象提供以下信息：
 
-| 标识符 | 描述 | API 级别 |
+| Identifier | Description | API level |
 | --- | --- | --- |
-| [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) |发布的[Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)类型数据类型的唯一标识符| 4.2.0 |
-| [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) |长标签是用于配置菜单中显示的.| 4.2.0 |
-| [Complication.ranges](/connect-iq/api-docs/Toybox/Complications/Complication/#ranges-var) |选项数值阵列. 范围允许将可集成到显示器中的数值组分解.| 4.2.0 |
-| [Complication.shortLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#shortLabel-var) |五个字符的字符串旨在总结你的复杂性为一个半径复杂性.| 4.2.0 |
-| [Complication.unit](/connect-iq/api-docs/Toybox/Complications/Complication/#unit-var) |如果这是`null`则该单元不应该显示.如果这是`UNIT`标识符,则`value`预计将在特定的单元中进行转换.如果`unit`是字符串,则`value`应在没有转换的情况下解释.| `4.2.0` |
-| [Complication.value](/connect-iq/api-docs/Toybox/Complications/Complication/#value-var) |列或数字值,描述向用户显示的值| `4.2.0` |
+| [Complication.complicationId](/connect-iq/api-docs/Toybox/Complications/Complication/#complicationId-var) | 所发布数据类型的唯一标识符，类型为 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)。 | 4.2.0 |
+| [Complication.longLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#longLabel-var) | Complication 的文字名称，用于在配置菜单中显示。 | 4.2.0 |
+| [Complication.ranges](/connect-iq/api-docs/Toybox/Complications/Complication/#ranges-var) | 可选的数值数组，用于定义值的区间，以便整合到显示内容中。 | 4.2.0 |
+| [Complication.shortLabel](/connect-iq/api-docs/Toybox/Complications/Complication/#shortLabel-var) | 最多五个字符的字符串，用于以 radial Complication 形式概括 Complication。 | 4.2.0 |
+| [Complication.unit](/connect-iq/api-docs/Toybox/Complications/Complication/#unit-var) | 值使用的单位。如果为 `null`，则不显示单位；如果是 `UNIT` 标识符，`value` 应使用指定单位，以便系统转换；如果是字符串，则直接解释 `value`，不进行转换。 | 4.2.0 |
+| [Complication.value](/connect-iq/api-docs/Toybox/Complications/Complication/#value-var) | 描述要向用户显示的值的字符串或数值。 | 4.2.0 |
 
-您可以使用这些配件查询更多信息:
+还可以通过以下方法查询更多信息：
 
-| 方法 | 描述 | API 级别 |
+| Method | Description | API level |
 | --- | --- | --- |
-| [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) |对于 Connect IQ 复杂性,请查询应用程序提供的图标| 4.2.0 |
-| [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) |对于本土的并发症,返回`COMPLICATION_TYPE`.将返回`COMPLICATION_TYPE_INVALID`连接智商并发症.| 4.2.0 |
+| [Complication.getIcon()](/connect-iq/api-docs/Toybox/Complications/Complication/#getIcon-instance_function) | 对于 Connect IQ Complication，获取应用提供的图标。 | 4.2.0 |
+| [Complication.getType()](/connect-iq/api-docs/Toybox/Complications/Complication/#getType-instance_function) | 对于原生 Complication，返回 `COMPLICATION_TYPE`。对于 Connect IQ Complication，返回 `COMPLICATION_TYPE_INVALID`。 | 4.2.0 |
 
 ### 单位
 
-复杂性允许在用户在系统设置中配置的单位中发布信息.在收到复杂性值时,用户的角色是将值转换为系统设置中指定的指标.
+Complication 可以使用用户在系统设置中配置的单位发布信息。接收 Complication 值时，订阅者负责将其转换为系统设置中指定的单位。
 
-预计单位将以以下方式公布:
+单位应按以下方式发布：
 
-| 单位 | 预期值 |
+| Unit | Expected Value |
 | --- | --- |
 | [`Complications.UNIT_DISTANCE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 米 |
 | [`Complications.UNIT_ELEVATION`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 米 |
@@ -53,9 +53,9 @@ Garmin 设备在用户佩戴时收集大量数据点。其中许多数据点可�
 | [`Complications.UNIT_TEMPERATURE`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 摄氏度 |
 | [`Complications.UNIT_WEIGHT`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) | 克 |
 
-## 订阅复杂性
+## 订阅 Complication
 
-要订阅复杂功能，您需要在清单文件中添加 `ComplicationSubscriber` 权限。订阅复杂功能需要使用 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)。您可以使用 [Complications.getComplications()](/connect-iq/api-docs/Toybox/Complications/#getComplications-instance_function) 查询系统支持的所有复杂功能，也可以通过显式构造 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) 直接查询原生复杂功能：
+要订阅 Complication，需要在 Manifest 文件中添加 `ComplicationSubscriber` 权限。订阅 Complication 需要 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/)。可以使用 [Complications.getComplications()](/connect-iq/api-docs/Toybox/Complications/#getComplications-instance_function) 查询系统支持的全部 Complication，也可以显式构造 [Complications.Id](/connect-iq/api-docs/Toybox/Complications/Id/) 来直接查询原生 Complication：
 
 ```typescript
 var complication = Complications.getComplication(
@@ -63,37 +63,37 @@ var complication = Complications.getComplication(
 );
 ```
 
-这只适用于本土的并发症. 一旦您获得了并发症ID,您可以保留存储的ID以后使用.
+这种方式只适用于原生 Complication。获取 Complication ID 后，可以将其持久化到 Storage，供之后使用。
 
-您可以使用[Complications.registerComplicationChangeCallback()](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function)订阅多个复杂值.当应用程序关闭时,所有订阅都会终止,并且必须在应用程序启动时重新完成.
+可以使用 [Complications.registerComplicationChangeCallback()](/connect-iq/api-docs/Toybox/Complications/#registerComplicationChangeCallback-instance_function) 订阅多个 Complication 值。应用关闭时所有订阅都会终止，应用下次启动时必须重新订阅。订阅时，需要注册一个在值更新时调用的回调：
 
 ```typescript
 function onStart(params as Dictionary) as Void {
-    // 获取持久化的复杂功能 ID
+    // Retrieve persisted Complication ID
     mComplicationId = Storage.getValue(COMPLICATION_ID_KEY);
 
-    // 注册用于接收复杂功能信息
-    // 更新的回调
+    // Register a callback for receiving
+    // updates on complication information
     Complications.registerComplicationChangeCallback(
         self.method(:onComplicationChanged));
 
-    // 建立链接并订阅
+    // Liking and subscribing
     Complications.subscribeToUpdates(mComplicationId);
 }
 ```
 
-在回调中,您可以查询更新的信息并处理:
+在回调中，可以查询更新后的信息并进行处理：
 
 ```typescript
 function onComplicationChanged(
     complicationId as Complication.Id) as Void {
-    // 确定正在更新的复杂功能
+    // Identify the complication being updated
     if (complicationId == mComplicationId) {
-        // 获取复杂功能信息
+        // Get the complication information
         try {
             var data = Complications.getComplication(
                 complicationId);
-            // 处理应用逻辑
+            // Handle the application processing
             updateData(complicationId, data);
         } catch (e instanceof ComplicationNotFoundException) {
             handleComplicationRemoval(complicationId);
@@ -102,26 +102,26 @@ function onComplicationChanged(
 }
 ```
 
-如果复杂功能不再可用（例如用户卸载了发布应用），系统会抛出 [Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)。您应捕获此异常并在应用程序中进行处理。如果发布应用被卸载，系统会向您的 `ComplicationChangeCallback` 发送事件，并自动取消应用程序对所有已订阅复杂功能的订阅。
+如果 Complication 不再可用，例如用户卸载了发布应用，系统会抛出 [Complications.ComplicationNotFoundException](/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException/)。应捕获此异常并在应用中处理。如果发布应用被卸载，系统会向 `ComplicationChangeCallback` 发送事件，并自动取消应用对所有已订阅 Complication 的订阅。
 
-当轮椅模式启用时,`COMPLICATION_TYPE_STEPS`和`COMPLICATION_TYPE_FLOORS_CLIMBED`将被`COMPLICATION_TYPE_WHEELCHAIR_PUSHES`取代.
+启用 wheelchair mode 后，`COMPLICATION_TYPE_STEPS` 和 `COMPLICATION_TYPE_FLOORS_CLIMBED` 会替换为 `COMPLICATION_TYPE_WHEELCHAIR_PUSHES`。
 
-### 保持发射
+### 长按启动
 
-一些Connect IQ产品有一个功能,按下并保持一个复杂的功能,启动相关的应用程序.你可以通过实施[WatchFaceDelegate.onPress()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function)方法,将此功能添加到你的手表面:
+部分 Connect IQ 产品支持长按 Complication 启动关联应用。可以通过实现 [WatchFaceDelegate.onPress()](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function) 方法，将此功能加入 Watch Face：
 
 ```typescript
 function onPress(clickEvent as ClickEvent) as Boolean {
     if ((mComplicationId != null) &&
          isClickInside(clickEvent, mBoundingBox)) {
 
-        // 启动发布该复杂功能的
-        // 应用
+        // launch the app that published the
+        // complication
         try {
             Complications.exitTo(mComplicationId);
             return true;
         } catch (e instanceof AppNotInstalledException) {
-            // 继续执行
+            // fall through
         }
     }
 
@@ -129,15 +129,15 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 }
 ```
 
-如果您的复杂性发布器通过等待启动启动,则您的`state`字典参数将设置`:launchedFromComplication`选项为启动的复杂性 id.
+如果发布者应用通过长按启动，传入应用的 `state` 字典参数会包含 `:launchedFromComplication` 选项，其值为触发启动的 Complication ID。
 
-## 发布复杂功能
+## 发布 Complication
 
-如果您正在开发设备或音频内容提供者应用，可以向框架发布最多四个复杂功能。要发布复杂功能，您需要在清单文件中添加 `ComplicationPublisher` 权限。
+如果开发 Device app 或 Audio Content Provider 应用，可以向框架发布最多四个 Complication。发布 Complication 前，需要在 Manifest 文件中添加 `ComplicationPublisher` 权限。
 
 ### 资源
 
-要发布复杂功能，您必须在资源中定义每个复杂功能：
+发布 Complication 时，必须在资源中定义每个 Complication：
 
 ```xml
 <complications>
@@ -159,70 +159,70 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 </complications>
 ```
 
-`complication`元素具有以下属性:
+`complication` 元素包含以下属性：
 
-| 属性 | 描述 | 必需 | API 级别 |
+| Attribute | Description | Required | API level |
 | --- | --- | --- | --- |
-| `id` | 在版本之间保持此值稳定。在版本之间更改此值会影响应用程序更新后使用您复杂功能的应用程序。 | 是 | 4.2.0 |
-| `access` | `public`、`protected` 或 `private` | 是 | 4.2.0 |
-| `longLabel` | 描述复杂功能值。 | 是 | 4.2.0 |
-| `shortLabel` | 用于将复杂功能显示为环形复杂功能的应用程序的短字符串。 | 否 | 4.2.0 |
-| `icon` | 要与此复杂功能关联的图标资源标识符。如果 `access` 为 `public` 或 `protected`，指定的资源必须是 `svg`。图标无法在运行时更改。 | 是 | 4.2.0 |
-| `glancePreview` | 布尔值。用户查看概览时，可将一个复杂功能标识为预览值。只能将一个复杂功能标识为预览值。 | 否 | 4.2.0 |
+| `id` | 0 到 255 的数值标识符。不同版本间应保持稳定；更改此值会影响应用更新后使用该 Complication 的应用。 | 是 | 4.2.0 |
+| `access` | `public`、`protected` 或 `private`。 | 是 | 4.2.0 |
+| `longLabel` | 描述 Complication 值的标题。 | 是 | 4.2.0 |
+| `shortLabel` | 用于以 radial Complication 形式显示该值的应用的短字符串。 | 否 | 4.2.0 |
+| `icon` | 要关联的图标资源标识符。如果 access 为 `public` 或 `protected`，该资源必须是 `svg`。图标不能在运行时更改。 | 是 | 4.2.0 |
+| `glancePreview` | Boolean 值。用户将 Glance 放入 Glance 文件夹时，可以指定一个 Complication 作为预览值。只能指定一个预览 Complication。 | 否 | 4.2.0 |
 
-通过使用`access`属性,您可以控制您的并发症是否只能通过开发者键,所有应用程序,以及面对它或以上所有应用程序看到:
+通过 `access` 属性，可以控制 Complication 对哪些应用可见：使用相同开发者密钥的应用、所有应用、Face It，或这些范围的组合：
 
-| 访问级别 | 您的应用 | Face It | 所有应用 |
+| Access | Your Apps | Face It | All Apps |
 | --- | --- | --- | --- |
 | `public` | X | X | X |
 | `protected` | X | X |  |
 | `private` | X |  |  |
 
-要求的`faceIt`元素允许您提供面对它的信息:
+必需的 `faceIt` 元素用于向 Face It 提供信息：
 
-| 属性 | 描述 | 必需 | API 级别 |
+| Attribute | Description | Required | API level |
 | --- | --- | --- | --- |
-| `defaultText` | 在 Face It 中显示为复杂功能名称。 | 是 | 4.2.0 |
+| `defaultText` | 在 Face It 中显示为 Complication 名称。 | 是 | 4.2.0 |
 
-选择性`range`元素允许您提供一个顺序的数值集合,定义您的值的不同范围.
+可选的 `range` 元素用于提供一组有序数值，定义该值的不同区间。
 
 ## 发布值
 
-一旦您的复杂性定义,您可以使用[Complications.updateComplication()](/connect-iq/api-docs/Toybox/Complications/#updateComplication-instance_function)函数发布数据:
+定义 Complication 后，可以使用 [Complications.updateComplication()](/connect-iq/api-docs/Toybox/Complications/#updateComplication-instance_function) 发布数据：
 
 ```typescript
 var data = {
-    // String、Number、Float、Long、Double 或 null
+    // String, Number, Float, Long, Double, or null
     :value => newValue,
 
     // String
     :shortLabel => newShortLabel,
 
-    // String 或 Complication.UNITS_* 值
+    // String or Complication.UNITS_* value
     :units => newUnits,
 
-    // 至少包含 3 个元素的 Array<Numeric>
+    // Array<Numeric> with at least 3 elements
     :ranges => newRanges,
 }
 
-// 更新复杂功能
-// 0 是复杂功能的 ID
-// 来自 complications.xml
+// update complication
+// 0 is the id of the complication
+// from complications.xml
 Complications.updateComplication(0, data);
 ```
 
-## Face It 复杂功能
+## Face It Complication
 
-发布一个复杂性为`public`允许Face It整合您的复杂性.它将始终显示您的复杂性图标,并将使用以下规则显示您的复杂性值:
+将 Complication 以 `public` 形式发布后，Face It 就可以集成它。Face It 始终显示 Complication 图标，并按以下规则显示 Complication 值：
 
-|如果单位是...|...那么价值预计是...|...并将被显示为...|
+| If units are... | ...then value is expected to be... | ...and will be displayed as... |
 | --- | --- | --- |
-| 除 `Complications.UNIT_INVALID` 之外的 `Complications.UNIT_*` 类型 |一个数值|从单位类型所定义的默认单元转换为适当单元缩写的系统单元的数值.|
-| 字符串 |一个数值|一个数字值,附带了字符串单位.|
-|[`Complications.UNIT_INVALID`](/connect-iq/api-docs/Toybox/Complications/#Unit-module)或`null`|一个数值或字符串值|没有转换和没有任何单元附加的数值或字符串值将显示.|
+| 除 `Complications.UNIT_INVALID` 外的 `Complications.UNIT_*` 类型 | 数值 | 将单位类型定义的默认单位转换为系统单位，并附加相应单位缩写后的数值。 |
+| String | 数值 | 数值后附加字符串单位。 |
+| [`Complications.UNIT_INVALID`](/connect-iq/api-docs/Toybox/Complications/#Unit-module) 或 `null` | 数值或字符串 | 不转换、不附加单位，直接显示数值或字符串。 |
 
-一些最佳实践：
+最佳实践：
 
-- 确保您的Face It图标具有高对比度,并且在移动中将在光和暗模式中显示得很好
+-   确保 Face It 图标具有高对比度，在移动端的浅色和深色模式下都能清晰显示。
 
-- 在发表的复杂字符串中使用拉丁字母 (A-Z,一个-z,0-9)
+-   发布的 Complication 字符串请使用拉丁字符（A-Z、a-z、0-9）。
