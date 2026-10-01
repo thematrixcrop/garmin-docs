@@ -26,7 +26,7 @@ API 级别 3.1.0
 
 - [**getCharacteristic**](#getCharacteristic-instance_function)() as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)
 
-    获取描述符所属的特征。获取此描述符所属的特征。
+    获取此描述符所属的特征。
 
 - [**getUuid**](#getUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
@@ -45,9 +45,7 @@ API 级别 3.1.0
 
 ### **getCharacteristic()** as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/)
 
-获取描述符所属的特征
-
-获取此描述符所属的特征
+获取此描述符所属的特征。
 
 返回：
 
@@ -79,7 +77,7 @@ API 级别 3.1.0
 
 请求对描述符执行读取操作
 
-操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function)
+操作完成后，系统会将操作状态传递给已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorRead()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorRead-instance_function) 回调。
 
 起始版本：
 
@@ -91,7 +89,7 @@ API 级别 3.1.0
 
 将本地存储的值写入远程描述符。
 
-操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorWrite-instance_function)
+操作完成后，系统会将操作状态传递给已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onDescriptorWrite()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onDescriptorWrite-instance_function) 回调。
 
 尚未实现对长写入的支持。请求写入长度超过 20 字节的特征将导致 [InvalidRequestException](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException/)
 
