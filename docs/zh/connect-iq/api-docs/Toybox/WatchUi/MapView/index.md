@@ -147,7 +147,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**setMapMarker**](#setMapMarker-instance_function)(markers as [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) or [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)\>) as **Void**
 
