@@ -1,5 +1,5 @@
 ---
-title: "Communicating with Mobile Apps"
+title: "与移动应用通信"
 ---
 <a id="communicating-with-mobile-apps"></a>
 # 与移动应用通信
