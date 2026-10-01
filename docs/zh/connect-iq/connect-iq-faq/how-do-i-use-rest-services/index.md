@@ -3,17 +3,17 @@ title: "How do I communicate with REST services?"
 ---
 # 如何与 REST 服务通信？
 
-连接IQ通信API是将可穿戴网络带到Garmin设备的API.
+Connect IQ Communication API 将 Web 能力带到 Garmin 设备。不过，将 Web 服务暴露给 Garmin 设备时有一些细节需要注意。
 
-##蓝牙智能连接
+## Bluetooth Smart 连接
 
-由于所有通信都通过蓝牙智能 (您可能知道这为蓝牙LE或BLE) 连接进行,设备带宽有限.通过Connect IQ SDK传输数据的传输速度将低于1Kb/s,通常在400至800字节/s之间.从Twitter的API中抽取单个推文可能高达2.5Kb.我们将在罩杯下进行一些魔法,以最大限度地减少从手机传输到手表的数据量,但您可以快速看到如何抽取用户最后几条推文可能会耗时.
+由于所有通信都通过 Bluetooth Smart（也就是 Bluetooth LE 或 BLE）连接完成，设备带宽有限。通过 Connect IQ SDK 传输数据的速度低于 1 Kb/s，通常在 400 到 800 字节/s 之间。仅从 Twitter API 获取一条推文就可能超过 2.5 Kb。我们会在底层尽量减少从手机传到手表的数据量，但获取用户最近几条推文仍可能耗时。
 
-## 减少是更多的
+## 少即是多
 
-如果您正在编写一个网络服务来返回您的Connect IQ应用程序将打电话,请考虑您真正需要在Connect IQ级别上拥有哪些信息.您可能只能使用Twitter的文本和 Tweet的用户名.现在您只需要将每条 Tweet 转移约250字节.
+在 Connect IQ 应用与配套移动应用之间传输 JSON 响应或消息时，这句经典谚语再合适不过。如果你正在编写一个供 Connect IQ 应用调用、用于返回推文的 Web 服务，请考虑应用真正需要哪些信息。通常只需要推文文本和发布者用户名，这样每条推文只需传输约 250 字节。
 
-在[this](https://dev.twitter.com/rest/reference/get/search/tweets)Twitter API 页面上引用示例结果时,结果的推文的 JSON 将是:
+参考 [Twitter API 页面](https://dev.twitter.com/rest/reference/get/search/tweets)中的示例结果，一条推文的完整 JSON 可能如下：
 
 ```javascript
 {
@@ -117,7 +117,7 @@ title: "How do I communicate with REST services?"
 }
 ```
 
-使用您的网页服务分析和最小化数据到上述领域将导致一个更小的JSON对象:
+通过 Web 服务解析数据，只保留上述字段，可以得到更小的 JSON 对象：
 
 ```javascript
 {
@@ -126,4 +126,4 @@ title: "How do I communicate with REST services?"
 }
 ```
 
-将数据限制为您需要显示和使用的内容，可以显著加快通信事务。当然，对于一个简单、只需快速查看的小组件，编写并托管自己的 Web 服务可能有些复杂。
+只传输显示和使用所需的数据，可以显著加快通信过程。当然，对于一个只需快速查看信息的简单小组件，编写并托管自己的 Web 服务可能有些过于复杂。
