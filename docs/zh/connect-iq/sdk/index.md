@@ -1,5 +1,5 @@
 ---
-title: "Get the SDK"
+title: "获取 SDK"
 ---
 # 获取 SDK | Connect IQ | Garmin 开发者
 
