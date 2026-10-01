@@ -1,135 +1,136 @@
 ---
 title: "Monkey C Visual Studio Code Extension"
 ---
+<a id="monkey-c-visual-studio-code-extension"></a>
 # Monkey C Visual Studio Code 扩展
 
-子C扩展增加了使用Connect IQ SDK的支持,包括语法突出编辑器,构建集成和集成的调试器.子C扩展需要[Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview),Oracle JavaTM运行环境版本11或更高,以及Connect IQ SDK版本4.0.6或更高.
+Monkey C 扩展为 Connect IQ SDK 提供支持，包括语法高亮编辑器、构建集成和集成式调试器。Monkey C 扩展需要 [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)、Oracle Java™ Runtime Environment 11 或更高版本，以及 Connect IQ SDK 4.0.6 或更高版本。
 
-此 Monkey C 扩展提供多项功能，包括：
+Monkey C 扩展提供以下功能：
 
-- 实时错误和警告  Jung 在编辑子C,林,设置,MSS和资源XML文件时会显示这些错误和警告.任何报告的错误或警告将显示在问题选项.
+-   **实时错误和警告**：编辑 Monkey C、Jungle、Settings、MSS 和资源 XML 文件时显示错误和警告。报告的错误或警告会显示在 Problems 标签页中。
 
-- 自动完成  Mon 在编辑克C,克林和MSS文件时,自动完成建议将基于检测范围.在 editor克C编辑器中,您可以通过在一个类或模块中自动完成函数,使用参数和类型信息来自动完成函数.
+-   **自动补全**：编辑 Monkey C、Jungle 和 MSS 文件时，自动补全建议会根据检测到的作用域生成。在 Monkey C 编辑器中，在类或模块中补全 `function` 关键字即可获得带参数和类型信息的函数补全。
 
-- 引用  right 您可以通过右键点击它,从文本菜单中选择 Find all References来找到任何类或模块成员的所有引用.您还可以通过调用命令和输入 @symbol名称来搜索文档中的符号,或通过调用命令和输入 #symbol名称来搜索整个工作空间.
+-   **引用**：右键点击类或模块成员，在上下文菜单中选择 *Find all References*，即可查找该成员的所有引用。也可以打开命令面板并输入 `@symbol name` 搜索当前文档中的符号，或输入 `#symbol name` 搜索整个工作区。
 
--    通过将鼠标悬浮在该符号上,查看有关变量,函数名称,类或模块的类型信息.
+-   **悬停查看**：将鼠标悬停在符号上，即可查看变量、函数名、类或模块的类型信息。
 
-- 进入定义  通过从文本菜单中选择 进入定义 ,您可以跳到任何类或模块成员的定义.
+-   **转到定义**：在上下文菜单中选择 *Go to Definition*，即可跳转到类或模块成员的定义。
 
-- 折叠范围  评论,进口和代码区域现在可以折叠.
+-   **折叠范围**：现在可以折叠注释、导入语句和代码区域。
 
 
-为了充分利用这些功能,您的项目需要具有逐步或更高的类型检查级别.实时错误将是该项目的最后一个设备,或表中的第一个产品,如果您的当前会议期间没有产品.
+要充分利用这些功能，项目的类型检查级别需要设为 gradual 或更高。实时错误针对项目上一次构建所使用的设备；如果当前会话还没有构建过产品，则针对 manifest 中的第一个产品。
 
-##安装子C扩展
+## 安装 Monkey C 扩展
 
-1. 在视觉工作室代码中,进入 *查看* > *扩展*
+1.  在 Visual Studio Code 中选择 *View* > *Extensions*。
 
-2. 在扩展市场搜索框中输入"子C"
+2.  在 Extensions Marketplace 搜索框中输入 “Monkey C”。
 
-3. 从Garmin中选择"子C"扩展
+3.  选择 Garmin 提供的 *Monkey C* 扩展。
 
-4. 使用*安装*按安装Visual Studio Code中的扩展.这需要重新启动Visual Studio Code.
+4.  点击 *Install* 在 Visual Studio Code 中安装扩展。安装后需要重启 Visual Studio Code。
 
-5. 视觉工作室代码重新启动后,请调用*Ctrl + Shift + P* (*在Mac上命令 + Shift + P*)
+5.  Visual Studio Code 重启后，使用 *Ctrl + Shift + P*（Mac 使用 *Command + Shift + P*）打开命令面板。
 
-6. 输入"验证安装"并选择*子C:验证安装*
+6.  输入 “Verify Installation”，然后选择 *Monkey C: Verify Installation*。
 
 
 ## 项目管理
 
-以下命令可用于创建新项目并导出项目：
+可以使用以下命令创建新项目和导出项目：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：新建项目* |创建新的Connect IQ应用程序或子桶|
-| *Monkey C：构建当前项目* |将当前的项目与指定设备进行编译|
-|*子C: 构建为设备*|输出导师生成设备的侧载`PRG`|
-| *Monkey C：清理项目* |删除构建系统生成的任何缓存文物|
-| *Monkey C：导出项目* |为该项目创建一个`IQ`或`barrel`文件|
+| *Monkey C: New Project* | 创建新的 Connect IQ 应用或 Monkey Barrel。 |
+| *Monkey C: Build Current Project* | 针对指定设备编译当前项目。 |
+| *Monkey C: Build for Device* | 打开导出向导，为设备生成可侧载的 `PRG`。 |
+| *Monkey C: Clean Project* | 删除构建系统生成的缓存产物。 |
+| *Monkey C: Export Project* | 为项目创建 `IQ` 或 `barrel` 文件。 |
 
-## 编辑清单
+## 编辑 Manifest
 
-以下命令可用于编辑和更新项目的 `manifest.xml`：
+可以使用以下命令编辑和更新项目的 `manifest.xml`：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：编辑产品* |在`manifest.xml`中编辑产品.只允许选择支持最小SDK版本的产品|
-| *Monkey C：编辑权限* |编辑`manifest.xml`中的权限|
-| *Monkey C：编辑语言* |编辑`manifest.xml`中的语言|
-| *Monkey C：编辑应用* |编辑`manifest.xml`中的应用程序元数据 (名称,标签,识别符)|
-| *Monkey C：配置 Barrel* |Wizard 添加或删除您的项目中的子桶|
-| *Monkey C：根据 Connect IQ 版本设置产品* |允许所有符合Connect IQ版本的产品进行大规模选择|
-| *Monkey C：编辑注释* |允许添加新的注释到子桶项目|
-| *Monkey C：重新生成 UUID* |为您的项目创建一个新的应用程序 UUID|
+| *Monkey C: Edit Products* | 编辑 `manifest.xml` 中的产品。只能选择支持最低 SDK 版本的产品。 |
+| *Monkey C: Edit Permissions* | 编辑 `manifest.xml` 中的权限。 |
+| *Monkey C: Edit Languages* | 编辑 `manifest.xml` 中的语言。 |
+| *Monkey C: Edit Application* | 编辑 `manifest.xml` 中的应用元数据（名称、标签和标识符）。 |
+| *Monkey C: Configure Barrel* | 使用向导为项目添加或移除 Monkey Barrel。 |
+| *Monkey C: Set Products by Connect IQ Version* | 批量选择满足指定 Connect IQ 版本的所有产品。 |
+| *Monkey C: Edit Annotations* | 向 Monkey Barrel 项目添加新注解。 |
+| *Monkey C: Regenerate UUID* | 为项目创建新的应用 UUID。 |
 
-##与连接智能 SDK 接口
+## 访问 Connect IQ SDK
 
-下列命令允许您从Visual Studio Code访问SDK工具和文档:
+以下命令可以在 Visual Studio Code 中访问 SDK 工具和文档：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：打开 ERA 查看器* |打开[Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application)工具|
-| *Monkey C：打开 Monkey Graph* |打开[Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference)工具|
-| *Monkey C：打开 Monkey Motion* |打开[Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion)工具|
-| *Monkey C：打开 SDK 管理器* |打开连接 IQ SDK 管理器|
-| *Monkey C: View 文档* |提供所有 Connect IQ SDK 文件的访问|
+| *Monkey C: Open ERA Viewer* | 打开 [Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application) 工具。 |
+| *Monkey C: Open Monkey Graph* | 打开 [Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference) 工具。 |
+| *Monkey C: Open Monkey Motion* | 打开 [Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion) 工具。 |
+| *Monkey C: Open SDK Manager* | 打开 Connect IQ SDK Manager。 |
+| *Monkey C: View Documentation* | 访问全部 Connect IQ SDK 文档。 |
 
 ## 运行程序
 
-在运行程序之前,请确保您在编辑器中开放和选择了源文件中的一个 (在`source`文件中与`.mc`扩展)
+运行程序前，请确保编辑器中打开并选中了 `source` 文件夹内扩展名为 `.mc` 的源文件。
 
-1. 选择*运行>无需调试的运行* (*在Mac上命令+F5*,在其他平台上*Ctrl+F5*)
+1.  选择 *Run > Run Without Debugging*（Mac 使用 *Command + F5*，其他平台使用 *Ctrl + F5*）。
 
-2. 您将被提示提供您的申请支持的产品列表.
+2.  系统会显示应用支持的产品列表，请从中选择一个。
 
 
-如果一切顺利,模拟器将启动,
+如果一切正常，Simulator 会启动并显示所选设备：
 
 ![](/connect-iq/resources/programmers-guide/first_app.png)
 
 ## 运行 Run No Evil 测试
 
-您可以使用以下命令运行测试:
+可以使用以下命令运行测试：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：运行测试* |在您的应用程序中运行所有 Run No Evil 测试|
+| *Monkey C: Run Tests* | 运行应用中的所有 Run No Evil 测试。 |
 
-## 运行复杂功能发布者和复杂功能订阅者应用
+## 运行 Complication Publisher 和 Complication Subscriber 应用
 
-您可以使用以下命令运行并调试复杂性发布器和复杂性订阅器应用程序:
+可以使用以下命令运行并调试 Complication Publisher 和 Complication Subscriber 应用：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：启动复杂功能* |在调试器中运行复杂应用程序|
+| *Monkey C: Launch Complication* | 在调试器中运行 Complication 应用。 |
 
-您还可以通过 launch.json 通过添加"Run Complication Apps"启动配置来运行复杂化应用程序.
+也可以在 `launch.json` 中添加 “Run Complication Apps” 启动配置，以有无调试的方式运行 Complication 应用。
 
 ## 以传感器配对模式运行应用
 
-在传感器配对模式下使用以下命令启动和调试应用程序:
+可以使用以下命令以传感器配对模式启动和调试应用：
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| *Monkey C：启动原生配对* |运行应用程序在传感器本地配对模式在调试器中|
+| *Monkey C: Launch Native Pairing* | 在调试器中以传感器原生配对模式运行应用。 |
 
-您还可以通过 launch.json 通过添加"Run Native Pairing"启动配置来在传感器配对模式中运行应用程序,无论是通过调试还是没有.
+也可以在 `launch.json` 中添加 “Run Native Pairing” 启动配置，以有无调试的方式运行传感器配对模式。
 
-## 编辑发射配置
+## 编辑启动配置
 
-扩展将为您的项目创建`launch.json`当您运行或调试产品.`launch.json`提供了许多定制选项,以添加启动功能
+运行或调试产品时，扩展会为项目创建 `launch.json`。`launch.json` 提供了许多用于添加启动功能的自定义选项。
 
-| 属性 | 必需 | 类型 | 说明 |
+| Property | Required | Type | Description |
 | --- | --- | --- | --- |
-| `prg` | x | Path |绝对路径到项目文件|
-| `prgDebugXml` | x | Path |绝对路径到项目调试xml文件|
-| `stopAtLaunch` |  | 布尔值 |在调试时,当程序启动时立即打断.|
-| `runTests` |  | 布尔值 |在运行这个配置时运行NoEvil测试案例|
-| `device` |  | 产品标识符 |运行设备或`${command:GetTargetDevice}`每次运行选择新设备|
-| `settingsJson` |  | Path |项目设置文件的绝对路径|
-| `tests` |  |串列|选项列列列列出要运行的测试名称|
-| `runNativePairing` |  | 布尔值 | 在传感器原生配对模式下运行应用 |
-| `complicationPublisherFolder` |  | Path |一个复杂出版商的项目文件的绝对路径|
-| `complicationSubscriberFolder` |  | Path |一个复杂订户的项目文件的绝对路径|
+| `prg` | x | Path | 项目 PRG 文件的绝对路径。 |
+| `prgDebugXml` | x | Path | 项目调试 XML 文件的绝对路径。 |
+| `stopAtLaunch` |  | Boolean | 调试时，程序启动后立即中断。 |
+| `runTests` |  | Boolean | 使用此配置运行时，运行 Run No Evil 测试用例。 |
+| `device` |  | Product Identifier | 要运行的设备，或使用 `${command:GetTargetDevice}` 在每次运行时选择新设备。 |
+| `settingsJson` |  | Path | 项目 Settings 文件的绝对路径。 |
+| `tests` |  | Array of Strings | 可选的字符串数组，列出要运行的测试名称。 |
+| `runNativePairing` |  | Boolean | 以传感器原生配对模式运行应用。 |
+| `complicationPublisherFolder` |  | Path | Complication Publisher 项目文件夹的绝对路径。 |
+| `complicationSubscriberFolder` |  | Path | Complication Subscriber 项目文件夹的绝对路径。 |
