@@ -1,5 +1,5 @@
 ---
-title: "Activity Prompts"
+title: "活动提示"
 ---
 # 活动提示
 
