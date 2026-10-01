@@ -28,7 +28,7 @@ class MyProjectApp extends App.AppBase {
 }
 ```
 
-如果这看起来熟悉且不具威胁性，那就对了。Monkey C 旨在成为你不知不觉中已经知道的语言。
+如果这看起来熟悉且不具威胁性，那就对了。Monkey C 旨在成为一门您不知不觉中已经熟悉的语言。
 
 顶部是一个 `using` 语句，类似于 C++ 的 `using` 语句，或 Java、Ruby、Python 中的 `import`。`using` 语句会将模块引入当前命名空间。使用 `using` 后，可以通过简写名称（本例中为 `System`）引用模块。`Toybox` 是 Monkey C 系统模块的根模块。
 
