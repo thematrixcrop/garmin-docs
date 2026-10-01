@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-WorkoutIntervalStep 类包含当前 workout 间歇步骤的信息。
+WorkoutIntervalStep 类包含当前锻炼间歇步骤的信息。
 
 起始版本：
 
