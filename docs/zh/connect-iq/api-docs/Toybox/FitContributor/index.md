@@ -27,7 +27,7 @@ MESG\_TYPE\_RECORD
 
 - [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
 
-- [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
+- [了解 FIT 格式](http://www.thisisant.com/resources/fit)
 
 
 示例：
