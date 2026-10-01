@@ -26,7 +26,7 @@ Monkey C 支持以下基本数据类型：
 | [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) | `true` 和 `false` | `var bool = true;` |
 | [Char](/connect-iq/api-docs/Toybox/Lang/Char/) | UTF-32 字符 | `var c = 'x';` |
 | [String](/connect-iq/api-docs/Toybox/Lang/String/)\* | 字符序列 | `var str = "Hello";` |
-| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) | 轻量级常量标识符（详见 [Symbols](#symbols)） | `var sym = :mySymbol;` |
+| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) | 轻量级常量标识符（详见 [符号](#symbols)） | `var sym = :mySymbol;` |
 
 Monkey C 还支持两种容器类型：
 
