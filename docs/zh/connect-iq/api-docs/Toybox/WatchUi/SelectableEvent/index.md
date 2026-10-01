@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-SelectableEvent 是一个对象，当使用实体按钮或触摸屏操作 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 时发送给 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)。
+使用实体按钮或触摸屏操作 [Selectable](/connect-iq/api-docs/Toybox/WatchUi/Selectable/) 时，系统会向 [InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 发送 SelectableEvent 对象。
 
 ## 另见：
 
@@ -35,11 +35,11 @@ API 级别 2.1.0
 
 - 速览
 
-- 手表应用
+- 设备应用
 
 - 表盘
 
-- 微件
+- 小工具
 
 
 ## 实例方法摘要 [collapse](#)
@@ -80,13 +80,13 @@ API 级别 2.1.0
 
     表示以下四种可用状态之一的符号：
 
-- [stateDefault](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateDefault-var)
+    - [stateDefault](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateDefault-var)
 
-- [stateHighlighted](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateHighlighted-var)
+    - [stateHighlighted](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateHighlighted-var)
 
-- [stateSelected](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateSelected-var)
+    - [stateSelected](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateSelected-var)
 
-- [stateDisabled](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateDisabled-var)
+    - [stateDisabled](/connect-iq/api-docs/Toybox/WatchUi/Selectable/#stateDisabled-var)
 
 
 
