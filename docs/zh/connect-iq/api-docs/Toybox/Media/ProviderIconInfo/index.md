@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ProviderIconInfo 是提供程序图标的类表示。
+ProviderIconInfo 表示提供商图标信息。
 
 起始版本：
 
