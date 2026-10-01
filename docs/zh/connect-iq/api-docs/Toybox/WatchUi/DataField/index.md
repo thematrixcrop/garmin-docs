@@ -2542,7 +2542,7 @@ API 级别 5.2.0
 如果使用 Toybox::Activity:WorkoutStepInfo 设置锻炼，WorkoutStepInfo.sport 和 WorkoutStepInfo.subsport 将被忽略，并设置为当前活动的设置。如果将 `.WorkoutStepInfo.step` 设置为 Toybox::Activity.WorkoutStep：
 
 ```
-   * +WorkoutStep.durationType+ can only be set to +Activity.WORKOUT_STEP_DURATION_TIME+ or +Activity.WORKOUT_STEP_DURATION_DISTANCE+.
+   * +WorkoutStep.durationType+ 只能设置为 +Activity.WORKOUT_STEP_DURATION_TIME+ 或 +Activity.WORKOUT_STEP_DURATION_DISTANCE+。
 ```
 
 - 对于 `Activity.WORKOUT_STEP_DURATION_TIME`，`WorkoutStep.durationValue` 的单位为秒。
