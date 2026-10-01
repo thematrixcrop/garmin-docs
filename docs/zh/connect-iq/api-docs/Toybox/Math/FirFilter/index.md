@@ -22,7 +22,7 @@ Toybox.Math.Filter
 
 ## 另见：
 
-- [FirFilters](https://en.wikipedia.org/wiki/Finite_impulse_response)
+- [FIR 滤波器](https://en.wikipedia.org/wiki/Finite_impulse_response)
 
 
 示例：
