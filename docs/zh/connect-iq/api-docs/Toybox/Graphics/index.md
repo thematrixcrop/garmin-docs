@@ -1081,7 +1081,7 @@ API 级别 1.2.0
 
 另见：
 
-- [Reference Guides - Devices Reference](/connect-iq/device-reference/)
+- [参考指南 - 设备参考](/connect-iq/device-reference/)
 
 
 起始版本：
