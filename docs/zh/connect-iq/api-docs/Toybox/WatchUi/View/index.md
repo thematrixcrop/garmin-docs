@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 View 是表示应用内页面的对象。
 
-应用可能有多个 View 对象，用于表示菜单和其他应用状态。每个 View 都包含一个 Layout，而 Layout 又包含 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 对象，例如 [Bitmaps](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) 和 [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/)。View 对象还负责处理每个应用的生命周期，该生命周期取决于应用类型：
+应用可能有多个 View 对象，用于表示菜单和其他应用状态。每个 View 都包含一个 Layout，而 Layout 又包含 [Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 对象，例如 [位图](/connect-iq/api-docs/Toybox/WatchUi/Bitmap/) 和 [Text](/connect-iq/api-docs/Toybox/WatchUi/Text/)。View 对象还负责处理每个应用的生命周期，该生命周期取决于应用类型：
 
 小组件和手表应用
 
