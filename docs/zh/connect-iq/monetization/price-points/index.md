@@ -1,5 +1,5 @@
 ---
-title: "Price Points"
+title: "价格档位"
 ---
 # 价格档位
 
