@@ -448,7 +448,7 @@ API 级别 3.1.0
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    包含 [Objects](/connect-iq/api-docs/Toybox/Lang/Object/) 的数组
+    包含 [Object](/connect-iq/api-docs/Toybox/Lang/Object/) 的数组
 
 
 返回：
