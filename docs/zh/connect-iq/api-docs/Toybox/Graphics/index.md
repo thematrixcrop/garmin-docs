@@ -318,7 +318,7 @@ API 级别 1.0.0
 
 |
 
-White
+白色
 
 |
 | COLOR\_LT\_GRAY | 0xAAAAAA |
@@ -345,7 +345,7 @@ API 级别 1.0.0
 
 |
 
-Black
+黑色
 
 |
 | COLOR\_RED | 0xFF0000 |
@@ -354,7 +354,7 @@ API 级别 1.0.0
 
 |
 
-Red
+红色
 
 |
 | COLOR\_DK\_RED | 0xAA0000 |
@@ -372,7 +372,7 @@ API 级别 1.0.0
 
 |
 
-Orange
+橙色
 
 |
 | COLOR\_YELLOW | 0xFFAA00 |
@@ -381,7 +381,7 @@ API 级别 1.0.0
 
 |
 
-Yellow
+黄色
 
 |
 | COLOR\_GREEN | 0x00FF00 |
@@ -390,7 +390,7 @@ API 级别 1.0.0
 
 |
 
-Green
+绿色
 
 |
 | COLOR\_DK\_GREEN | 0x00AA00 |
@@ -408,7 +408,7 @@ API 级别 1.0.0
 
 |
 
-Blue
+蓝色
 
 |
 | COLOR\_DK\_BLUE | 0x0000FF |
@@ -435,7 +435,7 @@ API 级别 1.0.0
 
 |
 
-Pink
+粉色
 
 |
 | COLOR\_TRANSPARENT | \-1 |
@@ -444,7 +444,7 @@ API 级别 1.0.0
 
 |
 
-Transparent
+透明
 
 |
 
