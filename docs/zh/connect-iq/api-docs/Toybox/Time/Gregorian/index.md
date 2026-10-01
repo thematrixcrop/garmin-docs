@@ -77,7 +77,7 @@ API 级别 3.0.0
 
 |
 
-Sunday
+星期日
 
 |
 | DAY\_MONDAY | 2 |
@@ -86,7 +86,7 @@ API 级别 3.0.0
 
 |
 
-Monday
+星期一
 
 |
 | DAY\_TUESDAY | 3 |
@@ -95,7 +95,7 @@ API 级别 3.0.0
 
 |
 
-Tuesday
+星期二
 
 |
 | DAY\_WEDNESDAY | 4 |
@@ -104,7 +104,7 @@ API 级别 3.0.0
 
 |
 
-Wednesday
+星期三
 
 |
 | DAY\_THURSDAY | 5 |
@@ -113,7 +113,7 @@ API 级别 3.0.0
 
 |
 
-Thursday
+星期四
 
 |
 | DAY\_FRIDAY | 6 |
@@ -122,7 +122,7 @@ API 级别 3.0.0
 
 |
 
-Friday
+星期五
 
 |
 | DAY\_SATURDAY | 7 |
@@ -131,7 +131,7 @@ API 级别 3.0.0
 
 |
 
-Saturday
+星期六
 
 |
 
@@ -148,7 +148,7 @@ API 级别 3.0.0
 
 |
 
-January
+一月
 
 |
 | MONTH\_FEBRUARY | 2 |
@@ -157,7 +157,7 @@ API 级别 3.0.0
 
 |
 
-February
+二月
 
 |
 | MONTH\_MARCH | 3 |
@@ -166,7 +166,7 @@ API 级别 3.0.0
 
 |
 
-March
+三月
 
 |
 | MONTH\_APRIL | 4 |
@@ -175,7 +175,7 @@ API 级别 3.0.0
 
 |
 
-April
+四月
 
 |
 | MONTH\_MAY | 5 |
@@ -184,7 +184,7 @@ API 级别 3.0.0
 
 |
 
-May
+五月
 
 |
 | MONTH\_JUNE | 6 |
@@ -193,7 +193,7 @@ API 级别 3.0.0
 
 |
 
-June
+六月
 
 |
 | MONTH\_JULY | 7 |
@@ -202,7 +202,7 @@ API 级别 3.0.0
 
 |
 
-July
+七月
 
 |
 | MONTH\_AUGUST | 8 |
@@ -211,7 +211,7 @@ API 级别 3.0.0
 
 |
 
-August
+八月
 
 |
 | MONTH\_SEPTEMBER | 9 |
@@ -220,7 +220,7 @@ API 级别 3.0.0
 
 |
 
-September
+九月
 
 |
 | MONTH\_OCTOBER | 10 |
@@ -229,7 +229,7 @@ API 级别 3.0.0
 
 |
 
-October
+十月
 
 |
 | MONTH\_NOVEMBER | 11 |
@@ -238,7 +238,7 @@ API 级别 3.0.0
 
 |
 
-November
+十一月
 
 |
 | MONTH\_DECEMBER | 12 |
@@ -247,7 +247,7 @@ API 级别 3.0.0
 
 |
 
-December
+十二月
 
 |
 
