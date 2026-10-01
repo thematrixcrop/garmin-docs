@@ -1406,18 +1406,18 @@ API 级别 5.1.0
 
 - :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [power Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var)。
+- :includePower ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [power 数组](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#power-var)。
 
-- :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [pitch Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var)。
+- :includePitch ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [pitch 数组](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#pitch-var)。
 
-- :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [roll Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var)。
+- :includeRoll ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求计算 [roll 数组](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#roll-var)。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:accelerometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp 数组](/connect-iq/api-docs/Toybox/Sensor/AccelerometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 - :heartBeatIntervals — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-        Heart Beat Interval 数据的选项。
+        心跳间隔数据的选项。
 
 - :enabled ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 设为 `true` 以获取心跳间隔数据。
 
@@ -1430,7 +1430,7 @@ API 级别 5.1.0
 
 - :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:gyroscope=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var)，这有助于将数据与其他传感器同步。
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:gyroscope=>:enabled` 设为 `true` 时有效。请求包含 [timestamp 数组](/connect-iq/api-docs/Toybox/Sensor/GyroscopeData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 - :magnetometer — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
@@ -1441,7 +1441,7 @@ API 级别 5.1.0
 
 - :sampleRate ([Toybox::Lang::Number](/connect-iq/api-docs/Toybox/Lang/Number/)) 要请求的每秒样本数（Hz）。
 
-- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:magnetometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp Array](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
+- :includeTimestamps ([Toybox::Lang::Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) 仅当 `:magnetometer=>:enabled` 设为 `true` 时有效。请求包含 [timestamp 数组](/connect-iq/api-docs/Toybox/Sensor/MagnetometerData/#timestamp-var)，这有助于将数据与其他传感器同步。
 
 
 
