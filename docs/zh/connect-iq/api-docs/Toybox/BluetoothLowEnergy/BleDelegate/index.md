@@ -28,7 +28,7 @@ API 级别 3.1.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onCharacteristicChanged**](#onCharacteristicChanged-instance_function)(characteristic as [BluetoothLowEnergy.Characteristic](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic/), value as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
@@ -64,7 +64,7 @@ API 级别 3.1.0
 
 - [**onScanResults**](#onScanResults-instance_function)(scanResults as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)) as **Void**
 
-    如果扫描正在运行，则在收到新的 ScanResults 时调用此函数。
+    如果扫描正在运行，则在收到新的 ScanResults 后调用此函数。
 
 - [**onScanStateChange**](#onScanStateChange-instance_function)(scanState as [BluetoothLowEnergy.ScanState](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#ScanState-module), status as [BluetoothLowEnergy.Status](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#Status-module)) as **Void**
 
