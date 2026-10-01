@@ -285,7 +285,7 @@ API 级别 2.3.0
 
 - [**registerForPhoneAppMessageEvent**](#registerForPhoneAppMessageEvent-instance_function)() as **Void**
 
-    注册应用，以便在收到 Phone App 消息时接收事件。
+    注册应用，以便在收到手机应用消息时接收事件。
 
 - [**registerForSleepEvent**](#registerForSleepEvent-instance_function)() as **Void**
 
@@ -936,7 +936,7 @@ API 级别 2.3.0
 
 ### **registerForPhoneAppMessageEvent()** as **Void**
 
-注册应用，以便在收到 Phone App 消息时接收事件。
+注册应用，以便在收到手机应用消息时接收事件。
 
 :::details 支持的设备
 
