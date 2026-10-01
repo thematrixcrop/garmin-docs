@@ -127,7 +127,7 @@ D2™ Mach 2 Pro
 
 ![](https://static.garmincdn.com/en/products/010-02174-51/g/cf-sm-34b5ea24-c6fe-4c85-964d-51962e9cc501.jpg)
 
-达特·韦德
+Darth Vader™
 
  | 260 x 260 | round | Memory-In-Pixel（64 色） | 3.3 |
 |
