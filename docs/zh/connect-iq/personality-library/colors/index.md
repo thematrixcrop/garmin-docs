@@ -1,5 +1,5 @@
 ---
-title: "Color"
+title: "颜色"
 ---
 <a id="color"></a>
 # 颜色
@@ -190,7 +190,7 @@ class MainView extends WatchUi.View {
 
 ## 选择器
 
-| Selector | Context |
+| 选择器 | 使用场景 |
 | --- | --- |
 | `system_color_light__background`, `system_color_dark__background` | 默认系统背景色。 |
 | `system_color_light__text`, `system_color_dark__text` | 默认系统文本颜色。 |
