@@ -120,7 +120,7 @@ Connect IQ 导入图像时默认使用 [Floyd-Steinberg dithering](https://en.wi
 
 ![](/connect-iq/resources/faq/doge.png)
 
-这也意味着，默认情况下，Vivoactive 上的图像占用的内存会是 Fenix 3 上图像的两倍。如果是只有一张图像的 Watch Face，这通常没有问题；但对于资源非常受限的数据字段，这可能决定应用能否运行。
+这也意味着，默认情况下，Vivoactive 上的图像占用的内存会是 Fenix 3 上图像的两倍。如果是只有一张图像的表盘（Watch Face），这通常没有问题；但对于资源非常受限的数据字段，这可能决定应用能否运行。
 
 如果图像使用的颜色较少，降低位深度可以节省宝贵的运行时内存。通过设置导入调色板，可以指定图像应使用的颜色总数。
 
