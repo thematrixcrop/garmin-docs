@@ -4,7 +4,7 @@ title: "JSON REST Requests"
 <a id="json-rest-requests"></a>
 # JSON REST 请求
 
-Widget 和应用可以通过 [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)（BLE）与手机通信。手机可以与设备共享数据，也可以充当应用与互联网之间的桥梁，让手机成为可穿戴网络的一部分。
+小工具和应用可以通过 [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy)（BLE）与手机通信。手机可以与设备共享数据，也可以充当应用与互联网之间的桥梁，让手机成为可穿戴网络的一部分。
 
 Connect IQ 还提供了发送 JSON 和图像请求的高层接口。开发者无需编写自己的手机配套应用，也可以开发可穿戴 Web 应用。
 
@@ -18,7 +18,7 @@ Connect IQ 还提供了发送 JSON 和图像请求的高层接口。开发者无
 
 Monkey C 通过 [Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 等 API，经由 Garmin Connect Mobile 调用基本 Web 服务。这些 API 让 REST 调用变得简单直接。JSON 请求会转换为序列化的 Monkey C 数据，并通过 BLE 通道发送。使用这些 API 必须拥有 `Communications` 权限。
 
-[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 提供了向 endpoint 发送 JSON REST 请求的高层 API。调用是异步的，需要回调来接收操作完成后的数据。
+[Communications.makeWebRequest()](/connect-iq/api-docs/Toybox/Communications/#makeWebRequest-instance_function) 提供了向 Web 服务端点（endpoint）发送 JSON REST 请求的高层 API。调用是异步的，需要回调来接收操作完成后的数据。
 
 ```typescript
 // It is common for developers to wrap a makeWebRequest() call in a function
