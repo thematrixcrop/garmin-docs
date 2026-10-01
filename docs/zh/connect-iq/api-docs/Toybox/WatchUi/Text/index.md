@@ -117,7 +117,7 @@ API 级别 1.0.0
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含 Text 对象选项的 Dictionary
+    包含 Text 对象选项的字典（Dictionary）。
 
 - :text — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
