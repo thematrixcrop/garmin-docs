@@ -13,15 +13,15 @@ using Toybox.System;
 
 class MyProjectApp extends App.AppBase {
 
-    // onStart() 在应用启动时调用
+    // Called when the application starts
     function onStart(state) {
     }
 
-    // onStop() 在应用退出时调用
+    // Called when the application exits
     function onStop(state) {
     }
 
-    // 在此返回应用的初始视图
+    // Return the initial view for the application
     function getInitialView() {
         return [ new MyProjectView() ];
     }
@@ -30,7 +30,7 @@ class MyProjectApp extends App.AppBase {
 
 如果这看起来熟悉且不具威胁性，那就对了。Monkey C 旨在成为你不知不觉中已经知道的语言。
 
-顶部是一个 using 语句，类似于 C++ 的 `using` 语句，或 Java™、Ruby、Python™ 中的 `import`。`using` 语句将模块词法地引入我们的命名空间。在 `using` 子句之后，我们可以通过其简写名称（在本例中为 `System`）来引用模块。`Toybox` 是 Monkey C 系统模块的根模块；所有好玩的东西都在里面。
+顶部是一个 `using` 语句，类似于 C++ 的 `using` 语句，或 Java、Ruby、Python 中的 `import`。`using` 语句会将模块引入当前命名空间。使用 `using` 后，可以通过简写名称（本例中为 `System`）引用模块。`Toybox` 是 Monkey C 系统模块的根模块。
 
 要打印值到调试控制台，请使用：
 
@@ -46,9 +46,9 @@ System.println( "Hello Monkey C!" );
 
 -   `getSystemStats` 提供来自运行时系统的统计信息
 
--   `exit` 将终止您的应用
+-   `exit` 终止应用
 
--   `error` 将在记录错误消息的同时退出您的应用
+-   `error` 记录错误消息并退出应用
 
 
 ## 与其他语言的区别
@@ -67,12 +67,12 @@ function add( a, b ) {
 }
 
 function thisFunctionUsesAdd() {
-    var a = add( 1, 3 ); // 返回 4
-    var b = add( "Hello ", "World" ); // 返回 "Hello World"
+    var a = add( 1, 3 ); // Returns 4
+    var b = add( "Hello ", "World" ); // Returns "Hello World"
 }
 ```
 
-Monkey C 编译器不验证类型安全，如果函数处理不当方法，则会引发运行时错误。
+Monkey C 编译器不会验证类型安全；如果函数处理了错误类型，可能会引发运行时错误。
 
 Monkey C 模块的作用与 Java 包相似，但与包不同，模块可以包含变量和函数。静态方法存在于模块中而不是特定类中是很常见的。
 
@@ -82,10 +82,10 @@ JavaScript 或 Lua 与 Monkey C 的主要区别在于 Monkey C 中的函数不�
 
 ```javascript
 function wakeMeUpBeforeYouGoGo() {
-    // 处理完成
+        // Task completed
 }
 
-// 执行长时间运行任务，并在完成后传递回调进行调用。
+// Run a long-running task and invoke the callback when it completes.
 doLongRunningTask( wakeMeUpBeforeYouGoGo );
 ```
 
@@ -93,10 +93,10 @@ doLongRunningTask( wakeMeUpBeforeYouGoGo );
 
 ```lua
 function doSomethingFunction( me ) {
-    // 在这里做一些事情
+    // Do something here
 }
 
-// MyObject 的构造函数
+// Constructor for MyObject
 function newMyObject() {
     local result = {};
     result["doSomething"] = doSomethingFunction;
