@@ -34,7 +34,7 @@ title: "发布到 Connect IQ 商店"
 
 ## 发布第一个版本
 
-要将 IQ 文件上传到开发者账户，请先访问 Garmin 开发者网站的 [Submit an App](/connect-iq/submit-an-app/) 页面。点击 *Submit an App*（提交应用）按钮，填写下方显示的表单：
+要将 IQ 文件上传到开发者账户，请先访问 Garmin 开发者网站的[提交应用](/connect-iq/submit-an-app/)页面。点击 *Submit an App*（提交应用）按钮，填写下方显示的表单：
 
 ![将应用上传到 App Store](/connect-iq/resources/programmers-guide/upload_app.png)
 
