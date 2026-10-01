@@ -1,5 +1,5 @@
 ---
-title: "Intents"
+title: "Intent（意图）"
 ---
 <a id="intents"></a>
 # Intent（意图）
