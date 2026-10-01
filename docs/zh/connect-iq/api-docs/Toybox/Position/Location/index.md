@@ -144,7 +144,7 @@ function onPosition(info) {
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用度数格式
+    包含纬度和经度的 Array，值为 [Double](/connect-iq/api-docs/Toybox/Lang/Double/)，采用度数格式
 
 
 起始版本：
@@ -210,7 +210,7 @@ function onPosition(info) {
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    包含纬度和经度的 Array，值为 [Doubles](/connect-iq/api-docs/Toybox/Lang/Double/)，采用弧度格式
+    包含纬度和经度的 Array，值为 [Double](/connect-iq/api-docs/Toybox/Lang/Double/)，采用弧度格式
 
 
 起始版本：
