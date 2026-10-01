@@ -13,7 +13,7 @@ title: "视图、可绘制对象和层"
 
 -   [View.onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function): 当您的 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 首次变为可见时调用。这是在需要时初始化资源和计时器的好时机。
 
--   [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function): 在此函数中，您可以加载在 [Layouts](/connect-iq/core-topics/layouts/#layouts) 部分中定义的布局。
+-   [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function): 在此函数中，您可以加载在 [布局](/connect-iq/core-topics/layouts/#layouts) 部分中定义的布局。
 
 -   [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function): 当您的视图需要更新显示时调用。此函数的默认版本将绘制布局元素，但您可以调用 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 让系统绘制布局然后运行您自己的自定义绘图。
 
@@ -80,4 +80,4 @@ class MyLayerView extends WatchUi.View {
 
 ![速览页面](/connect-iq/resources/programmers-guide/layers.png)
 
-上述截图展示了来自 `samples/AnimationWatchFace` 示例应用的 3 层表盘。请参阅 [Resources](/connect-iq/core-topics/resources/#animations) 部分，了解如何将资源嵌入到您的应用中。查看 `samples/AnimationWatchFace` 示例以了解更多。
+上述截图展示了来自 `samples/AnimationWatchFace` 示例应用的 3 层表盘。请参阅 [资源](/connect-iq/core-topics/resources/#animations) 部分，了解如何将资源嵌入到您的应用中。查看 `samples/AnimationWatchFace` 示例以了解更多。
