@@ -1,5 +1,5 @@
 ---
-title: "Sensor Pairing"
+title: "传感器配对"
 ---
 <a id="sensor-pairing"></a>
 # 传感器配对
