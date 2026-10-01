@@ -124,13 +124,13 @@ Connect IQ 允许使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/G
 
 可以使用 [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) 方法从 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 获取绘图上下文。该方法返回 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象，能力与设备为 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function)、[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 等方法提供的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 相同。可以在其中绘制形状、文本和位图，修改 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的内容。
 
-##### 缓冲的比特图和图形池
+##### 缓冲位图和图形池
 
 和其他图形资源一样，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象也使用图形池。这样可以自由创建临时图形缓冲区，而不会耗尽应用程序堆。
 
-如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用的是生命周期短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，您需要重新渲染其内容。或者，您可以调用引用上的 `get()` 方法获取位图的锁定版本。这会防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象被图形池清除，但如果加载更多资源，也可能导致图形池耗尽可用空间。
+如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用生命周期较短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，就需要重新渲染其内容。也可以调用引用上的 `get()` 方法获取位图的锁定版本，防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被图形池清除；但如果加载更多资源，也可能导致图形池耗尽可用空间。
 
-如果应用运行在 API level 4.0 之前的设备上，请使用 `has` 检查保护对 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的访问：
+要创建 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)，请使用 [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function) API。如果应用运行在 API level 4.0 之前的设备上，请使用 `has` 检查保护对 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的分配：
 
 ```typescript
 import Toybox.Graphics;
@@ -151,8 +151,8 @@ function bufferedBitmapFactory(options as {
 }
 ```
 
-没错，就是这样。
+确实如此。
 
-没错，就是这样。
+确实如此。
 
-我很高兴提出这个点子的人不是我。
+我很庆幸这个点子不是我想出来的。[原文出处](https://www.reddit.com/r/EngineeringStudents/comments/dl6hfz/to_all_my_fellow_civil_engineers_i_give_you_ed/)。
