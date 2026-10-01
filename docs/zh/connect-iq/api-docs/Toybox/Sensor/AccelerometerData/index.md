@@ -24,7 +24,7 @@ Toybox.Lang.Object
 
 - [Toybox.Sensor.SensorData](/connect-iq/api-docs/Toybox/Sensor/SensorData/)
 
-- [G-Force Basic Overview](http://www.gforces.net/what-is-g-force-meaning.html)
+- [G 力基础概览](http://www.gforces.net/what-is-g-force-meaning.html)
 
 
 起始版本：
@@ -238,7 +238,7 @@ API 级别 2.3.0
 
 另见：
 
-- [Tilt Sensing Using a Three-Axis Accelerometer](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
+- [使用三轴加速度计进行倾斜感测](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
 
 
 返回：
@@ -269,7 +269,7 @@ API 级别 2.3.0
 
 另见：
 
-- [Tilt Sensing Using a Three-Axis Accelerometer](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
+- [使用三轴加速度计进行倾斜感测](https://www.nxp.com/docs/en/application-note/AN3461.pdf)
 
 
 返回：
