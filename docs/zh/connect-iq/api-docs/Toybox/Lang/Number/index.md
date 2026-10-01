@@ -172,7 +172,7 @@ var myTime = Lang.format(
 
 另见：
 
-- [Formatted output forum thread](https://forums.garmin.com/showthread.php?255191-Formatted-Output)
+- [格式化输出论坛主题](https://forums.garmin.com/showthread.php?255191-Formatted-Output)
 
 
 起始版本：
