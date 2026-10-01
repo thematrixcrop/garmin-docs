@@ -10,31 +10,31 @@ Connect IQ Mobile SDK 可用于创建与 Garmin 可穿戴设备上运行的 Monk
 
 ### 将框架添加到项目
 
-iOS Mobile SDK 以 iOS framework package 的形式发布，可从 [Connect IQ Mobile SDK 的 Garmin GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)获取。要启用该 framework，请在 `Project > Package Dependencies` 面板中添加依赖项，点击 Packages 列表底部的 `+` 按钮即可。
+iOS Mobile SDK 以 iOS 框架包的形式发布，可从 [Connect IQ Mobile SDK 的 Garmin GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)获取。要启用该框架，请在 `Project > Package Dependencies` 面板中添加依赖项，点击 Packages 列表底部的 `+` 按钮即可。
 
 ![将框架添加到 iOS 项目](/connect-iq/resources/programmers-guide/ios-image1.png)
 
 在弹出的对话框中选择要添加的依赖包。在搜索框中输入 `https://github.com/garmin/connectiq-companion-app-sdk-ios`。
 
-![搜索 Mobile SDK package](/connect-iq/resources/programmers-guide/ios-image2.png)
+![搜索 Mobile SDK 包](/connect-iq/resources/programmers-guide/ios-image2.png)
 
-#### 将 ConnectIQ framework 作为二进制文件嵌入
+#### 将 ConnectIQ 框架作为二进制文件嵌入
 
-要让项目能够使用 Mobile SDK 构建，请为项目的每个 target 嵌入该 framework：勾选每个 target 对应的复选框，然后点击 `Add Package`。
+要让项目能够使用 Mobile SDK 构建，请为项目的每个构建目标嵌入该框架：勾选每个构建目标对应的复选框，然后点击 `Add Package`。
 
-![将 framework 作为二进制文件嵌入](/connect-iq/resources/programmers-guide/ios-image3.png)
+![将框架作为二进制文件嵌入](/connect-iq/resources/programmers-guide/ios-image3.png)
 
 #### 添加必需的链接器标志
 
-iOS Mobile SDK 内部使用了 category 方法。导入使用 category 方法的库时，必须添加额外标志，才能正确链接该库。请将 `-ObjC` 标志添加到 `Target > Build Settings > Linking > Other Linker Flags` 设置中。
+iOS Mobile SDK 内部使用了 Objective-C 分类（category）方法。导入使用分类方法的库时，必须添加额外标志，才能正确链接该库。请将 `-ObjC` 标志添加到 `Target > Build Settings > Linking > Other Linker Flags` 设置中。
 
-![为 target 设置链接器标志](/connect-iq/resources/programmers-guide/ios-image4.png)
+![为构建目标设置链接器标志](/connect-iq/resources/programmers-guide/ios-image4.png)
 
-#### 注册 URL scheme
+#### 注册 URL 方案
 
-与 Android Mobile SDK 不同，使用 iOS Mobile SDK 创建的应用是独立应用，不直接依赖 Garmin Connect Mobile（GCM）与可穿戴设备通信。不过，应用仍需要 GCM 来首次发现可通信的 Connect IQ 兼容设备，或在可穿戴设备上安装 Monkey C 应用。配套应用与 GCM 通过 iOS URL scheme 系统相互启动并交换信息。为此，应用必须注册一个 GCM 可以向其发送数据的 URL scheme。请在 `Target > Info > URL Types` 面板中添加条目，并选择一个不太可能与 iOS 设备上其他应用冲突的字符串。详情请参阅 Apple 关于[自定义 URL scheme](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1) 的文档。
+与 Android Mobile SDK 不同，使用 iOS Mobile SDK 创建的应用是独立应用，不直接依赖 Garmin Connect Mobile（GCM）与可穿戴设备通信。不过，应用仍需要 GCM 来首次发现可通信的 Connect IQ 兼容设备，或在可穿戴设备上安装 Monkey C 应用。配套应用与 GCM 通过 iOS URL 方案（URL scheme）机制相互启动并交换信息。为此，应用必须注册一个 GCM 可以向其发送数据的 URL 方案。请在 `Target > Info > URL Types` 面板中添加条目，并选择一个不太可能与 iOS 设备上其他应用冲突的字符串。详情请参阅 Apple 关于[自定义 URL 方案](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1) 的文档。
 
-![为 target 注册 URL scheme](/connect-iq/resources/programmers-guide/ios-image5.png)
+![为构建目标注册 URL 方案](/connect-iq/resources/programmers-guide/ios-image5.png)
 
 如果使用 iOS 9 或更高版本的 SDK 编译，需要在应用的 Info.plist 中将 `gcm-ciq` 添加到 [LSApplicationQueriesSchemes](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14)。这样 SDK 才能检查 GCM 是否已安装。如果 Info.plist 中没有该键，需要手动添加。
 
@@ -48,22 +48,22 @@ iOS Mobile SDK 内部使用了 category 方法。导入使用 category 方法的
 
 当已连接的蓝牙设备有数据要发送时，iOS 系统可以唤醒与其通信的应用，并允许应用在后台执行。对于需要为可穿戴设备上的 Monkey C 应用处理请求的配套应用，这一功能很有用。要启用它，请在 `Target > Capabilities > Background Modes` 面板中打开 `Uses Bluetooth LE accessories` 选项。
 
-![为 target 设置后台执行模式（可选）](/connect-iq/resources/programmers-guide/ios-image6.png)
+![为构建目标设置后台执行模式（可选）](/connect-iq/resources/programmers-guide/ios-image6.png)
 
 #### 初始化 SDK
 
-与 Mobile SDK 的所有交互都通过 `ConnectIQ` 类完成。应用启动时，必须使用项目的 URL scheme 和 UI override delegate 初始化该类。通常可以在 app delegate 的 `application:didFinishLaunchingWithOptions:` 方法中完成。
+与 Mobile SDK 的所有交互都通过 `ConnectIQ` 类完成。应用启动时，必须使用项目的 URL 方案和 UI 自定义委托初始化该类。通常可以在应用委托的 `application:didFinishLaunchingWithOptions:` 方法中完成。
 
 ```objective-c
 [[ConnectIQ sharedInstance] initializeWithUrlScheme:@"exapp-123456"
                                  uiOverrideDelegate:self];
 ```
 
-URL scheme 应与“配置项目以使用 Mobile SDK”第 4 步中选择的字符串一致。当调用需要安装 GCM 的 `ConnectIQ` 类方法，而 iOS 系统中没有安装 GCM 时，默认会向用户显示一个 alert dialog，允许用户前往 Apple App Store 的 GCM 页面进行安装。此处传入符合 `IQUIOverrideDelegate` 协议的对象实例后，可以自定义这种情况下的行为或 UI。要使用默认 alert dialog 和默认行为，请传入 `nil`。
+URL 方案应与“配置项目以使用 Mobile SDK”第 4 步中选择的字符串一致。当调用需要安装 GCM 的 `ConnectIQ` 类方法，而 iOS 系统中没有安装 GCM 时，默认会向用户显示一个提示对话框，允许用户前往 Apple App Store 的 GCM 页面进行安装。此处传入符合 `IQUIOverrideDelegate` 协议的对象实例后，可以自定义这种情况下的行为或 UI。要使用默认提示对话框和默认行为，请传入 `nil`。
 
-#### 实现 UI override delegate
+#### 实现 UI 自定义委托
 
-如果指定了 UI override delegate，并且执行了需要安装 GCM 的操作，`ConnectIQ` 类会调用该 delegate 的 `needsToInstallConnectMobile` 方法。应用应告知用户该操作需要 GCM，并让用户选择打开 Apple App Store 中的 GCM 页面，或取消触发该操作。如果用户选择安装 GCM，可以调用 `showAppStoreForConnectMobile` 方法。
+如果指定了 UI 自定义委托，并且执行了需要安装 GCM 的操作，`ConnectIQ` 类会调用该委托的 `needsToInstallConnectMobile` 方法。应用应告知用户该操作需要 GCM，并让用户选择打开 Apple App Store 中的 GCM 页面，或取消触发该操作。如果用户选择安装 GCM，可以调用 `showAppStoreForConnectMobile` 方法。
 
 ```objective-c
 - (void)needsToInstallConnectMobile {
@@ -165,7 +165,7 @@ IQApp *app = [IQApp appWithUUID:uuid device:device];
 }];
 ```
 
-此方法通过 Bluetooth 与设备通信，因此是异步的。设备返回响应或请求超时后，才会调用 completion block。请求成功时，completion block 会收到一个 `IQAppStatus` 实例。配套应用可以检查该状态，了解应用是否已安装，以及安装的版本号，然后决定是否显示建议用户升级设备上应用的 UI。如果设备当前未连接或请求超时，completion block 会收到 `nil` 状态。
+此方法通过 Bluetooth 与设备通信，因此是异步的。设备返回响应或请求超时后，才会调用完成回调代码块。请求成功时，该代码块会收到一个 `IQAppStatus` 实例。配套应用可以检查该状态，了解应用是否已安装，以及安装的版本号，然后决定是否显示建议用户升级设备上应用的 UI。如果设备当前未连接或请求超时，该代码块会收到 `nil` 状态。
 
 #### 安装、升级或管理应用
 
