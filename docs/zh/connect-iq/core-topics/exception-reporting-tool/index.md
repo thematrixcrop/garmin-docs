@@ -1,5 +1,5 @@
 ---
-title: "错误报告应用（ERA）"
+title: "错误报告应用程序（ERA）"
 ---
 # 错误报告应用程序（ERA）
 
@@ -9,6 +9,7 @@ title: "错误报告应用（ERA）"
 
 要启动图形 ERA 工具，可以在 Visual Studio Code 的命令面板中运行 *Monkey C: Start ERA Viewer* 命令，或者使用[命令行](#command-line)。首次运行工具时会出现 *Login Prompt* 窗口，要求您登录开发者账户。完成登录后，工具会下载应用列表并填充应用选择列表。
 
+<a id="command-line"></a>
 ### 命令行
 
 您可以从命令行启动图形 ERA 工具，只需在当前 SDK 的 **bin** 文件夹中运行 `java -jar era.jar`。
