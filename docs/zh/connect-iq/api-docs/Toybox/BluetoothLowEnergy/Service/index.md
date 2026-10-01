@@ -34,11 +34,11 @@ API 级别 3.1.0
 
 - [**getDevice**](#getDevice-instance_function)() as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
-    获取服务所属的设备。获取此服务所属的设备。
+    获取此服务所属的设备。
 
 - [**getUuid**](#getUuid-instance_function)() as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-    返回 service 的 UUID。
+    返回 Service 的 UUID。
 
 
 ## 实例方法详情
@@ -84,15 +84,13 @@ API 级别 3.1.0
 
 ### **getDevice()** as [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/)
 
-获取服务所属的设备
-
-获取此服务所属的设备
+获取此服务所属的设备。
 
 返回：
 
 - [BluetoothLowEnergy.Device](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device/) —
 
-    父级特征对象
+    父级 Device 对象
 
 
 起始版本：
@@ -101,13 +99,13 @@ API 级别 3.1.0
 
 ### **getUuid()** as [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)
 
-返回 service 的 UUID
+返回 Service 的 UUID
 
 返回：
 
 - [BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) —
 
-    service 的 UUID
+    Service 的 UUID
 
 
 起始版本：
