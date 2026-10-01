@@ -5,7 +5,7 @@ title: "模块：Toybox.Math"
 
 ## 概述
 
-Math 模块提供 Apps 可使用的各种数学方法。
+Math 模块提供应用可使用的各种数学方法。
 
 示例：
 
