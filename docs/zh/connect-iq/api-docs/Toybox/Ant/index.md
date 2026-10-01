@@ -26,9 +26,9 @@ ANT 无线协议是一种低级通信协议，通过直接控制设备上的无�
 
 - [Core Topics - ANT and ANT Plus](/connect-iq/core-topics/ant-and-ant-plus/)
 
-- [ANT Basics](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
+- [ANT 基础知识](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
 
-- [ANT Downloads & Resources](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源](https://www.thisisant.com/developer/resources/downloads/)
 
 
 起始版本：
