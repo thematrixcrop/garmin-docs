@@ -45,7 +45,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)(newBurstPayload as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))
 
-    Constructor.
+    构造函数。
 
 - [**next**](#next-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
