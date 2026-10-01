@@ -1,5 +1,5 @@
 ---
-title: "Your First Connect IQ App"
+title: "您的第一个 Connect IQ 应用"
 ---
 <a id="your-first-connect-iq-app"></a>
 
