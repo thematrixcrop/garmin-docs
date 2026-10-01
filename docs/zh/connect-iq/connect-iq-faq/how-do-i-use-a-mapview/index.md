@@ -3,39 +3,39 @@ title: "How do I use a MapView?"
 ---
 # 如何使用 MapView？
 
-嘉敏通过制作位置意识的产品来建立了自己作为一个公司,并发展成为服务于汽车,航空,海洋,健身和户外市场的产品.位置意识的基石是数字绘图.嘉敏产品经常在电池覆盖之外使用,我们的用户依赖于我们知道你在云中连接不到哪里.超过十年来,嘉敏一直在数字化世界并将地图放在各种形状和尺寸的设备上.
+Garmin 通过制造具备位置感知能力的产品发展壮大，产品覆盖汽车、航空、航海、健身和户外市场。位置感知的基础是数字制图。Garmin 产品经常在蜂窝网络覆盖之外使用，用户希望即使设备无法连接云端，我们仍能知道他们所在的位置。十多年来，Garmin 一直在数字化世界，并将地图带到各种形状和尺寸的设备上。
 
-随着`MapView`对象的加入,Connect IQ现在允许您的应用程序利用加敏设备上包含的数字绘图.您可以使用`MapView`对象为用户提供位置背景,提供课程或路线的预览,或让用户浏览其周围.
+加入 `MapView` 对象后，Connect IQ 应用可以使用 Garmin 设备内置的数字地图。你可以用 `MapView` 为用户提供位置背景、预览课程或路线，或让用户浏览周围环境。
 
 ## 集成地图视图
 
-让我们谈谈一个常见的 Garmin 设备的使用情况.假设您有一个云数据库的路线,用户可以选择下载到设备.您想给用户预览地图上的路线,并给用户一个明确的行动调用下载.您还想让用户触摸地图浏览路线.
+下面看一个 Garmin 设备上的常见使用场景：云端数据库中有一些路线，用户可以选择下载到设备。你希望在地图上预览路线，并明确提示用户下载；同时允许用户触摸地图浏览路线。
 
 ![](/connect-iq/resources/faq/map_view_1.png)
 
 ## 设置场景
 
-首先，您需要告诉地图要将用户的注意力聚焦在地球上的哪个位置。`setMapVisibleArea` 方法允许您设置由 `Location` 对象定义的边界框，以确定屏幕上要渲染的世界区域。
+首先，需要告诉地图将用户的注意力聚焦在地球上的哪个位置。`setMapVisibleArea` 方法允许设置由 `Location` 对象定义的边界框，确定屏幕上要渲染的区域。
 
 ## 叠加内容
 
 `MapView` 对象支持两种叠加层：*标记*和*折线*。`MapMarker` 实例表示地图上的一个位置。您可以使用 Garmin 默认图钉，也可以提供自己的 `BitmapResource` 对象。如果使用自定义标记，需要设置要在准确位置绘制的像素（热点）。将 `MapMarker` 对象数组传递给 `MapView` 实例后，所有标记都会添加到地图中。调用 `setMapMarker` 会清除当前设置的所有标记。
 
-一个`MapPolyline`实例代表一系列坐标,就像一个路径.你可以设置聚合线的宽度和颜色.你可以设置聚合线为`MapView`使用`setPolyline`.一个`MapView`实例只能设置一个`MapPolyline`实例在任何给定的时间.
+`MapPolyline` 实例表示一系列坐标，类似一条路线。你可以设置折线的宽度和颜色，并使用 `setPolyline` 将折线设置到 `MapView`。一个 `MapView` 实例同一时间只能设置一个 `MapPolyline`。
 
 ## 预览和浏览
 
-返回我们的例子,请记住,我们希望让用户可以预览路线,但如果他们想更仔细地查看内容,让他们浏览内容.`MapView`类在使用 *地图模式* 的同时处理两个使用情况.
+回到上面的例子：我们希望用户可以预览路线，并在需要仔细查看时浏览路线。`MapView` 类通过 *地图模式* 在一个 View 中处理这两种场景。
 
-在`MAP_MODE_PREVIEW`中,地图视图集中在一个区域上.您可以添加地图上面的布局,以按和可选项来提供文本和操作.您可以使用`setScreenVisibleArea`来向`MapView`实例通信地图的部分没有被用户界面掩盖.
+在 `MAP_MODE_PREVIEW` 中，地图视图会居中显示某个区域。可以在地图上方添加布局、按钮和选项，为用户提供上下文和操作。使用 `setScreenVisibleArea` 告知 `MapView` 哪部分地图没有被用户界面遮挡。
 
 ![](/connect-iq/resources/faq/map_view_2.png)
 
-切换地图模式到`MAP_MODE_BROWSE`将地图视图改为浏览器界面.浏览器界面将是设备本地使用的相同的浏览器界面.
+将地图模式切换为 `MAP_MODE_BROWSE` 后，地图视图会变为浏览界面，该界面与设备原生使用的浏览界面相同。
 
 ## 将各部分联系起来
 
-我们想向用户展示我们想要下载的课程的预览,但我们如何在下载完整课程之前显示它?将多线线带到您的应用程序的一个方法是使用[Google Polyline Algorithm Format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm). 这允许您将多线带到您的Connect IQ应用程序中作为一个可以解码的字符串.下面的功能将多线串解码到一个数组`Location`对象中.为了保存内存,它将开始跳过坐标随着多线线的长度增长,基本上降低线程随着长度增长.
+我们希望在用户下载完整课程前展示路线预览。将折线传入应用的一种方式是使用 [Google Polyline Algorithm Format](https://developers.google.com/maps/documentation/utilities/polylinealgorithm)。这样可以将折线作为字符串发送到 Connect IQ 应用，再解码回折线。下面的函数会将折线字符串解码为 `Location` 对象数组。为节省内存，折线变长后函数会开始跳过部分坐标，相当于随着长度增加降低折线细节。
 
 ```typescript
     // Constant used to downscale detail as
@@ -95,7 +95,7 @@ title: "How do I use a MapView?"
     }
 ```
 
-在我们的UI中,我们希望允许用户在我们的用户界面之间切换与行动调用和允许他们浏览.
+在 UI 中，我们希望用户可以在带有操作提示的界面和浏览界面之间切换。与其通过推入、弹出不同模式的地图视图，不如在同一个 View 中由 delegate 切换模式。
 
 ```typescript
 class MapSampleMapDelegate extends Ui.BehaviorDelegate {
@@ -126,8 +126,8 @@ class MapSampleMapDelegate extends Ui.BehaviorDelegate {
 }
 ```
 
-现在我们可以在单个视图中提供一个UI, 让用户浏览内容.
+现在，一个 View 就能同时提供路线预览、操作提示和内容浏览。
 
 ## 结论
 
-希望您可以从此看出,`MapView`类是玩具盒的强大补充. 通过将Garmin数字地图与内容结合起来,您可以为您的应用程序带来全新的位置意识水平.
+希望你能看出，`MapView` 类是 Toybox 的强大补充。将 Garmin 数字地图与应用内容结合，可以为应用带来全新的位置感知能力。
