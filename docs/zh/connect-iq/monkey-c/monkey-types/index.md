@@ -648,7 +648,7 @@ public function foo(x as Number?) as Boolean {
 
 `==`、`!=` 和 `instanceof` 运算符会按照以下规则改变类型：
 
-| Type | `==` | `!=` | `instanceof` | `!instanceof` |
+| 类型 | `==` | `!=` | `instanceof` | `!instanceof` |
 | --- | --- | --- | --- | --- |
 | Any | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
 | Concrete | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
