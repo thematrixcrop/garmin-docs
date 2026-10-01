@@ -1,5 +1,5 @@
 ---
-title: "Connect IQ FAQ"
+title: "Connect IQ 常见问题解答"
 ---
 # Connect IQ 常见问题解答
 
