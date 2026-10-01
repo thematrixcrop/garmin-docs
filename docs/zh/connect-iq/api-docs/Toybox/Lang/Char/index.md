@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Chars are Unicode characters.
+Char 表示 Unicode 字符。
 
 起始版本：
 
