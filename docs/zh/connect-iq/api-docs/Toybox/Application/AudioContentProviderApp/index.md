@@ -301,7 +301,7 @@ API 级别 3.0.0
 
 返回：
 
-- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) 音频内容提供商的图标
+- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) — 音频内容提供商的图标
 
 
 起始版本：
