@@ -175,7 +175,7 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 | `filename` | 图像文件的相对路径 | 有效且可解析的图像文件路径 | 不适用 | 必需 |
 | `dithering` | 编译图像时使用的抖动方式 | `floyd_steinberg` 或 `none` | `floyd_steinberg` |  |
 | `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
-| `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| 对于 16 位颜色设备为 `true` |  |
+| `automaticPalette` | 编译图像时自动确定要使用的缩减调色板。对于 16 位颜色设备，图像会限制为 256 种颜色。 | `true` 或 `false` | 对于 16 位颜色设备为 `true` |  |
 | `packingFormat` |将图像编码到 PRG 的格式| `default`、`png`、`jpg`、`yuv` | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [位图打包格式](#bitmap-packing-formats) |
 | `scaleX` | 图像在 X 方向应如何缩放 | 像素尺寸或百分比 | 设置了 `scaleY` 时默认使用 `scaleY` 的值，否则默认为图像宽度的 100% | 请参阅 `scaleRelativeTo` |
 | `scaleY` | 图像在 Y 方向应如何缩放 | 像素尺寸或百分比 | 设置了 `scaleX` 时默认使用 `scaleX` 的值，否则默认为图像高度的 100% | 请参阅 `scaleRelativeTo` |
