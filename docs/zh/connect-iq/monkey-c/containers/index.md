@@ -4,7 +4,7 @@ title: "Containers"
 <a id="containers"></a>
 # 容器
 
-Monkey C 语言内置两种容器类型：数组和字典。
+Monkey C 语言内置两种容器类型：数组（Array）和字典（Dictionary）。
 
 ## 数组
 
@@ -17,7 +17,7 @@ var untypedArray = new [size];
 var typedArray = new Array<Number>[size];
 ```
 
-要预先初始化数组，可以使用以下语法：
+要预先填充数组，可以使用以下语法：
 
 ```typescript
 // New array. Will be typed as a Tuple
@@ -62,7 +62,7 @@ System.println( dict["c"] );        // Prints "null"
 var x = {};                         // Empty dictionary
 ```
 
-创建新的 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象时，可以添加类型后缀：
+创建新的 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象时，可以添加类型后缀以限制键和值的类型：
 
 ```typescript
 var x = {} as Dictionary<Symbol, String>;
@@ -87,4 +87,4 @@ class Person
 }
 ```
 
-字典会随着内容增加或减少自动调整大小并重新哈希。这使字典非常灵活，但也有代价：如果发生意外或过于频繁的扩容和重新哈希，插入和删除内容可能带来性能问题。此外，哈希表需要额外的分配空间，因此空间效率不如对象或数组。
+字典会随着内容增加或减少自动调整大小并重新哈希。这使字典非常灵活，但也有代价：如果发生意外或过于频繁的扩容和重新哈希，插入和删除元素可能带来性能问题。此外，哈希表需要额外的分配空间，因此空间效率不如对象或数组。
