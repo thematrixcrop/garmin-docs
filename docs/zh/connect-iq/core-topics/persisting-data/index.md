@@ -1,22 +1,23 @@
 ---
 title: "Persisting Data"
 ---
+<a id="persisting-data"></a>
 # 持久化数据
 
-连接智能也可以在运行时间内存储应用程序内部的数据.例如,应用程序可能需要获取或计算数据并存储其以后使用.这通过使用存储,属性和设置实现.
+Connect IQ 支持应用在运行时保存数据。例如，应用可能需要获取或计算数据，并将其存储起来供后续使用。这可以通过 Storage、Properties 和 Settings 实现。
 
-- *存储*表示写到磁盘上的数据,以便在应用程序执行中保持.
+-   *Storage* 表示写入磁盘的数据，因此数据可以在多次运行应用之间保留。
 
-- *属性*是构建时定义的常数值,并包含在可执行中的值,用于不应该在代码中定义的特定产品值.属性也可以定义默认设置值.
+-   *Properties* 是在构建时定义、并包含在可执行文件中的常量值，适合存放不应直接写在代码中的产品特定值。Properties 也可以定义 Settings 的默认值。
 
-- *设置*是通过 Garmin Connect Mobile和 Garmin Express 修改的用户可编辑的值.默认设置值由 Properties 定义.
+-   *Settings* 是用户可通过 Garmin Connect Mobile 和 Garmin Express 修改的值。Settings 的默认值由 Properties 定义。
 
 
-## 存储
+## Storage
 
-存储是用来在开发人员定义的运行时间内从设备的文件系统保存和检索数据.这些数据仅可用于应用程序,最终用户无法访问.例如,该功能可以用于存储应用程序最后使用时的位置.下一次应用程序启动时,存储可以为应用程序提供最后已知位置.
+Storage 用于在运行时按照开发者的定义，从设备文件系统保存和读取数据。这些数据仅供应用使用，最终用户无法访问。例如，可以使用此功能保存应用上次运行时的位置。下次启动应用时，Storage 就能向应用提供上次记录的位置。
 
-下列数据类型可存储:
+Storage 可以存储以下数据类型：
 
 -   [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
@@ -37,50 +38,50 @@ title: "Persisting Data"
 -   [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)
 
 
-值得注意的是,[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)可能只包含上述数据类型.例如,无法在存储中存储[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)在[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)或[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/).
+请注意，[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 和 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 中只能包含上述数据类型。例如，不能在 Storage 中将 [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) 存入 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 或 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)。
 
-## 访问属性和设置：对象存储
+## 访问 Properties 和 Settings：Object Store
 
-在 API 级别 2.4.0 之前,所有内容都存在于对象存储中.如果您的应用程序运行在 Connect IQ System 1 设备上,则需要使用[AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)和[AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)来保持数据.这些功能允许访问既设置,又保持数据.
+在 API level 2.4.0 之前，所有内容都持久化在 Object Store 中。如果应用运行在 Connect IQ System 1 设备上，则需要使用 [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) 和 [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) 持久化数据。这两个函数可以同时访问 Settings 和已持久化的数据。
 
-由于对象存储器的成本与运行时间内存相比,除非您在系统1设备上运行,否则不要使用这些方法.
+Object Store 是一个 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)，在应用终止之前一直保存在内存中；应用终止时，Object Store 才会写入磁盘。由于 Object Store 会占用运行时内存，因此除非需要支持 System 1 设备，否则不要使用这些方法。
 
-| API |目的| API 级别 |
+| API | 用途 | API level |
 | --- | --- | --- |
-| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) |从物体存储器中按键获取信息| 1.0.0 |
-| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) |存储信息按键在物体存储器中| 1.0.0 |
+| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) | 按键从 Object Store 读取信息 | 1.0.0 |
+| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) | 按键将信息写入 Object Store | 1.0.0 |
 
-## 访问存储：`Application.Storage`
+## 访问 Storage：`Application.Storage`
 
-*自 API 级别 2.4.0*
+*自 API level 2.4.0 起可用*
 
-[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块管理持续的键值对数据存储.当调用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function)时,信息自动存储在磁盘上.键和值每个限制在8 KB,总共可存储 128 KB.
+[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) 模块用于管理持久化的键值对数据。调用 [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) 后，信息会自动保存到磁盘。每个键和值的大小上限为 8 KB，Storage 总容量为 128 KB。
 
-例如,一个应用程序可能会保存一个位置以后使用以下代码:
+例如，应用可以使用以下代码保存一个位置，供之后使用：
 
 ```java
 Storage.setValue("location", locationValue.toDegrees());
 ```
 
-下次启动应用程序时,可检索并显示存储的位置值:
+下次启动应用时，可以读取并显示保存的位置：
 
 ```java
 var myLastLocation = Application.Storage.getValue("location");
 dc.drawText(x, y, Graphics.FONT_SMALL, "Last location: " + myLastLocation, Graphics.TEXT_JUSTIFY_LEFT);
 ```
 
-API级 3.2.0 引入了从背景过程中访问[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块的能力.后台过程可以使用[Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function),[Storage.deleteValue()](/connect-iq/api-docs/Toybox/Application/Storage/#deleteValue-instance_function)和 .当存储从背景过程中编写时,如果背景和前景过程同时和相反而活跃,则将调用[AppBase.onStorageChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStorageChanged-instance_function)调用后台进程.应用程序将不得不重新加载存储数据以反映更新信息.
+从 API level 3.2.0 起，后台进程也可以访问 [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) 模块。后台进程可以使用 [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function)、[Storage.deleteValue()](/connect-iq/api-docs/Toybox/Application/Storage/#deleteValue-instance_function) 和 [Storage.clearValues()](/connect-iq/api-docs/Toybox/Application/Storage/#clearValues-instance_function) 修改 Storage。当后台进程写入 Storage 时，如果后台进程和前台进程同时处于活动状态，另一进程会调用 [AppBase.onStorageChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStorageChanged-instance_function) 回调，反之亦然。应用随后需要重新从 Storage 加载数据，才能反映更新后的信息。
 
-| API |目的| API 级别 |
+| API | 用途 | API level |
 | --- | --- | --- |
-| [Storage.getValue()](/connect-iq/api-docs/Toybox/Application/Storage/#getValue-instance_function) |从持续存储中按键获取信息| 2.4.0 |
-| [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) | 按键将信息存储在持久化存储中 | 2.4.0 |
+| [Storage.getValue()](/connect-iq/api-docs/Toybox/Application/Storage/#getValue-instance_function) | 按键从持久化 Storage 读取信息 | 2.4.0 |
+| [Storage.setValue()](/connect-iq/api-docs/Toybox/Application/Storage/#setValue-instance_function) | 按键将信息写入持久化 Storage | 2.4.0 |
 
-## 访问属性和设置：`Application.Properties`
+## 访问 Properties 和 Settings：`Application.Properties`
 
-*自 API 级别 2.4.0*
+*自 API level 2.4.0 起可用*
 
-[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供访问设置值和属性的接口。调用 [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) 时，信息会自动保存到磁盘。分别使用 [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) 和相应的设置方法获取或设置属性值：
+[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块提供访问应用 Properties 和 Settings 值的接口。调用 [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function) 时，信息会自动保存到磁盘。分别使用 [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) 和 [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) 获取或设置属性值：
 
 ```java
 // Set an Object Store app setting
@@ -90,23 +91,24 @@ Properties.setValue("mySetting", mySetting);
 var mySetting = Properties.getValue("mySetting");
 ```
 
-| API |目的| API 级别 |
+| API | 用途 | API level |
 | --- | --- | --- |
-| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) |从属性中按键获取信息.属性值必须在`<properties>`元素中的资源xml文件中定义.如果一个不存在应用属性中的密钥被传递给[Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function),则会抛出一个例外| 2.4.0 |
-| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) |存储信息按按键在持续存储中.资源xml文件中必须在`<properties>`元素中定义属性值.如果在应用属性中不存在的密钥被传递到[Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function),则会抛出一个例外| 2.4.0 |
+| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) | 按键从 Properties 读取信息。属性值必须在资源 XML 文件的 `<properties>` 元素中定义。如果将应用 Properties 中不存在的键传递给 [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function)，就会抛出异常 | 2.4.0 |
+| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) | 按键将信息写入持久化存储。属性值必须在资源 XML 文件的 `<properties>` 元素中定义。如果将应用 Properties 中不存在的键传递给 [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function)，就会抛出异常 | 2.4.0 |
 
-##我应该使用哪个API?
+## 应该使用哪个 API？
 
-如果您的应用程序在API级别2.4.0或以上的设备上运行,[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)比对象存储器提供了更好的应用数据持久解决方案.在现有应用程序中使用更新的API只是更新代码来调用新方法.
+如果应用运行在 API level 2.4.0 或更高版本的设备上，使用 [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) 持久化应用数据，比使用 Object Store 更合适。要在现有应用中使用新版 API，只需更新代码以调用新方法。不过，有以下几点需要注意：
 
-1. 对象存储数据文件不会转换为新格式.
+1.  Object Store 数据文件不会转换为新格式。
 
-如果应用程序使用了 API 级别 2.4.0 之前的存储,现有的属性不会自动迁移到[Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/)模块所使用的新文件格式.如果需要转换,应用程序必须包含一个程序,以从旧文件中获取数据并将其存储在新的格式中.
+    如果应用在 API level 2.4.0 之前使用过存储，现有属性不会自动迁移到 [Application.Storage](/connect-iq/api-docs/Toybox/Application/Storage/) 模块使用的新文件格式。如果需要转换，应用必须实现相应逻辑，从旧文件读取数据并以新格式存储。
 
-2.[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)将在未定义的属性上尝试写时抛出例外.在API级别2.4.0之前,尝试写到未定义的属性会导致为存储写入值 ( .STR文件),因为[AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function)和[AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function)被过载以与存储,属性和设置每个功能.使用[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)模块时,这种行为将不再发生,因为它与 .而不是,一个[Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)被抛出.
+2.  如果尝试写入未定义的属性，[Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 会抛出异常。
 
+    在 API level 2.4.0 之前，尝试写入未定义的属性会将值写入 Storage（即 `.STR` 文件），因为 [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) 和 [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) 曾被重载，可以分别操作 Storage、Properties 和 Settings。使用 [Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/) 模块后，这种行为不再存在，因为该模块与 Storage、Properties 和 Settings 的其他接口彼此独立。此时会抛出 [Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)。
 
-为了最大限度地使用支持设备的数量,使用`has`检查查是否可用存储API,然后根据设备支持的方法调用适当的方法:
+为了支持尽可能多的设备，请使用 `has` 检查 Storage API 是否可用，再根据设备支持的 API 调用相应方法：
 
 ```typescript
 if ( Toybox.Application has :Storage ) {
@@ -116,4 +118,4 @@ if ( Toybox.Application has :Storage ) {
 }
 ```
 
-查看与SDK共享的`ApplicationStorage`样本应用.
+更多信息请参阅 SDK 随附的 `ApplicationStorage` 示例应用。
