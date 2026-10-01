@@ -1040,7 +1040,7 @@ API 级别 1.0.0
 
 另见：
 
-- [Positional Accuracy](/connect-iq/api-docs/Toybox/Position/Info/#accuracy-var)
+- [位置精度](/connect-iq/api-docs/Toybox/Position/Info/#accuracy-var)
 
 
 返回：
@@ -1319,7 +1319,7 @@ API 级别 1.0.0
 
 另见：
 
-- [Positional Speed](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
+- [位置速度](/connect-iq/api-docs/Toybox/Position/Info/#speed-var)
 
 
 返回：
