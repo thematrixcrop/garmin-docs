@@ -41,7 +41,7 @@ function example() as Void {}
 
 2.  **系统空间不足**：向 `responseCallback` 返回 `STORAGE_FULL` 响应。
 
-3.  **系统不支持该文件类型**（例如，将正在运行的锻炼发送到自行车设备）：`responseCallback` 会返回空迭代器或 `null`。
+3.  **系统不支持该文件类型**（例如，将跑步训练发送到自行车设备）：`responseCallback` 会返回空迭代器或 `null`。
 
 
 访问 `PersistedContent` 需要 `Persisted Content` 权限。
