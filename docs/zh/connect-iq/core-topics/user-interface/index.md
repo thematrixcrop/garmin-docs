@@ -1,5 +1,5 @@
 ---
-title: "Views, Drawables and Layers"
+title: "视图、可绘制对象和层"
 ---
 # 视图、可绘制对象和层
 
