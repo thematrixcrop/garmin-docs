@@ -248,7 +248,7 @@ API 级别 1.2.0
 
 - [**initialize**](#initialize-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type))
 
-    Constructor.
+    构造函数。
 
 - [**setOptions**](#setOptions-instance_function)(options as [Picker.Options](/connect-iq/api-docs/Toybox/WatchUi/Picker/#Options-named_type)) as **Void**
 
