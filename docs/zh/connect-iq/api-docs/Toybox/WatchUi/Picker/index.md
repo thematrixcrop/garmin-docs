@@ -273,7 +273,7 @@ API 级别 1.2.0
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含 Picker 对象选项的 Dictionary
+    包含 Picker 对象选项的字典（Dictionary）。
 
 
 另见：
@@ -293,7 +293,7 @@ API 级别 1.2.0
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含 Picker 对象选项的 Dictionary
+    包含 Picker 对象选项的字典（Dictionary）。
 
 - :title — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/)) —
 
