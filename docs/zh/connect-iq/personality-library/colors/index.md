@@ -1,22 +1,23 @@
 ---
 title: "Color"
 ---
+<a id="color"></a>
 # 颜色
 
-产品的颜色取决于显示技术和产品的图形设计语言.
+产品采用的颜色取决于显示技术和产品的图形设计语言。
 
 ## 使用颜色选择器
 
-个性UI提供了特定环境的颜色选择器,可以在资源系统和代码中使用.
+Personality UI 提供了与上下文相关的颜色选择器，可以在资源系统和代码中使用。
 
 ### 示例
 
-在布局中,在添加布局组件时,将颜色与其他选择器结合起来.
+在布局中添加布局组件时，可以将颜色与其他选择器结合使用。
 
 ```xml
 <!-- layout.xml -->
 
-        <!-- 提示标题 -->
+        <!-- Prompt Title -->
         <text-area text="@Strings.mainTitle" personality="
             system_color_dark__text
             prompt_size__title
@@ -27,7 +28,7 @@ title: "Color"
 
 ### 示例
 
-在子C源中,你可以直接引用颜色选择器在代码中.
+在 Monkey C 源代码中，可以直接引用颜色选择器。
 
 ```typescript
 // View.mc
@@ -42,12 +43,11 @@ dc.setColor(
 
 ## 浅色和深色主题
 
+![设备在浅色和深色模式下的正面视图](/connect-iq/resources/personality-library/personality_ui_light_dark_modeshigh.jpg)
 
-![设备正面显示浅色和深色模式](/connect-iq/resources/personality-library/personality_ui_light_dark_modeshigh.jpg)
+许多 Garmin® 产品同时提供浅色和深色主题。有些产品允许用户为每项活动选择主题，另一些产品则通过日间和夜间模式决定主题。Personality 设计系统中的组件都会使用 `color_light` 和 `color_dark` 选择器记录颜色。在某些产品上，尤其是 AMOLED 显示屏产品，这两个选择器的颜色相同。
 
-许多Garmin®产品都有光和暗的主题.有些产品允许客户选择每个活动的主题,而其他产品都有昼夜模式,决定主题.个性设计系统中的组件的所有颜色都用`color_light`和`color_dark`选择器记录.在某些产品上,特别是那些具有AMOLED显示屏的产品上,这些选择器是相同的.
-
-如果您的应用程序不考虑夜间模式或不运行在夜间模式的产品上,只使用`color_dark`选择器.
+如果应用不处理夜间模式，或不运行在支持夜间模式的产品上，请只使用 `color_dark` 选择器。
 
 ### 示例
 
@@ -67,17 +67,17 @@ dc.setColor(
 ```xml
 <!-- layout.xml -->
 
-    <!-- 应用的主视图 -->
+    <!-- The Main View for our app -->
     <layout id="MainLayoutDark">
-        <!-- 深色背景 -->
+        <!-- Dark Background -->
         <drawable id="DarkBackground" />
 
-        <!-- 操作菜单提示 -->
+        <!-- ActionMenu hint -->
         <bitmap id="actionMenuDark" personality="
             system_icon_dark__hint_action_menu
             system_loc__hint_action_menu" />
 
-        <!-- 提示标题 -->
+        <!-- Prompt Title -->
         <text-area text="@Strings.mainTitle" personality="
             system_color_dark__text
             prompt_size__title
@@ -85,7 +85,7 @@ dc.setColor(
             prompt_font__title
         "/>
 
-        <!-- 提示正文 -->
+        <!-- Prompt Body -->
         <text-area text="@Strings.mainPrompt" personality="
             system_color_dark__text
             prompt_size__body_with_title
@@ -97,7 +97,7 @@ dc.setColor(
 
 ### 示例
 
-由于性能原因,在您的本地变量中更快地跟踪白天或夜间模式,而不是在每次更新中查询系统.下面的例子揭示白天或夜间模式是应用中的页面可以访问的主题.
+出于性能考虑，与其每次更新都查询系统，不如在本地变量中跟踪日间或夜间模式。下面的示例将日间或夜间模式作为主题公开，应用中的页面可以访问该主题。
 
 ```typescript
 //! Application.mb
@@ -115,11 +115,11 @@ enum Theme {
 class MyApp extends Application {
     private var _theme as Theme;
 
-    // 主题初始化
+    // Theme initialization
     public function initialize() {
         AppBase.initialize();
 
-        // 检查夜间模式
+        // Test for night mode
         if (Styles.device_info.hasNightMode &&
             System.DeviceSettings has :isNightModeEnabled) {
             _theme = System.getDeviceSettings().isNightModeEnabled ? THEME_DARK : THEME_LIGHT;
@@ -129,20 +129,20 @@ class MyApp extends Application {
 
     }
 
-    // 应用程序处理昼夜模式变化
+    // Application handler for changes in day/night mode
     public function onNightModeChanged() {
-        // 处理夜间模式变化
+        // Handle a change in night mode
         if (Styles.device_info.hasNightMode &&
             System.DeviceSettings has :isNightModeEnabled) {
             _theme = System.getDeviceSettings().isNightModeEnabled ? THEME_DARK : THEME_LIGHT;
         } else {
             _theme = THEME_LIGHT;
         }
-        // 强制更新屏幕。
+        // Force a screen update.
         WatchUi.requestUpdate();
     }
 
-    // 主题访问器
+    // Theme accessor
     public function getTheme() as Theme {
         return _theme;
     }
@@ -152,23 +152,23 @@ class MyApp extends Application {
 
 ### 示例
 
-根据您的应用程序是否在白天或夜间模式下,您可以加载不同的布局.下面的例子跟踪当前模式,并在主题变化时更改它.
+可以根据应用处于日间还是夜间模式加载不同布局。下面的示例跟踪当前模式，并在主题变化时更新布局。
 
 ```typescript
 // View.mb
 
-//! 显示应用主菜单的视图
+//! View that shows the main menu for the app
 class MainView extends WatchUi.View {
     private var _theme as Theme;
 
-    //! 构造函数
+    //! Constructor
     function initialize() {
         View.initialize();
 
         _theme = $.getApp().getTheme();
     }
 
-    //! 处理布局
+    //! Handle layout
     function onLayout(dc as Dc) as Void {
         _theme = $.getApp().getTheme();
         setLayout(
@@ -197,7 +197,7 @@ class MainView extends WatchUi.View {
 | `activity_color_light__background`, `activity_color_dark__background` | 默认活动背景色。 |
 | `activity_color_light__text`, `activity_color_dark__text` | 默认活动文本颜色。 |
 | `prompt_color_light__background`, `prompt_color_dark__background` | 默认提示背景色。 |
-| `prompt_color_light__title`, `prompt_color_dark__title` |在提示中标题字符串的文本颜色.|
-| `prompt_color_light__body`, `prompt_color_dark__body` |提示的体文本的文本颜色.|
+| `prompt_color_light__title`, `prompt_color_dark__title` | Prompt 标题字符串的文本颜色。 |
+| `prompt_color_light__body`, `prompt_color_dark__body` | Prompt 正文的文本颜色。 |
 | `confirmation_color_light__background`, `confirmation_color_dark__background` | 默认确认背景色。 |
 | `confirmation_color_light__body`, `confirmation_color_dark__body` | 默认确认正文文本颜色。 |
