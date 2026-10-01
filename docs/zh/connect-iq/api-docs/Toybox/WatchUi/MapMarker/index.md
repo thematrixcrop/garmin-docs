@@ -137,7 +137,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(location as [Position.Location](/connect-iq/api-docs/Toybox/Position/Location/))
 
-    Constructor.
+    构造函数。
 
 - [**setIcon**](#setIcon-instance_function)(icon as [Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type) or [WatchUi.MapMarkerIcon](/connect-iq/api-docs/Toybox/WatchUi/#MapMarkerIcon-module) or [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), x as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), y as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
