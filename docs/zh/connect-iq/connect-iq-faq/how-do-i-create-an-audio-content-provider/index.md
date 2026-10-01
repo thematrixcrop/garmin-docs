@@ -1,8 +1,8 @@
 ---
-title: "How do I create an Audio Content Provider?"
+title: "如何创建音频内容提供商？"
 ---
 <a id="how-do-i-create-an-audio-content-provider"></a>
-# 如何创建 Audio Content Provider？
+# 如何创建音频内容提供商？
 
 2018 年，Garmin 推出了[多款支持音乐的可穿戴产品](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc)，让用户在进行日常活动时可以把手机留在家里。用户可以直接将音乐库复制到设备，也可以安装 Connect IQ Audio Content Provider 应用，作为可穿戴设备与内容分发网络（CDN）之间的桥梁。
 
