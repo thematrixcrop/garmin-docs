@@ -83,7 +83,7 @@ API 级别 3.1.0
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    Characteristic 中发现的描述符的 [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 个对象的迭代器
+    Characteristic 中发现的 [Descriptor](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 对象迭代器
 
 
 起始版本：
