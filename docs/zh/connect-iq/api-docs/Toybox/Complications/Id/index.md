@@ -34,7 +34,7 @@ API 级别 4.2.0
 
 - [**initialize**](#initialize-instance_function)(id as [Complications.Type](/connect-iq/api-docs/Toybox/Complications/#Type-module))
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
