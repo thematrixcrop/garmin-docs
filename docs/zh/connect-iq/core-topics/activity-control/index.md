@@ -1,5 +1,5 @@
 ---
-title: "Activity Control"
+title: "活动控制"
 ---
 # 活动控制
 
