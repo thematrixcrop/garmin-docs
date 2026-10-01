@@ -1,66 +1,69 @@
 ---
 title: "Mobile SDK for iOS"
 ---
+<a id="mobile-sdk-for-ios"></a>
 # iOS 移动 SDK
 
-连接IQ移动SDK允许创建与 Garmin可穿戴设备运行的 Monkey C应用程序互动的 iOS 应用程序.这允许通过从可穿戴设备中获取远程数据或将资源密集型任务从 iOS 设备中建立功能丰富的用户体验.本文档将引导您在 iOS 项目中添加移动SDK,以及介绍 SDK s API 和如何与您的 Monkey C 应用程序进行通信.
+Connect IQ Mobile SDK 可以让你创建与 Garmin 可穿戴设备上运行的 Monkey C 应用交互的 iOS 配套应用。你可以从可穿戴设备获取远程数据，或将消耗资源的任务转移到 iOS 设备，从而构建功能丰富的用户体验。本文将介绍如何在 iOS 项目中添加 Mobile SDK，并说明 SDK 的 API 以及如何与 Monkey C 应用通信。
 
-## 配置一个项目使用移动SDK
+## 配置项目以使用 Mobile SDK
 
-#### 加入项目框架
+### 将框架添加到项目
 
-移动 SDK for iOS 以 iOS 框架包形式分发，可在 [Garmin Connect IQ Mobile SDK GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)中找到。
+iOS Mobile SDK 以 iOS framework package 的形式发布，可从 [Connect IQ Mobile SDK 的 Garmin GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)获取。要启用该 framework，请在 `Project > Package Dependencies` 面板中添加依赖项。点击 Packages 列表底部的 `+` 按钮即可。
 
 ![将框架添加到 iOS 项目](/connect-iq/resources/programmers-guide/ios-image1.png)
 
-在搜索框中输入"https://github.com/garmin/connectiq-companion-app-sdk-ios"![](/connect-iq/resources/programmers-guide/ios-image2.png)
+在弹出的对话框中选择要添加的依赖包。在搜索框中输入 `https://github.com/garmin/connectiq-companion-app-sdk-ios`。
 
-##### 嵌入ConnectIQ框架作为二进制
+![搜索 Mobile SDK package](/connect-iq/resources/programmers-guide/ios-image2.png)
 
-为了允许一个项目使用移动 SDK 构建,将框架嵌入为每个项目的目标的二进制,通过对每个目标的框点击并点击`Add Package`.
+#### 将 ConnectIQ framework 作为二进制文件嵌入
 
-![将框架嵌入为二进制文件](/connect-iq/resources/programmers-guide/ios-image3.png)
+要让项目能够使用 Mobile SDK 构建，请为项目的每个 target 将 framework 作为二进制文件嵌入：勾选每个 target 对应的复选框，然后点击 `Add Package`。
+
+![将 framework 作为二进制文件嵌入](/connect-iq/resources/programmers-guide/ios-image3.png)
 
 #### 添加必需的链接器标志
 
-移动SDK用于iOS内部使用类别方法.在使用类别方法的库中,必须指定一个额外的旗,以允许库正确链接.为了这样做,将`–ObjC`旗添加到`Target > Build Settings > Linking > Other Linker Flags`设置中.
+iOS Mobile SDK 内部使用了 category 方法。导入使用 category 方法的库时，必须添加额外标志，才能正确链接该库。请将 `-ObjC` 标志添加到 `Target > Build Settings > Linking > Other Linker Flags` 设置中。
 
-![为目标设置链接器标志](/connect-iq/resources/programmers-guide/ios-image4.png)
+![为 target 设置链接器标志](/connect-iq/resources/programmers-guide/ios-image4.png)
 
-#####注册一个URL方案
+#### 注册 URL scheme
 
-与 Android 移动 SDK 不同，使用 iOS 移动 SDK 创建的应用程序是独立应用，不直接依赖 Garmin Connect Mobile（GCM）与可穿戴设备通信。不过，应用程序仍需要 GCM 首次发现可用于通信的 Connect IQ 兼容设备，或在可穿戴设备上安装 Monkey C 应用程序。配套应用和 GCM 通过 iOS URL 方案系统相互启动并交换信息。为此，应用程序必须注册一个 GCM 可以向其发送数据的 URL 方案。请在 `Target > Info > URL Types` 面板中添加条目，并选择一个不太可能与 iOS 设备上其他应用冲突的字符串。有关详细信息，请参阅 Apple 关于[自定义 URL 方案](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1)的文档。
+与 Android Mobile SDK 不同，使用 iOS Mobile SDK 创建的应用是独立应用，不直接依赖 Garmin Connect Mobile（GCM）与可穿戴设备通信。不过，应用仍需要 GCM 来首次发现可通信的 Connect IQ 兼容设备，或在可穿戴设备上安装 Monkey C 应用。配套应用与 GCM 通过 iOS URL scheme 系统相互启动并交换信息。为此，应用必须注册一个 GCM 可以向其发送数据的 URL scheme。请在 `Target > Info > URL Types` 面板中添加条目，并选择一个不太可能与 iOS 设备上其他应用冲突的字符串。详情请参阅 Apple 关于[自定义 URL scheme](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW1) 的文档。
 
-![为目标注册 URL 方案](/connect-iq/resources/programmers-guide/ios-image5.png)
+![为 target 注册 URL scheme](/connect-iq/resources/programmers-guide/ios-image5.png)
 
-如果您正在编译与iOS 9SDK或以上版本,则需要在您的app Infos Info.plist中添加`gcm-ciq`到[LSApplicationQueriesSchemes](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14)的输入.这是为了确保SDK能够验证是否安装了GCM.如果这个键不在您的 Info.plist中,则需要添加.
+如果使用 iOS 9 或更高版本的 SDK 编译，需要在应用的 Info.plist 中将 `gcm-ciq` 添加到 [LSApplicationQueriesSchemes](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW14)。这样 SDK 才能检查 GCM 是否已安装。如果 Info.plist 中没有该键，需要手动添加。
 
-如果您的项目尚未设置[CFBundleDisplayName](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)在您的app Infos Info.plist中,则需要添加一个定义.
+如果项目尚未在 Info.plist 中设置 [CFBundleDisplayName](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html)，也需要添加定义。不确定使用什么值时，可以将其设置为 `${PRODUCT_NAME}`。
 
 #### 设置蓝牙使用说明
 
-从iOS 10开始,需要设置解释使用BLE外围访问的字符串.[NSBluetoothPeripheralUsageDescription](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW20)键必须设置在Info.plist中,以解释您的应用程序使用BLE,以便iTunes Connect接受.如果这个键不在您的Info.plist中,则需要添加.
+从 iOS 10 开始，必须设置说明应用为何需要访问 BLE 外设的字符串。为了通过 iTunes Connect 审核，必须在 Info.plist 中设置 [NSBluetoothPeripheralUsageDescription](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW20)，说明应用对 BLE 的使用方式。如果 Info.plist 中没有该键，需要手动添加。
 
 #### 设置后台执行模式（可选）
 
-iOS系统允许与蓝牙设备通信的应用程序在连接设备有数据要发送时在背景中执行.这对于在可穿戴设备上处理各自的子C应用程序的伴侣应用程序来说是有用的.
+当已连接的蓝牙设备有数据要发送时，iOS 系统可以唤醒与其通信的应用，并允许应用在后台执行。对于需要为可穿戴设备上的 Monkey C 应用处理请求的配套应用，这一功能很有用。要启用它，请在 `Target > Capabilities > Background Modes` 面板中打开 `Uses Bluetooth LE accessories` 选项。
 
-![可选地为目标设置后台执行模式](/connect-iq/resources/programmers-guide/ios-image6.png)
+![为 target 设置后台执行模式（可选）](/connect-iq/resources/programmers-guide/ios-image6.png)
 
-#####启动SDK
+#### 初始化 SDK
 
-所有与移动SDK的互动都通过`ConnectIQ`类进行.该类必须在项目的URL方案和UI过失代表程序中启动应用程序启动时.通常是在应用程序的`application:didFinishLaunchingWithOptions:`方法中进行.
+与 Mobile SDK 的所有交互都通过 `ConnectIQ` 类完成。应用启动时，必须使用项目的 URL scheme 和 UI override delegate 初始化该类。通常可以在 app delegate 的 `application:didFinishLaunchingWithOptions:` 方法中完成。
 
 ```objective-c
 [[ConnectIQ sharedInstance] initializeWithUrlScheme:@"exapp-123456"
                                  uiOverrideDelegate:self];
 ```
 
-URL方案应是#配置一个项目使用移动SDK的4步中选择的相同字符串.在调用一个要求GCM安装的`ConnectIQ`类的方法时,并且不存在于iOS系统上,默认情况下将向用户显示一个警告对话框,允许他们进入果应用商店页面以便安装GCM.通过通过一个符合`IQUIOverrideDelegate`协议的对象的实例,在此情况下可以指定自定义行为或专门的UI.
+URL scheme 应与“配置项目以使用 Mobile SDK”第 4 步中选择的字符串一致。当调用需要安装 GCM 的 `ConnectIQ` 类方法，而 iOS 系统中没有安装 GCM 时，默认会向用户显示一个 alert dialog，允许用户前往 Apple App Store 的 GCM 页面进行安装。此处传入符合 `IQUIOverrideDelegate` 协议的对象实例后，可以自定义这种情况下的行为或 UI。要使用默认 alert dialog 和默认行为，请传入 `nil`。
 
-#################
+#### 实现 UI override delegate
 
-如果指定了 UI 覆盖代表,并且执行了需要安装 GCM 的操作,`ConnectIQ`类将对该代表调用`needsToInstallConnectMobile`方法.应用程序应该通知用户,该操作需要GCM,并允许用户为GCM打开果应用商店页面或取消引发的操作.如果用户选择安装GCM,则可以调用`showAppStoreForConnectMobile`方法.
+如果指定了 UI override delegate，并且执行了需要安装 GCM 的操作，`ConnectIQ` 类会调用该 delegate 的 `needsToInstallConnectMobile` 方法。应用应告知用户该操作需要 GCM，并让用户选择打开 Apple App Store 中的 GCM 页面，或取消触发该操作。如果用户选择安装 GCM，可以调用 `showAppStoreForConnectMobile` 方法。
 
 ```objective-c
 - (void)needsToInstallConnectMobile {
@@ -71,23 +74,23 @@ URL方案应是#配置一个项目使用移动SDK的4步中选择的相同字符
 }
 ```
 
-注意这个例子是同步的,但如果用户显示UI,`showAppStoreForConnectMobile`方法应该被调用为用户输入的结果而不是直接在`needsToInstallConnectMobile`方法.
+上面的示例是同步的。如果需要向用户显示 UI，应在用户执行选择后调用 `showAppStoreForConnectMobile`，而不是直接在 `needsToInstallConnectMobile` 方法中调用。
 
-###与设备合作
+## 使用设备
 
 #### 查找兼容 Connect IQ 的设备
 
-移动SDK可以通过蓝牙直接与连接智商兼容的设备进行通信.然而,首先必须知道哪些设备可用.
+iOS Mobile SDK 可以通过 Bluetooth 直接与 Connect IQ 兼容设备通信。不过，应用必须先知道哪些设备可用。为此，配套应用必须调用 `showConnectIQDeviceSelection` 方法。
 
 ```objective-c
 [[ConnectIQ sharedInstance] showConnectIQDeviceSelection];
 ```
 
-这种方法将GCM引入前景,允许用户选择与Connect IQ兼容的设备进行配合.如果没有安装GCM并且设置了UI过失代表,则将被调用为`needsToInstallConnectMobile`.
+此方法会将 GCM 调到前台，并允许用户选择要与配套应用共享的已配对 Connect IQ 兼容设备。如果未安装 GCM 且设置了 UI override delegate，则会调用其 `needsToInstallConnectMobile` 方法。
 
-注意,通过启动GCM,这种方法会导致伴侣应用程序进入后台,可能导致应用程序被暂停. **在调用这种方法时,伴侣应用程序应该预计会被暂停.
+请注意，启动 GCM 会使配套应用进入后台，应用可能因此被挂起。**调用此方法时，配套应用必须预期自己会被挂起。**
 
-一旦用户选择了与伴侣应用程序共享的配对设备,GCM将启动伴侣应用程序 (通过其注册的URL方案),将设备列表作为序列化URL查询项.伴侣应用程序应取代其应用程序代表 SD的`application:openURL:sourceApplication:annotation:`方法来听取此.伴侣应用程序可以调用`parseDeviceSelectionResponseFromURL:`方法来提取查询项到`NSArray`的`IQDevice`对象中,它可以使用移动SDK.
+用户选择要共享的配对设备后，GCM 会通过已注册的 URL scheme 启动配套应用，并将设备列表作为序列化的 URL 查询项传入。配套应用应重写 app delegate 的 `application:openURL:sourceApplication:annotation:` 方法来接收这些数据，然后调用 `parseDeviceSelectionResponseFromURL:`，将查询项解析为可供 Mobile SDK 使用的 `NSArray<IQDevice *>` 对象。
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application
@@ -111,24 +114,24 @@ URL方案应是#配置一个项目使用移动SDK的4步中选择的相同字符
 }
 ```
 
-请注意,在本例中,解析设备被存储在应用程序中后期使用的词典中,但不会在任何类型的持久存储中缓存.
+上例将解析出的设备保存到字典，供应用后续使用，但没有将设备缓存到任何持久化存储中。
 
-**注:**为了避免需要过度启动GCM来发现设备, **伴侣应用应将设备缓存到永久存储中.**当GCM返回设备列表时,伴侣应用应清除他们可能知道的设备上所有以前缓存的引用. **总是只使用用户授权的最新设备列表.**
+**注意：** 为避免频繁启动 GCM 来发现设备，**配套应用应将设备缓存到持久化存储中。** GCM 返回设备列表后，配套应用应清除此前缓存的所有设备引用。**始终只使用用户最新授权的设备列表。**
 
-##### 听到设备事件
+#### 监听设备事件
 
-一旦伴手应用程序拥有GCM的一个或多个`IQDevice`实例,它可以注册到`ConnectIQ`类,在该设备的连接状态改变时通过调用`registerForDeviceEvents:delegate:`接收通知.
+配套应用从 GCM 获取一个或多个 `IQDevice` 实例后，可以通过调用 `registerForDeviceEvents:delegate:` 向 `ConnectIQ` 注册，以便在设备连接状态变化时收到通知。
 
 ```objective-c
 [[ConnectIQ sharedInstance] registerForDeviceEvents:device
                                            delegate:self];
 ```
 
-传递的代表必须是符合`IQDeviceEventDelegate`协议的类型. 一旦注册,当设备的连接状态发生变化时,将调用delegate Zs`deviceStatusChanged:status:`方法.也可以调用`getDeviceStatus:`方法来获取设备的当前连接状态.这两种方法都将设备的状态返回为`IQDeviceStatus`值.
+传入的 delegate 必须是符合 `IQDeviceEventDelegate` 协议的类实例。注册后，设备连接状态变化时会调用 delegate 的 `deviceStatusChanged:status:` 方法。也可以调用 `getDeviceStatus:` 获取设备当前连接状态。这两个方法都会返回 `IQDeviceStatus` 值。
 
-** 注:** 配套应用程序必须在调用在设备或应用程序上运行的方法,如`getDeviceStatus:`或`sendMessage:toApp:progress:completion:`之前注册接收设备事件.
+**注意：** 配套应用必须先注册接收设备事件，才能调用针对设备或应用的方法，例如 `getDeviceStatus:` 或 `sendMessage:toApp:progress:completion:`。
 
-为了停止听取设备事件,伴手应用程序可以调用`unregisterForDeviceEvents:delegate:`或`unregisterForAllDeviceEvents:`方法.
+要停止监听设备事件，可以调用 `unregisterForDeviceEvents:delegate:` 或 `unregisterForAllDeviceEvents:`。
 
 ```objective-c
 // Stop listening to a single device
@@ -138,20 +141,20 @@ URL方案应是#配置一个项目使用移动SDK的4步中选择的相同字符
 [[ConnectIQ sharedInstance] unregisterForAllDeviceEvents:self];
 ```
 
-###与应用程序合作
+## 使用应用
 
-创建一个应用程序实例
+#### 创建应用实例
 
-应用程序在移动SDK中表示为`IQApp`类的实例.一个`IQApp`类的实例代表一个单个设备上的应用程序.这意味着,为了与两个不同的设备上安装的应用程序一起工作,伴手应用程序需要两个相同的`IQApp`类的实例,每个设备都需要一个应用程序ID.创建应用程序实例,使用`IQApp`类的`appWithUUID:device:`方法.
+在 Mobile SDK 中，应用由 `IQApp` 类实例表示。一个 `IQApp` 实例代表一台设备上的一个应用。因此，如果要操作安装在两台不同设备上的同一个应用，配套应用需要创建两个 `IQApp` 实例：它们拥有相同的应用 ID，但分别对应一台设备。要创建应用实例，请使用 `IQApp` 类的 `appWithUUID:device:` 方法。
 
 ```objective-c
 NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@”<YourAppID>”];
 IQApp *app = [IQApp appWithUUID:uuid device:device];
 ```
 
-#####请求一个应用程序的状态
+#### 请求应用状态
 
-一旦创建了一个`IQApp`实例,将应用程序ID链接到一个`IQDevice`实例,伴手应用程序可以通过调用`getAppStatus:completion:`方法请求该设备上的应用程序状态.
+创建 `IQApp` 实例并将应用 ID 与 `IQDevice` 实例关联后，配套应用可以调用 `getAppStatus:completion:` 请求该设备上的应用状态。
 
 ```objective-c
 [[ConnectIQ sharedInstance] getAppStatus:app
@@ -162,23 +165,23 @@ IQApp *app = [IQApp appWithUUID:uuid device:device];
 }];
 ```
 
-这种方法通过蓝牙与设备通信,因此是异步的.当设备响应或请求时,完成区块将被调用.如果请求成功,完成区块将被调用为`IQAppStatus`类的实例.一个伴侣应用程序可以检查这种状态,以发现应用程序是否安装在设备上,如果是这样,该应用程序的版本是什么.伴侣应用程序可能会显示用户界面建议用户升级应用程序在设备上.如果设备目前没有连接或请求时,完成区块将被调用为`nil`状态.
+此方法通过 Bluetooth 与设备通信，因此是异步的。设备返回响应或请求超时后，才会调用 completion block。请求成功时，completion block 会收到一个 `IQAppStatus` 实例。配套应用可以检查该状态，了解应用是否已安装，以及安装的版本号，然后决定是否显示建议用户升级设备上应用的 UI。如果设备当前未连接或请求超时，completion block 会收到 `nil` 状态。
 
-#####安装,升级或管理应用程序
+#### 安装、升级或管理应用
 
-如果一个伴侣应用程序确定应用程序已过时或未安装,它可能允许用户通过启动GCM中Connect IQ商店安装或升级该应用程序.
+如果配套应用发现某个应用版本过旧或尚未安装，可以通过在 GCM 中打开 Connect IQ 商店，让用户安装或升级该应用。只需调用 `showConnectIQStoreForApp:`。
 
 ```objective-c
 [[ConnectIQ sharedInstance] showConnectIQStoreForApp:app];
 ```
 
-一个伴手应用程序也可以调用这种方法,即使应用程序安装在设备上并更新,允许用户从设备中管理或卸载应用.
+即使应用已经安装且版本最新，也可以调用此方法，让用户管理或卸载设备上的应用。
 
-** 注:** 与`showConnectIQDeviceSelection`方法一样,通过启动GCM,这种方法会导致伴侣应用进入后台,可能导致应用程序被暂停. **在调用这种方法时,伴侣应用程序应该预计会被暂停.
+**注意：** 与 `showConnectIQDeviceSelection` 一样，启动 GCM 会使配套应用进入后台，并可能导致应用被挂起。**调用此方法时，配套应用必须预期自己会被挂起。**
 
-##### 在Garmin设备上打开应用
+#### 在 Garmin 设备上打开应用
 
-随机应用程序可以要求在目标设备上打开CIQ应用程序.这样做时,将在Garmin设备上显示一个提示,以查看是否应该打开应用程序.如果用户选择打开应用程序,则将立即打开.这可以通过调用`openAppRequest:`方法完成.
+配套应用可以请求在目标设备上打开 CIQ 应用。请求后，Garmin 设备会向用户显示提示，询问是否打开该应用。用户选择打开后，应用会立即启动。可以通过调用 `openAppRequest:` 实现。
 
 ```objective-c
 [[ConnectIQ sharedInstance] openAppRequest:app
@@ -195,7 +198,7 @@ IQApp *app = [IQApp appWithUUID:uuid device:device];
 
 #### 发送消息
 
-一旦一个伴侣应用程序确定了一个应用程序安装在连接设备上,伴侣应用程序可以通过`sendMessage:toApp:progress:completion:`方法通过蓝牙发送信息到该应用程序的邮箱.该方法将一个对象作为消息,一个`IQApp`作为目的地,以及两个区块 - 一个随着数据传输的进展而定期调用,一个调用后传输完成.
+配套应用确认应用已安装在已连接设备上后，可以调用 `sendMessage:toApp:progress:completion:`，通过 Bluetooth 将消息发送到该应用的邮箱。该方法接收消息对象、目标 `IQApp`，以及两个 block：一个在数据传输过程中定期调用，另一个在传输完成后调用。
 
 ```objective-c
 NSArray *message = @[@”hello pi”, @(3.14159)];
@@ -210,15 +213,15 @@ NSArray *message = @[@”hello pi”, @(3.14159)];
 }];
 ```
 
-** 注:** 将传输到这种方法的消息对象首先由SDK转换为一个与子C兼容的类型,然后将其发送到设备上的appbox的邮箱.因此,只有**可直接转换到可比较的子C类型的Objective-C类型才有效.**
+**注意：** 传给此方法的消息对象会先由 SDK 转换为 Monkey C 兼容类型，然后发送到设备上的应用邮箱。因此，**只有能够直接转换为对应 Monkey C 类型的 Objective-C 类型才有效。**
 
-有效的消息类型包括`NSString`,`NSNumber`,`NSArray`,`NSDictionary`和`NSNull`.利用其他类型嵌入`NSArray`或`NSDictionary`中形成复杂的消息.`NSNumber`对象中的值将转换为设备上最合适的子C值类型.
+有效的消息类型包括 `NSString`、`NSNumber`、`NSArray`、`NSDictionary` 和 `NSNull`。可以在 `NSArray` 或 `NSDictionary` 中嵌套其他类型，构造复杂消息。`NSNumber` 对象中的值会在设备上转换为最合适的 Monkey C 值类型。
 
-** 注:** 请记住,可穿戴设备与iOS设备相比,具有有限的内存和处理能力. **消息应尽可能小.** 然而,频繁发送小消息可能会带来性能和电池寿命成本.因此,偶尔发送大消息比频繁发送许多小消息更理想. **伴侣应用程序应该通过只需要时只发送消息,并将消息大小降至最低. ***
+**注意：** 与 iOS 设备相比，可穿戴设备的内存和处理能力有限。**消息应尽可能小。** 但频繁发送小消息也会带来性能和电池消耗成本。因此，偶尔发送较大的消息通常比频繁发送许多极小的消息更合适。**配套应用应只在必要时发送消息，并尽量减小消息大小，在内存和性能成本之间取得平衡。**
 
 #### 接收消息
 
-随机应用程序可以通过调用`registerForAppMessages:delegate:`方法注册接收来自应用程序的消息.该方法需要一个`IQApp`来听取消息,以及一个符合`IQAppMessageDelegate`协议的对象的实例作为听众.在注册后,当从该应用程序发出的消息被成功接收时,听众将调用`receivedMessage:fromApp:`方法.为了停止听取应用程序消息,随机应用程序可以调用未注册ForAppMessages:delegate:或未注册ForAllAppMessages:方法.
+配套应用可以调用 `registerForAppMessages:delegate:`，注册接收设备上应用发送的消息。该方法接收要监听的 `IQApp`，以及一个符合 `IQAppMessageDelegate` 协议的监听器对象。注册后，成功收到该应用的消息时，系统会调用监听器的 `receivedMessage:fromApp:` 方法。要停止监听应用消息，可以调用 `unregisterForAppMessages:delegate:` 或 `unregisterForAllAppMessages:`。
 
 ```objective-c
 - (void)viewWillAppear:(BOOL)animated {
@@ -234,7 +237,7 @@ NSArray *message = @[@”hello pi”, @(3.14159)];
 }
 ```
 
-** 注:** 一个伴侣应用程序可以在许多设备上注册接收来自多个应用程序的消息.然而, ** 多个伴侣应用程序永远不应该注册接收来自同一应用程序的消息**.iOS上的蓝牙通信的性质阻止移动SDK决定交送信息的伴侣应用程序.因此,由于多个伴侣应用程序注册接收来自同一应用程序的消息,不定义的行为将会产生.
+**注意：** 配套应用可以注册接收来自多个设备上多个应用的消息。但是，**多个配套应用不应注册接收同一个应用的消息。** iOS 上的 Bluetooth 通信机制无法让 Mobile SDK 判断应该把消息交付给哪个配套应用，因此多个配套应用注册接收同一应用的消息会导致未定义行为。
 
-![多个手表应用可以与单个手机应用通信](/connect-iq/resources/programmers-guide/ios-image8.png)
-![单个手表应用无法与多个手机应用通信](/connect-iq/resources/programmers-guide/ios-image9.png)
+![多个手表应用可以与一个手机应用通信](/connect-iq/resources/programmers-guide/ios-image8.png)
+![一个手表应用无法与多个手机应用通信](/connect-iq/resources/programmers-guide/ios-image9.png)
