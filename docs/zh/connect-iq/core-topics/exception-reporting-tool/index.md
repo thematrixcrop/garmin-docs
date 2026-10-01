@@ -41,7 +41,7 @@ ERA 工具也可以直接从命令行获取单个应用的崩溃报告：在当�
 
 ![](/connect-iq/resources/programmers-guide/era_app_info.png)
 
-在“Application Settings”窗口中，您可以将应用从崩溃报告视图的下拉列表中隐藏。如果勾选 **Hide this app**，该应用就不会显示在崩溃报告视图的应用列表中。
+在“Application Settings”（应用设置）窗口中，您可以将应用从崩溃报告视图的下拉列表中隐藏。如果勾选 **Hide this app**，该应用就不会显示在崩溃报告视图的应用列表中。
 
 ## 查看崩溃报告
 
