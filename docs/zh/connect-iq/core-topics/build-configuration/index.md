@@ -1,5 +1,5 @@
 ---
-title: "Build Configuration"
+title: "构建配置"
 ---
 # 构建配置
 
