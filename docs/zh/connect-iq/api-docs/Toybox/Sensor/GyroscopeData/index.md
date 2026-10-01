@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 用于存储陀螺仪采样数据的类。
 
-指定的每个字段都是 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的值以度/秒为单位。此项通常用于 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 使用的回调方法
+每个字段都是包含 [Float](/connect-iq/api-docs/Toybox/Lang/Float/) 值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)。x、y 和 z 轴的采样值以度/秒为单位。此类通常用于通过 [registerSensorDataListener()](/connect-iq/api-docs/Toybox/Sensor/#registerSensorDataListener-instance_function) 注册的回调方法。
 
 ## 另见：
 
