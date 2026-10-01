@@ -18,16 +18,16 @@ Toybox.Math.Filter
 
 ## 概述
 
-无限脉冲响应（IIR）滤波器实现。
+无限冲激响应（IIR）滤波器实现。
 
 ## 另见：
 
-- [IirFilters](https://en.wikipedia.org/wiki/Infinite_impulse_response)
+- [IIR 滤波器](https://en.wikipedia.org/wiki/Infinite_impulse_response)
 
 
 示例：
 
-显示如何为加速度计数据筛选器的使用实现构造函数。
+演示如何在构造函数中初始化用于处理加速度计数据的滤波器。
 
 ```
 using Toybox.Math;
@@ -90,7 +90,7 @@ API 级别 2.3.0
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含筛选设置的字典（Dictionary）。
+    包含滤波器设置的字典（Dictionary）。
 
 - :coefficients\_a — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -102,7 +102,7 @@ API 级别 2.3.0
 
 - :gain — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-        指定要应用于系数的乘数。
+        一个 Float 值，指定要应用于滤波器系数的乘数。
 
 
 起始版本：
@@ -113,4 +113,4 @@ API 级别 2.3.0
 
 - ([Lang.InvalidOptionsException](/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException/)) —
 
-    如果 Dictionary 不包含有效的筛选器系数，或缺少 :gain 字段。如果为 :coefficients 指定的不是数组的无效 JSON ResourceId，也会抛出此异常
+    如果 Dictionary 中的滤波器系数无效，或缺少 :gain 字段，则抛出此异常。如果用 JSON ResourceId 代替数组指定 :coefficients，而该 ResourceId 无效，也会抛出此异常。
