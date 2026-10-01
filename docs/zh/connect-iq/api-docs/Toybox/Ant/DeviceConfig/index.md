@@ -166,7 +166,7 @@ API 级别 1.2.0
 
 - [**initialize**](#initialize-instance_function)(options as { :deviceNumber as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :deviceType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :transmissionType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :messagePeriod as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :radioFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :searchTimeoutLowPriority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :searchTimeoutHighPriority as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :searchThreshold as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :networkKey64Bit as [DeviceConfig.NetworkKey64Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey64Bit-named_type), :networkKey128Bit as [DeviceConfig.NetworkKey128Bit](/connect-iq/api-docs/Toybox/Ant/DeviceConfig/#NetworkKey128Bit-named_type) })
 
-    Constructor.
+    构造函数。
 
 
 ## 类型定义详情
