@@ -1026,7 +1026,7 @@ API 级别 3.4.2
 
 - [**configureTouchEvents**](#configureTouchEvents-instance_function)(options as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    配置触摸事件设置；仅当 Watch Apps 和音频内容提供程序以前台模式运行时允许配置。
+    配置触摸事件设置；仅当设备应用和音频内容提供商以前台模式运行时允许配置。
 
 - [**getCurrentView**](#getCurrentView-instance_function)() as \[ [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) or **Null**, [WatchUi.InputDelegates](/connect-iq/api-docs/Toybox/WatchUi/#InputDelegates-named_type) or **Null** \]
 
@@ -1189,7 +1189,7 @@ API 级别 3.1.7
 
 ### **configureTouchEvents(options as [WatchUi.TouchEventSettings](/connect-iq/api-docs/Toybox/WatchUi/#TouchEventSettings-named_type))** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-配置触摸事件设置；仅当 Watch Apps 和音频内容提供程序以前台模式运行时允许配置。
+配置触摸事件设置；仅当设备应用和音频内容提供商以前台模式运行时允许配置。
 
 参数：
 
@@ -1272,7 +1272,7 @@ API 级别 5.2.0
 
 - ([Lang.OperationNotAllowedException](/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException/)) —
 
-    如果由既不是 Watch App 也不是 Audio Content Provider 的应用类型调用，或在后台模式下调用。
+    如果由既不是设备应用也不是音频内容提供商的应用类型调用，或在后台模式下调用。
 
 - ([Lang.InvalidValueException](/connect-iq/api-docs/Toybox/Lang/InvalidValueException/)) —
 
