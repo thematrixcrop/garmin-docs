@@ -177,56 +177,55 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 | `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
 | `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| 对于 16 位颜色设备为 `true` |  |
 | `packingFormat` |将图像编码到 PRG 的格式| `default`、`png`、`jpg`、`yuv` | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [位图打包格式](#bitmap-packing-formats) |
-| `scaleX` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleY`,则将默认地设置为`scaleY`s值.否则将默认地设置为100%的图像宽度| 请参阅 `scaleRelativeTo` |
-| `scaleY` |在x维度上,该图像应该如何扩展?| 像素大小或百分比 |如果设置`scaleX`,则将默认设置为`scaleX`s值.否则将默认设置为100%的图像高度.| 请参阅 `scaleRelativeTo` |
-| `scaleRelativeTo` |规模因素应该基于什么?|`screen`或`image`| `screen` |设置对相对扩展的基础. 如果设置为屏幕,图像将根据编译时正在构建的产品重新扩展|
-| `personality` |元素的个性类|个性类| 无 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `scaleX` | 图像在 X 方向应如何缩放 | 像素尺寸或百分比 | 设置了 `scaleY` 时默认使用 `scaleY` 的值，否则默认为图像宽度的 100% | 请参阅 `scaleRelativeTo` |
+| `scaleY` | 图像在 Y 方向应如何缩放 | 像素尺寸或百分比 | 设置了 `scaleX` 时默认使用 `scaleX` 的值，否则默认为图像高度的 100% | 请参阅 `scaleRelativeTo` |
+| `scaleRelativeTo` | 缩放因子的基准 | `screen` 或 `image` | `screen` | 设置相对缩放的基准。设为 `screen` 时，图像会在编译时根据目标产品重新缩放 |
+| `personality` | 元素使用的 personality 类 | personality 类 | 无 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
-对于`<palette>`定义的有效属性如下表.
+`<palette>` 定义支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `disableTransparency` |编译器应该允许图像中透明的像素吗?|`true`或`false`| `false` |  |
+| `disableTransparency` | 编译器是否允许图像中的透明像素 | `true` 或 `false` | `false` |  |
 
 ### 位图打包格式
 
 *自 API 级别 4.0.0*
 
-图像可以增加您的执行式尺寸,这可以增加用户安装或更新您的应用程序时的额外等待. 为了减少可执行式膨胀,使用这些位图属性将图像包装到您的执行式中.
+图像可能增大可执行文件的体积，导致用户安装或更新应用时等待更久。可以使用以下位图打包格式，减少资源对可执行文件大小的影响。
 
 每种格式都有其优点和缺点:
 
 | 格式 | 优点 | 缺点 | 使用场景 |
 | --- | --- | --- | --- |
-| `default` |可在所有产品上使用,最快加载,支持阿尔法频道| 不压缩 |应用程序在API前4.0.0级设备上运行.低调图像可能具有非常小的运行时间成本|
-| `png` | 无损、已压缩并支持 Alpha 通道 |最慢的加载,如果经常从图形库中清除和重新加载,这可以增加运行时间成本|进口带或无带阿尔法频道的非照片图像|
-| `jpg` |压缩非常好,快速加载| 有损格式，不支持 alpha 通道 | 导入不带 alpha 通道的照片图像 |
-| `yuv` |压缩良好,支持阿尔法通道,快速加载| 有损格式 |通过阿尔法频道进口照片图像|
-|  |  |  |  |
+| `default` | 适用于所有产品，加载最快，支持 Alpha 通道 | 不压缩 | API 级别 4.0.0 之前的设备；低细节图像的运行时开销可能很小 |
+| `png` | 无损压缩并支持 Alpha 通道 | 加载最慢；频繁从图形库卸载和重新加载时可能增加运行时开销 | 不带或带 Alpha 通道的非照片图像 |
+| `jpg` | 压缩率高，加载快 | 有损格式，不支持 Alpha 通道 | 不带 Alpha 通道的照片图像 |
+| `yuv` | 压缩率较高，支持 Alpha 通道，加载快 | 有损格式 | 带 Alpha 通道的照片图像 |
 
 ## 字体
 
-资源编译器可以读取`TXT`或`PNG`格式的字体.您可以使用BMFont工具 (可在[http://www.angelcode.com/products/bmfont/](http://www.angelcode.com/products/bmfont/)上使用) 来将字体从许多不同的格式转换为兼容格式. 在出口之前,请确保BMFont的 *字体设置*指定Unicode字符集.下面的图片中显示出所建议的出口选项:
+资源编译器可以读取 `TXT` 或 `PNG` 格式的字体。可以使用 [BMFont](http://www.angelcode.com/products/bmfont/) 将多种格式的字体转换为兼容格式。导出前，请确保 BMFont 的 *Font Settings* 指定了 Unicode 字符集。下图展示了推荐的导出选项：
 
-图1.BMFont出口选择
+图 1：BMFont 导出选项
 
 ![BMFont 导出选项](/connect-iq/resources/programmers-guide/bmfont_options.png)
 
-颜色可以使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)设置.由于位图字体可以耗费大量的运行时间内存,字体转换器默认设置为非-反-aliased 1-bit字体来存储内存.如果你知道你将有运行时间内存,你可以使用`antialias`选项启动字体反-aliasing.
+可以使用 [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) 设置字体颜色。位图字体可能占用大量运行时内存，因此字体转换器默认使用非抗锯齿的 1 位字体来节省内存。如果设备有足够的运行时内存，可以通过 `antialias` 选项启用抗锯齿。
 
 ```xml
 <!-- Domo arigato mister font -->
 <font id="font_id" filename="roboto.fnt" antialias="true" />
 ```
 
-如果您正在创建一个大字体,有时,只需要特定的字体大小 (就像手表面的数字一样). 使用过属性来指定特定的字体,包括:
+如果创建大字体，有时只需要包含特定字符，例如表盘上的数字。可以使用 `filter` 属性指定要包含的字符：
 
 ```xml
 <!-- Only include digits from this large font -->
 <font id="font_id" filename="big_font.fnt" filter="0123456789:"/>
 ```
 
-字体元素接受以下属性:
+`font` 元素支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -239,11 +238,11 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 ## 菜单
 
-菜单是Connect IQ产品中常见的UI元素.菜单资源允许您在资源定义中定义菜单.
+菜单是 Connect IQ 产品中常见的 UI 元素。菜单资源允许在资源定义中声明菜单。
 
 ### 标准菜单
 
-菜单使用以下属性的`<menu2>`元素定义:
+菜单使用带有以下属性的 `<menu2>` 元素定义：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -252,11 +251,11 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 | `icon` | 可绘制对象引用 | 否 | 无 |用于 Instinct 2 子屏幕图标。|
 | `personality` | 个性类 | 否 | 无 | 元素的 personality 类。更多信息请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
-在`<menu2>`元素内可以有`<menu-item>`,`<toggle-menu-item>`或`<icon-menu-item>`类型的数组.
+`<menu2>` 元素可以包含 `<menu-item>`、`<toggle-menu-item>` 或 `<icon-menu-item>` 元素。
 
 #### 标准菜单项
 
-标准菜单项目包含在`<menu-item>`元素中,具有以下属性:
+标准菜单项包含在 `<menu-item>` 元素中，支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -268,7 +267,7 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 #### 切换菜单项
 
-调节菜单项包含在`<toggle-menu-item>`元素中.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
+切换菜单项包含在 `<toggle-menu-item>` 元素中。除[标准菜单项](#standard-menu-items)中的属性外，还支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -277,15 +276,15 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 #### 图标菜单项
 
-标签菜单项由`<icon-menu-item>`元素定义. 标签菜单图标,`icon`属性显示在菜单项中.
+图标菜单项由 `<icon-menu-item>` 元素定义，`icon` 属性指定要在菜单项中显示的图标。
 
 ### 复选框菜单
 
-查询框菜单是用`<checkbox-menu>`元素定义的,它具有与[standard menus](#standard-menus)相同的属性.查询框菜单内可以包含`<checkbox-menu-item>`元素的序列.
+复选框菜单使用 `<checkbox-menu>` 元素定义，并支持与[标准菜单](#standard-menus)相同的属性。复选框菜单可以包含多个 `<checkbox-menu-item>` 元素。
 
 #### 复选框菜单项
 
-查询框菜单项是用`<checkbox-menu-item>`元素定义的.除了[standard menu items](#standard-menu-items)中提到的属性外,它们有以下属性:
+复选框菜单项使用 `<checkbox-menu-item>` 元素定义。除[标准菜单项](#standard-menu-items)中的属性外，还支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -293,7 +292,7 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 ### 操作菜单
 
-动作菜单是与页面相关的文本菜单. 动作菜单是用`<action-menu>`元素定义的,它可以具有以下属性:
+Action menu 是与页面相关的上下文菜单，使用 `<action-menu>` 元素定义，并支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -303,7 +302,7 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 #### 操作菜单项
 
-动作菜单项目包含在`<action-menu-item>`元素中,具有以下属性:
+Action menu 项包含在 `<action-menu-item>` 元素中，支持以下属性：
 
 | 属性 | 类型 | 必需 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -315,9 +314,9 @@ Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图�
 
 *自 API 级别 3.1.0*
 
-Connect IQ SDK 中包含的 Monkey Motion 工具可用于为兼容的 Connect IQ 产品生成动画资源。
+Connect IQ SDK 随附的 Monkey Motion 工具可用于为兼容的 Connect IQ 产品生成动画资源。
 
-tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc)和`GIF`文件格式导入.由于`YUV`是真正的颜色,接近原始的文件格式,它是将高质量的动画输入子动作编码工具时建议的格式.如果需要,[FFmpeg](https://ffmpeg.org/)是转换视频文件格式的方便工具.例如,如果您的创意团队已经提供了其他流行的格式的视频,则将文件转换为`YUV`格式:
+Monkey Motion 工具支持导入 [`YUV`](https://github.com/cota/streamit-2.1.1/blob/master/apps/library_only/mpeg2/c/doc/mpeg2enc.doc) 和 `GIF` 文件格式。由于 `YUV` 是接近原始数据的真实色彩格式，建议在向 Monkey Motion 编码工具输入高质量动画时使用它。如有需要，可以使用 [FFmpeg](https://ffmpeg.org/) 转换视频格式。例如，创意团队提供其他格式的视频时，可以先将其转换为 `YUV`：
 
 ```
 > ffmpeg -i input.mp4 -vf format=yuv420p output.y4m
@@ -331,17 +330,17 @@ tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/
 
 ![](/connect-iq/resources/programmers-guide/app_settings_editor.png)
 
-由于上述部分所述相同的原因,动画必须明确转换为每个设备. 为了轻松地将其进口到您的Connect IQ应用程序中,Monkey Motion工具批量将视频转换为您选择的设备的二进制编码.
+出于与位图相同的原因，动画也必须针对每台设备进行转换。为了方便将动画导入 Connect IQ 应用，Monkey Motion 工具可以批量将视频转换为所选设备的二进制编码。
 
-### 包含动画资源在子C项目中
+### 在 Monkey C 项目中包含动画资源
 
-为了将动画资源纳入子C项目的,定义动画资源.这可以手动或使用子运动工具.下表显示了`<animation>`资源的所有有效属性:
+要将动画资源加入 Monkey C 项目，请定义动画资源。可以手动定义，也可以使用 Monkey Motion 工具完成。下表列出了 `<animation>` 资源的所有有效属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用 Rez 模块中布局的句柄|任何以字母开头的值| 不适用 | 必需 |
-| `filename` |Monkey Motion 清单文件的相对路径|有效且可解析的 Monkey Motion 清单文件路径| 不适用 | 必需 |
-| `personality` |元素的个性类|已定义的个性类| 不适用 | 可选 |
+| `id` | 用于在 Rez 模块中引用动画的句柄 | 以字母开头的任意值 | 不适用 | 必需 |
+| `filename` | Monkey Motion 清单文件的相对路径 | 有效且可解析的 Monkey Motion 清单文件路径 | 不适用 | 必需 |
+| `personality` | 元素使用的 personality 类 | 已定义的 personality 类 | 不适用 | 可选 |
 
 动画 XML 资源示例：
 
@@ -352,7 +351,7 @@ tool子动作工具支持从[`YUV`](https://github.com/cota/streamit-2.1.1/blob/
 </resources>
 ```
 
-要将此动画资源加载到代码中,创建一个[WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)然后将其添加到一个[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/):
+要在代码中加载此动画资源，请创建一个 [WatchUi.AnimationLayer](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)，然后将其添加到 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)：
 
 ```typescript
 class MyAnimationView extends WatchUi.View {
@@ -382,20 +381,20 @@ class MyAnimationView extends WatchUi.View {
 }
 ```
 
-阅读更多关于[Monkey Motion reference](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion),[API documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/),[AnimationLayer documentation](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/)和`AnimationWatchFace`样本中的动画
+更多信息请参阅 [Monkey Motion 参考](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion)、[API 文档](/connect-iq/api-docs/Toybox/WatchUi/AnimationResource/)、[AnimationLayer 文档](/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer/) 以及 `AnimationWatchFace` 示例中的动画。
 
 ## JSON 数据
 
-JSON 数据资源可以在应用程序中存储相对大量的数据,而无需随时存储其在内存中.这可以用于存储类似在运行时需要引用的信息表的东西,但不会被修改.
+JSON 数据资源可以在应用中存储相对大量的数据，而不必始终将其保留在内存中。它适合存储运行时需要查询但不会修改的信息表。
 
-这些资源是用`jsonData`标签声明在资源文件中,由资源编译器读取,并在运行时按需加载.`jsonData`标签支持以下属性:
+这些资源通过资源文件中的 `jsonData` 标签声明，由资源编译器读取，并在运行时按需加载。`jsonData` 标签支持以下属性：
 
 | 属性 | 定义 | 有效值 |
 | --- | --- | --- |
-| `id` |JSON 资源的标识符|任何以字母开始的字符串|
-| `filename` |包含JSON数据的文件名称|一个有效的,可解决的数据文件路径|
+| `id` | JSON 资源的标识符 | 以字母开头的任意字符串 |
+| `filename` | 包含 JSON 数据的文件名 | 有效且可解析的数据文件路径 |
 
-JSON 数据资源可以作为一个`jsonData`值或作为一个由`filename`属性引用的文件提供,取决于资源文件内或单独的 JSON 文件中是否更容易管理数据.如果使用文件,它可能只包含 JSON 数据.以下是几个例子:
+JSON 数据资源可以直接作为 `jsonData` 的值提供，也可以通过 `filename` 属性引用独立文件，具体取决于哪种方式更便于管理数据。使用独立文件时，文件只能包含 JSON 数据。下面是几个示例：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -408,16 +407,10 @@ JSON 数据资源可以作为一个`jsonData`值或作为一个由`filename`属�
 </resources>
 ```
 
-通过通过`jsonData`ID来加载JSON数据,采用[Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)方法.例如,从上面的示例中加载`jsonArray`数据,将使用以下代码:
+可以使用 [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function)，通过 `jsonData` ID 加载 JSON 数据。例如，要加载上例中的 `jsonArray`：
 
 ```typescript
 var array = Application.loadResource(Rez.JsonData.jsonArray);
 ```
 
-查看与SDK共享的`JsonDataResources`样本应用.
-
-我们把[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/)移动了.
-
-我们将设置一个子屏幕图标.
-
-他们的语言和视频文件格式?
+更多信息请参阅 SDK 随附的 `JsonDataResources` 示例应用。
