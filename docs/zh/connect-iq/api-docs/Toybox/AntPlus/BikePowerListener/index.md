@@ -198,7 +198,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onCalculatedCadenceUpdate**](#onCalculatedCadenceUpdate-instance_function)(data as [AntPlus.CalculatedCadence](/connect-iq/api-docs/Toybox/AntPlus/CalculatedCadence/)) as **Void**
 
