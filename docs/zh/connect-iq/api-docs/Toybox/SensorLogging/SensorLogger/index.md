@@ -34,7 +34,7 @@ API 级别 2.3.0
 
 - [**initialize**](#initialize-instance_function)(options as { :accelerometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :gyroscope as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :magnetometer as { :enabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) }, :synchronous as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) })
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
