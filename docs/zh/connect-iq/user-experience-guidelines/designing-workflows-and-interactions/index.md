@@ -1,5 +1,5 @@
 ---
-title: "Designing Workflows and Interactions"
+title: "设计工作流和交互"
 ---
 <a id="designing-workflows-and-interactions"></a>
 # 设计工作流和交互
@@ -18,11 +18,11 @@ title: "Designing Workflows and Interactions"
 
 | 行为 | 说明 |
 | --- | --- |
-| Select | 从一组项目中选择项目。 |
-| Start/Stop | 标记开始或结束的操作。在按钮设备上，这通常与 Select 相同。 |
-| Next/Previous | 选择下一个或上一个项目，或在页面循环中导航到下一页或上一页。在按钮设备上，这通常对应上/下按钮。 |
-| Back | 退出应用屏幕或视图，返回上一个屏幕或视图。 |
-| Menu | 打开应用设置菜单。 |
+| 选择（Select） | 从一组项目中选择项目。 |
+| 开始/停止（Start/Stop） | 标记开始或结束的操作。在按钮设备上，这通常与选择（Select）相同。 |
+| 下一个/上一个（Next/Previous） | 选择下一个或上一个项目，或在页面循环中导航到下一页或上一页。在按钮设备上，这通常对应上/下按钮。 |
+| 返回（Back） | 退出应用屏幕或视图，返回上一个屏幕或视图。 |
+| 菜单（Menu） | 打开应用设置菜单。 |
 
 ## 常见模式
 
@@ -60,7 +60,7 @@ title: "Designing Workflows and Interactions"
 
 ### 设置菜单
 
-设置菜单通常可以通过 Menu 行为从应用基础视图打开，用于修改应用的全局设置。
+设置菜单通常可以通过菜单（Menu）行为从应用基础视图打开，用于修改应用的全局设置。
 
 ![设置菜单](/connect-iq/resources/ux-guide/settings-menu.png)
 
@@ -80,15 +80,15 @@ Connect IQ 允许针对触摸屏和按钮设备提供不同的定制体验，也
 
 **五按钮**配置在左侧有三个按钮，右侧有两个按钮，各按钮行为如下：
 
--   左上：按下切换背光；按住打开 Controls 菜单。
+-   左上：按下切换背光；按住打开 Controls（控制）菜单。
 
--   左中：按下执行上一项或向上操作；按住执行 Menu 操作。
+-   左中：按下执行上一项或向上操作；按住执行菜单（Menu）操作。
 
 -   左下：按下执行下一项或向下操作。
 
--   右上：按下执行 Select 操作，通常用于 Garmin 活动的 Start/Stop 操作。
+-   右上：按下执行选择（Select）操作，通常用于 Garmin 活动的开始/停止（Start/Stop）操作。
 
--   右下：按下执行 Back 操作。
+-   右下：按下执行返回（Back）操作。
 
 
 ![](/connect-iq/resources/ux-guide/touchscreen-two-button.png)
@@ -137,21 +137,21 @@ Connect IQ 允许开发者提供一组可配置的应用设置，用户可以在
 
 设置可以包含标签和提示，值可以是以下任一类型：
 
--   Boolean
+-   布尔值（Boolean）
 
--   Number
+-   数值（Number）
 
--   Text
+-   文本（Text）
 
--   Phone
+-   电话号码（Phone）
 
--   Email
+-   电子邮件（Email）
 
 -   URL
 
--   Date
+-   日期（Date）
 
--   Password
+-   密码（Password）
 
 
 应用设置可以在不增加复杂设备端 UI 的情况下，让应用更易配置。当用户在移动端更改设置时，Connect IQ 应用可以收到通知并立即反馈。
@@ -184,7 +184,7 @@ Connect IQ 提供了标准身份验证方法，可以将身份验证交给移动
 
 -   使用原生菜单、确认页面和进度条。它们会自动呈现产品个性，用户也已经熟悉这些交互方式。
 
--   Back 是 Garmin 设备上最常见的行为之一，避免在应用中修改它。
+-   返回（Back）是 Garmin 设备上最常见的行为之一，避免在应用中修改它。
 
 -   不要要求用户先完成移动应用设置才能使用应用。应用应无需用户进入设置流程即可使用。
 
