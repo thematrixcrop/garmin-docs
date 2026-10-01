@@ -7,7 +7,7 @@ title: "图形"
 
 ## 绘图上下文
 
-[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象用于在图形表面上绘制。主设备表面由 View 对象的 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 方法提供。可以使用 [Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function) 和 [Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function) 查询表面大小。
+[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象用于在图形表面上绘制。主显示表面由 View 对象的 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 方法提供。可以使用 [Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function) 和 [Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function) 查询表面大小。
 
 | 原语或操作 | 描边 | 填充 | API 级别 | 备注 |
 | --- | --- | --- | --- | --- |
