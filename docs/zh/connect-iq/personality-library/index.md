@@ -1,8 +1,8 @@
 ---
-title: "Personality UI"
+title: "个性化 UI"
 ---
 <a id="personality-ui"></a>
-# Personality UI
+# 个性化 UI
 
 每款 Garmin® 产品都有独特的设备个性。这种个性可能来自工业设计、屏幕技术、可用输入方式以及系统软件的图形风格。虽然不同 Garmin 产品通常会共享一些组件和模式，但设备个性会改变用户与这些组件交互的方式。因此，开发者很难制作出符合设备原生体验的应用。
 
@@ -20,7 +20,7 @@ Monkey Style 是一种用于管理样式元素的领域专用属性语言。它�
 
 本指南中的组件结合使用资源系统、[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 类和 personality 选择器。每个组件都提供了创建示例。示例代码按以下标题分类：
 
-| Header | Explanation |
+| 标题 | 说明 |
 | --- | --- |
 | `layout.xml` | 放在资源定义的 layouts 部分。 |
 | `menus.xml` | 放在资源定义的 menus 元素中。 |
