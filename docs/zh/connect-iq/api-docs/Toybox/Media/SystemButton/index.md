@@ -34,7 +34,7 @@ API 级别 3.0.3
 
 - [**initialize**](#initialize-instance_function)(type as [Media.PlaybackControl](/connect-iq/api-docs/Toybox/Media/#PlaybackControl-module), options as { :disabled as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) } or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
