@@ -33,7 +33,7 @@ API 级别 2.3.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
