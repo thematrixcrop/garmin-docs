@@ -650,15 +650,15 @@ public function foo(x as Number?) as Boolean {
 
 | 类型 | `==` | `!=` | `instanceof` | `!instanceof` |
 | --- | --- | --- | --- | --- |
-| Any | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
-| Concrete | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
-| Poly | If `==` is `null`, mutate to Null type | If `!=` is `null`, mutate to poly type minus `null` | Mutate type to `instanceof` type | Mutate type to poly type minus type from `instanceof` |
-| Interface | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
-| Container | Ignore | Ignore | Ignore | Ignore |
-| Dictionary | Ignore | Ignore | Ignore | Ignore |
-| Enum | Mutate to enum value type | Ignore | Ignore | Ignore |
-| Callback | Ignore | Ignore | Ignore | Ignore |
-| Null | Ignore | Ignore | Ignore | Ignore |
+| Any | 忽略 | 忽略 | 将类型变为 `instanceof` 类型 | 忽略 |
+| Concrete | 忽略 | 忽略 | 将类型变为 `instanceof` 类型 | 忽略 |
+| Poly | 如果 `==` 为 `null`，将类型变为 Null 类型 | 如果 `!=` 为 `null`，将类型变为去除 `null` 的 Poly 类型 | 将类型变为 `instanceof` 类型 | 将类型变为从 `instanceof` 类型中去除相应类型的 Poly 类型 |
+| Interface | 忽略 | 忽略 | 将类型变为 `instanceof` 类型 | 忽略 |
+| Container | 忽略 | 忽略 | 忽略 | 忽略 |
+| Dictionary | 忽略 | 忽略 | 忽略 | 忽略 |
+| Enum | 将类型变为枚举值类型 | 忽略 | 忽略 | 忽略 |
+| Callback | 忽略 | 忽略 | 忽略 | 忽略 |
+| Null | 忽略 | 忽略 | 忽略 | 忽略 |
 
 表达式也可以使用 `&&` 和 `||` 运算符进行组合。使用 `&&` 时，类型变化会沿表达式传递，并随着表达式继续计算而进一步变化。
 
