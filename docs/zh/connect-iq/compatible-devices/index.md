@@ -1,9 +1,9 @@
 ---
-title: "Compatible Devices"
+title: "兼容设备"
 ---
 # 兼容设备 | Connect IQ | Garmin Developers
 
-| Watches/Wearables | 屏幕分辨率 | 屏幕形状 | 屏幕技术 | API 级别 |
+| 手表/可穿戴设备 | 屏幕分辨率 | 屏幕形状 | 屏幕技术 | API 级别 |
 | --- | --- | --- | --- | --- |
 |
 ![](https://res.garmin.com/en/products/010-03010-00/v/cf-sm.jpg)
