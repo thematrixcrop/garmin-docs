@@ -18,7 +18,7 @@ Toybox.Application.AppBase
 
 ## 概述
 
-音频内容提供程序应用的基类。
+音频内容提供商应用的基类。
 
 此对象扩展 [AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/)，并添加了用于根据应用需要启动的模式获取不同初始视图类型的新方法。
 
@@ -301,7 +301,7 @@ API 级别 3.0.0
 
 返回：
 
-- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) 音频内容提供程序的图标
+- [Toybox::Media::ProviderIconInfo](/connect-iq/api-docs/Toybox/Media/ProviderIconInfo/) 音频内容提供商的图标
 
 
 起始版本：
