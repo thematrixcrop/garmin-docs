@@ -155,7 +155,7 @@ API 级别 3.0.3
 
 - [**initialize**](#initialize-instance_function)(options as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
