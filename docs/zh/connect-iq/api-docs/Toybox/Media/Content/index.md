@@ -42,7 +42,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(contentRef as [Media.ContentRef](/connect-iq/api-docs/Toybox/Media/ContentRef/), metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/))
 
-    Constructor.
+    构造函数。
 
 - [**setMetadata**](#setMetadata-instance_function)(metadata as [Media.ContentMetadata](/connect-iq/api-docs/Toybox/Media/ContentMetadata/)) as **Void**
 
