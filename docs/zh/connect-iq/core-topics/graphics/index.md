@@ -88,7 +88,7 @@ function draw(dc) {
 
 您还可以使用 [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) 设置混合模式。默认情况下，系统会将您的颜色与当前正在绘制的内容混合。不过，您可以使用 `BLEND_MODE_NO_BLEND` 直接设置 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的颜色和 alpha。也可以使用 `BLEND_MODE_ADDITION` 将混合结果添加到正在绘制的通道。
 
-除了颜色之外,现在还可以提供[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/). 这允许通过位图填写原始图,并开辟了许多新的绘图可能性.
+除颜色外，现在还可以提供 [Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/)。它允许使用位图填充图形，并带来许多新的绘图可能性。
 
 ## 位图
 
@@ -110,9 +110,9 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 *自 API 级别 4.0.0*
 
-在 API 级别 4.0.0 之前,运行时加载的所有资源都进入了应用程序堆.该堆用于保留您的代码,数据,堆和运行时间对象,因此加载图像可以快速限制您的应用程序的运行时间功能. API 级别 4.0.0 引入了一个新的图形库,与应用程序堆分开.当您运行时加载一张位地图或字体时,资源将加载到图形库中,您将收回[Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/).图形库动态缓存,卸载和重新加载您的资源基于可用的内存.所有接受资源对象的原始图形也接受引用,因此您的应用程序不需要重新工作以利用新系统.
+在 API 级别 4.0.0 之前，运行时加载的所有资源都会进入应用程序堆。该堆还用于存放代码、数据和运行时对象，因此加载图像很快就会限制应用的运行时能力。API 级别 4.0.0 引入了独立于应用程序堆的图形池。运行时加载位图或字体时，资源会加载到图形池，并返回 [Graphics.ResourceReference](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/)。图形池会根据可用内存动态缓存、卸载和重新加载资源。所有原本接受资源对象的图形 API 也接受引用，因此无需修改应用即可使用新系统。
 
-在引用中调用[ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function)将返回资源对象.只要返回的对象在范围内,资源将被锁定在图形池中.
+对引用调用 [ResourceReference.get()](/connect-iq/api-docs/Toybox/Graphics/ResourceReference/#get-instance_function) 会返回资源对象。只要返回的对象仍在作用域内，资源就会锁定在图形池中。
 
 ### 缓冲位图
 
