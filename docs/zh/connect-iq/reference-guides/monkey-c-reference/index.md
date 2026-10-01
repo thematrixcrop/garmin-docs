@@ -1,5 +1,5 @@
 ---
-title: "Monkey C Language Reference"
+title: "Monkey C 语言参考"
 ---
 # Monkey C 语言参考
 
@@ -587,7 +587,7 @@ switch (myValue) {
 
 <a id="loops"></a>
 
-### Loops
+### 循环
 
 Monkey C 支持 `for`、`while` 和 `do-while` 循环。循环会重复执行语句，直到表达式指定的条件满足。所有循环都必须用花括号包围，因为不支持单行循环。
 
