@@ -4,7 +4,7 @@ title: "ANT 和 ANT+"
 <a id="ant-and-ant-plus"></a>
 # ANT 和 ANT+
 
-Connect IQ 的 Sensor 模块让开发者可以访问设备内置的传感器和已配对的传感器。Connect IQ 还提供对可用 ANT 通道的访问，使开发者能够与 Garmin 不支持的传感器通信。通过 FIT 记录系统，这些指标可以记录到 Activity 文件并上传到 Garmin Connect。
+Connect IQ 的 Sensor 模块让开发者可以访问设备内置的传感器和已配对的传感器。Connect IQ 还提供对可用 ANT 通道的访问，使开发者能够与 Garmin 不支持的传感器通信。通过 FIT 记录系统，可以将这些指标记录到活动文件并上传到 Garmin Connect。
 
 更多 ANT 和 ANT+ 信息请参阅 [thisisant.com](http://thisisant.com/)。
 
@@ -147,11 +147,11 @@ Garmin tempe™ 无线环境传感器等设备支持环境配置文件（Environ
 
 Burst 数据传输允许通过 ANT Generic Channel 在设备之间传送大量数据。开发者会通过监听器收到 Burst 发送或接收事件成功或失败的通知。每次 Burst 数据传输最多支持 8 KB 数据。
 
-常见用途包括 passkey 身份验证，以及在设备之间发送或接收配置数据。
+常见用途包括使用 passkey 进行身份验证，以及在设备之间发送或接收配置数据。
 
 `GenericChannelBurst` 示例展示了如何发送和接收 Burst 数据。
 
-## ANT+ Profiles（配置文件）
+## ANT+ 配置文件（Profiles）
 
 *自 API 级别 2.2.0 起可用*
 
