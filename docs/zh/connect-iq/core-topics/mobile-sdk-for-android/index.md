@@ -1,5 +1,5 @@
 ---
-title: "Mobile SDK for Android"
+title: "Android 移动 SDK"
 ---
 <a id="mobile-sdk-for-android"></a>
 # Android 移动 SDK
