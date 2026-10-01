@@ -4,19 +4,19 @@ title: "如何创建音频内容提供商？"
 <a id="how-do-i-create-an-audio-content-provider"></a>
 # 如何创建音频内容提供商？
 
-2018 年，Garmin 推出了[多款支持音乐的可穿戴产品](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc)，让用户在进行日常活动时可以把手机留在家里。用户可以直接将音乐库复制到设备，也可以安装 Connect IQ Audio Content Provider 应用，作为可穿戴设备与内容分发网络（CDN）之间的桥梁。
+Garmin 于 2018 年推出了[多款支持音乐的可穿戴产品](https://buy.garmin.com/en-US/US/c10002-p1.html?FILTER_FEATURE_MUSICSTORAGE=true&sorter=featuredProducts-desc)，让用户在进行日常活动时可以把手机留在家里。用户可以直接将音乐库复制到设备，也可以安装 Connect IQ Audio Content Provider 应用，作为可穿戴设备与内容分发网络（CDN）之间的桥梁。
 
 *Audio Content Provider* 允许第三方音乐服务传送受保护的内容。它们可以通过 Wi-Fi 直接从 CDN 将内容下载到手表，并作为原生媒体播放器的插件。内容在写入磁盘前会加密，播放时再解密。
 
-本文介绍 Audio Content Provider 所承担的各项职责，以及实现它的基础知识。
+本文介绍 Audio Content Provider 所承担的各项职责，以及实现它所需的基础知识。
 
 ## 将内容同步到设备
 
-Garmin 音乐可穿戴设备通过将内容同步到设备，以便之后播放，从而与第三方服务交互。用户可以在 *同步配置* 状态下启动音乐应用，选择要同步到设备的内容。
+Garmin 音乐可穿戴设备通过将内容同步到设备，以便之后播放，从而与第三方服务交互。用户可以在*同步配置*状态下启动音乐应用，选择要同步到设备的内容。
 
 ![](/connect-iq/resources/faq/sync_config.png)
 
-同步配置界面由 Audio Content Provider 应用定义。如果希望界面与设备的外观和交互风格一致，WatchUi.Menu2 类可以承担大部分实现工作。如果希望根据品牌定制外观和交互风格，`WatchUi.CustomMenu` 会提供更大的灵活性。
+同步配置界面由 Audio Content Provider 应用定义。如果希望界面与设备的外观和交互风格一致，WatchUi.Menu2 类可以完成大部分实现工作。如果希望根据品牌定制外观和交互风格，`WatchUi.CustomMenu` 会提供更大的灵活性。
 
 Audio Content Provider 应用可以通过 REST 服务直接从 CDN 将内容下载到手表。要将歌曲下载到手表，需要经过以下步骤：
 
@@ -46,23 +46,23 @@ Audio Content Provider 应用下载的内容会受到多重保护：
 
 ## 播放
 
-内容下载完成后，Connect IQ 应用可以将音频文件提供给原生媒体播放器播放。用户可以使用媒体控件控制播放，也可以进入应用的播放配置模式，选择想要收听的内容。
+内容下载完成后，Connect IQ 应用可以将音频文件提供给原生媒体播放器播放。用户可以使用媒体控件控制播放，也可以进入应用的播放配置模式，选择要收听的内容。
 
 ![](/connect-iq/resources/faq/playback_tree.png)
 
 ### 播放配置
 
-用户进入播放配置后，应用应允许用户在应用内更改音频内容（播放列表、书籍或播客）。播放配置界面由 Audio Content Provider 定义。
+用户进入播放配置后，应用应允许用户在应用内选择或更改音频内容（播放列表、书籍或播客）。播放配置界面由 Audio Content Provider 定义。
 
 ![](/connect-iq/resources/faq/playback_configuration.png)
 
-在这个流程中，用户可以选择要播放的歌曲。应用可以让用户从播放列表或单首歌曲中进行选择，也可以通过 `Media.startPlayback()` 从该流程开始播放，或者让用户在媒体播放器中选择播放。
+在此流程中，用户可以选择要播放的歌曲。应用可以让用户从播放列表或单首歌曲中进行选择，也可以通过 `Media.startPlayback()` 从此流程开始播放，或者让用户在媒体播放器中选择播放内容。
 
 ### 播放
 
 播放由媒体播放器驱动，但应用可以决定显示哪些媒体播放器控件以及播放哪些内容。实现 `Media.ContentDelegate` 类即可启用这些功能。
 
-ContentDelegate 负责提供一个 `Media.ContentIterator`，为媒体播放器提供代表已下载歌曲的 `Media.ContentRef` 实例迭代器。ContentIterator 还提供 `Media.PlaybackProfile`，用于自定义媒体播放器界面。可以针对每首歌曲禁用跳过按钮，`Media.ContentRef` 的元数据也会显示在播放器中。
+ContentDelegate 负责提供一个 `Media.ContentIterator`，为媒体播放器提供代表已下载歌曲的 `Media.ContentRef` 实例迭代器。ContentIterator 还提供 `Media.PlaybackProfile`，用于自定义媒体播放器界面。您可以针对每首歌曲禁用跳过按钮，`Media.ContentRef` 的元数据也会显示在播放器中。
 
 播放音频时，媒体播放器会将播放信息发送给 `ContentDelegate`，供报告用途使用。Connect IQ 应用可以保存每次播放歌曲的报告信息，并通过 Web 请求或同步将其发送回服务提供商。
 
@@ -78,7 +78,7 @@ ContentDelegate 负责提供一个 `Media.ContentIterator`，为媒体播放器�
 
 ## 结论
 
-借助 Connect IQ Audio Content Provider 应用，你可以：
+借助 Connect IQ Audio Content Provider 应用，您可以：
 
 -   通过现有的内容分发 Web 服务，将受保护的内容安全地传送到支持 Garmin 音乐功能的可穿戴设备。
 
