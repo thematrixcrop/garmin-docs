@@ -90,7 +90,7 @@ API 级别 2.3.0
 
 - dictionary — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含筛选设置的 Dictionary。
+    包含筛选设置的字典（Dictionary）。
 
 - :coefficients\_a — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/), [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)) —
 
@@ -102,7 +102,7 @@ API 级别 2.3.0
 
 - :gain — ([Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) —
 
-        指定要应用于系数的乘数的一个 Float 值。
+        指定要应用于系数的乘数。
 
 
 起始版本：
