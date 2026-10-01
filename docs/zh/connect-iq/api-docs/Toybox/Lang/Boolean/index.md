@@ -41,10 +41,10 @@ API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-将 self 的数值与其他数值进行比较。如果 false 表示
+将 self 的数值与其他数值进行比较。false 在数值上视为 0，true 在数值上视为 1。
 
 ```
-  considered numerically zero and true is considered numerically 1.
+  false 在数值上视为 0，true 在数值上视为 1。
 ```
 
 参数：

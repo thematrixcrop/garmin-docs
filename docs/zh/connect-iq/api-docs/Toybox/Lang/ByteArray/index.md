@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-ByteArray objects are fixed size, numerically indexed, single dimensional, and take Numbers with a value >= -128 and &lt;= 255 as members.
+ByteArray 对象大小固定，按数值索引，是一维结构，其元素必须是值大于等于 -128 且小于等于 255 的 Number。
 
 起始版本：
 

@@ -74,10 +74,10 @@ API 级别 1.0.0
 
 ### **compareTo(other as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/))** as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-将 self 的数值与其他某个数值进行比较。NaN 是
+将 self 的数值与其他某个数值进行比较。NaN
 
 ```
-  considered greater than all numbers and equal to itself.
+  大于所有数值，并且等于自身。
 ```
 
 参数：
