@@ -1,5 +1,5 @@
 ---
-title: "How do I create a Connect IQ Background Service?"
+title: "如何创建 Connect IQ 后台服务？"
 ---
 <a id="how-do-i-create-a-connect-iq-background-service"></a>
 # 如何创建 Connect IQ 后台服务？
@@ -25,7 +25,7 @@ class BgbgServiceDelegate extends Toybox.System.ServiceDelegate {
 
 使用该注解并不意味着这些类、模块和变量只能在后台服务中使用；它们在主进程和后台进程中都可用。
 
-## Service Delegate
+## 服务委托
 
 后台服务可以由多种系统事件触发：步数目标达成、睡眠或唤醒时间，以及下面将介绍的时间事件。[System.ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) 用于定义这些事件发生时应用应执行的操作。[AppBase.getServiceDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getServiceDelegate-instance_function) 用于获取代码中的 service delegate。使用 [Toybox.Background](/connect-iq/api-docs/Toybox/Background/) 模块中的方法，可以注册服务并指定触发条件。
 
