@@ -42,7 +42,7 @@ API 级别 4.2.0
 
 - [**getMatrix**](#getMatrix-instance_function)() as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \]
 
-    Get the transform values Get the underlying values of this transform as an Array | m00 m01 m02 | | m10 m11 m12 | => \[ m00, m01, m02, m10, m11, m12 \] | 0 0 1 |.
+    获取变换值。此变换的底层值以 Array 形式返回：| m00 m01 m02 | | m10 m11 m12 | => \[ m00, m01, m02, m10, m11, m12 \] | 0 0 1 |。
 
 - [**initialize**](#initialize-instance_function)()
 
@@ -66,7 +66,7 @@ API 级别 4.2.0
 
 - [**setMatrix**](#setMatrix-instance_function)(m as \[ [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) \]) as **Void**
 
-    Set the transform values | m00 m01 m02 | \[ m00, m01, m02, m10, m11, m12 \] => | m10 m11 m12 | | 0 0 1 |.
+    设置变换值：| m00 m01 m02 | \[ m00, m01, m02, m10, m11, m12 \] => | m10 m11 m12 | | 0 0 1 |。
 
 - [**setToRotation**](#setToRotation-instance_function)(theta as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)) as **Void**
 
