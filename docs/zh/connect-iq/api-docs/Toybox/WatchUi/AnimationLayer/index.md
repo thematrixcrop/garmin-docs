@@ -229,7 +229,7 @@ API 级别 3.1.0
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含选项的 Dictionary，可以为 `null`
+    包含选项的字典（Dictionary），可以为 `null`。
 
 - :locX — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
@@ -269,7 +269,7 @@ API 级别 3.1.0
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    包含选项的 Dictionary，可以为 `null`
+    包含选项的字典（Dictionary），可以为 `null`。
 
 - :delegate — ([WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)) —
 
