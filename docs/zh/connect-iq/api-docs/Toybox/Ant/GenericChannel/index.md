@@ -44,7 +44,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(msg as [Ant.Message](/connect-iq/api-docs/Toybox/Ant/Message/)) as **Void**, channelAssignment as [Ant.ChannelAssignment](/connect-iq/api-docs/Toybox/Ant/ChannelAssignment/))
 
-    Constructor.
+    构造函数。
 
 - [**open**](#open-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
