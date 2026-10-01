@@ -233,7 +233,7 @@ API 级别 3.0.0
 
 另见：
 
-- [Core Topics - String Resources](/connect-iq/core-topics/resources/)
+- [核心主题 - 字符串资源](/connect-iq/core-topics/resources/)
 
 
 起始版本：
