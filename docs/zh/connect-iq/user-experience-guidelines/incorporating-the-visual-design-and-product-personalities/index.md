@@ -1,10 +1,10 @@
 ---
-title: "Incorporating Visual Design and Product Personalities"
+title: "融入视觉设计和产品个性"
 ---
 <a id="incorporating-visual-design-and-product-personalities"></a>
 # 融入视觉设计和产品个性
 
-确定工作流程和交互模式后，就可以开始融入视觉设计。视觉设计需要同时体现你的品牌和目标产品的个性。
+确定工作流程和交互模式后，就可以开始融入视觉设计。视觉设计需要同时体现您的品牌和目标产品的个性。
 
 ## 产品个性
 
