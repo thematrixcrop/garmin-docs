@@ -10,7 +10,7 @@ title: "如何使用自定义字体？"
 
 先介绍需要用到的工具：
 
--   [**BMFont**](http://www.angelcode.com/products/bmfont/)：将字体导出为 Connect IQ 所需的格式。更多信息请参阅 [Programmer's Guide](/connect-iq/core-topics/resources/#fonts) 和 [UX Guide](/connect-iq/user-experience-guidelines/)。
+-   [**BMFont**](http://www.angelcode.com/products/bmfont/)：将字体导出为 Connect IQ 所需的格式。更多信息请参阅[程序员指南](/connect-iq/core-topics/resources/#fonts)和[UX 指南](/connect-iq/user-experience-guidelines/)。
 
 -   **图形编辑器或工具**：用于编辑字体 PNG 文件。我更喜欢使用 [Photoshop](https://www.adobe.com/products/photoshop.html) 实现所需效果，也可以使用 [GIMP](https://www.gimp.org/)。
 
