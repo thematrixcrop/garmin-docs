@@ -97,7 +97,7 @@ PI 的 32 位浮点表示
 
 - [**ceil**](#ceil-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    计算一个值的上限整数。
+    对数值向上取整。
 
 - [**cos**](#cos-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -105,7 +105,7 @@ PI 的 32 位浮点表示
 
 - [**floor**](#floor-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-    计算一个值的下限整数。
+    对数值向下取整。
 
 - [**ln**](#ln-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -149,7 +149,7 @@ PI 的 32 位浮点表示
 
 - [**stdev**](#stdev-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**) as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-    获取总体数据样本的标准差。
+    获取总体数据中一组样本的标准差。
 
 - [**tan**](#tan-instance_function)(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)) as [Lang.Decimal](/connect-iq/api-docs/Toybox/Lang/#Decimal-named_type)
 
@@ -270,7 +270,7 @@ API 级别 1.0.0
 
 - [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/), [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) —
 
-    y/x 的主值弧正切，弧度范围为 \[-PI..PI\]；如果无效则返回 `NaN`
+    y/x 的反正切主值，弧度范围为 \[-PI..PI\]；如果无效则返回 `NaN`
 
 - 两个输入均为 Number 或 Float 时返回 Float
 
@@ -284,7 +284,7 @@ API 级别 1.3.0
 
 ### **ceil(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-计算一个值的上限整数。
+对数值向上取整。
 
 参数：
 
@@ -333,7 +333,7 @@ API 级别 1.0.0
 
 ### **floor(x as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type))** as [Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)
 
-计算一个值的下限整数。
+对数值向下取整。
 
 参数：
 
@@ -603,7 +603,7 @@ srand() 不返回任何值。
 
 - seed — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    用于为 rand() 播种的值
+    用于为 rand() 设置随机数种子的值
 
 
 起始版本：
@@ -612,7 +612,7 @@ API 级别 1.0.0
 
 ### **stdev(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>, xbar as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) or **Null**)** as [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)
 
-获取总体数据样本的标准差。
+获取总体数据中一组样本的标准差。
 
 参数：
 
