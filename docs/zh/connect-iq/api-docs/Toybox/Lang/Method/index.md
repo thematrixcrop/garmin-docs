@@ -112,9 +112,9 @@ API 级别 1.0.0
 
 另见：
 
-- [Hash Function](https://en.wikipedia.org/wiki/Hash_function)
+- [哈希函数](https://en.wikipedia.org/wiki/Hash_function)
 
-- [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+- [哈希表](https://en.wikipedia.org/wiki/Hash_table)
 
 
 起始版本：
