@@ -15,7 +15,7 @@ title: "您的第一个 Connect IQ 应用"
 
 3. 出现 *Set Project Name* 提示时，输入新项目的名称。
 
-4. 选择项目类型 *Watch Face*。
+4. 选择项目类型 *表盘（Watch Face）*。
 
 5. 选择项目使用的 *Simple* 模板。
 
