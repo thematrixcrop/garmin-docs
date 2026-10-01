@@ -1,5 +1,5 @@
 ---
-title: "Resources"
+title: "资源"
 ---
 <a id="resources"></a>
 # 资源
