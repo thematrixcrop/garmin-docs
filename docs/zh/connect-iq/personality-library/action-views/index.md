@@ -1,20 +1,20 @@
 ---
-title: "Action Views"
+title: "操作视图"
 ---
 # 操作视图
 
-动作视图是提供信息和文本中的动作菜单的屏幕.这些动作可能是可在可见信息上执行的步骤或任务.
+操作视图是同时提供信息和上下文操作菜单的页面。用户可以针对页面中显示的信息执行这些操作，例如完成某个步骤或任务。
 
 ![设备正面显示操作提示](/connect-iq/resources/personality-library/personality_ui_action_hinthigh.jpg)
 
-每个产品都有标准提示,说明如何访问文本行动菜单.
+每种产品都会提供标准提示，说明如何打开上下文操作菜单。
 
 ## 示例
 
 ```xml
 <!-- layout.xml -->
 
-        <!-- 操作菜单提示 -->
+        <!-- ActionMenu hint -->
         <bitmap id="actionMenu" personality="
             system_icon_dark__hint_action_menu
             system_loc__hint_action_menu" />
@@ -60,11 +60,11 @@ title: "Action Views"
     }
 ```
 
-`system_input__action_menu`将通知您产品是否使用按或触摸区域启动文本信息.
+`system_input__action_menu` 会指示产品是通过按钮还是触摸区域打开上下文操作菜单。
 
 ## 示例
 
-当可用时,您可以使用[View.setActionMenuIndicator()](/connect-iq/api-docs/Toybox/WatchUi/View/#setActionMenuIndicator-instance_function)API触发对`onActionMenu()`的呼叫 (见[BehaviorDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function)或[PickerDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)),可将文本信息推进.
+如果产品支持，您可以使用 [View.setActionMenuIndicator()](/connect-iq/api-docs/Toybox/WatchUi/View/#setActionMenuIndicator-instance_function) API 触发 `onActionMenu()` 调用（参见 [BehaviorDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onActionMenu-instance_function) 或 [PickerDelegate.onActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/#onActionMenu-instance_function)），从而显示上下文操作菜单。
 
 ```typescript
 class ActionView extends WatchUi.View {
@@ -95,13 +95,13 @@ class ActionViewDelegate extends WatchUi.BehaviorDelegate {
 ## 示例
 
 ```typescript
-// 辅助函数：isInActionArea
+// Helper: isInActionArea
 
-//! 检查点击是否落在
-//! 操作菜单的触摸区域内。
-//! @param x 点击的 X 坐标
-//! @param y 点击的 Y 坐标
-//! @return 点击时为 true，否则为 false
+//! Function to see if a tap falls within the touch area for
+//! a action menu.
+//! @param x X coord of tap
+//! @param y Y coord of tap
+//! @return true if tapped, false otherwise
 function isInActionArea(coord as Array<Numeric>) as Boolean {
     if (Styles.system_input__action_menu has :x1 &&
         Styles.system_input__action_menu has :y1 &&
@@ -122,9 +122,9 @@ function isInActionArea(coord as Array<Numeric>) as Boolean {
 }
 ```
 
-## Edge 2022 个性化设置
+## Edge 2022 个性
 
-具有Edge 2022个性的产品具有可配置的可选控制,可提供文本操作.您可以使用[View.setControlBar()](/connect-iq/api-docs/Toybox/WatchUi/View/#setControlBar-instance_function)API配置这个以设置一个动作菜单.
+采用 Edge 2022 个性的产品提供可配置的可选控制栏，用于显示上下文操作。您可以使用 [View.setControlBar()](/connect-iq/api-docs/Toybox/WatchUi/View/#setControlBar-instance_function) API 配置控制栏，使其包含操作菜单。
 
 ### 示例
 
@@ -139,4 +139,4 @@ function isInActionArea(coord as Array<Numeric>) as Boolean {
         }
 ```
 
-在上述例子中使用`has`,您可以与其他产品共享此代码.
+上例使用 `has` 检查，因此可以与其他产品共享这段代码。
