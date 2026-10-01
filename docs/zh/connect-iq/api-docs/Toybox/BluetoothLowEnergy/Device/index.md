@@ -18,7 +18,7 @@ Toybox.Lang.Object
 
 表示一个已与系统配对的 Bluetooth Low Energy 设备。
 
-此类无法实例化；必须通过使用 [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function)，或在收到设备的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 后调用 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function)，来访问已配对的系统设备
+此类无法实例化；必须通过 [getPairedDevices()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#getPairedDevices-instance_function)，或在收到设备的 [ScanResult](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult/) 后调用 [pairDevice()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#pairDevice-instance_function)，来访问已配对的系统设备。
 
 起始版本：
 
@@ -78,7 +78,7 @@ API 级别 3.1.0
 
 - uuid — ([BluetoothLowEnergy.Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/)) —
 
-    要搜索的 service UUID
+    要搜索的 Service UUID
 
 
 返回：
@@ -102,7 +102,7 @@ API 级别 3.1.0
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    设备提供的 [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) 个对象的迭代器。
+    设备提供的 [Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/) 对象迭代器。
 
 
 起始版本：
