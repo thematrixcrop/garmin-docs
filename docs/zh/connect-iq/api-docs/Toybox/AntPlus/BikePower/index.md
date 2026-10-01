@@ -192,7 +192,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikePowerListener](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
