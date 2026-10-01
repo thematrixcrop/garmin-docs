@@ -615,7 +615,7 @@ function handleCandleStick(jack as Nimble or Quick) {
 }
 ```
 
-### If-Splitting
+### 条件拆分（If-Splitting）
 
 在 Java 等语言中，对象的类型通常被认为就是声明时的类型。这会导致大量冗余的类型转换，或需要创建许多不必要的局部变量，才能向编译器说明对象实际并非声明的类型。
 
@@ -632,7 +632,7 @@ public boolean foo(SomeInterfaceType x) {
 }
 ```
 
-Monkey C 类型系统会利用 If-Splitting：分支表达式会使变量类型在条件为真和为假时分别发生变化。
+Monkey C 类型系统会利用条件拆分（If-Splitting）：分支表达式会使变量类型在条件为真和为假时分别发生变化。
 
 ```typescript
 import Toybox.Lang;
@@ -693,7 +693,7 @@ public function foo(x as Addable?) {
 }
 ```
 
-对成员变量进行 If-Splitting 时，如果调用函数，所有类型变化都会被清除。
+对成员变量进行条件拆分时，如果调用函数，所有类型变化都会被清除。
 
 ## 为模块和类指定类型
 
