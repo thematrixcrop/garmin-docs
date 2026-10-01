@@ -197,38 +197,38 @@ API 级别 2.3.0
 
 - [**pitch**](#pitch-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or **Null**
 
-    以度为单位的俯仰值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Floats](/connect-iq/api-docs/Toybox/Lang/Float/)。
+    以度为单位的俯仰值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。
 
 - [**power**](#power-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    以 millig-units 为单位的向量功率值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫重力单位为单位的向量功率值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**roll**](#roll-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or **Null**
 
-    以度为单位的横滚值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Floats](/connect-iq/api-docs/Toybox/Lang/Float/)。
+    以度为单位的横滚值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。
 
 - [**timestamp**](#timestamp-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**x**](#x-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    以 millig-units 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫重力单位为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**y**](#y-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    以 millig-units 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫重力单位为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 - [**z**](#z-var) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-    以 millig-units 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+    以毫重力单位为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 
 ## 实例属性详情
 
 ### var pitch as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or **Null**
 
-以度为单位的俯仰值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Floats](/connect-iq/api-docs/Toybox/Lang/Float/)。可以为 `null`。
+以度为单位的俯仰值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。可以为 `null`。
 
 俯仰值使用公式 atan2(y, sqrt(x^2 + z^2)) 计算。
 
@@ -247,7 +247,7 @@ API 级别 2.3.0
 
 ### var power as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-以 millig-units 为单位的向量功率值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
+以毫重力单位为单位的向量功率值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
 
 起始版本：
 
@@ -259,7 +259,7 @@ API 级别 2.3.0
 
 ### var roll as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\> or **Null**
 
-以度为单位的横滚值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Floats](/connect-iq/api-docs/Toybox/Lang/Float/)。可以为 `null`。
+以度为单位的横滚值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Float](/connect-iq/api-docs/Toybox/Lang/Float/)。可以为 `null`。
 
 滚转值使用公式 atan2(-x, z) 计算。
 
@@ -278,7 +278,7 @@ API 级别 2.3.0
 
 ### var timestamp as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
+以毫秒为单位的时间戳值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。可以为 `null`。
 
 起始版本：
 
@@ -290,7 +290,7 @@ API 级别 5.1.1
 
 ### var x as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-以 millig-units 为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+以毫重力单位为单位的 x 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 起始版本：
 
@@ -302,7 +302,7 @@ API 级别 2.3.0
 
 ### var y as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-以 millig-units 为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+以毫重力单位为单位的 y 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 起始版本：
 
@@ -314,7 +314,7 @@ API 级别 2.3.0
 
 ### var z as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\>
 
-以 millig-units 为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Numbers](/connect-iq/api-docs/Toybox/Lang/Number/)。
+以毫重力单位为单位的 z 轴值的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/)，类型为 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)。
 
 起始版本：
 
