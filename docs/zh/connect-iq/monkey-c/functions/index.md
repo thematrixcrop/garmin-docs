@@ -1,5 +1,5 @@
 ---
-title: "Functions"
+title: "函数"
 ---
 <a id="functions"></a>
 # 函数
@@ -306,7 +306,7 @@ switch ( obj ) {
 }
 ```
 
-### Loops
+### 循环
 
 Monkey C 支持 `for`、`while` 和 `do/while` 循环。`while` 和 `do/while` 循环的语法与常见语言类似：
 
@@ -389,7 +389,7 @@ else
 
 Monkey C 的面向对象设计模式结合 `has` 和 `instanceof` 运算符，可以让同一个代码库支持多种设备实现。
 
-## Callbacks
+## 回调
 
 Monkey C 中的函数不是一等对象，不能直接将它们作为对象传递给其他函数。不过，类实例可以使用从 `Toybox.Lang.Object` 继承的 `method()` 函数创建 `Method` 对象，从而将方法作为回调调用。
 
