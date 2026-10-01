@@ -1193,7 +1193,7 @@ module BluthCompany
 
 Monkey C 通常会在整个对象层级中搜索对象；使用 bling 符号时，只检查全局命名空间。如果找不到目标，虚拟机不会回到对象层级搜索，而是返回 *Symbol Not Found* 错误。
 
-**注意：**switch 代码块还有其他作用域规则，详见 [Switch-Case Statements](#scoping-in-switch-blocks)。
+**注意：**switch 代码块还有其他作用域规则，详见[Switch-Case 语句](#scoping-in-switch-blocks)。
 
 ## 注解
 
