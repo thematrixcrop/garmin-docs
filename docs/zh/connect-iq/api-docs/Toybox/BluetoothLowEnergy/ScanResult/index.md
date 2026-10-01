@@ -161,7 +161,7 @@ API 级别 3.1.0
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    每个 AD 条目中的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 个对象的迭代器。字典将包含 `:companyId` 和 `:data` 键
+    每个 AD 条目对应的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象迭代器。字典包含 `:companyId` 和 `:data` 键。
 
 
 起始版本：
@@ -226,13 +226,13 @@ API 级别 3.1.0
 
 获取设备广播的服务 UUID
 
-如果广告数据包含任何服务 UUID 值，则可以通过此迭代器访问这些值。如果没有播报的 UUID，此函数将返回空迭代器。
+如果广告数据包含服务 UUID 值，则可以通过此迭代器访问这些值。如果没有播报的 UUID，此函数将返回空迭代器。
 
 返回：
 
 - [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/) —
 
-    ScanResult 中公布的 [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) 个对象的迭代器
+    ScanResult 中公布的 [Uuid](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid/) 对象迭代器
 
 
 起始版本：
