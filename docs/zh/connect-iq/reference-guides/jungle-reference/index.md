@@ -11,7 +11,7 @@ title: "Jungle 参考指南"
 
 -   管理 [Monkey Barrel](/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
 
-- 使用 Jungle[Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) 或[命令行](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
+- 使用 Jungle 与 [Visual Studio Code](/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) 配合，或从[命令行](/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)使用 Jungle
 
 
 ## Jungle 语法
@@ -26,9 +26,9 @@ Jungle 文件包含由*限定符*、*局部变量*和*值*组成的*构建指令
 
 | 限定符 | 说明 |
 | --- | --- |
-| `manifest` |项目公开文件的路径|
-| `optimization` |指定项目的优化级别。详情请参阅[`--optimization` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)|
-| `typecheck` |指定类型检查级别。详情请参阅[`--typecheck` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)|
+| `manifest` | 项目 Manifest 文件的路径 |
+| `optimization` | 指定项目的优化级别。详情请参阅 [`--optimization` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)。 |
+| `typecheck` | 指定类型检查级别。详情请参阅 [`--typecheck` 编译器选项](/connect-iq/monkey-c/compiler-options/#compiler-options)。 |
 
 ### 设备限定符
 
@@ -36,13 +36,13 @@ Jungle 文件包含由*限定符*、*局部变量*和*值*组成的*构建指令
 
 | 限定符 | 说明 |
 | --- | --- |
-| `annotations` |适用于本资格的子桶注释|
-| `barrelPath` |适用于本限定符的 Monkey Barrel 文件 (`.barrel`) 路径|
+| `annotations` | 适用于此限定符的 Monkey Barrel 注解 |
+| `barrelPath` | 适用于此限定符的 Monkey Barrel 文件（`.barrel`）路径 |
 | `excludeAnnotations` | 构建此限定符时要排除的注解 |
-| `lang` |本限定符支持的语言|
-| `personality` |适用于本限定符的 Monkey Style 文件 (`.mss`) 路径|
-| `resourcePath` |适用于本资格的资源文件 (`.xml`) 路径|
-| `sourcePath` |适用于本资格的源文件 (`.mc`) 路径|
+| `lang` | 此限定符支持的语言 |
+| `personality` | 适用于此限定符的 Monkey Style 文件（`.mss`）路径 |
+| `resourcePath` | 适用于此限定符的资源文件（`.xml`）路径 |
+| `sourcePath` | 适用于此限定符的源文件（`.mc`）路径 |
 
 ### 局部变量
 
@@ -275,7 +275,7 @@ base.barrelPath = barrels/IconLibrary.barrel;barrels/GraphLibrary.barrel
 base.GraphLibrary.annotations = bar
 ```
 
-为了让编译器能够正确解决子桶,还必须在项目表文件中添加rel子依赖性:
+为了让编译器能够正确解析 Monkey Barrel，还必须在项目 Manifest 文件中添加 Barrel 依赖项：
 
 ```cpp
 <iq:barrels>
@@ -283,7 +283,7 @@ base.GraphLibrary.annotations = bar
 </iq:barrels>
 ```
 
-一旦完成,所指定的桶将可用于项目中.
+完成后，指定的 Barrel 就可以在项目中使用。
 
 ## 定义项目依赖项
 
@@ -335,15 +335,15 @@ Connect IQ SDK 包含一个默认 Jungle 文件，即使没有自定义 Jungle �
 monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
 ```
 
-取而代之的是`-z`选项指定资源路径,`-x`选项指定构建排除,`-m`选项指定表格文件,以及指定源路径的功能已经过时,将在未来的SDK版本中被删除.以下是如何工作的一般描述:
+使用 `-z` 选项指定资源路径、`-x` 选项指定构建排除、`-m` 选项指定 Manifest 文件，以及直接指定源路径的功能已经弃用，并将在未来的 SDK 版本中移除。其工作方式如下：
 
 - 使用 `-f` 选项指定 Jungle 文件时，会先将[默认 Jungle 文件](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目，然后应用指定的 Jungle 文件。
 
-- 如果`-f`选项后提供了多个Jungle文件,则将优先考虑列表中的最后一个Jungle文件中的构建说明
+- 如果 `-f` 选项后提供了多个 Jungle 文件，则列表中最后一个 Jungle 文件的构建指令优先级最高。
 
 - 如果未指定资源或源代码选项，编译器会尝试将[默认 Jungle 文件](/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file)应用到项目中。
 
-- 不允许使用`-f`选项和任何过时选项的组合,并会导致编译错误
+- 不允许同时使用 `-f` 选项和任何已弃用的选项，否则会导致编译错误。
 
 
 项目清单文件必须在通过命令行传递的 Jungle 文件中指定，任何 Jungle 文件都可以包含此声明。
@@ -354,6 +354,6 @@ project.manifest = manifest.xml
 
 提供的 Jungle 文件集合中只能定义一个清单文件。在 Jungle 文件中使用相对路径时，路径相对于该 Jungle 文件所在目录解析。`default.jungle` 中的相对路径则相对于找到的清单文件所在目录解析。
 
-** 注:**使用`-m`,`-x`,`-z`和/或在命令行提供源文件的遗产项目将导致编译器警告.
+**注意：**使用 `-m`、`-x`、`-z`，或在命令行提供源文件的旧项目会触发编译器警告。
 
-请勿在多个清单之间重复定义项目。
+如果找到多个 Manifest，其中一个必须替换并吸收其他 Manifest 的配置，才能成为最终使用的 Manifest。
