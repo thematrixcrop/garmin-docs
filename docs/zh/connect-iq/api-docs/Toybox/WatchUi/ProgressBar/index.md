@@ -260,7 +260,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), startValue as [Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 - [**setDisplayString**](#setDisplayString-instance_function)(displayString as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as **Void**
 
