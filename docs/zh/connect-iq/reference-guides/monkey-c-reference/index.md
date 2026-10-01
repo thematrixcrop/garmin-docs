@@ -5,7 +5,7 @@ title: "Monkey C 语言参考"
 
 ![](/connect-iq/resources/programmers-guide/smart-monkey.png)
 
-Monkey C 是一种从头构建的面向对象语言，旨在让可穿戴设备上的应用开发更加轻松。如果你使用过 Java、PHP、Ruby 或 Python 等动态语言，Monkey C 应该会让你感到熟悉。
+Monkey C 是一种从头构建的面向对象语言，旨在让可穿戴设备上的应用开发更加轻松。如果您使用过 Java、PHP、Ruby 或 Python 等动态语言，Monkey C 应该会让您感到熟悉。
 
 Monkey C 的目标是减少应用开发中的底层工作，让开发者更多关注用户，而不是设备的资源限制。Monkey C 会编译为由虚拟机解释执行的字节码，类似于 Java。
 
