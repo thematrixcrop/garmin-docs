@@ -29,9 +29,9 @@ Notifications API 可以接入系统通知，并向用户提供可操作的通�
 - 正文字符串
 - 自定义图标。如果未指定，则使用应用图标。
 
-通知的展示方式会匹配设备的 personality，因此不同设备上的显示效果可能不同。如果同时存在多条通知，系统会显示最新的一条。将 `:dismissPrevious` 选项设为 `true`，可以请求系统在显示新通知前清除来自应用的其他通知。
+通知的展示方式会匹配设备的个性（personality），因此不同设备上的显示效果可能不同。如果同时存在多条通知，系统会显示最新的一条。将 `:dismissPrevious` 选项设为 `true`，可以请求系统在显示新通知前清除来自应用的其他通知。
 
-可以为通知定义一组 action。每个 action 由字符串和可序列化数据组成，并会随通知一起显示给用户。用户选择 action 后，系统会调用 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)，并在 `state` 字典的 `:launchedFromNotification` 中提供 action 数据。通知默认带有启动和关闭 action；使用 `:data` 选项可以为默认 action 关联数据。
+可以为通知定义一组操作（action）。每个操作由字符串和可序列化数据组成，并会随通知一起显示给用户。用户选择操作后，系统会调用 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)，并在 `state` 字典的 `:launchedFromNotification` 中提供操作数据。通知默认带有启动和关闭操作；使用 `:data` 选项可以为默认操作关联数据。
 
 [Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 可以让应用在通知 action 被触发或通知被关闭时收到通知。
 
