@@ -1822,7 +1822,7 @@ API 级别 1.2.0
 
 另见：
 
-- [Energy Expenditure](https://www.firstbeat.com/en/consumer-products/features/#energy-expenditure)
+- [能量消耗](https://www.firstbeat.com/en/consumer-products/features/#energy-expenditure)
 
 
 :::details 支持的设备
@@ -4007,7 +4007,7 @@ API 级别 1.2.0
 
 另见：
 
-- [Training Effect](https://www.firstbeat.com/en/consumer-products/features/#training-effect)
+- [训练效果](https://www.firstbeat.com/en/consumer-products/features/#training-effect)
 
 
 :::details 支持的设备
