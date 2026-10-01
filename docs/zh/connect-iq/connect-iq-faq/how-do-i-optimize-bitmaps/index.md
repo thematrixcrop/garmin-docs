@@ -1,5 +1,5 @@
 ---
-title: "How do I optimize bitmaps in my app?"
+title: "如何优化应用中的位图？"
 ---
 <a id="how-do-i-optimize-bitmaps-in-my-app"></a>
 # 如何优化应用中的位图？
