@@ -202,7 +202,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.BikeSpeedListener](/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
