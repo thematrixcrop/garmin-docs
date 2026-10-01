@@ -4,7 +4,7 @@ title: "Android 移动 SDK"
 <a id="mobile-sdk-for-android"></a>
 # Android 移动 SDK
 
-Mobile SDK 可以让你创建运行在用户手机上的配套应用，并与其可穿戴设备上的应用交互。这样，某些在可穿戴设备上执行起来繁琐或消耗资源的任务，就可以交给手机处理，从而提供更丰富的用户体验。
+Mobile SDK 可用于创建运行在用户手机上的配套应用，并与可穿戴设备上的应用交互。这样，某些在可穿戴设备上执行起来繁琐或消耗资源的任务，就可以交给手机处理，从而提供更丰富的用户体验。
 
 ## 将 Mobile SDK 添加到项目
 
@@ -16,7 +16,7 @@ Mobile SDK 已通过 [Connect IQ Companion App SDK](https://central.sonatype.com
 
 ## 其他要求
 
-配套应用要与 Connect IQ 设备通信，用户还必须在手机上安装 Garmin Connect Mobile。Android 配套应用的所有通信都会通过 Garmin Connect Mobile 服务到达设备。使用无线连接类型初始化 SDK 时，系统会检查这一要求；如果手机未安装 Garmin Connect Mobile，初始化将失败。如果将 `true` 传给 `initialize` 方法的自动 UI 参数，SDK 会向用户显示消息，要求其安装或升级 Garmin Connect Mobile，并提供直接前往 Google Play 商店应用页面的入口。详情请参阅“初始化失败时自动显示 UI 消息”。
+要让配套应用与 Connect IQ 设备通信，用户必须在手机上安装 Garmin Connect Mobile。Android 配套应用的所有通信都会通过 Garmin Connect Mobile 服务到达设备。使用无线连接类型初始化 SDK 时，系统会检查这一要求；如果手机未安装 Garmin Connect Mobile，初始化将失败。如果将 `true` 传给 `initialize` 方法的自动 UI 参数，SDK 会向用户显示消息，要求其安装或升级 Garmin Connect Mobile，并提供直接前往 Google Play 商店应用页面的入口。详情请参阅“初始化失败时自动显示 UI 消息”。
 
 ## 使用 SDK
 
@@ -67,7 +67,7 @@ connectIQ.initialize(context, true, new ConnectIQListener() {
 
 ## 初始化失败时自动显示 UI 消息
 
-如果初始化失败的原因是用户手机未安装 Garmin Connect Mobile，或当前版本需要升级，可以显示消息提示用户处理。将 `true` 作为 `initialize()` 方法的第二个参数传入，即可让 SDK 自动显示该消息。默认情况下，UI 会显示一个对话框，要求用户采取行动。对话框字符串默认只有英文，但你可以在项目的 `strings.xml` 文件中添加预定义字符串来完全自定义它们。
+如果初始化失败的原因是用户手机未安装 Garmin Connect Mobile，或当前版本需要升级，可以显示消息提示用户处理。将 `true` 作为 `initialize()` 方法的第二个参数传入，即可让 SDK 自动显示该消息。默认情况下，UI 会显示一个对话框，要求用户采取行动。对话框字符串默认只有英文，但您可以在项目的 `strings.xml` 文件中添加预定义字符串来完全自定义这些文本。
 
 ### 可自定义的字符串
 
@@ -209,7 +209,7 @@ connectIQ.openStore( MY_STORE_ID );
 
 ## 发送消息
 
-你可以使用与 Monkey C 数据类型对应的 Java 类型，向已连接设备上的 Connect IQ 应用发送消息（请参阅下方的“支持的数据类型”表）。调用 `sendMessage()` 会将消息传递到应用的邮箱。
+您可以使用与 Monkey C 数据类型对应的 Java 类型，向已连接设备上的 Connect IQ 应用发送消息（请参阅下方的“支持的数据类型”表）。调用 `sendMessage()` 会将消息传递到应用的邮箱。
 
 ```java
 List<Object> message = new ArrayList<String>() {"hello pi", 3.14159};
