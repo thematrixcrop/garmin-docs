@@ -3,49 +3,49 @@ title: "Graphics"
 ---
 # 图形
 
-图形模块处理将位地图,字体和形状绘制到设备屏幕上.
+图形模块负责将位图、字体和图形绘制到设备屏幕。
 
 ## 绘图上下文
 
-[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象用于绘制图形表面.主要设备表面为查看对象方法[View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function),[View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function),和 .可以使用[Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function)和[Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function)方法查询表面的大小.
+[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象用于在图形表面上绘制。主设备表面由 View 对象的 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 方法提供。可以使用 [Dc.getWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getWidth-instance_function) 和 [Dc.getHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getHeight-instance_function) 查询表面大小。
 
 | 原语或操作 | 描边 | 填充 | API 级别 | 备注 |
 | --- | --- | --- | --- | --- |
-|设置笔或填写颜色| [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0, 4.0.0 |[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)和[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)是API 4.0.0|
-|设置笔宽度| [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
-|清除可拉的区域| N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
-|绘制一个位图| [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | 不适用 | 1.0.0 |  |
-|绘制一个位图| [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | 不适用 | 4.2.0 |  |
-|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 不适用 | 1.0.0 |只有使用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)|
-|绘制一个像素| [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | 不适用 | 1.0.0 |  |
-|绘制一个线| [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | 不适用 | 1.0.0 |  |
-|绘制一个圆| [Dc.drawCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawCircle-instance_function) | [Dc.fillCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillCircle-instance_function) | 1.0.0 |  |
-|绘制一个圆| [Dc.drawEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawEllipse-instance_function) | [Dc.fillEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillEllipse-instance_function) | 1.0.0 |  |
-|绘制一个矩形| [Dc.drawRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRectangle-instance_function) | [Dc.fillRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRectangle-instance_function) | 1.0.0 |  |
-|绘制一个圆形矩形| [Dc.drawRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRoundedRectangle-instance_function) | [Dc.fillRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRoundedRectangle-instance_function) | 1.0.0 |  |
-|画一个弧| [Dc.drawArc()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawArc-instance_function) | N/A | 1.0.0 |  |
-|绘制一个多边形| N/A | [Dc.fillPolygon()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillPolygon-instance_function) | 1.0.0 |  |
-|设置剪辑区域| [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) | N/A | 2.3.0 |  |
+| 设置画笔或填充颜色 | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)、[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 1.0.0、4.0.0 | [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) 和 [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) 从 API 4.0.0 起可用 |
+| 设置画笔宽度 | [Dc.setPenWidth()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setPenWidth-instance_function) | N/A | 1.0.0 |  |
+| 清除可绘制区域 | N/A | [Dc.clear()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clear-instance_function) | 1.0.0 |  |
+| 绘制位图 | [Dc.drawBitmap()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap-instance_function) | N/A | 1.0.0 |  |
+| 绘制位图 | [Dc.drawBitmap2()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawBitmap2-instance_function) | N/A | 4.2.0 |  |
+| 绘制文本字符串 | [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | N/A | 1.0.0 | 仅使用 [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) |
+| 绘制像素 | [Dc.drawPoint()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawPoint-instance_function) | N/A | 1.0.0 |  |
+| 绘制线条 | [Dc.drawLine()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawLine-instance_function) | N/A | 1.0.0 |  |
+| 绘制圆 | [Dc.drawCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawCircle-instance_function) | [Dc.fillCircle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillCircle-instance_function) | 1.0.0 |  |
+| 绘制椭圆 | [Dc.drawEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawEllipse-instance_function) | [Dc.fillEllipse()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillEllipse-instance_function) | 1.0.0 |  |
+| 绘制矩形 | [Dc.drawRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRectangle-instance_function) | [Dc.fillRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRectangle-instance_function) | 1.0.0 |  |
+| 绘制圆角矩形 | [Dc.drawRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRoundedRectangle-instance_function) | [Dc.fillRoundedRectangle()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillRoundedRectangle-instance_function) | 1.0.0 |  |
+| 绘制弧线 | [Dc.drawArc()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawArc-instance_function) | N/A | 1.0.0 |  |
+| 绘制多边形 | N/A | [Dc.fillPolygon()](/connect-iq/api-docs/Toybox/Graphics/Dc/#fillPolygon-instance_function) | 1.0.0 |  |
+| 设置裁剪区域 | [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) | N/A | 2.3.0 |  |
 
-采用[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)方法可以设置前景和背景绘画颜色.颜色被传输到[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)作为24位颜色的形式0xRRGGBB.在设置颜色时,设备会选择系统上最接近可用的颜色.
+使用 [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) 可以设置前景和背景绘图颜色。传给 [Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) 的颜色是 `0xRRGGBB` 形式的 24 位颜色。设置颜色时，设备会选择系统中最接近的可用颜色。
 
-采用[Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function)方法,可以为[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象设置剪辑区域.用于设置该区域,指定左上角坐标,宽度和高度.该区域以外的所有像素都不会受到任何绘图操作的影响.该区域内的像素将正常更新.[Dc.clearClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clearClip-instance_function)方法将删除剪辑区域.
+使用 [Dc.setClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setClip-instance_function) 可以为 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 设置裁剪区域。指定左上角坐标、宽度和高度即可设置区域。区域外的像素不受绘图操作影响，区域内的像素会正常更新。[Dc.clearClip()](/connect-iq/api-docs/Toybox/Graphics/Dc/#clearClip-instance_function) 会移除裁剪区域。
 
 ## 字符串和字体
 
-文字可以使用[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)方法绘制.[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象还可用方法获取一个字体字符串的文字宽度和高度.请注意,在[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/)对象之外的图形模块中也可使用文本尺寸方法.
+可以使用 [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) 绘制文本。[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 对象还提供使用指定字体获取文本宽度和高度的方法。请注意，Graphics 模块中也提供了 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 之外的文本尺寸方法。
 
 | 操作 | 函数 | API 级别 |
 | --- | --- | --- |
-|绘制一个文本字符串| [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
-|绘制一个角度的文本| [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
-|绘制一个弧线的文本| [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) | 4.2.2 |
-|获取一个字体字符串的宽度和高度| [Dc.getTextDimensions()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextDimensions-instance_function) | 1.0.0 |
-|获取一个字体字符串的宽度| [Dc.getTextWidthInPixels()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextWidthInPixels-instance_function) | 1.0.0 |
-|获取给定的字体的高度| [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function)、[Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0, 1.2.0 |
-|获取给定的字体的升| [Graphics.getFontAscent()](/connect-iq/api-docs/Toybox/Graphics/#getFontAscent-instance_function) | 1.2.0 |
-|获取给定的字体的下降| [Graphics.getFontDescent()](/connect-iq/api-docs/Toybox/Graphics/#getFontDescent-instance_function) | 1.2.0 |
-|检索系统向量字体| [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) | 4.2.2 |
+| 绘制文本字符串 | [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) | 1.0.0 |
+| 按角度绘制文本 | [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) | 4.2.2 |
+| 沿弧线方向绘制文本 | [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) | 4.2.2 |
+| 获取指定字体文本的宽度和高度 | [Dc.getTextDimensions()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextDimensions-instance_function) | 1.0.0 |
+| 获取指定字体文本的宽度 | [Dc.getTextWidthInPixels()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getTextWidthInPixels-instance_function) | 1.0.0 |
+| 获取指定字体的高度 | [Dc.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/Dc/#getFontHeight-instance_function)、[Graphics.getFontHeight()](/connect-iq/api-docs/Toybox/Graphics/#getFontHeight-instance_function) | 1.0.0、1.2.0 |
+| 获取指定字体的上升高度 | [Graphics.getFontAscent()](/connect-iq/api-docs/Toybox/Graphics/#getFontAscent-instance_function) | 1.2.0 |
+| 获取指定字体的下降高度 | [Graphics.getFontDescent()](/connect-iq/api-docs/Toybox/Graphics/#getFontDescent-instance_function) | 1.2.0 |
+| 获取系统矢量字体 | [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function) | 4.2.2 |
 
 ### 可缩放字体
 
@@ -55,7 +55,7 @@ Garmin 设备的字体支持可能因设备而异。所有设备都支持单码�
 
 要访问可扩展字体，可以使用设备参考中的名称调用 [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function)，并将结果作为 `:face` 参数。`:face` 也接受字体名称数组，因此可以指定备用字体；如果设备不支持首选字体，系统会尝试后续字体。还可以指定以像素为单位的字体大小。
 
-可扩展字体与[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)工作,但也可以与[Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function)和[Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function)使用.这些API只支持可扩展字体,并且不支持作为资源加载的自定义字体.
+可缩放字体可与 [Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function) 配合使用，也可以与 [Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function) 和 [Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function) 配合使用。这些 API 只支持可缩放字体，不支持作为资源加载的自定义字体。
 
 ## 抗锯齿
 
@@ -76,15 +76,15 @@ function draw(dc) {
 
 *自 API 级别 4.0.0*
 
-增添一些强大的新工具到[Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/):
+API level 4.0.0 为 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 增加了强大的新工具：
 
 | 函数 | 目的 | 接受的参数 | API 级别 |
 | --- | --- | --- | --- |
-| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) |设置填充工具来绘制原始.| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
-| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) |设置笔工具来绘制原始| [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
-| [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) |设置绘图混合模式|  | 4.0.0 |
+| [Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) | 设置用于绘制图元的填充工具 | [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) | 设置用于绘制图元的画笔工具 | [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type)、[Graphics.BitmapTexture](/connect-iq/api-docs/Toybox/Graphics/BitmapTexture/) | 4.0.0 |
+| [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) | 设置绘图混合模式 |  | 4.0.0 |
 
-之前,[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function)API允许根据24位RRGGBB值设置前景或背景颜色.[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)和[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)都接受32位AARRGGBB值,允许您提供RGB值的阿尔法频道值.[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function)API允许设置笔工具,而[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function)设置填充工具.
+之前，[Dc.setColor()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setColor-instance_function) API 根据 24 位 `RRGGBB` 值设置前景或背景颜色。[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) 和 [Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) 都接受 32 位 `AARRGGBB` 值，因此可以在 RGB 值中提供 alpha 通道。[Dc.setStroke()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setStroke-instance_function) API 用于设置 Dc 的画笔工具，[Dc.setFill()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setFill-instance_function) 用于设置填充工具。
 
 您还可以使用 [Dc.setBlendMode()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setBlendMode-instance_function) 设置混合模式。默认情况下，系统会将您的颜色与当前正在绘制的内容混合。不过，您可以使用 `BLEND_MODE_NO_BLEND` 直接设置 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的颜色和 alpha。也可以使用 `BLEND_MODE_ADDITION` 将混合结果添加到正在绘制的通道。
 
