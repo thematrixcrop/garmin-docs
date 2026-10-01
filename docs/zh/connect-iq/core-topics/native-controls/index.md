@@ -354,17 +354,17 @@ class DataFieldDelegate extends Ui.InputDelegate {
 
 如果希望数据字段在特定事件发生时通知用户，可以推入一个继承 [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) 的视图。[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) 是 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 的特殊实例，可通过 [DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function) 呈现给用户。Alert 不接收输入，并会在标准提示时长后超时。用户必须在活动警报设置中为应用启用警报。
 
-## 映射
+## 地图
 
 *自 API 级别 3.0.0*
 
 Connect IQ 允许开发者在配备内置地图的产品上，将地图视图嵌入应用。地图功能有两种访问方式：[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 和 [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)。
 
-### MapViews
+### MapView
 
-[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)类像其他任何[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)类一样推进,但具有一些独特的特性.即,[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)对象为您提供了一个设备内载地图的特定部分的染.[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)对象允许您使用两点类型来选择一个地图的部分.
+[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 类的推入方式与其他 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 类相同，但具有一些独特特性。具体来说，[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 对象可以渲染设备内置地图的指定区域。你可以使用两个 `Position.Location` 点来选择地图中需要关注的区域。
 
-基本[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)的设置如下:
+下面是基本 [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 的设置：
 
 ```cpp
 import Toybox.WatchUi;
@@ -394,50 +394,50 @@ class MyMapView extends MapView {
 }
 ```
 
-让我们稍微分析一下,来了解视图本身:
+下面逐项说明这些调用的作用：
 
 MapView.initialize()
 
-建议设置MapView的参数在`initialize()`函数中,如图.
+建议像示例一样，在 `initialize()` 函数中设置 MapView 的参数。
 
 MapView.setMapVisibleArea()
 
-这种方法将`top_left`和`bottom_right`参数作为`Position.Location`对象.这两个位置创建了一个边界框,定义了地图的视角区域,这些区域是最初地图染上必须显示的最左上和右下`Location`对象.概念上,这将自己变成一个矩形部分的地图,必须集中在地图 Map视图的初始染上.
+此方法接收 `Position.Location` 类型的 `top_left` 和 `bottom_right` 参数。这两个位置构成一个边界框，定义初始渲染时必须显示的地图区域，也就是地图视图中最左上和最右下的 `Location`。从概念上说，它指定了初始渲染时需要聚焦的矩形地图区域。
 
 MapView.setScreenVisibleArea()
 
-MapViews允许开发人员在顶部叠加UI项目.有时你希望整个屏幕具有地图图像,但有时你会想将显示器分为地图和UI元素.如果你希望地图区域不成为屏幕的中心,你可以使用这种方法来定义矩形区域.这种方法决定了`setMapVisibleArea()`调用中定义的地图的矩形区域应呈现的矩形区域.这里有一个图形来帮助说明蓝色矩形代表地图区域和红色矩形代表屏幕区域的关系.
+MapView 允许在地图上叠加 UI 元素。有时需要让地图铺满整个屏幕，有时则需要在地图旁显示其他 UI。如果地图区域不应占据屏幕中央，可以使用此方法定义矩形区域。该矩形决定了 `setMapVisibleArea()` 指定的地图区域将在屏幕的哪个区域渲染。下图中，蓝色矩形表示地图区域，红色矩形表示屏幕区域。
 
-图5.地图区与屏幕区之间的关系的说明
+图 5：地图区域与屏幕区域的关系
 
 ![地图区域与屏幕区域之间关系的示例](/connect-iq/resources/programmers-guide/MappingDiagram.png)
 
 MapView.setMapMode()
 
-这个调用设置地图模式为`MAP_MODE_*`enum值之一.
+此调用将地图模式设置为某个 `MAP_MODE_*` 枚举值。
 
 MapView 和 MapTrackView 有两种模式：
 
-- **预览:** 用`MAP_MODE_PREVIEW`enum值选择. 这允许在屏幕上染一个不动地图.
+- **预览**：使用 `MAP_MODE_PREVIEW` 枚举值选择。此模式会在屏幕上渲染不可移动的地图。
 
-- **浏览:** 用`MAP_MODE_BROWSE`enum值进行选择.这种模式允许用户使用系统默认控制来放大,浏览和移动地图.
+- **浏览**：使用 `MAP_MODE_BROWSE` 枚举值选择。此模式允许用户使用系统默认控件缩放、平移和移动地图。
 
 
 ### MapTrackView
 
-MapTrackView在所有方面都与MapView相似,除了一个.MapTrackView将动态显示设备在屏幕上的活跃位置.
+MapTrackView 与 MapView 基本相同，但会在屏幕上动态渲染设备的当前位置。
 
-查看与SDK共享的`MapSample`样本应用.
+更多信息请参阅 SDK 随附的 `MapSample` 示例应用。
 
-### 映射伪影
+### 地图图形
 
-图可以添加语境与你的内容,但只有如果你能把它们结合在一起.幸运的是,不仅可以访问原生地图,你也可以从它们中绘制!子C有两个新的对象与图表互动:[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)和[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/).
+地图可以为内容提供上下文，而将两者结合使用才能发挥作用。除了访问设备原生地图，还可以在地图上绘制内容。Monkey C 提供了两个用于与地图交互的新对象：[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 和 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)。
 
 #### MapPolyline
 
-[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象允许开发人员在MapView映射图上绘制多个位置点的线.只允许一个[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象在视图中.
+[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象可以在 MapView 渲染的地图上连接多个位置点并绘制线条。一个视图中只能有一个 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象。
 
-以下是[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的一个例子,有四个点:
+下面是一个包含四个点的 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 示例：
 
 ```cpp
     // Initialize a new MapPolyline object
@@ -483,31 +483,31 @@ MapTrackView在所有方面都与MapView相似,除了一个.MapTrackView将动�
     MapView.setPolyline(polyline);
 ```
 
-new WatchUi.MapPolyline
+### new WatchUi.MapPolyline
 
-这会创建一个新的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象.
+这会创建一个新的 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象。
 
 setColor()
 
-设置[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的颜色为`COLOR_*`enum值.
+使用 `COLOR_*` 枚举值设置 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 的颜色。
 
 setWidth()
 
-设置用于绘制[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)的笔宽度.
+设置绘制 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 时使用的像素笔宽。
 
 addLocation()
 
-这种方法取一个对象,并将其添加到`Array`的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象中.这些位置构成绘制图上包含[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)表示的线路的点.
+此方法接收一个 `Position.Location` 对象，并将其添加到 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 的位置数组中。这些位置点共同组成地图上绘制折线的路径。
 
 MapView.setPolyline()
 
-这设置MapPolyline对象将在[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)或[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)的地图上呈现 . 在本例中,它使用存储为`polyline`的[WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/)对象 .
+此方法将 MapPolyline 对象设置为在 [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 或 [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/) 的地图上渲染。本例使用存储在 `polyline` 中的 [WatchUi.MapPolyline](/connect-iq/api-docs/Toybox/WatchUi/MapPolyline/) 对象。
 
 #### MapMarker
 
-[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象将对象与BitmapResource结合起来,以创建一个标记,将在地图上绘制.在[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象中使用的每个Bitmap图像将有一个"热点"为图像.热点是图像的点,将在[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)所提供的宽度和长度上绘制.
+[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象将一个位置与 BitmapResource 结合，创建可绘制在地图上的标记。每个位图都有一个“热点”，表示该图像中应放置在 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 指定纬度和经度上的点。
 
-以下是[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象的简单实现:
+下面是一个简单的 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 实现：
 
 ```cpp
     // Initialize a map marker with a Location object
@@ -535,27 +535,27 @@ MapView.setPolyline()
     MapView.setMapMarker(defaultMarker);
 ```
 
-让我们看看上面的代码来更好地了解API.
+下面逐项说明示例中的 API：
 
-new WatchUi.MapMarker
+### new WatchUi.MapMarker
 
-[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)对象被传递给`Location`对象的初始化.这是Bitmap资源的`MapMarker`热点被绘制的点.
+创建 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 时传入 `Location` 对象。该位置就是 BitmapResource 的 MapMarker 热点要绘制到的点。
 
 bitmapMarker.setIcon(WatchUi.loadResource(Rez.Drawables.MapPin), 12, 24)
 
-这个调用设置了[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)的标志,称为`bitmapMarker`的位地图资源`Rez.Drawables.MapPin`.热点设置为`12`的位地图的`x`坐标和`24`的`y`坐标的`MapPin`标志.
+此调用将名为 `bitmapMarker` 的 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 图标设置为位图资源 `Rez.Drawables.MapPin`。热点设为该 MapPin 位图的 `x = 12`、`y = 24`。
 
 setLabel()
 
-设置将[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)图标在映射地图上显示的标签.
+设置地图上显示的 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 图标标签。
 
 defaultMarker.setIcon(WatchUi.MAP\_MARKER\_ICON\_PIN, 0, 0)
 
-当设置图标时,这个[WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/)使用`MAP_MARKER_ICON_PIN`enum值,并使用系统默认图标记地图上的点.请注意,为热点`x, y`提供的值分别是`0, 0`.使用默认图标时,系统处理热点管理.
+设置图标时，此 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 使用 `MAP_MARKER_ICON_PIN` 枚举值，即系统默认的地图标记图标。这里为热点提供的 `x`、`y` 值分别为 `0`、`0`；使用默认图标时，热点由系统管理。
 
 setMapMarker()
 
-该方法接收一个 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象并将其设置到地图上。在此示例中，只有 `defaultMarker` 会绘制到地图上。不过，也可以将多个 MapMarker 对象放入 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 中进行设置。例如：
+此方法接收一个 [WatchUi.MapMarker](/connect-iq/api-docs/Toybox/WatchUi/MapMarker/) 对象，并将其设置为地图上的标记。本例只绘制 `defaultMarker`，但也可以将多个 MapMarker 对象放入 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 后一次设置。例如：
 
 ```cpp
 // Create an Array to hold the MapMarker objects
@@ -571,17 +571,17 @@ MapView.setMapMarker(markers);
 
 ### 模拟地图
 
-在模拟器中的地图工作时,Connect IQ使用网络API来检索地图图图像,模拟设备上的行为.模拟器和设备上映射覆盖范围因设备上映射而异.以下是模拟器的详细覆盖地图:
+在模拟器中使用地图时，Connect IQ 会通过 Web API 获取地图图像，以模拟设备上的行为。模拟器和设备上的地图覆盖范围可能不同，因为设备上的地图取决于具体设备及其可用地图。下面是模拟器的详细覆盖范围：
 
--   **绿色：低细节**
+-   **绿色**：低细节
 
--   **蓝色：中等细节**
+-   **蓝色**：中等细节
 
--   **红色：高细节**
+-   **红色**：高细节
 
 
-图6. 在Connect IQ模拟器上可用的详细地图
+图 6：Connect IQ 模拟器中的地图详细程度
 
 ![Connect IQ 模拟器的详细地图覆盖范围指南](/connect-iq/resources/programmers-guide/MapCoverage.png)
 
-目前,图形标题仅通过在`Menu2`中编程创建`MenuItem`元素来支持.将标题定义为可绘制资源将导致编译器错误.
+目前，只有通过代码在 `Menu2` 中创建 `MenuItem` 元素时，才支持图形标题。将标题定义为可绘制资源会导致编译器错误。
