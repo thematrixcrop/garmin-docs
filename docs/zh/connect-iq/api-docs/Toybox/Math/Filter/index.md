@@ -16,9 +16,9 @@ Toybox.Lang.Object
 
 ## 概述
 
-这是筛选器的基类。
+Filter 是滤波器的基类。
 
-过滤器是用于移除信号或数据集中的某些不需要的成分或特征的设备或过程。有关过滤器的更多详细示例，请参阅 [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) 和 [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) 定义。
+滤波器是用于移除信号或数据集中不需要的成分或特征的设备或处理过程。更详细的示例请参阅 [FirFilter](/connect-iq/api-docs/Toybox/Math/FirFilter/) 和 [IirFilter](/connect-iq/api-docs/Toybox/Math/IirFilter/) 的定义。
 
 ## 另见：
 
@@ -27,11 +27,11 @@ Toybox.Lang.Object
 
 注意：
 
-如果调用此方法的基础 Filter 类版本，将引发异常。
+如果调用 Filter 基类中此方法的实现，将抛出异常。
 
 示例：
 
-此项展示了如何对一组数据使用筛选器的方法
+演示如何调用滤波器方法处理一组数据。
 
 ```
 using Toybox.Math;
@@ -77,7 +77,7 @@ API 级别 2.3.0
 
 - [**apply**](#apply-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>) as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
-    将过滤器应用于样本数组。
+    对样本数组应用滤波器。
 
 - [**initialize**](#initialize-instance_function)(dictionary as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/))
 
@@ -88,11 +88,11 @@ API 级别 2.3.0
 
 ### **apply(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Numeric](/connect-iq/api-docs/Toybox/Lang/#Numeric-named_type)\>)** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)\>
 
-将过滤器应用于样本数组。
+对样本数组应用滤波器。
 
 注意：
 
-如果调用此方法的基础 Filter 类版本，将引发 Exception。
+如果调用 Filter 基类中此方法的实现，将抛出 Exception。
 
 参数：
 
