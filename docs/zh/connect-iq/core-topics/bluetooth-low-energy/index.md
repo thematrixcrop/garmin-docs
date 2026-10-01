@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Connect IQ BLE Development"
+title: "开始 Connect IQ BLE 开发"
 ---
 <a id="getting-started-with-connect-iq-ble-development"></a>
 # 开始 Connect IQ BLE 开发
