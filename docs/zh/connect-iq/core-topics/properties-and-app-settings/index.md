@@ -213,4 +213,4 @@ Connect IQ Simulator 提供应用设置编辑工具。打开 *File > Edit Persis
 
 如果要为表盘或数据字段提供设备端设置 UI，可以实现 [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)。它的工作方式类似于 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：返回一对 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 和 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)，分别作为视图和输入委托。
 
-用户可以在系统的 Watch Face 菜单中配置表盘，也可以从活动菜单中配置数据字段。
+用户可以在系统的表盘菜单（Watch Face）中配置表盘，也可以从活动菜单中配置数据字段。
