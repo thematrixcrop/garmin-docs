@@ -178,7 +178,7 @@ API 级别 2.4.0
 
 - listener — ([AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/)) —
 
-    运行 dynamics 实例时，可以选择将 [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
+    运行跑步动态实例时，可以选择将 [RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) 类的扩展作为参数传入。如果用户计划仅使用 get\* 方法轮询数据，也可以传入 `null`。
 
 
 起始版本：
