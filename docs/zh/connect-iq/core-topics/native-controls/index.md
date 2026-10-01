@@ -362,7 +362,7 @@ Connect IQ 允许开发者在配备内置地图的产品上，将地图视图嵌
 
 ### MapView
 
-[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 类的推入方式与其他 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 类相同，但具有一些独特特性。具体来说，[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 对象可以渲染设备内置地图的指定区域。你可以使用两个 `Position.Location` 点来选择地图中需要关注的区域。
+[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 类的推入方式与其他 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 类相同，但具有一些独特特性。具体来说，[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 对象可以渲染设备内置地图的指定区域。您可以使用两个 `Position.Location` 点来选择地图中需要关注的区域。
 
 下面是基本 [WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 的设置：
 
