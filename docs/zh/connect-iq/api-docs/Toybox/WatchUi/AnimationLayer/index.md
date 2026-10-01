@@ -292,7 +292,7 @@ API 级别 3.1.0
 停止正在播放的动画。
 
 ```
-  The last frame of the animation will be persisted in the frame buffer.
+  动画的最后一帧将保留在帧缓冲区中。
 ```
 
 起始版本：
