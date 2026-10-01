@@ -1,5 +1,5 @@
 ---
-title: "Graphics"
+title: "图形"
 ---
 # 图形
 
