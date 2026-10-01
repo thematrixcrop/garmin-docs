@@ -1,13 +1,14 @@
 ---
-title: "Unit 测试"
+title: "Unit Testing"
 ---
-# Unit 测试
+<a id="unit-testing"></a>
+# 单元测试
 
-连接智商SDK有 Run No Evil,这是测试模块中发现的自动化单元测试框架. Run No Evil仅在 Connect IQ模拟器内运行,并为您的应用程序提供添加断言和单元测试方法的能力.
+Connect IQ SDK 在 Test 模块中提供了 Run No Evil 自动化单元测试框架。Run No Evil 只能在 Connect IQ Simulator 中运行，可用于向应用添加断言和单元测试方法。
 
 ## 断言
 
-断言是检查代码的关键点条件的有用方法,并且在模拟器中启动应用时将始终执行.例如,如果你的应用程序总是期望x和y的值不等:
+断言可以在代码的关键位置检查条件，并且每次在 Simulator 中启动应用时都会执行。例如，如果应用始终要求 `x` 和 `y` 的值不相等，可以这样写：
 
 ```typescript
 import Toybox.Test;
@@ -20,7 +21,7 @@ function onShow() {
 }
 ```
 
-当应用程序在模拟器中运行时,上面的代码会产生下列输出:
+在 Simulator 中运行应用时，上面的代码会在控制台输出：
 
 ```bash
 Device Version 0.1.0
@@ -29,29 +30,29 @@ Shell Version 0.1.0
 ASSERTION FAILED: x and y are equal!
 ```
 
-断言代码不需要在模拟器内执行任何特殊的编译命令,并且在构建发布代码时被编译器删除. 运行无恶有四种不同的断言口味:
+在 Simulator 中执行断言代码不需要特殊的编译器命令；构建发布代码时，编译器会移除断言代码。Run No Evil 提供四种断言形式：
 
-| Function |描述|
+| Function | Description |
 | --- | --- |
-| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该断言会产生例外|
-| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) |如果测试是错误的,该声明会产生异常,并输出信息.|
-| [Test.assertNotEqual()](/connect-iq/api-docs/Toybox/Test/#assertNotEqual-instance_function) |如果值1和值2不等等,则抛出例外|
-| [Test.assertNotEqualMessage()](/connect-iq/api-docs/Toybox/Test/#assertNotEqualMessage-instance_function) |如果值1和值2不等等,则会抛出一个例外并输出一个消息|
+| [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) | 测试结果为 false 时抛出异常 |
+| [Test.assertMessage()](/connect-iq/api-docs/Toybox/Test/#assertMessage-instance_function) | 测试结果为 false 时抛出异常并输出消息 |
+| [Test.assertNotEqual()](/connect-iq/api-docs/Toybox/Test/#assertNotEqual-instance_function) | `value1` 和 `value2` 相等时抛出异常 |
+| [Test.assertNotEqualMessage()](/connect-iq/api-docs/Toybox/Test/#assertNotEqualMessage-instance_function) | `value1` 和 `value2` 相等时抛出异常并输出消息 |
 
 ## 单元测试
 
-单元测试是检查您的应用程序的分别部分通过/失败标准的好方法.每个测试都是独立运行的,所以如果测试失败或导致崩,测试将被标记为失败的测试,下一次测试将自动执行.这允许使用单个命令自动运行整个测试组.
+单元测试适合根据通过或失败的标准检查应用中的独立代码片段。每项测试都会独立运行；如果某项测试失败或导致崩溃，该测试会标记为失败，下一项测试仍会自动执行。因此，只需一个命令就能自动运行完整的测试套件。
 
-单元测试主要与子C中任何其他类,模块或函数一样,但具有以下要求:
+Monkey C 中的单元测试大体上与其他类、模块或函数的写法相同，但必须满足以下要求：
 
-- 测试方法必须标记为`:test`注释
+-   测试方法必须使用 `:test` 注解标记。
 
-- 测试方法必须采用[Test.Logger](/connect-iq/api-docs/Toybox/Test/Logger/)对象
+-   测试方法必须接收一个 [Test.Logger](/connect-iq/api-docs/Toybox/Test/Logger/) 对象。
 
-- 不是全球性的测试方法 (作为测试类或定制测试模块的一部分) 必须是静态方法
+-   非全局测试方法（属于测试类或自定义测试模块的方法）必须是静态方法。
 
 
-以下是一个单元测试方法的简单例子:
+下面是一个简单的单元测试方法示例：
 
 ```typescript
 // Unit test to check if 2 + 2 == 4
@@ -62,7 +63,7 @@ function myUnitTest(logger as Logger) as Boolean {
 }
 ```
 
-单元测试包含一个便捷的日志记录器，并提供不同日志级别以生成更有意义的错误报告。上面的示例代码使用“debug”日志级别，但 Logger 总共提供三个日志级别，可用于区分单元测试输出中的不同错误类型：
+单元测试提供了一个包含多个日志级别的 Logger，可以生成更有用的错误报告。上面的示例使用了 `debug` 日志级别；Logger 总共提供三个日志级别，用于区分单元测试输出中的不同错误类型：
 
 -   [Logger.debug()](/connect-iq/api-docs/Toybox/Test/Logger/#debug-instance_function)
 
@@ -71,19 +72,19 @@ function myUnitTest(logger as Logger) as Boolean {
 -   [Logger.error()](/connect-iq/api-docs/Toybox/Test/Logger/#error-instance_function)
 
 
-虽然单元测试在程序源代码中定义,但它们不包含在调试或释放执行式中.
+虽然单元测试定义在程序源代码中，但它们不会包含在调试版或发布版可执行文件中。
 
-###从子C扩展的运行单元测试
+### 从 Monkey C 扩展运行单元测试
 
-子C扩展测试探险器为您的应用程序执行单元测试提供了强大的用户界面.您可以通过点击左边的测试管图标启动测试探险器.当您启动测试探险器时,它将列出所有测试在代码中,并按它们属于的模块和类别列出它们.您可以通过右键点击一个元素并选择 *配置设备*来配置您想测试的产品.
+Monkey C 扩展中的 Test Explorer 提供了一个强大的界面，用于执行应用的单元测试。点击左侧的试管图标即可打开 Test Explorer。启动 Test Explorer 后，它会枚举代码中的所有测试，并按所属模块和类列出。右键点击某个元素并选择 *Configure Devices*，即可配置要测试的产品。
 
-按一下列表元素的播放按将运行该测试或该元素所包含的测试集合.测试输出将转向终端部分旁边的*测试结果* tabb.
+点击列表元素上的播放按钮，可以运行该测试或该元素包含的测试集合。测试输出会显示在终端区域旁边的 *Test Results* 标签页中。
 
-####从指挥线执行单位测试
+### 从命令行运行单元测试
 
-如果您想在应用程序上运行单元测试,请使用构建命令上的`--unit-test`旗构建该应用程序,以编译单元测试.通常最容易将构建命令从视觉工作室代码控制台复制和粘贴,并添加单元测试旗.然后使用 SDK 的垃圾桶目录中的`connectiq`脚本来从终端启动模拟器 (不需要参数),并使用 SDK 的垃圾桶目录中的`monkeydo`脚本,以`/t`旗运行该应用程序,启用单元测试 -`monkeydo.bat path\to\projects\bin\MyApp.prg /t`
+如果要运行应用的单元测试，请在构建命令中加入 `--unit-test` 标志，以包含单元测试进行编译。通常可以直接从 Visual Studio Code 控制台复制构建命令，再添加该标志。然后，在 SDK 的 `bin` 目录中使用 `connectiq` 脚本从终端启动 Simulator（无需参数），并在同一目录中使用带 `/t` 标志的 `monkeydo` 脚本运行应用，以启用单元测试：`monkeydo.bat path\to\projects\bin\MyApp.prg /t`
 
-您也可以在`/t`之后提供一个函数名称,以运行与单个函数相关的测试.上面的样本单元测试在控制台中产生以下输出:
+也可以在 `/t` 后提供函数名，以运行与单个函数关联的测试。上面的单元测试示例会在控制台输出：
 
 ```bash
 Device Version 0.1.0
@@ -103,6 +104,6 @@ Connection Finished
 Closing shell and port
 ```
 
-如果你想在[monkey barrel](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)中运行测试,你可以使用`barreltest`脚本.它支持[same options](/connect-iq/monkey-c/compiler-options/#compiler-options)作为编译器,但可以输出一个可以被测试系统使用的PRG.
+如果要运行 [Monkey Barrel](/connect-iq/core-topics/shareable-libraries/#shareable-libraries) 中的测试，可以使用 `barreltest` 脚本。它支持与编译器相同的 [选项](/connect-iq/monkey-c/compiler-options/#compiler-options)，但可以输出供测试系统使用的 PRG。
 
-除非编译器明确被告知运行单元测试,否则单元测试代码不会执行.所有测试代码都会在编译时自动删除,当您的应用程序出口用于设备上使用时.
+除非明确告知编译器运行单元测试，否则单元测试代码不会执行。应用导出到设备使用版本时，所有测试代码都会在编译时自动移除。
