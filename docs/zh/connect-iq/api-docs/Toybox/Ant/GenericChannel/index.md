@@ -64,7 +64,7 @@ API 级别 1.0.0
 
 - [**sendBurst**](#sendBurst-instance_function)(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/)) as **Void**
 
-    将 [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
+    将 [消息](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
 
 - [**setBurstListener**](#setBurstListener-instance_function)(listener as [Ant.BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/)) as **Void**
 
@@ -657,7 +657,7 @@ API 级别 1.0.0
 
 ### **sendBurst(burstData as [Ant.BurstPayload](/connect-iq/api-docs/Toybox/Ant/BurstPayload/))** as **Void**
 
-将 [Messages](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
+将 [消息](/connect-iq/api-docs/Toybox/Ant/Message/) 的 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 作为突发数据通过 ANT 通道发送。
 
 [BurstListener](/connect-iq/api-docs/Toybox/Ant/BurstListener/) 会收到成功或失败结果。
 
