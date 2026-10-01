@@ -13,7 +13,7 @@ title: "如何让表盘每秒更新？"
 
 对于更复杂的图形，可以将资源渲染到一个或多个 `BufferedBitmap` 对象中，再将其作为单个对象复制到屏幕上，以重绘背景像素。应在 `onUpdate()` 期间完成 `BufferedBitmap` 的渲染，因为它不受 `onPartialUpdate()` 的执行时间限制。
 
-SDK 示例中的 Analog watch face 展示了如何实现每秒更新的表盘。
+SDK 示例中的 Analog 表盘展示了如何实现每秒更新的表盘。
 
 ```java
 module WatchUi
