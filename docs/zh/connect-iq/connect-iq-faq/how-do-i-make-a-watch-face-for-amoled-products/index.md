@@ -1,5 +1,5 @@
 ---
-title: "How do I Make a Watch Face for AMOLED Products?"
+title: "如何为 AMOLED 产品制作表盘？"
 ---
 # 如何为 AMOLED 产品制作表盘？
 
