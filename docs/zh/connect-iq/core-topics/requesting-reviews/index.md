@@ -1,39 +1,37 @@
 ---
 title: "Requesting Reviews"
 ---
+<a id="requesting-reviews"></a>
 # 请求评价
 
-作为开发者，您希望用户在拥有积极体验后评价您的应用。理想情况下，这应该是一个低摩擦的体验，以最大化留下正面评价的用户数量。
+作为开发者，你希望用户在获得良好体验后评价应用。理想情况下，评价流程应尽量简单，帮助更多用户留下正面评价。
 
-对于兼容的设备，留下评价的步骤如下：
+在兼容设备上，用户留下评价的流程如下：
 
--   请求评价令牌
-
--   从商店接收令牌
-
--   启动评价流程
-
+- 请求评价令牌
+- 从商店接收令牌
+- 启动评价流程
 
 ## 请求评价令牌
 
-为了防止骚扰用户，应用必须向应用商店请求执行评价请求的权限。应用商店验证多个因素，包括您是否最近向用户请求过评价，以及用户是否正在使用应用的最新版本。令牌请求可以通过 [WatchUi.makeReviewTokenRequest()](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function) 调用发出。此调用是异步的，您必须为此调用提供 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 回调以捕获响应。
+为了避免打扰用户，应用必须先向应用商店请求发起评价的许可。应用商店会检查多个条件，包括你是否近期已经向用户请求过评价，以及用户是否使用应用的最新版本。可以调用 [WatchUi.makeReviewTokenRequest()](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function) 请求令牌。该调用是异步的，必须传入 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 回调来接收响应。
 
 ## 接收令牌
 
-当服务器响应您的评价请求时，您的回调将被调用并带有服务器响应代码和可选的评价令牌。响应代码如下：
+服务器响应评价请求后，系统会调用回调，并传入服务器响应代码以及可能存在的评价令牌。响应代码如下：
 
-| 响应 | 描述 | API 级别 |
+| 响应 | 说明 | API 级别 |
 | --- | --- | --- |
-| REVIEW_REQUEST_STATUS_GRANTED | 请求已获批准，且已提供令牌 | 4.2.0 |
-| REVIEW_REQUEST_STATUS_DENIED | 用户不符合评价要求 | 4.2.0 |
-| REVIEW_REQUEST_STATUS_FAILED | 目前无法进行评价请求 | 4.2.0 |
+| `REVIEW_REQUEST_STATUS_GRANTED` | 请求已获批准，并已提供令牌 | 4.2.0 |
+| `REVIEW_REQUEST_STATUS_DENIED` | 用户不满足评价条件 | 4.2.0 |
+| `REVIEW_REQUEST_STATUS_FAILED` | 当前无法发起评价请求 | 4.2.0 |
 
-如果您收到令牌，它应该在当天有效。
+如果收到令牌，该令牌应在当天有效。
 
-## 请求评价
+## 发起评价
 
-当您准备好让用户评价应用时，您可以使用 [WatchUi.startUserReview()](/connect-iq/api-docs/Toybox/WatchUi/#startUserReview-instance_function) 配合令牌响应中的有效令牌。这将使用户进入评价流程。
+准备好让用户评价应用时，可以将令牌响应中的有效令牌传给 [WatchUi.startUserReview()](/connect-iq/api-docs/Toybox/WatchUi/#startUserReview-instance_function)。该调用会将用户带入评价流程。
 
-## 提示
+## 建议
 
-跟踪用户的正面和负面体验，仅当用户对应用有总体正面体验时才请求评价。骚扰用户留下正面评价可能导致他们留下负面评价，这会违背请您评价应用的初衷。
+关注用户的正面和负面体验，仅在用户对应用总体满意时请求评价。反复打扰用户要求留下正面评价，可能导致用户留下负面评价，反而违背请求评价的初衷。
