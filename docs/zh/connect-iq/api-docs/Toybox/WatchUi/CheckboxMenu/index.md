@@ -293,7 +293,7 @@ API 级别 3.0.0
 
 - ([WatchUi.InvalidMenuItemTypeException](/connect-iq/api-docs/Toybox/WatchUi/InvalidMenuItemTypeException/)) —
 
-    Thrown if item is not a \[Toybox::WatchUi::CheckboxMenuItem\]
+    如果 item 不是 \[Toybox::WatchUi::CheckboxMenuItem\]，则抛出此异常
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
