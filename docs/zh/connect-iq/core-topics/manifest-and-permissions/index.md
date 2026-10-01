@@ -156,7 +156,7 @@ Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会�
 
 版本前可以加 `>=`，表示最低支持版本。
 
-更多信息请参阅 [Shareable Libraries](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)。
+更多信息请参阅[可共享库](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)。
 
 `Communications` 需要启用 `Background` 权限，但 `Authentication` 不需要。
 
