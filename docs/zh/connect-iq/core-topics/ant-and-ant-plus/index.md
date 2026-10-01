@@ -161,6 +161,6 @@ Burst 数据传输允许通过 ANT Generic Channel 在设备之间传送大量�
 
 如果指定类型的传感器已配对，且相应信息通过 ANT 更新，[AntPlus.DeviceListener](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/) 及其扩展中的回调会自动调用。例如，当传感器的 ANT 通道从已连接状态变为搜索状态，或用户切换设备当前连接的该类型传感器 ID 时，会调用 [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function)。通过 ANT 收到功率传感器的新信息时，也会调用相应回调。
 
-某些 ANT+ 传感器（例如自行车灯）具有专用回调。例如，应使用专用回调了解灯光网络状态，而不是使用 [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function)。如果用户设备上已配对自行车灯且灯光网络已建立，[AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/) 类允许你修改自行车灯模式。
+某些 ANT+ 传感器（例如自行车灯）具有专用回调。例如，应使用专用回调了解灯光网络状态，而不是使用 [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function)。如果用户设备上已配对自行车灯且灯光网络已建立，[AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/) 类允许您修改自行车灯模式。
 
 并非所有由 Monkey C 提供的 ANT+ 配置文件都受到每个 Connect IQ 兼容设备的支持。
