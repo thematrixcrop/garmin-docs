@@ -205,7 +205,7 @@ base.excludeAnnotations = experimental
 fenix5.excludeAnnotations = boring
 ```
 
-然后,更新应用程序以使用注释:
+然后，更新应用以使用这些注解：
 
 ```cpp
 import Toybox.WatchUi;
