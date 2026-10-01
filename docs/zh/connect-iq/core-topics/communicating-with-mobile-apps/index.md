@@ -1,48 +1,41 @@
 ---
 title: "Communicating with Mobile Apps"
 ---
+<a id="communicating-with-mobile-apps"></a>
 # 与移动应用通信
 
-设备到手机通信存在一些复杂情况。例如，在通信进行时手表应用可能被终止，或者手机应用可能尝试在应用不活跃时发送信息。为了简化这些情况，Monkey C 不提供低级接口，而是提供高级方法：API 使用邮箱隐喻而非套接字隐喻。消息被构建为包裹的信息并在设备之间来回发送。每个应用都有一个接收消息的邮箱，以及在新消息到达时触发的事件。
+设备与手机通信时会遇到一些复杂情况。例如，通信期间手表应用可能被系统终止，或者手机应用可能在手表应用未运行时尝试发送信息。为了简化这些场景，Monkey C 不提供低级通信接口，而是提供更高层次的邮箱模型，而不是套接字模型。消息会作为一组信息在设备之间来回传递。每个应用都有一个用于接收消息的邮箱，以及一个在新消息到达时触发的事件。
 
-## 移动 SDK 下载
+## 下载 Mobile SDK
 
-Connect IQ 移动 SDK 与 Connect IQ 开发者 SDK 分开发布，适用于 iOS 和 Android。有几种版本的移动 SDK 可供使用：
+Connect IQ Mobile SDK 与 Connect IQ Developer SDK 分开发布，提供 iOS 和 Android 版本。Mobile SDK 有以下几种版本：
 
--   Android BLE
+- Android BLE
+- iOS BLE
+- Android ADB
 
--   iOS BLE
+[Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy) 版本用于在 iOS 或 Android 目标设备上开发支持通信的应用；[Android Debug Bridge](http://developer.android.com/tools/help/adb.html)（ADB）版本用于与 Connect IQ Simulator 配合测试。
 
--   Android ADB
+有关如何为移动平台下载正确版本的更多信息，请参阅 [Garmin Developer 网站](http://developer.garmin.com/connect-iq/overview)、[Android Mobile SDK](/connect-iq/core-topics/mobile-sdk-for-android/#mobile-sdk-for-android) 和 [iOS Mobile SDK](/connect-iq/core-topics/mobile-sdk-for-ios/#mobile-sdk-for-ios) 章节。
 
+## 通过 Android Debug Bridge 模拟 BLE
 
-[Bluetooth low energy]（蓝牙低功耗）版支持在 iOS 或 Android 目标设备上开发支持通信的应用，而 [Android Debug Bridge]（安卓调试桥）（ADB）版用于与 Connect IQ 模拟器进行测试。
+使用 Connect IQ Simulator 时，可以通过 [Android Debug Bridge](http://developer.android.com/tools/help/adb.html) 与运行在 Android 设备上的配套应用通信。这会模拟实际的 [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy) 传输速度，更准确地估算应用性能。
 
-有关如何为您的移动平台下载正确版本的信息可在 [Garmin Developer site]（Garmin 开发者网站）上的 [Mobile SDK for Android]（Android 移动 SDK）和 [Mobile SDK for iOS]（iOS 移动 SDK）部分找到。
+要使用 ADB 测试，必须使用 Android Mobile SDK 和配套应用的 Android Debug Bridge 版本。启用 ADB 通信的步骤如下：
 
-## 通过 Android Debug Bridge 进行 BLE 模拟
+1.  通过 USB 将手机连接到运行模拟器的 PC。
+2.  在 Android 手机上启用 USB 调试。
+3.  使用 `getInstance( IQCommProtocol.ADB_SIMULATOR )` 获取 ConnectIQ 实例。
+4.  可选：调用 `setAdbPort( int port )` 设置通信端口（默认端口为 7381）。
+5.  调用 `initialize()`。
 
-使用 Connect IQ 模拟器时，可以使用 [Android Debug Bridge]（安卓调试桥）与运行在 Android 设备上的伴侣应用进行通信。这将模拟实际的 [Bluetooth low energy]（蓝牙低功耗）速度，更好地近似您应用程序的性能。
-
-Android Mobile SDK 和伴侣应用的 [Android Debug Bridge]（安卓调试桥）版是用于测试必需的。以下是启用伴侣通过 [Android Debug Bridge]（安卓调试桥）通信的方法：
-
-1.  通过 USB 将手机连接到运行模拟器的 PC
-
-2.  在 Android 手机上启用 USB 调试
-
-3.  使用 `getInstance( IQCommProtocol.ADB_SIMULATOR )` 获取 ConnectIQ 实例
-
-4.  可选地调用 `setAdbPort( int port )` 设置通信使用的特定端口（默认端口为 7381）
-
-5.  调用 `initialize()`
-
-
-允许模拟器通过 [Android Debug Bridge]（安卓调试桥）通信，请在终端或控制台中将 TCP 端口转发到 Android 设备：
+要让模拟器通过 ADB 通信，请在终端或控制台中将 TCP 端口转发到 Android 设备：
 
 ```bash
 adb forward tcp:7381 tcp:7381
 ```
 
-请注意，此命令需要为每个连接的 Android 设备重新发出，或在设备断开连接并重新连接时重新发出。
+每连接一台 Android 设备，都需要重新执行此命令；设备断开后重新连接时也需要再次执行。
 
-一旦您在手机上启动了应用，通过单击 *Connection*（连接）菜单并选择 *Start*（开始）（CTRL-F1）将其连接到模拟器。现在，模拟器中的 Connect IQ 应用将通过 [Android Debug Bridge]（安卓调试桥）上的通信 API 与您的设备进行通信。
+手机上的应用启动后，点击 *Connection* 菜单并选择 *Start*（CTRL-F1），即可将其连接到模拟器。此时，模拟器中的 Connect IQ 应用便可以通过 ADB 使用 Communications API 与手机通信。
