@@ -18,7 +18,7 @@ Toybox.Lang.Exception
 
 ## 概述
 
-表示应用尝试访问 Application Settings 中不存在的键
+表示应用尝试访问应用设置中不存在的键
 
 起始版本：
 
