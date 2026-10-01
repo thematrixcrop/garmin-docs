@@ -1,5 +1,5 @@
 ---
-title: "Hello Monkey C!"
+title: "你好，Monkey C！"
 ---
 # 你好，Monkey C！
 
