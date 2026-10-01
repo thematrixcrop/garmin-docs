@@ -1216,7 +1216,7 @@ API 级别 1.0.0
 
 - [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) —
 
-    百分比编码的 String
+    百分号编码的 String
 
 
 另见：
