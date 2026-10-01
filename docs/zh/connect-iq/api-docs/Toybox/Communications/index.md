@@ -643,7 +643,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：电量过低，无法启动 WIFI 连接。
+指定错误状态：电量过低，无法启动 Wi-Fi 连接。
 
 |
 | WIFI\_CONNECTION\_STATUS\_NO\_ACCESS\_POINTS | 2 |
@@ -661,7 +661,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：当前设备不支持 WIFI。
+指定错误状态：当前设备不支持 Wi-Fi。
 
 |
 | WIFI\_CONNECTION\_STATUS\_USER\_DISABLED | 4 |
@@ -670,7 +670,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 被用户禁用。
+指定错误状态：Wi-Fi 被用户禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_BATTERY\_SAVER\_ACTIVE | 5 |
@@ -679,7 +679,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 被省电模式禁用。
+指定错误状态：Wi-Fi 被省电模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_STEALTH\_MODE\_ACTIVE | 6 |
@@ -688,7 +688,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 被隐身模式禁用。
+指定错误状态：Wi-Fi 被隐身模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_AIRPLANE\_MODE\_ACTIVE | 7 |
@@ -697,7 +697,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 被飞行模式禁用。
+指定错误状态：Wi-Fi 被飞行模式禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_POWERED\_DOWN | 8 |
@@ -706,7 +706,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 被设备禁用。
+指定错误状态：Wi-Fi 被设备禁用。
 
 |
 | WIFI\_CONNECTION\_STATUS\_UNKNOWN | 9 |
@@ -715,7 +715,7 @@ API 级别 3.2.0
 
 |
 
-指定错误状态：WIFI 不可用，但状态未知。
+指定错误状态：Wi-Fi 不可用，但状态未知。
 
 |
 | WIFI\_CONNECTION\_STATUS\_CANNOT\_CONNECT\_TO\_ACCESS\_POINT | 10 |
@@ -724,7 +724,7 @@ API 级别 3.3.0
 
 |
 
-指定错误状态：WIFI 无法连接到已保存的 AccessPoint。
+指定错误状态：Wi-Fi 无法连接到已保存的接入点。
 
 |
 | WIFI\_CONNECTION\_STATUS\_TRANSFER\_ALREADY\_IN\_PROGRESS | 11 |
@@ -733,7 +733,7 @@ API 级别 3.3.0
 
 |
 
-指定错误状态：WIFI 传输已在进行中
+指定错误状态：Wi-Fi 传输已在进行中
 
 |
 
@@ -895,7 +895,7 @@ API 级别 6.0.0
 
 - [**checkWifiConnection**](#checkWifiConnection-instance_function)(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**) as **Void**
 
-    检查是否存在可见且可连接的已启用互联网的 WIFI 接入点。
+    检查是否存在可见且可连接的已启用互联网的 Wi-Fi 接入点。
 
 - [**emptyMailbox**](#emptyMailbox-instance_function)() as **Void** deprecated
 
@@ -947,11 +947,11 @@ API 级别 6.0.0
 
 - [**registerForPhoneAppMessageErrors**](#registerForPhoneAppMessageErrors-instance_function)(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**) as **Void**
 
-    注册用于接收 Phone App 消息错误的回调。
+    注册用于接收手机应用消息错误的回调。
 
 - [**registerForPhoneAppMessages**](#registerForPhoneAppMessages-instance_function)(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**) as **Void**
 
-    注册用于接收 Phone App 消息的回调。
+    注册用于接收手机应用消息的回调。
 
 - [**setMailboxListener**](#setMailboxListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(mailboxIterator as [Communications.MailboxIterator](/connect-iq/api-docs/Toybox/Communications/MailboxIterator/)) as **Void**) as **Void** deprecated
 
@@ -1010,7 +1010,7 @@ API 级别 1.2.0
 
 ### **checkWifiConnection(connectionStatusCallback as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(result as { :wifiAvailable as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/), :errorCode as [Communications.WifiConnectionStatus](/connect-iq/api-docs/Toybox/Communications/#WifiConnectionStatus-module) }) as **Void**)** as **Void**
 
-检查是否存在可见且可连接的已启用互联网的 WIFI 接入点
+检查是否存在可见且可连接的已启用互联网的 Wi-Fi 接入点
 
 参数：
 
@@ -2405,7 +2405,7 @@ API 级别 1.3.0
 
 ### **registerForPhoneAppMessageErrors(method as [Communications.PhoneMessageErrorCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageErrorCallback-named_type) or **Null**)** as **Void**
 
-注册用于接收 Phone App 消息错误的回调。
+注册用于接收手机应用消息错误的回调。
 
 无法接收消息时调用回调。如果调用此函数时有消息正在等待应用处理，回调将立即调用。
 
@@ -2478,7 +2478,7 @@ API 级别 6.0.0
 
 ### **registerForPhoneAppMessages(method as [Communications.PhoneMessageCallback](/connect-iq/api-docs/Toybox/Communications/#PhoneMessageCallback-named_type) or **Null**)** as **Void**
 
-注册用于接收 Phone App 消息的回调。
+注册用于接收手机应用消息的回调。
 
 每收到一条消息，都会调用一次回调。如果调用此函数时有消息正在等待应用处理，回调将立即针对每条等待中的消息调用一次。
 
