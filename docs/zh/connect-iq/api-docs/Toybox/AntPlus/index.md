@@ -13,9 +13,9 @@ ANT+ 构建于 ANT 之上。它是一组相互约定的设备配置文件，用�
 
 - [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/)
 
-- [ANT Basics](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
+- [ANT 基础知识](https://www.thisisant.com/developer/ant/ant-basics/#104_tab)
 
-- [ANT Downloads & Resources (ANT+ Device Profiles)](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源（ANT+ 设备配置文件）](https://www.thisisant.com/developer/resources/downloads/)
 
 
 起始版本：
