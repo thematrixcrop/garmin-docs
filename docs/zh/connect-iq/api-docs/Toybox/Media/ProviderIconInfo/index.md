@@ -26,7 +26,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(icon as [Graphics.BitmapReference](/connect-iq/api-docs/Toybox/Graphics/BitmapReference/) or [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/), accentColor as [Graphics.ColorType](/connect-iq/api-docs/Toybox/Graphics/#ColorType-named_type))
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
