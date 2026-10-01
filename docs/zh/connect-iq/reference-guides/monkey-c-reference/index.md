@@ -5,9 +5,9 @@ title: "Monkey C Language Reference"
 
 ![](/connect-iq/resources/programmers-guide/smart-monkey.png)
 
-子C是一个从头开始构建的基于对象的语言,旨在轻松在可穿戴设备上开发应用程序.如果你过去曾经使用JavaTM,PHP,Ruby或PythonTM等动态语言,子C应该非常熟悉.
+Monkey C 是一种从头构建的面向对象语言，旨在让可穿戴设备上的应用开发更加轻松。如果你使用过 Java、PHP、Ruby 或 Python 等动态语言，Monkey C 应该会让你感到熟悉。
 
-子C的目标是将应用程序开发的尖端边缘圆圆,允许开发人员更多地关注客户而不是减少资源限制.子C编译成字节代码,由虚拟机解释,类似于Java.
+Monkey C 的目标是减少应用开发中的底层工作，让开发者更多关注用户，而不是设备的资源限制。Monkey C 会编译为由虚拟机解释执行的字节码，类似于 Java。
 
 ## 语言基础
 
@@ -15,29 +15,29 @@ title: "Monkey C Language Reference"
 
 Monkey C 是一种[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，没有真正的原始类型。[Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)、[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)、[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/) 和 [Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/) 类型都是对象，因此原始类型可以像其他对象一样拥有方法。在 Java 或 C++ 等语言中，必须为每个函数参数和返回值声明类型。不过，Monkey C 编译器会尝试验证类型安全性；当函数处理的不是对象时，仍可能出现运行时错误。使用 [`instanceof` 和 `has`](#instanceof-and-has) 等运算符可以帮助避免潜在的类型问题。
 
-子C支持的基本数据类型是:
+Monkey C 支持以下基本数据类型：
 
 | 类型 | 说明 | 示例 |
 | --- | --- | --- |
 | [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 32 位有符号整数 | `var x = 5;` |
-| [Float](/connect-iq/api-docs/Toybox/Lang/Float/) |32位浮点号码| `var y = 6.0;` |
+| [Float](/connect-iq/api-docs/Toybox/Lang/Float/) | 32 位浮点数 | `var y = 6.0;` |
 | [Long](/connect-iq/api-docs/Toybox/Lang/Long/)\* | 64 位有符号整数 | `var l = 5l;` |
-| [Double](/connect-iq/api-docs/Toybox/Lang/Double/)\* |64位浮点号码| `var d = 4.0d;` |
-| [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) |`true`和`false`| `var bool = true;` |
+| [Double](/connect-iq/api-docs/Toybox/Lang/Double/)\* | 64 位浮点数 | `var d = 4.0d;` |
+| [Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) | `true` 和 `false` | `var bool = true;` |
 | [Char](/connect-iq/api-docs/Toybox/Lang/Char/) | UTF-32 字符 | `var c = 'x';` |
-| [String](/connect-iq/api-docs/Toybox/Lang/String/)\* |一个字符的序列| `var str = "Hello";` |
-| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) |一个轻量级的恒定识别器 (查看[Symbols](#symbols)更多信息)| `var sym = :mySymbol;` |
+| [String](/connect-iq/api-docs/Toybox/Lang/String/)\* | 字符序列 | `var str = "Hello";` |
+| [Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) | 轻量级常量标识符（详见 [Symbols](#symbols)） | `var sym = :mySymbol;` |
 
 Monkey C 还支持两种容器类型：
 
 | 类型 | 说明 | 示例 |
 | --- | --- | --- |
-| [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* |固定尺寸 (不是链接列表),数值索引,单维物体列表| `var arr = new [1, 2, 3];` |
-| [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* |交配阵列或哈希表,将键映射到值| `var dict = {one=>1, two=>2};` |
+| [Array](/connect-iq/api-docs/Toybox/Lang/Array/)\* | 固定大小、数值索引的一维对象列表（不是链表） | `var arr = new [1, 2, 3];` |
+| [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)\* | 将键映射到值的关联数组或哈希表 | `var dict = {one=>1, two=>2};` |
 
-需要堆积分配,需要比32位类型更多的内存.
+带星号的类型需要堆分配，比 32 位类型占用更多内存。
 
-在 Monkey C 编程语言中,有几个关键字,操作符和保留的单词,不能作为程序中的变量或符号:
+Monkey C 中有一些关键字、运算符和保留字，不能用作程序中的变量或符号：
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
@@ -85,32 +85,32 @@ Monkey C 还支持两种容器类型：
 
 ### 运算符
 
-在下面的例子中,假设`a = 10`,`b = 5`,`x = 1`,`y = 0`,`m = true`和`n = false`.
+下面的示例假设 `a = 10`、`b = 5`、`x = 1`、`y = 0`、`m = true`、`n = false`。
 
 #### 算术运算符
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-| `+` | 加法：两个操作数；一元正号 |`a + b`结果为 15;`+a`是 10|
-| `-` |减去第二个操作数从第一个;单数负|`a - b`结果为 5;`-a`是 -10|
+| `+` | 加法两个操作数；一元正号 | `a + b` 的结果为 15；`+a` 的结果为 10 |
+| `-` | 用第一个操作数减去第二个操作数；一元负号 | `a - b` 的结果为 5；`-a` 的结果为 -10 |
 | `*` | 将两个操作数相乘 | `a * b` 的结果为 50 |
-| `/` |按分数分配股息| `a / b` 的结果为 2 |
-| `%` |模块,在分开后提供剩余部分| `a % b` 的结果为 0 |
-| `++` |增加一个数字值,可以是前置或后置| `a++` 的结果为 11 |
-| `--` |一个数值的减值,可以是前或后| `a--` 的结果为 9 |
+| `/` | 用被除数除以除数 | `a / b` 的结果为 2 |
+| `%` | 取模，返回除法后的余数 | `a % b` 的结果为 0 |
+| `++` | 增加数值，可前置或后置 | `a++` 的结果为 11 |
+| `--` | 减少数值，可前置或后置 | `a--` 的结果为 9 |
 
-**注:**`+`运算符也用于连接[String](/connect-iq/api-docs/Toybox/Lang/String/)值.
+**注意：**`+` 运算符也用于连接 [String](/connect-iq/api-docs/Toybox/Lang/String/) 值。
 
 #### 关系运算符
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-| `==` |检查两个操作数是否等等|`a == b`是`false`|
-| `!=` |检查两个操作数是否不等等|`a != b`是`true`|
+| `==` | 检查两个操作数是否相等 | `a == b` 的结果为 `false` |
+| `!=` | 检查两个操作数是否不相等 | `a != b` 的结果为 `true` |
 | `>` |检查左边操作数是否大于右边操作数|`a > b`是`true`|
 | `<` |检查左边操作数是否小于右边操作数|`a < b`是`false`|
-| `>=` |检查左边操作数是否大于右边操作数或等于右边操作数|`a >= b`是`false`|
-| `<=` |检查左边操作数是否小于右边操作数|`a <= b`是`false`|
+| `>=` | 检查左侧操作数是否大于或等于右侧操作数 | `a >= b` 的结果为 `false` |
+| `<=` | 检查左侧操作数是否小于或等于右侧操作数 | `a <= b` 的结果为 `false` |
 
 <a id="logical-operators"></a>
 
@@ -118,61 +118,61 @@ Monkey C 还支持两种容器类型：
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-|`&&`, '和'|逻辑 AND,如果两个值都是正确的`true`|`m && n`是`false`|
-| `||` |逻辑 OR,如果任何值都是正确的,则是`true`| `m |||
-| `!` |逻辑NOT,反转一个逻辑表达式的值|`!(m && n)`是`true`|
+| `&&`、`and` | 逻辑 AND，两个值都为 `true` 时结果为 `true` | `m && n` 的结果为 `false` |
+| `||`、`or` | 逻辑 OR，任一值为 `true` 时结果为 `true` | `m || n` 的结果为 `true` |
+| `!` | 逻辑 NOT，反转逻辑表达式的值 | `!(m && n)` 的结果为 `true` |
 
-在子C中,适用于:
+在 Monkey C 中：
 
-- 如果一个对象不是`null`,则被评为`true`.
+- 非 `null` 对象的计算结果为 `true`。
 
-- 对`Number`或`Long`应用的`!`与`~`的应用相同.
+- 对 `Number` 或 `Long` 使用 `!`，效果与使用 `~` 相同。
 
 
 比较逻辑表达式中的非布尔值时：
 
-- 表达式`x && y`首先评估`x`. 如果`x`是`false`,则返回它的值;否则,`y`被评估,结果值被返回.
+- 表达式 `x && y` 先计算 `x`。如果 `x` 为 `false`，就返回它的值；否则计算 `y` 并返回结果。
 
-- 表达式`x || y`首先评估`x`. 如果`x`是`true`,则返回它的值;否则,`y`被评估,结果值被返回.
+- 表达式 `x || y` 先计算 `x`。如果 `x` 为 `true`，就返回它的值；否则计算 `y` 并返回结果。
 
 
 #### 位运算符
 
-位向运算者对二进制值进行操作,比分比分.这些运算遵循以下真相表所示的公约:
+位运算符对二进制值进行操作。这些运算遵循以下真值表：
 
 | p | q | p & q | p | q | p ^ q |
-| --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 1 | 1 |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 | 1 |
 
-假设`p = 3`和`q = 1`.如果写为字节值,`p`是`0000 0011`和`q`是`0000 0001`.
+假设 `p = 3`、`q = 1`。以字节表示时，`p` 是 `0000 0011`，`q` 是 `0000 0001`。
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-| `&` |如果它存在于两种操作中,则将结果复制为 bitwise AND| `p & q` 的结果为 1（0000 0001） |
-| `|` |如果它存在于任何一个操作中,它可以对结果进行复制| `p |` (0000 0011)|
-| `^` |如果它存在于任何一个操作数中,但不是两个| `p ^ q` 的结果为 2（0000 0010） |
-| `~` |两人的恭喜,这实际上"翻了"两部分| `~q` 的结果为 -2（1111 1110） |
+| `&` | 对两个操作数执行按位 AND | `p & q` 的结果为 1（0000 0001） |
+| `|` | 对两个操作数执行按位 OR | `p | q` 的结果为 3（0000 0011） |
+| `^` | 对两个操作数执行按位 XOR | `p ^ q` 的结果为 2（0000 0010） |
+| `~` | 按位取反，翻转每一位 | `~q` 的结果为 -2（1111 1110） |
 
-** 注:** 子C中的所有数字值都是签名值,由高序位表示
+**注意：**Monkey C 中的所有数值都是有符号值，最高位表示符号。
 
 #### 赋值运算符
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-| `=` |从右操作数到左操作数分配值|`b = a`将`b`赋予`a`(10) 的值|
-| `+=` |添加右操作和左操作,将结果分配到左操作|`a += b`相当于`a = a + b`(15)|
-| `-=` |减去右操作数从左操作数,将结果分配到左操作数|`a -= b`相当于`a = a - b`(5)|
-| `*=` |乘以左运行对右运行对左运行对结果分配|相当于`a *= b`和`a = a * b`(50)|
-| `/=` |分开左运算与右运算,将结果分配到左运算|`a /= b`相当于`a = a / b`(2)|
-| `%=` |分开左运行器与右运行器,将其余的分配到左运行器| `a %= b` 的结果为 0 |
-| `<<=` |移动左运行对右运行对左运行对右运行对结果分配|`x <<= y`相当于`x = x << y`(1)|
-| `>>=` |右移动左运行对右运行对右运行对左运行分配结果|`x >>= y`相当于`x = x >> y`(1)|
-| `&=` |位向和右运行对左运行,将结果分配给左运行|`x &= y`相当于`x = x & y`(0)|
+| `=` | 将右侧操作数的值赋给左侧操作数 | `b = a` 将 `a`（10）赋给 `b` |
+| `+=` | 将左右操作数相加，并将结果赋给左侧操作数 | `a += b` 等价于 `a = a + b`（15） |
+| `-=` | 用左侧操作数减去右侧操作数，并将结果赋给左侧操作数 | `a -= b` 等价于 `a = a - b`（5） |
+| `*=` | 将左右操作数相乘，并将结果赋给左侧操作数 | `a *= b` 等价于 `a = a * b`（50） |
+| `/=` | 用左侧操作数除以右侧操作数，并将结果赋给左侧操作数 | `a /= b` 等价于 `a = a / b`（2） |
+| `%=` | 取模，并将余数赋给左侧操作数 | `a %= b` 的结果为 0 |
+| `<<=` | 将左侧操作数左移，并将结果赋给左侧操作数 | `x <<= y` 等价于 `x = x << y`（1） |
+| `>>=` | 将左侧操作数右移，并将结果赋给左侧操作数 | `x >>= y` 等价于 `x = x >> y`（1） |
+| `&=` | 对左右操作数执行按位 AND，并将结果赋给左侧操作数 | `x &= y` 等价于 `x = x & y`（0） |
 | `|=` |对左操作数和右操作数执行按位或，并将结果赋给左操作数| `x |= y` 等价于 `x = x | y`（1）|
-| `^=` |位向 XOR 右操作数与左操作数,并将结果分配到左操作数|`x ^= y`相当于`x = x ^ y`(1)|
+| `^=` | 对左右操作数执行按位 XOR，并将结果赋给左侧操作数 | `x ^= y` 等价于 `x = x ^ y`（1） |
 
 <a id="miscellaneous-operators"></a>
 
@@ -180,12 +180,12 @@ Monkey C 还支持两种容器类型：
 
 | 运算符 | 说明 | 示例 |
 | --- | --- | --- |
-|`?`和`:`|三角形运算器,[if-else](#if-statements)的缩写形式| `var myBool = a > 5 ? true : false` |
-| `new` |创建一个对象的新实例| `var myTimer = new Toybox.Timer.Timer` |
+| `?` 和 `:` | 三元运算符，[if-else](#if-statements) 的简写形式 | `var myBool = a > 5 ? true : false` |
+| `new` | 创建对象的新实例 | `var myTimer = new Toybox.Timer.Timer` |
 
 #### 运算符优先级
 
-运算器优先级决定了表达式的哪些部分将首先进行评估.下列列表将运算器按优先级组分,表顶部出现的最高,下部出现的最低.
+运算符优先级决定表达式中哪些部分先计算。下表按优先级分组，表顶部优先级最高，底部最低。
 
 | 优先级 | 运算符 |
 | --- | --- |
@@ -223,7 +223,7 @@ System.println("Hello World!");  // This comment shares a line with code that wi
 
 ### 声明变量
 
-所有变量必须在使用 `var` 关键字之前声明。由于 Monkey C 是[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，因此无需为每个变量声明类型。
+所有变量都必须在使用前通过 `var` 关键字声明。由于 Monkey C 是[鸭子类型](https://en.wikipedia.org/wiki/Duck_typing)语言，无需为每个变量声明类型。
 
 ```cpp
 var x = 5;            // A 32-bit integer value
@@ -232,7 +232,7 @@ var n = null;         // Null value
 var f = 4.0d;         // A 64-bit floating point value
 ```
 
-ck,,,,,,,.
+数组元素未赋值时会初始化为 `null`。
 
 ```cpp
 var arr = new[10];     // Create a new array; since the values are unassigned, they are initialized as 'null'
@@ -243,7 +243,7 @@ var z = arr[0] + 5;    // Attempt to add a Number to a null array element. Unexp
 
 ### 常量
 
-常数以`const`关键字声明,它们是名字的,可支持所有基本数据类型的不可变值.这些值对于存储可重复使用的不变值来有用.常数必须在模块或类级别上声明,并且不能在函数内声明.重要的是,`const`以类似Java的`final`关键字的方式运行.例如,`const`数组可以防止数组被新实例取代,但数组的元素可以被修改.
+常量使用 `const` 关键字声明，是支持所有基本数据类型的命名不可变值。这些值适合存储代码中会反复使用且不会变化的内容。常量必须在模块或类级别声明，不能在函数内声明。需要注意的是，`const` 的行为类似 Java 的 `final`：`const` 数组不能替换为新实例，但数组元素仍然可以修改。
 
 ```cpp
 const PI = 3.14;
@@ -255,7 +255,7 @@ const BANANA_YELLOW = "#FFE135";
 
 ### 符号
 
-[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)对象是轻量级的常数识别器.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为常数使用,而不明确声明一个常数:
+[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) 对象是轻量级的常量标识符。Monkey C 编译器发现新符号时，会为其分配唯一值。因此，无需显式声明常量，就可以将符号用作常量：
 
 ```cpp
 using Toybox.System;
@@ -267,19 +267,19 @@ System.println(a == b);  // Prints true
 System.println(a == c);  // Prints false
 ```
 
-象征也作为数据结构中的关键,如字典:
+符号也可以作为数据结构（例如字典）中的键：
 
 ```cpp
 var person = {:title=>"George", :name=>"Taylor"};
 ```
 
-符号的另一个重要用途是引用[Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function)的调用方法实现或在[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)的调用后分配.在这种情况下,如果已实现`myMethod{...}`的方法,可以使用`:myMethod`的符号引用它作为调用后.查看[Callbacks](#callbacks)的部分,以了解更多详细的例子.
+符号的另一个重要用途是引用 [Object.method()](/connect-iq/api-docs/Toybox/Lang/Object/#method-instance_function) 要调用的方法，或在调用 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 时传入方法。如果实现了 `myMethod{...}`，可以使用符号 `:myMethod` 引用它进行调用。更多示例请参阅 [Callbacks](#callbacks)。
 
 <a id="enumerations"></a>
 
 ### 枚举
 
-编号是从[Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/)到[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)值的恒定映射,使用`enum`关键词创建.除非明确设置,则编号中的第一个符号被赋予`0`的值,每一个后续符号都被自动赋予前一个未分配的符号加一个的值.编号符号可以像常数一样使用 (这基本上是它们的),并且像常数一样,编号必须在模块或类层面宣布.
+枚举是从 [Lang.Symbol](/connect-iq/api-docs/Toybox/Lang/Symbol/) 到 [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) 值的常量映射，使用 `enum` 关键字创建。除非显式指定，否则枚举中的第一个符号值为 `0`，之后每个符号都会自动获得前一个符号值加一。枚举符号可以像常量一样使用，并且必须在模块或类级别声明。
 
 ```cpp
 // Automatically incremented enumeration
@@ -308,7 +308,7 @@ enum {
 
 ### 数组
 
-[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象是固定尺寸的 (不是链接列表),数值索引的对象列表.一个阵列的所有成员不需要是相同类型的对象.就像变量一样,子C中的阵列是无类型的,因此不需要声明阵列的类型.创建一个新的阵列有两种方法:
+[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) 对象是固定大小、数值索引的对象列表（不是链表）。数组中的成员不必是相同类型。和变量一样，Monkey C 中的数组没有类型标注要求。创建数组有两种方式：
 
 ```cpp
 // A new array with ten empty slots, initialized to 'null'
@@ -318,13 +318,13 @@ var myArray = new[10];
 var myArray = [1, 2, 3, 4, 5];
 ```
 
-阵列元素是表达式,所以也可以构建多维阵列:
+数组元素是表达式，因此也可以构建多维数组：
 
 ```cpp
 var myArray = [[1, 2], ["one", "two"]];
 ```
 
-虽然子C没有直接的方式来创建一个空的二维数组,但可以做到:
+Monkey C 没有直接创建空二维数组的语法，但可以这样实现：
 
 ```cpp
 // Specify the array sizes
