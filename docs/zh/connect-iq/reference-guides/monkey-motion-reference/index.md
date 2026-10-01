@@ -4,7 +4,7 @@ title: "Monkey Motion"
 <a id="monkey-motion"></a>
 # Monkey Motion
 
-可以使用 Monkey Motion UI 工具或命令行导入动画。
+您可以使用 Monkey Motion UI 工具或命令行导入动画。
 
 ## 使用 Monkey Motion UI
 
@@ -16,7 +16,7 @@ title: "Monkey Motion"
 
 ![Monkey Motion 工具](/connect-iq/resources/programmers-guide/monkey_motion.png)
 
-开发者可以选择要为哪些设备编码动画。也可以将 Connect IQ 项目的 Manifest 文件加载到工具中；工具会自动选中项目支持且支持 Connect IQ Animation 的设备。如果希望使用默认设置以外的文件编码设置，可以在高级选项卡中进行调整：
+您可以选择要为哪些设备编码动画。也可以将 Connect IQ 项目的 Manifest 文件加载到工具中；工具会自动选中项目支持且支持 Connect IQ Animation 的设备。如果需要使用默认设置以外的文件编码设置，可以在高级选项卡中进行调整：
 
 图 2：Monkey Motion 工具高级设置
 
