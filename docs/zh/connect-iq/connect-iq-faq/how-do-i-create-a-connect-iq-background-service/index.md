@@ -8,9 +8,9 @@ title: "如何创建 Connect IQ 后台服务？"
 
 API level 2.3.0 引入的新功能之一是 *后台服务*：Connect IQ 应用可以拥有一个服务，即使主应用没有运行，该服务仍可运行。后台服务与主进程拥有不同的能力；Watch Face 或数据字段本身可能无法通信，但后台进程可以。现在最常见的例子是 Watch Face 从互联网获取天气信息并显示出来。后台发生事件时，后台进程可以提示用户是否启动主应用，也可以只收集数据，供主应用下次运行时使用。
 
-本文介绍利用时间事件的后台服务。简单来说，这是一个由时间驱动的进程：每隔 “x” 分钟运行一次，或者设置为在指定时间运行。时间事件最多每 5 分钟触发一次，每次最多运行 30 秒。本文重点介绍不主动启动主应用、只为主进程收集数据的后台进程。
+本文介绍利用时间事件的后台服务。简单来说，这是一个由时间驱动的进程：每隔 `x` 分钟运行一次，或者设置为在指定时间运行。时间事件最多每 5 分钟触发一次，每次最多运行 30 秒。本文重点介绍不主动启动主应用、只为主进程收集数据的后台进程。
 
-我在 [开发者论坛](https://forums.garmin.com/developer/connect-iq/f/discussion/5287/very-simple-sample-of-a-watch-face-with-a-background-process) 创建了一个非常基础的带后台服务的 Watch Face，并在首帖中[附上了项目 ZIP 文件](https://forums.garmin.com/cfs-file/__key/communityserver-discussions-components-files/12/7750.vsbgwf.zip)，方便你查看代码并亲自尝试。Watch Face 本身显示时间、后台服务最近提供的数据以及计数器等内容。后台服务只返回一个带有 “hh:mm” 时间戳的字符串。虽然这个示例没有实际用途，但展示了时间事件后台处理的基本方式。在此示例中，[View](/connect-iq/api-docs/Toybox/WatchUi/View/) 类中没有太多内容，应该重点查看 App 类和后台进程文件中的 [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)。
+我在 [开发者论坛](https://forums.garmin.com/developer/connect-iq/f/discussion/5287/very-simple-sample-of-a-watch-face-with-a-background-process) 创建了一个非常基础的带后台服务的 Watch Face，并在首帖中[附上了项目 ZIP 文件](https://forums.garmin.com/cfs-file/__key/communityserver-discussions-components-files/12/7750.vsbgwf.zip)，方便您查看代码并亲自尝试。Watch Face 本身显示时间、后台服务最近提供的数据以及计数器等内容。后台服务只返回一个带有 `hh:mm` 时间戳的字符串。虽然这个示例没有实际用途，但展示了时间事件后台处理的基本方式。在此示例中，[View](/connect-iq/api-docs/Toybox/WatchUi/View/) 类中没有太多内容，应该重点查看 App 类和后台进程文件中的 [ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/)。
 
 实现带后台服务的应用时，需要考虑几个方面。示例项目展示了这些部分如何组合在一起。
 
@@ -98,8 +98,8 @@ function onBackgroundData(data) {
 -   **Simulator 注意事项**：可以在 Simulator 中测试后台服务。对于时间事件，它们会按计划发生；也可以在 *Simulation* 菜单中手动触发后台进程。
 
 
-Simulator 对后台应用存在一个已知问题：即使应用不是当前正在测试的“活动”应用，Simulator 也会运行你之前测试过的应用的后台服务。例如，测试 “app a” 后切换到 “app b”，app a 和 app b 的后台服务都会运行。即使当前目标没有后台服务，Simulator 也可能尝试启动它。Connect IQ 团队已知晓此问题，并将在后续版本中修复。
+Simulator 对后台应用存在一个已知问题：即使应用不是当前正在测试的“活动”应用，Simulator 也会运行您之前测试过的应用的后台服务。例如，测试 `app a` 后切换到 `app b`，`app a` 和 `app b` 的后台服务都会运行。即使当前目标没有后台服务，Simulator 也可能尝试启动它。Connect IQ 团队已知晓此问题，并将在后续版本中修复。
 
-后台服务是 Connect IQ 工具箱中的强大功能，可以让应用定期从互联网获取信息，包括 Watch Face 和数据字段的信息。你可以利用它们实现哪些功能？
+后台服务是 Connect IQ 工具箱中的强大功能，可以让应用定期从互联网获取信息，包括 Watch Face 和数据字段的信息。您可以利用它们实现哪些功能？
 
-**关于作者**：*Jim Miller 是一位在亚利桑那州工作的 Connect IQ 开发者。他写道：“2015 年初，我拥有一块 Forerunner 15，很喜欢它的 GPS 和步数跟踪功能。后来 Garmin 发布了第一代 vívoactive，我预订了一块，并在同一周下载了 CIQ 1.0.0 SDK！”你可以查看他的* [*应用商店应用*](https://apps.garmin.com/en-US/developer/b73df9e6-4021-4059-b2e8-f9cfa04947c3/apps)*、关注他的* [*Instagram*](https://www.instagram.com/jim.m.58/)*、访问他的* [*Connect IQ Facebook 页面*](https://www.facebook.com/connectiqaz)*，或在* [*Connect IQ 论坛*](https://forums.garmin.com/members/jim_5f00_m_5f00_58)*找到他。*
+**关于作者**：*Jim Miller 是一位在亚利桑那州工作的 Connect IQ 开发者。他写道：“2015 年初，我拥有一块 Forerunner 15，很喜欢它的 GPS 和步数跟踪功能。后来 Garmin 发布了第一代 vívoactive，我预订了一块，并在同一周下载了 CIQ 1.0.0 SDK！”您可以查看他的* [*应用商店应用*](https://apps.garmin.com/en-US/developer/b73df9e6-4021-4059-b2e8-f9cfa04947c3/apps)*、关注他的* [*Instagram*](https://www.instagram.com/jim.m.58/)*、访问他的* [*Connect IQ Facebook 页面*](https://www.facebook.com/connectiqaz)*，或在* [*Connect IQ 论坛*](https://forums.garmin.com/members/jim_5f00_m_5f00_58)*找到他。*
