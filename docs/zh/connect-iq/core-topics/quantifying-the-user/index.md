@@ -69,7 +69,7 @@ Garmin 设备会收集并量化大量用户指标。Connect IQ 提供其中许�
 
 [Toybox.SensorHistory](/connect-iq/api-docs/Toybox/SensorHistory/) 模块允许应用访问设备上保存的传感器历史。应用可以通过获取迭代器访问传感器数据。
 
-| Function | 用途 | API level |
+| 函数 | 用途 | API 级别 |
 | --- | --- | --- |
 | [SensorHistory.getBodyBatteryHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getBodyBatteryHistory-instance_function) | 获取设备过去几小时记录的用户 Body Battery 样本。无法访问同步数据。 | 3.3.0 |
 | [SensorHistory.getHeartRateHistory()](/connect-iq/api-docs/Toybox/SensorHistory/#getHeartRateHistory-instance_function) | 获取设备过去几小时记录的用户心率样本。无法访问同步数据。 | 2.1.0 |
