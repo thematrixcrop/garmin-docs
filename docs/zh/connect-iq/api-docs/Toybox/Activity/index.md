@@ -7,7 +7,7 @@ title: "模块：Toybox.Activity"
 
 Activity 模块提供了一种检索当前活动可用信息的方法。
 
-Activity Info 会由 Data Fields 中的 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法自动提供。[getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法可在应用内或其他情况下使用，例如数据字段初始化。
+活动信息（Activity Info）会由数据字段中的 [compute()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#compute-instance_function) 方法自动提供。[getActivityInfo()](/connect-iq/api-docs/Toybox/Activity/#getActivityInfo-instance_function) 方法可在应用内或其他情况下使用，例如数据字段初始化。
 
 此模块还提供两组常量：
 
