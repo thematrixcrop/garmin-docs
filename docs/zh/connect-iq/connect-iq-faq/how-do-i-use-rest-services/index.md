@@ -1,5 +1,5 @@
 ---
-title: "How do I communicate with REST services?"
+title: "如何与 REST 服务通信？"
 ---
 # 如何与 REST 服务通信？
 
