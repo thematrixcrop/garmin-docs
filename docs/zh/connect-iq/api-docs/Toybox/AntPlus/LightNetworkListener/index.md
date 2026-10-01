@@ -211,7 +211,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onBikeLightUpdate**](#onBikeLightUpdate-instance_function)(data as [AntPlus.BikeLight](/connect-iq/api-docs/Toybox/AntPlus/BikeLight/)) as **Void**
 
