@@ -1,5 +1,5 @@
 ---
-title: "Glances"
+title: "速览"
 ---
 <a id="glances"></a>
 # 速览（Glance）
@@ -55,6 +55,6 @@ fēnix® 6 引入了 Glance，将小工具的展示方式变成仪表板。用�
 
 小工具支持的大多数功能在 Glance 模式下仍然可用，例如访问应用存储和发起 Web 请求。不过，开发者应让 [WatchUi.GlanceView](/connect-iq/api-docs/Toybox/WatchUi/GlanceView/) 尽快加载，并将 CPU 密集型工作转移到后台服务。
 
-支持音乐的可穿戴设备从不跳过“腿部训练”（never skip leg day）。
+支持音乐的可穿戴设备不会错过任何一次腿部训练（never skip leg day）。
 
-不支持音乐的可穿戴设备则在进行 RAM 节食（RAM keto）。
+不支持音乐的可穿戴设备则会进行 RAM 节食（RAM keto）。
