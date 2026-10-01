@@ -71,7 +71,7 @@ function onBackgroundData(data) {
     }
 ```
 
-[AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 用于让主进程获取服务通过 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) 返回的最新数据。主进程首次启动时，可以检查 Object Store 中是否已有数据；如果有，就将其显示为“上次已知值”。对于表盘，如果不这样处理，用户每次离开再返回表盘时，都要等后台再次运行后才会有数据。
+[AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 用于让主进程获取服务通过 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function) 返回的最新数据。主进程首次启动时，可以检查对象存储中是否已有数据；如果有，就将其显示为“上次已知值”。对于表盘，如果不这样处理，用户每次离开再返回表盘时，都要等后台再次运行后才会有数据。
 
 ```typescript
     function onBackgroundData(data) {
@@ -85,7 +85,7 @@ function onBackgroundData(data) {
 }
 ```
 
-后台进程不能使用 [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) 将数据写入 Object Store 或 Settings；尝试这样做会抛出异常。主进程和后台进程之间也不能通过全局变量传递信息。“进程”这个词很重要：全局变量是进程级别的，同一个全局变量只对当前进程全局可见。全局定义的变量会同时存在于主进程和后台进程中，但两个进程各自维护一份副本，彼此不会同步。也就是说，将数据从主应用传给后台服务的唯一方式是使用 property。[ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) 可以通过 [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) 读取这个 property，它可以来自 Object Store 或 Settings。请处理后台服务尚未获得所需数据的情况，因为某些值可能还没有有效内容。
+后台进程不能使用 [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) 将数据写入对象存储或设置；尝试这样做会抛出异常。主进程和后台进程之间也不能通过全局变量传递信息。“进程”这个词很重要：全局变量是进程级别的，同一个全局变量只对当前进程全局可见。全局定义的变量会同时存在于主进程和后台进程中，但两个进程各自维护一份副本，彼此不会同步。也就是说，将数据从主应用传给后台服务的唯一方式是使用属性。[ServiceDelegate](/connect-iq/api-docs/Toybox/System/ServiceDelegate/) 可以通过 [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) 读取这个属性，它可以来自对象存储或设置。请处理后台服务尚未获得所需数据的情况，因为某些值可能还没有有效内容。
 
 在主进程通过 [AppBase.onBackgroundData()](/connect-iq/api-docs/Toybox/Application/AppBase/#onBackgroundData-instance_function) 接收到数据之前，后台服务可能已经运行多次。主进程只能收到最后一次数据，而不是所有数据。不过，后台进程可以使用 [Background.getBackgroundData()](/connect-iq/api-docs/Toybox/Background/#getBackgroundData-instance_function) 获取当前已为主进程排队但尚未交付的数据，再将其与本次后台运行产生的新数据合并后全部返回。
 
