@@ -173,7 +173,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onBikeRadarUpdate**](#onBikeRadarUpdate-instance_function)(data as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[AntPlus.RadarTarget](/connect-iq/api-docs/Toybox/AntPlus/RadarTarget/)\>) as **Void**
 
