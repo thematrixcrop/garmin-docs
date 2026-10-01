@@ -32,7 +32,7 @@ ASSERTION FAILED: x and y are equal!
 
 在 Simulator 中执行断言代码不需要特殊的编译器命令；构建发布代码时，编译器会移除断言代码。Run No Evil 提供四种断言形式：
 
-| Function | Description |
+| 函数 | 描述 |
 | --- | --- |
 | [Test.assert()](/connect-iq/api-docs/Toybox/Test/#assert-instance_function) | 测试结果为 false 时抛出异常 |
 | [Test.assertMessage()](/connect-iq/api-docs/Toybox/Test/#assertMessage-instance_function) | 测试结果为 false 时抛出异常并输出消息 |
