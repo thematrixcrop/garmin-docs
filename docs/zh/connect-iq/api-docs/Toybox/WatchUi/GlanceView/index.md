@@ -161,7 +161,7 @@ API 级别 3.1.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
