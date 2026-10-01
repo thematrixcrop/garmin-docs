@@ -1,11 +1,12 @@
 ---
 title: "Native UI Controls"
 ---
+<a id="native-ui-controls"></a>
 # 原生 UI 控件
 
 ![](/connect-iq/resources/programmers-guide/artsy-monkey.png)
 
-[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/)提供了一些本地插件来处理输入:
+[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 提供了多种原生控件，用于处理输入：
 
 -   菜单
 
@@ -17,26 +18,26 @@ title: "Native UI Controls"
 
 -   页面循环
 
--   Toast 提示
+-   Toast
 
 -   数据字段
 
 -   地图视图
 
 
- [Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 还提供两个可用于向用户提供反馈的处理器：确认对话框和进度对话框。
+此外，[Toybox.WatchUi](/connect-iq/api-docs/Toybox/WatchUi/) 还提供确认对话框和进度对话框，用于向用户反馈状态。
 
 ## 菜单
 
-菜单是向用户显示选项的全屏列表。菜单可用于呈现供用户选择的选项或设置。
+菜单是向用户显示选项的全屏列表，可用于呈现供用户选择的选项或设置。
 
 ### Menu2
 
 *自 API 级别 3.0.0*
 
-[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)系统允许复杂的菜单用户界面.[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)类包括新的功能,如图形标题,可动地更新的菜单项,以及检查框等额外的菜单元素. Menu2 系统包括多个新的类.让我们从新菜单元素中最简单的开始.
+[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 系统用于构建复杂的菜单界面。[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类提供了图形标题、可动态更新的菜单项以及复选框等额外元素。Menu2 系统包含多个新类，先从最简单的菜单元素开始。
 
-以下是简单的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的 Menu2基本实现:
+下面是使用简单 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的基本 Menu2 实现：
 
 ```cpp
 import Toybox.WatchUi;
@@ -86,38 +87,38 @@ class MyBehaviorDelegate extends WatchUi.BehaviorDelegate {
 }
 ```
 
-虽然[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)示例是使用资源系统构建的,但上述[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)示例是编程构建的.让我们看看一些新功能:
+上面的 [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 示例通过代码构建，而 [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) 示例使用资源系统。下面介绍示例中展示的一些新功能。
 
-new WatchUi.Menu2
+### WatchUi.Menu2
 
-[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)类是一个类似于[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)的特殊[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)类,它向用户提供了选项列表.
+[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 类是一种特殊的 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)，类似于 [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)，用于向用户显示选项列表。
 
-MenuItem
+### MenuItem
 
-menuItem对象构造器采用了四个参数:`label`,`subLabel`,`identifier`和`options`.每个`MenuItem`可以显示一个标签和子标签,由前两个参数定义.以下是图表显示了[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)中的标签和子标签布局:
+`MenuItem` 构造函数接收四个参数：`label`、`subLabel`、`identifier` 和 `options`。前两个参数分别定义菜单项的主标签和副标签。下面的图示展示了 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 中主标签和副标签的布局：
 
-图1. 标签和子标签的说明在 \`Menu2\`
+图 1：`Menu2` 中主标签和副标签的示意图
 
 ![Menu2 中标签和子标签的示例](/connect-iq/resources/programmers-guide/Menu2_labels.png)
 
-[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)`identifier`是一个对象,通常是一个字符串,用于识别事件调用中`MenuItem`对象.有一个第四个参数是`Dictionary`的选项,可以是`null`.
+[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的 `identifier` 是一个对象，通常为字符串，用于在事件回调中标识 `MenuItem`。第四个参数是一个可为 `null` 的 `Dictionary`，用于传递选项。
 
-WatchUi.Menu2InputDelegate
+### WatchUi.Menu2InputDelegate
 
-新的[WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)类用于处理选定的Menu2项目.该对象使用三个方法处理这些选择:
+新的 [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 类用于处理选中的 Menu2 项目。它通过以下三个方法处理选择：
 
--[Menu2InputDelegate.onBack()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onBack-instance_function)- 处理后键并将当前页面从堆中删除,如果没有被覆盖.
+- [Menu2InputDelegate.onBack()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onBack-instance_function)：处理返回键；如果未重写，会将当前页面从视图栈移除。
 
--[Menu2InputDelegate.onDone()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onDone-instance_function)- 用于专业的[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/). 当未被重覆时,显示当前页面.
+- [Menu2InputDelegate.onDone()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onDone-instance_function)：与专用的 [WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) 配合使用；如果未重写，会弹出当前页面。
 
--[Menu2InputDelegate.onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function)- 选择menu2项时处理.
+- [Menu2InputDelegate.onSelect()](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/#onSelect-instance_function)：处理用户选中 Menu2 项目的事件。
 
 
-查看与SDK共享的`Menu2Sample`样本应用.
+更多信息请参阅 SDK 随附的 `Menu2Sample` 示例应用。
 
 #### Menu2 XML 资源
 
-基本[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)可以在 XML 中定义为资源如下:
+可以在 XML 中将基本的 [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 定义为资源：
 
 ```xml
 <menu2 id="MainMenu" title="@Strings.MainMenuTitle">
@@ -126,39 +127,39 @@ WatchUi.Menu2InputDelegate
 </menu2>
 ```
 
-以下是定义为XML资源的[WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/)的属性和定义:
+下面是作为 XML 资源定义的 [WatchUi.Menu2](/connect-iq/api-docs/Toybox/WatchUi/Menu2/) 的属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
-| `title` |标签文本将作为标题显示|有效的 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 标识符、字符串资源或 `String`| 不适用 | 可选 |
-| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
-| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
-| `theme` |菜单项的背景颜色|`A` 或 `"disabled"`| `WatchUi.MENU_THEME_DEFAULT` | 可选 |
-| `personality` |菜单的个性类|一个定义的人格类| 不适用 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
+| `id` | `<menu-item>` 的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `title` | 要作为标题显示的文本 | 有效的 [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/) 标识符、字符串资源或 `String` | 不适用 | 可选 |
+| `icon` | 在子窗口中显示的图标（仅 Instinct 2） | 位图资源标识符 | 不适用 |  |
+| `dividerType` | 分隔线位置（仅 5.0.1 及更高版本设备支持） | 有效的分隔线类型 | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
+| `theme` | 菜单项背景颜色 | 有效的主题值或 `"disabled"` | `WatchUi.MENU_THEME_DEFAULT` | 可选 |
+| `personality` | 菜单使用的 personality 类 | 已定义的 personality 类 | 不适用 | 请参阅 [Monkey Style](/connect-iq/core-topics/monkey-style/#monkey-style) |
 
-标签"通用1"的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)使用标签和子标签. "通用2"的项目仅使用标签.
+ID 为 `generic1` 的 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 同时使用主标签和副标签；`generic2` 仅使用主标签。
 
-以下是定义为XML资源的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)的属性和定义:
+下面是作为 XML 资源定义的 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/) 的属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
-| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
-| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
+| `id` | `<menu-item>` 的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `label` | 要显示的主标签文本 | 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` | 要显示的副标签文本 | 有效的字符串资源或 `String` | 不适用 |  |
+| `icon` | 在子窗口中显示的图标（仅 Instinct 2） | 位图资源标识符 | 不适用 |  |
 
-Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项目都可以以相同的方式创建和启动,但每个新的菜单项目都表现得独特.我们已经看到了基本的`MenuItem`类.我们谈谈使用其他时的具体细节.
+Menu2 最有用的特性之一是在菜单中使用图标、复选框和切换项。所有 Menu2 项都可以用相同方式创建和启动，但不同类型的菜单项有各自的行为。前面已经介绍了基本的 `MenuItem` 类，下面说明其他类型的具体用法。
 
 #### 图标菜单项
 
-[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)类允许开发人员实现基于图标的菜单系统.[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/)使用标签和子标签,但还包括一个标签和子标签文本的右或左边可显示的标签.
+[WatchUi.IconMenuItem](/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem/) 类用于实现基于图标的菜单。它使用主标签和副标签，并额外提供一个图标，可显示在标签文本的左侧或右侧。
 
-图 2. 在 \`Menu2\`中 \`IconMenuItem\`的说明
+图 2：`Menu2` 中 `IconMenuItem` 的示意图
 
 ![Menu2 中的 \`IconMenuItem\` 示例](/connect-iq/resources/programmers-guide/IconFigure.png)
 
-以下是作为XML资源创建的`IconMenuItem`:
+下面是作为 XML 资源创建的 `IconMenuItem`：
 
 ```xml
 <menu2 id="IconMenu" title="@Strings.IconMenuTitle">
@@ -171,24 +172,24 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 </menu2>
 ```
 
-以下是`<icon-menu-item>`可用的属性:
+`<icon-menu-item>` 支持以下属性：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<icon-menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
-| `subLabel` |显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
-| `icon` |显示的图标| 有效的可绘制资源或自定义可绘制对象 | 不适用 | 必需 |
+| `id` | `<icon-menu-item>` 的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `label` | 要显示的主标签文本 | 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` | 要显示的副标签文本 | 有效的字符串资源或 `String` | 不适用 |  |
+| `icon` | 要显示的图标 | 有效的可绘制资源或自定义可绘制对象 | 不适用 | 必需 |
 
 #### 复选框和切换菜单项
 
-[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)允许用户检查列表中的多个项目,并同时保存它们的状态 (即选择音乐内容的播放列表).[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)类是使用[WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/)视图和[WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/)扩展的类结合.
+[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) 允许用户在菜单列表中勾选多个项目，并一次性保存这些状态，例如选择音乐播放列表。[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/) 通常与继承 [WatchUi.CheckboxMenu](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu/) 的 View 以及 [WatchUi.Menu2InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate/) 配合使用。
 
-图3. 在 \`Menu2\`中 \`CheckboxMenuItem\`的说明
+图 3：`Menu2` 中 `CheckboxMenuItem` 的示意图
 
 ![Menu2 中的 \`CheckboxMenuItem\` 示例](/connect-iq/resources/programmers-guide/CheckboxFigure.png)
 
-开发人员使用XML定义[WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)如下:
+可以使用 XML 按如下方式定义 [WatchUi.CheckboxMenuItem](/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem/)：
 
 ```xml
 <checkbox-menu id="CheckMenu" title="@Strings.CheckMenuTitle">
@@ -201,13 +202,13 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 </checkbox-menu>
 ```
 
-[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)类是指指一个菜单项在两个状态中的一个元素:`:enabled`或`:disabled`. 查看下图中的变化:
+[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/) 表示处于两种状态之一的菜单项：`:enabled` 或 `:disabled`。下图展示了这两种状态的差异：
 
-图 4. 在 \`Menu2\`中 \`ToggleMenuItem\`的说明
+图 4：`Menu2` 中 `ToggleMenuItem` 的示意图
 
 ![Menu2 中的 \`ToggleMenuItem\` 示例](/connect-iq/resources/programmers-guide/ToggleFigure.png)
 
-您可以使用XML创建[WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/)作为资源:
+可以使用 XML 将 [WatchUi.ToggleMenuItem](/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem/) 创建为资源：
 
 ```xml
 <menu2 id="ToggleMenu" title="@Strings.ToggleMenuTitle">
@@ -220,33 +221,33 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 </menu2>
 ```
 
-在名称和函数上,`<checkbox-menu-item>`和`<toggle-menu-item>`属性相同:
+`<checkbox-menu-item>` 和 `<toggle-menu-item>` 的属性名称和作用相同：
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |`<toggle-menu-item>`或`<checkbox-menu-item>`的标识符|任何以字符开头的字符串| 不适用 | 必需 |
-| `label` |显示的标签文本| 有效的字符串资源或 `String` | 不适用 | 必需 |
-| `subLabel` |当 `checked` 为 `true` 时显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
-| `disabledSubLabel` |当 `checked` 为 `false` 时显示的子标签文本| 有效的字符串资源或 `String` | 不适用 |  |
-| `checked` |`<toggle-menu-item>`或`<checkbox-menu-item>`的布尔状态|对于`:enabled`而言`true`,对于`disabled`而言`false`| `false` |值即使在 XML 中未定义,也会发生变化|
-| `icon` |在子窗口中显示的图标（仅 Instinct 2）| 位图资源标识符 | 不适用 |  |
-| `dividerType` |区分器的位置 (仅支持5.0.1+设备)| A | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
+| `id` | `<toggle-menu-item>` 或 `<checkbox-menu-item>` 的 ID | 以字符开头的任意字符串 | 不适用 | 必需 |
+| `label` | 要显示的主标签文本 | 有效的字符串资源或 `String` | 不适用 | 必需 |
+| `subLabel` | `checked` 为 `true` 时显示的副标签文本 | 有效的字符串资源或 `String` | 不适用 |  |
+| `disabledSubLabel` | `checked` 为 `false` 时显示的副标签文本 | 有效的字符串资源或 `String` | 不适用 |  |
+| `checked` | `<toggle-menu-item>` 或 `<checkbox-menu-item>` 的布尔状态 | `:enabled` 使用 `true`，`disabled` 使用 `false` | `false` | 即使未在 XML 中定义，值也会发生变化 |
+| `icon` | 在子窗口中显示的图标（仅 Instinct 2） | 位图资源标识符 | 不适用 |  |
+| `dividerType` | 分隔线位置（仅 5.0.1 及更高版本设备支持） | 有效的分隔线类型 | `WatchUi.Menu2.DIVIDER_TYPE_DEFAULT` | 可选 |
 
-`checked`属性自动创建为 一个 或对象的一部分,并且不需要在 XML 中定义.如果它不是在 XML 中定义的,那么它将默认为`false`.
+`checked` 属性会在相应的菜单项对象创建时自动生成，因此不必在 XML 中定义。如果没有在 XML 中定义，默认值为 `false`。
 
-对于使用图形元素如转换器和检查框的[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/),开发人员可以选择将元素对齐到[WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)标签的左或右边.如果未定义,则元素将被对齐到右边,如上面的`defaultAlign`转换菜单中所看到的.使用一个具有所需的 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_\*\`值的`<param>`标签来设置图标,检查和转换器的对齐.开发人员还可以明确使用 \`MenuItem.MENU\_ITEM\_LABEL\_ALIGN\_RIGHT\`值对齐到右边.
+对于包含切换项和复选框等图形元素的 [WatchUi.MenuItem](/connect-iq/api-docs/Toybox/WatchUi/MenuItem/)，可以将这些元素对齐到菜单项标签的左侧或右侧。未指定时，元素默认右对齐，如上面的 `defaultAlign` 切换菜单项所示。使用 `<param>` 标签并传入所需的 `MenuItem.MENU_ITEM_LABEL_ALIGN_*` 值，可以设置图标、复选框和切换项的对齐方式；也可以显式使用 `MenuItem.MENU_ITEM_LABEL_ALIGN_RIGHT` 右对齐。
 
 ### 操作菜单
 
 *自 API 级别 3.4.0*
 
-动作视图是提供信息和提供文本中的动作菜单的屏幕.这些动作可能是可在可见信息上执行的下一步或任务.
+Action view 是同时提供信息和上下文操作菜单的屏幕。这些操作可以是针对当前信息的下一步或待执行任务。
 
-查看[WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function)API和个性图书馆的行动视图章.
+更多信息请参阅 [WatchUi.showActionMenu()](/connect-iq/api-docs/Toybox/WatchUi/#showActionMenu-instance_function) API 和 Personality Library 中的 Action Views 章节。
 
 ### 原始菜单 API
 
-[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)是为用户提供选项列表的旧API.选项显示在匹配应用程序运行的设备的列表中.在资源XML文件中可以定义菜单,使用以下格式:
+[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) 是用于向用户提供选项列表的旧 API。选项会以适合应用运行设备的形式显示。可以在资源 XML 文件中按以下格式定义菜单：
 
 ```xml
 <menu id="MainMenu">
@@ -255,7 +256,7 @@ Menu2最令人兴奋的部分是使用图标,选项框和开关.所有 Menu2 项
 </menu>
 ```
 
-资源编译器将接下来采用这个XML并在`Rez`模块中生成一个[WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/)对象.为了使用这个菜单,开发人员只需要按下菜单和使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)的代表来使用菜单:
+资源编译器会根据 XML 在 `Rez` 模块中生成一个 [WatchUi.Menu](/connect-iq/api-docs/Toybox/WatchUi/Menu/) 对象。要使用此菜单，只需通过 [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 将菜单和对应的 delegate 推入视图栈：
 
 ```java
 class MyView extends WatchUi.View {
@@ -277,56 +278,56 @@ class MyMenuDelegate extends WatchUi.MenuInputDelegate {
 
 ## 通用选择器
 
-[WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)类,以及[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/)和[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)类,提供了应用程序在屏幕上创建用户可选择的对象列表的能力.选手包括一个或多个对象,标题,下一个和上一个箭头,以及确认按.下一个和上一个箭头和确认按是设备特定的,但可以在需要时重写.选手使用[WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function)推送,为输入代表提供[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/).一个[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/)是要求指示每个可选的值显示的.
+[WatchUi.Picker](/connect-iq/api-docs/Toybox/WatchUi/Picker/)、[WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/) 和 [WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) 类可以在屏幕上创建供用户选择的对象列表。Picker 包含一个或多个对象、标题、上一项和下一项箭头，以及确认按钮。箭头和确认按钮的外观因设备而异，但可以按需覆盖。通过 [WatchUi.pushView()](/connect-iq/api-docs/Toybox/WatchUi/#pushView-instance_function) 推入 Picker 时，需要提供 [WatchUi.PickerDelegate](/connect-iq/api-docs/Toybox/WatchUi/PickerDelegate/) 作为输入 delegate。[WatchUi.PickerFactory](/connect-iq/api-docs/Toybox/WatchUi/PickerFactory/) 用于指定每个可选值的显示方式。
 
 ### 用户界面
 
 ![通用选择器布局的主要组件](/connect-iq/resources/programmers-guide/picker-layout.png)
 
-上面的图像是对选号机在方形屏幕上应该看起来像什么的一般结构的表示.其他屏幕格式应该具有相同的布局,有一些尺寸差异,以考虑屏幕和按布局.
+上图展示了 Picker 在方形屏幕上的一般布局。其他屏幕格式也采用相同的布局，但会根据屏幕和按键排列调整尺寸。
 
-- 上面的红色标志着选手的标题.
+- 顶部红色区域显示 Picker 的标题。
 
-- 在绿色盒子处,放上下箭头,可通过可用的选项滚动.
+- 绿色区域显示上下箭头，用于浏览可用选项。
 
-- 如果选手有多个可选项,最左边的蓝色框将显示您选择的最后一项.
+- 如果 Picker 有多个可选项，最左侧的蓝色区域显示上一个已选项目。
 
-- 中央蓝色框是您目前选择的物品.
+- 中央蓝色区域显示当前正在选择的项目。
 
-- 白框将是列表中的下一个可选项或确认选择的按.
+- 白色区域显示列表中的下一个可选项目，或显示确认选择的按钮。
 
 
-查看与SDK共享的`Picker`样本应用.
+更多信息请参阅 SDK 随附的 `Picker` 示例应用。
 
 ## 确认对话框
 
-[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/)和[WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/)提供了一个简单的是/否对话.
+[WatchUi.Confirmation](/connect-iq/api-docs/Toybox/WatchUi/Confirmation/) 和 [WatchUi.ConfirmationDelegate](/connect-iq/api-docs/Toybox/WatchUi/ConfirmationDelegate/) 提供了简单的“是/否”对话框，适合让用户做出简单选择。
 
-查看SDK共享的`ConfirmationDialog`样本应用程序,以及个性图书馆的确认部分.
+更多信息请参阅 SDK 随附的 `ConfirmationDialog` 示例应用，以及 Personality Library 中的 Confirmations 章节。
 
 ## 进度条
 
-进步对话框提供了标准的等待对话框.它有两个模式,一个显示了某个过程的完成,第二个显示了无限量的进步的等待计时器.进步的外观和感觉将是设备特定的.
+进度对话框提供标准的等待对话框。它有两种模式：一种显示某个过程的完成进度，另一种作为等待计时器显示不确定的进度。进度条的外观和交互方式取决于设备。
 
-查看 SDK 配备的`ProgressBar`样本应用程序和个性图书馆的进步条节.
+更多信息请参阅 SDK 随附的 `ProgressBar` 示例应用，以及 Personality Library 中的 Progress Bars 章节。
 
 # 页面循环
 
-页面循环是视图的轮.当用户在页面循环中时,用户界面会呈现一组信息页面,为用户提供不同的数据和见解.进入下一个和上一个页面的标准行为.从最后页面前进通常将用户返回第一页.
+页面循环是由多个视图组成的轮播界面。用户进入页面循环后，界面会展示一组信息页，为用户提供不同的数据和信息。系统提供切换到上一页和下一页的标准行为，从最后一页继续前进通常会回到第一页。
 
-查看[WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/)API和个性库页面循环部分.
+更多信息请参阅 [WatchUi.ViewLoop](/connect-iq/api-docs/Toybox/WatchUi/ViewLoop/) API，以及 Personality Library 中的 Page Loops 章节。
 
 ## Toast
 
 *自 API 级别 3.4.0*
 
-乾杯是部分屏幕横幅,有文本和可选的图标.用户无法与它们互动,并且它们在短时间后会被驳回.乾杯是为用户告知异步事件而不会破坏他们目前正在做的事情而有用的.
+Toast 是带有文本和可选图标的局部屏幕横幅。用户无法与其交互，它会在短时间后自动消失。Toast 适合在不打断用户当前操作的情况下，提示异步事件的结果。
 
-查看[WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function)API和个性图书馆的吐司部分.
+更多信息请参阅 [WatchUi.showToast()](/connect-iq/api-docs/Toybox/WatchUi/#showToast-instance_function) API，以及 Personality Library 中的 Toasts 章节。
 
 ## 数据字段
 
-数据字段作为加密器活动体验的插件.用户在从商店安装数据字段后,可以在其活动页面内放置它们.
+数据字段是 Garmin 活动体验的插件。用户从商店安装数据字段后，可以将它们放置在 Garmin 活动的活动页面中。
 
 在支持触摸屏的设备上，输入委托可用于接收输入。这里只支持 [InputDelegate.onTap()](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function) 行为；当数据字段在屏幕上处于活动状态且用户触摸字段内部的某个点时，会触发该行为。与其他应用类型一样，行为委托应作为 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function) 返回数组的第二个元素。
 
@@ -351,13 +352,13 @@ class DataFieldDelegate extends Ui.InputDelegate {
 
 *自 API 级别 3.2.0*
 
-当您希望您的数据字段通知用户特定事件时,您可以按一个扩展[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)的视图.[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/)是[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)的一个特殊实例,可以用[DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function)呈现给用户.警报不会接受输入,并且将在标准警报期后停机.用户需要在训练警报设置中启用您的应用程序的警报.
+如果希望数据字段在特定事件发生时通知用户，可以推入一个继承 [WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) 的视图。[WatchUi.DataFieldAlert](/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert/) 是 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 的特殊实例，可通过 [DataField.showAlert()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#showAlert-instance_function) 呈现给用户。Alert 不接收输入，并会在标准提示时长后超时。用户必须在活动警报设置中为应用启用警报。
 
 ## 映射
 
 *自 API 级别 3.0.0*
 
-连接智商使开发人员能够将内载地图图的产品嵌入地图视图应用程序中.地图绘制可以通过两种方式访问:[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/)和[WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/).
+Connect IQ 允许开发者在配备内置地图的产品上，将地图视图嵌入应用。地图功能有两种访问方式：[WatchUi.MapView](/connect-iq/api-docs/Toybox/WatchUi/MapView/) 和 [WatchUi.MapTrackView](/connect-iq/api-docs/Toybox/WatchUi/MapTrackView/)。
 
 ### MapViews
 
