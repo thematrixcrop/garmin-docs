@@ -197,7 +197,7 @@ title: "属性和设置"
 
 ## 在 Garmin Connect Mobile 或 Garmin Express 中更改设置
 
-最终用户可以在 Garmin Connect 或 Garmin Express 的 UI 中查看你定义的设置。应用运行期间设置发生变化时，系统会调用 [AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)。应用可以重写此函数并据此更新状态。处理 Garmin Express 或 Garmin Connect 设置的日期类型值时，请注意时间以 UTC 存储；应使用 [Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function)，而不是 [Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function)，以避免不必要的本地时间转换。
+最终用户可以在 Garmin Connect 或 Garmin Express 的 UI 中查看您定义的设置。应用运行期间设置发生变化时，系统会调用 [AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)。应用可以重写此函数并据此更新状态。处理 Garmin Express 或 Garmin Connect 设置的日期类型值时，请注意时间以 UTC 存储；应使用 [Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function)，而不是 [Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function)，以避免不必要的本地时间转换。
 
 ## 测试应用设置
 
@@ -211,6 +211,6 @@ Connect IQ Simulator 提供应用设置编辑工具。打开 *File > Edit Persis
 
 设备应用、小工具和音频内容提供商都可以接收用户输入，从而实现设备端设置。表盘和数据字段不能接收用于设备端配置的输入，也不能推入用于设备端配置的视图。
 
-如果要为表盘或数据字段提供设备端设置 UI，可以实现 [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)。它的工作方式类似于 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：返回一个由 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 和 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 组成的视图和输入 delegate 对。
+如果要为表盘或数据字段提供设备端设置 UI，可以实现 [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)。它的工作方式类似于 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：返回一对 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 和 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)，分别作为视图和输入委托。
 
 用户可以在系统的 Watch Face 菜单中配置表盘，也可以从活动菜单中配置数据字段。
