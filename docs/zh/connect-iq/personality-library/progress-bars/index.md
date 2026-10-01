@@ -1,17 +1,17 @@
 ---
-title: "Progress Indicators"
+title: "进度指示器"
 ---
 # 进度指示器
 
-在您的应用程序需要执行异步操作时,例如加载更新或新视图时,您应该向用户表示他们需要等待.进步指标提供一个全页的体验,通知用户在等待期间过程正在进行.
+当应用需要执行异步操作（例如加载更新或新视图）时，应告诉用户需要等待。进度指示器通过全屏界面告知用户操作仍在进行。
 
 ## 百分比进度指示器
 
-如果您要量化完成流程所需的进度百分比或时间，可以使用百分比进度指示器向用户展示进度。
+如果可以量化完成流程所需的百分比或时间，可以使用百分比进度指示器向用户展示进度。
 
 ### 示例
 
-查看UI.ProgressBar显示进步百分比,如果您将其初始化为0到100之间的值,请调用[ProgressBar.setProgress()](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/#setProgress-instance_function)更新显示的进步.
+使用 0 到 100 之间的值初始化 `WatchUi.ProgressBar`，即可显示百分比进度。调用 [ProgressBar.setProgress()](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/#setProgress-instance_function) 可以更新显示的进度。
 
 ```typescript
 // InputDelegate.mc
@@ -29,11 +29,11 @@ title: "Progress Indicators"
 
 ## 无限进度指示器
 
-如果您没有已知的进步终点,则可以使用无限进步模式. 这显示一个旋转指标,以显示任务正在进行.
+如果无法确定进度何时结束，可以使用不确定进度模式。该模式显示旋转指示器，表示任务仍在进行。
 
 ### 示例
 
-如果您以`null`值初始化,[WatchUi.ProgressBar](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/)显示一个繁忙的进展.
+使用 `null` 值初始化 [WatchUi.ProgressBar](/connect-iq/api-docs/Toybox/WatchUi/ProgressBar/) 时，会显示不确定进度。
 
 ```typescript
 // InputDelegate.mc
