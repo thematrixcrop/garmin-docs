@@ -401,16 +401,16 @@ var monkeyContinents = {
 
 ### if 语句
 
-在子C中,`if`语句是可用的流量控制语句中最基本的语句.它们用于执行特定部分的代码 *只有*如果特定的布尔式表达式评估为`true`.由`if`语句评估的表达式不能是赋值.将评估为`true`的值或对象包括:
+在 Monkey C 中，`if` 语句是最基本的流程控制语句。只有当布尔表达式的计算结果为 `true` 时，才会执行其中的代码。`if` 语句中的表达式不能是赋值。以下值或对象的计算结果为 `true`：
 
--`true`的值
+- `true`
 
-- 不为零的[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- 非零的 [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
 
-- 一个非零的[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
+- 非 `null` 的对象
 
 
-例如,当`result`的值超过零时,它会打印一个信息给控制台:
+例如，当 `result` 大于零时，下面的代码会向控制台打印消息：
 
 ```cpp
 using Toybox.System;
@@ -421,7 +421,7 @@ if (result > 0) {
 }
 ```
 
-关键字`else`可以添加到`if`区块中,以便更复杂的分分类.一旦表达式被评价为`true`,其相关的语句区块会执行,并且在`if`区块中的任何剩余语句都会被跳过:
+可以在 `if` 代码块中加入 `else`，构建更复杂的分支。表达式一旦计算为 `true`，对应的代码块就会执行，`if` 代码块中的其余分支会被跳过：
 
 ```cpp
 using Toybox.System;
@@ -441,7 +441,7 @@ if (a == true) {
 }
 ```
 
-在下面的示例中,`b`和`c`仅在`a`等于1:
+下面的示例中，只有当 `a` 等于 1 时，才会检查 `b` 和 `c`：
 
 ```cpp
 using Toybox.System;
@@ -455,13 +455,13 @@ if (a == 1) {
 }
 ```
 
-最后,子C支持三位数运算符,这是一个简单的,替代语法.
+最后，Monkey C 支持三元运算符，它提供了一种简洁的替代语法。
 
 ```
 var result = testExpression ? whenTrueExpression : whenFalseExpression
 ```
 
-在`testExpression`被评估以确定它是否是`true`,`whenTrueExpression`是`true`结果,`whenFalseExpression`是`false`结果.结果表达式的值被分配给`result`变量.如果结果表达式没有达到值 (例如类似于[System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)语句),`result`变量被分配为`null`的值.
+计算 `testExpression` 以确定其是否为 `true`；为 `true` 时使用 `whenTrueExpression`，为 `false` 时使用 `whenFalseExpression`。结果表达式的值会赋给 `result`。如果结果表达式没有返回值（例如调用 [System.println()](/connect-iq/api-docs/Toybox/System/#println-instance_function)），`result` 会被赋值为 `null`。
 
 ```cpp
 // If 'a' is true, 'myValue' is assigned a value of 1; otherwise, it is assigned a value of 2.
@@ -472,7 +472,7 @@ var myValue = a ? 1 : 2;
 
 ### Switch-Case 语句
 
-一个`switch`语句是另一种流量控制语句,它可能具有多个执行路径,而不是`if`语句提供的单一路径.一个`switch`语句首先评估一个条件,必须是对象分配不允许.任何数量的连续`case`语句都被允许在开关区块内,每个语句都被对象或`instanceof`表达式接下来.当`switch`评估是等于或是`case`语句的一个实例时,匹配案例区块将执行.例如,这两个例子运行类似:
+`switch` 是另一种流程控制语句，可以提供多个执行路径。它首先计算一个条件，该条件必须是对象，不能是赋值。switch 代码块中可以包含任意数量的连续 `case`，每个 `case` 后面跟着要比较的对象或 `instanceof` 表达式。当 switch 的结果等于某个 `case` 的值，或是该值的实例时，就会执行匹配的代码块。下面两个示例的运行效果相似：
 
 ```cpp
 using Toybox.System;
@@ -499,7 +499,7 @@ switch (myValue) {
 }
 ```
 
-匹配案例区块之后的所有语句,包括随后的案例区块,都在顺序执行,直到遇到`break`语句.此时,开关区块结束,剩余的案例区块被跳过.这种行为称为*fall through*,如下:
+匹配的 case 代码块之后的所有语句（包括后续 case）会按顺序执行，直到遇到 `break`。此时 switch 代码块结束，剩余 case 会被跳过。这种行为称为 *fall through*：
 
 ```cpp
 using Toybox.System;
@@ -517,7 +517,7 @@ switch (myValue) {
 }
 ```
 
-一个开关区块也可以有一个单个,可选的`default`案例,它处理所有未明确处理的案例.最后一个`break`声明不需要,因为控制流量自然会在区块末端掉入开关区块,但如果首选的话,可以包括.
+switch 代码块还可以包含一个可选的 `default` case，用于处理所有未显式处理的情况。最后一个 `break` 不是必需的，因为控制流会自然离开 switch 代码块；如果需要，也可以显式写出。
 
 由于`switch`语句可以启动对象或对象类型,因此可以执行更复杂的操作.下面是接收的应用程序的摘录,根据信息编码方式必须处理不同:
 
@@ -551,7 +551,7 @@ switch (payload[MESSAGE_CODE_INDEX]) {
 }
 ```
 
-决定是否使用`switch`而不是`if`通常是个人偏好的问题.在某些情况下,交换区块可能更可读,特别是当有相对大量的案例需要考虑时.根据特定应用程序的需求,落后也可以是一个有用的工具.
+使用 `switch` 还是 `if` 通常取决于个人偏好。在需要处理较多 case 时，switch 代码块有时更易读。根据具体应用的需求，fall through 也可以成为有用的工具。
 
 <a id="scoping-in-switch-blocks"></a>
 
@@ -587,11 +587,11 @@ switch (myValue) {
 
 <a id="loops"></a>
 
-### 循环
+### Loops
 
-子C支持`for`,`while`和`do-while`循环.循环用于重复语句,直到一个表达式指定的条件达到.所有循环都需要关闭其语句块的支,而单线循环不支持.
+Monkey C 支持 `for`、`while` 和 `do-while` 循环。循环会重复执行语句，直到表达式指定的条件满足。所有循环都必须用花括号包围，因为不支持单行循环。
 
-`while`和`do-while`循环具有熟悉的语法:
+`while` 和 `do-while` 循环的语法与常见语言类似：
 
 ```cpp
 // A do-while loop
@@ -610,7 +610,7 @@ while (myCounter < 10) {
 }
 ```
 
-子C允许在`for`循环中变量声明,这些循环也具有熟悉的语法:
+Monkey C 允许在 `for` 循环中声明变量，其语法也与常见语言类似：
 
 ```cpp
 var myArray = [1, 2, 3, 4, 5];
