@@ -1,13 +1,14 @@
 ---
 title: "Properties and Settings"
 ---
+<a id="properties-and-settings"></a>
 # 属性和设置
 
-应用程序设置框架使应用程序开发人员能够在Garmin Connect和Garmin Express中向终端用户展示其应用程序的选项.这将允许应用程序的定制和设置,特别是对于手表面和数据字段,这些应用程序无法在Garmin设备上接收用户输入.
+应用设置框架允许开发者在 Garmin Connect 和 Garmin Express 中向用户提供应用选项。这尤其适合表盘和数据字段：这些应用无法在 Garmin 设备上接收用户输入，却仍然需要自定义和配置。
 
 ## 属性
 
-应用程序属性是编译时内置在应用程序中的关键和值.属性在应用程序资源中定义,并遵循资源覆盖规则.
+应用属性是在编译时构建到应用中的键值对。属性在应用资源中定义，并遵循资源覆盖规则。
 
 ```xml
 <properties>
@@ -15,31 +16,31 @@ title: "Properties and Settings"
 </properties>
 ```
 
-`id`是一个字符串识别符.`type`必须是以下一个:
+`id` 是字符串标识符，`type` 必须是以下值之一：
 
-|值| 备注 |
+| 值 | 说明 |
 | --- | --- |
-| `number`, `long`, `float`, `double` | 数值 |
-| `boolean` |布尔值|
-| `string` |字符串值|
-| `array` |在属性中不能初始化列值,但默认值可以在应用程序设置中编程|
+| `number`、`long`、`float`、`double` | 数值 |
+| `boolean` | 布尔值 |
+| `string` | 字符串 |
+| `array` | 不能在属性定义中初始化数组，但可以在应用设置中编程指定默认值 |
 
-当您的应用程序安装时,属性被初始化为编程为资源的值.通过以下API来获取和修改属性值:
+应用安装后，属性会初始化为资源中定义的值。可以通过以下 API 读取和修改属性：
 
-| API | 备注 | API 级别 |
+| API | 说明 | API 级别 |
 | --- | --- | --- |
-| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) |得到一个名字的财产| 1.0.0 |
-| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) |修改一个财产值| 1.0.0 |
-| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) |得到一个名字的财产| 2.4.0 |
-| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) |修改一个财产值| 2.4.0 |
+| [AppBase.getProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#getProperty-instance_function) | 按名称获取属性 | 1.0.0 |
+| [AppBase.setProperty()](/connect-iq/api-docs/Toybox/Application/AppBase/#setProperty-instance_function) | 修改属性值 | 1.0.0 |
+| [Properties.getValue()](/connect-iq/api-docs/Toybox/Application/Properties/#getValue-instance_function) | 按名称获取属性 | 2.4.0 |
+| [Properties.setValue()](/connect-iq/api-docs/Toybox/Application/Properties/#setValue-instance_function) | 修改属性值 | 2.4.0 |
 
 ## 设置
 
-应用程序设置允许用户使用移动设备修改应用程序属性.应用程序设置可以在Connect IQ Store应用程序,Garmin Connect应用程序或Garmin Express中修改.
+应用设置允许用户通过移动设备修改应用属性。设置可以在 Connect IQ Store、Garmin Connect 或 Garmin Express 中修改。
 
-应用程序设置由一个属性和相关设置组成.该属性用于存储底层设置值.设置用于描述属性应该如何显示给最终用户.你可以定义一个属性为默认值而不能定义相关设置,但你不能定义一个设置没有将其绑定到一个属性.
+一个应用设置由一个属性和与之关联的设置定义组成。属性用于存储实际值，设置定义则描述该属性应如何呈现给用户。可以只定义属性并为其提供默认值，而不定义关联设置；但不能定义一个没有关联属性的设置。
 
-设置也被定义为资源.使用`<setting>`标签来定义设置.
+设置同样通过资源定义。使用 `<setting>` 标签定义设置。
 
 ```xml
 <settings>
@@ -71,53 +72,53 @@ title: "Properties and Settings"
 </settings>
 ```
 
-下面的表显示了设置的所有有效属性.
+下面列出了 `<setting>` 支持的全部属性：
 
 | 属性 | 值 | 备注 |
 | --- | --- | --- |
-| `propertyKey` |如果不能找到属性密钥,则在编译时会出现错误.| 必需 |
-| `title` |在 Garmin Connect Mobile/Garmin Express中显示设置列表/设置值时显示的标题. 这必须引用字符串资源ID.| 必需 |
-| `prompt` |当要求用户设置值时显示的消息. 这必须引用字符串资源ID.|选择性.即使提供提示,一些设置不会显示提示 (例如,`readonly`或`boolean`设置显示为开关开关).|
-| `helpUrl` |一个为用户提供帮助的网页URL. ** 这已过时使用. **| 可选 |
-| `maxLength` |在数组设置中允许的最大元素数| 可选 |
+| `propertyKey` | 此设置要管理的属性键。找不到对应属性键时会在编译时报告错误。 | 必需 |
+| `title` | 在 Garmin Connect Mobile 或 Garmin Express 中显示设置列表和设置值时使用的标题。必须引用字符串资源 ID。 | 必需 |
+| `prompt` | 提示用户设置值时显示的消息。必须引用字符串资源 ID。 | 可选。某些设置即使提供了 prompt 也不会显示，例如 `readonly` 设置或显示为开关的 `boolean` 设置。 |
+| `helpUrl` | 为用户提供帮助的网页 URL。**此属性已弃用。** | 可选 |
+| `maxLength` | 数组设置允许的最大元素数 | 可选 |
 
-一个`<settingConfig>`,是`<setting>`的子元素,提供了有关设置的额外细节.
+`<settingConfig>` 是 `<setting>` 的子元素，用于提供设置的更多细节。它支持以下属性：
 
-| 属性 | 值 | 有效值 | 备注 |
+| 属性 | 定义 | 有效值 | 备注 |
 | --- | --- | --- | --- |
-| `type` |设置的显示类型.| `list`, `boolean`, `numeric`, `alphaNumeric`, `phone`, `email`, `url`, `date` or `password` |一个`list`值需要儿童`<listEntry>`元素来定义该列表中应提供的选项.|
-| `readonly` |如果设置仅读或不读. 这个属性适用于`list`和`password`除外.|`true`或`false`|默认的`false`.|
-| `required` |如果需要该字段.|`true`或`false`|默认的`false`.|
-| `min` |允许的最低值.|一个整数值|可选.仅适用于`type`值的`numeric`或`date`.|
-| `max` |允许的最大值.|一个整数值|可选.仅适用于`type`值的`numeric`或`date`.|
-| `maxLength` |允许的最大值长度.|一个整数值|可选.仅适用于与其相关属性类型为`string`的设置.|
-| `errorMessage` |如果一个用户输入的值不根据`type`,`min`,`max`和`maxLength`值进行有效显示的错误信息.|引用一个字符串资源.|  |
-| `id` |在数组设置中,用于标记对象设置内的字段的标识符.| 字符串标识符 |这只用于阵列设置|
+| `type` | 设置的显示类型 | `list`、`boolean`、`numeric`、`alphaNumeric`、`phone`、`email`、`url`、`date` 或 `password` | `list` 类型需要使用 `<listEntry>` 子元素定义可选项 |
+| `readonly` | 设置是否只读。除 `list` 和 `password` 外的所有类型都支持 | `true` 或 `false` | 可选，默认为 `false` |
+| `required` | 字段是否必填 | `true` 或 `false` | 可选，默认为 `false` |
+| `min` | 允许的最小值 | 整数 | 可选，仅适用于 `numeric` 或 `date` |
+| `max` | 允许的最大值 | 整数 | 可选，仅适用于 `numeric` 或 `date` |
+| `maxLength` | 允许的最大值长度 | 整数 | 可选，仅适用于关联属性类型为 `string` 的设置 |
+| `errorMessage` | 用户输入的值不符合 `type`、`min`、`max` 和 `maxLength` 时显示的错误消息 | 字符串资源引用 |  |
+| `id` | 在数组设置中用于标记对象内部字段的标识符 | 字符串标识符 | 仅适用于数组设置 |
 
-`<settingConfig>`类型仅适用于某些属性类型:
+`<settingConfig>` 类型只适用于特定的属性类型：
 
-|房产类型| 有效的 `settingsConfig` 类型 |
+| 属性类型 | 有效的 `settingConfig` 类型 |
 | --- | --- |
-| `string` | `alphaNumeric`, `phone`, `email`, `url`, `password` |
-| `number` | `list`, `numeric`, `date` |
+| `string` | `alphaNumeric`、`phone`、`email`、`url`、`password` |
+| `number` | `list`、`numeric`、`date` |
 | `float` | `numeric` |
 | `long` | `numeric` |
 | `double` | `numeric` |
 | `boolean` | `boolean` |
 
-在下面表中定义了`<listEntry>`元素.它的值必须是引用字符串资源.
+`<listEntry>` 元素的定义如下。它的值必须引用字符串资源。
 
 | 属性 | 值 | 备注 |
 | --- | --- | --- |
-| `value` |如果用户选择了此项,则保存值.|如果它不匹配,则会出现编译时间错误.|
+| `value` | 用户选择此项时要保存的值 | 值的类型必须与要保存到的属性类型一致，否则会在编译时报告错误 |
 
-查看[Object Store](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store)和[Application Properties](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties)如何在运行时读取这些值.
+有关如何在运行时读取这些值，请参阅 [Object Store](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store) 和 [Application Properties](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties)。
 
 ### 组
 
-`<group>`标签允许设置组合在一起. 这允许您视觉分离相关设置与非相关设置.一个组包含它组合的设置.一个组不允许包含一个组.
+`<group>` 标签允许将多个设置分组，从而在视觉上区分相关设置和其他设置。一个组包含它所分组的设置，但不能嵌套另一个组。
 
-以下是一个简单的组定义例子:
+下面是一个简单的组定义：
 
 ```xml
 <settings>
@@ -133,22 +134,22 @@ title: "Properties and Settings"
 </settings>
 ```
 
-以下是组选的选项:
+组支持以下属性：
 
 | 属性 | 值 | 备注 |
 | --- | --- | --- |
-| `id` | 字符串 |组的标识符|
-| `title` | 字符串 |集团标题. 这是在移动中显示为列表项.|
-| `description` | 字符串 |组的描述文本.该文本应描述组设置的背景|
-| `enableIfTrue` | 属性标识符 |如果没有检查`boolean`设置,则可以禁用组.如果用户启用功能,则可以显示设置.|
+| `id` | 字符串 | 组的标识符 |
+| `title` | 字符串 | 组标题，在移动端显示为列表项 |
+| `description` | 字符串 | 组描述，应说明这组设置的使用场景 |
+| `enableIfTrue` | 属性标识符 | 如果某个 `boolean` 设置未选中，则禁用该组；可用于在用户启用某项功能后再显示设置 |
 
 ### 数组设置
 
-有时允许用户操纵一个或多个相关项目是有帮助的.例如,假设你的应用程序可以支持多种类型的活动,每个类型的活动都有不同的心率区.用户可能只有两个或三个类型的活动,但你的应用程序支持50种不同的活动.
+有时需要允许用户操作一个或多个相关项目。例如，应用支持多种活动类型，而每种活动类型都有不同的心率区间。用户可能只使用两三种活动类型，但应用支持 50 种活动。
 
-阵列设置允许您定义作为组添加和删除的设置集. 这允许用户创建可在运行时间读取的对象变量列表 (最大尺寸).
+数组设置允许将一组设置作为整体添加和删除，让用户创建一个可变长度的对象列表（不超过最大长度），并在运行时读取它。
 
-为了创建变量列表,所引用的属性必须是`array`类型. 设置定义是设置的集合:
+要创建可变列表，被引用的属性必须是 `array` 类型。设置定义由一组设置组成：
 
 ```xml
 <setting propertyKey="@Properties.ActivityHrZones" title="Activities" maxLength="4">
@@ -190,26 +191,26 @@ title: "Properties and Settings"
 </setting>
 ```
 
-当你查询属性时,它将是一个由[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象组成的阵列,每个`id`键与值相关.你可以使用`maxLength`设置对元素数量的上限.每个`settingConfig`必须有一个`id`字段.
+读取该属性时，会得到一个由 [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象组成的数组，每个 `id` 键对应一个值。可以使用 `maxLength` 设置元素数量上限。每个 `settingConfig` 都必须有 `id` 字段。
 
-每个`<default>`标签都必须引用使用`id`属性的标识符.
+`<defaults>` 标签用于编程指定应用首次安装时的初始值。每个 `<default>` 标签都必须通过 `id` 属性引用对应的标识符。
 
-## 在 Garmin Connect Mobile/Garmin Express 中更改设置
+## 在 Garmin Connect Mobile 或 Garmin Express 中更改设置
 
-最终用户可以在Garmin Connect或Garmin Express UI中查看您定义的设置.当应用程序运行时改变应用程序设置时,会调用[AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)函数.应用程序可以取消此功能并相应更新.当处理由Garmin Express或Garmin Connect设置的日期类型设置时,应注意时间是存储在UTC中,并且在使用此类值时应使用[Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function)代替[Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function)以防止不必要的本地时间转换.
+最终用户可以在 Garmin Connect 或 Garmin Express 的 UI 中查看你定义的设置。应用运行期间设置发生变化时，系统会调用 [AppBase.onSettingsChanged()](/connect-iq/api-docs/Toybox/Application/AppBase/#onSettingsChanged-instance_function)。应用可以重写此函数并据此更新状态。处理 Garmin Express 或 Garmin Connect 设置的日期类型值时，请注意时间以 UTC 存储；应使用 [Gregorian.utcInfo()](/connect-iq/api-docs/Toybox/Time/Gregorian/#utcInfo-instance_function)，而不是 [Gregorian.info()](/connect-iq/api-docs/Toybox/Time/Gregorian/#info-instance_function)，以避免不必要的本地时间转换。
 
-## 测试 App Settings
+## 测试应用设置
 
-应用程序设置编辑工具可在Connect IQ模拟器中使用. 进入 *文件 > 编辑持久存储 > 编辑Application.Properties数据*. 该工具将允许您查看一个项目的定义设置,选择每个设置的值并将它们发送到模拟器进行测试.
+Connect IQ Simulator 提供应用设置编辑工具。打开 *File > Edit Persistent Storage > Edit Application.Properties data*。该工具可以查看项目中定义的设置，为每个设置选择值，并将值发送到模拟器进行测试。
 
 ![](/connect-iq/resources/programmers-guide/app_settings_editor.png)
 
 ## 设备端表盘和数据字段设置
 
-*自 API 级别 3.2.0*
+*自 API 级别 3.2.0 起支持*
 
-设备应用程序,小程序和音频内容提供商都接受用户输入,允许他们在应用程序中实现设备上的设置. 视频面孔和数据字段不允许接受设备配置的输入或推视图.
+Device app、Widget 和 audio content provider 都可以接收用户输入，从而实现设备端设置。表盘和数据字段不能接收用于设备端配置的输入，也不能推入用于设备端配置的视图。
 
-如果您想为您的手表面或数据领域提供设备设置用户界面,您可以实现[AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function).[AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)的功能类似于[AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function),您可以返回最初视图的[WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/)和[WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/)对.
+如果要为表盘或数据字段提供设备端设置 UI，可以实现 [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)。它的工作方式类似于 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：返回一个由 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 和 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 组成的视图和输入 delegate 对。
 
-在系统的Watch Face菜单中可使用手表面孔配置.数据场配置可从活动菜单中使用.
+用户可以在系统的 Watch Face 菜单中配置表盘，也可以从活动菜单中配置数据字段。
