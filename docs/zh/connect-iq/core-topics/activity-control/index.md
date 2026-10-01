@@ -5,7 +5,7 @@ title: "活动控制"
 
 *自 API 级别 5.2.0 起支持*
 
-使用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 可以将用户从应用程序切换到包含已下载内容的活动。[DataField.setWorkout()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#setWorkout-instance_function) 和 [DataField.routeTo()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#routeTo-instance_function) 函数允许数据字段直接更新活动的当前训练或路线。
+调用 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 可以将用户从应用切换到包含已下载内容的活动。[DataField.setWorkout()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#setWorkout-instance_function) 和 [DataField.routeTo()](/connect-iq/api-docs/Toybox/WatchUi/DataField/#routeTo-instance_function) 函数允许数据字段直接更新活动的当前训练或路线。
 
 这些 API 需要 `ActivityControl` 权限：
 
