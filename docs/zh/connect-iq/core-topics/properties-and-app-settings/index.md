@@ -112,7 +112,7 @@ title: "属性和设置"
 | --- | --- | --- |
 | `value` | 用户选择此项时要保存的值 | 值的类型必须与要保存到的属性类型一致，否则会在编译时报告错误 |
 
-有关如何在运行时读取这些值，请参阅 [Object Store](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store) 和 [Application Properties](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties)。
+有关如何在运行时读取这些值，请参阅[对象存储](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-object-store)和[应用属性](/connect-iq/core-topics/persisting-data/#accessing-properties-and-settings-applicationproperties)。
 
 ### 组
 
