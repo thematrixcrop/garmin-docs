@@ -49,9 +49,9 @@ https://your.unlock.url.com?appUnlockRequestId=1fe443e5-e76c-4e1c-b82b-2d084bd4c
 
 ## 使用 `callbackUrl`
 
-`callbackUrl` endpoint 受到保护，只能通过使用单腿 OAuth 1 签名的请求调用。
+`callbackUrl` 端点受到保护，只能通过使用单方 OAuth 1 签名的请求调用。
 
-你需要从应用商店的 Developer Dashboard 获取专属的 key/secret 凭证。
+您需要从应用商店的 Developer Dashboard 获取专属的 key/secret 凭证。
 
 使用这些凭证创建标准 OAuth 1 请求，并将请求发送到 callback URL。建议使用能够生成所需 OAuth HTTP header 的框架。
 
@@ -83,7 +83,7 @@ System.out.println("Return code: " + org.springframework.http.HttpStatus.valueOf
 
 无需实际的解锁请求，也可以测试 OAuth 实现。
 
-使用你的凭证发起签名请求，并将 `appUnlockRequestId` 设为 `test`：
+使用您的凭证发起签名请求，并将 `appUnlockRequestId` 设为 `test`：
 
 ```
 https://apps.garmin.com/appUnlock?appUnlockRequestId=test
