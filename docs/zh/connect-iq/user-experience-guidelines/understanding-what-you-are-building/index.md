@@ -22,13 +22,13 @@ Watch Face 不仅是 Garmin 可穿戴体验的主页，也是用户表达自我�
 
 Connect IQ 允许第三方传感器制造商连接 Garmin 设备。传感器可以记录额外的活动信息，并在 Garmin Connect 中显示。
 
-### 集成 Workout 内容
+### 集成锻炼内容
 
 Connect IQ 允许开发者将自己的内容融入 Garmin 活动体验。
 
 ### 新活动
 
-Garmin 支持多种活动，但 Connect IQ 开发者可以让用户记录设备原生不支持的 Workout，例如舞蹈、轮滑等。
+Garmin 支持多种活动，但 Connect IQ 开发者可以让用户记录设备原生不支持的锻炼，例如舞蹈、轮滑等。
 
 ### 将服务扩展到 Garmin 用户
 
