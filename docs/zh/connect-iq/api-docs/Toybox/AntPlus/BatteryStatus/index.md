@@ -24,7 +24,7 @@ Toybox.AntPlus.CommonData
 
 ## 另见：
 
-- [ANT Downloads & Resources (ANT+ Common Pages)](https://www.thisisant.com/resources/common-data-pages/)
+- [ANT 下载与资源（ANT+ 通用页面）](https://www.thisisant.com/resources/common-data-pages/)
 
 
 起始版本：
