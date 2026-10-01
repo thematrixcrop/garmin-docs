@@ -48,7 +48,7 @@ API 级别 1.2.2
 
 |
 
-Backstroke
+仰泳划水
 
 |
 | SWIM\_STROKE\_BREASTSTROKE | 2 |
@@ -57,7 +57,7 @@ API 级别 1.2.2
 
 |
 
-Breaststroke
+蛙泳划水
 
 |
 | SWIM\_STROKE\_BUTTERFLY | 3 |
@@ -75,7 +75,7 @@ API 级别 1.2.2
 
 |
 
-钻取模式
+训练模式
 
 |
 | SWIM\_STROKE\_MIXED | 5 |
