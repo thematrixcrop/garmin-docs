@@ -852,7 +852,7 @@ API 级别 4.0.0
 
 返回：
 
-- color \[Toybox::Lang::Number\] 32-bit value representing the created color that can be used with Toybox.Graphics functions.
+- color \[Toybox::Lang::Number\] — 表示所创建颜色的 32 位数值，可与 Toybox.Graphics 函数配合使用。
 
 
 起始版本：
