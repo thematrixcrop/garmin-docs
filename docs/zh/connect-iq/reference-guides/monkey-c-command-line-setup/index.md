@@ -1,5 +1,5 @@
 ---
-title: "Using Monkey C from the Command Line"
+title: "从命令行使用 Monkey C"
 ---
 <a id="using-monkey-c-from-the-command-line"></a>
 # 从命令行使用 Monkey C
