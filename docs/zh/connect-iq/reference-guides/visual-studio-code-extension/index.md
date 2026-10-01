@@ -1,5 +1,5 @@
 ---
-title: "Monkey C Visual Studio Code Extension"
+title: "Monkey C Visual Studio Code 扩展"
 ---
 <a id="monkey-c-visual-studio-code-extension"></a>
 # Monkey C Visual Studio Code 扩展
@@ -21,7 +21,7 @@ Monkey C 扩展提供以下功能：
 -   **折叠范围**：现在可以折叠注释、导入语句和代码区域。
 
 
-要充分利用这些功能，项目的类型检查级别需要设为 gradual 或更高。实时错误针对项目上一次构建所使用的设备；如果当前会话还没有构建过产品，则针对 manifest 中的第一个产品。
+要充分利用这些功能，项目的类型检查级别需要设为渐进（gradual）或更高。实时错误针对项目上一次构建所使用的设备；如果当前会话还没有构建过产品，则针对 manifest 中的第一个产品。
 
 ## 安装 Monkey C 扩展
 
@@ -71,7 +71,7 @@ Monkey C 扩展提供以下功能：
 
 | 命令 | 描述 |
 | --- | --- |
-| *Monkey C: Open ERA Viewer* | 打开 [Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application) 工具。 |
+| *Monkey C: Open ERA Viewer* | 打开[错误报告应用](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application)工具。 |
 | *Monkey C: Open Monkey Graph* | 打开 [Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference) 工具。 |
 | *Monkey C: Open Monkey Motion* | 打开 [Monkey Motion](/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion) 工具。 |
 | *Monkey C: Open SDK Manager* | 打开 Connect IQ SDK Manager。 |
@@ -124,13 +124,13 @@ Monkey C 扩展提供以下功能：
 
 | 属性 | 必需 | 类型 | 描述 |
 | --- | --- | --- | --- |
-| `prg` | x | Path | 项目 PRG 文件的绝对路径。 |
-| `prgDebugXml` | x | Path | 项目调试 XML 文件的绝对路径。 |
-| `stopAtLaunch` |  | Boolean | 调试时，程序启动后立即中断。 |
-| `runTests` |  | Boolean | 使用此配置运行时，运行 Run No Evil 测试用例。 |
-| `device` |  | Product Identifier | 要运行的设备，或使用 `${command:GetTargetDevice}` 在每次运行时选择新设备。 |
-| `settingsJson` |  | Path | 项目 Settings 文件的绝对路径。 |
-| `tests` |  | Array of Strings | 可选的字符串数组，列出要运行的测试名称。 |
-| `runNativePairing` |  | Boolean | 以传感器原生配对模式运行应用。 |
-| `complicationPublisherFolder` |  | Path | Complication Publisher 项目文件夹的绝对路径。 |
-| `complicationSubscriberFolder` |  | Path | Complication Subscriber 项目文件夹的绝对路径。 |
+| `prg` | x | 路径（Path） | 项目 PRG 文件的绝对路径。 |
+| `prgDebugXml` | x | 路径（Path） | 项目调试 XML 文件的绝对路径。 |
+| `stopAtLaunch` |  | 布尔值（Boolean） | 调试时，程序启动后立即中断。 |
+| `runTests` |  | 布尔值（Boolean） | 使用此配置运行时，运行 Run No Evil 测试用例。 |
+| `device` |  | 产品标识符（Product Identifier） | 要运行的设备，或使用 `${command:GetTargetDevice}` 在每次运行时选择新设备。 |
+| `settingsJson` |  | 路径（Path） | 项目 Settings 文件的绝对路径。 |
+| `tests` |  | 字符串数组（Array of Strings） | 可选的字符串数组，列出要运行的测试名称。 |
+| `runNativePairing` |  | 布尔值（Boolean） | 以传感器原生配对模式运行应用。 |
+| `complicationPublisherFolder` |  | 路径（Path） | Complication Publisher 项目文件夹的绝对路径。 |
+| `complicationSubscriberFolder` |  | 路径（Path） | Complication Subscriber 项目文件夹的绝对路径。 |
