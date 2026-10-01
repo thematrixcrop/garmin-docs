@@ -123,7 +123,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**insertLayer**](#insertLayer-instance_function)(layer as [WatchUi.Layer](/connect-iq/api-docs/Toybox/WatchUi/Layer/), idx as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) as **Void**
 
