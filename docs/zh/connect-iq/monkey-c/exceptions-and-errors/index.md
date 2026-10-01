@@ -1,44 +1,42 @@
 ---
 title: "Exceptions and Errors"
 ---
+<a id="exceptions-and-errors"></a>
 # 异常和错误
 
-子C支持对可恢复的非致命错误进行结构化例外处理.Java和JavaScript开发人员应该熟悉这个语法:
+Monkey C 支持对可恢复的非致命错误进行结构化异常处理。Java 和 JavaScript 开发者应该会熟悉以下语法：
 
 ```java
 try {
-    // 要执行的代码
+    // Code to execute
 }
 catch( ex instanceof AnExceptionClass ) {
-    // 处理 AnExceptionClass 的抛出
+    // Code to handle the throw of AnExceptionClass
 }
 catch( ex ) {
-    // 捕获所有异常
+    // Code to catch all execeptions
 }
 finally {
-    // 要执行的代码
+    // Code to execute when
 }
 ```
 
-您可以使用`throw`关键字来做一个例外.
+可以使用 `throw` 关键字抛出异常。
 
-##创造一个例外
+## 创建异常
 
-如果您正在创建自己的例外,请遵循以下规则:
+如果要创建自定义异常，请遵循以下规则：
 
--   扩展 `Toybox.Lang.Exception`
+- 继承 `Toybox.Lang.Exception`。
+- 在初始化函数中初始化超类。
+- 将字符串消息赋给 `mMessage` 成员变量。
 
-- 在初始化器中初始化超级类
-
-- 将字符串消息分配给`mMessage`成员变量
-
-
-例如,应用程序特定的例外可以定义如下:
+例如，可以按如下方式定义应用专用异常：
 
 ```typescript
 class AppSpecificException extends Lang.Exception {
-    //! 构造函数
-    //! @param msg 解释原因的消息
+    //! Constructor
+    //! @param msg Message explaining cause
     function initialize(msg) {
         Exception.initialize();
         self.mMessage = msg;
@@ -48,82 +46,80 @@ class AppSpecificException extends Lang.Exception {
 
 ## 错误
 
-由于 Monkey C 使用动态打字,因此编译器无法检查许多错误.如果错误的严重程度足够高,它将导致致命的API错误,并导致您的应用程序在运行时终止.这些错误无法被捕获.
+由于 Monkey C 使用动态类型，编译器无法检查许多错误。如果错误严重到一定程度，系统会抛出致命 API 错误，并在运行时终止应用。这些错误无法通过异常处理器捕获。
 
-无限的排列
+**数组越界**
 
-```
-  An attempt is being made to reference an array outside of its allocated bounds
-```
+尝试访问数组已分配范围之外的元素。
 
-循环依赖
+**循环依赖**
 
-在模块或对象的依赖图中存在循环,阻止模块或对象的构建
+模块或对象的依赖关系图中存在循环，导致模块或对象无法构造。
 
-通信错误
+**通信错误**
 
-[低功耗蓝牙](https://en.wikipedia.org/wiki/Bluetooth_low_energy)通信中发生错误
+[Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_low_energy) 通信发生错误。
 
-找不到文件
+**找不到文件**
 
-应用文件无法找到,通常是试图从应用文件中加载资源时引起的
+找不到应用文件，通常是因为尝试从应用文件中加载资源。
 
-非法帧
+**非法栈帧**
 
-堆上的返回地址是腐败的
+栈上的返回地址已损坏。
 
-初始化程序错误
+**初始化错误**
 
-启动器出现错误
+初始化函数发生错误。
 
-无效值
+**无效值**
 
-转移到函数或方法的参数是无效的
+传给函数或方法的参数无效。
 
-Null 引用
+**空引用**
 
-从零值中请求一个值
+尝试从空值读取数据。
 
-忘记了
+**内存不足**
 
-显示系统内存不再可用于分配
+系统没有更多可用于分配的内存。
 
-需要权限
+**需要权限**
 
-尝试使用未经许可的限制 API
+尝试在没有权限的情况下使用受限 API。
 
-堆栈下溢
+**栈下溢**
 
-堆积指针超过了堆积内存限制的底部
+栈指针越过栈内存限制的底部。
 
-Stack Overflow
+**栈溢出**
 
-堆积指针超过了堆积内存限制
+栈指针越过栈内存限制的顶部。
 
-找不到符号
+**找不到符号**
 
-尝试访问一个不存在于指定对象或方法中的变量或方法
+尝试访问指定对象或方法中不存在的变量或方法。
 
-系统错误
+**系统错误**
 
-玩具盒API用于致命错误的通用错误
+Toybox API 用于表示致命错误的通用错误。
 
-参数过多
+**参数过多**
 
-一种方法使用过多的参数,目前仅限于10个参数
+方法使用了过多参数，目前限制为 10 个参数。
 
-计时器过多
+**计时器过多**
 
-太多的`Timer::Timer`对象被启动了
+为目标设备启动的 `Timer::Timer` 对象过多。
 
-意外的类型
+**类型错误**
 
-表示一个因类型不支持的变量上进行的操作;例如,试图在两个字符串上执行一个位向 OR
+对变量执行了其类型不支持的操作，例如尝试对两个字符串执行按位 OR。
 
-未处理的异常
+**未处理的异常**
 
-一个`Exception`被扔了,但没有被例外处理器抓住
+抛出了 `Exception`，但没有被异常处理器捕获。
 
-看门狗已触发
+**看门狗触发**
 
-一个子C函数已经执行了太长时间;监护犬阻止 program子C程序通过无限循环挂系统
+Monkey C 函数执行时间过长；看门狗会阻止 Monkey C 程序因无限循环而挂起系统。
