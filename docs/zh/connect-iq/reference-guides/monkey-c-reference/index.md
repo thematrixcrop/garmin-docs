@@ -728,11 +728,11 @@ function myOtherFunction() {
 
 ## 类和对象
 
-类是将数据和操作捆绑在一起的蓝图,将其组建成一个类的实例,称为 *对象*.变量,函数和其他类 (通常称为 *members*) 可以在子C类内定义.对象被编译,不能在运行时进行修改,因此所有变量必须在使用之前在本地函数,类实例或母模块中声明.
+类是将数据和操作捆绑在一起的蓝图，类的实例称为 *对象*。变量、函数和其他类（统称为 *成员*）都可以在 Monkey C 类中定义。对象在编译时确定，不能在运行时修改，因此所有变量都必须在使用前在局部函数、类实例或父模块中声明。
 
 ### 定义类
 
-一个类是使用`class`关键词定义的.例如,这里有一个简单的类,定义了一个圆形,其中有一个`mRadius`成员,代表一个圆形的半径:
+使用 `class` 关键字定义类。例如，下面的简单类定义了一个表示圆半径的 `mRadius` 成员：
 
 ```cpp
 class Circle {
@@ -742,13 +742,13 @@ class Circle {
 
 ### 创建对象
 
-为了创建一个类的实例,使用`new`关键字:
+使用 `new` 关键字创建类的实例：
 
 ```cpp
 var myCircle = new Circle();
 ```
 
-这还没有做太多有用的事情.然而,当一个对象被使用`new`关键字即时化时,对象的内存被分配,其`initialize()`方法被自动调用,作为构造器.在下面的圆圈类中已经实现了`initialize()`方法,每当创建新的圆圈时都设定一个半径值:
+上面的类目前还没有太多功能。不过，使用 `new` 实例化对象时，会为对象分配内存，并自动调用其 `initialize()` 方法作为构造函数。下面的 Circle 类实现了 `initialize()`，每次创建新 Circle 时都会设置半径：
 
 ```cpp
 class Circle {
@@ -762,11 +762,11 @@ class Circle {
 var myCircle = new Circle(2);
 ```
 
-如果类是嵌入式的,最远的类必须首先在此之前进行实时化,并且可以在附带的类中进行实时化.
+如果类是嵌套的，必须先实例化外层类，之后才能实例化嵌套类。
 
 ### 进入课堂成员
 
-在一个方法实现中,当前的对象实例可以用`self`或`me`关键字来引用.这些可以用于从本地变量中分歧的实例变量,或者简单来澄清.例如,这里有新的方法来计算它的周围和表面积,使用`self`关键字来引用`mRadius`实例变量:
+在方法实现中，可以使用 `self` 或 `me` 关键字引用当前对象实例。它们可以用来区分实例变量和局部变量，也可以让代码更清晰。例如，下面的方法使用 `self` 引用 `mRadius`，计算圆的周长和面积：
 
 ```cpp
 using Toybox.Math as Math;
@@ -787,11 +787,11 @@ class Circle {
 }
 ```
 
-** 注:**子C中嵌入的类别无法访问附加类的成员.
+**注意：**Monkey C 中的嵌套类无法访问外层类的成员。
 
 ### 继承
 
-继承允许一个类基于另一个类,这有助于加快开发时间并促进代码重复使用.而不是为类似对象定义完全新的类,新的类可以继承现有类的成员.例如,可以通过使用`extends`关键字来定义一个新的球类,通过从圆类继承了许多相同的属性:
+继承允许一个类基于另一个类，从而加快开发并促进代码复用。与其为相似对象定义全新类，不如让新类继承已有类的成员。例如，可以使用 `extends` 关键字定义 Sphere 类，并从 Circle 继承许多属性：
 
 ```cpp
 using Toybox.Math as Math;
@@ -835,11 +835,11 @@ class Sphere extends Circle {
 }
 ```
 
-唯一没有从母类继承的东西 (也称为基类或超级类) 是一个`initialize()`方法,该方法必须单独用于球体. 在这种情况下,它只是调用母类的`initialize()`方法来设置半径.
+唯一不会从父类（也称为基类或超类）继承的是 `initialize()` 方法；Sphere 必须单独实现该方法。在这里，它只是调用父类的 `initialize()` 来设置半径。
 
-** 注:** 子C不隐含地调用母类的`initialize()`方法,因此小类必须明确地调用基类构造器.可以在任何扩展`View`类的 Connect IQ SDK分布式样本中看到这一点.
+**注意：**Monkey C 不会隐式调用父类的 `initialize()`，因此子类必须显式调用基类构造函数。在 Connect IQ SDK 中扩展 `View` 类的示例里可以看到这一点。
 
-循环类的`getArea()`方法不会适用于球体,因此也实施了一个新的`getArea()`方法,以*过渡*`getArea()`的循环类的方法.最后,每个类都添加了`describe()`方法,让每个对象类型描述自己.让我们把这些类进行工作:
+Circle 类的 `getArea()` 不适用于 Sphere，因此 Sphere 实现了新的 `getArea()`，以*覆盖* Circle 的方法。最后，为两个类添加 `describe()` 方法，让每种对象类型描述自己。现在运行这些类：
 
 ```cpp
 // Create new objects
@@ -855,13 +855,13 @@ System.println(mySphere.getArea());           // 314.159271
 mySphere.describe();                          // "I'm a Sphere! My parent is a Circle!"
 ```
 
-注意从Sphere的`describe()`方法直接使用母类的符号来调用母类的`describe()`方法.`superclass.memberMethod()`在子C中有效,但`superclass.memberVariable`语法不支持.
+注意，Sphere 的 `describe()` 方法直接使用父类名称调用父类的 `describe()`。`superclass.memberMethod()` 在 Monkey C 中有效，但不支持 `superclass.memberVariable` 语法。
 
 <a id="static-members"></a>
 
 ### 静态成员
 
-在某些情况下,某些类成员需要在对象内访问,而不需要创建对象的实例.例如,想象一下只包含单元转换常数的单元转换类:
+有时需要访问类成员，但不希望创建类实例。例如，可以定义一个只包含单位转换常量的 Conversion 类：
 
 ```cpp
 class Conversion {
@@ -876,7 +876,7 @@ var myConverter = new Conversion(); // Create an instance of the Conversion clas
 System.println(meters * myConverter.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
 ```
 
-通常情况下,在使用该类内的任何成员之前,首先需要创建转换类的实例,包括变量,常数,编号或函数.如果`static`关键字被应用到常数上,但在不实例化转换类的情况下,可以使用它们:
+通常，使用类中的变量、常量、枚举或函数前必须先实例化该类。如果给常量添加 `static` 关键字，就可以在不实例化 Conversion 的情况下使用它们：
 
 ```cpp
 class Conversion {
@@ -890,7 +890,7 @@ var meters = 32;
 System.println(meters * Conversion.FEET_PER_METER + " feet"); // Prints "104.986877 feet"
 ```
 
-静态成员的另一个优势是,它们属于类而不是类的特定实例.这意味着类似于静态变量的东西可以在类的多个实例之间共享,如果在一个实例中改变其值,新的值就会在所有实例中立即可用:
+静态成员的另一个优势是属于类本身，而不是某个实例。因此，静态变量可以在类的多个实例之间共享；在一个实例中修改它的值后，所有实例都会立即看到新值：
 
 ```cpp
 class BananaBunch {
@@ -913,7 +913,7 @@ System.println(bunchTwo.mNumberOfBananas); // 12 - notice this one also reflects
 
 ### 数据隐藏
 
-类成员有三个访问级别*私*,*保护*,和*公共*.`private`修改器指定了成员只能在自己的类中访问.`protected`修改器指定了成员只能通过自己的类或其子类访问.`hidden`关键字是`protected`关键字的同义词.一个`public`访问修改器是默认的,但也可以明确指定.当`public`修改器用于列表,变量或函数时,这些成员可见于所有其他类.
+类成员有三个访问级别：*private*、*protected* 和 *public*。`private` 修饰符表示成员只能在所属类中访问；`protected` 表示成员只能在所属类或子类中访问；`hidden` 是 `protected` 的同义词。`public` 是默认访问级别，也可以显式指定。使用 `public` 修饰枚举、变量或函数时，这些成员对其他类可见。
 
 ```cpp
 using Toybox.System as System;
@@ -929,7 +929,7 @@ function myFunction() {
 }
 ```
 
-变量是`public`或`protected`可以使用以下任何一个格式访问:
+`public` 或 `protected` 变量可以使用以下任一格式访问：
 
 ```cpp
 var x = mMmemberVariable;
