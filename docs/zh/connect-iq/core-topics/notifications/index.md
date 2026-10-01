@@ -1,46 +1,43 @@
 ---
 title: "Notifications"
 ---
+<a id="notifications"></a>
 # 通知
 
-后台服务可以通过调度更新或被事件唤醒来定期运行。有时您可能希望根据后台处理请求用户打开您的应用。
+后台服务可以通过定时更新或事件唤醒的方式周期性运行。有时，你可能希望根据后台处理结果提示用户打开应用。
 
-| API | 描述 | API 级别 |
+| API | 说明 | API 级别 |
 | --- | --- | --- |
-| [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) | 请求用户启动应用。这显示为确认对话框。 | 2.3.0 |
-| [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) | 通知用户来自后台的事件。这显示为应用通知。 | 5.1.0 |
+| [Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) | 请求用户启动应用，并显示确认提示。 | 2.3.0 |
+| [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) | 将后台事件通知用户，并显示为应用通知。 | 5.1.0 |
 | [Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) | 接收应用通知的状态。 | 5.1.0 |
 
 ## 唤醒应用
 
-*自 API 级别 2.3.0 起*
+*自 API 级别 2.3.0 起支持*
 
-[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 允许您中断用户并请求他们打开您的应用。调用时，用户将看到您选择的确认消息。如果资源不足以启动应用，系统可能会阻止此请求。
+[Background.requestApplicationWake()](/connect-iq/api-docs/Toybox/Background/#requestApplicationWake-instance_function) 可以打断用户当前操作，请求用户打开应用。调用后，系统会显示由你指定的确认消息。如果没有足够资源启动应用，系统可能会抑制此请求。
 
 ## 通知
 
-*自 API 级别 5.1.0 起*
+*自 API 级别 5.1.0 起支持*
 
-Notifications API 允许您连接到通知系统并向用户提供可操作的通知。要向用户显示通知，请使用 [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) API。通知可以包含以下项目：
+Notifications API 可以接入系统通知，并向用户提供可操作的通知。要显示通知，请使用 [Notifications.showNotification()](/connect-iq/api-docs/Toybox/Notifications/#showNotification-instance_function) API。通知可以包含以下内容：
 
--   标题字符串
+- 标题字符串
+- 副标题字符串
+- 正文字符串
+- 自定义图标。如果未指定，则使用应用图标。
 
--   副标题字符串
+通知的展示方式会匹配设备的 personality，因此不同设备上的显示效果可能不同。如果同时存在多条通知，系统会显示最新的一条。将 `:dismissPrevious` 选项设为 `true`，可以请求系统在显示新通知前清除来自应用的其他通知。
 
--   正文字符串
+可以为通知定义一组 action。每个 action 由字符串和可序列化数据组成，并会随通知一起显示给用户。用户选择 action 后，系统会调用 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)，并在 `state` 字典的 `:launchedFromNotification` 中提供 action 数据。通知默认带有启动和关闭 action；使用 `:data` 选项可以为默认 action 关联数据。
 
--   自定义图标。如果不指定此项，则使用应用图标。
-
-
-展示将匹配设备的个性风格，不能保证在不同设备上显示相同。如果有多个通知存在，将显示最新的通知。您可以将 `:dismissPrevious` 选项设置为 true，以在显示新通知之前请求系统清除您应用的其他通知。
-
-您可以为通知定义一个动作数组。动作定义为字符串和可序列化数据。动作字符串与通知一起呈现给用户。如果用户选择其中一个动作，您的 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) 的 `state` 字典将被调用，其中包含 `:launchedFromNotification`（带有动作数据）。默认情况下，通知具有与之关联的启动和关闭动作。使用 `:data` 选项允许您将数据与默认动作关联。
-
-[Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 允许应用在通知动作被触发或通知被取消时收到通知。
+[Notifications.registerForNotificationMessages()](/connect-iq/api-docs/Toybox/Notifications/#registerForNotificationMessages-instance_function) 可以让应用在通知 action 被触发或通知被关闭时收到通知。
 
 ## 示例
 
-以下内容将显示带有"回复"和"关闭"选项的通知：
+下面的代码会显示带有“回复”和“转发”选项的通知：
 
 ```typescript
 Notifications.showNotification("Jeff", "Something Happened", {
@@ -53,6 +50,6 @@ Notifications.showNotification("Jeff", "Something Happened", {
 });
 ```
 
-# 另见
+# 另请参阅
 
-Notification 示例展示了如何使用通知。
+`Notification` 示例应用演示了如何使用通知。
