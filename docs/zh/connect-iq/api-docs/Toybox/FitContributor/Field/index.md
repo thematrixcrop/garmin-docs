@@ -26,9 +26,9 @@ Field 将来自 Application 或 Data Field 的自定义 FIT 数据记录到设�
 
 - [Session.createField()](/connect-iq/api-docs/Toybox/ActivityRecording/Session/#createField-instance_function)
 
-- [Smart Recording vs. Every Second Recording](https://support.garmin.com/?faq=s4w6kZmbmK0P6l20SgpW28)
+- [智能记录与每秒记录](https://support.garmin.com/?faq=s4w6kZmbmK0P6l20SgpW28)
 
-- [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
+- [了解 FIT 格式](http://www.thisisant.com/resources/fit)
 
 
 起始版本：
