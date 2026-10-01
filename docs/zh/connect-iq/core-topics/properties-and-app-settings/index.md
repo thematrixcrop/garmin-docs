@@ -1,5 +1,5 @@
 ---
-title: "Properties and Settings"
+title: "属性和设置"
 ---
 <a id="properties-and-settings"></a>
 # 属性和设置
