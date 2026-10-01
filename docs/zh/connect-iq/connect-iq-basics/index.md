@@ -54,7 +54,7 @@ Connect IQ 应用可以运行在多台设备上，但支持哪些设备由开发
 
 设备并不完全相同，但通常具有共同能力。两款手表可能采用不同的显示技术，却都支持位图、字体、用户事件、[ANT/ANT+](http://www.thisisant.com/developer/ant-plus/ant-antplus-defined/) 和 [BLE](https://en.wikipedia.org/wiki/Bluetooth_low_energy)。开发体育应用的开发者不应为了支持多台设备而完全重写应用。
 
-4. **在运行时,开发人员可以询问系统"有什么"**
+4. **开发者可以在运行时查询系统支持的能力**
 
 Connect IQ 应用会在运行时与系统动态链接。如果应用引用了特定系统中不存在的 API，只有在实际引用该 API 时才会运行失败，而不是像 C++ 那样在加载时失败。应用可以利用 `has` 运算符先检查能力，从而避免调用不存在的 API。
 
