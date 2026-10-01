@@ -14,7 +14,7 @@ title: "Manifest File and Permissions"
 
 `entry` 属性必须指定应用的 [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 对象。
 
-`name` 和 `launcherIcon` 属性必须指定应用资源中定义的资源 ID。`name` 必须引用 strings 资源中的 `string` 条目，`launcherIcon` 必须引用 bitmap 资源。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#resources)。请注意，不应在应用中重复使用图标资源；如果要在应用内部使用同一图标，请创建一个副本资源。
+`name` 和 `launcherIcon` 属性必须指定应用资源中定义的资源 ID。`name` 必须引用 strings 资源中的 `string` 条目，`launcherIcon` 必须引用 bitmap 资源。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#resources)。请注意，不应在应用中重复使用启动器图标资源；如果要在应用内部使用同一图标，请创建一个副本资源。
 
 如果指定了 `launcherIcon`，资源编译器会自动调整资源大小以匹配产品图标尺寸。如果未指定 `launcherIcon`，系统会将默认图标编译到应用中。
 
@@ -33,7 +33,7 @@ title: "Manifest File and Permissions"
 
 Manifest 中指定的应用类型决定应用在设备上的显示位置，以及应用可以使用的 API。
 
-`minApiLevel` 字段指定应用兼容的最低 Connect IQ API level，用于防止应用面向不兼容的设备。创建新应用或编辑现有应用属性时，可以在 Monkey C 扩展中选择最低 API level。微版本会写入 Manifest（例如 1.2.1），但确定设备支持情况时只考虑主版本和次版本。
+`minApiLevel` 字段指定应用兼容的最低 Connect IQ API 级别，用于防止应用面向不兼容的设备。创建新应用或编辑现有应用属性时，可以在 Monkey C 扩展中选择最低 API 级别。微版本会写入 Manifest（例如 1.2.1），但确定设备支持情况时只考虑主版本和次版本。
 
 每个应用都必须包含一个 [Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 对象，作为应用入口点。创建项目时，Monkey C 扩展会自动生成该对象。
 
@@ -57,9 +57,9 @@ Garmin 为各种使用场景提供了大量产品，Monkey C 也让开发者可�
 
 ### 支持的活动
 
-*自 API level 5.2.0 起可用*
+*自 API 级别 5.2.0 起可用*
 
-API level 5.2 的设备支持安装后流程，允许用户将数据字段与活动关联。如果要过滤活动列表，可以在 Manifest 中加入活动过滤器。
+API 级别 5.2 的设备支持安装后流程，允许用户将数据字段与活动关联。如果要过滤活动列表，可以在 Manifest 中加入活动过滤器。
 
 ```xml
 <!--
@@ -77,17 +77,17 @@ API level 5.2 的设备支持安装后流程，允许用户将数据字段与活
 
 此过滤器根据 FIT sport 和 sub-sport 标识符构建。如果未提供 sub-sport，过滤器会覆盖该 sport 下的所有子运动。可以直接使用 FIT 标识符，而不是使用常量。以下是一些示例：
 
-| Activity | Sport | Sub-Sport |
+| 活动 | 运动类型 | 子运动类型 |
 | --- | --- | --- |
-| Running (All) |  | None |
-| Trail Running |  |  |
-| Track Running |  |  |
-| Treadmill Running |  |  |
-| Indoor Running |  |  |
-| Cycling (All) |  | None |
-| Mountain Biking |  |  |
-| Gravel Biking |  |  |
-| Indoor Cycling |  |  |
+| 跑步（全部） |  | 无 |
+| 越野跑 |  |  |
+| 田径场跑步 |  |  |
+| 跑步机跑步 |  |  |
+| 室内跑步 |  |  |
+| 骑行（全部） |  | 无 |
+| 山地骑行 |  |  |
+| 碎石路骑行 |  |  |
+| 室内骑行 |  |  |
 
 ## 权限
 
@@ -103,7 +103,7 @@ API level 5.2 的设备支持安装后流程，允许用户将数据字段与活
 
 可用权限如下：
 
-| Permission | Applicable Modules | API level | Watch Face | Data Field | Widget | App | Audio Content Provider |
+| 权限 | 适用模块 | API 级别 | 表盘 | 数据字段 | 小工具 | 应用 | 音频内容提供商 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Ant | [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/) | 1.0.0 |  | x | x | x | x |
 | Background | [Toybox.Background](/connect-iq/api-docs/Toybox/Background/) | 2.3.0 | x | x | x | x | x |
@@ -124,7 +124,7 @@ API level 5.2 的设备支持安装后流程，允许用户将数据字段与活
 
 ## 语言
 
-Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会影响应用可以在哪些地区发布。在 Manifest 中声明应用支持的语言后，导出应用到商店时会使用这些设置。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#strings)。
+Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会影响应用可以在哪些地区发布。在 Manifest 中声明应用支持的语言后，将应用导出到商店时会使用这些设置。更多信息请参阅 [Resources](/connect-iq/core-topics/resources/#strings)。
 
 ## 依赖项
 
@@ -138,7 +138,7 @@ Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会�
 
 每个 Barrel 的选项如下：
 
-| Option | Type | Value |
+| 选项 | 类型 | 值 |
 | --- | --- | --- |
 | `name` | `string` | Barrel 声明的命名空间模块名称。 |
 | `version` | `a.b.c.d`（可选） | Barrel 声明的版本号。 |
@@ -147,17 +147,17 @@ Connect IQ 应用可以本地化为 30 多种语言。应用支持的语言会�
 
 如果指定了版本，构建系统会强制使用符合该版本的库。以下选项可以修改这些规则：
 
-| Format | Meaning | Example | Valid Version | Invalid Version |
+| 格式 | 含义 | 示例 | 有效版本 | 无效版本 |
 | --- | --- | --- | --- | --- |
-| Exact | 应用链接到库的特定版本。 | `version="1.2.3"` | 版本 `1.2.3` | 任何其他版本 |
-| Greater or Equal | 应用链接到版本匹配或更高的库。 | `version=">=1.2.3"` | 版本 `1.2.3` 或更高 | 版本 `1.2.2` 或更低 |
-| Pessimistic | 应用链接到主版本和次版本匹配的库，但微版本必须等于或高于指定版本。 | `version="~>1.2.3"` | 版本 `1.2.3`、`1.2.4`、`1.2.5` 等 | 版本 `1.2.2`、`1.3.1` 等 |
-| Whatever | 构建时不强制链接库的版本。 | 未指定 version 属性。 | 任意 | 不适用 |
+| Exact（精确） | 应用链接到库的特定版本。 | `version="1.2.3"` | 版本 `1.2.3` | 任何其他版本 |
+| Greater or Equal（大于或等于） | 应用链接到版本匹配或更高的库。 | `version=">=1.2.3"` | 版本 `1.2.3` 或更高 | 版本 `1.2.2` 或更低 |
+| Pessimistic（悲观约束） | 应用链接到主版本和次版本匹配的库，但微版本必须等于或高于指定版本。 | `version="~>1.2.3"` | 版本 `1.2.3`、`1.2.4`、`1.2.5` 等 | 版本 `1.2.2`、`1.3.1` 等 |
+| Whatever（任意） | 构建时不强制链接库的版本。 | 未指定 `version` 属性。 | 任意 | 不适用 |
 
 版本前可以加 `>=`，表示最低支持版本。
 
 更多信息请参阅 [Shareable Libraries](/connect-iq/core-topics/shareable-libraries/#shareable-libraries)。
 
-Communication 需要启用 Background 权限，但 Authentication 不需要。
+`Communications` 需要启用 `Background` 权限，但 `Authentication` 不需要。
 
-只有 Widget 和 App 可以调用 [Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)。
+只有小工具和应用可以调用 [Position.enableLocationEvents()](/connect-iq/api-docs/Toybox/Position/#enableLocationEvents-instance_function)。
