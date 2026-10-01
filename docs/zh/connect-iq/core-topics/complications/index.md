@@ -172,7 +172,7 @@ function onPress(clickEvent as ClickEvent) as Boolean {
 
 通过 `access` 属性，可以控制复杂功能对哪些应用可见：使用相同开发者密钥的应用、所有应用、Face It，或这些范围的组合：
 
-| 可见性 | 你的应用 | Face It | 所有应用 |
+| 可见性 | 应用 | Face It | 所有应用 |
 | --- | --- | --- | --- |
 | `public` | X | X | X |
 | `protected` | X | X |  |
