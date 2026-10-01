@@ -548,7 +548,7 @@ API 级别 5.0.1
 
 - drawable — ([WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), null) —
 
-    用于渲染页脚区域的 drawable，或 `null`。
+    用于渲染页脚区域的可绘制对象，或 `null`。
 
 
 起始版本：
