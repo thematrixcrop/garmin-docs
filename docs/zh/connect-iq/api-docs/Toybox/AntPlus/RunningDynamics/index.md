@@ -135,7 +135,7 @@ API 级别 2.4.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.RunningDynamicsListener](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
