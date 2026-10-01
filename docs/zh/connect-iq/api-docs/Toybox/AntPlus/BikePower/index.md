@@ -22,9 +22,9 @@ Toybox.AntPlus.Device
 
 ## 另见：
 
-- [BikePowerListener example for full MyBikePowerListener implementation](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
+- [完整 MyBikePowerListener 实现的 BikePowerListener 示例](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
-- [BikePowerListener example for examples of onCalculated\* methods available in {Toybox::AntPlus::BikePowerListener BikePowerListener}](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
+- [{Toybox::AntPlus::BikePowerListener BikePowerListener} 中可用 onCalculated\* 方法的 BikePowerListener 示例](/connect-iq/api-docs/Toybox/AntPlus/BikePowerListener/)
 
 
 示例：
