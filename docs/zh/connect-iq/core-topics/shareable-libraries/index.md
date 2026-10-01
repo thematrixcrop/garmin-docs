@@ -20,7 +20,7 @@ Monkey Barrel 可以方便地存储和复用有用的通用代码和资源。例
 
 4.  选择项目类型 *Monkey Barrel*。
 
-5.  选择最低 API level。
+5.  选择最低 API 级别。
 
 6.  设置新项目的父目录。
 
