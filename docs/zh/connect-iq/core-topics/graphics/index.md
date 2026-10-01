@@ -61,7 +61,7 @@ Garmin 设备的字体支持可能因设备而异。所有设备都支持单码�
 
 *自 API 级别 3.2.0*
 
-默认情况下，多边形和线条等图元不会启用抗锯齿，但可以调用 [Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function) 启用。此方法在 API level 3.2.0 之前不存在，因此如果应用运行在更低 API level 上，请使用 `has` 检查进行保护。
+默认情况下，多边形和线条等图元不会启用抗锯齿，但可以调用 [Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function) 启用。此方法在 API 级别 3.2.0 之前不存在，因此如果应用运行在更低 API 级别上，请使用 `has` 检查进行保护。
 
 ```typescript
 function draw(dc) {
@@ -76,7 +76,7 @@ function draw(dc) {
 
 *自 API 级别 4.0.0*
 
-API level 4.0.0 为 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 增加了强大的新工具：
+API 级别 4.0.0 为 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 增加了强大的新工具：
 
 | 函数 | 目的 | 接受的参数 | API 级别 |
 | --- | --- | --- | --- |
@@ -130,7 +130,7 @@ Connect IQ 允许使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybox/G
 
 如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用生命周期较短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，就需要重新渲染其内容。也可以调用引用上的 `get()` 方法获取位图的锁定版本，防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被图形池清除；但如果加载更多资源，也可能导致图形池耗尽可用空间。
 
-要创建 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)，请使用 [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function) API。如果应用运行在 API level 4.0 之前的设备上，请使用 `has` 检查保护对 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的分配：
+要创建 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)，请使用 [Graphics.createBufferedBitmap()](/connect-iq/api-docs/Toybox/Graphics/#createBufferedBitmap-instance_function) API。如果应用运行在 API 级别 4.0 之前的设备上，请使用 `has` 检查保护对 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的分配：
 
 ```typescript
 import Toybox.Graphics;
