@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Connect IQ"
+title: "欢迎使用 Connect IQ"
 ---
 <a id="welcome-to-connect-iq"></a>
 
