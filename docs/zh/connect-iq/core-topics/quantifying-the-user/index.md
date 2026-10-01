@@ -1,5 +1,5 @@
 ---
-title: "Quantifying User Information"
+title: "量化用户信息"
 ---
 # 量化用户信息
 
