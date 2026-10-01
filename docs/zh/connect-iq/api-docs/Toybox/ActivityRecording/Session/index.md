@@ -16,11 +16,11 @@ Toybox.Lang.Object
 
 ## 概述
 
-Session 对象控制 FIT 记录状态机。
+Session 对象用于控制 FIT 记录的状态机。
 
 示例：
 
-用于设置 Session 对象的格式
+创建 Session 对象的示例：
 
 ```
 using Toybox.ActivityRecording;
@@ -35,11 +35,11 @@ var session = ActivityRecording.createSession({  // set up recording session
 
 API 级别 1.0.0
 
-## 实例方法摘要 [collapse](#)
+## 实例方法摘要 [收起](#)
 
 - [**addLap**](#addLap-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    向当前记录添加一个圈。
+    为当前活动记录添加一次计圈。
 
 - [**createField**](#createField-instance_function)(name as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), fieldId as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), type as [FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module), options as { :count as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :mesgType as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), :units as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), :nativeNum as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) }) as [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)
 
@@ -47,15 +47,15 @@ API 级别 1.0.0
 
 - [**discard**](#discard-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    丢弃录制的数据以完成 Session。
+    丢弃已记录的数据，并结束当前 Session。
 
 - [**isRecording**](#isRecording-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    检查此 Session 是否正在进行录制。
+    检查当前 Session 是否正在记录数据。
 
 - [**save**](#save-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    将 FIT 文件存储到文件系统以完成 Session。
+    将 FIT 文件保存到文件系统，并结束当前 Session。
 
 - [**setTimerEventListener**](#setTimerEventListener-instance_function)(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**) as **Void**
 
@@ -63,24 +63,24 @@ API 级别 1.0.0
 
 - [**start**](#start-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    开始在系统上录制 FIT 文件。
+    开始记录 FIT 文件。
 
 - [**stop**](#stop-instance_function)() as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-    停止系统上的 FIT 文件录制。
+    停止记录 FIT 文件。
 
 
 ## 实例方法详情
 
 ### **addLap()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-向当前记录添加一个圈。
+为当前活动记录添加一次计圈。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果成功创建了圈，则为 `true`，否则为 `false`
+    成功添加计圈时返回 `true`，否则返回 `false`。
 
 
 起始版本：
@@ -91,74 +91,42 @@ API 级别 1.0.0
 
 创建新的 [Field](/connect-iq/api-docs/Toybox/FitContributor/Field/)。
 
-字段对象允许开发者将信息存储在 FIT 开发者字段中。此信息可以在 Garmin Connect 中显示为每秒图表、圈信息或锻炼摘要信息。
+Field 对象允许开发者将数据存储在 FIT 开发者字段中。这些数据可以在 Garmin Connect 中显示为按秒绘制的图表、计圈信息或训练摘要。
 
 参数：
 
 - name — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    Field 的名称，类型为 String
-
-- 最大长度可能因产品而异。
-
-- 至少有 64 个字节可用
+    字段名称，以 String 表示。最大长度因产品而异，但至少支持 64 字节。
 
 
 - fieldId — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    Field 的唯一 Field Identifier
+    字段的唯一标识符。
 
 - type — ([FitContributor.DataType](/connect-iq/api-docs/Toybox/FitContributor/#DataType-module)) —
 
-    [FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) 模块中 DATA\_TYPE\_\* 枚举器的 Field 类型定义
+    字段的数据类型，使用 [FitContributor](/connect-iq/api-docs/Toybox/FitContributor/) 模块中的 `DATA_TYPE_*` 枚举值指定。
 
 - options — ([Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) —
 
-    可为 Field 创建指定的可选参数
+    创建字段时使用的可选参数字典。支持以下键：
 
-- :count — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
+| 键 | 类型 | 说明 |
+| --- | --- | --- |
+| `:count` | [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 数组字段的元素数量。对于 `DATA_TYPE_STRING`，表示字符串及其 `null` 终止符的最大总大小。默认值为 1。 |
+| `:mesgType` | [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 字段所属的 FIT 消息类型。省略时默认为 [MESG_TYPE_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)。此类型的消息不支持 [DATA_TYPE_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) 字段。 |
+| `:units` | [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) | 显示单位的字符串，应使用设备当前的语言。最大长度因产品而异，但至少支持 16 字节。 |
+| `:nativeNum` | [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 如果此字段与 FIT SDK 中的某个字段等价，可用此选项指定 FIT Profile 中定义的字段编号。 |
 
-        如果 Field 是 Array，要添加到 Field 的元素数
-
-- 如果类型为 DATA\_TYPE\_STRING，这也是字符串加上 `null` 终止符的最大组合大小（默认为 1）
-
-- 每条消息中应用的总字节数限制为 256。
-
-- 每条消息的数据字段限制为 32 字节
-
-- 超过限制大小的消息将导致“New Field out of memory for FIT data”错误。
-
-
-- :mesgType — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
-
-        应将此 Field 添加到的消息类型
-
-- 如果未提供，则默认为 [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)
-
-- 如果 mesgType == [MESG\_TYPE\_RECORD](/connect-iq/api-docs/Toybox/FitContributor/#MESG_TYPE_RECORD-const)，则不能将 [DATA\_TYPE\_STRING](/connect-iq/api-docs/Toybox/FitContributor/#DATA_TYPE_STRING-const) 用作 Field 类型。
-
-
-- :units — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
-
-        以 String 表示的显示单位
-
-- 此项应使用当前设备语言
-
-- 最大长度可能因产品而异。
-
-- 至少有 16 个字节可用
-
-
-- :nativeNum — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
-
-        如果此 Field 可等同于 FIT SDK 中包含的 Field，请使用此项指示 FIT Profile 指定的 Field Number。
+每条 FIT 消息中，应用写入的数据总大小不得超过 256 字节；数据字段应用的限额为 32 字节。超过限额会触发 `New Field out of memory for FIT data` 错误。
 
 
 返回：
 
 - [FitContributor.Field](/connect-iq/api-docs/Toybox/FitContributor/Field/) —
 
-    生成的 Field 对象
+    创建的 Field 对象。
 
 
 另见：
@@ -176,13 +144,13 @@ API 级别 1.3.0
 
 ### **discard()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-丢弃录制的数据以完成 Session。
+丢弃已记录的数据，并结束当前 Session。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果 Session 已成功丢弃，则为 `true`，否则为 `false`
+    成功丢弃当前 Session 时返回 `true`，否则返回 `false`。
 
 
 起始版本：
@@ -191,13 +159,13 @@ API 级别 1.0.0
 
 ### **isRecording()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-检查此 Session 是否正在进行录制。
+检查当前 Session 是否正在记录数据。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果录制处于活动状态，则为 `true`，否则为 `false`
+    正在记录数据时返回 `true`，否则返回 `false`。
 
 
 起始版本：
@@ -206,13 +174,13 @@ API 级别 1.0.0
 
 ### **save()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-将 FIT 文件存储到文件系统以完成 Session。
+将 FIT 文件保存到文件系统，并结束当前 Session。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果会话已成功保存，则为 `true`，否则为 `false`
+    成功保存当前 Session 时返回 `true`，否则返回 `false`。
 
 
 起始版本：
@@ -221,34 +189,33 @@ API 级别 1.0.0
 
 ### **setTimerEventListener(listener as [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)(eventType as [ActivityRecording.TimerEventType](/connect-iq/api-docs/Toybox/ActivityRecording/#TimerEventType-module), eventData as [Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)) as **Void**)** as **Void**
 
-设置 Session 计时器事件的监听器
+设置 Session 计时器事件的监听器。
 
-每当发生新的计时器事件时，都会调用侦听器方法。
+每当发生新的计时器事件时，都会调用监听器方法。
 
-传递给监听器回调的 Dictionary 中的键取决于 eventType 参数的值。
+传递给监听器回调的 Dictionary 包含哪些键，取决于 `eventType` 参数的值。
 
 参数：
 
 - listener — ([Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)) —
 
-    对必须接受两个参数的回调的引用。
+    回调方法的引用。该方法必须接收以下两个参数：
 
-- eventType：描述所发生事件的 TIMER\_EVENT\_\* 枚举。
+| 回调参数 | 说明 |
+| --- | --- |
+| `eventType` | 描述事件类型的 `TIMER_EVENT_*` 枚举值。 |
+| `eventData` | 包含计时器事件相关数据的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)，也可能为 `null`。 |
 
-- eventData：包含计时器事件相关数据的 [Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)，或为 `null`。如果 eventType 为 TIMER\_EVENT\_LAP，则在可用时提供以下内容：
+当 `eventType` 为 `TIMER_EVENT_LAP` 时，`eventData` 会在相应数据可用时包含以下键：
 
-
-- `:elapsedDistance` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米）
-
-- `:averageSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米/秒）
-
-- `:maxSpeed` [Float](/connect-iq/api-docs/Toybox/Lang/Float/)（米/秒）
-
-- `:startTime` [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)（Moment）
-
-- `:elapsedTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/)（毫秒）
-
-- `:timerTime` [Number](/connect-iq/api-docs/Toybox/Lang/Number/)（毫秒）
+| 键 | 类型 | 说明 |
+| --- | --- | --- |
+| `:elapsedDistance` | [Float](/connect-iq/api-docs/Toybox/Lang/Float/) | 距离，单位为米。 |
+| `:averageSpeed` | [Float](/connect-iq/api-docs/Toybox/Lang/Float/) | 平均速度，单位为米/秒。 |
+| `:maxSpeed` | [Float](/connect-iq/api-docs/Toybox/Lang/Float/) | 最大速度，单位为米/秒。 |
+| `:startTime` | [Moment](/connect-iq/api-docs/Toybox/Time/Moment/) | 开始时间。 |
+| `:elapsedTime` | [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 经过时间，单位为毫秒。 |
+| `:timerTime` | [Number](/connect-iq/api-docs/Toybox/Lang/Number/) | 计时器累计时间，单位为毫秒。 |
 
 
 
@@ -390,13 +357,13 @@ API 级别 3.0.10
 
 ### **start()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-开始在系统上录制 FIT 文件。
+开始记录 FIT 文件。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果成功开始录制，则为 `true`，否则为 `false`
+    成功开始记录时返回 `true`，否则返回 `false`。
 
 
 起始版本：
@@ -405,13 +372,13 @@ API 级别 1.0.0
 
 ### **stop()** as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
-停止系统上的 FIT 文件录制。
+停止记录 FIT 文件。
 
 返回：
 
 - [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/) —
 
-    如果成功停止录制，则为 `true`，否则为 `false`
+    成功停止记录时返回 `true`，否则返回 `false`。
 
 
 起始版本：
