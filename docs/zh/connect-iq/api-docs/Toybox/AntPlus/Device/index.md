@@ -16,7 +16,7 @@ Toybox.Lang.Object
 
 ## 概述
 
-Device 对象表示一个 ANT+ Device 实例。
+Device 对象表示一个 ANT+ 设备实例。
 
 起始版本：
 
@@ -34,7 +34,7 @@ API 级别 2.2.0
 
 - [**getComponentIdentifiers**](#getComponentIdentifiers-instance_function)() as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-    获取此 Device 的已知组件标识符列表。
+    获取此设备的已知组件标识符列表。
 
 - [**getDeviceState**](#getDeviceState-instance_function)() as [AntPlus.DeviceState](/connect-iq/api-docs/Toybox/AntPlus/DeviceState/)
 
@@ -105,9 +105,9 @@ API 级别 2.2.0
 
 ### **getComponentIdentifiers()** as [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)&lt;[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)\> or **Null**
 
-获取此 Device 的已知组件标识符列表。
+获取此设备的已知组件标识符列表。
 
-此列表可能会随着时间推移而更新，因为包含多个组件的 ANT+ 设备会定期发送有关其各个组件的信息。设备会在 [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var) 中报告其组件总数。返回的 Array 只包含 ANT+ 设备已提供组件标识符的组件条目。
+此列表可能会随着时间推移而更新，因为包含多个组件的 ANT+ 设备会定期发送有关其各个组件的信息。设备会在 [CommonData.numComponents](/connect-iq/api-docs/Toybox/AntPlus/CommonData/#numComponents-var) 中报告其组件总数。返回的数组只包含 ANT+ 设备已提供组件标识符的组件条目。
 
 示例：
 
