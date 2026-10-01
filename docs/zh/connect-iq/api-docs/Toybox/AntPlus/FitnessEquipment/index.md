@@ -96,7 +96,7 @@ API 级别 2.4.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.FitnessEquipmentListener](/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 - [**setTrainerMode**](#setTrainerMode-instance_function)(mode as [AntPlus.TrainerMode](/connect-iq/api-docs/Toybox/AntPlus/#TrainerMode-module)) as **Void**
 
