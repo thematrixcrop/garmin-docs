@@ -1,5 +1,5 @@
 ---
-title: "Error Reporting Application (ERA)"
+title: "错误报告应用（ERA）"
 ---
 # 错误报告应用程序（ERA）
 
