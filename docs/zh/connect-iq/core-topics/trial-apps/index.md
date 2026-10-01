@@ -33,7 +33,7 @@ title: "应用试用"
 
 | 参数名称 | 说明 |
 | --- | --- |
-| `callbackUrl` | 你的解锁流程成功完成后必须调用的 URL。 |
+| `callbackUrl` | 您的解锁流程成功完成后必须调用的 URL。 |
 | `appUnlockRequestId` | 应用商店内部的解锁 ID，开发者可以将其保存为参考。 |
 | `appPageUrl` | 要解锁的应用详情页。成功调用 callback URL 后，应将用户重定向到此页面，并提示用户为目标设备下载已解锁的应用。 |
 
