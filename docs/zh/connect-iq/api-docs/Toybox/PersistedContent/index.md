@@ -1359,7 +1359,7 @@ var iterator = PersistedContent.getWaypoints(); // Get the Iterator
 
 - [PersistedContent.Iterator](/connect-iq/api-docs/Toybox/PersistedContent/Iterator/) —
 
-    路线列表中 [Waypoints](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 的 Iterator
+    路线列表中 [Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) 的 Iterator
 
 
 起始版本：
