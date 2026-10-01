@@ -259,7 +259,7 @@ function usageSample() {
 
 与 Monkey C 类不同，模块没有继承或数据隐藏的概念（模块不支持 `extends`、`private` 和 `protected` 关键字）。
 
-### Import 和 Using 语句
+### `import` 和 `using` 语句
 
 可以使用 `import` 关键字将模块引入当前作用域。使用 `import` 后，*模块后缀及模块中的所有类型都会进入类型命名空间*，因此可以不写模块后缀访问类型，更易于添加类型标注。调用函数仍然需要模块后缀。
 
