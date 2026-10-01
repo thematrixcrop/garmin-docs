@@ -90,7 +90,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)(seconds as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)
 
-    Constructor.
+    构造函数。
 
 - [**lessThan**](#lessThan-instance_function)(moment as [Time.Moment](/connect-iq/api-docs/Toybox/Time/Moment/)) as [Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)
 
