@@ -42,7 +42,7 @@ Monkey C 扩展提供以下功能：
 
 可以使用以下命令创建新项目和导出项目：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: New Project* | 创建新的 Connect IQ 应用或 Monkey Barrel。 |
 | *Monkey C: Build Current Project* | 针对指定设备编译当前项目。 |
@@ -54,7 +54,7 @@ Monkey C 扩展提供以下功能：
 
 可以使用以下命令编辑和更新项目的 `manifest.xml`：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: Edit Products* | 编辑 `manifest.xml` 中的产品。只能选择支持最低 SDK 版本的产品。 |
 | *Monkey C: Edit Permissions* | 编辑 `manifest.xml` 中的权限。 |
@@ -69,7 +69,7 @@ Monkey C 扩展提供以下功能：
 
 以下命令可以在 Visual Studio Code 中访问 SDK 工具和文档：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: Open ERA Viewer* | 打开 [Error Reporting Application](/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application) 工具。 |
 | *Monkey C: Open Monkey Graph* | 打开 [Monkey Graph](/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference) 工具。 |
@@ -94,7 +94,7 @@ Monkey C 扩展提供以下功能：
 
 可以使用以下命令运行测试：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: Run Tests* | 运行应用中的所有 Run No Evil 测试。 |
 
@@ -102,7 +102,7 @@ Monkey C 扩展提供以下功能：
 
 可以使用以下命令运行并调试 Complication Publisher 和 Complication Subscriber 应用：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: Launch Complication* | 在调试器中运行 Complication 应用。 |
 
@@ -112,7 +112,7 @@ Monkey C 扩展提供以下功能：
 
 可以使用以下命令以传感器配对模式启动和调试应用：
 
-| Command | Description |
+| 命令 | 描述 |
 | --- | --- |
 | *Monkey C: Launch Native Pairing* | 在调试器中以传感器原生配对模式运行应用。 |
 
@@ -122,7 +122,7 @@ Monkey C 扩展提供以下功能：
 
 运行或调试产品时，扩展会为项目创建 `launch.json`。`launch.json` 提供了许多用于添加启动功能的自定义选项。
 
-| Property | Required | Type | Description |
+| 属性 | 必需 | 类型 | 描述 |
 | --- | --- | --- | --- |
 | `prg` | x | Path | 项目 PRG 文件的绝对路径。 |
 | `prgDebugXml` | x | Path | 项目调试 XML 文件的绝对路径。 |
