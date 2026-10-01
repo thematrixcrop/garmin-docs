@@ -546,7 +546,7 @@ API 级别 3.3.0
 从选项字典创建 [Moment](/connect-iq/api-docs/Toybox/Time/Moment/)。
 
 ```
-  Each option value is assumed to be in the UTC time zone.
+  每个选项值都假定使用 UTC 时区。
 ```
 
 与基于 UNIX 纪元的 [Moment.initialize()](/connect-iq/api-docs/Toybox/Time/Moment/#initialize-instance_function) 不同，使用 Gregorian.moment() 创建的 Moment 基于 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function)。结果通过获取 [today()](/connect-iq/api-docs/Toybox/Time/#today-instance_function) 的结果并叠加所提供的选项来确定。
