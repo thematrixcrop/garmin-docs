@@ -104,7 +104,7 @@ API 级别 1.0.0
 - [NETWORK\_PRIVATE](/connect-iq/api-docs/Toybox/Ant/#NETWORK_PRIVATE-const) - ANT 专用网络
 
 
-- 必须为 Private Network 提供网络密钥
+- 必须为专用网络（Private Network）提供网络密钥
 
 - 需要 64 位和 128 位密钥
 
