@@ -24,19 +24,19 @@ title: "应用和系统模块"
 
 ## 应用生命周期
 
-*自 API 级别 4.2.0 起*，应用程序有四种主要生命周期状态：已启动、活跃、不活跃和已暂停。
+*自 API 级别 4.2.0 起*，应用有四种主要生命周期状态：已启动、活跃、不活跃和已暂停。
 
 ![](/connect-iq/resources/programmers-guide/app-lifecycle.png)
 
 ### 启动
 
-应用加载后，系统会实例化应用对象。此后，您可以在应用程序中的任何位置调用 [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function) 获取该对象。
+应用加载后，系统会实例化应用对象。此后，您可以在应用中的任何位置调用 [Application.getApp()](/connect-iq/api-docs/Toybox/Application/#getApp-instance_function) 获取该对象。
 
 应用对象实例化后，系统会调用 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function)。您可以在此初始化应用并恢复状态。
 
-如果应用程序通过 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 启动，state 参数将包含 intent 传入的参数。此时不要尝试推入 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 实例。更多信息请参阅 [Intents](/connect-iq/core-topics/intents/#intents) 一节。
+如果应用通过 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 启动，state 参数将包含 intent 传入的参数。此时不要尝试推入 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 实例。更多信息请参阅 [Intents](/connect-iq/core-topics/intents/#intents) 一节。
 
-应用加载后，系统会请求应用程序的初始视图。根据应用程序实现的功能，您可能需要实现以下若干处理器：
+应用加载后，系统会请求应用的初始视图。根据应用实现的功能，您可能需要实现以下若干处理器：
 
 - [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：应用启动的主要方法。返回表盘、数据字段、小工具或设备应用的基础视图。
 
@@ -49,7 +49,7 @@ title: "应用和系统模块"
 
 这些函数都返回一个数组：第一个元素是 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 实例，第二个元素是处理该视图输入的 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 实例。
 
-从速览列表和活动菜单启动的应用程序行为不同。从速览列表启动时，应用程序会受到超时限制。如果用户未在规定时间内退出，系统会终止应用程序并返回主屏幕。不过，从活动菜单启动的应用程序不会超时，用户必须主动退出应用程序。
+从速览列表和活动菜单启动的应用行为不同。从速览列表启动时，应用会受到超时限制。如果用户未在规定时间内退出，系统会终止应用并返回主屏幕。不过，从活动菜单启动的应用不会超时，用户必须主动退出应用。
 
 您可以使用以下方法检测用户进入应用的方式：
 
@@ -90,7 +90,7 @@ class MySuperApp extends Application.AppBase {
 | 传感器 | 如果应用正在记录活动，可以访问；否则访问可能以非致命方式失败。 | 如果应用正在记录活动，可以访问；否则传感器访问会受到限制。 |
 | 提示 | 允许访问。 | 访问被拒绝。 |
 
-用户可能会启动超出系统资源承载能力的应用程序。如果您的应用程序仍在运行但处于非活跃状态，系统可能会终止它以释放资源。
+用户可能会启动超出系统资源承载能力的应用。如果您的应用仍在运行但处于非活跃状态，系统可能会终止它以释放资源。
 
 发生这种情况时，系统会调用您的 [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)，并传入 `:suspend` 选项，通知您应用即将被终止。您可以在此保存状态，以便稍后恢复。用户返回应用时，系统会在 [AppBase.onStart()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStart-instance_function) 中传入 `:resume` 选项。
 
