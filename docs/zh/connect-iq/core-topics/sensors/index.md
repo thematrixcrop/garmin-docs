@@ -1,5 +1,5 @@
 ---
-title: "Sensors"
+title: "传感器"
 ---
 <a id="sensors"></a>
 # 传感器
