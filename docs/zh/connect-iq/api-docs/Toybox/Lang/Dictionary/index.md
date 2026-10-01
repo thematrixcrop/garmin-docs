@@ -22,7 +22,7 @@ Dictionary 是一种哈希表或关联数组，用于将键映射到值。
 
 ## 另见：
 
-- [Hash Table](https://en.wikipedia.org/wiki/Hash_table)
+- [哈希表](https://en.wikipedia.org/wiki/Hash_table)
 
 
 示例：
@@ -246,7 +246,7 @@ System.println(myString.substring(0, 5)); // "{Two="
 
 另见：
 
-- [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
+- [哈希表](https://en.wikipedia.org/wiki/Hash_table)
 
 
 起始版本：
