@@ -174,7 +174,7 @@ API 级别 4.0.0
 
 - :palette — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-        The colors used in this surface. Using less will reduce the bitmap size. The bitmap will use the system default if not provided. The maximum palette size allowed is 256 colors. If a palette is provided, the number of colors must also be &lt;= to the number of system colors.
+        此表面使用的颜色。减少颜色数量可以缩小位图大小。如果未提供调色板，位图将使用系统默认调色板。允许的最大调色板大小为 256 种颜色。如果提供了调色板，其颜色数量还必须小于或等于系统颜色数量。
 
 - :colorDepth — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

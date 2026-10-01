@@ -1250,7 +1250,7 @@ API 级别 1.0.0
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    The \[width, height\] of the String in pixels
+    String 的 \[width, height\]，单位为像素
 
 
 起始版本：
