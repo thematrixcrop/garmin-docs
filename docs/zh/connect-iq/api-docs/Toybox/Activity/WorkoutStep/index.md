@@ -205,7 +205,7 @@ API 级别 3.2.0
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    其含义取决于 durationType 值的值
+    其含义取决于 durationType 的值
 
 
 ### var targetType as [Activity.WorkoutStepTargetType](/connect-iq/api-docs/Toybox/Activity/#WorkoutStepTargetType-module)
@@ -235,7 +235,7 @@ API 级别 3.2.0
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    其含义取决于 targetType 值的值
+    其含义取决于 targetType 的值
 
 
 ### var targetValueLow as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
@@ -250,4 +250,4 @@ API 级别 3.2.0
 
 - [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) —
 
-    其含义取决于 targetType 值的值
+    其含义取决于 targetType 的值
