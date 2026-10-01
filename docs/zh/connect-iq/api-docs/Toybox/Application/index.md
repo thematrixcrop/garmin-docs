@@ -11,7 +11,7 @@ Application 模块包含负责控制应用生命周期的 [AppBase](/connect-iq/
 
 ## 另见：
 
-- [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
+- [核心主题 - 持久化数据](/connect-iq/core-topics/persisting-data/)
 
 
 起始版本：
