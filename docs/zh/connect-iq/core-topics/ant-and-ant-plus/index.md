@@ -8,7 +8,7 @@ Connect IQ 的 Sensor 模块让开发者可以访问设备内置的传感器和�
 
 更多 ANT 和 ANT+ 信息请参阅 [thisisant.com](http://thisisant.com/)。
 
-| API | 用途 | API level |
+| API | 用途 | API 级别 |
 | --- | --- | --- |
 | [Toybox.Ant](/connect-iq/api-docs/Toybox/Ant/) | 提供对通用 ANT 通道的访问，使应用可以直接与 ANT 设备通信。 | 1.0.0 |
 | [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) | 访问已与设备配对的 ANT 设备。 | 2.2.0 |
@@ -17,19 +17,19 @@ Connect IQ 的 Sensor 模块让开发者可以访问设备内置的传感器和�
 
 Connect IQ 提供了与 ANT 和 ANT+ 传感器通信的低级接口。通过该接口，可以创建 ANT 通道来发送和接收 ANT 数据包。
 
-使用 ANT USB dongle，可以在 Connect IQ Simulator 中使用 Connect IQ ANT API。请注意，Garmin Express 运行时会阻止访问 ANT USB dongle，因此在 Connect IQ Simulator 中使用 ANT USB dongle 时，请先关闭 Garmin Express。
+使用 ANT USB 适配器（dongle），可以在 Connect IQ Simulator 中使用 Connect IQ ANT API。请注意，Garmin Express 运行时会阻止访问 ANT USB 适配器，因此在 Connect IQ Simulator 中使用它时，请先关闭 Garmin Express。
 
-### 在 Linux 中使用 ANT stick
+### 在 Linux 中使用 ANT USB 适配器
 
-要在 Linux 中使用 ANT stick，Simulator 必须能够访问该 USB 设备。系统中必须安装 udev 规则，使 ANT stick 能够在非 root 权限下使用。
+要在 Linux 中使用 ANT USB 适配器，Simulator 必须能够访问该 USB 设备。系统中必须安装 udev 规则，使适配器能够在非 root 权限下使用。
 
-查找 ANT stick 的厂商和产品 ID：
+查找 ANT USB 适配器的厂商和产品 ID：
 
 ```bash
 $ lsusb
 ```
 
-在列表中找到 ANT stick 以及对应的厂商和产品 ID。例如：
+在列表中找到 ANT USB 适配器以及对应的厂商和产品 ID。例如：
 
 ```bash
 Bus 001 Device 009: ID 0fcf:1009 Dynastream Innovations, Inc. ANTUSB-m Stick
@@ -48,7 +48,7 @@ $ sudo nano /etc/udev/rules.d/50-connectiq-usbant.rules
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0fcf", ATTRS{idProduct}=="1009", MODE="664", GROUP="plugdev"
 ```
 
-重启 udev 服务并插入 ANT stick：
+重启 udev 服务并插入 ANT USB 适配器：
 
 ```bash
 $ sudo /etc/init.d/udev restart
@@ -62,7 +62,7 @@ $ sudo usermod -a -G plugdev <userName>
 
 ## 与 tempe 传感器通信
 
-Garmin tempe™ 无线环境传感器等设备支持 Environment Profile，可以读取最低、最高和当前温度。
+Garmin tempe™ 无线环境传感器等设备支持环境配置文件（Environment Profile），可以读取最低、最高和当前温度。
 
 可以使用以下代码将 ANT 通道初始化为 tempe 传感器：
 
@@ -139,11 +139,11 @@ Garmin tempe™ 无线环境传感器等设备支持 Environment Profile，可�
 
 此回调负责与附近的传感器配对，并处理收到的数据包。
 
-`MO2Display` 示例实现了 Muscle Oxygen ANT profile。ANT Generic 接口不能用于 Watch Face。为了与设备上的原生 ANT 行为互操作，传感器的低优先级和高优先级搜索超时与基础 ANT 无线电规范不同，最大值分别限制为 30 秒和 5 秒。
+`MO2Display` 示例实现了 Muscle Oxygen ANT 配置文件。ANT Generic 接口不能用于表盘。为了与设备上的原生 ANT 行为互操作，传感器的低优先级和高优先级搜索超时与基础 ANT 无线电规范不同，最大值分别限制为 30 秒和 5 秒。
 
 ## Burst 数据
 
-*自 API level 2.2.0 起可用*
+*自 API 级别 2.2.0 起可用*
 
 Burst 数据传输允许通过 ANT Generic Channel 在设备之间传送大量数据。开发者会通过监听器收到 Burst 发送或接收事件成功或失败的通知。每次 Burst 数据传输最多支持 8 KB 数据。
 
@@ -151,9 +151,9 @@ Burst 数据传输允许通过 ANT Generic Channel 在设备之间传送大量�
 
 `GenericChannelBurst` 示例展示了如何发送和接收 Burst 数据。
 
-## ANT+ Profiles
+## ANT+ Profiles（配置文件）
 
-*自 API level 2.2.0 起可用*
+*自 API 级别 2.2.0 起可用*
 
 [Toybox.AntPlus](/connect-iq/api-docs/Toybox/AntPlus/) 模块允许访问用户设备上已配对的 ANT+ 传感器信息，无需开发者自行设置和管理 ANT 通道。添加、移除、启用、禁用和校准等 ANT+ 传感器管理操作，都由用户通过设备的常规传感器菜单完成。
 
@@ -163,4 +163,4 @@ Burst 数据传输允许通过 ANT Generic Channel 在设备之间传送大量�
 
 某些 ANT+ 传感器（例如自行车灯）具有专用回调。例如，应使用专用回调了解灯光网络状态，而不是使用 [DeviceListener.onDeviceStateUpdate()](/connect-iq/api-docs/Toybox/AntPlus/DeviceListener/#onDeviceStateUpdate-instance_function)。如果用户设备上已配对自行车灯且灯光网络已建立，[AntPlus.LightNetwork](/connect-iq/api-docs/Toybox/AntPlus/LightNetwork/) 类允许你修改自行车灯模式。
 
-并非所有由 Monkey C 提供的 ANT+ profile 都受到每个 Connect IQ 兼容设备的支持。
+并非所有由 Monkey C 提供的 ANT+ 配置文件都受到每个 Connect IQ 兼容设备的支持。
