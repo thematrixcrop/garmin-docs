@@ -30,7 +30,7 @@ API 级别 3.1.0
 
 - [**getDescriptors**](#getDescriptors-instance_function)() as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-    获取特征中发现的 [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器。仅提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的描述符。
+    获取特征中发现的 [描述符](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器。仅提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的描述符。
 
 - [**getService**](#getService-instance_function)() as [BluetoothLowEnergy.Service](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service/)
 
@@ -75,9 +75,9 @@ API 级别 3.1.0
 
 ### **getDescriptors()** as [BluetoothLowEnergy.Iterator](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator/)
 
-获取特征中发现的 [Descriptors](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器
+获取特征中发现的 [描述符](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor/) 的迭代器
 
-此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的 descriptors
+此项只提供使用 [registerProfile()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/#registerProfile-instance_function) 注册的描述符
 
 返回：
 
