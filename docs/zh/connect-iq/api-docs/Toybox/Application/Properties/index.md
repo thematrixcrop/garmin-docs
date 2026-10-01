@@ -25,7 +25,7 @@ API 级别 2.4.0
 
 - [**getValue**](#getValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)
 
-    从应用程序设置中获取与给定键关联的数据。
+    从应用设置中获取与给定键关联的数据。
 
 - [**setValue**](#setValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as **Void**
 
@@ -44,9 +44,9 @@ API 级别 2.4.0
 
 ### **getValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/))** as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)
 
-从应用程序设置中获取与给定键关联的数据。
+从应用设置中获取与给定键关联的数据。
 
-属性值必须在应用程序设置 XML 中定义。如果将应用程序设置中不存在的键传递给 getValue()，将抛出异常。
+属性值必须在应用设置 XML 中定义。如果将应用设置中不存在的键传递给 getValue()，将抛出异常。
 
 参数：
 
@@ -79,7 +79,7 @@ API 级别 2.4.0
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
-    如果 Application Settings 中不存在 `key`，则会抛出此异常
+    如果应用设置中不存在 `key`，则会抛出此异常
 
 
 ### **setValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as **Void**
@@ -98,7 +98,7 @@ API 级别 2.4.0
 
 - value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
-    要放入 Application Properties 的值
+    要放入应用属性的值
 
 
 起始版本：
@@ -117,4 +117,4 @@ API 级别 2.4.0
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
-    如果 Application Properties 中不存在 `key`，则会抛出此异常
+    如果应用属性中不存在 `key`，则会抛出此异常
