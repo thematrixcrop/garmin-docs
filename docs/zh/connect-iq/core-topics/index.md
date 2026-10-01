@@ -1,5 +1,5 @@
 ---
-title: "Core Topics"
+title: "核心主题"
 ---
 # 核心主题
 
