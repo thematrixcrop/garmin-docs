@@ -265,18 +265,18 @@ API 级别 1.0.0
 
 - 如果 period 为 `null`，则检索所有可用历史记录
 
-- 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索给定 Duration 的历史记录
+- 如果 period 是一个 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)，则检索该时长内的历史记录
 
-- 如果 period 是 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则检索最后 Number 条记录
+- 如果 period 是 [Number](/connect-iq/api-docs/Toybox/Lang/Number/)，则检索最近的 period 条记录
 
 
 - newestFirst — ([Lang.Boolean](/connect-iq/api-docs/Toybox/Lang/Boolean/)) —
 
     检索心率样本的顺序
 
-- 设为 `true` 以按最新顺序获取样本
+- 设为 `true` 时，按从新到旧的顺序获取样本
 
-- 按从旧到新的顺序获取样本时为 `false`
+- 设为 `false` 时，按从旧到新的顺序获取样本
 
 
 
