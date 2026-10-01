@@ -13,7 +13,7 @@ Garmin 设备会收集并量化大量用户指标。Connect IQ 提供其中许�
 
 [UserProfile.getProfile()](/connect-iq/api-docs/Toybox/UserProfile/#getProfile-instance_function) 返回一个 [UserProfile.Profile](/connect-iq/api-docs/Toybox/UserProfile/Profile/) 对象，其中包含以下信息：
 
-| 指标 | API | 值 | API level |
+| 指标 | API | 值 | API 级别 |
 | --- | --- | --- | --- |
 | 活动等级 | [Profile.activityClass](/connect-iq/api-docs/Toybox/UserProfile/Profile/#activityClass-var) | 0 到 100 的用户活动量化值 | 1.0.0 |
 | 平均静息心率 | [Profile.averageRestingHeartRate](/connect-iq/api-docs/Toybox/UserProfile/Profile/#averageRestingHeartRate-var) | 用户七天的平均静息心率（bpm） | 3.2.0 |
@@ -29,7 +29,7 @@ Garmin 设备会收集并量化大量用户指标。Connect IQ 提供其中许�
 
 [Toybox.UserProfile](/connect-iq/api-docs/Toybox/UserProfile/) 还提供以下数据：
 
-| 信息 | API | 值 | API level |
+| 信息 | API | 值 | API 级别 |
 | --- | --- | --- | --- |
 | 活动历史 | [UserProfile.getUserActivityHistory()](/connect-iq/api-docs/Toybox/UserProfile/#getUserActivityHistory-instance_function) | 用户完成过的活动记录 | 3.3.0 |
 | 心率区间 | [UserProfile.getHeartRateZones()](/connect-iq/api-docs/Toybox/UserProfile/#getHeartRateZones-instance_function) | 用户为跑步、骑行或游泳定义的心率区间 | 1.2.6 |
@@ -40,7 +40,7 @@ Garmin 设备会收集并量化大量用户指标。Connect IQ 提供其中许�
 
 还可以使用 [ActivityMonitor.getHistory()](/connect-iq/api-docs/Toybox/ActivityMonitor/#getHistory-instance_function) 获取部分指标的每日历史记录。该方法返回 [ActivityMonitor.History](/connect-iq/api-docs/Toybox/ActivityMonitor/History/) 对象数组。历史记录范围因设备和设备开机时长而异，但通常可获得约 7 天的历史。
 
-| 指标 | API | 值 | API level |
+| 指标 | API | 值 | API 级别 |
 | --- | --- | --- | --- |
 | 消耗的卡路里 | [Info.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#calories-var)、[History.calories](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#calories-var) | 当天截至目前消耗的卡路里，单位为千卡（kCal） | 1.0.0 |
 | 每日活动分钟数 | [Info.activeMinutesDay](/connect-iq/api-docs/Toybox/ActivityMonitor/Info/#activeMinutesDay-var)、[History.activeMinutes](/connect-iq/api-docs/Toybox/ActivityMonitor/History/#activeMinutes-var) | 当天的活动分钟数 | 2.1.0 |
