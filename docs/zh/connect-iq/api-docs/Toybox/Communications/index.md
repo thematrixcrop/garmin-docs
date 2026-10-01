@@ -2061,7 +2061,7 @@ API 级别 1.3.0
 
 - ([Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)) —
 
-    如果给定的 :responseType 选项不受发出请求的设备支持，则会抛出此异常。例如，在不支持音频内容提供程序应用的设备上使用 HTTP\_RESPONSE\_CONTENT\_TYPE\_AUDIO。
+    如果给定的 :responseType 选项不受发出请求的设备支持，则会抛出此异常。例如，在不支持音频内容提供商应用的设备上使用 HTTP\_RESPONSE\_CONTENT\_TYPE\_AUDIO。
 
 
 ### **notifySyncComplete(errorMessage as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/) or **Null**)** as **Void**
