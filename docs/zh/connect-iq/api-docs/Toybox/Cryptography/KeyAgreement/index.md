@@ -275,7 +275,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(options as { :protocol as [Cryptography.KeyAgreementProtocol](/connect-iq/api-docs/Toybox/Cryptography/#KeyAgreementProtocol-module), :privateKey as [Cryptography.Key](/connect-iq/api-docs/Toybox/Cryptography/Key/) })
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
