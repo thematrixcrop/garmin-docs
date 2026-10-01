@@ -1,5 +1,5 @@
 ---
-title: "Stay Informed"
+title: "随时了解信息"
 ---
 # 随时了解信息
 
