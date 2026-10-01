@@ -1,11 +1,12 @@
 ---
 title: "Resources"
 ---
+<a id="resources"></a>
 # 资源
 
 ![](/connect-iq/resources/programmers-guide/sculptor-monkey.png)
 
-资源编译器将图像,文本和静态数据编译成一个资源数据库,该应用程序可以在运行时间访问.资源编译器被绑定到子C编译器中.其输入是XML文件:
+资源编译器会将图像、文本和静态数据编译到资源数据库中，应用可以在运行时访问这些资源。资源编译器与 Monkey C 编译器集成，输入为 XML 文件：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,34 +17,34 @@ title: "Resources"
 </resources>
 ```
 
-##资源模块 (也称为Rez)
+## 资源模块（也称为 Rez）
 
-资源编译器自动生成一个名为`Rez`的子C模块,其中包含资源文件的资源ID.这些类型的[Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/)识别符用于引用您的资源:
+资源编译器会自动生成一个名为 `Rez` 的 Monkey C 模块，其中包含资源文件的资源 ID。这些 [Lang.ResourceId](/connect-iq/api-docs/Toybox/Lang/ResourceId/) 类型的标识符用于引用资源。
 
-代码可以使用`Rez`类来引用运行时间的资源.
+代码可以使用 `Rez` 模块在运行时引用资源。可以使用以下 API：
 
-| API |目的| API 级别 |
+| API | 用途 | API 级别 |
 | --- | --- | --- |
-| [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) |输入一个资源从PRG到内存中| 1.0.0 |
-| [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) |输入一个资源从PRG到内存中| 3.1.0 |
+| [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) | 将 PRG 中的资源加载到内存 | 1.0.0 |
+| [Application.loadResource()](/connect-iq/api-docs/Toybox/Application/#loadResource-instance_function) | 将 PRG 中的资源加载到内存 | 3.1.0 |
 
-例如,假设您在您的视图中想要使用的位地图.
+例如，假设要在视图中使用一张位图。应用使用位图前，必须先从资源文件加载它：
 
 ```typescript
 image = Application.loadResource( Rez.Drawables.bitmap_id ) as BitmapResource;
 ```
 
-现在可以在更新处理器中绘制位图:
+然后可以在更新处理器中绘制位图：
 
 ```typescript
 dc.drawBitmap( 50, 50, image );
 ```
 
-资源是参考数量的,就像其他 C子C对象一样.加载资源可能是一项昂贵的操作,因此在处理屏幕更新时不要加载资源.
+资源和其他 Monkey C 对象一样采用引用计数。加载资源可能开销较大，因此不要在处理屏幕更新时加载资源。
 
 ### 在资源文件中引用资源
 
-资源也可以从其他资源文件中引用. 为此,使用语法`@<module>.<id>`. 例如,您可以使用以下代码引用菜单定义中的字符串资源.
+也可以在一个资源文件中引用另一个资源文件中的资源。使用语法 `@<module>.<id>` 即可。例如，下面的代码在菜单定义中引用字符串资源：
 
 ```xml
 <string id="menu_item_1_label">Item 1</string>
@@ -53,13 +54,14 @@ dc.drawBitmap( 50, 50, image );
 </menu>
 ```
 
-这代码将使用用`menu_item_1_label`的ID定义的字符串作为菜单项的标签.
+该代码会使用 ID 为 `menu_item_1_label` 的字符串作为菜单项标签。
 
+<a id="resource-scopes"></a>
 ## 资源作用域
 
 *自 API 级别 3.1.0*
 
-添加资源到应用程序中带来较小的运行时间内存成本.虽然成本很小,但它可以严重削减可用的后台服务和视图内存.为了减轻这些成本,Connect IQ 具有额外的`scope`属性,用于以下资源标签:`<layout>`,`<drawable-list>`,`<bitmap>`,`<string>`,`<font>`,`<jsonData>`.`scope`属性告诉资源编译器该资源应提供的应用类型.`scope`属性的有效值为`background`,`<layout>`0和`<layout>`1 .如果属性不指定给某个资源,则默认将被认为是`<layout>`2范围的一部分.使用`<layout>`3属性配备资源的例子:
+向应用添加资源会产生少量运行时内存开销。虽然开销不大，但可能明显减少后台服务和 Glance 可用的内存。为降低这项开销，Connect IQ 为以下资源标签提供了 `scope` 属性：`<layout>`、`<drawable-list>`、`<bitmap>`、`<string>`、`<font>` 和 `<jsonData>`。`scope` 告诉资源编译器该资源应在哪种应用模式下可用。有效值为 `background`、`glance` 和 `foreground`。如果未指定，资源默认属于 `foreground` 作用域。下面是为字符串资源使用 `scope` 的示例：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -70,21 +72,21 @@ dc.drawBitmap( 50, 50, image );
 </resources>
 ```
 
-使用`scope`属性来存储您的视角或背景服务中的内存.所有背景范围资源将可用于视角和前景应用.所有视角范围资源将可用于前景应用,但不是背景服务.前景范围资源将只可用于前景应用.
+使用 `scope` 属性可以节省 Glance 或后台服务的内存。所有 `background` 作用域资源都可供 Glance 和前台应用使用；所有 `glance` 作用域资源都可供前台应用使用，但后台服务无法使用；`foreground` 作用域资源只能供前台应用使用。
 
 | 应用模式 | MyBackgroundString | MyGlanceString | MyForegroundString |
 | --- | --- | --- | --- |
 | 后台服务 | X |  |  |
 | Glance | X | X |  |
-| Foreground | X | X | X |
+| 前台应用 | X | X | X |
 
-在上述例子中,`MyBackgroundString`将在任何有效模式下运行应用程序时可用.`MyGlanceString`将可用于视线和前景应用程序,但如果存在,则不会用于背景服务.`MyForegroundString`仅可用于前景应用程序.通过提供这种层次结构,开发人员可以更好地确定如何将其资源进行范围.
+在上例中，`MyBackgroundString` 在所有有效应用模式下都可用；`MyGlanceString` 可供 Glance 和前台应用使用，但后台服务无法使用；`MyForegroundString` 只能供前台应用使用。借助这种层次结构，开发者可以更准确地决定每个资源的作用域。
 
-更多信息请参阅[后台服务](/connect-iq/core-topics/backgrounding/#background-services)或[速览](/connect-iq/core-topics/glances/#glances)。
+更多信息请参阅[后台服务](/connect-iq/core-topics/backgrounding/#background-services)和 [Glance](/connect-iq/core-topics/glances/#glances)。
 
 ## 字符串
 
-连接智商产品在世界各地使用,这些用户希望应用程序在他们的语言中工作.连接智商支持使用字符串资源文件添加字符串:
+Connect IQ 产品面向全球用户，用户希望应用以自己的语言显示。Connect IQ 支持通过字符串资源文件添加文本：
 
 ```xml
 <strings>
@@ -92,7 +94,7 @@ dc.drawBitmap( 50, 50, image );
 </strings>
 ```
 
-在运行时,您可以使用[WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function)加载这个字符串.字符串定义采用以下属性:
+运行时可以使用 [WatchUi.loadResource()](/connect-iq/api-docs/Toybox/WatchUi/#loadResource-instance_function) 加载字符串。字符串定义支持以下属性：
 
 | 属性 | 必需 | 描述 |
 | --- | --- | --- |
@@ -100,7 +102,7 @@ dc.drawBitmap( 50, 50, image );
 | `scope` | 否 |参见[资源作用域](#resource-scopes)。字符串可以具有额外的 `settings` 作用域，从而将其从运行时删除。当字符串仅在设置定义中使用时，这很有用。|
 | `translatable` | 否 |设置为 `false` 可标记字符串无需翻译。|
 
-使用资源文件的[本地化限定符](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers)，您可以为不同语言提供不同字符串。将以下限定符添加到资源文件中，即可添加多种语言的字符串文件。
+通过资源文件夹的[本地化限定符](/connect-iq/core-topics/build-configuration/#device-family-and-localization-qualifiers)，可以为不同语言提供不同的字符串。将以下后缀添加到资源文件夹名称，即可为相应语言添加字符串文件。
 
 | 限定符 | 语言 | 备注 |
 | --- | --- | --- |
@@ -140,17 +142,17 @@ dc.drawBitmap( 50, 50, image );
 | `zhs` | 简体中文 |  |
 | `zht` | 繁体中文 |  |
 
-您可以将这些资格与设备,家庭和屏幕资格结合起来,以设置适应每个设备的字符串.
+如有需要，可以将这些限定符与设备、系列和屏幕限定符组合，为每台设备定制字符串。
 
 ![带限定符的资源文件夹](/connect-iq/resources/programmers-guide/resources-strings.png)
 
-查看`Strings`样本为使用字符串资源系统的一个例子.
+请参阅 `Strings` 示例应用，了解字符串资源系统的用法。
 
 ## 位图
 
-Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每台设备都需要明确转换位图.资源编译器将为每个预期的产品生成资源,这允许开发人员拥有一组黑白产品资源,一组彩色产品资源,一组更大的屏幕尺寸等.资源编译器支持`JPG/JPEG`,`BMP/WBMP`,`GIF`,`SVG`和`PNG`文件格式.
+Garmin 设备的外形、屏幕尺寸和显示技术各不相同，因此位图需要针对每台设备进行转换。资源编译器会为每个目标产品生成资源，因此开发者可以分别为黑白设备、彩色设备和大屏设备提供资源。资源编译器支持 `JPG/JPEG`、`BMP/WBMP`、`GIF`、`SVG` 和 `PNG` 文件格式。
 
-虽然每个设备都有一个独特的调色板,但开发人员可以指定用于图像的调色板.资源编译器将在开发人员的调色板中定义的颜色映射到设备调色板中最接近的颜色,只使用这些颜色.一个调色板可以使用以下语法定义:
+每台设备都有自己的调色板，但开发者可以为图像指定调色板。资源编译器会将开发者调色板中的颜色映射到设备调色板中最接近的颜色，并只使用这些颜色。可以使用以下语法定义调色板：
 
 ```xml
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -165,13 +167,13 @@ Garmin设备具有不同的形式因素,屏幕尺寸和屏幕技术,因此,每�
 </resources>
 ```
 
-下面的表显示了`<bitmap>`定义的有效属性.
+下表列出了 `<bitmap>` 定义支持的一些有效属性。
 
 | 属性 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `id` |用于引用 Rez 模块中布局的句柄|任何以字母开头的值| 不适用 | 必需 |
-| `filename` |图像文件的相对路径|有效且可解析的图像文件路径| 不适用 | 必需 |
-| `dithering` |在编译图像时使用的旋的类型|`floyd_steinberg`或`none`| `floyd_steinberg` |  |
+| `id` | 用于在 Rez 模块中引用位图的句柄 | 以字母开头的任意值 | 不适用 | 必需 |
+| `filename` | 图像文件的相对路径 | 有效且可解析的图像文件路径 | 不适用 | 必需 |
+| `dithering` | 编译图像时使用的抖动方式 | `floyd_steinberg` 或 `none` | `floyd_steinberg` |  |
 | `compress` |表示编译的位图应压缩以减少 .PRG 尺寸|`true`或`false`| `false` |  |
 | `automaticPalette` |在编译图像时,自动确定使用的减少色调.16位色调设备的图像将被限制在256种颜色.|`true`或`false`| 对于 16 位颜色设备为 `true` |  |
 | `packingFormat` |将图像编码到 PRG 的格式| `default`、`png`、`jpg`、`yuv` | `default` | 除 `default` 之外的选项仅在某些设备上可用。请参阅 [位图打包格式](#bitmap-packing-formats) |
