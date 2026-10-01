@@ -514,14 +514,14 @@ Forerunner® 170 Music
 
 Forerunner® 230
 
- | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
+ | 215 x 180 | 半圆形 | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-03717-54/v/cf-sm.jpg)
 
 Forerunner® 235
 
- | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
+ | 215 x 180 | 半圆形 | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02120-00/v/cf-sm-13aa6bd1-4382-4520-ba05-be6a77decdbf.jpg)
@@ -612,7 +612,7 @@ Forerunner® 570 47mm
 
 Forerunner® 630
 
- | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 1.4 |
+ | 215 x 180 | 半圆形 | Memory-In-Pixel（16 色） | 1.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-01863-10/v/cf-sm-3d860c6d-aec3-4fcd-8544-3ec55190a637.jpg)
@@ -640,7 +640,7 @@ Forerunner® 70
 
 Forerunner® 735XT
 
- | 215 x 180 | semi-round | Memory-In-Pixel（16 色） | 2.4 |
+ | 215 x 180 | 半圆形 | Memory-In-Pixel（16 色） | 2.4 |
 |
 
 ![](https://static.garmincdn.com/en/products/010-02445-00/v/cf-sm-533429da-6a03-47d1-a80c-5bc0194c8797.jpg)
