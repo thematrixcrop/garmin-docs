@@ -53,7 +53,7 @@ title: "Graphics"
 
 Garmin 设备的字体支持可能因设备而异。所有设备都支持单码位位图字体，但有些设备支持可缩放字体。如果设备支持可缩放字体，支持的字体会在[设备参考](/connect-iq/device-reference/#device-reference)的 `Scalable Font` 字体列表中列出。
 
-为了访问可扩展字体,您可以用设备参考中的名称调用[Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function)作为`:face`参数.`:face`参数还将采用一系列面孔名称.如果设备不支持您喜欢的选择,这允许您指定适合您的需求的备份字体面.您也可以指定像素中字体大小.
+要访问可扩展字体，可以使用设备参考中的名称调用 [Graphics.getVectorFont()](/connect-iq/api-docs/Toybox/Graphics/#getVectorFont-instance_function)，并将结果作为 `:face` 参数。`:face` 也接受字体名称数组，因此可以指定备用字体；如果设备不支持首选字体，系统会尝试后续字体。还可以指定以像素为单位的字体大小。
 
 可扩展字体与[Dc.drawText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawText-instance_function)工作,但也可以与[Dc.drawAngledText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawAngledText-instance_function)和[Dc.drawRadialText()](/connect-iq/api-docs/Toybox/Graphics/Dc/#drawRadialText-instance_function)使用.这些API只支持可扩展字体,并且不支持作为资源加载的自定义字体.
 
@@ -61,7 +61,7 @@ Garmin 设备的字体支持可能因设备而异。所有设备都支持单码�
 
 *自 API 级别 3.2.0*
 
-默认情况下,禁用对多边形和线程等原始的反位,但可以通过调用[Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function)启用.此方法在API级 3.2.0之前不存在,所以如果您的应用程序运行以3.2.0以下的API级设置,请确保使用`has`检查保护它.
+默认情况下，多边形和线条等图元不会启用抗锯齿，但可以调用 [Dc.setAntiAlias()](/connect-iq/api-docs/Toybox/Graphics/Dc/#setAntiAlias-instance_function) 启用。此方法在 API level 3.2.0 之前不存在，因此如果应用运行在更低 API level 上，请使用 `has` 检查进行保护。
 
 ```typescript
 function draw(dc) {
@@ -130,7 +130,7 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用的是生命周期短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，您需要重新渲染其内容。或者，您可以调用引用上的 `get()` 方法获取位图的锁定版本。这会防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象被图形池清除，但如果加载更多资源，也可能导致图形池耗尽可用空间。
 
-如果您的应用程序运行在API前的4.0级设备上,请使用分发[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)的 has检查:
+如果应用运行在 API level 4.0 之前的设备上，请使用 `has` 检查保护对 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的访问：
 
 ```typescript
 import Toybox.Graphics;
