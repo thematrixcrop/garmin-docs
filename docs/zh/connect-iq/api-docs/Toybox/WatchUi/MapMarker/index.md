@@ -192,7 +192,7 @@ API 级别 3.0.0
 
 - icon — ([Graphics.BitmapType](/connect-iq/api-docs/Toybox/Graphics/#BitmapType-named_type), [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 
-    A 个 BitmapType 或 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 值
+    一个 BitmapType 或 [MAP\_MARKER\_ICON\_\*](/connect-iq/api-docs/Toybox/WatchUi/) 值
 
 - x — ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)) —
 

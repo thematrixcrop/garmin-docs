@@ -1666,7 +1666,7 @@ API 级别 2.3.0
 
 - 要启用的 SENSOR\_\* 类型数组
 
-- An empty array (\[\]) to disable all sensors
+- 空数组（\[\]）表示禁用所有传感器
 
 
 

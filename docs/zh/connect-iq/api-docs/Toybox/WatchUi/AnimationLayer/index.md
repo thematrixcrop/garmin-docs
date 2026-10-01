@@ -273,7 +273,7 @@ API 级别 3.1.0
 
 - :delegate — ([WatchUi.AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)) —
 
-        An [AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
+        一个 [AnimationDelegate](/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate/)
 
 
 返回：
