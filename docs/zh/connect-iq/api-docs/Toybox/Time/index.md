@@ -10,17 +10,17 @@ Time 模块提供处理时间和日期的功能。
 Monkey C 处理时间时使用两个主要概念：[Moment](/connect-iq/api-docs/Toybox/Time/Moment/) 和 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/)。Moment 是时间中的单个点，而 Duration 是一段时间。Moment 和 Duration 可以通过以下方式结合使用进行时间计算：
 
 ```
-  Expression           Method               Result    Notes
+  表达式                方法                 结果      说明
   ---------------------------------------------------------------------------
-  Moment + Moment      -                    -         Invalid
-  Moment + Duration    Moment.add()         Moment    A later Moment
-  Moment - Moment      Moment.subtract()    Duration  The span between Moments
-  Moment - Duration    Moment.subtract()    Moment    An earlier Moment
+  Moment + Moment      -                    -         无效
+  Moment + Duration    Moment.add()         Moment    更晚的 Moment
+  Moment - Moment      Moment.subtract()    Duration  两个 Moment 之间的时间跨度
+  Moment - Duration    Moment.subtract()    Moment    更早的 Moment
 
-  Duration + Duration  Duration.add()       Duration  A longer Duration
-  Duration + Moment    Duration.add()       Moment    A later Moment
-  Duration - Duration  Duration.subtract()  Duration  A shorter Duration
-  Duration - Moment    -                    -         Invalid
+  Duration + Duration  Duration.add()       Duration  更长的 Duration
+  Duration + Moment    Duration.add()       Moment    更晚的 Moment
+  Duration - Duration  Duration.subtract()  Duration  更短的 Duration
+  Duration - Moment    -                    -         无效
 ```
 
 日期和时间通常以 UNIX 纪元起的 UTC 时间表示，但 [Gregorian Moment](/connect-iq/api-docs/Toybox/Time/Gregorian/#moment-instance_function) 除外，后者是相对于当前本地时间创建的。
@@ -28,7 +28,7 @@ Monkey C 处理时间时使用两个主要概念：[Moment](/connect-iq/api-docs
 Monkey C 中的日期和时间格式相对开放，提供了用于短格式、中格式和长格式的格式常量（长格式和中格式目前等效）。
 
 ```
-  Constant          Seconds  Minutes  Hours  Day of Week  Day  Month  Year
+  常量               秒      分钟     小时     星期几       日    月      年
   ---------------------------------------------------------------------------
   FORMAT_SHORT   |  0        0        0      4            1    3      2017
   FORMAT_MEDIUM  |  0        0        0      Wed          1    Mar    2017
@@ -119,7 +119,7 @@ API 级别 1.0.0
 
 |
 
-Medium 格式由 Numbers 和 Strings 混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
+中格式由数字和字符串混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
 
 |
 | FORMAT\_LONG | 2 |
@@ -128,7 +128,7 @@ API 级别 1.0.0
 
 |
 
-Long 格式由 Numbers 和 Strings 混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
+长格式由数字和字符串混合组成，具体取决于调用的函数。如果格式化为 String，结果将是时间或日期的缩写形式。
 
 |
 
