@@ -179,7 +179,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onBikeCadenceUpdate**](#onBikeCadenceUpdate-instance_function)(data as [AntPlus.BikeCadenceInfo](/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo/)) as **Void**
 
