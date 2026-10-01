@@ -205,7 +205,7 @@ API 级别 1.0.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onEnterSleep**](#onEnterSleep-instance_function)() as **Void**
 
