@@ -194,7 +194,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.HashAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#HashAlgorithm-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
-    Constructor.
+    构造函数。
 
 - [**update**](#update-instance_function)(message as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/)) as **Void**
 
