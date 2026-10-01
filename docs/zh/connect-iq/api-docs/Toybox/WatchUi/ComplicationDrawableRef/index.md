@@ -72,7 +72,7 @@ API 级别 5.1.0
 
 - [**initialize**](#initialize-instance_function)(options as { :drawable as [WatchUi.Drawable](/connect-iq/api-docs/Toybox/WatchUi/Drawable/), :boundingBox as [Graphics.BoundingBox](/connect-iq/api-docs/Toybox/Graphics/BoundingBox/) })
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
