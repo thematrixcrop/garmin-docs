@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 ## 另见：
 
-- [Core Topics - Resources](/connect-iq/core-topics/resources/)
+- [核心主题 - 资源](/connect-iq/core-topics/resources/)
 
 
 示例：
