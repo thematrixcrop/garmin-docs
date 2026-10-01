@@ -18,7 +18,7 @@ Toybox.WatchUi.Drawable
 
 ## 概述
 
-Bitmap 是位图资源的类表示。
+Bitmap 表示位图资源。
 
 可以使用资源编译器构造 Bitmap，并通过资源（Rez）模块加载。
 
