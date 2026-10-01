@@ -378,13 +378,13 @@ API 级别 1.0.0
 
 在调用 [onShow()](/connect-iq/api-docs/Toybox/WatchUi/View/#onShow-instance_function) 后，View 被置于前景时会调用此函数。当 View 处于活动状态时，此方法通常用于更新 View 中的动态内容。在以下特殊情况下也会调用此方法：
 
-- 在 Widgets 和 Watch Apps 中调用 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) 时
+- 在小组件和手表应用中调用 [WatchUi.requestUpdate()](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function) 时
 
-- 低功耗模式下的 Watch Faces 每分钟一次
+- 低功耗模式下的表盘每分钟一次
 
-- 高功耗模式下的 Watch Faces 每秒一次
+- 高功耗模式下的表盘每秒一次
 
-- Data Fields 中每秒一次
+- 数据字段中每秒一次
 
 - 当 [animation](/connect-iq/api-docs/Toybox/WatchUi/#animate-instance_function) 处于活动状态时以更高频率进行
 
