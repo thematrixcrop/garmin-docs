@@ -1,6 +1,7 @@
 ---
 title: "Functions"
 ---
+<a id="functions"></a>
 # 函数
 
 函数是程序的核心。函数定义了独立的代码调用单元。
@@ -11,96 +12,102 @@ Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，�
 
 ## 变量、表达式和运算符
 
-子C支持的基本类型是:
+Monkey C 支持以下基本类型：
 
 -   **整数** - 32 位有符号整数
 
 -   **浮点数** - 32 位浮点数
 
-- **长度**  64-64位签名整数
+-   **Long**：64 位有符号整数
 
-- **双式**  64-64位浮点数字
+-   **Double**：64 位浮点数
 
 -   **布尔值** - `true` 和 `false`
 
 -   **字符** - Unicode 字符
 
-- **字符串**
+-   **字符串**：字符序列
 
-- **对象**  实时对象 (用类关键字定义)
+-   **对象**：实例化的对象（使用 `class` 关键字定义）
 
-- **阵列** - 配分为`new [X]`语法,其中"X"是计算阵列大小的表达式
+-   **数组**：使用 `new [X]` 语法分配，其中 `X` 是计算数组大小的表达式
 
-- **词典** - 配套阵列,配合`{}`语法
+-   **字典**：使用 `{}` 语法分配的关联数组
 
 
 ### 关键字
 
-以下是子C编程语言的关键字列表.您不能在程序中使用以下任何变量或符号.关键字`native`和`alias`是保留的,尽管目前不使用.`true`,`false`,`null`,`NaN`,`new`,`and`和`or`可能看起来像关键字,但它们实际上是字体和运算符;您不能在程序中使用它们作为标识符.
+以下是 Monkey C 编程语言中的关键字。程序中不能将这些关键字用作变量或符号。`native` 和 `alias` 虽然当前未使用，但仍是保留字。`true`、`false`、`null`、`NaN`、`new`、`and` 和 `or` 看起来像关键字，但实际上是字面量或运算符，也不能用作标识符。
 
-标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签: 标签
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| `as` | `const` | `enum` | `has` | `module` | `self` | `using` |
+| `break` | `continue` | `extends` | `hidden` | `private` | `static` | `var` |
+| `case` | `default` | `finally` | `if` | `protected` | `switch` | `while` |
+| `catch` | `do` | `for` | `instanceof` | `public` | `throw` |  |
+| `class` | `else` | `function` | `me` | `return` | `try` |  |
 
 ### 声明变量
 
 所有局部变量都必须提前使用 `var` 关键字声明。在 Monkey C 语言中，所有值（包括数值）都是对象。
 
 ```java
-var n = null;               // Null 引用
-var x = 5;                  // 32 位有符号整数
-var y = 6.0;                // 32 位浮点数
-var l = 5l;                 // 64 位有符号整数
-var d = 4.0d;               // 64 位浮点数
-var bool = true;            // 布尔值（true 或 false）
-var c = 'x';                // Unicode 字符
+var n = null;               // Null reference
+var x = 5;                  // 32-bit signed integers
+var y = 6.0;                // 32-bit floating point
+var l = 5l;                 // 64-bit signed integers
+var d = 4.0d;               // 64-bit floating point
+var bool = true;            // Boolean (true or false)
+var c = 'x';                // Unicode character
 var str = "Hello";          // String
-var arr = new [20 + 30];    // 大小为 50 的数组
-var dict = { x=>y };        // 字典：键为 5，值为 6.0
-var z = arr[2] + x;         // 即将发生的空指针错误
+var arr = new [20 + 30];    // Array of size 50
+var dict = { x=>y };        // Dictionary: key is 5, value is 6.0
+var z = arr[2] + x;         // Null pointer waiting to happen
 ```
 
-子C支持以下操作符:
+Monkey C 支持以下运算符：
 
 | Precedence | Operator | 说明 |
 | --- | --- | --- |
-| 1 | `new` | creation |
+| 1 | `new` | 创建 |
 |  | `!` | 逻辑 NOT |
 |  | `~` | 按位非 |
 |  | `( )` | 函数调用 |
-| 2 | `*` | multiplication |
-|  | `/` | division |
-|  | `%` | modulo |
+| 2 | `*` | 乘法 |
+|  | `/` | 除法 |
+|  | `%` | 取模 |
 |  | `&` | 按位与 |
 |  | `<<` | 左移 |
 |  | `>>` | 右移 |
-| 3 | `+` | addition |
-|  | `-` | subtraction |
+| 3 | `+` | 加法 |
+|  | `-` | 减法 |
 |  | `|` | 按位或 |
 |  | `^` | 按位异或 |
 | 4 | `<` | 小于 |
 |  | `<=` | 小于或等于 |
 |  | `>` | 大于 |
 |  | `>=` | 大于或等于 |
-|  | `==` | equals |
+|  | `==` | 等于 |
 |  | `!=` | 不等于 |
 | 5 | `&&` | 逻辑 AND |
 |  | `and` |  |
 | 6 | `||` | 逻辑 OR |
 |  | `or` |  |
-| 7 | `?:` | conditional |
+| 7 | `?:` | 条件运算 |
 
 ### 符号
 
-符号是轻量级的常数标识符.当子C编译器找到一个新的符号时,它将赋予它一个新的独特值.这允许符号作为键或常数使用,而不明确声明一个 const或 enum:
+符号是轻量级的常量标识符。Monkey C 编译器发现新符号时，会为其分配新的唯一值。因此，无需显式声明 `const` 或 `enum`，就可以将符号用作键或常量：
 
 ```java
 var a = :symbol_1;
 var b = :symbol_1;
 var c = :symbol_2;
-Sys.println( a == b );  // 打印 true
-Sys.println( a == c );  // 打印 false
+Sys.println( a == b );  // Prints true
+Sys.println( a == c );  // Prints false
 ```
 
-符号可以在不需要声明enum的情况下创建键时有用:
+如果不想声明 enum，符号可以方便地用来创建键：
 
 ```java
 var person = { :firstName=>"Bob", :lastName=>"Jones" };
@@ -108,9 +115,9 @@ var person = { :firstName=>"Bob", :lastName=>"Jones" };
 
 ### 常量
 
-常量是以`const`关键字声明的不变值.这些值用于存储在代码中可重复使用的不变值.常量必须在模块或类级别上声明;它们不能在函数内声明.
+常量是使用 `const` 关键字声明的不可变值，适合存储代码中会反复使用且不会变化的值。常量必须在模块或类级别声明，不能在函数内声明。
 
-常数支持与[listed for variables](#declaring-variables)相同的类型.重要的是要注意,在像数组这样的数据结构中,`const`的功能类似于Java的`final`关键字.例如,`const`数组阻止数组被新实例取代,但数组的元素可能会被修改.
+常量支持与[变量声明](#declaring-variables)相同的类型。对于数组等数据结构，需要注意 `const` 的行为类似于 Java 的 `final`：`const` 数组不能替换为新实例，但数组元素仍然可以修改。
 
 ```java
 const PI = 3.14;
@@ -120,14 +127,14 @@ const BANANA_YELLOW = "#FFE135";
 
 ### 枚举
 
-列表是从符号到整数的明确或自动增长常数映射.除非有明确的集合 (见第二例),否则每一个接下来的符号自动分配其前身加一个的值,从`0`开始.因此,在下面的例子中,星期一符号自动分配值`0`,星期二分配值`1`,等等.这些符号可以像常数变量一样使用 (这基本上是它们的).Enums必须在模块或类级级别上声明;它们不能在函数内声明.
+枚举是从符号到整数的显式或自动递增的常量映射。除非显式指定（参见第二个示例），否则每个后续符号会自动获得前一个符号加一的值，从 `0` 开始。下面的示例中，Monday 自动获得 `0`，Tuesday 获得 `1`，依此类推。这些符号可以像常量变量一样使用。Enum 必须在模块或类级别声明，不能在函数内声明。
 
 ```java
 enum {
     Monday,   // Monday = 0
     Tuesday,  // Tuesday = 1
     Wednesday // Wednesday = 2
-    // ……以此类推
+    // ...and so on
 }
 ```
 
