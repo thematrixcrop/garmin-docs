@@ -34,7 +34,7 @@ API 级别 2.4.0
 
 - [**setValue**](#setValue-instance_function)(key as [Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type), value as [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)) as **Void**
 
-    把给定数据存入该对象。
+    将给定数据存入对象存储。
 
 
 ## 类型定义详情
@@ -92,11 +92,11 @@ API 级别 2.4.0
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    若 key 是禁止的数据类型则抛出
+    如果 `key` 是不允许的数据类型，则抛出此异常。
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则会抛出此异常
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用此方法，则会抛出此异常。
 
 
 ### **getValue(key as [Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type))** as [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type)
@@ -138,12 +138,12 @@ API 级别 2.4.0
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    若 key 是禁止的数据类型则抛出
+    如果 `key` 是不允许的数据类型，则抛出此异常。
 
 
 ### **setValue(key as [Storage.KeyType](/connect-iq/api-docs/Toybox/Application/Storage/#KeyType-named_type), value as [Storage.ValueType](/connect-iq/api-docs/Toybox/Application/Storage/#ValueType-named_type))** as **Void**
 
-把给定数据存入该对象。
+将给定数据存入对象存储。
 
 对存储对象类型的支持随着时间推移不断扩展。
 
@@ -208,7 +208,7 @@ API 级别 2.4.0
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    若 key 是禁止的数据类型则抛出
+    如果 `key` 是不允许的数据类型，则抛出此异常。
 
 - ([Lang.StorageFullException](/connect-iq/api-docs/Toybox/Lang/StorageFullException/)) —
 
