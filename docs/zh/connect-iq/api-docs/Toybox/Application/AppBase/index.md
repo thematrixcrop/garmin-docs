@@ -2351,7 +2351,7 @@ function onSettingsChanged() { // triggered by settings change in GCM
 
 另见：
 
-- [WatchUi.requestUpdate() details](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
+- [WatchUi.requestUpdate() 详细信息](/connect-iq/api-docs/Toybox/WatchUi/#requestUpdate-instance_function)
 
 
 起始版本：
@@ -2908,7 +2908,7 @@ var boolean = app.getProperty("boolean");     // get value for "boolean" key
 
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
-- [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
+- [核心主题 - 持久化数据](/connect-iq/core-topics/persisting-data/)
 
 - [Toybox.Application.Properties](/connect-iq/api-docs/Toybox/Application/Properties/)
 
