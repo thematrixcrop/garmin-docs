@@ -4,11 +4,11 @@ title: "Downloading Content"
 <a id="downloading-content"></a>
 # 下载内容
 
-*自 API level 2.2.0 起可用*
+*自 API 级别 2.2.0 起可用*
 
 [Toybox.PersistedContent](/connect-iq/api-docs/Toybox/PersistedContent/) 模块允许访问用户保存在设备上的 Track、Course、Waypoint、Workout 和 Route。这些内容类型包含名称和唯一标识符，可以由 [System.exitTo()](/connect-iq/api-docs/Toybox/System/#exitTo-instance_function) 作为 [System.Intent](/connect-iq/api-docs/Toybox/System/Intent/) 使用，以启动原生应用并以某种方式向用户展示内容。更多信息请参阅 [Intents](/connect-iq/core-topics/intents/#intents) 部分。
 
-| Type | Object | API level |
+| 类型 | 对象 | API 级别 |
 | --- | --- | --- |
 | Track、Route、Course | [PersistedContent.Track](/connect-iq/api-docs/Toybox/PersistedContent/Track/)、[PersistedContent.Route](/connect-iq/api-docs/Toybox/PersistedContent/Route/)、[PersistedContent.Course](/connect-iq/api-docs/Toybox/PersistedContent/Course/) | 2.2.0 |
 | Waypoint | [PersistedContent.Waypoint](/connect-iq/api-docs/Toybox/PersistedContent/Waypoint/) | 2.2.0 |
@@ -61,13 +61,13 @@ function example() as Void {}
 
 ![](/connect-iq/resources/programmers-guide/intent-launched.png)
 
-*自 API level 3.1.0 起可用*
+*自 API 级别 3.1.0 起可用*
 
-在某些情况下，通过 Bluetooth low energy（BLE）连接 Garmin Connect Mobile 的链路太慢，无法下载某些内容。这时可以使用 WiFi Bulk Downloads 功能。
+在某些情况下，通过 Bluetooth Low Energy（BLE）连接 Garmin Connect Mobile 的链路太慢，无法下载某些内容。这时可以使用 Wi-Fi 批量下载功能。
 
 [Toybox.Communications](/connect-iq/api-docs/Toybox/Communications/) 模块提供了启动同步模式以及向系统发送同步状态信息的方法，以便系统显示这些信息。[Application.AppBase](/connect-iq/api-docs/Toybox/Application/AppBase/) 类为系统提供入口，用于获取在同步模式下与应用通信的委托对象。
 
-| Function or Class | Purpose |
+| 函数或类 | 用途 |
 | --- | --- |
 | [Communications.startSync()](/connect-iq/api-docs/Toybox/Communications/#startSync-instance_function) | 退出应用并以同步模式启动应用。 |
 | [AppBase.getSyncDelegate()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSyncDelegate-instance_function) | 获取向系统传递同步状态的 SyncDelegate 对象。 |
