@@ -197,7 +197,7 @@ var boolean = Storage.getValue("boolean");     // get value for "boolean" key
 
 - [Toybox.Background](/connect-iq/api-docs/Toybox/Background/)
 
-- [Core Topics - Persisting Data](/connect-iq/core-topics/persisting-data/)
+- [核心主题 - 持久化数据](/connect-iq/core-topics/persisting-data/)
 
 
 起始版本：
