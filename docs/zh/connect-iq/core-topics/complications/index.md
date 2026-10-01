@@ -1,5 +1,5 @@
 ---
-title: "Complications"
+title: "复杂功能"
 ---
 <a id="complications"></a>
 # 复杂功能（Complications）
