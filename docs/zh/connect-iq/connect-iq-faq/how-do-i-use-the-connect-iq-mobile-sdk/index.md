@@ -1,5 +1,5 @@
 ---
-title: "How do I use the Connect IQ Mobile SDK"
+title: "如何使用 Connect IQ Mobile SDK"
 ---
 <a id="how-do-i-use-the-connect-iq-mobile-sdk"></a>
 # 如何使用 Connect IQ Mobile SDK
