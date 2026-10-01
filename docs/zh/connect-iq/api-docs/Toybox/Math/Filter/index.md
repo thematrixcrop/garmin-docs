@@ -22,7 +22,7 @@ Toybox.Lang.Object
 
 ## 另见：
 
-- [Filters](https://en.wikipedia.org/wiki/Filter_(signal_processing)#Filters_for_removing_noise_from_data)
+- [滤波器](https://en.wikipedia.org/wiki/Filter_(signal_processing)#Filters_for_removing_noise_from_data)
 
 
 注意：
