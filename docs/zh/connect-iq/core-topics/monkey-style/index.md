@@ -27,7 +27,7 @@ personality_class {
 | Color | #555555 |
 | Symbol | `:myBitmap` |
 | Resource | `@Rez.Strings.promptTitle` |
-| API Constant | `Graphics.TEXT_JUSTIFY_CENTER` |
+| API 常量 | `Graphics.TEXT_JUSTIFY_CENTER` |
 | Array | `[Graphics.FONT_SMALL, Graphics.FONT_TINY]` |
 
 ## 资源编译器
