@@ -694,7 +694,7 @@ API 级别 1.0.0
 
 - [Toybox.FitContributor](/connect-iq/api-docs/Toybox/FitContributor/)
 
-- [The Messages Sheet in Profile.xlsx included with the FIT SDK for native field numbers](https://www.thisisant.com/resources/fit)
+- [FIT SDK 随附的 Profile.xlsx 消息表（用于原生字段编号）](https://www.thisisant.com/resources/fit)
 
 
 起始版本：
