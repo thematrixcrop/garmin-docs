@@ -11,7 +11,7 @@ Gregorian 模块提供一个接口，用于根据公历获取 [Moment](/connect-
 
 ## 另见：
 
-- [The Gregorian Calendar](https://en.wikipedia.org/wiki/Gregorian_calendar)
+- [公历](https://en.wikipedia.org/wiki/Gregorian_calendar)
 
 
 起始版本：
