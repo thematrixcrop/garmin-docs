@@ -158,7 +158,7 @@ Barrel 会自动添加到默认的 Barrel Jungle 文件中，Manifest 文件也�
 base.FooBarrel.annotations = Bars;BarsToo
 ```
 
-**注意：**如需直接在 Jungle 配置文件中处理 Barrel，请参阅 [Build Configuration](/connect-iq/core-topics/build-configuration/#build-configuration) 部分。
+**注意：**如需直接在 Jungle 配置文件中处理 Barrel，请参阅[构建配置](/connect-iq/core-topics/build-configuration/#build-configuration)部分。
 
 完成后，选定的 Barrel 就会添加到项目中。
 
