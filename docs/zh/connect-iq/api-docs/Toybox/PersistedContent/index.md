@@ -28,7 +28,7 @@ PersistedContent 模块允许访问存储的路线、航点和其他存储的用
 
 - [Toybox.Communications](/connect-iq/api-docs/Toybox/Communications/)
 
-- [Core Topics - Downloading Content](/connect-iq/core-topics/downloading-content/)
+- [核心主题 - 下载内容](/connect-iq/core-topics/downloading-content/)
 
 
 注意：
