@@ -4,7 +4,7 @@ title: "请求评价"
 <a id="requesting-reviews"></a>
 # 请求评价
 
-作为开发者，你希望用户在获得良好体验后评价应用。理想情况下，评价流程应尽量简单，帮助更多用户留下正面评价。
+作为开发者，您希望用户在获得良好体验后评价应用。理想情况下，评价流程应尽量简单，帮助更多用户留下正面评价。
 
 在兼容设备上，用户留下评价的流程如下：
 
@@ -14,7 +14,7 @@ title: "请求评价"
 
 ## 请求评价令牌
 
-为了避免打扰用户，应用必须先向应用商店请求发起评价的许可。应用商店会检查多个条件，包括你是否近期已经向用户请求过评价，以及用户是否使用应用的最新版本。可以调用 [WatchUi.makeReviewTokenRequest()](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function) 请求令牌。该调用是异步的，必须传入 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 回调来接收响应。
+为了避免打扰用户，应用必须先向应用商店请求发起评价的许可。应用商店会检查多个条件，包括您是否近期已经向用户请求过评价，以及用户是否使用应用的最新版本。可以调用 [WatchUi.makeReviewTokenRequest()](/connect-iq/api-docs/Toybox/WatchUi/#makeReviewTokenRequest-instance_function) 请求令牌。该调用是异步的，必须传入 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 回调来接收响应。
 
 ## 接收令牌
 
