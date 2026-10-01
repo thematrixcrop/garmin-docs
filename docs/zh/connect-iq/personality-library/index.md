@@ -29,15 +29,15 @@ Monkey Style 是一种用于管理样式元素的领域专用属性语言。它�
 
 ## 组件概览
 
-| Chapter | Description |
+| 章节 | 说明 |
 | --- | --- |
-| [Colors](/connect-iq/personality-library/colors/) | 了解设计系统如何表达颜色。 |
-| [Iconography](/connect-iq/personality-library/iconography/) | 将系统图标集成到应用中。 |
-| [Typography](/connect-iq/personality-library/typography/) | 选择合适的字体。 |
-| [Input Hints](/connect-iq/personality-library/input-hints/) | 为用户的操作提供视觉提示。 |
-| [Prompts](/connect-iq/personality-library/prompts/) | 向用户提供文本信息。 |
-| [Confirmations](/connect-iq/personality-library/confirmations/) | 询问用户是否要继续。 |
-| [Toasts](/connect-iq/personality-library/toasts/) | 提供简短的状态更新。 |
-| [Action Views](/connect-iq/personality-library/action-views/) | 创建包含交互信息的页面。 |
-| [Page Loops](/connect-iq/personality-library/page-loops/) | 将信息拆分到多个页面。 |
-| [Progress Indicators](/connect-iq/personality-library/progress-bars/) | 显示长时间操作的进度。 |
+| [颜色](/connect-iq/personality-library/colors/) | 了解设计系统如何表达颜色。 |
+| [图标](/connect-iq/personality-library/iconography/) | 将系统图标集成到应用中。 |
+| [排版](/connect-iq/personality-library/typography/) | 选择合适的字体。 |
+| [输入提示](/connect-iq/personality-library/input-hints/) | 为用户的操作提供视觉提示。 |
+| [提示](/connect-iq/personality-library/prompts/) | 向用户提供文本信息。 |
+| [确认](/connect-iq/personality-library/confirmations/) | 询问用户是否要继续。 |
+| [Toast 提示](/connect-iq/personality-library/toasts/) | 提供简短的状态更新。 |
+| [操作视图](/connect-iq/personality-library/action-views/) | 创建包含交互信息的页面。 |
+| [分页循环](/connect-iq/personality-library/page-loops/) | 将信息拆分到多个页面。 |
+| [进度指示器](/connect-iq/personality-library/progress-bars/) | 显示长时间操作的进度。 |
