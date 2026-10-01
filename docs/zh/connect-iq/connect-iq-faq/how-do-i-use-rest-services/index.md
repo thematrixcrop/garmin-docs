@@ -11,7 +11,7 @@ Connect IQ Communication API 将 Web 能力带到 Garmin 设备。不过，将 W
 
 ## 少即是多
 
-在 Connect IQ 应用与配套移动应用之间传输 JSON 响应或消息时，这句经典谚语再合适不过。如果你正在编写一个供 Connect IQ 应用调用、用于返回推文的 Web 服务，请考虑应用真正需要哪些信息。通常只需要推文文本和发布者用户名，这样每条推文只需传输约 250 字节。
+在 Connect IQ 应用与配套移动应用之间传输 JSON 响应或消息时，这句经典谚语再合适不过。如果您正在编写一个供 Connect IQ 应用调用、用于返回推文的 Web 服务，请考虑应用真正需要哪些信息。通常只需要推文文本和发布者用户名，这样每条推文只需传输约 250 字节。
 
 参考 [Twitter API 页面](https://dev.twitter.com/rest/reference/get/search/tweets)中的示例结果，一条推文的完整 JSON 可能如下：
 
