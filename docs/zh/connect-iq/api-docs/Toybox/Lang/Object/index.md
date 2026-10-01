@@ -83,7 +83,7 @@ API 级别 1.0.0
 
 获取 Object 的哈希代码值。
 
-此方法计算一个通常用作将 Object 放入 Dictionary 时索引的 32 位 Number。Hash code 值具有以下特征：
+此方法计算一个通常用作将 Object 放入 Dictionary 时索引的 32 位 Number。哈希代码值具有以下特征：
 
 - 计算得到的哈希码在 Object 的整个生命周期内保持不变
 
