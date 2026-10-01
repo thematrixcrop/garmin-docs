@@ -1,13 +1,14 @@
 ---
 title: "Objects, Modules, and Memory"
 ---
+<a id="objects-modules-and-memory"></a>
 # 对象、模块和内存
 
-类允许数据和操作在对象上被绑定在一起.在子C中,变量,函数和其他类可以在类中定义.
+对象使用 `class` 关键字创建。类可以将数据和操作绑定到对象上。在 Monkey C 中，可以在类中定义变量、函数和其他类。
 
 ## 构造函数
 
-当用`new`关键词实时化一个对象时,将内存分配到`initialize`方法:
+使用 `new` 关键字实例化对象时，系统会分配内存并调用 `initialize` 方法：
 
 ```typescript
 class Circle
@@ -31,17 +32,17 @@ class A
     public var x;
     public var y;
     public function initialize() {
-        me.x = "Hello"; // 设置当前实例的 x 变量
-        self.y = "Hello"; // 设置当前实例的 y 变量
+        me.x = "Hello"; // Set current instance x variable
+        self.y = "Hello"; // Set current instance y variable
     }
 }
 ```
 
-要实现嵌套类的内部类,首先必须实现外部类.然而,与Java不同,子C中的嵌套类没有访问附加类的成员.
+要实例化嵌套类中的内部类，必须先实例化外部类。不过，与 Java 不同，Monkey C 中的嵌套类无法访问其外部类的成员。
 
 ## 继承
 
-子C使用`extends`关键字来支持类继承:
+Monkey C 使用 `extends` 关键字支持类继承：
 
 ```typescript
 import Toybox.System;
@@ -60,7 +61,7 @@ class B extends A
 
 function usageSample() {
     var inst = new B();
-    inst.print();           // 打印 "Hello!"
+    inst.print();           // Prints "Hello!"
 }
 ```
 
@@ -79,29 +80,29 @@ class A
 class B extends A
 {
     function print() {
-        // 调用父类实现
+        // Call the super class implementation
         A.print();
 
-        // 修改输出
+        // Amend the output
         System.println( "Hola!" );
     }
 }
 
 function usageSample() {
     var inst = new B();
-    inst.print();           // 打印 "Hello! Hola!"
+    inst.print();           // Prints "Hello! Hola!"
 }
 ```
 
 ## 数据隐藏
 
-班子成员有三级接入:`public`,`protected`和`private`.
+类成员有三个访问级别：`public`、`protected` 和 `private`。
 
-`public`是默认的,但它也可以明确指定.当使用`public`访问修改器为enum,变量或函数时,这些成员可见于所有其他类.
+`public` 是默认级别，也可以显式指定。将 `public` 访问修饰符用于 enum、变量或函数时，这些成员对所有其他类可见。
 
-`private`修改器指定该成员只能在自己的类中访问.
+`private` 修饰符表示成员只能在所属类中访问。
 
-`protected`修改器指定该成员只能通过自己的类或其子类访问.`hidden`关键字与`protected`关键字同义.子C版本 1.0仅有两个可见性水平:`public`和`hidden`.`hidden`仍然用于反向兼容性目的,但可以被认为是`protected`相同的.
+`protected` 修饰符表示成员只能由所属类或其子类访问。`hidden` 关键字与 `protected` 同义。Monkey C 1.0 只有 `public` 和 `hidden` 两个可见性级别；为保持向后兼容，仍保留 `hidden`，但可以将其视为 `protected`。
 
 ```typescript
 import Toybox.System;
@@ -121,11 +122,11 @@ class Foo
 
 class Bar extends Foo {
     public function initialize() {
-        // 初始化父类
+        // Initialize the parent
         Foo.initialize();
         publicVar = "b";
         _protectedVar = "c";
-        // 错误 - 无法访问私有成员
+        // Error - can't access private member
         _privateVar = "d";
     }
 }
@@ -133,18 +134,18 @@ class Bar extends Foo {
 function usageSample() {
     var v = new Foo();
     System.println( v.publicVar );
-    // 错误 - 无法访问受保护成员
+    // Error - cannot access protected member
     System.println( v._protectedVar );
-    // 错误 - 无法访问私有成员
+    // Error - cannot access private member
     System.println( v._privateVar );
 }
 ```
 
 ## 多态
 
-大多数对象导向语言都支持*多形函数*的概念,其中函数可以根据输入参数数量和类型具有多个定义.部分原因是由于它的型性质,子C不支持这种运行时间多形.
+大多数面向对象语言都支持*多态函数*，即根据输入参数的数量和类型为同一个函数提供多个定义。由于 Monkey C 采用鸭子类型等原因，它不支持这种运行时多态。
 
-由于函数参数是类型,因此可以使用`instanceof`运算器实现某种多形性水平:
+由于函数参数采用鸭子类型，可以使用 `instanceof` 运算符实现一定程度的多态：
 
 ```typescript
 import Toybox.Lang;
@@ -163,7 +164,7 @@ function aPolymorphicFunction(a) {
 }
 ```
 
-如果您的函数需要预期多个输入,另一个模式是使用选项词典.您可以使用符号来定义键来最大化处理效率:
+如果函数需要接收多个输入，可以使用选项字典模式。使用符号定义键，还能提高处理效率：
 
 ```typescript
 x = aPolymorphicFunction({
@@ -172,7 +173,7 @@ x = aPolymorphicFunction({
 })
 ```
 
-这种模式是很好的,如果你想让一个API在未来扩展的空间.
+如果希望未来为 API 留出扩展空间，这种模式很有用。
 
 ## 强引用和弱引用
 
@@ -193,27 +194,28 @@ Monkey C 使用引用计数，这意味着当引用某块内存的对象数量�
 
 ![弱引用](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
-为了创建一个弱引用,你使用`weak()`方法. 弱是`Lang.Object`中的一种方法,可用于所有子C对象.
+要创建弱引用，请使用 `weak()` 方法。`weak()` 是 `Lang.Object` 中的方法，所有 Monkey C 对象都可以使用。
 
 ```java
-// 我本想提到 “Hans and Franz”，但
-// 某些广告让他们显得不酷了。
+// I would make a "Hans and Franz" reference but I
+// think certain advertising has made them uncool.
 var weakRef = obj.weak()
 ```
 
-如果您正在调用`weak`在不可变的类型之一 (`Number`,`Float`,`Char`,`Long`,`Double`,`String`),则它将返回对象本身.否则它将返回一个[Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)实例.
+如果对不可变类型（`Number`、`Float`、`Char`、`Long`、`Double`、`String`）调用 `weak()`，它会返回对象本身；否则会返回一个 [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) 实例。
 
 ```typescript
-//! 弱引用是对另一个对象的松散绑定引用。
-//! 如果所有强引用都已释放，get() 方法将返回 null。
-//! 这使开发者能够避免循环引用。
+//! A weak reference is a loosely bound reference to
+//! another object. If all strong references have been
+//! freed, the get() method will return null.
+//! This allows the developer to avoid circular references.
 //! @since 1.2.0
 class WeakReference
 {
-    //! 返回引用是否仍然有效。
-    //! @return 如果对象仍然有效则为 true，否则为 false。
-    //!    当你死去时，我仍然活着
-    //!    我感觉棒极了，而我仍然活着
+    //! Return if the reference is still alive.
+    //! @return true if object is still alive, false otherwise.
+    //!    When you are dead I will be STILL ALIVE
+    //!    I feel fantastic and I am STILL ALIVE
     function stillAlive();
 
     //! 获取被引用的对象。
