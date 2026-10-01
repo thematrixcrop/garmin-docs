@@ -6,7 +6,7 @@ title: "传感器配对"
 
 *自 API 级别 5.1.0 起支持*
 
-如果设备应用或数据字段通过 ANT、ANT+ 或 Bluetooth Low Energy（BLE）与传感器或外设进行无线通信，就需要实现配对流程。Connect IQ 允许你实现 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)，让设备在系统传感器配对界面中完成配对。
+如果设备应用或数据字段通过 ANT、ANT+ 或 Bluetooth Low Energy（BLE）与传感器或外设进行无线通信，就需要实现配对流程。Connect IQ 允许您实现 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)，让设备在系统传感器配对界面中完成配对。
 
 ## 实现 SensorDelegate
 
@@ -20,7 +20,7 @@ title: "传感器配对"
 
 ## 配对设备
 
-系统会向用户显示设备列表供其选择。如果用户选择了与你的应用关联的设备，系统会重新实例化 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)，并调用 [SensorDelegate.onPair()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onPair-instance_function)，将 [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 作为参数传入。此时，应用应执行配对设备所需的步骤。对于 ANT，可能只需记录设备 ID 并持久化；对于 BLE，可能需要持久化 `ScanResult` 或建立绑定连接。最后调用 [Sensor.notifyPairComplete()](/connect-iq/api-docs/Toybox/Sensor/#notifyPairComplete-instance_function) 完成流程。
+系统会向用户显示设备列表供其选择。如果用户选择了与您的应用关联的设备，系统会重新实例化 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)，并调用 [SensorDelegate.onPair()](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/#onPair-instance_function)，将 [Sensor.SensorInfo](/connect-iq/api-docs/Toybox/Sensor/SensorInfo/) 作为参数传入。此时，应用应执行配对设备所需的步骤。对于 ANT，可能只需记录设备 ID 并持久化；对于 BLE，可能需要持久化 `ScanResult` 或建立绑定连接。最后调用 [Sensor.notifyPairComplete()](/connect-iq/api-docs/Toybox/Sensor/#notifyPairComplete-instance_function) 完成流程。
 
 ## 取消配对
 
@@ -32,7 +32,7 @@ title: "传感器配对"
 
 ## 在模拟器中测试
 
-要在 Connect IQ Simulator 中测试配对代码，请使用 *Settings > Manage Sensors* 选项。点击 *Add* 按钮会触发你的 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)。
+要在 Connect IQ Simulator 中测试配对代码，请使用 *Settings > Manage Sensors* 选项。点击 *Add* 按钮会触发您的 [Sensor.SensorDelegate](/connect-iq/api-docs/Toybox/Sensor/SensorDelegate/)。
 
 ## 从 Monkey C Extension 以传感器配对模式运行应用
 
