@@ -24,7 +24,7 @@ title: "应用类型"
 
 应用类型定义了应用所处的用户场景。例如，表盘在低功耗模式下运行，因此受到许多限制。为强制执行这些限制，Connect IQ 虚拟机会根据应用类型限制可用的 API。
 
-| 模块名称 | 数据字段 | 表盘 | 小工具 | 应用 | 音频内容提供程序 | API 级别 |
+| 模块名称 | 数据字段 | 表盘 | 小工具 | 应用 | 音频内容提供商 | API 级别 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Toybox.Activity](/connect-iq/api-docs/Toybox/Activity/) | ✓ |  |  | ✓ | ✓ | 1.0.0 |
 | [Toybox.ActivityMonitor](/connect-iq/api-docs/Toybox/ActivityMonitor/)\* | ✓ | ✓ | ✓ | ✓ | ✓ | 1.0.0 |
@@ -139,7 +139,7 @@ class BeersEarned extends Application.AppBase
 
 <a id="widgets"></a>
 
-## 小组件
+## 小工具
 
 小工具是轻量级应用，可以为用户提供一目了然的信息。信息可以来自云服务、内置传感器或其他 Connect IQ API。小工具可以从可穿戴设备主屏幕上的页面轮播启动，也可以从自行车电脑和户外手持设备的侧边视图启动。与设备应用不同，小工具会在一段时间没有活动后超时，也不能记录活动，但可以随时启动。
 
@@ -151,11 +151,11 @@ class BeersEarned extends Application.AppBase
 
 小工具轮播中的所有视图都应支持系统菜单，以便用户执行菜单操作。对于小工具，系统菜单的第一项是查看小工具菜单的选项。用户选择该项后，系统会调用小工具的 [BehaviorDelegate.onMenu()](/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate/#onMenu-instance_function)。
 
-### 快览
+### 速览
 
 *自 API 级别 3.1.0*
 
-Fenix 6 将小工具的信息展示从页面轮播改为列表。每个列表项提供一小块区域显示信息。用户选择列表项后，会启动完整的小工具。在这种启动场景下，小工具基础视图不受常规输入限制。
+fēnix® 6 将小工具的信息展示从页面轮播改为列表。每个列表项提供一小块区域显示信息。用户选择列表项后，会启动完整的小工具。在这种启动场景下，小工具基础视图不受常规输入限制。
 
 速览视图运行在受限的运行时环境中，可用内存和权限更少，并且不接收任何输入。
 
