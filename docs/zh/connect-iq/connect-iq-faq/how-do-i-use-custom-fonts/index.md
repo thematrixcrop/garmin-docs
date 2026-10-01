@@ -1,156 +1,155 @@
 ---
 title: "How do I use custom fonts?"
 ---
+<a id="how-do-i-use-custom-fonts"></a>
 # 如何使用自定义字体？
 
-*这个客人帖子是由*[*Hermo Terblanche*](https://www.instagram.com/hermoterblanche/)*在南非的Connect IQ开发者撰写的.*
+*本文由南非 Connect IQ 开发者* [*Hermo Terblanche*](https://www.instagram.com/hermoterblanche/)*撰写。*
 
-您是否见过 Connect IQ 商店中让您惊叹“太酷了！开发者是怎么做到的？”的应用程序？要让您的应用脱颖而出，可以尝试一些有趣的字体技巧。我会分享一些来自[我自己制作的 Connect IQ 应用](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps)的经验，希望能启发您为 Garmin Connect IQ 设备创建令人印象深刻的应用程序。
+你是否在 Connect IQ 商店见过让自己惊叹“太酷了，开发者是怎么做到的？”的应用？要让应用脱颖而出，可以尝试一些有趣的字体技巧。下面分享一些[我为 Connect IQ 创作的应用](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps)中的经验，希望能启发你为 Garmin Connect IQ 设备制作令人印象深刻的应用。
 
-让我们直接进入魔术吧!
+先来看看需要用到的工具：
 
--[**BMFont**](http://www.angelcode.com/products/bmfont/)- 为了将字体导出到Connect IQ所需的格式.您可以阅读更多关于[in the Programmer's Guide](/connect-iq/core-topics/resources/#fonts)和[UX Guide](/connect-iq/user-experience-guidelines/)
+-   [**BMFont**](http://www.angelcode.com/products/bmfont/)：将字体导出为 Connect IQ 所需的格式。更多信息请参阅 [Programmer's Guide](/connect-iq/core-topics/resources/#fonts) 和 [UX Guide](/connect-iq/user-experience-guidelines/)。
 
-- **图形编辑器 / 工具** - - 为编辑字体png文件.我更喜欢使用[Photoshop](https://www.adobe.com/products/photoshop.html)来实现所需的效果,但也可以使用[GIMP](https://www.gimp.org/)
-
+-   **图形编辑器或工具**：编辑字体 PNG 文件。我更喜欢使用 [Photoshop](https://www.adobe.com/products/photoshop.html) 实现所需效果，也可以使用 [GIMP](https://www.gimp.org/)。
 
 ## 字体反射
 
-这种技术非常简单,可以通过两种方式实现:
+这种技巧非常简单，可以通过两种方式实现。
 
-### 接近A
+### 方法 A
 
-我使用了[free font called Sunset](https://www.dafont.com/sunset.font)下载并将其出口到 PNG 时刻使用BMFont.
+在 **Summer Sunset** Watch Face 中，我使用了[免费字体 Sunset](https://www.dafont.com/sunset.font)，并用 BMFont 将其导出为 PNG。
 
 ![](/connect-iq/resources/faq/summer_sunet_1.png)
 
-这种字体将每个数字及其相应的反射结合成一个字体.这意味着当你绘制一个数字时,它将数字和反射都绘制成一个字符.
+该字体将每个数字及其对应的倒影合并为一个字形。因此绘制数字时，会同时绘制数字和倒影。
 
 ![](/connect-iq/resources/faq/reflecto_font.jpg)
 
-这种方法的好处是效率:你只需要单个字体,它需要更少的资源,并导致一个较小的编译PRG文件. 此外,你的代码也更便宜,因为你只需要单个语句来绘制更适合电池的数字.最后,你不需要单独管理绘制数字的反射的定位,这使得这是最简单的方法.缺点是,你不能为数字和反射有单独的颜色,因为字体被视为一个原子字符,并且只能将一个颜色应用于整个字体.
+这种方法的优点是效率高：只需一个字体，资源占用更少，编译后的 PRG 文件也更小。代码只需要一条语句绘制数字，耗电更少。还不必单独管理倒影的位置，是最简单的实现方式。缺点是数字和倒影无法使用不同颜色，因为整个字形被视为一个不可分割的字符，只能为其应用一种颜色。
 
-为了看到时间背后的地平线,你首先绘制地平线,然后指定字体的透明背景颜色,
+要在时间背后显示天际线，先绘制天际线，再将字体背景色设为透明，最后在天际线上绘制时间：
 
 ```
-//在这里绘制天际线
+//draw skyline here
 ..
-//加载自定义字体
+//load custom font
 var font = Ui.loadResource( Rez.Fonts.Sunset );
 
-//设置时间颜色并绘制时间
+//set the time's color and draw it
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, font, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
 
-这种方法是最简单的,在使用BMFont工具出口后,不需要进一步处理字体的图像.
+这种方法最直接，使用 BMFont 导出字体后无需进一步处理字体图像。
 
 ### 方法 B
 
-**反射**表面稍微先进,涉及一些图像处理,但它提供了指定时间和反射的不同颜色的好处.
+**Reflection** Watch Face 稍微复杂一些，需要进行图像处理，但可以为时间和倒影指定不同颜色。
 
 ![](/connect-iq/resources/faq/reflections.png)
 
-这种方法使用两个独立的字体.我还下载了一个免费的字体,并使用BMFont将其导出到PNG.然后我复制了`*.PNG`和`*.FNT`文件,并将它们改名为有意义的东西,以便我可以轻松区分两种不同的字体的文件.使用一些Photoshop技巧,我将复制的PNG文件中的每一个字体转换为反射字体.重要的是要记住这一方法是,它最适合单空间字体;在两种字体中具有恒定的字体大小,使得平衡正常和反射时间变得更容易.没有过于深入图像处理细节,以下是确切的步骤:
+这种方法使用两个独立字体。我同样下载了一个免费字体，并用 BMFont 将其导出为 PNG，然后复制 `*.PNG` 和 `*.FNT` 文件并改成有意义的名称，以便区分两种字体。接着使用 Photoshop 将复制的 PNG 文件中的每个字形转换为倒影字形。最好使用等宽字体，因为两个字体中的字形大小固定，更容易对齐普通时间和倒影时间。具体步骤如下：
 
-- 每个字体 (一次一次):
+-   逐个处理每个字形：
 
-- 使用选择工具来选择一个字体
+    -   使用选择工具选中一个字形。
 
-- 使用转换菜单并垂直翻选
+    -   在变换菜单中垂直翻转选区。
 
-- 使用转换菜单,要么曲解或扭曲选择,以获得角色所需的角度.请记住,因为您希望时间的反射仍然适合屏幕.在上面的截图中,您将注意到反射的"1"的底部触及屏幕边界.更曲解的效果会导致反射的"1"被剪切.您必须尝试几次才能得到正确的.这步骤是最具挑战性的,但也是最有价值的!
+    -   使用变换菜单倾斜或扭曲选区，使字形达到所需角度。不要倾斜过度，否则时间倒影可能无法放入屏幕。例如上图中倒影 “1” 的底部已经接触屏幕边界，进一步倾斜会导致它被裁剪。这个步骤最具挑战性，但也最有成就感。
 
-- 你必须移动转换的选择,以将其与其他转换的字体相结合. 这使得更容易指定FNT文件中的字符坐标.*.
+    -   移动变换后的选区，使其与其他变换后的字形对齐。这样更容易在 `*.FNT` 文件中指定字符坐标。
 
-- 一旦所有字体被转换后,保存png为反射字体.
+-   所有字形转换完成后，保存倒影字体的 PNG。
 
-- 在Photoshop中,使用选择工具找到每个转换的字体的新x,y坐标,并在重复的FNT文件中更改相应的值.
+-   在 Photoshop 中使用选择工具获取每个变换后字形的新 x、y 坐标，并修改复制的 `*.FNT` 文件中的对应值。
 
-- 确保重复 \*.FNT文件中的文件属性被重复 \*.PNG (反射字体) 指向.
+-   确保复制的 `*.FNT` 文件中的文件属性指向复制的 `*.PNG`（倒影字体）。
 
--   在代码中加载两种字体。绘制普通时间后，使用反射字体绘制相同的时间。对于反射时间，需要将字符与普通时间字符的底部对齐。
+-   在代码中加载两个字体。绘制普通时间后，使用倒影字体绘制相同时间；绘制倒影时间时，需要将字符底部与普通时间字符的底部对齐。
 
-
-下面是从正常字体中的一些字体和它们相应的反射字体中的反射字体的插图.
+下面展示普通字体中的一些字形及其在倒影字体中的对应字形。
 
 ![](/connect-iq/resources/faq/normal_and_reflected.jpg)
 
 ```
-//加载普通时间的自定义字体
+//load custom font for the normal time
 var normalFont = Ui.loadResource( Rez.Fonts.Normal );
-//加载反射时间的自定义字体
+//load custom font for the reflected time
 var reflectedFont = Ui.loadResource( Rez.Fonts.Reflected );
 
-//设置普通时间的颜色并绘制
+//set the normal time's color and draw it
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, normalFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//设置反射时间的颜色并绘制
+//set the reflected time's color and draw it
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(offsetX,offsetY, reflectedFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
 
 ## 两色字体
 
-连接IQ支持自定义字体中只有一种颜色.这是因为字体的PNG是灰色尺度图像,因此只有一个频道.您不能创建一个字体显示多种颜色.下面是一个概念的插图,在单个字体内不可能:
+Connect IQ 的自定义字体只能使用一种颜色，因为字体 PNG 是灰度图像，只有一个通道。因此无法直接创建显示多种颜色的字体。下面的图片展示了单个字体无法实现的效果：
 
 ![](/connect-iq/resources/faq/wouldnt_this_be_nice.jpg)
 
-但是不要害怕!用一些聪明的技巧,你可以创建一个显示多种颜色的字体效果. 腕表面**Watch Me**使用两个颜色显示时间:白色边框和蓝色填充.
+不过，通过一些技巧可以实现多色字体效果。**Watch Me** Watch Face 使用两种颜色显示时间：白色边框和蓝色填充。
 
 ![](/connect-iq/resources/faq/two_color_face.png)
 
-这种技巧背后的魔力包括两种不同面具的字体组合.下面是两种不同字体面具的一些字体插图.上面的图像是边界的字体,而下面的字体是内部的填写.记住哪个字体,简单的方法是记住白色是你或用户选择的颜色将在屏幕上绘制的区域.
+实现这种效果需要组合使用两个具有不同蒙版的字体。上方字体用于边框，下方字体用于内部填充。可以记住：白色区域就是会以你或用户选择的颜色绘制到屏幕上的部分。
 
 ![](/connect-iq/resources/faq/mask_glyphs.jpg)
 
-顶面膜是原始的字体,是通过BMFont工具出口的.对于下面面膜,我创建了顶面膜的复制品,然后基本上翻了颜色,以确保它只会用特定颜色绘制内部区域.
+上方蒙版是使用 BMFont 导出的原始字体。下方蒙版是上方蒙版的副本，我将颜色反转，使它只绘制指定颜色的内部区域。
 
 ```
-//加载边框的自定义字体
+//load custom font for the border
 var borderFont = Ui.loadResource( Rez.Fonts.Border );
-//加载内部填充的自定义字体
+//load custom font for the inner fill
 var innerFillFont = Ui.loadResource( Rez.Fonts.InnerFill );
 
-//设置时间边框颜色并绘制
+//set the time's border color and draw it
 dc.setColor(Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, borderFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 
-//设置时间内部填充颜色并绘制
+//set the time's inner fill color and draw it
 dc.setColor(Gfx.COLOR_ORANGE, Gfx.COLOR_TRANSPARENT);
 dc.drawText(timeX,timeY, innerFillFont, timeStr, Gfx.TEXT_JUSTIFY_CENTER);
 ```
 
-## 字体具有斜面方向
+## 带对角方向的字体
 
-写文本的想法不是我创新的东西;我第一次在商店里看到它.作为一个好奇的开发者,我不得不自己尝试它.这项实验的结果可以在我的手表面**南非**上看到.时间显示在一个上升或下降的方向上,根据用户的偏好.每个方向都是用自己的独立字体创建的.
+以非水平方式显示文字并不是我首创的想法，我是在商店中的另一款 Watch Face 里首次看到的。出于好奇，我也进行了尝试，结果就是 **South Africa** Watch Face。时间可以根据用户偏好沿上升或下降方向显示，每种方向使用独立字体。
 
 ![](/connect-iq/resources/faq/south_africa_1.png)
 ![](/connect-iq/resources/faq/south_africa_2.jpg)
 
 ![](/connect-iq/resources/faq/rotated_glyphs.jpg)
 
-对角绘制文本时，不能再把字符串作为一个整体绘制，否则最终只会得到一行字符倾斜的水平文本，类似上图所示。真正的技巧是逐个绘制字符，并为每个字符适当调整 y 和 x 坐标。向下倾斜时，需要增加 y 坐标；向上倾斜时，需要减小 y 坐标。两种情况下 x 坐标都会增加。字形必须彼此重叠才能产生对角效果，此时透明背景色就能发挥作用！
+对角绘制文字时，不能再将字符串作为一个整体绘制，否则只会得到一行字符倾斜的水平文字。真正的技巧是逐个绘制字符，并为每个字符适当调整 y 和 x 坐标。下降方向需要增加 y 坐标，上升方向需要减小 y 坐标；两种情况下 x 坐标都会增加。字形必须彼此重叠才能产生对角效果，这时透明背景色就能避免裁剪。
 
 ![](/connect-iq/resources/faq/overlapping_rotated_glyphs.jpg)
 
-您想要为您的字体的旋转角度取决于您,您可以在您的图形编辑器中实验不同的旋转度.为了知道下一个字符的绘制地点,您可以保持一个坐标阵列.使用单空间字体更容易管理和绘制横向文本,因为任何字符都可以在同一坐标上绘制,而不会造成相邻字符之间的差距.
+字体的旋转角度可以自行决定，并在图形编辑器中尝试不同角度。可以维护一个坐标数组，记录下一个字符的绘制位置。等宽字体更容易管理和绘制对角文字，因为所有字符都可以使用相同坐标间距，不会在相邻字符之间产生大小不同的空隙。
 
 ```typescript
-//基于对角线角度和方向预定义坐标
+//predefined coordinates based on diagonal angle and orientation
 var ascCoords = [[21,143],[42,129],[62,119],[73,108],[93,95]];
 var descCoords = [[21,34],[42,48],[62,58],[73,69],[93,82]];
 
-//将背景色设为透明以防止字符被裁剪
+//set background color transparent to prevent clipping of characters
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
-//要绘制的字符串
+//string to be drawn
 var time = clock.hour.format("d") + ":" + clock.min.format("d");
 
 var coords, font;
 
-//根据方向确定要使用的字体和坐标
+//determine the font and coordinates to use based on orientation
 if(Orientation == "Descending"){
         coords = descCoords;
         font = Ui.loadResource(Rez.Fonts.fontDesc);
@@ -160,7 +159,7 @@ else{
         font = Ui.loadResource(Rez.Fonts.fontAsc);
 }
 
-//逐个绘制字符
+//draw each character individually
 for( var i = 0; i < time.length(); i++ ) {
         var char = time.substring(i,i+1);
         dc.drawText(coords[0], coords[1], font, char, Gfx.TEXT_JUSTIFY_LEFT);
@@ -169,38 +168,37 @@ for( var i = 0; i < time.length(); i++ ) {
 
 ## 动态颜色填充
 
-在我的标志性腕表面孔[*NoFrills*](https://apps.garmin.com/en-US/apps/03030574-3c6e-484a-9bd8-ce2ca0249651)中,我使用一个简单的技巧来创建一个特殊效应,使时间充满水.它有效地作为活动跟踪的进展指标,同时节省屏幕上的房地产.谈论双重用途的钟!
+在我的标志性 Watch Face [*NoFrills*](https://apps.garmin.com/en-US/apps/03030574-3c6e-484a-9bd8-ce2ca0249651) 中，我使用一个简单技巧让时间看起来像被水逐渐填满。它既可以作为活动跟踪的进度指示器，又能节省屏幕空间。
 
 ![](/connect-iq/resources/faq/no_frills.jpg)
 
-你只需要一个字体来完成这个技巧,最好的是:没有图像处理.只需要Connect IQ的功率才能实现这一点!再次,一个单空间字体提供了最好的结果,并且更简单地使用.
+这个技巧只需要一个字体，而且无需图像处理，Connect IQ 本身就足够实现效果。再次强调，等宽字体能提供最佳效果，也更易于使用。
 
-1. 确定你想要绘制的文本将在屏幕上占据的区域 (矩形) 的尺寸和坐标.
+1.  确定要绘制的文字将在屏幕上占据的区域（矩形）的大小和坐标。
 
-2. 在预定坐标上绘制一幅满面的矩形.该矩形的颜色应该是你通常使用的颜色.
+2.  在预定坐标绘制该大小的填充矩形，矩形颜色应当是原本用于文字的颜色。
 
-3. 在填充矩形上绘制任何特殊效果,但在绘制文本之前.在NoFrills的情况下,我绘制了填充矩形,代表水平面.
+3.  在填充矩形上绘制特殊效果，但要在绘制文字之前完成。例如在 NoFrills 中，填充矩形表示水位。
 
-4. 设置您的文本前景颜色为透明,背景颜色为其他东西,比如屏幕的背景颜色. 这有效地创造了一个面具,切断了您在前几步中绘制的一切.
+4.  将文字前景色设为透明，将背景色设为其他颜色，例如屏幕背景色。这样会创建一个蒙版，裁剪前面步骤绘制的内容。
 
-5. 现在把你的文字绘制在上面,编译并运行它,最后着惊叹地看着你的惊人的制作!
-
+5.  在所有内容上方绘制文字，编译运行，然后欣赏效果。
 
 ```typescript
-//加载自定义字体
+//load custom font
 var font = Ui.loadResource( Rez.Fonts.MyFont );
 
-//绘制填充矩形来表示文本颜色
+//draw filled rectangle to represent text's color
 dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_WHITE);
 dc.fillRectangle(rectX, rectY, width, height);
 
-//绘制填充矩形来表示水位
+//draw filled rectangle to represent water level
 dc.setColor(Gfx.COLOR_BLUE, Gfx.COLOR_BLUE);
 dc.fillRectangle(effectX, effectY, width, effectHeight);
 
-//创建并绘制裁剪蒙版
+//create and draw the clipping mask
 dc.setColor(Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK);
 dc.drawText(timeX, timeY, font, timeString, Gfx.TEXT_JUSTIFY_CENTER);
 ```
 
-您可以在*[Twitter](https://twitter.com/hermoter)*,*[Facebook](https://www.facebook.com/connectiqsa/)*,*[Instagram](https://www.instagram.com/hermoterblanche/)*和*[Connect IQ Developer Forum](https://forums.garmin.com/members/hermot)*上找到Hermo.
+你可以在 [Twitter](https://twitter.com/hermoter)、[Facebook](https://www.facebook.com/connectiqsa/)、[Instagram](https://www.instagram.com/hermoterblanche/) 和 [Connect IQ Developer Forum](https://forums.garmin.com/members/hermot) 找到 Hermo，也可以在 [Connect IQ Store](https://apps.garmin.com/en-US/developer/400ba0d2-9316-44ca-8c14-60b68ddda4a5/apps) 查看他的 Connect IQ 应用。
