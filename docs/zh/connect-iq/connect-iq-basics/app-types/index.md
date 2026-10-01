@@ -1,5 +1,5 @@
 ---
-title: "App Types"
+title: "应用类型"
 ---
 <a id="app-types"></a>
 
