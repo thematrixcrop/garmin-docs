@@ -1,5 +1,5 @@
 ---
-title: "How do I Make My Watch Face Update Every Second?"
+title: "如何让我的表盘每秒更新？"
 ---
 # 如何让我的表盘每秒更新？
 
