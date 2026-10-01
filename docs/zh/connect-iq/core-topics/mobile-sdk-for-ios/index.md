@@ -4,13 +4,13 @@ title: "iOS 移动 SDK"
 <a id="mobile-sdk-for-ios"></a>
 # iOS 移动 SDK
 
-Connect IQ Mobile SDK 可以让你创建与 Garmin 可穿戴设备上运行的 Monkey C 应用交互的 iOS 配套应用。你可以从可穿戴设备获取远程数据，或将消耗资源的任务转移到 iOS 设备，从而构建功能丰富的用户体验。本文将介绍如何在 iOS 项目中添加 Mobile SDK，并说明 SDK 的 API 以及如何与 Monkey C 应用通信。
+Connect IQ Mobile SDK 可用于创建与 Garmin 可穿戴设备上运行的 Monkey C 应用交互的 iOS 配套应用。您可以从可穿戴设备获取远程数据，或将消耗资源的任务转移到 iOS 设备，从而构建功能丰富的用户体验。本文介绍如何在 iOS 项目中添加 Mobile SDK，以及如何使用 SDK API 与 Monkey C 应用通信。
 
 ## 配置项目以使用 Mobile SDK
 
 ### 将框架添加到项目
 
-iOS Mobile SDK 以 iOS framework package 的形式发布，可从 [Connect IQ Mobile SDK 的 Garmin GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)获取。要启用该 framework，请在 `Project > Package Dependencies` 面板中添加依赖项。点击 Packages 列表底部的 `+` 按钮即可。
+iOS Mobile SDK 以 iOS framework package 的形式发布，可从 [Connect IQ Mobile SDK 的 Garmin GitHub 仓库](https://github.com/garmin/connectiq-companion-app-sdk-ios)获取。要启用该 framework，请在 `Project > Package Dependencies` 面板中添加依赖项，点击 Packages 列表底部的 `+` 按钮即可。
 
 ![将框架添加到 iOS 项目](/connect-iq/resources/programmers-guide/ios-image1.png)
 
@@ -20,7 +20,7 @@ iOS Mobile SDK 以 iOS framework package 的形式发布，可从 [Connect IQ Mo
 
 #### 将 ConnectIQ framework 作为二进制文件嵌入
 
-要让项目能够使用 Mobile SDK 构建，请为项目的每个 target 将 framework 作为二进制文件嵌入：勾选每个 target 对应的复选框，然后点击 `Add Package`。
+要让项目能够使用 Mobile SDK 构建，请为项目的每个 target 嵌入该 framework：勾选每个 target 对应的复选框，然后点击 `Add Package`。
 
 ![将 framework 作为二进制文件嵌入](/connect-iq/resources/programmers-guide/ios-image3.png)
 
