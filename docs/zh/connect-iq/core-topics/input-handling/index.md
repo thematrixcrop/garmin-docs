@@ -1,5 +1,5 @@
 ---
-title: "Input Handling"
+title: "输入处理"
 ---
 <a id="input-handling"></a>
 # 输入处理
