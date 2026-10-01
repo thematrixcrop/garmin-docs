@@ -274,7 +274,7 @@ API 级别 1.0.0
 
 另见：
 
-- [Meters above sea level](https://en.wikipedia.org/wiki/Metres_above_sea_level)
+- [海拔高度](https://en.wikipedia.org/wiki/Metres_above_sea_level)
 
 - [Positional Altitude](/connect-iq/api-docs/Toybox/Position/Info/#altitude-var)
 
