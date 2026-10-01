@@ -24,9 +24,9 @@ Moment 对象与 [Duration](/connect-iq/api-docs/Toybox/Time/Duration/) 对象�
 
 ## 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 示例：
@@ -274,9 +274,9 @@ var today = new Time.Moment(Time.today().value());
 
 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 起始版本：
@@ -387,9 +387,9 @@ API 级别 1.0.0
 
 另见：
 
-- [UTC Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+- [UTC 时间](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 
-- [UNIX Time](https://en.wikipedia.org/wiki/Unix_time)
+- [UNIX 时间](https://en.wikipedia.org/wiki/Unix_time)
 
 
 起始版本：
