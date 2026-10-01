@@ -86,7 +86,7 @@ export PATH=$PATH:`cat $HOME/.Garmin/ConnectIQ/current-sdk.cfg`/bin
 | `-o <arg>` | 要创建的输出文件 |
 | `-y <arg>` | 用于签名构建的[私钥](#generating-a-key-using-openssl) |
 
-**注意：** 有关全部命令行选项的更多信息，请参阅 Monkey C 指南中的 [Compiler Options](/connect-iq/monkey-c/compiler-options/) 部分。
+**注意：** 有关全部命令行选项的更多信息，请参阅 Monkey C 指南中的[编译器选项](/connect-iq/monkey-c/compiler-options/)部分。
 
 -   `monkeydo` 在 Simulator 中运行 Connect IQ 可执行文件。必须先使用 `connectiq` 启动 Simulator。用法如下：
 
@@ -115,7 +115,7 @@ monkeydo [executable] [device_id] [-n] [-t | -t test_name]
 > monkeydo myApp.prg fenix5plus
 ```
 
-**注意：** 有关 `-f` 选项和 Jungle 构建框架的更多信息，请参阅本指南中的 [Overriding Resources](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide) 部分。
+**注意：** 有关 `-f` 选项和 Jungle 构建框架的更多信息，请参阅本指南中的[覆盖资源](/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide)部分。
 
 <a id="generating-a-key-using-openssl"></a>
 ## 使用 OpenSSL 生成密钥
