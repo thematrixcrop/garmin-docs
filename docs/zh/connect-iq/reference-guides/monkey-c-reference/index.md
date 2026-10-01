@@ -942,9 +942,9 @@ var y = self.mMemberVariable;
 
 ### instanceof 和 has
 
-子C提供两个运营商进行运行时间类型检查,需要特别注意:`instanceof`和`has`.子C的对象导向设计模式与`has`和`instanceof`运营商结合,可以在一个代码库中实现许多设备的软件.
+Monkey C 提供 `instanceof` 和 `has` 两个运算符执行运行时类型检查。Monkey C 的面向对象设计模式结合这两个运算符，可以让同一个代码库支持多种设备实现。
 
-`instanceof`操作符检查对象实例是否继承给定的类别:
+`instanceof` 运算符检查对象实例是否继承自给定类：
 
 ```cpp
 using Toybox.System;
@@ -969,11 +969,11 @@ if (sensorInfo has :accel && sensorInfo.accel != null) {
 }
 ```
 
-### 回调
+### Callbacks
 
-子C中的函数不是一级,因此不能作为参数传递到其他函数以作为回调.由于函数与它们创建的对象绑定,因此必须使用[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象来创建回调.
+Monkey C 中的函数不是一等对象，因此不能直接作为参数传递给其他函数作为回调。由于函数与创建它们的对象绑定，必须使用 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 对象创建回调。
 
-一种方法是使用函数及其对象实例的组合:
+一种方式是组合使用函数和对象实例：
 
 ```cpp
 class MyClass {
@@ -989,7 +989,7 @@ function myFunction() {
 }
 ```
 
-与类不同的是,模块不会继承[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/),因此无法访问`method()`函数.然而,可以创建一个新的[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)实例,允许模块级函数以类似的方式被调用为回调:
+与类不同，模块不继承 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)，因此无法访问 `method()` 函数。不过，可以创建新的 [Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 实例，让模块级函数以类似方式作为回调调用：
 
 ```cpp
 using Toybox.Lang as Lang;
@@ -1008,7 +1008,7 @@ function myFunction() {
 }
 ```
 
-一个[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/)对象将在它来自的对象的实例上调用一种方法,并保持对源对象的强烈引用.
+[Lang.Method](/connect-iq/api-docs/Toybox/Lang/Method/) 对象会在创建它的对象实例上调用方法，并持有源对象的强引用。
 
 ### 弱引用
 
@@ -1024,14 +1024,14 @@ Monkey C 使用*引用计数*，这意味着当引用某块内存的对象数量
 
 ![](/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
-为了创建一个弱的参考,使用`weak()`方法,这是所有子C对象可用的[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)方法.
+要创建弱引用，请使用 `weak()` 方法。这是所有 Monkey C 对象都可用的 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 方法。
 
 ```cpp
 // We would make a "Hans and Franz" reference here but certain advertising has probably made them uncool.
 var weakReference = myObject.weak()
 ```
 
-如果调用`weak()`在不可变的类型之一 ([Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/),[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/),[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/),[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/),[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/),[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)),则它将返回对象本身.否则,它将返回一个[Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/)实例.弱引用有`stillAlive()`方法来检查一个弱引用是否仍然有效,并有`get()`方法来创建一个强 reference对象:
+如果对不可变类型（[Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)、[Lang.Float](/connect-iq/api-docs/Toybox/Lang/Float/)、[Lang.Char](/connect-iq/api-docs/Toybox/Lang/Char/)、[Lang.Long](/connect-iq/api-docs/Toybox/Lang/Long/)、[Lang.Double](/connect-iq/api-docs/Toybox/Lang/Double/)、[Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)）调用 `weak()`，它会返回对象本身。否则会返回 [Lang.WeakReference](/connect-iq/api-docs/Toybox/Lang/WeakReference/) 实例。弱引用提供 `stillAlive()` 方法检查引用是否有效，并提供 `get()` 方法创建强引用对象：
 
 ```cpp
 if (weakReference.stillAlive()) {
@@ -1040,13 +1040,13 @@ if (weakReference.stillAlive()) {
 }
 ```
 
-记住只能在必要范围内保持强烈的参考!
+请记住，只在必要的范围内保留强引用！
 
 <a id="modules"></a>
 
 ## 模块
 
-子C模块的目的类似于Java包,但可以包含变量,函数,类型和其他模块:
+Monkey C 模块类似于 Java 包，但可以包含变量、函数、类型和其他模块：
 
 ```cpp
 module MyModule
@@ -1062,7 +1062,7 @@ function myFunction() {
 }
 ```
 
-常见的是,静态方法存在于模块层面,而不是属于特定类别.与类别不同,模块没有遗传或隐藏数据的概念 (模块不支持`extends`和`hidden`关键字).
+静态方法通常位于模块级别，而不是属于某个类。与类不同，模块没有继承或数据隐藏的概念（模块不支持 `extends` 和 `hidden` 关键字）。
 
 <a id="using-statements"></a>
 
