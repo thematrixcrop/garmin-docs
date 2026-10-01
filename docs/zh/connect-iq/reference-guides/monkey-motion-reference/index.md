@@ -36,22 +36,22 @@ Monkey Motion 工具会为每个处理的动画生成一个 Monkey Motion Manife
 
 也可以使用 `monkeym` 脚本在命令行编码视频。可用选项如下：
 
-| Argument | Definition | Valid Values | Default Value | Notes |
+| 参数 | 定义 | 有效值 | 默认值 | 备注 |
 | --- | --- | --- | --- | --- |
-| `-a <arg>` | 目标 `YUV` 编码视频文件的 alpha 通道掩码 | 有效且可解析的 `YUV` 编码视频文件 | NA | 可选 |
+| `-a <arg>` | 目标 `YUV` 编码视频文件的 alpha 通道掩码 | 有效且可解析的 `YUV` 编码视频文件 | 不适用 | 可选 |
 | `-c <arg>` | 动画的首选颜色深度（每个颜色通道的位数）。更多信息请参阅[AMOLED 设备的颜色深度](#color-depth-for-amoled-devices) | 1 到 6 之间的值 | 6 | 可选 |
-| `-d <arg>` | 目标设备 | 用冒号（`:`）分隔的设备限定符；支持切换方向的设备应追加 `-portrait` 或 `-landscape`，以确定全屏动画编码时使用的分辨率 | NA | 必需 |
-| `-e <arg>` | 要随 Monkey Motion 编码文件一起导出的动画资源标识符 | 以字母开头的任意值 | NA | 可选 |
+| `-d <arg>` | 目标设备 | 用冒号（`:`）分隔的设备限定符；支持切换方向的设备应追加 `-portrait` 或 `-landscape`，以确定全屏动画编码时使用的分辨率 | 不适用 | 必需 |
+| `-e <arg>` | 要随 Monkey Motion 编码文件一起导出的动画资源标识符 | 以字母开头的任意值 | 不适用 | 可选 |
 | `-f <arg>` | 动画的目标帧率 | 建议为 1 到 10；更高帧率会受动画解码速度限制。更多信息请参阅[帧率注意事项](#frame-rate-considerations) | YUV 视频为 10；GIF 可以在动画中编码延迟率，未指定时使用该延迟率 | 可选 |
-| `-h` | 输出帮助信息 | NA | NA | 可选 |
+| `-h` | 输出帮助信息 | 不适用 | 不适用 | 可选 |
 | `-m <arg>` | 指定构建目标设备的 Manifest 文件 | 项目 Manifest 文件路径 | 空 | 可选 |
 | `-o <arg>` | 输出文件路径 | 有效且可解析的文件路径 | 目标动画文件路径 | 可选 |
 | `-p <arg>` | 编码动画的目标压缩级别 | 1 到 7。更多信息请参阅[压缩级别影响](#compression-level-impact) | 5 | 可选 |
 | `-q <arg>` | 编码动画的目标图像质量 | 1 到 3。更多信息请参阅[注意事项](#considerations) | 3 | 可选 |
-| `-r <arg>` | 动画的目标分辨率（不是设备屏幕尺寸时使用） | `<width>x<height>`，其中 `width` 和 `height` 是目标分辨率的数字值，例如 `40x40` | NA | 可选 |
+| `-r <arg>` | 动画的目标分辨率（不是设备屏幕尺寸时使用） | `<width>x<height>`，其中 `width` 和 `height` 是目标分辨率的数字值，例如 `40x40` | 不适用 | 可选 |
 | `-s <arg>` | 动画的目标图像缩放质量 | 1 到 3 之间的值 | 如果适用则为 3 | 可选 |
-| `-v <arg>` | 目标动画文件 | 有效且可解析的 `YUV` 或 `GIF` 文件 | NA | 必需 |
-| `-w` | 输出 Monkey Motion 警告 | NA | NA | 可选 |
+| `-v <arg>` | 目标动画文件 | 有效且可解析的 `YUV` 或 `GIF` 文件 | 不适用 | 必需 |
+| `-w` | 输出 Monkey Motion 警告 | 不适用 | 不适用 | 可选 |
 
 ## 注意事项
 
@@ -74,7 +74,7 @@ Monkey Motion 工具提供了多个高级设置选项，需要在多个方面进
 
 压缩级别会同时影响压缩率和解码开销。画面大部分内容在帧与帧之间不变的视频，可以使用较高压缩级别（例如 7），而性能影响很小。对于整个画面都有大量运动的视频，较高压缩级别可能导致播放变慢，因为解压缩需要更多开销。下面是一个高复杂度 `GIF` 在 Fēnix 5 Plus 上运行时，压缩级别与解码时间的关系：
 
-| Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
+| 压缩级别 | Monkey Motion 文件大小（KB） | 帧解码时间（ms） |
 | --- | --- | --- |
 | 1 | 981 | 30 |
 | 2 | 883 | 36 |
@@ -86,7 +86,7 @@ Monkey Motion 工具提供了多个高级设置选项，需要在多个方面进
 
 对于运动量大、难以压缩的视频，较低压缩级别有时反而会生成更小的文件。下面是另一个高复杂度 `GIF` 在 Venu 上运行时的对比：
 
-| Compression Level | Monkey Motion File Size (KB) | Frame Decoding Time (ms) |
+| 压缩级别 | Monkey Motion 文件大小（KB） | 帧解码时间（ms） |
 | --- | --- | --- |
 | 1 | 602 | 58 |
 | 2 | 602 | 60 |
@@ -158,20 +158,20 @@ AMOLED 设备使用 RGB565 颜色格式，也就是说红色和蓝色每像素�
 
 包含两个动画且没有原生 drawable 的 `View`：
 
-| Layer | Resolution | Frame Buffer Size (KB) |
+| 图层 | 分辨率 | 帧缓冲区大小（KB） |
 | --- | --- | --- |
 | Animation 1 | 240x240 | 58 |
 | Animation 2 | 40x40 | 1.6 |
-| Overlay | N / A | 0 |
+| 覆盖层（Overlay） | 不适用 | 0 |
 
 总计：60 KB
 
 包含两个动画和原生 drawable 的 `View`：
 
-| Layer | Resolution | Frame Buffer Size (KB) |
+| 图层 | 分辨率 | 帧缓冲区大小（KB） |
 | --- | --- | --- |
 | Animation 1 | 240x240 | 58 |
 | Animation 2 | 40x40 | 1.6 |
-| Overlay | 240x240（固定） | 58 |
+| 覆盖层（Overlay） | 240x240（固定） | 58 |
 
 总计：118 KB
