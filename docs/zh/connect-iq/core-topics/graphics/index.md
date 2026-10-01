@@ -120,13 +120,13 @@ Connect IQ 允许您使用 [Graphics.AffineTransform](/connect-iq/api-docs/Toybo
 
 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 类可用于在主显示表面之外的表面上绘制。[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象有两种创建方式：第一种是从已加载的位图资源生成对象，此时提供的位图会作为可操作的绘图表面；第二种是指定表面的宽度和高度，并可选地指定颜色调色板。如果未指定调色板，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 将使用系统颜色且没有调色板。如果向初始化器提供了位图资源，则会忽略宽度、高度和调色板参数。
 
-如果一个[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)确实有一个色调,则可以使用[BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function)方法读取.该色调也可以使用[BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function)方法修改.所提供的色调必须与该位图的现有色调相同.图像中的所有像素将将颜色更改为每个色调指标的新颜色.请注意,资源编译器生成的位图带有色调,除非已指定了`disableTransparency`旗,否则在指定的色调末端将有一个额外的透明索引.
+如果 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 包含调色板，可以使用 [BufferedBitmap.getPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getPalette-instance_function) 读取，也可以使用 [BufferedBitmap.setPalette()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#setPalette-instance_function) 修改。提供的调色板必须与位图现有的调色板大小相同。图像中的所有像素都会使用调色板中对应索引的新颜色。请注意，资源编译器生成的位图默认包含调色板；除非指定 `disableTransparency` 标志，否则调色板末尾还会有一个额外的透明索引。
 
 可以使用 [BufferedBitmap.getDc()](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/#getDc-instance_function) 方法从 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 获取绘图上下文。该方法返回一个 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 类，其能力与主设备提供给 [View.onLayout()](/connect-iq/api-docs/Toybox/WatchUi/View/#onLayout-instance_function) 和 [View.onUpdate()](/connect-iq/api-docs/Toybox/WatchUi/View/#onUpdate-instance_function) 等方法的 [Graphics.Dc](/connect-iq/api-docs/Toybox/Graphics/Dc/) 相同。您可以通过在其中绘制形状、文本和位图来修改 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 的内容。
 
 ##### 缓冲的比特图和图形池
 
-像其他图形资源一样,[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/)对象现在也利用了图形库.这个场景的优势是,现在可以自由地使用临时图形缓冲器,而没有耗尽应用程序堆.
+和其他图形资源一样，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象也使用图形池。这样可以自由创建临时图形缓冲区，而不会耗尽应用程序堆。
 
 如前所述，如果加载的资源超出图形池可用空间，图形池会智能地清除并恢复资源。与会从可执行文件重新加载的静态资源不同，[Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 被清除后不会恢复。如果使用的是生命周期短的临时缓冲区，这通常没有问题；但如果位图在分配后被清除，您需要重新渲染其内容。或者，您可以调用引用上的 `get()` 方法获取位图的锁定版本。这会防止 [Graphics.BufferedBitmap](/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap/) 对象被图形池清除，但如果加载更多资源，也可能导致图形池耗尽可用空间。
 
