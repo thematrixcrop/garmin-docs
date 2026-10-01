@@ -172,7 +172,7 @@ API 级别 1.2.0
 
 - [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/) —
 
-    由整数形式的 Number 数组组成，表示数据负载的字节
+    由 Number 值组成的整数数组，每个值表示数据负载中的一个字节
 
 
 起始版本：
@@ -187,7 +187,7 @@ API 级别 1.0.0
 
 - data — ([Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)) —
 
-    由整数形式的 Number 数组组成，表示数据负载的字节
+    由 Number 值组成的整数数组，每个值表示数据负载中的一个字节
 
 
 起始版本：
