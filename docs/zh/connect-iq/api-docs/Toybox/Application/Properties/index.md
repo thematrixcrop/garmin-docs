@@ -5,9 +5,9 @@ title: "模块：Toybox.Application.Properties"
 
 ## 概述
 
-Properties 模块提供对应用程序属性的访问。
+Properties 模块提供对应用属性的访问。
 
-Storage 提供对应用属性中定义的属性的访问。
+应用属性是在应用设置中定义的属性。
 
 起始版本：
 
@@ -29,7 +29,7 @@ API 级别 2.4.0
 
 - [**setValue**](#setValue-instance_function)(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) as **Void**
 
-    存储给定的 Application Property。
+    存储给定的应用属性值。
 
 
 ## 类型定义详情
@@ -52,7 +52,7 @@ API 级别 2.4.0
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    要从应用程序属性中获取的值所对应的键
+    要从应用属性中获取的值所对应的键
 
 
 返回：
@@ -75,7 +75,7 @@ API 级别 2.4.0
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    若 key 是禁止的数据类型则抛出
+    如果 `key` 是不允许的数据类型，则抛出此异常。
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
@@ -84,7 +84,7 @@ API 级别 2.4.0
 
 ### **setValue(key as [Lang.String](/connect-iq/api-docs/Toybox/Lang/String/), value as [Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type))** as **Void**
 
-存储给定的 Application Property。
+存储给定的应用属性值。
 
 注意：
 
@@ -94,7 +94,7 @@ API 级别 2.4.0
 
 - key — ([Lang.String](/connect-iq/api-docs/Toybox/Lang/String/)) —
 
-    用于在应用程序属性中存储和获取值的键
+    用于在应用属性中存储和获取值的键
 
 - value — ([Properties.ValueType](/connect-iq/api-docs/Toybox/Application/Properties/#ValueType-named_type)) —
 
@@ -109,11 +109,11 @@ API 级别 2.4.0
 
 - ([Application.ObjectStoreAccessException](/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException/)) —
 
-    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用，则抛出。使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，始终可以将数据从后台进程传递到前台进程。
+    如果在不支持 ConnectIQ 3.2.0 的设备上从后台进程调用此方法，则抛出此异常。使用 [Background.exit()](/connect-iq/api-docs/Toybox/Background/#exit-instance_function)，始终可以将数据从后台进程传递到前台进程。
 
 - ([Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)) —
 
-    若 key 是禁止的数据类型则抛出
+    如果 `key` 是不允许的数据类型，则抛出此异常。
 
 - ([Properties.InvalidKeyException](/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException/)) —
 
