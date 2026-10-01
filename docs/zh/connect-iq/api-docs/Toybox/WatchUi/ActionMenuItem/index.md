@@ -155,7 +155,7 @@ API 级别 3.4.0
 
 - [**initialize**](#initialize-instance_function)(options as [ActionMenuItem.Options](/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem/#Options-named_type), identifier as [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 
 ## 类型定义详情
