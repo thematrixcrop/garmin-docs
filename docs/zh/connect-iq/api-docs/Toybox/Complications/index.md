@@ -529,7 +529,7 @@ API 级别 4.2.0
 
 |
 
-Value is a String providing the high and low temperature values in a format similar to "H &lt;high> / L &lt;low>"
+值是一个 `String`，以类似于 "H &lt;high> / L &lt;low>" 的格式提供最高温和最低温。
 
 |
 | COMPLICATION\_TYPE\_WHEELCHAIR\_PUSHES | 40 |
@@ -547,7 +547,7 @@ API 级别 5.0.0
 
 |
 
-Value is a String in the format "&lt;LastRoundTotalScore>(&lt;Offset>)" where Offset is "E" for even-par, a negative value for under par, or a positive value for over par
+值是一个 `String`，格式为 "&lt;LastRoundTotalScore>(&lt;Offset>)"。其中，`Offset` 为 "E" 表示平标准杆，为负数表示低于标准杆，为正数表示高于标准杆。
 
 |
 | COMPLICATION\_TYPE\_SLEEP\_SCORE | 42 |
