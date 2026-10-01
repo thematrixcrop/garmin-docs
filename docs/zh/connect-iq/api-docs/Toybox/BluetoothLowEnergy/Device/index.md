@@ -218,7 +218,7 @@ API 级别 3.1.0
 
 如果设备当前尚未配对，则会启动配对过程。
 
-操作完成后，将以便用操作状态调用已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onEncryptionStatus()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onEncryptionStatus-instance_function)
+操作完成后，系统会将操作状态传递给已注册 [BleDelegate](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/) 上的 [onEncryptionStatus()](/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate/#onEncryptionStatus-instance_function) 回调。
 
 :::details 支持的设备
 
