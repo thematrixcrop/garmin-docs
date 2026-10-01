@@ -1,5 +1,5 @@
 ---
-title: "Monkey Types"
+title: "Monkey 类型"
 ---
 <a id="monkey-types"></a>
 # Monkey 类型
