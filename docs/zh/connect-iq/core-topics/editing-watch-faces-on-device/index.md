@@ -1,5 +1,5 @@
 ---
-title: "Watch Face Configurations"
+title: "表盘配置"
 ---
 # 表盘配置
 
