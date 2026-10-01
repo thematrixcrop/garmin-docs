@@ -1,35 +1,36 @@
 ---
 title: "Monkey Types"
 ---
+<a id="monkey-types"></a>
 # Monkey 类型
 
-子类型是 histor子C语言的逐步类型系统. 类型系统旨在识别子C的历史性子类型性质,但在编译时添加必要的组件来编写检查应用程序.
+Monkey Types 是 Monkey C 语言的渐进式类型系统。它承认 Monkey C 历史上采用鸭子类型的特点，同时增加了在编译时检查应用所需的组件。
 
-子类型的目标如下:
+Monkey Types 的目标如下：
 
-1.  **兼容性** - Monkey C 语言的破坏性变更会导致数千个 Connect IQ 应用需要返工。Monkey Types 扩展了 Monkey C 语法，同时避免破坏性变更。Monkey Types 的设计也不依赖额外的运行时信息。因此，您可以在所有兼容 Connect IQ 的设备上运行的应用中使用 Monkey Types。
+1.  **兼容性**：Monkey C 语言的破坏性变更会导致数千个 Connect IQ 应用需要返工。Monkey Types 扩展 Monkey C 语法，同时避免破坏性变更。它也不依赖额外的运行时信息，因此可以用于所有 Connect IQ 兼容设备。
 
-2. **使用方便** - 子C的哲学是要是你不知道你已经知道的语言*.我们希望写子C的经验就像 deja-vu.同样,子类型在设计中借鉴了科特林,斯威夫特和类型.
+2.  **易用性**：Monkey C 的理念是成为“你不知道自己已经会的语言”。我们希望编写 Monkey C 时有似曾相识的感觉。Monkey Types 的设计也大量借鉴 Kotlin、Swift 和 TypeScript。
 
-3. **灵活性** - 子类型是一个渐进式类型系统.您可以选择将类型的架子放开,或者您可以严格输入您的应用程序.
+3.  **灵活性**：Monkey Types 是渐进式类型系统。你可以不添加类型标注，也可以对应用进行严格类型检查。
 
 
-连接IQ类型检查器默认被禁用,并通过`-l`编译器选项启用.类型检查有四个级别:
+Connect IQ 类型检查器默认禁用，可以使用 `-l` 编译器选项启用。类型检查分为四个级别：
 
 | 选项 | 级别 | 说明 |
 | --- | --- | --- |
 | `-l 0` | 静默 | 不进行类型检查；保持所有动态类型 |
 | `-l 1` | 渐进 | 检查可以推断类型的语句，否则保持沉默 |
-| `-l 2` | 提示 | 仅检查已输入的类型，并对歧义发出警告 |
+| `-l 2` | 信息 | 仅检查已标注的类型，并对歧义发出警告 |
 | `-l 3` | 严格 | 不允许编译器产生歧义 |
 
-让我们来介绍一种新的语法来将类型信息传达到类型系统.
+下面介绍用于向类型系统提供类型信息的新语法。
 
-## 作为条款
+## `as` 子句
 
-子类型引入了新的关键字`as`.您使用`as`将类型绑定到成员变量,模块变量,函数参数或函数返回值.本地总是在分配时推断类型.
+Monkey Types 引入了新的关键字 `as`。可以使用 `as` 将类型绑定到成员变量、模块变量、函数参数或函数返回值。局部变量总是在赋值时推断类型。
 
-一旦一个类型被绑定到一个值,编译器只允许分配该类型的值.
+一旦类型绑定到值，编译器就只允许为其赋予该类型的值。
 
 ```typescript
 using Toybox.Lang;
@@ -38,15 +39,15 @@ using Toybox.System;
 var globalX as Lang.Number = 0;
 
 function hasANumber() {
-    globalX = 2;  // 允许
-    globalX = "2"; // 不允许
+    globalX = 2;  // Allowed
+    globalX = "2"; // Not allowed
     System.println("globalX = " + globalX);
 }
 ```
 
-在这个例子中,我们将声明全球变量`globalX`只会接受`Toybox.Lang.Number`的值.一旦已经声明,编译器只允许该类型的值被分配给`globalX`.
+此示例声明全局变量 `globalX` 只接受 `Toybox.Lang.Number` 值。声明完成后，编译器只允许将该类型的值赋给 `globalX`。
 
-由于子C是一种型语言,只允许单个类型与变量绑定是过于限制性的.如果变量接受多种类型,则允许一个`as`条款附加一个`or`条款.
+由于 Monkey C 使用鸭子类型，只允许变量绑定单一类型会过于严格。如果变量可以接受多种类型，可以在 `as` 子句后附加 `or` 子句。
 
 ```typescript
 using Toybox.Lang;
@@ -55,41 +56,41 @@ using Toybox.System;
 var globalX as Lang.Number or Lang.String = 0;
 
 function hasANumber() {
-    globalX = 2;  // 允许
-    globalX = "2"; // 允许
+    globalX = 2;  // Allowed
+    globalX = "2"; // Allowed
     System.println("globalX = " + globalX);
 }
 ```
 
-##进口声明
+## `import` 语句
 
-在传统的子C中,`using`语句将`module`后音带入正在处理的文件名称空间中.
+在传统 Monkey C 中，`using` 语句会将 `module` 后缀引入当前处理文件的命名空间。访问函数、变量或类定义时，仍必须引用该模块后缀。
 
-对于添加类型信息,所有模块前置都是令人烦的. ?? 子类型引入`import`语句.当您使用`import`时,它将 *模块后置和模块中的所有类进入类型命名空间.* 这使得模块中的类可以访问而不需要模块后置,从而更容易打字.功能仍然需要访问模块后置.
+在添加类型信息时，一直写模块前缀会很繁琐。Monkey Types 引入了 `import` 语句。使用 `import` 后，*模块后缀及模块中的所有类都会进入类型命名空间*，因此可以不写模块后缀就访问类；函数仍然需要模块后缀。
 
 ```typescript
 import Toybox.Lang;
 import Toybox.System;
 
-// import 让你可以告别
-// 模块前缀
+// Import lets you say goodbye to
+// module prefixes
 var globalX as Number or String = 0;
 
 function hasANumber() {
-    globalX = 2;  // 允许
-    globalX = "2"; // 允许
-    // 代码中仍然需要前缀
+    globalX = 2;  // Allowed
+    globalX = "2"; // Allowed
+    // Still require prefixes in code
     System.println("globalX = " + globalX);
 }
 ```
 
-注:`import`不支持使用`as`在源文件中的模块重新命名.
+注意：`import` 不支持在源文件中使用 `as` 重命名模块。
 
-## 命名类型与匿名类型
+## 命名类型和匿名类型
 
-您可以从上述例子中看到,类型系统可以允许复杂的类型定义.有时候,类型模式重复,只需要用名字引用它.
+上面的示例说明类型系统可以表达复杂类型定义。有时同一种类型模式会重复出现，这时可以为它命名并直接引用。
 
-一个`typedef`语句允许你在应用名空间中创建一个*命名类型*.例如,以下将在全球名空间中创建一个名为`Numeric`的多类型. 函数`add`然后将`Numeric`绑定到参数`a`和`b`及其返回值,使`as`条款引用`Numeric`类型声明.
+`typedef` 语句可以在应用命名空间中创建*命名类型*。例如，下面的代码会在全局命名空间中创建名为 `Numeric` 的多类型；函数 `add` 通过 `as` 子句将 `Numeric` 绑定到参数 `a`、`b` 和返回值。
 
 ```typescript
 import Toybox.Lang;
@@ -101,45 +102,45 @@ function add(a as Numeric, b as Numeric) as Numeric {
 }
 ```
 
-如果您不想命名您的类型声明,您总是可以使用`as`条款构建类型声明为匿名类型.
+如果不想为类型声明命名，也可以使用 `as` 子句直接构建匿名类型。
 
 ## 类型
 
-子类型允许您在子C代码中添加一层类型架构. 类型系统不仅仅允许将变量与类别联系在一起.
+Monkey Types 允许在 Monkey C 代码上添加一层类型标注。类型系统的能力不止是将变量与类关联起来。
 
-本节将概述您可以使用的类型声明.
+本节概述可以使用的类型声明。
 
-### 任意
+### Any
 
-任何变量,函数参数或函数返回值,没有类型绑定到它是类型 Any. 任何类型可以是任何东西,包括什么都不存在. 类型 Any 的值遵循传统的子类型规则.
+没有绑定类型的变量、函数参数或函数返回值都属于 Any 类型。Any 可以表示任何内容，也可以表示没有内容。Any 类型的值遵循 Monkey C 传统的鸭子类型规则。
 
-为了将 Any 绑定到一个值,不要在声明中添加一个`as`条款.没有关键字来将 Any 绑定到一个值.
+要将值保持为 Any，只需不在声明中添加 `as` 子句。没有专门用于绑定 Any 的关键字。
 
 ### Void
 
-虚空类型仅适用于返回值,并传达一个函数不允许返回值.它还传达了一个函数不应该通过调用这个函数来预期返回值.
+Void 类型只用于返回值，表示函数不返回值，也表示调用方不应期待该函数返回值。
 
 ```typescript
 import Toybox.Lang;
 
 function doNothing() as Void {
-    // 编译器错误 - 此处未能
-    // 什么都不做。
+    // Compiler error - this is failing to
+    // do nothing.
     return true;
 }
 
 function doSomething() as String {
-    // 编译器错误 - 无法从
-    // 不返回任何值的函数中赋值
+    // Compiler error - cannot assign value
+    // from a function that returns nothing
     var x = doNothing();
-    // 编译器错误 - doSomething 应该
-    // 返回 String
+    // Compiler error - doSomething should
+    // return a String
 }
 ```
 
-### 具体
+### Concrete
 
-具体类型是程序命名空间中声明的类型的单一引用.这是打字的最传统和最熟悉的使用方式.如果值与具体类型相结合,它只会接受该类或任何衍生类的值.
+Concrete 类型是对程序命名空间中已声明类的单一引用，是最传统、最熟悉的类型用法。如果值绑定到 Concrete 类型，它只能接受该类或其派生类的值。
 
 ```typescript
 import Toybox.Lang;
@@ -175,25 +176,25 @@ function processSheep(baa as Sheep) {
 }
 
 function example() {
-    // 允许
+    // Allowed
     processSheep(new Sheep());
     processSheep(new BlackSheep());
-    // 不允许
+    // Not allowed
     processSheep(new Wool());
 }
 ```
 
-请注意，具体类型不会隐式接受 `null` 作为值。如果希望某个值同时接受 `null`，必须创建多类型（有关详细信息，请参阅 [`Null`](#null)）。
+请注意，Concrete 类型不会隐式接受 `null` 作为值。如果希望某个值同时接受 `null`，必须创建 Poly 类型（有关详细信息，请参阅 [`Null`](#null)）。
 
 ### Poly
 
-多类型允许多种类型连接到一个类型. 这允许类型系统模拟子C的子类型性质.创建多类型时,您只需在定义类型时使用`or`条款.
+Poly 类型可以将多个类型合并为一个类型，从而让类型系统模拟 Monkey C 的鸭子类型特性。定义类型时，使用 `or` 子句即可创建 Poly 类型。
 
-一个多型的将接受:
+Poly 类型接受以下值：
 
-1. 一个值,其类型与聚类型中的一种类型结合
+1. 类型绑定到 Poly 类型中任一类型的值。
 
-2. 一个与一个类型属于目的类型定义的聚类型结合的值
+2. 类型绑定到另一个 Poly 类型的值，且该 Poly 类型包含的类型都属于目标类型的定义。
 
 
 ```typescript
@@ -211,17 +212,17 @@ function subtract(a as Numeric, b as Numeric) as Numeric {
 }
 
 function doWork() {
-    // 允许
+    // Allowed
     var x as Addable = add("1", "2");
-    // 不允许；Addable 包含 String，而它
-    // 不属于 Numeric
+    // Not allowed; Addable has String which is
+    // not within Numeric
     var y as Numeric = subtract(x, 2);
 }
 ```
 
-### 接口
+### Interface
 
-界面类型需要一个类包含一组成员声明.成员可以是成员变量和函数.
+Interface 类型要求类包含一组成员声明。成员可以是成员变量或函数。
 
 ```typescript
 import Toybox.Lang;
@@ -232,7 +233,7 @@ typedef LittleBoys as interface {
     var puppyDogTails as Array<PuppyDogTails>;
 };
 
-// 实现 LittleBoys 接口
+// Implements LittleBoys interface
 class MaleChild {
     var frogs as Array<Frogs>;
     var snails as Array<Snails>;
@@ -240,18 +241,18 @@ class MaleChild {
 }
 ```
 
-请注意,该类不需要额外的装饰来实现接口.这允许在函数参数中定义匿名接口.
+类无需额外的修饰即可实现 Interface，因此可以在函数参数中定义匿名 Interface。
 
 ```typescript
-// 处理
+// Processing
 function example(you as interface {
     var frogs as Array<Frogs>;
 })
 ```
 
-### 容器
+### Container
 
-子C语言有两个原生容器类型,`Array`和`Dictionary`.虽然子类型系统不支持通用,但它允许开发人员输入`Array`的值类型或`Dictionary`的关键和值类型.
+Monkey C 语言有两种原生容器类型：`Array` 和 `Dictionary`。Monkey Types 不支持泛型，但允许为 `Array` 指定元素类型，或为 `Dictionary` 指定键和值的类型。
 
 ```typescript
 import Toybox.Lang;
@@ -260,26 +261,26 @@ typedef ContainerA as Array<Number>;
 typedef ContainerB as Dictionary<String, Number>;
 ```
 
-容器类型只能匹配其他容器类型,如果键类型和值类型均等.一个`Array<String>`只匹配一个`Array<String>`而不是一个`Array<String or Number>`.
+只有键和值类型都相同的容器类型才能互相匹配。`Array<String>` 只能匹配 `Array<String>`，不能匹配 `Array<String or Number>`。
 
-Monkey C 目前不会推断容器类型，因此您需要声明容器。如果要创建新的类型化数组或字典，可以使用以下语法：
+Monkey C 目前不会推断容器类型，因此需要显式声明容器。要创建类型化数组或字典，可以使用以下语法：
 
 ```typescript
 class ContainerClass {
-    // 只接受数字的 10 项数组
+    // Array of 10 items that takes only numbers
     var typedArray as Array<Number> = new Array<Number>[10];
-    // 已初始化的数组
+    // Initialized array
     var initializedArray as Array<Number> = [1, 2, 3, 4, 5] as Array<Number>;
-    // 已初始化的字典
+    // Initialized dictionary
     var initializedDictionary as Dictionary<String, String> = {"this"=>"that"} as Dictionary<String, String>;
 }
 ```
 
-### 元组
+### Tuple
 
-在子C中,一个常见的模式是使用阵列作为结构化的组合.子类型通过将索引的项目绑定到类型来建模阵列.
+在 Monkey C 中，常见做法是使用数组表示结构化组合。Monkey Types 通过将索引项绑定到类型来为数组建模。
 
-设想Tuple类型,如字典类型,除了关键是顺序所暗示的.在下面的例子中,返回的数组将自动输入为`[StartView, StartDelegate]`类型的Tuple. 这与允许返回值`[Views, InputDelegates]`进行输入,并发现相匹配:
+可以把 Tuple 类型看作 Dictionary 类型，只是键由顺序隐含表示。下面的示例中，返回的数组会自动推断为 `[StartView, StartDelegate]` Tuple。它与允许的返回值 `[Views, InputDelegates]` 进行类型匹配，并被判定为兼容：
 
 ```typescript
 function getInitialView() as [Views] or [Views, InputDelegates] {
@@ -287,14 +288,14 @@ function getInitialView() as [Views] or [Views, InputDelegates] {
 }
 ```
 
-图普勒类A与图普勒类B相匹配的规则如下:
+Tuple 类型 A 与 Tuple 类型 B 匹配时遵循以下规则：
 
-- A和 B 双 length必须是相同的长度
+- Tuple A 和 Tuple B 的长度必须相同。
 
-- 对于每个指数,A中的每个类型都必须是B的实例
+- 对于每个索引，A 中的每个类型都必须是 B 中对应类型的实例。
 
 
-采用`[ value, value...]`语法创建的阵列现在将被打字为Tuple而不是`Array<Any>`.如果更好地匹配您正在实现的模式,则可以使用容器类型,但Tuples与容器类型具有自然兼容性.如果A,B和C类型在容器类型的多型定义中,则`[A, B, C]`类型的Tuples将是`Array<A or B or C>`的实例.
+使用 `[value, value...]` 语法创建的数组现在会被推断为 Tuple，而不是 `Array<Any>`。如果容器类型更符合要实现的模式，也可以使用容器类型；但 Tuple 与容器类型天然兼容。如果容器类型的 Poly 定义包含 A、B 和 C，那么 `[A, B, C]` 类型的 Tuple 就是 `Array<A or B or C>` 的实例。
 
 ```typescript
 function sumArray(x as Array<Numeric>) as Number {
@@ -306,24 +307,24 @@ function sumArray(x as Array<Numeric>) as Number {
 }
 
 function sumThisTuple() as Number{
-    // 这应该通过类型检查，因为
-    // Tuple [Number, Number... ] 应该是 Array<Numeric> 的实例
+    // This should pass type checking because the
+    // Tuple [Number, Number... ] should be an instanceOf Array<Numeric>
     return sumArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 }
 ```
 
-图普尔类型也更可变.随着底层阵列的变化,只要类型系统能够跟上,它们就会被修改.类型系统不会跟踪图普尔类型的变化,当被作为参数转移到另一种方法时.
+Tuple 类型也更具可变性。底层数组发生变化时，只要类型系统能够跟踪，Tuple 类型也会随之更新。当 Tuple 作为参数传递给其他方法时，类型系统不会跟踪其中类型的变化。
 
 ```typescript
 function foo(x as [Number, Number, Number]) as [Number, Number, Number] {
-    x[1] = "Hello"; // 允许，类型现在是 [Number, String, Number]
-    return x; // 错误，类型不匹配
+    x[1] = "Hello"; // Allowed, type is now [Number, String, Number]
+    return x; // Error, type mismatch
 }
 ```
 
-### 字典
+### Dictionary
 
-在子C中,使用选项词典作为参数是一种常见模式.这允许扩展的API.子类型允许通过将关键字体绑定到类型来建模选项词典.
+在 Monkey C 中，将选项字典作为参数是一种常见模式，可以构建可扩展的 API。Monkey Types 允许将键字面量绑定到类型，从而为选项字典建模。
 
 ```typescript
 import Toybox.Lang;
@@ -337,15 +338,15 @@ function doWork(options as {
 })
 ```
 
-如果一个词典被声明为线条,编译器会跟踪与值绑定的类型,然后检查所有值类型是否匹配.它不会要求提供所有键,如果添加额外的键,它不会错误.
+如果字典以内联形式声明，编译器会跟踪值绑定的类型，并检查所有值类型是否匹配。它不会要求提供所有键，也不会因添加额外键而报错。
 
 ```typescript
 doWork({:option1=>"x", :option3=>true})
 ```
 
-### 枚举
+### Enumerations
 
-列表现在可以通过添加一个名称到声明中命名类型.列表值将与其列表类型以及其值类型结合.
+为枚举声明追加名称后，枚举就可以成为命名类型。枚举值会同时绑定到枚举类型和自身的值类型。
 
 ```typescript
 import Toybox.Lang;
@@ -359,14 +360,14 @@ enum Dog {
 }
 
 function getDogName(dog as Dog) as String {
-    // 返回狗的名称
+    // Return the dog name
     return dog.toString();
 }
 ```
 
-### 回调
+### Callback
 
-子C的基对象包含`method`方法来创建`Method`回调对象.回调类型允许您根据预期参数和返回值输入`Method`对象.
+Monkey C 的基对象包含用于创建 `Method` 回调对象的 `method` 方法。Callback 类型允许根据预期参数和返回值为 `Method` 对象指定类型。
 
 ```typescript
 import Toybox.Lang;
@@ -380,61 +381,61 @@ function doWork(
 
 ### Null
 
-子类型将零视为其独特类型.更重要的是,如果`null`是允许值,则需要明确声明.
+Monkey Types 将 Null 视为独立的类型。更重要的是，如果允许使用 `null`，必须显式声明。
 
 ```typescript
 function doWork() as Number or Null
 ```
 
-`?`可用于单型声明,使其成为无效接受的多型.
+对单一类型声明使用 `?`，可以将其转换为接受 null 的 Poly 类型。
 
 ```typescript
 function doWork() as Number?
 ```
 
-##类型匹配和模糊性
+## 类型匹配和歧义
 
-由于子C的子类型性质,模糊性是子类型继承的.理想情况下,类型系统会有非常明确的规则,如果一个类型是否匹配或不匹配,但子类型有真,错,也许.
+由于 Monkey C 的鸭子类型特性，Monkey Types 中不可避免地存在歧义。理想情况下，类型系统应明确规定类型是否匹配，但 Monkey Types 的结果可能是 True、False 或 Maybe。
 
-假设我们有以下情况:
+假设有以下代码：
 
 ```
 var a as A;
 var b as B;
 
-a = b; // 允许此赋值吗？
+a = b; // 是否允许此赋值？
 ```
 
-您可以使用以下表
+可以参考下表：
 
 | A↓ B→ | Any | Concrete | Poly | Interface | Container | Dictionary | Enum | Callback | Null |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Any** | True | True | True | True | True | True | True | True | True |
-| **Concrete** | Maybe |如果B是A或延伸 A|如果B中的多种类型之一与A相匹配,否则是错误的| False |如果A是字典或阵列|如果A是字典,否则是假的.|如果 enum 值类型与A相匹配,则是正确的| False | False |
-| **Poly** | Maybe |如果B是A内的一种类型,则是正确的,否则是假的|如果所有引用都存在于A和B中,也许如果B中存在某些类型,而不是A中.如果B和A之间没有匹配类型,则错误|如果B是A内的一种类型,则是正确的,否则是假的|如果B是A内的一种类型,则是正确的,否则是假的|如果B是A内的一种类型,则是正确的,否则是假的|如果B是A内的一种类型,则是正确的,否则是假的|如果B是A内的一种类型,则是正确的,否则是假的|如果B是A内的一种类型,则是正确的,否则是假的|
-| **Interface** | Maybe |如果B是包含A接口的所有成员的对象,则是真假|如果聚合物包含相匹配的类型|如果B的界面包含A中的所有成员,则是真的.|如果类 Array 或 Dictionary 包含接口的所有成员,则是 True,否则是 False|如果类词典包含所有界面成员,则是正确的,否则是假的| False | False | False |
-| **Container** | Maybe | False |如果B中的多种类型之一与A相匹配,否则是错误的| False |如果容器类型和关键/值类型完全一致,否则是假的| False | False | False | False |
-| **Dictionary** | Maybe | False |如果B中的多种类型之一与A相匹配,否则是错误的| False |如果所有键与键类型相匹配,并且值与值类型相匹配 (如适用),否则是错误的|如果所有键与键类型相匹配,并且值与值类型相匹配 (如适用),否则是错误的| False | False | False |
-| **Enum** | Maybe |如果 enum值B的值类型与混凝土类型A相匹配,则是正确的|如果B中的多种类型之一与A相匹配,否则是错误的| False | False | False |如果 enum 类型相匹配,则是正确的.| False | False |
-| **Callback** | Maybe | False |如果B中的多种类型之一与A相匹配,否则是错误的| False | False | False | False |如果函数签名一致,则是正确的,否则是假的.| False |
-| **Null** | Maybe | False |如果B中的多种类型之一与A相匹配,否则是错误的| False | False | False | False | False | True |
+| **Concrete** | Maybe | B 是 A 或 A 的派生类时为 True | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | A 是 Dictionary 或 Array 时为 Maybe | A 是 Dictionary 时为 Maybe，否则为 False | 枚举值类型与 A 匹配时为 True，否则为 False | False | False |
+| **Poly** | Maybe | B 是 A 包含的类型时为 True，否则为 False | A 和 B 包含所有相同类型时为 True；B 中有部分类型不在 A 中时为 Maybe；没有任何匹配类型时为 False | B 是 A 包含的类型时为 True，否则为 False | B 是 A 包含的类型时为 True，否则为 False | B 是 A 包含的类型时为 True，否则为 False | B 是 A 包含的类型时为 True，否则为 False | B 是 A 包含的类型时为 True，否则为 False | B 是 A 包含的类型时为 True，否则为 False |
+| **Interface** | Maybe | B 是包含 A 接口全部成员的对象时为 True，否则为 False | Poly 包含匹配类型时为 Maybe | B 的 Interface 包含 A 的全部成员时为 True | Array 或 Dictionary 类包含 Interface 的全部成员时为 True，否则为 False | Dictionary 类包含 Interface 的全部成员时为 True，否则为 False | False | False | False |
+| **Container** | Maybe | False | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | 容器类型及键/值类型完全匹配时为 True，否则为 False | False | False | False | False |
+| **Dictionary** | Maybe | False | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | 所有键都匹配键类型且值都匹配值类型（如适用）时为 True，否则为 False | 所有键都匹配键类型且值都匹配值类型（如适用）时为 True，否则为 False | False | False | False |
+| **Enum** | Maybe | 枚举值 B 的值类型与 Concrete 类型 A 匹配时为 True | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | False | False | 枚举类型匹配时为 True，否则为 False | False | False |
+| **Callback** | Maybe | False | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | False | False | False | 函数签名匹配时为 True，否则为 False | False |
+| **Null** | Maybe | False | B 的 Poly 类型中有一种类型与 A 匹配时为 Maybe，否则为 False | False | False | False | False | False | True |
 
-根据您的舒适度,类型检查器可以在三个不同层面上运行.
+根据你对歧义的接受程度，类型检查器可以在三个级别运行：
 
-1. **沉默** - 类型匹配故障被标记为错误,但忽略了模糊性
+1.  **静默**：类型匹配失败会标记为错误，但忽略歧义。
 
-2. **警告** - 类型匹配故障标记为错误,模糊性标记为警告
+2.  **警告**：类型匹配失败会标记为错误，歧义会标记为警告。
 
-3. **错误** - 类型匹配故障和模糊性被标记为错误
+3.  **错误**：类型匹配失败和歧义都会标记为错误。
 
 
-编译一个含糊不清的代码基础可以发现明显的类型错误,而编译代码时在含糊上错误需要在整个代码中添加类型架.子类型是为了让您可以选择攻击性打字,而如果您不这样做,则仍然添加价值.
+在关闭歧义错误的情况下编译代码库，可以发现明显的类型错误；在歧义上报错，则需要在整个代码库中添加类型标注。Monkey Types 让你可以逐步采用更严格的类型检查，即使不这样做也能获得类型检查的价值。
 
 ## 在函数中指定类型
 
-虽然这使得代码非常可读和明确,但它可以增加大量的炉板.
+前面一直在显式添加类型标注。这样代码更易读、更明确，但也会增加大量样板代码。
 
-与类实例变量不同,子类型系统将通过跟踪任务推断本地变量的类型.
+与类实例变量不同，Monkey Types 会通过跟踪赋值来推断局部变量的类型。
 
 ```typescript
 import Toybox.Lang;
@@ -454,19 +455,21 @@ function handleCat(cat as Cat, here as Array, there as Array, everywhere as Arra
 
 function eieio() {
     var here = [], there = [], everywhere = [];
-    // 根据赋值，Animal 的类型将是 Dog。
-    // 无需声明其类型
+    // Animal will be typed as a Dog based
+    // on the assignment. No need to declare
+    // its type
     var animal = new OldMacDonaldsFarm.Dog();
-    // 允许，animal 当前被赋予 Dog 值
+    // Allowed, animal is currently assigned a Dog value
     handleDog(animal, here, there, everywhere);
-    // 根据赋值，Animal 的类型现在将是 Cat
+    // Animal will now be typed as a Cat based on
+    // the assignment
     animal = new OldMacDonaldsFarm.Cat();
-    // 允许，animal 当前被赋予 Cat 值
+    // Allowed, animal is currently assigned a Cat value
     handleCat(animal, here, there, everywhere);
 }
 ```
 
-如果基于哪个分支的类型不清楚,类型系统将在下一个任务之前对选项进行多类型.
+类型推断会沿着分支继续进行。如果无法根据所走的分支确定类型，类型系统会将各个选项组成 Poly 类型，直到下一次赋值。
 
 ```typescript
 import Toybox.Lang;
@@ -477,13 +480,13 @@ function process(a as Boolean) as Boolean? {
     if(a) {
         x = true;
     }
-    // 此时，x 的多类型为
-    // Boolean 或 Null
+    // At this point, x is now the poly type
+    // Boolean or Null
     return x;
 }
 ```
 
-当一个值有已知类型定义时,类型检查器会验证是否允许调用方法.
+当值具有明确的类型定义时，类型检查器会验证是否允许调用相应方法。
 
 ```typescript
 import Toybox.Lang;
@@ -495,61 +498,61 @@ class A {
 
 function process() {
     var a = new A();
-    a.foo(); // 允许
-    a.bar(); // 允许
-    a.fonz(); // 不允许
+    a.foo(); // Allowed
+    a.bar(); // Allowed
+    a.fonz(); // Not allowed
 }
 ```
 
-在容器类型中,也可以将类型绑定到初始值. 这将对容器分配的内容进行控制,但允许本地具有任何值.
+对于容器类型，也可以将类型绑定到初始化值。这会限制可以赋给容器的内容，同时允许局部变量本身接受任意值。
 
 ```typescript
 import Toybox.Lang;
 
 function example() {
     var a = {} as Dictionary<String, String>;
-    a["key"] = "value" // <-- 对 a 的值进行赋值必须遵守类型
+    a["key"] = "value" // <-- Assignments to a's value must obey type
 
-    a = null; // <-- a 是 Any，可以赋值为 null
+    a = null; // <-- a is Any and can be assigned to null
 }
 ```
 
-### 返回价值和虚空
+### 返回值和 Void
 
-如果将类型绑定到函数返回值,类型检查器将确保您返回该类型的值.
+默认情况下，函数返回 Any。将类型绑定到函数返回值后，类型检查器会确保函数返回该类型的值。
 
 ```typescript
 import Toybox.Lang;
 
 function isTrue() as Boolean {
-    return "true"; // 不允许
+    return "true"; // Not allowed
 }
 ```
 
-如果你的函数没有返回值,你可以使用`Void`类型. 这将确保函数不返回值和错误,如果函数试图分配函数的返回值.
+如果函数没有返回值，可以使用 `Void` 类型。这会确保函数不返回值；如果其他函数试图使用该函数的返回值，也会报错。
 
-###任何和类型的模糊性
+### Any 和类型歧义
 
-任何没有绑定类型的函数参数都会是 Any类型.参数的模糊性将会穿透到它在表达式中交互的任何成员.如果你提供所有类型定义,类型检查可以保护它们免受许多类型的常见错误.然而,只有一点模糊性可以防止任何级别的检查.
+未绑定类型的函数参数都属于 Any。参数的歧义会传播到它在表达式中访问的任何成员。如果提供完整的类型定义，类型检查可以避免许多常见错误；但只要存在一点歧义，就可能导致任何级别的检查都无法进行。下面的示例中，函数检查了结果，却没有为参数 `a` 指定类型。
 
 ```typescript
 import Toybox.Lang;
 
 function foo(a) as Integer? {
-    // a 的类型是 Any，因此 Monkey Types 无法确定调用的是哪个 doThis()
+    // a is of type Any, so Monkey Types can't identify what doThis() is being called
     var x = a.doThis();
-    // x 的类型是 Any，因此我们无法知道结果类型
+    // x is of type Any, so we can't know what the result type is
     var y = x + 3;
-    // Y 是什么？Why 是什么？Love 是什么？
+    // What is Y? What is Why? What is Love?
     return y;
 }
 ```
 
-由于`a`是任何,子类型无法对其任何成员做出任何决定,
+由于 `a` 是 Any，Monkey Types 无法判断它的任何成员；因此，也无法判断访问这些成员所得的结果。
 
-###类型的选
+### 类型转换
 
-在表达式中,`as`关键字也可以用于输入给另一个类型的值.如果类型对类型系统不清楚,这可能是有用的.
+`as` 关键字也可以在表达式中将值转换为另一种类型。当类型系统无法确定类型时，这很有用。
 
 ```typescript
 import Toybox.WatchUi;
@@ -559,11 +562,11 @@ function process(a as View) {
 }
 ```
 
-由于子类型是纯粹的词典,并且只存在于编译时间,因此类型造不会导致运行时间的变化.
+Monkey Types 只存在于编译时，是纯粹的词法类型系统，因此类型转换不会改变运行时行为。
 
-### 运行时间类型检查
+### 运行时类型检查
 
-子类型的目标之一是不增加任何运行时间的额外费用.这允许 Typ子类型在门外工作所有连接IQ兼容的产品,但在运行时间检查方面确实增加了成本.简单地说:在编译时,您可以访问表达式类型系统,但在运行时间`instanceof`和`has`具有相同的限制.对于涉及多种类型的混凝土类型的情况,这可以很好地工作.
+Monkey Types 的目标之一是不增加运行时开销。这让它可以直接用于所有兼容 Connect IQ 的产品，但运行时类型检查仍有一些限制。简单来说，编译时可以使用丰富的类型系统；运行时的 `instanceof` 和 `has` 则与之前具有相同限制。对于 Concrete 类型组成的 Poly 类型，这通常可以正常工作。
 
 ```typescript
 import Toybox.Lang;
@@ -580,7 +583,7 @@ function example(x as Number or Float) as Boolean {
 }
 ```
 
-不幸的是,不是每一个情况都能以这种方式解决.
+遗憾的是，并非所有场景都能这样解决。例如，考虑以下情况：
 
 ```typescript
 typedef Nimble as interface {
@@ -600,7 +603,7 @@ function handleCandleStick(jack as Nimble or Quick) {
 }
 ```
 
-在`handleCandleStick`的情况下,接口`Nimble`和`Quick`是词汇类型,只存在于编译时.这将导致编译错误,因为`instanceof`只能用于具体类型而不是词汇类型.在这种情况下,我们可以使用`has`来解决这个问题.
+在 `handleCandleStick` 中，Interface `Nimble` 和 `Quick` 是词法类型，只存在于编译时。由于 `instanceof` 只能用于 Concrete 类，不能用于词法类型，这段代码会产生编译错误。此时可以使用 `has` 解决问题。
 
 ```typescript
 function handleCandleStick(jack as Nimble or Quick) {
@@ -612,51 +615,52 @@ function handleCandleStick(jack as Nimble or Quick) {
 }
 ```
 
-###如果-分开
+### If-Splitting
 
-在Java等语言中,一个对象的类型被假设是它被宣布为什么.这可能导致一些非常冗余的 casting或生成大量不必要的本地人来向编译器沟通某个东西不是它被宣布为什么.
+在 Java 等语言中，对象的类型通常被认为就是声明时的类型。这会导致大量冗余的类型转换，或需要创建许多不必要的局部变量，才能向编译器说明对象实际并非声明的类型。
 
 ```java
 public boolean foo(SomeInterfaceType x) {
     if(x instanceof SomeConcreteType) {
-        // 如果创建一个新变量，事情会容易很多，
-        // 尽管本应可以假设 x 是
-        // SomeConcreteType
+        // My life will just be easier if I make
+        // a new variable, even though it should
+        // be possible to assume that x is
+        // a SomeConcreteType
         SomeConcreteType y = (SomeConcreteType)x;
-        // 对 y 执行操作
+        // Do operations on y
     }
 }
 ```
 
-子C类型系统将利用 如果-splitting,其中分支表达导致变量类型在真实和虚假情况下发生突变.
+Monkey C 类型系统会利用 If-Splitting：分支表达式会使变量类型在条件为真和为假时分别发生变化。
 
 ```typescript
 import Toybox.Lang;
 
 public function foo(x as Number?) as Boolean {
     if(x != null) {
-        // 在此代码块中，假设 x 是 Number 且不为 null
+        // Within this block assume x is Number and not null
     } else {
-        // 在此代码块中，假设 x 为 null
+        // Within this block assume x is null
     }
 }
 ```
 
-==, !=,和`instanceof`操作符将根据以下规则突变类型
+`==`、`!=` 和 `instanceof` 运算符会按照以下规则改变类型：
 
-| type | \== | != | instanceof |的例子|
+| Type | `==` | `!=` | `instanceof` | `!instanceof` |
 | --- | --- | --- | --- | --- |
-| Any | Ignore | Ignore |转变类型为`instanceof`类型| Ignore |
-| Concrete | Ignore | Ignore |转变类型为`instanceof`类型| Ignore |
-| Poly |如果 == 是`null`, 转变为零类型|如果 !=是`null`, 转变为多型减去`null`.|转变类型为`instanceof`类型|从`instanceof`转换为多型减值型|
-| Interface | Ignore | Ignore |转变类型为`instanceof`类型| Ignore |
+| Any | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
+| Concrete | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
+| Poly | If `==` is `null`, mutate to Null type | If `!=` is `null`, mutate to poly type minus `null` | Mutate type to `instanceof` type | Mutate type to poly type minus type from `instanceof` |
+| Interface | Ignore | Ignore | Mutate type to `instanceof` type | Ignore |
 | Container | Ignore | Ignore | Ignore | Ignore |
 | Dictionary | Ignore | Ignore | Ignore | Ignore |
-| Enum |变为enum值类型| Ignore | Ignore | Ignore |
+| Enum | Mutate to enum value type | Ignore | Ignore | Ignore |
 | Callback | Ignore | Ignore | Ignore | Ignore |
 | Null | Ignore | Ignore | Ignore | Ignore |
 
-术语也可以通过&&和 &&的运算符进行修改. 随着&&运算符的使用,突变将通过表达式进行修改,随着表达式的继续.
+表达式也可以使用 `&&` 和 `||` 运算符进行组合。使用 `&&` 时，类型变化会沿表达式传递，并随着表达式继续计算而进一步变化。
 
 ```typescript
 import Toybox.Lang;
@@ -664,16 +668,17 @@ import Toybox.Lang;
 typedef Addable as Number or Float or Long or Double or String;
 
 public function foo(x as Addable?) {
-    // 在第一个子句中，x 被修改为从多类型中移除 null。
-    // 在第二个子句中，新的多类型被修改为 String 具体类型。
+    // In the first clause, x is modified to remove the null
+    // from the poly type. In the second clause, the new polytype
+    // is modified to be a String concrete type.
     if(x != null &&
        x instanceof String) {
-        // 在此代码块中，假设 x 是字符串
+        // Within this block assume x is a string
     }
 }
 ```
 
-随着这些操作的结果,建立了一个新的聚类型
+使用 `||` 时，会根据两个操作的结果创建新的 Poly 类型。
 
 ```typescript
 import Toybox.Lang;
@@ -683,40 +688,40 @@ typedef Addable as Number or Float or Long or Double or String;
 public function foo(x as Addable?) {
     if(x instanceof Number ||
        x instanceof Float) {
-        // 在此代码块中，假设 x 是 Number 或 Float
+        // Within this block assume x is a Number or Float
     }
 }
 ```
 
-如果分为成员变量时,如果调用函数,则将删除所有类型突变.
+对成员变量进行 If-Splitting 时，如果调用函数，所有类型变化都会被清除。
 
 ## 为模块和类指定类型
 
-与本地变量不同,成员变量不会根据分配推断类型.将类型架子添加到成员变量和名字添加到列表将允许更强的类型检查.常量按分配输入.
+类成员变量默认绑定为 Any。与局部变量不同，成员变量不会根据赋值推断类型。为成员变量添加类型标注并为枚举命名，可以进行更严格的类型检查。常量的类型由赋值推断。
 
 ```typescript
 class Example {
-    // 成员变量
+    // Member variable
     private var _x as Number = 0;
 
-    // 可以显式分配枚举值，否则默认使用
-    // 按数字递增的值。
+    // Enum values can be explicitly assigned, or by default will
+    // be numerically incremented values.
     enum NamedEnum {
         NAMED_ENUM;
     }
 
-    // 常量通过赋值推断其类型
+    // Constants assume their type by assignment
     private const _constant = "Constant";
 }
 ```
 
-如果添加类型架架,则必须初始化变量或允许它是`null`.下面的例子会导致编译器错误:
+添加类型标注后，必须初始化变量，或允许它为 `null`。下面的示例会导致编译器错误：
 
 ```typescript
 import Toybox.Lang;
 import Toybox.System;
 
-// 请勿射击
+// Don't shoot
 class Messenger {
     private var _message as String;
 
@@ -726,18 +731,18 @@ class Messenger {
 }
 ```
 
-错误的原因是,`_message`被声明为字符串,但只剩下它被初始化为`null`.模块变量要么在声明时初始化或被允许是`null`,而对象成员也可以在`initialize`函数中初始化.以下将解决错误:
+产生错误的原因是 `_message` 被声明为 String，但未进行初始化，因此它会被初始化为 `null`。模块变量必须在声明时初始化，或允许为 `null`；对象成员还可以在 `initialize` 函数中初始化。下面的代码可以解决错误：
 
 ```typescript
 import Toybox.Lang;
 import Toybox.System;
 
-// 请勿射击
+// Don't shoot
 class Messenger {
     private var _message as String;
 
     public function initialize() {
-       // 初始化消息
+       // Initialize message
         _message = "";
     }
 
@@ -749,21 +754,21 @@ class Messenger {
 
 ### 类型和继承
 
-在扩展类型时,类型系统将使用以下规则:
+扩展类时，类型系统遵循以下规则：
 
-1. 如果从母函数扩展一个函数,但不添加类型装饰,则对参数的类型和返回值将从母函数实现中被字面上转移
+1.  如果从父类继承参数数量相同的函数，但不添加类型标注，则参数和返回值的类型会从父类实现中原样继承。
 
-2. 如果从母函数扩展一个函数,并添加类型装饰,则必须与数量的参数和类型装饰相匹配,否则编译器会错误
+2.  如果从父类继承参数数量相同的函数并添加类型标注，则参数数量和类型标注必须完全匹配，否则编译器会报错。
 
 
-这允许现有的子C代码扩展`Toybox`类型,在不需要添加任何类型装饰的情况下利用类型检查.
+这样，扩展 `Toybox` 类型的现有 Monkey C 代码无需添加任何类型标注，也能使用类型检查。
 
-##应用范围类型检查
+## 应用范围类型检查
 
-类型检查器试图验证从模块或类中获取的任何成员都与调用者相同的应用范围中可用.如果开发人员确信他们的代码是安全的应用范围,并且类型检查器仍然抱怨,则可以通过分别使用注释`:typecheck(disableBackgroundCheck)`或`:typecheck(disableGlanceCheck)`来禁用此检查.
+类型检查器会尝试验证：从模块或类中获取的成员，在调用方所处的所有应用范围内都可用。如果开发者确信代码在应用范围内是安全的，但类型检查器仍然报错，可以分别使用注解 `:typecheck(disableBackgroundCheck)` 或 `:typecheck(disableGlanceCheck)`，禁用对后台或 glance 范围的检查。要同时禁用两者，请使用注解 `:typecheck([disableBackgroundCheck, disableGlanceCheck])`。
 
-首先,`as`现在在语法中具有一个全新的含义,并且使用它为模块重命名是困惑的.另外,在子C中重命名模块使得写好可共享的示例代码变得非常困难,因为每个人都根据自己的偏好重命名每个模块.是的,`Gregorian`是一个很大的词,并且很烦人打字,但这就是我们有自动完成的原因.
+这项设计存在争议。首先，`as` 在语法中已经有了全新的含义，用它重命名模块会造成混淆。其次，在 Monkey C 中重命名模块会让可共享示例代码很难编写，因为每个人都会按自己的偏好重命名所有模块。确实，`Gregorian` 这个词很长，输入起来很烦，但这正是自动补全存在的原因。
 
-对于评估自助书籍的即将推出的"方法方法" (The Method Method) 则不应该混为一谈.
+返回 `Method` 的 `method` 方法不要与我即将出版的自助书籍评测书《The Method Method》混淆。
 
-我刚刚见到你,这很疯狂,但我是一个很适合的人吗?
+我刚刚见到你，这很疯狂，但我是 Any，所以类型匹配结果是 Maybe……
