@@ -1,5 +1,5 @@
 ---
-title: "Manifest File and Permissions"
+title: "Manifest 文件和权限"
 ---
 <a id="manifest-file-and-permissions"></a>
 # Manifest 文件和权限
