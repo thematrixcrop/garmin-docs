@@ -3,14 +3,14 @@ title: "账户管理"
 ---
 # 账户管理
 
-如果您是经过批准的商人,开发者仪表板上的商人账户 tabb可让您更新您的银行信息,请求销售报告和税收表格,并取消您的账户.
+成为获批商户后，开发者面板中的“商户账户”标签页可用于更新银行信息、申请销售报告和税务表格，以及取消账户。
 
-为了改变您的法人类型,您必须发电子邮件给[`ConnectIQAppAdmin@garmin.com`](mailto://ConnectIQAppAdmin@garmin.com)
+如需更改法律实体类型，必须发送电子邮件至 [`ConnectIQAppAdmin@garmin.com`](mailto://ConnectIQAppAdmin@garmin.com)。
 
-## 取消您的账户
+## 取消账户
 
-您可以随时退出货币化程序. 通过选择*帐户信息>禁用帐户*,您可以在开发者仪表板上的商户帐户选项选项中退出.
+您可以随时退出变现计划。在开发者面板的“商户账户”标签页中，选择 *账户信息 > 停用账户* 即可退出。
 
-如果您在[`https://www.garmin.com/en-US/account/datamanagement`](https://www.garmin.com/en-US/account/datamanagement)删除您的账户信息,被列在被拒绝方列表中,或违反货币化计划的条款和条件,则您的帐户也将被禁用.
+如果您在 [`https://www.garmin.com/en-US/account/datamanagement`](https://www.garmin.com/en-US/account/datamanagement) 删除账户信息、被列入拒绝交易方名单，或违反变现计划的条款和条件，账户也会被停用。
 
-当您的交易员账户被终止时,您的货币化应用程序会立即被 demonetized. 仍然在退货窗口中购买的客户可以请求退款. 终止帐户后,您必须重复所有初步登录步骤,以再次成为交易员,包括支付程序费.
+商户账户终止后，已变现的应用会立即停止变现。仍处于退货期限内的购买，客户可以申请退款。账户终止处理完成后，如需再次成为商户，必须重新完成所有初始入驻步骤，包括支付计划费用。
