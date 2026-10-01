@@ -196,7 +196,7 @@ API 级别 3.0.0
 
 - [**initialize**](#initialize-instance_function)(options as { :algorithm as [Cryptography.CipherAlgorithm](/connect-iq/api-docs/Toybox/Cryptography/#CipherAlgorithm-module), :mode as [Cryptography.EncryptionMode](/connect-iq/api-docs/Toybox/Cryptography/#EncryptionMode-module), :key as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/), :iv as [Lang.ByteArray](/connect-iq/api-docs/Toybox/Lang/ByteArray/) })
 
-    Constructor.
+    构造函数。
 
 
 ## 实例方法详情
