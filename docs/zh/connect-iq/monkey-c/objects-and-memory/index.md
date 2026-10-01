@@ -1,5 +1,5 @@
 ---
-title: "Objects, Modules, and Memory"
+title: "对象、模块和内存"
 ---
 <a id="objects-modules-and-memory"></a>
 # 对象、模块和内存
