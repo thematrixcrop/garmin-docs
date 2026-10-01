@@ -1,5 +1,5 @@
 ---
-title: "App Trials"
+title: "应用试用"
 ---
 <a id="app-trials"></a>
 # 应用试用
