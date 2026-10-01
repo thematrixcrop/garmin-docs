@@ -170,7 +170,7 @@ API 级别 1.0.0
 
 十进制度格式：ddd.dddddd（例如 38.278652）
 
-| -   [Decimal Degrees](https://en.wikipedia.org/wiki/Decimal_degrees)
+| -   [十进制度](https://en.wikipedia.org/wiki/Decimal_degrees)
 |
 | GEO\_DM | 1 |
 
@@ -198,7 +198,7 @@ API 级别 1.0.0
 
 军事网格参考系统，即 MGRS（例如 4QFJ12345678）
 
-| -   [Military Grid Reference System](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
+| -   [军事网格参考系统](https://en.wikipedia.org/wiki/Military_Grid_Reference_System)
 |
 
 ### Quality
@@ -243,7 +243,7 @@ API 级别 1.0.0
 
 该 Location 使用可用的 GPS 定位结果计算得出。可用 3-D GPS 定位结果，但 HDOP（水平精度因子）处于临界水平
 
-| -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
+| -   [精度因子](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
 |
 | QUALITY\_GOOD | 4 |
 
@@ -253,7 +253,7 @@ API 级别 1.0.0
 
 该 Location 使用良好的 GPS 定位结果计算得出。可用 3-D GPS 定位结果，并且 HDOP（水平精度因子）为良好至优秀。
 
-| -   [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
+| -   [精度因子](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation))
 |
 
 ### LocationAcquisitionType
