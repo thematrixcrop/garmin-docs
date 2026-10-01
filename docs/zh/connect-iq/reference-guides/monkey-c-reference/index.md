@@ -340,11 +340,11 @@ for(var i = 0; i < first_dimension_size; i += 1) {
 }
 ```
 
-** 注:**使用这种技术时,很重要要注意数组尺寸.上面的例子只做了三次[Array](/connect-iq/api-docs/Toybox/Lang/Array/)分配,以提供200个插槽,但如果维度逆转,这将使得101个分配,使用更多的内存来提供相同的插槽数量.
+**注意：**使用此技术时，必须注意数组大小。上面的示例只执行了 3 次 [Array](/connect-iq/api-docs/Toybox/Lang/Array/) 分配，就提供了 200 个槽位；如果反转两个维度，则需要 101 次分配，使用更多内存才能提供相同数量的槽位。
 
 ### 字典
 
-[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/)对象,也称为关联阵列或哈希表,是类似于[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)对象的数据结构,它们映射键值对.键和值可以是任何类型的[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/),每个键值对不需要在给定的词典中是相同类型的组合.
+[Lang.Dictionary](/connect-iq/api-docs/Toybox/Lang/Dictionary/) 对象也称为关联数组或哈希表，是一种映射键值对的数据结构，类似于 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)。键和值可以是任意 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 类型，同一个字典中的键值对不必使用相同类型。
 
 ```cpp
 using Toybox.System;
@@ -357,14 +357,14 @@ System.println(myDictionary["c"]);          // Prints "three"
 System.println(myDictionary["d"]);          // Prints "null" (there is no key "d")
 ```
 
-[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)类有内置的[Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function)方法,它自动将添加到字典中的密钥 (索引) 哈希 (索引).这提供了一个高效的方法来查找任意排序的字典值.字典随着添加或删除项目的自动变大和重新改大小,这使得它们非常灵活,但成本:
+[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 类提供内置的 [Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) 方法，会自动对加入字典的键（索引）进行哈希处理，从而高效查找字典值。字典会随着项目的添加或删除自动扩容和调整大小，这很灵活，但也有代价：
 
-- 如果过度调整大小和重新调整,插入和删除字典内容可能会导致性能问题
+- 频繁扩容和缩容可能导致插入、删除字典内容时出现性能问题。
 
-- 词典不像[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)或[Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)类型的对象那么空间效率,因为它们需要额外的内存分配空间
+- 字典的空间效率不如 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 或 [Lang.Array](/connect-iq/api-docs/Toybox/Lang/Array/)，因为它需要额外的内存分配。
 
 
-在大多数情况下,内置的[Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function)方法是足够的,但如果在字典中使用自定义[Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)类型的密钥,则可能是有益的,以避免索引碰撞并减少搜索时间:
+大多数情况下，内置的 [Object.hashCode()](/connect-iq/api-docs/Toybox/Lang/Object/#hashCode-instance_function) 方法已经足够。但如果字典使用自定义 [Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/) 类型作为键，实现自定义哈希可能有助于避免索引冲突并缩短搜索时间：
 
 ```cpp
 class Monkey
@@ -619,7 +619,7 @@ for (var i = 0; i < myArray.size(); i++) {
 }
 ```
 
-通过使用`break`和`continue`语句来控制循环中的流量:
+可以使用 `break` 和 `continue` 语句控制循环：
 
 ```cpp
 using Toybox.System;
@@ -640,7 +640,7 @@ for (var i = 0; i < 10; i += 1) {
 
 ### 异常处理
 
-子C支持结构化[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理,以防止`try-catch`块的非致命错误:
+Monkey C 支持结构化处理 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)，用于处理 `try-catch` 代码块中的非致命错误：
 
 ```cpp
 try {
@@ -650,7 +650,7 @@ try {
 }
 ```
 
-多个`catch`语句可以处理多个可能的例外类型.当一个例外被扔时,第一个匹配的捕获区块将执行,所有随后的捕获区块将被跳过 (如果使用通用[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)处理器,这是一个好主意的位置).可选的`finally`语句可以放在试捕获区块的尽头,这将执行不论是否投放了例外.
+多个 `catch` 可以处理不同的异常类型。抛出异常时，第一个匹配的 catch 代码块会执行，后续 catch 代码块都会跳过（使用通用 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) 处理器时尤其如此）。可选的 `finally` 语句可以放在 try-catch 代码块末尾，无论是否抛出异常都会执行。
 
 ```cpp
 try {
@@ -664,23 +664,23 @@ try {
 }
 ```
 
-要抛出[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/),使用`throw`关键字:
+要抛出 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)，请使用 `throw` 关键字：
 
 ```cpp
 throw new Lang.Exception();
 ```
 
-如果不处理例外,运行时会出现 *未处理的例外* 错误.连接 IQ API 在一些实例中会抛出例外,如[Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/)和[Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/). 查看[API 文档](/connect-iq/api-docs/)有关各种[Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/)类型的更多详情.
+如果不处理异常，运行时会出现 *未处理异常* 错误。Connect IQ API 在某些情况下会抛出异常，例如 [Lang.SymbolNotAllowedException](/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException/) 和 [Lang.UnexpectedTypeException](/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException/)。有关各种 [Lang.Exception](/connect-iq/api-docs/Toybox/Lang/Exception/) 类型的详情，请参阅 [API 文档](/connect-iq/api-docs/)。
 
 <a id="functions"></a>
 
 ## 函数
 
-函数 (也称为方法) 是应用程序的基础,定义了单独的可调用代码单元.它们可以存在于一个类,模块或出现在全球模块中.
+函数（也称为方法）是应用程序的基础，用于定义可独立调用的代码单元。函数可以位于类或模块中，也可以出现在全局模块中。
 
-定义一个函数
+### 定义函数
 
-子C函数可以采用参数,但由于子C是一个动态键字语言,所以参数类型不被声明.下面是一个简单的函数,采用一个'myValue'参数并乘以两个:
+Monkey C 函数可以接受参数，但由于 Monkey C 是动态类型语言，不会声明参数类型。下面的简单函数接受 `myValue` 参数并将其乘以 2：
 
 ```cpp
 function myFunction(myValue) {
@@ -688,11 +688,11 @@ function myFunction(myValue) {
 }
 ```
 
-** 注:** 动态打字可以轻松地意外地写函数,可能在所有情况下都不会工作.上面的例子很好,如果你提供一个数字作为参数,但如果它通过一个字符串,它不会那么快乐.
+**注意：**动态类型让函数很容易被错误调用，导致它在某些情况下无法工作。上面的示例在参数为数字时没有问题，但传入字符串就会出错。
 
-### 返回函数的值
+### 从函数返回值
 
-由于动态键入,不必声明函数的返回值,但在子C中的所有函数仍然会返回值.可以用`return`关键字指定返回值:
+由于动态类型，无需声明函数的返回值，但 Monkey C 中的所有函数仍会返回值。可以使用 `return` 关键字指定返回值：
 
 ```cpp
 function myFunction(myValue) {
@@ -701,11 +701,11 @@ function myFunction(myValue) {
 }
 ```
 
-`return`语句是可选的,如果函数没有一个,它将从调用者的角度返回一个"垃圾"值.
+`return` 语句是可选的。如果函数没有 `return`，从调用者角度看，它会返回一个“垃圾”值。
 
 ### 调用函数
 
-要使用函数或方法,只需使用函数调用语法:
+要使用函数或方法，只需使用函数调用语法：
 
 ```cpp
 // Call myFunction() and pass it an argument of '2', but do nothing with the result
@@ -715,7 +715,7 @@ myFunction(2);
 var myResult = myFunction(2);
 ```
 
-在另一个函数或方法中还可以调用函数或方法:
+也可以在另一个函数或方法中调用函数或方法：
 
 ```cpp
 function myOtherFunction() {
