@@ -3,66 +3,59 @@ title: "应用销售"
 ---
 # 应用销售
 
-在申请获得批准后,您正式成为商家,可以开始列出出出售的应用程序.为了列出您的应用程序,请从开发者仪表板中选择上传应用程序. 当被问及您的应用程序是否获利时,请通过Garmin CIQ商家帐户选择是的.从下拉菜单中选择价格.
+应用通过审核后，您即成为正式商户，可以开始将应用列出销售。要列出应用，请在开发者面板中选择“上传应用”。系统询问应用是否已变现时，请选择“是，通过 Garmin CIQ 商户账户”，然后从下拉菜单中选择价格。
 
 ## 受支持的产品
 
-当你列出出出售的应用程序时,它只会在以下产品上提供:
+列出应用销售后，应用只会在以下产品上提供：
 
 | 类别 | 产品 |
 | --- | --- |
-| API 级别 6.0 |极端® 550,极端® 840 / 840 太阳能,极端® 850,极端® MTB,终端TM 3,先驱® 170,先驱® 170 音乐,先驱® 570 42mm,先驱® 570 47mm,先驱® 70,先驱® 970, fēnix® 8 43mm, fēnix® 8 47mm / 51mm, fēnix® 8 Pro 47mm / 51mm / 51mm / 微LED, fēnix® 8 Solar 47mm, fēnix® 8 Solar 51mm, fēnix® 9 43mm, fēnix® 9 47mm / 51mm, fēnix® 47mm / 47mm, fēnix® 47mm / 47mm / 47mm, fēnix® 43mm, fēnix® 47mm / 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 47mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix® 45mm, fēnix 45mm|
-| API 级别 5.2 |D2TM Mach 1, D2TM Mach 1 Pro, D2TM Mach 2, EnduroTM 2, epixTM (Gen 2), epixTM Pro (Gen 2) 42mm, epixTM Pro (Gen 2) 47mm, epixTM Pro (Gen 2) 51mm, Forerunner® 165, Forerunner® 165音乐, Forerunner® 255, Forerunner® 255音乐, Forerunner® 255s, Forerunner® 255s音乐, Forerunner® 265, Forerunner® 265s, Forerunner® 955 / Solar, Forerunner® 965, fēnix® 7, fēnix® 7 Pro, fēnix® 7 Pro - Solar Edition (无 Wi-Fi), fēnix® 7S, fēnix® 7S, fēnix® 7 Pro, 7 Prox® 7X, fēnix® 7Q, fēnix / 7Q, fenix / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q / 7Q /|
-| API 级别 5.1 |接近® S50,接近® S70 42mm,接近® S70 47mm,下降TM G2,下降TM Mk3 43mm / Mk3i 43mm,下降TM Mk3i 51mm,边缘®探索 2, eTrex®触摸|
-| API 级别 5.0 |视频: 视频: 视频: 视频: 视频: 视频:|
-| API 级别 3.4 |降落TM Mk2 / Mk2i,降落TM Mk2 S,fēnix® 6 Pro / 6 萨菲尔 / 6 Pro 太阳能 / 6 Pro 双功率,fēnix® 6S Pro / 6S 萨菲尔 / 6S 太阳能 / 6S Pro 双功率,fēnix® 6X Pro / 6X 萨菲尔 / 6X 太阳能,MARQ®冒险家,MARQ®运动员,MARQ®飞行员,MARQ®船长,MARQ®船长:美国魔术版,MARQ®指挥官,MARQ®驾驶员,MARQ®远征,MARQ®高尔夫人,quatix® 6,quatix® 6X / 6X 太阳能版 /Delta Solar /Delta 太阳能版|
+| API Level 6.0 | D2™ Air X15, D2™ Mach 2 Pro, Edge® 1040 / 1040 Solar, Edge® 1050, Edge® 540 / 540 Solar, Edge® 550, Edge® 840 / 840 Solar, Edge® 850, Edge® MTB, Enduro™ 3, Forerunner® 170, Forerunner® 170 Music, Forerunner® 570 42mm, Forerunner® 570 47mm, Forerunner® 70, Forerunner® 970, fēnix® 8 43mm, fēnix® 8 47mm / 51mm, fēnix® 8 Pro 47mm / 51mm / MicroLED, fēnix® 8 Solar 47mm, fēnix® 8 Solar 51mm, fēnix® 9 43mm, fēnix® 9 47mm / 51mm, fēnix® 9 Pro 43mm, fēnix® 9 Pro 47mm, fēnix® 9 Pro 51mm, fēnix® 9 Pro Solar 47mm, fēnix® 9 Pro Solar 51mm, fēnix® E, Instinct® 3 AMOLED 45mm, Instinct® 3 AMOLED 50mm, Instinct® 3 Solar 45mm / 50mm, Instinct® Crossover AMOLED, Instinct® E 40mm, Instinct® E 45mm, quatix® 8 47mm / 51mm, quatix® 8 Pro 47mm / 51mm, tactix® 8 47mm / 51mm, tactix® 8 Solar 51mm, Venu® 4 41mm, Venu® 4 45mm, Venu® X1, vívoactive® 6 |
+| API Level 5.2 | D2™ Mach 1, D2™ Mach 1 Pro, D2™ Mach 2, Enduro™ 2, epix™ (Gen 2), epix™ Pro (Gen 2) 42mm, epix™ Pro (Gen 2) 47mm, epix™ Pro (Gen 2) 51mm, Forerunner® 165, Forerunner® 165 Music, Forerunner® 255, Forerunner® 255 Music, Forerunner® 255s, Forerunner® 255s Music, Forerunner® 265, Forerunner® 265s, Forerunner® 955 / Solar, Forerunner® 965, fēnix® 7, fēnix® 7 Pro, fēnix® 7 Pro - Solar Edition (no Wi-Fi), fēnix® 7S, fēnix® 7S Pro, fēnix® 7X, fēnix® 7X Pro, fēnix® 7X Pro - Solar Edition (no Wi-Fi), MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition, MARQ® (Gen 2) Aviator, quatix® 7, quatix® 7 Pro, quatix® 7 Sapphire, quatix® 7X Solar, tactix® 7, tactix® 7 – AMOLED Edition, Venu® 3, Venu® 3S, vívoactive® 5 |
+| API Level 5.1 | Approach® S50, Approach® S70 42mm, Approach® S70 47mm, Descent™ G2, Descent™ Mk3 43mm / Mk3i 43mm, Descent™ Mk3i 51mm, Edge® Explore 2, eTrex® Touch |
+| API Level 5.0 | D2™ Air X10, GPSMAP® H1 / H1i Plus, Venu® 2, Venu® 2 Plus, Venu® 2S, Venu® Sq 2, Venu® Sq 2 Music |
+| API Level 3.4 | Descent™ Mk2 / Mk2i, Descent™ Mk2 S, fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power, fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power, fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar, MARQ® Adventurer, MARQ® Athlete, MARQ® Aviator, MARQ® Captain, MARQ® Captain: American Magic Edition, MARQ® Commander, MARQ® Driver, MARQ® Expedition, MARQ® Golfer, quatix® 6, quatix® 6X / 6X Solar / 6X Dual Power, tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition |
 
-**注意:**本列表可能会发生变化.
+**注意：** 此列表可能会发生变化。
 
-## 用户所在的受支持国家
+## 用户所在的受支持国家/地区
 
-只有以下国家的用户才能购买货币化的应用程序:
+只有以下国家/地区的用户可以购买已变现的应用：
 
 | 地区 | 国家/地区 |
 | --- | --- |
-| Americas |阿根廷,阿鲁巴,巴哈马,巴巴多斯,贝利兹,伯慕大,玻利维亚,布韦特岛,巴西,加拿大,开曼群岛,哥伦比亚,哥斯达黎加,多米尼加共和国,厄瓜多尔,萨尔瓦多,福克兰群岛 (马尔维纳斯),法国,圭亚那,格陵兰,瓜地马拉,瓜地马拉,圭亚那,洪都拉斯,牙买加,马丁尼克,墨西哥,蒙塞拉特,尼加拉瓜,巴拿马,巴拉圭,秘鲁,波多黎各,圣基茨和内维斯,圣卢西亚,南格鲁吉亚和南方三星群岛,苏里纳姆,特里纳德和托巴哥,美国,乌拉圭,维尔京群岛 (英国) 和维尔京群岛 (美国)|
-| Africa |阿尔及利亚,安哥拉,本尼,博茨瓦纳,英国印度洋领土,布基纳法索,布隆迪,喀麦隆,喀布尔特维尔,中非共和国,查德,科莫罗斯,刚果,象牙海岸,吉布提,埃及,赤道几内亚,厄立特里亚,埃塞俄比亚,法国南方领土,加本,冈比亚,加纳,几内亚,基尼,莱索托,利比利亚,马拉维,马拉维,马里塔尼亚,毛里求斯,马约特,摩洛哥,莫桑比克,纳米比亚,尼日尔,尼日利亚,伦比亚,卢旺达,圣赫莱纳,圣托马尼和普林辛普,塞内加尔,塞舌尔,塞拉利昂,利比亚国家,斯瓦西兰,坦桑尼亚联合共和国,东哥,突尼斯,乌干达,西班牙和津巴布韦|
-| Europe |阿兰群岛,阿尔巴尼亚,安多拉,奥地利,比利时,波斯尼亚和赫塞哥维纳,保加利亚,克罗地亚,捷克共和国,丹麦,爱沙尼亚,费罗群岛,芬兰,法国,德国,吉布拉陀,希腊,格尔尼西,匈牙利,冰岛,爱尔兰,曼岛,意大利,泽西,拉脱维亚,利脱斯坦,立陶宛,卢森堡,马其顿,摩尔多瓦共和国,摩尔多瓦共和国,马耳他,摩尔多瓦共和国,荷兰,挪威,波兰,葡萄牙,罗马尼亚,圣马里诺,塞尔维亚,斯洛伐克,斯洛文尼亚,西班牙,斯瓦尔巴德和梅恩,瑞典,瑞士,乌克兰,英国和蒂冈城|
-| APAC |阿富汗,亚美尼亚,澳大利亚,阿塞拜疆,巴林,孟加拉国,不丹,布鲁尼达鲁萨拉姆,柬埔寨,塞浦路斯,格鲁吉亚,香港,印度,印度尼西亚,伊拉克,以色列,日本,约旦,哈萨克斯坦,韩国共和国,科威特,吉尔吉斯斯坦,黎巴嫩,马尔代夫,蒙古利亚,阿曼,巴基斯坦,菲律宾,卡塔尔,沙特阿拉伯,新加坡,斯里兰卡,台湾,塔吉克斯坦,泰国,土耳其,土耳其,乌兹别克斯坦,越南,也门|
+| 美洲 | Antigua and Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bermuda, Bolivia, Bouvet Island, Brazil, Canada, Cayman Islands, Colombia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Falkland Islands (Malvinas), France, Guyana, Greenland, Guadeloupe, Guatemala, Guyana, Honduras, Jamaica, Martinique, Mexico, Montserrat, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, South Georgia and the South Sandwich Islands, St Pierre and Miquelon, Suriname, Trinidad and Tobago, United States, Uruguay, Virgin Islands (British), and Virgin Islands (United States) |
+| 非洲 | Algeria, Angola, Benin, Botswana, British Indian Ocean Territory, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Congo, Cote d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Ethiopia, French Southern Territories, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Madagascar, Malawi, Mali, Mauritania, Mauritius, Mayotte, Morocco, Mozambique, Namibia, Niger, Nigeria, Reunion, Rwanda, Saint Helena, Sao Tome and Principe, Senegal, Seychelles, Sierra Leone, State of Libya, Swaziland, United Republic of Tanzania, Togo, Tunisia, Uganda, Western Sahara, Zambia, and Zimbabwe |
+| 欧洲 | Aland Islands, Albania, Andorra, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Latvia, Liechtenstein, Lithuania, Luxembourg, The Former Yugoslav Republic of Macedonia, Malta, Republic of Moldova, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, and Vatican City |
+| 亚太地区 | Afghanistan, Armenia, Australia, Azerbaijan, Bahrain, Bangladesh, Bhutan, Brunei Darussalam, Cambodia, Cyprus, Georgia, Hong Kong, India, Indonesia, Iraq, Israel, Japan, Jordan, Kazakhstan, Republic of Korea, Kuwait, Kyrgyzstan, Lebanon, Malaysia, Maldives, Mongolia, Oman, Pakistan, Philippines, Qatar, Saudi Arabia, Singapore, Sri Lanka, Taiwan, Tajikistan, Thailand, Turkey, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam, Yemen |
 
-**注意:**本列表可能会发生变化.
+**注意：** 此列表可能会发生变化。
 
-## 未含税价格点
+## 未含税价格档位
 
-现金化应用程序有一系列价格点.这些价格是免税的,是Garmin®和开发商之间的收入分摊的基础.
+已变现应用有一组可用价格档位。这些价格不含税，是 Garmin® 与开发者进行收入分成的基础。
 
-根据货币类型,纳税包容性,税率和其他因素,价格指数映射到世界各地的不同货币.
+价格档位会根据货币类型、是否含税、税率和其他因素映射到世界各地的不同货币。
 
-## 购买明细
+## 购买金额的构成
 
-- 格明收到15%的税收排斥价格.
+- Garmin 从未含税价格中收取 15%。
+- Garmin 会在价格档位的基础上加收销售税。
+- 信用卡手续费由 Garmin 承担。
+- 数字服务税（如适用）会从您的结算款中扣除。
+- 转换为开发者结算货币所产生的费用会从您的结算款中扣除。
 
--加明将销售税增加到价格点.
+## 应用审核
 
-- 卡卡费用由Garmin负责.
+上传应用需要经过审核，以确认应用符合 [Connect IQ™ 开发者许可协议](https://developer.garmin.com/downloads/connect-iq/sdks/agreement.html)中列出的条款和条件。如果您为已通过审核的应用设置价格，应用会暂时从商店下架，以便重新审核。应用通过审核后，用户会收到消息，说明必须购买应用才能再次使用。
 
-- 数字服务税 (如适用) 将从您的支付中扣除.
+如果您要从其他变现系统迁移到 Connect IQ 变现系统，可以使用[此营销表单](https://www.garmin.com/en-US/forms/ciq-dev-marketing-request/)申请促销代码，帮助已购买应用的用户完成迁移。这些一次性代码允许现有用户免费购买应用。代码由您负责分发。
 
-- 转换到开发者支付货币的费用将从您的支付中被扣留.
+## 结算
 
+结算款会在每月第一天发放。Garmin International 负责美国和加拿大的销售，Garmin Europe 负责其他地区的应用购买，双方会分别发放结算款。
 
-## 应用评价
-
-应用程序上传需要进行审查,以验证它符合Connect IQTM开发商许可协议中列出的条款和条件.如果您为已经批准的应用程序设定价格,则该应用程序暂时被从商店中删除,以便再次进行审查.应用程序被批准后,用户收到一个信息,说明他们必须购买该应用程序才能再次使用.
-
-如果您正在从其他货币化系统迁移到 Connect IQ 货币化系统，可以使用[此营销表单](https://www.garmin.com/en-US/forms/ciq-dev-marketing-request/)申请促销代码，以便迁移已购买应用的用户。这些一次性代码允许现有用户免费购买应用。代码的分发由您负责。
-
-## 分成
-
-每个月的第一天发送付款. 单独的付款来自美国和加拿大销售的Garmin国际,以及来自其他地区的应用购买的Garmin欧洲.
-
-- 只有经过48小时的回报窗口才能从客户那里获取资金.
-
-- 购买本月最后五天的商品可能不包括在下一个付款中,而是将其纳入下一个月的付款中.
-
-- 支付需要至少10美元的余额.
+- 只有在客户的 48 小时退货期结束后，款项才会从客户处扣取。
+- 当月最后五天的购买可能不会计入下一次结算，而是顺延到下个月的结算中。
+- 账户余额至少达到 10 美元才能结算。
