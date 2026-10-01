@@ -222,7 +222,7 @@ API 级别 1.0.0
 
 另见：
 
-- [Duty Cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+- [占空比](https://en.wikipedia.org/wiki/Duty_cycle)
 
 
 ### var length as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/)
