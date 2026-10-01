@@ -235,7 +235,7 @@ API 级别 2.2.0
 
 - [**initialize**](#initialize-instance_function)(listener as [AntPlus.LightNetworkListener](/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener/) or **Null**)
 
-    Constructor.
+    构造函数。
 
 - [**restoreHeadlightsNetworkModeControl**](#restoreHeadlightsNetworkModeControl-instance_function)() as **Void**
 
