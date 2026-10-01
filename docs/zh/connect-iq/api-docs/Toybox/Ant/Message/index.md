@@ -117,7 +117,7 @@ API 级别 1.2.0
 
 另见：
 
-- [ANT Downloads & Resources - ANT Message Protocol and Usage for pre-defined Device Types.](https://www.thisisant.com/developer/resources/downloads/)
+- [ANT 下载与资源 - 预定义设备类型的 ANT 消息协议和用法](https://www.thisisant.com/developer/resources/downloads/)
 
 
 ### var length as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/) or **Null**
