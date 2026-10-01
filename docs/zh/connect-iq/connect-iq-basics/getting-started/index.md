@@ -47,7 +47,7 @@ Connect IQ SDK 管理器会让 Connect IQ SDK 和设备库保持最新。云端�
     ![更新设备](/connect-iq/resources/programmers-guide/sdk-manager-update-devices.png)
 
 
-SDK 管理器有两个选项卡：**SDK** 和 **Devices**。**SDK** 选项卡显示可用的 SDK。使用 ![](/connect-iq/resources/programmers-guide/sdk-manager-download-button.png)
+SDK 管理器有两个选项卡：**SDK** 和 **Devices**。**SDK** 选项卡显示可用的 SDK。选择 SDK 后，使用 ![](/connect-iq/resources/programmers-guide/sdk-manager-download-button.png) 下载并安装。
 
 #### Monkey C Visual Studio Code 扩展
 
