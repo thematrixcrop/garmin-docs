@@ -72,7 +72,7 @@ Connect IQ 支持 1 BPP、2 BPP、4 BPP、8 BPP 和 16 BPP 的图像。
 
 虽然目标始终是提供最佳显示效果，但设备有时会受到显示技术或底层屏幕缓冲区内存大小的限制。选择只支持 16 色调色板，通常是为了牺牲颜色深度，以换取其他产品功能。
 
-对于使用 16 色调色板的设备，颜色已预先编程到设备中。[Graphics color constants](/connect-iq/api-docs/Toybox/Graphics/) 会直接映射到这 16 种可用颜色。
+对于使用 16 色调色板的设备，颜色已预先编程到设备中。[Graphics 颜色常量](/connect-iq/api-docs/Toybox/Graphics/) 会直接映射到这 16 种可用颜色。
 
 ![](/connect-iq/resources/faq/16_color_palette.png)
 
