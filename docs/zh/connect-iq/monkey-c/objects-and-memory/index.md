@@ -24,7 +24,7 @@ function createCircle() {
 }
 ```
 
-在方法实现中,您可以使用`self`或`me`关键字来引用您的当前实例.
+在方法实现中，可以使用 `self` 或 `me` 关键字引用当前实例。
 
 ```java
 class A
@@ -65,7 +65,7 @@ function usageSample() {
 }
 ```
 
-通过使用超级类的符号来调用超级类的方法:
+使用父类名称调用父类的方法：
 
 ```java
 import Toybox.System;
@@ -182,7 +182,7 @@ Monkey C 使用引用计数，这意味着当引用某块内存的对象数量�
 
 ![presentation](/connect-iq/resources/programmers-guide/weak-reference-1.png)
 
-一段时间后，C 被邀请加入另一组对象，因此它放弃了对 A 的引用，转而与真正需要的对象保持联系。
+一段时间后，C 被加入另一组对象，因此它放弃了对 A 的引用，转而持有真正需要的对象。
 
 
 ![弱引用](/connect-iq/resources/programmers-guide/weak-reference-2.png)
@@ -218,16 +218,16 @@ class WeakReference
     //!    I feel fantastic and I am STILL ALIVE
     function stillAlive();
 
-    //! 获取被引用的对象。
-    //! @return 被引用的对象；如果不再有效则为 null。
+    //! Return the referenced object.
+    //! @return The referenced object, or null if no longer valid.
     function get();
 }
 ```
 
-您可以使用`stillAlive`方法来检查引用是否已清除.使用`get`创建对象的强烈引用.只保持强烈引用在您需要的范围内!
+可以使用 `stillAlive` 方法检查引用是否仍然有效，使用 `get` 创建对象的强引用。只在需要的范围内保留强引用！
 
 ```java
-// 这是一次胜利……
+// We would make a "Hans and Franz" reference here but certain advertising has probably made them uncool.
 if( weakRef.stillAlive() ) {
     var strongRef = weakRef.get();
     strongRef.doTheThing();
@@ -236,7 +236,7 @@ if( weakRef.stillAlive() ) {
 
 ### 句柄和堆分配
 
-从2.4.x版本开始,Connect IQ使用动态分配的堆积用于内存手柄.每个独特的对象都占据了一个内存手柄.对象引用没有独特的分配,只引用对象的内存手柄.Connect IQ的旧版本对设备定义的对象具有较小的静态限制.在任何版本中达到对象限制将导致运行时间错误.
+从 2.4.x 版本开始，Connect IQ 使用动态分配的堆来存储内存句柄。每个独立对象占用一个内存句柄；对象引用不会单独分配内存，只引用对象的内存句柄。旧版本 Connect IQ 对设备定义的对象有较小的静态限制。在任何版本中达到对象数量限制都会导致运行时错误。
 
 ## 模块
 
@@ -257,29 +257,29 @@ function usageSample() {
 }
 ```
 
-然而,与子C类不同,模块没有继承或隐藏数据的概念 (模块不支持`extends`,`private`和`protected`关键字).
+与 Monkey C 类不同，模块没有继承或数据隐藏的概念（模块不支持 `extends`、`private` 和 `protected` 关键字）。
 
 ### Import 和 Using 语句
 
-您可以使用`import`关键字将模块带入您的范围级别.使用`import`时,它将 *模块后音和模块中的所有类型带入类型命名空间.* 这使得模块中的类型可以访问而不用模块后音,从而更容易打字.函数调用仍然需要访问模块后音.
+可以使用 `import` 关键字将模块引入当前作用域。使用 `import` 后，*模块后缀及模块中的所有类型都会进入类型命名空间*，因此可以不写模块后缀访问类型，更易于添加类型标注。调用函数仍然需要模块后缀。
 
 ```typescript
 import Toybox.Lang;
 import Toybox.System;
 
-// import 让你可以告别
-// 模块前缀
+// Import lets you say goodbye to
+// module prefixes
 var globalX as Number or String = 0;
 
 function hasANumber() {
-    globalX = 2;  // 允许
-    globalX = "2"; // 允许
-    // 代码中仍然需要前缀
+    globalX = 2;  // Allowed
+    globalX = "2"; // Allowed
+    // Still require prefixes in code
     System.println("globalX = " + globalX);
 }
 ```
 
-您还可以使用`using`关键字将模块带入您的范围水平.`using`允许通过符号将模块导入另一个类或模块:
+也可以使用 `using` 关键字将模块引入当前作用域。`using` 允许通过符号将模块导入其他类或模块：
 
 ```java
 using Toybox.System;
@@ -289,7 +289,7 @@ function foo() {
 }
 ```
 
-`as`条款提供了一个方法来将模块分配到范围内的不同名称. 这对于缩短模块名称或当您简单地不同意我们的命名方案时有用:
+`as` 子句可以为作用域内的模块指定别名，适合缩短模块名称或采用不同的命名方案：
 
 ```java
 using Toybox.System as Sys;
@@ -299,36 +299,36 @@ function foo() {
 }
 ```
 
-在`using`语句中,它们的定义范围为类或模块.
+在 `using` 语句中，模块中的定义会在当前类或模块作用域内可用。
 
-`import`将模块名称和类名称带入命名空间,而`using`只将模块名称带入命名空间.如果你使用[Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types),你应该使用`import`独家,因为它将节省你很多冗余的模块引用.最后,`as`条款仅支持`using`语句.
+`import` 会将模块名称和类名称引入命名空间，而 `using` 只引入模块名称。如果使用 [Monkey Types](/connect-iq/monkey-c/monkey-types/#monkey-types)，建议只使用 `import`，这样可以减少冗余的模块引用。最后，`as` 子句仅支持 `using` 语句。
 
 ## 作用域
 
-子C是一个通过消息的语言.当调用函数时,虚拟机在运行时进行搜索操作,以找到正在调用的函数.以下是它将搜索的等级:
+Monkey C 是一种基于消息的语言。调用函数时，虚拟机会在运行时搜索要调用的函数，顺序如下：
 
-1. 班级成员
+1. 类成员
 
-2.超级级级成员
+2. 超类成员
 
 3. 类的静态成员
 
-4. 主模块的成员,以及全球名称空间的主模块
+4. 父模块的成员，以及全局命名空间中的父模块
 
-5. 超级级级的母模块成员到全球名称空间
+5. 沿父模块链向上搜索，直到全局命名空间
 
-6. 主模块的公共静态成员,至全球命名空间
+6. 父模块的 public 静态成员，直到全局命名空间
 
-7. 超级级级的母模块的公共静态成员到全球名称空间
+7. 沿父模块链向上搜索 public 静态成员，直到全局命名空间
 
 
-例如,如果函数`a()`在`Child()`的实例上被调用,它将能够访问非成员函数`b()`,`c()`和`d()`当:
+例如，如果在 `Child` 实例上调用函数 `a()`，它可以访问非成员函数 `b()`、`c()` 和 `d()`，前提是：
 
--`b()`是对象的母模块的成员
+- `b()` 是对象父模块的成员。
 
--`c()`是对象的静态成员
+- `c()` 是对象的静态成员。
 
--`d()`是母模块母模块的成员,也称为全球模块
+- `d()` 是父模块的父模块的成员，也称为全局模块。
 
 
 下面的代码试图澄清:
@@ -336,43 +336,43 @@ function foo() {
 ```typescript
 import Toybox.System;
 
-// 全局可见的函数
+// A globally visible function
 function d() {
     System.print( "this is D!" );
 }
 
 module Parent
 {
-    // 模块函数。
+    // Module function
     function b() {
         System.print( "This is B!" );
-        d(); // 调用全局可见的函数
+        d(); // May call a globally visible function
     }
 
-    // Parent 模块的子类
+    // A subclass of the Parent module
     class Child
     {
-        // Child 的实例方法
+        // Child instance method
         function a() {
             System.print( "This is A!" );
-            b(); // 调用父模块中的函数
-            c(); // 调用类中的静态函数。
-            d(); // 调用全局可见的函数。
+            b(); // May call a function in our parent module
+            c(); // May call a static function within the class
+            d(); // May call a globally visible function
         }
 
-        // Child 的静态函数。
-        // 注意，静态方法无法调用实例方法，但仍然可以
-        // 访问父模块。
+        // Child static function
+        // Static methods can't call instance methods but still have access
+        // to parent modules.
         static function c() {
             System.print( "This is C!" );
-            b(); // 调用父模块中的方法。
-            d(); // 调用全局可见的函数
+            b(); // May call a function in our parent module
+            d(); // May call a globally visible function
         }
     }
 }
 ```
 
-有时你想从全球名字空间运行搜索,而不是你的当前范围.你可以使用`$`的模糊符号来完成这项搜索.
+有时需要从全局命名空间搜索，而不是当前作用域。可以使用 `$` bling 符号执行此搜索。
 
 ```java
 function helloFunction() {
@@ -385,15 +385,15 @@ class A {
      }
 
     function b() {
-        // 调用全局 helloFunction
+        // Call the global helloFunction
         $.helloFunction();
-        // 调用实例 helloFunction
+        // Call the instance helloFunction
         helloFunction();
     }
 }
 ```
 
-如果您指的是一个全球变量,则使用bling可以提高运行时间的性能:
+引用全局变量时，使用 bling 可以提高运行时性能：
 
 ```java
 var globalScopedVariable = "Global String";
@@ -403,23 +403,19 @@ module A
     class B
     {
         function c() {
-            // 为查找 globalScopedVariable，VM 将在运行时搜索：
-            //     B 实例
-            //     B 实例的父类 Toybox.Lang.Object
-            //     A 模块
-            //     A 模块的父级全局模块
-            // 最终找到 globalScopedVariable。
+            // At runtime, the VM will search:
+            //     The B instance
+            //     The B instance's parent class, Toybox.Lang.Object
+            //     The A module
+            //     The A module's parent globals
+            // ...and finally find globalScopedVariable.
             System.println(globalScopedVariable);
-            // 这只会在全局命名空间中搜索 globalScopedVariable。
-            // 多亏了 bling！
+            // This searches only the global namespace for globalScopedVariable.
+            // Thanks bling!
             System.println($.globalScopedVariable);
         }
     }
 }
 ```
 
-由于子C是动态打字的,所以引用一个全球变量将在最终找到全球变量之前搜索对象的继承结构和模块层次结构.使用 symbol符号,我们可以直接搜索全球.
-
-这并不是发生在作者身上.
-
-别忘了把你的子和巧合相匹配,你都不能够了.
+由于 Monkey C 是动态类型语言，引用全局变量时会先搜索对象的继承结构和模块层级，最后才查找全局变量。使用 bling 符号可以直接搜索全局命名空间。
