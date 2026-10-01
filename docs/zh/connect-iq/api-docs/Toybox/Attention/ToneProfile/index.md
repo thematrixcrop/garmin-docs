@@ -192,7 +192,7 @@ API 级别 3.1.0
 
 - [**initialize**](#initialize-instance_function)(aFrequency as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/), aDuration as [Lang.Number](/connect-iq/api-docs/Toybox/Lang/Number/))
 
-    Constructor.
+    构造函数。
 
 
 ## 实例属性详情
