@@ -229,7 +229,7 @@ API 级别 4.2.2
 
 |
 
-Auxiliary Font 1
+辅助字体 1
 
 |
 | FONT\_AUX2 | 21 |
@@ -238,7 +238,7 @@ API 级别 4.2.2
 
 |
 
-Auxiliary Font 2
+辅助字体 2
 
 |
 | FONT\_AUX3 | 22 |
@@ -247,7 +247,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 3
+辅助字体 3
 
 |
 | FONT\_AUX4 | 23 |
@@ -256,7 +256,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 4
+辅助字体 4
 
 |
 | FONT\_AUX5 | 24 |
@@ -265,7 +265,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 5
+辅助字体 5
 
 |
 | FONT\_AUX6 | 25 |
@@ -274,7 +274,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 6
+辅助字体 6
 
 |
 | FONT\_AUX7 | 26 |
@@ -283,7 +283,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 7
+辅助字体 7
 
 |
 | FONT\_AUX8 | 27 |
@@ -292,7 +292,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 8
+辅助字体 8
 
 |
 | FONT\_AUX9 | 28 |
@@ -301,7 +301,7 @@ API 级别 4.2.3
 
 |
 
-Auxiliary Font 9
+辅助字体 9
 
 |
 
