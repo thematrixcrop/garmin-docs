@@ -485,7 +485,7 @@ API 级别 5.2.2
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onNextMultisportLeg**](#onNextMultisportLeg-instance_function)() as **Void**
 
