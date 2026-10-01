@@ -209,7 +209,7 @@ Connect IQ Simulator 提供应用设置编辑工具。打开 *File > Edit Persis
 
 *自 API 级别 3.2.0 起支持*
 
-Device app、Widget 和 audio content provider 都可以接收用户输入，从而实现设备端设置。表盘和数据字段不能接收用于设备端配置的输入，也不能推入用于设备端配置的视图。
+设备应用、小工具和音频内容提供商都可以接收用户输入，从而实现设备端设置。表盘和数据字段不能接收用于设备端配置的输入，也不能推入用于设备端配置的视图。
 
 如果要为表盘或数据字段提供设备端设置 UI，可以实现 [AppBase.getSettingsView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getSettingsView-instance_function)。它的工作方式类似于 [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：返回一个由 [WatchUi.View](/connect-iq/api-docs/Toybox/WatchUi/View/) 和 [WatchUi.InputDelegate](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/) 组成的视图和输入 delegate 对。
 

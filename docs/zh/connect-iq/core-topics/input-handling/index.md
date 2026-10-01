@@ -8,7 +8,7 @@ title: "Input Handling"
 
 ## 输入与应用类型
 
-并非所有应用类型都能完整访问输入。表盘只能知道用户是否执行了[按压](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function)，数据字段只能知道用户是否[点击](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function)。Widget 和 glance 可以接收输入（部分设备上可能受限），而 watch-app 具备最完整的输入能力。
+并非所有应用类型都能完整访问输入。表盘只能知道用户是否执行了[按压](/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate/#onPress-instance_function)，数据字段只能知道用户是否[点击](/connect-iq/api-docs/Toybox/WatchUi/InputDelegate/#onTap-instance_function)。小工具和 Glance 可以接收输入（部分设备上可能受限），而设备应用具备最完整的输入能力。
 
 ## 输入代理
 

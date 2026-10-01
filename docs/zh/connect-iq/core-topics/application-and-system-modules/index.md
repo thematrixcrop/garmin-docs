@@ -40,7 +40,7 @@ title: "Application and System Modules"
 
 - [AppBase.getInitialView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getInitialView-instance_function)：应用启动的主要方法。返回表盘、数据字段、小工具或设备应用的基础视图。
 
--   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function)：如果您正在实现带有速览界面的小组件，当用户在速览列表中查看该速览时，系统会调用此方法。更多信息请参阅[速览](/connect-iq/core-topics/glances/#glances)一节。
+-   [AppBase.getGlanceView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGlanceView-instance_function)：如果您正在实现带有速览界面的小工具，当用户在速览列表中查看该速览时，系统会调用此方法。更多信息请参阅[速览](/connect-iq/core-topics/glances/#glances)一节。
 
 -   [AppBase.getGoalView()](/connect-iq/api-docs/Toybox/Application/AppBase/#getGoalView-instance_function)：如果您的表盘要覆盖目标视图，此方法可用于呈现目标视图。
 
@@ -120,11 +120,11 @@ class MyApp  extends Application.AppBase {
 
 应用终止时会调用 [AppBase.onStop()](/connect-iq/api-docs/Toybox/Application/AppBase/#onStop-instance_function)，应用可以在终止前保存状态。
 
-## 小组件
+## 小工具
 
 *自 API 级别 4.0.0*
 
-在 API 级别 4.0 及以下的设备上，存在小组件应用类型。小组件是在表盘可访问的轮播界面中运行的应用程序。在 API 级别高于 4.0.0 的设备上，小组件改为从应用启动器启动，应用程序还可以提供速览。用户进行活动时也可以访问速览列表，并在记录活动期间从列表启动应用程序。
+在 API 级别 4.0 及以下的设备上，存在小工具应用类型。小工具是在表盘可访问的轮播界面中运行的应用程序。在 API 级别高于 4.0.0 的设备上，小工具改为从应用启动器启动，应用程序还可以提供速览。用户进行活动时也可以访问速览列表，并在记录活动期间从列表启动应用程序。
 
 不过，如果您正在构建设备应用，为应用创建速览后，用户就多了一种启动应用的方式。
 
