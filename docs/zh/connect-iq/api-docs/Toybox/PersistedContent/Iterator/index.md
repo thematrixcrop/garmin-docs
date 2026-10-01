@@ -20,7 +20,7 @@ Toybox.Lang.Object
 
 ## 另见：
 
-- [Toybox.PersistedContent Module Example](/connect-iq/api-docs/Toybox/PersistedContent/)
+- [Toybox.PersistedContent 模块示例](/connect-iq/api-docs/Toybox/PersistedContent/)
 
 
 起始版本：
