@@ -130,7 +130,7 @@ Monkey C 扩展提供以下功能：
 | `runTests` |  | 布尔值（Boolean） | 使用此配置运行时，运行 Run No Evil 测试用例。 |
 | `device` |  | 产品标识符（Product Identifier） | 要运行的设备，或使用 `${command:GetTargetDevice}` 在每次运行时选择新设备。 |
 | `settingsJson` |  | 路径（Path） | 项目 Settings 文件的绝对路径。 |
-| `tests` |  | 字符串数组（Array of Strings） | 可选的字符串数组，列出要运行的测试名称。 |
+| `tests` |  | 字符串数组 | 可选的字符串数组，列出要运行的测试名称。 |
 | `runNativePairing` |  | 布尔值（Boolean） | 以传感器原生配对模式运行应用。 |
 | `complicationPublisherFolder` |  | 路径（Path） | Complication Publisher 项目文件夹的绝对路径。 |
 | `complicationSubscriberFolder` |  | 路径（Path） | Complication Subscriber 项目文件夹的绝对路径。 |
