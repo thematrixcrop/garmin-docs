@@ -127,7 +127,7 @@ API 级别 2.4.0
 
 - [**initialize**](#initialize-instance_function)()
 
-    Constructor.
+    构造函数。
 
 - [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function)(data as [AntPlus.RunningDynamicsData](/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData/)) as **Void**
 
