@@ -7,7 +7,7 @@ title: "模块：Toybox.Test"
 
 Test 模块为 Monkey C 提供测试框架。
 
-test 模块提供在源代码中实现自定义单元测试和断言的工具。单元测试接受一个 [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) 对象，并允许使用不同级别的输出。单元测试使用 `:test` 注释，并在未运行测试时被忽略。断言不需要 `:test` 注释，在发布版本或 Connect IQ Content 中将被编译移除。控制台会打印测试 RESULTS 部分，其中包含已运行的测试、测试状态和失败率。
+Test 模块提供在源代码中实现自定义单元测试和断言的工具。单元测试接受一个 [Logger](/connect-iq/api-docs/Toybox/Test/Logger/) 对象，并允许使用不同级别的输出。单元测试使用 `:test` 注释，并在未运行测试时被忽略。断言不需要 `:test` 注释，在发布版本或 Connect IQ Content 中将被编译移除。控制台会打印测试结果（RESULTS）部分，其中包含已运行的测试、测试状态和失败率。
 
 ## 另见：
 
@@ -160,7 +160,7 @@ API 级别 2.1.0
 
 - value2 — ([Lang.Object](/connect-iq/api-docs/Toybox/Lang/Object/)) —
 
-    用于测试相等性的秒值
+    用于测试相等性的第二个值
 
 
 示例：
